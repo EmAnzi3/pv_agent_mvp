@@ -1,0 +1,1 @@
+-- Placeholder per eventuali estensioni future.

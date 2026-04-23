@@ -1,0 +1,28 @@
+services:
+  db:
+    image: postgres:15
+    container_name: pv-agent-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: pv_agent
+      POSTGRES_USER: pv_agent
+      POSTGRES_PASSWORD: pv_agent_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  pv-agent:
+    build: .
+    container_name: pv-agent-app
+    restart: unless-stopped
+    env_file:
+      - .env
+    depends_on:
+      - db
+    volumes:
+      - ./reports:/app/reports
+    command: ["python", "-m", "app.main", "scheduler"]
+
+volumes:
+  postgres_data:
