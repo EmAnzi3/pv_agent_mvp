@@ -6,8 +6,9 @@ import time
 
 from apscheduler.schedulers.blocking import BlockingScheduler
 
-from app.collectors.mase import MASECollector
 from app.collectors.veneto import VenetoCollector
+from app.collectors.emilia_romagna import EmiliaRomagnaCollector
+from app.collectors.lombardia import LombardiaCollector
 from app.config import settings
 from app.db import SessionLocal, engine
 from app.models import Base
@@ -22,8 +23,9 @@ logger = logging.getLogger(__name__)
 
 
 COLLECTORS = [
-    MASECollector,
     VenetoCollector,
+    EmiliaRomagnaCollector,
+    LombardiaCollector,
 ]
 
 
