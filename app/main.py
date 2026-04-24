@@ -9,6 +9,11 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 from app.collectors.veneto import VenetoCollector
 from app.collectors.emilia_romagna import EmiliaRomagnaCollector
 from app.collectors.lombardia import LombardiaCollector
+from app.collectors.sicilia import SiciliaCollector
+from app.collectors.puglia import PugliaCollector
+from app.collectors.lazio import LazioCollector
+from app.collectors.sardegna import SardegnaCollector
+from app.collectors.toscana import ToscanaCollector
 from app.config import settings
 from app.db import SessionLocal, engine
 from app.models import Base
@@ -26,6 +31,11 @@ COLLECTORS = [
     VenetoCollector,
     EmiliaRomagnaCollector,
     LombardiaCollector,
+    SiciliaCollector,
+    PugliaCollector,
+    LazioCollector,
+    SardegnaCollector,
+    ToscanaCollector,
 ]
 
 
