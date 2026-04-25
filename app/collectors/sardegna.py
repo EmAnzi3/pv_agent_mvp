@@ -77,15 +77,13 @@ class SardegnaCollector(BaseCollector):
 
     def fetch(self) -> list[CollectorResult]:
         debug_base = Path("/app/reports/debug_sardegna")
-        search_debug_base = Path("/app/reports/debug_sardegna_search")
         debug_base.mkdir(parents=True, exist_ok=True)
-        search_debug_base.mkdir(parents=True, exist_ok=True)
 
         all_results: list[CollectorResult] = []
         seen_external_ids: set[str] = set()
 
         news_results = self._fetch_news(debug_base)
-        search_results = self._fetch_search(search_debug_base)
+        search_results = self._fetch_search(debug_base)
 
         for item in news_results + search_results:
             if item.external_id in seen_external_ids:
@@ -401,7 +399,7 @@ class SardegnaCollector(BaseCollector):
 
         self._write_json(debug_base / "matched_rows_sample.json", matched_rows[:200])
         self._write_json(
-            debug_base / "summary.json",
+            debug_base / "summary_search.json",
             {
                 "years": SEARCH_YEARS,
                 "procedures": SEARCH_PROCEDURES,
