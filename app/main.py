@@ -18,6 +18,7 @@ from app.collectors.sardegna import SardegnaCollector
 from app.collectors.toscana import ToscanaCollector
 from app.collectors.piemonte import PiemonteCollector
 from app.collectors.campania import CampaniaCollector
+from app.collectors.mase import MaseCollector
 from app.config import settings
 from app.db import SessionLocal, engine
 from app.models import Base
@@ -42,6 +43,7 @@ COLLECTORS = [
     ToscanaCollector,
     PiemonteCollector,
     CampaniaCollector,
+    MaseCollector,
 ]
 
 
