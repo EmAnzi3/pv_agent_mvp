@@ -17,6 +17,7 @@ from app.collectors.lazio import LazioCollector
 from app.collectors.sardegna import SardegnaCollector
 from app.collectors.toscana import ToscanaCollector
 from app.collectors.piemonte import PiemonteCollector
+from app.collectors.campania import CampaniaCollector
 from app.config import settings
 from app.db import SessionLocal, engine
 from app.models import Base
@@ -40,6 +41,7 @@ COLLECTORS = [
     SardegnaCollector,
     ToscanaCollector,
     PiemonteCollector,
+    CampaniaCollector,
 ]
 
 
@@ -94,6 +96,25 @@ def clean_csv_reports_only() -> None:
                 logger.warning("Impossibile eliminare report CSV %s: %s", file_path, exc)
 
 
+def clean_debug_dirs_only() -> None:
+    """
+    Elimina le cartelle debug generate dai collector a fine esecuzione.
+
+    I debug restano disponibili durante la run, ma non vengono mantenuti
+    nella cartella reports finale. In questo modo l'output resta leggero:
+    solo i CSV finali.
+    """
+    reports_dir = Path(settings.reports_dir)
+    reports_dir.mkdir(parents=True, exist_ok=True)
+
+    for item in reports_dir.glob("debug_*"):
+        try:
+            if item.is_dir():
+                shutil.rmtree(item, ignore_errors=True)
+        except Exception as exc:
+            logger.warning("Impossibile eliminare cartella debug %s: %s", item, exc)
+
+
 def run_once() -> None:
     clean_reports_dir()
     init_db()
@@ -123,6 +144,9 @@ def run_once() -> None:
         reports = ReportBuilder(db).build_daily_reports()
         for report in reports:
             logger.info("Creato report: %s", report)
+
+        # Rimuove i debug a fine run: output finale leggero, solo CSV.
+        clean_debug_dirs_only()
 
     finally:
         db.close()
