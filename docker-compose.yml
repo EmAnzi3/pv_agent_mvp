@@ -6,11 +6,11 @@ services:
     environment:
       POSTGRES_DB: pv_agent
       POSTGRES_USER: pv_agent
-      POSTGRES_PASSWORD: pv_agent_password
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+      POSTGRES_PASSWORD: pv_agent
     ports:
       - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 
   pv-agent:
     build: .
@@ -22,7 +22,10 @@ services:
       - db
     volumes:
       - ./reports:/app/reports
-    command: ["python", "-m", "app.main", "scheduler"]
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    command: python -m app.main scheduler
 
 volumes:
   postgres_data:
