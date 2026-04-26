@@ -19,6 +19,8 @@ from app.collectors.toscana import ToscanaCollector
 from app.collectors.piemonte import PiemonteCollector
 from app.collectors.campania import CampaniaCollector
 from app.collectors.mase import MaseCollector
+from app.collectors.mase_provvedimenti import MaseProvvedimentiCollector
+from app.collectors.terna_econnextion import TernaEconnextionCollector
 from app.config import settings
 from app.db import SessionLocal, engine
 from app.models import Base
@@ -44,6 +46,8 @@ COLLECTORS = [
     PiemonteCollector,
     CampaniaCollector,
     MaseCollector,
+    MaseProvvedimentiCollector,
+    TernaEconnextionCollector,
 ]
 
 
