@@ -13,6 +13,7 @@ from app.collectors.emilia_romagna import EmiliaRomagnaCollector
 from app.collectors.lombardia import LombardiaCollector
 from app.collectors.sicilia import SiciliaCollector
 from app.collectors.puglia import PugliaCollector
+from app.collectors.sistema_puglia_energia import SistemaPugliaEnergiaCollector
 from app.collectors.lazio import LazioCollector
 from app.collectors.sardegna import SardegnaCollector
 from app.collectors.toscana import ToscanaCollector
@@ -40,6 +41,7 @@ COLLECTORS = [
     LombardiaCollector,
     SiciliaCollector,
     PugliaCollector,
+    SistemaPugliaEnergiaCollector,
     LazioCollector,
     SardegnaCollector,
     ToscanaCollector,
