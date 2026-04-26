@@ -34,7 +34,7 @@ class ReportBuilder:
     def _build_new_projects_report(self, path: Path) -> Path:
         since = datetime.utcnow() - timedelta(days=1)
         rows = self.db.scalars(
-            select(ProjectEvent).where(ProjectEvent.event_type == "NEW_PROJECT", ProjectEvent.created_at >= since)
+            select(ProjectEvent).where(ProjectEvent.event_type == "new_project", ProjectEvent.created_at >= since)
         ).all()
         with path.open("w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
@@ -46,7 +46,7 @@ class ReportBuilder:
     def _build_status_changes_report(self, path: Path) -> Path:
         since = datetime.utcnow() - timedelta(days=1)
         rows = self.db.scalars(
-            select(ProjectEvent).where(ProjectEvent.event_type == "STATUS_CHANGE", ProjectEvent.created_at >= since)
+            select(ProjectEvent).where(ProjectEvent.event_type == "project_changed", ProjectEvent.created_at >= since)
         ).all()
         with path.open("w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
