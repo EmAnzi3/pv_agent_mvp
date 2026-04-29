@@ -3,6 +3,7 @@ from __future__ import annotations
 import io
 import re
 import time
+import warnings
 from datetime import datetime
 from urllib.parse import urlencode
 
@@ -232,43 +233,63 @@ class TernaEconnextionCollector(BaseCollector):
     # ------------------------------------------------------------------
 
     def _rows_from_excel(self, content: bytes) -> list[dict]:
-        workbook = load_workbook(
-            filename=io.BytesIO(content),
-            read_only=True,
-            data_only=True,
-        )
+        """
+        Legge l'XLSX Terna.
 
-        sheet = workbook[workbook.sheetnames[0]]
+        Terna genera un file Excel senza stile predefinito.
+        openpyxl lo segnala con un UserWarning innocuo:
+        "Workbook contains no default style, apply openpyxl's default".
 
-        rows_iter = sheet.iter_rows(values_only=True)
+        Il warning viene soppresso qui perché non indica un problema sui dati.
+        """
+        with warnings.catch_warnings():
+            warnings.filterwarnings(
+                "ignore",
+                message="Workbook contains no default style.*",
+                category=UserWarning,
+            )
+
+            workbook = load_workbook(
+                filename=io.BytesIO(content),
+                read_only=True,
+                data_only=True,
+            )
 
         try:
-            headers_raw = next(rows_iter)
-        except StopIteration:
-            return []
+            sheet = workbook[workbook.sheetnames[0]]
 
-        headers = [self._clean_text(value) for value in headers_raw]
+            rows_iter = sheet.iter_rows(values_only=True)
 
-        rows: list[dict] = []
+            try:
+                headers_raw = next(rows_iter)
+            except StopIteration:
+                return []
 
-        for raw_row in rows_iter:
-            if raw_row is None:
-                continue
+            headers = [self._clean_text(value) for value in headers_raw]
 
-            row: dict = {}
+            rows: list[dict] = []
 
-            for idx, header in enumerate(headers):
-                if not header:
+            for raw_row in rows_iter:
+                if raw_row is None:
                     continue
 
-                row[header] = raw_row[idx] if idx < len(raw_row) else None
+                row: dict = {}
 
-            if not any(value is not None and str(value).strip() for value in row.values()):
-                continue
+                for idx, header in enumerate(headers):
+                    if not header:
+                        continue
 
-            rows.append(row)
+                    row[header] = raw_row[idx] if idx < len(raw_row) else None
 
-        return rows
+                if not any(value is not None and str(value).strip() for value in row.values()):
+                    continue
+
+                rows.append(row)
+
+            return rows
+
+        finally:
+            workbook.close()
 
     def _normalize_row(self, row: dict, year: int, month: int) -> dict | None:
         region = self._clean_text(row.get("Regione"))
@@ -412,3 +433,25 @@ class TernaEconnextionCollector(BaseCollector):
             return int(text)
         except ValueError:
             return None
+
+
+if __name__ == "__main__":
+    collector = TernaEconnextionCollector()
+    items = collector.fetch()
+
+    print(f"items: {len(items)}")
+
+    for item in items[:40]:
+        print(
+            item.external_id,
+            "|",
+            item.title,
+            "|",
+            item.payload.get("region"),
+            "|",
+            item.payload.get("power_mw"),
+            "|",
+            item.payload.get("numero_pratiche"),
+            "|",
+            item.source_url,
+        )

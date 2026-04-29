@@ -23,15 +23,18 @@ from app.collectors.mase import MaseCollector
 from app.collectors.mase_provvedimenti import MaseProvvedimentiCollector
 from app.collectors.terna_econnextion import TernaEconnextionCollector
 from app.config import settings
+from app.dashboard_static import StaticDashboardBuilder
 from app.db import SessionLocal, engine
 from app.models import Base
 from app.pipeline import IngestionPipeline
 from app.reporting import ReportBuilder
 
+
 logging.basicConfig(
     level=getattr(logging, settings.log_level.upper(), logging.INFO),
     format="%(asctime)s [%(levelname)s] %(message)s",
 )
+
 logger = logging.getLogger(__name__)
 
 
@@ -110,7 +113,7 @@ def clean_debug_dirs_only() -> None:
 
     I debug restano disponibili durante la run, ma non vengono mantenuti
     nella cartella reports finale. In questo modo l'output resta leggero:
-    solo i CSV finali.
+    CSV finali, Excel e dashboard HTML.
     """
     reports_dir = Path(settings.reports_dir)
     reports_dir.mkdir(parents=True, exist_ok=True)
@@ -130,6 +133,7 @@ def run_once() -> None:
     logger.info("Avvio run giornaliero")
 
     db = SessionLocal()
+
     try:
         pipeline = IngestionPipeline(db)
 
@@ -153,7 +157,14 @@ def run_once() -> None:
         for report in reports:
             logger.info("Creato report: %s", report)
 
-        # Rimuove i debug a fine run: output finale leggero, solo CSV.
+        # Genera dashboard HTML statica da ultimo projects_snapshot_*.csv.
+        try:
+            dashboard_path = StaticDashboardBuilder().build()
+            logger.info("Creata dashboard HTML: %s", dashboard_path)
+        except Exception as exc:
+            logger.exception("Errore nella generazione dashboard HTML: %s", exc)
+
+        # Rimuove i debug a fine run: output finale leggero.
         clean_debug_dirs_only()
 
     finally:
@@ -166,6 +177,7 @@ def run_scheduler() -> None:
         return
 
     scheduler = BlockingScheduler(timezone="Europe/Rome")
+
     scheduler.add_job(
         run_once,
         trigger="cron",
@@ -195,11 +207,13 @@ def run_scheduler() -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="PV Agent MVP")
+
     parser.add_argument(
         "command",
         choices=["run-once", "scheduler"],
         help="Comando da eseguire",
     )
+
     args = parser.parse_args()
 
     start = time.time()
