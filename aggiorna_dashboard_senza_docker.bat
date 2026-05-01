@@ -11,7 +11,7 @@ cd /d "%~dp0"
 
 echo.
 echo ==========================================================
-echo [0/6] Controllo ambiente Python
+echo [0/7] Controllo ambiente Python
 echo ==========================================================
 
 if not exist ".venv\Scripts\python.exe" (
@@ -39,7 +39,7 @@ if not exist "tmp" mkdir "tmp"
 
 echo.
 echo ==========================================================
-echo [1/6] Salvataggio snapshot precedente
+echo [1/7] Salvataggio snapshot precedente
 echo ==========================================================
 
 if exist "docs\data.json" (
@@ -52,7 +52,7 @@ if exist "docs\data.json" (
 
 echo.
 echo ==========================================================
-echo [2/6] Esecuzione pipeline locale Python
+echo [2/7] Esecuzione pipeline locale Python
 echo ==========================================================
 
 ".\.venv\Scripts\python.exe" -m app.run_pipeline
@@ -80,7 +80,7 @@ if not exist ".\reports\site\index.html" (
 
 echo.
 echo ==========================================================
-echo [3/6] Generazione report cambiamenti
+echo [3/7] Generazione report cambiamenti
 echo ==========================================================
 
 ".\.venv\Scripts\python.exe" ".\scripts\compare_json_report.py" ^
@@ -98,7 +98,7 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
-echo [4/6] Copia dashboard aggiornata in docs
+echo [4/7] Copia dashboard aggiornata in docs
 echo ==========================================================
 
 copy /Y ".\reports\site\data.json" ".\docs\data.json" >nul
@@ -110,14 +110,49 @@ echo - docs\index.html
 
 echo.
 echo ==========================================================
-echo [5/6] Apertura report locale
+echo [5/7] Generazione Excel proponenti
+echo ==========================================================
+
+if not exist ".\scripts\export_proponenti_excel.py" (
+    echo.
+    echo ERRORE: script export proponenti non trovato.
+    echo Atteso: scripts\export_proponenti_excel.py
+    echo.
+    echo Crea prima lo script di export proponenti, poi rilancia questo BAT.
+    pause
+    exit /b 1
+)
+
+".\.venv\Scripts\python.exe" ".\scripts\export_proponenti_excel.py"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: generazione Excel proponenti fallita.
+    pause
+    exit /b 1
+)
+
+set "PROPONENTI_XLSX="
+for /f "delims=" %%F in ('dir /b /o-d ".\reports\proponenti_pipeline_*.xlsx" 2^>nul') do (
+    if not defined PROPONENTI_XLSX set "PROPONENTI_XLSX=reports\%%F"
+)
+
+if defined PROPONENTI_XLSX (
+    echo Excel proponenti generato:
+    echo !PROPONENTI_XLSX!
+) else (
+    echo ATTENZIONE: Excel proponenti non trovato in reports.
+)
+
+echo.
+echo ==========================================================
+echo [6/7] Apertura report locale
 echo ==========================================================
 
 start "" ".\reports\change_reports\changes_latest.html"
 
 echo.
 echo ==========================================================
-echo [6/6] Riepilogo Git
+echo [7/7] Riepilogo Git
 echo ==========================================================
 
 git status --short
@@ -127,6 +162,11 @@ echo Report cambiamenti:
 echo reports\change_reports\changes_latest.html
 echo reports\change_reports\changes_latest.csv
 echo.
+if defined PROPONENTI_XLSX (
+    echo Excel proponenti:
+    echo !PROPONENTI_XLSX!
+    echo.
+)
 echo Ora apri GitHub Desktop, verifica i file modificati, poi fai commit + push manuale.
 echo.
 pause

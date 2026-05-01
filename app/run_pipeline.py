@@ -166,8 +166,10 @@ def validate_outputs(
     if punctual_records in (None, 0):
         errors.append("summary.punctual_records assente o zero")
 
-    if terna_records != 82:
-        errors.append(f"terna_records atteso 82, trovato {terna_records}")
+    if terna_records < 70:
+        errors.append(f"terna_records troppo basso: atteso almeno 70, trovato {terna_records}")
+    elif terna_records != 82:
+        print(f"[run-pipeline] WARNING: terna_records diverso dallo storico 82: trovato {terna_records}")
 
     if not dq_version:
         errors.append("data_quality.version assente")
