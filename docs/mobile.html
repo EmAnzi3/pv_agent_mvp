@@ -1,9 +1,12 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="it">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PV Pipeline - Mobile</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <style>
     :root {
       --bg: #eef4f7;
@@ -12,8 +15,10 @@
       --muted: #64748b;
       --line: #dbe5eb;
       --brand: #117c72;
+      --brand-dark: #0f766e;
       --brand-soft: #e7f7f4;
       --blue: #2454d6;
+      --shadow: 0 10px 24px rgba(15, 23, 42, 0.07);
     }
 
     * {
@@ -32,11 +37,11 @@
     header {
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 20;
       background: rgba(238, 244, 247, 0.96);
       backdrop-filter: blur(10px);
-      padding: 12px 12px 8px;
-      border-bottom: 1px solid rgba(219, 229, 235, 0.8);
+      padding: 12px 12px 9px;
+      border-bottom: 1px solid rgba(219, 229, 235, 0.9);
     }
 
     h1 {
@@ -52,6 +57,11 @@
       font-size: 12.5px;
     }
 
+    .sub a {
+      color: #0f766e;
+      font-weight: 800;
+    }
+
     main {
       padding: 12px;
       max-width: 680px;
@@ -59,9 +69,16 @@
     }
 
     h2 {
-      margin: 20px 0 10px;
+      margin: 20px 0 8px;
       font-size: 18px;
       line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    .section-hint {
+      color: var(--muted);
+      font-size: 12.5px;
+      margin: 0 0 9px;
     }
 
     .grid {
@@ -75,13 +92,13 @@
       border: 1px solid var(--line);
       border-radius: 18px;
       padding: 14px;
-      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+      box-shadow: var(--shadow);
       margin-bottom: 12px;
     }
 
     .kpi-label {
       color: var(--muted);
-      font-size: 11px;
+      font-size: 10.5px;
       text-transform: uppercase;
       letter-spacing: .06em;
       font-weight: 800;
@@ -89,13 +106,14 @@
 
     .kpi-value {
       margin-top: 6px;
-      font-size: 24px;
+      font-size: 23px;
       font-weight: 900;
       color: var(--brand);
+      letter-spacing: -0.03em;
     }
 
     .kpi-note {
-      margin-top: 4px;
+      margin-top: 3px;
       color: var(--muted);
       font-size: 12px;
     }
@@ -111,7 +129,7 @@
 
     .region-row {
       display: grid;
-      grid-template-columns: 86px 1fr 48px;
+      grid-template-columns: 88px 1fr 44px;
       gap: 8px;
       align-items: center;
       padding: 8px 0;
@@ -121,6 +139,10 @@
 
     .region-row:last-child {
       border-bottom: 0;
+    }
+
+    .region-row strong {
+      overflow-wrap: anywhere;
     }
 
     .bar {
@@ -140,7 +162,7 @@
     .filters {
       display: grid;
       gap: 8px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     input,
@@ -155,33 +177,97 @@
       color: var(--ink);
     }
 
+    #topProjects,
+    #pipelineCards {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding: 2px 4px 14px;
+      margin-left: -4px;
+      margin-right: -4px;
+    }
+
+    #topProjects::-webkit-scrollbar,
+    #pipelineCards::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    #topProjects::-webkit-scrollbar-thumb,
+    #pipelineCards::-webkit-scrollbar-thumb {
+      background: #b7c7d2;
+      border-radius: 999px;
+    }
+
     .project-card {
+      flex: 0 0 min(86vw, 360px);
+      scroll-snap-align: start;
       background: var(--card);
       border: 1px solid var(--line);
       border-left: 5px solid var(--brand);
-      border-radius: 17px;
-      padding: 13px;
-      margin-bottom: 10px;
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+      border-radius: 18px;
+      padding: 12px;
+      box-shadow: var(--shadow);
+      min-height: 210px;
+    }
+
+    .project-head {
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      gap: 10px;
+      align-items: start;
+      margin-bottom: 8px;
+    }
+
+    .mw-badge {
+      background: var(--brand-dark);
+      color: #fff;
+      border-radius: 14px;
+      padding: 8px 6px;
+      text-align: center;
+      font-weight: 900;
+      line-height: 1.05;
+    }
+
+    .mw-badge .mw-num {
+      display: block;
+      font-size: 18px;
+      letter-spacing: -0.03em;
+    }
+
+    .mw-badge .mw-unit {
+      display: block;
+      font-size: 10px;
+      opacity: .92;
+      margin-top: 2px;
     }
 
     .project-title {
-      font-size: 14px;
+      margin: 0;
+      font-size: 13.5px;
+      line-height: 1.23;
       font-weight: 900;
-      line-height: 1.25;
-      margin-bottom: 9px;
-      text-transform: uppercase;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
-    .meta {
-      display: grid;
-      gap: 4px;
+    .project-main-meta {
       color: var(--muted);
-      font-size: 13px;
+      font-size: 12.5px;
+      margin-top: 5px;
+      line-height: 1.25;
     }
 
-    .meta strong {
-      color: var(--ink);
+    .project-proponent {
+      font-size: 12.5px;
+      color: #334155;
+      font-weight: 850;
+      margin: 7px 0 0;
+      line-height: 1.25;
     }
 
     .chips {
@@ -194,13 +280,13 @@
     .chip {
       display: inline-flex;
       align-items: center;
-      min-height: 26px;
+      min-height: 24px;
       padding: 0 9px;
       background: #eff6ff;
       color: #1d4ed8;
       border-radius: 999px;
-      font-size: 12px;
-      font-weight: 800;
+      font-size: 11.5px;
+      font-weight: 850;
     }
 
     .chip.green {
@@ -209,17 +295,18 @@
     }
 
     .actions {
-      margin-top: 11px;
+      margin-top: 10px;
       display: flex;
       gap: 8px;
+      align-items: center;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 38px;
-      padding: 0 13px;
+      min-height: 35px;
+      padding: 0 14px;
       border-radius: 999px;
       background: var(--brand);
       color: white;
@@ -228,14 +315,82 @@
       font-weight: 900;
     }
 
-    .btn.secondary {
-      background: #e2e8f0;
-      color: #334155;
+    details.project-details {
+      margin-top: 9px;
     }
 
-    .small {
+    details.project-details summary {
+      cursor: pointer;
+      color: #0f766e;
+      font-weight: 900;
+      font-size: 13px;
+      list-style: none;
+    }
+
+    details.project-details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .meta {
+      margin-top: 8px;
+      display: grid;
+      gap: 4px;
       color: var(--muted);
       font-size: 12.5px;
+    }
+
+    .meta strong {
+      color: var(--ink);
+    }
+
+    .charts-block {
+      margin: 12px 0 18px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .charts-block summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 14px 15px;
+      font-size: 15px;
+      font-weight: 900;
+      color: #0f172a;
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .charts-block summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .charts-inner {
+      padding: 12px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .chart-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 10px 10px 6px;
+      min-height: 235px;
+    }
+
+    .chart-wrap {
+      position: relative;
+      height: 205px;
+    }
+
+    .chart-note {
+      padding: 0 16px 14px;
+      font-size: 12px;
+      line-height: 1.45;
+      color: var(--muted);
     }
 
     .source-list {
@@ -264,6 +419,12 @@
       text-align: center;
     }
 
+    #resultCount {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
     footer {
       padding: 22px 12px 34px;
       text-align: center;
@@ -277,186 +438,62 @@
       }
 
       .region-row {
-        grid-template-columns: 78px 1fr 40px;
+        grid-template-columns: 78px 1fr 38px;
+      }
+
+      .project-card {
+        flex-basis: 88vw;
       }
     }
-  
-/* === MOBILE PROJECT CARDS COMPACT v2 === */
-.project-card {
-  padding: 12px !important;
-  border-left-width: 4px !important;
-}
-
-.project-head {
-  display: grid;
-  grid-template-columns: 78px 1fr;
-  gap: 10px;
-  align-items: start;
-  margin-bottom: 8px;
-}
-
-.mw-badge {
-  background: #0f766e;
-  color: #fff;
-  border-radius: 14px;
-  padding: 8px 6px;
-  text-align: center;
-  font-weight: 900;
-  line-height: 1.05;
-}
-
-.mw-badge .mw-num {
-  display: block;
-  font-size: 18px;
-}
-
-.mw-badge .mw-unit {
-  display: block;
-  font-size: 10px;
-  opacity: .9;
-  margin-top: 2px;
-}
-
-.project-title {
-  margin: 0 !important;
-  font-size: 14px !important;
-  line-height: 1.25 !important;
-  font-weight: 900 !important;
-  text-transform: none !important;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.project-main-meta {
-  color: #64748b;
-  font-size: 13px;
-  margin-top: 5px;
-}
-
-.project-proponent {
-  font-size: 13px;
-  color: #334155;
-  font-weight: 800;
-  margin: 7px 0 0;
-}
-
-.meta {
-  margin-top: 8px !important;
-  gap: 3px !important;
-  font-size: 12.5px !important;
-}
-
-.meta .less-important {
-  color: #64748b;
-}
-
-details {
-  margin-top: 9px;
-}
-
-summary {
-  cursor: pointer;
-  color: #0f766e;
-  font-weight: 900;
-  font-size: 13px;
-  list-style: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-.chips {
-  margin-top: 9px !important;
-}
-
-.chip {
-  min-height: 24px !important;
-  font-size: 11.5px !important;
-}
-
-.actions {
-  margin-top: 10px !important;
-}
-
-.btn {
-  min-height: 34px !important;
-  padding: 0 14px !important;
-  font-size: 13px !important;
-}
-
-.btn.secondary {
-  background: #e2e8f0 !important;
-  color: #334155 !important;
-}
-/* === END MOBILE PROJECT CARDS COMPACT v2 === */
-
-
-/* === MOBILE HORIZONTAL PROJECT SCROLL v1 === */
-#topProjects,
-#pipelineCards {
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding: 2px 4px 14px;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-#topProjects::-webkit-scrollbar,
-#pipelineCards::-webkit-scrollbar {
-  height: 6px;
-}
-
-#topProjects::-webkit-scrollbar-thumb,
-#pipelineCards::-webkit-scrollbar-thumb {
-  background: #b7c7d2;
-  border-radius: 999px;
-}
-
-#topProjects .project-card,
-#pipelineCards .project-card {
-  flex: 0 0 min(86vw, 360px);
-  scroll-snap-align: start;
-  margin-bottom: 0 !important;
-}
-
-.mobile-section-hint {
-  color: #64748b;
-  font-size: 12px;
-  margin: -4px 0 8px;
-}
-
-#resultCount {
-  margin-top: 8px;
-}
-/* === END MOBILE HORIZONTAL PROJECT SCROLL v1 === */
-
-</style>
+  </style>
 </head>
+
 <body>
   <header>
     <h1>PV Pipeline</h1>
-    <div class="sub">Vista mobile per consultazione rapida <span style="color:#94a3b8">|</span> <a href="index.html?desktop=1">desktop</a></div>
+    <div class="sub">Vista mobile rapida <span style="color:#94a3b8">|</span> <a href="index.html?desktop=1">desktop</a></div>
   </header>
 
   <main>
     <section class="grid" id="kpis"></section>
 
     <section class="card notice">
-      <strong>Metodo di lettura:</strong> Terna Econnextion resta un radar macro. I lead commerciali veri sono nei progetti puntuali.
+      <strong>Metodo:</strong> Terna Econnextion resta un radar macro. I lead commerciali veri sono nei progetti puntuali.
     </section>
 
     <h2>Priorita territoriali</h2>
     <section class="card" id="regions"></section>
 
+    <details class="charts-block">
+      <summary>Sintesi visuale</summary>
+
+      <div class="charts-inner">
+        <div class="chart-card">
+          <div class="chart-wrap">
+            <canvas id="mobilePriorityChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-wrap">
+            <canvas id="mobileSourceMwChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-wrap">
+            <canvas id="mobileTernaChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-note">
+        Grafici compatti per smartphone: massimo 5 elementi, lettura rapida, niente legende chilometriche.
+      </div>
+    </details>
+
     <h2>Top progetti operativi per MW</h2>
-    <div class="mobile-section-hint">Scorri lateralmente per vedere gli altri progetti.</div>
+    <div class="section-hint">Scorri lateralmente per vedere gli altri progetti.</div>
     <section id="topProjects"></section>
 
     <h2>Ricerca pipeline</h2>
@@ -466,10 +503,10 @@ summary::-webkit-details-marker {
         <select id="regionFilter"></select>
         <select id="sourceFilter"></select>
       </div>
-      <div class="small" id="resultCount"></div>
+      <div id="resultCount"></div>
     </section>
 
-    <div class="mobile-section-hint">Scorri lateralmente tra i risultati filtrati.</div>
+    <div class="section-hint">Scorri lateralmente tra i risultati filtrati.</div>
     <section id="pipelineCards"></section>
 
     <h2>Fonti</h2>
@@ -485,6 +522,7 @@ summary::-webkit-details-marker {
   <script>
     let allRecords = [];
     let operationalRecords = [];
+    let chartInstances = [];
 
     const $ = id => document.getElementById(id);
 
@@ -496,11 +534,21 @@ summary::-webkit-details-marker {
       return fallback;
     }
 
+    function cleanText(value) {
+      return String(value || '')
+        .replace(/\s+/g, ' ')
+        .replace(/\s+,\s+/g, ', ')
+        .trim();
+    }
+
     function parseMw(value) {
       if (value === null || value === undefined || value === '') return 0;
-      if (typeof value === 'number') return value;
+      if (typeof value === 'number') return Number.isFinite(value) ? value : 0;
 
-      let s = String(value).trim()
+      let raw = String(value).trim();
+      const isKw = /kwp?|kilowatt/i.test(raw) && !/mw/i.test(raw);
+
+      let s = raw
         .replace(/\s*MWp?$/i, '')
         .replace(/\s*kWp?$/i, '')
         .replace(/\s+/g, '');
@@ -508,13 +556,20 @@ summary::-webkit-details-marker {
       if (!s) return 0;
 
       if (s.includes(',') && s.includes('.')) {
-        s = s.replace(/\./g, '').replace(',', '.');
+        if (s.lastIndexOf(',') > s.lastIndexOf('.')) {
+          s = s.replace(/\./g, '').replace(',', '.');
+        } else {
+          s = s.replace(/,/g, '');
+        }
       } else if (s.includes(',')) {
         s = s.replace(',', '.');
       }
 
+      s = s.replace(/[^\d.-]/g, '');
       const n = Number(s);
-      return Number.isFinite(n) ? n : 0;
+      if (!Number.isFinite(n)) return 0;
+
+      return isKw ? n / 1000 : n;
     }
 
     function fmtNumber(n, digits = 0) {
@@ -533,46 +588,63 @@ summary::-webkit-details-marker {
 
     function sourceLabel(r) {
       const s = sourceRaw(r);
+      const label = cleanText(read(r, ['source_label', 'source', 'primary_source'], 'n/d'));
 
       if (s.includes('terna')) return 'Terna Econnextion';
-      if (s === 'mase' || s === 'mase_provvedimenti') return 'MASE';
+      if (s === 'mase' || s === 'mase_provvedimenti' || label.toLowerCase().includes('mase')) return 'MASE';
       if (s === 'sistema_puglia_energia') return 'Sistema Puglia Energia';
 
-      return read(r, ['source_label', 'source', 'primary_source'], 'n/d');
+      if (label === 'mase_provvedimenti') return 'MASE';
+
+      return label || 'n/d';
     }
 
     function titleOf(r) {
-      return read(r, ['project_name', 'title', 'project', 'name', 'progetto'], 'Progetto n/d');
+      return cleanText(read(r, ['project_name', 'title', 'project', 'name', 'progetto'], 'Progetto n/d'));
     }
 
     function proponentOf(r) {
-      return read(r, ['proponent', 'proponente', 'company'], 'n/d');
+      return cleanText(read(r, ['proponent', 'proponente', 'company'], 'n/d'));
     }
 
     function regionOf(r) {
-      return read(r, ['region', 'regione'], 'n/d');
+      return cleanText(read(r, ['region', 'regione'], 'n/d'));
     }
 
     function provinceOf(r) {
-      return read(r, ['province', 'provincia'], '');
+      return cleanText(read(r, ['province', 'provincia'], ''));
     }
 
     function municipalitiesOf(r) {
       const value = read(r, ['municipalities', 'comuni', 'municipality', 'comune'], '');
-      if (Array.isArray(value)) return value.join(', ');
-      return String(value || '');
+      if (Array.isArray(value)) return cleanText(value.join(', '));
+      return cleanText(value);
     }
 
     function typeOf(r) {
-      return read(r, ['project_type', 'type', 'tipo'], '');
+      return cleanText(read(r, ['project_type', 'type', 'tipo'], ''));
     }
 
     function statusOf(r) {
-      return read(r, ['status_normalized', 'status', 'stato'], '');
+      return cleanText(read(r, ['status_normalized', 'status', 'stato'], ''));
     }
 
     function urlOf(r) {
-      return read(r, ['primary_url', 'source_url', 'url', 'link'], '');
+      return cleanText(read(r, ['primary_url', 'source_url', 'url', 'link'], ''));
+    }
+
+    function compactTitle(value, max = 145) {
+      const s = cleanText(value);
+      if (s.length <= max) return s;
+      return s.slice(0, max).replace(/\s+\S*$/, '') + '...';
+    }
+
+    function locationLine(r) {
+      const parts = [regionOf(r), provinceOf(r), municipalitiesOf(r)]
+        .map(cleanText)
+        .filter(x => x && x !== 'n/d');
+
+      return [...new Set(parts)].join(' / ');
     }
 
     function renderKpis(records) {
@@ -605,31 +677,41 @@ summary::-webkit-details-marker {
       `;
     }
 
-    function renderRegions(records, summary) {
+    function computeRegions(records, summary) {
       let regions = [];
 
       if (summary && Array.isArray(summary.regions) && summary.regions.length) {
         regions = summary.regions.map(r => ({
-          name: r.region || r.name || 'n/d',
+          name: cleanText(r.region || r.name || 'n/d'),
           score: Number(r.priority_score ?? r.score ?? r.punctual_count ?? 0),
-          mw: Number(r.punctual_mw ?? r.mw ?? 0)
+          mw: Number(r.punctual_mw ?? r.mw ?? 0),
+          terna_mw: Number(r.terna_mw ?? 0)
         }));
       } else {
         const map = new Map();
 
         for (const r of records.filter(x => !isTerna(x))) {
           const region = regionOf(r);
-          if (!map.has(region)) map.set(region, { name: region, score: 0, mw: 0 });
+          if (!map.has(region)) map.set(region, { name: region, score: 0, mw: 0, terna_mw: 0 });
           const item = map.get(region);
           item.score += 1;
           item.mw += parseMw(read(r, ['power_mw', 'mw', 'power']));
         }
 
+        for (const r of records.filter(isTerna)) {
+          const region = regionOf(r);
+          if (!map.has(region)) map.set(region, { name: region, score: 0, mw: 0, terna_mw: 0 });
+          map.get(region).terna_mw += parseMw(read(r, ['power_mw', 'mw', 'power']));
+        }
+
         regions = Array.from(map.values());
       }
 
-      regions = regions
-        .filter(r => r.name && r.name !== 'n/d')
+      return regions.filter(r => r.name && r.name !== 'n/d');
+    }
+
+    function renderRegions(records, summary) {
+      const regions = computeRegions(records, summary)
         .sort((a, b) => (b.score || 0) - (a.score || 0) || (b.mw || 0) - (a.mw || 0))
         .slice(0, 10);
 
@@ -643,26 +725,6 @@ summary::-webkit-details-marker {
         </div>
       `).join('');
     }
-    function cleanText(value) {
-      return String(value || '')
-        .replace(/\s+/g, ' ')
-        .replace(/\s+,\s+/g, ', ')
-        .trim();
-    }
-
-    function compactTitle(value, max = 145) {
-      const s = cleanText(value);
-      if (s.length <= max) return s;
-      return s.slice(0, max).replace(/\s+\S*$/, '') + '?';
-    }
-
-    function locationLine(r) {
-      const parts = [regionOf(r), provinceOf(r), municipalitiesOf(r)]
-        .map(x => cleanText(x))
-        .filter(x => x && x !== 'n/d');
-
-      return [...new Set(parts)].join(' / ');
-    }
 
     function projectCard(r) {
       const mw = parseMw(read(r, ['power_mw', 'mw', 'power']));
@@ -670,12 +732,13 @@ summary::-webkit-details-marker {
       const src = sourceLabel(r);
       const reg = regionOf(r);
       const showRegionChip = cleanText(src).toLowerCase() !== cleanText(reg).toLowerCase();
-      const title = cleanText(titleOf(r));
-      const short = compactTitle(title, 150);
-      const prop = cleanText(proponentOf(r));
+
+      const title = titleOf(r);
+      const short = compactTitle(title, 140);
+      const prop = proponentOf(r);
       const loc = locationLine(r);
-      const tipo = cleanText(typeOf(r));
-      const stato = cleanText(statusOf(r));
+      const tipo = typeOf(r);
+      const stato = statusOf(r);
 
       return `
         <article class="project-card">
@@ -700,19 +763,18 @@ summary::-webkit-details-marker {
             ${url ? `<a class="btn" href="${url}" target="_blank" rel="noopener">Apri</a>` : ''}
           </div>
 
-          <details>
+          <details class="project-details">
             <summary>Dettagli</summary>
             <div class="meta">
-              <div><strong>Titolo completo:</strong> <span class="less-important">${title}</span></div>
-              <div><strong>Tipo:</strong> <span class="less-important">${tipo || 'n/d'}</span></div>
-              <div><strong>Stato:</strong> <span class="less-important">${stato || 'n/d'}</span></div>
-              <div><strong>Fonte:</strong> <span class="less-important">${src}</span></div>
+              <div><strong>Titolo completo:</strong> ${title}</div>
+              <div><strong>Tipo:</strong> ${tipo || 'n/d'}</div>
+              <div><strong>Stato:</strong> ${stato || 'n/d'}</div>
+              <div><strong>Fonte:</strong> ${src}</div>
             </div>
           </details>
         </article>
       `;
     }
-
 
     function renderTopProjects(records) {
       const top = records
@@ -720,7 +782,7 @@ summary::-webkit-details-marker {
         .map(r => ({ r, mw: parseMw(read(r, ['power_mw', 'mw', 'power'])) }))
         .filter(x => x.mw > 0)
         .sort((a, b) => b.mw - a.mw)
-        .slice(0, 6)
+        .slice(0, 8)
         .map(x => x.r);
 
       $('topProjects').innerHTML = top.map(projectCard).join('') || '<div class="card empty">Nessun progetto trovato.</div>';
@@ -789,6 +851,142 @@ summary::-webkit-details-marker {
       `).join('');
     }
 
+    function topN(arr, field, n) {
+      return (arr || [])
+        .map(x => ({
+          label: cleanText(x.name || x.region || x.label || x.source || 'n/d'),
+          value: Number(x[field] || 0)
+        }))
+        .filter(x => x.value > 0)
+        .sort((a, b) => b.value - a.value)
+        .slice(0, n);
+    }
+
+    function sourceMw(records) {
+      const acc = new Map();
+
+      for (const r of records || []) {
+        if (isTerna(r)) continue;
+
+        const label = sourceLabel(r);
+        const mw = parseMw(read(r, ['power_mw', 'mw', 'power']));
+        if (mw <= 0) continue;
+
+        acc.set(label, (acc.get(label) || 0) + mw);
+      }
+
+      return Array.from(acc.entries())
+        .map(([label, value]) => ({ label, value }))
+        .sort((a, b) => b.value - a.value)
+        .slice(0, 5);
+    }
+
+    function chartOptions(title) {
+      return {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: false,
+        plugins: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: title,
+            color: '#0f172a',
+            font: { size: 13, weight: '700' },
+            padding: { top: 4, bottom: 10 }
+          },
+          tooltip: {
+            backgroundColor: '#0f172a',
+            padding: 10,
+            callbacks: {
+              label: ctx => `${fmtNumber(ctx.parsed.x, 1)}`
+            }
+          }
+        },
+        layout: {
+          padding: { left: 4, right: 6, top: 0, bottom: 0 }
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            grid: { color: '#e2e8f0' },
+            ticks: {
+              color: '#64748b',
+              font: { size: 10 },
+              callback: value => fmtNumber(value, 0)
+            }
+          },
+          y: {
+            grid: { display: false },
+            ticks: {
+              color: '#334155',
+              font: { size: 10 },
+              callback: function(value) {
+                const label = this.getLabelForValue(value);
+                return label.length > 16 ? label.slice(0, 16) + '...' : label;
+              }
+            }
+          }
+        }
+      };
+    }
+
+    function buildCharts(records, summary) {
+      if (typeof Chart === 'undefined') return;
+
+      for (const chart of chartInstances) {
+        try { chart.destroy(); } catch(e) {}
+      }
+
+      chartInstances = [];
+
+      const palette = ['#0f766e', '#2563eb', '#475569', '#d97706', '#16a34a'];
+
+      const regions = computeRegions(records, summary);
+
+      const priorityData = topN(regions, 'score', 5);
+      const sourceData = sourceMw(records);
+      const ternaData = topN(regions, 'terna_mw', 5);
+
+      const charts = [
+        {
+          id: 'mobilePriorityChart',
+          title: 'Priorita territoriali',
+          rows: priorityData
+        },
+        {
+          id: 'mobileSourceMwChart',
+          title: 'Pipeline operativa: MW per fonte',
+          rows: sourceData
+        },
+        {
+          id: 'mobileTernaChart',
+          title: 'Radar Terna: MW per regione',
+          rows: ternaData
+        }
+      ];
+
+      for (const cfg of charts) {
+        const canvas = document.getElementById(cfg.id);
+        if (!canvas || !cfg.rows.length) continue;
+
+        chartInstances.push(new Chart(canvas, {
+          type: 'bar',
+          data: {
+            labels: cfg.rows.map(x => x.label),
+            datasets: [{
+              data: cfg.rows.map(x => x.value),
+              backgroundColor: palette.slice(0, cfg.rows.length),
+              borderRadius: 8,
+              barThickness: 14
+            }]
+          },
+          options: chartOptions(cfg.title)
+        }));
+      }
+    }
+
     async function init() {
       try {
         const response = await fetch('data.json', { cache: 'no-store' });
@@ -799,6 +997,7 @@ summary::-webkit-details-marker {
 
         renderKpis(allRecords);
         renderRegions(allRecords, data.summary || {});
+        buildCharts(allRecords, data.summary || {});
         renderTopProjects(allRecords);
         setupFilters(operationalRecords);
         renderPipeline();
@@ -807,7 +1006,7 @@ summary::-webkit-details-marker {
         document.querySelector('main').innerHTML = `
           <section class="card">
             <h2>Errore caricamento dati</h2>
-            <p class="small">${error}</p>
+            <p>${error}</p>
           </section>
         `;
       }
