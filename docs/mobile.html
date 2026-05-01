@@ -280,12 +280,125 @@
         grid-template-columns: 78px 1fr 40px;
       }
     }
-  </style>
+  
+/* === MOBILE PROJECT CARDS COMPACT v2 === */
+.project-card {
+  padding: 12px !important;
+  border-left-width: 4px !important;
+}
+
+.project-head {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 10px;
+  align-items: start;
+  margin-bottom: 8px;
+}
+
+.mw-badge {
+  background: #0f766e;
+  color: #fff;
+  border-radius: 14px;
+  padding: 8px 6px;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.mw-badge .mw-num {
+  display: block;
+  font-size: 18px;
+}
+
+.mw-badge .mw-unit {
+  display: block;
+  font-size: 10px;
+  opacity: .9;
+  margin-top: 2px;
+}
+
+.project-title {
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 1.25 !important;
+  font-weight: 900 !important;
+  text-transform: none !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-main-meta {
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.project-proponent {
+  font-size: 13px;
+  color: #334155;
+  font-weight: 800;
+  margin: 7px 0 0;
+}
+
+.meta {
+  margin-top: 8px !important;
+  gap: 3px !important;
+  font-size: 12.5px !important;
+}
+
+.meta .less-important {
+  color: #64748b;
+}
+
+details {
+  margin-top: 9px;
+}
+
+summary {
+  cursor: pointer;
+  color: #0f766e;
+  font-weight: 900;
+  font-size: 13px;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.chips {
+  margin-top: 9px !important;
+}
+
+.chip {
+  min-height: 24px !important;
+  font-size: 11.5px !important;
+}
+
+.actions {
+  margin-top: 10px !important;
+}
+
+.btn {
+  min-height: 34px !important;
+  padding: 0 14px !important;
+  font-size: 13px !important;
+}
+
+.btn.secondary {
+  background: #e2e8f0 !important;
+  color: #334155 !important;
+}
+/* === END MOBILE PROJECT CARDS COMPACT v2 === */
+
+</style>
 </head>
 <body>
   <header>
     <h1>PV Pipeline</h1>
-    <div class="sub">Vista mobile per consultazione rapida ? <a href="index.html?desktop=1">desktop</a></div>
+    <div class="sub">Vista mobile per consultazione rapida <span style="color:#94a3b8">|</span> <a href="index.html?desktop=1">desktop</a></div>
   </header>
 
   <main>
@@ -484,31 +597,76 @@
         </div>
       `).join('');
     }
+    function cleanText(value) {
+      return String(value || '')
+        .replace(/\s+/g, ' ')
+        .replace(/\s+,\s+/g, ', ')
+        .trim();
+    }
+
+    function compactTitle(value, max = 145) {
+      const s = cleanText(value);
+      if (s.length <= max) return s;
+      return s.slice(0, max).replace(/\s+\S*$/, '') + '?';
+    }
+
+    function locationLine(r) {
+      const parts = [regionOf(r), provinceOf(r), municipalitiesOf(r)]
+        .map(x => cleanText(x))
+        .filter(x => x && x !== 'n/d');
+
+      return [...new Set(parts)].join(' / ');
+    }
 
     function projectCard(r) {
       const mw = parseMw(read(r, ['power_mw', 'mw', 'power']));
       const url = urlOf(r);
+      const src = sourceLabel(r);
+      const reg = regionOf(r);
+      const showRegionChip = cleanText(src).toLowerCase() !== cleanText(reg).toLowerCase();
+      const title = cleanText(titleOf(r));
+      const short = compactTitle(title, 150);
+      const prop = cleanText(proponentOf(r));
+      const loc = locationLine(r);
+      const tipo = cleanText(typeOf(r));
+      const stato = cleanText(statusOf(r));
 
       return `
         <article class="project-card">
-          <div class="project-title">${titleOf(r)}</div>
-          <div class="meta">
-            <div><strong>Proponente:</strong> ${proponentOf(r)}</div>
-            <div><strong>Localit?:</strong> ${regionOf(r)} ${provinceOf(r) ? '? ' + provinceOf(r) : ''} ${municipalitiesOf(r) ? '? ' + municipalitiesOf(r) : ''}</div>
-            <div><strong>MW:</strong> ${fmtNumber(mw, 3)}</div>
-            <div><strong>Tipo:</strong> ${typeOf(r) || 'n/d'}</div>
-            <div><strong>Stato:</strong> ${statusOf(r) || 'n/d'}</div>
+          <div class="project-head">
+            <div class="mw-badge">
+              <span class="mw-num">${fmtNumber(mw, mw >= 100 ? 0 : 1)}</span>
+              <span class="mw-unit">MW</span>
+            </div>
+            <div>
+              <div class="project-title">${short}</div>
+              <div class="project-main-meta">${loc || 'Localit? n/d'}</div>
+              <div class="project-proponent">${prop || 'Proponente n/d'}</div>
+            </div>
           </div>
+
           <div class="chips">
-            <span class="chip green">${sourceLabel(r)}</span>
-            <span class="chip">${regionOf(r)}</span>
+            <span class="chip green">${src}</span>
+            ${showRegionChip ? `<span class="chip">${reg}</span>` : ''}
           </div>
+
           <div class="actions">
             ${url ? `<a class="btn" href="${url}" target="_blank" rel="noopener">Apri</a>` : ''}
           </div>
+
+          <details>
+            <summary>Dettagli</summary>
+            <div class="meta">
+              <div><strong>Titolo completo:</strong> <span class="less-important">${title}</span></div>
+              <div><strong>Tipo:</strong> <span class="less-important">${tipo || 'n/d'}</span></div>
+              <div><strong>Stato:</strong> <span class="less-important">${stato || 'n/d'}</span></div>
+              <div><strong>Fonte:</strong> <span class="less-important">${src}</span></div>
+            </div>
+          </details>
         </article>
       `;
     }
+
 
     function renderTopProjects(records) {
       const top = records
@@ -516,7 +674,7 @@
         .map(r => ({ r, mw: parseMw(read(r, ['power_mw', 'mw', 'power'])) }))
         .filter(x => x.mw > 0)
         .sort((a, b) => b.mw - a.mw)
-        .slice(0, 8)
+        .slice(0, 6)
         .map(x => x.r);
 
       $('topProjects').innerHTML = top.map(projectCard).join('') || '<div class="card empty">Nessun progetto trovato.</div>';
