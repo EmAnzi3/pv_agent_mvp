@@ -1072,11 +1072,18 @@
         options: chartOptions('Radar Terna: MW solare per regione', true)
       });
 
+      const mergedSourceCounts = Object.values((summary.source_counts || []).reduce((acc, x) => {
+        const label = x.label || 'n/d';
+        acc[label] = acc[label] || { label, count: 0 };
+        acc[label].count += Number(x.count || 0);
+        return acc;
+      }, {})).sort((a, b) => b.count - a.count);
+
       new Chart(document.getElementById('sourceChart'), {
         type: 'doughnut',
         data: {
-          labels: (summary.source_counts || []).map(x => x.label),
-          datasets: [{ label: 'Record', data: (summary.source_counts || []).map(x => x.count), backgroundColor: chartColors((summary.source_counts || []).length), borderWidth: 0 }]
+          labels: mergedSourceCounts.map(x => x.label),
+          datasets: [{ label: 'Record', data: mergedSourceCounts.map(x => x.count), backgroundColor: chartColors(mergedSourceCounts.length), borderWidth: 0 }]
         },
         options: {
           responsive: true,
