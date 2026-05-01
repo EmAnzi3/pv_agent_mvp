@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import io
 import re
@@ -143,7 +143,7 @@ class TernaEconnextionCollector(BaseCollector):
     def _bootstrap_session(self) -> None:
         """
         Apre prima il Download Center per ottenere cookie/sessione.
-        Il download Excel funziona anche con requests, ma il bootstrap rende la chiamata più stabile.
+        Il download Excel funziona anche con requests, ma il bootstrap rende la chiamata piÃ¹ stabile.
         """
         response = self.session.get(
             DOWNLOAD_CENTER_URL,
@@ -190,7 +190,7 @@ class TernaEconnextionCollector(BaseCollector):
     def _candidate_year_months(self, lookback_months: int = 8) -> list[tuple[int, int]]:
         """
         Prova mese corrente e poi mesi precedenti.
-        Econnextion viene aggiornato mensilmente, ma può non essere disponibile subito.
+        Econnextion viene aggiornato mensilmente, ma puÃ² non essere disponibile subito.
         """
         today = datetime.now()
         year = today.year
@@ -240,7 +240,7 @@ class TernaEconnextionCollector(BaseCollector):
         openpyxl lo segnala con un UserWarning innocuo:
         "Workbook contains no default style, apply openpyxl's default".
 
-        Il warning viene soppresso qui perché non indica un problema sui dati.
+        Il warning viene soppresso qui perchÃ© non indica un problema sui dati.
         """
         with warnings.catch_warnings():
             warnings.filterwarnings(
@@ -331,7 +331,7 @@ class TernaEconnextionCollector(BaseCollector):
 
         return {
             "external_id": external_id,
-            "source_url": DOWNLOAD_CENTER_URL,
+            "source_url": f"{DOWNLOAD_CENTER_URL}#{external_id}",
             "title": title[:250],
             "region": region.title(),
             "tipo_impianto": tipo_impianto or DATASET,
@@ -375,12 +375,12 @@ class TernaEconnextionCollector(BaseCollector):
     def _normalize_key(self, value: str | None) -> str:
         value = self._clean_text(value) or ""
         value = value.lower()
-        value = value.replace("à", "a")
-        value = value.replace("è", "e")
-        value = value.replace("é", "e")
-        value = value.replace("ì", "i")
-        value = value.replace("ò", "o")
-        value = value.replace("ù", "u")
+        value = value.replace("Ã ", "a")
+        value = value.replace("Ã¨", "e")
+        value = value.replace("Ã©", "e")
+        value = value.replace("Ã¬", "i")
+        value = value.replace("Ã²", "o")
+        value = value.replace("Ã¹", "u")
         value = re.sub(r"[^a-z0-9]+", "_", value)
         value = value.strip("_")
         return value or "nd"

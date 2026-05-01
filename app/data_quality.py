@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import csv
@@ -25,13 +25,13 @@ SOURCE_FIELDS = ["source", "fonte", "dataset", "origine", "source_name"]
 URL_FIELDS = ["url", "link", "source_url", "detail_url", "href", "pagina", "page_url"]
 REGION_FIELDS = ["region", "regione"]
 PROVINCE_FIELDS = ["province", "provincia", "prov", "sigla_provincia", "sigla_prov"]
-MUNICIPALITY_FIELDS = ["municipality", "comune", "city", "localita", "località", "locality"]
+MUNICIPALITY_FIELDS = ["municipality", "comune", "city", "localita", "localitÃ ", "locality"]
 MW_FIELDS = [
     "mw", "mwp", "potenza_mw", "potenza_mwp", "capacity_mw", "power_mw",
-    "potenza", "power", "capacita", "capacità"
+    "potenza", "power", "capacita", "capacitÃ "
 ]
 PROPONENT_FIELDS = [
-    "proponent", "proponente", "societa", "società", "azienda", "richiedente",
+    "proponent", "proponente", "societa", "societÃ ", "azienda", "richiedente",
     "developer", "soggetto", "soggetto_proponente"
 ]
 
@@ -90,7 +90,7 @@ MANUAL_PROPONENT_OVERRIDES_BY_TITLE_RULES = [
 
 MANUAL_EXCLUDE_COMPLETED_SMALL_PROJECTS = [
     # Esclusioni manuali stabili: processi conclusi/piccola taglia non utili alla pipeline commerciale.
-    # V15: le regole non si basano più solo sul titolo esatto, perché Piemonte può esportare
+    # V15: le regole non si basano piÃ¹ solo sul titolo esatto, perchÃ© Piemonte puÃ² esportare
     # titoli diversi per lo stesso procedimento.
     {
         "source_norm": "piemonte",
@@ -104,7 +104,7 @@ MANUAL_EXCLUDE_COMPLETED_SMALL_PROJECTS = [
         "title_contains": ["impianto", "fotovoltaico"],
         "reason": "manual_exclude_completed_small_project",
     },
-    # Compatibilità con le vecchie diciture se ricompaiono nello snapshot.
+    # CompatibilitÃ  con le vecchie diciture se ricompaiono nello snapshot.
     {
         "source_norm": "piemonte",
         "title_norm": "fotovoltaico su tetto",
@@ -131,9 +131,9 @@ GENERIC_PATH_WORDS = {
 STOPWORDS = {
     "impianto", "fotovoltaico", "agrivoltaico", "agrovoltaico", "realizzazione",
     "costruzione", "esercizio", "progetto", "procedura", "valutazione", "verifica",
-    "assoggettabilita", "assoggettabilità", "via", "vas", "pnrr", "pniec",
+    "assoggettabilita", "assoggettabilitÃ ", "via", "vas", "pnrr", "pniec",
     "autorizzazione", "unica", "determina", "determinazione", "provvedimento",
-    "comune", "provincia", "localita", "località", "sito", "territorio",
+    "comune", "provincia", "localita", "localitÃ ", "sito", "territorio",
     "potenza", "nominale", "complessiva", "mw", "mwp", "kw", "kwp"
 }
 
@@ -274,11 +274,11 @@ def parse_number_locale(raw: str) -> float | None:
     # Normalizza separatori frequenti nei portali italiani:
     # 19.994,88  -> 19994.88
     # 6'093.36   -> 6093.36
-    # 6’093.36   -> 6093.36
+    # 6â€™093.36   -> 6093.36
     raw = (
         raw.replace("\u00a0", " ")
         .replace(" ", "")
-        .replace("’", "'")
+        .replace("â€™", "'")
         .replace("`", "'")
     )
 
@@ -335,7 +335,7 @@ def title_power_to_mw(raw_number: str, unit: str) -> float | None:
         .strip()
         .replace("\u00a0", " ")
         .replace(" ", "")
-        .replace("’", "'")
+        .replace("â€™", "'")
         .replace("`", "'")
     )
     unit = str(unit or "").lower()
@@ -365,10 +365,10 @@ def title_power_to_mw(raw_number: str, unit: str) -> float | None:
     return n
 
 
-_POWER_NUMBER_RE = r"\d+(?:[\.,'’]\d+)*(?:[\.,]\d+)?"
+_POWER_NUMBER_RE = r"\d+(?:[\.,'â€™]\d+)*(?:[\.,]\d+)?"
 
-# V10: fonti per cui il titolo procedurale è considerato più affidabile
-# del campo estratto quando c'è una discordanza esplicita e verificabile.
+# V10: fonti per cui il titolo procedurale Ã¨ considerato piÃ¹ affidabile
+# del campo estratto quando c'Ã¨ una discordanza esplicita e verificabile.
 TRUST_TITLE_MW_SOURCES = {"emilia_romagna", "emilia romagna"}
 TRUST_TITLE_PROVINCE_SOURCES = {"lazio"}
 
@@ -414,7 +414,7 @@ def title_has_close_mw(title: str, field_mw: float | None, tolerance: float = 0.
 
 
 def best_title_mw_for_repair(title: str, field_mw: float | None) -> float | None:
-    """Sceglie la potenza del titolo più coerente con un campo palesemente sottoscala."""
+    """Sceglie la potenza del titolo piÃ¹ coerente con un campo palesemente sottoscala."""
     values = extract_title_mws(title)
     if not values:
         return None
@@ -453,7 +453,7 @@ def normalize_municipality(value: Any) -> str:
 
 
 def is_terna_aggregate(row: dict[str, Any]) -> bool:
-    # V2: non basta trovare la stringa "terna" nel titolo, perché appare in parole come "esterna".
+    # V2: non basta trovare la stringa "terna" nel titolo, perchÃ© appare in parole come "esterna".
     source = norm_text(get_field(row, SOURCE_FIELDS))
     title = norm_text(get_field(row, TITLE_FIELDS))
     url = str(get_field(row, URL_FIELDS) or "").lower()
@@ -599,7 +599,7 @@ def bad_proponent_reason(value: Any) -> str:
 
     if len(cleaned) <= 80 and any(fragment in n for fragment in bad_fragments):
         company_markers = [
-            "srl", "spa", "s p a", "s r l", "societa", "società", "energy", "energia",
+            "srl", "spa", "s p a", "s r l", "societa", "societÃ ", "energy", "energia",
             "renewables", "solar", "green", "rinnovabili"
         ]
         if not any(marker in n for marker in company_markers):
@@ -659,7 +659,7 @@ def manual_exclusion_match(row: dict[str, Any]) -> dict[str, Any] | None:
             if all(needle in c["title_norm"] for needle in normalized_needles):
                 return rule
 
-        # Se la regola non specifica condizioni titolo ma ha già passato fonte/comune.
+        # Se la regola non specifica condizioni titolo ma ha giÃ  passato fonte/comune.
         if not exact_title and not title_contains:
             return rule
 
@@ -746,7 +746,7 @@ def extract_title_municipality_hint(title: str) -> str:
     if not title:
         return ""
     t = norm_text(title)
-    # Solo pattern con "comune". Non uso "località" perché spesso è contrada/via, non comune.
+    # Solo pattern con "comune". Non uso "localitÃ " perchÃ© spesso Ã¨ contrada/via, non comune.
     patterns = [
         r"\bcomune di ([a-z0-9 ]{3,80}?)(?: provincia| prov | in provincia| \([a-z]{2}\)| e |,|$)",
         r"\bcomuni di ([a-z0-9 ]{3,80}?)(?: provincia| prov | in provincia| \([a-z]{2}\)| e |,|$)",
@@ -791,7 +791,7 @@ def extract_title_province_codes(title: str) -> list[str]:
     Regole:
     - accetta sigle tra parentesi solo se non sono chiaramente sigle elettriche;
     - accetta "provincia/prov. di X";
-    - conserva più province quando il progetto o la connessione attraversano più territori.
+    - conserva piÃ¹ province quando il progetto o la connessione attraversano piÃ¹ territori.
     """
     if not title:
         return []
@@ -1310,18 +1310,18 @@ def detect_suspicious_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
             if title_hint != c["municipality_norm"] and title_hint not in c["municipality_norm"] and c["municipality_norm"] not in title_hint:
                 issues.append({**base, "issue": "title_municipality_mismatch"})
 
-        # Se titolo/campo citano più province, segnalo solo se non c'è alcuna sovrapposizione.
+        # Se titolo/campo citano piÃ¹ province, segnalo solo se non c'Ã¨ alcuna sovrapposizione.
         if title_prov_codes and field_province_codes and set(title_prov_codes).isdisjoint(field_province_codes):
             issues.append({**base, "issue": "title_province_mismatch"})
 
-        # Se il titolo contiene più potenze, il campo è accettabile se coincide con una di esse.
+        # Se il titolo contiene piÃ¹ potenze, il campo Ã¨ accettabile se coincide con una di esse.
         if title_mws and c["mw"] is not None and not title_has_close_mw(c["title"], c["mw"], tolerance=0.05):
             issues.append({**base, "issue": "title_mw_mismatch"})
 
-        # Non metto più gli URL generici nel file sospetti riga-per-riga:
+        # Non metto piÃ¹ gli URL generici nel file sospetti riga-per-riga:
         # erano centinaia di righe poco utili. La regola resta attiva nella
-        # deduplica: un URL generico non è mai una prova sufficiente per fondere.
-        # Se serve, si può riattivare un report separato per gruppi URL.
+        # deduplica: un URL generico non Ã¨ mai una prova sufficiente per fondere.
+        # Se serve, si puÃ² riattivare un report separato per gruppi URL.
 
     return issues
 
@@ -1330,7 +1330,7 @@ def find_project_list(data: Any) -> tuple[list[dict[str, Any]], str | None]:
     if isinstance(data, list):
         return [x for x in data if isinstance(x, dict)], None
     if not isinstance(data, dict):
-        raise ValueError("Formato data.json non riconosciuto: root non è né lista né oggetto.")
+        raise ValueError("Formato data.json non riconosciuto: root non Ã¨ nÃ© lista nÃ© oggetto.")
     for key in ["projects", "all_projects", "records", "items", "rows", "data", "project_rows", "puntual_projects"]:
         value = data.get(key)
         if isinstance(value, list):
@@ -1535,7 +1535,7 @@ def safe_md(value: Any) -> str:
 
 
 def should_repair_mw_from_title(field_mw: float | None, title_mw: float | None) -> bool:
-    """Decide se il MW del campo è palesemente sottoscala rispetto al titolo.
+    """Decide se il MW del campo Ã¨ palesemente sottoscala rispetto al titolo.
 
     Non corregge differenze ordinarie AC/DC o revisioni progetto.
     Corregge solo errori tipici da kW/kWp convertiti due volte:
@@ -1555,11 +1555,11 @@ def should_repair_mw_from_title(field_mw: float | None, title_mw: float | None) 
 
 
 def should_repair_trusted_title_mw(source: str, field_mw: float | None, title_mws: list[float]) -> float | None:
-    """V10: ripara mismatch MW chiari per fonti in cui il titolo è più affidabile.
+    """V10: ripara mismatch MW chiari per fonti in cui il titolo Ã¨ piÃ¹ affidabile.
 
     Dopo la rimozione della fonte CKAN Puglia restano pochi mismatch reali.
     Per Emilia-Romagna il titolo ARPAE contiene spesso la potenza esplicita,
-    mentre il campo può arrivare da parsing non coerente. La correzione è
+    mentre il campo puÃ² arrivare da parsing non coerente. La correzione Ã¨
     volutamente limitata a fonti allowlistate.
     """
     source_norm = norm_text(source)
@@ -1598,12 +1598,12 @@ def should_repair_trusted_title_province(source: str, field_province: str, title
 def repair_obvious_fields(rows: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     """Corregge solo anomalie oggettive prima della deduplica.
 
-    La correzione è conservativa:
-    - corregge MW quando il campo è chiaramente sottoscala rispetto al titolo;
-    - V10 corregge anche mismatch MW per fonti allowlistate in cui il titolo è
-      più affidabile del campo estratto;
+    La correzione Ã¨ conservativa:
+    - corregge MW quando il campo Ã¨ chiaramente sottoscala rispetto al titolo;
+    - V10 corregge anche mismatch MW per fonti allowlistate in cui il titolo Ã¨
+      piÃ¹ affidabile del campo estratto;
     - V10 corregge la provincia quando il titolo contiene una sola sigla esplicita
-      e la fonte è allowlistata.
+      e la fonte Ã¨ allowlistata.
     """
     repaired_rows: list[dict[str, Any]] = []
     repairs: list[dict[str, Any]] = []
@@ -1776,7 +1776,7 @@ def locate_input(path_arg: str | None) -> Path:
         if p.exists():
             return p
         raise FileNotFoundError(f"File non trovato: {p}")
-    for p in [Path("/app/reports/data.json"), Path("/app/data.json"), Path("reports/data.json"), Path("data.json")]:
+    for p in [Path("reports/data.json"), Path("/app/data.json"), Path("reports/data.json"), Path("data.json")]:
         if p.exists():
             return p
     found = list(Path(".").rglob("data.json"))
@@ -1789,8 +1789,8 @@ def locate_input(path_arg: str | None) -> Path:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Audit, correzioni conservative, override manuali e deduplica sicura V15 per pv_agent_mvp data.json")
     parser.add_argument("--input", default=None, help="Percorso data.json. Default: ricerca automatica.")
-    parser.add_argument("--output", default="/app/reports/data_deduped.json", help="Output JSON deduplicato.")
-    parser.add_argument("--reports-dir", default="/app/reports", help="Cartella report.")
+    parser.add_argument("--output", default="reports/data_deduped.json", help="Output JSON deduplicato.")
+    parser.add_argument("--reports-dir", default="reports", help="Cartella report.")
     parser.add_argument("--top-limit", type=int, default=20, help="Numero top_projects da rigenerare.")
     parser.add_argument("--in-place", action="store_true", help="Sovrascrive data.json dopo backup.")
     parser.add_argument("--no-field-repair", action="store_true", help="Disattiva le correzioni conservative MW/provincia prima della deduplica.")
@@ -1822,7 +1822,7 @@ def main() -> int:
 
     deduped_rows, accepted, rejected = dedupe_projects(working_rows)
 
-    # V8: se due record non vengono fusi perché confliggono, ma avevano la stessa
+    # V8: se due record non vengono fusi perchÃ© confliggono, ma avevano la stessa
     # project_key derivata da URL o aggregato, la chiave viene "splittata" per
     # renderla univoca nel dataset finale.
     deduped_rows, project_key_splits = enforce_unique_project_keys(deduped_rows)
@@ -1919,7 +1919,7 @@ def main() -> int:
     print(f"[data-quality-v16] coppie accettate: {len(accepted)}")
     print(f"[data-quality-v16] coppie respinte: {len(rejected)}")
     print(f"[data-quality-v16] righe sospette: {len(suspicious)}")
-    print(f"[data-quality-v16] esclusi dalla top_projects perché sospetti: {len(excluded_keys)}")
+    print(f"[data-quality-v16] esclusi dalla top_projects perchÃ© sospetti: {len(excluded_keys)}")
     print(f"[data-quality-v16] project_key splittate per conflitto: {len(project_key_splits)}")
     print(f"[data-quality-v16] output: {output_path}")
     print(f"[data-quality-v16] audit: {reports_dir / 'dedupe_audit.md'}")
@@ -1935,3 +1935,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

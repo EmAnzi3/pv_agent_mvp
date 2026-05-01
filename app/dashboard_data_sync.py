@@ -76,12 +76,12 @@ def main() -> int:
     )
     parser.add_argument(
         "--data",
-        default="/app/reports/site/data.json",
+        default="reports/site/data.json",
         help="Percorso del data.json deduplicato.",
     )
     parser.add_argument(
         "--html",
-        default="/app/reports/site/index.html",
+        default="reports/site/index.html",
         help="Percorso dell'index.html da aggiornare.",
     )
     parser.add_argument(
@@ -140,3 +140,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

@@ -8,8 +8,8 @@ from pathlib import Path
 from typing import Any
 
 
-DEFAULT_DATA_JSON = Path("/app/reports/site/data.json")
-DEFAULT_INDEX_HTML = Path("/app/reports/site/index.html")
+DEFAULT_DATA_JSON = Path("reports/site/data.json")
+DEFAULT_INDEX_HTML = Path("reports/site/index.html")
 
 
 def run_step(label: str, cmd: list[str]) -> None:
@@ -294,3 +294,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+

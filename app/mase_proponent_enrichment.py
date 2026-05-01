@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import csv
@@ -14,8 +14,8 @@ import requests
 from bs4 import BeautifulSoup
 
 
-DEFAULT_DATA = Path("/app/reports/site/data.json")
-DEFAULT_AUDIT = Path("/app/reports/mase_proponent_enrichment.csv")
+DEFAULT_DATA = Path("reports/site/data.json")
+DEFAULT_AUDIT = Path("reports/mase_proponent_enrichment.csv")
 
 REQUEST_TIMEOUT = 60
 SLEEP_SECONDS = 0.25
@@ -39,16 +39,16 @@ def clean_text(value: Any) -> str:
 def norm(value: Any) -> str:
     text = clean_text(value).lower()
     repl = {
-        "à": "a",
-        "è": "e",
-        "é": "e",
-        "ì": "i",
-        "ò": "o",
-        "ù": "u",
-        "’": "'",
-        "‘": "'",
-        "“": '"',
-        "”": '"',
+        "Ã ": "a",
+        "Ã¨": "e",
+        "Ã©": "e",
+        "Ã¬": "i",
+        "Ã²": "o",
+        "Ã¹": "u",
+        "â€™": "'",
+        "â€˜": "'",
+        "â€œ": '"',
+        "â€": '"',
     }
     for src, dst in repl.items():
         text = text.replace(src, dst)
@@ -103,18 +103,18 @@ def has_valid_proponent(record: dict[str, Any]) -> bool:
 def clean_candidate(value: str) -> str:
     value = html_lib.unescape(clean_text(value))
     value = re.sub(
-        r"^(Proponente|Soggetto proponente|Societ[aà] proponente|Societa proponente)\s*[:\-]\s*",
+        r"^(Proponente|Soggetto proponente|Societ[aÃ ] proponente|Societa proponente)\s*[:\-]\s*",
         "",
         value,
         flags=re.IGNORECASE,
     )
     value = re.split(
-        r"\s+(?:Data\s+pubblicazione|Data\s+avvio|Tipologia|Procedura|Autorit[aà]|Regione|Provincia|Comune|Localizzazione|Documentazione|Codice|ID|Identificativo)\b",
+        r"\s+(?:Data\s+pubblicazione|Data\s+avvio|Tipologia|Procedura|Autorit[aÃ ]|Regione|Provincia|Comune|Localizzazione|Documentazione|Codice|ID|Identificativo)\b",
         value,
         maxsplit=1,
         flags=re.IGNORECASE,
     )[0]
-    return clean_text(value.strip(" :;-–—|"))
+    return clean_text(value.strip(" :;-â€“â€”|"))
 
 
 def looks_like_company(value: Any) -> bool:
@@ -157,7 +157,7 @@ def looks_like_company(value: Any) -> bool:
         "spa",
         "s p a",
         "societa",
-        "società",
+        "societÃ ",
         "energy",
         "energia",
         "solar",
@@ -176,7 +176,7 @@ def looks_like_company(value: Any) -> bool:
     if any(marker in n for marker in company_markers):
         return True
 
-    letters = re.sub(r"[^A-Za-zÀ-ÿ]", "", value)
+    letters = re.sub(r"[^A-Za-zÃ€-Ã¿]", "", value)
     return len(letters) >= 5 and len(value) <= 60 and value[:1].isupper()
 
 
@@ -223,8 +223,8 @@ def candidates_from_plain_text(text: str) -> list[tuple[str, str]]:
     candidates: list[tuple[str, str]] = []
 
     patterns = [
-        r"\b(?:Soggetto\s+proponente|Societ[aà]\s+proponente|Societa\s+proponente|Proponente)\s*[:\-]\s*(.{2,180}?)(?=\s+(?:Data\s+pubblicazione|Data\s+avvio|Tipologia|Procedura|Autorit[aà]|Regione|Provincia|Comune|Localizzazione|Documentazione|Codice|ID|Identificativo)\b|$)",
-        r"\bProponente\s+(.{2,140}?)(?=\s+(?:Data\s+pubblicazione|Data\s+avvio|Tipologia|Procedura|Autorit[aà]|Regione|Provincia|Comune|Localizzazione|Documentazione|Codice|ID|Identificativo)\b|$)",
+        r"\b(?:Soggetto\s+proponente|Societ[aÃ ]\s+proponente|Societa\s+proponente|Proponente)\s*[:\-]\s*(.{2,180}?)(?=\s+(?:Data\s+pubblicazione|Data\s+avvio|Tipologia|Procedura|Autorit[aÃ ]|Regione|Provincia|Comune|Localizzazione|Documentazione|Codice|ID|Identificativo)\b|$)",
+        r"\bProponente\s+(.{2,140}?)(?=\s+(?:Data\s+pubblicazione|Data\s+avvio|Tipologia|Procedura|Autorit[aÃ ]|Regione|Provincia|Comune|Localizzazione|Documentazione|Codice|ID|Identificativo)\b|$)",
     ]
 
     for pattern in patterns:
@@ -443,7 +443,7 @@ def main() -> int:
     )
     parser.add_argument("--data", default=str(DEFAULT_DATA), help="Percorso data.json")
     parser.add_argument("--audit", default=str(DEFAULT_AUDIT), help="CSV audit output")
-    parser.add_argument("--output", default="", help="Output JSON. Se omesso e --in-place non è attivo, crea *_mase_proponents.json")
+    parser.add_argument("--output", default="", help="Output JSON. Se omesso e --in-place non Ã¨ attivo, crea *_mase_proponents.json")
     parser.add_argument("--in-place", action="store_true", help="Sovrascrive data.json dopo backup")
     parser.add_argument("--no-backup", action="store_true", help="Non crea backup con --in-place")
     parser.add_argument("--fail-if-missing", action="store_true", help="Esce con errore se restano record MASE senza proponente")
@@ -495,3 +495,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
