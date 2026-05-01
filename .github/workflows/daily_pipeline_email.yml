@@ -37,11 +37,17 @@ jobs:
       - name: Create runtime .env file
         shell: bash
         run: |
-          if [ -f .env.example ]; then
-            cp .env.example .env
-          else
-            touch .env
-          fi
+          cat > .env <<'EOF'
+          POSTGRES_DB=pv_agent
+          POSTGRES_USER=pv_agent
+          POSTGRES_PASSWORD=pv_agent
+          DATABASE_URL=postgresql+psycopg://pv_agent:pv_agent@db:5432/pv_agent
+          DB_HOST=db
+          DB_PORT=5432
+          DB_NAME=pv_agent
+          DB_USER=pv_agent
+          DB_PASSWORD=pv_agent
+          EOF
 
       - name: Build and run PV pipeline
         shell: bash
