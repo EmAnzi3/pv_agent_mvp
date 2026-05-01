@@ -557,6 +557,57 @@ MANUAL_PROPONENT_OVERRIDES_BY_URL_KEY = {
 }
 
 
+
+def bad_proponent_reason(value: Any) -> str:
+    """Riconosce valori che non possono essere proponenti: date, numeri puri, etichette amministrative."""
+    raw = str(value or "").strip()
+    if not raw:
+        return ""
+
+    cleaned = html.unescape(raw).strip()
+    cleaned = re.sub(r"\s+", " ", cleaned)
+
+    if re.fullmatch(r"\d{1,2}[/-]\d{1,2}[/-]\d{2,4}", cleaned):
+        return "date_only"
+    if re.fullmatch(r"\d{4}[/-]\d{1,2}[/-]\d{1,2}", cleaned):
+        return "date_only"
+    if re.fullmatch(
+        r"\d{1,2}\s+(gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre)\s+\d{4}",
+        cleaned,
+        flags=re.IGNORECASE,
+    ):
+        return "date_only"
+
+    if re.fullmatch(r"[0-9\s./:-]+", cleaned):
+        return "numeric_only"
+
+    n = norm_text(cleaned)
+
+    if n in {"data", "data pubblicazione", "pubblicato", "pubblicazione", "proponente", "societa proponente", "soggetto proponente"}:
+        return "administrative_label"
+
+    bad_fragments = [
+        "data pubblicazione",
+        "valutazione impatto ambientale",
+        "verifica di assoggettabilita",
+        "provvedimento unico",
+        "pniec pnrr",
+        "determinazione",
+        "comunicazione",
+        "dettaglio",
+    ]
+
+    if len(cleaned) <= 80 and any(fragment in n for fragment in bad_fragments):
+        company_markers = [
+            "srl", "spa", "s p a", "s r l", "societa", "società", "energy", "energia",
+            "renewables", "solar", "green", "rinnovabili"
+        ]
+        if not any(marker in n for marker in company_markers):
+            return "administrative_fragment"
+
+    return ""
+
+
 def manual_power_matches(actual: Any, expected: float | None) -> bool:
     if expected is None:
         return True
@@ -1619,6 +1670,25 @@ def repair_obvious_fields(rows: list[dict[str, Any]]) -> tuple[list[dict[str, An
                 "url": c2["url"],
             })
 
+        c3 = canonical_record(new_row)
+        bad_prop_reason = bad_proponent_reason(c3.get("proponent"))
+
+        if bad_prop_reason:
+            old_value = get_field(new_row, PROPONENT_FIELDS)
+            set_field_if_present(new_row, PROPONENT_FIELDS, "")
+            repairs.append({
+                "idx": idx,
+                "field": "proponent",
+                "old_value": old_value,
+                "old_mw": c3["mw"],
+                "new_value": "",
+                "reason": f"bad_proponent_cleared_{bad_prop_reason}",
+                "title": c3["title"],
+                "source": c3["source"],
+                "province": c3["province"],
+                "url": c3["url"],
+            })
+
         repaired_rows.append(new_row)
 
     return repaired_rows, repairs
@@ -1736,9 +1806,9 @@ def main() -> int:
     rows, project_key = find_project_list(data)
     top_before, top_key = find_top_projects(data)
 
-    print(f"[data-quality-v15] input: {input_path}")
-    print(f"[data-quality-v15] project list key: {project_key or '<root-list>'}")
-    print(f"[data-quality-v15] record iniziali: {len(rows)}")
+    print(f"[data-quality-v16] input: {input_path}")
+    print(f"[data-quality-v16] project list key: {project_key or '<root-list>'}")
+    print(f"[data-quality-v16] record iniziali: {len(rows)}")
 
     manually_fixed_rows, manual_actions = apply_manual_data_fixes(rows)
 
@@ -1808,7 +1878,7 @@ def main() -> int:
             "top_projects_excluded_suspicious": len(excluded_keys),
             "project_key_splits": len(project_key_splits),
             "project_key_conflict_groups": len(set(r.get("old_project_key") for r in project_key_splits)),
-            "version": "v15",
+            "version": "v16",
             "rules": {
                 "generic_urls_are_not_strong_keys": True,
                 "terna_detection_requires_source_not_substring": True,
@@ -1824,6 +1894,7 @@ def main() -> int:
                 "manual_proponent_overrides_by_title_power": True,
                 "manual_overrides_reapplied_after_dedupe": True,
                 "manual_completed_small_project_exclusions": True,
+                "bad_proponent_values_are_cleared": True,
             },
         }
 
@@ -1841,24 +1912,24 @@ def main() -> int:
     audit_md = make_audit_markdown(working_rows, deduped_rows, accepted, rejected, suspicious, top_before, top_after, repairs=repairs)
     (reports_dir / "dedupe_audit.md").write_text(audit_md, encoding="utf-8")
 
-    print(f"[data-quality-v15] record dopo deduplica: {len(deduped_rows)}")
-    print(f"[data-quality-v15] fusi/rimossi: {len(rows) - len(deduped_rows)}")
-    print(f"[data-quality-v15] correzioni automatiche/manuali: {len(repairs)}")
-    print(f"[data-quality-v15] azioni manuali: {len(manual_actions)}")
-    print(f"[data-quality-v15] coppie accettate: {len(accepted)}")
-    print(f"[data-quality-v15] coppie respinte: {len(rejected)}")
-    print(f"[data-quality-v15] righe sospette: {len(suspicious)}")
-    print(f"[data-quality-v15] esclusi dalla top_projects perché sospetti: {len(excluded_keys)}")
-    print(f"[data-quality-v15] project_key splittate per conflitto: {len(project_key_splits)}")
-    print(f"[data-quality-v15] output: {output_path}")
-    print(f"[data-quality-v15] audit: {reports_dir / 'dedupe_audit.md'}")
+    print(f"[data-quality-v16] record dopo deduplica: {len(deduped_rows)}")
+    print(f"[data-quality-v16] fusi/rimossi: {len(rows) - len(deduped_rows)}")
+    print(f"[data-quality-v16] correzioni automatiche/manuali: {len(repairs)}")
+    print(f"[data-quality-v16] azioni manuali: {len(manual_actions)}")
+    print(f"[data-quality-v16] coppie accettate: {len(accepted)}")
+    print(f"[data-quality-v16] coppie respinte: {len(rejected)}")
+    print(f"[data-quality-v16] righe sospette: {len(suspicious)}")
+    print(f"[data-quality-v16] esclusi dalla top_projects perché sospetti: {len(excluded_keys)}")
+    print(f"[data-quality-v16] project_key splittate per conflitto: {len(project_key_splits)}")
+    print(f"[data-quality-v16] output: {output_path}")
+    print(f"[data-quality-v16] audit: {reports_dir / 'dedupe_audit.md'}")
 
     if args.in_place:
         backup = input_path.with_name(input_path.stem + f"_backup_before_dedupe_v13_{now_stamp()}" + input_path.suffix)
         shutil.copy2(input_path, backup)
         shutil.copy2(output_path, input_path)
-        print(f"[data-quality-v15] backup creato: {backup}")
-        print(f"[data-quality-v15] data.json sovrascritto: {input_path}")
+        print(f"[data-quality-v16] backup creato: {backup}")
+        print(f"[data-quality-v16] data.json sovrascritto: {input_path}")
     return 0
 
 

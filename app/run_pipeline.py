@@ -222,6 +222,18 @@ def main() -> int:
     )
 
     parser.add_argument(
+        "--skip-mase-proponent-enrichment",
+        action="store_true",
+        help="Salta il recupero proponenti MASE dalle pagine di dettaglio.",
+    )
+
+    parser.add_argument(
+        "--allow-mase-missing-proponent",
+        action="store_true",
+        help="Non blocca la pipeline se restano record MASE senza proponente.",
+    )
+
+    parser.add_argument(
         "--allow-source-puglia",
         action="store_true",
         help="Non blocca la validazione se trova ancora source='puglia'. Da usare solo per debug.",
@@ -253,6 +265,16 @@ def main() -> int:
         run_step(
             "data quality / deduplica / summary / top_projects",
             [py, "-m", "app.data_quality", "--in-place"],
+        )
+
+    if not args.skip_mase_proponent_enrichment:
+        enrichment_cmd = [py, "-m", "app.mase_proponent_enrichment", "--in-place"]
+        if not args.allow_mase_missing_proponent:
+            enrichment_cmd.append("--fail-if-missing")
+
+        run_step(
+            "recupero proponenti MASE da dettaglio",
+            enrichment_cmd,
         )
 
     if not args.skip_dashboard_sync:

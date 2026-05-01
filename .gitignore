@@ -70,3 +70,23 @@ app/scripts/debug_*.py
 
 app/collectors/debug/
 app/scripts/debug_*.py
+
+# Local env / secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local generated reports
+reports/
+_archive/
+
+# Keep published dashboard
+!docs/
+!docs/**
+
+# Backup / patch temporanei
+*backup*
+*_patched.json
+patch_*.py

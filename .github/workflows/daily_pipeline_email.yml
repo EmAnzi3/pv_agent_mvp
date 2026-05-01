@@ -1,0 +1,80 @@
+﻿name: Daily PV Pipeline + Email Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Ogni giorno alle 05:00 UTC. In Italia: 06:00 inverno, 07:00 estate.
+    - cron: "0 5 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    env:
+      OLD_DATA: tmp/previous_data.json
+      NEW_DATA: docs/data.json
+      DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
+      MAIL_SUBJECT_PREFIX: ${{ vars.MAIL_SUBJECT_PREFIX }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Preserve previous published data
+        shell: bash
+        run: |
+          mkdir -p tmp
+          if [ -f docs/data.json ]; then
+            cp docs/data.json "$OLD_DATA"
+          else
+            echo '{"records":[]}' > "$OLD_DATA"
+          fi
+
+      - name: Build and run PV pipeline
+        shell: bash
+        run: |
+          docker compose run --rm \
+            -v "${PWD}/app:/app/app" \
+            -v "${PWD}/reports:/app/reports" \
+            pv-agent python -m app.run_pipeline
+
+      - name: Publish dashboard files to docs
+        shell: bash
+        run: |
+          mkdir -p docs
+          cp -r reports/site/* docs/
+
+      - name: Send email report if changes exist
+        shell: bash
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          python scripts/compare_and_email.py \
+            --old "$OLD_DATA" \
+            --new "$NEW_DATA" \
+            --dashboard-url "${DASHBOARD_URL}" \
+            --subject-prefix "${MAIL_SUBJECT_PREFIX:-PV Agent}"
+
+      - name: Commit updated dashboard
+        shell: bash
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add docs
+
+          if git diff --cached --quiet; then
+            echo "No dashboard changes to commit."
+          else
+            git commit -m "Daily PV dashboard update"
+            git push
+          fi
