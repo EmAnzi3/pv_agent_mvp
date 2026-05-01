@@ -34,6 +34,15 @@ jobs:
             echo '{"records":[]}' > "$OLD_DATA"
           fi
 
+      - name: Create runtime .env file
+        shell: bash
+        run: |
+          if [ -f .env.example ]; then
+            cp .env.example .env
+          else
+            touch .env
+          fi
+
       - name: Build and run PV pipeline
         shell: bash
         run: |
