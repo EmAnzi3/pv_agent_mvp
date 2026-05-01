@@ -611,97 +611,6 @@ class SiciliaCollector(BaseCollector):
 
         return ", ".join(parts)
 
-    def _remove_admin_capital_noise(self, merged: dict) -> dict:
-        """
-        Rimuove solo falsi positivi evidenti in cui il capoluogo di provincia entra
-        tra i comuni pur essendo informazione amministrativa/provinciale.
-
-        Esempio reale:
-        - titolo: "... IN COMUNE DI FRANCOFONTE (SR), LOCALITA' PASSANETO"
-        - output grezzo: ["Francofonte", "Siracusa"]
-        - output pulito: ["Francofonte"]
-
-        Non tocca casi plurali veri:
-        - "... nei territori dei comuni di Canicattini Bagni, Siracusa e Noto"
-        - "... Catania, Motta Sant'Anastasia e Lentini"
-        """
-        municipalities = merged.get("municipalities") or []
-        if not isinstance(municipalities, list) or len(municipalities) < 2:
-            return merged
-
-        province = self._normalize_sicilia_province_value(merged.get("province"))
-        if not province:
-            return merged
-
-        capital_by_province = {
-            "AG": "Agrigento",
-            "CL": "Caltanissetta",
-            "CT": "Catania",
-            "EN": "Enna",
-            "ME": "Messina",
-            "PA": "Palermo",
-            "RG": "Ragusa",
-            "SR": "Siracusa",
-            "TP": "Trapani",
-        }
-
-        capital = capital_by_province.get(province)
-        if not capital:
-            return merged
-
-        capital_key = self._normalize_for_match(capital)
-        municipality_keys = [self._normalize_for_match(str(x)) for x in municipalities]
-
-        if capital_key not in municipality_keys:
-            return merged
-
-        title = self._clean_text(merged.get("title"))
-        title_norm = self._normalize_for_match(title)
-
-        # Se il capoluogo è nominato in una frase plurale "comuni/territori",
-        # lo consideriamo un comune di progetto e lo teniamo.
-        plural_patterns = [
-            rf"\bcomuni\s+di\b.{{0,180}}\b{re.escape(capital_key)}\b",
-            rf"\bterritori\s+dei\s+comuni\b.{{0,180}}\b{re.escape(capital_key)}\b",
-            rf"\bterritori\s+di\b.{{0,180}}\b{re.escape(capital_key)}\b",
-        ]
-
-        for pattern in plural_patterns:
-            if re.search(pattern, title_norm):
-                return merged
-
-        # Se il titolo contiene una localizzazione singolare esplicita diversa
-        # dal capoluogo, e il capoluogo compare solo come provincia/rumore,
-        # rimuoviamo il capoluogo dalla lista.
-        single_patterns = [
-            r"\b(?:nel\s+|in\s+|sito\s+nel\s+|sito\s+in\s+|da\s+realizzarsi\s+nel\s+|da\s+realizzare\s+nel\s+)?comune\s+di\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’\-\s]{2,60}?)(?:\s*\((AG|CL|CT|EN|ME|PA|RG|SR|TP)\)|,|\s+localit[aà]|\s+provincia|$)",
-        ]
-
-        explicit_single = None
-        explicit_province = None
-
-        for pattern in single_patterns:
-            match = re.search(pattern, title, flags=re.IGNORECASE)
-            if match:
-                explicit_single = self._clean_municipality(match.group(1))
-                explicit_province = match.group(2).upper() if match.lastindex and match.group(2) else None
-                break
-
-        if explicit_single:
-            explicit_key = self._normalize_for_match(explicit_single)
-
-            if explicit_key != capital_key and (explicit_province is None or explicit_province == province):
-                cleaned = [
-                    item for item in municipalities
-                    if self._normalize_for_match(str(item)) != capital_key
-                ]
-
-                if cleaned:
-                    merged["municipalities"] = cleaned
-                    merged["location_source"] = f"{merged.get('location_source') or 'gis'}+admin_capital_cleaned"
-
-        return merged
-
     def _apply_gis_enrichment(self, normalized: dict, gis_info: dict) -> dict:
         if not gis_info:
             return normalized
@@ -741,8 +650,6 @@ class SiciliaCollector(BaseCollector):
             merged["gis_match_mode"] = gis_info.get("match_mode")
         if map_source:
             merged["gis_map_source"] = map_source
-
-        merged = self._remove_admin_capital_noise(merged)
 
         return merged
 

@@ -280,19 +280,13 @@ class SiciliaGISEnricher:
                     result["map_source"] = "layer0_point"
                     return result
 
-            polygon_codproc_candidates: list[int] = []
-            for value in [codproc_value, id_value]:
-                if value is not None and value not in polygon_codproc_candidates:
-                    polygon_codproc_candidates.append(value)
-
-            for candidate_codproc in polygon_codproc_candidates:
+            if codproc_value is not None:
                 for layer_id in [8, 9]:
-                    comuni, province = self._location_from_polygons(layer_id, candidate_codproc)
+                    comuni, province = self._location_from_polygons(layer_id, codproc_value)
                     if comuni or province:
                         result["municipalities"] = comuni
                         result["province"] = ", ".join(province)
                         result["map_source"] = f"layer{layer_id}_polygon"
-                        result["polygon_codproc_used"] = candidate_codproc
                         return result
 
             return result
@@ -494,63 +488,22 @@ class SiciliaGISEnricher:
         return location
 
     def _find_layer0_match(self, id_value: int | None, codproc_value: int | None, title: str) -> tuple[dict | None, str]:
-        """
-        Match robusto tra CSV e layer Procedure.
+        if id_value is not None and codproc_value is not None and (id_value, codproc_value) in self.by_pair:
+            return self.by_pair[(id_value, codproc_value)], "id+codproc"
 
-        Nei dati Sicilia ci sono due numeri:
-        - procedura_codice dal CSV;
-        - procedura___oggetto_raw dalla URL.
+        if id_value is not None and id_value in self.by_id:
+            return self.by_id[id_value], "id"
 
-        L'audit GIS ha dimostrato che la combinazione funziona, ma per evitare
-        errori di verso proviamo entrambe le coppie prima dei fallback singoli.
-        """
-        title_norm = _gis_norm(title)
-
-        # 1) Coppie esatte: prima verso normale, poi verso invertito.
-        pair_candidates: list[tuple[int, int, str]] = []
-        if id_value is not None and codproc_value is not None:
-            pair_candidates.append((id_value, codproc_value, "id+codproc"))
-            pair_candidates.append((codproc_value, id_value, "id+codproc_reversed"))
-
-        for a, b, mode in pair_candidates:
-            if (a, b) in self.by_pair:
-                return self.by_pair[(a, b)], mode
-
-        # 2) Fallback su id layer0: prova entrambi i numeri, con titolo se possibile.
-        id_candidates: list[tuple[int, str]] = []
-        for value, mode in [(id_value, "id"), (codproc_value, "id_from_second_number")]:
-            if value is not None:
-                id_candidates.append((value, mode))
-
-        for value, mode in id_candidates:
-            candidate = self.by_id.get(value)
-            if not candidate:
-                continue
-
-            oggetto_norm = _gis_norm(candidate.get("oggetto"))
-            if title_norm and oggetto_norm and (title_norm in oggetto_norm or oggetto_norm in title_norm):
-                return candidate, mode + "+title"
-
-        for value, mode in id_candidates:
-            candidate = self.by_id.get(value)
-            if candidate:
-                return candidate, mode
-
-        # 3) Fallback su codproc layer0: prova entrambi i numeri.
-        codproc_candidates: list[tuple[int, str]] = []
-        for value, mode in [(codproc_value, "codproc"), (id_value, "codproc_from_first_number")]:
-            if value is not None:
-                codproc_candidates.append((value, mode))
-
-        for value, mode in codproc_candidates:
-            candidates = self.by_codproc.get(value) or []
+        if codproc_value is not None:
+            candidates = self.by_codproc.get(codproc_value) or []
             if len(candidates) == 1:
-                return candidates[0], mode + "_unique"
+                return candidates[0], "codproc_unique"
 
+            title_norm = _gis_norm(title)
             for candidate in candidates:
                 oggetto_norm = _gis_norm(candidate.get("oggetto"))
                 if title_norm and oggetto_norm and (title_norm in oggetto_norm or oggetto_norm in title_norm):
-                    return candidate, mode + "+title"
+                    return candidate, "codproc+title"
 
         return None, ""
 
@@ -571,137 +524,6 @@ class SiciliaCollector(BaseCollector):
         except Exception:
             return None
 
-    def _normalize_sicilia_province_value(self, value: str | None) -> str:
-        value = self._clean_text(value)
-        if not value:
-            return ""
-
-        upper = value.upper()
-        if upper in PROVINCE_CODES:
-            return upper
-
-        mapping = {
-            "AGRIGENTO": "AG",
-            "CALTANISSETTA": "CL",
-            "CATANIA": "CT",
-            "ENNA": "EN",
-            "MESSINA": "ME",
-            "PALERMO": "PA",
-            "RAGUSA": "RG",
-            "SIRACUSA": "SR",
-            "TRAPANI": "TP",
-        }
-
-        parts = []
-        for item in re.split(r",|;", value):
-            key = self._normalize_for_match(item).upper()
-            key = key.replace(" ", "")
-            mapped = None
-            for name, code in mapping.items():
-                if key == name.replace(" ", ""):
-                    mapped = code
-                    break
-            if mapped:
-                if mapped not in parts:
-                    parts.append(mapped)
-            else:
-                cleaned = item.strip()
-                if cleaned and cleaned not in parts:
-                    parts.append(cleaned)
-
-        return ", ".join(parts)
-
-    def _remove_admin_capital_noise(self, merged: dict) -> dict:
-        """
-        Rimuove solo falsi positivi evidenti in cui il capoluogo di provincia entra
-        tra i comuni pur essendo informazione amministrativa/provinciale.
-
-        Esempio reale:
-        - titolo: "... IN COMUNE DI FRANCOFONTE (SR), LOCALITA' PASSANETO"
-        - output grezzo: ["Francofonte", "Siracusa"]
-        - output pulito: ["Francofonte"]
-
-        Non tocca casi plurali veri:
-        - "... nei territori dei comuni di Canicattini Bagni, Siracusa e Noto"
-        - "... Catania, Motta Sant'Anastasia e Lentini"
-        """
-        municipalities = merged.get("municipalities") or []
-        if not isinstance(municipalities, list) or len(municipalities) < 2:
-            return merged
-
-        province = self._normalize_sicilia_province_value(merged.get("province"))
-        if not province:
-            return merged
-
-        capital_by_province = {
-            "AG": "Agrigento",
-            "CL": "Caltanissetta",
-            "CT": "Catania",
-            "EN": "Enna",
-            "ME": "Messina",
-            "PA": "Palermo",
-            "RG": "Ragusa",
-            "SR": "Siracusa",
-            "TP": "Trapani",
-        }
-
-        capital = capital_by_province.get(province)
-        if not capital:
-            return merged
-
-        capital_key = self._normalize_for_match(capital)
-        municipality_keys = [self._normalize_for_match(str(x)) for x in municipalities]
-
-        if capital_key not in municipality_keys:
-            return merged
-
-        title = self._clean_text(merged.get("title"))
-        title_norm = self._normalize_for_match(title)
-
-        # Se il capoluogo è nominato in una frase plurale "comuni/territori",
-        # lo consideriamo un comune di progetto e lo teniamo.
-        plural_patterns = [
-            rf"\bcomuni\s+di\b.{{0,180}}\b{re.escape(capital_key)}\b",
-            rf"\bterritori\s+dei\s+comuni\b.{{0,180}}\b{re.escape(capital_key)}\b",
-            rf"\bterritori\s+di\b.{{0,180}}\b{re.escape(capital_key)}\b",
-        ]
-
-        for pattern in plural_patterns:
-            if re.search(pattern, title_norm):
-                return merged
-
-        # Se il titolo contiene una localizzazione singolare esplicita diversa
-        # dal capoluogo, e il capoluogo compare solo come provincia/rumore,
-        # rimuoviamo il capoluogo dalla lista.
-        single_patterns = [
-            r"\b(?:nel\s+|in\s+|sito\s+nel\s+|sito\s+in\s+|da\s+realizzarsi\s+nel\s+|da\s+realizzare\s+nel\s+)?comune\s+di\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’\-\s]{2,60}?)(?:\s*\((AG|CL|CT|EN|ME|PA|RG|SR|TP)\)|,|\s+localit[aà]|\s+provincia|$)",
-        ]
-
-        explicit_single = None
-        explicit_province = None
-
-        for pattern in single_patterns:
-            match = re.search(pattern, title, flags=re.IGNORECASE)
-            if match:
-                explicit_single = self._clean_municipality(match.group(1))
-                explicit_province = match.group(2).upper() if match.lastindex and match.group(2) else None
-                break
-
-        if explicit_single:
-            explicit_key = self._normalize_for_match(explicit_single)
-
-            if explicit_key != capital_key and (explicit_province is None or explicit_province == province):
-                cleaned = [
-                    item for item in municipalities
-                    if self._normalize_for_match(str(item)) != capital_key
-                ]
-
-                if cleaned:
-                    merged["municipalities"] = cleaned
-                    merged["location_source"] = f"{merged.get('location_source') or 'gis'}+admin_capital_cleaned"
-
-        return merged
-
     def _apply_gis_enrichment(self, normalized: dict, gis_info: dict) -> dict:
         if not gis_info:
             return normalized
@@ -709,7 +531,7 @@ class SiciliaCollector(BaseCollector):
         merged = dict(normalized)
         current_municipalities = merged.get("municipalities") or []
         gis_municipalities = gis_info.get("municipalities") or []
-        gis_province = self._normalize_sicilia_province_value(gis_info.get("province"))
+        gis_province = self._clean_text(gis_info.get("province"))
         gis_proponent = self._clean_text(gis_info.get("proponent"))
         map_source = self._clean_text(gis_info.get("map_source"))
 
@@ -741,8 +563,6 @@ class SiciliaCollector(BaseCollector):
             merged["gis_match_mode"] = gis_info.get("match_mode")
         if map_source:
             merged["gis_map_source"] = map_source
-
-        merged = self._remove_admin_capital_noise(merged)
 
         return merged
 
@@ -1893,14 +1713,6 @@ if __name__ == "__main__":
     missing_municipalities = sum(1 for item in items if not item.payload.get("municipalities"))
     print("missing_province:", missing_province)
     print("missing_municipalities:", missing_municipalities)
-
-    try:
-        summary_path = Path("/app/reports/debug_sicilia/summary.json")
-        if summary_path.exists():
-            debug_summary = json.loads(summary_path.read_text(encoding="utf-8"))
-            print("gis_enrichment:", json.dumps(debug_summary.get("gis_enrichment", {}), ensure_ascii=False))
-    except Exception as exc:
-        print("gis_enrichment_summary_error:", exc)
 
     for item in items[:80]:
         print(

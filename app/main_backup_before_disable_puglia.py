@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 import logging
@@ -12,7 +12,7 @@ from app.collectors.veneto import VenetoCollector
 from app.collectors.emilia_romagna import EmiliaRomagnaCollector
 from app.collectors.lombardia import LombardiaCollector
 from app.collectors.sicilia import SiciliaCollector
-# DISABLED: from app.collectors.puglia import PugliaCollector
+from app.collectors.puglia import PugliaCollector
 from app.collectors.sistema_puglia_energia import SistemaPugliaEnergiaCollector
 from app.collectors.lazio import LazioCollector
 from app.collectors.sardegna import SardegnaCollector
@@ -43,7 +43,7 @@ COLLECTORS = [
     EmiliaRomagnaCollector,
     LombardiaCollector,
     SiciliaCollector,
-    # DISABLED: PugliaCollector,
+    PugliaCollector,
     SistemaPugliaEnergiaCollector,
     LazioCollector,
     SardegnaCollector,
@@ -85,10 +85,10 @@ def clean_reports_dir() -> None:
 
 def clean_csv_reports_only() -> None:
     """
-    Elimina eventuali CSV giÃ  generati nella run corrente.
+    Elimina eventuali CSV già generati nella run corrente.
 
-    Utile se il ReportBuilder viene richiamato piÃ¹ volte nello stesso ciclo
-    o se un'esecuzione ravvicinata lascia piÃ¹ terne di report.
+    Utile se il ReportBuilder viene richiamato più volte nello stesso ciclo
+    o se un'esecuzione ravvicinata lascia più terne di report.
     """
     reports_dir = Path(settings.reports_dir)
     reports_dir.mkdir(parents=True, exist_ok=True)
@@ -150,7 +150,7 @@ def run_once() -> None:
 
             logger.info("Summary %s", summary)
 
-        # Mantiene una sola terna CSV finale anche se il builder viene richiamato piÃ¹ volte.
+        # Mantiene una sola terna CSV finale anche se il builder viene richiamato più volte.
         clean_csv_reports_only()
 
         reports = ReportBuilder(db).build_daily_reports()

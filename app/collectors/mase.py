@@ -700,8 +700,10 @@ class MaseCollector(BaseCollector):
         if info_data.get("title"):
             title = info_data["title"]
 
-        if info_data.get("proponent"):
-            proponent = info_data["proponent"]
+        clean_info_proponent = self._clean_proponent(info_data.get("proponent"))
+
+        if clean_info_proponent:
+            proponent = clean_info_proponent
 
         info_procedure = self._clean_procedure(info_data.get("procedure"))
         if info_procedure:
@@ -828,15 +830,18 @@ class MaseCollector(BaseCollector):
         title = self._extract_info_title(soup)
         info_table = self._extract_key_value_data(soup)
 
-        proponent = self._find_value_by_keys(
-            info_table,
-            [
-                "proponente",
-                "proponenti",
-                "societa proponente",
-                "società proponente",
-                "soggetto proponente",
-            ],
+        proponent = (
+            self._find_value_by_keys(
+                info_table,
+                [
+                    "proponente",
+                    "proponenti",
+                    "societa proponente",
+                    "società proponente",
+                    "soggetto proponente",
+                ],
+            )
+            or self._extract_proponent_from_info_plain(plain)
         )
 
         raw_procedure = self._find_value_by_keys(
@@ -1332,7 +1337,93 @@ class MaseCollector(BaseCollector):
         value = re.sub(r"^\(?\s*Azienda\s*:\s*", "", value, flags=re.IGNORECASE)
         value = value.strip(" ();")
 
+        if not value:
+            return None
+
+        # Blocca date, numeri e codici finiti per errore nella colonna proponente.
+        if re.fullmatch(r"\d{1,2}/\d{1,2}/\d{4}", value):
+            return None
+
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+            return None
+
+        if re.fullmatch(r"\d+", value):
+            return None
+
+        norm = self._normalize_for_match(value)
+
+        bad_fragments = [
+            "spazio per il proponente/gestore",
+            "spazio per il proponente",
+            "proponente/gestore",
+            "eventi e notizie",
+            "provvedimenti 2026",
+            "la direzione informa",
+            "attività delle commissioni tecniche",
+            "attivita delle commissioni tecniche",
+            "domande frequenti",
+            "procedure in corso",
+            "avvisi al pubblico",
+            "invio osservazioni",
+            "consultazioni transfrontaliere",
+            "procedure integrate",
+            "valutazioni e autorizzazioni ambientali",
+            "vas - via - aia",
+            "vas via aia",
+            "ministero dell'ambiente",
+            "ministero della transizione ecologica",
+            "mase",
+            "procedura",
+            "codice procedura",
+            "codice istanza",
+            "data presentazione",
+            "data avvio",
+            "data pubblicazione",
+            "stato procedura",
+            "documentazione",
+            "oggetto",
+            "tipologia di opera",
+            "scadenza presentazione osservazioni",
+        ]
+
+        bad_norms = [self._normalize_for_match(item) for item in bad_fragments]
+
+        if any(item and item in norm for item in bad_norms):
+            return None
+
+        if len(value) > 300:
+            return None
+
         return value or None
+
+    def _extract_proponent_from_info_plain(self, plain: str | None) -> str | None:
+        """
+        Estrae il vero proponente dal testo della pagina /Oggetti/Info/<id>.
+        Accetta solo label esplicite tipo:
+        'Proponente : Arya Solar S.r.l.'
+        """
+        plain = self._clean_text(plain or "")
+
+        if not plain:
+            return None
+
+        patterns = [
+            r"\bProponente\s*:\s*(.+?)(?:\s+Tipologia\s+di\s+opera\s*:|\s+Scadenza\s+presentazione|\s+Territori\s+ed\s+aree|\s+Scegli\s+la\s+procedura|\s+Procedura\s+Codice|\s+Data\s+presentazione|\s+Oggetto\s*:|$)",
+            r"\bProponenti\s*:\s*(.+?)(?:\s+Tipologia\s+di\s+opera\s*:|\s+Scadenza\s+presentazione|\s+Territori\s+ed\s+aree|\s+Scegli\s+la\s+procedura|\s+Procedura\s+Codice|\s+Data\s+presentazione|\s+Oggetto\s*:|$)",
+            r"\bSocietà\s+proponente\s*:\s*(.+?)(?:\s+Tipologia\s+di\s+opera\s*:|\s+Scadenza\s+presentazione|\s+Territori\s+ed\s+aree|\s+Scegli\s+la\s+procedura|\s+Procedura\s+Codice|\s+Data\s+presentazione|\s+Oggetto\s*:|$)",
+            r"\bSocieta\s+proponente\s*:\s*(.+?)(?:\s+Tipologia\s+di\s+opera\s*:|\s+Scadenza\s+presentazione|\s+Territori\s+ed\s+aree|\s+Scegli\s+la\s+procedura|\s+Procedura\s+Codice|\s+Data\s+presentazione|\s+Oggetto\s*:|$)",
+            r"\bSoggetto\s+proponente\s*:\s*(.+?)(?:\s+Tipologia\s+di\s+opera\s*:|\s+Scadenza\s+presentazione|\s+Territori\s+ed\s+aree|\s+Scegli\s+la\s+procedura|\s+Procedura\s+Codice|\s+Data\s+presentazione|\s+Oggetto\s*:|$)",
+        ]
+
+        for pattern in patterns:
+            for match in re.finditer(pattern, plain, flags=re.IGNORECASE):
+                value = self._clean_text(match.group(1))
+                value = self._clean_proponent(value)
+
+                if value:
+                    return value
+
+        return None
 
     def _build_fallback_external_id(self, title: str, proponent: str | None) -> str:
         base = f"mase|{title}|{proponent or ''}"

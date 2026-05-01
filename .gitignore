@@ -48,3 +48,25 @@ Thumbs.db
 # Generated backups
 *.bak
 *.backup
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+*.bak*
+*.tmp
+*.log
+
+reports/
+!reports/.gitkeep
+
+.env
+.env.*
+!.env.example
+
+app/collectors/debug/
+app/scripts/debug_*.py
+
+app/collectors/debug/
+app/scripts/debug_*.py

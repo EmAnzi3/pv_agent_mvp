@@ -20,6 +20,18 @@ PV_KEYWORDS = [
     "fonte solare",
 ]
 
+NON_PV_EXCLUDE = [
+    "idroelettrico",
+    "idropotabile",
+    "acquedotto",
+    "allevamento",
+    "rifiuti",
+    "discarica",
+    "cava",
+    "variazione non sostanziale dell’a.i.a",
+    "variazione non sostanziale dell'a.i.a",
+]
+
 # Da consts.js:
 # SCO = 1
 # VER = 2
@@ -32,6 +44,148 @@ TIPO_PROCEDURA_LIST = "1,2,3,5,15"
 # 2 = IND. ENERGETICA ED ESTRATTIVA
 # 8 = ALTRI PROGETTI
 LOMBARDIA_SETTORI_TARGET = {"2", "8"}
+
+
+PROVINCE_NAME_TO_CODE = {
+    "BERGAMO": "BG",
+    "BRESCIA": "BS",
+    "COMO": "CO",
+    "CREMONA": "CR",
+    "LECCO": "LC",
+    "LODI": "LO",
+    "MANTOVA": "MN",
+    "MILANO": "MI",
+    "MONZA": "MB",
+    "MONZA E BRIANZA": "MB",
+    "PAVIA": "PV",
+    "SONDRIO": "SO",
+    "VARESE": "VA",
+}
+
+
+MUNICIPALITY_TO_PROVINCE = {
+    # BG
+    "Caravaggio": "BG",
+    # BS
+    "Bagnolo Mella": "BS",
+    "Calvisano": "BS",
+    "Ghedi": "BS",
+    "Montichiari": "BS",
+    "Pralboino": "BS",
+    "Vezza D'Oglio": "BS",
+    "Vezza D’oglio": "BS",
+    "Manerbio": "BS",
+    # CO
+    "Figino Serenza": "CO",
+    # CR
+    "Castelleone": "CR",
+    "Piadena Drizzona": "CR",
+    # LC
+    "Cesana Brianza": "LC",
+    # LO
+    "Cervignano D'Adda": "LO",
+    "Cervignano D’Adda": "LO",
+    "Montanaso Lombardo": "LO",
+    "Mulazzano": "LO",
+    "Terranova Dei Passerini": "LO",
+    "Zelo Buon Persico": "LO",
+    # MB
+    "Bovisio Masciago": "MB",
+    "Burago Di Molgora": "MB",
+    "Cavenago Di Brianza": "MB",
+    "Ornago": "MB",
+    # MI
+    "Abbiategrasso": "MI",
+    "Arconate": "MI",
+    "Busto Garolfo": "MI",
+    "Cerro Maggiore": "MI",
+    "Liscate": "MI",
+    "Peschiera Borromeo": "MI",
+    "Pozzo D'Adda": "MI",
+    "Pozzo D’Adda": "MI",
+    "Settala": "MI",
+    "Tribiano": "MI",
+    # MN
+    "Borgo Virgilio": "MN",
+    "Casaloldo": "MN",
+    "Castel D'Ario": "MN",
+    "Castel D’ario": "MN",
+    "Commessaggio": "MN",
+    "Borgo Mantovano": "MN",
+    "Castellucchio": "MN",
+    "Marcaria": "MN",
+    "Villimpenta": "MN",
+    "Curtatone": "MN",
+    "Goito": "MN",
+    "Guidizzolo": "MN",
+    "Marmirolo": "MN",
+    "Medole": "MN",
+    "Roncoferraro": "MN",
+    "San Giorgio Bigarello": "MN",
+    "San Giorgio Di Bigarello": "MN",
+    "Suzzara": "MN",
+    "Volta Mantovana": "MN",
+    # PV
+    "Battuda": "PV",
+    "Bastida Pancarana": "PV",
+    "Castelletto Di Branduzzo": "PV",
+    "Cergnago": "PV",
+    "Chignolo Po": "PV",
+    "Dorno": "PV",
+    "Mede": "PV",
+    "Mezzana Bigli": "PV",
+    "Miradolo Terme": "PV",
+    "Mortara": "PV",
+    "Olevano Di Lomellina": "PV",
+    "Ottobiano": "PV",
+    "Pieve Albignola": "PV",
+    "Pieve Del Cairo": "PV",
+    "San Giorgio Di Lomellina": "PV",
+    "Santa Cristina E Bissone": "PV",
+    "Sannazzaro De' Burgondi": "PV",
+    "Sannazzaro De’ Burgondi": "PV",
+    "Scaldasole": "PV",
+    "Sommo": "PV",
+    "Tromello": "PV",
+    "Valeggio": "PV",
+    "Voghera": "PV",
+    "Pizzale": "PV",
+}
+
+
+PROTECTED_MUNICIPALITIES = [
+    "Santa Cristina e Bissone",
+    "Sannazzaro de' Burgondi",
+    "Sannazzaro de’ Burgondi",
+    "San Giorgio di Lomellina",
+    "San Giorgio Bigarello",
+    "San Giorgio di Bigarello",
+    "Olevano di Lomellina",
+    "Castelletto di Branduzzo",
+    "Pieve del Cairo",
+    "Pieve Albignola",
+    "Mezzana Bigli",
+    "Borgo Virgilio",
+    "Borgo Mantovano",
+    "Busto Garolfo",
+    "Pozzo d'Adda",
+    "Pozzo d’Adda",
+    "Castel d'Ario",
+    "Castel d’Ario",
+    "Burago di Molgora",
+    "Cavenago di Brianza",
+    "Cesana Brianza",
+    "Montanaso Lombardo",
+    "Zelo Buon Persico",
+    "Miradolo Terme",
+    "Chignolo Po",
+    "Bastida Pancarana",
+    "Bovisio Masciago",
+    "Peschiera Borromeo",
+    "Cerro Maggiore",
+    "Bagnolo Mella",
+    "Volta Mantovana",
+]
 
 
 class LombardiaCollector(BaseCollector):
@@ -101,9 +255,8 @@ class LombardiaCollector(BaseCollector):
                     continue
 
                 title = normalized["title"]
-                lowered_title = title.lower()
 
-                if not any(k in lowered_title for k in PV_KEYWORDS):
+                if not self._is_pv_related(title):
                     continue
 
                 external_id = self._build_external_id(
@@ -123,14 +276,16 @@ class LombardiaCollector(BaseCollector):
                         source_url=normalized.get("detail_url") or self.base_url,
                         title=title[:250],
                         payload={
-                            "title": title[:500],
+                            "title": title[:700],
                             "proponent": normalized.get("proponent"),
                             "status_raw": normalized.get("status"),
                             "region": "Lombardia",
-                            "province": None,
+                            "province": normalized.get("province"),
                             "municipalities": normalized.get("municipalities") or [],
-                            "power": self._extract_power(title),
+                            "power": normalized.get("power"),
                             "project_type_hint": normalized.get("procedure") or "Lombardia SILVIA",
+                            "procedure": normalized.get("procedure"),
+                            "detail_url": normalized.get("detail_url"),
                         },
                     )
                 )
@@ -161,10 +316,6 @@ class LombardiaCollector(BaseCollector):
             return []
 
     def _search_by_settore(self, settore_id: str, debug_base: Path) -> list[dict]:
-        """
-        SILVIA va in timeout se si chiede tutto insieme.
-        Qui interroghiamo per anno, così la query resta più leggera.
-        """
         all_rows: list[dict] = []
 
         years = ["2026", "2025", "2024"]
@@ -263,33 +414,8 @@ class LombardiaCollector(BaseCollector):
             )
         )
 
-        macro_stato = row.get("macroStato") or {}
-        status = None
-        if isinstance(macro_stato, dict):
-            status = self._clean_text(str(macro_stato.get("descrMacroStato") or "")) or None
-
-        if not status:
-            status = self._first_non_empty(
-                row,
-                [
-                    "descrMacroStato",
-                    "stato",
-                    "macroStato",
-                    "descrStato",
-                    "descStato",
-                ],
-            )
-
-        procedure = self._first_non_empty(
-            row,
-            [
-                "group",
-                "descrTipoProcedura",
-                "tipoProcedura",
-                "descTipoProcedura",
-                "proceduraTipo",
-            ],
-        )
+        status = self._extract_status(row)
+        procedure = self._extract_procedure(row)
 
         proc_id = (
             row.get("idProgetto")
@@ -304,6 +430,8 @@ class LombardiaCollector(BaseCollector):
             detail_url = urljoin(self.base_url, f"#/scheda-sintesi/{proc_id}")
 
         municipalities = self._extract_municipalities(title)
+        province = self._extract_province(title, municipalities)
+        power = self._extract_power(title)
 
         return {
             "title": title,
@@ -312,7 +440,40 @@ class LombardiaCollector(BaseCollector):
             "procedure": procedure,
             "detail_url": detail_url,
             "municipalities": municipalities,
+            "province": province,
+            "power": power,
         }
+
+    def _extract_status(self, row: dict) -> str | None:
+        macro_stato = row.get("macroStato") or {}
+
+        if isinstance(macro_stato, dict):
+            status = self._clean_text(str(macro_stato.get("descrMacroStato") or ""))
+            if status:
+                return status
+
+        return self._first_non_empty(
+            row,
+            [
+                "descrMacroStato",
+                "stato",
+                "macroStato",
+                "descrStato",
+                "descStato",
+            ],
+        )
+
+    def _extract_procedure(self, row: dict) -> str | None:
+        return self._first_non_empty(
+            row,
+            [
+                "group",
+                "descrTipoProcedura",
+                "tipoProcedura",
+                "descTipoProcedura",
+                "proceduraTipo",
+            ],
+        )
 
     def _first_non_empty(self, row: dict, keys: list[str]) -> str | None:
         for key in keys:
@@ -332,56 +493,443 @@ class LombardiaCollector(BaseCollector):
 
         text = self._clean_text(value)
 
-        text = text.replace("(Azienda:", "")
-        text = text.replace("(Ente:", "")
-        text = text.replace("(Persona Fisica):", "")
-        text = text.replace(");", ";")
-        text = text.replace(")", "")
+        if not text:
+            return None
 
-        text = self._clean_text(text.strip(" ;"))
-
-        return text or None
-
-    def _extract_power(self, text: str) -> str | None:
-        m = re.search(
-            r"(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?|\d+(?:,\d+)?)\s*(MWP|MW|KWP|KW)",
+        # SILVIA a volte restituisce wrapper del tipo:
+        # (Azienda: NOME)
+        # (Persona Fisica): NOME
+        # ): NOME
+        # La pulizia deve togliere il wrapper senza distruggere nomi reali
+        # tipo "HOLCIM (ITALIA) S.P.A.".
+        text = re.sub(
+            r"\(\s*(?:Azienda|Ente|Persona\s+Fisica)\s*\)\s*:?\s*",
+            "",
             text,
             flags=re.IGNORECASE,
         )
 
-        if m:
-            return f"{m.group(1)} {m.group(2)}"
+        text = re.sub(
+            r"\(\s*(?:Azienda|Ente|Persona\s+Fisica)\s*:?\s*",
+            "",
+            text,
+            flags=re.IGNORECASE,
+        )
+
+        text = re.sub(
+            r"^\s*\)\s*:?\s*",
+            "",
+            text,
+            flags=re.IGNORECASE,
+        )
+
+        text = re.sub(
+            r";\s*\)\s*:?\s*",
+            "; ",
+            text,
+            flags=re.IGNORECASE,
+        )
+
+        text = text.replace(");", ";")
+        text = re.sub(r"\s+;", ";", text)
+        text = re.sub(r";\s*;", ";", text)
+        text = self._clean_text(text.strip(" ;"))
+
+        # Correzione puntuale: SILVIA tronca/espone male questo proponente
+        # in almeno una riga del dataset.
+        if self._normalize_for_match(text) == "holcim (italia":
+            text = "HOLCIM (ITALIA) S.P.A."
+
+        return text or None
+
+    def _is_pv_related(self, text: str | None) -> bool:
+        if not text:
+            return False
+
+        lowered = self._normalize_for_match(text)
+
+        if not any(keyword in lowered for keyword in PV_KEYWORDS):
+            return False
+
+        has_strong_pv = any(
+            keyword in lowered
+            for keyword in [
+                "fotovolta",
+                "agrivolta",
+                "agrovolta",
+                "moduli fotovoltaici",
+                "fonte solare",
+            ]
+        )
+
+        if not has_strong_pv and any(fragment in lowered for fragment in NON_PV_EXCLUDE):
+            return False
+
+        if any(fragment in lowered for fragment in NON_PV_EXCLUDE) and "potenza" not in lowered:
+            return False
+
+        return True
+
+    def _extract_power(self, text: str | None) -> str | None:
+        if not text:
+            return None
+
+        number_unit = (
+            r"([0-9]+(?:[.\s'’][0-9]{3})*(?:[,\.][0-9]+)?|[0-9]+(?:[,\.][0-9]+)?)"
+            r"\s*"
+            r"(MWP|MWp|Mwp|mwp|MW|Mw|mw|KWP|KWp|Kwp|kWp|kwp|KW|kW|kw)"
+        )
+
+        preferred_patterns = [
+            rf"potenza\s+fotovoltaica\s+pari\s+a\s+{number_unit}",
+            rf"potenza\s+di\s+picco\s+pari\s+a\s+{number_unit}",
+            rf"potenza\s+di\s+picco\s+di\s+{number_unit}",
+            rf"potenza\s+complessiva\s+di\s+picco\s+di\s+{number_unit}",
+            rf"potenza\s+nominale\s+complessiva\s+pari\s+a\s+{number_unit}",
+            rf"potenza\s+nominale\s+complessiva\s+(?:di\s+)?{number_unit}",
+            rf"potenza\s+nominale\s+prevista\s+di\s+{number_unit}",
+            rf"potenza\s+nominale\s+pari\s+a\s+{number_unit}",
+            rf"potenza\s+complessiva\s+(?:pari\s+a\s+|di\s+)?{number_unit}",
+            rf"potenza\s+dc\s+di\s+{number_unit}",
+            rf"potenza\s+pari\s+a\s+{number_unit}",
+            rf"potenza\s+di\s+{number_unit}",
+            rf"\bda\s+{number_unit}",
+            rf"potenza\s+{number_unit}",
+        ]
+
+        for pattern in preferred_patterns:
+            for match in re.finditer(pattern, text, flags=re.IGNORECASE):
+                if self._is_storage_power_match(text, match.start(), match.end()):
+                    continue
+
+                return f"{match.group(1)} {match.group(2)}"
+
+        generic_pattern = number_unit
+
+        for match in re.finditer(generic_pattern, text, flags=re.IGNORECASE):
+            if self._is_storage_power_match(text, match.start(), match.end()):
+                continue
+
+            return f"{match.group(1)} {match.group(2)}"
 
         return None
 
-    def _extract_municipalities(self, title: str) -> list[str]:
-        patterns = [
-            r"nel comune di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ]+)",
-            r"nei comuni di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ,]+)",
-            r"localizzato nel comune di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ]+)",
-            r"localizzato nei comuni di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ,]+)",
-            r"ubicato nel comune di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ]+)",
-            r"ubicato nei comuni di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ,]+)",
-            r"sito nei comuni di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ,]+)",
-            r"sito nel comune di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ]+)",
-            r"territori comunali di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ,]+)",
-            r"comuni di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ,]+)",
-            r"comune di\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'`\- ]+)",
+    def _is_storage_power_match(self, text: str, start: int, end: int) -> bool:
+        before = text[max(0, start - 140) : start].lower()
+        phrase = text[max(0, start - 60) : min(len(text), end + 20)].lower()
+
+        # Se il sito scrive esplicitamente "potenza fotovoltaica", è FV anche se
+        # la descrizione generale cita BESS/accumulo.
+        if "potenza fotovoltaica" in phrase:
+            return False
+
+        storage_words = [
+            "bess",
+            "accumulo",
+            "storage",
+            "batteria",
+            "batterie",
+            "sistema di accumulo",
+            "di un sistema di accumulo",
         ]
 
-        out: list[str] = []
+        return any(word in before for word in storage_words)
 
-        for pattern in patterns:
-            for match in re.finditer(pattern, title, flags=re.IGNORECASE):
-                raw = match.group(1).strip()
-                parts = re.split(r",|\se\s", raw)
+    def _extract_province(self, title: str | None, municipalities: list[str] | None = None) -> str | None:
+        if not title:
+            return None
 
-                for p in parts:
-                    p = p.strip(" -")
-                    if p and p not in out:
-                        out.append(p)
+        text = self._clean_text(title) or ""
 
-        return out
+        province_codes = re.findall(r"\(([A-Z]{2})\)", text)
+
+        for code in province_codes:
+            if code in set(PROVINCE_NAME_TO_CODE.values()):
+                return code
+
+        province_name_match = re.search(
+            r"\bprovincia\s+di\s+([A-ZÀ-ÚA-Za-zà-ú'’ ]+)",
+            text,
+            flags=re.IGNORECASE,
+        )
+
+        if province_name_match:
+            province_name = self._clean_text(province_name_match.group(1))
+            province_name = re.split(
+                r"\s*(?:,|\.|\(|\)|per\s+una\s+potenza|di\s+potenza|e\s+relative|relative\s+opere)\b",
+                province_name,
+                maxsplit=1,
+                flags=re.IGNORECASE,
+            )[0].strip()
+
+            code = PROVINCE_NAME_TO_CODE.get(self._normalize_for_match(province_name).upper())
+
+            if code:
+                return code
+
+        for municipality in municipalities or []:
+            code = MUNICIPALITY_TO_PROVINCE.get(municipality)
+
+            if code:
+                return code
+
+            normalized = self._normalize_for_match(municipality)
+
+            for known_municipality, known_code in MUNICIPALITY_TO_PROVINCE.items():
+                if self._normalize_for_match(known_municipality) == normalized:
+                    return known_code
+
+        return None
+
+    def _extract_municipalities(self, title: str | None) -> list[str]:
+        if not title:
+            return []
+
+        text = self._clean_text(title) or ""
+
+        results: list[str] = []
+
+        direct_patterns = [
+            r"\b(?:nel|nello|in|sito nel|sita nel|ubicato nel|ubicata nel|localizzato nel|localizzata nel|ricadente nel|da realizzarsi nel|realizzarsi nel)\s+(?:territorio\s+del\s+)?(?:Comune|comune)\s+di\s+(.+?)(?=\s*\([A-Z]{2}\)|,|\.\s|;|\s+e\s+relative|\s+relative\s+opere|\s+con\s+|\s+per\s+|\s+in\s+provincia|$)",
+            r"\b(?:nel|nello|in)\s+(?:territorio\s+)?comunale\s+di\s+(.+?)(?=\s*\([A-Z]{2}\)|,|\.\s|;|\s+e\s+relative|\s+relative\s+opere|\s+con\s+|\s+per\s+|\s+in\s+provincia|$)",
+            r"\b(?:in|nell')\s+agro\s+di\s+(.+?)(?=\s*\([A-Z]{2}\)|,|\.\s|;|\s+via\s+|\s+loc\.|\s+località|\s+localita|$)",
+            r"\bpresso\s+([A-ZÀ-Ú][A-Za-zÀ-Úà-ú'’`\- ]+?)\s*\([A-Z]{2}\)",
+        ]
+
+        for pattern in direct_patterns:
+            for match in re.finditer(pattern, text, flags=re.IGNORECASE):
+                for municipality in self._split_municipality_list(match.group(1)):
+                    self._append_unique(results, municipality)
+
+        list_patterns = [
+            r"\b(?:nei|nelli|in|sito nei|siti nei|ubicate nei|ubicati nei|localizzato nei|localizzata nei|localizzati nei|localizzate nei|ricadente nei|ricadenti nei|da realizzarsi nei|realizzarsi nei)\s+(?:territori\s+)?(?:Comuni|comuni)\s+di\s+(.+?)(?=\s+e\s+relative|\s+relative\s+opere|\s+opere\s+di\s+connessione|\s+opere\s+connesse|\s+alla\s+RTN|\.|;|$)",
+            r"\bterritori\s+comunali\s+di\s+(.+?)(?=,?\s+in\s+provincia|\s+per\s+una\s+potenza|\s+e\s+relative|\s+relative\s+opere|\.|;|$)",
+            r"\b(?:che\s+attraversano|interesseranno)\s+i\s+comuni\s+di\s+(.+?)(?=\s+sino\s+|\s+e\s+relative|\s+relative\s+opere|\.|;|$)",
+        ]
+
+        for pattern in list_patterns:
+            for match in re.finditer(pattern, text, flags=re.IGNORECASE):
+                for municipality in self._split_municipality_list(match.group(1)):
+                    self._append_unique(results, municipality)
+
+        for municipality in self._extract_known_municipalities_from_title(text):
+            self._append_unique(results, municipality)
+
+        return results[:20]
+
+    def _extract_known_municipalities_from_title(self, title: str) -> list[str]:
+        lowered = self._normalize_for_match(title)
+        found: list[str] = []
+
+        for municipality in MUNICIPALITY_TO_PROVINCE:
+            normalized = self._normalize_for_match(municipality)
+            pattern = rf"(?<![a-z0-9]){re.escape(normalized)}(?![a-z0-9])"
+
+            if re.search(pattern, lowered, flags=re.IGNORECASE):
+                found.append(municipality)
+
+        return found
+
+    def _split_municipality_list(self, value: str | None) -> list[str]:
+        if not value:
+            return []
+
+        text = self._clean_text(value) or ""
+
+        if not text:
+            return []
+
+        text = re.sub(r"\([A-Z]{2}\)", "", text)
+
+        text = re.split(
+            r"\s+(?:e\s+relative|relative)\s+opere\b",
+            text,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0]
+
+        text = re.split(
+            r"\s+opere\s+(?:di\s+)?connessione\b",
+            text,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0]
+
+        text = re.split(
+            r"\s+(?:per|avente|con|della|di)\s+una?\s+potenza\b",
+            text,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0]
+
+        text = re.split(
+            r"\s+in\s+provincia\s+di\b",
+            text,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0]
+
+        text = re.split(
+            r"\s+localit[àa]\b",
+            text,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0]
+
+        text = re.split(
+            r"\s+in\s+(?:via|strada)\s+[A-ZÀ-Ú]|\s+(?:via|strada)\s+[A-ZÀ-Ú]",
+            text,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0]
+
+        protected_map: dict[str, str] = {}
+
+        for idx, municipality in enumerate(PROTECTED_MUNICIPALITIES):
+            token = f"__MUNICIPALITY_{idx}__"
+            pattern = re.escape(municipality).replace("\\ ", r"\s+")
+            text = re.sub(pattern, token, text, flags=re.IGNORECASE)
+            protected_map[token] = municipality
+
+        text = text.replace(";", ",")
+        text = re.sub(r"\s+ed\s+", ",", text, flags=re.IGNORECASE)
+
+        parts: list[str] = []
+        for chunk in [part.strip() for part in text.split(",") if part.strip()]:
+            subparts = re.split(r"\s+e\s+", chunk, flags=re.IGNORECASE)
+            parts.extend(part.strip() for part in subparts if part.strip())
+
+        cleaned_parts: list[str] = []
+
+        for part in parts:
+            for token, municipality in protected_map.items():
+                part = part.replace(token, municipality)
+
+            cleaned = self._clean_municipality(part)
+
+            if cleaned:
+                cleaned_parts.append(cleaned)
+
+        return cleaned_parts
+
+    def _clean_municipality(self, value: str | None) -> str | None:
+        if not value:
+            return None
+
+        cleaned = self._clean_text(value) or ""
+
+        if not cleaned:
+            return None
+
+        cleaned = re.sub(r"\([A-Z]{2}\)", "", cleaned)
+        cleaned = cleaned.replace("’", "'")
+        cleaned = cleaned.strip(" .,:;-–—()[]{}\"'")
+
+        cleaned = re.split(
+            r"\s+in\s+provincia\s+di\b",
+            cleaned,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0]
+
+        cleaned = re.split(
+            r"\s+localit[àa]\b",
+            cleaned,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0]
+
+        cleaned = re.split(
+            r"\s+relative\s+opere\b|\s+opere\s+di\s+connessione\b|\s+alla\s+rtn\b",
+            cleaned,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0]
+
+        cleaned = cleaned.strip(" .,:;-–—()[]{}\"'")
+
+        if not cleaned:
+            return None
+
+        if len(cleaned) > 80:
+            return None
+
+        bad_fragments = [
+            "potenza",
+            "impianto",
+            "progetto",
+            "connessione",
+            "rtn",
+            "rete",
+            "provincia",
+            "località",
+            "localita",
+            "opere",
+            "relative",
+            "cavidotto",
+            "cabina",
+            "stazione",
+            "terreno",
+            "area",
+            "art.",
+            "d.lgs",
+            "allevamento",
+            "idroelettrico",
+        ]
+
+        lowered = cleaned.lower()
+
+        if any(fragment in lowered for fragment in bad_fragments):
+            return None
+
+        if re.fullmatch(r".+\b(?:d|de|del|dell|dello|della|di|in)$", cleaned, flags=re.IGNORECASE):
+            return None
+
+        return self._title_case_municipality(cleaned)
+
+    def _append_unique(self, values: list[str], candidate: str | None) -> None:
+        cleaned = self._clean_municipality(candidate)
+
+        if not cleaned:
+            return
+
+        normalized = self._normalize_for_match(cleaned)
+
+        for existing in values:
+            if self._normalize_for_match(existing) == normalized:
+                return
+
+        values.append(cleaned)
+
+    def _title_case_municipality(self, value: str) -> str:
+        text = value.title()
+
+        replacements = {
+            "D'": "d'",
+            "D’": "d’",
+            "De'": "de'",
+            "De’": "de’",
+            "Di": "di",
+            "Del": "del",
+            "Della": "della",
+            "Dello": "dello",
+            "E": "e",
+        }
+
+        words = []
+        for word in text.split():
+            words.append(replacements.get(word, word))
+
+        text = " ".join(words)
+
+        text = text.replace("D'Adda", "d'Adda")
+        text = text.replace("D’Oglio", "d’Oglio")
+        text = text.replace("D'oglio", "d'Oglio")
+        text = text.replace("D'Ario", "d'Ario")
+        text = text.replace("De' Burgondi", "de' Burgondi")
+        text = text.replace("De’ Burgondi", "de’ Burgondi")
+
+        return text
 
     def _build_external_id(
         self,
@@ -394,7 +942,19 @@ class LombardiaCollector(BaseCollector):
         base = re.sub(r"[^a-z0-9:/._|-]", "", base)
         return base[:250]
 
-    def _clean_text(self, value: str) -> str:
+    def _normalize_for_match(self, value: str | None) -> str:
+        value = self._clean_text(value or "") or ""
+        value = value.lower()
+        value = value.replace("à", "a")
+        value = value.replace("è", "e")
+        value = value.replace("é", "e")
+        value = value.replace("ì", "i")
+        value = value.replace("ò", "o")
+        value = value.replace("ù", "u")
+        value = value.replace("’", "'")
+        return value
+
+    def _clean_text(self, value: str | None) -> str:
         return " ".join((value or "").replace("\xa0", " ").split()).strip()
 
     def _write_text(self, path: Path, content: str) -> None:
@@ -406,4 +966,30 @@ class LombardiaCollector(BaseCollector):
         path.write_text(
             json.dumps(obj, ensure_ascii=False, indent=2),
             encoding="utf-8",
+        )
+
+
+if __name__ == "__main__":
+    collector = LombardiaCollector()
+    items = collector.fetch()
+
+    print(f"items: {len(items)}")
+
+    for item in items[:100]:
+        print(
+            item.external_id,
+            "|",
+            item.title,
+            "|",
+            item.payload.get("proponent"),
+            "|",
+            item.payload.get("province"),
+            "|",
+            item.payload.get("municipalities"),
+            "|",
+            item.payload.get("power"),
+            "|",
+            item.payload.get("status_raw"),
+            "|",
+            item.source_url,
         )
