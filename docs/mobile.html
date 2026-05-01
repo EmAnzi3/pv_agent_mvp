@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PV Pipeline - Mobile</title>
+  <style>
+    :root {
+      --bg: #eef4f7;
+      --card: #ffffff;
+      --ink: #122033;
+      --muted: #64748b;
+      --line: #dbe5eb;
+      --brand: #117c72;
+      --brand-soft: #e7f7f4;
+      --blue: #2454d6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(238, 244, 247, 0.96);
+      backdrop-filter: blur(10px);
+      padding: 12px 12px 8px;
+      border-bottom: 1px solid rgba(219, 229, 235, 0.8);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .sub {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
+    main {
+      padding: 12px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin: 20px 0 10px;
+      font-size: 18px;
+      line-height: 1.15;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+      margin-bottom: 12px;
+    }
+
+    .kpi-label {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      font-weight: 800;
+    }
+
+    .kpi-value {
+      margin-top: 6px;
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--brand);
+    }
+
+    .kpi-note {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .notice {
+      background: var(--brand-soft);
+      border-left: 5px solid #55b7aa;
+      color: #155e58;
+      border-radius: 16px;
+      padding: 13px;
+      font-size: 13px;
+    }
+
+    .region-row {
+      display: grid;
+      grid-template-columns: 86px 1fr 48px;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #edf2f5;
+      font-size: 13px;
+    }
+
+    .region-row:last-child {
+      border-bottom: 0;
+    }
+
+    .bar {
+      height: 9px;
+      background: #e2e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      background: var(--brand);
+      border-radius: 999px;
+    }
+
+    .filters {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 0 12px;
+      font-size: 15px;
+      background: white;
+      color: var(--ink);
+    }
+
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--brand);
+      border-radius: 17px;
+      padding: 13px;
+      margin-bottom: 10px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+    }
+
+    .project-title {
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+    }
+
+    .meta {
+      display: grid;
+      gap: 4px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .meta strong {
+      color: var(--ink);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 0 9px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .chip.green {
+      background: #e7f7f4;
+      color: #117c72;
+    }
+
+    .actions {
+      margin-top: 11px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 13px;
+      border-radius: 999px;
+      background: var(--brand);
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .btn.secondary {
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
+    .source-list {
+      display: grid;
+      gap: 7px;
+      font-size: 13px;
+    }
+
+    .source-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid #edf2f5;
+      padding-bottom: 7px;
+    }
+
+    .source-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .empty {
+      color: var(--muted);
+      font-size: 13px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    footer {
+      padding: 22px 12px 34px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 380px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .region-row {
+        grid-template-columns: 78px 1fr 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PV Pipeline</h1>
+    <div class="sub">Vista mobile per consultazione rapida ? <a href="index.html?desktop=1">desktop</a></div>
+  </header>
+
+  <main>
+    <section class="grid" id="kpis"></section>
+
+    <section class="card notice">
+      <strong>Metodo di lettura:</strong> Terna Econnextion resta un radar macro. I lead commerciali veri sono nei progetti puntuali.
+    </section>
+
+    <h2>Priorit? territoriali</h2>
+    <section class="card" id="regions"></section>
+
+    <h2>Top progetti operativi per MW</h2>
+    <section id="topProjects"></section>
+
+    <h2>Ricerca pipeline</h2>
+    <section class="card">
+      <div class="filters">
+        <input id="search" placeholder="Cerca progetto, proponente, comune...">
+        <select id="regionFilter"></select>
+        <select id="sourceFilter"></select>
+      </div>
+      <div class="small" id="resultCount"></div>
+    </section>
+
+    <section id="pipelineCards"></section>
+
+    <h2>Fonti</h2>
+    <section class="card">
+      <div class="source-list" id="sources"></div>
+    </section>
+  </main>
+
+  <footer>
+    Dashboard mobile generata da data.json
+  </footer>
+
+  <script>
+    let allRecords = [];
+    let operationalRecords = [];
+
+    const $ = id => document.getElementById(id);
+
+    function read(obj, keys, fallback = '') {
+      for (const key of keys) {
+        const value = obj?.[key];
+        if (value !== undefined && value !== null && String(value).trim() !== '') return value;
+      }
+      return fallback;
+    }
+
+    function parseMw(value) {
+      if (value === null || value === undefined || value === '') return 0;
+      if (typeof value === 'number') return value;
+
+      let s = String(value).trim()
+        .replace(/\s*MWp?$/i, '')
+        .replace(/\s*kWp?$/i, '')
+        .replace(/\s+/g, '');
+
+      if (!s) return 0;
+
+      if (s.includes(',') && s.includes('.')) {
+        s = s.replace(/\./g, '').replace(',', '.');
+      } else if (s.includes(',')) {
+        s = s.replace(',', '.');
+      }
+
+      const n = Number(s);
+      return Number.isFinite(n) ? n : 0;
+    }
+
+    function fmtNumber(n, digits = 0) {
+      return Number(n || 0).toLocaleString('it-IT', {
+        maximumFractionDigits: digits
+      });
+    }
+
+    function sourceRaw(r) {
+      return String(read(r, ['source_group', 'source', 'primary_source'], '')).toLowerCase();
+    }
+
+    function isTerna(r) {
+      return sourceRaw(r).includes('terna');
+    }
+
+    function sourceLabel(r) {
+      const s = sourceRaw(r);
+
+      if (s.includes('terna')) return 'Terna Econnextion';
+      if (s === 'mase' || s === 'mase_provvedimenti') return 'MASE';
+      if (s === 'sistema_puglia_energia') return 'Sistema Puglia Energia';
+
+      return read(r, ['source_label', 'source', 'primary_source'], 'n/d');
+    }
+
+    function titleOf(r) {
+      return read(r, ['project_name', 'title', 'project', 'name', 'progetto'], 'Progetto n/d');
+    }
+
+    function proponentOf(r) {
+      return read(r, ['proponent', 'proponente', 'company'], 'n/d');
+    }
+
+    function regionOf(r) {
+      return read(r, ['region', 'regione'], 'n/d');
+    }
+
+    function provinceOf(r) {
+      return read(r, ['province', 'provincia'], '');
+    }
+
+    function municipalitiesOf(r) {
+      const value = read(r, ['municipalities', 'comuni', 'municipality', 'comune'], '');
+      if (Array.isArray(value)) return value.join(', ');
+      return String(value || '');
+    }
+
+    function typeOf(r) {
+      return read(r, ['project_type', 'type', 'tipo'], '');
+    }
+
+    function statusOf(r) {
+      return read(r, ['status_normalized', 'status', 'stato'], '');
+    }
+
+    function urlOf(r) {
+      return read(r, ['primary_url', 'source_url', 'url', 'link'], '');
+    }
+
+    function renderKpis(records) {
+      const terna = records.filter(isTerna);
+      const punctual = records.filter(r => !isTerna(r));
+      const mwPunctual = punctual.reduce((s, r) => s + parseMw(read(r, ['power_mw', 'mw', 'power'])), 0);
+      const mwTerna = terna.reduce((s, r) => s + parseMw(read(r, ['power_mw', 'mw', 'power'])), 0);
+
+      $('kpis').innerHTML = `
+        <div class="card">
+          <div class="kpi-label">Progetti puntuali</div>
+          <div class="kpi-value">${fmtNumber(punctual.length)}</div>
+          <div class="kpi-note">Pipeline operativa</div>
+        </div>
+        <div class="card">
+          <div class="kpi-label">MW puntuali</div>
+          <div class="kpi-value">${fmtNumber(mwPunctual, 0)}</div>
+          <div class="kpi-note">Lead potenziali</div>
+        </div>
+        <div class="card">
+          <div class="kpi-label">Record Terna</div>
+          <div class="kpi-value">${fmtNumber(terna.length)}</div>
+          <div class="kpi-note">Radar macro</div>
+        </div>
+        <div class="card">
+          <div class="kpi-label">MW Terna</div>
+          <div class="kpi-value">${fmtNumber(mwTerna, 0)}</div>
+          <div class="kpi-note">Aggregato</div>
+        </div>
+      `;
+    }
+
+    function renderRegions(records, summary) {
+      let regions = [];
+
+      if (summary && Array.isArray(summary.regions) && summary.regions.length) {
+        regions = summary.regions.map(r => ({
+          name: r.region || r.name || 'n/d',
+          score: Number(r.priority_score ?? r.score ?? r.punctual_count ?? 0),
+          mw: Number(r.punctual_mw ?? r.mw ?? 0)
+        }));
+      } else {
+        const map = new Map();
+
+        for (const r of records.filter(x => !isTerna(x))) {
+          const region = regionOf(r);
+          if (!map.has(region)) map.set(region, { name: region, score: 0, mw: 0 });
+          const item = map.get(region);
+          item.score += 1;
+          item.mw += parseMw(read(r, ['power_mw', 'mw', 'power']));
+        }
+
+        regions = Array.from(map.values());
+      }
+
+      regions = regions
+        .filter(r => r.name && r.name !== 'n/d')
+        .sort((a, b) => (b.score || 0) - (a.score || 0) || (b.mw || 0) - (a.mw || 0))
+        .slice(0, 10);
+
+      const max = Math.max(...regions.map(r => r.score || 0), 1);
+
+      $('regions').innerHTML = regions.map(r => `
+        <div class="region-row">
+          <strong>${r.name}</strong>
+          <div class="bar"><span style="width:${Math.max(5, ((r.score || 0) / max) * 100)}%"></span></div>
+          <span>${fmtNumber(r.score || 0)}</span>
+        </div>
+      `).join('');
+    }
+
+    function projectCard(r) {
+      const mw = parseMw(read(r, ['power_mw', 'mw', 'power']));
+      const url = urlOf(r);
+
+      return `
+        <article class="project-card">
+          <div class="project-title">${titleOf(r)}</div>
+          <div class="meta">
+            <div><strong>Proponente:</strong> ${proponentOf(r)}</div>
+            <div><strong>Localit?:</strong> ${regionOf(r)} ${provinceOf(r) ? '? ' + provinceOf(r) : ''} ${municipalitiesOf(r) ? '? ' + municipalitiesOf(r) : ''}</div>
+            <div><strong>MW:</strong> ${fmtNumber(mw, 3)}</div>
+            <div><strong>Tipo:</strong> ${typeOf(r) || 'n/d'}</div>
+            <div><strong>Stato:</strong> ${statusOf(r) || 'n/d'}</div>
+          </div>
+          <div class="chips">
+            <span class="chip green">${sourceLabel(r)}</span>
+            <span class="chip">${regionOf(r)}</span>
+          </div>
+          <div class="actions">
+            ${url ? `<a class="btn" href="${url}" target="_blank" rel="noopener">Apri</a>` : ''}
+          </div>
+        </article>
+      `;
+    }
+
+    function renderTopProjects(records) {
+      const top = records
+        .filter(r => !isTerna(r))
+        .map(r => ({ r, mw: parseMw(read(r, ['power_mw', 'mw', 'power'])) }))
+        .filter(x => x.mw > 0)
+        .sort((a, b) => b.mw - a.mw)
+        .slice(0, 8)
+        .map(x => x.r);
+
+      $('topProjects').innerHTML = top.map(projectCard).join('') || '<div class="card empty">Nessun progetto trovato.</div>';
+    }
+
+    function setupFilters(records) {
+      const regions = [...new Set(records.map(regionOf).filter(x => x && x !== 'n/d'))].sort();
+      const sources = [...new Set(records.map(sourceLabel).filter(Boolean))].sort();
+
+      $('regionFilter').innerHTML = '<option value="">Tutte le regioni</option>' + regions.map(x => `<option>${x}</option>`).join('');
+      $('sourceFilter').innerHTML = '<option value="">Tutte le fonti</option>' + sources.map(x => `<option>${x}</option>`).join('');
+
+      ['search', 'regionFilter', 'sourceFilter'].forEach(id => {
+        $(id).addEventListener('input', renderPipeline);
+        $(id).addEventListener('change', renderPipeline);
+      });
+    }
+
+    function renderPipeline() {
+      const q = $('search').value.trim().toLowerCase();
+      const region = $('regionFilter').value;
+      const source = $('sourceFilter').value;
+
+      let rows = operationalRecords;
+
+      if (region) rows = rows.filter(r => regionOf(r) === region);
+      if (source) rows = rows.filter(r => sourceLabel(r) === source);
+
+      if (q) {
+        rows = rows.filter(r => [
+          titleOf(r),
+          proponentOf(r),
+          regionOf(r),
+          provinceOf(r),
+          municipalitiesOf(r),
+          sourceLabel(r),
+          typeOf(r)
+        ].join(' ').toLowerCase().includes(q));
+      }
+
+      rows = rows
+        .map(r => ({ r, mw: parseMw(read(r, ['power_mw', 'mw', 'power'])) }))
+        .sort((a, b) => b.mw - a.mw)
+        .slice(0, 35)
+        .map(x => x.r);
+
+      $('resultCount').textContent = `${fmtNumber(rows.length)} record visualizzati`;
+      $('pipelineCards').innerHTML = rows.map(projectCard).join('') || '<div class="card empty">Nessun record trovato.</div>';
+    }
+
+    function renderSources(records) {
+      const map = new Map();
+
+      for (const r of records) {
+        const label = sourceLabel(r);
+        map.set(label, (map.get(label) || 0) + 1);
+      }
+
+      const rows = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
+
+      $('sources').innerHTML = rows.map(([label, count]) => `
+        <div class="source-item">
+          <strong>${label}</strong>
+          <span>${fmtNumber(count)}</span>
+        </div>
+      `).join('');
+    }
+
+    async function init() {
+      try {
+        const response = await fetch('data.json', { cache: 'no-store' });
+        const data = await response.json();
+
+        allRecords = data.records || [];
+        operationalRecords = allRecords.filter(r => !isTerna(r));
+
+        renderKpis(allRecords);
+        renderRegions(allRecords, data.summary || {});
+        renderTopProjects(allRecords);
+        setupFilters(operationalRecords);
+        renderPipeline();
+        renderSources(allRecords);
+      } catch (error) {
+        document.querySelector('main').innerHTML = `
+          <section class="card">
+            <h2>Errore caricamento dati</h2>
+            <p class="small">${error}</p>
+          </section>
+        `;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

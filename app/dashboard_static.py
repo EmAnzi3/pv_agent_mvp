@@ -1231,206 +1231,23 @@ class StaticDashboardBuilder:
 
 
 
-/* === MOBILE RESPONSIVE PATCH v3 - SAFE MOBILE LAYOUT === */
-@media (max-width: 760px) {
-  html,
-  body {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-    background: #eef3f6 !important;
-  }
 
-  body {
-    padding: 8px !important;
-    font-size: 14px !important;
-  }
-
-  main,
-  .container,
-  .wrap,
-  .content,
-  .dashboard,
-  .dashboard-shell {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    box-sizing: border-box !important;
-  }
-
-  h1 {
-    font-size: 22px !important;
-    line-height: 1.15 !important;
-    margin: 10px 0 14px !important;
-  }
-
-  h2 {
-    font-size: 18px !important;
-    line-height: 1.2 !important;
-    margin: 18px 0 10px !important;
-  }
-
-  h3 {
-    font-size: 15px !important;
-    line-height: 1.25 !important;
-  }
-
-  .card,
-  .panel,
-  .section,
-  .chart-card,
-  .table-card,
-  .kpi-card {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    border-radius: 16px !important;
-    padding: 12px !important;
-    margin: 0 0 14px 0 !important;
-  }
-
-  .kpi-grid,
-  .cards,
-  .summary-grid,
-  .charts-grid,
-  .dashboard-grid,
-  .grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 12px !important;
-  }
-
-  .filters,
-  .filter-row,
-  .controls,
-  .toolbar,
-  .pipeline-filters {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 8px !important;
-    width: 100% !important;
-  }
-
-  input,
-  select,
-  button {
-    width: 100% !important;
-    min-height: 44px !important;
-    font-size: 15px !important;
-    box-sizing: border-box !important;
-  }
-
-  .chart-card {
-    overflow: hidden !important;
-  }
-
-  .chart-card canvas {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    max-height: 240px !important;
-  }
-
-  #sourceChart {
-    max-height: 220px !important;
-  }
-
-  #priorityChart,
-  #operationalCountChart,
-  #ternaMwChart,
-  #sourceMwChart {
-    max-height: 240px !important;
-  }
-
-  /* Tabelle: NON trasformarle in card. Renderle solo scrollabili. */
-  .table-card,
-  .table-wrap,
-  .table-container,
-  .pipeline-table-wrap,
-  .ranking-table-wrap,
-  .projects-table-wrap,
-  .table-scroll {
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch !important;
-  }
-
-  table {
-    display: table !important;
-    width: 100% !important;
-    min-width: 760px !important;
-    border-collapse: collapse !important;
-    font-size: 12.5px !important;
-  }
-
-  thead {
-    display: table-header-group !important;
-  }
-
-  tbody {
-    display: table-row-group !important;
-  }
-
-  tr {
-    display: table-row !important;
-  }
-
-  th,
-  td {
-    display: table-cell !important;
-    white-space: normal !important;
-    word-break: normal !important;
-    overflow-wrap: anywhere !important;
-    padding: 8px 10px !important;
-    vertical-align: top !important;
-  }
-
-  td a,
-  a {
-    touch-action: manipulation !important;
-  }
-
-  .note,
-  .method,
-  .callout,
-  .info-box {
-    font-size: 12.5px !important;
-    line-height: 1.4 !important;
-    padding: 10px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    padding: 6px !important;
-  }
-
-  h1 {
-    font-size: 20px !important;
-  }
-
-  h2 {
-    font-size: 17px !important;
-  }
-
-  .chart-card canvas {
-    max-height: 220px !important;
-  }
-
-  table {
-    min-width: 720px !important;
-    font-size: 12px !important;
-  }
-
-  th,
-  td {
-    padding: 7px 8px !important;
-  }
-}
-/* === END MOBILE RESPONSIVE PATCH v3 === */
 
 </style>
+<!-- MOBILE REDIRECT START -->
+<script>
+(function () {
+  const mobile = window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
+  const desktopRequested = new URLSearchParams(window.location.search).get('desktop') === '1';
+  const isMobilePage = /\/mobile\.html$/i.test(window.location.pathname);
+
+  if (mobile && !desktopRequested && !isMobilePage) {
+    const base = window.location.pathname.replace(/index\.html$/i, '').replace(/\/?$/, '/');
+    window.location.href = base + 'mobile.html';
+  }
+})();
+</script>
+<!-- MOBILE REDIRECT END -->
 </head>
 <body>
   <header>
