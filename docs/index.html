@@ -487,7 +487,276 @@
       }
     }
 
-  </style>
+  
+/* === MOBILE RESPONSIVE PATCH v1 === */
+@media (max-width: 900px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    padding: 10px !important;
+  }
+
+  main,
+  .container,
+  .page,
+  .dashboard,
+  .dashboard-shell,
+  .wrap,
+  .content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  h1 {
+    font-size: 24px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 12px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  h3 {
+    font-size: 16px !important;
+  }
+
+  .card,
+  .panel,
+  .section,
+  .chart-card,
+  .table-card,
+  .kpi-card {
+    border-radius: 18px !important;
+    padding: 14px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .kpi-grid,
+  .cards,
+  .summary-grid,
+  .charts-grid,
+  .grid,
+  .dashboard-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  input,
+  select,
+  button {
+    min-height: 44px !important;
+    font-size: 16px !important;
+  }
+
+  input,
+  select {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .filters,
+  .filter-row,
+  .controls,
+  .toolbar,
+  .pipeline-filters {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  #searchInput,
+  #dataKindFilter,
+  #sourceFilter,
+  #regionFilter,
+  #provinceFilter,
+  #sortFieldFilter,
+  #sortDirectionFilter {
+    width: 100% !important;
+  }
+
+  canvas {
+    max-width: 100% !important;
+  }
+
+  .chart-card,
+  .chart-wrap,
+  .chart-container {
+    min-height: 260px !important;
+    overflow: hidden !important;
+  }
+
+  #sourceChart {
+    max-height: 280px !important;
+  }
+
+  #sourceMwChart,
+  #operationalCountChart,
+  #ternaMwChart,
+  #priorityChart {
+    max-height: 320px !important;
+  }
+
+  table {
+    font-size: 13px !important;
+  }
+
+  .table-wrap,
+  .table-container,
+  .pipeline-table-wrap {
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pipeline completa in formato card, se il table ha ID/classe dedicata */
+  #pipelineTable,
+  table.pipeline-table,
+  .pipeline-table table {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  #pipelineTable thead,
+  table.pipeline-table thead,
+  .pipeline-table table thead {
+    display: none !important;
+  }
+
+  #pipelineTable tbody,
+  table.pipeline-table tbody,
+  .pipeline-table table tbody {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  #pipelineTable tr,
+  table.pipeline-table tr,
+  .pipeline-table table tr {
+    display: block !important;
+    margin-bottom: 12px !important;
+    padding: 12px !important;
+    border: 1px solid #dbe3ea !important;
+    border-radius: 16px !important;
+    background: #ffffff !important;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06) !important;
+  }
+
+  #pipelineTable td,
+  table.pipeline-table td,
+  .pipeline-table table td {
+    display: grid !important;
+    grid-template-columns: 92px 1fr !important;
+    gap: 8px !important;
+    align-items: start !important;
+    border-bottom: 1px solid #eef2f6 !important;
+    padding: 8px 0 !important;
+    word-break: break-word !important;
+  }
+
+  #pipelineTable td:last-child,
+  table.pipeline-table td:last-child,
+  .pipeline-table table td:last-child {
+    border-bottom: 0 !important;
+  }
+
+  #pipelineTable td::before,
+  table.pipeline-table td::before,
+  .pipeline-table table td::before {
+    font-weight: 700 !important;
+    color: #64748b !important;
+    text-transform: uppercase !important;
+    font-size: 11px !important;
+    letter-spacing: .04em !important;
+  }
+
+  #pipelineTable td:nth-child(1)::before,
+  table.pipeline-table td:nth-child(1)::before,
+  .pipeline-table table td:nth-child(1)::before { content: "Fonte"; }
+
+  #pipelineTable td:nth-child(2)::before,
+  table.pipeline-table td:nth-child(2)::before,
+  .pipeline-table table td:nth-child(2)::before { content: "Regione"; }
+
+  #pipelineTable td:nth-child(3)::before,
+  table.pipeline-table td:nth-child(3)::before,
+  .pipeline-table table td:nth-child(3)::before { content: "Provincia"; }
+
+  #pipelineTable td:nth-child(4)::before,
+  table.pipeline-table td:nth-child(4)::before,
+  .pipeline-table table td:nth-child(4)::before { content: "Comune/i"; }
+
+  #pipelineTable td:nth-child(5)::before,
+  table.pipeline-table td:nth-child(5)::before,
+  .pipeline-table table td:nth-child(5)::before { content: "Progetto"; }
+
+  #pipelineTable td:nth-child(6)::before,
+  table.pipeline-table td:nth-child(6)::before,
+  .pipeline-table table td:nth-child(6)::before { content: "Proponente"; }
+
+  #pipelineTable td:nth-child(7)::before,
+  table.pipeline-table td:nth-child(7)::before,
+  .pipeline-table table td:nth-child(7)::before { content: "Tipo"; }
+
+  #pipelineTable td:nth-child(8)::before,
+  table.pipeline-table td:nth-child(8)::before,
+  .pipeline-table table td:nth-child(8)::before { content: "MW"; }
+
+  #pipelineTable td:nth-child(9)::before,
+  table.pipeline-table td:nth-child(9)::before,
+  .pipeline-table table td:nth-child(9)::before { content: "Link"; }
+
+  .legend,
+  .chart-legend,
+  .filters-note,
+  .small-note {
+    font-size: 12px !important;
+  }
+
+  a,
+  button {
+    touch-action: manipulation;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 6px !important;
+  }
+
+  h1 {
+    font-size: 22px !important;
+  }
+
+  .card,
+  .panel,
+  .section,
+  .chart-card,
+  .table-card,
+  .kpi-card {
+    padding: 12px !important;
+    border-radius: 16px !important;
+  }
+
+  #pipelineTable td,
+  table.pipeline-table td,
+  .pipeline-table table td {
+    grid-template-columns: 82px 1fr !important;
+    font-size: 12.5px !important;
+  }
+}
+/* === END MOBILE RESPONSIVE PATCH v1 === */
+
+</style>
 </head>
 <body>
   <header>
