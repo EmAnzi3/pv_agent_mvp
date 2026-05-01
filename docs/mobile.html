@@ -393,6 +393,50 @@ summary::-webkit-details-marker {
 }
 /* === END MOBILE PROJECT CARDS COMPACT v2 === */
 
+
+/* === MOBILE HORIZONTAL PROJECT SCROLL v1 === */
+#topProjects,
+#pipelineCards {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 2px 4px 14px;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+#topProjects::-webkit-scrollbar,
+#pipelineCards::-webkit-scrollbar {
+  height: 6px;
+}
+
+#topProjects::-webkit-scrollbar-thumb,
+#pipelineCards::-webkit-scrollbar-thumb {
+  background: #b7c7d2;
+  border-radius: 999px;
+}
+
+#topProjects .project-card,
+#pipelineCards .project-card {
+  flex: 0 0 min(86vw, 360px);
+  scroll-snap-align: start;
+  margin-bottom: 0 !important;
+}
+
+.mobile-section-hint {
+  color: #64748b;
+  font-size: 12px;
+  margin: -4px 0 8px;
+}
+
+#resultCount {
+  margin-top: 8px;
+}
+/* === END MOBILE HORIZONTAL PROJECT SCROLL v1 === */
+
 </style>
 </head>
 <body>
@@ -408,10 +452,11 @@ summary::-webkit-details-marker {
       <strong>Metodo di lettura:</strong> Terna Econnextion resta un radar macro. I lead commerciali veri sono nei progetti puntuali.
     </section>
 
-    <h2>Priorit? territoriali</h2>
+    <h2>Priorita territoriali</h2>
     <section class="card" id="regions"></section>
 
     <h2>Top progetti operativi per MW</h2>
+    <div class="mobile-section-hint">Scorri lateralmente per vedere gli altri progetti.</div>
     <section id="topProjects"></section>
 
     <h2>Ricerca pipeline</h2>
@@ -424,6 +469,7 @@ summary::-webkit-details-marker {
       <div class="small" id="resultCount"></div>
     </section>
 
+    <div class="mobile-section-hint">Scorri lateralmente tra i risultati filtrati.</div>
     <section id="pipelineCards"></section>
 
     <h2>Fonti</h2>
@@ -640,7 +686,7 @@ summary::-webkit-details-marker {
             </div>
             <div>
               <div class="project-title">${short}</div>
-              <div class="project-main-meta">${loc || 'Localit? n/d'}</div>
+              <div class="project-main-meta">${loc || 'Localita n/d'}</div>
               <div class="project-proponent">${prop || 'Proponente n/d'}</div>
             </div>
           </div>
@@ -718,7 +764,7 @@ summary::-webkit-details-marker {
       rows = rows
         .map(r => ({ r, mw: parseMw(read(r, ['power_mw', 'mw', 'power'])) }))
         .sort((a, b) => b.mw - a.mw)
-        .slice(0, 35)
+        .slice(0, 18)
         .map(x => x.r);
 
       $('resultCount').textContent = `${fmtNumber(rows.length)} record visualizzati`;
