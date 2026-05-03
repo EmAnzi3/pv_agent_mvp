@@ -5,6 +5,7 @@ import html
 import json
 import math
 import re
+from urllib.parse import urlparse
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
@@ -287,6 +288,16 @@ class StaticDashboardBuilder:
         if is_terna and not numero_pratiche:
             numero_pratiche = 0
 
+        title = self._sanitize_text(title, 500)
+        proponent = self._sanitize_text(proponent, 300)
+        region = self._sanitize_text(region, 120)
+        province = self._sanitize_text(province, 120)
+        municipalities = self._sanitize_text(municipalities, 500)
+        project_type = self._sanitize_text(project_type, 200)
+        status = self._sanitize_text(status, 500)
+        updated_at = self._sanitize_text(updated_at, 120)
+        url = self._sanitize_url(url)
+
         source_group = self._source_group(source)
 
         return {
@@ -379,6 +390,30 @@ class StaticDashboardBuilder:
             return None
 
         return text or None
+
+    def _sanitize_text(self, value: Any, max_len: int = 2000) -> str:
+        text = self._clean_text(value) or ""
+        text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]", "", text)
+        return text[:max_len]
+
+    def _sanitize_url(self, value: Any) -> str:
+        text = self._clean_text(value) or ""
+
+        if not text:
+            return ""
+
+        try:
+            parsed = urlparse(text)
+        except Exception:
+            return ""
+
+        if parsed.scheme not in {"http", "https"}:
+            return ""
+
+        if not parsed.netloc:
+            return ""
+
+        return text
 
     def _parse_float(self, value: Any) -> float | None:
         if value is None:
@@ -741,7 +776,7 @@ class StaticDashboardBuilder:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PV Agent Dashboard</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
   <style>
     :root {
       --bg: #eef2f5;
@@ -1486,6 +1521,45 @@ class StaticDashboardBuilder:
       return value === null || value === undefined ? '' : String(value);
     }
 
+    function escapeHtml(value) {
+      return text(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function safeUrl(value) {
+      const raw = text(value).trim();
+
+      if (!raw || !/^https?:\/\//i.test(raw)) {
+        return '';
+      }
+
+      try {
+        const parsed = new URL(raw);
+
+        if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
+          return '';
+        }
+
+        return parsed.href;
+      } catch {
+        return '';
+      }
+    }
+
+    function safeExternalLink(value) {
+      const url = safeUrl(value);
+
+      if (!url) {
+        return '';
+      }
+
+      return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Apri</a>`;
+    }
+
     function setText(id, value) {
       const node = document.getElementById(id);
       if (node) node.textContent = value;
@@ -1566,7 +1640,7 @@ class StaticDashboardBuilder:
         const tr = document.createElement('tr');
 
         tr.innerHTML = `
-          <td><strong>${text(row.region)}</strong></td>
+          <td><strong>${escapeHtml(row.region)}</strong></td>
           <td class="num">${fmtNum(row.priority_score)}</td>
           <td class="num">${fmtNum(row.punctual_count)}</td>
           <td class="num">${fmtMw(row.punctual_mw)}</td>
@@ -1595,17 +1669,17 @@ class StaticDashboardBuilder:
       topRows.forEach(row => {
         const tr = document.createElement('tr');
         tr.className = mwBandClass(row.power_mw);
-        const link = row.url ? `<a href="${row.url}" target="_blank">Apri</a>` : '';
-        const proponent = text(row.proponent) || '<span class="muted">n/d</span>';
+        const link = safeExternalLink(row.url);
+        const proponent = text(row.proponent) ? escapeHtml(row.proponent) : '<span class="muted">n/d</span>';
 
         tr.innerHTML = `
-          <td class="project-title"><strong>${text(row.title)}</strong></td>
+          <td class="project-title"><strong>${escapeHtml(row.title)}</strong></td>
           <td class="proponent-col">${proponent}</td>
-          <td>${text(row.region)}</td>
-          <td>${text(row.province)} ${deducedBadge(row.province_deduced)}</td>
-          <td>${text(row.municipalities)} ${deducedBadge(row.municipalities_deduced)}</td>
-          <td><span class="${badgeClass(row.source_group || row.source)}">${text(row.source_label || sourceLabel(row.source))}</span></td>
-          <td>${text(row.project_type)}</td>
+          <td>${escapeHtml(row.region)}</td>
+          <td>${escapeHtml(row.province)} ${deducedBadge(row.province_deduced)}</td>
+          <td>${escapeHtml(row.municipalities)} ${deducedBadge(row.municipalities_deduced)}</td>
+          <td><span class="${badgeClass(row.source_group || row.source)}">${escapeHtml(row.source_label || sourceLabel(row.source))}</span></td>
+          <td>${escapeHtml(row.project_type)}</td>
           <td class="num">${fmtMw(row.power_mw)}</td>
           <td>${link}</td>
         `;
@@ -1622,12 +1696,12 @@ class StaticDashboardBuilder:
         const tr = document.createElement('tr');
 
         tr.innerHTML = `
-          <td><span class="${badgeClass(row.source_group || row.source)}">${text(row.source_label)}</span></td>
+          <td><span class="${badgeClass(row.source_group || row.source)}">${escapeHtml(row.source_label)}</span></td>
           <td class="num">${fmtNum(row.count)}</td>
           <td class="num">${fmtNum(row.missing_mw)}</td>
           <td class="num">${fmtNum(row.missing_province)}</td>
           <td class="num">${fmtNum(row.missing_municipality)}</td>
-          <td class="num">${text(row.completeness_pct)}%</td>
+          <td class="num">${escapeHtml(row.completeness_pct)}%</td>
         `;
 
         body.appendChild(tr);
@@ -1641,7 +1715,14 @@ class StaticDashboardBuilder:
 
     function fillSelect(id, label, values, mapper = v => v) {
       const select = document.getElementById(id);
-      select.innerHTML = `<option value="">${label}</option>`;
+      while (select.firstChild) {
+        select.removeChild(select.firstChild);
+      }
+
+      const placeholder = document.createElement('option');
+      placeholder.value = '';
+      placeholder.textContent = label;
+      select.appendChild(placeholder);
 
       values.forEach(value => {
         const option = document.createElement('option');
@@ -1720,19 +1801,19 @@ class StaticDashboardBuilder:
       filtered.slice(0, 700).forEach(record => {
         const tr = document.createElement('tr');
         tr.className = mwBandClass(record.power_mw);
-        const link = record.url ? `<a href="${record.url}" target="_blank">Apri</a>` : '';
+        const link = safeExternalLink(record.url);
         const proponent = isTerna(record)
           ? '<span class="muted">Dato aggregato</span>'
-          : (text(record.proponent) || '<span class="muted">n/d</span>');
+          : (text(record.proponent) ? escapeHtml(record.proponent) : '<span class="muted">n/d</span>');
 
         tr.innerHTML = `
-          <td><span class="${badgeClass(record.source_group || record.source)}">${text(record.source_label)}</span></td>
-          <td>${text(record.region)}</td>
-          <td>${text(record.province)} ${deducedBadge(record.province_deduced)}</td>
-          <td>${text(record.municipalities)} ${deducedBadge(record.municipalities_deduced)}</td>
-          <td class="project-title"><strong>${text(record.title)}</strong></td>
+          <td><span class="${badgeClass(record.source_group || record.source)}">${escapeHtml(record.source_label)}</span></td>
+          <td>${escapeHtml(record.region)}</td>
+          <td>${escapeHtml(record.province)} ${deducedBadge(record.province_deduced)}</td>
+          <td>${escapeHtml(record.municipalities)} ${deducedBadge(record.municipalities_deduced)}</td>
+          <td class="project-title"><strong>${escapeHtml(record.title)}</strong></td>
           <td class="proponent-col">${proponent}</td>
-          <td>${text(record.project_type)}</td>
+          <td>${escapeHtml(record.project_type)}</td>
           <td class="num">${fmtMw(record.power_mw)}</td>
           <td>${link}</td>
         `;
