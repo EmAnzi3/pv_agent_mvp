@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-05-05 17:28:44",
-    "snapshot_file": "projects_snapshot_20260505_152753.csv",
-    "total_records": 1023,
-    "punctual_records": 942,
+    "generated_at": "2026-05-05 22:46:00",
+    "snapshot_file": "projects_snapshot_20260505_204535.csv",
+    "total_records": 1039,
+    "punctual_records": 958,
     "terna_records": 81,
-    "total_mw_punctual": 26362.238,
+    "total_mw_punctual": 26659.384,
     "total_mw_terna": 144028.348,
     "source_counts": [
       {
@@ -42,6 +42,11 @@
         "source": "lombardia",
         "label": "Lombardia",
         "count": 57
+      },
+      {
+        "source": "calabria",
+        "label": "calabria",
+        "count": 16
       },
       {
         "source": "emilia_romagna",
@@ -176,6 +181,16 @@
         "priority_score": 1.9
       },
       {
+        "region": "Calabria",
+        "punctual_count": 17,
+        "punctual_mw": 510.146,
+        "terna_count": 5,
+        "terna_mw": 2109.165,
+        "terna_practices": 0,
+        "total_mw": 2619.311,
+        "priority_score": 1.8
+      },
+      {
         "region": "Piemonte",
         "punctual_count": 5,
         "punctual_mw": 113.318,
@@ -184,16 +199,6 @@
         "terna_practices": 0,
         "total_mw": 3893.179,
         "priority_score": 1.1
-      },
-      {
-        "region": "Calabria",
-        "punctual_count": 1,
-        "punctual_mw": 213.0,
-        "terna_count": 5,
-        "terna_mw": 2109.165,
-        "terna_practices": 0,
-        "total_mw": 2322.165,
-        "priority_score": 0.7
       },
       {
         "region": "Molise",
@@ -890,11 +895,11 @@
       ]
     },
     "quality": {
-      "punctual_records": 942,
+      "punctual_records": 958,
       "missing_mw": 130,
       "missing_region": 0,
-      "missing_province": 7,
-      "missing_municipality": 13,
+      "missing_province": 8,
+      "missing_municipality": 14,
       "missing_url": 0,
       "province_deduced": 20,
       "municipalities_deduced": 1
@@ -976,6 +981,17 @@
         "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 90.6
+      },
+      {
+        "source": "calabria",
+        "source_label": "calabria",
+        "count": 16,
+        "missing_mw": 0,
+        "missing_province": 1,
+        "missing_municipality": 1,
+        "province_deduced": 0,
+        "municipalities_deduced": 0,
+        "completeness_pct": 95.8
       },
       {
         "source": "emilia_romagna",
@@ -3619,6 +3635,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/5955"
       ],
       "project_key": "url:f5d4c7dd5e478feb"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "AGRIVOLTAICO SORGENIA",
+      "proponent": "SORGENIA RENEWABLES S.R.L",
+      "region": "Calabria",
+      "province": "CS",
+      "municipalities": "Altomonte, Castrovillari",
+      "project_type": "PAUR",
+      "power_mw": 77.7,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "AGRIVOLTAICO SORGENIA"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+      ],
+      "project_key": "prj:bfba7daacf2ca605"
     },
     {
       "source": "mase_provvedimenti",
@@ -6522,7 +6569,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-05-05T15:21:48.924093",
+      "updated_at": "2026-05-05T20:36:07.175264",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -10328,6 +10375,37 @@
       "project_key": "url:177fb75cda6f0556"
     },
     {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "“Costruzione ed Esercizio di un impianto agrivoltaico dalla potenza nominale di 31,51 MWp, comprensivo delle relative infrastrutture indispensabili delle opere connesse, tra cui un sistema di accumulo con capacità di 25,908 MWp (85,255 (MWh). Comuni d’intervento: Comuni di Scandale e Cutro (KR)",
+      "proponent": "GO MANDORLO S.r.l",
+      "region": "Calabria",
+      "province": "KR",
+      "municipalities": "Scandale, Cutro",
+      "project_type": "Verifica di Assoggettabilità a VIA",
+      "power_mw": 31.51,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/costruzione-ed-esercizio-di-un-impianto-agrivoltaico-dalla-potenza-nominale-di-3151-mwp-comprensivo-delle-relative-infrastrutture-indispensabili-delle-opere-connesse-tra-cui-un-sistema-di/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "“Costruzione ed Esercizio di un impianto agrivoltaico dalla potenza nominale di 31,51 MWp, comprensivo delle relative infrastrutture indispensabili delle opere connesse, tra cui un sistema di accumulo con capacità di 25,908 MWp (85,255 (MWh). Comuni d’intervento: Comuni di Scandale e Cutro (KR)"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/costruzione-ed-esercizio-di-un-impianto-agrivoltaico-dalla-potenza-nominale-di-3151-mwp-comprensivo-delle-relative-infrastrutture-indispensabili-delle-opere-connesse-tra-cui-un-sistema-di/"
+      ],
+      "project_key": "url:295067a3e56a2d2f"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -11676,7 +11754,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-05-05T15:21:48.924093",
+      "updated_at": "2026-05-05T20:36:07.175264",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -12978,7 +13056,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-05-05T15:21:48.924093",
+      "updated_at": "2026-05-05T20:36:07.175264",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -13429,6 +13507,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6072"
       ],
       "project_key": "url:d18c6e459586462a"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Impianto agrivoltaico dalla potenza nominale di 19,857 MW ed opere di connessione nei Comuni di Altomonte, San Lorenzo del Vallo, Spezzano Albanese e Castrovillari (CS)",
+      "proponent": "ALTOMONTE SOLAR ENERGY S.r.l",
+      "region": "Calabria",
+      "province": "CS",
+      "municipalities": "Spezzano Albanese, Castrovillari, Altomonte, San Lorenzo Del Vallo",
+      "project_type": "Verifica di Assoggettabilità a VIA",
+      "power_mw": 19.857,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/748_cs/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrivoltaico dalla potenza nominale di 19,857 MW ed opere di connessione nei Comuni di Altomonte, San Lorenzo del Vallo, Spezzano Albanese e Castrovillari (CS)"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/748_cs/"
+      ],
+      "project_key": "prj:5f65378a51bdb7ab"
     },
     {
       "source": "lombardia",
@@ -13927,6 +14036,68 @@
       "project_key": "url:4899ebcd0f32eab8"
     },
     {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Impianto fotovoltaico variante CargoSrl",
+      "proponent": "Cargo S.r.l.",
+      "region": "Calabria",
+      "province": "KR",
+      "municipalities": "Crotone, Scandale",
+      "project_type": "PAUR",
+      "power_mw": 18.986,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/impianto-fotovoltaico-variante-cargosrl/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto fotovoltaico variante CargoSrl"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/impianto-fotovoltaico-variante-cargosrl/"
+      ],
+      "project_key": "prj:4058e77490cb49f4"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Progetto di “Costruzione ed esercizio di impianto fotovoltaico della potenza complessiva pari a 18,9865 MW da ubicare nel Comune di Crotone in loc. Scalano e relative opere di connessione che interessano anche il Comune di Scandale (KR)” – Titolare: Cargo S.r.l. Presa d’atto dell’Autorizzazione Unica rilasciata ai sensi dell’art. 12 del D.Lgs. n. 387/2003 e del conseguente nulla osta prot. n. n. 659452 del 09/09/2025 relativo alla proroga di 36 mesi del termine di inizio dei lavori di rispetto a",
+      "proponent": "Cargo S.r.l.",
+      "region": "Calabria",
+      "province": "KR",
+      "municipalities": "Crotone, Scandale",
+      "project_type": "PAUR",
+      "power_mw": 18.986,
+      "status": "",
+      "url": "https://www.regione.calabria.it/provvedimenti-regionali/progetto-di-costruzione-ed-esercizio-di-impianto-fotovoltaico-della-potenza-complessiva-pari-a-189865-mw-da-ubicare-nel-comune-di-crotone-in-loc-scalano-e-relative-opere-di-connessione-che/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di “Costruzione ed esercizio di impianto fotovoltaico della potenza complessiva pari a 18,9865 MW da ubicare nel Comune di Crotone in loc. Scalano e relative opere di connessione che interessano anche il Comune di Scandale (KR)” – Titolare: Cargo S.r.l. Presa d’atto dell’Autorizzazione Unica rilasciata ai sensi dell’art. 12 del D.Lgs. n. 387/2003 e del conseguente nulla osta prot. n. n. 659452 del 09/09/2025 relativo alla proroga di 36 mesi del termine di inizio dei lavori di rispetto a"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/provvedimenti-regionali/progetto-di-costruzione-ed-esercizio-di-impianto-fotovoltaico-della-potenza-complessiva-pari-a-189865-mw-da-ubicare-nel-comune-di-crotone-in-loc-scalano-e-relative-opere-di-connessione-che/"
+      ],
+      "project_key": "url:b2d714c77e8be178"
+    },
+    {
       "source": "lombardia",
       "source_group": "lombardia",
       "source_label": "Lombardia",
@@ -14018,6 +14189,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6077"
       ],
       "project_key": "url:1a0c9ae99bce2599"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Impianto di produzione di energia elettrica da fonte fotovoltaica denominato “AGRI-PV Castrovillari” di potenza 18.470,88kWp",
+      "proponent": "AGRI-PV CASTROVILLARI - Soc. di progetto S.r.l.",
+      "region": "Calabria",
+      "province": "CS",
+      "municipalities": "Castrovillari",
+      "project_type": "Verifica di Assoggettabilità a VIA",
+      "power_mw": 18.471,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/pratica-n-749-cs-_calabria-suap-sportello-ambiente/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto di produzione di energia elettrica da fonte fotovoltaica denominato “AGRI-PV Castrovillari” di potenza 18.470,88kWp"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/pratica-n-749-cs-_calabria-suap-sportello-ambiente/"
+      ],
+      "project_key": "prj:8d0080769297424c"
     },
     {
       "source": "emilia_romagna",
@@ -14359,6 +14561,37 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11402"
       ],
       "project_key": "url:fec3cce525c18126"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Avviso PAUR Realizzazione di un impianto agrivoltaico denominato “Crotone” della potenza di 17,72624 MWp da realizzarsi nel Comune di Crotone (KR), Cutro (KR), San Mauro Marchesato (KR) e Scandale (KR). Proponente: Habemus s.r.l",
+      "proponent": "Habemus s.r.l",
+      "region": "Calabria",
+      "province": "KR",
+      "municipalities": "Crotone, Cutro, San Mauro Marchesato",
+      "project_type": "PAUR",
+      "power_mw": 17.726,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/avviso-paur-realizzazione-di-un-impianto-agrivoltaico-denominato-crotone-della-potenza-di-1772624-mwp-da-realizzarsi-nel-comune-di-crotone-kr-cutro-kr-san-mauro-marchesato-kr/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Avviso PAUR Realizzazione di un impianto agrivoltaico denominato “Crotone” della potenza di 17,72624 MWp da realizzarsi nel Comune di Crotone (KR), Cutro (KR), San Mauro Marchesato (KR) e Scandale (KR). Proponente: Habemus s.r.l"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/avviso-paur-realizzazione-di-un-impianto-agrivoltaico-denominato-crotone-della-potenza-di-1772624-mwp-da-realizzarsi-nel-comune-di-crotone-kr-cutro-kr-san-mauro-marchesato-kr/"
+      ],
+      "project_key": "url:b8421113f79d17a3"
     },
     {
       "source": "lombardia",
@@ -14762,6 +14995,37 @@
         "https://regionelazio.app.box.com/v/VIA-060-2024"
       ],
       "project_key": "url:a59d2306294894f9"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Impianto agrivoltaico denominato “Colli Crotonesi”, con potenza nominale pari a 16,736 MW e potenza in immissione pari a 14,356 MW, da realizzarsi nel Comune di Crotone (KR), in località Canalicchi, e delle relative opere connesse. Proponente: RWE RENEWABLES ITALIA S.r.l. - Comuni d’intervento: Comune di Crotone (KR) e Comune di Scandale (KR). Valutazione di Impatto Ambientale e Screening di VINCA",
+      "proponent": "RWE RENEWABLES ITALIA S.r.l",
+      "region": "Calabria",
+      "province": "KR",
+      "municipalities": "Crotone, Scandale",
+      "project_type": "VIA",
+      "power_mw": 16.736,
+      "status": "",
+      "url": "https://www.regione.calabria.it/provvedimenti-regionali/impianto-agrivoltaico-denominato-colli-crotonesi-con-potenza-nominale-pari-a-16736-mw-e-potenza-in-immissione-pari-a-14356-mw-da-realizzarsi-nel-comune-di-crotone-kr-in-locali/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrivoltaico denominato “Colli Crotonesi”, con potenza nominale pari a 16,736 MW e potenza in immissione pari a 14,356 MW, da realizzarsi nel Comune di Crotone (KR), in località Canalicchi, e delle relative opere connesse. Proponente: RWE RENEWABLES ITALIA S.r.l. - Comuni d’intervento: Comune di Crotone (KR) e Comune di Scandale (KR). Valutazione di Impatto Ambientale e Screening di VINCA"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/provvedimenti-regionali/impianto-agrivoltaico-denominato-colli-crotonesi-con-potenza-nominale-pari-a-16736-mw-e-potenza-in-immissione-pari-a-14356-mw-da-realizzarsi-nel-comune-di-crotone-kr-in-locali/"
+      ],
+      "project_key": "url:443950598bc36cf4"
     },
     {
       "source": "mase_provvedimenti",
@@ -17182,6 +17446,37 @@
       "project_key": "url:c54a401852c0e299"
     },
     {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Impianto Agrivoltaico Avanzato in Comune di Crotone (KR), denominato “Apriglianello”, con Potenza nominale DC pari a 19,039 MWp e Potenza AC di immissione in RTN pari a 16 MW, integrato con un sistema di accumulo da 10 MW",
+      "proponent": "FRI-EL S.p.A",
+      "region": "Calabria",
+      "province": "KR",
+      "municipalities": "Crotone, Scandale",
+      "project_type": "Verifica di Assoggettabilità a VIA",
+      "power_mw": 10.0,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/pratica-n-459-kr-_calabria-suap-sportello-ambiente/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto Agrivoltaico Avanzato in Comune di Crotone (KR), denominato “Apriglianello”, con Potenza nominale DC pari a 19,039 MWp e Potenza AC di immissione in RTN pari a 16 MW, integrato con un sistema di accumulo da 10 MW"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/pratica-n-459-kr-_calabria-suap-sportello-ambiente/"
+      ],
+      "project_key": "prj:1cc2b58fdfaa83e4"
+    },
+    {
       "source": "lombardia",
       "source_group": "lombardia",
       "source_label": "Lombardia",
@@ -17554,6 +17849,37 @@
       "project_key": "prj:ab2f7bfa5fdb51c0"
     },
     {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Progetto per la realizzazione di un impianto agrivoltaico \"Calabria 2\" da realizzarsi nel comune di Cassano All'Ionio (CS) con potenza di 9,99 MWp e relative opere di rete. Pratica n. 122 (CS) sul sistema Calabria SUAP “Sportello Energia”",
+      "proponent": "V-RIDIUM SOLAR CALABRIA 2 S.R.L",
+      "region": "Calabria",
+      "province": "CS",
+      "municipalities": "Cassano All'Ionio",
+      "project_type": "VIA",
+      "power_mw": 9.99,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/agrivoltaico_v-ridium/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto per la realizzazione di un impianto agrivoltaico \"Calabria 2\" da realizzarsi nel comune di Cassano All'Ionio (CS) con potenza di 9,99 MWp e relative opere di rete. Pratica n. 122 (CS) sul sistema Calabria SUAP “Sportello Energia”"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/agrivoltaico_v-ridium/"
+      ],
+      "project_key": "prj:32c0d693d47558db"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -17678,6 +18004,99 @@
       "project_key": "prj:d9d73ba8cb04c812"
     },
     {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Costruzione ed Esercizio di un impianto agrivoltaico dalla potenza nominale di 9,98 MWp, comprensivo delle relative infrastrutture indispensabili e opere connesse",
+      "proponent": "DEAWAY SOLAR ENERGY S.r.l",
+      "region": "Calabria",
+      "province": "CZ",
+      "municipalities": "Lamezia Terme",
+      "project_type": "Verifica di Assoggettabilità a VIA",
+      "power_mw": 9.98,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/costruzione-ed-esercizio-di-un-impianto-agrivoltaico-dalla-potenza-nominale-di-998-mwp-comprensivo-delle-relative-infrastrutture-indispensabili-e-opere-connesse/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Costruzione ed Esercizio di un impianto agrivoltaico dalla potenza nominale di 9,98 MWp, comprensivo delle relative infrastrutture indispensabili e opere connesse"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/costruzione-ed-esercizio-di-un-impianto-agrivoltaico-dalla-potenza-nominale-di-998-mwp-comprensivo-delle-relative-infrastrutture-indispensabili-e-opere-connesse/"
+      ],
+      "project_key": "prj:03ac4fee479206fc"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "PROGETTO DI UN IMPIANTO FOTOVOLTAICO FLOTTANTE, NONCHÉ DELLE RELATIVE OPERE STRETTAMENTE CONNESSE, DI POTENZA PARI A 9.98 MWp, DENOMINATO “DIT040 CALUSIA” ED UBICATO NEL TERRITORIO COMUNALE DI CACCURI (KR)",
+      "proponent": "RESOL 1 S.r.l.",
+      "region": "Calabria",
+      "province": "KR",
+      "municipalities": "Caccuri",
+      "project_type": "Atto ambientale Regione Calabria",
+      "power_mw": 9.98,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/progetto-di-un-impianto-fotovoltaico-flottante-nonche-delle-relative-opere-strettamente-connesse-di-potenza-pari-a-9-98-mwp-denominato-dit040-calusia-ed-ubicato-nel-territorio-com/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "PROGETTO DI UN IMPIANTO FOTOVOLTAICO FLOTTANTE, NONCHÉ DELLE RELATIVE OPERE STRETTAMENTE CONNESSE, DI POTENZA PARI A 9.98 MWp, DENOMINATO “DIT040 CALUSIA” ED UBICATO NEL TERRITORIO COMUNALE DI CACCURI (KR)"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/progetto-di-un-impianto-fotovoltaico-flottante-nonche-delle-relative-opere-strettamente-connesse-di-potenza-pari-a-9-98-mwp-denominato-dit040-calusia-ed-ubicato-nel-territorio-com/"
+      ],
+      "project_key": "prj:4e7bcd8c2ce2894a"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "rocedura di Valutazione di Incidenza ai sensi della Direttiva Habitat 92/43/CEE, Direttiva Uccelli 2009/147/CE, DPR 357 97 e smi, DGR n. 65 del 28 febbraio 2022. Progetto di un impianto fotovoltaico flottante, nonché delle relative opere strettamente connesse, di potenza 9.98MWp, denominato \"DIT040 CALUSIA\" Proponente: ENERFLO SRL Parere positivo di Vinca Appropriata",
+      "proponent": "Enerflo S.r.l.",
+      "region": "Calabria",
+      "province": "",
+      "municipalities": "",
+      "project_type": "Atto ambientale Regione Calabria",
+      "power_mw": 9.98,
+      "status": "",
+      "url": "https://www.regione.calabria.it/provvedimenti-regionali/rocedura-di-valutazione-di-incidenza-ai-sensi-della-direttiva-habitat-92-43-cee-direttiva-uccelli-2009-147-ce-dpr-357-97-e-smi-dgr-n-65-del-28-febbraio-2022-progetto-di-un-impianto-fotovoltaico-f/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "rocedura di Valutazione di Incidenza ai sensi della Direttiva Habitat 92/43/CEE, Direttiva Uccelli 2009/147/CE, DPR 357 97 e smi, DGR n. 65 del 28 febbraio 2022. Progetto di un impianto fotovoltaico flottante, nonché delle relative opere strettamente connesse, di potenza 9.98MWp, denominato \"DIT040 CALUSIA\" Proponente: ENERFLO SRL Parere positivo di Vinca Appropriata"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/provvedimenti-regionali/rocedura-di-valutazione-di-incidenza-ai-sensi-della-direttiva-habitat-92-43-cee-direttiva-uccelli-2009-147-ce-dpr-357-97-e-smi-dgr-n-65-del-28-febbraio-2022-progetto-di-un-impianto-fotovoltaico-f/"
+      ],
+      "project_key": "url:0efe679d6b1c2083"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -17707,6 +18126,37 @@
         "https://regionelazio.app.box.com/v/VIA-098-2024"
       ],
       "project_key": "url:eebcea60031639ed"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Progetto “Costruzione e desercizio di un Impianto fotovoltaico della potenza complessiva pari a9,97920MWp,daubicare nel Comune di Badolato(CZ)inlocalitàStradaProvinciale136e relative operediconnessione”-Pratican.113(CZ)sulsistemaCalabriaSUAP“Sportello Ambiente”. Proponente:ENERSPV2S.r.l.-Presad’attodelrilasciodell’Autorizzazioneprot.n.189331del 25/03/2025 aisensidell’art.12D.Lgs.n.387/03,L.R.n.42/08eLineeGuidaNazionaliart.12c. 10 D.Lgs.n.387/03,delDipartimentoSviluppoEconomico-Settore“Infrastrut",
+      "proponent": "ENERSPV2 S.r.l.",
+      "region": "Calabria",
+      "province": "CZ",
+      "municipalities": "Badolato",
+      "project_type": "Atto ambientale Regione Calabria",
+      "power_mw": 9.979,
+      "status": "",
+      "url": "https://www.regione.calabria.it/provvedimenti-regionali/progetto-costruzione-e-desercizio-di-un-impianto-fotovoltaico-della-potenza-complessiva-pari-a997920mwpdaubicare-nel-comune-di-badolatoczinlocalitastradaprovinciale136e-relative-operedico/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto “Costruzione e desercizio di un Impianto fotovoltaico della potenza complessiva pari a9,97920MWp,daubicare nel Comune di Badolato(CZ)inlocalitàStradaProvinciale136e relative operediconnessione”-Pratican.113(CZ)sulsistemaCalabriaSUAP“Sportello Ambiente”. Proponente:ENERSPV2S.r.l.-Presad’attodelrilasciodell’Autorizzazioneprot.n.189331del 25/03/2025 aisensidell’art.12D.Lgs.n.387/03,L.R.n.42/08eLineeGuidaNazionaliart.12c. 10 D.Lgs.n.387/03,delDipartimentoSviluppoEconomico-Settore“Infrastrut"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/provvedimenti-regionali/progetto-costruzione-e-desercizio-di-un-impianto-fotovoltaico-della-potenza-complessiva-pari-a997920mwpdaubicare-nel-comune-di-badolatoczinlocalitastradaprovinciale136e-relative-operedico/"
+      ],
+      "project_key": "url:8c4df200836158f3"
     },
     {
       "source": "lazio",
@@ -17924,6 +18374,37 @@
         "https://regionelazio.box.com/v/VIA-165-2021"
       ],
       "project_key": "url:16612d80de83b7eb"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Procedura di Valutazione di Incidenza ai sensi della Direttiva Habitat 92/43/CEE, Direttiva Uccelli 2009/147/CE, DPR 357 97 e smi, DGR n. 65 del 28 febbraio 2022. Oggetto: Costruzione ed esercizio di un impianto fotovoltaico con potenza di generazione (DC) pari a 9,765 MW e delle relative opere connesse in Comune di Corigliano Rossano (CS). Proponente: TEP Renewables (Schiavonea PV) S.r.l. Parere di esclusione dalla Vinca Appropriata",
+      "proponent": "TEP Renewables (Schiavonea PV) S.r.l",
+      "region": "Calabria",
+      "province": "CS",
+      "municipalities": "Corigliano Rossano",
+      "project_type": "Atto ambientale Regione Calabria",
+      "power_mw": 9.765,
+      "status": "",
+      "url": "https://www.regione.calabria.it/provvedimenti-regionali/procedura-di-valutazione-di-incidenza-ai-sensi-della-direttiva-habitat-92-43-cee-direttiva-uccelli-2009-147-ce-dpr-357-97-e-smi-dgr-n-65-del-28-febbraio-2022-oggetto-costruzione-ed-esercizio-di/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Procedura di Valutazione di Incidenza ai sensi della Direttiva Habitat 92/43/CEE, Direttiva Uccelli 2009/147/CE, DPR 357 97 e smi, DGR n. 65 del 28 febbraio 2022. Oggetto: Costruzione ed esercizio di un impianto fotovoltaico con potenza di generazione (DC) pari a 9,765 MW e delle relative opere connesse in Comune di Corigliano Rossano (CS). Proponente: TEP Renewables (Schiavonea PV) S.r.l. Parere di esclusione dalla Vinca Appropriata"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/provvedimenti-regionali/procedura-di-valutazione-di-incidenza-ai-sensi-della-direttiva-habitat-92-43-cee-direttiva-uccelli-2009-147-ce-dpr-357-97-e-smi-dgr-n-65-del-28-febbraio-2022-oggetto-costruzione-ed-esercizio-di/"
+      ],
+      "project_key": "url:de4c083b8f41320d"
     },
     {
       "source": "sistema_puglia_energia",
@@ -18682,7 +19163,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-05-05T15:21:48.924093",
+      "updated_at": "2026-05-05T20:36:07.175264",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -18930,7 +19411,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-05-05T15:21:48.924093",
+      "updated_at": "2026-05-05T20:36:07.175264",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19722,6 +20203,37 @@
         "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63283"
       ],
       "project_key": "url:1f45b60793f39e17"
+    },
+    {
+      "source": "calabria",
+      "source_group": "calabria",
+      "source_label": "calabria",
+      "title": "Procedura di Valutazione di Incidenza ai sensi della Direttiva Habitat 92/43/CEE, Direttiva Uccelli 2009/147/CE, DPR 357 97 e smi, DGR n. 65 del 28 febbraio 2022. Progetto di realizzazione impianto fotovoltaico di potenza di picco totale pari a 7.499,52 kWp nel comune di Scalea (CS) e delle opere connesse ed infrastrutture indispensabili alla costruzione e all’esercizio dell’impianto. Proponente: ditta STHEP SUN1 SRL. Parere di esclusione dalla Vinca Appropriata",
+      "proponent": "STHEP SUN1 SRL",
+      "region": "Calabria",
+      "province": "CS",
+      "municipalities": "Scalea",
+      "project_type": "Atto ambientale Regione Calabria",
+      "power_mw": 7.5,
+      "status": "",
+      "url": "https://www.regione.calabria.it/provvedimenti-regionali/procedura-di-valutazione-di-incidenza-ai-sensi-della-direttiva-habitat-92-43-cee-direttiva-uccelli-2009-147-ce-dpr-357-97-e-smi-dgr-n-65-del-28-febbraio-2022-progetto-di-realizzazione-impianto-fo/",
+      "updated_at": "2026-05-05T20:41:13.136023",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Procedura di Valutazione di Incidenza ai sensi della Direttiva Habitat 92/43/CEE, Direttiva Uccelli 2009/147/CE, DPR 357 97 e smi, DGR n. 65 del 28 febbraio 2022. Progetto di realizzazione impianto fotovoltaico di potenza di picco totale pari a 7.499,52 kWp nel comune di Scalea (CS) e delle opere connesse ed infrastrutture indispensabili alla costruzione e all’esercizio dell’impianto. Proponente: ditta STHEP SUN1 SRL. Parere di esclusione dalla Vinca Appropriata"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/provvedimenti-regionali/procedura-di-valutazione-di-incidenza-ai-sensi-della-direttiva-habitat-92-43-cee-direttiva-uccelli-2009-147-ce-dpr-357-97-e-smi-dgr-n-65-del-28-febbraio-2022-progetto-di-realizzazione-impianto-fo/"
+      ],
+      "project_key": "url:555018006e519f54"
     },
     {
       "source": "sicilia",
@@ -21038,7 +21550,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-05-05T15:21:48.924093",
+      "updated_at": "2026-05-05T20:36:07.175264",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -27954,7 +28466,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-05-05T15:23:16.172740",
+      "updated_at": "2026-05-05T20:37:30.690615",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -33404,10 +33916,10 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-05-05T17:28:44",
+    "generated_at": "2026-05-05T22:46:00",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1034,
-    "records_after": 1023,
+    "records_before": 1050,
+    "records_after": 1039,
     "merged_or_removed": 11,
     "accepted_pairs": 11,
     "rejected_pairs": 32,
@@ -33438,7 +33950,7 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-05-05T17:28:59",
+      "generated_at": "2026-05-05T22:46:09",
       "targets": 0,
       "recovered": 0,
       "failed": 0,

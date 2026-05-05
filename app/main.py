@@ -19,6 +19,7 @@ from app.collectors.sardegna import SardegnaCollector
 from app.collectors.toscana import ToscanaCollector
 from app.collectors.piemonte import PiemonteCollector
 from app.collectors.campania import CampaniaCollector
+from app.collectors.calabria import CalabriaCollector
 from app.collectors.mase import MaseCollector
 from app.collectors.mase_provvedimenti import MaseProvvedimentiCollector
 from app.collectors.terna_econnextion import TernaEconnextionCollector
@@ -50,6 +51,7 @@ COLLECTORS = [
     ToscanaCollector,
     PiemonteCollector,
     CampaniaCollector,
+    CalabriaCollector,
     MaseCollector,
     MaseProvvedimentiCollector,
     TernaEconnextionCollector,
@@ -228,3 +230,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
