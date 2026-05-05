@@ -1,9 +1,12 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 import csv
 import json
+import re
+import unicodedata
 from pathlib import Path
+from typing import Any
 
 
 PROVINCE_NAME_TO_CODE = {
@@ -16,6 +19,7 @@ PROVINCE_NAME_TO_CODE = {
     "ASTI": "AT",
     "AVELLINO": "AV",
     "BARI": "BA",
+    "BARLETTA ANDRIA TRANI": "BT",
     "BARLETTA-ANDRIA-TRANI": "BT",
     "BELLUNO": "BL",
     "BENEVENTO": "BN",
@@ -28,6 +32,7 @@ PROVINCE_NAME_TO_CODE = {
     "CAGLIARI": "CA",
     "CALTANISSETTA": "CL",
     "CAMPOBASSO": "CB",
+    "CARBONIA IGLESIAS": "CI",
     "CASERTA": "CE",
     "CATANIA": "CT",
     "CATANZARO": "CZ",
@@ -42,6 +47,7 @@ PROVINCE_NAME_TO_CODE = {
     "FERRARA": "FE",
     "FIRENZE": "FI",
     "FOGGIA": "FG",
+    "FORLI CESENA": "FC",
     "FORLI-CESENA": "FC",
     "FROSINONE": "FR",
     "GENOVA": "GE",
@@ -50,6 +56,7 @@ PROVINCE_NAME_TO_CODE = {
     "IMPERIA": "IM",
     "ISERNIA": "IS",
     "LA SPEZIA": "SP",
+    "L AQUILA": "AQ",
     "L'AQUILA": "AQ",
     "LATINA": "LT",
     "LECCE": "LE",
@@ -59,11 +66,13 @@ PROVINCE_NAME_TO_CODE = {
     "LUCCA": "LU",
     "MACERATA": "MC",
     "MANTOVA": "MN",
+    "MASSA CARRARA": "MS",
     "MASSA-CARRARA": "MS",
     "MATERA": "MT",
     "MESSINA": "ME",
     "MILANO": "MI",
     "MODENA": "MO",
+    "MONZA BRIANZA": "MB",
     "MONZA E BRIANZA": "MB",
     "NAPOLI": "NA",
     "NOVARA": "NO",
@@ -74,6 +83,7 @@ PROVINCE_NAME_TO_CODE = {
     "PARMA": "PR",
     "PAVIA": "PV",
     "PERUGIA": "PG",
+    "PESARO URBINO": "PU",
     "PESARO E URBINO": "PU",
     "PESCARA": "PE",
     "PIACENZA": "PC",
@@ -108,6 +118,7 @@ PROVINCE_NAME_TO_CODE = {
     "UDINE": "UD",
     "VARESE": "VA",
     "VENEZIA": "VE",
+    "VERBANO CUSIO OSSOLA": "VB",
     "VERBANIA": "VB",
     "VERCELLI": "VC",
     "VERONA": "VR",
@@ -117,31 +128,74 @@ PROVINCE_NAME_TO_CODE = {
 }
 
 
-def normalize_province(value: str | None) -> str:
+VALID_CODES = set(PROVINCE_NAME_TO_CODE.values())
+
+
+def clean(value: Any) -> str:
     if value is None:
         return ""
+    return re.sub(r"\s+", " ", str(value)).strip()
 
-    raw = str(value).strip()
+
+def normalize_key(value: str) -> str:
+    text = clean(value).upper()
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    text = text.replace("’", "'")
+    text = re.sub(r"[^A-Z0-9']+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def normalize_province(value: Any) -> str:
+    raw = clean(value)
     if not raw:
         return ""
 
-    # Se è già sigla provincia, la manteniamo.
-    if len(raw) == 2 and raw.isalpha():
+    # Already valid province code.
+    if len(raw) == 2 and raw.upper() in VALID_CODES:
         return raw.upper()
 
-    # Gestione multi-provincia tipo "LE BR" o "LE, BR"
-    parts = raw.replace(",", " ").replace("/", " ").replace("-", " ").split()
-    if len(parts) > 1 and all(len(p) == 2 and p.isalpha() for p in parts):
-        return " ".join(p.upper() for p in parts)
+    # Multi-code values: "LE BR", "LE, BR", "LE/BR"
+    parts = re.split(r"[,/;\s]+", raw.strip())
+    if len(parts) > 1 and all(len(part) == 2 and part.upper() in VALID_CODES for part in parts if part):
+        return " ".join(part.upper() for part in parts if part)
 
-    key = raw.upper().strip()
-    return PROVINCE_NAME_TO_CODE.get(key, raw)
+    key = normalize_key(raw)
+    if key in PROVINCE_NAME_TO_CODE:
+        return PROVINCE_NAME_TO_CODE[key]
+
+    # Case: "Provincia di Grosseto"
+    key = re.sub(r"^(PROVINCIA|PROV)\s+(DI\s+)?", "", key).strip()
+    if key in PROVINCE_NAME_TO_CODE:
+        return PROVINCE_NAME_TO_CODE[key]
+
+    return raw
+
+
+def normalize_record(record: dict[str, Any], idx: int) -> dict[str, Any] | None:
+    old = clean(record.get("province"))
+    new = normalize_province(old)
+
+    if old != new:
+        record["province"] = new
+        return {
+            "idx": idx,
+            "source": record.get("source", ""),
+            "source_label": record.get("source_label", ""),
+            "title": record.get("title", ""),
+            "old_province": old,
+            "new_province": new,
+            "url": record.get("url", ""),
+        }
+
+    return None
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Normalizza nomi provincia in sigle provincia nei data.json.")
     parser.add_argument("--data", required=True, help="Percorso data.json da normalizzare")
-    parser.add_argument("--audit", default="reports/province_normalization_audit.csv")
+    parser.add_argument("--audit", default="reports/province_normalization_audit.csv", help="CSV audit")
     args = parser.parse_args()
 
     data_path = Path(args.data)
@@ -151,38 +205,40 @@ def main() -> int:
         raise FileNotFoundError(f"File non trovato: {data_path}")
 
     data = json.loads(data_path.read_text(encoding="utf-8"))
+
     records = data.get("records", [])
+    if not isinstance(records, list):
+        raise ValueError("data.json non contiene una lista records valida")
 
     changes = []
+    for idx, record in enumerate(records):
+        if isinstance(record, dict):
+            change = normalize_record(record, idx)
+            if change:
+                changes.append(change)
 
-    for idx, row in enumerate(records):
-        old = str(row.get("province") or "").strip()
-        new = normalize_province(old)
-
-        if old != new:
-            row["province"] = new
-            changes.append({
-                "idx": idx,
-                "source": row.get("source", ""),
-                "title": row.get("title", ""),
-                "old_province": old,
-                "new_province": new,
-                "url": row.get("url", ""),
-            })
+    # Normalizza anche summary.top_projects, se presente.
+    top_projects = data.get("summary", {}).get("top_projects", [])
+    if isinstance(top_projects, list):
+        for idx, record in enumerate(top_projects):
+            if isinstance(record, dict):
+                change = normalize_record(record, idx)
+                if change:
+                    change["idx"] = f"summary.top_projects[{idx}]"
+                    changes.append(change)
 
     data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
     audit_path.parent.mkdir(parents=True, exist_ok=True)
-
     with audit_path.open("w", newline="", encoding="utf-8-sig") as handle:
         writer = csv.DictWriter(
             handle,
-            fieldnames=["idx", "source", "title", "old_province", "new_province", "url"],
+            fieldnames=["idx", "source", "source_label", "title", "old_province", "new_province", "url"],
         )
         writer.writeheader()
         writer.writerows(changes)
 
-    print(f"[province-normalization] file: {data_path}")
+    print(f"[province-normalization] data: {data_path}")
     print(f"[province-normalization] province normalizzate: {len(changes)}")
     print(f"[province-normalization] audit: {audit_path}")
     return 0
