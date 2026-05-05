@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-05-04 22:16:04",
-    "snapshot_file": "projects_snapshot_20260504_201546.csv",
-    "total_records": 1019,
-    "punctual_records": 938,
+    "generated_at": "2026-05-05 17:28:44",
+    "snapshot_file": "projects_snapshot_20260505_152753.csv",
+    "total_records": 1023,
+    "punctual_records": 942,
     "terna_records": 81,
-    "total_mw_punctual": 26150.948,
+    "total_mw_punctual": 26362.238,
     "total_mw_terna": 144028.348,
     "source_counts": [
       {
@@ -29,14 +29,14 @@
         "count": 81
       },
       {
+        "source": "mase_provvedimenti",
+        "label": "MASE",
+        "count": 71
+      },
+      {
         "source": "sistema_puglia_energia",
         "label": "Puglia",
         "count": 70
-      },
-      {
-        "source": "mase_provvedimenti",
-        "label": "MASE",
-        "count": 68
       },
       {
         "source": "lombardia",
@@ -44,14 +44,14 @@
         "count": 57
       },
       {
-        "source": "toscana",
-        "label": "Toscana",
+        "source": "emilia_romagna",
+        "label": "Emilia-Romagna",
         "count": 12
       },
       {
-        "source": "emilia_romagna",
-        "label": "Emilia-Romagna",
-        "count": 11
+        "source": "toscana",
+        "label": "Toscana",
+        "count": 12
       },
       {
         "source": "veneto",
@@ -97,13 +97,13 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 117,
-        "punctual_mw": 4690.256,
+        "punctual_count": 118,
+        "punctual_mw": 4778.636,
         "terna_count": 5,
         "terna_mw": 36621.404,
         "terna_practices": 0,
-        "total_mw": 41311.66,
-        "priority_score": 17.9
+        "total_mw": 41400.04,
+        "priority_score": 18.0
       },
       {
         "region": "Sardegna",
@@ -117,23 +117,23 @@
       },
       {
         "region": "Lombardia",
-        "punctual_count": 57,
-        "punctual_mw": 1077.011,
+        "punctual_count": 58,
+        "punctual_mw": 1145.491,
         "terna_count": 4,
         "terna_mw": 3813.708,
         "terna_practices": 0,
-        "total_mw": 4890.719,
-        "priority_score": 4.7
+        "total_mw": 4959.199,
+        "priority_score": 4.8
       },
       {
         "region": "Emilia-Romagna",
-        "punctual_count": 20,
-        "punctual_mw": 1109.268,
+        "punctual_count": 21,
+        "punctual_mw": 1135.368,
         "terna_count": 5,
         "terna_mw": 7389.648,
         "terna_practices": 0,
-        "total_mw": 8498.916,
-        "priority_score": 3.6
+        "total_mw": 8525.016,
+        "priority_score": 3.7
       },
       {
         "region": "Basilicata",
@@ -167,13 +167,13 @@
       },
       {
         "region": "Campania",
-        "punctual_count": 15,
-        "punctual_mw": 451.809,
+        "punctual_count": 16,
+        "punctual_mw": 480.139,
         "terna_count": 5,
         "terna_mw": 2907.795,
         "terna_practices": 0,
-        "total_mw": 3359.604,
-        "priority_score": 1.8
+        "total_mw": 3387.934,
+        "priority_score": 1.9
       },
       {
         "region": "Piemonte",
@@ -890,8 +890,8 @@
       ]
     },
     "quality": {
-      "punctual_records": 938,
-      "missing_mw": 131,
+      "punctual_records": 942,
+      "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 7,
       "missing_municipality": 13,
@@ -926,12 +926,12 @@
         "source": "mase",
         "source_label": "MASE",
         "count": 95,
-        "missing_mw": 3,
+        "missing_mw": 2,
         "missing_province": 0,
         "missing_municipality": 0,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 98.9
+        "completeness_pct": 99.3
       },
       {
         "source": "terna_econnextion",
@@ -945,6 +945,17 @@
         "completeness_pct": 33.3
       },
       {
+        "source": "mase_provvedimenti",
+        "source_label": "MASE",
+        "count": 71,
+        "missing_mw": 0,
+        "missing_province": 0,
+        "missing_municipality": 0,
+        "province_deduced": 0,
+        "municipalities_deduced": 0,
+        "completeness_pct": 100.0
+      },
+      {
         "source": "sistema_puglia_energia",
         "source_label": "Puglia",
         "count": 70,
@@ -954,17 +965,6 @@
         "province_deduced": 3,
         "municipalities_deduced": 0,
         "completeness_pct": 97.6
-      },
-      {
-        "source": "mase_provvedimenti",
-        "source_label": "MASE",
-        "count": 68,
-        "missing_mw": 0,
-        "missing_province": 0,
-        "missing_municipality": 0,
-        "province_deduced": 0,
-        "municipalities_deduced": 0,
-        "completeness_pct": 100.0
       },
       {
         "source": "lombardia",
@@ -978,8 +978,8 @@
         "completeness_pct": 90.6
       },
       {
-        "source": "toscana",
-        "source_label": "Toscana",
+        "source": "emilia_romagna",
+        "source_label": "Emilia-Romagna",
         "count": 12,
         "missing_mw": 0,
         "missing_province": 0,
@@ -989,9 +989,9 @@
         "completeness_pct": 100.0
       },
       {
-        "source": "emilia_romagna",
-        "source_label": "Emilia-Romagna",
-        "count": 11,
+        "source": "toscana",
+        "source_label": "Toscana",
+        "count": 12,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -4210,6 +4210,37 @@
       "project_key": "url:73fc0ed7d87078ab"
     },
     {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un Impianto fotovoltaico denominato \"Ranteghetta\" della potenza di 68,48 MWp integrato da sistema di accumulo (BESS) della potenza di 64 MW da realizzarsi nei comuni di Marcallo con Casone, Ossona, Santo Stefano Ticino e opere di connessione alla rete di trasmissione nazionale in alta tensione anche nel comune di Magenta (MI).",
+      "proponent": "Sorgenia Renewables S.r.l.",
+      "region": "Lombardia",
+      "province": "TA",
+      "municipalities": "TARANTO",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 68.48,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11630",
+      "updated_at": "2026-05-05T15:24:16.197447",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un Impianto fotovoltaico denominato \"Ranteghetta\" della potenza di 68,48 MWp integrato da sistema di accumulo (BESS) della potenza di 64 MW da realizzarsi nei comuni di Marcallo con Casone, Ossona, Santo Stefano Ticino e opere di connessione alla rete di trasmissione nazionale in alta tensione anche nel comune di Magenta (MI)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/11630"
+      ],
+      "project_key": "url:e2265de538ec590a"
+    },
+    {
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
@@ -4983,6 +5014,37 @@
         "https://regionelazio.box.com/v/VIA-062-2020"
       ],
       "project_key": "url:04ab04ba882281ab"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico di potenza nominale pari a 60,05 MW, e delle relative opere di connessione alla RTN, integrato da un sistema di accumulo da 15 MW, da realizzarsi nel territorio comunale di D",
+      "proponent": "SOCIETA' RINNOVABILI SUD TRE S.r.l.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "Taranto, Foggia",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 60.05,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6084",
+      "updated_at": "2026-05-05T15:27:50.395173",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico di potenza nominale pari a 60,05 MW, e delle relative opere di connessione alla RTN, integrato da un sistema di accumulo da 15 MW, da realizzarsi nel territorio comunale di D"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6084"
+      ],
+      "project_key": "url:b376b1c798166950"
     },
     {
       "source": "mase_provvedimenti",
@@ -6460,7 +6522,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-05-04T20:11:25.173279",
+      "updated_at": "2026-05-05T15:21:48.924093",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -10920,6 +10982,68 @@
       "project_key": "prj:e34bd05a5f506853"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Masseria Archi\", della potenza di 28,33 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Leverano, Copertino e Nardò (LE).",
+      "proponent": "GRUPOTEC SOLAR ITALIA 2 S.r.l.",
+      "region": "Puglia",
+      "province": "LE",
+      "municipalities": "Leverano, Copertino, Nardò",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 28.33,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6089",
+      "updated_at": "2026-05-05T15:27:50.395173",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Masseria Archi\", della potenza di 28,33 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Leverano, Copertino e Nardò (LE)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6089"
+      ],
+      "project_key": "url:773184246f788bdf"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, di potenza pari a 28,33 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Amorosi (BN).",
+      "proponent": "Sinergia GP12 S.r.l.",
+      "region": "Campania",
+      "province": "BN",
+      "municipalities": "Amorosi",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 28.33,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6087",
+      "updated_at": "2026-05-05T15:27:50.395173",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, di potenza pari a 28,33 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Amorosi (BN)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6087"
+      ],
+      "project_key": "url:2cc1b54dc533d74e"
+    },
+    {
       "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
@@ -11385,6 +11509,37 @@
       "project_key": "url:e6e536ab06b373b6"
     },
     {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 26.1 MW DENOMINATO “VIGARANO MAINARDA” E CONNESSIONE ALLA LINEA RTN A 132 KV “FINALE EMILIA – BONDENO”",
+      "proponent": "Epsilon Toro S.r.l",
+      "region": "Emilia-Romagna",
+      "province": "FE",
+      "municipalities": "Vigarano Mainarda, Bondeno",
+      "project_type": "VIA",
+      "power_mw": 26.1,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6781",
+      "updated_at": "2026-05-05T15:10:35.896218",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 26.1 MW DENOMINATO “VIGARANO MAINARDA” E CONNESSIONE ALLA LINEA RTN A 132 KV “FINALE EMILIA – BONDENO”"
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6781"
+      ],
+      "project_key": "url:c062866eb9d4dc53"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -11521,7 +11676,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-05-04T20:11:25.173279",
+      "updated_at": "2026-05-05T15:21:48.924093",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -12823,7 +12978,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-05-04T20:11:25.173279",
+      "updated_at": "2026-05-05T15:21:48.924093",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -18527,7 +18682,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-05-04T20:11:25.173279",
+      "updated_at": "2026-05-05T15:21:48.924093",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -18775,7 +18930,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-05-04T20:11:25.173279",
+      "updated_at": "2026-05-05T15:21:48.924093",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -20883,7 +21038,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-05-04T20:11:25.173279",
+      "updated_at": "2026-05-05T15:21:48.924093",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -26607,37 +26762,6 @@
       "project_key": "url:48503e65e4117ad8"
     },
     {
-      "source": "mase",
-      "source_group": "mase",
-      "source_label": "MASE",
-      "title": "[ID_13698 - WEB-ASSVIA - ASVASVF00000002] Progetto di un Impianto fotovoltaico denominato \"Ranteghetta\" e opere connesse.",
-      "proponent": "Sorgenia Renewables S.r.l.",
-      "region": "Puglia",
-      "province": "TA",
-      "municipalities": "TARANTO",
-      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
-      "power_mw": null,
-      "status": "",
-      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11630",
-      "updated_at": "2026-05-01T19:20:36.387478",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "mase"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "[ID_13698 - WEB-ASSVIA - ASVASVF00000002] Progetto di un Impianto fotovoltaico denominato \"Ranteghetta\" e opere connesse."
-      ],
-      "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Oggetti/Info/11630"
-      ],
-      "project_key": "src:1dd6a9f9b4651054"
-    },
-    {
       "source": "lombardia",
       "source_group": "lombardia",
       "source_label": "Lombardia",
@@ -27830,7 +27954,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-05-04T20:12:56.881258",
+      "updated_at": "2026-05-05T15:23:16.172740",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -33280,10 +33404,10 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-05-04T22:16:04",
+    "generated_at": "2026-05-05T17:28:44",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1030,
-    "records_after": 1019,
+    "records_before": 1034,
+    "records_after": 1023,
     "merged_or_removed": 11,
     "accepted_pairs": 11,
     "rejected_pairs": 32,
@@ -33291,8 +33415,8 @@
     "manual_actions": 10,
     "manual_proponent_overrides": 10,
     "manual_excluded_records": 0,
-    "suspicious_rows": 1,
-    "top_projects_excluded_suspicious": 1,
+    "suspicious_rows": 2,
+    "top_projects_excluded_suspicious": 2,
     "project_key_splits": 0,
     "project_key_conflict_groups": 0,
     "version": "v16",
@@ -33314,7 +33438,7 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-05-04T22:16:10",
+      "generated_at": "2026-05-05T17:28:59",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
