@@ -101,6 +101,27 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3B/8] Override manuali localizzazione
+echo ==========================================================
+
+if not exist ".\scripts\manual_location_overrides.py" (
+    echo ERRORE: scripts\manual_location_overrides.py non trovato.
+    echo Copia il file nella cartella scripts e rilancia.
+    pause
+    exit /b 1
+)
+
+".\.venv\Scripts\python.exe" ".\scripts\manual_location_overrides.py" --data ".\reports\site\data.json" --audit ".\reports\manual_location_overrides_audit.csv"
+
+if errorlevel 1 (
+    echo.
+    echo ERRORE: override manuali localizzazione falliti.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [4/8] Sync HTML dopo normalizzazione province
 echo ==========================================================
 
