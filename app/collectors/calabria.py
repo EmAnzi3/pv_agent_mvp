@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import hashlib
 import re
@@ -201,7 +201,7 @@ class CalabriaCollector(BaseCollector):
                 soup = BeautifulSoup(html_page, "html.parser")
                 page_text = self._clean_text(soup.get_text(" ", strip=True))
 
-                # Se la pagina ricerca non contiene più nulla di utile, non insistere sulle pagine successive.
+                # Se la pagina ricerca non contiene piÃ¹ nulla di utile, non insistere sulle pagine successive.
                 if search_url != search_urls[0] and not self._contains_any(page_text, PV_KEYWORDS):
                     continue
 
@@ -340,7 +340,7 @@ class CalabriaCollector(BaseCollector):
         manual_proponent = self._manual_proponent(url, combined)
 
         # Le override manuali sono casi verificati: non li scartiamo per filtri generici
-        # tipo concessioni/demanio, ma li scarteremo comunque se il procedimento è negativo.
+        # tipo concessioni/demanio, ma li scarteremo comunque se il procedimento Ã¨ negativo.
         if not manual_proponent and self._is_excluded(combined):
             return None
 
@@ -366,7 +366,7 @@ class CalabriaCollector(BaseCollector):
         if power_mw is None or power_mw < MIN_POWER_MW:
             return None
 
-        # Senza soggetto/titolare/proponente il record non è lavorabile.
+        # Senza soggetto/titolare/proponente il record non Ã¨ lavorabile.
         if REQUIRE_PROPONENT and not proponent:
             return None
 
@@ -523,14 +523,14 @@ class CalabriaCollector(BaseCollector):
 
     def _extract_proponent(self, text: str) -> str | None:
         patterns = [
-            # Campo più affidabile su Calabria: "Titolare: ..."
-            r"\bTitolare\s*:\s*(.+?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[–-]\s+|$)",
-            r"\bTitolare\s+([A-Z0-9][A-Za-z0-9À-ÿ\.\s&'’\-]{2,180}?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[–-]\s+|$)",
+            # Campo piÃ¹ affidabile su Calabria: "Titolare: ..."
+            r"\bTitolare\s*:\s*(.+?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[â€“-]\s+|$)",
+            r"\bTitolare\s+([A-Z0-9][A-Za-z0-9Ã€-Ã¿\.\s&'â€™\-]{2,180}?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[â€“-]\s+|$)",
 
             # Varianti standard.
-            r"\b(?:Proponente|Richiedente)\s*:\s*(.+?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[–-]\s+|$)",
-            r"\b(?:Proponente|Richiedente)\s+([A-Z0-9][A-Za-z0-9À-ÿ\.\s&'’\-]{2,180}?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[–-]\s+|$)",
-            r"\bSociet[aà]\s+proponente\s*:\s*(.+?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[–-]\s+|$)",
+            r"\b(?:Proponente|Richiedente)\s*:\s*(.+?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[â€“-]\s+|$)",
+            r"\b(?:Proponente|Richiedente)\s+([A-Z0-9][A-Za-z0-9Ã€-Ã¿\.\s&'â€™\-]{2,180}?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[â€“-]\s+|$)",
+            r"\bSociet[aÃ ]\s+proponente\s*:\s*(.+?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[â€“-]\s+|$)",
         ]
 
         for pattern in patterns:
@@ -540,10 +540,10 @@ class CalabriaCollector(BaseCollector):
                 if value:
                     return value
 
-        # Fallback dal titolo: "AGRIPV CASTROVILLARI – Soc. di progetto s.r.l."
+        # Fallback dal titolo: "AGRIPV CASTROVILLARI â€“ Soc. di progetto s.r.l."
         fallback_patterns = [
-            r"\b([A-Z0-9][A-Za-z0-9À-ÿ'’\-\s&]+?)\s+[–-]\s+Soc\.?\s+di\s+progetto\s+s\.?\s*r\.?\s*l\.?",
-            r"\b([A-Z0-9][A-Za-z0-9À-ÿ'’\-\s&]+?)\s+[–-]\s+S\.?\s*R\.?\s*L\.?",
+            r"\b([A-Z0-9][A-Za-z0-9Ã€-Ã¿'â€™\-\s&]+?)\s+[â€“-]\s+Soc\.?\s+di\s+progetto\s+s\.?\s*r\.?\s*l\.?",
+            r"\b([A-Z0-9][A-Za-z0-9Ã€-Ã¿'â€™\-\s&]+?)\s+[â€“-]\s+S\.?\s*R\.?\s*L\.?",
         ]
 
         for pattern in fallback_patterns:
@@ -561,7 +561,7 @@ class CalabriaCollector(BaseCollector):
         value = re.sub(r"\s+Avviso\s*$", "", value, flags=re.IGNORECASE)
         value = re.sub(r"Fri\s*-\s*El", "FRI-EL", value, flags=re.IGNORECASE)
         value = value.replace("S.r.L.", "S.r.l.").replace("S.r.L", "S.r.l.")
-        value = value.strip(" .,:;-–—")
+        value = value.strip(" .,:;-â€“â€”")
 
         # Taglia code residue.
         value = re.split(
@@ -569,17 +569,17 @@ class CalabriaCollector(BaseCollector):
             value,
             maxsplit=1,
             flags=re.IGNORECASE,
-        )[0].strip(" .,:;-–—")
+        )[0].strip(" .,:;-â€“â€”")
 
-        # Normalizza società di progetto se il testo è "AGRI-PV CASTROVILLARI – Soc. di progetto s.r.l."
+        # Normalizza societÃ  di progetto se il testo Ã¨ "AGRI-PV CASTROVILLARI â€“ Soc. di progetto s.r.l."
         value = re.sub(
-            r"\s+[–-]\s+Soc\.?\s+di\s+progetto\s+s\.?\s*r\.?\s*l\.?\s*$",
+            r"\s+[â€“-]\s+Soc\.?\s+di\s+progetto\s+s\.?\s*r\.?\s*l\.?\s*$",
             " Soc. di progetto S.r.l.",
             value,
             flags=re.IGNORECASE,
         )
 
-        # Se è un troncone con " S" ma nel titolo/pagina appare chiaramente "S.r.l.", qui non inventiamo.
+        # Se Ã¨ un troncone con " S" ma nel titolo/pagina appare chiaramente "S.r.l.", qui non inventiamo.
         if not value or len(value) > 140:
             return None
 
@@ -680,19 +680,19 @@ class CalabriaCollector(BaseCollector):
 
         # Cattura tutti i comuni espliciti con provincia tra parentesi.
         for match in re.finditer(
-            r"\b([A-ZÀ-Ý][A-Za-zÀ-ÿ'’\-\s]{2,90}?)\s*\((CZ|CS|KR|RC|VV)\)",
+            r"\b([A-ZÃ€-Ã][A-Za-zÃ€-Ã¿'â€™\-\s]{2,90}?)\s*\((CZ|CS|KR|RC|VV)\)",
             text,
             flags=re.IGNORECASE,
         ):
             add(match.group(1))
 
         patterns = [
-            r"\bComune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aà]|\s+e\s+relative|\s+-\s+|$)",
-            r"\bComuni\s+di\s+(.+?)(?:\.|;|\s+loc\.|\s+localit[aà]|\s+e\s+relative|\s+-\s+|$)",
-            r"\bterritorio\s+comunale\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aà]|\s+e\s+relative|\s+-\s+|$)",
+            r"\bComune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aÃ ]|\s+e\s+relative|\s+-\s+|$)",
+            r"\bComuni\s+di\s+(.+?)(?:\.|;|\s+loc\.|\s+localit[aÃ ]|\s+e\s+relative|\s+-\s+|$)",
+            r"\bterritorio\s+comunale\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aÃ ]|\s+e\s+relative|\s+-\s+|$)",
             r"\bloc\.\s+[^,\.]{1,80}\s+Comune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+-\s+|$)",
-            r"\bda\s+realizzarsi\s+nel\s+Comune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aà]|\s+e\s+relative|\s+-\s+|$)",
-            r"\bdaubicare\s+nel\s+Comune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aà]|\s+e\s+relative|\s+-\s+|$)",
+            r"\bda\s+realizzarsi\s+nel\s+Comune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aÃ ]|\s+e\s+relative|\s+-\s+|$)",
+            r"\bdaubicare\s+nel\s+Comune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aÃ ]|\s+e\s+relative|\s+-\s+|$)",
         ]
 
         for pattern in patterns:
@@ -706,7 +706,7 @@ class CalabriaCollector(BaseCollector):
 
         # Taglia code tecniche/amministrative.
         value = re.split(
-            r"\b(?:localit[aà]|loc\.|strada|provinciale|e\s+relative|opere|connessione|pratica|sistema|sportello|proponente|avviso|paur|comprensivo|infrastrutture|capacità|sistema\s+di\s+accumulo)\b",
+            r"\b(?:localit[aÃ ]|loc\.|strada|provinciale|e\s+relative|opere|connessione|pratica|sistema|sportello|proponente|avviso|paur|comprensivo|infrastrutture|capacitÃ |sistema\s+di\s+accumulo)\b",
             value,
             maxsplit=1,
             flags=re.IGNORECASE,
@@ -755,12 +755,12 @@ class CalabriaCollector(BaseCollector):
         value = self._clean_text(value)
         value = re.sub(r"\((CZ|CS|KR|RC|VV)\)", "", value, flags=re.IGNORECASE)
 
-        # Se dentro il frammento c'è una forma esplicita, tieni solo il comune.
+        # Se dentro il frammento c'Ã¨ una forma esplicita, tieni solo il comune.
         # Esempi:
-        # - "Da Sant’Elia nel Comune di Montebello Jonico" -> "Montebello Jonico"
+        # - "Da Santâ€™Elia nel Comune di Montebello Jonico" -> "Montebello Jonico"
         # - "Ed ubicato nel territorio comunale di Caccuri" -> "Caccuri"
         explicit = re.search(
-            r"\b(?:nel|in|del|della|ubicato\s+nel|ed\s+ubicato\s+nel)?\s*(?:Comune\s+di|territorio\s+comunale\s+di)\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’\-\s]{2,70})",
+            r"\b(?:nel|in|del|della|ubicato\s+nel|ed\s+ubicato\s+nel)?\s*(?:Comune\s+di|territorio\s+comunale\s+di)\s+([A-ZÃ€-Ã][A-Za-zÃ€-Ã¿'â€™\-\s]{2,70})",
             value,
             flags=re.IGNORECASE,
         )
@@ -787,7 +787,7 @@ class CalabriaCollector(BaseCollector):
 
         n = self._normalize_for_match(value)
 
-        # Località/contrade/residui amministrativi, non comuni.
+        # LocalitÃ /contrade/residui amministrativi, non comuni.
         exact_bad = {
             "scalano",
             "sant elia",
@@ -843,7 +843,7 @@ class CalabriaCollector(BaseCollector):
         if "paur" in n or "p a u r" in n or "provvedimento autorizzatorio unico" in n:
             return "PAUR"
         if "verifica di assoggettabilita" in n or "art 19" in n:
-            return "Verifica di Assoggettabilità a VIA"
+            return "Verifica di AssoggettabilitÃ  a VIA"
         if "valutazione di impatto ambientale" in n or " via " in f" {n} ":
             return "VIA"
         if "autorizzazione unica" in n:
@@ -890,9 +890,9 @@ class CalabriaCollector(BaseCollector):
             "manutentore",
             "offerta di lavoro",
             "deposito indennita",
-            "deposito indennità",
+            "deposito indennitÃ ",
             "indennita di espropriazione",
-            "indennità di espropriazione",
+            "indennitÃ  di espropriazione",
             "concessione area demaniale",
             "concessione di un area",
             "tettoia",
@@ -904,7 +904,7 @@ class CalabriaCollector(BaseCollector):
         if any(x in n for x in hard):
             return True
 
-        # Se contiene FV è comunque potenzialmente rilevante, salvo hard exclusions.
+        # Se contiene FV Ã¨ comunque potenzialmente rilevante, salvo hard exclusions.
         if self._contains_any(text, PV_KEYWORDS):
             return False
 
@@ -927,7 +927,7 @@ class CalabriaCollector(BaseCollector):
             "archiviazione dell istanza",
         ]
 
-        # Attenzione: "parere di esclusione dalla VIA" NON è un diniego.
+        # Attenzione: "parere di esclusione dalla VIA" NON Ã¨ un diniego.
         if "parere di esclusione" in n or "esclusione dalla procedura di via" in n:
             return False
 
@@ -963,8 +963,8 @@ class CalabriaCollector(BaseCollector):
     def _normalize_for_match(self, text: str | None) -> str:
         text = self._clean_text(text).lower()
         for src, dst in {
-            "à": "a", "è": "e", "é": "e", "ì": "i", "ò": "o", "ù": "u",
-            "’": "'", "‘": "'", "“": '"', "”": '"',
+            "Ã ": "a", "Ã¨": "e", "Ã©": "e", "Ã¬": "i", "Ã²": "o", "Ã¹": "u",
+            "â€™": "'", "â€˜": "'", "â€œ": '"', "â€": '"',
         }.items():
             text = text.replace(src, dst)
         text = re.sub(r"[^a-z0-9\s'\.-]", " ", text)
