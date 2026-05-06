@@ -521,37 +521,109 @@ class CalabriaCollector(BaseCollector):
 
         return None
 
-    def _extract_proponent(self, text: str) -> str | None:
-        patterns = [
-            # Campo piÃ¹ affidabile su Calabria: "Titolare: ..."
-            r"\bTitolare\s*:\s*(.+?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[â€“-]\s+|$)",
-            r"\bTitolare\s+([A-Z0-9][A-Za-z0-9Ã€-Ã¿\.\s&'â€™\-]{2,180}?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[â€“-]\s+|$)",
 
-            # Varianti standard.
-            r"\b(?:Proponente|Richiedente)\s*:\s*(.+?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[â€“-]\s+|$)",
-            r"\b(?:Proponente|Richiedente)\s+([A-Z0-9][A-Za-z0-9Ã€-Ã¿\.\s&'â€™\-]{2,180}?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[â€“-]\s+|$)",
-            r"\bSociet[aÃ ]\s+proponente\s*:\s*(.+?)(?=\s+(?:Conclusione|Parere|Regione Calabria|Pratica|Sistema Regionale|Calabria SUAP|Sportello|Pubblicato|Data|Codice|Comune|Comuni|Oggetto|Procedura)\b|\s+[â€“-]\s+|$)",
+    def _normalize_proponent_name(self, value: str | None) -> str | None:
+        if not value:
+            return None
+
+        v = re.sub(r"\s+", " ", str(value)).strip()
+        v = v.strip(" .,:;??-")
+
+        # Rimuove indirizzi dopo forma legale.
+        legal_forms = [
+            r"S\.r\.l\.?",
+            r"s\.r\.l\.?",
+            r"SRL",
+            r"Srl",
+            r"S\.p\.A\.?",
+            r"S\.p\.a\.?",
+            r"SPA",
+            r"SpA",
+        ]
+
+        for lf in legal_forms:
+            m = re.search(rf"\b(.+?\b{lf})\b", v, flags=re.IGNORECASE)
+            if m:
+                v = m.group(1).strip(" .,:;??-")
+                break
+
+        # Correzioni canoniche note Calabria.
+        canon = {
+            "fri -el s.p.a": "FRI-EL S.p.A",
+            "fri-el s.p.a": "FRI-EL S.p.A",
+            "fri el s.p.a": "FRI-EL S.p.A",
+            "solux srl": "SOLUX srl",
+            "habemus s.r.l": "Habemus s.r.l",
+            "rwe renewables italia s.r.l": "RWE RENEWABLES ITALIA S.r.l",
+            "go mandorlo s.r.l": "GO MANDORLO S.r.l",
+            "deaway solar energy s.r.l": "DEAWAY SOLAR ENERGY S.r.l",
+            "altomonte solar energy s.r.l": "ALTOMONTE SOLAR ENERGY S.r.l",
+            "sorgenia renewables s.r.l": "SORGENIA RENEWABLES S.R.L",
+            "v-ridium solar calabria 2 s.r.l": "V-RIDIUM SOLAR CALABRIA 2 S.R.L",
+            "tep renewables (schiavonea pv) s.r.l": "TEP Renewables (Schiavonea PV) S.r.l",
+            "sthep sun1 srl": "STHEP SUN1 SRL",
+        }
+
+        key = v.lower().strip(" .,:;??-")
+        return canon.get(key, v)
+
+
+    def _extract_proponent(self, text: str) -> str | None:
+        """
+        Estrae il proponente dai testi Regione Calabria.
+
+        Nota:
+        non usa il punto come delimitatore, perch? troncherebbe forme legali
+        tipo S.r.l., S.p.A., s.r.l.
+        """
+        if not text:
+            return None
+
+        clean = re.sub(r"\s+", " ", str(text)).strip()
+
+        stop = (
+            r"(?="
+            r"\s+-\s+|"
+            r"\s+?\s+|"
+            r"\s+?\s+|"
+            r";|"
+            r"\s+(?:comuni?\s+d.?intervento|valutazione|provvedimento|avviso|pratica|oggetto|relativo|vai\s+al\s+contenuto|regione\s+calabria)\b|"
+            r"$"
+            r")"
+        )
+
+        patterns = [
+            rf"(?:proponente|proponent[e?]|societ[a?]\s+proponente|soggetto\s+proponente|ditta\s+proponente|titolare)\s*[:\-??]\s*(.+?){stop}",
+            rf"(?:proponente|titolare)\s+(.+?){stop}",
         ]
 
         for pattern in patterns:
-            match = re.search(pattern, text, flags=re.IGNORECASE)
-            if match:
-                value = self._clean_proponent(match.group(1))
-                if value:
-                    return value
+            match = re.search(pattern, clean, flags=re.IGNORECASE)
+            if not match:
+                continue
 
-        # Fallback dal titolo: "AGRIPV CASTROVILLARI â€“ Soc. di progetto s.r.l."
-        fallback_patterns = [
-            r"\b([A-Z0-9][A-Za-z0-9Ã€-Ã¿'â€™\-\s&]+?)\s+[â€“-]\s+Soc\.?\s+di\s+progetto\s+s\.?\s*r\.?\s*l\.?",
-            r"\b([A-Z0-9][A-Za-z0-9Ã€-Ã¿'â€™\-\s&]+?)\s+[â€“-]\s+S\.?\s*R\.?\s*L\.?",
-        ]
+            value = match.group(1).strip()
+            value = re.sub(r"\s+", " ", value)
+            value = value.strip(" .,:;??-")
 
-        for pattern in fallback_patterns:
-            match = re.search(pattern, text, flags=re.IGNORECASE)
-            if match:
-                value = self._clean_proponent(match.group(0))
-                if value:
-                    return value
+            # Rimuove prefissi non utili.
+            value = re.sub(
+                r"^(?:ditta|societ[a?]|societa|proponente|titolare)\s+",
+                "",
+                value,
+                flags=re.IGNORECASE,
+            ).strip(" .,:;??-")
+
+            # Taglia eventuali code descrittive senza tagliare S.r.l / S.p.A.
+            value = re.split(
+                r"\s+(?:comuni?\s+d.?intervento|valutazione|provvedimento|avviso|pratica|oggetto|relativo|con\s+potenza|vai\s+al\s+contenuto|regione\s+calabria)\b",
+                value,
+                maxsplit=1,
+                flags=re.IGNORECASE,
+            )[0].strip(" .,:;??-")
+
+            if value and 3 <= len(value) <= 160:
+                return self._normalize_proponent_name(value)
 
         return None
 
@@ -670,36 +742,97 @@ class CalabriaCollector(BaseCollector):
         return None
 
     def _extract_municipalities(self, text: str) -> list[str]:
-        found: list[str] = []
+        """
+        Estrae i comuni dai testi Regione Calabria.
 
-        def add(value: str) -> None:
-            for part in self._split_municipality_part(value):
-                cleaned = self._clean_municipality(part)
-                if cleaned and cleaned not in found:
-                    found.append(cleaned)
+        Versione prudente:
+        - non usa range accentati fragili;
+        - intercetta pattern tipo "Comune di Crotone (KR)";
+        - intercetta elenchi tipo "Crotone (KR), Scandale (KR)";
+        - rimuove prefissi descrittivi.
+        """
+        if not text:
+            return []
 
-        # Cattura tutti i comuni espliciti con provincia tra parentesi.
+        clean = re.sub(r"\s+", " ", str(text)).strip()
+
+        municipalities: list[str] = []
+
+        def add_name(raw: str) -> None:
+            if not raw:
+                return
+
+            name = raw.strip(" .,:;??-()[]")
+
+            # Tiene solo la parte finale utile quando il match prende troppo testo.
+            for sep in [" Comune di ", " comune di ", " Comune del ", " comune del ", " Comune della ", " comune della "]:
+                if sep in name:
+                    name = name.split(sep)[-1]
+
+            name = re.sub(
+                r"^(?:comune|comuni|citta|citt?|territorio|localita|localit?|nel|nei|nella|nelle|del|della|di|ed|e)\s+",
+                "",
+                name,
+                flags=re.IGNORECASE,
+            ).strip(" .,:;??-()[]")
+
+            name = re.sub(r"^(?:di|del|della)\s+", "", name, flags=re.IGNORECASE).strip()
+            name = re.sub(r"\s+", " ", name)
+
+            # Scarta pezzi palesemente non-comune.
+            bad_fragments = [
+                "impianto",
+                "progetto",
+                "potenza",
+                "opere",
+                "connessione",
+                "proponente",
+                "provvedimento",
+                "valutazione",
+                "autorizzatorio",
+                "agrivoltaico",
+                "fotovoltaico",
+                "localit?",
+                "localita",
+            ]
+            low = name.lower()
+            if any(b in low for b in bad_fragments):
+                return
+
+            if len(name) < 3 or len(name) > 80:
+                return
+
+            if name not in municipalities:
+                municipalities.append(name)
+
+        # Pattern principale: qualunque testo ragionevole prima della sigla provincia.
         for match in re.finditer(
-            r"\b([A-ZÃ€-Ã][A-Za-zÃ€-Ã¿'â€™\-\s]{2,90}?)\s*\((CZ|CS|KR|RC|VV)\)",
-            text,
+            r"([^,.;:\n\r]{2,90}?)\s*\((CZ|CS|KR|RC|VV)\)",
+            clean,
             flags=re.IGNORECASE,
         ):
-            add(match.group(1))
+            add_name(match.group(1))
 
-        patterns = [
-            r"\bComune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aÃ ]|\s+e\s+relative|\s+-\s+|$)",
-            r"\bComuni\s+di\s+(.+?)(?:\.|;|\s+loc\.|\s+localit[aÃ ]|\s+e\s+relative|\s+-\s+|$)",
-            r"\bterritorio\s+comunale\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aÃ ]|\s+e\s+relative|\s+-\s+|$)",
-            r"\bloc\.\s+[^,\.]{1,80}\s+Comune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+-\s+|$)",
-            r"\bda\s+realizzarsi\s+nel\s+Comune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aÃ ]|\s+e\s+relative|\s+-\s+|$)",
-            r"\bdaubicare\s+nel\s+Comune\s+di\s+(.+?)(?:\s*\((CZ|CS|KR|RC|VV)\)|,|\.|;|\s+loc\.|\s+localit[aÃ ]|\s+e\s+relative|\s+-\s+|$)",
-        ]
+        # Fallback: "Comune di X" / "Comuni di X e Y" senza sigla provincia.
+        if not municipalities:
+            for match in re.finditer(
+                r"\bComuni?\s+di\s+([^.;:\n\r]{3,160})",
+                clean,
+                flags=re.IGNORECASE,
+            ):
+                chunk = match.group(1)
+                chunk = re.split(
+                    r"\b(?:proponente|potenza|localit[a?]|opere|provvedimento|valutazione|autorizzazione)\b",
+                    chunk,
+                    maxsplit=1,
+                    flags=re.IGNORECASE,
+                )[0]
 
-        for pattern in patterns:
-            for match in re.finditer(pattern, text, flags=re.IGNORECASE):
-                add(match.group(1))
+                parts = re.split(r",|\se\s|\sed\s", chunk)
+                for part in parts:
+                    add_name(part)
 
-        return self._finalize_municipalities(found)[:8]
+        return municipalities
 
     def _split_municipality_part(self, value: str) -> list[str]:
         value = self._clean_text(value)
@@ -1004,3 +1137,4 @@ if __name__ == "__main__":
             "|",
             item.source_url,
         )
+
