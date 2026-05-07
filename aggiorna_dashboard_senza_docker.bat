@@ -142,16 +142,38 @@ if errorlevel 1 (
     exit /b 1
 )
 
+
 echo.
 echo ==========================================================
-echo [4/8] Sync HTML dopo normalizzazione province
+echo [3D/8] Override manuali Sardegna
+echo ==========================================================
+
+if not exist ".\scripts\manual_sardegna_overrides.py" (
+    echo ERRORE: scripts\manual_sardegna_overrides.py non trovato.
+    echo Copia il file nella cartella scripts e rilancia.
+    pause
+    exit /b 1
+)
+
+".\.venv\Scripts\python.exe" ".\scripts\manual_sardegna_overrides.py" --data ".\reports\site\data.json" --audit ".\reports\manual_sardegna_overrides_audit.csv"
+
+if errorlevel 1 (
+    echo.
+    echo ERRORE: override manuali Sardegna falliti.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
+echo [4/8] Sync HTML dopo normalizzazioni e override
 echo ==========================================================
 
 ".\.venv\Scripts\python.exe" -m app.dashboard_data_sync --data ".\reports\site\data.json" --html ".\reports\site\index.html" --no-backup
 
 if errorlevel 1 (
     echo.
-    echo ERRORE: sync HTML dopo normalizzazione province fallito.
+    echo ERRORE: sync HTML dopo normalizzazioni e override fallito.
     pause
     exit /b 1
 )
@@ -205,8 +227,11 @@ echo Report cambiamenti:
 echo reports\change_reports\changes_latest.html
 echo reports\change_reports\changes_latest.csv
 echo.
-echo Audit normalizzazione province:
-echo reports\province_normalization_audit.csv
+echo Audit generati:
+echo - reports\province_normalization_audit.csv
+echo - reports\manual_location_overrides_audit.csv
+echo - reports\manual_calabria_overrides_audit.csv
+echo - reports\manual_sardegna_overrides_audit.csv
 echo.
 echo Ora apri GitHub Desktop, verifica i file modificati, poi fai commit + push manuale.
 echo.

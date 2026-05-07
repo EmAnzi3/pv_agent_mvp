@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-05-06 20:40:01",
-    "snapshot_file": "projects_snapshot_20260506_183938.csv",
-    "total_records": 1044,
-    "punctual_records": 963,
+    "generated_at": "2026-05-07 20:57:28",
+    "snapshot_file": "projects_snapshot_20260507_185706.csv",
+    "total_records": 1048,
+    "punctual_records": 967,
     "terna_records": 81,
-    "total_mw_punctual": 26870.548,
+    "total_mw_punctual": 27037.007,
     "total_mw_terna": 144028.348,
     "source_counts": [
       {
@@ -31,7 +31,7 @@
       {
         "source": "mase_provvedimenti",
         "label": "MASE",
-        "count": 75
+        "count": 78
       },
       {
         "source": "sistema_puglia_energia",
@@ -71,7 +71,7 @@
       {
         "source": "sardegna",
         "label": "Sardegna",
-        "count": 1
+        "count": 2
       },
       {
         "source": "piemonte",
@@ -102,23 +102,23 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 119,
-        "punctual_mw": 4840.59,
+        "punctual_count": 121,
+        "punctual_mw": 4968.04,
         "terna_count": 5,
         "terna_mw": 36621.404,
         "terna_practices": 0,
-        "total_mw": 41461.994,
-        "priority_score": 18.1
+        "total_mw": 41589.444,
+        "priority_score": 18.3
       },
       {
         "region": "Sardegna",
-        "punctual_count": 17,
-        "punctual_mw": 710.941,
+        "punctual_count": 18,
+        "punctual_mw": 730.929,
         "terna_count": 5,
         "terna_mw": 16625.486,
         "terna_practices": 0,
-        "total_mw": 17336.427,
-        "priority_score": 4.9
+        "total_mw": 17356.415,
+        "priority_score": 5.0
       },
       {
         "region": "Lombardia",
@@ -172,13 +172,13 @@
       },
       {
         "region": "Campania",
-        "punctual_count": 18,
-        "punctual_mw": 562.359,
+        "punctual_count": 19,
+        "punctual_mw": 581.38,
         "terna_count": 5,
         "terna_mw": 2907.795,
         "terna_practices": 0,
-        "total_mw": 3470.154,
-        "priority_score": 2.0
+        "total_mw": 3489.175,
+        "priority_score": 2.1
       },
       {
         "region": "Calabria",
@@ -895,13 +895,13 @@
       ]
     },
     "quality": {
-      "punctual_records": 963,
+      "punctual_records": 967,
       "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 8,
       "missing_municipality": 14,
       "missing_url": 0,
-      "province_deduced": 20,
+      "province_deduced": 21,
       "municipalities_deduced": 1
     },
     "quality_by_source": [
@@ -952,7 +952,7 @@
       {
         "source": "mase_provvedimenti",
         "source_label": "MASE",
-        "count": 75,
+        "count": 78,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -1040,13 +1040,13 @@
       {
         "source": "sardegna",
         "source_label": "Sardegna",
-        "count": 1,
+        "count": 2,
         "missing_mw": 0,
         "missing_province": 1,
         "missing_municipality": 1,
-        "province_deduced": 0,
+        "province_deduced": 1,
         "municipalities_deduced": 0,
-        "completeness_pct": 33.3
+        "completeness_pct": 66.7
       },
       {
         "source": "piemonte",
@@ -4660,6 +4660,37 @@
       "project_key": "url:26031077f469a2f2"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico, denominato \"Cspv Foggia\", della potenza di 65,7 MW e delle relative opere di connessione alla RTN, da realizzarsi nel territorio dei comuni di Lucera (FG) e Foggi",
+      "proponent": "Blue Stone Renewable II S.r.l.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "Lucera",
+      "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
+      "power_mw": 65.7,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6100",
+      "updated_at": "2026-05-07T16:51:17.883183",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico, denominato \"Cspv Foggia\", della potenza di 65,7 MW e delle relative opere di connessione alla RTN, da realizzarsi nel territorio dei comuni di Lucera (FG) e Foggi"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6100"
+      ],
+      "project_key": "url:26b1b75b39aeec20"
+    },
+    {
       "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
@@ -5030,6 +5061,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6090"
       ],
       "project_key": "url:e03a13fc681ccb50"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Taranto\",della potenza di 61,75 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Taranto (TA), San Giorgio Ionico (TA), Faggiano (T",
+      "proponent": "X-ELIO TARAS S.r.l.",
+      "region": "Puglia",
+      "province": "TA",
+      "municipalities": "Taranto",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 61.75,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6098",
+      "updated_at": "2026-05-07T16:51:17.883183",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Taranto\",della potenza di 61,75 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Taranto (TA), San Giorgio Ionico (TA), Faggiano (T"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6098"
+      ],
+      "project_key": "url:9f4a56af8844ccc5"
     },
     {
       "source": "sicilia",
@@ -6600,7 +6662,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-05-06T18:05:46.001432",
+      "updated_at": "2026-05-07T18:18:25.018121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -8744,7 +8806,7 @@
       "power_mw": 40.0,
       "status": "",
       "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=917&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-      "updated_at": "2026-05-01T19:12:15.455684",
+      "updated_at": "2026-05-07T16:38:28.427382",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -9838,12 +9900,13 @@
       "_merged_sources": [
         "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
         "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, della potenza di 35,42 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Regalbuto (EN), Loc. Sparagnogna."
       ],
       "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/5843"
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/5843",
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6095"
       ],
       "project_key": "url:edd2b2d910a6333e"
     },
@@ -11881,7 +11944,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-05-06T18:05:46.001432",
+      "updated_at": "2026-05-07T18:18:25.018121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -13183,7 +13246,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-05-06T18:05:46.001432",
+      "updated_at": "2026-05-07T18:18:25.018121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -13479,6 +13542,39 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6075"
       ],
       "project_key": "url:da506837c0abeadf"
+    },
+    {
+      "source": "Sardegna",
+      "source_group": "sardegna",
+      "source_label": "Sardegna",
+      "title": "P.A.U.R. – Realizzazione impianto FV a terra – Potenza 19,988 MWp – Società ENERGY4U S.r.l. Comune di Nuraminis.",
+      "proponent": "Società ENERGY4U S.r.l.",
+      "region": "Sardegna",
+      "province": "SU",
+      "municipalities": [
+        "Nuraminis"
+      ],
+      "project_type": "PAUR",
+      "power_mw": 19.988,
+      "status": "",
+      "url": "https://portal.sardegnasira.it/-/p-a-u-r-realizzazione-impianto-fv-a-terra-potenza-19-988-mwp-societa-energy4u-s-r-l-comune-di-nuramini-1",
+      "updated_at": "2026-05-07T16:46:36.098072",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "sardegna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "P.A.U.R. – Realizzazione impianto FV a terra – Potenza 19,988 MWp – Società ENERGY4U S.r.l. Comune di Nuraminis."
+      ],
+      "_dedupe_urls": [
+        "https://portal.sardegnasira.it/-/p-a-u-r-realizzazione-impianto-fv-a-terra-potenza-19-988-mwp-societa-energy4u-s-r-l-comune-di-nuramini-1"
+      ],
+      "project_key": "prj:60c496bb3a254964"
     },
     {
       "source": "lombardia",
@@ -14138,6 +14234,37 @@
         "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/14437"
       ],
       "project_key": "prj:a6ab78dfa48613d2"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agro-fotovoltaico di potenza complessiva 19,021 MW da realizzarsi su terreni agricoli di superficie complessiva pari a 27,09 ha nel comune di Sessa Aurunca (CE) denominato \"C_023\"",
+      "proponent": "ATON 22 S.r.l.",
+      "region": "Campania",
+      "province": "CE",
+      "municipalities": "Sessa Aurunca",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 19.021,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6097",
+      "updated_at": "2026-05-07T16:51:17.883183",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agro-fotovoltaico di potenza complessiva 19,021 MW da realizzarsi su terreni agricoli di superficie complessiva pari a 27,09 ha nel comune di Sessa Aurunca (CE) denominato \"C_023\""
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6097"
+      ],
+      "project_key": "url:bb3d0f9df540fd1d"
     },
     {
       "source": "veneto",
@@ -19350,7 +19477,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-05-06T18:05:46.001432",
+      "updated_at": "2026-05-07T18:18:25.018121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19598,7 +19725,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-05-06T18:05:46.001432",
+      "updated_at": "2026-05-07T18:18:25.018121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21737,7 +21864,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-05-06T18:05:46.001432",
+      "updated_at": "2026-05-07T18:18:25.018121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -28653,7 +28780,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-05-06T18:07:11.239439",
+      "updated_at": "2026-05-07T18:19:45.401909",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -34103,12 +34230,12 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-05-06T20:40:01",
+    "generated_at": "2026-05-07T20:57:28",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1055,
-    "records_after": 1044,
-    "merged_or_removed": 11,
-    "accepted_pairs": 11,
+    "records_before": 1060,
+    "records_after": 1048,
+    "merged_or_removed": 12,
+    "accepted_pairs": 12,
     "rejected_pairs": 32,
     "field_repairs": 45,
     "manual_actions": 10,
@@ -34137,7 +34264,7 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-05-06T20:40:12",
+      "generated_at": "2026-05-07T20:57:35",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
