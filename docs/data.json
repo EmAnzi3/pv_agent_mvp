@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-05-07 20:57:28",
-    "snapshot_file": "projects_snapshot_20260507_185706.csv",
-    "total_records": 1048,
-    "punctual_records": 967,
+    "generated_at": "2026-05-08 17:30:20",
+    "snapshot_file": "projects_snapshot_20260508_152957.csv",
+    "total_records": 1053,
+    "punctual_records": 972,
     "terna_records": 81,
-    "total_mw_punctual": 27037.007,
+    "total_mw_punctual": 27241.618,
     "total_mw_terna": 144028.348,
     "source_counts": [
       {
@@ -24,14 +24,14 @@
         "count": 95
       },
       {
-        "source": "terna_econnextion",
-        "label": "Terna Econnextion",
+        "source": "mase_provvedimenti",
+        "label": "MASE",
         "count": 81
       },
       {
-        "source": "mase_provvedimenti",
-        "label": "MASE",
-        "count": 78
+        "source": "terna_econnextion",
+        "label": "Terna Econnextion",
+        "count": 81
       },
       {
         "source": "sistema_puglia_energia",
@@ -41,7 +41,7 @@
       {
         "source": "lombardia",
         "label": "Lombardia",
-        "count": 57
+        "count": 59
       },
       {
         "source": "Calabria",
@@ -82,13 +82,13 @@
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 335,
-        "punctual_mw": 10103.402,
+        "punctual_count": 336,
+        "punctual_mw": 10166.632,
         "terna_count": 5,
         "terna_mw": 37390.625,
         "terna_practices": 0,
-        "total_mw": 47494.027,
-        "priority_score": 34.3
+        "total_mw": 47557.257,
+        "priority_score": 34.4
       },
       {
         "region": "Lazio",
@@ -102,13 +102,13 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 121,
-        "punctual_mw": 4968.04,
+        "punctual_count": 123,
+        "punctual_mw": 5089.27,
         "terna_count": 5,
         "terna_mw": 36621.404,
         "terna_practices": 0,
-        "total_mw": 41589.444,
-        "priority_score": 18.3
+        "total_mw": 41710.674,
+        "priority_score": 18.6
       },
       {
         "region": "Sardegna",
@@ -122,13 +122,13 @@
       },
       {
         "region": "Lombardia",
-        "punctual_count": 58,
-        "punctual_mw": 1145.491,
+        "punctual_count": 60,
+        "punctual_mw": 1165.642,
         "terna_count": 4,
         "terna_mw": 3813.708,
         "terna_practices": 0,
-        "total_mw": 4959.199,
-        "priority_score": 4.8
+        "total_mw": 4979.35,
+        "priority_score": 4.9
       },
       {
         "region": "Emilia-Romagna",
@@ -895,11 +895,11 @@
       ]
     },
     "quality": {
-      "punctual_records": 967,
+      "punctual_records": 972,
       "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 8,
-      "missing_municipality": 14,
+      "missing_municipality": 15,
       "missing_url": 0,
       "province_deduced": 21,
       "municipalities_deduced": 1
@@ -939,6 +939,17 @@
         "completeness_pct": 99.3
       },
       {
+        "source": "mase_provvedimenti",
+        "source_label": "MASE",
+        "count": 81,
+        "missing_mw": 0,
+        "missing_province": 0,
+        "missing_municipality": 0,
+        "province_deduced": 0,
+        "municipalities_deduced": 0,
+        "completeness_pct": 100.0
+      },
+      {
         "source": "terna_econnextion",
         "source_label": "Terna Econnextion",
         "count": 81,
@@ -948,17 +959,6 @@
         "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 33.3
-      },
-      {
-        "source": "mase_provvedimenti",
-        "source_label": "MASE",
-        "count": 78,
-        "missing_mw": 0,
-        "missing_province": 0,
-        "missing_municipality": 0,
-        "province_deduced": 0,
-        "municipalities_deduced": 0,
-        "completeness_pct": 100.0
       },
       {
         "source": "sistema_puglia_energia",
@@ -974,13 +974,13 @@
       {
         "source": "lombardia",
         "source_label": "Lombardia",
-        "count": 57,
+        "count": 59,
         "missing_mw": 3,
         "missing_province": 6,
-        "missing_municipality": 7,
+        "missing_municipality": 8,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 90.6
+        "completeness_pct": 90.4
       },
       {
         "source": "Calabria",
@@ -4443,6 +4443,37 @@
       "project_key": "prj:89cef4f960dc4969"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico denominato \"Rocchetta\", di potenza pari a 67 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Rocchetta Sant'Antonio (FG), Candela (FG) e Sant'",
+      "proponent": "ROCCHETTA SOLAR S.R.L.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "Rocchetta Sant'antonio",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 67.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6104",
+      "updated_at": "2026-05-08T15:29:53.979958",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico denominato \"Rocchetta\", di potenza pari a 67 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Rocchetta Sant'Antonio (FG), Candela (FG) e Sant'"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6104"
+      ],
+      "project_key": "url:b144d0ad1e651834"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -4937,6 +4968,37 @@
         "https://regionelazio.box.com/v/VIA-092-2021"
       ],
       "project_key": "url:3b7473bf069263f5"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un Impianto Agrivoltaico della potenza complessiva di 63,23 MWp e relative opere di connessione alla RTN da realizzarsi nei Comuni di Roccapalumba e Vicari in Provincia di Palermo.",
+      "proponent": "Delta Solar S.r.l.",
+      "region": "Sicilia",
+      "province": "PA",
+      "municipalities": "Roccapalumba",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 63.23,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6101",
+      "updated_at": "2026-05-08T15:29:53.979958",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un Impianto Agrivoltaico della potenza complessiva di 63,23 MWp e relative opere di connessione alla RTN da realizzarsi nei Comuni di Roccapalumba e Vicari in Provincia di Palermo."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6101"
+      ],
+      "project_key": "url:8dc66fc7023d5cdd"
     },
     {
       "source": "sistema_puglia_energia",
@@ -5777,6 +5839,37 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11842"
       ],
       "project_key": "url:3549de905dd811a0"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico della potenza di 54,23 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di San Severo (FG)",
+      "proponent": "MYSUN S.r.l.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "San Severo",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 54.23,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6103",
+      "updated_at": "2026-05-08T15:29:53.979958",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico della potenza di 54,23 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di San Severo (FG)"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6103"
+      ],
+      "project_key": "url:a94b07088c316c4a"
     },
     {
       "source": "lazio",
@@ -6662,7 +6755,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-05-07T18:18:25.018121",
+      "updated_at": "2026-05-08T15:20:28.363800",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -9945,7 +10038,7 @@
       "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
-      "title": "Progetto di un impianto fotovoltaico denominato \"Samnium\", di potenza complessiva pari a 35,3 MW e dalle relative opere di connessione alla RTN, situato nei comuni di Candela (FG) e Ascoli Satriano (FG).",
+      "title": "Verifica di Assoggettabilità a VIA (PNIEC-PNRR): Progetto di un impianto fotovoltaico denominato \"Samnium\", di potenza complessiva pari a 35,3 MW e dalle relative opere di connessione alla RTN, situato nei comuni di Candela (FG) e Ascoli Satriano (FG).",
       "proponent": "Samnium Solar S.r.l.",
       "region": "Puglia",
       "province": "FG",
@@ -9961,13 +10054,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "mase"
+        "mase",
+        "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
-        "Progetto di un impianto fotovoltaico denominato \"Samnium\", di potenza complessiva pari a 35,3 MW e dalle relative opere di connessione alla RTN, situato nei comuni di Candela (FG) e Ascoli Satriano (FG)."
+        "Progetto di un impianto fotovoltaico denominato \"Samnium\", di potenza complessiva pari a 35,3 MW e dalle relative opere di connessione alla RTN, situato nei comuni di Candela (FG) e Ascoli Satriano (FG).",
+        "Verifica di Assoggettabilità a VIA (PNIEC-PNRR): Progetto di un impianto fotovoltaico denominato \"Samnium\", di potenza complessiva pari a 35,3 MW e dalle relative opere di connessione alla RTN, situato nei comuni di Candela (FG) e Ascoli Satriano (FG)."
       ],
       "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6102",
         "https://va.mite.gov.it/it-IT/Oggetti/Info/12003"
       ],
       "project_key": "url:423149fb6479d459"
@@ -11944,7 +12040,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-05-07T18:18:25.018121",
+      "updated_at": "2026-05-08T15:20:28.363800",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -13246,7 +13342,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-05-07T18:18:25.018121",
+      "updated_at": "2026-05-08T15:20:28.363800",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -13766,6 +13862,37 @@
         "https://www.regione.calabria.it/bandi/748_cs/"
       ],
       "project_key": "prj:5f65378a51bdb7ab"
+    },
+    {
+      "source": "lombardia",
+      "source_group": "lombardia",
+      "source_label": "Lombardia",
+      "title": "Impianto agrovoltaico denominato “EG DALIA S.R.L.”, di potenza complessiva pari a 19.820,36 kWp in DC e ad una potenza di immissione in AC pari a 16.900 kW. Il progetto sarà localizzato su un terreno agricolo sito nel Comune di Borgocarbonara (MN) nelle località Borgofranco Sul Po",
+      "proponent": "EG DALIA S.R.L.",
+      "region": "Lombardia",
+      "province": "MN",
+      "municipalities": "Borgocarbonara",
+      "project_type": "V.I.A. Provinciali",
+      "power_mw": 19.82,
+      "status": "",
+      "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/20119",
+      "updated_at": "2026-05-08T14:51:38.425954",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lombardia"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrovoltaico denominato “EG DALIA S.R.L.”, di potenza complessiva pari a 19.820,36 kWp in DC e ad una potenza di immissione in AC pari a 16.900 kW. Il progetto sarà localizzato su un terreno agricolo sito nel Comune di Borgocarbonara (MN) nelle località Borgofranco Sul Po"
+      ],
+      "_dedupe_urls": [
+        "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/20119"
+      ],
+      "project_key": "prj:fb15122aef4038e9"
     },
     {
       "source": "lombardia",
@@ -19477,7 +19604,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-05-07T18:18:25.018121",
+      "updated_at": "2026-05-08T15:20:28.363800",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19725,7 +19852,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-05-07T18:18:25.018121",
+      "updated_at": "2026-05-08T15:20:28.363800",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21864,7 +21991,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-05-07T18:18:25.018121",
+      "updated_at": "2026-05-08T15:20:28.363800",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -26906,6 +27033,37 @@
       "project_key": "url:f98958b606273fef"
     },
     {
+      "source": "lombardia",
+      "source_group": "lombardia",
+      "source_label": "Lombardia",
+      "title": "Il progetto prevede la realizzazione di un impianto agrivoltaico installato su terreni agricoli e integrato da una serie di interventi agronomici, volti a favorire la redditività e la produttività dei suoli agricoli, in modo tale da garantire la coesistenza dell’agroecosistema produttivo agricolo con quello industriale derivante dalla produzione di energia elettrica da fonte fotovoltaica. Inoltre, il progetto rispetta i requisiti A+B+C+D indicati all’interno delle “Linee Guida in materia di Impi",
+      "proponent": "EG VIOLA S.R.L.",
+      "region": "Lombardia",
+      "province": "MN",
+      "municipalities": "",
+      "project_type": "V.I.A. Provinciali",
+      "power_mw": 0.331,
+      "status": "",
+      "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/20116",
+      "updated_at": "2026-05-08T14:51:38.425954",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lombardia"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Il progetto prevede la realizzazione di un impianto agrivoltaico installato su terreni agricoli e integrato da una serie di interventi agronomici, volti a favorire la redditività e la produttività dei suoli agricoli, in modo tale da garantire la coesistenza dell’agroecosistema produttivo agricolo con quello industriale derivante dalla produzione di energia elettrica da fonte fotovoltaica. Inoltre, il progetto rispetta i requisiti A+B+C+D indicati all’interno delle “Linee Guida in materia di Impi"
+      ],
+      "_dedupe_urls": [
+        "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/20116"
+      ],
+      "project_key": "prj:b94d540cf8d1fc12"
+    },
+    {
       "source": "sistema_puglia_energia",
       "source_group": "puglia",
       "source_label": "Puglia",
@@ -28780,7 +28938,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-05-07T18:19:45.401909",
+      "updated_at": "2026-05-08T15:21:53.717670",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -34230,13 +34388,13 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-05-07T20:57:28",
+    "generated_at": "2026-05-08T17:30:20",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1060,
-    "records_after": 1048,
-    "merged_or_removed": 12,
-    "accepted_pairs": 12,
-    "rejected_pairs": 32,
+    "records_before": 1066,
+    "records_after": 1053,
+    "merged_or_removed": 13,
+    "accepted_pairs": 13,
+    "rejected_pairs": 34,
     "field_repairs": 45,
     "manual_actions": 10,
     "manual_proponent_overrides": 10,
@@ -34264,7 +34422,7 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-05-07T20:57:35",
+      "generated_at": "2026-05-08T17:30:27",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
