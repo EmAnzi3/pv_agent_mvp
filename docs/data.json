@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-05-08 17:30:20",
-    "snapshot_file": "projects_snapshot_20260508_152957.csv",
-    "total_records": 1053,
-    "punctual_records": 972,
+    "generated_at": "2026-05-11 17:38:36",
+    "snapshot_file": "projects_snapshot_20260511_153747.csv",
+    "total_records": 1056,
+    "punctual_records": 975,
     "terna_records": 81,
-    "total_mw_punctual": 27241.618,
+    "total_mw_punctual": 27310.858,
     "total_mw_terna": 144028.348,
     "source_counts": [
       {
@@ -26,7 +26,7 @@
       {
         "source": "mase_provvedimenti",
         "label": "MASE",
-        "count": 81
+        "count": 83
       },
       {
         "source": "terna_econnextion",
@@ -41,7 +41,7 @@
       {
         "source": "lombardia",
         "label": "Lombardia",
-        "count": 59
+        "count": 60
       },
       {
         "source": "Calabria",
@@ -82,13 +82,13 @@
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 336,
-        "punctual_mw": 10166.632,
+        "punctual_count": 338,
+        "punctual_mw": 10222.312,
         "terna_count": 5,
         "terna_mw": 37390.625,
         "terna_practices": 0,
-        "total_mw": 47557.257,
-        "priority_score": 34.4
+        "total_mw": 47612.937,
+        "priority_score": 34.6
       },
       {
         "region": "Lazio",
@@ -122,13 +122,13 @@
       },
       {
         "region": "Lombardia",
-        "punctual_count": 60,
-        "punctual_mw": 1165.642,
+        "punctual_count": 61,
+        "punctual_mw": 1179.202,
         "terna_count": 4,
         "terna_mw": 3813.708,
         "terna_practices": 0,
-        "total_mw": 4979.35,
-        "priority_score": 4.9
+        "total_mw": 4992.91,
+        "priority_score": 5.0
       },
       {
         "region": "Emilia-Romagna",
@@ -895,10 +895,10 @@
       ]
     },
     "quality": {
-      "punctual_records": 972,
+      "punctual_records": 975,
       "missing_mw": 130,
       "missing_region": 0,
-      "missing_province": 8,
+      "missing_province": 7,
       "missing_municipality": 15,
       "missing_url": 0,
       "province_deduced": 21,
@@ -941,7 +941,7 @@
       {
         "source": "mase_provvedimenti",
         "source_label": "MASE",
-        "count": 81,
+        "count": 83,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -974,24 +974,24 @@
       {
         "source": "lombardia",
         "source_label": "Lombardia",
-        "count": 59,
+        "count": 60,
         "missing_mw": 3,
         "missing_province": 6,
         "missing_municipality": 8,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 90.4
+        "completeness_pct": 90.6
       },
       {
         "source": "Calabria",
         "source_label": "Calabria",
         "count": 17,
         "missing_mw": 0,
-        "missing_province": 1,
+        "missing_province": 0,
         "missing_municipality": 1,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 96.1
+        "completeness_pct": 98.0
       },
       {
         "source": "emilia_romagna",
@@ -6755,7 +6755,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-05-08T15:20:28.363800",
+      "updated_at": "2026-05-11T15:12:13.333707",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -9665,6 +9665,37 @@
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto Agro-Fotovoltaico, denominato \"Ine Scavo\", della potenza complessiva di 37 MWp sito in Località Masseria Pesce nel Comune di Ramacca, prov. Catania, ed opere di connessione nei comuni di",
+      "proponent": "INE Scavo S.r.l.",
+      "region": "Sicilia",
+      "province": "CT",
+      "municipalities": "Ramacca",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 37.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6109",
+      "updated_at": "2026-05-11T15:37:41.772278",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto Agro-Fotovoltaico, denominato \"Ine Scavo\", della potenza complessiva di 37 MWp sito in Località Masseria Pesce nel Comune di Ramacca, prov. Catania, ed opere di connessione nei comuni di"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6109"
+      ],
+      "project_key": "url:b2c71cff93c359b4"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
       "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, di potenza pari a 36,77 MW, sito nel Comune di Enna (EN), in località Mulinello, e delle relative opere di connessione alla RTN, ricadenti anche nel Comune di Assoro (EN)",
       "proponent": "ENNA 3 PV S.R.L.",
       "region": "Sicilia",
@@ -12040,7 +12071,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-05-08T15:20:28.363800",
+      "updated_at": "2026-05-11T15:12:13.333707",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -13342,7 +13373,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-05-08T15:20:28.363800",
+      "updated_at": "2026-05-11T15:12:13.333707",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -14584,6 +14615,37 @@
         "https://regionelazio.app.box.com/s/rcp8ngug2bz65jtx5mvcno7mxsbho1kk"
       ],
       "project_key": "prj:0972f626f6e9b56a"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agro-fotovoltaico denominato \"Polmone\" della potenza di 18,68 MW da realizzarsi nel comune Ramacca (CT) in località Polmone integrato con un sistema di accumulo da 14 MW, e delle relative",
+      "proponent": "Sorgenia Leo S.r.l.",
+      "region": "Sicilia",
+      "province": "CT",
+      "municipalities": "Ramacca",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 18.68,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6108",
+      "updated_at": "2026-05-11T15:37:41.772278",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agro-fotovoltaico denominato \"Polmone\" della potenza di 18,68 MW da realizzarsi nel comune Ramacca (CT) in località Polmone integrato con un sistema di accumulo da 14 MW, e delle relative"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6108"
+      ],
+      "project_key": "url:5efb32904d8466b6"
     },
     {
       "source": "mase_provvedimenti",
@@ -16483,6 +16545,37 @@
         "http://viavas.regione.campania.it/opencms/opencms/VIAVAS/VIA_files_new/Progetti/prg_10159_prot_2026.103673_del_09-02-2026.via"
       ],
       "project_key": "url:c75f5ca9dcc66f78"
+    },
+    {
+      "source": "lombardia",
+      "source_group": "lombardia",
+      "source_label": "Lombardia",
+      "title": "Progetto di un impianto per la produzione di energia elettrica mediante conversione diretta della radiazione solare, tramite l’effetto fotovoltaico del tipo “agrivoltaico” con potenza di picco pari a 13,56 MW da installarsi in Comune di San Giorgio Bigarello (MN).",
+      "proponent": "PACIFICO TOPAZIO S.R.L.; PACIFICO TOPAZIO S.R.L.",
+      "region": "Lombardia",
+      "province": "MN",
+      "municipalities": "San Giorgio Bigarello",
+      "project_type": "V.I.A. Provinciali",
+      "power_mw": 13.56,
+      "status": "",
+      "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/14812",
+      "updated_at": "2026-05-11T15:07:49.632393",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lombardia"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto per la produzione di energia elettrica mediante conversione diretta della radiazione solare, tramite l’effetto fotovoltaico del tipo “agrivoltaico” con potenza di picco pari a 13,56 MW da installarsi in Comune di San Giorgio Bigarello (MN)."
+      ],
+      "_dedupe_urls": [
+        "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/14812"
+      ],
+      "project_key": "prj:20cbeecf81fa1799"
     },
     {
       "source": "lazio",
@@ -18511,13 +18604,13 @@
       "title": "rocedura di Valutazione di Incidenza ai sensi della Direttiva Habitat 92/43/CEE, Direttiva Uccelli 2009/147/CE, DPR 357 97 e smi, DGR n. 65 del 28 febbraio 2022. Progetto di un impianto fotovoltaico flottante, nonché delle relative opere strettamente connesse, di potenza 9.98MWp, denominato \"DIT040 CALUSIA\" Proponente: ENERFLO SRL Parere positivo di Vinca Appropriata",
       "proponent": "Enerflo S.r.l.",
       "region": "Calabria",
-      "province": "",
+      "province": "CZ",
       "municipalities": "",
       "project_type": "Atto ambientale Regione Calabria",
       "power_mw": 9.98,
       "status": "",
       "url": "https://www.regione.calabria.it/provvedimenti-regionali/rocedura-di-valutazione-di-incidenza-ai-sensi-della-direttiva-habitat-92-43-cee-direttiva-uccelli-2009-147-ce-dpr-357-97-e-smi-dgr-n-65-del-28-febbraio-2022-progetto-di-un-impianto-fotovoltaico-f/",
-      "updated_at": "2026-05-05T20:41:13.136023",
+      "updated_at": "2026-05-11T15:32:09.526951",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19604,7 +19697,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-05-08T15:20:28.363800",
+      "updated_at": "2026-05-11T15:12:13.333707",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19852,7 +19945,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-05-08T15:20:28.363800",
+      "updated_at": "2026-05-11T15:12:13.333707",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21991,7 +22084,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-05-08T15:20:28.363800",
+      "updated_at": "2026-05-11T15:12:13.333707",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -28938,7 +29031,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-05-08T15:21:53.717670",
+      "updated_at": "2026-05-11T15:25:16.765306",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -34388,13 +34481,13 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-05-08T17:30:20",
+    "generated_at": "2026-05-11T17:38:36",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1066,
-    "records_after": 1053,
+    "records_before": 1069,
+    "records_after": 1056,
     "merged_or_removed": 13,
     "accepted_pairs": 13,
-    "rejected_pairs": 34,
+    "rejected_pairs": 35,
     "field_repairs": 45,
     "manual_actions": 10,
     "manual_proponent_overrides": 10,
@@ -34422,7 +34515,7 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-05-08T17:30:27",
+      "generated_at": "2026-05-11T17:38:51",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
