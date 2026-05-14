@@ -1,4 +1,4 @@
-@echo off
+﻿@echo off
 setlocal enabledelayedexpansion
 
 REM ==========================================================
@@ -156,6 +156,17 @@ if not exist ".\scripts\manual_sardegna_overrides.py" (
 )
 
 ".\.venv\Scripts\python.exe" ".\scripts\manual_sardegna_overrides.py" --data ".\reports\site\data.json" --audit ".\reports\manual_sardegna_overrides_audit.csv"
+echo.
+echo ==========================================================
+echo [3E/8] Override link Toscana STAR
+echo ==========================================================
+".\.venv\Scripts\python.exe" ".\scripts\manual_toscana_url_overrides.py" --data ".\reports\site\data.json" --audit ".\reports\manual_toscana_url_overrides_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: override link Toscana fallito.
+    pause
+    exit /b 1
+)
 
 if errorlevel 1 (
     echo.
@@ -236,3 +247,4 @@ echo.
 echo Ora apri GitHub Desktop, verifica i file modificati, poi fai commit + push manuale.
 echo.
 pause
+
