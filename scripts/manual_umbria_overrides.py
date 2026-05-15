@@ -56,6 +56,28 @@ def _normalize_merged_sources(value):
     return out, changed
 
 
+def _clean_umbria_proponent(value: str | None) -> str | None:
+    if value is None:
+        return None
+
+    text = str(value).strip()
+
+    prefixes = [
+        "Società ",
+        "Societa ",
+        "società ",
+        "societa ",
+        "Societ? ",
+        "societ? ",
+    ]
+
+    for prefix in prefixes:
+        if text.startswith(prefix):
+            return text[len(prefix):].strip()
+
+    return text
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data", default="reports/site/data.json")
@@ -70,7 +92,7 @@ def main() -> None:
 
     raw = data_path.read_text(encoding="utf-8")
 
-    # Correzione testuale mirata: tocca solo il campo source, non Terna/MASE/URL.
+    # Correzione testuale mirata: tocca solo il campo source.
     raw_fixed, source_text_fixed = SOURCE_UMBRIA_RE.subn(r'\1"Umbria"', raw)
 
     data = json.loads(raw_fixed)
@@ -88,12 +110,11 @@ def main() -> None:
         region = str(r.get("region", "")).strip()
         proponent = str(r.get("proponent", "")).strip().lower()
 
-        # Regione normalizzata, senza cambiare fonti tecniche diverse.
-        if region == "umbria":
+        if region.lower() == "umbria" and region != "Umbria":
             r["region"] = "Umbria"
             region_fixed += 1
 
-        # Salvagente: se qualche run precedente avesse convertito Terna in Umbria, ripristina.
+        # Salvagente: non trasformare Terna in Umbria.
         if source == "Umbria" and proponent == "terna - econnextion":
             r["source"] = "Terna Econnextion"
             source = "Terna Econnextion"
@@ -102,6 +123,11 @@ def main() -> None:
 
         # Solo i record della fonte regionale Umbria devono mostrare Umbria.
         if source_l == "umbria":
+            cleaned_proponent = _clean_umbria_proponent(r.get("proponent"))
+            if cleaned_proponent and cleaned_proponent != r.get("proponent"):
+                r["proponent"] = cleaned_proponent
+                display_fixed += 1
+
             if r.get("source") != "Umbria":
                 r["source"] = "Umbria"
                 display_fixed += 1
@@ -137,7 +163,7 @@ def main() -> None:
 
     print(f"[manual-umbria-overrides] source umbria corretti nel JSON: {source_fixed}")
     print(f"[manual-umbria-overrides] region Umbria corrette: {region_fixed}")
-    print(f"[manual-umbria-overrides] campi display corretti: {display_fixed}")
+    print(f"[manual-umbria-overrides] campi display/proponente corretti: {display_fixed}")
     print(f"[manual-umbria-overrides] _merged_sources corretti: {merged_fixed}")
     print(f"[manual-umbria-overrides] Terna ripristinati: {terna_restored}")
     print(f"[manual-umbria-overrides] audit: {audit_path}")
