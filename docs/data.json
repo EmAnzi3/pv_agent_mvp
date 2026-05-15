@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated_at": "2026-05-14 19:55:13",
-    "snapshot_file": "projects_snapshot_20260514_175421.csv",
-    "total_records": 1068,
-    "punctual_records": 987,
-    "terna_records": 81,
-    "total_mw_punctual": 27849.928,
-    "total_mw_terna": 144028.348,
+    "generated_at": "2026-05-15 11:13:01",
+    "snapshot_file": "projects_snapshot_20260515_091233.csv",
+    "total_records": 1074,
+    "punctual_records": 992,
+    "terna_records": 82,
+    "total_mw_punctual": 27979.452,
+    "total_mw_terna": 144079.108,
     "source_counts": [
       {
         "source": "lazio",
@@ -31,7 +31,7 @@
       {
         "source": "terna_econnextion",
         "label": "Terna Econnextion",
-        "count": 81
+        "count": 82
       },
       {
         "source": "sistema_puglia_energia",
@@ -67,6 +67,11 @@
         "source": "campania",
         "label": "Campania",
         "count": 9
+      },
+      {
+        "source": "umbria",
+        "label": "umbria",
+        "count": 5
       },
       {
         "source": "sardegna",
@@ -154,11 +159,11 @@
         "region": "Toscana",
         "punctual_count": 16,
         "punctual_mw": 579.301,
-        "terna_count": 4,
-        "terna_mw": 4822.064,
+        "terna_count": 5,
+        "terna_mw": 4872.824,
         "terna_practices": 0,
-        "total_mw": 5401.365,
-        "priority_score": 2.3
+        "total_mw": 5452.125,
+        "priority_score": 2.4
       },
       {
         "region": "Veneto",
@@ -201,6 +206,16 @@
         "priority_score": 1.2
       },
       {
+        "region": "Umbria",
+        "punctual_count": 6,
+        "punctual_mw": 140.974,
+        "terna_count": 4,
+        "terna_mw": 873.852,
+        "terna_practices": 0,
+        "total_mw": 1014.826,
+        "priority_score": 0.6
+      },
+      {
         "region": "Molise",
         "punctual_count": 0,
         "punctual_mw": 0,
@@ -219,16 +234,6 @@
         "terna_practices": 0,
         "total_mw": 1174.088,
         "priority_score": 0.5
-      },
-      {
-        "region": "Umbria",
-        "punctual_count": 1,
-        "punctual_mw": 11.45,
-        "terna_count": 4,
-        "terna_mw": 873.852,
-        "terna_practices": 0,
-        "total_mw": 885.302,
-        "priority_score": 0.2
       },
       {
         "region": "Marche",
@@ -888,14 +893,14 @@
       "status_rows": [
         {
           "status": "ND",
-          "mw": 144028.348,
-          "count": 81,
+          "mw": 144079.108,
+          "count": 82,
           "practices": 0
         }
       ]
     },
     "quality": {
-      "punctual_records": 987,
+      "punctual_records": 992,
       "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 7,
@@ -952,10 +957,10 @@
       {
         "source": "terna_econnextion",
         "source_label": "Terna Econnextion",
-        "count": 81,
+        "count": 82,
         "missing_mw": 0,
-        "missing_province": 81,
-        "missing_municipality": 81,
+        "missing_province": 82,
+        "missing_municipality": 82,
         "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 33.3
@@ -1034,6 +1039,17 @@
         "missing_province": 0,
         "missing_municipality": 0,
         "province_deduced": 6,
+        "municipalities_deduced": 0,
+        "completeness_pct": 100.0
+      },
+      {
+        "source": "umbria",
+        "source_label": "umbria",
+        "count": 5,
+        "missing_mw": 0,
+        "missing_province": 0,
+        "missing_municipality": 0,
+        "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 100.0
       },
@@ -6946,7 +6962,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-05-14T17:46:21.638307",
+      "updated_at": "2026-05-15T09:07:36.561060",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -10508,6 +10524,68 @@
       "project_key": "prj:8d060e7833cc680f"
     },
     {
+      "source": "Umbria",
+      "source_group": "umbria",
+      "source_label": "umbria",
+      "title": "\"Progetto per la realizzazione di un impianto agrivoltaico denominato \"Città della Pieve - Agricola Pievese\" della potenza di picco pari a 34.776,00 kWp e potenza di immissione pari a 27.000 kW\" in Loc. Podere Cicerchia nel Comune di Città della Pieve (PG)",
+      "proponent": "Società Greencells Italia S.r.l.",
+      "region": "Umbria",
+      "province": "PG",
+      "municipalities": "Città della Pieve",
+      "project_type": "Verifica di assoggettabilità a VIA",
+      "power_mw": 34.776,
+      "status": "",
+      "url": "https://www.va.regione.umbria.it/web/3852172/1070/-/asset_publisher/dI3c1OTrJk2U/content/94-2025-012?read_more=true",
+      "updated_at": "2026-05-15T08:08:57.850370",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "umbria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "\"Progetto per la realizzazione di un impianto agrivoltaico denominato \"Città della Pieve - Agricola Pievese\" della potenza di picco pari a 34.776,00 kWp e potenza di immissione pari a 27.000 kW\" in Loc. Podere Cicerchia nel Comune di Città della Pieve (PG)"
+      ],
+      "_dedupe_urls": [
+        "https://www.va.regione.umbria.it/web/3852172/1070/-/asset_publisher/dI3c1OTrJk2U/content/94-2025-012?read_more=true"
+      ],
+      "project_key": "url:ab828c6b4a18c8a4"
+    },
+    {
+      "source": "Umbria",
+      "source_group": "umbria",
+      "source_label": "umbria",
+      "title": "P.A.U.R. - \"Progetto definitivo per la realizzazione di un impianto agrivoltaico della potenza di picco pari a 34.600,8 Kwp e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Orvieto e Castel Giorgio (TR)\"",
+      "proponent": "Società ContourGlobal Samas S.r.l.",
+      "region": "Umbria",
+      "province": "TR",
+      "municipalities": "Orvieto, Castel Giorgio",
+      "project_type": "VIA/PAUR",
+      "power_mw": 34.601,
+      "status": "",
+      "url": "https://www.va.regione.umbria.it/web/3852172/1118/-/asset_publisher/dI3c1OTrJk2U/content/93-2025-011?read_more=true",
+      "updated_at": "2026-05-15T08:08:57.850370",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "umbria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "P.A.U.R. - \"Progetto definitivo per la realizzazione di un impianto agrivoltaico della potenza di picco pari a 34.600,8 Kwp e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Orvieto e Castel Giorgio (TR)\""
+      ],
+      "_dedupe_urls": [
+        "https://www.va.regione.umbria.it/web/3852172/1118/-/asset_publisher/dI3c1OTrJk2U/content/93-2025-011?read_more=true"
+      ],
+      "project_key": "url:ee8d9f534a9f6f96"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -10599,6 +10677,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/5883"
       ],
       "project_key": "url:515e96390ec00a3f"
+    },
+    {
+      "source": "Umbria",
+      "source_group": "umbria",
+      "source_label": "umbria",
+      "title": "\"Progetto definitivo per la realizzazione di un impianto agrivoltaico della potenza di picco pari a 33.972,48 Kwp e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Orvieto e Castel Giorgio (TR)\"",
+      "proponent": "Società Ecoener Alfina S.r.l.",
+      "region": "Umbria",
+      "province": "TR",
+      "municipalities": "Orvieto, Castel Giorgio",
+      "project_type": "VIA/PAUR",
+      "power_mw": 33.972,
+      "status": "",
+      "url": "https://www.va.regione.umbria.it/web/3852172/1106/-/asset_publisher/dI3c1OTrJk2U/content/93-2025-008?read_more=true",
+      "updated_at": "2026-05-15T08:08:57.850370",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "umbria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "\"Progetto definitivo per la realizzazione di un impianto agrivoltaico della potenza di picco pari a 33.972,48 Kwp e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Orvieto e Castel Giorgio (TR)\""
+      ],
+      "_dedupe_urls": [
+        "https://www.va.regione.umbria.it/web/3852172/1106/-/asset_publisher/dI3c1OTrJk2U/content/93-2025-008?read_more=true"
+      ],
+      "project_key": "url:27b4b247db6392c0"
     },
     {
       "source": "lazio",
@@ -12324,7 +12433,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-05-14T17:46:21.638307",
+      "updated_at": "2026-05-15T09:07:36.561060",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -13657,7 +13766,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-05-14T17:46:21.638307",
+      "updated_at": "2026-05-15T09:07:36.561060",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -15741,6 +15850,37 @@
         "https://regionelazio.app.box.com/v/VIA-024-2025"
       ],
       "project_key": "url:5755cedfaf79508c"
+    },
+    {
+      "source": "Umbria",
+      "source_group": "umbria",
+      "source_label": "umbria",
+      "title": "Progetto: \"AV1 - Castiglione del Lago Morami, impianto fotovoltaico della potenza di generatore di 16.974,68 kwp sito nel Comune di Castiglione del Lago (PG)\"",
+      "proponent": "Società Agrovolt 01 S.r.l.",
+      "region": "Umbria",
+      "province": "PG",
+      "municipalities": "Castiglione del Lago",
+      "project_type": "Verifica di assoggettabilità a VIA",
+      "power_mw": 16.975,
+      "status": "",
+      "url": "https://www.va.regione.umbria.it/web/3852172/1048/-/asset_publisher/dI3c1OTrJk2U/content/94-2025-007?read_more=true",
+      "updated_at": "2026-05-15T08:08:57.850370",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "umbria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto: \"AV1 - Castiglione del Lago Morami, impianto fotovoltaico della potenza di generatore di 16.974,68 kwp sito nel Comune di Castiglione del Lago (PG)\""
+      ],
+      "_dedupe_urls": [
+        "https://www.va.regione.umbria.it/web/3852172/1048/-/asset_publisher/dI3c1OTrJk2U/content/94-2025-007?read_more=true"
+      ],
+      "project_key": "url:aef7e8cd292fbe8f"
     },
     {
       "source": "veneto",
@@ -19721,6 +19861,37 @@
       "project_key": "prj:329df4e83ca70adf"
     },
     {
+      "source": "Umbria",
+      "source_group": "umbria",
+      "source_label": "umbria",
+      "title": "\"Progetto definitivo di un impianto di produzione di energia da fonte rinnovabile fotovoltaica - a terra con pannelli ad inseguimento solare - insediamento di potenza nominale pari a MWp 9,2 - in area del territorio agricolo idonea ad ospitare l'insediamento - oltre ad impianto di potenza nominale pari a MWp 0,7 al servizio della collettività in compensazione ai sensi dell'All. 2) delle Linee Guida dettate con D.M. 10/09/2010\" nel Comune di Piegaro (PG)",
+      "proponent": "Società Alpicapital Development S.r.l.",
+      "region": "Umbria",
+      "province": "PG",
+      "municipalities": "Piegaro",
+      "project_type": "Verifica di assoggettabilità a VIA",
+      "power_mw": 9.2,
+      "status": "",
+      "url": "https://www.va.regione.umbria.it/web/3852172/1000/-/asset_publisher/dI3c1OTrJk2U/content/94-2025-011?read_more=true",
+      "updated_at": "2026-05-15T08:08:57.850370",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "umbria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "\"Progetto definitivo di un impianto di produzione di energia da fonte rinnovabile fotovoltaica - a terra con pannelli ad inseguimento solare - insediamento di potenza nominale pari a MWp 9,2 - in area del territorio agricolo idonea ad ospitare l'insediamento - oltre ad impianto di potenza nominale pari a MWp 0,7 al servizio della collettività in compensazione ai sensi dell'All. 2) delle Linee Guida dettate con D.M. 10/09/2010\" nel Comune di Piegaro (PG)"
+      ],
+      "_dedupe_urls": [
+        "https://www.va.regione.umbria.it/web/3852172/1000/-/asset_publisher/dI3c1OTrJk2U/content/94-2025-011?read_more=true"
+      ],
+      "project_key": "url:272fb6a00dcdb3b1"
+    },
+    {
       "source": "lombardia",
       "source_group": "lombardia",
       "source_label": "Lombardia",
@@ -20074,7 +20245,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-05-14T17:46:21.638307",
+      "updated_at": "2026-05-15T09:07:36.561060",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -20322,7 +20493,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-05-14T17:46:21.638307",
+      "updated_at": "2026-05-15T09:07:36.561060",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21026,7 +21197,7 @@
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
-      "title": "Determinazione n° G16138 del 28/11/2025 – Favorevole con Prescrizioni Impianto Fotovoltaico Tamarigi della potenza nominale di 7566 kWp con connessione alla RTN",
+      "title": "Provvedimento Autorizzatorio Unico Regionale n° G06559 del 15/05/2026 Determinazione n° G16138 del 28/11/2025 – Favorevole con Prescrizioni Impianto Fotovoltaico Tamarigi della potenza nominale di 7566 kWp con connessione alla RTN",
       "proponent": "NEWCO SOLAR SRL",
       "region": "Lazio",
       "province": "RM",
@@ -21035,7 +21206,7 @@
       "power_mw": 7.566,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2023",
-      "updated_at": "2026-05-01T19:18:12.958879",
+      "updated_at": "2026-05-15T08:03:57.510082",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21046,7 +21217,7 @@
       ],
       "_dedupe_group_size": 1,
       "_dedupe_titles": [
-        "Determinazione n° G16138 del 28/11/2025 – Favorevole con Prescrizioni Impianto Fotovoltaico Tamarigi della potenza nominale di 7566 kWp con connessione alla RTN"
+        "Provvedimento Autorizzatorio Unico Regionale n° G06559 del 15/05/2026 Determinazione n° G16138 del 28/11/2025 – Favorevole con Prescrizioni Impianto Fotovoltaico Tamarigi della potenza nominale di 7566 kWp con connessione alla RTN"
       ],
       "_dedupe_urls": [
         "https://regionelazio.app.box.com/v/VIA-108-2023"
@@ -22461,7 +22632,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-05-14T17:46:21.638307",
+      "updated_at": "2026-05-15T09:07:36.561060",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29409,7 +29580,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-05-14T17:46:30.998956",
+      "updated_at": "2026-05-15T09:09:00.713237",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -34021,6 +34192,37 @@
       "source": "terna_econnextion",
       "source_group": "terna_econnextion",
       "source_label": "Terna Econnextion",
+      "title": "Terna Econnextion - Toscana - Solare - STMD/Contratti",
+      "proponent": "Terna - Econnextion",
+      "region": "Toscana",
+      "province": "",
+      "municipalities": "",
+      "project_type": "Richieste di connessione Terna - dato aggregato",
+      "power_mw": 50.76,
+      "status": "",
+      "url": "https://dati.terna.it/download-center#terna_econnextion_2026_05_toscana_solare_stmd_contratti",
+      "updated_at": "2026-05-15T08:50:24.103094",
+      "numero_pratiche": 0,
+      "is_terna": true,
+      "is_punctual": false,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "terna_econnextion"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Terna Econnextion - Toscana - Solare - STMD/Contratti"
+      ],
+      "_dedupe_urls": [
+        "https://dati.terna.it/download-center#terna_econnextion_2026_05_toscana_solare_stmd_contratti"
+      ],
+      "project_key": "agg:terna:db1463a008db2e59"
+    },
+    {
+      "source": "terna_econnextion",
+      "source_group": "terna_econnextion",
+      "source_label": "Terna Econnextion",
       "title": "Terna Econnextion - Marche - Solare - Progetti in valutazione",
       "proponent": "Terna - Econnextion",
       "region": "Marche",
@@ -34859,13 +35061,13 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-05-14T19:55:14",
+    "generated_at": "2026-05-15T11:13:01",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1085,
-    "records_after": 1068,
+    "records_before": 1091,
+    "records_after": 1074,
     "merged_or_removed": 17,
     "accepted_pairs": 17,
-    "rejected_pairs": 39,
+    "rejected_pairs": 40,
     "field_repairs": 46,
     "manual_actions": 10,
     "manual_proponent_overrides": 10,
@@ -34893,7 +35095,7 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-05-14T19:55:29",
+      "generated_at": "2026-05-15T11:13:13",
       "targets": 0,
       "recovered": 0,
       "failed": 0,

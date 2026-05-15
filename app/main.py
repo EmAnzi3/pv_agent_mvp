@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 import logging
@@ -20,6 +20,7 @@ from app.collectors.toscana import ToscanaCollector
 from app.collectors.piemonte import PiemonteCollector
 from app.collectors.campania import CampaniaCollector
 from app.collectors.calabria import CalabriaCollector
+from app.collectors.umbria import UmbriaCollector
 from app.collectors.mase import MaseCollector
 from app.collectors.mase_provvedimenti import MaseProvvedimentiCollector
 from app.collectors.terna_econnextion import TernaEconnextionCollector
@@ -52,6 +53,7 @@ COLLECTORS = [
     PiemonteCollector,
     CampaniaCollector,
     CalabriaCollector,
+    UmbriaCollector,
     MaseCollector,
     MaseProvvedimentiCollector,
     TernaEconnextionCollector,
@@ -139,18 +141,45 @@ def run_once() -> None:
     try:
         pipeline = IngestionPipeline(db)
 
+        failed_collectors: list[str] = []
+
         for collector_cls in COLLECTORS:
             collector = collector_cls()
             logger.info("Esecuzione collector: %s", collector.source_name)
 
-            results = collector.fetch()
-            summary = pipeline.process_collector_results(
-                collector.source_name,
-                collector.base_url,
-                results,
-            )
+            try:
+                results = collector.fetch()
+            except Exception as exc:
+                failed_collectors.append(collector.source_name)
+                logger.exception(
+                    "Collector %s fallito: %s. La pipeline prosegue con le altre fonti.",
+                    collector.source_name,
+                    exc,
+                )
+                continue
+
+            try:
+                summary = pipeline.process_collector_results(
+                    collector.source_name,
+                    collector.base_url,
+                    results,
+                )
+            except Exception as exc:
+                failed_collectors.append(collector.source_name)
+                logger.exception(
+                    "Ingestion fallita per collector %s: %s. La pipeline prosegue con le altre fonti.",
+                    collector.source_name,
+                    exc,
+                )
+                continue
 
             logger.info("Summary %s", summary)
+
+        if failed_collectors:
+            logger.warning(
+                "Run completato con collector falliti/skippati: %s",
+                ", ".join(failed_collectors),
+            )
 
         # Mantiene una sola terna CSV finale anche se il builder viene richiamato piÃ¹ volte.
         clean_csv_reports_only()
