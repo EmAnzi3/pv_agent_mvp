@@ -3,8 +3,12 @@
 import argparse
 import csv
 import json
+import re
 from datetime import datetime
 from pathlib import Path
+
+
+SOURCE_UMBRIA_RE = re.compile(r'("source"\s*:\s*)"umbria"', flags=re.IGNORECASE)
 
 
 def _records_container(data):
@@ -46,32 +50,30 @@ def main() -> None:
     if not data_path.exists():
         raise SystemExit(f"[manual-umbria-overrides] ERRORE: file non trovato: {data_path}")
 
-    data = json.loads(data_path.read_text(encoding="utf-8"))
+    raw = data_path.read_text(encoding="utf-8")
+
+    # Correzione testuale mirata: tocca solo il campo source, non Terna/MASE/URL.
+    raw_fixed, source_text_fixed = SOURCE_UMBRIA_RE.subn(r'\1"Umbria"', raw)
+
+    data = json.loads(raw_fixed)
     records = _records_container(data)
 
-    source_fixed = 0
+    source_fixed = source_text_fixed
     region_fixed = 0
     terna_restored = 0
 
     for r in records:
         source = str(r.get("source", "")).strip()
-        source_l = source.lower()
-        region_l = str(r.get("region", "")).strip().lower()
-        proponent_l = str(r.get("proponent", "")).strip().lower()
+        region = str(r.get("region", "")).strip()
+        proponent = str(r.get("proponent", "")).strip().lower()
 
-        # Corregge SOLO la fonte tecnica Umbria minuscola.
-        # Non tocca Terna, MASE o altre fonti con region = Umbria.
-        if source_l == "umbria" and source != "Umbria":
-            r["source"] = "Umbria"
-            source_fixed += 1
-
-        # La regione invece può essere normalizzata senza rischio.
-        if region_l == "umbria" and r.get("region") != "Umbria":
+        # Regione normalizzata, senza cambiare la fonte tecnica.
+        if region == "umbria":
             r["region"] = "Umbria"
             region_fixed += 1
 
-        # Ripristina eventuali record Terna corrotti dal precedente override.
-        if source == "Umbria" and proponent_l == "terna - econnextion":
+        # Salvagente: se qualche run precedente avesse convertito Terna in Umbria, ripristina.
+        if source == "Umbria" and proponent == "terna - econnextion":
             r["source"] = "Terna Econnextion"
             terna_restored += 1
 
@@ -83,13 +85,13 @@ def main() -> None:
         "action": "normalize_umbria_source_safe",
         "data_path": str(data_path),
         "details": (
-            f"source_fixed={source_fixed}; "
+            f"source_text_fixed={source_fixed}; "
             f"region_fixed={region_fixed}; "
             f"terna_restored={terna_restored}"
         ),
     }])
 
-    print(f"[manual-umbria-overrides] source Umbria corretti: {source_fixed}")
+    print(f"[manual-umbria-overrides] source umbria corretti nel JSON: {source_fixed}")
     print(f"[manual-umbria-overrides] region Umbria corrette: {region_fixed}")
     print(f"[manual-umbria-overrides] Terna ripristinati: {terna_restored}")
     print(f"[manual-umbria-overrides] audit: {audit_path}")
