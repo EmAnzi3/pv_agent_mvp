@@ -38,6 +38,24 @@ def _write_audit(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
+def _normalize_merged_sources(value):
+    if not isinstance(value, list):
+        return value, 0
+
+    changed = 0
+    out = []
+
+    for item in value:
+        if isinstance(item, str) and item.strip().lower() == "umbria":
+            out.append("Umbria")
+            if item != "Umbria":
+                changed += 1
+        else:
+            out.append(item)
+
+    return out, changed
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data", default="reports/site/data.json")
@@ -60,14 +78,17 @@ def main() -> None:
 
     source_fixed = source_text_fixed
     region_fixed = 0
+    display_fixed = 0
+    merged_fixed = 0
     terna_restored = 0
 
     for r in records:
         source = str(r.get("source", "")).strip()
+        source_l = source.lower()
         region = str(r.get("region", "")).strip()
         proponent = str(r.get("proponent", "")).strip().lower()
 
-        # Regione normalizzata, senza cambiare la fonte tecnica.
+        # Regione normalizzata, senza cambiare fonti tecniche diverse.
         if region == "umbria":
             r["region"] = "Umbria"
             region_fixed += 1
@@ -75,24 +96,49 @@ def main() -> None:
         # Salvagente: se qualche run precedente avesse convertito Terna in Umbria, ripristina.
         if source == "Umbria" and proponent == "terna - econnextion":
             r["source"] = "Terna Econnextion"
+            source = "Terna Econnextion"
+            source_l = "terna econnextion"
             terna_restored += 1
+
+        # Solo i record della fonte regionale Umbria devono mostrare Umbria.
+        if source_l == "umbria":
+            if r.get("source") != "Umbria":
+                r["source"] = "Umbria"
+                display_fixed += 1
+
+            if r.get("source_label") != "Umbria":
+                r["source_label"] = "Umbria"
+                display_fixed += 1
+
+            if r.get("source_group") != "Umbria":
+                r["source_group"] = "Umbria"
+                display_fixed += 1
+
+            merged, n = _normalize_merged_sources(r.get("_merged_sources"))
+            if n:
+                r["_merged_sources"] = merged
+                merged_fixed += n
 
     data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
     timestamp = datetime.now().isoformat(timespec="seconds")
     _write_audit(audit_path, [{
         "timestamp": timestamp,
-        "action": "normalize_umbria_source_safe",
+        "action": "normalize_umbria_source_display_safe",
         "data_path": str(data_path),
         "details": (
             f"source_text_fixed={source_fixed}; "
             f"region_fixed={region_fixed}; "
+            f"display_fixed={display_fixed}; "
+            f"merged_fixed={merged_fixed}; "
             f"terna_restored={terna_restored}"
         ),
     }])
 
     print(f"[manual-umbria-overrides] source umbria corretti nel JSON: {source_fixed}")
     print(f"[manual-umbria-overrides] region Umbria corrette: {region_fixed}")
+    print(f"[manual-umbria-overrides] campi display corretti: {display_fixed}")
+    print(f"[manual-umbria-overrides] _merged_sources corretti: {merged_fixed}")
     print(f"[manual-umbria-overrides] Terna ripristinati: {terna_restored}")
     print(f"[manual-umbria-overrides] audit: {audit_path}")
 
