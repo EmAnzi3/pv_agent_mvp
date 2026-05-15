@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-05-15 11:13:01",
-    "snapshot_file": "projects_snapshot_20260515_091233.csv",
-    "total_records": 1089,
-    "punctual_records": 1007,
+    "generated_at": "2026-05-16 00:34:59",
+    "snapshot_file": "projects_snapshot_20260515_223408.csv",
+    "total_records": 1092,
+    "punctual_records": 1010,
     "terna_records": 82,
-    "total_mw_punctual": 28280.033,
+    "total_mw_punctual": 28407.401,
     "total_mw_terna": 144079.108,
     "source_counts": [
       {
@@ -26,7 +26,7 @@
       {
         "source": "mase_provvedimenti",
         "label": "MASE",
-        "count": 90
+        "count": 92
       },
       {
         "source": "terna_econnextion",
@@ -76,7 +76,7 @@
       {
         "source": "Umbria",
         "label": "Umbria",
-        "count": 5
+        "count": 6
       },
       {
         "source": "Sardegna",
@@ -92,13 +92,13 @@
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 340,
-        "punctual_mw": 10329.832,
+        "punctual_count": 341,
+        "punctual_mw": 10380.152,
         "terna_count": 5,
         "terna_mw": 37390.625,
         "terna_practices": 0,
-        "total_mw": 47720.457,
-        "priority_score": 30.7
+        "total_mw": 47770.777,
+        "priority_score": 34.9
       },
       {
         "region": "Lazio",
@@ -108,7 +108,7 @@
         "terna_mw": 6377.438,
         "terna_practices": 0,
         "total_mw": 12634.143,
-        "priority_score": 25.8
+        "priority_score": 23.8
       },
       {
         "region": "Puglia",
@@ -118,37 +118,7 @@
         "terna_mw": 36621.404,
         "terna_practices": 0,
         "total_mw": 41723.341,
-        "priority_score": 12.5
-      },
-      {
-        "region": "Lombardia",
-        "punctual_count": 62,
-        "punctual_mw": 1247.042,
-        "terna_count": 4,
-        "terna_mw": 3813.708,
-        "terna_practices": 0,
-        "total_mw": 5060.75,
-        "priority_score": 5.0
-      },
-      {
-        "region": "Emilia-Romagna",
-        "punctual_count": 23,
-        "punctual_mw": 1207.788,
-        "terna_count": 5,
-        "terna_mw": 7389.648,
-        "terna_practices": 0,
-        "total_mw": 8597.436,
-        "priority_score": 2.6
-      },
-      {
-        "region": "Basilicata",
-        "punctual_count": 29,
-        "punctual_mw": 678.527,
-        "terna_count": 5,
-        "terna_mw": 11174.832,
-        "terna_practices": 0,
-        "total_mw": 11853.359,
-        "priority_score": 2.4
+        "priority_score": 18.6
       },
       {
         "region": "Sardegna",
@@ -158,27 +128,37 @@
         "terna_mw": 16625.486,
         "terna_practices": 0,
         "total_mw": 17439.715,
-        "priority_score": 2.0
+        "priority_score": 5.1
       },
       {
-        "region": "Campania",
-        "punctual_count": 20,
-        "punctual_mw": 636.64,
-        "terna_count": 5,
-        "terna_mw": 2907.795,
+        "region": "Lombardia",
+        "punctual_count": 62,
+        "punctual_mw": 1247.042,
+        "terna_count": 4,
+        "terna_mw": 3813.708,
         "terna_practices": 0,
-        "total_mw": 3544.435,
-        "priority_score": 1.8
+        "total_mw": 5060.75,
+        "priority_score": 5.1
       },
       {
-        "region": "Calabria",
-        "punctual_count": 19,
-        "punctual_mw": 592.847,
+        "region": "Basilicata",
+        "punctual_count": 29,
+        "punctual_mw": 678.527,
         "terna_count": 5,
-        "terna_mw": 2109.165,
+        "terna_mw": 11174.832,
         "terna_practices": 0,
-        "total_mw": 2702.012,
-        "priority_score": 1.7
+        "total_mw": 11853.359,
+        "priority_score": 4.4
+      },
+      {
+        "region": "Emilia-Romagna",
+        "punctual_count": 23,
+        "punctual_mw": 1207.788,
+        "terna_count": 5,
+        "terna_mw": 7389.648,
+        "terna_practices": 0,
+        "total_mw": 8597.436,
+        "priority_score": 3.8
       },
       {
         "region": "Toscana",
@@ -188,7 +168,17 @@
         "terna_mw": 4872.824,
         "terna_practices": 0,
         "total_mw": 5452.125,
-        "priority_score": 1.5
+        "priority_score": 2.4
+      },
+      {
+        "region": "Campania",
+        "punctual_count": 21,
+        "punctual_mw": 658.14,
+        "terna_count": 5,
+        "terna_mw": 2907.795,
+        "terna_practices": 0,
+        "total_mw": 3565.935,
+        "priority_score": 2.3
       },
       {
         "region": "Veneto",
@@ -198,7 +188,17 @@
         "terna_mw": 5824.998,
         "terna_practices": 0,
         "total_mw": 6242.148,
-        "priority_score": 1.2
+        "priority_score": 2.2
+      },
+      {
+        "region": "Calabria",
+        "punctual_count": 19,
+        "punctual_mw": 592.846,
+        "terna_count": 5,
+        "terna_mw": 2109.165,
+        "terna_practices": 0,
+        "total_mw": 2702.011,
+        "priority_score": 2.0
       },
       {
         "region": "Piemonte",
@@ -208,16 +208,26 @@
         "terna_mw": 3779.861,
         "terna_practices": 0,
         "total_mw": 3939.903,
-        "priority_score": 0.5
+        "priority_score": 1.2
       },
       {
         "region": "Umbria",
-        "punctual_count": 6,
-        "punctual_mw": 140.974,
+        "punctual_count": 7,
+        "punctual_mw": 196.524,
         "terna_count": 4,
         "terna_mw": 873.852,
         "terna_practices": 0,
-        "total_mw": 1014.826,
+        "total_mw": 1070.376,
+        "priority_score": 0.7
+      },
+      {
+        "region": "Molise",
+        "punctual_count": 0,
+        "punctual_mw": 0,
+        "terna_count": 5,
+        "terna_mw": 2610.18,
+        "terna_practices": 0,
+        "total_mw": 2610.18,
         "priority_score": 0.5
       },
       {
@@ -228,7 +238,7 @@
         "terna_mw": 1077.07,
         "terna_practices": 0,
         "total_mw": 1174.088,
-        "priority_score": 0.3
+        "priority_score": 0.5
       },
       {
         "region": "Marche",
@@ -238,32 +248,22 @@
         "terna_mw": 204.93,
         "terna_practices": 0,
         "total_mw": 224.93,
-        "priority_score": 0.1
-      },
-      {
-        "region": "Molise",
-        "punctual_count": 0,
-        "punctual_mw": 0.0,
-        "terna_count": 5,
-        "terna_mw": 2610.18,
-        "terna_practices": 0,
-        "total_mw": 2610.18,
-        "priority_score": 0.0
+        "priority_score": 0.2
       },
       {
         "region": "Abruzzo",
         "punctual_count": 0,
-        "punctual_mw": 0.0,
+        "punctual_mw": 0,
         "terna_count": 4,
         "terna_mw": 425.209,
         "terna_practices": 0,
         "total_mw": 425.209,
-        "priority_score": 0.0
+        "priority_score": 0.1
       },
       {
         "region": "Liguria",
         "punctual_count": 0,
-        "punctual_mw": 0.0,
+        "punctual_mw": 0,
         "terna_count": 1,
         "terna_mw": 0.083,
         "terna_practices": 0,
@@ -892,939 +892,6 @@
           "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1041&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
         ],
         "project_key": "prj:ed57b4c4dd18ce3c"
-      },
-      {
-        "source": "lazio",
-        "source_group": "lazio",
-        "source_label": "Lazio",
-        "title": "Provvedimento Autorizzatorio Unico Regionale n° G103374 del 06/08/2025 Determinazione n°G07585 del 16/06/2025 Favorevole con prescrizioni Provvedimento Autorizzatorio Unico Regionale n° G01996 del 24/02/2022 Determinazione n° G00685 del 26/01/2022 Negativo – - Realizzazione di impianto fotovoltaico a terra della potenza di picco pari a 139,56 MWp e potenza di immissione pari a 110MW in loc. Sugarella",
-        "proponent": "ATLANTE SRL",
-        "region": "Lazio",
-        "province": "VT",
-        "municipalities": "Canino",
-        "project_type": "VIA",
-        "power_mw": 139.56,
-        "status": "",
-        "url": "https://regionelazio.app.box.com/v/VIA-106-2020",
-        "updated_at": "2026-05-01T19:18:12.958879",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "lazio"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Provvedimento Autorizzatorio Unico Regionale n° G103374 del 06/08/2025 Determinazione n°G07585 del 16/06/2025 Favorevole con prescrizioni Provvedimento Autorizzatorio Unico Regionale n° G01996 del 24/02/2022 Determinazione n° G00685 del 26/01/2022 Negativo – - Realizzazione di impianto fotovoltaico a terra della potenza di picco pari a 139,56 MWp e potenza di immissione pari a 110MW in loc. Sugarella"
-        ],
-        "_dedupe_urls": [
-          "https://regionelazio.app.box.com/v/VIA-106-2020"
-        ],
-        "project_key": "url:84f856b1a51e4bb6"
-      },
-      {
-        "source": "sicilia",
-        "source_group": "sicilia",
-        "source_label": "Sicilia",
-        "title": "IMPIANTO FOTOVOLTAICO DA 130 MW DENOMINATO \"GRECALE\" IN MAZARA DEL VALLO (TP).",
-        "proponent": "ALTA CAPITAL 1 S.R.L.",
-        "region": "Sicilia",
-        "province": "TP",
-        "municipalities": "Mazara del Vallo",
-        "project_type": "V.I.A. (art.23 - 27bis)",
-        "power_mw": 130.0,
-        "status": "",
-        "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1032&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-        "updated_at": "2026-05-01T19:12:15.455684",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sicilia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "IMPIANTO FOTOVOLTAICO DA 130 MW DENOMINATO \"GRECALE\" IN MAZARA DEL VALLO (TP)."
-        ],
-        "_dedupe_urls": [
-          "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1032&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-        ],
-        "project_key": "prj:13e30a46e445e94a"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Bordonaro\", della potenza di 130 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Gangi (PA), Enna (EN), Calascibetta (E",
-        "proponent": "Alta Capital 12 S.r.l.",
-        "region": "Sicilia",
-        "province": "PA",
-        "municipalities": "GANGI",
-        "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
-        "power_mw": 130.0,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9254",
-        "updated_at": "2026-05-12T14:42:16.195939",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase",
-          "mase_provvedimenti"
-        ],
-        "_dedupe_group_size": 2,
-        "_dedupe_titles": [
-          "Progetto di un impianto agrivoltaico denominato \"Bordonaro\", della potenza di 130 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Gangi (PA), Enna (EN), Calascibetta (EN) e Villarosa (EN).",
-          "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Bordonaro\", della potenza di 130 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Gangi (PA), Enna (EN), Calascibetta (E"
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/5967",
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/9254"
-        ],
-        "project_key": "url:d4d325cc679aaab0"
-      },
-      {
-        "source": "sicilia",
-        "source_group": "sicilia",
-        "source_label": "Sicilia",
-        "title": "REALIZZAZIONE ED ESERCIZIO DI UN IMPIANTO FOTOVOLTAICO DELLA POTENZA COMPLESSIVA DI 130.000 KWP IN AC E DI 155.000 KWP IN DC E DI TUTTE LE RELATIVE OPERE CONNESSE ED INFRASTRUTTURE, DA REALIZZARSI NEI COMUNI DI MONREALE (PA) E DI CAMPOREALE (PA)",
-        "proponent": "IPOMEA SOL SRL",
-        "region": "Sicilia",
-        "province": "PA",
-        "municipalities": "Monreale, Camporeale",
-        "project_type": "V.I.A. (art.23 - 27bis)",
-        "power_mw": 130.0,
-        "status": "",
-        "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=836&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-        "updated_at": "2026-05-01T19:12:15.455684",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sicilia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "REALIZZAZIONE ED ESERCIZIO DI UN IMPIANTO FOTOVOLTAICO DELLA POTENZA COMPLESSIVA DI 130.000 KWP IN AC E DI 155.000 KWP IN DC E DI TUTTE LE RELATIVE OPERE CONNESSE ED INFRASTRUTTURE, DA REALIZZARSI NEI COMUNI DI MONREALE (PA) E DI CAMPOREALE (PA)"
-        ],
-        "_dedupe_urls": [
-          "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=836&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-        ],
-        "project_key": "prj:dfc83a4241bd235f"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Adeguamento tecnico per modifica del modello di pannello solare e delle strutture di sostegno per il progetto di un impianto fotovoltaico denominato \"Apricena Industriale\" da realizzarsi su aree industriali e cave nelle località \"Podere Camilli - Tufara - San Giovanni - San Sabino\", nel territorio comunale di Apricena (FG) con riduzione di potenza complessiva da 121,023 MWp e immissione di 96,30MW ad una potenza complessiva di 115,318 MWp e immissione di 96,30MW",
-        "proponent": "AM ENERGY S.R.L.",
-        "region": "Puglia",
-        "province": "FG",
-        "municipalities": "TARANTO, FOGGIA",
-        "project_type": "Fotovoltaico",
-        "power_mw": 121.023,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11919",
-        "updated_at": "2026-05-01T19:20:36.387478",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Adeguamento tecnico per modifica del modello di pannello solare e delle strutture di sostegno per il progetto di un impianto fotovoltaico denominato \"Apricena Industriale\" da realizzarsi su aree industriali e cave nelle località \"Podere Camilli - Tufara - San Giovanni - San Sabino\", nel territorio comunale di Apricena (FG) con riduzione di potenza complessiva da 121,023 MWp e immissione di 96,30MW ad una potenza complessiva di 115,318 MWp e immissione di 96,30MW"
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/11919"
-        ],
-        "project_key": "url:c2098c7f692d241a"
-      },
-      {
-        "source": "sicilia",
-        "source_group": "sicilia",
-        "source_label": "Sicilia",
-        "title": "REALIZZAZIONE DI UN IMPIANTO AGRIVOLTAICO INTEGRATO ECOCOMPATIBILE \"SUSAFA\" DA 120,75 MW A POLIZZI GENEROSA (PA).",
-        "proponent": "ALTA CAPITAL 5 S.R.L.",
-        "region": "Sicilia",
-        "province": "PA",
-        "municipalities": "Polizzi Generosa",
-        "project_type": "V.I.A. (art.23 - 27bis)",
-        "power_mw": 120.75,
-        "status": "",
-        "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1489&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-        "updated_at": "2026-05-01T19:12:15.455684",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sicilia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "REALIZZAZIONE DI UN IMPIANTO AGRIVOLTAICO INTEGRATO ECOCOMPATIBILE \"SUSAFA\" DA 120,75 MW A POLIZZI GENEROSA (PA)."
-        ],
-        "_dedupe_urls": [
-          "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1489&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-        ],
-        "project_key": "prj:fc22e6f5b91c33e1"
-      },
-      {
-        "source": "sistema_puglia_energia",
-        "source_group": "puglia",
-        "source_label": "Puglia",
-        "title": "mafra solar srl - Cerignola - 120.046 MW",
-        "proponent": "mafra solar srl",
-        "region": "Puglia",
-        "province": "FG",
-        "municipalities": "Cerignola",
-        "project_type": "Autorizzazione Unica",
-        "power_mw": 120.046,
-        "status": "",
-        "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63780",
-        "updated_at": "2026-05-01T19:17:06.517825",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sistema_puglia_energia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "mafra solar srl - Cerignola - 120.046 MW"
-        ],
-        "_dedupe_urls": [
-          "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63780"
-        ],
-        "project_key": "url:4e5d59b325a9ec43"
-      },
-      {
-        "source": "emilia_romagna",
-        "source_group": "emilia_romagna",
-        "source_label": "Emilia-Romagna",
-        "title": "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI 118.07 MW DENOMINATO JUWI DEVELOPMENT 25 E RELATIVE OPERE CONNESSE SITO NEL COMUNE DI FERRARA (FE)",
-        "proponent": "JUWI DEVELOPMENT 25 S.r.l.",
-        "region": "Emilia-Romagna",
-        "province": "FE",
-        "municipalities": "Ferrara",
-        "project_type": "VIA",
-        "power_mw": 118.07,
-        "status": "",
-        "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6869",
-        "updated_at": "2026-05-01T19:08:08.775542",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "emilia_romagna"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI 118.07 MW DENOMINATO JUWI DEVELOPMENT 25 E RELATIVE OPERE CONNESSE SITO NEL COMUNE DI FERRARA (FE)"
-        ],
-        "_dedupe_urls": [
-          "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6869"
-        ],
-        "project_key": "url:22442f76ee344a22"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Progetto di un impianto agrivoltaico denominato ''SIG_Cerignola Tre Perazzi'' di potenza di picco pari a 117,98 MWp e potenza di immissione pari a 99 MW e delle opere di connessione alla RTN da realizzarsi su aree agricole situate nel Comune di Cerignola (FG).",
-        "proponent": "SIG PROJECT ITALY 4 S.R.L.",
-        "region": "Puglia",
-        "province": "FG",
-        "municipalities": "CERIGNOLA",
-        "project_type": "Valutazione Impatto Ambientale",
-        "power_mw": 117.98,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12001",
-        "updated_at": "2026-05-01T19:20:36.387478",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Progetto di un impianto agrivoltaico denominato ''SIG_Cerignola Tre Perazzi'' di potenza di picco pari a 117,98 MWp e potenza di immissione pari a 99 MW e delle opere di connessione alla RTN da realizzarsi su aree agricole situate nel Comune di Cerignola (FG)."
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/12001"
-        ],
-        "project_key": "url:900c1e77d46b48de"
-      },
-      {
-        "source": "emilia_romagna",
-        "source_group": "emilia_romagna",
-        "source_label": "Emilia-Romagna",
-        "title": "IMPIANTO AGRIVOLTAICO AVANZATO BONDENO GAVELLO DI POTENZA PARI A 115.555,44 KWP E RELATIVE OPERE CONNESSE LOCALIZZATO NEL COMUNE DI BONDENO (FE) E FINALE EMILIA (MO)",
-        "proponent": "Sedna Solar S.r.l.",
-        "region": "Emilia-Romagna",
-        "province": "FE",
-        "municipalities": "Bondeno, Finale Emilia",
-        "project_type": "VIA",
-        "power_mw": 115.555,
-        "status": "",
-        "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6836",
-        "updated_at": "2026-05-01T19:08:08.775542",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "emilia_romagna"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "IMPIANTO AGRIVOLTAICO AVANZATO BONDENO GAVELLO DI POTENZA PARI A 115.555,44 KWP E RELATIVE OPERE CONNESSE LOCALIZZATO NEL COMUNE DI BONDENO (FE) E FINALE EMILIA (MO)"
-        ],
-        "_dedupe_urls": [
-          "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6836"
-        ],
-        "project_key": "url:d35669e13130d0dd"
-      },
-      {
-        "source": "lazio",
-        "source_group": "lazio",
-        "source_label": "Lazio",
-        "title": "Determinazione G14613 del 25/10/2019 Favorevole con Prescrizioni - Determina Provvedimento Autorizzatorio Unico Regionale G16013 del 22/11/2019 - Impianto fotovoltaico a terra della potenza di 113,5 MWp connesso alla RTN in loc. Macchia Grande, Baccareccia, Gazzarola",
-        "proponent": "SOLAR ITALY 4 SRL",
-        "region": "Lazio",
-        "province": "VT",
-        "municipalities": "Montalto Di Castro",
-        "project_type": "VIA",
-        "power_mw": 113.5,
-        "status": "",
-        "url": "https://regionelazio.box.com/v/VIA-012-2019",
-        "updated_at": "2026-05-01T19:18:12.958879",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "lazio"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Determinazione G14613 del 25/10/2019 Favorevole con Prescrizioni - Determina Provvedimento Autorizzatorio Unico Regionale G16013 del 22/11/2019 - Impianto fotovoltaico a terra della potenza di 113,5 MWp connesso alla RTN in loc. Macchia Grande, Baccareccia, Gazzarola"
-        ],
-        "_dedupe_urls": [
-          "https://regionelazio.box.com/v/VIA-012-2019"
-        ],
-        "project_key": "url:acc2126aadd0f6b4"
-      },
-      {
-        "source": "lazio",
-        "source_group": "lazio",
-        "source_label": "Lazio",
-        "title": "Determinazione G14612 del 25/10/2019 Favorevole con Prescrizioni - Determina Provvedimento Autorizzatorio Unico Regionale G16014 del 22/11/2019 - Impianto fotovoltaico a terra della potenza di 112 MWp connesso alla RTN in loc. Vaccareccia di S. Agostino, Caprarecce",
-        "proponent": "SOLAR ITALY 3 SRL",
-        "region": "Lazio",
-        "province": "VT",
-        "municipalities": "Montalto Di Castro",
-        "project_type": "VIA",
-        "power_mw": 112.0,
-        "status": "",
-        "url": "https://regionelazio.box.com/v/VIA-011-2019",
-        "updated_at": "2026-05-01T19:18:12.958879",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "lazio"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Determinazione G14612 del 25/10/2019 Favorevole con Prescrizioni - Determina Provvedimento Autorizzatorio Unico Regionale G16014 del 22/11/2019 - Impianto fotovoltaico a terra della potenza di 112 MWp connesso alla RTN in loc. Vaccareccia di S. Agostino, Caprarecce"
-        ],
-        "_dedupe_urls": [
-          "https://regionelazio.box.com/v/VIA-011-2019"
-        ],
-        "project_key": "url:109a78eb4ee20434"
-      },
-      {
-        "source": "sicilia",
-        "source_group": "sicilia",
-        "source_label": "Sicilia",
-        "title": "IMPIANTO AGRO-FOTOVOLTAICO A TERRA DENOMINATO “S&P 5”, DI POTENZA COMPLESSIVA PARI A 110.940 KWP (65.000 KW IN IMMISSIONE)",
-        "proponent": "S&P 5 S.R.L.",
-        "region": "Sicilia",
-        "province": "TP",
-        "municipalities": "Mazara del Vallo",
-        "project_type": "V.I.A. (art.23 - 27bis)",
-        "power_mw": 110.94,
-        "status": "",
-        "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=860&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-        "updated_at": "2026-05-01T19:12:15.455684",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sicilia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "IMPIANTO AGRO-FOTOVOLTAICO A TERRA DENOMINATO “S&P 5”, DI POTENZA COMPLESSIVA PARI A 110.940 KWP (65.000 KW IN IMMISSIONE)"
-        ],
-        "_dedupe_urls": [
-          "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=860&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-        ],
-        "project_key": "prj:f1faa3c4535845bf"
-      },
-      {
-        "source": "sicilia",
-        "source_group": "sicilia",
-        "source_label": "Sicilia",
-        "title": "IMPIANTO AGRO-FOTOVOLTAICO A TERRA DENOMINATO “S&P 7”, DI POTENZA COMPLESSIVA PARI A 110.855,10 KWP (100.000 KW IN IMMISSIONE)",
-        "proponent": "S&P 7 S.R.L.",
-        "region": "Sicilia",
-        "province": "PA",
-        "municipalities": "Partinico",
-        "project_type": "V.I.A. (art.23 - 27bis)",
-        "power_mw": 110.855,
-        "status": "",
-        "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1332&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-        "updated_at": "2026-05-01T19:12:15.455684",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sicilia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "IMPIANTO AGRO-FOTOVOLTAICO A TERRA DENOMINATO “S&P 7”, DI POTENZA COMPLESSIVA PARI A 110.855,10 KWP (100.000 KW IN IMMISSIONE)"
-        ],
-        "_dedupe_urls": [
-          "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1332&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-        ],
-        "project_key": "prj:c255b4ae34df6fb7"
-      },
-      {
-        "source": "sicilia",
-        "source_group": "sicilia",
-        "source_label": "Sicilia",
-        "title": "REALIZZAZIONE DI UN IMPIANTO AGRIVOLTAICO INTEGRATO ECOCOMPATIBILE \"ALIA-CASTRONOVO\" DA 110,775 MW AD ALIA (PA) E CASTRONOVO DI SICILIA (PA).",
-        "proponent": "ALTA CAPITAL 9 S.R.L.",
-        "region": "Sicilia",
-        "province": "PA",
-        "municipalities": "Castronovo di Sicilia",
-        "project_type": "V.I.A. (art.23 - 27bis)",
-        "power_mw": 110.775,
-        "status": "",
-        "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1596&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-        "updated_at": "2026-05-01T19:12:15.455684",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sicilia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "REALIZZAZIONE DI UN IMPIANTO AGRIVOLTAICO INTEGRATO ECOCOMPATIBILE \"ALIA-CASTRONOVO\" DA 110,775 MW AD ALIA (PA) E CASTRONOVO DI SICILIA (PA)."
-        ],
-        "_dedupe_urls": [
-          "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1596&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-        ],
-        "project_key": "prj:98ad2a92eb193db2"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "[ID_14085 - WEB-ASSVIA - ASVASV100000006] Progetto di un impianto di produzione di energia elettrica da fonte solare fotovoltaica e relative opere connesse della potenza di 109,1 MWp, denominato \"FERRARA NORD\"",
-        "proponent": "Iren Green Generation Tech S.r.l.",
-        "region": "Emilia-Romagna",
-        "province": "FE",
-        "municipalities": "FERRARA",
-        "project_type": "Verifica di Assoggettabilità a VIA (PNIEC-PNRR)",
-        "power_mw": 109.1,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11793",
-        "updated_at": "2026-05-01T19:20:36.387478",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "[ID_14085 - WEB-ASSVIA - ASVASV100000006] Progetto di un impianto di produzione di energia elettrica da fonte solare fotovoltaica e relative opere connesse della potenza di 109,1 MWp, denominato \"FERRARA NORD\""
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/11793"
-        ],
-        "project_key": "src:dedf506041925fbb"
-      },
-      {
-        "source": "lazio",
-        "source_group": "lazio",
-        "source_label": "Lazio",
-        "title": "Determinazione n° G00146 del 10/01/2024 Determinazione n° G14899 del 10/11/2023 Favorevole con prescrizioni Realizzazione di un Impianto Solare Fotovoltaico della Potenza di Picco pari a 105.568,32 kW e Potenza Massima in immissione pari a 95.000,00 kW, connesso alla RTN, collegato ad un Piano Agronomico per l’utilizzo a Scopi Agricoli dell’Area, Denominato VETRALLA 1 in loc. Poggi Cinelli e Querciabella Determinazione n. G12040 del 13/09/2023 - Favorevole con prescrizioni",
-        "proponent": "VETRALLA SRL",
-        "region": "Lazio",
-        "province": "VT",
-        "municipalities": "Viterbo",
-        "project_type": "VIA",
-        "power_mw": 105.568,
-        "status": "",
-        "url": "https://regionelazio.app.box.com/v/VIA-050-2020",
-        "updated_at": "2026-05-01T19:18:12.958879",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "lazio"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Determinazione n° G00146 del 10/01/2024 Determinazione n° G14899 del 10/11/2023 Favorevole con prescrizioni Realizzazione di un Impianto Solare Fotovoltaico della Potenza di Picco pari a 105.568,32 kW e Potenza Massima in immissione pari a 95.000,00 kW, connesso alla RTN, collegato ad un Piano Agronomico per l’utilizzo a Scopi Agricoli dell’Area, Denominato VETRALLA 1 in loc. Poggi Cinelli e Querciabella Determinazione n. G12040 del 13/09/2023 - Favorevole con prescrizioni"
-        ],
-        "_dedupe_urls": [
-          "https://regionelazio.app.box.com/v/VIA-050-2020"
-        ],
-        "project_key": "url:3b7d9ada129c77a3"
-      },
-      {
-        "source": "sicilia",
-        "source_group": "sicilia",
-        "source_label": "Sicilia",
-        "title": "INTERVENTO DI COSTRUZIONE \"IMPIANTO FOTOVOLTAICO DELLA POTENZA DI CIRCA 102 MWP COMMESSO ALLA RTN\"",
-        "proponent": "SOLAR SICILY",
-        "region": "Sicilia",
-        "province": "CL",
-        "municipalities": "Butera",
-        "project_type": "V.I.A. (art.23 - 27bis)",
-        "power_mw": 102.0,
-        "status": "",
-        "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=164&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-        "updated_at": "2026-05-01T19:12:15.455684",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sicilia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "INTERVENTO DI COSTRUZIONE \"IMPIANTO FOTOVOLTAICO DELLA POTENZA DI CIRCA 102 MWP COMMESSO ALLA RTN\""
-        ],
-        "_dedupe_urls": [
-          "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=164&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-        ],
-        "project_key": "prj:a992bb919ac93a89"
-      },
-      {
-        "source": "lazio",
-        "source_group": "lazio",
-        "source_label": "Lazio",
-        "title": "Determinazione n° G13930 del 12/11/2021 Favorevole con prescrizioni Realizzazione Impianto di produzione di energia da fonte fotovoltaica - Potenza Nominale 100,13 MWp loc. Marcolino",
-        "proponent": "MARTELLO SRL",
-        "region": "Lazio",
-        "province": "VT",
-        "municipalities": "Vitorchiano",
-        "project_type": "VERIFICA",
-        "power_mw": 100.13,
-        "status": "",
-        "url": "https://regionelazio.box.com/v/VIA-064-2020",
-        "updated_at": "2026-05-01T19:18:12.958879",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "lazio"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Determinazione n° G13930 del 12/11/2021 Favorevole con prescrizioni Realizzazione Impianto di produzione di energia da fonte fotovoltaica - Potenza Nominale 100,13 MWp loc. Marcolino"
-        ],
-        "_dedupe_urls": [
-          "https://regionelazio.box.com/v/VIA-064-2020"
-        ],
-        "project_key": "url:4e4cf52d8fbd34d8"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Progetto realizzazione di un impianto fotovoltaico denominato \"Sardinia Agrivolt\" della potenza di 99.792 MW in comune di Uta (CA) località Su Coddu de sa Feurra.",
-        "proponent": "IPC AGRIVOLT S.R.L.",
-        "region": "Sardegna",
-        "province": "CA",
-        "municipalities": "UTA",
-        "project_type": "Agrivoltaico",
-        "power_mw": 99.792,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8607",
-        "updated_at": "2026-05-01T19:20:36.387478",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Progetto realizzazione di un impianto fotovoltaico denominato \"Sardinia Agrivolt\" della potenza di 99.792 MW in comune di Uta (CA) località Su Coddu de sa Feurra."
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/8607"
-        ],
-        "project_key": "url:b10528b0988be330"
-      },
-      {
-        "source": "sistema_puglia_energia",
-        "source_group": "puglia",
-        "source_label": "Puglia",
-        "title": "san giovanni in fonte s.r.l - Cerignola - 99.42 MW",
-        "proponent": "san giovanni in fonte s.r.l",
-        "region": "Puglia",
-        "province": "FG",
-        "municipalities": "Cerignola",
-        "project_type": "Autorizzazione Unica",
-        "power_mw": 99.42,
-        "status": "",
-        "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63632",
-        "updated_at": "2026-05-01T19:17:06.517825",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sistema_puglia_energia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "san giovanni in fonte s.r.l - Cerignola - 99.42 MW"
-        ],
-        "_dedupe_urls": [
-          "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63632"
-        ],
-        "project_key": "url:feec0564d7121636"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Valutazione preliminare ai sensi dell'art.6, c.9 e c.9 bis) del D.Lgs. n. 152/2006, relativa al progetto di un impianto agrivoltaico denominato \"Montemilone_CP 202300146 MOM36\", della potenza di picco pari a 99,33 MW e della potenza nominale e in immissione di 95 MW, ubicato nel Comune di Montemilone (PZ), incluse le relative opere di utenza e di rete per la connessione a 36 kv alla RTN di Terna S.p.a., ubicate nel medesimo comune [VIA_ID_10956].",
-        "proponent": "NP Basilicata 1 S.r.l.",
-        "region": "Basilicata",
-        "province": "PZ",
-        "municipalities": "MONTEMILONE",
-        "project_type": "Agrivoltaico",
-        "power_mw": 99.33,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11853",
-        "updated_at": "2026-05-01T19:20:36.387478",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Valutazione preliminare ai sensi dell'art.6, c.9 e c.9 bis) del D.Lgs. n. 152/2006, relativa al progetto di un impianto agrivoltaico denominato \"Montemilone_CP 202300146 MOM36\", della potenza di picco pari a 99,33 MW e della potenza nominale e in immissione di 95 MW, ubicato nel Comune di Montemilone (PZ), incluse le relative opere di utenza e di rete per la connessione a 36 kv alla RTN di Terna S.p.a., ubicate nel medesimo comune [VIA_ID_10956]."
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/11853"
-        ],
-        "project_key": "src:625f64f7b54ff3b8"
-      },
-      {
-        "source": "lombardia",
-        "source_group": "lombardia",
-        "source_label": "Lombardia",
-        "title": "Progetto di un impianto agrivoltaico “avanzato” e relative opere di connessione alla Rete di Trasmissione Nazionale (RTN), denominato “AGRIA-BOSELLO”, destinato alla produzione di energia elettrica da fonte solare tramite l’impiego di moduli fotovoltaici, avente potenza nominale complessiva pari a 99 MWp e potenza in immissione complessiva pari a 97,5 MW, costituito da un impianto agrivoltaico avanzato sito nel Comune di Roncoferraro (MN) e di un impianto agrivoltaico avanzato sito nel Comune di",
-        "proponent": "EDISON RINNOVABILI S.P.A.",
-        "region": "Lombardia",
-        "province": "MN",
-        "municipalities": "Roncoferraro, Castel d'Ario, San Giorgio Bigarello",
-        "project_type": "V.E.R. Provinciali",
-        "power_mw": 99.0,
-        "status": "",
-        "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/19856",
-        "updated_at": "2026-05-01T19:09:14.947862",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "lombardia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Progetto di un impianto agrivoltaico “avanzato” e relative opere di connessione alla Rete di Trasmissione Nazionale (RTN), denominato “AGRIA-BOSELLO”, destinato alla produzione di energia elettrica da fonte solare tramite l’impiego di moduli fotovoltaici, avente potenza nominale complessiva pari a 99 MWp e potenza in immissione complessiva pari a 97,5 MW, costituito da un impianto agrivoltaico avanzato sito nel Comune di Roncoferraro (MN) e di un impianto agrivoltaico avanzato sito nel Comune di"
-        ],
-        "_dedupe_urls": [
-          "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/19856"
-        ],
-        "project_key": "prj:2648724f5294e993"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Progetto di un impianto agrivoltaico denominato \"GPOS1 WEDO\" della potenza di 98,885 MWp e delle relative opere di connessione alla RTN da da realizzarsi nel Comune di Apricena (FG).",
-        "proponent": "Apricena FV S.r.l.",
-        "region": "Puglia",
-        "province": "FG",
-        "municipalities": "APRICENA",
-        "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
-        "power_mw": 98.885,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11903",
-        "updated_at": "2026-05-01T19:20:36.387478",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Progetto di un impianto agrivoltaico denominato \"GPOS1 WEDO\" della potenza di 98,885 MWp e delle relative opere di connessione alla RTN da da realizzarsi nel Comune di Apricena (FG)."
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/11903"
-        ],
-        "project_key": "url:c7170209151a1f54"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Progetto di un impianto fotovoltaico della potenza di 96,828 MW, e relative opere connesse necessarie al collegamento alla Rete di Trasmissione Nazionale, sito nel comune di Nardò (LE).",
-        "proponent": "Nardò SOLAR ENERGY S.r.l.",
-        "region": "Puglia",
-        "province": "LE",
-        "municipalities": "NARDÒ",
-        "project_type": "Fotovoltaico",
-        "power_mw": 96.828,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8202",
-        "updated_at": "2026-05-01T19:20:36.387478",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Progetto di un impianto fotovoltaico della potenza di 96,828 MW, e relative opere connesse necessarie al collegamento alla Rete di Trasmissione Nazionale, sito nel comune di Nardò (LE)."
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/8202"
-        ],
-        "project_key": "url:2dbe089d4465460e"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Impianto fotovoltaico denominato \"EG Pascolo - Bando\" da realizzarsi in comune di Argenta e Portomaggiore (FE) di potenza nominale 92,7 MWp collegato alla RTN.",
-        "proponent": "EG PASCOLO SRL",
-        "region": "Emilia-Romagna",
-        "province": "FE",
-        "municipalities": "ARGENTA, PORTOMAGGIORE",
-        "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
-        "power_mw": 92.7,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9264",
-        "updated_at": "2026-05-01T19:20:36.387478",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Impianto fotovoltaico denominato \"EG Pascolo - Bando\" da realizzarsi in comune di Argenta e Portomaggiore (FE) di potenza nominale 92,7 MWp collegato alla RTN."
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/9264"
-        ],
-        "project_key": "url:3378bdee7b08aab3"
-      },
-      {
-        "source": "sicilia",
-        "source_group": "sicilia",
-        "source_label": "Sicilia",
-        "title": "IMPIANTO AGRO-FOTOVOLTAICO A TERRA DENOMINATO “S&P 3”, DI POTENZA COMPLESSIVA PARI A 92.640,00 KWP (60.000 KW IN IMMISSIONE)",
-        "proponent": "S&P 3 S.R.L.",
-        "region": "Sicilia",
-        "province": "TP",
-        "municipalities": "Gibellina",
-        "project_type": "V.I.A. (art.23 - 27bis)",
-        "power_mw": 92.64,
-        "status": "",
-        "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=857&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-        "updated_at": "2026-05-01T19:12:15.455684",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sicilia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "IMPIANTO AGRO-FOTOVOLTAICO A TERRA DENOMINATO “S&P 3”, DI POTENZA COMPLESSIVA PARI A 92.640,00 KWP (60.000 KW IN IMMISSIONE)"
-        ],
-        "_dedupe_urls": [
-          "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=857&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-        ],
-        "project_key": "prj:190a1c497bc07e34"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Progetto di un impianto fotovoltaico costituito da un impianto a terra per (89,24%) e un impianto agrivoltaico zootecnico (10,76%) con relativo sistema di accumulo (361.080 kWh), denominato \"Buscem-Pagliazzo\" della potenza complessiva di 92,38 MWp localizzato nel Comune di Giarratana (RG) con relative opere di connessione RTN che si estendono nei Comuni di Monterosso Almo e Chiaramonte Gulfi.",
-        "proponent": "AS 10 GIA S.r.l.",
-        "region": "Sicilia",
-        "province": "RG",
-        "municipalities": "GIARRATANA, MONTEROSSO ALMO, CHIARAMONTE GULFI",
-        "project_type": "Verifica di Assoggettabilità a VIA (PNIEC-PNRR)",
-        "power_mw": 92.38,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11943",
-        "updated_at": "2026-05-01T19:20:36.387478",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Progetto di un impianto fotovoltaico costituito da un impianto a terra per (89,24%) e un impianto agrivoltaico zootecnico (10,76%) con relativo sistema di accumulo (361.080 kWh), denominato \"Buscem-Pagliazzo\" della potenza complessiva di 92,38 MWp localizzato nel Comune di Giarratana (RG) con relative opere di connessione RTN che si estendono nei Comuni di Monterosso Almo e Chiaramonte Gulfi."
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/11943"
-        ],
-        "project_key": "url:f8b3695bf2b25382"
-      },
-      {
-        "source": "sicilia",
-        "source_group": "sicilia",
-        "source_label": "Sicilia",
-        "title": "IMPIANTO FOTOVOLTAICO DELLA POTENZA DI 92,06 MW CON ANNESSO SISTEMA DI ACCUMULO DA 12,5 MW E RELATIVE OPERE DI CONNESSIONE DENOMINATO “CLUSTER R” UBICATO NEI COMUNI DI MAZARA DEL VALLO, CASTELVETRANO E SANTA NINFA (TP)",
-        "proponent": "REPOWER RENEWABLE SPA",
-        "region": "Sicilia",
-        "province": "TP",
-        "municipalities": "Mazara del Vallo, Castelvetrano, Santa Ninfa",
-        "project_type": "V.I.A. (art.23 - 27bis)",
-        "power_mw": 92.06,
-        "status": "",
-        "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1552&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-        "updated_at": "2026-05-01T19:12:15.455684",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sicilia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "IMPIANTO FOTOVOLTAICO DELLA POTENZA DI 92,06 MW CON ANNESSO SISTEMA DI ACCUMULO DA 12,5 MW E RELATIVE OPERE DI CONNESSIONE DENOMINATO “CLUSTER R” UBICATO NEI COMUNI DI MAZARA DEL VALLO, CASTELVETRANO E SANTA NINFA (TP)"
-        ],
-        "_dedupe_urls": [
-          "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1552&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-        ],
-        "project_key": "prj:7fd03f562e86987c"
-      },
-      {
-        "source": "mase_provvedimenti",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"AGV GATTO CORVINO\", della potenza 90,6 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Ragusa (RG).",
-        "proponent": "CVA EOS S.r.l.",
-        "region": "Sicilia",
-        "province": "RG",
-        "municipalities": "Ragusa",
-        "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
-        "power_mw": 90.6,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6000",
-        "updated_at": "2026-05-01T19:24:03.185724",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase_provvedimenti"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"AGV GATTO CORVINO\", della potenza 90,6 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Ragusa (RG)."
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6000"
-        ],
-        "project_key": "url:f6362a02e4b5b6bf"
       }
     ],
     "terna_summary": {
@@ -1838,7 +905,7 @@
       ]
     },
     "quality": {
-      "punctual_records": 992,
+      "punctual_records": 1010,
       "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 7,
@@ -1884,7 +951,7 @@
       {
         "source": "mase_provvedimenti",
         "source_label": "MASE",
-        "count": 90,
+        "count": 92,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -1937,6 +1004,17 @@
         "completeness_pct": 98.0
       },
       {
+        "source": "basilicata",
+        "source_label": "basilicata",
+        "count": 15,
+        "missing_mw": 0,
+        "missing_province": 0,
+        "missing_municipality": 0,
+        "province_deduced": 0,
+        "municipalities_deduced": 0,
+        "completeness_pct": 100.0
+      },
+      {
         "source": "emilia_romagna",
         "source_label": "Emilia-Romagna",
         "count": 13,
@@ -1982,8 +1060,8 @@
       },
       {
         "source": "Umbria",
-        "source_label": "Umbria",
-        "count": 5,
+        "source_label": "umbria",
+        "count": 6,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -1992,7 +1070,7 @@
         "completeness_pct": 100.0
       },
       {
-        "source": "Sardegna",
+        "source": "sardegna",
         "source_label": "Sardegna",
         "count": 2,
         "missing_mw": 0,
@@ -5896,6 +4974,37 @@
       "project_key": "url:ecb1cc0a75d737cc"
     },
     {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "Impianto agrivoltaico avanzato “MONTEMILONE”, di 64,92 MWp, da realizzarsi nel Comune di Montemilone (PZ) in C.da Ostiapane, e delle opere di connessionein agro al Comune di Montemilone (PZ), Venosa (PZ) e Spinazzola (BT). Proponente: ERP 1 S.r.l.",
+      "proponent": "ERP 1 S.r.l.",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Montemilone, Venosa",
+      "project_type": "VIA regionale - Anno 2025",
+      "power_mw": 64.92,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=145351&otype=1011&id=148284",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrivoltaico avanzato “MONTEMILONE”, di 64,92 MWp, da realizzarsi nel Comune di Montemilone (PZ) in C.da Ostiapane, e delle opere di connessionein agro al Comune di Montemilone (PZ), Venosa (PZ) e Spinazzola (BT). Proponente: ERP 1 S.r.l."
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=145351&otype=1011&id=148284"
+      ],
+      "project_key": "url:aa3577b5f3d8153d"
+    },
+    {
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
@@ -6737,6 +5846,37 @@
       "project_key": "prj:7f2e65609fe5f16b"
     },
     {
+      "source": "Umbria",
+      "source_group": "Umbria",
+      "source_label": "Umbria",
+      "title": "Progetto per la realizzazione e l'esercizio di un impianto agrivoltaico denominato Fattoria Solare, con attività agricole e zootecniche di potenza complessiva pari a 55,55 MWp, sito presso Comune di Castel Giorgio (TR), Contrada Fagiolo e delle relative opere di connessione in AT",
+      "proponent": "Free Energy S.r.l",
+      "region": "Umbria",
+      "province": "TR",
+      "municipalities": "Castel Giorgio",
+      "project_type": "Verifica di assoggettabilità a VIA",
+      "power_mw": 55.55,
+      "status": "",
+      "url": "https://www.va.regione.umbria.it/web/3852172/1126/-/asset_publisher/dI3c1OTrJk2U/content/94-2026-003?read_more=true",
+      "updated_at": "2026-05-15T15:03:58.877190",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Umbria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto per la realizzazione e l'esercizio di un impianto agrivoltaico denominato Fattoria Solare, con attività agricole e zootecniche di potenza complessiva pari a 55,55 MWp, sito presso Comune di Castel Giorgio (TR), Contrada Fagiolo e delle relative opere di connessione in AT"
+      ],
+      "_dedupe_urls": [
+        "https://www.va.regione.umbria.it/web/3852172/1126/-/asset_publisher/dI3c1OTrJk2U/content/94-2026-003?read_more=true"
+      ],
+      "project_key": "url:75b581489c7e4ef1"
+    },
+    {
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
@@ -7481,6 +6621,37 @@
       "project_key": "prj:c7feca6758d2f83a"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"CAMPOFIORITO\", di potenza pari a 50,32 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Campofiorito (PA) e Corleone (PA).",
+      "proponent": "Acciona Energia Global Italia S.r.l.",
+      "region": "Sicilia",
+      "province": "PA",
+      "municipalities": "Campofiorito",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 50.32,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6131",
+      "updated_at": "2026-05-15T15:08:13.188606",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"CAMPOFIORITO\", di potenza pari a 50,32 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Campofiorito (PA) e Corleone (PA)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6131"
+      ],
+      "project_key": "url:c1b6a2b0ed2884f0"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -7900,7 +7071,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-05-15T09:07:36.561060",
+      "updated_at": "2026-05-15T22:24:19.275121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -13371,7 +12542,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-05-15T09:07:36.561060",
+      "updated_at": "2026-05-15T22:24:19.275121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -14196,6 +13367,37 @@
       "project_key": "url:71b0582f0942e29e"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto Agro-Fotovoltaico denominato \"FV GRAZZANISE\", dalla potenza complessiva di 21,50 MW nel Comune di Grazzaniese (CE) e con opere di connessione alla RTN nei Comuni di Grazzanise, Cancello e",
+      "proponent": "Vespera Development 01 S.r.l.",
+      "region": "Campania",
+      "province": "CE",
+      "municipalities": "Grazzanise",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 21.5,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6130",
+      "updated_at": "2026-05-15T15:08:13.188606",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto Agro-Fotovoltaico denominato \"FV GRAZZANISE\", dalla potenza complessiva di 21,50 MW nel Comune di Grazzaniese (CE) e con opere di connessione alla RTN nei Comuni di Grazzanise, Cancello e"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6130"
+      ],
+      "project_key": "url:84bb4a0281a71eaf"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -14568,6 +13770,68 @@
       "project_key": "url:67b2959aa1b9a8bf"
     },
     {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "Costruzione ed Esercizio di un Impianto Monoassiale di produzione di energia elettrica da fonte Fotovoltaica e relative opere connesse della Potenza Nominale 20 MW – Comune di Colobraro (MT) – Località “Timpa della Croce”. 7PIU' ENERGIA",
+      "proponent": "7 PIU' ENERGIA S.r.l.",
+      "region": "Basilicata",
+      "province": "MT",
+      "municipalities": "Colobraro",
+      "project_type": "VIA regionale",
+      "power_mw": 20.0,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128153",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Costruzione ed Esercizio di un Impianto Monoassiale di produzione di energia elettrica da fonte Fotovoltaica e relative opere connesse della Potenza Nominale 20 MW – Comune di Colobraro (MT) – Località “Timpa della Croce”. 7PIU' ENERGIA"
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128153"
+      ],
+      "project_key": "url:2c45c9d0afc54c14"
+    },
+    {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "Costruzione ed Esercizio di un Impianto Monoassiale di produzione di energia elettrica da fonte Fotovoltaica e relative opere connesse della Potenza Nominale di 20 MW – GENZANO di Lucania – PZ, località “SIANO”. Genzano Energia 3 - exGEN SOLAR",
+      "proponent": "GEN SOLAR SRLS",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Genzano di Lucania",
+      "project_type": "VIA regionale",
+      "power_mw": 20.0,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128204",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Costruzione ed Esercizio di un Impianto Monoassiale di produzione di energia elettrica da fonte Fotovoltaica e relative opere connesse della Potenza Nominale di 20 MW – GENZANO di Lucania – PZ, località “SIANO”. Genzano Energia 3 - exGEN SOLAR"
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128204"
+      ],
+      "project_key": "url:ee2358265d2f0ff3"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -14597,6 +13861,37 @@
         "https://regionelazio.app.box.com/v/VIA-069-2025"
       ],
       "project_key": "url:54ad49fc60ff6b38"
+    },
+    {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "progetto di un impianto fotovoltaico di potenza nominale pari a 20 MW denominato “VALLE CASTAGNA” da realizzarsi in agro del Comune di Montemilone (PZ) in Contrada “Valle Castagna Soprana”. CASTAGNA S.r.l.",
+      "proponent": "CASTAGNA S.r.l.",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Montemilone",
+      "project_type": "VIA regionale",
+      "power_mw": 20.0,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=127189",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "progetto di un impianto fotovoltaico di potenza nominale pari a 20 MW denominato “VALLE CASTAGNA” da realizzarsi in agro del Comune di Montemilone (PZ) in Contrada “Valle Castagna Soprana”. CASTAGNA S.r.l."
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=127189"
+      ],
+      "project_key": "url:a3c993677cdf8003"
     },
     {
       "source": "lazio",
@@ -14704,7 +13999,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-05-15T09:07:36.561060",
+      "updated_at": "2026-05-15T22:24:19.275121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -14721,6 +14016,37 @@
         "https://regionelazio.app.box.com/v/VIA-012-2025"
       ],
       "project_key": "url:e6b13adf0d480ede"
+    },
+    {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "Costruzione ed es.di un imp.fotovo den.“Genzano 2”di pot.pari a19.997,88 kWp (20.000 kWn in imm.), nonché di tutte le rel.opere conn. ed infr. necess. alla conn.alla RTN, da realizz. nel Comune di Genzano di Lucania C.da Isca della Badessa OPDENERGY 3",
+      "proponent": "OPDENERGY TAVOLIERE 3 S.r.l.",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Genzano di Lucania",
+      "project_type": "VIA regionale",
+      "power_mw": 19.998,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128542",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Costruzione ed es.di un imp.fotovo den.“Genzano 2”di pot.pari a19.997,88 kWp (20.000 kWn in imm.), nonché di tutte le rel.opere conn. ed infr. necess. alla conn.alla RTN, da realizz. nel Comune di Genzano di Lucania C.da Isca della Badessa OPDENERGY 3"
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128542"
+      ],
+      "project_key": "url:18dbc4edabc5478a"
     },
     {
       "source": "mase_provvedimenti",
@@ -14940,6 +14266,68 @@
       "project_key": "prj:9fd114ef65fbcb91"
     },
     {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "REALIZZAZIONE IMPIANTO AGRO VOLTAICO DI POTENZA 19.992,00 kWp SITO IN BANZI – CONTRADA SEGHERIA. ASTERION ENERGIES ITALIA SRL",
+      "proponent": "ASTERION ENERGIES ITALIA SRL",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Banzi",
+      "project_type": "Screening",
+      "power_mw": 19.992,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100002&otype=1011&id=136572",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "REALIZZAZIONE IMPIANTO AGRO VOLTAICO DI POTENZA 19.992,00 kWp SITO IN BANZI – CONTRADA SEGHERIA. ASTERION ENERGIES ITALIA SRL"
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100002&otype=1011&id=136572"
+      ],
+      "project_key": "url:ff2462064d064045"
+    },
+    {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "Costruzione ed esercizio di un impianto fotovoltaico della potenza complessiva pari a 19,9906 MW da ubicare nel comune di Melfi (PZ) in località Camarda vecchia al foglio 16 particelle 14 e 15 e delle relative opere connesse. COLUMNS ENERGY",
+      "proponent": "COLUMNS ENERGY S.p.A.",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Melfi",
+      "project_type": "VIA regionale",
+      "power_mw": 19.991,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128140",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Costruzione ed esercizio di un impianto fotovoltaico della potenza complessiva pari a 19,9906 MW da ubicare nel comune di Melfi (PZ) in località Camarda vecchia al foglio 16 particelle 14 e 15 e delle relative opere connesse. COLUMNS ENERGY"
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128140"
+      ],
+      "project_key": "url:254342efdbba1277"
+    },
+    {
       "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
@@ -15035,6 +14423,37 @@
       "project_key": "prj:60c496bb3a254964"
     },
     {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "“Progetto per la costruzione e l’esercizio di un imp. Agrifotovoltaico, delle opere conn. e delle infr. indispensabili, denominato LOCONE, da realizzarsi in agro del Comune di Montemilone (PZ), di potenza pari a 19.981,94 KWp. LUMINORA LOCONE",
+      "proponent": "LUMINORA LOCONE",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Montemilone",
+      "project_type": "VIA regionale",
+      "power_mw": 19.982,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=136330",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "“Progetto per la costruzione e l’esercizio di un imp. Agrifotovoltaico, delle opere conn. e delle infr. indispensabili, denominato LOCONE, da realizzarsi in agro del Comune di Montemilone (PZ), di potenza pari a 19.981,94 KWp. LUMINORA LOCONE"
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=136330"
+      ],
+      "project_key": "url:f735e88a01e68321"
+    },
+    {
       "source": "lombardia",
       "source_group": "lombardia",
       "source_label": "Lombardia",
@@ -15095,6 +14514,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6112"
       ],
       "project_key": "url:d19dcc3e4cbc525b"
+    },
+    {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "Costruzione ed esercizio di un impianto agro-fotovoltaico denominato \"Tolve Solarfarm\" di potenza nominal pari a 19.958,4 Kwp e delle relative opere di connessione da realizzarsi in agro dei COmuni di Tolve (PZ) e Oppido Lucano (PZ). SOLARTRACK",
+      "proponent": "SOLARTRACK",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Oppido Lucano, Tolve",
+      "project_type": "VIA regionale",
+      "power_mw": 19.958,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=138025",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Costruzione ed esercizio di un impianto agro-fotovoltaico denominato \"Tolve Solarfarm\" di potenza nominal pari a 19.958,4 Kwp e delle relative opere di connessione da realizzarsi in agro dei COmuni di Tolve (PZ) e Oppido Lucano (PZ). SOLARTRACK"
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=138025"
+      ],
+      "project_key": "url:a1ef19abd53e0346"
     },
     {
       "source": "mase_provvedimenti",
@@ -16258,6 +15708,37 @@
       "project_key": "url:3cf00dca0c207341"
     },
     {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "CITRINO NEW ENERGY S.R.L. impianto MIRO' con potenza di generazione 18 MWp da realizzare nel comune di Genzano di Lucania (PZ",
+      "proponent": "CITRINO NEW ENERGY S.R.L.",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Genzano di Lucania",
+      "project_type": "Screening - Anno 2025",
+      "power_mw": 18.0,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=145352&otype=1011&id=150208",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "CITRINO NEW ENERGY S.R.L. impianto MIRO' con potenza di generazione 18 MWp da realizzare nel comune di Genzano di Lucania (PZ"
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=145352&otype=1011&id=150208"
+      ],
+      "project_key": "url:61ee9265bf2dd707"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -16411,6 +15892,37 @@
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1007&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:e8095ca0348a1c2a"
+    },
+    {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "Costruzione ed Esercizio di un Impianto Fotovoltaico e relative opere connesse della Potenza Nominale di 17,875 MW – TOLVE – PZ, località “FORLETO VECCHIO”. Proponente: CAT ENERGY S.r.l.",
+      "proponent": "CAT ENERGY S.r.l.",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Tolve",
+      "project_type": "VIA regionale - Anno 2025",
+      "power_mw": 17.875,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=145351&otype=1011&id=147887",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Costruzione ed Esercizio di un Impianto Fotovoltaico e relative opere connesse della Potenza Nominale di 17,875 MW – TOLVE – PZ, località “FORLETO VECCHIO”. Proponente: CAT ENERGY S.r.l."
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=145351&otype=1011&id=147887"
+      ],
+      "project_key": "url:54bb6bdb260d1572"
     },
     {
       "source": "mase",
@@ -17101,6 +16613,37 @@
         "https://regionelazio.app.box.com/v/VIA-013-2024"
       ],
       "project_key": "url:bfba6ea1b71604f8"
+    },
+    {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "Impianto fotovoltaico “Grottole 2” di 16.522,94kWp (13.965,00 kWn in imm.), nonché di tutte le opere connesse ed infr. necessarie alla connessione alla Rete di Trasmiss nel Comune di Grottole. Proponente: SMARTENERGYIT2106 S.r.l.",
+      "proponent": "SMARTENERGYIT2106 S.r.l.",
+      "region": "Basilicata",
+      "province": "MT",
+      "municipalities": "Grottole",
+      "project_type": "VIA regionale",
+      "power_mw": 16.523,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128498",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto fotovoltaico “Grottole 2” di 16.522,94kWp (13.965,00 kWn in imm.), nonché di tutte le opere connesse ed infr. necessarie alla connessione alla Rete di Trasmiss nel Comune di Grottole. Proponente: SMARTENERGYIT2106 S.r.l."
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128498"
+      ],
+      "project_key": "url:3f7d7e0129a061fa"
     },
     {
       "source": "sicilia",
@@ -20861,6 +20404,37 @@
       "project_key": "prj:af87e8fefabeeddc"
     },
     {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "IMPIANTO PER LA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE FOTOVOLTAICA DELLA POTENZA DI 9 MW DENOMINATO “MELFI 3” DA REALIZZARSI IN ZONA INDUSTRIALE SAN NICOLA DI MELFI (PZ)”. FIMENERGIA SRL",
+      "proponent": "FIMENERGIA SRL",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Melfi",
+      "project_type": "Screening",
+      "power_mw": 9.0,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100002&otype=1011&id=137039",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "IMPIANTO PER LA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE FOTOVOLTAICA DELLA POTENZA DI 9 MW DENOMINATO “MELFI 3” DA REALIZZARSI IN ZONA INDUSTRIALE SAN NICOLA DI MELFI (PZ)”. FIMENERGIA SRL"
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100002&otype=1011&id=137039"
+      ],
+      "project_key": "url:940cac15b60be67f"
+    },
+    {
       "source": "lombardia",
       "source_group": "lombardia",
       "source_label": "Lombardia",
@@ -21183,7 +20757,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-05-15T09:07:36.561060",
+      "updated_at": "2026-05-15T22:24:19.275121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21431,7 +21005,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-05-15T09:07:36.561060",
+      "updated_at": "2026-05-15T22:24:19.275121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -22380,6 +21954,37 @@
       "project_key": "prj:9f05187ecbfa4b4f"
     },
     {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "Progetto per la costruzione e es. di un imp. fotovoltaico della pot.pari a7,34045 MW,da ubicare nel Comune di Tito(PZ) in loc.Masseria Mezzana al foglio7particelle8-16-207-213-216-217-219-282-283-284-285-286-287-288-333. TITO ENERGIA GROUP S.R.L.",
+      "proponent": "TITO ENERGIA GROUP S.r.l.",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Tito",
+      "project_type": "VIA regionale",
+      "power_mw": 7.34,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128556",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto per la costruzione e es. di un imp. fotovoltaico della pot.pari a7,34045 MW,da ubicare nel Comune di Tito(PZ) in loc.Masseria Mezzana al foglio7particelle8-16-207-213-216-217-219-282-283-284-285-286-287-288-333. TITO ENERGIA GROUP S.R.L."
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128556"
+      ],
+      "project_key": "url:24f5a8d2f01c3270"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -22750,6 +22355,37 @@
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=977&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:b70b8d9965de1f89"
+    },
+    {
+      "source": "Basilicata",
+      "source_group": "Basilicata",
+      "source_label": "Basilicata",
+      "title": "IMPIANTO PER LA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE FOTOVOLTAICA DELLA POTENZA DI 7,0 MW DENOMINATO “MELFI 5” DA REALIZZARSI IN ZONA INDUSTRIALE SAN NICOLA DI MELFI (PZ). FIMENERGIA",
+      "proponent": "FIMENERGIA SRL",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Melfi",
+      "project_type": "Screening",
+      "power_mw": 7.0,
+      "status": "",
+      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100002&otype=1011&id=136665",
+      "updated_at": "2026-05-15T16:07:21.185350",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Basilicata"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "IMPIANTO PER LA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE FOTOVOLTAICA DELLA POTENZA DI 7,0 MW DENOMINATO “MELFI 5” DA REALIZZARSI IN ZONA INDUSTRIALE SAN NICOLA DI MELFI (PZ). FIMENERGIA"
+      ],
+      "_dedupe_urls": [
+        "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100002&otype=1011&id=136665"
+      ],
+      "project_key": "url:eb81061e22120f79"
     },
     {
       "source": "lazio",
@@ -23570,7 +23206,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-05-15T09:07:36.561060",
+      "updated_at": "2026-05-15T22:24:19.275121",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30518,7 +30154,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-05-15T09:09:00.713237",
+      "updated_at": "2026-05-15T22:25:55.580938",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -35373,458 +35009,6 @@
         "https://dati.terna.it/download-center#terna_econnextion_2026_05_liguria_solare_stmg_accettate"
       ],
       "project_key": "agg:terna:ac54820f46006ad1"
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Melfi",
-      "municipalities_list": [
-        "Melfi"
-      ],
-      "power": "9 MW",
-      "power_mw": 9.0,
-      "proponent": "FIMENERGIA SRL",
-      "title": "IMPIANTO PER LA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE FOTOVOLTAICA DELLA POTENZA DI 9 MW DENOMINATO “MELFI 3” DA REALIZZARSI IN ZONA INDUSTRIALE SAN NICOLA DI MELFI (PZ)”. FIMENERGIA SRL",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100002&otype=1011&id=137039",
-      "status": "Screening",
-      "project_type": "Fotovoltaico",
-      "procedure": "Screening",
-      "external_id": "basilicata_137039",
-      "plain_text_sample": "IMPIANTO PER LA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE FOTOVOLTAICA DELLA POTENZA DI 9 MW DENOMINATO “MELFI 3” DA REALIZZARSI IN ZONA INDUSTRIALE SAN NICOLA DI MELFI (PZ)”. FIMENERGIA SRL FIMENERGIA SRL",
-      "updated_at": "2026-05-15T19:43:50",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Banzi",
-      "municipalities_list": [
-        "Banzi"
-      ],
-      "power": "19.992,00 kWp",
-      "power_mw": 19.992,
-      "proponent": "ASTERION ENERGIES ITALIA SRL",
-      "title": "REALIZZAZIONE IMPIANTO AGRO VOLTAICO DI POTENZA 19.992,00 kWp SITO IN BANZI – CONTRADA SEGHERIA. ASTERION ENERGIES ITALIA SRL",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100002&otype=1011&id=136572",
-      "status": "Screening",
-      "project_type": "Fotovoltaico",
-      "procedure": "Screening",
-      "external_id": "basilicata_136572",
-      "plain_text_sample": "REALIZZAZIONE IMPIANTO AGRO VOLTAICO DI POTENZA 19.992,00 kWp SITO IN BANZI – CONTRADA SEGHERIA. ASTERION ENERGIES ITALIA SRL ASTERION ENERGIES ITALIA SRL",
-      "updated_at": "2026-05-15T19:43:50",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Melfi",
-      "municipalities_list": [
-        "Melfi"
-      ],
-      "power": "7,0 MW",
-      "power_mw": 7.0,
-      "proponent": "FIMENERGIA SRL",
-      "title": "IMPIANTO PER LA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE FOTOVOLTAICA DELLA POTENZA DI 7,0 MW DENOMINATO “MELFI 5” DA REALIZZARSI IN ZONA INDUSTRIALE SAN NICOLA DI MELFI (PZ). FIMENERGIA",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100002&otype=1011&id=136665",
-      "status": "Screening",
-      "project_type": "Fotovoltaico",
-      "procedure": "Screening",
-      "external_id": "basilicata_136665",
-      "plain_text_sample": "IMPIANTO PER LA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE FOTOVOLTAICA DELLA POTENZA DI 7,0 MW DENOMINATO “MELFI 5” DA REALIZZARSI IN ZONA INDUSTRIALE SAN NICOLA DI MELFI (PZ). FIMENERGIA FIMENERGIA",
-      "updated_at": "2026-05-15T19:43:50",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Genzano di Lucania",
-      "municipalities_list": [
-        "Genzano di Lucania"
-      ],
-      "power": "18 MWp",
-      "power_mw": 18.0,
-      "proponent": "CITRINO NEW ENERGY S.R.L.",
-      "title": "CITRINO NEW ENERGY S.R.L. impianto MIRO' con potenza di generazione 18 MWp da realizzare nel comune di Genzano di Lucania (PZ",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=145352&otype=1011&id=150208",
-      "status": "Screening - Anno 2025",
-      "project_type": "Agrivoltaico",
-      "procedure": "Screening - Anno 2025",
-      "external_id": "basilicata_150208",
-      "plain_text_sample": "CITRINO NEW ENERGY S.R.L. impianto MIRO' con potenza di generazione 18 MWp da realizzare nel comune di Genzano di Lucania (PZ CITRINO NEW ENERGY S.R.L. progetto prevede la realizzazione progetto impianto agrivoltaico denominato “Mirò”, con potenza di generazione 18MWp” da realizzare nel comune di Genzano di Lucania (PZ",
-      "updated_at": "2026-05-15T19:43:50",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Genzano di Lucania",
-      "municipalities_list": [
-        "Genzano di Lucania"
-      ],
-      "power": "20 MW",
-      "power_mw": 20.0,
-      "proponent": "GEN SOLAR SRLS",
-      "title": "Costruzione ed Esercizio di un Impianto Monoassiale di produzione di energia elettrica da fonte Fotovoltaica e relative opere connesse della Potenza Nominale di 20 MW – GENZANO di Lucania – PZ, località “SIANO”. Genzano Energia 3 - exGEN SOLAR",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128204",
-      "status": "VIA regionale",
-      "project_type": "Fotovoltaico",
-      "procedure": "VIA regionale",
-      "external_id": "basilicata_128204",
-      "plain_text_sample": "Costruzione ed Esercizio di un Impianto Monoassiale di produzione di energia elettrica da fonte Fotovoltaica e relative opere connesse della Potenza Nominale di 20 MW – GENZANO di Lucania – PZ, località “SIANO”. Genzano Energia 3 - exGEN SOLAR GEN SOLAR SRLS",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Montemilone",
-      "municipalities_list": [
-        "Montemilone"
-      ],
-      "power": "19.981,94 KWp",
-      "power_mw": 19.98194,
-      "proponent": "LUMINORA LOCONE",
-      "title": "“Progetto per la costruzione e l’esercizio di un imp. Agrifotovoltaico, delle opere conn. e delle infr. indispensabili, denominato LOCONE, da realizzarsi in agro del Comune di Montemilone (PZ), di potenza pari a 19.981,94 KWp. LUMINORA LOCONE",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=136330",
-      "status": "VIA regionale",
-      "project_type": "Agrivoltaico",
-      "procedure": "VIA regionale",
-      "external_id": "basilicata_136330",
-      "plain_text_sample": "“Progetto per la costruzione e l’esercizio di un imp. Agrifotovoltaico, delle opere conn. e delle infr. indispensabili, denominato LOCONE, da realizzarsi in agro del Comune di Montemilone (PZ), di potenza pari a 19.981,94 KWp. LUMINORA LOCONE LUMINORA LOCONE",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "MT",
-      "municipalities": "Colobraro",
-      "municipalities_list": [
-        "Colobraro"
-      ],
-      "power": "20 MW",
-      "power_mw": 20.0,
-      "proponent": "7 PIU' ENERGIA S.r.l.",
-      "title": "Costruzione ed Esercizio di un Impianto Monoassiale di produzione di energia elettrica da fonte Fotovoltaica e relative opere connesse della Potenza Nominale 20 MW – Comune di Colobraro (MT) – Località “Timpa della Croce”. 7PIU' ENERGIA",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128153",
-      "status": "VIA regionale",
-      "project_type": "Fotovoltaico",
-      "procedure": "VIA regionale",
-      "external_id": "basilicata_128153",
-      "plain_text_sample": "Costruzione ed Esercizio di un Impianto Monoassiale di produzione di energia elettrica da fonte Fotovoltaica e relative opere connesse della Potenza Nominale 20 MW – Comune di Colobraro (MT) – Località “Timpa della Croce”. 7PIU' ENERGIA 7 PIU' ENERGIA S.r.l.",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Montemilone",
-      "municipalities_list": [
-        "Montemilone"
-      ],
-      "power": "20 MW",
-      "power_mw": 20.0,
-      "proponent": "CASTAGNA S.r.l.",
-      "title": "progetto di un impianto fotovoltaico di potenza nominale pari a 20 MW denominato “VALLE CASTAGNA” da realizzarsi in agro del Comune di Montemilone (PZ) in Contrada “Valle Castagna Soprana”. CASTAGNA S.r.l.",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=127189",
-      "status": "VIA regionale",
-      "project_type": "Fotovoltaico",
-      "procedure": "VIA regionale",
-      "external_id": "basilicata_127189",
-      "plain_text_sample": "progetto di un impianto fotovoltaico di potenza nominale pari a 20 MW denominato “VALLE CASTAGNA” da realizzarsi in agro del Comune di Montemilone (PZ) in Contrada “Valle Castagna Soprana”. CASTAGNA S.r.l. CASTAGNA S.R.L.",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Genzano di Lucania",
-      "municipalities_list": [
-        "Genzano di Lucania"
-      ],
-      "power": "19.997,88 kWp",
-      "power_mw": 19.99788,
-      "proponent": "OPDENERGY TAVOLIERE 3 S.r.l.",
-      "title": "Costruzione ed es.di un imp.fotovo den.“Genzano 2”di pot.pari a19.997,88 kWp (20.000 kWn in imm.), nonché di tutte le rel.opere conn. ed infr. necess. alla conn.alla RTN, da realizz. nel Comune di Genzano di Lucania C.da Isca della Badessa OPDENERGY 3",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128542",
-      "status": "VIA regionale",
-      "project_type": "Fotovoltaico",
-      "procedure": "VIA regionale",
-      "external_id": "basilicata_128542",
-      "plain_text_sample": "Costruzione ed es.di un imp.fotovo den.“Genzano 2”di pot.pari a19.997,88 kWp (20.000 kWn in imm.), nonché di tutte le rel.opere conn. ed infr. necess. alla conn.alla RTN, da realizz. nel Comune di Genzano di Lucania C.da Isca della Badessa OPDENERGY 3 OPDENERGY TAVOLIERE 3 S.R.L.",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "MT",
-      "municipalities": "Grottole",
-      "municipalities_list": [
-        "Grottole"
-      ],
-      "power": "16.522,94 kWp",
-      "power_mw": 16.52294,
-      "proponent": "SMARTENERGYIT2106 S.r.l.",
-      "title": "Impianto fotovoltaico “Grottole 2” di 16.522,94kWp (13.965,00 kWn in imm.), nonché di tutte le opere connesse ed infr. necessarie alla connessione alla Rete di Trasmiss nel Comune di Grottole. Proponente: SMARTENERGYIT2106 S.r.l.",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128498",
-      "status": "VIA regionale",
-      "project_type": "Fotovoltaico",
-      "procedure": "VIA regionale",
-      "external_id": "basilicata_128498",
-      "plain_text_sample": "Impianto fotovoltaico “Grottole 2” di 16.522,94kWp (13.965,00 kWn in imm.), nonché di tutte le opere connesse ed infr. necessarie alla connessione alla Rete di Trasmiss nel Comune di Grottole. Proponente: SMARTENERGYIT2106 S.r.l. Proponente: SMARTENERGYIT2106 S.r.l.",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Oppido Lucano, Tolve",
-      "municipalities_list": [
-        "Oppido Lucano",
-        "Tolve"
-      ],
-      "power": "19.958,4 Kwp",
-      "power_mw": 19.9584,
-      "proponent": "SOLARTRACK",
-      "title": "Costruzione ed esercizio di un impianto agro-fotovoltaico denominato \"Tolve Solarfarm\" di potenza nominal pari a 19.958,4 Kwp e delle relative opere di connessione da realizzarsi in agro dei COmuni di Tolve (PZ) e Oppido Lucano (PZ). SOLARTRACK",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=138025",
-      "status": "VIA regionale",
-      "project_type": "Fotovoltaico",
-      "procedure": "VIA regionale",
-      "external_id": "basilicata_138025",
-      "plain_text_sample": "Costruzione ed esercizio di un impianto agro-fotovoltaico denominato \"Tolve Solarfarm\" di potenza nominal pari a 19.958,4 Kwp e delle relative opere di connessione da realizzarsi in agro dei COmuni di Tolve (PZ) e Oppido Lucano (PZ). SOLARTRACK SOLARTRACK",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Melfi",
-      "municipalities_list": [
-        "Melfi"
-      ],
-      "power": "19,9906 MW",
-      "power_mw": 19.9906,
-      "proponent": "COLUMNS ENERGY S.p.A.",
-      "title": "Costruzione ed esercizio di un impianto fotovoltaico della potenza complessiva pari a 19,9906 MW da ubicare nel comune di Melfi (PZ) in località Camarda vecchia al foglio 16 particelle 14 e 15 e delle relative opere connesse. COLUMNS ENERGY",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128140",
-      "status": "VIA regionale",
-      "project_type": "Fotovoltaico",
-      "procedure": "VIA regionale",
-      "external_id": "basilicata_128140",
-      "plain_text_sample": "Costruzione ed esercizio di un impianto fotovoltaico della potenza complessiva pari a 19,9906 MW da ubicare nel comune di Melfi (PZ) in località Camarda vecchia al foglio 16 particelle 14 e 15 e delle relative opere connesse. COLUMNS ENERGY COLUMNS ENERGY S.p.A.",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Tito",
-      "municipalities_list": [
-        "Tito"
-      ],
-      "power": "7,34045 MW",
-      "power_mw": 7.34045,
-      "proponent": "TITO ENERGIA GROUP S.r.l.",
-      "title": "Progetto per la costruzione e es. di un imp. fotovoltaico della pot.pari a7,34045 MW,da ubicare nel Comune di Tito(PZ) in loc.Masseria Mezzana al foglio7particelle8-16-207-213-216-217-219-282-283-284-285-286-287-288-333. TITO ENERGIA GROUP S.R.L.",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=100003&otype=1011&id=128556",
-      "status": "VIA regionale",
-      "project_type": "Fotovoltaico",
-      "procedure": "VIA regionale",
-      "external_id": "basilicata_128556",
-      "plain_text_sample": "Progetto per la costruzione e es. di un imp. fotovoltaico della pot.pari a7,34045 MW,da ubicare nel Comune di Tito(PZ) in loc.Masseria Mezzana al foglio7particelle8-16-207-213-216-217-219-282-283-284-285-286-287-288-333. TITO ENERGIA GROUP S.R.L. TITO ENERGIA GROUP S.R.L.",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Tolve",
-      "municipalities_list": [
-        "Tolve"
-      ],
-      "power": "17,875 MW",
-      "power_mw": 17.875,
-      "proponent": "CAT ENERGY S.r.l.",
-      "title": "Costruzione ed Esercizio di un Impianto Fotovoltaico e relative opere connesse della Potenza Nominale di 17,875 MW – TOLVE – PZ, località “FORLETO VECCHIO”. Proponente: CAT ENERGY S.r.l.",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=145351&otype=1011&id=147887",
-      "status": "VIA regionale - Anno 2025",
-      "project_type": "Fotovoltaico",
-      "procedure": "VIA regionale - Anno 2025",
-      "external_id": "basilicata_147887",
-      "plain_text_sample": "Costruzione ed Esercizio di un Impianto Fotovoltaico e relative opere connesse della Potenza Nominale di 17,875 MW – TOLVE – PZ, località “FORLETO VECCHIO”. Proponente: CAT ENERGY S.r.l. Proponente: CAT ENERGY S.r.l.",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
-    },
-    {
-      "source": "Basilicata",
-      "source_label": "Basilicata",
-      "source_group": "Basilicata",
-      "_merged_sources": [
-        "Basilicata"
-      ],
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Montemilone, Venosa",
-      "municipalities_list": [
-        "Montemilone",
-        "Venosa"
-      ],
-      "power": "64,92 MWp",
-      "power_mw": 64.92,
-      "proponent": "ERP 1 S.r.l.",
-      "title": "Impianto agrivoltaico avanzato “MONTEMILONE”, di 64,92 MWp, da realizzarsi nel Comune di Montemilone (PZ) in C.da Ostiapane, e delle opere di connessionein agro al Comune di Montemilone (PZ), Venosa (PZ) e Spinazzola (BT). Proponente: ERP 1 S.r.l.",
-      "url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=145351&otype=1011&id=148284",
-      "status": "VIA regionale - Anno 2025",
-      "project_type": "Agrivoltaico",
-      "procedure": "VIA regionale - Anno 2025",
-      "external_id": "basilicata_148284",
-      "plain_text_sample": "Impianto agrivoltaico avanzato “MONTEMILONE”, di 64,92 MWp, da realizzarsi nel Comune di Montemilone (PZ) in C.da Ostiapane, e delle opere di connessionein agro al Comune di Montemilone (PZ), Venosa (PZ) e Spinazzola (BT). Proponente: ERP 1 S.r.l. Proponente: ERP 1 S.r.l.",
-      "updated_at": "2026-05-15T19:43:51",
-      "is_terna": false,
-      "is_punctual": true,
-      "numero_pratiche": 0,
-      "province_deduced": false,
-      "municipalities_deduced": false
     }
   ],
   "top_projects": [
@@ -36451,13 +35635,13 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-05-15T11:13:01",
+    "generated_at": "2026-05-16T00:34:59",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1091,
-    "records_after": 1074,
+    "records_before": 1109,
+    "records_after": 1092,
     "merged_or_removed": 17,
     "accepted_pairs": 17,
-    "rejected_pairs": 40,
+    "rejected_pairs": 41,
     "field_repairs": 46,
     "manual_actions": 10,
     "manual_proponent_overrides": 10,
@@ -36485,7 +35669,7 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-05-15T11:13:13",
+      "generated_at": "2026-05-16T00:35:14",
       "targets": 0,
       "recovered": 0,
       "failed": 0,

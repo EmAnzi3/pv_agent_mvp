@@ -201,15 +201,57 @@ class StaticDashboardBuilder:
 
     def _read_snapshot(self, path: Path) -> list[dict[str, Any]]:
         raw = self._read_text_with_fallback(path)
-        sample = raw[:4096]
 
-        try:
-            dialect = csv.Sniffer().sniff(sample, delimiters=",;|\t")
-        except csv.Error:
-            dialect = csv.excel
+        # Il file projects_snapshot_*.csv viene generato internamente dal ReportBuilder.
+        # Non usare csv.Sniffer: con titoli lunghi e virgole nel testo pu? interpretare male
+        # il dialetto e sfalsare le colonne, producendo source assurde tipo "positivo",
+        # "187_0", "pz", ecc.
+        reader = csv.DictReader(
+            raw.splitlines(),
+            delimiter=",",
+            quotechar='"',
+            doublequote=True,
+            skipinitialspace=False,
+        )
 
-        reader = csv.DictReader(raw.splitlines(), dialect=dialect)
-        return [dict(row) for row in reader]
+        if not reader.fieldnames:
+            raise ValueError(f"CSV snapshot senza header: {path}")
+
+        expected = [
+            "project_name",
+            "proponent",
+            "region",
+            "province",
+            "municipalities",
+            "project_type",
+            "power_mw",
+            "status",
+            "source",
+            "url",
+            "updated_at",
+        ]
+
+        missing = [col for col in expected if col not in reader.fieldnames]
+        if missing:
+            raise ValueError(
+                f"CSV snapshot con colonne mancanti {missing}. "
+                f"Colonne trovate: {reader.fieldnames}"
+            )
+
+        rows: list[dict[str, Any]] = []
+
+        for line_no, row in enumerate(reader, start=2):
+            # Se esiste la chiave None, csv ha trovato pi? campi dell'header:
+            # significa riga malformata o parsing errato. Meglio fallire che produrre dashboard sporca.
+            if None in row:
+                raise ValueError(
+                    f"CSV snapshot malformato alla riga {line_no}: campi extra={row[None]!r}"
+                )
+
+            rows.append(dict(row))
+
+        return rows
+
 
     def _read_text_with_fallback(self, path: Path) -> str:
         for encoding in ["utf-8-sig", "utf-8", "cp1252", "latin-1"]:

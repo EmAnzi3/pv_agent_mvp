@@ -1,22 +1,30 @@
-﻿@echo off
+@echo off
 setlocal enabledelayedexpansion
 
 REM ==========================================================
 REM PV Agent - aggiornamento manuale SENZA DOCKER
-REM Percorso previsto:
-REM C:\Users\anzillotti\OneDrive - CGT Edilizia S.p.a\Documenti\GitHub\pv_agent_mvp
+REM Flusso: Python locale + SQLite + GitHub Desktop
 REM ==========================================================
 
 cd /d "%~dp0"
+
+set "PYTHON_EXE=.\.venv\Scripts\python.exe"
+set "DATA_JSON=.\reports\site\data.json"
+set "SITE_HTML=.\reports\site\index.html"
+set "DOCS_DATA=.\docs\data.json"
+set "DOCS_HTML=.\docs\index.html"
+set "PREVIOUS_DATA=.\tmp\previous_data.json"
+set "CHANGE_HTML=.\reports\change_reports\changes_latest.html"
+set "CHANGE_CSV=.\reports\change_reports\changes_latest.csv"
 
 echo.
 echo ==========================================================
 echo [0/8] Controllo ambiente Python
 echo ==========================================================
 
-if not exist ".venv\Scripts\python.exe" (
+if not exist "%PYTHON_EXE%" (
     echo ERRORE: ambiente virtuale Python non trovato.
-    echo Atteso: .venv\Scripts\python.exe
+    echo Atteso: %PYTHON_EXE%
     echo.
     echo Prima esegui:
     echo py -m venv .venv
@@ -42,11 +50,11 @@ echo ==========================================================
 echo [1/8] Salvataggio snapshot precedente
 echo ==========================================================
 
-if exist "docs\data.json" (
-    copy /Y "docs\data.json" "tmp\previous_data.json" >nul
+if exist "%DOCS_DATA%" (
+    copy /Y "%DOCS_DATA%" "%PREVIOUS_DATA%" >nul
     echo Vecchio docs\data.json copiato in tmp\previous_data.json
 ) else (
-    echo {"records":[]} > "tmp\previous_data.json"
+    echo {"records":[]}> "%PREVIOUS_DATA%"
     echo Nessun docs\data.json precedente: creato snapshot vuoto.
 )
 
@@ -55,7 +63,7 @@ echo ==========================================================
 echo [2/8] Esecuzione pipeline locale Python
 echo ==========================================================
 
-".\.venv\Scripts\python.exe" -m app.run_pipeline
+"%PYTHON_EXE%" -m app.run_pipeline
 if errorlevel 1 (
     echo.
     echo ERRORE: la pipeline Python e' fallita.
@@ -64,34 +72,34 @@ if errorlevel 1 (
     exit /b 1
 )
 
-if not exist ".\reports\site\data.json" (
+if not exist "%DATA_JSON%" (
     echo.
-    echo ERRORE: reports\site\data.json non trovato.
+    echo ERRORE: data.json non trovato dopo la pipeline.
+    echo Atteso: %DATA_JSON%
     pause
     exit /b 1
 )
 
-if not exist ".\reports\site\index.html" (
+if not exist "%SITE_HTML%" (
     echo.
-    echo ERRORE: reports\site\index.html non trovato.
+    echo ERRORE: index.html non trovato dopo la pipeline.
+    echo Atteso: %SITE_HTML%
     pause
     exit /b 1
 )
 
 echo.
 echo ==========================================================
-echo [3/8] Normalizzazione province
+echo [3A/8] Normalizzazione province
 echo ==========================================================
 
 if not exist ".\scripts\normalize_province_codes.py" (
     echo ERRORE: scripts\normalize_province_codes.py non trovato.
-    echo Copia il file nella cartella scripts e rilancia.
     pause
     exit /b 1
 )
 
-".\.venv\Scripts\python.exe" ".\scripts\normalize_province_codes.py" --data ".\reports\site\data.json" --audit ".\reports\province_normalization_audit.csv"
-
+"%PYTHON_EXE%" ".\scripts\normalize_province_codes.py" --data "%DATA_JSON%" --audit ".\reports\province_normalization_audit.csv"
 if errorlevel 1 (
     echo.
     echo ERRORE: normalizzazione province fallita.
@@ -106,20 +114,17 @@ echo ==========================================================
 
 if not exist ".\scripts\manual_location_overrides.py" (
     echo ERRORE: scripts\manual_location_overrides.py non trovato.
-    echo Copia il file nella cartella scripts e rilancia.
     pause
     exit /b 1
 )
 
-".\.venv\Scripts\python.exe" ".\scripts\manual_location_overrides.py" --data ".\reports\site\data.json" --audit ".\reports\manual_location_overrides_audit.csv"
-
+"%PYTHON_EXE%" ".\scripts\manual_location_overrides.py" --data "%DATA_JSON%" --audit ".\reports\manual_location_overrides_audit.csv"
 if errorlevel 1 (
     echo.
     echo ERRORE: override manuali localizzazione falliti.
     pause
     exit /b 1
 )
-
 
 echo.
 echo ==========================================================
@@ -128,20 +133,17 @@ echo ==========================================================
 
 if not exist ".\scripts\manual_calabria_overrides.py" (
     echo ERRORE: scripts\manual_calabria_overrides.py non trovato.
-    echo Copia il file nella cartella scripts e rilancia.
     pause
     exit /b 1
 )
 
-".\.venv\Scripts\python.exe" ".\scripts\manual_calabria_overrides.py" --data ".\reports\site\data.json" --audit ".\reports\manual_calabria_overrides_audit.csv"
-
+"%PYTHON_EXE%" ".\scripts\manual_calabria_overrides.py" --data "%DATA_JSON%" --audit ".\reports\manual_calabria_overrides_audit.csv"
 if errorlevel 1 (
     echo.
-    echo ERRORE: override manuali Calabria falliti.
+    echo ERRORE: override Calabria fallito.
     pause
     exit /b 1
 )
-
 
 echo.
 echo ==========================================================
@@ -150,28 +152,30 @@ echo ==========================================================
 
 if not exist ".\scripts\manual_sardegna_overrides.py" (
     echo ERRORE: scripts\manual_sardegna_overrides.py non trovato.
-    echo Copia il file nella cartella scripts e rilancia.
     pause
     exit /b 1
 )
 
-".\.venv\Scripts\python.exe" ".\scripts\manual_sardegna_overrides.py" --data ".\reports\site\data.json" --audit ".\reports\manual_sardegna_overrides_audit.csv"
+"%PYTHON_EXE%" ".\scripts\manual_sardegna_overrides.py" --data "%DATA_JSON%" --audit ".\reports\manual_sardegna_overrides_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: override Sardegna fallito.
+    pause
+    exit /b 1
+)
+
 echo.
 echo ==========================================================
 echo [3E/8] Override link Toscana STAR
 echo ==========================================================
-".\.venv\Scripts\python.exe" ".\scripts\manual_toscana_url_overrides.py" --data ".\reports\site\data.json" --audit ".\reports\manual_toscana_url_overrides_audit.csv"
-echo.
-echo ==========================================================
-echo [3F/8] Override manuali Umbria
-echo ==========================================================
-".\.venv\Scripts\python.exe" ".\scripts\manual_umbria_overrides.py" --data ".\reports\site\data.json" --audit ".\reports\manual_umbria_overrides_audit.csv"
-if errorlevel 1 (
-    echo.
-    echo ERRORE: override Umbria fallito.
+
+if not exist ".\scripts\manual_toscana_url_overrides.py" (
+    echo ERRORE: scripts\manual_toscana_url_overrides.py non trovato.
     pause
     exit /b 1
 )
+
+"%PYTHON_EXE%" ".\scripts\manual_toscana_url_overrides.py" --data "%DATA_JSON%" --audit ".\reports\manual_toscana_url_overrides_audit.csv"
 if errorlevel 1 (
     echo.
     echo ERRORE: override link Toscana fallito.
@@ -179,9 +183,40 @@ if errorlevel 1 (
     exit /b 1
 )
 
+echo.
+echo ==========================================================
+echo [3F/8] Override manuali Umbria
+echo ==========================================================
+
+if not exist ".\scripts\manual_umbria_overrides.py" (
+    echo ERRORE: scripts\manual_umbria_overrides.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\manual_umbria_overrides.py" --data "%DATA_JSON%" --audit ".\reports\manual_umbria_overrides_audit.csv"
 if errorlevel 1 (
     echo.
-    echo ERRORE: override manuali Sardegna falliti.
+    echo ERRORE: override Umbria fallito.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
+echo [3G/8] Normalizzazione label fonti
+echo ==========================================================
+
+if not exist ".\scripts\normalize_source_display_labels.py" (
+    echo ERRORE: scripts\normalize_source_display_labels.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\normalize_source_display_labels.py" --data "%DATA_JSON%"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: normalizzazione label fonti fallita.
     pause
     exit /b 1
 )
@@ -191,11 +226,10 @@ echo ==========================================================
 echo [4/8] Sync HTML dopo normalizzazioni e override
 echo ==========================================================
 
-".\.venv\Scripts\python.exe" -m app.dashboard_data_sync --data ".\reports\site\data.json" --html ".\reports\site\index.html" --no-backup
-
+"%PYTHON_EXE%" -m app.dashboard_data_sync
 if errorlevel 1 (
     echo.
-    echo ERRORE: sync HTML dopo normalizzazioni e override fallito.
+    echo ERRORE: sync dashboard_data_sync fallito.
     pause
     exit /b 1
 )
@@ -205,12 +239,13 @@ echo ==========================================================
 echo [5/8] Generazione report cambiamenti
 echo ==========================================================
 
-".\.venv\Scripts\python.exe" ".\scripts\compare_json_report.py" ^
-  --old ".\tmp\previous_data.json" ^
-  --new ".\reports\site\data.json" ^
-  --out-html ".\reports\change_reports\changes_latest.html" ^
-  --out-csv ".\reports\change_reports\changes_latest.csv"
+if not exist ".\scripts\compare_json_report.py" (
+    echo ERRORE: scripts\compare_json_report.py non trovato.
+    pause
+    exit /b 1
+)
 
+"%PYTHON_EXE%" ".\scripts\compare_json_report.py" --old "%PREVIOUS_DATA%" --new "%DATA_JSON%" --out-html "%CHANGE_HTML%" --out-csv "%CHANGE_CSV%"
 if errorlevel 1 (
     echo.
     echo ERRORE: generazione report cambiamenti fallita.
@@ -223,8 +258,19 @@ echo ==========================================================
 echo [6/8] Copia dashboard aggiornata in docs
 echo ==========================================================
 
-copy /Y ".\reports\site\data.json" ".\docs\data.json" >nul
-copy /Y ".\reports\site\index.html" ".\docs\index.html" >nul
+copy /Y "%DATA_JSON%" "%DOCS_DATA%" >nul
+if errorlevel 1 (
+    echo ERRORE: copia docs\data.json fallita.
+    pause
+    exit /b 1
+)
+
+copy /Y "%SITE_HTML%" "%DOCS_HTML%" >nul
+if errorlevel 1 (
+    echo ERRORE: copia docs\index.html fallita.
+    pause
+    exit /b 1
+)
 
 echo Dashboard aggiornata:
 echo - docs\data.json
@@ -235,28 +281,38 @@ echo ==========================================================
 echo [7/8] Apertura report locale
 echo ==========================================================
 
-start "" ".\reports\change_reports\changes_latest.html"
+if exist "%CHANGE_HTML%" (
+    start "" "%CHANGE_HTML%"
+) else (
+    echo Report HTML non trovato: %CHANGE_HTML%
+)
 
 echo.
 echo ==========================================================
 echo [8/8] Riepilogo Git
 echo ==========================================================
 
-git status --short
+git status
 
 echo.
 echo Report cambiamenti:
-echo reports\change_reports\changes_latest.html
-echo reports\change_reports\changes_latest.csv
+echo %CHANGE_HTML%
+echo %CHANGE_CSV%
+
+if exist ".\reports\province_normalization_audit.csv" (
+    echo.
+    echo Audit normalizzazione province:
+    echo reports\province_normalization_audit.csv
+)
+
 echo.
-echo Audit generati:
-echo - reports\province_normalization_audit.csv
-echo - reports\manual_location_overrides_audit.csv
-echo - reports\manual_calabria_overrides_audit.csv
-echo - reports\manual_sardegna_overrides_audit.csv
+echo ==========================================================
+echo Processo completato.
+echo Se i controlli sono ok: commit + push da GitHub Desktop.
+echo ==========================================================
 echo.
-echo Ora apri GitHub Desktop, verifica i file modificati, poi fai commit + push manuale.
-echo.
+
 pause
+endlocal
 
 
