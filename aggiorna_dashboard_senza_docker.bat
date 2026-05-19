@@ -204,6 +204,24 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3G/8] Override link Lombardia SILVIA
+echo ==========================================================
+if not exist ".\scripts\manual_lombardia_url_overrides.py" (
+    echo ERRORE: scripts\manual_lombardia_url_overrides.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\manual_lombardia_url_overrides.py" --data "%DATA_JSON%" --audit ".\reports\manual_lombardia_url_overrides_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: override link Lombardia fallito.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [3G/8] Normalizzazione label fonti
 echo ==========================================================
 
