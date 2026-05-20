@@ -790,6 +790,10 @@ class MaseProvvedimentiCollector(BaseCollector):
     # ------------------------------------------------------------------
 
     def _is_relevant(self, detail: dict) -> bool:
+        # Esclude provvedimenti con esito negativo: non sono opportunit? operative.
+        if str(detail.get("outcome", "")).strip().lower() == "negativo":
+            return False
+
         text = " ".join(
             [
                 detail.get("title") or "",
