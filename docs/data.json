@@ -1,40 +1,45 @@
 {
   "summary": {
-    "generated_at": "2026-05-26 21:25:02",
-    "snapshot_file": "projects_snapshot_20260526_192435.csv",
-    "total_records": 1101,
-    "punctual_records": 1019,
+    "generated_at": "2026-05-27 15:32:10",
+    "snapshot_file": "projects_snapshot_20260527_133110.csv",
+    "total_records": 1106,
+    "punctual_records": 1024,
     "terna_records": 82,
-    "total_mw_punctual": 28806.825,
+    "total_mw_punctual": 28971.191,
     "total_mw_terna": 144079.108,
     "source_counts": [
       {
-        "source": "Lazio",
+        "source": "lazio",
         "label": "Lazio",
         "count": 316
       },
       {
-        "source": "Sicilia",
+        "source": "sicilia",
         "label": "Sicilia",
         "count": 288
       },
       {
-        "source": "MASE",
+        "source": "mase_provvedimenti",
         "label": "MASE",
-        "count": 194
+        "count": 99
       },
       {
-        "source": "Terna Econnextion",
+        "source": "mase",
+        "label": "MASE",
+        "count": 99
+      },
+      {
+        "source": "terna_econnextion",
         "label": "Terna Econnextion",
         "count": 82
       },
       {
-        "source": "Puglia",
+        "source": "sistema_puglia_energia",
         "label": "Puglia",
         "count": 70
       },
       {
-        "source": "Lombardia",
+        "source": "lombardia",
         "label": "Lombardia",
         "count": 62
       },
@@ -44,7 +49,7 @@
         "count": 17
       },
       {
-        "source": "Emilia-Romagna",
+        "source": "emilia_romagna",
         "label": "Emilia-Romagna",
         "count": 15
       },
@@ -54,17 +59,17 @@
         "count": 15
       },
       {
-        "source": "Toscana",
+        "source": "toscana",
         "label": "Toscana",
         "count": 12
       },
       {
-        "source": "Veneto",
+        "source": "veneto",
         "label": "Veneto",
         "count": 12
       },
       {
-        "source": "Campania",
+        "source": "campania",
         "label": "Campania",
         "count": 9
       },
@@ -76,10 +81,10 @@
       {
         "source": "Sardegna",
         "label": "Sardegna",
-        "count": 2
+        "count": 3
       },
       {
-        "source": "Piemonte",
+        "source": "piemonte",
         "label": "Piemonte",
         "count": 1
       }
@@ -107,13 +112,13 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 127,
-        "punctual_mw": 5205.915,
+        "punctual_count": 131,
+        "punctual_mw": 5350.282,
         "terna_count": 5,
         "terna_mw": 36621.404,
         "terna_practices": 0,
-        "total_mw": 41827.319,
-        "priority_score": 18.9
+        "total_mw": 41971.686,
+        "priority_score": 19.2
       },
       {
         "region": "Lombardia",
@@ -900,7 +905,7 @@
       ]
     },
     "quality": {
-      "punctual_records": 1020,
+      "punctual_records": 1024,
       "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 8,
@@ -933,26 +938,26 @@
         "completeness_pct": 89.2
       },
       {
-        "source": "mase",
-        "source_label": "MASE",
-        "count": 98,
-        "missing_mw": 2,
-        "missing_province": 0,
-        "missing_municipality": 0,
-        "province_deduced": 0,
-        "municipalities_deduced": 0,
-        "completeness_pct": 99.3
-      },
-      {
         "source": "mase_provvedimenti",
         "source_label": "MASE",
-        "count": 96,
+        "count": 99,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
         "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 100.0
+      },
+      {
+        "source": "mase",
+        "source_label": "MASE",
+        "count": 99,
+        "missing_mw": 2,
+        "missing_province": 0,
+        "missing_municipality": 0,
+        "province_deduced": 0,
+        "municipalities_deduced": 0,
+        "completeness_pct": 99.3
       },
       {
         "source": "terna_econnextion",
@@ -6523,6 +6528,37 @@
       "project_key": "prj:7587c1173a6f8bf4"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Istanza per l'avvio del procedimento di Valutazione di Impatto Ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto agrivoltaico denominato \"Altedo\". Potenza pari a 51807,28 kWp.",
+      "proponent": "HF Solar 18 S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "BO",
+      "municipalities": "Malalbergo, Baricella",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 51.807,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6160",
+      "updated_at": "2026-05-27T13:31:07.189631",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Istanza per l'avvio del procedimento di Valutazione di Impatto Ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto agrivoltaico denominato \"Altedo\". Potenza pari a 51807,28 kWp."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6160"
+      ],
+      "project_key": "url:1c4a8370948e1b08"
+    },
+    {
       "source": "toscana",
       "source_group": "toscana",
       "source_label": "Toscana",
@@ -7190,7 +7226,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-05-26T19:20:15.295390",
+      "updated_at": "2026-05-27T13:25:22.347616",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -10159,6 +10195,37 @@
       "project_key": "url:7c2a67ce35364978"
     },
     {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un impianto fotovoltaico su cava non suscettibile di ulteriore sfruttamento, denominato \"PVC001 Ruvo Jazzo de Rei\", della potenza di 37 MW, da realizzarsi nei comuni di Ruvo di Puglia (BA) e Bitonto (BA), includente le relative opere di connessione alla RTN site anche nel territorio comunale di Terlizzi (BA).",
+      "proponent": "Santa Barbara Energia S.r.l.",
+      "region": "Puglia",
+      "province": "BA",
+      "municipalities": "RUVO DI PUGLIA",
+      "project_type": "Fotovoltaico",
+      "power_mw": 37.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10348",
+      "updated_at": "2026-05-27T13:27:46.421452",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto fotovoltaico su cava non suscettibile di ulteriore sfruttamento, denominato \"PVC001 Ruvo Jazzo de Rei\", della potenza di 37 MW, da realizzarsi nei comuni di Ruvo di Puglia (BA) e Bitonto (BA), includente le relative opere di connessione alla RTN site anche nel territorio comunale di Terlizzi (BA)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/10348"
+      ],
+      "project_key": "url:d79b8f93d4c9a417"
+    },
+    {
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
@@ -11342,6 +11409,37 @@
         "https://www.regione.calabria.it/bandi/costruzione-ed-esercizio-di-un-impianto-agrivoltaico-dalla-potenza-nominale-di-3151-mwp-comprensivo-delle-relative-infrastrutture-indispensabili-delle-opere-connesse-tra-cui-un-sistema-di/"
       ],
       "project_key": "url:295067a3e56a2d2f"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico denominato \"San Donaci\" della potenza pari a 31,26 MW e delle relative opere di connessione alla RTN, da realizzarsi nel territorio dei comuni di San Donaci (BR) e",
+      "proponent": "Elios S.r.l",
+      "region": "Puglia",
+      "province": "BR",
+      "municipalities": "San Donaci",
+      "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
+      "power_mw": 31.26,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6157",
+      "updated_at": "2026-05-27T13:31:07.189631",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico denominato \"San Donaci\" della potenza pari a 31,26 MW e delle relative opere di connessione alla RTN, da realizzarsi nel territorio dei comuni di San Donaci (BR) e"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6157"
+      ],
+      "project_key": "url:880543bde5a15c10"
     },
     {
       "source": "sicilia",
@@ -12723,7 +12821,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-05-26T19:20:15.295390",
+      "updated_at": "2026-05-27T13:25:22.347616",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -12957,6 +13055,37 @@
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=988&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:458c596916efc66d"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"Masseria Palombi\", della potenza complessiva di 24,30 MWp, e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Nardò (LE).",
+      "proponent": "Grupotec Solar Italia 3 S.r.l.",
+      "region": "Puglia",
+      "province": "LE",
+      "municipalities": "Nardò",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 24.3,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6161",
+      "updated_at": "2026-05-27T13:31:07.189631",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"Masseria Palombi\", della potenza complessiva di 24,30 MWp, e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Nardò (LE)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6161"
+      ],
+      "project_key": "url:cb85c105796590a0"
     },
     {
       "source": "lazio",
@@ -14211,7 +14340,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-05-26T19:20:15.295390",
+      "updated_at": "2026-05-27T13:25:22.347616",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21032,7 +21161,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-05-26T19:20:15.295390",
+      "updated_at": "2026-05-27T13:25:22.347616",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21280,7 +21409,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-05-26T19:20:15.295390",
+      "updated_at": "2026-05-27T13:25:22.347616",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -23481,7 +23610,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-05-26T19:20:15.295390",
+      "updated_at": "2026-05-27T13:25:22.347616",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30431,7 +30560,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-05-26T19:20:28.703430",
+      "updated_at": "2026-05-27T13:26:46.894473",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -35912,10 +36041,10 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-05-26T21:25:02",
+    "generated_at": "2026-05-27T15:32:10",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1122,
-    "records_after": 1102,
+    "records_before": 1126,
+    "records_after": 1106,
     "merged_or_removed": 20,
     "accepted_pairs": 20,
     "rejected_pairs": 40,
@@ -35946,7 +36075,7 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-05-26T21:25:13",
+      "generated_at": "2026-05-27T15:32:27",
       "targets": 0,
       "recovered": 0,
       "failed": 0,

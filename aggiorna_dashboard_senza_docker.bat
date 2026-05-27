@@ -222,6 +222,42 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3H/8] Esclusione progetti solo accumulo
+echo ==========================================================
+if not exist ".\scripts\exclude_storage_only_projects.py" (
+    echo ERRORE: scripts\exclude_storage_only_projects.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\exclude_storage_only_projects.py" --data "%DATA_JSON%" --audit ".\reports\storage_only_exclusions_latest.csv" --apply
+if errorlevel 1 (
+    echo.
+    echo ERRORE: esclusione progetti solo accumulo fallita.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
+echo [3I/8] Override localizzazione MASE
+echo ==========================================================
+if not exist ".\scripts\manual_mase_location_overrides.py" (
+    echo ERRORE: scripts\manual_mase_location_overrides.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\manual_mase_location_overrides.py" --data "%DATA_JSON%" --audit ".\reports\manual_mase_location_overrides_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: override localizzazione MASE fallito.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [3G/8] Normalizzazione label fonti
 echo ==========================================================
 
