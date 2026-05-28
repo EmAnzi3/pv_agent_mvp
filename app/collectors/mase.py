@@ -234,7 +234,6 @@ PROVINCE_TO_REGION = {
 # La usiamo con priorità sul titolo, poi sul testo arricchito.
 COMUNE_TO_PROVINCE = {
     "venezia": "VE",
-    "taranto": "TA",
     "gonnesa": "SU",
     "giarratana": "RG",
     "nardo": "LE",
@@ -781,14 +780,19 @@ class MaseCollector(BaseCollector):
 
         Questo evita di prendere province spurie da footer, menu, riferimenti accessori o documenti allegati.
         """
+        # Ordine conservativo:
+        # - titolo progetto;
+        # - comuni noti SOLO nel titolo;
+        # - dati scheda Info;
+        # - testo riga risultato.
+        #
+        # Non usiamo la mappa comuni su raw_text/enriched_text:
+        # nei testi MASE larghi compaiono riferimenti spurii, es. Taranto.
         return (
             self._extract_province(title)
             or self._province_from_known_municipality(title)
-            or self._extract_province(raw_text)
-            or self._province_from_known_municipality(raw_text)
             or info_data.get("province")
-            or self._province_from_known_municipality(enriched_text)
-            or self._extract_province(enriched_text)
+            or self._extract_province(raw_text)
         )
 
     def _resolve_municipalities(
@@ -812,11 +816,8 @@ class MaseCollector(BaseCollector):
         if municipalities:
             return municipalities
 
-        municipalities = self._municipalities_from_known_map(enriched_text)
-
-        if municipalities:
-            return municipalities
-
+        # Su enriched_text non usare la mappa comuni noti:
+        # pu? intercettare comuni spurii presenti nel template pagina.
         return self._extract_municipalities(enriched_text)
 
     # ------------------------------------------------------------------
@@ -879,7 +880,6 @@ class MaseCollector(BaseCollector):
         province = (
             self._extract_province(title or "")
             or self._province_from_known_municipality(title or "")
-            or self._province_from_known_municipality(plain)
             or self._extract_province(plain)
         )
 
@@ -888,7 +888,6 @@ class MaseCollector(BaseCollector):
         municipalities = (
             self._extract_municipalities(title or "")
             or self._municipalities_from_known_map(title or "")
-            or self._municipalities_from_known_map(plain)
             or self._extract_municipalities(plain)
         )
 

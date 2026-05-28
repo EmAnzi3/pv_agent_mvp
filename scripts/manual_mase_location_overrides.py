@@ -8,6 +8,13 @@ from pathlib import Path
 
 
 OVERRIDES = {
+    "https://va.mite.gov.it/it-IT/Oggetti/Info/8018": {
+        "region": "Piemonte",
+        "province": "TO",
+        "municipalities": "Lombardore, San Benigno Canavese",
+        "power_mw": 18.77382,
+        "reason": "manual_mase_8018_lombardore_location_power_fix",
+    },
     "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6160": {
         "region": "Emilia-Romagna",
         "province": "BO",
@@ -58,7 +65,10 @@ def main() -> int:
             "municipalities": r.get("municipalities", ""),
         }
 
-        for field in ["region", "province", "municipalities"]:
+        for field in ["region", "province", "municipalities", "power_mw"]:
+            if field not in override:
+                continue
+
             if r.get(field) != override[field]:
                 r[field] = override[field]
                 changed += 1

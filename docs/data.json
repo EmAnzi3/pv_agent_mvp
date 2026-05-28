@@ -1,17 +1,17 @@
 {
   "summary": {
-    "generated_at": "2026-05-27 15:32:10",
-    "snapshot_file": "projects_snapshot_20260527_133110.csv",
-    "total_records": 1106,
-    "punctual_records": 1024,
+    "generated_at": "2026-05-28 20:58:14",
+    "snapshot_file": "projects_snapshot_20260528_185755.csv",
+    "total_records": 1111,
+    "punctual_records": 1029,
     "terna_records": 82,
-    "total_mw_punctual": 28971.191,
+    "total_mw_punctual": 29262.279,
     "total_mw_terna": 144079.108,
     "source_counts": [
       {
         "source": "lazio",
         "label": "Lazio",
-        "count": 316
+        "count": 317
       },
       {
         "source": "sicilia",
@@ -19,14 +19,14 @@
         "count": 288
       },
       {
-        "source": "mase_provvedimenti",
-        "label": "MASE",
-        "count": 99
-      },
-      {
         "source": "mase",
         "label": "MASE",
-        "count": 99
+        "count": 101
+      },
+      {
+        "source": "mase_provvedimenti",
+        "label": "MASE",
+        "count": 100
       },
       {
         "source": "terna_econnextion",
@@ -41,7 +41,7 @@
       {
         "source": "lombardia",
         "label": "Lombardia",
-        "count": 62
+        "count": 63
       },
       {
         "source": "Calabria",
@@ -102,33 +102,33 @@
       },
       {
         "region": "Lazio",
-        "punctual_count": 325,
-        "punctual_mw": 6256.705,
+        "punctual_count": 327,
+        "punctual_mw": 6458.265,
         "terna_count": 5,
         "terna_mw": 6377.438,
         "terna_practices": 0,
-        "total_mw": 12634.143,
-        "priority_score": 23.8
+        "total_mw": 12835.703,
+        "priority_score": 24.1
       },
       {
         "region": "Puglia",
-        "punctual_count": 131,
-        "punctual_mw": 5350.282,
+        "punctual_count": 133,
+        "punctual_mw": 5425.282,
         "terna_count": 5,
         "terna_mw": 36621.404,
         "terna_practices": 0,
-        "total_mw": 41971.686,
-        "priority_score": 19.2
+        "total_mw": 42046.686,
+        "priority_score": 19.4
       },
       {
         "region": "Lombardia",
-        "punctual_count": 63,
-        "punctual_mw": 1287.352,
+        "punctual_count": 64,
+        "punctual_mw": 1301.88,
         "terna_count": 4,
         "terna_mw": 3813.708,
         "terna_practices": 0,
-        "total_mw": 5101.06,
-        "priority_score": 5.2
+        "total_mw": 5115.588,
+        "priority_score": 5.3
       },
       {
         "region": "Sardegna",
@@ -801,6 +801,37 @@
         "project_key": "prj:2e60a73c08d28881"
       },
       {
+        "source": "lazio",
+        "source_group": "lazio",
+        "source_label": "Lazio",
+        "title": "Progetto di un impianto agrivoltaico e opere connesse da realizzarsi nella provincia di Viterbo, nei comuni di Tarquinia, Tuscania e Montalto di Castro, di potenza 141,56 MWp, denominato TARQUINIA",
+        "proponent": "RM SOLAR SRL",
+        "region": "Lazio",
+        "province": "VT",
+        "municipalities": "Montalto Di Castro",
+        "project_type": "VIA",
+        "power_mw": 141.56,
+        "status": "",
+        "url": "https://regionelazio.app.box.com/v/VIA-004-2026",
+        "updated_at": "2026-05-28T18:47:30.159574",
+        "numero_pratiche": 0,
+        "is_terna": false,
+        "is_punctual": true,
+        "province_deduced": false,
+        "municipalities_deduced": false,
+        "_merged_sources": [
+          "lazio"
+        ],
+        "_dedupe_group_size": 1,
+        "_dedupe_titles": [
+          "Progetto di un impianto agrivoltaico e opere connesse da realizzarsi nella provincia di Viterbo, nei comuni di Tarquinia, Tuscania e Montalto di Castro, di potenza 141,56 MWp, denominato TARQUINIA"
+        ],
+        "_dedupe_urls": [
+          "https://regionelazio.app.box.com/v/VIA-004-2026"
+        ],
+        "project_key": "url:6ea662617de499b3"
+      },
+      {
         "source": "sicilia",
         "source_group": "sicilia",
         "source_label": "Sicilia",
@@ -861,37 +892,6 @@
           "https://va.mite.gov.it/it-IT/Oggetti/Info/11806"
         ],
         "project_key": "url:276dbaacb14e2336"
-      },
-      {
-        "source": "sicilia",
-        "source_group": "sicilia",
-        "source_label": "Sicilia",
-        "title": "IMPIANTO AGRO-FOTOVOLTAICO DENOMINATO “S&P 6” CON POTENZA DI PICCO 139.846,50 KWP E POTENZA NOMINALE 100.000,00 KW",
-        "proponent": "S&P 6 SRL",
-        "region": "Sicilia",
-        "province": "PA",
-        "municipalities": "Monreale",
-        "project_type": "V.I.A. (art.23 - 27bis)",
-        "power_mw": 139.846,
-        "status": "",
-        "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1041&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-        "updated_at": "2026-05-01T19:12:15.455684",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "sicilia"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "IMPIANTO AGRO-FOTOVOLTAICO DENOMINATO “S&P 6” CON POTENZA DI PICCO 139.846,50 KWP E POTENZA NOMINALE 100.000,00 KW"
-        ],
-        "_dedupe_urls": [
-          "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1041&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-        ],
-        "project_key": "prj:ed57b4c4dd18ce3c"
       }
     ],
     "terna_summary": {
@@ -905,20 +905,20 @@
       ]
     },
     "quality": {
-      "punctual_records": 1024,
-      "missing_mw": 130,
+      "punctual_records": 1029,
+      "missing_mw": 131,
       "missing_region": 0,
       "missing_province": 8,
       "missing_municipality": 16,
       "missing_url": 0,
       "province_deduced": 23,
-      "municipalities_deduced": 3
+      "municipalities_deduced": 4
     },
     "quality_by_source": [
       {
         "source": "lazio",
         "source_label": "Lazio",
-        "count": 316,
+        "count": 317,
         "missing_mw": 27,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -938,26 +938,26 @@
         "completeness_pct": 89.2
       },
       {
+        "source": "mase",
+        "source_label": "MASE",
+        "count": 101,
+        "missing_mw": 3,
+        "missing_province": 0,
+        "missing_municipality": 0,
+        "province_deduced": 0,
+        "municipalities_deduced": 0,
+        "completeness_pct": 99.0
+      },
+      {
         "source": "mase_provvedimenti",
         "source_label": "MASE",
-        "count": 99,
+        "count": 100,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
         "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 100.0
-      },
-      {
-        "source": "mase",
-        "source_label": "MASE",
-        "count": 99,
-        "missing_mw": 2,
-        "missing_province": 0,
-        "missing_municipality": 0,
-        "province_deduced": 0,
-        "municipalities_deduced": 0,
-        "completeness_pct": 99.3
       },
       {
         "source": "terna_econnextion",
@@ -984,13 +984,13 @@
       {
         "source": "lombardia",
         "source_label": "Lombardia",
-        "count": 62,
+        "count": 63,
         "missing_mw": 3,
         "missing_province": 6,
         "missing_municipality": 8,
         "province_deduced": 0,
-        "municipalities_deduced": 0,
-        "completeness_pct": 90.9
+        "municipalities_deduced": 1,
+        "completeness_pct": 91.0
       },
       {
         "source": "Calabria",
@@ -1320,7 +1320,7 @@
       "proponent": "NEREIDI S.R.L.",
       "region": "Sicilia",
       "province": "CT",
-      "municipalities": "TARANTO, CATANIA",
+      "municipalities": "CATANIA",
       "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
       "power_mw": 187.0,
       "status": "",
@@ -1623,6 +1623,37 @@
       "project_key": "prj:2e60a73c08d28881"
     },
     {
+      "source": "lazio",
+      "source_group": "lazio",
+      "source_label": "Lazio",
+      "title": "Progetto di un impianto agrivoltaico e opere connesse da realizzarsi nella provincia di Viterbo, nei comuni di Tarquinia, Tuscania e Montalto di Castro, di potenza 141,56 MWp, denominato TARQUINIA",
+      "proponent": "RM SOLAR SRL",
+      "region": "Lazio",
+      "province": "VT",
+      "municipalities": "Montalto Di Castro",
+      "project_type": "VIA",
+      "power_mw": 141.56,
+      "status": "",
+      "url": "https://regionelazio.app.box.com/v/VIA-004-2026",
+      "updated_at": "2026-05-28T18:47:30.159574",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lazio"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto agrivoltaico e opere connesse da realizzarsi nella provincia di Viterbo, nei comuni di Tarquinia, Tuscania e Montalto di Castro, di potenza 141,56 MWp, denominato TARQUINIA"
+      ],
+      "_dedupe_urls": [
+        "https://regionelazio.app.box.com/v/VIA-004-2026"
+      ],
+      "project_key": "url:6ea662617de499b3"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -1850,7 +1881,7 @@
       "proponent": "AM ENERGY S.R.L.",
       "region": "Puglia",
       "province": "FG",
-      "municipalities": "TARANTO, FOGGIA",
+      "municipalities": "FOGGIA",
       "project_type": "Fotovoltaico",
       "power_mw": 121.023,
       "status": "",
@@ -3889,6 +3920,37 @@
       "project_key": "url:4811b65708d065ac"
     },
     {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un impianto agrivoltaico, della potenza complessiva di 75 MW, con un impianto di accumulo elettrochimico (B.E.S.S.) della potenza di 10,5 MW e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Lucera (FG)",
+      "proponent": "EOR Power S.r.l.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "LUCERA",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 75.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12067",
+      "updated_at": "2026-05-28T18:54:50.639784",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto agrivoltaico, della potenza complessiva di 75 MW, con un impianto di accumulo elettrochimico (B.E.S.S.) della potenza di 10,5 MW e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Lucera (FG)"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/12067"
+      ],
+      "project_key": "url:c80ca2d5aed933e8"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -4328,9 +4390,9 @@
       "source_label": "MASE",
       "title": "Impianto agrivoltaico \"Lugo\" da 69.423,2 kWp ed opere connesse",
       "proponent": "Concetto Green S.r.l.",
-      "region": "Puglia",
-      "province": "TA",
-      "municipalities": "TARANTO, RAVENNA",
+      "region": "Emilia-Romagna",
+      "province": "RA",
+      "municipalities": "RAVENNA",
       "project_type": "Agrivoltaico",
       "power_mw": 69.423,
       "status": "",
@@ -5446,7 +5508,7 @@
       "proponent": "SOCIETA' RINNOVABILI SUD TRE S.r.l.",
       "region": "Puglia",
       "province": "FG",
-      "municipalities": "Taranto, Foggia",
+      "municipalities": "Foggia",
       "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
       "power_mw": 60.05,
       "status": "",
@@ -5561,6 +5623,38 @@
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1607&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:5ff8854dcdb71b91"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Pascoli Verdi\" di potenza di picco pari a 60,594 MWp e potenza nominale pari a 60,00 MW integrato con un sistema di accumulo da 25,52 MW, e delle associate opere",
+      "proponent": "Hergo Renewables S.p.a.",
+      "region": "Lazio",
+      "province": "LT",
+      "municipalities": "Cisterna di Latina",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 60.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6170",
+      "updated_at": "2026-05-28T18:57:53.944239",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 2,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Pascoli Verdi\" di potenza di picco pari a 60,594 MWp e potenza nominale pari a 60,00 MW integrato con un sistema di accumulo da 25,52 MW, e delle associate opere"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6170",
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6171"
+      ],
+      "project_key": "url:d3c17b947644cee8"
     },
     {
       "source": "sistema_puglia_energia",
@@ -7031,7 +7125,7 @@
       "proponent": "X-Elio Enna 2 S.r.l.",
       "region": "Sicilia",
       "province": "EN",
-      "municipalities": "Taranto",
+      "municipalities": "Enna",
       "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
       "power_mw": 50.0,
       "status": "",
@@ -7045,13 +7139,14 @@
       "_merged_sources": [
         "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 2,
+      "_dedupe_group_size": 3,
       "_dedupe_titles": [
         "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrivoltaico denominato \"Enna 2\" della potenza nominale di 50 MWp con sistema di accumulo integrato di 21 MW e delle relative opere di connessione alla RTN, da realiz"
       ],
       "_dedupe_urls": [
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6122",
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6123"
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6123",
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6167"
       ],
       "project_key": "url:f82cbd36615af5f1"
     },
@@ -7226,7 +7321,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-05-27T13:25:22.347616",
+      "updated_at": "2026-05-28T18:47:30.159574",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -7748,7 +7843,7 @@
       "proponent": "Sonnedix Mag S.r.l. (ex SONNEDIX LEONARDO S.R.L.",
       "region": "Emilia-Romagna",
       "province": "MO",
-      "municipalities": "Taranto, Modena",
+      "municipalities": "Modena",
       "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
       "power_mw": 47.47,
       "status": "",
@@ -8275,7 +8370,7 @@
       "proponent": "CCEN ORISTANO 1 SRL",
       "region": "Sardegna",
       "province": "OR",
-      "municipalities": "TARANTO",
+      "municipalities": "Marrubiu, Palmas Arborea, Santa Giusta, Siamanna, Oristano, Simaxis",
       "project_type": "Verifica di Assoggettabilità a VIA (PNIEC-PNRR)",
       "power_mw": 44.74,
       "status": "",
@@ -9644,7 +9739,7 @@
       "proponent": "Altobrando Srl",
       "region": "Sicilia",
       "province": "CT",
-      "municipalities": "Taranto, Catania",
+      "municipalities": "Catania",
       "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
       "power_mw": 39.76,
       "status": "",
@@ -9675,7 +9770,7 @@
       "proponent": "BLUSOLAR MIGLIONICO 1 S.r.l.",
       "region": "Basilicata",
       "province": "MT",
-      "municipalities": "Taranto",
+      "municipalities": "Matera",
       "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
       "power_mw": 39.25,
       "status": "",
@@ -9766,8 +9861,8 @@
       "source_label": "MASE",
       "title": "Progetto di un parco Agrivoltaico, denominato \"Pimpisu\", della potenza pari a 38,79 MW con sistema di accumulo (BESS) integrato con potenza complessiva di 17 MW, da realizzarsi nel Comune di Serramanna (VS)",
       "proponent": "Sardinia Agro Solar Energy S.r.l.",
-      "region": "Puglia",
-      "province": "TA",
+      "region": "Sardegna",
+      "province": "SU",
       "municipalities": "SERRAMANNA",
       "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
       "power_mw": 38.79,
@@ -12505,8 +12600,8 @@
       "title": "Progetto di un impianto agrivoltaico della potenza nominale di 26,48 MWp denominato \"Frongia\" e delle relative opere di connessione alla RTN da realizzarsi nei Comuni Villamassargia (CI) e Musei (CI).",
       "proponent": "PIVEXO 18 S.R.L.",
       "region": "Sardegna",
-      "province": "CI",
-      "municipalities": "TARANTO",
+      "province": "SU",
+      "municipalities": "Villamassargia, Musei",
       "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
       "power_mw": 26.48,
       "status": "",
@@ -12821,7 +12916,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-05-27T13:25:22.347616",
+      "updated_at": "2026-05-28T18:47:30.159574",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -14340,7 +14435,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-05-27T13:25:22.347616",
+      "updated_at": "2026-05-28T18:47:30.159574",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -15523,7 +15618,7 @@
       "title": "Progetto di un impianto agrivoltaico denominato \"Gravina\" della potenza di 19,09 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Gravina in Puglia",
       "proponent": "GRAVINA S.R.L.",
       "region": "Puglia",
-      "province": "TA",
+      "province": "BA",
       "municipalities": "GRAVINA IN PUGLIA",
       "project_type": "Agrivoltaico",
       "power_mw": 19.09,
@@ -17673,6 +17768,37 @@
       "source": "lombardia",
       "source_group": "lombardia",
       "source_label": "Lombardia",
+      "title": "Verifica Assoggettabilità a VIA ai sensi dell’art. 19 del d. lgs. 152/2006 per la modifica di un progetto per la realizzazione di un impianto di produzione da fonte solare di tipologia “Agro-voltaico” avente potenza di picco pari a 14,5276 MWp e potenza in immissione pari a 12 MW, da installarsi in agro del Comune di Cura Carpignano (PV) Sezione B – Foglio 1 Mappali 62, 63, 64, 65, 66, 937, e del Comune di Sant’Alessio con Vialone (PV), Foglio 5, Mappali 9, 10, 11, 178, 180, 181, 183, in localit",
+      "proponent": "SOLE PV SOLAR 3 S.R.L.",
+      "region": "Lombardia",
+      "province": "PV",
+      "municipalities": "Cura Carpignano",
+      "project_type": "V.E.R. Provinciali",
+      "power_mw": 14.528,
+      "status": "",
+      "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=20902&idProvenienza=2",
+      "updated_at": "2026-05-28T18:39:34.627203",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": true,
+      "_merged_sources": [
+        "lombardia"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Verifica Assoggettabilità a VIA ai sensi dell’art. 19 del d. lgs. 152/2006 per la modifica di un progetto per la realizzazione di un impianto di produzione da fonte solare di tipologia “Agro-voltaico” avente potenza di picco pari a 14,5276 MWp e potenza in immissione pari a 12 MW, da installarsi in agro del Comune di Cura Carpignano (PV) Sezione B – Foglio 1 Mappali 62, 63, 64, 65, 66, 937, e del Comune di Sant’Alessio con Vialone (PV), Foglio 5, Mappali 9, 10, 11, 178, 180, 181, 183, in localit"
+      ],
+      "_dedupe_urls": [
+        "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/20902"
+      ],
+      "project_key": "prj:6ce374116808a3ce"
+    },
+    {
+      "source": "lombardia",
+      "source_group": "lombardia",
+      "source_label": "Lombardia",
       "title": "Richiesta di verifica di assoggettabilità a valutazione di impatto ambientale - progetto di \"impianto fotovoltaico - Pralboino\" da 14,5 MW",
       "proponent": "JUWI ENERGIE RINNOVABILI SRL",
       "region": "Lombardia",
@@ -18111,7 +18237,7 @@
       "proponent": "EDISON S.p.A.",
       "region": "Veneto",
       "province": "VE",
-      "municipalities": "VENEZIA, TARANTO",
+      "municipalities": "VENEZIA",
       "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
       "power_mw": 12.66,
       "status": "",
@@ -21161,7 +21287,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-05-27T13:25:22.347616",
+      "updated_at": "2026-05-28T18:47:30.159574",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21409,7 +21535,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-05-27T13:25:22.347616",
+      "updated_at": "2026-05-28T18:47:30.159574",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -23610,7 +23736,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-05-27T13:25:22.347616",
+      "updated_at": "2026-05-28T18:47:30.159574",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30560,7 +30686,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-05-27T13:26:46.894473",
+      "updated_at": "2026-05-28T18:49:02.457949",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30825,6 +30951,37 @@
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1186&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:caea70f9974d27f1"
+    },
+    {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Impianto fotovoltaico Lombardore 1 - Lombardore 2 - San Benigno 1",
+      "proponent": "Ecopiedmont1",
+      "region": "Piemonte",
+      "province": "TO",
+      "municipalities": "Lombardore, San Benigno Canavese",
+      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
+      "power_mw": 18.77382,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8018",
+      "updated_at": "2026-05-28T18:54:50.639784",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto fotovoltaico Lombardore 1 - Lombardore 2 - San Benigno 1"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8018"
+      ],
+      "project_key": "url:825d32415b5135bf"
     },
     {
       "source": "sicilia",
@@ -32850,8 +33007,8 @@
       "title": "Variante opere di connessione relativa al Progetto (ID 9217) Impianto agrivoltaico denominato \"San Severo 96.2\" - Valutazione preliminare ai sensi dell'art.6, c.9 e c.9 bis) del D.Lgs. 152/2006 - modifica al tracciato delle opere di connessione",
       "proponent": "Apollo San Severo S.r.l.",
       "region": "Puglia",
-      "province": "TA",
-      "municipalities": "TARANTO, FOGGIA",
+      "province": "FG",
+      "municipalities": "FOGGIA",
       "project_type": "Agrivoltaico",
       "power_mw": null,
       "status": "",
@@ -35947,6 +36104,37 @@
       "project_key": "prj:2e60a73c08d28881"
     },
     {
+      "source": "lazio",
+      "source_group": "lazio",
+      "source_label": "Lazio",
+      "title": "Progetto di un impianto agrivoltaico e opere connesse da realizzarsi nella provincia di Viterbo, nei comuni di Tarquinia, Tuscania e Montalto di Castro, di potenza 141,56 MWp, denominato TARQUINIA",
+      "proponent": "RM SOLAR SRL",
+      "region": "Lazio",
+      "province": "VT",
+      "municipalities": "Montalto Di Castro",
+      "project_type": "VIA",
+      "power_mw": 141.56,
+      "status": "",
+      "url": "https://regionelazio.app.box.com/v/VIA-004-2026",
+      "updated_at": "2026-05-28T18:47:30.159574",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lazio"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto agrivoltaico e opere connesse da realizzarsi nella provincia di Viterbo, nei comuni di Tarquinia, Tuscania e Montalto di Castro, di potenza 141,56 MWp, denominato TARQUINIA"
+      ],
+      "_dedupe_urls": [
+        "https://regionelazio.app.box.com/v/VIA-004-2026"
+      ],
+      "project_key": "url:6ea662617de499b3"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -36007,46 +36195,15 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11806"
       ],
       "project_key": "url:276dbaacb14e2336"
-    },
-    {
-      "source": "sicilia",
-      "source_group": "sicilia",
-      "source_label": "Sicilia",
-      "title": "IMPIANTO AGRO-FOTOVOLTAICO DENOMINATO “S&P 6” CON POTENZA DI PICCO 139.846,50 KWP E POTENZA NOMINALE 100.000,00 KW",
-      "proponent": "S&P 6 SRL",
-      "region": "Sicilia",
-      "province": "PA",
-      "municipalities": "Monreale",
-      "project_type": "V.I.A. (art.23 - 27bis)",
-      "power_mw": 139.846,
-      "status": "",
-      "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1041&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-      "updated_at": "2026-05-01T19:12:15.455684",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "sicilia"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "IMPIANTO AGRO-FOTOVOLTAICO DENOMINATO “S&P 6” CON POTENZA DI PICCO 139.846,50 KWP E POTENZA NOMINALE 100.000,00 KW"
-      ],
-      "_dedupe_urls": [
-        "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1041&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-      ],
-      "project_key": "prj:ed57b4c4dd18ce3c"
     }
   ],
   "data_quality": {
-    "generated_at": "2026-05-27T15:32:10",
+    "generated_at": "2026-05-28T20:58:14",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1126,
-    "records_after": 1106,
-    "merged_or_removed": 20,
-    "accepted_pairs": 20,
+    "records_before": 1133,
+    "records_after": 1111,
+    "merged_or_removed": 22,
+    "accepted_pairs": 23,
     "rejected_pairs": 40,
     "field_repairs": 47,
     "manual_actions": 10,
@@ -36075,7 +36232,7 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-05-27T15:32:27",
+      "generated_at": "2026-05-28T20:58:21",
       "targets": 0,
       "recovered": 0,
       "failed": 0,

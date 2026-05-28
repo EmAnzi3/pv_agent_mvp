@@ -258,6 +258,24 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3X/8] Pulizia falsi Taranto MASE
+echo ==========================================================
+if not exist ".\scripts\cleanup_mase_false_taranto.py" (
+    echo ERRORE: scripts\cleanup_mase_false_taranto.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\cleanup_mase_false_taranto.py" --data "%DATA_JSON%" --audit ".\reports\mase_false_taranto_cleanup_audit.csv" --apply
+if errorlevel 1 (
+    echo.
+    echo ERRORE: pulizia falsi Taranto MASE fallita.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [3G/8] Normalizzazione label fonti
 echo ==========================================================
 
