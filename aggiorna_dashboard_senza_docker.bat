@@ -276,6 +276,24 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3Y/8] Dedupe snapshot mensili Terna
+echo ==========================================================
+if not exist ".\scripts\dedupe_terna_monthly_snapshot.py" (
+    echo ERRORE: scripts\dedupe_terna_monthly_snapshot.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\dedupe_terna_monthly_snapshot.py" --data "%DATA_JSON%" --audit ".\reports\terna_monthly_dedupe_audit.csv" --apply
+if errorlevel 1 (
+    echo.
+    echo ERRORE: dedupe snapshot mensili Terna fallito.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [3G/8] Normalizzazione label fonti
 echo ==========================================================
 
