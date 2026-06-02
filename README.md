@@ -165,3 +165,20 @@ Questa base va bene per partire, ma il passaggio corretto è:
 2. stabilizzare i collector;
 3. farla rifinire da uno sviluppatore per tutte le fonti regionali;
 4. collegarla a una dashboard e a digest automatici.
+
+<!-- MAINTENANCE-STANDARD:START -->
+## Manutenzione repository
+
+- Stato operativo: `CURRENT_STATE.md`
+- Istruzioni per ChatGPT/Codex: `AGENTS.md`
+- Storico modifiche: `CHANGELOG.md`
+- Controllo pre-pubblicazione: `.\scripts\check_before_publish.ps1`
+
+Comando consigliato prima del commit:
+
+`powershell
+.\scripts\check_before_publish.ps1
+git status
+git diff --check
+`
+<!-- MAINTENANCE-STANDARD:END -->
