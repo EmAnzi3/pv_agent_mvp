@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-06-03 21:23:49",
-    "snapshot_file": "projects_snapshot_20260603_192250.csv",
-    "total_records": 1113,
-    "punctual_records": 1031,
+    "generated_at": "2026-06-04 17:52:16",
+    "snapshot_file": "projects_snapshot_20260604_155150.csv",
+    "total_records": 1114,
+    "punctual_records": 1032,
     "terna_records": 82,
-    "total_mw_punctual": 29331.275,
+    "total_mw_punctual": 55076.715,
     "total_mw_terna": 142688.35,
     "source_counts": [
       {
@@ -26,7 +26,7 @@
       {
         "source": "mase_provvedimenti",
         "label": "MASE",
-        "count": 101
+        "count": 102
       },
       {
         "source": "mase",
@@ -92,13 +92,23 @@
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 342,
-        "punctual_mw": 10430.802,
+        "punctual_count": 343,
+        "punctual_mw": 10451.302,
         "terna_count": 8,
         "terna_mw": 59249.995,
         "terna_practices": 0,
-        "total_mw": 69680.797,
-        "priority_score": 39.4
+        "total_mw": 69701.297,
+        "priority_score": 39.5
+      },
+      {
+        "region": "Emilia-Romagna",
+        "punctual_count": 28,
+        "punctual_mw": 27189.16,
+        "terna_count": 7,
+        "terna_mw": 9275.586,
+        "terna_practices": 0,
+        "total_mw": 36464.746,
+        "priority_score": 30.4
       },
       {
         "region": "Lazio",
@@ -149,16 +159,6 @@
         "terna_practices": 0,
         "total_mw": 17697.519,
         "priority_score": 5.6
-      },
-      {
-        "region": "Emilia-Romagna",
-        "punctual_count": 28,
-        "punctual_mw": 1464.22,
-        "terna_count": 7,
-        "terna_mw": 9275.586,
-        "terna_practices": 0,
-        "total_mw": 10739.806,
-        "priority_score": 4.7
       },
       {
         "region": "Veneto",
@@ -272,6 +272,37 @@
       }
     ],
     "top_projects": [
+      {
+        "source": "emilia_romagna",
+        "source_group": "emilia_romagna",
+        "source_label": "Emilia-Romagna",
+        "title": "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 25.751,04 MW DENOMINATO “VIGARANO MAINARDA” E CONNESSIONE ALLA LINEA RTN A 132 KV “FINALE EMILIA – BONDENO”",
+        "proponent": "Epsilon Toro S.r.l",
+        "region": "Emilia-Romagna",
+        "province": "FE",
+        "municipalities": "Vigarano Mainarda, Bondeno",
+        "project_type": "VIA",
+        "power_mw": 25751.04,
+        "status": "",
+        "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6781",
+        "updated_at": "2026-06-04T15:27:15.165907",
+        "numero_pratiche": 0,
+        "is_terna": false,
+        "is_punctual": true,
+        "province_deduced": false,
+        "municipalities_deduced": false,
+        "_merged_sources": [
+          "emilia_romagna"
+        ],
+        "_dedupe_group_size": 1,
+        "_dedupe_titles": [
+          "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 25.751,04 MW DENOMINATO “VIGARANO MAINARDA” E CONNESSIONE ALLA LINEA RTN A 132 KV “FINALE EMILIA – BONDENO”"
+        ],
+        "_dedupe_urls": [
+          "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6781"
+        ],
+        "project_key": "url:c062866eb9d4dc53"
+      },
       {
         "source": "sicilia",
         "source_group": "sicilia",
@@ -861,37 +892,6 @@
           "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=854&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
         ],
         "project_key": "prj:360af1297c2a840c"
-      },
-      {
-        "source": "mase",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Progetto di un impianto agrivoltaico dalla potenza complessiva di 140,23 MWp e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Macomer (NU), Sindia (NU), Bonorva (SS) e Semestene (SS.",
-        "proponent": "ROSA DEL DESERTO 3 S.r.l.",
-        "region": "Sardegna",
-        "province": "NU",
-        "municipalities": "MACOMER",
-        "project_type": "Verifica di Assoggettabilità a VIA",
-        "power_mw": 140.23,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11806",
-        "updated_at": "2026-05-01T19:20:36.387478",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Progetto di un impianto agrivoltaico dalla potenza complessiva di 140,23 MWp e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Macomer (NU), Sindia (NU), Bonorva (SS) e Semestene (SS."
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Oggetti/Info/11806"
-        ],
-        "project_key": "url:276dbaacb14e2336"
       }
     ],
     "terna_summary": {
@@ -905,7 +905,7 @@
       ]
     },
     "quality": {
-      "punctual_records": 1032,
+      "punctual_records": 1033,
       "missing_mw": 131,
       "missing_region": 0,
       "missing_province": 8,
@@ -951,7 +951,7 @@
       {
         "source": "mase_provvedimenti",
         "source_label": "MASE",
-        "count": 101,
+        "count": 102,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -1094,6 +1094,37 @@
     ]
   },
   "records": [
+    {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 25.751,04 MW DENOMINATO “VIGARANO MAINARDA” E CONNESSIONE ALLA LINEA RTN A 132 KV “FINALE EMILIA – BONDENO”",
+      "proponent": "Epsilon Toro S.r.l",
+      "region": "Emilia-Romagna",
+      "province": "FE",
+      "municipalities": "Vigarano Mainarda, Bondeno",
+      "project_type": "VIA",
+      "power_mw": 25751.04,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6781",
+      "updated_at": "2026-06-04T15:27:15.165907",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 25.751,04 MW DENOMINATO “VIGARANO MAINARDA” E CONNESSIONE ALLA LINEA RTN A 132 KV “FINALE EMILIA – BONDENO”"
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6781"
+      ],
+      "project_key": "url:c062866eb9d4dc53"
+    },
     {
       "source": "sicilia",
       "source_group": "sicilia",
@@ -7321,7 +7352,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-06-03T19:11:22.142958",
+      "updated_at": "2026-06-04T15:39:35.119316",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -12780,37 +12811,6 @@
       "project_key": "url:e6e536ab06b373b6"
     },
     {
-      "source": "emilia_romagna",
-      "source_group": "emilia_romagna",
-      "source_label": "Emilia-Romagna",
-      "title": "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 26.1 MW DENOMINATO “VIGARANO MAINARDA” E CONNESSIONE ALLA LINEA RTN A 132 KV “FINALE EMILIA – BONDENO”",
-      "proponent": "Epsilon Toro S.r.l",
-      "region": "Emilia-Romagna",
-      "province": "FE",
-      "municipalities": "Vigarano Mainarda, Bondeno",
-      "project_type": "VIA",
-      "power_mw": 26.1,
-      "status": "",
-      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6781",
-      "updated_at": "2026-05-05T15:10:35.896218",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "emilia_romagna"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 26.1 MW DENOMINATO “VIGARANO MAINARDA” E CONNESSIONE ALLA LINEA RTN A 132 KV “FINALE EMILIA – BONDENO”"
-      ],
-      "_dedupe_urls": [
-        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6781"
-      ],
-      "project_key": "url:c062866eb9d4dc53"
-    },
-    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -12947,7 +12947,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-06-03T19:11:22.142958",
+      "updated_at": "2026-06-04T15:39:35.119316",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -14147,6 +14147,37 @@
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Limes 21\", di potenza pari a 20,5 MW e delle relative opere di connessione alla RTN da realizzarsi nel Comune di Monreale (PA)",
+      "proponent": "Limes 21 S.r.l.",
+      "region": "Sicilia",
+      "province": "PA",
+      "municipalities": "Monreale",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 20.5,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6182",
+      "updated_at": "2026-06-04T15:51:43.248472",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Limes 21\", di potenza pari a 20,5 MW e delle relative opere di connessione alla RTN da realizzarsi nel Comune di Monreale (PA)"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6182"
+      ],
+      "project_key": "url:ebfa06ccee1f36bb"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
       "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico, della potenza di 20,44 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Veglie, Salice Salentino (LE).",
       "proponent": "FLYNIS PV 10 S.r.l.",
       "region": "Puglia",
@@ -14497,7 +14528,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-06-03T19:11:22.142958",
+      "updated_at": "2026-06-04T15:39:35.119316",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19358,7 +19389,7 @@
       "power_mw": 10.249,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=18105&idProvenienza=2",
-      "updated_at": "2026-05-01T19:09:14.947862",
+      "updated_at": "2026-06-04T15:27:29.822534",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21380,7 +21411,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-06-03T19:11:22.142958",
+      "updated_at": "2026-06-04T15:39:35.119316",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21628,7 +21659,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-06-03T19:11:22.142958",
+      "updated_at": "2026-06-04T15:39:35.119316",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -23829,7 +23860,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-06-03T19:11:22.142958",
+      "updated_at": "2026-06-04T15:39:35.119316",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30779,7 +30810,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-06-03T19:12:57.742481",
+      "updated_at": "2026-06-04T15:41:14.413709",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -35750,6 +35781,37 @@
   ],
   "top_projects": [
     {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 25.751,04 MW DENOMINATO “VIGARANO MAINARDA” E CONNESSIONE ALLA LINEA RTN A 132 KV “FINALE EMILIA – BONDENO”",
+      "proponent": "Epsilon Toro S.r.l",
+      "region": "Emilia-Romagna",
+      "province": "FE",
+      "municipalities": "Vigarano Mainarda, Bondeno",
+      "project_type": "VIA",
+      "power_mw": 25751.04,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6781",
+      "updated_at": "2026-06-04T15:27:15.165907",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "ARPAE: IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 25.751,04 MW DENOMINATO “VIGARANO MAINARDA” E CONNESSIONE ALLA LINEA RTN A 132 KV “FINALE EMILIA – BONDENO”"
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6781"
+      ],
+      "project_key": "url:c062866eb9d4dc53"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -36338,48 +36400,17 @@
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=854&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:360af1297c2a840c"
-    },
-    {
-      "source": "mase",
-      "source_group": "mase",
-      "source_label": "MASE",
-      "title": "Progetto di un impianto agrivoltaico dalla potenza complessiva di 140,23 MWp e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Macomer (NU), Sindia (NU), Bonorva (SS) e Semestene (SS.",
-      "proponent": "ROSA DEL DESERTO 3 S.r.l.",
-      "region": "Sardegna",
-      "province": "NU",
-      "municipalities": "MACOMER",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 140.23,
-      "status": "",
-      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11806",
-      "updated_at": "2026-05-01T19:20:36.387478",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "mase"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "Progetto di un impianto agrivoltaico dalla potenza complessiva di 140,23 MWp e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Macomer (NU), Sindia (NU), Bonorva (SS) e Semestene (SS."
-      ],
-      "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Oggetti/Info/11806"
-      ],
-      "project_key": "url:276dbaacb14e2336"
     }
   ],
   "data_quality": {
-    "generated_at": "2026-06-03T21:23:50",
+    "generated_at": "2026-06-04T17:52:16",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1217,
-    "records_after": 1164,
+    "records_before": 1218,
+    "records_after": 1165,
     "merged_or_removed": 53,
     "accepted_pairs": 54,
     "rejected_pairs": 90,
-    "field_repairs": 47,
+    "field_repairs": 48,
     "manual_actions": 10,
     "manual_proponent_overrides": 10,
     "manual_excluded_records": 0,
@@ -36406,7 +36437,7 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-06-03T21:24:06",
+      "generated_at": "2026-06-04T17:52:23",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
