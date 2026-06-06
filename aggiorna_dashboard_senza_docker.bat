@@ -331,6 +331,24 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3ZZ/8] Ricostruzione riepiloghi e classifiche
+echo ==========================================================
+if not exist ".\scripts\rebuild_dashboard_derived.py" (
+    echo ERRORE: scripts\rebuild_dashboard_derived.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\rebuild_dashboard_derived.py" --data "%DATA_JSON%"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: ricostruzione riepiloghi e classifiche fallita.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [4/8] Sync HTML dopo normalizzazioni e override
 echo ==========================================================
 
