@@ -294,6 +294,24 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3Z/8] Correzione potenza Vigarano Mainarda
+echo ==========================================================
+if not exist ".\scripts\manual_vigarano_mainarda_power_override.py" (
+    echo ERRORE: scripts\manual_vigarano_mainarda_power_override.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\manual_vigarano_mainarda_power_override.py" --data "%DATA_JSON%" --audit ".\reports\manual_vigarano_mainarda_power_override_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: correzione potenza Vigarano Mainarda fallita.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [3G/8] Normalizzazione label fonti
 echo ==========================================================
 
