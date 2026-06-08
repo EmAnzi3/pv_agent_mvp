@@ -331,6 +331,24 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3ZY/8] Correzione potenza progetto AG 31
+echo ==========================================================
+if not exist ".\scripts\manual_ag31_power_override.py" (
+    echo ERRORE: scripts\manual_ag31_power_override.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\manual_ag31_power_override.py" --data "%DATA_JSON%" --audit ".\reports\manual_ag31_power_override_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: correzione potenza progetto AG 31 fallita.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [3ZZ/8] Ricostruzione riepiloghi e classifiche
 echo ==========================================================
 if not exist ".\scripts\rebuild_dashboard_derived.py" (

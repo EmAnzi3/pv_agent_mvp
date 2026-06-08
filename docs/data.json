@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-06-05 17:43:06",
-    "snapshot_file": "projects_snapshot_20260605_154243.csv",
-    "total_records": 1121,
-    "punctual_records": 1039,
+    "generated_at": "2026-06-08 16:31:48",
+    "snapshot_file": "projects_snapshot_20260608_143121.csv",
+    "total_records": 1122,
+    "punctual_records": 1040,
     "terna_records": 82,
-    "total_mw_punctual": 29881.624,
+    "total_mw_punctual": 29898.487,
     "total_mw_terna": 142688.35,
     "source_counts": [
       {
@@ -59,13 +59,13 @@
         "count": 15
       },
       {
-        "source": "toscana",
-        "label": "Toscana",
-        "count": 12
-      },
-      {
         "source": "veneto",
         "label": "Veneto",
+        "count": 13
+      },
+      {
+        "source": "toscana",
+        "label": "Toscana",
         "count": 12
       },
       {
@@ -161,6 +161,16 @@
         "priority_score": 4.4
       },
       {
+        "region": "Veneto",
+        "punctual_count": 16,
+        "punctual_mw": 539.1,
+        "terna_count": 5,
+        "terna_mw": 5620.426,
+        "terna_practices": 0,
+        "total_mw": 6159.526,
+        "priority_score": 2.5
+      },
+      {
         "region": "Campania",
         "punctual_count": 22,
         "punctual_mw": 702.176,
@@ -178,16 +188,6 @@
         "terna_mw": 4951.036,
         "terna_practices": 0,
         "total_mw": 5530.337,
-        "priority_score": 2.4
-      },
-      {
-        "region": "Veneto",
-        "punctual_count": 15,
-        "punctual_mw": 522.237,
-        "terna_count": 5,
-        "terna_mw": 5620.426,
-        "terna_practices": 0,
-        "total_mw": 6142.663,
         "priority_score": 2.4
       },
       {
@@ -905,14 +905,14 @@
       ]
     },
     "quality": {
-      "punctual_records": 1039,
+      "punctual_records": 1040,
       "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 6,
       "missing_municipality": 14,
       "missing_url": 0,
-      "province_deduced": 23,
-      "municipalities_deduced": 5
+      "province_deduced": 24,
+      "municipalities_deduced": 3
     },
     "quality_by_source": [
       {
@@ -1026,6 +1026,17 @@
         "completeness_pct": 100.0
       },
       {
+        "source": "veneto",
+        "source_label": "Veneto",
+        "count": 13,
+        "missing_mw": 3,
+        "missing_province": 0,
+        "missing_municipality": 1,
+        "province_deduced": 13,
+        "municipalities_deduced": 0,
+        "completeness_pct": 89.7
+      },
+      {
         "source": "toscana",
         "source_label": "Toscana",
         "count": 12,
@@ -1035,17 +1046,6 @@
         "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 100.0
-      },
-      {
-        "source": "veneto",
-        "source_label": "Veneto",
-        "count": 12,
-        "missing_mw": 3,
-        "missing_province": 0,
-        "missing_municipality": 1,
-        "province_deduced": 12,
-        "municipalities_deduced": 2,
-        "completeness_pct": 88.9
       },
       {
         "source": "campania",
@@ -3272,32 +3272,32 @@
       "source": "veneto",
       "source_group": "veneto",
       "source_label": "Veneto",
-      "title": "Progetto di un impianto Agrivoltaico da 84,3 MWp sito nei comuni di Frassinelle Polesine (RO), Villamarzana (RO), Arquà Polesine (RO) con potenza in immissione pari a 70 MW e opere connesse site nel comune di Rovigo (RO)",
+      "title": "Progetto di impianto agrivoltaico da 84,3 MWp. Comuni di localizzazione: Frassinelle Polesine, Villamarzana, Arquà Polesine (RO) e Rovigo (opere di connessione)",
       "proponent": "AUKERA ITALY 9 SRL",
       "region": "Veneto",
       "province": "RO",
-      "municipalities": "Rovigo, Frassinelle Polesine",
-      "project_type": "Progetto di un impianto Agrivoltaico da 84,3 MWp sito nei comuni di Frassinelle Polesine (RO), Villa",
+      "municipalities": "Frassinelle Polesine, Villamarzana, Arquà Polesine (RO), Rovigo (opere di connessione)",
+      "project_type": "Progetto di impianto agrivoltaico da 84,3 MWp. Comuni di localizzazione: Frassinelle Polesine, Villa",
       "power_mw": 84.3,
       "status": "",
       "url": "https://sharing.regione.veneto.it/index.php/s/TFpisjrPT7DMCwy",
-      "updated_at": "2026-05-19T13:43:18.873811",
+      "updated_at": "2026-06-08T14:08:36.556781",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
       "province_deduced": true,
-      "municipalities_deduced": true,
+      "municipalities_deduced": false,
       "_merged_sources": [
         "veneto"
       ],
       "_dedupe_group_size": 1,
       "_dedupe_titles": [
-        "Progetto di un impianto Agrivoltaico da 84,3 MWp sito nei comuni di Frassinelle Polesine (RO), Villamarzana (RO), Arquà Polesine (RO) con potenza in immissione pari a 70 MW e opere connesse site nel comune di Rovigo (RO)"
+        "Progetto di impianto agrivoltaico da 84,3 MWp. Comuni di localizzazione: Frassinelle Polesine, Villamarzana, Arquà Polesine (RO) e Rovigo (opere di connessione)"
       ],
       "_dedupe_urls": [
         "https://sharing.regione.veneto.it/index.php/s/TFpisjrPT7DMCwy"
       ],
-      "project_key": "prj:268728f39dbfe842"
+      "project_key": "prj:6aa6e0902c77dbf7"
     },
     {
       "source": "mase",
@@ -7383,7 +7383,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-06-05T15:31:16.477998",
+      "updated_at": "2026-06-08T14:20:32.260301",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -13164,7 +13164,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-06-05T15:31:16.477998",
+      "updated_at": "2026-06-08T14:20:32.260301",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -14333,32 +14333,32 @@
       "source": "veneto",
       "source_group": "veneto",
       "source_label": "Veneto",
-      "title": "Impianto agrivoltaico Portogruaro di potenza di picco pari a 20,787 MW e delle opere connesse, sito nel Comune di Portogruaro (VE)",
+      "title": "Impianto agrivoltaico Portogruaro di potenza di picco pari a 20,787 MW e delle opere connesse. Comune di localizzazione: Portogruaro (VE)",
       "proponent": "FLY SUN 10 SRL",
       "region": "Veneto",
       "province": "VE",
-      "municipalities": "Portogruaro",
-      "project_type": "Impianto agrivoltaico Portogruaro di potenza di picco pari a 20,787 MW e delle opere connesse, sito",
+      "municipalities": "Portogruaro (VE)",
+      "project_type": "Impianto agrivoltaico Portogruaro di potenza di picco pari a 20,787 MW e delle opere connesse. Comun",
       "power_mw": 20.787,
       "status": "",
       "url": "https://sharing.regione.veneto.it/index.php/s/wsfLW4tiMPYdNtm",
-      "updated_at": "2026-05-19T13:43:18.873811",
+      "updated_at": "2026-06-08T14:08:36.556781",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
       "province_deduced": true,
-      "municipalities_deduced": true,
+      "municipalities_deduced": false,
       "_merged_sources": [
         "veneto"
       ],
       "_dedupe_group_size": 1,
       "_dedupe_titles": [
-        "Impianto agrivoltaico Portogruaro di potenza di picco pari a 20,787 MW e delle opere connesse, sito nel Comune di Portogruaro (VE)"
+        "Impianto agrivoltaico Portogruaro di potenza di picco pari a 20,787 MW e delle opere connesse. Comune di localizzazione: Portogruaro (VE)"
       ],
       "_dedupe_urls": [
         "https://sharing.regione.veneto.it/index.php/s/wsfLW4tiMPYdNtm"
       ],
-      "project_key": "prj:c250ec44f5a6524c"
+      "project_key": "prj:5dad13803bc8214c"
     },
     {
       "source": "mase_provvedimenti",
@@ -14745,7 +14745,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-06-05T15:31:16.477998",
+      "updated_at": "2026-06-08T14:20:32.260301",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -17185,7 +17185,7 @@
       "power_mw": 16.95,
       "status": "",
       "url": "https://sharing.regione.veneto.it/index.php/s/AkfsL9MEFEWkd6t",
-      "updated_at": "2026-05-01T19:07:56.609799",
+      "updated_at": "2026-06-08T14:08:36.556781",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21628,7 +21628,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-06-05T15:31:16.477998",
+      "updated_at": "2026-06-08T14:20:32.260301",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21876,7 +21876,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-06-05T15:31:16.477998",
+      "updated_at": "2026-06-08T14:20:32.260301",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -24077,7 +24077,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-06-05T15:31:16.477998",
+      "updated_at": "2026-06-08T14:20:32.260301",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -31027,7 +31027,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-06-05T15:32:52.785223",
+      "updated_at": "2026-06-08T14:21:55.657961",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -32999,6 +32999,37 @@
         "https://regionelazio.app.box.com/v/VIA-085-2019"
       ],
       "project_key": "url:f1e6c7c063c0cead"
+    },
+    {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
+      "title": "Realizzazione di impianto agrifotovoltaico ai sensi delle linee guida in materia di impianti agrivoltaici connesso alla rete elettrica per la vendita di energia. Comuni di localizzazione:Castagnaro (VR) e Giacciano con Baruchella (RO)",
+      "proponent": "AG 31 SRL",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Castagnaro (VR), Giacciano con Baruchella (RO)",
+      "project_type": "Realizzazione di impianto agrifotovoltaico ai sensi delle linee guida in materia di impianti agrivol",
+      "power_mw": 16.863,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/BzD8WZqGbZo9tGR",
+      "updated_at": "2026-06-08T14:08:36.556781",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Realizzazione di impianto agrifotovoltaico ai sensi delle linee guida in materia di impianti agrivoltaici connesso alla rete elettrica per la vendita di energia. Comuni di localizzazione:Castagnaro (VR) e Giacciano con Baruchella (RO)"
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/BzD8WZqGbZo9tGR"
+      ],
+      "project_key": "prj:f1150d01293b9df7"
     },
     {
       "source": "lazio",
@@ -36620,10 +36651,10 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-06-05T17:43:06",
+    "generated_at": "2026-06-08T16:31:48",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1225,
-    "records_after": 1172,
+    "records_before": 1226,
+    "records_after": 1173,
     "merged_or_removed": 53,
     "accepted_pairs": 54,
     "rejected_pairs": 91,
@@ -36654,13 +36685,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-06-05T17:43:14",
+      "generated_at": "2026-06-08T16:31:58",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-06-06T08:10:03"
+    "derived_fields_rebuilt_at": "2026-06-08T17:29:20"
   }
 }
