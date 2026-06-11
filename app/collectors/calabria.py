@@ -843,6 +843,34 @@ class CalabriaCollector(BaseCollector):
             if name not in municipalities:
                 municipalities.append(name)
 
+        # Priorit? agli elenchi espliciti di comuni.
+        # Raccoglie tutti gli elenchi presenti nella pagina, compresi quelli
+        # relativi alle opere di connessione, poi pulisce e deduplica.
+        explicit_patterns = [
+            r"\bnel\s+territorio\s+dei\s+comuni\s+di\s+(.+?)(?=\s+(?:proponente|soggetto\s+proponente|potenza|procedura|valutazione|provvedimento|avviso|consultazione|a\s+decorrere|documentazione)\b|[.;]|$)",
+            r"\bnei\s+comuni\s+di\s+(.+?)(?=\s+(?:proponente|soggetto\s+proponente|potenza|procedura|valutazione|provvedimento|avviso|consultazione|a\s+decorrere|documentazione)\b|[.;]|$)",
+        ]
+
+        explicit_values: list[str] = []
+
+        for pattern in explicit_patterns:
+            for match in re.finditer(pattern, clean, flags=re.IGNORECASE):
+                chunk = match.group(1)
+                explicit_values.extend(
+                    re.split(
+                        r"\s*,\s*|\s*;\s*|\s+e\s+|\s+ed\s+",
+                        chunk,
+                        flags=re.IGNORECASE,
+                    )
+                )
+
+        if explicit_values:
+            explicit_municipalities = self._finalize_municipalities(
+                explicit_values
+            )
+            if explicit_municipalities:
+                return explicit_municipalities
+
         # Pattern principale: qualunque testo ragionevole prima della sigla provincia.
         for match in re.finditer(
             r"([^,.;:\n\r]{2,90}?)\s*\((CZ|CS|KR|RC|VV)\)",
@@ -870,7 +898,7 @@ class CalabriaCollector(BaseCollector):
                 for part in parts:
                     add_name(part)
 
-        return municipalities
+        return self._finalize_municipalities(municipalities)
 
     def _split_municipality_part(self, value: str) -> list[str]:
         value = self._clean_text(value)
@@ -886,7 +914,7 @@ class CalabriaCollector(BaseCollector):
         # Rimuove prefissi lunghi.
         for _ in range(3):
             value = re.sub(
-                r"^(?:intervento:\s*)?(?:e\s+)?(?:che\s+interessano\s+anche\s+il\s+)?(?:mwp\s+)?(?:da\s+realizzarsi\s+nel\s+comune\s+di|da\s+realizzarsi\s+nei\s+comuni\s+di|daubicare\s+nel\s+comune\s+di|ubicato\s+nel\s+territorio\s+comunale\s+di|territorio\s+comunale\s+di|comune\s+di|comuni\s+di|e\s+comune\s+di|in\s+comune\s+di)\s+",
+                r"^(?:intervento:\s*)?(?:e\s+)?(?:che\s+interessano\s+anche\s+il\s+)?(?:mwp\s+)?(?:da\s+realizzarsi\s+nel\s+comune\s+di|da\s+realizzarsi\s+nel\s+territorio\s+dei\s+comuni\s+di|da\s+realizzarsi\s+nei\s+comuni\s+di|daubicare\s+nel\s+comune\s+di|ubicato\s+nel\s+territorio\s+comunale\s+di|territorio\s+comunale\s+di|comune\s+di|comuni\s+di|e\s+comune\s+di|in\s+comune\s+di)\s+",
                 "",
                 value,
                 flags=re.IGNORECASE,
@@ -931,17 +959,20 @@ class CalabriaCollector(BaseCollector):
         # - "Da Santâ€™Elia nel Comune di Montebello Jonico" -> "Montebello Jonico"
         # - "Ed ubicato nel territorio comunale di Caccuri" -> "Caccuri"
         explicit = re.search(
-            r"\b(?:nel|in|del|della|ubicato\s+nel|ed\s+ubicato\s+nel)?\s*(?:Comune\s+di|territorio\s+comunale\s+di)\s+([A-ZÃ€-Ã][A-Za-zÃ€-Ã¿'â€™\-\s]{2,70})",
+            r"\b(?:(?:nel|in|del|della|ubicato\s+nel|ed\s+ubicato\s+nel)\s+)?"
+            r"(?:comune\s+di|territorio\s+comunale\s+di)\s+"
+            r"([^\d,.;:()\[\]]{3,70})",
             value,
             flags=re.IGNORECASE,
         )
+
         if explicit:
             value = explicit.group(1)
 
         # Rimuove prefissi e residui ripetuti.
         for _ in range(4):
             value = re.sub(
-                r"^(?:intervento:\s*)?(?:e\s+)?(?:ed\s+)?(?:che\s+interessano\s+anche\s+il\s+)?(?:mwp\s+)?(?:comune\s+di|comuni\s+di|comune|territorio\s+dei\s+comuni\s+di|territorio\s+del\s+comune\s+di|territorio\s+comunale\s+di|da\s+realizzarsi\s+nel\s+comune\s+di|da\s+realizzarsi\s+nei\s+comuni\s+di|daubicare\s+nel\s+comune\s+di|ubicato\s+nel\s+territorio\s+comunale\s+di|ed\s+ubicato\s+nel\s+territorio\s+comunale\s+di|e\s+comune\s+di|di|del|della|in|nel|nella)\s+",
+                r"^(?:intervento:\s*)?(?:e\s+)?(?:ed\s+)?(?:che\s+interessano\s+anche\s+il\s+)?(?:mwp\s+)?(?:comune\s+di|comuni\s+di|comune|territorio\s+dei\s+comuni\s+di|territorio\s+del\s+comune\s+di|territorio\s+comunale\s+di|da\s+realizzarsi\s+nel\s+comune\s+di|da\s+realizzarsi\s+nel\s+territorio\s+dei\s+comuni\s+di|da\s+realizzarsi\s+nei\s+comuni\s+di|daubicare\s+nel\s+comune\s+di|ubicato\s+nel\s+territorio\s+comunale\s+di|ed\s+ubicato\s+nel\s+territorio\s+comunale\s+di|e\s+comune\s+di|di|del|della|in|nel|nella)\s+",
                 "",
                 value,
                 flags=re.IGNORECASE,
