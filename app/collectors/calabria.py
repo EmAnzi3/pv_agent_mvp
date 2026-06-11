@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import hashlib
 import re
@@ -28,6 +28,7 @@ MANUAL_EXCLUDE_URL_PATTERNS = [
 ]
 
 MANUAL_PROPONENT_OVERRIDES = {
+    "sorgeniaren": "SORGENIA RENEWABLES S.R.L.",
     # Crotone / Scandale - Cargo
     "progetto-di-costruzione-ed-esercizio-di-impianto-fotovoltaico-della-potenza-complessiva-pari-a-189865": "Cargo S.r.l.",
     "impianto-fotovoltaico-variante-cargosrl": "Cargo S.r.l.",
@@ -568,6 +569,40 @@ class CalabriaCollector(BaseCollector):
         return canon.get(key, v)
 
 
+    def _is_valid_proponent_candidate(self, value: str | None) -> bool:
+        if not value:
+            return False
+
+        value = re.sub(r"\s+", " ", str(value)).strip()
+        normalized = self._normalize_for_match(value)
+
+        bad_phrases = [
+            "a decorrere dal",
+            "disponibile al seguente link",
+            "consultazione del pubblico",
+            "ai fini della",
+            "integrazioni consultazione",
+            "documentazione disponibile",
+            "avviso pubblico",
+            "regione calabria",
+            "procedimento amministrativo",
+            "valutazione di impatto ambientale",
+        ]
+
+        if any(phrase in normalized for phrase in bad_phrases):
+            return False
+
+        if re.search(r"\b\d{1,2}/\d{1,2}/20\d{2}\b", value):
+            return False
+
+        words = re.findall(r"[A-Za-z?-?0-9]+", value)
+
+        if len(value) > 120 or len(words) > 12:
+            return False
+
+        return True
+
+
     def _extract_proponent(self, text: str) -> str | None:
         """
         Estrae il proponente dai testi Regione Calabria.
@@ -623,7 +658,10 @@ class CalabriaCollector(BaseCollector):
             )[0].strip(" .,:;??-")
 
             if value and 3 <= len(value) <= 160:
-                return self._normalize_proponent_name(value)
+                normalized = self._normalize_proponent_name(value)
+
+                if self._is_valid_proponent_candidate(normalized):
+                    return normalized
 
         return None
 

@@ -349,6 +349,24 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3ZX/8] Correzione potenza progetto Rubizzano
+echo ==========================================================
+if not exist ".\scripts\manual_rubizzano_power_override.py" (
+    echo ERRORE: scripts\manual_rubizzano_power_override.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\manual_rubizzano_power_override.py" --data "%DATA_JSON%" --audit ".\reports\manual_rubizzano_power_override_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: correzione potenza progetto Rubizzano fallita.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [3ZZ/8] Ricostruzione riepiloghi e classifiche
 echo ==========================================================
 if not exist ".\scripts\rebuild_dashboard_derived.py" (
