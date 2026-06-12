@@ -403,6 +403,24 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3ZU/8] Correzione potenza progetto Troina
+echo ==========================================================
+if not exist ".\scripts\manual_troina_power_override.py" (
+    echo ERRORE: scripts\manual_troina_power_override.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\manual_troina_power_override.py" --data "%DATA_JSON%" --audit ".\reports\manual_troina_power_override_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: correzione potenza progetto Troina fallita.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [3ZZ/8] Ricostruzione riepiloghi e classifiche
 echo ==========================================================
 if not exist ".\scripts\rebuild_dashboard_derived.py" (
