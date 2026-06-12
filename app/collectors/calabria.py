@@ -52,6 +52,18 @@ MANUAL_PROPONENT_OVERRIDES = {
     "riqualifica-saline-joniche": "SOLUX S.r.l.",
     "riqualifica-del-sito-industriale-di-saline-joniche": "SOLUX S.r.l.",
 }
+MANUAL_LOCATION_OVERRIDES = {
+    "agrivoltaico_sorgeniaren": {
+        "province": "CS",
+        "municipalities": [
+            "Altomonte",
+            "Castrovillari",
+            "Spezzano Albanese",
+            "San Lorenzo del Vallo",
+        ],
+    },
+}
+
 REQUEST_TIMEOUT = 60
 REQUEST_SLEEP_SECONDS = 0.12
 
@@ -371,8 +383,14 @@ class CalabriaCollector(BaseCollector):
         if REQUIRE_PROPONENT and not proponent:
             return None
 
-        province = self._extract_province(combined)
-        municipalities = self._extract_municipalities(combined)
+        manual_location = self._manual_location(url, combined)
+
+        if manual_location:
+            province = manual_location["province"]
+            municipalities = list(manual_location["municipalities"])
+        else:
+            province = self._extract_province(combined)
+            municipalities = self._extract_municipalities(combined)
         procedure = self._extract_procedure(combined)
         status_raw = self._extract_status(combined, procedure)
 
@@ -519,6 +537,16 @@ class CalabriaCollector(BaseCollector):
         for needle, proponent in MANUAL_PROPONENT_OVERRIDES.items():
             if self._normalize_for_match(needle) in haystack:
                 return proponent
+
+        return None
+
+
+    def _manual_location(self, url: str, text: str) -> dict | None:
+        haystack = self._normalize_for_match(f"{url} {text}")
+
+        for needle, location in MANUAL_LOCATION_OVERRIDES.items():
+            if self._normalize_for_match(needle) in haystack:
+                return location
 
         return None
 

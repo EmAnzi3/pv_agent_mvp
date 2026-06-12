@@ -367,6 +367,42 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3ZW/8] Correzione potenza Teagri Fratta
+echo ==========================================================
+if not exist ".\scripts\manual_teagri_frattapower_override.py" (
+    echo ERRORE: scripts\manual_teagri_frattapower_override.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\manual_teagri_frattapower_override.py" --data "%DATA_JSON%" --audit ".\reports\manual_teagri_frattapower_override_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: correzione potenza Teagri Fratta fallita.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
+echo [3ZV/8] Correzione localizzazione Sorgenia Calabria
+echo ==========================================================
+if not exist ".\scripts\manual_calabria_location_override.py" (
+    echo ERRORE: scripts\manual_calabria_location_override.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\manual_calabria_location_override.py" --data "%DATA_JSON%" --audit ".\reports\manual_calabria_location_override_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: correzione localizzazione Sorgenia Calabria fallita.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [3ZZ/8] Ricostruzione riepiloghi e classifiche
 echo ==========================================================
 if not exist ".\scripts\rebuild_dashboard_derived.py" (
