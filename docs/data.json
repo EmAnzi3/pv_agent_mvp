@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-06-12 15:33:17",
-    "snapshot_file": "projects_snapshot_20260612_133212.csv",
-    "total_records": 1132,
-    "punctual_records": 1050,
+    "generated_at": "2026-06-15 15:40:10",
+    "snapshot_file": "projects_snapshot_20260615_133929.csv",
+    "total_records": 1136,
+    "punctual_records": 1054,
     "terna_records": 82,
-    "total_mw_punctual": 30290.189,
+    "total_mw_punctual": 30512.257,
     "total_mw_terna": 142688.35,
     "source_counts": [
       {
@@ -21,12 +21,12 @@
       {
         "source": "mase_provvedimenti",
         "label": "MASE",
-        "count": 112
+        "count": 113
       },
       {
         "source": "mase",
         "label": "MASE",
-        "count": 102
+        "count": 103
       },
       {
         "source": "terna_econnextion",
@@ -61,7 +61,7 @@
       {
         "source": "veneto",
         "label": "Veneto",
-        "count": 13
+        "count": 15
       },
       {
         "source": "toscana",
@@ -132,13 +132,13 @@
       },
       {
         "region": "Sardegna",
-        "punctual_count": 20,
-        "punctual_mw": 812.813,
+        "punctual_count": 21,
+        "punctual_mw": 854.571,
         "terna_count": 5,
         "terna_mw": 16267.619,
         "terna_practices": 0,
-        "total_mw": 17080.432,
-        "priority_score": 5.1
+        "total_mw": 17122.19,
+        "priority_score": 5.2
       },
       {
         "region": "Emilia-Romagna",
@@ -162,13 +162,13 @@
       },
       {
         "region": "Veneto",
-        "punctual_count": 16,
-        "punctual_mw": 539.1,
+        "punctual_count": 18,
+        "punctual_mw": 623.32,
         "terna_count": 5,
         "terna_mw": 5620.426,
         "terna_practices": 0,
-        "total_mw": 6159.526,
-        "priority_score": 2.5
+        "total_mw": 6243.746,
+        "priority_score": 2.6
       },
       {
         "region": "Campania",
@@ -222,13 +222,13 @@
       },
       {
         "region": "Friuli-Venezia Giulia",
-        "punctual_count": 3,
-        "punctual_mw": 97.018,
+        "punctual_count": 4,
+        "punctual_mw": 193.108,
         "terna_count": 5,
         "terna_mw": 1073.77,
         "terna_practices": 0,
-        "total_mw": 1170.788,
-        "priority_score": 0.5
+        "total_mw": 1266.878,
+        "priority_score": 0.6
       },
       {
         "region": "Molise",
@@ -905,13 +905,13 @@
       ]
     },
     "quality": {
-      "punctual_records": 1050,
+      "punctual_records": 1054,
       "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 6,
       "missing_municipality": 14,
       "missing_url": 0,
-      "province_deduced": 24,
+      "province_deduced": 26,
       "municipalities_deduced": 3
     },
     "quality_by_source": [
@@ -940,7 +940,7 @@
       {
         "source": "mase_provvedimenti",
         "source_label": "MASE",
-        "count": 112,
+        "count": 113,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -951,13 +951,13 @@
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 102,
+        "count": 103,
         "missing_mw": 2,
         "missing_province": 0,
         "missing_municipality": 0,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 99.3
+        "completeness_pct": 99.4
       },
       {
         "source": "terna_econnextion",
@@ -1028,13 +1028,13 @@
       {
         "source": "veneto",
         "source_label": "Veneto",
-        "count": 13,
+        "count": 15,
         "missing_mw": 3,
         "missing_province": 0,
         "missing_municipality": 1,
-        "province_deduced": 13,
+        "province_deduced": 15,
         "municipalities_deduced": 0,
-        "completeness_pct": 89.7
+        "completeness_pct": 91.1
       },
       {
         "source": "toscana",
@@ -2647,6 +2647,37 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/8202"
       ],
       "project_key": "url:2dbe089d4465460e"
+    },
+    {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un nuovo impianto agrivoltaico, denominato \"Maniago Solar 1- ELLO 11\", della potenza complessiva di 96,09 MW e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Maniago (PN).",
+      "proponent": "ELLOMAY SOLAR ITALY Eleven S.r.l.",
+      "region": "Friuli-Venezia Giulia",
+      "province": "PN",
+      "municipalities": "MANIAGO",
+      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
+      "power_mw": 96.09,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8613",
+      "updated_at": "2026-06-15T13:35:31.587583",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un nuovo impianto agrivoltaico, denominato \"Maniago Solar 1- ELLO 11\", della potenza complessiva di 96,09 MW e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Maniago (PN)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8613"
+      ],
+      "project_key": "url:fab40fb2ca56e4a6"
     },
     {
       "source": "mase",
@@ -8022,6 +8053,37 @@
       "project_key": "url:371ab4ffd337b3af"
     },
     {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
+      "title": "Impianto agrivoltaico avanzato, ad indirizzo zootecnico per la produzione di energia elettrica con relative opere di rete. Potenza di generazione fotovoltaica 47,9 MW (47.904,48 Kw), potenza di uscita dagli inverter 44,1 MW (Pnom Impianto= 44,1 MW) e potenza in immissione 43,95 MW, connessione in AT 132 kV in CP E-distribuzione. - Comune di localizzazione: Nogara (VR)",
+      "proponent": "TRAIANO SRL",
+      "region": "Veneto",
+      "province": "VR",
+      "municipalities": "Nogara (VR)",
+      "project_type": "Impianto agrivoltaico avanzato, ad indirizzo zootecnico per la produzione di energia elettrica con r",
+      "power_mw": 47.9,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/nSF6xYkHo8apieC",
+      "updated_at": "2026-06-15T13:15:15.422206",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrivoltaico avanzato, ad indirizzo zootecnico per la produzione di energia elettrica con relative opere di rete. Potenza di generazione fotovoltaica 47,9 MW (47.904,48 Kw), potenza di uscita dagli inverter 44,1 MW (Pnom Impianto= 44,1 MW) e potenza in immissione 43,95 MW, connessione in AT 132 kV in CP E-distribuzione. - Comune di localizzazione: Nogara (VR)"
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/nSF6xYkHo8apieC"
+      ],
+      "project_key": "prj:62e0f089aaaf542c"
+    },
+    {
       "source": "sistema_puglia_energia",
       "source_group": "puglia",
       "source_label": "Puglia",
@@ -9231,6 +9293,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/5944"
       ],
       "project_key": "url:c7237e9805b34b08"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico di potenza nominale pari a 41,758 MW, sito nel Comune di Uta (CA) all'interno dell'Area Industriale Macchiareddu.",
+      "proponent": "PV ICHNOSOLAR S.R.L",
+      "region": "Sardegna",
+      "province": "CA",
+      "municipalities": "Uta",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 41.758,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6211",
+      "updated_at": "2026-06-15T13:39:23.358018",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico di potenza nominale pari a 41,758 MW, sito nel Comune di Uta (CA) all'interno dell'Area Industriale Macchiareddu."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6211"
+      ],
+      "project_key": "url:e4379ddae083cf17"
     },
     {
       "source": "mase",
@@ -10722,6 +10815,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/5948"
       ],
       "project_key": "url:c5eb65bbc14e0fc5"
+    },
+    {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
+      "title": "Impianto agrivoltaico \"Lendinara\" con una potenza nominale complessiva pari a 36,32 MWp. Comuni di localizzazione: Lendinara, Fratta Polesine, Costa di Rovigo, Villamarzana, Arquà Polesine e Rovigo (RO)",
+      "proponent": "FLY SUN 5 SRL",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Lendinara, Fratta Polesine, Costa di Rovigo, Villamarzana, Arquà Polesine, Rovigo (RO)",
+      "project_type": "Impianto agrivoltaico \"Lendinara\" con una potenza nominale complessiva pari a 36,32 MWp. Comuni di l",
+      "power_mw": 36.32,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/ekTtAqL5tjJjDa5",
+      "updated_at": "2026-06-15T13:15:15.422206",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrivoltaico \"Lendinara\" con una potenza nominale complessiva pari a 36,32 MWp. Comuni di localizzazione: Lendinara, Fratta Polesine, Costa di Rovigo, Villamarzana, Arquà Polesine e Rovigo (RO)"
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/ekTtAqL5tjJjDa5"
+      ],
+      "project_key": "prj:4d32042a594807f1"
     },
     {
       "source": "mase_provvedimenti",
@@ -31338,7 +31462,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-06-12T13:22:12.225578",
+      "updated_at": "2026-06-15T13:27:58.604086",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -36962,10 +37086,10 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-06-12T15:33:17",
+    "generated_at": "2026-06-15T15:40:10",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1237,
-    "records_after": 1183,
+    "records_before": 1241,
+    "records_after": 1187,
     "merged_or_removed": 54,
     "accepted_pairs": 55,
     "rejected_pairs": 91,
@@ -36996,13 +37120,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-06-12T15:33:33",
+      "generated_at": "2026-06-15T15:40:18",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-06-12T16:37:24"
+    "derived_fields_rebuilt_at": "2026-06-15T15:40:44"
   }
 }
