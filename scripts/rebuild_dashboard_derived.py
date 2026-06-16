@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 import json
@@ -65,30 +65,49 @@ def preferred_label(labels: Counter, fallback: str) -> str:
     return non_empty.most_common(1)[0][0]
 
 
-def rebuild_source_counts(records: list[dict]) -> list[dict]:
+def rebuild_source_counts(
+    records: list[dict],
+) -> list[dict]:
     counts = Counter()
     labels: dict[str, Counter] = defaultdict(Counter)
 
     for record in records:
-        source = str(record.get("source") or "").strip() or "n/d"
-        label = str(record.get("source_label") or "").strip()
+        source_group = str(
+            record.get("source_group")
+            or record.get("source")
+            or "n/d"
+        ).strip().lower()
 
-        counts[source] += 1
+        label = str(
+            record.get("source_label")
+            or ""
+        ).strip()
+
+        counts[source_group] += 1
+
         if label:
-            labels[source][label] += 1
+            labels[source_group][label] += 1
 
     rows = [
         {
-            "source": source,
-            "label": preferred_label(labels[source], source),
+            "source": source_group,
+            "label": preferred_label(
+                labels[source_group],
+                source_group,
+            ),
             "count": count,
         }
-        for source, count in counts.items()
+        for source_group, count in counts.items()
     ]
 
-    rows.sort(key=lambda row: (-row["count"], row["source"].lower()))
-    return rows
+    rows.sort(
+        key=lambda row: (
+            -row["count"],
+            row["source"].lower(),
+        )
+    )
 
+    return rows
 
 def rebuild_regions(records: list[dict]) -> list[dict]:
     stats: dict[str, dict] = defaultdict(
@@ -204,12 +223,20 @@ def rebuild_quality(records: list[dict]) -> tuple[dict, list[dict]]:
     labels: dict[str, Counter] = defaultdict(Counter)
 
     for record in records:
-        source = str(record.get("source") or "").strip() or "n/d"
-        grouped[source].append(record)
+        source_group = str(
+            record.get("source_group")
+            or record.get("source")
+            or "n/d"
+        ).strip().lower()
 
-        label = str(record.get("source_label") or "").strip()
+        grouped[source_group].append(record)
+
+        label = str(
+            record.get("source_label") or ""
+        ).strip()
+
         if label:
-            labels[source][label] += 1
+            labels[source_group][label] += 1
 
     quality_by_source = []
 

@@ -17,6 +17,7 @@ from app.collectors.sistema_puglia_energia import SistemaPugliaEnergiaCollector
 from app.collectors.lazio import LazioCollector
 from app.collectors.sardegna import SardegnaCollector
 from app.collectors.toscana import ToscanaCollector
+from app.collectors.toscana_atos import ToscanaAtosCollector
 from app.collectors.piemonte import PiemonteCollector
 from app.collectors.campania import CampaniaCollector
 from app.collectors.calabria import CalabriaCollector
@@ -50,6 +51,7 @@ COLLECTORS = [
     LazioCollector,
     SardegnaCollector,
     ToscanaCollector,
+    ToscanaAtosCollector,
     PiemonteCollector,
     CampaniaCollector,
     CalabriaCollector,

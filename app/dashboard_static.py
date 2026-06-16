@@ -51,11 +51,13 @@ SOURCE_LABELS = {
     "emilia_romagna": "Emilia-Romagna",
     "sardegna": "Sardegna",
     "toscana": "Toscana",
+    "toscana_atos": "Toscana",
     "piemonte": "Piemonte",
     "campania": "Campania",
 }
 
 SOURCE_GROUPS = {
+    "toscana_atos": "toscana",
     "mase": "mase",
     "mase_provvedimenti": "mase",
     "puglia": "puglia",

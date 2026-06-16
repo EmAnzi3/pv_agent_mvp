@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 import json
@@ -23,25 +23,68 @@ def normalize_record(r: dict) -> int:
     changed = 0
 
     src_raw = str(r.get("source", "")).strip()
-    src_norm = SOURCE_MAP.get(src_raw.lower())
+    src_key = src_raw.lower()
+
+    url = str(
+        r.get("url")
+        or r.get("primary_url")
+        or r.get("source_url")
+        or ""
+    ).lower()
+
+    is_atos = (
+        src_key == "toscana_atos"
+        or "atos.arrr.it/scheda_impianto_fer" in url
+    )
+
+    is_toscana = (
+        is_atos
+        or src_key == "toscana"
+    )
+
+    if is_toscana:
+        expected = {
+            "source": (
+                "toscana_atos"
+                if is_atos
+                else "toscana"
+            ),
+            "source_group": "toscana",
+            "source_label": "Toscana",
+        }
+
+        for field, value in expected.items():
+            if r.get(field) != value:
+                r[field] = value
+                changed += 1
+
+        return changed
+
+    src_norm = SOURCE_MAP.get(src_key)
 
     if src_norm:
-        for field in ["source", "source_label", "source_group"]:
+        for field in [
+            "source",
+            "source_label",
+            "source_group",
+        ]:
             if r.get(field) != src_norm:
                 r[field] = src_norm
                 changed += 1
 
         if isinstance(r.get("_merged_sources"), list):
             new_sources = []
+
             for item in r["_merged_sources"]:
                 fixed = fix_value(item)
                 new_sources.append(fixed)
+
                 if fixed != item:
                     changed += 1
+
             r["_merged_sources"] = new_sources
 
     return changed
-
 
 def normalize_summary(data: dict) -> int:
     changed = 0
