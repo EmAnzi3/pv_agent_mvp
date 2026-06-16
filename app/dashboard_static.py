@@ -1493,6 +1493,25 @@ class StaticDashboardBuilder:
           Record visualizzati: <strong id="visibleCount">0</strong> · limite tabella: 700 righe
         </div>
 
+          <button
+            type="button"
+            id="exportFilteredCsv"
+            style="
+              display:block;
+              margin:0 0 12px auto;
+              border:0;
+              border-radius:12px;
+              padding:10px 16px;
+              background:#0f766e;
+              color:#ffffff;
+              font-size:13px;
+              font-weight:800;
+              cursor:pointer;
+            "
+          >
+            Esporta CSV
+          </button>
+
         <div class="table-legend">
           <span class="legend-dot xl">≥ 100 MW</span>
           <span class="legend-dot lg">50–99 MW</span>
@@ -1835,12 +1854,137 @@ class StaticDashboardBuilder:
       });
     }
 
+    function csvCell(value) {
+      const cleaned = text(value)
+        .split(String.fromCharCode(13)).join(' ')
+        .split(String.fromCharCode(10)).join(' ')
+        .trim();
+
+      return '"'
+        + cleaned.split('"').join('""')
+        + '"';
+    }
+
+    function exportFilteredCsv() {
+      const filtered = sortRecords(
+        records.filter(recordMatchesFilters)
+      );
+
+      if (!filtered.length) {
+        return;
+      }
+
+      const headers = [
+        'Fonte',
+        'Regione',
+        'Provincia',
+        'Comune/i',
+        'Progetto / aggregato',
+        'Proponente',
+        'Tipo',
+        'MW',
+        'Stato',
+        'Link'
+      ];
+
+      const rows = filtered.map(record => [
+        record.source_label || record.source || '',
+        record.region || '',
+        record.province || '',
+        record.municipalities || '',
+        record.title || '',
+        isTerna(record)
+          ? 'Dato aggregato'
+          : (record.proponent || ''),
+        record.project_type || '',
+        record.power_mw === null
+          || record.power_mw === undefined
+          || record.power_mw === ''
+            ? ''
+            : formatItalianNumber(
+                record.power_mw,
+                3
+              ),
+        record.status || '',
+        record.url || ''
+      ]);
+
+      const lineBreak =
+        String.fromCharCode(13, 10);
+
+      const csv = [headers, ...rows]
+        .map(
+          row => row.map(csvCell).join(';')
+        )
+        .join(lineBreak);
+
+      const blob = new Blob(
+        [
+          String.fromCharCode(0xFEFF),
+          csv
+        ],
+        {
+          type: 'text/csv;charset=utf-8'
+        }
+      );
+
+      const now = new Date();
+      const pad = value =>
+        String(value).padStart(2, '0');
+
+      const filename =
+        'pv_pipeline_filtrata_'
+        + now.getFullYear()
+        + pad(now.getMonth() + 1)
+        + pad(now.getDate())
+        + '_'
+        + pad(now.getHours())
+        + pad(now.getMinutes())
+        + '.csv';
+
+      const objectUrl =
+        URL.createObjectURL(blob);
+
+      const link =
+        document.createElement('a');
+
+      link.href = objectUrl;
+      link.download = filename;
+
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+
+      setTimeout(
+        () => URL.revokeObjectURL(objectUrl),
+        0
+      );
+    }
+
     function renderPipeline() {
       const body = document.getElementById('pipelineBody');
       body.innerHTML = '';
 
       const filtered = sortRecords(records.filter(recordMatchesFilters));
       setText('visibleCount', fmtNum(filtered.length));
+
+      const exportButton =
+        document.getElementById(
+          'exportFilteredCsv'
+        );
+
+      if (exportButton) {
+        exportButton.disabled =
+          filtered.length === 0;
+
+        exportButton.textContent =
+          filtered.length
+            ? 'Esporta CSV ('
+              + fmtNum(filtered.length)
+              + ')'
+            : 'Nessun risultato';
+      }
+
 
       filtered.slice(0, 700).forEach(record => {
         const tr = document.createElement('tr');
@@ -2011,6 +2155,18 @@ class StaticDashboardBuilder:
     renderPipeline();
     initCharts();
     attachEvents();
+
+    const pipelineExportButton =
+      document.getElementById(
+        'exportFilteredCsv'
+      );
+
+    if (pipelineExportButton) {
+      pipelineExportButton.addEventListener(
+        'click',
+        exportFilteredCsv
+      );
+    }
   </script>
 </body>
 </html>
