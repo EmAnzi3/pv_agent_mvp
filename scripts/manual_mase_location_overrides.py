@@ -20,7 +20,11 @@ OVERRIDES = {
         "province": "BO",
         "municipalities": "Malalbergo, Baricella",
         "reason": "manual_mase_6160_location_fix",
-    }
+    },
+    "https://va.mite.gov.it/it-IT/Oggetti/Info/9004": {
+        "province": "VS",
+        "reason": "manual_mase_9004_villacidro_province_fix",
+    },
 }
 
 

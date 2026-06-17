@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-06-16 16:39:15",
-    "snapshot_file": "projects_snapshot_20260616_143843.csv",
-    "total_records": 1383,
-    "punctual_records": 1301,
+    "generated_at": "2026-06-17 18:15:05",
+    "snapshot_file": "projects_snapshot_20260617_161335.csv",
+    "total_records": 1385,
+    "punctual_records": 1303,
     "terna_records": 82,
-    "total_mw_punctual": 34048.229,
+    "total_mw_punctual": 34099.529,
     "total_mw_terna": 142688.35,
     "source_counts": [
       {
@@ -26,7 +26,7 @@
       {
         "source": "mase",
         "label": "MASE",
-        "count": 217
+        "count": 218
       },
       {
         "source": "terna_econnextion",
@@ -46,7 +46,7 @@
       {
         "source": "emilia_romagna",
         "label": "Emilia-Romagna",
-        "count": 19
+        "count": 20
       },
       {
         "source": "calabria",
@@ -137,23 +137,23 @@
       },
       {
         "region": "Sardegna",
-        "punctual_count": 21,
-        "punctual_mw": 854.571,
+        "punctual_count": 22,
+        "punctual_mw": 905.871,
         "terna_count": 5,
         "terna_mw": 16267.619,
         "terna_practices": 0,
-        "total_mw": 17122.19,
-        "priority_score": 5.2
+        "total_mw": 17173.49,
+        "priority_score": 5.3
       },
       {
         "region": "Emilia-Romagna",
-        "punctual_count": 32,
+        "punctual_count": 33,
         "punctual_mw": 1631.176,
         "terna_count": 5,
         "terna_mw": 7522.206,
         "terna_practices": 0,
         "total_mw": 9153.382,
-        "priority_score": 4.7
+        "priority_score": 4.8
       },
       {
         "region": "Basilicata",
@@ -900,8 +900,8 @@
       ]
     },
     "quality": {
-      "punctual_records": 1301,
-      "missing_mw": 130,
+      "punctual_records": 1303,
+      "missing_mw": 131,
       "missing_region": 0,
       "missing_province": 6,
       "missing_municipality": 14,
@@ -946,7 +946,7 @@
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 217,
+        "count": 218,
         "missing_mw": 2,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -990,13 +990,13 @@
       {
         "source": "emilia_romagna",
         "source_label": "Emilia-Romagna",
-        "count": 19,
-        "missing_mw": 0,
+        "count": 20,
+        "missing_mw": 1,
         "missing_province": 0,
         "missing_municipality": 0,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 100.0
+        "completeness_pct": 98.3
       },
       {
         "source": "calabria",
@@ -3473,16 +3473,16 @@
       "source": "veneto",
       "source_group": "veneto",
       "source_label": "Veneto",
-      "title": "Progetto di impianto agrivoltaico da 84,3 MWp. Comuni di localizzazione: Frassinelle Polesine, Villamarzana, Arquà Polesine (RO) e Rovigo (opere di connessione)",
+      "title": "Progetto di impianto agrivoltaico da 84,3 MWp con potenza in immisione pari a 70 MW e opere connesse. Comuni di localizzazione: Frassinelle Polesine, Villamarzana, Arquà Polesine (RO) e Rovigo (solo opere di connessione).",
       "proponent": "AUKERA ITALY 9 SRL",
       "region": "Veneto",
       "province": "RO",
       "municipalities": "Frassinelle Polesine, Villamarzana, Arquà Polesine (RO), Rovigo (opere di connessione)",
-      "project_type": "Progetto di impianto agrivoltaico da 84,3 MWp. Comuni di localizzazione: Frassinelle Polesine, Villa",
+      "project_type": "Progetto di impianto agrivoltaico da 84,3 MWp con potenza in immisione pari a 70 MW e opere connesse",
       "power_mw": 84.3,
       "status": "",
       "url": "https://sharing.regione.veneto.it/index.php/s/TFpisjrPT7DMCwy",
-      "updated_at": "2026-06-08T14:08:36.556781",
+      "updated_at": "2026-06-17T14:14:38.293598",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -3493,12 +3493,12 @@
       ],
       "_dedupe_group_size": 1,
       "_dedupe_titles": [
-        "Progetto di impianto agrivoltaico da 84,3 MWp. Comuni di localizzazione: Frassinelle Polesine, Villamarzana, Arquà Polesine (RO) e Rovigo (opere di connessione)"
+        "Progetto di impianto agrivoltaico da 84,3 MWp con potenza in immisione pari a 70 MW e opere connesse. Comuni di localizzazione: Frassinelle Polesine, Villamarzana, Arquà Polesine (RO) e Rovigo (solo opere di connessione)."
       ],
       "_dedupe_urls": [
         "https://sharing.regione.veneto.it/index.php/s/TFpisjrPT7DMCwy"
       ],
-      "project_key": "prj:6aa6e0902c77dbf7"
+      "project_key": "prj:07666b36bdfa8c3b"
     },
     {
       "source": "mase",
@@ -7443,6 +7443,37 @@
       "project_key": "url:1c4a8370948e1b08"
     },
     {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un impianto agrivoltaico \"Villacidro 3\", della potenza pari a 51,3 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Villacidro (VS), San Gavino Monreale (VS), Sanluri (VS), Serramanna (VS) e Villasor (CA).",
+      "proponent": "Green Energy Sardegna 2 S.r.l.",
+      "region": "Sardegna",
+      "province": "VS",
+      "municipalities": "VILLACIDRO",
+      "project_type": "Agrivoltaico",
+      "power_mw": 51.3,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9004",
+      "updated_at": "2026-06-17T14:32:26.798390",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto agrivoltaico \"Villacidro 3\", della potenza pari a 51,3 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Villacidro (VS), San Gavino Monreale (VS), Sanluri (VS), Serramanna (VS) e Villasor (CA)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/9004"
+      ],
+      "project_key": "url:e1329492ae1c1e89"
+    },
+    {
       "source": "toscana",
       "source_group": "toscana",
       "source_label": "Toscana",
@@ -8142,7 +8173,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-06-16T14:28:27.091184",
+      "updated_at": "2026-06-17T16:02:55.444242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -14822,7 +14853,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-06-16T14:28:27.091184",
+      "updated_at": "2026-06-17T16:02:55.444242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -16775,7 +16806,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-06-16T14:28:27.091184",
+      "updated_at": "2026-06-17T16:02:55.444242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -25179,7 +25210,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-06-16T14:28:27.091184",
+      "updated_at": "2026-06-17T16:02:55.444242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -25520,7 +25551,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-06-16T14:28:27.091184",
+      "updated_at": "2026-06-17T16:02:55.444242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -26814,7 +26845,7 @@
       "source_group": "lombardia",
       "source_label": "Lombardia",
       "title": "Oggetto della valutazione è la realizzazione di una centrale fotovoltaica a terra da 7,2 MW e relative opere di connessione da realizzarsi nel comune di Bovisio Masciago (MB).",
-      "proponent": "OPEN SOLAR 3 S.R.L.; OPERATION ENERGY S.R.L., O IN FORMA ABBREVIATA, OPEN S.R.L.",
+      "proponent": "OPERATION ENERGY S.R.L., O IN FORMA ABBREVIATA, OPEN S.R.L.; OPEN SOLAR 3 S.R.L.",
       "region": "Lombardia",
       "province": "MB",
       "municipalities": "Bovisio Masciago",
@@ -26822,7 +26853,7 @@
       "power_mw": 7.2,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=15112&idProvenienza=2",
-      "updated_at": "2026-05-25T13:31:27.618545",
+      "updated_at": "2026-06-17T15:53:34.519977",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -26838,7 +26869,7 @@
       "_dedupe_urls": [
         "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/15112"
       ],
-      "project_key": "prj:f85cc13c9a07cfde"
+      "project_key": "prj:485f873c0c9c13a6"
     },
     {
       "source": "toscana_atos",
@@ -28372,7 +28403,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-06-16T14:28:27.091184",
+      "updated_at": "2026-06-17T16:02:55.444242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -39106,7 +39137,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-06-16T14:28:48.262264",
+      "updated_at": "2026-06-17T16:04:52.411632",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -41481,6 +41512,37 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11908"
       ],
       "project_key": "src:d8a969356e3db2b1"
+    },
+    {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "VIA INTERREGIONALE: PROGETTO PER UN IMPIANTO AGRIVOLTAICO AVANZATO UBICATO NEL COMUNE DI ARIANO NEL POLESINE E RELATIVE OPERE DI CONNESSIONE NEI COMUNI DI ARIANO NEL POLESINE (RO), CORBOLA (RO), MESOLA (FE), CODIGORO (FE)",
+      "proponent": "ARIAN SOLAR S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "FE",
+      "municipalities": "Mesola, Ariano Nel Polesine, Corbola, Codigoro",
+      "project_type": "VIA Interregionale",
+      "power_mw": null,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6962",
+      "updated_at": "2026-06-17T15:52:18.934179",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "VIA INTERREGIONALE: PROGETTO PER UN IMPIANTO AGRIVOLTAICO AVANZATO UBICATO NEL COMUNE DI ARIANO NEL POLESINE E RELATIVE OPERE DI CONNESSIONE NEI COMUNI DI ARIANO NEL POLESINE (RO), CORBOLA (RO), MESOLA (FE), CODIGORO (FE)"
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6962"
+      ],
+      "project_key": "url:db3d214d5cd7e5a9"
     },
     {
       "source": "terna_econnextion",
@@ -44730,10 +44792,10 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-06-16T16:39:15",
+    "generated_at": "2026-06-17T18:15:05",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1490,
-    "records_after": 1433,
+    "records_before": 1493,
+    "records_after": 1436,
     "merged_or_removed": 57,
     "accepted_pairs": 58,
     "rejected_pairs": 141,
@@ -44764,13 +44826,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-06-16T16:39:24",
+      "generated_at": "2026-06-17T18:15:29",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-06-16T16:39:45"
+    "derived_fields_rebuilt_at": "2026-06-17T18:15:53"
   }
 }

@@ -69,6 +69,7 @@ PROVINCE_NAME_TO_CODE = {
     "MASSA CARRARA": "MS",
     "MASSA-CARRARA": "MS",
     "MATERA": "MT",
+    "MEDIO CAMPIDANO": "VS",
     "MESSINA": "ME",
     "MILANO": "MI",
     "MODENA": "MO",
