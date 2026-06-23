@@ -3,6 +3,7 @@
 import argparse
 import csv
 import json
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -13,6 +14,53 @@ TARGET_URL = (
 )
 
 CORRECT_POWER_MW = 17.91
+
+
+def read_json_with_retry(path: Path, attempts: int = 20, delay: float = 0.75) -> dict:
+    last_error = None
+
+    for attempt in range(1, attempts + 1):
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except PermissionError as exc:
+            last_error = exc
+            print(
+                f"[arian-solar-power] data.json bloccato in lettura "
+                f"tentativo {attempt}/{attempts}; retry tra {delay}s..."
+            )
+            time.sleep(delay)
+
+    raise SystemExit(
+        f"ERRORE: impossibile leggere {path} dopo {attempts} tentativi. "
+        f"Ultimo errore: {last_error}"
+    )
+
+
+def write_json_with_retry(
+    path: Path,
+    data: dict,
+    attempts: int = 20,
+    delay: float = 0.75,
+) -> None:
+    last_error = None
+    payload = json.dumps(data, ensure_ascii=False, indent=2)
+
+    for attempt in range(1, attempts + 1):
+        try:
+            path.write_text(payload, encoding="utf-8")
+            return
+        except PermissionError as exc:
+            last_error = exc
+            print(
+                f"[arian-solar-power] data.json bloccato in scrittura "
+                f"tentativo {attempt}/{attempts}; retry tra {delay}s..."
+            )
+            time.sleep(delay)
+
+    raise SystemExit(
+        f"ERRORE: impossibile scrivere {path} dopo {attempts} tentativi. "
+        f"Ultimo errore: {last_error}"
+    )
 
 
 def main() -> int:
@@ -30,7 +78,7 @@ def main() -> int:
     if not data_path.exists():
         raise SystemExit(f"ERRORE: file non trovato: {data_path}")
 
-    data = json.loads(data_path.read_text(encoding="utf-8"))
+    data = read_json_with_retry(data_path)
     records = data.get("records", [])
 
     matches = [
@@ -50,10 +98,7 @@ def main() -> int:
 
     record["power_mw"] = CORRECT_POWER_MW
 
-    data_path.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    write_json_with_retry(data_path, data)
 
     audit_path.parent.mkdir(parents=True, exist_ok=True)
 

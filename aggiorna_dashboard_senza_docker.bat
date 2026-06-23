@@ -439,6 +439,24 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3ZS/8] Correzioni manuali qualit? nuovi record
+echo ==========================================================
+if not exist ".\scripts\manual_quality_overrides.py" (
+    echo ERRORE: scripts\manual_quality_overrides.py non trovato.
+    pause
+    exit /b 1
+)
+
+"%PYTHON_EXE%" ".\scripts\manual_quality_overrides.py" --data "%DATA_JSON%" --audit ".\reports\manual_quality_overrides_audit.csv"
+if errorlevel 1 (
+    echo.
+    echo ERRORE: correzioni manuali qualit? nuovi record fallite.
+    pause
+    exit /b 1
+)
+
+echo.
+echo ==========================================================
 echo [3ZZ/8] Ricostruzione riepiloghi e classifiche
 echo ==========================================================
 if not exist ".\scripts\rebuild_dashboard_derived.py" (
