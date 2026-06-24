@@ -41,6 +41,31 @@ PATCH_RULES = [
         },
         "reason": "municipality_missing_in_extracted_record",
     },
+
+    {
+        "name": "fix_toscana_id_2407_grosseto_province",
+        "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/32",
+        "fields": {
+            "region": "Toscana",
+            "province": "GR",
+            "municipalities": "GROSSETO",
+        },
+        "reason": "toscana_id_2407_wrong_province_code_ar_instead_of_gr",
+    },
+    {
+        "name": "fix_mase_spinazzola_location_from_source_document",
+        "title_contains": [
+            "Progetto di un impianto fotovoltaico",
+            "56,31 MW",
+        ],
+        "fields": {
+            "region": "Puglia",
+            "province": "BT",
+            "municipalities": "Spinazzola",
+        },
+        "reason": "source_document_places_project_in_spinazzola_bt_not_genzano_di_lucania_pz",
+    },
+
 ]
 
 
@@ -113,9 +138,32 @@ def exclusion_matches(record: dict[str, Any], rule: dict[str, Any]) -> bool:
     )
 
 
+def title_contains_all(record: dict[str, Any], fragments: list[str]) -> bool:
+    title = clean(record.get("title") or record.get("project_name"))
+    title_lower = title.lower()
+
+    return all(
+        fragment.lower() in title_lower
+        for fragment in fragments
+    )
+
+
 def patch_matches(record: dict[str, Any], rule: dict[str, Any]) -> bool:
-    url = clean(record.get("url") or record.get("source_url"))
-    return same_url(url, rule["url"])
+    url = clean(
+        record.get("url")
+        or record.get("source_url")
+        or record.get("primary_url")
+    )
+
+    if rule.get("url") and same_url(url, rule["url"]):
+        return True
+
+    fragments = rule.get("title_contains") or []
+
+    if fragments and title_contains_all(record, fragments):
+        return True
+
+    return False
 
 
 def main() -> int:
