@@ -66,6 +66,15 @@ PATCH_RULES = [
         "reason": "source_document_places_project_in_spinazzola_bt_not_genzano_di_lucania_pz",
     },
 
+    {
+        "name": "fix_veneto_ag14_power_from_documentation",
+        "url": "https://sharing.regione.veneto.it/index.php/s/nn9MApNA7ZAztYR",
+        "fields": {
+            "power_mw": 37.481,
+        },
+        "reason": "power_confirmed_in_project_documentation_37_481_mw",
+    },
+
 ]
 
 
