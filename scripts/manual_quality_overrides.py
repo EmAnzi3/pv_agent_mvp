@@ -67,6 +67,18 @@ PATCH_RULES = [
     },
 
     {
+        "name": "fix_mase_6261_greenfrut_location_ud",
+        "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6261",
+        "fields": {
+            "region": "Friuli-Venezia Giulia",
+            "province": "UD",
+            "municipalities": "Bicinicco, Mortegliano, Castions di Strada, Santa Maria la Longa, Pavia di Udine",
+            "power_mw": 68.51,
+        },
+        "reason": "greenfrut_project_is_in_udine_province_not_lombardia_pavia",
+    },
+
+    {
         "name": "fix_veneto_ag14_power_from_documentation",
         "url": "https://sharing.regione.veneto.it/index.php/s/nn9MApNA7ZAztYR",
         "fields": {

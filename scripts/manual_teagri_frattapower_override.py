@@ -4,12 +4,60 @@ import argparse
 import csv
 import json
 import re
+import time
 from datetime import datetime
 from pathlib import Path
 
 
 TARGET_URL = "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6895"
 CORRECT_POWER_MW = 22.377
+
+
+def read_json_with_retry(path: Path, attempts: int = 20, delay: float = 0.75) -> dict:
+    last_error = None
+
+    for attempt in range(1, attempts + 1):
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except PermissionError as exc:
+            last_error = exc
+            print(
+                f"[teagri-fratta-override] data.json bloccato in lettura "
+                f"tentativo {attempt}/{attempts}; retry tra {delay}s..."
+            )
+            time.sleep(delay)
+
+    raise SystemExit(
+        f"ERRORE: impossibile leggere {path} dopo {attempts} tentativi. "
+        f"Ultimo errore: {last_error}"
+    )
+
+
+def write_json_with_retry(
+    path: Path,
+    data: dict,
+    attempts: int = 20,
+    delay: float = 0.75,
+) -> None:
+    payload = json.dumps(data, ensure_ascii=False, indent=2)
+    last_error = None
+
+    for attempt in range(1, attempts + 1):
+        try:
+            path.write_text(payload, encoding="utf-8")
+            return
+        except PermissionError as exc:
+            last_error = exc
+            print(
+                f"[teagri-fratta-override] data.json bloccato in scrittura "
+                f"tentativo {attempt}/{attempts}; retry tra {delay}s..."
+            )
+            time.sleep(delay)
+
+    raise SystemExit(
+        f"ERRORE: impossibile scrivere {path} dopo {attempts} tentativi. "
+        f"Ultimo errore: {last_error}"
+    )
 
 
 def fix_title(value: str) -> str:
@@ -33,7 +81,10 @@ def main() -> int:
     data_path = Path(args.data)
     audit_path = Path(args.audit)
 
-    data = json.loads(data_path.read_text(encoding="utf-8"))
+    if not data_path.exists():
+        raise SystemExit(f"ERRORE: file non trovato: {data_path}")
+
+    data = read_json_with_retry(data_path)
     records = data.get("records", [])
 
     matches = [
@@ -58,10 +109,7 @@ def main() -> int:
             fix_title(title) for title in record["_dedupe_titles"]
         ]
 
-    data_path.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    write_json_with_retry(data_path, data)
 
     audit_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -76,7 +124,7 @@ def main() -> int:
         "reason": "source_unit_error_kw_reported_as_mw",
     }
 
-    with audit_path.open("w", newline="", encoding="utf-8") as handle:
+    with audit_path.open("w", newline="", encoding="utf-8-sig") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(row.keys()))
         writer.writeheader()
         writer.writerow(row)
