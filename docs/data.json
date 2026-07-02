@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-07-01 15:55:07",
-    "snapshot_file": "projects_snapshot_20260701_135349.csv",
-    "total_records": 1422,
-    "punctual_records": 1340,
+    "generated_at": "2026-07-02 18:23:45",
+    "snapshot_file": "projects_snapshot_20260702_162259.csv",
+    "total_records": 1425,
+    "punctual_records": 1343,
     "terna_records": 82,
-    "total_mw_punctual": 35650.797,
+    "total_mw_punctual": 35701.906,
     "total_mw_terna": 142228.857,
     "source_counts": [
       {
@@ -26,7 +26,7 @@
       {
         "source": "mase",
         "label": "MASE",
-        "count": 239
+        "count": 241
       },
       {
         "source": "terna_econnextion",
@@ -56,7 +56,7 @@
       {
         "source": "veneto",
         "label": "Veneto",
-        "count": 16
+        "count": 17
       },
       {
         "source": "basilicata",
@@ -167,23 +167,23 @@
       },
       {
         "region": "Veneto",
-        "punctual_count": 20,
-        "punctual_mw": 690.531,
+        "punctual_count": 21,
+        "punctual_mw": 705.561,
         "terna_count": 5,
         "terna_mw": 5553.815,
         "terna_practices": 0,
-        "total_mw": 6244.346,
-        "priority_score": 2.8
+        "total_mw": 6259.376,
+        "priority_score": 2.9
       },
       {
         "region": "Campania",
-        "punctual_count": 22,
-        "punctual_mw": 702.176,
+        "punctual_count": 24,
+        "punctual_mw": 738.255,
         "terna_count": 5,
         "terna_mw": 2838.933,
         "terna_practices": 0,
-        "total_mw": 3541.109,
-        "priority_score": 2.4
+        "total_mw": 3577.188,
+        "priority_score": 2.5
       },
       {
         "region": "Calabria",
@@ -900,13 +900,13 @@
       ]
     },
     "quality": {
-      "punctual_records": 1340,
+      "punctual_records": 1343,
       "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 6,
       "missing_municipality": 14,
       "missing_url": 0,
-      "province_deduced": 27,
+      "province_deduced": 28,
       "municipalities_deduced": 4
     },
     "quality_by_source": [
@@ -946,7 +946,7 @@
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 239,
+        "count": 241,
         "missing_mw": 2,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -1012,13 +1012,13 @@
       {
         "source": "veneto",
         "source_label": "Veneto",
-        "count": 16,
+        "count": 17,
         "missing_mw": 3,
         "missing_province": 0,
         "missing_municipality": 1,
-        "province_deduced": 16,
+        "province_deduced": 17,
         "municipalities_deduced": 0,
-        "completeness_pct": 91.7
+        "completeness_pct": 92.2
       },
       {
         "source": "basilicata",
@@ -8483,7 +8483,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-07-01T13:41:11.530408",
+      "updated_at": "2026-07-02T16:17:15.163242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -15507,7 +15507,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-07-01T13:41:11.530408",
+      "updated_at": "2026-07-02T16:17:15.163242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -17584,7 +17584,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-07-01T13:41:11.530408",
+      "updated_at": "2026-07-02T16:17:15.163242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19357,6 +19357,37 @@
       "project_key": "url:d5b29e138332b0d5"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico di potenza complessiva pari a 18,91 MW, denominato \"Caivano\", e delle opere di connessione alla RTN, da realizzarsi nel Comune di Caivano (NA), in località \"Masseria Lupara\"",
+      "proponent": "Solar Borealis S.r.l.",
+      "region": "Campania",
+      "province": "NA",
+      "municipalities": "Caivano",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 18.91,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6268",
+      "updated_at": "2026-07-02T16:22:59.233187",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico di potenza complessiva pari a 18,91 MW, denominato \"Caivano\", e delle opere di connessione alla RTN, da realizzarsi nel Comune di Caivano (NA), in località \"Masseria Lupara\""
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6268"
+      ],
+      "project_key": "url:b22aa90fa5d815b0"
+    },
+    {
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
@@ -20509,6 +20540,37 @@
       "project_key": "url:6bfd308c7214f01c"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico, della potenza di 17,169 MW e delle relative opere di connessione alla RTN, sito nel Comune di Ariano Irpino (AV) in località Masseria delle Monache.",
+      "proponent": "HELIOS ONE S.R.L.",
+      "region": "Campania",
+      "province": "AV",
+      "municipalities": "Ariano Irpino",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 17.169,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6265",
+      "updated_at": "2026-07-02T16:22:59.233187",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico, della potenza di 17,169 MW e delle relative opere di connessione alla RTN, sito nel Comune di Ariano Irpino (AV) in località Masseria delle Monache."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6265"
+      ],
+      "project_key": "url:2eebaa6bdbf50283"
+    },
+    {
       "source": "toscana",
       "source_group": "toscana",
       "source_label": "Toscana",
@@ -21379,6 +21441,37 @@
         "https://regionelazio.app.box.com/v/VIA-033-2024"
       ],
       "project_key": "url:df9adf6f2950dca0"
+    },
+    {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
+      "title": "Impianto agrivoltaico denominato \"CASTELNOVO B.\", di potenza pari a 15,03 MWp e relative opere di connesse. Comuni di localizzazione: Castelnuovo Bariano (RO), Ceneselli (RO), Giacciano con Baruchella (RO) Trecenta (RO) e Bagnolo di Po (RO)",
+      "proponent": "CASTELNOVO SOLAR SRL",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Castelnuovo Bariano (RO), Ceneselli (RO), Giacciano con Baruchella (RO) Trecenta (RO), Bagnolo di Po (RO)",
+      "project_type": "Impianto agrivoltaico denominato \"CASTELNOVO B.\", di potenza pari a 15,03 MWp e relative opere di co",
+      "power_mw": 15.03,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/Ly8gkASWyKReK4r",
+      "updated_at": "2026-07-02T16:11:28.775231",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrivoltaico denominato \"CASTELNOVO B.\", di potenza pari a 15,03 MWp e relative opere di connesse. Comuni di localizzazione: Castelnuovo Bariano (RO), Ceneselli (RO), Giacciano con Baruchella (RO) Trecenta (RO) e Bagnolo di Po (RO)"
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/Ly8gkASWyKReK4r"
+      ],
+      "project_key": "prj:d715b4948b9aaa08"
     },
     {
       "source": "emilia_romagna",
@@ -26300,7 +26393,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-07-01T13:41:11.530408",
+      "updated_at": "2026-07-02T16:17:15.163242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -26641,7 +26734,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-07-01T13:41:11.530408",
+      "updated_at": "2026-07-02T16:17:15.163242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29524,7 +29617,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-07-01T13:41:11.530408",
+      "updated_at": "2026-07-02T16:17:15.163242",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -40289,7 +40382,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-07-01T13:43:05.434943",
+      "updated_at": "2026-07-02T16:18:49.126913",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -45976,10 +46069,10 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-07-01T15:55:07",
+    "generated_at": "2026-07-02T18:23:45",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1614,
-    "records_after": 1519,
+    "records_before": 1617,
+    "records_after": 1522,
     "merged_or_removed": 95,
     "accepted_pairs": 113,
     "rejected_pairs": 252,
@@ -46010,13 +46103,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-07-01T15:55:26",
+      "generated_at": "2026-07-02T18:23:56",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-07-01T15:55:45"
+    "derived_fields_rebuilt_at": "2026-07-02T18:24:06"
   }
 }
