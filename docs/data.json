@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-07-02 18:23:45",
-    "snapshot_file": "projects_snapshot_20260702_162259.csv",
-    "total_records": 1425,
-    "punctual_records": 1343,
+    "generated_at": "2026-07-03 21:59:25",
+    "snapshot_file": "projects_snapshot_20260703_195838.csv",
+    "total_records": 1427,
+    "punctual_records": 1345,
     "terna_records": 82,
-    "total_mw_punctual": 35701.906,
+    "total_mw_punctual": 35805.269,
     "total_mw_terna": 142228.857,
     "source_counts": [
       {
@@ -41,7 +41,7 @@
       {
         "source": "lombardia",
         "label": "Lombardia",
-        "count": 66
+        "count": 67
       },
       {
         "source": "emilia_romagna",
@@ -76,7 +76,7 @@
       {
         "source": "sardegna",
         "label": "Sardegna",
-        "count": 2
+        "count": 3
       },
       {
         "source": "piemonte",
@@ -127,23 +127,23 @@
       },
       {
         "region": "Lombardia",
-        "punctual_count": 68,
-        "punctual_mw": 1406.485,
+        "punctual_count": 69,
+        "punctual_mw": 1484.948,
         "terna_count": 4,
         "terna_mw": 3390.443,
         "terna_practices": 0,
-        "total_mw": 4796.928,
-        "priority_score": 5.5
+        "total_mw": 4875.391,
+        "priority_score": 5.6
       },
       {
         "region": "Sardegna",
-        "punctual_count": 24,
-        "punctual_mw": 958.297,
+        "punctual_count": 25,
+        "punctual_mw": 983.197,
         "terna_count": 5,
         "terna_mw": 16120.844,
         "terna_practices": 0,
-        "total_mw": 17079.141,
-        "priority_score": 5.4
+        "total_mw": 17104.041,
+        "priority_score": 5.5
       },
       {
         "region": "Emilia-Romagna",
@@ -900,7 +900,7 @@
       ]
     },
     "quality": {
-      "punctual_records": 1343,
+      "punctual_records": 1345,
       "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 6,
@@ -979,13 +979,13 @@
       {
         "source": "lombardia",
         "source_label": "Lombardia",
-        "count": 66,
+        "count": 67,
         "missing_mw": 3,
         "missing_province": 5,
         "missing_municipality": 7,
         "province_deduced": 0,
         "municipalities_deduced": 2,
-        "completeness_pct": 92.4
+        "completeness_pct": 92.5
       },
       {
         "source": "emilia_romagna",
@@ -1056,13 +1056,13 @@
       {
         "source": "sardegna",
         "source_label": "Sardegna",
-        "count": 2,
+        "count": 3,
         "missing_mw": 0,
         "missing_province": 1,
         "missing_municipality": 1,
         "province_deduced": 1,
         "municipalities_deduced": 0,
-        "completeness_pct": 66.7
+        "completeness_pct": 77.8
       },
       {
         "source": "piemonte",
@@ -4150,6 +4150,37 @@
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=4160"
       ],
       "project_key": "prj:b0607abf2d93b582"
+    },
+    {
+      "source": "lombardia",
+      "source_group": "lombardia",
+      "source_label": "Lombardia",
+      "title": "Impianto agrivoltaico avanzato di potenza di picco pari a 78462.72kW comprensivo di cavidotto a 36 kV come opere di utenza e inclusivo di opere di rete per la connessione da realizzarsi in Comune di S.Cristina e Bissone (PV), Graffignana(LO), Miradolo Terme (PV) e Chignolo PO (PV).",
+      "proponent": "AUKERA ITALY 5 S.R.L.",
+      "region": "Lombardia",
+      "province": "PV",
+      "municipalities": "S.Cristina, Bissone, Chignolo Po, Miradolo Terme",
+      "project_type": "V.I.A. Provinciali",
+      "power_mw": 78.463,
+      "status": "",
+      "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=3&idProgetto=20797&idProvenienza=2",
+      "updated_at": "2026-07-03T14:21:25.076858",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lombardia"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrivoltaico avanzato di potenza di picco pari a 78462.72kW comprensivo di cavidotto a 36 kV come opere di utenza e inclusivo di opere di rete per la connessione da realizzarsi in Comune di S.Cristina e Bissone (PV), Graffignana(LO), Miradolo Terme (PV) e Chignolo PO (PV)."
+      ],
+      "_dedupe_urls": [
+        "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/20797"
+      ],
+      "project_key": "prj:635c7597bd95925d"
     },
     {
       "source": "mase_provvedimenti",
@@ -8483,7 +8514,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-07-02T16:17:15.163242",
+      "updated_at": "2026-07-03T19:49:10.153532",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -12049,11 +12080,11 @@
       "region": "Emilia-Romagna",
       "province": "RA",
       "municipalities": "RAVENNA",
-      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
       "power_mw": 37.16,
       "status": "",
       "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11427",
-      "updated_at": "2026-05-01T19:20:36.387478",
+      "updated_at": "2026-07-03T14:40:02.735797",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -15507,7 +15538,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-07-02T16:17:15.163242",
+      "updated_at": "2026-07-03T19:49:10.153532",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -15741,6 +15772,37 @@
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=7218"
       ],
       "project_key": "prj:27d518bdbb9e783a"
+    },
+    {
+      "source": "Sardegna",
+      "source_group": "Sardegna",
+      "source_label": "Sardegna",
+      "title": "PAUR - Impianto fotovoltaico “Villacidro zona produttiva” di 24,9 MW in Comune di Villacidro",
+      "proponent": "OPR Sun 8 S.r.l",
+      "region": "Sardegna",
+      "province": "VS",
+      "municipalities": "Villacidro",
+      "project_type": "PAUR",
+      "power_mw": 24.9,
+      "status": "",
+      "url": "https://portal.sardegnasira.it/-/paur-impianto-fotovoltaico-villacidro-zona-produttiva-di-24-9-mw-in-comune-di-villacidro",
+      "updated_at": "2026-07-03T14:32:44.929637",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Sardegna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "PAUR - Impianto fotovoltaico “Villacidro zona produttiva” di 24,9 MW in Comune di Villacidro"
+      ],
+      "_dedupe_urls": [
+        "https://portal.sardegnasira.it/-/paur-impianto-fotovoltaico-villacidro-zona-produttiva-di-24-9-mw-in-comune-di-villacidro"
+      ],
+      "project_key": "prj:5619e4cb503cb472"
     },
     {
       "source": "campania",
@@ -17584,7 +17646,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-07-02T16:17:15.163242",
+      "updated_at": "2026-07-03T19:49:10.153532",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21455,7 +21517,7 @@
       "power_mw": 15.03,
       "status": "",
       "url": "https://sharing.regione.veneto.it/index.php/s/Ly8gkASWyKReK4r",
-      "updated_at": "2026-07-02T16:11:28.775231",
+      "updated_at": "2026-07-03T15:14:14.394482",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -26393,7 +26455,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-07-02T16:17:15.163242",
+      "updated_at": "2026-07-03T19:49:10.153532",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -26734,7 +26796,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-07-02T16:17:15.163242",
+      "updated_at": "2026-07-03T19:49:10.153532",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29617,7 +29679,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-07-02T16:17:15.163242",
+      "updated_at": "2026-07-03T19:49:10.153532",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -40382,7 +40444,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-07-02T16:18:49.126913",
+      "updated_at": "2026-07-03T15:25:29.282846",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -46069,10 +46131,10 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-07-02T18:23:45",
+    "generated_at": "2026-07-03T21:59:25",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1617,
-    "records_after": 1522,
+    "records_before": 1619,
+    "records_after": 1524,
     "merged_or_removed": 95,
     "accepted_pairs": 113,
     "rejected_pairs": 252,
@@ -46103,13 +46165,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-07-02T18:23:56",
+      "generated_at": "2026-07-03T21:59:38",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-07-02T18:24:06"
+    "derived_fields_rebuilt_at": "2026-07-03T21:59:49"
   }
 }

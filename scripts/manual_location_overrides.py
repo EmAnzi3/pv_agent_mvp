@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import time
 from pathlib import Path
 
 
@@ -21,6 +22,53 @@ OVERRIDES = [
         "municipalities": "Marcallo con Casone, Ossona, Santo Stefano Ticino, Magenta",
     },
 ]
+
+
+def read_json_with_retry(path: Path, attempts: int = 20, delay: float = 0.75) -> dict:
+    last_error = None
+
+    for attempt in range(1, attempts + 1):
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except PermissionError as exc:
+            last_error = exc
+            print(
+                f"[manual-location-overrides] data.json bloccato in lettura "
+                f"tentativo {attempt}/{attempts}; retry tra {delay}s..."
+            )
+            time.sleep(delay)
+
+    raise SystemExit(
+        f"ERRORE: impossibile leggere {path} dopo {attempts} tentativi. "
+        f"Ultimo errore: {last_error}"
+    )
+
+
+def write_json_with_retry(
+    path: Path,
+    data: dict,
+    attempts: int = 20,
+    delay: float = 0.75,
+) -> None:
+    payload = json.dumps(data, ensure_ascii=False, indent=2)
+    last_error = None
+
+    for attempt in range(1, attempts + 1):
+        try:
+            path.write_text(payload, encoding="utf-8")
+            return
+        except PermissionError as exc:
+            last_error = exc
+            print(
+                f"[manual-location-overrides] data.json bloccato in scrittura "
+                f"tentativo {attempt}/{attempts}; retry tra {delay}s..."
+            )
+            time.sleep(delay)
+
+    raise SystemExit(
+        f"ERRORE: impossibile scrivere {path} dopo {attempts} tentativi. "
+        f"Ultimo errore: {last_error}"
+    )
 
 
 def clean(value) -> str:
@@ -122,10 +170,10 @@ def main() -> int:
     if not data_path.exists():
         raise FileNotFoundError(f"File non trovato: {data_path}")
 
-    data = json.loads(data_path.read_text(encoding="utf-8"))
+    data = read_json_with_retry(data_path)
     changes = apply_overrides(data)
 
-    data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_json_with_retry(data_path, data)
 
     audit_path.parent.mkdir(parents=True, exist_ok=True)
 

@@ -87,6 +87,17 @@ PATCH_RULES = [
         "reason": "power_confirmed_in_project_documentation_37_481_mw",
     },
 
+    {
+        "name": "fix_sardegna_villacidro_zona_produttiva_province_vs",
+        "url": "https://portal.sardegnasira.it/-/paur-impianto-fotovoltaico-villacidro-zona-produttiva-di-24-9-mw-in-comune-di-villacidro",
+        "fields": {
+            "region": "Sardegna",
+            "province": "VS",
+            "municipalities": "Villacidro",
+        },
+        "reason": "villacidro_is_medio_campidano_vs_not_sud_sardegna_su",
+    },
+
 ]
 
 
