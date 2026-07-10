@@ -98,6 +98,17 @@ PATCH_RULES = [
         "reason": "villacidro_is_medio_campidano_vs_not_sud_sardegna_su",
     },
 
+    {
+        "name": "fix_mase_6279_san_giorgio_jonico_location",
+        "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6279",
+        "fields": {
+            "region": "Puglia",
+            "province": "TA",
+            "municipalities": "San Giorgio Jonico",
+        },
+        "reason": "project_documentation_places_site_in_san_giorgio_jonico_ta",
+    },
+
 ]
 
 
