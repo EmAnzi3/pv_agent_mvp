@@ -97,6 +97,7 @@ PROVINCE_NAME_TO_CODE = {
     "RAVENNA": "RA",
     "REGGIO CALABRIA": "RC",
     "REGGIO EMILIA": "RE",
+    "REGGIO NELL'EMILIA": "RE",
     "RIETI": "RI",
     "RIMINI": "RN",
     "ROMA": "RM",

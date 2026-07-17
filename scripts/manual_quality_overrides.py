@@ -141,6 +141,17 @@ PATCH_RULES = [
         "reason": "official_procedure_confirms_photovoltaic_project_and_correct_proponent",
     },
 
+    {
+        "name": "fix_sardegna_acqua_sassa_domusnovas_musei_location",
+        "url": "https://portal.sardegnasira.it/-/verifica-impianto-fotovoltaico-denominato-acqua-sassa-potenza-di-11-582-96-kwp-nei-comuni-di-domusnovas-e-musei",
+        "fields": {
+            "region": "Sardegna",
+            "province": "CI",
+            "municipalities": "Domusnovas, Musei",
+        },
+        "reason": "project_is_located_in_domusnovas_and_musei_sulcis_iglesiente_ci",
+    },
+
 ]
 
 
