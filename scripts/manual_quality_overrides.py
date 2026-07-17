@@ -109,6 +109,38 @@ PATCH_RULES = [
         "reason": "project_documentation_places_site_in_san_giorgio_jonico_ta",
     },
 
+    {
+        "name": "fix_lazio_rieti_campo_reatino_via_032_power",
+        "url": "https://regionelazio.app.box.com/v/VIA-032-2024",
+        "fields": {
+            "power_mw": 9.92,
+        },
+        "reason": "internal_documentation_confirms_campo_reatino_power_9_92_mw",
+    },
+
+    {
+        "name": "fix_lazio_rieti_campo_reatino_via_063_power",
+        "url": "https://regionelazio.box.com/v/VIA-063-2024",
+        "fields": {
+            "power_mw": 9.92,
+        },
+        "reason": "internal_documentation_confirms_campo_reatino_power_9_92_mw",
+    },
+
+    {
+        "name": "fix_sardegna_alghero_san_marco_proponent",
+        "url": "https://portal.sardegnasira.it/-/p-a-u-r-impianto-eolico-denominato-san-marco-di-16-mw-sito-nel-comune-di-alghero-ss-",
+        "fields": {
+            "region": "Sardegna",
+            "province": "SS",
+            "municipalities": "Alghero, Sassari, Olmedo",
+            "power_mw": 16.0,
+            "proponent": "OPR Sun 30 S.r.l.",
+            "title": "P.A.U.R. - Impianto fotovoltaico denominato \"San Marco\" di 16 MW sito nel Comune di Alghero (SS) e relative opere di connessione nei Comuni di Sassari, Alghero e Olmedo",
+        },
+        "reason": "official_procedure_confirms_photovoltaic_project_and_correct_proponent",
+    },
+
 ]
 
 
