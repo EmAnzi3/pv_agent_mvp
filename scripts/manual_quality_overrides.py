@@ -152,6 +152,17 @@ PATCH_RULES = [
         "reason": "project_is_located_in_domusnovas_and_musei_sulcis_iglesiente_ci",
     },
 
+    {
+        "name": "fix_mase_6322_spinazzola_location",
+        "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6322",
+        "fields": {
+            "region": "Puglia",
+            "province": "BT",
+            "municipalities": "Spinazzola, Minervino Murge",
+        },
+        "reason": "official_mase_project_page_places_spinazzola_project_in_spinazzola_and_minervino_murge_bt",
+    },
+
 ]
 
 

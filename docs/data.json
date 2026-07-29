@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-07-27 15:50:20",
-    "snapshot_file": "projects_snapshot_20260727_134930.csv",
-    "total_records": 1452,
-    "punctual_records": 1370,
+    "generated_at": "2026-07-29 16:11:48",
+    "snapshot_file": "projects_snapshot_20260729_141113.csv",
+    "total_records": 1460,
+    "punctual_records": 1378,
     "terna_records": 82,
-    "total_mw_punctual": 36859.619,
+    "total_mw_punctual": 37748.288,
     "total_mw_terna": 142228.857,
     "source_counts": [
       {
@@ -21,12 +21,12 @@
       {
         "source": "toscana",
         "label": "Toscana",
-        "count": 271
+        "count": 272
       },
       {
         "source": "mase",
         "label": "MASE",
-        "count": 253
+        "count": 259
       },
       {
         "source": "terna_econnextion",
@@ -46,7 +46,7 @@
       {
         "source": "emilia_romagna",
         "label": "Emilia-Romagna",
-        "count": 25
+        "count": 26
       },
       {
         "source": "calabria",
@@ -87,13 +87,13 @@
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 354,
-        "punctual_mw": 11198.507,
+        "punctual_count": 357,
+        "punctual_mw": 11318.82,
         "terna_count": 5,
         "terna_mw": 36624.181,
         "terna_practices": 0,
-        "total_mw": 47822.688,
-        "priority_score": 36.2
+        "total_mw": 47943.001,
+        "priority_score": 36.5
       },
       {
         "region": "Lazio",
@@ -107,23 +107,23 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 144,
-        "punctual_mw": 6147.987,
+        "punctual_count": 146,
+        "punctual_mw": 6872.977,
         "terna_count": 5,
         "terna_mw": 35972.696,
         "terna_practices": 0,
-        "total_mw": 42120.683,
-        "priority_score": 20.5
+        "total_mw": 42845.673,
+        "priority_score": 21.4
       },
       {
         "region": "Toscana",
-        "punctual_count": 275,
-        "punctual_mw": 4524.187,
+        "punctual_count": 276,
+        "punctual_mw": 4535.887,
         "terna_count": 5,
         "terna_mw": 4734.362,
         "terna_practices": 0,
-        "total_mw": 9258.549,
-        "priority_score": 19.2
+        "total_mw": 9270.249,
+        "priority_score": 19.3
       },
       {
         "region": "Lombardia",
@@ -147,12 +147,12 @@
       },
       {
         "region": "Emilia-Romagna",
-        "punctual_count": 38,
-        "punctual_mw": 1807.0,
+        "punctual_count": 39,
+        "punctual_mw": 1818.846,
         "terna_count": 5,
         "terna_mw": 7870.823,
         "terna_practices": 0,
-        "total_mw": 9677.823,
+        "total_mw": 9689.669,
         "priority_score": 5.3
       },
       {
@@ -177,13 +177,13 @@
       },
       {
         "region": "Campania",
-        "punctual_count": 24,
-        "punctual_mw": 738.255,
+        "punctual_count": 25,
+        "punctual_mw": 758.075,
         "terna_count": 5,
         "terna_mw": 2838.933,
         "terna_practices": 0,
-        "total_mw": 3577.188,
-        "priority_score": 2.5
+        "total_mw": 3597.008,
+        "priority_score": 2.6
       },
       {
         "region": "Calabria",
@@ -267,6 +267,37 @@
       }
     ],
     "top_projects": [
+      {
+        "source": "mase_provvedimenti",
+        "source_group": "mase",
+        "source_label": "MASE",
+        "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico avanzato denominato \"Spinazzola\", di potenza pari a 669,99 MW da realizzarsi nei Comuni di Spinazzola (BAT) e Minervino Murge (BAT) e delle relative opere di connessione alla",
+        "proponent": "Solaria Promozione e Sviluppo Fotovoltaico S.r.l.",
+        "region": "Puglia",
+        "province": "BT",
+        "municipalities": "Spinazzola, Minervino Murge",
+        "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+        "power_mw": 669.99,
+        "status": "",
+        "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6322",
+        "updated_at": "2026-07-29T13:37:43.786452",
+        "numero_pratiche": 0,
+        "is_terna": false,
+        "is_punctual": true,
+        "province_deduced": false,
+        "municipalities_deduced": false,
+        "_merged_sources": [
+          "mase_provvedimenti"
+        ],
+        "_dedupe_group_size": 1,
+        "_dedupe_titles": [
+          "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico avanzato denominato \"Spinazzola\", di potenza pari a 669,99 MW da realizzarsi nei Comuni di Spinazzola (BAT) e Minervino Murge (BAT) e delle relative opere di connessione alla"
+        ],
+        "_dedupe_urls": [
+          "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6322"
+        ],
+        "project_key": "url:ef53781cec815a38"
+      },
       {
         "source": "sicilia",
         "source_group": "sicilia",
@@ -856,37 +887,6 @@
           "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=729&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
         ],
         "project_key": "prj:2e60a73c08d28881"
-      },
-      {
-        "source": "mase_provvedimenti",
-        "source_group": "mase",
-        "source_label": "MASE",
-        "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un lotto di impianti di produzione da fonte solare - fotovoltaico avente una potenza nominale di 144,335,00 kW sito in località La Fossa, Snc nel Comune di Ardea (RM), denominato ARDEA_26 e relative",
-        "proponent": "Ardea Agrisolar S.r.l.",
-        "region": "Lazio",
-        "province": "RM",
-        "municipalities": "Ardea",
-        "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
-        "power_mw": 144.335,
-        "status": "",
-        "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6245",
-        "updated_at": "2026-06-22T14:17:53.966842",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "mase_provvedimenti"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un lotto di impianti di produzione da fonte solare - fotovoltaico avente una potenza nominale di 144,335,00 kW sito in località La Fossa, Snc nel Comune di Ardea (RM), denominato ARDEA_26 e relative"
-        ],
-        "_dedupe_urls": [
-          "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6245"
-        ],
-        "project_key": "url:73f254897cd0b140"
       }
     ],
     "terna_summary": {
@@ -900,7 +900,7 @@
       ]
     },
     "quality": {
-      "punctual_records": 1370,
+      "punctual_records": 1378,
       "missing_mw": 130,
       "missing_region": 0,
       "missing_province": 6,
@@ -935,7 +935,7 @@
       {
         "source": "toscana",
         "source_label": "Toscana",
-        "count": 271,
+        "count": 272,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -946,7 +946,7 @@
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 253,
+        "count": 259,
         "missing_mw": 2,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -990,7 +990,7 @@
       {
         "source": "emilia_romagna",
         "source_label": "Emilia-Romagna",
-        "count": 25,
+        "count": 26,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -1170,6 +1170,37 @@
         "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6956"
       ],
       "project_key": "url:25f878bf0d31ace4"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico avanzato denominato \"Spinazzola\", di potenza pari a 669,99 MW da realizzarsi nei Comuni di Spinazzola (BAT) e Minervino Murge (BAT) e delle relative opere di connessione alla",
+      "proponent": "Solaria Promozione e Sviluppo Fotovoltaico S.r.l.",
+      "region": "Puglia",
+      "province": "BT",
+      "municipalities": "Spinazzola, Minervino Murge",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 669.99,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6322",
+      "updated_at": "2026-07-29T13:37:43.786452",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico avanzato denominato \"Spinazzola\", di potenza pari a 669,99 MW da realizzarsi nei Comuni di Spinazzola (BAT) e Minervino Murge (BAT) e delle relative opere di connessione alla"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6322"
+      ],
+      "project_key": "url:ef53781cec815a38"
     },
     {
       "source": "sicilia",
@@ -7351,6 +7382,37 @@
       "project_key": "url:7d2efa9dfda4af5c"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un nuovo impianto agro- fotovoltaico, della potenza di 55 MW, unito alle opere di connessione alla RTN, da realizzarsi nel Comune di Latiano (BR).",
+      "proponent": "Wood Solare Italia S.r.l.",
+      "region": "Puglia",
+      "province": "BR",
+      "municipalities": "Latiano",
+      "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
+      "power_mw": 55.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6321",
+      "updated_at": "2026-07-29T13:37:43.786452",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un nuovo impianto agro- fotovoltaico, della potenza di 55 MW, unito alle opere di connessione alla RTN, da realizzarsi nel Comune di Latiano (BR)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6321"
+      ],
+      "project_key": "url:bbcc88c3be1a1e98"
+    },
+    {
       "source": "sistema_puglia_energia",
       "source_group": "puglia",
       "source_label": "Puglia",
@@ -8095,6 +8157,37 @@
       "project_key": "url:b99103b0c8a3388f"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agro-fotovoltaico denominato \"Aquila Duccotto\" della potenza di 51,03 MW con impianto di accumulo di 20 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Mon",
+      "proponent": "Forearth S.r.l.",
+      "region": "Sicilia",
+      "province": "PA",
+      "municipalities": "Monreale",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 51.03,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6318",
+      "updated_at": "2026-07-29T13:37:43.786452",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agro-fotovoltaico denominato \"Aquila Duccotto\" della potenza di 51,03 MW con impianto di accumulo di 20 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Mon"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6318"
+      ],
+      "project_key": "url:270b5487aff83346"
+    },
+    {
       "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
@@ -8763,7 +8856,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-07-27T13:42:17.404224",
+      "updated_at": "2026-07-29T14:02:07.080662",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -11949,6 +12042,37 @@
       "project_key": "url:d08d6f16c624849a"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrivoltaico di potenza pari a 38.745 kWp (29.785 kW in immissione) denominato \"Tolalp - Racalmuto\" ed opere connesse indispensabili da realizzarsi nel Comune di Raca",
+      "proponent": "TOLALP ENERGY S.r.l.",
+      "region": "Sicilia",
+      "province": "AG",
+      "municipalities": "Racalmuto",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 38.745,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6324",
+      "updated_at": "2026-07-29T13:37:43.786452",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrivoltaico di potenza pari a 38.745 kWp (29.785 kW in immissione) denominato \"Tolalp - Racalmuto\" ed opere connesse indispensabili da realizzarsi nel Comune di Raca"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6324"
+      ],
+      "project_key": "url:9ea6842646ddfc0e"
+    },
+    {
       "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
@@ -14037,6 +14161,37 @@
       "project_key": "url:962cc2c4b1d5d4c5"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrivoltaico, denominato \"Serravalle\", e delle relative opere necessarie per la connessione alla rete elettrica e delle opere accessorie necessarie alla costruzione e",
+      "proponent": "Luminora Serravalle S.r.l.",
+      "region": "Sicilia",
+      "province": "CT",
+      "municipalities": "Mineo",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 30.538,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6316",
+      "updated_at": "2026-07-29T13:37:43.786452",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrivoltaico, denominato \"Serravalle\", e delle relative opere necessarie per la connessione alla rete elettrica e delle opere accessorie necessarie alla costruzione e"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6316"
+      ],
+      "project_key": "url:0305c55131932e3c"
+    },
+    {
       "source": "lombardia",
       "source_group": "lombardia",
       "source_label": "Lombardia",
@@ -15975,7 +16130,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-07-27T13:42:17.404224",
+      "updated_at": "2026-07-29T14:02:07.080662",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -18145,7 +18300,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-07-27T13:42:17.404224",
+      "updated_at": "2026-07-29T14:02:07.080662",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19163,6 +19318,37 @@
         "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/20119"
       ],
       "project_key": "prj:fb15122aef4038e9"
+    },
+    {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un impianto fotovoltaico denominato \"Cancello Arnone\", della potenza di 19,82 MWp e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Cancello ed Arnone (CE).",
+      "proponent": "SMARTENERGYIT2104 S.r.l.",
+      "region": "Campania",
+      "province": "CE",
+      "municipalities": "CANCELLO ED ARNONE",
+      "project_type": "Fotovoltaico",
+      "power_mw": 19.82,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9073",
+      "updated_at": "2026-07-29T13:34:22.443197",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto fotovoltaico denominato \"Cancello Arnone\", della potenza di 19,82 MWp e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Cancello ed Arnone (CE)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/9073"
+      ],
+      "project_key": "url:faa90e96157a1ec8"
     },
     {
       "source": "lombardia",
@@ -22537,7 +22723,7 @@
       "source_group": "lombardia",
       "source_label": "Lombardia",
       "title": "Richiesta di verifica di assoggettabilità a valutazione di impatto ambientale - progetto di \"impianto fotovoltaico - Pralboino\" da 14,5 MW",
-      "proponent": "JUWI ENERGIE RINNOVABILI SRL",
+      "proponent": "JUWI DEVELOPMENT 15 S.R.L.; JUWI ENERGIE RINNOVABILI SRL; JUWI ENERGIE RINNOVABILI SRL",
       "region": "Lombardia",
       "province": "BS",
       "municipalities": "Pralboino",
@@ -22545,7 +22731,7 @@
       "power_mw": 14.5,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=14934&idProvenienza=2",
-      "updated_at": "2026-05-01T19:09:14.947862",
+      "updated_at": "2026-07-29T13:16:25.092035",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -22561,7 +22747,7 @@
       "_dedupe_urls": [
         "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/14934"
       ],
-      "project_key": "prj:cb796fe922be88a1"
+      "project_key": "prj:f6a28a4d23b56e34"
     },
     {
       "source": "lombardia",
@@ -23587,6 +23773,37 @@
       "project_key": "url:e6b32ad99a00a99d"
     },
     {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "ARPAE: IMPIANTO AGRIVOLTAICO CON POTENZA 11.845,60 KWP E OPERE DI CONNESSIONE, DENOMINATO “CASTEL MAGGIORE AFV” DA REALIZZARSI NEL COMUNE DI CASTEL MAGGIORE (BO)",
+      "proponent": "CEDRO S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "BO",
+      "municipalities": "Castel Maggiore",
+      "project_type": "Verifica Assoggettabilità VIA (Screening)",
+      "power_mw": 11.846,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6991",
+      "updated_at": "2026-07-29T13:16:12.615380",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "ARPAE: IMPIANTO AGRIVOLTAICO CON POTENZA 11.845,60 KWP E OPERE DI CONNESSIONE, DENOMINATO “CASTEL MAGGIORE AFV” DA REALIZZARSI NEL COMUNE DI CASTEL MAGGIORE (BO)"
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6991"
+      ],
+      "project_key": "url:33d9137e3e32d50d"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -23678,6 +23895,37 @@
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12465"
       ],
       "project_key": "prj:c636da6902ff7fe7"
+    },
+    {
+      "source": "toscana",
+      "source_group": "toscana",
+      "source_label": "Toscana",
+      "title": "[ID 2691] Art. 19 del D.Lgs. 152/2006 ed art. 48 della L.R. 10/2010. Procedimento di verifica di assoggettabilita' a VIA progetto per la realizzazione due impianti fotovoltaici \"Piombino 3” e \"Piombino 4” ed un agrivoltaico \"Piombino 5”, della potenza complessiva pari a 11,7 MWp, localizzati nel Comune di Piombino (LI). Proponente: Fimenergia S.r.l.",
+      "proponent": "FIMENERGIA SRL",
+      "region": "Toscana",
+      "province": "LI",
+      "municipalities": "PIOMBINO",
+      "project_type": "Verifica di Assoggettabilità a VIA",
+      "power_mw": 11.7,
+      "status": "",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/245",
+      "updated_at": "2026-07-29T13:27:08.311283",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "toscana"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "[ID 2691] Art. 19 del D.Lgs. 152/2006 ed art. 48 della L.R. 10/2010. Procedimento di verifica di assoggettabilita' a VIA progetto per la realizzazione due impianti fotovoltaici \"Piombino 3” e \"Piombino 4” ed un agrivoltaico \"Piombino 5”, della potenza complessiva pari a 11,7 MWp, localizzati nel Comune di Piombino (LI). Proponente: Fimenergia S.r.l."
+      ],
+      "_dedupe_urls": [
+        "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=245"
+      ],
+      "project_key": "url:67f4faeed5f74cbb"
     },
     {
       "source": "lazio",
@@ -26729,7 +26977,7 @@
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
-      "title": "Costruzione ed esercizio di un impianto solare fotovoltaico a terra di potenza pari a 8.892,00 kWp, con le relative opere di connessione denominato Prato Smeraldo",
+      "title": "Determinazione n° G10488 del 27/07/2026 – favorevole con prescrizioni Costruzione ed esercizio di un impianto solare fotovoltaico a terra di potenza pari a 8.892,00 kWp, con le relative opere di connessione denominato Prato Smeraldo",
       "proponent": "RAI WAY SPA",
       "region": "Lazio",
       "province": "LT",
@@ -26738,7 +26986,7 @@
       "power_mw": 8.892,
       "status": "",
       "url": "https://regionelazio.app.box.com/s/t1cu25hvuqlgerzuycav8sgc2zs0nkb7",
-      "updated_at": "2026-05-01T19:18:12.958879",
+      "updated_at": "2026-07-29T14:02:07.080662",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -26749,12 +26997,12 @@
       ],
       "_dedupe_group_size": 1,
       "_dedupe_titles": [
-        "Costruzione ed esercizio di un impianto solare fotovoltaico a terra di potenza pari a 8.892,00 kWp, con le relative opere di connessione denominato Prato Smeraldo"
+        "Determinazione n° G10488 del 27/07/2026 – favorevole con prescrizioni Costruzione ed esercizio di un impianto solare fotovoltaico a terra di potenza pari a 8.892,00 kWp, con le relative opere di connessione denominato Prato Smeraldo"
       ],
       "_dedupe_urls": [
         "https://regionelazio.app.box.com/s/t1cu25hvuqlgerzuycav8sgc2zs0nkb7"
       ],
-      "project_key": "prj:8f4c9aed418a83f6"
+      "project_key": "prj:21892c1f01e872d9"
     },
     {
       "source": "toscana_atos",
@@ -27141,7 +27389,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-07-27T13:42:17.404224",
+      "updated_at": "2026-07-29T14:02:07.080662",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -27482,7 +27730,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-07-27T13:42:17.404224",
+      "updated_at": "2026-07-29T14:02:07.080662",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -28807,7 +29055,7 @@
       "source_group": "lombardia",
       "source_label": "Lombardia",
       "title": "Oggetto della valutazione è la realizzazione di una centrale fotovoltaica a terra da 7,2 MW e relative opere di connessione da realizzarsi nel comune di Bovisio Masciago (MB).",
-      "proponent": "OPERATION ENERGY S.R.L., O IN FORMA ABBREVIATA, OPEN S.R.L.; OPEN SOLAR 3 S.R.L.",
+      "proponent": "OPEN SOLAR 3 S.R.L.; OPERATION ENERGY S.R.L., O IN FORMA ABBREVIATA, OPEN S.R.L.",
       "region": "Lombardia",
       "province": "MB",
       "municipalities": "Bovisio Masciago",
@@ -28815,7 +29063,7 @@
       "power_mw": 7.2,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=15112&idProvenienza=2",
-      "updated_at": "2026-06-26T14:23:40.984345",
+      "updated_at": "2026-07-29T13:16:25.092035",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -28831,7 +29079,7 @@
       "_dedupe_urls": [
         "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/15112"
       ],
-      "project_key": "prj:485f873c0c9c13a6"
+      "project_key": "prj:f85cc13c9a07cfde"
     },
     {
       "source": "toscana_atos",
@@ -30396,7 +30644,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-07-27T13:42:17.404224",
+      "updated_at": "2026-07-29T14:02:07.080662",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -41257,7 +41505,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-07-27T13:42:40.294577",
+      "updated_at": "2026-07-29T14:03:54.010711",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -46291,6 +46539,37 @@
   ],
   "top_projects": [
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico avanzato denominato \"Spinazzola\", di potenza pari a 669,99 MW da realizzarsi nei Comuni di Spinazzola (BAT) e Minervino Murge (BAT) e delle relative opere di connessione alla",
+      "proponent": "Solaria Promozione e Sviluppo Fotovoltaico S.r.l.",
+      "region": "Puglia",
+      "province": "BT",
+      "municipalities": "Spinazzola, Minervino Murge",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 669.99,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6322",
+      "updated_at": "2026-07-29T13:37:43.786452",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico avanzato denominato \"Spinazzola\", di potenza pari a 669,99 MW da realizzarsi nei Comuni di Spinazzola (BAT) e Minervino Murge (BAT) e delle relative opere di connessione alla"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6322"
+      ],
+      "project_key": "url:ef53781cec815a38"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -46879,48 +47158,17 @@
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=729&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:2e60a73c08d28881"
-    },
-    {
-      "source": "mase_provvedimenti",
-      "source_group": "mase",
-      "source_label": "MASE",
-      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un lotto di impianti di produzione da fonte solare - fotovoltaico avente una potenza nominale di 144,335,00 kW sito in località La Fossa, Snc nel Comune di Ardea (RM), denominato ARDEA_26 e relative",
-      "proponent": "Ardea Agrisolar S.r.l.",
-      "region": "Lazio",
-      "province": "RM",
-      "municipalities": "Ardea",
-      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
-      "power_mw": 144.335,
-      "status": "",
-      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6245",
-      "updated_at": "2026-06-22T14:17:53.966842",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "mase_provvedimenti"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un lotto di impianti di produzione da fonte solare - fotovoltaico avente una potenza nominale di 144,335,00 kW sito in località La Fossa, Snc nel Comune di Ardea (RM), denominato ARDEA_26 e relative"
-      ],
-      "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6245"
-      ],
-      "project_key": "url:73f254897cd0b140"
     }
   ],
   "data_quality": {
-    "generated_at": "2026-07-27T15:50:20",
+    "generated_at": "2026-07-29T16:11:48",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1651,
-    "records_after": 1549,
+    "records_before": 1659,
+    "records_after": 1557,
     "merged_or_removed": 102,
     "accepted_pairs": 123,
     "rejected_pairs": 252,
-    "field_repairs": 58,
+    "field_repairs": 59,
     "manual_actions": 10,
     "manual_proponent_overrides": 10,
     "manual_excluded_records": 0,
@@ -46947,13 +47195,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-07-27T15:50:33",
+      "generated_at": "2026-07-29T16:11:56",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-07-27T15:50:46"
+    "derived_fields_rebuilt_at": "2026-07-29T16:12:07"
   }
 }
