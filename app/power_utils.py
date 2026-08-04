@@ -18,6 +18,27 @@ POWER_RE = re.compile(
     flags=re.IGNORECASE,
 )
 
+POWER_RE_UNIT_FIRST = re.compile(
+    r"\b"
+    r"(?P<unit>MWp|MW|kWp|KWp|kW|KW)"
+    r"\b"
+    r"\s*[:=]?\s*"
+    r"(?P<value>"
+    r"(?:\d{1,3}(?:[.\s'?]\d{3})+(?:[,.]\d+)?)"
+    r"|"
+    r"(?:\d+[.,]\d+)"
+    r"|"
+    r"(?:\d+)"
+    r")"
+    r"(?![\d.,'?])",
+    flags=re.IGNORECASE,
+)
+
+
+def _find_power_match(text: str):
+    return POWER_RE.search(text) or POWER_RE_UNIT_FIRST.search(text)
+
+
 
 def parse_power_to_mw(text: str | None) -> float | None:
     """
@@ -33,12 +54,13 @@ def parse_power_to_mw(text: str | None) -> float | None:
     - 47,01 MWp     -> 47.01 MW
     - 19.305 MWp    -> 19.305 MW
     - 118.07 MW     -> 118.07 MW
+    - MW 36,59      -> 36.59 MW
     - 29.0752 kWp   -> 29.0752 MW, caso sporco fonte ER
     """
     if not text:
         return None
 
-    match = POWER_RE.search(text)
+    match = _find_power_match(text)
     if not match:
         return None
 
@@ -62,7 +84,7 @@ def extract_power_text(text: str | None) -> str | None:
     if not text:
         return None
 
-    match = POWER_RE.search(text)
+    match = _find_power_match(text)
     if not match:
         return None
 

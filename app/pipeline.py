@@ -213,6 +213,31 @@ def normalize_power_to_mw(value: Any) -> float | None:
         if candidates:
             break
 
+    # Fallback per titoli con unit? prima del valore:
+    # MW 36,59
+    # MW: 36,59
+    # kWp 48.491,52
+    if not candidates:
+        unit_first_pattern = (
+            r"\b(mw|kw)\b"
+            r"\s*[:=]?\s*"
+            r"([0-9]+(?:[.,][0-9]+)*)"
+        )
+
+        for match in re.finditer(
+            unit_first_pattern,
+            text_norm,
+            flags=re.IGNORECASE,
+        ):
+            unit = match.group(1).lower()
+            number_raw = match.group(2)
+
+            number = parse_italian_number(number_raw)
+            if number is None:
+                continue
+
+            candidates.append((number, unit))
+
     if not candidates:
         return None
 

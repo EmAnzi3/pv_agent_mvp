@@ -163,6 +163,18 @@ PATCH_RULES = [
         "reason": "official_mase_project_page_places_spinazzola_project_in_spinazzola_and_minervino_murge_bt",
     },
 
+    {
+        "name": "fix_mase_6333_baciamano_location",
+        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11914",
+        "fields": {
+            "region": "Marche",
+            "province": "MC",
+            "municipalities": "Potenza Picena, Porto Recanati, Loreto",
+            "power_mw": 36.59,
+        },
+        "reason": "official_mase_title_places_baciamano_in_potenza_picena_with_connections_in_porto_recanati_and_loreto",
+    },
+
 ]
 
 
