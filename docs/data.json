@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-08-06 15:07:43",
-    "snapshot_file": "projects_snapshot_20260806_130640.csv",
-    "total_records": 1465,
-    "punctual_records": 1383,
+    "generated_at": "2026-08-10 15:18:10",
+    "snapshot_file": "projects_snapshot_20260810_131727.csv",
+    "total_records": 1466,
+    "punctual_records": 1384,
     "terna_records": 82,
-    "total_mw_punctual": 38134.874,
+    "total_mw_punctual": 38147.692,
     "total_mw_terna": 141140.801,
     "source_counts": [
       {
@@ -36,7 +36,7 @@
       {
         "source": "lombardia",
         "label": "Lombardia",
-        "count": 70
+        "count": 71
       },
       {
         "source": "puglia",
@@ -127,13 +127,13 @@
       },
       {
         "region": "Lombardia",
-        "punctual_count": 72,
-        "punctual_mw": 1647.785,
+        "punctual_count": 73,
+        "punctual_mw": 1660.603,
         "terna_count": 4,
         "terna_mw": 3441.211,
         "terna_practices": 0,
-        "total_mw": 5088.996,
-        "priority_score": 5.9
+        "total_mw": 5101.814,
+        "priority_score": 6.0
       },
       {
         "region": "Sardegna",
@@ -900,7 +900,7 @@
       ]
     },
     "quality": {
-      "punctual_records": 1383,
+      "punctual_records": 1384,
       "missing_mw": 129,
       "missing_region": 0,
       "missing_province": 6,
@@ -968,13 +968,13 @@
       {
         "source": "lombardia",
         "source_label": "Lombardia",
-        "count": 70,
+        "count": 71,
         "missing_mw": 3,
         "missing_province": 5,
         "missing_municipality": 7,
         "province_deduced": 0,
         "municipalities_deduced": 2,
-        "completeness_pct": 92.9
+        "completeness_pct": 93.0
       },
       {
         "source": "puglia",
@@ -8395,12 +8395,13 @@
       "_merged_sources": [
         "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
         "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"Ramacca\", di potenza pari a 50,65 MW e delle relative opere connesse ed infrastrutture necessarie alla connessione alla RTN, da realizzarsi nel Comune"
       ],
       "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6155"
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6155",
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6358"
       ],
       "project_key": "url:a4a06958c26b1ea0"
     },
@@ -8918,7 +8919,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-08-06T12:54:28.395497",
+      "updated_at": "2026-08-10T13:06:57.871607",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -10415,12 +10416,13 @@
       "_merged_sources": [
         "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
         "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico, della potenza di 44,036 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Benevento, Apollosa e Castelpoto (BN)."
       ],
       "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6189"
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6189",
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6362"
       ],
       "project_key": "url:c397380104b67649"
     },
@@ -12197,35 +12199,38 @@
       "project_key": "prj:ac83b9ef23a64e74"
     },
     {
-      "source": "mase_provvedimenti",
+      "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
       "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agro-fotovoltaico e le relative opere di connessione alla rete, denominato \"Zaffarana 38\", della potenza nominale pari a 38.3 MW, da realizzarsi nei Comuni di Trapani (TP), in",
       "proponent": "EDPR Sicilia PV S.r.l.",
       "region": "Sicilia",
       "province": "TP",
-      "municipalities": "Trapani",
-      "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
+      "municipalities": "TRAPANI",
+      "project_type": "Agrivoltaico",
       "power_mw": 38.3,
       "status": "",
-      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6018",
-      "updated_at": "2026-05-01T19:24:03.185724",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8306",
+      "updated_at": "2026-08-10T13:14:19.712087",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
+        "mase",
         "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "Progetto di un impianto agro-fotovoltaico e le relative opere di connessione alla rete, denominato \"Zaffarana 38\", della potenza nominale pari a 38.3 MW, da realizzarsi nei Comuni di Trapani (TP), in contrada Zaffarana, e Marsala (TP).",
         "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agro-fotovoltaico e le relative opere di connessione alla rete, denominato \"Zaffarana 38\", della potenza nominale pari a 38.3 MW, da realizzarsi nei Comuni di Trapani (TP), in"
       ],
       "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6018"
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6018",
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8306"
       ],
-      "project_key": "url:b75181d00ab22963"
+      "project_key": "url:83998a9220bca947"
     },
     {
       "source": "sicilia",
@@ -16289,7 +16294,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-08-06T12:54:28.395497",
+      "updated_at": "2026-08-10T13:06:57.871607",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -18459,7 +18464,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-08-06T12:54:28.395497",
+      "updated_at": "2026-08-10T13:06:57.871607",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -23374,6 +23379,37 @@
       "project_key": "url:aa61ca1e19b1985c"
     },
     {
+      "source": "lombardia",
+      "source_group": "lombardia",
+      "source_label": "Lombardia",
+      "title": "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Solaro\" sito nel Comune di Solaro (MI) con potenza di picco pari a 12.818 kWp e potenza di immissione pari a 11.399,99 kW, e relative opere di connessione nei Comuni di Solaro (MI) e Cesate (MI).",
+      "proponent": "ORTA ENERGY 34 S.R.L.",
+      "region": "Lombardia",
+      "province": "MI",
+      "municipalities": "Solaro, Cesate",
+      "project_type": "V.I.A. Provinciali",
+      "power_mw": 12.818,
+      "status": "",
+      "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=3&idProgetto=21077&idProvenienza=2",
+      "updated_at": "2026-08-10T12:55:52.716323",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lombardia"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Solaro\" sito nel Comune di Solaro (MI) con potenza di picco pari a 12.818 kWp e potenza di immissione pari a 11.399,99 kW, e relative opere di connessione nei Comuni di Solaro (MI) e Cesate (MI)."
+      ],
+      "_dedupe_urls": [
+        "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/21077"
+      ],
+      "project_key": "prj:16c1f32868d9fd12"
+    },
+    {
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
@@ -27579,7 +27615,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-08-06T12:54:28.395497",
+      "updated_at": "2026-08-10T13:06:57.871607",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -27920,7 +27956,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-08-06T12:54:28.395497",
+      "updated_at": "2026-08-10T13:06:57.871607",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30834,7 +30870,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-08-06T12:54:28.395497",
+      "updated_at": "2026-08-10T13:06:57.871607",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -41696,7 +41732,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-08-06T12:56:24.103976",
+      "updated_at": "2026-08-10T13:07:22.154006",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -46714,12 +46750,13 @@
       "_merged_sources": [
         "terna_econnextion"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
         "Terna Econnextion - Liguria - Solare - STMG accettate"
       ],
       "_dedupe_urls": [
-        "https://dati.terna.it/download-center#terna_econnextion_2026_05_liguria_solare_stmg_accettate"
+        "https://dati.terna.it/download-center#terna_econnextion_2026_05_liguria_solare_stmg_accettate",
+        "https://dati.terna.it/download-center#terna_econnextion_2026_08_liguria_solare_stmg_accettate"
       ],
       "project_key": "agg:terna:ac54820f46006ad1"
     }
@@ -47348,14 +47385,14 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-08-06T15:07:43",
+    "generated_at": "2026-08-10T15:18:10",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1748,
-    "records_after": 1597,
-    "merged_or_removed": 151,
-    "accepted_pairs": 202,
+    "records_before": 1753,
+    "records_after": 1598,
+    "merged_or_removed": 155,
+    "accepted_pairs": 206,
     "rejected_pairs": 421,
-    "field_repairs": 60,
+    "field_repairs": 61,
     "manual_actions": 10,
     "manual_proponent_overrides": 10,
     "manual_excluded_records": 0,
@@ -47382,13 +47419,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-08-06T15:07:59",
+      "generated_at": "2026-08-10T15:18:18",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-08-06T15:08:08"
+    "derived_fields_rebuilt_at": "2026-08-10T15:18:28"
   }
 }
