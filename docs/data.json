@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-08-10 15:18:10",
-    "snapshot_file": "projects_snapshot_20260810_131727.csv",
-    "total_records": 1466,
-    "punctual_records": 1384,
+    "generated_at": "2026-08-11 15:10:51",
+    "snapshot_file": "projects_snapshot_20260811_131009.csv",
+    "total_records": 1469,
+    "punctual_records": 1387,
     "terna_records": 82,
-    "total_mw_punctual": 38147.692,
+    "total_mw_punctual": 38206.432,
     "total_mw_terna": 141140.801,
     "source_counts": [
       {
@@ -26,7 +26,7 @@
       {
         "source": "mase",
         "label": "MASE",
-        "count": 263
+        "count": 265
       },
       {
         "source": "terna_econnextion",
@@ -56,7 +56,7 @@
       {
         "source": "veneto",
         "label": "Veneto",
-        "count": 18
+        "count": 19
       },
       {
         "source": "basilicata",
@@ -107,13 +107,13 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 149,
-        "punctual_mw": 7026.883,
+        "punctual_count": 151,
+        "punctual_mw": 7066.533,
         "terna_count": 5,
         "terna_mw": 36009.597,
         "terna_practices": 0,
-        "total_mw": 43036.48,
-        "priority_score": 21.7
+        "total_mw": 43076.13,
+        "priority_score": 21.8
       },
       {
         "region": "Toscana",
@@ -167,13 +167,13 @@
       },
       {
         "region": "Veneto",
-        "punctual_count": 25,
-        "punctual_mw": 779.657,
+        "punctual_count": 26,
+        "punctual_mw": 798.747,
         "terna_count": 5,
         "terna_mw": 5379.225,
         "terna_practices": 0,
-        "total_mw": 6158.882,
-        "priority_score": 3.1
+        "total_mw": 6177.972,
+        "priority_score": 3.2
       },
       {
         "region": "Campania",
@@ -900,13 +900,13 @@
       ]
     },
     "quality": {
-      "punctual_records": 1384,
+      "punctual_records": 1387,
       "missing_mw": 129,
       "missing_region": 0,
       "missing_province": 6,
       "missing_municipality": 15,
       "missing_url": 0,
-      "province_deduced": 30,
+      "province_deduced": 31,
       "municipalities_deduced": 4
     },
     "quality_by_source": [
@@ -946,7 +946,7 @@
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 263,
+        "count": 265,
         "missing_mw": 1,
         "missing_province": 0,
         "missing_municipality": 1,
@@ -1012,13 +1012,13 @@
       {
         "source": "veneto",
         "source_label": "Veneto",
-        "count": 18,
+        "count": 19,
         "missing_mw": 4,
         "missing_province": 0,
         "missing_municipality": 1,
-        "province_deduced": 18,
+        "province_deduced": 19,
         "municipalities_deduced": 0,
-        "completeness_pct": 90.7
+        "completeness_pct": 91.2
       },
       {
         "source": "basilicata",
@@ -8919,7 +8919,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-08-10T13:06:57.871607",
+      "updated_at": "2026-08-11T12:58:31.404337",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -14887,6 +14887,37 @@
       "project_key": "url:05cbf2ce1c78a5ec"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico, denominato \"Messapia\", di potenza pari a 29,65 MW, e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Mesagne (BR), Torre Santa Susanna (BR), Franc",
+      "proponent": "GR VALUE BRINDISI 2 S.r.l.",
+      "region": "Puglia",
+      "province": "BR",
+      "municipalities": "Mesagne",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 29.65,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6368",
+      "updated_at": "2026-08-11T13:10:04.003488",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico, denominato \"Messapia\", di potenza pari a 29,65 MW, e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Mesagne (BR), Torre Santa Susanna (BR), Franc"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6368"
+      ],
+      "project_key": "url:5d9ae434fa163aa5"
+    },
+    {
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
@@ -16294,7 +16325,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-08-10T13:06:57.871607",
+      "updated_at": "2026-08-11T12:58:31.404337",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -18464,7 +18495,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-08-10T13:06:57.871607",
+      "updated_at": "2026-08-11T12:58:31.404337",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -20044,6 +20075,37 @@
         "https://regionelazio.app.box.com/v/VIA-043-2025"
       ],
       "project_key": "url:0c4f3ec9afb24b38"
+    },
+    {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
+      "title": "Impianto agrivoltaico Ariano nel Polesine ed opere connesse avente potenza di 19,09 MW - Comune di localizzazione: Ariano nel Polesine (RO), Corbola (RO), Taglio di Po (RO) e Adria (RO)",
+      "proponent": "RENPV6 SRL",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Ariano nel Polesine (RO), Corbola (RO), Taglio di Po (RO), Adria (RO)",
+      "project_type": "Impianto agrivoltaico Ariano nel Polesine ed opere connesse avente potenza di 19,09 MW - Comune di l",
+      "power_mw": 19.09,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/tbsGJ4XNLagKyse",
+      "updated_at": "2026-08-11T12:48:10.230290",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrivoltaico Ariano nel Polesine ed opere connesse avente potenza di 19,09 MW - Comune di localizzazione: Ariano nel Polesine (RO), Corbola (RO), Taglio di Po (RO) e Adria (RO)"
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/tbsGJ4XNLagKyse"
+      ],
+      "project_key": "prj:a6927fdccf16ac8a"
     },
     {
       "source": "mase",
@@ -25242,6 +25304,37 @@
       "project_key": "url:bc8b17a1b7b7f134"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per impianto agrovoltaico con potenza nominale di 10,00 MWp e relative opere di connessione alla rete di distribuzione, situato nel comune di Taranto (TA) in località \"Strada vicinale Nisi\".",
+      "proponent": "Alta Capital 10 S.R.L.",
+      "region": "Puglia",
+      "province": "TA",
+      "municipalities": "Taranto",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 10.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6367",
+      "updated_at": "2026-08-11T13:10:04.003488",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per impianto agrovoltaico con potenza nominale di 10,00 MWp e relative opere di connessione alla rete di distribuzione, situato nel comune di Taranto (TA) in località \"Strada vicinale Nisi\"."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6367"
+      ],
+      "project_key": "url:5d338aba355d3819"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -27615,7 +27708,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-08-10T13:06:57.871607",
+      "updated_at": "2026-08-11T12:58:31.404337",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -27956,7 +28049,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-08-10T13:06:57.871607",
+      "updated_at": "2026-08-11T12:58:31.404337",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30870,7 +30963,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-08-10T13:06:57.871607",
+      "updated_at": "2026-08-11T12:58:31.404337",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -41732,7 +41825,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-08-10T13:07:22.154006",
+      "updated_at": "2026-08-11T13:00:15.510693",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -47385,10 +47478,10 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-08-10T15:18:10",
+    "generated_at": "2026-08-11T15:10:51",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1753,
-    "records_after": 1598,
+    "records_before": 1756,
+    "records_after": 1601,
     "merged_or_removed": 155,
     "accepted_pairs": 206,
     "rejected_pairs": 421,
@@ -47419,13 +47512,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-08-10T15:18:18",
+      "generated_at": "2026-08-11T15:11:05",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-08-10T15:18:28"
+    "derived_fields_rebuilt_at": "2026-08-11T15:11:23"
   }
 }
