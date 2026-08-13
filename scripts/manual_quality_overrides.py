@@ -175,6 +175,15 @@ PATCH_RULES = [
         "reason": "official_mase_title_places_baciamano_in_potenza_picena_with_connections_in_porto_recanati_and_loreto",
     },
 
+    {
+        "name": "fix_veneto_ag37_power",
+        "url": "https://sharing.regione.veneto.it/index.php/s/cgLA2aiFNLgHytW",
+        "fields": {
+            "power_mw": 32.008,
+        },
+        "reason": "internal_project_documentation_states_power_is_32_008_mw",
+    },
+
 ]
 
 

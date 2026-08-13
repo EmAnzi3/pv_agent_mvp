@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-08-11 15:10:51",
-    "snapshot_file": "projects_snapshot_20260811_131009.csv",
-    "total_records": 1469,
-    "punctual_records": 1387,
+    "generated_at": "2026-08-13 14:22:48",
+    "snapshot_file": "projects_snapshot_20260813_122057.csv",
+    "total_records": 1477,
+    "punctual_records": 1395,
     "terna_records": 82,
-    "total_mw_punctual": 38206.432,
+    "total_mw_punctual": 38614.773,
     "total_mw_terna": 141140.801,
     "source_counts": [
       {
@@ -26,7 +26,7 @@
       {
         "source": "mase",
         "label": "MASE",
-        "count": 265
+        "count": 269
       },
       {
         "source": "terna_econnextion",
@@ -36,7 +36,7 @@
       {
         "source": "lombardia",
         "label": "Lombardia",
-        "count": 71
+        "count": 72
       },
       {
         "source": "puglia",
@@ -49,13 +49,13 @@
         "count": 27
       },
       {
-        "source": "calabria",
-        "label": "Calabria",
-        "count": 19
-      },
-      {
         "source": "veneto",
         "label": "Veneto",
+        "count": 22
+      },
+      {
+        "source": "calabria",
+        "label": "Calabria",
         "count": 19
       },
       {
@@ -87,33 +87,33 @@
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 358,
-        "punctual_mw": 11500.42,
+        "punctual_count": 359,
+        "punctual_mw": 11551.42,
         "terna_count": 5,
         "terna_mw": 36351.91,
         "terna_practices": 0,
-        "total_mw": 47852.33,
-        "priority_score": 36.7
+        "total_mw": 47903.33,
+        "priority_score": 36.8
       },
       {
         "region": "Lazio",
-        "punctual_count": 333,
-        "punctual_mw": 6844.38,
+        "punctual_count": 334,
+        "punctual_mw": 6883.37,
         "terna_count": 5,
         "terna_mw": 6438.126,
         "terna_practices": 0,
-        "total_mw": 13282.506,
-        "priority_score": 24.8
+        "total_mw": 13321.496,
+        "priority_score": 24.9
       },
       {
         "region": "Puglia",
-        "punctual_count": 151,
-        "punctual_mw": 7066.533,
+        "punctual_count": 152,
+        "punctual_mw": 7110.295,
         "terna_count": 5,
         "terna_mw": 36009.597,
         "terna_practices": 0,
-        "total_mw": 43076.13,
-        "priority_score": 21.8
+        "total_mw": 43119.892,
+        "priority_score": 21.9
       },
       {
         "region": "Toscana",
@@ -127,13 +127,13 @@
       },
       {
         "region": "Lombardia",
-        "punctual_count": 73,
-        "punctual_mw": 1660.603,
+        "punctual_count": 74,
+        "punctual_mw": 1672.967,
         "terna_count": 4,
         "terna_mw": 3441.211,
         "terna_practices": 0,
-        "total_mw": 5101.814,
-        "priority_score": 6.0
+        "total_mw": 5114.178,
+        "priority_score": 6.1
       },
       {
         "region": "Sardegna",
@@ -167,13 +167,13 @@
       },
       {
         "region": "Veneto",
-        "punctual_count": 26,
-        "punctual_mw": 798.747,
+        "punctual_count": 30,
+        "punctual_mw": 1060.972,
         "terna_count": 5,
         "terna_mw": 5379.225,
         "terna_practices": 0,
-        "total_mw": 6177.972,
-        "priority_score": 3.2
+        "total_mw": 6440.197,
+        "priority_score": 3.6
       },
       {
         "region": "Campania",
@@ -900,13 +900,13 @@
       ]
     },
     "quality": {
-      "punctual_records": 1387,
+      "punctual_records": 1395,
       "missing_mw": 129,
       "missing_region": 0,
       "missing_province": 6,
       "missing_municipality": 15,
       "missing_url": 0,
-      "province_deduced": 31,
+      "province_deduced": 34,
       "municipalities_deduced": 4
     },
     "quality_by_source": [
@@ -946,13 +946,13 @@
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 265,
+        "count": 269,
         "missing_mw": 1,
         "missing_province": 0,
         "missing_municipality": 1,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 99.7
+        "completeness_pct": 99.8
       },
       {
         "source": "terna_econnextion",
@@ -968,13 +968,13 @@
       {
         "source": "lombardia",
         "source_label": "Lombardia",
-        "count": 71,
+        "count": 72,
         "missing_mw": 3,
         "missing_province": 5,
         "missing_municipality": 7,
         "province_deduced": 0,
         "municipalities_deduced": 2,
-        "completeness_pct": 93.0
+        "completeness_pct": 93.1
       },
       {
         "source": "puglia",
@@ -999,6 +999,17 @@
         "completeness_pct": 100.0
       },
       {
+        "source": "veneto",
+        "source_label": "Veneto",
+        "count": 22,
+        "missing_mw": 4,
+        "missing_province": 0,
+        "missing_municipality": 1,
+        "province_deduced": 22,
+        "municipalities_deduced": 0,
+        "completeness_pct": 92.4
+      },
+      {
         "source": "calabria",
         "source_label": "Calabria",
         "count": 19,
@@ -1008,17 +1019,6 @@
         "province_deduced": 0,
         "municipalities_deduced": 1,
         "completeness_pct": 98.2
-      },
-      {
-        "source": "veneto",
-        "source_label": "Veneto",
-        "count": 19,
-        "missing_mw": 4,
-        "missing_province": 0,
-        "missing_municipality": 1,
-        "province_deduced": 19,
-        "municipalities_deduced": 0,
-        "completeness_pct": 91.2
       },
       {
         "source": "basilicata",
@@ -2321,6 +2321,37 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/12001"
       ],
       "project_key": "url:900c1e77d46b48de"
+    },
+    {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
+      "title": "STN - Progetto di impianto agrivoltaico di potenza pari a 117,9 MWp e relativo impianto di rete di connessione. Comuni di localizzazione: Stienta (RO), Castelgulgliemo (RO) Bagnolo di Po (RO) e Trecenta (RO).",
+      "proponent": "REPESOL RENEVABLE ENERGIES NORD 1 SRL",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Stienta (RO), Castelgulgliemo (RO) Bagnolo di Po (RO), Trecenta (RO)",
+      "project_type": "STN - Progetto di impianto agrivoltaico di potenza pari a 117,9 MWp e relativo impianto di rete di c",
+      "power_mw": 117.9,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/eEdtQwZWPsbwpsB",
+      "updated_at": "2026-08-13T11:35:44.892522",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "STN - Progetto di impianto agrivoltaico di potenza pari a 117,9 MWp e relativo impianto di rete di connessione. Comuni di localizzazione: Stienta (RO), Castelgulgliemo (RO) Bagnolo di Po (RO) e Trecenta (RO)."
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/eEdtQwZWPsbwpsB"
+      ],
+      "project_key": "prj:63fac525f8dedc54"
     },
     {
       "source": "emilia_romagna",
@@ -6820,6 +6851,37 @@
       "project_key": "url:9e629d707cb53755"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Impianto fotovoltaico a terra connesso alla rete elettrica per vendita di energia nel Comune di Costa di Rovigo (RO) di potenza pari a 58,917 MW",
+      "proponent": "AIEM GREEN S.R.L.",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Costa di Rovigo",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 58.917,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6370",
+      "updated_at": "2026-08-13T12:20:47.009590",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Impianto fotovoltaico a terra connesso alla rete elettrica per vendita di energia nel Comune di Costa di Rovigo (RO) di potenza pari a 58,917 MW"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6370"
+      ],
+      "project_key": "url:d6b3b0d9642703a1"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -7754,6 +7816,37 @@
       "project_key": "url:9ddd0c0d6dd77195"
     },
     {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
+      "title": "Realizzazione di un impianto agrivoltaico con potenza in immissione pari a 53,4 MW. - Comuni di localizzazione: Loreo (RO) e Cavarzere (VE)",
+      "proponent": "REDEN ALFA SRL",
+      "region": "Veneto",
+      "province": "VE",
+      "municipalities": "Loreo (RO), Cavarzere (VE)",
+      "project_type": "Realizzazione di un impianto agrivoltaico con potenza in immissione pari a 53,4 MW. - Comuni di loca",
+      "power_mw": 53.4,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/2tGcw5Xmnd6Hmo8",
+      "updated_at": "2026-08-13T11:35:44.892522",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Realizzazione di un impianto agrivoltaico con potenza in immissione pari a 53,4 MW. - Comuni di localizzazione: Loreo (RO) e Cavarzere (VE)"
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/2tGcw5Xmnd6Hmo8"
+      ],
+      "project_key": "prj:f0812f1722ab2e17"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -8248,6 +8341,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6318"
       ],
       "project_key": "url:270b5487aff83346"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Fiumetto\", di potenza pari a 51,00 MW e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Randazzo (CT)",
+      "proponent": "D2M GREEN ENERGY - FIUMETTO S.R.L.",
+      "region": "Sicilia",
+      "province": "CT",
+      "municipalities": "Randazzo",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 51.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6372",
+      "updated_at": "2026-08-13T12:20:47.009590",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Fiumetto\", di potenza pari a 51,00 MW e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Randazzo (CT)"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6372"
+      ],
+      "project_key": "url:4d48c8121dcbac98"
     },
     {
       "source": "mase",
@@ -8919,7 +9043,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-08-11T12:58:31.404337",
+      "updated_at": "2026-08-13T12:08:24.592526",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -10551,6 +10675,37 @@
       "project_key": "url:dd22831aac4d576d"
     },
     {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Tavoliere 1\" e delle relative opere di connessione alla RTN, della potenza di 43,762 MW, da realizzarsi nei Comuni di Foggia (FG) località C.Savano-C.se de Martino, e di Manfredonia (FG).",
+      "proponent": "OPDENERGY TAVOLIERE 1 S.R.L.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "FOGGIA",
+      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
+      "power_mw": 43.762,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8425",
+      "updated_at": "2026-08-13T12:17:17.430998",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Tavoliere 1\" e delle relative opere di connessione alla RTN, della potenza di 43,762 MW, da realizzarsi nei Comuni di Foggia (FG) località C.Savano-C.se de Martino, e di Manfredonia (FG)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8425"
+      ],
+      "project_key": "url:9e2234219300c381"
+    },
+    {
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
@@ -12042,6 +12197,37 @@
         "https://regionelazio.app.box.com/v/VIA-119-2020"
       ],
       "project_key": "url:3cbac020000b2ad6"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la costruzione ed esercizio di un impianto agrivoltaico di potenza pari a 38.99 MWp, da realizzarsi nel Comune di Paliano (FR), e delle relative opere di connessione alla RTN ricadenti anche nel Com",
+      "proponent": "SOLAR PV1 S.R.L.",
+      "region": "Lazio",
+      "province": "FR",
+      "municipalities": "Paliano, Anagni",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 38.99,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6369",
+      "updated_at": "2026-08-13T12:20:47.009590",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la costruzione ed esercizio di un impianto agrivoltaico di potenza pari a 38.99 MWp, da realizzarsi nel Comune di Paliano (FR), e delle relative opere di connessione alla RTN ricadenti anche nel Com"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6369"
+      ],
+      "project_key": "url:9879163eb5ef93b0"
     },
     {
       "source": "mase",
@@ -16325,7 +16511,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-08-11T12:58:31.404337",
+      "updated_at": "2026-08-13T12:08:24.592526",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -18495,7 +18681,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-08-11T12:58:31.404337",
+      "updated_at": "2026-08-13T12:08:24.592526",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -23596,6 +23782,37 @@
       "project_key": "url:a6d3bd0a1204b872"
     },
     {
+      "source": "lombardia",
+      "source_group": "lombardia",
+      "source_label": "Lombardia",
+      "title": "PROGETTO IMPIANTO FOTOVOLTAICO A TERRA SITO NEL COMUNE DI CERRO MAGGIORE (MI) CON POTENZA DI PICCO 12,364 MWp E RELATIVE OPERE DI CONNESSIONE ALLA RETE DI DISTRIBUZIONE ELETTRICA PER IL COLLEGAMENTO ALLA CP DI CERRO MAGGIORE SITA IN COMUNE DI CERRO MAGGIORE (MI) da realizzarsi in Comune di Cerro Maggiore (MI)",
+      "proponent": "LANGA SIPSMITH S.R.L.",
+      "region": "Lombardia",
+      "province": "MI",
+      "municipalities": "Cerro Maggiore",
+      "project_type": "V.I.A. Provinciali",
+      "power_mw": 12.364,
+      "status": "",
+      "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=3&idProgetto=21876&idProvenienza=2",
+      "updated_at": "2026-08-13T11:36:11.722480",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lombardia"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "PROGETTO IMPIANTO FOTOVOLTAICO A TERRA SITO NEL COMUNE DI CERRO MAGGIORE (MI) CON POTENZA DI PICCO 12,364 MWp E RELATIVE OPERE DI CONNESSIONE ALLA RETE DI DISTRIBUZIONE ELETTRICA PER IL COLLEGAMENTO ALLA CP DI CERRO MAGGIORE SITA IN COMUNE DI CERRO MAGGIORE (MI) da realizzarsi in Comune di Cerro Maggiore (MI)"
+      ],
+      "_dedupe_urls": [
+        "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/21876"
+      ],
+      "project_key": "prj:bb5b2a04a068fac0"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -27708,7 +27925,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-08-11T12:58:31.404337",
+      "updated_at": "2026-08-13T12:08:24.592526",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -28049,7 +28266,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-08-11T12:58:31.404337",
+      "updated_at": "2026-08-13T12:08:24.592526",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30963,7 +31180,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-08-11T12:58:31.404337",
+      "updated_at": "2026-08-13T12:08:24.592526",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -41825,7 +42042,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-08-11T13:00:15.510693",
+      "updated_at": "2026-08-13T12:10:27.786179",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -43859,6 +44076,37 @@
         "https://sharing.regione.veneto.it/index.php/s/nn9MApNA7ZAztYR"
       ],
       "project_key": "prj:80e7ace7196639b4"
+    },
+    {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
+      "title": "Realizzazione di un impianto agrivoltaico ai sensi delle linee guida in materia di impianti agrivoltaici connesso alla rete elettrica per vendita di energia. Comuni di localizzazione: Guarda Veneta (RO), Bosaro (RO), Arquà Polesine (RO), Pontecchio Polesine (RO) e Rovigo.",
+      "proponent": "AG 37 SRL",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Guarda Veneta (RO), Bosaro (RO), Arquà Polesine (RO), Pontecchio Polesine (RO), Rovigo",
+      "project_type": "Realizzazione di un impianto agrivoltaico ai sensi delle linee guida in materia di impianti agrivolt",
+      "power_mw": 32.008,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/cgLA2aiFNLgHytW",
+      "updated_at": "2026-08-13T11:35:44.892522",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Realizzazione di un impianto agrivoltaico ai sensi delle linee guida in materia di impianti agrivoltaici connesso alla rete elettrica per vendita di energia. Comuni di localizzazione: Guarda Veneta (RO), Bosaro (RO), Arquà Polesine (RO), Pontecchio Polesine (RO) e Rovigo."
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/cgLA2aiFNLgHytW"
+      ],
+      "project_key": "prj:d159d5d44f8f0073"
     },
     {
       "source": "sicilia",
@@ -47478,10 +47726,10 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-08-11T15:10:51",
+    "generated_at": "2026-08-13T14:22:49",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1756,
-    "records_after": 1601,
+    "records_before": 1764,
+    "records_after": 1609,
     "merged_or_removed": 155,
     "accepted_pairs": 206,
     "rejected_pairs": 421,
@@ -47512,13 +47760,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-08-11T15:11:05",
+      "generated_at": "2026-08-13T14:23:17",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-08-11T15:11:23"
+    "derived_fields_rebuilt_at": "2026-08-13T14:23:38"
   }
 }
