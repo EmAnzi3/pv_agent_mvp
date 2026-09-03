@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-09-02 15:30:45",
-    "snapshot_file": "projects_snapshot_20260902_132720.csv",
-    "total_records": 1501,
-    "punctual_records": 1419,
+    "generated_at": "2026-09-03 16:14:50",
+    "snapshot_file": "projects_snapshot_20260903_141257.csv",
+    "total_records": 1510,
+    "punctual_records": 1428,
     "terna_records": 82,
-    "total_mw_punctual": 39214.964,
+    "total_mw_punctual": 39398.515,
     "total_mw_terna": 141012.115,
     "source_counts": [
       {
@@ -14,19 +14,19 @@
         "count": 319
       },
       {
+        "source": "toscana",
+        "label": "Toscana",
+        "count": 291
+      },
+      {
         "source": "sicilia",
         "label": "Sicilia",
         "count": 288
       },
       {
-        "source": "toscana",
-        "label": "Toscana",
-        "count": 286
-      },
-      {
         "source": "mase",
         "label": "MASE",
-        "count": 277
+        "count": 280
       },
       {
         "source": "terna_econnextion",
@@ -51,7 +51,7 @@
       {
         "source": "veneto",
         "label": "Veneto",
-        "count": 22
+        "count": 23
       },
       {
         "source": "calabria",
@@ -87,13 +87,13 @@
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 360,
-        "punctual_mw": 11631.03,
+        "punctual_count": 361,
+        "punctual_mw": 11683.829,
         "terna_count": 5,
         "terna_mw": 36468.283,
         "terna_practices": 0,
-        "total_mw": 48099.313,
-        "priority_score": 36.9
+        "total_mw": 48152.112,
+        "priority_score": 37.0
       },
       {
         "region": "Lazio",
@@ -107,23 +107,23 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 155,
-        "punctual_mw": 7251.385,
+        "punctual_count": 156,
+        "punctual_mw": 7310.725,
         "terna_count": 5,
         "terna_mw": 35736.528,
         "terna_practices": 0,
-        "total_mw": 42987.913,
-        "priority_score": 22.1
+        "total_mw": 43047.253,
+        "priority_score": 22.3
       },
       {
         "region": "Toscana",
-        "punctual_count": 290,
-        "punctual_mw": 4722.976,
+        "punctual_count": 295,
+        "punctual_mw": 4729.363,
         "terna_count": 5,
         "terna_mw": 4827.376,
         "terna_practices": 0,
-        "total_mw": 9550.352,
-        "priority_score": 20.2
+        "total_mw": 9556.739,
+        "priority_score": 20.4
       },
       {
         "region": "Lombardia",
@@ -157,23 +157,23 @@
       },
       {
         "region": "Basilicata",
-        "punctual_count": 35,
-        "punctual_mw": 837.462,
+        "punctual_count": 36,
+        "punctual_mw": 853.917,
         "terna_count": 5,
         "terna_mw": 11078.598,
         "terna_practices": 0,
-        "total_mw": 11916.06,
-        "priority_score": 4.8
+        "total_mw": 11932.515,
+        "priority_score": 4.9
       },
       {
         "region": "Veneto",
-        "punctual_count": 30,
-        "punctual_mw": 1060.972,
+        "punctual_count": 31,
+        "punctual_mw": 1109.542,
         "terna_count": 5,
         "terna_mw": 5846.075,
         "terna_practices": 0,
-        "total_mw": 6907.047,
-        "priority_score": 3.7
+        "total_mw": 6955.617,
+        "priority_score": 3.8
       },
       {
         "region": "Campania",
@@ -900,13 +900,13 @@
       ]
     },
     "quality": {
-      "punctual_records": 1419,
+      "punctual_records": 1428,
       "missing_mw": 129,
       "missing_region": 0,
       "missing_province": 6,
-      "missing_municipality": 15,
+      "missing_municipality": 16,
       "missing_url": 0,
-      "province_deduced": 34,
+      "province_deduced": 35,
       "municipalities_deduced": 4
     },
     "quality_by_source": [
@@ -922,6 +922,17 @@
         "completeness_pct": 97.3
       },
       {
+        "source": "toscana",
+        "source_label": "Toscana",
+        "count": 291,
+        "missing_mw": 0,
+        "missing_province": 0,
+        "missing_municipality": 0,
+        "province_deduced": 0,
+        "municipalities_deduced": 0,
+        "completeness_pct": 100.0
+      },
+      {
         "source": "sicilia",
         "source_label": "Sicilia",
         "count": 288,
@@ -933,26 +944,15 @@
         "completeness_pct": 89.2
       },
       {
-        "source": "toscana",
-        "source_label": "Toscana",
-        "count": 286,
-        "missing_mw": 0,
-        "missing_province": 0,
-        "missing_municipality": 0,
-        "province_deduced": 0,
-        "municipalities_deduced": 0,
-        "completeness_pct": 100.0
-      },
-      {
         "source": "mase",
         "source_label": "MASE",
-        "count": 277,
+        "count": 280,
         "missing_mw": 1,
         "missing_province": 0,
-        "missing_municipality": 1,
+        "missing_municipality": 2,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 99.8
+        "completeness_pct": 99.6
       },
       {
         "source": "terna_econnextion",
@@ -1001,13 +1001,13 @@
       {
         "source": "veneto",
         "source_label": "Veneto",
-        "count": 22,
+        "count": 23,
         "missing_mw": 4,
         "missing_province": 0,
         "missing_municipality": 1,
-        "province_deduced": 22,
+        "province_deduced": 23,
         "municipalities_deduced": 0,
-        "completeness_pct": 92.4
+        "completeness_pct": 92.8
       },
       {
         "source": "calabria",
@@ -6950,6 +6950,37 @@
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Solare Sant'Agata di Puglia - S2S\" di potenza pari a 59,34 MW e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Sant'Agata di Puglia (F",
+      "proponent": "S2SE TRE S.r.l.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "Sant'agata di Puglia",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 59.34,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6402",
+      "updated_at": "2026-09-03T14:12:53.455516",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Solare Sant'Agata di Puglia - S2S\" di potenza pari a 59,34 MW e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Sant'Agata di Puglia (F"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6402"
+      ],
+      "project_key": "url:e90cbf01c6923aa8"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
       "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrivoltaico, denominato \"Raddusa\", e delle relative opere di connessione alla RTN, della potenza di 58,95 MW, integrato ad un sistema di accumulo da 20 MW, da realiz",
       "proponent": "Fri-el Solar S.r.l.",
       "region": "Sicilia",
@@ -8132,6 +8163,37 @@
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agro-fotovoltaico denominato \"FV_MONREALE 2\", della potenza complessiva di 52,799 MW, sito in Località Malvellotto, nel Comune di Monreale (PA).",
+      "proponent": "EPSILON GEMINI S.r.l.",
+      "region": "Sicilia",
+      "province": "PA",
+      "municipalities": "Monreale",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 52.799,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6403",
+      "updated_at": "2026-09-03T14:12:53.455516",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agro-fotovoltaico denominato \"FV_MONREALE 2\", della potenza complessiva di 52,799 MW, sito in Località Malvellotto, nel Comune di Monreale (PA)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6403"
+      ],
+      "project_key": "url:68608c9235b39dd5"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
       "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, della potenza di 52,48 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Carlentini (SR).",
       "proponent": "TEP Renewables (CARLENTINI PV) S.r.l.",
       "region": "Sicilia",
@@ -9202,7 +9264,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-09-02T13:12:36.708283",
+      "updated_at": "2026-09-03T13:59:33.394386",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -9534,6 +9596,37 @@
       "source": "veneto",
       "source_group": "veneto",
       "source_label": "Veneto",
+      "title": "Impianto Agrivoltaico collegato alla RNT di potenza nominale pari a 48,57 MW. Comuni di localizzazione: Rovigo, Costa di Rovigo(RO) e Arqua' di Polesine (RO)",
+      "proponent": "PHOTOSOL ENERGIA ITALIA SRL",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Rovigo, Costa di Rovigo(RO), Arqua' di Polesine (RO)",
+      "project_type": "Impianto Agrivoltaico collegato alla RNT di potenza nominale pari a 48,57 MW. Comuni di localizzazio",
+      "power_mw": 48.57,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/tiWqL3w6AMZsR2D",
+      "updated_at": "2026-09-03T13:45:44.117126",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto Agrivoltaico collegato alla RNT di potenza nominale pari a 48,57 MW. Comuni di localizzazione: Rovigo, Costa di Rovigo(RO) e Arqua' di Polesine (RO)"
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/tiWqL3w6AMZsR2D"
+      ],
+      "project_key": "prj:81e5b18ef2974afb"
+    },
+    {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
       "title": "Impianto agrivoltaico della potenza di 48.491,52 Kwp, integrato con sistema di accumulo di 10MW, denominato \"SANT'URBANO PV\" - Comune di localizzazione: Sant'Urbano (PD)",
       "proponent": "SHELL ENERGY ITALIA SRL",
       "region": "Veneto",
@@ -9782,7 +9875,7 @@
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
-      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Istanza per l'avvio del procedimento di Valutazione di Impatto Ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto relativo alla costruzione ed esercizio di un impianto agrivoltaico e relat",
+      "title": "Istanza per l'avvio del procedimento di Valutazione di Impatto Ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto relativo alla costruzione ed esercizio di un impianto agrivoltaico e relative opere di connessione alla rete elettrica nazionale da realizzarsi in agro di Carpi (MO), denominato \"Magarotto-Marconi\" e avente potenza moduli pari a 47,47 MWp e potenza in immissione pari a 43,20 MW.",
       "proponent": "Sonnedix Mag S.r.l. (ex SONNEDIX LEONARDO S.R.L.",
       "region": "Emilia-Romagna",
       "province": "MO",
@@ -9790,7 +9883,7 @@
       "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
       "power_mw": 47.47,
       "status": "",
-      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6092",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10673",
       "updated_at": "2026-05-06T14:50:31.907499",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -9798,16 +9891,19 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
+        "mase",
         "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "Istanza per l'avvio del procedimento di Valutazione di Impatto Ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto relativo alla costruzione ed esercizio di un impianto agrivoltaico e relative opere di connessione alla rete elettrica nazionale da realizzarsi in agro di Carpi (MO), denominato \"Magarotto-Marconi\" e avente potenza moduli pari a 47,47 MWp e potenza in immissione pari a 43,20 MW.",
         "Valutazione Impatto Ambientale (PNIEC-PNRR): Istanza per l'avvio del procedimento di Valutazione di Impatto Ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto relativo alla costruzione ed esercizio di un impianto agrivoltaico e relat"
       ],
       "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6092"
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6092",
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/10673"
       ],
-      "project_key": "url:8f309354560b9f05"
+      "project_key": "url:627a852ea62191b0"
     },
     {
       "source": "mase",
@@ -16764,7 +16860,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-09-02T13:12:36.708283",
+      "updated_at": "2026-09-03T13:59:33.394386",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -17694,7 +17790,7 @@
       "power_mw": 22.92,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=3&idProgetto=17440&idProvenienza=2",
-      "updated_at": "2026-05-01T19:09:14.947862",
+      "updated_at": "2026-09-03T13:46:13.679890",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -18965,7 +19061,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-09-02T13:12:36.708283",
+      "updated_at": "2026-09-03T13:59:33.394386",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -22639,6 +22735,37 @@
       "project_key": "url:3f7d7e0129a061fa"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto fotovoltaico di potenza nominale pari a 16,455 MWp in agro di Grottole (MT) all'interno dell'area SIN VALBASENTO e delle relative opere di connessione",
+      "proponent": "EEC Solar 3 S.r.l.",
+      "region": "Basilicata",
+      "province": "MT",
+      "municipalities": "",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 16.455,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6404",
+      "updated_at": "2026-09-03T14:12:53.455516",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto fotovoltaico di potenza nominale pari a 16,455 MWp in agro di Grottole (MT) all'interno dell'area SIN VALBASENTO e delle relative opere di connessione"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6404"
+      ],
+      "project_key": "url:f0880f5c98f8b454"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -25132,7 +25259,7 @@
       "power_mw": 11.235,
       "status": "",
       "url": "https://www.va.regione.umbria.it/web/3852172/1144/-/asset_publisher/dI3c1OTrJk2U/content/94-2026-007?read_more=true",
-      "updated_at": "2026-06-10T20:27:40.600349",
+      "updated_at": "2026-09-03T14:07:49.807354",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -28427,7 +28554,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-09-02T13:12:36.708283",
+      "updated_at": "2026-09-03T13:59:33.394386",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -28768,7 +28895,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-09-02T13:12:36.708283",
+      "updated_at": "2026-09-03T13:59:33.394386",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -31744,7 +31871,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-09-02T13:12:36.708283",
+      "updated_at": "2026-09-03T13:59:33.394386",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -35951,6 +36078,37 @@
       "project_key": "prj:9ccb6a933fbd1f86"
     },
     {
+      "source": "toscana_atos",
+      "source_group": "toscana",
+      "source_label": "Toscana",
+      "title": "AGRI AQUILAIA 5",
+      "proponent": "IDROAGRI SOCIETà AGRICOLA S.R.L.",
+      "region": "Toscana",
+      "province": "GR",
+      "municipalities": "Scansano",
+      "project_type": "AGRIVOLTAICO",
+      "power_mw": 3.0,
+      "status": "",
+      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12541",
+      "updated_at": "2026-09-03T14:01:22.615842",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "toscana_atos"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "AGRI AQUILAIA 5"
+      ],
+      "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12541"
+      ],
+      "project_key": "prj:200725a03716ac19"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -38374,6 +38532,37 @@
       "project_key": "prj:8910b2f51158127a"
     },
     {
+      "source": "toscana_atos",
+      "source_group": "toscana",
+      "source_label": "Toscana",
+      "title": "FTV SI070",
+      "proponent": "SOTTOCOLLE S.R.L.",
+      "region": "Toscana",
+      "province": "SI",
+      "municipalities": "Casole D'Elsa",
+      "project_type": "FOTOVOLTAICO",
+      "power_mw": 1.0,
+      "status": "",
+      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12539",
+      "updated_at": "2026-09-03T14:01:22.615842",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "toscana_atos"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "FTV SI070"
+      ],
+      "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12539"
+      ],
+      "project_key": "prj:cce3b7de031582a9"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -38961,6 +39150,37 @@
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12351"
       ],
       "project_key": "prj:81608ba97b3513ed"
+    },
+    {
+      "source": "toscana_atos",
+      "source_group": "toscana",
+      "source_label": "Toscana",
+      "title": "FTV GELLO NORD",
+      "proponent": "SPD TRE S.R.L.",
+      "region": "Toscana",
+      "province": "PI",
+      "municipalities": "Pontedera",
+      "project_type": "FOTOVOLTAICO",
+      "power_mw": 0.998,
+      "status": "",
+      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12540",
+      "updated_at": "2026-09-03T14:01:22.615842",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "toscana_atos"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "FTV GELLO NORD"
+      ],
+      "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12540"
+      ],
+      "project_key": "prj:7ac5e6e8fd398035"
     },
     {
       "source": "lazio",
@@ -40269,6 +40489,37 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
+      "title": "FTV TRE BERTE",
+      "proponent": "ACHEON",
+      "region": "Toscana",
+      "province": "SI",
+      "municipalities": "Montepulciano",
+      "project_type": "FOTOVOLTAICO",
+      "power_mw": 0.875,
+      "status": "",
+      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12537",
+      "updated_at": "2026-09-03T14:01:22.615842",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "toscana_atos"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "FTV TRE BERTE"
+      ],
+      "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12537"
+      ],
+      "project_key": "prj:5f01f53dd97fd196"
+    },
+    {
+      "source": "toscana_atos",
+      "source_group": "toscana",
+      "source_label": "Toscana",
       "title": "FTV VALLONE",
       "proponent": "ACHEON",
       "region": "Toscana",
@@ -40729,6 +40980,37 @@
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12370"
       ],
       "project_key": "prj:faff914dd906f686"
+    },
+    {
+      "source": "toscana_atos",
+      "source_group": "toscana",
+      "source_label": "Toscana",
+      "title": "FTV ROSIGNANO MARITTIMO",
+      "proponent": "MANNINI IMMOBILIARE TECNOLOGY GREEN S.R.L.S.",
+      "region": "Toscana",
+      "province": "LI",
+      "municipalities": "Rosignano Marittimo",
+      "project_type": "FOTOVOLTAICO",
+      "power_mw": 0.514,
+      "status": "",
+      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12542",
+      "updated_at": "2026-09-03T14:01:22.615842",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "toscana_atos"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "FTV ROSIGNANO MARITTIMO"
+      ],
+      "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12542"
+      ],
+      "project_key": "prj:32723472ab3bebf9"
     },
     {
       "source": "toscana_atos",
@@ -42794,7 +43076,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-09-02T13:15:03.030172",
+      "updated_at": "2026-09-03T14:01:31.814282",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -48486,12 +48768,12 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-09-02T15:30:46",
+    "generated_at": "2026-09-03T16:14:51",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1876,
-    "records_after": 1672,
-    "merged_or_removed": 204,
-    "accepted_pairs": 294,
+    "records_before": 1886,
+    "records_after": 1681,
+    "merged_or_removed": 205,
+    "accepted_pairs": 295,
     "rejected_pairs": 673,
     "field_repairs": 62,
     "manual_actions": 10,
@@ -48520,13 +48802,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-09-02T15:31:30",
+      "generated_at": "2026-09-03T16:15:17",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-09-02T15:32:07"
+    "derived_fields_rebuilt_at": "2026-09-03T16:15:45"
   }
 }
