@@ -279,6 +279,21 @@ def main() -> int:
             enrichment_cmd,
         )
 
+    # Le correzioni geografiche MASE protette devono essere applicate prima
+    # del gate fail-closed di dashboard_data_sync. In questo modo il flusso
+    # standalone e quello avviato dal batch hanno lo stesso ordine sicuro.
+    run_step(
+        "correzioni localizzazione MASE protette",
+        [
+            py,
+            "scripts/manual_mase_location_overrides.py",
+            "--data",
+            str(args.data_json),
+            "--audit",
+            "reports/manual_mase_location_overrides_audit.csv",
+        ],
+    )
+
     if not args.skip_dashboard_sync:
         run_step(
             "sync dati puliti dentro index.html",
