@@ -25,6 +25,16 @@ OVERRIDES = {
         "province": "VS",
         "reason": "manual_mase_9004_villacidro_province_fix",
     },
+    "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6417": {
+        "region": "Friuli-Venezia Giulia",
+        "province": "PN",
+        "reason": "manual_mase_6417_sesto_al_reghena_province_fix",
+    },
+    "https://va.mite.gov.it/it-IT/Oggetti/Info/10476": {
+        "region": "Friuli-Venezia Giulia",
+        "province": "PN",
+        "reason": "manual_mase_10476_sesto_al_reghena_province_fix",
+    },
 }
 
 
