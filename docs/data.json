@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-09-18 16:30:30",
-    "snapshot_file": "projects_snapshot_20260918_142718.csv",
-    "total_records": 1520,
-    "punctual_records": 1438,
+    "generated_at": "2026-09-24 10:43:29",
+    "snapshot_file": "projects_snapshot_20260924_084127.csv",
+    "total_records": 1524,
+    "punctual_records": 1442,
     "terna_records": 82,
-    "total_mw_punctual": 40105.642,
+    "total_mw_punctual": 40247.346,
     "total_mw_terna": 141012.115,
     "source_counts": [
       {
@@ -19,14 +19,14 @@
         "count": 291
       },
       {
-        "source": "sicilia",
-        "label": "Sicilia",
+        "source": "mase",
+        "label": "MASE",
         "count": 288
       },
       {
-        "source": "mase",
-        "label": "MASE",
-        "count": 287
+        "source": "sicilia",
+        "label": "Sicilia",
+        "count": 288
       },
       {
         "source": "terna_econnextion",
@@ -36,7 +36,7 @@
       {
         "source": "lombardia",
         "label": "Lombardia",
-        "count": 73
+        "count": 74
       },
       {
         "source": "puglia",
@@ -46,7 +46,7 @@
       {
         "source": "emilia_romagna",
         "label": "Emilia-Romagna",
-        "count": 29
+        "count": 31
       },
       {
         "source": "veneto",
@@ -127,23 +127,23 @@
       },
       {
         "region": "Lombardia",
-        "punctual_count": 75,
-        "punctual_mw": 1692.158,
+        "punctual_count": 76,
+        "punctual_mw": 1716.76,
         "terna_count": 4,
         "terna_mw": 3698.436,
         "terna_practices": 0,
-        "total_mw": 5390.594,
-        "priority_score": 6.2
+        "total_mw": 5415.196,
+        "priority_score": 6.3
       },
       {
         "region": "Emilia-Romagna",
-        "punctual_count": 43,
-        "punctual_mw": 1921.626,
+        "punctual_count": 46,
+        "punctual_mw": 2038.728,
         "terna_count": 5,
         "terna_mw": 7958.756,
         "terna_practices": 0,
-        "total_mw": 9880.382,
-        "priority_score": 5.7
+        "total_mw": 9997.484,
+        "priority_score": 5.9
       },
       {
         "region": "Sardegna",
@@ -900,7 +900,7 @@
       ]
     },
     "quality": {
-      "punctual_records": 1438,
+      "punctual_records": 1442,
       "missing_mw": 129,
       "missing_region": 0,
       "missing_province": 6,
@@ -933,6 +933,17 @@
         "completeness_pct": 100.0
       },
       {
+        "source": "mase",
+        "source_label": "MASE",
+        "count": 288,
+        "missing_mw": 1,
+        "missing_province": 0,
+        "missing_municipality": 2,
+        "province_deduced": 0,
+        "municipalities_deduced": 0,
+        "completeness_pct": 99.7
+      },
+      {
         "source": "sicilia",
         "source_label": "Sicilia",
         "count": 288,
@@ -942,17 +953,6 @@
         "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 89.2
-      },
-      {
-        "source": "mase",
-        "source_label": "MASE",
-        "count": 287,
-        "missing_mw": 1,
-        "missing_province": 0,
-        "missing_municipality": 2,
-        "province_deduced": 0,
-        "municipalities_deduced": 0,
-        "completeness_pct": 99.7
       },
       {
         "source": "terna_econnextion",
@@ -968,7 +968,7 @@
       {
         "source": "lombardia",
         "source_label": "Lombardia",
-        "count": 73,
+        "count": 74,
         "missing_mw": 3,
         "missing_province": 5,
         "missing_municipality": 7,
@@ -990,7 +990,7 @@
       {
         "source": "emilia_romagna",
         "source_label": "Emilia-Romagna",
-        "count": 29,
+        "count": 31,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -8315,6 +8315,37 @@
       "project_key": "url:390c2f84deb08db0"
     },
     {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "IMPIANTO AGRIVOLTAICO AVANZATO DENOMINATO “GALLO” CON POTENZA DI PICCO PARI A 52,85 MWP NEL COMUNE DI POGGIO RENATICO (FE) E DELLE RELATIVE OPERE DI CONNESSIONE RTN E POTENZIAMENTO ELETTRODOTTI AEREI 132 KV “FERRARA FOCOMORTO CP – CP MEZZOLARA – SE COLUNGA”",
+      "proponent": "Envirosun S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "FE",
+      "municipalities": "Poggio Renatico, Baricella, Budrio, Castenaso, Minerbio, Ferrara, Delle",
+      "project_type": "VIA",
+      "power_mw": 52.85,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6779",
+      "updated_at": "2026-09-24T08:16:51.219804",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "IMPIANTO AGRIVOLTAICO AVANZATO DENOMINATO “GALLO” CON POTENZA DI PICCO PARI A 52,85 MWP NEL COMUNE DI POGGIO RENATICO (FE) E DELLE RELATIVE OPERE DI CONNESSIONE RTN E POTENZIAMENTO ELETTRODOTTI AEREI 132 KV “FERRARA FOCOMORTO CP – CP MEZZOLARA – SE COLUNGA”"
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6779"
+      ],
+      "project_key": "url:fa5088cfa5ffb645"
+    },
+    {
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
@@ -9482,7 +9513,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-09-18T14:11:14.791861",
+      "updated_at": "2026-09-24T08:28:02.502206",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -9747,6 +9778,37 @@
         "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=64125"
       ],
       "project_key": "url:0c39e0bd2d29e42c"
+    },
+    {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un impianto fotovoltaico, della potenza complessiva pari a 48,863 MW, da realizzarsi nel Comune di Poggio Renatico (FE) e Ferrara (FE), con opere di connessione alla RTN ricadenti nei medesimi comuni. Codice pratica MYTERNA n. 202407590.",
+      "proponent": "Solarvia S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "FE",
+      "municipalities": "POGGIO RENATICO",
+      "project_type": "Verifica di Assoggettabilità a VIA",
+      "power_mw": 48.863,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12168",
+      "updated_at": "2026-09-24T08:37:26.152817",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto fotovoltaico, della potenza complessiva pari a 48,863 MW, da realizzarsi nel Comune di Poggio Renatico (FE) e Ferrara (FE), con opere di connessione alla RTN ricadenti nei medesimi comuni. Codice pratica MYTERNA n. 202407590."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/12168"
+      ],
+      "project_key": "url:c10cc5b78614564c"
     },
     {
       "source": "sistema_puglia_energia",
@@ -17109,7 +17171,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-09-18T14:11:14.791861",
+      "updated_at": "2026-09-24T08:28:02.502206",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -17498,6 +17560,37 @@
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12239"
       ],
       "project_key": "prj:36e1f87778a200e5"
+    },
+    {
+      "source": "lombardia",
+      "source_group": "lombardia",
+      "source_label": "Lombardia",
+      "title": "L’intervento prevede la realizzazione di un impianto agrivoltaico avanzato nel territorio comunale di Paderno Ponchielli (CR), caratterizzato da una potenza di picco installata pari a 24.602,40 kWp (DC) e da una potenza nominale di immissione pari a 20.480 kVA (AC). Il progetto include altresì le opere di connessione alla Rete di Trasmissione Nazionale (RTN), che si sviluppano nei territori dei Comuni di Paderno Ponchielli, Sesto ed Uniti e Castelverde, in provincia di Cremona, necessarie per l’",
+      "proponent": "ATLAS STORAGE 13 SRL",
+      "region": "Lombardia",
+      "province": "CR",
+      "municipalities": "Paderno Ponchielli",
+      "project_type": "V.E.R. Provinciali",
+      "power_mw": 24.602,
+      "status": "",
+      "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=21937&idProvenienza=2",
+      "updated_at": "2026-09-24T08:17:06.678306",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lombardia"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "L’intervento prevede la realizzazione di un impianto agrivoltaico avanzato nel territorio comunale di Paderno Ponchielli (CR), caratterizzato da una potenza di picco installata pari a 24.602,40 kWp (DC) e da una potenza nominale di immissione pari a 20.480 kVA (AC). Il progetto include altresì le opere di connessione alla Rete di Trasmissione Nazionale (RTN), che si sviluppano nei territori dei Comuni di Paderno Ponchielli, Sesto ed Uniti e Castelverde, in provincia di Cremona, necessarie per l’"
+      ],
+      "_dedupe_urls": [
+        "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/21937"
+      ],
+      "project_key": "prj:2416c1c68fe55321"
     },
     {
       "source": "emilia_romagna",
@@ -19310,7 +19403,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-09-18T14:11:14.791861",
+      "updated_at": "2026-09-24T08:28:02.502206",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -20141,6 +20234,39 @@
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrovoltaico, denominato \"Perillo Quaglietta\", della potenza nominale di 19.95 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel territorio del C",
+      "proponent": "Perillo Quaglietta S.r.l.",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Montemilone",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 19.95,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6441",
+      "updated_at": "2026-09-24T08:41:22.645983",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 2,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrovoltaico, denominato \"Perillo Quaglietta\", della potenza nominale di 19.95 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel territorio del C",
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrovoltaico, denominato \"Spinamara Sottana\", della potenza nominale di 19.95 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel territorio del Co"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/5871",
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6441"
+      ],
+      "project_key": "url:ffa82de4b55deb8b"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
       "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrovoltaico, denominato \"San Donato\", della potenza nominale di 19.95 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel territorio del Comune di",
       "proponent": "Ambra Solare 32 S.r.l.",
       "region": "Basilicata",
@@ -20168,37 +20294,6 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6238"
       ],
       "project_key": "url:e36506dd131c79a2"
-    },
-    {
-      "source": "mase_provvedimenti",
-      "source_group": "mase",
-      "source_label": "MASE",
-      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrovoltaico, denominato \"Spinamara Sottana\", della potenza nominale di 19.95 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel territorio del Co",
-      "proponent": "Marmaria Solare 8 S.r.l",
-      "region": "Basilicata",
-      "province": "PZ",
-      "municipalities": "Montemilone",
-      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
-      "power_mw": 19.95,
-      "status": "",
-      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/5871",
-      "updated_at": "2026-05-01T19:24:03.185724",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "mase_provvedimenti"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrovoltaico, denominato \"Spinamara Sottana\", della potenza nominale di 19.95 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel territorio del Co"
-      ],
-      "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/5871"
-      ],
-      "project_key": "url:2e8ef19a6069fb84"
     },
     {
       "source": "mase_provvedimenti",
@@ -23416,6 +23511,37 @@
         "https://regionelazio.box.com/v/VIA-004-2024"
       ],
       "project_key": "url:888bba3dfb0f0609"
+    },
+    {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "ARPAE: IMPIANTO AGRIVOLTAICO DI POTENZA PARI A 15.389 KWP DENOMINATO \"BUDRIO PARMA\" E OPERE CONNESSE",
+      "proponent": "SOLAR PV 34 S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "BO",
+      "municipalities": "Budrio, Castenaso",
+      "project_type": "VIA",
+      "power_mw": 15.389,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7030",
+      "updated_at": "2026-09-24T08:16:51.219804",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "ARPAE: IMPIANTO AGRIVOLTAICO DI POTENZA PARI A 15.389 KWP DENOMINATO \"BUDRIO PARMA\" E OPERE CONNESSE"
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7030"
+      ],
+      "project_key": "url:78033bf912317506"
     },
     {
       "source": "toscana_atos",
@@ -28865,7 +28991,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-09-18T14:11:14.791861",
+      "updated_at": "2026-09-24T08:28:02.502206",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29206,7 +29332,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-09-18T14:11:14.791861",
+      "updated_at": "2026-09-24T08:28:02.502206",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -32182,7 +32308,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-09-18T14:11:14.791861",
+      "updated_at": "2026-09-24T08:28:02.502206",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -43387,7 +43513,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-09-18T14:16:22.669624",
+      "updated_at": "2026-09-24T08:30:15.703055",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -49079,14 +49205,14 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-09-18T16:30:30",
+    "generated_at": "2026-09-24T10:43:30",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1897,
-    "records_after": 1691,
-    "merged_or_removed": 206,
-    "accepted_pairs": 296,
-    "rejected_pairs": 673,
-    "field_repairs": 62,
+    "records_before": 1902,
+    "records_after": 1695,
+    "merged_or_removed": 207,
+    "accepted_pairs": 297,
+    "rejected_pairs": 674,
+    "field_repairs": 63,
     "manual_actions": 10,
     "manual_proponent_overrides": 10,
     "manual_excluded_records": 0,
@@ -49113,13 +49239,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-09-18T16:31:18",
+      "generated_at": "2026-09-24T10:44:00",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-09-18T16:31:47"
+    "derived_fields_rebuilt_at": "2026-09-24T10:44:30"
   }
 }
