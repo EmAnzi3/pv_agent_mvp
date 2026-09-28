@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-09-24 10:43:29",
-    "snapshot_file": "projects_snapshot_20260924_084127.csv",
-    "total_records": 1524,
-    "punctual_records": 1442,
+    "generated_at": "2026-09-28 15:19:27",
+    "snapshot_file": "projects_snapshot_20260928_131832.csv",
+    "total_records": 1527,
+    "punctual_records": 1445,
     "terna_records": 82,
-    "total_mw_punctual": 40247.346,
+    "total_mw_punctual": 40685.371,
     "total_mw_terna": 141012.115,
     "source_counts": [
       {
@@ -14,14 +14,14 @@
         "count": 319
       },
       {
-        "source": "toscana",
-        "label": "Toscana",
+        "source": "mase",
+        "label": "MASE",
         "count": 291
       },
       {
-        "source": "mase",
-        "label": "MASE",
-        "count": 288
+        "source": "toscana",
+        "label": "Toscana",
+        "count": 291
       },
       {
         "source": "sicilia",
@@ -87,13 +87,13 @@
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 365,
-        "punctual_mw": 11921.383,
+        "punctual_count": 367,
+        "punctual_mw": 12322.408,
         "terna_count": 5,
         "terna_mw": 36468.283,
         "terna_practices": 0,
-        "total_mw": 48389.666,
-        "priority_score": 37.5
+        "total_mw": 48790.691,
+        "priority_score": 38.0
       },
       {
         "region": "Lazio",
@@ -107,13 +107,13 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 157,
-        "punctual_mw": 7378.0,
+        "punctual_count": 158,
+        "punctual_mw": 7415.0,
         "terna_count": 5,
         "terna_mw": 35736.528,
         "terna_practices": 0,
-        "total_mw": 43114.528,
-        "priority_score": 22.4
+        "total_mw": 43151.528,
+        "priority_score": 22.5
       },
       {
         "region": "Toscana",
@@ -297,6 +297,37 @@
           "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6322"
         ],
         "project_key": "url:ef53781cec815a38"
+      },
+      {
+        "source": "mase",
+        "source_group": "mase",
+        "source_label": "MASE",
+        "title": "Variante locale dell'Elettrodotto aereo ad Alta Tensione (AT 380 kV) di connessione alla RTN (tratto compreso tra i sostegni n. 25 e n. 28) a servizio dell'Impianto Fotovoltaico denominato 'Castel di Iudica' da 331,2 MWp.",
+        "proponent": "IBVI 8 S.R.L.",
+        "region": "Sicilia",
+        "province": "CT",
+        "municipalities": "",
+        "project_type": "Fotovoltaico",
+        "power_mw": 331.2,
+        "status": "",
+        "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12177",
+        "updated_at": "2026-09-28T13:14:11.922400",
+        "numero_pratiche": 0,
+        "is_terna": false,
+        "is_punctual": true,
+        "province_deduced": false,
+        "municipalities_deduced": false,
+        "_merged_sources": [
+          "mase"
+        ],
+        "_dedupe_group_size": 1,
+        "_dedupe_titles": [
+          "Variante locale dell'Elettrodotto aereo ad Alta Tensione (AT 380 kV) di connessione alla RTN (tratto compreso tra i sostegni n. 25 e n. 28) a servizio dell'Impianto Fotovoltaico denominato 'Castel di Iudica' da 331,2 MWp."
+        ],
+        "_dedupe_urls": [
+          "https://va.mite.gov.it/it-IT/Oggetti/Info/12177"
+        ],
+        "project_key": "url:c9fa33e4796d27ff"
       },
       {
         "source": "sicilia",
@@ -856,37 +887,6 @@
           "https://va.mite.gov.it/it-IT/Oggetti/Info/11828"
         ],
         "project_key": "url:8ba7e17dd9b9169d"
-      },
-      {
-        "source": "lazio",
-        "source_group": "lazio",
-        "source_label": "Lazio",
-        "title": "Impianto fotovoltaico a terra della potenza di circa 150 MWp connesso alla RTN in loc. Pian di Vico Determinazione n. G01048 del 06/02/2019 - Favorevole con prescrizioni Provvedimento Autorizzatorio Unico Regionale G03751 del 29/03/2019 Favorevole con Prescrizioni",
-        "proponent": "DCS SRL",
-        "region": "Lazio",
-        "province": "VT",
-        "municipalities": "Tuscania",
-        "project_type": "VIA",
-        "power_mw": 150.0,
-        "status": "",
-        "url": "https://regionelazio.app.box.com/v/015-2018",
-        "updated_at": "2026-05-01T19:18:12.958879",
-        "numero_pratiche": 0,
-        "is_terna": false,
-        "is_punctual": true,
-        "province_deduced": false,
-        "municipalities_deduced": false,
-        "_merged_sources": [
-          "lazio"
-        ],
-        "_dedupe_group_size": 1,
-        "_dedupe_titles": [
-          "Impianto fotovoltaico a terra della potenza di circa 150 MWp connesso alla RTN in loc. Pian di Vico Determinazione n. G01048 del 06/02/2019 - Favorevole con prescrizioni Provvedimento Autorizzatorio Unico Regionale G03751 del 29/03/2019 Favorevole con Prescrizioni"
-        ],
-        "_dedupe_urls": [
-          "https://regionelazio.app.box.com/v/015-2018"
-        ],
-        "project_key": "url:135cf87f4326d01d"
       }
     ],
     "terna_summary": {
@@ -900,11 +900,11 @@
       ]
     },
     "quality": {
-      "punctual_records": 1442,
+      "punctual_records": 1445,
       "missing_mw": 129,
       "missing_region": 0,
       "missing_province": 6,
-      "missing_municipality": 16,
+      "missing_municipality": 17,
       "missing_url": 0,
       "province_deduced": 36,
       "municipalities_deduced": 4
@@ -922,6 +922,17 @@
         "completeness_pct": 97.3
       },
       {
+        "source": "mase",
+        "source_label": "MASE",
+        "count": 291,
+        "missing_mw": 1,
+        "missing_province": 0,
+        "missing_municipality": 3,
+        "province_deduced": 0,
+        "municipalities_deduced": 0,
+        "completeness_pct": 99.5
+      },
+      {
         "source": "toscana",
         "source_label": "Toscana",
         "count": 291,
@@ -931,17 +942,6 @@
         "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 100.0
-      },
-      {
-        "source": "mase",
-        "source_label": "MASE",
-        "count": 288,
-        "missing_mw": 1,
-        "missing_province": 0,
-        "missing_municipality": 2,
-        "province_deduced": 0,
-        "municipalities_deduced": 0,
-        "completeness_pct": 99.7
       },
       {
         "source": "sicilia",
@@ -1201,6 +1201,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6322"
       ],
       "project_key": "url:ef53781cec815a38"
+    },
+    {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Variante locale dell'Elettrodotto aereo ad Alta Tensione (AT 380 kV) di connessione alla RTN (tratto compreso tra i sostegni n. 25 e n. 28) a servizio dell'Impianto Fotovoltaico denominato 'Castel di Iudica' da 331,2 MWp.",
+      "proponent": "IBVI 8 S.R.L.",
+      "region": "Sicilia",
+      "province": "CT",
+      "municipalities": "",
+      "project_type": "Fotovoltaico",
+      "power_mw": 331.2,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12177",
+      "updated_at": "2026-09-28T13:14:11.922400",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Variante locale dell'Elettrodotto aereo ad Alta Tensione (AT 380 kV) di connessione alla RTN (tratto compreso tra i sostegni n. 25 e n. 28) a servizio dell'Impianto Fotovoltaico denominato 'Castel di Iudica' da 331,2 MWp."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/12177"
+      ],
+      "project_key": "url:c9fa33e4796d27ff"
     },
     {
       "source": "sicilia",
@@ -5271,6 +5302,37 @@
       "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
+      "title": "Progetto di un impianto fotovoltaico denominato \"A92.IT.19.SC.SIGONELLA\" di potenza pari a 69,825 MW e delle relative opere di connessione alla RTN da realizzarsi nel Comune di Catania (CT).",
+      "proponent": "TEP Renewables (ITALIA) S.r.l.",
+      "region": "Sicilia",
+      "province": "CT",
+      "municipalities": "CATANIA",
+      "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
+      "power_mw": 69.825,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12170",
+      "updated_at": "2026-09-28T13:14:11.922400",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto fotovoltaico denominato \"A92.IT.19.SC.SIGONELLA\" di potenza pari a 69,825 MW e delle relative opere di connessione alla RTN da realizzarsi nel Comune di Catania (CT)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/12170"
+      ],
+      "project_key": "url:6d0e4294940294bb"
+    },
+    {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
       "title": "Impianto agrivoltaico \"Lugo\" da 69.423,2 kWp ed opere connesse",
       "proponent": "Concetto Green S.r.l.",
       "region": "Emilia-Romagna",
@@ -7676,7 +7738,7 @@
       "power_mw": 55.55,
       "status": "",
       "url": "https://www.va.regione.umbria.it/web/3852172/1126/-/asset_publisher/dI3c1OTrJk2U/content/94-2026-003?read_more=true",
-      "updated_at": "2026-05-15T15:03:58.877190",
+      "updated_at": "2026-09-28T13:12:54.985185",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -9513,7 +9575,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-09-24T08:28:02.502206",
+      "updated_at": "2026-09-28T13:04:45.965166",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -13160,13 +13222,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "mase"
+        "mase",
+        "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
-        "Progetto di un impianto fotovoltaico di superficie pari a 48,6 ha costituito da tracker monoassiali, strutture fisse e strutture su parete (37,6 MWp) presso la ex cava di tufo in località \"Quadro\" nel Comune di Riano (RM) con cavidotto e SEU nel Comune di Roma."
+        "Progetto di un impianto fotovoltaico di superficie pari a 48,6 ha costituito da tracker monoassiali, strutture fisse e strutture su parete (37,6 MWp) presso la ex cava di tufo in località \"Quadro\" nel Comune di Riano (RM) con cavidotto e SEU nel Comune di Roma.",
+        "Verifica di Assoggettabilità a VIA (PNIEC-PNRR): Progetto di un impianto fotovoltaico di superficie pari a 48,6 ha costituito da tracker monoassiali, strutture fisse e strutture su parete (37,6 MWp) presso la ex cava di tufo in località \"Quadro\" nel Comune"
       ],
       "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6447",
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11942"
       ],
       "project_key": "url:18d3750fa2482c49"
@@ -13387,6 +13452,37 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/8220"
       ],
       "project_key": "url:30615397219c37f9"
+    },
+    {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Modifica progettuale delle opere di connessione alla Rete di Trasmissione Nazionale (RTN) dell'impianto fotovoltaico su cava non suscettibile di ulteriore sfruttamento denominato \"PVC001 Ruvo Jazzo de Rei\", della potenza di 37 MW da realizzarsi nei comuni di Ruvo di Puglia (BA), Bitonto (BA) e Terlizzi (BA)",
+      "proponent": "Santa Barbara Energia S.r.l.",
+      "region": "Puglia",
+      "province": "BA",
+      "municipalities": "RUVO DI PUGLIA",
+      "project_type": "Verifica di Assoggettabilità a VIA (PNIEC-PNRR)",
+      "power_mw": 37.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12179",
+      "updated_at": "2026-09-28T13:14:11.922400",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Modifica progettuale delle opere di connessione alla Rete di Trasmissione Nazionale (RTN) dell'impianto fotovoltaico su cava non suscettibile di ulteriore sfruttamento denominato \"PVC001 Ruvo Jazzo de Rei\", della potenza di 37 MW da realizzarsi nei comuni di Ruvo di Puglia (BA), Bitonto (BA) e Terlizzi (BA)"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/12179"
+      ],
+      "project_key": "url:04b77fd892936279"
     },
     {
       "source": "mase",
@@ -15129,13 +15225,14 @@
       "_merged_sources": [
         "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 2,
+      "_dedupe_group_size": 3,
       "_dedupe_titles": [
         "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrivoltaico, denominato \"Serravalle\", e delle relative opere necessarie per la connessione alla rete elettrica e delle opere accessorie necessarie alla costruzione e"
       ],
       "_dedupe_urls": [
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6316",
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6349"
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6349",
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6446"
       ],
       "project_key": "url:0305c55131932e3c"
     },
@@ -17171,7 +17268,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-09-24T08:28:02.502206",
+      "updated_at": "2026-09-28T13:04:45.965166",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19403,7 +19500,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-09-24T08:28:02.502206",
+      "updated_at": "2026-09-28T13:04:45.965166",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -28991,7 +29088,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-09-24T08:28:02.502206",
+      "updated_at": "2026-09-28T13:04:45.965166",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29332,7 +29429,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-09-24T08:28:02.502206",
+      "updated_at": "2026-09-28T13:04:45.965166",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -32308,7 +32405,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-09-24T08:28:02.502206",
+      "updated_at": "2026-09-28T13:04:45.965166",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -43513,7 +43610,7 @@
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-09-24T08:30:15.703055",
+      "updated_at": "2026-09-28T13:07:01.023158",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -48614,6 +48711,37 @@
       "project_key": "url:ef53781cec815a38"
     },
     {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Variante locale dell'Elettrodotto aereo ad Alta Tensione (AT 380 kV) di connessione alla RTN (tratto compreso tra i sostegni n. 25 e n. 28) a servizio dell'Impianto Fotovoltaico denominato 'Castel di Iudica' da 331,2 MWp.",
+      "proponent": "IBVI 8 S.R.L.",
+      "region": "Sicilia",
+      "province": "CT",
+      "municipalities": "",
+      "project_type": "Fotovoltaico",
+      "power_mw": 331.2,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12177",
+      "updated_at": "2026-09-28T13:14:11.922400",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Variante locale dell'Elettrodotto aereo ad Alta Tensione (AT 380 kV) di connessione alla RTN (tratto compreso tra i sostegni n. 25 e n. 28) a servizio dell'Impianto Fotovoltaico denominato 'Castel di Iudica' da 331,2 MWp."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/12177"
+      ],
+      "project_key": "url:c9fa33e4796d27ff"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -49171,47 +49299,16 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11828"
       ],
       "project_key": "url:8ba7e17dd9b9169d"
-    },
-    {
-      "source": "lazio",
-      "source_group": "lazio",
-      "source_label": "Lazio",
-      "title": "Impianto fotovoltaico a terra della potenza di circa 150 MWp connesso alla RTN in loc. Pian di Vico Determinazione n. G01048 del 06/02/2019 - Favorevole con prescrizioni Provvedimento Autorizzatorio Unico Regionale G03751 del 29/03/2019 Favorevole con Prescrizioni",
-      "proponent": "DCS SRL",
-      "region": "Lazio",
-      "province": "VT",
-      "municipalities": "Tuscania",
-      "project_type": "VIA",
-      "power_mw": 150.0,
-      "status": "",
-      "url": "https://regionelazio.app.box.com/v/015-2018",
-      "updated_at": "2026-05-01T19:18:12.958879",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "lazio"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "Impianto fotovoltaico a terra della potenza di circa 150 MWp connesso alla RTN in loc. Pian di Vico Determinazione n. G01048 del 06/02/2019 - Favorevole con prescrizioni Provvedimento Autorizzatorio Unico Regionale G03751 del 29/03/2019 Favorevole con Prescrizioni"
-      ],
-      "_dedupe_urls": [
-        "https://regionelazio.app.box.com/v/015-2018"
-      ],
-      "project_key": "url:135cf87f4326d01d"
     }
   ],
   "data_quality": {
-    "generated_at": "2026-09-24T10:43:30",
+    "generated_at": "2026-09-28T15:19:27",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1902,
-    "records_after": 1695,
-    "merged_or_removed": 207,
-    "accepted_pairs": 297,
-    "rejected_pairs": 674,
+    "records_before": 1907,
+    "records_after": 1698,
+    "merged_or_removed": 209,
+    "accepted_pairs": 300,
+    "rejected_pairs": 675,
     "field_repairs": 63,
     "manual_actions": 10,
     "manual_proponent_overrides": 10,
@@ -49239,13 +49336,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-09-24T10:44:00",
+      "generated_at": "2026-09-28T15:19:42",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-09-24T10:44:30"
+    "derived_fields_rebuilt_at": "2026-09-28T15:20:16"
   }
 }
