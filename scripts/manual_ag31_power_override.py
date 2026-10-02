@@ -7,8 +7,18 @@ from datetime import datetime
 from pathlib import Path
 
 
-TARGET_URL = "https://sharing.regione.veneto.it/index.php/s/BzD8WZqGbZo9tGR"
-CORRECT_POWER_MW = 16.863
+POWER_OVERRIDES = [
+    {
+        "url": "https://sharing.regione.veneto.it/index.php/s/BzD8WZqGbZo9tGR",
+        "power_mw": 16.863,
+        "reason": "manual_documented_power_override",
+    },
+    {
+        "url": "https://sharing.regione.veneto.it/index.php/s/gqPrcsFPdCmezt6",
+        "power_mw": 21.13886,
+        "reason": "official_application_states_21_138_86_kwp",
+    },
+]
 
 
 def main() -> int:
@@ -26,19 +36,38 @@ def main() -> int:
     data = json.loads(data_path.read_text(encoding="utf-8"))
     records = data.get("records", [])
 
-    matches = [
-        r for r in records
-        if str(r.get("url") or "").strip() == TARGET_URL
-    ]
+    audit_rows = []
+    timestamp = datetime.now().isoformat(timespec="seconds")
 
-    if len(matches) != 1:
-        raise SystemExit(
-            f"ERRORE: trovati {len(matches)} record AG 31; atteso esattamente 1"
-        )
+    for override in POWER_OVERRIDES:
+        target_url = override["url"]
+        correct_power_mw = override["power_mw"]
 
-    record = matches[0]
-    old_power = record.get("power_mw")
-    record["power_mw"] = CORRECT_POWER_MW
+        matches = [
+            record
+            for record in records
+            if str(record.get("url") or "").strip() == target_url
+        ]
+
+        if len(matches) != 1:
+            raise SystemExit(
+                f"ERRORE: trovati {len(matches)} record AG 31 per {target_url}; "
+                "atteso esattamente 1"
+            )
+
+        record = matches[0]
+        old_power = record.get("power_mw")
+        record["power_mw"] = correct_power_mw
+
+        audit_rows.append({
+            "timestamp": timestamp,
+            "title": record.get("title", ""),
+            "proponent": record.get("proponent", ""),
+            "old_power_mw": old_power,
+            "new_power_mw": correct_power_mw,
+            "url": target_url,
+            "reason": override["reason"],
+        })
 
     data_path.write_text(
         json.dumps(data, ensure_ascii=False, indent=2),
@@ -47,24 +76,21 @@ def main() -> int:
 
     audit_path.parent.mkdir(parents=True, exist_ok=True)
 
-    row = {
-        "timestamp": datetime.now().isoformat(timespec="seconds"),
-        "title": record.get("title", ""),
-        "proponent": record.get("proponent", ""),
-        "old_power_mw": old_power,
-        "new_power_mw": CORRECT_POWER_MW,
-        "url": TARGET_URL,
-        "reason": "manual_documented_power_override",
-    }
-
-    with audit_path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(row.keys()))
+    with audit_path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=list(audit_rows[0].keys()),
+        )
         writer.writeheader()
-        writer.writerow(row)
+        writer.writerows(audit_rows)
 
-    print("[ag31-power-override] record corretti: 1")
-    print("[ag31-power-override] vecchia potenza:", old_power)
-    print("[ag31-power-override] nuova potenza:", CORRECT_POWER_MW)
+    print("[ag31-power-override] record corretti:", len(audit_rows))
+    for row in audit_rows:
+        print(
+            "[ag31-power-override]",
+            row["url"],
+            f"{row['old_power_mw']} -> {row['new_power_mw']} MW",
+        )
 
     return 0
 
