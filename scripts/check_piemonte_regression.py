@@ -2,7 +2,8 @@ from __future__ import annotations
 
 from bs4 import BeautifulSoup
 
-from app.collectors.piemonte import PiemonteCollector
+from app.collectors.piemonte import PiemonteCollector, START_URL
+from app.pipeline import build_project_key
 
 
 EXPECTED_ACTIVE_CODES = {
@@ -51,6 +52,63 @@ def main() -> int:
     if by_code["2025-87/VI"]["power"] != "3,45 MWp":
         raise SystemExit(
             "Piemonte regression: parsing potenza agrivoltaico 2025-87/VI errato"
+        )
+
+    external_ids = {
+        collector._build_external_id(by_code[code])
+        for code in EXPECTED_ACTIVE_CODES
+    }
+    if len(external_ids) != len(EXPECTED_ACTIVE_CODES):
+        raise SystemExit(
+            "Piemonte regression: external_id non distingue tutte le pratiche"
+        )
+
+    status_variant = dict(by_code["2025-144/VI"])
+    status_variant["status"] = "CONCLUSA"
+    if collector._build_external_id(status_variant) != collector._build_external_id(
+        by_code["2025-144/VI"]
+    ):
+        raise SystemExit(
+            "Piemonte regression: external_id cambia al variare dello stato"
+        )
+
+    if collector._extract_proponent(
+        "IMPIANTO AGRIVOLTAICO POTENZA NOMINALE (DC) 3,45 MWp - "
+        "POTENZA IN IMMISSIONE (AC) 2,575 MW"
+    ) is not None:
+        raise SystemExit(
+            "Piemonte regression: una potenza è stata interpretata come proponente"
+        )
+
+    project_keys = {
+        build_project_key(
+            project_name=by_code[code]["title"],
+            proponent=by_code[code]["proponent"],
+            region="Piemonte",
+            municipalities=by_code[code]["municipality"],
+            power_mw=None,
+            source_url=None,
+            external_id=collector._build_external_id(by_code[code]),
+        )
+        for code in EXPECTED_ACTIVE_CODES
+    }
+    if len(project_keys) != len(EXPECTED_ACTIVE_CODES):
+        raise SystemExit(
+            "Piemonte regression: project_key esterna non distingue le pratiche"
+        )
+
+    legacy_url_key = build_project_key(
+        project_name=None,
+        proponent=None,
+        region=None,
+        municipalities=None,
+        power_mw=None,
+        source_url=START_URL,
+        external_id=None,
+    )
+    if legacy_url_key in project_keys:
+        raise SystemExit(
+            "Piemonte regression: project_key corretto coincide col legacy URL key"
         )
 
     if collector._negative_outcome_marker("Procedimento concluso con esito negativo") is None:
