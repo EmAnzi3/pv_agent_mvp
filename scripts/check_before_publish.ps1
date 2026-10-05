@@ -88,15 +88,29 @@ if (Test-Path "index.html") {
 }
 
 if (-not $SkipTests) {
+    $pythonCmd = $null
+    if (Test-Path ".venv\Scripts\python.exe") {
+        $pythonCmd = ".\.venv\Scripts\python.exe"
+    } elseif (Get-Command python -ErrorAction SilentlyContinue) {
+        $pythonCmd = "python"
+    }
+
+    if (Test-Path "scripts\check_piemonte_regression.py") {
+        if ($pythonCmd) {
+            Info "eseguo regression check Piemonte"
+            & $pythonCmd "scripts\check_piemonte_regression.py"
+            if ($LASTEXITCODE -ne 0) {
+                Fail "regression check Piemonte ha restituito errore"
+            } else {
+                Ok "regression check Piemonte completato"
+            }
+        } else {
+            Fail "python non trovato per regression check Piemonte"
+        }
+    }
+
     $hasPytestSignals = (Test-Path "tests") -or (Test-Path "pytest.ini")
     if ($hasPytestSignals) {
-        $pythonCmd = $null
-        if (Test-Path ".venv\Scripts\python.exe") {
-            $pythonCmd = ".\.venv\Scripts\python.exe"
-        } elseif (Get-Command python -ErrorAction SilentlyContinue) {
-            $pythonCmd = "python"
-        }
-
         if ($pythonCmd) {
             Info "eseguo pytest"
             & $pythonCmd -m pytest

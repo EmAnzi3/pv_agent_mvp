@@ -10,6 +10,10 @@ Esecuzione locale tramite aggiorna_dashboard_senza_docker.bat; raccolta fonti; n
 
 Le correzioni geografiche MASE protette vengono applicate anche dentro `app.run_pipeline`, dopo data quality/enrichment e prima di `app.dashboard_data_sync`, così il gate finale verifica dati già corretti anche quando la pipeline viene eseguita standalone.
 
+Per Piemonte SKVIA la ricerca deve simulare il click reale sul pulsante `Ricerca` e non il semplice submit/Invio della form. La query non deve essere limitata a `REGIONE PIEMONTE`, perché l'archivio restituisce anche pratiche di `SOGGETTO GESTORE RN2000`. Le pratiche concluse vengono escluse solo quando nel dettaglio è presente evidenza esplicita di esito negativo.
+
+Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il run del 05/10/2026, prima ancora del parsing. Fino alla stabilizzazione Piemonte va provato separatamente con `test_piemonte_solo.bat`, che non modifica database né output pubblicati e confronta anche la raggiungibilità del nuovo endpoint pubblico SCRIVA.
+
 ## File e cartelle critiche
 
 - aggiorna_dashboard_senza_docker.bat
@@ -37,12 +41,14 @@ Le correzioni geografiche MASE protette vengono applicate anche dentro `app.run_
 
 ## Problemi aperti
 
-- Da compilare.
+- Dataset finale 05/10/2026 15:09: baseline Piemonte distinta e completa; residuo unico osservato: Isola Sant'Antonio ancora con provincia `DC` perché il valore errato era già persistito nel DB prima della correzione del parser. La migrazione pre-run ora ripara/azzera le province Piemonte non valide e il gate finale blocca il batch se la baseline o le province risultano errate.
+- Probe isolato Piemonte del 05/10/2026: PASS. Collector live = 17 record; baseline RN2000 completa (`2024-20/VI`, `2025-140/VI`, `2025-144/VI`, `2026-118/VI`, `2025-87/VI`).
+- Run globale del 05/10/2026: FAIL logico sul Piemonte. I 17 record del collector venivano collassati a valle perché condividevano il medesimo URL archivio; il report mostrava un record ibrido con localizzazione/potenza/proponente provenienti da pratiche diverse. Correzione in corso sulla PR #3: chiave stabile da autorità+codice pratica, strategia project_key basata su external_id e migrazione idempotente della vecchia chiave URL collassata.
 
 ## Prossimo passo consigliato
 
-1. Eseguire `.\scripts\check_before_publish.ps1`.
-2. Controllare `git status` e `git diff --check`.
-3. Aggiornare questa pagina se cambia il workflow.
-4. Committare con messaggio piccolo e tematico.
+1. Fare Fetch origin sul branch `fix/piemonte-search-button-rn2000`.
+2. Rieseguire una volta il batch globale: la migrazione correggerà il valore storico `DC` già presente nel DB.
+3. Il gate finale verifica automaticamente i cinque record baseline, le province Piemonte e l'assenza di proponenti derivati da frammenti di potenza.
+4. Se il batch chiude con `[run-pipeline] OK`, procedere al merge della PR #3.
 

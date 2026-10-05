@@ -4,6 +4,7 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-05 — Rafforzato il collector Piemonte SKVIA: ricerca tramite l'evento reale del pulsante `Ricerca`, rimosso il filtro esclusivo `REGIONE PIEMONTE` per acquisire anche `SOGGETTO GESTORE RN2000`, ed esclusione dei procedimenti conclusi quando il dettaglio contiene un esito esplicitamente negativo. Aggiunto regression check sui record mancanti rilevati manualmente.
 - 2026-10-02 — Aggiunta correzione documentata della potenza per il nuovo progetto AG 31 di Castagnaro: 21,13886 MWp (21.138,86 kWp), mantenendo l'override AG 31 esistente.
 - 2026-09-10 — Corretta e protetta la localizzazione di Sesto al Reghena: PN / Friuli-Venezia Giulia indipendentemente dall'URL MASE; la correzione viene applicata prima del gate bloccante sia nella pipeline standalone sia nel batch completo.
 - 2026-06-02 — Aggiunti file minimi di manutenzione repository: `CURRENT_STATE.md`, `AGENTS.md`, `CHANGELOG.md` e `scripts/check_before_publish.ps1`.
