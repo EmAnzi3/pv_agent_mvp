@@ -61,6 +61,11 @@ def main() -> int:
             "Piemonte regression: parsing potenza agrivoltaico 2025-87/VI errato"
         )
 
+    if by_code["2025-87/VI"]["province"] is not None:
+        raise SystemExit(
+            "Piemonte regression: (DC)/(AC) interpretato erroneamente come provincia"
+        )
+
     external_ids = {
         collector._build_external_id(by_code[code])
         for code in EXPECTED_ACTIVE_CODES
