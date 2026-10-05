@@ -41,13 +41,14 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 
 ## Problemi aperti
 
+- Dataset finale 05/10/2026 15:09: baseline Piemonte distinta e completa; residuo unico osservato: Isola Sant'Antonio ancora con provincia `DC` perché il valore errato era già persistito nel DB prima della correzione del parser. La migrazione pre-run ora ripara/azzera le province Piemonte non valide e il gate finale blocca il batch se la baseline o le province risultano errate.
 - Probe isolato Piemonte del 05/10/2026: PASS. Collector live = 17 record; baseline RN2000 completa (`2024-20/VI`, `2025-140/VI`, `2025-144/VI`, `2026-118/VI`, `2025-87/VI`).
 - Run globale del 05/10/2026: FAIL logico sul Piemonte. I 17 record del collector venivano collassati a valle perché condividevano il medesimo URL archivio; il report mostrava un record ibrido con localizzazione/potenza/proponente provenienti da pratiche diverse. Correzione in corso sulla PR #3: chiave stabile da autorità+codice pratica, strategia project_key basata su external_id e migrazione idempotente della vecchia chiave URL collassata.
 
 ## Prossimo passo consigliato
 
 1. Fare Fetch origin sul branch `fix/piemonte-search-button-rn2000`.
-2. Rieseguire il batch globale dopo la correzione della chiave Piemonte.
-3. Verificare che i cinque codici RN2000 risultino come record distinti e che non compaiano proponenti derivati da frammenti di potenza.
-4. Se la run globale è verde, eseguire `.\scripts\check_before_publish.ps1` e procedere al merge della PR #3.
+2. Rieseguire una volta il batch globale: la migrazione correggerà il valore storico `DC` già presente nel DB.
+3. Il gate finale verifica automaticamente i cinque record baseline, le province Piemonte e l'assenza di proponenti derivati da frammenti di potenza.
+4. Se il batch chiude con `[run-pipeline] OK`, procedere al merge della PR #3.
 
