@@ -44,7 +44,7 @@ Per Piemonte SKVIA la ricerca deve simulare il click reale sul pulsante `Ricerca
 ## Prossimo passo consigliato
 
 1. Eseguire `.\scripts\check_before_publish.ps1`.
-2. Controllare `git status` e `git diff --check`.
-3. Aggiornare questa pagina se cambia il workflow.
-4. Committare con messaggio piccolo e tematico.
+2. Eseguire il batch completo e verificare il report Piemonte contro i cinque codici RN2000 di riferimento.
+3. Controllare che eventuali pratiche concluse con esito esplicitamente negativo siano escluse.
+4. Controllare `git status` e `git diff --check` prima della pubblicazione.
 
