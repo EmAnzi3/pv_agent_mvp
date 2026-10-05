@@ -556,9 +556,15 @@ class PiemonteCollector(BaseCollector):
         if not text:
             return None
 
-        m = re.search(r"\(([A-Z]{2})\)", text)
-        if m:
-            return m.group(1)
+        piemonte_codes = {"AL", "AT", "BI", "CN", "NO", "TO", "VB", "VC"}
+
+        # Nei titoli tecnici compaiono anche sigle come (DC) e (AC):
+        # non sono province. Accettiamo tra parentesi solo codici provinciali
+        # piemontesi effettivi.
+        for m in re.finditer(r"\(([A-Z]{2})\)", text):
+            code = m.group(1)
+            if code in piemonte_codes:
+                return code
 
         province_names = {
             "ALESSANDRIA": "AL",
