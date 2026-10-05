@@ -41,12 +41,13 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 
 ## Problemi aperti
 
-- Probe isolato Piemonte del 05/10/2026: PASS. Collector live = 17 record; baseline RN2000 completa (`2024-20/VI`, `2025-140/VI`, `2025-144/VI`, `2026-118/VI`, `2025-87/VI`). Resta da validare una run completa del batch globale prima del merge.
+- Probe isolato Piemonte del 05/10/2026: PASS. Collector live = 17 record; baseline RN2000 completa (`2024-20/VI`, `2025-140/VI`, `2025-144/VI`, `2026-118/VI`, `2025-87/VI`).
+- Run globale del 05/10/2026: FAIL logico sul Piemonte. I 17 record del collector venivano collassati a valle perché condividevano il medesimo URL archivio; il report mostrava un record ibrido con localizzazione/potenza/proponente provenienti da pratiche diverse. Correzione in corso sulla PR #3: chiave stabile da autorità+codice pratica, strategia project_key basata su external_id e migrazione idempotente della vecchia chiave URL collassata.
 
 ## Prossimo passo consigliato
 
-1. Eseguire il batch globale sul branch `fix/piemonte-search-button-rn2000`.
-2. Verificare che il collector Piemonte completi senza errore e che il dataset includa la baseline RN2000 validata.
-3. Controllare che eventuali pratiche concluse con esito esplicitamente negativo siano escluse.
+1. Fare Fetch origin sul branch `fix/piemonte-search-button-rn2000`.
+2. Rieseguire il batch globale dopo la correzione della chiave Piemonte.
+3. Verificare che i cinque codici RN2000 risultino come record distinti e che non compaiano proponenti derivati da frammenti di potenza.
 4. Se la run globale è verde, eseguire `.\scripts\check_before_publish.ps1` e procedere al merge della PR #3.
 
