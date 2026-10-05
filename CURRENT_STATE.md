@@ -10,6 +10,8 @@ Esecuzione locale tramite aggiorna_dashboard_senza_docker.bat; raccolta fonti; n
 
 Le correzioni geografiche MASE protette vengono applicate anche dentro `app.run_pipeline`, dopo data quality/enrichment e prima di `app.dashboard_data_sync`, così il gate finale verifica dati già corretti anche quando la pipeline viene eseguita standalone.
 
+Per Piemonte SKVIA la ricerca deve simulare il click reale sul pulsante `Ricerca` e non il semplice submit/Invio della form. La query non deve essere limitata a `REGIONE PIEMONTE`, perché l'archivio restituisce anche pratiche di `SOGGETTO GESTORE RN2000`. Le pratiche concluse vengono escluse solo quando nel dettaglio è presente evidenza esplicita di esito negativo.
+
 ## File e cartelle critiche
 
 - aggiorna_dashboard_senza_docker.bat
@@ -37,7 +39,7 @@ Le correzioni geografiche MASE protette vengono applicate anche dentro `app.run_
 
 ## Problemi aperti
 
-- Da compilare.
+- Validare con il prossimo run live Piemonte il recupero dei record RN2000 individuati manualmente: `2024-20/VI`, `2025-140/VI`, `2025-144/VI`, `2026-118/VI`, `2025-87/VI`.
 
 ## Prossimo passo consigliato
 
