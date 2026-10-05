@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-10-02 16:44:48",
-    "snapshot_file": "projects_snapshot_20261002_144309.csv",
-    "total_records": 1534,
-    "punctual_records": 1452,
+    "generated_at": "2026-10-05 16:02:06",
+    "snapshot_file": "projects_snapshot_20261005_140009.csv",
+    "total_records": 1550,
+    "punctual_records": 1468,
     "terna_records": 82,
-    "total_mw_punctual": 40982.177,
+    "total_mw_punctual": 41204.825,
     "total_mw_terna": 139880.808,
     "source_counts": [
       {
@@ -16,12 +16,12 @@
       {
         "source": "mase",
         "label": "MASE",
-        "count": 295
+        "count": 297
       },
       {
         "source": "toscana",
         "label": "Toscana",
-        "count": 291
+        "count": 292
       },
       {
         "source": "sicilia",
@@ -46,7 +46,7 @@
       {
         "source": "emilia_romagna",
         "label": "Emilia-Romagna",
-        "count": 32
+        "count": 33
       },
       {
         "source": "veneto",
@@ -64,6 +64,11 @@
         "count": 15
       },
       {
+        "source": "piemonte",
+        "label": "Piemonte",
+        "count": 13
+      },
+      {
         "source": "campania",
         "label": "Campania",
         "count": 9
@@ -77,11 +82,6 @@
         "source": "sardegna",
         "label": "Sardegna",
         "count": 5
-      },
-      {
-        "source": "piemonte",
-        "label": "Piemonte",
-        "count": 1
       }
     ],
     "regions": [
@@ -117,13 +117,13 @@
       },
       {
         "region": "Toscana",
-        "punctual_count": 295,
-        "punctual_mw": 4729.363,
+        "punctual_count": 296,
+        "punctual_mw": 4770.103,
         "terna_count": 5,
         "terna_mw": 4839.763,
         "terna_practices": 0,
-        "total_mw": 9569.126,
-        "priority_score": 20.4
+        "total_mw": 9609.866,
+        "priority_score": 20.5
       },
       {
         "region": "Lombardia",
@@ -137,23 +137,23 @@
       },
       {
         "region": "Emilia-Romagna",
-        "punctual_count": 48,
-        "punctual_mw": 2113.449,
+        "punctual_count": 49,
+        "punctual_mw": 2173.121,
         "terna_count": 5,
         "terna_mw": 7793.866,
         "terna_practices": 0,
-        "total_mw": 9907.315,
-        "priority_score": 6.1
+        "total_mw": 9966.987,
+        "priority_score": 6.2
       },
       {
         "region": "Sardegna",
-        "punctual_count": 29,
-        "punctual_mw": 1096.829,
+        "punctual_count": 30,
+        "punctual_mw": 1169.829,
         "terna_count": 5,
         "terna_mw": 15470.145,
         "terna_practices": 0,
-        "total_mw": 16566.974,
-        "priority_score": 5.6
+        "total_mw": 16639.974,
+        "priority_score": 5.8
       },
       {
         "region": "Basilicata",
@@ -167,13 +167,13 @@
       },
       {
         "region": "Veneto",
-        "punctual_count": 33,
-        "punctual_mw": 1397.299,
+        "punctual_count": 34,
+        "punctual_mw": 1438.368,
         "terna_count": 5,
         "terna_mw": 5872.546,
         "terna_practices": 0,
-        "total_mw": 7269.845,
-        "priority_score": 4.2
+        "total_mw": 7310.914,
+        "priority_score": 4.3
       },
       {
         "region": "Campania",
@@ -197,13 +197,13 @@
       },
       {
         "region": "Piemonte",
-        "punctual_count": 8,
-        "punctual_mw": 190.616,
+        "punctual_count": 20,
+        "punctual_mw": 198.783,
         "terna_count": 5,
         "terna_mw": 3742.605,
         "terna_practices": 0,
-        "total_mw": 3933.221,
-        "priority_score": 1.3
+        "total_mw": 3941.388,
+        "priority_score": 1.9
       },
       {
         "region": "Friuli-Venezia Giulia",
@@ -900,13 +900,13 @@
       ]
     },
     "quality": {
-      "punctual_records": 1452,
-      "missing_mw": 129,
+      "punctual_records": 1468,
+      "missing_mw": 139,
       "missing_region": 0,
       "missing_province": 6,
       "missing_municipality": 17,
       "missing_url": 0,
-      "province_deduced": 37,
+      "province_deduced": 48,
       "municipalities_deduced": 4
     },
     "quality_by_source": [
@@ -924,18 +924,18 @@
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 295,
+        "count": 297,
         "missing_mw": 1,
         "missing_province": 0,
         "missing_municipality": 3,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 99.5
+        "completeness_pct": 99.6
       },
       {
         "source": "toscana",
         "source_label": "Toscana",
-        "count": 291,
+        "count": 292,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -990,7 +990,7 @@
       {
         "source": "emilia_romagna",
         "source_label": "Emilia-Romagna",
-        "count": 32,
+        "count": 33,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -1032,6 +1032,17 @@
         "completeness_pct": 100.0
       },
       {
+        "source": "piemonte",
+        "source_label": "Piemonte",
+        "count": 13,
+        "missing_mw": 11,
+        "missing_province": 0,
+        "missing_municipality": 0,
+        "province_deduced": 11,
+        "municipalities_deduced": 0,
+        "completeness_pct": 71.8
+      },
+      {
         "source": "campania",
         "source_label": "Campania",
         "count": 9,
@@ -1063,17 +1074,6 @@
         "province_deduced": 1,
         "municipalities_deduced": 0,
         "completeness_pct": 86.7
-      },
-      {
-        "source": "piemonte",
-        "source_label": "Piemonte",
-        "count": 1,
-        "missing_mw": 1,
-        "missing_province": 0,
-        "missing_municipality": 0,
-        "province_deduced": 0,
-        "municipalities_deduced": 0,
-        "completeness_pct": 66.7
       }
     ]
   },
@@ -5020,6 +5020,37 @@
       "project_key": "url:df05be60c19f42eb"
     },
     {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un nuovo impianto fotovoltaico della potenza nominale di 73 MW, denominato \"Sassari 01\", con annesso impianto di accumulo energetico della potenza di 120 MW e relative opere di connessione alla rete, ubicato nei Comuni di Sassari (SS) e Porto Torres (SS) su una superficie di ca. 115 ha. Il progetto prevede l'implementazione di un biomonitoraggio tramite apicoltura.",
+      "proponent": "W SASSARI 01 S.r.l.",
+      "region": "Sardegna",
+      "province": "SS",
+      "municipalities": "SASSARI",
+      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
+      "power_mw": 73.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8020",
+      "updated_at": "2026-10-05T13:56:24.397880",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un nuovo impianto fotovoltaico della potenza nominale di 73 MW, denominato \"Sassari 01\", con annesso impianto di accumulo energetico della potenza di 120 MW e relative opere di connessione alla rete, ubicato nei Comuni di Sassari (SS) e Porto Torres (SS) su una superficie di ca. 115 ha. Il progetto prevede l'implementazione di un biomonitoraggio tramite apicoltura."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8020"
+      ],
+      "project_key": "url:b04c59068e24ffcc"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -7131,6 +7162,37 @@
         "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63258"
       ],
       "project_key": "url:5fa93021bab0ec13"
+    },
+    {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "ARPAE: IMPIANTO SOLARE AGRIVOLTAICO DI POTENZA 59,67221 MWP E RELATIVE OPERE CONNESSE. LOCALIZZATO NEI COMUNI DI CASTEL SAN GIOVANNI E BORGONOVO VAL TIDONE",
+      "proponent": "Edera S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "PC",
+      "municipalities": "Castel San Giovanni, Borgonovo Val Tidone",
+      "project_type": "VIA",
+      "power_mw": 59.672,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7047",
+      "updated_at": "2026-10-05T08:19:57.473709",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "ARPAE: IMPIANTO SOLARE AGRIVOLTAICO DI POTENZA 59,67221 MWP E RELATIVE OPERE CONNESSE. LOCALIZZATO NEI COMUNI DI CASTEL SAN GIOVANNI E BORGONOVO VAL TIDONE"
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7047"
+      ],
+      "project_key": "url:b58fe9589b528d0d"
     },
     {
       "source": "toscana_atos",
@@ -9637,7 +9699,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-10-02T14:32:13.103396",
+      "updated_at": "2026-10-05T13:46:34.841520",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -11991,6 +12053,37 @@
       "project_key": "url:0d2f9aab8a1e0327"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrifotovoltaico a terra connesso alla rete elettrica per vendita di energia di potenza pari a 41068,80 kWp su area sita in comune di Trecenta (RO) via Adolfo Azzi, S",
+      "proponent": "AIEM GREEN S.R.L.",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Trecenta",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 41.069,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6462",
+      "updated_at": "2026-10-05T14:00:03.368395",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto agrifotovoltaico a terra connesso alla rete elettrica per vendita di energia di potenza pari a 41068,80 kWp su area sita in comune di Trecenta (RO) via Adolfo Azzi, S"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6462"
+      ],
+      "project_key": "url:47d77e804d6a48df"
+    },
+    {
       "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
@@ -12175,6 +12268,37 @@
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12199"
       ],
       "project_key": "prj:047bac344c74c688"
+    },
+    {
+      "source": "toscana",
+      "source_group": "toscana",
+      "source_label": "Toscana",
+      "title": "[ID 2731] Progetto relativo all'impianto agrivoltaico denominato \"Laurus\" di potenza nominale 40,74 MWp e delle relative opere di connessione, ubicato su Strada delle Strillaie nel Comune di Grosseto (GR). Proponente: Auriga S.r.l.",
+      "proponent": "Auriga",
+      "region": "Toscana",
+      "province": "GR",
+      "municipalities": "GROSSETO",
+      "project_type": "Verifica di Assoggettabilità a VIA",
+      "power_mw": 40.74,
+      "status": "",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/272",
+      "updated_at": "2026-10-05T13:48:19.727952",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "toscana"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "[ID 2731] Progetto relativo all'impianto agrivoltaico denominato \"Laurus\" di potenza nominale 40,74 MWp e delle relative opere di connessione, ubicato su Strada delle Strillaie nel Comune di Grosseto (GR). Proponente: Auriga S.r.l."
+      ],
+      "_dedupe_urls": [
+        "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=272"
+      ],
+      "project_key": "url:819d308effefb646"
     },
     {
       "source": "sicilia",
@@ -17392,7 +17516,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-10-02T14:32:13.103396",
+      "updated_at": "2026-10-05T13:46:34.841520",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19655,7 +19779,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-10-02T14:32:13.103396",
+      "updated_at": "2026-10-05T13:46:34.841520",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -24305,7 +24429,7 @@
       "power_mw": 14.5,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=14934&idProvenienza=2",
-      "updated_at": "2026-07-29T13:16:25.092035",
+      "updated_at": "2026-10-05T09:04:19.666120",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29274,7 +29398,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-10-02T14:32:13.103396",
+      "updated_at": "2026-10-05T13:46:34.841520",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29615,7 +29739,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-10-02T14:32:13.103396",
+      "updated_at": "2026-10-05T13:46:34.841520",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30948,7 +31072,7 @@
       "power_mw": 7.2,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=15112&idProvenienza=2",
-      "updated_at": "2026-07-29T13:16:25.092035",
+      "updated_at": "2026-10-05T09:04:19.666120",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -32591,7 +32715,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-10-02T14:32:13.103396",
+      "updated_at": "2026-10-05T13:46:34.841520",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -34877,6 +35001,37 @@
       "project_key": "url:b56fad13695215b0"
     },
     {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "Realizzazione impianto fotovoltaico a terra di potenza installata 4,7170 MWp denominato \"Trino Nord\" e potenza di immissione pari a 4,3 MW e opere di connessione alla rete MT",
+      "proponent": "",
+      "region": "Piemonte",
+      "province": "VC",
+      "municipalities": "TRINO",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": 4.717,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Realizzazione impianto fotovoltaico a terra di potenza installata 4,7170 MWp denominato \"Trino Nord\" e potenza di immissione pari a 4,3 MW e opere di connessione alla rete MT"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:41848457958a2ded"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -36363,6 +36518,37 @@
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12197"
       ],
       "project_key": "prj:4f2aca021f6ebc91"
+    },
+    {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "IMPIANTO AGRIVOLTAICO POTENZA NOMINALE (DC) 3,45 MWp - POTENZA IN IMMISSIONE (AC) 2,575 MW",
+      "proponent": "",
+      "region": "Piemonte",
+      "province": "AL",
+      "municipalities": "ISOLA SANT'ANTONIO",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": 3.45,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T13:31:25.066370",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "IMPIANTO AGRIVOLTAICO POTENZA NOMINALE (DC) 3,45 MWp - POTENZA IN IMMISSIONE (AC) 2,575 MW"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:8bc727304447947e"
     },
     {
       "source": "lazio",
@@ -43723,6 +43909,37 @@
       "project_key": "prj:87e353b67db0fe76"
     },
     {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "IMPIANTO FOTOVOLTAICO \"DRUENTO\"",
+      "proponent": "",
+      "region": "Piemonte",
+      "province": "TO",
+      "municipalities": "DRUENTO",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": null,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "IMPIANTO FOTOVOLTAICO \"DRUENTO\""
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:56bc76ee5746fe19"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -43792,16 +44009,16 @@
       "proponent": "FREA E FREA",
       "region": "Piemonte",
       "province": "CN",
-      "municipalities": "SANTA VITTORIA D'ALBA",
+      "municipalities": "BALDISSERO D'ALBA",
       "project_type": "Valutazione di incidenza",
       "power_mw": null,
       "status": "",
       "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
-      "updated_at": "2026-10-02T14:34:35.288656",
+      "updated_at": "2026-10-05T09:19:08.681934",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
-      "province_deduced": false,
+      "province_deduced": true,
       "municipalities_deduced": false,
       "_merged_sources": [
         "piemonte"
@@ -44964,6 +45181,37 @@
       "project_key": "prj:f5acea58ada7dba1"
     },
     {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "INSTALLAZIONE IMPIANTO FOTOVOLTAICO SULLE FALDE DEL TETTO DI COPERTURA DEI FABBRICATI ESISTENTI IN COMUNE DI SPIGNO MONFERRATO (AL)",
+      "proponent": "",
+      "region": "Piemonte",
+      "province": "AL",
+      "municipalities": "SPIGNO MONFERRATO",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": null,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "INSTALLAZIONE IMPIANTO FOTOVOLTAICO SULLE FALDE DEL TETTO DI COPERTURA DEI FABBRICATI ESISTENTI IN COMUNE DI SPIGNO MONFERRATO (AL)"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:f8554766961346a5"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -45181,6 +45429,37 @@
       "project_key": "prj:ad15dbcd1a322296"
     },
     {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "POSA DI IMPIANTO FOTOVOLTAICO SU COPERTURA STALLA E POSA CONTAINER PER ALLOGGIAMENTO INVERTER E BATTERIE",
+      "proponent": "",
+      "region": "Piemonte",
+      "province": "TO",
+      "municipalities": "NOLE",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": null,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "POSA DI IMPIANTO FOTOVOLTAICO SU COPERTURA STALLA E POSA CONTAINER PER ALLOGGIAMENTO INVERTER E BATTERIE"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:d31ce3b71dfac49f"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -45303,6 +45582,68 @@
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1650&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:2dc385c29723e06b"
+    },
+    {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "PROGETTO DEFINITIVO PER LA REALIZZAZIONE DI UN IMPIANTO FOTOVOLTAICO A TERRA",
+      "proponent": "",
+      "region": "Piemonte",
+      "province": "BI",
+      "municipalities": "CANDELO",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": null,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "PROGETTO DEFINITIVO PER LA REALIZZAZIONE DI UN IMPIANTO FOTOVOLTAICO A TERRA"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:29e0b222bfdcd10b"
+    },
+    {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "Progetto di impianto fotovoltaico a terra",
+      "proponent": "",
+      "region": "Piemonte",
+      "province": "AL",
+      "municipalities": "PECETTO DI VALENZA, VALENZA",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": null,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di impianto fotovoltaico a terra"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:6a6fab7c1f71510b"
     },
     {
       "source": "sicilia",
@@ -45709,6 +46050,68 @@
       "project_key": "url:f1e6c7c063c0cead"
     },
     {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "Q, FOTOVOLTAICO, SOC AGR MARTINI, SANFRè FRAZ. ACATTE, ZSC IT 1110012 BOSCHI E ROCCHE DEL ROERO",
+      "proponent": "SOC AGR MARTINI",
+      "region": "Piemonte",
+      "province": "CN",
+      "municipalities": "SANFRE'",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": null,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Q, FOTOVOLTAICO, SOC AGR MARTINI, SANFRè FRAZ. ACATTE, ZSC IT 1110012 BOSCHI E ROCCHE DEL ROERO"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:c0889a027c3cdfbb"
+    },
+    {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "Q, FOTOVOLTAICO, SOC AGR PIGNATA, SANFRè FRAZ. ACATTE, ZSC IT 1110012 BOSCHI E ROCCHE DEL ROERO",
+      "proponent": "SOC AGR PIGNATA",
+      "region": "Piemonte",
+      "province": "CN",
+      "municipalities": "SANFRE'",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": null,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Q, FOTOVOLTAICO, SOC AGR PIGNATA, SANFRè FRAZ. ACATTE, ZSC IT 1110012 BOSCHI E ROCCHE DEL ROERO"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:61c23ad41d432bca"
+    },
+    {
       "source": "veneto",
       "source_group": "veneto",
       "source_label": "Veneto",
@@ -45800,6 +46203,37 @@
         "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/18989"
       ],
       "project_key": "prj:ccd65e9222661205"
+    },
+    {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "REALIZZAZIONE DI IMPIANTO DI PRODUZIONE DI ENERGIA ELETTRICA A TERRA ALIMENTATA DA FONTI RINNOVABILI DENOMINATO PARCO AGRIVOLTAICO",
+      "proponent": "",
+      "region": "Piemonte",
+      "province": "TO",
+      "municipalities": "BORGARO TORINESE",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": null,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "REALIZZAZIONE DI IMPIANTO DI PRODUZIONE DI ENERGIA ELETTRICA A TERRA ALIMENTATA DA FONTI RINNOVABILI DENOMINATO PARCO AGRIVOLTAICO"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:839cd67f27706909"
     },
     {
       "source": "veneto",
@@ -46019,6 +46453,37 @@
       "project_key": "url:eb1e1cfc99145f1d"
     },
     {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "realizzazione impianto fotovoltaico a terra",
+      "proponent": "",
+      "region": "Piemonte",
+      "province": "AL",
+      "municipalities": "CASALE MONFERRATO",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": null,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "realizzazione impianto fotovoltaico a terra"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:23e38e75f30cbbf2"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -46079,6 +46544,37 @@
         "https://regionelazio.app.box.com/v/VIA-045-2024"
       ],
       "project_key": "url:e8ea45dd09a39d9c"
+    },
+    {
+      "source": "piemonte",
+      "source_group": "piemonte",
+      "source_label": "Piemonte",
+      "title": "S, IMPIANTO FOTOVOLTAICO Fossano Solar 2, TECNO RG S.R.L., FOSSANO CN, ZPS IT 1160059 ZONE UMIDE DI FOSSANO E SANT'ALBANO STURA, ANCHE PARCO",
+      "proponent": "TECNO RG S.R.L",
+      "region": "Piemonte",
+      "province": "CN",
+      "municipalities": "FOSSANO",
+      "project_type": "Valutazione di incidenza",
+      "power_mw": null,
+      "status": "",
+      "url": "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti",
+      "updated_at": "2026-10-05T09:19:08.681934",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "piemonte"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "S, IMPIANTO FOTOVOLTAICO Fossano Solar 2, TECNO RG S.R.L., FOSSANO CN, ZPS IT 1160059 ZONE UMIDE DI FOSSANO E SANT'ALBANO STURA, ANCHE PARCO"
+      ],
+      "_dedupe_urls": [
+        "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
+      ],
+      "project_key": "prj:4124801a401c41b8"
     },
     {
       "source": "sicilia",
@@ -49554,17 +50050,17 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-10-02T16:44:48",
+    "generated_at": "2026-10-05T16:02:06",
     "input_file": "reports\\site\\data.json",
-    "records_before": 1997,
-    "records_after": 1731,
-    "merged_or_removed": 266,
+    "records_before": 2017,
+    "records_after": 1747,
+    "merged_or_removed": 270,
     "accepted_pairs": 406,
     "rejected_pairs": 981,
-    "field_repairs": 64,
-    "manual_actions": 10,
+    "field_repairs": 68,
+    "manual_actions": 14,
     "manual_proponent_overrides": 10,
-    "manual_excluded_records": 0,
+    "manual_excluded_records": 4,
     "suspicious_rows": 4,
     "top_projects_excluded_suspicious": 4,
     "project_key_splits": 268,
@@ -49588,13 +50084,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-10-02T16:45:08",
+      "generated_at": "2026-10-05T16:02:31",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-10-02T16:45:39"
+    "derived_fields_rebuilt_at": "2026-10-05T16:03:08"
   }
 }
