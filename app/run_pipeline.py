@@ -259,6 +259,11 @@ def main() -> int:
 
     if not args.skip_main:
         run_step(
+            "migrazione chiave legacy Piemonte",
+            [py, "scripts/migrate_piemonte_legacy_project_key.py"],
+        )
+
+        run_step(
             "raccolta dati / export / dashboard grezza",
             [py, "-m", "app.main", "run-once"],
         )
