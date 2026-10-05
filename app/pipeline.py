@@ -538,13 +538,23 @@ class IngestionPipeline:
                         power_mw = parsed_power
                         break
 
+                project_key_strategy = normalize_text(
+                    payload.get("_project_key_strategy")
+                )
+
+                project_key_source_url = (
+                    None
+                    if project_key_strategy == "external_id"
+                    else item_url
+                )
+
                 project_key = build_project_key(
                     project_name=project_name,
                     proponent=proponent,
                     region=region,
                     municipalities=municipalities,
                     power_mw=power_mw,
-                    source_url=item_url,
+                    source_url=project_key_source_url,
                     external_id=external_id,
                 )
                 project_key = truncate_text(project_key, 255)
