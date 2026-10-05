@@ -12,6 +12,8 @@ Le correzioni geografiche MASE protette vengono applicate anche dentro `app.run_
 
 Per Piemonte SKVIA la ricerca deve simulare il click reale sul pulsante `Ricerca` e non il semplice submit/Invio della form. La query non deve essere limitata a `REGIONE PIEMONTE`, perché l'archivio restituisce anche pratiche di `SOGGETTO GESTORE RN2000`. Le pratiche concluse vengono escluse solo quando nel dettaglio è presente evidenza esplicita di esito negativo.
 
+Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il run del 05/10/2026, prima ancora del parsing. Fino alla stabilizzazione Piemonte va provato separatamente con `test_piemonte_solo.bat`, che non modifica database né output pubblicati e confronta anche la raggiungibilità del nuovo endpoint pubblico SCRIVA.
+
 ## File e cartelle critiche
 
 - aggiorna_dashboard_senza_docker.bat
@@ -43,8 +45,8 @@ Per Piemonte SKVIA la ricerca deve simulare il click reale sul pulsante `Ricerca
 
 ## Prossimo passo consigliato
 
-1. Eseguire `.\scripts\check_before_publish.ps1`.
-2. Eseguire il batch completo e verificare il report Piemonte contro i cinque codici RN2000 di riferimento.
+1. Eseguire `test_piemonte_solo.bat` finché il probe Piemonte non chiude con baseline completa.
+2. Se il legacy SKVIA resta irraggiungibile ma SCRIVA risponde, migrare/affiancare il collector alla sorgente SCRIVA prima di toccare il batch globale.
 3. Controllare che eventuali pratiche concluse con esito esplicitamente negativo siano escluse.
-4. Controllare `git status` e `git diff --check` prima della pubblicazione.
+4. Solo dopo la validazione isolata, reintegrare Piemonte nel flusso globale e rieseguire `.\scripts\check_before_publish.ps1`.
 
