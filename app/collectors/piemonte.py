@@ -180,6 +180,9 @@ class PiemonteCollector(BaseCollector):
                                     ),
                                     "power": row.get("power"),
                                     "project_type_hint": row.get("procedure") or "Piemonte SKVIA",
+                                    "source_code": row.get("code"),
+                                    "authority": row.get("authority"),
+                                    "_project_key_strategy": "external_id",
                                 },
                             )
                         )
@@ -500,10 +503,15 @@ class PiemonteCollector(BaseCollector):
             if any(marker in lowered for marker in company_markers):
                 return part.strip(" .,-;:")
 
-        # Fallback: se dopo il nome progetto c'è una seconda/terza parte plausibile.
+        # Fallback solo per testo plausibilmente societario. Evita di
+        # interpretare decimali/potenze spezzate dalla virgola come proponente.
         for part in parts[1:]:
             lowered = part.lower()
-            if not any(
+
+            if re.search(r"\d", part):
+                continue
+
+            if any(
                 bad in lowered
                 for bad in [
                     "impianto",
@@ -511,6 +519,15 @@ class PiemonteCollector(BaseCollector):
                     "fotovoltaica",
                     "agrivoltaico",
                     "agrovoltaico",
+                    "potenza",
+                    "mwp",
+                    "mw",
+                    "kwp",
+                    "kw",
+                    "immissione",
+                    "nominale",
+                    "dc",
+                    "ac",
                     "zsc",
                     "zps",
                     "comune",
@@ -528,8 +545,10 @@ class PiemonteCollector(BaseCollector):
                     "vc",
                 ]
             ):
-                if 3 <= len(part) <= 120:
-                    return part.strip(" .,-;:")
+                continue
+
+            if 3 <= len(part) <= 120:
+                return part.strip(" .,-;:")
 
         return None
 
@@ -662,14 +681,22 @@ class PiemonteCollector(BaseCollector):
         )
 
     def _build_external_id(self, row: dict) -> str:
-        base = "|".join(
-            [
-                row.get("code") or "",
-                row.get("title") or "",
-                row.get("municipality") or "",
-                row.get("status") or "",
-            ]
-        ).lower()
+        # Il codice pratica è l'identificatore stabile della procedura.
+        # L'autorità evita collisioni teoriche fra registri diversi. Titolo,
+        # comune e stato NON devono entrare nella chiave perché possono cambiare
+        # nel tempo e trasformare un aggiornamento in un falso nuovo progetto.
+        code = self._clean_text(row.get("code") or "")
+        authority = self._clean_text(row.get("authority") or "")
+
+        if code:
+            base = f"{authority}|{code}".lower()
+        else:
+            base = "|".join(
+                [
+                    row.get("title") or "",
+                    row.get("municipality") or "",
+                ]
+            ).lower()
 
         base = re.sub(r"\s+", "-", base)
         base = re.sub(r"[^a-z0-9:/._|-]", "", base)
