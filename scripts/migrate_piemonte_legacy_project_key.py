@@ -10,6 +10,8 @@ if str(ROOT) not in sys.path:
 from app.collectors.piemonte import START_URL
 from app.db import SessionLocal
 from app.models import ProjectEvent, ProjectMaster
+
+PIEMONTE_PROVINCE_CODES = {"AL", "AT", "BI", "CN", "NO", "TO", "VB", "VC"}
 from app.pipeline import build_project_key
 
 
@@ -38,22 +40,50 @@ def main() -> int:
 
         if project is None:
             print("[piemonte-key-migration] nessun record legacy da rimuovere")
-            return 0
+        else:
+            deleted_events = (
+                db.query(ProjectEvent)
+                .filter(ProjectEvent.project_id == project.id)
+                .delete(synchronize_session=False)
+            )
+            db.delete(project)
+            print(
+                "[piemonte-key-migration] rimosso record Piemonte legacy collassato:",
+                legacy_key,
+            )
+            print("[piemonte-key-migration] eventi rimossi:", deleted_events)
 
-        deleted_events = (
-            db.query(ProjectEvent)
-            .filter(ProjectEvent.project_id == project.id)
-            .delete(synchronize_session=False)
+        invalid_rows = (
+            db.query(ProjectMaster)
+            .filter(ProjectMaster.primary_source == "piemonte")
+            .filter(ProjectMaster.province.is_not(None))
+            .all()
         )
-        db.delete(project)
+
+        repaired = 0
+        for row in invalid_rows:
+            province = str(row.province or "").strip().upper()
+            if province in PIEMONTE_PROVINCE_CODES:
+                continue
+
+            municipalities = str(row.municipalities or "").strip().upper()
+
+            # Caso già osservato: "(DC)" della descrizione della potenza era
+            # stato scambiato per sigla provinciale. Isola Sant'Antonio è AL.
+            if "ISOLA SANT'ANTONIO" in municipalities:
+                row.province = "AL"
+            else:
+                # Per altri codici spurii meglio azzerare che pubblicare una
+                # provincia falsa: i passaggi di enrichment successivi possono
+                # ricostruirla da comune/titolo.
+                row.province = None
+
+            repaired += 1
+
         db.commit()
-
-        print(
-            "[piemonte-key-migration] rimosso record Piemonte legacy collassato:",
-            legacy_key,
-        )
-        print("[piemonte-key-migration] eventi rimossi:", deleted_events)
+        print("[piemonte-key-migration] province spurie riparate:", repaired)
         return 0
+
     finally:
         db.close()
 
