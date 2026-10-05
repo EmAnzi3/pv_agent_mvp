@@ -41,12 +41,12 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 
 ## Problemi aperti
 
-- Validare con il prossimo run live Piemonte il recupero dei record RN2000 individuati manualmente: `2024-20/VI`, `2025-140/VI`, `2025-144/VI`, `2026-118/VI`, `2025-87/VI`.
+- Probe isolato Piemonte del 05/10/2026: PASS. Collector live = 17 record; baseline RN2000 completa (`2024-20/VI`, `2025-140/VI`, `2025-144/VI`, `2026-118/VI`, `2025-87/VI`). Resta da validare una run completa del batch globale prima del merge.
 
 ## Prossimo passo consigliato
 
-1. Eseguire `test_piemonte_solo.bat` finché il probe Piemonte non chiude con baseline completa.
-2. Se il legacy SKVIA resta irraggiungibile ma SCRIVA risponde, migrare/affiancare il collector alla sorgente SCRIVA prima di toccare il batch globale.
+1. Eseguire il batch globale sul branch `fix/piemonte-search-button-rn2000`.
+2. Verificare che il collector Piemonte completi senza errore e che il dataset includa la baseline RN2000 validata.
 3. Controllare che eventuali pratiche concluse con esito esplicitamente negativo siano escluse.
-4. Solo dopo la validazione isolata, reintegrare Piemonte nel flusso globale e rieseguire `.\scripts\check_before_publish.ps1`.
+4. Se la run globale è verde, eseguire `.\scripts\check_before_publish.ps1` e procedere al merge della PR #3.
 
