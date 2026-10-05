@@ -11,6 +11,15 @@ from typing import Any
 DEFAULT_DATA_JSON = Path("reports/site/data.json")
 DEFAULT_INDEX_HTML = Path("reports/site/index.html")
 
+PIEMONTE_BASELINE = {
+    "TRINO": {"province": "VC", "power_mw": 4.717},
+    "ISOLA SANT'ANTONIO": {"province": "AL", "power_mw": 3.45},
+    "CANDELO": {"province": "BI"},
+    "CASALE MONFERRATO": {"province": "AL"},
+    "PECETTO DI VALENZA, VALENZA": {"province": "AL"},
+}
+PIEMONTE_PROVINCE_CODES = {"AL", "AT", "BI", "CN", "NO", "TO", "VB", "VC"}
+
 
 def run_step(label: str, cmd: list[str]) -> None:
     print("")
@@ -159,6 +168,75 @@ def validate_outputs(
     print(f"[run-pipeline] stale HTML patterns: {len(stale_html)}")
 
     errors: list[str] = []
+
+    records = data.get("records", [])
+    piemonte_rows = [
+        row for row in records
+        if isinstance(row, dict) and row.get("source") == "piemonte"
+    ]
+
+    if len(piemonte_rows) < len(PIEMONTE_BASELINE):
+        errors.append(
+            f"Piemonte: record troppo pochi per la baseline: {len(piemonte_rows)}"
+        )
+
+    by_municipality = {
+        str(row.get("municipalities") or "").strip().upper(): row
+        for row in piemonte_rows
+    }
+
+    for municipality, expected in PIEMONTE_BASELINE.items():
+        row = by_municipality.get(municipality.upper())
+        if row is None:
+            errors.append(f"Piemonte: baseline mancante: {municipality}")
+            continue
+
+        province = str(row.get("province") or "").strip().upper()
+        expected_province = expected.get("province")
+        if expected_province and province != expected_province:
+            errors.append(
+                f"Piemonte: provincia errata per {municipality}: "
+                f"atteso {expected_province}, trovato {province or 'vuoto'}"
+            )
+
+        expected_mw = expected.get("power_mw")
+        if expected_mw is not None:
+            try:
+                actual_mw = float(row.get("power_mw"))
+            except Exception:
+                actual_mw = None
+            if actual_mw is None or abs(actual_mw - expected_mw) > 0.001:
+                errors.append(
+                    f"Piemonte: MW errati per {municipality}: "
+                    f"atteso {expected_mw}, trovato {row.get('power_mw')}"
+                )
+
+    invalid_piemonte_provinces = sorted({
+        str(row.get("province") or "").strip().upper()
+        for row in piemonte_rows
+        if str(row.get("province") or "").strip()
+        and str(row.get("province") or "").strip().upper()
+        not in PIEMONTE_PROVINCE_CODES
+    })
+    if invalid_piemonte_provinces:
+        errors.append(
+            "Piemonte: sigle provincia non valide: "
+            + ", ".join(invalid_piemonte_provinces)
+        )
+
+    suspicious_proponents = [
+        str(row.get("proponent") or "")
+        for row in piemonte_rows
+        if any(
+            token in str(row.get("proponent") or "").upper()
+            for token in ["MWP", "POTENZA IN IMMISSIONE", "POTENZA NOMINALE"]
+        )
+    ]
+    if suspicious_proponents:
+        errors.append(
+            "Piemonte: proponenti sospetti derivati da testo potenza: "
+            + " | ".join(suspicious_proponents[:5])
+        )
 
     if total_records in (None, 0):
         errors.append("summary.total_records assente o zero")
