@@ -13,11 +13,7 @@ from app.collectors.base import BaseCollector, CollectorResult
 
 START_URL = "http://www.sistemapiemonte.it/skvia/HomePage.do?ricerca=ArchivioProgetti"
 
-CHANGE_COMPETENZA_URL = (
-    "http://www.sistemapiemonte.it/skvia/"
-    "cpRicercaArchivioProgetti!handleCbAutoritaCompetente_VALUE_CHANGED.do"
-    "?confermacbAutoritaCompetente=conferma"
-)
+SEARCH_CLICK_ACTION = "cpRicercaArchivioProgetti!handleBtRicercaArchivioProgetti_CLICKED.do"
 
 PV_KEYWORDS = [
     "fotovoltaico",
@@ -36,6 +32,19 @@ YEARS = [
 
 MIN_YEAR = 2023
 
+NEGATIVE_OUTCOME_MARKERS = [
+    "esito negativo",
+    "parere negativo",
+    "valutazione negativa",
+    "conclusione negativa",
+    "conclusa negativamente",
+    "concluso negativamente",
+    "giudizio negativo",
+    "provvedimento negativo",
+    "non favorevole",
+    "diniego",
+]
+
 
 class PiemonteCollector(BaseCollector):
     source_name = "piemonte"
@@ -48,6 +57,8 @@ class PiemonteCollector(BaseCollector):
         results: list[CollectorResult] = []
         seen_ids: set[str] = set()
         matched_rows: list[dict] = []
+        excluded_negative_rows: list[dict] = []
+        detail_outcome_cache: dict[str, tuple[bool, str | None]] = {}
 
         session = self.session
         session.headers.update(
@@ -70,40 +81,16 @@ class PiemonteCollector(BaseCollector):
         )
 
         home_soup = self._parse_soup(home)
-        _, base_data = self._get_form_action_and_data(home_soup, home.url)
-
-        data_competenza = self._build_base_competenza_payload(base_data)
-
-        changed = session.post(
-            CHANGE_COMPETENZA_URL,
-            data=data_competenza,
-            timeout=90,
-            allow_redirects=True,
-            headers={
-                "Referer": home.url,
-                "Origin": "http://www.sistemapiemonte.it",
-                "Content-Type": "application/x-www-form-urlencoded",
-            },
-        )
-        changed.raise_for_status()
-
-        self._write_text(
-            debug_base / "01_change_competenza.html",
-            changed.content.decode("utf-8", errors="replace")[:2_000_000],
-        )
-
-        changed_soup = self._parse_soup(changed)
-        search_action, base_after_competenza = self._get_form_action_and_data(
-            changed_soup,
-            changed.url,
-        )
+        search_action, base_data = self._get_form_action_and_data(home_soup, home.url)
+        base_search_data = self._build_search_base_payload(base_data)
 
         self._write_json(
-            debug_base / "base_after_competenza.json",
+            debug_base / "base_search.json",
             {
-                "action": search_action,
-                "data_keys": list(base_after_competenza.keys()),
-                "selects": self._extract_select_options(changed_soup),
+                "form_action": search_action,
+                "button_action": urljoin(search_action, SEARCH_CLICK_ACTION),
+                "data_keys": list(base_search_data.keys()),
+                "selects": self._extract_select_options(home_soup),
             },
         )
 
@@ -111,25 +98,16 @@ class PiemonteCollector(BaseCollector):
 
         for keyword in PV_KEYWORDS:
             for year in YEARS:
-                data_search = dict(base_after_competenza)
-                data_search["appDataRicercaArchivioProgetti.competenza"] = "REGIONE PIEMONTE"
+                data_search = dict(base_search_data)
                 data_search["appDataRicercaArchivioProgetti.denominazioneProgetto"] = keyword
                 data_search["appDataRicercaArchivioProgetti.annoRegistro"] = year
-                data_search["appDataRicercaArchivioProgetti.tipologia"] = ""
-                data_search["appDataRicercaArchivioProgetti.flagStato"] = ""
-                data_search["method:handleBtRicercaArchivioProgetti_CLICKED"] = "Ricerca"
 
                 try:
-                    response = session.post(
-                        search_action,
+                    response, submit_mode = self._submit_search(
+                        session=session,
+                        form_action=search_action,
                         data=data_search,
-                        timeout=90,
-                        allow_redirects=True,
-                        headers={
-                            "Referer": changed.url,
-                            "Origin": "http://www.sistemapiemonte.it",
-                            "Content-Type": "application/x-www-form-urlencoded",
-                        },
+                        referer=home.url,
                     )
                     response.raise_for_status()
 
@@ -147,6 +125,7 @@ class PiemonteCollector(BaseCollector):
                         {
                             "keyword": keyword,
                             "year": year,
+                            "submit_mode": submit_mode,
                             "contains_fotovoltaico": "fotovoltaico" in html_text.lower(),
                             "contains_agrivoltaico": (
                                 "agrivoltaico" in html_text.lower()
@@ -162,6 +141,17 @@ class PiemonteCollector(BaseCollector):
 
                         row_year = self._extract_year(row.get("code") or row.get("raw_text") or "")
                         if row_year is not None and row_year < MIN_YEAR:
+                            continue
+
+                        is_negative, negative_evidence = self._is_negative_concluded(
+                            row=row,
+                            session=session,
+                            cache=detail_outcome_cache,
+                        )
+                        if is_negative:
+                            excluded = dict(row)
+                            excluded["negative_evidence"] = negative_evidence
+                            excluded_negative_rows.append(excluded)
                             continue
 
                         external_id = self._build_external_id(row)
@@ -204,12 +194,17 @@ class PiemonteCollector(BaseCollector):
                     )
 
         self._write_json(debug_base / "matched_rows_sample.json", matched_rows[:200])
+        self._write_json(
+            debug_base / "excluded_negative_rows.json",
+            excluded_negative_rows[:200],
+        )
         self._write_json(debug_base / "searches_debug.json", debug_searches)
         self._write_json(
             debug_base / "summary.json",
             {
                 "results": len(results),
                 "matched_rows": len(matched_rows),
+                "excluded_negative": len(excluded_negative_rows),
                 "min_year": MIN_YEAR,
                 "keywords": PV_KEYWORDS,
                 "years": YEARS,
@@ -222,10 +217,13 @@ class PiemonteCollector(BaseCollector):
     # SKVIA FLOW
     # ------------------------------------------------------------------
 
-    def _build_base_competenza_payload(self, base_data: dict) -> dict:
+    def _build_search_base_payload(self, base_data: dict) -> dict:
         data = dict(base_data)
 
-        data["appDataRicercaArchivioProgetti.competenza"] = "REGIONE PIEMONTE"
+        # Ricerca volutamente senza filtro di autorità competente: il sito
+        # restituisce nello stesso archivio sia REGIONE PIEMONTE sia
+        # SOGGETTO GESTORE RN2000. Limitarsi alla Regione crea falsi negativi.
+        data["appDataRicercaArchivioProgetti.competenza"] = ""
         data["appDataRicercaArchivioProgetti.tipologia"] = ""
         data["appDataRicercaArchivioProgetti.annoRegistro"] = ""
         data["appDataRicercaArchivioProgetti.codice"] = ""
@@ -240,6 +238,101 @@ class PiemonteCollector(BaseCollector):
         data["appDataRicercaArchivioProgetti.idParco"] = ""
 
         return data
+
+    def _submit_search(
+        self,
+        session,
+        form_action: str,
+        data: dict,
+        referer: str,
+    ):
+        headers = {
+            "Referer": referer,
+            "Origin": "http://www.sistemapiemonte.it",
+            "Content-Type": "application/x-www-form-urlencoded",
+        }
+
+        # Sul portale il tasto Ricerca scatena un evento dedicato. L'invio
+        # della form (equivalente al tasto Invio da tastiera) non è affidabile.
+        button_action = urljoin(form_action, SEARCH_CLICK_ACTION)
+
+        try:
+            response = session.post(
+                button_action,
+                data=data,
+                timeout=90,
+                allow_redirects=True,
+                headers=headers,
+            )
+            response.raise_for_status()
+            return response, "button_endpoint"
+        except Exception:
+            # Fallback compatibile con il comportamento storico del collector.
+            fallback_data = dict(data)
+            fallback_data["method:handleBtRicercaArchivioProgetti_CLICKED"] = "Ricerca"
+
+            response = session.post(
+                form_action,
+                data=fallback_data,
+                timeout=90,
+                allow_redirects=True,
+                headers=headers,
+            )
+            response.raise_for_status()
+            return response, "form_method_fallback"
+
+    def _is_negative_concluded(
+        self,
+        row: dict,
+        session,
+        cache: dict[str, tuple[bool, str | None]],
+    ) -> tuple[bool, str | None]:
+        status = self._normalize_for_match(row.get("status") or "")
+
+        if "conclus" not in status:
+            return False, None
+
+        raw_text = row.get("raw_text") or ""
+        marker = self._negative_outcome_marker(raw_text)
+        if marker:
+            return True, marker
+
+        detail_url = row.get("url") or ""
+        if not detail_url or detail_url == START_URL:
+            return False, None
+
+        if detail_url in cache:
+            return cache[detail_url]
+
+        try:
+            response = session.get(
+                detail_url,
+                timeout=60,
+                allow_redirects=True,
+                headers={"Referer": START_URL},
+            )
+            response.raise_for_status()
+
+            soup = self._parse_soup(response)
+            detail_text = self._clean_text(soup.get_text(" ", strip=True))
+            marker = self._negative_outcome_marker(detail_text)
+            result = (bool(marker), marker)
+        except Exception:
+            # Non scartiamo una pratica conclusa solo perché il dettaglio non
+            # è raggiungibile: si esclude esclusivamente su evidenza negativa.
+            result = (False, None)
+
+        cache[detail_url] = result
+        return result
+
+    def _negative_outcome_marker(self, text: str | None) -> str | None:
+        normalized = self._normalize_for_match(text or "")
+
+        for marker in NEGATIVE_OUTCOME_MARKERS:
+            if self._normalize_for_match(marker) in normalized:
+                return marker
+
+        return None
 
     def _parse_soup(self, response) -> BeautifulSoup:
         text = response.content.decode("utf-8", errors="replace")
@@ -315,9 +408,6 @@ class PiemonteCollector(BaseCollector):
             if "risultati trovati" in lowered or "scarica in excel" in lowered or "scarica in pdf" in lowered:
                 continue
 
-            if "regione piemonte" not in lowered:
-                continue
-
             parsed = self._parse_result_cells(cells, tr, page_url)
 
             if parsed:
@@ -334,9 +424,6 @@ class PiemonteCollector(BaseCollector):
         # Struttura attesa:
         # Autorità competente | Codice pratica | Denominazione | Localizzazione | Scadenza Osservazioni | Stato
         authority = clean_cells[0]
-
-        if "REGIONE PIEMONTE" not in authority.upper():
-            return None
 
         code = clean_cells[1] if len(clean_cells) > 1 else None
         title = clean_cells[2] if len(clean_cells) > 2 else None
