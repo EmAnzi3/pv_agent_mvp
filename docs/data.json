@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-10-05 16:02:06",
-    "snapshot_file": "projects_snapshot_20261005_140009.csv",
-    "total_records": 1550,
-    "punctual_records": 1468,
+    "generated_at": "2026-10-08 16:01:31",
+    "snapshot_file": "projects_snapshot_20261008_135939.csv",
+    "total_records": 1557,
+    "punctual_records": 1475,
     "terna_records": 82,
-    "total_mw_punctual": 41204.825,
+    "total_mw_punctual": 41420.244,
     "total_mw_terna": 139880.808,
     "source_counts": [
       {
@@ -16,7 +16,7 @@
       {
         "source": "mase",
         "label": "MASE",
-        "count": 297
+        "count": 300
       },
       {
         "source": "toscana",
@@ -56,7 +56,7 @@
       {
         "source": "calabria",
         "label": "Calabria",
-        "count": 20
+        "count": 24
       },
       {
         "source": "basilicata",
@@ -107,13 +107,13 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 158,
-        "punctual_mw": 7415.0,
+        "punctual_count": 160,
+        "punctual_mw": 7513.179,
         "terna_count": 5,
         "terna_mw": 36092.939,
         "terna_practices": 0,
-        "total_mw": 43507.939,
-        "priority_score": 22.5
+        "total_mw": 43606.118,
+        "priority_score": 22.7
       },
       {
         "region": "Toscana",
@@ -187,13 +187,13 @@
       },
       {
         "region": "Calabria",
-        "punctual_count": 22,
-        "punctual_mw": 698.073,
+        "punctual_count": 26,
+        "punctual_mw": 766.303,
         "terna_count": 5,
         "terna_mw": 2223.499,
         "terna_practices": 0,
-        "total_mw": 2921.572,
-        "priority_score": 2.2
+        "total_mw": 2989.802,
+        "priority_score": 2.5
       },
       {
         "region": "Piemonte",
@@ -227,13 +227,13 @@
       },
       {
         "region": "Molise",
-        "punctual_count": 0,
-        "punctual_mw": 0.0,
+        "punctual_count": 1,
+        "punctual_mw": 49.01,
         "terna_count": 5,
         "terna_mw": 2608.02,
         "terna_practices": 0,
-        "total_mw": 2608.02,
-        "priority_score": 0.5
+        "total_mw": 2657.03,
+        "priority_score": 0.6
       },
       {
         "region": "Marche",
@@ -900,14 +900,14 @@
       ]
     },
     "quality": {
-      "punctual_records": 1468,
+      "punctual_records": 1475,
       "missing_mw": 139,
       "missing_region": 0,
       "missing_province": 6,
       "missing_municipality": 17,
       "missing_url": 0,
       "province_deduced": 48,
-      "municipalities_deduced": 4
+      "municipalities_deduced": 5
     },
     "quality_by_source": [
       {
@@ -924,7 +924,7 @@
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 297,
+        "count": 300,
         "missing_mw": 1,
         "missing_province": 0,
         "missing_municipality": 3,
@@ -1012,13 +1012,13 @@
       {
         "source": "calabria",
         "source_label": "Calabria",
-        "count": 20,
+        "count": 24,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 1,
         "province_deduced": 0,
-        "municipalities_deduced": 1,
-        "completeness_pct": 98.3
+        "municipalities_deduced": 2,
+        "completeness_pct": 98.6
       },
       {
         "source": "basilicata",
@@ -5173,6 +5173,37 @@
         "https://regionelazio.app.box.com/v/VIA-098-2019"
       ],
       "project_key": "url:b58b7bc9d438e32f"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico, denominato \"Serracapriola\", della potenza nominale pari a 72,29 MW e delle relative opere di connessione alla Rete di Trasmissione Nazionale, integrato con un sistema di acc",
+      "proponent": "Serracapriola Solar S.r.l.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "Serracapriola",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 72.29,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6469",
+      "updated_at": "2026-10-08T13:59:31.195061",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico, denominato \"Serracapriola\", della potenza nominale pari a 72,29 MW e delle relative opere di connessione alla Rete di Trasmissione Nazionale, integrato con un sistema di acc"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6469"
+      ],
+      "project_key": "url:885cc110eb15f9ef"
     },
     {
       "source": "mase",
@@ -9699,7 +9730,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-10-05T13:46:34.841520",
+      "updated_at": "2026-10-08T13:34:21.340633",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -9778,6 +9809,37 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/8260"
       ],
       "project_key": "url:9154e81aea84b68e"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Morrone\" di potenza di picco pari a 49,01 MW e delle relative opere di connessione alla RTN, nei comuni di San Martino in Pensilis (CB) e Larino (CB).",
+      "proponent": "Pivexo 1 S.r.l.",
+      "region": "Molise",
+      "province": "CB",
+      "municipalities": "San Martino in Pensilis",
+      "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
+      "power_mw": 49.01,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6477",
+      "updated_at": "2026-10-08T13:59:31.195061",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Morrone\" di potenza di picco pari a 49,01 MW e delle relative opere di connessione alla RTN, nei comuni di San Martino in Pensilis (CB) e Larino (CB)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6477"
+      ],
+      "project_key": "url:824c2c9ad7b1077d"
     },
     {
       "source": "toscana",
@@ -11470,7 +11532,7 @@
       "power_mw": 43.74,
       "status": "",
       "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/262",
-      "updated_at": "2026-09-01T13:25:34.610491",
+      "updated_at": "2026-10-08T13:36:06.651680",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -15327,6 +15389,38 @@
       "project_key": "url:295067a3e56a2d2f"
     },
     {
+      "source": "Calabria",
+      "source_group": "Calabria",
+      "source_label": "Calabria",
+      "title": "Verifica di Assoggettabilità a Valutazione di Impatto Ambientale (VIA) ai sensi dell’art. 19 del D. Lgs. 152/2006 e ss.mm.ii. Progetto: Costruzione ed Esercizio di un impianto agrivoltaico dalla potenza nominale di 31,51 MWp, comprensivo delle relative infrastrutture indispensabili delle opere connesse, tra cui un sistema di accumulo con capacità di 25,908 MWp (85,255 (MWh). Proponente: GO MANDORLO S.r.l. – Via Cimabue, 42 – 60019 Senigallia (AN). Comuni d’intervento: Comuni di Scandale e Cutro",
+      "proponent": "GO MANDORLO S.r.l",
+      "region": "Calabria",
+      "province": "KR",
+      "municipalities": "Scandale E Cutro",
+      "project_type": "PAUR",
+      "power_mw": 31.51,
+      "status": "",
+      "url": "https://www.regione.calabria.it/provvedimenti-regionali/verifica-di-assoggettabilita-a-valutazione-di-impatto-ambientale-via-ai-sensi-dellart-19-del-d-lgs-152-2006-e-ss-mm-ii-progetto-costruzione-ed-esercizio-di-un-impianto-agrivoltaico-dal-2/",
+      "updated_at": "2026-10-08T13:42:42.368578",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": true,
+      "_merged_sources": [
+        "Calabria"
+      ],
+      "_dedupe_group_size": 2,
+      "_dedupe_titles": [
+        "Verifica di Assoggettabilità a Valutazione di Impatto Ambientale (VIA) ai sensi dell’art. 19 del D. Lgs. 152/2006 e ss.mm.ii. Progetto: Costruzione ed Esercizio di un impianto agrivoltaico dalla potenza nominale di 31,51 MWp, comprensivo delle relative infrastrutture indispensabili delle opere connesse, tra cui un sistema di accumulo con capacità di 25,908 MWp (85,255 (MWh). Proponente: GO MANDORLO S.r.l. – Via Cimabue, 42 – 60019 Senigallia (AN). Comuni d’intervento: Comuni di Scandale e Cutro"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/provvedimenti-regionali/verifica-di-assoggettabilita-a-valutazione-di-impatto-ambientale-via-ai-sensi-dellart-19-del-d-lgs-152-2006-e-ss-mm-ii-progetto-costruzione-ed-esercizio-di-un-impianto-agrivoltaico-dal-2/",
+        "https://www.regione.calabria.it/provvedimenti-regionali/verifica-di-assoggettabilita-a-valutazione-di-impatto-ambientale-via-ai-sensi-dellart-19-del-d-lgs-152-2006-e-ss-mm-ii-progetto-costruzione-ed-esercizio-di-un-impianto-agrivoltaico-dal/"
+      ],
+      "project_key": "url:07beef4d6e2b24d9"
+    },
+    {
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
@@ -16143,7 +16237,7 @@
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
-      "title": "Determinazione n°G14801 del 08/11/2023 Favorevole con prescrizioni Realizzazione di un impianto fotovoltaico a terra connesso alla rete elettrica di trasmissione nazionale di potenza nominale pari a circa 29 MW Corte dei Papi in località Ticchio",
+      "title": "Determinazione n°G14801 del 08/11/2023 Favorevole con prescrizioni Realizzazione di un impianto fotovoltaico a terra connesso alla rete elettrica di trasmissione nazionale di potenza nominale pari a circa 29 MW Corte dei Papi in località Ticchio Determina di PAUR n. G13555 del 06/10/2026",
       "proponent": "IRON SOLAR SRL",
       "region": "Lazio",
       "province": "FR",
@@ -16152,7 +16246,7 @@
       "power_mw": 29.0,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-048-2021",
-      "updated_at": "2026-05-01T19:18:12.958879",
+      "updated_at": "2026-10-08T13:34:21.340633",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -16163,7 +16257,7 @@
       ],
       "_dedupe_group_size": 1,
       "_dedupe_titles": [
-        "Determinazione n°G14801 del 08/11/2023 Favorevole con prescrizioni Realizzazione di un impianto fotovoltaico a terra connesso alla rete elettrica di trasmissione nazionale di potenza nominale pari a circa 29 MW Corte dei Papi in località Ticchio"
+        "Determinazione n°G14801 del 08/11/2023 Favorevole con prescrizioni Realizzazione di un impianto fotovoltaico a terra connesso alla rete elettrica di trasmissione nazionale di potenza nominale pari a circa 29 MW Corte dei Papi in località Ticchio Determina di PAUR n. G13555 del 06/10/2026"
       ],
       "_dedupe_urls": [
         "https://regionelazio.box.com/v/VIA-048-2021"
@@ -17225,6 +17319,37 @@
       "project_key": "prj:fb2caf882a8d9708"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico denominato \"Fattoria Solare Fontana Rossa\" da ubicare nel comune di Santeramo in Colle (BA) in località \"Matine\", di potenza DC pari a 25,889 MW e delle relative opere di con",
+      "proponent": "REN 183 S.r.l.",
+      "region": "Puglia",
+      "province": "BA",
+      "municipalities": "Santeramo in Colle",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 25.889,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6470",
+      "updated_at": "2026-10-08T13:59:31.195061",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico denominato \"Fattoria Solare Fontana Rossa\" da ubicare nel comune di Santeramo in Colle (BA) in località \"Matine\", di potenza DC pari a 25,889 MW e delle relative opere di con"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6470"
+      ],
+      "project_key": "url:a9d0ff36c3abc689"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -17516,7 +17641,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-10-05T13:46:34.841520",
+      "updated_at": "2026-10-08T13:34:21.340633",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19779,7 +19904,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-10-05T13:46:34.841520",
+      "updated_at": "2026-10-08T13:34:21.340633",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -21643,6 +21768,37 @@
         "https://www.regione.calabria.it/bandi/impianto-fotovoltaico-variante-cargosrl/"
       ],
       "project_key": "prj:4058e77490cb49f4"
+    },
+    {
+      "source": "Calabria",
+      "source_group": "Calabria",
+      "source_label": "Calabria",
+      "title": "OCCUPAZIONE D’URGENZA PREORDINATA ALL’ESPROPRIAZIONE AI SENSI DELL’ART. 22 BIS DEL D.P.R N. 327/2001 E S.M.I - FOGLIO N.15 P.LLA N.445 - COMUNE DI SCANDALE (KR). PROGETTO: COSTRUZIONE ED ESERCIZIO DI IMPIANTO FOTOVOLTAICO DELLA POTENZA COMPLESSIVA PARI A 18,9865 MW DA UBICARE NEL COMUNE DI CROTONE IN LOC. SCALANO E RELATIVE OPERE DI CONNESSIONE CHE INTERESSANO ANCHE IL COMUNE DI SCANDALE (KR). PROPONENTE: CARGO S.R.L",
+      "proponent": "CARGO S.R.L",
+      "region": "Calabria",
+      "province": "KR",
+      "municipalities": "Scandale",
+      "project_type": "Atto ambientale Regione Calabria",
+      "power_mw": 18.986,
+      "status": "",
+      "url": "https://www.regione.calabria.it/provvedimenti-regionali/occupazione-durgenza-preordinata-allespropriazione-ai-sensi-dellart-22-bis-del-d-p-r-n-327-2001-e-s-m-i-foglio-n-15-p-lla-n-445-comune-di-scandale-kr-progetto-cost/",
+      "updated_at": "2026-10-08T13:42:42.368578",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "OCCUPAZIONE D’URGENZA PREORDINATA ALL’ESPROPRIAZIONE AI SENSI DELL’ART. 22 BIS DEL D.P.R N. 327/2001 E S.M.I - FOGLIO N.15 P.LLA N.445 - COMUNE DI SCANDALE (KR). PROGETTO: COSTRUZIONE ED ESERCIZIO DI IMPIANTO FOTOVOLTAICO DELLA POTENZA COMPLESSIVA PARI A 18,9865 MW DA UBICARE NEL COMUNE DI CROTONE IN LOC. SCALANO E RELATIVE OPERE DI CONNESSIONE CHE INTERESSANO ANCHE IL COMUNE DI SCANDALE (KR). PROPONENTE: CARGO S.R.L"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/provvedimenti-regionali/occupazione-durgenza-preordinata-allespropriazione-ai-sensi-dellart-22-bis-del-d-p-r-n-327-2001-e-s-m-i-foglio-n-15-p-lla-n-445-comune-di-scandale-kr-progetto-cost/"
+      ],
+      "project_key": "url:21e98a8a7702c640"
     },
     {
       "source": "Calabria",
@@ -27275,6 +27431,37 @@
       "source": "Calabria",
       "source_group": "Calabria",
       "source_label": "Calabria",
+      "title": "Oggetto: Provvedimento di Valutazione di Impatto Ambientale ai sensi degli art. 23 e segg. del D.Lgs. 152/2006 e ss.mm.ii. e Valutazione di Incidenza Ambientale (Livello I). Progetto: Pratica 122 (CS) sul sistema Calabria SUAP “Sportello Energia” - Realizzazione di un impianto agrivoltaico denominato \"Calabria 2\" da realizzarsi nel Comune di Cassano all’Ionio (CS) con potenza originaria di 9,99 MWp (ridotta a 7,52 MWp) e relative opere di rete. Comune interessato: Cassano all’Ionio (CS). Propone",
+      "proponent": "V-RIDIUM SOLAR CALABRIA 2 S.R.L",
+      "region": "Calabria",
+      "province": "CS",
+      "municipalities": "Cassano All’Ionio",
+      "project_type": "VIA",
+      "power_mw": 9.99,
+      "status": "",
+      "url": "https://www.regione.calabria.it/provvedimenti-regionali/oggetto-provvedimento-di-valutazione-di-impatto-ambientale-ai-sensi-degli-art-23-e-segg-del-d-lgs-152-2006-e-ss-mm-ii-e-valutazione-di-incidenza-ambientale-livello-i-progetto-pratica-122-cs/",
+      "updated_at": "2026-10-08T13:42:42.368578",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Oggetto: Provvedimento di Valutazione di Impatto Ambientale ai sensi degli art. 23 e segg. del D.Lgs. 152/2006 e ss.mm.ii. e Valutazione di Incidenza Ambientale (Livello I). Progetto: Pratica 122 (CS) sul sistema Calabria SUAP “Sportello Energia” - Realizzazione di un impianto agrivoltaico denominato \"Calabria 2\" da realizzarsi nel Comune di Cassano all’Ionio (CS) con potenza originaria di 9,99 MWp (ridotta a 7,52 MWp) e relative opere di rete. Comune interessato: Cassano all’Ionio (CS). Propone"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/provvedimenti-regionali/oggetto-provvedimento-di-valutazione-di-impatto-ambientale-ai-sensi-degli-art-23-e-segg-del-d-lgs-152-2006-e-ss-mm-ii-e-valutazione-di-incidenza-ambientale-livello-i-progetto-pratica-122-cs/"
+      ],
+      "project_key": "url:d2f78e06098b6003"
+    },
+    {
+      "source": "Calabria",
+      "source_group": "Calabria",
+      "source_label": "Calabria",
       "title": "Progetto per la realizzazione di un impianto agrivoltaico \"Calabria 2\" da realizzarsi nel comune di Cassano All'Ionio (CS) con potenza di 9,99 MWp e relative opere di rete. Pratica n. 122 (CS) sul sistema Calabria SUAP “Sportello Energia”",
       "proponent": "V-RIDIUM SOLAR CALABRIA 2 S",
       "region": "Calabria",
@@ -29398,7 +29585,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-10-05T13:46:34.841520",
+      "updated_at": "2026-10-08T13:34:21.340633",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29739,7 +29926,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-10-05T13:46:34.841520",
+      "updated_at": "2026-10-08T13:34:21.340633",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30345,6 +30532,37 @@
         "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/17416"
       ],
       "project_key": "prj:26a5c5fcf9a256e1"
+    },
+    {
+      "source": "Calabria",
+      "source_group": "Calabria",
+      "source_label": "Calabria",
+      "title": "Provvedimento autorizzatorio unico regionale ai sensi dell’art. 27bis D.lgs152/2006 e ss.mm.ii., comprendente il parere favorevole di Valutazione Impatto Ambientale e Valutazione di Incidenza (Livello I) art. 6.3 Direttiva 92/43/CEE “Habitat” per il progetto “Realizzazione di un impianto agrivoltaico di 7,7440 MW con storage di 10MW e opere connesse, nei Comuni di Crotone e Scandale (KR) denominato ‘Covello’ ” - Pratica n. 130 (KR) sul sistema Calabria SUAP “Sportello Ambiente”. Proponente: Clea",
+      "proponent": "Clean Energy 5 S.r.l",
+      "region": "Calabria",
+      "province": "KR",
+      "municipalities": "Crotone, Scandale Denominato ‘Covello’ ” - Pratica N",
+      "project_type": "PAUR",
+      "power_mw": 7.744,
+      "status": "",
+      "url": "https://www.regione.calabria.it/provvedimenti-regionali/provvedimento-autorizzatorio-unico-regionale-ai-sensi-dellart-27bis-d-lgs152-2006-e-ss-mm-ii-comprendente-il-parere-favorevole-di-valutazione-impatto-ambientale-e-valutazione-di-incidenza-2/",
+      "updated_at": "2026-10-08T13:42:42.368578",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Provvedimento autorizzatorio unico regionale ai sensi dell’art. 27bis D.lgs152/2006 e ss.mm.ii., comprendente il parere favorevole di Valutazione Impatto Ambientale e Valutazione di Incidenza (Livello I) art. 6.3 Direttiva 92/43/CEE “Habitat” per il progetto “Realizzazione di un impianto agrivoltaico di 7,7440 MW con storage di 10MW e opere connesse, nei Comuni di Crotone e Scandale (KR) denominato ‘Covello’ ” - Pratica n. 130 (KR) sul sistema Calabria SUAP “Sportello Ambiente”. Proponente: Clea"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/provvedimenti-regionali/provvedimento-autorizzatorio-unico-regionale-ai-sensi-dellart-27bis-d-lgs152-2006-e-ss-mm-ii-comprendente-il-parere-favorevole-di-valutazione-impatto-ambientale-e-valutazione-di-incidenza-2/"
+      ],
+      "project_key": "url:391d57eb19c7fbbb"
     },
     {
       "source": "toscana_atos",
@@ -32715,7 +32933,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-10-05T13:46:34.841520",
+      "updated_at": "2026-10-08T13:34:21.340633",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -37254,7 +37472,7 @@
       "_merged_sources": [
         "lazio"
       ],
-      "_dedupe_group_size": 4,
+      "_dedupe_group_size": 5,
       "_dedupe_titles": [
         "Realizzazione Impianto fotovoltaico da 3 MWp in loc. Strada Provinciale - Volta Determinazione n. G10024 del 07/09/2016"
       ],
@@ -37262,7 +37480,8 @@
         "https://www.regione.lazio.it/imprese/tutela-ambientale-difesa-suolo/valutazione-impatto-ambientale-progetti?pagina=103",
         "https://www.regione.lazio.it/imprese/tutela-ambientale-difesa-suolo/valutazione-impatto-ambientale-progetti?pagina=104",
         "https://www.regione.lazio.it/imprese/tutela-ambientale-difesa-suolo/valutazione-impatto-ambientale-progetti?pagina=105",
-        "https://www.regione.lazio.it/imprese/tutela-ambientale-difesa-suolo/valutazione-impatto-ambientale-progetti?pagina=106"
+        "https://www.regione.lazio.it/imprese/tutela-ambientale-difesa-suolo/valutazione-impatto-ambientale-progetti?pagina=106",
+        "https://www.regione.lazio.it/imprese/tutela-ambientale-difesa-suolo/valutazione-impatto-ambientale-progetti?pagina=107"
       ],
       "project_key": "prj:53ae9fef06b4cf3c"
     },
@@ -42065,11 +42284,12 @@
       "_merged_sources": [
         "lazio"
       ],
-      "_dedupe_group_size": 4,
+      "_dedupe_group_size": 5,
       "_dedupe_titles": [
         "Realizzazione di una piattaforma di recupero materie post-consumo per la plastica proveniente da raccolta differenziata e realizzazione di un impianto fotovoltaico da 43,2 KWp in loc. Fontignani Via del Ponte Malnome Determinazione n. G11246 del 07/08/2017 - Rinviato a V.I.A."
       ],
       "_dedupe_urls": [
+        "https://www.regione.lazio.it/imprese/tutela-ambientale-difesa-suolo/valutazione-impatto-ambientale-progetti?pagina=100",
         "https://www.regione.lazio.it/imprese/tutela-ambientale-difesa-suolo/valutazione-impatto-ambientale-progetti?pagina=96",
         "https://www.regione.lazio.it/imprese/tutela-ambientale-difesa-suolo/valutazione-impatto-ambientale-progetti?pagina=97",
         "https://www.regione.lazio.it/imprese/tutela-ambientale-difesa-suolo/valutazione-impatto-ambientale-progetti?pagina=98",
@@ -50050,19 +50270,19 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-10-05T16:02:06",
+    "generated_at": "2026-10-08T16:01:31",
     "input_file": "reports\\site\\data.json",
-    "records_before": 2017,
-    "records_after": 1747,
-    "merged_or_removed": 270,
-    "accepted_pairs": 406,
+    "records_before": 2027,
+    "records_after": 1754,
+    "merged_or_removed": 273,
+    "accepted_pairs": 415,
     "rejected_pairs": 981,
     "field_repairs": 68,
     "manual_actions": 14,
     "manual_proponent_overrides": 10,
     "manual_excluded_records": 4,
-    "suspicious_rows": 4,
-    "top_projects_excluded_suspicious": 4,
+    "suspicious_rows": 5,
+    "top_projects_excluded_suspicious": 5,
     "project_key_splits": 268,
     "project_key_conflict_groups": 72,
     "version": "v16",
@@ -50084,13 +50304,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-10-05T16:02:31",
+      "generated_at": "2026-10-08T16:02:02",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-10-05T16:03:08"
+    "derived_fields_rebuilt_at": "2026-10-08T16:02:32"
   }
 }
