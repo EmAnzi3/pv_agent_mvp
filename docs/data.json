@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-10-08 16:01:31",
-    "snapshot_file": "projects_snapshot_20261008_135939.csv",
-    "total_records": 1557,
-    "punctual_records": 1475,
+    "generated_at": "2026-10-15 16:15:04",
+    "snapshot_file": "projects_snapshot_20261015_141230.csv",
+    "total_records": 1565,
+    "punctual_records": 1483,
     "terna_records": 82,
-    "total_mw_punctual": 41420.244,
+    "total_mw_punctual": 41739.467,
     "total_mw_terna": 139880.808,
     "source_counts": [
       {
@@ -16,7 +16,7 @@
       {
         "source": "mase",
         "label": "MASE",
-        "count": 300
+        "count": 306
       },
       {
         "source": "toscana",
@@ -51,12 +51,12 @@
       {
         "source": "veneto",
         "label": "Veneto",
-        "count": 25
+        "count": 26
       },
       {
         "source": "calabria",
         "label": "Calabria",
-        "count": 24
+        "count": 25
       },
       {
         "source": "basilicata",
@@ -87,13 +87,13 @@
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 368,
-        "punctual_mw": 12400.568,
+        "punctual_count": 369,
+        "punctual_mw": 12441.998,
         "terna_count": 5,
         "terna_mw": 35148.673,
         "terna_practices": 0,
-        "total_mw": 47549.241,
-        "priority_score": 37.8
+        "total_mw": 47590.671,
+        "priority_score": 37.9
       },
       {
         "region": "Lazio",
@@ -107,13 +107,13 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 160,
-        "punctual_mw": 7513.179,
+        "punctual_count": 161,
+        "punctual_mw": 7567.679,
         "terna_count": 5,
         "terna_mw": 36092.939,
         "terna_practices": 0,
-        "total_mw": 43606.118,
-        "priority_score": 22.7
+        "total_mw": 43660.618,
+        "priority_score": 22.8
       },
       {
         "region": "Toscana",
@@ -126,6 +126,16 @@
         "priority_score": 20.5
       },
       {
+        "region": "Emilia-Romagna",
+        "punctual_count": 50,
+        "punctual_mw": 2222.513,
+        "terna_count": 5,
+        "terna_mw": 7793.866,
+        "terna_practices": 0,
+        "total_mw": 10016.379,
+        "priority_score": 6.3
+      },
+      {
         "region": "Lombardia",
         "punctual_count": 76,
         "punctual_mw": 1716.76,
@@ -136,23 +146,13 @@
         "priority_score": 6.3
       },
       {
-        "region": "Emilia-Romagna",
-        "punctual_count": 49,
-        "punctual_mw": 2173.121,
-        "terna_count": 5,
-        "terna_mw": 7793.866,
-        "terna_practices": 0,
-        "total_mw": 9966.987,
-        "priority_score": 6.2
-      },
-      {
         "region": "Sardegna",
-        "punctual_count": 30,
-        "punctual_mw": 1169.829,
+        "punctual_count": 31,
+        "punctual_mw": 1199.559,
         "terna_count": 5,
         "terna_mw": 15470.145,
         "terna_practices": 0,
-        "total_mw": 16639.974,
+        "total_mw": 16669.704,
         "priority_score": 5.8
       },
       {
@@ -167,13 +167,23 @@
       },
       {
         "region": "Veneto",
-        "punctual_count": 34,
-        "punctual_mw": 1438.368,
+        "punctual_count": 36,
+        "punctual_mw": 1497.363,
         "terna_count": 5,
         "terna_mw": 5872.546,
         "terna_practices": 0,
-        "total_mw": 7310.914,
-        "priority_score": 4.3
+        "total_mw": 7369.909,
+        "priority_score": 4.5
+      },
+      {
+        "region": "Calabria",
+        "punctual_count": 27,
+        "punctual_mw": 791.479,
+        "terna_count": 5,
+        "terna_mw": 2223.499,
+        "terna_practices": 0,
+        "total_mw": 3014.978,
+        "priority_score": 2.6
       },
       {
         "region": "Campania",
@@ -186,24 +196,14 @@
         "priority_score": 2.6
       },
       {
-        "region": "Calabria",
-        "punctual_count": 26,
-        "punctual_mw": 766.303,
-        "terna_count": 5,
-        "terna_mw": 2223.499,
-        "terna_practices": 0,
-        "total_mw": 2989.802,
-        "priority_score": 2.5
-      },
-      {
         "region": "Piemonte",
-        "punctual_count": 20,
-        "punctual_mw": 198.783,
+        "punctual_count": 21,
+        "punctual_mw": 258.783,
         "terna_count": 5,
         "terna_mw": 3742.605,
         "terna_practices": 0,
-        "total_mw": 3941.388,
-        "priority_score": 1.9
+        "total_mw": 4001.388,
+        "priority_score": 2.1
       },
       {
         "region": "Friuli-Venezia Giulia",
@@ -900,13 +900,13 @@
       ]
     },
     "quality": {
-      "punctual_records": 1475,
+      "punctual_records": 1483,
       "missing_mw": 139,
       "missing_region": 0,
       "missing_province": 6,
       "missing_municipality": 17,
       "missing_url": 0,
-      "province_deduced": 48,
+      "province_deduced": 49,
       "municipalities_deduced": 5
     },
     "quality_by_source": [
@@ -924,7 +924,7 @@
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 300,
+        "count": 306,
         "missing_mw": 1,
         "missing_province": 0,
         "missing_municipality": 3,
@@ -1001,24 +1001,24 @@
       {
         "source": "veneto",
         "source_label": "Veneto",
-        "count": 25,
+        "count": 26,
         "missing_mw": 4,
         "missing_province": 0,
         "missing_municipality": 1,
-        "province_deduced": 25,
+        "province_deduced": 26,
         "municipalities_deduced": 0,
-        "completeness_pct": 93.3
+        "completeness_pct": 93.6
       },
       {
         "source": "calabria",
         "source_label": "Calabria",
-        "count": 24,
+        "count": 25,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 1,
         "province_deduced": 0,
         "municipalities_deduced": 2,
-        "completeness_pct": 98.6
+        "completeness_pct": 98.7
       },
       {
         "source": "basilicata",
@@ -5745,7 +5745,7 @@
       "power_mw": 67.84,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=11&idTipoProcedura=3&idProgetto=21121&idProvenienza=2",
-      "updated_at": "2026-06-16T14:16:14.892338",
+      "updated_at": "2026-10-15T12:12:56.067491",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -7070,6 +7070,37 @@
       "project_key": "url:a8d4eb4e4b7e9fce"
     },
     {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto per la realizzazione di un impianto fotovoltaico, denominato \"Tortona 2\", di potenza pari a 60 MW, comprensivo alle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Tortona (AL), Pozzolo Formigaro (AL) e Frugarolo (AL).",
+      "proponent": "Margisolar S.r.l.",
+      "region": "Piemonte",
+      "province": "AL",
+      "municipalities": "TORTONA",
+      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
+      "power_mw": 60.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8788",
+      "updated_at": "2026-10-15T13:15:04.921122",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto per la realizzazione di un impianto fotovoltaico, denominato \"Tortona 2\", di potenza pari a 60 MW, comprensivo alle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Tortona (AL), Pozzolo Formigaro (AL) e Frugarolo (AL)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8788"
+      ],
+      "project_key": "url:910815a0c4750a6a"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -8189,6 +8220,37 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11842"
       ],
       "project_key": "url:3549de905dd811a0"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico evoluto di potenza pari a 54,5 MW, con sistema di accumulo integrato da 10 MW e relative opere di connessione alla RTN, da realizzarsi nel Comune di Troia (FG), in località V",
+      "proponent": "TROIA SUN S.R.L.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "Troia",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 54.5,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6479",
+      "updated_at": "2026-10-15T13:19:00.176550",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico evoluto di potenza pari a 54,5 MW, con sistema di accumulo integrato da 10 MW e relative opere di connessione alla RTN, da realizzarsi nel Comune di Troia (FG), in località V"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6479"
+      ],
+      "project_key": "url:5a401f04a8e47d7c"
     },
     {
       "source": "mase_provvedimenti",
@@ -9718,6 +9780,37 @@
       "project_key": "url:bf46f2709b6db520"
     },
     {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un impianto fotovoltaico di potenza elettrica complessiva di 49,392 MWp nel territorio comunale di Poggiorenatico (FE), denominato \"FERRARA SUD\".",
+      "proponent": "PR SOLAR S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "FE",
+      "municipalities": "FERRARA",
+      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
+      "power_mw": 49.392,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8212",
+      "updated_at": "2026-10-15T13:15:04.921122",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto fotovoltaico di potenza elettrica complessiva di 49,392 MWp nel territorio comunale di Poggiorenatico (FE), denominato \"FERRARA SUD\"."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8212"
+      ],
+      "project_key": "url:8eb70dab121fd1a0"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -9730,7 +9823,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-10-08T13:34:21.340633",
+      "updated_at": "2026-10-15T13:57:57.341446",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -12050,6 +12143,37 @@
       "project_key": "url:fdb4af89719749ea"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Troina II\", di potenza pari a 41,43 MW, con sistema di accumulo integrato da 12 MW e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Tro",
+      "proponent": "TAU SOLAR S.R.L.",
+      "region": "Sicilia",
+      "province": "EN",
+      "municipalities": "Troina",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 41.43,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6487",
+      "updated_at": "2026-10-15T13:19:00.176550",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Troina II\", di potenza pari a 41,43 MW, con sistema di accumulo integrato da 12 MW e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Tro"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6487"
+      ],
+      "project_key": "url:eede74946c3f3080"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -13043,6 +13167,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6119"
       ],
       "project_key": "url:a8c8f30dd1abb766"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un nuovo impianto integrato agri-voltaico da realizzarsi nel comune di Adria (RO) denominato \"Impianto agrivoltaico Adria Bellombra\" e con una potenza nominale di 39.195 kWp\"",
+      "proponent": "SUNCO SUN RED S.r.l.",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Adria",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 39.195,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6486",
+      "updated_at": "2026-10-15T13:19:00.176550",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un nuovo impianto integrato agri-voltaico da realizzarsi nel comune di Adria (RO) denominato \"Impianto agrivoltaico Adria Bellombra\" e con una potenza nominale di 39.195 kWp\""
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6486"
+      ],
+      "project_key": "url:7e483583930f013e"
     },
     {
       "source": "toscana_atos",
@@ -16144,6 +16299,37 @@
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
+      "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di impianto agrivoltaico denominato \"Mulas FV\" della potenza di 29,73 MWp e delle relative opere di connessione alla RTN in zona agricola del Comune di Sassari (SS) in località Lughia",
+      "proponent": "PIVEXO TRAMONTANA S.r.l.",
+      "region": "Sardegna",
+      "province": "SS",
+      "municipalities": "Sassari",
+      "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
+      "power_mw": 29.73,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6492",
+      "updated_at": "2026-10-15T14:12:25.070451",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di impianto agrivoltaico denominato \"Mulas FV\" della potenza di 29,73 MWp e delle relative opere di connessione alla RTN in zona agricola del Comune di Sassari (SS) in località Lughia"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6492"
+      ],
+      "project_key": "url:ab6a1fcf380964f8"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
       "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la Costruzione ed esercizio di un impianto per la produzione di energia elettrica da fonte rinnovabile solare fotovoltaica di potenza pari a 29,73 MWp da realizzare nel Comune di Canaro (RO) e delle",
       "proponent": "EG MARCO POLO S.r.l.",
       "region": "Veneto",
@@ -17567,6 +17753,37 @@
       "project_key": "url:125971e7a7b9d56a"
     },
     {
+      "source": "Calabria",
+      "source_group": "Calabria",
+      "source_label": "Calabria",
+      "title": "Provvedimento Autorizzatorio Unico Regionale (PAUR) – Pubblicazione documentazione tecnica di progetto ai sensi dell’art. 27-bis del D.Lgs. 152/2006 e ss.mm.ii. Impianto agrivoltaico di tipo elevato e avanzato denominato \"Fattoria Solare Torre di Mezzo\" di potenza pari a 25,176 MWp, con sistema di accumulo integrato da 6,096 MW da realizzarsi nel comune di Castrovillari (CS) e relative opere di connessione alla RTN",
+      "proponent": "Agriphaos Torre di Mezzo S.r.l",
+      "region": "Calabria",
+      "province": "CS",
+      "municipalities": "Castrovillari, Spezzano Albanese",
+      "project_type": "PAUR",
+      "power_mw": 25.176,
+      "status": "",
+      "url": "https://www.regione.calabria.it/bandi/agrivoltaico_agriphaos_torre_di_mezzo/",
+      "updated_at": "2026-10-15T13:13:43.179706",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Calabria"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Provvedimento Autorizzatorio Unico Regionale (PAUR) – Pubblicazione documentazione tecnica di progetto ai sensi dell’art. 27-bis del D.Lgs. 152/2006 e ss.mm.ii. Impianto agrivoltaico di tipo elevato e avanzato denominato \"Fattoria Solare Torre di Mezzo\" di potenza pari a 25,176 MWp, con sistema di accumulo integrato da 6,096 MW da realizzarsi nel comune di Castrovillari (CS) e relative opere di connessione alla RTN"
+      ],
+      "_dedupe_urls": [
+        "https://www.regione.calabria.it/bandi/agrivoltaico_agriphaos_torre_di_mezzo/"
+      ],
+      "project_key": "prj:dc2922136d1d7ef0"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -17641,7 +17858,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-10-08T13:34:21.340633",
+      "updated_at": "2026-10-15T13:57:57.341446",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19904,7 +20121,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-10-08T13:34:21.340633",
+      "updated_at": "2026-10-15T13:57:57.341446",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29585,7 +29802,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-10-08T13:34:21.340633",
+      "updated_at": "2026-10-15T13:57:57.341446",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29926,7 +30143,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-10-08T13:34:21.340633",
+      "updated_at": "2026-10-15T13:57:57.341446",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -32933,7 +33150,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-10-08T13:34:21.340633",
+      "updated_at": "2026-10-15T13:57:57.341446",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -45866,6 +46083,37 @@
       "project_key": "prj:6a6fab7c1f71510b"
     },
     {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
+      "title": "Progetto di impianto fotovoltaico a terra denominato \"Porto Viro FEV\" Comune di localizzazione: Porto Viro (RO)",
+      "proponent": "FOOD ENERGY VALLEY",
+      "region": "Veneto",
+      "province": "RO",
+      "municipalities": "Porto Viro (RO)",
+      "project_type": "Progetto di impianto fotovoltaico a terra denominato \"Porto Viro FEV\" Comune di localizzazione: Port",
+      "power_mw": 19.8,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/dSqkEd6P9aW8yfc",
+      "updated_at": "2026-10-15T12:12:27.049726",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di impianto fotovoltaico a terra denominato \"Porto Viro FEV\" Comune di localizzazione: Porto Viro (RO)"
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/dSqkEd6P9aW8yfc"
+      ],
+      "project_key": "prj:47218eaeacb2651f"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -50270,14 +50518,14 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-10-08T16:01:31",
+    "generated_at": "2026-10-15T16:15:04",
     "input_file": "reports\\site\\data.json",
-    "records_before": 2027,
-    "records_after": 1754,
+    "records_before": 2035,
+    "records_after": 1762,
     "merged_or_removed": 273,
     "accepted_pairs": 415,
     "rejected_pairs": 981,
-    "field_repairs": 68,
+    "field_repairs": 69,
     "manual_actions": 14,
     "manual_proponent_overrides": 10,
     "manual_excluded_records": 4,
@@ -50304,13 +50552,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-10-08T16:02:02",
+      "generated_at": "2026-10-15T16:15:46",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-10-08T16:02:32"
+    "derived_fields_rebuilt_at": "2026-10-15T16:16:17"
   }
 }
