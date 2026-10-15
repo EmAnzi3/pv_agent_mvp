@@ -4,6 +4,7 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-15 — Impostata a 19,8 MW la potenza del progetto Porto Viro FEV (FOOD ENERGY VALLEY), su indicazione dell'utente: correzione persistente associata all'URL esatto e applicata dal batch prima del ricalcolo dei riepiloghi e dei report.
 - 2026-10-05 — Rafforzato il collector Piemonte SKVIA: ricerca tramite l'evento reale del pulsante `Ricerca`, rimosso il filtro esclusivo `REGIONE PIEMONTE` per acquisire anche `SOGGETTO GESTORE RN2000`, ed esclusione dei procedimenti conclusi quando il dettaglio contiene un esito esplicitamente negativo. Aggiunto regression check sui record mancanti rilevati manualmente.
 - 2026-10-02 — Aggiunta correzione documentata della potenza per il nuovo progetto AG 31 di Castagnaro: 21,13886 MWp (21.138,86 kWp), mantenendo l'override AG 31 esistente.
 - 2026-09-10 — Corretta e protetta la localizzazione di Sesto al Reghena: PN / Friuli-Venezia Giulia indipendentemente dall'URL MASE; la correzione viene applicata prima del gate bloccante sia nella pipeline standalone sia nel batch completo.

@@ -184,6 +184,15 @@ PATCH_RULES = [
         "reason": "internal_project_documentation_states_power_is_32_008_mw",
     },
 
+    {
+        "name": "fix_veneto_porto_viro_fev_power",
+        "url": "https://sharing.regione.veneto.it/index.php/s/dSqkEd6P9aW8yfc",
+        "fields": {
+            "power_mw": 19.8,
+        },
+        "reason": "user_confirmed_power_19_8_mw_2026_10_15",
+    },
+
 ]
 
 
