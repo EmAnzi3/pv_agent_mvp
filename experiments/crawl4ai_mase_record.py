@@ -111,8 +111,7 @@ async def analyze(record, url, max_pdfs, out):
                         label = str(item.get("text") or item.get("title") or "").strip()
                         report["link_inventory"].append({"from":page_url, "text":label[:120], "url":href})
                         path = urlparse(href).path.lower()
-                        if ("vai al progetto" in label.lower() or "/oggetti/info/" in path or
-                            "/procedure/" in path) and href not in project_links:
+                        if ("vai al progetto" in label.lower() or "/oggetti/info/" in path) and href not in project_links:
                             project_links.append(href)
                         if (path.endswith(".pdf") or "scarica il provvedimento" in label.lower() or
                             "/documenti/" in path or "/download/" in path or
@@ -151,6 +150,7 @@ async def analyze(record, url, max_pdfs, out):
     dest = Path(out)
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("PILOT_DIAGNOSTICS=" + json.dumps({"project_links":report["project_links"], "discovered_attachments":report["discovered_attachments"], "pdfs":report["pdfs"], "errors":report["errors"], "link_inventory":report["link_inventory"][:80]}, ensure_ascii=False))
     print(json.dumps({"record": report["existing_record"], "url":url, "pdfs":len(report["pdfs"]),
                       "findings":len(report["findings"]), "errors":len(report["errors"]), "report":str(dest)},
                      ensure_ascii=False))
