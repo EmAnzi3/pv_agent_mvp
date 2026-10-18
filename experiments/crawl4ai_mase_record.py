@@ -158,6 +158,11 @@ async def analyze(record, url, max_pdfs, out):
     dest = Path(out)
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    pdf_hits = [hit for hit in report["findings"] if hit["source_kind"] == "pdf"]
+    per_field = {key: sum(1 for hit in pdf_hits if hit["field"] == key) for key in FIELDS}
+    print("PDF_EVIDENCE_SUMMARY=" + json.dumps({"pdf_findings_total":len(pdf_hits), "by_field":per_field,
+          "samples":pdf_hits[:25], "discovered_count":len(discovered),
+          "unprocessed_count":len(report["unprocessed_pdf_links"])}, ensure_ascii=False))
     print("PILOT_DIAGNOSTICS=" + json.dumps({"project_links":report["project_links"], "discovered_attachments":report["discovered_attachments"], "pdfs":report["pdfs"], "errors":report["errors"], "link_inventory":report["link_inventory"][:80]}, ensure_ascii=False))
     print(json.dumps({"record": report["existing_record"], "url":url, "pdfs":len(report["pdfs"]),
                       "findings":len(report["findings"]), "errors":len(report["errors"]), "report":str(dest)},
