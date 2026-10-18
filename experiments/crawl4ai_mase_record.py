@@ -85,22 +85,44 @@ async def analyze(record, url, max_pdfs, out):
         "warning": "No canonical updates. Matches are not validated facts or verified corporate roles."
     }
     discovered = []
+    project_links = []
+    report["link_inventory"] = []
     try:
         async with AsyncWebCrawler() as crawler:
-            result = await crawler.arun(url=url, config=CrawlerRunConfig(page_timeout=45000))
-            if not result.success:
-                raise RuntimeError(str(result.error_message))
-            text = str(result.markdown or "")
-            report["html"] = {"sha256_extracted_text": hashlib.sha256(text.encode()).hexdigest(), "length": len(text)}
-            report["findings"].extend(snippets(text, url, "html"))
-            for group in (result.links or {}).values():
-                for item in group:
-                    link = safe_url(item.get("href"), url)
-                    if link and (urlparse(link).path.lower().endswith(".pdf") or "/documenti/" in link.lower()):
-                        if link not in discovered:
-                            discovered.append(link)
+            to_visit = [(url, "provvedimento")]
+            visited = set()
+            while to_visit and len(visited) < 2:
+                page_url, kind = to_visit.pop(0)
+                if page_url in visited:
+                    continue
+                visited.add(page_url)
+                result = await crawler.arun(url=page_url, config=CrawlerRunConfig(page_timeout=45000))
+                if not result.success:
+                    raise RuntimeError(str(result.error_message))
+                text = str(result.markdown or "")
+                report["html"][kind] = {"url": page_url, "sha256_extracted_text": hashlib.sha256(text.encode()).hexdigest(),
+                                        "length": len(text)}
+                report["findings"].extend(snippets(text, page_url, "html"))
+                for group in (result.links or {}).values():
+                    for item in group:
+                        href = safe_url(item.get("href"), page_url)
+                        if not href:
+                            continue
+                        label = str(item.get("text") or item.get("title") or "").strip()
+                        report["link_inventory"].append({"from":page_url, "text":label[:120], "url":href})
+                        path = urlparse(href).path.lower()
+                        if ("vai al progetto" in label.lower() or "/oggetti/info/" in path or
+                            "/procedure/" in path) and href not in project_links:
+                            project_links.append(href)
+                        if (path.endswith(".pdf") or "scarica il provvedimento" in label.lower() or
+                            "/documenti/" in path or "/download/" in path or
+                            "/file/" in path) and href not in discovered:
+                            discovered.append(href)
+                if kind == "provvedimento" and project_links:
+                    to_visit.append((project_links[0], "progetto"))
     except Exception as exc:
         report["errors"].append({"url": url, "stage": "crawl", "error": str(exc)[:400]})
+    report["project_links"] = project_links
     report["discovered_attachments"] = discovered
     # PDF extraction is separate from Crawl4AI, with original bytes hashed and source page references.
     import requests
