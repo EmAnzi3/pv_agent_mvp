@@ -91,7 +91,7 @@ async def analyze(record, url, max_pdfs, out):
         async with AsyncWebCrawler() as crawler:
             to_visit = [(url, "provvedimento")]
             visited = set()
-            while to_visit and len(visited) < 2:
+            while to_visit and len(visited) < 3:
                 page_url, kind = to_visit.pop(0)
                 if page_url in visited:
                     continue
@@ -119,6 +119,11 @@ async def analyze(record, url, max_pdfs, out):
                             discovered.append(href)
                 if kind == "provvedimento" and project_links:
                     to_visit.append((project_links[0], "progetto"))
+                elif kind == "progetto":
+                    docs = [item["url"] for item in report["link_inventory"]
+                            if item["from"] == page_url and "/oggetti/documentazione/" in item["url"].lower()]
+                    if docs:
+                        to_visit.append((docs[0], "documentazione"))
     except Exception as exc:
         report["errors"].append({"url": url, "stage": "crawl", "error": str(exc)[:400]})
     report["project_links"] = project_links
@@ -132,8 +137,11 @@ async def analyze(record, url, max_pdfs, out):
             resp = requests.get(pdf_url, timeout=35, headers={"User-Agent": "PV-Agent-Research/1.0"})
             resp.raise_for_status()
             content = resp.content
+            entry["http_status"] = resp.status_code
+            entry["content_type"] = resp.headers.get("Content-Type", "")
+            entry["content_length"] = len(content)
             if not content.startswith(b"%PDF") or len(content) > 30_000_000:
-                raise ValueError("Not a PDF or PDF exceeds 30 MB")
+                raise ValueError(f"Response is not a PDF or exceeds 30 MB; status={resp.status_code}, type={entry[\'content_type\']}, bytes={len(content)}")
             reader = PdfReader(io.BytesIO(content))
             entry.update({"status": "parsed", "sha256_original_pdf": hashlib.sha256(content).hexdigest(),
                           "page_count": len(reader.pages)})
