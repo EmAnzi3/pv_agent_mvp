@@ -28,7 +28,7 @@ jobs:
       - name: Live MASE 6479 crawl (review only)
         continue-on-error: true
         run: |
-          python experiments/crawl4ai_mase_record.py --url 'https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6479' --max-pdfs 3 2>&1 | tee crawl4ai-run.log
+          python experiments/crawl4ai_mase_record.py --url 'https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6479' --max-pdfs 10 2>&1 | tee crawl4ai-run.log
           exit ${PIPESTATUS[0]}
       - name: Upload benchmark traces
         if: always()
