@@ -20,3 +20,15 @@ The default report is `reports/crawl4ai/mase-record-pilot.json`, with the select
 Compare with the original source and the existing MASE collector. Verify that identified links actually belong to the selected project; PDF mentions are only unverified candidates. The prototype deliberately does **not** infer EPC, suppliers, permits or authorization outcomes from proximity of words. It does not follow pagination or JavaScript-triggered downloads outside extracted hrefs. PDF scan/OCR and indirect download endpoints are not supported. Any missing reference remains missing.
 
 **Status:** code prepared; live crawl has not been run or benchmarked yet. Do not merge until real-source validation.
+
+## Pinned real-world test — MASE provvedimento 6479
+
+The supplied public URL is:
+`https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6479`
+
+Run:
+```bash
+python experiments/crawl4ai_mase_record.py --url 'https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6479' --max-pdfs 3
+```
+
+**Fail-closed requirement:** the supplied URL must be present in one record in `docs/data.json` (including its nested sources); if not found the experiment stops and reports the missing association instead of crawling a different project. Current public MASE pages mention a security-related temporary suspension; no live document extraction has been verified for this URL. A provvedimento page is not necessarily the full document index for the underlying project. Do not infer annex coverage.
