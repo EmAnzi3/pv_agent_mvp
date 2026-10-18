@@ -27,11 +27,12 @@ MASE_HOSTS = ("va.mite.gov.it", "va.minambiente.it", "va.mase.gov.it")
 URL_KEYS = ("source_url", "url", "detail_url", "project_url", "link")
 SOURCE_KEYS = ("source", "source_name", "source_id", "fonte", "authority")
 
-def choose_existing_mase_record(data, title_filter=""):
+def choose_existing_mase_record(data, title_filter="", exact_url=""):
     records = data.get("records")
     if not isinstance(records, list):
         raise ValueError("docs/data.json: records must be an array")
     matches = []
+    exact_url = exact_url.rstrip("/")
     for row in records:
         if not isinstance(row, dict):
             continue
@@ -42,6 +43,12 @@ def choose_existing_mase_record(data, title_filter=""):
                 if isinstance(source, dict):
                     urls.extend(str(source.get(k) or "").strip() for k in URL_KEYS)
         url = next((u for u in urls if urlparse(u).hostname in MASE_HOSTS and urlparse(u).scheme == "https"), None)
+        if exact_url:
+            candidate_urls = set(re.findall(r"https?://[^\s\\\"'<>]+", json.dumps(row, ensure_ascii=False)))
+            candidate_urls.update(urls)
+            if not any(u.rstrip("/").rstrip(".,)") == exact_url for u in candidate_urls):
+                continue
+            url = exact_url
         if not url:
             continue
         title = str(row.get("title") or row.get("project_name") or "")
@@ -131,12 +138,13 @@ def main():
     parser.add_argument("--data", default="docs/data.json")
     parser.add_argument("--title-contains", default="", help="Optional substring to choose a specific existing MASE record")
     parser.add_argument("--max-pdfs", type=int, default=3)
+    parser.add_argument("--url", default="", help="Require an exact URL linked in an existing record")
     parser.add_argument("--out", default="reports/crawl4ai/mase-record-pilot.json")
     args = parser.parse_args()
     if args.max_pdfs < 0 or args.max_pdfs > 10:
         parser.error("--max-pdfs must be between 0 and 10")
     data = json.loads(Path(args.data).read_text(encoding="utf-8-sig"))
-    record, url = choose_existing_mase_record(data, args.title_contains)
+    record, url = choose_existing_mase_record(data, args.title_contains, args.url)
     asyncio.run(analyze(record, url, args.max_pdfs, args.out))
 
 if __name__ == "__main__":
