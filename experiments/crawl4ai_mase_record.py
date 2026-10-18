@@ -141,7 +141,7 @@ async def analyze(record, url, max_pdfs, out):
             entry["content_type"] = resp.headers.get("Content-Type", "")
             entry["content_length"] = len(content)
             if not content.startswith(b"%PDF") or len(content) > 30_000_000:
-                raise ValueError(f"Response is not a PDF or exceeds 30 MB; status={resp.status_code}, type={entry[\'content_type\']}, bytes={len(content)}")
+                raise ValueError("Response not PDF or too large: status=%s, content_type=%s, bytes=%s" % (resp.status_code, entry["content_type"], len(content)))
             reader = PdfReader(io.BytesIO(content))
             entry.update({"status": "parsed", "sha256_original_pdf": hashlib.sha256(content).hexdigest(),
                           "page_count": len(reader.pages)})
