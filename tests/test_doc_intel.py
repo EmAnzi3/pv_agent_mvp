@@ -544,6 +544,28 @@ class RowTables(unittest.TestCase):
         self.assertTrue(all(p.qualifiers["object"] == "centroid" for p in pts))
 
 
+class Probe(unittest.TestCase):
+    def test_pick_samples_prefers_procedure_urls_and_excludes_mase(self):
+        from doc_intel.probe import pick_samples
+        recs = [{"source": "piemonte", "url": "http://x/archive", "power_mw": 5},
+                {"source": "piemonte", "url": "http://x/archive", "power_mw": 9},
+                {"source": "veneto", "url": "https://s/index.php/s/AAAA", "power_mw": 1},
+                {"source": "veneto", "url": "https://s/index.php/s/BBBB", "power_mw": 7},
+                {"source": "mase", "url": "https://va.mite.gov.it/x"}]
+        s = pick_samples(recs)
+        self.assertEqual(sorted(s), ["piemonte", "veneto"])
+        self.assertFalse(s["piemonte"]["url_identifies_procedure"])
+        self.assertEqual(s["veneto"]["url"], "https://s/index.php/s/BBBB")
+
+    def test_classify_links(self):
+        from doc_intel.probe import classify_links
+        html = ('<html><title>Pratica</title><a href="/doc/rel.pdf">Relazione</a><a href="?pagina=2">2</a>'
+                '<a href="https://app.box.com/s/abcdefghij">box</a><a href="/chi-siamo">chi siamo</a></html>')
+        c = classify_links(html, "https://ente.it/pratica/1")
+        self.assertEqual(c["doc_link_count"], 2)
+        self.assertEqual(len(c["pager_links"]), 1)
+
+
 class NoHardcodedBenchmarks(unittest.TestCase):
     def test_toolbox_has_no_benchmark_ids(self):
         for py in (ROOT / "doc_intel").rglob("*.py"):

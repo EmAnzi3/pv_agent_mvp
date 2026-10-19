@@ -1,0 +1,48 @@
+name: Doc Intel regional probe (one sample per source)
+# Phase 5: fetch one canonical record per regional source with HTTP and a rendered browser,
+# classify document links, sample downloads and report the acquisition method. Review only.
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'doc_intel/probe.py'
+      - '.github/workflows/doc-intel-probe.yml'
+permissions:
+  contents: read
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      sources: ${{ steps.list.outputs.sources }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install requests beautifulsoup4 pypdf
+      - id: list
+        run: echo "sources=$(python -m doc_intel probe --list)" >> "$GITHUB_OUTPUT"
+  probe:
+    needs: plan
+    strategy:
+      fail-fast: false
+      matrix:
+        source: ${{ fromJson(needs.plan.outputs.sources) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python -m pip install requests beautifulsoup4 pypdf playwright
+          python -m playwright install --with-deps chromium
+      - name: Probe sample record
+        run: python -m doc_intel probe --source "${{ matrix.source }}" --render --out reports/probe
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: probe-${{ matrix.source }}
+          path: reports/probe/
+          retention-days: 30

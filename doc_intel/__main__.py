@@ -39,6 +39,12 @@ def main(argv: list[str] | None = None) -> int:
     g.add_argument("--dossier", required=True)
     g.add_argument("--slice", type=int, default=0, help="GitHub allows 10 notices per step: run one step per slice")
     g.add_argument("--slices", type=int, default=1)
+    pr = sub.add_parser("probe", help="probe one sample record of a regional source")
+    pr.add_argument("--data", default="docs/data.json")
+    pr.add_argument("--source", help="source name; omit with --list to print the sources")
+    pr.add_argument("--list", action="store_true")
+    pr.add_argument("--render", action="store_true", help="also render with Playwright")
+    pr.add_argument("--out", default="reports/probe")
     m = sub.add_parser("render")
     m.add_argument("--dossier", required=True)
     a = ap.parse_args(argv)
@@ -81,11 +87,47 @@ def main(argv: list[str] | None = None) -> int:
             part = part.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
             print(f"::notice title={title}::{part}")
         return 0
+    if a.cmd == "probe":
+        from .canonical import load_records
+        from .probe import pick_samples, probe_url, summary_line
+        samples = pick_samples(load_records(a.data))
+        if a.list:
+            print(json.dumps(sorted(samples)))
+            return 0
+        sample = samples[a.source]
+        render_fn = _playwright_renderer() if a.render else None
+        res = probe_url(sample["url"], render=render_fn)
+        out = Path(a.out)
+        out.mkdir(parents=True, exist_ok=True)
+        (out / f"probe-{a.source}.json").write_text(json.dumps({"sample": sample, "result": res}, ensure_ascii=False,
+                                                               indent=1, default=str), encoding="utf-8")
+        line = json.dumps(summary_line(a.source, sample, res), ensure_ascii=False, default=str)
+        for k, i in enumerate(range(0, len(line), 3900)):
+            part = line[i:i + 3900].replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+            print(f"::notice title=probe-{a.source}#{k + 1}of{-(-len(line) // 3900)}::{part}")
+        return 0
     if a.cmd == "render":
         d = json.loads(Path(a.dossier).read_text(encoding="utf-8"))
         sys.stdout.write(render(d))
         return 0
     return 2
+
+
+def _playwright_renderer():
+    def render(url: str) -> str:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            b = p.chromium.launch(headless=True)
+            page = b.new_page()
+            page.goto(url, wait_until="domcontentloaded", timeout=60000)
+            try:
+                page.wait_for_load_state("networkidle", timeout=20000)
+            except Exception:
+                pass
+            html = page.content()
+            b.close()
+            return html
+    return render
 
 
 def digest(d: dict) -> list[tuple[str, dict]]:
