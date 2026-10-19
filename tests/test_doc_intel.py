@@ -1,0 +1,388 @@
+"""Offline tests for the doc_intel toolbox (no network, no canonical writes)."""
+from __future__ import annotations
+
+import json
+import math
+import re
+import tempfile
+import unittest
+from pathlib import Path
+
+from doc_intel.adapters.mase import MaseAdapter
+from doc_intel.canonical import compare, find_by_url
+from doc_intel.dossier import render
+from doc_intel.extract import extract_all
+from doc_intel.extract.context import PageContext, parse_number
+from doc_intel.extract.entities import valid_vat_it
+from doc_intel.extract.geo import utm_to_latlon
+from doc_intel.fetch import Fetcher, sniff
+from doc_intel.gates import proposal_gates
+from doc_intel.metrics import evaluate
+from doc_intel.parse import OcrBudget, extract_pages
+from doc_intel.pipeline import build_proposal, run
+from doc_intel.reconcile import group
+from doc_intel.store import Store
+from tests.doc_intel_fixtures import FakeSession, make_pdf, make_zip
+
+ROOT = Path(__file__).resolve().parents[1]
+U = "https://va.mite.gov.it/File/Documento/"
+
+
+def page(text, doc="1", n=1, title=None, proc="P1"):
+    return PageContext(text, U + doc, n, "sha" + doc, None, proc, title)
+
+
+def latlon_to_utm(lat, lon, zone):
+    """Forward Transverse Mercator (test-only) for round-trip checks."""
+    a, f, k0 = 6378137.0, 1 / 298.257223563, 0.9996
+    e2 = f * (2 - f); ep2 = e2 / (1 - e2)
+    phi, lam = math.radians(lat), math.radians(lon)
+    lam0 = math.radians((zone - 1) * 6 - 180 + 3)
+    n = a / math.sqrt(1 - e2 * math.sin(phi) ** 2)
+    t = math.tan(phi) ** 2; c = ep2 * math.cos(phi) ** 2; A = math.cos(phi) * (lam - lam0)
+    m = a * ((1 - e2 / 4 - 3 * e2 ** 2 / 64 - 5 * e2 ** 3 / 256) * phi
+             - (3 * e2 / 8 + 3 * e2 ** 2 / 32 + 45 * e2 ** 3 / 1024) * math.sin(2 * phi)
+             + (15 * e2 ** 2 / 256 + 45 * e2 ** 3 / 1024) * math.sin(4 * phi)
+             - (35 * e2 ** 3 / 3072) * math.sin(6 * phi))
+    x = k0 * n * (A + (1 - t + c) * A ** 3 / 6 + (5 - 18 * t + t ** 2 + 72 * c - 58 * ep2) * A ** 5 / 120) + 500000
+    y = k0 * (m + n * math.tan(phi) * (A ** 2 / 2 + (5 - t + 9 * c + 4 * c ** 2) * A ** 4 / 24
+                                        + (61 - 58 * t + t ** 2 + 600 * c - 330 * ep2) * A ** 6 / 720))
+    return x, y
+
+
+class NumberParsing(unittest.TestCase):
+    def test_italian_numbers(self):
+        self.assertEqual(parse_number("54,5"), 54.5)
+        self.assertEqual(parse_number("1.234,56"), 1234.56)
+        self.assertEqual(parse_number("60.000"), 60000)
+        self.assertEqual(parse_number("0.710"), 0.71)
+        self.assertEqual(parse_number("4972345.12"), 4972345.12)
+
+
+class Entities(unittest.TestCase):
+    def test_vat_checksum_and_association(self):
+        facts = extract_all([page("MARGISOLAR S.r.l. - P.IVA 03920651209 - PEC margisolar@legalmail.it")])
+        vat = [f for f in facts if f.field == "company.vat"][0]
+        self.assertEqual(vat.subject, "MARGISOLAR S.r.l.")
+        self.assertTrue(vat.qualifiers["checksum_ok"])
+        self.assertEqual(vat.qualifiers["subject_association"], "same_line")
+        self.assertEqual(vat.status, "candidate")  # checksum never makes it 'verified'
+        pec = [f for f in facts if f.field == "contact.pec"][0]
+        self.assertEqual(pec.value, "margisolar@legalmail.it")
+
+    def test_invalid_vat_rejected(self):
+        self.assertFalse(valid_vat_it("03920651208"))
+        facts = extract_all([page("ACME S.r.l. P.IVA 03920651208")])
+        self.assertEqual([f.status for f in facts if f.field == "company.vat"], ["rejected"])
+
+    def test_margisolar_two_vats_is_conflict(self):
+        facts = extract_all([page("MARGISOLAR S.r.l. P.IVA 03920651209", doc="805858"),
+                             page("MARGISOLAR S.R.L. P.IVA 03920631201", doc="805857")])
+        groups = group(facts)
+        multi = [g for g in groups if g["field"] == "company.multiple_vat"]
+        self.assertEqual(len(multi), 1)
+        self.assertEqual(multi[0]["values"], ["03920631201", "03920651209"])
+
+    def test_roles_only_from_labels(self):
+        facts = extract_all([page("Progettista: Arch. Antonio Manco\nTecnico: Geol. Fabio Di Feo\n"
+                                  "INTEGRA s.r.l. email integra@integraingegneria.it")])
+        roles = {(f.field, f.value) for f in facts if f.field.startswith("role.")}
+        self.assertIn(("role.designer", "Arch. Antonio Manco"), roles)
+        # INTEGRA appears without a role label: no role is invented
+        self.assertFalse(any("INTEGRA" in str(v) for _, v in roles))
+
+    def test_conditional_contractor_is_rejected(self):
+        facts = extract_all([page("Impresa esecutrice: ROSSI COSTRUZIONI S.p.A. sarà individuata in fase di gara")])
+        epc = [f for f in facts if f.field == "role.contractor"]
+        self.assertTrue(epc and all(f.status == "rejected" for f in epc))
+
+    def test_explicit_contractor_requires_human_gate(self):
+        facts = extract_all([page("Impresa esecutrice: ROSSI COSTRUZIONI S.p.A.")])
+        groups = group(facts)
+        prop = build_proposal(facts, groups)
+        gates = proposal_gates(prop, facts, groups)
+        row = [g for g in gates if g["item"] == "role.contractor"][0]
+        self.assertTrue(row["blocking"])
+
+
+class Technical(unittest.TestCase):
+    def test_pv_dc_ac_bess_not_summed(self):
+        facts = extract_all([page("Impianto agrivoltaico di potenza 60 MWp lato DC e 50 MW lato AC.\n"
+                                  "Sistema di accumulo BESS da 10 MW / 40 MWh.")])
+        got = {(f.field, f.value) for f in facts if f.field.startswith("tech.")}
+        self.assertIn(("tech.pv_dc_mwp", 60.0), got)
+        self.assertIn(("tech.pv_ac_mw", 50.0), got)
+        self.assertIn(("tech.bess_power_mw", 10.0), got)
+        self.assertIn(("tech.bess_energy_mwh", 40.0), got)
+        self.assertNotIn(("tech.pv_dc_mwp", 110.0), got)
+
+    def test_inverter_and_module(self):
+        facts = extract_all([page("Inverter da 350 kW: 168\nGeneratori fotovoltaici da 0,710 kWp\n"
+                                  "tracker monoassiali con moduli bifacciali da 710 Wp")])
+        got = {(f.field, f.value) for f in facts}
+        self.assertIn(("tech.inverter_count", 168), got)
+        self.assertIn(("tech.inverter_power_kw", 350.0), got)
+        self.assertIn(("tech.module_power_wp", 710.0), got)
+        self.assertIn(("tech.mounting", "single_axis_tracker"), got)
+        self.assertFalse(any(f == "tech.nominal_power_mw" for f, _ in got))  # 350 kW is not a plant power
+
+    def test_grid_voltage_needs_grid_context(self):
+        a = extract_all([page("Connessione alla RTN tramite sezione a 36 kV della SE Terna")])
+        b = extract_all([page("Cavo di segnale da 36 kV di prova")])
+        self.assertTrue(any(f.field == "grid.voltage_kv" for f in a))
+        self.assertFalse(any(f.field == "grid.voltage_kv" for f in b))
+
+    def test_historical_power_is_conflict_not_overwrite(self):
+        facts = extract_all([page("Potenza complessiva 54,9 MWp", doc="old", title="Relazione tecnica"),
+                             page("Potenza complessiva 54,5 MWp", doc="dec", title="Decreto VIA")])
+        g = [x for x in group(facts) if x["field"] == "tech.pv_dc_mwp"][0]
+        self.assertEqual(g["status"], "conflict")
+        self.assertEqual(g["preference_hint"]["value"], 54.5)
+        self.assertFalse(g["preference_hint"]["binding"])
+
+
+class Geo(unittest.TestCase):
+    def test_central_meridian_known_value(self):
+        lat, lon = utm_to_latlon(500000, 4982950.4, 32)
+        self.assertAlmostEqual(lon, 9.0, places=6)
+        self.assertAlmostEqual(lat, 45.0, places=4)
+
+    def test_round_trip_italy(self):
+        for lat, lon, zone in ((44.85, 8.81, 32), (41.39, 15.31, 33), (46.5, 11.4, 32), (37.5, 14.0, 33)):
+            e, n = latlon_to_utm(lat, lon, zone)
+            la, lo = utm_to_latlon(e, n, zone)
+            self.assertAlmostEqual(la, lat, places=5)
+            self.assertAlmostEqual(lo, lon, places=5)
+
+    def test_cabin_coordinate_is_not_plant(self):
+        txt = "Coordinate UTM WGS84 Fuso 33\nCabina di consegna 512345.10 4581234.20"
+        facts = extract_all([page(txt)])
+        pt = [f for f in facts if f.field == "geo.utm_point"][0]
+        self.assertEqual(pt.qualifiers["object"], "cabin")
+        self.assertIn("NOT the plant", pt.limits)
+        prop = [{"field": "geo.utm_point", "fact_id": pt.fact_id()}]
+        self.assertTrue(proposal_gates(prop, facts, group(facts))[0]["blocking"])
+
+    def test_vertex_table_builds_polygon(self):
+        # square of 300 m x 300 m = 9 ha, explicit zone 32
+        txt = ("Coordinate dei vertici delle aree - sistema UTM WGS84 32N\nArea A\n"
+               "V1 488000.00 4968000.00\nV2 488300.00 4968000.00\nV3 488300.00 4968300.00\nV4 488000.00 4968300.00\n")
+        facts = extract_all([page(txt, doc="805873", n=60)])
+        poly = [f for f in facts if f.field == "geo.area_polygon"]
+        self.assertEqual(len(poly), 1)
+        self.assertEqual(poly[0].subject, "A")
+        self.assertAlmostEqual(poly[0].value["area_ha"], 9.0, places=2)
+        self.assertEqual(poly[0].value["crs"], "EPSG:32632")
+        self.assertIsNotNone(poly[0].value["geojson"])
+
+    def test_zone_unknown_is_not_converted(self):
+        facts = extract_all([page("Vertici area\nV1 488000.00 4968000.00")])
+        pt = [f for f in facts if f.field == "geo.utm_point"][0]
+        self.assertNotIn("lat", pt.qualifiers)
+        self.assertIn("zone not stated", pt.limits)
+
+    def test_pvgis_point(self):
+        facts = extract_all([page("Simulazione PVGIS - coordinate 41.3901, 15.3102")])
+        pt = [f for f in facts if f.field == "geo.latlon_point"][0]
+        self.assertEqual(pt.qualifiers["object"], "simulation_point")
+
+
+class Schedule(unittest.TestCase):
+    def test_safety_plan_date_is_template(self):
+        txt = "PIANO DI SICUREZZA E COORDINAMENTO\nDati del cantiere\nInizio lavori: 01/09/2026\nDurata presunta: 18 mesi"
+        facts = extract_all([page(txt, doc="1439043", n=133)])
+        d = [f for f in facts if f.field == "schedule.date.construction_start"][0]
+        self.assertEqual(d.value, "2026-09-01")
+        self.assertEqual(d.temporal, "template_reference")
+        prop = [{"field": d.field, "fact_id": d.fact_id()}]
+        self.assertTrue(proposal_gates(prop, facts, group(facts))[0]["blocking"])
+
+    def test_gantt_date_is_planned_not_event(self):
+        facts = extract_all([page("Cronoprogramma dei lavori\nInizio lavori previsto: settembre 2026")])
+        d = [f for f in facts if f.field.startswith("schedule.date.")][0]
+        self.assertEqual(d.temporal, "planned")
+        self.assertEqual(d.value, "2026-09")
+
+    def test_occurred_event(self):
+        facts = extract_all([page("Con verbale di consegna lavori, in data 01/09/2026 sono iniziati i lavori (inizio lavori)")])
+        d = [f for f in facts if f.field.startswith("schedule.date.")][0]
+        self.assertEqual(d.temporal, "event_occurred")
+
+    def test_durations_scope_and_scenario(self):
+        txt = ("Con squadre in parallelo la realizzazione richiederà 10-12 mesi.\n"
+               "La durata dei lavori di costruzione è stimata in 18 mesi.\n"
+               "Le attività di dismissione e ripristino avranno durata pari a 16 mesi.")
+        facts = extract_all([page(txt)])
+        d = {(f.field, f.value["max"], f.temporal) for f in facts if f.field.startswith("schedule.duration")}
+        self.assertIn(("schedule.duration.construction", 12, "scenario"), d)
+        self.assertIn(("schedule.duration.construction", 18, "relative_duration"), d)
+        self.assertIn(("schedule.duration.decommissioning", 16, "relative_duration"), d)
+        self.assertFalse(any(f.field.startswith("schedule.date") for f in facts))  # no invented dates
+
+
+class Fetching(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.store = Store(self.tmp.name)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_signatures(self):
+        self.assertEqual(sniff(make_pdf(["x"])), "pdf")
+        self.assertEqual(sniff(make_zip({"a.pdf": make_pdf(["x"])})), "zip")
+        self.assertEqual(sniff(b"<!DOCTYPE html><html>"), "html")
+
+    def test_zip_cache_revision_and_failure(self):
+        z = make_zip({"decreto.pdf": make_pdf(["Decreto"]), "note.txt": b"x", "inner.zip": make_zip({"b.pdf": make_pdf(["B"])})})
+        sess = FakeSession({U + "1": z, U + "2": IOError("reset")})
+        f = Fetcher(self.store, session=sess, retries=1, sleeper=lambda s: None)
+        man = {"source": "mase", "project_id": "t", "documents": {}}
+        r = f.fetch(U + "1", man)
+        self.assertEqual(r.state, "new")
+        self.assertEqual(sorted(m.name for m in r.members), ["decreto.pdf", "inner.zip/b.pdf"])
+        self.assertEqual(r.skipped_members[0]["name"], "note.txt")
+        self.assertEqual(f.fetch(U + "1", man).state, "cached")
+        self.assertEqual(sess.calls.count(U + "1"), 1)
+        sess.routes[U + "1"] = make_pdf(["new revision"])
+        self.assertEqual(f.fetch(U + "1", man, refresh=True).state, "revised")
+        self.assertEqual(len(man["documents"][U + "1"]["history"]), 1)
+        bad = f.fetch(U + "2", man)
+        self.assertEqual(bad.state, "failed")
+        self.assertEqual(man["documents"][U + "2"]["attempts"], 1)
+        self.assertEqual(sess.calls.count(U + "2"), 2)  # bounded retries
+
+
+class Parsing(unittest.TestCase):
+    def test_digital_and_deferred_ocr_and_cache(self):
+        with tempfile.TemporaryDirectory() as d:
+            store = Store(d)
+            raw = make_pdf(["Relazione tecnica impianto agrivoltaico potenza 60 MWp lato DC con moduli", ""])
+            out = extract_pages(raw, "s1", store, ocr=True, budget=OcrBudget(0))
+            self.assertEqual(out["summary"]["digital"], 1)
+            self.assertEqual(out["summary"]["ocr_deferred"], 1)
+            self.assertEqual(out["ocr_pending"], [2])
+            again = extract_pages(raw, "s1", store, ocr=False)
+            self.assertTrue(again.get("from_cache"))
+
+
+@unittest.skipUnless(__import__("shutil").which("tesseract") and __import__("shutil").which("pdftoppm"),
+                     "tesseract/poppler not installed")
+class RealOcr(unittest.TestCase):
+    def test_render_and_ocr_page(self):
+        from doc_intel.parse import PopplerBackend, ocr_png
+        txt = ocr_png(PopplerBackend(make_pdf(["P.IVA 03920651209 Inizio lavori 01/09/2026"])).render_png(1, 300))
+        self.assertIn("03920651209", txt)
+        self.assertIn("01/09/2026", txt)
+
+
+INFO_HTML ="""<html><body><h1>Progetto per la realizzazione di un impianto fotovoltaico, denominato "Tortona 2", di potenza pari a 60 MW,
+ da realizzarsi nei Comuni di Tortona (AL), Pozzolo Formigaro (AL) e Frugarolo (AL).</h1>
+<p>Proponente: Margisolar S.r.l. Tipologia di opera: Impianti fotovoltaici</p>
+<nav><a href="/it-IT/Oggetti/Documentazione/9999/1">Menu other object</a></nav>
+<table><tr><td>VIA</td><td><a href="/it-IT/Oggetti/Documentazione/77/100">Documentazione</a></td></tr>
+<tr><td>Ottemperanza</td><td><a href="/it-IT/Oggetti/Documentazione/77/200">Documentazione</a></td></tr></table></body></html>"""
+
+
+def index_html(declared, ids, last_page):
+    rows = "".join(f'<tr><td>Elaborato {i} relazione</td><td>01/02/2023</td><td><a href="/File/Documento/{i}">scarica</a></td></tr>' for i in ids)
+    pager = "".join(f'<a href="?pagina={p}">{p}</a>' for p in range(1, last_page + 1))
+    return f"<html><body><h3>({'n. ' + str(declared)}) Documenti</h3><table>{rows}</table>{pager}</body></html>"
+
+
+def fake_site():
+    base = "https://va.mite.gov.it/it-IT/Oggetti/Documentazione/77/"
+    return {
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/77": INFO_HTML,
+        base + "100": index_html(3, [11, 12], 2),
+        base + "100?pagina=2": index_html(3, [13], 2),
+        base + "200": index_html(2, [21, 11], 1),
+    }
+
+
+class MaseAdapterTests(unittest.TestCase):
+    def test_identity_procedures_and_pagination(self):
+        site = fake_site()
+        ad = MaseAdapter(get_html=lambda u: site[u])
+        ident = ad.identify("https://va.mite.gov.it/it-IT/Oggetti/Info/77")
+        self.assertEqual([p["id"] for p in ident.procedures], ["100", "200"])  # menu link ignored
+        self.assertEqual(ident.municipalities, ["Tortona", "Pozzolo Formigaro", "Frugarolo"])
+        self.assertEqual(ident.province, "AL")
+        self.assertEqual(ident.proponent, "Margisolar S.r.l.")
+        disc = ad.discover(ident)
+        procs = {p["id"]: p for p in disc.procedures}
+        self.assertEqual((procs["100"]["declared"], procs["100"]["enumerated"], procs["100"]["index_pages"]), (3, 3, 2))
+        self.assertEqual(procs["200"]["duplicates_across_procedures"], 1)
+        self.assertEqual(len(disc.documents), 5)
+
+
+class EndToEnd(unittest.TestCase):
+    def test_pipeline_dossier_canonical_and_gates(self):
+        site = fake_site()
+        pdfs = {
+            11: make_pdf(["MARGISOLAR S.r.l. P.IVA 03920651209\nImpianto agrivoltaico 60 MWp lato DC e 50 MW lato AC"]),
+            12: make_pdf(["MARGISOLAR S.r.l. P.IVA 03920631201\nProgettista: Ing. Mario Rossi"]),
+            13: make_pdf(["Coordinate UTM WGS84 32N vertici\nArea A\nV1 488000.00 4968000.00\nV2 488300.00 4968000.00\n"
+                          "V3 488300.00 4968300.00\nV4 488000.00 4968300.00"]),
+            21: make_pdf(["PIANO DI SICUREZZA E COORDINAMENTO\nInizio lavori: 01/09/2026"]),
+        }
+        routes = {U + str(k): v for k, v in pdfs.items()}
+        with tempfile.TemporaryDirectory() as d:
+            data = Path(d) / "data.json"
+            data.write_text(json.dumps({"records": [{"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/77",
+                                                      "proponent": "Margisolar S.r.l.", "power_mw": 60.0,
+                                                      "municipalities": "TORTONA", "province": "AL",
+                                                      "project_key": "url:x"}]}))
+            fetcher = Fetcher(Store(d + "/store"), session=FakeSession(routes), sleeper=lambda s: None)
+            dossier = run("https://va.mite.gov.it/it-IT/Oggetti/Info/77", d + "/store", str(data), ocr=False,
+                          get_html=lambda u: site[u], fetcher=fetcher, log=lambda m: None)
+            a = dossier["acquisition"]
+            self.assertEqual((a["references"], a["distinct_sha256"], a["duplicate_references"]), (5, 4, 1))
+            delta = {r["field"]: r for r in dossier["delta"]}
+            self.assertEqual(delta["proponent"]["class"], "confermato")
+            self.assertEqual(delta["power_mw"]["class"], "confermato")
+            self.assertEqual(delta["municipalities"]["class"], "nuovo_verificato")
+            self.assertEqual(delta["municipalities"]["proposal"]["add"], ["frugarolo", "pozzolo formigaro"])
+            self.assertTrue(any(g["field"] == "company.multiple_vat" for g in dossier["groups"]))
+            self.assertFalse(any(p["field"] == "company.vat" for p in dossier["proposal"]))  # conflict not proposed
+            self.assertEqual(dossier["review"]["auto_approval"], False)
+            md = render(dossier)
+            self.assertIn("Confronto con il record canonico", md)
+            ev = evaluate(dossier, {"items": [{"field": "tech.pv_ac_mw", "value": 50, "document": "11", "page": 1}],
+                                    "expected_conflicts": [{"field": "company.multiple_vat", "subject": "Margisolar S.r.l."}],
+                                    "forbidden": [{"field": "role.epc"}]})
+            self.assertEqual(ev["recall_anchored"], 1.0)
+            self.assertFalse(ev["blocking"])
+            # second run reuses cache: no new downloads
+            calls_before = len(fetcher.session.calls)
+            run("https://va.mite.gov.it/it-IT/Oggetti/Info/77", d + "/store", str(data), ocr=False,
+                get_html=lambda u: site[u], fetcher=fetcher, log=lambda m: None)
+            self.assertEqual(len(fetcher.session.calls), calls_before)
+
+    def test_canonical_exact_url_not_substring(self):
+        recs = [{"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8788", "project_key": "a"},
+                {"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11492", "project_key": "url:7335001a607c8788"}]
+        self.assertEqual(find_by_url(recs, "https://va.mite.gov.it/it-IT/Oggetti/Info/8788")["match_count"], 1)
+
+
+class NoHardcodedBenchmarks(unittest.TestCase):
+    def test_toolbox_has_no_benchmark_ids(self):
+        for py in (ROOT / "doc_intel").rglob("*.py"):
+            src = py.read_text(encoding="utf-8")
+            for ident in ("6479", "8788", "11109", "16669", "19438", "12932"):
+                self.assertNotRegex(src, rf"\b{ident}\b", f"{ident} hard-coded in {py}")
+
+
+class GoldFiles(unittest.TestCase):
+    def test_gold_files_are_well_formed(self):
+        for p in (ROOT / "doc_intel" / "gold").glob("*.json"):
+            g = json.loads(p.read_text(encoding="utf-8"))
+            self.assertTrue(g["items"])
+            for item in g["items"]:
+                self.assertTrue({"field", "value", "document"} <= item.keys(), item)
+            vats = [i["value"] for i in g["items"] if i["field"] == "company.vat"]
+            self.assertTrue(all(valid_vat_it(v) for v in vats))
+
+
+if __name__ == "__main__":
+    unittest.main()

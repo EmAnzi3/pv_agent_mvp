@@ -1,0 +1,29 @@
+{
+  "project_url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6479",
+  "provenance": "Facts manually anchored in PR #4 (experiments/mase_semantic_compare.py FACTS, run 39217556506). Document id + page are the gold anchors.",
+  "gold_level": "verified_by_page_anchor",
+  "items": [
+    {"category": "companies", "field": "role.proponent", "value": "Troia Sun S.r.l.", "document": "1126265", "page": 1},
+    {"category": "companies", "field": "company.vat", "subject": "Troia Sun S.r.l.", "value": "10148261216", "document": "1126265", "page": 1},
+    {"category": "contacts", "field": "contact.pec", "value": "troiasunsrl@legalmail.it", "document": "1126265", "page": 1},
+    {"category": "technical", "field": "tech.pv_dc_mwp", "value": 54.5, "document": "1126265", "page": 1},
+    {"category": "technical", "field": "tech.bess_power_mw", "value": 10, "document": "1126265", "page": 1},
+    {"category": "companies", "field": "role.designer", "value": "Arch. Antonio Manco", "document": "1126247", "page": 1},
+    {"category": "companies", "field": "role.geologist", "value": "Geol. Fabio Di Feo", "document": "1126247", "page": 1},
+    {"category": "contacts", "field": "contact.email", "value": "a.manco@iprojectsrl.com", "document": "1126229", "page": 2},
+    {"category": "contacts", "field": "contact.phone", "value": "3384117245", "document": "1126229", "page": 2},
+    {"category": "contacts", "field": "contact.pec", "value": "geofabiodifeo@pec.epap.it", "document": "1126165", "page": 2},
+    {"category": "companies", "field": "company.vat", "subject": "IPROJECT S.r.l.", "value": "11092870960", "document": "1126228", "page": 1},
+    {"category": "contacts", "field": "contact.pec", "value": "i-project@legalmail.it", "document": "1126228", "page": 1},
+    {"category": "schedule", "field": "schedule.duration.construction", "value": 24, "document": "1126259", "page": 188},
+    {"category": "schedule", "field": "schedule.duration.decommissioning", "value": 16, "document": "1438131", "page": 9},
+    {"category": "technical", "field": "tech.inverter_count", "value": 168, "document": "1126262", "page": 15},
+    {"category": "technical", "field": "tech.inverter_power_kw", "value": 350, "document": "1126262", "page": 15},
+    {"category": "technical", "field": "tech.module_power_wp", "value": 710, "document": "1126259", "page": 19},
+    {"category": "technical", "field": "grid.voltage_kv", "value": 36, "document": "1126180", "page": 12}
+  ],
+  "exhaustive_fields": [],
+  "forbidden": [{"field": "role.epc"}, {"field": "role.bop"}],
+  "expected_conflicts": [{"field": "tech.pv_dc_mwp", "note": "54,9 MWp historical vs 54,5 MWp current"}],
+  "not_in_gold": "Municipality (Troia FG) and CRS 'UTM WGS84 fuso 33' are checked through project identity and geo qualifiers, not as facts."
+}
