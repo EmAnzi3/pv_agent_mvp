@@ -69,20 +69,10 @@ async def inventory(max_index_pages):
             # Page 1 and subsequent numbered pages. Never assume JS table is static.
             for number in range(1, max_index_pages + 1):
                 if number > 1:
-                    possible = page.locator("a").filter(has_text=re.compile(r"^\s*"+str(number)+r"\s*$"))
-                    if await possible.count():
-                        await possible.first.click(timeout=12000)
-                        await page.wait_for_timeout(950)
-                    else:
-                        anchors = await page.locator("a").all()
-                        navigation = []
-                        for anchor in anchors:
-                            title = (await anchor.inner_text()).strip()
-                            href = await anchor.get_attribute("href")
-                            if title in ("»", "›", ">", ">>", "ultima", "Ultima") or (title.isdigit() and 7 <= int(title) <= 15):
-                                navigation.append({"text":title,"href":href})
-                        result["errors"].append({"index_page":number,"error":"numbered link unavailable", "pager_links":navigation[-25:]})
-                        break
+                    # The MASE pager uses explicit ?pagina=N links (including » -> page 11).
+                    await page.goto(INDEX + "?pagina=" + str(number),
+                                    wait_until="domcontentloaded", timeout=60000)
+                    await page.wait_for_timeout(450)
                 html = await page.content()
                 soup = BeautifulSoup(html, "html.parser")
                 visible_text = soup.get_text(" ", strip=True)
