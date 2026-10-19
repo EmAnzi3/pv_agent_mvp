@@ -6,10 +6,10 @@ from __future__ import annotations
 
 from .base import AdapterCapabilities, DocumentAdapter, Discovery, ProjectIdentity
 from .mase import MaseAdapter
-from .regional import HtmlIndexAdapter, NextcloudShareAdapter
+from .regional import BoxSharedFolderAdapter, HtmlIndexAdapter, NextcloudShareAdapter
 
 REGISTRY: dict[str, type[DocumentAdapter]] = {"mase": MaseAdapter, "html_index": HtmlIndexAdapter,
-                                                "nextcloud_share": NextcloudShareAdapter}
+                                                "nextcloud_share": NextcloudShareAdapter, "box_shared": BoxSharedFolderAdapter}
 
 
 def adapter_for_url(url: str) -> DocumentAdapter:

@@ -606,6 +606,42 @@ class RegionalAdapters(unittest.TestCase):
         self.assertEqual(disc.documents[0].extra["auth"], ["iMFk8Zs5t86GYP7", ""])
 
 
+class RegionalRunRegressions(unittest.TestCase):
+    """Veneto PROC_62-26 and Emilia-Romagna 6902 runs."""
+
+    def test_canonical_tenfold_power_flagged(self):
+        facts = extract_all([page("Impianto agrivoltaico di potenza complessiva 26.617,76 kWp", doc=str(i)) for i in range(5)] +
+                            [page("potenza complessiva dell'impianto 266,61776 MWp", doc="x")])
+        rows = {r["field"]: r for r in compare({"power_mw": 266.618}, group(facts), {})}
+        self.assertEqual(rows["power_mw"]["class"], "conflittuale")
+        self.assertAlmostEqual(rows["power_mw"]["proposal"]["set"], 26.61776)
+
+    def test_referenced_act_dates_and_cod_cer(self):
+        txt = ("Secondo il preventivo di connessione (cod. 202500554) del 10/04/2025, l'entrata in esercizio avverrà dopo l'AU\n"
+               "Conferimento a discarica (cod. CER 17.03.02) 20/03/2026")
+        self.assertFalse([f for f in extract_all([page(txt)]) if f.field.startswith("schedule.date")])
+
+
+class BoxAdapter(unittest.TestCase):
+    def test_box_listing_pages_and_subfolders(self):
+        import json as _j
+        from doc_intel.adapters import adapter_for_url
+        def page_html(items, page_count=1, total=None):
+            data = {"/app-api/enduserapp/shared-folder": {"items": items, "pageCount": page_count, "totalCount": total}}
+            return f"<script>Box.postStreamData = {_j.dumps(data)};</script>"
+        root = "https://regionelazio.app.box.com/v/VIA-1-2020"
+        site = {root: page_html([{"typedID": "f_1", "name": "Istanza.pdf"}, {"typedID": "d_9", "name": "Elaborati"}], 2, 3),
+                root + "?page=2": page_html([{"typedID": "f_2", "name": "Relazione.pdf"}], 2, 3),
+                "https://regionelazio.app.box.com/v/VIA-1-2020/folder/9": page_html([{"typedID": "f_3", "name": "Layout.pdf"}], 1, 1)}
+        ad = adapter_for_url(root)
+        ad.get_html = lambda u: site[u]
+        disc = ad.discover(ad.identify(root))
+        self.assertEqual(sorted(d.title for d in disc.documents), ["Istanza.pdf", "Layout.pdf", "Relazione.pdf"])
+        self.assertIn("file_id=f_3", [d.url for d in disc.documents if d.title == "Layout.pdf"][0])
+        top = [p for p in disc.procedures if p["id"] == "/"][0]
+        self.assertEqual((top["declared"], top["enumerated"], top["index_pages"]), (3, 3, 2))
+
+
 class NoHardcodedBenchmarks(unittest.TestCase):
     def test_toolbox_has_no_benchmark_ids(self):
         for py in (ROOT / "doc_intel").rglob("*.py"):

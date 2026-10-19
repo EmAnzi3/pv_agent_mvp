@@ -81,12 +81,33 @@ def compare(record: dict | None, groups: list[dict[str, Any]], project_meta: dic
     flat = [x for v in pv.values() for x in v]
     row = _row("power_mw", canon_p, flat, numeric=True)
     row["detail"] = {k: sorted(set(v)) for k, v in pv.items() if v}
-    if canon_p is not None and any(_close(canon_p, v) for v in flat):
+    # dominant plant-level value (most occurrences) and decimal-shift check against the canonical value
+    plant_ranked = sorted((v for f in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")
+                           for g in by_field.get(f, []) if g.get("subject") in scopes
+                           for v in g.get("values", []) if isinstance(v, dict)), key=lambda v: -v["occurrences"])
+    dominant = plant_ranked[0] if plant_ranked else None
+    if canon_p and dominant and not _close(canon_p, dominant["value"]):
+        for factor in (10, 100, 1000, 0.1, 0.01, 0.001):
+            if abs(canon_p - dominant["value"] * factor) <= 0.005 * abs(canon_p):
+                row.update({"class": "conflittuale", "dominant_source_value": dominant["value"],
+                            "dominant_occurrences": dominant["occurrences"],
+                            "note": f"Canonical {canon_p} ≈ {factor} x dominant source value {dominant['value']} "
+                                    f"({dominant['occurrences']} occurrences): probable decimal/unit error in the canonical",
+                            "proposal": {"set": dominant["value"], "reason": "decimal_shift"},
+                            "evidence": dominant["example"]})
+                rows.append(row)
+                break
+        else:
+            dominant = dominant  # fall through to the normal comparison
+    if rows and rows[-1] is row:
+        pass
+    elif canon_p is not None and any(_close(canon_p, v) for v in flat):
         row["class"] = "confermato"
         which = [k for k, v in pv.items() if any(_close(canon_p, x) for x in v)]
         row["note"] = (f"Canonical value matches source field(s) {which}; canonical does not state DC/AC. "
                        "Other values listed in detail are different metrics or revisions, see conflicts.")
-    rows.append(row)
+    if not (rows and rows[-1] is row):
+        rows.append(row)
 
     # municipalities: canonical vs official project sheet
     canon_m = _split_municipalities(rec.get("municipalities"))

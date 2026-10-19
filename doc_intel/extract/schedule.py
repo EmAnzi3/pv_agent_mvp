@@ -20,7 +20,7 @@ DATE_TXT_RE = re.compile(r"(?i)\b(?:(?P<d>[0-3]?\d)\s+)?(?P<mon>" + "|".join(MON
 LABELS = [
     (re.compile(r"(?i)inizio\s+(?:dei\s+)?lavori|avvio\s+(?:dei\s+)?lavori|apertura\s+(?:del\s+)?cantiere|consegna\s+(?:dei\s+)?lavori"), "construction_start"),
     (re.compile(r"(?i)fine\s+(?:dei\s+)?lavori|ultimazione\s+(?:dei\s+)?lavori|chiusura\s+(?:del\s+)?cantiere"), "construction_end"),
-    (re.compile(r"(?i)entrata\s+in\s+esercizio|messa\s+in\s+esercizio|\bCOD\b|esercizio\s+commerciale|primo\s+parallelo"), "commercial_operation"),
+    (re.compile(r"(?i:entrata\s+in\s+esercizio|messa\s+in\s+esercizio|esercizio\s+commerciale|primo\s+parallelo)|\bCOD\b(?!\.)"), "commercial_operation"),
     (re.compile(r"(?i)collaud|commissioning"), "commissioning"),
 ]
 SCOPE_RULES = [
@@ -45,6 +45,11 @@ SCENARIO_CTX = re.compile(r"(?i)squadre|in\s+parallelo|scenario|ipotesi|alternat
 CONDITIONAL_CTX = re.compile(r"(?i)dal(?:la)?\s+(?:data\s+(?:di|del)\s+)?(?:rilascio|ottenimento|conseguimento)|a\s+partire\s+da|decorrent|subordinat|condizionat|entro\s+\d+\s+(?:mesi|giorni)\s+dal")
 EVENT_CTX = re.compile(r"(?i)verbale\s+di\s+consegna|comunicazione\s+(?:di\s+)?inizio\s+lavori|(?:sono|hanno\s+avuto|ha\s+avuto)\s+(?:iniziat|inizio)|"
                        r"(?:è|e')\s+stat[oa]\s+(?:avviat|iniziat|consegnat)|in\s+data\s+\S+\s+(?:sono|è)\s+(?:iniziat|stat)")
+
+
+DOC_REF_BEFORE = re.compile(r"(?i)(?:preventivo|prot(?:ocollo)?\.?|nota|decreto|d\.?\s?lgs|determin[ae]|delibera|circolare|"
+                            r"legge|parere|cod\.?\s+pratica|stmg|istanza|richiesta|comunicazione)[^.;]{0,40}"
+                            r"(?:\bdel\b|\bin\s+data\b|\bn\.?\s*\S+\s+del\b|[-/]\s*)\s*$|\bal\s*$|cod\.\s*CER[^.;]{0,40}$")
 
 
 def temporal_nature(line: str, context: str, page_text: str) -> str:
@@ -128,6 +133,9 @@ def extract(ctx: PageContext) -> list[Fact]:
         if not label:
             continue  # unlabeled dates are document metadata, not milestones
         for m, iso in dates:
+            before = line[max(0, m.start() - 60): m.start()]
+            if DOC_REF_BEFORE.search(before):
+                continue  # date of a referenced act (preventivo, protocollo, decreto...), not a milestone
             # the date must follow its label closely, and be a plausible project date
             if m.start() < label_end - 1 or m.start() - label_end > 60 or int(iso[:4]) < 2015:
                 continue

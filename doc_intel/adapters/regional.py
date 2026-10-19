@@ -170,3 +170,96 @@ class NextcloudShareAdapter(DocumentAdapter):
         procedures = [{"id": k, "url": identity.info_url, "label": k, "declared": None, "declared_available": False,
                        "enumerated": v, "index_pages": 1, "errors": []} for k, v in sorted(folders.items())]
         return Discovery(identity, docs, procedures, [])
+
+
+class BoxSharedFolderAdapter(DocumentAdapter):
+    """Public Box shared folders (Regione Lazio ``regionelazio.app.box.com/v/<vanity>``).
+
+    The folder page embeds its listing as JSON (``Box.postStreamData``); items are
+    files (``f_<id>``) or sub-folders (``d_<id>``). Files are downloaded through the
+    public shared-file endpoint. Pages beyond the first are read with ``?page=N``.
+    """
+    source = "box_shared"
+    capabilities = AdapterCapabilities(
+        source="box_shared", project_identity=True, procedure_ids=False, document_index=True,
+        pagination="query_param", download="http", declared_totals=True,
+        obstacles=["listing embedded as JSON in the page; Box may change the page format"], status="partial")
+
+    VANITY_RE = re.compile(r"^(?P<root>https?://[^/]+\.box\.com)/v/(?P<vanity>[^/?#]+)")
+    STREAM_RE = re.compile(r"Box\.postStreamData\s*=\s*(\{.*?\});\s*</script>", re.S)
+
+    @classmethod
+    def handles(cls, url: str) -> bool:
+        return bool(cls.VANITY_RE.match(url))
+
+    def identify(self, url: str) -> ProjectIdentity:
+        m = self.VANITY_RE.match(url)
+        ident = ProjectIdentity(source="lazio", project_id=m.group("vanity"), info_url=url, title=m.group("vanity"))
+        ident.raw.update({"root": m.group("root"), "vanity": m.group("vanity")})
+        return ident
+
+    @classmethod
+    def parse_stream(cls, html: str) -> dict:
+        import json
+        m = cls.STREAM_RE.search(html)
+        if not m:
+            return {}
+        try:
+            return json.loads(m.group(1))
+        except ValueError:
+            return {}
+
+    @staticmethod
+    def _items(data) -> tuple[list[dict], int | None, int | None]:
+        """Walk the stream JSON; return items with typedID plus pageCount/totalCount when present."""
+        items, page_count, total = [], None, None
+        stack = [data]
+        while stack:
+            cur = stack.pop()
+            if isinstance(cur, dict):
+                if isinstance(cur.get("typedID"), str) and cur.get("name"):
+                    items.append(cur)
+                    continue
+                page_count = page_count or cur.get("pageCount")
+                total = total or cur.get("totalCount") or cur.get("itemCount")
+                stack.extend(cur.values())
+            elif isinstance(cur, list):
+                stack.extend(cur)
+        return items, page_count, total
+
+    def _list_folder(self, url: str, path: str, docs: list, procs: list, root: str, vanity: str, depth: int = 0):
+        seen_pages, page, total = 0, 1, None
+        found = listed = 0
+        while True:
+            html = self.get_html(url + (f"?page={page}" if page > 1 else ""))
+            items, page_count, tot = self._items(self.parse_stream(html))
+            total = total or tot
+            seen_pages += 1
+            for it in items:
+                tid = it["typedID"]
+                listed += 1
+                if tid.startswith("f_"):
+                    docs.append(DocumentRef(
+                        url=f"{root}/index.php?rm=box_download_shared_file&vanity_name={vanity}&file_id={tid}",
+                        procedure_id=path, title=it["name"], source="lazio",
+                        extra={"size": it.get("itemSize") or it.get("size"), "box_id": tid}))
+                    found += 1
+                elif tid.startswith("d_") and depth < 4:
+                    self._list_folder(f"{root}/v/{vanity}/folder/{tid[2:]}", f"{path}/{it['name']}",
+                                      docs, procs, root, vanity, depth + 1)
+            if not page_count or page >= page_count or not items:
+                break
+            page += 1
+        procs.append({"id": path, "url": url, "label": path, "declared": total, "declared_available": total is not None,
+                      "enumerated": listed, "files": found, "index_pages": seen_pages, "errors": []})
+
+    def discover(self, identity: ProjectIdentity) -> Discovery:
+        docs: list[DocumentRef] = []
+        procs: list[dict] = []
+        root, vanity = identity.raw["root"], identity.raw["vanity"]
+        try:
+            self._list_folder(identity.info_url, "/", docs, procs, root, vanity)
+        except Exception as exc:
+            return Discovery(identity, [], [], [f"Box listing failed: {exc}"[:200]])
+        errors = [] if docs else ["no files found in the embedded listing (page format may have changed)"]
+        return Discovery(identity, docs, procs, errors)

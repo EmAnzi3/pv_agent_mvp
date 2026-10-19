@@ -132,6 +132,8 @@ def probe_url(url: str, get: Callable | None = None, render: Callable[[str], Any
             out["rendered"]["xhr"] = xhr[:25]
         except Exception as exc:
             out["rendered"] = {"error": str(exc)[:200], "error_class": error_class(str(exc))}
+    if out.get("rendered") and out["rendered"].get("xhr"):
+        out["api_samples"] = sample_api(out["rendered"]["xhr"], url, get)
     # one hop: when the record page lists no documents, follow the most promising links
     base_cls = out["rendered"] if out["rendered"] and "doc_links" in out["rendered"] else out["http"]
     if base_cls and "doc_links" in base_cls and base_cls.get("doc_link_count", 0) == 0 and html:
@@ -176,6 +178,39 @@ def probe_url(url: str, get: Callable | None = None, render: Callable[[str], Any
     return out
 
 
+def json_paths(obj: Any, prefix: str = "", out: list | None = None, limit: int = 80) -> list:
+    """Flatten a JSON sample into 'path = value' lines so an API schema can be read from CI output."""
+    out = [] if out is None else out
+    if len(out) >= limit:
+        return out
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            json_paths(v, f"{prefix}.{k}" if prefix else k, out, limit)
+    elif isinstance(obj, list):
+        out.append(f"{prefix}[] len={len(obj)}")
+        for v in obj[:2]:
+            json_paths(v, prefix + "[]", out, limit)
+    else:
+        out.append(f"{prefix} = {str(obj)[:80]}")
+    return out
+
+
+def sample_api(xhr: list[dict], record_url: str, get: Callable) -> list[dict]:
+    ids = set(re.findall(r"\d{2,}", record_url))
+    out = []
+    for x in xhr:
+        if "json" not in (x.get("type") or "") or not (set(re.findall(r"\d{2,}", x["url"])) & ids):
+            continue
+        try:
+            r = get(x["url"])
+            out.append({"url": x["url"], "paths": json_paths(r.json())})
+        except Exception as exc:
+            out.append({"url": x["url"], "error": str(exc)[:120]})
+        if len(out) >= 2:
+            break
+    return out
+
+
 def verdict(p: dict[str, Any]) -> dict[str, str]:
     kinds = [d.get("kind") for d in p["downloads"] if d.get("kind")]
     http = p.get("http") or {}
@@ -210,7 +245,7 @@ def summary_line(src: str, sample: dict, res: dict) -> dict:
             "example_links": [d["url"] for d in (ren.get("doc_links") or http.get("doc_links") or [])[:4]],
             "pager": [p["url"] for p in (ren.get("pager_links") or http.get("pager_links") or [])[:3]],
             "external_hosts": http.get("external_hosts"), "title": http.get("title") or ren.get("title"),
-            "http_error": http.get("error"), "xhr": ren.get("xhr"),
+            "http_error": http.get("error"), "xhr": ren.get("xhr"), "api_samples": res.get("api_samples"),
             "followed": [{k: f.get(k) for k in ("url", "status", "kind", "doc_link_count", "title", "error")}
                          | {"doc_links": [d["url"] for d in f.get("doc_links", [])[:3]]} for f in res.get("followed", []) or []]}
 
