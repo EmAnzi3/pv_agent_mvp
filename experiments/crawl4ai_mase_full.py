@@ -74,7 +74,14 @@ async def inventory(max_index_pages):
                         await possible.first.click(timeout=12000)
                         await page.wait_for_timeout(950)
                     else:
-                        result["errors"].append({"index_page":number,"error":"numbered link unavailable"})
+                        anchors = await page.locator("a").all()
+                        navigation = []
+                        for anchor in anchors:
+                            title = (await anchor.inner_text()).strip()
+                            href = await anchor.get_attribute("href")
+                            if title in ("»", "›", ">", ">>", "ultima", "Ultima") or (title.isdigit() and 7 <= int(title) <= 15):
+                                navigation.append({"text":title,"href":href})
+                        result["errors"].append({"index_page":number,"error":"numbered link unavailable", "pager_links":navigation[-25:]})
                         break
                 html = await page.content()
                 soup = BeautifulSoup(html, "html.parser")
@@ -108,7 +115,7 @@ def classify_download(data, headers):
 def extract_docs(index, limit, max_bytes):
     report = {"processed":[], "failures":[], "candidates":[], "skipped":[]}
     session = requests.Session()
-    docs = list(index["documents"].values())
+    docs = [{"url":ROOT+"/File/Provvedimento/13107","title":"Decreto VIA ZIP", "first_index_page":0}] + list(index["documents"].values())
     # Regulatory documents and technical reports before incidental low-value material.
     docs.sort(key=lambda r:(0 if re.search(r"decreto|provvedimento|relazione|tecnic|cronoprogramma|connessione|elaborat",r["title"],re.I) else 1,r["first_index_page"]))
     for item in docs[:limit]:
@@ -174,6 +181,7 @@ async def main():
     print("COVERAGE_REPORT="+json.dumps(report["coverage"],ensure_ascii=False))
     print("FAILURES="+json.dumps(detail["failures"][:8],ensure_ascii=False))
     print("INDEX_PAGES="+json.dumps([{"page":p["number"],"links":p["count"]} for p in index["pages"]]))
+    print("INDEX_ERRORS="+json.dumps(index["errors"],ensure_ascii=False))
     print("FIELD_HITS="+json.dumps(dict(Counter(x["field"] for x in detail["candidates"]))))
     print("DOCUMENT_TYPES="+json.dumps(dict(Counter(x["kind"] for x in detail["processed"]))))
     print("EVIDENCE_SAMPLES="+json.dumps([x for x in detail["candidates"] if x["field"] in ("vat","email","phone","coordinates","schedule")][:12],ensure_ascii=False))
