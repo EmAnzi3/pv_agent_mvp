@@ -102,13 +102,13 @@ def classify_download(data, headers):
         return "zip"
     return "other"
 
-def extract_docs(index, limit, max_bytes):
+def extract_docs(index, limit, max_bytes, offset=0):
     report = {"processed":[], "failures":[], "candidates":[], "skipped":[]}
     session = requests.Session()
     docs = [{"url":ROOT+"/File/Provvedimento/13107","title":"Decreto VIA ZIP", "first_index_page":0}] + list(index["documents"].values())
     # Regulatory documents and technical reports before incidental low-value material.
     docs.sort(key=lambda r:(0 if re.search(r"decreto|provvedimento|relazione|tecnic|cronoprogramma|connessione|elaborat",r["title"],re.I) else 1,r["first_index_page"]))
-    for item in docs[:limit]:
+    for item in docs[offset:offset+limit]:
         url = item["url"]
         try:
             response = session.get(url, timeout=60)
@@ -141,25 +141,26 @@ def extract_docs(index, limit, max_bytes):
             report["processed"].append(entry)
         except Exception as exc:
             report["failures"].append({"url":url,"error":str(exc)[:350]})
-    report["skipped"]= [r["url"] for r in docs[limit:]]
+    report["skipped"]= [r["url"] for r in docs[:offset] + docs[offset+limit:]]
     return report
 
 async def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("--max-index-pages",type=int,default=14)
     parser.add_argument("--max-docs",type=int,default=15)
+    parser.add_argument("--offset",type=int,default=0)
     parser.add_argument("--max-bytes",type=int,default=30000000)
     parser.add_argument("--output",default="reports/crawl4ai/mase-6479-full-benchmark.json")
     args=parser.parse_args()
-    if not 1<=args.max_index_pages<=30 or not 1<=args.max_docs<=120: parser.error("invalid limits")
+    if not 1<=args.max_index_pages<=30 or not 1<=args.max_docs<=120 or args.offset<0: parser.error("invalid limits")
     # Explicitly exercise Crawl4AI on the landing page, alongside browser-driven pagination.
     async with AsyncWebCrawler() as crawler:
         crawled=await crawler.arun(url=PROCEDURE,config=CrawlerRunConfig(page_timeout=45000))
     baseline={"ok":bool(crawled.success),"chars":len(str(crawled.markdown or ""))}
     index=await inventory(args.max_index_pages)
-    detail=extract_docs(index,args.max_docs,args.max_bytes)
+    detail=extract_docs(index,args.max_docs,args.max_bytes,args.offset)
     declared=index.get("declared_total")
-    report={"generated":datetime.now(timezone.utc).isoformat(),"record":"Troia Sun / 6479 / 11109",
+    report={"generated":datetime.now(timezone.utc).isoformat(),"record":"Troia Sun / 6479 / 11109","batch_offset":args.offset,"batch_size":args.max_docs,
             "crawl4ai_landing":baseline,"index":index,"documents":detail,
             "coverage":{"declared":declared,"unique_index_urls":len(index["documents"]),
                         "index_pages":len(index["pages"]),"processed":len(detail["processed"]),
