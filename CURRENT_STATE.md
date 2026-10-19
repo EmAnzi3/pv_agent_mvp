@@ -39,6 +39,13 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 - Ultima pubblicazione: da compilare.
 - Ultimo commit stabile noto: da compilare.
 
+## Toolbox documentale (sperimentale, review-only)
+
+- Pacchetto `doc_intel/` (branch `feat/doc-intel-toolbox`, derivato dalla PR #4): da un record già nel canonico costruisce manifest documentale, cache SHA-256, testo per pagina con OCR selettivo, fatti con evidenza, conflitti, confronto con il canonico e dossier JSON/Markdown. Non modifica `docs/data.json` né il database.
+- Adapter implementato: MASE (scheda progetto e provvedimento). Fonti regionali: inventario e priorità in `experiments/DOC-INTEL-AUDIT.md`; Piemonte bloccata finché i record non portano l'URL della singola pratica.
+- Test offline: `python -m unittest tests.test_doc_intel`. Run reali solo su GitHub Actions (`doc-intel-run.yml`), store in `actions/cache`.
+- Tortona 2 (MASE 8788): dossier provvisorio in `experiments/MASE-8788-DOSSIER-PROVISIONAL.md`; chiusura subordinata al primo run CI.
+
 ## Problemi aperti
 
 - Dataset finale 05/10/2026 15:09: baseline Piemonte distinta e completa; residuo unico osservato: Isola Sant'Antonio ancora con provincia `DC` perché il valore errato era già persistito nel DB prima della correzione del parser. La migrazione pre-run ora ripara/azzera le province Piemonte non valide e il gate finale blocca il batch se la baseline o le province risultano errate.
