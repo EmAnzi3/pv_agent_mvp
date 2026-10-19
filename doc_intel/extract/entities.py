@@ -17,8 +17,8 @@ import re
 from ..schema import Fact
 from .context import PageContext
 
-LEGAL_FORM = (r"(?i:S\.?\s?R\.?\s?L\.?(?:\s?S\.?)?(?![A-Za-z])|S\.?\s?P\.?\s?A\.?(?![A-Za-z])|S\.?\s?A\.?\s?S\.?(?![A-Za-z])|"
-              r"S\.?\s?N\.?\s?C\.?(?![A-Za-z])|S\.?\s?C\.?\s?A\.?\s?R\.?\s?L\.?|"
+LEGAL_FORM = (r"(?-i:S\.\s?N\.\s?C\.?|SNC)(?![A-Za-z])|(?i:S\.?\s?R\.?\s?L\.?(?:\s?S\.?)?(?![A-Za-z])|S\.?\s?P\.?\s?A\.?(?![A-Za-z])|S\.?\s?A\.?\s?S\.?(?![A-Za-z])|"
+              r"S\.?\s?C\.?\s?A\.?\s?R\.?\s?L\.?|"
               r"SOCIET[AÀ]'?\s+A\s+RESPONSABILIT[AÀ]'?\s+LIMITATA|GMBH|S\.?A\.?U\.?|S\.?L\.?U?\.?(?![A-Za-z]))")
 COMPANY_RE = re.compile(
     r"(?P<name>(?:[A-Z0-9][\w&'’.\-]*)(?:\s+[A-Za-z0-9&'’.\-]+){0,6}?)\s*,?\s+(?P<form>" + LEGAL_FORM + r")",
@@ -62,15 +62,21 @@ def _clean_company(name: str, form: str) -> str:
         if new == name:
             break
         name = new
-    name = re.sub(r"^.*?\b(?:proponente|committente|richiedente|progettista|appaltatrice|esecutrice|contractor)\s*:?\s*",
+    name = re.sub(r"^.*?\b(?:proponente|committente|richiedente|progettista|appaltatrice|esecutrice|contractor|"
+                  r"per\s+conto\s+d(?:i|ella|el)|dell'impresa|della\s+societ[aà]|spett\.?le|EPC|BoP)\s*:?\s*",
                   "", name, flags=re.I)
     name = name.strip(" ,:;-")
+    if ADDRESS_WORDS.search(name):
+        return ""
     form_n = re.sub(r"[\s.]", "", form).upper()
     form_n = {"SRL": "S.r.l.", "SPA": "S.p.A.", "SAS": "S.a.s.", "SNC": "S.n.c.", "SRLS": "S.r.l.s.",
               "SCARL": "S.c.a r.l."}.get(form_n, form.strip())
     if re.match(r"(?i)SOCIET", form):
         form_n = "S.r.l."
     return f"{name} {form_n}".strip()
+
+
+ADDRESS_WORDS = re.compile(r"(?i)\b(?:via|viale|piazza|piazzale|corso|strada|località|loc\.|caserma|largo|vicolo|frazione|c\.so|p\.zza)\b")
 
 
 def company_key(name: str) -> str:
@@ -84,7 +90,7 @@ def find_companies(text: str) -> list[tuple[int, str]]:
     out = []
     for m in COMPANY_RE.finditer(text):
         name = _clean_company(m.group("name"), m.group("form"))
-        if len(re.sub(r"[^A-Za-z]", "", name)) < 4:
+        if not name or len(re.sub(r"[^A-Za-z]", "", name)) < 4:
             continue
         out.append((m.start(), name))
     return out
@@ -106,15 +112,21 @@ def valid_vat_it(value: str) -> bool:
 
 
 def _nearest_company(ctx: PageContext, i: int, pos: int) -> tuple[str | None, str]:
-    """Company on the same line before the match, else on the previous 2 lines."""
+    """Company on the same line before the match, else in the 4 previous lines (title-block
+    layout: name / address / VAT), else on the next line. The distance is recorded and only
+    ``same_line`` is accepted by the proposal gate."""
     same = [c for c in find_companies(ctx.lines[i]) if c[0] < pos]
     if same:
         return same[-1][1], "same_line"
-    for back in (1, 2):
+    for back in (1, 2, 3, 4):
         if i - back >= 0:
             prev = find_companies(ctx.lines[i - back])
             if prev:
                 return prev[-1][1], f"previous_line_{back}"
+    if i + 1 < len(ctx.lines):
+        nxt = find_companies(ctx.lines[i + 1])
+        if nxt:
+            return nxt[0][1], "next_line_1"
     return None, "none"
 
 
@@ -188,6 +200,8 @@ def _roles(ctx: PageContext, i: int, line: str) -> list[Fact]:
         kind, value, raw = _role_value(ctx, i, m.end())
         if not value:
             continue
+        if role in ("proponent", "contractor", "epc", "bop", "supplier", "om", "grid_operator") and kind != "company":
+            continue  # these roles are held by legal entities; a person here is a signature, not the role
         excerpt = ctx.window(i, 0, 1)
         if execution:
             if CONDITIONAL.search(excerpt):

@@ -36,6 +36,8 @@ def main(argv: list[str] | None = None) -> int:
     e.add_argument("--gold", required=True)
     g = sub.add_parser("digest", help="emit ::notice annotations readable via the checks API")
     g.add_argument("--dossier", required=True)
+    g.add_argument("--slice", type=int, default=0, help="GitHub allows 10 notices per step: run one step per slice")
+    g.add_argument("--slices", type=int, default=1)
     m = sub.add_parser("render")
     m.add_argument("--dossier", required=True)
     a = ap.parse_args(argv)
@@ -64,10 +66,19 @@ def main(argv: list[str] | None = None) -> int:
         return 1 if res["blocking"] else 0
     if a.cmd == "digest":
         d = json.loads(Path(a.dossier).read_text(encoding="utf-8"))
+        chunks = []
         for title, payload in digest(d):
-            msg = json.dumps(payload, ensure_ascii=False)[:30000]
-            msg = msg.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
-            print(f"::notice title={title}::{msg}")
+            msg = json.dumps(payload, ensure_ascii=False)
+            parts = [msg[i:i + 3900] for i in range(0, len(msg), 3900)] or ["null"]
+            for k, part in enumerate(parts):
+                chunks.append((f"{title}#{k + 1}of{len(parts)}", part))
+        per = -(-len(chunks) // a.slices)
+        mine = chunks[a.slice * per:(a.slice + 1) * per]
+        if len(mine) > 10:
+            print(f"::warning title=digest::slice {a.slice} has {len(mine)} chunks, only 10 shown; raise --slices")
+        for title, part in mine[:10]:
+            part = part.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+            print(f"::notice title={title}::{part}")
         return 0
     if a.cmd == "render":
         d = json.loads(Path(a.dossier).read_text(encoding="utf-8"))
@@ -86,11 +97,11 @@ def digest(d: dict) -> list[tuple[str, dict]]:
     conf = [{"field": g["field"], "subject": g["subject"], "values": [
         (v["value"], v["occurrences"], v["example"]["url"].rsplit("/", 1)[-1], v["example"]["page"]) if isinstance(v, dict) else v
         for v in g["values"][:6]], "hint": g.get("preference_hint")} for g in d["groups"] if g["status"] == "conflict"]
-    out.append(("conflicts", {"n": len(conf), "groups": conf[:60]}))
+    out.append(("conflicts", {"n": len(conf), "groups": conf[:40]}))
     single = [{"field": g["field"], "subject": g["subject"], "value": g["values"][0]["value"],
                "occ": g["values"][0]["occurrences"], "doc": g["values"][0]["example"]["url"].rsplit("/", 1)[-1],
                "page": g["values"][0]["example"]["page"]} for g in d["groups"] if g["status"] == "single_value"]
-    out.append(("single_values", {"n": len(single), "groups": single[:120]}))
+    out.append(("single_values", {"n": len(single), "groups": single[:80]}))
     gates = {x["fact_id"]: x for x in d["gates"]["proposal"]}
     out.append(("proposal", [{"field": p["field"], "subject": p["subject"], "value": p["value"] if p["field"] != "geo.area_polygon"
                              else {k: p["value"][k] for k in ("crs", "vertex_count", "area_ha", "pages")},
@@ -109,6 +120,18 @@ def digest(d: dict) -> list[tuple[str, dict]]:
               "doc": f["citation"]["url"].rsplit("/", 1)[-1], "page": f["citation"]["page"],
               "excerpt": f["citation"]["excerpt"][:140]} for f in d["facts"] if f["field"].startswith("schedule.date")]
     out.append(("schedule_dates", sched[:60]))
+    out.append(("coordinate_pages_without_points", d.get("diagnostics", [])[:12]))
+    out.append(("unreadable_pages", [(u["url"].rsplit("/", 1)[-1], u["page"], u["method"]) for u in d.get("unreadable_pages", [])][:150]))
+    vats = [{"value": f["value"], "subject": f["subject"], "assoc": f["qualifiers"].get("subject_association"),
+             "doc": f["citation"]["url"].rsplit("/", 1)[-1], "page": f["citation"]["page"],
+             "excerpt": f["citation"]["excerpt"][:120]} for f in d["facts"] if f["field"] == "company.vat"]
+    seen, uniq = set(), []
+    for v in vats:
+        k = (v["value"], v["subject"], v["doc"])
+        if k not in seen:
+            seen.add(k)
+            uniq.append(v)
+    out.append(("vat_occurrences", uniq[:40]))
     if d.get("evaluation"):
         out.append(("evaluation", d["evaluation"]))
     return out

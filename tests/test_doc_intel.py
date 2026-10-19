@@ -389,6 +389,53 @@ class EndToEnd(unittest.TestCase):
         self.assertEqual(find_by_url(recs, "https://va.mite.gov.it/it-IT/Oggetti/Info/8788")["match_count"], 1)
 
 
+class RegressionsFromFirstLiveRun(unittest.TestCase):
+    """Cases observed in the first CI run on the two MASE benchmarks (run 39262291923)."""
+
+    def test_address_snc_is_not_a_company(self):
+        facts = extract_all([page("Soprintendenza ABAP - Caserma Pasubio Via Pavia snc - PEC sabap-al@pec.cultura.gov.it")])
+        self.assertTrue(all(f.subject is None for f in facts if f.field == "contact.pec"))
+
+    def test_person_is_never_proponent(self):
+        facts = extract_all([page("Committente: Dott. Geol. Gian Mario Repregosi")])
+        self.assertFalse([f for f in facts if f.field == "role.proponent"])
+
+    def test_vat_in_title_block_below_name(self):
+        facts = extract_all([page("MARGISOLAR S.r.l.\nVia Roma 1 - 15057 Tortona (AL)\nP.IVA 03920631201")])
+        vat = [f for f in facts if f.field == "company.vat"][0]
+        self.assertEqual(vat.subject, "MARGISOLAR S.r.l.")
+        self.assertEqual(vat.qualifiers["subject_association"], "previous_line_2")
+
+    def test_component_power_not_plant(self):
+        facts = extract_all([page("Il sottocampo 3 ha potenza pari a 8,16 MWp.\nPotenza complessiva dell'impianto 60,00865 MWp")])
+        scopes = {(f.value, f.subject) for f in facts if f.field == "tech.pv_dc_mwp"}
+        self.assertIn((8.16, "component"), scopes)
+        self.assertIn((60.00865, "plant"), scopes)
+
+    def test_vertex_list_restarting_is_split(self):
+        rows = "\n".join(["Coordinate vertici UTM WGS84 32N", "Area 2",
+                           "1 481949 4964811", "2 482257 4964814", "3 482318 4964439", "4 481906 4964438",
+                           "1 482309 4964835", "2 482549 4964902", "3 482467 4964275", "4 482394 4964251"])
+        polys = [f for f in extract_all([page(rows)]) if f.field == "geo.area_polygon"]
+        self.assertEqual(sorted(p.subject for p in polys), ["2#1", "2#2"])
+
+    def test_notifica_fields_are_template(self):
+        txt = "Durata effettiva dei lavori\nInizio lavori: 01/09/2026\nFine lavori: 30/08/2028\nIndirizzo del cantiere"
+        dates = [f for f in extract_all([page(txt)]) if f.field.startswith("schedule.date")]
+        self.assertTrue(dates and all(d.temporal == "template_reference" for d in dates))
+
+    def test_old_circular_dates_are_ignored(self):
+        txt = "Collaudo e circolari: Circolare N. 9/2001 del 12/01/2001 - Riflessi"
+        self.assertFalse([f for f in extract_all([page(txt)]) if f.field.startswith("schedule.date")])
+
+    def test_title_with_prescriptions(self):
+        h = ('<p>Oggetto: Progetto impianto "Tortona 2" da realizzarsi nei Comuni di Tortona (AL), Pozzolo Formigaro (AL) '
+             'e Frugarolo (AL). - Prescrizioni: 1 a) b) Proponente: Margisolar S.r.l. Tipologia di opera: x Regione: Piemonte</p>')
+        ident = MaseAdapter(get_html=lambda u: "").parse_info(h, "u", "1")
+        self.assertEqual(ident.municipalities, ["Tortona", "Pozzolo Formigaro", "Frugarolo"])
+        self.assertEqual(ident.region, "Piemonte")
+
+
 class NoHardcodedBenchmarks(unittest.TestCase):
     def test_toolbox_has_no_benchmark_ids(self):
         for py in (ROOT / "doc_intel").rglob("*.py"):

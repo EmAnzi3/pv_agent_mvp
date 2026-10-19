@@ -17,7 +17,12 @@ HOSTS = {"va.mite.gov.it", "va.mase.gov.it", "va.minambiente.it"}
 ROOT = "https://va.mite.gov.it"
 DECLARED_RE = re.compile(r"\(\s*n\.?\s*(\d+)\s*\)\s*Document", re.I)
 DOC_RE = re.compile(r"/File/(?:Documento|Provvedimento)/\d+", re.I)
-MUNI_TITLE_RE = re.compile(r"(?i)\bComun[ei]\s+di\s+(?P<list>.+?)(?:\.\s*$|\s+in\s+localit|\s+e\s+relative|\s*$)")
+MUNI_TITLE_RE = re.compile(r"(?i)\bComun[ei]\s+di\s+(?P<list>.+?\([A-Z]{2}\)|[^,.(]+?)(?=\s*[.;]|\s*,?\s*in\s+localit|\s*,?\s*e\s+relativ|\s*,\s*(?:con|comprensiv|per|nonch|ove)|\s+-\s|\s*$)")
+NAME_RE = re.compile(r"^[A-ZÀ-Ýa-zà-ÿ][A-Za-zÀ-ÿ'’\- ]{1,40}$")
+REGIONS = ["Abruzzo", "Basilicata", "Calabria", "Campania", "Emilia-Romagna", "Friuli-Venezia Giulia", "Lazio",
+           "Liguria", "Lombardia", "Marche", "Molise", "Piemonte", "Puglia", "Sardegna", "Sicilia", "Toscana",
+           "Trentino-Alto Adige", "Umbria", "Valle d'Aosta", "Veneto"]
+REGION_RE = re.compile(r"\bRegione\s*:?\s*(" + "|".join(re.escape(r) for r in REGIONS) + r")\b", re.I)
 PROV_RE = re.compile(r"\(([A-Z]{2})\)")
 
 
@@ -77,9 +82,11 @@ class MaseAdapter(DocumentAdapter):
             if node and len(node.get_text(strip=True)) > 25:
                 title = node.get_text(" ", strip=True)
                 break
-        om = re.search(r"Oggetto\s*:?\s*(.+?)(?:\s+Proponente\s*:|\s+Tipologia|$)", text)
+        om = re.search(r"Oggetto\s*:?\s*(.+?)(?:\s+Proponente\s*:|\s+Tipologia|\s+-\s+Prescrizion|\s+Data\s+presentazione|$)", text)
         if om and len(om.group(1)) > 25:
             title = om.group(1).strip()
+        if title:
+            title = re.split(r"\s+-\s+Prescrizion|\s+Data\s+presentazione", title)[0].strip()
         prop = None
         pm = re.search(r"\bProponente\s*:\s*(.+?)(?:\s+Tipologia\s+di\s+opera|\s+Scadenza|\s+Territori|\s+Procedura|\s+Data\s+presentazione|\s+Oggetto\s*:|$)", text)
         if pm:
@@ -91,7 +98,7 @@ class MaseAdapter(DocumentAdapter):
                 for part in re.split(r",|\s+e\s+", mm.group("list")):
                     pr = PROV_RE.search(part)
                     name = PROV_RE.sub("", part).strip(" .;")
-                    if name and len(name) < 50:
+                    if name and NAME_RE.match(name):
                         munis.append(name.title())
                     if pr:
                         provs.append(pr.group(1))
@@ -106,7 +113,10 @@ class MaseAdapter(DocumentAdapter):
                 row = a.find_parent("tr")
                 label = (row.get_text(" ", strip=True) if row else a.get_text(" ", strip=True))[:200]
                 procedures.append({"id": pm2.group(2), "url": href, "label": label})
+        rm = {m.group(1).lower() for m in REGION_RE.finditer(text)}
+        region = next((r for r in REGIONS if r.lower() in rm), None) if len(rm) == 1 else None
         ident = ProjectIdentity(source="mase", project_id=pid, info_url=url, title=title, proponent=prop,
+                                region=region,
                                 municipalities=munis, province=provs[0] if len(set(provs)) == 1 else None,
                                 procedures=procedures)
         ident.raw["municipalities_citation"] = {"url": url, "excerpt": (title or "")[:300]}

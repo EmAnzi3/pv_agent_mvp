@@ -38,7 +38,8 @@ SCOPE_RULES = [
 ]
 TEMPLATE_CTX = re.compile(r"(?i)piano\s+di\s+sicurezza|\bPSC\b|\bP\.O\.S\.|\bPOS\b|notifica\s+preliminare|art\.?\s*99|"
                           r"fascicolo\s+(?:dell'opera|tecnico)|fac-?\s?simile|esempio|modello\s+di|anagrafica\s+di\s+cantiere|"
-                          r"uomini[\s-]giorno|dati\s+(?:generali\s+)?(?:del|di)\s+cantiere")
+                          r"uomini[\s-]giorno|dati\s+(?:generali\s+)?(?:del|di)\s+cantiere|indirizzo\s+del\s+cantiere|durata\s+effettiva\s+dei\s+lavori|"
+                          r"\(presunt[ao]\)|numero\s+(?:massimo\s+)?(?:presunto\s+)?(?:dei\s+)?lavoratori|ammontare\s+complessivo\s+presunto")
 PLANNED_CTX = re.compile(r"(?i)cronoprogramma|gantt|previst[oaie]|ipotizzat|programmat|stimat|pianificat|si\s+prevede|presunt")
 SCENARIO_CTX = re.compile(r"(?i)squadre|in\s+parallelo|scenario|ipotesi|alternativ|ottimizzat|nel\s+caso\s+in\s+cui")
 CONDITIONAL_CTX = re.compile(r"(?i)dal(?:la)?\s+(?:data\s+(?:di|del)\s+)?(?:rilascio|ottenimento|conseguimento)|a\s+partire\s+da|decorrent|subordinat|condizionat|entro\s+\d+\s+(?:mesi|giorni)\s+dal")
@@ -111,14 +112,21 @@ def extract(ctx: PageContext) -> list[Fact]:
             dates.append((m, _iso(m.group("d"), MONTHS[m.group("mon").lower()], m.group("y"))))
         if not dates:
             continue
-        label = None
+        label, label_end = None, None
         for rx, name in LABELS:
-            if rx.search(line) or (rx.search(ctx.window(i, 1, 0)) and len(line) < 40):
-                label = name
+            lm = rx.search(line)
+            if lm:
+                label, label_end = name, lm.end()
+                break
+            if rx.search(ctx.window(i, 1, 0)) and len(line) < 40:
+                label, label_end = name, 0
                 break
         if not label:
             continue  # unlabeled dates are document metadata, not milestones
         for m, iso in dates:
+            # the date must follow its label closely, and be a plausible project date
+            if m.start() < label_end - 1 or m.start() - label_end > 60 or int(iso[:4]) < 2015:
+                continue
             nature = temporal_nature(line, ctx_text, ctx.text)
             facts.append(Fact(field=f"schedule.date.{label}", value=iso, citation=ctx.cite(ctx_text),
                               temporal=nature,

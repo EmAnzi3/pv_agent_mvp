@@ -52,20 +52,32 @@ def compare(record: dict | None, groups: list[dict[str, Any]], project_meta: dic
     for g in groups:
         by_field.setdefault(g["field"], []).append(g)
 
-    def values(field: str) -> list[Any]:
-        return [v["value"] for g in by_field.get(field, []) for v in g.get("values", []) if isinstance(v, dict)]
+    def values(field: str, subjects: tuple | None = None) -> list[Any]:
+        return [v["value"] for g in by_field.get(field, []) if subjects is None or g.get("subject") in subjects
+                for v in g.get("values", []) if isinstance(v, dict)]
 
-    # proponent
+    def ranked(field: str) -> list[dict]:
+        out = [{"value": v["value"], "occurrences": v["occurrences"], "example": v["example"]}
+               for g in by_field.get(field, []) for v in g.get("values", []) if isinstance(v, dict)]
+        return sorted(out, key=lambda x: -x["occurrences"])
+
+    # proponent: the authority's project sheet is the registry value; documents give variants
     canon = rec.get("proponent")
-    found = values("role.proponent")
     meta_prop = project_meta.get("proponent")
+    doc_variants = ranked("role.proponent")
     if meta_prop:
-        found = found + [meta_prop]
-    rows.append(_row("proponent", canon, found, key=company_key))
+        row = _row("proponent", canon, [meta_prop], key=company_key)
+        row["source_kind"] = "authority project sheet"
+    else:
+        row = _row("proponent", canon, [v["value"] for v in doc_variants], key=company_key)
+        row["source_kind"] = "documents"
+    row["document_variants"] = doc_variants[:8]
+    rows.append(row)
 
-    # power
+    # power: only plant-level (or unscoped) values are comparable with the canonical power
     canon_p = rec.get("power_mw")
-    pv = {f: values(f) for f in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")}
+    scopes = ("plant", "unknown", None)
+    pv = {f: values(f, scopes) for f in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")}
     flat = [x for v in pv.values() for x in v]
     row = _row("power_mw", canon_p, flat, numeric=True)
     row["detail"] = {k: sorted(set(v)) for k, v in pv.items() if v}

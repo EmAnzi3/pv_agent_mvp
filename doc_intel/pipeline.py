@@ -4,6 +4,7 @@ Per-file errors never stop the project; every failure is recorded.
 """
 from __future__ import annotations
 
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import asdict
@@ -23,7 +24,7 @@ from .reconcile import group
 from .schema import Fact, facts_to_json
 from .store import Store
 
-PROPOSABLE = ("company.vat", "contact.pec", "role.proponent", "role.designer", "role.geologist",
+PROPOSABLE = ("company.vat", "contact.pec", "contact.email", "contact.phone", "role.proponent", "role.designer", "role.geologist",
               "tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.bess_power_mw", "tech.bess_energy_mwh",
               "tech.module_power_wp", "tech.inverter_count", "tech.inverter_power_kw", "tech.mounting",
               "tech.technology", "grid.voltage_kv", "geo.area_polygon",
@@ -67,6 +68,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     store.save_manifest(manifest)
 
     pages: list[PageContext] = []
+    unreadable: list[dict] = []
+    sha_aliases: dict[str, list[str]] = {}
     inventory = []
     by_sha: dict[str, str] = {}
     acq = {"declared_total": sum(p["declared"] or 0 for p in disc.procedures), "procedures": disc.procedures,
@@ -82,6 +85,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         if res.state == "failed":
             acq["download_failures"] += 1
         if res.sha256:
+            sha_aliases.setdefault(res.sha256, []).append(ref.url)
             if res.sha256 in by_sha:
                 entry["duplicate_of"] = by_sha[res.sha256]
                 acq["duplicate_references"] += 1
@@ -104,6 +108,9 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
             acq["pages_ocr_pending"] += s.get("ocr_deferred", 0) + (0 if ocr else s.get("no_text", 0))
             acq["pages_unreadable"] += s.get("ocr_failed", 0) + (s.get("no_text", 0) if ocr else 0)
             for p in txt.get("pages", []):
+                if p["method"] in ("ocr_failed", "none_after_ocr", "none") and len(unreadable) < 200:
+                    unreadable.append({"url": ref.url, "member": None if mem.depth == 0 else mem.name,
+                                       "page": p["n"], "method": p["method"], "error": p.get("error")})
                 if p.get("text"):
                     pages.append(PageContext(p["text"], ref.url, p["n"], res.sha256,
                                              None if mem.depth == 0 else mem.name, ref.procedure_id,
@@ -113,6 +120,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     t_extract = time.time()
     facts = extract_all(pages)
     groups = group(facts)
+    diagnostics = coordinate_diagnostics(pages, facts)
     log(f"[extract] {len(facts)} facts, {sum(g['status']=='conflict' for g in groups)} conflict groups")
 
     canonical = {"status": "not_checked"}
@@ -134,7 +142,9 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         "schema": SCHEMA_VERSION, "toolbox_version": TOOLBOX_VERSION,
         "generated_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "project": asdict(identity),
-        "acquisition": acq, "inventory": inventory,
+        "acquisition": acq, "inventory": inventory, "unreadable_pages": unreadable,
+        "sha_aliases": {k: v for k, v in sha_aliases.items() if len(v) > 1},
+        "diagnostics": diagnostics,
         "facts": facts_to_json(facts), "groups": groups,
         "canonical": {k: v for k, v in canonical.items() if k != "record"}, "canonical_record": record,
         "delta": delta, "proposal": proposal, "gates": {"acquisition": acq_gate, "proposal": gate_rows},
@@ -150,11 +160,52 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     return dossier
 
 
+COORD_HINT = re.compile(r"(?i)\bUTM\b|WGS\s*-?\s*84|EPSG|coordinat|gauss|monte\s+mario|\bvertic")
+
+
+def coordinate_diagnostics(pages: list[PageContext], facts: list[Fact], limit: int = 40) -> list[dict]:
+    """Pages that talk about coordinates but yielded no point: never report 'absent', show the text."""
+    hit = {(f.citation.url, f.citation.member, f.citation.page) for f in facts if f.field.startswith("geo.")}
+    out = []
+    for p in pages:
+        if (p.url, p.member, p.page) in hit:
+            continue
+        m = COORD_HINT.search(p.text)
+        if not m or not re.search(r"\d{6}", p.text):
+            continue
+        start = max(0, m.start() - 150)
+        out.append({"url": p.url, "page": p.page, "method": p.method,
+                    "snippet": re.sub(r"\s+", " ", p.text[start:start + 600])})
+        if len(out) >= limit:
+            break
+    return out
+
+
+def _party_keys(groups: list[dict]) -> set[str]:
+    from .extract.entities import company_key
+    keys = set()
+    for g in groups:
+        if g["field"] in ("role.proponent", "role.designer", "role.geologist", "role.works_director"):
+            for v in g["values"]:
+                if isinstance(v, dict):
+                    keys.add(company_key(str(v["value"])))
+    return keys
+
+
 def build_proposal(facts: list[Fact], groups: list[dict]) -> list[dict[str, Any]]:
-    """One candidate per (field, subject) group with a single value; conflicts are never proposed."""
+    """One candidate per (field, subject) group with a single value; conflicts are never proposed.
+
+    Contacts and VAT numbers are proposed only for documented project parties (proponent,
+    designer, geologist, works director), not for authorities or third parties cited in letters.
+    """
     proposal = []
+    parties = _party_keys(groups)
     for g in groups:
         if g["field"] not in PROPOSABLE or g["status"] != "single_value":
+            continue
+        if g["field"] in ("company.vat", "contact.pec", "contact.email", "contact.phone") and (g["subject"] or "") not in parties:
+            continue
+        if g["field"].startswith("tech.") and g["field"].endswith(("_mwp", "_mw", "_mwh")) and g["subject"] not in ("plant",):
             continue
         v = g["values"][0]
         proposal.append({"field": g["field"], "subject": g["subject"], "value": v["value"],

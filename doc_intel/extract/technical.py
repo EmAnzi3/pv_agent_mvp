@@ -41,6 +41,29 @@ TECH_WORDS = [
 ]
 
 
+PLANT_CTX = re.compile(r"(?i)\b(?:complessiv[aoie]|totale|dell'impianto|impianto\s+(?:fotovoltaico|agrivoltaico|eolico)|"
+                       r"potenza\s+(?:nominale|di\s+picco|installata|in\s+immissione)|denominato|parco)\b")
+COMPONENT_CTX = re.compile(r"(?i)\b(?:sotto-?camp[oi]|campo\s+(?:n\.?\s*)?\d|sezion[ei]\s+\w{1,3}\b|cabin[ae]|blocc[oi]|"
+                           r"inverter|trasformator[ei]|lotto|area\s+[A-Z0-9]{1,3}\b|string[ae]|quadr[oi]|ciascun[oa]|"
+                           r"singol[oa]|per\s+ogni|unitari[oa]|altri\s+impianti|impianti\s+(?:esistenti|limitrofi|in\s+progetto)|cumul)")
+
+
+def power_scope(local: str, sentence: str) -> str:
+    """plant | component | other_project | unknown — only plant/unknown feed the canonical delta."""
+    if re.search(r"(?i)altri\s+impianti|impianti\s+(?:esistenti|limitrofi|autorizzati)|cumul", sentence):
+        return "other_project"
+    plant_l, comp_l = PLANT_CTX.search(local), COMPONENT_CTX.search(local)
+    if plant_l and not comp_l:
+        return "plant"
+    if comp_l:
+        return "component"
+    if PLANT_CTX.search(sentence) and not COMPONENT_CTX.search(sentence):
+        return "plant"
+    if COMPONENT_CTX.search(sentence):
+        return "component"
+    return "unknown"
+
+
 def _sentence(ctx: PageContext, i: int) -> str:
     return ctx.window(i, 1, 1)
 
@@ -90,10 +113,11 @@ def extract(ctx: PageContext) -> list[Fact]:
             # kW of single devices (inverter 350 kW, ausiliari) are not plant powers
             if scale < 1 and value < 1 and field != "tech.bess_energy_mwh":
                 continue
-            if value > 5000:  # implausible for a single project, likely a mis-tokenised number
+            if value > 1500:  # implausible for a single project, likely a mis-tokenised number
                 continue
-            facts.append(Fact(field=field, value=value, unit=unit, citation=ctx.cite(sent),
-                              qualifiers={"raw": m.group(0)}, extractor="technical.power",
+            scope = power_scope(line[max(0, m.start() - 60): m.end() + 40], sent)
+            facts.append(Fact(field=field, value=value, unit=unit, citation=ctx.cite(sent), subject=scope,
+                              qualifiers={"raw": m.group(0), "scope": scope}, extractor="technical.power",
                               limits="Value as stated in this document/revision; may be historical"))
         for m in MODULE_WP_RE.finditer(line):
             v = parse_number(m.group("num") or m.group("num2"))

@@ -38,7 +38,9 @@ OBJECT_RULES = [
     (re.compile(r"(?i)\bBESS\b|accumulo"), "bess"),
     (re.compile(r"(?i)sondagg|prova\s+penetrometric|pozz|piezometr"), "survey_point"),
 ]
-AREA_LABEL_RE = re.compile(r"(?i)\b(?:area|campo|lotto|sottocampo|sezione|impianto|blocco)\s*(?:n\.?\s*)?(?P<id>[A-Z0-9]{1,4}(?:[.\-][A-Z0-9]{1,3})?)\b")
+AREA_LABEL_RE = re.compile(r"(?i:\b(?:area|campo|lotto|sottocampo|sezione|impianto|blocco))\s*(?:n\.?\s*|nr\.?\s*)?(?P<id>[A-Z0-9]{1,4}(?:[.\-][A-Z0-9]{1,3})?)\b")
+AREA_STOP = {"DI", "EL", "SI", "IN", "DA", "IL", "LA", "LE", "AL", "DEL", "CON", "PER", "UTM", "WGS"}
+RING_START = re.compile(r"^(?:V|P|A)?\s?-?0*1$")
 POINT_LABEL_RE = re.compile(r"^\s*(?P<lab>(?:[A-Z]{1,3}\s?-?\d{1,3}[A-Z]?|\d{1,3}|V\d{1,3}|P\d{1,3}))\b")
 
 ITALY_UTM = {32: ((280_000, 830_000), (4_150_000, 5_200_000)),
@@ -126,7 +128,7 @@ def extract(ctx: PageContext) -> list[Fact]:
         if not line:
             continue
         am = AREA_LABEL_RE.search(line)
-        if am and not PAIR_RE.search(line):
+        if am and not PAIR_RE.search(line) and am.group("id").upper() not in AREA_STOP:
             current_area = am.group("id").upper()
         heading_obj = classify_object(line)
         if heading_obj != "unknown" and not PAIR_RE.search(line):
@@ -177,36 +179,51 @@ def assemble_polygons(facts: list[Fact]) -> list[Fact]:
                (f.qualifiers.get("crs") or {}).get("zone"))
         groups.setdefault(key, []).append(f)
     out: list[Fact] = []
-    for (url, member, area, zone), pts in groups.items():
-        pts.sort(key=lambda f: (f.citation.page or 0, f.qualifiers.get("line_index", 0)))
-        ring = []
-        for p in pts:
-            xy = (p.qualifiers["easting"], p.qualifiers["northing"])
-            if not ring or ring[-1] != xy:
-                ring.append(xy)
-        closed = len(ring) > 3 and ring[0] == ring[-1]
-        if closed:
-            ring = ring[:-1]
-        if len(ring) < 3:
-            continue
-        area_ha = round(polygon_area_m2(ring) / 10000, 3)
-        pages = sorted({p.citation.page for p in pts if p.citation.page})
-        limits = []
-        if not zone:
-            limits.append("zone unknown: geometry kept in source coordinates only")
-        if area_ha > 3000 or area_ha < 0.05:
-            limits.append(f"implausible area {area_ha} ha: check vertex parsing/order")
-        if not closed:
-            limits.append("ring not explicitly closed in source; closed implicitly")
-        lonlat = [list(utm_to_latlon(e, n, zone)[::-1]) for e, n in ring] if zone else None
-        first = pts[0]
-        out.append(Fact(field="geo.area_polygon", subject=area, value={
-            "crs": f"EPSG:{32600 + zone}" if zone else "UTM zone unknown",
-            "vertices_source": [list(v) for v in ring],
-            "geojson": {"type": "Polygon", "coordinates": [lonlat + [lonlat[0]]]} if lonlat else None,
-            "vertex_count": len(ring), "area_ha": area_ha, "pages": pages},
-            citation=first.citation, precision="validated_perimeter_candidate",
-            qualifiers={"source_document": url, "member": member, "closed_in_source": closed},
-            limits="; ".join(limits) or "Perimeter of the area as tabulated; requires visual check against the drawing",
-            extractor="geo.polygon"))
+    for (url, member, area, zone), all_pts in groups.items():
+        all_pts.sort(key=lambda f: (f.citation.page or 0, f.qualifiers.get("line_index", 0)))
+        # a vertex list restarting at "1"/"V1", or a gap of more than one page, starts a new ring
+        runs: list[list[Fact]] = [[]]
+        for p in all_pts:
+            cur = runs[-1]
+            lab = (p.qualifiers.get("point_label") or "").replace(" ", "")
+            if cur and (len(cur) >= 3 and RING_START.match(lab) or (p.citation.page or 0) - (cur[-1].citation.page or 0) > 1):
+                runs.append([])
+            runs[-1].append(p)
+        for k, pts in enumerate(runs):
+            out.extend(_ring_fact(url, member, area if len(runs) == 1 else f"{area or ''}#{k + 1}", zone, pts))
+    return out
+
+
+def _ring_fact(url, member, area, zone, pts: list[Fact]) -> list[Fact]:
+    out: list[Fact] = []
+    ring = []
+    for p in pts:
+        xy = (p.qualifiers["easting"], p.qualifiers["northing"])
+        if not ring or ring[-1] != xy:
+            ring.append(xy)
+    closed = len(ring) > 3 and ring[0] == ring[-1]
+    if closed:
+        ring = ring[:-1]
+    if len(ring) < 3:
+        return out
+    area_ha = round(polygon_area_m2(ring) / 10000, 3)
+    pages = sorted({p.citation.page for p in pts if p.citation.page})
+    limits = []
+    if not zone:
+        limits.append("zone unknown: geometry kept in source coordinates only")
+    if area_ha > 3000 or area_ha < 0.05:
+        limits.append(f"implausible area {area_ha} ha: check vertex parsing/order")
+    if not closed:
+        limits.append("ring not explicitly closed in source; closed implicitly")
+    lonlat = [list(utm_to_latlon(e, n, zone)[::-1]) for e, n in ring] if zone else None
+    first = pts[0]
+    out.append(Fact(field="geo.area_polygon", subject=area, value={
+        "crs": f"EPSG:{32600 + zone}" if zone else "UTM zone unknown",
+        "vertices_source": [list(v) for v in ring],
+        "geojson": {"type": "Polygon", "coordinates": [lonlat + [lonlat[0]]]} if lonlat else None,
+        "vertex_count": len(ring), "area_ha": area_ha, "pages": pages},
+        citation=first.citation, precision="validated_perimeter_candidate",
+        qualifiers={"source_document": url, "member": member, "closed_in_source": closed},
+        limits="; ".join(limits) or "Perimeter of the area as tabulated; requires visual check against the drawing",
+        extractor="geo.polygon"))
     return out
