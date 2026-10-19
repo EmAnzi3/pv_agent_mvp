@@ -106,7 +106,7 @@ def extract(ctx: PageContext) -> list[Fact]:
             num = parse_number(m.group("num"))
             if num is None or num <= 0:
                 continue
-            after = line[m.end(): m.end() + 25]
+            after = re.split(r"[,;(]|\s+con\s+|\s+e\s+(?:un|relativ)", line[m.end(): m.end() + 25])[0]
             before = line[max(0, m.start() - 25): m.start()]
             # the qualifier usually follows the number ("60 MW lato AC"); fall back to the words before it
             local = after if (DC_CTX.search(after) or AC_CTX.search(after) or BESS_CTX.search(after)) else before + " " + after

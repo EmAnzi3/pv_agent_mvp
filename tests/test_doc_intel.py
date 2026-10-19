@@ -476,6 +476,7 @@ class RegressionsFromThirdLiveRun(unittest.TestCase):
         facts = extract_all([page("Impianto agrivoltaico di potenza pari a 54,5 MW, con sistema di accumulo integrato da 10 MW")])
         bess = [f for f in facts if f.field == "tech.bess_power_mw"]
         self.assertTrue(bess and all(f.subject != "other_project" for f in bess))
+        self.assertEqual([f.value for f in bess], [10.0])  # 54,5 MW is the PV plant, not storage
 
     def test_failed_ocr_pages_are_retried(self):
         with tempfile.TemporaryDirectory() as d:
