@@ -1,0 +1,102 @@
+name: Doc Intel dossier (review only)
+# Runs the generic toolbox on MASE records. No write to docs/data.json or to the database.
+# The document store (bytes + extracted text) is persisted with actions/cache, not in Git.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Record URL already present in PV Agent (MASE Info or provvedimento page)'
+        required: true
+      gold:
+        description: 'Optional gold set path, e.g. doc_intel/gold/mase-<id>.json'
+        required: false
+        default: ''
+      ocr_max_pages:
+        description: 'OCR page budget for this run'
+        required: false
+        default: '1000'
+  pull_request:
+    paths:
+      - 'doc_intel/**'
+      - '.github/workflows/doc-intel-run.yml'
+permissions:
+  contents: read
+jobs:
+  benchmarks:
+    if: github.event_name == 'pull_request'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: troia-sun
+            url: https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6479
+            gold: doc_intel/gold/mase-6479.json
+          - name: tortona-2
+            url: https://va.mite.gov.it/it-IT/Oggetti/Info/8788
+            gold: doc_intel/gold/mase-8788.json
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ita poppler-utils
+      - run: python -m pip install pymupdf pypdf requests beautifulsoup4
+      - uses: actions/cache@v4
+        with:
+          path: .doc_intel_store
+          key: doc-intel-store-${{ matrix.name }}-${{ github.run_id }}
+          restore-keys: doc-intel-store-${{ matrix.name }}-
+      - name: Build dossier
+        run: |
+          python -m doc_intel run --url "${{ matrix.url }}" --gold "${{ matrix.gold }}" \
+            --store .doc_intel_store --data docs/data.json --out reports/doc_intel \
+            --ocr-max-pages 1000 --workers 3 2>&1 | tee run-${{ matrix.name }}.log
+      - name: Evaluate against gold set (fails on forbidden facts or undetected expected conflicts)
+        run: |
+          f=$(ls reports/doc_intel/*.json | head -1)
+          python -m doc_intel evaluate --dossier "$f" --gold "${{ matrix.gold }}" | tee eval-${{ matrix.name }}.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: doc-intel-${{ matrix.name }}
+          path: |
+            reports/doc_intel/
+            run-${{ matrix.name }}.log
+            eval-${{ matrix.name }}.json
+          retention-days: 30
+  manual:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ita poppler-utils
+      - run: python -m pip install pymupdf pypdf requests beautifulsoup4
+      - uses: actions/cache@v4
+        with:
+          path: .doc_intel_store
+          key: doc-intel-store-manual-${{ github.run_id }}
+          restore-keys: doc-intel-store-
+      - name: Build dossier
+        env:
+          URL: ${{ inputs.url }}
+          GOLD: ${{ inputs.gold }}
+          OCR_MAX: ${{ inputs.ocr_max_pages }}
+        run: |
+          extra=""
+          if [ -n "$GOLD" ]; then extra="--gold $GOLD"; fi
+          python -m doc_intel run --url "$URL" $extra --store .doc_intel_store --data docs/data.json \
+            --out reports/doc_intel --ocr-max-pages "$OCR_MAX" --workers 3 2>&1 | tee run.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: doc-intel-manual
+          path: |
+            reports/doc_intel/
+            run.log
+          retention-days: 30
