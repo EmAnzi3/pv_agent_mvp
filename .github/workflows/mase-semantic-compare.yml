@@ -30,7 +30,7 @@ jobs:
           done
       - name: Compare source-cited candidates against canonical data
         run: |
-          python experiments/mase_semantic_compare.py --evidence-dir source-evidence 2>&1 | tee compare.log
+          python -m experiments.mase_semantic_compare --evidence-dir source-evidence 2>&1 | tee compare.log
       - name: Upload review-only semantic comparison
         if: always()
         uses: actions/upload-artifact@v4
