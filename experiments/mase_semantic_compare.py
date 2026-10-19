@@ -21,6 +21,10 @@ FACTS=[
  ("inverter_power_kw",350,"1126262",15,"Inverter da 350 kW: 168"),
  ("module_power_kwp",0.710,"1126259",19,"Generatori fotovoltaici da 0,710 kWp"),
  ("coordinate_reference_system","UTM-WGS84 Fuso 33","1126263",4,"Coordinate UTM-WGS 84 Fuso 33"),
+ ("design_company_vat","11092870960","1126228",1,"P.IVA 11092870960"),
+ ("design_company_pec","I-project@legalmail.it","1126228",1,"I-project@legalmail.it"),
+ ("grid_voltage_kv",36,"1126180",12,"sezione a 36 kV"),
+ ("decommission_duration_months",16,"1438131",9,"durata pari a 16 mesi"),
 ]
 def norm(s):return re.sub(r"[^a-z0-9]+","",str(s).casefold().replace(",","."))
 def main():
