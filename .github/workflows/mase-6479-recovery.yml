@@ -1,0 +1,32 @@
+name: MASE 6479 PDF recovery (isolated)
+on:
+  pull_request:
+    paths:
+      - 'experiments/mase_6479_recovery.py'
+      - '.github/workflows/mase-6479-recovery.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install requests pymupdf
+      - name: Recover 12 problematic originals and inspect all pages
+        run: |
+          python experiments/mase_6479_recovery.py 2>&1 | tee recover.log
+      - name: Upload recovery report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mase-6479-recovery
+          path: |
+            recover.log
+            reports/crawl4ai/mase-6479-recovery.json
+          retention-days: 14
+          if-no-files-found: warn
