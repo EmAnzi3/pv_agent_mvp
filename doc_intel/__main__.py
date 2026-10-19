@@ -119,14 +119,19 @@ def _playwright_renderer():
         with sync_playwright() as p:
             b = p.chromium.launch(headless=True)
             page = b.new_page()
+            xhr = []
+            page.on("response", lambda r: xhr.append({"url": r.url[:300], "status": r.status,
+                                                       "type": (r.headers or {}).get("content-type", "")[:60]})
+                    if r.request.resource_type in ("xhr", "fetch") else None)
             page.goto(url, wait_until="domcontentloaded", timeout=60000)
             try:
-                page.wait_for_load_state("networkidle", timeout=20000)
+                page.wait_for_load_state("networkidle", timeout=25000)
             except Exception:
                 pass
+            page.wait_for_timeout(3000)
             html = page.content()
             b.close()
-            return html
+            return html, xhr
     return render
 
 

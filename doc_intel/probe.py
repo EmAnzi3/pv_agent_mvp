@@ -72,12 +72,43 @@ def classify_links(html: str, base: str) -> dict[str, Any]:
             "snippet": text[:400]}
 
 
-def probe_url(url: str, get: Callable | None = None, render: Callable[[str], str] | None = None,
-              sample_downloads: int = 3) -> dict[str, Any]:
+FOLLOW_HINT = re.compile(r"(?i)allegat|document|elaborat|procediment|pratica|progetto|dettaglio|scheda|istanza|va\.mite|"
+                         r"valutazion|sharing|box\.com|download")
+
+
+def _robust_get(session):
+    import time
+    def get(u):
+        last = None
+        for attempt in range(3):
+            try:
+                return session.get(u, timeout=90, allow_redirects=True)
+            except Exception as exc:  # classify later; retry transient errors
+                last = exc
+                time.sleep(5 * (attempt + 1))
+        raise last
+    return get
+
+
+def error_class(msg: str) -> str:
+    m = msg.lower()
+    if "name or service not known" in m or "nodename" in m or "getaddrinfo" in m:
+        return "dns"
+    if "timed out" in m or "timeout" in m:
+        return "timeout"
+    if "refused" in m or "reset" in m or "max retries" in m:
+        return "connection_refused_or_filtered"
+    if "ssl" in m or "certificate" in m:
+        return "tls"
+    return "other"
+
+
+def probe_url(url: str, get: Callable | None = None, render: Callable[[str], Any] | None = None,
+              sample_downloads: int = 3, follow: int = 4) -> dict[str, Any]:
     import requests
     session = requests.Session()
     session.headers["User-Agent"] = DEFAULT_UA
-    get = get or (lambda u: session.get(u, timeout=60, allow_redirects=True))
+    get = get or _robust_get(session)
     out: dict[str, Any] = {"url": url, "http": None, "rendered": None, "downloads": [], "obstacles": []}
     html = None
     try:
@@ -91,14 +122,39 @@ def probe_url(url: str, get: Callable | None = None, render: Callable[[str], str
                 html = r.text
                 out["http"].update(classify_links(html, r.url))
     except Exception as exc:
-        out["http"] = {"error": str(exc)[:200]}
-        out["obstacles"].append("HTTP request failed: " + str(exc)[:120])
+        out["http"] = {"error": str(exc)[:300], "error_class": error_class(str(exc))}
+        out["obstacles"].append(f"HTTP failed after 3 attempts ({error_class(str(exc))}): " + str(exc)[:120])
     if render:
         try:
-            rhtml = render(url)
+            rendered = render(url)
+            rhtml, xhr = (rendered if isinstance(rendered, tuple) else (rendered, []))
             out["rendered"] = classify_links(rhtml, url)
+            out["rendered"]["xhr"] = xhr[:25]
         except Exception as exc:
-            out["rendered"] = {"error": str(exc)[:200]}
+            out["rendered"] = {"error": str(exc)[:200], "error_class": error_class(str(exc))}
+    # one hop: when the record page lists no documents, follow the most promising links
+    base_cls = out["rendered"] if out["rendered"] and "doc_links" in out["rendered"] else out["http"]
+    if base_cls and "doc_links" in base_cls and base_cls.get("doc_link_count", 0) == 0 and html:
+        from bs4 import BeautifulSoup
+        cands = []
+        for a in BeautifulSoup(html, "html.parser").find_all("a", href=True):
+            href = urljoin(url, a["href"]).split("#")[0]
+            text = a.get_text(" ", strip=True)
+            if href.startswith("http") and href != url and (FOLLOW_HINT.search(href) or FOLLOW_HINT.search(text)):
+                cands.append((href, text[:80]))
+        out["followed"] = []
+        for href, text in list(dict.fromkeys(cands))[:follow]:
+            try:
+                r = get(href)
+                kind = sniff(r.content)
+                info = {"url": href, "text": text, "status": r.status_code, "kind": kind}
+                if kind == "html":
+                    c = classify_links(r.text, r.url)
+                    info.update({"doc_link_count": c["doc_link_count"], "doc_links": c["doc_links"][:5],
+                                 "title": c["title"]})
+                out["followed"].append(info)
+            except Exception as exc:
+                out["followed"].append({"url": href, "error": str(exc)[:120]})
     best = out["rendered"] if (out["rendered"] and out["rendered"].get("doc_link_count", 0) >
                                (out["http"] or {}).get("doc_link_count", 0)) else out["http"]
     for d in (best or {}).get("doc_links", [])[:sample_downloads]:
@@ -123,8 +179,15 @@ def probe_url(url: str, get: Callable | None = None, render: Callable[[str], str
 def verdict(p: dict[str, Any]) -> dict[str, str]:
     kinds = [d.get("kind") for d in p["downloads"] if d.get("kind")]
     http = p.get("http") or {}
-    if http.get("error") and not p.get("rendered"):
-        return {"status": "blocked", "method": "none", "why": "source unreachable from CI"}
+    ren = p.get("rendered") or {}
+    if http.get("error") and (not ren or ren.get("error")):
+        return {"status": "unreachable_from_ci", "method": "none",
+                "why": f"HTTP {http.get('error_class')} and browser {ren.get('error_class', 'n/a')}: retry from an Italian network before calling it blocked"}
+    if ren.get("xhr") and not ren.get("doc_link_count"):
+        return {"status": "partial", "method": "spa_api", "why": f"page loads data from {len(ren['xhr'])} API calls: adapter must call the API"}
+    followed_docs = sum(f.get("doc_link_count", 0) for f in p.get("followed", []) or [])
+    if followed_docs:
+        return {"status": "partial", "method": "one_hop_to_document_page", "why": f"{followed_docs} document links one click away"}
     if any(k in ("pdf", "zip") for k in kinds):
         method = "browser_index+http_download" if "single-page app" in " ".join(p["obstacles"]) else "http_index+http_download"
         return {"status": "supported_candidate", "method": method, "why": f"downloads verified: {Counter(kinds)}"}
@@ -146,7 +209,10 @@ def summary_line(src: str, sample: dict, res: dict) -> dict:
             "obstacles": res["obstacles"], "verdict": res["verdict"],
             "example_links": [d["url"] for d in (ren.get("doc_links") or http.get("doc_links") or [])[:4]],
             "pager": [p["url"] for p in (ren.get("pager_links") or http.get("pager_links") or [])[:3]],
-            "external_hosts": http.get("external_hosts"), "title": http.get("title") or ren.get("title")}
+            "external_hosts": http.get("external_hosts"), "title": http.get("title") or ren.get("title"),
+            "http_error": http.get("error"), "xhr": ren.get("xhr"),
+            "followed": [{k: f.get(k) for k in ("url", "status", "kind", "doc_link_count", "title", "error")}
+                         | {"doc_links": [d["url"] for d in f.get("doc_links", [])[:3]]} for f in res.get("followed", []) or []]}
 
 
 def to_json(obj: Any) -> str:
