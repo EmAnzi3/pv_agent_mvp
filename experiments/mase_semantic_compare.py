@@ -16,6 +16,11 @@ FACTS=[
  ("geologist_pec","geofabiodifeo@pec.epap.it","1126165",2,"geofabiodifeo@pec.epap.it"),
  ("design_company","IPROJECT S.r.l.","1126228",1,"IPROJECT S.R.L."),
  ("location_municipality","Troia (FG)","1126265",1,"COMUNE DI TROIA"),
+ ("construction_duration_months",24,"1126259",188,"durata di circa 24 mesi"),
+ ("inverter_count",168,"1126262",15,"Inverter da 350 kW: 168"),
+ ("inverter_power_kw",350,"1126262",15,"Inverter da 350 kW: 168"),
+ ("module_power_kwp",0.710,"1126259",19,"Generatori fotovoltaici da 0,710 kWp"),
+ ("coordinate_reference_system","UTM-WGS84 Fuso 33","1126263",4,"Coordinate UTM-WGS 84 Fuso 33"),
 ]
 def norm(s):return re.sub(r"[^a-z0-9]+","",str(s).casefold().replace(",","."))
 def main():
