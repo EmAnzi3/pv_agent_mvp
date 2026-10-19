@@ -83,7 +83,7 @@ class HtmlIndexAdapter(DocumentAdapter):
             txt = el.get_text(" ", strip=True)
             m = self.SECTION_COUNT.match(txt)
             if m and not any(h[0] in el.parents for h in headers):
-                headers.append((el, m.group("name").strip(" :"), int(m.group("n"))))
+                headers.append((el, " ".join(m.group("name").split()).strip(" :"), int(m.group("n"))))
         if not headers:
             # layout where the count is a separate text node: '<a>Progetto Iniziale</a> <i/> 95 documenti'
             for node in soup.find_all(string=COUNT_ONLY):
@@ -91,7 +91,7 @@ class HtmlIndexAdapter(DocumentAdapter):
                 name_node = node.find_previous(string=lambda t: t and t.strip() and not COUNT_ONLY.search(t)
                                                and t.strip() not in ("↴", "⤵", "↓"))
                 if name_node is not None and node.parent is not None:
-                    headers.append((node.parent, name_node.strip()[:80], int(m.group(1))))
+                    headers.append((node.parent, " ".join(name_node.split())[:80], int(m.group(1))))
         header_names = {id(h[0]): (h[1], h[2]) for h in headers}
         docs: dict[str, DocumentRef] = {}
         declared: dict[str, int] = {name: n for _, name, n in headers}
