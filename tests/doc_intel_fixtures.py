@@ -74,7 +74,7 @@ class FakeSession:
         self.routes = routes
         self.calls: list[str] = []
 
-    def get(self, url, timeout=None, stream=None):
+    def get(self, url, timeout=None, stream=None, **kw):
         self.calls.append(url)
         v = self.routes.get(url)
         if v is None:

@@ -52,7 +52,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     docs = disc.documents[: max_docs or None]
 
     def process(ref):
-        res = fetcher.fetch(ref.url, manifest, refresh=refresh)
+        res = fetcher.fetch(ref.url, manifest, refresh=refresh, auth=ref.extra.get("auth"))
         parsed = []
         for mem in res.members:
             try:

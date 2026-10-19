@@ -19,7 +19,9 @@ EXECUTION_ROLES = {"role.epc", "role.bop", "role.contractor", "role.supplier", "
 def acquisition_gate(acq: dict[str, Any]) -> dict[str, Any]:
     issues = []
     for proc in acq.get("procedures", []):
-        if proc.get("declared") is None:
+        if proc.get("declared") is None and proc.get("declared_available") is False:
+            pass  # the source never declares totals: completeness is against the listing (noted below)
+        elif proc.get("declared") is None:
             issues.append(f"procedure {proc['id']}: declared total not found on index page")
         elif proc["declared"] != proc["enumerated"]:
             issues.append(f"procedure {proc['id']}: declared {proc['declared']} vs enumerated {proc['enumerated']}")
@@ -30,6 +32,8 @@ def acquisition_gate(acq: dict[str, Any]) -> dict[str, Any]:
     if acq.get("pages_unreadable"):
         issues.append(f"{acq['pages_unreadable']} pages where OCR failed")
     notes = []
+    if any(p.get("declared_available") is False for p in acq.get("procedures", [])):
+        notes.append("source publishes no declared document total: completeness measured against its own listing")
     if acq.get("pages_graphic_no_text"):
         notes.append(f"{acq['pages_graphic_no_text']} graphic pages without text even after OCR (listed for visual review)")
     return {"gate": "acquisition", "pass": not issues, "blocking": bool(issues), "issues": issues, "notes": notes}

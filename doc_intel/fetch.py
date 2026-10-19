@@ -128,11 +128,12 @@ class Fetcher:
         self.sleep = sleeper
         self._lock = threading.Lock()
 
-    def _download(self, url: str) -> tuple[bytes, dict[str, str]]:
+    def _download(self, url: str, auth=None) -> tuple[bytes, dict[str, str]]:
         last: Exception | None = None
         for attempt in range(self.retries + 1):
             try:
-                with self.session.get(url, timeout=self.timeout, stream=True) as resp:
+                kw = {"auth": tuple(auth)} if auth else {}
+                with self.session.get(url, timeout=self.timeout, stream=True, **kw) as resp:
                     status = getattr(resp, "status_code", 200)
                     if status in (429, 500, 502, 503, 504):
                         raise IOError(f"HTTP {status}")
@@ -154,7 +155,7 @@ class Fetcher:
                     self.sleep(self.backoff * (attempt + 1))
         raise IOError(f"download failed after {self.retries + 1} attempts: {last}")
 
-    def fetch(self, url: str, manifest: dict, refresh: bool = False) -> FetchResult:
+    def fetch(self, url: str, manifest: dict, refresh: bool = False, auth=None) -> FetchResult:
         entry = manifest.get("documents", {}).get(url, {})
         sha = entry.get("sha256")
         if sha and not refresh and self.store.has_blob(sha):
@@ -162,7 +163,7 @@ class Fetcher:
             result = FetchResult(url, sha, entry.get("kind"), len(raw), "cached")
         else:
             try:
-                raw, headers = self._download(url)
+                raw, headers = self._download(url, auth)
             except Exception as exc:
                 with self._lock:
                     record_failure(manifest, url, str(exc))

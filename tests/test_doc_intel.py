@@ -566,6 +566,46 @@ class Probe(unittest.TestCase):
         self.assertEqual(len(c["pager_links"]), 1)
 
 
+class RegionalAdapters(unittest.TestCase):
+    def test_emilia_romagna_html_index(self):
+        from doc_intel.adapters import adapter_for_url
+        url = "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6902"
+        html = ('<h1>Impianto agrivoltaico X - Procedura di VIA</h1><h3>Documentazione progettuale</h3><table>'
+                '<tr><td><a href="/viavasweb/pubblicazioni/scaricaAllegato/589650/6902">Relazione tecnica</a></td></tr>'
+                '<tr><td><a href="/viavasweb/pubblicazioni/scaricaAllegato/589653/6902">Layout</a></td></tr></table>'
+                '<h3>Atti</h3><a href="/viavasweb/attivazione/scaricaAllegato/102002/6902">Delibera</a>'
+                '<a href="/viavasweb/ricerca">Nuova ricerca</a>')
+        ad = adapter_for_url(url)
+        ad.get_html = lambda u: html
+        disc = ad.discover(ad.identify(url))
+        self.assertEqual(disc.identity.project_id, "6902")
+        self.assertEqual(len(disc.documents), 3)
+        self.assertEqual({p["id"]: p["enumerated"] for p in disc.procedures}, {"Documentazione progettuale": 2, "Atti": 1})
+        self.assertTrue(all(p["declared_available"] is False for p in disc.procedures))
+
+    def test_veneto_nextcloud_webdav_tree(self):
+        from doc_intel.adapters import adapter_for_url
+        url = "https://sharing.regione.veneto.it/index.php/s/iMFk8Zs5t86GYP7"
+        def resp(href, coll=False, size=None):
+            prop = "<d:resourcetype><d:collection/></d:resourcetype>" if coll else f"<d:resourcetype/><d:getcontentlength>{size}</d:getcontentlength>"
+            return f"<d:response><d:href>{href}</d:href><d:propstat><d:prop>{prop}</d:prop></d:propstat></d:response>"
+        root = "/public.php/webdav"
+        listing = {"/": [resp(root + "/", True), resp(root + "/Elaborati/", True), resp(root + "/Istanza.pdf", size=100)],
+                   "/Elaborati/": [resp(root + "/Elaborati/", True), resp(root + "/Elaborati/Relazione%20tecnica.pdf", size=200)]}
+        def propfind(u, token):
+            self.assertEqual(token, "iMFk8Zs5t86GYP7")
+            path = u.split("/public.php/webdav", 1)[1] or "/"
+            return '<d:multistatus xmlns:d="DAV:">' + "".join(listing[path.replace("%2F", "/")]) + "</d:multistatus>"
+        ad = adapter_for_url(url)
+        ad.propfind = propfind
+        ad.get_html = lambda u: "<title>PROC_62-26 - Sharing Regione Veneto</title>"
+        ident = ad.identify(url)
+        disc = ad.discover(ident)
+        self.assertEqual(ident.title, "PROC_62-26 - Sharing Regione Veneto")
+        self.assertEqual([d.title for d in disc.documents], ["Elaborati/Relazione tecnica.pdf".rsplit("/", 1)[-1], "Istanza.pdf"])
+        self.assertEqual(disc.documents[0].extra["auth"], ["iMFk8Zs5t86GYP7", ""])
+
+
 class NoHardcodedBenchmarks(unittest.TestCase):
     def test_toolbox_has_no_benchmark_ids(self):
         for py in (ROOT / "doc_intel").rglob("*.py"):
