@@ -127,7 +127,7 @@ def digest(d: dict) -> list[tuple[str, dict]]:
              "excerpt": f["citation"]["excerpt"][:120]} for f in d["facts"] if f["field"] == "company.vat"]
     seen, uniq = set(), []
     for v in vats:
-        k = (v["value"], v["subject"], v["doc"])
+        k = (v["value"], v["subject"], v["assoc"])
         if k not in seen:
             seen.add(k)
             uniq.append(v)

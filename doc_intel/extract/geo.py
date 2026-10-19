@@ -34,6 +34,7 @@ OBJECT_RULES = [
     (re.compile(r"(?i)punto\s+di\s+(?:connessione|consegna)|stallo"), "connection_point"),
     (re.compile(r"(?i)cabin[ae]"), "cabin"),
     (re.compile(r"(?i)cavidott|elettrodott|tracciato"), "cable_route"),
+    (re.compile(r"(?i)spigol[oi]|ingombro\s+(?:del\s+)?sito|bounding"), "site_bbox_corner"),
     (re.compile(r"(?i)vertic[ei]|perimetr|recinzion|poligonal|confin[ei]\s+(?:dell')?area"), "area_vertex"),
     (re.compile(r"(?i)\bBESS\b|accumulo"), "bess"),
     (re.compile(r"(?i)sondagg|prova\s+penetrometric|pozz|piezometr"), "survey_point"),
@@ -118,13 +119,30 @@ def _in_italy(e: float, n: float, zone: int | None) -> bool:
                for z in zones)
 
 
+NUMERIC_ONLY = re.compile(r"^\s*[-+]?\d+(?:[.,]\d+)*\s*°?\s*[NE]?\s*$")  # a single numeric cell
+
+
+def _logical_lines(lines: list[str]):
+    """Table cells are often extracted one per line: join a numeric line with the following
+    numeric line (lat/lon or E/N split across cells) before pattern matching."""
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if NUMERIC_ONLY.match(line or "") and i + 1 < len(lines) and NUMERIC_ONLY.match(lines[i + 1] or ""):
+            yield i, f"{line} {lines[i + 1]}"
+            i += 2
+            continue
+        yield i, line
+        i += 1
+
+
 def extract(ctx: PageContext) -> list[Fact]:
     facts: list[Fact] = []
     crs = detect_crs(ctx.text)
     page_object = classify_object(ctx.text[:3000])
     current_area: str | None = None
     current_object = page_object
-    for i, line in enumerate(ctx.lines):
+    for i, line in _logical_lines(ctx.lines):
         if not line:
             continue
         am = AREA_LABEL_RE.search(line)
@@ -151,7 +169,7 @@ def extract(ctx: PageContext) -> list[Fact]:
                 q["lat"], q["lon"] = utm_to_latlon(e, n, crs["zone"])
             else:
                 limits = "UTM zone not stated on this page: not converted, not geolocated"
-            if obj in ("cabin", "substation", "connection_point", "simulation_point", "survey_point", "cable_route", "bess"):
+            if obj in ("cabin", "substation", "connection_point", "simulation_point", "survey_point", "cable_route", "bess", "site_bbox_corner"):
                 limits = (limits + "; " if limits else "") + f"coordinate of a {obj}, NOT the plant location"
             facts.append(Fact(field="geo.utm_point", value={"e": e, "n": n}, subject=current_area,
                               citation=ctx.cite(ctx.window(i, 0, 0)), status=status,
@@ -160,11 +178,14 @@ def extract(ctx: PageContext) -> list[Fact]:
         for m in LATLON_RE.finditer(line):
             lat = float(f"{m.group('lat')}.{m.group('latd')}")
             lon = float(f"{m.group('lon')}.{m.group('lond')}")
-            obj = classify_object(ctx.window(i, 2, 0))
+            obj = classify_object(line)
+            if obj == "unknown":
+                obj = classify_object(ctx.window(i, 2, 0))
             facts.append(Fact(field="geo.latlon_point", value={"lat": lat, "lon": lon},
                               citation=ctx.cite(ctx.window(i, 1, 0)), precision="component_coordinates",
                               qualifiers={"object": obj, "crs": "WGS84 (assumed decimal degrees)"},
-                              limits=("Geographic pair; object " + obj + (" — NOT the plant location" if obj in ("simulation_point", "cabin", "substation") else "")),
+                              limits=("Geographic pair; object " + obj + (" — NOT the plant location" if obj in ("simulation_point", "cabin", "substation") else "")
+                                      + ("; bounding-box corner of the site as declared, not a perimeter" if obj == "site_bbox_corner" else "")),
                               extractor="geo.latlon"))
     return facts
 

@@ -394,7 +394,8 @@ class RegressionsFromFirstLiveRun(unittest.TestCase):
 
     def test_address_snc_is_not_a_company(self):
         facts = extract_all([page("Soprintendenza ABAP - Caserma Pasubio Via Pavia snc - PEC sabap-al@pec.cultura.gov.it")])
-        self.assertTrue(all(f.subject is None for f in facts if f.field == "contact.pec"))
+        subj = [f.subject for f in facts if f.field == "contact.pec"]
+        self.assertTrue(subj and all(x and x.startswith("Soprintendenza") for x in subj), subj)
 
     def test_person_is_never_proponent(self):
         facts = extract_all([page("Committente: Dott. Geol. Gian Mario Repregosi")])
@@ -434,6 +435,40 @@ class RegressionsFromFirstLiveRun(unittest.TestCase):
         ident = MaseAdapter(get_html=lambda u: "").parse_info(h, "u", "1")
         self.assertEqual(ident.municipalities, ["Tortona", "Pozzolo Formigaro", "Frugarolo"])
         self.assertEqual(ident.region, "Piemonte")
+
+
+class RegressionsFromSecondLiveRun(unittest.TestCase):
+    """Run 39266134203 (Tortona 2 digest)."""
+
+    def test_latlon_split_across_table_cells(self):
+        txt = "Sito IMPIANTO Comune di Tortona\nLatitudine N\nLongitudine E\nSpigolo N/E\n44.84600\n8.78820\nSpigolo S/O\n44.82932\n8.77739"
+        pts = [f for f in extract_all([page(txt)]) if f.field == "geo.latlon_point"]
+        self.assertEqual([(p.value["lat"], p.value["lon"]) for p in pts], [(44.846, 8.7882), (44.82932, 8.77739)])
+        self.assertTrue(all(p.qualifiers["object"] == "site_bbox_corner" for p in pts))
+
+    def test_public_body_vat_not_given_to_company_above(self):
+        txt = "MARGISOLAR S.r.l.\nOggetto: parere\nArpa Piemonte Codice Fiscale – Partita IVA 07176380017"
+        vat = [f for f in extract_all([page(txt)]) if f.field == "company.vat"][0]
+        self.assertEqual(vat.qualifiers["subject_association"], "same_line_public_body")
+        self.assertTrue(vat.subject.lower().startswith("arpa"))
+
+    def test_energy_yield_is_not_bess(self):
+        facts = extract_all([page("La produzione annua stimata è pari a 98.000 MWh/anno")])
+        self.assertFalse([f for f in facts if f.field == "tech.bess_energy_mwh"])
+
+    def test_internal_mv_is_not_grid_voltage(self):
+        facts = extract_all([page("Le cabine di campo sono collegate in MT a 30 kV fino alla stazione di connessione RTN")])
+        self.assertEqual({f.field for f in facts if "kv" in f.field}, {"grid.internal_mv_kv"})
+
+    def test_admin_deadlines_are_not_works(self):
+        facts = extract_all([page("Il proponente dovrà trasmettere entro 30 (trenta) giorni dall'inizio lavori la comunicazione")])
+        self.assertFalse([f for f in facts if f.field.startswith("schedule.duration")])
+
+    def test_competing_proponents_form_one_conflict(self):
+        facts = extract_all([page("Proponente: MARGISOLAR S.r.l.", doc="a"), page("Il committente è la società MARGISOLAR ENERGY S.r.l.", doc="b")])
+        g = [x for x in group(facts) if x["field"] == "role.proponent"][0]
+        self.assertEqual(g["status"], "conflict")
+        self.assertFalse([p for p in build_proposal(facts, group(facts)) if p["field"] == "role.proponent"])
 
 
 class NoHardcodedBenchmarks(unittest.TestCase):

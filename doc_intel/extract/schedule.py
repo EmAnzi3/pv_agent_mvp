@@ -91,6 +91,10 @@ def extract(ctx: PageContext) -> list[Fact]:
                 continue
             if unit == "anni" and scope not in ("useful_life", "decommissioning"):
                 continue
+            if unit == "anni" and n1 >= 15:
+                scope = "useful_life"
+            if unit == "giorni" and re.search(r"(?i)entro|termine|dalla\s+(?:data\s+di\s+)?ricezione|trasmett|comunica|preavviso|prima\s+dell", local):
+                continue  # administrative deadlines, not works durations
             months = {"mesi": 1, "settimane": 12 / 52, "giorni": 12 / 365, "anni": 12}[unit]
             val = {"min": round(n1 * months, 2), "max": round((n2 or n1) * months, 2), "unit_source": unit,
                    "raw": m.group(0)}

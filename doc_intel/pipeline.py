@@ -76,6 +76,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
            "references": len(disc.documents), "processed_references": len(docs), "download_failures": 0,
            "distinct_sha256": 0, "duplicate_references": 0, "pdf_files": 0, "pages_total": 0,
            "pages_digital": 0, "pages_ocr": 0, "pages_ocr_pending": 0, "pages_unreadable": 0,
+           "pages_graphic_no_text": 0,
            "parse_errors": 0, "skipped_members": 0}
     for ref, res, parsed in results:
         entry = {"url": ref.url, "procedure_id": ref.procedure_id, "title": ref.title,
@@ -106,7 +107,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
             acq["pages_digital"] += s.get("digital", 0)
             acq["pages_ocr"] += s.get("ocr", 0)
             acq["pages_ocr_pending"] += s.get("ocr_deferred", 0) + (0 if ocr else s.get("no_text", 0))
-            acq["pages_unreadable"] += s.get("ocr_failed", 0) + (s.get("no_text", 0) if ocr else 0)
+            acq["pages_unreadable"] += s.get("ocr_failed", 0)
+            acq["pages_graphic_no_text"] += s.get("no_text", 0) if ocr else 0
             for p in txt.get("pages", []):
                 if p["method"] in ("ocr_failed", "none_after_ocr", "none") and len(unreadable) < 200:
                     unreadable.append({"url": ref.url, "member": None if mem.depth == 0 else mem.name,

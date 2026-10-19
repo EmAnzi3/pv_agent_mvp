@@ -11,7 +11,7 @@ from typing import Any
 
 from .schema import Fact
 
-NON_PLANT_OBJECTS = {"cabin", "substation", "connection_point", "simulation_point", "survey_point",
+NON_PLANT_OBJECTS = {"site_bbox_corner", "cabin", "substation", "connection_point", "simulation_point", "survey_point",
                      "cable_route", "bess", "turbine", "unknown"}
 EXECUTION_ROLES = {"role.epc", "role.bop", "role.contractor", "role.supplier", "role.om"}
 
@@ -28,8 +28,11 @@ def acquisition_gate(acq: dict[str, Any]) -> dict[str, Any]:
     if acq.get("pages_ocr_pending"):
         issues.append(f"{acq['pages_ocr_pending']} pages without text still awaiting OCR")
     if acq.get("pages_unreadable"):
-        issues.append(f"{acq['pages_unreadable']} pages unreadable after OCR")
-    return {"gate": "acquisition", "pass": not issues, "blocking": bool(issues), "issues": issues}
+        issues.append(f"{acq['pages_unreadable']} pages where OCR failed")
+    notes = []
+    if acq.get("pages_graphic_no_text"):
+        notes.append(f"{acq['pages_graphic_no_text']} graphic pages without text even after OCR (listed for visual review)")
+    return {"gate": "acquisition", "pass": not issues, "blocking": bool(issues), "issues": issues, "notes": notes}
 
 
 def proposal_gates(proposal: list[dict[str, Any]], facts: list[Fact], groups: list[dict]) -> list[dict[str, Any]]:
@@ -58,6 +61,8 @@ def proposal_gates(proposal: list[dict[str, Any]], facts: list[Fact], groups: li
                 if f.subject in multi_vat or f.value in shared_vat:
                     reasons.append("VAT is part of a multi-VAT / shared-VAT conflict")
                 reasons.append("registry identity check (Registro Imprese/VIES) not performed")
+            if f.field.startswith("contact.") and f.qualifiers.get("subject_association") != "same_line":
+                reasons.append("contact-company association is not on the same line")
             if f.field in ("geo.utm_point", "geo.latlon_point"):
                 if f.qualifiers.get("object") in NON_PLANT_OBJECTS:
                     reasons.append(f"coordinate of object '{f.qualifiers.get('object')}' cannot be the plant location")

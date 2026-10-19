@@ -111,6 +111,10 @@ def valid_vat_it(value: str) -> bool:
     return (10 - total % 10) % 10 == int(digits[-1])
 
 
+PUBLIC_BODY = re.compile(r"(?i)\b(ARPA\s+\w+|Regione\s+\w+|Provincia\s+di\s+\w+|Comune\s+di\s+\w+|Ministero[\w\s']{0,40}|"
+                         r"Soprintendenza[\w\s']{0,40}|Agenzia[\w\s']{0,40}|Terna\s+S\.?p\.?A\.?|ASL\s+\w+|Camera\s+di\s+Commercio[\w\s']{0,30})")
+
+
 def _nearest_company(ctx: PageContext, i: int, pos: int) -> tuple[str | None, str]:
     """Company on the same line before the match, else in the 4 previous lines (title-block
     layout: name / address / VAT), else on the next line. The distance is recorded and only
@@ -118,6 +122,9 @@ def _nearest_company(ctx: PageContext, i: int, pos: int) -> tuple[str | None, st
     same = [c for c in find_companies(ctx.lines[i]) if c[0] < pos]
     if same:
         return same[-1][1], "same_line"
+    body = [b for b in PUBLIC_BODY.finditer(ctx.lines[i][:pos])]
+    if body:  # a public body named on the same line wins over a company further up the page
+        return body[-1].group(1).strip(), "same_line_public_body"
     for back in (1, 2, 3, 4):
         if i - back >= 0:
             prev = find_companies(ctx.lines[i - back])

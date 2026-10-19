@@ -72,7 +72,9 @@ def _power_field(unit: str, local: str, sentence: str) -> tuple[str, str, float]
     """Classify a power value: unit first, then the words right around the number, then the sentence."""
     u = unit.replace(" ", "").lower()
     if u in ("mwh", "kwh"):
-        return "tech.bess_energy_mwh", "MWh", 1.0 if u == "mwh" else 0.001
+        if BESS_CTX.search(local) or (BESS_CTX.search(sentence) and not re.search(r"(?i)produ|anno|annu|/a\b", sentence)):
+            return "tech.bess_energy_mwh", "MWh", 1.0 if u == "mwh" else 0.001
+        return "tech.energy_other_mwh", "MWh", 1.0 if u == "mwh" else 0.001
     scale = 0.001 if u.startswith("kw") else 1.0
     for ctx in (local, sentence):
         bess, wind, pv = BESS_CTX.search(ctx), WIND_CTX.search(ctx), PV_CTX.search(ctx)
@@ -162,7 +164,8 @@ def extract(ctx: PageContext) -> list[Fact]:
             for m in VOLT_RE.finditer(line):
                 v = parse_number(m.group("num"))
                 if v and v in (15.0, 20.0, 30.0, 36.0, 66.0, 132.0, 150.0, 220.0, 380.0):
-                    facts.append(Fact(field="grid.voltage_kv", value=v, unit="kV", citation=ctx.cite(sent),
+                    mv = v <= 36 and re.search(r"(?i)\bMT\b|media\s+tensione|interna|cabin[ae]\s+di\s+campo|cavidott[oi]\s+interr", sent) and v != 36.0
+                    facts.append(Fact(field="grid.internal_mv_kv" if mv else "grid.voltage_kv", value=v, unit="kV", citation=ctx.cite(sent),
                                       qualifiers={"context": "grid"},
                                       limits="Voltage mentioned in a grid-connection sentence; may be internal MV",
                                       extractor="technical.grid"))

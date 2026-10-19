@@ -26,6 +26,8 @@ NUMERIC_TOL = 0.005
 
 
 def _subject_key(f: Fact) -> str:
+    if f.field.startswith("role."):
+        return ""  # all candidates for one role compete in a single group
     if f.subject and (f.field.startswith("company.") or f.field.startswith("contact.")):
         return company_key(f.subject)
     return (f.subject or "").casefold()
