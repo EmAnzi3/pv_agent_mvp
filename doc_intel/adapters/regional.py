@@ -247,7 +247,7 @@ class BoxSharedFolderAdapter(DocumentAdapter):
                 elif tid.startswith("d_") and depth < 4:
                     self._list_folder(f"{root}/v/{vanity}/folder/{tid[2:]}", f"{path}/{it['name']}",
                                       docs, procs, root, vanity, depth + 1)
-            if not page_count or page >= page_count or not items:
+            if not page_count or page >= page_count or not items or page >= 200:
                 break
             page += 1
         procs.append({"id": path, "url": url, "label": path, "declared": total, "declared_available": total is not None,

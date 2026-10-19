@@ -27,6 +27,8 @@ def acquisition_gate(acq: dict[str, Any]) -> dict[str, Any]:
             issues.append(f"procedure {proc['id']}: declared {proc['declared']} vs enumerated {proc['enumerated']}")
     if acq.get("download_failures"):
         issues.append(f"{acq['download_failures']} documents failed to download")
+    if acq.get("deferred_by_deadline"):
+        issues.append(f"{acq['deferred_by_deadline']} documents not yet downloaded (time budget): next run resumes")
     if acq.get("pages_ocr_pending"):
         issues.append(f"{acq['pages_ocr_pending']} pages without text still awaiting OCR")
     if acq.get("pages_unreadable"):

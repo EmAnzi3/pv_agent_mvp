@@ -181,6 +181,7 @@ def digest(d: dict) -> list[tuple[str, dict]]:
             uniq.append(v)
     out.append(("vat_occurrences", uniq[:40]))
     out.append(("registry", d.get("registry", {})))
+    out.append(("failed_documents", a.get("failed_documents", [])[:20]))
     roles = [{"field": f["field"], "value": f["value"], "status": f["status"], "doc": f["citation"]["url"].rsplit("/", 1)[-1],
               "page": f["citation"]["page"], "excerpt": f["citation"]["excerpt"][:200]}
              for f in d["facts"] if f["field"] in ("role.epc", "role.bop", "role.contractor", "role.supplier", "role.om",

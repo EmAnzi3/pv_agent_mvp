@@ -44,15 +44,29 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         adapter.get_html = get_html
     identity = adapter.identify(record_url)
     disc: Discovery = adapter.discover(identity)
-    log(f"[discover] {len(disc.documents)} documents in {len(disc.procedures)} procedures")
+    log(f"[discover] {len(disc.documents)} documents in {len(disc.procedures)} procedures "
+        f"({round(time.time() - t0)}s); errors: {disc.errors}")
     manifest = store.load_manifest(adapter.source, identity.project_id)
     manifest["procedures"] = disc.procedures
     fetcher = fetcher or Fetcher(store)
     budget = OcrBudget(ocr_max_pages, deadline=(t0 + time_budget_s) if time_budget_s else None)
     docs = disc.documents[: max_docs or None]
 
+    deadline = (t0 + time_budget_s) if time_budget_s else None
+    counter = {"n": 0}
+    import threading
+    lock = threading.Lock()
+
     def process(ref):
+        if deadline and time.time() >= deadline:
+            from .fetch import FetchResult
+            return ref, FetchResult(ref.url, None, None, 0, "deferred", "time budget reached before download"), []
+        t1 = time.time()
         res = fetcher.fetch(ref.url, manifest, refresh=refresh, auth=ref.extra.get("auth"))
+        with lock:
+            counter["n"] += 1
+            log(f"[doc {counter['n']}/{len(docs)}] {res.state} {res.kind or '-'} {res.size // 1024} KB "
+                f"{time.time() - t1:.0f}s {(ref.title or ref.url)[:70]}" + (f" ERROR {res.error[:80]}" if res.error else ""))
         parsed = []
         for mem in res.members:
             try:
@@ -86,6 +100,9 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
                  "error": res.error, "duplicate_of": None, "members": [], "skipped": res.skipped_members}
         if res.state == "failed":
             acq["download_failures"] += 1
+            acq.setdefault("failed_documents", []).append({"url": ref.url, "title": ref.title, "error": res.error})
+        if res.state == "deferred":
+            acq["deferred_by_deadline"] = acq.get("deferred_by_deadline", 0) + 1
         if res.sha256:
             sha_aliases.setdefault(res.sha256, []).append(ref.url)
             if res.sha256 in by_sha:
