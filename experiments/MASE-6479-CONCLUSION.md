@@ -41,3 +41,15 @@ Repository: EmAnzi3/pv_agent_mvp, PR #4, dataset canonico invariato.
 Crawl4AI è utile per il **crawling HTML e la scoperta degli allegati**. Non è sufficiente, da solo, per soddisfare il requisito aziendale di dossier tecnico-commerciale affidabile: servono paginazione, unzip, parser PDF multi-engine, OCR, estrazione di entità e relazioni e gate probatorio.
 
 Nessuna promozione nel dataset canonico. PR deve restare Draft finché non sono completati OCR, attribuzione verificata delle aziende/contatti, cronoprogramma e valutazione quantitativa contro la scheda di PV Agent.
+
+## OCR mirato completato — 2026-10-19
+
+Run: https://github.com/EmAnzi3/pv_agent_mvp/actions/runs/39214236980
+
+- PDF 1126236: 66 pagine, 1 digitale + **65 OCR**, zero errori, 82.454 caratteri OCR.
+- PDF 1126237: 67 pagine, 1 digitale + **66 OCR**, zero errori, 57.394 caratteri OCR.
+- Totale **131/131 pagine senza testo digitale recuperate via OCR** con 139.848 caratteri e 42 righe candidate pertinenti. Le righe OCR non sono automaticamente fatti verificati.
+- I due file sono scansioni elaborate, ma la presenza di grafici, planimetrie o altri PDF con pagine senza testo non è esclusa; serve controllo ulteriore prima di dichiarare copertura semantica integrale.
+- Stato dei requisiti commerciali: ancora da completare la riconciliazione societaria (azienda -> ruolo -> P.IVA/contatti), l'estrazione dei dettagli tecnici e un cronoprogramma verificato rispetto al record originario.
+
+**Decisione provvisoria:** toolchain Crawl4AI + Playwright + ZIP/PDF + PyMuPDF + OCR tecnicamente fattibile e dimostrata sul MASE. Il semplice crawler non soddisfa, da solo, il requisito di intelligence affidabile. Nessuna modifica al record canonico.
