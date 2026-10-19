@@ -570,18 +570,20 @@ class RegionalAdapters(unittest.TestCase):
     def test_emilia_romagna_html_index(self):
         from doc_intel.adapters import adapter_for_url
         url = "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6902"
-        html = ('<h1>Impianto agrivoltaico X - Procedura di VIA</h1><h3>Documentazione progettuale</h3><table>'
-                '<tr><td><a href="/viavasweb/pubblicazioni/scaricaAllegato/589650/6902">Relazione tecnica</a></td></tr>'
-                '<tr><td><a href="/viavasweb/pubblicazioni/scaricaAllegato/589653/6902">Layout</a></td></tr></table>'
-                '<h3>Atti</h3><a href="/viavasweb/attivazione/scaricaAllegato/102002/6902">Delibera</a>'
+        html = ('<h1>Impianto agrivoltaico X - Procedura di VIA</h1><h3>Documenti Presenti</h3>'
+                '<div><a href="#p1">Progetto Iniziale</a> <span>↴</span> 2 documenti</div><table>'
+                '<tr><td>03/07/2026</td><td><a href="/viavasweb/pubblicazioni/scaricaAllegato/589650/6902">Relazione tecnica</a></td></tr>'
+                '<tr><td>03/07/2026</td><td><a href="/viavasweb/pubblicazioni/scaricaAllegato/589653/6902">Layout</a></td></tr></table>'
+                '<div><a href="#p2">Pareri</a> ↴ 2 documenti</div><a href="/viavasweb/attivazione/scaricaAllegato/102002/6902">Parere</a>'
                 '<a href="/viavasweb/ricerca">Nuova ricerca</a>')
         ad = adapter_for_url(url)
         ad.get_html = lambda u: html
         disc = ad.discover(ad.identify(url))
         self.assertEqual(disc.identity.project_id, "6902")
         self.assertEqual(len(disc.documents), 3)
-        self.assertEqual({p["id"]: p["enumerated"] for p in disc.procedures}, {"Documentazione progettuale": 2, "Atti": 1})
-        self.assertTrue(all(p["declared_available"] is False for p in disc.procedures))
+        self.assertEqual({p["id"]: (p["declared"], p["enumerated"]) for p in disc.procedures},
+                         {"Progetto Iniziale": (2, 2), "Pareri": (2, 1)})   # one declared attachment missing is visible
+        self.assertEqual(disc.documents[0].extra["index_date"], "2026-07-03")
 
     def test_veneto_nextcloud_webdav_tree(self):
         from doc_intel.adapters import adapter_for_url

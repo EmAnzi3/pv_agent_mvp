@@ -68,25 +68,44 @@ class HtmlIndexAdapter(DocumentAdapter):
         ident.raw["html"] = html
         return ident
 
+    SECTION_COUNT = re.compile(r"^\s*(?P<name>[^\d↴]{3,80}?)\s*[↴⤵↓]?\s*(?P<n>\d{1,4})\s+document[io]\s*$", re.I)
+
     def discover(self, identity: ProjectIdentity) -> Discovery:
+        """Sections are the blocks announced as '<Name> ↴ N documenti' (declared totals);
+        each attachment belongs to the nearest preceding section header."""
         rule = self._rule(identity.info_url)
         soup = BeautifulSoup(identity.raw.pop("html", "") or self.get_html(identity.info_url), "html.parser")
+        headers = []
+        for el in soup.find_all(["h1", "h2", "h3", "h4", "h5", "div", "p", "span", "a", "legend"]):
+            txt = el.get_text(" ", strip=True)
+            m = self.SECTION_COUNT.match(txt)
+            if m and not any(h[0] in el.parents for h in headers):
+                headers.append((el, m.group("name").strip(" :"), int(m.group("n"))))
+        header_names = {id(h[0]): (h[1], h[2]) for h in headers}
         docs: dict[str, DocumentRef] = {}
+        declared: dict[str, int] = {name: n for _, name, n in headers}
         for a in soup.find_all("a", href=True):
             href = urljoin(identity.info_url, a["href"]).split("#")[0]
             if not rule.doc_link.search(href):
                 continue
-            row = a.find_parent(["tr", "li", "div"])
-            section = a.find_previous(["h2", "h3", "h4", "legend", "caption"])
-            title = a.get_text(" ", strip=True) or (row.get_text(" ", strip=True)[:150] if row else "")
-            docs.setdefault(href, DocumentRef(url=href, procedure_id=(section.get_text(" ", strip=True)[:80] if section else "record"),
-                                              title=title[:200], source=rule.source))
-        procs = {}
+            section = "record"
+            for prev in a.find_all_previous():
+                if id(prev) in header_names:
+                    section = header_names[id(prev)][0]
+                    break
+            row = a.find_parent("tr")
+            cells = [c.get_text(" ", strip=True) for c in row.find_all("td")] if row else []
+            date = next((c for c in cells if re.fullmatch(r"\d{2}/\d{2}/\d{4}", c)), None)
+            iso = "-".join(reversed(date.split("/"))) if date else None
+            docs.setdefault(href, DocumentRef(url=href, procedure_id=section, title=(a.get_text(" ", strip=True) or "")[:200],
+                                              source=rule.source, extra={"index_date": iso, "cells": cells[:5]}))
+        counts: dict[str, int] = {}
         for d in docs.values():
-            procs.setdefault(d.procedure_id, 0)
-            procs[d.procedure_id] += 1
-        procedures = [{"id": k, "url": identity.info_url, "label": k, "declared": None, "declared_available": False,
-                       "enumerated": v, "index_pages": 1, "errors": []} for k, v in procs.items()]
+            counts[d.procedure_id] = counts.get(d.procedure_id, 0) + 1
+        names = list(dict.fromkeys(list(declared) + list(counts)))
+        procedures = [{"id": k, "url": identity.info_url, "label": k, "declared": declared.get(k),
+                       "declared_available": k in declared, "enumerated": counts.get(k, 0), "index_pages": 1,
+                       "errors": []} for k in names]
         return Discovery(identity, list(docs.values()), procedures,
                          [] if docs else ["record page lists no attachment matching the host rule"])
 
