@@ -54,7 +54,7 @@ jobs:
           set -o pipefail
           python -m doc_intel run --url "${{ matrix.url }}" --gold "${{ matrix.gold }}" \
             --store .doc_intel_store --data docs/data.json --out reports/doc_intel \
-            --ocr-max-pages 3000 --workers 4 --time-budget-min 170 2>&1 | tee run-${{ matrix.name }}.log
+            --ocr-max-pages 3000 --workers 4 --time-budget-min 170 --registry vies 2>&1 | tee run-${{ matrix.name }}.log
       - name: Save document store (also after failure, so work is never lost)
         if: always()
         uses: actions/cache/save@v4
@@ -121,7 +121,7 @@ jobs:
           if [ -n "$GOLD" ]; then extra="--gold $GOLD"; fi
           set -o pipefail
           python -m doc_intel run --url "$URL" $extra --store .doc_intel_store --data docs/data.json \
-            --out reports/doc_intel --ocr-max-pages "$OCR_MAX" --workers 4 --time-budget-min 170 2>&1 | tee run.log
+            --out reports/doc_intel --ocr-max-pages "$OCR_MAX" --workers 4 --time-budget-min 170 --registry vies 2>&1 | tee run.log
       - name: Publish digest 1/4
         if: always()
         run: |

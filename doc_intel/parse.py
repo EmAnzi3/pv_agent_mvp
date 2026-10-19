@@ -199,6 +199,14 @@ def extract_pages(raw: bytes, sha: str, store: Store | None = None, member: str 
     A cached result with ``ocr_pending`` pages is resumed: only those pages are OCR'd.
     """
     cached = store.get_text(sha, member) if store is not None else None
+    if cached and ocr:
+        # pages whose OCR failed (timeout, oversized render) are retried like deferred ones
+        failed = [p["n"] for p in cached["pages"] if p["method"] == "ocr_failed"]
+        if failed:
+            cached["ocr_pending"] = sorted(set(cached.get("ocr_pending", [])) | set(failed))
+            for p in cached["pages"]:
+                if p["method"] == "ocr_failed":
+                    p["method"] = "ocr_deferred"
     if cached and (not ocr or not cached.get("ocr_pending")):
         cached["from_cache"] = True
         return cached

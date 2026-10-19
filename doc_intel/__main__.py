@@ -29,6 +29,7 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--max-docs", type=int)
     r.add_argument("--workers", type=int, default=3)
     r.add_argument("--refresh", action="store_true")
+    r.add_argument("--registry", choices=["vies", "none"], default="none", help="check extracted VATs on EU VIES")
     r.add_argument("--time-budget-min", type=float, help="stop starting OCR after N minutes; pending pages resume next run")
     r.add_argument("--gold")
     e = sub.add_parser("evaluate")
@@ -44,7 +45,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if a.cmd == "run":
         d = run(a.url, a.store, a.data if Path(a.data).exists() else None, ocr=not a.no_ocr,
-                ocr_max_pages=a.ocr_max_pages, max_docs=a.max_docs, workers=a.workers, refresh=a.refresh,
+                ocr_max_pages=a.ocr_max_pages, max_docs=a.max_docs, workers=a.workers, refresh=a.refresh, registry=None if a.registry == 'none' else a.registry,
                 time_budget_s=a.time_budget_min * 60 if a.time_budget_min else None)
         if a.gold:
             d["evaluation"] = evaluate(d, load_gold(a.gold))
@@ -132,6 +133,7 @@ def digest(d: dict) -> list[tuple[str, dict]]:
             seen.add(k)
             uniq.append(v)
     out.append(("vat_occurrences", uniq[:40]))
+    out.append(("registry", d.get("registry", {})))
     if d.get("evaluation"):
         out.append(("evaluation", d["evaluation"]))
     return out

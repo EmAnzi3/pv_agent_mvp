@@ -45,12 +45,12 @@ PLANT_CTX = re.compile(r"(?i)\b(?:complessiv[aoie]|totale|dell'impianto|impianto
                        r"potenza\s+(?:nominale|di\s+picco|installata|in\s+immissione)|denominato|parco)\b")
 COMPONENT_CTX = re.compile(r"(?i)\b(?:sotto-?camp[oi]|campo\s+(?:n\.?\s*)?\d|sezion[ei]\s+\w{1,3}\b|cabin[ae]|blocc[oi]|"
                            r"inverter|trasformator[ei]|lotto|area\s+[A-Z0-9]{1,3}\b|string[ae]|quadr[oi]|ciascun[oa]|"
-                           r"singol[oa]|per\s+ogni|unitari[oa]|altri\s+impianti|impianti\s+(?:esistenti|limitrofi|in\s+progetto)|cumul)")
+                           r"singol[oa]|per\s+ogni|unitari[oa]|altri\s+impianti|impianti\s+(?:esistenti|limitrofi|in\s+progetto)|\bcumul)")
 
 
 def power_scope(local: str, sentence: str) -> str:
     """plant | component | other_project | unknown — only plant/unknown feed the canonical delta."""
-    if re.search(r"(?i)altri\s+impianti|impianti\s+(?:esistenti|limitrofi|autorizzati)|cumul", sentence):
+    if re.search(r"(?i)altri\s+impianti|impianti\s+(?:esistenti|limitrofi|autorizzati)|\bcumul", sentence):
         return "other_project"
     plant_l, comp_l = PLANT_CTX.search(local), COMPONENT_CTX.search(local)
     if plant_l and not comp_l:

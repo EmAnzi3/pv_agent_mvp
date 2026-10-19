@@ -471,6 +471,51 @@ class RegressionsFromSecondLiveRun(unittest.TestCase):
         self.assertFalse([p for p in build_proposal(facts, group(facts)) if p["field"] == "role.proponent"])
 
 
+class RegressionsFromThirdLiveRun(unittest.TestCase):
+    def test_accumulo_is_not_cumulative_impact(self):
+        facts = extract_all([page("Impianto agrivoltaico di potenza pari a 54,5 MW, con sistema di accumulo integrato da 10 MW")])
+        bess = [f for f in facts if f.field == "tech.bess_power_mw"]
+        self.assertTrue(bess and all(f.subject != "other_project" for f in bess))
+
+    def test_failed_ocr_pages_are_retried(self):
+        with tempfile.TemporaryDirectory() as d:
+            store = Store(d)
+            raw = make_pdf(["Relazione tecnica impianto agrivoltaico potenza 60 MWp lato DC con moduli", ""])
+            store.put_text("s9", {"sha256": "s9", "member": None, "backend": "x", "backend_errors": [], "page_count": 2,
+                                  "pages": [{"n": 1, "text": "Relazione tecnica impianto agrivoltaico potenza 60 MWp lato DC con moduli",
+                                             "method": "digital", "chars": 60, "error": None},
+                                            {"n": 2, "text": "", "method": "ocr_failed", "chars": 0, "error": "ocr: timeout"}],
+                                  "ocr_pending": [], "dpi": 300, "summary": {}})
+            import doc_intel.parse as P
+            orig = P._ocr_page
+            P._ocr_page = lambda b, n, t, dpi, l: ("testo ricavato da ocr " * 5, "ocr", None)
+            try:
+                out = extract_pages(raw, "s9", store, ocr=True)
+            finally:
+                P._ocr_page = orig
+            self.assertEqual(out["summary"]["ocr"], 1)
+            self.assertEqual(out["summary"]["ocr_failed"], 0)
+
+
+class Registry(unittest.TestCase):
+    def test_vies_resolves_margisolar_luisolar(self):
+        from doc_intel.registry import ViesClient, check_vats
+        reg = {"03920651209": {"isValid": True, "name": "MARGISOLAR S.R.L.", "address": "VIALE ANTONIO SILVANI 2 40122 BOLOGNA BO"},
+               "03920631201": {"isValid": True, "name": "LUISOLAR ENERGY S.R.L.", "address": "VIALE ANTONIO SILVANI 2 40122 BOLOGNA BO"}}
+        client = ViesClient(get_json=lambda url: reg[url.rsplit("/", 1)[-1]], pause=0)
+        facts = extract_all([page("Proponente: MARGISOLAR S.r.l. P.IVA 03920651209", doc="a"),
+                             page("MARGISOLAR S.r.l.\nVia X\nP.IVA 03920631201", doc="b")])
+        check_vats(facts, client)
+        v = {f.value: f for f in facts if f.field == "company.vat"}
+        self.assertTrue(v["03920651209"].qualifiers["registry_match"])
+        self.assertEqual(v["03920631201"].status, "rejected")       # association error exposed, not re-assigned
+        groups = group(facts)
+        self.assertFalse([g for g in groups if g["field"] == "company.multiple_vat"])
+        prop = [p for p in build_proposal(facts, groups) if p["field"] == "company.vat"]
+        gates = proposal_gates(prop, facts, groups)
+        self.assertEqual([g["blocking"] for g in gates], [False])
+
+
 class NoHardcodedBenchmarks(unittest.TestCase):
     def test_toolbox_has_no_benchmark_ids(self):
         for py in (ROOT / "doc_intel").rglob("*.py"):

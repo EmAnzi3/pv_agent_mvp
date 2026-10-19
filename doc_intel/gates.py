@@ -56,11 +56,15 @@ def proposal_gates(proposal: list[dict[str, Any]], facts: list[Fact], groups: li
                     reasons.append("VAT without associated company")
                 if not f.qualifiers.get("checksum_ok"):
                     reasons.append("VAT check digit invalid")
-                if f.qualifiers.get("subject_association") != "same_line":
+                confirmed = f.qualifiers.get("registry_match") is True
+                if f.qualifiers.get("subject_association") != "same_line" and not confirmed:
                     reasons.append("VAT-company association is not on the same line")
-                if f.subject in multi_vat or f.value in shared_vat:
+                if (f.subject in multi_vat or f.value in shared_vat) and not confirmed:
                     reasons.append("VAT is part of a multi-VAT / shared-VAT conflict")
-                reasons.append("registry identity check (Registro Imprese/VIES) not performed")
+                if "registry" not in f.qualifiers:
+                    reasons.append("registry identity check (Registro Imprese/VIES) not performed")
+                elif not confirmed:
+                    reasons.append("registry name does not confirm the associated company")
             if f.field.startswith("contact.") and f.qualifiers.get("subject_association") != "same_line":
                 reasons.append("contact-company association is not on the same line")
             if f.field in ("geo.utm_point", "geo.latlon_point"):

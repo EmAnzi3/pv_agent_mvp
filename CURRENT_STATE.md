@@ -44,7 +44,7 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 - Pacchetto `doc_intel/` (branch `feat/doc-intel-toolbox`, derivato dalla PR #4): da un record già nel canonico costruisce manifest documentale, cache SHA-256, testo per pagina con OCR selettivo, fatti con evidenza, conflitti, confronto con il canonico e dossier JSON/Markdown. Non modifica `docs/data.json` né il database.
 - Adapter implementato: MASE (scheda progetto e provvedimento). Fonti regionali: inventario e priorità in `experiments/DOC-INTEL-AUDIT.md`; Piemonte bloccata finché i record non portano l'URL della singola pratica.
 - Test offline: `python -m unittest tests.test_doc_intel`. Run reali solo su GitHub Actions (`doc-intel-run.yml`), store in `actions/cache`.
-- Tortona 2 (MASE 8788): dossier provvisorio in `experiments/MASE-8788-DOSSIER-PROVISIONAL.md`; chiusura subordinata al primo run CI.
+- Tortona 2 (MASE 8788): dossier `experiments/MASE-8788-DOSSIER.md` / `.json` (run 39266857390, stato ready_for_human_review). P. IVA verificate su VIES: la toolbox interroga VIES (`--registry vies`) per ogni P. IVA estratta, con cache di 30 giorni.
 
 ## Problemi aperti
 

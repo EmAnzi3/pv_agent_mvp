@@ -34,7 +34,8 @@ PROPOSABLE = ("company.vat", "contact.pec", "contact.email", "contact.phone", "r
 
 def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool = True,
         ocr_max_pages: int = 400, max_docs: int | None = None, workers: int = 3,
-        refresh: bool = False, time_budget_s: float | None = None, get_html: Callable[[str], str] | None = None,
+        refresh: bool = False, registry: str | None = None, registry_client=None,
+        time_budget_s: float | None = None, get_html: Callable[[str], str] | None = None,
         fetcher: Fetcher | None = None, log: Callable[[str], None] = print) -> dict[str, Any]:
     t0 = time.time()
     store = Store(store_dir)
@@ -121,6 +122,11 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     acq["distinct_sha256"] = len(by_sha)
     t_extract = time.time()
     facts = extract_all(pages)
+    registry_results = {}
+    if registry == "vies":
+        from .registry import ViesClient, check_vats
+        registry_results = check_vats(facts, registry_client or ViesClient(store.root / "registry"))
+        log(f"[registry] {len(registry_results)} VAT numbers checked on VIES")
     groups = group(facts)
     diagnostics = coordinate_diagnostics(pages, facts)
     log(f"[extract] {len(facts)} facts, {sum(g['status']=='conflict' for g in groups)} conflict groups")
@@ -146,7 +152,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         "project": asdict(identity),
         "acquisition": acq, "inventory": inventory, "unreadable_pages": unreadable,
         "sha_aliases": {k: v for k, v in sha_aliases.items() if len(v) > 1},
-        "diagnostics": diagnostics,
+        "diagnostics": diagnostics, "registry": registry_results,
         "facts": facts_to_json(facts), "groups": groups,
         "canonical": {k: v for k, v in canonical.items() if k != "record"}, "canonical_record": record,
         "delta": delta, "proposal": proposal, "gates": {"acquisition": acq_gate, "proposal": gate_rows},
