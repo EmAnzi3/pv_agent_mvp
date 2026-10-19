@@ -35,7 +35,7 @@ jobs:
             url: https://va.mite.gov.it/it-IT/Oggetti/Info/8788
             gold: doc_intel/gold/mase-8788.json
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -43,19 +43,33 @@ jobs:
           python-version: '3.11'
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ita poppler-utils
       - run: python -m pip install pymupdf pypdf requests beautifulsoup4
-      - uses: actions/cache@v4
+      - name: Restore document store
+        uses: actions/cache/restore@v4
         with:
           path: .doc_intel_store
           key: doc-intel-store-${{ matrix.name }}-${{ github.run_id }}
           restore-keys: doc-intel-store-${{ matrix.name }}-
-      - name: Build dossier
+      - name: Build dossier (OCR stops after the time budget; pending pages resume next run)
         run: |
+          set -o pipefail
           python -m doc_intel run --url "${{ matrix.url }}" --gold "${{ matrix.gold }}" \
             --store .doc_intel_store --data docs/data.json --out reports/doc_intel \
-            --ocr-max-pages 1000 --workers 3 2>&1 | tee run-${{ matrix.name }}.log
+            --ocr-max-pages 3000 --workers 4 --time-budget-min 170 2>&1 | tee run-${{ matrix.name }}.log
+      - name: Save document store (also after failure, so work is never lost)
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .doc_intel_store
+          key: doc-intel-store-${{ matrix.name }}-${{ github.run_id }}
+      - name: Publish digest as annotations
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" || echo "::warning title=digest::no dossier produced"
       - name: Evaluate against gold set (fails on forbidden facts or undetected expected conflicts)
         run: |
           f=$(ls reports/doc_intel/*.json | head -1)
+          set -o pipefail
           python -m doc_intel evaluate --dossier "$f" --gold "${{ matrix.gold }}" | tee eval-${{ matrix.name }}.json
       - uses: actions/upload-artifact@v4
         if: always()
@@ -69,7 +83,7 @@ jobs:
   manual:
     if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -90,8 +104,14 @@ jobs:
         run: |
           extra=""
           if [ -n "$GOLD" ]; then extra="--gold $GOLD"; fi
+          set -o pipefail
           python -m doc_intel run --url "$URL" $extra --store .doc_intel_store --data docs/data.json \
-            --out reports/doc_intel --ocr-max-pages "$OCR_MAX" --workers 3 2>&1 | tee run.log
+            --out reports/doc_intel --ocr-max-pages "$OCR_MAX" --workers 4 --time-budget-min 170 2>&1 | tee run.log
+      - name: Publish digest as annotations
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" || echo "::warning title=digest::no dossier produced"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

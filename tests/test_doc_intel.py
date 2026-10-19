@@ -265,6 +265,26 @@ class Parsing(unittest.TestCase):
             again = extract_pages(raw, "s1", store, ocr=False)
             self.assertTrue(again.get("from_cache"))
 
+    def test_deadline_defers_and_next_run_resumes_only_pending(self):
+        import time as _t
+        with tempfile.TemporaryDirectory() as d:
+            store = Store(d)
+            raw = make_pdf(["Relazione tecnica impianto agrivoltaico potenza 60 MWp lato DC con moduli", "", ""])
+            first = extract_pages(raw, "s2", store, ocr=True, budget=OcrBudget(100, deadline=_t.time() - 1))
+            self.assertEqual(first["ocr_pending"], [2, 3])
+            calls = []
+            import doc_intel.parse as P
+            orig = P._ocr_page
+            P._ocr_page = lambda b, n, t, dpi, l: (calls.append(n) or ("testo ricavato da ocr " * 5, "ocr", None))
+            try:
+                second = extract_pages(raw, "s2", store, ocr=True, budget=OcrBudget(1))
+            finally:
+                P._ocr_page = orig
+            self.assertEqual(calls, [2])            # only pending pages, within budget
+            self.assertEqual(second["ocr_pending"], [3])
+            self.assertTrue(second["resumed"])
+            self.assertEqual(second["summary"]["digital"], 1)
+
 
 @unittest.skipUnless(__import__("shutil").which("tesseract") and __import__("shutil").which("pdftoppm"),
                      "tesseract/poppler not installed")
@@ -346,6 +366,10 @@ class EndToEnd(unittest.TestCase):
             self.assertTrue(any(g["field"] == "company.multiple_vat" for g in dossier["groups"]))
             self.assertFalse(any(p["field"] == "company.vat" for p in dossier["proposal"]))  # conflict not proposed
             self.assertEqual(dossier["review"]["auto_approval"], False)
+            from doc_intel.__main__ import digest
+            titles = [t for t, _ in digest(dossier)]
+            self.assertEqual(titles[:3], ["acquisition", "delta", "conflicts"])
+            json.dumps(digest(dossier), default=str)
             md = render(dossier)
             self.assertIn("Confronto con il record canonico", md)
             ev = evaluate(dossier, {"items": [{"field": "tech.pv_ac_mw", "value": 50, "document": "11", "page": 1}],

@@ -33,7 +33,7 @@ PROPOSABLE = ("company.vat", "contact.pec", "role.proponent", "role.designer", "
 
 def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool = True,
         ocr_max_pages: int = 400, max_docs: int | None = None, workers: int = 3,
-        refresh: bool = False, get_html: Callable[[str], str] | None = None,
+        refresh: bool = False, time_budget_s: float | None = None, get_html: Callable[[str], str] | None = None,
         fetcher: Fetcher | None = None, log: Callable[[str], None] = print) -> dict[str, Any]:
     t0 = time.time()
     store = Store(store_dir)
@@ -46,7 +46,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     manifest = store.load_manifest(adapter.source, identity.project_id)
     manifest["procedures"] = disc.procedures
     fetcher = fetcher or Fetcher(store)
-    budget = OcrBudget(ocr_max_pages)
+    budget = OcrBudget(ocr_max_pages, deadline=(t0 + time_budget_s) if time_budget_s else None)
     docs = disc.documents[: max_docs or None]
 
     def process(ref):
@@ -144,7 +144,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         "efficiency": {"seconds_total": round(time.time() - t0, 1),
                        "seconds_fetch_parse": round(t_extract - t_fetch, 1),
                        "seconds_per_document": round((t_extract - t_fetch) / max(1, len(docs)), 2),
-                       "cache": store.stats, "ocr_pages_used": budget.used},
+                       "cache": store.stats, "ocr_pages_used": budget.used,
+                       "ocr_deferred_by_deadline": budget.deferred_by_time},
     }
     return dossier
 

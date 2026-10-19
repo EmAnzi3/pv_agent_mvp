@@ -14,13 +14,15 @@ import shutil
 import subprocess
 import tempfile
 import threading
+import time
+import os
 from pathlib import Path
 from typing import Any
 
 from .store import Store
 
 USEFUL_MIN_CHARS = 60
-MAX_RENDER_PIXELS = 45_000_000   # ~A3 at 300 DPI
+MAX_RENDER_PIXELS = 25_000_000   # ~A4 at 400 DPI / A0 at ~120 DPI: bounded time per page
 
 
 def useful_chars(text: str) -> int:
@@ -146,76 +148,93 @@ def ocr_png(png: bytes, langs: str = "ita+eng", timeout: int = 180) -> str:
         raise RuntimeError("tesseract not installed")
     available = subprocess.run(["tesseract", "--list-langs"], capture_output=True, text=True).stdout
     use = "+".join(l for l in langs.split("+") if l in available.split()) or "eng"
+    env = {**os.environ, "OMP_THREAD_LIMIT": "1"}  # parallelism comes from workers, not tesseract threads
     proc = subprocess.run(["tesseract", "stdin", "stdout", "-l", use, "--psm", "3"],
-                          input=png, capture_output=True, timeout=timeout)
+                          input=png, capture_output=True, timeout=timeout, env=env)
     if proc.returncode:
         raise RuntimeError(proc.stderr.decode(errors="replace")[:200])
     return proc.stdout.decode("utf-8", errors="replace")
 
 
 class OcrBudget:
-    """Global cap so a run never OCRs thousands of drawing pages by accident."""
+    """Global page cap and wall-clock deadline: pages beyond either are deferred, never lost.
 
-    def __init__(self, max_pages: int = 400):
+    Deferred pages stay in the text cache as ``ocr_pending`` and the next run resumes
+    exactly those pages, so a long project converges over several bounded runs.
+    """
+
+    def __init__(self, max_pages: int = 400, deadline: float | None = None):
         self.max_pages = max_pages
+        self.deadline = deadline
         self.used = 0
+        self.deferred_by_time = 0
         self._lock = threading.Lock()
 
     def take(self) -> bool:
         with self._lock:
+            if self.deadline is not None and time.time() >= self.deadline:
+                self.deferred_by_time += 1
+                return False
             if self.used >= self.max_pages:
                 return False
             self.used += 1
             return True
 
 
+def _ocr_page(backend: PdfBackend, n: int, text: str, dpi: int, langs: str) -> tuple[str, str, str | None]:
+    try:
+        ocr_text = ocr_png(backend.render_png(n, dpi), langs)
+    except Exception as exc:
+        return text, "ocr_failed", f"ocr: {exc}"[:200]
+    if useful_chars(ocr_text) > useful_chars(text):
+        return ocr_text, "ocr", None
+    return text, "none_after_ocr", None
+
+
 def extract_pages(raw: bytes, sha: str, store: Store | None = None, member: str | None = None,
                   ocr: bool = True, dpi: int = 300, budget: OcrBudget | None = None,
                   langs: str = "ita+eng") -> dict[str, Any]:
-    """Return per-page text with the method used; cached by SHA-256 (+member)."""
-    if store is not None:
-        cached = store.get_text(sha, member)
-        # A cached result missing OCR can be upgraded when OCR is now requested.
-        if cached and (not ocr or not cached.get("ocr_pending")):
-            cached["from_cache"] = True
-            return cached
+    """Return per-page text with the method used; cached by SHA-256 (+member).
+
+    A cached result with ``ocr_pending`` pages is resumed: only those pages are OCR'd.
+    """
+    cached = store.get_text(sha, member) if store is not None else None
+    if cached and (not ocr or not cached.get("ocr_pending")):
+        cached["from_cache"] = True
+        return cached
     backend, errors = open_backend(raw)
-    pages: list[dict[str, Any]] = []
-    ocr_pending = []
-    for n in range(1, backend.page_count() + 1):
-        text, method, err = "", "none", None
-        try:
-            text = backend.page_text(n)
-            method = "digital" if useful_chars(text) >= USEFUL_MIN_CHARS else "none"
-        except Exception as exc:
-            err = f"text: {exc}"[:200]
-            # fall back page-wise to pypdf
+    if cached:
+        pages = cached["pages"]
+        todo = set(cached["ocr_pending"])
+    else:
+        pages, todo = [], None
+        for n in range(1, backend.page_count() + 1):
+            text, method, err = "", "none", None
             try:
-                text = PypdfBackend(raw).page_text(n)
-                method = "digital" if useful_chars(text) >= USEFUL_MIN_CHARS else "none"
-            except Exception:
-                pass
-        if method == "none" and ocr:
-            if budget is None or budget.take():
-                try:
-                    ocr_text = ocr_png(backend.render_png(n, dpi), langs)
-                    if useful_chars(ocr_text) > useful_chars(text):
-                        text, method = ocr_text, "ocr"
-                    else:
-                        method = "none_after_ocr"
-                except Exception as exc:
-                    err = f"ocr: {exc}"[:200]
-                    method = "ocr_failed"
-            else:
-                ocr_pending.append(n)
-                method = "ocr_deferred"
-        elif method == "none":
-            ocr_pending.append(n)
-        pages.append({"n": n, "text": text, "method": method, "chars": useful_chars(text), "error": err})
+                text = backend.page_text(n)
+            except Exception as exc:
+                err = f"text: {exc}"[:200]
+                try:  # page-wise fallback
+                    text = PypdfBackend(raw).page_text(n)
+                except Exception:
+                    pass
+            method = "digital" if useful_chars(text) >= USEFUL_MIN_CHARS else "none"
+            pages.append({"n": n, "text": text, "method": method, "chars": useful_chars(text), "error": err})
+    ocr_pending = []
+    for p in pages:
+        needs = p["method"] in ("none", "ocr_deferred") and (todo is None or p["n"] in todo)
+        if not needs:
+            continue
+        if ocr and (budget is None or budget.take()):
+            p["text"], p["method"], p["error"] = _ocr_page(backend, p["n"], p["text"], dpi, langs)
+            p["chars"] = useful_chars(p["text"])
+        else:
+            p["method"] = "ocr_deferred" if ocr else "none"
+            ocr_pending.append(p["n"])
     payload = {
         "sha256": sha, "member": member, "backend": backend.name, "backend_errors": errors,
         "page_count": len(pages), "pages": pages, "ocr_pending": ocr_pending, "dpi": dpi,
-        "summary": summarize(pages),
+        "summary": summarize(pages), "resumed": bool(cached),
     }
     if store is not None:
         store.put_text(sha, payload, member)
