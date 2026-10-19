@@ -1,0 +1,43 @@
+name: Troia Sun Semantic Validation and PV Baseline Comparison
+on:
+  pull_request:
+    paths:
+      - 'experiments/mase_semantic_compare.py'
+      - '.github/workflows/mase-semantic-compare.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  semantic-compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch prior immutable evidence artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p source-evidence
+          for pair in "0:12168890461" "25:12167689575" "50:12168263763" "75:12168149410" "100:12167674883"; do
+            id="${pair#*:}"
+            offset="${pair%%:*}"
+            curl --fail --location --retry 3 -H "Authorization: Bearer ${GH_TOKEN}" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/EmAnzi3/pv_agent_mvp/actions/artifacts/${id}/zip" -o "/tmp/batch-${offset}.zip"
+            unzip -oq "/tmp/batch-${offset}.zip" -d "source-evidence/batch-${offset}"
+          done
+      - name: Compare source-cited candidates against canonical data
+        run: |
+          python experiments/mase_semantic_compare.py --evidence-dir source-evidence 2>&1 | tee compare.log
+      - name: Upload review-only semantic comparison
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mase-6479-semantic-comparison
+          path: |
+            reports/crawl4ai/troia-semantic-closeout.json
+            compare.log
+          retention-days: 14
+          if-no-files-found: warn
