@@ -146,8 +146,9 @@ def extract(ctx: PageContext) -> list[Fact]:
             vat = m.group("vat")
             subject, how = _nearest_company(ctx, i, m.start())
             ok = valid_vat_it(vat)
+            group_vat = bool(re.search(r"(?i)gruppo\s+(?:iva|i\.v\.a\.)", line[:m.start()] + " " + (ctx.lines[i - 1] if i else "")))
             facts.append(Fact(
-                field="company.vat", value=vat, subject=subject, citation=ctx.cite(ctx.window(i, 1, 0)),
+                field="company.vat_group" if group_vat else "company.vat", value=vat, subject=subject, citation=ctx.cite(ctx.window(i, 1, 0)),
                 status="candidate" if ok else "rejected",
                 qualifiers={"checksum_ok": ok, "subject_association": how},
                 limits="Check digit is not a registry check; association with the company is positional"

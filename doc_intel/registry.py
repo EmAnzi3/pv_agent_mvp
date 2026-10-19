@@ -69,15 +69,18 @@ def check_vats(facts: list[Fact], client: ViesClient, limit: int = 40) -> dict[s
     """Check each distinct well-formed VAT once; annotate facts in place."""
     vats = []
     for f in facts:
-        if f.field == "company.vat" and f.qualifiers.get("checksum_ok") and f.value not in vats:
+        if f.field in ("company.vat", "company.vat_group") and f.qualifiers.get("checksum_ok") and f.value not in vats:
             vats.append(f.value)
     results = {v: client.check(v) for v in vats[:limit]}
     for f in facts:
-        if f.field != "company.vat" or f.value not in results:
+        if f.field not in ("company.vat", "company.vat_group") or f.value not in results:
             continue
         r = results[f.value]
         f.qualifiers["registry"] = {k: r.get(k) for k in ("valid", "name", "address", "request_date", "source", "error")}
-        if r.get("name") and f.subject:
+        if f.field == "company.vat_group":
+            f.qualifiers["registry_match"] = None  # the group VAT is expected to carry the group's name
+            f.limits = f"VAT of the VAT group the company adheres to; VIES name: {r.get('name')}"
+        elif r.get("name") and f.subject:
             match = _norm_name(r["name"]).startswith(_norm_name(f.subject)) or _norm_name(f.subject).startswith(_norm_name(r["name"]))
             f.qualifiers["registry_match"] = bool(match)
             if not match:
@@ -87,6 +90,8 @@ def check_vats(facts: list[Fact], client: ViesClient, limit: int = 40) -> dict[s
         elif r.get("name"):
             f.qualifiers["registry_match"] = None
         if r.get("valid") is False:
-            f.status = "rejected"
-            f.limits = "VAT not active in VIES on the request date"
+            # not rejected: members of an Italian 'gruppo IVA' are not individually active in VIES
+            f.qualifiers["registry_match"] = None
+            f.limits = ("VAT not active in VIES on the request date: the company may belong to a VAT group "
+                        "or have ceased; check the business register")
     return results

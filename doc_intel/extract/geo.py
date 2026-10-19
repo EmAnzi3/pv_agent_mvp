@@ -28,7 +28,7 @@ GB_RE = re.compile(r"(?i)gauss[\s-]*boaga|monte\s+mario|roma\s*40")
 
 OBJECT_RULES = [
     (re.compile(r"(?i)pvgis|simulazion|irraggiament"), "simulation_point"),
-    (re.compile(r"(?i)baricentr|centroid"), "centroid"),
+    (re.compile(r"(?i)baricentr|centroid|punto\s+centrale"), "centroid"),
     (re.compile(r"(?i)aerogenerator|\bWTG\b|torre\s+eolica"), "turbine"),
     (re.compile(r"(?i)stazione\s+(?:elettrica|utente|di\s+(?:trasformazione|elevazione))|\bSSE\b|sottostazione|\bSE\b"), "substation"),
     (re.compile(r"(?i)punto\s+di\s+(?:connessione|consegna)|stallo"), "connection_point"),
@@ -187,6 +187,43 @@ def extract(ctx: PageContext) -> list[Fact]:
                               limits=("Geographic pair; object " + obj + (" — NOT the plant location" if obj in ("simulation_point", "cabin", "substation") else "")
                                       + ("; bounding-box corner of the site as declared, not a perimeter" if obj == "site_bbox_corner" else "")),
                               extractor="geo.latlon"))
+    facts.extend(extract_row_tables(ctx))
+    return facts
+
+
+LAT_ROW = re.compile(r"(?i)^\s*lat(?:itudine)?\b[^0-9]*(?P<vals>(?:\s*[-+]?\d{2}[.,]\d{3,8}\s*°?\s*N?)+)\s*$")
+LON_ROW = re.compile(r"(?i)^\s*lon(?:gitudine)?\b[^0-9]*(?P<vals>(?:\s*[-+]?\d{1,2}[.,]\d{3,8}\s*°?\s*E?)+)\s*$")
+NUM_TOKEN = re.compile(r"[-+]?\d{1,2}[.,]\d{3,8}")
+
+
+def extract_row_tables(ctx: PageContext) -> list[Fact]:
+    """Tables laid out by rows ('Latitudine v1 v2 v3' / 'Longitudine w1 w2 w3'), one column per site."""
+    facts: list[Fact] = []
+    for i, line in enumerate(ctx.lines):
+        lm = LAT_ROW.match(line or "")
+        if not lm:
+            continue
+        lats = [float(x.replace(",", ".")) for x in NUM_TOKEN.findall(lm.group("vals"))]
+        for j in range(i + 1, min(i + 4, len(ctx.lines))):
+            om = LON_ROW.match(ctx.lines[j] or "")
+            if not om:
+                continue
+            lons = [float(x.replace(",", ".")) for x in NUM_TOKEN.findall(om.group("vals"))]
+            if len(lons) != len(lats) or len(lats) < 2:
+                break
+            header = next((ctx.lines[k] for k in range(i - 1, max(-1, i - 4), -1) if ctx.lines[k]), "")
+            labels = re.findall(r"[A-Za-zÀ-ÿ]+\s*\d+[A-Za-z]?", header)
+            obj = classify_object(ctx.window(i, 4, 0))
+            for k, (la, lo) in enumerate(zip(lats, lons)):
+                if not (35 <= la <= 47.5 and 6 <= lo <= 19):
+                    continue
+                facts.append(Fact(field="geo.latlon_point", value={"lat": la, "lon": lo},
+                                  subject=labels[k] if len(labels) == len(lats) else None,
+                                  citation=ctx.cite(ctx.window(i, 1, 1)), precision="component_coordinates",
+                                  qualifiers={"object": obj, "crs": "WGS84 (assumed decimal degrees)", "layout": "row_table"},
+                                  limits=f"Point of object '{obj}' from a row-wise table; not a perimeter",
+                                  extractor="geo.latlon_rows"))
+            break
     return facts
 
 

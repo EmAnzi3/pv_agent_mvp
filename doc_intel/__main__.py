@@ -134,6 +134,22 @@ def digest(d: dict) -> list[tuple[str, dict]]:
             uniq.append(v)
     out.append(("vat_occurrences", uniq[:40]))
     out.append(("registry", d.get("registry", {})))
+    roles = [{"field": f["field"], "value": f["value"], "status": f["status"], "doc": f["citation"]["url"].rsplit("/", 1)[-1],
+              "page": f["citation"]["page"], "excerpt": f["citation"]["excerpt"][:200]}
+             for f in d["facts"] if f["field"] in ("role.epc", "role.bop", "role.contractor", "role.supplier", "role.om",
+                                                      "role.works_director", "company.vat_group")]
+    seen_r, roles_u = set(), []
+    for r in roles:
+        k = (r["field"], r["value"], r["doc"])
+        if k not in seen_r:
+            seen_r.add(k)
+            roles_u.append(r)
+    out.append(("execution_roles_evidence", roles_u[:30]))
+    named = [{"subject": f["subject"], "object": f["qualifiers"].get("object"), "value": f["value"],
+              "doc": f["citation"]["url"].rsplit("/", 1)[-1], "page": f["citation"]["page"]}
+             for f in d["facts"] if f["field"] == "geo.latlon_point"
+             and (f["subject"] or f["qualifiers"].get("object") in ("centroid", "site_bbox_corner", "substation"))]
+    out.append(("named_points", named[:40]))
     if d.get("evaluation"):
         out.append(("evaluation", d["evaluation"]))
     return out

@@ -517,6 +517,33 @@ class Registry(unittest.TestCase):
         self.assertEqual([g["blocking"] for g in gates], [False])
 
 
+class VatGroups(unittest.TestCase):
+    """Aliai (MASE 8824): Cherry Picking's own VAT is not active in VIES because it adheres to a VAT group."""
+
+    def test_vat_group_and_inactive_member(self):
+        from doc_intel.registry import ViesClient, check_vats
+        txt = ("Proponente: Cherry Picking S.r.l.\nSede legale Corso Buenos Aires, 54 - 20124 Milano P.I. IT02016600898\n"
+               "La società aderisce al gruppo IVA GRUPPO SONNEDIX P.IVA 11998240011")
+        facts = extract_all([page(txt)])
+        fields = {(f.field, f.value) for f in facts if f.field.startswith("company.")}
+        self.assertIn(("company.vat_group", "11998240011"), fields)
+        reg = {"02016600898": {"isValid": False, "name": ""}, "11998240011": {"isValid": True, "name": "GRUPPO SONNEDIX"}}
+        check_vats(facts, ViesClient(get_json=lambda u: reg[u.rsplit("/", 1)[-1]], pause=0))
+        member = [f for f in facts if f.value == "02016600898"][0]
+        self.assertNotEqual(member.status, "rejected")
+        self.assertIn("VAT group", member.limits)
+
+
+class RowTables(unittest.TestCase):
+    def test_field_centres_in_row_table(self):
+        txt = ("Di seguito le coordinate (WGS84) del punto centrale di ogni campo:\nAliai 1 Aliai 2 Aliai 3\n"
+               "Latitudine 37,4512 37,4630 37,4988\nLongitudine 14,7001 14,7310 14,7652")
+        pts = [f for f in extract_all([page(txt)]) if f.field == "geo.latlon_point"]
+        self.assertEqual([(p.subject, p.value["lat"], p.value["lon"]) for p in pts],
+                         [("Aliai 1", 37.4512, 14.7001), ("Aliai 2", 37.463, 14.731), ("Aliai 3", 37.4988, 14.7652)])
+        self.assertTrue(all(p.qualifiers["object"] == "centroid" for p in pts))
+
+
 class NoHardcodedBenchmarks(unittest.TestCase):
     def test_toolbox_has_no_benchmark_ids(self):
         for py in (ROOT / "doc_intel").rglob("*.py"):
