@@ -624,6 +624,21 @@ class RegionalRunRegressions(unittest.TestCase):
         self.assertFalse([f for f in extract_all([page(txt)]) if f.field.startswith("schedule.date")])
 
 
+class ErCountNodes(unittest.TestCase):
+    def test_counts_as_separate_text_nodes(self):
+        from doc_intel.adapters import adapter_for_url
+        url = "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6902"
+        html = ('<div><a href="#a">Progetto Iniziale</a> <i class="fa"></i> <b>95 documenti</b></div>'
+                '<table><tr><td>03/07/2026</td><td><a href="/viavasweb/progettoIniziale/scaricaAllegato/1/6902">Rel</a></td></tr></table>'
+                '<div><a href="#b">Pareri</a> <i class="fa"></i> <b>10 documenti</b></div>'
+                '<a href="/viavasweb/pareri/scaricaAllegato/2/6902">Parere</a>')
+        ad = adapter_for_url(url)
+        ad.get_html = lambda u: html
+        disc = ad.discover(ad.identify(url))
+        self.assertEqual({p["id"]: (p["declared"], p["enumerated"]) for p in disc.procedures},
+                         {"Progetto Iniziale": (95, 1), "Pareri": (10, 1)})
+
+
 class BoxAdapter(unittest.TestCase):
     def test_box_listing_pages_and_subfolders(self):
         import json as _j

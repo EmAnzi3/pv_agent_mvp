@@ -37,6 +37,9 @@ HTML_RULES = [
 ]
 
 
+COUNT_ONLY = re.compile(r"^\s*[↴⤵↓]?\s*(\d{1,4})\s+document[io]\s*$", re.I)
+
+
 class HtmlIndexAdapter(DocumentAdapter):
     source = "html_index"
     capabilities = AdapterCapabilities(
@@ -81,6 +84,14 @@ class HtmlIndexAdapter(DocumentAdapter):
             m = self.SECTION_COUNT.match(txt)
             if m and not any(h[0] in el.parents for h in headers):
                 headers.append((el, m.group("name").strip(" :"), int(m.group("n"))))
+        if not headers:
+            # layout where the count is a separate text node: '<a>Progetto Iniziale</a> <i/> 95 documenti'
+            for node in soup.find_all(string=COUNT_ONLY):
+                m = COUNT_ONLY.search(node)
+                name_node = node.find_previous(string=lambda t: t and t.strip() and not COUNT_ONLY.search(t)
+                                               and t.strip() not in ("↴", "⤵", "↓"))
+                if name_node is not None and node.parent is not None:
+                    headers.append((node.parent, name_node.strip()[:80], int(m.group(1))))
         header_names = {id(h[0]): (h[1], h[2]) for h in headers}
         docs: dict[str, DocumentRef] = {}
         declared: dict[str, int] = {name: n for _, name, n in headers}
@@ -249,9 +260,14 @@ class BoxSharedFolderAdapter(DocumentAdapter):
     def _list_folder(self, url: str, path: str, docs: list, procs: list, root: str, vanity: str, depth: int = 0):
         seen_pages, page, total = 0, 1, None
         found = listed = 0
+        last_ids = None
         while True:
             html = self.get_html(url + (f"?page={page}" if page > 1 else ""))
             items, page_count, tot = self._items(self.parse_stream(html))
+            ids = tuple(sorted(it["typedID"] for it in items))
+            if ids and ids == last_ids:
+                break  # the server ignores ?page=N: stop instead of looping
+            last_ids = ids
             total = total or tot
             seen_pages += 1
             for it in items:
