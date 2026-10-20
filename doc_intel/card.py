@@ -59,6 +59,7 @@ SECTIONS = [
 def _fmt(field: str, value: Any, unit: str | None = None) -> str:
     if isinstance(value, dict) and value.get("raw"):
         raw = re.sub(r"\s*\(\s*[a-z]+\s*\)", "", value["raw"]).strip()   # '30 (trenta) giorni' -> '30 giorni'
+        raw = re.sub(r"(\d)(mesi|anni|giorni|settimane)", r"\1 \2", raw)
         return re.sub(r"\s+", " ", raw)
     if isinstance(value, dict) and "min" in value:
         lo, hi = value["min"], value["max"]
@@ -108,7 +109,22 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
             continue
         if field.startswith("tech.") and field.endswith(("_mwp", "_mw", "_mwh")) and g.get("subject") not in ("plant", None):
             continue  # component-level or other-project powers are not project characteristics
-        vals = g["values"]
+        merged: dict[str, dict] = {}
+        for x in g["values"]:
+            if not isinstance(x, dict):
+                continue
+            if field == "tech.technology" and x["value"] in ("floating_pv", "offshore") and x["occurrences"] < 10:
+                continue  # passing mentions (alternatives, literature) are not the project's technology
+            k = _fmt(field, x["value"])
+            if k in merged:
+                merged[k] = {**merged[k], "occurrences": merged[k]["occurrences"] + x["occurrences"]}
+            else:
+                merged[k] = dict(x)
+        vals = sorted(merged.values(), key=lambda x: -x["occurrences"])
+        if not vals:
+            continue
+        g = {**g, "status": "conflict" if len(vals) > 1 and g["status"] == "conflict" else
+             ("single_value" if len(vals) == 1 else g["status"])}
         if field == "tech.nominal_power_mw" and any(x["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw") for x in d["groups"]):
             continue  # nominal values are mostly per-block: DC/AC are shown instead
         dominant = (g["status"] == "conflict" and len(vals) > 1 and vals[0]["occurrences"] >= 3
@@ -150,11 +166,11 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
     for f in d["facts"]:
         if f["field"] in ("company.vat", "company.vat_group"):
             vat_count[f["value"]] = vat_count.get(f["value"], 0) + 1
-    public = re.compile(r"(?i)comune|regione|provincia|arpa|asl|azienda sanitaria|terna|snam|anas|ministero|agenzia|"
+    public = re.compile(r"(?i)\bcomune\b|regione|provincia|arpa|\basl\b|azienda sanitaria|terna|snam|anas|ministero|agenzia|"
                         r"banca|bank|consorzio|universit|laborator|analisi e prove")
     companies = []
     for vat, r in sorted(registry.items(), key=lambda kv: -vat_count.get(kv[0], 0)):
-        if not (r.get("valid") and r.get("name")) or (public.search(r["name"]) and vat not in group_vats):
+        if not (r.get("valid") and r.get("name")) or public.search(r["name"]):
             continue
         is_group = vat in group_vats
         companies.append({"label": "Gruppo societario (gruppo IVA)" if is_group else "Società negli elaborati",
@@ -170,7 +186,9 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         loc.append({"label": "Comuni", "value": ", ".join(p["municipalities"]) + (f" ({p['province']})" if p.get("province") else ""),
                     "status": "verificato", "source": {"document": "scheda ufficiale del procedimento", "url": p.get("info_url")}})
     elif record.get("municipalities"):
-        loc.append({"label": "Comuni", "value": f"{record['municipalities']} ({record.get('province') or ''})".replace(" ()", ""),
+        mun = record["municipalities"]
+        prov = record.get("province")
+        loc.append({"label": "Comuni", "value": mun if (not prov or f"({prov})" in mun) else f"{mun} ({prov})",
                     "status": "da documenti", "note": "Dato dell'elenco progetti: la fonte non ha una scheda ufficiale strutturata.",
                     "source": {"document": "elenco progetti", "url": p.get("info_url")}})
     polys = [f for f in d["facts"] if f["field"] == "geo.area_polygon" and f["value"].get("geojson")]
@@ -179,7 +197,13 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
                     "status": "da confermare", "note": "Da verificare sulle tavole prima dell'uso cartografico.",
                     "geojson": [f["value"]["geojson"] for f in polys[:12]],
                     "source": _source({"url": polys[0]["citation"]["url"], "page": polys[0]["citation"]["page"]}, titles)})
-    corners = [f for f in d["facts"] if f["field"] == "geo.latlon_point" and f["qualifiers"].get("object") in ("site_bbox_corner", "centroid")]
+    corners, seen_pts = [], set()
+    for f in d["facts"]:
+        if f["field"] == "geo.latlon_point" and f["qualifiers"].get("object") in ("site_bbox_corner", "centroid"):
+            key = (round(f["value"]["lat"], 4), round(f["value"]["lon"], 4))
+            if key not in seen_pts:
+                seen_pts.add(key)
+                corners.append(f)
     if corners:
         loc.append({"label": "Coordinate del sito", "value": "; ".join(f"{c['value']['lat']:.5f} N, {c['value']['lon']:.5f} E" for c in corners[:4]),
                     "status": "da documenti", "note": "Spigoli o centri dichiarati negli elaborati, non il perimetro.",
