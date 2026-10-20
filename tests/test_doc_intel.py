@@ -755,6 +755,17 @@ class MemoryAndDeletion(unittest.TestCase):
             self.assertEqual(d2["acquisition"]["states"], {"reused": 4})   # 4 distinct URLs, 5 references
             self.assertEqual(len(d2["facts"]), len(d1["facts"]))  # dossier rebuilt from memory
 
+    def test_reanalyse_extracts_again_even_if_bytes_unchanged(self):
+        with tempfile.TemporaryDirectory() as d:
+            self._run(d, FakeSession(dict(self.pdfs)))
+            st = Store(d)
+            for sha in [e["sha256"] for e in st.load_manifest("mase", "77")["documents"].values()]:
+                p = st.get_facts(sha); p["facts"] = []; st.put_facts(sha, p)   # simulate stale facts
+            s2 = FakeSession(dict(self.pdfs))
+            d2 = self._run(d, s2, reanalyse=True)
+            self.assertEqual(len(s2.calls), 4)
+            self.assertTrue(any(f["field"] == "company.vat" for f in d2["facts"]))
+
     def test_changed_file_is_downloaded_again(self):
         with tempfile.TemporaryDirectory() as d:
             self._run(d, FakeSession(dict(self.pdfs)))

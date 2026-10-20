@@ -60,6 +60,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     counter = {"n": 0}
     import threading
     lock = threading.Lock()
+    reanalysed: set[str] = set()   # sha256 re-extracted in this run (duplicates then reuse them)
     from .fetch import FetchResult
 
     def extract_document(ref, res, parsed):
@@ -113,7 +114,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         # 2) new, changed, incomplete or forced: download, parse, extract, then delete the bytes
         res = fetcher.fetch(ref.url, manifest, refresh=force, auth=ref.extra.get("auth"))
         payload = None
-        if res.sha256 and store.has_facts(res.sha256) and res.state in ("unchanged", "cached"):
+        if (res.sha256 and store.has_facts(res.sha256) and res.state in ("unchanged", "cached")
+                and not (reanalyse and res.sha256 not in reanalysed)):
             payload = store.get_facts(res.sha256)          # same bytes already analysed (e.g. duplicate URL)
         elif res.sha256:
             parsed = []
@@ -126,6 +128,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
                     parsed.append((mem, {"error": str(exc)[:300], "pages": [], "summary": {}}))
             payload = extract_document(ref, res, parsed)
             store.put_facts(res.sha256, payload)
+            with lock:
+                reanalysed.add(res.sha256)
         with lock:
             counter["n"] += 1
             e = manifest.setdefault("documents", {}).setdefault(ref.url, {})
