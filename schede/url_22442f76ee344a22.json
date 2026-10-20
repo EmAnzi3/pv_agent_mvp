@@ -196,40 +196,9 @@
  ],
  "stato": null,
  "cronoprogramma": {
-  "bars": [
-   {
-    "name": "Durata totale Fase di ingegneria Ingegneria civile dettagliata",
-    "start": 0.0,
-    "end": 7.1
-   },
-   {
-    "name": "Definizione del computo metrico Acquisti e trasporti in sito Pannelli",
-    "start": 1.4,
-    "end": 7.1
-   },
-   {
-    "name": "Interruttori e quadri Durata del cantiere Fase propedeutica a posa FV",
-    "start": 2.0,
-    "end": 23.1
-   },
-   {
-    "name": "Durata del cantiere Fase propedeutica a posa FV Allestimento cantiere, recinzion",
-    "start": 2.0,
-    "end": 7.5
-   },
-   {
-    "name": "Scavi, spostamento tubazioni esistenti, opere di raccordo, reinterri Posa FV Pos",
-    "start": 5.5,
-    "end": 17.8
-   },
-   {
-    "name": "Posa pannelli e opere complementari per campo FV Locali ENEL e connessione alla ",
-    "start": 7.5,
-    "end": 19.1
-   }
-  ],
+  "bars": [],
   "unit": "month",
-  "months": 23.1,
+  "months": 1,
   "source": {
    "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/648964/6869",
    "page": 2,
@@ -252,10 +221,156 @@
    "document": "681PD08R00 cronoprogramma interventi",
    "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/648964/6869"
   },
-  "note": null,
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
   "altri": [],
-  "durate_fasi": [],
-  "metodo": "diagramma vettoriale"
+  "durate_fasi": [
+   {
+    "name": "Durata totale",
+    "duration": "710 giorni",
+    "months": 23.36
+   },
+   {
+    "name": "Posa impianto elettrico, cavi e cavidotti, impianto di",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "Fase di ingegneria",
+    "duration": "225 giorni",
+    "months": 7.4
+   },
+   {
+    "name": "Opere complementari per conessione e collaudo opere di",
+    "duration": "30 giorni",
+    "months": 0.99
+   },
+   {
+    "name": "Ingegneria civile dettagliata",
+    "duration": "40 giorni",
+    "months": 1.32
+   },
+   {
+    "name": "Messa in servizio",
+    "duration": "40 giorni",
+    "months": 1.32
+   },
+   {
+    "name": "Ingegneria elettrica dettaglaita",
+    "duration": "40 giorni",
+    "months": 1.32
+   },
+   {
+    "name": "Sistemazioni finali impianti",
+    "duration": "25 giorni",
+    "months": 0.82
+   },
+   {
+    "name": "Definizione del computo metrico",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Prove, collaudi e messa in servizio",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Acquisti e trasporti in sito",
+    "duration": "175 giorni",
+    "months": 5.76
+   },
+   {
+    "name": "Smobilizzo cantiere",
+    "duration": "80 giorni",
+    "months": 2.63
+   },
+   {
+    "name": "Pannelli",
+    "duration": "150 giorni",
+    "months": 4.93
+   },
+   {
+    "name": "Sistemazione aree esterne, piantumazioni, opere di",
+    "duration": "60 giorni",
+    "months": 1.97
+   },
+   {
+    "name": "Tracker",
+    "duration": "60 giorni",
+    "months": 1.97
+   },
+   {
+    "name": "Cabine",
+    "duration": "45 giorni",
+    "months": 1.48
+   },
+   {
+    "name": "Cavi",
+    "duration": "90 giorni",
+    "months": 2.96
+   },
+   {
+    "name": "Interruttori e quadri",
+    "duration": "50 giorni",
+    "months": 1.64
+   },
+   {
+    "name": "Durata del cantiere",
+    "duration": "640 giorni",
+    "months": 21.05
+   },
+   {
+    "name": "Fase propedeutica a posa FV",
+    "duration": "165 giorni",
+    "months": 5.43
+   },
+   {
+    "name": "Allestimento cantiere, recinzioni, cancellate",
+    "duration": "45 giorni",
+    "months": 1.48
+   },
+   {
+    "name": "Creazione Vasca di laminazione",
+    "duration": "35 giorni",
+    "months": 1.15
+   },
+   {
+    "name": "Scavi, spostamento tubazioni esistenti, opere di raccordo,",
+    "duration": "85 giorni",
+    "months": 2.8
+   },
+   {
+    "name": "Posa FV",
+    "duration": "375 giorni",
+    "months": 12.34
+   },
+   {
+    "name": "Posa pali di fondazine tracker",
+    "duration": "180 giorni",
+    "months": 5.92
+   },
+   {
+    "name": "Allestimento struttura tracker",
+    "duration": "180 giorni",
+    "months": 5.92
+   },
+   {
+    "name": "Posa pannelli e opere complementari per campo FV",
+    "duration": "180 giorni",
+    "months": 5.92
+   },
+   {
+    "name": "Locali ENEL e connessione alla rete",
+    "duration": "355 giorni",
+    "months": 11.68
+   },
+   {
+    "name": "Posa Trasformatori e Cabine",
+    "duration": "80 giorni",
+    "months": 2.63
+   }
+  ],
+  "metodo": null
  },
  "documentazione": {
   "documenti": 121,
