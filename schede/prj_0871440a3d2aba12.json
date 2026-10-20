@@ -38,12 +38,13 @@
      "note": null
     },
     {
-     "label": "Società citata",
+     "label": "Società negli elaborati",
      "value": "Pv Italy 1 Srl",
-     "detail": "P. IVA 11515530969 — sede: Via Filzi Fabio 7 20124 Milano Mi",
      "status": "verificato",
+     "detail": "P. IVA 11515530969 — sede legale: Via Filzi Fabio 7 20124 Milano Mi — citata 2 volte",
+     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
      "source": {
-      "document": "registro VIES",
+      "document": "registro europeo VIES",
       "url": "https://ec.europa.eu/taxation_customs/vies/"
      }
     }
@@ -248,77 +249,16 @@
     },
     {
      "label": "Strutture",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "tracker monoassiali",
-       "occurrences": 23,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-        "page": 71,
-        "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-        "excerpt": "L’impostazione progettuale impiega strutture a inseguimento monoassiale disposte con interasse di"
-       }
-      },
-      {
-       "value": "strutture fisse",
-       "occurrences": 3,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-        "page": 83,
-        "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-        "excerpt": "Tra le possibili soluzioni tecnologiche è stata valutata l’installazione dei moduli su strutture fisse."
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
-    },
-    {
-     "label": "Potenza nominale",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "80 MW",
-       "occurrences": 7,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-        "page": 14,
-        "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-        "excerpt": "Codice pratica 202306479 della società DG ITALIA HOLDING S.r.l., con potenza in immissione come da STMG pari a 80MW •"
-       }
-      },
-      {
-       "value": "74,7 MW",
-       "occurrences": 7,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-        "page": 14,
-        "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-        "excerpt": "Codice pratica 202403505 della società iCube Development 24 S.r.l., con potenza in immissione come da STMG pari a 74,7MW Il nuovo elettrodotto a 132 kV per il collegamento in antenna di questo impianto sulla Stazione"
-       }
-      },
-      {
-       "value": "1 MW",
-       "occurrences": 2,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-        "page": 16,
-        "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-        "excerpt": "assoggettabilità\"), punto 2, lettera b), rientrano gli \"impianti industriali non termici per la produzione di energia, vapore ed acqua calda con potenza complessiva superiore a 1 MW\", per i quali l'autorità competente al"
-       }
-      },
-      {
-       "value": "25,6 MW",
-       "occurrences": 1,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-        "page": 74,
-        "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-        "excerpt": "stringa, assunti in progetto come modello Sungrow SG350HX-20, con potenza attiva nominale complessiva pari a 25.600 kW."
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
+     "value": "tracker monoassiali",
+     "status": "da documenti",
+     "occurrences": 23,
+     "source": {
+      "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
+      "page": 71,
+      "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
+      "excerpt": "L’impostazione progettuale impiega strutture a inseguimento monoassiale disposte con interasse di"
+     },
+     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): strutture fisse (3)."
     },
     {
      "label": "Potenza FV (AC)",
@@ -335,84 +275,47 @@
     },
     {
      "label": "Potenza FV (DC)",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "26,618 MWp",
-       "occurrences": 863,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/0_ISTANZA/Istanza%2062-26.pdf",
-        "page": 1,
-        "document": "Istanza 62-26.pdf",
-        "excerpt": "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Melara\" con potenza nominale di 26617,76 kWp"
-       }
-      },
-      {
-       "value": "15,974 MWp",
-       "occurrences": 1,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-        "page": 72,
-        "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-        "excerpt": "23.842 15.974,14 kWp Totale"
-       }
-      },
-      {
-       "value": "266,618 MWp",
-       "occurrences": 1,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/2_OSSERV_PARERI/COMUNE%20DI%20OSTIGLIA%20%28MN%29/Prot_Par%200020326%20del%2005-10-2026%20-%20Documento%20Parere%20Comune%20di%20Ostiglia%20PV%20Italy%201%20S.r.l._signed.pdf",
-        "page": 1,
-        "document": "Prot_Par 0020326 del 05-10-2026 - Documento Parere Comune di Ostiglia PV Italy 1 S.r.l._signed.pdf",
-        "excerpt": "Progetto: Realizzazione di un impianto agrivoltaico denominato \"Melara\" con potenza nominale di 266.617,76 kWp in Comune di Melara (RO) con opere di connessione nei Comuni di Melara (RO) e Ostiglia (MN)."
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
+     "value": "26,618 MWp",
+     "status": "da documenti",
+     "occurrences": 863,
+     "source": {
+      "url": "https://sharing.regione.veneto.it/public.php/webdav/0_ISTANZA/Istanza%2062-26.pdf",
+      "page": 1,
+      "document": "Istanza 62-26.pdf",
+      "excerpt": "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Melara\" con potenza nominale di 26617,76 kWp"
+     },
+     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): 15,974 MWp (1); 266,618 MWp (1)."
     },
     {
      "label": "Tipologia",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "agrivoltaico",
-       "occurrences": 896,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/0_ISTANZA/Istanza%2062-26.pdf",
-        "page": 1,
-        "document": "Istanza 62-26.pdf",
-        "excerpt": "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Melara\" con potenza nominale di 26617,76 kWp"
-       }
-      },
-      {
-       "value": "agrivoltaico avanzato",
-       "occurrences": 7,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA05.00%20-%20Screening%20VIncA%20I%20livello_signed.pdf",
-        "page": 4,
-        "document": "ML_FV_RA05.00 - Screening VIncA I livello_signed.pdf",
-        "excerpt": "Il progetto prevede la realizzazione di un impianto agrivoltaico avanzato nel Comune di Melara (RO), con"
-       }
-      },
-      {
-       "value": "fotovoltaico galleggiante",
-       "occurrences": 1,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT01.00%20-%20Relazione%20Tecnica_signed.pdf",
-        "page": 40,
-        "document": "ML_FV_RT01.00 - Relazione Tecnica_signed.pdf",
-        "excerpt": "Il sistema ha le parti attive separate da terra (flottante) mentre"
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
+     "value": "agrivoltaico",
+     "status": "da documenti",
+     "occurrences": 896,
+     "source": {
+      "url": "https://sharing.regione.veneto.it/public.php/webdav/0_ISTANZA/Istanza%2062-26.pdf",
+      "page": 1,
+      "document": "Istanza 62-26.pdf",
+      "excerpt": "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Melara\" con potenza nominale di 26617,76 kWp"
+     },
+     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): agrivoltaico avanzato (7); fotovoltaico galleggiante (1)."
     }
    ]
   },
   {
    "id": "ubicazione",
    "title": "Ubicazione",
-   "items": []
+   "items": [
+    {
+     "label": "Comuni",
+     "value": "Melara (RO), Ostiglia (MN) (MN)",
+     "status": "da documenti",
+     "note": "Dato dell'elenco progetti: la fonte non ha una scheda ufficiale strutturata.",
+     "source": {
+      "document": "elenco progetti",
+      "url": "https://sharing.regione.veneto.it/index.php/s/iMFk8Zs5t86GYP7"
+     }
+    }
+   ]
   },
   {
    "id": "tempi",
@@ -433,7 +336,7 @@
        }
       },
       {
-       "value": "7.85 mesi",
+       "value": "34 settimane",
        "occurrences": 1,
        "source": {
         "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT01.00%20-%20Relazione%20Tecnica_signed.pdf",
@@ -443,7 +346,7 @@
        }
       },
       {
-       "value": "15.92 mesi",
+       "value": "69 settimane",
        "occurrences": 1,
        "source": {
         "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT08.00_Valutazione_Previsionale_Impatto_Acustico-firmata.pdf",
@@ -470,7 +373,7 @@
      "status": "in conflitto",
      "values": [
       {
-       "value": "5.31 mesi",
+       "value": "23 settimane",
        "occurrences": 1,
        "source": {
         "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
@@ -497,7 +400,7 @@
      "status": "in conflitto",
      "values": [
       {
-       "value": "30–35 anni",
+       "value": "30-35 anni",
        "occurrences": 2,
        "source": {
         "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
@@ -588,22 +491,6 @@
   },
   {
    "label": "Inverter (numero)",
-   "reason": "valori diversi nei documenti"
-  },
-  {
-   "label": "Strutture",
-   "reason": "valori diversi nei documenti"
-  },
-  {
-   "label": "Potenza nominale",
-   "reason": "valori diversi nei documenti"
-  },
-  {
-   "label": "Potenza FV (DC)",
-   "reason": "valori diversi nei documenti"
-  },
-  {
-   "label": "Tipologia",
    "reason": "valori diversi nei documenti"
   }
  ],
