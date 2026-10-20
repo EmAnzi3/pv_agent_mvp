@@ -212,10 +212,10 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         note = None
         cands = [(g["field"], x) for g in d["groups"]
                  if g["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")
-                 for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["occurrences"] >= 2]
+                 for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["occurrences"] >= 10]
         for fld, x in sorted(cands, key=lambda c: -c[1]["occurrences"]):
             ratio = mw / x["value"] if x["value"] else 0
-            if any(abs(ratio - k) < 0.01 * k for k in (10, 100, 1000, 0.1, 0.01, 0.001)):
+            if any(abs(ratio - k) < 0.002 * k for k in (10, 100, 1000, 0.1, 0.01, 0.001)):
                 note = (f"Possibile refuso nel titolo: gli elaborati riportano {_fmt(fld, x['value'])} "
                         f"({x['occurrences']} volte).")
                 break
@@ -339,10 +339,16 @@ def _norm(t: str) -> str:
     return re.sub(r"[^a-z0-9]", "", (t or "").lower())
 
 
+def _clean_subject(t: str | None) -> str:
+    t = (t or "").strip("'\"‘’“” ")
+    t = re.split(r"(?i)\b(?:dell[a'’]\s*(?:impresa|ditta|societ[aà])|della\s+(?:ditta|societ[aà]))\s+", t)[-1]
+    return t.strip("'\"‘’“” ")
+
+
 def _contacts(d: dict, titles: dict) -> list[dict]:
     """E-mail, PEC and phones found in the documents, grouped by the company printed next to them."""
     rows: dict[tuple, dict] = {}
-    names = sorted({f.get("subject") for f in d["facts"] if f["field"].startswith(("contact.", "company.")) and f.get("subject")
+    names = sorted({_clean_subject(f.get("subject")) for f in d["facts"] if f["field"].startswith(("contact.", "company.")) and f.get("subject")
                     and len(_norm(f.get("subject"))) >= 6}
                    | {r["name"].title() for r in (d.get("registry") or {}).values() if r.get("valid") and r.get("name")},
                    key=lambda n: -len(_norm(n)))
@@ -352,8 +358,7 @@ def _contacts(d: dict, titles: dict) -> list[dict]:
         val = str(f["value"])
         if f["field"] != "contact.phone" and PUBLIC_MAIL.search(val):
             continue
-        subj = (f.get("subject") or "").strip("'\"‘’“” ")
-        subj = re.split(r"(?i)\b(?:dell[a'’]\s*(?:impresa|ditta|societ[aà])|della\s+(?:ditta|societ[aà]))\s+", subj)[-1].strip()
+        subj = _clean_subject(f.get("subject"))
         excerpt = f["citation"].get("excerpt") or ""
         if PUBLIC_SUBJECT.search(subj):
             continue
