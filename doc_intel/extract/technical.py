@@ -34,14 +34,14 @@ HUB_RE = re.compile(r"(?i)altezza\s+(?:al\s+|del\s+)?mozzo[^0-9]{0,20}(?P<num>\d
 ROTOR_RE = re.compile(r"(?i)diametro\s+(?:del\s+)?rotore[^0-9]{0,20}(?P<num>\d{2,3}(?:[.,]\d+)?)\s*m\b")
 AREA_RE = re.compile(r"(?i)(?P<kind>superficie|area)\s+(?P<qual>[a-zà-ÿ' ]{0,60}?)[:\s]{0,4}(?:di\s+|pari\s+a\s+|circa\s+|complessiv[ao]\s+)*(?P<num>" + NUM + r")\s*(?P<unit>ha|ettari|m2|m²|mq)\b")
 AREA_PANELS = re.compile(r"(?i)captant|radiant|occupat[ao]\s+da(?:i|lle)?\s+(?:moduli|pannelli|strutture|tracker)|"
-                         r"coperta\s+da|proiezione|impronta|pannell|moduli|tracker|strutture|pannellat|installazione")
+                         r"coperta\s+da|coperta\s+dall|proiezione|proiettat|impronta|pannell|moduli|tracker|strutture|pannellat|installazione")
 AREA_AVAILABLE = re.compile(r"(?i)disponibil|catastal|totale|complessiv|lott[oi]|recintat|di\s+progetto|intervento|"
                             r"terren|fondo|aziend|propriet|contrattualizzat|nella\s+disponibilit|lorda|particell")
 PILES_RE = re.compile(r"(?i)(?:(?:n\.|numero|totale)\s*(?:di\s+|complessivo\s+(?:di\s+)?)?)?(?P<num>\d{1,3}(?:[.\s]\d{3})+|\d{2,6})\s+"
                       r"(?P<what>pali|pile|montanti|paletti|micropali)\b|"
                       r"(?P<what2>pali|pile|montanti|micropali)\b[^.;\n]{0,50}?(?:n\.|numero|pari\s+a|totale\s+(?:di\s+)?)\s*(?P<num2>\d{1,3}(?:[.\s]\d{3})+|\d{2,6})")
 LOTS_RE = re.compile(r"(?i)(?:suddivis[oa]|articolat[oa]|compost[oa]|distribuit[oa]|ripartit[oa])\s+(?:in|su)\s+(?:n\.\s*)?"
-                     r"(?P<num>\d{1,2}|due|tre|quattro|cinque|sei|sette|otto|nove|dieci)\s+(?P<what>lotti|campi|aree|sottocampi|sezioni|impianti|blocchi)")
+                     r"(?P<num>\d{1,2}|due|tre|quattro|cinque|sei|sette|otto|nove|dieci)\s+(?P<what>lotti|sottoimpianti|impianti)")
 WORDNUM = {"due": 2, "tre": 3, "quattro": 4, "cinque": 5, "sei": 6, "sette": 7, "otto": 8, "nove": 9, "dieci": 10}
 TECH_WORDS = [
     (re.compile(r"(?i)\bagrivoltaico\s+(?:evoluto|avanzato|innovativo)\b"), "agrivoltaic_advanced"),
@@ -219,7 +219,8 @@ def extract(ctx: PageContext) -> list[Fact]:
                 kind = "totale"
             else:
                 kind = kind_of(m.group(0) + after) or kind_of(before) or kind_of(sent) or "non specificato"
-            if re.search(r"(?i)illuminazion|videosorveglian|telecamer|lampion", line):
+            if re.search(r"(?i)illuminazion|videosorveglian|telecamer|videocamer|tvcc|lampion|diametro", line) \
+                    or re.match(r"\s*(?:mm|cm)\b", line[m.end(): m.end() + 4]):
                 continue
             facts.append(Fact(field="tech.piles_count", value=int(v), subject=kind, citation=ctx.cite(sent),
                               qualifiers={"kind": kind, "raw": m.group(0)}, extractor="technical.piles",

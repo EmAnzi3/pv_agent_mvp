@@ -109,8 +109,8 @@ def extract_phases(ctx: PageContext) -> list[Fact]:
         if not m:
             continue
         units = " ".join(filter(None, [m.group("u1"), m.group("u2"), m.group("u3"), m.group("u4")])).lower()
-        if not units and not page_is_schedule:
-            continue
+        if not page_is_schedule:
+            continue    # month ranges elsewhere (opinions, monitoring plans) are not the programme of works
         a, b = int(m.group("a")), int(m.group("b"))
         if not (1 <= a <= b <= 72):
             continue

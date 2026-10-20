@@ -77,7 +77,7 @@
     const doc = card.documentazione || {};
     const href = safeHref(card.source_url);
     const sections = (card.sections || []).filter(s => s.items && s.items.length && s.id !== 'tempi').map(s =>
-      `<section class="sc-sec"><h3>${esc(s.title)}</h3>${s.items.map(item).join('')}</section>`).join('')
+      `<section class="sc-sec"><h3>${esc(s.title)}</h3>${s.note ? `<div class="sc-note">${esc(s.note)}</div>` : ''}${s.items.map(item).join('')}</section>`).join('')
       + gantt(card.cronoprogramma);
     const open = (card.da_verificare || []).length
       ? `<section class="sc-sec sc-open"><h3>Da verificare</h3><ul>${card.da_verificare.map(o =>

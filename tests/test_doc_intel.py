@@ -834,8 +834,20 @@ class SourcesVerification(unittest.TestCase):
 class CardFieldsFromReview(unittest.TestCase):
     """Fields requested on 20/10/2026: available vs panel area, piles (tracker distinction), lots, Gantt phases."""
 
+    def test_real_document_wording(self):
+        t = ("La centrale è articolata in due sezioni elettriche\n"
+             "Pali videocamere (n.46)\n"
+             "Attacco palo: idoneo per pali di diametro da min. 42mm\n"
+             "superficie complessiva proiettata al suolo di 16,898 ha.\n"
+             "Il terreno reso disponibile per l'intervento ha una superficie pari a circa 101,39 ettari\n"
+             "determinano un numero complessivi massimo di pali infissi al suolo pari a 8.783.")
+        got = {(f.field, f.subject, f.value) for f in extract_all([page(t)])
+               if f.field.startswith(("tech.area", "tech.piles", "tech.lots"))}
+        self.assertEqual(got, {("tech.area_panels_ha", None, 16.898), ("tech.area_available_ha", None, 101.39),
+                               ("tech.piles_count", "totale", 8783)})
+
     def test_area_piles_lots(self):
-        t = ("L'impianto è suddiviso in 4 campi recintati per una superficie complessiva di 110 ha.\n"
+        t = ("L'impianto è suddiviso in 4 lotti recintati per una superficie complessiva di 110 ha.\n"
              "La superficie occupata dai moduli è pari a 48,5 ha.\n"
              "Saranno infissi n. 12.450 pali per i tracker monoassiali e 820 pali per la recinzione.\n"
              "Il numero complessivo di pali da infiggere è pari a 13.270\n"
@@ -876,3 +888,20 @@ class GoldFiles(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CardContacts(unittest.TestCase):
+    def _fact(self, field, value, subject=None, excerpt=""):
+        return {"field": field, "value": value, "subject": subject, "qualifiers": {},
+                "citation": {"url": "u", "page": 1, "excerpt": excerpt}}
+
+    def test_public_bodies_out_and_owner_from_address(self):
+        from doc_intel.card import _contacts
+        d = {"facts": [self._fact("contact.pec", "pianidellamarina@pec.it", "e-Solar S.r.l."),
+                       self._fact("contact.pec", "provinciavt@legalmail.it", "e-Solar S.r.l."),
+                       self._fact("contact.phone", "+390651689356", "e-Solar S.r.l.", "TEL +39.06.51689356 WWW.REGIONE.LAZIO.IT"),
+                       self._fact("contact.phone", "0761483246", None, "tel . 0761483246; pangeastudio@virgilio.it")],
+             "registry": {"04390411009": {"valid": True, "name": "SOCIETA' AGICOLA PIANI DELLA MARINA S.S."}}}
+        rows = {r["value"]: r["label"] for r in _contacts(d, {})}
+        self.assertEqual(set(rows), {"pianidellamarina@pec.it", "0761483246"})
+        self.assertIn("Piani Della Marina", rows["pianidellamarina@pec.it"])

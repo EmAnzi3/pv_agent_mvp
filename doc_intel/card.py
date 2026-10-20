@@ -89,6 +89,7 @@ def _fmt(field: str, value: Any, unit: str | None = None) -> str:
     suffix = {"tech.pv_dc_mwp": " MWp", "tech.pv_ac_mw": " MW", "tech.nominal_power_mw": " MW",
               "tech.bess_power_mw": " MW", "tech.bess_energy_mwh": " MWh", "tech.wind_power_mw": " MW",
               "tech.module_power_wp": " Wp", "tech.inverter_power_kw": " kW", "tech.area_ha": " ha",
+              "tech.area_available_ha": " ha", "tech.area_panels_ha": " ha",
               "grid.voltage_kv": " kV"}.get(field, "")
     return txt + suffix
 
@@ -126,11 +127,19 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
             if field == "tech.technology" and x["value"] in ("floating_pv", "offshore") and x["occurrences"] < 10:
                 continue  # passing mentions (alternatives, literature) are not the project's technology
             k = _fmt(field, x["value"])
+            if field.startswith("schedule.duration.") and isinstance(x["value"], dict) and x["value"].get("max"):
+                # '34 settimane' and '8 mesi' are the same duration: merge within 10 %
+                mx = x["value"]["max"]
+                near = next((kk for kk, mv in merged.items() if isinstance(mv["value"], dict)
+                             and abs(mv["value"].get("max", 0) - mx) <= 0.1 * max(mx, mv["value"].get("max", 0))), None)
+                k = near or k
             if k in merged:
                 merged[k] = {**merged[k], "occurrences": merged[k]["occurrences"] + x["occurrences"]}
             else:
                 merged[k] = dict(x)
         vals = sorted(merged.values(), key=lambda x: -x["occurrences"])
+        if field.startswith("tech.bess_"):
+            vals = [x for x in vals if x["occurrences"] >= 2]   # single mentions are often other plants (e.g. nearby BESS)
         if not vals:
             continue
         g = {**g, "status": "conflict" if len(vals) > 1 and g["status"] == "conflict" else
@@ -203,7 +212,7 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         note = None
         for fld in ("tech.pv_dc_mwp", "tech.pv_ac_mw"):
             pv = _prevalent(d, fld)
-            if pv and pv[1]["occurrences"] >= 20:
+            if pv and pv[1]["occurrences"] >= 3:
                 ratio = mw / pv[1]["value"] if pv[1]["value"] else 0
                 if any(abs(ratio - k) < 0.01 * k for k in (10, 100, 1000, 0.1, 0.01, 0.001)):
                     note = (f"Possibile refuso nel titolo: gli elaborati riportano {_fmt(fld, pv[1]['value'])} "
@@ -277,7 +286,9 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
             {"id": "societa", "title": "Società e ruoli", "items": sections["societa"]},
             {"id": "tecnica", "title": "Caratteristiche tecniche", "items": sections["tecnica"]},
             {"id": "ubicazione", "title": "Ubicazione", "items": loc},
-            {"id": "contatti", "title": "Contatti trovati negli elaborati", "items": contacts},
+            {"id": "contatti", "title": "Contatti trovati negli elaborati", "items": contacts,
+             "note": "Recapiti stampati negli elaborati (intestazioni, firme, timbri), esclusi quelli di enti pubblici. "
+                     "«Da confermare» = il soggetto accanto al recapito non è certo: verificare prima di contattare."},
             {"id": "tempi", "title": "Tempi e cantiere", "items": sections["tempi"]},
         ],
         "cronoprogramma": gantt,
@@ -316,15 +327,24 @@ def _prevalent(d: dict, field: str):
 
 
 PUBLIC_MAIL = re.compile(r"(?i)\.gov\.it$|governo\.it|interno\.it|agenziademanio|autoritadistretto|astral|regione|comune|provincia|"
-                         r"prefettura|parco|ente|arpa|cultura|beniculturali|mite|mase|"
+                         r"prefettura|\bente|arpa|ats-|arsial|cultura|beniculturali|mite|mase|"
                          r"minambiente|terna\.it|e-distribuzione|enel\.it$|asl|vigilfuoco|marina\.difesa|ispra|anas\.it|"
                          r"snam|consorzio|bonifica|cert\.|postacert\.regione")
-PUBLIC_SUBJECT = re.compile(r"(?i)comune|regione|provincia|soprintendenza|arpa|ministero|terna|vigili|asl|consorzio|caserma")
+PUBLIC_SUBJECT = re.compile(r"(?i)comune|regione|provincia|soprintendenza|arpa|ministero|terna|vigili|asl|consorzio|caserma|"
+                            r"prefettura|questura|carabinieri|igiene\s+e\s+sanit|www\.regione|\.gov\.it")
+
+
+def _norm(t: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", (t or "").lower())
 
 
 def _contacts(d: dict, titles: dict) -> list[dict]:
     """E-mail, PEC and phones found in the documents, grouped by the company printed next to them."""
     rows: dict[tuple, dict] = {}
+    names = sorted({f.get("subject") for f in d["facts"] if f["field"].startswith(("contact.", "company.")) and f.get("subject")
+                    and len(_norm(f.get("subject"))) >= 6}
+                   | {r["name"].title() for r in (d.get("registry") or {}).values() if r.get("valid") and r.get("name")},
+                   key=lambda n: -len(_norm(n)))
     for f in d["facts"]:
         if f["field"] not in ("contact.email", "contact.pec", "contact.phone") or f.get("status") == "rejected":
             continue
@@ -332,8 +352,18 @@ def _contacts(d: dict, titles: dict) -> list[dict]:
         if f["field"] != "contact.phone" and PUBLIC_MAIL.search(val):
             continue
         subj = f.get("subject") or ""
+        excerpt = f["citation"].get("excerpt") or ""
         if PUBLIC_SUBJECT.search(subj):
             continue
+        if f["field"] == "contact.phone" and (PUBLIC_SUBJECT.search(excerpt) or PUBLIC_MAIL.search(excerpt)):
+            continue    # phone printed in a public body's letterhead
+        if f["field"] != "contact.phone":
+            # the address itself often names its owner: 'pianidellamarina@pec.it' belongs to Piani della Marina
+            local, _, dom = val.lower().partition("@")
+            tokens = [t for t in (_norm(local), _norm(dom.split(".")[0])) if len(t) >= 6]
+            owner = next((name for name in names if any(t in _norm(name) or _norm(name) in t for t in tokens)), None)
+            if owner:
+                subj = owner
         key = (f["field"], val)
         r = rows.setdefault(key, {"n": 0, "subjects": {}, "fact": f})
         r["n"] += 1
@@ -347,7 +377,6 @@ def _contacts(d: dict, titles: dict) -> list[dict]:
         out.append({"label": f"{kind[field]}" + (f" — {subj}" if subj else ""), "value": val,
                     "status": "da documenti" if (subj and same_line) else "da confermare",
                     "detail": f"compare {r['n']} volte",
-                    "note": None if (subj and same_line) else "Associazione al soggetto non certa: verificare prima dell'uso.",
                     "source": _source({"url": r["fact"]["citation"]["url"], "page": r["fact"]["citation"]["page"],
                                        "excerpt": r["fact"]["citation"]["excerpt"]}, titles)})
     return out[:14]
@@ -367,7 +396,8 @@ def _gantt(d: dict, titles: dict) -> dict:
     bars = []
     for name, ph in phases.items():
         (n, a, b), _ = max(ph["counts"].items(), key=lambda kv: kv[1])
-        bars.append({"name": name, "start": a, "end": b, "positioned": True, "source": _source(ph["source"], titles)})
+        bars.append({"name": name, "start": a, "end": b, "positioned": True, "source": _source(ph["source"], titles),
+                     "label": f"mesi {a + 1:g}–{b:g}"})
     bars.sort(key=lambda x: (x["start"], x["end"]))
     durations = {}
     for field, name in (("schedule.duration.construction", "Cantiere (durata complessiva)"),
