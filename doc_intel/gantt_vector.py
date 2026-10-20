@@ -211,7 +211,7 @@ def from_fitz_page(page: Any) -> dict | None:
     return g or None
 
 
-DUR_CELL = re.compile(r"(?i)^(?:\d+\s+)?(?P<name>.*?[A-Za-zÀ-ÿ]{3}.*?)\s+(?P<n>\d{1,4}(?:[.,]\d+)?)\s*(?P<u>g|gg|giorni|days?|d|sett|settimane|w|wks?|mesi|ms|mo)\.?\s*$")
+DUR_CELL = re.compile(r"(?i)^(?:\d+\s+)?(?P<name>[^\d].*?[A-Za-zÀ-ÿ]{3}.*?)\s+(?P<n>\d{1,4}(?:[.,]\d+)?)\s*(?P<u>g|gg|giorni|days?|d|sett|settimane|w|wks?|mesi|ms|mo)\b\.?")
 
 
 def duration_rows(words: list[tuple]) -> list[dict]:
@@ -226,9 +226,7 @@ def duration_rows(words: list[tuple]) -> list[dict]:
     rows = []
     for r in out:
         text = " ".join(w[4] for w in sorted(r, key=lambda w: w[0]))
-        if DATE_ANY.search(text):
-            continue
-        m = DUR_CELL.match(text.strip())
+        m = DUR_CELL.match(text.strip())        # text after the duration (dates, resources, bar labels) is ignored
         if m:
             name = _clean_label(m.group("name"))
             if len(name) >= 3:

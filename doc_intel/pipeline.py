@@ -89,6 +89,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
                     g = p.get("gantt") or {}
                     sched.append({"page": p["n"], "method": p["method"], "chars": p.get("chars"),
                                   "gantt_rows": len(g.get("rows", [])), "unit": g.get("unit"),
+                                  "table_rows": len(g.get("table_rows", [])), "duration_rows": len(g.get("duration_rows", [])),
                                   "gantt_error": p.get("gantt_error"),
                                   "rows": g.get("rows", [])[:12], "head": (p.get("text") or "")[:400]})
         facts = extract_all(doc_pages)
