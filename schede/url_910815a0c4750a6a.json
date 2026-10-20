@@ -822,33 +822,59 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Infissione pali",
-    "start": 3,
-    "end": 18,
-    "positioned": true,
+    "name": "Cantiere (durata complessiva)",
+    "start": 0,
+    "end": 12,
+    "positioned": false,
+    "label": "12 mesi",
     "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1161323",
+     "url": "https://va.mite.gov.it/File/Documento/1438993",
      "page": 15,
-     "document": "Allegato al Decreto del Ministero dell'Ambiente e della Sicurezza Energetica - Parere della Commissione tecnica PNRR-PNIEC n. 381 del 8 agosto 2024",
-     "excerpt": ""
-    },
-    "label": "mesi 4–18"
+     "document": "PARCO AV - PIANO DI DISMISSIONE E SMANTELLAMENTO DELL'OPERA A FINE ESERCIZIO E RIPRISTINO DEI LUOGHI",
+     "excerpt": "con più squadre in parallelo sui sottocampi e buona pianificazione logistica, per un impianto di questa taglia si attesta tra 10 e 12 mesi, di cui 6-8 mesi di lavori fisici intensivi. Con un'unica squadra che opera seque"
+    }
    },
    {
-    "name": "Mitigazioni e ripristini",
-    "start": 32,
-    "end": 51,
-    "positioned": true,
+    "name": "Opere civili",
+    "start": 0,
+    "end": 12,
+    "positioned": false,
+    "label": "12 mesi",
     "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1439034",
-     "page": 4,
-     "document": "Osservazioni Arpa Piemonte alla proposta di PMA",
-     "excerpt": ""
-    },
-    "label": "mesi 33–51"
+     "url": "https://va.mite.gov.it/File/Documento/1439001",
+     "page": 39,
+     "document": "PARCO AV - PIANO MANUTENZIONE DEGLI INTERVENTI, COMPRENSIVO DELLE OPERE DI MITIGAZIONE",
+     "excerpt": "03.02.01.C01 Controllo della viabilità Cadenza: ogni 12 mesi | Tipologia: Controllo a vista Verifica dello stato del piano viabile, delle pendenze e dei ristagni; riscontro di buche, solchi ed erosioni."
+    }
+   },
+   {
+    "name": "Opere elettriche",
+    "start": 0,
+    "end": 12,
+    "positioned": false,
+    "label": "12 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1439001",
+     "page": 16,
+     "document": "PARCO AV - PIANO MANUTENZIONE DEGLI INTERVENTI, COMPRENSIVO DELLE OPERE DI MITIGAZIONE",
+     "excerpt": "01.01.01.C01 Controllo strutturale e serraggi Cadenza: ogni 12 mesi | Tipologia: Controllo a vista Controllo dello stato generale delle strutture, verifica dell'assenza di deformazioni, corrosione e cedimenti delle fonda"
+    }
+   },
+   {
+    "name": "Montaggi",
+    "start": 0,
+    "end": 12,
+    "positioned": false,
+    "label": "12 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1439001",
+     "page": 38,
+     "document": "PARCO AV - PIANO MANUTENZIONE DEGLI INTERVENTI, COMPRENSIVO DELLE OPERE DI MITIGAZIONE",
+     "excerpt": "03.01.01.C01 Controllo dei manufatti Cadenza: ogni 12 mesi | Tipologia: Controllo a vista Verifica dell'integrità di copertura, strutture, chiusure e sistemi di smaltimento acque; riscontro di infiltrazioni e degradi."
+    }
    }
   ],
-  "months": 51,
+  "months": 12,
   "milestones": [
    {
     "label": "Inizio lavori",
@@ -875,7 +901,7 @@
     }
    }
   ],
-  "note": null
+  "note": "Gli elaborati indicano solo le durate: le barre partono tutte dall'avvio del cantiere, la sequenza reale non è indicata."
  },
  "documentazione": {
   "documenti": 211,
