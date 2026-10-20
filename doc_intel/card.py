@@ -47,6 +47,7 @@ TEMPORAL_TEXT = {"event_occurred": "atto/evento documentato", "planned": "previs
                  "template_reference": "campo presunto di piano di sicurezza o notifica",
                  "scenario": "scenario", "conditional": "condizionato", "relative_duration": "durata",
                  "unknown": "natura non determinabile"}
+DOMINANCE = 4   # a value 4x more frequent than the next one is shown as prevalent, minorities listed
 EXECUTION = {"role.epc", "role.contractor", "role.bop", "role.supplier", "role.om"}
 SECTIONS = [
     ("societa", "Società e ruoli", ("role.", "company.")),
@@ -56,6 +57,9 @@ SECTIONS = [
 
 
 def _fmt(field: str, value: Any, unit: str | None = None) -> str:
+    if isinstance(value, dict) and value.get("raw"):
+        raw = re.sub(r"\s*\(\s*[a-z]+\s*\)", "", value["raw"]).strip()   # '30 (trenta) giorni' -> '30 giorni'
+        return re.sub(r"\s+", " ", raw)
     if isinstance(value, dict) and "min" in value:
         lo, hi = value["min"], value["max"]
         unit_txt = " mesi"
@@ -105,6 +109,17 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         if field.startswith("tech.") and field.endswith(("_mwp", "_mw", "_mwh")) and g.get("subject") not in ("plant", None):
             continue  # component-level or other-project powers are not project characteristics
         vals = g["values"]
+        if field == "tech.nominal_power_mw" and any(x["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw") for x in d["groups"]):
+            continue  # nominal values are mostly per-block: DC/AC are shown instead
+        dominant = (g["status"] == "conflict" and len(vals) > 1 and vals[0]["occurrences"] >= 3
+                    and vals[0]["occurrences"] >= DOMINANCE * vals[1]["occurrences"] and field not in EXECUTION)
+        if dominant:
+            v = vals[0]
+            minor = "; ".join(f"{_fmt(field, x['value'])} ({x['occurrences']})" for x in vals[1:4])
+            sections[sec].append({"label": LABELS[field], "value": _fmt(field, v["value"]), "status": "da documenti",
+                                  "occurrences": v["occurrences"], "source": _source(v["example"], titles),
+                                  "note": f"Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): {minor}."})
+            continue
         if g["status"] == "conflict":
             item = {"label": LABELS[field], "status": "in conflitto",
                     "values": [{"value": _fmt(field, v["value"]), "occurrences": v["occurrences"],
@@ -130,18 +145,34 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
                               "note": note})
 
     # companies confirmed by registry (VIES): name and registered office
+    group_vats = {f["value"] for f in d["facts"] if f["field"] == "company.vat_group"}
+    vat_count: dict[str, int] = {}
+    for f in d["facts"]:
+        if f["field"] in ("company.vat", "company.vat_group"):
+            vat_count[f["value"]] = vat_count.get(f["value"], 0) + 1
+    public = re.compile(r"(?i)comune|regione|provincia|arpa|asl|azienda sanitaria|terna|snam|anas|ministero|agenzia|"
+                        r"banca|bank|consorzio|universit|laborator|analisi e prove")
     companies = []
-    for vat, r in registry.items():
-        if r.get("valid") and r.get("name") and not re.search(r"(?i)comune|regione|provincia|arpa|asl|azienda sanitaria|terna|snam|anas|ministero|agenzia", r["name"]):
-            companies.append({"label": "Società citata", "value": r["name"].title(), "detail": f"P. IVA {vat} — sede: {(r.get('address') or '').title()}",
-                              "status": "verificato", "source": {"document": "registro VIES", "url": "https://ec.europa.eu/taxation_customs/vies/"}})
-    sections["societa"] = sections["societa"] + companies[:8]
+    for vat, r in sorted(registry.items(), key=lambda kv: -vat_count.get(kv[0], 0)):
+        if not (r.get("valid") and r.get("name")) or (public.search(r["name"]) and vat not in group_vats):
+            continue
+        is_group = vat in group_vats
+        companies.append({"label": "Gruppo societario (gruppo IVA)" if is_group else "Società negli elaborati",
+                          "value": r["name"].title(), "status": "verificato",
+                          "detail": f"P. IVA {vat} — sede legale: {(r.get('address') or '').title()} — citata {vat_count.get(vat, 0)} volte",
+                          "note": None if is_group else "Identità verificata; il ruolo nel progetto va letto nei documenti.",
+                          "source": {"document": "registro europeo VIES", "url": "https://ec.europa.eu/taxation_customs/vies/"}})
+    sections["societa"] = sections["societa"] + companies[:6]
 
     # location: authority sheet + named/geometric facts
     loc = []
     if p.get("municipalities"):
         loc.append({"label": "Comuni", "value": ", ".join(p["municipalities"]) + (f" ({p['province']})" if p.get("province") else ""),
                     "status": "verificato", "source": {"document": "scheda ufficiale del procedimento", "url": p.get("info_url")}})
+    elif record.get("municipalities"):
+        loc.append({"label": "Comuni", "value": f"{record['municipalities']} ({record.get('province') or ''})".replace(" ()", ""),
+                    "status": "da documenti", "note": "Dato dell'elenco progetti: la fonte non ha una scheda ufficiale strutturata.",
+                    "source": {"document": "elenco progetti", "url": p.get("info_url")}})
     polys = [f for f in d["facts"] if f["field"] == "geo.area_polygon" and f["value"].get("geojson")]
     if polys:
         loc.append({"label": "Perimetri delle aree", "value": f"{len(polys)} poligoni ricostruiti dalle tabelle dei vertici",
