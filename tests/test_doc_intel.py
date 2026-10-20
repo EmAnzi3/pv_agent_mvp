@@ -659,6 +659,28 @@ class BoxAdapter(unittest.TestCase):
         self.assertEqual((top["declared"], top["enumerated"], top["index_pages"]), (3, 3, 2))
 
 
+class BoxGuards(unittest.TestCase):
+    def test_folder_url_returning_parent_stops_recursion(self):
+        import json as _j
+        from doc_intel.adapters import adapter_for_url
+        root = "https://regionelazio.app.box.com/v/VIA-2-2020"
+        listing = {"x": {"items": [{"typedID": "d_1", "name": "A"}, {"typedID": "d_2", "name": "B"},
+                                   {"typedID": "f_9", "name": "Istanza.pdf"}], "pageCount": 1}}
+        html = f"<script>Box.postStreamData = {_j.dumps(listing)};</script>"
+        calls = []
+        ad = adapter_for_url(root)
+        ad.get_html = lambda u: (calls.append(u), html)[1]   # every folder URL returns the root listing
+        disc = ad.discover(ad.identify(root))
+        self.assertLessEqual(len(calls), 3)
+        self.assertTrue(any("parent listing" in e for e in disc.errors))
+        self.assertEqual([d.title for d in disc.documents], ["Istanza.pdf"])
+
+    def test_er_external_observation_link(self):
+        from doc_intel.adapters.regional import HTML_RULES
+        self.assertTrue(HTML_RULES[0].doc_link.search(
+            "https://serviziambiente.regione.emilia-romagna.it/viavasweb/osservazioni/scaricaAllegatoEsternoFt/54050/6902"))
+
+
 class NoHardcodedBenchmarks(unittest.TestCase):
     def test_toolbox_has_no_benchmark_ids(self):
         for py in (ROOT / "doc_intel").rglob("*.py"):

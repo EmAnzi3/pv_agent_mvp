@@ -42,6 +42,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     adapter = adapter_for_url(record_url)
     if get_html:
         adapter.get_html = get_html
+    adapter.log = log
+    log(f"[identify] {record_url} via {type(adapter).__name__}")
     identity = adapter.identify(record_url)
     disc: Discovery = adapter.discover(identity)
     log(f"[discover] {len(disc.documents)} documents in {len(disc.procedures)} procedures "

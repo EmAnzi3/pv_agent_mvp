@@ -33,7 +33,7 @@ class HostRule:
 
 HTML_RULES = [
     HostRule("serviziambiente.regione.emilia-romagna.it", "emilia_romagna",
-             re.compile(r"/viavasweb/[a-zA-Z]+/scaricaAllegato/\d+/\d+"), re.compile(r"/dettaglio/(\d+)")),
+             re.compile(r"/viavasweb/[a-zA-Z]+/scaricaAllegato\w*/\d+/\d+"), re.compile(r"/dettaglio/(\d+)")),
 ]
 
 
@@ -257,16 +257,34 @@ class BoxSharedFolderAdapter(DocumentAdapter):
                 stack.extend(cur)
         return items, page_count, total
 
-    def _list_folder(self, url: str, path: str, docs: list, procs: list, root: str, vanity: str, depth: int = 0):
+    MAX_REQUESTS = 400
+    MAX_SECONDS = 600
+
+    def _list_folder(self, url: str, path: str, docs: list, procs: list, root: str, vanity: str,
+                     state: dict, depth: int = 0, parent_ids: tuple = ()):
+        import time
         seen_pages, page, total = 0, 1, None
         found = listed = 0
         last_ids = None
+        errors = []
         while True:
+            if state["requests"] >= self.MAX_REQUESTS or time.time() - state["t0"] > self.MAX_SECONDS:
+                errors.append("listing budget exhausted (requests/time): folder partially listed")
+                state["truncated"] = True
+                break
+            state["requests"] += 1
             html = self.get_html(url + (f"?page={page}" if page > 1 else ""))
             items, page_count, tot = self._items(self.parse_stream(html))
             ids = tuple(sorted(it["typedID"] for it in items))
+            self.log(f"[box] {path} page {page}/{page_count or '?'}: {len(items)} items "
+                     f"(requests {state['requests']}, {time.time() - state['t0']:.0f}s)")
             if ids and ids == last_ids:
                 break  # the server ignores ?page=N: stop instead of looping
+            if ids and ids == parent_ids:
+                errors.append("sub-folder URL returned the parent listing: folder URL format not supported")
+                state["bad_folder_url"] = True
+                break
+            first_page_ids = ids if page == 1 else None
             last_ids = ids
             total = total or tot
             seen_pages += 1
@@ -279,22 +297,27 @@ class BoxSharedFolderAdapter(DocumentAdapter):
                         procedure_id=path, title=it["name"], source="lazio",
                         extra={"size": it.get("itemSize") or it.get("size"), "box_id": tid}))
                     found += 1
-                elif tid.startswith("d_") and depth < 4:
-                    self._list_folder(f"{root}/v/{vanity}/folder/{tid[2:]}", f"{path}/{it['name']}",
-                                      docs, procs, root, vanity, depth + 1)
+                elif tid.startswith("d_") and depth < 4 and tid not in state["visited"] and not state.get("bad_folder_url"):
+                    state["visited"].add(tid)
+                    self._list_folder(f"{root}/v/{vanity}/folder/{tid[2:]}", f"{path.rstrip('/')}/{it['name']}",
+                                      docs, procs, root, vanity, state, depth + 1, first_page_ids or ids)
             if not page_count or page >= page_count or not items or page >= 200:
                 break
             page += 1
         procs.append({"id": path, "url": url, "label": path, "declared": total, "declared_available": total is not None,
-                      "enumerated": listed, "files": found, "index_pages": seen_pages, "errors": []})
+                      "enumerated": listed, "files": found, "index_pages": seen_pages, "errors": errors})
 
     def discover(self, identity: ProjectIdentity) -> Discovery:
+        import time
         docs: list[DocumentRef] = []
         procs: list[dict] = []
         root, vanity = identity.raw["root"], identity.raw["vanity"]
+        state = {"requests": 0, "t0": time.time(), "visited": set()}
         try:
-            self._list_folder(identity.info_url, "/", docs, procs, root, vanity)
+            self._list_folder(identity.info_url, "/", docs, procs, root, vanity, state)
         except Exception as exc:
-            return Discovery(identity, [], [], [f"Box listing failed: {exc}"[:200]])
-        errors = [] if docs else ["no files found in the embedded listing (page format may have changed)"]
+            return Discovery(identity, docs, procs, [f"Box listing failed: {exc}"[:200]])
+        errors = [e for p in procs for e in p["errors"]]
+        if not docs:
+            errors.append("no files found in the embedded listing (page format may have changed)")
         return Discovery(identity, docs, procs, errors)

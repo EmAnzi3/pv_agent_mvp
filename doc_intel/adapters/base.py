@@ -47,6 +47,7 @@ class DocumentAdapter:
 
     def __init__(self, get_html: Callable[[str], str] | None = None):
         self.get_html = get_html or self._requests_get
+        self.log: Callable[[str], None] = lambda m: None
 
     @staticmethod
     def handles(url: str) -> bool:
@@ -55,7 +56,7 @@ class DocumentAdapter:
     def _requests_get(self, url: str) -> str:
         import requests
         from ..fetch import DEFAULT_UA
-        r = requests.get(url, timeout=60, headers={"User-Agent": DEFAULT_UA})
+        r = requests.get(url, timeout=(20, 60), headers={"User-Agent": DEFAULT_UA})
         r.raise_for_status()
         return r.text
 

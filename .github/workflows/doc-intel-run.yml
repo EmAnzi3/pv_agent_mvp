@@ -25,6 +25,8 @@ on:
       - '.github/workflows/doc-intel-run.yml'
 permissions:
   contents: read
+env:
+  PYTHONUNBUFFERED: '1'
 jobs:
   benchmarks:
     if: github.event_name == 'pull_request'
