@@ -632,7 +632,9 @@ def _gantt(d: dict, titles: dict) -> dict:
             fits = dur_m is None or abs(span - dur_m) <= 0.4 * dur_m
             general = all((f.get("qualifiers") or {}).get("scope", "general") == "general" for f in fs_)
             # completeness first (a 6-row read of a coded chart loses to a 13-phase programme), then reliability
-            return (general, min(len(fs_), 10), reliability, bool(SCHED_TITLE.search(titles.get(u) or "")), fits, len(fs_))
+            # the plant's programme (modules, trackers) wins over the substation's or the grid connection's
+            plant = any(re.search(r"(?i)modul|tracker|inseguitor|pannell|fotovolt|\bFV\b|\bpali\b", f["value"]["name"]) for f in fs_)
+            return (general, plant, min(len(fs_), 10), reliability, bool(SCHED_TITLE.search(titles.get(u) or "")), fits, len(fs_))
         decom = re.compile(r"(?i)smont|dismiss|rimozion|demoliz|smaltim|ripristin")
         works = re.compile(r"(?i)cantier|scav|posa|montagg|install|recinz|cavidot|cabin|modul|tracker|struttur|collaud|"
                            r"viabil|opere|pali|infiss|conness|inverter|commission|progett|autorizz|realizz|lavor|fornitur")
@@ -689,9 +691,9 @@ def _gantt(d: dict, titles: dict) -> dict:
         if by_doc:
             u, fs = max(by_doc.items(), key=lambda kv: (bool(SCHED_TITLE.search(titles.get(kv[0]) or "")), len(kv[1])))
             seen = set()
-            for f in sorted(fs, key=lambda f: f["value"]["order"]):
+            for f in sorted(fs, key=lambda f: (f["citation"]["page"], f["value"]["order"])):
                 v = f["value"]
-                if v["name"].lower() in seen:
+                if v["name"].lower() in seen or re.match(r"(?i)durata\b", v["name"]):     # totals are shown apart
                     continue
                 seen.add(v["name"].lower())
                 phase_durations.append({"name": v["name"], "duration": v["raw"].replace(" g", " giorni"), "months": v["months"]})
