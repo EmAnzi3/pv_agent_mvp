@@ -81,6 +81,8 @@ class MaseAdapter(DocumentAdapter):
             self.log(f"project page {url} returned no project data (attempt {attempt + 1}/3)")
             time.sleep(20 * (attempt + 1))
         if not ident.procedures and not ident.proponent:
+            snippet = re.sub(r"\s+", " ", BeautifulSoup(html, "html.parser").get_text(" ", strip=True))[:600]
+            print(f"::warning title=mase-page::{url} returned a page without project data: {snippet}")
             raise LookupError(f"MASE project page not available (generic page returned): {url}")
         if not ident.procedures:
             soup = BeautifulSoup(html, "html.parser")
