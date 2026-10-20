@@ -1,447 +1,388 @@
 {
- "schema": "pv-scheda/1.0",
+ "schema": "pv-scheda/2.0",
  "dossier_schema": "pv-dossier/1.0",
  "project_key": "prj:0871440a3d2aba12",
  "title": "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Melara\" con potenza nominale di 266617,76 KwP ed opere di connessione nei comuni di Melara (RO) e Ostiglia (MN). Comuni di localizzazione: Melara (RO) e Ostiglia (MN)",
  "source_url": "https://sharing.regione.veneto.it/index.php/s/iMFk8Zs5t86GYP7",
  "source": "veneto",
  "updated": "2026-10-20",
- "sections": [
+ "sintesi": [
   {
-   "id": "societa",
-   "title": "Società e ruoli",
-   "items": [
-    {
-     "label": "Progettista",
-     "value": "Ing. Renato Melloni",
-     "status": "da documenti",
-     "occurrences": 1,
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/PV%20ME_PTO%20R01_REL_00_signed.pdf",
-      "page": 1,
-      "document": "PV ME_PTO R01_REL_00_signed.pdf",
-      "excerpt": "PROGETTAZIONE:"
-     },
-     "note": null
-    },
-    {
-     "label": "Proponente",
-     "value": "PV Italy 1 S.r.l.",
-     "status": "da documenti",
-     "occurrences": 52,
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-      "page": 1,
-      "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-      "excerpt": "Committente:"
-     },
-     "note": null
-    },
-    {
-     "label": "Società negli elaborati",
-     "value": "Pv Italy 1 Srl",
-     "status": "verificato",
-     "detail": "P. IVA 11515530969 — sede legale: Via Filzi Fabio 7 20124 Milano Mi — citata 2 volte",
-     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
-     "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
-     }
-    }
-   ]
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da verificare",
+   "value": "266,618 MWp",
+   "sub": "Probabile refuso nel titolo: gli elaborati riportano 26,618 MWp (863 volte).",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://sharing.regione.veneto.it/index.php/s/iMFk8Zs5t86GYP7",
+    "excerpt": "266617,76 KwP"
+   }
   },
   {
-   "id": "tecnica",
-   "title": "Caratteristiche tecniche",
-   "items": [
-    {
-     "label": "Potenza (dal titolo del procedimento)",
-     "status": "da confermare",
-     "note": "Possibile refuso nel titolo: gli elaborati riportano 26,618 MWp (863 volte).",
-     "value": "266,618 MWp",
-     "source": {
-      "document": "titolo del procedimento",
-      "url": "https://sharing.regione.veneto.it/index.php/s/iMFk8Zs5t86GYP7",
-      "excerpt": "266617,76 KwP"
-     }
-    },
-    {
-     "label": "Superficie a disposizione",
-     "value": "49,35 ha",
-     "status": "da documenti",
-     "occurrences": 8,
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-      "page": 12,
-      "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-      "excerpt": "49.35 La superficie totale delle particelle facenti parte del progetto è pari a circa 49,35 ettari. Rimandando per una visione di dettaglio allo specifico elaborato progettuale, nella seguente figura si riporta una"
-     },
-     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): 1,126 ha (2); 1,42 ha (1); 43,97 ha (1)."
-    },
-    {
-     "label": "Strutture",
-     "value": "tracker monoassiali",
-     "status": "da documenti",
-     "occurrences": 23,
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-      "page": 71,
-      "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-      "excerpt": "L’impostazione progettuale impiega strutture a inseguimento monoassiale disposte con interasse di"
-     },
-     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): strutture fisse (3)."
-    },
-    {
-     "label": "Tipologia",
-     "value": "agrivoltaico",
-     "status": "da documenti",
-     "occurrences": 896,
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/0_ISTANZA/Istanza%2062-26.pdf",
-      "page": 1,
-      "document": "Istanza 62-26.pdf",
-      "excerpt": "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Melara\" con potenza nominale di 26617,76 kWp"
-     },
-     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): agrivoltaico avanzato (7)."
-    }
-   ]
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico · tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://sharing.regione.veneto.it/public.php/webdav/0_ISTANZA/Istanza%2062-26.pdf",
+    "page": 1,
+    "document": "Istanza 62-26.pdf",
+    "excerpt": "Progetto per la realizzazione di un impianto agrivoltaico denominato \"Melara\" con potenza nominale di 26617,76 kWp"
+   }
   },
   {
-   "id": "ubicazione",
-   "title": "Ubicazione",
-   "items": [
-    {
-     "label": "Comuni",
-     "value": "Melara (RO), Ostiglia (MN)",
-     "status": "da documenti",
-     "note": "Dato dell'elenco progetti: la fonte non ha una scheda ufficiale strutturata.",
-     "source": {
-      "document": "elenco progetti",
-      "url": "https://sharing.regione.veneto.it/index.php/s/iMFk8Zs5t86GYP7"
-     }
-    }
-   ]
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "49,35 ha",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 1,126 ha (2), 1,42 ha (1), 43,97 ha (1)",
+   "source": {
+    "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
+    "page": 12,
+    "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
+    "excerpt": "49.35 La superficie totale delle particelle facenti parte del progetto è pari a circa 49,35 ettari. Rimandando per una visione di dettaglio allo specifico elaborato progettuale, nella seguente figura si riporta una"
+   }
   },
   {
-   "id": "contatti",
-   "title": "Contatti trovati negli elaborati",
-   "items": [
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "8 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 69 settimane (1), 18 mesi (1)",
+   "source": {
+    "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT01.00%20-%20Relazione%20Tecnica_signed.pdf",
+    "page": 53,
+    "document": "ML_FV_RT01.00 - Relazione Tecnica_signed.pdf",
+    "excerpt": "5.2. Dati caratteristici del cantiere Durata del cantiere 8 mesi circa Ampiezza area di intervento 43,97 ha"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Veneto",
+  "provincia": "MN",
+  "comuni": [
+   "Melara",
+   "Ostiglia"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Melara%2C+MN%2C+Veneto",
+  "maps_precision": "comune"
+ },
+ "soggetti": [
+  {
+   "name": "PV Italy 1 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "11515530969",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Filzi Fabio 7 20124 Milano Mi",
+   "contacts": [
     {
-     "label": "PEC — PV Italy 1 S.r.l.",
+     "type": "PEC",
      "value": "pv_italy1@pec.it",
-     "status": "da confermare",
-     "detail": "compare 9 volte",
+     "occurrences": 10,
      "source": {
       "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/Modulo%20proc_VINCA_livello%20I.pdf.p7m",
       "page": 2,
       "document": "Modulo proc_VINCA_livello I.pdf.p7m",
       "excerpt": "procedimento, salvo eventuali variazioni che dovranno essere tempestivamente comunicate: pv_italy1@pec.it"
      }
-    },
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://sharing.regione.veneto.it/index.php/s/iMFk8Zs5t86GYP7"
+   }
+  },
+  {
+   "name": "Ing. Renato Melloni",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
     {
-     "label": "E-mail",
+     "type": "E-mail",
      "value": "renato.melloni@m-advising.com",
-     "status": "da confermare",
-     "detail": "compare 7 volte",
+     "occurrences": 7,
      "source": {
       "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/PV%20ME_PTO%20R01_REL_00_signed.pdf",
       "page": 1,
       "document": "PV ME_PTO R01_REL_00_signed.pdf",
       "excerpt": "Mobile +39 349 6010 499 E-mail renato.melloni@m-advising.com"
      }
-    },
+    }
+   ],
+   "source": {
+    "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/PV%20ME_PTO%20R01_REL_00_signed.pdf",
+    "page": 1,
+    "document": "PV ME_PTO R01_REL_00_signed.pdf",
+    "excerpt": "PROGETTAZIONE:"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Geoproject S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
     {
-     "label": "Telefono",
-     "value": "042589077",
-     "status": "da confermare",
-     "detail": "compare 4 volte",
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/CDU%2007-2026.pdf",
-      "page": 1,
-      "document": "CDU 07-2026.pdf",
-      "excerpt": "Tel. 0425 89077 - Fax 0425 89078"
-     }
-    },
-    {
-     "label": "Telefono",
-     "value": "0412792292",
-     "status": "da confermare",
-     "detail": "compare 4 volte",
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/ISTRUTTORIA/62-26_avvio%20procedimento_544751-2026.pdf",
-      "page": 1,
-      "document": "62-26_avvio procedimento_544751-2026.pdf",
-      "excerpt": "Calle Priuli – Cannaregio 99 – 30121 Venezia – tel. 041279 2292-4479"
-     }
-    },
-    {
-     "label": "Telefono — GEOPROJECT S.r.l.",
+     "type": "Telefono",
      "value": "0815762995",
-     "status": "da confermare",
-     "detail": "compare 2 volte",
+     "occurrences": 2,
      "source": {
       "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT09.00%20-%20Relazione%20Geologica%20_signed.pdf",
       "page": 94,
       "document": "ML_FV_RT09.00 - Relazione Geologica _signed.pdf",
-      "excerpt": "tel.: 0815762995 - fax 0815760836"
+      "excerpt": "GEOPROJECT S.r.l. tel.: 0815762995 - fax 0815760836"
      }
-    },
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acquevenete S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
     {
-     "label": "PEC",
-     "value": "territoridelmincio@pec.it",
-     "status": "da confermare",
-     "detail": "compare 2 volte",
+     "type": "PEC",
+     "value": "protocollo@pec.acquevenete.it",
+     "occurrences": 1,
      "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/2_OSSERV_PARERI/CONSORZIO%20DI%20BONIFICA%20TERRITORI%20DEL%20MINCIO/05444%20R.V.%20%20-%20PV%20Italy%20-%20parere%20no%20interferenze.pdf",
-      "page": 1,
-      "document": "05444 R.V.  - PV Italy - parere no interferenze.pdf",
-      "excerpt": "AD EMAIL: info@territoridelmincio.it PEC: territoridelmincio@pec.it"
+      "url": "https://sharing.regione.veneto.it/public.php/webdav/ISTRUTTORIA/62-26_avvio%20procedimento_544751-2026.pdf",
+      "page": 3,
+      "document": "62-26_avvio procedimento_544751-2026.pdf",
+      "excerpt": "Acquevenete S.p.A. protocollo@pec.acquevenete.it"
      }
     },
     {
-     "label": "PEC",
-     "value": "s.pesavento@conafpec.it",
-     "status": "da confermare",
-     "detail": "compare 1 volte",
+     "type": "PEC",
+     "value": "avisp@pecveneto.it",
+     "occurrences": 1,
      "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA07.00_Relazione%20agonomica_signed.pdf",
-      "page": 136,
-      "document": "ML_FV_RA07.00_Relazione agonomica_signed.pdf",
-      "excerpt": "PEC s.pesavento@conafpec.it"
+      "url": "https://sharing.regione.veneto.it/public.php/webdav/ISTRUTTORIA/62-26_avvio%20procedimento_544751-2026.pdf",
+      "page": 3,
+      "document": "62-26_avvio procedimento_544751-2026.pdf",
+      "excerpt": "Avisp avisp@pecveneto.it"
      }
-    },
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Energia Pulita Rinnovabile S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
     {
-     "label": "E-mail",
-     "value": "geostudiocalzolari@gmail.com",
-     "status": "da confermare",
-     "detail": "compare 1 volte",
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT09.00%20-%20Relazione%20Geologica%20_signed.pdf",
-      "page": 93,
-      "document": "ML_FV_RT09.00 - Relazione Geologica _signed.pdf",
-      "excerpt": "Via Carpi, 21 - 42018 San Martino in Rio (RE) tel. 333.42.73.452 - gmail. geostudiocalzolari@gmail.com"
-     }
-    },
-    {
-     "label": "Telefono",
-     "value": "+393496010499",
-     "status": "da confermare",
-     "detail": "compare 1 volte",
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/PV%20ME_PTO%20R01_REL_00_signed.pdf",
-      "page": 1,
-      "document": "PV ME_PTO R01_REL_00_signed.pdf",
-      "excerpt": "Mobile +39 349 6010 499"
-     }
-    },
-    {
-     "label": "PEC — ENERGIA PULITA RINNOVABILE S.r.l.",
+     "type": "PEC",
      "value": "energiapulitarinnovabile@pecimprese.it",
-     "status": "da confermare",
-     "detail": "compare 1 volte",
+     "occurrences": 1,
      "source": {
       "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/STMG%20MELARA%20-%2024%2C999MW.pdf",
       "page": 1,
       "document": "STMG MELARA - 24,999MW.pdf",
       "excerpt": "41121 MODENA (MO) energiapulitarinnovabile@pecimprese.it"
      }
-    },
-    {
-     "label": "Telefono",
-     "value": "0386300275",
-     "status": "da confermare",
-     "detail": "compare 1 volte",
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/2_OSSERV_PARERI/COMUNE%20DI%20OSTIGLIA%20%28MN%29/Prot_Par%200020326%20del%2005-10-2026%20-%20Documento%20Parere%20Comune%20di%20Ostiglia%20PV%20Italy%201%20S.r.l._signed.pdf",
-      "page": 3,
-      "document": "Prot_Par 0020326 del 05-10-2026 - Documento Parere Comune di Ostiglia PV Italy 1 S.r.l._signed.pdf",
-      "excerpt": "(Tel. 0386/300275)."
-     }
-    },
-    {
-     "label": "E-mail",
-     "value": "info@territoridelmincio.it",
-     "status": "da confermare",
-     "detail": "compare 1 volte",
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/2_OSSERV_PARERI/CONSORZIO%20DI%20BONIFICA%20TERRITORI%20DEL%20MINCIO/05444%20R.V.%20%20-%20PV%20Italy%20-%20parere%20no%20interferenze.pdf",
-      "page": 1,
-      "document": "05444 R.V.  - PV Italy - parere no interferenze.pdf",
-      "excerpt": "AD EMAIL: info@territoridelmincio.it PEC: territoridelmincio@pec.it"
-     }
-    },
-    {
-     "label": "PEC — Open Fiber S.p.A.",
-     "value": "openfiber@pec.openfiber.it",
-     "status": "da confermare",
-     "detail": "compare 1 volte",
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/ISTRUTTORIA/62-26_avvio%20procedimento_544751-2026.pdf",
-      "page": 2,
-      "document": "62-26_avvio procedimento_544751-2026.pdf",
-      "excerpt": "openfiber@pec.openfiber.it"
-     }
-    },
-    {
-     "label": "PEC",
-     "value": "fibercopspa@pec.fibercop.it",
-     "status": "da confermare",
-     "detail": "compare 1 volte",
-     "source": {
-      "url": "https://sharing.regione.veneto.it/public.php/webdav/ISTRUTTORIA/62-26_avvio%20procedimento_544751-2026.pdf",
-      "page": 2,
-      "document": "62-26_avvio procedimento_544751-2026.pdf",
-      "excerpt": "FiberCop fibercopspa@pec.fibercop.it"
-     }
     }
    ],
-   "note": "Recapiti stampati negli elaborati (intestazioni, firme, timbri), esclusi quelli di enti pubblici. «Da confermare» = il soggetto accanto al recapito non è certo: verificare prima di contattare."
-  },
-  {
-   "id": "tempi",
-   "title": "Tempi e cantiere",
-   "items": [
-    {
-     "label": "Durata cantiere",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "8 mesi",
-       "occurrences": 3,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT01.00%20-%20Relazione%20Tecnica_signed.pdf",
-        "page": 53,
-        "document": "ML_FV_RT01.00 - Relazione Tecnica_signed.pdf",
-        "excerpt": "5.2. Dati caratteristici del cantiere Durata del cantiere 8 mesi circa Ampiezza area di intervento 43,97 ha"
-       }
-      },
-      {
-       "value": "69 settimane",
-       "occurrences": 1,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT08.00_Valutazione_Previsionale_Impatto_Acustico-firmata.pdf",
-        "page": 48,
-        "document": "ML_FV_RT08.00_Valutazione_Previsionale_Impatto_Acustico-firmata.pdf",
-        "excerpt": "cantierizzazione necessaria per la realizzazione dell’opera oggetto di approfondimento. La durata complessiva dei lavori è prevista in 69 settimane, come illustrato nel cronoprogramma riportato in Figura 3.11-1."
-       }
-      },
-      {
-       "value": "18 mesi",
-       "occurrences": 1,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/STMG%20MELARA%20-%2024%2C999MW.pdf",
-        "page": 28,
-        "document": "STMG MELARA - 24,999MW.pdf",
-        "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
-    },
-    {
-     "label": "Durata dismissione",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "23 settimane",
-       "occurrences": 1,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-        "page": 81,
-        "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-        "excerpt": "assoggettate all’obbligo di rimozione connesso alla dismissione dell’impianto di produzione. Il cronoprogramma di dismissione prevede una durata complessiva di 23 settimane, come mostrato nella figura seguente:"
-       }
-      },
-      {
-       "value": "10 anni",
-       "occurrences": 1,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT10.00%20-%20Relazione%20Idraulica_signed.pdf",
-        "page": 52,
-        "document": "ML_FV_RT10.00 - Relazione Idraulica_signed.pdf",
-        "excerpt": "Verifica dell'integrità delle sponde (Frequenza: Dopo eventi meteorici eccezionali con Tr > 10 anni): Ispezione visiva per identificare localizzati fenomeni di erosione, scivolamento o sifonamento delle pareti a 33°. In "
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
-    },
-    {
-     "label": "Vita utile",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "30-35 anni",
-       "occurrences": 2,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-        "page": 79,
-        "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-        "excerpt": "5.3.7 Fase di esercizio La vita utile attesa della centrale è di 30-35 anni. L’esercizio sarà automatizzato e monitorato da remoto; gli interventi in sito saranno limitati alle attività agricole, alle ispezioni, alla man"
-       }
-      },
-      {
-       "value": "30 anni",
-       "occurrences": 1,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA08.00_Relazione%20sulle%20mitigazioni%20verdi%20perimetrali_signed.pdf",
-        "page": 38,
-        "document": "ML_FV_RA08.00_Relazione sulle mitigazioni verdi perimetrali_signed.pdf",
-        "excerpt": "ospitarla. Poiché le opere di mitigazione non sono necessariamente rimosse alla cessazione dell’impianto, la valutazione è condotta su tre orizzonti: la vita utile dell’impianto (30 anni), un orizzonte esteso di 50 anni "
-       }
-      },
-      {
-       "value": "50 anni",
-       "occurrences": 1,
-       "source": {
-        "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA08.00_Relazione%20sulle%20mitigazioni%20verdi%20perimetrali_signed.pdf",
-        "page": 38,
-        "document": "ML_FV_RA08.00_Relazione sulle mitigazioni verdi perimetrali_signed.pdf",
-        "excerpt": "ospitarla. Poiché le opere di mitigazione non sono necessariamente rimosse alla cessazione dell’impianto, la valutazione è condotta su tre orizzonti: la vita utile dell’impianto (30 anni), un orizzonte esteso di 50 anni "
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
-    }
-   ]
+   "source": null
   }
  ],
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Cantiere (durata complessiva)",
-    "start": 0,
-    "end": 8,
-    "positioned": false,
-    "label": "8 mesi",
-    "source": {
-     "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT01.00%20-%20Relazione%20Tecnica_signed.pdf",
-     "page": 53,
-     "document": "ML_FV_RT01.00 - Relazione Tecnica_signed.pdf",
-     "excerpt": "5.2. Dati caratteristici del cantiere Durata del cantiere 8 mesi circa Ampiezza area di intervento 43,97 ha"
-    }
+    "name": "start",
+    "start": 0.02,
+    "end": 0.25
    },
    {
-    "name": "Opere elettriche",
-    "start": 0,
-    "end": 1.15,
-    "positioned": false,
-    "label": "35 giorni",
-    "source": {
-     "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-     "page": 94,
-     "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
-     "excerpt": "Il valore limite previsto dal D.Lgs. 155/2010 è pari a 40 μg/m³ come media annuale, mentre il valore medio giornaliero di 50 μg/m³ non può essere superato per più di 35 giorni all'anno. Nel corso del 2024, in Veneto il v"
-    }
+    "name": "contrattualizzazione appalti",
+    "start": 0.02,
+    "end": 3.02
+   },
+   {
+    "name": "mobilizzazione personale e mezzi",
+    "start": 5.77,
+    "end": 8.98
+   },
+   {
+    "name": "trasformatori e quadri",
+    "start": 1.41,
+    "end": 11.98
+   },
+   {
+    "name": "moduli FTV",
+    "start": 1.41,
+    "end": 8.28
+   },
+   {
+    "name": "srtutture (trackers)",
+    "start": 1.87,
+    "end": 10.13
+   },
+   {
+    "name": "inverters",
+    "start": 1.41,
+    "end": 11.98
+   },
+   {
+    "name": "cavi",
+    "start": 1.87,
+    "end": 10.13
+   },
+   {
+    "name": "Med Risk",
+    "start": 1.87,
+    "end": 10.13
+   },
+   {
+    "name": "appalti opere civili",
+    "start": 1.87,
+    "end": 3.48
+   },
+   {
+    "name": "basic design",
+    "start": 0.48,
+    "end": 1.87
+   },
+   {
+    "name": "progettazione elettrica",
+    "start": 0.95,
+    "end": 2.1
+   },
+   {
+    "name": "progettazione opere civili",
+    "start": 0.95,
+    "end": 2.1
+   },
+   {
+    "name": "strutture di sostegno",
+    "start": 9.9,
+    "end": 11.05
+   },
+   {
+    "name": "montaggio moduli",
+    "start": 11.03,
+    "end": 12.44
+   },
+   {
+    "name": "installazione inverters",
+    "start": 12.42,
+    "end": 13.13
+   },
+   {
+    "name": "installazione trasformatori",
+    "start": 12.65,
+    "end": 13.13
+   },
+   {
+    "name": "posa cavi",
+    "start": 11.49,
+    "end": 12.65
+   },
+   {
+    "name": "cablaggi in campo",
+    "start": 12.65,
+    "end": 13.62
+   },
+   {
+    "name": "posa e cablaggi cabine",
+    "start": 10.13,
+    "end": 11.28
+   },
+   {
+    "name": "impianto videosorveglianza",
+    "start": 10.8,
+    "end": 11.52
+   },
+   {
+    "name": "SCADA e sistema monitoraggio",
+    "start": 13.59,
+    "end": 14.33
+   },
+   {
+    "name": "cold commissioning",
+    "start": 14.31,
+    "end": 14.82
+   },
+   {
+    "name": "connessione alla rete",
+    "start": 14.79,
+    "end": 15.28
+   },
+   {
+    "name": "hot commissioning",
+    "start": 15.05,
+    "end": 15.53
+   },
+   {
+    "name": "Performance test",
+    "start": 15.51,
+    "end": 15.99
+   },
+   {
+    "name": "PAC",
+    "start": 15.76,
+    "end": 15.99
+   },
+   {
+    "name": "Operedi connessione alla RTN",
+    "start": 0.02,
+    "end": 11.28
    }
   ],
-  "months": 8,
+  "unit": "month",
+  "months": 15.99,
+  "source": {
+   "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
+   "page": 78,
+   "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
+   "excerpt": ""
+  },
+  "duration": {
+   "text": "8 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 69 settimane (1), 18 mesi (1)",
+   "source": {
+    "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT01.00%20-%20Relazione%20Tecnica_signed.pdf",
+    "page": 53,
+    "document": "ML_FV_RT01.00 - Relazione Tecnica_signed.pdf",
+    "excerpt": "5.2. Dati caratteristici del cantiere Durata del cantiere 8 mesi circa Ampiezza area di intervento 43,97 ha"
+   }
+  },
   "milestones": [],
-  "note": "Gli elaborati indicano solo le durate: le barre partono tutte dall'avvio del cantiere, la sequenza reale non è indicata."
+  "document": {
+   "document": "ML_FV_RT02.00 - Cronoprogramma degli interventi_signed.pdf",
+   "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT02.00%20-%20Cronoprogramma%20degli%20interventi_signed.pdf"
+  },
+  "note": null
  },
  "documentazione": {
-  "documenti": 72,
-  "pagine": 1058,
-  "procedimenti": 5,
+  "documenti": 74,
+  "pagine": 1060,
   "completa": true
  },
  "confronto": [
@@ -473,17 +414,17 @@
  ],
  "da_verificare": [
   {
+   "label": "Potenza",
+   "reason": "Probabile refuso nel titolo: gli elaborati riportano 26,618 MWp (863 volte)."
+  },
+  {
    "label": "Durata cantiere",
-   "reason": "valori diversi nei documenti"
+   "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Durata dismissione",
-   "reason": "valori diversi nei documenti"
-  },
-  {
-   "label": "Vita utile",
-   "reason": "valori diversi nei documenti"
+   "label": "Recapiti",
+   "reason": "16 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
- "avvertenza": "Informazioni estratte automaticamente dalla documentazione pubblica del procedimento. Ogni valore riporta documento e pagina; i dati 'da confermare' e 'in conflitto' richiedono verifica."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
 }
