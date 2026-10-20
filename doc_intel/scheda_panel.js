@@ -91,6 +91,10 @@
         <text x="${labelW}" y="10" class="g-tick">${esc(unit)} dall'avvio</text>${ticks}${rows}</svg></div>
         <div class="sc-fine">Fasi lette dal cronoprogramma${g.metodo ? ` (${esc(g.metodo)})` : ''}${bars[0].dates ? ` (avvio previsto ${esc(bars.map(b => b.dates[0]).sort()[0].split('-').reverse().join('/'))})` : ''} ${src(g.source, 'apri')}</div>`;
     }
+    const pd = !bars.length && (g.durate_fasi || []).length
+      ? `<table class="g-dt"><thead><tr><th>Fase</th><th>Durata</th></tr></thead><tbody>${g.durate_fasi.map(p =>
+          `<tr><td>${esc(p.name)}</td><td>${esc(p.duration)}</td></tr>`).join('')}</tbody></table>
+         <div class="sc-fine">Fasi e durate dal cronoprogramma ${src(g.source, 'apri')}</div>` : '';
     const d = g.duration;
     const dur = d ? `<div class="g-dur"><span>Durata cantiere</span> <strong>${esc(d.text)}</strong> ${flag(d.status)} ${src(d.source)}
       ${d.hint ? `<div class="sc-fine">${esc(d.hint)}</div>` : ''}</div>` : '';
@@ -98,8 +102,8 @@
       `<li><span class="g-date">${esc(m.date)}</span> ${esc(m.label)} <span class="sc-fine">${esc(m.nature)}</span> ${src(m.source)}</li>`).join('');
     const doc = !bars.length && g.document ? `<div class="sc-fine">Cronoprogramma: ${src(g.document, g.document.document)}</div>` : '';
     const alt = (g.altri || []).length ? `<div class="sc-fine">Altri cronoprogrammi negli elaborati: ${g.altri.map(o => src(o, o.document)).join(' · ')}</div>` : '';
-    if (!chart && !dur && !ms && !doc) return '';
-    return `<section class="sc-sec"><h3>Cronoprogramma</h3>${chart}${dur}
+    if (!chart && !pd && !dur && !ms && !doc) return '';
+    return `<section class="sc-sec"><h3>Cronoprogramma</h3>${chart}${pd}${dur}
       ${!bars.length && g.note ? `<p class="sc-note">${esc(g.note)}</p>` : ''}${doc}
       ${ms ? `<ul class="g-ms">${ms}</ul>` : ''}${alt}</section>`;
   }

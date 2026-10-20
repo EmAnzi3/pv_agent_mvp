@@ -205,7 +205,35 @@ def from_fitz_page(page: Any) -> dict | None:
     rows = table_rows(words)
     if rows:
         g = dict(g or {}, table_rows=rows)
+    drows = duration_rows(words)
+    if drows:
+        g = dict(g or {}, duration_rows=drows)
     return g or None
+
+
+DUR_CELL = re.compile(r"(?i)^(?:\d+\s+)?(?P<name>.*?[A-Za-zÀ-ÿ]{3}.*?)\s+(?P<n>\d{1,4}(?:[.,]\d+)?)\s*(?P<u>g|gg|giorni|days?|d|sett|settimane|w|wks?|mesi|ms|mo)\.?\s*$")
+
+
+def duration_rows(words: list[tuple]) -> list[dict]:
+    """MS Project-like tables with durations but no dates: [{name, value, unit}] in table order."""
+    out: list[list[tuple]] = []
+    for w in sorted(words, key=lambda w: ((w[1] + w[3]) / 2, w[0])):
+        yc = (w[1] + w[3]) / 2
+        if out and abs((out[-1][0][1] + out[-1][0][3]) / 2 - yc) <= 2.0:
+            out[-1].append(w)
+        else:
+            out.append([w])
+    rows = []
+    for r in out:
+        text = " ".join(w[4] for w in sorted(r, key=lambda w: w[0]))
+        if DATE_ANY.search(text):
+            continue
+        m = DUR_CELL.match(text.strip())
+        if m:
+            name = _clean_label(m.group("name"))
+            if len(name) >= 3:
+                rows.append({"name": name[:80], "value": float(m.group("n").replace(",", ".")), "unit": m.group("u").lower()})
+    return rows[:60] if len(rows) >= 4 else []
 
 
 def table_rows(words: list[tuple]) -> list[str]:

@@ -138,6 +138,14 @@ def extract_gantt(ctx: PageContext) -> list[Fact]:
                             qualifiers={"method": g.get("method", "vector_gantt"), "rows": len(g["rows"]), "scope": scope},
                             limits="Bar positions read from the drawing; periods follow the chart's own axis",
                             extractor="schedule.gantt"))
+    for i, r in enumerate(g.get("duration_rows") or []):
+        u = r["unit"]
+        months = r["value"] / (30.4 if u.startswith(("g", "d")) else 4.33 if u.startswith(("s", "w")) else 1)
+        out.append(Fact(field="schedule.phase_duration", subject=r["name"],
+                        value={"name": r["name"], "months": round(months, 2), "raw": f"{r['value']:g} {u}", "order": i},
+                        citation=ctx.cite(r["name"]), temporal="planned",
+                        qualifiers={"method": "duration_table", "rows": len(g["duration_rows"]), "scope": scope},
+                        limits="Duration of a phase; start and sequence not stated", extractor="schedule.gantt"))
     if not (g.get("table_rows") or re.search(r"(?i)cron?o?\s*programma|gantt|programma\s+(?:dei\s+)?lavori", ctx.text[:4000])):
         return out
     rows = []

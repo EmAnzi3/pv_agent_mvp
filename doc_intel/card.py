@@ -625,12 +625,14 @@ def _gantt(d: dict, titles: dict) -> dict:
 
         def rank(kv):
             (u, _), fs_ = kv
-            dated = any(f["qualifiers"].get("method") == "dated_table" for f in fs_)
+            methods = {f["qualifiers"].get("method") for f in fs_}
+            reliability = 2 if "dated_table" in methods else 1 if "vector_gantt" in methods else 0
             span = max(f["value"]["end_month"] for f in fs_) - min(f["value"]["start_month"] for f in fs_)
             # a chart covering the stated construction time is the general programme, not a partial one (residual works)
             fits = dur_m is None or abs(span - dur_m) <= 0.4 * dur_m
             general = all((f.get("qualifiers") or {}).get("scope", "general") == "general" for f in fs_)
-            return (general, bool(SCHED_TITLE.search(titles.get(u) or "")), dated, fits, len(fs_))
+            # completeness first (a 6-row read of a coded chart loses to a 13-phase programme), then reliability
+            return (general, min(len(fs_), 10), reliability, bool(SCHED_TITLE.search(titles.get(u) or "")), fits, len(fs_))
         decom = re.compile(r"(?i)smont|dismiss|rimozion|demoliz|smaltim|ripristin")
         works = re.compile(r"(?i)cantier|scav|posa|montagg|install|recinz|cavidot|cabin|modul|tracker|struttur|collaud|"
                            r"viabil|opere|pali|infiss|conness|inverter|commission|progett|autorizz|realizz|lavor|fornitur")
@@ -678,6 +680,22 @@ def _gantt(d: dict, titles: dict) -> dict:
                 bars.append({"name": name, "start": a, "end": b})
             bars.sort(key=lambda b: (b["start"], b["end"]))
             src = _example_source(next(iter(phases.values()))["f"], titles)
+    phase_durations = []
+    if not bars:
+        by_doc: dict[str, list[dict]] = {}
+        for f in d["facts"]:
+            if f["field"] == "schedule.phase_duration":
+                by_doc.setdefault(f["citation"]["url"], []).append(f)
+        if by_doc:
+            u, fs = max(by_doc.items(), key=lambda kv: (bool(SCHED_TITLE.search(titles.get(kv[0]) or "")), len(kv[1])))
+            seen = set()
+            for f in sorted(fs, key=lambda f: f["value"]["order"]):
+                v = f["value"]
+                if v["name"].lower() in seen:
+                    continue
+                seen.add(v["name"].lower())
+                phase_durations.append({"name": v["name"], "duration": v["raw"].replace(" g", " giorni"), "months": v["months"]})
+            src = _source({"url": u, "page": fs[0]["citation"]["page"]}, titles)
     dur = _pick(d, "schedule.duration.construction", titles)
     milestones = []
     for field in ("schedule.date.construction_start", "schedule.date.construction_start_extension",
@@ -695,12 +713,15 @@ def _gantt(d: dict, titles: dict) -> dict:
               if t and SCHED_TITLE.search(t) and u != chosen][:5]
     months = max([b["end"] for b in bars] + [1])
     note = None
-    if not bars:
+    if not bars and phase_durations:
+        note = "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt."
+    elif not bars:
         note = ("Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente)."
                 + (" Il documento è indicato sotto." if sched_doc else ""))
     return {"bars": bars, "unit": unit, "months": months, "source": src,
             "duration": {"text": dur["text"], "status": dur["status"], "hint": _hint(dur), "source": dur["source"]} if dur else None,
             "milestones": milestones, "document": sched_doc, "note": note, "altri": others,
+            "durate_fasi": phase_durations[:30],
             "metodo": {"dated_table": "tabella con date", "vector_gantt": "diagramma vettoriale",
                        "raster_gantt": "diagramma in immagine (lettura automatica, da verificare)"}.get(method) if bars else None}
 
