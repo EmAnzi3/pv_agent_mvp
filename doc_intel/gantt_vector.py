@@ -30,6 +30,11 @@ def _tick_value(text: str) -> tuple[int | None, str]:
         return int(m.group(1)), ("week" if prefix.startswith(("s", "w")) else "month" if prefix.startswith("m") else "")
     if t[:3] in MONTHS and len(t) <= 9 and t.isalpha():
         return MONTHS[t[:3]], "month_name"
+    my = re.match(r"^([a-z]{3})[a-z]*[-\s'’/.]?(\d{2}|\d{4})$", t)          # 'set-26', 'gen 2027'
+    if my and my.group(1) in MONTHS:
+        y = int(my.group(2))
+        y = y + 2000 if y < 100 else y
+        return y * 12 + MONTHS[my.group(1)] - 1, "month_year"
     return None, ""
 
 
@@ -50,7 +55,9 @@ def _axis(words: list[tuple]) -> dict | None:
         seq, cur = [], []
         prev = None
         for w, (v, k) in zip(row, vals):
-            if k == "month_name" and prev is not None:
+            if k == "month_year":
+                v_eff = v if prev is None or v == prev + 1 else None
+            elif k == "month_name" and prev is not None:
                 v_eff = prev + 1 if (v - 1) % 12 == prev % 12 else None   # month names wrap across years
             else:
                 v_eff = v if prev is None or k == "month_name" else (v if v == prev + 1 else None)
@@ -70,7 +77,7 @@ def _axis(words: list[tuple]) -> dict | None:
         if min(gaps) <= 0 or statistics.pstdev(gaps) > 0.25 * statistics.mean(gaps):
             continue
         if best is None or len(seq) > len(best["seq"]):
-            unit = ("month" if "month_name" in kinds or "month" in kinds else "week" if "week" in kinds else "")
+            unit = ("month" if kinds & {"month_name", "month_year", "month"} else "week" if "week" in kinds else "")
             best = {"seq": seq, "y": (seq[0][1][1] + seq[0][1][3]) / 2, "unit": unit}
     if not best:
         return None
@@ -132,16 +139,21 @@ def reconstruct(words: list[tuple], rects: list[tuple], width: float, height: fl
             continue
         bars.append(r)
     rows: dict[int, dict] = {}
+    centres = sorted({round((r[1] + r[3]) / 2, 1) for r in bars})
+    gaps = [b - a for a, b in zip(centres, centres[1:]) if b - a > 1]
+    pitch = statistics.median(gaps) if gaps else 3 * text_h
     for x0, y0, x1, y1, _ in bars:
         yc = (y0 + y1) / 2
-        cand = [ln for ln in lines if ln["y0"] - 2 <= yc <= ln["y1"] + 2]
+        # a wrapped activity name spans several text lines inside the same row
+        cand = [ln for ln in lines if abs((ln["y0"] + ln["y1"]) / 2 - yc) <= 0.45 * pitch]
         if not cand:
             continue
-        ln = min(cand, key=lambda ln: abs((ln["y0"] + ln["y1"]) / 2 - yc))
+        cand.sort(key=lambda ln: ln["y0"])
+        ln = {"text": " ".join(c["text"] for c in cand), "y0": cand[0]["y0"], "id": tuple(id(c) for c in cand)}
         # tick v is the centre of period v, i.e. of the interval [v-1, v]; time is counted from the first tick
         t0 = (x0 - a) / b - 0.5 - (axis["first"] - 1)
         t1 = (x1 - a) / b - 0.5 - (axis["first"] - 1)
-        key = id(ln)
+        key = ln["id"]
         row = rows.setdefault(key, {"line": ln, "start": t0, "end": t1})
         row["start"], row["end"] = min(row["start"], t0), max(row["end"], t1)
     out = []
@@ -180,4 +192,22 @@ def from_fitz_page(page: Any) -> dict | None:
         r = d.get("rect")
         if r is not None:
             rects.append((r.x0, r.y0, r.x1, r.y1, tuple(fill[:3])))
-    return reconstruct(words, rects, page.rect.width, page.rect.height, text)
+    g = reconstruct(words, rects, page.rect.width, page.rect.height, text)
+    rows = table_rows(words)
+    if rows:
+        g = dict(g or {}, table_rows=rows)
+    return g or None
+
+
+def table_rows(words: list[tuple]) -> list[str]:
+    """Text of each table row (words sharing a baseline), for MS Project-like tables with start/end dates."""
+    out: list[list[tuple]] = []
+    for w in sorted(words, key=lambda w: ((w[1] + w[3]) / 2, w[0])):
+        yc = (w[1] + w[3]) / 2
+        if out and abs((out[-1][0][1] + out[-1][0][3]) / 2 - yc) <= 2.0:
+            out[-1].append(w)
+        else:
+            out.append([w])
+    rows = [" ".join(w[4] for w in sorted(r, key=lambda w: w[0])) for r in out]
+    dated = [r for r in rows if len(re.findall(r"\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4}", r)) >= 2]
+    return dated[:120] if len(dated) >= 3 else []

@@ -136,7 +136,32 @@ def _same(a: str, b: str) -> bool:
     if a == b:
         return True
     short, long_ = sorted((a, b), key=len)
+    if len(short) >= 4 and long_.endswith(short) and len(long_) - len(short) <= 2:
+        return True                      # 'Solar S.r.l.' read without the 'e-' of 'e-Solar S.r.l.'
     return len(short) >= 6 and short in long_
+
+
+def _garbled(name: str) -> bool:
+    """OCR noise such as 'EE EE A il EE ll crei sl'."""
+    t = LEGAL_PHRASES.sub(" ", (name or "").lower())
+    t = re.sub(r"\b[a-zà-ÿ]\.", " ", t)             # initials and abbreviations ('G.', 'Dott.')
+    words = re.findall(r"[a-zà-ÿ]+", t)
+    if not words or not re.search(r"[A-Za-zÀ-ÿ]{4}", name or ""):
+        return True
+    bad = sum(len(w) <= 2 or not re.search(r"[aeiouàèéìòù]", w) for w in words)
+    return len(words) >= 4 and bad / len(words) > 0.3
+
+
+def _lev(a: str, b: str) -> int:
+    if abs(len(a) - len(b)) > 2:
+        return 3
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        cur = [i]
+        for j, cb in enumerate(b, 1):
+            cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (ca != cb)))
+        prev = cur
+    return prev[-1]
 
 
 def _pretty(name: str) -> str:
@@ -150,6 +175,7 @@ def _pretty(name: str) -> str:
     n = re.sub(r"(?i)\bs\.?\s?r\.?\s?l\.?(?=\s|$)", "S.r.l.", n)
     n = re.sub(r"(?i)\bs\.?\s?p\.?\s?a\.?(?=\s|$)", "S.p.A.", n)
     n = re.sub(r"(?i)\bs\.?\s?s\.(?=\s|$)", "S.S.", n)
+    n = re.sub(r"(S\.r\.l\.|S\.p\.A\.|S\.S\.)\s*[-–,].*$", r"\1", n)
     return n
 
 
@@ -222,6 +248,8 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
                       "value": _fmt("tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw", round(mw, 3)),
                       "sub": sub, "source": {"document": "titolo del procedimento", "url": p.get("info_url"), "excerpt": tm.group(0)}})
     tech = _pick(d, "tech.technology", titles)
+    if tech and tech["value"] in ("floating_pv", "offshore") and tech["occurrences"] < 10:
+        tech = None                      # passing mentions (alternatives, literature) are not the project's technology
     mount = _pick(d, "tech.mounting", titles)
     kind = " · ".join(x["text"] for x in (tech, mount) if x)
     if kind:
@@ -293,6 +321,8 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
         return None
 
     def get(name: str, kind: str) -> dict | None:
+        if _garbled(name) or PUBLIC_SUBJECT.search(name or ""):
+            return None
         e = find(name, kind)
         if e is None:
             if len(_ckey(name)) < 4:
@@ -325,8 +355,6 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
         e = get(r["name"], "company")
         if e is None:
             continue
-        for n in vat_names.get(vat, []):
-            e["keys"].add(_ckey(n))
         e["vat"], e["registry"], e["mentions"] = vat, r, e["mentions"] + vat_mentions.get(vat, 0)
         e["vat_group"] = vat in group_vats
     # 2. proponent from the authority's project sheet, then roles documented in the elaborati
@@ -341,8 +369,11 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
         if not g:
             continue
         vals = [x for x in g["values"] if isinstance(x, dict)]
+        top = vals[0]["occurrences"] if vals else 0
         for i, x in enumerate(vals):
-            if i > 0 and x["occurrences"] < 2:
+            if i > 0 and x["occurrences"] < max(2, 0.25 * top):
+                continue                 # rare alternatives are usually misreads or other documents' parties
+            if _garbled(str(x["value"])):
                 continue
             name = _clean_subject(str(x["value"]))
             e = get(name, "company" if is_company(name) else "person")
@@ -354,6 +385,10 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
             e["role_source"] = e["role_source"] or _source(x.get("example"), titles)
     # 3. contacts, attached to the person or company printed next to them
     dropped = 0
+    for f in d["facts"]:      # professionals signing letterheads, so their e-mails can be matched by name
+        q = f.get("qualifiers") or {}
+        if f["field"].startswith("contact.") and q.get("person"):
+            get(q["person"], "person")
     persons_known = [e for e in ents if e["kind"] == "person"]
     for f in d["facts"]:
         if f["field"] not in ("contact.email", "contact.pec", "contact.phone") or f.get("status") == "rejected":
@@ -376,7 +411,7 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
             target = next((e for e in ents if e["kind"] == "company" and any(_same(t, k) or (len(k) >= 6 and k in t)
                                                                            for t in tokens for k in e["keys"])), None)
             if target is None:
-                for e in persons_known + [e for e in ents if e["kind"] == "person" and e not in persons_known]:
+                for e in persons_known:
                     words = [w for w in re.findall(r"[a-z]{3,}", min(e["names"], key=len).lower().translate(ACCENTS))
                              if not PERSON_TITLE.match(w)]
                     if len(words) >= 2 and words[-1] in _norm(local) and (words[0] in _norm(local) or _norm(local).startswith(words[0][0])):
@@ -395,6 +430,22 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
         key = (f["field"], val)
         c = target["contacts"].setdefault(key, {"n": 0, "fact": f})
         c["n"] += 1
+    owners: dict[tuple, list[tuple]] = {}
+    for e in ents:
+        for key, c in e["contacts"].items():
+            owners.setdefault(key, []).append((c["n"] + (0.5 if e["kind"] == "person" else 0), id(e)))
+    for e in ents:
+        for key in list(e["contacts"]):
+            best = max(owners[key])[1]
+            if best != id(e):
+                del e["contacts"][key]       # a contact belongs to one subject only: the one it is printed with most often
+        items = sorted(e["contacts"].items(), key=lambda kv: -kv[1]["n"])
+        for i, (k1, c1) in enumerate(items):
+            for k2, c2 in items[:i]:
+                if k1[0] == k2[0] and k2 in e["contacts"] and k1 in e["contacts"] and _lev(k1[1], k2[1]) <= 2:
+                    e["contacts"][k2]["n"] += c1["n"]
+                    del e["contacts"][k1]    # OCR variant ('planidellamarina' / 'pianidellamarina')
+                    break
     kind_text = {"contact.pec": "PEC", "contact.email": "E-mail", "contact.phone": "Telefono"}
     main, others = [], []
     for e in ents:
@@ -425,43 +476,40 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
 
 # --------------------------------------------------------------------------------------------- location
 def _location(d: dict, p: dict, record: dict, titles: dict) -> dict:
-    munis = p.get("municipalities") or ([m.strip() for m in re.split(r",|;", record.get("municipalities") or "") if m.strip()])
-    munis = [re.sub(r"\s*\([A-Z]{2}\)\s*$", "", m) for m in munis]
-    prov = p.get("province") or record.get("province")
+    raw = p.get("municipalities") or [m.strip() for m in re.split(r",|;", record.get("municipalities") or "") if m.strip()]
+    provs_in = [m.group(1) for x in raw for m in [re.search(r"\(([A-Z]{2})\)\s*$", x)] if m]
+    munis = [re.sub(r"\s*\([A-Z]{2}\)\s*$", "", m) for m in raw]
+    prov = ", ".join(dict.fromkeys(provs_in)) if len(set(provs_in)) > 1 else (p.get("province") or record.get("province"))
+    if len(set(provs_in)) > 1:
+        munis = raw                                     # 'Melara (RO), Ostiglia (MN)': keep each province
     region = p.get("region") or record.get("region")
-    point, kind, src = None, None, None
-    pts = [f for f in d["facts"] if f["field"] == "geo.latlon_point"]
-    for want in ("centroid", "site_bbox_corner"):
-        sel = [f for f in pts if (f.get("qualifiers") or {}).get("object") == want
-               and ITALY[0] <= f["value"]["lat"] <= ITALY[1] and ITALY[2] <= f["value"]["lon"] <= ITALY[3]]
-        if sel:
-            lat = sorted(f["value"]["lat"] for f in sel)[len(sel) // 2]
-            lon = sorted(f["value"]["lon"] for f in sel)[len(sel) // 2]
-            point, kind, src = (lat, lon), ("punto centrale indicato negli elaborati" if want == "centroid"
-                                            else "punto dell'area d'impianto indicato negli elaborati"), _example_source(sel[0], titles)
-            break
-    if point is None:
-        cents = []
-        for f in d["facts"]:
-            if f["field"] == "geo.area_polygon" and (f["value"].get("geojson") or {}).get("coordinates"):
-                ring = f["value"]["geojson"]["coordinates"][0]
-                lon = sum(c[0] for c in ring) / len(ring)
-                lat = sum(c[1] for c in ring) / len(ring)
-                if ITALY[0] <= lat <= ITALY[1] and ITALY[2] <= lon <= ITALY[3]:
-                    cents.append((lat, lon, f))
-        if cents:
-            lat = sorted(c[0] for c in cents)[len(cents) // 2]
-            lon = sorted(c[1] for c in cents)[len(cents) // 2]
-            point, kind, src = (lat, lon), "centro dei perimetri ricostruiti dagli elaborati (da verificare)", _example_source(cents[0][2], titles)
+    # candidate site points: declared centre, area corners, centres of the reconstructed perimeters
+    cands = []
+    for f in d["facts"]:
+        if f["field"] == "geo.latlon_point" and (f.get("qualifiers") or {}).get("object") in ("centroid", "site_bbox_corner"):
+            cands.append((f["value"]["lat"], f["value"]["lon"], f, f["qualifiers"]["object"]))
+        elif f["field"] == "geo.area_polygon" and (f["value"].get("geojson") or {}).get("coordinates"):
+            ring = f["value"]["geojson"]["coordinates"][0]
+            cands.append((sum(c[1] for c in ring) / len(ring), sum(c[0] for c in ring) / len(ring), f, "polygon"))
+    cands = [c for c in cands if ITALY[0] <= c[0] <= ITALY[1] and ITALY[2] <= c[1] <= ITALY[3]]
+    point = kind = src = None
+    if cands:
+        # the largest cluster (about 3 km) is the plant; isolated points are usually the grid connection or the substation
+        best = max(cands, key=lambda c: (sum(abs(c[0] - o[0]) < 0.03 and abs(c[1] - o[1]) < 0.03 for o in cands), c[3] == "centroid"))
+        near = [o for o in cands if abs(best[0] - o[0]) < 0.03 and abs(best[1] - o[1]) < 0.03]
+        point = (sum(o[0] for o in near) / len(near), sum(o[1] for o in near) / len(near))
+        kind = ("centro dell'impianto indicato negli elaborati" if any(o[3] == "centroid" for o in near)
+                else "posizione indicativa dell'impianto, ricavata dalle coordinate negli elaborati")
+        src = _example_source(near[0][2], titles)
     from urllib.parse import quote_plus
     if point:
         maps = f"https://www.google.com/maps/search/?api=1&query={point[0]:.5f},{point[1]:.5f}"
     else:
-        maps = "https://www.google.com/maps/search/?api=1&query=" + quote_plus(", ".join(munis[:1] + [x for x in (prov, region) if x]))
+        maps = "https://www.google.com/maps/search/?api=1&query=" + quote_plus(
+            ", ".join([re.sub(r"\s*\(.*\)$", "", munis[0])] + [x for x in (prov if len(set(provs_in)) <= 1 else None, region) if x])) if munis else None
     return {"regione": region, "provincia": prov, "comuni": munis,
             "coordinate": {"lat": round(point[0], 5), "lon": round(point[1], 5), "tipo": kind, "source": src} if point else None,
-            "maps_url": maps if (point or munis) else None,
-            "maps_precision": "coordinate" if point else "comune"}
+            "maps_url": maps, "maps_precision": "coordinate" if point else "comune"}
 
 
 # --------------------------------------------------------------------------------------------- schedule
@@ -474,7 +522,13 @@ def _gantt(d: dict, titles: dict) -> dict:
             by_page.setdefault((c["url"], c["page"]), []).append(f)
     bars, unit, src = [], "month", None
     if by_page:
-        (url, page), fs = max(by_page.items(), key=lambda kv: len(kv[1]))
+        def rank(kv):
+            (u, _), fs_ = kv
+            dated = any(f["qualifiers"].get("method") == "dated_table" for f in fs_)
+            return (bool(SCHED_TITLE.search(titles.get(u) or "")), dated, len(fs_))
+        (url, page), fs = max(by_page.items(), key=rank)
+        method = "dated_table" if any(f["qualifiers"].get("method") == "dated_table" for f in fs) else "vector_gantt"
+        fs = [f for f in fs if f["qualifiers"].get("method") == method]
         fs.sort(key=lambda f: f["value"].get("order", 0))
         unit = "month" if all(f["value"].get("unit_known", True) for f in fs) else fs[0]["value"].get("unit") or "period"
         seen = set()
@@ -581,7 +635,7 @@ PUBLIC_MAIL = re.compile(r"(?i)\.gov\.it$|governo\.it|interno\.it|agenziademanio
                          r"prefettura|\bente|arpa|ats-|arsial|cultura|beniculturali|mite|mase|"
                          r"minambiente|terna\.it|e-distribuzione|enel\.it$|asl|vigilfuoco|marina\.difesa|ispra|anas\.it|"
                          r"snam|consorzio|bonifica|cert\.|postacert\.regione|openfiber|fibercop|telecomitalia|italgas|retegas|acquedott")
-PUBLIC_SUBJECT = re.compile(r"(?i)comune|regione|provincia|soprintendenza|arpa|ministero|terna|vigili|asl|consorzio|caserma|"
+PUBLIC_SUBJECT = re.compile(r"(?i)comune|regione|provincia|soprintendenza|arpa|ministero|terna|vigili|asl|consorzio|caserma|ufficio|"
                             r"prefettura|questura|carabinieri|igiene\s+e\s+sanit|www\.regione|\.gov\.it")
 
 
@@ -592,4 +646,5 @@ def _norm(t: str) -> str:
 def _clean_subject(t: str | None) -> str:
     t = (t or "").strip("'\"‘’“” ")
     t = re.split(r"(?i)\b(?:dell[a'’]\s*(?:impresa|ditta|societ[aà])|della\s+(?:ditta|societ[aà]))\s+", t)[-1]
+    t = re.sub(r"(?i)[\s,;-]+(?:tel(?:efono)?|cell(?:ulare)?|fax|e-?mail|pec|via|viale|corso|piazza)\b.*$", "", t)
     return re.sub(r"^[^\w]+|[\s'\"‘’“”ʼ`´,;]+$", "", t)

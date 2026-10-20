@@ -115,8 +115,8 @@ def _date(t: str):
 def extract_gantt(ctx: PageContext) -> list[Fact]:
     """Phases from a drawn Gantt (rebuilt from the vector page) or from a dated activity table."""
     out = []
-    g = getattr(ctx, "gantt", None)
-    if g and g.get("rows"):
+    g = getattr(ctx, "gantt", None) or {}
+    if g.get("rows"):
         k = UNIT_TO_MONTHS.get(g.get("unit"), None)
         for i, r in enumerate(g["rows"]):
             out.append(Fact(field="schedule.phase", subject=r["name"],
@@ -128,28 +128,28 @@ def extract_gantt(ctx: PageContext) -> list[Fact]:
                             qualifiers={"method": "vector_gantt", "rows": len(g["rows"])},
                             limits="Bar positions read from the drawing; periods follow the chart's own axis",
                             extractor="schedule.gantt"))
-        return out
-    if not re.search(r"(?i)cron?o?\s*programma|gantt|programma\s+(?:dei\s+)?lavori", ctx.text[:4000]):
+    if not (g.get("table_rows") or re.search(r"(?i)cron?o?\s*programma|gantt|programma\s+(?:dei\s+)?lavori", ctx.text[:4000])):
         return out
     rows = []
-    for line in ctx.lines:
-        m = TWO_DATES.search(line)
-        if not m:
+    for line in g.get("table_rows") or ctx.lines:
+        ds = list(re.finditer(r"\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4}", line))
+        if len(ds) < 2:
             continue
-        d1, d2 = _date(m.group("d1")), _date(m.group("d2"))
-        name = re.sub(r"^\s*(?:\d+(?:\.\d+)*[.)]?\s+)+", "", line[: m.start()])
-        name = re.sub(r"(?i)\b\d+(?:[.,]\d+)?\s*(?:g|gg|giorni|sett|settimane|mesi|ms|w|d)\b\.?|\b(?:lun|mar|mer|gio|ven|sab|dom)\b\.?", "", name).strip(" -–:;|")
+        d1, d2 = _date(ds[0].group(0)), _date(ds[1].group(0))
+        name = re.sub(r"^\s*(?:\d+(?:\.\d+)*[.)]?\s+)+", "", line[: ds[0].start()])
+        name = re.sub(r"(?i)\b\d+(?:[.,]\d+)?\s*(?:g|gg|giorni|days?|sett|settimane|mesi|ms|w|d|g\.l\.)\b\.?|"
+                      r"\b(?:lun|mar|mer|gio|ven|sab|dom|mon|tue|wed|thu|fri|sat|sun)\b\.?|\b\d+[.,]\d+\b", "", name).strip(" -–:;|")
         if d1 and d2 and d2 >= d1 and re.search(r"[A-Za-zÀ-ÿ]{4}", name):
             rows.append((name[:80], d1, d2, line))
     if len(rows) >= 3:
         t0 = min(r[1] for r in rows)
-        for i, (name, d1, d2, line) in enumerate(rows[:60]):
+        for i, (name, d1, d2, line) in enumerate(rows[:80]):
             out.append(Fact(field="schedule.phase", subject=name,
                             value={"name": name, "start_month": round((d1 - t0).days / 30.4, 2),
-                                   "end_month": round((d2 - t0).days / 30.4 + 1 / 30.4, 2),
+                                   "end_month": round(((d2 - t0).days + 1) / 30.4, 2),
                                    "start_date": d1.isoformat(), "end_date": d2.isoformat(), "order": i,
                                    "raw": f"{d1:%d/%m/%Y}–{d2:%d/%m/%Y}", "unit": "month", "unit_known": True},
-                            citation=ctx.cite(line), temporal="planned",
+                            citation=ctx.cite(line[:200]), temporal="planned",
                             qualifiers={"method": "dated_table", "rows": len(rows)},
                             limits="Dates of the programme of works: a plan, not progress", extractor="schedule.gantt"))
     return out

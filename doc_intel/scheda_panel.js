@@ -82,13 +82,14 @@
       const rows = bars.map((b, i) => {
         const y = top + i * rowH, w = Math.max(3, x(b.end) - x(b.start));
         const name = b.name.length > 30 ? b.name.slice(0, 29) + '…' : b.name;
-        return `<g><title>${esc(b.name)}: ${esc(unit)} ${+b.start.toFixed(1)}–${+b.end.toFixed(1)}</title>`
+        const when = b.dates ? b.dates.map(x => x.split('-').reverse().join('/')).join(' – ') : `${unit} ${+b.start.toFixed(1)}–${+b.end.toFixed(1)}`;
+        return `<g><title>${esc(b.name)}: ${esc(when)}</title>`
           + `<text x="${labelW - 8}" y="${y + 15}" class="g-label" text-anchor="end">${esc(name)}</text>`
           + `<rect x="${x(b.start)}" y="${y + 5}" width="${w}" height="14" rx="3" class="g-bar"/></g>`;
       }).join('');
       chart = `<div class="g-wrap"><svg viewBox="0 0 ${labelW + chartW + 20} ${top + bars.length * rowH + 6}" role="img" aria-label="Diagramma di Gantt">
         <text x="${labelW}" y="10" class="g-tick">${esc(unit)} dall'avvio</text>${ticks}${rows}</svg></div>
-        <div class="sc-fine">Fasi lette dal cronoprogramma ${src(g.source, 'apri')}</div>`;
+        <div class="sc-fine">Fasi lette dal cronoprogramma${bars[0].dates ? ` (avvio previsto ${esc(bars.map(b => b.dates[0]).sort()[0].split('-').reverse().join('/'))})` : ''} ${src(g.source, 'apri')}</div>`;
     }
     const d = g.duration;
     const dur = d ? `<div class="g-dur"><span>Durata cantiere</span> <strong>${esc(d.text)}</strong> ${flag(d.status)} ${src(d.source)}
@@ -117,7 +118,8 @@
 
   function render(card) {
     const l = card.ubicazione || {};
-    const place = [(l.comuni || []).join(', ') + (l.provincia ? ` (${l.provincia})` : ''), l.regione].filter(Boolean).join(' · ');
+    const withProv = (l.comuni || []).some(c => /\(/.test(c));
+    const place = [(l.comuni || []).join(', ') + (l.provincia && !withProv ? ` (${l.provincia})` : ''), l.regione].filter(Boolean).join(' · ');
     const href = safeHref(card.source_url), maps = safeHref(l.maps_url);
     const doc = card.documentazione || {};
     const open = (card.da_verificare || []).length
