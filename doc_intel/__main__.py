@@ -138,6 +138,9 @@ def main(argv: list[str] | None = None) -> int:
     if a.cmd == "card":
         from .card import build_card, write_card
         d = json.loads(Path(a.dossier).read_text(encoding="utf-8"))
+        if not d["acquisition"].get("references"):
+            print("::warning title=scheda::no documents acquired: existing card left unchanged")
+            return 0
         path = write_card(build_card(d), a.out)
         print(f"scheda: {path}")
         return 0

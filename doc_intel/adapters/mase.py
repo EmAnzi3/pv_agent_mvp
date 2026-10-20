@@ -6,6 +6,7 @@ Entry points accepted: ``/Oggetti/Info/<id>`` and
 from __future__ import annotations
 
 import re
+import time
 from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup
@@ -70,8 +71,23 @@ class MaseAdapter(DocumentAdapter):
         if not m:
             raise LookupError(f"not a MASE project URL: {url}")
         pid = m.group(1)
-        html = self.get_html(url)
-        return self.parse_info(html, url, pid)
+        ident = None
+        for attempt in range(3):
+            html = self.get_html(url)
+            ident = self.parse_info(html, url, pid)
+            if ident.procedures or (ident.proponent and ident.title and "VAS - VIA - AIA" not in ident.title):
+                break
+            # the portal sometimes answers with its generic home page: wait and ask again
+            self.log(f"project page {url} returned no project data (attempt {attempt + 1}/3)")
+            time.sleep(20 * (attempt + 1))
+        if not ident.procedures and not ident.proponent:
+            raise LookupError(f"MASE project page not available (generic page returned): {url}")
+        if not ident.procedures:
+            soup = BeautifulSoup(html, "html.parser")
+            ident.raw["info_links"] = [(a.get_text(" ", strip=True)[:60], a["href"][:160])
+                                       for a in soup.find_all("a", href=True)
+                                       if re.search(r"(?i)document|procedur|oggetti|provvedim", a["href"])][:40]
+        return ident
 
     def parse_info(self, html: str, url: str, pid: str) -> ProjectIdentity:
         soup = BeautifulSoup(html, "html.parser")

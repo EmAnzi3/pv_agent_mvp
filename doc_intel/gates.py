@@ -18,6 +18,8 @@ EXECUTION_ROLES = {"role.epc", "role.bop", "role.contractor", "role.supplier", "
 
 def acquisition_gate(acq: dict[str, Any]) -> dict[str, Any]:
     issues = []
+    if not acq.get("references"):
+        issues.append("no documents found for the project: " + ("; ".join(acq.get("discovery_errors", [])) or "empty listing"))
     for proc in acq.get("procedures", []):
         if proc.get("declared") is None and proc.get("declared_available") is False:
             pass  # the source never declares totals: completeness is against the listing (noted below)

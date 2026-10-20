@@ -73,7 +73,13 @@ def _fmt(field: str, value: Any, unit: str | None = None) -> str:
     if isinstance(value, dict) and value.get("raw"):
         raw = re.sub(r"\s*\(\s*[a-z]+\s*\)", "", value["raw"]).strip()   # '30 (trenta) giorni' -> '30 giorni'
         raw = re.sub(r"(\d)(mesi|anni|giorni|settimane)", r"\1 \2", raw)
-        return re.sub(r"\s+", " ", raw)
+        raw = re.sub(r"(?i)\s+(?:naturali(?:\s+e\s+consecutivi)?|lavorativi|solari)\b", "", raw)
+        raw = re.sub(r"\s+", " ", raw).strip()
+        md = re.fullmatch(r"(\d+)\s+(giorni|settimane)", raw)
+        if md and int(md.group(1)) >= (60 if md.group(2) == "giorni" else 9):
+            months = int(md.group(1)) / (30.4 if md.group(2) == "giorni" else 4.33)
+            raw += f" (circa {months:.0f} mesi)"
+        return raw
     if isinstance(value, dict) and "min" in value:
         lo, hi = value["min"], value["max"]
         unit_txt = " mesi"
@@ -189,7 +195,7 @@ def _example_source(f: dict, titles: dict) -> dict:
     return _source({"url": c.get("url"), "page": c.get("page"), "excerpt": c.get("excerpt")}, titles)
 
 
-def _pick(d: dict, field: str, titles: dict) -> dict | None:
+def _pick(d: dict, field: str, titles: dict, accept=None) -> dict | None:
     """Most frequent value of a field (equivalent spellings and durations merged); alternatives kept as hints."""
     g = next((g for g in d["groups"] if g["field"] == field and g["values"] and isinstance(g["values"][0], dict)
               and (not field.startswith("tech.") or g.get("subject") in ("plant", None, "totale"))), None)
@@ -197,7 +203,7 @@ def _pick(d: dict, field: str, titles: dict) -> dict | None:
         return None
     merged: dict[str, dict] = {}
     for x in g["values"]:
-        if not isinstance(x, dict):
+        if not isinstance(x, dict) or (accept and not accept(x["value"])):
             continue
         k = _fmt(field, x["value"])
         if field.startswith("schedule.duration.") and isinstance(x["value"], dict) and x["value"].get("max"):
@@ -262,6 +268,11 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         tiles.append({"key": "potenza", "label": "Potenza", "status": "da verificare" if note else "verificato",
                       "value": _fmt("tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw", round(mw, 3)),
                       "sub": sub, "source": {"document": "titolo del procedimento", "url": p.get("info_url"), "excerpt": tm.group(0)}})
+    plant_mw = None
+    if tm:
+        plant_mw = mw
+        if note:
+            plant_mw = next((x["value"] for _, x in sorted(cands, key=lambda c: -c[1]["occurrences"])), mw)
     tech = _pick(d, "tech.technology", titles)
     if tech and tech["value"] in ("floating_pv", "offshore") and tech["occurrences"] < 10:
         tech = None                      # passing mentions (alternatives, literature) are not the project's technology
@@ -270,7 +281,11 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
     if kind:
         tiles.append({"key": "impianto", "label": "Impianto", "value": kind[:1].upper() + kind[1:], "status": "da documenti",
                       "source": (tech or mount)["source"]})
-    tot, pan = _pick(d, "tech.area_available_ha", titles), _pick(d, "tech.area_panels_ha", titles)
+    # plausibility against the plant power: a ground-mounted plant needs roughly 1-6 ha per MW,
+    # panels cover roughly 0.3-3 ha per MW; values outside are other areas (cabins, parcels, roads)
+    ok_tot = (lambda v: 0.8 * plant_mw <= v <= 8 * plant_mw) if plant_mw else None
+    ok_pan = (lambda v: 0.25 * plant_mw <= v <= 3 * plant_mw) if plant_mw else None
+    tot, pan = _pick(d, "tech.area_available_ha", titles, ok_tot), _pick(d, "tech.area_panels_ha", titles, ok_pan)
     if tot and pan and pan["value"] >= tot["value"]:
         pan = None                          # a panel area larger than the site is a misread
     if tot:
@@ -510,6 +525,8 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
 def _location(d: dict, p: dict, record: dict, titles: dict) -> dict:
     raw = p.get("municipalities") or [m.strip() for m in re.split(r",|;", record.get("municipalities") or "") if m.strip()]
     provs_in = [m.group(1) for x in raw for m in [re.search(r"\(([A-Z]{2})\)\s*$", x)] if m]
+    raw = [re.sub(r"(?i)^.*\bcomun[ei]\s+d[ie]\s+", "", m).strip() for m in raw]   # 'ricadenti anche nel comune di Lucera'
+    raw = [m for m in raw if m]
     munis = [re.sub(r"\s*\([A-Z]{2}\)\s*$", "", m) for m in raw]
     prov = ", ".join(dict.fromkeys(provs_in)) if len(set(provs_in)) > 1 else (p.get("province") or record.get("province"))
     if len(set(provs_in)) > 1:
@@ -565,9 +582,16 @@ def _gantt(d: dict, titles: dict) -> dict:
             fits = dur_m is None or abs(span - dur_m) <= 0.4 * dur_m
             return (bool(SCHED_TITLE.search(titles.get(u) or "")), dated, fits, len(fs_))
         decom = re.compile(r"(?i)smont|dismiss|rimozion|demoliz|smaltim|ripristin")
+        works = re.compile(r"(?i)cantier|scav|posa|montagg|install|recinz|cavidot|cabin|modul|tracker|struttur|collaud|"
+                           r"viabil|opere|pali|infiss|conness|inverter|commission|progett|autorizz|realizz|lavor|fornitur")
         build = {k: v for k, v in by_page.items()
-                 if sum(bool(decom.search(f["value"]["name"])) for f in v) < 0.4 * len(v)}   # decommissioning charts excluded
-        (url, page), fs = max((build or by_page).items(), key=rank)
+                 if sum(bool(decom.search(f["value"]["name"])) for f in v) < 0.4 * len(v)        # decommissioning charts
+                 and (SCHED_TITLE.search(titles.get(k[0]) or "")
+                      or sum(bool(works.search(f["value"]["name"])) for f in v) >= 0.3 * len(v))}   # other tables
+        if not build:
+            by_page = {}
+    if by_page:
+        (url, page), fs = max(build.items(), key=rank)
         method = "dated_table" if any(f["qualifiers"].get("method") == "dated_table" for f in fs) else "vector_gantt"
         fs = [f for f in fs if f["qualifiers"].get("method") == method]
         fs.sort(key=lambda f: f["value"].get("order", 0))
@@ -581,6 +605,10 @@ def _gantt(d: dict, titles: dict) -> dict:
             bars.append({"name": _phase_name(v["name"]), "start": v["start_month"], "end": v["end_month"],
                          **({"dates": [v["start_date"], v["end_date"]]} if v.get("start_date") else {})})
         src = _source({"url": url, "page": page}, titles)
+        span = max(b["end"] for b in bars) - min(b["start"] for b in bars) if bars else 0
+        if method == "vector_gantt" and dur_m and span > 2 * dur_m and abs(span * 12 / 52 - dur_m) <= 0.4 * dur_m:
+            for b in bars:                   # the axis counts weeks, not months (checked against the stated duration)
+                b["start"], b["end"] = round(b["start"] * 12 / 52, 2), round(b["end"] * 12 / 52, 2)
     else:
         # month ranges written in the text of a programme of works, at least three distinct phases
         phases: dict[str, dict] = {}
@@ -753,4 +781,14 @@ def _clean_subject(t: str | None) -> str:
     t = (t or "").strip("'\"‘’“” ")
     t = re.split(r"(?i)\b(?:dell[a'’]\s*(?:impresa|ditta|societ[aà])|della\s+(?:ditta|societ[aà]))\s+", t)[-1]
     t = re.sub(r"(?i)[\s,;-]+(?:tel(?:efono)?|cell(?:ulare)?|fax|e-?mail|pec|via|viale|corso|piazza)\b.*$", "", t)
+    t = re.sub(r"(?i)^(?:il\s+|la\s+)?(?:responsabile|direttore|legale\s+rappresentante|amministratore)(?:\s+(?:tecnico|unico|del\s+laboratorio|delegato))?\s+", "", t)
+    words = t.split()
+    while len(words) > 2 and (re.fullmatch(r"[a-z]{1,3}|\d+|[^\w]+", words[0])):
+        words.pop(0)                      # OCR debris before the name ('7 arm yy Sinergye Ring S.r.l.')
+    t = " ".join(words)
+    if COMPANY_FORM.search(t) and PERSON_TITLE.match(t):
+        # 'Dott. Ing. Fabio Calcarella Whysol-E Sviluppo S.r.l.' -> the company after the signing professional
+        rest = re.sub(r"(?i)^(?:(?:dott|ing|arch|geol|geom|avv|agr|prof|per\.?\s?ind)\.?\s*)+[A-ZÀ-Ýa-zà-ÿ'’]+\s+[A-ZÀ-Ýa-zà-ÿ'’]+\s+", "", t)
+        if rest != t and COMPANY_FORM.search(rest) and len(_norm(rest)) >= 6:
+            t = rest
     return re.sub(r"^[^\w]+|[\s'\"‘’“”ʼ`´,;]+$", "", t)

@@ -187,6 +187,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     inventory = []
     by_sha: dict[str, str] = {}
     acq = {"declared_total": sum(p["declared"] or 0 for p in disc.procedures), "procedures": disc.procedures,
+           "discovery_errors": list(disc.errors), "info_links": identity.raw.get("info_links"),
            "references": len(disc.documents), "processed_references": len(docs), "download_failures": 0,
            "distinct_sha256": 0, "duplicate_references": 0, "pdf_files": 0, "pages_total": 0,
            "pages_digital": 0, "pages_ocr": 0, "pages_ocr_pending": 0, "pages_unreadable": 0,
