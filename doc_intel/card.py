@@ -219,6 +219,16 @@ def _pick(d: dict, field: str, titles: dict) -> dict | None:
             "source": _source(top.get("example"), titles)}
 
 
+def _phase_name(n: str) -> str:
+    """'SOTTOIMPIANTO A - Opere SOTTOIMPIANTO A' -> 'SOTTOIMPIANTO A - Opere' (label printed twice, in table and on the bar)."""
+    w = n.split()
+    for k in range(1, len(w) // 2 + 1):
+        tail = w[-k:]
+        if w[:k] == tail and len(w) > k:
+            return " ".join(w[:-k])
+    return n
+
+
 def _hint(p: dict) -> str | None:
     if not p["alternatives"]:
         return None
@@ -483,14 +493,14 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
                                                if e["registry"] else None),
                 "_rank": (0 if "Proponente" in e["roles"] else 1 if e["roles"] else 2 if e["registry"] else 3, -e["mentions"]
                           - sum(c["n"] for c in e["contacts"].values()))}
-        if e["roles"] or (e["registry"] and item["contacts"] and vat_mentions.get(e["vat"], 0) >= 2):
+        if e["roles"]:
             main.append(item)
         elif item["contacts"] and e["kind"] == "company":
             others.append(item)
         elif item["contacts"] and e["kind"] == "person":
             others.append(item)
     main.sort(key=lambda x: x.pop("_rank"))
-    others.sort(key=lambda x: x.pop("_rank"))
+    others.sort(key=lambda x: (not x["verified"], x.pop("_rank")))
     return main[:10], others[:12], dropped
 
 
@@ -557,7 +567,7 @@ def _gantt(d: dict, titles: dict) -> dict:
             if v["name"].lower() in seen:
                 continue
             seen.add(v["name"].lower())
-            bars.append({"name": v["name"], "start": v["start_month"], "end": v["end_month"],
+            bars.append({"name": _phase_name(v["name"]), "start": v["start_month"], "end": v["end_month"],
                          **({"dates": [v["start_date"], v["end_date"]]} if v.get("start_date") else {})})
         src = _source({"url": url, "page": page}, titles)
     else:

@@ -59,8 +59,8 @@
     const main = card.soggetti || [], others = card.altri_soggetti || [];
     if (!main.length && !others.length) return '';
     return `<section class="sc-sec"><h3>Società e contatti</h3>
-      <div class="sc-cos">${main.map(company).join('')}</div>
-      ${others.length ? `<details class="sc-more"><summary>Altri soggetti con recapiti negli elaborati (${others.length})</summary>
+      <div class="sc-cos">${main.length ? main.map(company).join('') : '<p class="sc-none">Nessun ruolo indicato esplicitamente negli elaborati.</p>'}</div>
+      ${others.length ? `<details class="sc-more"><summary>Altre società e professionisti citati negli elaborati (${others.length})</summary>
         <div class="sc-cos">${others.map(company).join('')}</div></details>` : ''}</section>`;
   }
 
