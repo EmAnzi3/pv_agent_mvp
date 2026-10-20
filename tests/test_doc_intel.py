@@ -665,20 +665,46 @@ class BoxGuards(unittest.TestCase):
         from doc_intel.adapters import adapter_for_url
         root = "https://regionelazio.app.box.com/v/VIA-2-2020"
         listing = {"x": {"items": [{"typedID": "d_1", "name": "A"}, {"typedID": "d_2", "name": "B"},
+                                   {"typedID": "d_3", "name": "C"}, {"typedID": "d_4", "name": "D"},
                                    {"typedID": "f_9", "name": "Istanza.pdf"}], "pageCount": 1}}
         html = f"<script>Box.postStreamData = {_j.dumps(listing)};</script>"
         calls = []
         ad = adapter_for_url(root)
         ad.get_html = lambda u: (calls.append(u), html)[1]   # every folder URL returns the root listing
         disc = ad.discover(ad.identify(root))
-        self.assertLessEqual(len(calls), 3)
-        self.assertTrue(any("parent listing" in e for e in disc.errors))
+        self.assertLessEqual(len(calls), 4)
+        self.assertTrue(any("parent listing" in e for e in disc.errors))  # after 3 echoes recursion stops
         self.assertEqual([d.title for d in disc.documents], ["Istanza.pdf"])
 
     def test_er_external_observation_link(self):
         from doc_intel.adapters.regional import HTML_RULES
         self.assertTrue(HTML_RULES[0].doc_link.search(
             "https://serviziambiente.regione.emilia-romagna.it/viavasweb/osservazioni/scaricaAllegatoEsternoFt/54050/6902"))
+
+
+class LazioRunRegressions(unittest.TestCase):
+    def test_self_reference_folder_does_not_stop_siblings(self):
+        import json as _j
+        from doc_intel.adapters import adapter_for_url
+        root = "https://regionelazio.app.box.com/v/VIA-3-2020"
+        def h(items):
+            return f"<script>Box.postStreamData = {_j.dumps({'x': {'items': items, 'pageCount': 1}})};</script>"
+        top = [{"typedID": "d_100", "name": "060-2019"}, {"typedID": "d_1", "name": "Integrazioni"},
+               {"typedID": "f_9", "name": "Istanza.pdf"}]
+        site = {root: h(top), root + "/folder/100": h(top), root + "/folder/1": h([{"typedID": "f_5", "name": "Rel.pdf"}])}
+        ad = adapter_for_url(root)
+        ad.get_html = lambda u: site[u]
+        disc = ad.discover(ad.identify(root))
+        self.assertEqual(sorted(d.title for d in disc.documents), ["Istanza.pdf", "Rel.pdf"])
+
+    def test_extension_act_is_event_not_start(self):
+        f = [x for x in extract_all([page("Proroga inizio lavori - D.D. n.2620 del 17/12/2021")]) if x.field.startswith("schedule.date")]
+        self.assertEqual([(x.field, x.value, x.temporal) for x in f],
+                         [("schedule.date.construction_start_extension", "2021-12-17", "event_occurred")])
+
+    def test_lowercase_prefix_company(self):
+        from doc_intel.extract.entities import find_companies
+        self.assertEqual(find_companies("e-Solar S.r.l. - Società con unico socio")[0][1], "e-Solar S.r.l.")
 
 
 class NoHardcodedBenchmarks(unittest.TestCase):

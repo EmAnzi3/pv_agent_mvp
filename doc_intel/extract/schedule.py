@@ -18,6 +18,7 @@ DUR_RE = re.compile(r"(?i)(?P<num>\d{1,3})(?:\s*[-–÷]\s*(?P<num2>\d{1,3}))?\s
 DATE_NUM_RE = re.compile(r"(?<!\d)(?P<d>[0-3]?\d)[/.\-](?P<m>[01]?\d)[/.\-](?P<y>20\d{2})(?!\d)")
 DATE_TXT_RE = re.compile(r"(?i)\b(?:(?P<d>[0-3]?\d)\s+)?(?P<mon>" + "|".join(MONTHS) + r")\s+(?P<y>20\d{2})\b")
 LABELS = [
+    (re.compile(r"(?i)proroga\s+(?:del(?:l')?\s*(?:termine\s+(?:di|per)\s+(?:l')?)?)?inizio\s+(?:dei\s+)?lavori"), "construction_start_extension"),
     (re.compile(r"(?i)inizio\s+(?:dei\s+)?lavori|avvio\s+(?:dei\s+)?lavori|apertura\s+(?:del\s+)?cantiere|consegna\s+(?:dei\s+)?lavori"), "construction_start"),
     (re.compile(r"(?i)fine\s+(?:dei\s+)?lavori|ultimazione\s+(?:dei\s+)?lavori|chiusura\s+(?:del\s+)?cantiere"), "construction_end"),
     (re.compile(r"(?i:entrata\s+in\s+esercizio|messa\s+in\s+esercizio|esercizio\s+commerciale|primo\s+parallelo)|\bCOD\b(?!\.)"), "commercial_operation"),
@@ -47,7 +48,7 @@ EVENT_CTX = re.compile(r"(?i)verbale\s+di\s+consegna|comunicazione\s+(?:di\s+)?i
                        r"(?:è|e')\s+stat[oa]\s+(?:avviat|iniziat|consegnat)|in\s+data\s+\S+\s+(?:sono|è)\s+(?:iniziat|stat)")
 
 
-DOC_REF_BEFORE = re.compile(r"(?i)(?:preventivo|prot(?:ocollo)?\.?|nota|decreto|d\.?\s?lgs|determin[ae]|delibera|circolare|"
+DOC_REF_BEFORE = re.compile(r"(?i)(?:preventivo|prot(?:ocollo)?\.?|nota|decreto|d\.\s?d\.|d\.\s?g\.\s?r\.|d\.\s?p\.\s?r\.|d\.?\s?lgs|determin[ae]|delibera|circolare|"
                             r"legge|parere|cod\.?\s+pratica|stmg|istanza|richiesta|comunicazione)[^.;]{0,40}"
                             r"(?:\bdel\b|\bin\s+data\b|\bn\.?\s*\S+\s+del\b|[-/]\s*)\s*$|\bal\s*$|cod\.\s*CER[^.;]{0,40}$")
 
@@ -134,16 +135,20 @@ def extract(ctx: PageContext) -> list[Fact]:
             continue  # unlabeled dates are document metadata, not milestones
         for m, iso in dates:
             before = line[max(0, m.start() - 60): m.start()]
-            if DOC_REF_BEFORE.search(before):
+            if DOC_REF_BEFORE.search(before) and label != "construction_start_extension":
                 continue  # date of a referenced act (preventivo, protocollo, decreto...), not a milestone
             # the date must follow its label closely, and be a plausible project date
             if m.start() < label_end - 1 or m.start() - label_end > 60 or int(iso[:4]) < 2015:
                 continue
             nature = temporal_nature(line, ctx_text, ctx.text)
+            if label == "construction_start_extension":
+                nature = "event_occurred" if DOC_REF_BEFORE.search(before) else nature
             facts.append(Fact(field=f"schedule.date.{label}", value=iso, citation=ctx.cite(ctx_text),
                               temporal=nature,
                               qualifiers={"raw": m.group(0)},
-                              limits={"event_occurred": "Statement of an occurred event: confirm with an independent act",
+                              limits="Date of the act granting an extension of the works-start deadline: NOT the start of works"
+                              if label == "construction_start_extension" else
+                              {"event_occurred": "Statement of an occurred event: confirm with an independent act",
                                       "template_reference": "Date inside a safety-plan/notification/template field: NOT evidence of works",
                                       "planned": "Planned date in a programme: NOT evidence that works started",
                                       }.get(nature, "Nature of this date not determinable from context"),

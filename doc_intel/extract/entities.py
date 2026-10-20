@@ -21,7 +21,7 @@ LEGAL_FORM = (r"(?-i:S\.\s?N\.\s?C\.?|SNC)(?![A-Za-z])|(?i:S\.?\s?R\.?\s?L\.?(?:
               r"S\.?\s?C\.?\s?A\.?\s?R\.?\s?L\.?|"
               r"SOCIET[AÀ]'?\s+A\s+RESPONSABILIT[AÀ]'?\s+LIMITATA|GMBH|S\.?A\.?U\.?|S\.?L\.?U?\.?(?![A-Za-z]))")
 COMPANY_RE = re.compile(
-    r"(?P<name>(?:[A-Z0-9][\w&'’.\-]*)(?:\s+[A-Za-z0-9&'’.\-]+){0,6}?)\s*,?\s+(?P<form>" + LEGAL_FORM + r")",
+    r"(?P<name>(?:(?:[a-z]-)?[A-Z0-9][\w&'’.\-]*)(?:\s+[A-Za-z0-9&'’.\-]+){0,6}?)\s*,?\s+(?P<form>" + LEGAL_FORM + r")",
     re.UNICODE)
 VAT_RE = re.compile(
     r"(?i)(?:P\.?\s?\.?\s?IVA|Partita\s+I\.?V\.?A\.?|P\.?\s?I\.(?!\w)|VAT(?:\s+(?:n(?:o|umber)?\.?))?|"

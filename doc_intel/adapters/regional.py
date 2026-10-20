@@ -281,9 +281,12 @@ class BoxSharedFolderAdapter(DocumentAdapter):
             if ids and ids == last_ids:
                 break  # the server ignores ?page=N: stop instead of looping
             if ids and ids == parent_ids:
-                errors.append("sub-folder URL returned the parent listing: folder URL format not supported")
-                state["bad_folder_url"] = True
-                break
+                # either the item is the folder itself (Box lists the current folder in the stream)
+                # or the sub-folder URL format is not honoured: after 3 such cases, stop recursing
+                state["parent_echo"] = state.get("parent_echo", 0) + 1
+                if state["parent_echo"] >= 3:
+                    state["bad_folder_url"] = True
+                return
             first_page_ids = ids if page == 1 else None
             last_ids = ids
             total = total or tot
@@ -318,6 +321,9 @@ class BoxSharedFolderAdapter(DocumentAdapter):
         except Exception as exc:
             return Discovery(identity, docs, procs, [f"Box listing failed: {exc}"[:200]])
         errors = [e for p in procs for e in p["errors"]]
+        if state.get("bad_folder_url"):
+            errors.append("sub-folder URLs return the parent listing: folder URL format not supported, "
+                          "sub-folders not listed")
         if not docs:
             errors.append("no files found in the embedded listing (page format may have changed)")
         return Discovery(identity, docs, procs, errors)
