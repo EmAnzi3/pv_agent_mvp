@@ -1,684 +1,127 @@
 {
- "schema": "pv-scheda/1.0",
+ "schema": "pv-scheda/2.0",
  "dossier_schema": "pv-dossier/1.0",
  "project_key": "url:910815a0c4750a6a",
  "title": "Progetto per la realizzazione di un impianto fotovoltaico, denominato \"Tortona 2\", di potenza pari a 60 MW, comprensivo alle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Tortona (AL), Pozzolo Formigaro (AL) e Frugarolo (AL).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8788",
  "source": "mase",
  "updated": "2026-10-20",
- "sections": [
+ "sintesi": [
   {
-   "id": "societa",
-   "title": "Società e ruoli",
-   "items": [
-    {
-     "label": "Geologo",
-     "value": "Dott. Geol. Vincenzo Cortese",
-     "status": "da documenti",
-     "occurrences": 2,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439048",
-      "page": 1,
-      "document": "RELAZIONE TERRE E ROCCE DA SCAVO",
-      "excerpt": "IL GEOLOGO Dott. Geol. Vincenzo Cortese"
-     },
-     "note": null
-    },
-    {
-     "label": "Proponente",
-     "value": "MARGISOLAR S.r.l.",
-     "status": "da documenti",
-     "occurrences": 377,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1438987",
-      "page": 1,
-      "document": "CAPITOLATO PROGETTO ESECUTIVO IMPIANTO FV ED OPERE DI CONNESSIONE",
-      "excerpt": "Committente: MARGISOLAR S.R.L."
-     },
-     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): MARGISOLAR ENERGY S.r.l. (12); Luisolar Energy S.r.l. (1)."
-    },
-    {
-     "label": "Società negli elaborati",
-     "value": "Margisolar S.R.L.",
-     "status": "verificato",
-     "detail": "P. IVA 03920651209 — sede legale: Viale Antonio Silvani 2 40122 Bologna Bo — citata 169 volte",
-     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
-     "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
-     }
-    },
-    {
-     "label": "Società negli elaborati",
-     "value": "Faro Gb Societa' A Responsabilita' Limitata - Societa' Di In",
-     "status": "verificato",
-     "detail": "P. IVA 09816980016 — sede legale: Corso Unione Sovietica 612/15B 10135 Torino To — citata 135 volte",
-     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
-     "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
-     }
-    },
-    {
-     "label": "Società negli elaborati",
-     "value": "Luisolar Energy S.R.L.",
-     "status": "verificato",
-     "detail": "P. IVA 03920631201 — sede legale: Viale Antonio Silvani 2 40122 Bologna Bo — citata 5 volte",
-     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
-     "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
-     }
-    }
-   ]
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "60 MW",
+   "sub": "Suddivisa in 5 sottoimpianti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8788",
+    "excerpt": "60 MW"
+   }
   },
   {
-   "id": "tecnica",
-   "title": "Caratteristiche tecniche",
-   "items": [
-    {
-     "label": "Potenza (dal titolo del procedimento)",
-     "status": "verificato",
-     "note": null,
-     "value": "60 MW",
-     "source": {
-      "document": "titolo del procedimento",
-      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8788",
-      "excerpt": "60 MW"
-     }
-    },
-    {
-     "label": "Suddivisione",
-     "value": "5 sottoimpianti",
-     "status": "da documenti",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/805845",
-      "page": 39,
-      "document": "Integrazioni del 21/03/2023 - MIC.02_Relazione paesaggistica",
-      "excerpt": "• campo fotovoltaico (o generatore fotovoltaico), suddiviso in 5 sottoimpianti distribuiti nei due siti;"
-     }
-    },
-    {
-     "label": "Superficie a disposizione",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "99,525 ha",
-       "occurrences": 5,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/1439027",
-        "page": 8,
-        "document": "Relazione Agronomica sull'uso del suolo con piano di coltura",
-        "excerpt": "che la superficie non coltivabile coperta dai moduli è pari a 16,898 ha, la superficie totale dell’area non agricola è di totali 24,379 ha su una superficie complessiva del sistema agrivoltaico di 99,525 ha. A fronte di "
-       }
-      },
-      {
-       "value": "101,39 ha",
-       "occurrences": 2,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/1438995",
-        "page": 14,
-        "document": "PARCO AV - PIANO DI SICUREZZA E COORDINAMENTO",
-        "excerpt": "(punto 2.2.1, lettera a, Allegato XV del D.Lgs. 81/2008 e s.m.i.) Il terreno reso disponibile per l’intervento ha una superficie pari a circa 101,39 ettari, mentre la superficie massima coperta dall’impianto sarà di circ"
-       }
-      },
-      {
-       "value": "111,833 ha",
-       "occurrences": 1,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/1161323",
-        "page": 6,
-        "document": "Allegato al Decreto del Ministero dell'Ambiente e della Sicurezza Energetica - Parere della Commissione tecnica PNRR-PNIEC n. 381 del 8 agosto 2024",
-        "excerpt": "è composta da una pluralità di appezzamenti aventi forma irregolare. L’area interessata si estende per una superficie catastale a disposizione di circa 1.118.326 m2 mentre la superficie effettiva è di 995.250 m2 e la sup"
-       }
-      },
-      {
-       "value": "74,9 ha",
-       "occurrences": 1,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/1161323",
-        "page": 20,
-        "document": "Allegato al Decreto del Ministero dell'Ambiente e della Sicurezza Energetica - Parere della Commissione tecnica PNRR-PNIEC n. 381 del 8 agosto 2024",
-        "excerpt": "iniziative ricadenti nel raggio di 5 Km_revA). In tale fascia il Proponente individua gli impianti elencati nella tabella seguente. I fotovoltaici esistenti occupano una superficie complessiva di 74.9 ha per una potenza "
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
-    },
-    {
-     "label": "Superficie occupata dai pannelli",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "28,982 ha",
-       "occurrences": 9,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/1439019",
-        "page": 9,
-        "document": "Piano di Monitoraggio Ambientale (PMA)",
-        "excerpt": "L’area interessata dall’intervento ed oggetto di analisi si estende per una superficie di 995.250 m2 e la superficie totale dei moduli in orizzontale sarà di circa 289.820 m2. I terreni sono pianeggianti e l’area dell’in"
-       }
-      },
-      {
-       "value": "29,913 ha",
-       "occurrences": 8,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/706440",
-        "page": 53,
-        "document": "Studio di impatto ambientale",
-        "excerpt": "È prevista l’installazione di 105.280 moduli. La superficie totale dei moduli in orizzontale sarà pari a circa 299.125 m2 e l’impianto avrà una potenza di 60.009,6 kWp."
-       }
-      },
-      {
-       "value": "16,898 ha",
-       "occurrences": 5,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/1439027",
-        "page": 7,
-        "document": "Relazione Agronomica sull'uso del suolo con piano di coltura",
-        "excerpt": "5,08 m, occupando teoricamente per l’intero impianto in corrispondenza della disposizione delle file, una superficie complessiva proiettata al suolo di 16,898 ha. Similmente lo spazio coltivabile totalmente libero, sempr"
-       }
-      },
-      {
-       "value": "28,314 ha",
-       "occurrences": 5,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/1439027",
-        "page": 8,
-        "document": "Relazione Agronomica sull'uso del suolo con piano di coltura",
-        "excerpt": "Inoltre la percentuale di superficie sottostante la proiezione dei pannelli pari a 28,3142 ha su 99,5250 ha totali della superficie del sistema agrivoltaico, corrisponde a una quota del 28,45%, che rispetta il"
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
-    },
-    {
-     "label": "Strutture",
-     "value": "tracker monoassiali",
-     "status": "da documenti",
-     "occurrences": 141,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1438987",
-      "page": 7,
-      "document": "CAPITOLATO PROGETTO ESECUTIVO IMPIANTO FV ED OPERE DI CONNESSIONE",
-      "excerpt": "supporto ad inseguimento monoassiale (più sinteticamente “inseguitori\"), composte da 52 o da 26"
-     },
-     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): strutture fisse (26)."
-    },
-    {
-     "label": "Tipologia",
-     "value": "agrivoltaico",
-     "status": "da documenti",
-     "occurrences": 1849,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439073",
-      "page": 2,
-      "document": "Elenco Elaborati della documentazione tecnica",
-      "excerpt": "CRONOPROGRAMMA PARCO AGRIVOLTAICO"
-     },
-     "note": null
-    },
-    {
-     "label": "Pali da infiggere (totale)",
-     "value": "8.783",
-     "status": "da documenti",
-     "note": null,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439027",
-      "page": 7,
-      "document": "Relazione Agronomica sull'uso del suolo con piano di coltura",
-      "excerpt": "e 1 da 28 moduli in entrambi i casi da 2,795 m2 che, dotata le prime di 5 pali di supporto ciascuna e la seconda di 3 pali, determinano un numero complessivi massimo di pali infissi al suolo pari a 8.783."
-     }
-    }
-   ]
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico · tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1439073",
+    "page": 2,
+    "document": "Elenco Elaborati della documentazione tecnica",
+    "excerpt": "CRONOPROGRAMMA PARCO AGRIVOLTAICO"
+   }
   },
   {
-   "id": "ubicazione",
-   "title": "Ubicazione",
-   "items": [
-    {
-     "label": "Comuni",
-     "value": "Tortona, Pozzolo Formigaro, Frugarolo (AL)",
-     "status": "verificato",
-     "source": {
-      "document": "scheda ufficiale del procedimento",
-      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8788"
-     }
-    },
-    {
-     "label": "Perimetri delle aree",
-     "value": "9 poligoni ricostruiti dalle tabelle dei vertici",
-     "status": "da confermare",
-     "note": "Da verificare sulle tavole prima dell'uso cartografico.",
-     "geojson": [
-      {
-       "type": "Polygon",
-       "coordinates": [
-        [
-         [
-          8.7716195,
-          44.8364797
-         ],
-         [
-          8.7755162,
-          44.8365145
-         ],
-         [
-          8.776301,
-          44.8331402
-         ],
-         [
-          8.7710888,
-          44.8331209
-         ],
-         [
-          8.7716195,
-          44.8364797
-         ]
-        ]
-       ]
-      },
-      {
-       "type": "Polygon",
-       "coordinates": [
-        [
-         [
-          8.7761734,
-          44.8367048
-         ],
-         [
-          8.7792075,
-          44.8373139
-         ],
-         [
-          8.7781917,
-          44.8316675
-         ],
-         [
-          8.777269,
-          44.8314497
-         ],
-         [
-          8.7761734,
-          44.8367048
-         ]
-        ]
-       ]
-      },
-      {
-       "type": "Polygon",
-       "coordinates": [
-        [
-         [
-          8.782531,
-          44.8383735
-         ],
-         [
-          8.7882658,
-          44.8375021
-         ],
-         [
-          8.784701,
-          44.8332554
-         ],
-         [
-          8.7796015,
-          44.8335427
-         ],
-         [
-          8.782531,
-          44.8383735
-         ]
-        ]
-       ]
-      },
-      {
-       "type": "Polygon",
-       "coordinates": [
-        [
-         [
-          8.7774099,
-          44.8309908
-         ],
-         [
-          8.7834424,
-          44.8315066
-         ],
-         [
-          8.7807431,
-          44.8294039
-         ],
-         [
-          8.7777067,
-          44.8294971
-         ],
-         [
-          8.7774099,
-          44.8309908
-         ]
-        ]
-       ]
-      },
-      {
-       "type": "Polygon",
-       "coordinates": [
-        [
-         [
-          8.7808327,
-          44.8424933
-         ],
-         [
-          8.7866179,
-          44.8451779
-         ],
-         [
-          8.7918081,
-          44.8410914
-         ],
-         [
-          8.7880224,
-          44.8383028
-         ],
-         [
-          8.7811357,
-          44.8393251
-         ],
-         [
-          8.7808327,
-          44.8424933
-         ]
-        ]
-       ]
-      },
-      {
-       "type": "Polygon",
-       "coordinates": [
-        [
-         [
-          8.7715691,
-          44.8364436
-         ],
-         [
-          8.7755292,
-          44.8364335
-         ],
-         [
-          8.7762252,
-          44.833122
-         ],
-         [
-          8.7710379,
-          44.8331928
-         ],
-         [
-          8.7715691,
-          44.8364436
-         ]
-        ]
-       ]
-      },
-      {
-       "type": "Polygon",
-       "coordinates": [
-        [
-         [
-          8.7762494,
-          44.836678
-         ],
-         [
-          8.779195,
-          44.8372688
-         ],
-         [
-          8.7783309,
-          44.8316678
-         ],
-         [
-          8.7773066,
-          44.8315578
-         ],
-         [
-          8.7762494,
-          44.836678
-         ]
-        ]
-       ]
-      },
-      {
-       "type": "Polygon",
-       "coordinates": [
-        [
-         [
-          8.7823792,
-          44.8383732
-         ],
-         [
-          8.788228,
-          44.837448
-         ],
-         [
-          8.7845492,
-          44.8332551
-         ],
-         [
-          8.7796648,
-          44.8335248
-         ],
-         [
-          8.7823792,
-          44.8383732
-         ]
-        ]
-       ]
-      },
-      {
-       "type": "Polygon",
-       "coordinates": [
-        [
-         [
-          8.7775115,
-          44.830892
-         ],
-         [
-          8.7833544,
-          44.8313534
-         ],
-         [
-          8.7807814,
-          44.829323
-         ],
-         [
-          8.7778082,
-          44.8293982
-         ],
-         [
-          8.7775115,
-          44.830892
-         ]
-        ]
-       ]
-      }
-     ],
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/805847",
-      "page": 17,
-      "document": "Integrazioni del 21/03/2023 - MIC.04_D10_Relazione descrittiva e del contesto agronomica",
-      "excerpt": ""
-     }
-    },
-    {
-     "label": "Coordinate del sito",
-     "value": "44.84600 N, 8.78820 E; 44.82932 N, 8.77739 E; 44.83209 N, 8.68728 E; 44.83183 N, 8.68666 E",
-     "status": "da documenti",
-     "note": "Spigoli o centri dichiarati negli elaborati, non il perimetro.",
-     "points": [
-      [
-       44.846,
-       8.7882
-      ],
-      [
-       44.82932,
-       8.77739
-      ],
-      [
-       44.83209,
-       8.68728
-      ],
-      [
-       44.83183,
-       8.68666
-      ]
-     ],
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1438995",
-      "page": 11,
-      "document": "PARCO AV - PIANO DI SICUREZZA E COORDINAMENTO",
-      "excerpt": ""
-     }
-    }
-   ]
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "99,525 ha",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 101,39 ha (2), 111,833 ha (1), 74,9 ha (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1439027",
+    "page": 8,
+    "document": "Relazione Agronomica sull'uso del suolo con piano di coltura",
+    "excerpt": "che la superficie non coltivabile coperta dai moduli è pari a 16,898 ha, la superficie totale dell’area non agricola è di totali 24,379 ha su una superficie complessiva del sistema agrivoltaico di 99,525 ha. A fronte di "
+   }
   },
   {
-   "id": "contatti",
-   "title": "Contatti trovati negli elaborati",
-   "items": [
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "28,982 ha",
+   "status": "da verificare",
+   "sub": "29% dell'area · Valore più ricorrente negli elaborati; altri valori: 29,913 ha (8), 16,898 ha (5), 28,314 ha (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1439019",
+    "page": 9,
+    "document": "Piano di Monitoraggio Ambientale (PMA)",
+    "excerpt": "L’area interessata dall’intervento ed oggetto di analisi si estende per una superficie di 995.250 m2 e la superficie totale dei moduli in orizzontale sarà di circa 289.820 m2. I terreni sono pianeggianti e l’area dell’in"
+   }
+  },
+  {
+   "key": "pali",
+   "label": "Pali da infiggere",
+   "value": "8.783",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1439027",
+    "page": 7,
+    "document": "Relazione Agronomica sull'uso del suolo con piano di coltura",
+    "excerpt": "e 1 da 28 moduli in entrambi i casi da 2,795 m2 che, dotata le prime di 5 pali di supporto ciascuna e la seconda di 3 pali, determinano un numero complessivi massimo di pali infissi al suolo pari a 8.783."
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da documenti",
+   "sub": "Inizio lavori 01/09/2026 (campo presunto di piano di sicurezza o notifica) · Valore prevalente negli elaborati; altri valori: 18 mesi (3), 5 mesi (2), 6-8 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1438993",
+    "page": 15,
+    "document": "PARCO AV - PIANO DI DISMISSIONE E SMANTELLAMENTO DELL'OPERA A FINE ESERCIZIO E RIPRISTINO DEI LUOGHI",
+    "excerpt": "con più squadre in parallelo sui sottocampi e buona pianificazione logistica, per un impianto di questa taglia si attesta tra 10 e 12 mesi, di cui 6-8 mesi di lavori fisici intensivi. Con un'unica squadra che opera seque"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Piemonte",
+  "provincia": "AL",
+  "comuni": [
+   "Tortona",
+   "Pozzolo Formigaro",
+   "Frugarolo"
+  ],
+  "coordinate": {
+   "lat": 44.83209,
+   "lon": 8.77739,
+   "tipo": "punto dell'area d'impianto indicato negli elaborati",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1438995",
+    "page": 11,
+    "document": "PARCO AV - PIANO DI SICUREZZA E COORDINAMENTO",
+    "excerpt": "- altezza 120,4 m sul livello del mare; - spigolo nord-est 44.84600, 8.78820"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=44.83209,8.77739",
+  "maps_precision": "coordinate"
+ },
+ "soggetti": [
+  {
+   "name": "Margisolar S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "03920651209",
+   "vat_group": false,
+   "verified": true,
+   "office": "Viale Antonio Silvani 2 40122 Bologna Bo",
+   "contacts": [
     {
-     "label": "Telefono",
-     "value": "0131325087",
-     "status": "da confermare",
-     "detail": "compare 945 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439004",
-      "page": 5,
-      "document": "ASSEVERAZIONE DI COMPATIBILITÀ TERRITORIALE E AMBIENTALE (Condizione Ambientale n. 1, lettera o) - Parere CTPNRR-PNIEC n. 381/2024 - art. 28",
-      "excerpt": "tel. 0131 325087"
-     }
-    },
-    {
-     "label": "E-mail",
-     "value": "carlo.bidone@inwind.it",
-     "status": "da confermare",
-     "detail": "compare 945 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439004",
-      "page": 5,
-      "document": "ASSEVERAZIONE DI COMPATIBILITÀ TERRITORIALE E AMBIENTALE (Condizione Ambientale n. 1, lettera o) - Parere CTPNRR-PNIEC n. 381/2024 - art. 28",
-      "excerpt": "tel. 0131 325087 e-mail: carlo.bidone@inwind.it"
-     }
-    },
-    {
-     "label": "E-mail — LAB Ambiente e Sicurezza S.r.l.",
-     "value": "info@labambientesicurezza.com",
-     "status": "da confermare",
-     "detail": "compare 377 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439048",
-      "page": 17,
-      "document": "RELAZIONE TERRE E ROCCE DA SCAVO",
-      "excerpt": "Email: info@labambientesicurezza.com | PEC: lab@pec.labamblentesicurezza.com | Sito internet: www.labambientesicurezza.com"
-     }
-    },
-    {
-     "label": "PEC — LAB Ambiente e Sicurezza S.r.l.",
-     "value": "lab@pec.labambientesicurezza.com",
-     "status": "da confermare",
-     "detail": "compare 359 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439048",
-      "page": 18,
-      "document": "RELAZIONE TERRE E ROCCE DA SCAVO",
-      "excerpt": "Email: info@labambientesicurezza.com | PEC: lab@pec.labambientesicurezza.com | Sito internet: www.labambientesicurezza.com"
-     }
-    },
-    {
-     "label": "Telefono — INTEGRA S.r.l.",
-     "value": "0131863490",
-     "status": "da confermare",
-     "detail": "compare 168 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1438987",
-      "page": 1,
-      "document": "CAPITOLATO PROGETTO ESECUTIVO IMPIANTO FV ED OPERE DI CONNESSIONE",
-      "excerpt": "tel. 0131 863490"
-     }
-    },
-    {
-     "label": "E-mail — INTEGRA S.r.l.",
-     "value": "integra@integraingegneria.it",
-     "status": "da confermare",
-     "detail": "compare 125 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439023",
-      "page": 1,
-      "document": "Piano di Monitoraggio Ambientale: Componente Biodiversità - Fauna",
-      "excerpt": "e-mail: integra@integraingegneria.it Corso Unione Sovietica 612/15B - 10135 Torino (To) i a"
-     }
-    },
-    {
-     "label": "E-mail — Margisolar S.r.l.",
-     "value": "agroambiente@tor.it",
-     "status": "da confermare",
-     "detail": "compare 115 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439027",
-      "page": 2,
-      "document": "Relazione Agronomica sull'uso del suolo con piano di coltura",
-      "excerpt": "Dott. agronomo DELIO BARBIERI - Via Pedenovi 20 - 15057 Tortona (AL) - tel. 0131 862850 - e-mail: agroambiente@tor.it"
-     }
-    },
-    {
-     "label": "Telefono — Margisolar S.r.l.",
-     "value": "0131862850",
-     "status": "da confermare",
-     "detail": "compare 113 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439027",
-      "page": 2,
-      "document": "Relazione Agronomica sull'uso del suolo con piano di coltura",
-      "excerpt": "Dott. agronomo DELIO BARBIERI - Via Pedenovi 20 - 15057 Tortona (AL) - tel. 0131 862850 - e-mail: agroambiente@tor.it"
-     }
-    },
-    {
-     "label": "Telefono",
-     "value": "0667234401",
-     "status": "da confermare",
-     "detail": "compare 52 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/729740",
-      "page": 2,
-      "document": "Richiesta integrazioni MiC",
-      "excerpt": "Via di San Michele 22, 00153 Roma - Tel. 06-6723.4401"
-     }
-    },
-    {
-     "label": "E-mail — Delta OHM S.r.l.",
-     "value": "info@deltaohm.com",
-     "status": "da confermare",
-     "detail": "compare 30 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439025",
-      "page": 67,
-      "document": "VALUTAZIONE DI IMPATTO ACUSTICO",
-      "excerpt": "e-mail: info@deltaohm.com"
-     }
-    },
-    {
-     "label": "Telefono — Delta OHM S.r.l.",
-     "value": "0039049897715",
-     "status": "da confermare",
-     "detail": "compare 23 volte",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439025",
-      "page": 67,
-      "document": "VALUTAZIONE DI IMPATTO ACUSTICO",
-      "excerpt": "Tel. 0039-0498977150 P"
-     }
-    },
-    {
-     "label": "PEC — Margisolar S.R.L.",
+     "type": "PEC",
      "value": "margisolar@legalmail.it",
-     "status": "da confermare",
-     "detail": "compare 23 volte",
+     "occurrences": 23,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1439030",
       "page": 1,
@@ -687,10 +130,86 @@
      }
     },
     {
-     "label": "E-mail — FAROGB S.r.l.",
+     "type": "E-mail",
+     "value": "agroambiente@tor.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/706408",
+      "page": 9,
+      "document": "Relazione Agronomica",
+      "excerpt": "mo DELIO BARBIERI - Via Pedenovi 20 - Tortona (AL) - tel. 0131 862850 - e-mail: agroambiente@tor.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "fsarzani@opdenergy.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1018317",
+      "page": 32,
+      "document": "Parere del Ministero della Cultura - Soprintendenza speciale per il Piano Nazionale di Ripresa e Resilienza in data 09/04/2024",
+      "excerpt": "(margisolar@legalmail.it fsarzani@opdenergy.com)"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0131862850",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/706408",
+      "page": 9,
+      "document": "Relazione Agronomica",
+      "excerpt": "mo DELIO BARBIERI - Via Pedenovi 20 - Tortona (AL) - tel. 0131 862850 - e-mail: agroambiente@tor.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8788"
+   }
+  },
+  {
+   "name": "Dott. Geol. Vincenzo Cortese",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1439048",
+    "page": 1,
+    "document": "RELAZIONE TERRE E ROCCE DA SCAVO",
+    "excerpt": "IL GEOLOGO Dott. Geol. Vincenzo Cortese"
+   }
+  },
+  {
+   "name": "Faro GB S.r.l. - Societa' DI IN",
+   "kind": "società",
+   "roles": [],
+   "vat": "09816980016",
+   "vat_group": false,
+   "verified": true,
+   "office": "Corso Unione Sovietica 612/15B 10135 Torino To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@farogb.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1438995",
+      "page": 6,
+      "document": "PARCO AV - PIANO DI SICUREZZA E COORDINAMENTO",
+      "excerpt": "Indirizzo e-mail: info@farogb.it"
+     }
+    },
+    {
+     "type": "E-mail",
      "value": "fasanosg@gmail.com",
-     "status": "da confermare",
-     "detail": "compare 17 volte",
+     "occurrences": 1,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1439023",
       "page": 1,
@@ -699,188 +218,589 @@
      }
     },
     {
-     "label": "Telefono",
-     "value": "01119680173",
-     "status": "da confermare",
-     "detail": "compare 16 volte",
+     "type": "E-mail",
+     "value": "fasanosa@gmail.com",
+     "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439035",
+      "url": "https://va.mite.gov.it/File/Documento/1439028",
       "page": 1,
-      "document": "Osservazioni all'aggiornamento del Piano di Monitoraggio Ambientale proposto da Margisolar S.r.l.",
-      "excerpt": "Via Pio VII, 9 – 10135 Torino – Tel. 01119680173 – fax 01119681621"
+      "document": "Monitoraggio Ambientale - Fase Ante Operam: Componente Biodiversità - Fauna",
+      "excerpt": "e-mail: integra@integraingeaneria.it Corso Unione Sovietica 612/15B - 10135 Torino (To) fpinto gra@integraingeg P.IVA 09816980016 e-mail: fasanosa@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0113161704",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1438988",
+      "page": 1,
+      "document": "CAPITOLATO TECNICO OPERE DI MITIGAZIONE",
+      "excerpt": "Corso Unione Sovietica 612/15B - 10135 Torino (To) tel. 0113.161704 - fax 0113.161704"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0131863490",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439023",
+      "page": 1,
+      "document": "Piano di Monitoraggio Ambientale: Componente Biodiversità - Fauna",
+      "excerpt": "Via Emilia 199 - 15057 Tortona (AL) FAROGB s.r.l, 012082 Chasse (CN) tel. 0131.863490 - fax 0131.1926520 Dott. Ing. Gabriele Bulgarelli tel ,335 6205253"
      }
     }
    ],
-   "note": "Recapiti stampati negli elaborati (intestazioni, firme, timbri), esclusi quelli di enti pubblici. «Da confermare» = il soggetto accanto al recapito non è certo: verificare prima di contattare."
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
   },
   {
-   "id": "tempi",
-   "title": "Tempi e cantiere",
-   "items": [
+   "name": "Luisolar Energy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03920631201",
+   "vat_group": false,
+   "verified": true,
+   "office": "Viale Antonio Silvani 2 40122 Bologna Bo",
+   "contacts": [],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Dott. Agr. Carlo Bidone",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
     {
-     "label": "Fine lavori",
-     "value": "30/08/2028",
-     "status": "da confermare",
-     "occurrences": 2,
+     "type": "E-mail",
+     "value": "carlo.bidone@inwind.it",
+     "occurrences": 944,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1438995",
-      "page": 3,
-      "document": "PARCO AV - PIANO DI SICUREZZA E COORDINAMENTO",
-      "excerpt": "Data fine lavori (presunta): 30/08/2028 Durata in giorni (presunta):"
-     },
-     "note": "Natura del dato: campo presunto di piano di sicurezza o notifica. Non prova l'avvio del cantiere."
+      "url": "https://va.mite.gov.it/File/Documento/1439004",
+      "page": 8,
+      "document": "ASSEVERAZIONE DI COMPATIBILITÀ TERRITORIALE E AMBIENTALE (Condizione Ambientale n. 1, lettera o) - Parere CTPNRR-PNIEC n. 381/2024 - art. 28",
+      "excerpt": "Piazza Turati 5 - Alessandria - tel. 0131 325087 - e-mail carlo.bidone@inwind.it"
+     }
     },
     {
-     "label": "Inizio lavori",
-     "value": "01/09/2026",
-     "status": "da confermare",
-     "occurrences": 2,
+     "type": "Telefono",
+     "value": "0131325087",
+     "occurrences": 933,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1438995",
-      "page": 3,
-      "document": "PARCO AV - PIANO DI SICUREZZA E COORDINAMENTO",
-      "excerpt": "Data inizio lavori: 01/09/2026 Data fine lavori (presunta):"
-     },
-     "note": "Natura del dato: campo presunto di piano di sicurezza o notifica. Non prova l'avvio del cantiere."
-    },
-    {
-     "label": "Durata cantiere",
-     "value": "12 mesi",
-     "status": "da documenti",
-     "occurrences": 14,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1438993",
-      "page": 15,
-      "document": "PARCO AV - PIANO DI DISMISSIONE E SMANTELLAMENTO DELL'OPERA A FINE ESERCIZIO E RIPRISTINO DEI LUOGHI",
-      "excerpt": "con più squadre in parallelo sui sottocampi e buona pianificazione logistica, per un impianto di questa taglia si attesta tra 10 e 12 mesi, di cui 6-8 mesi di lavori fisici intensivi. Con un'unica squadra che opera seque"
-     },
-     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): 18 mesi (3); 5 mesi (2); 6-8 mesi (2)."
-    },
-    {
-     "label": "Durata dismissione",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "12 mesi",
-       "occurrences": 12,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/1439001",
-        "page": 16,
-        "document": "PARCO AV - PIANO MANUTENZIONE DEGLI INTERVENTI, COMPRENSIVO DELLE OPERE DI MITIGAZIONE",
-        "excerpt": "01.01.01.I01 Serraggio e ripristino Cadenza: ogni 12 mesi Ripristino delle coppie di serraggio, sostituzione di elementi corrosi o deformati e ripristino della protezione zincante localmente"
-       }
-      },
-      {
-       "value": "6-9 mesi",
-       "occurrences": 6,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/1439055",
-        "page": 159,
-        "document": "Sintesi dello Studio di Impatto Ambientale",
-        "excerpt": "parlare di significatività bassa, in quanto limitata nel tempo (circa 12 mesi per il cantiere per la costruzione e altri 6-9 mesi per la dismissione) e facilmente reversibili nel tempo."
-       }
-      },
-      {
-       "value": "2 anni",
-       "occurrences": 5,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/1439001",
-        "page": 32,
-        "document": "PARCO AV - PIANO MANUTENZIONE DEGLI INTERVENTI, COMPRENSIVO DELLE OPERE DI MITIGAZIONE",
-        "excerpt": "02.02.02.I01 Ripristino Cadenza: ogni 2 anni Ripristino delle tenute di serraggio tra elementi. Sostituzione di eventuali elementi corrosi o degradati con altri di analoghe"
-       }
-      },
-      {
-       "value": "6 mesi",
-       "occurrences": 2,
-       "source": {
-        "url": "https://va.mite.gov.it/File/Documento/706410",
-        "page": 39,
-        "document": "Relazione di Impatto Acustico",
-        "excerpt": "La durata del cantiere sarà pari a 12 mesi relativamente alla fase id realizzazione dell’impianto, mentre la sua dismissione richiederà almeno 6 mesi. In via del tutto indicativa, le principali attività da svolgersi, al "
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
-    },
-    {
-     "label": "Vita utile",
-     "value": "30 anni",
-     "status": "da documenti",
-     "occurrences": 6,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1438993",
-      "page": 3,
-      "document": "PARCO AV - PIANO DI DISMISSIONE E SMANTELLAMENTO DELL'OPERA A FINE ESERCIZIO E RIPRISTINO DEI LUOGHI",
-      "excerpt": "picco circa pari a 60 MWp su un terreno ad uso agricolo di estensione di circa 100 ha. Al termine della vita utile dell’impianto, pari a 30 anni, si procederà alla dismissione dello stesso e al ripristino del sito in con"
-     },
-     "note": null
+      "url": "https://va.mite.gov.it/File/Documento/1439004",
+      "page": 8,
+      "document": "ASSEVERAZIONE DI COMPATIBILITÀ TERRITORIALE E AMBIENTALE (Condizione Ambientale n. 1, lettera o) - Parere CTPNRR-PNIEC n. 381/2024 - art. 28",
+      "excerpt": "Piazza Turati 5 - Alessandria - tel. 0131 325087 - e-mail carlo.bidone@inwind.it"
+     }
     }
-   ]
+   ],
+   "source": null
+  },
+  {
+   "name": "Integra S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "integraingegneria@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1438989",
+      "page": 1,
+      "document": "INQUADRAMENTO IMPIANTO SU BASE CATASTALE",
+      "excerpt": "tel. 0131 863490 integraingegneria@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "integra@integraingegneria.it",
+     "occurrences": 125,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439023",
+      "page": 1,
+      "document": "Piano di Monitoraggio Ambientale: Componente Biodiversità - Fauna",
+      "excerpt": "e-mail: integra@integraingegneria.it Corso Unione Sovietica 612/15B - 10135 Torino (To) i a"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "mcastagnello@integraingegneria.it",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1438995",
+      "page": 2,
+      "document": "PARCO AV - PIANO DI SICUREZZA E COORDINAMENTO",
+      "excerpt": "Tel.: 0131 863490 E-Mail: mcastagnello@integraingegneria.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "integra@integraingeaneria.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439028",
+      "page": 1,
+      "document": "Monitoraggio Ambientale - Fase Ante Operam: Componente Biodiversità - Fauna",
+      "excerpt": "tel. 0131.863490 - fax 0131.1926520 Dott. Ing. Gabriele Bulgarelli tel 335 6205251 e-mail: integra@integraingeaneria.it Corso Unione Sovietica 612/15B - 10135 Torino (To) fpinto"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0131863490",
+     "occurrences": 148,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1438987",
+      "page": 1,
+      "document": "CAPITOLATO PROGETTO ESECUTIVO IMPIANTO FV ED OPERE DI CONNESSIONE",
+      "excerpt": "via Emilia, 199 - 15057 Tortona (AL) tel. 0131 863490"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. agronomo Delio Barbieri",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "agroambiente@tor.it",
+     "occurrences": 114,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439027",
+      "page": 2,
+      "document": "Relazione Agronomica sull'uso del suolo con piano di coltura",
+      "excerpt": "Dott. agronomo DELIO BARBIERI - Via Pedenovi 20 - 15057 Tortona (AL) - tel. 0131 862850 - e-mail: agroambiente@tor.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0131862850",
+     "occurrences": 112,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439027",
+      "page": 2,
+      "document": "Relazione Agronomica sull'uso del suolo con piano di coltura",
+      "excerpt": "Dott. agronomo DELIO BARBIERI - Via Pedenovi 20 - 15057 Tortona (AL) - tel. 0131 862850 - e-mail: agroambiente@tor.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3356116594",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/706408",
+      "page": 1,
+      "document": "Relazione Agronomica",
+      "excerpt": "via Guido Pedenovi, 20 - 15057 Tortona (AL) tel .3356116594 - e-mail:agroambiente@tor.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "LAB Ambiente e Sicurezza S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "lab@pec.labambientesicurezza.com",
+     "occurrences": 35,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439048",
+      "page": 29,
+      "document": "RELAZIONE TERRE E ROCCE DA SCAVO",
+      "excerpt": "Email: info@labambientesicurezza.com | PEC: lab@pec.labambientesicurezza.com | Sito Internet: www.labambientesicurezza.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@labambientesicurezza.com",
+     "occurrences": 34,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439048",
+      "page": 29,
+      "document": "RELAZIONE TERRE E ROCCE DA SCAVO",
+      "excerpt": "Email: info@labambientesicurezza.com | PEC: lab@pec.labambientesicurezza.com | Sito Internet: www.labambientesicurezza.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@labambientesteurezza.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439050",
+      "page": 26,
+      "document": "RAPPORTO DI PROVA",
+      "excerpt": "Email: info@labambientesteurezza.com | PEC: lab@pec.labambientesicurezza.com | Sito internet: www.labambientesicurezza.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@labambientesicurezza.cam",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439052",
+      "page": 35,
+      "document": "RAPPORTO DI PROVA",
+      "excerpt": "Email: info@labambientesicurezza.cam | PEC: lab@pec.labambientesicurezza.com | Sito internet: www.labambientesicurezza.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Delta OHM S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@deltaohm.com",
+     "occurrences": 30,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439025",
+      "page": 67,
+      "document": "VALUTAZIONE DI IMPATTO ACUSTICO",
+      "excerpt": "e-mail: info@deltaohm.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0039049897715",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439025",
+      "page": 67,
+      "document": "VALUTAZIONE DI IMPATTO ACUSTICO",
+      "excerpt": "35030 Caselle di Selvazzano (PD) Laboratorio Accreditato ZIONE TO LAT N° 124 Tel. 0039-0498977150 P"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Vet. Sergio G. Fasano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "fasanosg@gmail.com",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439023",
+      "page": 2,
+      "document": "Piano di Monitoraggio Ambientale: Componente Biodiversità - Fauna",
+      "excerpt": "Piano di Monitoraggio Ambientale: Componente Biodiversità - Fauna Dott. Vet. Sergio G. Fasano • Fraz. San Bartolomeo 30 - Cherasco (CN) • tel 335.6205253 • e-mail: fasanosg@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3356205253",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439023",
+      "page": 2,
+      "document": "Piano di Monitoraggio Ambientale: Componente Biodiversità - Fauna",
+      "excerpt": "Piano di Monitoraggio Ambientale: Componente Biodiversità - Fauna Dott. Vet. Sergio G. Fasano • Fraz. San Bartolomeo 30 - Cherasco (CN) • tel 335.6205253 • e-mail: fasanosg@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Gestione Acqua S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@gestioneacqua.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439024",
+      "page": 29,
+      "document": "RELAZIONE TECNICA SPECIALISTICA",
+      "excerpt": "Tel. 800.338400 info@gestioneacqua.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "EE EE A il EE ll crei sl",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "lab@pec.labambientesicurezza.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439048",
+      "page": 30,
+      "document": "RELAZIONE TERRE E ROCCE DA SCAVO",
+      "excerpt": "Email: info@labambientesicurezza.com | PEC: lab@pec.labambientesicurezza.com | Sito internet: www.labambientesicurezza.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@labambientesicurezza.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439048",
+      "page": 30,
+      "document": "RELAZIONE TERRE E ROCCE DA SCAVO",
+      "excerpt": "Email: info@labambientesicurezza.com | PEC: lab@pec.labambientesicurezza.com | Sito internet: www.labambientesicurezza.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Ing. Gabriele Bulgarelli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3356205251",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439028",
+      "page": 1,
+      "document": "Monitoraggio Ambientale - Fase Ante Operam: Componente Biodiversità - Fauna",
+      "excerpt": "Via Emilia 199 - 15057 Tortona (AL) FAROGB s.r.l. 12082 Cherasco (CN) tel. 0131.863490 - fax 0131.1926520 Dott. Ing. Gabriele Bulgarelli tel 335 6205251"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Cini lei nl capii crei i cerniere sl",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@labambientesicurezza.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439050",
+      "page": 42,
+      "document": "RAPPORTO DI PROVA",
+      "excerpt": "Email: info@labambientesicurezza.com | PEC: lab®@pec.labambientesicurezza.com | Sito internet: www.labambientesicurezza.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Archeologia S.r.l.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "archeologiasrls@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439070",
+      "page": 1,
+      "document": "Parere MIC - Attraversamento di strada Levata",
+      "excerpt": "c.a. dott. R. Prosperi pec: archeologiasrls@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Filippo Baretti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0114323476",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/735725",
+      "page": 2,
+      "document": "Parere della Regione Piemonte - Settore Sviluppo Energetico Sostenibile in data 28/11/2022",
+      "excerpt": "Referente: Dott. Filippo Baretti tel. 0114323476"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Cantiere (durata complessiva)",
-    "start": 0,
-    "end": 12,
-    "positioned": false,
-    "label": "12 mesi",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1438993",
-     "page": 15,
-     "document": "PARCO AV - PIANO DI DISMISSIONE E SMANTELLAMENTO DELL'OPERA A FINE ESERCIZIO E RIPRISTINO DEI LUOGHI",
-     "excerpt": "con più squadre in parallelo sui sottocampi e buona pianificazione logistica, per un impianto di questa taglia si attesta tra 10 e 12 mesi, di cui 6-8 mesi di lavori fisici intensivi. Con un'unica squadra che opera seque"
-    }
+    "name": "SOTTOIMPIANTO A - Opere",
+    "start": 0.3,
+    "end": 7.7
    },
    {
-    "name": "Opere civili",
-    "start": 0,
-    "end": 12,
-    "positioned": false,
-    "label": "12 mesi",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1439001",
-     "page": 39,
-     "document": "PARCO AV - PIANO MANUTENZIONE DEGLI INTERVENTI, COMPRENSIVO DELLE OPERE DI MITIGAZIONE",
-     "excerpt": "03.02.01.C01 Controllo della viabilità Cadenza: ogni 12 mesi | Tipologia: Controllo a vista Verifica dello stato del piano viabile, delle pendenze e dei ristagni; riscontro di buche, solchi ed erosioni."
-    }
+    "name": "Sicurezza e cantierizzazione",
+    "start": 0.4,
+    "end": 3.0
    },
    {
-    "name": "Opere elettriche",
-    "start": 0,
-    "end": 12,
-    "positioned": false,
-    "label": "12 mesi",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1439001",
-     "page": 16,
-     "document": "PARCO AV - PIANO MANUTENZIONE DEGLI INTERVENTI, COMPRENSIVO DELLE OPERE DI MITIGAZIONE",
-     "excerpt": "01.01.01.C01 Controllo strutturale e serraggi Cadenza: ogni 12 mesi | Tipologia: Controllo a vista Controllo dello stato generale delle strutture, verifica dell'assenza di deformazioni, corrosione e cedimenti delle fonda"
-    }
+    "name": "interrati",
+    "start": 2.4,
+    "end": 6.2
    },
    {
-    "name": "Montaggi",
-    "start": 0,
-    "end": 12,
-    "positioned": false,
-    "label": "12 mesi",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1439001",
-     "page": 38,
-     "document": "PARCO AV - PIANO MANUTENZIONE DEGLI INTERVENTI, COMPRENSIVO DELLE OPERE DI MITIGAZIONE",
-     "excerpt": "03.01.01.C01 Controllo dei manufatti Cadenza: ogni 12 mesi | Tipologia: Controllo a vista Verifica dell'integrità di copertura, strutture, chiusure e sistemi di smaltimento acque; riscontro di infiltrazioni e degradi."
-    }
+    "name": "perimetrale",
+    "start": 0.5,
+    "end": 6.4
+   },
+   {
+    "name": "cabine",
+    "start": 3.8,
+    "end": 5.9
+   },
+   {
+    "name": "Installazione cabine elettriche",
+    "start": 5.6,
+    "end": 7.7
+   },
+   {
+    "name": "moduli",
+    "start": 2.5,
+    "end": 7.3
+   },
+   {
+    "name": "tracker",
+    "start": 2.6,
+    "end": 5.5
+   },
+   {
+    "name": "pannelli fotovoltaici",
+    "start": 4.3,
+    "end": 7.2
+   },
+   {
+    "name": "Impianto elettrico",
+    "start": 1.8,
+    "end": 7.2
+   },
+   {
+    "name": "interrate",
+    "start": 1.9,
+    "end": 4.3
+   },
+   {
+    "name": "Realizzazione messa a terra",
+    "start": 3.2,
+    "end": 5.2
+   },
+   {
+    "name": "collegamenti in cabina",
+    "start": 4.1,
+    "end": 6.2
+   },
+   {
+    "name": "Finiture e collaudo",
+    "start": 4.1,
+    "end": 7.7
+   },
+   {
+    "name": "Finiture elettriche",
+    "start": 4.2,
+    "end": 5.7
+   },
+   {
+    "name": "strutture metalliche",
+    "start": 5.3,
+    "end": 7.6
    }
   ],
-  "months": 12,
+  "unit": "month",
+  "months": 7.7,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1439018",
+   "page": 2,
+   "document": "CRONOPROGRAMMA PARCO AGRIVOLTAICO",
+   "excerpt": ""
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 18 mesi (3), 5 mesi (2), 6-8 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1438993",
+    "page": 15,
+    "document": "PARCO AV - PIANO DI DISMISSIONE E SMANTELLAMENTO DELL'OPERA A FINE ESERCIZIO E RIPRISTINO DEI LUOGHI",
+    "excerpt": "con più squadre in parallelo sui sottocampi e buona pianificazione logistica, per un impianto di questa taglia si attesta tra 10 e 12 mesi, di cui 6-8 mesi di lavori fisici intensivi. Con un'unica squadra che opera seque"
+   }
+  },
   "milestones": [
    {
     "label": "Inizio lavori",
     "date": "01/09/2026",
     "iso": "2026-09-01",
     "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
     "source": {
      "url": "https://va.mite.gov.it/File/Documento/1438995",
      "page": 3,
@@ -893,6 +813,7 @@
     "date": "30/08/2028",
     "iso": "2028-08-30",
     "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
     "source": {
      "url": "https://va.mite.gov.it/File/Documento/1438995",
      "page": 3,
@@ -901,12 +822,15 @@
     }
    }
   ],
-  "note": "Gli elaborati indicano solo le durate: le barre partono tutte dall'avvio del cantiere, la sequenza reale non è indicata."
+  "document": {
+   "document": "CRONOPROGRAMMA PARCO AGRIVOLTAICO",
+   "url": "https://va.mite.gov.it/File/Documento/1439018"
+  },
+  "note": null
  },
  "documentazione": {
   "documenti": 211,
   "pagine": 3727,
-  "procedimenti": 2,
   "completa": true
  },
  "confronto": [
@@ -938,17 +862,17 @@
  ],
  "da_verificare": [
   {
-   "label": "Durata dismissione",
-   "reason": "valori diversi nei documenti"
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Superficie a disposizione",
-   "reason": "valori diversi nei documenti"
+   "label": "Superficie coperta dai pannelli",
+   "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Superficie occupata dai pannelli",
-   "reason": "valori diversi nei documenti"
+   "label": "Recapiti",
+   "reason": "844 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
- "avvertenza": "Informazioni estratte automaticamente dalla documentazione pubblica del procedimento. Ogni valore riporta documento e pagina; i dati 'da confermare' e 'in conflitto' richiedono verifica."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
 }
