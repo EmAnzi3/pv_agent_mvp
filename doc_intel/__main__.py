@@ -32,6 +32,8 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--verify-content", action="store_true",
                    help="re-download processed documents to compare SHA-256 even if the server reports no change")
     r.add_argument("--keep-files", action="store_true", help="keep original bytes and page text (test benchmarks only)")
+    r.add_argument("--reanalyse-match", default=None,
+                   help="with --reanalyse: only documents whose title or URL matches this regular expression")
     r.add_argument("--reanalyse", action="store_true",
                    help="re-extract every document with the current extractors (downloads again unless files are kept)")
     r.add_argument("--registry", choices=["vies", "none"], default="none", help="check extracted VATs on EU VIES")
@@ -72,7 +74,7 @@ def main(argv: list[str] | None = None) -> int:
         from .store import Store
         fetcher = Fetcher(Store(a.store), max_bytes=a.max_mb * 1024 * 1024)
         d = run(a.url, a.store, a.data if Path(a.data).exists() else None, ocr=not a.no_ocr,
-                ocr_max_pages=a.ocr_max_pages, max_docs=a.max_docs, workers=a.workers, refresh=a.refresh, verify_content=a.verify_content, keep_files=a.keep_files, reanalyse=a.reanalyse, registry=None if a.registry == 'none' else a.registry,
+                ocr_max_pages=a.ocr_max_pages, max_docs=a.max_docs, workers=a.workers, refresh=a.refresh, verify_content=a.verify_content, keep_files=a.keep_files, reanalyse=a.reanalyse, reanalyse_match=a.reanalyse_match, registry=None if a.registry == 'none' else a.registry,
                 time_budget_s=a.time_budget_min * 60 if a.time_budget_min else None, fetcher=fetcher)
         if a.gold:
             d["evaluation"] = evaluate(d, load_gold(a.gold))
@@ -215,7 +217,7 @@ def digest(d: dict) -> list[tuple[str, dict]]:
     out.append(("vat_occurrences", uniq[:40]))
     out.append(("registry", d.get("registry", {})))
     out.append(("failed_documents", a.get("failed_documents", [])[:20]))
-    out.append(("term_lines", d.get("term_lines", [])[:400]))
+    out.append(("schedule_pages", d.get("schedule_pages", [])[:60]))
     roles = [{"field": f["field"], "value": f["value"], "status": f["status"], "doc": f["citation"]["url"].rsplit("/", 1)[-1],
               "page": f["citation"]["page"], "excerpt": f["citation"]["excerpt"][:200]}
              for f in d["facts"] if f["field"] in ("role.epc", "role.bop", "role.contractor", "role.supplier", "role.om",

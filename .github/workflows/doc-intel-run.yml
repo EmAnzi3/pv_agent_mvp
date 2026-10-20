@@ -19,6 +19,10 @@ on:
         description: 'Stop starting downloads/OCR after N minutes (the next run resumes)'
         required: false
         default: '170'
+      reanalyse_match:
+        description: "Re-analyse only documents whose title/URL matches this regex (with reanalyse=yes)"
+        required: false
+        default: ""
       reanalyse:
         description: 'Re-download and re-extract every document with the current rules (yes/no)'
         required: false
@@ -152,12 +156,14 @@ jobs:
           OCR_MAX: ${{ inputs.ocr_max_pages }}
           BUDGET: ${{ inputs.time_budget_min }}
           REANALYSE: ${{ inputs.reanalyse }}
+          REANALYSE_MATCH: ${{ inputs.reanalyse_match }}
         run: |
-          extra=""
-          if [ "$REANALYSE" = "yes" ]; then extra="--reanalyse"; fi
-          if [ -n "$GOLD" ]; then extra="$extra --gold $GOLD"; fi
+          extra=()
+          if [ "$REANALYSE" = "yes" ]; then extra+=(--reanalyse); fi
+          if [ "$REANALYSE" = "yes" ] && [ -n "$REANALYSE_MATCH" ]; then extra+=(--reanalyse-match "$REANALYSE_MATCH"); fi
+          if [ -n "$GOLD" ]; then extra+=(--gold "$GOLD"); fi
           set -o pipefail
-          python -m doc_intel run --url "$URL" $extra --store .doc_intel_store --data docs/data.json \
+          python -m doc_intel run --url "$URL" "${extra[@]}" --store .doc_intel_store --data docs/data.json \
             --out reports/doc_intel --ocr-max-pages "$OCR_MAX" --workers 4 --time-budget-min "$BUDGET" --registry vies 2>&1 | tee run.log
       - name: Build project card (scheda) into the memory branch
         if: always()

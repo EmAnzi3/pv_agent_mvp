@@ -369,18 +369,14 @@ class EndToEnd(unittest.TestCase):
             from doc_intel.card import build_card, write_card
             card = build_card(dossier)
             self.assertEqual(card["project_key"], "url:x")
-            titles = [sec["title"] for sec in card["sections"]]
-            self.assertEqual(titles, ["Società e ruoli", "Caratteristiche tecniche", "Ubicazione",
-                                      "Contatti trovati negli elaborati", "Tempi e cantiere"])
-            labels = [i["label"] for sec in card["sections"] for i in sec["items"]]
-            self.assertNotIn("Tensione di connessione", labels)
-            self.assertNotIn("Potenza FV (DC)", labels)
-            self.assertEqual([i for i in card["sections"][1]["items"] if i["label"].startswith("Potenza")][0]["value"], "60 MW")
+            tiles = {t["key"]: t for t in card["sintesi"]}
+            self.assertEqual(tiles["potenza"]["value"], "60 MW")
+            self.assertNotIn("Tensione di connessione", json.dumps(card, ensure_ascii=False))
+            self.assertEqual(card["ubicazione"]["comuni"], ["Tortona", "Pozzolo Formigaro", "Frugarolo"])
+            self.assertEqual(card["ubicazione"]["provincia"], "AL")
+            names = [e["name"] for e in card["soggetti"]]
+            self.assertEqual(len([n for n in names if "margisolar" in n.lower()]), 1)     # one company, however spelled
             self.assertIn("bars", card["cronoprogramma"])
-            flat = {i["label"]: i for sec in card["sections"] for i in sec["items"]}
-            self.assertEqual(flat["Comuni"]["value"], "Tortona, Pozzolo Formigaro, Frugarolo (AL)")
-            self.assertEqual(flat["Inizio lavori"]["status"], "da confermare")
-            self.assertIn("Non prova", flat["Inizio lavori"]["note"])
             self.assertNotIn("sha", json.dumps(card).lower().replace("sharing", ""))
             p_ = write_card(card, d + "/schede")
             self.assertTrue((Path(d) / "schede" / "index.json").is_file() and p_.is_file())
@@ -896,12 +892,84 @@ class CardContacts(unittest.TestCase):
                 "citation": {"url": "u", "page": 1, "excerpt": excerpt}}
 
     def test_public_bodies_out_and_owner_from_address(self):
-        from doc_intel.card import _contacts
+        from doc_intel.card import _subjects
         d = {"facts": [self._fact("contact.pec", "pianidellamarina@pec.it", "e-Solar S.r.l."),
                        self._fact("contact.pec", "provinciavt@legalmail.it", "e-Solar S.r.l."),
                        self._fact("contact.phone", "+390651689356", "e-Solar S.r.l.", "TEL +39.06.51689356 WWW.REGIONE.LAZIO.IT"),
-                       self._fact("contact.phone", "0761483246", None, "tel . 0761483246; pangeastudio@virgilio.it")],
+                       self._fact("contact.phone", "0761483246", None, "tel . 0761483246; pangeastudio@virgilio.it"),
+                       self._fact("contact.email", "agroambiente@tor.it", "MARGISOLAR S.r.l."),
+                       self._fact("company.vat", "04390411009", "Piani della Marina"),
+                       self._fact("company.vat", "04390411009", "Piani della Marina")],
+             "groups": [],
              "registry": {"04390411009": {"valid": True, "name": "SOCIETA' AGICOLA PIANI DELLA MARINA S.S."}}}
-        rows = {r["value"]: r["label"] for r in _contacts(d, {})}
-        self.assertEqual(set(rows), {"pianidellamarina@pec.it", "0761483246"})
-        self.assertIn("Piani Della Marina", rows["pianidellamarina@pec.it"])
+        d["facts"][4]["qualifiers"] = {"subject_association": "previous_line_2", "person": "Dott. agronomo DELIO BARBIERI",
+                                       "person_association": "same_line"}
+        main, others, dropped = _subjects(d, {}, "MARGISOLAR S.r.l.", "u")
+        allc = {c["value"]: e["name"] for e in main + others for c in e["contacts"]}
+        self.assertEqual(allc["pianidellamarina@pec.it"], "Societa' Agicola Piani Della Marina S.S.")
+        self.assertIn("Barbieri", allc["agroambiente@tor.it"])        # signed by the agronomist, not the proponent
+        self.assertNotIn("provinciavt@legalmail.it", allc)
+        self.assertNotIn("+390651689356", allc)
+        self.assertNotIn("0761483246", allc)                            # no owner: not shown
+        self.assertEqual(dropped, 1)
+        self.assertEqual([e["roles"] for e in main if "Margisolar" in e["name"]], [["Proponente"]])
+
+
+class GanttFromDrawing(unittest.TestCase):
+    """Programme of works drawn as bars: rebuilt from word positions and filled rectangles."""
+
+    def _page(self):
+        words = [(200 + 20 * v - 4, 46, 200 + 20 * v + 4, 54, str(v), 0, 0) for v in range(1, 13)]
+        for i, n in enumerate(["1 Allestimento cantiere", "2 Infissione pali 60 gg", "3 Montaggio tracker e moduli", "4 Collaudi"]):
+            words.append((20, 76 + 20 * i, 150, 84 + 20 * i, n, 1 + i, 0))
+        X = lambda t: 200 + 20 * (t + 0.5)
+        rects = [(X(0), 76, X(1), 84, (.2, .5, .8)), (X(1), 96, X(5), 104, (.2, .5, .8)),
+                 (X(3), 116, X(9), 124, (.2, .5, .8)), (X(10), 136, X(12), 144, (.9, .3, .1)), (0, 0, 600, 800, (1, 1, 1))]
+        return words, rects
+
+    def test_rows_and_periods(self):
+        from doc_intel.gantt_vector import reconstruct
+        words, rects = self._page()
+        g = reconstruct(words, rects, 600, 800, "Cronoprogramma dei lavori (mesi)")
+        self.assertEqual(g["unit"], "month")
+        self.assertEqual([(r["name"], r["start"], r["end"]) for r in g["rows"]],
+                         [("Allestimento cantiere", 0.0, 1.0), ("Infissione pali", 1.0, 5.0),
+                          ("Montaggio tracker e moduli", 3.0, 9.0), ("Collaudi", 10.0, 12.0)])
+
+    def test_card_uses_drawn_phases(self):
+        from doc_intel.extract.schedule import extract_gantt
+        from doc_intel.card import _gantt
+        from doc_intel.gantt_vector import reconstruct
+        words, rects = self._page()
+        ctx = page("Cronoprogramma")
+        ctx.gantt = reconstruct(words, rects, 600, 800, "mesi")
+        facts = [json.loads(json.dumps(f.__dict__, default=lambda o: o.__dict__)) for f in extract_gantt(ctx)]
+        g = _gantt({"facts": facts, "groups": []}, {})
+        self.assertEqual([b["name"] for b in g["bars"]][:2], ["Allestimento cantiere", "Infissione pali"])
+        self.assertIsNone(g["note"])
+
+    @unittest.skipUnless(__import__("importlib").util.find_spec("fitz") and __import__("importlib").util.find_spec("reportlab"),
+                         "PyMuPDF and reportlab needed")
+    def test_real_pdf_drawing(self):
+        import io
+        import fitz
+        from reportlab.pdfgen import canvas
+        from doc_intel.gantt_vector import from_fitz_page
+        buf = io.BytesIO()
+        c = canvas.Canvas(buf, pagesize=(600, 400))
+        c.setFont("Helvetica", 8)
+        c.drawString(20, 380, "CRONOPROGRAMMA DEI LAVORI - mesi")
+        for v in range(1, 13):
+            c.drawCentredString(200 + 20 * v, 350, str(v))
+        spans = [("Allestimento cantiere", 0, 1), ("Infissione pali", 1, 5), ("Montaggio strutture", 3, 9), ("Collaudi", 10, 12)]
+        for i, (n, a, b) in enumerate(spans):
+            y = 320 - 20 * i
+            c.drawString(20, y, n)
+            c.setFillColorRGB(.2, .5, .8)
+            c.rect(200 + 20 * (a + 0.5), y - 2, 20 * (b - a), 9, fill=1, stroke=0)
+            c.setFillColorRGB(0, 0, 0)
+        c.save()
+        doc = fitz.open(stream=buf.getvalue(), filetype="pdf")
+        g = from_fitz_page(doc[0])
+        self.assertEqual([(r["name"], round(r["start"]), round(r["end"])) for r in g["rows"]],
+                         [(n, a, b) for n, a, b in spans])

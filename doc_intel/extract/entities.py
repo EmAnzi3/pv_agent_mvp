@@ -137,6 +137,31 @@ def _nearest_company(ctx: PageContext, i: int, pos: int) -> tuple[str | None, st
     return None, "none"
 
 
+PERSON_ANY_RE = re.compile(TITLE + r"\s*(?:(?:agronom[oa]|geolog[oa]|forestale|vet\.|Vet\.|Geol\.|Agr\.|Ing\.|For\.)\s*)?"
+                           r"(?P<name>[A-ZÀ-Ý][A-Za-zÀ-ÿ'’]+(?:\s+(?:[A-ZÀ-Ý]\.\s*)?[A-ZÀ-Ý][A-Za-zÀ-ÿ'’]+){1,3})")
+
+
+def _nearest_person(ctx: PageContext, i: int, pos: int) -> tuple[str | None, str]:
+    """Titled person (Ing., Dott., Geol. ...) signing the contact: same line before it, else 1-2 lines above."""
+    same = [m for m in PERSON_ANY_RE.finditer(ctx.lines[i]) if m.start() < pos]
+    if same:
+        return same[-1].group(0).strip(), "same_line"
+    for back in (1, 2):
+        if i - back >= 0:
+            prev = list(PERSON_ANY_RE.finditer(ctx.lines[i - back]))
+            if prev:
+                return prev[-1].group(0).strip(), f"previous_line_{back}"
+    return None, "none"
+
+
+def _contact_q(ctx: PageContext, i: int, pos: int, how: str) -> dict:
+    q = {"subject_association": how}
+    person, phow = _nearest_person(ctx, i, pos)
+    if person:
+        q.update({"person": person, "person_association": phow})
+    return q
+
+
 def extract(ctx: PageContext) -> list[Fact]:
     facts: list[Fact] = []
     for i, line in enumerate(ctx.lines):
@@ -159,7 +184,7 @@ def extract(ctx: PageContext) -> list[Fact]:
             subject, how = _nearest_company(ctx, i, m.start())
             is_pec = any(d in mail.split("@", 1)[1] for d in PEC_DOMAINS)
             facts.append(Fact(field="contact.pec" if is_pec else "contact.email", value=mail, subject=subject,
-                              citation=ctx.cite(ctx.window(i, 1, 0)), qualifiers={"subject_association": how},
+                              citation=ctx.cite(ctx.window(i, 1, 0)), qualifiers=_contact_q(ctx, i, m.start(), how),
                               limits="Contact as printed in the document; currency not verified",
                               extractor="entities.email"))
         for m in PHONE_RE.finditer(line):
@@ -167,8 +192,8 @@ def extract(ctx: PageContext) -> list[Fact]:
             if len(num.lstrip("+")) < 8:
                 continue
             subject, how = _nearest_company(ctx, i, m.start())
-            facts.append(Fact(field="contact.phone", value=num, subject=subject, citation=ctx.cite(line),
-                              qualifiers={"subject_association": how},
+            facts.append(Fact(field="contact.phone", value=num, subject=subject, citation=ctx.cite(ctx.window(i, 1, 0)),
+                              qualifiers=_contact_q(ctx, i, m.start(), how),
                               limits="Phone as printed; owner and currency not verified", extractor="entities.phone"))
         for m in WEB_RE.finditer(line):
             subject, how = _nearest_company(ctx, i, m.start())

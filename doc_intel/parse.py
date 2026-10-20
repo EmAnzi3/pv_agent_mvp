@@ -25,6 +25,9 @@ USEFUL_MIN_CHARS = 60
 MAX_RENDER_PIXELS = 25_000_000   # ~A4 at 400 DPI / A0 at ~120 DPI: bounded time per page
 
 
+from .gantt_vector import SCHEDULE_HINT
+
+
 def useful_chars(text: str) -> int:
     return len(re.findall(r"[A-Za-zÀ-ÿ0-9]", text or ""))
 
@@ -62,6 +65,10 @@ class FitzBackend(PdfBackend):
 
     def page_text(self, n: int) -> str:
         return self.doc[n - 1].get_text("text") or ""
+
+    def page_gantt(self, n: int) -> dict | None:
+        from .gantt_vector import from_fitz_page
+        return from_fitz_page(self.doc[n - 1])
 
     def render_png(self, n: int, dpi: int) -> bytes:
         rect = self.doc[n - 1].rect
@@ -227,7 +234,15 @@ def extract_pages(raw: bytes, sha: str, store: Store | None = None, member: str 
                 except Exception:
                     pass
             method = "digital" if useful_chars(text) >= USEFUL_MIN_CHARS else "none"
-            pages.append({"n": n, "text": text, "method": method, "chars": useful_chars(text), "error": err})
+            page = {"n": n, "text": text, "method": method, "chars": useful_chars(text), "error": err}
+            if hasattr(backend, "page_gantt") and SCHEDULE_HINT.search(text or ""):
+                try:
+                    g = backend.page_gantt(n)
+                    if g:
+                        page["gantt"] = g
+                except Exception as exc:
+                    page["gantt_error"] = str(exc)[:200]
+            pages.append(page)
     ocr_pending = []
     for p in pages:
         needs = p["method"] in ("none", "ocr_deferred") and (todo is None or p["n"] in todo)

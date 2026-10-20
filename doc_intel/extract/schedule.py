@@ -95,6 +95,66 @@ PHASE_NAMES = [
 ]
 
 
+UNIT_TO_MONTHS = {"month": 1.0, "week": 12 / 52, "day": 1 / 30.4}
+TWO_DATES = re.compile(r"(?P<d1>\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4})\D{1,20}?(?P<d2>\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4})")
+
+
+def _date(t: str):
+    from datetime import date
+    m = re.match(r"(\d{1,2})[/.-](\d{1,2})[/.-](\d{2,4})", t)
+    if not m:
+        return None
+    d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    y = y + 2000 if y < 100 else y
+    try:
+        return date(y, mo, d)
+    except ValueError:
+        return None
+
+
+def extract_gantt(ctx: PageContext) -> list[Fact]:
+    """Phases from a drawn Gantt (rebuilt from the vector page) or from a dated activity table."""
+    out = []
+    g = getattr(ctx, "gantt", None)
+    if g and g.get("rows"):
+        k = UNIT_TO_MONTHS.get(g.get("unit"), None)
+        for i, r in enumerate(g["rows"]):
+            out.append(Fact(field="schedule.phase", subject=r["name"],
+                            value={"name": r["name"], "start_month": round(r["start"] * k, 2) if k else r["start"],
+                                   "end_month": round(r["end"] * k, 2) if k else r["end"],
+                                   "raw": f"{g.get('unit')} {r['start']:g}–{r['end']:g}", "order": i,
+                                   "unit": g.get("unit"), "unit_known": k is not None},
+                            citation=ctx.cite(r["name"]), temporal="planned",
+                            qualifiers={"method": "vector_gantt", "rows": len(g["rows"])},
+                            limits="Bar positions read from the drawing; periods follow the chart's own axis",
+                            extractor="schedule.gantt"))
+        return out
+    if not re.search(r"(?i)cron?o?\s*programma|gantt|programma\s+(?:dei\s+)?lavori", ctx.text[:4000]):
+        return out
+    rows = []
+    for line in ctx.lines:
+        m = TWO_DATES.search(line)
+        if not m:
+            continue
+        d1, d2 = _date(m.group("d1")), _date(m.group("d2"))
+        name = re.sub(r"^\s*(?:\d+(?:\.\d+)*[.)]?\s+)+", "", line[: m.start()])
+        name = re.sub(r"(?i)\b\d+(?:[.,]\d+)?\s*(?:g|gg|giorni|sett|settimane|mesi|ms|w|d)\b\.?|\b(?:lun|mar|mer|gio|ven|sab|dom)\b\.?", "", name).strip(" -–:;|")
+        if d1 and d2 and d2 >= d1 and re.search(r"[A-Za-zÀ-ÿ]{4}", name):
+            rows.append((name[:80], d1, d2, line))
+    if len(rows) >= 3:
+        t0 = min(r[1] for r in rows)
+        for i, (name, d1, d2, line) in enumerate(rows[:60]):
+            out.append(Fact(field="schedule.phase", subject=name,
+                            value={"name": name, "start_month": round((d1 - t0).days / 30.4, 2),
+                                   "end_month": round((d2 - t0).days / 30.4 + 1 / 30.4, 2),
+                                   "start_date": d1.isoformat(), "end_date": d2.isoformat(), "order": i,
+                                   "raw": f"{d1:%d/%m/%Y}–{d2:%d/%m/%Y}", "unit": "month", "unit_known": True},
+                            citation=ctx.cite(line), temporal="planned",
+                            qualifiers={"method": "dated_table", "rows": len(rows)},
+                            limits="Dates of the programme of works: a plan, not progress", extractor="schedule.gantt"))
+    return out
+
+
 def extract_phases(ctx: PageContext) -> list[Fact]:
     """Gantt-like statements: an activity name with an explicit month (or week) range on the same line."""
     out = []
@@ -124,7 +184,7 @@ def extract_phases(ctx: PageContext) -> list[Fact]:
 
 
 def extract(ctx: PageContext) -> list[Fact]:
-    facts: list[Fact] = extract_phases(ctx)
+    facts: list[Fact] = extract_gantt(ctx) + extract_phases(ctx)
     for i, line in enumerate(ctx.lines):
         if not line:
             continue

@@ -36,6 +36,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         ocr_max_pages: int = 400, max_docs: int | None = None, workers: int = 3,
         refresh: bool = False, verify_content: bool = False, keep_files: bool = False,
         reanalyse: bool = False,
+        reanalyse_match: str | None = None,
         registry: str | None = None, registry_client=None,
         time_budget_s: float | None = None, get_html: Callable[[str], str] | None = None,
         fetcher: Fetcher | None = None, log: Callable[[str], None] = print) -> dict[str, Any]:
@@ -66,6 +67,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     def extract_document(ref, res, parsed):
         """Facts, diagnostics and summaries of one distinct content; persisted by SHA-256."""
         doc_pages, members, unread, complete = [], [], [], True
+        sched: list[dict] = []
         for mem, txt in parsed:
             s_ = txt.get("summary", {})
             members.append({"name": mem.name, "pages": s_.get("pages", 0), "summary": s_,
@@ -77,9 +79,17 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
                     unread.append({"url": ref.url, "member": None if mem.depth == 0 else mem.name,
                                    "page": p["n"], "method": p["method"], "error": p.get("error")})
                 if p.get("text"):
-                    doc_pages.append(PageContext(p["text"], ref.url, p["n"], res.sha256,
-                                                 None if mem.depth == 0 else mem.name, ref.procedure_id,
-                                                 ref.title, ref.extra.get("index_date"), None, p["method"]))
+                    pc = PageContext(p["text"], ref.url, p["n"], res.sha256,
+                                     None if mem.depth == 0 else mem.name, ref.procedure_id,
+                                     ref.title, ref.extra.get("index_date"), None, p["method"])
+                    pc.gantt = p.get("gantt")
+                    doc_pages.append(pc)
+                if (SCHED_RE.search(ref.title or "") or SCHED_RE.search((p.get("text") or "")[:3000])) and len(sched) < 12:
+                    g = p.get("gantt") or {}
+                    sched.append({"page": p["n"], "method": p["method"], "chars": p.get("chars"),
+                                  "gantt_rows": len(g.get("rows", [])), "unit": g.get("unit"),
+                                  "gantt_error": p.get("gantt_error"),
+                                  "rows": g.get("rows", [])[:12], "head": (p.get("text") or "")[:400]})
         facts = extract_all(doc_pages)
         terms = []
         for pc in doc_pages:
@@ -89,7 +99,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         payload = {"sha256": res.sha256, "url": ref.url, "extracted_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                    "toolbox_version": TOOLBOX_VERSION, "extractor_version": EXTRACTOR_VERSION, "members": members, "skipped": res.skipped_members,
                    "unreadable": unread, "diagnostics": coordinate_diagnostics(doc_pages, facts, limit=5),
-                   "facts": facts_to_json(facts), "complete": complete, "terms": terms}
+                   "facts": facts_to_json(facts), "complete": complete, "terms": terms,
+                   "schedule_pages": sched}
         return payload
 
     def process(ref):
@@ -98,7 +109,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         force = refresh
         # 1) already fully processed: reuse stored facts unless the remote file changed
         done = (entry.get("processed") or {}).get("complete")
-        if done and entry.get("sha256") and store.has_facts(entry["sha256"]) and not refresh and not reanalyse:
+        redo = reanalyse and (not reanalyse_match or bool(re.search(reanalyse_match, f"{ref.title or ''} {ref.url}", re.I)))
+        if done and entry.get("sha256") and store.has_facts(entry["sha256"]) and not refresh and not redo:
             change, seen = fetcher.check_remote(ref.url, entry, ref.extra.get("auth"))
             force = change == "changed" or verify_content
             if not force:
@@ -115,7 +127,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         res = fetcher.fetch(ref.url, manifest, refresh=force, auth=ref.extra.get("auth"))
         payload = None
         if (res.sha256 and store.has_facts(res.sha256) and res.state in ("unchanged", "cached")
-                and not (reanalyse and res.sha256 not in reanalysed)):
+                and not (redo and res.sha256 not in reanalysed)):
             payload = store.get_facts(res.sha256)          # same bytes already analysed (e.g. duplicate URL)
         elif res.sha256:
             parsed = []
@@ -170,6 +182,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     unreadable: list[dict] = []
     diagnostics: list[dict] = []
     term_lines: list[dict] = []
+    schedule_pages: list[dict] = []
     sha_aliases: dict[str, list[str]] = {}
     inventory = []
     by_sha: dict[str, str] = {}
@@ -217,6 +230,9 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
                     acq["pages_graphic_no_text"] += s_.get("no_text", 0) if ocr else 0
                 unreadable.extend(payload.get("unreadable", [])[: max(0, 200 - len(unreadable))])
                 diagnostics.extend(payload.get("diagnostics", [])[: max(0, 40 - len(diagnostics))])
+                for sp in payload.get("schedule_pages", []):
+                    if len(schedule_pages) < 60:
+                        schedule_pages.append({"doc": (ref.title or ref.url)[:70], "url": ref.url, **sp})
                 for t in payload.get("terms", []):
                     if len(term_lines) < 400:
                         term_lines.append({"doc": (ref.title or ref.url)[:60], **t})
@@ -256,6 +272,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         "acquisition": acq, "inventory": inventory, "unreadable_pages": unreadable,
         "sha_aliases": {k: v for k, v in sha_aliases.items() if len(v) > 1},
         "diagnostics": diagnostics, "registry": registry_results, "term_lines": term_lines,
+        "schedule_pages": schedule_pages,
         "facts": facts_to_json(facts), "groups": groups,
         "canonical": {k: v for k, v in canonical.items() if k != "record"}, "canonical_record": record,
         "delta": delta, "proposal": proposal, "gates": {"acquisition": acq_gate, "proposal": gate_rows},
@@ -271,6 +288,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     return dossier
 
 
+SCHED_RE = re.compile(r"(?i)cron?o?\s*programma|gantt|diagramma\s+(?:dei\s+)?lavori|programma\s+(?:dei\s+)?lavori")
 # lines kept (max 40 per document) to tune extractors for fields the user asked for, since texts are deleted
 TERM_RE = re.compile(r"(?i)\bpal[io]\b|infiss|superficie|\bettari\b|\d\s*ha\b|cronoprogramma|gantt|\bmes[ei]\s+\d|"
                      r"\d+\s*°?\s*mese|settiman[ae]\s+\d|lott[io]\b")

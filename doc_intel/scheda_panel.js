@@ -1,100 +1,142 @@
-/* Pannello "Scheda progetto" per la dashboard PV Agent.
+/* Pannello "Scheda progetto" per la dashboard PV Agent (schema pv-scheda/2.0).
    Uso: PVScheda.open(card) dove card è l'oggetto prodotto da doc_intel.card.build_card.
+   Ordine di lettura: sintesi -> società e contatti -> cronoprogramma -> ubicazione -> da verificare.
    Nessuna dipendenza; stili in scheda_panel.css. */
 (function () {
-  const STATUS = {
-    'verificato': { cls: 'st-ok', text: 'Verificato' },
-    'da documenti': { cls: 'st-doc', text: 'Da documenti' },
-    'da confermare': { cls: 'st-warn', text: 'Da confermare' },
-    'in conflitto': { cls: 'st-conf', text: 'Valori diversi' }
-  };
-
   function esc(v) {
     return String(v == null ? '' : v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
-
   function safeHref(u) {
     try { const p = new URL(u); return (p.protocol === 'https:' || p.protocol === 'http:') ? p.href : ''; } catch (e) { return ''; }
   }
-
-  function sourceLink(src) {
-    if (!src) return '';
-    const href = safeHref(src.url);
-    const label = esc(src.document || 'documento') + (src.page ? ', pag. ' + esc(src.page) : '');
-    const link = href ? `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${label}</a>` : label;
-    const quote = src.excerpt ? `<span class="sc-quote">«${esc(src.excerpt)}»</span>` : '';
-    return `<div class="sc-src">Fonte: ${link}${quote}</div>`;
+  function src(s, text) {
+    if (!s) return '';
+    let href = safeHref(s.url);
+    if (href && s.page && !href.includes('#')) href += '#page=' + encodeURIComponent(s.page);
+    const tip = (s.document || 'documento') + (s.page ? ', pag. ' + s.page : '') + (s.excerpt ? ' — «' + s.excerpt + '»' : '');
+    const label = esc(text || 'fonte');
+    return href ? `<a class="sc-src" href="${esc(href)}" target="_blank" rel="noopener noreferrer" title="${esc(tip)}">${label}</a>`
+                : `<span class="sc-src" title="${esc(tip)}">${label}</span>`;
+  }
+  function flag(status) {
+    return status === 'da verificare' ? '<span class="sc-flag">da verificare</span>'
+         : status === 'verificato' ? '<span class="sc-ok">verificato</span>' : '';
   }
 
-  function badge(status) {
-    const s = STATUS[status] || { cls: 'st-doc', text: status };
-    return `<span class="sc-badge ${s.cls}">${esc(s.text)}</span>`;
+  function tiles(list) {
+    if (!list || !list.length) return '';
+    return `<div class="sc-tiles">${list.map(t => `
+      <div class="sc-tile${t.status === 'da verificare' ? ' is-warn' : ''}">
+        <div class="sc-tlabel">${esc(t.label)} ${flag(t.status)}</div>
+        <div class="sc-tval">${esc(t.value)}</div>
+        ${t.sub ? `<div class="sc-tsub">${esc(t.sub)}</div>` : ''}
+        <div class="sc-tfoot">${src(t.source)}</div>
+      </div>`).join('')}</div>`;
   }
 
-  function item(it) {
-    let body;
-    if (it.values) {
-      body = `<ul class="sc-alts">${it.values.map(v =>
-        `<li><span class="sc-val">${esc(v.value)}</span> <span class="sc-occ">${esc(v.occurrences)} volte</span>${sourceLink(v.source)}</li>`).join('')}</ul>`;
-    } else {
-      body = `<div class="sc-val">${esc(it.value)}</div>` + (it.detail ? `<div class="sc-detail">${esc(it.detail)}</div>` : '')
-        + sourceLink(it.source);
-    }
-    const note = it.note ? `<div class="sc-note">${esc(it.note)}</div>` : '';
-    return `<div class="sc-item"><div class="sc-head"><span class="sc-label">${esc(it.label)}</span>${badge(it.status)}</div>${body}${note}</div>`;
+  function contactRow(c) {
+    const isPhone = c.type === 'Telefono';
+    return `<li class="sc-crow"><span class="sc-ctype">${esc(isPhone ? 'Tel.' : c.type)}</span>
+      <span class="sc-cval">${esc(c.value)}</span>
+      <button type="button" class="sc-copy" data-copy="${esc(c.value)}" aria-label="Copia ${esc(c.value)}">Copia</button>
+      ${src(c.source)}</li>`;
+  }
+  function company(e) {
+    const roles = (e.roles || []).map(r => `<span class="sc-role${/confermare/.test(r) ? ' is-warn' : ''}">${esc(r)}</span>`).join('');
+    const meta = [];
+    if (e.vat) meta.push(`P. IVA ${esc(e.vat)}${e.verified ? ' <span class="sc-ok">verificata</span>' : ''}${e.vat_group ? ' (gruppo IVA)' : ''}`);
+    if (e.office) meta.push('Sede ' + esc(e.office));
+    const contacts = (e.contacts || []).length
+      ? `<ul class="sc-clist">${e.contacts.map(contactRow).join('')}</ul>`
+      : '<p class="sc-none">Nessun recapito associato negli elaborati.</p>';
+    return `<article class="sc-co">
+      <header><h4>${esc(e.name)}</h4>${e.kind === 'persona' ? '<span class="sc-kind">professionista</span>' : ''}</header>
+      ${roles ? `<div class="sc-roles">${roles}</div>` : ''}
+      ${meta.length ? `<div class="sc-meta">${meta.join(' · ')}</div>` : ''}
+      ${contacts}</article>`;
+  }
+  function subjects(card) {
+    const main = card.soggetti || [], others = card.altri_soggetti || [];
+    if (!main.length && !others.length) return '';
+    return `<section class="sc-sec"><h3>Società e contatti</h3>
+      <div class="sc-cos">${main.map(company).join('')}</div>
+      ${others.length ? `<details class="sc-more"><summary>Altri soggetti con recapiti negli elaborati (${others.length})</summary>
+        <div class="sc-cos">${others.map(company).join('')}</div></details>` : ''}</section>`;
   }
 
   function gantt(g) {
-    if (!g || (!(g.bars || []).length && !(g.milestones || []).length)) return '';
+    if (!g) return '';
     const bars = g.bars || [];
-    const months = Math.max(1, Math.ceil(g.months || 1));
-    const rowH = 26, labelW = 170, chartW = 330, top = 22;
-    const x = m => labelW + (m / months) * chartW;
-    const step = months <= 12 ? 1 : months <= 24 ? 3 : 6;
-    let ticks = '';
-    for (let m = 0; m <= months; m += step) {
-      ticks += `<line x1="${x(m)}" y1="${top - 4}" x2="${x(m)}" y2="${top + bars.length * rowH}" class="g-grid"/>`
-        + `<text x="${x(m)}" y="${top - 8}" class="g-tick" text-anchor="middle">${m}</text>`;
+    let chart = '';
+    if (bars.length) {
+      const unit = g.unit === 'month' ? 'mesi' : g.unit === 'week' ? 'settimane' : 'periodi';
+      const span = Math.max(1, Math.ceil(Math.max(...bars.map(b => b.end))));
+      const rowH = 24, labelW = 190, chartW = 300, top = 26;
+      const x = m => labelW + (m / span) * chartW;
+      const step = span <= 12 ? 1 : span <= 24 ? 2 : span <= 48 ? 6 : 12;
+      let ticks = '';
+      for (let m = 0; m <= span; m += step) {
+        ticks += `<line x1="${x(m)}" y1="${top - 4}" x2="${x(m)}" y2="${top + bars.length * rowH}" class="g-grid"/>`
+          + `<text x="${x(m)}" y="${top - 8}" class="g-tick" text-anchor="middle">${m}</text>`;
+      }
+      const rows = bars.map((b, i) => {
+        const y = top + i * rowH, w = Math.max(3, x(b.end) - x(b.start));
+        const name = b.name.length > 30 ? b.name.slice(0, 29) + '…' : b.name;
+        return `<g><title>${esc(b.name)}: ${esc(unit)} ${+b.start.toFixed(1)}–${+b.end.toFixed(1)}</title>`
+          + `<text x="${labelW - 8}" y="${y + 15}" class="g-label" text-anchor="end">${esc(name)}</text>`
+          + `<rect x="${x(b.start)}" y="${y + 5}" width="${w}" height="14" rx="3" class="g-bar"/></g>`;
+      }).join('');
+      chart = `<div class="g-wrap"><svg viewBox="0 0 ${labelW + chartW + 20} ${top + bars.length * rowH + 6}" role="img" aria-label="Diagramma di Gantt">
+        <text x="${labelW}" y="10" class="g-tick">${esc(unit)} dall'avvio</text>${ticks}${rows}</svg></div>
+        <div class="sc-fine">Fasi lette dal cronoprogramma ${src(g.source, 'apri')}</div>`;
     }
-    const rows = bars.map((b, i) => {
-      const y = top + i * rowH;
-      const w = Math.max(3, x(b.end) - x(b.start));
-      return `<text x="${labelW - 8}" y="${y + 16}" class="g-label" text-anchor="end">${esc(b.name)}</text>`
-        + `<rect x="${x(b.start)}" y="${y + 5}" width="${w}" height="15" rx="4" class="${b.positioned ? 'g-bar' : 'g-bar g-free'}"/>`
-        + `<text x="${x(b.start) + w + 5}" y="${y + 16}" class="g-val">${esc(b.label || ('mesi ' + (b.start + 1) + '–' + b.end))}</text>`;
-    }).join('');
-    const h = top + bars.length * rowH + 8;
-    const svg = bars.length ? `<div class="g-wrap"><svg viewBox="0 0 ${labelW + chartW + 80} ${h}" role="img" aria-label="Cronoprogramma in mesi">
-      <text x="${labelW}" y="10" class="g-tick">mesi dall'avvio del cantiere</text>${ticks}${rows}</svg></div>` : '';
+    const d = g.duration;
+    const dur = d ? `<div class="g-dur"><span>Durata cantiere</span> <strong>${esc(d.text)}</strong> ${flag(d.status)} ${src(d.source)}
+      ${d.hint ? `<div class="sc-fine">${esc(d.hint)}</div>` : ''}</div>` : '';
     const ms = (g.milestones || []).map(m =>
-      `<li><span class="g-date">${esc(m.date)}</span> <strong>${esc(m.label)}</strong> <span class="sc-occ">${esc(m.nature)}</span>${sourceLink(m.source)}</li>`).join('');
-    return `<section class="sc-sec"><h3>Cronoprogramma</h3>${svg}
-      ${g.note ? `<div class="sc-note">${esc(g.note)}</div>` : ''}
+      `<li><span class="g-date">${esc(m.date)}</span> ${esc(m.label)} <span class="sc-fine">${esc(m.nature)}</span> ${src(m.source)}</li>`).join('');
+    const doc = !bars.length && g.document ? `<div class="sc-fine">Cronoprogramma: ${src(g.document, g.document.document)}</div>` : '';
+    if (!chart && !dur && !ms && !doc) return '';
+    return `<section class="sc-sec"><h3>Cronoprogramma</h3>${chart}${dur}
+      ${!bars.length && g.note ? `<p class="sc-note">${esc(g.note)}</p>` : ''}${doc}
       ${ms ? `<ul class="g-ms">${ms}</ul>` : ''}</section>`;
   }
 
+  function location(l, href) {
+    if (!l) return '';
+    const rows = [];
+    if (l.regione) rows.push(['Regione', esc(l.regione)]);
+    if (l.provincia) rows.push(['Provincia', esc(l.provincia)]);
+    if ((l.comuni || []).length) rows.push([l.comuni.length > 1 ? 'Comuni' : 'Comune', esc(l.comuni.join(', '))]);
+    if (l.coordinate) rows.push(['Coordinate', `${l.coordinate.lat.toFixed(5)} N, ${l.coordinate.lon.toFixed(5)} E
+      <div class="sc-fine">${esc(l.coordinate.tipo)} ${src(l.coordinate.source)}</div>`]);
+    const maps = safeHref(l.maps_url);
+    return `<section class="sc-sec"><h3>Ubicazione</h3><dl class="sc-dl">${rows.map(r => `<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join('')}</dl>
+      ${maps ? `<a class="sc-link" href="${esc(maps)}" target="_blank" rel="noopener noreferrer">Apri in Google Maps${l.maps_precision === 'comune' ? ' (comune)' : ''}</a>` : ''}</section>`;
+  }
+
   function render(card) {
+    const l = card.ubicazione || {};
+    const place = [(l.comuni || []).join(', ') + (l.provincia ? ` (${l.provincia})` : ''), l.regione].filter(Boolean).join(' · ');
+    const href = safeHref(card.source_url), maps = safeHref(l.maps_url);
     const doc = card.documentazione || {};
-    const href = safeHref(card.source_url);
-    const sections = (card.sections || []).filter(s => s.items && s.items.length && s.id !== 'tempi').map(s =>
-      `<section class="sc-sec"><h3>${esc(s.title)}</h3>${s.note ? `<div class="sc-note">${esc(s.note)}</div>` : ''}${s.items.map(item).join('')}</section>`).join('')
-      + gantt(card.cronoprogramma);
     const open = (card.da_verificare || []).length
-      ? `<section class="sc-sec sc-open"><h3>Da verificare</h3><ul>${card.da_verificare.map(o =>
+      ? `<section class="sc-sec"><h3>Da verificare</h3><ul class="sc-open">${card.da_verificare.map(o =>
         `<li><strong>${esc(o.label)}</strong>: ${esc(o.reason)}</li>`).join('')}</ul></section>` : '';
     return `
       <header class="sc-top">
-        <div class="sc-eyebrow">Scheda progetto · aggiornata il ${esc((card.updated || '').split('-').reverse().join('/'))}</div>
+        <div class="sc-eyebrow">Scheda progetto</div>
         <h2 id="scTitle">${esc(card.title)}</h2>
-        <div class="sc-facts">
-          <span><strong>${esc(doc.documenti)}</strong> documenti analizzati</span>
-          <span><strong>${esc(doc.pagine)}</strong> pagine</span>
-          <span>${doc.completa ? 'Documentazione letta per intero' : 'Lettura documentazione incompleta'}</span>
+        ${place ? `<div class="sc-place">${esc(place)}</div>` : ''}
+        <div class="sc-actions">
+          ${href ? `<a class="sc-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer">Procedimento ufficiale</a>` : ''}
+          ${maps ? `<a class="sc-link" href="${esc(maps)}" target="_blank" rel="noopener noreferrer">Google Maps</a>` : ''}
         </div>
-        ${href ? `<a class="sc-mother" href="${esc(href)}" target="_blank" rel="noopener noreferrer">Apri il procedimento ufficiale</a>` : ''}
       </header>
-      <div class="sc-body">${sections}${open}
-        <p class="sc-warn">${esc(card.avvertenza)}</p>
+      ${tiles(card.sintesi)}
+      <div class="sc-body">${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
+        <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.completa ? '' : ' (lettura incompleta)'};
+          aggiornata il ${esc((card.updated || '').split('-').reverse().join('/'))}. ${esc(card.avvertenza)}</p>
       </div>`;
   }
 
@@ -114,7 +156,24 @@
     document.body.append(backdrop, panel);
     backdrop.addEventListener('click', close);
     panel.querySelector('.sc-close').addEventListener('click', close);
+    panel.addEventListener('click', e => {
+      const b = e.target.closest('.sc-copy');
+      if (!b) return;
+      const done = () => { b.textContent = 'Copiato'; setTimeout(() => { b.textContent = 'Copia'; }, 1400); };
+      const val = b.dataset.copy;
+      try {
+        navigator.clipboard.writeText(val).then(done, () => select(b));
+      } catch (err) { select(b); }
+    });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !panel.hidden) close(); });
+  }
+  function select(b) {
+    const v = b.previousElementSibling;
+    const r = document.createRange();
+    r.selectNodeContents(v);
+    const s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
   }
   function open(card) {
     ensure();
