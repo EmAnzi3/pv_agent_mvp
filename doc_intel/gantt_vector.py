@@ -184,7 +184,17 @@ def from_fitz_page(page: Any) -> dict | None:
     text = page.get_text("text") or ""
     if not is_schedule_page(text):
         return None
-    words = [(w[0], w[1], w[2], w[3], w[4], w[5], w[6]) for w in page.get_text("words")]
+    rot = getattr(page, "rotation", 0) or 0
+    mat = page.rotation_matrix if rot else None
+
+    def fix(x0, y0, x1, y1):
+        """Coordinates as the page is displayed (landscape schedules are often stored rotated)."""
+        if mat is None:
+            return x0, y0, x1, y1
+        import fitz
+        r = fitz.Rect(x0, y0, x1, y1) * mat
+        return r.x0, r.y0, r.x1, r.y1
+    words = [(*fix(w[0], w[1], w[2], w[3]), w[4], w[5], w[6]) for w in page.get_text("words")]
     if len(words) > 20000:
         return None
     rects = []
@@ -200,7 +210,7 @@ def from_fitz_page(page: Any) -> dict | None:
             continue
         r = d.get("rect")
         if r is not None:
-            rects.append((r.x0, r.y0, r.x1, r.y1, tuple(fill[:3])))
+            rects.append((*fix(r.x0, r.y0, r.x1, r.y1), tuple(fill[:3])))
     g = reconstruct(words, rects, page.rect.width, page.rect.height, text)
     rows = table_rows(words)
     if rows:

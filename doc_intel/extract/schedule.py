@@ -120,6 +120,24 @@ def _date(t: str):
         return None
 
 
+DUR_ONLY = re.compile(r"(?i)^(?P<n>\d{1,4}(?:[.,]\d+)?)\s*(?P<u>g|gg|giorni|days?|sett|settimane|w|mesi|ms)\.?$")
+
+
+def _duration_lines(ctx: PageContext) -> list[dict]:
+    """MS Project text order: 'ID' / 'Nome attività' / 'Durata' on separate lines ('2' / 'Fase di ingegneria' / '225 g')."""
+    if not re.search(r"(?i)nome\s+attivit|attivit[aà]\b.{0,40}\bdurata|\bdurata\b", ctx.text[:1500]):
+        return []
+    lines = [l for l in ctx.lines if l]
+    out = []
+    for i in range(len(lines) - 1):
+        m = DUR_ONLY.match(lines[i + 1].strip())
+        name = lines[i].strip()
+        if m and re.search(r"[A-Za-zÀ-ÿ]{3}", name) and not DUR_ONLY.match(name) and len(name) <= 90:
+            out.append({"name": re.sub(r"^\d+\s+", "", name)[:80], "value": float(m.group("n").replace(",", ".")),
+                        "unit": m.group("u").lower()})
+    return out[:60] if len(out) >= 4 else []
+
+
 def extract_gantt(ctx: PageContext) -> list[Fact]:
     """Phases from a drawn Gantt (rebuilt from the vector page) or from a dated activity table."""
     out = []
@@ -138,13 +156,14 @@ def extract_gantt(ctx: PageContext) -> list[Fact]:
                             qualifiers={"method": g.get("method", "vector_gantt"), "rows": len(g["rows"]), "scope": scope},
                             limits="Bar positions read from the drawing; periods follow the chart's own axis",
                             extractor="schedule.gantt"))
-    for i, r in enumerate(g.get("duration_rows") or []):
+    drows = g.get("duration_rows") or _duration_lines(ctx)
+    for i, r in enumerate(drows):
         u = r["unit"]
         months = r["value"] / (30.4 if u.startswith(("g", "d")) else 4.33 if u.startswith(("s", "w")) else 1)
         out.append(Fact(field="schedule.phase_duration", subject=r["name"],
                         value={"name": r["name"], "months": round(months, 2), "raw": f"{r['value']:g} {u}", "order": i},
                         citation=ctx.cite(r["name"]), temporal="planned",
-                        qualifiers={"method": "duration_table", "rows": len(g["duration_rows"]), "scope": scope},
+                        qualifiers={"method": "duration_table", "rows": len(drows), "scope": scope},
                         limits="Duration of a phase; start and sequence not stated", extractor="schedule.gantt"))
     if not (g.get("table_rows") or re.search(r"(?i)cron?o?\s*programma|gantt|programma\s+(?:dei\s+)?lavori", ctx.text[:4000])):
         return out
