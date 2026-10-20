@@ -621,6 +621,66 @@ def _gantt(d: dict, titles: dict) -> dict:
             "milestones": milestones, "document": sched_doc, "note": note}
 
 
+# --------------------------------------------------------------------------------------------- status
+def _status(d: dict, gantt: dict, today=None) -> dict | None:
+    """Where the project stands, from planned dates versus documents filed afterwards.
+
+    A planned date in the past does not prove that the plant was built: projects are often delayed,
+    extended or sold. So the card says 'potenzialmente realizzato' only when the planned end of works
+    has passed and nothing was filed after it; when later acts exist it asks to check the status."""
+    from datetime import date, timedelta
+    today = today or datetime.now(timezone.utc).date()
+
+    def iso(v):
+        try:
+            return date.fromisoformat(str(v)[:10])
+        except ValueError:
+            return None
+
+    def dates(fields, occurred=None):
+        out = []
+        for g in d["groups"]:
+            if g["field"] in fields:
+                for x in g["values"]:
+                    if isinstance(x, dict) and iso(x.get("value")):
+                        t = set(x.get("temporal", []))
+                        if occurred is None or (("event_occurred" in t) == occurred):
+                            out.append((iso(x["value"]), x))
+        return out
+    starts = [v for v, _ in dates({"schedule.date.construction_start"}, occurred=False)]
+    ends = [v for v, _ in dates({"schedule.date.construction_end", "schedule.date.commercial_operation"}, occurred=False)]
+    bars = [b for b in gantt.get("bars", []) if b.get("dates")]
+    if bars:
+        starts.append(min(iso(b["dates"][0]) for b in bars))
+        ends.append(max(iso(b["dates"][1]) for b in bars))
+    started = dates({"schedule.date.construction_start"}, occurred=True)
+    acts = [v for v, _ in dates({f for f in LABELS if f.startswith("schedule.date.")}, occurred=True)]
+    filed = [iso(e.get("index_date")) for e in d.get("inventory", []) if iso(e.get("index_date"))]
+    latest = max(acts + filed) if acts + filed else None
+    start, end = (max(starts) if starts else None), (max(ends) if ends else None)
+    fmt = lambda x: x.strftime("%d/%m/%Y")
+    later = f"; ultimo documento o atto del {fmt(latest)}" if latest else ""
+    if started:
+        v, _ = max(started)
+        return {"level": "avviato", "label": "Lavori avviati (documentato)",
+                "reason": f"Inizio lavori documentato il {fmt(v)}{later}."}
+    if end and end < today and (latest is None or latest <= end + timedelta(days=90)):
+        return {"level": "potenzialmente_realizzato", "label": "Potenzialmente realizzato",
+                "reason": f"La fine lavori prevista ({fmt(end)}) è passata e non ci sono documenti successivi: "
+                          f"verificare se l'impianto è in esercizio."}
+    if start and start < today:
+        if latest and latest > start:
+            return {"level": "date_superate", "label": "Date di progetto superate: verificare lo stato",
+                    "reason": f"Avvio previsto il {fmt(start)}, ma l'iter è proseguito{later}: "
+                              f"probabile slittamento, non ancora realizzato o in corso."}
+        return {"level": "potenzialmente_avviato", "label": "Potenzialmente avviato o realizzato",
+                "reason": f"L'avvio dei lavori era previsto il {fmt(start)} e non risultano documenti successivi."}
+    if start:
+        return {"level": "previsto", "label": f"Avvio lavori previsto il {fmt(start)}",
+                "reason": "Data di progetto: non prova l'effettivo avvio."}
+    return None
+
+
 # --------------------------------------------------------------------------------------------- card
 def build_card(d: dict[str, Any]) -> dict[str, Any]:
     p = d["project"]
@@ -634,6 +694,10 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         if any("da confermare" in r for r in e["roles"]):
             open_points.append({"label": e["name"], "reason": "ruolo esecutivo indicato negli elaborati, da confermare"})
     loc = _location(d, p, record, titles)
+    gantt = _gantt(d, titles)
+    status = _status(d, gantt)
+    if status and status["level"] in ("potenzialmente_realizzato", "potenzialmente_avviato", "date_superate"):
+        open_points.insert(0, {"label": "Stato del progetto", "reason": status["reason"]})
     a = d["acquisition"]
     return {
         "schema": CARD_SCHEMA, "dossier_schema": SCHEMA_VERSION,
@@ -645,7 +709,8 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         "ubicazione": loc,
         "soggetti": main,
         "altri_soggetti": others,
-        "cronoprogramma": _gantt(d, titles),
+        "stato": status,
+        "cronoprogramma": gantt,
         "documentazione": {"documenti": a["references"], "pagine": a["pages_total"],
                            "completa": d["gates"]["acquisition"]["pass"]},
         "confronto": [{"campo": r["field"], "valore_attuale": r.get("canonical"), "esito": r["class"]} for r in d.get("delta", [])],

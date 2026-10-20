@@ -94,3 +94,10 @@
 .sc-btn:hover { background: var(--accent, #0f766e); color: #fff; }
 @media (prefers-reduced-motion: no-preference) { .sc-panel:not([hidden]) { animation: sc-in .18s ease-out; } }
 @keyframes sc-in { from { transform: translateX(24px); opacity: .6; } to { transform: none; opacity: 1; } }
+
+/* stato del progetto */
+.sc-status { margin-top: 10px; border-radius: 10px; padding: 8px 12px; display: grid; gap: 2px; font-size: 12px;
+  background: var(--soft-blue, #dbeafe); color: #1e3a8a; }
+.sc-status strong { font-size: 13px; }
+.sc-status.st-potenzialmente_realizzato, .sc-status.st-potenzialmente_avviato, .sc-status.st-avviato { background: #fde2e2; color: #7f1d1d; }
+.sc-status.st-date_superate { background: var(--soft-warn, #fef3c7); color: #78350f; }

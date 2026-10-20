@@ -183,11 +183,12 @@ class NextcloudShareAdapter(DocumentAdapter):
                 rel = href.split("/public.php/webdav", 1)[-1] or "/"
                 is_dir = resp.find(f".//{DAV}collection") is not None
                 size = resp.findtext(f".//{DAV}getcontentlength")
+                mod = resp.findtext(f".//{DAV}getlastmodified")
                 if is_dir:
                     if rel.rstrip("/") != path.rstrip("/"):
                         todo.append(rel if rel.endswith("/") else rel + "/")
                 else:
-                    files.append((rel, int(size) if size and size.isdigit() else None))
+                    files.append((rel, int(size) if size and size.isdigit() else None, _http_date(mod)))
         return sorted(set(files))
 
     def discover(self, identity: ProjectIdentity) -> Discovery:
@@ -197,10 +198,10 @@ class NextcloudShareAdapter(DocumentAdapter):
         except Exception as exc:
             return Discovery(identity, [], [], [f"WebDAV listing failed: {exc}"[:200]])
         docs = []
-        for rel, size in files:
+        for rel, size, mod in files:
             folder = rel.rsplit("/", 1)[0] or "/"
             docs.append(DocumentRef(url=base + quote(rel), procedure_id=folder, title=rel.rsplit("/", 1)[-1],
-                                    source="veneto", extra={"size": size, "auth": [token, ""]}))
+                                    source="veneto", extra={"size": size, "auth": [token, ""], "index_date": mod}))
         folders = {}
         for d in docs:
             folders[d.procedure_id] = folders.get(d.procedure_id, 0) + 1
@@ -305,7 +306,8 @@ class BoxSharedFolderAdapter(DocumentAdapter):
                     docs.append(DocumentRef(
                         url=f"{root}/index.php?rm=box_download_shared_file&vanity_name={vanity}&file_id={tid}",
                         procedure_id=path, title=it["name"], source="lazio",
-                        extra={"size": it.get("itemSize") or it.get("size"), "box_id": tid}))
+                        extra={"size": it.get("itemSize") or it.get("size"), "box_id": tid,
+                               "index_date": _epoch_date(it.get("contentUpdated") or it.get("date") or it.get("modified"))}))
                     found += 1
                 elif tid.startswith("d_") and depth < 4 and tid not in state["visited"] and not state.get("bad_folder_url"):
                     state["visited"].add(tid)
@@ -334,3 +336,27 @@ class BoxSharedFolderAdapter(DocumentAdapter):
         if not docs:
             errors.append("no files found in the embedded listing (page format may have changed)")
         return Discovery(identity, docs, procs, errors)
+
+
+def _http_date(v: str | None) -> str | None:
+    """'Tue, 20 Oct 2026 08:00:00 GMT' -> '2026-10-20' (upload date in the regional repository)."""
+    if not v:
+        return None
+    from email.utils import parsedate_to_datetime
+    try:
+        return parsedate_to_datetime(v).date().isoformat()
+    except (TypeError, ValueError):
+        return None
+
+
+def _epoch_date(v) -> str | None:
+    from datetime import datetime, timezone
+    try:
+        x = float(v)
+    except (TypeError, ValueError):
+        return None
+    if x > 1e11:
+        x /= 1000                                    # milliseconds
+    if not 9.0e8 < x < 4.0e9:
+        return None
+    return datetime.fromtimestamp(x, timezone.utc).date().isoformat()

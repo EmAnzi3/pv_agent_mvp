@@ -973,3 +973,28 @@ class GanttFromDrawing(unittest.TestCase):
         g = from_fitz_page(doc[0])
         self.assertEqual([(r["name"], round(r["start"]), round(r["end"])) for r in g["rows"]],
                          [(n, a, b) for n, a, b in spans])
+
+
+class ProjectStatus(unittest.TestCase):
+    """Past planned dates flag the project, graded by what was filed afterwards."""
+
+    def _d(self, start=None, end=None, act=None, filed=None):
+        g = []
+        if start:
+            g.append({"field": "schedule.date.construction_start", "values": [{"value": start, "temporal": ["planned"]}]})
+        if end:
+            g.append({"field": "schedule.date.construction_end", "values": [{"value": end, "temporal": ["planned"]}]})
+        if act:
+            g.append({"field": "schedule.date.construction_start_extension", "values": [{"value": act, "temporal": ["event_occurred"]}]})
+        return {"groups": g, "inventory": [{"index_date": filed}] if filed else []}
+
+    def test_levels(self):
+        from datetime import date
+        from doc_intel.card import _status
+        t = date(2026, 10, 20)
+        self.assertEqual(_status(self._d("2020-06-30", "2021-06-30"), {}, t)["level"], "potenzialmente_realizzato")
+        self.assertEqual(_status(self._d("2020-06-30", "2021-06-30", act="2021-12-17", filed="2024-03-10"), {}, t)["level"],
+                         "date_superate")
+        self.assertEqual(_status(self._d("2026-09-01"), {}, t)["level"], "potenzialmente_avviato")
+        self.assertEqual(_status(self._d("2027-03-01"), {}, t)["level"], "previsto")
+        self.assertIsNone(_status(self._d(), {}, t))
