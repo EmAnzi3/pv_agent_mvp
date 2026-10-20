@@ -366,6 +366,18 @@ class EndToEnd(unittest.TestCase):
             self.assertTrue(any(g["field"] == "company.multiple_vat" for g in dossier["groups"]))
             self.assertFalse(any(p["field"] == "company.vat" for p in dossier["proposal"]))  # conflict not proposed
             self.assertEqual(dossier["review"]["auto_approval"], False)
+            from doc_intel.card import build_card, write_card
+            card = build_card(dossier)
+            self.assertEqual(card["project_key"], "url:x")
+            titles = [sec["title"] for sec in card["sections"]]
+            self.assertEqual(titles, ["Società e ruoli", "Caratteristiche tecniche", "Ubicazione", "Tempi e cantiere"])
+            flat = {i["label"]: i for sec in card["sections"] for i in sec["items"]}
+            self.assertEqual(flat["Comuni"]["value"], "Tortona, Pozzolo Formigaro, Frugarolo (AL)")
+            self.assertEqual(flat["Inizio lavori"]["status"], "da documenti")
+            self.assertIn("Non prova", flat["Inizio lavori"]["note"])
+            self.assertNotIn("sha", json.dumps(card).lower().replace("sharing", ""))
+            p_ = write_card(card, d + "/schede")
+            self.assertTrue((Path(d) / "schede" / "index.json").is_file() and p_.is_file())
             from doc_intel.__main__ import digest
             titles = [t for t, _ in digest(dossier)]
             self.assertEqual(titles[:3], ["acquisition", "delta", "conflicts"])

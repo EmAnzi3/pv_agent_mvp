@@ -60,6 +60,9 @@ def main(argv: list[str] | None = None) -> int:
     v.add_argument("--max-docs", type=int, default=25)
     v.add_argument("--budget-min", type=float, default=10)
     v.add_argument("--no-ocr", action="store_true")
+    c = sub.add_parser("card", help="build the project card (scheda) from a dossier")
+    c.add_argument("--dossier", required=True)
+    c.add_argument("--out", default="reports/schede")
     m = sub.add_parser("render")
     m.add_argument("--dossier", required=True)
     a = ap.parse_args(argv)
@@ -129,6 +132,12 @@ def main(argv: list[str] | None = None) -> int:
         rows = verify_sources(a.data, a.store, a.out, a.only, _playwright_renderer() if a.render else None,
                               a.max_docs, a.budget_min, not a.no_ocr)
         print("\nRISULTATO:", {r["source"]: r["status"] for r in rows})
+        return 0
+    if a.cmd == "card":
+        from .card import build_card, write_card
+        d = json.loads(Path(a.dossier).read_text(encoding="utf-8"))
+        path = write_card(build_card(d), a.out)
+        print(f"scheda: {path}")
         return 0
     if a.cmd == "render":
         d = json.loads(Path(a.dossier).read_text(encoding="utf-8"))

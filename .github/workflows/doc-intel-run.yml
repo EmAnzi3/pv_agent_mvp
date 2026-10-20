@@ -150,6 +150,11 @@ jobs:
           set -o pipefail
           python -m doc_intel run --url "$URL" $extra --store .doc_intel_store --data docs/data.json \
             --out reports/doc_intel --ocr-max-pages "$OCR_MAX" --workers 4 --time-budget-min "$BUDGET" --registry vies 2>&1 | tee run.log
+      - name: Build project card (scheda) into the memory branch
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel card --dossier "$f" --out .doc_intel_store/schede || echo "no dossier, no card"
       - name: Save processing memory (also after failure or cancellation)
         if: always()
         run: |
