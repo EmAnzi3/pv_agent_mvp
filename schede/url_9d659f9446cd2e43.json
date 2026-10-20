@@ -118,17 +118,6 @@
      }
     },
     {
-     "label": "Gruppo societario (gruppo IVA)",
-     "value": "Gruppo Iva Bper Banca",
-     "status": "verificato",
-     "detail": "P. IVA 03830780361 — sede legale: Via San Carlo 8/20 41121 Modena Mo — citata 4 volte",
-     "note": null,
-     "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
-     }
-    },
-    {
      "label": "Società negli elaborati",
      "value": "Comal S.P.A.",
      "status": "verificato",
@@ -144,6 +133,17 @@
      "value": "Boffetti S.P.A.",
      "status": "verificato",
      "detail": "P. IVA 03738870165 — sede legale: Via Francesco Nullo 435 24033 Calusco D'Adda Bg — citata 2 volte",
+     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
+     "source": {
+      "document": "registro europeo VIES",
+      "url": "https://ec.europa.eu/taxation_customs/vies/"
+     }
+    },
+    {
+     "label": "Società negli elaborati",
+     "value": "Metka Egn Italy S.R.L.",
+     "status": "verificato",
+     "detail": "P. IVA 11478360966 — sede legale: Via Moscova 3 20121 Milano Mi — citata 2 volte",
      "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
      "source": {
       "document": "registro europeo VIES",
@@ -466,40 +466,16 @@
     },
     {
      "label": "Tipologia",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "fotovoltaico galleggiante",
-       "occurrences": 7,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491699475482",
-        "page": 1,
-        "document": "E08_Elettromeccanico di Sottostazione Utente.pdf",
-        "excerpt": "flottante"
-       }
-      },
-      {
-       "value": "agrivoltaico",
-       "occurrences": 6,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_889961123097",
-        "page": 22,
-        "document": "proponente richiesta chiarimenti 0964368.23-11-2021.pdf",
-        "excerpt": "agrovoltaico, caso in cui la sospensione non viene applicata; oppure il"
-       }
-      },
-      {
-       "value": "offshore",
-       "occurrences": 1,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700181657",
-        "page": 3,
-        "document": "D08_Richiesta di connessione alla rete elettrica.pdf",
-        "excerpt": "O Solare Termodinamico DO Biomasse O Eolico Off-Shore"
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
+     "value": "agrivoltaico",
+     "status": "da documenti",
+     "occurrences": 6,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_889961123097",
+      "page": 22,
+      "document": "proponente richiesta chiarimenti 0964368.23-11-2021.pdf",
+      "excerpt": "agrovoltaico, caso in cui la sospensione non viene applicata; oppure il"
+     },
+     "note": null
     }
    ]
   },
@@ -577,50 +553,16 @@
     },
     {
      "label": "Durata cantiere",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "18 mesi",
-       "occurrences": 7,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700162140",
-        "page": 8,
-        "document": "R01_Sintesi Non Tecnica.pdf",
-        "excerpt": "Per le lavorazioni descritte è previsto un ampio ricorso a manodopera e ditte locali. La fase di costruzione dell’impianto è stimata in circa 18 mesi."
-       }
-      },
-      {
-       "value": "18mesi",
-       "occurrences": 2,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491689205646",
-        "page": 196,
-        "document": "R02_Studio di Impatto Ambientale.pdf",
-        "excerpt": "Fase di costruzione Nella fase di costruzione dell‟impianto, la cui durata è stimata in circa 18mesi, si avranno delle emissioni in atmosfera generate dall‟utilizzo delle macchine operatrici di cantiere."
-       }
-      },
-      {
-       "value": "60 giorni",
-       "occurrences": 2,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700564016",
-        "page": 2,
-        "document": "All.09_Croprogramma lavori.pdf",
-        "excerpt": "Sistemazione aree di cantiere 60 giorni 10/07/20 8.00 01/10/20 17.00"
-       }
-      },
-      {
-       "value": "15 giorni",
-       "occurrences": 2,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700564016",
-        "page": 2,
-        "document": "All.09_Croprogramma lavori.pdf",
-        "excerpt": "Opere di cantiere 15 giorni 31/07/20 8.00 20/08/20 17.00"
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
+     "value": "18 mesi",
+     "status": "da documenti",
+     "occurrences": 9,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700162140",
+      "page": 8,
+      "document": "R01_Sintesi Non Tecnica.pdf",
+      "excerpt": "Per le lavorazioni descritte è previsto un ampio ricorso a manodopera e ditte locali. La fase di costruzione dell’impianto è stimata in circa 18 mesi."
+     },
+     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): 60 giorni (2); 15 giorni (2); 6 mesi (2)."
     },
     {
      "label": "Durata dismissione",
@@ -694,10 +636,6 @@
    "reason": "valori diversi nei documenti"
   },
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi nei documenti"
-  },
-  {
    "label": "Superficie",
    "reason": "valori diversi nei documenti"
   },
@@ -715,10 +653,6 @@
   },
   {
    "label": "Potenza FV (DC)",
-   "reason": "valori diversi nei documenti"
-  },
-  {
-   "label": "Tipologia",
    "reason": "valori diversi nei documenti"
   }
  ],
