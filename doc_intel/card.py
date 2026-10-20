@@ -210,14 +210,15 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         unit = tm.group(2)
         mw = num / 1000 if unit.lower().startswith("k") else num
         note = None
-        for fld in ("tech.pv_dc_mwp", "tech.pv_ac_mw"):
-            pv = _prevalent(d, fld)
-            if pv and pv[1]["occurrences"] >= 3:
-                ratio = mw / pv[1]["value"] if pv[1]["value"] else 0
-                if any(abs(ratio - k) < 0.01 * k for k in (10, 100, 1000, 0.1, 0.01, 0.001)):
-                    note = (f"Possibile refuso nel titolo: gli elaborati riportano {_fmt(fld, pv[1]['value'])} "
-                            f"({pv[1]['occurrences']} volte).")
-                    break
+        cands = [(g["field"], x) for g in d["groups"]
+                 if g["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")
+                 for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["occurrences"] >= 2]
+        for fld, x in sorted(cands, key=lambda c: -c[1]["occurrences"]):
+            ratio = mw / x["value"] if x["value"] else 0
+            if any(abs(ratio - k) < 0.01 * k for k in (10, 100, 1000, 0.1, 0.01, 0.001)):
+                note = (f"Possibile refuso nel titolo: gli elaborati riportano {_fmt(fld, x['value'])} "
+                        f"({x['occurrences']} volte).")
+                break
         tech_head.append({"label": "Potenza (dal titolo del procedimento)", "status": "da confermare" if note else "verificato",
                           "note": note,
                           "value": _fmt("tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw", round(mw, 3)),
@@ -351,7 +352,8 @@ def _contacts(d: dict, titles: dict) -> list[dict]:
         val = str(f["value"])
         if f["field"] != "contact.phone" and PUBLIC_MAIL.search(val):
             continue
-        subj = f.get("subject") or ""
+        subj = (f.get("subject") or "").strip("'\"‘’“” ")
+        subj = re.split(r"(?i)\b(?:dell[a'’]\s*(?:impresa|ditta|societ[aà])|della\s+(?:ditta|societ[aà]))\s+", subj)[-1].strip()
         excerpt = f["citation"].get("excerpt") or ""
         if PUBLIC_SUBJECT.search(subj):
             continue
@@ -385,9 +387,10 @@ def _contacts(d: dict, titles: dict) -> list[dict]:
 def _gantt(d: dict, titles: dict) -> dict:
     """Bars for phases with explicit month ranges; otherwise the prevalent construction duration as one bar."""
     phases: dict[str, dict] = {}
+    schedule_doc = re.compile(r"(?i)cronoprogramma|gantt|programma\s+(?:dei\s+)?lavori|piano\s+di\s+sicurezza|cantierizzazione")
     for f in d["facts"]:
-        if f["field"] != "schedule.phase":
-            continue
+        if f["field"] != "schedule.phase" or not schedule_doc.search(titles.get(f["citation"]["url"]) or ""):
+            continue    # month ranges in opinions or monitoring plans are not the programme of works
         v = f["value"]
         key = (v["name"], v["start_month"], v["end_month"])
         ph = phases.setdefault(v["name"], {"counts": {}, "source": None})
