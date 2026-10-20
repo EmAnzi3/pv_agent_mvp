@@ -210,6 +210,10 @@ def _pick(d: dict, field: str, titles: dict, accept=None) -> dict | None:
             mx = x["value"]["max"]
             k = next((kk for kk, mv in merged.items() if isinstance(mv["value"], dict)
                       and abs(mv["value"].get("max", 0) - mx) <= 0.1 * max(mx, mv["value"].get("max", 0))), k)
+        if field.startswith("tech.area_") and isinstance(x["value"], (int, float)):
+            # 115 ha and 116 ha are the same site measured or rounded differently: merge within 3 %
+            k = next((kk for kk, mv in merged.items() if isinstance(mv["value"], (int, float))
+                      and abs(mv["value"] - x["value"]) <= 0.03 * max(mv["value"], x["value"])), k)
         if k in merged:
             merged[k]["occurrences"] += x["occurrences"]
         else:
