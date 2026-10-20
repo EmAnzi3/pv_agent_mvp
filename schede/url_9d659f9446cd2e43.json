@@ -1,407 +1,138 @@
 {
- "schema": "pv-scheda/1.0",
+ "schema": "pv-scheda/2.0",
  "dossier_schema": "pv-dossier/1.0",
  "project_key": "url:9d659f9446cd2e43",
  "title": "Progetto per la realizzazione di un impianto fotovoltaico a terra della Potenza di 187,16 MWp da connettere alla RTN in località Pian d'Arcione Determinazione n°G10779 del 22/09/2020 - Favorevole con prescrizioni - Provvedimento Autorizzatorio Unico Regionale n° G00103 del 12/01/2021 Favorevole con prescrizioni",
  "source_url": "https://regionelazio.app.box.com/v/VIA-060-2019",
  "source": "lazio",
  "updated": "2026-10-20",
- "sections": [
+ "sintesi": [
   {
-   "id": "societa",
-   "title": "Società e ruoli",
-   "items": [
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "187,16 MWp",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://regionelazio.app.box.com/v/VIA-060-2019",
+    "excerpt": "187,16 MWp"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Fotovoltaico galleggiante · tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491699475482",
+    "page": 1,
+    "document": "E08_Elettromeccanico di Sottostazione Utente.pdf",
+    "excerpt": "flottante"
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "92,15 ha",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 352,6 ha (2), 89,71 ha (1)",
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_677805233432",
+    "page": 8,
+    "document": "VERBALE I^CdS DEL 11.06.2020.pdf",
+    "excerpt": "tecnologia PERC bifacciale della potenza di picco di 446 Wp, su lotti di varie estensioni tutti limitrofi per una superficie totale di terreno occupata pari a circa 921.500 m2 su una attualmente a destinazione agricola d"
+   }
+  },
+  {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "85,51 ha",
+   "status": "da verificare",
+   "sub": "93% dell'area · Valore più ricorrente negli elaborati; altri valori: 92,092 ha (1), 89,71 ha (1)",
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_619238633332",
+    "page": 3,
+    "document": "D12_Scheda di Sintesi del Progetto.pdf",
+    "excerpt": " Superficie totale: 3.526.000 m2  Superficie occupata dai pannelli: 855.100 m2  Potenza complessiva: 170,11 MWp"
+   }
+  },
+  {
+   "key": "pali",
+   "label": "Pali di recinzione",
+   "value": "9.350",
+   "status": "da documenti",
+   "sub": "Pali delle strutture non indicati negli elaborati",
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491689205646",
+    "page": 144,
+    "document": "R02_Studio di Impatto Ambientale.pdf",
+    "excerpt": "La realizzazione della recinzione comporterà l‟impiego di circa 37.560m2 di rete metallica, oltre a circa 9.350 pali di castagno. L‟impianto di illuminazione e videosorveglianza prevede l‟installazione di 125 pali in"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": "Inizio lavori 30/06/2020 (previsione di progetto) · Valore prevalente negli elaborati; altri valori: 60 giorni (2), 15 giorni (2), 6 mesi (2)",
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700162140",
+    "page": 8,
+    "document": "R01_Sintesi Non Tecnica.pdf",
+    "excerpt": "Per le lavorazioni descritte è previsto un ampio ricorso a manodopera e ditte locali. La fase di costruzione dell’impianto è stimata in circa 18 mesi."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Lazio",
+  "provincia": "VT",
+  "comuni": [
+   "Tarquinia"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Tarquinia%2C+VT%2C+Lazio",
+  "maps_precision": "comune"
+ },
+ "soggetti": [
+  {
+   "name": "Gruppo IVA Enel",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": "15844561009",
+   "vat_group": true,
+   "verified": true,
+   "office": "Viale Regina Margherita 137 00198 Roma Rm",
+   "contacts": [
     {
-     "label": "Progettista",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "Solar S.r.l.",
-       "occurrences": 31,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491699112230",
-        "page": 1,
-        "document": "E07_Schemi Elettrici.pdf",
-        "excerpt": "Società Proponente: Progettazione :"
-       }
-      },
-      {
-       "value": "Ing. Chiricotto Vincenzo",
-       "occurrences": 18,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491695401647",
-        "page": 1,
-        "document": "R05_Scheda Notizie Vincolo Idrogeologico.pdf",
-        "excerpt": "Progettazione :"
-       }
-      },
-      {
-       "value": "e-Solar S.r.l.",
-       "occurrences": 10,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700162140",
-        "page": 1,
-        "document": "R01_Sintesi Non Tecnica.pdf",
-        "excerpt": "Società Proponente: Progettazione : PY e-Solar srl Ing. Chiricotto Vincenzo"
-       }
-      },
-      {
-       "value": "Ing. VINCENZO TOSIANI",
-       "occurrences": 2,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
-        "page": 2,
-        "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
-        "excerpt": "RESPONSABILE E DELLA SICUREZZA IN FASE DI PROGETTAZIONE: Ing. VINCENZO TOSIANI, C.F./P.IVA: TSNVCN72A26B180I residente in BRINDISI, via DEGLI ACERI 28"
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
-    },
-    {
-     "label": "Proponente",
-     "value": "e-Solar S.r.l.",
-     "status": "da documenti",
-     "occurrences": 115,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491695401647",
-      "page": 2,
-      "document": "R05_Scheda Notizie Vincolo Idrogeologico.pdf",
-      "excerpt": "SOGGETTO RICHIEDENTE :___e-Solar Srl"
-     },
-     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): Solar S.r.l. (23); EMENOSOLAR S.r.l. (10); SUNCORE 1 S.r.l. (6)."
-    },
-    {
-     "label": "Direttore dei lavori",
-     "value": "Ing. DE SANTIS CORRADO",
-     "status": "da documenti",
+     "type": "PEC",
+     "value": "planidellamarina@pec.it",
      "occurrences": 2,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_532875097768",
       "page": 2,
-      "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
-      "excerpt": "DIRETTORE DEI LAVORI: Ing. DE SANTIS CORRADO, C. F./P.IVA: DSNCRD75T02A662V residente in BARI, Via Toscanini 2 -70126"
-     },
-     "note": null
-    },
-    {
-     "label": "Gruppo societario (gruppo IVA)",
-     "value": "Gruppo Iva Enel",
-     "status": "verificato",
-     "detail": "P. IVA 15844561009 — sede legale: Viale Regina Margherita 137 00198 Roma Rm — citata 12 volte",
-     "note": null,
-     "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
+      "document": "R08_Lettera di Trasmissione Provincia Protocollo.PDF",
+      "excerpt": "Via Augusto Gargana, 34 planidellamarina@pec.it ;"
      }
     },
     {
-     "label": "Società negli elaborati",
-     "value": "Suncore 1 S.R.L.",
-     "status": "verificato",
-     "detail": "P. IVA 10258590966 — sede legale: Via Alberico Albricci 7 20122 Milano Mi — citata 10 volte",
-     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
+     "type": "PEC",
+     "value": "ianidelamarina@pec.it",
+     "occurrences": 1,
      "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
-     }
-    },
-    {
-     "label": "Società negli elaborati",
-     "value": "Societa' Agicola Piani Della Marina S.S.",
-     "status": "verificato",
-     "detail": "P. IVA 04390411009 — sede legale: Viale Fiume 84 01100 Viterbo Vt — citata 5 volte",
-     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
-     "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
-     }
-    },
-    {
-     "label": "Società negli elaborati",
-     "value": "Comal S.P.A.",
-     "status": "verificato",
-     "detail": "P. IVA 01685280560 — sede legale: V Strada Statale Aurelia Km 113 Snc 01014 Montalto Di Castro Vt — citata 2 volte",
-     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
-     "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
-     }
-    },
-    {
-     "label": "Società negli elaborati",
-     "value": "Boffetti S.P.A.",
-     "status": "verificato",
-     "detail": "P. IVA 03738870165 — sede legale: Via Francesco Nullo 435 24033 Calusco D'Adda Bg — citata 2 volte",
-     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
-     "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
-     }
-    },
-    {
-     "label": "Società negli elaborati",
-     "value": "Metka Egn Italy S.R.L.",
-     "status": "verificato",
-     "detail": "P. IVA 11478360966 — sede legale: Via Moscova 3 20121 Milano Mi — citata 2 volte",
-     "note": "Identità verificata; il ruolo nel progetto va letto nei documenti.",
-     "source": {
-      "document": "registro europeo VIES",
-      "url": "https://ec.europa.eu/taxation_customs/vies/"
-     }
-    }
-   ]
-  },
-  {
-   "id": "tecnica",
-   "title": "Caratteristiche tecniche",
-   "items": [
-    {
-     "label": "Potenza (dal titolo del procedimento)",
-     "status": "verificato",
-     "note": null,
-     "value": "187,16 MWp",
-     "source": {
-      "document": "titolo del procedimento",
-      "url": "https://regionelazio.app.box.com/v/VIA-060-2019",
-      "excerpt": "187,16 MWp"
-     }
-    },
-    {
-     "label": "Superficie a disposizione",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "92,15 ha",
-       "occurrences": 4,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_677805233432",
-        "page": 8,
-        "document": "VERBALE I^CdS DEL 11.06.2020.pdf",
-        "excerpt": "tecnologia PERC bifacciale della potenza di picco di 446 Wp, su lotti di varie estensioni tutti limitrofi per una superficie totale di terreno occupata pari a circa 921.500 m2 su una attualmente a destinazione agricola d"
-       }
-      },
-      {
-       "value": "352,6 ha",
-       "occurrences": 2,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491699458919",
-        "page": 2,
-        "document": "D12_Scheda di sintesi del progetto.PDF",
-        "excerpt": "Superficie totale: 3.526.000 m2"
-       }
-      },
-      {
-       "value": "89,71 ha",
-       "occurrences": 1,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_723213557500",
-        "page": 11,
-        "document": "DETERMINA DI VIA n°G10779 DEL 22.09.2020 - 060-2019.pdf",
-        "excerpt": "in silicio monocristallino– tecnologia PERC bifacciale della potenza di picco di 446 Wp, su lotti di varie estensioni tutti limitrofi per una superficie totale di terreno occupata pari a circa 897.101 m2 su una attualmen"
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
-    },
-    {
-     "label": "Superficie occupata dai pannelli",
-     "status": "in conflitto",
-     "values": [
-      {
-       "value": "85,51 ha",
-       "occurrences": 3,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_619238633332",
-        "page": 3,
-        "document": "D12_Scheda di Sintesi del Progetto.pdf",
-        "excerpt": " Superficie totale: 3.526.000 m2  Superficie occupata dai pannelli: 855.100 m2  Potenza complessiva: 170,11 MWp"
-       }
-      },
-      {
-       "value": "92,092 ha",
-       "occurrences": 1,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491699458919",
-        "page": 2,
-        "document": "D12_Scheda di sintesi del progetto.PDF",
-        "excerpt": "Superficie occupata dai pannelli: 920.923,02 m2 ha"
-       }
-      },
-      {
-       "value": "89,71 ha",
-       "occurrences": 1,
-       "source": {
-        "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_723213557500",
-        "page": 15,
-        "document": "DETERMINA DI VIA n°G10779 DEL 22.09.2020 - 060-2019.pdf",
-        "excerpt": "PERC bifacciale della potenza di picco (comprensiva del contributo della facciata posteriore – rear side) di 446Wp, su una superficie occupata dai pannelli di 897.101 m2 ricadente nell’area di estensione totale di terren"
-       }
-      }
-     ],
-     "note": "I documenti riportano valori diversi (revisioni o ambiti diversi): nessuno è stato scelto."
-    },
-    {
-     "label": "Strutture",
-     "value": "tracker monoassiali",
-     "status": "da documenti",
-     "occurrences": 131,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491699458919",
-      "page": 2,
-      "document": "D12_Scheda di sintesi del progetto.PDF",
-      "excerpt": "configurazione bifilare su strutture ad inseguimento solare monoassiale. L'impianto"
-     },
-     "note": null
-    },
-    {
-     "label": "Tipologia",
-     "value": "agrivoltaico",
-     "status": "da documenti",
-     "occurrences": 6,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_889961123097",
-      "page": 22,
-      "document": "proponente richiesta chiarimenti 0964368.23-11-2021.pdf",
-      "excerpt": "agrovoltaico, caso in cui la sospensione non viene applicata; oppure il"
-     },
-     "note": null
-    },
-    {
-     "label": "Pali di recinzione",
-     "value": "9.350",
-     "status": "da documenti",
-     "note": null,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491689205646",
-      "page": 144,
-      "document": "R02_Studio di Impatto Ambientale.pdf",
-      "excerpt": "La realizzazione della recinzione comporterà l‟impiego di circa 37.560m2 di rete metallica, oltre a circa 9.350 pali di castagno. L‟impianto di illuminazione e videosorveglianza prevede l‟installazione di 125 pali in"
-     }
-    }
-   ]
-  },
-  {
-   "id": "ubicazione",
-   "title": "Ubicazione",
-   "items": [
-    {
-     "label": "Comuni",
-     "value": "Tarquinia (VT)",
-     "status": "da documenti",
-     "note": "Dato dell'elenco progetti: la fonte non ha una scheda ufficiale strutturata.",
-     "source": {
-      "document": "elenco progetti",
-      "url": "https://regionelazio.app.box.com/v/VIA-060-2019"
-     }
-    }
-   ]
-  },
-  {
-   "id": "contatti",
-   "title": "Contatti trovati negli elaborati",
-   "items": [
-    {
-     "label": "PEC — Societa' Agicola Piani Della Marina S.S.",
-     "value": "pianidellamarina@pec.it",
-     "status": "da confermare",
-     "detail": "compare 131 volte",
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700044246",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_560940659359",
       "page": 1,
-      "document": "D01_Documentazione società proponente e-Solar srl (Visura Canerale).pdf",
-      "excerpt": "Indirizzo PEC pianidellamarina@pec.it"
+      "document": "terna .2019.0929965.pdf",
+      "excerpt": "ianidelamarina@pec.it"
      }
     },
     {
-     "label": "E-mail",
-     "value": "pangeastudio@virgilio.it",
-     "status": "da confermare",
-     "detail": "compare 25 volte",
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491695713135",
-      "page": 2,
-      "document": "R04_Relazione Geologica e Idrogeologica.pdf",
-      "excerpt": "Via Blera, 35-37 – Cura - 01019 (VT) tel . 0761483246; cell. 335397337; pangeastudio@virgilio.it"
-     }
-    },
-    {
-     "label": "Telefono",
-     "value": "0761483246",
-     "status": "da confermare",
-     "detail": "compare 25 volte",
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491695713135",
-      "page": 2,
-      "document": "R04_Relazione Geologica e Idrogeologica.pdf",
-      "excerpt": "tel . 0761483246; cell. 335397337; pangeastudio@virgilio.it"
-     }
-    },
-    {
-     "label": "Telefono",
-     "value": "335397337",
-     "status": "da confermare",
-     "detail": "compare 25 volte",
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491695713135",
-      "page": 2,
-      "document": "R04_Relazione Geologica e Idrogeologica.pdf",
-      "excerpt": "tel . 0761483246; cell. 335397337; pangeastudio@virgilio.it"
-     }
-    },
-    {
-     "label": "Telefono",
-     "value": "0667233000",
-     "status": "da confermare",
-     "detail": "compare 21 volte",
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_693297853432",
-      "page": 1,
-      "document": "mibact parere.2020.0639056.pdf",
-      "excerpt": "tel. 06 67233000 — fax 06 6994.1234"
-     }
-    },
-    {
-     "label": "Telefono",
-     "value": "0691969068",
-     "status": "da confermare",
-     "detail": "compare 18 volte",
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_570211323993",
-      "page": 2,
-      "document": "All.16-Analisi Chimica del Terreno.pdf",
-      "excerpt": "Sede Legale ed Operativa: Via delle Albicocche, 19 - 00071 Pomezia (Roma) - Tel. 0691969068/9 - Fax 0691822695"
-     }
-    },
-    {
-     "label": "E-mail — 'Agri-Bio-Eco Laboratori Riuniti S.R.L.'",
-     "value": "info@agribioeco.it",
-     "status": "da confermare",
-     "detail": "compare 18 volte",
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_570211323993",
-      "page": 2,
-      "document": "All.16-Analisi Chimica del Terreno.pdf",
-      "excerpt": "Sede Legale ed Operativa: Via delle Albicocche, 19 - 00071 Pomezia (Roma) - Tel. 0691969068/9 - Fax 0691822695 www.agribioeco.it - info@agribioeco.it - codice fiscale e p.iva: 02470110590"
-     }
-    },
-    {
-     "label": "PEC — Suncore 1 S.R.L.",
-     "value": "suncore1@legalmail.it",
-     "status": "da confermare",
-     "detail": "compare 14 volte",
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581228311513",
-      "page": 1,
-      "document": "Copia_Allegato1_MemDoc_CreaPdf_202528272556758177103753975011385.pdf",
-      "excerpt": "prescrizioni la società Suncore 1 srl, con sede legale in Viale Coni Zugna 7 in Milano (20144) partita IVA 10258590966 – pec: suncore1@legalmail.it, alla costruzione e all’esercizio di un"
-     }
-    },
-    {
-     "label": "Telefono — e-Solar S.r.l.",
+     "type": "Telefono",
      "value": "3386316126",
-     "status": "da confermare",
-     "detail": "compare 13 volte",
+     "occurrences": 4,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491689248204",
       "page": 1,
@@ -410,46 +141,101 @@
      }
     },
     {
-     "label": "Telefono — ANALISI e PROVE S.r.l.",
-     "value": "0761435394",
-     "status": "da confermare",
-     "detail": "compare 12 volte",
+     "type": "Telefono",
+     "value": "0761972329",
+     "occurrences": 4,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_532870817562",
-      "page": 51,
-      "document": "ALL17 Piano di utilizzo delle rocce da scavo.pdf.p7m",
-      "excerpt": "Tel. 0761 435394 - FAX 0761 444142"
-     }
-    },
-    {
-     "label": "E-mail — Chiricotto S.r.l.",
-     "value": "vincenzo@chiricotto.it",
-     "status": "da confermare",
-     "detail": "compare 11 volte",
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491695511323",
-      "page": 2,
-      "document": "D10_Accettazione preventivo di connessione.pdf",
-      "excerpt": "Destinatario <vincenzo@chiricotto.it>"
-     }
-    },
-    {
-     "label": "Telefono",
-     "value": "0761313360",
-     "status": "da confermare",
-     "detail": "compare 9 volte",
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581230156633",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_570231368041",
       "page": 1,
-      "document": "trasmissione_2_STR_SUNCORE1-signed-signed.pdf",
-      "excerpt": "Sede legale: 01100 Viterbo - Via Saffi, 49 tel.: 0761/313360 P. IVA/Cod. Fisc.: 80005570561"
+      "document": "D20-Autorizzazione ai fini Idraulici.PDF",
+      "excerpt": "della Ditta e-Solar srl con sede legale in Viterbo Via ___A. Gargana, 34 CAP _01100_n°tel 0761972329 P.IVA 02307030565 __"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://regionelazio.app.box.com/v/VIA-060-2019"
+   }
+  },
+  {
+   "name": "Solar S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "+393386316126",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_619238633332",
+      "page": 2,
+      "document": "D12_Scheda di Sintesi del Progetto.pdf",
+      "excerpt": " Via A. Gargana, 34  Telefono +39 3386316126"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491699458919",
+    "page": 1,
+    "document": "D12_Scheda di sintesi del progetto.PDF",
+    "excerpt": "Dati identificativi proponente"
+   }
+  },
+  {
+   "name": "Suncore 1 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "10258590966",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Alberico Albricci 7 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "suncore1@legalmail.it",
+     "occurrences": 14,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581228311513",
+      "page": 1,
+      "document": "Copia_Allegato1_MemDoc_CreaPdf_202528272556758177103753975011385.pdf",
+      "excerpt": "prescrizioni la società Suncore 1 srl, con sede legale in Viale Coni Zugna 7 in Milano (20144) partita IVA 10258590966 – pec: suncore1@legalmail.it, alla costruzione e all’esercizio di un"
      }
     },
     {
-     "label": "E-mail — SUNCORE 1 S.r.l.",
+     "type": "PEC",
+     "value": "suncorel@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1465721651712",
+      "page": 1,
+      "document": "trasm_1_str_suncore1.pdf",
+      "excerpt": "e p.c. Suncore 1 SRL suncorel@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "hani.razzak@peridotsolar.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+      "page": 2,
+      "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
+      "excerpt": "Ing. Hani Abdul Razzak Tel.: 3204589606, Mail: Hani.razzak@peridotsolar.com"
+     }
+    },
+    {
+     "type": "E-mail",
      "value": "d.pomponio@bfpgroup.net",
-     "status": "da confermare",
-     "detail": "compare 8 volte",
+     "occurrences": 1,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581229878023",
       "page": 1,
@@ -458,193 +244,578 @@
      }
     },
     {
-     "label": "Telefono — Suncore 1 S.r.l.",
+     "type": "Telefono",
      "value": "+393273007556",
-     "status": "da confermare",
-     "detail": "compare 8 volte",
+     "occurrences": 8,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581234445438",
       "page": 1,
       "document": "Atto d`obbligo_Suncore1-signed.pdf",
-      "excerpt": "Phone +393273007556"
+      "excerpt": "MILANO (MI) P.IVA 10258590966 - C.S. 10.000,00 I.V. REA MI – 10258590966 PEC suncore1@legalmail.it Phone +393273007556"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3204589606",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+      "page": 2,
+      "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
+      "excerpt": "Ing. Hani Abdul Razzak Tel.: 3204589606, Mail: Hani.razzak@peridotsolar.com"
      }
     }
    ],
-   "note": "Recapiti stampati negli elaborati (intestazioni, firme, timbri), esclusi quelli di enti pubblici. «Da confermare» = il soggetto accanto al recapito non è certo: verificare prima di contattare."
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_889961123097",
+    "page": 4,
+    "document": "proponente richiesta chiarimenti 0964368.23-11-2021.pdf",
+    "excerpt": "TERNA che fa parte del progetto, nel Comune di Tarquinia (VT) località Pantano di Sopra. Proponente SUNCORE 1 Srl. Registro elenco progetti: n. 59/2019."
+   }
   },
   {
-   "id": "tempi",
-   "title": "Tempi e cantiere",
-   "items": [
+   "name": "Analisi E Prove S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "00909190571",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Verona Snc 01017 Tuscania Vt",
+   "contacts": [
     {
-     "label": "Entrata in esercizio",
-     "value": "31/07/2022",
-     "status": "da documenti",
-     "occurrences": 1,
+     "type": "Telefono",
+     "value": "0761435394",
+     "occurrences": 10,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_532870817562",
+      "page": 51,
+      "document": "ALL17 Piano di utilizzo delle rocce da scavo.pdf.p7m",
+      "excerpt": "Laboratorio: Via Verona, snc - 01017 Tuscania (VT) Tel. 0761 435394 - FAX 0761 444142"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_532870817562",
+    "page": 51,
+    "document": "ALL17 Piano di utilizzo delle rocce da scavo.pdf.p7m",
+    "excerpt": "RICHIEDENTE : EMENOSOLAR SRL Indirizzo : VIA GARGANA 34 01100 VITERBO"
+   }
+  },
+  {
+   "name": "Ing. Chiricotto Vincenzo Telefono",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "vincenzo.chiricotto@pec.it",
+     "occurrences": 2,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700181657",
-      "page": 5,
+      "page": 1,
       "document": "D08_Richiesta di connessione alla rete elettrica.pdf",
-      "excerpt": "e Data prevista di entrata in esercizio ..................... 31/07/2022: seine"
-     },
-     "note": "Natura del dato: previsione di progetto. Non prova l'avvio del cantiere."
+      "excerpt": "certificata ..VINCENZO.CHIRICOTTO@PEC.IT.. indirizzo e-mail ... VINCENZO@CHIRICOTTO.IT"
+     }
     },
     {
-     "label": "Fine lavori",
-     "value": "30/06/2021",
-     "status": "da documenti",
-     "occurrences": 1,
+     "type": "Telefono",
+     "value": "0761972329",
+     "occurrences": 4,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700181657",
-      "page": 5,
-      "document": "D08_Richiesta di connessione alla rete elettrica.pdf",
-      "excerpt": "e Data prevista di fine dei lavori di realizzazione dell'impianto ......... 30/06/2021.........."
-     },
-     "note": "Natura del dato: previsione di progetto. Non prova l'avvio del cantiere."
-    },
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_570231368041",
+      "page": 1,
+      "document": "D20-Autorizzazione ai fini Idraulici.PDF",
+      "excerpt": "Per eventuali comunicazioni rivolgersi al tecnico incaricato: Ing. Chiricotto Vincenzo Telefono 0761972329"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491695401647",
+    "page": 1,
+    "document": "R05_Scheda Notizie Vincolo Idrogeologico.pdf",
+    "excerpt": "Progettazione :"
+   }
+  },
+  {
+   "name": "Ing. Vincenzo Tosiani",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
     {
-     "label": "Inizio lavori",
-     "value": "30/06/2020",
-     "status": "da documenti",
-     "occurrences": 1,
+     "type": "PEC",
+     "value": "studiobfp@pec.it",
+     "occurrences": 2,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700181657",
-      "page": 5,
-      "document": "D08_Richiesta di connessione alla rete elettrica.pdf",
-      "excerpt": "e Data prevista di avvio dei lavori di realizzazione dell'impianto ......... 30/06/2020.............."
-     },
-     "note": "Natura del dato: previsione di progetto. Non prova l'avvio del cantiere."
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+      "page": 2,
+      "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
+      "excerpt": "Ing. VINCENZO TOSIANI, C.F./P.IVA: TSNVCN72A26B180I residente in BRINDISI, via DEGLI ACERI 28 Tel.: 3923557536, PEC studiobfp@pec.it"
+     }
     },
     {
-     "label": "Proroga inizio lavori",
-     "value": "17/12/2021",
-     "status": "da documenti",
+     "type": "E-mail",
+     "value": "v.tosiani@bfpgroup.net",
+     "occurrences": 6,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581229878023",
+      "page": 1,
+      "document": ",DanaInfo=prosa.regione.lazio.pdf",
+      "excerpt": "Telefono: v.tosiani@bfpgroup.net"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3923557536",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+      "page": 2,
+      "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
+      "excerpt": "Ing. VINCENZO TOSIANI, C.F./P.IVA: TSNVCN72A26B180I residente in BRINDISI, via DEGLI ACERI 28 Tel.: 3923557536, PEC studiobfp@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+    "page": 2,
+    "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
+    "excerpt": "RESPONSABILE E DELLA SICUREZZA IN FASE DI PROGETTAZIONE: Ing. VINCENZO TOSIANI, C.F./P.IVA: TSNVCN72A26B180I residente in BRINDISI, via DEGLI ACERI 28"
+   }
+  },
+  {
+   "name": "Ing. DE Santis Corrado",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "corrado.desantis8996@pec.ordingbari.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+      "page": 2,
+      "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
+      "excerpt": "Ing. DE SANTIS CORRADO, C. F./P.IVA: DSNCRD75T02A662V residente in BARI, Via Toscanini 2 -70126 Tel.: 3203784985 - PEC corrado.desantis8996@pec.ordingbari.it."
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3203784985",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+      "page": 2,
+      "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
+      "excerpt": "Ing. DE SANTIS CORRADO, C. F./P.IVA: DSNCRD75T02A662V residente in BARI, Via Toscanini 2 -70126 Tel.: 3203784985 - PEC corrado.desantis8996@pec.ordingbari.it."
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+    "page": 2,
+    "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
+    "excerpt": "DIRETTORE DEI LAVORI: Ing. DE SANTIS CORRADO, C. F./P.IVA: DSNCRD75T02A662V residente in BARI, Via Toscanini 2 -70126"
+   }
+  },
+  {
+   "name": "Societa' Agicola Piani Della Marina S.S.",
+   "kind": "società",
+   "roles": [],
+   "vat": "04390411009",
+   "vat_group": false,
+   "verified": true,
+   "office": "Viale Fiume 84 01100 Viterbo Vt",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "pianidellamarina@pec.it",
+     "occurrences": 131,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700044246",
+      "page": 1,
+      "document": "D01_Documentazione società proponente e-Solar srl (Visura Canerale).pdf",
+      "excerpt": "Indirizzo PEC pianidellamarina@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "ianidellamarina@pec.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_629321411589",
+      "page": 2,
+      "document": "terna.2020.0193418.pdf",
+      "excerpt": "01100 VITERBO ianidellamarina@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "AGRI-BIO-ECO Laboratori Riuniti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02470110590",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Delle Albicocche 19 00071 Pomezia Rm",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@agribioeco.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_570211323993",
+      "page": 2,
+      "document": "All.16-Analisi Chimica del Terreno.pdf",
+      "excerpt": "Sede Legale ed Operativa: Via delle Albicocche, 19 - 00071 Pomezia (Roma) - Tel. 0691969068/9 - Fax 0691822695 www.agribioeco.it - info@agribioeco.it - codice fiscale e p.iva: 02470110590"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Boffetti S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03738870165",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Francesco Nullo 435 24033 Calusco D'Adda Bg",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@boffettigroup.com",
      "occurrences": 2,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1159126939546",
-      "page": 3,
+      "page": 5,
       "document": "proponente 0249178.06-03-2023.pdf",
-      "excerpt": " Proroga inizio lavori - D.D. n.2620 del 17/12/2021 "
-     },
-     "note": null
-    },
+      "excerpt": "e-mail PEC: e-mail: info@boffettigroup.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Studio Tecnico BFP S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "06552640721",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Degli Arredatori 8 70026 Modugno Ba",
+   "contacts": [
     {
-     "label": "Durata cantiere",
-     "value": "18 mesi",
-     "status": "da documenti",
-     "occurrences": 9,
+     "type": "E-mail",
+     "value": "germinarios@bfpgroup.net",
+     "occurrences": 1,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700162140",
-      "page": 8,
-      "document": "R01_Sintesi Non Tecnica.pdf",
-      "excerpt": "Per le lavorazioni descritte è previsto un ampio ricorso a manodopera e ditte locali. La fase di costruzione dell’impianto è stimata in circa 18 mesi."
-     },
-     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): 60 giorni (2); 15 giorni (2); 6 mesi (2)."
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1738811722905",
+      "page": 1,
+      "document": "INT 18 12 1553086.18-12-2024.pdf",
+      "excerpt": "mob. +39 3473675624 e-mail germinarios@bfpgroup.net"
+     }
     },
     {
-     "label": "Durata dismissione",
-     "value": "3 mesi",
-     "status": "da documenti",
+     "type": "E-mail",
+     "value": "info@bfpgroup.net",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1738812541597",
+      "page": 1,
+      "document": "04-Lettera_art_90_Tarquinia.pdf",
+      "excerpt": "Studio Tecnico BFP s.r.l.  Sede legale e operativa: Via Degli Arredatori, 8 70026 Modugno (BA) Italy t. +39 080 5046361  www.bfpgroup.net info@bfpgroup.net Registro Imprese, CCIAA Bari e P.I. 06552640721 REA n. BA"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "+393473675624",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1738811722905",
+      "page": 1,
+      "document": "INT 18 12 1553086.18-12-2024.pdf",
+      "excerpt": "Studio Tecnico BFP S.r.l. mob. +39 3473675624"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Chiricotto S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "vincenzo.chiricotto@pec.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_570231368041",
+      "page": 1,
+      "document": "D20-Autorizzazione ai fini Idraulici.PDF",
+      "excerpt": "Per eventuali comunicazioni rivolgersi al tecnico incaricato: Ing. Chiricotto Vincenzo Telefono 0761972329 Cellulare 3386316126 E-Mail vincenzo@chiricotto.it PEC vincenzo.chiricotto@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "ingchircotto@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491689947775",
+      "page": 1,
+      "document": "D18_Dichiarazione sostitutiva atto notorio - Accollo del debito e-Solar srl.PDF",
+      "excerpt": "CAP 01100, partita IVA: 02303760561 con iscrizione presso il registro delle Imprese di Viterbo REA VT_168512, pec: ingchircotto@pec.it, consapevole delle responsabilità e"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "vincezo.chiricotto@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_619238633332",
+      "page": 2,
+      "document": "D12_Scheda di Sintesi del Progetto.pdf",
+      "excerpt": " Mail: vincenzo@chiricotto.it  Pec: vincezo.chiricotto@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "vincenzo@chiricotto.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_619238633332",
+      "page": 2,
+      "document": "D12_Scheda di Sintesi del Progetto.pdf",
+      "excerpt": " Telefono +39 3386316126  Mail: vincenzo@chiricotto.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Danilo Pomponio",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "d.pomponio@bfpgroup.net",
+     "occurrences": 5,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1476566503187",
+      "page": 1,
+      "document": "Notifica preliminare_agg 56050143898 del 12_03_2024__.pdf",
+      "excerpt": "E-mail: d.pomponio@bfpgroup.net"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3204731993",
      "occurrences": 2,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491695496502",
-      "page": 13,
-      "document": "All.06_Relazione Progetto di Dismissione e Ripristino.pdf",
-      "excerpt": "I tempi previsti per adempiere alla dismissione dell’intero impianto fotovoltaico sono di circa 3 mesi. Prima di intraprendere la fase di decommissioning, la società perimetrerà adeguata area a"
-     },
-     "note": null
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+      "page": 2,
+      "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
+      "excerpt": "Ing. Danilo Pomponio, nato a Bari il 19/02/1975 residente a Bari Palese lungomare Lorusso n 99 - Tel.: 3204731993, PEC studiobfp@pec.it."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Marina Pala",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "m.pala@bfpgroup.net",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1476563518956",
+      "page": 4,
+      "document": "DC23047E-S05_Rev 00 del 10_11_2023.pdf",
+      "excerpt": "Indirizzo e‐mail: m.pala@bfpgroup.net"
+     }
     },
     {
-     "label": "Vita utile",
-     "value": "30 anni",
-     "status": "da documenti",
-     "occurrences": 8,
+     "type": "Telefono",
+     "value": "3483646266",
+     "occurrences": 2,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700162140",
-      "page": 22,
-      "document": "R01_Sintesi Non Tecnica.pdf",
-      "excerpt": "dismissione garantiscono il ritorno allo stato ante operam senza lasciare modificazioni. Durante la vita utile dell’impianto, stimabile in 30 anni, il suolo risulterà protetto dalla degradazione indotta dalle pratiche ag"
-     },
-     "note": "Valore prevalente nei documenti. Valori minoritari (revisioni, parti o refusi): 9 anni (2); 12 anni (2)."
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581233896759",
+      "page": 2,
+      "document": "Inizio lavori Tarquinia SSE-MT-Hani-signed.pdf",
+      "excerpt": "Ing. MARINA PALA, C.F./P.IVA: PLAMRN74B45C773P – CIVITAVECCHIA (RM), via G. MATTEOTTI 34 - Tel.: 3483646266, PEC studiobfp@pec.it"
+     }
     }
-   ]
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Rossana Miglietta",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138989",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491689149442",
+      "page": 2,
+      "document": "D09_Preventivo di connessione.pdf",
+      "excerpt": "Contatti; Eugenio Mazzini Tel. 06.8313.8989,"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Varvaro & Misuraca Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "d.pomponio@bfpgroup.net",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1581229878023",
+      "page": 4,
+      "document": ",DanaInfo=prosa.regione.lazio.pdf",
+      "excerpt": "Le dichiarazioni di questa notifica di cantiere edile, effettuata da POMPONIO DANILO - Codice Fiscale: PMPDNL75B19A662S -- d.pomponio@bfpgroup.net, autore della presente notifica, consapevole delle sanzioni penali,"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Marco D’Orio",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "marco.dorio@peridotsolar.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1476567345407",
+      "page": 2,
+      "document": "Fidejussione impianto fotovoltaico di Tarquinia per Comune di Tarquinia_18 Gennaio 2024-signed.pdf",
+      "excerpt": "Ing. Marco D’Orio marco.dorio@peridotsolar.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ufficio Territorio e Patrimonio - Lungomare Nazario Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0805418433",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_629323608457",
+      "page": 1,
+      "document": "aeronautica.2020.0203478.pdf",
+      "excerpt": "P.d.C.: Funz. Amm.vo Gerardo MARUCA Tel.: 0805418433 – Rinam: 6702433"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "cronoprogramma": {
-  "bars": [
-   {
-    "name": "Cantiere (durata complessiva)",
-    "start": 0,
-    "end": 18,
-    "positioned": false,
-    "label": "18 mesi",
-    "source": {
-     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700162140",
-     "page": 8,
-     "document": "R01_Sintesi Non Tecnica.pdf",
-     "excerpt": "Per le lavorazioni descritte è previsto un ampio ricorso a manodopera e ditte locali. La fase di costruzione dell’impianto è stimata in circa 18 mesi."
-    }
-   },
-   {
-    "name": "Opere civili",
-    "start": 0,
-    "end": 18,
-    "positioned": false,
-    "label": "18 mesi",
-    "source": {
-     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491689205646",
-     "page": 181,
-     "document": "R02_Studio di Impatto Ambientale.pdf",
-     "excerpt": "Per l‟esecuzione delle opere civili ed il montaggio degli impianti si stima l‟impiego di: 1. n. 1400 operai complessivi su 18 mesi. L‟impianto a regime offrirà lavoro in ambito locale:"
-    }
-   },
-   {
-    "name": "Opere elettriche",
-    "start": 0,
-    "end": 1.97,
-    "positioned": false,
-    "label": "60 giorni",
-    "source": {
-     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_619234972246",
-     "page": 179,
-     "document": "R02_Studio di Impatto Ambientale.pdf",
-     "excerpt": " n. 2-3 addetti impiegati per 60 giorni per la raqccolta della lavanda Il numero di occupati indiretti associabili alla coltivazione di questa essenza dipende dalla"
-    }
-   },
-   {
-    "name": "Montaggi",
-    "start": 0,
-    "end": 15,
-    "positioned": false,
-    "label": "15 mesi",
-    "source": {
-     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491689205646",
-     "page": 177,
-     "document": "R02_Studio di Impatto Ambientale.pdf",
-     "excerpt": "Operai agricoli Le operazioni di montaggio dell‟impianto sono previste durare per circa 15 mesi, pertanto si prevede l‟impiego di personale generico e specializzato di ca. 520ULA e per il suddetto"
-    }
-   },
-   {
-    "name": "Collaudi e avviamento",
-    "start": 0,
-    "end": 12,
-    "positioned": false,
-    "label": "12 mesi",
-    "source": {
-     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1476567200514",
-     "page": 38,
-     "document": "DC23047E-S01_Rev 04 del 10.03.2024.pdf",
-     "excerpt": "- conservare i guanti lontano da fonti di calore, ozono e luce diretta; - collaudare o sostituire i guanti ogni 6/12 mesi; - se uno dei due guanti appartenenti ad un paio e ritenuto non sicuro, il paio non"
-    }
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 60 giorni (2), 15 giorni (2), 6 mesi (2)",
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700162140",
+    "page": 8,
+    "document": "R01_Sintesi Non Tecnica.pdf",
+    "excerpt": "Per le lavorazioni descritte è previsto un ampio ricorso a manodopera e ditte locali. La fase di costruzione dell’impianto è stimata in circa 18 mesi."
    }
-  ],
-  "months": 18,
+  },
   "milestones": [
    {
     "label": "Inizio lavori",
     "date": "30/06/2020",
     "iso": "2020-06-30",
     "nature": "previsione di progetto",
+    "certain": false,
     "source": {
      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700181657",
      "page": 5,
@@ -657,6 +828,7 @@
     "date": "30/06/2021",
     "iso": "2021-06-30",
     "nature": "previsione di progetto",
+    "certain": false,
     "source": {
      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700181657",
      "page": 5,
@@ -669,6 +841,7 @@
     "date": "17/12/2021",
     "iso": "2021-12-17",
     "nature": "atto/evento documentato",
+    "certain": true,
     "source": {
      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_1159126939546",
      "page": 3,
@@ -681,6 +854,7 @@
     "date": "31/07/2022",
     "iso": "2022-07-31",
     "nature": "previsione di progetto",
+    "certain": false,
     "source": {
      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700181657",
      "page": 5,
@@ -689,12 +863,15 @@
     }
    }
   ],
-  "note": "Gli elaborati indicano solo le durate: le barre partono tutte dall'avvio del cantiere, la sequenza reale non è indicata."
+  "document": {
+   "document": "All.09_Croprogramma lavori.pdf",
+   "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-060-2019&file_id=f_491700564016"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto."
  },
  "documentazione": {
   "documenti": 492,
   "pagine": 4080,
-  "procedimenti": 80,
   "completa": true
  },
  "confronto": [
@@ -726,17 +903,17 @@
  ],
  "da_verificare": [
   {
-   "label": "Progettista",
-   "reason": "valori diversi nei documenti"
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Superficie a disposizione",
-   "reason": "valori diversi nei documenti"
+   "label": "Superficie coperta dai pannelli",
+   "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Superficie occupata dai pannelli",
-   "reason": "valori diversi nei documenti"
+   "label": "Recapiti",
+   "reason": "254 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
- "avvertenza": "Informazioni estratte automaticamente dalla documentazione pubblica del procedimento. Ogni valore riporta documento e pagina; i dati 'da confermare' e 'in conflitto' richiedono verifica."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
 }
