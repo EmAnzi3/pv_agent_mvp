@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "115 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 116 ha (4), 0,5 ha (3), 1 ha (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 116 ha (4), 114 ha (1), 70 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/654304",
     "page": 3,
@@ -73,7 +73,7 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "50 settimane",
+   "value": "50 settimane (circa 12 mesi)",
    "status": "da documenti",
    "sub": "Valore prevalente negli elaborati; altri valori: 8-10 mesi (1), 18 mesi (1)",
    "source": {
@@ -121,7 +121,7 @@
     {
      "type": "PEC",
      "value": "fabio.calcarella@ingpec.eu",
-     "occurrences": 96,
+     "occurrences": 116,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1436970",
       "page": 1,
@@ -165,42 +165,12 @@
     {
      "type": "E-mail",
      "value": "fabio.calcarella@gmail.com",
-     "occurrences": 96,
+     "occurrences": 116,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1436970",
       "page": 1,
       "document": "RELAZIONE di OTTEMPERANZA alle condizioni ambientali Ante Operam",
       "excerpt": "Mob. +39 340 9243575 fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/709996",
-    "page": 1,
-    "document": "Allegato al Decreto del Ministero della Transizione Ecologica - Parere Commissione Tecnica PNRR-PNIEC del 06/09/2022",
-    "excerpt": "Proponente Whysol-E Sviluppo S.r.l."
-   }
-  },
-  {
-   "name": "DOTT. ING. Fabio Calcarella Whysol-E Sviluppo S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "Telefono",
-     "value": "02359605",
-     "occurrences": 25,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/592969",
-      "page": 1,
-      "document": "Calcoli preliminari delle strutture - Relazione art.26 Impianto FV",
-      "excerpt": "Via Bartolomeo Ravenna, 14 - 73100 Lecce Via Meravigli, 3 - 20123 - MILANO Mob. +39 340 9243575 Tel: +39 02 359605"
      }
     }
    ],
@@ -228,7 +198,7 @@
    }
   },
   {
-   "name": "7 arm yy Sinergye Ring S.r.l.",
+   "name": "Sinergye Ring S.r.l.",
    "kind": "società",
    "roles": [
     "Progettista"
@@ -278,13 +248,13 @@
  ],
  "altri_soggetti": [
   {
-   "name": "Responsabile del Laboratorio LabAnalysis S.r.l.",
+   "name": "Labanalysis Life Science S.r.l.",
    "kind": "società",
    "roles": [],
-   "vat": null,
+   "vat": "02235450182",
    "vat_group": false,
-   "verified": false,
-   "office": null,
+   "verified": true,
+   "office": "Via Europa 5 27041 Casanova Lonati Pv",
    "contacts": [
     {
      "type": "Telefono",
@@ -298,7 +268,10 @@
      }
     }
    ],
-   "source": null
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
   },
   {
    "name": "Inses S.r.l.",
@@ -414,150 +387,85 @@
    "source": null
   }
  ],
- "stato": {
-  "level": "date_superate",
-  "label": "Date di progetto superate: verificare lo stato",
-  "reason": "Avvio previsto il 27/04/2022, ma l'iter è proseguito; ultimo documento o atto del 05/10/2026: probabile slittamento, non ancora realizzato o in corso."
- },
+ "stato": null,
  "cronoprogramma": {
   "bars": [
    {
-    "name": "* zinco assimilabile mg/kg <1",
-    "start": 0.2,
-    "end": 0.3,
-    "dates": [
-     "2022-05-03",
-     "2022-05-05"
-    ]
-   },
-   {
-    "name": "* rapporto calcio/magnesio",
-    "start": 0.23,
-    "end": 0.33,
-    "dates": [
-     "2022-05-04",
-     "2022-05-06"
-    ]
-   },
-   {
-    "name": "* potassio scambiabile meq/",
-    "start": 0.26,
-    "end": 0.33,
-    "dates": [
-     "2022-05-05",
-     "2022-05-06"
-    ]
-   },
-   {
-    "name": "* sodio scambiabile meq/",
-    "start": 0.26,
-    "end": 0.33,
-    "dates": [
-     "2022-05-05",
-     "2022-05-06"
-    ]
-   },
-   {
-    "name": "residuo a 105 °C %",
+    "name": "Allestimento cantiere",
     "start": 0.0,
-    "end": 0.07,
-    "dates": [
-     "2022-04-27",
-     "2022-04-28"
-    ]
+    "end": 0.44
    },
    {
-    "name": "sottovaglio 2cm % 100",
-    "start": 0.07,
-    "end": 0.1,
-    "dates": [
-     "2022-04-29",
-     "2022-04-29"
-    ]
+    "name": "Sbancamenti e livellazioni",
+    "start": 0.21,
+    "end": 0.92
    },
    {
-    "name": "sottovaglio 2mm % 93",
-    "start": 0.07,
-    "end": 0.1,
-    "dates": [
-     "2022-04-29",
-     "2022-04-29"
-    ]
+    "name": "Installazione recinzione e cancelli",
+    "start": 0.67,
+    "end": 1.15
    },
    {
-    "name": "scheletro g/kg 74",
-    "start": 0.07,
-    "end": 0.1,
-    "dates": [
-     "2022-04-29",
-     "2022-04-29"
-    ]
+    "name": "Scavi per Cabne e posa manufatti",
+    "start": 1.13,
+    "end": 1.85
    },
    {
-    "name": "umidità (da calcolo) %",
-    "start": 0.0,
-    "end": 0.07,
-    "dates": [
-     "2022-04-27",
-     "2022-04-28"
-    ]
+    "name": "Scavi per sottoservizi",
+    "start": 1.36,
+    "end": 5.31
    },
    {
-    "name": "* sabbia g/kg 276",
-    "start": 0.23,
-    "end": 0.46,
-    "dates": [
-     "2022-05-04",
-     "2022-05-10"
-    ]
+    "name": "Cablkaggi cavi BT e MT interrati",
+    "start": 1.59,
+    "end": 5.54
    },
    {
-    "name": "* sabbia grossolana g/kg 123",
-    "start": 0.23,
-    "end": 0.46,
-    "dates": [
-     "2022-05-04",
-     "2022-05-10"
-    ]
+    "name": "Installazione strutture",
+    "start": 1.82,
+    "end": 10.62
    },
    {
-    "name": "* sabbia fine g/kg 154",
-    "start": 0.23,
-    "end": 0.46,
-    "dates": [
-     "2022-05-04",
-     "2022-05-10"
-    ]
+    "name": "Montaggio moduli FV, QP e cablaggio",
+    "start": 2.05,
+    "end": 11.05
    },
    {
-    "name": "* limo g/kg 540",
-    "start": 0.23,
-    "end": 0.46,
-    "dates": [
-     "2022-05-04",
-     "2022-05-10"
-    ]
+    "name": "Realizzaizone cavidotto tra area sud e nord",
+    "start": 1.36,
+    "end": 2.08
    },
    {
-    "name": "* limo grosso g/kg",
-    "start": 0.23,
-    "end": 0.46,
-    "dates": [
-     "2022-05-04",
-     "2022-05-10"
-    ]
+    "name": "Realizzazione strada esterna",
+    "start": 1.13,
+    "end": 1.85
+   },
+   {
+    "name": "Realizzazione cavidotto esterno MT",
+    "start": 2.98,
+    "end": 3.69
+   },
+   {
+    "name": "Collaudi e commissioning",
+    "start": 10.82,
+    "end": 11.28
+   },
+   {
+    "name": "Smobilizzo cantiere",
+    "start": 11.05,
+    "end": 11.52
    }
   ],
   "unit": "month",
-  "months": 1,
+  "months": 11.52,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/654351",
-   "page": 53,
-   "document": "Integrazioni del 23/06/2022 - StudioPedologicoAllegato3",
+   "url": "https://va.mite.gov.it/File/Documento/593071",
+   "page": 32,
+   "document": "Relazione generale del Progetto Definitivo",
    "excerpt": ""
   },
   "duration": {
-   "text": "50 settimane",
+   "text": "50 settimane (circa 12 mesi)",
    "status": "da documenti",
    "hint": "Valore prevalente negli elaborati; altri valori: 8-10 mesi (1), 18 mesi (1)",
    "source": {
@@ -607,10 +515,6 @@
   }
  ],
  "da_verificare": [
-  {
-   "label": "Stato del progetto",
-   "reason": "Avvio previsto il 27/04/2022, ma l'iter è proseguito; ultimo documento o atto del 05/10/2026: probabile slittamento, non ancora realizzato o in corso."
-  },
   {
    "label": "Superficie complessiva",
    "reason": "valori diversi negli elaborati"
