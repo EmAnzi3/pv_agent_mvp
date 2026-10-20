@@ -123,11 +123,16 @@ ITALY = (35.4, 47.2, 6.5, 18.7)
 
 
 def _ckey(name: str) -> str:
-    """Identity key of a company or person: lower case, no accents, no legal form, letters and digits only."""
+    """Identity key of a company or person: lower case, no accents, no legal form, letters and digits only.
+    For titled persons the words are sorted, so 'Ing. Chiricotto Vincenzo' = 'Ing. Vincenzo Chiricotto'."""
     t = (name or "").lower().translate(ACCENTS)
+    person = bool(PERSON_TITLE.match(t))
     t = PERSON_TITLE.sub("", t)
-    t = re.sub(r"(?i)\b(?:agronom[oa]|geolog[oa]|forestale|vet|geol|agr|ing|for)\b\.?", " ", t)
-    return re.sub(r"[^a-z0-9]", "", LEGAL_PHRASES.sub(" ", t))
+    t = re.sub(r"(?i)\b(?:dott|agronom[oa]|geolog[oa]|forestale|vet|geol|agr|ing|for|arch|geom)\b\.?", " ", t)
+    t = LEGAL_PHRASES.sub(" ", t)
+    if person:
+        return "".join(sorted(re.findall(r"[a-z0-9]{2,}", t)))
+    return re.sub(r"[^a-z0-9]", "", t)
 
 
 def _same(a: str, b: str) -> bool:
@@ -321,6 +326,7 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
         return None
 
     def get(name: str, kind: str) -> dict | None:
+        name = _clean_subject(name)
         if _garbled(name) or PUBLIC_SUBJECT.search(name or ""):
             return None
         e = find(name, kind)
@@ -430,6 +436,20 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
         key = (f["field"], val)
         c = target["contacts"].setdefault(key, {"n": 0, "fact": f})
         c["n"] += 1
+    # OCR variants of the same address across subjects ('planidellamarina' vs 'pianidellamarina'): keep the most frequent
+    allc: dict[tuple, int] = {}
+    for e in ents:
+        for key, c in e["contacts"].items():
+            allc[key] = allc.get(key, 0) + c["n"]
+    canon: dict[tuple, tuple] = {}
+    for key in sorted(allc, key=lambda k: -allc[k]):
+        twin = next((k for k in canon.values() if k[0] == key[0] and k != key and allc[k] >= allc[key]
+                     and _lev(k[1], key[1]) <= 2), None)
+        canon[key] = twin or key
+    for e in ents:
+        for key in list(e["contacts"]):
+            if canon[key] != key:
+                del e["contacts"][key]
     owners: dict[tuple, list[tuple]] = {}
     for e in ents:
         for key, c in e["contacts"].items():
@@ -463,7 +483,7 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
                                                if e["registry"] else None),
                 "_rank": (0 if "Proponente" in e["roles"] else 1 if e["roles"] else 2 if e["registry"] else 3, -e["mentions"]
                           - sum(c["n"] for c in e["contacts"].values()))}
-        if e["roles"] or (e["registry"] and vat_mentions.get(e["vat"], 0) >= 2):
+        if e["roles"] or (e["registry"] and item["contacts"] and vat_mentions.get(e["vat"], 0) >= 2):
             main.append(item)
         elif item["contacts"] and e["kind"] == "company":
             others.append(item)

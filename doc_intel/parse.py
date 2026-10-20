@@ -25,7 +25,7 @@ USEFUL_MIN_CHARS = 60
 MAX_RENDER_PIXELS = 25_000_000   # ~A4 at 400 DPI / A0 at ~120 DPI: bounded time per page
 
 
-from .gantt_vector import SCHEDULE_HINT
+from .gantt_vector import is_schedule_page
 
 
 def useful_chars(text: str) -> int:
@@ -235,7 +235,7 @@ def extract_pages(raw: bytes, sha: str, store: Store | None = None, member: str 
                     pass
             method = "digital" if useful_chars(text) >= USEFUL_MIN_CHARS else "none"
             page = {"n": n, "text": text, "method": method, "chars": useful_chars(text), "error": err}
-            if hasattr(backend, "page_gantt") and SCHEDULE_HINT.search(text or ""):
+            if hasattr(backend, "page_gantt") and is_schedule_page(text):
                 try:
                     g = backend.page_gantt(n)
                     if g:

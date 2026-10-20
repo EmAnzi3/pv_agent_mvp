@@ -19,6 +19,8 @@ MONTHS = {"gen": 1, "feb": 2, "mar": 3, "apr": 4, "mag": 5, "giu": 6, "lug": 7, 
 TICK_RE = re.compile(r"^(?:[MSWG]|M\.|S\.)?(\d{1,3})[°ª]?$", re.I)
 SCHEDULE_HINT = re.compile(r"(?i)cronoprogramma|gantt|diagramma|programma\s+(?:dei\s+)?lavori|fasi\s+(?:di\s+)?(?:cantiere|lavoro)|"
                            r"attivit[aà]|lavorazion")
+MONTH_WORD = r"(?:gen|feb|mar|apr|mag|giu|lug|ago|set|ott|nov|dic|jan|may|jun|jul|aug|sep|oct|dec)[a-z]*\.?"
+DATE_ANY = re.compile(r"(?i)\b\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4}\b|\b\d{1,2}\s+" + MONTH_WORD + r"\s+\d{2,4}\b")
 DATE_OR_DUR = re.compile(r"(?i)\b\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4}\b|\b\d+(?:[.,]\d+)?\s*(?:g|gg|giorni|sett|settimane|mesi|ms|w|d|days)\b\.?")
 
 
@@ -105,7 +107,9 @@ def _lines(words: list[tuple]) -> list[dict]:
 
 
 def _clean_label(text: str) -> str:
-    t = DATE_OR_DUR.sub(" ", text)
+    t = DATE_ANY.sub(" ", text)
+    t = DATE_OR_DUR.sub(" ", t)
+    t = re.sub(r"(?i)\b(?:low|med(?:ium)?|high)\s+risk\b|\bmilestone\b|[!¡|]", " ", t)
     t = re.sub(r"^\s*(?:\d+(?:\.\d+)*[.)]?\s+)+", "", t)          # leading ids / WBS numbers
     t = re.sub(r"\s{2,}", " ", t).strip(" -–:;|")
     return t
@@ -170,10 +174,15 @@ def reconstruct(words: list[tuple], rects: list[tuple], width: float, height: fl
     return {"unit": unit, "axis": [axis["first"], axis["last"]], "rows": out[:60], "method": "vector_gantt"}
 
 
+def is_schedule_page(text: str) -> bool:
+    """Programme-of-works wording, or a table with many activity dates (MS Project export without a title)."""
+    return bool(SCHEDULE_HINT.search(text or "")) or len(DATE_ANY.findall(text or "")) >= 8
+
+
 def from_fitz_page(page: Any) -> dict | None:
     """Adapter for a PyMuPDF page; returns None on pages without a drawable time axis."""
     text = page.get_text("text") or ""
-    if not SCHEDULE_HINT.search(text):
+    if not is_schedule_page(text):
         return None
     words = [(w[0], w[1], w[2], w[3], w[4], w[5], w[6]) for w in page.get_text("words")]
     if len(words) > 20000:
@@ -209,5 +218,5 @@ def table_rows(words: list[tuple]) -> list[str]:
         else:
             out.append([w])
     rows = [" ".join(w[4] for w in sorted(r, key=lambda w: w[0])) for r in out]
-    dated = [r for r in rows if len(re.findall(r"\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4}", r)) >= 2]
+    dated = [r for r in rows if len(DATE_ANY.findall(r)) >= 2]
     return dated[:120] if len(dated) >= 3 else []

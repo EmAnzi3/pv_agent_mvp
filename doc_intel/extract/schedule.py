@@ -99,12 +99,20 @@ UNIT_TO_MONTHS = {"month": 1.0, "week": 12 / 52, "day": 1 / 30.4}
 TWO_DATES = re.compile(r"(?P<d1>\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4})\D{1,20}?(?P<d2>\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4})")
 
 
+MONTH_NUM = {"gen": 1, "jan": 1, "feb": 2, "mar": 3, "apr": 4, "mag": 5, "may": 5, "giu": 6, "jun": 6, "lug": 7, "jul": 7,
+             "ago": 8, "aug": 8, "set": 9, "sep": 9, "ott": 10, "oct": 10, "nov": 11, "dic": 12, "dec": 12}
+
+
 def _date(t: str):
     from datetime import date
     m = re.match(r"(\d{1,2})[/.-](\d{1,2})[/.-](\d{2,4})", t)
-    if not m:
-        return None
-    d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    if m:
+        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    else:
+        m = re.match(r"(?i)(\d{1,2})\s+([a-z]{3})[a-z]*\.?\s+(\d{2,4})", t)
+        if not m or m.group(2).lower() not in MONTH_NUM:
+            return None
+        d, mo, y = int(m.group(1)), MONTH_NUM[m.group(2).lower()], int(m.group(3))
     y = y + 2000 if y < 100 else y
     try:
         return date(y, mo, d)
@@ -132,13 +140,15 @@ def extract_gantt(ctx: PageContext) -> list[Fact]:
         return out
     rows = []
     for line in g.get("table_rows") or ctx.lines:
-        ds = list(re.finditer(r"\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4}", line))
+        from ..gantt_vector import DATE_ANY, _clean_label
+        ds = list(DATE_ANY.finditer(line))
         if len(ds) < 2:
             continue
         d1, d2 = _date(ds[0].group(0)), _date(ds[1].group(0))
-        name = re.sub(r"^\s*(?:\d+(?:\.\d+)*[.)]?\s+)+", "", line[: ds[0].start()])
         name = re.sub(r"(?i)\b\d+(?:[.,]\d+)?\s*(?:g|gg|giorni|days?|sett|settimane|mesi|ms|w|d|g\.l\.)\b\.?|"
-                      r"\b(?:lun|mar|mer|gio|ven|sab|dom|mon|tue|wed|thu|fri|sat|sun)\b\.?|\b\d+[.,]\d+\b", "", name).strip(" -–:;|")
+                      r"\b(?:lun|mar|mer|gio|ven|sab|dom|mon|tue|wed|thu|fri|sat|sun)\b\.?|\b\d+[.,]\d+\b", "",
+                      line[: ds[0].start()])
+        name = _clean_label(name)
         if d1 and d2 and d2 >= d1 and re.search(r"[A-Za-zÀ-ÿ]{4}", name):
             rows.append((name[:80], d1, d2, line))
     if len(rows) >= 3:
