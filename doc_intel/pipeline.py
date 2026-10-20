@@ -80,10 +80,15 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
                                                  None if mem.depth == 0 else mem.name, ref.procedure_id,
                                                  ref.title, ref.extra.get("index_date"), None, p["method"]))
         facts = extract_all(doc_pages)
+        terms = []
+        for pc in doc_pages:
+            for ln in pc.lines:
+                if TERM_RE.search(ln) and len(terms) < 40:
+                    terms.append({"page": pc.page, "line": ln[:220]})
         payload = {"sha256": res.sha256, "url": ref.url, "extracted_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                    "toolbox_version": TOOLBOX_VERSION, "extractor_version": EXTRACTOR_VERSION, "members": members, "skipped": res.skipped_members,
                    "unreadable": unread, "diagnostics": coordinate_diagnostics(doc_pages, facts, limit=5),
-                   "facts": facts_to_json(facts), "complete": complete}
+                   "facts": facts_to_json(facts), "complete": complete, "terms": terms}
         return payload
 
     def process(ref):
@@ -160,6 +165,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     facts: list[Fact] = []
     unreadable: list[dict] = []
     diagnostics: list[dict] = []
+    term_lines: list[dict] = []
     sha_aliases: dict[str, list[str]] = {}
     inventory = []
     by_sha: dict[str, str] = {}
@@ -207,6 +213,9 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
                     acq["pages_graphic_no_text"] += s_.get("no_text", 0) if ocr else 0
                 unreadable.extend(payload.get("unreadable", [])[: max(0, 200 - len(unreadable))])
                 diagnostics.extend(payload.get("diagnostics", [])[: max(0, 40 - len(diagnostics))])
+                for t in payload.get("terms", []):
+                    if len(term_lines) < 400:
+                        term_lines.append({"doc": (ref.title or ref.url)[:60], **t})
                 facts.extend(fact_from_dict(f) for f in payload["facts"])
         inventory.append(entry)
     acq["distinct_sha256"] = len(by_sha)
@@ -242,7 +251,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         "project": asdict(identity),
         "acquisition": acq, "inventory": inventory, "unreadable_pages": unreadable,
         "sha_aliases": {k: v for k, v in sha_aliases.items() if len(v) > 1},
-        "diagnostics": diagnostics, "registry": registry_results,
+        "diagnostics": diagnostics, "registry": registry_results, "term_lines": term_lines,
         "facts": facts_to_json(facts), "groups": groups,
         "canonical": {k: v for k, v in canonical.items() if k != "record"}, "canonical_record": record,
         "delta": delta, "proposal": proposal, "gates": {"acquisition": acq_gate, "proposal": gate_rows},
@@ -258,6 +267,9 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     return dossier
 
 
+# lines kept (max 40 per document) to tune extractors for fields the user asked for, since texts are deleted
+TERM_RE = re.compile(r"(?i)\bpal[io]\b|infiss|superficie|\bettari\b|\d\s*ha\b|cronoprogramma|gantt|\bmes[ei]\s+\d|"
+                     r"\d+\s*°?\s*mese|settiman[ae]\s+\d|lott[io]\b")
 COORD_HINT = re.compile(r"(?i)\bUTM\b|WGS\s*-?\s*84|EPSG|coordinat|gauss|monte\s+mario|\bvertic")
 
 

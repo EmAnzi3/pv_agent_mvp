@@ -183,26 +183,46 @@ jobs:
             sleep $((i * 10))
           done
           echo "::error title=memory::could not push doc-intel-state"; exit 1
-      - name: Publish digest 1/4
+      - name: Publish digest 1/8
         if: always()
         run: |
           f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
-          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 0 --slices 4 || echo "::warning title=digest::no dossier produced"
-      - name: Publish digest 2/4
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 0 --slices 8 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 2/8
         if: always()
         run: |
           f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
-          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 1 --slices 4 || echo "::warning title=digest::no dossier produced"
-      - name: Publish digest 3/4
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 1 --slices 8 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 3/8
         if: always()
         run: |
           f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
-          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 2 --slices 4 || echo "::warning title=digest::no dossier produced"
-      - name: Publish digest 4/4
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 2 --slices 8 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 4/8
         if: always()
         run: |
           f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
-          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 3 --slices 4 || echo "::warning title=digest::no dossier produced"
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 3 --slices 8 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 5/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 4 --slices 8 || echo "no dossier"
+      - name: Publish digest 6/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 5 --slices 8 || echo "no dossier"
+      - name: Publish digest 7/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 6 --slices 8 || echo "no dossier"
+      - name: Publish digest 8/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 7 --slices 8 || echo "no dossier"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -200,7 +200,17 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         num = parse_number(tm.group(1)) or 0
         unit = tm.group(2)
         mw = num / 1000 if unit.lower().startswith("k") else num
-        tech_head.append({"label": "Potenza (dal titolo del procedimento)", "status": "verificato",
+        note = None
+        for fld in ("tech.pv_dc_mwp", "tech.pv_ac_mw"):
+            pv = _prevalent(d, fld)
+            if pv and pv[1]["occurrences"] >= 20:
+                ratio = mw / pv[1]["value"] if pv[1]["value"] else 0
+                if any(abs(ratio - k) < 0.01 * k for k in (10, 100, 1000, 0.1, 0.01, 0.001)):
+                    note = (f"Possibile refuso nel titolo: gli elaborati riportano {_fmt(fld, pv[1]['value'])} "
+                            f"({pv[1]['occurrences']} volte).")
+                    break
+        tech_head.append({"label": "Potenza (dal titolo del procedimento)", "status": "da confermare" if note else "verificato",
+                          "note": note,
                           "value": _fmt("tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw", round(mw, 3)),
                           "source": {"document": "titolo del procedimento", "url": p.get("info_url"), "excerpt": tm.group(0)}})
     lots = _prevalent(d, "tech.lots_count")
@@ -305,7 +315,8 @@ def _prevalent(d: dict, field: str):
     return fact, g["values"][0]
 
 
-PUBLIC_MAIL = re.compile(r"(?i)\.gov\.it$|regione\.|comune\.|provincia\.|arpa|cultura|beniculturali|mite|mase|"
+PUBLIC_MAIL = re.compile(r"(?i)\.gov\.it$|governo\.it|interno\.it|agenziademanio|autoritadistretto|astral|regione|comune|provincia|"
+                         r"prefettura|parco|ente|arpa|cultura|beniculturali|mite|mase|"
                          r"minambiente|terna\.it|e-distribuzione|enel\.it$|asl|vigilfuoco|marina\.difesa|ispra|anas\.it|"
                          r"snam|consorzio|bonifica|cert\.|postacert\.regione")
 PUBLIC_SUBJECT = re.compile(r"(?i)comune|regione|provincia|soprintendenza|arpa|ministero|terna|vigili|asl|consorzio|caserma")
@@ -318,7 +329,7 @@ def _contacts(d: dict, titles: dict) -> list[dict]:
         if f["field"] not in ("contact.email", "contact.pec", "contact.phone") or f.get("status") == "rejected":
             continue
         val = str(f["value"])
-        if f["field"] != "contact.phone" and PUBLIC_MAIL.search(val.split("@")[-1]):
+        if f["field"] != "contact.phone" and PUBLIC_MAIL.search(val):
             continue
         subj = f.get("subject") or ""
         if PUBLIC_SUBJECT.search(subj):
