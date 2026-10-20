@@ -143,9 +143,12 @@ def reconstruct(words: list[tuple], rects: list[tuple], width: float, height: fl
             continue
         bars.append(r)
     rows: dict[int, dict] = {}
-    centres = sorted({round((r[1] + r[3]) / 2, 1) for r in bars})
-    gaps = [b - a for a, b in zip(centres, centres[1:]) if b - a > 1]
+    # row pitch from the activity labels (every row has one), not from the bars (summary rows may have none)
+    centres = sorted({round((ln["y0"] + ln["y1"]) / 2, 1) for ln in lines})
+    gaps = [b - a for a, b in zip(centres, centres[1:]) if b - a > 0.6 * text_h]
     pitch = statistics.median(gaps) if gaps else 3 * text_h
+    if len(gaps) >= 4:
+        pitch = min(pitch, sorted(gaps)[len(gaps) // 4] * 1.6)   # wrapped labels make some gaps small: keep near the row step
     for x0, y0, x1, y1, _ in bars:
         yc = (y0 + y1) / 2
         # a wrapped activity name spans several text lines inside the same row

@@ -681,7 +681,7 @@ def _gantt(d: dict, titles: dict) -> dict:
             bars.sort(key=lambda b: (b["start"], b["end"]))
             src = _example_source(next(iter(phases.values()))["f"], titles)
     phase_durations = []
-    if not bars:
+    if True:
         by_doc: dict[str, list[dict]] = {}
         for f in d["facts"]:
             if f["field"] == "schedule.phase_duration":
@@ -695,7 +695,13 @@ def _gantt(d: dict, titles: dict) -> dict:
                     continue
                 seen.add(v["name"].lower())
                 phase_durations.append({"name": v["name"], "duration": v["raw"].replace(" g", " giorni"), "months": v["months"]})
-            src = _source({"url": u, "page": fs[0]["citation"]["page"]}, titles)
+            dur_src = _source({"url": u, "page": fs[0]["citation"]["page"]}, titles)
+            if not bars:
+                src = dur_src
+    if bars and phase_durations and len(bars) < 0.5 * len(phase_durations):
+        bars, src = [], dur_src          # a partial read of the drawing: the full list of phases is more useful
+    if bars:
+        phase_durations = []
     dur = _pick(d, "schedule.duration.construction", titles)
     milestones = []
     for field in ("schedule.date.construction_start", "schedule.date.construction_start_extension",
