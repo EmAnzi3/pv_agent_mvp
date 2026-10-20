@@ -60,13 +60,13 @@
  ],
  "ubicazione": {
   "regione": "Veneto",
-  "provincia": "MN",
+  "provincia": "RO, MN",
   "comuni": [
-   "Melara",
-   "Ostiglia"
+   "Melara (RO)",
+   "Ostiglia (MN)"
   ],
   "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Melara%2C+MN%2C+Veneto",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Melara%2C+Veneto",
   "maps_precision": "comune"
  },
  "soggetti": [
@@ -214,132 +214,112 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "start",
+    "name": "start Milestone",
     "start": 0.02,
     "end": 0.25
    },
    {
-    "name": "contrattualizzazione appalti",
-    "start": 0.02,
-    "end": 3.02
-   },
-   {
-    "name": "mobilizzazione personale e mezzi",
-    "start": 5.77,
-    "end": 8.98
-   },
-   {
-    "name": "trasformatori e quadri",
+    "name": "trasformatori e quadri Med Risk",
     "start": 1.41,
     "end": 11.98
    },
    {
-    "name": "moduli FTV",
+    "name": "moduli FTV Med Risk",
     "start": 1.41,
     "end": 8.28
    },
    {
-    "name": "srtutture (trackers)",
+    "name": "srtutture (trackers) Med Risk",
     "start": 1.87,
     "end": 10.13
    },
    {
-    "name": "inverters",
+    "name": "inverters Med Risk",
     "start": 1.41,
     "end": 11.98
    },
    {
-    "name": "cavi",
+    "name": "cavi Med Risk",
     "start": 1.87,
     "end": 10.13
    },
    {
-    "name": "Med Risk",
+    "name": "cabine e altro (videocamere e Med Risk SCADA)",
     "start": 1.87,
     "end": 10.13
    },
    {
-    "name": "appalti opere civili",
+    "name": "appalti opere civili Med Risk",
     "start": 1.87,
     "end": 3.48
    },
    {
-    "name": "basic design",
+    "name": "basic design Low Risk",
     "start": 0.48,
     "end": 1.87
    },
    {
-    "name": "progettazione elettrica",
-    "start": 0.95,
-    "end": 2.1
+    "name": "opere civili (strade, trincee, Med Risk drenaggi, recinzione, ecc)",
+    "start": 8.98,
+    "end": 10.13
    },
    {
-    "name": "progettazione opere civili",
-    "start": 0.95,
-    "end": 2.1
-   },
-   {
-    "name": "strutture di sostegno",
+    "name": "strutture di sostegno Med Risk",
     "start": 9.9,
     "end": 11.05
    },
    {
-    "name": "montaggio moduli",
+    "name": "montaggio moduli Med Risk",
     "start": 11.03,
     "end": 12.44
    },
    {
-    "name": "installazione inverters",
+    "name": "installazione inverters Med Risk",
     "start": 12.42,
     "end": 13.13
    },
    {
-    "name": "installazione trasformatori",
+    "name": "installazione trasformatori Med Risk",
     "start": 12.65,
     "end": 13.13
    },
    {
-    "name": "posa cavi",
+    "name": "posa cavi Med Risk",
     "start": 11.49,
     "end": 12.65
    },
    {
-    "name": "cablaggi in campo",
+    "name": "cablaggi in campo Med Risk",
     "start": 12.65,
     "end": 13.62
    },
    {
-    "name": "posa e cablaggi cabine",
+    "name": "realizzazione linea connessione Med Risk",
+    "start": 10.57,
+    "end": 13.13
+   },
+   {
+    "name": "posa e cablaggi cabine Med Risk",
     "start": 10.13,
     "end": 11.28
    },
    {
-    "name": "impianto videosorveglianza",
-    "start": 10.8,
-    "end": 11.52
-   },
-   {
-    "name": "SCADA e sistema monitoraggio",
-    "start": 13.59,
-    "end": 14.33
-   },
-   {
-    "name": "cold commissioning",
+    "name": "cold commissioning Low Risk",
     "start": 14.31,
     "end": 14.82
    },
    {
-    "name": "connessione alla rete",
+    "name": "connessione alla rete Med Risk",
     "start": 14.79,
     "end": 15.28
    },
    {
-    "name": "hot commissioning",
-    "start": 15.05,
+    "name": "hot commissioning Low Risk",
+    "start": 15.02,
     "end": 15.53
    },
    {
-    "name": "Performance test",
+    "name": "Performance test Low Risk",
     "start": 15.51,
     "end": 15.99
    },
@@ -357,9 +337,9 @@
   "unit": "month",
   "months": 15.99,
   "source": {
-   "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RA01.00%20-%20Studio%20Preliminare%20Ambientale_signed.pdf",
-   "page": 78,
-   "document": "ML_FV_RA01.00 - Studio Preliminare Ambientale_signed.pdf",
+   "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/ML_FV_RT02.00%20-%20Cronoprogramma%20degli%20interventi_signed.pdf",
+   "page": 2,
+   "document": "ML_FV_RT02.00 - Cronoprogramma degli interventi_signed.pdf",
    "excerpt": ""
   },
   "duration": {
