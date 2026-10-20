@@ -111,6 +111,9 @@ jobs:
     # downloaded and analysed (manifests + extracted facts + VIES cache) lives on branch doc-intel-state.
     if: github.event_name == 'workflow_dispatch'
     runs-on: ${{ inputs.runner }}
+    concurrency:
+      group: doc-intel-memory-${{ inputs.url }}
+      cancel-in-progress: false
     timeout-minutes: 300
     permissions:
       contents: write
@@ -131,7 +134,7 @@ jobs:
           git config user.name "doc-intel-bot"
           git config user.email "doc-intel-bot@users.noreply.github.com"
           rm -rf .doc_intel_store && git worktree prune
-          if git fetch --depth 1 origin doc-intel-state:doc-intel-state 2>/dev/null; then
+          if git fetch origin doc-intel-state:doc-intel-state 2>/dev/null; then
             git worktree add .doc_intel_store doc-intel-state
           else
             git worktree add --orphan -b doc-intel-state .doc_intel_store
@@ -158,17 +161,22 @@ jobs:
       - name: Save processing memory (also after failure or cancellation)
         if: always()
         run: |
-          cd .doc_intel_store || exit 0
+          if [ ! -d .doc_intel_store ]; then echo "::error title=memory::store directory missing"; exit 1; fi
+          cd .doc_intel_store
+          echo "worktree: $(git rev-parse --show-toplevel) branch: $(git rev-parse --abbrev-ref HEAD)"
           rm -rf blobs text
           git add -A
-          git diff --cached --quiet && { echo "memory unchanged"; exit 0; }
+          n=$(git diff --cached --name-only | wc -l)
+          if [ "$n" = "0" ]; then echo "::notice title=memory::unchanged"; exit 0; fi
           git commit -q -m "doc-intel memory: ${{ inputs.url }} (run ${{ github.run_id }})"
-          for i in 1 2 3 4; do
-            git pull -q --rebase origin doc-intel-state 2>/dev/null || true
-            git push -q origin HEAD:doc-intel-state && { echo "memory saved"; exit 0; }
-            sleep $((i * 5))
+          for i in 1 2 3 4 5 6; do
+            git pull -q --rebase origin doc-intel-state || git rebase --abort 2>/dev/null
+            if git push -q origin HEAD:doc-intel-state; then
+              echo "::notice title=memory::saved $n files at $(git rev-parse --short HEAD)"; exit 0
+            fi
+            sleep $((i * 10))
           done
-          echo "::warning title=memory::could not push doc-intel-state"
+          echo "::error title=memory::could not push doc-intel-state"; exit 1
       - name: Publish digest 1/4
         if: always()
         run: |
