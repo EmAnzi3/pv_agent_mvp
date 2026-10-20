@@ -772,6 +772,36 @@ class MemoryAndDeletion(unittest.TestCase):
             self.assertTrue(Store(d).has_blob(man["documents"][U + "13"]["sha256"]))
 
 
+class SourcesVerification(unittest.TestCase):
+    def test_report_rows_and_files(self):
+        import doc_intel.sources as S
+        recs = [{"source": "veneto", "url": "https://sharing.regione.veneto.it/index.php/s/AAAA", "power_mw": 5},
+                {"source": "calabria", "url": "https://www.regione.calabria.it/bandi/x/", "power_mw": 5},
+                {"source": "sicilia", "url": "https://si-vvi.regione.sicilia.it/x", "power_mw": 5}]
+        def fake_probe(url, render=None):
+            err = "timeout" if "sicilia" in url else None
+            return {"http": {"error": "timed out", "error_class": err} if err else {"status": 200, "doc_link_count": 0},
+                    "verdict": {"status": "x", "method": "y"}}
+        fake_dossier = {"acquisition": {"references": 3, "processed_references": 3, "download_failures": 0,
+                                        "pages_total": 10, "pages_ocr": 0},
+                        "facts": [{"field": "role.proponent"}], "canonical": {"status": "unique"},
+                        "gates": {"acquisition": {"issues": []}}}
+        import doc_intel.pipeline as P
+        orig_probe, orig_run = S.probe_url, P.run
+        S.probe_url, P.run = fake_probe, (lambda *a, **k: fake_dossier)
+        try:
+            with tempfile.TemporaryDirectory() as d:
+                data = Path(d) / "data.json"
+                data.write_text(json.dumps({"records": recs}))
+                rows = {r["source"]: r for r in S.verify_sources(str(data), d + "/st", d + "/out", log=lambda m: None)}
+                self.assertEqual(rows["veneto"]["status"], "supportata")
+                self.assertEqual(rows["calabria"]["status"], "da sviluppare (nessun adapter)")
+                self.assertEqual(rows["sicilia"]["status"], "non raggiungibile")
+                self.assertTrue((Path(d) / "out" / "fonti_latest.md").is_file())
+        finally:
+            S.probe_url, P.run = orig_probe, orig_run
+
+
 class NoHardcodedBenchmarks(unittest.TestCase):
     def test_toolbox_has_no_benchmark_ids(self):
         for py in (ROOT / "doc_intel").rglob("*.py"):

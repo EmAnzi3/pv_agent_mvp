@@ -51,6 +51,15 @@ def main(argv: list[str] | None = None) -> int:
     pr.add_argument("--list", action="store_true")
     pr.add_argument("--render", action="store_true", help="also render with Playwright")
     pr.add_argument("--out", default="reports/probe")
+    v = sub.add_parser("sources", help="verify every source on one real sample (run from an Italian network)")
+    v.add_argument("--data", default="docs/data.json")
+    v.add_argument("--store", default=".doc_intel_store")
+    v.add_argument("--out", default="reports/doc_intel_fonti")
+    v.add_argument("--only", nargs="*")
+    v.add_argument("--render", action="store_true")
+    v.add_argument("--max-docs", type=int, default=25)
+    v.add_argument("--budget-min", type=float, default=10)
+    v.add_argument("--no-ocr", action="store_true")
     m = sub.add_parser("render")
     m.add_argument("--dossier", required=True)
     a = ap.parse_args(argv)
@@ -114,6 +123,12 @@ def main(argv: list[str] | None = None) -> int:
         for k, i in enumerate(range(0, len(line), 3900)):
             part = line[i:i + 3900].replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
             print(f"::notice title=probe-{a.source}#{k + 1}of{-(-len(line) // 3900)}::{part}")
+        return 0
+    if a.cmd == "sources":
+        from .sources import verify_sources
+        rows = verify_sources(a.data, a.store, a.out, a.only, _playwright_renderer() if a.render else None,
+                              a.max_docs, a.budget_min, not a.no_ocr)
+        print("\nRISULTATO:", {r["source"]: r["status"] for r in rows})
         return 0
     if a.cmd == "render":
         d = json.loads(Path(a.dossier).read_text(encoding="utf-8"))
