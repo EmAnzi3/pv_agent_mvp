@@ -373,7 +373,7 @@ class EndToEnd(unittest.TestCase):
             self.assertEqual(titles, ["Società e ruoli", "Caratteristiche tecniche", "Ubicazione", "Tempi e cantiere"])
             flat = {i["label"]: i for sec in card["sections"] for i in sec["items"]}
             self.assertEqual(flat["Comuni"]["value"], "Tortona, Pozzolo Formigaro, Frugarolo (AL)")
-            self.assertEqual(flat["Inizio lavori"]["status"], "da documenti")
+            self.assertEqual(flat["Inizio lavori"]["status"], "da confermare")
             self.assertIn("Non prova", flat["Inizio lavori"]["note"])
             self.assertNotIn("sha", json.dumps(card).lower().replace("sharing", ""))
             p_ = write_card(card, d + "/schede")

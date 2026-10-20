@@ -156,6 +156,8 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         temporal = ", ".join(TEMPORAL_TEXT.get(t, t) for t in v.get("temporal", []))
         if field.startswith("schedule.date.") and "event_occurred" not in v.get("temporal", []):
             note = f"Natura del dato: {temporal}. Non prova l'avvio del cantiere."
+            if set(v.get("temporal", [])) & {"template_reference", "unknown"}:
+                status = "da confermare"
         sections[sec].append({"label": LABELS[field], "value": _fmt(field, v["value"]), "status": status,
                               "occurrences": v["occurrences"], "source": _source(v["example"], titles),
                               "note": note})
