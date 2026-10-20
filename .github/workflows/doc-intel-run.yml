@@ -19,6 +19,10 @@ on:
         description: 'Stop starting downloads/OCR after N minutes (the next run resumes)'
         required: false
         default: '170'
+      runner:
+        description: 'ubuntu-latest, or self-hosted (Italian network, for portals that filter foreign IPs)'
+        required: false
+        default: 'ubuntu-latest'
   pull_request:
     paths:
       - 'doc_intel/**'
@@ -103,7 +107,7 @@ jobs:
           retention-days: 30
   manual:
     if: github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
+    runs-on: ${{ inputs.runner }}
     timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4

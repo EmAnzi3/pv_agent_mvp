@@ -34,6 +34,13 @@ class HostRule:
 HTML_RULES = [
     HostRule("serviziambiente.regione.emilia-romagna.it", "emilia_romagna",
              re.compile(r"/viavasweb/[a-zA-Z]+/scaricaAllegato\w*/\d+/\d+"), re.compile(r"/dettaglio/(\d+)")),
+    # Basilicata: 'Allegati' list of PDF/ZIP on the project page (HTTP only, reachable from Italian networks)
+    HostRule("valutazioneambientale.regione.basilicata.it", "Basilicata",
+             re.compile(r"(?i)\.(?:pdf|zip|p7m|rar|7z)(?:$|[?#])|/files/|download|getfile|allegat"),
+             re.compile(r"[?&]id=(\d+)")),
+    # Sistema Puglia: one determination per record, '[Scarica .pdf]' link
+    HostRule("www.sistema.puglia.it", "sistema_puglia_energia",
+             re.compile(r"(?i)\.pdf(?:$|[?#])|/pls/portal/docs/|download|getfile"), re.compile(r"[?&]id=(\d+)")),
 ]
 
 

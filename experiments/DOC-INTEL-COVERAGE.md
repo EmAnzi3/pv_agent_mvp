@@ -14,7 +14,7 @@ Aggiornato 20/10/2026. Metodo: `doc-intel-probe.yml` (HTTP + browser, chiamate A
 | Toscana ATOS | 264 | scheda FER | rimanda a MASE | Riuso adapter MASE quando il link è presente | probe v2 |
 | Calabria, Sardegna | 25, 5 | pagine avviso | documenti non collegati dalla pagina | Parziale: navigazione dedicata | probe v2 |
 | Campania | 9 | prg_10148 | link `allegati/` vuoto | Parziale | probe v1 |
-| Sicilia, Sistema Puglia, Basilicata | 288, 70, 15 | — | — | **Non raggiungibili da GitHub (timeout x3)** — da verificare da rete italiana | probe v2 |
+| Sicilia, Sistema Puglia, Basilicata | 288, 70, 15 | verificati a mano da rete italiana il 20/10 | Basilicata: lista «Allegati» PDF/ZIP (fino a 460 MB) su HTTP; Sistema Puglia: una determina PDF per record; Sicilia: lista Fabrik filtrata | **Raggiungibili solo da IP italiani** (timeout da GitHub/Azure): adapter pronti, serve runner self-hosted in Italia | probe v2 + screenshot utente |
 | Piemonte | 13 | — | URL generico d'archivio nel canonico | **Bloccata a monte** (collector) | — |
 | Terna Econnextion | 82 | — | dataset, non fascicolo | Non applicabile | — |
 
