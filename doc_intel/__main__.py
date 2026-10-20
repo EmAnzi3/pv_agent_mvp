@@ -221,6 +221,11 @@ def digest(d: dict) -> list[tuple[str, dict]]:
     out.append(("registry", d.get("registry", {})))
     out.append(("failed_documents", a.get("failed_documents", [])[:20]))
     out.append(("schedule_pages", d.get("schedule_pages", [])[:60]))
+    pts = [{"x": f["extractor"], "obj": (f.get("qualifiers") or {}).get("object"), "v": f["value"],
+            "doc": (f["citation"].get("url") or "")[-40:], "p": f["citation"].get("page"),
+            "raw": (f.get("qualifiers") or {}).get("raw")} for f in d["facts"]
+           if f["field"] in ("geo.latlon_point", "geo.map_extent") and f["extractor"] != "geo.latlon"]
+    out.append(("site_points", pts[:120]))
     roles = [{"field": f["field"], "value": f["value"], "status": f["status"], "doc": f["citation"]["url"].rsplit("/", 1)[-1],
               "page": f["citation"]["page"], "excerpt": f["citation"]["excerpt"][:200]}
              for f in d["facts"] if f["field"] in ("role.epc", "role.bop", "role.contractor", "role.supplier", "role.om",

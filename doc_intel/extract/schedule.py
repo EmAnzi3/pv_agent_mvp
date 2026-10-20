@@ -124,6 +124,8 @@ def extract_gantt(ctx: PageContext) -> list[Fact]:
     """Phases from a drawn Gantt (rebuilt from the vector page) or from a dated activity table."""
     out = []
     g = getattr(ctx, "gantt", None) or {}
+    # a programme limited to residual works or a single excerpt is not the general one
+    scope = "partial" if re.search(r"(?i)residu|stralcio|opere\s+di\s+completamento", (ctx.text or "")[:1200]) else "general"
     if g.get("rows"):
         k = UNIT_TO_MONTHS.get(g.get("unit"), None)
         for i, r in enumerate(g["rows"]):
@@ -133,7 +135,7 @@ def extract_gantt(ctx: PageContext) -> list[Fact]:
                                    "raw": f"{g.get('unit')} {r['start']:g}–{r['end']:g}", "order": i,
                                    "unit": g.get("unit"), "unit_known": k is not None},
                             citation=ctx.cite(r["name"]), temporal="planned",
-                            qualifiers={"method": "vector_gantt", "rows": len(g["rows"])},
+                            qualifiers={"method": g.get("method", "vector_gantt"), "rows": len(g["rows"]), "scope": scope},
                             limits="Bar positions read from the drawing; periods follow the chart's own axis",
                             extractor="schedule.gantt"))
     if not (g.get("table_rows") or re.search(r"(?i)cron?o?\s*programma|gantt|programma\s+(?:dei\s+)?lavori", ctx.text[:4000])):
@@ -160,7 +162,7 @@ def extract_gantt(ctx: PageContext) -> list[Fact]:
                                    "start_date": d1.isoformat(), "end_date": d2.isoformat(), "order": i,
                                    "raw": f"{d1:%d/%m/%Y}–{d2:%d/%m/%Y}", "unit": "month", "unit_known": True},
                             citation=ctx.cite(line[:200]), temporal="planned",
-                            qualifiers={"method": "dated_table", "rows": len(rows)},
+                            qualifiers={"method": "dated_table", "rows": len(rows), "scope": scope},
                             limits="Dates of the programme of works: a plan, not progress", extractor="schedule.gantt"))
     return out
 

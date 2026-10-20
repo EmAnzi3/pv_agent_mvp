@@ -78,11 +78,12 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
                 if p["method"] in ("ocr_failed", "none_after_ocr", "none") and len(unread) < 50:
                     unread.append({"url": ref.url, "member": None if mem.depth == 0 else mem.name,
                                    "page": p["n"], "method": p["method"], "error": p.get("error")})
-                if p.get("text"):
+                if p.get("text") or p.get("geo_extent"):
                     pc = PageContext(p["text"], ref.url, p["n"], res.sha256,
                                      None if mem.depth == 0 else mem.name, ref.procedure_id,
                                      ref.title, ref.extra.get("index_date"), None, p["method"])
                     pc.gantt = p.get("gantt")
+                    pc.geo_extent = p.get("geo_extent")
                     doc_pages.append(pc)
                 if (SCHED_RE.search(ref.title or "") or SCHED_RE.search((p.get("text") or "")[:3000])) and len(sched) < 12:
                     g = p.get("gantt") or {}

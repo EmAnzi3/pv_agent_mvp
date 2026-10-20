@@ -998,3 +998,69 @@ class ProjectStatus(unittest.TestCase):
         self.assertEqual(_status(self._d("2026-09-01"), {}, t)["level"], "potenzialmente_avviato")
         self.assertEqual(_status(self._d("2027-03-01"), {}, t)["level"], "previsto")
         self.assertIsNone(_status(self._d(), {}, t))
+
+
+class SiteLocation(unittest.TestCase):
+    def test_text_formats(self):
+        from doc_intel.extract.geo import extract as geo_extract
+        t = ("UBICAZIONE Comune di Tarquinia (VT) COORDINATE 42° 19' 55,7\" N 11° 40' 22,8\" E\n"
+             "Il sito è individuato dalle seguenti coordinate geografiche (EPSG:4326): Latitudine 45,091549° N; Longitudine 11,185199° E.\n"
+             "Le coordinate chilometriche di Gauss Boaga fuso ovest del baricentro dell'area sono\nE 1452350 N 4519870")
+        pts = [(round(f.value["lat"], 3), round(f.value["lon"], 3), f.qualifiers["object"]) for f in geo_extract(page(t))
+               if f.field == "geo.latlon_point"]
+        self.assertIn((42.332, 11.673, "site_point"), pts)
+        self.assertIn((45.092, 11.185, "site_point"), pts)
+        self.assertTrue(any(abs(a - 40.83) < 0.01 and abs(b - 8.43) < 0.01 for a, b, _ in pts))   # Gauss-Boaga, Sassari
+
+    def test_geopdf_extent(self):
+        from doc_intel.geopdf import extents
+
+        class Doc:
+            objs = {1: "<< /Type /Page /VP [ 2 0 R ] >>",
+                    2: "<< /Type /Viewport /BBox [ 0 0 400 300 ] /Measure 3 0 R >>",
+                    3: "<< /Subtype /GEO /GPTS [ 44.83 8.77 44.85 8.77 44.85 8.80 44.83 8.80 ] >>"}
+
+            def xref_object(self, x, compressed=False):
+                return self.objs[x]
+
+        class Page:
+            xref = 1
+
+            class rect:
+                width, height = 800, 600
+        e = extents(Doc(), Page())
+        self.assertEqual(e[0]["centre"], (44.84, 8.785))
+        self.assertEqual(e[0]["share"], 0.25)
+
+    def test_declared_point_beats_scattered_points_and_connection_kept_apart(self):
+        from doc_intel.card import _site_point
+        F = lambda lat, lon, obj: {"field": "geo.latlon_point", "value": {"lat": lat, "lon": lon},
+                                   "qualifiers": {"object": obj}, "citation": {"url": "u", "page": 1, "excerpt": ""}}
+        d = {"facts": [F(44.84, 8.78, "site_point"), F(44.841, 8.781, "unknown"), F(44.839, 8.779, "survey_point"),
+                       F(45.20, 9.40, "unknown"), F(44.80, 8.70, "substation")]}
+        point, kind, _, conn = _site_point(d, {})
+        self.assertEqual(point, (44.84, 8.78))
+        self.assertIn("dichiarate", kind)
+        self.assertEqual((conn["lat"], conn["lon"]), (44.8, 8.7))
+
+
+@unittest.skipUnless(__import__("importlib").util.find_spec("PIL"), "Pillow needed")
+class GanttFromImage(unittest.TestCase):
+    def test_bars_and_ocr_words(self):
+        from PIL import Image, ImageDraw
+        from doc_intel.gantt_vector import from_raster
+        im = Image.new("RGB", (700, 300), "white")
+        d = ImageDraw.Draw(im)
+        words = []
+        for v in range(1, 13):                          # month axis, cell centres at 200 + 30 v
+            words.append((200 + 30 * v - 5, 20, 200 + 30 * v + 5, 32, str(v), 1, 1))
+        spans = [("Allestimento cantiere", 0, 2), ("Infissione pali", 2, 6), ("Posa moduli", 4, 10), ("Collaudi", 10, 12)]
+        for i, (n, a, b) in enumerate(spans):
+            y = 60 + 40 * i
+            words.append((10, y, 150, y + 12, n, 10 + i, 1))
+            d.rectangle([200 + 30 * (a + 0.5), y, 200 + 30 * (b + 0.5) - 1, y + 12], fill=(30, 110, 190))
+        tsv = "level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext\n" + "\n".join(
+            f"5\t1\t{w[5]}\t1\t{w[6]}\t{k}\t{w[0]}\t{w[1]}\t{w[2] - w[0]}\t{w[3] - w[1]}\t90\t{t}"
+            for w in words for k, t in enumerate(w[4].split(), 1))
+        g = from_raster((im.tobytes(), 700, 300), tsv, "Cronoprogramma mesi")
+        self.assertEqual([(r["name"], round(r["start"]), round(r["end"])) for r in g["rows"]], spans)

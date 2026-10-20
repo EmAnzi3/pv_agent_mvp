@@ -89,7 +89,7 @@
       }).join('');
       chart = `<div class="g-wrap"><svg viewBox="0 0 ${labelW + chartW + 20} ${top + bars.length * rowH + 6}" role="img" aria-label="Diagramma di Gantt">
         <text x="${labelW}" y="10" class="g-tick">${esc(unit)} dall'avvio</text>${ticks}${rows}</svg></div>
-        <div class="sc-fine">Fasi lette dal cronoprogramma${bars[0].dates ? ` (avvio previsto ${esc(bars.map(b => b.dates[0]).sort()[0].split('-').reverse().join('/'))})` : ''} ${src(g.source, 'apri')}</div>`;
+        <div class="sc-fine">Fasi lette dal cronoprogramma${g.metodo ? ` (${esc(g.metodo)})` : ''}${bars[0].dates ? ` (avvio previsto ${esc(bars.map(b => b.dates[0]).sort()[0].split('-').reverse().join('/'))})` : ''} ${src(g.source, 'apri')}</div>`;
     }
     const d = g.duration;
     const dur = d ? `<div class="g-dur"><span>Durata cantiere</span> <strong>${esc(d.text)}</strong> ${flag(d.status)} ${src(d.source)}
@@ -97,10 +97,11 @@
     const ms = (g.milestones || []).map(m =>
       `<li><span class="g-date">${esc(m.date)}</span> ${esc(m.label)} <span class="sc-fine">${esc(m.nature)}</span> ${src(m.source)}</li>`).join('');
     const doc = !bars.length && g.document ? `<div class="sc-fine">Cronoprogramma: ${src(g.document, g.document.document)}</div>` : '';
+    const alt = (g.altri || []).length ? `<div class="sc-fine">Altri cronoprogrammi negli elaborati: ${g.altri.map(o => src(o, o.document)).join(' · ')}</div>` : '';
     if (!chart && !dur && !ms && !doc) return '';
     return `<section class="sc-sec"><h3>Cronoprogramma</h3>${chart}${dur}
       ${!bars.length && g.note ? `<p class="sc-note">${esc(g.note)}</p>` : ''}${doc}
-      ${ms ? `<ul class="g-ms">${ms}</ul>` : ''}</section>`;
+      ${ms ? `<ul class="g-ms">${ms}</ul>` : ''}${alt}</section>`;
   }
 
   function location(l, href) {
@@ -111,6 +112,12 @@
     if ((l.comuni || []).length) rows.push([l.comuni.length > 1 ? 'Comuni' : 'Comune', esc(l.comuni.join(', '))]);
     if (l.coordinate) rows.push(['Coordinate', `${l.coordinate.lat.toFixed(5)} N, ${l.coordinate.lon.toFixed(5)} E
       <div class="sc-fine">${esc(l.coordinate.tipo)} ${src(l.coordinate.source)}</div>`]);
+    if (l.connessione) {
+      const cm = safeHref(l.connessione.maps_url);
+      rows.push(['Connessione', `${l.connessione.lat.toFixed(5)} N, ${l.connessione.lon.toFixed(5)} E
+        <div class="sc-fine">stazione elettrica / punto di connessione ${src(l.connessione.source)}
+        ${cm ? ` · <a class="sc-src" href="${esc(cm)}" target="_blank" rel="noopener noreferrer">mappa</a>` : ''}</div>`]);
+    }
     const maps = safeHref(l.maps_url);
     return `<section class="sc-sec"><h3>Ubicazione</h3><dl class="sc-dl">${rows.map(r => `<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join('')}</dl>
       ${maps ? `<a class="sc-link" href="${esc(maps)}" target="_blank" rel="noopener noreferrer">Apri in Google Maps${l.maps_precision === 'comune' ? ' (comune)' : ''}</a>` : ''}</section>`;

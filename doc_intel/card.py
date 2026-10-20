@@ -536,24 +536,7 @@ def _location(d: dict, p: dict, record: dict, titles: dict) -> dict:
     if len(set(provs_in)) > 1:
         munis = raw                                     # 'Melara (RO), Ostiglia (MN)': keep each province
     region = p.get("region") or record.get("region")
-    # candidate site points: declared centre, area corners, centres of the reconstructed perimeters
-    cands = []
-    for f in d["facts"]:
-        if f["field"] == "geo.latlon_point" and (f.get("qualifiers") or {}).get("object") in ("centroid", "site_bbox_corner"):
-            cands.append((f["value"]["lat"], f["value"]["lon"], f, f["qualifiers"]["object"]))
-        elif f["field"] == "geo.area_polygon" and (f["value"].get("geojson") or {}).get("coordinates"):
-            ring = f["value"]["geojson"]["coordinates"][0]
-            cands.append((sum(c[1] for c in ring) / len(ring), sum(c[0] for c in ring) / len(ring), f, "polygon"))
-    cands = [c for c in cands if ITALY[0] <= c[0] <= ITALY[1] and ITALY[2] <= c[1] <= ITALY[3]]
-    point = kind = src = None
-    if cands:
-        # the largest cluster (about 3 km) is the plant; isolated points are usually the grid connection or the substation
-        best = max(cands, key=lambda c: (sum(abs(c[0] - o[0]) < 0.03 and abs(c[1] - o[1]) < 0.03 for o in cands), c[3] == "centroid"))
-        near = [o for o in cands if abs(best[0] - o[0]) < 0.03 and abs(best[1] - o[1]) < 0.03]
-        point = (sum(o[0] for o in near) / len(near), sum(o[1] for o in near) / len(near))
-        kind = ("centro dell'impianto indicato negli elaborati" if any(o[3] == "centroid" for o in near)
-                else "posizione indicativa dell'impianto, ricavata dalle coordinate negli elaborati")
-        src = _example_source(near[0][2], titles)
+    point, kind, src, conn = _site_point(d, titles)
     from urllib.parse import quote_plus
     if point:
         maps = f"https://www.google.com/maps/search/?api=1&query={point[0]:.5f},{point[1]:.5f}"
@@ -562,7 +545,69 @@ def _location(d: dict, p: dict, record: dict, titles: dict) -> dict:
             ", ".join([re.sub(r"\s*\(.*\)$", "", munis[0])] + [x for x in (prov if len(set(provs_in)) <= 1 else None, region) if x])) if munis else None
     return {"regione": region, "provincia": prov, "comuni": munis,
             "coordinate": {"lat": round(point[0], 5), "lon": round(point[1], 5), "tipo": kind, "source": src} if point else None,
-            "maps_url": maps, "maps_precision": "coordinate" if point else "comune"}
+            "maps_url": maps, "maps_precision": "coordinate" if point else "comune",
+            "connessione": conn}
+
+
+# weight of each kind of point as evidence of where the plant is
+SITE_WEIGHT = {"site_point": 10, "centroid": 9, "map_frame_small": 6, "site_bbox_corner": 5, "area_vertex": 5, "polygon": 5,
+               "cabin": 3, "bess": 3, "survey_point": 3, "simulation_point": 3, "map_frame_large": 2, "unknown": 2}
+SITE_TEXT = {"site_point": "coordinate del sito dichiarate negli elaborati",
+             "centroid": "baricentro dell'impianto dichiarato negli elaborati",
+             "map_frame_small": "centro della tavola georeferenziata di progetto",
+             "polygon": "centro dei perimetri ricostruiti dalle tabelle dei vertici",
+             "area_vertex": "centro dei vertici delle aree d'impianto",
+             "site_bbox_corner": "centro dell'area d'impianto (spigoli dichiarati)"}
+
+
+def _site_point(d: dict, titles: dict):
+    """Plant position: the best-supported cluster of coordinates, led by its most reliable point.
+    Substations and connection points are kept apart: they are often kilometres away from the plant."""
+    import math
+    cands, conn = [], []
+    for f in d["facts"]:
+        q = f.get("qualifiers") or {}
+        obj = q.get("object", "unknown")
+        if f["field"] == "geo.latlon_point":
+            lat, lon = f["value"]["lat"], f["value"]["lon"]
+        elif f["field"] == "geo.utm_point" and q.get("lat") is not None:
+            lat, lon = q["lat"], q["lon"]
+        elif f["field"] == "geo.area_polygon" and (f["value"].get("geojson") or {}).get("coordinates"):
+            ring = f["value"]["geojson"]["coordinates"][0]
+            lat, lon, obj = sum(c[1] for c in ring) / len(ring), sum(c[0] for c in ring) / len(ring), "polygon"
+        elif f["field"] == "geo.map_extent":
+            v = f["value"]
+            lat, lon = v["lat"], v["lon"]
+            obj = "map_frame_small" if max(v["width_km"], v["height_km"]) <= 6 else "map_frame_large"
+        else:
+            continue
+        if not (ITALY[0] <= lat <= ITALY[1] and ITALY[2] <= lon <= ITALY[3]):
+            continue
+        if obj in ("substation", "connection_point"):
+            conn.append((lat, lon, f))
+        elif obj in SITE_WEIGHT:
+            cands.append((lat, lon, f, obj))
+    point = kind = src = None
+    if cands:
+        near = lambda a, b: abs(a[0] - b[0]) < 0.027 and abs(a[1] - b[1]) < 0.027 / max(0.3, math.cos(math.radians(a[0])))
+        best = max(cands, key=lambda c: (sum(SITE_WEIGHT[o[3]] for o in cands if near(c, o)), SITE_WEIGHT[c[3]]))
+        group = [o for o in cands if near(best, o)]
+        top = max(SITE_WEIGHT[o[3]] for o in group)
+        lead = [o for o in group if SITE_WEIGHT[o[3]] == top]
+        point = (sum(o[0] for o in lead) / len(lead), sum(o[1] for o in lead) / len(lead))
+        kind = SITE_TEXT.get(lead[0][3], "posizione indicativa ricavata dalle coordinate negli elaborati")
+        if len(group) > 1:
+            kind += f" ({len(group)} riferimenti concordi)"
+        src = _example_source(lead[0][2], titles)
+    connection = None
+    if conn:
+        lat = sorted(c[0] for c in conn)[len(conn) // 2]
+        lon = sorted(c[1] for c in conn)[len(conn) // 2]
+        f = min(conn, key=lambda c: abs(c[0] - lat) + abs(c[1] - lon))[2]
+        if not point or abs(lat - point[0]) + abs(lon - point[1]) > 0.004:
+            connection = {"lat": round(lat, 5), "lon": round(lon, 5), "source": _example_source(f, titles),
+                          "maps_url": f"https://www.google.com/maps/search/?api=1&query={lat:.5f},{lon:.5f}"}
+    return point, kind, src, connection
 
 
 # --------------------------------------------------------------------------------------------- schedule
@@ -570,10 +615,10 @@ def _gantt(d: dict, titles: dict) -> dict:
     """A Gantt only from phases with a real start and end; otherwise the overall duration and the schedule document."""
     by_page: dict[tuple, list[dict]] = {}
     for f in d["facts"]:
-        if f["field"] == "schedule.phase" and (f.get("qualifiers") or {}).get("method") in ("vector_gantt", "dated_table"):
+        if f["field"] == "schedule.phase" and (f.get("qualifiers") or {}).get("method") in ("vector_gantt", "dated_table", "raster_gantt"):
             c = f["citation"]
             by_page.setdefault((c["url"], c["page"]), []).append(f)
-    bars, unit, src = [], "month", None
+    bars, unit, src, method = [], "month", None, None
     if by_page:
         dur0 = _pick(d, "schedule.duration.construction", titles)
         dur_m = dur0["value"].get("max") if dur0 and isinstance(dur0["value"], dict) else None
@@ -584,7 +629,8 @@ def _gantt(d: dict, titles: dict) -> dict:
             span = max(f["value"]["end_month"] for f in fs_) - min(f["value"]["start_month"] for f in fs_)
             # a chart covering the stated construction time is the general programme, not a partial one (residual works)
             fits = dur_m is None or abs(span - dur_m) <= 0.4 * dur_m
-            return (bool(SCHED_TITLE.search(titles.get(u) or "")), dated, fits, len(fs_))
+            general = all((f.get("qualifiers") or {}).get("scope", "general") == "general" for f in fs_)
+            return (general, bool(SCHED_TITLE.search(titles.get(u) or "")), dated, fits, len(fs_))
         decom = re.compile(r"(?i)smont|dismiss|rimozion|demoliz|smaltim|ripristin")
         works = re.compile(r"(?i)cantier|scav|posa|montagg|install|recinz|cavidot|cabin|modul|tracker|struttur|collaud|"
                            r"viabil|opere|pali|infiss|conness|inverter|commission|progett|autorizz|realizz|lavor|fornitur")
@@ -596,7 +642,8 @@ def _gantt(d: dict, titles: dict) -> dict:
             by_page = {}
     if by_page:
         (url, page), fs = max(build.items(), key=rank)
-        method = "dated_table" if any(f["qualifiers"].get("method") == "dated_table" for f in fs) else "vector_gantt"
+        method = ("dated_table" if any(f["qualifiers"].get("method") == "dated_table" for f in fs)
+                  else "vector_gantt" if any(f["qualifiers"].get("method") == "vector_gantt" for f in fs) else "raster_gantt")
         fs = [f for f in fs if f["qualifiers"].get("method") == method]
         fs.sort(key=lambda f: f["value"].get("order", 0))
         unit = "month" if all(f["value"].get("unit_known", True) for f in fs) else fs[0]["value"].get("unit") or "period"
@@ -610,7 +657,7 @@ def _gantt(d: dict, titles: dict) -> dict:
                          **({"dates": [v["start_date"], v["end_date"]]} if v.get("start_date") else {})})
         src = _source({"url": url, "page": page}, titles)
         span = max(b["end"] for b in bars) - min(b["start"] for b in bars) if bars else 0
-        if method == "vector_gantt" and dur_m and span > 2 * dur_m and abs(span * 12 / 52 - dur_m) <= 0.4 * dur_m:
+        if method != "dated_table" and dur_m and span > 2 * dur_m and abs(span * 12 / 52 - dur_m) <= 0.4 * dur_m:
             for b in bars:                   # the axis counts weeks, not months (checked against the stated duration)
                 b["start"], b["end"] = round(b["start"] * 12 / 52, 2), round(b["end"] * 12 / 52, 2)
     else:
@@ -643,6 +690,9 @@ def _gantt(d: dict, titles: dict) -> dict:
                                "certain": "event_occurred" in temporal, "source": pk["source"]})
     milestones.sort(key=lambda m: m["iso"])
     sched_doc = next(({"document": t, "url": u} for u, t in titles.items() if t and SCHED_TITLE.search(t)), None)
+    chosen = (src or {}).get("url")
+    others = [{"document": t, "url": u} for u, t in titles.items()
+              if t and SCHED_TITLE.search(t) and u != chosen][:5]
     months = max([b["end"] for b in bars] + [1])
     note = None
     if not bars:
@@ -650,7 +700,9 @@ def _gantt(d: dict, titles: dict) -> dict:
                 + (" Il documento è indicato sotto." if sched_doc else ""))
     return {"bars": bars, "unit": unit, "months": months, "source": src,
             "duration": {"text": dur["text"], "status": dur["status"], "hint": _hint(dur), "source": dur["source"]} if dur else None,
-            "milestones": milestones, "document": sched_doc, "note": note}
+            "milestones": milestones, "document": sched_doc, "note": note, "altri": others,
+            "metodo": {"dated_table": "tabella con date", "vector_gantt": "diagramma vettoriale",
+                       "raster_gantt": "diagramma in immagine (lettura automatica, da verificare)"}.get(method) if bars else None}
 
 
 # --------------------------------------------------------------------------------------------- status

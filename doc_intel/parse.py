@@ -27,6 +27,8 @@ MAX_RENDER_PIXELS = 25_000_000   # ~A4 at 400 DPI / A0 at ~120 DPI: bounded time
 
 from .gantt_vector import is_schedule_page
 
+STRONG_SCHEDULE = re.compile(r"(?i)cron?o?\s*programma|gantt|diagramma\s+(?:dei\s+)?lavori|programma\s+(?:dei\s+)?lavori")
+
 
 def useful_chars(text: str) -> int:
     return len(re.findall(r"[A-Za-zÀ-ÿ0-9]", text or ""))
@@ -65,6 +67,25 @@ class FitzBackend(PdfBackend):
 
     def page_text(self, n: int) -> str:
         return self.doc[n - 1].get_text("text") or ""
+
+    def page_geo(self, n: int) -> list[dict]:
+        from .geopdf import extents
+        return extents(self.doc, self.doc[n - 1])
+
+    def page_gantt_raster(self, n: int, text: str, dpi: int = 130) -> dict | None:
+        """Image-only schedule: bars from pixels, labels from OCR word boxes (same reconstruction as vector)."""
+        import subprocess
+        from .gantt_vector import from_raster
+        page = self.doc[n - 1]
+        zoom = dpi / 72.0
+        pixels = page.rect.width * page.rect.height * zoom * zoom
+        if pixels > 9_000_000:
+            zoom *= (9_000_000 / pixels) ** 0.5
+        pix = page.get_pixmap(matrix=self._fitz.Matrix(zoom, zoom), alpha=False, colorspace=self._fitz.csRGB)
+        tsv = subprocess.run(["tesseract", "stdin", "stdout", "-l", "ita+eng", "--psm", "11", "tsv"],
+                             input=pix.tobytes("png"), capture_output=True, timeout=180,
+                             env={**__import__("os").environ, "OMP_THREAD_LIMIT": "1"}).stdout.decode("utf-8", "replace")
+        return from_raster((pix.samples, pix.width, pix.height), tsv, text)
 
     def page_gantt(self, n: int) -> dict | None:
         from .gantt_vector import from_fitz_page
@@ -235,6 +256,13 @@ def extract_pages(raw: bytes, sha: str, store: Store | None = None, member: str 
                     pass
             method = "digital" if useful_chars(text) >= USEFUL_MIN_CHARS else "none"
             page = {"n": n, "text": text, "method": method, "chars": useful_chars(text), "error": err}
+            if hasattr(backend, "page_geo"):
+                try:
+                    geo = backend.page_geo(n)
+                    if geo:
+                        page["geo_extent"] = geo
+                except Exception as exc:
+                    page["geo_error"] = str(exc)[:200]
             if hasattr(backend, "page_gantt") and is_schedule_page(text):
                 try:
                     g = backend.page_gantt(n)
@@ -254,6 +282,21 @@ def extract_pages(raw: bytes, sha: str, store: Store | None = None, member: str 
         else:
             p["method"] = "ocr_deferred" if ocr else "none"
             ocr_pending.append(p["n"])
+    # schedules drawn as images: rebuilt from pixels when the vector reader found nothing (max 6 pages per file)
+    if ocr and hasattr(backend, "page_gantt_raster") and shutil.which("tesseract"):
+        tried = 0
+        for p in pages:
+            t = p.get("text") or ""
+            # only pages that are the programme itself: explicit title and little running text
+            if tried >= 6 or p.get("gantt") or not STRONG_SCHEDULE.search(t) or useful_chars(t) > 2500:
+                continue
+            tried += 1
+            try:
+                g = backend.page_gantt_raster(p["n"], p.get("text") or "")
+                if g:
+                    p["gantt"] = g
+            except Exception as exc:
+                p["gantt_error"] = f"raster: {exc}"[:200]
     payload = {
         "sha256": sha, "member": member, "backend": backend.name, "backend_errors": errors,
         "page_count": len(pages), "pages": pages, "ocr_pending": ocr_pending, "dpi": dpi,

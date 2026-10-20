@@ -220,3 +220,76 @@ def table_rows(words: list[tuple]) -> list[str]:
     rows = [" ".join(w[4] for w in sorted(r, key=lambda w: w[0])) for r in out]
     dated = [r for r in rows if len(DATE_ANY.findall(r)) >= 2]
     return dated[:120] if len(dated) >= 3 else []
+
+
+# ----------------------------------------------------------------------------------- raster schedules
+def bar_rects(samples: bytes, width: int, height: int, channels: int = 3, min_w: int = 6, min_h: int = 4,
+              max_h: int = 60) -> list[tuple]:
+    """Coloured horizontal bars in an RGB image: runs of saturated (or mid-grey filled) pixels merged
+    across consecutive rows. Thin rules and text strokes are dropped by the height limits."""
+    def is_bar(i):
+        r, g, b = samples[i], samples[i + 1], samples[i + 2]
+        mx, mn = max(r, g, b), min(r, g, b)
+        return (mx - mn > 45 and mx > 60) or (55 <= mn and mx <= 175 and mx - mn < 18)
+
+    open_rects: list[list] = []          # [x0, x1, y0, y1, r, g, b, n]
+    done: list[list] = []
+    stride = width * channels
+    for y in range(height):
+        runs, x = [], 0
+        row = y * stride
+        while x < width:
+            if is_bar(row + x * channels):
+                x0 = x
+                while x < width and is_bar(row + x * channels):
+                    x += 1
+                if x - x0 >= min_w:
+                    runs.append((x0, x))
+            else:
+                x += 1
+        still = []
+        for rc in open_rects:
+            m = next((r for r in runs if min(rc[1], r[1]) - max(rc[0], r[0]) > 0.7 * max(rc[1] - rc[0], r[1] - r[0])), None)
+            if m:
+                runs.remove(m)
+                rc[3] = y
+                still.append(rc)
+            else:
+                done.append(rc)
+        for x0, x1 in runs:
+            i = row + ((x0 + x1) // 2) * channels
+            still.append([x0, x1, y, y, samples[i] / 255, samples[i + 1] / 255, samples[i + 2] / 255])
+        open_rects = still
+    done.extend(open_rects)
+    return [(r[0], r[2], r[1], r[3] + 1, (r[4], r[5], r[6])) for r in done if min_h <= r[3] + 1 - r[2] <= max_h]
+
+
+def tsv_words(tsv: str) -> list[tuple]:
+    """Tesseract TSV -> (x0, y0, x1, y1, text, block, line) for words with some confidence."""
+    out = []
+    for ln in tsv.splitlines()[1:]:
+        p = ln.split("\t")
+        if len(p) < 12 or p[0] != "5" or not p[11].strip():
+            continue
+        try:
+            conf = float(p[10])
+        except ValueError:
+            conf = -1
+        if conf < 30:
+            continue
+        x, y, w, h = (int(v) for v in p[6:10])
+        out.append((x, y, x + w, y + h, p[11].strip(), int(p[2]) * 1000 + int(p[3]), int(p[4])))
+    return out
+
+
+def from_raster(png_rgb: tuple[bytes, int, int], tsv: str, page_text: str = "") -> dict | None:
+    """Rebuild a Gantt from a rendered page (scanned or image-only schedule)."""
+    samples, w, h = png_rgb
+    rects = bar_rects(samples, w, h)
+    words = tsv_words(tsv)
+    if len(rects) < 3 or len(words) < 8:
+        return None
+    g = reconstruct(words, rects, w, h, page_text)
+    if g:
+        g["method"] = "raster_gantt"
+    return g
