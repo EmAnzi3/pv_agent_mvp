@@ -443,6 +443,8 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
         if target is None:
             dropped += 1
             continue
+        if f["field"] == "contact.phone":
+            val = re.sub(r"^(?:\+39|0039)(?=[03])", "", val)     # '+393386316126' and '3386316126' are one number
         key = (f["field"], val)
         c = target["contacts"].setdefault(key, {"n": 0, "fact": f})
         c["n"] += 1
@@ -552,10 +554,16 @@ def _gantt(d: dict, titles: dict) -> dict:
             by_page.setdefault((c["url"], c["page"]), []).append(f)
     bars, unit, src = [], "month", None
     if by_page:
+        dur0 = _pick(d, "schedule.duration.construction", titles)
+        dur_m = dur0["value"].get("max") if dur0 and isinstance(dur0["value"], dict) else None
+
         def rank(kv):
             (u, _), fs_ = kv
             dated = any(f["qualifiers"].get("method") == "dated_table" for f in fs_)
-            return (bool(SCHED_TITLE.search(titles.get(u) or "")), dated, len(fs_))
+            span = max(f["value"]["end_month"] for f in fs_) - min(f["value"]["start_month"] for f in fs_)
+            # a chart covering the stated construction time is the general programme, not a partial one (residual works)
+            fits = dur_m is None or abs(span - dur_m) <= 0.4 * dur_m
+            return (bool(SCHED_TITLE.search(titles.get(u) or "")), dated, fits, len(fs_))
         (url, page), fs = max(by_page.items(), key=rank)
         method = "dated_table" if any(f["qualifiers"].get("method") == "dated_table" for f in fs) else "vector_gantt"
         fs = [f for f in fs if f["qualifiers"].get("method") == method]
