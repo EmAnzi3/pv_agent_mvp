@@ -1,0 +1,54 @@
+/* Pannello laterale "Scheda progetto": usa i colori della dashboard (--accent, --border, ...) con valori di riserva. */
+.sc-backdrop { position: fixed; inset: 0; background: rgba(15, 23, 42, .35); z-index: 50; }
+.sc-panel {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 51;
+  width: min(560px, 100vw); overflow-y: auto;
+  background: var(--card, #fff); color: var(--text, #111827);
+  box-shadow: -18px 0 42px rgba(15, 23, 42, .18);
+  padding: calc(18px + env(safe-area-inset-top, 0px)) max(20px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) 22px;
+}
+.sc-close {
+  position: sticky; top: 0; float: right; margin-left: 12px;
+  border: 1px solid var(--border, #dfe5eb); background: var(--card, #fff); color: var(--text, #111827);
+  border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 13px; cursor: pointer;
+}
+.sc-close:focus-visible, .sc-panel a:focus-visible { outline: 2px solid var(--accent, #0f766e); outline-offset: 2px; }
+.sc-eyebrow { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted, #64748b); }
+.sc-top h2 { font-size: 18px; line-height: 1.35; margin: 6px 0 10px; text-wrap: balance; }
+.sc-facts { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--steel, #334155); }
+.sc-facts strong { font-variant-numeric: tabular-nums; }
+.sc-mother {
+  display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 700;
+  color: var(--accent, #0f766e); text-decoration: none; border-bottom: 1px solid currentColor;
+}
+.sc-body { display: grid; gap: 18px; margin-top: 18px; }
+.sc-sec h3 {
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-dark, #0f4f4a);
+  margin: 0 0 6px; padding-bottom: 6px; border-bottom: 1px solid var(--border, #dfe5eb);
+}
+.sc-item { padding: 10px 0; border-bottom: 1px solid var(--border-soft, #edf1f5); display: grid; gap: 4px; }
+.sc-head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.sc-label { font-size: 12px; color: var(--muted, #64748b); }
+.sc-val { font-size: 15px; font-weight: 700; overflow-wrap: anywhere; }
+.sc-detail { font-size: 12px; color: var(--steel, #334155); }
+.sc-src { font-size: 12px; color: var(--muted, #64748b); overflow-wrap: anywhere; }
+.sc-src a { color: var(--blue, #1d4ed8); }
+.sc-quote { display: block; font-style: italic; margin-top: 2px; }
+.sc-note { font-size: 12px; color: var(--steel, #334155); background: var(--bg-soft, #f7f9fb); padding: 6px 8px; border-radius: 8px; }
+.sc-alts { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.sc-alts .sc-val { display: inline; font-size: 14px; }
+.sc-occ { font-size: 12px; color: var(--muted, #64748b); font-variant-numeric: tabular-nums; }
+.sc-badge { flex: none; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.st-ok { background: var(--soft-ok, #dcfce7); color: #14532d; }
+.st-doc { background: var(--soft-blue, #dbeafe); color: #1e3a8a; }
+.st-warn { background: var(--soft-warn, #fef3c7); color: #78350f; }
+.st-conf { background: #fde2e2; color: #7f1d1d; }
+.sc-open ul { margin: 0; padding-left: 18px; font-size: 13px; display: grid; gap: 4px; }
+.sc-warn { font-size: 12px; color: var(--muted, #64748b); margin: 0; }
+.sc-btn {
+  border: 1px solid var(--accent, #0f766e); color: var(--accent, #0f766e); background: transparent;
+  border-radius: 999px; padding: 3px 10px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; margin-left: 6px;
+}
+.sc-btn:hover { background: var(--accent, #0f766e); color: #fff; }
+@media (prefers-reduced-motion: no-preference) { .sc-panel:not([hidden]) { animation: sc-in .18s ease-out; } }
+@keyframes sc-in { from { transform: translateX(24px); opacity: .6; } to { transform: none; opacity: 1; } }
