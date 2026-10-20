@@ -19,6 +19,10 @@ on:
         description: 'Stop starting downloads/OCR after N minutes (the next run resumes)'
         required: false
         default: '170'
+      reanalyse:
+        description: 'Re-download and re-extract every document with the current rules (yes/no)'
+        required: false
+        default: 'no'
       runner:
         description: 'ubuntu-latest, or self-hosted (Italian network, for portals that filter foreign IPs)'
         required: false
@@ -147,9 +151,11 @@ jobs:
           GOLD: ${{ inputs.gold }}
           OCR_MAX: ${{ inputs.ocr_max_pages }}
           BUDGET: ${{ inputs.time_budget_min }}
+          REANALYSE: ${{ inputs.reanalyse }}
         run: |
           extra=""
-          if [ -n "$GOLD" ]; then extra="--gold $GOLD"; fi
+          if [ "$REANALYSE" = "yes" ]; then extra="--reanalyse"; fi
+          if [ -n "$GOLD" ]; then extra="$extra --gold $GOLD"; fi
           set -o pipefail
           python -m doc_intel run --url "$URL" $extra --store .doc_intel_store --data docs/data.json \
             --out reports/doc_intel --ocr-max-pages "$OCR_MAX" --workers 4 --time-budget-min "$BUDGET" --registry vies 2>&1 | tee run.log

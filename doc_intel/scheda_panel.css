@@ -52,3 +52,13 @@
 .sc-btn:hover { background: var(--accent, #0f766e); color: #fff; }
 @media (prefers-reduced-motion: no-preference) { .sc-panel:not([hidden]) { animation: sc-in .18s ease-out; } }
 @keyframes sc-in { from { transform: translateX(24px); opacity: .6; } to { transform: none; opacity: 1; } }
+.g-wrap { overflow-x: auto; }
+.g-wrap svg { width: 100%; min-width: 460px; height: auto; display: block; }
+.g-grid { stroke: var(--border-soft, #edf1f5); stroke-width: 1; }
+.g-tick { fill: var(--muted, #64748b); font-size: 10px; font-variant-numeric: tabular-nums; }
+.g-label { fill: var(--text, #111827); font-size: 11px; }
+.g-val { fill: var(--steel, #334155); font-size: 10px; }
+.g-bar { fill: var(--accent, #0f766e); }
+.g-free { fill: var(--accent, #0f766e); fill-opacity: .45; }
+.g-ms { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; font-size: 13px; }
+.g-date { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent-dark, #0f4f4a); }

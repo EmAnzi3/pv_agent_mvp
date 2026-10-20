@@ -370,7 +370,13 @@ class EndToEnd(unittest.TestCase):
             card = build_card(dossier)
             self.assertEqual(card["project_key"], "url:x")
             titles = [sec["title"] for sec in card["sections"]]
-            self.assertEqual(titles, ["Società e ruoli", "Caratteristiche tecniche", "Ubicazione", "Tempi e cantiere"])
+            self.assertEqual(titles, ["Società e ruoli", "Caratteristiche tecniche", "Ubicazione",
+                                      "Contatti trovati negli elaborati", "Tempi e cantiere"])
+            labels = [i["label"] for sec in card["sections"] for i in sec["items"]]
+            self.assertNotIn("Tensione di connessione", labels)
+            self.assertNotIn("Potenza FV (DC)", labels)
+            self.assertEqual([i for i in card["sections"][1]["items"] if i["label"].startswith("Potenza")][0]["value"], "60 MW")
+            self.assertIn("bars", card["cronoprogramma"])
             flat = {i["label"]: i for sec in card["sections"] for i in sec["items"]}
             self.assertEqual(flat["Comuni"]["value"], "Tortona, Pozzolo Formigaro, Frugarolo (AL)")
             self.assertEqual(flat["Inizio lavori"]["status"], "da confermare")
@@ -812,6 +818,30 @@ class SourcesVerification(unittest.TestCase):
                 self.assertTrue((Path(d) / "out" / "fonti_latest.md").is_file())
         finally:
             S.probe_url, P.run = orig_probe, orig_run
+
+
+class CardFieldsFromReview(unittest.TestCase):
+    """Fields requested on 20/10/2026: available vs panel area, piles (tracker distinction), lots, Gantt phases."""
+
+    def test_area_piles_lots(self):
+        t = ("L'impianto è suddiviso in 4 campi recintati per una superficie complessiva di 110 ha.\n"
+             "La superficie occupata dai moduli è pari a 48,5 ha.\n"
+             "Saranno infissi n. 12.450 pali per i tracker monoassiali e 820 pali per la recinzione.\n"
+             "Il numero complessivo di pali da infiggere è pari a 13.270\n"
+             "Moduli conformi alla norma CEI EN 61215")
+        got = {(f.field, f.subject, f.value) for f in extract_all([page(t)])
+               if f.field.startswith(("tech.area", "tech.piles", "tech.lots", "tech.module_count"))}
+        self.assertEqual(got, {("tech.area_available_ha", None, 110.0), ("tech.area_panels_ha", None, 48.5),
+                               ("tech.lots_count", None, 4), ("tech.piles_count", "tracker", 12450),
+                               ("tech.piles_count", "recinzione", 820), ("tech.piles_count", "totale", 13270)})
+
+    def test_gantt_phases(self):
+        t = ("CRONOPROGRAMMA DEI LAVORI\nAllestimento cantiere dal 1° al 2° mese\nInfissione pali mesi 2-6\n"
+             "Posa moduli dal mese 4 al mese 10\nCollaudi e messa in servizio 11-12")
+        ph = [f.value for f in extract_all([page(t)]) if f.field == "schedule.phase"]
+        self.assertEqual([(p["name"], p["start_month"], p["end_month"]) for p in ph],
+                         [("Allestimento cantiere", 0, 2), ("Infissione pali", 1, 6), ("Posa moduli", 3, 10),
+                          ("Collaudi e avviamento", 10, 12)])
 
 
 class NoHardcodedBenchmarks(unittest.TestCase):

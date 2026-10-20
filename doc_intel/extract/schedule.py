@@ -79,8 +79,52 @@ def _iso(d: str | None, m: int, y: str) -> str:
     return f"{int(y):04d}-{m:02d}" + (f"-{int(d):02d}" if d else "")
 
 
+RANGE_RE = re.compile(r"(?i)(?:dal(?:l')?\s*)?(?P<u1>mes[ei]|settiman[ae]|month)?\s*(?P<a>\d{1,2})\s*°?\s*(?P<u2>mes[ei]|settiman[ae])?\s*"
+                      r"(?:al(?:l')?|-|–|÷|a)\s*(?P<u3>mes[ei]|settiman[ae])?\s*(?P<b>\d{1,2})\s*°?\s*(?P<u4>mese|mesi|settimana|settimane)?")
+PHASE_NAMES = [
+    (re.compile(r"(?i)allestimento|accantieramento|apertura\s+cantiere|preparazione\s+(?:del\s+)?(?:sito|area)"), "Allestimento cantiere"),
+    (re.compile(r"(?i)recinzion|viabilit|movimento\s+terra|scotico|livellament|sbanc"), "Opere civili e viabilità"),
+    (re.compile(r"(?i)infissione|pali|battitura"), "Infissione pali"),
+    (re.compile(r"(?i)montaggio\s+(?:delle\s+)?strutture|tracker|strutture\s+di\s+supporto"), "Montaggio strutture"),
+    (re.compile(r"(?i)posa\s+(?:dei\s+)?moduli|montaggio\s+(?:dei\s+)?moduli|installazione\s+(?:dei\s+)?moduli"), "Posa moduli"),
+    (re.compile(r"(?i)cavidott|scav[oi]\s+(?:per\s+)?cav|posa\s+cavi"), "Cavidotti"),
+    (re.compile(r"(?i)cabin|power\s+station|inverter"), "Cabine e inverter"),
+    (re.compile(r"(?i)stazione\s+(?:elettrica|utente|di\s+(?:elevazione|trasformazione))|\bSSE\b|sottostazione|connessione"), "Sottostazione e connessione"),
+    (re.compile(r"(?i)collaud|commissioning|avviamento|messa\s+in\s+servizio"), "Collaudi e avviamento"),
+    (re.compile(r"(?i)ripristin|mitigazion|opere\s+a\s+verde|piantumazion|agricol"), "Mitigazioni e ripristini"),
+]
+
+
+def extract_phases(ctx: PageContext) -> list[Fact]:
+    """Gantt-like statements: an activity name with an explicit month (or week) range on the same line."""
+    out = []
+    page_is_schedule = bool(re.search(r"(?i)cronoprogramma|diagramma\s+di\s+gantt|programma\s+(?:dei\s+)?lavori|fasi\s+di\s+cantiere", ctx.text[:4000]))
+    for i, line in enumerate(ctx.lines):
+        if not line or len(line) > 220:
+            continue
+        name = next((n for rx, n in PHASE_NAMES if rx.search(line)), None)
+        if not name:
+            continue
+        m = RANGE_RE.search(line)
+        if not m:
+            continue
+        units = " ".join(filter(None, [m.group("u1"), m.group("u2"), m.group("u3"), m.group("u4")])).lower()
+        if not units and not page_is_schedule:
+            continue
+        a, b = int(m.group("a")), int(m.group("b"))
+        if not (1 <= a <= b <= 72):
+            continue
+        k = 12 / 52 if "settiman" in units else 1
+        out.append(Fact(field="schedule.phase", value={"name": name, "start_month": round((a - 1) * k, 2),
+                                                        "end_month": round(b * k, 2), "raw": m.group(0).strip()},
+                        subject=name, citation=ctx.cite(line), temporal="planned",
+                        limits="Phase position stated in the programme of works: a plan, not progress",
+                        extractor="schedule.phase"))
+    return out
+
+
 def extract(ctx: PageContext) -> list[Fact]:
-    facts: list[Fact] = []
+    facts: list[Fact] = extract_phases(ctx)
     for i, line in enumerate(ctx.lines):
         if not line:
             continue

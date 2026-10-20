@@ -22,7 +22,17 @@ from . import SCHEMA_VERSION
 
 CARD_SCHEMA = "pv-scheda/1.0"
 
+# Fields shown in the card (user review 20/10/2026): grid voltage, inverters, module power/technology/count
+# and DC/AC from documents are not shown; power comes from the official title.
+CARD_FIELDS = {"role.proponent", "role.designer", "role.geologist", "role.works_director", "role.safety_coordinator",
+               "role.epc", "role.contractor", "role.bop", "role.supplier", "role.om",
+               "tech.technology", "tech.mounting", "tech.area_available_ha", "tech.area_panels_ha",
+               "tech.bess_power_mw", "tech.bess_energy_mwh", "tech.wind_power_mw", "tech.wtg_count",
+               "schedule.duration.construction", "schedule.duration.decommissioning", "schedule.duration.useful_life",
+               "schedule.date.construction_start", "schedule.date.construction_end",
+               "schedule.date.commercial_operation", "schedule.date.construction_start_extension"}
 LABELS = {
+    "tech.area_available_ha": "Superficie a disposizione", "tech.area_panels_ha": "Superficie occupata dai pannelli",
     "role.proponent": "Proponente", "role.designer": "Progettista", "role.geologist": "Geologo",
     "role.works_director": "Direttore dei lavori", "role.safety_coordinator": "Coordinatore sicurezza",
     "role.epc": "EPC indicato nei documenti", "role.contractor": "Impresa esecutrice indicata",
@@ -102,7 +112,7 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
 
     for g in d["groups"]:
         field = g["field"]
-        if field not in LABELS:
+        if field not in LABELS or field not in CARD_FIELDS:
             continue
         sec = next((k for k, _, pre in SECTIONS if field.startswith(pre)), None)
         if sec is None or not g["values"] or not isinstance(g["values"][0], dict):
@@ -182,6 +192,38 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
                           "source": {"document": "registro europeo VIES", "url": "https://ec.europa.eu/taxation_customs/vies/"}})
     sections["societa"] = sections["societa"] + companies[:6]
 
+    title = record.get("title") or p.get("title") or ""
+    tm = re.search(r"(?i)(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?|\d+(?:[.,]\d+)?)\s*(MWp|MW|kWp|KwP|kW)\b", title)
+    tech_head = []
+    if tm:
+        from .extract.context import parse_number
+        num = parse_number(tm.group(1)) or 0
+        unit = tm.group(2)
+        mw = num / 1000 if unit.lower().startswith("k") else num
+        tech_head.append({"label": "Potenza (dal titolo del procedimento)", "status": "verificato",
+                          "value": _fmt("tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw", round(mw, 3)),
+                          "source": {"document": "titolo del procedimento", "url": p.get("info_url"), "excerpt": tm.group(0)}})
+    lots = _prevalent(d, "tech.lots_count")
+    if lots:
+        what = lots[0].get("qualifiers", {}).get("what", "lotti")
+        tech_head.append({"label": "Suddivisione", "value": f"{lots[1]['value']} {what}", "status": "da documenti",
+                          "source": _source(lots[1]["example"], titles)})
+    piles = []
+    for kind, label in (("totale", "Pali da infiggere (totale)"), ("tracker", "Pali per tracker"),
+                        ("strutture fisse", "Pali per strutture fisse"), ("recinzione", "Pali di recinzione"),
+                        ("non specificato", "Pali (tipo non indicato)")):
+        g = next((g for g in d["groups"] if g["field"] == "tech.piles_count" and (g.get("subject") or "") == kind), None)
+        if g and g["values"]:
+            v = g["values"][0]
+            others = [f"{x['value']:,}".replace(",", ".") for x in g["values"][1:3]]
+            piles.append({"label": label, "value": f"{v['value']:,}".replace(",", "."),
+                          "status": "da documenti" if len(g["values"]) == 1 else "in conflitto" if v["occurrences"] < DOMINANCE * g["values"][1]["occurrences"] else "da documenti",
+                          "note": ("Altri valori negli elaborati: " + ", ".join(others)) if others else None,
+                          "source": _source(v["example"], titles)})
+    sections["tecnica"] = tech_head + sections["tecnica"] + piles
+    contacts = _contacts(d, titles)
+    gantt = _gantt(d, titles)
+
     # location: authority sheet + named/geometric facts
     loc = []
     if p.get("municipalities"):
@@ -225,8 +267,10 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
             {"id": "societa", "title": "Società e ruoli", "items": sections["societa"]},
             {"id": "tecnica", "title": "Caratteristiche tecniche", "items": sections["tecnica"]},
             {"id": "ubicazione", "title": "Ubicazione", "items": loc},
+            {"id": "contatti", "title": "Contatti trovati negli elaborati", "items": contacts},
             {"id": "tempi", "title": "Tempi e cantiere", "items": sections["tempi"]},
         ],
+        "cronoprogramma": gantt,
         "documentazione": {"documenti": a["references"], "pagine": a["pages_total"],
                            "procedimenti": len(a.get("procedures", [])),
                            "completa": d["gates"]["acquisition"]["pass"]},
@@ -251,3 +295,92 @@ def write_card(card: dict, out_dir: str | Path) -> Path:
     idx[card["project_key"]] = {"file": path.name, "updated": card["updated"], "title": card["title"]}
     idx_path.write_text(json.dumps(idx, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     return path
+
+
+def _prevalent(d: dict, field: str):
+    g = next((g for g in d["groups"] if g["field"] == field and g["values"] and isinstance(g["values"][0], dict)), None)
+    if not g:
+        return None
+    fact = next((f for f in d["facts"] if f["field"] == field), {})
+    return fact, g["values"][0]
+
+
+PUBLIC_MAIL = re.compile(r"(?i)\.gov\.it$|regione\.|comune\.|provincia\.|arpa|cultura|beniculturali|mite|mase|"
+                         r"minambiente|terna\.it|e-distribuzione|enel\.it$|asl|vigilfuoco|marina\.difesa|ispra|anas\.it|"
+                         r"snam|consorzio|bonifica|cert\.|postacert\.regione")
+PUBLIC_SUBJECT = re.compile(r"(?i)comune|regione|provincia|soprintendenza|arpa|ministero|terna|vigili|asl|consorzio|caserma")
+
+
+def _contacts(d: dict, titles: dict) -> list[dict]:
+    """E-mail, PEC and phones found in the documents, grouped by the company printed next to them."""
+    rows: dict[tuple, dict] = {}
+    for f in d["facts"]:
+        if f["field"] not in ("contact.email", "contact.pec", "contact.phone") or f.get("status") == "rejected":
+            continue
+        val = str(f["value"])
+        if f["field"] != "contact.phone" and PUBLIC_MAIL.search(val.split("@")[-1]):
+            continue
+        subj = f.get("subject") or ""
+        if PUBLIC_SUBJECT.search(subj):
+            continue
+        key = (f["field"], val)
+        r = rows.setdefault(key, {"n": 0, "subjects": {}, "fact": f})
+        r["n"] += 1
+        if subj:
+            r["subjects"][subj] = r["subjects"].get(subj, 0) + 1
+    kind = {"contact.email": "E-mail", "contact.pec": "PEC", "contact.phone": "Telefono"}
+    out = []
+    for (field, val), r in sorted(rows.items(), key=lambda kv: -kv[1]["n"]):
+        subj = max(r["subjects"], key=r["subjects"].get) if r["subjects"] else None
+        same_line = r["fact"]["qualifiers"].get("subject_association") == "same_line"
+        out.append({"label": f"{kind[field]}" + (f" — {subj}" if subj else ""), "value": val,
+                    "status": "da documenti" if (subj and same_line) else "da confermare",
+                    "detail": f"compare {r['n']} volte",
+                    "note": None if (subj and same_line) else "Associazione al soggetto non certa: verificare prima dell'uso.",
+                    "source": _source({"url": r["fact"]["citation"]["url"], "page": r["fact"]["citation"]["page"],
+                                       "excerpt": r["fact"]["citation"]["excerpt"]}, titles)})
+    return out[:14]
+
+
+def _gantt(d: dict, titles: dict) -> dict:
+    """Bars for phases with explicit month ranges; otherwise the prevalent construction duration as one bar."""
+    phases: dict[str, dict] = {}
+    for f in d["facts"]:
+        if f["field"] != "schedule.phase":
+            continue
+        v = f["value"]
+        key = (v["name"], v["start_month"], v["end_month"])
+        ph = phases.setdefault(v["name"], {"counts": {}, "source": None})
+        ph["counts"][key] = ph["counts"].get(key, 0) + 1
+        ph["source"] = ph["source"] or {"url": f["citation"]["url"], "page": f["citation"]["page"]}
+    bars = []
+    for name, ph in phases.items():
+        (n, a, b), _ = max(ph["counts"].items(), key=lambda kv: kv[1])
+        bars.append({"name": name, "start": a, "end": b, "positioned": True, "source": _source(ph["source"], titles)})
+    bars.sort(key=lambda x: (x["start"], x["end"]))
+    durations = {}
+    for field, name in (("schedule.duration.construction", "Cantiere (durata complessiva)"),
+                        ("schedule.duration.civil_works", "Opere civili"),
+                        ("schedule.duration.electrical_works", "Opere elettriche"),
+                        ("schedule.duration.installation", "Montaggi"),
+                        ("schedule.duration.commissioning", "Collaudi e avviamento")):
+        pv = _prevalent(d, field)
+        if pv and isinstance(pv[1]["value"], dict) and pv[1]["value"].get("max", 0) >= 1:
+            durations[name] = {"months": pv[1]["value"]["max"], "text": _fmt(field, pv[1]["value"]),
+                               "source": _source(pv[1]["example"], titles)}
+    if not bars:
+        for name, dur in durations.items():
+            bars.append({"name": name, "start": 0, "end": dur["months"], "positioned": False,
+                         "label": dur["text"], "source": dur["source"]})
+    milestones = []
+    for f in d["groups"]:
+        if f["field"].startswith("schedule.date.") and f["field"] in LABELS and f["values"] and isinstance(f["values"][0], dict):
+            v = f["values"][0]
+            milestones.append({"label": LABELS[f["field"]], "date": _fmt(f["field"], v["value"]), "iso": v["value"],
+                               "nature": ", ".join(TEMPORAL_TEXT.get(t, t) for t in v.get("temporal", [])),
+                               "source": _source(v["example"], titles)})
+    milestones.sort(key=lambda m: m["iso"])
+    total = max([b["end"] for b in bars] + [durations.get("Cantiere (durata complessiva)", {}).get("months", 0)] + [1])
+    return {"bars": bars, "months": total, "milestones": milestones,
+            "note": None if any(b["positioned"] for b in bars) else
+            "Gli elaborati indicano solo le durate: le barre partono tutte dall'avvio del cantiere, la sequenza reale non è indicata."}

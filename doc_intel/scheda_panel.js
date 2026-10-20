@@ -44,11 +44,41 @@
     return `<div class="sc-item"><div class="sc-head"><span class="sc-label">${esc(it.label)}</span>${badge(it.status)}</div>${body}${note}</div>`;
   }
 
+  function gantt(g) {
+    if (!g || (!(g.bars || []).length && !(g.milestones || []).length)) return '';
+    const bars = g.bars || [];
+    const months = Math.max(1, Math.ceil(g.months || 1));
+    const rowH = 26, labelW = 170, chartW = 330, top = 22;
+    const x = m => labelW + (m / months) * chartW;
+    const step = months <= 12 ? 1 : months <= 24 ? 3 : 6;
+    let ticks = '';
+    for (let m = 0; m <= months; m += step) {
+      ticks += `<line x1="${x(m)}" y1="${top - 4}" x2="${x(m)}" y2="${top + bars.length * rowH}" class="g-grid"/>`
+        + `<text x="${x(m)}" y="${top - 8}" class="g-tick" text-anchor="middle">${m}</text>`;
+    }
+    const rows = bars.map((b, i) => {
+      const y = top + i * rowH;
+      const w = Math.max(3, x(b.end) - x(b.start));
+      return `<text x="${labelW - 8}" y="${y + 16}" class="g-label" text-anchor="end">${esc(b.name)}</text>`
+        + `<rect x="${x(b.start)}" y="${y + 5}" width="${w}" height="15" rx="4" class="${b.positioned ? 'g-bar' : 'g-bar g-free'}"/>`
+        + `<text x="${x(b.start) + w + 5}" y="${y + 16}" class="g-val">${esc(b.label || ('mesi ' + (b.start + 1) + '–' + b.end))}</text>`;
+    }).join('');
+    const h = top + bars.length * rowH + 8;
+    const svg = bars.length ? `<div class="g-wrap"><svg viewBox="0 0 ${labelW + chartW + 80} ${h}" role="img" aria-label="Cronoprogramma in mesi">
+      <text x="${labelW}" y="10" class="g-tick">mesi dall'avvio del cantiere</text>${ticks}${rows}</svg></div>` : '';
+    const ms = (g.milestones || []).map(m =>
+      `<li><span class="g-date">${esc(m.date)}</span> <strong>${esc(m.label)}</strong> <span class="sc-occ">${esc(m.nature)}</span>${sourceLink(m.source)}</li>`).join('');
+    return `<section class="sc-sec"><h3>Cronoprogramma</h3>${svg}
+      ${g.note ? `<div class="sc-note">${esc(g.note)}</div>` : ''}
+      ${ms ? `<ul class="g-ms">${ms}</ul>` : ''}</section>`;
+  }
+
   function render(card) {
     const doc = card.documentazione || {};
     const href = safeHref(card.source_url);
-    const sections = (card.sections || []).filter(s => s.items && s.items.length).map(s =>
-      `<section class="sc-sec"><h3>${esc(s.title)}</h3>${s.items.map(item).join('')}</section>`).join('');
+    const sections = (card.sections || []).filter(s => s.items && s.items.length && s.id !== 'tempi').map(s =>
+      `<section class="sc-sec"><h3>${esc(s.title)}</h3>${s.items.map(item).join('')}</section>`).join('')
+      + gantt(card.cronoprogramma);
     const open = (card.da_verificare || []).length
       ? `<section class="sc-sec sc-open"><h3>Da verificare</h3><ul>${card.da_verificare.map(o =>
         `<li><strong>${esc(o.label)}</strong>: ${esc(o.reason)}</li>`).join('')}</ul></section>` : '';

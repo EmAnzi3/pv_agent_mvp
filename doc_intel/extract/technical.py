@@ -32,7 +32,17 @@ VOLT_RE = re.compile(r"(?P<num>\d{2,3}(?:[.,]\d)?)\s*kV\b")
 WTG_COUNT_RE = re.compile(r"(?i)(?:n\.?\s*)?(?P<num>\d{1,3})\s+(?:aerogeneratori|turbine\s+eoliche|WTG)\b")
 HUB_RE = re.compile(r"(?i)altezza\s+(?:al\s+|del\s+)?mozzo[^0-9]{0,20}(?P<num>\d{2,3}(?:[.,]\d+)?)\s*m\b")
 ROTOR_RE = re.compile(r"(?i)diametro\s+(?:del\s+)?rotore[^0-9]{0,20}(?P<num>\d{2,3}(?:[.,]\d+)?)\s*m\b")
-AREA_RE = re.compile(r"(?i)(?P<kind>superficie|area)\s+(?P<qual>[a-zà-ÿ ]{0,40}?)[:\s]{0,4}(?:di\s+|pari\s+a\s+|circa\s+)*(?P<num>" + NUM + r")\s*(?P<unit>ha|ettari|m2|m²|mq)\b")
+AREA_RE = re.compile(r"(?i)(?P<kind>superficie|area)\s+(?P<qual>[a-zà-ÿ' ]{0,60}?)[:\s]{0,4}(?:di\s+|pari\s+a\s+|circa\s+|complessiv[ao]\s+)*(?P<num>" + NUM + r")\s*(?P<unit>ha|ettari|m2|m²|mq)\b")
+AREA_PANELS = re.compile(r"(?i)captant|radiant|occupat[ao]\s+da(?:i|lle)?\s+(?:moduli|pannelli|strutture|tracker)|"
+                         r"coperta\s+da|proiezione|impronta|pannell|moduli|tracker|strutture|pannellat|installazione")
+AREA_AVAILABLE = re.compile(r"(?i)disponibil|catastal|totale|complessiv|lott[oi]|recintat|di\s+progetto|intervento|"
+                            r"terren|fondo|aziend|propriet|contrattualizzat|nella\s+disponibilit|lorda|particell")
+PILES_RE = re.compile(r"(?i)(?:(?:n\.|numero|totale)\s*(?:di\s+|complessivo\s+(?:di\s+)?)?)?(?P<num>\d{1,3}(?:[.\s]\d{3})+|\d{2,6})\s+"
+                      r"(?P<what>pali|pile|montanti|paletti|micropali)\b|"
+                      r"(?P<what2>pali|pile|montanti|micropali)\b[^.;\n]{0,50}?(?:n\.|numero|pari\s+a|totale\s+(?:di\s+)?)\s*(?P<num2>\d{1,3}(?:[.\s]\d{3})+|\d{2,6})")
+LOTS_RE = re.compile(r"(?i)(?:suddivis[oa]|articolat[oa]|compost[oa]|distribuit[oa]|ripartit[oa])\s+(?:in|su)\s+(?:n\.\s*)?"
+                     r"(?P<num>\d{1,2}|due|tre|quattro|cinque|sei|sette|otto|nove|dieci)\s+(?P<what>lotti|campi|aree|sottocampi|sezioni|impianti|blocchi)")
+WORDNUM = {"due": 2, "tre": 3, "quattro": 4, "cinque": 5, "sei": 6, "sette": 7, "otto": 8, "nove": 9, "dieci": 10}
 TECH_WORDS = [
     (re.compile(r"(?i)\bagrivoltaico\s+(?:evoluto|avanzato|innovativo)\b"), "agrivoltaic_advanced"),
     (re.compile(r"(?i)\bagri-?voltaic[oa]|agro-?voltaic[oa]|agro-?fotovoltaic[oa]\b"), "agrivoltaic"),
@@ -133,6 +143,8 @@ def extract(ctx: PageContext) -> list[Fact]:
                                   citation=ctx.cite(sent), extractor="technical.module"))
         if re.search(r"(?i)moduli|pannelli", line):
             for m in MODULE_COUNT_RE.finditer(line):
+                if re.search(r"(?i)\b(?:CEI|EN|IEC|UNI|ISO|DIN|norm[ae]|serie)\s*[-:]?\s*$", line[max(0, m.start("num") - 15): m.start("num")]):
+                    continue  # standard codes (CEI EN 61215, IEC 61730) are not quantities
                 v = parse_number(m.group("num"))
                 if v and 1000 <= v <= 2_000_000:
                     facts.append(Fact(field="tech.module_count", value=int(v), citation=ctx.cite(sent),
@@ -180,9 +192,42 @@ def extract(ctx: PageContext) -> list[Fact]:
             if not v:
                 continue
             ha = v if m.group("unit").lower() in ("ha", "ettari") else v / 10000
+            qual = (m.group("kind") + " " + m.group("qual")).strip()
+            local = line[max(0, m.start() - 40): m.end()]
+            if AREA_PANELS.search(qual) or AREA_PANELS.search(local):
+                field = "tech.area_panels_ha"
+            elif AREA_AVAILABLE.search(qual) or AREA_AVAILABLE.search(local):
+                field = "tech.area_available_ha"
+            else:
+                field = "tech.area_ha"
             if 0.1 <= ha <= 5000:
-                facts.append(Fact(field="tech.area_ha", value=round(ha, 4), unit="ha", citation=ctx.cite(sent),
-                                  qualifiers={"kind": (m.group("kind") + " " + m.group("qual")).strip()},
-                                  limits="Area type (fenced, available, cadastral, covered) per qualifier",
+                facts.append(Fact(field=field, value=round(ha, 4), unit="ha", citation=ctx.cite(sent),
+                                  qualifiers={"kind": qual},
+                                  limits="Area type from the wording next to the number",
                                   extractor="technical.area"))
+        for m in PILES_RE.finditer(line):
+            v = parse_number(m.group("num") or m.group("num2") or "")
+            if not v or not (20 <= v <= 500_000):
+                continue
+            after = re.split(r"[,;]|\s+e\s+\d", line[m.end(): m.end() + 60])[0]
+            before = line[max(0, m.start() - 50): m.start()]
+            def kind_of(t):
+                return ("recinzione" if re.search(r"(?i)recinzion", t) else
+                        "tracker" if re.search(r"(?i)tracker|inseguitor", t) else
+                        "strutture fisse" if re.search(r"(?i)fiss[ae]", t) else None)
+            if re.search(r"(?i)complessiv|totale", before + m.group(0)):
+                kind = "totale"
+            else:
+                kind = kind_of(m.group(0) + after) or kind_of(before) or kind_of(sent) or "non specificato"
+            if re.search(r"(?i)illuminazion|videosorveglian|telecamer|lampion", line):
+                continue
+            facts.append(Fact(field="tech.piles_count", value=int(v), subject=kind, citation=ctx.cite(sent),
+                              qualifiers={"kind": kind, "raw": m.group(0)}, extractor="technical.piles",
+                              limits="Number of driven piles as stated; type from nearby words"))
+        for m in LOTS_RE.finditer(line):
+            n = m.group("num").lower()
+            v = WORDNUM.get(n) or int(n)
+            if 2 <= v <= 30:
+                facts.append(Fact(field="tech.lots_count", value=v, citation=ctx.cite(sent),
+                                  qualifiers={"what": m.group("what").lower()}, extractor="technical.lots"))
     return facts
