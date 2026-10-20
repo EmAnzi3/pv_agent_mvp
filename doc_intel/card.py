@@ -342,16 +342,20 @@ def _norm(t: str) -> str:
 def _clean_subject(t: str | None) -> str:
     t = (t or "").strip("'\"‘’“” ")
     t = re.split(r"(?i)\b(?:dell[a'’]\s*(?:impresa|ditta|societ[aà])|della\s+(?:ditta|societ[aà]))\s+", t)[-1]
-    return t.strip("'\"‘’“” ")
+    return re.sub(r"^[^\w]+|[\s'\"‘’“”ʼ`´]+$", "", t)
 
 
 def _contacts(d: dict, titles: dict) -> list[dict]:
     """E-mail, PEC and phones found in the documents, grouped by the company printed next to them."""
     rows: dict[tuple, dict] = {}
-    names = sorted({_clean_subject(f.get("subject")) for f in d["facts"] if f["field"].startswith(("contact.", "company.")) and f.get("subject")
-                    and len(_norm(f.get("subject"))) >= 6}
-                   | {r["name"].title() for r in (d.get("registry") or {}).values() if r.get("valid") and r.get("name")},
-                   key=lambda n: -len(_norm(n)))
+    # owners for address-based matching: registry names first, then the subjects most often printed in the documents
+    freq: dict[str, int] = {}
+    for f in d["facts"]:
+        if f["field"].startswith(("contact.", "company.")) and len(_norm(f.get("subject"))) >= 6:
+            n = _clean_subject(f.get("subject"))
+            freq[n] = freq.get(n, 0) + 1
+    names = [r["name"].title() for r in (d.get("registry") or {}).values() if r.get("valid") and r.get("name")]
+    names += sorted(freq, key=lambda n: -freq[n])
     for f in d["facts"]:
         if f["field"] not in ("contact.email", "contact.pec", "contact.phone") or f.get("status") == "rejected":
             continue
