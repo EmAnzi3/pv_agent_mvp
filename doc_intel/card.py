@@ -231,6 +231,7 @@ def _pick(d: dict, field: str, titles: dict, accept=None) -> dict | None:
 
 def _phase_name(n: str) -> str:
     """'SOTTOIMPIANTO A - Opere SOTTOIMPIANTO A' -> 'SOTTOIMPIANTO A - Opere' (label printed twice, in table and on the bar)."""
+    n = re.sub(r"^\s*[A-Z]?\.?\d+(?:\.\d+)*\.?\s+", "", n)      # WBS codes ('B.6.1 Installazione ...')
     w = n.split()
     for k in range(1, len(w) // 2 + 1):
         tail = w[-k:]

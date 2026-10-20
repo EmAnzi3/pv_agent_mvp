@@ -101,7 +101,9 @@
 .sc-status strong { font-size: 13px; }
 .sc-status.st-potenzialmente_realizzato, .sc-status.st-potenzialmente_avviato, .sc-status.st-avviato { background: #fde2e2; color: #7f1d1d; }
 .sc-status.st-date_superate { background: var(--soft-warn, #fef3c7); color: #78350f; }
-.g-dt { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 6px; }
+.g-dt { width: 100%; min-width: 0; max-width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13px; margin-bottom: 6px; }
+.g-dt th:last-child, .g-dt td:last-child { width: 96px; }
+.g-dt td:first-child { overflow-wrap: anywhere; }
 .g-dt th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted, #64748b); padding: 4px 6px; border-bottom: 1px solid var(--border, #dfe5eb); }
 .g-dt td { padding: 4px 6px; border-bottom: 1px solid var(--border-soft, #edf1f5); }
 .g-dt td:last-child { white-space: nowrap; font-variant-numeric: tabular-nums; text-align: right; }
