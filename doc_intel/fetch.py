@@ -155,6 +155,38 @@ class Fetcher:
                     self.sleep(self.backoff * (attempt + 1))
         raise IOError(f"download failed after {self.retries + 1} attempts: {last}")
 
+    def check_remote(self, url: str, entry: dict, auth=None) -> tuple[str, dict]:
+        """Cheap change check without downloading: HEAD and compare validators.
+
+        Returns ('unchanged' | 'changed' | 'unknown', observed headers)."""
+        try:
+            kw = {"auth": tuple(auth)} if auth else {}
+            head = getattr(self.session, "head", None)
+            if head is None:
+                return "unknown", {}
+            r = head(url, timeout=(15, 30), allow_redirects=True, **kw)
+            if getattr(r, "status_code", 200) >= 400:
+                return "unknown", {}
+            h = {k.lower(): v for k, v in dict(getattr(r, "headers", {}) or {}).items()}
+        except Exception:
+            return "unknown", {}
+        seen = {"etag": h.get("etag"), "last_modified": h.get("last-modified"),
+                "length": int(h["content-length"]) if str(h.get("content-length", "")).isdigit() else None}
+        compared = False
+        if seen["etag"] and entry.get("etag"):
+            compared = True
+            if seen["etag"] != entry["etag"]:
+                return "changed", seen
+        if seen["last_modified"] and entry.get("last_modified"):
+            compared = True
+            if seen["last_modified"] != entry["last_modified"]:
+                return "changed", seen
+        if seen["length"] and entry.get("bytes") and "gzip" not in str(h.get("content-encoding", "")):
+            compared = True
+            if seen["length"] != entry["bytes"]:
+                return "changed", seen
+        return ("unchanged" if compared else "unknown"), seen
+
     def fetch(self, url: str, manifest: dict, refresh: bool = False, auth=None) -> FetchResult:
         entry = manifest.get("documents", {}).get(url, {})
         sha = entry.get("sha256")

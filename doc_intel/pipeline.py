@@ -11,7 +11,7 @@ from dataclasses import asdict
 from datetime import datetime, timezone
 from typing import Any, Callable
 
-from . import SCHEMA_VERSION, TOOLBOX_VERSION
+from . import EXTRACTOR_VERSION, SCHEMA_VERSION, TOOLBOX_VERSION
 from .adapters import adapter_for_url
 from .adapters.base import Discovery
 from .canonical import compare, find_by_url, load_records
@@ -21,7 +21,7 @@ from .fetch import Fetcher
 from .gates import acquisition_gate, proposal_gates
 from .parse import OcrBudget, extract_pages
 from .reconcile import group
-from .schema import Fact, facts_to_json
+from .schema import Fact, fact_from_dict, facts_to_json
 from .store import Store
 
 PROPOSABLE = ("company.vat", "contact.pec", "contact.email", "contact.phone", "role.proponent", "role.designer", "role.geologist",
@@ -34,7 +34,9 @@ PROPOSABLE = ("company.vat", "contact.pec", "contact.email", "contact.phone", "r
 
 def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool = True,
         ocr_max_pages: int = 400, max_docs: int | None = None, workers: int = 3,
-        refresh: bool = False, registry: str | None = None, registry_client=None,
+        refresh: bool = False, verify_content: bool = False, keep_files: bool = False,
+        reanalyse: bool = False,
+        registry: str | None = None, registry_client=None,
         time_budget_s: float | None = None, get_html: Callable[[str], str] | None = None,
         fetcher: Fetcher | None = None, log: Callable[[str], None] = print) -> dict[str, Any]:
     t0 = time.time()
@@ -58,34 +60,106 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     counter = {"n": 0}
     import threading
     lock = threading.Lock()
+    from .fetch import FetchResult
+
+    def extract_document(ref, res, parsed):
+        """Facts, diagnostics and summaries of one distinct content; persisted by SHA-256."""
+        doc_pages, members, unread, complete = [], [], [], True
+        for mem, txt in parsed:
+            s_ = txt.get("summary", {})
+            members.append({"name": mem.name, "pages": s_.get("pages", 0), "summary": s_,
+                            "backend": txt.get("backend"), "error": txt.get("error")})
+            if txt.get("error") or (ocr and txt.get("ocr_pending")):
+                complete = False  # with OCR disabled by choice, text-less pages cannot improve: document is final
+            for p in txt.get("pages", []):
+                if p["method"] in ("ocr_failed", "none_after_ocr", "none") and len(unread) < 50:
+                    unread.append({"url": ref.url, "member": None if mem.depth == 0 else mem.name,
+                                   "page": p["n"], "method": p["method"], "error": p.get("error")})
+                if p.get("text"):
+                    doc_pages.append(PageContext(p["text"], ref.url, p["n"], res.sha256,
+                                                 None if mem.depth == 0 else mem.name, ref.procedure_id,
+                                                 ref.title, ref.extra.get("index_date"), None, p["method"]))
+        facts = extract_all(doc_pages)
+        payload = {"sha256": res.sha256, "url": ref.url, "extracted_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                   "toolbox_version": TOOLBOX_VERSION, "extractor_version": EXTRACTOR_VERSION, "members": members, "skipped": res.skipped_members,
+                   "unreadable": unread, "diagnostics": coordinate_diagnostics(doc_pages, facts, limit=5),
+                   "facts": facts_to_json(facts), "complete": complete}
+        return payload
 
     def process(ref):
-        if deadline and time.time() >= deadline:
-            from .fetch import FetchResult
-            return ref, FetchResult(ref.url, None, None, 0, "deferred", "time budget reached before download"), []
         t1 = time.time()
-        res = fetcher.fetch(ref.url, manifest, refresh=refresh, auth=ref.extra.get("auth"))
+        entry = manifest.get("documents", {}).get(ref.url, {})
+        force = refresh
+        # 1) already fully processed: reuse stored facts unless the remote file changed
+        done = (entry.get("processed") or {}).get("complete")
+        if done and entry.get("sha256") and store.has_facts(entry["sha256"]) and not refresh and not reanalyse:
+            change, seen = fetcher.check_remote(ref.url, entry, ref.extra.get("auth"))
+            force = change == "changed" or verify_content
+            if not force:
+                with lock:
+                    entry["last_checked"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+                    entry["last_check"] = change
+                    counter["n"] += 1
+                    log(f"[doc {counter['n']}/{len(docs)}] reused ({change}) {(ref.title or ref.url)[:70]}")
+                res = FetchResult(ref.url, entry["sha256"], entry.get("kind"), entry.get("bytes", 0), "reused")
+                return ref, res, store.get_facts(entry["sha256"])
+        if deadline and time.time() >= deadline:
+            return ref, FetchResult(ref.url, None, None, 0, "deferred", "time budget reached before download"), None
+        # 2) new, changed, incomplete or forced: download, parse, extract, then delete the bytes
+        res = fetcher.fetch(ref.url, manifest, refresh=force, auth=ref.extra.get("auth"))
+        payload = None
+        if res.sha256 and store.has_facts(res.sha256) and res.state in ("unchanged", "cached"):
+            payload = store.get_facts(res.sha256)          # same bytes already analysed (e.g. duplicate URL)
+        elif res.sha256:
+            parsed = []
+            for mem in res.members:
+                try:
+                    parsed.append((mem, extract_pages(mem.raw, res.sha256, store,
+                                                      member=None if mem.depth == 0 else mem.name,
+                                                      ocr=ocr, budget=budget)))
+                except Exception as exc:
+                    parsed.append((mem, {"error": str(exc)[:300], "pages": [], "summary": {}}))
+            payload = extract_document(ref, res, parsed)
+            store.put_facts(res.sha256, payload)
         with lock:
             counter["n"] += 1
+            e = manifest.setdefault("documents", {}).setdefault(ref.url, {})
+            if payload is not None:
+                e["processed"] = {"at": payload["extracted_at"], "complete": payload["complete"],
+                                  "facts": len(payload["facts"]), "toolbox_version": TOOLBOX_VERSION,
+                                  "extractor_version": payload.get("extractor_version"),
+                                  "pages": sum(m["pages"] for m in payload["members"])}
+            e.update({"title": ref.title, "procedure_id": ref.procedure_id, "index_date": ref.extra.get("index_date")})
             log(f"[doc {counter['n']}/{len(docs)}] {res.state} {res.kind or '-'} {res.size // 1024} KB "
                 f"{time.time() - t1:.0f}s {(ref.title or ref.url)[:70]}" + (f" ERROR {res.error[:80]}" if res.error else ""))
-        parsed = []
-        for mem in res.members:
-            try:
-                parsed.append((mem, extract_pages(mem.raw, res.sha256, store,
-                                                  member=None if mem.depth == 0 else mem.name,
-                                                  ocr=ocr, budget=budget)))
-            except Exception as exc:
-                parsed.append((mem, {"error": str(exc)[:300], "pages": [], "summary": {}}))
-        return ref, res, parsed
+        # 3) originals are not kept: delete bytes and page text once the document is fully analysed
+        if res.sha256 and payload is not None and payload["complete"] and not keep_files:
+            store.delete_blob(res.sha256)
+            store.delete_text(res.sha256)
+        return ref, res, payload
 
     t_fetch = time.time()
+    unique = list({d.url: d for d in reversed(docs)}.values())[::-1]   # one download per URL
     with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
-        results = list(pool.map(process, docs))
+        by_url = {ref.url: (res, payload) for ref, res, payload in pool.map(process, unique)}
+    results = [(ref, *by_url[ref.url]) for ref in docs]
+    listed = {d.url for d in disc.documents}
+    removed = [u for u in manifest.get("documents", {}) if u not in listed]
+    for u in removed:
+        manifest["documents"][u].setdefault("removed_from_index_at", datetime.now(timezone.utc).isoformat(timespec="seconds"))
+    states: dict[str, int] = {}
+    for res, _ in by_url.values():          # per distinct URL, not per index reference
+        states[res.state] = states.get(res.state, 0) + 1
+    manifest.setdefault("runs", []).append({"at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                                            "listed": len(disc.documents), "states": states, "removed": len(removed),
+                                            "toolbox_version": TOOLBOX_VERSION})
+    manifest["runs"] = manifest["runs"][-50:]
     store.save_manifest(manifest)
+    log(f"[memory] states {states}; removed from index {len(removed)}; store {store.size_report()}")
 
-    pages: list[PageContext] = []
+    facts: list[Fact] = []
     unreadable: list[dict] = []
+    diagnostics: list[dict] = []
     sha_aliases: dict[str, list[str]] = {}
     inventory = []
     by_sha: dict[str, str] = {}
@@ -93,13 +167,16 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
            "references": len(disc.documents), "processed_references": len(docs), "download_failures": 0,
            "distinct_sha256": 0, "duplicate_references": 0, "pdf_files": 0, "pages_total": 0,
            "pages_digital": 0, "pages_ocr": 0, "pages_ocr_pending": 0, "pages_unreadable": 0,
-           "pages_graphic_no_text": 0,
-           "parse_errors": 0, "skipped_members": 0}
-    for ref, res, parsed in results:
+           "pages_graphic_no_text": 0, "parse_errors": 0, "skipped_members": 0,
+           "states": states, "removed_from_index": removed[:50],
+           "facts_from_older_extractor": sum(1 for _, p_ in by_url.values()
+                                             if p_ and p_.get("extractor_version") != EXTRACTOR_VERSION),
+           "extractor_version": EXTRACTOR_VERSION}
+    for ref, res, payload in results:
         entry = {"url": ref.url, "procedure_id": ref.procedure_id, "title": ref.title,
                  "index_page": ref.index_page, "index_date": ref.extra.get("index_date"),
                  "sha256": res.sha256, "kind": res.kind, "bytes": res.size, "state": res.state,
-                 "error": res.error, "duplicate_of": None, "members": [], "skipped": res.skipped_members}
+                 "error": res.error, "duplicate_of": None, "members": [], "skipped": []}
         if res.state == "failed":
             acq["download_failures"] += 1
             acq.setdefault("failed_documents", []).append({"url": ref.url, "title": ref.title, "error": res.error})
@@ -112,42 +189,36 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
                 acq["duplicate_references"] += 1
             else:
                 by_sha[res.sha256] = ref.url
-        acq["skipped_members"] += len(res.skipped_members)
-        for mem, txt in parsed:
-            s = txt.get("summary", {})
-            entry["members"].append({"name": mem.name, "pages": s.get("pages", 0), "summary": s,
-                                     "backend": txt.get("backend"), "error": txt.get("error"),
-                                     "from_cache": txt.get("from_cache", False)})
-            if txt.get("error"):
-                acq["parse_errors"] += 1
-            if entry["duplicate_of"]:
-                continue  # count and extract distinct content only once
-            acq["pdf_files"] += 1
-            acq["pages_total"] += s.get("pages", 0)
-            acq["pages_digital"] += s.get("digital", 0)
-            acq["pages_ocr"] += s.get("ocr", 0)
-            acq["pages_ocr_pending"] += s.get("ocr_deferred", 0) + (0 if ocr else s.get("no_text", 0))
-            acq["pages_unreadable"] += s.get("ocr_failed", 0)
-            acq["pages_graphic_no_text"] += s.get("no_text", 0) if ocr else 0
-            for p in txt.get("pages", []):
-                if p["method"] in ("ocr_failed", "none_after_ocr", "none") and len(unreadable) < 200:
-                    unreadable.append({"url": ref.url, "member": None if mem.depth == 0 else mem.name,
-                                       "page": p["n"], "method": p["method"], "error": p.get("error")})
-                if p.get("text"):
-                    pages.append(PageContext(p["text"], ref.url, p["n"], res.sha256,
-                                             None if mem.depth == 0 else mem.name, ref.procedure_id,
-                                             ref.title, ref.extra.get("index_date"), None, p["method"]))
+        if payload:
+            entry["members"] = payload["members"]
+            entry["skipped"] = payload.get("skipped", [])
+            acq["skipped_members"] += len(entry["skipped"])
+            if not entry["duplicate_of"]:
+                for m in payload["members"]:
+                    s_ = m.get("summary", {})
+                    if m.get("error"):
+                        acq["parse_errors"] += 1
+                    acq["pdf_files"] += 1
+                    acq["pages_total"] += s_.get("pages", 0)
+                    acq["pages_digital"] += s_.get("digital", 0)
+                    acq["pages_ocr"] += s_.get("ocr", 0)
+                    acq["pages_ocr_pending"] += s_.get("ocr_deferred", 0) + (0 if ocr else s_.get("no_text", 0))
+                    acq["pages_unreadable"] += s_.get("ocr_failed", 0)
+                    acq["pages_graphic_no_text"] += s_.get("no_text", 0) if ocr else 0
+                unreadable.extend(payload.get("unreadable", [])[: max(0, 200 - len(unreadable))])
+                diagnostics.extend(payload.get("diagnostics", [])[: max(0, 40 - len(diagnostics))])
+                facts.extend(fact_from_dict(f) for f in payload["facts"])
         inventory.append(entry)
     acq["distinct_sha256"] = len(by_sha)
     t_extract = time.time()
-    facts = extract_all(pages)
+    from .extract import dedupe
+    facts = dedupe(facts)
     registry_results = {}
     if registry == "vies":
         from .registry import ViesClient, check_vats
         registry_results = check_vats(facts, registry_client or ViesClient(store.root / "registry"))
         log(f"[registry] {len(registry_results)} VAT numbers checked on VIES")
     groups = group(facts)
-    diagnostics = coordinate_diagnostics(pages, facts)
     log(f"[extract] {len(facts)} facts, {sum(g['status']=='conflict' for g in groups)} conflict groups")
 
     canonical = {"status": "not_checked"}
@@ -181,7 +252,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         "efficiency": {"seconds_total": round(time.time() - t0, 1),
                        "seconds_fetch_parse": round(t_extract - t_fetch, 1),
                        "seconds_per_document": round((t_extract - t_fetch) / max(1, len(docs)), 2),
-                       "cache": store.stats, "ocr_pages_used": budget.used,
+                       "cache": store.stats, "store_bytes": store.size_report(), "ocr_pages_used": budget.used,
                        "ocr_deferred_by_deadline": budget.deferred_by_time},
     }
     return dossier

@@ -70,9 +70,17 @@ class FakeResponse:
 
 
 class FakeSession:
-    def __init__(self, routes: dict[str, bytes | Exception]):
+    def __init__(self, routes: dict[str, bytes | Exception], head_headers: dict[str, dict] | None = None):
         self.routes = routes
         self.calls: list[str] = []
+        self.head_headers = head_headers or {}
+
+    def head(self, url, timeout=None, allow_redirects=True, **kw):
+        if url not in self.head_headers:
+            return FakeResponse(b"", 405)
+        r = FakeResponse(b"")
+        r.headers = self.head_headers[url]
+        return r
 
     def get(self, url, timeout=None, stream=None, **kw):
         self.calls.append(url)

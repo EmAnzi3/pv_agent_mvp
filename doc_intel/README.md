@@ -26,6 +26,16 @@ In CI: `doc-intel-tests.yml` (offline, con e senza PyMuPDF) e `doc-intel-run.yml
 - Conflitti mai risolti scegliendo il più recente; `preference_hint` solo se un unico valore compare in un atto, sempre `binding: false`.
 - Potenze FV DC, FV AC, BESS MW/MWh ed eolico in campi distinti, mai sommati.
 
+## Ciclo di vita dei documenti e memoria
+
+1. **Individua** i documenti del progetto (adapter della fonte).
+2. **Confronta** con la memoria: un URL già analizzato non viene riscaricato; si controllano solo ETag/Last-Modified/dimensione (richiesta HEAD). Nuovi URL, file cambiati, analisi incomplete → download.
+3. **Scarica, analizza, estrae** i fatti e li salva per SHA-256 (`facts/`, gzip).
+4. **Elimina** i file originali e il testo appena il documento è analizzato completamente (resta solo se l'OCR è stato rinviato dal limite di tempo, fino al completamento).
+5. **Memorizza** nel manifest del progetto: URL, SHA-256, dimensione, validatori HTTP, revisioni precedenti, data e versione dell'analisi, documenti spariti dall'indice, storico dei run.
+
+La memoria (manifest + fatti + cache VIES, pochi MB) è persistita sul branch `doc-intel-state`; i documenti non vengono mai salvati in Git né conservati sul runner. `--reanalyse` rianalizza con le regole correnti (riscaricando), `--verify-content` riscarica per confrontare lo SHA-256 anche se il server non segnala modifiche.
+
 ## Persistenza e costi
 
 Store content-addressed (`blobs/`, `text/`, `manifests/`) fuori da Git, persistito con `actions/cache`. Un URL già in manifest non viene riscaricato; un contenuto già parsato non viene rielaborato; `--refresh` rileva revisioni (SHA diverso → `history`). OCR solo su pagine senza testo utile, con budget (`--ocr-max-pages`) e cap pixel per le tavole grandi. Nessun servizio a pagamento.

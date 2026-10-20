@@ -707,6 +707,71 @@ class LazioRunRegressions(unittest.TestCase):
         self.assertEqual(find_companies("e-Solar S.r.l. - Società con unico socio")[0][1], "e-Solar S.r.l.")
 
 
+class MemoryAndDeletion(unittest.TestCase):
+    """Documents are deleted after analysis; memory of what was done drives re-runs."""
+
+    def setUp(self):
+        self.site = fake_site()
+        self.pdfs = {U + "11": make_pdf(["MARGISOLAR S.r.l. P.IVA 03920651209 impianto agrivoltaico 60 MWp lato DC"]),
+                     U + "12": make_pdf(["Progettista: Ing. Mario Rossi relazione tecnica di progetto impianto"]),
+                     U + "13": make_pdf(["Relazione geologica dell'area di impianto e opere di connessione"]),
+                     U + "21": make_pdf(["Parere della Soprintendenza sul progetto dell'impianto fotovoltaico"])}
+
+    def _run(self, d, session, **kw):
+        fetcher = Fetcher(Store(d), session=session, sleeper=lambda s: None)
+        return run("https://va.mite.gov.it/it-IT/Oggetti/Info/77", d, None, ocr=False,
+                   get_html=lambda u: self.site[u], fetcher=fetcher, log=lambda m: None, **kw)
+
+    def test_bytes_deleted_facts_kept_and_reused(self):
+        with tempfile.TemporaryDirectory() as d:
+            s1 = FakeSession(dict(self.pdfs))
+            d1 = self._run(d, s1)
+            st = Store(d)
+            self.assertEqual(st.size_report()["blobs"], 0)
+            self.assertEqual(st.size_report()["text"], 0)
+            self.assertGreater(st.size_report()["facts"], 0)
+            self.assertTrue(any(f["field"] == "company.vat" for f in d1["facts"]))
+            s2 = FakeSession(dict(self.pdfs))
+            d2 = self._run(d, s2)
+            self.assertEqual(s2.calls, [])                       # nothing downloaded again
+            self.assertEqual(d2["acquisition"]["states"], {"reused": 4})   # 4 distinct URLs, 5 references
+            self.assertEqual(len(d2["facts"]), len(d1["facts"]))  # dossier rebuilt from memory
+
+    def test_changed_file_is_downloaded_again(self):
+        with tempfile.TemporaryDirectory() as d:
+            self._run(d, FakeSession(dict(self.pdfs)))
+            new = make_pdf(["MARGISOLAR S.r.l. P.IVA 03920651209 impianto agrivoltaico 66 MWp lato DC revisione"])
+            routes = dict(self.pdfs, **{U + "11": new})
+            s2 = FakeSession(routes, head_headers={U + "11": {"Content-Length": str(len(new))}})
+            d2 = self._run(d, s2)
+            self.assertEqual(s2.calls, [U + "11"])
+            self.assertEqual(d2["acquisition"]["states"].get("revised"), 1)
+            man = Store(d).load_manifest("mase", "77")
+            self.assertEqual(len(man["documents"][U + "11"]["history"]), 1)
+            self.assertIn(66.0, [f["value"] for f in d2["facts"] if f["field"] == "tech.pv_dc_mwp"])
+
+    def test_new_document_in_index_is_processed_and_removed_one_flagged(self):
+        with tempfile.TemporaryDirectory() as d:
+            self._run(d, FakeSession(dict(self.pdfs)))
+            base = "https://va.mite.gov.it/it-IT/Oggetti/Documentazione/77/"
+            self.site[base + "200"] = index_html(2, [22], 1)        # 21 removed, 22 added
+            routes = dict(self.pdfs, **{U + "22": make_pdf(["Nuova integrazione documentale del proponente sul progetto"])})
+            s2 = FakeSession(routes)
+            d2 = self._run(d, s2)
+            self.assertIn(U + "22", s2.calls)
+            self.assertIn(U + "21", d2["acquisition"]["removed_from_index"])
+
+    def test_incomplete_ocr_keeps_bytes_until_done(self):
+        with tempfile.TemporaryDirectory() as d:
+            routes = dict(self.pdfs, **{U + "13": make_pdf(["", ""])})
+            fetcher = Fetcher(Store(d), session=FakeSession(routes), sleeper=lambda s: None)
+            run("https://va.mite.gov.it/it-IT/Oggetti/Info/77", d, None, ocr=True, ocr_max_pages=0,
+                get_html=lambda u: self.site[u], fetcher=fetcher, log=lambda m: None)
+            man = Store(d).load_manifest("mase", "77")
+            self.assertFalse(man["documents"][U + "13"]["processed"]["complete"])
+            self.assertTrue(Store(d).has_blob(man["documents"][U + "13"]["sha256"]))
+
+
 class NoHardcodedBenchmarks(unittest.TestCase):
     def test_toolbox_has_no_benchmark_ids(self):
         for py in (ROOT / "doc_intel").rglob("*.py"):

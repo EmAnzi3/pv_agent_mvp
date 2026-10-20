@@ -1,4 +1,9 @@
-"""Persistent, content-addressed cache and per-project manifests.
+"""Persistent memory of processed documents, and a transient cache for their bytes.
+
+Durable (kept, small): ``manifests/`` (what was found, fetched, processed, when,
+with SHA-256, size, ETag/Last-Modified and revision history) and ``facts/``
+(gzip JSON of the facts extracted from each distinct content). Transient
+(deleted once a document is fully processed): ``blobs/`` and ``text/``.
 
 Layout (outside Git; the CI persists it with actions/cache)::
 
@@ -13,6 +18,7 @@ manifest ``history`` so revisions are detectable.
 """
 from __future__ import annotations
 
+import gzip
 import hashlib
 import json
 import os
@@ -85,6 +91,45 @@ class Store:
                       json.dumps(payload, ensure_ascii=False).encode("utf-8"))
         self.stats["text_writes"] += 1
 
+    def delete_blob(self, sha: str) -> int:
+        p = self.blob_path(sha)
+        if p.is_file():
+            size = p.stat().st_size
+            p.unlink()
+            self.stats["blob_deleted_bytes"] = self.stats.get("blob_deleted_bytes", 0) + size
+            return size
+        return 0
+
+    def delete_text(self, sha: str) -> None:
+        d = self.root / "text" / PARSER_CACHE_VERSION
+        for f in d.glob(f"{sha}*.json") if d.is_dir() else []:
+            f.unlink()
+
+    # ---- extracted facts (durable) ----------------------------------------
+    def facts_path(self, sha: str) -> Path:
+        return self.root / "facts" / sha[:2] / f"{sha}.json.gz"
+
+    def has_facts(self, sha: str) -> bool:
+        return self.facts_path(sha).is_file()
+
+    def put_facts(self, sha: str, payload: dict[str, Any]) -> None:
+        raw = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+        _atomic_write(self.facts_path(sha), gzip.compress(raw, mtime=0))
+
+    def get_facts(self, sha: str) -> dict[str, Any] | None:
+        p = self.facts_path(sha)
+        if not p.is_file():
+            return None
+        self.stats["facts_reused"] = self.stats.get("facts_reused", 0) + 1
+        return json.loads(gzip.decompress(p.read_bytes()).decode("utf-8"))
+
+    def size_report(self) -> dict[str, int]:
+        out = {}
+        for part in ("blobs", "text", "facts", "manifests", "registry"):
+            d = self.root / part
+            out[part] = sum(f.stat().st_size for f in d.rglob("*") if f.is_file()) if d.is_dir() else 0
+        return out
+
     # ---- manifests -------------------------------------------------------
     def manifest_path(self, source: str, project_id: str) -> Path:
         safe = "".join(c if c.isalnum() or c in "-_." else "_" for c in project_id)
@@ -99,6 +144,13 @@ class Store:
     def save_manifest(self, manifest: dict[str, Any]) -> None:
         p = self.manifest_path(manifest["source"], manifest["project_id"])
         _atomic_write(p, json.dumps(manifest, ensure_ascii=False, indent=1).encode("utf-8"))
+
+
+def _h(headers: dict | None, name: str) -> str | None:
+    for k, v in (headers or {}).items():
+        if k.lower() == name:
+            return v
+    return None
 
 
 def record_download(manifest: dict[str, Any], url: str, sha: str, size: int, kind: str,
@@ -116,7 +168,7 @@ def record_download(manifest: dict[str, Any], url: str, sha: str, size: int, kin
         history.append({"sha256": entry["sha256"], "fetched_at": entry.get("fetched_at")})
     docs[url] = {**(entry or {}), "sha256": sha, "bytes": size, "kind": kind, "fetched_at": now,
                  "last_checked": now, "history": history,
-                 "etag": (headers or {}).get("ETag"), "last_modified": (headers or {}).get("Last-Modified")}
+                 "etag": _h(headers, "etag"), "last_modified": _h(headers, "last-modified")}
     docs[url].pop("error", None)
     return state
 

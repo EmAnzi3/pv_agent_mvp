@@ -34,6 +34,9 @@ def acquisition_gate(acq: dict[str, Any]) -> dict[str, Any]:
     if acq.get("pages_unreadable"):
         issues.append(f"{acq['pages_unreadable']} pages where OCR failed")
     notes = []
+    if acq.get("facts_from_older_extractor"):
+        notes.append(f"{acq['facts_from_older_extractor']} documents analysed with older extraction rules: "
+                     "run with --reanalyse to refresh them")
     if any(p.get("declared_available") is False for p in acq.get("procedures", [])):
         notes.append("source publishes no declared document total: completeness measured against its own listing")
     if acq.get("pages_graphic_no_text"):

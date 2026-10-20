@@ -64,7 +64,8 @@ jobs:
           set -o pipefail
           python -m doc_intel run --url "${{ matrix.url }}" --gold "${{ matrix.gold }}" \
             --store .doc_intel_store --data docs/data.json --out reports/doc_intel \
-            --ocr-max-pages 3000 --workers 4 --time-budget-min 170 --registry vies 2>&1 | tee run-${{ matrix.name }}.log
+            --ocr-max-pages 3000 --workers 4 --time-budget-min 170 --registry vies \
+            --keep-files --reanalyse 2>&1 | tee run-${{ matrix.name }}.log
       - name: Save document store (also after failure, so work is never lost)
         if: always()
         uses: actions/cache/save@v4
@@ -106,22 +107,37 @@ jobs:
             eval-${{ matrix.name }}.json
           retention-days: 30
   manual:
+    # Production path: originals are deleted after analysis; the memory of what was found,
+    # downloaded and analysed (manifests + extracted facts + VIES cache) lives on branch doc-intel-state.
     if: github.event_name == 'workflow_dispatch'
     runs-on: ${{ inputs.runner }}
     timeout-minutes: 300
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ita poppler-utils
+      - name: System OCR and PDF tools (GitHub-hosted Linux only; preinstalled on self-hosted runners)
+        if: runner.environment == 'github-hosted'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ita poppler-utils
       - run: python -m pip install pymupdf pypdf requests beautifulsoup4
-      - name: Restore document store
-        uses: actions/cache/restore@v4
-        with:
-          path: .doc_intel_store
-          key: doc-intel-store-manual-${{ github.run_id }}
-          restore-keys: doc-intel-store-
+      - name: Load processing memory (branch doc-intel-state)
+        run: |
+          git config user.name "doc-intel-bot"
+          git config user.email "doc-intel-bot@users.noreply.github.com"
+          rm -rf .doc_intel_store && git worktree prune
+          if git fetch --depth 1 origin doc-intel-state:doc-intel-state 2>/dev/null; then
+            git worktree add .doc_intel_store doc-intel-state
+          else
+            git worktree add --orphan -b doc-intel-state .doc_intel_store
+            printf 'blobs/\ntext/\n' > .doc_intel_store/.gitignore
+          fi
+          du -sh .doc_intel_store || true
       - name: Build dossier
         env:
           URL: ${{ inputs.url }}
@@ -134,12 +150,20 @@ jobs:
           set -o pipefail
           python -m doc_intel run --url "$URL" $extra --store .doc_intel_store --data docs/data.json \
             --out reports/doc_intel --ocr-max-pages "$OCR_MAX" --workers 4 --time-budget-min "$BUDGET" --registry vies 2>&1 | tee run.log
-      - name: Save document store (also after failure or cancellation)
+      - name: Save processing memory (also after failure or cancellation)
         if: always()
-        uses: actions/cache/save@v4
-        with:
-          path: .doc_intel_store
-          key: doc-intel-store-manual-${{ github.run_id }}
+        run: |
+          cd .doc_intel_store || exit 0
+          rm -rf blobs text
+          git add -A
+          git diff --cached --quiet && { echo "memory unchanged"; exit 0; }
+          git commit -q -m "doc-intel memory: ${{ inputs.url }} (run ${{ github.run_id }})"
+          for i in 1 2 3 4; do
+            git pull -q --rebase origin doc-intel-state 2>/dev/null || true
+            git push -q origin HEAD:doc-intel-state && { echo "memory saved"; exit 0; }
+            sleep $((i * 5))
+          done
+          echo "::warning title=memory::could not push doc-intel-state"
       - name: Publish digest 1/4
         if: always()
         run: |
@@ -168,3 +192,9 @@ jobs:
             reports/doc_intel/
             run.log
           retention-days: 30
+      - name: Delete downloaded documents from the runner
+        if: always()
+        run: |
+          rm -rf .doc_intel_store/blobs .doc_intel_store/text
+          git worktree remove --force .doc_intel_store 2>/dev/null || rm -rf .doc_intel_store
+          echo "documents deleted from runner"
