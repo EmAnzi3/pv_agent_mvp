@@ -34,22 +34,35 @@
   {
    "key": "area",
    "label": "Superficie complessiva",
-   "value": "0,226 ha",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 119,64 ha (4)",
+   "value": "119,64 ha",
+   "status": "da documenti",
+   "sub": null,
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/794065",
-    "page": 59,
-    "document": "Studio Impatto Ambientale",
-    "excerpt": "L’area sulla quale insisterà la cabina è di circa 3.842 m2. Al termine dei lavori di costruzione sarà interamente recintata un’area di 2.255 m2. E’ previsto un unico locale. Il fabbricato sarà a distanza di sicurezza dal"
+    "url": "https://va.mite.gov.it/File/Documento/1417702",
+    "page": 8,
+    "document": "Piano di Monitoraggio Ambientale (PMA)",
+    "excerpt": "distanza dal centro abitato è contenuta, garantendo una buona connessione con le infrastrutture locali. La superficie catastale è di 119,64 ettari, di cui circa 117 ettari saranno interessati dal sistema agrivoltaico. Le"
+   }
+  },
+  {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "46,156 ha",
+   "status": "da verificare",
+   "sub": "39% dell'area · Valore più ricorrente negli elaborati; altri valori: 106 ha (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/793939",
+    "page": 39,
+    "document": "Piano Preliminare di gestione terre e rocce da scavo",
+    "excerpt": "strutture metalliche infisse direttamente nel terreno, non prevede una trasformazione permanente del terreno. La superficie netta al suolo occupata dai moduli sarà pari a 461.563 mq. L’ unica costruzione di dimensioni co"
    }
   },
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "87 settimane",
+   "value": "87 settimane (circa 20 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 60 settimane (3)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 60 settimane (circa 14 mesi) (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1417702",
     "page": 16,
@@ -63,7 +76,7 @@
   "provincia": "FG",
   "comuni": [
    "San Severo",
-   "Ricadenti Anche Nel Comune Di Lucera"
+   "Lucera"
   ],
   "coordinate": null,
   "maps_url": "https://www.google.com/maps/search/?api=1&query=San+Severo%2C+FG%2C+Puglia",
@@ -279,7 +292,7 @@
    "source": null
   },
   {
-   "name": "Responsabile Tecnico Proes S.r.l.",
+   "name": "Proes S.r.l.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -300,8 +313,19 @@
     },
     {
      "type": "E-mail",
+     "value": "g.diberardino@proes.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/794066",
+      "page": 1,
+      "document": "Relazione Geologica",
+      "excerpt": "Giancarlo Rocco Di Berardino g.diberardino@proes.it"
+     }
+    },
+    {
+     "type": "E-mail",
      "value": "c.nuzzi@proes.it",
-     "occurrences": 2,
+     "occurrences": 3,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/794074",
       "page": 1,
@@ -353,131 +377,131 @@
    {
     "name": "Allestimento cantiere",
     "start": 0.0,
-    "end": 8.0
+    "end": 1.85
    },
    {
     "name": "Picchettamenti",
-    "start": 0.9,
-    "end": 8.0
+    "start": 0.21,
+    "end": 1.85
    },
    {
     "name": "Realizzazione recinzione e accesso di cantiere",
-    "start": 0.9,
-    "end": 9.0
+    "start": 0.21,
+    "end": 2.08
    },
    {
     "name": "Sistemazione terreno e livellamenti",
-    "start": 0.9,
-    "end": 11.0
+    "start": 0.21,
+    "end": 2.54
    },
    {
     "name": "Realizzazione viabilità interna",
-    "start": 0.9,
-    "end": 14.0
+    "start": 0.21,
+    "end": 3.23
    },
    {
     "name": "Montaggio cancello di ingresso e recinzione",
-    "start": 4.9,
-    "end": 16.0
+    "start": 1.13,
+    "end": 3.69
    },
    {
     "name": "Montaggio strutture di supporto dei moduli",
-    "start": 5.9,
-    "end": 20.0
+    "start": 1.36,
+    "end": 4.62
    },
    {
     "name": "Realizzazione scavi per cavidotti e basamenti cabine",
-    "start": 11.9,
-    "end": 21.0
+    "start": 2.75,
+    "end": 4.85
    },
    {
     "name": "Posa in opera corrugati e rete di terra",
-    "start": 13.9,
-    "end": 25.0
+    "start": 3.21,
+    "end": 5.77
    },
    {
     "name": "Montaggio moduli fotovoltaici",
-    "start": 14.9,
-    "end": 30.0
+    "start": 3.44,
+    "end": 6.92
    },
    {
     "name": "Cablaggio stringhe",
-    "start": 17.9,
-    "end": 32.0
+    "start": 4.13,
+    "end": 7.38
    },
    {
     "name": "Posa in opera basamenti cabine",
-    "start": 23.9,
-    "end": 33.0
+    "start": 5.52,
+    "end": 7.62
    },
    {
     "name": "Posa in opera cabine di trasformazione",
-    "start": 25.9,
-    "end": 36.0
+    "start": 5.98,
+    "end": 8.31
    },
    {
     "name": "Posa in opera cabina di ricezione, sezionamento e controllo",
-    "start": 30.9,
-    "end": 36.0
+    "start": 7.13,
+    "end": 8.31
    },
    {
     "name": "Posa in opera locali tecnici",
-    "start": 32.9,
-    "end": 35.0
+    "start": 7.59,
+    "end": 8.08
    },
    {
     "name": "Cablaggio cabine elettriche",
-    "start": 32.9,
-    "end": 41.0
+    "start": 7.59,
+    "end": 9.46
    },
    {
     "name": "Installazione impianto di controllo e monitoraggio",
-    "start": 35.9,
-    "end": 44.0
+    "start": 8.28,
+    "end": 10.15
    },
    {
     "name": "Realizzazione impianto di illuminazione",
-    "start": 36.9,
-    "end": 49.0
+    "start": 8.52,
+    "end": 11.31
    },
    {
     "name": "Realizzazione sistema di videosorveglianza",
-    "start": 42.9,
-    "end": 60.0
+    "start": 9.9,
+    "end": 13.85
    },
    {
     "name": "Realizzazione linea AT",
-    "start": 11.9,
-    "end": 54.0
+    "start": 2.75,
+    "end": 12.46
    },
    {
     "name": "Realizzazione Stazione AT/MT",
-    "start": 9.9,
-    "end": 61.0
+    "start": 2.28,
+    "end": 14.08
    },
    {
     "name": "Test - Collaudi - Messa in servizio campo fotovoltaico",
-    "start": 80.9,
-    "end": 85.9
+    "start": 18.67,
+    "end": 19.82
    },
    {
     "name": "Test - Collaudi - Messa in servizio generale",
-    "start": 82.9,
-    "end": 85.9
+    "start": 19.13,
+    "end": 19.82
    },
    {
     "name": "Entrata in esercizio impianto fotovoltaico",
-    "start": 85.9,
-    "end": 86.9
+    "start": 19.82,
+    "end": 20.05
    },
    {
     "name": "Inerbimento del terreno nudo",
-    "start": 51.9,
-    "end": 62.0
+    "start": 11.98,
+    "end": 14.31
    }
   ],
   "unit": "month",
-  "months": 86.9,
+  "months": 20.05,
   "source": {
    "url": "https://va.mite.gov.it/File/Documento/794032",
    "page": 2,
@@ -485,9 +509,9 @@
    "excerpt": ""
   },
   "duration": {
-   "text": "87 settimane",
+   "text": "87 settimane (circa 20 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 60 settimane (3)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 60 settimane (circa 14 mesi) (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1417702",
     "page": 16,
@@ -536,7 +560,7 @@
  ],
  "da_verificare": [
   {
-   "label": "Superficie complessiva",
+   "label": "Superficie coperta dai pannelli",
    "reason": "valori diversi negli elaborati"
   },
   {
@@ -545,7 +569,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "123 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "116 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
