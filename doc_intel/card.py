@@ -564,7 +564,10 @@ def _gantt(d: dict, titles: dict) -> dict:
             # a chart covering the stated construction time is the general programme, not a partial one (residual works)
             fits = dur_m is None or abs(span - dur_m) <= 0.4 * dur_m
             return (bool(SCHED_TITLE.search(titles.get(u) or "")), dated, fits, len(fs_))
-        (url, page), fs = max(by_page.items(), key=rank)
+        decom = re.compile(r"(?i)smont|dismiss|rimozion|demoliz|smaltim|ripristin")
+        build = {k: v for k, v in by_page.items()
+                 if sum(bool(decom.search(f["value"]["name"])) for f in v) < 0.4 * len(v)}   # decommissioning charts excluded
+        (url, page), fs = max((build or by_page).items(), key=rank)
         method = "dated_table" if any(f["qualifiers"].get("method") == "dated_table" for f in fs) else "vector_gantt"
         fs = [f for f in fs if f["qualifiers"].get("method") == method]
         fs.sort(key=lambda f: f["value"].get("order", 0))
