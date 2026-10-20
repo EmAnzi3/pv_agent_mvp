@@ -75,7 +75,7 @@
 .g-label { fill: var(--text, #111827); font-size: 11px; }
 .g-bar { fill: var(--accent, #0f766e); }
 .g-dur { font-size: 14px; margin-top: 6px; }
-.g-dur > span { color: var(--muted, #64748b); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.g-dur > span:first-child { color: var(--muted, #64748b); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
 .g-ms { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 6px; font-size: 13px; }
 .g-date { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent-dark, #0f4f4a); }
 
