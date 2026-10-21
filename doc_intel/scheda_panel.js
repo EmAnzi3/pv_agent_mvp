@@ -76,7 +76,10 @@
       const lo = Math.min(0, ...real.map(b => b.start), ...ticksDoc.map(t => t.start));
       const hi = Math.max(1, ...real.map(b => b.end), ...ticksDoc.map(t => t.end));
       const hasDur = bars.some(b => b.duration);
-      const rowH = 22, labelW = 230, durW = hasDur ? 46 : 0, chartW = 300, head = asse && asse.titolo ? 34 : 26;
+      const bare = ticksDoc.length && ticksDoc.every(t => /^\d+$/.test(t.label));
+      // axis caption as printed ('Mese'); for bare numbers the unit of the chart; none for 'W1'/'gen 21' labels
+      const caption = asse && asse.titolo ? asse.titolo : (asse ? (bare ? (asse.unita || unit) : '') : `${unit} dall'avvio`);
+      const rowH = 22, labelW = 230, durW = hasDur ? 46 : 0, chartW = 300, head = caption ? 34 : 26;
       const x0 = labelW + durW;
       const x = m => x0 + ((m - lo) / (hi - lo)) * chartW;
       const bottom = head + bars.length * rowH;
@@ -98,9 +101,6 @@
             + `<text x="${x(m)}" y="${head - 8}" class="g-tick" text-anchor="middle">${m}</text>`;
         }
       }
-      // axis caption as printed ('Mese'); for bare numbers the unit of the chart; none for 'W1'/'gen 21' labels
-      const bare = ticksDoc.length && ticksDoc.every(t => /^\d+$/.test(t.label));
-      const caption = asse && asse.titolo ? asse.titolo : (asse ? (bare ? (asse.unita || unit) : '') : `${unit} dall'avvio`);
       const rows = bars.map((b, i) => {
         const y = head + i * rowH, w = Math.max(3, x(b.end) - x(b.start));
         if (b.separator) {
