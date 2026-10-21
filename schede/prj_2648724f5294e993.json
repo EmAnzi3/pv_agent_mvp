@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "89,28 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 80,26 ha (16), 180,77 ha (3), 173,259 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 80,26 ha (32), 180,77 ha (7), 173,259 ha (2)",
    "source": {
     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=443343593&nomeFile=is01.ed.a.004_b_rel_paes.pdf.p7m",
     "page": 5,
@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "100 giorni (circa 3 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 125 giorni (circa 4 mesi) (1), 9 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 125 giorni (circa 4 mesi) (2), 2 mesi (2), 12 mesi (2)",
    "source": {
     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=443344513&nomeFile=is01.ed.a.004_b_spa.pdf.p7m",
     "page": 269,
@@ -65,20 +65,46 @@
    "Roncoferraro"
   ],
   "coordinate": {
-   "lat": 45.11114,
-   "lon": 10.90404,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (7 riferimenti concordi)",
+   "lat": 45.14888,
+   "lon": 10.96629,
+   "tipo": "centro del perimetro pubblicato dal portale regionale (15 riferimenti concordi)",
    "source": {
-    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=443343593&nomeFile=is01.ed.a.004_b_rel_paes.pdf.p7m",
-    "page": 27,
-    "document": "Relazione Paesaggistica - is01.ed.a.004_b_rel_paes.pdf.p7m",
-    "excerpt": "Chiavica del Moro 45.109722"
+    "url": "https://www.silvia.servizirl.it/silviaviewer40/?config=config_read.json&parameters=%7B'serviceLMOperator':'include','appProcedura':%7B'id_procedura':'19856'%7D%7D",
+    "page": null,
+    "document": "documento",
+    "excerpt": "perimetro pubblicato dal portale regionale"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=45.11114,10.90404",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=45.14888,10.96629",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": "https://www.silvia.servizirl.it/silviaviewer40/?config=config_read.json&parameters=%7B'serviceLMOperator':'include','appProcedura':%7B'id_procedura':'19856'%7D%7D",
   "connessione": null,
-  "lotti": []
+  "lotti": [
+   {
+    "lotto": "Area 1",
+    "lat": 45.11849,
+    "lon": 10.95783,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=45.11849,10.95783",
+    "source": {
+     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426332355&nomeFile=is01.ed.a.004_a_dichiarazione%20non%20interferenza%20enac.pdf.p7m",
+     "page": 2,
+     "document": "Altri Documenti - is01.ed.a.004_a_dichiarazione non interferenza enac.pdf.p7m",
+     "excerpt": "BOSELLO” (AREA 1) 45.118492°"
+    }
+   },
+   {
+    "lotto": "Area 2",
+    "lat": 45.15269,
+    "lon": 10.96501,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=45.15269,10.96501",
+    "source": {
+     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426332355&nomeFile=is01.ed.a.004_a_dichiarazione%20non%20interferenza%20enac.pdf.p7m",
+     "page": 2,
+     "document": "Altri Documenti - is01.ed.a.004_a_dichiarazione non interferenza enac.pdf.p7m",
+     "excerpt": "BOSELLO” (AREA 2) 45.152694°"
+    }
+   }
+  ]
  },
  "soggetti": [
   {
@@ -95,7 +121,7 @@
     {
      "type": "PEC",
      "value": "rinnovabili@pec.edison.it",
-     "occurrences": 20,
+     "occurrences": 105,
      "source": {
       "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=443343593&nomeFile=is01.ed.a.004_b_rel_paes.pdf.p7m",
       "page": 1,
@@ -104,9 +130,20 @@
      }
     },
     {
+     "type": "E-mail",
+     "value": "valeria.filippi@edison.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426332475&nomeFile=is01.ed.a.004_a_pctv.pdf.p7m",
+      "page": 2,
+      "document": "Altri Documenti - is01.ed.a.004_a_pctv.pdf.p7m",
+      "excerpt": "NoReply MyTerna Connessioni (Terna) <noreply.myternaconnessioni@terna.it> 25 giugno 2025 alle ore 17:29 A: \"ILIOS S.R.L\" <info@maya-eng.com>, \"EDISON RINNOVABILI S.P.A.\" <valeria.filippi@edison.it>"
+     }
+    },
+    {
      "type": "Telefono",
      "value": "3336729629",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=443342091&nomeFile=is01.ed.a.004_b_rta.pdf.p7m",
       "page": 2,
@@ -118,6 +155,36 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=19856&idProvenienza=2"
+   }
+  },
+  {
+   "name": "Ing. Vito Caliò",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "v.calio@iliositalia.com",
+     "occurrences": 4,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=443338638&nomeFile=is01.ed.a.004_a_contratto%20versione%20privacy_bosello.pdf.p7m",
+      "page": 9,
+      "document": "Contratti versione privacy- Disponibilità delle aree - is01.ed.a.004_a_contratto versione privacy_bosello.pdf.p7m",
+      "excerpt": "E-mail: iz Zi _ E-mail: v.calio@iliositalia.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426302407&nomeFile=is01.ed.a.004_b_raapf.pdf.p7m",
+    "page": 4,
+    "document": "Relazioni - is01.ed.a.004_b_raapf.pdf.p7m",
+    "excerpt": "Il progettista Ing. Vito Calio’, nato a Putignano (BA) il 24/05/1976, C.F. nr. CLAVTI76E24H096F, e residente a Putignano (BA) in S.C. Boschetto n. 27, iscritto all’Ordine"
    }
   }
  ],
@@ -134,12 +201,45 @@
     {
      "type": "PEC",
      "value": "iliospec@legalmail.it",
-     "occurrences": 2,
+     "occurrences": 5,
      "source": {
       "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=443338638&nomeFile=is01.ed.a.004_a_contratto%20versione%20privacy_bosello.pdf.p7m",
       "page": 18,
       "document": "Contratti versione privacy- Disponibilità delle aree - is01.ed.a.004_a_contratto versione privacy_bosello.pdf.p7m",
       "excerpt": "Via Monte Napoleone n.8, 20121, Milano (MI) PEC: iliospec@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "geostudiocalzolari@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426302849&nomeFile=is01.ed.a.004_b_rgsg.pdf.p7m",
+      "page": 66,
+      "document": "Relazioni - is01.ed.a.004_b_rgsg.pdf.p7m",
+      "excerpt": "la Vseq di progetto è riferita al piano di imposta delle geostudiocalzolari@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@maya-eng.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426332475&nomeFile=is01.ed.a.004_a_pctv.pdf.p7m",
+      "page": 2,
+      "document": "Altri Documenti - is01.ed.a.004_a_pctv.pdf.p7m",
+      "excerpt": "NoReply MyTerna Connessioni (Terna) <noreply.myternaconnessioni@terna.it> 25 giugno 2025 alle ore 17:29 A: \"ILIOS S.R.L\" <info@maya-eng.com>, \"EDISON RINNOVABILI S.P.A.\" <valeria.filippi@edison.it>"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@iliositalia.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426313498&nomeFile=is01.ed.a.004_b_miti.pdf.p7m",
+      "page": 1,
+      "document": "Elaborati Grafici - is01.ed.a.004_b_miti.pdf.p7m",
+      "excerpt": "Via Monte Napoleone 8, 20121, Milano (MI) T: +39 080 8937976 - E: info@iliositalia.com"
      }
     }
    ],
@@ -149,27 +249,41 @@
    }
   },
   {
-   "name": "Ing. Vito Caliò",
-   "kind": "persona",
+   "name": "AR/S Archeosistemi Societa' Cooperativa",
+   "kind": "società",
    "roles": [],
-   "vat": null,
+   "vat": "01249610351",
    "vat_group": false,
-   "verified": false,
-   "office": null,
+   "verified": true,
+   "office": "Via Dei Nove Martiri 11/A 42121 Reggio Nell'Emilia Re",
    "contacts": [
     {
-     "type": "E-mail",
-     "value": "v.calio@iliositalia.com",
-     "occurrences": 2,
+     "type": "PEC",
+     "value": "archeosistemi@legalmail.it",
+     "occurrences": 1,
      "source": {
-      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=443338638&nomeFile=is01.ed.a.004_a_contratto%20versione%20privacy_bosello.pdf.p7m",
-      "page": 9,
-      "document": "Contratti versione privacy- Disponibilità delle aree - is01.ed.a.004_a_contratto versione privacy_bosello.pdf.p7m",
-      "excerpt": "E-mail: iz Zi _ E-mail: v.calio@iliositalia.com"
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426305181&nomeFile=is01.ed.a.004_b_vpia.pdf.p7m",
+      "page": 1,
+      "document": "Relazioni - is01.ed.a.004_b_vpia.pdf.p7m",
+      "excerpt": "PEC: archeosistemi@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@archeosistemi.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426305181&nomeFile=is01.ed.a.004_b_vpia.pdf.p7m",
+      "page": 1,
+      "document": "Relazioni - is01.ed.a.004_b_vpia.pdf.p7m",
+      "excerpt": "E-mail: info@archeosistemi.it"
      }
     }
    ],
-   "source": null
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
   },
   {
    "name": "Dott. Stefano Ferrari",
@@ -193,6 +307,29 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Ing. Gabriele Pellerino",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@stebsrl.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426304844&nomeFile=is01.ed.a.004_b_spia.pdf.p7m",
+      "page": 1,
+      "document": "Relazioni - is01.ed.a.004_b_spia.pdf.p7m",
+      "excerpt": "E-mail: info@stebsrl.com"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -202,16 +339,16 @@
   "unit": "month",
   "months": 1,
   "source": {
-   "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=443342091&nomeFile=is01.ed.a.004_b_rta.pdf.p7m",
-   "page": 139,
-   "document": "Relazione Tecnico Agronomica - is01.ed.a.004_b_rta.pdf.p7m",
+   "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=426300738&nomeFile=is01.ed.a.004_b_spa.pdf.p7m",
+   "page": 230,
+   "document": "Relazione Studio Preliminare Ambientale - is01.ed.a.004_b_spa.pdf.p7m",
    "excerpt": ""
   },
   "asse": null,
   "duration": {
    "text": "100 giorni (circa 3 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 125 giorni (circa 4 mesi) (1), 9 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 125 giorni (circa 4 mesi) (2), 2 mesi (2), 12 mesi (2)",
    "source": {
     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=443344513&nomeFile=is01.ed.a.004_b_spa.pdf.p7m",
     "page": 269,
@@ -225,41 +362,56 @@
   "altri": [],
   "durate_fasi": [
    {
-    "name": "Anno 1 PLS",
-    "duration": "20 giornig",
-    "months": 0.66
+    "name": "• Numero di giorni lavorativi della fase di cantiere di Opera 1 (Area 1) in cui ",
+    "duration": "125 giorniiorni",
+    "months": 4.11
    },
    {
-    "name": "Anno 2 C",
-    "duration": "8 giornig",
-    "months": 0.26
+    "name": "• Numero di giorni lavorativi della fase di cantiere di Opera 1 (Area 2) in cui ",
+    "duration": "125 giorniiorni",
+    "months": 4.11
    },
    {
-    "name": "Anno 3 C",
-    "duration": "8 giornig",
-    "months": 0.26
+    "name": "• Numero di giorni lavorativi della fase di cantiere di Opera 2 in cui si svolgo",
+    "duration": "100 giorniiorni",
+    "months": 3.29
    },
    {
-    "name": "Anno 4 C",
-    "duration": "8 giornig",
-    "months": 0.26
+    "name": "giorni",
+    "duration": "125 giorniiorni",
+    "months": 4.11
    },
    {
-    "name": "Anno 5 PLS",
-    "duration": "20 giornig",
-    "months": 0.66
+    "name": "e sorgente per un numero di giorni della fase di cantiere impattante (dal punto ",
+    "duration": "100 giorniiorni",
+    "months": 3.29
    },
    {
-    "name": "Anno 6 PLS",
-    "duration": "20 giornig",
-    "months": 0.66
+    "name": "Tabella 74: Valutazione delle emissioni al variare della distanza tra recettore ",
+    "duration": "100 giorniiorni",
+    "months": 3.29
+   },
+   {
+    "name": "di durata di",
+    "duration": "125 giorniiorni",
+    "months": 4.11
+   },
+   {
+    "name": "di durata",
+    "duration": "125 giorniiorni",
+    "months": 4.11
+   },
+   {
+    "name": "• Opera 2: considerando che la fase di cantiere impattante ha durata pari a",
+    "duration": "100 giorniiorni",
+    "months": 3.29
    }
   ],
   "metodo": null
  },
  "documentazione": {
-  "documenti": 20,
-  "pagine": 1104,
+  "documenti": 111,
+  "pagine": 3075,
   "completa": true
  },
  "confronto": [
@@ -300,7 +452,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "2158 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "6618 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
