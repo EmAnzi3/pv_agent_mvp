@@ -45,11 +45,24 @@
    }
   },
   {
+   "key": "pali",
+   "label": "Pali da infiggere (tracker)",
+   "value": "2.536",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2019&file_id=f_1412580846432",
+    "page": 10,
+    "document": "ddrg_2750_30112023.p7m",
+    "excerpt": "pali di sostegno di cui 767 tracker in configurazione 1Vx90 (90 moduli per tracker) per 8.437 pali e 317 tracker in configurazione 1Vx60 (60 moduli per tracker) su 2.536 pali con un pitch (distanza di separazione tra i f"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "5 mesi",
    "status": "da verificare",
-   "sub": "Inizio lavori 31/03/2022 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 90 giorni (circa 3 mesi) (2), 20 mesi (1), 12 mesi (1)",
+   "sub": "Inizio lavori 31/03/2022 (condizionato, previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 8 mesi (3), 90 giorni (circa 3 mesi) (2), 20 mesi (1)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2019&file_id=f_396881440690",
     "page": 89,
@@ -77,6 +90,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.39250,11.55833",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
@@ -86,6 +100,7 @@
    "kind": "società",
    "roles": [
     "Proponente",
+    "Progettista",
     "Direttore lavori"
    ],
    "vat": "10481210960",
@@ -96,7 +111,7 @@
     {
      "type": "PEC",
      "value": "3srl@legalmail.it",
-     "occurrences": 6,
+     "occurrences": 7,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2019&file_id=f_717913266986",
       "page": 5,
@@ -159,7 +174,7 @@
     {
      "type": "PEC",
      "value": "solaritaly3srl@legalmail.it",
-     "occurrences": 70,
+     "occurrences": 72,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2019&file_id=f_396890730457",
       "page": 1,
@@ -742,6 +757,7 @@
   "label": "Date di progetto superate: verificare lo stato",
   "reason": "Avvio previsto il 12/01/2024, ma l'iter è proseguito; ultimo documento o atto del 29/07/2026: probabile slittamento, non ancora realizzato o in corso."
  },
+ "registro": null,
  "cronoprogramma": {
   "bars": [
    {
@@ -1970,7 +1986,7 @@
   "duration": {
    "text": "5 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 90 giorni (circa 3 mesi) (2), 20 mesi (1), 12 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (3), 90 giorni (circa 3 mesi) (2), 20 mesi (1)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2019&file_id=f_396881440690",
     "page": 89,
@@ -1983,13 +1999,26 @@
     "label": "Inizio lavori",
     "date": "31/03/2022",
     "iso": "2022-03-31",
-    "nature": "previsione di progetto",
+    "nature": "condizionato, previsione di progetto",
     "certain": false,
     "source": {
      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2019&file_id=f_878947949894",
      "page": 3,
      "document": "20211012_SI_III_Sollecito_Nuova_Richiesta_Proroga_Termine_Inizio_Lavori_FG.p7m",
      "excerpt": "previsione concerne altresì i termini di inizio e di ultimazione dei lavori di cui all’art. 15 del DPR 380/2001 e dunque il termine di inizio lavori va inteso prorogato ex lege al prossimo 31 marzo 2022;"
+    }
+   },
+   {
+    "label": "Proroga inizio lavori",
+    "date": "31/03/2022",
+    "iso": "2022-03-31",
+    "nature": "condizionato",
+    "certain": false,
+    "source": {
+     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2019&file_id=f_1412580846432",
+     "page": 2,
+     "document": "ddrg_2750_30112023.p7m",
+     "excerpt": "del 18/11/2019, come rettificata dalla D.D.R.U. n. 1614/2020, richiedeva la concessione di una proroga del termine di inizio lavori di mesi 9, decorrente a far data dal 31 marzo 2022, dalla presunta cessazione degli effe"
     }
    },
    {
@@ -2022,7 +2051,7 @@
  },
  "documentazione": {
   "documenti": 550,
-  "pagine": 6630,
+  "pagine": 6684,
   "completa": false
  },
  "confronto": [
