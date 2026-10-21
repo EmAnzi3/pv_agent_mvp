@@ -1348,3 +1348,16 @@ class DedupeGuards(unittest.TestCase):
         self.assertEqual((m["source"], m["power_mw"], m["municipalities"], m["proponent"]),
                          ("toscana", 50.0, "CHIUSI, MONTEPULCIANO", "SONNEDIX EUREKA SRL"))
         self.assertTrue(m["url"].endswith("/147"))
+
+
+class SignedDocuments(unittest.TestCase):
+    """CAdES .p7m files (most Italian authority documents): the signed PDF inside is analysed."""
+
+    def test_unwrap_variants(self):
+        from doc_intel.fetch import p7m_content, sniff
+        folder = Path(__file__).parent / "fixtures_p7m"
+        original = (folder / "original.pdf").read_bytes()
+        for name in ("streamed.pdf.p7m", "nested.pdf.p7m", "pem.pdf.p7m"):
+            raw = (folder / name).read_bytes()
+            self.assertEqual(sniff(raw), "p7m", name)
+            self.assertEqual(p7m_content(raw), original, name)
