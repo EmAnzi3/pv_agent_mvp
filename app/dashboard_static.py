@@ -683,6 +683,7 @@ class StaticDashboardBuilder:
                 "power_mw": round(record["power_mw"] or 0, 3),
                 "status": record["status"],
                 "url": record["url"],
+                "project_key": record.get("project_key"),
                 "province_deduced": record.get("province_deduced", False),
                 "municipalities_deduced": record.get("municipalities_deduced", False),
             }
@@ -1312,6 +1313,7 @@ class StaticDashboardBuilder:
 
 
 
+__SCHEDA_CSS__
 </style>
 <!-- MOBILE REDIRECT START -->
 <script>
@@ -1545,6 +1547,7 @@ class StaticDashboardBuilder:
     </div>
   </main>
 
+  <script>__SCHEDA_JS__</script>
   <script>
     const DASHBOARD_DATA = __DASHBOARD_DATA__;
 
@@ -1621,6 +1624,14 @@ class StaticDashboardBuilder:
       }
 
       return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Apri</a>`;
+    }
+
+    // Project cards (schede): built in the cloud from the official documents, published in docs/schede
+    let schedeIndex = {};
+
+    function schedaButton(row) {
+      const s = row && row.project_key ? schedeIndex[row.project_key] : null;
+      return s ? ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}">Scheda</button>` : '';
     }
 
     function setText(id, value) {
@@ -1744,7 +1755,7 @@ class StaticDashboardBuilder:
           <td><span class="${badgeClass(row.source_group || row.source)}">${escapeHtml(row.source_label || sourceLabel(row.source))}</span></td>
           <td>${escapeHtml(row.project_type)}</td>
           <td class="num">${fmtMw(row.power_mw)}</td>
-          <td>${link}</td>
+          <td>${link}${schedaButton(row)}</td>
         `;
 
         body.appendChild(tr);
@@ -2003,7 +2014,7 @@ class StaticDashboardBuilder:
           <td class="proponent-col">${proponent}</td>
           <td>${escapeHtml(record.project_type)}</td>
           <td class="num">${fmtMw(record.power_mw)}</td>
-          <td>${link}</td>
+          <td>${link}${schedaButton(record)}</td>
         `;
 
         body.appendChild(tr);
@@ -2148,6 +2159,26 @@ class StaticDashboardBuilder:
       });
     }
 
+    document.addEventListener('click', event => {
+      const button = event.target.closest('[data-scheda]');
+      if (!button || !window.PVScheda) return;
+      fetch('schede/' + encodeURIComponent(button.dataset.scheda), { cache: 'no-cache' })
+        .then(r => r.ok ? r.json() : Promise.reject(r.status))
+        .then(card => window.PVScheda.open(card))
+        .catch(() => {});
+    });
+
+    fetch('schede/index.json', { cache: 'no-cache' })
+      .then(r => r.ok ? r.json() : {})
+      .then(index => {
+        schedeIndex = index || {};
+        if (Object.keys(schedeIndex).length) {
+          initTopProjects();
+          renderPipeline();
+        }
+      })
+      .catch(() => {});
+
     initKpis();
     initRegionRanking();
     initTopProjects();
@@ -2171,7 +2202,14 @@ class StaticDashboardBuilder:
 </body>
 </html>
 """
-        return template.replace("__DASHBOARD_DATA__", data_json)
+        panel_dir = Path(__file__).resolve().parent.parent / "doc_intel"
+        try:
+            scheda_css = (panel_dir / "scheda_panel.css").read_text(encoding="utf-8")
+            scheda_js = (panel_dir / "scheda_panel.js").read_text(encoding="utf-8").replace("</", "<\\/")
+        except OSError:
+            scheda_css, scheda_js = "", ""
+        return (template.replace("__SCHEDA_CSS__", scheda_css).replace("__SCHEDA_JS__", scheda_js)
+                .replace("__DASHBOARD_DATA__", data_json))
 
 
 def main() -> None:

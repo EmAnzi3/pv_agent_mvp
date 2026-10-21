@@ -1,0 +1,25 @@
+name: MASE 8788 PV baseline comparison
+on:
+  pull_request:
+    paths:
+      - 'experiments/mase_8788_baseline.py'
+      - '.github/workflows/mase-8788-baseline.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Inspect matching canonical record
+        run: python experiments/mase_8788_baseline.py | tee pv-baseline.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mase-8788-pv-baseline
+          path: |
+            pv-baseline.log
+            reports/crawl4ai/mase-8788-pv-baseline.json

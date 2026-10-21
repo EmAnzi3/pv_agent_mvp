@@ -1,0 +1,40 @@
+name: MASE 6479 exhaustive documents (research only)
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/mase-6479-full-docs.yml'
+      - 'experiments/crawl4ai_mase_full.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  documentary-batch:
+    strategy:
+      fail-fast: false
+      matrix:
+        offset: [0, 25, 50, 75, 100]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install crawler and PDF tools
+        run: |
+          python -m pip install crawl4ai pypdf requests beautifulsoup4
+          python -m playwright install --with-deps chromium
+      - name: Crawl paginated MASE and analyze assigned batch
+        run: |
+          python experiments/crawl4ai_mase_full.py --max-index-pages 12 --max-docs 25 --offset ${{ matrix.offset }} --max-bytes 30000000 --output reports/crawl4ai/mase-6479-batch-${{ matrix.offset }}.json > batch-${{ matrix.offset }}.log 2>&1
+          grep -E 'COVERAGE_REPORT=|FAILURES=|DOCUMENT_TYPES=|FIELD_HITS=|DECISION=' batch-${{ matrix.offset }}.log || true
+      - name: Upload batch artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mase-6479-docs-${{ matrix.offset }}
+          path: |
+            reports/crawl4ai/mase-6479-batch-${{ matrix.offset }}.json
+            batch-${{ matrix.offset }}.log
+          retention-days: 14
+          if-no-files-found: warn

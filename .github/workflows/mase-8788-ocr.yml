@@ -1,0 +1,36 @@
+name: MASE 8788 scan OCR review
+on:
+  pull_request:
+    paths:
+      - 'experiments/mase_8788_ocr.py'
+      - '.github/workflows/mase-8788-ocr.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ocr:
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2,3,4,5,6]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-ita tesseract-ocr-eng
+          python -m pip install requests pymupdf
+      - name: OCR scanned pages
+        run: python experiments/mase_8788_ocr.py --shard ${{ matrix.shard }} > ocr-${{ matrix.shard }}.log 2>&1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mase-8788-ocr-${{ matrix.shard }}
+          path: |
+            ocr-${{ matrix.shard }}.log
+            reports/crawl4ai/mase-8788-ocr-${{ matrix.shard }}.json
+          retention-days: 14

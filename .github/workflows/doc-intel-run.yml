@@ -1,0 +1,257 @@
+name: Doc Intel dossier (review only)
+# Runs the generic toolbox on MASE records. No write to docs/data.json or to the database.
+# The document store (bytes + extracted text) is persisted with actions/cache, not in Git.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Record URL already present in PV Agent (MASE Info or provvedimento page)'
+        required: true
+      gold:
+        description: 'Optional gold set path, e.g. doc_intel/gold/mase-<id>.json'
+        required: false
+        default: ''
+      ocr_max_pages:
+        description: 'OCR page budget for this run'
+        required: false
+        default: '1000'
+      time_budget_min:
+        description: 'Stop starting downloads/OCR after N minutes (the next run resumes)'
+        required: false
+        default: '170'
+      reanalyse_match:
+        description: "Re-analyse only documents whose title/URL matches this regex (with reanalyse=yes)"
+        required: false
+        default: ""
+      reanalyse:
+        description: 'Re-download and re-extract every document with the current rules (yes/no)'
+        required: false
+        default: 'no'
+      runner:
+        description: 'ubuntu-latest, or self-hosted (Italian network, for portals that filter foreign IPs)'
+        required: false
+        default: 'ubuntu-latest'
+  workflow_call:
+    # used by doc-intel-batch.yml (one project per call, run in parallel from the queue)
+    inputs:
+      url: {type: string, required: true}
+      gold: {type: string, required: false, default: ''}
+      ocr_max_pages: {type: string, required: false, default: '1000'}
+      time_budget_min: {type: string, required: false, default: '200'}
+      reanalyse_match: {type: string, required: false, default: ''}
+      reanalyse: {type: string, required: false, default: 'no'}
+      runner: {type: string, required: false, default: 'ubuntu-latest'}
+  pull_request:
+    paths:
+      - 'doc_intel/**'
+      - '.github/workflows/doc-intel-run.yml'
+permissions:
+  contents: read
+env:
+  PYTHONUNBUFFERED: '1'
+jobs:
+  benchmarks:
+    if: github.event_name == 'pull_request'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: troia-sun
+            url: https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6479
+            gold: doc_intel/gold/mase-6479.json
+          - name: tortona-2
+            url: https://va.mite.gov.it/it-IT/Oggetti/Info/8788
+            gold: doc_intel/gold/mase-8788.json
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ita poppler-utils
+      - run: python -m pip install pymupdf pypdf requests beautifulsoup4
+      - name: Restore document store
+        uses: actions/cache/restore@v4
+        with:
+          path: .doc_intel_store
+          key: doc-intel-store-${{ matrix.name }}-${{ github.run_id }}
+          restore-keys: doc-intel-store-${{ matrix.name }}-
+      - name: Build dossier (OCR stops after the time budget; pending pages resume next run)
+        run: |
+          set -o pipefail
+          python -m doc_intel run --url "${{ matrix.url }}" --gold "${{ matrix.gold }}" \
+            --store .doc_intel_store --data docs/data.json --out reports/doc_intel \
+            --ocr-max-pages 3000 --workers 4 --time-budget-min 170 --registry vies \
+            --keep-files --reanalyse 2>&1 | tee run-${{ matrix.name }}.log
+      - name: Save document store (also after failure, so work is never lost)
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .doc_intel_store
+          key: doc-intel-store-${{ matrix.name }}-${{ github.run_id }}
+      - name: Publish digest 1/4
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 0 --slices 4 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 2/4
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 1 --slices 4 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 3/4
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 2 --slices 4 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 4/4
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 3 --slices 4 || echo "::warning title=digest::no dossier produced"
+      - name: Evaluate against gold set (fails on forbidden facts or undetected expected conflicts)
+        run: |
+          f=$(ls reports/doc_intel/*.json | head -1)
+          set -o pipefail
+          python -m doc_intel evaluate --dossier "$f" --gold "${{ matrix.gold }}" | tee eval-${{ matrix.name }}.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: doc-intel-${{ matrix.name }}
+          path: |
+            reports/doc_intel/
+            run-${{ matrix.name }}.log
+            eval-${{ matrix.name }}.json
+          retention-days: 30
+  manual:
+    # Production path: originals are deleted after analysis; the memory of what was found,
+    # downloaded and analysed (manifests + extracted facts + VIES cache) lives on branch doc-intel-state.
+    if: github.event_name != 'pull_request'
+    runs-on: ${{ inputs.runner }}
+    concurrency:
+      group: doc-intel-memory-${{ inputs.url }}
+      cancel-in-progress: false
+    timeout-minutes: 300
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: System OCR and PDF tools (GitHub-hosted Linux only; preinstalled on self-hosted runners)
+        if: runner.environment == 'github-hosted'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ita poppler-utils
+      - run: python -m pip install pymupdf pypdf requests beautifulsoup4
+      - name: Load processing memory (branch doc-intel-state)
+        run: |
+          git config user.name "doc-intel-bot"
+          git config user.email "doc-intel-bot@users.noreply.github.com"
+          rm -rf .doc_intel_store && git worktree prune
+          if git fetch origin doc-intel-state:doc-intel-state 2>/dev/null; then
+            git worktree add .doc_intel_store doc-intel-state
+          else
+            git worktree add --orphan -b doc-intel-state .doc_intel_store
+            printf 'blobs/\ntext/\n' > .doc_intel_store/.gitignore
+          fi
+          du -sh .doc_intel_store || true
+      - name: Build dossier
+        env:
+          URL: ${{ inputs.url }}
+          GOLD: ${{ inputs.gold }}
+          OCR_MAX: ${{ inputs.ocr_max_pages }}
+          BUDGET: ${{ inputs.time_budget_min }}
+          REANALYSE: ${{ inputs.reanalyse }}
+          REANALYSE_MATCH: ${{ inputs.reanalyse_match }}
+        run: |
+          extra=()
+          if [ "$REANALYSE" = "yes" ]; then extra+=(--reanalyse); fi
+          if [ "$REANALYSE" = "yes" ] && [ -n "$REANALYSE_MATCH" ]; then extra+=(--reanalyse-match "$REANALYSE_MATCH"); fi
+          if [ -n "$GOLD" ]; then extra+=(--gold "$GOLD"); fi
+          set -o pipefail
+          python -m doc_intel run --url "$URL" "${extra[@]}" --store .doc_intel_store --data docs/data.json \
+            --out reports/doc_intel --ocr-max-pages "$OCR_MAX" --workers 4 --time-budget-min "$BUDGET" --registry vies 2>&1 | tee run.log
+      - name: Build project card (scheda) into the memory branch
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel card --dossier "$f" --out .doc_intel_store/schede || echo "no dossier, no card"
+      - name: Save processing memory (also after failure or cancellation)
+        if: always()
+        run: |
+          if [ ! -d .doc_intel_store ]; then echo "::error title=memory::store directory missing"; exit 1; fi
+          cd .doc_intel_store
+          echo "worktree: $(git rev-parse --show-toplevel) branch: $(git rev-parse --abbrev-ref HEAD)"
+          rm -rf blobs text
+          grep -qx 'schede/index.json' .gitignore 2>/dev/null || echo 'schede/index.json' >> .gitignore
+          git rm -q --cached --ignore-unmatch schede/index.json
+          git add -A
+          n=$(git diff --cached --name-only | wc -l)
+          if [ "$n" = "0" ]; then echo "::notice title=memory::unchanged"; exit 0; fi
+          git commit -q -m "doc-intel memory: ${{ inputs.url }} (run ${{ github.run_id }})"
+          for i in 1 2 3 4 5 6; do
+            git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
+            if git push -q origin HEAD:doc-intel-state; then
+              echo "::notice title=memory::saved $n files at $(git rev-parse --short HEAD)"; exit 0
+            fi
+            sleep $((i * 10))
+          done
+          echo "::error title=memory::could not push doc-intel-state"; exit 1
+      - name: Publish digest 1/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 0 --slices 8 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 2/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 1 --slices 8 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 3/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 2 --slices 8 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 4/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 3 --slices 8 || echo "::warning title=digest::no dossier produced"
+      - name: Publish digest 5/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 4 --slices 8 || echo "no dossier"
+      - name: Publish digest 6/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 5 --slices 8 || echo "no dossier"
+      - name: Publish digest 7/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 6 --slices 8 || echo "no dossier"
+      - name: Publish digest 8/8
+        if: always()
+        run: |
+          f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1)
+          [ -n "$f" ] && python -m doc_intel digest --dossier "$f" --slice 7 --slices 8 || echo "no dossier"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: doc-intel-manual
+          path: |
+            reports/doc_intel/
+            run.log
+          retention-days: 30
+      - name: Delete downloaded documents from the runner
+        if: always()
+        run: |
+          rm -rf .doc_intel_store/blobs .doc_intel_store/text
+          git worktree remove --force .doc_intel_store 2>/dev/null || rm -rf .doc_intel_store
+          echo "documents deleted from runner"

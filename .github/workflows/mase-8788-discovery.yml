@@ -1,0 +1,31 @@
+name: MASE 8788 second-case discovery
+on:
+  pull_request:
+    paths:
+      - 'experiments/mase_8788_probe.py'
+      - '.github/workflows/mase-8788-discovery.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python -m pip install crawl4ai beautifulsoup4
+          python -m playwright install --with-deps chromium
+      - name: Probe actual project and indices
+        run: python experiments/mase_8788_probe.py 2>&1 | tee mase-8788.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mase-8788-discovery
+          path: |
+            mase-8788-probe.json
+            mase-8788.log
+          retention-days: 14

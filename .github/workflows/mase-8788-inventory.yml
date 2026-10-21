@@ -1,0 +1,31 @@
+name: MASE 8788 complete index inventory
+on:
+  pull_request:
+    paths:
+      - 'experiments/mase_8788_inventory.py'
+      - '.github/workflows/mase-8788-inventory.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python -m pip install beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Inventory all procedure pages
+        run: python experiments/mase_8788_inventory.py 2>&1 | tee inventory.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mase-8788-inventory
+          path: |
+            inventory.log
+            reports/crawl4ai/MASE-8788-INVENTORY.json
+          retention-days: 14

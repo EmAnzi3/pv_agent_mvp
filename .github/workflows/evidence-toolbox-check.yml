@@ -1,0 +1,21 @@
+name: Evidence Toolbox Acceptance
+on:
+  pull_request:
+    paths:
+      - 'experiments/evidence_toolbox.py'
+      - 'tests/test_evidence_toolbox.py'
+      - 'experiments/TOOLBOX-CONTRACT.md'
+      - '.github/workflows/evidence-toolbox-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -p 'test_evidence_toolbox.py' -v
+      - run: python -m compileall -q experiments/evidence_toolbox.py experiments/crawl4ai_mase_full.py experiments/mase_6479_recovery.py

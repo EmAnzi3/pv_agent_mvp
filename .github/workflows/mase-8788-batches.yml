@@ -1,0 +1,35 @@
+name: MASE 8788 full annex acquisition (review only)
+on:
+  pull_request:
+    paths:
+      - 'experiments/mase_8788_batch.py'
+      - '.github/workflows/mase-8788-batches.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  acquire:
+    strategy:
+      fail-fast: false
+      matrix:
+        offset: [0,30,60,90,120,150,180,210]
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python -m pip install requests beautifulsoup4 pymupdf playwright
+          python -m playwright install --with-deps chromium
+      - name: Acquire evidence batch
+        run: python experiments/mase_8788_batch.py --offset ${{ matrix.offset }} --limit 30 > batch-${{ matrix.offset }}.log 2>&1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mase-8788-batch-${{ matrix.offset }}
+          path: |
+            batch-${{ matrix.offset }}.log
+            reports/crawl4ai/mase-8788-batch-${{ matrix.offset }}.json
+          retention-days: 14

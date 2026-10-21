@@ -1,0 +1,51 @@
+name: Crawl4AI MASE 6479 pilot (isolated)
+on:
+  pull_request:
+    paths:
+      - 'experiments/crawl4ai_mase_record.py'
+      - 'experiments/README-crawl4ai.md'
+      - 'tests/test_crawl4ai_mase_record.py'
+      - '.github/workflows/crawl4ai-mase-pilot.yml'
+      - 'experiments/crawl4ai_mase_full.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mase-pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install isolated crawler dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install crawl4ai pypdf requests
+          python -m playwright install --with-deps chromium
+      - name: Unit tests
+        run: python -m unittest discover -s tests -p 'test_crawl4ai_mase_record.py'
+      - name: Live MASE 6479 crawl (review only)
+        continue-on-error: true
+        run: |
+          python experiments/crawl4ai_mase_record.py --url 'https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6479' --max-pdfs 10 2>&1 | tee crawl4ai-run.log
+          exit ${PIPESTATUS[0]}
+      - name: Paginated MASE ZIP/PDF benchmark (15 docs)
+        continue-on-error: true
+        run: |
+          python -m pip install beautifulsoup4
+          python experiments/crawl4ai_mase_full.py --max-index-pages 14 --max-docs 15 2>&1 | tee crawl4ai-full-run.log
+          exit ${PIPESTATUS[0]}
+      - name: Upload benchmark traces
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawl4ai-mase-6479
+          path: |
+            reports/crawl4ai/mase-record-pilot.json
+            crawl4ai-run.log
+            crawl4ai-full-run.log
+            reports/crawl4ai/mase-6479-full-benchmark.json
+          if-no-files-found: warn
+          retention-days: 7
