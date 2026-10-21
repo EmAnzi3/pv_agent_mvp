@@ -720,21 +720,29 @@ def _gantt(d: dict, titles: dict) -> dict:
         # a bare number after the name is the duration column, in the chart's unit ('trasformatori e quadri 46')
         tail = [re.search(r"\s(\d{1,4})$", bb["name"]) for bb in bars]
         if sum(bool(t) for t in tail) >= 0.5 * len(bars):
-            word = {"week": "sett.", "month": "mesi", "day": "g"}.get(fs[0]["value"].get("unit"), "")
+            # unit of the column from the bars themselves: number / length in months ~30 days, ~4.3 weeks, ~1 month
+            ratios = sorted(int(t.group(1)) / (bb["end"] - bb["start"]) for bb, t in zip(bars, tail)
+                            if t and bb["end"] - bb["start"] > 0.3 and int(t.group(1)) > 0)
+            r = ratios[len(ratios) // 2] if ratios else 0
+            word = "g" if r > 15 else "sett." if r > 2.5 else "mesi" if r > 0.5 else \
+                {"week": "sett.", "month": "mesi", "day": "g"}.get(fs[0]["value"].get("unit"), "")
             for bb, t in zip(bars, tail):
                 if t:
                     bb["name"] = bb["name"][: t.start()].strip()
                     bb.setdefault("duration", f"{t.group(1)} {word}".strip())
         # pages of one document printed as separate programmes (plant, substation): a heading between them
-        out_bars, prev_end, prev_page = [], 0.0, None
+        out_bars, prev_end, prev_page, names = [], 0.0, None, set()
         for bb in bars:
             pg = bb.pop("page", None)
-            if prev_page is not None and pg != prev_page:
-                if bb["start"] < 0.15 * prev_end:          # time restarts: a second programme, not a continuation
-                    out_bars.append({"name": f"Programma successivo (pag. {pg})", "separator": True,
-                                     "start": 0, "end": 0, "level": 0})
+            restart = bb["start"] < 0.15 * prev_end and (pg != prev_page or bb["name"].lower() in names)
+            if prev_page is not None and restart:     # time restarts: a second programme, not a continuation
+                out_bars.append({"name": "Altra sezione del cronoprogramma" + (f" (pag. {pg})" if pg != prev_page else ""),
+                                 "separator": True, "start": 0, "end": 0, "level": 0})
+                names = set()
+            names.add(bb["name"].lower())
             out_bars.append(bb)
-            prev_end, prev_page = max(prev_end, bb["end"]) if pg == prev_page or prev_page is None else bb["end"], pg
+            prev_end = bb["end"] if (restart and prev_page is not None) else max(prev_end, bb["end"])
+            prev_page = pg
         bars = out_bars
         src = _source({"url": url, "page": page}, titles)
         span = max(b["end"] for b in bars) - min(b["start"] for b in bars) if bars else 0
