@@ -3,7 +3,8 @@ name: Doc Intel project cards (new projects and backlog)
 # the backlog of projects already in the radar is processed every night, a few dozen at a time,
 # highest power first. One project per job, 5 in parallel; each job saves its card and the memory
 # of what was downloaded and analysed on branch doc-intel-state. Nothing is written to docs/ here:
-# the cards reach the dashboard at the next run of aggiorna_dashboard_senza_docker.bat.
+# at the end the batch publishes schede/live_index.json on the memory branch, which the public page
+# reads directly, so a new card gets its 'Scheda' button without waiting for the next .bat run.
 on:
   schedule:
     - cron: '0 23 * * *'          # 01:00 in Italy (summer time), 00:00 in winter
@@ -79,3 +80,31 @@ jobs:
       url: ${{ matrix.url }}
       time_budget_min: '200'
     secrets: inherit
+  publish-index:
+    needs: [plan, analyse]
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publish the index of the cards (read by the public page)
+        run: |
+          git config user.name "doc-intel-bot"
+          git config user.email "doc-intel-bot@users.noreply.github.com"
+          git fetch origin doc-intel-state:doc-intel-state
+          git worktree add .mem doc-intel-state
+          for i in 1 2 3 4 5; do
+            (cd .mem && git pull -q --rebase origin doc-intel-state) || (cd .mem && git rebase --abort 2>/dev/null)
+            python -m doc_intel cards-index --folder .mem/schede --out .mem/schede/live_index.json
+            cd .mem
+            git add schede/live_index.json
+            if git diff --cached --quiet; then echo "index unchanged"; exit 0; fi
+            git commit -q -m "doc-intel: cards index (batch ${{ github.run_id }})"
+            if git push -q origin HEAD:doc-intel-state; then echo "::notice title=cards::index published"; exit 0; fi
+            git reset -q --hard HEAD~1
+            cd ..
+            sleep $((i * 10))
+          done
+          echo "::warning title=cards::index not published"

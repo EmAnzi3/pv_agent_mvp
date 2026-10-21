@@ -28,7 +28,7 @@ def sync_cards(out_dir: str | Path, tree_url: str = TREE, raw_base: str = RAW, g
     r.raise_for_status()
     remote = {e["path"].split("/", 1)[1]: e["sha"] for e in r.json().get("tree", [])
               if e.get("type") == "blob" and e["path"].startswith("schede/") and e["path"].endswith(".json")
-              and not e["path"].endswith("/index.json")}
+              and not e["path"].endswith(("/index.json", "/" + LIVE_INDEX))}
     downloaded = errors = 0
     for name, sha in remote.items():
         target = out / name
@@ -43,9 +43,20 @@ def sync_cards(out_dir: str | Path, tree_url: str = TREE, raw_base: str = RAW, g
             downloaded += 1
         except Exception:
             errors += 1
+    index = build_index(out)
+    (out / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    state_path.write_text(json.dumps(state, indent=0, sort_keys=True), encoding="utf-8")
+    return {"downloaded": downloaded, "total": len(index), "errors": errors}
+
+
+LIVE_INDEX = "live_index.json"
+
+
+def build_index(folder: str | Path) -> dict:
+    """project_key -> {file, updated} for the cards in a folder (index files excluded)."""
     index = {}
-    for f in sorted(out.glob("*.json")):
-        if f.name == "index.json":
+    for f in sorted(Path(folder).glob("*.json")):
+        if f.name in ("index.json", LIVE_INDEX):
             continue
         try:
             c = json.loads(f.read_text(encoding="utf-8"))
@@ -53,6 +64,4 @@ def sync_cards(out_dir: str | Path, tree_url: str = TREE, raw_base: str = RAW, g
             continue
         if c.get("project_key"):
             index[c["project_key"]] = {"file": f.name, "updated": c.get("updated")}
-    (out / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
-    state_path.write_text(json.dumps(state, indent=0, sort_keys=True), encoding="utf-8")
-    return {"downloaded": downloaded, "total": len(index), "errors": errors}
+    return index
