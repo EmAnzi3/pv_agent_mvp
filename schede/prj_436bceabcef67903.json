@@ -22,7 +22,7 @@
   {
    "key": "impianto",
    "label": "Impianto",
-   "value": "Agrivoltaico",
+   "value": "Agrivoltaico · tracker monoassiali",
    "status": "da documenti",
    "source": {
     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=490137834&nomeFile=26.247letv_signed%20prot%2046616%20del%2027%2007%202026.pdf",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "156,8 ha",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Valore prevalente negli elaborati; altri valori: 101 ha (1)",
    "source": {
     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=485570196&nomeFile=avviso%20al%20pubblico.pdf",
     "page": 2,
@@ -60,14 +60,14 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "18 mesi",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "value": "11 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (2), 6 mesi (2), 3 mesi (1)",
    "source": {
-    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=489220589&nomeFile=2026%2007%2022%20prot%2045895%20terna%20202400464_cds_lombardia_all1.pdf",
-    "page": 28,
-    "document": "verbale di cds con allegati - 2026 07 22 prot 45895 terna 202400464_cds_lombardia_all1.pdf",
-    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=479632520&nomeFile=4702407934_via_rel027_sia_.pdf.p7m.p7m",
+    "page": 709,
+    "document": "Documenti in risposta a richiesta di completamento documentale pervenuta via pec dalla Provincia di Pavia in data 29/05/2026 n. protocollo 0033988/2026 - 4702407934_via_rel027_sia_.pdf.p7m.p7m",
+    "excerpt": "ritiene che l’impatto sulla componente in fase di cantiere sarà limitata al solo periodo di attività del cantiere (11 mesi) e avrà estensione esclusivamente locale."
    }
   }
  ],
@@ -78,20 +78,30 @@
    "Dorno"
   ],
   "coordinate": {
-   "lat": 45.15116,
-   "lon": 8.90847,
-   "tipo": "centro del perimetro pubblicato dal portale regionale (2 riferimenti concordi)",
+   "lat": 45.11254,
+   "lon": 8.95294,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (83 riferimenti concordi)",
    "source": {
-    "url": "https://www.silvia.servizirl.it/silviaviewer40/?config=config_read.json&parameters=%7B'serviceLMOperator':'include','appProcedura':%7B'id_procedura':'20881'%7D%7D",
-    "page": null,
-    "document": "documento",
-    "excerpt": "punto pubblicato sulla mappa del portale regionale"
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462754098&nomeFile=sia_se_09-pma-pianodimonitoraggioambientale.pdf.p7m",
+    "page": 34,
+    "document": "Documenti Valutazione Impatto Ambientale per l'ampliamento della SE Pieve Albignola presentata dal capofila del tavolo tecnico, NEOEN Renewables, al MASE. - sia_se_09-pma-pianodimonitoraggioambientale.pdf.p7m",
+    "excerpt": "DI MONITORAGGIO 45.1095"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=45.15116,8.90847",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=45.11254,8.95294",
   "maps_precision": "coordinate",
   "mappa_ufficiale": "https://www.silvia.servizirl.it/silviaviewer40/?config=config_read.json&parameters=%7B'serviceLMOperator':'include','appProcedura':%7B'id_procedura':'20881'%7D%7D",
-  "connessione": null,
+  "connessione": {
+   "lat": 45.15036,
+   "lon": 8.90667,
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462749896&nomeFile=4702407934_via_rel024_mitig_.pdf.p7m.p7m",
+    "page": 5,
+    "document": "Relazioni - 4702407934_via_rel024_mitig_.pdf.p7m.p7m",
+    "excerpt": "provinciale SP 29 da Dorno a Scaldasole e lungo la SP 16 da Scaldasole a Pieve Albignola. Coordinate di ubicazione: 45.150359° 8.906666°"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=45.15036,8.90667"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -109,7 +119,7 @@
     {
      "type": "PEC",
      "value": "granderinnovabilisrl@pecimprese.it",
-     "occurrences": 18,
+     "occurrences": 35,
      "source": {
       "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=490137834&nomeFile=26.247letv_signed%20prot%2046616%20del%2027%2007%202026.pdf",
       "page": 1,
@@ -122,9 +132,161 @@
     "document": "scheda ufficiale del procedimento",
     "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=3&idProgetto=20881&idProvenienza=2"
    }
+  },
+  {
+   "name": "Biogaservizi S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "01260460322",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Giosue' Carducci 8 34133 Trieste Ts",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "biogaservizi@pec.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=489220589&nomeFile=2026%2007%2022%20prot%2045895%20terna%20202400464_cds_lombardia_all1.pdf",
+      "page": 1,
+      "document": "verbale di cds con allegati - 2026 07 22 prot 45895 terna 202400464_cds_lombardia_all1.pdf",
+      "excerpt": "34149 TRIESTE (TS) biogaservizi@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "massimo.tosto@biogaservizi.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=484178973&nomeFile=4702407934_via_doc001_ist_.pdf.p7m",
+      "page": 1,
+      "document": "Documenti in risposta a richiesta di completamento documentale pervenuta via pec dalla Provincia di Pavia in data 29/05/2026 n. protocollo 0033988/2026 - 4702407934_via_doc001_ist_.pdf.p7m",
+      "excerpt": "P.E.C.: granderinnovabilisrl@pecimprese.it Indirizzo @mail massimo.tosto@biogaservizi.it. Tel. +39 040 98 28 070. Fax ………………….,"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "maddalena.mattiace@biogaservizi.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462749690&nomeFile=4702407934_via_rel001_relgen_.pdf.p7m",
+      "page": 4,
+      "document": "Relazioni - 4702407934_via_rel001_relgen_.pdf.p7m",
+      "excerpt": "Mail maddalena.mattiace@biogaservizi.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=479632532&nomeFile=4702407934_via_rel042_compldoc.pdf.p7m",
+    "page": 1,
+    "document": "Documenti in risposta a richiesta di completamento documentale pervenuta via pec dalla Provincia di Pavia in data 29/05/2026 n. protocollo 0033988/2026 - 4702407934_via_rel042_compldoc.pdf.p7m",
+    "excerpt": "GRUPPO DI PROGETTAZIONE: BiogaServizi s.r.l."
+   }
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "TVM.ENERGY S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01410780322",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Giosue' Carducci 8 34133 Trieste Ts",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "tvm.energy@pecimprese.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=479632418&nomeFile=4702407934_via_ferau_8026728.pdf.p7m",
+      "page": 1,
+      "document": "Documenti in risposta a richiesta di completamento documentale pervenuta via pec dalla Provincia di Pavia in data 29/05/2026 n. protocollo 0033988/2026 - 4702407934_via_ferau_8026728.pdf.p7m",
+      "excerpt": "sezione A telefono 388 821 9852 email ufficio.tecnico@tvm.energy PEC tvm.energy@pecimprese.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ufficio.tecnico@tvm.energy",
+     "occurrences": 1,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=479632418&nomeFile=4702407934_via_ferau_8026728.pdf.p7m",
+      "page": 1,
+      "document": "Documenti in risposta a richiesta di completamento documentale pervenuta via pec dalla Provincia di Pavia in data 29/05/2026 n. protocollo 0033988/2026 - 4702407934_via_ferau_8026728.pdf.p7m",
+      "excerpt": "CAP 34133 C.F. 01410780322 P.IVA 01410780322 telefono 388 821 9852 email ufficio.tecnico@tvm.energy PEC tvm.energy@pecimprese.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Semper S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "05057650284",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Venezia 92/B 35131 Padova Pd",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "semper-srl@pec.it",
+     "occurrences": 39,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462749926&nomeFile=4702407934_via_rel025_vpia_.pdf.p7m.p7m",
+      "page": 2,
+      "document": "Relazioni - 4702407934_via_rel025_vpia_.pdf.p7m.p7m",
+      "excerpt": "Via Venezia 92/b – 35131 Padova info@semper-srl.it – semper-srl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@semper-srl.it",
+     "occurrences": 39,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462749926&nomeFile=4702407934_via_rel025_vpia_.pdf.p7m.p7m",
+      "page": 2,
+      "document": "Relazioni - 4702407934_via_rel025_vpia_.pdf.p7m.p7m",
+      "excerpt": "Via Venezia 92/b – 35131 Padova info@semper-srl.it – semper-srl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Chem Service Italia DOTT. Tino Loria",
+   "kind": "società",
+   "roles": [],
+   "vat": "05436680879",
+   "vat_group": false,
+   "verified": true,
+   "office": "Viale Mario Rapisardi 355 95123 Catania Ct",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "chemserviceitalia@gmail.com",
+     "occurrences": 10,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462753915&nomeFile=sia_se_03-relazgeologicaesismica.pdf.p7m",
+      "page": 117,
+      "document": "Documenti Valutazione Impatto Ambientale per l'ampliamento della SE Pieve Albignola presentata dal capofila del tavolo tecnico, NEOEN Renewables, al MASE. - sia_se_03-relazgeologicaesismica.pdf.p7m",
+      "excerpt": "Mobile: 393.9353700 chemserviceitalia@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "CBL Distribuzione S.r.l.",
    "kind": "società",
@@ -137,7 +299,7 @@
     {
      "type": "PEC",
      "value": "cbldistribuzionesrl@legalmail.it",
-     "occurrences": 7,
+     "occurrences": 11,
      "source": {
       "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=490137834&nomeFile=26.247letv_signed%20prot%2046616%20del%2027%2007%202026.pdf",
       "page": 3,
@@ -165,6 +327,43 @@
       "page": 1,
       "document": "Richiesta completamento documentale - 2026 05 15 prot 30581 cbl.pdf",
       "excerpt": "CBL Distribuzione S.r.l. a Socio Unico - 27035 MEDE (PV) Via Antonio Gramsci, 12, Tel. 0384 805810 - Fax 0384 805735 - e-mail: amministrazione@cbldistribuzionestl.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Beshielding S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10105760010",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Monviso 9 10090 Villarbasse To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "shielding@beshielding.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462753794&nomeFile=se_35-449404a_cem.pdf.p7m",
+      "page": 13,
+      "document": "Documenti Valutazione Impatto Ambientale per l'ampliamento della SE Pieve Albignola presentata dal capofila del tavolo tecnico, NEOEN Renewables, al MASE. - se_35-449404a_cem.pdf.p7m",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "busbar@beshielding.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462753794&nomeFile=se_35-449404a_cem.pdf.p7m",
+      "page": 13,
+      "document": "Documenti Valutazione Impatto Ambientale per l'ampliamento della SE Pieve Albignola presentata dal capofila del tavolo tecnico, NEOEN Renewables, al MASE. - se_35-449404a_cem.pdf.p7m",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
      }
     }
    ],
@@ -235,6 +434,63 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "Geol. Alfonso Russi",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "alfonso.russi@pec.epap.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462839021&nomeFile=4702407934_via_doc022_dichplv.pdf.p7m",
+      "page": 2,
+      "document": "Dichiarazione asseverata ai sensi del D.L 175/2025 - 4702407934_via_doc022_dichplv.pdf.p7m",
+      "excerpt": "Severo (FG) il 31/05/1959, residente in Via Friuli 5, C.F. RSSLNS59E31I158X, PEC alfonso.russi@pec.epap.it, assicurato con polizza Tokio Marine Europe S.A. n.HCC25-"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "alfonso.russi59@gmail.com",
+     "occurrences": 3559,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=479632520&nomeFile=4702407934_via_rel027_sia_.pdf.p7m.p7m",
+      "page": 2,
+      "document": "Documenti in risposta a richiesta di completamento documentale pervenuta via pec dalla Provincia di Pavia in data 29/05/2026 n. protocollo 0033988/2026 - 4702407934_via_rel027_sia_.pdf.p7m.p7m",
+      "excerpt": "PROF. GEOL. ALFONSO RUSSI / VIA FRIULI, 5 / 06034 FOLIGNO (PG) / TEL 3357034527 / Email: alfonso.russi59@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geopolis S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "robe11meni@gmail.com",
+     "occurrences": 19,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462754558&nomeFile=449417c.pdf.p7m",
+      "page": 2,
+      "document": "Documenti PTO benestariato da Terna per l'ampliamento della SE Pieve Albignola - 449417c.pdf.p7m",
+      "excerpt": "GEOPOLIS srl - 00164 Roma - Via Arnobio, 27 – robe11meni@gmail.com"
+     }
+    }
+   ],
+   "source": null
   },
   {
    "name": "Unareti S.p.A.",
@@ -315,129 +571,322 @@
     }
    ],
    "source": null
-  },
-  {
-   "name": "Gestore Servizi Energetici S.p.A.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "gsespa@pec.gse.it",
-     "occurrences": 3,
-     "source": {
-      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=485570097&nomeFile=26.221letv.pdf%20prot%2043758%20del%2013%2007%202026.p7m",
-      "page": 3,
-      "document": "Indizione e convocazione CdS, richiesta pareri - 26.221letv.pdf prot 43758 del 13 07 2026.p7m",
-      "excerpt": "Gestore Servizi Energetici S.p.A. gsespa@pec.gse.it"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Dott. Anselmo Cucchi",
-   "kind": "persona",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "anselmo.cucchi@agenziapo.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=472025327&nomeFile=2026%2005%2011%20prot%2029500%20aipo.p7m",
-      "page": 1,
-      "document": "Richiesta completamento documentale - 2026 05 11 prot 29500 aipo.p7m",
-      "excerpt": "Referente: Dott. Anselmo Cucchi e-mail anselmo.cucchi@agenziapo.it"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Snam rete e gas S.p.A.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "estsesia.pec@legalmail.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=485570196&nomeFile=avviso%20al%20pubblico.pdf",
-      "page": 2,
-      "document": "Indizione e convocazione CdS, richiesta pareri - avviso al pubblico.pdf",
-      "excerpt": "medesimo estsesia.pec@legalmail.it"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Biogaservizi S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "biogaservizi@pec.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=489220589&nomeFile=2026%2007%2022%20prot%2045895%20terna%20202400464_cds_lombardia_all1.pdf",
-      "page": 1,
-      "document": "verbale di cds con allegati - 2026 07 22 prot 45895 terna 202400464_cds_lombardia_all1.pdf",
-      "excerpt": "34149 TRIESTE (TS) biogaservizi@pec.it"
-     }
-    }
-   ],
-   "source": null
   }
  ],
  "stato": null,
  "registro": null,
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Decreto autorizzativo correttamente volturato",
+    "start": 0.15,
+    "end": 1.15,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ampliamento 36 kV Stazione elettrica 380 kV Pieve Albignola",
+    "start": 1.14,
+    "end": 23.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Progettazione esecutiva",
+    "start": 1.14,
+    "end": 13.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Verifica progettazione",
+    "start": 13.07,
+    "end": 14.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Acquisizione area",
+    "start": 4.13,
+    "end": 7.11,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Appalto opere ed acquisto materiali",
+    "start": 4.13,
+    "end": 16.06,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione sito e realizzazione delle opere",
+    "start": 13.07,
+    "end": 19.04,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili stazione elettrica",
+    "start": 13.07,
+    "end": 19.04,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "scavi, rinterri e viabilità interna",
+    "start": 13.07,
+    "end": 19.04,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "scavi per fondazioni cabine e posa vasche cabine",
+    "start": 13.07,
+    "end": 19.04,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "scavo, rinterro e posa dei cavidotti a 36kV",
+    "start": 13.07,
+    "end": 19.04,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "posa in opera prefabbricati, locali tecnici e relativi componenti",
+    "start": 13.07,
+    "end": 19.04,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggi",
+    "start": 19.03,
+    "end": 21.03,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "montaggio strutture",
+    "start": 19.03,
+    "end": 21.03,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "installazione trafo e altre apparecchiature",
+    "start": 19.03,
+    "end": 21.03,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "posa cavi e cablaggi",
+    "start": 19.03,
+    "end": 21.03,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Apparecchiature elettromeccaniche stazione",
+    "start": 19.03,
+    "end": 21.03,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi",
+    "start": 20.03,
+    "end": 22.02,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Finiture",
+    "start": 22.01,
+    "end": 23.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Attivazione impianto",
+    "start": 22.01,
+    "end": 24.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristini e smobilizzo cantiere",
+    "start": 23.01,
+    "end": 24.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "smobilizzo cantiere",
+    "start": 23.01,
+    "end": 24.01,
+    "level": 0,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 24.01,
+  "source": {
+   "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=462753998&nomeFile=sia_se_06-relazionepreliminarediimpattoacustico.pdf.p7m",
+   "page": 39,
+   "document": "Documenti Valutazione Impatto Ambientale per l'ampliamento della SE Pieve Albignola presentata dal capofila del tavolo tecnico, NEOEN Renewables, al MASE. - sia_se_06-relazionepreliminarediimpattoacustico.pdf.p7m",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "M11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "M12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "M13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "M14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "M15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "M16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "M17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "M18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "M19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "M20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "M21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "M22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "M23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "M24",
+     "start": 23.0,
+     "end": 24.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
-   "text": "18 mesi",
-   "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "text": "11 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 18 mesi (2), 6 mesi (2), 3 mesi (1)",
    "source": {
-    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=489220589&nomeFile=2026%2007%2022%20prot%2045895%20terna%20202400464_cds_lombardia_all1.pdf",
-    "page": 28,
-    "document": "verbale di cds con allegati - 2026 07 22 prot 45895 terna 202400464_cds_lombardia_all1.pdf",
-    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=479632520&nomeFile=4702407934_via_rel027_sia_.pdf.p7m.p7m",
+    "page": 709,
+    "document": "Documenti in risposta a richiesta di completamento documentale pervenuta via pec dalla Provincia di Pavia in data 29/05/2026 n. protocollo 0033988/2026 - 4702407934_via_rel027_sia_.pdf.p7m.p7m",
+    "excerpt": "ritiene che l’impatto sulla componente in fase di cantiere sarà limitata al solo periodo di attività del cantiere (11 mesi) e avrà estensione esclusivamente locale."
    }
   },
   "milestones": [],
   "document": null,
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "note": null,
   "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 222,
-  "pagine": 140,
+  "pagine": 5525,
   "completa": true
  },
  "confronto": [
@@ -469,12 +918,8 @@
  ],
  "da_verificare": [
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Recapiti",
-   "reason": "55 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "3682 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
