@@ -91,20 +91,19 @@ jobs:
           python-version: '3.11'
       - name: Publish the index of the cards (read by the public page)
         run: |
-          git config user.name "doc-intel-bot"
-          git config user.email "doc-intel-bot@users.noreply.github.com"
-          git fetch origin doc-intel-state:doc-intel-state
-          git worktree add .mem doc-intel-state
+          git config --global user.name "doc-intel-bot"
+          git config --global user.email "doc-intel-bot@users.noreply.github.com"
+          git clone -q --depth 1 --branch doc-intel-state \
+            "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" .mem
           for i in 1 2 3 4 5; do
-            (cd .mem && git pull -q --rebase origin doc-intel-state) || (cd .mem && git rebase --abort 2>/dev/null)
+            # the index is rebuilt from the current cards on every attempt: no merge is ever needed
+            git -C .mem fetch -q --depth 1 origin doc-intel-state
+            git -C .mem reset -q --hard FETCH_HEAD
             python -m doc_intel cards-index --folder .mem/schede --out .mem/schede/live_index.json
-            cd .mem
-            git add schede/live_index.json
-            if git diff --cached --quiet; then echo "index unchanged"; exit 0; fi
-            git commit -q -m "doc-intel: cards index (batch ${{ github.run_id }})"
-            if git push -q origin HEAD:doc-intel-state; then echo "::notice title=cards::index published"; exit 0; fi
-            git reset -q --hard HEAD~1
-            cd ..
+            git -C .mem add schede/live_index.json
+            if git -C .mem diff --cached --quiet; then echo "index unchanged"; exit 0; fi
+            git -C .mem commit -q -m "doc-intel: cards index (batch ${{ github.run_id }})"
+            if git -C .mem push -q origin HEAD:doc-intel-state; then echo "::notice title=cards::index published"; exit 0; fi
             sleep $((i * 10))
           done
           echo "::warning title=cards::index not published"
