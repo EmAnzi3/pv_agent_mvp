@@ -83,7 +83,8 @@
       let ticks = '';
       if (ticksDoc.length) {
         // the document's own timescale ('Mese 1 ... Mese 24', or calendar months): labels thinned to stay legible
-        const every = Math.max(1, Math.ceil(ticksDoc.length / (chartW / 22)));
+        const longest = Math.max(...ticksDoc.map(t => String(t.label).length));
+        const every = Math.max(1, Math.ceil(ticksDoc.length * (longest * 5.6 + 6) / chartW));   // ~5.6 px per character at 10px
         ticksDoc.forEach((t, i) => {
           if (i % every !== 0) return;               // grid and label only where a heading is printed
           ticks += `<line x1="${x(t.start)}" y1="${head - 4}" x2="${x(t.start)}" y2="${bottom}" class="g-grid"/>`;
