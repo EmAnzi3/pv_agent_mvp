@@ -23,21 +23,46 @@ WINDOWS_TESSERACT = (r"C:\Program Files\Tesseract-OCR", r"C:\Program Files (x86)
                      os.path.join(os.environ.get("LOCALAPPDATA", ""), "Programs", "Tesseract-OCR"))
 
 
+def default_store() -> Path:
+    """Memory checkout OUTSIDE the repository: the repo often sits in OneDrive, which locks and syncs
+    thousands of small files (and an old '.doc_intel_store' folder may already be there)."""
+    base = os.environ.get("LOCALAPPDATA") or os.path.expanduser("~/.cache")
+    return Path(base) / "pv_agent" / "memoria_doc_intel"
+
+
+def _rm(path: Path) -> None:
+    """Delete a folder even when Windows marks files read-only; never fail the batch for it."""
+    import stat
+
+    def onerror(func, p, _exc):
+        try:
+            os.chmod(p, stat.S_IWRITE)
+            func(p)
+        except OSError:
+            pass
+    if path.exists():
+        shutil.rmtree(path, onerror=onerror)
+
+
 def _git(*args: str, cwd: str | Path = ".", check: bool = True) -> subprocess.CompletedProcess:
-    return subprocess.run(["git", *args], cwd=str(cwd), check=check, text=True, capture_output=True)
+    res = subprocess.run(["git", *args], cwd=str(cwd), text=True, capture_output=True)
+    if check and res.returncode:
+        raise RuntimeError(f"git {' '.join(args[:2])}: {(res.stderr or res.stdout).strip()[:400]}")
+    return res
 
 
 def _ensure_memory(store: Path) -> None:
-    _git("fetch", "-q", "origin", "doc-intel-state")
+    # fetch into a shared ref (FETCH_HEAD is per worktree and would be stale in the memory checkout)
+    _git("fetch", "-q", "origin", "+refs/heads/doc-intel-state:refs/remotes/origin/doc-intel-state")
     if not (store / ".git").exists():
-        if store.exists():
-            shutil.rmtree(store)
+        _rm(store)
+        store.parent.mkdir(parents=True, exist_ok=True)
         _git("worktree", "prune", check=False)
-        _git("worktree", "add", "--detach", str(store), "FETCH_HEAD")
+        _git("worktree", "add", "--detach", str(store), "origin/doc-intel-state")
     else:
-        _git("reset", "-q", "--hard", "FETCH_HEAD", cwd=store)
+        _git("reset", "-q", "--hard", "origin/doc-intel-state", cwd=store)
     for name in ("blobs", "text"):
-        shutil.rmtree(store / name, ignore_errors=True)
+        _rm(store / name)
 
 
 def _ocr_available() -> bool:
@@ -67,14 +92,14 @@ def _push(store: Path, message: str) -> bool:
     return False
 
 
-def main(data: str, max_items: int, budget_min: float, store_dir: str = ".doc_intel_store",
-         out_dir: str = "reports/doc_intel_local") -> int:
+def main(data: str, max_items: int, budget_min: float, store_dir: str | None = None,
+         out_dir: str | None = None) -> int:
     from .card import build_card, write_card
     from .pipeline import run
     from .queue import plan
     from .sync import build_index
 
-    store = Path(store_dir).resolve()
+    store = Path(store_dir).resolve() if store_dir else default_store()
     print(f"[locale] memoria in {store}")
     _ensure_memory(store)
     ocr = _ocr_available()
@@ -82,7 +107,7 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str = ".doc_in
     items = plan(data, store, max_items=max_items, mode="both", local=True)
     print(f"[locale] progetti in questo blocco: {len(items)}")
     done = 0
-    out = Path(out_dir)
+    out = Path(out_dir) if out_dir else store.parent / "dossier"
     out.mkdir(parents=True, exist_ok=True)
     for n, it in enumerate(items, 1):
         print(f"\n[locale] {n}/{len(items)} {it['url']}")
@@ -103,7 +128,7 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str = ".doc_in
             print(f"[locale]   ERRORE: {str(exc)[:300]}")
         finally:
             for name in ("blobs", "text"):
-                shutil.rmtree(store / name, ignore_errors=True)    # downloaded files are never kept
+                _rm(store / name)                                 # downloaded files are never kept
     idx = build_index(store / "schede")
     (store / "schede" / "live_index.json").write_text(json.dumps(idx, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     ok = _push(store, f"doc-intel memory: local batch ({done} cards)")
