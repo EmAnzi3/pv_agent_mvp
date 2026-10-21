@@ -812,6 +812,8 @@ def _gantt(d: dict, titles: dict) -> dict:
         note = ("Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente)."
                 + (" Il documento è indicato sotto." if sched_doc else ""))
     axis_caption, axis_ticks = None, []
+    axis_unit = {"week": "settimane", "month": "mesi", "day": "giorni"}.get(
+        next((f["value"].get("unit") for f in d["facts"] if f["field"] == "schedule.phase" and f["value"].get("axis_labels")), None))
     if bars and all(b.get("dates") for b in bars):
         # dated programme: calendar months on the axis, as printed in MS Project timescales
         from datetime import date
@@ -832,7 +834,7 @@ def _gantt(d: dict, titles: dict) -> dict:
         else:
             axis_ticks = [{"label": x["label"], "start": x["start"], "end": x["end"]} for x in axis_labels]
     return {"bars": bars, "unit": unit, "months": months, "source": src,
-            "asse": {"titolo": axis_caption, "etichette": axis_ticks} if axis_ticks else None,
+            "asse": {"titolo": axis_caption, "etichette": axis_ticks, "unita": axis_unit} if axis_ticks else None,
             "duration": {"text": dur["text"], "status": dur["status"], "hint": _hint(dur), "source": dur["source"]} if dur else None,
             "milestones": milestones, "document": sched_doc, "note": note, "altri": others,
             "durate_fasi": phase_durations[:30],

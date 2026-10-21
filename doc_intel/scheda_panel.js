@@ -97,7 +97,9 @@
             + `<text x="${x(m)}" y="${head - 8}" class="g-tick" text-anchor="middle">${m}</text>`;
         }
       }
-      const caption = asse && asse.titolo ? asse.titolo : (asse && real.some(b => b.dates) ? '' : (asse ? unit : `${unit} dall'avvio`));
+      // axis caption as printed ('Mese'); for bare numbers the unit of the chart; none for 'W1'/'gen 21' labels
+      const bare = ticksDoc.length && ticksDoc.every(t => /^\d+$/.test(t.label));
+      const caption = asse && asse.titolo ? asse.titolo : (asse ? (bare ? (asse.unita || unit) : '') : `${unit} dall'avvio`);
       const rows = bars.map((b, i) => {
         const y = head + i * rowH, w = Math.max(3, x(b.end) - x(b.start));
         if (b.separator) {
