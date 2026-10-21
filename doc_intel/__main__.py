@@ -65,6 +65,17 @@ def main(argv: list[str] | None = None) -> int:
     c = sub.add_parser("card", help="build the project card (scheda) from a dossier")
     c.add_argument("--dossier", required=True)
     c.add_argument("--out", default="reports/schede")
+    q = sub.add_parser("queue", help="choose the next projects to analyse (new first, then backlog by power)")
+    q.add_argument("--data", required=True)
+    q.add_argument("--memory", required=True, help="checkout of the memory branch (doc-intel-state)")
+    q.add_argument("--max", type=int, default=35)
+    q.add_argument("--mode", default="both", choices=["new", "backlog", "both", "refresh"])
+    q.add_argument("--github-output", default=None, help="file where to write 'matrix=<json>' for GitHub Actions")
+    qs = sub.add_parser("queue-status", help="coverage of the radar by project cards")
+    qs.add_argument("--data", required=True)
+    qs.add_argument("--memory", required=True)
+    sy = sub.add_parser("sync-schede", help="download the published project cards for the dashboard (docs/schede)")
+    sy.add_argument("--out", default="docs/schede")
     m = sub.add_parser("render")
     m.add_argument("--dossier", required=True)
     a = ap.parse_args(argv)
@@ -143,6 +154,31 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         path = write_card(build_card(d), a.out)
         print(f"scheda: {path}")
+        return 0
+    if a.cmd == "queue":
+        from .queue import plan
+        items = plan(a.data, a.memory, max_items=a.max, mode=a.mode)
+        print(json.dumps(items, ensure_ascii=False, indent=1))
+        print(f"::notice title=queue::{len(items)} projects queued "
+              f"({sum(1 for i in items if i['reason'] == 'new')} new, {sum(1 for i in items if i['reason'] == 'backlog')} backlog, "
+              f"{sum(1 for i in items if i['reason'] == 'refresh')} refresh)", file=sys.stderr)
+        if a.github_output:
+            with open(a.github_output, "a", encoding="utf-8") as fh:
+                fh.write("matrix=" + json.dumps({"include": [{"url": i["url"]} for i in items]}) + "\n")
+                fh.write(f"count={len(items)}\n")
+        return 0
+    if a.cmd == "queue-status":
+        from .queue import status
+        st = status(a.data, a.memory)
+        print(json.dumps(st))
+        print(f"::notice title=coverage::{st['with_card']} cards / {st['records']} radar projects; "
+              f"{st['cloud_without_card']} still to analyse in the cloud", file=sys.stderr)
+        return 0
+    if a.cmd == "sync-schede":
+        from .sync import sync_cards
+        res = sync_cards(a.out)
+        print(f"Schede progetto: {res['downloaded']} aggiornate, {res['total']} disponibili"
+              + (f", {res['errors']} non scaricate" if res["errors"] else ""))
         return 0
     if a.cmd == "render":
         d = json.loads(Path(a.dossier).read_text(encoding="utf-8"))

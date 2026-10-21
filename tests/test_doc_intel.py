@@ -1111,3 +1111,64 @@ class GanttHierarchy(unittest.TestCase):
                                ("Progetti esecutivi", 1, False, "40 g", 1, 2), ("Posa FV", 0, True, "300 g", 2, 12),
                                ("Posa pali", 1, False, "120 g", 2, 6)])
         self.assertEqual(g["axis_labels"][0]["label"], "Mese 1")
+
+
+class WorkQueue(unittest.TestCase):
+    def _setup(self, d, records, cards=None, seen=None, attempts=None):
+        data = Path(d) / "data.json"
+        data.write_text(json.dumps({"records": records}), encoding="utf-8")
+        mem = Path(d) / "mem"
+        (mem / "schede").mkdir(parents=True)
+        (mem / "queue").mkdir()
+        for k, meta in (cards or {}).items():
+            (mem / "schede" / meta["file"]).write_text(json.dumps({"project_key": k}))
+        if seen is not None:
+            (mem / "queue" / "seen.json").write_text(json.dumps(seen))
+        if attempts is not None:
+            (mem / "queue" / "attempts.json").write_text(json.dumps(attempts))
+        return data, mem
+
+    def test_new_first_then_backlog_by_power_skipping_cards_recent_and_local_sources(self):
+        from datetime import date
+        from doc_intel.queue import plan
+        R = lambda k, u, mw: {"project_key": k, "url": u, "power_mw": mw}
+        recs = [R("a", "https://va.mite.gov.it/it-IT/Oggetti/Info/1", 10), R("b", "https://va.mite.gov.it/it-IT/Oggetti/Info/2", 90),
+                R("c", "https://va.mite.gov.it/it-IT/Oggetti/Info/3", 50), R("d", "https://si-vvi.regione.sicilia.it/x", 300),
+                R("e", "https://va.mite.gov.it/it-IT/Oggetti/Info/5", 70), R("f", "https://va.mite.gov.it/it-IT/Oggetti/Info/6", 5),
+                R("g", "https://dati.terna.it/x", 400)]
+        with tempfile.TemporaryDirectory() as d:
+            data, mem = self._setup(d, recs, cards={"c": {"file": "c.json"}}, seen={"a": "2026-01-01", "b": "2026-01-01",
+                                    "c": "2026-01-01", "d": "2026-01-01", "e": "2026-01-01", "g": "2026-01-01"},
+                                    attempts={"e": {"last": "2026-10-15", "runs": 1}})
+            items = plan(data, mem, max_items=3, today=date(2026, 10, 21))
+            self.assertEqual([(i["project_key"], i["reason"]) for i in items], [("f", "new"), ("b", "backlog"), ("a", "backlog")])
+            att = json.loads((mem / "queue" / "attempts.json").read_text())
+            self.assertEqual(att["b"]["last"], "2026-10-21")
+            self.assertIn("f", json.loads((mem / "queue" / "seen.json").read_text()))
+
+    def test_sync_downloads_only_changed_cards(self):
+        from doc_intel.sync import sync_cards
+
+        class R:
+            def __init__(self, obj):
+                self.text = json.dumps(obj)
+
+            def json(self):
+                return json.loads(self.text)
+
+            def raise_for_status(self):
+                pass
+        calls = []
+        tree = {"tree": [{"path": "schede/k1.json", "sha": "a1", "type": "blob"}, {"path": "schede/k2.json", "sha": "b2", "type": "blob"},
+                         {"path": "schede/index.json", "sha": "zz", "type": "blob"}, {"path": "manifests/x.json", "sha": "c", "type": "blob"}]}
+
+        def get(u):
+            calls.append(u.rsplit("/", 1)[-1])
+            return R(tree if "trees" in u else {"project_key": u.rsplit("/", 1)[-1][:2], "updated": "2026-10-21"})
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "k2.json").write_text(json.dumps({"project_key": "k2"}))
+            (Path(d) / ".hashes.json").write_text(json.dumps({"k2.json": "b2"}))
+            res = sync_cards(d, tree_url="https://api/git/trees/x", raw_base="https://raw/", get=get)
+            self.assertEqual(res, {"downloaded": 1, "total": 2, "errors": 0})
+            self.assertEqual(calls, ["x", "k1.json"])
+            self.assertEqual(set(json.loads((Path(d) / "index.json").read_text())), {"k1", "k2"})

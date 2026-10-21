@@ -50,7 +50,7 @@
       ? `<ul class="sc-clist">${e.contacts.map(contactRow).join('')}</ul>`
       : '<p class="sc-none">Nessun recapito associato negli elaborati.</p>';
     return `<article class="sc-co">
-      <header><h4>${esc(e.name)}</h4>${e.kind === 'persona' ? '<span class="sc-kind">professionista</span>' : ''}</header>
+      <div class="sc-cohead"><h4>${esc(e.name)}</h4>${e.kind === 'persona' ? '<span class="sc-kind">professionista</span>' : ''}</div>
       ${roles ? `<div class="sc-roles">${roles}</div>` : ''}
       ${meta.length ? `<div class="sc-meta">${meta.join(' · ')}</div>` : ''}
       ${contacts}</article>`;
@@ -180,7 +180,7 @@
       ? `<section class="sc-sec"><h3>Da verificare</h3><ul class="sc-open">${card.da_verificare.map(o =>
         `<li><strong>${esc(o.label)}</strong>: ${esc(o.reason)}</li>`).join('')}</ul></section>` : '';
     return `
-      <header class="sc-top">
+      <div class="sc-top">
         <div class="sc-eyebrow">Scheda progetto</div>
         <h2 id="scTitle">${esc(card.title)}</h2>
         ${place ? `<div class="sc-place">${esc(place)}</div>` : ''}
@@ -189,7 +189,7 @@
           ${href ? `<a class="sc-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer">Procedimento ufficiale</a>` : ''}
           ${maps ? `<a class="sc-link" href="${esc(maps)}" target="_blank" rel="noopener noreferrer">Google Maps</a>` : ''}
         </div>
-      </header>
+      </div>
       ${tiles(card.sintesi)}
       <div class="sc-body">${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
         <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.completa ? '' : ' (lettura incompleta)'};

@@ -45,6 +45,11 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 - Adapter implementato: MASE (scheda progetto e provvedimento). Fonti regionali: inventario e priorità in `experiments/DOC-INTEL-AUDIT.md`; Piemonte bloccata finché i record non portano l'URL della singola pratica.
 - Test offline: `python -m unittest tests.test_doc_intel`. Run reali solo su GitHub Actions (`doc-intel-run.yml`), store in `actions/cache`.
 - Documenti scaricati eliminati dopo l'analisi; memoria dei progetti (manifest, fatti, cache VIES) sul branch `doc-intel-state`, aggiornata dai run manuali di `doc-intel-run.yml`. Rielaborazione solo per documenti nuovi o modificati.
+- Schede progetto (`doc_intel/card.py`, pannello `doc_intel/scheda_panel.js/.css` incluso dal generatore della dashboard):
+  - costruzione su GitHub Actions con `doc-intel-batch.yml`: nuovi progetti a ogni push di `docs/data.json` (fino a 60), arretrato ogni notte alle 01:00 (35 progetti, 5 in parallelo, potenza decrescente), avvio manuale con `mode=new|backlog|both|refresh`;
+  - stato della coda sul branch `doc-intel-state` (`queue/seen.json`, `queue/attempts.json`); un progetto tentato senza esito viene ritentato dopo 14 giorni;
+  - fonti in cloud: MASE, Lazio (Box), Emilia-Romagna, Veneto. Sicilia, Sistema Puglia e Basilicata rifiutano IP esteri: richiederanno il runner locale (da attivare con i rispettivi adapter);
+  - `aggiorna_dashboard_senza_docker.bat` passo `[6B/8]`: `python -m doc_intel sync-schede --out docs\schede` scarica solo le schede nuove o modificate; la dashboard mostra il pulsante «Scheda» per i progetti presenti in `docs/schede/index.json`.
 - Tortona 2 (MASE 8788): dossier `experiments/MASE-8788-DOSSIER.md` / `.json` (run 39266857390, stato ready_for_human_review). P. IVA verificate su VIES: la toolbox interroga VIES (`--registry vies`) per ogni P. IVA estratta, con cache di 30 giorni.
 
 ## Problemi aperti

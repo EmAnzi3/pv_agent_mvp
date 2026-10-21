@@ -51,7 +51,7 @@
 /* società */
 .sc-cos { display: grid; gap: 10px; }
 .sc-co { border: 1px solid var(--border-soft, #edf1f5); border-radius: 10px; padding: 10px 12px; display: grid; gap: 6px; }
-.sc-co header { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.sc-co .sc-cohead { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
 .sc-co h4 { margin: 0; font-size: 15px; overflow-wrap: anywhere; }
 .sc-kind { font-size: 11px; color: var(--muted, #64748b); }
 .sc-roles { display: flex; flex-wrap: wrap; gap: 4px; }
@@ -114,3 +114,11 @@
 .g-cap { font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
 .g-val { fill: var(--steel, #334155); font-size: 10px; font-variant-numeric: tabular-nums; }
 .g-sep { stroke: var(--border, #dfe5eb); stroke-width: 1; }
+
+/* isolation from the host page (the dashboard styles bare header, table, th, td and a elements) */
+.sc-panel { font-family: inherit; text-align: left; }
+.sc-panel a { font-weight: inherit; }
+.sc-panel .sc-link { font-weight: 700; }
+.sc-panel .g-dt th { position: static; background: transparent; padding: 4px 6px; color: var(--muted, #64748b); }
+.sc-panel .g-dt td { padding: 4px 6px; vertical-align: baseline; }
+.sc-panel tr:hover td { background: transparent; }

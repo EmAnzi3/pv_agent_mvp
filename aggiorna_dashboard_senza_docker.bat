@@ -530,6 +530,19 @@ echo - docs\index.html
 
 echo.
 echo ==========================================================
+echo [6B/8] Schede progetto (analisi documentale)
+echo ==========================================================
+REM Le schede si costruiscono nel cloud (GitHub Actions): i nuovi progetti partono da soli
+REM dopo il push di docs\data.json da GitHub Desktop, l'arretrato procede ogni notte.
+REM Qui si scaricano soltanto le schede pronte in docs\schede: pochi secondi, mai bloccante.
+"%PYTHON_EXE%" -m doc_intel sync-schede --out ".\docs\schede"
+if errorlevel 1 (
+    echo ATTENZIONE: schede progetto non aggiornate ^(rete o GitHub non raggiungibile^).
+    echo La dashboard e' comunque aggiornata; le schede arriveranno al prossimo run.
+)
+
+echo.
+echo ==========================================================
 echo [7/8] Apertura report locale
 echo ==========================================================
 

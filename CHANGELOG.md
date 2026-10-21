@@ -4,6 +4,7 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-21 — Schede progetto in dashboard: pulsante «Scheda» accanto ad «Apri» per i progetti analizzati (sintesi, società e contatti, cronoprogramma, ubicazione per lotto, stato del progetto). Le schede si costruiscono su GitHub Actions: i nuovi progetti dopo il push di `docs/data.json`, l'arretrato ogni notte (35 progetti, potenza decrescente). Nuovo passo `[6B/8]` in `aggiorna_dashboard_senza_docker.bat` che scarica in `docs/schede` le schede pronte.
 - doc-intel: scheda progetto v2 (sintesi dei dati essenziali, società con i rispettivi contatti, Gantt ricostruito dal cronoprogramma vettoriale o dalle tabelle con date, ubicazione con link a Google Maps); rianalisi selettiva dei documenti (`--reanalyse-match`).
 - 2026-10-20 — `doc_intel`: i documenti originali vengono eliminati dopo l'estrazione; memoria persistente per progetto (manifest, fatti per SHA-256) con rilevamento di documenti nuovi, modificati o rimossi; adapter regionali Emilia-Romagna, Lazio (Box), Veneto (Nextcloud), regole Basilicata e Sistema Puglia.
 - 2026-10-19 — `doc_intel`: run resumibili entro i limiti CI, controllo anagrafico P. IVA su VIES, correzioni di precisione dai primi run reali; dossier Tortona 2 chiuso per review umana.

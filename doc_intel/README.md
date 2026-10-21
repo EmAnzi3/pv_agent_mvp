@@ -36,6 +36,13 @@ In CI: `doc-intel-tests.yml` (offline, con e senza PyMuPDF) e `doc-intel-run.yml
 
 La memoria (manifest + fatti + cache VIES, pochi MB) è persistita sul branch `doc-intel-state`; i documenti non vengono mai salvati in Git né conservati sul runner. `--reanalyse` rianalizza con le regole correnti (riscaricando), `--verify-content` riscarica per confrontare lo SHA-256 anche se il server non segnala modifiche.
 
+## Schede in dashboard e coda di lavoro
+
+- `python -m doc_intel queue --data docs/data.json --memory <checkout doc-intel-state> --max 35 --mode both`: sceglie i progetti del lotto (nuovi prima, poi arretrato per potenza; esclusi quelli con scheda, quelli tentati negli ultimi 14 giorni e le fonti che filtrano IP esteri).
+- `python -m doc_intel queue-status ...`: copertura del radar con schede.
+- `python -m doc_intel sync-schede --out docs/schede`: scarica dal branch di memoria le schede nuove o modificate e ricostruisce `docs/schede/index.json`.
+- Workflow `doc-intel-batch.yml`: notturno, al push di `docs/data.json` e manuale; ogni progetto è un'esecuzione di `doc-intel-run.yml` (riutilizzabile), 5 in parallelo.
+
 ## Persistenza e costi
 
 Store content-addressed (`blobs/`, `text/`, `manifests/`) fuori da Git, persistito con `actions/cache`. Un URL già in manifest non viene riscaricato; un contenuto già parsato non viene rielaborato; `--refresh` rileva revisioni (SHA diverso → `history`). OCR solo su pagine senza testo utile, con budget (`--ocr-max-pages`) e cap pixel per le tavole grandi. Nessun servizio a pagamento.

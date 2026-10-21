@@ -31,6 +31,16 @@ on:
         description: 'ubuntu-latest, or self-hosted (Italian network, for portals that filter foreign IPs)'
         required: false
         default: 'ubuntu-latest'
+  workflow_call:
+    # used by doc-intel-batch.yml (one project per call, run in parallel from the queue)
+    inputs:
+      url: {type: string, required: true}
+      gold: {type: string, required: false, default: ''}
+      ocr_max_pages: {type: string, required: false, default: '1000'}
+      time_budget_min: {type: string, required: false, default: '200'}
+      reanalyse_match: {type: string, required: false, default: ''}
+      reanalyse: {type: string, required: false, default: 'no'}
+      runner: {type: string, required: false, default: 'ubuntu-latest'}
   pull_request:
     paths:
       - 'doc_intel/**'
@@ -117,7 +127,7 @@ jobs:
   manual:
     # Production path: originals are deleted after analysis; the memory of what was found,
     # downloaded and analysed (manifests + extracted facts + VIES cache) lives on branch doc-intel-state.
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name != 'pull_request'
     runs-on: ${{ inputs.runner }}
     concurrency:
       group: doc-intel-memory-${{ inputs.url }}
@@ -177,12 +187,14 @@ jobs:
           cd .doc_intel_store
           echo "worktree: $(git rev-parse --show-toplevel) branch: $(git rev-parse --abbrev-ref HEAD)"
           rm -rf blobs text
+          grep -qx 'schede/index.json' .gitignore 2>/dev/null || echo 'schede/index.json' >> .gitignore
+          git rm -q --cached --ignore-unmatch schede/index.json
           git add -A
           n=$(git diff --cached --name-only | wc -l)
           if [ "$n" = "0" ]; then echo "::notice title=memory::unchanged"; exit 0; fi
           git commit -q -m "doc-intel memory: ${{ inputs.url }} (run ${{ github.run_id }})"
           for i in 1 2 3 4 5 6; do
-            git pull -q --rebase origin doc-intel-state || git rebase --abort 2>/dev/null
+            git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
             if git push -q origin HEAD:doc-intel-state; then
               echo "::notice title=memory::saved $n files at $(git rev-parse --short HEAD)"; exit 0
             fi
