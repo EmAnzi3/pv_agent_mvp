@@ -200,6 +200,10 @@ jobs:
           git commit -q -m "doc-intel memory: ${{ inputs.url }} (run ${{ github.run_id }})"
           for i in 1 2 3 4 5 6; do
             git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
+            # keep the public card index current (rebuilt from all cards after the rebase)
+            (cd "$GITHUB_WORKSPACE" && python -m doc_intel cards-index --folder .doc_intel_store/schede \
+               --out .doc_intel_store/schede/live_index.json >/dev/null 2>&1) \
+              && git add schede/live_index.json && { git diff --cached --quiet || git commit -q -m "doc-intel: cards index"; }
             if git push -q origin HEAD:doc-intel-state; then
               echo "::notice title=memory::saved $n files at $(git rev-parse --short HEAD)"; exit 0
             fi

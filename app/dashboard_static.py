@@ -2177,10 +2177,9 @@ __SCHEDA_CSS__
       .then(([local, live]) => {
         const merged = {};
         Object.entries(live || {}).forEach(([k, v]) => { merged[k] = Object.assign({}, v, { live: true }); });
-        Object.entries(local || {}).forEach(([k, v]) => {
-          const l = merged[k];
-          if (!l || !l.updated || (v.updated && v.updated >= l.updated)) merged[k] = v;   // newer copy wins
-        });
+        // the cloud copy is always the latest (cards are rebuilt there several times a day):
+        // the copy published with the dashboard is used only for cards the cloud index does not list
+        Object.entries(local || {}).forEach(([k, v]) => { if (!merged[k]) merged[k] = v; });
         schedeIndex = merged;
         if (Object.keys(schedeIndex).length) {
           initTopProjects();
