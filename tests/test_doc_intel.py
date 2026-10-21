@@ -1398,3 +1398,27 @@ class MaseNewLayout(unittest.TestCase):
         self.assertIn('denominato "BIDDINE"', i.title)
         self.assertEqual(i.proponent, "Renantis Sicilia S.r.l.")
         self.assertTrue(i.municipalities)
+
+
+class FillRadarFromCards(unittest.TestCase):
+    def test_only_empty_fields_are_filled(self):
+        from doc_intel.fill import fill_radar
+        with tempfile.TemporaryDirectory() as t:
+            t = Path(t)
+            (t / "schede").mkdir()
+            (t / "schede" / "a.json").write_text(json.dumps({"project_key": "a", "updated": "2026-10-21",
+                "sintesi": [{"key": "potenza", "value": "11,145 MWp", "status": "da documenti"}],
+                "ubicazione": {"regione": "Veneto", "provincia": "RO", "comuni": ["Loreo", "Adria"]}}))
+            (t / "schede" / "b.json").write_text(json.dumps({"project_key": "b", "updated": "2026-10-21",
+                "sintesi": [{"key": "potenza", "value": "26,618 MW", "status": "da documenti"}], "ubicazione": {}}))
+            data = {"records": [{"project_key": "a", "power_mw": None, "region": "", "province": "", "municipalities": "Loreo, Adria"},
+                                {"project_key": "b", "power_mw": 266.618}],
+                    "top_projects": [{"project_key": "a", "power_mw": None}]}
+            (t / "data.json").write_text(json.dumps(data))
+            res = fill_radar(t / "data.json", t / "schede", t / "audit.csv")
+            out = json.loads((t / "data.json").read_text())
+        a, b = out["records"]
+        self.assertEqual((a["power_mw"], a["region"], a["province"], a["municipalities"]), (11.145, "Veneto", "RO", "Loreo, Adria"))
+        self.assertEqual(b["power_mw"], 266.618)                    # existing value never overwritten
+        self.assertEqual(out["top_projects"][0]["power_mw"], 11.145)
+        self.assertEqual((res["filled"], res["differences"]), (3, 1))
