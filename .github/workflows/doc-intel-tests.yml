@@ -22,8 +22,11 @@ jobs:
         run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ita poppler-utils
       - run: python -m pip install pymupdf pypdf requests beautifulsoup4 reportlab
       - name: Unit and integration tests (no network)
-        run: python -m unittest -v tests.test_doc_intel tests.test_evidence_toolbox
+        run: |
+          python -m unittest tests.test_doc_intel tests.test_evidence_toolbox 2>&1 | tee ut.log \
+            || { echo "::error title=unit-failed::$(grep -E -A12 '^(FAIL|ERROR):' ut.log | head -c 3500 | tr '\n' ' ')"; exit 1; }
       - name: Same tests without PyMuPDF (fallback backends)
         run: |
           python -m pip uninstall -y pymupdf
-          python -m unittest tests.test_doc_intel
+          python -m unittest tests.test_doc_intel 2>&1 | tee ut2.log \
+            || { echo "::error title=unit-nofitz-failed::$(grep -E -A12 '^(FAIL|ERROR):' ut2.log | head -c 3500 | tr '\n' ' ')"; exit 1; }
