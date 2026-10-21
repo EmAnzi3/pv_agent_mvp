@@ -22,7 +22,7 @@
   {
    "key": "impianto",
    "label": "Impianto",
-   "value": "Agrivoltaico",
+   "value": "Agrivoltaico · tracker monoassiali",
    "status": "da documenti",
    "source": {
     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=508466626&nomeFile=0186835_20.10.2026_ver0634-mi_agrivoltaico%20assago_avvio.pdf",
@@ -35,13 +35,52 @@
    "key": "area",
    "label": "Superficie complessiva",
    "value": "36 ha",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 120 ha (4)",
    "source": {
     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=508466626&nomeFile=0186835_20.10.2026_ver0634-mi_agrivoltaico%20assago_avvio.pdf",
     "page": 2,
     "document": "Avviso di avvenuto deposito istanza, avvio del procedimento e richiesta contributi o pareri - 0186835_20.10.2026_ver0634-mi_agrivoltaico assago_avvio.pdf",
     "excerpt": "di connessione alla rete elettrica. L'intervento interessa una superficie complessiva di circa 36 ettari e prevede l’installazione di un generatore fotovoltaico di potenza nominale pari a 20,4456 MWp, associato ad un sis"
+   }
+  },
+  {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "8 ha",
+   "status": "da verificare",
+   "sub": "22% dell'area · Valore più ricorrente negli elaborati; altri valori: 36 ha (1)",
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507297000&nomeFile=da10ra01b_studio%20preliminare%20ambientale_signed-signed.pdf",
+    "page": 69,
+    "document": "SPA, previsionale acustico e geologica R3 - da10ra01b_studio preliminare ambientale_signed-signed.pdf",
+    "excerpt": "occupano il 44,4% della superficie dell’area di sviluppo del progetto. La superficie pannellata è limitata a ca 8 ha. Si introduce esclusivamente una trasformazione di entità contenuta, limitata alla fase di esercizio, d"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "20,44 MW / 32,19 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 7,416 MW (27), 19,8 MW (2), 7,522 MW (1)",
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507297000&nomeFile=da10ra01b_studio%20preliminare%20ambientale_signed-signed.pdf",
+    "page": 5,
+    "document": "SPA, previsionale acustico e geologica R3 - da10ra01b_studio preliminare ambientale_signed-signed.pdf",
+    "excerpt": "PROGETTO IMPIANTO AGRIVOLTAICO CON POTENZA DI 20,44 MW CON SISTEMA DI ACCUMULO CONNESSO ALLA R.T.N. IN COMUNE DI ASSAGO (MI), località BAZZANELLA"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "170 giorni (circa 6 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 settimane (circa 2 mesi) (2), 5 settimane (2), 34 settimane (circa 8 mesi) (1)",
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507296959&nomeFile=da10ra01a_studio%20preliminare%20ambientale_signed-signed.pdf",
+    "page": 30,
+    "document": "SPA, previsionale acustico e geologica R3 - da10ra01a_studio preliminare ambientale_signed-signed.pdf",
+    "excerpt": "Cronoprogramma delle lavorazioni La durata dei lavori per la realizzazione dell’impianto agrivoltaico è stimata in 170 giorni lavorativi. In Tabella 2.5 è possibile consultare un cronoprogramma indicativo delle lavorazio"
    }
   }
  ],
@@ -51,13 +90,83 @@
   "comuni": [
    "Assago"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Assago%2C+MI%2C+Lombardia",
-  "maps_precision": "comune",
-  "connessione": null,
+  "coordinate": {
+   "lat": 45.38635,
+   "lon": 9.12821,
+   "tipo": "centro del perimetro pubblicato dal portale regionale (42 riferimenti concordi)",
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaviewer40/?config=config_read.json&parameters=%7B'serviceLMOperator':'include','appProcedura':%7B'id_procedura':'21007'%7D%7D",
+    "page": null,
+    "document": "documento",
+    "excerpt": "perimetro pubblicato dal portale regionale"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=45.38635,9.12821",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": "https://www.silvia.servizirl.it/silviaviewer40/?config=config_read.json&parameters=%7B'serviceLMOperator':'include','appProcedura':%7B'id_procedura':'21007'%7D%7D",
+  "connessione": {
+   "lat": 45.39854,
+   "lon": 9.13422,
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507295036&nomeFile=da10re01_relazione%20campi%20elettromagnetici-signed.pdf",
+    "page": 9,
+    "document": "Documentazione tecnica di progetto - da10re01_relazione campi elettromagnetici-signed.pdf",
+    "excerpt": "45.398544, 9.134223"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=45.39854,9.13422"
+  },
   "lotti": []
  },
  "soggetti": [
+  {
+   "name": "agricola S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "labazzanellasrl@legalmail.it",
+     "occurrences": 233,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507295334&nomeFile=da10ru01_relazione%20enac-signed.pdf",
+      "page": 3,
+      "document": "Documentazione tecnica di progetto - da10ru01_relazione enac-signed.pdf",
+      "excerpt": "La Bazzanella Società agricola Srl Via Pantano, 2, 20122, Milano (MI) P.IVA 00740510961 Indirizzo PEC: labazzanellasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=508466626&nomeFile=0186835_20.10.2026_ver0634-mi_agrivoltaico%20assago_avvio.pdf",
+    "page": 1,
+    "document": "Avviso di avvenuto deposito istanza, avvio del procedimento e richiesta contributi o pareri - 0186835_20.10.2026_ver0634-mi_agrivoltaico assago_avvio.pdf",
+    "excerpt": "Proponente: La Bazzanella Società Agricola S.r.l. e OPERATION ENERGY S.r.l."
+   }
+  },
+  {
+   "name": "Open S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507297000&nomeFile=da10ra01b_studio%20preliminare%20ambientale_signed-signed.pdf",
+    "page": 4,
+    "document": "SPA, previsionale acustico e geologica R3 - da10ra01b_studio preliminare ambientale_signed-signed.pdf",
+    "excerpt": "Committente Open Srl, Piazza Carlo Mirabello, 2 - 20121 Milano (MI)"
+   }
+  },
   {
    "name": "Operation Energy S.R.L., O IN Forma ABBREVIATA, Open S.r.l.",
    "kind": "società",
@@ -68,32 +177,49 @@
    "vat_group": false,
    "verified": false,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "operationenergy@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=465803115&nomeFile=da10dw01_ricevuta%20verifica%20sussistenza%20vincoli.pdf.p7m",
+      "page": 1,
+      "document": "Ricevuta verifica sussistenza vincoli - da10dw01_ricevuta verifica sussistenza vincoli.pdf.p7m",
+      "excerpt": "operationenergy@pec.it"
+     }
+    }
+   ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=21007&idProvenienza=2"
    }
-  },
+  }
+ ],
+ "altri_soggetti": [
   {
-   "name": "Agricola S.r.l.",
+   "name": "Landshape S.r.l.",
    "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
+   "roles": [],
    "vat": null,
    "vat_group": false,
    "verified": false,
    "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=508466626&nomeFile=0186835_20.10.2026_ver0634-mi_agrivoltaico%20assago_avvio.pdf",
-    "page": 1,
-    "document": "Avviso di avvenuto deposito istanza, avvio del procedimento e richiesta contributi o pareri - 0186835_20.10.2026_ver0634-mi_agrivoltaico assago_avvio.pdf",
-    "excerpt": "Proponente: La Bazzanella Società Agricola S.r.l. e OPERATION ENERGY S.r.l."
-   }
-  }
- ],
- "altri_soggetti": [
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@landshape.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507297472&nomeFile=da10ra07_relazione%20di%20impatto%20acustico__signed-signed.pdf",
+      "page": 5,
+      "document": "SPA, previsionale acustico e geologica R3 - da10ra07_relazione di impatto acustico__signed-signed.pdf",
+      "excerpt": "Via Senato, 45 – Milano – Italia e-mail: info@landshape.it"
+     }
+    }
+   ],
+   "source": null
+  },
   {
    "name": "Arch. Francesca Valentina Gobbato",
    "kind": "persona",
@@ -139,6 +265,17 @@
    "contacts": [
     {
      "type": "PEC",
+     "value": "duereti@pec.duereti.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=508466626&nomeFile=0186835_20.10.2026_ver0634-mi_agrivoltaico%20assago_avvio.pdf",
+      "page": 1,
+      "document": "Avviso di avvenuto deposito istanza, avvio del procedimento e richiesta contributi o pareri - 0186835_20.10.2026_ver0634-mi_agrivoltaico assago_avvio.pdf",
+      "excerpt": "Duereti S.r.l. duereti@pec.duereti.it"
+     }
+    },
+    {
+     "type": "PEC",
      "value": "serravalle@pec.serravalle.it",
      "occurrences": 1,
      "source": {
@@ -149,14 +286,14 @@
      }
     },
     {
-     "type": "PEC",
-     "value": "duereti@pec.duereti.it",
+     "type": "E-mail",
+     "value": "riccardo.rossini@duereti.it",
      "occurrences": 1,
      "source": {
-      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=508466626&nomeFile=0186835_20.10.2026_ver0634-mi_agrivoltaico%20assago_avvio.pdf",
-      "page": 1,
-      "document": "Avviso di avvenuto deposito istanza, avvio del procedimento e richiesta contributi o pareri - 0186835_20.10.2026_ver0634-mi_agrivoltaico assago_avvio.pdf",
-      "excerpt": "Duereti S.r.l. duereti@pec.duereti.it"
+      "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=465803142&nomeFile=da10cu03_preventivo%20stmg.pdf.p7m",
+      "page": 8,
+      "document": "Altri documenti tecnici in allegato:\nPreventivo STMG\nCertificato di destinazione urbanistica\nElenco elaborati progetto - da10cu03_preventivo stmg.pdf.p7m",
+      "excerpt": "Rossini Riccardo riccardo.rossini@duereti.it"
      }
     }
    ],
@@ -169,19 +306,45 @@
   "bars": [],
   "unit": "month",
   "months": 1,
-  "source": null,
+  "source": {
+   "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507297000&nomeFile=da10ra01b_studio%20preliminare%20ambientale_signed-signed.pdf",
+   "page": 117,
+   "document": "SPA, previsionale acustico e geologica R3 - da10ra01b_studio preliminare ambientale_signed-signed.pdf",
+   "excerpt": ""
+  },
   "asse": null,
-  "duration": null,
+  "duration": {
+   "text": "170 giorni (circa 6 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 settimane (circa 2 mesi) (2), 5 settimane (2), 34 settimane (circa 8 mesi) (1)",
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507296959&nomeFile=da10ra01a_studio%20preliminare%20ambientale_signed-signed.pdf",
+    "page": 30,
+    "document": "SPA, previsionale acustico e geologica R3 - da10ra01a_studio preliminare ambientale_signed-signed.pdf",
+    "excerpt": "Cronoprogramma delle lavorazioni La durata dei lavori per la realizzazione dell’impianto agrivoltaico è stimata in 170 giorni lavorativi. In Tabella 2.5 è possibile consultare un cronoprogramma indicativo delle lavorazio"
+   }
+  },
   "milestones": [],
   "document": null,
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
   "altri": [],
-  "durate_fasi": [],
+  "durate_fasi": [
+   {
+    "name": "e successivamente ogni",
+    "duration": "12 mesi",
+    "months": 12.0
+   },
+   {
+    "name": "successivo e successivamente ogni",
+    "duration": "12 mesi",
+    "months": 12.0
+   }
+  ],
   "metodo": null
  },
  "documentazione": {
-  "documenti": 1,
-  "pagine": 3,
+  "documenti": 55,
+  "pagine": 1278,
   "completa": true
  },
  "confronto": [
@@ -213,8 +376,24 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Superficie coperta dai pannelli",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "10 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "32 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
