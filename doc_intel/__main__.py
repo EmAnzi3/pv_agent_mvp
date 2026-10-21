@@ -70,6 +70,7 @@ def main(argv: list[str] | None = None) -> int:
     q.add_argument("--memory", required=True, help="checkout of the memory branch (doc-intel-state)")
     q.add_argument("--max", type=int, default=35)
     q.add_argument("--mode", default="both", choices=["new", "backlog", "both", "refresh"])
+    q.add_argument("--retry-days", type=int, default=14, help="skip projects attempted in the last N days")
     q.add_argument("--github-output", default=None, help="file where to write 'matrix=<json>' for GitHub Actions")
     qs = sub.add_parser("queue-status", help="coverage of the radar by project cards")
     qs.add_argument("--data", required=True)
@@ -173,7 +174,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if a.cmd == "queue":
         from .queue import plan
-        items = plan(a.data, a.memory, max_items=a.max, mode=a.mode)
+        items = plan(a.data, a.memory, max_items=a.max, mode=a.mode, retry_days=a.retry_days)
         print(json.dumps(items, ensure_ascii=False, indent=1))
         print(f"::notice title=queue::{len(items)} projects queued "
               f"({sum(1 for i in items if i['reason'] == 'new')} new, {sum(1 for i in items if i['reason'] == 'backlog')} backlog, "
