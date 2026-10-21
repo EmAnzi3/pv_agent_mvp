@@ -48,6 +48,10 @@ def explore(url: str, render: bool = True, follow: int = 4, timeout: int = 45) -
                             if re.search(r"(?i)(ng-href|ng-click|onclick|href|action)=.*(download|file|allegat|document|getDoc|\.pdf)", ln)][:120]
         if html[:1].strip() in ("{", "[") and len(html) < 600_000:
             rep["json_body"] = html
+        # map / GIS hooks (viewer links, WMS/WFS/ArcGIS endpoints, layer configs)
+        rep["map_hits"] = sorted({m.strip()[:300] for m in re.findall(
+            r"[^\n]{0,160}(?:mappa|viewer|wfs|wms|MapServer|FeatureServer|geoserver|config_[a-z]+\.json|geometr)[^\n]{0,160}",
+            html, flags=re.I)})[:150]
     except Exception as exc:
         rep["error"] = str(exc)[:300]
         links = []
@@ -91,6 +95,8 @@ def _render(url: str, timeout: int) -> list[dict] | dict:
                         return
                     hits = [ln.strip()[:300] for ln in body.splitlines()
                             if re.search(r"(?i)download|scarica|edma|allegat|document|getFile|\.html\?", ln)]
+                    hits += sorted({m[:300] for m in re.findall(
+                        r".{0,140}(?:wfs|wms|MapServer|FeatureServer|geoserver|config_read|getFeature|idProgetto|codProcedura).{0,140}", body, flags=re.I)})[:80]
                     if hits:
                         calls.append({"script": resp.url[:300], "lines": hits[:150]})
                     return
