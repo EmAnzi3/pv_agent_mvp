@@ -66,6 +66,9 @@ class SilviaAdapter(DocumentAdapter):
         p = sheet.get("progetto") or {}
         props = [re.sub(r"^(Azienda|Ente)\s*:\s*", "", x.get("descrEnteAzienda") or "").strip()
                  for x in sheet.get("listProponenti") or [] if x.get("descrEnteAzienda")]
+        # 'OPERATION ENERGY S.R.L., O IN FORMA ABBREVIATA, OPEN S.R.L.' -> the registered name only
+        props = [re.split(r"(?i),?\s*(?:o\s+)?in\s+forma\s+abbreviata\b", x)[0].strip(" ,") for x in props]
+        props = list(dict.fromkeys(x for x in props if x))
         title = p.get("descrProgetto")
         munis, prov = [], None
         mm = re.search(r"(?i)\bcomun[ei]\s+di\s+([A-ZÀ-Ýa-zà-ÿ' ]+?)\s*\(([A-Z]{2})\)", title or "")
