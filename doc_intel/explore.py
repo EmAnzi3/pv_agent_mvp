@@ -78,6 +78,17 @@ def _render(url: str, timeout: int) -> list[dict] | dict:
 
             def on_response(resp):
                 rt = resp.request.resource_type
+                if rt == "script":
+                    # lines of the app code that build download / document URLs
+                    try:
+                        body = resp.text()
+                    except Exception:
+                        return
+                    hits = [ln.strip()[:300] for ln in body.splitlines()
+                            if re.search(r"(?i)download|scarica|edma|allegat|document|getFile|\.html\?", ln)]
+                    if hits:
+                        calls.append({"script": resp.url[:300], "lines": hits[:150]})
+                    return
                 if rt not in ("xhr", "fetch", "document"):
                     return
                 item = {"url": resp.url[:400], "status": resp.status, "type": resp.headers.get("content-type", ""),
@@ -85,6 +96,8 @@ def _render(url: str, timeout: int) -> list[dict] | dict:
                 try:
                     body = resp.text()
                     item["body_head"] = body[:2500]
+                    if body[:1].strip() in ("{", "[") and len(body) < 600_000:
+                        item["json_body"] = body           # full API answers: the document lists live here
                     item["body_len"] = len(body)
                 except Exception:
                     pass
