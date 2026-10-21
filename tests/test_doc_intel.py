@@ -1272,3 +1272,37 @@ class ApiPortalAdapters(unittest.TestCase):
         point, kind, *_ = _site_point({"facts": [f]}, {})
         self.assertAlmostEqual(point[0], 43.258, places=2)
         self.assertIn("portale regionale", kind)
+
+
+class CrossSourceDedupe(unittest.TestCase):
+    """Same plant in a register and in a procedure portal: one radar record, the procedure as its address."""
+
+    def test_register_and_procedure_merge(self):
+        from app.data_quality import dedupe_projects
+        rows = [
+            {"source": "toscana_atos", "title": "AGRI PADULE", "proponent": "REVALUE PV1 S.R.L.", "region": "Toscana",
+             "province": "SI", "municipalities": "Sovicille", "power_mw": 128.03,
+             "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481"},
+            {"source": "toscana", "title": "[ID 2496] - Progetto di un impianto agrivoltaico avanzato da 128 MWp, Comune di Sovicille (SI)",
+             "proponent": "REVALUE PV 1 S.R.L.", "region": "Toscana", "province": "SI", "municipalities": "SOVICILLE",
+             "power_mw": 128.0, "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110"},
+            {"source": "toscana", "title": "[ID 2501] - Altro impianto agrivoltaico, Comune di Sovicille (SI)",
+             "proponent": "REVALUE PV 1 S.R.L.", "region": "Toscana", "province": "SI", "municipalities": "SOVICILLE",
+             "power_mw": 40.0, "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/120"},
+        ]
+        merged, accepted, _ = dedupe_projects(rows)
+        self.assertEqual(len(merged), 2)
+        m = next(r for r in merged if r.get("_dedupe_group_size") == 2)
+        self.assertTrue(m["url"].endswith("/110"))
+        self.assertEqual(len(m["_dedupe_urls"]), 2)
+
+    def test_queue_skips_register_only(self):
+        import tempfile
+        from doc_intel.queue import plan
+        with tempfile.TemporaryDirectory() as t:
+            data = Path(t) / "data.json"
+            data.write_text(json.dumps({"records": [
+                {"project_key": "a", "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12240", "power_mw": 98},
+                {"project_key": "b", "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110", "power_mw": 128}]}))
+            items = plan(data, Path(t) / "mem", max_items=10, record=False)
+        self.assertEqual([i["project_key"] for i in items], ["b"])

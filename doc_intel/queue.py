@@ -15,6 +15,7 @@ Rules
 from __future__ import annotations
 
 import json
+import re
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
@@ -22,6 +23,7 @@ from typing import Any
 from .adapters import REGISTRY
 
 LOCAL_ONLY_HOSTS = ("regione.sicilia.it", "sistema.puglia.it", "regione.basilicata.it")
+REGISTER_ONLY = re.compile(r"^https?://atos\.arrr\.it/")
 
 
 def _adapter_for(url: str):
@@ -78,6 +80,10 @@ def plan(data_json: str | Path, memory_dir: str | Path, max_items: int = 35, mod
             seen[key] = today.isoformat()
         if any(h in url for h in LOCAL_ONLY_HOSTS) or _adapter_for(url) is None:
             continue
+        if REGISTER_ONLY.search(url):
+            # a register sheet alone has no documents: the plant waits until the authority publishes a
+            # procedure, which the radar then merges with it (the record's url becomes the procedure)
+            continue
         last = attempts.get(key, {}).get("last")
         recent = last and date.fromisoformat(last) > today - timedelta(days=retry_days)
         item = {"url": url, "project_key": key, "power_mw": r.get("power_mw") or 0, "source": r.get("source")}
@@ -115,7 +121,7 @@ def status(data_json: str | Path, memory_dir: str | Path) -> dict[str, Any]:
     cards = cards_in(mem)
     records = json.loads(Path(data_json).read_text(encoding="utf-8-sig")).get("records", [])
     cloud = [r for r in records if r.get("url") and not any(h in r["url"] for h in LOCAL_ONLY_HOSTS)
-             and _adapter_for(r["url"]) is not None]
+             and not REGISTER_ONLY.search(r["url"]) and _adapter_for(r["url"]) is not None]
     return {"records": len(records), "cloud_supported": len(cloud),
             "with_card": sum(1 for r in records if r.get("project_key") in cards),
             "cloud_without_card": sum(1 for r in cloud if r.get("project_key") not in cards)}

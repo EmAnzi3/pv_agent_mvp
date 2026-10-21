@@ -929,7 +929,7 @@ def _register(p: dict) -> dict | None:
     linked = (p.get("raw") or {}).get("linked_procedure")
     if linked:
         bits.append(f"documenti dal procedimento collegato: {linked.get('title') or linked['url']}")
-    return {"label": label, "reason": "; ".join(bits) + ".", "fonte": p.get("info_url"),
+    return {"label": label, "reason": "; ".join(bits) + ".", "fonte": (p.get("raw") or {}).get("register_url") or p.get("info_url"),
             "impianto": sh.get("plant"), "ditta": sh.get("company"), "comune": sh.get("municipality"),
             "provincia": sh.get("province"), "fonte_energetica": sh.get("energy_source"),
             "potenza_mw": sh.get("power_mw"), "procedimento_collegato": linked}
