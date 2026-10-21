@@ -95,7 +95,7 @@ class Store:
         p = self.blob_path(sha)
         if p.is_file():
             size = p.stat().st_size
-            p.unlink()
+            p.unlink(missing_ok=True)
             self.stats["blob_deleted_bytes"] = self.stats.get("blob_deleted_bytes", 0) + size
             return size
         return 0
@@ -103,7 +103,7 @@ class Store:
     def delete_text(self, sha: str) -> None:
         d = self.root / "text" / PARSER_CACHE_VERSION
         for f in d.glob(f"{sha}*.json") if d.is_dir() else []:
-            f.unlink()
+            f.unlink(missing_ok=True)
 
     # ---- extracted facts (durable) ----------------------------------------
     def facts_path(self, sha: str) -> Path:

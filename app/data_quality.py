@@ -865,6 +865,39 @@ def title_similarity(a: str, b: str) -> float:
     return SequenceMatcher(None, a, b).ratio()
 
 
+# V17: plant registers (Toscana ATOS) list the same plant as a procedure portal under its own name
+# ("AGRI PADULE" vs "[ID 2496] Progetto di un impianto agrivoltaico ... Sovicille"): titles never match.
+# Across different sources, same company + same place + same power is the same plant.
+REGISTER_SOURCES = ("toscana atos",)
+LEGAL_FORM_RE = re.compile(r"\b(srl|srls|spa|sas|snc|sapa|societa|soc|agricola|unipersonale|a socio unico|in liquidazione|semplificata)\b")
+
+
+def proponent_compact(value: Any) -> str:
+    """'REVALUE PV 1 S.r.l.' and 'REVALUE PV1 S.R.L.' -> 'revaluepv1'; '' for labels that are not companies."""
+    if bad_proponent_reason(value):
+        return ""
+    return re.sub(r"[^a-z0-9]", "", LEGAL_FORM_RE.sub(" ", norm_text(value)))
+
+
+def _places(row: dict[str, Any], c: dict[str, Any]) -> set[str]:
+    raw = c["municipality"] or str(row.get("municipalities") or row.get("comuni") or "")
+    return {normalize_municipality(x) for x in re.split(r"[,;/]| e ", raw) if normalize_municipality(x)}
+
+
+def same_plant_cross_source(a: dict[str, Any], b: dict[str, Any], ca: dict[str, Any], cb: dict[str, Any]) -> bool:
+    if ca["source_norm"] == cb["source_norm"]:
+        return False
+    pa, pb = proponent_compact(ca["proponent"]), proponent_compact(cb["proponent"])
+    if len(pa) < 5 or pa != pb or ca["mw"] is None or cb["mw"] is None:
+        return False
+    if abs(ca["mw"] - cb["mw"]) > 0.03 * max(ca["mw"], cb["mw"]):
+        return False
+    ma, mb = _places(a, ca), _places(b, cb)
+    if ma and mb:
+        return bool(ma & mb)                 # a plant spanning several municipalities shares at least one
+    return bool(ca["province_norm"]) and ca["province_norm"] == cb["province_norm"]
+
+
 def should_merge(a: dict[str, Any], b: dict[str, Any]) -> tuple[bool, str, int]:
     ca = canonical_record(a)
     cb = canonical_record(b)
@@ -963,6 +996,8 @@ def should_merge(a: dict[str, Any], b: dict[str, Any]) -> tuple[bool, str, int]:
 
     if score >= 90:
         return True, "+".join(reasons), score
+    if not ca["is_terna_aggregate"] and same_plant_cross_source(a, b, ca, cb):
+        return True, "+".join(reasons + ["same_plant_cross_source"]), max(score, 75)
     if ca["title_norm"] and ca["title_norm"] == cb["title_norm"] and score >= 75:
         return True, "+".join(reasons), score
     if (
@@ -1104,6 +1139,9 @@ def merge_group(rows: list[dict[str, Any]]) -> dict[str, Any]:
     if titles:
         set_field_if_present(base, TITLE_FIELDS, max(titles, key=len))
     urls = [c["url"] for c in canonicals if c["url"]]
+    # the procedure portal (documents) is the record's address; a register sheet stays in _dedupe_urls
+    register = {c["url"] for c in canonicals if c["source_norm"] in REGISTER_SOURCES}
+    urls = [u for u in urls if u not in register] + [u for u in urls if u in register]
     specific_urls = [u for u in urls if specific_url_key(u)]
     if specific_urls:
         set_field_if_present(base, URL_FIELDS, specific_urls[0])
@@ -1134,6 +1172,9 @@ def build_candidate_pairs(rows: list[dict[str, Any]]) -> set[tuple[int, int]]:
             blocks[f"title:{c['title_norm']}"].append(i)
         if c["title_norm"] and c["mw"] is not None:
             blocks[f"title_mw:{c['title_norm']}:{round(c['mw'], 1)}"].append(i)
+        pc = proponent_compact(c["proponent"])
+        if len(pc) >= 5 and c["province_norm"] and c["mw"] is not None:
+            blocks[f"prop_prov:{pc}:{c['province_norm']}"].append(i)
         if c["proponent_norm"] and c["municipality_norm"] and c["mw"] is not None:
             blocks[f"prop_loc_mw:{c['proponent_norm']}:{c['municipality_norm']}:{round(c['mw'], 1)}"].append(i)
 

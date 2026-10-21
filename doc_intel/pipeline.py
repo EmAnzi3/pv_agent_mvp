@@ -50,6 +50,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         adapter.records = load_records(data_json)      # register adapters link to the procedure holding the documents
     log(f"[identify] {record_url} via {type(adapter).__name__}")
     identity = adapter.identify(record_url)
+    if data_json and "register_sheet" not in identity.raw:
+        _attach_register(identity, record_url, data_json, adapter.get_html, log)
     disc: Discovery = adapter.discover(identity)
     log(f"[discover] {len(disc.documents)} documents in {len(disc.procedures)} procedures "
         f"({round(time.time() - t0)}s); errors: {disc.errors}")
@@ -354,6 +356,22 @@ def build_proposal(facts: list[Fact], groups: list[dict]) -> list[dict[str, Any]
         proposal.append({"field": f.field, "subject": f.subject, "value": f.value, "fact_id": f.fact_id(),
                          "occurrences": 1, "documents": [f.citation.url]})
     return proposal
+
+
+def _attach_register(identity, record_url: str, data_json, get_html, log) -> None:
+    """When the radar merged this procedure with a plant-register sheet (Toscana ATOS), read the sheet
+    too: the card then reports the last authorisation act recorded by the Region."""
+    from .adapters.api_portals import AtosAdapter
+    rec = find_by_url(load_records(data_json), record_url).get("record") or {}
+    url = next((u for u in rec.get("_dedupe_urls", []) if AtosAdapter.handles(u)), None)
+    if not url:
+        return
+    try:
+        reg = AtosAdapter(get_html)
+        identity.raw["register_sheet"] = reg.identify(url).raw["register_sheet"]
+        identity.raw["register_url"] = url
+    except Exception as exc:                       # the register is an extra: never block the analysis
+        log(f"[register] {url}: {str(exc)[:120]}")
 
 
 def _portal_facts(identity) -> list:
