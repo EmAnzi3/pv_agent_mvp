@@ -692,7 +692,7 @@
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/combo?browserId=chrome&minifierType=js&languageId=it_IT&t=1792426642704&/o/frontend-js-jquery-web/jquery/jquery.min.js&/o/frontend-js-jquery-web/jquery/init.js&/o/frontend-js-jquery-web/jquery/ajax.js&/o/frontend-js-jquery-web/jquery/bootstrap.bundle.min.js&/o/frontend",
+    "script": "https://www.regione.toscana.it/combo?browserId=chrome&minifierType=js&languageId=it_IT&t=1792481334148&/o/frontend-js-jquery-web/jquery/jquery.min.js&/o/frontend-js-jquery-web/jquery/init.js&/o/frontend-js-jquery-web/jquery/ajax.js&/o/frontend-js-jquery-web/jquery/bootstrap.bundle.min.js&/o/frontend",
     "lines": [
      "!function(e,t){\"use strict\";\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=e.document?t(e,!0):function(e){if(!e.document)throw new Error(\"jQuery requires a window with a document\");return t(e)}:t(e)}(\"undefined\"!=typeof window?window:this,function(C,e){\"use strict\";var t=[],",
      "!function(t,e){\"object\"==typeof exports&&\"undefined\"!=typeof module?e(exports,require(\"jquery\")):\"function\"==typeof define&&define.amd?define([\"exports\",\"jquery\"],e):e((t=t||self).bootstrap={},t.jQuery)}(this,function(t,p){\"use strict\";function i(t,e){for(var n=0;n<e.length;n++){var i=e[n];i.enumera",
@@ -725,7 +725,7 @@
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/combo?browserId=chrome&minifierType=js&languageId=it_IT&t=1792426583469&/o/frontend-js-aui-web/aui/aui/aui-min.js&/o/frontend-js-aui-web/liferay/modules.js&/o/frontend-js-aui-web/liferay/aui_sandbox.js&/o/frontend-js-aui-web/aui/attribute-base/attribute-base-min.js&/o/",
+    "script": "https://www.regione.toscana.it/combo?browserId=chrome&minifierType=js&languageId=it_IT&t=1792481256981&/o/frontend-js-aui-web/aui/aui/aui-min.js&/o/frontend-js-aui-web/liferay/modules.js&/o/frontend-js-aui-web/liferay/aui_sandbox.js&/o/frontend-js-aui-web/aui/attribute-base/attribute-base-min.js&/o/",
     "lines": [
      "typeof YUI!=\"undefined\"&&(YUI._YUI=YUI);var YUI=function(){var e=0,t=this,n=arguments,r=n.length,i=function(e,t){return e&&e.hasOwnProperty&&e instanceof t},s=typeof YUI_config!=\"undefined\"&&YUI_config;i(t,YUI)?(t._init(),YUI.GlobalConfig&&t.applyConfig(YUI.GlobalConfig),s&&t.applyConfig(s),r||(t._a",
      "e==\"boolean\"},n.isDate=function(e){return n.type(e)===\"date\"&&e.toString()!==\"Invalid Date\"&&!isNaN(e)},n.isFunction=function(e){return n.type(e)===\"function\"},n.isNull=function(e){return e===null},n.isNumber=function(e){return typeof e==\"number\"&&isFinite(e)},n.isObject=function(e,t){var r=typeof e",
@@ -769,9 +769,9 @@
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/o/regione-toscana-theme/js/rt-design/componentsJs.min.js?t=202505261231",
+    "script": "https://www.regione.toscana.it/o/regione-toscana-theme/js/rt-design/libraries/slick.js",
     "lines": [
-     "(()=>{var e,t,n={912:e=>{function t(e){var n=D[e];return void 0!==n||(n=D[e]={exports:{}},T[e].call(n.exports,n,n.exports,t)),n.exports}function n(){}function o(e,t){for(var o,r,i,s=j,a=arguments.length;2<a--;)B.push(arguments[a]);for(t&&null!=t.children&&(B.length||B.push(t.children),delete t.child"
+     "!function(i){\"use strict\";\"function\"==typeof define&&define.amd?define([\"jquery\"],i):\"undefined\"!=typeof exports?module.exports=i(require(\"jquery\")):i(jQuery)}((function(i){\"use strict\";var e,t=window.Slick||{};e=0,(t=function(t,o){var s,n=this;n.defaults={adaptiveHeight:!1,appendArrows:i(t),appendD"
     ]
    },
    {
@@ -784,147 +784,15 @@
     "body_len": 18214
    },
    {
+    "script": "https://www.regione.toscana.it/o/regione-toscana-theme/js/rt-design/componentsJs.min.js?t=202505261231",
+    "lines": [
+     "(()=>{var e,t,n={912:e=>{function t(e){var n=D[e];return void 0!==n||(n=D[e]={exports:{}},T[e].call(n.exports,n,n.exports,t)),n.exports}function n(){}function o(e,t){for(var o,r,i,s=j,a=arguments.length;2<a--;)B.push(arguments[a]);for(t&&null!=t.children&&(B.length||B.push(t.children),delete t.child"
+    ]
+   },
+   {
     "script": "https://www.regione.toscana.it/o/portal-search-web/__liferay__/index.js",
     "lines": [
      "import*as e from\"../../frontend-js-codemirror-web/__liferay__/index.js\";import*as t from\"../../frontend-js-components-web/__liferay__/index.js\";import*as a from\"../../frontend-js-dependencies-web/__liferay__/exports/clipboard.js\";import*as r from\"../../frontend-js-dependencies-web/__liferay__/export"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/portal-template-react-renderer-impl/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../frontend-js-react-web/__liferay__/index.js\";var r={621:(e,r,t)=>{Object.defineProperty(r,\"__esModule\",{value:!0}),r.default=function _default(e,r,t){const _=document.getElementById(t);_&&(0,n.render)(e,r,_.parentElement)};var n=t(24)},24:r=>{r.exports=e}},t={};function __webpa"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-collapse-support-web/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../frontend-js-web/__liferay__/index.js\";var t={147:(e,t,i)=>{Object.defineProperty(t,\"__esModule\",{value:!0}),t.default=void 0;var r=i(523);function _defineProperty(e,t,i){return t in e?Object.defineProperty(e,t,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[t]=i,e}const"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/cookies-banner-web/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../frontend-js-web/__liferay__/index.js\";var t={200:(e,t,o)=>{Object.defineProperty(t,\"__esModule\",{value:!0}),t.default=function _default({configurationNamespace:e,configurationURL:o,includeDeclineAllButton:n,namespace:a,optionalConsentCookieTypeNames:c,requiredConsentCookieType"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-tabs-support-web/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../frontend-js-web/__liferay__/index.js\";var t={17:(e,t,i)=>{Object.defineProperty(t,\"__esModule\",{value:!0}),t.default=void 0;var r=i(523);function _defineProperty(e,t,i){return t in e?Object.defineProperty(e,t,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[t]=i,e}const "
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-web/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../accessibility-settings-state-web/__liferay__/index.js\";import*as t from\"../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../frontend-js-react-web/__liferay__/exports/prop-types.js\";import*as n from\"../../frontend-js-react-web/__liferay__/expor"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-alert-support-web/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../frontend-js-web/__liferay__/index.js\";var r={523:r=>{r.exports=e}},t={};function __webpack_require__(e){var a=t[e];if(void 0!==a)return a.exports;var _=t[e]={exports:{}};return r[e](_,_.exports,__webpack_require__),_.exports}var a={};(()=>{var e=a;Object.defineProperty(e,\"X\",{"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-react-web/__liferay__/exports/react.js",
-    "lines": [
-     "var e={516:e=>{var r=Object.getOwnPropertySymbols,t=Object.prototype.hasOwnProperty,n=Object.prototype.propertyIsEnumerable;e.exports=function shouldUseNative(){try{if(!Object.assign)return!1;var e=new String(\"abc\");if(e[5]=\"de\",\"5\"===Object.getOwnPropertyNames(e)[0])return!1;for(var r={},t=0;t<10;t"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-react-web/__liferay__/exports/react-dnd.js",
-    "lines": [
-     "import*as e from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";var t={752:(e,t,r)=>{function invariant(e,t){for(var r=arguments.length,n=new Array(r>2?r-2:0),o=2;o<r;o++)n[o-2]=arguments[o];if(!e){var a;if(void 0===t)a=new Error(\"Minified exception occurred; use the non-minified dev e"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/layout-taglib/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as t from\"../../frontend-js-react-web/__liferay__/exports/prop-types.js\";import*as a from\"../../frontend-js-react-web/__liferay__/exports/react.js\";import*as r from\"../../frontend-js-web/__liferay__/index.js\";impo"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-tooltip-support-web/__liferay__/index.js",
-    "lines": [
-     "import*as t from\"../../frontend-js-react-web/__liferay__/index.js\";import*as e from\"../../frontend-taglib-clay/__liferay__/exports/@clayui$tooltip.js\";var o={24:e=>{e.exports=t},276:t=>{t.exports=e}},r={};function __webpack_require__(t){var e=r[t];if(void 0!==e)return e.exports;var a=r[t]={exports:{"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-dropdown-support-web/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../frontend-js-dependencies-web/__liferay__/exports/dom-align.js\";import*as r from\"../../frontend-js-web/__liferay__/index.js\";var t={453:(e,r,t)=>{Object.defineProperty(r,\"__esModule\",{value:!0}),r.default=void 0;var n=function _interopRequireDefault(e){return e&&e.__esModule?e:"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$autocomplete.js",
-    "lines": [
-     "import*as e from\"../../../frontend-js-dependencies-web/__liferay__/exports/fuzzy.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as n from\"../../../frontend-taglib-clay/__lifer"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../frontend-js-components-web/__liferay__/index.js\";import*as t from\"../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../frontend-js-react-web/__liferay__/exports/prop-types.js\";import*as a from\"../../frontend-js-react-web/__liferay__/exports/rea"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-dependencies-web/__liferay__/exports/clipboard.js",
-    "lines": [
-     "var e={922:function(e){!function webpackUniversalModuleDefinition(t,n){e.exports=n()}(0,(function(){return function(e){var t={};function __nested_webpack_require_653__(n){if(t[n])return t[n].exports;var r=t[n]={i:n,l:!1,exports:{}};return e[n].call(r.exports,r,r.exports,__nested_webpack_require_653_"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-react-web/__liferay__/exports/react-dnd-html5-backend.js",
-    "lines": [
-     "var e={d:(t,r)=>{for(var n in r)e.o(r,n)&&!e.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:r[n]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t),r:e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__e"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-components-web/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../frontend-js-dependencies-web/__liferay__/exports/uuid.js\";import*as t from\"../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../frontend-js-react-web/__liferay__/exports/react.js\";import*as a from\"../../frontend-js-react-web/__liferay__/index.j"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$drop-down.js",
-    "lines": [
-     "import*as e from\"../../../frontend-js-dependencies-web/__liferay__/exports/react-transition-group.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as n from\"../../../frontend-ta"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$core.js",
-    "lines": [
-     "import*as e from\"../../../frontend-js-dependencies-web/__liferay__/exports/fuzzy.js\";import*as t from\"../../../frontend-js-dependencies-web/__liferay__/exports/react-transition-group.js\";import*as r from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as n from\"../../../fron"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$multi-select.js",
-    "lines": [
-     "import*as e from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as r from\"../../../frontend-taglib-clay/__liferay__/exports/@clayui$autocomplete.js\";import*as n from\"../../../frontend-taglib-clay/"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$tooltip.js",
-    "lines": [
-     "import*as e from\"../../../frontend-js-dependencies-web/__liferay__/exports/dom-align.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as n from\"../../../frontend-taglib-clay/__l"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-codemirror-web/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../frontend-js-codemirror-web/__liferay__/exports/codemirror$addon$fold$foldgutter.css.js\";import*as n from\"../../frontend-js-codemirror-web/__liferay__/exports/codemirror$addon$hint$show-hint.css.js\";import*as r from\"../../frontend-js-codemirror-web/__liferay__/exports/codemirro"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$modal.js",
-    "lines": [
-     "import*as e from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as r from\"../../../frontend-taglib-clay/__liferay__/exports/@clayui$button.js\";import*as n from\"../../../frontend-taglib-clay/__life"
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/o/frontend-js-react-web/__liferay__/index.js",
-    "lines": [
-     "import*as e from\"../../accessibility-settings-state-web/__liferay__/index.js\";import*as t from\"../../frontend-js-node-shims/__liferay__/exports/process.js\";import*as r from\"../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as n from\"../../frontend-js-react-web/__liferay__/exports"
     ]
    },
    {
@@ -934,45 +802,135 @@
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/o/regione-toscana-theme/js/rt-design/libraries/slick.js",
-    "lines": [
-     "!function(i){\"use strict\";\"function\"==typeof define&&define.amd?define([\"jquery\"],i):\"undefined\"!=typeof exports?module.exports=i(require(\"jquery\")):i(jQuery)}((function(i){\"use strict\";var e,t=window.Slick||{};e=0,(t=function(t,o){var s,n=this;n.defaults={adaptiveHeight:!1,appendArrows:i(t),appendD"
-    ]
-   },
-   {
     "script": "https://www.regione.toscana.it/o/regione-toscana-theme/js/magnific-popup/jquery.magnific-popup.min.js",
     "lines": [
      "!function(e){\"function\"==typeof define&&define.amd?define([\"jquery\"],e):\"object\"==typeof exports?e(require(\"jquery\")):e(window.jQuery||window.Zepto)}((function(e){function t(){}function n(e,t){d.ev.on(P+e+_,t)}function o(t,n,o,i){var r=document.createElement(\"div\");return r.className=\"mfp-\"+t,o&&(r."
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$card.js",
+    "script": "https://www.regione.toscana.it/o/frontend-js-react-web/__liferay__/exports/react-dnd-html5-backend.js",
     "lines": [
-     "import*as e from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as r from\"../../../frontend-taglib-clay/__liferay__/exports/@clayui$button.js\";import*as a from\"../../../frontend-taglib-clay/__life"
+     "var e={d:(t,r)=>{for(var n in r)e.o(r,n)&&!e.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:r[n]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t),r:e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__e"
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/o/frontend-js-react-web/__liferay__/exports/react-dom.js",
+    "script": "https://www.regione.toscana.it/o/frontend-js-react-web/__liferay__/exports/react.js",
     "lines": [
-     "import*as n from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";var r={516:n=>{var r=Object.getOwnPropertySymbols,a=Object.prototype.hasOwnProperty,i=Object.prototype.propertyIsEnumerable;n.exports=function shouldUseNative(){try{if(!Object.assign)return!1;var n=new String(\"abc\");if(n[5"
+     "var e={516:e=>{var r=Object.getOwnPropertySymbols,t=Object.prototype.hasOwnProperty,n=Object.prototype.propertyIsEnumerable;e.exports=function shouldUseNative(){try{if(!Object.assign)return!1;var e=new String(\"abc\");if(e[5]=\"de\",\"5\"===Object.getOwnPropertyNames(e)[0])return!1;for(var r={},t=0;t<10;t"
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/o/frontend-js-dependencies-web/__liferay__/exports/dom-align.js",
+    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$drop-down.js",
     "lines": [
-     "var t={478:(t,e,o)=>{function ownKeys(t,e){var o=Object.keys(t);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(t);e&&(r=r.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),o.push.apply(o,r)}return o}function _objectSpread2(t){for(var e=1;e<arguments."
+     "import*as e from\"../../../frontend-js-dependencies-web/__liferay__/exports/react-transition-group.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as n from\"../../../frontend-ta"
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/o/frontend-js-codemirror-web/__liferay__/exports/codemirror$lib$codemirror.css.js",
+    "script": "https://www.regione.toscana.it/o/frontend-js-components-web/__liferay__/index.js",
     "lines": [
-     "const link=document.createElement(\"link\");link.setAttribute(\"rel\",\"stylesheet\"),link.setAttribute(\"type\",\"text/css\"),link.setAttribute(\"href\",Liferay.ThemeDisplay.getPathContext()+\"/o/frontend-js-codemirror-web/__liferay__/css/codemirror$lib$codemirror.css\"),document.querySelector(\"head\").appendChil"
+     "import*as e from\"../../frontend-js-dependencies-web/__liferay__/exports/uuid.js\";import*as t from\"../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../frontend-js-react-web/__liferay__/exports/react.js\";import*as a from\"../../frontend-js-react-web/__liferay__/index.j"
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/o/frontend-js-codemirror-web/__liferay__/exports/codemirror$addon$hint$show-hint.css.js",
+    "script": "https://www.regione.toscana.it/o/frontend-js-web/__liferay__/index.js",
     "lines": [
-     "const link=document.createElement(\"link\");link.setAttribute(\"rel\",\"stylesheet\"),link.setAttribute(\"type\",\"text/css\"),link.setAttribute(\"href\",Liferay.ThemeDisplay.getPathContext()+\"/o/frontend-js-codemirror-web/__liferay__/css/codemirror$addon$hint$show-hint.css\"),document.querySelector(\"head\").appe"
+     "import*as e from\"../../accessibility-settings-state-web/__liferay__/index.js\";import*as t from\"../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../frontend-js-react-web/__liferay__/exports/prop-types.js\";import*as n from\"../../frontend-js-react-web/__liferay__/expor"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$autocomplete.js",
+    "lines": [
+     "import*as e from\"../../../frontend-js-dependencies-web/__liferay__/exports/fuzzy.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as n from\"../../../frontend-taglib-clay/__lifer"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$modal.js",
+    "lines": [
+     "import*as e from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as r from\"../../../frontend-taglib-clay/__liferay__/exports/@clayui$button.js\";import*as n from\"../../../frontend-taglib-clay/__life"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-js-dependencies-web/__liferay__/exports/clipboard.js",
+    "lines": [
+     "var e={922:function(e){!function webpackUniversalModuleDefinition(t,n){e.exports=n()}(0,(function(){return function(e){var t={};function __nested_webpack_require_653__(n){if(t[n])return t[n].exports;var r=t[n]={i:n,l:!1,exports:{}};return e[n].call(r.exports,r,r.exports,__nested_webpack_require_653_"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$multi-select.js",
+    "lines": [
+     "import*as e from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as r from\"../../../frontend-taglib-clay/__liferay__/exports/@clayui$autocomplete.js\";import*as n from\"../../../frontend-taglib-clay/"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/portal-template-react-renderer-impl/__liferay__/index.js",
+    "lines": [
+     "import*as e from\"../../frontend-js-react-web/__liferay__/index.js\";var r={621:(e,r,t)=>{Object.defineProperty(r,\"__esModule\",{value:!0}),r.default=function _default(e,r,t){const _=document.getElementById(t);_&&(0,n.render)(e,r,_.parentElement)};var n=t(24)},24:r=>{r.exports=e}},t={};function __webpa"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/layout-taglib/__liferay__/index.js",
+    "lines": [
+     "import*as e from\"../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as t from\"../../frontend-js-react-web/__liferay__/exports/prop-types.js\";import*as a from\"../../frontend-js-react-web/__liferay__/exports/react.js\";import*as r from\"../../frontend-js-web/__liferay__/index.js\";impo"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/cookies-banner-web/__liferay__/index.js",
+    "lines": [
+     "import*as e from\"../../frontend-js-web/__liferay__/index.js\";var t={200:(e,t,o)=>{Object.defineProperty(t,\"__esModule\",{value:!0}),t.default=function _default({configurationNamespace:e,configurationURL:o,includeDeclineAllButton:n,namespace:a,optionalConsentCookieTypeNames:c,requiredConsentCookieType"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$core.js",
+    "lines": [
+     "import*as e from\"../../../frontend-js-dependencies-web/__liferay__/exports/fuzzy.js\";import*as t from\"../../../frontend-js-dependencies-web/__liferay__/exports/react-transition-group.js\";import*as r from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as n from\"../../../fron"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-js-collapse-support-web/__liferay__/index.js",
+    "lines": [
+     "import*as e from\"../../frontend-js-web/__liferay__/index.js\";var t={147:(e,t,i)=>{Object.defineProperty(t,\"__esModule\",{value:!0}),t.default=void 0;var r=i(523);function _defineProperty(e,t,i){return t in e?Object.defineProperty(e,t,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[t]=i,e}const"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-js-tooltip-support-web/__liferay__/index.js",
+    "lines": [
+     "import*as t from\"../../frontend-js-react-web/__liferay__/index.js\";import*as e from\"../../frontend-taglib-clay/__liferay__/exports/@clayui$tooltip.js\";var o={24:e=>{e.exports=t},276:t=>{t.exports=e}},r={};function __webpack_require__(t){var e=r[t];if(void 0!==e)return e.exports;var a=r[t]={exports:{"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$tooltip.js",
+    "lines": [
+     "import*as e from\"../../../frontend-js-dependencies-web/__liferay__/exports/dom-align.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as n from\"../../../frontend-taglib-clay/__l"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-js-react-web/__liferay__/exports/react-dnd.js",
+    "lines": [
+     "import*as e from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";var t={752:(e,t,r)=>{function invariant(e,t){for(var r=arguments.length,n=new Array(r>2?r-2:0),o=2;o<r;o++)n[o-2]=arguments[o];if(!e){var a;if(void 0===t)a=new Error(\"Minified exception occurred; use the non-minified dev e"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-js-alert-support-web/__liferay__/index.js",
+    "lines": [
+     "import*as e from\"../../frontend-js-web/__liferay__/index.js\";var r={523:r=>{r.exports=e}},t={};function __webpack_require__(e){var a=t[e];if(void 0!==a)return a.exports;var _=t[e]={exports:{}};return r[e](_,_.exports,__webpack_require__),_.exports}var a={};(()=>{var e=a;Object.defineProperty(e,\"X\",{"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-js-dropdown-support-web/__liferay__/index.js",
+    "lines": [
+     "import*as e from\"../../frontend-js-dependencies-web/__liferay__/exports/dom-align.js\";import*as r from\"../../frontend-js-web/__liferay__/index.js\";var t={453:(e,r,t)=>{Object.defineProperty(r,\"__esModule\",{value:!0}),r.default=void 0;var n=function _interopRequireDefault(e){return e&&e.__esModule?e:"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/index.js",
+    "lines": [
+     "import*as e from\"../../frontend-js-components-web/__liferay__/index.js\";import*as t from\"../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as r from\"../../frontend-js-react-web/__liferay__/exports/prop-types.js\";import*as a from\"../../frontend-js-react-web/__liferay__/exports/rea"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-js-tabs-support-web/__liferay__/index.js",
+    "lines": [
+     "import*as e from\"../../frontend-js-web/__liferay__/index.js\";var t={17:(e,t,i)=>{Object.defineProperty(t,\"__esModule\",{value:!0}),t.default=void 0;var r=i(523);function _defineProperty(e,t,i){return t in e?Object.defineProperty(e,t,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[t]=i,e}const "
     ]
    },
    {
@@ -982,36 +940,30 @@
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/combo/?browserId=chrome&minifierType=&languageId=it_IT&t=1792426583469&/o/frontend-js-aui-web/aui/yui-throttle/yui-throttle-min.js&/o/frontend-js-aui-web/aui/classnamemanager/classnamemanager-min.js&/o/frontend-js-aui-web/aui/aui-classnamemanager/aui-classnamemanager-m",
+    "script": "https://www.regione.toscana.it/o/frontend-taglib-clay/__liferay__/exports/@clayui$card.js",
     "lines": [
-     "YUI.add(\"dom-core\",function(e,t){var n=\"nodeType\",r=\"ownerDocument\",i=\"documentElement\",s=\"defaultView\",o=\"parentWindow\",u=\"tagName\",a=\"parentNode\",f=\"previousSibling\",l=\"nextSibling\",c=\"contains\",h=\"compareDocumentPosition\",p=[],d=function(){var t=e.config.doc.createElement(\"div\"),n=t.appendChild(e",
-     "YUI.add(\"dom-base\",function(e,t){var n=e.config.doc.documentElement,r=e.DOM,i=\"tagName\",s=\"ownerDocument\",o=\"\",u=e.Features.add,a=e.Features.test;e.mix(r,{getText:n.textContent!==undefined?function(e){var t=\"\";return e&&(t=e.textContent),t||\"\"}:function(e){var t=\"\";return e&&(t=e.innerText||e.nodeVa",
-     "YUI.add(\"selector-native\",function(e,t){(function(e){e.namespace(\"Selector\");var t=\"compareDocumentPosition\",n=\"ownerDocument\",r={_types:{esc:{token:\"\\ue000\",re:/\\\\[:\\[\\]\\(\\)#\\.\\'\\>+~\"]/gi},attr:{token:\"\\ue001\",re:/(\\[[^\\]]*\\])/g},pseudo:{token:\"\\ue002\",re:/(\\([^\\)]*\\))/g}},useNative:!0,_escapeId:fu",
-     "YUI.add(\"node-core\",function(e,t){var n=\".\",r=\"nodeName\",i=\"nodeType\",s=\"ownerDocument\",o=\"tagName\",u=\"_yuid\",a={},f=Array.prototype.slice,l=e.DOM,c=function(t){if(!this.getDOMNode&&!e.instanceOf(this,c))return new c(t);if(typeof t==\"string\"){t=c._fromString(t);if(!t)return null}var n=t.nodeType!==9",
-     "l.isWindow(t)?t=[t]:t._node?t=[t._node]:t[0]&&t[0]._node?(e.Array.each(t,function(e){e._node&&n.push(e._node)}),t=n):t=e.Array(t,0,!0)),this._nodes=t||[]};p.NAME=\"NodeList\",p.getDOMNodes=function(e){return e&&e._nodes?e._nodes:e},p.each=function(t,n,r){var i=t._nodes;i&&i.length&&e.Array.each(i,n,r|",
-     "YUI.add(\"dom-style\",function(e,t){var n=\"documentElement\",r=\"defaultView\",i=\"ownerDocument\",s=\"style\",o=\"float\",u=\"cssFloat\",a=\"styleFloat\",f=\"transparent\",l=\"getComputedStyle\",c=\"getBoundingClientRect\",h=e.config.doc,p=e.DOM,d,v,m=[\"WebkitTransform\",\"MozTransform\",\"OTransform\",\"msTransform\",\"transf",
-     "YUI.add(\"node-base\",function(e,t){var n=[\"hasClass\",\"addClass\",\"removeClass\",\"replaceClass\",\"toggleClass\"];e.Node.importMethod(e.DOM,n),e.NodeList.importMethod(e.Node.prototype,n);var r=e.Node,i=e.DOM;r.create=function(t,n){return n&&n._node&&(n=n._node),e.one(i.create(t,n))},e.mix(r.prototype,{crea"
+     "import*as e from\"../../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as t from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";import*as r from\"../../../frontend-taglib-clay/__liferay__/exports/@clayui$button.js\";import*as a from\"../../../frontend-taglib-clay/__life"
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/o/frontend-js-codemirror-web/__liferay__/exports/codemirror$addon$fold$foldgutter.css.js",
+    "script": "https://www.regione.toscana.it/o/frontend-js-codemirror-web/__liferay__/index.js",
     "lines": [
-     "const link=document.createElement(\"link\");link.setAttribute(\"rel\",\"stylesheet\"),link.setAttribute(\"type\",\"text/css\"),link.setAttribute(\"href\",Liferay.ThemeDisplay.getPathContext()+\"/o/frontend-js-codemirror-web/__liferay__/css/codemirror$addon$fold$foldgutter.css\"),document.querySelector(\"head\").app"
+     "import*as e from\"../../frontend-js-codemirror-web/__liferay__/exports/codemirror$addon$fold$foldgutter.css.js\";import*as n from\"../../frontend-js-codemirror-web/__liferay__/exports/codemirror$addon$hint$show-hint.css.js\";import*as r from\"../../frontend-js-codemirror-web/__liferay__/exports/codemirro"
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/combo/?browserId=chrome&minifierType=&languageId=it_IT&t=1792426583469&/o/frontend-js-aui-web/aui/pluginhost-base/pluginhost-base-min.js&/o/frontend-js-aui-web/aui/pluginhost-config/pluginhost-config-min.js&/o/frontend-js-aui-web/aui/node-pluginhost/node-pluginhost-min",
+    "script": "https://www.regione.toscana.it/o/frontend-js-react-web/__liferay__/index.js",
+    "lines": [
+     "import*as e from\"../../accessibility-settings-state-web/__liferay__/index.js\";import*as t from\"../../frontend-js-node-shims/__liferay__/exports/process.js\";import*as r from\"../../frontend-js-react-web/__liferay__/exports/classnames.js\";import*as n from\"../../frontend-js-react-web/__liferay__/exports"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/combo/?browserId=chrome&minifierType=&languageId=it_IT&t=1792481256981&/o/frontend-js-aui-web/aui/pluginhost-base/pluginhost-base-min.js&/o/frontend-js-aui-web/aui/pluginhost-config/pluginhost-config-min.js&/o/frontend-js-aui-web/aui/node-pluginhost/node-pluginhost-min",
     "lines": [
      "YUI.add(\"dom-screen\",function(e,t){(function(e){var t=\"documentElement\",n=\"compatMode\",r=\"position\",i=\"fixed\",s=\"relative\",o=\"left\",u=\"top\",a=\"BackCompat\",f=\"medium\",l=\"borderLeftWidth\",c=\"borderTopWidth\",h=\"getBoundingClientRect\",p=\"getComputedStyle\",d=e.DOM,v=/^t(?:able|d|h)$/i,m;e.UA.ie&&(e.confi",
      "YUI.add(\"node-screen\",function(e,t){e.each([\"winWidth\",\"winHeight\",\"docWidth\",\"docHeight\",\"docScrollX\",\"docScrollY\"],function(t){e.Node.ATTRS[t]={getter:function(){var n=Array.prototype.slice.call(arguments);return n.unshift(e.Node.getDOMNode(this)),e.DOM[t].apply(this,n)}}}),e.Node.ATTRS.scrollLeft",
      ".removeClass(S),b.apply(e,arguments)},_defaultHoverOptions:{overEventType:\"mouseenter\",outEventType:\"mouseleave\",overDelay:0,outDelay:0,over:n.emptyFn,out:n.emptyFn}},!0),g.__isHidden=g._isHidden,g._isHidden=function(){var e=this;return g.__isHidden.call(e)||e.hasClass(e._hideClass||S)},e.each([\"Hei",
      "YUI.add(\"event-move\",function(e,t){var n=e.Event._GESTURE_MAP,r={start:n.start,end:n.end,move:n.move},i=\"start\",s=\"move\",o=\"end\",u=\"gesture\"+s,a=u+o,f=u+i,l=\"_msh\",c=\"_mh\",h=\"_meh\",p=\"_dmsh\",d=\"_dmh\",v=\"_dmeh\",m=\"_ms\",g=\"_m\",y=\"minTime\",b=\"minDistance\",w=\"preventDefault\",E=\"button\",S=\"ownerDocument\""
-    ]
-   },
-   {
-    "script": "https://www.regione.toscana.it/combo/?browserId=chrome&minifierType=&languageId=it_IT&t=1792426583469&/o/frontend-js-aui-web/liferay/menu.js",
-    "lines": [
-     "const menuNode = document.getElementById(id);"
     ]
    },
    {
@@ -1033,17 +985,60 @@
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/combo/?browserId=chrome&minifierType=&languageId=it_IT&t=1792426583469&/o/frontend-js-aui-web/aui/base-core/base-core-min.js&/o/frontend-js-aui-web/aui/base-observable/base-observable-min.js&/o/frontend-js-aui-web/aui/base-base/base-base-min.js&/o/frontend-js-aui-web/a",
+    "script": "https://www.regione.toscana.it/o/frontend-js-dependencies-web/__liferay__/exports/dom-align.js",
     "lines": [
-     "YUI.add(\"event-focus\",function(e,t){function u(t,r,u){var a=\"_\"+t+\"Notifiers\";e.Event.define(t,{_useActivate:o,_attach:function(i,s,o){return e.DOM.isWindow(i)?n._attach([t,function(e){s.fire(e)},i]):n._attach([r,this._proxy,i,this,s,o],{capture:!0})},_proxy:function(t,r,i){var s=t.target,f=t.curren",
-     "YUI.add(\"widget-base\",function(e,t){function R(e){var t=this,n,r,i=t.constructor;t._strs={},t._cssPrefix=i.CSS_PREFIX||s(i.NAME.toLowerCase()),e=e||{},R.superclass.constructor.call(t,e),r=t.get(T),r&&(r!==P&&(n=r),t.render(n))}var n=e.Lang,r=e.Node,i=e.ClassNameManager,s=i.getClassName,o,u=e.cached("
+     "var t={478:(t,e,o)=>{function ownKeys(t,e){var o=Object.keys(t);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(t);e&&(r=r.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),o.push.apply(o,r)}return o}function _objectSpread2(t){for(var e=1;e<arguments."
     ]
    },
    {
-    "script": "https://www.regione.toscana.it/combo/?browserId=chrome&minifierType=&languageId=it_IT&t=1792426583469&/o/frontend-js-aui-web/aui/cookie/cookie-min.js&/o/frontend-js-aui-web/aui/plugin/plugin-min.js&/o/frontend-js-aui-web/liferay/session.js",
+    "script": "https://www.regione.toscana.it/o/frontend-js-codemirror-web/__liferay__/exports/codemirror$lib$codemirror.css.js",
     "lines": [
+     "const link=document.createElement(\"link\");link.setAttribute(\"rel\",\"stylesheet\"),link.setAttribute(\"type\",\"text/css\"),link.setAttribute(\"href\",Liferay.ThemeDisplay.getPathContext()+\"/o/frontend-js-codemirror-web/__liferay__/css/codemirror$lib$codemirror.css\"),document.querySelector(\"head\").appendChil"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-js-codemirror-web/__liferay__/exports/codemirror$addon$fold$foldgutter.css.js",
+    "lines": [
+     "const link=document.createElement(\"link\");link.setAttribute(\"rel\",\"stylesheet\"),link.setAttribute(\"type\",\"text/css\"),link.setAttribute(\"href\",Liferay.ThemeDisplay.getPathContext()+\"/o/frontend-js-codemirror-web/__liferay__/css/codemirror$addon$fold$foldgutter.css\"),document.querySelector(\"head\").app"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-js-react-web/__liferay__/exports/react-dom.js",
+    "lines": [
+     "import*as n from\"../../../frontend-js-react-web/__liferay__/exports/react.js\";var r={516:n=>{var r=Object.getOwnPropertySymbols,a=Object.prototype.hasOwnProperty,i=Object.prototype.propertyIsEnumerable;n.exports=function shouldUseNative(){try{if(!Object.assign)return!1;var n=new String(\"abc\");if(n[5"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/combo/?browserId=chrome&minifierType=&languageId=it_IT&t=1792481256981&/o/frontend-js-aui-web/aui/yui-throttle/yui-throttle-min.js&/o/frontend-js-aui-web/aui/classnamemanager/classnamemanager-min.js&/o/frontend-js-aui-web/aui/aui-classnamemanager/aui-classnamemanager-m",
+    "lines": [
+     "YUI.add(\"dom-core\",function(e,t){var n=\"nodeType\",r=\"ownerDocument\",i=\"documentElement\",s=\"defaultView\",o=\"parentWindow\",u=\"tagName\",a=\"parentNode\",f=\"previousSibling\",l=\"nextSibling\",c=\"contains\",h=\"compareDocumentPosition\",p=[],d=function(){var t=e.config.doc.createElement(\"div\"),n=t.appendChild(e",
+     "YUI.add(\"dom-base\",function(e,t){var n=e.config.doc.documentElement,r=e.DOM,i=\"tagName\",s=\"ownerDocument\",o=\"\",u=e.Features.add,a=e.Features.test;e.mix(r,{getText:n.textContent!==undefined?function(e){var t=\"\";return e&&(t=e.textContent),t||\"\"}:function(e){var t=\"\";return e&&(t=e.innerText||e.nodeVa",
+     "YUI.add(\"selector-native\",function(e,t){(function(e){e.namespace(\"Selector\");var t=\"compareDocumentPosition\",n=\"ownerDocument\",r={_types:{esc:{token:\"\\ue000\",re:/\\\\[:\\[\\]\\(\\)#\\.\\'\\>+~\"]/gi},attr:{token:\"\\ue001\",re:/(\\[[^\\]]*\\])/g},pseudo:{token:\"\\ue002\",re:/(\\([^\\)]*\\))/g}},useNative:!0,_escapeId:fu",
+     "YUI.add(\"node-core\",function(e,t){var n=\".\",r=\"nodeName\",i=\"nodeType\",s=\"ownerDocument\",o=\"tagName\",u=\"_yuid\",a={},f=Array.prototype.slice,l=e.DOM,c=function(t){if(!this.getDOMNode&&!e.instanceOf(this,c))return new c(t);if(typeof t==\"string\"){t=c._fromString(t);if(!t)return null}var n=t.nodeType!==9",
+     "l.isWindow(t)?t=[t]:t._node?t=[t._node]:t[0]&&t[0]._node?(e.Array.each(t,function(e){e._node&&n.push(e._node)}),t=n):t=e.Array(t,0,!0)),this._nodes=t||[]};p.NAME=\"NodeList\",p.getDOMNodes=function(e){return e&&e._nodes?e._nodes:e},p.each=function(t,n,r){var i=t._nodes;i&&i.length&&e.Array.each(i,n,r|",
+     "YUI.add(\"dom-style\",function(e,t){var n=\"documentElement\",r=\"defaultView\",i=\"ownerDocument\",s=\"style\",o=\"float\",u=\"cssFloat\",a=\"styleFloat\",f=\"transparent\",l=\"getComputedStyle\",c=\"getBoundingClientRect\",h=e.config.doc,p=e.DOM,d,v,m=[\"WebkitTransform\",\"MozTransform\",\"OTransform\",\"msTransform\",\"transf",
+     "YUI.add(\"node-base\",function(e,t){var n=[\"hasClass\",\"addClass\",\"removeClass\",\"replaceClass\",\"toggleClass\"];e.Node.importMethod(e.DOM,n),e.NodeList.importMethod(e.Node.prototype,n);var r=e.Node,i=e.DOM;r.create=function(t,n){return n&&n._node&&(n=n._node),e.one(i.create(t,n))},e.mix(r.prototype,{crea"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/o/frontend-js-codemirror-web/__liferay__/exports/codemirror$addon$hint$show-hint.css.js",
+    "lines": [
+     "const link=document.createElement(\"link\");link.setAttribute(\"rel\",\"stylesheet\"),link.setAttribute(\"type\",\"text/css\"),link.setAttribute(\"href\",Liferay.ThemeDisplay.getPathContext()+\"/o/frontend-js-codemirror-web/__liferay__/css/codemirror$addon$hint$show-hint.css\"),document.querySelector(\"head\").appe"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/combo/?browserId=chrome&minifierType=&languageId=it_IT&t=1792481256981&/o/frontend-js-aui-web/aui/base-core/base-core-min.js&/o/frontend-js-aui-web/aui/base-observable/base-observable-min.js&/o/frontend-js-aui-web/aui/base-base/base-base-min.js&/o/frontend-js-aui-web/a",
+    "lines": [
+     "YUI.add(\"event-focus\",function(e,t){function u(t,r,u){var a=\"_\"+t+\"Notifiers\";e.Event.define(t,{_useActivate:o,_attach:function(i,s,o){return e.DOM.isWindow(i)?n._attach([t,function(e){s.fire(e)},i]):n._attach([r,this._proxy,i,this,s,o],{capture:!0})},_proxy:function(t,r,i){var s=t.target,f=t.curren",
+     "YUI.add(\"widget-base\",function(e,t){function R(e){var t=this,n,r,i=t.constructor;t._strs={},t._cssPrefix=i.CSS_PREFIX||s(i.NAME.toLowerCase()),e=e||{},R.superclass.constructor.call(t,e),r=t.get(T),r&&(r!==P&&(n=r),t.render(n))}var n=e.Lang,r=e.Node,i=e.ClassNameManager,s=i.getClassName,o,u=e.cached(",
      "const counterTextNode = document.querySelector(",
      "const toast = document.getElementById(TOAST_ID);"
+    ]
+   },
+   {
+    "script": "https://www.regione.toscana.it/combo/?browserId=chrome&minifierType=&languageId=it_IT&t=1792481256981&/o/frontend-js-aui-web/liferay/menu.js",
+    "lines": [
+     "const menuNode = document.getElementById(id);"
     ]
    },
    {
