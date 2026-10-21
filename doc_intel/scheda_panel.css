@@ -69,7 +69,7 @@
 
 /* cronoprogramma */
 .g-wrap { overflow-x: auto; }
-.g-wrap svg { width: 100%; min-width: 440px; height: auto; display: block; }
+.g-wrap svg { width: 100%; min-width: 520px; height: auto; display: block; }
 .g-grid { stroke: var(--border-soft, #edf1f5); stroke-width: 1; }
 .g-tick { fill: var(--muted, #64748b); font-size: 10px; font-variant-numeric: tabular-nums; }
 .g-label { fill: var(--text, #111827); font-size: 11px; }
@@ -107,3 +107,9 @@
 .g-dt th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted, #64748b); padding: 4px 6px; border-bottom: 1px solid var(--border, #dfe5eb); }
 .g-dt td { padding: 4px 6px; border-bottom: 1px solid var(--border-soft, #edf1f5); }
 .g-dt td:last-child { white-space: nowrap; font-variant-numeric: tabular-nums; text-align: right; }
+.sc-lots { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-weight: 400; font-size: 13px; }
+.sc-coord { font-variant-numeric: tabular-nums; }
+.g-sum { fill: var(--accent-dark, #0f4f4a); }
+.g-strong { font-weight: 700; }
+.g-cap { font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+.g-val { fill: var(--steel, #334155); font-size: 10px; font-variant-numeric: tabular-nums; }

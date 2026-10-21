@@ -52,6 +52,22 @@ OBJECT_RULES = [
     (re.compile(r"(?i)sondagg|prova\s+penetrometric|pozz|piezometr"), "survey_point"),
 ]
 AREA_LABEL_RE = re.compile(r"(?i:\b(?:area|campo|lotto|sottocampo|sezione|impianto|blocco))\s*(?:n\.?\s*|nr\.?\s*)?(?P<id>[A-Z0-9]{1,4}(?:[.\-][A-Z0-9]{1,3})?)\b")
+LOT_RE = re.compile(r"(?i:\b(?P<kind>lotto|lotti|area|campo|sottocampo|sottoimpianto|impianto|sezione|blocco))\s*(?:n\.?\s*|nr\.?\s*|°\s*)?"
+                    r"(?P<id>[A-Z]{1,2}\d?|\d{1,2}|[IVX]{1,4})(?![\w'])")
+
+
+def lot_of(text: str) -> str | None:
+    """'Lotto B', 'Area 2', 'Campo A1' written next to a coordinate -> 'Lotto B'."""
+    best = None
+    for m in LOT_RE.finditer(text or ""):
+        if m.group("id").upper() in AREA_STOP:
+            continue
+        kind = m.group("kind").lower()
+        kind = "lotto" if kind == "lotti" else kind
+        best = f"{kind.capitalize()} {m.group('id').upper()}"
+    return best
+
+
 AREA_STOP = {"DI", "EL", "SI", "IN", "DA", "IL", "LA", "LE", "AL", "DEL", "CON", "PER", "UTM", "WGS"}
 RING_START = re.compile(r"^(?:V|P|A)?\s?-?0*1$")
 POINT_LABEL_RE = re.compile(r"^\s*(?P<lab>(?:[A-Z]{1,3}\s?-?\d{1,3}[A-Z]?|\d{1,3}|V\d{1,3}|P\d{1,3}))\b")
@@ -269,6 +285,7 @@ def extract(ctx: PageContext) -> list[Fact]:
             if obj == "unknown":
                 obj = classify_object(ctx.window(i, 2, 0))
             facts.append(Fact(field="geo.latlon_point", value={"lat": lat, "lon": lon},
+                              subject=lot_of(ctx.window(i, 2, 0)),
                               citation=ctx.cite(ctx.window(i, 1, 0)), precision="component_coordinates",
                               qualifiers={"object": obj, "crs": "WGS84 (assumed decimal degrees)"},
                               limits=("Geographic pair; object " + obj + (" — NOT the plant location" if obj in ("simulation_point", "cabin", "substation") else "")
@@ -288,6 +305,7 @@ def _point_fact(ctx: PageContext, i: int, lat: float, lon: float, crs_text: str,
     if obj == "unknown":
         obj = classify_object(window)
     return Fact(field="geo.latlon_point", value={"lat": round(lat, 7), "lon": round(lon, 7)},
+                subject=lot_of(ctx.window(i, 2, 0)),
                 citation=ctx.cite(ctx.window(i, 1, 1)), precision="component_coordinates",
                 qualifiers={"object": obj, "crs": crs_text, "raw": raw[:80]},
                 limits=f"Point of object '{obj}' as written in the document", extractor=extractor)

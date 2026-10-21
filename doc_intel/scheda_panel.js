@@ -70,25 +70,52 @@
     let chart = '';
     if (bars.length) {
       const unit = g.unit === 'month' ? 'mesi' : g.unit === 'week' ? 'settimane' : 'periodi';
-      const span = Math.max(1, Math.ceil(Math.max(...bars.map(b => b.end))));
-      const rowH = 24, labelW = 190, chartW = 300, top = 26;
-      const x = m => labelW + (m / span) * chartW;
-      const step = span <= 12 ? 1 : span <= 24 ? 2 : span <= 48 ? 6 : 12;
+      const asse = g.asse || null;
+      const ticksDoc = asse ? asse.etichette : [];
+      const lo = Math.min(0, ...bars.map(b => b.start), ...ticksDoc.map(t => t.start));
+      const hi = Math.max(1, ...bars.map(b => b.end), ...ticksDoc.map(t => t.end));
+      const hasDur = bars.some(b => b.duration);
+      const rowH = 22, labelW = 230, durW = hasDur ? 46 : 0, chartW = 300, head = asse && asse.titolo ? 34 : 26;
+      const x0 = labelW + durW;
+      const x = m => x0 + ((m - lo) / (hi - lo)) * chartW;
+      const bottom = head + bars.length * rowH;
       let ticks = '';
-      for (let m = 0; m <= span; m += step) {
-        ticks += `<line x1="${x(m)}" y1="${top - 4}" x2="${x(m)}" y2="${top + bars.length * rowH}" class="g-grid"/>`
-          + `<text x="${x(m)}" y="${top - 8}" class="g-tick" text-anchor="middle">${m}</text>`;
+      if (ticksDoc.length) {
+        // the document's own timescale ('Mese 1 ... Mese 24', or calendar months): labels thinned to stay legible
+        const every = Math.max(1, Math.ceil(ticksDoc.length / (chartW / 22)));
+        ticksDoc.forEach((t, i) => {
+          ticks += `<line x1="${x(t.start)}" y1="${head - 4}" x2="${x(t.start)}" y2="${bottom}" class="g-grid"/>`;
+          if (i % every === 0) ticks += `<text x="${(x(t.start) + x(t.end)) / 2}" y="${head - 8}" class="g-tick" text-anchor="middle">${esc(t.label)}</text>`;
+        });
+      } else {
+        const span = Math.ceil(hi - lo);
+        const step = span <= 12 ? 1 : span <= 24 ? 2 : span <= 48 ? 6 : 12;
+        for (let m = Math.ceil(lo); m <= hi; m += step) {
+          ticks += `<line x1="${x(m)}" y1="${head - 4}" x2="${x(m)}" y2="${bottom}" class="g-grid"/>`
+            + `<text x="${x(m)}" y="${head - 8}" class="g-tick" text-anchor="middle">${m}</text>`;
+        }
       }
+      const caption = asse && asse.titolo ? asse.titolo : (asse ? '' : `${unit} dall'avvio`);
       const rows = bars.map((b, i) => {
-        const y = top + i * rowH, w = Math.max(3, x(b.end) - x(b.start));
-        const name = b.name.length > 30 ? b.name.slice(0, 29) + '…' : b.name;
-        const when = b.dates ? b.dates.map(x => x.split('-').reverse().join('/')).join(' – ') : `${unit} ${+b.start.toFixed(1)}–${+b.end.toFixed(1)}`;
-        return `<g><title>${esc(b.name)}: ${esc(when)}</title>`
-          + `<text x="${labelW - 8}" y="${y + 15}" class="g-label" text-anchor="end">${esc(name)}</text>`
-          + `<rect x="${x(b.start)}" y="${y + 5}" width="${w}" height="14" rx="3" class="g-bar"/></g>`;
+        const y = head + i * rowH, w = Math.max(3, x(b.end) - x(b.start));
+        const lvl = Math.min(3, b.level || 0), ind = lvl * 10;
+        const max = 34 - Math.round(ind / 6);
+        const name = b.name.length > max ? b.name.slice(0, max - 1) + '…' : b.name;
+        const when = b.dates ? b.dates.map(v => v.split('-').reverse().join('/')).join(' – ') : `${unit} ${+b.start.toFixed(1)}–${+b.end.toFixed(1)}`;
+        const bar = b.summary
+          ? `<rect x="${x(b.start)}" y="${y + 8}" width="${w}" height="7" class="g-sum"/>`
+            + `<path d="M${x(b.start)} ${y + 15}l0 4l4 -4zM${x(b.start) + w} ${y + 15}l0 4l-4 -4z" class="g-sum"/>`
+          : `<rect x="${x(b.start)}" y="${y + 5}" width="${w}" height="13" rx="3" class="g-bar"/>`;
+        return `<g><title>${esc(b.name)}${b.duration ? ' · ' + esc(b.duration) : ''}: ${esc(when)}</title>`
+          + `<text x="${8 + ind}" y="${y + 15}" class="g-label${b.summary ? ' g-strong' : ''}">${esc(name)}</text>`
+          + (hasDur ? `<text x="${x0 - 6}" y="${y + 15}" class="g-val" text-anchor="end">${esc(b.duration || '')}</text>` : '')
+          + bar + '</g>';
       }).join('');
-      chart = `<div class="g-wrap"><svg viewBox="0 0 ${labelW + chartW + 20} ${top + bars.length * rowH + 6}" role="img" aria-label="Diagramma di Gantt">
-        <text x="${labelW}" y="10" class="g-tick">${esc(unit)} dall'avvio</text>${ticks}${rows}</svg></div>
+      chart = `<div class="g-wrap"><svg viewBox="0 0 ${x0 + chartW + 12} ${bottom + 6}" role="img" aria-label="Diagramma di Gantt">
+        <text x="8" y="${head - 8}" class="g-tick">Attività</text>
+        ${hasDur ? `<text x="${x0 - 6}" y="${head - 8}" class="g-tick" text-anchor="end">Durata</text>` : ''}
+        ${caption ? `<text x="${x0 + chartW / 2}" y="10" class="g-tick g-cap" text-anchor="middle">${esc(caption)}</text>` : ''}
+        ${ticks}${rows}</svg></div>
         <div class="sc-fine">Fasi lette dal cronoprogramma${g.metodo ? ` (${esc(g.metodo)})` : ''}${bars[0].dates ? ` (avvio previsto ${esc(bars.map(b => b.dates[0]).sort()[0].split('-').reverse().join('/'))})` : ''} ${src(g.source, 'apri')}</div>`;
     }
     const pd = !bars.length && (g.durate_fasi || []).length
@@ -116,6 +143,13 @@
     if ((l.comuni || []).length) rows.push([l.comuni.length > 1 ? 'Comuni' : 'Comune', esc(l.comuni.join(', '))]);
     if (l.coordinate) rows.push(['Coordinate', `${l.coordinate.lat.toFixed(5)} N, ${l.coordinate.lon.toFixed(5)} E
       <div class="sc-fine">${esc(l.coordinate.tipo)} ${src(l.coordinate.source)}</div>`]);
+    if ((l.lotti || []).length) {
+      rows.push([`Lotti (${l.lotti.length})`, `<ul class="sc-lots">${l.lotti.map(x => {
+        const m = safeHref(x.maps_url);
+        return `<li><strong>${esc(x.lotto)}</strong> <span class="sc-coord">${x.lat.toFixed(5)} N, ${x.lon.toFixed(5)} E</span>
+          ${m ? `<a class="sc-src" href="${esc(m)}" target="_blank" rel="noopener noreferrer">mappa</a>` : ''} ${src(x.source)}</li>`;
+      }).join('')}</ul>`]);
+    }
     if (l.connessione) {
       const cm = safeHref(l.connessione.maps_url);
       rows.push(['Connessione', `${l.connessione.lat.toFixed(5)} N, ${l.connessione.lon.toFixed(5)} E

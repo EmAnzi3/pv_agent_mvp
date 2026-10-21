@@ -116,7 +116,9 @@ def _clean_label(text: str) -> str:
 
 
 def reconstruct(words: list[tuple], rects: list[tuple], width: float, height: float, page_text: str = "") -> dict | None:
-    """words: (x0, y0, x1, y1, text[, block, line]); rects: (x0, y0, x1, y1, (r, g, b) fill)."""
+    """words: (x0, y0, x1, y1, text[, block, line]); rects: (x0, y0, x1, y1, (r, g, b)[, kind]) where kind is
+    'f' (filled shape) or 'sr' (outlined rectangle: hatched MS Project bars). Open lines (dependency arrows)
+    must not be passed: they would stretch the bars."""
     axis = _axis(words)
     if not axis:
         return None
@@ -133,48 +135,87 @@ def reconstruct(words: list[tuple], rects: list[tuple], width: float, height: fl
              and re.search(r"[A-Za-zÀ-ÿ]{3}", ln["text"])]
     bars: list[tuple] = []
     for r in rects:
-        x0, y0, x1, y1, fill = r
+        x0, y0, x1, y1, fill = r[:5]
+        kind = r[5] if len(r) > 5 else "f"
         w, h = x1 - x0, y1 - y0
-        if fill is None or h < 1.5 or h > 3.5 * text_h or w < 0.25 * b or w > 0.95 * span:
+        if fill is None or h < 1.5 or h > 3.5 * text_h or w < 0.25 * b or w > 1.05 * span:
             continue
-        if all(c >= 0.9 for c in fill) or all(c <= 0.12 for c in fill) and h < 3:
+        if kind == "f" and (all(c >= 0.9 for c in fill) or all(c <= 0.12 for c in fill) and h < 3):
             continue                                  # white backgrounds, black rules
+        if kind == "sr" and all(c >= 0.9 for c in fill):
+            continue
         if y0 < axis["y"] or x0 < axis["x_min"] - 0.3 * b or x1 > axis["x_max"] + 0.3 * b:
             continue
-        bars.append(r)
-    rows: dict[int, dict] = {}
+        bars.append((x0, y0, x1, y1, fill, kind))
     # row pitch from the activity labels (every row has one), not from the bars (summary rows may have none)
     centres = sorted({round((ln["y0"] + ln["y1"]) / 2, 1) for ln in lines})
-    gaps = [b - a for a, b in zip(centres, centres[1:]) if b - a > 0.6 * text_h]
+    gaps = [q - p for p, q in zip(centres, centres[1:]) if q - p > 0.6 * text_h]
     pitch = statistics.median(gaps) if gaps else 3 * text_h
     if len(gaps) >= 4:
         pitch = min(pitch, sorted(gaps)[len(gaps) // 4] * 1.6)   # wrapped labels make some gaps small: keep near the row step
-    for x0, y0, x1, y1, _ in bars:
+    rows: dict[tuple, dict] = {}
+    for x0, y0, x1, y1, fill, kind in bars:
         yc = (y0 + y1) / 2
         # a wrapped activity name spans several text lines inside the same row
         cand = [ln for ln in lines if abs((ln["y0"] + ln["y1"]) / 2 - yc) <= 0.45 * pitch]
         if not cand:
             continue
         cand.sort(key=lambda ln: ln["y0"])
-        ln = {"text": " ".join(c["text"] for c in cand), "y0": cand[0]["y0"], "id": tuple(id(c) for c in cand)}
+        ln = {"text": " ".join(c["text"] for c in cand), "y0": cand[0]["y0"], "id": tuple(id(c) for c in cand),
+              "words": [w for c in cand for w in c["words"]], "yc": yc}
         # tick v is the centre of period v, i.e. of the interval [v-1, v]; time is counted from the first tick
         t0 = (x0 - a) / b - 0.5 - (axis["first"] - 1)
         t1 = (x1 - a) / b - 0.5 - (axis["first"] - 1)
-        key = ln["id"]
-        row = rows.setdefault(key, {"line": ln, "start": t0, "end": t1})
+        row = rows.setdefault(ln["id"], {"line": ln, "start": t0, "end": t1, "colour": None})
         row["start"], row["end"] = min(row["start"], t0), max(row["end"], t1)
+        if kind == "f" and max(fill) - min(fill) > 0.25:
+            row["colour"] = fill                     # solid coloured bar: summary phase in MS Project styles
+    ordered = sorted(rows.values(), key=lambda r: r["line"]["y0"])
+    # indentation of the activity name gives the outline level (phases / activities)
+    indents = []
+    for r in ordered:
+        alpha = [w for w in r["line"]["words"] if re.search(r"[A-Za-zÀ-ÿ]{2}", w[4])]
+        r["x0"] = min(w[0] for w in alpha) if alpha else r["line"]["words"][0][0]
+        indents.append(r["x0"])
+    levels = []
+    for x in sorted(indents):
+        if not levels or x - levels[-1] > 3:
+            levels.append(x)
     out = []
-    for row in sorted(rows.values(), key=lambda r: r["line"]["y0"]):
-        name = _clean_label(row["line"]["text"])
+    for r in ordered:
+        # the duration column sits between the names and the chart, on the same row
+        band = [w for w in words if abs((w[1] + w[3]) / 2 - r["line"]["yc"]) <= 0.45 * pitch and w[2] <= axis["x_min"] + 0.3 * b
+                and w[0] >= max(x[2] for x in r["line"]["words"]) - 1]
+        raw = r["line"]["text"] + " " + " ".join(w[4] for w in sorted(band, key=lambda w: w[0]))
+        dm = re.search(r"(?i)\b(\d+(?:[.,]\d+)?)\s*(g|gg|giorni|days?|sett|settimane|w|wks?|mesi|ms|mo)\b", raw)
+        name = _clean_label(raw)
         if len(name) < 3:
             continue
-        start, end = max(0.0, round(row["start"], 1)), round(row["end"], 1)
+        start, end = max(0.0, round(r["start"], 2)), round(r["end"], 2)
         if end - start < 0.2:
             continue
-        out.append({"name": name[:80], "start": start, "end": end})
+        level = next((i for i, x in enumerate(levels) if abs(x - r["x0"]) <= 3), 0)
+        out.append({"name": name[:80], "start": start, "end": end, "level": min(level, 3), "indent": round(r["x0"], 1),
+                    **({"duration": f"{dm.group(1)} {dm.group(2)}"} if dm else {})})
+    for i, r in enumerate(out):                      # a row followed by deeper rows is a phase (summary)
+        r["summary"] = i + 1 < len(out) and out[i + 1]["level"] > r["level"]
     if len(out) < 3:
         return None
-    return {"unit": unit, "axis": [axis["first"], axis["last"]], "rows": out[:60], "method": "vector_gantt"}
+    labels = _axis_labels(words, axis, text_h)
+    return {"unit": unit, "axis": [axis["first"], axis["last"]], "axis_labels": labels, "rows": out[:80],
+            "method": "vector_gantt"}
+
+
+def _axis_labels(words: list[tuple], axis: dict, text_h: float) -> list[dict]:
+    """Headings printed on the time axis ('Mese 1', 'M2', 'Set-26'), placed on their period."""
+    out = []
+    for v, w in axis["seq"]:
+        prefix = [p for p in words if abs((p[1] + p[3]) / 2 - (w[1] + w[3]) / 2) <= 2.5 and 0 <= w[0] - p[2] <= 1.5 * text_h
+                  and re.fullmatch(r"[A-Za-zÀ-ÿ.]{1,10}", p[4])]
+        label = (prefix[-1][4] + " " + w[4]) if prefix else w[4]
+        t = v - axis["first"]
+        out.append({"label": label, "start": t, "end": t + 1})
+    return out
 
 
 def is_schedule_page(text: str) -> bool:
@@ -208,12 +249,17 @@ def from_fitz_page(page: Any) -> dict | None:
     if len(drawings) > 60000:
         return None
     for d in drawings:
-        fill = d.get("fill")
-        if fill is None:
-            continue
         r = d.get("rect")
-        if r is not None:
-            rects.append((*fix(r.x0, r.y0, r.x1, r.y1), tuple(fill[:3])))
+        if r is None:
+            continue
+        fill, colour = d.get("fill"), d.get("color")
+        items = d.get("items") or []
+        is_rect = any(it[0] in ("re", "qu") for it in items) or (
+            4 <= len(items) <= 5 and all(it[0] == "l" for it in items) and d.get("closePath", False))
+        if fill is not None:
+            rects.append((*fix(r.x0, r.y0, r.x1, r.y1), tuple(fill[:3]), "f"))
+        elif colour is not None and is_rect:
+            rects.append((*fix(r.x0, r.y0, r.x1, r.y1), tuple(colour[:3]), "sr"))   # outlined (hatched) bar
     g = reconstruct(words, rects, page.rect.width, page.rect.height, text)
     rows = table_rows(words)
     if rows:

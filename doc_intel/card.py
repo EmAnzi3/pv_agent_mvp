@@ -259,25 +259,33 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         mw = num / 1000 if unit.lower().startswith("k") else num
         note = None
         cands = [(g["field"], x) for g in d["groups"]
-                 if g["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")
+                 if g["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw") and g.get("subject") in ("plant", None)
                  for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["occurrences"] >= 10]
-        for fld, x in sorted(cands, key=lambda c: -c[1]["occurrences"]):
+        cands.sort(key=lambda c: -c[1]["occurrences"])
+        shown_field = "tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw"
+        shown, status = mw, "verificato"
+        source = {"document": "titolo del procedimento", "url": p.get("info_url"), "excerpt": tm.group(0)}
+        title_seen = any(abs(x["value"] - mw) <= 0.01 * mw and x["occurrences"] >= 2 for _, x in
+                         [(g["field"], x) for g in d["groups"] if g["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")
+                          for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float))])
+        for fld, x in cands:
             ratio = mw / x["value"] if x["value"] else 0
-            if any(abs(ratio - k) < 0.002 * k for k in (10, 100, 1000, 0.1, 0.01, 0.001)):
-                note = f"Probabile refuso nel titolo: gli elaborati riportano {_fmt(fld, x['value'])} ({x['occurrences']} volte)."
-                open_points.append({"label": "Potenza", "reason": note})
+            shift = any(abs(ratio - k) < 0.002 * k for k in (10, 100, 1000, 0.1, 0.01, 0.001))
+            # the documents win over the title when the title is a clear typo (decimal shift) or never confirmed
+            if shift or (not title_seen and x["occurrences"] >= 30):
+                shown, shown_field, status = x["value"], fld, "da documenti"
+                note = f"Valore ricorrente negli elaborati ({x['occurrences']} volte); il titolo riporta {tm.group(0)}" + \
+                       (" (probabile refuso)." if shift else ".")
+                source = _source(x.get("example"), titles)
+                open_points.append({"label": "Potenza", "reason": f"il titolo riporta {tm.group(0)}, gli elaborati {_fmt(fld, x['value'])}"})
+                mw = x["value"]
                 break
         lots = _pick(d, "tech.lots_count", titles)
         what = next(((f.get("qualifiers") or {}).get("what") for f in d["facts"] if f["field"] == "tech.lots_count"), "lotti")
-        sub = note or (f"Suddivisa in {lots['value']} {what}" if lots else None)
-        tiles.append({"key": "potenza", "label": "Potenza", "status": "da verificare" if note else "verificato",
-                      "value": _fmt("tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw", round(mw, 3)),
-                      "sub": sub, "source": {"document": "titolo del procedimento", "url": p.get("info_url"), "excerpt": tm.group(0)}})
-    plant_mw = None
-    if tm:
-        plant_mw = mw
-        if note:
-            plant_mw = next((x["value"] for _, x in sorted(cands, key=lambda c: -c[1]["occurrences"])), mw)
+        sub = " · ".join(x for x in (f"Suddivisa in {lots['value']} {what}" if lots else None, note) if x) or None
+        tiles.append({"key": "potenza", "label": "Potenza", "status": status,
+                      "value": _fmt(shown_field, round(shown, 3)), "sub": sub, "source": source})
+    plant_mw = mw if tm else None
     tech = _pick(d, "tech.technology", titles)
     if tech and tech["value"] in ("floating_pv", "offshore") and tech["occurrences"] < 10:
         tech = None                      # passing mentions (alternatives, literature) are not the project's technology
@@ -537,7 +545,7 @@ def _location(d: dict, p: dict, record: dict, titles: dict) -> dict:
     if len(set(provs_in)) > 1:
         munis = raw                                     # 'Melara (RO), Ostiglia (MN)': keep each province
     region = p.get("region") or record.get("region")
-    point, kind, src, conn = _site_point(d, titles)
+    point, kind, src, conn, lots = _site_point(d, titles)
     from urllib.parse import quote_plus
     if point:
         maps = f"https://www.google.com/maps/search/?api=1&query={point[0]:.5f},{point[1]:.5f}"
@@ -547,7 +555,7 @@ def _location(d: dict, p: dict, record: dict, titles: dict) -> dict:
     return {"regione": region, "provincia": prov, "comuni": munis,
             "coordinate": {"lat": round(point[0], 5), "lon": round(point[1], 5), "tipo": kind, "source": src} if point else None,
             "maps_url": maps, "maps_precision": "coordinate" if point else "comune",
-            "connessione": conn}
+            "connessione": conn, "lotti": lots}
 
 
 # weight of each kind of point as evidence of where the plant is
@@ -587,7 +595,7 @@ def _site_point(d: dict, titles: dict):
         if obj in ("substation", "connection_point"):
             conn.append((lat, lon, f))
         elif obj in SITE_WEIGHT:
-            cands.append((lat, lon, f, obj))
+            cands.append((lat, lon, f, obj, _lot_label(f)))
     point = kind = src = None
     if cands:
         near = lambda a, b: abs(a[0] - b[0]) < 0.027 and abs(a[1] - b[1]) < 0.027 / max(0.3, math.cos(math.radians(a[0])))
@@ -608,7 +616,36 @@ def _site_point(d: dict, titles: dict):
         if not point or abs(lat - point[0]) + abs(lon - point[1]) > 0.004:
             connection = {"lat": round(lat, 5), "lon": round(lon, 5), "source": _example_source(f, titles),
                           "maps_url": f"https://www.google.com/maps/search/?api=1&query={lat:.5f},{lon:.5f}"}
-    return point, kind, src, connection
+    # one position per lot, when the documents tie coordinates to at least two distinct lots
+    lots = []
+    if point:
+        by_lot: dict[str, list] = {}
+        for c in cands:
+            if c[4] and abs(c[0] - point[0]) < 0.15 and abs(c[1] - point[1]) < 0.2:      # within ~15 km of the plant
+                by_lot.setdefault(c[4], []).append(c)
+        if len(by_lot) >= 2:
+            for lab in sorted(by_lot, key=lambda x: (re.sub(r"\s.*", "", x), x.split()[-1].zfill(3))):
+                pts = by_lot[lab]
+                top = max(SITE_WEIGHT[o[3]] for o in pts)
+                lead = [o for o in pts if SITE_WEIGHT[o[3]] == top]
+                la, lo = sum(o[0] for o in lead) / len(lead), sum(o[1] for o in lead) / len(lead)
+                lots.append({"lotto": lab, "lat": round(la, 5), "lon": round(lo, 5),
+                             "maps_url": f"https://www.google.com/maps/search/?api=1&query={la:.5f},{lo:.5f}",
+                             "source": _example_source(lead[0][2], titles)})
+    return point, kind, src, connection, lots[:12]
+
+
+def _lot_label(f: dict) -> str | None:
+    """Lot / area label of a coordinate: 'Lotto B' as written, or the area id of a vertex table ('Area 2')."""
+    subj = (f.get("subject") or "").strip()
+    if not subj:
+        return None
+    subj = subj.split("#")[0]
+    if re.fullmatch(r"[A-Z]{1,2}\d?|\d{1,2}|[IVX]{1,4}", subj):
+        return f"Area {subj}"
+    if re.match(r"(?i)(lotto|area|campo|sottocampo|sottoimpianto|impianto|sezione|blocco)\s", subj):
+        return subj[:1].upper() + subj[1:]
+    return None
 
 
 # --------------------------------------------------------------------------------------------- schedule
@@ -618,7 +655,8 @@ def _gantt(d: dict, titles: dict) -> dict:
     for f in d["facts"]:
         if f["field"] == "schedule.phase" and (f.get("qualifiers") or {}).get("method") in ("vector_gantt", "dated_table", "raster_gantt"):
             c = f["citation"]
-            by_page.setdefault((c["url"], c["page"]), []).append(f)
+            # pages of the same document and method form one programme (MS Project prints continue on the next page)
+            by_page.setdefault((c["url"], f["qualifiers"].get("method")), []).append(f)
     bars, unit, src, method = [], "month", None, None
     if by_page:
         dur0 = _pick(d, "schedule.duration.construction", titles)
@@ -646,20 +684,33 @@ def _gantt(d: dict, titles: dict) -> dict:
         if not build:
             by_page = {}
     if by_page:
-        (url, page), fs = max(build.items(), key=rank)
+        (url, _m), fs = max(build.items(), key=rank)
+        page = min(f["citation"]["page"] for f in fs)
         method = ("dated_table" if any(f["qualifiers"].get("method") == "dated_table" for f in fs)
                   else "vector_gantt" if any(f["qualifiers"].get("method") == "vector_gantt" for f in fs) else "raster_gantt")
         fs = [f for f in fs if f["qualifiers"].get("method") == method]
-        fs.sort(key=lambda f: f["value"].get("order", 0))
+        fs.sort(key=lambda f: (f["citation"]["page"], f["value"].get("order", 0)))
+        axis_labels = next((f["value"]["axis_labels"] for f in fs if f["value"].get("axis_labels")), [])
+        indents = sorted({round(f["value"]["indent"], 0) for f in fs if f["value"].get("indent") is not None})
+        lv = []
+        for x in indents:
+            if not lv or x - lv[-1] > 3:
+                lv.append(x)
         unit = "month" if all(f["value"].get("unit_known", True) for f in fs) else fs[0]["value"].get("unit") or "period"
         seen = set()
         for f in fs:
             v = f["value"]
-            if v["name"].lower() in seen:
-                continue
-            seen.add(v["name"].lower())
+            key = (v["name"].lower(), round(v["start_month"], 1), round(v["end_month"], 1))
+            if key in seen:
+                continue                     # same activity printed twice; a phase and its homonymous task stay
+            seen.add(key)
+            level = (next((i for i, x in enumerate(lv) if abs(x - v["indent"]) <= 3), 0)
+                     if v.get("indent") is not None and lv else v.get("level", 0))
             bars.append({"name": _phase_name(v["name"]), "start": v["start_month"], "end": v["end_month"],
+                         "level": min(level, 3), **({"duration": v["duration"]} if v.get("duration") else {}),
                          **({"dates": [v["start_date"], v["end_date"]]} if v.get("start_date") else {})})
+        for i, bb in enumerate(bars):
+            bb["summary"] = i + 1 < len(bars) and bars[i + 1]["level"] > bb["level"]
         src = _source({"url": url, "page": page}, titles)
         span = max(b["end"] for b in bars) - min(b["start"] for b in bars) if bars else 0
         if method != "dated_table" and dur_m and span > 2 * dur_m and abs(span * 12 / 52 - dur_m) <= 0.4 * dur_m:
@@ -727,7 +778,28 @@ def _gantt(d: dict, titles: dict) -> dict:
     elif not bars:
         note = ("Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente)."
                 + (" Il documento è indicato sotto." if sched_doc else ""))
+    axis_caption, axis_ticks = None, []
+    if bars and all(b.get("dates") for b in bars):
+        # dated programme: calendar months on the axis, as printed in MS Project timescales
+        from datetime import date
+        d0 = min(date.fromisoformat(b["dates"][0]) for b in bars)
+        names = ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"]
+        y, m = d0.year, d0.month
+        offset = (d0.day - 1) / 30.4
+        for i in range(int(max(b["end"] for b in bars) + offset) + 1):
+            axis_ticks.append({"label": f"{names[m - 1]} {str(y)[2:]}", "start": round(i - offset, 3), "end": round(i + 1 - offset, 3)})
+            m += 1
+            if m == 13:
+                y, m = y + 1, 1
+    if bars and by_page and not axis_ticks and axis_labels:
+        words = [x["label"].split(" ", 1) for x in axis_labels]
+        if all(len(w) == 2 for w in words) and len({w[0] for w in words}) == 1:
+            axis_caption = words[0][0]                    # 'Mese' printed once, numbers on the ticks as in the document
+            axis_ticks = [{"label": w[1], "start": x["start"], "end": x["end"]} for w, x in zip(words, axis_labels)]
+        else:
+            axis_ticks = [{"label": x["label"], "start": x["start"], "end": x["end"]} for x in axis_labels]
     return {"bars": bars, "unit": unit, "months": months, "source": src,
+            "asse": {"titolo": axis_caption, "etichette": axis_ticks} if axis_ticks else None,
             "duration": {"text": dur["text"], "status": dur["status"], "hint": _hint(dur), "source": dur["source"]} if dur else None,
             "milestones": milestones, "document": sched_doc, "note": note, "altri": others,
             "durate_fasi": phase_durations[:30],

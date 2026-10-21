@@ -151,7 +151,12 @@ def extract_gantt(ctx: PageContext) -> list[Fact]:
                             value={"name": r["name"], "start_month": round(r["start"] * k, 2) if k else r["start"],
                                    "end_month": round(r["end"] * k, 2) if k else r["end"],
                                    "raw": f"{g.get('unit')} {r['start']:g}–{r['end']:g}", "order": i,
-                                   "unit": g.get("unit"), "unit_known": k is not None},
+                                   "unit": g.get("unit"), "unit_known": k is not None,
+                                   "level": r.get("level", 0), "indent": r.get("indent"), "summary": r.get("summary", False),
+                                   "duration": r.get("duration"),
+                                   **({"axis_labels": [{"label": x["label"], "start": round(x["start"] * k, 3) if k else x["start"],
+                                                        "end": round(x["end"] * k, 3) if k else x["end"]} for x in g.get("axis_labels", [])]}
+                                      if i == 0 else {})},
                             citation=ctx.cite(r["name"]), temporal="planned",
                             qualifiers={"method": g.get("method", "vector_gantt"), "rows": len(g["rows"]), "scope": scope},
                             limits="Bar positions read from the drawing; periods follow the chart's own axis",

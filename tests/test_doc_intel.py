@@ -1038,7 +1038,8 @@ class SiteLocation(unittest.TestCase):
                                    "qualifiers": {"object": obj}, "citation": {"url": "u", "page": 1, "excerpt": ""}}
         d = {"facts": [F(44.84, 8.78, "site_point"), F(44.841, 8.781, "unknown"), F(44.839, 8.779, "survey_point"),
                        F(45.20, 9.40, "unknown"), F(44.80, 8.70, "substation")]}
-        point, kind, _, conn = _site_point(d, {})
+        point, kind, _, conn, lots = _site_point(d, {})
+        self.assertEqual(lots, [])
         self.assertEqual(point, (44.84, 8.78))
         self.assertIn("dichiarate", kind)
         self.assertEqual((conn["lat"], conn["lon"]), (44.8, 8.7))
@@ -1064,3 +1065,49 @@ class GanttFromImage(unittest.TestCase):
             for w in words for k, t in enumerate(w[4].split(), 1))
         g = from_raster((im.tobytes(), 700, 300), tsv, "Cronoprogramma mesi")
         self.assertEqual([(r["name"], round(r["start"]), round(r["end"])) for r in g["rows"]], spans)
+
+
+class LotCoordinates(unittest.TestCase):
+    def test_one_point_per_lot(self):
+        from doc_intel.card import _site_point
+        F = lambda lat, lon, obj, lot: {"field": "geo.latlon_point", "value": {"lat": lat, "lon": lon}, "subject": lot,
+                                        "qualifiers": {"object": obj}, "citation": {"url": "u", "page": 1, "excerpt": ""}}
+        d = {"facts": [F(44.760, 11.670, "site_point", "Lotto A"), F(44.770, 11.690, "site_point", "Lotto B"),
+                       F(44.771, 11.691, "unknown", "Lotto B"), F(44.765, 11.680, "unknown", None)]}
+        point, _, _, _, lots = _site_point(d, {})
+        self.assertEqual([(x["lotto"], x["lat"], x["lon"]) for x in lots], [("Lotto A", 44.76, 11.67), ("Lotto B", 44.77, 11.69)])
+        self.assertIn("maps", lots[0]["maps_url"])
+
+    def test_title_typo_power_replaced_by_documents(self):
+        from doc_intel.card import _summary
+        d = {"groups": [{"field": "tech.pv_dc_mwp", "subject": "plant", "values": [{"value": 26.61776, "occurrences": 863, "example": None}]}],
+             "facts": []}
+        tiles, open_points = _summary(d, {"title": "Impianto Melara con potenza nominale di 266617,76 KwP"}, {}, {})
+        t = next(t for t in tiles if t["key"] == "potenza")
+        self.assertEqual(t["value"], "26,618 MWp")
+        self.assertIn("266617,76 KwP", t["sub"])
+
+
+class GanttHierarchy(unittest.TestCase):
+    """MS Project layout: indented names, duration column, 'Mese N' timescale, outlined (hatched) bars."""
+
+    def test_levels_durations_axis_and_outlined_bars(self):
+        from doc_intel.gantt_vector import reconstruct
+        words = []
+        for v in range(1, 13):
+            words += [(200 + 20 * v - 14, 46, 200 + 20 * v - 3, 54, "Mese"), (200 + 20 * v - 2, 46, 200 + 20 * v + 2, 54, str(v))]
+        rows = [("Fase di ingegneria", 20, "60 g", 0, 2, "f"), ("Rilievi", 30, "20 g", 0, 1, "sr"),
+                ("Progetti esecutivi", 30, "40 g", 1, 2, "sr"), ("Posa FV", 20, "300 g", 2, 12, "f"),
+                ("Posa pali", 30, "120 g", 2, 6, "sr")]
+        rects = []
+        X = lambda t: 200 + 20 * (t + 0.5)
+        for i, (n, ind, dur, a, b, kind) in enumerate(rows):
+            y = 76 + 20 * i
+            words += [(ind, y, ind + 6 * len(n), y + 8, n, 10 + i, 0), (170, y, 185, y + 8, dur, 50 + i, 0)]
+            rects.append((X(a), y, X(b), y + 8, (0.2, 0.3, 0.8) if kind == "f" else (0.5, 0.5, 0.5), kind))
+        g = reconstruct(words, rects, 600, 400, "Cronoprogramma")
+        got = [(r["name"], r["level"], r["summary"], r.get("duration"), round(r["start"]), round(r["end"])) for r in g["rows"]]
+        self.assertEqual(got, [("Fase di ingegneria", 0, True, "60 g", 0, 2), ("Rilievi", 1, False, "20 g", 0, 1),
+                               ("Progetti esecutivi", 1, False, "40 g", 1, 2), ("Posa FV", 0, True, "300 g", 2, 12),
+                               ("Posa pali", 1, False, "120 g", 2, 6)])
+        self.assertEqual(g["axis_labels"][0]["label"], "Mese 1")
