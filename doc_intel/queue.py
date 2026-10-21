@@ -59,7 +59,8 @@ def _load(path: Path) -> dict:
 
 
 def plan(data_json: str | Path, memory_dir: str | Path, max_items: int = 35, mode: str = "both",
-         retry_days: int = 14, today: date | None = None, record: bool = True) -> list[dict[str, Any]]:
+         retry_days: int = 14, today: date | None = None, record: bool = True,
+         local: bool = False) -> list[dict[str, Any]]:
     """Return up to ``max_items`` records to analyse: [{url, project_key, reason, power_mw}].
 
     mode: 'new' (only projects never seen before), 'backlog' (only older ones), 'both', 'refresh'."""
@@ -78,7 +79,8 @@ def plan(data_json: str | Path, memory_dir: str | Path, max_items: int = 35, mod
         is_new = key not in seen
         if is_new:
             seen[key] = today.isoformat()
-        if any(h in url for h in LOCAL_ONLY_HOSTS) or _adapter_for(url) is None:
+        # cloud batches skip the portals that refuse foreign IPs; the local runner (Italian PC) takes only those
+        if (any(h in url for h in LOCAL_ONLY_HOSTS) != local) or _adapter_for(url) is None:
             continue
         if REGISTER_ONLY.search(url):
             # a register sheet alone has no documents: the plant waits until the authority publishes a

@@ -8,11 +8,12 @@ from .base import AdapterCapabilities, DocumentAdapter, Discovery, ProjectIdenti
 from .mase import MaseAdapter
 from .api_portals import AtosAdapter, SilviaAdapter, ToscanaPattiAdapter
 from .regional import BoxSharedFolderAdapter, HtmlIndexAdapter, NextcloudShareAdapter
+from .sicilia import SiciliaViaAdapter
 
 REGISTRY: dict[str, type[DocumentAdapter]] = {"mase": MaseAdapter, "html_index": HtmlIndexAdapter,
                                                 "nextcloud_share": NextcloudShareAdapter, "box_shared": BoxSharedFolderAdapter,
                                                 "silvia": SilviaAdapter, "toscana_patti": ToscanaPattiAdapter,
-                                                "toscana_atos": AtosAdapter}
+                                                "toscana_atos": AtosAdapter, "sicilia": SiciliaViaAdapter}
 
 
 def adapter_for_url(url: str) -> DocumentAdapter:

@@ -1422,3 +1422,29 @@ class FillRadarFromCards(unittest.TestCase):
         self.assertEqual(b["power_mw"], 266.618)                    # existing value never overwritten
         self.assertEqual(out["top_projects"][0]["power_mw"], 11.145)
         self.assertEqual((res["filled"], res["differences"]), (3, 1))
+
+
+class SiciliaAdapterTest(unittest.TestCase):
+    URL = ("https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332"
+           "&procedura___oggetto_raw=175&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0")
+
+    def test_record_and_documents(self):
+        from doc_intel.adapters import adapter_for_url
+        record = ('<html><body><div>Cerca: Pulisci Oggetto PROGETTO DI UN IMPIANTO FOTOVOLTAICO DENOMINATO "BELPASSO" DA 300 MWP '
+                  'NEL COMUNE DI BELPASSO (CT) E DELLE RELATIVE OPERE CONNESSE Cod. Proc. Proponente</div><table><tr><td>179</td>'
+                  '<td>IBVI 1 SRL</td><td>PAUR</td><td>PAUR-VIA (art.23 - 27bis)</td><td>Conclusa</td><td><a href="/viavas/index.php/it/'
+                  'component/fabrik/list/28/it/?integrazioni___id_integrazioni_raw=179&amp;limitstart28=0&amp;resetfilters=1">'
+                  'docs</a></td></tr></table></body></html>')
+        dl = ("/viavas/index.php?option=com_fabrik&amp;task=plugin.pluginAjax&amp;plugin=fileupload&amp;method=ajax_download"
+              "&amp;format=raw&amp;element_id=1233&amp;formid=28&amp;rowid={}&amp;repeatcount=0&amp;ajaxIndex=0")
+        docs_page = "<table>" + "".join(f'<tr><td>Elaborato</td><td>Relazione {i}</td><td><a href="{dl.format(i)}">Download</a></td></tr>'
+                                         for i in (5149, 5205)) + "</table>"
+        a = adapter_for_url(self.URL)
+        a.get_html = lambda u: record if "list/30" in u else docs_page
+        ident = a.identify(self.URL)
+        self.assertEqual((ident.proponent, ident.raw["procedure_code"], ident.municipalities, ident.province),
+                         ("IBVI 1 SRL", "179", ["Belpasso"], "CT"))
+        disc = a.discover(ident)
+        self.assertEqual(len(disc.documents), 2)
+        self.assertIn("rowid=5149", disc.documents[0].url)
+        self.assertEqual(disc.documents[0].title, "Elaborato - Relazione 5149")

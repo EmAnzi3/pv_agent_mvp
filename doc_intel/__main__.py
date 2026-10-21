@@ -81,6 +81,10 @@ def main(argv: list[str] | None = None) -> int:
     fr.add_argument("--data", required=True)
     fr.add_argument("--cards", default="docs/schede")
     fr.add_argument("--audit", default="reports/fill_from_cards_audit.csv")
+    lb = sub.add_parser("local-batch", help="analyse the portals reachable only from Italy (run on the user's PC)")
+    lb.add_argument("--data", default="docs/data.json")
+    lb.add_argument("--max", type=int, default=15)
+    lb.add_argument("--budget-min", type=float, default=40, help="OCR time budget per project")
     ci = sub.add_parser("cards-index", help="write the index of the cards in a folder (published for the public page)")
     ci.add_argument("--folder", required=True)
     ci.add_argument("--out", required=True)
@@ -203,6 +207,9 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Dati completati dalle schede: {res['filled']} campi vuoti riempiti, "
               f"{res['differences']} differenze di potenza da verificare (non applicate) - audit: {a.audit}")
         return 0
+    if a.cmd == "local-batch":
+        from .local_batch import main as local_main
+        return local_main(a.data, a.max, a.budget_min)
     if a.cmd == "cards-index":
         from .sync import build_index
         idx = build_index(a.folder)
