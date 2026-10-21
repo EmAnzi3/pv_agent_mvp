@@ -72,8 +72,9 @@
       const unit = g.unit === 'month' ? 'mesi' : g.unit === 'week' ? 'settimane' : 'periodi';
       const asse = g.asse || null;
       const ticksDoc = asse ? asse.etichette : [];
-      const lo = Math.min(0, ...bars.map(b => b.start), ...ticksDoc.map(t => t.start));
-      const hi = Math.max(1, ...bars.map(b => b.end), ...ticksDoc.map(t => t.end));
+      const real = bars.filter(b => !b.separator);
+      const lo = Math.min(0, ...real.map(b => b.start), ...ticksDoc.map(t => t.start));
+      const hi = Math.max(1, ...real.map(b => b.end), ...ticksDoc.map(t => t.end));
       const hasDur = bars.some(b => b.duration);
       const rowH = 22, labelW = 230, durW = hasDur ? 46 : 0, chartW = 300, head = asse && asse.titolo ? 34 : 26;
       const x0 = labelW + durW;
@@ -84,8 +85,9 @@
         // the document's own timescale ('Mese 1 ... Mese 24', or calendar months): labels thinned to stay legible
         const every = Math.max(1, Math.ceil(ticksDoc.length / (chartW / 22)));
         ticksDoc.forEach((t, i) => {
+          if (i % every !== 0) return;               // grid and label only where a heading is printed
           ticks += `<line x1="${x(t.start)}" y1="${head - 4}" x2="${x(t.start)}" y2="${bottom}" class="g-grid"/>`;
-          if (i % every === 0) ticks += `<text x="${(x(t.start) + x(t.end)) / 2}" y="${head - 8}" class="g-tick" text-anchor="middle">${esc(t.label)}</text>`;
+          ticks += `<text x="${(x(t.start) + x(t.end)) / 2}" y="${head - 8}" class="g-tick" text-anchor="middle">${esc(t.label)}</text>`;
         });
       } else {
         const span = Math.ceil(hi - lo);
@@ -95,9 +97,13 @@
             + `<text x="${x(m)}" y="${head - 8}" class="g-tick" text-anchor="middle">${m}</text>`;
         }
       }
-      const caption = asse && asse.titolo ? asse.titolo : (asse ? '' : `${unit} dall'avvio`);
+      const caption = asse && asse.titolo ? asse.titolo : (asse && real.some(b => b.dates) ? '' : (asse ? unit : `${unit} dall'avvio`));
       const rows = bars.map((b, i) => {
         const y = head + i * rowH, w = Math.max(3, x(b.end) - x(b.start));
+        if (b.separator) {
+          return `<line x1="8" y1="${y + 4}" x2="${x0 + chartW}" y2="${y + 4}" class="g-sep"/>`
+            + `<text x="8" y="${y + 16}" class="g-label g-strong">${esc(b.name)}</text>`;
+        }
         const lvl = Math.min(3, b.level || 0), ind = lvl * 10;
         const max = 34 - Math.round(ind / 6);
         const name = b.name.length > max ? b.name.slice(0, max - 1) + '…' : b.name;
@@ -116,7 +122,7 @@
         ${hasDur ? `<text x="${x0 - 6}" y="${head - 8}" class="g-tick" text-anchor="end">Durata</text>` : ''}
         ${caption ? `<text x="${x0 + chartW / 2}" y="10" class="g-tick g-cap" text-anchor="middle">${esc(caption)}</text>` : ''}
         ${ticks}${rows}</svg></div>
-        <div class="sc-fine">Fasi lette dal cronoprogramma${g.metodo ? ` (${esc(g.metodo)})` : ''}${bars[0].dates ? ` (avvio previsto ${esc(bars.map(b => b.dates[0]).sort()[0].split('-').reverse().join('/'))})` : ''} ${src(g.source, 'apri')}</div>`;
+        <div class="sc-fine">Fasi lette dal cronoprogramma${g.metodo ? ` (${esc(g.metodo)})` : ''}${real[0] && real[0].dates ? ` (avvio previsto ${esc(real.filter(b => b.dates).map(b => b.dates[0]).sort()[0].split('-').reverse().join('/'))})` : ''} ${src(g.source, 'apri')}</div>`;
     }
     const pd = !bars.length && (g.durate_fasi || []).length
       ? `<table class="g-dt"><thead><tr><th>Fase</th><th>Durata</th></tr></thead><tbody>${g.durate_fasi.map(p =>

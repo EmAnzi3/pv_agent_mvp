@@ -689,6 +689,12 @@ def _gantt(d: dict, titles: dict) -> dict:
         method = ("dated_table" if any(f["qualifiers"].get("method") == "dated_table" for f in fs)
                   else "vector_gantt" if any(f["qualifiers"].get("method") == "vector_gantt" for f in fs) else "raster_gantt")
         fs = [f for f in fs if f["qualifiers"].get("method") == method]
+        # continuation pages of the same programme stay; decommissioning pages are a different programme
+        pages: dict[int, list] = {}
+        for f in fs:
+            pages.setdefault(f["citation"]["page"], []).append(f)
+        keep = [pg for pg, v in pages.items() if sum(bool(decom.search(f["value"]["name"])) for f in v) < 0.4 * len(v)]
+        fs = [f for f in fs if f["citation"]["page"] in keep] or fs
         fs.sort(key=lambda f: (f["citation"]["page"], f["value"].get("order", 0)))
         axis_labels = next((f["value"]["axis_labels"] for f in fs if f["value"].get("axis_labels")), [])
         indents = sorted({round(f["value"]["indent"], 0) for f in fs if f["value"].get("indent") is not None})
@@ -707,10 +713,29 @@ def _gantt(d: dict, titles: dict) -> dict:
             level = (next((i for i, x in enumerate(lv) if abs(x - v["indent"]) <= 3), 0)
                      if v.get("indent") is not None and lv else v.get("level", 0))
             bars.append({"name": _phase_name(v["name"]), "start": v["start_month"], "end": v["end_month"],
-                         "level": min(level, 3), **({"duration": v["duration"]} if v.get("duration") else {}),
+                         "level": min(level, 3), "page": f["citation"]["page"], **({"duration": v["duration"]} if v.get("duration") else {}),
                          **({"dates": [v["start_date"], v["end_date"]]} if v.get("start_date") else {})})
         for i, bb in enumerate(bars):
             bb["summary"] = i + 1 < len(bars) and bars[i + 1]["level"] > bb["level"]
+        # a bare number after the name is the duration column, in the chart's unit ('trasformatori e quadri 46')
+        tail = [re.search(r"\s(\d{1,4})$", bb["name"]) for bb in bars]
+        if sum(bool(t) for t in tail) >= 0.5 * len(bars):
+            word = {"week": "sett.", "month": "mesi", "day": "g"}.get(fs[0]["value"].get("unit"), "")
+            for bb, t in zip(bars, tail):
+                if t:
+                    bb["name"] = bb["name"][: t.start()].strip()
+                    bb.setdefault("duration", f"{t.group(1)} {word}".strip())
+        # pages of one document printed as separate programmes (plant, substation): a heading between them
+        out_bars, prev_end, prev_page = [], 0.0, None
+        for bb in bars:
+            pg = bb.pop("page", None)
+            if prev_page is not None and pg != prev_page:
+                if bb["start"] < 0.15 * prev_end:          # time restarts: a second programme, not a continuation
+                    out_bars.append({"name": f"Programma successivo (pag. {pg})", "separator": True,
+                                     "start": 0, "end": 0, "level": 0})
+            out_bars.append(bb)
+            prev_end, prev_page = max(prev_end, bb["end"]) if pg == prev_page or prev_page is None else bb["end"], pg
+        bars = out_bars
         src = _source({"url": url, "page": page}, titles)
         span = max(b["end"] for b in bars) - min(b["start"] for b in bars) if bars else 0
         if method != "dated_table" and dur_m and span > 2 * dur_m and abs(span * 12 / 52 - dur_m) <= 0.4 * dur_m:
