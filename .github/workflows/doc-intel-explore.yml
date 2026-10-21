@@ -4,8 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       urls:
-        description: 'Record URLs separated by spaces'
-        required: true
+        description: 'Record URLs separated by spaces (empty: doc_intel/explore_targets.txt)'
+        required: false
+        default: ''
+  pull_request:
+    paths:
+      - 'doc_intel/explore_targets.txt'
+      - '.github/workflows/doc-intel-explore.yml'
 permissions:
   contents: read
 jobs:
@@ -23,4 +28,6 @@ jobs:
       - name: Explore
         env:
           URLS: ${{ inputs.urls }}
-        run: python -m doc_intel explore $URLS --out reports/explore.json --annotate
+        run: |
+          if [ -z "$URLS" ]; then URLS=$(grep -v '^#' doc_intel/explore_targets.txt | tr '\n' ' '); fi
+          python -m doc_intel explore $URLS --out reports/explore.json --annotate
