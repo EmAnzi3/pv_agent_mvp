@@ -76,6 +76,9 @@ def main(argv: list[str] | None = None) -> int:
     qs.add_argument("--memory", required=True)
     sy = sub.add_parser("sync-schede", help="download the published project cards for the dashboard (docs/schede)")
     sy.add_argument("--out", default="docs/schede")
+    ci = sub.add_parser("cards-index", help="write the index of the cards in a folder (published for the public page)")
+    ci.add_argument("--folder", required=True)
+    ci.add_argument("--out", required=True)
     ex = sub.add_parser("explore", help="dump links and API calls of portal pages (to write new adapters)")
     ex.add_argument("urls", nargs="+")
     ex.add_argument("--out", default="reports/explore.json")
@@ -184,6 +187,12 @@ def main(argv: list[str] | None = None) -> int:
         res = sync_cards(a.out)
         print(f"Schede progetto: {res['downloaded']} aggiornate, {res['total']} disponibili"
               + (f", {res['errors']} non scaricate" if res["errors"] else ""))
+        return 0
+    if a.cmd == "cards-index":
+        from .sync import build_index
+        idx = build_index(a.folder)
+        Path(a.out).write_text(json.dumps(idx, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+        print(f"cards index: {len(idx)} cards -> {a.out}")
         return 0
     if a.cmd == "explore":
         from .explore import main as explore_main

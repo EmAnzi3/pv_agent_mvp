@@ -1631,7 +1631,7 @@ __SCHEDA_CSS__
 
     function schedaButton(row) {
       const s = row && row.project_key ? schedeIndex[row.project_key] : null;
-      return s ? ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}">Scheda</button>` : '';
+      return s ? ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>` : '';
     }
 
     function setText(id, value) {
@@ -2162,22 +2162,31 @@ __SCHEDA_CSS__
     document.addEventListener('click', event => {
       const button = event.target.closest('[data-scheda]');
       if (!button || !window.PVScheda) return;
-      fetch('schede/' + encodeURIComponent(button.dataset.scheda), { cache: 'no-cache' })
+      const base = button.dataset.live ? SCHEDE_LIVE : 'schede/';
+      fetch(base + encodeURIComponent(button.dataset.scheda), { cache: 'no-cache' })
         .then(r => r.ok ? r.json() : Promise.reject(r.status))
         .then(card => window.PVScheda.open(card))
         .catch(() => {});
     });
 
-    fetch('schede/index.json', { cache: 'no-cache' })
-      .then(r => r.ok ? r.json() : {})
-      .then(index => {
-        schedeIndex = index || {};
+    // cards published with the dashboard (docs/schede) first; cards produced in the cloud after the
+    // last dashboard update are read from the memory branch of the public repository
+    const SCHEDE_LIVE = 'https://raw.githubusercontent.com/EmAnzi3/pv_agent_mvp/doc-intel-state/schede/';
+    const getIndex = url => fetch(url, { cache: 'no-cache' }).then(r => r.ok ? r.json() : {}).catch(() => ({}));
+    Promise.all([getIndex('schede/index.json'), getIndex(SCHEDE_LIVE + 'live_index.json')])
+      .then(([local, live]) => {
+        const merged = {};
+        Object.entries(live || {}).forEach(([k, v]) => { merged[k] = Object.assign({}, v, { live: true }); });
+        Object.entries(local || {}).forEach(([k, v]) => {
+          const l = merged[k];
+          if (!l || !l.updated || (v.updated && v.updated >= l.updated)) merged[k] = v;   // newer copy wins
+        });
+        schedeIndex = merged;
         if (Object.keys(schedeIndex).length) {
           initTopProjects();
           renderPipeline();
         }
-      })
-      .catch(() => {});
+      });
 
     initKpis();
     initRegionRanking();

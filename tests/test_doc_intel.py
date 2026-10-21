@@ -1306,3 +1306,32 @@ class CrossSourceDedupe(unittest.TestCase):
                 {"project_key": "b", "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110", "power_mw": 128}]}))
             items = plan(data, Path(t) / "mem", max_items=10, record=False)
         self.assertEqual([i["project_key"] for i in items], ["b"])
+
+
+class DedupeGuards(unittest.TestCase):
+    def test_different_plant_names_stay_apart(self):
+        from app.data_quality import dedupe_projects
+        base = {"source": "sicilia", "proponent": "GR VALUE DEVELOPMENT SRL", "region": "Sicilia", "province": "TP",
+                "municipality": "Mazara del Vallo", "power_mw": 7.0}
+        rows = [dict(base, title='IMPIANTO FOTOVOLTAICO DENOMINATO "MAZARA UNO - PIANA BERLINGERI" DELLA POTENZA DI 7000 KW',
+                     url="https://si-vvi.regione.sicilia.it/x?procedura___oggetto_raw=976"),
+                dict(base, title='IMPIANTO FOTOVOLTAICO DENOMINATO "MAZARA DUE - C.DA BERLINGERI" DELLA POTENZA DI 7000 KW',
+                     url="https://si-vvi.regione.sicilia.it/x?procedura___oggetto_raw=977")]
+        merged, _, _ = dedupe_projects(rows)
+        self.assertEqual(len(merged), 2)
+
+    def test_preferred_source_gives_fields(self):
+        from app.data_quality import dedupe_projects
+        rows = [{"source": "toscana_atos", "title": "FTV MARCIANELLA", "proponent": "SONNEDIX EUREKA", "region": "Toscana",
+                 "province": "SI", "municipalities": "Chiusi", "power_mw": 50.79,
+                 "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=7196"},
+                {"source": "toscana", "title": '[ID 2503] Progetto di un impianto agrivoltaico denominato "Marcianella"',
+                 "proponent": "SONNEDIX EUREKA SRL", "region": "Toscana", "province": "SI",
+                 "municipalities": "CHIUSI, MONTEPULCIANO", "power_mw": 50.0,
+                 "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/147"}]
+        merged, _, _ = dedupe_projects(rows)
+        self.assertEqual(len(merged), 1)
+        m = merged[0]
+        self.assertEqual((m["source"], m["power_mw"], m["municipalities"], m["proponent"]),
+                         ("toscana", 50.0, "CHIUSI, MONTEPULCIANO", "SONNEDIX EUREKA SRL"))
+        self.assertTrue(m["url"].endswith("/147"))

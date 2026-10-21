@@ -884,6 +884,39 @@ def _places(row: dict[str, Any], c: dict[str, Any]) -> set[str]:
     return {normalize_municipality(x) for x in re.split(r"[,;/]| e ", raw) if normalize_municipality(x)}
 
 
+PLANT_NAME_RE = re.compile(r"(?i)denominat[oa]\s*[:\-]?\s*[\"“”«'‘’]+\s*([^\"“”»'‘’]{2,60}?)\s*[\"“”»'‘’]")
+COPY_SUFFIX_RE = re.compile(r"\((\d{1,2})\)\s*$")
+
+
+def plant_names_differ(title_a: str, title_b: str) -> bool:
+    """Two different plants of the same company often share everything but the plant name
+    ("MAZARA UNO" / "MAZARA DUE") or a register copy number ("FTV TORRITA DI SIENA" / "... (2)")."""
+    na = {norm_text(x) for x in PLANT_NAME_RE.findall(title_a or "")}
+    nb = {norm_text(x) for x in PLANT_NAME_RE.findall(title_b or "")}
+    if na and nb and na.isdisjoint(nb):
+        return True
+    sa, sb = COPY_SUFFIX_RE.search((title_a or "").strip()), COPY_SUFFIX_RE.search((title_b or "").strip())
+    if (sa or sb) and (sa.group(1) if sa else "1") != (sb.group(1) if sb else "1"):
+        base_a, base_b = COPY_SUFFIX_RE.sub("", title_a or "").strip(), COPY_SUFFIX_RE.sub("", title_b or "").strip()
+        return norm_text(base_a) == norm_text(base_b)
+    return False
+
+
+SOURCE_RANK_LOCAL = ("regione.sicilia.it", "sistema.puglia.it", "regione.basilicata.it")
+
+
+def source_rank(row: dict[str, Any]) -> int:
+    """Which record of a merged group gives the address and the fields: MASE (national procedure,
+    full documents) first, then regional procedure portals, then portals reachable only from Italy,
+    plant registers last."""
+    c = canonical_record(row)
+    if c["source_norm"] in REGISTER_SOURCES:
+        return 3
+    if any(h in c["url"] for h in SOURCE_RANK_LOCAL):
+        return 2
+    return 0 if "mase" in c["source_norm"] else 1
+
+
 def same_plant_cross_source(a: dict[str, Any], b: dict[str, Any], ca: dict[str, Any], cb: dict[str, Any]) -> bool:
     if ca["source_norm"] == cb["source_norm"]:
         return False
@@ -904,6 +937,8 @@ def should_merge(a: dict[str, Any], b: dict[str, Any]) -> tuple[bool, str, int]:
     conflict, reason = location_conflict(a, b)
     if conflict:
         return False, reason, 0
+    if plant_names_differ(ca["title"], cb["title"]):
+        return False, "different_plant_names", 0
 
     url_a, url_b = specific_url_key(ca["url"]), specific_url_key(cb["url"])
     sid_a, sid_b = extract_source_identifier(a), extract_source_identifier(b)
@@ -1120,12 +1155,14 @@ def enforce_unique_project_keys(rows: list[dict[str, Any]]) -> tuple[list[dict[s
 
 
 def merge_group(rows: list[dict[str, Any]]) -> dict[str, Any]:
-    base = max(rows, key=completeness_score).copy()
-    for row in sorted(rows, key=completeness_score, reverse=True):
+    # V17: the preferred source (see source_rank) gives the record its address and fields; the others fill gaps
+    ordered = sorted(rows, key=lambda r: (source_rank(r), -completeness_score(r)))
+    base = ordered[0].copy()
+    for row in ordered:
         for k, v in row.items():
             if base.get(k) in ("", None, [], {}) and v not in ("", None, [], {}):
                 base[k] = v
-    canonicals = [canonical_record(r) for r in rows]
+    canonicals = [canonical_record(r) for r in ordered]
 
     def most_common_nonempty(key: str) -> str:
         values = [c[key] for c in canonicals if c[key] not in ("", None)]
@@ -1140,14 +1177,17 @@ def merge_group(rows: list[dict[str, Any]]) -> dict[str, Any]:
         set_field_if_present(base, TITLE_FIELDS, max(titles, key=len))
     urls = [c["url"] for c in canonicals if c["url"]]
     # the procedure portal (documents) is the record's address; a register sheet stays in _dedupe_urls
-    register = {c["url"] for c in canonicals if c["source_norm"] in REGISTER_SOURCES}
-    urls = [u for u in urls if u not in register] + [u for u in urls if u in register]
+    base_url = canonical_record(base)["url"]
+    urls = ([base_url] if base_url else []) + [c["url"] for c in sorted(canonicals, key=lambda c: c["source_norm"] in REGISTER_SOURCES)
+                                               if c["url"] and c["url"] != base_url]
     specific_urls = [u for u in urls if specific_url_key(u)]
     if specific_urls:
         set_field_if_present(base, URL_FIELDS, specific_urls[0])
     elif urls:
         set_field_if_present(base, URL_FIELDS, urls[0])
     mw_values = [c["mw"] for c in canonicals if c["mw"] is not None]
+    if canonical_record(base)["mw"] is not None:
+        mw_values = [canonical_record(base)["mw"]]          # the preferred source's own value, not a mix
     if mw_values:
         set_field_if_present(base, MW_FIELDS, Counter(round(x, 3) for x in mw_values).most_common(1)[0][0])
     base["_merged_sources"] = list(dict.fromkeys(c["source"] for c in canonicals if c["source"]))
