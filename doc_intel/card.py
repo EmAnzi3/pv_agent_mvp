@@ -734,7 +734,7 @@ def _gantt(d: dict, titles: dict) -> dict:
         out_bars, prev_end, prev_page, names = [], 0.0, None, set()
         for bb in bars:
             pg = bb.pop("page", None)
-            restart = bb["start"] < 0.15 * prev_end and (pg != prev_page or bb["name"].lower() in names)
+            restart = (not bb.get("dates")) and bb["start"] < 0.15 * prev_end and (pg != prev_page or bb["name"].lower() in names)
             if prev_page is not None and restart:     # time restarts: a second programme, not a continuation
                 out_bars.append({"name": "Altra sezione del cronoprogramma" + (f" (pag. {pg})" if pg != prev_page else ""),
                                  "separator": True, "start": 0, "end": 0, "level": 0})
