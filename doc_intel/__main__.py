@@ -160,7 +160,11 @@ def main(argv: list[str] | None = None) -> int:
         if not d["acquisition"].get("references"):
             print("::warning title=scheda::no documents acquired: existing card left unchanged")
             return 0
-        path = write_card(build_card(d), a.out)
+        card = build_card(d)
+        if not card.get("project_key"):
+            print("::warning title=scheda::project not found in the radar (run it with the radar URL): card not saved")
+            return 0
+        path = write_card(card, a.out)
         print(f"scheda: {path}")
         return 0
     if a.cmd == "queue":

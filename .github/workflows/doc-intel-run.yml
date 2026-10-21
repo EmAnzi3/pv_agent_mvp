@@ -180,7 +180,11 @@ jobs:
         if: always()
         run: |
           f=$(ls reports/doc_intel/*.json 2>/dev/null | head -1 || true)
-          [ -n "$f" ] && python -m doc_intel card --dossier "$f" --out .doc_intel_store/schede || echo "no dossier, no card"
+          if [ -z "$f" ]; then
+            echo "::warning title=no-dossier::$(tail -c 2500 run.log 2>/dev/null | tr '\n' ' ')"
+          elif ! python -m doc_intel card --dossier "$f" --out .doc_intel_store/schede 2> card.err; then
+            echo "::error title=card-failed::$(tail -c 2500 card.err | tr '\n' ' ')"
+          fi
       - name: Save processing memory (also after failure or cancellation)
         if: always()
         run: |

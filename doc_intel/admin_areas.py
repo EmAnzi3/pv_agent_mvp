@@ -25,7 +25,11 @@ def _key(name: str) -> str:
 @lru_cache(maxsize=1)
 def _table() -> dict[str, list[tuple[str, str, str]]]:
     out: dict[str, list[tuple[str, str, str]]] = {}
-    for name, sigla, region, _code in json.loads(DATA.read_text(encoding="utf-8"))["comuni"]:
+    try:
+        rows = json.loads(DATA.read_text(encoding="utf-8"))["comuni"]
+    except (OSError, ValueError, KeyError):
+        return out                     # table missing: nothing is filled, nothing breaks
+    for name, sigla, region, _code in rows:
         out.setdefault(_key(name), []).append((name, sigla, region))
     return out
 
