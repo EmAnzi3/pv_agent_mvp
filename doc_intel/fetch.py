@@ -33,6 +33,8 @@ def sniff(raw: bytes) -> str:
             if kind == "zip":
                 return _refine_zip(raw)
             return kind
+    if raw[:11] in (b"-----BEGIN ",) and (b"PKCS7" in raw[:40] or b"CMS" in raw[:40]) or (raw[:3] == b"MII" and b" " not in raw[:64]):
+        return "p7m"                                        # signed file saved base64 (PEM)
     # Some servers prepend whitespace/BOM before %PDF
     if b"%PDF" in raw[:1024]:
         return "pdf"
@@ -40,6 +42,72 @@ def sniff(raw: bytes) -> str:
     if b"<html" in lowered or b"<!doctype html" in lowered:
         return "html"
     return "unknown"
+
+
+def _tlv(buf: bytes, pos: int) -> tuple[int, bool, int, int, int]:
+    """One DER/BER element at pos: (tag, constructed, content_start, content_end, next_pos).
+    Indefinite lengths (BER, used by streaming signers) end at the 00 00 marker of their own level."""
+    tag = buf[pos]
+    constructed = bool(tag & 0x20)
+    pos += 1
+    if tag & 0x1F == 0x1F:                      # high tag number
+        while buf[pos] & 0x80:
+            pos += 1
+        pos += 1
+    first = buf[pos]
+    pos += 1
+    if first == 0x80:
+        start, p = pos, pos
+        while buf[p:p + 2] != b"\x00\x00":
+            p = _tlv(buf, p)[4]
+        return tag, constructed, start, p, p + 2
+    if first & 0x80:
+        n = first & 0x7F
+        length = int.from_bytes(buf[pos:pos + n], "big")
+        pos += n
+    else:
+        length = first
+    return tag, constructed, pos, pos + length, pos + length
+
+
+def _children(buf: bytes, start: int, end: int) -> list[tuple[int, bool, int, int, int]]:
+    out, p = [], start
+    while p < end and buf[p:p + 2] != b"\x00\x00":
+        el = _tlv(buf, p)
+        out.append(el)
+        p = el[4]
+    return out
+
+
+def _octets(buf: bytes, el) -> bytes:
+    tag, constructed, s, e, _ = el
+    if not constructed:
+        return buf[s:e]
+    return b"".join(_octets(buf, c) for c in _children(buf, s, e))
+
+
+def p7m_content(raw: bytes, depth: int = 0) -> bytes | None:
+    """Document signed with CAdES (.p7m): the signed file inside (PDF, ZIP...), nested signatures unwrapped.
+    ContentInfo -> [0] SignedData -> encapContentInfo -> [0] eContent (OCTET STRING, possibly chunked)."""
+    import base64
+    try:
+        if raw[:3] in (b"MII", b"MIA") or raw[:1] == b"-":
+            body = b"".join(l for l in raw.splitlines() if l and not l.startswith(b"-----"))
+            raw = base64.b64decode(body)
+        top = _tlv(raw, 0)
+        ci = _children(raw, top[2], top[3])                  # contentType OID, [0] content
+        sd_wrap = _children(raw, ci[1][2], ci[1][3])[0]       # SignedData SEQUENCE
+        sd = _children(raw, sd_wrap[2], sd_wrap[3])
+        encap = _children(raw, sd[2][2], sd[2][3])            # version, digestAlgorithms, encapContentInfo
+        if len(encap) < 2:
+            return None                                       # detached signature: no content inside
+        econtent = _children(raw, encap[1][2], encap[1][3])[0]
+        data = _octets(raw, econtent)
+    except (IndexError, ValueError):
+        return None
+    if depth < 3 and data[:2] in (b"\x30\x80", b"\x30\x82"):
+        return p7m_content(data, depth + 1) or data
+    return data
 
 
 def _refine_zip(raw: bytes) -> str:
@@ -96,6 +164,10 @@ def expand_archive(raw: bytes, parent_sha: str, cap: int, depth: int = 0,
                 skipped.append({"name": info.filename, "reason": f"unreadable: {exc}"[:200]})
                 continue
             kind = sniff(data)
+            if kind == "p7m":
+                inner = p7m_content(data)
+                if inner:
+                    data, kind = inner, sniff(inner)
             if kind == "zip" and depth < max_depth:
                 sub, sub_skip = expand_archive(data, parent_sha, cap, depth + 1, max_depth)
                 for m in sub:
@@ -207,6 +279,10 @@ class Fetcher:
             result = FetchResult(url, sha, kind, len(raw), state)
         kind = result.kind or sniff(raw)
         result.kind = kind
+        if kind == "p7m":
+            inner = p7m_content(raw)
+            if inner:
+                raw, kind = inner, sniff(inner)                # signed PDF/ZIP: analyse the signed file
         if kind == "pdf":
             result.members = [Member(url.rsplit("/", 1)[-1] + ".pdf", "pdf", raw, sha, 0)]
         elif kind == "zip":
