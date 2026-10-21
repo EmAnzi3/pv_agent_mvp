@@ -90,6 +90,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.68035,11.77785",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
@@ -380,8 +381,23 @@
    "source": null
   }
  ],
- "stato": null,
- "registro": null,
+ "stato": {
+  "level": "registro",
+  "label": "Registro impianti: Decreto n. 24480 del 21/11/2025",
+  "reason": "Categoria atto: Altro (VERIFICA DI ASSOGGETTABILITA'); Ente: Regione Toscana; Tipo di autorizzazione: AU. FER."
+ },
+ "registro": {
+  "label": "Registro impianti: Decreto n. 24480 del 21/11/2025",
+  "reason": "Categoria atto: Altro (VERIFICA DI ASSOGGETTABILITA'); Ente: Regione Toscana; Tipo di autorizzazione: AU. FER.",
+  "fonte": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=10148",
+  "impianto": "FTV SUNPROJECT",
+  "ditta": "SUNPROJECT DEV 6 SRL",
+  "comune": "SORANO",
+  "provincia": "GR",
+  "fonte_energetica": "AGRIVOLTAICO",
+  "potenza_mw": "85.4",
+  "procedimento_collegato": null
+ },
  "cronoprogramma": {
   "bars": [
    {
