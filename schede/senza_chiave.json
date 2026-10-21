@@ -2,8 +2,8 @@
  "schema": "pv-scheda/2.0",
  "dossier_schema": "pv-dossier/1.0",
  "project_key": null,
- "title": "Progetto di un impianto agrivoltaico denominato \"FESTA\", della potenza di 34,575 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Troia (FG).",
- "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9289",
+ "title": "Progetto di realizzazione di un nuovo impianto agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo (storage system) della potenza massima complessiva di 20,452 MW da realizzarsi nei comuni di Loreo e Adria.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9495",
  "source": "mase",
  "updated": "2026-10-21",
  "sintesi": [
@@ -11,37 +11,50 @@
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
-   "value": "34,575 MW",
-   "sub": "Suddivisa in 5 lotti",
+   "value": "20,452 MW",
+   "sub": null,
    "source": {
     "document": "titolo del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9289",
-    "excerpt": "34,575 MW"
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9495",
+    "excerpt": "20,452 MW"
    }
   },
   {
    "key": "impianto",
    "label": "Impianto",
-   "value": "Agrivoltaico · strutture fisse",
+   "value": "Agrivoltaico · tracker monoassiali",
    "status": "da documenti",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/780804",
+    "url": "https://va.mite.gov.it/File/Documento/798887",
     "page": 1,
-    "document": "Avviso al Pubblico del 03/03/2023",
-    "excerpt": "per la Costruzione ed esercizio di un impianto agrivoltaico avente potenza installata pari a"
+    "document": "Avviso al pubblico",
+    "excerpt": "IMPIANTO AGRO-FOTOVOLTAICO COMPOSTO DA DUE SEZIONI DI PRODUZIONE E"
    }
   },
   {
    "key": "area",
    "label": "Superficie complessiva",
-   "value": "53 ha",
+   "value": "28 ha",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Valore prevalente negli elaborati; altri valori: 86,1 ha (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/780767",
-    "page": 3,
-    "document": "Relazione idrologica ed allegati",
-    "excerpt": "Il parco agrivoltaico in progetto – denominato “Festa” - sarà installato in agro di Troia, in località “Porta di Ferro”, ed avrà una potenza nominale di 34,575 MWp per una superficie complessiva recintata di circa 53,00 "
+    "url": "https://va.mite.gov.it/File/Documento/798887",
+    "page": 1,
+    "document": "Avviso al pubblico",
+    "excerpt": "Adigetto”, fino al canale consorziale denominato “Retinella”, che delimita il confine sud. Complessivamente l’area copre una superficie di circa 28 Ha ed è ubicata per circa il 60% della superficie all’interno dell’area "
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "12 MW / 24 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 20,452 MW (24), 6,817 MW (11), 32,452 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/798887",
+    "page": 2,
+    "document": "Avviso al pubblico",
+    "excerpt": "di batterie al litio, ciascuno dimensionato con 6MW/12MWh con soluzione containerizzata, per complessivi 12MW/24MWh, collocati all’interno dell’area della sottostazione MT/AT, condivisa con l’impianto Marco polo Solar 2,"
    }
   },
   {
@@ -49,33 +62,34 @@
    "label": "Durata cantiere",
    "value": "36 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2), 12 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (4), 120 giorni (circa 4 mesi) (3), 7 mesi (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/780706",
-    "page": 11,
-    "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-    "excerpt": "Salvi gli impegni di cui ai punti 4, 5, 6 e 7, resta inteso tra le Parti che qualora una delle Parti non dia avvio ai lavori entro 36 mesi dalla data di sottoscrizione del presente Accordo, nessun costo potrà essere adde"
+    "url": "https://va.mite.gov.it/File/Documento/829546",
+    "page": 4,
+    "document": "Richiesta integrazioni della Regione Veneto e del Consorzio di bonifica Adige Po",
+    "excerpt": "✓ PO1 - entro 3 mesi dalla realizzazione dell’impianto; ✓ PO2 - con frequenza ogni 5 anni da PO1 per tutta la durata della fase di esercizio;"
    }
   }
  ],
  "ubicazione": {
   "regione": null,
-  "provincia": "FG",
+  "provincia": null,
   "comuni": [
-   "Troia"
+   "Loreo",
+   "Adria"
   ],
   "coordinate": {
-   "lat": 41.39698,
-   "lon": 15.31518,
-   "tipo": "centro della tavola georeferenziata di progetto (83 riferimenti concordi)",
+   "lat": 45.04336,
+   "lon": 12.17068,
+   "tipo": "centro della tavola georeferenziata di progetto (4 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/780699",
-    "page": 1,
-    "document": "Inquadramento Territoriale Cartografico catastale",
-    "excerpt": "Inquadramento Territoriale Cartografico catastale"
+    "url": "https://va.mite.gov.it/File/Documento/902149",
+    "page": 23,
+    "document": "Integrazioni del 08/09/2023 - Integrazione -Documentazione Archeologica del Progetto Impianto Agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo (storage system)",
+    "excerpt": "Integrazioni del 08/09/2023 - Integrazione -Documentazione Archeologica del Progetto Impianto Agro-fotovoltaico composto"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.39698,15.31518",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=45.04336,12.17068",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -130,7 +144,68 @@
  },
  "soggetti": [
   {
-   "name": "Vespera Development 06 S.r.l.",
+   "name": "Eridano S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "01620970291",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Vittorio Veneto N 137 45100 Rovigo Ro",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "eridano44@legalmail.it",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439338",
+      "page": 1,
+      "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere MIC del 07/05/2024",
+      "excerpt": "Alla Società ERIDANO S.r.l. eridano44@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria.zerbinati@gmail.com",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/902141",
+      "page": 2,
+      "document": "Integrazioni del 08/09/2023 - Revisione - Piano preliminare utilizzo in sito terre e rocce del Progetto Impianto Agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo (storage ",
+      "excerpt": "Capitale Sociale € 10.000,00 – Tel. 0425/471825 – Fax 0425/471697 e-mail segreteria.zerbinati@gmail.com – PEC eridano44@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sevreteria.zerbinatia@email.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1399353",
+      "page": 1,
+      "document": "Integrazioni del 04/03/2026 - Nota trasmissione relazioni - Eridano - MASE ID_9334",
+      "excerpt": "Capitale Sociale € 10.000,00 Tel. 0425/471825 — 0425/471697 e-mail sevreteria.zerbinatia@email.com PEC eridano44 @lesalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0425471825",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1399353",
+      "page": 1,
+      "document": "Integrazioni del 04/03/2026 - Nota trasmissione relazioni - Eridano - MASE ID_9334",
+      "excerpt": "Capitale Sociale € 10.000,00 Tel. 0425/471825 — 0425/471697"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9495"
+   }
+  },
+  {
+   "name": "Studio Tetra S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente"
@@ -139,268 +214,18 @@
    "vat_group": false,
    "verified": false,
    "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "vesperadevelopment06@legalmail.com",
-     "occurrences": 150,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780799",
-      "page": 1,
-      "document": "Studio di impatto ambientale - Quadro programmatico",
-      "excerpt": "P. IVA 03328840735 pec: vesperadevelopment06@legalmail.com"
-     }
-    },
-    {
-     "type": "PEC",
-     "value": "vesperadevelopment06@legalmail.it",
-     "occurrences": 16,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780799",
-      "page": 5,
-      "document": "Studio di impatto ambientale - Quadro programmatico",
-      "excerpt": "pec Vesperadevelopment06@legalmail.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "scheda ufficiale del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9289"
-   }
-  },
-  {
-   "name": "Dott. Ing. Giuseppe Furnari",
-   "kind": "persona",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
    "contacts": [],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/780769",
-    "page": 2,
-    "document": "Relazione geotecnica generale",
-    "excerpt": "Progettazione: Dott. Ing. Giuseppe Furnari"
-   }
-  },
-  {
-   "name": "Arato S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": "02690550732",
-   "vat_group": false,
-   "verified": true,
-   "office": "Via La Sorte 40 74023 Grottaglie Ta",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "arataosrl@pec.it",
-     "occurrences": 3,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780715",
-      "page": 2,
-      "document": "Dichiarazione di non interferenza con le aree percorse dal fuoco ai sensi della L. 353/2000",
-      "excerpt": "Provincia di Reggio Calabria, direttore tecnico della società di ingegneria ARATO Srl, con sede legale a Grottaglie (TA), Via La Sorte 40, C.F. e P.IVA 02690550732, pec: arataosrl@pec.it,"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "info@aratosrl.com",
-     "occurrences": 113,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780799",
-      "page": 1,
-      "document": "Studio di impatto ambientale - Quadro programmatico",
-      "excerpt": "Via Diaz, 74 - 74023 Grottaglie (TA) info@aratosrl.com"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "bolignano@aratosrl.com",
-     "occurrences": 2,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780718",
-      "page": 1,
-      "document": "Dichiarazione non interferenza e Report di non interferenza impianto agrivoltaico con ostacoli e pericoli per la navigazione aerea definite dal regolamento ENAC e report ENAV",
-      "excerpt": "02690550732, pec: aratosrl@pec.it domiciliata per la carica in La Sorte 40 – 74023 Grottaglie (TA), telefono n. 0996413444, indirizzo e-mail bolignano@aratosrl.com,"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/780799",
-    "page": 2,
-    "document": "Studio di impatto ambientale - Quadro programmatico",
-    "excerpt": "Progettazione: Arato Srl"
-   }
-  },
-  {
-   "name": "Dott. Geol. Domenico Boso",
-   "kind": "persona",
-   "roles": [
-    "Geologo"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/780760",
-    "page": 20,
-    "document": "Relazione pedo-agronomica",
-    "excerpt": "Alla Relazione Geologica a firma del Dott. Geol. Domenico Boso, si espongono le caratteristiche geo-morfologiche e stratigrafiche dell’area, di cui si riporta stralcio di seguito."
+    "url": "https://va.mite.gov.it/File/Documento/798549",
+    "page": 46,
+    "document": "Relazione di Compatibilita Idraulica del Progetto Impianto Agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo _storage system_",
+    "excerpt": "Committente: Studio Tetra srl Data: 27/07/2022"
    }
   }
  ],
  "altri_soggetti": [
   {
-   "name": "EG Vita S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": "11402480963",
-   "vat_group": false,
-   "verified": true,
-   "office": "Via Dei Pellegrini 22 20122 Milano Mi",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "egvita@pec.it",
-     "occurrences": 8,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780706",
-      "page": 2,
-      "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-      "excerpt": "EG VITA S.R.L. egvita@pec.it"
-     }
-    },
-    {
-     "type": "PEC",
-     "value": "piero@pec.farenti.it",
-     "occurrences": 7,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780706",
-      "page": 16,
-      "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-      "excerpt": "Ing. Piero FARENTI. Via Don Giuseppe Corda, SNC - 03030 Santopadre (FR) tel.: 0776531040 · e-mail: info@farenti.it · PEC: piero@pec.farenti.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
-  },
-  {
-   "name": "Farenti S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": "02604750600",
-   "vat_group": false,
-   "verified": true,
-   "office": "Via Don Giuseppe Corda Snc 03030 Santopadre Fr",
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "info@farenti.it",
-     "occurrences": 14,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780706",
-      "page": 16,
-      "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-      "excerpt": "Ing. Piero FARENTI. Via Don Giuseppe Corda, SNC - 03030 Santopadre (FR) tel.: 0776531040 · e-mail: info@farenti.it · PEC: piero@pec.farenti.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
-  },
-  {
-   "name": "EG Futura S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": "11402260969",
-   "vat_group": false,
-   "verified": true,
-   "office": "Via Dei Pellegrini 22 20122 Milano Mi",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "egfutura@pec.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780706",
-      "page": 2,
-      "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-      "excerpt": "EG FUTURA S.R.L. egfutura@pec.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
-  },
-  {
-   "name": "Pacifico Ametista S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": "03097410215",
-   "vat_group": false,
-   "verified": true,
-   "office": "Piazza Walther Von Vogelweide 8 39100 Bolzano .Bozen. Bz",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "pacificoametistasrl@legalmail.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780706",
-      "page": 2,
-      "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-      "excerpt": "PACIFICO AMETISTA S.R.L. pacificoametistasrl@legalmail.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
-  },
-  {
-   "name": "EG Origine S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": "11402470964",
-   "vat_group": false,
-   "verified": true,
-   "office": "Via Dei Pellegrini 22 20122 Milano Mi",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "egorigine@pec.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780706",
-      "page": 2,
-      "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-      "excerpt": "EG ORIGINE S.R.L. egorigine@pec.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
-  },
-  {
-   "name": "Studio Tecnico BFP S.r.l.",
+   "name": "Archeo Ed S.r.l.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -410,167 +235,42 @@
    "contacts": [
     {
      "type": "E-mail",
-     "value": "info@bfpgroup.net",
-     "occurrences": 114,
+     "value": "archeoed@archeoed.it",
+     "occurrences": 20,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780799",
-      "page": 1,
-      "document": "Studio di impatto ambientale - Quadro programmatico",
-      "excerpt": "Via Via degli Arredatori 8, CAP 70026 Modugno (BA) info@bfpgroup.net"
+      "url": "https://va.mite.gov.it/File/Documento/902149",
+      "page": 2,
+      "document": "Integrazioni del 08/09/2023 - Integrazione -Documentazione Archeologica del Progetto Impianto Agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo (storage system)",
+      "excerpt": "Archeo Ed srl Engineering Via S. Francesco, 89 – 35121 Padova Tel. 049/652380 Fax 049/652747 e-mail: archeoed@archeoed.it"
      }
     },
     {
      "type": "E-mail",
-     "value": "paolaiacovazzo27@gmail.com",
-     "occurrences": 48,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780693",
-      "page": 1,
-      "document": "Certificato di destinazione urbanistica",
-      "excerpt": "74122 Taranto (TA) paolaiacovazzo27@gmail.com"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Dott. Agr. Arturo Urso",
-   "kind": "persona",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "a.urso@conafpec.it",
+     "value": "i.dealoe@gmail.com",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780761",
-      "page": 49,
-      "document": "Relazione agro-economica",
-      "excerpt": "E-mail: arturo.urso@gmail.com PEC: a.urso@conafpec.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "arturo.urso@gmail.com",
-     "occurrences": 115,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780799",
-      "page": 1,
-      "document": "Studio di impatto ambientale - Quadro programmatico",
-      "excerpt": "95131 Catania (CT) arturo.urso@gmail.com"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "marcellolatanza@gmail.com",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780790",
-      "page": 1,
-      "document": "Planimetria cavidotti e percorso cavi",
-      "excerpt": "‘marcellolatanza@gmail.com"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Ingambiente S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "dicroce@ingambiente.net",
-     "occurrences": 117,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780799",
-      "page": 1,
-      "document": "Studio di impatto ambientale - Quadro programmatico",
-      "excerpt": "Via Siena, 7 - 85025 Melfi (PZ) dicroce@ingambiente.net"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Acca software S.p.A.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "info@acca.it",
-     "occurrences": 8,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780771",
-      "page": 27,
-      "document": "Relazione e tabulati di calcolo della fondazione locale magazzino",
-      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+      "url": "https://va.mite.gov.it/File/Documento/902149",
+      "page": 21,
+      "document": "Integrazioni del 08/09/2023 - Integrazione -Documentazione Archeologica del Progetto Impianto Agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo (storage system)",
+      "excerpt": "D. Lgs. 50/2016, art. 25, a consultare gli archivi dati territoriali di questa Soprintendenza, previo contatto e appuntamento con la ns. collaboratrice dott.ssa Ilaria de Aloe (i.dealoe@gmail.com)."
      }
     },
     {
      "type": "Telefono",
-     "value": "082769504",
-     "occurrences": 9,
+     "value": "049652380",
+     "occurrences": 19,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780770",
-      "page": 32,
-      "document": "Relazione e tabulati di calcolo strutture di supporto FV",
-      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+      "url": "https://va.mite.gov.it/File/Documento/902149",
+      "page": 2,
+      "document": "Integrazioni del 08/09/2023 - Integrazione -Documentazione Archeologica del Progetto Impianto Agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo (storage system)",
+      "excerpt": "Archeo Ed srl Engineering Via S. Francesco, 89 – 35121 Padova Tel. 049/652380 Fax 049/652747 e-mail: archeoed@archeoed.it"
      }
     }
    ],
    "source": null
   },
   {
-   "name": "Ing. Andrea Farenti",
-   "kind": "persona",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "andrea@pec.farenti.it",
-     "occurrences": 7,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780706",
-      "page": 16,
-      "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-      "excerpt": "Ing. Andrea FARENTI. Via Don Giuseppe Corda, SNC - 03030 Santopadre (FR) tel.: 0776531040 · e-mail: info@farenti.it · PEC: andrea@pec.farenti.it"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "0776531040",
-     "occurrences": 7,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780706",
-      "page": 16,
-      "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-      "excerpt": "Ing. Andrea FARENTI. Via Don Giuseppe Corda, SNC - 03030 Santopadre (FR) tel.: 0776531040 · e-mail: info@farenti.it · PEC: andrea@pec.farenti.it"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Agrivento S.r.l.",
+   "name": "Sierzega Elektronik GmbH",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -579,14 +279,14 @@
    "office": null,
    "contacts": [
     {
-     "type": "PEC",
-     "value": "agriventosrl@pec.it",
-     "occurrences": 1,
+     "type": "E-mail",
+     "value": "office@sierzega.at",
+     "occurrences": 3,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/780706",
-      "page": 2,
-      "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-      "excerpt": "AGRIVENTO S.R.L. agriventosrl@pec.it"
+      "url": "https://va.mite.gov.it/File/Documento/902150",
+      "page": 13,
+      "document": "Integrazioni del 08/09/2023 - Integrazione -Relazione gestione del traffico del Progetto Impianto Agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo (storage system)",
+      "excerpt": "+ 443-7221-84114-0, Fax14 S RZEGA Mal: office@sierzega.at omo 0910 eno lm ae ine e tb, ;"
      }
     }
    ],
@@ -596,612 +296,68 @@
  "stato": null,
  "registro": null,
  "cronoprogramma": {
-  "bars": [
-   {
-    "name": "IMPIANTO AGROVOLTAICO E OPERE CONNESSE",
-    "start": 0.0,
-    "end": 17.77,
-    "level": 0,
-    "summary": false
-   },
-   {
-    "name": "INGEGNERIA ED ANALISI DI CAMPO",
-    "start": 0.0,
-    "end": 0.98,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Prove ed indagini",
-    "start": 0.0,
-    "end": 0.7,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Progettazione esecutiva",
-    "start": 0.45,
-    "end": 0.98,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "APPROVVIGIONAMENTO",
-    "start": 0.97,
-    "end": 5.49,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Recinzioni/cancelli",
-    "start": 0.97,
-    "end": 3.74,
-    "level": 1,
-    "summary": false
-   },
-   {
-    "name": "Moduli Fotovoltaici",
-    "start": 0.97,
-    "end": 4.49,
-    "level": 1,
-    "summary": false
-   },
-   {
-    "name": "Power Stations e cabine (raccolta, magazzino, monitoraggio)",
-    "start": 0.97,
-    "end": 5.49,
-    "level": 1,
-    "summary": false
-   },
-   {
-    "name": "Cavi elettrici MT e BT, DC",
-    "start": 0.97,
-    "end": 4.99,
-    "level": 1,
-    "summary": false
-   },
-   {
-    "name": "Sistema anti intrusione",
-    "start": 0.97,
-    "end": 2.99,
-    "level": 1,
-    "summary": false
-   },
-   {
-    "name": "APPALTI",
-    "start": 0.97,
-    "end": 2.48,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Appaltatore Civile",
-    "start": 0.97,
-    "end": 2.48,
-    "level": 1,
-    "summary": false
-   },
-   {
-    "name": "Appaltatore Elettrico",
-    "start": 0.97,
-    "end": 2.48,
-    "level": 1,
-    "summary": false
-   },
-   {
-    "name": "CONSTRUZIONE",
-    "start": 3.98,
-    "end": 14.52,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Area Impianto agrovoltaico",
-    "start": 3.98,
-    "end": 14.52,
-    "level": 1,
-    "summary": true
-   },
-   {
-    "name": "Accantieramento",
-    "start": 3.98,
-    "end": 4.24,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Preparazione aree",
-    "start": 4.23,
-    "end": 4.49,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Recinzione",
-    "start": 4.48,
-    "end": 5.24,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Realizzazione strade interne parco fotovoltaico",
-    "start": 5.23,
-    "end": 6.24,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Battitura pali di sostegno strutture",
-    "start": 5.74,
-    "end": 7.0,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Montaggio strutture fisse",
-    "start": 6.74,
-    "end": 8.0,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Installazione moduli",
-    "start": 7.49,
-    "end": 10.0,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Completamento elettro-meccanico",
-    "start": 9.5,
-    "end": 10.51,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Preparazione basamenti per power stations e cabine",
-    "start": 10.5,
-    "end": 11.26,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Cavidotti per cavi DC, dati impianto FV, alimentazione tracking system, sistema ",
-    "start": 10.0,
-    "end": 12.51,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Posa rete di terra",
-    "start": 10.0,
-    "end": 12.51,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Installazione Power Stations e cabine",
-    "start": 11.0,
-    "end": 13.26,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Finitura Aree",
-    "start": 13.26,
-    "end": 14.01,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Posa Cavi DC interrati (string boxes)",
-    "start": 10.5,
-    "end": 12.51,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Posa cavi dati",
-    "start": 10.75,
-    "end": 11.76,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Posa cavi sistema videosorveglianza",
-    "start": 11.0,
-    "end": 12.01,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Installazione sistema videosorveglianza",
-    "start": 11.25,
-    "end": 12.26,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Collegamento cavi",
-    "start": 12.25,
-    "end": 14.27,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Impianto disponibile per energizzazione",
-    "start": 14.26,
-    "end": 14.52,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Dorsali di collegamento",
-    "start": 11.25,
-    "end": 14.27,
-    "level": 1,
-    "summary": true
-   },
-   {
-    "name": "Realizzazione scavi",
-    "start": 11.25,
-    "end": 14.27,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Posa cavi MT",
-    "start": 12.0,
-    "end": 14.27,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Collegamento cavi",
-    "start": 13.76,
-    "end": 14.27,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "IMPIANTO DI UTENZA (150/30 kV) E COLLEGAMENTO IN CAVO INTERRATO A 150 kV",
-    "start": 3.23,
-    "end": 15.27,
-    "level": 0,
-    "summary": false
-   },
-   {
-    "name": "INGEGNERIA ED ANALISI DI CAMPO",
-    "start": 3.23,
-    "end": 5.49,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Sondaggi, prove, indagini",
-    "start": 3.23,
-    "end": 4.74,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Progettazione esecutiva",
-    "start": 4.73,
-    "end": 5.49,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "APPALTI",
-    "start": 5.49,
-    "end": 6.49,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Civili",
-    "start": 5.49,
-    "end": 6.49,
-    "level": 1,
-    "summary": false
-   },
-   {
-    "name": "CONSTRUZIONE",
-    "start": 6.49,
-    "end": 14.27,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Accantieramento",
-    "start": 6.49,
-    "end": 7.25,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Recinzione area stallo c/o la SSEU 150/30 kV",
-    "start": 6.99,
-    "end": 7.75,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Preparazione strada accesso allo stallo c/o la SSEU 150/30 kV",
-    "start": 7.74,
-    "end": 8.5,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Preparazione area",
-    "start": 8.49,
-    "end": 9.0,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Opere civili fondazione cabina",
-    "start": 8.74,
-    "end": 9.5,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Opere civili altre fondazioni per apparecchiature elettriche",
-    "start": 9.25,
-    "end": 10.25,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Costruzione Cabina in muratura",
-    "start": 10.25,
-    "end": 10.76,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Installazione apparecchiature elettriche",
-    "start": 11.0,
-    "end": 11.51,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Finitura aree",
-    "start": 11.5,
-    "end": 11.76,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Stesura Cavi MT",
-    "start": 11.75,
-    "end": 12.51,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Collegamento Cavi",
-    "start": 12.5,
-    "end": 13.01,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Opere civili scavo percorso cavo interrato AT 150 kV",
-    "start": 13.01,
-    "end": 13.51,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Stesura e collegamenti cavo interrato AT 150 kV",
-    "start": 13.51,
-    "end": 14.52,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Completamento elettro-meccanico",
-    "start": 14.51,
-    "end": 15.27,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "AVVIAMENTO ED ENTRATA IN ESERCIZIO",
-    "start": 13.76,
-    "end": 17.77,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Regolamento di esercizio",
-    "start": 13.76,
-    "end": 14.27,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Stazione pronta per energizzazione",
-    "start": 14.26,
-    "end": 14.77,
-    "level": 2,
-    "summary": true
-   },
-   {
-    "name": "1° parallelo con Rete Elettrica (entrata in esercizio)",
-    "start": 14.76,
-    "end": 15.77,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Collaudo provvisorio",
-    "start": 15.76,
-    "end": 16.77,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Entrata in esercizio Commerciale (COD)",
-    "start": 16.77,
-    "end": 17.77,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "ATTIVITA' DI COLTIVAZIONE AGRICOLA IN AREA IMPIANTO FV (SOCIETA' PARTNER)",
-    "start": 5.23,
-    "end": 16.52,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Piantumazione fascia di mitigazione",
-    "start": 5.23,
-    "end": 7.75,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Attività di piantumazione e produzione colture",
-    "start": 14.51,
-    "end": 15.52,
-    "level": 2,
-    "summary": false
-   }
-  ],
+  "bars": [],
   "unit": "month",
-  "months": 17.77,
+  "months": 1,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/780738",
-   "page": 2,
-   "document": "Cronoprogramma dei lavori",
+   "url": "https://va.mite.gov.it/File/Documento/798555",
+   "page": 27,
+   "document": "Studio di inserimento territoriale _Rendering con foto inserimento_ del Progetto Impianto Agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo _storage system_",
    "excerpt": ""
   },
-  "asse": {
-   "titolo": null,
-   "etichette": [
-    {
-     "label": "1",
-     "start": 0.0,
-     "end": 1.0
-    },
-    {
-     "label": "2",
-     "start": 1.0,
-     "end": 2.0
-    },
-    {
-     "label": "3",
-     "start": 2.0,
-     "end": 3.0
-    },
-    {
-     "label": "4",
-     "start": 3.0,
-     "end": 4.0
-    },
-    {
-     "label": "5",
-     "start": 4.0,
-     "end": 5.0
-    },
-    {
-     "label": "6",
-     "start": 5.0,
-     "end": 6.0
-    },
-    {
-     "label": "7",
-     "start": 6.0,
-     "end": 7.0
-    },
-    {
-     "label": "8",
-     "start": 7.0,
-     "end": 8.0
-    },
-    {
-     "label": "9",
-     "start": 8.0,
-     "end": 9.0
-    },
-    {
-     "label": "10",
-     "start": 9.0,
-     "end": 10.0
-    },
-    {
-     "label": "11",
-     "start": 10.0,
-     "end": 11.0
-    },
-    {
-     "label": "12",
-     "start": 11.0,
-     "end": 12.0
-    },
-    {
-     "label": "13",
-     "start": 12.0,
-     "end": 13.0
-    },
-    {
-     "label": "14",
-     "start": 13.0,
-     "end": 14.0
-    },
-    {
-     "label": "15",
-     "start": 14.0,
-     "end": 15.0
-    },
-    {
-     "label": "16",
-     "start": 15.0,
-     "end": 16.0
-    },
-    {
-     "label": "17",
-     "start": 16.0,
-     "end": 17.0
-    },
-    {
-     "label": "18",
-     "start": 17.0,
-     "end": 18.0
-    }
-   ],
-   "unita": "mesi"
-  },
+  "asse": null,
   "duration": {
    "text": "36 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2), 12 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (4), 120 giorni (circa 4 mesi) (3), 7 mesi (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/780706",
-    "page": 11,
-    "document": "Progetto delle opere connesse benestariato dal gestore di rete",
-    "excerpt": "Salvi gli impegni di cui ai punti 4, 5, 6 e 7, resta inteso tra le Parti che qualora una delle Parti non dia avvio ai lavori entro 36 mesi dalla data di sottoscrizione del presente Accordo, nessun costo potrà essere adde"
+    "url": "https://va.mite.gov.it/File/Documento/829546",
+    "page": 4,
+    "document": "Richiesta integrazioni della Regione Veneto e del Consorzio di bonifica Adige Po",
+    "excerpt": "✓ PO1 - entro 3 mesi dalla realizzazione dell’impianto; ✓ PO2 - con frequenza ogni 5 anni da PO1 per tutta la durata della fase di esercizio;"
    }
   },
   "milestones": [],
-  "document": {
-   "document": "Cronoprogramma dei lavori",
-   "url": "https://va.mite.gov.it/File/Documento/780738"
-  },
-  "note": null,
+  "document": null,
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
   "altri": [],
-  "durate_fasi": [],
-  "metodo": "diagramma vettoriale"
+  "durate_fasi": [
+   {
+    "name": "dal POS",
+    "duration": "2 giornig",
+    "months": 0.07
+   },
+   {
+    "name": "conseguente riciclo",
+    "duration": "12 giornig",
+    "months": 0.39
+   },
+   {
+    "name": "conseguente riciclo.",
+    "duration": "2 giornig",
+    "months": 0.07
+   },
+   {
+    "name": "discarica",
+    "duration": "2 giornig",
+    "months": 0.07
+   },
+   {
+    "name": "della seminagione",
+    "duration": "3 giornig",
+    "months": 0.1
+   },
+   {
+    "name": "provvisorie",
+    "duration": "2 giornig",
+    "months": 0.07
+   }
+  ],
+  "metodo": null
  },
  "documentazione": {
-  "documenti": 129,
-  "pagine": 4491,
+  "documenti": 113,
+  "pagine": 2015,
   "completa": true
  },
  "confronto": [
@@ -1233,12 +389,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie pannelli",
+   "reason": "valore letto (28,5 ha) prossimo all'area totale: non mostrato"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "2709 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "85 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
