@@ -1,0 +1,49 @@
+name: Doc Intel portal exploration (to write adapters)
+# Dumps links, API calls and response bodies of a few record pages. Review only, nothing is saved.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Record URLs separated by spaces (empty: doc_intel/explore_targets.txt)'
+        required: false
+        default: ''
+  pull_request:
+    paths:
+      - 'doc_intel/explore_targets.txt'
+      - '.github/workflows/doc-intel-explore.yml'
+permissions:
+  contents: write
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python -m pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Explore
+        env:
+          URLS: ${{ inputs.urls }}
+        run: |
+          if [ -z "$URLS" ]; then URLS=$(grep -v '^#' doc_intel/explore_targets.txt | tr '\n' ' '); fi
+          python -m doc_intel explore $URLS --out reports/explore.json
+      - name: Save the report on the memory branch (explore/<run>.json)
+        run: |
+          git config user.name "doc-intel-bot"
+          git config user.email "doc-intel-bot@users.noreply.github.com"
+          git fetch origin doc-intel-state:doc-intel-state
+          git worktree add .mem doc-intel-state
+          mkdir -p .mem/explore
+          cp reports/explore.json ".mem/explore/${{ github.run_id }}.json"
+          cp reports/explore.json .mem/explore/latest.json
+          cd .mem && git add explore && git commit -q -m "explore report ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
+            git push -q origin HEAD:doc-intel-state && echo "::notice title=explore::saved explore/${{ github.run_id }}.json" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1

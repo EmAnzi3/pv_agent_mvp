@@ -185,6 +185,7 @@
         <h2 id="scTitle">${esc(card.title)}</h2>
         ${place ? `<div class="sc-place">${esc(place)}</div>` : ''}
         ${card.stato ? `<div class="sc-status st-${esc(card.stato.level)}"><strong>${esc(card.stato.label)}</strong><span>${esc(card.stato.reason)}</span></div>` : ''}
+        ${card.registro && card.registro.fonte ? `<div class="sc-note">Fonte registro: <a class="sc-src" href="${esc(card.registro.fonte)}" target="_blank" rel="noopener">scheda impianto</a></div>` : ''}
         <div class="sc-actions">
           ${href ? `<a class="sc-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer">Procedimento ufficiale</a>` : ''}
           ${maps ? `<a class="sc-link" href="${esc(maps)}" target="_blank" rel="noopener noreferrer">Google Maps</a>` : ''}

@@ -219,7 +219,10 @@ def extract(ctx: PageContext) -> list[Fact]:
                 kind = "totale"
             else:
                 kind = kind_of(m.group(0) + after) or kind_of(before) or kind_of(sent) or "non specificato"
-            if re.search(r"(?i)illuminazion|videosorveglian|telecamer|videocamer|tvcc|lampion|diametro", line) \
+            k = sent.find(m.group(0))
+            near = re.split(r"[.;]\s|\n", sent[max(0, k - 160):k])[-1] + " " + line if k >= 0 else line
+            if re.search(r"(?i)illuminazion|videosorveglian|telecamer|videocamer|tvcc|lampion|diametro|allarme", near) \
+                    or any(int(x) >= 15 for x in re.findall(r"(?i)interasse\s+(?:di\s+)?(\d+)\s*m\b", line[m.end(): m.end() + 120])) \
                     or re.match(r"\s*(?:mm|cm)\b", line[m.end(): m.end() + 4]):
                 continue
             facts.append(Fact(field="tech.piles_count", value=int(v), subject=kind, citation=ctx.cite(sent),

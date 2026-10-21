@@ -1172,3 +1172,103 @@ class WorkQueue(unittest.TestCase):
             self.assertEqual(res, {"downloaded": 1, "total": 2, "errors": 0})
             self.assertEqual(calls, ["x", "k1.json"])
             self.assertEqual(set(json.loads((Path(d) / "index.json").read_text())), {"k1", "k2"})
+
+
+class AtosRegister(unittest.TestCase):
+    """Toscana ATOS plant sheet: register act reported as written, documents from the linked procedure."""
+    SHEET = ("<html><body>Scheda Impianto Energetico Denominazione Impianto AGRI PADULE Denominazione Ditta REVALUE PV1 S.R.L. "
+             "Comune SOVICILLE Sigla Provincia SI Attivo SI --> Autorizzazione Vigente Tipo di Autorizzazione AU. FER "
+             "Tipologia Fonte AGRIVOLTAICO Stato Autorizzazione --> Potenza MW 128.03 Dati dell'ultimo Atto Numero Atto 20450 "
+             "Data Atto 25/09/2025 Ente Rilasciante Regione Toscana Categoria Atto Altro (VERIFICA DI ASSOGGETTABILITà) "
+             "Tipologia Atto Decreto Ultima modifica 04/06/2026 11:54:03 --> In caso di atto il cui</body></html>")
+    URL = "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481"
+
+    def test_sheet_and_link(self):
+        from doc_intel.adapters import adapter_for_url
+        from doc_intel.adapters.api_portals import AtosAdapter
+        a = adapter_for_url(self.URL)
+        self.assertIsInstance(a, AtosAdapter)
+        a.get_html = lambda u: self.SHEET
+        ident = a.identify(self.URL)
+        sh = ident.raw["register_sheet"]
+        self.assertEqual(sh["power_mw"], "128.03")
+        self.assertNotIn("authorization_status", sh)
+        self.assertEqual(sh["act_category"], "Altro (VERIFICA DI ASSOGGETTABILITà)")
+        a.records = [{"url": self.URL, "proponent": "REVALUE PV1 S.R.L."},
+                     {"url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110",
+                      "proponent": "REVALUE PV 1 S.R.L.", "municipalities": "SOVICILLE", "power_mw": 128.0},
+                     {"url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/88",
+                      "proponent": "Altra S.r.l.", "municipalities": "Pisa", "power_mw": 128.0}]
+        self.assertTrue(a.linked_record(ident)["url"].endswith("/110"))
+        a.records = a.records[2:]
+        disc = a.discover(ident)
+        self.assertEqual(disc.documents, [])
+
+    def test_lighting_poles_are_not_piles(self):
+        from doc_intel.extract.technical import extract as extract_technical
+        from doc_intel.extract.context import PageContext
+        txt = ("Impianto di illuminazione perimetrale, videosorveglianza e allarme. Complessivamente si ipotizzano 580 pali "
+               "a partire da una lunghezza stimata 23 200 m e un interasse di 40m.\nSono previsti 12.400 pali per le strutture tracker.")
+        ctx = PageContext(url="u", sha256="x", page=1, text=txt, method="digital")
+        vals = [f.value for f in extract_technical(ctx) if f.field == "tech.piles_count"]
+        self.assertEqual(vals, [12400])
+
+    def test_card_reports_act_without_upgrading_it(self):
+        from doc_intel.card import _register
+        reg = _register({"info_url": self.URL, "raw": {"register_sheet": {
+            "act_type": "Decreto", "act_number": "20450", "act_date": "25/09/2025",
+            "act_category": "Altro (VERIFICA DI ASSOGGETTABILITà)", "act_body": "Regione Toscana"}}})
+        self.assertEqual(reg["label"], "Registro impianti: Decreto n. 20450 del 25/09/2025")
+        self.assertNotIn("autorizzat", (reg["label"] + reg["reason"]).lower())
+
+
+class ApiPortalAdapters(unittest.TestCase):
+    """Lombardia SILVIA and Toscana PATTI: documents listed by JSON APIs (structures read from the live portals)."""
+
+    def test_silvia(self):
+        from doc_intel.adapters.api_portals import SilviaAdapter
+        url = "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=3&idProgetto=20881&idProvenienza=2"
+        api = {
+            "https://www.silvia.servizirl.it/silviaweb/getSchedaSintesiByIdProgetto.html?idProgetto=20881": {
+                "progetto": {"descrProgetto": "PROGETTO “CASCINA GRANDE” ... SITO NEL COMUNE DI DORNO (PV) CON POTENZA DI 121.696,68kWp",
+                             "codProcedura": "VIA0058-PV", "dataDeposito": "14/04/2026", "ente": {"descrEnte": "PROVINCIA DI PAVIA"},
+                             "macroStato": {"descrMacroStato": "Termini sospesi"}},
+                "listProponenti": [{"descrEnteAzienda": "Azienda: Grande Rinnovabili S.r.l."}],
+                "listaViewArchivioDocByProgetto": [
+                    {"idDocumento": "134770", "titolo": "comunicazione 10 bis", "dataDocumento": "27/07/2026", "pubblico": "S",
+                     "descrTipoDeposito": "10 BIS", "countAllegati": 1}]},
+            "https://www.silvia.servizirl.it/silviaweb/getFileByDocumento.html?idDocumento=134770": [
+                {"idEdma": "490137834", "nomeFile": "26.247letv_signed prot 46616.pdf", "dataUpload": "27/07/2026"}]}
+        ad = SilviaAdapter(get_json=lambda u: api[u])
+        self.assertTrue(SilviaAdapter.handles(url))
+        ident = ad.identify(url)
+        self.assertEqual((ident.proponent, ident.municipalities, ident.province), ("Grande Rinnovabili S.r.l.", ["Dorno"], "PV"))
+        disc = ad.discover(ident)
+        self.assertEqual(disc.documents[0].url, "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=490137834"
+                                                "&nomeFile=26.247letv_signed%20prot%2046616.pdf")
+        self.assertEqual(disc.documents[0].extra["index_date"], "2026-07-27")
+        self.assertEqual((disc.procedures[0]["declared"], disc.procedures[0]["enumerated"]), (1, 1))
+
+    def test_toscana_patti(self):
+        from doc_intel.adapters.api_portals import ToscanaPattiAdapter
+        content = {"opera": "AUTORIZZAZIONE UNICA ... AGRIVOLTAICO AVANZATO DI POTENZA PARI A 128 MWp", "proponente": "REVALUE PV 1 S.R.L.",
+                   "comune": "SOVICILLE", "collegamenti": [{"titoloSezione": "AVVIO: avviso, documentazione iniziale",
+                                                            "files": [{"nome": "00_elenco_elaborati.pdf",
+                                                                       "collegamento": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1"}]}]}
+        api = {"id": 110, "contenuto": json.dumps(content), "procedimento": "Verifica di Assoggettabilità a VIA",
+               "dataUltimoAggiornamento": "2025-09-29T08:52:23.058Z",
+               "localizzazione": {"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {
+                   "type": "Polygon", "coordinates": [[[11.20, 43.25], [11.22, 43.25], [11.22, 43.27], [11.20, 43.27], [11.20, 43.25]]]}}]}}
+        ad = ToscanaPattiAdapter(get_json=lambda u: api)
+        ident = ad.identify("https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110")
+        self.assertEqual((ident.proponent, ident.municipalities), ("REVALUE PV 1 S.R.L.", ["Sovicille"]))
+        disc = ad.discover(ident)
+        self.assertEqual([d.title for d in disc.documents], ["00_elenco_elaborati.pdf"])
+        from doc_intel.pipeline import _portal_facts
+        poly = _portal_facts(ident)
+        self.assertEqual(poly[0].qualifiers["object"], "official_outline")
+        from doc_intel.card import _site_point
+        f = json.loads(json.dumps(poly[0].__dict__, default=lambda o: o.__dict__))
+        point, kind, *_ = _site_point({"facts": [f]}, {})
+        self.assertAlmostEqual(point[0], 43.258, places=2)
+        self.assertIn("portale regionale", kind)

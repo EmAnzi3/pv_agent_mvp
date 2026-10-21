@@ -251,7 +251,12 @@ def _hint(p: dict) -> str | None:
 def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], list[dict]]:
     tiles, open_points = [], []
     title = record.get("title") or p.get("title") or ""
-    tm = re.search(r"(?i)(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?|\d+(?:[.,]\d+)?)\s*(MWp|MW|kWp|KwP|kW)\b", title)
+    power_rx = r"(?i)(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?|\d+(?:[.,]\d+)?)\s*(MWp|MW|kWp|KwP|kW)\b"
+    tm, title_src = re.search(power_rx, title), "titolo del procedimento"
+    sheet = (p.get("raw") or {}).get("register_sheet") or {}
+    if not tm and sheet.get("power_mw"):
+        # a register sheet (ATOS) states the power in its own field, not in the plant name
+        tm, title_src = re.search(power_rx, sheet["power_mw"].replace(".", ",") + " MW"), "registro impianti regionale"
     if tm:
         from .extract.context import parse_number
         num = parse_number(tm.group(1)) or 0
@@ -264,7 +269,7 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         cands.sort(key=lambda c: -c[1]["occurrences"])
         shown_field = "tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw"
         shown, status = mw, "verificato"
-        source = {"document": "titolo del procedimento", "url": p.get("info_url"), "excerpt": tm.group(0)}
+        source = {"document": title_src, "url": p.get("info_url"), "excerpt": tm.group(0)}
         title_seen = any(abs(x["value"] - mw) <= 0.01 * mw and x["occurrences"] >= 2 for _, x in
                          [(g["field"], x) for g in d["groups"] if g["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")
                           for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float))])
@@ -299,8 +304,10 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
     ok_tot = (lambda v: 0.8 * plant_mw <= v <= 8 * plant_mw) if plant_mw else None
     ok_pan = (lambda v: 0.25 * plant_mw <= v <= 3 * plant_mw) if plant_mw else None
     tot, pan = _pick(d, "tech.area_available_ha", titles, ok_tot), _pick(d, "tech.area_panels_ha", titles, ok_pan)
-    if tot and pan and pan["value"] >= tot["value"]:
-        pan = None                          # a panel area larger than the site is a misread
+    if tot and pan and pan["value"] >= 0.85 * tot["value"]:
+        # panels never cover (almost) the whole site: rows are spaced; such a value is the site or farmland area
+        open_points.append({"label": "Superficie pannelli", "reason": f"valore letto ({pan['text']}) prossimo all'area totale: non mostrato"})
+        pan = None
     if tot:
         tiles.append({"key": "area", "label": "Superficie complessiva", "value": tot["text"], "status": tot["status"],
                       "sub": _hint(tot), "source": tot["source"]})
@@ -559,9 +566,10 @@ def _location(d: dict, p: dict, record: dict, titles: dict) -> dict:
 
 
 # weight of each kind of point as evidence of where the plant is
-SITE_WEIGHT = {"site_point": 10, "centroid": 9, "map_frame_small": 6, "site_bbox_corner": 5, "area_vertex": 5, "polygon": 5,
+SITE_WEIGHT = {"official_outline": 12, "site_point": 10, "centroid": 9, "map_frame_small": 6, "site_bbox_corner": 5, "area_vertex": 5, "polygon": 5,
                "cabin": 3, "bess": 3, "survey_point": 3, "simulation_point": 3, "map_frame_large": 2, "unknown": 2}
-SITE_TEXT = {"site_point": "coordinate del sito dichiarate negli elaborati",
+SITE_TEXT = {"official_outline": "centro del perimetro pubblicato dal portale regionale",
+             "site_point": "coordinate del sito dichiarate negli elaborati",
              "centroid": "baricentro dell'impianto dichiarato negli elaborati",
              "map_frame_small": "centro della tavola georeferenziata di progetto",
              "polygon": "centro dei perimetri ricostruiti dalle tabelle dei vertici",
@@ -583,7 +591,8 @@ def _site_point(d: dict, titles: dict):
             lat, lon = q["lat"], q["lon"]
         elif f["field"] == "geo.area_polygon" and (f["value"].get("geojson") or {}).get("coordinates"):
             ring = f["value"]["geojson"]["coordinates"][0]
-            lat, lon, obj = sum(c[1] for c in ring) / len(ring), sum(c[0] for c in ring) / len(ring), "polygon"
+            lat, lon = sum(c[1] for c in ring) / len(ring), sum(c[0] for c in ring) / len(ring)
+            obj = "official_outline" if q.get("object") == "official_outline" else "polygon"
         elif f["field"] == "geo.map_extent":
             v = f["value"]
             lat, lon = v["lat"], v["lon"]
@@ -902,6 +911,30 @@ def _status(d: dict, gantt: dict, today=None) -> dict | None:
     return None
 
 
+def _register(p: dict) -> dict | None:
+    """Last act recorded in a regional plant register (Toscana ATOS), reported as written.
+
+    The register's 'Categoria Atto' says what the act is (an authorisation, a screening decision...):
+    the card repeats it and never upgrades it to 'autorizzato'."""
+    sh = (p.get("raw") or {}).get("register_sheet")
+    if not sh:
+        return None
+    act = " ".join(x for x in (sh.get("act_type"), f"n. {sh['act_number']}" if sh.get("act_number") else None,
+                               f"del {sh['act_date']}" if sh.get("act_date") else None) if x)
+    label = (f"Registro impianti: {act}" if act else
+             "Registro impianti: nessun atto registrato" if sh.get("no_act") else "Registro impianti regionale")
+    bits = [f"{k}: {sh[f]}" for k, f in (("Categoria atto", "act_category"), ("Ente", "act_body"),
+                                         ("Tipo di autorizzazione", "authorization_type"),
+                                         ("Attivo", "active"), ("Ultima modifica del registro", "updated")) if sh.get(f)]
+    linked = (p.get("raw") or {}).get("linked_procedure")
+    if linked:
+        bits.append(f"documenti dal procedimento collegato: {linked.get('title') or linked['url']}")
+    return {"label": label, "reason": "; ".join(bits) + ".", "fonte": p.get("info_url"),
+            "impianto": sh.get("plant"), "ditta": sh.get("company"), "comune": sh.get("municipality"),
+            "provincia": sh.get("province"), "fonte_energetica": sh.get("energy_source"),
+            "potenza_mw": sh.get("power_mw"), "procedimento_collegato": linked}
+
+
 # --------------------------------------------------------------------------------------------- card
 def build_card(d: dict[str, Any]) -> dict[str, Any]:
     p = d["project"]
@@ -919,6 +952,12 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
     status = _status(d, gantt)
     if status and status["level"] in ("potenzialmente_realizzato", "potenzialmente_avviato", "date_superate"):
         open_points.insert(0, {"label": "Stato del progetto", "reason": status["reason"]})
+    register = _register(p)
+    if register:
+        if status is None:
+            status = {"level": "registro", "label": register["label"], "reason": register["reason"]}
+        else:
+            status = dict(status, reason=status["reason"] + " " + register["label"] + ".")
     a = d["acquisition"]
     return {
         "schema": CARD_SCHEMA, "dossier_schema": SCHEMA_VERSION,
@@ -931,6 +970,7 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         "soggetti": main,
         "altri_soggetti": others,
         "stato": status,
+        "registro": register,
         "cronoprogramma": gantt,
         "documentazione": {"documenti": a["references"], "pagine": a["pages_total"],
                            "completa": d["gates"]["acquisition"]["pass"]},
