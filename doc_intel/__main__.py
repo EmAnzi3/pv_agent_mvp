@@ -76,6 +76,11 @@ def main(argv: list[str] | None = None) -> int:
     qs.add_argument("--memory", required=True)
     sy = sub.add_parser("sync-schede", help="download the published project cards for the dashboard (docs/schede)")
     sy.add_argument("--out", default="docs/schede")
+    ex = sub.add_parser("explore", help="dump links and API calls of portal pages (to write new adapters)")
+    ex.add_argument("urls", nargs="+")
+    ex.add_argument("--out", default="reports/explore.json")
+    ex.add_argument("--no-render", action="store_true")
+    ex.add_argument("--annotate", action="store_true", help="also print the report as GitHub annotations")
     m = sub.add_parser("render")
     m.add_argument("--dossier", required=True)
     a = ap.parse_args(argv)
@@ -179,6 +184,17 @@ def main(argv: list[str] | None = None) -> int:
         res = sync_cards(a.out)
         print(f"Schede progetto: {res['downloaded']} aggiornate, {res['total']} disponibili"
               + (f", {res['errors']} non scaricate" if res["errors"] else ""))
+        return 0
+    if a.cmd == "explore":
+        from .explore import main as explore_main
+        Path(a.out).parent.mkdir(parents=True, exist_ok=True)
+        explore_main(a.urls, a.out, render=not a.no_render)
+        print(f"report: {a.out}")
+        if a.annotate:
+            text = Path(a.out).read_text(encoding="utf-8")
+            chunks = [text[i:i + 3900] for i in range(0, len(text), 3900)]
+            for k, part in enumerate(chunks):
+                print(f"::notice title=explore#{k + 1}of{len(chunks)}::{part.replace(chr(10), ' ')}")
         return 0
     if a.cmd == "render":
         d = json.loads(Path(a.dossier).read_text(encoding="utf-8"))
