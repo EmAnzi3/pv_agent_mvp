@@ -12,7 +12,7 @@ on:
       - 'doc_intel/explore_targets.txt'
       - '.github/workflows/doc-intel-explore.yml'
 permissions:
-  contents: read
+  contents: write
 jobs:
   explore:
     runs-on: ubuntu-latest
@@ -30,4 +30,20 @@ jobs:
           URLS: ${{ inputs.urls }}
         run: |
           if [ -z "$URLS" ]; then URLS=$(grep -v '^#' doc_intel/explore_targets.txt | tr '\n' ' '); fi
-          python -m doc_intel explore $URLS --out reports/explore.json --annotate
+          python -m doc_intel explore $URLS --out reports/explore.json
+      - name: Save the report on the memory branch (explore/<run>.json)
+        run: |
+          git config user.name "doc-intel-bot"
+          git config user.email "doc-intel-bot@users.noreply.github.com"
+          git fetch origin doc-intel-state:doc-intel-state
+          git worktree add .mem doc-intel-state
+          mkdir -p .mem/explore
+          cp reports/explore.json ".mem/explore/${{ github.run_id }}.json"
+          cp reports/explore.json .mem/explore/latest.json
+          cd .mem && git add explore && git commit -q -m "explore report ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
+            git push -q origin HEAD:doc-intel-state && echo "::notice title=explore::saved explore/${{ github.run_id }}.json" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
