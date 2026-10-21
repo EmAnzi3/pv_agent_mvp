@@ -290,6 +290,25 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         sub = " · ".join(x for x in (f"Suddivisa in {lots['value']} {what}" if lots else None, note) if x) or None
         tiles.append({"key": "potenza", "label": "Potenza", "status": status,
                       "value": _fmt(shown_field, round(shown, 3)), "sub": sub, "source": source})
+    if not tm:
+        # no power in the title: the plant power the documents state most often (an explicit declaration
+        # such as 'capacità produttiva massima' counts like any other occurrence)
+        cands = [(g["field"], x) for g in d["groups"]
+                 if g["field"] in ("tech.pv_dc_mwp", "tech.nominal_power_mw", "tech.pv_ac_mw") and g.get("subject") in ("plant", None)
+                 for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["value"] > 0]
+        if cands:
+            fld, x = max(cands, key=lambda c: (c[1]["occurrences"], c[0] == "tech.pv_dc_mwp"))
+            others = sorted({round(o["value"], 3) for _, o in cands if abs(o["value"] - x["value"]) > 0.01 * x["value"]})
+            sure = x["occurrences"] >= 3
+            tiles.append({"key": "potenza", "label": "Potenza", "status": "da documenti" if sure else "da verificare",
+                          "value": _fmt(fld, round(x["value"], 3)),
+                          "sub": f"Dagli elaborati ({x['occurrences']} occorrenze); il titolo non indica la potenza"
+                                 + (f"; altri valori: {', '.join(_fmt(fld, v) for v in others[:3])}" if others else ""),
+                          "source": _source(x.get("example"), titles)})
+            if not sure or others:
+                open_points.append({"label": "Potenza", "reason": "non indicata nel titolo: valore ricavato dagli elaborati"})
+            mw = x["value"] if fld != "tech.pv_ac_mw" else None
+            tm = True if mw else None
     plant_mw = mw if tm else None
     tech = _pick(d, "tech.technology", titles)
     if tech and tech["value"] in ("floating_pv", "offshore") and tech["occurrences"] < 10:
@@ -552,6 +571,12 @@ def _location(d: dict, p: dict, record: dict, titles: dict) -> dict:
     if len(set(provs_in)) > 1:
         munis = raw                                     # 'Melara (RO), Ostiglia (MN)': keep each province
     region = p.get("region") or record.get("region")
+    if munis and (not prov or not region):
+        from .admin_areas import locate                 # ISTAT list: 'Loreo, Adria' -> RO, Veneto
+        found = locate(raw, prov or "", region or "")
+        if found:
+            prov = prov or found["province"]
+            region = region or found["region"].split(" / ")[0].split("/")[0]
     point, kind, src, conn, lots = _site_point(d, titles)
     from urllib.parse import quote_plus
     if point:

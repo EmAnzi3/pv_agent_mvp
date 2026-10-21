@@ -1755,7 +1755,7 @@ __SCHEDA_CSS__
           <td><span class="${badgeClass(row.source_group || row.source)}">${escapeHtml(row.source_label || sourceLabel(row.source))}</span></td>
           <td>${escapeHtml(row.project_type)}</td>
           <td class="num">${fmtMw(row.power_mw)}</td>
-          <td>${link}${schedaButton(row)}</td>
+          <td><span class="sc-cell">${link}${schedaButton(row)}</span></td>
         `;
 
         body.appendChild(tr);
@@ -2014,7 +2014,7 @@ __SCHEDA_CSS__
           <td class="proponent-col">${proponent}</td>
           <td>${escapeHtml(record.project_type)}</td>
           <td class="num">${fmtMw(record.power_mw)}</td>
-          <td>${link}${schedaButton(record)}</td>
+          <td><span class="sc-cell">${link}${schedaButton(record)}</span></td>
         `;
 
         body.appendChild(tr);

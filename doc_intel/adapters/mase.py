@@ -35,6 +35,9 @@ def _clean(url: str) -> str:
     return url.split("#")[0].rstrip("/")
 
 
+PLANT_NAME = re.compile(r"(?i)denominat[oa]\s*[:\-]?\s*(?:&quot;|[\"“”«'‘’])+\s*([^\"“”»'‘’&]{2,60}?)\s*(?:&quot;|[\"“”»'‘’])")
+
+
 class MaseAdapter(DocumentAdapter):
     source = "mase"
     capabilities = AdapterCapabilities(
@@ -44,9 +47,49 @@ class MaseAdapter(DocumentAdapter):
                    "large drawings (>100 MB) need byte cap tuning"],
         status="supported")
 
+    wants_records = True            # to find the other procedures of the same plant in the radar
+
     @staticmethod
     def handles(url: str) -> bool:
         return _host_ok(url)
+
+    def link_related(self, ident: ProjectIdentity, max_links: int = 2) -> None:
+        """A change to a project ('Modifica al progetto ... BIDDINE') is a new MASE object with only the
+        change documents; the full project is in the object of the original procedure. When the radar holds
+        another MASE record with the same plant name ('denominato "BIDDINE"') in a shared municipality, its
+        documentation procedures are added (labelled), so the card is built on the whole project."""
+        records = getattr(self, "records", None) or []
+        names = {re.sub(r"\W+", " ", x).strip().lower() for x in PLANT_NAME.findall(ident.title or "")}
+        if not names or not records:
+            return
+        munis = {m.strip().lower() for m in ident.municipalities}
+        own = {p["url"] for p in ident.procedures}
+        own_info = re.search(r"/Oggetti/Info/(\d+)", ident.info_url or "")
+        linked = []
+        for r in records:
+            u = r.get("url") or ""
+            if not _host_ok(u) or u.rstrip("/") == (ident.raw.get("entry_url") or ident.info_url).rstrip("/"):
+                continue
+            rn = {re.sub(r"\W+", " ", x).strip().lower() for x in PLANT_NAME.findall(r.get("title") or "")}
+            rm = {m.strip().lower() for m in re.split(r"[,;]", r.get("municipalities") or "") if m.strip()}
+            if not (rn & names) or (munis and rm and not (munis & rm)):
+                continue
+            try:
+                other = self.identify(u) if "/DettaglioUltimiProvvedimenti/" in u or "/Oggetti/Info/" in u else None
+            except Exception as exc:
+                self.log(f"[related] {u}: {str(exc)[:120]}")
+                continue
+            if not other or (own_info and own_info.group(1) == other.project_id):
+                continue
+            for p in other.procedures:
+                if p["url"] not in own:
+                    ident.procedures.append(dict(p, label=f"Progetto collegato ({other.project_id}): {p.get('label') or ''}".strip()))
+                    own.add(p["url"])
+            linked.append({"url": other.info_url, "title": other.title})
+            if len(linked) >= max_links:
+                break
+        if linked:
+            ident.raw["related_projects"] = linked
 
     # ------------------------------------------------------------ identity
     def identify(self, url: str) -> ProjectIdentity:
@@ -142,6 +185,9 @@ class MaseAdapter(DocumentAdapter):
 
     # ------------------------------------------------------------ documents
     def discover(self, identity: ProjectIdentity, max_pages: int = 80) -> Discovery:
+        if not identity.raw.get("related_checked"):
+            identity.raw["related_checked"] = True
+            self.link_related(identity)
         docs: list[DocumentRef] = []
         procs = []
         errors: list[str] = []
