@@ -8,6 +8,18 @@
  "updated": "2026-10-21",
  "sintesi": [
   {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "128,03 MW",
+   "sub": null,
+   "source": {
+    "document": "registro impianti regionale",
+    "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481",
+    "excerpt": "128,03 MW"
+   }
+  },
+  {
    "key": "impianto",
    "label": "Impianto",
    "value": "Agrivoltaico · tracker monoassiali",
@@ -24,25 +36,12 @@
    "label": "Superficie complessiva",
    "value": "238 ha",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 1.189,16 ha (3), 180 ha (1), 12,5 ha (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 180 ha (1)",
    "source": {
     "url": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1357607&hash=1b27607ce566446f3d654da1cd11098&check=3133353736303731623237363037636535363634343666336436353464613163643131303938",
     "page": 1,
     "document": "0_Scheda-web_AgriVolt-Sociville_mod.pdf",
     "excerpt": "pari a 128 Mwp con potenza massima in immissione di 115,50 MW, da realizzarsi nel Comune di Sovicille (SI). L’impianto fotovoltaico si estenderà su una superficie di terreno di 238 ha a destinazione agricola e sarà costi"
-   }
-  },
-  {
-   "key": "pannelli",
-   "label": "Superficie coperta dai pannelli",
-   "value": "230 ha",
-   "status": "da documenti",
-   "sub": "97% dell'area",
-   "source": {
-    "url": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1357611&hash=c1058d4d80c17a62850e6a689d098c33&check=313335373631316331303538643464383063313761363238353065366136383964303938633333",
-    "page": 4,
-    "document": "Osservazione_agrMerse.pdf",
-    "excerpt": "La prevista installazione di oltre 180.000 moduli fotovoltaici su un’area agricola di oltre 230 ettari, seppur formalmente inquadrata nella categoria “agrivoltaico”, determinerà inevitabilmente"
    }
   },
   {
@@ -52,10 +51,10 @@
    "status": "da documenti",
    "sub": null,
    "source": {
-    "url": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1181028&hash=2d4bd121e4875a7eef5421112945d8c3&check=313138313032383264346264313231653438373561376565663534323131313239343564386333",
-    "page": 39,
-    "document": "AV002GEN1P.pdf",
-    "excerpt": "videosorveglianza e allarme. Complessivamente si ipotizzano 580 pali a partire da una lunghezza stimata 23 200 m e un interasse di 40m."
+    "url": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1181036&hash=b8cad5286114f25a50d5da7dea1868b3&check=313138313033366238636164353238363131346632356135306435646137646561313836386233",
+    "page": 53,
+    "document": "AV21SPA1P.pdf",
+    "excerpt": "di illuminazione fornirà inoltre da supporto a quello di videosorveglianza e allarme. Complessivamente si ipotizzano 580 pali a partire da una lunghezza stimata 23 200 m e un interasse di 40m."
    }
   },
   {
@@ -729,6 +728,10 @@
   }
  ],
  "da_verificare": [
+  {
+   "label": "Superficie pannelli",
+   "reason": "valore letto (230 ha) prossimo all'area totale: non mostrato"
+  },
   {
    "label": "Recapiti",
    "reason": "50 recapiti non attribuibili a un soggetto preciso: non mostrati"
