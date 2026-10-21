@@ -5,7 +5,7 @@
  "title": "Progetto di un nuovo impianto fotovoltaico della potenza nominale di 73 MW, denominato \"Sassari 01\", con annesso impianto di accumulo energetico della potenza di 120 MW e relative opere di connessione alla rete, ubicato nei Comuni di Sassari (SS) e Porto Torres (SS) su una superficie di ca. 115 ha. Il progetto prevede l'implementazione di un biomonitoraggio tramite apicoltura.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8020",
  "source": "mase",
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "sintesi": [
   {
    "key": "potenza",
@@ -114,7 +114,8 @@
     "excerpt": "SOTTOSTAZIONE Localizzazione: Porto Torres; Piano Dusai Coordinate (UTM 33 WGS84) al centro dell’area: 40°49'20.85\"N 8°23'7.20\"E Utilizzo attuale dell’area: area coltivata"
    },
    "maps_url": "https://www.google.com/maps/search/?api=1&query=40.82246,8.38533"
-  }
+  },
+  "lotti": []
  },
  "soggetti": [
   {
@@ -414,126 +415,626 @@
    {
     "name": "Allestimento cantiere",
     "start": 0.0,
-    "end": 0.46
+    "end": 0.45,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Sbancamenti e livellazioni",
-    "start": 0.23,
-    "end": 0.92
+    "start": 0.22,
+    "end": 0.91,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Installazione recinzione e cancelli",
-    "start": 0.69,
-    "end": 1.15
+    "start": 0.68,
+    "end": 1.14,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Scavi per Cabine e posa manufatti",
-    "start": 1.15,
-    "end": 1.85
+    "start": 1.14,
+    "end": 1.84,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Scavi per sottoservizi",
-    "start": 1.38,
-    "end": 7.38
+    "start": 1.37,
+    "end": 7.38,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Cablaggi cavi BT e MT interrati",
-    "start": 1.62,
-    "end": 7.62
+    "start": 1.6,
+    "end": 7.61,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Installazione strutture",
-    "start": 1.85,
-    "end": 10.62
+    "start": 1.83,
+    "end": 10.61,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Montaggio moduli FV, QP e cablaggio",
-    "start": 2.08,
-    "end": 11.08
+    "start": 2.07,
+    "end": 11.07,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Realizzaizone cavidotto tra aree Ovest",
-    "start": 1.38,
-    "end": 2.31
+    "start": 1.37,
+    "end": 2.3,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Realizzazione strade",
-    "start": 1.15,
-    "end": 2.08
+    "start": 1.14,
+    "end": 2.07,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Realizzazione cavidotto esterno MT",
-    "start": 3.0,
-    "end": 4.62
+    "start": 2.99,
+    "end": 4.61,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Collaudi e commissioning",
-    "start": 10.85,
-    "end": 11.31
+    "start": 10.84,
+    "end": 11.3,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Smobilizzo cantiere",
-    "start": 11.08,
-    "end": 11.54
+    "start": 11.07,
+    "end": 11.53,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Allestimento cantiere",
+    "start": 0.91,
+    "end": 1.37,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sbancamenti e livellazioni",
+    "start": 1.14,
+    "end": 1.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione recinzione e cancelli",
+    "start": 1.6,
+    "end": 2.3,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Scavi per fabbricato servizi",
-    "start": 1.85,
-    "end": 2.31
+    "start": 1.83,
+    "end": 2.3,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Realizzazioe fabbricato servizi",
-    "start": 2.08,
-    "end": 4.85
+    "start": 2.07,
+    "end": 4.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per sottoservizi",
+    "start": 2.53,
+    "end": 4.84,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Installazione sottoservizi",
-    "start": 3.0,
-    "end": 4.38
+    "start": 2.99,
+    "end": 4.38,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Scavi per apparecchiature AT",
-    "start": 3.92,
-    "end": 6.23
+    "start": 3.91,
+    "end": 6.22,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Installazione apparecchiature AT",
-    "start": 5.08,
-    "end": 6.69
+    "start": 5.07,
+    "end": 6.68,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Scavi per Impianto trattamento acque",
-    "start": 1.85,
-    "end": 2.77
+    "start": 1.83,
+    "end": 2.76,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Realizzazione Impianto trattamento acque",
-    "start": 2.08,
-    "end": 3.0
+    "start": 2.07,
+    "end": 2.99,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Cablaggi BT. MT e AT",
-    "start": 3.23,
-    "end": 5.31
+    "start": 3.22,
+    "end": 5.3,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Installazione Trasfromatore MT/AT",
-    "start": 6.69,
-    "end": 7.62
+    "start": 6.68,
+    "end": 7.61,
+    "level": 0,
+    "summary": false
    },
    {
     "name": "Realizzaizone cavidotto AT da SSE a SE Terna",
-    "start": 6.92,
-    "end": 7.38
+    "start": 6.91,
+    "end": 7.38,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi e commissioning",
+    "start": 7.37,
+    "end": 7.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smobilizzo cantiere",
+    "start": 7.6,
+    "end": 8.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Allestimento cantiere",
+    "start": 0.0,
+    "end": 0.22,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scollegamento serie moduli fotovoltaici",
+    "start": 0.22,
+    "end": 0.68,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smontaggio moduli fotovoltaici",
+    "start": 0.45,
+    "end": 4.14,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smontaggio sistema di illuminazione",
+    "start": 0.68,
+    "end": 1.6,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sfilaggio cavi BT e MT",
+    "start": 1.14,
+    "end": 3.91,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi e rimozione tubazioni interrate",
+    "start": 1.37,
+    "end": 5.29,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Richiusura scavi",
+    "start": 1.6,
+    "end": 5.52,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smotaggio strutture metalliche moduli",
+    "start": 0.91,
+    "end": 4.6,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Rimozione Cabine, Shelter e Container Batterie",
+    "start": 2.06,
+    "end": 4.83,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Rimozione strade e richiusura scavi",
+    "start": 4.37,
+    "end": 5.29,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Rimozione recinzione",
+    "start": 4.37,
+    "end": 5.52,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristino dei luoghi alle condizioni ante‐opera",
+    "start": 1.6,
+    "end": 5.52,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto a rifiuto e centri di recupero materiali rimossi",
+    "start": 1.14,
+    "end": 5.52,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smontaggio apparecchiature elettromeccaniche",
+    "start": 1.14,
+    "end": 2.06,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Rimozione Trasforamtore MT/AT",
+    "start": 1.37,
+    "end": 2.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smontaggio infissi fabbricato servizi",
+    "start": 1.83,
+    "end": 2.29,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sfilaggio cavi BT, MT e AT",
+    "start": 2.06,
+    "end": 4.83,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Demolizione fabbricato servizi",
+    "start": 2.52,
+    "end": 4.83,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Demolizione impianto trattamento acque",
+    "start": 2.99,
+    "end": 4.37,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Demolizione recinzione perimetrale",
+    "start": 4.83,
+    "end": 5.52,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Rimozione cancello ingresso",
+    "start": 5.06,
+    "end": 5.29,
+    "level": 0,
+    "summary": false
    }
   ],
   "unit": "month",
-  "months": 11.54,
+  "months": 11.53,
   "source": {
    "url": "https://va.mite.gov.it/File/Documento/592983",
    "page": 2,
    "document": "Cronoprogramma lavori di costruzione - cronoprogramma lavori di ripristino",
    "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "W1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "W2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "W3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "W4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "W5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "W6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "W7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "W8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "W9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "W10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "W11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "W12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "W13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "W14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "W15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "W16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "W17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "W18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "W19",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "W20",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "W21",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "W22",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "W23",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "W24",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "W25",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "W26",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "W27",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "W28",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "W29",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "W30",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "W31",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "W32",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "W33",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "W34",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "W35",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "W36",
+     "start": 8.077,
+     "end": 8.308
+    },
+    {
+     "label": "W37",
+     "start": 8.308,
+     "end": 8.538
+    },
+    {
+     "label": "W38",
+     "start": 8.538,
+     "end": 8.769
+    },
+    {
+     "label": "W39",
+     "start": 8.769,
+     "end": 9.0
+    },
+    {
+     "label": "W40",
+     "start": 9.0,
+     "end": 9.231
+    },
+    {
+     "label": "W41",
+     "start": 9.231,
+     "end": 9.462
+    },
+    {
+     "label": "W42",
+     "start": 9.462,
+     "end": 9.692
+    },
+    {
+     "label": "W43",
+     "start": 9.692,
+     "end": 9.923
+    },
+    {
+     "label": "W44",
+     "start": 9.923,
+     "end": 10.154
+    },
+    {
+     "label": "W45",
+     "start": 10.154,
+     "end": 10.385
+    },
+    {
+     "label": "W46",
+     "start": 10.385,
+     "end": 10.615
+    },
+    {
+     "label": "W47",
+     "start": 10.615,
+     "end": 10.846
+    },
+    {
+     "label": "W48",
+     "start": 10.846,
+     "end": 11.077
+    },
+    {
+     "label": "W49",
+     "start": 11.077,
+     "end": 11.308
+    },
+    {
+     "label": "W50",
+     "start": 11.308,
+     "end": 11.538
+    },
+    {
+     "label": "W51",
+     "start": 11.538,
+     "end": 11.769
+    },
+    {
+     "label": "W52",
+     "start": 11.769,
+     "end": 12.0
+    }
+   ]
   },
   "duration": {
    "text": "50 settimane (circa 12 mesi)",
