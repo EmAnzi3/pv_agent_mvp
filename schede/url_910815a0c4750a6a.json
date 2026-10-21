@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto fotovoltaico, denominato \"Tortona 2\", di potenza pari a 60 MW, comprensivo alle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Tortona (AL), Pozzolo Formigaro (AL) e Frugarolo (AL).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8788",
  "source": "mase",
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "sintesi": [
   {
    "key": "potenza",
@@ -51,7 +51,7 @@
    "status": "da verificare",
    "sub": "29% dell'area · Valore più ricorrente negli elaborati; altri valori: 29,913 ha (8), 16,898 ha (5)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1439021",
+    "url": "https://va.mite.gov.it/File/Documento/1439019",
     "page": 9,
     "document": "Piano di Monitoraggio Ambientale (PMA)",
     "excerpt": "L’area interessata dall’intervento ed oggetto di analisi si estende per una superficie di 995.250 m2 e la superficie totale dei moduli in orizzontale sarà di circa 289.820 m2. I terreni sono pianeggianti e l’area dell’in"
@@ -105,7 +105,45 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=44.83532,8.78014",
   "maps_precision": "coordinate",
-  "connessione": null
+  "connessione": null,
+  "lotti": [
+   {
+    "lotto": "Area 1",
+    "lat": 44.84131,
+    "lon": 8.78555,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=44.84131,8.78555",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/706408",
+     "page": 7,
+     "document": "Relazione Agronomica",
+     "excerpt": "> Vertice Nord-Ovest 482679 4965477"
+    }
+   },
+   {
+    "lotto": "Area 2",
+    "lat": 44.83501,
+    "lon": 8.7783,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=44.83501,8.77830",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/805847",
+     "page": 17,
+     "document": "Integrazioni del 21/03/2023 - MIC.04_D10_Relazione descrittiva e del contesto agronomica",
+     "excerpt": "481949 4964811"
+    }
+   },
+   {
+    "lotto": "Area 5",
+    "lat": 44.83032,
+    "lon": 8.77975,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=44.83032,8.77975",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/805847",
+     "page": 27,
+     "document": "Integrazioni del 21/03/2023 - MIC.04_D10_Relazione descrittiva e del contesto agronomica",
+     "excerpt": "482405 4964200"
+    }
+   }
+  ]
  },
  "soggetti": [
   {
@@ -314,7 +352,7 @@
     {
      "type": "PEC",
      "value": "lab@pec.labambientesicurezza.com",
-     "occurrences": 35,
+     "occurrences": 34,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1439048",
       "page": 29,
@@ -325,7 +363,7 @@
     {
      "type": "E-mail",
      "value": "info@labambientesicurezza.com",
-     "occurrences": 34,
+     "occurrences": 33,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1439048",
       "page": 29,
@@ -539,118 +577,246 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Sicurezza & Cantierizzazione",
+    "name": "Sicurezza & Cantierizzazione 90",
     "start": 0.0,
-    "end": 3.4
+    "end": 3.43,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Realizzazione cavidotti interrati",
-    "start": 2.4,
-    "end": 6.3
+    "name": "Realizzazione cavidotti interrati 130",
+    "start": 2.43,
+    "end": 6.34,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Realizzazione recinzione perimetrale",
+    "name": "Realizzazione recinzione perimetrale 200",
     "start": 0.0,
-    "end": 6.9
+    "end": 6.89,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Realizzazione basamenti cabine",
-    "start": 4.3,
-    "end": 7.1
+    "name": "Realizzazione basamenti cabine 70",
+    "start": 4.34,
+    "end": 7.07,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Installazione cabine elettriche",
-    "start": 6.6,
-    "end": 9.3
+    "name": "Installazione cabine elettriche 70",
+    "start": 6.61,
+    "end": 9.34,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Installazione tracker e moduli",
+    "name": "Installazione tracker e moduli 200",
     "start": 2.7,
-    "end": 9.6
+    "end": 9.62,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Montaggio carpenteria tracker",
+    "name": "Montaggio carpenteria tracker 100",
     "start": 2.7,
-    "end": 7.5
+    "end": 7.53,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Smistamento e montaggio pannelli fotovoltaici",
-    "start": 4.9,
-    "end": 9.6
+    "name": "Smistamento e montaggio pannelli fotovoltaici 100",
+    "start": 4.88,
+    "end": 9.62,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Impianto elettrico",
-    "start": 1.8,
-    "end": 8.7
+    "name": "Impianto elettrico 180",
+    "start": 1.79,
+    "end": 8.71,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Infilaggio cavi in tubazioni interrate",
-    "start": 1.8,
-    "end": 4.8
+    "name": "Infilaggio cavi in tubazioni interrate 80",
+    "start": 1.79,
+    "end": 4.8,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Realizzazione messa a terra",
-    "start": 3.4,
-    "end": 6.2
+    "name": "Realizzazione messa a terra 70",
+    "start": 3.43,
+    "end": 6.16,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Posa inverter e collegamenti in cabina",
+    "name": "Posa inverter e collegamenti in cabina 70",
     "start": 4.7,
-    "end": 7.4
+    "end": 7.43,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Connessione elettrica moduli",
-    "start": 6.0,
-    "end": 8.7
+    "name": "Connessione elettrica moduli 70",
+    "start": 5.98,
+    "end": 8.71,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Finiture e collaudo",
-    "start": 4.8,
-    "end": 9.8
+    "name": "Finiture e collaudo 120",
+    "start": 4.79,
+    "end": 9.8,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Finiture elettriche",
-    "start": 4.8,
-    "end": 6.7
+    "name": "Finiture elettriche 50",
+    "start": 4.79,
+    "end": 6.71,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Finiture opere civili e strutture metalliche",
-    "start": 6.2,
-    "end": 9.8
+    "name": "Finiture opere civili e strutture metalliche 80",
+    "start": 6.16,
+    "end": 9.8,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Posa elettrodotto MT su strada pubblica",
-    "start": 1.6,
-    "end": 3.3
+    "name": "Sicurezza & Cantierizzazione 70",
+    "start": 5.89,
+    "end": 8.62,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Approvigionamento materiale",
-    "start": 0.5,
-    "end": 9.8
+    "name": "Infilaggio cavi in tubazioni interrate 70",
+    "start": 7.89,
+    "end": 10.53,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Realizzazione viabilità, recinzioni e opere edili",
-    "start": 2.3,
-    "end": 6.7
+    "name": "Realizzazione messa a terra 60",
+    "start": 9.52,
+    "end": 11.98,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Opere elettromeccaniche",
-    "start": 5.4,
-    "end": 9.8
+    "name": "Posa elettrodotto MT su strada pubblica 50",
+    "start": 1.61,
+    "end": 3.34,
+    "level": 0,
+    "summary": false
    },
    {
-    "name": "Posa elettrodotto AT",
-    "start": 6.9,
-    "end": 7.3
+    "name": "Approvigionamento materiale 270",
+    "start": 0.52,
+    "end": 9.8,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione viabilità, recinzioni e opere edili 120",
+    "start": 2.34,
+    "end": 6.71,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere elettromeccaniche 120",
+    "start": 5.43,
+    "end": 9.8,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa elettrodotto AT 10",
+    "start": 6.89,
+    "end": 7.34,
+    "level": 0,
+    "summary": false
    }
   ],
   "unit": "month",
-  "months": 9.8,
+  "months": 11.98,
   "source": {
    "url": "https://va.mite.gov.it/File/Documento/706414",
    "page": 2,
    "document": "Cronoprogramma",
    "excerpt": ""
+  },
+  "asse": {
+   "titolo": "Mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    }
+   ]
   },
   "duration": {
    "text": "12 mesi",
