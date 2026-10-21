@@ -167,7 +167,8 @@
     }
     const maps = safeHref(l.maps_url);
     return `<section class="sc-sec"><h3>Ubicazione</h3><dl class="sc-dl">${rows.map(r => `<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join('')}</dl>
-      ${maps ? `<a class="sc-link" href="${esc(maps)}" target="_blank" rel="noopener noreferrer">Apri in Google Maps${l.maps_precision === 'comune' ? ' (comune)' : ''}</a>` : ''}</section>`;
+      ${maps ? `<a class="sc-link" href="${esc(maps)}" target="_blank" rel="noopener noreferrer">Apri in Google Maps${l.maps_precision === 'comune' ? ' (comune)' : ''}</a>` : ''}
+      ${safeHref(l.mappa_ufficiale) ? `<a class="sc-link" href="${esc(safeHref(l.mappa_ufficiale))}" target="_blank" rel="noopener noreferrer">Mappa ufficiale del procedimento</a>` : ''}</section>`;
   }
 
   function render(card) {

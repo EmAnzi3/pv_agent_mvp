@@ -22,6 +22,10 @@ from ..schema import DocumentRef
 from .base import AdapterCapabilities, Discovery, DocumentAdapter, ProjectIdentity
 
 SILVIA = "https://www.silvia.servizirl.it/silviaweb/"
+# geometries drawn by the proponent on the SILVIA map (layers 0 points, 1 lines, 2 areas), keyed by ID_PRCDR = idProgetto
+SILVIA_GIS = "https://www.cartografia.servizirl.it/arcgish/rest/services/ambiente/silvia_read/MapServer/{layer}/query?where=ID_PRCDR%3D{pid}&outFields=OBJECTID,DESCR_GEOM&returnGeometry=true&outSR=4326&f=json"
+SILVIA_VIEWER = ("https://www.silvia.servizirl.it/silviaviewer40/?config=config_read.json&parameters="
+                 "%7B'serviceLMOperator':'include','appProcedura':%7B'id_procedura':'{pid}'%7D%7D")
 
 
 def _it_date(v: str | None) -> str | None:
@@ -74,16 +78,42 @@ class SilviaAdapter(DocumentAdapter):
                           "procedure_code": p.get("codProcedura"), "authority": (p.get("ente") or {}).get("descrEnte"),
                           "status": (p.get("macroStato") or {}).get("descrMacroStato"),
                           "filing_date": _it_date(p.get("dataDeposito")),
-                          "municipalities_citation": {"url": url, "excerpt": (title or "")[:300]}})
+                          "municipalities_citation": {"url": url, "excerpt": (title or "")[:300]},
+                          "official_map_url": SILVIA_VIEWER.format(pid=pid)})
+        geo = self._map_geometry(pid)
+        if geo:
+            ident.raw["localizzazione"] = geo
         return ident
+
+    def _map_geometry(self, pid: str) -> dict | None:
+        """Site areas (and points) the proponent drew on the SILVIA map: the exact project footprint.
+        Lines are cable routes and are not used for the site position."""
+        feats = []
+        for layer, kind in ((2, "Polygon"), (0, "MultiPoint")):
+            try:
+                data = self.get_json(SILVIA_GIS.format(layer=layer, pid=pid)) or {}
+            except Exception as exc:
+                self.log(f"[silvia-map] layer {layer}: {str(exc)[:120]}")
+                continue
+            for f in data.get("features") or []:
+                g = f.get("geometry") or {}
+                if kind == "Polygon":
+                    for ring in g.get("rings") or []:
+                        if len(ring) >= 4:
+                            feats.append({"type": "Feature", "properties": {"layer": "aree"},
+                                          "geometry": {"type": "Polygon", "coordinates": [ring]}})
+                elif g.get("points"):
+                    feats.append({"type": "Feature", "properties": {"layer": "punti"},
+                                  "geometry": {"type": "MultiPoint", "coordinates": g["points"]}})
+        return {"type": "FeatureCollection", "features": feats, "source": "SILVIA viewer"} if feats else None
 
     def discover(self, identity: ProjectIdentity) -> Discovery:
         rows = (identity.raw.get("sheet") or {}).get("listaViewArchivioDocByProgetto") or []
         docs, errors, folders = [], [], {}
         declared = 0
         for row in rows:
-            if row.get("pubblico") not in (None, "S"):
-                continue
+            # 'pubblico' = N marks the filed project documents (published in the procedure page all the same):
+            # it is not an access restriction, so every document with files is listed
             declared += int(row.get("countAllegati") or 1)
             folder = (row.get("descrTipoDeposito") or row.get("descTipoDocumento") or "documenti").strip()
             try:
