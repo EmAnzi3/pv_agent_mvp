@@ -1383,3 +1383,18 @@ class MaseRelatedProjects(unittest.TestCase):
         ad.link_related(ident)
         self.assertEqual([p["id"] for p in ident.procedures], ["19457", "1"])
         self.assertTrue(ident.procedures[1]["label"].startswith("Progetto collegato (10111)"))
+
+
+class MaseNewLayout(unittest.TestCase):
+    def test_project_field_and_comuni(self):
+        from doc_intel.adapters.mase import MaseAdapter
+        page = ('<html><head><title>Modifica - Info - VAS - VIA - AIA</title></head><body><h1>Valutazioni e Autorizzazioni '
+                'Ambientali: VAS - VIA - AIA</h1><div>Opera : Modifica al progetto denominato &amp;quot;BIDDINE&amp;quot; '
+                'Progetto : Modifica al progetto per la realizzazione di un impianto agrofotovoltaico denominato &amp;quot;BIDDINE'
+                '&amp;quot; con potenza pari a 32,24 MWp [ID 10620] Proponente : Renantis Sicilia S.r.l. Tipologia di opera : '
+                'Agrivoltaici Territori ed aree marine Regioni: Sicilia Province: Ragusa Comuni: Vittoria, Acate Aree marine: '
+                'Nessuna area marina Scegli la procedura</div></body></html>')
+        i = MaseAdapter(get_html=lambda u: "").parse_info(page, "https://va.mite.gov.it/it-IT/Oggetti/Info/12211", "12211")
+        self.assertIn('denominato "BIDDINE"', i.title)
+        self.assertEqual(i.proponent, "Renantis Sicilia S.r.l.")
+        self.assertTrue(i.municipalities)
