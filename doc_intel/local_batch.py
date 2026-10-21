@@ -18,7 +18,9 @@ import sys
 import time
 from pathlib import Path
 
-WINDOWS_TESSERACT = (r"C:\Program Files\Tesseract-OCR", r"C:\Program Files (x86)\Tesseract-OCR")
+WINDOWS_TESSERACT = (r"C:\Program Files\Tesseract-OCR", r"C:\Program Files (x86)\Tesseract-OCR",
+                     os.path.join(os.environ.get("LOCALAPPDATA", ""), "Tesseract-OCR"),        # per-user install
+                     os.path.join(os.environ.get("LOCALAPPDATA", ""), "Programs", "Tesseract-OCR"))
 
 
 def _git(*args: str, cwd: str | Path = ".", check: bool = True) -> subprocess.CompletedProcess:
@@ -41,8 +43,11 @@ def _ensure_memory(store: Path) -> None:
 def _ocr_available() -> bool:
     if shutil.which("tesseract"):
         return True
-    for d in WINDOWS_TESSERACT:
+    for d in ((os.environ.get("TESSERACT_DIR") or ""),) + WINDOWS_TESSERACT:
+        if not d:
+            continue
         if Path(d, "tesseract.exe").exists():
+            print(f"[locale] Tesseract trovato in {d}")
             os.environ["PATH"] = d + os.pathsep + os.environ.get("PATH", "")
             return True
     return False
