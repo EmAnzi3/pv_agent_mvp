@@ -42,7 +42,12 @@ def explore(url: str, render: bool = True, follow: int = 4, timeout: int = 45) -
         rep["title"] = (m.group(1).strip() if m else None)
         links = _links(html, r.url)
         rep["links"] = links[:250]
-        rep["text_head"] = re.sub(r"\s+", " ", re.sub(r"(?is)<script.*?</script>|<style.*?</style>|<[^>]+>", " ", html))[:3000]
+        rep["text_head"] = re.sub(r"\s+", " ", re.sub(r"(?is)<script.*?</script>|<style.*?</style>|<[^>]+>", " ", html))[:8000]
+        # template lines that build document links (Angular ng-href/ng-click, onclick, form actions)
+        rep["html_hits"] = [ln.strip()[:300] for ln in html.splitlines()
+                            if re.search(r"(?i)(ng-href|ng-click|onclick|href|action)=.*(download|file|allegat|document|getDoc|\.pdf)", ln)][:120]
+        if html[:1].strip() in ("{", "[") and len(html) < 600_000:
+            rep["json_body"] = html
     except Exception as exc:
         rep["error"] = str(exc)[:300]
         links = []
