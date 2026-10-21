@@ -76,6 +76,10 @@ def main(argv: list[str] | None = None) -> int:
     qs.add_argument("--memory", required=True)
     sy = sub.add_parser("sync-schede", help="download the published project cards for the dashboard (docs/schede)")
     sy.add_argument("--out", default="docs/schede")
+    fr = sub.add_parser("fill-radar", help="fill EMPTY radar fields (MW, province, region, municipalities) from the project cards")
+    fr.add_argument("--data", required=True)
+    fr.add_argument("--cards", default="docs/schede")
+    fr.add_argument("--audit", default="reports/fill_from_cards_audit.csv")
     ci = sub.add_parser("cards-index", help="write the index of the cards in a folder (published for the public page)")
     ci.add_argument("--folder", required=True)
     ci.add_argument("--out", required=True)
@@ -191,6 +195,12 @@ def main(argv: list[str] | None = None) -> int:
         res = sync_cards(a.out)
         print(f"Schede progetto: {res['downloaded']} aggiornate, {res['total']} disponibili"
               + (f", {res['errors']} non scaricate" if res["errors"] else ""))
+        return 0
+    if a.cmd == "fill-radar":
+        from .fill import fill_radar
+        res = fill_radar(a.data, a.cards, a.audit)
+        print(f"Dati completati dalle schede: {res['filled']} campi vuoti riempiti, "
+              f"{res['differences']} differenze di potenza da verificare (non applicate) - audit: {a.audit}")
         return 0
     if a.cmd == "cards-index":
         from .sync import build_index
