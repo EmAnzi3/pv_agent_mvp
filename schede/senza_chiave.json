@@ -2,8 +2,8 @@
  "schema": "pv-scheda/2.0",
  "dossier_schema": "pv-dossier/1.0",
  "project_key": null,
- "title": "Progetto di un impianto fotovoltaico, denominato \"Mineo\", della potenza di picco pari a 263 MWp, e delle relative opere di connessione in elettrodotto aereo AT (18,8 Km), da realizzarsi nei comuni di Aidone (EN), Mineo (CT) e Ramacca (CT).",
- "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10207",
+ "title": "Progetto di un impianto di agrovoltaico della potenza nominale in DC di 19,019 MW e potenza in AC di 16,128 MW denominato \"Sicilia\" in agro di Brindisi in località Specchia e delle relative opere di connessione alla Rete di Trasmissione dell'energia elettrica Nazionale (RTN)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8107",
  "source": "mase",
  "updated": "2026-10-21",
  "sintesi": [
@@ -11,12 +11,12 @@
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
-   "value": "263 MWp",
+   "value": "19,019 MW",
    "sub": null,
    "source": {
     "document": "titolo del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10207",
-    "excerpt": "263 MWp"
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8107",
+    "excerpt": "19,019 MW"
    }
   },
   {
@@ -25,305 +25,167 @@
    "value": "Agrivoltaico · strutture fisse",
    "status": "da documenti",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1371356",
-    "page": 20,
-    "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere della Commissione Tecnica PNRR-PNIEC del 10/10/2024",
-    "excerpt": "per quanto riguarda: il campo B01è adiacente su un lato all’impianto agrivoltaico ID 9579, il campo B02 è"
+    "url": "https://va.mite.gov.it/File/Documento/771660",
+    "page": 1,
+    "document": "Avviso al pubblico del 17/02/2023",
+    "excerpt": "“Realizzazione di un impianto agrovoltaico della potenza nominale in DC di 19,109"
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "16,8 ha",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 68,041 ha (1), 15,93 ha (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/729490",
+    "page": 58,
+    "document": "Relazione impianti cumulativi",
+    "excerpt": "• Area totale per la realizzazione dell’intervento, superficie pari a 16,80 ettari •"
+   }
+  },
+  {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "8,65 ha",
+   "status": "da documenti",
+   "sub": "51% dell'area",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/729503",
+    "page": 1,
+    "document": "Elaborato grafico_layout impianto",
+    "excerpt": "NUMERO CAMPI : 6 SUPERFICIE OCCUPATA DAI PANNELLI : 8,65 Ha SUPERFICIE OCCUPATA DALLA VIABILITA' INTERNA : 0,85 Ha"
    }
   },
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "28 mesi",
+   "value": "6 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (5), 13 mesi (1), 8 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (1), 8 mesi (1), 4 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/923086",
-    "page": 52,
-    "document": "Relazione Paesaggistica",
-    "excerpt": "produttrici di pannelli fotovoltaici, si può sostenere quanto segue: - Rifiuti solidi urbani prodotti da mediamente 45 persone per 28 mesi di cantiere"
+    "url": "https://va.mite.gov.it/File/Documento/771660",
+    "page": 4,
+    "document": "Avviso al pubblico del 17/02/2023",
+    "excerpt": "sono previsti al di fuori della recinzione di cantiere. La durata degli impatti potenziali è classificata come a breve termine, in quanto l’intera fase di costruzione durerà al massimo circa 6 mesi. Si sottolinea che dur"
    }
   }
  ],
  "ubicazione": {
   "regione": null,
   "provincia": null,
-  "comuni": [
-   "Aidone",
-   "Mineo",
-   "Ramacca"
-  ],
+  "comuni": [],
   "coordinate": {
-   "lat": 37.33356,
-   "lon": 14.57696,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (54 riferimenti concordi)",
+   "lat": 40.53749,
+   "lon": 17.89235,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (14 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/923086",
-    "page": 20,
-    "document": "Relazione Paesaggistica",
-    "excerpt": "Impianto Fv - Campo E (baricentro area) 37.339268°"
+    "url": "https://va.mite.gov.it/File/Documento/729468",
+    "page": 4,
+    "document": "RELAZIONE TECNICA GENERALE",
+    "excerpt": "L’impianto sarà ubicato nel comune di Brindisi BR Strada Provinciale 81 s.n.c. alle seguenti coordinate Geografiche 40°32'47.0\"N 17°54'15.9\"E. Da un punto di vista catastale l’impianto è individuabile al catasto del comu"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.33356,14.57696",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.53749,17.89235",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
-   "lat": 37.46885,
-   "lon": 14.58929,
+   "lat": 40.54675,
+   "lon": 17.90442,
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/923086",
-    "page": 20,
-    "document": "Relazione Paesaggistica",
-    "excerpt": "SSE Ragusa 37.468851°"
+    "url": "https://va.mite.gov.it/File/Documento/729472",
+    "page": 3,
+    "document": "RELAZIONE INQUINAMENTO LUMINOSO",
+    "excerpt": "dall’impianto fotovoltaico. L’impianto sarà ubicato nel comune di Brindisi BR Strada Provinciale 81 s.n.c. alle seguenti coordinate Geografiche 40°32'47.0\"N 17°54'15.9\"E. Da un punto di vista catastale l’impianto è indiv"
    },
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.46885,14.58929"
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.54675,17.90442"
   },
-  "lotti": [
-   {
-    "lotto": "Area D",
-    "lat": 37.39531,
-    "lon": 14.51223,
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.39531,14.51223",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/922985",
-     "page": 5,
-     "document": "Elaborato paesaggistico di progetto Viste a Volo di uccello e Render fotografici",
-     "excerpt": "AREA D 37°23'43.11\" N, 14°30'44.03\" E 37°22'2\u001b."
-    }
-   },
-   {
-    "lotto": "Campo A",
-    "lat": 37.39499,
-    "lon": 14.50524,
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.39499,14.50524",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/923086",
-     "page": 20,
-     "document": "Relazione Paesaggistica",
-     "excerpt": "Impianto Fv - Campo A (baricentro area) 37.394993°"
-    }
-   },
-   {
-    "lotto": "Campo B",
-    "lat": 37.38356,
-    "lon": 14.57499,
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.38356,14.57499",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1143522",
-     "page": 10,
-     "document": "Integrazioni del 31/07/2024 - ALL.C1 Relazione Campi Elettromagnetici e Rischio CEM",
-     "excerpt": "Impianto Fv - Campo B (baricentro area) 37.383563°"
-    }
-   },
-   {
-    "lotto": "Campo E",
-    "lat": 37.33927,
-    "lon": 14.58653,
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.33927,14.58653",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/923086",
-     "page": 20,
-     "document": "Relazione Paesaggistica",
-     "excerpt": "Impianto Fv - Campo E (baricentro area) 37.339268°"
-    }
-   },
-   {
-    "lotto": "Campo F",
-    "lat": 37.32785,
-    "lon": 14.56739,
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.32785,14.56739",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/923086",
-     "page": 20,
-     "document": "Relazione Paesaggistica",
-     "excerpt": "Impianto Fv - Campo F (baricentro area) 37.327853°"
-    }
-   },
-   {
-    "lotto": "Campo G",
-    "lat": 37.33363,
-    "lon": 14.65999,
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.33363,14.65999",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/923086",
-     "page": 20,
-     "document": "Relazione Paesaggistica",
-     "excerpt": "Impianto Fv - Campo G (baricentro area) 37.333628°"
-    }
-   }
-  ]
+  "lotti": []
  },
  "soggetti": [
   {
-   "name": "Ibvi 22 S.r.l.",
+   "name": "Sicilia S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente"
    ],
-   "vat": "03099630216",
+   "vat": null,
    "vat_group": false,
-   "verified": true,
-   "office": "Viale Amedeo Duca D'Aosta 76 39100 Bolzano .Bozen. Bz",
+   "verified": false,
+   "office": null,
    "contacts": [
     {
      "type": "PEC",
-     "value": "ibvi22srl@pec.it",
-     "occurrences": 270,
+     "value": "sicilia_srl@pec.it",
+     "occurrences": 55,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/922985",
+      "url": "https://va.mite.gov.it/File/Documento/849411",
       "page": 1,
-      "document": "Elaborato paesaggistico di progetto Viste a Volo di uccello e Render fotografici",
-      "excerpt": "04/08/2023 IBVI 22 srl Viale Amedeo Duca d’Aosta 76 39100 Bolzano (BZ) Ibvi22srl@pec.it"
+      "document": "Richiesta integrazioni PROVINCIA DI BRINDISI AREA 4- AMBIENTE E MOBILITÁ",
+      "excerpt": "Alla Soc. SICILIA S.r.l. Pec: sicilia_srl@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "_srl@pec.it",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/729466",
+      "page": 1,
+      "document": "Elenco elaborati progetto AT",
+      "excerpt": "Galleria Vintler 17 IT-39100 Bolzano E: sicilia _srl@pec.it T: +39 02 997 493 83"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "340919615",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/729468",
+      "page": 3,
+      "document": "RELAZIONE TECNICA GENERALE",
+      "excerpt": "Il Committente nonché proponente l’impianto fotovoltaico e la nuova sottostazione è la società SICILIA srl, con sede legale in Bolzano, Galleria Vintler 17 CAP 39100, P.IVA: 03033800214, Tel: 0039 3409196155."
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "02454408",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/729515",
+      "page": 11,
+      "document": "Computo metrico estimativo realizzazione",
+      "excerpt": "con sede legale in: Galleria Vintler, 17 – 39100 Bolzano, telefono: 02 454 408 20, PEC: sicilia_srl@pec.it"
      }
     }
    ],
    "source": {
     "document": "scheda ufficiale del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10207"
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8107"
    }
   },
   {
-   "name": "Arcadia S.r.l.s.",
-   "kind": "società",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "arcadiaprogetti@arubapec.it",
-     "occurrences": 262,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/922985",
-      "page": 1,
-      "document": "Elaborato paesaggistico di progetto Viste a Volo di uccello e Render fotografici",
-      "excerpt": "ARCADIA srls arcadiaprogetti@arubapec.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "info@arcadiaprogetti.it",
-     "occurrences": 259,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/922985",
-      "page": 1,
-      "document": "Elaborato paesaggistico di progetto Viste a Volo di uccello e Render fotografici",
-      "excerpt": "Enrico Camerata Scovazzo info@arcadiaprogetti.it"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1122767",
-    "page": 1,
-    "document": "Integrazioni del 07/08/2024 - APPENDICE PLUVIOGRAMMI RELAZIONE IDROLOGICO_IDRAULICA",
-    "excerpt": "Allegato: Progettazione:"
-   }
-  },
-  {
-   "name": "3E Ingegneria S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "3eingegneria@pec.it",
-     "occurrences": 40,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1143463",
-      "page": 1,
-      "document": "Integrazioni del 31/07/2024 - EI.10 Inquadramento elettrodotto con API su catastale",
-      "excerpt": "56121 PISA 3eingegneria@pec.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "info@3eingegneria.it",
-     "occurrences": 40,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1143463",
-      "page": 1,
-      "document": "Integrazioni del 31/07/2024 - EI.10 Inquadramento elettrodotto con API su catastale",
-      "excerpt": "www.3eingegneria.it info@3eingegneria.it"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1143463",
-    "page": 1,
-    "document": "Integrazioni del 31/07/2024 - EI.10 Inquadramento elettrodotto con API su catastale",
-    "excerpt": "Progettazione 3E Ingegneria S.r.l."
-   }
-  },
-  {
-   "name": "Dott. Domenico Boso",
+   "name": "Ing. Giorgio Vece",
    "kind": "persona",
    "roles": [
-    "Geologo"
+    "Progettista"
    ],
    "vat": null,
    "vat_group": false,
    "verified": false,
    "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "domenico.boso@gmail.com",
-     "occurrences": 3,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/923088",
-      "page": 1,
-      "document": "Relazione geologica",
-      "excerpt": "E-mail: domenico.boso@gmail.com"
-     }
-    }
-   ],
+   "contacts": [],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/923083",
-    "page": 1,
-    "document": "Carta Geologica",
-    "excerpt": "Il Geologo (Dott. Domenico Boso)"
+    "url": "https://va.mite.gov.it/File/Documento/729476",
+    "page": 4,
+    "document": "Relazione geologica",
+    "excerpt": "Il committente dei lavori è la Sicilia Srl mentre la progettazione dell’opera è stata affidata all’Ing. Giorgio Vece. Alla luce delle opere da realizzarsi sono stati affrontati gli aspetti geologico-stratigrafici e geote"
    }
   }
  ],
  "altri_soggetti": [
   {
-   "name": "IB Vogt Italia S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": "03022280212",
-   "vat_group": false,
-   "verified": true,
-   "office": "Viale Amedeo Duca D'Aosta 76 39100 Bolzano .Bozen. Bz",
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "info@ibvogt.com",
-     "occurrences": 4,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1122782",
-      "page": 1,
-      "document": "Integrazioni del 07/08/2024 - Dich. assolvimento imposta bollo",
-      "excerpt": "+49 30 397440-10 info@ibvogt.com"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
-  },
-  {
-   "name": "Dott. Mssimo Greco Stanza",
+   "name": "Dott. Ing. Pietro Gallo",
    "kind": "persona",
    "roles": [],
    "vat": null,
@@ -332,14 +194,59 @@
    "office": null,
    "contacts": [
     {
-     "type": "Telefono",
-     "value": "09355076344",
-     "occurrences": 1,
+     "type": "PEC",
+     "value": "pietro.gallo@ingpec.eu",
+     "occurrences": 2,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1298846",
-      "page": 8,
-      "document": "Parere della Regione Siciliana - Assessorato dei Beni Culturali e dell'identità siciliana - Dipartimento dei Beni Culturali e dell'identità siciliana - Servizio 3 in data 4/09/2025",
-      "excerpt": "Responsabile procedimento: __ Arch, Angelo Di Franco Neri {se non compilato il rospuiisibi è i dirigente preposto alla struttura Susa) Funzionario istruttore F.D. Dott. Mssimo Greco Stanza _15__ Piano _1°_ Tel. 0935 5076"
+      "url": "https://va.mite.gov.it/File/Documento/864670",
+      "page": 4,
+      "document": "Integrazioni del 22/06/2023 - Relazione acque meteroriche rev2",
+      "excerpt": "studio.ingegneria@hotmail.it, pec: pietro.gallo@ingpec.eu, con la presente relazione si"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "studio.ingegneria@hotmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/864671",
+      "page": 2,
+      "document": "Integrazioni del 22/06/2023 - Relazione acque nere rev1",
+      "excerpt": "studio professionale sito a Lamezia Terme in Via l. Einaudi II Traversa n. 33, mail: studio.ingegneria@hotmail.it, pec: pietro.gallo@ingpec.eu, con la presente relazione si"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0968340161",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/729522",
+      "page": 1,
+      "document": "Relazione smaltimento acque meteoriche",
+      "excerpt": "Via Luigi Einaudi Il Traversa n°33 -88046- Lamezia Terme (CZ) Tel +39 0968340161 e-mail: studio.ingegneria@hotmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Apogeo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "apogeo.altamura@iibero.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/729476",
+      "page": 54,
+      "document": "Relazione geologica",
+      "excerpt": "ALTAMURA (BA) Tel. e Fax: 080/3143324 Email: apogeo.altamura@iibero.it"
      }
     }
    ],
@@ -351,152 +258,124 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Prepazione e opere di incantieramento",
-    "start": 0.0,
-    "end": 1.01,
+    "name": "SMONTAGGIO DEI PANNELLI",
+    "start": 0.09,
+    "end": 6.07,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Pulizia sito, realizzazione strade, opere idrauliche",
-    "start": 0.99,
-    "end": 4.01,
+    "name": "SMONTAGGIO DELLE STRUTTURE DI SUPPORTO",
+    "start": 2.35,
+    "end": 7.8,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Realizzazione opere strutturali",
-    "start": 1.99,
-    "end": 4.01,
+    "name": "SUPPORTO",
+    "start": 2.09,
+    "end": 8.06,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Realizzazione cavidotti",
-    "start": 3.99,
-    "end": 8.01,
+    "name": "SFILAGGIO DELLE FONDAZIONI",
+    "start": 2.09,
+    "end": 9.06,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Istallazione cabine prefabbricate",
-    "start": 4.99,
-    "end": 9.01,
+    "name": "DEMOLIZIONE DEI MANUFATTI CABINE DI TRASFORMAZIONE",
+    "start": 2.35,
+    "end": 8.8,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Montaggi strutture metalliche pannelli",
-    "start": 6.99,
-    "end": 14.0,
+    "name": "TRASFORMAZIONE",
+    "start": 2.09,
+    "end": 9.06,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Opere a verde (mitigazione)",
-    "start": 6.99,
-    "end": 11.01,
+    "name": "DEMOLIZIONE DEL MANUFATTO CABINA DI CAMPO",
+    "start": 2.35,
+    "end": 8.8,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Montaggio pannelli",
-    "start": 10.98,
-    "end": 17.0,
+    "name": "DI CAMPO",
+    "start": 2.09,
+    "end": 9.06,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Posa cavi BT",
-    "start": 11.98,
-    "end": 18.0,
+    "name": "TRASPORTO A DISCARICA DEL MATERIALE DI RISULTA DELLE CABINE",
+    "start": 8.35,
+    "end": 8.8,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Montaggio Inverter",
-    "start": 13.98,
-    "end": 18.0,
+    "name": "DI RISULTA DELLE CABINE",
+    "start": 8.09,
+    "end": 9.06,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Istallazione Cabine di MT/BT",
-    "start": 14.98,
-    "end": 20.0,
+    "name": "SCOLLEGAMENTO ELETTRICO",
+    "start": 0.09,
+    "end": 2.07,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Posa Cavi MT",
-    "start": 17.98,
-    "end": 22.0,
+    "name": "SFILAGGIO CAVI",
+    "start": 0.09,
+    "end": 5.07,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Realizzazione sistema di monitoraggio",
-    "start": 20.98,
-    "end": 23.0,
+    "name": "OPERE LIVELLAMENTO/COMPATTAMENTO",
+    "start": 5.36,
+    "end": 8.8,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Impianto di allarme e videosorveglianaza",
-    "start": 3.99,
-    "end": 8.01,
+    "name": "TRASPORTO A DISCARICA DEL MATERIALE DI RISULTA",
+    "start": 6.36,
+    "end": 8.8,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Sistemazione, l ivellamento area e opere in cls ecc....",
-    "start": 0.99,
-    "end": 3.01,
+    "name": "DI RISULTA",
+    "start": 6.09,
+    "end": 9.06,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Montaggio attrezzature elettromeccaniche",
-    "start": 2.99,
-    "end": 6.01,
-    "level": 0,
-    "summary": false
-   },
-   {
-    "name": "Opere elettrcihe (quadri, trasformatori ecc...)",
-    "start": 4.99,
-    "end": 7.01,
-    "level": 0,
-    "summary": false
-   },
-   {
-    "name": "Elettrodotto AT aereo di collegamento Stazione di Connessione Utente",
-    "start": 15.98,
-    "end": 22.0,
-    "level": 0,
-    "summary": false
-   },
-   {
-    "name": "Prove e collaudi",
-    "start": 21.97,
-    "end": 24.0,
-    "level": 0,
-    "summary": false
-   },
-   {
-    "name": "Dissmissione e pulizia cantiere",
-    "start": 22.97,
-    "end": 24.0,
+    "name": "RIVALUTAZIONE DEI PARAMETRI E DEL COMPORTAMENTO IDRICO DEL SUOLO",
+    "start": 0.35,
+    "end": 8.8,
     "level": 0,
     "summary": false
    }
   ],
-  "unit": "month",
-  "months": 24.0,
+  "unit": "period",
+  "months": 9.06,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/923094",
-   "page": 8,
-   "document": "E.1 Disciplinare Descrittivo e Prestazionale degli Elementi Tecnici",
+   "url": "https://va.mite.gov.it/File/Documento/729487",
+   "page": 32,
+   "document": "Relazione tecnico descrittiva",
    "excerpt": ""
   },
   "asse": {
@@ -504,160 +383,81 @@
    "etichette": [
     {
      "label": "1",
-     "start": 0.0,
-     "end": 1.0
+     "start": 0,
+     "end": 1
     },
     {
      "label": "2",
-     "start": 1.0,
-     "end": 2.0
+     "start": 1,
+     "end": 2
     },
     {
      "label": "3",
-     "start": 2.0,
-     "end": 3.0
+     "start": 2,
+     "end": 3
     },
     {
      "label": "4",
-     "start": 3.0,
-     "end": 4.0
+     "start": 3,
+     "end": 4
     },
     {
      "label": "5",
-     "start": 4.0,
-     "end": 5.0
+     "start": 4,
+     "end": 5
     },
     {
      "label": "6",
-     "start": 5.0,
-     "end": 6.0
+     "start": 5,
+     "end": 6
     },
     {
      "label": "7",
-     "start": 6.0,
-     "end": 7.0
+     "start": 6,
+     "end": 7
     },
     {
      "label": "8",
-     "start": 7.0,
-     "end": 8.0
+     "start": 7,
+     "end": 8
     },
     {
      "label": "9",
-     "start": 8.0,
-     "end": 9.0
-    },
-    {
-     "label": "10",
-     "start": 9.0,
-     "end": 10.0
-    },
-    {
-     "label": "11",
-     "start": 10.0,
-     "end": 11.0
-    },
-    {
-     "label": "12",
-     "start": 11.0,
-     "end": 12.0
-    },
-    {
-     "label": "13",
-     "start": 12.0,
-     "end": 13.0
-    },
-    {
-     "label": "14",
-     "start": 13.0,
-     "end": 14.0
-    },
-    {
-     "label": "15",
-     "start": 14.0,
-     "end": 15.0
-    },
-    {
-     "label": "16",
-     "start": 15.0,
-     "end": 16.0
-    },
-    {
-     "label": "17",
-     "start": 16.0,
-     "end": 17.0
-    },
-    {
-     "label": "18",
-     "start": 17.0,
-     "end": 18.0
-    },
-    {
-     "label": "19",
-     "start": 18.0,
-     "end": 19.0
-    },
-    {
-     "label": "20",
-     "start": 19.0,
-     "end": 20.0
-    },
-    {
-     "label": "21",
-     "start": 20.0,
-     "end": 21.0
-    },
-    {
-     "label": "22",
-     "start": 21.0,
-     "end": 22.0
-    },
-    {
-     "label": "23",
-     "start": 22.0,
-     "end": 23.0
-    },
-    {
-     "label": "24",
-     "start": 23.0,
-     "end": 24.0
+     "start": 8,
+     "end": 9
     }
    ],
-   "unita": "mesi"
+   "unita": null
   },
   "duration": {
-   "text": "28 mesi",
+   "text": "6 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (5), 13 mesi (1), 8 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (1), 8 mesi (1), 4 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/923086",
-    "page": 52,
-    "document": "Relazione Paesaggistica",
-    "excerpt": "produttrici di pannelli fotovoltaici, si può sostenere quanto segue: - Rifiuti solidi urbani prodotti da mediamente 45 persone per 28 mesi di cantiere"
+    "url": "https://va.mite.gov.it/File/Documento/771660",
+    "page": 4,
+    "document": "Avviso al pubblico del 17/02/2023",
+    "excerpt": "sono previsti al di fuori della recinzione di cantiere. La durata degli impatti potenziali è classificata come a breve termine, in quanto l’intera fase di costruzione durerà al massimo circa 6 mesi. Si sottolinea che dur"
    }
   },
   "milestones": [],
   "document": {
-   "document": "L.1 Cronoprogramma dei Lavori",
-   "url": "https://va.mite.gov.it/File/Documento/923099"
+   "document": "CRONOPROGRAMMA",
+   "url": "https://va.mite.gov.it/File/Documento/729471"
   },
   "note": null,
   "altri": [
    {
-    "document": "L.1 Cronoprogramma dei Lavori",
-    "url": "https://va.mite.gov.it/File/Documento/923099"
-   },
-   {
-    "document": "L.1 Cronoprogramma dei Lavori",
-    "url": "https://va.mite.gov.it/File/Documento/922952"
+    "document": "CRONOPROGRAMMA",
+    "url": "https://va.mite.gov.it/File/Documento/729471"
    }
   ],
   "durate_fasi": [],
   "metodo": "diagramma vettoriale"
  },
  "documentazione": {
-  "documenti": 484,
-  "pagine": 4465,
+  "documenti": 107,
+  "pagine": 1448,
   "completa": true
  },
  "confronto": [
@@ -674,7 +474,7 @@
   {
    "campo": "municipalities",
    "valore_attuale": null,
-   "esito": "nuovo_verificato"
+   "esito": "non_determinabile"
   },
   {
    "campo": "province",
@@ -689,12 +489,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "559 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "91 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
