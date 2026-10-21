@@ -1,0 +1,2374 @@
+[
+ {
+  "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=3&idProgetto=20881&idProvenienza=2",
+  "status": 200,
+  "final_url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=3&idProgetto=20881&idProvenienza=2",
+  "content_type": "text/html;charset=UTF-8",
+  "title": "SILVIA",
+  "links": [],
+  "text_head": " --> SILVIA --> --> --> --> --> --> --> Torna su --> ANGULAR --> Attendere, operazione in corso... --> --> ",
+  "xhr": [
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<!DOCTYPE html>\r\n<!--[if IE 8]><html class=\"no-js lt-ie9\" lang=\"en\" ><![endif]-->\r\n<!--[if gt IE 8]><!-->\r\n<!-- <html class=\"no-js\"> -->\r\n<!--<![endif]-->\r\n<html ng-app=\"silviaweb\">\r\n  <script type=\"text/javascript\">\r\n  \r\n  var linkViewer = \"https://www.silvia.servizirl.it/silviaviewer40/\";\r\n  \r\n  </script>\r\n<head>\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<title>SILVIA</title>\r\n<!-- Bootstrap core CSS -->\r\n<!-- Custom styles for this template -->\r\n<link rel=\"stylesheet\" href=\"bootstrap/css/bootstrap.min.css\"/>\r\n<link href=\"css/bootstrap-datepicker3.min.css\" rel=\"stylesheet\">\r\n<link href=\"css/lomb_ver.css\" rel=\"stylesheet\">\r\n\r\n<link href=\"css/style.css\" rel=\"stylesheet\">\r\n<link href=\"css/ng-table.min.css\" rel=\"stylesheet\">\r\n\r\n<!--<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css\" />-->\r\n\r\n\r\n<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->\r\n<!--[if lt IE 9]>\r\n\t<script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\r\n\t<script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\r\n<![endif]-->\r\n\r\n</head>\r\n<body>\r\n\r\n<a id=\"top\"></a>\r\n<!-- HEADER & NAVBAR BLOCK -->\r\n<app-navbar></app-navbar>\r\n\r\n<div class=\"container-fluid\">\r\n  \r\n   <div class=\"row\" id=\"content_row\">\r\n   \r\n      <div class=\"col-xs-12 col-sm-4 col-md-3\">\r\n          <div id=\"col-sx\">\r\n            <app-verticalmenu></app-verticalmenu>\r\n          </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-8 col-md-9 ui-view-content\" id=\"content\">\r\n          \r\n          <div ui-view></div>\r\n          \r\n      </div>\r\n    </div>  \r\n    \r\n</div>\r\n\r\n<!-- \t<div class=\"left\"> -->\r\n<!-- \t\t<app-verticalmenu></app-verticalmenu> -->\r\n<!-- \t</div> -->\r\n<!-- \t<div class=\"right\"> -->\r\n<!-- \t\t<div ui-view></div> -->\r\n<!-- \t</div> -->\r\n\t\r\n\t<alert-message></alert-message>\r\n\t<!--\r\n\t<a id=\"torna_su\" class=\"btn btn-xs btn-default affix\" data-spy=\"affix\" data-offset-top=\"200\" data-offset-bottom=\"20\" ng-click=\"goTop();\" role=\"button\">\r\n\t\t\t<span class=\"glyphicon glyphicon-chevron-up\" aria-hidden=\"true\"></span>\r\n\t\t\t<br/>Torna su\r\n\t</a>\r\n\t-->\r\n\r\n\t<!-- FOOTER -->\r\n\r\n\t<app-footer></app-footer>\r\n\r\n<script src=\"js/jquery.min.js\"></script>\r\n<script src=\"js/angular.min.js\"></script>\r\n<script src=\"js/private/app.js\" ></script>\r\n<script src=\"js/angular-route.min.js\"></sc",
+    "body_len": 7076
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/jsp/private/components/navbar/app-navbar.tpl.jsp",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n\t<!-- Header e barra di navigazione -->\r\n<!-- \t<div class=\"navbar-fixed-top\"> -->\r\n\t\t<div id=\"barra_istituzionale\" class=\"clearfix\">\r\n\t\t\t<div class=\"logo hidden-xs\">\r\n\t\t\t\t<a href=\"http://www.regione.lombardia.it\"> <img\r\n\t\t\t\t\tsrc=\"img/logo_regione.png\" alt=\"Regione Lombardia\" />\r\n\t\t\t\t</a>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"text-center\">\r\n\t\t\t\t<div class=\"area_titolo\">\r\n\t\t\t\t\t<div class=\"sigla\" tabindex=\"0\">SILVIA</div>\r\n\t\t\t\t\t<span class=\"separatore_titolo\"> | </span>\r\n\t\t\t\t\t<div class=\"titolo_esteso\" tabindex=\"0\">Sistema Informativo Lombardo per la Valutazione di Impatto Ambientale</div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"barra_voci_cerca\">\r\n\t\t\t<ul class=\"voci_navigazione\" role=\"navigation\">\r\n\t\t\t  <li><a href=\"https://www.silvia.servizirl.it/silvia/\" target=\"_blank\">AREA RISERVATA</a></li>\r\n\t\t\t\t<li><a href=\"#link\">LINK</a></li>\r\n\t\t\t\t<li><a href=\"#contatti\">CONTATTI</a></li>\r\n\t\t\t</ul>\r\n\t\t</div>\r\n\r\n\r\n<!-- \t\t<div class=\"area_utente\" style=\"\">\r\n\t\t\t<div class=\"container-fluid\">\r\n\r\n\t\t\t\t<span class=\"nome_utente\">\r\n\t\t\t\t\t<span class=\"glyphicon glyphicon-user white\" role=\"presentation\"/>\r\n\t\t\t\t\tNome Utente:\r\n\t\t\t\t\t<span class=\"separatore_titolo\"> | </span>\r\n\t\t\t\t\tRuolo Utente:\r\n\t\t\t\t</span>\r\n\r\n\t\t\t\t<nav class=\"tools_utente hidden-xs pull-right\" role=\"menu\"></nav>\r\n\t\t\t</div>\r\n\t\t</div> -->\r\n<!-- \t\t<ol class=\"breadcrumb\">\r\n\t\t\t<li><a href=\"#\">Home</a></li>\r\n\t\t\t<li class=\"active\">Archivio</li>\r\n\t\t</ol> -->\r\n    <span ncy-breadcrumb></span>\r\n\r\n\r\n<!-- \t</div> -->\r\n\t</html>",
+    "body_len": 1525
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/jsp/private/components/verticalmenu/app-verticalmenu.tpl.jsp",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "\r\n\r\n\r\n\r\n\r\n\r\n<script src=\"js/template.js\"></script>\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n<!-- <div id=\"col-sx\"> -->\r\n\r\n\t<nav class=\"navbar navbar-default\">\r\n\t\t<div class=\"navbar-header\">\r\n\t\t\t<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\"\r\n\t\t\t\tdata-target=\"#menu_verticale-1\" aria-haspopup=\"true\">\r\n\t\t\t\t<span class=\"sr-only\">Apri/chiudi menu navigazione</span> <span\r\n\t\t\t\t\tclass=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span\r\n\t\t\t\t\tclass=\"icon-bar\"></span>\r\n\t\t\t</button>\r\n\t\t\t<span class=\"navbar-brand visible-xs\" href=\"#\">Menu</span>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"collapse navbar-collapse\" id=\"menu_verticale-1\" role=\"menu\">\r\n\r\n\t\t\t<!-- menu verticale bilivello -->\r\n\t\t\t<div class=\"menu_verticale\" id=\"MainMenu\" role=\"menu\">\r\n\t\t\t\t\t<ul class=\"list-group panel\">\r\n\t\t\t\t\t\t<li class=\"list-group-item\" role=\"menuitem\" ng-class=\"{'active': active === '/home'}\"><a ui-sref=\"home\">Home</a></li>\r\n            <li class=\"list-group-item\" data-toggle=\"collapse\" data-parent=\"#MainMenu\" ng-class=\"{'active': active === '/area-normativa'}\"><a ui-sref=\"area-normativa\">Area normativa</a></li>\r\n\t\t\t\t\t\t<li class=\"list-group-item\" href=\"#areaProcedure\" data-toggle=\"collapse\" data-parent=\"#MainMenu\" ng-class=\"{'active': active === '/area-procedure'}\">\r\n\t\t\t\t\t\t\t<a ui-sref=\"area-procedure\">Area procedure<span class=\"glyphicon glyphicon-play down pull-right\"></span></a>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<ul class=\"collapse list-group-submenu\" id=\"areaProcedure\">\r\n\t\t\t\t\t\t\t <li class=\"list-group-item dropdown-submenu list-group-submenu-1\" href=\"#agenda\" data-toggle=\"collapse\"><a>Agenda<span class=\"glyphicon glyphicon-play down pull-right\"></span></a></li>\r\n\t\t\t\t\t\t\t \t <ul class=\"collapse list-group-submenu\" id=\"agenda\">\r\n\t\t\t\t\t\t\t \t \r\n\t\t\t\t\t\t\t\t\t<li class=\"list-group-item\" data-toggle=\"collapse\" data-parent=\"#MainMenu\" ng-class=\"{'active': (active === '/agenda?idTipoEnte,idTipoProcedura') && (paramIdTipoEnte === '11') && (paramIdTipoProcedura === '3')\r\n\t\t\t\t\t\t\t\t\t   || ( (active === '/scheda-sintesi?idTipoEnte,idTipoProcedura,idProgetto,idProvenienza,annoAvvio,descSett') && (paramIdTipoEnte === '11') && (paramIdTipoProcedura === '3') && (paramIdProvenienza === '1') )}\">\r\n\t\t\t\t\t\t\t\t\t   <a ui-sref=\"agenda({ idTipoEnte:11, idTipoProcedura:3 })\">\r\n\t\t\t\t\t\t\t\t\t     V.I.A. nazionali</a></li>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<li class=\"list-group-item\" data-toggle=\"collapse\" data-parent=\"#MainMenu\" ng-class=\"{'active': (active === '/agenda?idTipoEnte,idTipoProcedura') && (paramIdTipoEnte === '7') && (paramIdTipoProcedura === '3')\r",
+    "body_len": 30072
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/js/template.js?_=1792573221460",
+    "status": 200,
+    "type": "application/javascript",
+    "method": "GET",
+    "post": "",
+    "body_head": "/* Menu verticale */\nfunction showAncestors(node) {\n\t$(\"#\".concat(node.id)).collapse('show');\n\tif (node.className.indexOf(\"menu_verticale\") == -1) showAncestors(node.parentNode);\n}\n$('.list-group-submenu').on('shown.bs.collapse',function () {\n\tvar gs = this.previousElementSibling.getElementsByClassName(\"glyphicon-play\")\n\tif (gs.length>0) gs[0].className = gs[0].className.replace(\"down\", \"up\");\n\tif ($('#col-sx').length) setEqualHeight(document.getElementById(\"col-sx\"));\n});\n$('.list-group-submenu').on('hidden.bs.collapse', function () {\n\tvar gs = this.previousElementSibling.getElementsByClassName(\"glyphicon-play\")\n\tif (gs.length>0) gs[0].className = gs[0].className.replace(\"up\", \"down\");\n\tif ($('#col-sx').length) setEqualHeight(document.getElementById(\"col-sx\"));\n});\n\n/* Accordion */\n$('.panel-collapse').on('shown.bs.collapse', function () {\n\tvar gs = this.previousElementSibling.getElementsByClassName(\"glyphicon-plus\")\n\tif (gs.length>0) gs[0].className = gs[0].className.replace(\"plus\", \"minus\");\n});\n$('.panel-collapse').on('hidden.bs.collapse', function () {\n\tvar gs = this.previousElementSibling.getElementsByClassName(\"glyphicon-minus\")\n\tif (gs.length>0) gs[0].className = gs[0].className.replace(\"minus\", \"plus\");\n});\n\n/* Debug\n\t$(this).css(\"background-color\",\"#ff0000\");\n*/\n\n/* Carousel */\nfunction replaceCaption(carousel) {\n\tvar item_active;\n\tif (carousel.getElementsByClassName(\"carousel-inner\")[0].getElementsByClassName(\"active\")[0]) {\n\t\titem_active = carousel.getElementsByClassName(\"carousel-inner\")[0].getElementsByClassName(\"active\")[0];\n\t} else {\n\t\titem_active = carousel.getElementsByClassName(\"carousel-inner\")[0].getElementsByClassName(\"item\")[0]\n\t\titem_active.className = item_active.className + \" active\";\n\t}\n\tvar captions = carousel.getElementsByClassName(\"carousel-captions\")[0];\n\tif (captions.getElementsByClassName(\"carousel-caption\")[0]) { \n\t\tcaptions.removeAttribute('aria-live');\n\t\tcaptions.removeChild(captions.getElementsByClassName(\"carousel-caption\")[0]);\n\t} \n\tif (item_active.getElementsByClassName(\"carousel-caption\")[0]) {\n\t\tcaptions.setAttribute('aria-live', 'polite');\n\t\tcaptions.appendChild(item_active.getElementsByClassName(\"carousel-caption\")[0].cloneNode(true));\n\t}\n}\nfunction switchAnimation(button, interval) {\n\tif (interval === undefined) interval = 5000; \n\tvar carousel = $(button.getAttribute('data-target'));\n\tcarousel.data(\"bs.carousel\").options.interval =  interval;\n\tvar glyph = button.getElementsByClassName('glyphicon')[0];\n\tif (butto",
+    "body_len": 21406
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/jsp/private/components/footer/app-footer.tpl.jsp",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n<a id=\"torna_su\" class=\"btn btn-xs btn-default affix\" data-spy=\"affix\" data-offset-top=\"200\" data-offset-bottom=\"20\" ng-click=\"goTop();\" role=\"button\" style=\"margin-right: 1.5%;float: right;margin-bottom: 10%;\"><span class=\"glyphicon glyphicon-chevron-up\" aria-hidden=\"true\"></span> <br/>Torna su</a>\r\n\r\n<footer id=\"footer\" class=\"footer col-md-12\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-12\">\r\n        SILVIA 2018 Sistema Informativo Lombardo per la Valutazione di Impatto Ambientale - Versione 1.2\r\n      </div>\r\n    </div>\r\n    <div class=\"row voci_navigazione\">\r\n      <div class=\"col-md-3\">\r\n        <div class=\"link-list-wrapper\">\r\n          <ul class=\"link-list\">\r\n            <li class=\"list-item\"><a href=\"#privacy\">Privacy</a></li>\r\n            <li class=\"list-item\"><a href=\"#accessibilita\">Accessibilit&agrave;</a></li>\r\n            <li class=\"list-item\"><a href=\"#cookiePolicy\">Cookie policy</a></li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-3\">\r\n        <div class=\"link-list-wrapper\">\r\n          <ul class=\"link-list\">\r\n            <li class=\"list-item\"><a href=\"#noteLegali\">Note legali</a></li>\r\n            <li class=\"list-item\"><a href=\"#contatti\">Contatti</a></li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col-md-12\" style=\"margin-top: -10px\">\r\n        <span class=\"d-inline-block\">&copy; Copyright Regione Lombardia</span>\r\n        <span class=\"d-inline-block\"> - tutti i diritti riservati</span>\r\n        <span class=\"d-inline-block\"> - C.F. 80050050154</span>\r\n        <span class=\"d-inline-block\"> - Piazza Citt&agrave; di Lombardia 1</span>\r\n        <span class=\"d-inline-block\"> - 20124 Milano</span>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</footer>",
+    "body_len": 1822
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/jsp/private/components/modale/alert-message.tpl.jsp",
+    "status": 200,
+    "type": "text/html;charset=ISO-8859-1",
+    "method": "GET",
+    "post": "",
+    "body_head": "<div class=\"modal fade\" id=\"alertMessage\" tabindex=\"-1\" role=\"dialog\">\r\n\t<div class=\"modal-dialog\">\r\n\t\t<div class=\"modal-content\" style=\"margin-top: 50%;width: 80%;margin-left: 10%;\">\r\n\t\t\t<div class=\"modal-body\" style=\"padding: 0px;\">\r\n\t\t\t\t<div class=\"alert alert-{{alertMessage.mode}}\"\r\n\t\t\t\t\tstyle=\"margin-bottom: 0px\">\r\n\t\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"modal\">\r\n\t\t\t\t\t\t<span class=\"glyphicon glyphicon-remove-circle\"></span>\r\n\t\t\t\t\t</button>\r\n\t\t\t\t\t<span class=\"glyphicon {{alertMessage.icon}}\"></span>\r\n\t\t\t\t\t<strong ng-if=\"alertMessage.boldTextTitle != '' && alertMessage.boldTextTitle != null\">{{alertMessage.boldTextTitle}}</strong>\r\n\t\t\t\t\t<br ng-if=\"alertMessage.boldTextTitle != '' && alertMessage.boldTextTitle != null\" />\r\n\t\t\t\t\t<span style=\"display:inline-block;\">{{alertMessage.textAlert}}</span>\r\n\t\t\t\t\t<div ng-bind-html=\"alertMessage.htmlMsg\"></div>\r\n\t\t\t\t\t<div style=\"text-align: right;padding: 10px;border-top: 1px solid #dddddd;margin-top: 20px;\" ng-if=\"(alertMessage.confirmFunction != null && alertMessage.confirmFunction != '')\">\r\n\t\t           \t\t<button class=\"btn btn-danger btn-xs\" data-dismiss=\"modal\">ANNULLA</button>\r\n\t\t           \t\t<button class=\"btn btn-success btn-xs\" ng-click=\"$eval(alertMessage.confirmFunction); close()\">CONFERMA</button>\r\n\t\t   \t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n",
+    "body_len": 1352
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/getAllNgcMenuVisibile.html",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "[{\"idMenu\":\"8\",\"codice\":\"menu_webinair VIA\",\"titolo\":\"Nuova Legge VIA - Seminario di illustrazione della Legge Regionale 10 luglio 2026, n. 18” - 9 ottobre 2026\",\"descrizione\":null,\"visibile\":\"S\",\"dataAgg\":\"01/10/2026\"},{\"idMenu\":\"7\",\"codice\":\"menu_manuale utente SILVIAgest\",\"titolo\":\"Manuale utente SILVIA\",\"descrizione\":\"L'area mette a disposizione il manuale utente dell'applicativo SILVIA per le Autorità Competenti e per i Proponenti\",\"visibile\":\"S\",\"dataAgg\":\"23/09/2020\"},{\"idMenu\":\"6\",\"codice\":\"menu_linee_guida_VIA\",\"titolo\":\"Linee guida VIA\",\"descrizione\":\"L'area intende fornire documenti utili alla predisposizione dello studio di impatto ambientale/studio preliminare ambientale nonché mettere a disposizione linee guida che illustrano gli strumenti utilizzati a livello internazionale per identificare, stimare e valutare gli impatti generati su alcune componenti ambientali e alcune tipologie di opere\",\"visibile\":\"S\",\"dataAgg\":\"27/11/2019\"},{\"idMenu\":\"5\",\"codice\":\"menu_metodi_verifica\",\"titolo\":\"Metodi di espletamento delle procedure di verifica di assoggettabilità a V.I.A.\",\"descrizione\":\"Per alcune tipologie progettuali Regione Lombardia ha definito dei metodi quali/quantitativi per l’espletamento delle procedure di verifica di assoggettabilità alla V.I.A. ai sensi dell’art. 19 del d.lgs. 152/2006\",\"visibile\":\"S\",\"dataAgg\":\"01/03/2023\"},{\"idMenu\":\"4\",\"codice\":\"menu_val_pre\",\"titolo\":\"Documentazione procedure valutazione preliminare ante ottobre 2021.\",\"descrizione\":\"L'area rappresenta la repository delle istanze attivate di valutazione preliminare ai sensi dell’art. 6, comma 9 del d.lgs. 152/2006 assolvendo ai relativi obblighi di pubblicazione. \",\"visibile\":\"S\",\"dataAgg\":\"17/08/2026\"},{\"idMenu\":\"3\",\"codice\":\"menu_doc_proc\",\"titolo\":\"Documentazione procedure l.r. 18/2026\",\"descrizione\":\"L'area mette a disposizione la modulistica necessaria all'avvio delle procedure di valutazione preliminare, verifica di assoggettabilità a V.I.A., fase di consultazione, fase preliminare al P.A.U.R. e P.A.U.R., ai sensi degli artt. 6, commi 9 e 9-bis, 19 ,21 ,26 - bis e 27 – bis del d.lgs. 152/2006.\",\"visibile\":\"S\",\"dataAgg\":\"17/08/2026\"},{\"idMenu\":\"2\",\"codice\":\"menu_osservazioni\",\"titolo\":\"Osservazioni del pubblico\",\"descrizione\":\"L'area mette a disposizione i fac – simili da utilizzarsi per l’invio delle osservazioni relativi a progetti sottoposti alle procedure di Verifica di assoggettabilità a VIA e VIA ai sensi degli artt. 19 e 27 – bis del d.lgs. 152/2006\",\"visib",
+    "body_len": 2674
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/jsp/private/views/areaprocedure/schedaSintesi.jsp",
+    "status": 200,
+    "type": "text/html;charset=ISO-8859-1",
+    "method": "GET",
+    "post": "",
+    "body_head": "\r\n\r\n\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<style type=\"text/css\">\r\nth {\r\n\tcolor: #000000;\r\n\tpadding-left: 15px !important;\r\n}\r\n</style>\r\n<div>\r\n\r\n\t<div class=\"col-xs-12 col-sm-8 col-md-11\" id=\"content\"\r\n\t\tng-controller=\"SchedaSintesiCtrl\">\r\n\t\t<!-- titolo pagina -->\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==11 && idTipoProcedura==3 && idProvenienza==1)\">\r\n\t\t\tAgenda\r\n\t\t\tV.I.A. nazionali\r\n\t\t\t-\r\n\t\t\tScheda di Sintesi per informazioni al pubblico\r\n\t\t</h3>\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==11 && idTipoProcedura==3 && idProvenienza==2 )\">\r\n\t\t\tV.I.A. nazionali\r\n\t\t\t-\r\n\t\t\tScheda di Sintesi per informazioni al pubblico\r\n\t\t</h3>\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==11 && idTipoProcedura==3 && idProvenienza==3 )\">\r\n\t\t\tV.I.A. nazionali\r\n\t\t\telenco studi per anno\r\n\t\t\t{{annoAvvio}} -\r\n\t\t\tScheda di Sintesi per informazioni al pubblico\r\n\t\t</h3>\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==11 && idTipoProcedura==3 && idProvenienza==4 )\">\r\n\t\t\tV.I.A. nazionali\r\n\t\t\telenco progetti per Settore \r\n\t\t\t{{descSett}} -\r\n\t\t\tScheda di Sintesi per informazioni al pubblico\r\n\t\t</h3>\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==11 && idTipoProcedura==3 && idProvenienza==5 )\">\r\n\t\t\tV.I.A. nazionali\r\n\t\t\telenco progetti per motivazione \r\n\t\t\t{{descStato}} -\r\n\t\t\tScheda di Sintesi per informazioni al pubblico\r\n\t\t</h3>\r\n\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==7 && idTipoProcedura==3 && idProvenienza==1 )\">\r\n\t\t\tAgenda\r\n\t\t\tV.I.A. regionali\r\n\t\t\t-\r\n\t\t\tScheda di Sintesi per informazioni al pubblico\r\n\t\t</h3>\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==7 && idTipoProcedura==3 && idProvenienza==2 )\">\r\n\t\t\tV.I.A. regionali\r\n\t\t\t-\r\n\t\t\tScheda di Sintesi per informazioni al pubblico\r\n\t\t</h3>\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==7 && idTipoProcedura==3 && idProvenienza==3)\">\r\n\t\t\tV.I.A. regionali\r\n\t\t\telenco studi per anno\r\n\t\t\t{{annoAvvio}} -\r\n\t\t\tScheda di Sintesi per informazioni al pubblico\r\n\t\t</h3>\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==7 && idTipoProcedura==3 && idProvenienza==4)\">\r\n\t\t\tV.I.A. regionali\r\n\t\t\telenco progetti per Settore \r\n\t\t\t{{descSett}} -\r\n\t\t\tScheda di Sintesi per informazioni al pubblico\r\n\t\t</h3>\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==7 && idTipoProcedura==3 && idProvenienza==5)\">\r\n\t\t\tV.I.A. regionali\r\n\t\t\telenco progetti per motivazione \r\n\t\t\t{{descStato}} -\r\n\t\t\tScheda di Sintesi per informazioni al pubblico\r\n\t\t</h3>\r\n\r\n\t\t<h3\r\n\t\t\tng-if=\"( idTipoEnte==6 && idTipoProcedura==3 && idProvenienza==1 )\">\r\n\t\t\tAgenda\r\n\t\t\tV.I.A. provinciali\r\n\t\t\t-\r\n",
+    "body_len": 50242
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/getAllNewsMenuVerticale.html",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "[{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2026 AGOSTO   \",\"idMenu\":\"202608\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2026 LUGLIO   \",\"idMenu\":\"202607\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2026 FEBBRAIO \",\"idMenu\":\"202602\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2024 DICEMBRE \",\"idMenu\":\"202412\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2023 FEBBRAIO \",\"idMenu\":\"202302\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2022 AGOSTO   \",\"idMenu\":\"202208\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2021 SETTEMBRE\",\"idMenu\":\"202109\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2021 FEBBRAIO \",\"idMenu\":\"202102\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2020 DICEMBRE \",\"idMenu\":\"202012\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2020 OTTOBRE  \",\"idMenu\":\"202010\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2020 SETTEMBRE\",\"idMenu\":\"202009\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2020 MARZO    \",\"idMenu\":\"202003\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2019 AGOSTO   \",\"idMenu\":\"201908\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2019 MARZO    \",\"idMenu\":\"201903\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2019 GENNAIO  \",\"idMenu\":\"201901\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2018 DICEMBRE \",\"idMenu\":\"201812\"},{\"idNews\":null,\"contenuto\":null,\"dataNews\":null,\"visible\":null,\"labelMenu\":\"2017 MAGGIO   \",\"idMenu\":\"201705\"}]",
+    "body_len": 1888
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/jsp/private/components/modale/modale-deposito-download-zip.jsp",
+    "status": 200,
+    "type": "text/html;charset=ISO-8859-1",
+    "method": "GET",
+    "post": "",
+    "body_head": "<div class=\"modal fade\" id=\"depositoDownloadZipMod\" tabindex=\"-1\" role=\"dialog\" style=\"overflow-y: auto !important; z-index: 2 !important\" data-backdrop=\"static\" data-keyboard=\"false\">\r\n  <div class=\"modal-dialog\" style=\"width: 65%\">\r\n    <div class=\"modal-content\"> \r\n      <div class=\"modal-header\" >\r\n                <span class=\"modal-title\">DOWNLOAD DOCUMENTI DEPOSITI</span>\r\n                 <button type=\"button\" class=\"close\" ng-click=\"close('Cancel')\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\r\n              </div>\r\n              <div class=\"modal-body\" style=\"overflow:auto\">\r\n                <div class=\"container-fluid\">\r\n\r\n<div class=\"col-xs-12\" id=\"content\" ng-controller=\"SchedaSintesiCtrl\">\r\n\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-xs-3\">\r\n\t\t\t\t\t\t\t<section id=foo\r\n\t\t\t\t\t\t\t\tstyle=\"border: 2px groove threedface; padding: 1em;\">\r\n\t\t\t\t\t\t\t\t<h2\r\n\t\t\t\t\t\t\t\t\tstyle=\"float: left; margin: -1.7em 0 0; padding: 0 .5em; background: #fff; font-size: 1em; font-weight: normal;\">\r\n\t\t\t\t\t\t\t\t\tSeleziona tutto</h2>\r\n\t\t\t\t\t\t\t\t<input id=\"seleziona_Tutte_Checkbox\" style=\"text-align: center;\"\r\n\t\t\t\t\t\t\t\t\ttype=\"checkbox\" ng-click=\"selezionaTutteCheckboxClick($event)\"/>\r\n\t\t\t\t\t\t\t</section>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"col-xs-9\" style=\"margin-top: 15px;\">\r\n\t\t\t\t\t\t\t<td id=\"td_download_file_originale\" style=\"float: left;vertical-align: top;width: 20%;display: block;margin-left: 20px;margin-top: 15px;\">\r\n\t\t\t\t\t    \t\t<span>Download file originale</span> <input id=\"ckb_download_file_originale\" style=\"text-align: center;\" type=\"checkbox\">\t\r\n\t    \t\t\t\t\t</td>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\r\n             \r\n             <div class=\"row\">\r\n\t\t\t\t<div class=\"col-xs-4\">\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n        \t </div>\r\n        \t \r\n        \t <div class=\"panel-group\" id=\"accordion-dark\" role=\"tablist\">\r\n             <div ng-repeat=\"(key, value) in listSchedaSintesi.listaViewArchivioDocByProgetto | groupBy: 'descrTipoDeposito'\" class=\"panel panel-default\" ng-init=\"i=$index\">\r\n            <a tabindex=\"0\" data-toggle=\"collapse\" data-parent=\"#accordion-dark\" ng-href=\"/#deposito_{{$index}}\" aria-controls=\"deposito_{{$index}}\">\r\n              <div class=\"panel-heading panel-heading-dark\" role=\"tab\">\r\n                <div>\r\n                  <div class=\"panel-title\">\r\n                    Archivio documentale - <span>{{key}}<span class=\"glyphicon glyphicon-plus pull-right\"></span></span> \r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </a",
+    "body_len": 5718
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/jsp/private/components/modale/modale-scheda-sintesi.tpl.jsp",
+    "status": 200,
+    "type": "text/html;charset=ISO-8859-1",
+    "method": "GET",
+    "post": "",
+    "body_head": "<div class=\"modal fade\" id=\"schedaSintesiMod\" tabindex=\"-1\" role=\"dialog\" style=\"z-index: 3 !important\" data-backdrop=\"static\" data-keyboard=\"false\">\n  <div class=\"modal-dialog\">\n    <div class=\"modal-content\"> \n      <div class=\"modal-header\" >\n                <span class=\"modal-title\">{{itemMod.descrTipoDeposito}}</span>\n                 <button type=\"button\" class=\"close\" ng-click=\"close('Cancel')\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\n              </div>\n              <div class=\"modal-body\">\n                <div class=\"container-fluid\" style=\"padding-left: 5px\">\n                  <div class=\"row\">\n                    <label class=\"col-xs-12\">{{itemMod.tipoDirName}}</label>\n                  </div>  \n                  <div class=\"row\">\n                    <label class=\"col-xs-4\">Tipo Documentazione:</label>\n                    <label class=\"col-xs-8\"><span ng-if=\"itemMod.tipoDoc === 'A'\">{{itemMod.tipoDoc.replace(\"A\",\"DOCUMENTAZIONE AMMINISTRATIVA\").toUpperCase()}}</span><span ng-if=\"itemMod.tipoDoc === 'T'\">{{itemMod.tipoDoc.replace(\"T\",\"DOCUMENTAZIONE TECNICA\").toUpperCase()}}</span></label>\n                  </div>\n                  <div class=\"row\">\n                    <label class=\"col-xs-4\">Documento:</label>\n                    <label class=\"col-xs-8\">{{itemMod.descTipoDocumento}} <span ng-if=\"itemMod.descrAutorizzazione\"> - {{itemMod.descrAutorizzazione}}</span> </label>\n                  </div>  \n<!--                   <div class=\"row\"> -->\n<!--                     <label class=\"col-xs-4\">Descrizione:</label> -->\n<!--                     <label class=\"col-xs-8\"><textarea disabled cols=\"40\" name=\"message\" rows=\"3\" style=\"font-size:13px;padding:5px;\">{{itemMod.titolo}} -->\n<!--                       </textarea></label> -->\n<!--                   </div>   -->\n                  <div class=\"row\">\n                    <label class=\"col-xs-4\">Estremi Documento:</label>\n                    <label class=\"col-xs-8\">{{itemMod.protocollo}}</label>\n                  </div>  \n                  <div class=\"row\">\n                    <label class=\"col-xs-4\">Data:</label>\n                    <label class=\"col-xs-8\">{{itemMod.dataDocumento}}</label>\n                  </div>    \n                 </div>\n                 <br>\n                 <table class=\"table table-hover\">\n                    <thead class=\"testoBold\">\n                      <tr>\n                       <td style=\"width:\"50%\">File</td>\n                       <td style=\"width:\"25%",
+    "body_len": 3251
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/getSchedaSintesiByIdProgetto.html?idProgetto=20881",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "{\"progetto\":{\"idProgetto\":\"20881\",\"idTipoProgetto\":null,\"idTipoProcedura\":\"3\",\"ente\":{\"idEnte\":\"10\",\"descrEnte\":\"PROVINCIA DI PAVIA\",\"idTipoEnte\":\"6\",\"siglaEnte\":null,\"isAc\":null,\"istatComune\":null,\"codProvincia\":null,\"codRegione\":null,\"isInteressabile\":null,\"isSoggetto\":null,\"idRecapito\":null,\"codResponsabile\":null,\"descrTipoEnte\":null,\"interessato\":null},\"macroStato\":{\"idMacroStato\":\"4\",\"descrMacroStato\":\"Termini sospesi\",\"siglaMacroStato\":null},\"codProcedura\":\"VIA0058-PV\",\"descrProgetto\":\"PROGETTO “CASCINA GRANDE” PER LA REALIZZAZIONE DI UN IMPIANTO AGRIVOLTAICO AVANZATO E RELATIVE OPERE DI CONNESSIONE ELETTRICA SITO NEL COMUNE DI DORNO (PV) CON POTENZA DI PICCO IN DC DI 121.696,68kWp. Il progetto è costituito dall'impianto di produzione fotovoltaica e dalle opere per la sua connessione alla Stazione Elettrica alla tensione di 380kV denominata “Pieve Albignola” fra cui cavidotto interrato 36 kV, collegamento alla rete elettrica \\\"TERNA\\\" in antenna a 36 kV, ampliamento/satellite a 36kV della Stazione Elettrica\",\"descrStudio\":null,\"noteProgetto\":null,\"dtInserimento\":null,\"dtAggiornamento\":null,\"idSottosettore\":null,\"descrSito\":null,\"idStato\":null,\"descrStato\":null,\"isViaAssistita\":null,\"isAreaProtetta\":\"N\",\"isSicZps\":\"N\",\"dataAvvio\":null,\"pubblico\":null,\"dataDeposito\":\"14/04/2026\",\"idTipoAttivazione\":null,\"isCompetenzaInterreg\":\"N\",\"isCompetenzaReg\":\"N\",\"isSussistInfr\":null,\"isEccepInsussistSogg\":null,\"isSoglie\":\"N\",\"motivazioni\":null,\"idTipoProceduraSist\":\"2\",\"idEnteSist\":null,\"codTemp\":null,\"isGeotermico\":null,\"idEnteCompetente\":null,\"isMultiprov\":null,\"isAgenda\":\"0\",\"proponenti\":null,\"siglaProc\":null,\"dataChiusura\":null,\"edited\":\"1\",\"group\":null,\"ordine\":null,\"isScadenzaOsservazioniImpostata\":\"0\",\"dataScadenzaOsservazioni\":null,\"giorniScadenzaOsservazioni\":null,\"progettoViaTerminiOsservazioniDimezzatiFlag\":true},\"listProponenti\":[{\"idReferente\":\"21089\",\"idPersona\":null,\"descrEnteAzienda\":\"Azienda: Grande Rinnovabili S.r.l.\",\"nome\":\"Massimo\",\"cognome\":\"Tosto\",\"cf\":null,\"emailUff\":null,\"telefonoUff\":null,\"fax\":null,\"idEnte\":null,\"idAzienda\":null,\"cfEnteAzienda\":null,\"idQualifica\":null,\"descrQualifica\":null,\"flagValid\":null,\"idRecapito\":null,\"recIstatComune\":null,\"recIndirizzo\":null,\"recCivico\":null,\"recCitta\":null,\"recCap\":null,\"recTelefono1\":null,\"recTelefono2\":null,\"recFax\":null,\"recEmail\":null,\"recPec\":null,\"recComune\":null,\"recCodProvincia\":null,\"recCodRegione\":null,\"recProvincia\":null,\"recSiglaProvincia\":null,\"recRegione\":null,\"dataFineValiditaSogg",
+    "body_len": 31721
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/getNgcElementoByKey.html?idTipoProcedura=3",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "{\"idElemento\":\"2\",\"fkTab\":\"2\",\"codice\":\"ele_doc_osserv_via\",\"titolo\":\"Modulo Osservazioni VIA/PAUR\",\"url\":null,\"visibile\":\"S\",\"idEdma\":\"137643444\",\"nomeFile\":\"Osservazioni_PAUR.docx\",\"formato\":\".docx\",\"dataAgg\":\"18/09/2026\",\"codiceTab\":\"doc_osservazioni\"}",
+    "body_len": 255
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/getSchedaSintesiByIdProgetto.html?idProgetto=20881",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "{\"progetto\":{\"idProgetto\":\"20881\",\"idTipoProgetto\":null,\"idTipoProcedura\":\"3\",\"ente\":{\"idEnte\":\"10\",\"descrEnte\":\"PROVINCIA DI PAVIA\",\"idTipoEnte\":\"6\",\"siglaEnte\":null,\"isAc\":null,\"istatComune\":null,\"codProvincia\":null,\"codRegione\":null,\"isInteressabile\":null,\"isSoggetto\":null,\"idRecapito\":null,\"codResponsabile\":null,\"descrTipoEnte\":null,\"interessato\":null},\"macroStato\":{\"idMacroStato\":\"4\",\"descrMacroStato\":\"Termini sospesi\",\"siglaMacroStato\":null},\"codProcedura\":\"VIA0058-PV\",\"descrProgetto\":\"PROGETTO “CASCINA GRANDE” PER LA REALIZZAZIONE DI UN IMPIANTO AGRIVOLTAICO AVANZATO E RELATIVE OPERE DI CONNESSIONE ELETTRICA SITO NEL COMUNE DI DORNO (PV) CON POTENZA DI PICCO IN DC DI 121.696,68kWp. Il progetto è costituito dall'impianto di produzione fotovoltaica e dalle opere per la sua connessione alla Stazione Elettrica alla tensione di 380kV denominata “Pieve Albignola” fra cui cavidotto interrato 36 kV, collegamento alla rete elettrica \\\"TERNA\\\" in antenna a 36 kV, ampliamento/satellite a 36kV della Stazione Elettrica\",\"descrStudio\":null,\"noteProgetto\":null,\"dtInserimento\":null,\"dtAggiornamento\":null,\"idSottosettore\":null,\"descrSito\":null,\"idStato\":null,\"descrStato\":null,\"isViaAssistita\":null,\"isAreaProtetta\":\"N\",\"isSicZps\":\"N\",\"dataAvvio\":null,\"pubblico\":null,\"dataDeposito\":\"14/04/2026\",\"idTipoAttivazione\":null,\"isCompetenzaInterreg\":\"N\",\"isCompetenzaReg\":\"N\",\"isSussistInfr\":null,\"isEccepInsussistSogg\":null,\"isSoglie\":\"N\",\"motivazioni\":null,\"idTipoProceduraSist\":\"2\",\"idEnteSist\":null,\"codTemp\":null,\"isGeotermico\":null,\"idEnteCompetente\":null,\"isMultiprov\":null,\"isAgenda\":\"0\",\"proponenti\":null,\"siglaProc\":null,\"dataChiusura\":null,\"edited\":\"1\",\"group\":null,\"ordine\":null,\"isScadenzaOsservazioniImpostata\":\"0\",\"dataScadenzaOsservazioni\":null,\"giorniScadenzaOsservazioni\":null,\"progettoViaTerminiOsservazioniDimezzatiFlag\":true},\"listProponenti\":[{\"idReferente\":\"21089\",\"idPersona\":null,\"descrEnteAzienda\":\"Azienda: Grande Rinnovabili S.r.l.\",\"nome\":\"Massimo\",\"cognome\":\"Tosto\",\"cf\":null,\"emailUff\":null,\"telefonoUff\":null,\"fax\":null,\"idEnte\":null,\"idAzienda\":null,\"cfEnteAzienda\":null,\"idQualifica\":null,\"descrQualifica\":null,\"flagValid\":null,\"idRecapito\":null,\"recIstatComune\":null,\"recIndirizzo\":null,\"recCivico\":null,\"recCitta\":null,\"recCap\":null,\"recTelefono1\":null,\"recTelefono2\":null,\"recFax\":null,\"recEmail\":null,\"recPec\":null,\"recComune\":null,\"recCodProvincia\":null,\"recCodRegione\":null,\"recProvincia\":null,\"recSiglaProvincia\":null,\"recRegione\":null,\"dataFineValiditaSogg",
+    "body_len": 31721
+   },
+   {
+    "url": "https://www.silvia.servizirl.it/silviaweb/getNgcElementoByKey.html?idTipoProcedura=3",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "{\"idElemento\":\"2\",\"fkTab\":\"2\",\"codice\":\"ele_doc_osserv_via\",\"titolo\":\"Modulo Osservazioni VIA/PAUR\",\"url\":null,\"visibile\":\"S\",\"idEdma\":\"137643444\",\"nomeFile\":\"Osservazioni_PAUR.docx\",\"formato\":\".docx\",\"dataAgg\":\"18/09/2026\",\"codiceTab\":\"doc_osservazioni\"}",
+    "body_len": 255
+   },
+   {
+    "rendered_links": [
+     [
+      "",
+      "http://www.regione.lombardia.it/"
+     ],
+     [
+      "AREA RISERVATA",
+      "https://www.silvia.servizirl.it/silvia/"
+     ],
+     [
+      "LINK",
+      "https://www.silvia.servizirl.it/silviaweb/#link"
+     ],
+     [
+      "CONTATTI",
+      "https://www.silvia.servizirl.it/silviaweb/#contatti"
+     ],
+     [
+      "Home",
+      "https://www.silvia.servizirl.it/silviaweb/#/home"
+     ],
+     [
+      "Area Procedure",
+      "https://www.silvia.servizirl.it/silviaweb/#/area-procedure"
+     ],
+     [
+      "Archivio Generale",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-generale"
+     ],
+     [
+      "\n\t\t\t\tApri/chiudi menu navigazione   \n\t\t\t",
+      ""
+     ],
+     [
+      "Home",
+      "https://www.silvia.servizirl.it/silviaweb/#/home"
+     ],
+     [
+      "Area normativa",
+      "https://www.silvia.servizirl.it/silviaweb/#/area-normativa"
+     ],
+     [
+      "Area procedure",
+      "https://www.silvia.servizirl.it/silviaweb/#/area-procedure"
+     ],
+     [
+      "\n\t\t\t\t\t\t\t\t\t     V.I.A. nazionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/agenda?idTipoEnte=11&idTipoProcedura=3"
+     ],
+     [
+      "\n\t\t\t\t\t\t\t\t\t     V.I.A. regionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/agenda?idTipoEnte=7&idTipoProcedura=3"
+     ],
+     [
+      "\n\t\t\t\t\t\t\t\t\t     V.I.A. provinciali",
+      "https://www.silvia.servizirl.it/silviaweb/#/agenda?idTipoEnte=6&idTipoProcedura=3"
+     ],
+     [
+      "\n\t\t\t\t\t\t\t\t\t     V.I.A. comunali",
+      "https://www.silvia.servizirl.it/silviaweb/#/agenda?idTipoEnte=5&idTipoProcedura=3"
+     ],
+     [
+      "\n\t\t\t\t\t\t\t\t\t     Verifiche nazionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/agenda?idTipoEnte=11&idTipoProcedura=2"
+     ],
+     [
+      "\n\t\t\t\t\t\t\t\t\t     Verifiche regionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/agenda?idTipoEnte=7&idTipoProcedura=2"
+     ],
+     [
+      "\n\t\t\t\t\t\t\t\t\t     Verifiche provinciali",
+      "https://www.silvia.servizirl.it/silviaweb/#/agenda?idTipoEnte=6&idTipoProcedura=2"
+     ],
+     [
+      "\n\t\t\t\t\t\t\t\t\t       Verifiche comunali",
+      "https://www.silvia.servizirl.it/silviaweb/#/agenda?idTipoEnte=5&idTipoProcedura=2"
+     ],
+     [
+      "Archivio generale (ricerca)",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-generale"
+     ],
+     [
+      "V.I.A. nazionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=3&idTipoEnte=11"
+     ],
+     [
+      "V.I.A. regionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=3&idTipoEnte=7"
+     ],
+     [
+      "V.I.A. provinciali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=3&idTipoEnte=6"
+     ],
+     [
+      "V.I.A. comunali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=3&idTipoEnte=5"
+     ],
+     [
+      "Verifiche nazionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=2&idTipoEnte=11"
+     ],
+     [
+      "Verifiche regionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=2&idTipoEnte=7"
+     ],
+     [
+      "Verifiche provinciali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=2&idTipoEnte=6"
+     ],
+     [
+      "Verifiche comunali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=2&idTipoEnte=5"
+     ],
+     [
+      "S.C.O. regionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=1&idTipoEnte=7"
+     ],
+     [
+      "S.C.O. provinciali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=1&idTipoEnte=6"
+     ],
+     [
+      "S.C.O. comunali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=1&idTipoEnte=5"
+     ],
+     [
+      "Fasi Preliminari PAUR regionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=15&idTipoEnte=7"
+     ],
+     [
+      "Fasi Preliminari PAUR provinciali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=15&idTipoEnte=6"
+     ],
+     [
+      "Fasi Preliminari PAUR comunali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=15&idTipoEnte=5"
+     ],
+     [
+      "Valutazioni Preliminari regionali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=5&idTipoEnte=7"
+     ],
+     [
+      "Valutazioni Preliminari provinciali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=5&idTipoEnte=6"
+     ],
+     [
+      "Valutazioni Preliminari comunali",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-procedure?idTipoProcedura=5&idTipoEnte=5"
+     ],
+     [
+      "Area procedure 2018",
+      "https://www.silvia.servizirl.it/silviaweb/#/area-procedure-2018"
+     ],
+     [
+      "Archivio generale (ricerca)",
+      "https://www.silvia.servizirl.it/silviaweb/#/archivio-generale-procedure-2018"
+     ],
+     [
+      "Area reportistica",
+      "https://www.silvia.servizirl.it/silviaweb/#/area-report-procedure-2018"
+     ],
+     [
+      "Area documentazione",
+      "https://www.silvia.servizirl.it/silviaweb/#/area-documentazione"
+     ],
+     [
+      "Nuova Legge VIA - Seminario di illustrazione della Legge Regionale 10 luglio 202",
+      "https://www.silvia.servizirl.it/silviaweb/#/areaDocumentazioneDettaglio?idMenu=8"
+     ],
+     [
+      "Manuale utente SILVIA",
+      "https://www.silvia.servizirl.it/silviaweb/#/areaDocumentazioneDettaglio?idMenu=7"
+     ],
+     [
+      "Linee guida VIA",
+      "https://www.silvia.servizirl.it/silviaweb/#/areaDocumentazioneDettaglio?idMenu=6"
+     ],
+     [
+      "Metodi di espletamento delle procedure di verifica di assoggettabilità a V.I.A.",
+      "https://www.silvia.servizirl.it/silviaweb/#/areaDocumentazioneDettaglio?idMenu=5"
+     ],
+     [
+      "Documentazione procedure valutazione preliminare ante ottobre 2021.",
+      "https://www.silvia.servizirl.it/silviaweb/#/areaDocumentazioneDettaglio?idMenu=4"
+     ],
+     [
+      "Documentazione procedure l.r. 18/2026",
+      "https://www.silvia.servizirl.it/silviaweb/#/areaDocumentazioneDettaglio?idMenu=3"
+     ],
+     [
+      "Osservazioni del pubblico",
+      "https://www.silvia.servizirl.it/silviaweb/#/areaDocumentazioneDettaglio?idMenu=2"
+     ],
+     [
+      "Repository dati di riferimento",
+      "https://www.silvia.servizirl.it/silviaweb/#/areaDocumentazioneDettaglio?idMenu=1"
+     ],
+     [
+      "Area reportistica",
+      "https://www.silvia.servizirl.it/silviaweb/#/area-report"
+     ],
+     [
+      "FAQ",
+      "https://www.silvia.servizirl.it/silviaweb/#/faq"
+     ],
+     [
+      "News",
+      "https://www.silvia.servizirl.it/silviaweb/#/news"
+     ],
+     [
+      "2026 AGOSTO   ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202608"
+     ],
+     [
+      "2026 LUGLIO   ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202607"
+     ],
+     [
+      "2026 FEBBRAIO ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202602"
+     ],
+     [
+      "2024 DICEMBRE ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202412"
+     ],
+     [
+      "2023 FEBBRAIO ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202302"
+     ],
+     [
+      "2022 AGOSTO   ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202208"
+     ],
+     [
+      "2021 SETTEMBRE",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202109"
+     ],
+     [
+      "2021 FEBBRAIO ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202102"
+     ],
+     [
+      "2020 DICEMBRE ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202012"
+     ],
+     [
+      "2020 OTTOBRE  ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202010"
+     ],
+     [
+      "2020 SETTEMBRE",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202009"
+     ],
+     [
+      "2020 MARZO    ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=202003"
+     ],
+     [
+      "2019 AGOSTO   ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=201908"
+     ],
+     [
+      "2019 MARZO    ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=201903"
+     ],
+     [
+      "2019 GENNAIO  ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=201901"
+     ],
+     [
+      "2018 DICEMBRE ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=201812"
+     ],
+     [
+      "2017 MAGGIO   ",
+      "https://www.silvia.servizirl.it/silviaweb/#/news?idMenu=201705"
+     ],
+     [
+      "Area Download",
+      "https://www.silvia.servizirl.it/silviaweb/#/area-download-file-originale"
+     ],
+     [
+      " Report",
+      "https://www.silvia.servizirl.it/silviaweb/reportProgetto.html?idProgetto=20881"
+     ],
+     [
+      " Apri mappa",
+      "https://www.silvia.servizirl.it/silviaviewer40/?config=config_read.json&parameters=%7B%27serviceLMOperator%27:%27include%27,%27appProcedura%27:%7B%27id_procedura%27:%2720881%27%7D%7D"
+     ],
+     [
+      "Download documenti",
+      "openDocumentoDepositoZipMod(listSchedaSintesi)"
+     ],
+     [
+      "Valutazioni integrate",
+      "https://www.silvia.servizirl.it/#valutazioni"
+     ],
+     [
+      "Autorizzazioni necessarie",
+      "https://www.silvia.servizirl.it/#autorizzazioni"
+     ],
+     [
+      "Proponenti del progetto",
+      "https://www.silvia.servizirl.it/#proponente"
+     ],
+     [
+      "Estensori dello studio",
+      "https://www.silvia.servizirl.it/#estensori"
+     ],
+     [
+      "Enti territoriali VIA",
+      "https://www.silvia.servizirl.it/#enti"
+     ],
+     [
+      "Quadro",
+      "https://www.silvia.servizirl.it/#quadro"
+     ],
+     [
+      "Funzionari istruttori",
+      "https://www.silvia.servizirl.it/#funzionari"
+     ],
+     [
+      "Riferimenti normativi",
+      "https://www.silvia.servizirl.it/#riferimenti"
+     ],
+     [
+      "Fasi di istruttoria e provvedimento di chiusura",
+      "https://www.silvia.servizirl.it/#fasi"
+     ],
+     [
+      "Archivio documentale - 10 BIS",
+      "https://www.silvia.servizirl.it/#_0"
+     ],
+     [
+      "Archivio documentale - OSSERVAZIONI",
+      "https://www.silvia.servizirl.it/#_1"
+     ],
+     [
+      "Archivio documentale - SEDUTA C.d.S DECISORIA ex art. 14 - ter, L.241/1990",
+      "https://www.silvia.servizirl.it/#_2"
+     ],
+     [
+      "Archivio documentale - COMPLETEZZA",
+      "https://www.silvia.servizirl.it/#_3"
+     ],
+     [
+      "Archivio documentale - VARIE",
+      "https://www.silvia.servizirl.it/#_4"
+     ],
+     [
+      "Archivio documentale - DEPOSITO ISTANZA",
+      "https://www.silvia.servizirl.it/#_5"
+     ],
+     [
+      "×",
+      "close('Cancel')"
+     ],
+     [
+      "×",
+      "close('Cancel')"
+     ],
+     [
+      "\n              \n                \n                  \n                    Archivio",
+      "https://www.silvia.servizirl.it/#deposito_0"
+     ],
+     [
+      "\n              \n                \n                  \n                    Archivio",
+      "https://www.silvia.servizirl.it/#deposito_1"
+     ],
+     [
+      "\n              \n                \n                  \n                    Archivio",
+      "https://www.silvia.servizirl.it/#deposito_2"
+     ],
+     [
+      "\n              \n                \n                  \n                    Archivio",
+      "https://www.silvia.servizirl.it/#deposito_3"
+     ],
+     [
+      "\n              \n                \n                  \n                    Archivio",
+      "https://www.silvia.servizirl.it/#deposito_4"
+     ],
+     [
+      "\n              \n                \n                  \n                    Archivio",
+      "https://www.silvia.servizirl.it/#deposito_5"
+     ],
+     [
+      "Scarica",
+      "downloadDocumentoDepositoZip(listSchedaSintesi.progetto.idProgetto)"
+     ],
+     [
+      "×",
+      "close('Cancel')"
+     ],
+     [
+      "Privacy",
+      "https://www.silvia.servizirl.it/silviaweb/#privacy"
+     ],
+     [
+      "Accessibilità",
+      "https://www.silvia.servizirl.it/silviaweb/#accessibilita"
+     ],
+     [
+      "Cookie policy",
+      "https://www.silvia.servizirl.it/silviaweb/#cookiePolicy"
+     ],
+     [
+      "Note legali",
+      "https://www.silvia.servizirl.it/silviaweb/#noteLegali"
+     ],
+     [
+      "Contatti",
+      "https://www.silvia.servizirl.it/silviaweb/#contatti"
+     ]
+    ]
+   }
+  ],
+  "followed": []
+ },
+ {
+  "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110",
+  "status": 200,
+  "final_url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110",
+  "content_type": "text/html",
+  "title": "Star-Info",
+  "links": [],
+  "text_head": " Star-Info 3.46.1 ",
+  "xhr": [
+   {
+    "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110",
+    "status": 200,
+    "type": "text/html",
+    "method": "GET",
+    "post": "",
+    "body_head": "<!doctype html>\n<html lang=\"it\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>Star-Info</title>\n  <base href=\"/star-info/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n<link rel=\"stylesheet\" href=\"styles.d08789df1e63aa9e38e5.css\"></head>\n<body>\n  <app-root></app-root>\n  <div style=\"display: none\" id=\"page_version\" aria-hidden=\"true\">3.46.1</div>\n<script src=\"runtime-es2015.17457c14264390561f33.js\" type=\"module\"></script><script src=\"runtime-es5.17457c14264390561f33.js\" nomodule defer></script><script src=\"polyfills-es5.14a81c99937184e1a3f7.js\" nomodule defer></script><script src=\"polyfills-es2015.238324195320115bd893.js\" type=\"module\"></script><script src=\"scripts.265137049a87bbcc5101.js\" defer></script><script src=\"main-es2015.91528a0d06b76eba853c.js\" type=\"module\"></script><script src=\"main-es5.91528a0d06b76eba853c.js\" nomodule defer></script></body>\n</html>\n",
+    "body_len": 897
+   },
+   {
+    "url": "https://servizi.patti.regione.toscana.it/star-info/assets/i18n/it.json",
+    "status": 200,
+    "type": "application/json",
+    "method": "GET",
+    "post": "",
+    "body_head": "{\n  \"allegati\": {\n    \"allegaFile\": \"Allegati\",\n    \"dimensione\": \"Dimensione file\",\n    \"download\": \"Download\",\n    \"idSemantico\": \"Id Semantico\",\n    \"intervento\": \"Intervento\",\n    \"modulo\": \"Modulo\",\n    \"nome\": \"Nome file\",\n    \"praticaFirmata\": \"Pratica firmata\",\n    \"quadro\": \"Quadro\",\n    \"riepilogoAllegati\": \"Riepilogo allegati\",\n    \"tipo\": \"Tipo\"\n  },\n  \"atecoModal\": {\n    \"titolo\": \"Seleziona un codice ateco\"\n  },\n  \"avvisi\": {\n    \"annulla\": \"Annulla\",\n    \"attenzione\": \"Attenzione\",\n    \"avvisoDownloadMassivo\": \"Preseguendo verrà avviato in automatico il download della documentazione. Il processo può durare qualche minuto, è possibile interrompere il download cliccando su \\\"Annulla\\\".\",\n    \"azioni\": \"Azioni\",\n    \"collegamenti\": \"Collegamenti\",\n    \"comune\": \"Comune/i\",\n    \"consultazioneAvviso\": \"Consultazione Avviso\",\n    \"dataFinePubblicazione\": \"Data Fine Pubblicazione\",\n    \"dataInizioPubblicazione\": \"Pubblicato alla Data\",\n    \"dataPubblicazione\": \"Data Pubblicazione\",\n    \"dataUltimoAggiornamento\": \"Data Ultimo Aggiornamento\",\n    \"dataValiditaFinoA\": \"Valido fino al\",\n    \"descrizione\": \"Descrizione\",\n    \"dettagli\": \"Dettagli\",\n    \"dettaglio\": {\n      \"titolo\": \"Avviso\"\n    },\n    \"documentazione\": \"Consulta documentazione\",\n    \"elencoFile\": \"Documentazione\",\n    \"erroreDownload\": \"E' stato generato il file zip con la documentazione disponibile ad eccezione dei seguenti files che sono stati scaricati singolarmente.\",\n    \"erroreDownloadDocumentazioneCompleta\": \"Per questo avviso non è disponibile il download della documentazione completa. Accedere alle singole sezioni e cliccare su \\\"Scarica la documentazione di questa sezione\\\".\",\n    \"erroreDownloadSezione\": \"Per questa sezione non è disponibile la generazione del file zip. Cliccando su \\\"Procedi\\\" verranno automaticamente scaricati i file singolarmente.\",\n    \"invioOsservazione\": \"Invio Osservazione\",\n    \"no\": \"No\",\n    \"noDocumentazione\": \"Non è presente documentazione per questo avviso pubblico\",\n    \"ok\": \"Ok\",\n    \"opera\": \"Opera\",\n    \"osservazioneInvia\": \"Invia un'osservazione\",\n    \"osservazioni\": \"Invio Osservazioni\",\n    \"procedi\": \"Procedi\",\n    \"procedimento\": \"Tipo Procedimento\",\n    \"proponente\": \"Proponente\",\n    \"scaricaDocumentazione\": \"Scarica la documentazione di questa sezione\",\n    \"scaricaDocumentazioneCompleta\": \"Scarica la documentazione completa\",\n    \"stato\": \"Stato\",\n    \"tipologiaProcedimento\": \"Tipologia Procedimento\",\n    \"titolo\": \"Avvisi Pubblici",
+    "body_len": 53556
+   },
+   {
+    "url": "https://servizi.patti.regione.toscana.it/star-info/assets/enviroments/env-specific.json",
+    "status": 200,
+    "type": "application/json",
+    "method": "GET",
+    "post": "",
+    "body_head": "{\n  \"name\": \"STARINFO\",\n  \"prefix\": \"star-info-\",\n  \"baseUrl\": \"https://servizi.patti.regione.toscana.it/star-info/\",\n  \"baseUrlRest\": \"https://api.regione.toscana.it/C01/suap-dt/v1\",\n  \"baseUrlRestApiContext\": \"\",\n  \"gestioneAccessoUrl\": \"/accesso/gestione/primoaccesso\",\n  \"profileHeader\": \"X-Profile\",\n  \"welcomePage\": \"scrivania\",\n  \"offsetExpiringRefreshToken\": 0,\n  \"tokenName\": \"Authorization\",\n  \"oauth2_clientId\": \"star\",\n  \"oauth2_scope\": \"profile rtroles\",\n  \"oauth2_responseType\": \"code\",\n  \"oauth2_redirectUrl\": \"primoaccesso\",\n  \"oauth2_authServerUrl\": \"https://accessosicuro.rete.toscana.it/auth/realms/arpa/protocol/openid-connect/auth?response_type=[RTYP]&client_id=[CLID]&code_challenge=[COCH]&code_challenge_method=S256&redirect_uri=[RURI]&nonce=&scope=profile%20rtroles\",\n  \"oauth2_tokenServerUrl\": \"./auth/realms/arpa/protocol/openid-connect/token\",\n  \"spid_idpListUrl\": \"./idp-list/spididplist\",\n  \"spid_accessUrl\": \"https://accessosicuro.rete.toscana.it/opensso/SpidAccess\",\n  \"spid_authServerUrl\": \"https://accessosicuro.rete.toscana.it/auth/realms/arpa/protocol/openid-connect/auth?response_type=[RTYP]&client_id=[CLID]&redirect_uri=[RURI]&scope=profile%20rtroles\",\n  \"spid_minRequiredAuthLevel\": 2,\n  \"error\": {\n    \"unauthorized\": \"non-autorizzato/errore\",\n    \"forbidden\": \"accesso-negato/errore\",\n    \"notFound\": \"risorsa-non-trovata/errore\",\n    \"internalServer\": \"interno/errore\"\n  },\n  \"dominiEnabledCompilation\": [\"SUE\"],\n  \"publicApi\": {\n    \"baseUrl\": \"https://servizi.toscana.it/pub-api/suap/services\",\n    \"routes\": [\n      {\"method\": \"GET\", \"path\": \"/bdr/dizionari/altri/messaggi/valid\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/dizionari/altri/comuni/provincia/*/agId\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/dizionari/altri/ateco/procedimento/*\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/dizionari/altri/schedeInformative/id/*\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/dizionari/altri/schedeInformativeInterventi/id/*\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/esercizio/categorie\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/esercizio/endoprocedimenti\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/esercizio/enti/*\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/esercizio/enti/comune/*\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/esercizio/procedimenti/*/interventi\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/progetto/cm/domini/configurazione\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/progetto/cm/domini/configurazione/star-info\"},\n      {\"method\": \"GET\", \"path\": \"/bdr/progetto/cm/sched",
+    "body_len": 3316
+   },
+   {
+    "url": "https://servizi.toscana.it/pub-api/suap/services/avvisi/eventiPubblici/110?dominio=undefined&codiceTerritorio=undefined",
+    "status": 200,
+    "type": "application/json",
+    "method": "GET",
+    "post": "",
+    "body_head": "{\"id\":110,\"contenuto\":\"{\\\"opera\\\":\\\"AUTORIZZAZIONE UNICA PER REALIZZAZIONE DI IMPIANTO AGRIVOLTAICO AVANZATO DI POTENZA PARI A 128 MWp\\\",\\n\\\"proponente\\\":\\\"REVALUE PV 1 S.R.L.\\\",\\n\\\"descrizione\\\":\\\"L'impianto Agrivoltaico ava si estenderà su una superficie di terreno a destinazione agricola insistente nei territori del comune di Sovicille (SI). Di seguito si riportano le caratteristiche principali dell’impianto: SUPERFICIE CATASTALE (ha):189,16 POTENZA NOMINALE DC (MWp):128,03;POTENZA IN IMMISSIONE AC (MWac):115,50;MODULI INSTALLATI:180.320;NUMERO INVERTER DI STRINGA:350.  I moduli fotovoltaici installati avranno potenza nominale (a STC) pari a 710 W, saranno del tipo bifacciali e installati “a terra” su strutture a inseguimento solare (tracker) con asse di rotazione Nord/Sud ed inclinazione massima di circa 55°. I moduli fotovoltaici scelti per la realizzazione dell’impianto oggetto della presente relazione sono di tipo bifacciale in grado cioè di captare la radiazione luminosa sia sul fronte che sul retro del modulo.\\\",\\n\\\"comune\\\":\\\"SOVICILLE\\\",\\n\\\"riferimentoPratica\\\":\\\"04086970045-25072025-1707\\\",\\n\\\"collegamenti\\\": [\\n{\\n\\\"titoloSezione\\\": \\\"AVVIO: avviso, documentazione iniziale, comunicazione SCA\\\",\\n\\\"posizione\\\":\\\"3\\\",\\n\\\"files\\\": [\\n{\\n\\t\\\"nome\\\": \\\"00_elenco_elaborati.pdf\\\",\\n\\t\\\"collegamento\\\": \\\"https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1355523&hash=62ab71bf8d8f34fd153bcf58ce4daa17&check=313335353532333632616237316266386438663334666431353362636635386365346461613137\\\"\\n}\\n,{\\n\\t\\\"nome\\\": \\\"0_Scheda-web_AgriVolt-Sociville_mod.pdf\\\",\\n\\t\\\"collegamento\\\": \\\"https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1357607&hash=1b27607ce566446f3d654da1cd11098&check=3133353736303731623237363037636535363634343666336436353464613163643131303938\\\"\\n}\\n,{\\n\\t\\\"nome\\\": \\\"01-Avvio_VER_agriv_SovicilleSI-rev-lg.pdf\\\",\\n\\t\\\"collegamento\\\": \\\"https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1355524&hash=151a64ed228d1b7fa3243659ae28cf&check=31333535353234313531613634656432323864316237666133323433363539616532386366\\\"\\n}\\n,{\\n\\t\\\"nome\\\": \\\"AV002GEN1P.pdf\\\",\\n\\t\\\"collegamento\\\": \\\"https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1181028&hash=2d4bd121e4875a7eef5421112945d8c3&check=313138313032383264346264313231653438373561376565663534323131313239343564386333\\\"\\n}\\n,{\\n\\t\\\"nome\\\": \\\"AV003CEM1P.pdf\\\",\\n\\t\\\"collegamento\\\": \\\"https://servizi.patti.regione.toscana.it/gea-b",
+    "body_len": 23359
+   },
+   {
+    "rendered_links": [
+     [
+      "home",
+      ""
+     ],
+     [
+      "help",
+      ""
+     ],
+     [
+      "import_contacts",
+      ""
+     ],
+     [
+      "arrow_backIndietro",
+      ""
+     ],
+     [
+      "hd-star@regione.toscana.it",
+      "mailto:hd-star@regione.toscana.it"
+     ],
+     [
+      "055 4387777",
+      "tel:055 4387777"
+     ],
+     [
+      "",
+      "tel:undefined"
+     ]
+    ]
+   }
+  ],
+  "followed": []
+ },
+ {
+  "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481",
+  "status": 200,
+  "final_url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481",
+  "content_type": "text/html; charset=UTF-8",
+  "title": "ATOS",
+  "links": [
+   {
+    "text": "",
+    "href": "https://www.arrr.it"
+   },
+   {
+    "text": "",
+    "href": "https://www.regione.toscana.it"
+   },
+   {
+    "text": "Home",
+    "href": "https://atos.arrr.it/index.php?mn=home"
+   },
+   {
+    "text": "Impianti Rifiuti",
+    "href": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481"
+   },
+   {
+    "text": "Introduzione",
+    "href": "https://atos.arrr.it/introduzione.php?mn=intro&mnin=introduzione"
+   },
+   {
+    "text": "Mappa",
+    "href": "https://atos.arrr.it/mappa.php?mn=mappa&mnin=mappaimpianti"
+   },
+   {
+    "text": "Impianti",
+    "href": "https://atos.arrr.it/impianti.php?mn=mappa&mnin=ricercaimpianti"
+   },
+   {
+    "text": "Sezione AUA",
+    "href": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481"
+   },
+   {
+    "text": "Introduzione",
+    "href": "https://atos.arrr.it/introduzione_aua.php?mn=aua&mnin=introduzione"
+   },
+   {
+    "text": "Mappa",
+    "href": "https://atos.arrr.it/mappa_aua.php?mn=aua&mnin=mappa"
+   },
+   {
+    "text": "Impianti",
+    "href": "https://atos.arrr.it/impianti_aua.php?mn=aua&mnin=impianti"
+   },
+   {
+    "text": "Sezione AIA IND.",
+    "href": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481"
+   },
+   {
+    "text": "Introduzione",
+    "href": "https://atos.arrr.it/introduzione_aia.php?mn=aia&mnin=introduzioneaia"
+   },
+   {
+    "text": "Mappa",
+    "href": "https://atos.arrr.it/mappa_aia.php?mn=aia&mnin=mappaaia"
+   },
+   {
+    "text": "Impianti",
+    "href": "https://atos.arrr.it/impianti_aia.php?mn=aia&mnin=impiantiaia"
+   },
+   {
+    "text": "Sezione Impianti FER",
+    "href": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481"
+   },
+   {
+    "text": "Mappa",
+    "href": "https://atos.arrr.it/mappa_fer.php?mn=fer&mnin=mappafer"
+   },
+   {
+    "text": "Impianti",
+    "href": "https://atos.arrr.it/impianti_fer.php?mn=fer&mnin=impiantifer"
+   },
+   {
+    "text": "Links",
+    "href": "https://atos.arrr.it/links.php?mn=links"
+   },
+   {
+    "text": "Contatti",
+    "href": "https://atos.arrr.it/contatti.php?mn=contatti"
+   },
+   {
+    "text": "Home",
+    "href": "https://atos.arrr.it/index.php"
+   },
+   {
+    "text": "Impianti Energetici",
+    "href": "https://atos.arrr.it/impianti_fer.php?mn=fer"
+   },
+   {
+    "text": "https://www.regione.toscana.it/regione/leggi-atti-e-normative/atti-regionali",
+    "href": "https://www.regione.toscana.it/regione/leggi-atti-e-normative/atti-regionali"
+   },
+   {
+    "text": "https://va.mite.gov.it/it-IT/Procedure/Provvedimenti",
+    "href": "https://va.mite.gov.it/it-IT/Procedure/Provvedimenti"
+   },
+   {
+    "text": "https://www301.regione.toscana.it/bancadati/BURTRT/",
+    "href": "https://www301.regione.toscana.it/bancadati/BURTRT/"
+   }
+  ],
+  "text_head": " ATOS Home Impianti Rifiuti Introduzione Mappa Impianti 3 --> Sezione AUA Introduzione Mappa Impianti Sezione AIA IND. Introduzione Mappa Impianti Sezione Impianti FER Introduzione --> Mappa Impianti Links Contatti Home Impianti Energetici Scheda Impianto Energetico Scheda Impianto Energetico Denominazione Impianto AGRI PADULE Denominazione Ditta REVALUE PV1 S.R.L. Comune SOVICILLE Sigla Provincia SI Attivo SI --> Autorizzazione Vigente Tipo di Autorizzazione AU. FER Tipologia Fonte AGRIVOLTAICO Stato Autorizzazione --> Potenza MW 128.03 Dati dell'ultimo Atto Numero Atto 20450 Data Atto 25/09/2025 Ente Rilasciante Regione Toscana Categoria Atto Altro (VERIFICA DI ASSOGGETTABILITà) Tipologia Atto Decreto Ultima modifica 04/06/2026 11:54:03 --> In caso di atto il cui Ente rilasciante sia Regione Toscana, per il testo originale dell'atto eseguire una ricerca, selezionando la corretta tipologia di atto, per numero e anno nella banca dati degli atti di Regione Toscana disponibile al seguente link https://www.regione.toscana.it/regione/leggi-atti-e-normative/atti-regionali . In caso di atto il cui Ente rilasciante sia il Ministero dell'Ambiente e della Sicurezza Energetica, per il testo originale dell'atto eseguire una ricerca, selezionando la corretta tipologia di provvedimento, nella banca dati dei provvedimenti del Ministero disponibile al seguente link https://va.mite.gov.it/it-IT/Procedure/Provvedimenti . In caso di PAS, per il testo originale della pubblicazione sul BURT eseguire una ricerca al link https://www301.regione.toscana.it/bancadati/BURTRT/ . --> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ",
+  "xhr": [
+   {
+    "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "<!DOCTYPE html>\r\n<html lang=\"it\">\r\n  <head>\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n\t<link rel=\"shortcut icon\" href=\"favicon.ico\">\r\n    <!-- Bootstrap CSS -->\r\n    <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\" /*integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" */ crossorigin=\"anonymous\">\r\n\r\n    <title>ATOS</title>\r\n\r\n  </head>\r\n  <body >\r\n\r\n<div class=\"container\">\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-6\"><img src=\"images/logo_atos.jpg\" alt=\"Logo ATOS\" title=\"Logo ATOS\" class=\"img-fluid\"></div>\r\n\t\t<div class=\"col-3\" align=\"right\"><a href=\"https://www.arrr.it\" title=\"Logo ARRR spa\" target=\"_blank\"><img src=\"images/logo-arrr.jpg\" width=\"155\" height=\"123\" class=\"img-fluid\" alt=\"Logo ARRR spa\" title=\"Logo ARRR spa\"></a></div>\r\n\t\t<div class=\"col-3\"><a href=\"https://www.regione.toscana.it\" target=\"_blank\"><img src=\"images/logo_regione.jpg\" width=\"155\" height=\"123\" class=\"img-fluid\"></a></div>\r\n\t</div>\r\n</div>\r\n<nav class=\"navbar sticky-top navbar-expand-lg navbar-light bg-light\">\r\n  <div class=\"container\">\r\n    \r\n    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n\t\t  <style type=\"text/css\">\r\n\t  .bg-light{\r\n         background-color:#E5E5E5 !important;\r\n      }\r\n      .navbar-light .navbar-nav .nav-link{\r\n\t  \r\n\t  text-shadow: 2px 2px 4px black;\r\n\t  color:#FFFFFF;\r\n\t  }\r\n\t  \r\n\t  .navbar-light:hover .navbar-nav:hover .nav-link:hover{\r\n\t  color:#01632F;\r\n\t  /*background-color:#F7F7F7;*/\r\n      background-color:#E5E5E5;   \r\n\t  text-shadow: none;\r\n\t  }\r\n\t  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{\r\n\t  text-shadow: none;\r\n      /*background-color:#F7F7F7;*/      \r\n\t  background-color:#E5E5E5;\r\n\t  color:#01632F;\r\n\t \r\n\t  }\r\n\t/*.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {\r\n\tcolor:#FFFFFF;\r\n\t}*/\r\n\t  \r\n\t  </style>\r\n\t  <style>\r\n* {\r\n  font-family: \"Source Sans Pro\", \"Roboto\", Arial, sans-serif;\r\n}\r\n\r\n@keyframes fadeIn {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  to {\r\n    opacity: 1;\r\n  }\r\n}\r\n.dropdown-menu.show {\r\n  -webkit-animation: fadeIn 0.3s alternate;\r\n  /* Safari 4.",
+    "body_len": 16285
+   },
+   {
+    "rendered_links": [
+     [
+      "",
+      "https://www.arrr.it/"
+     ],
+     [
+      "",
+      "https://www.regione.toscana.it/"
+     ],
+     [
+      "Home",
+      "https://atos.arrr.it/index.php?mn=home"
+     ],
+     [
+      "Impianti Rifiuti ",
+      "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481#"
+     ],
+     [
+      "Introduzione",
+      "https://atos.arrr.it/introduzione.php?mn=intro&mnin=introduzione"
+     ],
+     [
+      "Mappa",
+      "https://atos.arrr.it/mappa.php?mn=mappa&mnin=mappaimpianti"
+     ],
+     [
+      "Impianti",
+      "https://atos.arrr.it/impianti.php?mn=mappa&mnin=ricercaimpianti"
+     ],
+     [
+      "Sezione AUA ",
+      "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481#"
+     ],
+     [
+      "Introduzione",
+      "https://atos.arrr.it/introduzione_aua.php?mn=aua&mnin=introduzione"
+     ],
+     [
+      "Mappa",
+      "https://atos.arrr.it/mappa_aua.php?mn=aua&mnin=mappa"
+     ],
+     [
+      "Impianti",
+      "https://atos.arrr.it/impianti_aua.php?mn=aua&mnin=impianti"
+     ],
+     [
+      "Sezione AIA IND. ",
+      "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481#"
+     ],
+     [
+      "Introduzione",
+      "https://atos.arrr.it/introduzione_aia.php?mn=aia&mnin=introduzioneaia"
+     ],
+     [
+      "Mappa",
+      "https://atos.arrr.it/mappa_aia.php?mn=aia&mnin=mappaaia"
+     ],
+     [
+      "Impianti",
+      "https://atos.arrr.it/impianti_aia.php?mn=aia&mnin=impiantiaia"
+     ],
+     [
+      "Sezione Impianti FER ",
+      "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481#"
+     ],
+     [
+      "Mappa",
+      "https://atos.arrr.it/mappa_fer.php?mn=fer&mnin=mappafer"
+     ],
+     [
+      "Impianti",
+      "https://atos.arrr.it/impianti_fer.php?mn=fer&mnin=impiantifer"
+     ],
+     [
+      "Links",
+      "https://atos.arrr.it/links.php?mn=links"
+     ],
+     [
+      "Contatti",
+      "https://atos.arrr.it/contatti.php?mn=contatti"
+     ],
+     [
+      "Home",
+      "https://atos.arrr.it/index.php"
+     ],
+     [
+      "Impianti Energetici",
+      "https://atos.arrr.it/impianti_fer.php?mn=fer"
+     ],
+     [
+      "https://www.regione.toscana.it/regione/leggi-atti-e-normative/atti-regionali",
+      "https://www.regione.toscana.it/regione/leggi-atti-e-normative/atti-regionali"
+     ],
+     [
+      "https://va.mite.gov.it/it-IT/Procedure/Provvedimenti",
+      "https://va.mite.gov.it/it-IT/Procedure/Provvedimenti"
+     ],
+     [
+      "https://www301.regione.toscana.it/bancadati/BURTRT/",
+      "https://www301.regione.toscana.it/bancadati/BURTRT/"
+     ]
+    ]
+   }
+  ],
+  "followed": []
+ },
+ {
+  "url": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/",
+  "status": 200,
+  "final_url": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/",
+  "content_type": "text/html; charset=UTF-8",
+  "title": "AGRIVOLTAICO SORGENIA - Regione Calabria",
+  "links": [
+   {
+    "text": "Vai al contenuto principale",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#main-content"
+   },
+   {
+    "text": "Vecchio Sito",
+    "href": "https://old.regione.calabria.it"
+   },
+   {
+    "text": "1522 Numero Antiviolenza",
+    "href": "http://www.regione.calabria.it/dipartimento-organizzazione-risorse-umane/aree-tematiche/comitato-unico-di-garanzia/"
+   },
+   {
+    "text": "Contatti",
+    "href": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+   },
+   {
+    "text": "",
+    "href": "https://www.regione.calabria.it/"
+   },
+   {
+    "text": "Regione Calabria",
+    "href": "https://www.regione.calabria.it/"
+   },
+   {
+    "text": "",
+    "href": "https://www.regione.calabria.it/"
+   },
+   {
+    "text": "La Regione",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "Il Presidente",
+    "href": "https://www.regione.calabria.it/la-regione/la-giunta-regionale/il-presidente/"
+   },
+   {
+    "text": "La Giunta Regionale",
+    "href": "https://www.regione.calabria.it/la-regione/la-giunta-regionale/"
+   },
+   {
+    "text": "Il Consiglio Regionale",
+    "href": "https://www.regione.calabria.it/il-consiglio-regionale/"
+   },
+   {
+    "text": "Anagrafe Pubblica",
+    "href": "https://www.regione.calabria.it/la-regione/anagrafe-pubblica/"
+   },
+   {
+    "text": "Prevenzione della Corruzione e Trasparenza",
+    "href": "https://www.regione.calabria.it/anticorruzione-e-trasparenza/"
+   },
+   {
+    "text": "Organismo Indipendente di Valutazione",
+    "href": "http://www.regione.calabria.it/organismo-indipendente-di-valutazione/"
+   },
+   {
+    "text": "Responsabile Protezione Dati",
+    "href": "https://www.regione.calabria.it/responsabile-protezione-dati/"
+   },
+   {
+    "text": "Monitoraggio dei Tempi Procedimentali",
+    "href": "https://www.regione.calabria.it/monitoraggio-dei-tempi-procedimentali/"
+   },
+   {
+    "text": "Bollettino Ufficiale - BURC",
+    "href": "https://burc.regione.calabria.it/home.jsp"
+   },
+   {
+    "text": "Staff del Presidente",
+    "href": "https://www.regione.calabria.it/staff-del-presidente/"
+   },
+   {
+    "text": "Ufficio Stampa",
+    "href": "https://www.regione.calabria.it/ufficio-stampa/"
+   },
+   {
+    "text": "Autorità Audit",
+    "href": "https://www.regione.calabria.it/autorita-di-audit/"
+   },
+   {
+    "text": "Stazione Unica Appaltante",
+    "href": "https://www.regione.calabria.it/stazione-unica-appaltante/"
+   },
+   {
+    "text": "Avvocatura Regionale",
+    "href": "https://www.regione.calabria.it/avvocatura-regionale/"
+   },
+   {
+    "text": "Ufficio Relazioni con il Pubblico",
+    "href": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico"
+   },
+   {
+    "text": "Nucleo Regionale Valutazione e Verifica Investimenti Pubblici",
+    "href": "https://www.regione.calabria.it/nucleo-regionale-di-valutazione-e-verifica-degli-investimenti-pubblici"
+   },
+   {
+    "text": "Tutti i Dipartimenti",
+    "href": "https://www.regione.calabria.it/tutti-i-dipartimenti/"
+   },
+   {
+    "text": "Dipartimento Segretariato Generale",
+    "href": "https://www.regione.calabria.it/dipartimento-segretariato-generale/"
+   },
+   {
+    "text": "Dipartimento per la valorizzazione del Capitale Umano e l'Innovazione nel Lavoro",
+    "href": "https://www.regione.calabria.it/dipartimento-per-la-valorizzazione-del-capitale-umano-e-linnovazione-nel-lavoro-pubblico"
+   },
+   {
+    "text": "Dipartimento Bilancio, Finanze e Patrimonio",
+    "href": "https://www.regione.calabria.it/dipartimento-bilancio-finanze-e-patrimonio/"
+   },
+   {
+    "text": "Dipartimento  per la Programmazione Unitaria",
+    "href": "https://www.regione.calabria.it/dipartimento-per-la-programmazione-unitaria/"
+   },
+   {
+    "text": "Dipartimento Infrastrutture",
+    "href": "https://www.regione.calabria.it/dipartimento-infrastrutture/"
+   },
+   {
+    "text": "Dipartimento Lavoro, Imprese e Aree produttive",
+    "href": "https://www.regione.calabria.it/dipartimento-lavoro-imprese-e-aree-produttive/"
+   },
+   {
+    "text": "Dipartimento Agricoltura, Aree Interne e Politiche di Connessione Territoriale",
+    "href": "https://www.regione.calabria.it/dipartimento-agricoltura-aree-interne-e-politiche-di-connessione-territoriale"
+   },
+   {
+    "text": "Dipartimento Salute e Servizi Sanitari",
+    "href": "https://www.regione.calabria.it/dipartimento-salute-e-servizi-sanitari"
+   },
+   {
+    "text": "Dipartimento Governo del Territorio, Difesa del Suolo e Politiche per la Casa",
+    "href": "https://www.regione.calabria.it/dipartimento-governo-del-territorio-difesa-del-suolo-e-politiche-per-la-casa/"
+   },
+   {
+    "text": "Dipartimento per la Sostenibilità Ambientale",
+    "href": "https://www.regione.calabria.it/dipartimento-per-la-sostenibilita-ambientale/"
+   },
+   {
+    "text": "Dipartimento Asset Strategici, Attrazione degli Investimenti e Saperi",
+    "href": "https://www.regione.calabria.it/dipartimento-asset-strategici-attrazione-degli-investimenti-e-saperi"
+   },
+   {
+    "text": "Dipartimento per la Protezione Civile",
+    "href": "https://www.regione.calabria.it/dipartimento-per-la-protezione-civile/"
+   },
+   {
+    "text": "Politiche della Montagna, Foreste, Forestazione e Difesa del Suolo",
+    "href": "https://www.regione.calabria.it/dipartimento-politiche-della-montagna-foreste-forestazione-e-difesa-del-suolo/"
+   },
+   {
+    "text": "Dipartimento Turismo, Cultura e Identità territoriale",
+    "href": "https://www.regione.calabria.it/dipartimento-turismo-cultura-e-identita-territoriale"
+   },
+   {
+    "text": "Dipartimento per l'Inclusione sociale, la Sussidiarietà e il Welfare di Comunità",
+    "href": "https://www.regione.calabria.it/dipartimento-per-linclusione-sociale-la-sussidiarieta-e-il-welfare-di-comunita"
+   },
+   {
+    "text": "Notizie ed Eventi",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "Comunicati Stampa",
+    "href": "https://www.regione.calabria.it/news/?pr=&sort_order=0&filter_active=true&filter_department=ufficio-stampa"
+   },
+   {
+    "text": "Notizie dai Dipartimenti",
+    "href": "https://www.regione.calabria.it/news/"
+   },
+   {
+    "text": "Eventi",
+    "href": "https://www.regione.calabria.it/eventi-della-regione/"
+   },
+   {
+    "text": "Aree Tematiche",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "Attività istituzionale",
+    "href": "https://www.regione.calabria.it/attivita-istituzionale/"
+   },
+   {
+    "text": "Ambiente, agricoltura ed energia",
+    "href": "https://www.regione.calabria.it/ambiente-agricoltura-ed-energia/"
+   },
+   {
+    "text": "Cultura, Turismo ed Eventi",
+    "href": "https://www.regione.calabria.it/cultura-turismo-ed-eventi/"
+   },
+   {
+    "text": "Diritti, inclusione e tutela della persona",
+    "href": "https://www.regione.calabria.it/diritti-inclusione-e-tutela-della-persona/"
+   },
+   {
+    "text": "Infrastrutture, difesa del suolo e mobilità",
+    "href": "https://www.regione.calabria.it/infrastrutture-difesa-del-suolo-e-mobilita/"
+   },
+   {
+    "text": "Istruzione, università e alta formazione",
+    "href": "https://www.regione.calabria.it/istruzione-universita-e-alta-formazione/"
+   },
+   {
+    "text": "Lavoro e supporto alle imprese e liberi professionisti",
+    "href": "https://www.regione.calabria.it/lavoro-e-supporto-alle-imprese-e-liberi-professionisti/"
+   },
+   {
+    "text": "Protezione Civile",
+    "href": "https://www.regione.calabria.it/protezione-civile/"
+   },
+   {
+    "text": "Salute e sport",
+    "href": "https://www.regione.calabria.it/salute-e-sport/"
+   },
+   {
+    "text": "Sicurezza e legalità",
+    "href": "https://www.regione.calabria.it/sicurezza-e-legalita/"
+   },
+   {
+    "text": "Sviluppo, ricerca e innovazione digitale",
+    "href": "https://www.regione.calabria.it/sviluppo-ricerca-e-innovazione-digitale/"
+   },
+   {
+    "text": "Tributi e agevolazioni",
+    "href": "https://www.regione.calabria.it/tributi-e-agevolazioni/"
+   },
+   {
+    "text": "Statistica e pianificazione strategica",
+    "href": "https://www.regione.calabria.it/pianificazione-strategica/"
+   },
+   {
+    "text": "Portali Tematici",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "Calabria Energia - Il Portale Energia della Regione Calabria",
+    "href": "https://energia.calabriaimpresa.eu/"
+   },
+   {
+    "text": "Sportello del Consumatore",
+    "href": "https://www.sportelloconsumatoricalabria.it/"
+   },
+   {
+    "text": "Osservatorio Internazionalizzazione",
+    "href": "https://old.regione.calabria.it/website/sitiregione/osservatorio/"
+   },
+   {
+    "text": "Osservatorio Sviluppo Locale - Laboratorio dello Sviluppo Locale",
+    "href": "https://osservatoriosviluppolocale.regione.calabria.it/web/"
+   },
+   {
+    "text": "Calabria Open Data",
+    "href": "https://dati.regione.calabria.it/"
+   },
+   {
+    "text": "Calabria Straordinaria",
+    "href": "https://calabriastraordinaria.it/"
+   },
+   {
+    "text": "Azienda Zero",
+    "href": "https://old.regione.calabria.it/website/aziendazero/provvedimenti/"
+   },
+   {
+    "text": "Portale Terzo Settore",
+    "href": "https://terzosettore.regione.calabria.it/"
+   },
+   {
+    "text": "Calabria Istruzione",
+    "href": "https://istruzione.regione.calabria.it/"
+   },
+   {
+    "text": "Portale Lavoro",
+    "href": "https://lavoro.regione.calabria.it/"
+   },
+   {
+    "text": "Osservatorio Istruzione",
+    "href": "https://osservatorio.regione.calabria.it/"
+   },
+   {
+    "text": "Fondazione Calabria Film Commission",
+    "href": "https://www.calabriafilmcommission.it/"
+   },
+   {
+    "text": "Fondazione Mediterranea terina Onlus",
+    "href": "https://www.fondazioneterina.it/"
+   },
+   {
+    "text": "Fondazione Istituto Regionale per la Comunità Grecanica di Calabria",
+    "href": "https://www.fondazionegrecanica.it/"
+   },
+   {
+    "text": "Enti e Partecipate",
+    "href": "http://www.regione.calabria.it/homepage/enti-e-partecipate"
+   },
+   {
+    "text": "Servizi",
+    "href": "https://www.servizi.regione.calabria.it/"
+   },
+   {
+    "text": "Bandi, concorsi e documenti",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "Bandi e Avvisi di Gara",
+    "href": "https://www.regione.calabria.it/bandi-e-avvisi-di-gara/"
+   },
+   {
+    "text": "Bandi da altre Amministrazioni",
+    "href": "https://www.regione.calabria.it/bandi-altre-amministrazioni/"
+   },
+   {
+    "text": "Concorsi e Selezioni",
+    "href": "https://www.regione.calabria.it/concorsi-e-selezioni/"
+   },
+   {
+    "text": "Conferenze di Servizi",
+    "href": "https://www.regione.calabria.it/conferenza-dei-servizi/"
+   },
+   {
+    "text": "Procedure Espropriative",
+    "href": "http://www.regione.calabria.it/bandi-e-avvisi-di-gara/?pr=&sort_order=0&filter_department=Procedure%2BEspropriative&filter_tematic=&filter_type=rc_procedure_type_notify&filter_fund=&filter_beneficiary=0&filter_cig=&filter_date_from=&filter_date_to=&searchButton=Cerca"
+   },
+   {
+    "text": "Provvedimenti",
+    "href": "https://www.regione.calabria.it/provvedimenti-della-regione/"
+   },
+   {
+    "text": "Normative",
+    "href": "https://www.regione.calabria.it/normative-della-regione/"
+   },
+   {
+    "text": "Leggi Regionali",
+    "href": "https://www.regione.calabria.it/normative-della-regione/?sort_order=0&filter_department=&filter_type=Legge+Regionale&filter_scope=&filter_item=&filter_number=&filter_date_from=&filter_date_to=&searchButton=Cerca"
+   },
+   {
+    "text": "Regolamenti Regionali",
+    "href": "https://www.regione.calabria.it/normative-della-regione/?sort_order=0&filter_department=&filter_type=Regolamento&filter_scope=&filter_item=&filter_number=&filter_date_from=&filter_date_to=&searchButton=Cerca"
+   },
+   {
+    "text": "Notifica e pubblici proclami",
+    "href": "https://www.regione.calabria.it/notifiche-e-pubblici-proclami/"
+   },
+   {
+    "text": "Cerca",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "Home",
+    "href": "https://www.regione.calabria.it/"
+   },
+   {
+    "text": "Bandi e avvisi di gara",
+    "href": "https://www.regione.calabria.it/bandi-e-avvisi-di-gara/"
+   },
+   {
+    "text": "Stampa",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "Ambiente, Paesaggio e Qualità Urbana",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/dipartimento-territorio-e-tutela-dellambiente/"
+   },
+   {
+    "text": "Descrizione Tecnica",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-descrizionetecnica"
+   },
+   {
+    "text": "Date",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-timeline"
+   },
+   {
+    "text": "Ulteriori informazioni",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-info"
+   },
+   {
+    "text": "",
+    "href": "https://www.facebook.com/sharer.php?u=http://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "",
+    "href": "https://twitter.com/intent/tweet?text=http://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "",
+    "href": "https://www.regione.calabria.it/cdn-cgi/l/email-protection#f4808d8491d1c6c49199959d98d1c6c495909086918787d1c6c49c918691cb8781969e919780c9a691939d9b9a91d4b795989596869d95d8d4b5b3a6bda2bbb8a0b5bdb7bbd1c6c4a7bba6b3b1babdb5d2969b908dc9b5b3a6bda2bbb8a0b5bdb7bbd1c6c4a7bba6b3b1babdb5d4d9d49c808084cedbdb838"
+   },
+   {
+    "text": "Contattaci",
+    "href": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+   },
+   {
+    "text": "Descrizione Tecnica",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-descrizionetecnica"
+   },
+   {
+    "text": "Date",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-timeline"
+   },
+   {
+    "text": "Ulteriori informazioni",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-info"
+   },
+   {
+    "text": "Ufficio relazioni con il pubblico",
+    "href": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+   },
+   {
+    "text": "Amministrazione Trasparente",
+    "href": "https://trasparenza.regione.calabria.it/REGIONECALABRIA"
+   },
+   {
+    "text": "Segnala illeciti o irregolarità",
+    "href": "https://wb.regione.calabria.it/REGIONECALABRIA/Account/Login"
+   },
+   {
+    "text": "Notifiche e pubblici proclami",
+    "href": "http://www.regione.calabria.it/notifiche-e-pubblici-proclami/"
+   },
+   {
+    "text": "Dichiarazione di accessibilità",
+    "href": "http://www.regione.calabria.it/homepage/accessibilita/"
+   },
+   {
+    "text": "Note Legali e Copyright",
+    "href": "https://www.regione.calabria.it/note-legali/"
+   },
+   {
+    "text": "Privacy & Cookies",
+    "href": "https://www.regione.calabria.it/privacy-cookies/"
+   },
+   {
+    "text": "Contatti",
+    "href": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+   },
+   {
+    "text": "Mappa del Sito",
+    "href": "https://www.regione.calabria.it/mappa-del-sito/"
+   },
+   {
+    "text": "RSS News",
+    "href": "https://www.regione.calabria.it/feed/?post_type=post"
+   },
+   {
+    "text": "RSS Bandi",
+    "href": "https://www.regione.calabria.it/feed/?post_type=rc-procedure"
+   },
+   {
+    "text": "Gestisci opzioni",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "Gestisci servizi",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "Gestisci fornitori",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "Per saperne di più su questi scopi",
+    "href": "https://cookiedatabase.org/tcf/purposes/"
+   },
+   {
+    "text": "Visualizza le preferenze",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "{title}",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "{title}",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "{title}",
+    "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+   },
+   {
+    "text": "<form>",
+    "href": "https://www.regione.calabria.it/ricerca/"
+   }
+  ],
+  "text_head": " AGRIVOLTAICO SORGENIA - Regione Calabria Vai al contenuto principale Vecchio Sito 1522 Numero Antiviolenza Contatti Regione Calabria Regione Calabria Portale Istituzionale La Regione ORGANI DI GOVERNO Il Presidente La Giunta Regionale Il Consiglio Regionale Anagrafe Pubblica TRASPARENZA E PROTEZIONE DATI Prevenzione della Corruzione e Trasparenza Organismo Indipendente di Valutazione Responsabile Protezione Dati Monitoraggio dei Tempi Procedimentali BOLLETTINO UFFICIALE REGIONE CALABRIA Bollettino Ufficiale - BURC UNITÀ DI GOVERNO E SUPPORTO DEL PRESIDENTE Staff del Presidente Ufficio Stampa Autorità Audit Stazione Unica Appaltante Avvocatura Regionale Ufficio Relazioni con il Pubblico Nucleo Regionale Valutazione e Verifica Investimenti Pubblici I DIPARTIMENTI Tutti i Dipartimenti Dipartimento Segretariato Generale Dipartimento per la valorizzazione del Capitale Umano e l'Innovazione nel Lavoro Pubblico Dipartimento Bilancio, Finanze e Patrimonio Dipartimento per la Programmazione Unitaria Dipartimento Infrastrutture Dipartimento Lavoro, Imprese e Aree produttive Dipartimento Agricoltura, Aree Interne e Politiche di Connessione Territoriale Dipartimento Salute e Servizi Sanitari Dipartimento Governo del Territorio, Difesa del Suolo e Politiche per la Casa Dipartimento per la Sostenibilità Ambientale Dipartimento Asset Strategici, Attrazione degli Investimenti e Saperi Dipartimento per la Protezione Civile Politiche della Montagna, Foreste, Forestazione e Difesa del Suolo Dipartimento Turismo, Cultura e Identità territoriale Dipartimento per l'Inclusione sociale, la Sussidiarietà e il Welfare di Comunità Notizie ed Eventi NOTIZIE ED EVENTI Comunicati Stampa Notizie dai Dipartimenti Eventi Aree Tematiche AREE TEMATICHE Attività istituzionale Ambiente, agricoltura ed energia Cultura, Turismo ed Eventi Diritti, inclusione e tutela della persona Infrastrutture, difesa del suolo e mobilità Istruzione, università e alta formazione Lavoro e supporto alle imprese e liberi professionisti Protezione Civile Salute e sport Sicurezza e legalità Sviluppo, ricerca e innovazione digitale Tributi e agevolazioni Statistica e pianificazione strategica Portali Tematici PORTALI TEMATICI Calabria Energia - Il Portale Energia della Regione Calabria Sportello del Consumatore Osservatorio Internazionalizzazione Osservatorio Sviluppo Locale - Laboratorio dello Sviluppo Locale Calabria Open Data Calabria Straordinaria Azienda Zero Portale Terzo Settore Calabria Istruzione Portale Lavoro Osservatorio Istruzione FONDAZIONI Fondazione Calabria Film Commission Fondazione Mediterranea terina Onlus Fondazione Istituto Regionale per la Comunità Grecanica di Calabria ENTI E PARTECIPATE Enti e Partecipate Servizi Bandi, concorsi e documenti BANDI AVVISI E CONCORSI Bandi e Avvisi di Gara Bandi da altre Amministrazioni Concorsi e Selezioni Conferenze di Servizi Procedure Espropriative ATTI E NORMATIVE Provvedimenti Normative Leggi Regionali Regolamenti Regionali PUBBLICITÀ LEGALE No",
+  "xhr": [
+   {
+    "url": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "<!DOCTYPE html>\r\n<html lang=\"it-IT\"\r\n    xmlns=\"http://www.w3.org/1999/xhtml\"\r\n    xmlns:og=\"https://ogp.me/ns#\"\r\n    xmlns:fb=\"http://www.facebook.com/2008/fbml\">\r\n\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\r\n  <meta name='robots' content='noindex, follow' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v27.3 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<title>AGRIVOLTAICO SORGENIA - Regione Calabria</title>\n\t<meta property=\"og:locale\" content=\"it_IT\" />\n\t<meta property=\"og:type\" content=\"article\" />\n\t<meta property=\"og:title\" content=\"AGRIVOLTAICO SORGENIA - Regione Calabria\" />\n\t<meta property=\"og:description\" content=\"Provvedimento Autorizzatorio Unico Regionale (PAUR) – Pubblicazione documentazione tecnica di progetto ai sensi dell’art. 27-bis del D.Lgs. 152/2006 e ss.mm.ii. Progetto: Progetto di un impianto ...\" />\n\t<meta property=\"og:url\" content=\"https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/\" />\n\t<meta property=\"og:site_name\" content=\"Regione Calabria\" />\n\t<meta name=\"twitter:card\" content=\"summary_large_image\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.regione.calabria.it\\/bandi\\/agrivoltaico-sorgenia\\/\",\"url\":\"https:\\/\\/www.regione.calabria.it\\/bandi\\/agrivoltaico-sorgenia\\/\",\"name\":\"AGRIVOLTAICO SORGENIA - Regione Calabria\",\"isPartOf\":{\"@id\":\"http:\\/\\/www.regione.calabria.it\\/#website\"},\"datePublished\":\"2025-10-03T08:54:09+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.regione.calabria.it\\/bandi\\/agrivoltaico-sorgenia\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.regione.calabria.it\\/bandi\\/agrivoltaico-sorgenia\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.regione.calabria.it\\/bandi\\/agrivoltaico-sorgenia\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http:\\/\\/www.regione.calabria.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"AGRIVOLTAICO SORGENIA\"}]},{\"@type\":\"WebSite\",\"@id\":\"http:\\/\\/www.regione.calabria.it\\/#website\",\"url\":\"http:\\/\\/www.regione.calabria.it\\/\",\"name\":\"Regione Calabria\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"http:\\/\\/www.regione.calabria.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":tru",
+    "body_len": 150293
+   },
+   {
+    "rendered_links": [
+     [
+      "Gestisci opzioni",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#cmplz-manage-consent-container"
+     ],
+     [
+      "Gestisci servizi",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#cmplz-cookies-overview"
+     ],
+     [
+      "Gestisci fornitori",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#cmplz-tcf-wrapper"
+     ],
+     [
+      "Per saperne di più su questi scopi",
+      "https://cookiedatabase.org/tcf/purposes/"
+     ],
+     [
+      "ACCETTA",
+      ""
+     ],
+     [
+      "NEGA",
+      ""
+     ],
+     [
+      "VISUALIZZA LE PREFERENZE",
+      ""
+     ],
+     [
+      "Salva preferenze",
+      ""
+     ],
+     [
+      "Visualizza le preferenze",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#cmplz-manage-consent-container"
+     ],
+     [
+      "",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     ],
+     [
+      "{title}",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#"
+     ],
+     [
+      "{title}",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#"
+     ],
+     [
+      "Vai al contenuto principale",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#main-content"
+     ],
+     [
+      "Vecchio Sito",
+      "https://old.regione.calabria.it/"
+     ],
+     [
+      "1522 Numero Antiviolenza",
+      "http://www.regione.calabria.it/dipartimento-organizzazione-risorse-umane/aree-tematiche/comitato-unico-di-garanzia/"
+     ],
+     [
+      "Contatti",
+      "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+     ],
+     [
+      "",
+      "https://www.regione.calabria.it/"
+     ],
+     [
+      "Regione Calabria",
+      "https://www.regione.calabria.it/"
+     ],
+     [
+      "\n                \n            ",
+      "https://www.regione.calabria.it/"
+     ],
+     [
+      "La Regione",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/la-regione/la-giunta-regionale/il-presidente/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/la-regione/la-giunta-regionale/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/il-consiglio-regionale/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/la-regione/anagrafe-pubblica/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/anticorruzione-e-trasparenza/"
+     ],
+     [
+      "                                            \n                                   ",
+      "http://www.regione.calabria.it/organismo-indipendente-di-valutazione/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/responsabile-protezione-dati/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/monitoraggio-dei-tempi-procedimentali/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://burc.regione.calabria.it/home.jsp"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/staff-del-presidente/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/ufficio-stampa/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/autorita-di-audit/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/stazione-unica-appaltante/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/avvocatura-regionale/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/nucleo-regionale-di-valutazione-e-verifica-degli-investimenti-pubblici"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/tutti-i-dipartimenti/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-segretariato-generale/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-per-la-valorizzazione-del-capitale-umano-e-linnovazione-nel-lavoro-pubblico"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-bilancio-finanze-e-patrimonio/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-per-la-programmazione-unitaria/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-infrastrutture/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-lavoro-imprese-e-aree-produttive/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-agricoltura-aree-interne-e-politiche-di-connessione-territoriale"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-salute-e-servizi-sanitari"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-governo-del-territorio-difesa-del-suolo-e-politiche-per-la-casa/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-per-la-sostenibilita-ambientale/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-asset-strategici-attrazione-degli-investimenti-e-saperi"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-per-la-protezione-civile/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-politiche-della-montagna-foreste-forestazione-e-difesa-del-suolo/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-turismo-cultura-e-identita-territoriale"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/dipartimento-per-linclusione-sociale-la-sussidiarieta-e-il-welfare-di-comunita"
+     ],
+     [
+      "Notizie ed Eventi",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/news/?pr=&sort_order=0&filter_active=true&filter_department=ufficio-stampa"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/news/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/eventi-della-regione/"
+     ],
+     [
+      "Aree Tematiche",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/attivita-istituzionale/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/ambiente-agricoltura-ed-energia/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/cultura-turismo-ed-eventi/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/diritti-inclusione-e-tutela-della-persona/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/infrastrutture-difesa-del-suolo-e-mobilita/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/istruzione-universita-e-alta-formazione/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/lavoro-e-supporto-alle-imprese-e-liberi-professionisti/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/protezione-civile/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/salute-e-sport/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/sicurezza-e-legalita/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/sviluppo-ricerca-e-innovazione-digitale/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/tributi-e-agevolazioni/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/pianificazione-strategica/"
+     ],
+     [
+      "Portali Tematici",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://energia.calabriaimpresa.eu/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.sportelloconsumatoricalabria.it/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://old.regione.calabria.it/website/sitiregione/osservatorio/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://osservatoriosviluppolocale.regione.calabria.it/web/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://dati.regione.calabria.it/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://calabriastraordinaria.it/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://old.regione.calabria.it/website/aziendazero/provvedimenti/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://terzosettore.regione.calabria.it/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://istruzione.regione.calabria.it/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://lavoro.regione.calabria.it/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://osservatorio.regione.calabria.it/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.calabriafilmcommission.it/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.fondazioneterina.it/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.fondazionegrecanica.it/"
+     ],
+     [
+      "                                            \n                                   ",
+      "http://www.regione.calabria.it/homepage/enti-e-partecipate"
+     ],
+     [
+      " Servizi",
+      "https://www.servizi.regione.calabria.it/"
+     ],
+     [
+      "Bandi, concorsi e documenti",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/bandi-e-avvisi-di-gara/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/bandi-altre-amministrazioni/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/concorsi-e-selezioni/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/conferenza-dei-servizi/"
+     ],
+     [
+      "                                            \n                                   ",
+      "http://www.regione.calabria.it/bandi-e-avvisi-di-gara/?pr=&sort_order=0&filter_department=Procedure%2BEspropriative&filter_tematic=&filter_type=rc_procedure_type_notify&filter_fund=&filter_beneficiary=0&filter_cig=&filter_date_from=&filter_date_to=&searchButton=Cerca"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/provvedimenti-della-regione/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/normative-della-regione/"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/normative-della-regione/?sort_order=0&filter_department=&filter_type=Legge+Regionale&filter_scope=&filter_item=&filter_number=&filter_date_from=&filter_date_to=&searchButton=Cerca"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/normative-della-regione/?sort_order=0&filter_department=&filter_type=Regolamento&filter_scope=&filter_item=&filter_number=&filter_date_from=&filter_date_to=&searchButton=Cerca"
+     ],
+     [
+      "                                            \n                                   ",
+      "https://www.regione.calabria.it/notifiche-e-pubblici-proclami/"
+     ],
+     [
+      " Cerca",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#"
+     ],
+     [
+      "Home",
+      "https://www.regione.calabria.it/"
+     ],
+     [
+      "Bandi e avvisi di gara",
+      "https://www.regione.calabria.it/bandi-e-avvisi-di-gara/"
+     ],
+     [
+      "Stampa",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#"
+     ],
+     [
+      "Ambiente, Paesaggio e Qualità Urbana",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/dipartimento-territorio-e-tutela-dellambiente/"
+     ],
+     [
+      "Descrizione Tecnica",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-descrizionetecnica"
+     ],
+     [
+      "Date",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-timeline"
+     ],
+     [
+      "Ulteriori informazioni",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-info"
+     ],
+     [
+      " ",
+      "https://www.facebook.com/sharer.php?u=http://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     ],
+     [
+      " ",
+      "https://twitter.com/intent/tweet?text=http://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     ],
+     [
+      "",
+      "mailto:type%20email%20address%20here?subject=Regione%20Calabria,%20AGRIVOLTAICO%20SORGENIA&body=AGRIVOLTAICO%20SORGENIA%20-%20http://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     ],
+     [
+      "Contattaci",
+      "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+     ],
+     [
+      "\n                        Descrizione Tecnica\n                        ",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-descrizionetecnica"
+     ],
+     [
+      "\n                        Date\n                        ",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-timeline"
+     ],
+     [
+      "\n                        Ulteriori informazioni\n                        ",
+      "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-info"
+     ],
+     [
+      "Ufficio relazioni con il pubblico",
+      "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+     ],
+     [
+      "Amministrazione Trasparente",
+      "https://trasparenza.regione.calabria.it/REGIONECALABRIA"
+     ],
+     [
+      "Segnala illeciti o irregolarità",
+      "https://wb.regione.calabria.it/REGIONECALABRIA/Account/Login"
+     ],
+     [
+      "Notifiche e pubblici proclami",
+      "http://www.regione.calabria.it/notifiche-e-pubblici-proclami/"
+     ],
+     [
+      "Dichiarazione di accessibilità",
+      "http://www.regione.calabria.it/homepage/accessibilita/"
+     ],
+     [
+      "Note Legali e Copyright",
+      "https://www.regione.calabria.it/note-legali/"
+     ],
+     [
+      "Privacy & Cookies",
+      "https://www.regione.calabria.it/privacy-cookies/"
+     ],
+     [
+      "Contatti",
+      "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+     ],
+     [
+      "Mappa del Sito",
+      "https://www.regione.calabria.it/mappa-del-sito/"
+     ],
+     [
+      "RSS News",
+      "https://www.regione.calabria.it/feed/?post_type=post"
+     ],
+     [
+      "RSS Bandi",
+      "https://www.regione.calabria.it/feed/?post_type=rc-procedure"
+     ],
+     [
+      "Gestisci consenso",
+      ""
+     ],
+     [
+      "\n\t\t\t\t\t×\n\t\t\t\t",
+      ""
+     ]
+    ]
+   }
+  ],
+  "followed": [
+   {
+    "from_text": "Bandi, concorsi e documenti",
+    "url": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "links": [
+     {
+      "text": "Vai al contenuto principale",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#main-content"
+     },
+     {
+      "text": "Vecchio Sito",
+      "href": "https://old.regione.calabria.it"
+     },
+     {
+      "text": "1522 Numero Antiviolenza",
+      "href": "http://www.regione.calabria.it/dipartimento-organizzazione-risorse-umane/aree-tematiche/comitato-unico-di-garanzia/"
+     },
+     {
+      "text": "Contatti",
+      "href": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+     },
+     {
+      "text": "",
+      "href": "https://www.regione.calabria.it/"
+     },
+     {
+      "text": "Regione Calabria",
+      "href": "https://www.regione.calabria.it/"
+     },
+     {
+      "text": "",
+      "href": "https://www.regione.calabria.it/"
+     },
+     {
+      "text": "La Regione",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "Il Presidente",
+      "href": "https://www.regione.calabria.it/la-regione/la-giunta-regionale/il-presidente/"
+     },
+     {
+      "text": "La Giunta Regionale",
+      "href": "https://www.regione.calabria.it/la-regione/la-giunta-regionale/"
+     },
+     {
+      "text": "Il Consiglio Regionale",
+      "href": "https://www.regione.calabria.it/il-consiglio-regionale/"
+     },
+     {
+      "text": "Anagrafe Pubblica",
+      "href": "https://www.regione.calabria.it/la-regione/anagrafe-pubblica/"
+     },
+     {
+      "text": "Prevenzione della Corruzione e Trasparenza",
+      "href": "https://www.regione.calabria.it/anticorruzione-e-trasparenza/"
+     },
+     {
+      "text": "Organismo Indipendente di Valutazione",
+      "href": "http://www.regione.calabria.it/organismo-indipendente-di-valutazione/"
+     },
+     {
+      "text": "Responsabile Protezione Dati",
+      "href": "https://www.regione.calabria.it/responsabile-protezione-dati/"
+     },
+     {
+      "text": "Monitoraggio dei Tempi Procedimentali",
+      "href": "https://www.regione.calabria.it/monitoraggio-dei-tempi-procedimentali/"
+     },
+     {
+      "text": "Bollettino Ufficiale - BURC",
+      "href": "https://burc.regione.calabria.it/home.jsp"
+     },
+     {
+      "text": "Staff del Presidente",
+      "href": "https://www.regione.calabria.it/staff-del-presidente/"
+     },
+     {
+      "text": "Ufficio Stampa",
+      "href": "https://www.regione.calabria.it/ufficio-stampa/"
+     },
+     {
+      "text": "Autorità Audit",
+      "href": "https://www.regione.calabria.it/autorita-di-audit/"
+     },
+     {
+      "text": "Stazione Unica Appaltante",
+      "href": "https://www.regione.calabria.it/stazione-unica-appaltante/"
+     },
+     {
+      "text": "Avvocatura Regionale",
+      "href": "https://www.regione.calabria.it/avvocatura-regionale/"
+     },
+     {
+      "text": "Ufficio Relazioni con il Pubblico",
+      "href": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico"
+     },
+     {
+      "text": "Nucleo Regionale Valutazione e Verifica Investimenti Pubblici",
+      "href": "https://www.regione.calabria.it/nucleo-regionale-di-valutazione-e-verifica-degli-investimenti-pubblici"
+     },
+     {
+      "text": "Tutti i Dipartimenti",
+      "href": "https://www.regione.calabria.it/tutti-i-dipartimenti/"
+     },
+     {
+      "text": "Dipartimento Segretariato Generale",
+      "href": "https://www.regione.calabria.it/dipartimento-segretariato-generale/"
+     },
+     {
+      "text": "Dipartimento per la valorizzazione del Capitale Umano e l'Innovazione nel Lavoro",
+      "href": "https://www.regione.calabria.it/dipartimento-per-la-valorizzazione-del-capitale-umano-e-linnovazione-nel-lavoro-pubblico"
+     },
+     {
+      "text": "Dipartimento Bilancio, Finanze e Patrimonio",
+      "href": "https://www.regione.calabria.it/dipartimento-bilancio-finanze-e-patrimonio/"
+     },
+     {
+      "text": "Dipartimento  per la Programmazione Unitaria",
+      "href": "https://www.regione.calabria.it/dipartimento-per-la-programmazione-unitaria/"
+     },
+     {
+      "text": "Dipartimento Infrastrutture",
+      "href": "https://www.regione.calabria.it/dipartimento-infrastrutture/"
+     },
+     {
+      "text": "Dipartimento Lavoro, Imprese e Aree produttive",
+      "href": "https://www.regione.calabria.it/dipartimento-lavoro-imprese-e-aree-produttive/"
+     },
+     {
+      "text": "Dipartimento Agricoltura, Aree Interne e Politiche di Connessione Territoriale",
+      "href": "https://www.regione.calabria.it/dipartimento-agricoltura-aree-interne-e-politiche-di-connessione-territoriale"
+     },
+     {
+      "text": "Dipartimento Salute e Servizi Sanitari",
+      "href": "https://www.regione.calabria.it/dipartimento-salute-e-servizi-sanitari"
+     },
+     {
+      "text": "Dipartimento Governo del Territorio, Difesa del Suolo e Politiche per la Casa",
+      "href": "https://www.regione.calabria.it/dipartimento-governo-del-territorio-difesa-del-suolo-e-politiche-per-la-casa/"
+     },
+     {
+      "text": "Dipartimento per la Sostenibilità Ambientale",
+      "href": "https://www.regione.calabria.it/dipartimento-per-la-sostenibilita-ambientale/"
+     },
+     {
+      "text": "Dipartimento Asset Strategici, Attrazione degli Investimenti e Saperi",
+      "href": "https://www.regione.calabria.it/dipartimento-asset-strategici-attrazione-degli-investimenti-e-saperi"
+     },
+     {
+      "text": "Dipartimento per la Protezione Civile",
+      "href": "https://www.regione.calabria.it/dipartimento-per-la-protezione-civile/"
+     },
+     {
+      "text": "Politiche della Montagna, Foreste, Forestazione e Difesa del Suolo",
+      "href": "https://www.regione.calabria.it/dipartimento-politiche-della-montagna-foreste-forestazione-e-difesa-del-suolo/"
+     },
+     {
+      "text": "Dipartimento Turismo, Cultura e Identità territoriale",
+      "href": "https://www.regione.calabria.it/dipartimento-turismo-cultura-e-identita-territoriale"
+     },
+     {
+      "text": "Dipartimento per l'Inclusione sociale, la Sussidiarietà e il Welfare di Comunità",
+      "href": "https://www.regione.calabria.it/dipartimento-per-linclusione-sociale-la-sussidiarieta-e-il-welfare-di-comunita"
+     },
+     {
+      "text": "Notizie ed Eventi",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "Comunicati Stampa",
+      "href": "https://www.regione.calabria.it/news/?pr=&sort_order=0&filter_active=true&filter_department=ufficio-stampa"
+     },
+     {
+      "text": "Notizie dai Dipartimenti",
+      "href": "https://www.regione.calabria.it/news/"
+     },
+     {
+      "text": "Eventi",
+      "href": "https://www.regione.calabria.it/eventi-della-regione/"
+     },
+     {
+      "text": "Aree Tematiche",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "Attività istituzionale",
+      "href": "https://www.regione.calabria.it/attivita-istituzionale/"
+     },
+     {
+      "text": "Ambiente, agricoltura ed energia",
+      "href": "https://www.regione.calabria.it/ambiente-agricoltura-ed-energia/"
+     },
+     {
+      "text": "Cultura, Turismo ed Eventi",
+      "href": "https://www.regione.calabria.it/cultura-turismo-ed-eventi/"
+     },
+     {
+      "text": "Diritti, inclusione e tutela della persona",
+      "href": "https://www.regione.calabria.it/diritti-inclusione-e-tutela-della-persona/"
+     },
+     {
+      "text": "Infrastrutture, difesa del suolo e mobilità",
+      "href": "https://www.regione.calabria.it/infrastrutture-difesa-del-suolo-e-mobilita/"
+     },
+     {
+      "text": "Istruzione, università e alta formazione",
+      "href": "https://www.regione.calabria.it/istruzione-universita-e-alta-formazione/"
+     },
+     {
+      "text": "Lavoro e supporto alle imprese e liberi professionisti",
+      "href": "https://www.regione.calabria.it/lavoro-e-supporto-alle-imprese-e-liberi-professionisti/"
+     },
+     {
+      "text": "Protezione Civile",
+      "href": "https://www.regione.calabria.it/protezione-civile/"
+     },
+     {
+      "text": "Salute e sport",
+      "href": "https://www.regione.calabria.it/salute-e-sport/"
+     },
+     {
+      "text": "Sicurezza e legalità",
+      "href": "https://www.regione.calabria.it/sicurezza-e-legalita/"
+     },
+     {
+      "text": "Sviluppo, ricerca e innovazione digitale",
+      "href": "https://www.regione.calabria.it/sviluppo-ricerca-e-innovazione-digitale/"
+     },
+     {
+      "text": "Tributi e agevolazioni",
+      "href": "https://www.regione.calabria.it/tributi-e-agevolazioni/"
+     },
+     {
+      "text": "Statistica e pianificazione strategica",
+      "href": "https://www.regione.calabria.it/pianificazione-strategica/"
+     },
+     {
+      "text": "Portali Tematici",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "Calabria Energia - Il Portale Energia della Regione Calabria",
+      "href": "https://energia.calabriaimpresa.eu/"
+     },
+     {
+      "text": "Sportello del Consumatore",
+      "href": "https://www.sportelloconsumatoricalabria.it/"
+     },
+     {
+      "text": "Osservatorio Internazionalizzazione",
+      "href": "https://old.regione.calabria.it/website/sitiregione/osservatorio/"
+     },
+     {
+      "text": "Osservatorio Sviluppo Locale - Laboratorio dello Sviluppo Locale",
+      "href": "https://osservatoriosviluppolocale.regione.calabria.it/web/"
+     },
+     {
+      "text": "Calabria Open Data",
+      "href": "https://dati.regione.calabria.it/"
+     },
+     {
+      "text": "Calabria Straordinaria",
+      "href": "https://calabriastraordinaria.it/"
+     },
+     {
+      "text": "Azienda Zero",
+      "href": "https://old.regione.calabria.it/website/aziendazero/provvedimenti/"
+     },
+     {
+      "text": "Portale Terzo Settore",
+      "href": "https://terzosettore.regione.calabria.it/"
+     },
+     {
+      "text": "Calabria Istruzione",
+      "href": "https://istruzione.regione.calabria.it/"
+     },
+     {
+      "text": "Portale Lavoro",
+      "href": "https://lavoro.regione.calabria.it/"
+     },
+     {
+      "text": "Osservatorio Istruzione",
+      "href": "https://osservatorio.regione.calabria.it/"
+     },
+     {
+      "text": "Fondazione Calabria Film Commission",
+      "href": "https://www.calabriafilmcommission.it/"
+     },
+     {
+      "text": "Fondazione Mediterranea terina Onlus",
+      "href": "https://www.fondazioneterina.it/"
+     },
+     {
+      "text": "Fondazione Istituto Regionale per la Comunità Grecanica di Calabria",
+      "href": "https://www.fondazionegrecanica.it/"
+     },
+     {
+      "text": "Enti e Partecipate",
+      "href": "http://www.regione.calabria.it/homepage/enti-e-partecipate"
+     },
+     {
+      "text": "Servizi",
+      "href": "https://www.servizi.regione.calabria.it/"
+     },
+     {
+      "text": "Bandi, concorsi e documenti",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "Bandi e Avvisi di Gara",
+      "href": "https://www.regione.calabria.it/bandi-e-avvisi-di-gara/"
+     },
+     {
+      "text": "Bandi da altre Amministrazioni",
+      "href": "https://www.regione.calabria.it/bandi-altre-amministrazioni/"
+     },
+     {
+      "text": "Concorsi e Selezioni",
+      "href": "https://www.regione.calabria.it/concorsi-e-selezioni/"
+     },
+     {
+      "text": "Conferenze di Servizi",
+      "href": "https://www.regione.calabria.it/conferenza-dei-servizi/"
+     },
+     {
+      "text": "Procedure Espropriative",
+      "href": "http://www.regione.calabria.it/bandi-e-avvisi-di-gara/?pr=&sort_order=0&filter_department=Procedure%2BEspropriative&filter_tematic=&filter_type=rc_procedure_type_notify&filter_fund=&filter_beneficiary=0&filter_cig=&filter_date_from=&filter_date_to=&searchButton=Cerca"
+     },
+     {
+      "text": "Provvedimenti",
+      "href": "https://www.regione.calabria.it/provvedimenti-della-regione/"
+     },
+     {
+      "text": "Normative",
+      "href": "https://www.regione.calabria.it/normative-della-regione/"
+     },
+     {
+      "text": "Leggi Regionali",
+      "href": "https://www.regione.calabria.it/normative-della-regione/?sort_order=0&filter_department=&filter_type=Legge+Regionale&filter_scope=&filter_item=&filter_number=&filter_date_from=&filter_date_to=&searchButton=Cerca"
+     },
+     {
+      "text": "Regolamenti Regionali",
+      "href": "https://www.regione.calabria.it/normative-della-regione/?sort_order=0&filter_department=&filter_type=Regolamento&filter_scope=&filter_item=&filter_number=&filter_date_from=&filter_date_to=&searchButton=Cerca"
+     },
+     {
+      "text": "Notifica e pubblici proclami",
+      "href": "https://www.regione.calabria.it/notifiche-e-pubblici-proclami/"
+     },
+     {
+      "text": "Cerca",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "Home",
+      "href": "https://www.regione.calabria.it/"
+     },
+     {
+      "text": "Bandi e avvisi di gara",
+      "href": "https://www.regione.calabria.it/bandi-e-avvisi-di-gara/"
+     },
+     {
+      "text": "Stampa",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "Ambiente, Paesaggio e Qualità Urbana",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/dipartimento-territorio-e-tutela-dellambiente/"
+     },
+     {
+      "text": "Descrizione Tecnica",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-descrizionetecnica"
+     },
+     {
+      "text": "Date",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-timeline"
+     },
+     {
+      "text": "Ulteriori informazioni",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-info"
+     },
+     {
+      "text": "",
+      "href": "https://www.facebook.com/sharer.php?u=http://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "",
+      "href": "https://twitter.com/intent/tweet?text=http://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "",
+      "href": "https://www.regione.calabria.it/cdn-cgi/l/email-protection#aaded3dacf8f989acfc7cbc3c68f989acbceced8cfd9d98f989ac2cfd8cf95d9dfc8c0cfc9de97f8cfcdc3c5c4cf8ae9cbc6cbc8d8c3cb868aebedf8e3fce5e6feebe3e9e58f989af9e5f8edefe4e3eb8cc8c5ced397ebedf8e3fce5e6feebe3e9e58f989af9e5f8edefe4e3eb8a878ac2dededa908585ddd"
+     },
+     {
+      "text": "Contattaci",
+      "href": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+     },
+     {
+      "text": "Descrizione Tecnica",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-descrizionetecnica"
+     },
+     {
+      "text": "Date",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-timeline"
+     },
+     {
+      "text": "Ulteriori informazioni",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/#rc-scroll-id-info"
+     },
+     {
+      "text": "Ufficio relazioni con il pubblico",
+      "href": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+     },
+     {
+      "text": "Amministrazione Trasparente",
+      "href": "https://trasparenza.regione.calabria.it/REGIONECALABRIA"
+     },
+     {
+      "text": "Segnala illeciti o irregolarità",
+      "href": "https://wb.regione.calabria.it/REGIONECALABRIA/Account/Login"
+     },
+     {
+      "text": "Notifiche e pubblici proclami",
+      "href": "http://www.regione.calabria.it/notifiche-e-pubblici-proclami/"
+     },
+     {
+      "text": "Dichiarazione di accessibilità",
+      "href": "http://www.regione.calabria.it/homepage/accessibilita/"
+     },
+     {
+      "text": "Note Legali e Copyright",
+      "href": "https://www.regione.calabria.it/note-legali/"
+     },
+     {
+      "text": "Privacy & Cookies",
+      "href": "https://www.regione.calabria.it/privacy-cookies/"
+     },
+     {
+      "text": "Contatti",
+      "href": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+     },
+     {
+      "text": "Mappa del Sito",
+      "href": "https://www.regione.calabria.it/mappa-del-sito/"
+     },
+     {
+      "text": "RSS News",
+      "href": "https://www.regione.calabria.it/feed/?post_type=post"
+     },
+     {
+      "text": "RSS Bandi",
+      "href": "https://www.regione.calabria.it/feed/?post_type=rc-procedure"
+     },
+     {
+      "text": "Gestisci opzioni",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "Gestisci servizi",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "Gestisci fornitori",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "Per saperne di più su questi scopi",
+      "href": "https://cookiedatabase.org/tcf/purposes/"
+     },
+     {
+      "text": "Visualizza le preferenze",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "{title}",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "{title}",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     },
+     {
+      "text": "{title}",
+      "href": "https://www.regione.calabria.it/bandi/agrivoltaico-sorgenia/"
+     }
+    ]
+   }
+  ]
+ }
+]
