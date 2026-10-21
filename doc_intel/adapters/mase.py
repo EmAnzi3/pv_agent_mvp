@@ -5,7 +5,7 @@ Entry points accepted: ``/Oggetti/Info/<id>`` and
 """
 from __future__ import annotations
 
-import html
+import html as html_lib
 
 import re
 import time
@@ -61,7 +61,7 @@ class MaseAdapter(DocumentAdapter):
         another MASE record with the same plant name ('denominato "BIDDINE"') in a shared municipality, its
         documentation procedures are added (labelled), so the card is built on the whole project."""
         records = getattr(self, "records", None) or []
-        names = {re.sub(r"\W+", " ", x).strip().lower() for x in PLANT_NAME.findall(html.unescape(ident.title or ""))}
+        names = {re.sub(r"\W+", " ", x).strip().lower() for x in PLANT_NAME.findall(html_lib.unescape(ident.title or ""))}
         print(f"::notice title=related::names={sorted(names)} municipalities={ident.municipalities} records={len(records)}")
         if not names or not records:
             return
@@ -73,7 +73,7 @@ class MaseAdapter(DocumentAdapter):
             u = r.get("url") or ""
             if not _host_ok(u) or u.rstrip("/") == (ident.raw.get("entry_url") or ident.info_url).rstrip("/"):
                 continue
-            rn = {re.sub(r"\W+", " ", x).strip().lower() for x in PLANT_NAME.findall(html.unescape(r.get("title") or ""))}
+            rn = {re.sub(r"\W+", " ", x).strip().lower() for x in PLANT_NAME.findall(html_lib.unescape(r.get("title") or ""))}
             rm = {m.strip().lower() for m in re.split(r"[,;]", r.get("municipalities") or "") if m.strip()}
             if not (rn & names) or (munis and rm and not (munis & rm)):
                 continue
@@ -150,8 +150,12 @@ class MaseAdapter(DocumentAdapter):
         om = re.search(r"Oggetto\s*:?\s*(.+?)(?:\s+Proponente\s*:|\s+Tipologia|\s+-\s+Prescrizion|\s+Data\s+presentazione|$)", text)
         if om and len(om.group(1)) > 25:
             title = om.group(1).strip()
+        # newer project pages: 'Opera : ... Progetto : <full title> Proponente : ...'
+        gm = re.search(r"\bProgetto\s*:\s*(.+?)\s+Proponente\s*:", text)
+        if gm and len(gm.group(1)) > 25 and (not om or len(om.group(1)) <= 25):
+            title = gm.group(1).strip()
         if title:
-            title = re.split(r"\s+-\s+Prescrizion|\s+Data\s+presentazione", title)[0].strip()
+            title = html_lib.unescape(re.split(r"\s+-\s+Prescrizion|\s+Data\s+presentazione", title)[0].strip())
         prop = None
         pm = re.search(r"\bProponente\s*:\s*(.+?)(?:\s+Tipologia\s+di\s+opera|\s+Scadenza|\s+Territori|\s+Procedura|\s+Data\s+presentazione|\s+Oggetto\s*:|$)", text)
         if pm:
@@ -167,6 +171,11 @@ class MaseAdapter(DocumentAdapter):
                         munis.append(name.title())
                     if pr:
                         provs.append(pr.group(1))
+        if not munis:
+            # 'Territori ed aree marine Regioni: Sicilia Province: Ragusa Comuni: Vittoria, Acate Aree marine: ...'
+            cm = re.search(r"\bComuni\s*:\s*(.+?)\s+(?:Aree\s+marine|Scegli\s+la\s+procedura|Procedura\b|$)", text)
+            if cm:
+                munis = [x.strip().title() for x in re.split(r",|;", cm.group(1)) if x.strip() and NAME_RE.match(x.strip())]
         procedures = []
         seen = set()
         for a in soup.find_all("a", href=True):
