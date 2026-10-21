@@ -40,7 +40,7 @@ HTML_RULES = [
              re.compile(r"[?&]id=(\d+)")),
     # Sistema Puglia: one determination per record, '[Scarica .pdf]' link
     HostRule("www.sistema.puglia.it", "sistema_puglia_energia",
-             re.compile(r"(?i)\.pdf(?:$|[?#])|/pls/portal/docs/|download|getfile"), re.compile(r"[?&]id=(\d+)")),
+             re.compile(r"(?i)\.pdf(?:$|[?#])|/pls/portal/docs/|ges_blob\.p_retrieve|download|getfile"), re.compile(r"[?&]id=(\d+)")),
 ]
 
 
