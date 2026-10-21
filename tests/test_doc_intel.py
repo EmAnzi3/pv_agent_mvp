@@ -1174,6 +1174,45 @@ class WorkQueue(unittest.TestCase):
             self.assertEqual(set(json.loads((Path(d) / "index.json").read_text())), {"k1", "k2"})
 
 
+class AtosRegister(unittest.TestCase):
+    """Toscana ATOS plant sheet: register act reported as written, documents from the linked procedure."""
+    SHEET = ("<html><body>Scheda Impianto Energetico Denominazione Impianto AGRI PADULE Denominazione Ditta REVALUE PV1 S.R.L. "
+             "Comune SOVICILLE Sigla Provincia SI Attivo SI --> Autorizzazione Vigente Tipo di Autorizzazione AU. FER "
+             "Tipologia Fonte AGRIVOLTAICO Stato Autorizzazione --> Potenza MW 128.03 Dati dell'ultimo Atto Numero Atto 20450 "
+             "Data Atto 25/09/2025 Ente Rilasciante Regione Toscana Categoria Atto Altro (VERIFICA DI ASSOGGETTABILITà) "
+             "Tipologia Atto Decreto Ultima modifica 04/06/2026 11:54:03 --> In caso di atto il cui</body></html>")
+    URL = "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481"
+
+    def test_sheet_and_link(self):
+        from doc_intel.adapters import adapter_for_url
+        from doc_intel.adapters.api_portals import AtosAdapter
+        a = adapter_for_url(self.URL)
+        self.assertIsInstance(a, AtosAdapter)
+        a.get_html = lambda u: self.SHEET
+        ident = a.identify(self.URL)
+        sh = ident.raw["register_sheet"]
+        self.assertEqual(sh["power_mw"], "128.03")
+        self.assertNotIn("authorization_status", sh)
+        self.assertEqual(sh["act_category"], "Altro (VERIFICA DI ASSOGGETTABILITà)")
+        a.records = [{"url": self.URL, "proponent": "REVALUE PV1 S.R.L."},
+                     {"url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110",
+                      "proponent": "REVALUE PV 1 S.R.L.", "municipalities": "SOVICILLE", "power_mw": 128.0},
+                     {"url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/88",
+                      "proponent": "Altra S.r.l.", "municipalities": "Pisa", "power_mw": 128.0}]
+        self.assertTrue(a.linked_record(ident)["url"].endswith("/110"))
+        a.records = a.records[2:]
+        disc = a.discover(ident)
+        self.assertEqual(disc.documents, [])
+
+    def test_card_reports_act_without_upgrading_it(self):
+        from doc_intel.card import _register
+        reg = _register({"info_url": self.URL, "raw": {"register_sheet": {
+            "act_type": "Decreto", "act_number": "20450", "act_date": "25/09/2025",
+            "act_category": "Altro (VERIFICA DI ASSOGGETTABILITà)", "act_body": "Regione Toscana"}}})
+        self.assertEqual(reg["label"], "Registro impianti: Decreto n. 20450 del 25/09/2025")
+        self.assertNotIn("autorizzat", (reg["label"] + reg["reason"]).lower())
+
+
 class ApiPortalAdapters(unittest.TestCase):
     """Lombardia SILVIA and Toscana PATTI: documents listed by JSON APIs (structures read from the live portals)."""
 

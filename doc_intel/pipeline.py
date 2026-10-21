@@ -46,6 +46,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     if get_html:
         adapter.get_html = get_html
     adapter.log = log
+    if getattr(adapter, "wants_records", False) and data_json:
+        adapter.records = load_records(data_json)      # register adapters link to the procedure holding the documents
     log(f"[identify] {record_url} via {type(adapter).__name__}")
     identity = adapter.identify(record_url)
     disc: Discovery = adapter.discover(identity)

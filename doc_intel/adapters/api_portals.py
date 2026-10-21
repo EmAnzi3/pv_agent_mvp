@@ -155,3 +155,106 @@ class ToscanaPattiAdapter(DocumentAdapter):
             procedures.append({"id": label[:60], "url": identity.info_url, "label": label, "declared": None,
                                "declared_available": False, "enumerated": n, "index_pages": 1, "errors": []})
         return Discovery(identity, docs, procedures, [] if docs else ["no document links in the notice"])
+
+
+ATOS_FIELDS = [("plant", "Denominazione Impianto"), ("company", "Denominazione Ditta"), ("municipality", "Comune"),
+               ("province", "Sigla Provincia"), ("active", "Attivo"), ("authorization_type", "Tipo di Autorizzazione"),
+               ("energy_source", "Tipologia Fonte"), ("authorization_status", "Stato Autorizzazione"),
+               ("power_mw", "Potenza MW"), ("act_number", "Numero Atto"), ("act_date", "Data Atto"),
+               ("act_body", "Ente Rilasciante"), ("act_category", "Categoria Atto"), ("act_type", "Tipologia Atto"),
+               ("updated", "Ultima modifica")]
+
+
+def parse_atos_sheet(text: str) -> dict[str, str]:
+    """Label/value pairs of an ATOS plant sheet (labels in a fixed order, values in between)."""
+    t = re.sub(r"\s+", " ", text or "")
+    t = t.replace("-->", " ")
+    labels = [lab for _, lab in ATOS_FIELDS] + ["Dati dell'ultimo Atto", "Autorizzazione Vigente", "In caso di atto"]
+    out = {}
+    for key, lab in ATOS_FIELDS:
+        m = re.search(re.escape(lab) + r"\s*(.*?)(?=\s*(?:" + "|".join(re.escape(x) for x in labels if x != lab) + r")\b|$)", t)
+        if m and m.group(1).strip():
+            out[key] = m.group(1).strip()[:200]
+    return out
+
+
+def _norm_company(s: str | None) -> str:
+    s = (s or "").lower()
+    s = re.sub(r"s\.?\s?r\.?\s?l\.?|s\.?\s?p\.?\s?a\.?|societ[aà].*", "", s)
+    return re.sub(r"[^a-z0-9]", "", s)
+
+
+class AtosAdapter(DocumentAdapter):
+    """Toscana ATOS register of energy plants (``atos.arrr.it/scheda_impianto_fer.php?id_impianto=N``).
+
+    The sheet records the plant and its last authorisation act but no documents. When the radar holds
+    the same plant from a procedure portal (Toscana PATTI, MASE...), matched by company, or by
+    municipality and power, the documents of that procedure are analysed; the sheet adds the act."""
+    source = "toscana_atos"
+    capabilities = AdapterCapabilities(source="toscana_atos", project_identity=True, procedure_ids=False,
+                                       document_index=False, pagination="none", download="none",
+                                       declared_totals=False, status="partial",
+                                       obstacles=["register without documents: documents come from the linked procedure"])
+    URL_RE = re.compile(r"^https?://atos\.arrr\.it/scheda_impianto_fer\.php\?.*id_impianto=(?P<id>\d+)")
+    wants_records = True
+
+    def __init__(self, get_html: Callable[[str], str] | None = None):
+        super().__init__(get_html)
+        self.records: list[dict] = []
+
+    @classmethod
+    def handles(cls, url: str) -> bool:
+        return bool(cls.URL_RE.match(url or ""))
+
+    def identify(self, url: str) -> ProjectIdentity:
+        from bs4 import BeautifulSoup
+        pid = self.URL_RE.match(url).group("id")
+        text = BeautifulSoup(self.get_html(url), "html.parser").get_text(" ", strip=True)
+        sheet = parse_atos_sheet(text)
+        title = " - ".join(x for x in (sheet.get("plant"), sheet.get("energy_source"),
+                                       f"{sheet.get('power_mw')} MW" if sheet.get("power_mw") else None) if x)
+        ident = ProjectIdentity(source="toscana_atos", project_id=pid, info_url=url, title=title or None,
+                                proponent=sheet.get("company"),
+                                municipalities=[sheet["municipality"].title()] if sheet.get("municipality") else [],
+                                province=sheet.get("province"), region="Toscana")
+        ident.raw.update({"register_sheet": sheet, "municipalities_citation": {"url": url, "excerpt": text[:300]}})
+        return ident
+
+    def linked_record(self, identity: ProjectIdentity) -> dict | None:
+        sheet = identity.raw.get("register_sheet") or {}
+        comp = _norm_company(sheet.get("company"))
+        muni = (sheet.get("municipality") or "").lower()
+        try:
+            mw = float((sheet.get("power_mw") or "").replace(",", "."))
+        except ValueError:
+            mw = None
+        from . import adapter_for_url
+        cands = []
+        for r in self.records:
+            u = r.get("url") or ""
+            if self.handles(u) or not u:
+                continue
+            try:
+                adapter_for_url(u)
+            except LookupError:
+                continue
+            same_company = comp and comp == _norm_company(r.get("proponent"))
+            same_place = muni and muni in (r.get("municipalities") or "").lower() and mw and r.get("power_mw") \
+                and abs(r["power_mw"] - mw) <= 0.05 * mw
+            if same_company or same_place:
+                cands.append((bool(same_company) + bool(same_place), r))
+        return max(cands, key=lambda c: c[0])[1] if cands else None
+
+    def discover(self, identity: ProjectIdentity) -> Discovery:
+        rec = self.linked_record(identity)
+        if not rec:
+            return Discovery(identity, [], [], ["register sheet only: no procedure for this plant in the radar"])
+        from . import adapter_for_url
+        sub = adapter_for_url(rec["url"])
+        sub.get_html, sub.log = self.get_html, self.log
+        sub_ident = sub.identify(rec["url"])
+        disc = sub.discover(sub_ident)
+        identity.raw["linked_procedure"] = {"url": rec["url"], "source": rec.get("source"), "title": sub_ident.title}
+        if sub_ident.raw.get("localizzazione"):
+            identity.raw["localizzazione"] = sub_ident.raw["localizzazione"]
+        return Discovery(identity, disc.documents, disc.procedures, disc.errors)

@@ -904,6 +904,29 @@ def _status(d: dict, gantt: dict, today=None) -> dict | None:
     return None
 
 
+def _register(p: dict) -> dict | None:
+    """Last act recorded in a regional plant register (Toscana ATOS), reported as written.
+
+    The register's 'Categoria Atto' says what the act is (an authorisation, a screening decision...):
+    the card repeats it and never upgrades it to 'autorizzato'."""
+    sh = (p.get("raw") or {}).get("register_sheet")
+    if not sh:
+        return None
+    act = " ".join(x for x in (sh.get("act_type"), f"n. {sh['act_number']}" if sh.get("act_number") else None,
+                               f"del {sh['act_date']}" if sh.get("act_date") else None) if x)
+    label = f"Registro impianti: {act}" if act else "Registro impianti regionale"
+    bits = [f"{k}: {sh[f]}" for k, f in (("Categoria atto", "act_category"), ("Ente", "act_body"),
+                                         ("Tipo di autorizzazione", "authorization_type"),
+                                         ("Attivo", "active"), ("Ultima modifica del registro", "updated")) if sh.get(f)]
+    linked = (p.get("raw") or {}).get("linked_procedure")
+    if linked:
+        bits.append(f"documenti dal procedimento collegato: {linked.get('title') or linked['url']}")
+    return {"label": label, "reason": "; ".join(bits) + ".", "fonte": p.get("info_url"),
+            "impianto": sh.get("plant"), "ditta": sh.get("company"), "comune": sh.get("municipality"),
+            "provincia": sh.get("province"), "fonte_energetica": sh.get("energy_source"),
+            "potenza_mw": sh.get("power_mw"), "procedimento_collegato": linked}
+
+
 # --------------------------------------------------------------------------------------------- card
 def build_card(d: dict[str, Any]) -> dict[str, Any]:
     p = d["project"]
@@ -921,6 +944,12 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
     status = _status(d, gantt)
     if status and status["level"] in ("potenzialmente_realizzato", "potenzialmente_avviato", "date_superate"):
         open_points.insert(0, {"label": "Stato del progetto", "reason": status["reason"]})
+    register = _register(p)
+    if register:
+        if status is None:
+            status = {"level": "registro", "label": register["label"], "reason": register["reason"]}
+        else:
+            status = dict(status, reason=status["reason"] + " " + register["label"] + ".")
     a = d["acquisition"]
     return {
         "schema": CARD_SCHEMA, "dossier_schema": SCHEMA_VERSION,
@@ -933,6 +962,7 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         "soggetti": main,
         "altri_soggetti": others,
         "stato": status,
+        "registro": register,
         "cronoprogramma": gantt,
         "documentazione": {"documenti": a["references"], "pagine": a["pages_total"],
                            "completa": d["gates"]["acquisition"]["pass"]},
