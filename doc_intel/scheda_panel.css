@@ -86,10 +86,12 @@
 .sc-open { margin: 0; padding-left: 18px; font-size: 13px; display: grid; gap: 4px; }
 .sc-warn { font-size: 11px; color: var(--muted, #64748b); margin: 0; line-height: 1.5; }
 
-/* pulsante in tabella */
+/* pulsante in tabella: allineato al link "Apri" sulla stessa riga */
+.sc-cell { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
 .sc-btn {
   border: 1px solid var(--accent, #0f766e); color: var(--accent, #0f766e); background: transparent;
-  border-radius: 999px; padding: 3px 10px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; margin-left: 6px;
+  border-radius: 999px; padding: 2px 10px; font: inherit; font-size: 12px; line-height: 1.4; font-weight: 700;
+  cursor: pointer; margin: 0; vertical-align: middle;
 }
 .sc-btn:hover { background: var(--accent, #0f766e); color: #fff; }
 @media (prefers-reduced-motion: no-preference) { .sc-panel:not([hidden]) { animation: sc-in .18s ease-out; } }

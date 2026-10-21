@@ -1751,6 +1751,23 @@ def repair_obvious_fields(rows: list[dict[str, Any]]) -> tuple[list[dict[str, An
                 "url": c2["url"],
             })
 
+        # V17: region/province missing but the municipalities are named (e.g. MASE 'Loreo, Adria' -> RO, Veneto)
+        c_loc = canonical_record(new_row)
+        if not c_loc["province_norm"] or not c_loc["region_norm"]:
+            from doc_intel.admin_areas import locate
+            names = c_loc["municipality"] or str(new_row.get("municipalities") or "")
+            found = locate(names, c_loc["province"], c_loc["region"]) if names else None
+            if found:
+                for fields, key, value in ((PROVINCE_FIELDS, "province", found["province"]),
+                                           (REGION_FIELDS, "region", found["region"].split(" / ")[0].split("/")[0])):
+                    if not c_loc[f"{key}_norm"] and value:
+                        old_value = get_field(new_row, fields)
+                        set_field_if_present(new_row, fields, value)
+                        repairs.append({"idx": idx, "field": key, "old_value": old_value, "old_mw": c_loc["mw"],
+                                        "new_value": value, "reason": f"{key}_filled_from_municipalities_istat",
+                                        "title": c_loc["title"], "source": c_loc["source"],
+                                        "province": c_loc["province"], "url": c_loc["url"]})
+
         c3 = canonical_record(new_row)
         bad_prop_reason = bad_proponent_reason(c3.get("proponent"))
 

@@ -1361,3 +1361,25 @@ class SignedDocuments(unittest.TestCase):
             raw = (folder / name).read_bytes()
             self.assertEqual(sniff(raw), "p7m", name)
             self.assertEqual(p7m_content(raw), original, name)
+
+
+class MaseRelatedProjects(unittest.TestCase):
+    def test_change_links_original_project(self):
+        from doc_intel.adapters.base import ProjectIdentity
+        from doc_intel.adapters.mase import MaseAdapter
+        ad = MaseAdapter(get_html=lambda u: "")
+        ident = ProjectIdentity(source="mase", project_id="12211", info_url="https://va.mite.gov.it/it-IT/Oggetti/Info/12211",
+                                title='Modifica al progetto ... denominato "BIDDINE" con potenza pari a 32,24 MWp',
+                                municipalities=["Vittoria", "Acate"],
+                                procedures=[{"id": "19457", "url": "https://va.mite.gov.it/it-IT/Oggetti/Documentazione/12211/19457"}])
+        ad.records = [
+            {"url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6030",
+             "title": 'VIA (PNIEC-PNRR): impianto agrofotovoltaico denominato "BIDDINE" da 35 MWp', "municipalities": "Acate, Caltagirone"},
+            {"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/999", "title": 'impianto denominato "ALTRO"', "municipalities": "Acate"}]
+        other = ProjectIdentity(source="mase", project_id="10111", info_url="https://va.mite.gov.it/it-IT/Oggetti/Info/10111",
+                                title="BIDDINE", procedures=[{"id": "1", "url": "https://va.mite.gov.it/it-IT/Oggetti/Documentazione/10111/1",
+                                                              "label": "VIA"}])
+        ad.identify = lambda u: other
+        ad.link_related(ident)
+        self.assertEqual([p["id"] for p in ident.procedures], ["19457", "1"])
+        self.assertTrue(ident.procedures[1]["label"].startswith("Progetto collegato (10111)"))

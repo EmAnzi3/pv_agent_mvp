@@ -584,10 +584,12 @@
 .sc-open { margin: 0; padding-left: 18px; font-size: 13px; display: grid; gap: 4px; }
 .sc-warn { font-size: 11px; color: var(--muted, #64748b); margin: 0; line-height: 1.5; }
 
-/* pulsante in tabella */
+/* pulsante in tabella: allineato al link "Apri" sulla stessa riga */
+.sc-cell { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
 .sc-btn {
   border: 1px solid var(--accent, #0f766e); color: var(--accent, #0f766e); background: transparent;
-  border-radius: 999px; padding: 3px 10px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; margin-left: 6px;
+  border-radius: 999px; padding: 2px 10px; font: inherit; font-size: 12px; line-height: 1.4; font-weight: 700;
+  cursor: pointer; margin: 0; vertical-align: middle;
 }
 .sc-btn:hover { background: var(--accent, #0f766e); color: #fff; }
 @media (prefers-reduced-motion: no-preference) { .sc-panel:not([hidden]) { animation: sc-in .18s ease-out; } }
@@ -1023,7 +1025,8 @@
     }
     const maps = safeHref(l.maps_url);
     return `<section class="sc-sec"><h3>Ubicazione<\/h3><dl class="sc-dl">${rows.map(r => `<dt>${r[0]}<\/dt><dd>${r[1]}<\/dd>`).join('')}<\/dl>
-      ${maps ? `<a class="sc-link" href="${esc(maps)}" target="_blank" rel="noopener noreferrer">Apri in Google Maps${l.maps_precision === 'comune' ? ' (comune)' : ''}<\/a>` : ''}<\/section>`;
+      ${maps ? `<a class="sc-link" href="${esc(maps)}" target="_blank" rel="noopener noreferrer">Apri in Google Maps${l.maps_precision === 'comune' ? ' (comune)' : ''}<\/a>` : ''}
+      ${safeHref(l.mappa_ufficiale) ? `<a class="sc-link" href="${esc(safeHref(l.mappa_ufficiale))}" target="_blank" rel="noopener noreferrer">Mappa ufficiale del procedimento<\/a>` : ''}<\/section>`;
   }
 
   function render(card) {
@@ -1314,7 +1317,7 @@
           <td><span class="${badgeClass(row.source_group || row.source)}">${escapeHtml(row.source_label || sourceLabel(row.source))}</span></td>
           <td>${escapeHtml(row.project_type)}</td>
           <td class="num">${fmtMw(row.power_mw)}</td>
-          <td>${link}${schedaButton(row)}</td>
+          <td><span class="sc-cell">${link}${schedaButton(row)}</span></td>
         `;
 
         body.appendChild(tr);
@@ -1573,7 +1576,7 @@
           <td class="proponent-col">${proponent}</td>
           <td>${escapeHtml(record.project_type)}</td>
           <td class="num">${fmtMw(record.power_mw)}</td>
-          <td>${link}${schedaButton(record)}</td>
+          <td><span class="sc-cell">${link}${schedaButton(record)}</span></td>
         `;
 
         body.appendChild(tr);
