@@ -89,6 +89,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - run: python -m pip install -q requests beautifulsoup4 pypdf
       - name: Publish the index of the cards (read by the public page)
         run: |
           git config --global user.name "doc-intel-bot"
