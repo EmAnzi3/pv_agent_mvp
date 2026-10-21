@@ -1,0 +1,960 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "url:b04c59068e24ffcc",
+ "title": "Progetto di un nuovo impianto fotovoltaico della potenza nominale di 73 MW, denominato \"Sassari 01\", con annesso impianto di accumulo energetico della potenza di 120 MW e relative opere di connessione alla rete, ubicato nei Comuni di Sassari (SS) e Porto Torres (SS) su una superficie di ca. 115 ha. Il progetto prevede l'implementazione di un biomonitoraggio tramite apicoltura.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8020",
+ "source": "mase",
+ "updated": "2026-10-21",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "73 MW",
+   "sub": "Suddivisa in 3 lotti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8020",
+    "excerpt": "73 MW"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico · tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1436970",
+    "page": 2,
+    "document": "RELAZIONE di OTTEMPERANZA alle condizioni ambientali Ante Operam",
+    "excerpt": "Progetto di un impianto agrivoltaico della potenza nominale di 73 MW, denominato “Sassari"
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "115 ha",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 70 ha (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/654304",
+    "page": 3,
+    "document": "Integrazioni del 23/06/2022 - Riscontro alle richieste di integrazioni",
+    "excerpt": " La superficie complessiva di progetto è di 115 ha circa; "
+   }
+  },
+  {
+   "key": "pali",
+   "label": "Pali di recinzione",
+   "value": "344",
+   "status": "da documenti",
+   "sub": "Pali delle strutture non indicati negli elaborati",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/592996",
+    "page": 1,
+    "document": "Inquadramento impianto fotovoltaico su CTR - Planimetria di ingombro Area Est",
+    "excerpt": "Recinzione Impianto FV Palificazioni - n. 344 pali (n. 344 telecamere e n. 688 lampade LED)"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "120 MW / 240 MWh",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 80 MW (5), 73 MW (1), 75,031 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/613068",
+    "page": 1,
+    "document": "Richiesta integrazioni della documentazione - CTPNRR-PNIEC del 25/03/2022",
+    "excerpt": "di 73 MW denominato \"Sassari 01\"con annesso impianto di accumulo energetico della potenza di 120 MW e relative opere di connessione alla rete, ubicato nei Comuni di Sassari (SS) e Porto Torres (SS) su una superficie di c"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "50 settimane (circa 12 mesi)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 8-10 mesi (1), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/709996",
+    "page": 14,
+    "document": "Allegato al Decreto del Ministero della Transizione Ecologica - Parere Commissione Tecnica PNRR-PNIEC del 06/09/2022",
+    "excerpt": "Dal Cronoprogramma proposto, il Proponente si rileva che la realizzazione dell’impianto proposto avrà durata complessiva di circa 50 settimane dall’avvio dei lavori."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Sassari",
+   "Porto Torres"
+  ],
+  "coordinate": {
+   "lat": 40.80766,
+   "lon": 8.3773,
+   "tipo": "centro della tavola georeferenziata di progetto (155 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/654307",
+    "page": 4,
+    "document": "Integrazioni del 23/06/2022 - ElaboratoGrafico_06-agg1",
+    "excerpt": "Integrazioni del 23/06/2022 - ElaboratoGrafico_06-agg1"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.80766,8.37730",
+  "maps_precision": "coordinate",
+  "connessione": {
+   "lat": 40.82246,
+   "lon": 8.38533,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/709997",
+    "page": 11,
+    "document": "Allegato al Decreto del Ministero della Transizione Ecologica - Parere del Ministero della Cultura del 28/08/2022",
+    "excerpt": "SOTTOSTAZIONE Localizzazione: Porto Torres; Piano Dusai Coordinate (UTM 33 WGS84) al centro dell’area: 40°49'20.85\"N 8°23'7.20\"E Utilizzo attuale dell’area: area coltivata"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.82246,8.38533"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "WHYSOL-E Sviluppo S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "10692360968",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Meravigli 3 20123 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "whysol-e.sviluppo@legalmail.it",
+     "occurrences": 140,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/908921",
+      "page": 1,
+      "document": "Particolari struttura di sostegno moduli fotovoltaici e modalità di ancoraggio al suolo",
+      "excerpt": "Tel: +39 02 359605 info@whysol.it - whysol-e.sviluppo@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "fabio.calcarella@ingpec.eu",
+     "occurrences": 116,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1436970",
+      "page": 1,
+      "document": "RELAZIONE di OTTEMPERANZA alle condizioni ambientali Ante Operam",
+      "excerpt": "Mob. +39 340 9243575 fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "whysol@pec.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/593060",
+      "page": 30,
+      "document": "Piano Particellare aree interessate",
+      "excerpt": "Posta elettronica ordinaria: bethany .scovner@whysol.com; luca.faedo@whysol com Posta elettronica certificata: whysol@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "nicola.pili@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/654331",
+      "page": 13,
+      "document": "Integrazioni del 23/06/2022 - Relazione_geologicogeofisica",
+      "excerpt": "Tel. +393477160465 PEC nicola.pili@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@whysol.it",
+     "occurrences": 134,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/908921",
+      "page": 1,
+      "document": "Particolari struttura di sostegno moduli fotovoltaici e modalità di ancoraggio al suolo",
+      "excerpt": "Tel: +39 02 359605 info@whysol.it - whysol-e.sviluppo@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "fabio.calcarella@gmail.com",
+     "occurrences": 116,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1436970",
+      "page": 1,
+      "document": "RELAZIONE di OTTEMPERANZA alle condizioni ambientali Ante Operam",
+      "excerpt": "Mob. +39 340 9243575 fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/593078",
+    "page": 1,
+    "document": "Studio di impatto ambientale quadro programmatico",
+    "excerpt": "Progettazione: Committente: DOTT. ING. Fabio CALCARELLA Whysol-E Sviluppo S.r.l."
+   }
+  },
+  {
+   "name": "W Sassari 01 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8020"
+   }
+  },
+  {
+   "name": "Sinergye Ring S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "pipponobile@sinergye.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/593056",
+      "page": 1,
+      "document": "SE - SASSARI 01 Planimetria elettromeccanica SE di utenti",
+      "excerpt": "VLE 4 LEE, a | Snerge Rings. pipponobile@sinergye.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/593056",
+    "page": 1,
+    "document": "SE - SASSARI 01 Planimetria elettromeccanica SE di utenti",
+    "excerpt": "GRUPPO DI PROGETTAZIONE : Q Der, 7 arm yy SINERGYE Ring srl"
+   }
+  },
+  {
+   "name": "Geol. Marcello De",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/592969",
+    "page": 4,
+    "document": "Calcoli preliminari delle strutture - Relazione art.26 Impianto FV",
+    "excerpt": "Negli elaborati di progetto costituiti dalla relazione geologica, redatta dal dott. Geol. Marcello De Donatis, e geotecnica e sismica, parte integrante della presente relazione sulle strutture e di"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Labanalysis Life Science S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02235450182",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Europa 5 27041 Casanova Lonati Pv",
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0385287128",
+     "occurrences": 380,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/654351",
+      "page": 52,
+      "document": "Integrazioni del 23/06/2022 - StudioPedologicoAllegato3",
+      "excerpt": "Il Rapporto di Prova non può essere riprodotto parzialmente salvo approvazione scritta da parte del Responsabile del Laboratorio LabAnalysis s.r.l. Sede centrale Via Europa, 5 - 27041 Casanova Lonati (PV) | Sede Legale V"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Inses S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "inses@facilepec.com",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/654351",
+      "page": 3,
+      "document": "Integrazioni del 23/06/2022 - StudioPedologicoAllegato3",
+      "excerpt": "TEL/FAX 070/9313074 - C.F e P.IVA 03671710923 R.E.A. Cagliari n. 288894 Capitale Sociale € 20.000,00 E-mail - inses@tiscali.it - PEC inses@facilepec.com - Sito Web - WWW.insesanalisi .it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "inses@tiscali.it",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/654351",
+      "page": 3,
+      "document": "Integrazioni del 23/06/2022 - StudioPedologicoAllegato3",
+      "excerpt": "TEL/FAX 070/9313074 - C.F e P.IVA 03671710923 R.E.A. Cagliari n. 288894 Capitale Sociale € 20.000,00 E-mail - inses@tiscali.it - PEC inses@facilepec.com - Sito Web - WWW.insesanalisi .it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Consulnet S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "r.accossu@epap.conafpec.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/654352",
+      "page": 1,
+      "document": "Integrazioni del 23/06/2022 - Rappresentazione uso del suolo con allegati",
+      "excerpt": "Studio Z.I. Villacidro Strada A c/o Consulnet S.r.l. -Tel. 340/1893681- 348/3408649 E-mail accossu@tiscali.it - r.accossu@epap.conafpec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "accossu@tiscali.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/654352",
+      "page": 1,
+      "document": "Integrazioni del 23/06/2022 - Rappresentazione uso del suolo con allegati",
+      "excerpt": "Studio Z.I. Villacidro Strada A c/o Consulnet S.r.l. -Tel. 340/1893681- 348/3408649 E-mail accossu@tiscali.it - r.accossu@epap.conafpec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3401893681",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/654352",
+      "page": 1,
+      "document": "Integrazioni del 23/06/2022 - Rappresentazione uso del suolo con allegati",
+      "excerpt": "Dottore Agronomo Roberto Accossu -Via S. Pellico 1 - 09039 Villacidro (SU) Studio Z.I. Villacidro Strada A c/o Consulnet S.r.l. -Tel. 340/1893681- 348/3408649"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geoprove S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@geoprove.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/593063",
+      "page": 1,
+      "document": "Relazione Geologica Area Impianto",
+      "excerpt": "Tel. 0833 692992 - 329 3599093 info@geoprove.eu"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0833692992",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/593063",
+      "page": 1,
+      "document": "Relazione Geologica Area Impianto",
+      "excerpt": "Via Benedetto Falcone, ZI - 73049 Ruffano (LE) Tel. 0833 692992 - 329 3599093"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento cantiere",
+    "start": 0.0,
+    "end": 0.45,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sbancamenti e livellazioni",
+    "start": 0.22,
+    "end": 0.91,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione recinzione e cancelli",
+    "start": 0.68,
+    "end": 1.14,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per Cabine e posa manufatti",
+    "start": 1.14,
+    "end": 1.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per sottoservizi",
+    "start": 1.37,
+    "end": 7.38,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cablaggi cavi BT e MT interrati",
+    "start": 1.6,
+    "end": 7.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione strutture",
+    "start": 1.83,
+    "end": 10.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio moduli FV, QP e cablaggio",
+    "start": 2.07,
+    "end": 11.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzaizone cavidotto tra aree Ovest",
+    "start": 1.37,
+    "end": 2.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione strade",
+    "start": 1.14,
+    "end": 2.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotto esterno MT",
+    "start": 2.99,
+    "end": 4.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi e commissioning",
+    "start": 10.84,
+    "end": 11.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smobilizzo cantiere",
+    "start": 11.07,
+    "end": 11.53,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Altra sezione del cronoprogramma",
+    "separator": true,
+    "start": 0,
+    "end": 0,
+    "level": 0
+   },
+   {
+    "name": "Allestimento cantiere",
+    "start": 0.91,
+    "end": 1.37,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sbancamenti e livellazioni",
+    "start": 1.14,
+    "end": 1.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione recinzione e cancelli",
+    "start": 1.6,
+    "end": 2.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per fabbricato servizi",
+    "start": 1.83,
+    "end": 2.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazioe fabbricato servizi",
+    "start": 2.07,
+    "end": 4.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per sottoservizi",
+    "start": 2.53,
+    "end": 4.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione sottoservizi",
+    "start": 2.99,
+    "end": 4.38,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per apparecchiature AT",
+    "start": 3.91,
+    "end": 6.22,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione apparecchiature AT",
+    "start": 5.07,
+    "end": 6.68,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per Impianto trattamento acque",
+    "start": 1.83,
+    "end": 2.76,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione Impianto trattamento acque",
+    "start": 2.07,
+    "end": 2.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cablaggi BT. MT e AT",
+    "start": 3.22,
+    "end": 5.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione Trasfromatore MT/AT",
+    "start": 6.68,
+    "end": 7.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzaizone cavidotto AT da SSE a SE Terna",
+    "start": 6.91,
+    "end": 7.38,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi e commissioning",
+    "start": 7.37,
+    "end": 7.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smobilizzo cantiere",
+    "start": 7.6,
+    "end": 8.07,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 11.53,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/592983",
+   "page": 2,
+   "document": "Cronoprogramma lavori di costruzione - cronoprogramma lavori di ripristino",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "W1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "W2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "W3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "W4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "W5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "W6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "W7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "W8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "W9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "W10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "W11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "W12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "W13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "W14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "W15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "W16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "W17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "W18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "W19",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "W20",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "W21",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "W22",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "W23",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "W24",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "W25",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "W26",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "W27",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "W28",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "W29",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "W30",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "W31",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "W32",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "W33",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "W34",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "W35",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "W36",
+     "start": 8.077,
+     "end": 8.308
+    },
+    {
+     "label": "W37",
+     "start": 8.308,
+     "end": 8.538
+    },
+    {
+     "label": "W38",
+     "start": 8.538,
+     "end": 8.769
+    },
+    {
+     "label": "W39",
+     "start": 8.769,
+     "end": 9.0
+    },
+    {
+     "label": "W40",
+     "start": 9.0,
+     "end": 9.231
+    },
+    {
+     "label": "W41",
+     "start": 9.231,
+     "end": 9.462
+    },
+    {
+     "label": "W42",
+     "start": 9.462,
+     "end": 9.692
+    },
+    {
+     "label": "W43",
+     "start": 9.692,
+     "end": 9.923
+    },
+    {
+     "label": "W44",
+     "start": 9.923,
+     "end": 10.154
+    },
+    {
+     "label": "W45",
+     "start": 10.154,
+     "end": 10.385
+    },
+    {
+     "label": "W46",
+     "start": 10.385,
+     "end": 10.615
+    },
+    {
+     "label": "W47",
+     "start": 10.615,
+     "end": 10.846
+    },
+    {
+     "label": "W48",
+     "start": 10.846,
+     "end": 11.077
+    },
+    {
+     "label": "W49",
+     "start": 11.077,
+     "end": 11.308
+    },
+    {
+     "label": "W50",
+     "start": 11.308,
+     "end": 11.538
+    },
+    {
+     "label": "W51",
+     "start": 11.538,
+     "end": 11.769
+    },
+    {
+     "label": "W52",
+     "start": 11.769,
+     "end": 12.0
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "50 settimane (circa 12 mesi)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 8-10 mesi (1), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/709996",
+    "page": 14,
+    "document": "Allegato al Decreto del Ministero della Transizione Ecologica - Parere Commissione Tecnica PNRR-PNIEC del 06/09/2022",
+    "excerpt": "Dal Cronoprogramma proposto, il Proponente si rileva che la realizzazione dell’impianto proposto avrà durata complessiva di circa 50 settimane dall’avvio dei lavori."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma lavori di costruzione - cronoprogramma lavori di ripristino",
+   "url": "https://va.mite.gov.it/File/Documento/592983"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 180,
+  "pagine": 3719,
+  "completa": true
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "W SASSARI 01 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 73.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SASSARI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "2082 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}

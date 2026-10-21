@@ -1,32 +1,32 @@
 {
   "summary": {
-    "generated_at": "2026-10-15 16:15:04",
-    "snapshot_file": "projects_snapshot_20261015_141230.csv",
-    "total_records": 1565,
-    "punctual_records": 1483,
+    "generated_at": "2026-10-21 12:19:32",
+    "snapshot_file": "projects_snapshot_20261021_101814.csv",
+    "total_records": 1552,
+    "punctual_records": 1470,
     "terna_records": 82,
-    "total_mw_punctual": 41739.467,
+    "total_mw_punctual": 41051.941,
     "total_mw_terna": 139880.808,
     "source_counts": [
       {
         "source": "lazio",
         "label": "Lazio",
-        "count": 320
+        "count": 321
       },
       {
         "source": "mase",
         "label": "MASE",
-        "count": 306
-      },
-      {
-        "source": "toscana",
-        "label": "Toscana",
-        "count": 292
+        "count": 309
       },
       {
         "source": "sicilia",
         "label": "Sicilia",
-        "count": 288
+        "count": 286
+      },
+      {
+        "source": "toscana",
+        "label": "Toscana",
+        "count": 278
       },
       {
         "source": "terna_econnextion",
@@ -36,12 +36,12 @@
       {
         "source": "lombardia",
         "label": "Lombardia",
-        "count": 74
+        "count": 75
       },
       {
         "source": "puglia",
         "label": "Puglia",
-        "count": 70
+        "count": 67
       },
       {
         "source": "emilia_romagna",
@@ -51,7 +51,7 @@
       {
         "source": "veneto",
         "label": "Veneto",
-        "count": 26
+        "count": 27
       },
       {
         "source": "calabria",
@@ -87,62 +87,62 @@
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 369,
-        "punctual_mw": 12441.998,
+        "punctual_count": 368,
+        "punctual_mw": 12369.998,
         "terna_count": 5,
         "terna_mw": 35148.673,
         "terna_practices": 0,
-        "total_mw": 47590.671,
-        "priority_score": 37.9
+        "total_mw": 47518.671,
+        "priority_score": 37.8
       },
       {
         "region": "Lazio",
-        "punctual_count": 335,
+        "punctual_count": 336,
         "punctual_mw": 6899.961,
         "terna_count": 5,
         "terna_mw": 6256.353,
         "terna_practices": 0,
         "total_mw": 13156.314,
-        "priority_score": 24.9
+        "priority_score": 25.0
       },
       {
         "region": "Puglia",
-        "punctual_count": 161,
-        "punctual_mw": 7567.679,
+        "punctual_count": 158,
+        "punctual_mw": 7380.784,
         "terna_count": 5,
         "terna_mw": 36092.939,
         "terna_practices": 0,
-        "total_mw": 43660.618,
-        "priority_score": 22.8
+        "total_mw": 43473.723,
+        "priority_score": 22.5
       },
       {
         "region": "Toscana",
-        "punctual_count": 296,
-        "punctual_mw": 4770.103,
+        "punctual_count": 282,
+        "punctual_mw": 4233.872,
         "terna_count": 5,
         "terna_mw": 4839.763,
         "terna_practices": 0,
-        "total_mw": 9609.866,
-        "priority_score": 20.5
+        "total_mw": 9073.635,
+        "priority_score": 19.3
       },
       {
         "region": "Emilia-Romagna",
         "punctual_count": 50,
-        "punctual_mw": 2222.513,
+        "punctual_mw": 2191.918,
         "terna_count": 5,
         "terna_mw": 7793.866,
         "terna_practices": 0,
-        "total_mw": 10016.379,
+        "total_mw": 9985.784,
         "priority_score": 6.3
       },
       {
         "region": "Lombardia",
-        "punctual_count": 76,
-        "punctual_mw": 1716.76,
+        "punctual_count": 77,
+        "punctual_mw": 1743.976,
         "terna_count": 4,
         "terna_mw": 3702.032,
         "terna_practices": 0,
-        "total_mw": 5418.792,
+        "total_mw": 5446.008,
         "priority_score": 6.3
       },
       {
@@ -167,13 +167,13 @@
       },
       {
         "region": "Veneto",
-        "punctual_count": 36,
-        "punctual_mw": 1497.363,
+        "punctual_count": 38,
+        "punctual_mw": 1587.89,
         "terna_count": 5,
         "terna_mw": 5872.546,
         "terna_practices": 0,
-        "total_mw": 7369.909,
-        "priority_score": 4.5
+        "total_mw": 7460.436,
+        "priority_score": 4.7
       },
       {
         "region": "Calabria",
@@ -244,6 +244,16 @@
         "terna_practices": 0,
         "total_mw": 302.6,
         "priority_score": 0.3
+      },
+      {
+        "region": "n/d",
+        "punctual_count": 1,
+        "punctual_mw": 20.452,
+        "terna_count": 0,
+        "terna_mw": 0.0,
+        "terna_practices": 0,
+        "total_mw": 20.452,
+        "priority_score": 0.1
       },
       {
         "region": "Abruzzo",
@@ -900,59 +910,59 @@
       ]
     },
     "quality": {
-      "punctual_records": 1483,
-      "missing_mw": 139,
-      "missing_region": 0,
-      "missing_province": 6,
-      "missing_municipality": 17,
+      "punctual_records": 1470,
+      "missing_mw": 140,
+      "missing_region": 1,
+      "missing_province": 7,
+      "missing_municipality": 16,
       "missing_url": 0,
-      "province_deduced": 49,
+      "province_deduced": 50,
       "municipalities_deduced": 5
     },
     "quality_by_source": [
       {
         "source": "lazio",
         "source_label": "Lazio",
-        "count": 320,
-        "missing_mw": 26,
+        "count": 321,
+        "missing_mw": 27,
         "missing_province": 0,
         "missing_municipality": 0,
         "province_deduced": 1,
         "municipalities_deduced": 1,
-        "completeness_pct": 97.3
+        "completeness_pct": 97.2
       },
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 306,
+        "count": 309,
         "missing_mw": 1,
-        "missing_province": 0,
+        "missing_province": 1,
         "missing_municipality": 3,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 99.6
-      },
-      {
-        "source": "toscana",
-        "source_label": "Toscana",
-        "count": 292,
-        "missing_mw": 0,
-        "missing_province": 0,
-        "missing_municipality": 0,
-        "province_deduced": 0,
-        "municipalities_deduced": 0,
-        "completeness_pct": 100.0
+        "completeness_pct": 99.5
       },
       {
         "source": "sicilia",
         "source_label": "Sicilia",
-        "count": 288,
+        "count": 286,
         "missing_mw": 93,
         "missing_province": 0,
         "missing_municipality": 0,
         "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 89.2
+      },
+      {
+        "source": "toscana",
+        "source_label": "Toscana",
+        "count": 278,
+        "missing_mw": 0,
+        "missing_province": 0,
+        "missing_municipality": 0,
+        "province_deduced": 0,
+        "municipalities_deduced": 0,
+        "completeness_pct": 100.0
       },
       {
         "source": "terna_econnextion",
@@ -968,24 +978,24 @@
       {
         "source": "lombardia",
         "source_label": "Lombardia",
-        "count": 74,
+        "count": 75,
         "missing_mw": 3,
         "missing_province": 5,
         "missing_municipality": 7,
         "province_deduced": 0,
         "municipalities_deduced": 2,
-        "completeness_pct": 93.2
+        "completeness_pct": 93.3
       },
       {
         "source": "puglia",
         "source_label": "Puglia",
-        "count": 70,
+        "count": 67,
         "missing_mw": 1,
         "missing_province": 0,
-        "missing_municipality": 4,
+        "missing_municipality": 3,
         "province_deduced": 3,
         "municipalities_deduced": 0,
-        "completeness_pct": 97.6
+        "completeness_pct": 98.0
       },
       {
         "source": "emilia_romagna",
@@ -1001,13 +1011,13 @@
       {
         "source": "veneto",
         "source_label": "Veneto",
-        "count": 26,
+        "count": 27,
         "missing_mw": 4,
         "missing_province": 0,
         "missing_municipality": 1,
-        "province_deduced": 26,
+        "province_deduced": 27,
         "municipalities_deduced": 0,
-        "completeness_pct": 93.6
+        "completeness_pct": 93.8
       },
       {
         "source": "calabria",
@@ -2140,7 +2150,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "AGRI PADULE",
+      "title": "[ID 2496] - Progetto di un impianto agrivoltaico avanzato avente potenza nominale di 128 MWp e relative opere di connessione alla rete di trasmissione nazionale, situato nel Comune di Sovicille (SI). Proponente: REVALUE PV 1 S.r.l.",
       "proponent": "REVALUE PV1 S.R.L.",
       "region": "Toscana",
       "province": "SI",
@@ -2148,7 +2158,7 @@
       "project_type": "AGRIVOLTAICO",
       "power_mw": 128.03,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -2156,44 +2166,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "AGRI PADULE"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481"
-      ],
-      "project_key": "prj:b2804fb0a29d939e"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2496] - Progetto di un impianto agrivoltaico avanzato avente potenza nominale di 128 MWp e relative opere di connessione alla rete di trasmissione nazionale, situato nel Comune di Sovicille (SI). Proponente: REVALUE PV 1 S.r.l.",
-      "proponent": "REVALUE PV 1 S.R.L.",
-      "region": "Toscana",
-      "province": "SI",
-      "municipalities": "SOVICILLE",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 128.0,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110",
-      "updated_at": "2026-06-22T14:07:36.926461",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "AGRI PADULE",
         "[ID 2496] - Progetto di un impianto agrivoltaico avanzato avente potenza nominale di 128 MWp e relative opere di connessione alla rete di trasmissione nazionale, situato nel Comune di Sovicille (SI). Proponente: REVALUE PV 1 S.r.l."
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12481",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=110"
       ],
       "project_key": "url:92c8d61d6422b7fb"
@@ -3473,7 +3455,7 @@
       "source": "sistema_puglia_energia",
       "source_group": "puglia",
       "source_label": "Puglia",
-      "title": "solar energy ventuno s.r.l - Minervino Murge, Venosa, Montemilone - 87.87 MW",
+      "title": "Progetto di un impianto agri-fotovoltaico della potenza di 87,78 MW e delle relative opere connesse necessarie al collegamento alla Rete di Trasmissione Nazionale, da realizzarsi nei Comuni di Minervino Murge (BT), in località Scapanizza, Venosa (PZ) e Montemilone (PZ).",
       "proponent": "solar energy ventuno s.r.l",
       "region": "Puglia",
       "province": "BT",
@@ -3489,47 +3471,19 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "sistema_puglia_energia"
+        "sistema_puglia_energia",
+        "mase"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "Progetto di un impianto agri-fotovoltaico della potenza di 87,78 MW e delle relative opere connesse necessarie al collegamento alla Rete di Trasmissione Nazionale, da realizzarsi nei Comuni di Minervino Murge (BT), in località Scapanizza, Venosa (PZ) e Montemilone (PZ).",
         "solar energy ventuno s.r.l - Minervino Murge, Venosa, Montemilone - 87.87 MW"
       ],
       "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8387",
         "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63472"
       ],
       "project_key": "url:d324c22dd8d1cf88"
-    },
-    {
-      "source": "mase",
-      "source_group": "mase",
-      "source_label": "MASE",
-      "title": "Progetto di un impianto agri-fotovoltaico della potenza di 87,78 MW e delle relative opere connesse necessarie al collegamento alla Rete di Trasmissione Nazionale, da realizzarsi nei Comuni di Minervino Murge (BT), in località Scapanizza, Venosa (PZ) e Montemilone (PZ).",
-      "proponent": "Solar Energy Ventuno S.r.l.",
-      "region": "Puglia",
-      "province": "BT",
-      "municipalities": "MINERVINO MURGE",
-      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
-      "power_mw": 87.78,
-      "status": "",
-      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8387",
-      "updated_at": "2026-08-31T06:28:48.554178",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "mase"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "Progetto di un impianto agri-fotovoltaico della potenza di 87,78 MW e delle relative opere connesse necessarie al collegamento alla Rete di Trasmissione Nazionale, da realizzarsi nei Comuni di Minervino Murge (BT), in località Scapanizza, Venosa (PZ) e Montemilone (PZ)."
-      ],
-      "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Oggetti/Info/8387"
-      ],
-      "project_key": "url:683ee2af59b2ef32"
     },
     {
       "source": "sicilia",
@@ -3613,13 +3567,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana"
+        "toscana",
+        "toscana_atos"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "FTV SUNPROJECT",
         "[ID 2469] Progetto di un impianto agrivoltaico avanzato avente potenza nominale di 86,20 MWp e relative opere di connessione alla rete di trasmissione nazionale, situato nel Comune di Sorano (GR). Proponente: SUNPROJECT DEV 6 S.r.l."
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=10148",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=88"
       ],
       "project_key": "url:28c91d4c3e97d16d"
@@ -3685,37 +3642,6 @@
         "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/19639"
       ],
       "project_key": "prj:8deaef6523f44689"
-    },
-    {
-      "source": "toscana_atos",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "FTV SUNPROJECT",
-      "proponent": "SUNPROJECT DEV 6 SRL",
-      "region": "Toscana",
-      "province": "GR",
-      "municipalities": "Sorano",
-      "project_type": "AGRIVOLTAICO",
-      "power_mw": 85.4,
-      "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=10148",
-      "updated_at": "2026-06-16T05:43:18.398047",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "FTV SUNPROJECT"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=10148"
-      ],
-      "project_key": "prj:e72559414cf3c60c"
     },
     {
       "source": "toscana_atos",
@@ -4372,7 +4298,7 @@
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
-      "title": "PROGETTO PER LA REALIZZAZIONE DI UN PARCO FOTOVOLTAICO DELLA POTENZA COMPLESSIVA DI 79,61 MW E RELATIVI CAVIDOTTI E SOTTOSTAZIONE",
+      "title": "Realizzazione ed esercizio di un impianto fotovoltaico della potenza di 79.61 MWp e di tutte le relative opere connesse ed infrastrutture , da realizzarsi nel Comune di Catania (CT) in C/da Sigona.",
       "proponent": "VATT ENERGY SRL",
       "region": "Sicilia",
       "province": "CT",
@@ -4380,7 +4306,7 @@
       "project_type": "Verifica di Assoggettabilita a VIA (art.19)",
       "power_mw": 79.61,
       "status": "",
-      "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=166&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8011",
       "updated_at": "2026-05-01T19:12:15.455684",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -4388,44 +4314,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "sicilia"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "PROGETTO PER LA REALIZZAZIONE DI UN PARCO FOTOVOLTAICO DELLA POTENZA COMPLESSIVA DI 79,61 MW E RELATIVI CAVIDOTTI E SOTTOSTAZIONE"
-      ],
-      "_dedupe_urls": [
-        "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=166&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-      ],
-      "project_key": "prj:66f898f67a7ef3e6"
-    },
-    {
-      "source": "mase",
-      "source_group": "mase",
-      "source_label": "MASE",
-      "title": "Realizzazione ed esercizio di un impianto fotovoltaico della potenza di 79.61 MWp e di tutte le relative opere connesse ed infrastrutture , da realizzarsi nel Comune di Catania (CT) in C/da Sigona.",
-      "proponent": "Vatt Energy s.r.l.",
-      "region": "Sicilia",
-      "province": "CT",
-      "municipalities": "CATANIA",
-      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
-      "power_mw": 79.61,
-      "status": "",
-      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8011",
-      "updated_at": "2026-08-31T06:28:48.554178",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "sicilia",
         "mase"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "PROGETTO PER LA REALIZZAZIONE DI UN PARCO FOTOVOLTAICO DELLA POTENZA COMPLESSIVA DI 79,61 MW E RELATIVI CAVIDOTTI E SOTTOSTAZIONE",
         "Realizzazione ed esercizio di un impianto fotovoltaico della potenza di 79.61 MWp e di tutte le relative opere connesse ed infrastrutture , da realizzarsi nel Comune di Catania (CT) in C/da Sigona."
       ],
       "_dedupe_urls": [
+        "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=166&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
         "https://va.mite.gov.it/it-IT/Oggetti/Info/8011"
       ],
       "project_key": "url:00886a0272e000cf"
@@ -5268,6 +5166,37 @@
       "project_key": "url:0e639993f29f6003"
     },
     {
+      "source": "veneto",
+      "source_group": "veneto",
+      "source_label": "Veneto",
+      "title": "Progetto di un impianto per la produzione elettrica da fonte solare di tipo agrivoltaico della potenza nominale pari a 70,237 MWP e potenza in immisisone pari a 61,8MW e relative opere di connessione. Comuni di localizzazione: Loreo (RO) e Cavarzare (VE)",
+      "proponent": "LARICE SRL",
+      "region": "Veneto",
+      "province": "VE",
+      "municipalities": "Loreo (RO), Cavarzare (VE)",
+      "project_type": "Progetto di un impianto per la produzione elettrica da fonte solare di tipo agrivoltaico della poten",
+      "power_mw": 70.237,
+      "status": "",
+      "url": "https://sharing.regione.veneto.it/index.php/s/BBQNWK7Ed8R4PJz",
+      "updated_at": "2026-10-21T09:54:32.366419",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": true,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "veneto"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto per la produzione elettrica da fonte solare di tipo agrivoltaico della potenza nominale pari a 70,237 MWP e potenza in immisisone pari a 61,8MW e relative opere di connessione. Comuni di localizzazione: Loreo (RO) e Cavarzare (VE)"
+      ],
+      "_dedupe_urls": [
+        "https://sharing.regione.veneto.it/index.php/s/BBQNWK7Ed8R4PJz"
+      ],
+      "project_key": "prj:bbad24c264206af5"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -6049,7 +5978,7 @@
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
-      "title": "PROGETTO DI UN IMPIANTO AGRO-FOTOVOLTAICO DA 66.073,6 KWP (50.000 KW IN IMMISSIONE) E DELLE RELATIVE OPERE CONNESSE, DA REALIZZARSI NEI COMUNI DI MAZARA DEL VALLO (TP) E MARSALA (TP) SOCIETÀ PROPONENTE: FW TURNA S.R.L.",
+      "title": "PROGETTO DI UN IMPIANTO AGRO-FOTOVOLTAICO DA 66.073,6 KWP (50.000 KW IN IMMISSIONE) E DELLE RELATIVE OPERE CONNESSE, DA REALIZZARSI NEI COMUNI DI MAZARA DEL VALLO (TP) E MARSALA (TP) SOCIETà PROPONENTE: FW TURNA S.R.L. - TP12 TP11 IF11",
       "proponent": "FW TURNA S.R.L",
       "region": "Sicilia",
       "province": "TP",
@@ -6067,42 +5996,13 @@
       "_merged_sources": [
         "sicilia"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
-        "PROGETTO DI UN IMPIANTO AGRO-FOTOVOLTAICO DA 66.073,6 KWP (50.000 KW IN IMMISSIONE) E DELLE RELATIVE OPERE CONNESSE, DA REALIZZARSI NEI COMUNI DI MAZARA DEL VALLO (TP) E MARSALA (TP) SOCIETÀ PROPONENTE: FW TURNA S.R.L."
-      ],
-      "_dedupe_urls": [
-        "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1302&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-      ],
-      "project_key": "prj:e7e466a0ee8c86bf"
-    },
-    {
-      "source": "sicilia",
-      "source_group": "sicilia",
-      "source_label": "Sicilia",
-      "title": "PROGETTO DI UN IMPIANTO AGRO-FOTOVOLTAICO DA 66.073,6 KWP (50.000 KW IN IMMISSIONE) E DELLE RELATIVE OPERE CONNESSE, DA REALIZZARSI NEI COMUNI DI MAZARA DEL VALLO (TP) E MARSALA (TP) SOCIETà PROPONENTE: FW TURNA S.R.L. - TP12 TP11 IF11",
-      "proponent": "FW TURNA S.R.L",
-      "region": "Sicilia",
-      "province": "TP",
-      "municipalities": "Mazara del Vallo, Marsala",
-      "project_type": "V.I.A. (art.23 - 27bis)",
-      "power_mw": 66.074,
-      "status": "",
-      "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=262&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-      "updated_at": "2026-05-01T19:12:15.455684",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "sicilia"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
+        "PROGETTO DI UN IMPIANTO AGRO-FOTOVOLTAICO DA 66.073,6 KWP (50.000 KW IN IMMISSIONE) E DELLE RELATIVE OPERE CONNESSE, DA REALIZZARSI NEI COMUNI DI MAZARA DEL VALLO (TP) E MARSALA (TP) SOCIETÀ PROPONENTE: FW TURNA S.R.L.",
         "PROGETTO DI UN IMPIANTO AGRO-FOTOVOLTAICO DA 66.073,6 KWP (50.000 KW IN IMMISSIONE) E DELLE RELATIVE OPERE CONNESSE, DA REALIZZARSI NEI COMUNI DI MAZARA DEL VALLO (TP) E MARSALA (TP) SOCIETà PROPONENTE: FW TURNA S.R.L. - TP12 TP11 IF11"
       ],
       "_dedupe_urls": [
+        "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1302&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=262&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:7b2fd035273d5a60"
@@ -6440,12 +6340,13 @@
       "_merged_sources": [
         "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
         "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"Deliceto HV\", della potenza di 63,78 MWp e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Bovino (FG), Castelluccio dei Sa"
       ],
       "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6228"
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6228",
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6505"
       ],
       "project_key": "url:37b6adea26aaabc6"
     },
@@ -8005,41 +7906,10 @@
       "project_key": "url:f2901961c3528fd6"
     },
     {
-      "source": "emilia_romagna",
-      "source_group": "emilia_romagna",
-      "source_label": "Emilia-Romagna",
-      "title": "[ID: 14443] PROCEDURA DI VALUTAZIONE DI IMPATTO AMBIENTALE RELATIVA AL PROGETTO DI UN IMPIANTO AGRIVOLTAICO PNRR DELLA POTENZA NOMINALE IN DC DI 55,07 MWP, INTEGRATO CON SISTEMA DI ACCUMULO DELLA POTENZA NOMINALE DI 21 MW (30 MVA) DENOMINATO \"ROANA\", DA REALIZZARSI NEI COMUNI DI ARIANO DEL POLESINE, MESOLA, CODIGORO NELLE PROVINCIE DI ROVIGO E FERRARA",
-      "proponent": "Pvexo Ercole S.R.L.",
-      "region": "Emilia-Romagna",
-      "province": "FE",
-      "municipalities": "Mesola, Ariano Del Polesine, Codigoro, Ferrara",
-      "project_type": "VIA Ministeriale",
-      "power_mw": 55.07,
-      "status": "",
-      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6822",
-      "updated_at": "2026-05-01T19:08:08.775542",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "emilia_romagna"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "[ID: 14443] PROCEDURA DI VALUTAZIONE DI IMPATTO AMBIENTALE RELATIVA AL PROGETTO DI UN IMPIANTO AGRIVOLTAICO PNRR DELLA POTENZA NOMINALE IN DC DI 55,07 MWP, INTEGRATO CON SISTEMA DI ACCUMULO DELLA POTENZA NOMINALE DI 21 MW (30 MVA) DENOMINATO \"ROANA\", DA REALIZZARSI NEI COMUNI DI ARIANO DEL POLESINE, MESOLA, CODIGORO NELLE PROVINCIE DI ROVIGO E FERRARA"
-      ],
-      "_dedupe_urls": [
-        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6822"
-      ],
-      "project_key": "url:ea13df2b34a2264f"
-    },
-    {
       "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
-      "title": "Impianto agrivoltaico PNRR della potenza nominale in DC di 55,07 MWp, integrato con sistema di accumulo della potenza nominale di 21 MW (30 MVA) denominato \"Roana\", da realizzarsi nei comuni di Ariano del Polesine, Mesola, Codigoro nelle provincie di Rovigo e Ferrara.",
+      "title": "[ID: 14443] PROCEDURA DI VALUTAZIONE DI IMPATTO AMBIENTALE RELATIVA AL PROGETTO DI UN IMPIANTO AGRIVOLTAICO PNRR DELLA POTENZA NOMINALE IN DC DI 55,07 MWP, INTEGRATO CON SISTEMA DI ACCUMULO DELLA POTENZA NOMINALE DI 21 MW (30 MVA) DENOMINATO \"ROANA\", DA REALIZZARSI NEI COMUNI DI ARIANO DEL POLESINE, MESOLA, CODIGORO NELLE PROVINCIE DI ROVIGO E FERRARA",
       "proponent": "PVEXO ERCOLE SRL",
       "region": "Emilia-Romagna",
       "province": "FE",
@@ -8055,16 +7925,19 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "mase"
+        "mase",
+        "emilia_romagna"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
-        "Impianto agrivoltaico PNRR della potenza nominale in DC di 55,07 MWp, integrato con sistema di accumulo della potenza nominale di 21 MW (30 MVA) denominato \"Roana\", da realizzarsi nei comuni di Ariano del Polesine, Mesola, Codigoro nelle provincie di Rovigo e Ferrara."
+        "Impianto agrivoltaico PNRR della potenza nominale in DC di 55,07 MWp, integrato con sistema di accumulo della potenza nominale di 21 MW (30 MVA) denominato \"Roana\", da realizzarsi nei comuni di Ariano del Polesine, Mesola, Codigoro nelle provincie di Rovigo e Ferrara.",
+        "[ID: 14443] PROCEDURA DI VALUTAZIONE DI IMPATTO AMBIENTALE RELATIVA AL PROGETTO DI UN IMPIANTO AGRIVOLTAICO PNRR DELLA POTENZA NOMINALE IN DC DI 55,07 MWP, INTEGRATO CON SISTEMA DI ACCUMULO DELLA POTENZA NOMINALE DI 21 MW (30 MVA) DENOMINATO \"ROANA\", DA REALIZZARSI NEI COMUNI DI ARIANO DEL POLESINE, MESOLA, CODIGORO NELLE PROVINCIE DI ROVIGO E FERRARA"
       ],
       "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6822",
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11923"
       ],
-      "project_key": "url:7d2efa9dfda4af5c"
+      "project_key": "src:82060ae70a69a821"
     },
     {
       "source": "mase_provvedimenti",
@@ -8088,12 +7961,13 @@
       "_merged_sources": [
         "mase_provvedimenti"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
         "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un nuovo impianto agro- fotovoltaico, della potenza di 55 MW, unito alle opere di connessione alla RTN, da realizzarsi nel Comune di Latiano (BR)."
       ],
       "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6321"
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6321",
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6499"
       ],
       "project_key": "url:bbcc88c3be1a1e98"
     },
@@ -8535,7 +8409,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV PARCO AGRIVOLTAICO AVANZATO DELLA TENUTA DI SAN CARLO",
+      "title": "[ID 2500] - Progetto \"Parco Agrivoltaico avanzato della Tenuta di San Carlo da 52,99MWp con sistema di accumulo da 16 MW (Grosseto-GR)”, nel Comune di Grosseto. Proponente: Naturgy Rinnovabili Italia S.r.l.",
       "proponent": "NATURGY RINNOVABILI ITALIA",
       "region": "Toscana",
       "province": "GR",
@@ -8543,7 +8417,7 @@
       "project_type": "AGRIVOLTAICO",
       "power_mw": 52.99,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12216",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/129",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -8551,44 +8425,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "FTV PARCO AGRIVOLTAICO AVANZATO DELLA TENUTA DI SAN CARLO"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12216"
-      ],
-      "project_key": "prj:cc205a279258c5a1"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2500] - Progetto \"Parco Agrivoltaico avanzato della Tenuta di San Carlo da 52,99MWp con sistema di accumulo da 16 MW (Grosseto-GR)”, nel Comune di Grosseto. Proponente: Naturgy Rinnovabili Italia S.r.l.",
-      "proponent": "Naturgy Rinnovabili Italia s.r.l",
-      "region": "Toscana",
-      "province": "GR",
-      "municipalities": "GROSSETO",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 52.99,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/129",
-      "updated_at": "2026-06-22T14:07:36.926461",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "FTV PARCO AGRIVOLTAICO AVANZATO DELLA TENUTA DI SAN CARLO",
         "[ID 2500] - Progetto \"Parco Agrivoltaico avanzato della Tenuta di San Carlo da 52,99MWp con sistema di accumulo da 16 MW (Grosseto-GR)”, nel Comune di Grosseto. Proponente: Naturgy Rinnovabili Italia S.r.l."
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12216",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=129"
       ],
       "project_key": "url:390c2f84deb08db0"
@@ -9094,7 +8940,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "AGRI PONSACCO PONTEDERA CAPANNOLI",
+      "title": "[ID 2588] - Verifica di assoggettabilita' a VIA, relativamente al progetto impianto agrivoltaico denominato \"Ponsacco” di potenza pari a 50,8 MWp e relative opere di connessione alla rete elettrica nazionale, sito nei Comuni di Ponsacco (PI) e Pontedera (PI). Proponente: Apollo Solar7 S.r.l. [GEA 14075]",
       "proponent": "APOLLO SOLAR7 S.R.L.",
       "region": "Toscana",
       "province": "PI",
@@ -9102,7 +8948,7 @@
       "project_type": "AGRIVOLTAICO",
       "power_mw": 50.8,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12521",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/191",
       "updated_at": "2026-08-31T06:22:20.396661",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -9110,44 +8956,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "AGRI PONSACCO PONTEDERA CAPANNOLI"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12521"
-      ],
-      "project_key": "prj:9b4498b1127f86ec"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2588] - Verifica di assoggettabilita' a VIA, relativamente al progetto impianto agrivoltaico denominato \"Ponsacco” di potenza pari a 50,8 MWp e relative opere di connessione alla rete elettrica nazionale, sito nei Comuni di Ponsacco (PI) e Pontedera (PI). Proponente: Apollo Solar7 S.r.l. [GEA 14075]",
-      "proponent": "APOLLO SOLAR 7 SRL",
-      "region": "Toscana",
-      "province": "PI",
-      "municipalities": "PONSACCO, PONTEDERA",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 50.8,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/191",
-      "updated_at": "2026-06-23T17:25:53.081517",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "AGRI PONSACCO PONTEDERA CAPANNOLI",
         "[ID 2588] - Verifica di assoggettabilita' a VIA, relativamente al progetto impianto agrivoltaico denominato \"Ponsacco” di potenza pari a 50,8 MWp e relative opere di connessione alla rete elettrica nazionale, sito nei Comuni di Ponsacco (PI) e Pontedera (PI). Proponente: Apollo Solar7 S.r.l. [GEA 14075]"
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12521",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=191"
       ],
       "project_key": "url:5b29f96cfe16d1e7"
@@ -9156,7 +8974,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV MARCIANELLA",
+      "title": "[ID 2503] Progetto di costruzione di un impianto agrivoltaico integrato da un sistema di accumulo (B.E.S.S.) denominato \"Marcianella” e delle relative opere di connessione alla RTN, di potenza 50 MW, da realizzarsi nei comuni di Chiusi e Montepulciano (SI). Proponente: SONNEDIX EUREKA S.R.L",
       "proponent": "SONNEDIX EUREKA",
       "region": "Toscana",
       "province": "SI",
@@ -9164,7 +8982,7 @@
       "project_type": "FOTOVOLTAICO",
       "power_mw": 50.79,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=7196",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/147",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -9172,16 +8990,19 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
+        "toscana_atos",
+        "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
-        "FTV MARCIANELLA"
+        "FTV MARCIANELLA",
+        "[ID 2503] Progetto di costruzione di un impianto agrivoltaico integrato da un sistema di accumulo (B.E.S.S.) denominato \"Marcianella” e delle relative opere di connessione alla RTN, di potenza 50 MW, da realizzarsi nei comuni di Chiusi e Montepulciano (SI). Proponente: SONNEDIX EUREKA S.R.L"
       ],
       "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=7196"
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=7196",
+        "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=147"
       ],
-      "project_key": "prj:10abb30e06d21658"
+      "project_key": "url:658eb8d07b72ff1a"
     },
     {
       "source": "mase_provvedimenti",
@@ -9369,37 +9190,6 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6413"
       ],
       "project_key": "url:34789512d8caf9cc"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2503] Progetto di costruzione di un impianto agrivoltaico integrato da un sistema di accumulo (B.E.S.S.) denominato \"Marcianella” e delle relative opere di connessione alla RTN, di potenza 50 MW, da realizzarsi nei comuni di Chiusi e Montepulciano (SI). Proponente: SONNEDIX EUREKA S.R.L",
-      "proponent": "SONNEDIX EUREKA SRL",
-      "region": "Toscana",
-      "province": "SI",
-      "municipalities": "CHIUSI, MONTEPULCIANO",
-      "project_type": "Valutazione di Impatto Ambientale",
-      "power_mw": 50.0,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/147",
-      "updated_at": "2026-05-01T19:19:34.173362",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "toscana"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "[ID 2503] Progetto di costruzione di un impianto agrivoltaico integrato da un sistema di accumulo (B.E.S.S.) denominato \"Marcianella” e delle relative opere di connessione alla RTN, di potenza 50 MW, da realizzarsi nei comuni di Chiusi e Montepulciano (SI). Proponente: SONNEDIX EUREKA S.R.L"
-      ],
-      "_dedupe_urls": [
-        "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=147"
-      ],
-      "project_key": "url:658eb8d07b72ff1a"
     },
     {
       "source": "lazio",
@@ -9823,7 +9613,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-10-15T13:57:57.341446",
+      "updated_at": "2026-10-21T10:06:15.710383",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -10078,47 +9868,19 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "mase"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "Progetto di un impianto agrivoltaico denominato \"Lotto 9\", di potenza pari a 48,917 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Latiano (BR)."
-      ],
-      "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Oggetti/Info/9575"
-      ],
-      "project_key": "url:4f9340c4085e70b2"
-    },
-    {
-      "source": "sistema_puglia_energia",
-      "source_group": "puglia",
-      "source_label": "Puglia",
-      "title": "elettrasol s.r.l - BR - 48.888 MW",
-      "proponent": "elettrasol s.r.l",
-      "region": "Puglia",
-      "province": "BR",
-      "municipalities": "",
-      "project_type": "Autorizzazione Unica",
-      "power_mw": 48.888,
-      "status": "",
-      "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=64125",
-      "updated_at": "2026-05-01T19:17:06.517825",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "mase",
         "sistema_puglia_energia"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "Progetto di un impianto agrivoltaico denominato \"Lotto 9\", di potenza pari a 48,917 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Latiano (BR).",
         "elettrasol s.r.l - BR - 48.888 MW"
       ],
       "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/9575",
         "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=64125"
       ],
-      "project_key": "url:0c39e0bd2d29e42c"
+      "project_key": "url:4f9340c4085e70b2"
     },
     {
       "source": "mase",
@@ -10305,6 +10067,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6091"
       ],
       "project_key": "url:84f96b04c4d3f69e"
+    },
+    {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un impianto agrivoltaico, denominato \"Lentini agricolo\", della potenza di 48.444,48 kWp, e relative opere di connessione alla RTN, da realizzarsi nei Comuni di Lentini (SR) e Catania (CT)",
+      "proponent": "Lentini Agricola Srl",
+      "region": "Sicilia",
+      "province": "CT",
+      "municipalities": "LENTINI",
+      "project_type": "Agrivoltaico",
+      "power_mw": 48.444,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12210",
+      "updated_at": "2026-10-21T10:14:31.311845",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un impianto agrivoltaico, denominato \"Lentini agricolo\", della potenza di 48.444,48 kWp, e relative opere di connessione alla RTN, da realizzarsi nei Comuni di Lentini (SR) e Catania (CT)"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/12210"
+      ],
+      "project_key": "url:a47b9ca605e62d9e"
     },
     {
       "source": "lazio",
@@ -11181,7 +10974,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV LE ROGAIE",
+      "title": "Sistema Agrivoltaico Avanzato AGV Le Rogaie (Grosseto)",
       "proponent": "LE ROGAIE SOCIETà AGRICOLA",
       "region": "Toscana",
       "province": "GR",
@@ -11189,7 +10982,7 @@
       "project_type": "AGRIVOLTAICO",
       "power_mw": 44.99,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=4202",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9645",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -11197,16 +10990,19 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
+        "toscana_atos",
+        "mase"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
-        "FTV LE ROGAIE"
+        "FTV LE ROGAIE",
+        "Sistema Agrivoltaico Avanzato AGV Le Rogaie (Grosseto)"
       ],
       "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=4202"
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=4202",
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/9645"
       ],
-      "project_key": "prj:69e1cac7bd875cbd"
+      "project_key": "url:e1a34248abad5d00"
     },
     {
       "source": "mase",
@@ -11321,47 +11117,19 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "mase"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "Progetto di un impianto agrovoltaico, con contestuale utilizzo del terreno ad attività agricola di qualità, apicoltura ed attività sociali, della potenza elettrica di 44,51 MW DC e 36 MW AC, da realizzarsi nel comune di Lucera (FG), in località \"Vaccarella\", e delle relative opere connesse, ricadenti anche nel comune di Foggia (FG)."
-      ],
-      "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Oggetti/Info/8182"
-      ],
-      "project_key": "url:f7e4cb92957ef48b"
-    },
-    {
-      "source": "sistema_puglia_energia",
-      "source_group": "puglia",
-      "source_label": "Puglia",
-      "title": "ine vaccarella s.r.l - Lucera, Foggia - 44.48912 MW",
-      "proponent": "ine vaccarella s.r.l",
-      "region": "Puglia",
-      "province": "FG",
-      "municipalities": "Lucera, Foggia",
-      "project_type": "Autorizzazione Unica",
-      "power_mw": 44.489,
-      "status": "",
-      "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63809",
-      "updated_at": "2026-05-01T19:17:06.517825",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "mase",
         "sistema_puglia_energia"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "Progetto di un impianto agrovoltaico, con contestuale utilizzo del terreno ad attività agricola di qualità, apicoltura ed attività sociali, della potenza elettrica di 44,51 MW DC e 36 MW AC, da realizzarsi nel comune di Lucera (FG), in località \"Vaccarella\", e delle relative opere connesse, ricadenti anche nel comune di Foggia (FG).",
         "ine vaccarella s.r.l - Lucera, Foggia - 44.48912 MW"
       ],
       "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8182",
         "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63809"
       ],
-      "project_key": "url:a246b069737f4c3a"
+      "project_key": "url:f7e4cb92957ef48b"
     },
     {
       "source": "toscana_atos",
@@ -11551,37 +11319,6 @@
       "project_key": "url:9df93ba7c90bdfa6"
     },
     {
-      "source": "sistema_puglia_energia",
-      "source_group": "puglia",
-      "source_label": "Puglia",
-      "title": "opdenergy tavoliere 1 s.r.l - Foggia, Manfredonia - 43.762 MW",
-      "proponent": "opdenergy tavoliere 1 s.r.l",
-      "region": "Puglia",
-      "province": "FG",
-      "municipalities": "Foggia, Manfredonia",
-      "project_type": "Autorizzazione Unica",
-      "power_mw": 43.762,
-      "status": "",
-      "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63253",
-      "updated_at": "2026-05-01T19:17:06.517825",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "sistema_puglia_energia"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "opdenergy tavoliere 1 s.r.l - Foggia, Manfredonia - 43.762 MW"
-      ],
-      "_dedupe_urls": [
-        "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63253"
-      ],
-      "project_key": "url:dd22831aac4d576d"
-    },
-    {
       "source": "mase",
       "source_group": "mase",
       "source_label": "MASE",
@@ -11601,14 +11338,17 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "mase"
+        "mase",
+        "sistema_puglia_energia"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
-        "Progetto di un impianto agrivoltaico, denominato \"Tavoliere 1\", della potenza di 43,762 MW, e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Foggia (FG) località C.Savano-C.se de Martino, e di Manfredonia (FG)."
+        "Progetto di un impianto agrivoltaico, denominato \"Tavoliere 1\", della potenza di 43,762 MW, e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Foggia (FG) località C.Savano-C.se de Martino, e di Manfredonia (FG).",
+        "opdenergy tavoliere 1 s.r.l - Foggia, Manfredonia - 43.762 MW"
       ],
       "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Oggetti/Info/8425"
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8425",
+        "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63253"
       ],
       "project_key": "url:9e2234219300c381"
     },
@@ -13079,7 +12819,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV MONTEPULCIANO",
+      "title": "[ID 2512] Progetto di un impianto agrivoltaico avanzato avente potenza di picco pari a 39.312,0 kWp e relative opere di connessione alla rete di trasmissione nazionale, situato nel Comune di Montepulciano (SI). Proponente: K2 SOLAR S.r.l.",
       "proponent": "K2 SOLAR",
       "region": "Toscana",
       "province": "SI",
@@ -13087,7 +12827,7 @@
       "project_type": "AGRIVOLTAICO",
       "power_mw": 39.312,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12217",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/128",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -13095,44 +12835,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "FTV MONTEPULCIANO"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12217"
-      ],
-      "project_key": "prj:97087b99300642bd"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2512] Progetto di un impianto agrivoltaico avanzato avente potenza di picco pari a 39.312,0 kWp e relative opere di connessione alla rete di trasmissione nazionale, situato nel Comune di Montepulciano (SI). Proponente: K2 SOLAR S.r.l.",
-      "proponent": "k2solar",
-      "region": "Toscana",
-      "province": "SI",
-      "municipalities": "MONTEPULCIANO, SINALUNGA",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 39.312,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/128",
-      "updated_at": "2026-06-22T14:07:36.926461",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "FTV MONTEPULCIANO",
         "[ID 2512] Progetto di un impianto agrivoltaico avanzato avente potenza di picco pari a 39.312,0 kWp e relative opere di connessione alla rete di trasmissione nazionale, situato nel Comune di Montepulciano (SI). Proponente: K2 SOLAR S.r.l."
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12217",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=128"
       ],
       "project_key": "url:3eb6e46e0ca99151"
@@ -14828,6 +14540,37 @@
       "project_key": "url:ee8d9f534a9f6f96"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"FESTA\", della potenza di 34,575 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Troia (FG).",
+      "proponent": "VESPERA DEVELOPMENT 06 S.r.l.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "Troia",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 34.575,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6504",
+      "updated_at": "2026-10-21T10:18:08.198461",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"FESTA\", della potenza di 34,575 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Troia (FG)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6504"
+      ],
+      "project_key": "url:2ed4d91afa1bafd0"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -15322,6 +15065,37 @@
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12477"
       ],
       "project_key": "prj:507dab39fadf362e"
+    },
+    {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Modifica al progetto per la realizzazione di un impianto agrofotovoltaico denominato \"BIDDINE\" con potenza pari a 32,24 MWp e del relativo BESS da realizzarsi nel comune di Acate (RG) in località C.da Biddine e delle relative opere di connessione ricadenti nei comuni di Acate (RG) e Vittoria (RG) [ID 10620]",
+      "proponent": "Renantis Sicilia S.r.l.",
+      "region": "Sicilia",
+      "province": "RG",
+      "municipalities": "ACATE",
+      "project_type": "Agrivoltaico",
+      "power_mw": 32.24,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12211",
+      "updated_at": "2026-10-21T10:14:31.311845",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Modifica al progetto per la realizzazione di un impianto agrofotovoltaico denominato \"BIDDINE\" con potenza pari a 32,24 MWp e del relativo BESS da realizzarsi nel comune di Acate (RG) in località C.da Biddine e delle relative opere di connessione ricadenti nei comuni di Acate (RG) e Vittoria (RG) [ID 10620]"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/12211"
+      ],
+      "project_key": "src:fd3ea2be5aac2429"
     },
     {
       "source": "toscana_atos",
@@ -16618,7 +16392,7 @@
       "power_mw": 28.43,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=20236&idProvenienza=2",
-      "updated_at": "2026-05-01T19:09:14.947862",
+      "updated_at": "2026-10-21T09:55:06.581113",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -16976,6 +16750,37 @@
         "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=64119"
       ],
       "project_key": "url:625933e5ac75073b"
+    },
+    {
+      "source": "lombardia",
+      "source_group": "lombardia",
+      "source_label": "Lombardia",
+      "title": "Impianto agrivoltaico ibrido di potenza nominale complessiva dell’impianto è pari a 27,216 MW, situato nel comune di Assago (MI), frazione La Bazzanella, su superficie di circa 36 ettari. Il progetto ricade in area agricola sito tra la tangenziale ovest di Milano (a Nord dell'area di progetto) e l'autostrada A7 (ad est dell'area di progetto).",
+      "proponent": "OPERATION ENERGY S.R.L., O IN FORMA ABBREVIATA, OPEN S.R.L.; LA BAZZANELLA SOCIETA' AGRICOLA SRL",
+      "region": "Lombardia",
+      "province": "MI",
+      "municipalities": "Assago",
+      "project_type": "V.E.R. Provinciali",
+      "power_mw": 27.216,
+      "status": "",
+      "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=21007&idProvenienza=2",
+      "updated_at": "2026-10-21T09:55:06.581113",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lombardia"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrivoltaico ibrido di potenza nominale complessiva dell’impianto è pari a 27,216 MW, situato nel comune di Assago (MI), frazione La Bazzanella, su superficie di circa 36 ettari. Il progetto ricade in area agricola sito tra la tangenziale ovest di Milano (a Nord dell'area di progetto) e l'autostrada A7 (ad est dell'area di progetto)."
+      ],
+      "_dedupe_urls": [
+        "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/21007"
+      ],
+      "project_key": "prj:e8adaa1067f361af"
     },
     {
       "source": "toscana_atos",
@@ -17858,7 +17663,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-10-15T13:57:57.341446",
+      "updated_at": "2026-10-21T10:06:15.710383",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -18261,7 +18066,7 @@
       "power_mw": 24.602,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=21937&idProvenienza=2",
-      "updated_at": "2026-09-24T08:17:06.678306",
+      "updated_at": "2026-10-21T09:55:06.581113",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -18309,6 +18114,37 @@
         "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7005"
       ],
       "project_key": "url:fdc8f8218b2e7f25"
+    },
+    {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "ARPAE IMPIANTO FOTOVOLTAICO DENOMINATO “TERRE DEL RENO” DI POTENZA 24.474,96 KW LOCALIZZATO NEL COMUNE DI TERRE DEL RENO (FE) PROPOSTO DA AIEM GREEN S.R.L.",
+      "proponent": "Aiem Green s.r.l., AG 30 S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "FE",
+      "municipalities": "Terre Del Reno, Terre Del Reno Proposto Da Aiem Green S",
+      "project_type": "VIA",
+      "power_mw": 24.475,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6492",
+      "updated_at": "2026-10-21T09:54:46.050786",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "ARPAE IMPIANTO FOTOVOLTAICO DENOMINATO “TERRE DEL RENO” DI POTENZA 24.474,96 KW LOCALIZZATO NEL COMUNE DI TERRE DEL RENO (FE) PROPOSTO DA AIEM GREEN S.R.L."
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6492"
+      ],
+      "project_key": "url:53eff3342978b586"
     },
     {
       "source": "toscana_atos",
@@ -18996,7 +18832,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV LA MERLINA",
+      "title": "[ID 2519] Progetto per la realizzazione di un impianto agrivoltaico avanzato di potenza 22,465 MWp, sito in loc. La Merlina nel Comune di Gavorrano (GR) ed opere di connessione poste anche nei Comuni di Scarlino e di Follonica (GR); proponente: SPV Energy E33 Srl.",
       "proponent": "SPV ENERGY E33",
       "region": "Toscana",
       "province": "GR",
@@ -19004,7 +18840,7 @@
       "project_type": "AGRIVOLTAICO",
       "power_mw": 22.465,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12213",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/131",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -19012,44 +18848,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "FTV LA MERLINA"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12213"
-      ],
-      "project_key": "prj:33fad081e15e4768"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2519] Progetto per la realizzazione di un impianto agrivoltaico avanzato di potenza 22,465 MWp, sito in loc. La Merlina nel Comune di Gavorrano (GR) ed opere di connessione poste anche nei Comuni di Scarlino e di Follonica (GR); proponente: SPV Energy E33 Srl.",
-      "proponent": "SPV ENERGY E33 SRL",
-      "region": "Toscana",
-      "province": "GR",
-      "municipalities": "GAVORRANO, SCARLINO, FOLLONICA",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 22.465,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/131",
-      "updated_at": "2026-06-22T14:07:36.926461",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "FTV LA MERLINA",
         "[ID 2519] Progetto per la realizzazione di un impianto agrivoltaico avanzato di potenza 22,465 MWp, sito in loc. La Merlina nel Comune di Gavorrano (GR) ed opere di connessione poste anche nei Comuni di Scarlino e di Follonica (GR); proponente: SPV Energy E33 Srl."
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12213",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=131"
       ],
       "project_key": "url:fc50fd136e80807b"
@@ -19120,7 +18928,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV CAVAZZA",
+      "title": "[ID 2517] - Progetto di impianto agrivoltaico avanzato di potenza pari a 22,238 MWp circa, sito in Loc. Podere Cavazza, nel Comune di Grosseto. Proponente: SPV Energy 4 S.r.l.",
       "proponent": "SPV ENERGY 4",
       "region": "Toscana",
       "province": "GR",
@@ -19128,7 +18936,7 @@
       "project_type": "AGRIVOLTAICO",
       "power_mw": 22.238,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12215",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/130",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -19136,44 +18944,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "FTV CAVAZZA"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12215"
-      ],
-      "project_key": "prj:5fe0e4a1ad3e6662"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2517] - Progetto di impianto agrivoltaico avanzato di potenza pari a 22,238 MWp circa, sito in Loc. Podere Cavazza, nel Comune di Grosseto. Proponente: SPV Energy 4 S.r.l.",
-      "proponent": "SPV ENERGY 4",
-      "region": "Toscana",
-      "province": "GR",
-      "municipalities": "GROSSETO",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 22.238,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/130",
-      "updated_at": "2026-06-22T14:07:36.926461",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "FTV CAVAZZA",
         "[ID 2517] - Progetto di impianto agrivoltaico avanzato di potenza pari a 22,238 MWp circa, sito in Loc. Podere Cavazza, nel Comune di Grosseto. Proponente: SPV Energy 4 S.r.l."
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12215",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=130"
       ],
       "project_key": "url:5d8c423f2d3a2182"
@@ -19709,6 +19489,37 @@
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di realizzazione di un nuovo impianto agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo (storage system) della potenza massima complessiva di 20,452 MW da realizzarsi nei com",
+      "proponent": "Eridano S.r.l.",
+      "region": "",
+      "province": "",
+      "municipalities": "Loreo, Adria",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 20.452,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6493",
+      "updated_at": "2026-10-21T10:18:08.198461",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di realizzazione di un nuovo impianto agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo (storage system) della potenza massima complessiva di 20,452 MW da realizzarsi nei com"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6493"
+      ],
+      "project_key": "url:d250d7f2c250f147"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
       "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico, della potenza di 20,44 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Veglie, Salice Salentino (LE).",
       "proponent": "FLYNIS PV 10 S.r.l.",
       "region": "Puglia",
@@ -19766,6 +19577,37 @@
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=663&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:ef71552d6308c1d0"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la costruzione ed esercizio di un impianto fotovoltaico, di potenza pari a 20,29 MW, comprensivo delle opere di connessione alla RTN, della futura stazione di trasformazione MT/AT e delle relative i",
+      "proponent": "EG Solstizio S.r.l.",
+      "region": "Veneto",
+      "province": "PD",
+      "municipalities": "Sant'urbano",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 20.29,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6500",
+      "updated_at": "2026-10-21T10:18:08.198461",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la costruzione ed esercizio di un impianto fotovoltaico, di potenza pari a 20,29 MW, comprensivo delle opere di connessione alla RTN, della futura stazione di trasformazione MT/AT e delle relative i"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6500"
+      ],
+      "project_key": "url:a6aec943f5f3c21d"
     },
     {
       "source": "lazio",
@@ -20121,7 +19963,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-10-15T13:57:57.341446",
+      "updated_at": "2026-10-21T10:06:15.710383",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -20237,7 +20079,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV MORTAIOLO",
+      "title": "[ID 2415] - Progetto di impianto agrivoltaico della potenza nominale di 19.995 kWp e relative opere di connessione alla rete elettrica, posto in loc. Mortaiolo, nel Comune di Collesalvetti (LI) - Proponente: SPV ENERGY 2 SRL",
       "proponent": "SPV ENERGY 2",
       "region": "Toscana",
       "province": "LI",
@@ -20245,7 +20087,7 @@
       "project_type": "FOTOVOLTAICO",
       "power_mw": 19.995,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=7208",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/43",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -20253,44 +20095,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "FTV MORTAIOLO"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=7208"
-      ],
-      "project_key": "prj:781f2748dcca21da"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2415] - Progetto di impianto agrivoltaico della potenza nominale di 19.995 kWp e relative opere di connessione alla rete elettrica, posto in loc. Mortaiolo, nel Comune di Collesalvetti (LI) - Proponente: SPV ENERGY 2 SRL",
-      "proponent": "SPV ENERGY 2 SRL",
-      "region": "Toscana",
-      "province": "LI",
-      "municipalities": "COLLESALVETTI",
-      "project_type": "Verifica di Assoggettabilità (D.Lgs. 152/2006 art. 19, L.R. 10/2010 art. 48)",
-      "power_mw": 19.995,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/43",
-      "updated_at": "2026-06-22T14:07:36.926461",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "FTV MORTAIOLO",
         "[ID 2415] - Progetto di impianto agrivoltaico della potenza nominale di 19.995 kWp e relative opere di connessione alla rete elettrica, posto in loc. Mortaiolo, nel Comune di Collesalvetti (LI) - Proponente: SPV ENERGY 2 SRL"
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=7208",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=43"
       ],
       "project_key": "url:a2017f7925d1f4b3"
@@ -21891,6 +21705,37 @@
       "project_key": "url:bb3d0f9df540fd1d"
     },
     {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto di agrovoltaico della potenza nominale in DC di 19,019 MW e potenza in AC di 16,128 MW denominato \"Sicilia\" in agro di Brindisi in località Specchia e delle relative opere di c",
+      "proponent": "Sicilia S.r.l.",
+      "region": "Puglia",
+      "province": "BR",
+      "municipalities": "Brindisi",
+      "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
+      "power_mw": 19.019,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6497",
+      "updated_at": "2026-10-21T10:18:08.198461",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto di agrovoltaico della potenza nominale in DC di 19,019 MW e potenza in AC di 16,128 MW denominato \"Sicilia\" in agro di Brindisi in località Specchia e delle relative opere di c"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6497"
+      ],
+      "project_key": "url:45355b58bface927"
+    },
+    {
       "source": "veneto",
       "source_group": "veneto",
       "source_label": "Veneto",
@@ -22055,7 +21900,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV LA PRESA GRANDE",
+      "title": "[ID 2474] Progetto per la realizzazione di un impianto agrivoltaico avanzato di potenza pari a 18.920 KWP sito in Comune di Casciana Terme Lari (PI) – Loc. \"la Presa Grande” e opere connesse nel comune di Cascina - Proponente: SPV ENERGY E32 SRL",
       "proponent": "SPV ENERGY E32",
       "region": "Toscana",
       "province": "PI",
@@ -22063,7 +21908,7 @@
       "project_type": "AGRIVOLTAICO",
       "power_mw": 18.92,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12219",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/98",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -22071,44 +21916,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "FTV LA PRESA GRANDE"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12219"
-      ],
-      "project_key": "prj:6d92be1c6c429540"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2474] Progetto per la realizzazione di un impianto agrivoltaico avanzato di potenza pari a 18.920 KWP sito in Comune di Casciana Terme Lari (PI) – Loc. \"la Presa Grande” e opere connesse nel comune di Cascina - Proponente: SPV ENERGY E32 SRL",
-      "proponent": "SPV ENERGY E32 SRL",
-      "region": "Toscana",
-      "province": "PI",
-      "municipalities": "CASCIANA TERME LARI, CASCINA",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 18.92,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/98",
-      "updated_at": "2026-06-22T14:07:36.926461",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "FTV LA PRESA GRANDE",
         "[ID 2474] Progetto per la realizzazione di un impianto agrivoltaico avanzato di potenza pari a 18.920 KWP sito in Comune di Casciana Terme Lari (PI) – Loc. \"la Presa Grande” e opere connesse nel comune di Cascina - Proponente: SPV ENERGY E32 SRL"
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12219",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=98"
       ],
       "project_key": "url:d5b29e138332b0d5"
@@ -22427,7 +22244,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV ORBETELLO",
+      "title": "[ID 2498] Progetto per la realizzazione di un impianto agrivoltaico di potenza pari a 18,33 MWp e relative opere di connessione alla rete elettrica nazionale, sito nel Comune di Orbetello (GR). Proponente: Naturgy Rinnovabili Italia S.r.l.",
       "proponent": "NATURGY RINNOVABILI ITALIA",
       "region": "Toscana",
       "province": "GR",
@@ -22435,7 +22252,7 @@
       "project_type": "AGRIVOLTAICO",
       "power_mw": 18.33,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12214",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/113",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -22443,44 +22260,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "FTV ORBETELLO"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12214"
-      ],
-      "project_key": "prj:75270f1ce6cd3848"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2498] Progetto per la realizzazione di un impianto agrivoltaico di potenza pari a 18,33 MWp e relative opere di connessione alla rete elettrica nazionale, sito nel Comune di Orbetello (GR). Proponente: Naturgy Rinnovabili Italia S.r.l.",
-      "proponent": "NATURGY RINNOVABILI ITALIA S.R.L.",
-      "region": "Toscana",
-      "province": "GR",
-      "municipalities": "ORBETELLO",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 18.33,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/113",
-      "updated_at": "2026-06-22T14:07:36.926461",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "FTV ORBETELLO",
         "[ID 2498] Progetto per la realizzazione di un impianto agrivoltaico di potenza pari a 18,33 MWp e relative opere di connessione alla rete elettrica nazionale, sito nel Comune di Orbetello (GR). Proponente: Naturgy Rinnovabili Italia S.r.l."
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12214",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=113"
       ],
       "project_key": "url:d15b0d417b66effa"
@@ -22892,7 +22681,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV CAMPO LOMBARDO",
+      "title": "[ID 2468] - Progetto per la realizzazione di un impianto agrivoltaico avanzato denominato \"Campo Lombardo” di potenza pari a 17,8 MWp e relative opere connesse nel comune di Castiglione della Pescaia (GR). Proponente: Edison Rinnovabili S.p.a.",
       "proponent": "EDISON RINNOVABILI",
       "region": "Toscana",
       "province": "GR",
@@ -22900,7 +22689,7 @@
       "project_type": "FOTOVOLTAICO",
       "power_mw": 17.8,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=10149",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/79",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -22908,44 +22697,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "FTV CAMPO LOMBARDO"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=10149"
-      ],
-      "project_key": "prj:ca6d5aa4cfc37670"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2468] - Progetto per la realizzazione di un impianto agrivoltaico avanzato denominato \"Campo Lombardo” di potenza pari a 17,8 MWp e relative opere connesse nel comune di Castiglione della Pescaia (GR). Proponente: Edison Rinnovabili S.p.a.",
-      "proponent": "Edison Rinnovabili S.p.A.",
-      "region": "Toscana",
-      "province": "GR",
-      "municipalities": "CASTIGLIONE DELLA PESCAIA",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 17.8,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/79",
-      "updated_at": "2026-06-22T14:07:36.926461",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "FTV CAMPO LOMBARDO",
         "[ID 2468] - Progetto per la realizzazione di un impianto agrivoltaico avanzato denominato \"Campo Lombardo” di potenza pari a 17,8 MWp e relative opere connesse nel comune di Castiglione della Pescaia (GR). Proponente: Edison Rinnovabili S.p.a."
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=10149",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=79"
       ],
       "project_key": "url:da62ff5440a06423"
@@ -24141,7 +23902,7 @@
       "source": "sistema_puglia_energia",
       "source_group": "puglia",
       "source_label": "Puglia",
-      "title": "asellus s.r.l - Avetrana, Erchie, San Pancrazio Salentino - 15.575 MW",
+      "title": "Progetto di un impianto agrofotovoltaico, denominato \"03\", avente potenza nominale pari a 15,57 MW da realizzarsi nel Comune di Avetrana (TA), e delle relative opere di connessione che ricadono nei Comuni di Erchie (BR), Avetrana (TA) e San Pancrazio Salentino (BR).",
       "proponent": "asellus s.r.l",
       "region": "Puglia",
       "province": "TA",
@@ -24157,47 +23918,19 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "sistema_puglia_energia"
+        "sistema_puglia_energia",
+        "mase"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "Progetto di un impianto agrofotovoltaico, denominato \"03\", avente potenza nominale pari a 15,57 MW da realizzarsi nel Comune di Avetrana (TA), e delle relative opere di connessione che ricadono nei Comuni di Erchie (BR), Avetrana (TA) e San Pancrazio Salentino (BR).",
         "asellus s.r.l - Avetrana, Erchie, San Pancrazio Salentino - 15.575 MW"
       ],
       "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8413",
         "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63446"
       ],
       "project_key": "url:b606c3b5ad4de15f"
-    },
-    {
-      "source": "mase",
-      "source_group": "mase",
-      "source_label": "MASE",
-      "title": "Progetto di un impianto agrofotovoltaico, denominato \"03\", avente potenza nominale pari a 15,57 MW da realizzarsi nel Comune di Avetrana (TA), e delle relative opere di connessione che ricadono nei Comuni di Erchie (BR), Avetrana (TA) e San Pancrazio Salentino (BR).",
-      "proponent": "Asellus S.r.l.",
-      "region": "Puglia",
-      "province": "TA",
-      "municipalities": "AVETRANA, ERCHIE",
-      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
-      "power_mw": 15.57,
-      "status": "",
-      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8413",
-      "updated_at": "2026-05-01T19:20:36.387478",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "mase"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "Progetto di un impianto agrofotovoltaico, denominato \"03\", avente potenza nominale pari a 15,57 MW da realizzarsi nel Comune di Avetrana (TA), e delle relative opere di connessione che ricadono nei Comuni di Erchie (BR), Avetrana (TA) e San Pancrazio Salentino (BR)."
-      ],
-      "_dedupe_urls": [
-        "https://va.mite.gov.it/it-IT/Oggetti/Info/8413"
-      ],
-      "project_key": "url:724fc1587adcaeb8"
     },
     {
       "source": "lazio",
@@ -29234,7 +28967,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV VIA MUCCHIA",
+      "title": "[ID 2497] - Progetto per la realizzazione di un impianto fotovoltaico a terra denominato \"FV VIA MUCCHIA”, con una potenza di picco pari a 8.983,8 kWp e relative opere di connessione alla rete elettrica, ubicato nel Comune di Cortona (AR). Proponente: SOCIETA' AGRICOLA AGRI - POWER S.r.l.",
       "proponent": "SOCIETA' AGRICOLA AGRI - POWER S.R.L.",
       "region": "Toscana",
       "province": "AR",
@@ -29242,7 +28975,7 @@
       "project_type": "FOTOVOLTAICO",
       "power_mw": 8.984,
       "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12218",
+      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/109",
       "updated_at": "2026-06-16T05:43:18.398047",
       "numero_pratiche": 0,
       "is_terna": false,
@@ -29250,44 +28983,16 @@
       "province_deduced": false,
       "municipalities_deduced": false,
       "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
-        "FTV VIA MUCCHIA"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12218"
-      ],
-      "project_key": "prj:339e42927de933da"
-    },
-    {
-      "source": "toscana",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "[ID 2497] - Progetto per la realizzazione di un impianto fotovoltaico a terra denominato \"FV VIA MUCCHIA”, con una potenza di picco pari a 8.983,8 kWp e relative opere di connessione alla rete elettrica, ubicato nel Comune di Cortona (AR). Proponente: SOCIETA' AGRICOLA AGRI - POWER S.r.l.",
-      "proponent": "SOCIETA' AGRICOLA AGRI - POWER S.R.L.",
-      "region": "Toscana",
-      "province": "AR",
-      "municipalities": "CORTONA",
-      "project_type": "Verifica di Assoggettabilità a VIA",
-      "power_mw": 8.984,
-      "status": "",
-      "url": "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/109",
-      "updated_at": "2026-06-22T14:07:36.926461",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
+        "toscana_atos",
         "toscana"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
+        "FTV VIA MUCCHIA",
         "[ID 2497] - Progetto per la realizzazione di un impianto fotovoltaico a terra denominato \"FV VIA MUCCHIA”, con una potenza di picco pari a 8.983,8 kWp e relative opere di connessione alla rete elettrica, ubicato nel Comune di Cortona (AR). Proponente: SOCIETA' AGRICOLA AGRI - POWER S.r.l."
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12218",
         "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici?id=109"
       ],
       "project_key": "url:22f4ae47286d3fc6"
@@ -29802,7 +29507,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-10-15T13:57:57.341446",
+      "updated_at": "2026-10-21T10:06:15.710383",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -30143,7 +29848,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-10-15T13:57:57.341446",
+      "updated_at": "2026-10-21T10:06:15.710383",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -31839,7 +31544,7 @@
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
-      "title": "IMPIANTO FOTOVOLTAICO DENOMINATO \"MAZARA DUE - C.DA BERLINGERI\" DELLA POTENZA DI 7000 KW NOMINALI, SITO IN COMUNE DI MAZARA DEL VALLO (TP)",
+      "title": "IMPIANTO FOTOVOLTAICO DENOMINATO \"MAZARA UNO - PIANA BERLINGERI\" DELLA POTENZA DI 7000 KW NOMINALI, SITO IN COMUNE DI MAZARA DEL VALLO (TP)",
       "proponent": "GR VALUE DEVELOPMENT SRL",
       "region": "Sicilia",
       "province": "TP",
@@ -31857,42 +31562,13 @@
       "_merged_sources": [
         "sicilia"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
-        "IMPIANTO FOTOVOLTAICO DENOMINATO \"MAZARA DUE - C.DA BERLINGERI\" DELLA POTENZA DI 7000 KW NOMINALI, SITO IN COMUNE DI MAZARA DEL VALLO (TP)"
-      ],
-      "_dedupe_urls": [
-        "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=976&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
-      ],
-      "project_key": "prj:67d0c8e60b3686d1"
-    },
-    {
-      "source": "sicilia",
-      "source_group": "sicilia",
-      "source_label": "Sicilia",
-      "title": "IMPIANTO FOTOVOLTAICO DENOMINATO \"MAZARA UNO - PIANA BERLINGERI\" DELLA POTENZA DI 7000 KW NOMINALI, SITO IN COMUNE DI MAZARA DEL VALLO (TP)",
-      "proponent": "GR VALUE DEVELOPMENT SRL",
-      "region": "Sicilia",
-      "province": "TP",
-      "municipalities": "Mazara del Vallo",
-      "project_type": "Verifica di Assoggettabilita a VIA (art.19)",
-      "power_mw": 7.0,
-      "status": "",
-      "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=977&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
-      "updated_at": "2026-05-01T19:12:15.455684",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "sicilia"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
+        "IMPIANTO FOTOVOLTAICO DENOMINATO \"MAZARA DUE - C.DA BERLINGERI\" DELLA POTENZA DI 7000 KW NOMINALI, SITO IN COMUNE DI MAZARA DEL VALLO (TP)",
         "IMPIANTO FOTOVOLTAICO DENOMINATO \"MAZARA UNO - PIANA BERLINGERI\" DELLA POTENZA DI 7000 KW NOMINALI, SITO IN COMUNE DI MAZARA DEL VALLO (TP)"
       ],
       "_dedupe_urls": [
+        "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=976&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=977&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:b70b8d9965de1f89"
@@ -33150,7 +32826,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-10-15T13:57:57.341446",
+      "updated_at": "2026-10-21T10:06:15.710383",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -33296,7 +32972,7 @@
       "source": "veneto",
       "source_group": "veneto",
       "source_label": "Veneto",
-      "title": "Progetto per la costruzione e l'esercizio di un impianto di produzione di energia elettrica da fonte fotovoltaica denominato “Castagmaro” della potenza di 27.06 MWp, localizzato in area industriale, comprensivo delle relative opere elettriche connesse ed infrastrutture indispensabili - Comuni di localizzazione: Castagnaro e Villa Bartolomea (VR)",
+      "title": "Progetto per la costruzione e l'esercizio di un impianto di produzione di energia elettrica da fonte fotovoltaica denominato “Castagmaro” della potenza di 27.06 MWp, localizzato in area industriale, comprensivo delle relative opere elettriche connesse ed infrastrutture indispensabili - Comuni di localizzazione: Castagnaro, Villa Bartolomea (VR) e Giacciano con Baruchella (RO)",
       "proponent": "RWE RENEWABLES ITALIA SRL",
       "region": "Veneto",
       "province": "VR",
@@ -33305,7 +32981,7 @@
       "power_mw": 6.0,
       "status": "",
       "url": "https://sharing.regione.veneto.it/index.php/s/ifPb32CMF6t2tnz",
-      "updated_at": "2026-05-01T19:07:56.609799",
+      "updated_at": "2026-10-21T09:54:32.366419",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -33316,12 +32992,12 @@
       ],
       "_dedupe_group_size": 1,
       "_dedupe_titles": [
-        "Progetto per la costruzione e l'esercizio di un impianto di produzione di energia elettrica da fonte fotovoltaica denominato “Castagmaro” della potenza di 27.06 MWp, localizzato in area industriale, comprensivo delle relative opere elettriche connesse ed infrastrutture indispensabili - Comuni di localizzazione: Castagnaro e Villa Bartolomea (VR)"
+        "Progetto per la costruzione e l'esercizio di un impianto di produzione di energia elettrica da fonte fotovoltaica denominato “Castagmaro” della potenza di 27.06 MWp, localizzato in area industriale, comprensivo delle relative opere elettriche connesse ed infrastrutture indispensabili - Comuni di localizzazione: Castagnaro, Villa Bartolomea (VR) e Giacciano con Baruchella (RO)"
       ],
       "_dedupe_urls": [
         "https://sharing.regione.veneto.it/index.php/s/ifPb32CMF6t2tnz"
       ],
-      "project_key": "prj:8fd9295e3f7742f8"
+      "project_key": "prj:22b9595b8c86c8c2"
     },
     {
       "source": "sicilia",
@@ -40560,7 +40236,7 @@
       "source": "toscana_atos",
       "source_group": "toscana",
       "source_label": "Toscana",
-      "title": "FTV TORRITA DI SIENA",
+      "title": "FTV TORRITA DI SIENA (2)",
       "proponent": "ACHEON",
       "region": "Toscana",
       "province": "SI",
@@ -40578,42 +40254,13 @@
       "_merged_sources": [
         "toscana_atos"
       ],
-      "_dedupe_group_size": 1,
+      "_dedupe_group_size": 2,
       "_dedupe_titles": [
-        "FTV TORRITA DI SIENA"
-      ],
-      "_dedupe_urls": [
-        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12292"
-      ],
-      "project_key": "prj:879be2cf01741134"
-    },
-    {
-      "source": "toscana_atos",
-      "source_group": "toscana",
-      "source_label": "Toscana",
-      "title": "FTV TORRITA DI SIENA (2)",
-      "proponent": "ACHEON",
-      "region": "Toscana",
-      "province": "SI",
-      "municipalities": "Torrita Di Siena",
-      "project_type": "FOTOVOLTAICO",
-      "power_mw": 0.997,
-      "status": "",
-      "url": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12293",
-      "updated_at": "2026-06-16T05:43:18.398047",
-      "numero_pratiche": 0,
-      "is_terna": false,
-      "is_punctual": true,
-      "province_deduced": false,
-      "municipalities_deduced": false,
-      "_merged_sources": [
-        "toscana_atos"
-      ],
-      "_dedupe_group_size": 1,
-      "_dedupe_titles": [
+        "FTV TORRITA DI SIENA",
         "FTV TORRITA DI SIENA (2)"
       ],
       "_dedupe_urls": [
+        "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12292",
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=12293"
       ],
       "project_key": "prj:96056c8e0ff95d81"
@@ -45652,6 +45299,37 @@
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
+      "title": "Intervento di “Impianto agrivoltaico avanzato in località Pantanello nel comune di Latina (LT) e opere connesse”, nel Comune di Latina., Provincia di Latina, in località “Pantanello”.",
+      "proponent": "Sime solar Srl",
+      "region": "Lazio",
+      "province": "LT",
+      "municipalities": "Latina",
+      "project_type": "VERIFICA",
+      "power_mw": null,
+      "status": "",
+      "url": "https://regionelazio.box.com/v/VIA-063-2026",
+      "updated_at": "2026-10-21T10:06:15.710383",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lazio"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Intervento di “Impianto agrivoltaico avanzato in località Pantanello nel comune di Latina (LT) e opere connesse”, nel Comune di Latina., Provincia di Latina, in località “Pantanello”."
+      ],
+      "_dedupe_urls": [
+        "https://regionelazio.box.com/v/VIA-063-2026"
+      ],
+      "project_key": "url:f777d4ed52043748"
+    },
+    {
+      "source": "lazio",
+      "source_group": "lazio",
+      "source_label": "Lazio",
       "title": "Intervento di Impianto fotovoltaico VELLETRI 19.2 in località Via di Nettuno Determinazione n° G08191 del 20/06/2024 Rinviato alla procedura di Via",
       "proponent": "RNE 4 S.r.l",
       "region": "Lazio",
@@ -50518,13 +50196,13 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-10-15T16:15:04",
+    "generated_at": "2026-10-21T12:19:32",
     "input_file": "reports\\site\\data.json",
-    "records_before": 2035,
-    "records_after": 1762,
-    "merged_or_removed": 273,
-    "accepted_pairs": 415,
-    "rejected_pairs": 981,
+    "records_before": 2048,
+    "records_after": 1749,
+    "merged_or_removed": 299,
+    "accepted_pairs": 441,
+    "rejected_pairs": 1297,
     "field_repairs": 69,
     "manual_actions": 14,
     "manual_proponent_overrides": 10,
@@ -50552,13 +50230,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-10-15T16:15:46",
+      "generated_at": "2026-10-21T12:19:46",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-10-15T16:16:17"
+    "derived_fields_rebuilt_at": "2026-10-21T12:20:15"
   }
 }
