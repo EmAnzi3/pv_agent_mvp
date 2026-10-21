@@ -1236,10 +1236,21 @@ class ApiPortalAdapters(unittest.TestCase):
                 "listProponenti": [{"descrEnteAzienda": "Azienda: Grande Rinnovabili S.r.l."}],
                 "listaViewArchivioDocByProgetto": [
                     {"idDocumento": "134770", "titolo": "comunicazione 10 bis", "dataDocumento": "27/07/2026", "pubblico": "S",
-                     "descrTipoDeposito": "10 BIS", "countAllegati": 1}]},
+                     "descrTipoDeposito": "10 BIS", "countAllegati": 1},
+                    {"idDocumento": "139110", "titolo": "Tavole tecniche di progetto", "dataDocumento": "14/10/2026", "pubblico": "N",
+                     "descrTipoDeposito": "DEPOSITO ISTANZA", "countAllegati": 1}]},
             "https://www.silvia.servizirl.it/silviaweb/getFileByDocumento.html?idDocumento=134770": [
-                {"idEdma": "490137834", "nomeFile": "26.247letv_signed prot 46616.pdf", "dataUpload": "27/07/2026"}]}
-        ad = SilviaAdapter(get_json=lambda u: api[u])
+                {"idEdma": "490137834", "nomeFile": "26.247letv_signed prot 46616.pdf", "dataUpload": "27/07/2026"}],
+            "https://www.silvia.servizirl.it/silviaweb/getFileByDocumento.html?idDocumento=139110": [
+                {"idEdma": "507296910", "nomeFile": "da10tk03_planimetria generale su ctr-signed.pdf", "dataUpload": "14/10/2026"}]}
+        ring = [[9.1309, 45.3886], [9.1315, 45.3869], [9.1297, 45.3866], [9.1290, 45.3885], [9.1309, 45.3886]]
+        gis = {2: {"features": [{"geometry": {"rings": [ring]}}]}, 0: {"features": []}}
+
+        def get_json(u):
+            if "MapServer" in u:
+                return gis[int(re.search(r"MapServer/(\d)", u).group(1))]
+            return api[u]
+        ad = SilviaAdapter(get_json=get_json)
         self.assertTrue(SilviaAdapter.handles(url))
         ident = ad.identify(url)
         self.assertEqual((ident.proponent, ident.municipalities, ident.province), ("Grande Rinnovabili S.r.l.", ["Dorno"], "PV"))
@@ -1247,7 +1258,9 @@ class ApiPortalAdapters(unittest.TestCase):
         self.assertEqual(disc.documents[0].url, "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=490137834"
                                                 "&nomeFile=26.247letv_signed%20prot%2046616.pdf")
         self.assertEqual(disc.documents[0].extra["index_date"], "2026-07-27")
-        self.assertEqual((disc.procedures[0]["declared"], disc.procedures[0]["enumerated"]), (1, 1))
+        self.assertEqual((disc.procedures[0]["declared"], disc.procedures[0]["enumerated"]), (2, 2))   # 'pubblico' N is listed too
+        self.assertEqual(ident.raw["localizzazione"]["features"][0]["geometry"]["coordinates"], [ring])
+        self.assertIn("id_procedura':'20881'", ident.raw["official_map_url"])
 
     def test_toscana_patti(self):
         from doc_intel.adapters.api_portals import ToscanaPattiAdapter

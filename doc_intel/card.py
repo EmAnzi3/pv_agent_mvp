@@ -562,6 +562,7 @@ def _location(d: dict, p: dict, record: dict, titles: dict) -> dict:
     return {"regione": region, "provincia": prov, "comuni": munis,
             "coordinate": {"lat": round(point[0], 5), "lon": round(point[1], 5), "tipo": kind, "source": src} if point else None,
             "maps_url": maps, "maps_precision": "coordinate" if point else "comune",
+            "mappa_ufficiale": (p.get("raw") or {}).get("official_map_url"),
             "connessione": conn, "lotti": lots}
 
 

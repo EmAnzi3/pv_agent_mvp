@@ -388,13 +388,21 @@ def _portal_facts(identity) -> list:
     feats = (loc or {}).get("features") if isinstance(loc, dict) else None
     for feat in feats or []:
         geom = (feat or {}).get("geometry") or {}
+        if geom.get("type") == "MultiPoint":
+            for lon, lat, *_ in geom.get("coordinates") or []:
+                out.append(Fact(field="geo.latlon_point", value={"lat": lat, "lon": lon},
+                                citation=Citation(url=identity.raw.get("official_map_url") or identity.info_url, document_sha256=None, page=None,
+                                                  excerpt="punto pubblicato sulla mappa del portale regionale"),
+                                precision="official_outline", qualifiers={"object": "official_outline"},
+                                limits="Point drawn on the authority's map", extractor="portal.outline"))
+            continue
         polys = [geom["coordinates"]] if geom.get("type") == "Polygon" else geom.get("coordinates", []) if geom.get("type") == "MultiPolygon" else []
         for poly in polys:
             ring = poly[0] if poly else []
             if len(ring) < 3:
                 continue
             out.append(Fact(field="geo.area_polygon", value={"geojson": {"type": "Polygon", "coordinates": [ring]}},
-                            citation=Citation(url=identity.info_url, document_sha256=None, page=None, excerpt="perimetro pubblicato dal portale regionale"),
+                            citation=Citation(url=identity.raw.get("official_map_url") or identity.info_url, document_sha256=None, page=None, excerpt="perimetro pubblicato dal portale regionale"),
                             precision="official_outline", qualifiers={"object": "official_outline"},
                             limits="Site outline published by the authority's portal", extractor="portal.outline"))
     return out
