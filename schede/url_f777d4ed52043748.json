@@ -8,6 +8,19 @@
  "updated": "2026-10-21",
  "sintesi": [
   {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "11,145 MWp",
+   "sub": "Dagli elaborati (13 occorrenze); il titolo non indica la potenza; altri valori: 9,632 MWp, 9,8 MWp, 10 MWp",
+   "source": {
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-063-2026&file_id=f_2538208369920",
+    "page": 11,
+    "document": "IPRG-LAT2-RC01.pdf",
+    "excerpt": "Potenza nominale DC installata 11.145 kWp Potenza nominale AC installata"
+   }
+  },
+  {
    "key": "impianto",
    "label": "Impianto",
    "value": "Agrivoltaico · tracker monoassiali",
@@ -65,6 +78,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.44211,12.83474",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
@@ -213,7 +227,7 @@
   {
    "campo": "proponent",
    "valore_attuale": "Sime solar Srl",
-   "esito": "confermato"
+   "esito": "conflittuale"
   },
   {
    "campo": "power_mw",
@@ -237,6 +251,10 @@
   }
  ],
  "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "non indicata nel titolo: valore ricavato dagli elaborati"
+  },
   {
    "label": "Superficie complessiva",
    "reason": "valori diversi negli elaborati"
