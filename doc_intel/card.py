@@ -559,9 +559,10 @@ def _location(d: dict, p: dict, record: dict, titles: dict) -> dict:
 
 
 # weight of each kind of point as evidence of where the plant is
-SITE_WEIGHT = {"site_point": 10, "centroid": 9, "map_frame_small": 6, "site_bbox_corner": 5, "area_vertex": 5, "polygon": 5,
+SITE_WEIGHT = {"official_outline": 12, "site_point": 10, "centroid": 9, "map_frame_small": 6, "site_bbox_corner": 5, "area_vertex": 5, "polygon": 5,
                "cabin": 3, "bess": 3, "survey_point": 3, "simulation_point": 3, "map_frame_large": 2, "unknown": 2}
-SITE_TEXT = {"site_point": "coordinate del sito dichiarate negli elaborati",
+SITE_TEXT = {"official_outline": "centro del perimetro pubblicato dal portale regionale",
+             "site_point": "coordinate del sito dichiarate negli elaborati",
              "centroid": "baricentro dell'impianto dichiarato negli elaborati",
              "map_frame_small": "centro della tavola georeferenziata di progetto",
              "polygon": "centro dei perimetri ricostruiti dalle tabelle dei vertici",
@@ -583,7 +584,8 @@ def _site_point(d: dict, titles: dict):
             lat, lon = q["lat"], q["lon"]
         elif f["field"] == "geo.area_polygon" and (f["value"].get("geojson") or {}).get("coordinates"):
             ring = f["value"]["geojson"]["coordinates"][0]
-            lat, lon, obj = sum(c[1] for c in ring) / len(ring), sum(c[0] for c in ring) / len(ring), "polygon"
+            lat, lon = sum(c[1] for c in ring) / len(ring), sum(c[0] for c in ring) / len(ring)
+            obj = "official_outline" if q.get("object") == "official_outline" else "polygon"
         elif f["field"] == "geo.map_extent":
             v = f["value"]
             lat, lon = v["lat"], v["lon"]

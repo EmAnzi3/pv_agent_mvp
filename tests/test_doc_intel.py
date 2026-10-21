@@ -1172,3 +1172,55 @@ class WorkQueue(unittest.TestCase):
             self.assertEqual(res, {"downloaded": 1, "total": 2, "errors": 0})
             self.assertEqual(calls, ["x", "k1.json"])
             self.assertEqual(set(json.loads((Path(d) / "index.json").read_text())), {"k1", "k2"})
+
+
+class ApiPortalAdapters(unittest.TestCase):
+    """Lombardia SILVIA and Toscana PATTI: documents listed by JSON APIs (structures read from the live portals)."""
+
+    def test_silvia(self):
+        from doc_intel.adapters.api_portals import SilviaAdapter
+        url = "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=3&idProgetto=20881&idProvenienza=2"
+        api = {
+            "https://www.silvia.servizirl.it/silviaweb/getSchedaSintesiByIdProgetto.html?idProgetto=20881": {
+                "progetto": {"descrProgetto": "PROGETTO “CASCINA GRANDE” ... SITO NEL COMUNE DI DORNO (PV) CON POTENZA DI 121.696,68kWp",
+                             "codProcedura": "VIA0058-PV", "dataDeposito": "14/04/2026", "ente": {"descrEnte": "PROVINCIA DI PAVIA"},
+                             "macroStato": {"descrMacroStato": "Termini sospesi"}},
+                "listProponenti": [{"descrEnteAzienda": "Azienda: Grande Rinnovabili S.r.l."}],
+                "listaViewArchivioDocByProgetto": [
+                    {"idDocumento": "134770", "titolo": "comunicazione 10 bis", "dataDocumento": "27/07/2026", "pubblico": "S",
+                     "descrTipoDeposito": "10 BIS", "countAllegati": 1}]},
+            "https://www.silvia.servizirl.it/silviaweb/getFileByDocumento.html?idDocumento=134770": [
+                {"idEdma": "490137834", "nomeFile": "26.247letv_signed prot 46616.pdf", "dataUpload": "27/07/2026"}]}
+        ad = SilviaAdapter(get_json=lambda u: api[u])
+        self.assertTrue(SilviaAdapter.handles(url))
+        ident = ad.identify(url)
+        self.assertEqual((ident.proponent, ident.municipalities, ident.province), ("Grande Rinnovabili S.r.l.", ["Dorno"], "PV"))
+        disc = ad.discover(ident)
+        self.assertEqual(disc.documents[0].url, "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=490137834"
+                                                "&nomeFile=26.247letv_signed%20prot%2046616.pdf")
+        self.assertEqual(disc.documents[0].extra["index_date"], "2026-07-27")
+        self.assertEqual((disc.procedures[0]["declared"], disc.procedures[0]["enumerated"]), (1, 1))
+
+    def test_toscana_patti(self):
+        from doc_intel.adapters.api_portals import ToscanaPattiAdapter
+        content = {"opera": "AUTORIZZAZIONE UNICA ... AGRIVOLTAICO AVANZATO DI POTENZA PARI A 128 MWp", "proponente": "REVALUE PV 1 S.R.L.",
+                   "comune": "SOVICILLE", "collegamenti": [{"titoloSezione": "AVVIO: avviso, documentazione iniziale",
+                                                            "files": [{"nome": "00_elenco_elaborati.pdf",
+                                                                       "collegamento": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1"}]}]}
+        api = {"id": 110, "contenuto": json.dumps(content), "procedimento": "Verifica di Assoggettabilità a VIA",
+               "dataUltimoAggiornamento": "2025-09-29T08:52:23.058Z",
+               "localizzazione": {"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {
+                   "type": "Polygon", "coordinates": [[[11.20, 43.25], [11.22, 43.25], [11.22, 43.27], [11.20, 43.27], [11.20, 43.25]]]}}]}}
+        ad = ToscanaPattiAdapter(get_json=lambda u: api)
+        ident = ad.identify("https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici/110")
+        self.assertEqual((ident.proponent, ident.municipalities), ("REVALUE PV 1 S.R.L.", ["Sovicille"]))
+        disc = ad.discover(ident)
+        self.assertEqual([d.title for d in disc.documents], ["00_elenco_elaborati.pdf"])
+        from doc_intel.pipeline import _portal_facts
+        poly = _portal_facts(ident)
+        self.assertEqual(poly[0].qualifiers["object"], "official_outline")
+        from doc_intel.card import _site_point
+        f = json.loads(json.dumps(poly[0].__dict__, default=lambda o: o.__dict__))
+        point, kind, *_ = _site_point({"facts": [f]}, {})
+        self.assertAlmostEqual(point[0], 43.258, places=2)
+        self.assertIn("portale regionale", kind)

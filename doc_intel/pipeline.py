@@ -250,6 +250,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         from .registry import ViesClient, check_vats
         registry_results = check_vats(facts, registry_client or ViesClient(store.root / "registry"))
         log(f"[registry] {len(registry_results)} VAT numbers checked on VIES")
+    facts.extend(_portal_facts(identity))
     groups = group(facts)
     log(f"[extract] {len(facts)} facts, {sum(g['status']=='conflict' for g in groups)} conflict groups")
 
@@ -351,3 +352,29 @@ def build_proposal(facts: list[Fact], groups: list[dict]) -> list[dict[str, Any]
         proposal.append({"field": f.field, "subject": f.subject, "value": f.value, "fact_id": f.fact_id(),
                          "occurrences": 1, "documents": [f.citation.url]})
     return proposal
+
+
+def _portal_facts(identity) -> list:
+    """Facts the portal itself publishes in structured form (official site outline)."""
+    from .schema import Citation, Fact
+    out = []
+    loc = identity.raw.get("localizzazione")
+    if isinstance(loc, str):
+        try:
+            import json as _json
+            loc = _json.loads(loc)
+        except ValueError:
+            loc = None
+    feats = (loc or {}).get("features") if isinstance(loc, dict) else None
+    for feat in feats or []:
+        geom = (feat or {}).get("geometry") or {}
+        polys = [geom["coordinates"]] if geom.get("type") == "Polygon" else geom.get("coordinates", []) if geom.get("type") == "MultiPolygon" else []
+        for poly in polys:
+            ring = poly[0] if poly else []
+            if len(ring) < 3:
+                continue
+            out.append(Fact(field="geo.area_polygon", value={"geojson": {"type": "Polygon", "coordinates": [ring]}},
+                            citation=Citation(url=identity.info_url, document_sha256=None, page=None, excerpt="perimetro pubblicato dal portale regionale"),
+                            precision="official_outline", qualifiers={"object": "official_outline"},
+                            limits="Site outline published by the authority's portal", extractor="portal.outline"))
+    return out
