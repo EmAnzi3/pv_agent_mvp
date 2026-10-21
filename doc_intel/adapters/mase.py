@@ -5,6 +5,8 @@ Entry points accepted: ``/Oggetti/Info/<id>`` and
 """
 from __future__ import annotations
 
+import html
+
 import re
 import time
 from urllib.parse import urljoin, urlparse
@@ -59,7 +61,8 @@ class MaseAdapter(DocumentAdapter):
         another MASE record with the same plant name ('denominato "BIDDINE"') in a shared municipality, its
         documentation procedures are added (labelled), so the card is built on the whole project."""
         records = getattr(self, "records", None) or []
-        names = {re.sub(r"\W+", " ", x).strip().lower() for x in PLANT_NAME.findall(ident.title or "")}
+        names = {re.sub(r"\W+", " ", x).strip().lower() for x in PLANT_NAME.findall(html.unescape(ident.title or ""))}
+        print(f"::notice title=related::names={sorted(names)} municipalities={ident.municipalities} records={len(records)}")
         if not names or not records:
             return
         munis = {m.strip().lower() for m in ident.municipalities}
@@ -70,7 +73,7 @@ class MaseAdapter(DocumentAdapter):
             u = r.get("url") or ""
             if not _host_ok(u) or u.rstrip("/") == (ident.raw.get("entry_url") or ident.info_url).rstrip("/"):
                 continue
-            rn = {re.sub(r"\W+", " ", x).strip().lower() for x in PLANT_NAME.findall(r.get("title") or "")}
+            rn = {re.sub(r"\W+", " ", x).strip().lower() for x in PLANT_NAME.findall(html.unescape(r.get("title") or ""))}
             rm = {m.strip().lower() for m in re.split(r"[,;]", r.get("municipalities") or "") if m.strip()}
             if not (rn & names) or (munis and rm and not (munis & rm)):
                 continue
@@ -88,6 +91,7 @@ class MaseAdapter(DocumentAdapter):
             linked.append({"url": other.info_url, "title": other.title})
             if len(linked) >= max_links:
                 break
+        print(f"::notice title=related::linked={linked}")
         if linked:
             ident.raw["related_projects"] = linked
 
