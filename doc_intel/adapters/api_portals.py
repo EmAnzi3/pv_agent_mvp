@@ -169,12 +169,14 @@ def parse_atos_sheet(text: str) -> dict[str, str]:
     """Label/value pairs of an ATOS plant sheet (labels in a fixed order, values in between)."""
     t = re.sub(r"\s+", " ", text or "")
     t = t.replace("-->", " ")
-    labels = [lab for _, lab in ATOS_FIELDS] + ["Dati dell'ultimo Atto", "Autorizzazione Vigente", "In caso di atto"]
+    labels = [lab for _, lab in ATOS_FIELDS] + ["Dati dell'ultimo Atto", "Autorizzazione Vigente", "In caso di atto", "Nessun Atto Presente"]
     out = {}
     for key, lab in ATOS_FIELDS:
         m = re.search(re.escape(lab) + r"\s*(.*?)(?=\s*(?:" + "|".join(re.escape(x) for x in labels if x != lab) + r")\b|$)", t)
         if m and m.group(1).strip():
             out[key] = m.group(1).strip()[:200]
+    if re.search(r"(?i)Nessun\s+Atto\s+Presente", t):
+        out["no_act"] = "yes"
     return out
 
 

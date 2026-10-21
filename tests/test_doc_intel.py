@@ -1204,6 +1204,15 @@ class AtosRegister(unittest.TestCase):
         disc = a.discover(ident)
         self.assertEqual(disc.documents, [])
 
+    def test_lighting_poles_are_not_piles(self):
+        from doc_intel.extract.technical import extract as extract_technical
+        from doc_intel.extract.context import PageContext
+        txt = ("Impianto di illuminazione perimetrale, videosorveglianza e allarme. Complessivamente si ipotizzano 580 pali "
+               "a partire da una lunghezza stimata 23 200 m e un interasse di 40m.\nSono previsti 12.400 pali per le strutture tracker.")
+        ctx = PageContext(url="u", sha256="x", page=1, text=txt, method="digital")
+        vals = [f.value for f in extract_technical(ctx) if f.field == "tech.piles_count"]
+        self.assertEqual(vals, [12400])
+
     def test_card_reports_act_without_upgrading_it(self):
         from doc_intel.card import _register
         reg = _register({"info_url": self.URL, "raw": {"register_sheet": {

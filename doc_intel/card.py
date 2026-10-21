@@ -251,7 +251,12 @@ def _hint(p: dict) -> str | None:
 def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], list[dict]]:
     tiles, open_points = [], []
     title = record.get("title") or p.get("title") or ""
-    tm = re.search(r"(?i)(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?|\d+(?:[.,]\d+)?)\s*(MWp|MW|kWp|KwP|kW)\b", title)
+    power_rx = r"(?i)(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?|\d+(?:[.,]\d+)?)\s*(MWp|MW|kWp|KwP|kW)\b"
+    tm, title_src = re.search(power_rx, title), "titolo del procedimento"
+    sheet = (p.get("raw") or {}).get("register_sheet") or {}
+    if not tm and sheet.get("power_mw"):
+        # a register sheet (ATOS) states the power in its own field, not in the plant name
+        tm, title_src = re.search(power_rx, sheet["power_mw"].replace(".", ",") + " MW"), "registro impianti regionale"
     if tm:
         from .extract.context import parse_number
         num = parse_number(tm.group(1)) or 0
@@ -264,7 +269,7 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         cands.sort(key=lambda c: -c[1]["occurrences"])
         shown_field = "tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw"
         shown, status = mw, "verificato"
-        source = {"document": "titolo del procedimento", "url": p.get("info_url"), "excerpt": tm.group(0)}
+        source = {"document": title_src, "url": p.get("info_url"), "excerpt": tm.group(0)}
         title_seen = any(abs(x["value"] - mw) <= 0.01 * mw and x["occurrences"] >= 2 for _, x in
                          [(g["field"], x) for g in d["groups"] if g["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")
                           for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float))])
@@ -299,8 +304,10 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
     ok_tot = (lambda v: 0.8 * plant_mw <= v <= 8 * plant_mw) if plant_mw else None
     ok_pan = (lambda v: 0.25 * plant_mw <= v <= 3 * plant_mw) if plant_mw else None
     tot, pan = _pick(d, "tech.area_available_ha", titles, ok_tot), _pick(d, "tech.area_panels_ha", titles, ok_pan)
-    if tot and pan and pan["value"] >= tot["value"]:
-        pan = None                          # a panel area larger than the site is a misread
+    if tot and pan and pan["value"] >= 0.85 * tot["value"]:
+        # panels never cover (almost) the whole site: rows are spaced; such a value is the site or farmland area
+        open_points.append({"label": "Superficie pannelli", "reason": f"valore letto ({pan['text']}) prossimo all'area totale: non mostrato"})
+        pan = None
     if tot:
         tiles.append({"key": "area", "label": "Superficie complessiva", "value": tot["text"], "status": tot["status"],
                       "sub": _hint(tot), "source": tot["source"]})
@@ -914,7 +921,8 @@ def _register(p: dict) -> dict | None:
         return None
     act = " ".join(x for x in (sh.get("act_type"), f"n. {sh['act_number']}" if sh.get("act_number") else None,
                                f"del {sh['act_date']}" if sh.get("act_date") else None) if x)
-    label = f"Registro impianti: {act}" if act else "Registro impianti regionale"
+    label = (f"Registro impianti: {act}" if act else
+             "Registro impianti: nessun atto registrato" if sh.get("no_act") else "Registro impianti regionale")
     bits = [f"{k}: {sh[f]}" for k, f in (("Categoria atto", "act_category"), ("Ente", "act_body"),
                                          ("Tipo di autorizzazione", "authorization_type"),
                                          ("Attivo", "active"), ("Ultima modifica del registro", "updated")) if sh.get(f)]
