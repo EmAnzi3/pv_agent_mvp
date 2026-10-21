@@ -27,9 +27,25 @@ PATCH_RULES = [
         "name": "fix_mase_6245_ardea_power_decimal_separator",
         "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6245",
         "fields": {
-            "power_mw": 144.335,
+            "power_mw": 14.032,
         },
-        "reason": "source_uses_comma_as_thousands_separator_144_335_mw",
+        "reason": "documents_state_14032_kw_147_times_on_23_ha_title_144_335_00_kw_is_a_typo_confirmed_by_user_2026_10_21",
+    },
+    {
+        "name": "fix_veneto_melara_power_title_typo",
+        "url": "https://sharing.regione.veneto.it/index.php/s/iMFk8Zs5t86GYP7",
+        "fields": {
+            "power_mw": 26.618,
+        },
+        "reason": "title_266617_76_kwp_is_a_typo_documents_state_26_618_mw_confirmed_by_user_2026_10_21",
+    },
+    {
+        "name": "fix_veneto_castagnaro_power_from_title",
+        "url": "https://sharing.regione.veneto.it/index.php/s/ifPb32CMF6t2tnz",
+        "fields": {
+            "power_mw": 27.06,
+        },
+        "reason": "title_and_documents_state_27_06_mwp_field_6_mw_wrong_confirmed_by_user_2026_10_21",
     },
     {
         "name": "fix_mase_6239_serramanna_municipality",
