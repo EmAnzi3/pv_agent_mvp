@@ -1,0 +1,509 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "url:88bee9ad93973d2a",
+ "title": "Progetto per la realizzazione di un impianto fotovoltaico, denominato \"Assoro_2\", per una potenza pari a 181,17 MW, unito alle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Assoro (EN), Raddusa (CT), Aidone (EN) ed Enna (EN).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8610",
+ "source": "mase",
+ "updated": "2026-10-21",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "181,17 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8610",
+    "excerpt": "181,17 MW"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico · tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1077235",
+    "page": 1,
+    "document": "Integrazioni del 22/05/2024 - Carta dell'Effetto Cumulo su IGM",
+    "excerpt": "la 8007 - Impianto agrivoltaico \"Ramacca\" di 50,65 MW - HF Solar 4 s.r.l."
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "218,79 ha",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 345,17 ha (3), 390,51 ha (3), 611,31 ha (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1077280",
+    "page": 75,
+    "document": "Integrazioni del 22/05/2024 - Relazione Paesaggistica",
+    "excerpt": "• Area a pericolosità molto elevata (P4) N. 2 per una superficie complessiva di 10,18 Ha; • Area a pericolosità elevata (P3) N. 21 per una superficie complessiva di 218,79 Ha; • Area a pericolosità media (P2) N. 132 per "
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 20 giorni (3), 8 settimane (2), 164 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/721078",
+    "page": 449,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "4.2.10.1. Descrizione dei programmi di cantiere per il campo fotovoltaico I cantieri in oggetto dureranno circa 24 mesi lavorativi e continuativi a partire dalla data di inizio lavori."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "EN",
+  "comuni": [
+   "Assoro",
+   "Raddusa",
+   "Aidone  Ed Enna"
+  ],
+  "coordinate": {
+   "lat": 37.52607,
+   "lon": 14.48777,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (152 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/721078",
+    "page": 16,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "Impianto Fv - Campo B (baricentro area) 37.528418°"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.52607,14.48777",
+  "maps_precision": "coordinate",
+  "connessione": null,
+  "lotti": [
+   {
+    "lotto": "Area A",
+    "lat": 37.56293,
+    "lon": 14.42843,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.56293,14.42843",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721040",
+     "page": 2,
+     "document": "Elaborato Paesaggio",
+     "excerpt": "MILOCCA 37°33'58.41\"N 14°25'36.95\"E"
+    }
+   },
+   {
+    "lotto": "Area B",
+    "lat": 37.53346,
+    "lon": 14.44072,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.53346,14.44072",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721040",
+     "page": 4,
+     "document": "Elaborato Paesaggio",
+     "excerpt": "SS124 37°32'1.30\"N 14°26'37.95\"E"
+    }
+   },
+   {
+    "lotto": "Area C",
+    "lat": 37.52838,
+    "lon": 14.47187,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.52838,14.47187",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721040",
+     "page": 4,
+     "document": "Elaborato Paesaggio",
+     "excerpt": "ARGINEMELE 37°31'40.36\"N 14°28'24.91\"E"
+    }
+   },
+   {
+    "lotto": "Area D",
+    "lat": 37.54118,
+    "lon": 14.4806,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.54118,14.48060",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721040",
+     "page": 2,
+     "document": "Elaborato Paesaggio",
+     "excerpt": "MANDRE TONDE 37°32'23.22\"N 14°28'35.12\"E"
+    }
+   },
+   {
+    "lotto": "Area E",
+    "lat": 37.50736,
+    "lon": 14.51481,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.50736,14.51481",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721040",
+     "page": 5,
+     "document": "Elaborato Paesaggio",
+     "excerpt": "Destricella 37°30'26.51\"N 14°30'53.33\"E"
+    }
+   },
+   {
+    "lotto": "Area F",
+    "lat": 37.4631,
+    "lon": 14.44667,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.46310,14.44667",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721040",
+     "page": 2,
+     "document": "Elaborato Paesaggio",
+     "excerpt": "SAN BARTOLO 37°27'43.42\"N 14°26'31.26\"E"
+    }
+   },
+   {
+    "lotto": "Campo A",
+    "lat": 37.56591,
+    "lon": 14.42741,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.56591,14.42741",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721078",
+     "page": 16,
+     "document": "Studio Impatto Ambientale",
+     "excerpt": "Impianto Fv - Campo A (baricentro area) 37.565911°"
+    }
+   },
+   {
+    "lotto": "Campo B",
+    "lat": 37.52842,
+    "lon": 14.4601,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.52842,14.46010",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721078",
+     "page": 16,
+     "document": "Studio Impatto Ambientale",
+     "excerpt": "Impianto Fv - Campo B (baricentro area) 37.528418°"
+    }
+   },
+   {
+    "lotto": "Campo C",
+    "lat": 37.53695,
+    "lon": 14.48746,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.53695,14.48746",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721078",
+     "page": 16,
+     "document": "Studio Impatto Ambientale",
+     "excerpt": "Impianto Fv - Campo C (baricentro area) 37.536955°"
+    }
+   },
+   {
+    "lotto": "Campo D",
+    "lat": 37.51285,
+    "lon": 14.51576,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.51285,14.51576",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721078",
+     "page": 16,
+     "document": "Studio Impatto Ambientale",
+     "excerpt": "Impianto Fv - Campo D (baricentro area) 37.512850°"
+    }
+   },
+   {
+    "lotto": "Campo E",
+    "lat": 37.46726,
+    "lon": 14.44056,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.46726,14.44056",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721078",
+     "page": 16,
+     "document": "Studio Impatto Ambientale",
+     "excerpt": "Impianto Fv - Campo E (baricentro area) 37.467255°"
+    }
+   },
+   {
+    "lotto": "Campo F",
+    "lat": 37.4719,
+    "lon": 14.42275,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.47190,14.42275",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1264144",
+     "page": 83,
+     "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere della Commissione Tecnica PNRR-PNIEC del 27/06/2024",
+     "excerpt": "Campo F - San Bartolo tra la recinzione posta tra le coordinate tra le coordinate Long. 14,4224 Lat. 37,473 e Long. 14,4227 Lat. 37,4731 e tra le coordinate Long. 14,4224 Lat. 37,4708 e Long. 14,4228 Lat. 37,4709."
+    }
+   }
+  ]
+ },
+ "soggetti": [
+  {
+   "name": "Ibvi 24 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "03099650214",
+   "vat_group": false,
+   "verified": true,
+   "office": "Viale Amedeo Duca D'Aosta 76 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ibvi24srl@pec.it",
+     "occurrences": 194,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/989191",
+      "page": 1,
+      "document": "Richiesta Integrazioni CTPNRR-PNIEC",
+      "excerpt": "Alla società IBVI 24 s.r.l. Ibvi24srl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@renovabili.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1077239",
+      "page": 1,
+      "document": "Integrazioni del 22/05/2024 - Carta dell'Effetto cumulo e della Desertificazione",
+      "excerpt": "info@renovabili.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8610"
+   }
+  },
+  {
+   "name": "Arcadia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista",
+    "BoP (da confermare)"
+   ],
+   "vat": "06863370828",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Houel 29 90138 Palermo Pa",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "arcadiaprogetti@arubapec.it",
+     "occurrences": 162,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/720974",
+      "page": 1,
+      "document": "Carta della vegetazione reale nelle aree destinate al progetto",
+      "excerpt": "info@arcadiaprogetti.it arcadiaprogetti@arubapec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@arcadiaprogetti.it",
+     "occurrences": 312,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/720974",
+      "page": 1,
+      "document": "Carta della vegetazione reale nelle aree destinate al progetto",
+      "excerpt": "Via Houel 29, 90138 – Palermo info@arcadiaprogetti.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1077283",
+    "page": 1,
+    "document": "Integrazioni del 22/05/2024 - PIANO PARTICELLARE",
+    "excerpt": "Tavola: Progettazione:"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "3E Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "3eingegneria@pec.it",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1077215",
+      "page": 1,
+      "document": "Integrazioni del 22/05/2024 - Corografia",
+      "excerpt": "56121 PISA 3eingegneria@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@3eingegneria.it",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1077215",
+      "page": 1,
+      "document": "Integrazioni del 22/05/2024 - Corografia",
+      "excerpt": "www.3eingegneria.it info@3eingegneria.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geol. Anna Rosaria Marletta",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "annamarletta68@gmail.com",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/720977",
+      "page": 1,
+      "document": "Relazione Idrogeologica",
+      "excerpt": "Dott.ssa Geol. Anna Rosaria Marletta Via Varese 14 - 95123 Catania cell. 3914106376 – pec: geol.annamarletta68@postecert.it - email: annamarletta68@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Franco La Fico Guzzo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0957472214",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1248601",
+      "page": 4,
+      "document": "Parere della Regione Siciliana - Assessorato dei Beni Culturali e dell'Identità Siciliana, in data 29/04/2025",
+      "excerpt": "Stanza 6 Piano 1 Tel. Durata procedimento (ove non previsto da leggi o regolamenti è di 30 giorni) Responsabile dell'istruttoria Stanza Tel. 0957472214 Rosina Marino"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/721078",
+   "page": 237,
+   "document": "Studio Impatto Ambientale",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "24 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 giorni (3), 8 settimane (2), 164 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/721078",
+    "page": 449,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "4.2.10.1. Descrizione dei programmi di cantiere per il campo fotovoltaico I cantieri in oggetto dureranno circa 24 mesi lavorativi e continuativi a partire dalla data di inizio lavori."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 22/05/2024 - Cronoprogramma dei lavori",
+   "url": "https://va.mite.gov.it/File/Documento/1077296"
+  },
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "altri": [
+   {
+    "document": "Integrazioni del 22/05/2024 - Cronoprogramma dei lavori",
+    "url": "https://va.mite.gov.it/File/Documento/1077296"
+   },
+   {
+    "document": "M1 Cronoprogramma dei lavori",
+    "url": "https://va.mite.gov.it/File/Documento/721062"
+   }
+  ],
+  "durate_fasi": [
+   {
+    "name": "Indica la zona più ag >",
+    "duration": "0.25 giorni",
+    "months": 0.01
+   },
+   {
+    "name": "Zona dove possono 0,15 < ag ≤",
+    "duration": "0.25 giorni",
+    "months": 0.01
+   },
+   {
+    "name": "Zona che può essere 0,05 < ag ≤",
+    "duration": "0.15 giorni",
+    "months": 0.0
+   },
+   {
+    "name": "E' la zona meno ag ≤",
+    "duration": "0.05 giorni",
+    "months": 0.0
+   }
+  ],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 239,
+  "pagine": 4560,
+  "completa": true
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "IBVI 24 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 181.17,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ASSORO",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "EN",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "437 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Arcadia S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
