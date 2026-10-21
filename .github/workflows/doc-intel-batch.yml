@@ -1,0 +1,81 @@
+name: Doc Intel project cards (new projects and backlog)
+# New radar projects are analysed as soon as the dashboard update is published (push of docs/data.json);
+# the backlog of projects already in the radar is processed every night, a few dozen at a time,
+# highest power first. One project per job, 5 in parallel; each job saves its card and the memory
+# of what was downloaded and analysed on branch doc-intel-state. Nothing is written to docs/ here:
+# the cards reach the dashboard at the next run of aggiorna_dashboard_senza_docker.bat.
+on:
+  schedule:
+    - cron: '0 23 * * *'          # 01:00 in Italy (summer time), 00:00 in winter
+  push:
+    branches: [main]
+    paths: ['docs/data.json']
+  workflow_dispatch:
+    inputs:
+      max:
+        description: 'Projects in this batch'
+        required: false
+        default: '35'
+      mode:
+        description: 'new | backlog | both | refresh (re-check projects that already have a card)'
+        required: false
+        default: 'both'
+permissions:
+  contents: write
+concurrency:
+  group: doc-intel-batch
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.q.outputs.matrix }}
+      count: ${{ steps.q.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install requests beautifulsoup4 pypdf
+      - name: Load memory (branch doc-intel-state)
+        run: |
+          git config user.name "doc-intel-bot"
+          git config user.email "doc-intel-bot@users.noreply.github.com"
+          git fetch origin doc-intel-state:doc-intel-state
+          git worktree add .mem doc-intel-state
+      - name: Choose the projects of this batch
+        id: q
+        env:
+          EVENT: ${{ github.event_name }}
+          IN_MAX: ${{ inputs.max }}
+          IN_MODE: ${{ inputs.mode }}
+        run: |
+          MODE=both; MAX=35
+          if [ "$EVENT" = "push" ]; then MODE=new; MAX=60; fi
+          if [ "$EVENT" = "workflow_dispatch" ]; then MODE="${IN_MODE:-both}"; MAX="${IN_MAX:-35}"; fi
+          python -m doc_intel queue --data docs/data.json --memory .mem --max "$MAX" --mode "$MODE" --github-output "$GITHUB_OUTPUT"
+          python -m doc_intel queue-status --data docs/data.json --memory .mem
+      - name: Save queue state
+        run: |
+          cd .mem
+          git add queue
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "doc-intel queue: batch ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
+            git push -q origin HEAD:doc-intel-state && exit 0
+            sleep $((i * 10))
+          done
+          echo "::warning title=queue::queue state not saved (projects may be retried next night)"
+  analyse:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    uses: ./.github/workflows/doc-intel-run.yml
+    with:
+      url: ${{ matrix.url }}
+      time_budget_min: '200'
+    secrets: inherit

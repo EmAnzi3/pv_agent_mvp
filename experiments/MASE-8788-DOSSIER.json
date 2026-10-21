@@ -1,0 +1,909 @@
+{
+ "schema": "pv-dossier/1.0",
+ "project": {
+  "source": "mase",
+  "project_id": "8788",
+  "name": "Tortona 2",
+  "info_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8788",
+  "procedures": [
+   {
+    "id": "19438",
+    "declared": 87,
+    "enumerated": 87,
+    "index_pages": 9
+   },
+   {
+    "id": "12932",
+    "declared": 124,
+    "enumerated": 124,
+    "index_pages": 13
+   }
+  ]
+ },
+ "provenance": {
+  "toolbox": "doc_intel (PR #5)",
+  "run": "https://github.com/EmAnzi3/pv_agent_mvp/actions/runs/39266857390",
+  "commit": "bc4045b",
+  "note": "Values taken from the run digest (annotations). Each value cites document id and page of a representative occurrence."
+ },
+ "acquisition": {
+  "declared_total": 211,
+  "references": 211,
+  "processed_references": 211,
+  "download_failures": 0,
+  "distinct_sha256": 189,
+  "duplicate_references": 22,
+  "pdf_files": 189,
+  "pages_total": 3727,
+  "pages_digital": 2921,
+  "pages_ocr": 787,
+  "pages_ocr_pending": 0,
+  "pages_unreadable": 0,
+  "pages_graphic_no_text": 19,
+  "parse_errors": 0,
+  "skipped_members": 0,
+  "gate": {
+   "gate": "acquisition",
+   "pass": true,
+   "blocking": false,
+   "issues": [],
+   "notes": [
+    "19 graphic pages without text even after OCR (listed for visual review)"
+   ]
+  },
+  "seconds_total": 34.2
+ },
+ "canonical": {
+  "project_key": "url:910815a0c4750a6a",
+  "match": {
+   "status": "unique",
+   "match_count": 1,
+   "project_keys": [
+    "url:910815a0c4750a6a"
+   ],
+   "policy": "exact source URL"
+  }
+ },
+ "evaluation": {
+  "gold": "doc_intel/gold/mase-8788.json (provisional)",
+  "recall_value": 1.0,
+  "recall_anchored": 0.833,
+  "forbidden_hits": [],
+  "expected_conflicts": [
+   {
+    "field": "company.multiple_vat",
+    "subject": "Margisolar S.r.l.",
+    "note": "03920651209 vs 03920631201, both valid check digit",
+    "detected": true
+   }
+  ]
+ },
+ "fields": [
+  {
+   "field": "proponent",
+   "class": "confermato",
+   "canonical": "Margisolar S.r.l.",
+   "value": "Margisolar S.r.l.",
+   "evidence": [
+    {
+     "url": "https://va.mite.gov.it/File/Documento/1438987",
+     "page": 1,
+     "note": "Committente: MARGISOLAR S.R.L., 377 occorrenze"
+    }
+   ],
+   "variants": [
+    {
+     "value": "MARGISOLAR ENERGY S.r.l.",
+     "occurrences": 12,
+     "evidence": {
+      "url": "https://va.mite.gov.it/File/Documento/1439026",
+      "page": 2
+     }
+    },
+    {
+     "value": "Luisolar Energy S.r.l.",
+     "occurrences": 1,
+     "evidence": {
+      "url": "https://va.mite.gov.it/File/Documento/735725",
+      "page": 9
+     }
+    }
+   ],
+   "limits": "Varianti documentali da chiarire; non modificano il canonico."
+  },
+  {
+   "field": "proponent_address",
+   "class": "nuovo_verificato",
+   "value": "Viale Antonio Silvani 2, 40122 Bologna (BO)",
+   "evidence": [
+    {
+     "url": "https://va.mite.gov.it/File/Documento/1438994",
+     "page": 1
+    }
+   ],
+   "limits": "Indirizzo riportato nei frontespizi; attualità non verificata.",
+   "registry": "Confermato da VIES 2026-10-19"
+  },
+  {
+   "field": "proponent_vat",
+   "class": "nuovo_verificato",
+   "value": "03920651209",
+   "registry": {
+    "source": "VIES",
+    "request_date": "2026-10-19",
+    "name": "MARGISOLAR S.R.L.",
+    "address": "Viale Antonio Silvani 2, 40122 Bologna (BO)"
+   },
+   "evidence": [
+    {
+     "url": "https://va.mite.gov.it/File/Documento/1438987",
+     "page": 1
+    }
+   ],
+   "resolved_conflict": {
+    "value": "03920631201",
+    "registry_name": "LUISOLAR ENERGY S.R.L.",
+    "registry_address": "Viale Antonio Silvani 2, 40122 Bologna (BO)",
+    "explanation": "Società distinta con la stessa sede legale; l'associazione a Margisolar in 1077136 p.15 è un errore di vicinanza. Luisolar Energy compare anche come proponente in 735725 p.9."
+   }
+  },
+  {
+   "field": "proponent_pec",
+   "class": "nuovo_verificato",
+   "value": "margisolar@legalmail.it",
+   "evidence": [
+    {
+     "url": "https://va.mite.gov.it/File/Documento/805873",
+     "page": 9
+    }
+   ]
+  },
+  {
+   "field": "power_mw",
+   "class": "confermato",
+   "canonical": 60.0,
+   "values": {
+    "dc_mwp": {
+     "value": 60.00865,
+     "occurrences": 29,
+     "evidence": {
+      "url": "https://va.mite.gov.it/File/Documento/1438987",
+      "page": 8
+     }
+    },
+    "ac_mw": {
+     "value": 50.0,
+     "occurrences": 459,
+     "evidence": {
+      "url": "https://va.mite.gov.it/File/Documento/1438987",
+      "page": 1
+     }
+    }
+   },
+   "limits": "Il canonico (60) coincide con DC e titolo; proposta di campi separati DC/AC soggetta a review."
+  },
+  {
+   "field": "technology",
+   "class": "nuovo_verificato",
+   "value": "agrivoltaico, moduli bifacciali",
+   "evidence": [
+    {
+     "url": "https://va.mite.gov.it/File/Documento/805858",
+     "page": 1
+    },
+    {
+     "url": "https://va.mite.gov.it/File/Documento/1438987",
+     "page": 6
+    }
+   ]
+  },
+  {
+   "field": "module_power_wp",
+   "class": "conflittuale",
+   "values": [
+    [
+     610,
+     10,
+     805827,
+     2
+    ],
+    [
+     570,
+     7,
+     706421,
+     1
+    ],
+    [
+     720,
+     6,
+     1438994,
+     1
+    ],
+    [
+     715,
+     2,
+     1438994,
+     1
+    ]
+   ],
+   "limits": "Revisioni progettuali successive; nessun valore corrente determinabile senza ordinare le revisioni."
+  },
+  {
+   "field": "grid_connection_kv",
+   "class": "conflittuale",
+   "values": [
+    [
+     132,
+     24,
+     1439019,
+     15
+    ],
+    [
+     150,
+     9,
+     1439019,
+     13
+    ]
+   ],
+   "limits": "30 kV è media tensione interna (31 occ.), separata."
+  },
+  {
+   "field": "municipalities",
+   "class": "nuovo_verificato",
+   "canonical": "TORTONA",
+   "value": [
+    "Tortona",
+    "Pozzolo Formigaro",
+    "Frugarolo"
+   ],
+   "proposal": {
+    "add": [
+     "Pozzolo Formigaro",
+     "Frugarolo"
+    ]
+   },
+   "evidence": [
+    {
+     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8788",
+     "note": "titolo ufficiale della scheda"
+    }
+   ]
+  },
+  {
+   "field": "province",
+   "class": "confermato",
+   "canonical": "AL",
+   "value": "AL"
+  },
+  {
+   "field": "region",
+   "class": "non_determinabile",
+   "canonical": "Piemonte",
+   "limits": "La scheda progetto letta non riporta la regione in forma estraibile; il canonico non è contraddetto."
+  },
+  {
+   "field": "localities",
+   "class": "nuovo_verificato",
+   "value": "Cascina Ponzana, Cascina Ponzanina (Tortona, Pozzolo Formigaro)",
+   "evidence": [
+    {
+     "url": "https://va.mite.gov.it/File/Documento/1438995",
+     "page": 2,
+     "note": "PSC, intestazione cantiere"
+    }
+   ]
+  },
+  {
+   "field": "site_bbox_wgs84",
+   "class": "nuovo_verificato",
+   "value": {
+    "NE": [
+     44.846,
+     8.7882
+    ],
+    "SW": [
+     44.82932,
+     8.77739
+    ]
+   },
+   "evidence": [
+    {
+     "url": "https://va.mite.gov.it/File/Documento/1439008",
+     "page": 1,
+     "note": "verifica ENAC: spigoli del sito impianto"
+    }
+   ],
+   "precision": "site_bbox_corner",
+   "limits": "Rettangolo d'ingombro dichiarato, non perimetro."
+  },
+  {
+   "field": "area_polygons",
+   "class": "conflittuale",
+   "value": [
+    {
+     "area": "1",
+     "document": "805847",
+     "pages": [
+      7
+     ],
+     "crs": "UTM zone unknown",
+     "vertex_count": 5,
+     "area_ha": 43.182,
+     "geojson": null
+    },
+    {
+     "area": "1",
+     "document": "706408",
+     "pages": [
+      7
+     ],
+     "crs": "EPSG:32632",
+     "vertex_count": 5,
+     "area_ha": 41.7,
+     "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         8.7808327,
+         44.8424933
+        ],
+        [
+         8.7866179,
+         44.8451779
+        ],
+        [
+         8.7918081,
+         44.8410914
+        ],
+        [
+         8.7880224,
+         44.8383028
+        ],
+        [
+         8.7811357,
+         44.8393251
+        ],
+        [
+         8.7808327,
+         44.8424933
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "area": "2#1",
+     "document": "805847",
+     "pages": [
+      17
+     ],
+     "crs": "EPSG:32632",
+     "vertex_count": 4,
+     "area_ha": 13.466,
+     "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         8.7716195,
+         44.8364797
+        ],
+        [
+         8.7755162,
+         44.8365145
+        ],
+        [
+         8.776301,
+         44.8331402
+        ],
+        [
+         8.7710888,
+         44.8331209
+        ],
+        [
+         8.7716195,
+         44.8364797
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "area": "2#1",
+     "document": "706408",
+     "pages": [
+      17
+     ],
+     "crs": "EPSG:32632",
+     "vertex_count": 4,
+     "area_ha": 13.174,
+     "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         8.7715691,
+         44.8364436
+        ],
+        [
+         8.7755292,
+         44.8364335
+        ],
+        [
+         8.7762252,
+         44.833122
+        ],
+        [
+         8.7710379,
+         44.8331928
+        ],
+        [
+         8.7715691,
+         44.8364436
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "area": "2#2",
+     "document": "805847",
+     "pages": [
+      20
+     ],
+     "crs": "EPSG:32632",
+     "vertex_count": 4,
+     "area_ha": 9.483,
+     "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         8.7761734,
+         44.8367048
+        ],
+        [
+         8.7792075,
+         44.8373139
+        ],
+        [
+         8.7781917,
+         44.8316675
+        ],
+        [
+         8.777269,
+         44.8314497
+        ],
+        [
+         8.7761734,
+         44.8367048
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "area": "2#2",
+     "document": "706408",
+     "pages": [
+      20
+     ],
+     "crs": "EPSG:32632",
+     "vertex_count": 4,
+     "area_ha": 9.372,
+     "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         8.7762494,
+         44.836678
+        ],
+        [
+         8.779195,
+         44.8372688
+        ],
+        [
+         8.7783309,
+         44.8316678
+        ],
+        [
+         8.7773066,
+         44.8315578
+        ],
+        [
+         8.7762494,
+         44.836678
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "area": "2#3",
+     "document": "805847",
+     "pages": [
+      23
+     ],
+     "crs": "EPSG:32632",
+     "vertex_count": 4,
+     "area_ha": 23.24,
+     "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         8.782531,
+         44.8383735
+        ],
+        [
+         8.7882658,
+         44.8375021
+        ],
+        [
+         8.784701,
+         44.8332554
+        ],
+        [
+         8.7796015,
+         44.8335427
+        ],
+        [
+         8.782531,
+         44.8383735
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "area": "2#3",
+     "document": "706408",
+     "pages": [
+      23
+     ],
+     "crs": "EPSG:32632",
+     "vertex_count": 4,
+     "area_ha": 22.978,
+     "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         8.7823792,
+         44.8383732
+        ],
+        [
+         8.788228,
+         44.837448
+        ],
+        [
+         8.7845492,
+         44.8332551
+        ],
+        [
+         8.7796648,
+         44.8335248
+        ],
+        [
+         8.7823792,
+         44.8383732
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "area": "5",
+     "document": "805847",
+     "pages": [
+      27
+     ],
+     "crs": "EPSG:32632",
+     "vertex_count": 4,
+     "area_ha": 6.937,
+     "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         8.7774099,
+         44.8309908
+        ],
+        [
+         8.7834424,
+         44.8315066
+        ],
+        [
+         8.7807431,
+         44.8294039
+        ],
+        [
+         8.7777067,
+         44.8294971
+        ],
+        [
+         8.7774099,
+         44.8309908
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "area": "5",
+     "document": "706408",
+     "pages": [
+      27
+     ],
+     "crs": "EPSG:32632",
+     "vertex_count": 4,
+     "area_ha": 6.628,
+     "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         8.7775115,
+         44.830892
+        ],
+        [
+         8.7833544,
+         44.8313534
+        ],
+        [
+         8.7807814,
+         44.829323
+        ],
+        [
+         8.7778082,
+         44.8293982
+        ],
+        [
+         8.7775115,
+         44.830892
+        ]
+       ]
+      ]
+     }
+    }
+   ],
+   "limits": "Due revisioni (706408, 805847) con scarti di decine di metri; un poligono di 805847 p.7 senza fuso dichiarato in pagina. Richiede verifica visiva sulle tavole prima della promozione."
+  },
+  {
+   "field": "design_and_safety",
+   "class": "nuovo_verificato",
+   "value": [
+    {
+     "role": "società di ingegneria / coordinamento sicurezza in progettazione",
+     "entity": "INTEGRA S.r.l. (Milano)",
+     "person": "Ing. Massimo Castagnello",
+     "evidence": {
+      "url": "https://va.mite.gov.it/File/Documento/1438995",
+      "page": 5
+     }
+    },
+    {
+     "role": "geologo",
+     "person": "Dott. Geol. Vincenzo Cortese",
+     "evidence": {
+      "url": "https://va.mite.gov.it/File/Documento/1439048",
+      "page": 1
+     }
+    },
+    {
+     "role": "firma elaborati / recapiti",
+     "entity": "FAROGB S.r.l.",
+     "vat": "09816980016",
+     "evidence": {
+      "url": "https://va.mite.gov.it/File/Documento/1439023",
+      "page": 1
+     },
+     "limits": "Associazione P. IVA-società non sulla stessa riga"
+    }
+   ],
+   "limits": "Nessuno di questi soggetti è EPC/BoP/appaltatore."
+  },
+  {
+   "field": "epc_bop_contractor",
+   "class": "non_determinabile",
+   "limits": "Nessuna dichiarazione di aggiudicazione nei 189 documenti distinti; nessun EPC estratto (forbidden_hits = 0)."
+  },
+  {
+   "field": "construction_start",
+   "class": "non_determinabile",
+   "value_found": "2026-09-01 / fine 2028-08-30",
+   "temporal": "template_reference",
+   "evidence": [
+    {
+     "url": "https://va.mite.gov.it/File/Documento/1438995",
+     "page": 3,
+     "note": "Data inizio lavori / Data fine lavori (presunta)"
+    },
+    {
+     "url": "https://va.mite.gov.it/File/Documento/1438995",
+     "page": 133,
+     "note": "Durata effettiva dei lavori ... Indirizzo del cantiere"
+    }
+   ],
+   "limits": "Campi presunti del PSC/notifica preliminare (PSC datato Tortona 08/07/2026). Pianificazione, non prova di avvio."
+  },
+  {
+   "field": "construction_duration",
+   "class": "conflittuale",
+   "values": [
+    [
+     "12 mesi",
+     13,
+     1438993,
+     15
+    ],
+    [
+     "18 mesi",
+     2,
+     1161323,
+     15
+    ],
+    [
+     "5 mesi",
+     2,
+     1439047,
+     10
+    ]
+   ],
+   "limits": "Ambiti diversi (intero cantiere, fasi, scenari) da ordinare per revisione."
+  },
+  {
+   "field": "decommissioning_duration",
+   "class": "conflittuale",
+   "values": [
+    [
+     "12 mesi",
+     11,
+     1439001,
+     16
+    ],
+    [
+     "6-9 mesi",
+     6,
+     1439055,
+     159
+    ]
+   ]
+  },
+  {
+   "field": "useful_life",
+   "class": "nuovo_verificato",
+   "value": "30 anni",
+   "evidence": [
+    {
+     "url": "https://va.mite.gov.it/File/Documento/1438993",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "field": "bess",
+   "class": "non_applicabile",
+   "limits": "Nessuna configurazione di accumulo per l'impianto nei documenti (solo valori MWh di produzione, esclusi)."
+  },
+  {
+   "field": "wind_parameters",
+   "class": "non_applicabile"
+  },
+  {
+   "field": "authorization_status",
+   "class": "non_determinabile",
+   "value_found": "Verifica di Ottemperanza (PNIEC-PNRR) in corso",
+   "limits": "Implica decreto VIA emesso; non equivale ad AU né ad avvio lavori."
+  }
+ ],
+ "graphic_pages_for_visual_review": [
+  [
+   "1439004",
+   6,
+   "none_after_ocr"
+  ],
+  [
+   "1439004",
+   12,
+   "none_after_ocr"
+  ],
+  [
+   "1439005",
+   2,
+   "none_after_ocr"
+  ],
+  [
+   "1439005",
+   8,
+   "none_after_ocr"
+  ],
+  [
+   "1439014",
+   24,
+   "none_after_ocr"
+  ],
+  [
+   "1439015",
+   2,
+   "none_after_ocr"
+  ],
+  [
+   "1439015",
+   8,
+   "none_after_ocr"
+  ],
+  [
+   "1439025",
+   22,
+   "none_after_ocr"
+  ],
+  [
+   "1439025",
+   50,
+   "none_after_ocr"
+  ],
+  [
+   "1439025",
+   52,
+   "none_after_ocr"
+  ],
+  [
+   "1439025",
+   58,
+   "none_after_ocr"
+  ],
+  [
+   "1439025",
+   66,
+   "none_after_ocr"
+  ],
+  [
+   "706410",
+   47,
+   "none_after_ocr"
+  ],
+  [
+   "706410",
+   49,
+   "none_after_ocr"
+  ],
+  [
+   "706410",
+   53,
+   "none_after_ocr"
+  ],
+  [
+   "706410",
+   60,
+   "none_after_ocr"
+  ],
+  [
+   "706441",
+   7,
+   "none_after_ocr"
+  ],
+  [
+   "706441",
+   8,
+   "none_after_ocr"
+  ],
+  [
+   "805844",
+   29,
+   "none_after_ocr"
+  ]
+ ],
+ "review": {
+  "status": "ready_for_human_review",
+  "auto_approval": false,
+  "open_points": [
+   "Ordinamento revisioni (moduli, durate, poligoni)",
+   "Verifica visiva poligoni su tavole 706408/805847",
+   "Natura di MARGISOLAR ENERGY S.r.l. e Luisolar Energy S.r.l.",
+   "Rapporto societario Margisolar / Luisolar Energy / Margisolar Energy (stessa sede legale)"
+  ]
+ }
+}
