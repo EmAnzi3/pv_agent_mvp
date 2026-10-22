@@ -75,7 +75,7 @@
    "label": "Durata cantiere",
    "value": "70 settimane (circa 16 mesi)",
    "status": "da verificare",
-   "sub": "Inizio lavori 08/09/2025 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 20 giorni (3), 40 settimane (circa 9 mesi) (3), 9 settimane (circa 2 mesi) (2)",
+   "sub": "Inizio lavori 08/09/2025 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 40 settimane (circa 9 mesi) (3), 215 giorni (circa 7 mesi) (1), 60 settimane (circa 14 mesi) (1)",
    "source": {
     "url": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1047315&hash=3435610ca3267c9e48aae1ac78fc78f9&check=313034373331353334333536313063613332363763396534386161653161633738666337386639",
     "page": 10,
@@ -597,6 +597,75 @@
   "reason": "Avvio previsto il 08/09/2025, ma l'iter è proseguito; ultimo documento o atto del 07/08/2026: probabile slittamento, non ancora realizzato o in corso."
  },
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "08/09/2025",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1501625&hash=e1a251a38ad9127a0bdbed359c3b64a9&check=313530313632356531613235316133386164393132376130626462656433353963336236346139",
+     "page": 5,
+     "document": "14.ARPAT_26032026.pdf",
+     "excerpt": "Si prende atto che il proponente, come indicato da ARPAT, effettuerà l’aggiornamento della VIAc prima dell’avvio dei lavori, come già indicato nel precedente contributo ARPAT datato 8/9/2025. Tale valutazione dell’impatt"
+    }
+   },
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "provvedimento n. 23376 del 06/11/2025",
+    "dettaglio": null,
+    "source": {
+     "url": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1502826&hash=115379b8f37ed68450671335ec71bc51&check=313530323832363131353337396238663337656436383435303637313333356563373162633531",
+     "page": 2,
+     "document": "TERNA_14042026.pdf",
+     "excerpt": "di un tavolo tecnico ed è stato da Terna approvato. Tale progetto risulta autorizzato con provvedimento n. 23376 del 06/11/2025, intestato a Le Rogaie società agricola s.r.l., la quale provvederà successivamente a"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2025",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1502826&hash=115379b8f37ed68450671335ec71bc51&check=313530323832363131353337396238663337656436383435303637313333356563373162633531",
+     "page": 2,
+     "document": "TERNA_14042026.pdf",
+     "excerpt": "di un tavolo tecnico ed è stato da Terna approvato. Tale progetto risulta autorizzato con provvedimento n. 23376 del 06/11/2025, intestato a Le Rogaie società agricola s.r.l., la quale provvederà successivamente a"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di marzo 2027",
+    "dettaglio": "inizio stimato + durata del cantiere: 16 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1047305&hash=e3a637160b974f0c627493e9fbe8b4b0&check=313034373330356533613633373136306239373466306336323734393365396662653862346230",
+     "page": 2,
+     "document": "REL05.pdf",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "16 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "provvedimento n. 23376",
+   "data": "06/11/2025",
+   "source": {
+    "url": "https://servizi.patti.regione.toscana.it/gea-bo/avvisi/GetDocPubblico?idf=1502826&hash=115379b8f37ed68450671335ec71bc51&check=313530323832363131353337396238663337656436383435303637313333356563373162633531",
+    "page": 2,
+    "document": "TERNA_14042026.pdf",
+    "excerpt": "di un tavolo tecnico ed è stato da Terna approvato. Tale progetto risulta autorizzato con provvedimento n. 23376 del 06/11/2025, intestato a Le Rogaie società agricola s.r.l., la quale provvederà successivamente a"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [
    {
