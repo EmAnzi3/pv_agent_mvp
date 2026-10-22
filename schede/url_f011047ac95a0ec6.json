@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "250 giorni (circa 8 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 111 giorni (circa 4 mesi) (2), 30 giorni (1), 18 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 111 giorni (circa 4 mesi) (2), 18 mesi (1)",
    "source": {
     "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/649118/6871",
     "page": 3,
@@ -335,6 +335,63 @@
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto n. 276 del 19/05/2025",
+    "dettaglio": null,
+    "source": {
+     "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/648987/6871",
+     "page": 37,
+     "document": "ER02_RelazioneTecnicaGenerale",
+     "excerpt": "L’ampliamento della stazione Massa Finalese a 132 kV ha ricevuto Parere Favorevole di Compatibilità Ambientale dal MASE, con Decreto n. 276 del 19 maggio 2025. La capofila del suddetto ampliamento è la società Casetta St"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2025",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/648987/6871",
+     "page": 37,
+     "document": "ER02_RelazioneTecnicaGenerale",
+     "excerpt": "L’ampliamento della stazione Massa Finalese a 132 kV ha ricevuto Parere Favorevole di Compatibilità Ambientale dal MASE, con Decreto n. 276 del 19 maggio 2025. La capofila del suddetto ampliamento è la società Casetta St"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di gennaio 2026",
+    "dettaglio": "inizio stimato + durata del cantiere: 250 giorni (circa 8 mesi)",
+    "source": {
+     "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/649118/6871",
+     "page": 3,
+     "document": "R01-RR Viabilità",
+     "excerpt": "a servizio delle piastre Est e un macro cantiere per quelle Ovest. La realizzazione del cantiere prevede un impiego massimo contemporaneo di 234 operai. E’ previsto che le opere vengano realizzate in circa 250 giorni lav"
+    }
+   }
+  ],
+  "durata_cantiere": "250 giorni (circa 8 mesi)",
+  "autorizzazione": {
+   "atto": "Decreto n. 276",
+   "data": "19/05/2025",
+   "source": {
+    "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/648987/6871",
+    "page": 37,
+    "document": "ER02_RelazioneTecnicaGenerale",
+    "excerpt": "L’ampliamento della stazione Massa Finalese a 132 kV ha ricevuto Parere Favorevole di Compatibilità Ambientale dal MASE, con Decreto n. 276 del 19 maggio 2025. La capofila del suddetto ampliamento è la società Casetta St"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
