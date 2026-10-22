@@ -5,7 +5,7 @@
  "title": "Impianto agrivoltaico ibrido di potenza nominale complessiva dell’impianto è pari a 27,216 MW, situato nel comune di Assago (MI), frazione La Bazzanella, su superficie di circa 36 ettari. Il progetto ricade in area agricola sito tra la tangenziale ovest di Milano (a Nord dell'area di progetto) e l'autostrada A7 (ad est dell'area di progetto).",
  "source_url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=21007&idProvenienza=2",
  "source": "lombardia",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -74,8 +74,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "170 giorni (circa 6 mesi)",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 settimane (circa 2 mesi) (2), 5 settimane (2), 34 settimane (circa 8 mesi) (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 34 settimane (circa 8 mesi) (1), 18 mesi (1)",
    "source": {
     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507296959&nomeFile=da10ra01a_studio%20preliminare%20ambientale_signed-signed.pdf",
     "page": 30,
@@ -302,6 +302,63 @@
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "D.g.r. n. 21-8755 del 10/06/2024",
+    "dettaglio": null,
+    "source": {
+     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507296959&nomeFile=da10ra01a_studio%20preliminare%20ambientale_signed-signed.pdf",
+     "page": 15,
+     "document": "SPA, previsionale acustico e geologica R3 - da10ra01a_studio preliminare ambientale_signed-signed.pdf",
+     "excerpt": "impatto ambientale e autorizzazione ambientale integrata\", in vigore dal 4 agosto 2023. D.g.r. n. 21-8755 del 10 giugno 2024: oneri istruttori per le istanze di VIA e di VAS di competenza di Regione Piemonte di cui all’a"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di giugno 2024",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507296959&nomeFile=da10ra01a_studio%20preliminare%20ambientale_signed-signed.pdf",
+     "page": 15,
+     "document": "SPA, previsionale acustico e geologica R3 - da10ra01a_studio preliminare ambientale_signed-signed.pdf",
+     "excerpt": "impatto ambientale e autorizzazione ambientale integrata\", in vigore dal 4 agosto 2023. D.g.r. n. 21-8755 del 10 giugno 2024: oneri istruttori per le istanze di VIA e di VAS di competenza di Regione Piemonte di cui all’a"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di dicembre 2024",
+    "dettaglio": "inizio stimato + durata del cantiere: 170 giorni (circa 6 mesi)",
+    "source": {
+     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507296959&nomeFile=da10ra01a_studio%20preliminare%20ambientale_signed-signed.pdf",
+     "page": 30,
+     "document": "SPA, previsionale acustico e geologica R3 - da10ra01a_studio preliminare ambientale_signed-signed.pdf",
+     "excerpt": "Cronoprogramma delle lavorazioni La durata dei lavori per la realizzazione dell’impianto agrivoltaico è stimata in 170 giorni lavorativi. In Tabella 2.5 è possibile consultare un cronoprogramma indicativo delle lavorazio"
+    }
+   }
+  ],
+  "durata_cantiere": "170 giorni (circa 6 mesi)",
+  "autorizzazione": {
+   "atto": "D.g.r. n. 21-8755",
+   "data": "10/06/2024",
+   "source": {
+    "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507296959&nomeFile=da10ra01a_studio%20preliminare%20ambientale_signed-signed.pdf",
+    "page": 15,
+    "document": "SPA, previsionale acustico e geologica R3 - da10ra01a_studio preliminare ambientale_signed-signed.pdf",
+    "excerpt": "impatto ambientale e autorizzazione ambientale integrata\", in vigore dal 4 agosto 2023. D.g.r. n. 21-8755 del 10 giugno 2024: oneri istruttori per le istanze di VIA e di VAS di competenza di Regione Piemonte di cui all’a"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
@@ -385,10 +442,6 @@
   },
   {
    "label": "Accumulo",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
-   "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
