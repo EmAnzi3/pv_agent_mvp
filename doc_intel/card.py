@@ -922,15 +922,26 @@ def _authorisation(d: dict, record: dict, p: dict, titles: dict) -> dict | None:
                 acts.append({"type": re.sub(r"\s+", " ", m.group("type")).strip(), "number": m.group("num").strip(), "date": iso,
                              "own": True, "source": {"url": p.get("info_url"), "page": None, "document": "titolo del procedimento",
                                                      "excerpt": m.group(0)[:200]}})
+    # an act cannot authorise a project before the project exists: drop acts older than the first filed document
+    filed = sorted(e["index_date"] for e in d.get("inventory", []) if e.get("index_date"))
+    if filed:
+        floor = f"{int(filed[0][:4]) - 1}{filed[0][4:]}"
+        acts = [a for a in acts if a["date"] >= floor]
     if not acts:
         return None
     # the decisive act is the most recent one; among same-day citations prefer the act's own document
     return max(acts, key=lambda a: (a["date"], a["own"]))
 
 
+ACT_DOC = re.compile(r"(?i)decret|determin|provvediment|autorizzazion|P\.?A\.?U\.?R|parere|prescrizion|esito|delibera|atto")
+
+
 def _deadline(d: dict, kind: str, titles: dict, prefer_url: str | None) -> dict | None:
+    # deadlines bind only when written in the authorising act or in another act/opinion of the procedure,
+    # not in a study quoting the rules of other projects
     cands = [f for f in d["facts"] if f["field"] == f"schedule.deadline.{kind}"
-             and (kind in ("validity", "end_after_start") or (f["value"].get("anchor") or "") in ANCHORED)]
+             and (kind in ("validity", "end_after_start") or (f["value"].get("anchor") or "") in ANCHORED)
+             and (f["citation"]["url"] == prefer_url or ACT_DOC.search(titles.get(f["citation"]["url"]) or ""))]
     if not cands:
         return None
     from collections import Counter
@@ -950,9 +961,15 @@ def _timing(d: dict, record: dict, p: dict, titles: dict, gantt: dict, tiles: li
     rows, notes = [], []
     auth = _authorisation(d, record, p, titles)
     # documented dates
+    auth_iso = auth["date"] if auth else None
     for m in gantt.get("milestones") or []:
+        nature = m.get("nature") or ""
+        if re.search(r"(?i)piano di sicurezza|notifica|scenario|template", nature):
+            continue                               # template fields and scenarios are not project dates
+        if auth_iso and not m.get("certain") and m.get("iso", "9999") < auth_iso and m["label"] != "Proroga inizio lavori":
+            continue                               # planned dates older than the authorisation: obsolete plans
         rows.append({"voce": m["label"], "livello": "documentata", "valore": m["date"],
-                     "dettaglio": m.get("nature"), "source": m.get("source")})
+                     "dettaglio": nature or None, "source": m.get("source")})
     dated = [b for b in gantt.get("bars") or [] if b.get("dates")]
     if dated:
         a = min(_d(b["dates"][0]) for b in dated)
@@ -961,7 +978,7 @@ def _timing(d: dict, record: dict, p: dict, titles: dict, gantt: dict, tiles: li
                      "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo", "source": gantt.get("source")})
     # construction duration: the programme's own span first, else the most frequent plausible duration
     dur_m, dur_src, dur_text = None, None, None
-    if gantt.get("bars") and gantt.get("unit") == "month" and (gantt.get("months") or 0) >= 3:
+    if gantt.get("bars") and gantt.get("unit") == "month" and 3 <= (gantt.get("months") or 0) <= 48:
         dur_m, dur_src = float(gantt["months"]), gantt.get("source")
         dur_text = f"{dur_m:.0f} mesi (cronoprogramma)"
     else:

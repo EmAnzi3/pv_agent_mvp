@@ -242,6 +242,14 @@ AUTH_CTX = re.compile(r"(?i)autorizzazione\s+unica|autorizzatorio|provvedimento\
                       r"non\s+assoggettab|esito\s+(?:positivo|favorevole)|favorevole")
 NOT_PROJECT_ACT = re.compile(r"(?i)D\.?\s?Lgs|legge|L\.\s?R\.|regolamento|circolare|linee\s+guida|D\.?P\.?R|D\.?P\.?C\.?M|piano\s+(?:regionale|paesaggistico)|"
                              r"nomina|delega|organizzazion|bilancio|PNIEC|PNRR\b(?!\))")
+PREAMBLE = re.compile(r"(?i)(?:^|[;:•\-–]\s*)(?:vist[oaie]|richiamat[oaie]|ai\s+sensi|in\s+attuazione)\b")
+NORM_CTX = re.compile(r"(?i)regolament|linee\s+guida|oneri\s+istruttori|competenz|canone|norme\s+di\s+attuazione|PGRA|piano\s+(?:di\s+gestione|regionale|paesaggistico)|"
+                      r"recante|disciplina|organizzazion|nomina|delega|D\.?\s?P\.?\s?R|presidente\s+della\s+repubblica|giunta\s+regionale\s+n|"
+                      r"stazione\s+elettrica|ampliamento\s+della\s+stazione|elettrodotto")
+AUTH_OUTCOME = re.compile(r"(?i)giudizio\s+(?:positivo|favorevole)|compatibilit[aà]\s+ambientale|autorizzazione\s+unica|P\.?A\.?U\.?R|"
+                          r"provvedimento\s+(?:autorizzatorio|unico)|esclusion[ei]\s+dalla|non\s+assoggettab|rilasciat[oa]|autorizzat[oa]")
+THIS_PROJECT = re.compile(r"(?i)(?:del|al|per\s+il|relativ[oa]\s+al)\s+progetto|dell'impianto|per\s+l'impianto|in\s+oggetto|di\s+cui\s+all'oggetto|"
+                          r"il\s+presente\s+progetto|della\s+societ[aà]\s+proponente")
 DEADLINE_RE = re.compile(
     r"(?i)entro\s+(?:e\s+non\s+oltre\s+)?(?:il\s+termine\s+(?:massimo\s+|perentorio\s+)?di\s+)?"
     r"(?P<n>\d{1,3}|" + "|".join(sorted(NUM_WORDS, key=len, reverse=True)) + r")\s*(?:\(\s*\w+\s*\)\s*)?"
@@ -270,8 +278,16 @@ def _acts(ctx: PageContext, i: int, line: str) -> list[Fact]:
         iso = _parse_date(m.group("date"))
         if not iso or int(iso[:4]) < 2015 or NOT_PROJECT_ACT.search(m.group(0)):
             continue
-        kind = "authorisation" if AUTH_CTX.search(m.group(0) + " " + window) else "other"
-        own = ctx.page <= 2 and line.strip()[:1] and m.start() < 40     # act heading on the first pages: the document itself
+        own = bool(ctx.page <= 2 and m.start() < 40 and not PREAMBLE.search(line[:m.start() + 1]))   # heading of the act itself
+        sentence = line + " " + window
+        if PREAMBLE.search(line[:m.start() + 1]) or NORM_CTX.search(sentence):
+            kind = "other"                         # 'VISTO il D.P.R. n. 120...', regulations, fees, competences, plans
+        elif own and AUTH_CTX.search(sentence + " " + ctx.text[:2500]):
+            kind = "authorisation"
+        elif AUTH_OUTCOME.search(sentence) and THIS_PROJECT.search(sentence):
+            kind = "authorisation"                 # 'con Decreto n. 324 del ... giudizio positivo ... del progetto in oggetto'
+        else:
+            kind = "other"
         out.append(Fact(field="act.issue", value={"type": re.sub(r"\s+", " ", m.group("type")).strip(), "number": m.group("num").strip(),
                                                  "date": iso, "kind": kind},
                         subject="this_document" if own else "referenced",
