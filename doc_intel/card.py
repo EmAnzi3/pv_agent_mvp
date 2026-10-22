@@ -358,7 +358,9 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         energy = _pick(d, "tech.bess_energy_mwh", titles)
         tiles.append({"key": "accumulo", "label": "Accumulo", "value": bess["text"] + (f" / {energy['text']}" if energy else ""),
                       "status": bess["status"], "sub": _hint(bess), "source": bess["source"]})
-    dur = _pick(d, "schedule.duration.construction", titles)
+    # a plant of more than a few MW is not built in days: such values are single phases (site set-up, a crossing...)
+    plausible = (lambda v: not isinstance(v, dict) or v.get("max", 0) >= 3) if (plant_mw or 0) >= 5 else None
+    dur = _pick(d, "schedule.duration.construction", titles, plausible)
     start = _pick(d, "schedule.date.construction_start", titles)
     if dur or start:
         sub = None
@@ -877,6 +879,158 @@ def _gantt(d: dict, titles: dict) -> dict:
                        "raster_gantt": "diagramma in immagine (lettura automatica, da verificare)"}.get(method) if bars else None}
 
 
+
+# --------------------------------------------------------------------------------------------- timing
+ANCHORED = ("rilascio", "notifica", "pubblicazione", "efficacia", "emanazione", "adozione", "presente")
+
+
+def _d(iso: str):
+    from datetime import date
+    y, m, dd = (iso.split("-") + ["1", "1"])[:3]
+    return date(int(y), int(m), int(dd or 1))
+
+
+def _add_months(day, months: float):
+    from datetime import date
+    import calendar
+    whole = int(months)
+    y, m = divmod(day.month - 1 + whole, 12)
+    y, m = day.year + y, m + 1
+    return date(y, m, min(day.day, calendar.monthrange(y, m)[1]))
+
+
+def _it(day, month_only: bool = False) -> str:
+    names = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
+    return f"{names[day.month - 1]} {day.year}" if month_only else day.strftime("%d/%m/%Y")
+
+
+def _authorisation(d: dict, record: dict, p: dict, titles: dict) -> dict | None:
+    """The act that authorises the works: the latest authorisation act read in the documents or in the
+    procedure title. Nothing is assumed when no such act is written anywhere."""
+    from .extract.schedule import ACT_RE, AUTH_CTX, _parse_date
+    acts = []
+    for f in d["facts"]:
+        if f["field"] == "act.issue" and (f.get("qualifiers") or {}).get("kind") == "authorisation":
+            v = f["value"]
+            acts.append({"type": v["type"], "number": v["number"], "date": v["date"], "own": f.get("subject") == "this_document",
+                         "source": _source({"url": f["citation"]["url"], "page": f["citation"].get("page"),
+                                            "excerpt": f["citation"].get("excerpt")}, titles)})
+    for title in {record.get("title"), p.get("title")} - {None}:
+        for m in ACT_RE.finditer(title):
+            iso = _parse_date(m.group("date"))
+            if iso and int(iso[:4]) >= 2015 and AUTH_CTX.search(title):
+                acts.append({"type": re.sub(r"\s+", " ", m.group("type")).strip(), "number": m.group("num").strip(), "date": iso,
+                             "own": True, "source": {"url": p.get("info_url"), "page": None, "document": "titolo del procedimento",
+                                                     "excerpt": m.group(0)[:200]}})
+    if not acts:
+        return None
+    # the decisive act is the most recent one; among same-day citations prefer the act's own document
+    return max(acts, key=lambda a: (a["date"], a["own"]))
+
+
+def _deadline(d: dict, kind: str, titles: dict, prefer_url: str | None) -> dict | None:
+    cands = [f for f in d["facts"] if f["field"] == f"schedule.deadline.{kind}"
+             and (kind in ("validity", "end_after_start") or (f["value"].get("anchor") or "") in ANCHORED)]
+    if not cands:
+        return None
+    from collections import Counter
+    count = Counter(f["value"]["months"] for f in cands)
+    best = max(cands, key=lambda f: (f["citation"]["url"] == prefer_url, count[f["value"]["months"]]))
+    v = best["value"]
+    return {"months": v["months"], "text": re.sub(r"\s*\(\s*\w+\s*\)", "", v["raw"]).strip(), "anchor": v.get("anchor"),
+            "occurrences": count[v["months"]],
+            "source": _source({"url": best["citation"]["url"], "page": best["citation"].get("page"),
+                               "excerpt": best["citation"].get("excerpt")}, titles)}
+
+
+def _timing(d: dict, record: dict, p: dict, titles: dict, gantt: dict, tiles: list[dict]) -> dict:
+    """When the works happen, at three levels of evidence, never mixed:
+    documentata (dates written in the documents), prescritta (act date + deadline imposed by the act),
+    stimata (act date + construction duration of the project; labelled as an estimate, shown as a range)."""
+    rows, notes = [], []
+    auth = _authorisation(d, record, p, titles)
+    # documented dates
+    for m in gantt.get("milestones") or []:
+        rows.append({"voce": m["label"], "livello": "documentata", "valore": m["date"],
+                     "dettaglio": m.get("nature"), "source": m.get("source")})
+    dated = [b for b in gantt.get("bars") or [] if b.get("dates")]
+    if dated:
+        a = min(_d(b["dates"][0]) for b in dated)
+        b = max(_d(b["dates"][1]) for b in dated)
+        rows.append({"voce": "Cronoprogramma con date", "livello": "documentata", "valore": f"{_it(a)} → {_it(b)}",
+                     "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo", "source": gantt.get("source")})
+    # construction duration: the programme's own span first, else the most frequent plausible duration
+    dur_m, dur_src, dur_text = None, None, None
+    if gantt.get("bars") and gantt.get("unit") == "month" and (gantt.get("months") or 0) >= 3:
+        dur_m, dur_src = float(gantt["months"]), gantt.get("source")
+        dur_text = f"{dur_m:.0f} mesi (cronoprogramma)"
+    else:
+        t = next((t for t in tiles if t["key"] == "cantiere" and t["value"] != "non indicata"), None)
+        mm = re.search(r"(\d+)\s*mesi|circa\s+(\d+)\s+mesi", (t or {}).get("value") or "")
+        if t and mm:
+            dur_m, dur_src, dur_text = float(mm.group(1) or mm.group(2)), t.get("source"), t["value"]
+    if auth:
+        A = _d(auth["date"])
+        rows.append({"voce": "Atto autorizzativo", "livello": "documentata",
+                     "valore": f"{auth['type']} n. {auth['number']} del {_it(A)}", "dettaglio": None, "source": auth["source"]})
+        prefer = (auth.get("source") or {}).get("url")
+        ds, de = _deadline(d, "start", titles, prefer), _deadline(d, "end", titles, prefer)
+        dea, dv = _deadline(d, "end_after_start", titles, prefer), _deadline(d, "validity", titles, prefer)
+        start_by = _add_months(A, ds["months"]) if ds else None
+        end_by = _add_months(A, de["months"]) if de else (_add_months(start_by, dea["months"]) if start_by and dea else None)
+        if ds:
+            rows.append({"voce": "Inizio lavori", "livello": "prescritta", "valore": f"entro il {_it(start_by)}",
+                         "dettaglio": f"«{ds['text']}» dall'atto del {_it(A)}", "source": ds["source"]})
+        if end_by:
+            src = de or dea
+            rows.append({"voce": "Fine lavori", "livello": "prescritta", "valore": f"entro il {_it(end_by)}",
+                         "dettaglio": f"«{src['text']}»" + (f" dall'atto del {_it(A)}" if de else " dall'inizio dei lavori"),
+                         "source": src["source"]})
+        if dv and not end_by:
+            valid_to = _add_months(A, dv["months"])
+            rows.append({"voce": "Validità dell'atto", "livello": "prescritta", "valore": f"fino al {_it(valid_to)}",
+                         "dettaglio": f"«{dv['text']}»: i lavori vanno eseguiti entro questo termine", "source": dv["source"]})
+        started = next((m for m in gantt.get("milestones") or [] if m["label"] == "Inizio lavori" and m.get("certain")), None)
+        # estimate: a range, from the act date (works cannot start earlier) to the prescribed start deadline;
+        # when the start of works is documented as an event, only the end is estimated, from that date
+        if dur_m and started:
+            rows.append({"voce": "Fine lavori", "livello": "stimata",
+                         "valore": f"intorno a {_it(_add_months(_d(started['iso']), dur_m), True)}",
+                         "dettaglio": f"inizio documentato + durata del cantiere: {dur_text}", "source": dur_src})
+        elif dur_m:
+            lo_end = _add_months(A, dur_m)
+            hi_start = start_by
+            hi_end = _add_months(start_by, dur_m) if start_by else None
+            if end_by and hi_end and hi_end > end_by:
+                hi_end = end_by
+            rows.append({"voce": "Inizio lavori", "livello": "stimata",
+                         "valore": f"tra {_it(A, True)} e {_it(hi_start, True)}" if hi_start else f"non prima di {_it(A, True)}",
+                         "dettaglio": "non prima dell'atto autorizzativo" + (", non oltre il termine prescritto" if hi_start else
+                                                                              "; nessun termine di inizio letto negli atti"),
+                         "source": auth["source"]})
+            rows.append({"voce": "Fine lavori", "livello": "stimata",
+                         "valore": f"tra {_it(lo_end, True)} e {_it(hi_end, True)}" if hi_end else f"non prima di {_it(lo_end, True)}",
+                         "dettaglio": f"inizio stimato + durata del cantiere: {dur_text}", "source": dur_src})
+        else:
+            notes.append("Durata del cantiere non leggibile negli elaborati: fine lavori non stimabile.")
+    else:
+        starts = [r for r in rows if r["voce"] == "Inizio lavori" and r["livello"] == "documentata"]
+        if starts and dur_m:
+            try:
+                s0 = _d(next(m["iso"] for m in gantt.get("milestones") or [] if m["label"] == "Inizio lavori"))
+                rows.append({"voce": "Fine lavori", "livello": "stimata", "valore": f"non prima di {_it(_add_months(s0, dur_m), True)}",
+                             "dettaglio": f"inizio indicato nei documenti + durata del cantiere: {dur_text}", "source": dur_src})
+            except StopIteration:
+                pass
+        notes.append("Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; "
+                     "le date di cantiere non sono stimabili.")
+    return {"righe": rows, "durata_cantiere": dur_text, "autorizzazione": auth and {
+                "atto": f"{auth['type']} n. {auth['number']}", "data": _it(_d(auth["date"])), "source": auth["source"]},
+            "note": notes,
+            "legenda": {"documentata": "data scritta nei documenti", "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+                        "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"}}
+
+
 # --------------------------------------------------------------------------------------------- status
 def _status(d: dict, gantt: dict, today=None) -> dict | None:
     """Where the project stands, from planned dates versus documents filed afterwards.
@@ -976,6 +1130,7 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
     loc = _location(d, p, record, titles)
     gantt = _gantt(d, titles)
     status = _status(d, gantt)
+    timing = _timing(d, record, p, titles, gantt, tiles)
     if status and status["level"] in ("potenzialmente_realizzato", "potenzialmente_avviato", "date_superate"):
         open_points.insert(0, {"label": "Stato del progetto", "reason": status["reason"]})
     register = _register(p)
@@ -997,6 +1152,7 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         "altri_soggetti": others,
         "stato": status,
         "registro": register,
+        "tempistica": timing,
         "cronoprogramma": gantt,
         "documentazione": {"documenti": a["references"], "pagine": a["pages_total"],
                            "completa": d["gates"]["acquisition"]["pass"]},

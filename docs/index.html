@@ -623,6 +623,18 @@
 .sc-panel .g-dt td { padding: 4px 6px; vertical-align: baseline; }
 .sc-panel tr:hover td { background: transparent; }
 
+/* tempistica: tre livelli di evidenza */
+.sc-tt { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; min-width: 0 !important; }
+.sc-tt td { padding: 7px 6px; border-bottom: 1px solid var(--line, #e5e7eb); vertical-align: top; }
+.sc-tt td:first-child { width: 98px; }
+.sc-tt td.sc-tv { width: 42%; text-align: right; font-variant-numeric: tabular-nums; }
+.sc-lv { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+.sc-lv.lv-documentata { background: #dcfce7; color: #14532d; }
+.sc-lv.lv-prescritta { background: #dbeafe; color: #1e3a8a; }
+.sc-lv.lv-stimata { background: transparent; color: #57534e; border: 1px dashed #a8a29e; }
+.sc-tt tr.lv-stimata td { color: #57534e; font-style: italic; }
+.sc-leg { margin-top: 6px; }
+
 </style>
 <!-- MOBILE REDIRECT START -->
 <script>
@@ -1029,6 +1041,22 @@
       ${safeHref(l.mappa_ufficiale) ? `<a class="sc-link" href="${esc(safeHref(l.mappa_ufficiale))}" target="_blank" rel="noopener noreferrer">Mappa ufficiale del procedimento<\/a>` : ''}<\/section>`;
   }
 
+  function timing(t) {
+    if (!t) return '';
+    const rows = t.righe || [];
+    const lv = { documentata: 'Documentata', prescritta: 'Prescritta', stimata: 'Stima' };
+    const order = { documentata: 0, prescritta: 1, stimata: 2 };
+    const sorted = rows.slice().sort((a, b) => order[a.livello] - order[b.livello]);
+    const body = sorted.length ? `<table class="sc-tt"><tbody>${sorted.map(r => `<tr class="lv-${esc(r.livello)}">
+        <td><span class="sc-lv lv-${esc(r.livello)}">${esc(lv[r.livello] || r.livello)}<\/span><\/td>
+        <td><strong>${esc(r.voce)}<\/strong>${r.dettaglio ? `<div class="sc-fine">${esc(r.dettaglio)}<\/div>` : ''}<\/td>
+        <td class="sc-tv">${esc(r.valore)} ${src(r.source)}<\/td><\/tr>`).join('')}<\/tbody><\/table>` : '';
+    const notes = (t.note || []).map(n => `<p class="sc-fine">${esc(n)}<\/p>`).join('');
+    const legend = `<p class="sc-fine sc-leg"><span class="sc-lv lv-documentata">Documentata<\/span> scritta nei documenti ·
+      <span class="sc-lv lv-prescritta">Prescritta<\/span> termine dell'atto dalla sua data ·
+      <span class="sc-lv lv-stimata">Stima<\/span> intervallo calcolato, non una data certa<\/p>`;
+    return `<section class="sc-sec"><h3>Tempistica dei lavori<\/h3>${body}${notes}${rows.length ? legend : ''}<\/section>`;
+  }
   function render(card) {
     const l = card.ubicazione || {};
     const withProv = (l.comuni || []).some(c => /\(/.test(c));
@@ -1051,7 +1079,7 @@
         <\/div>
       <\/div>
       ${tiles(card.sintesi)}
-      <div class="sc-body">${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
+      <div class="sc-body">${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
         <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.completa ? '' : ' (lettura incompleta)'};
           aggiornata il ${esc((card.updated || '').split('-').reverse().join('/'))}. ${esc(card.avvertenza)}<\/p>
       <\/div>`;

@@ -94,7 +94,7 @@ def _push(store: Path, message: str) -> bool:
 
 
 def main(data: str, max_items: int, budget_min: float, store_dir: str | None = None,
-         out_dir: str | None = None) -> int:
+         out_dir: str | None = None, recompute: bool = False) -> int:
     from .card import build_card, write_card
     from .pipeline import run
     from .queue import plan
@@ -105,7 +105,9 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
     _ensure_memory(store)
     ocr = _ocr_available()
     print(f"[locale] OCR (Tesseract): {'disponibile' if ocr else 'NON disponibile: le tavole scansionate saranno saltate'}")
-    items = plan(data, store, max_items=max_items, mode="both", local=True)
+    # 'ricalcola': re-read the documents of projects that already have a card (new extraction rules)
+    items = plan(data, store, max_items=max_items, mode="refresh" if recompute else "both", local=True,
+                 retry_days=0 if recompute else 14)
     print(f"[locale] progetti in questo blocco: {len(items)}")
     done = 0
     out = Path(out_dir) if out_dir else store.parent / "dossier"
@@ -114,7 +116,7 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
         print(f"\n[locale] {n}/{len(items)} {it['url']}")
         try:
             d = run(it["url"], str(store), data, ocr=ocr, ocr_max_pages=600, workers=3, registry="vies",
-                    time_budget_s=budget_min * 60)
+                    time_budget_s=budget_min * 60, reanalyse=recompute)
             (out / f"{d['project']['source']}-{d['project']['project_id']}.json").write_text(
                 json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
             if not d["acquisition"].get("references"):
