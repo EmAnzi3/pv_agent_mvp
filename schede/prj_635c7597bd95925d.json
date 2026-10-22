@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "15 mesi",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (2), 8 mesi (1), 1 mese (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (2), 8 mesi (1)",
    "source": {
     "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=459698510&nomeFile=sc_pro_rel_09_studio_viabilit%C3%A0_signed.pdf",
     "page": 15,
@@ -170,7 +170,7 @@
     {
      "type": "PEC",
      "value": "aukeraitaly5@legalmail.it",
-     "occurrences": 286,
+     "occurrences": 285,
      "source": {
       "url": "https://www.silvia.servizirl.it/silviaweb/downloadDocumento.html?idEdma=507561183&nomeFile=2026%2007%2031%20prot%2048025%20aukera%20osservazioni%20art.%2010-bis.pdf",
       "page": 1,
@@ -809,6 +809,19 @@
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "15 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
@@ -880,7 +893,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "136 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "129 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
