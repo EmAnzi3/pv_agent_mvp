@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "20 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (5), 10 mesi (5), 16 mesi (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (5), 16 mesi (2), 14 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1367764",
     "page": 10,
@@ -198,62 +198,79 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
-  },
-  {
-   "name": "Energie Rinnovabili S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": "03554280713",
-   "vat_group": false,
-   "verified": true,
-   "office": "Via Ergisto Bezzi N 2 20146 Milano Mi",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "srlenergierinnovabili@pec.it",
-     "occurrences": 7,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/886349",
-      "page": 1,
-      "document": "Contratti preliminari di superficie",
-      "excerpt": "srlenergierinnovabili@pec.it,"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
-  },
-  {
-   "name": "Autostrade PER L'italia S.p.A.",
-   "kind": "società",
-   "roles": [],
-   "vat": "07516911000",
-   "vat_group": false,
-   "verified": true,
-   "office": "Via Alberto Bergamini 50 00159 Roma Rm",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "autostradeperlitaliadt8bari@pec.autostrade.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/886349",
-      "page": 120,
-      "document": "Contratti preliminari di superficie",
-      "excerpt": ". WEBSITE : www.autostrade.it Codice Fiscale e n. di iscrizione al Registro delle Imprese di Roma 07516911000 PEC 1 autostradeperlitaliadt8bari@pec.autostrade.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
   }
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "decreto n. 120 del 13/06/2017",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1367764",
+     "page": 2,
+     "document": "Allegato al Decreto Direttoriale - Parere della Commissione Tecnica PNRR - PNIEC del 05/12/2024",
+     "excerpt": "ambientale e sanitario (VIIAS) nelle procedure di autorizzazione ambientale (VAS, VIA, AIA)”; − il decreto del Presidente della Repubblica n. 120 del 13 giugno 2017 - “Regolamento recante la disciplina semplificata della"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 13/06/2022",
+    "dettaglio": "«efficacia del presente provvedimento è di 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1367758",
+     "page": 7,
+     "document": "Decreto Direttoriale - Progetto di un impianto agrivoltaico, della potenza di 83,62 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Apricena (FG).",
+     "excerpt": "2. Ai sensi dell’articolo 25, comma 5, del decreto legislativo n. 152/2006, la durata dell’efficacia del presente provvedimento è di 5 anni decorrenti dalla data di pubblicazione del presente decreto sul sito internet de"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di giugno 2017",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1367764",
+     "page": 2,
+     "document": "Allegato al Decreto Direttoriale - Parere della Commissione Tecnica PNRR - PNIEC del 05/12/2024",
+     "excerpt": "ambientale e sanitario (VIIAS) nelle procedure di autorizzazione ambientale (VAS, VIA, AIA)”; − il decreto del Presidente della Repubblica n. 120 del 13 giugno 2017 - “Regolamento recante la disciplina semplificata della"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di febbraio 2019",
+    "dettaglio": "inizio stimato + durata del cantiere: 20 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1367764",
+     "page": 10,
+     "document": "Allegato al Decreto Direttoriale - Parere della Commissione Tecnica PNRR - PNIEC del 05/12/2024",
+     "excerpt": "del progetto, ma non specifica le unità operative in fase di esercizio e gestione dell’impianto2. Il cronoprogramma del Proponente prevede una tempistica di 20 mesi, suddivisi nelle varie fasi come da figura sottostante3"
+    }
+   }
+  ],
+  "durata_cantiere": "20 mesi",
+  "autorizzazione": {
+   "atto": "decreto n. 120",
+   "data": "13/06/2017",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1367764",
+    "page": 2,
+    "document": "Allegato al Decreto Direttoriale - Parere della Commissione Tecnica PNRR - PNIEC del 05/12/2024",
+    "excerpt": "ambientale e sanitario (VIIAS) nelle procedure di autorizzazione ambientale (VAS, VIA, AIA)”; − il decreto del Presidente della Repubblica n. 120 del 13 giugno 2017 - “Regolamento recante la disciplina semplificata della"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
@@ -263,7 +280,7 @@
   "duration": {
    "text": "20 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (5), 10 mesi (5), 16 mesi (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (5), 16 mesi (2), 14 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1367764",
     "page": 10,
@@ -325,7 +342,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "6 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "5 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
