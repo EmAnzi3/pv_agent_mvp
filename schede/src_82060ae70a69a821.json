@@ -5,7 +5,7 @@
  "title": "[ID: 14443] PROCEDURA DI VALUTAZIONE DI IMPATTO AMBIENTALE RELATIVA AL PROGETTO DI UN IMPIANTO AGRIVOLTAICO PNRR DELLA POTENZA NOMINALE IN DC DI 55,07 MWP, INTEGRATO CON SISTEMA DI ACCUMULO DELLA POTENZA NOMINALE DI 21 MW (30 MVA) DENOMINATO \"ROANA\", DA REALIZZARSI NEI COMUNI DI ARIANO DEL POLESINE, MESOLA, CODIGORO NELLE PROVINCIE DI ROVIGO E FERRARA",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11923",
  "source": "mase",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -75,10 +75,9 @@
   "regione": "Emilia-Romagna",
   "provincia": "FE",
   "comuni": [
-   "ARIANO DEL POLESINE",
-   "MESOLA",
-   "CODIGORO NELLE PROVINCIE DI ROVIGO",
-   "FERRARA"
+   "Codigoro",
+   "Ariano Nel Polesine",
+   "Mesola"
   ],
   "coordinate": {
    "lat": 44.94009,
@@ -93,6 +92,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=44.94009,12.24358",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
@@ -330,6 +330,63 @@
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "D.G.R. n. 12 del 31/05/2024",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1394755",
+     "page": 8,
+     "document": "Integrazioni del 30/04/2026 - Studio di Incidenza",
+     "excerpt": "● D.G.R. n. 12 del 31 maggio 2024 - Disciplina regionale in materia di valutazione ambientale strategica (VAS), valutazione di impatto ambientale (VIA), valutazione d’incidenza ambientale (VINCA) e autorizzazione integra"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2024",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1394755",
+     "page": 8,
+     "document": "Integrazioni del 30/04/2026 - Studio di Incidenza",
+     "excerpt": "● D.G.R. n. 12 del 31 maggio 2024 - Disciplina regionale in materia di valutazione ambientale strategica (VAS), valutazione di impatto ambientale (VIA), valutazione d’incidenza ambientale (VINCA) e autorizzazione integra"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2024",
+    "dettaglio": "inizio stimato + durata del cantiere: 6 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1396446",
+     "page": 53,
+     "document": "Integrazioni del 10/04/2026 - PIANO DI MONITORAGGIO AMBIENTALE",
+     "excerpt": "Tale fase avrà una durata minima raccomandabile di 6 mesi a partire dall’allestimento di pozzi e piezometri, prima della fase di costruzione e di allestimento del cantiere."
+    }
+   }
+  ],
+  "durata_cantiere": "6 mesi",
+  "autorizzazione": {
+   "atto": "D.G.R. n. 12",
+   "data": "31/05/2024",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1394755",
+    "page": 8,
+    "document": "Integrazioni del 30/04/2026 - Studio di Incidenza",
+    "excerpt": "● D.G.R. n. 12 del 31 maggio 2024 - Disciplina regionale in materia di valutazione ambientale strategica (VAS), valutazione di impatto ambientale (VIA), valutazione d’incidenza ambientale (VINCA) e autorizzazione integra"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
@@ -381,7 +438,7 @@
   {
    "campo": "municipalities",
    "valore_attuale": "ARIANO DEL POLESINE, MESOLA, CODIGORO NELLE PROVINCIE DI ROVIGO, FERRARA",
-   "esito": "non_determinabile"
+   "esito": "conflittuale"
   },
   {
    "campo": "province",
