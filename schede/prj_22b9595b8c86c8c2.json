@@ -5,7 +5,7 @@
  "title": "Progetto per la costruzione e l'esercizio di un impianto di produzione di energia elettrica da fonte fotovoltaica denominato “Castagmaro” della potenza di 27.06 MWp, localizzato in area industriale, comprensivo delle relative opere elettriche connesse ed infrastrutture indispensabili - Comuni di localizzazione: Castagnaro, Villa Bartolomea (VR) e Giacciano con Baruchella (RO)",
  "source_url": "https://sharing.regione.veneto.it/index.php/s/ifPb32CMF6t2tnz",
  "source": "veneto",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -398,6 +398,75 @@
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "D.G.R. n. 1473 del 20/11/2025",
+    "dettaglio": null,
+    "source": {
+     "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/INTEGRAZIONI%20FORMALI/Richieste%20ENTI/9-26%20Direzione%20Energia.pdf",
+     "page": 5,
+     "document": "9-26 Direzione Energia.pdf",
+     "excerpt": "Si evidenzia la necessità di coinvolgere nei procedimenti di P.A.U.R. tutte le strutture regionali indicate nell'Allegato A1 della D.G.R. n. 1473 del 20/11/2025 (pubblicata sul BUR del 28/11/2025) con cui sono state forn"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 20/11/2028",
+    "dettaglio": "«validità di tre anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/0_PROGETTO/F-b1_Rel_DOC01_ElabGenerali_relazione%20generale%20_rev00.p7m",
+     "page": 5,
+     "document": "F-b1_Rel_DOC01_ElabGenerali_relazione generale _rev00.p7m",
+     "excerpt": "enti. L’autorizzazione ha in genere una validità di tre anni per l’avvio dei lavori, prorogabile su richiesta motivata."
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2025",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/INTEGRAZIONI%20FORMALI/Richieste%20ENTI/9-26%20Direzione%20Energia.pdf",
+     "page": 5,
+     "document": "9-26 Direzione Energia.pdf",
+     "excerpt": "Si evidenzia la necessità di coinvolgere nei procedimenti di P.A.U.R. tutte le strutture regionali indicate nell'Allegato A1 della D.G.R. n. 1473 del 20/11/2025 (pubblicata sul BUR del 28/11/2025) con cui sono state forn"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2026",
+    "dettaglio": "inizio stimato + durata del cantiere: 6 mesi",
+    "source": {
+     "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/0_PROGETTO/F-b1_Rel_SU01_OpereUtenza_relazione%20tecnica%20illustrativa%20_rev00.p7m",
+     "page": 13,
+     "document": "F-b1_Rel_SU01_OpereUtenza_relazione tecnica illustrativa _rev00.p7m",
+     "excerpt": "La realizzazione del Punto di Raccolta richiede la presenza di un cantiere della durata di 6 mesi, in cui si susseguono varie fasi lavorative, di cui solo alcune rumorose. Le fasi del cantiere indicativamente saranno:"
+    }
+   }
+  ],
+  "durata_cantiere": "6 mesi",
+  "autorizzazione": {
+   "atto": "D.G.R. n. 1473",
+   "data": "20/11/2025",
+   "source": {
+    "url": "https://sharing.regione.veneto.it/public.php/webdav/1_ELABORATI/INTEGRAZIONI%20FORMALI/Richieste%20ENTI/9-26%20Direzione%20Energia.pdf",
+    "page": 5,
+    "document": "9-26 Direzione Energia.pdf",
+    "excerpt": "Si evidenzia la necessità di coinvolgere nei procedimenti di P.A.U.R. tutte le strutture regionali indicate nell'Allegato A1 della D.G.R. n. 1473 del 20/11/2025 (pubblicata sul BUR del 28/11/2025) con cui sono state forn"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
@@ -447,8 +516,8 @@
   },
   {
    "campo": "power_mw",
-   "valore_attuale": 6.0,
-   "esito": "conflittuale"
+   "valore_attuale": 27.06,
+   "esito": "confermato"
   },
   {
    "campo": "municipalities",
