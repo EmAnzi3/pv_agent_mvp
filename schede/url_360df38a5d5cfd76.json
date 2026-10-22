@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto agro-fotovoltaico denominato \"Limone\" della potenza di 187 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Mineo (CT, Ramacca (CT) e Aidone (CT)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9270",
  "source": "mase",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -61,8 +61,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "18 mesi",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 20 giorni (4), 15 giorni (2), 68 settimane (circa 16 mesi) (2)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 68 settimane (circa 16 mesi) (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1338074",
     "page": 34,
@@ -308,6 +308,75 @@
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto n. 324 del 11/10/2024",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1380959",
+     "page": 2,
+     "document": "Allegato alla Comunicazione VA esito valutazione - Parere della SCVA del 05/03/2026",
+     "excerpt": "PREMESSO che: − con Decreto Direttoriale n. 324 del 11 ottobre 2024 è stato espresso giudizio positivo sulla compatibilità ambientale del Progetto di fattibilità tecnica ed economica: “Progetto di un impianto"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 11/10/2029",
+    "dettaglio": "«efficacia del presente provvedimento è di 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1192953",
+     "page": 7,
+     "document": "Allegato al Decreto Direttoriale - Decreto direttoriale di compatibilità ambientale n. 324 del 11/10/2024",
+     "excerpt": "2. Ai sensi dell’articolo 25, comma 5, del decreto legislativo n. 152 del 2006, la durata dell'efficacia del presente provvedimento è di 5 anni decorrenti dalla data di pubblicazione del presente decreto sul sito interne"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di ottobre 2024",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1380959",
+     "page": 2,
+     "document": "Allegato alla Comunicazione VA esito valutazione - Parere della SCVA del 05/03/2026",
+     "excerpt": "PREMESSO che: − con Decreto Direttoriale n. 324 del 11 ottobre 2024 è stato espresso giudizio positivo sulla compatibilità ambientale del Progetto di fattibilità tecnica ed economica: “Progetto di un impianto"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di aprile 2026",
+    "dettaglio": "inizio stimato + durata del cantiere: 18 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1080223",
+     "page": 5,
+     "document": "Integrazioni del 05/06/2024 - cronoprogramma esecuzione lavori",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "Decreto n. 324",
+   "data": "11/10/2024",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1380959",
+    "page": 2,
+    "document": "Allegato alla Comunicazione VA esito valutazione - Parere della SCVA del 05/03/2026",
+    "excerpt": "PREMESSO che: − con Decreto Direttoriale n. 324 del 11 ottobre 2024 è stato espresso giudizio positivo sulla compatibilità ambientale del Progetto di fattibilità tecnica ed economica: “Progetto di un impianto"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [
    {
@@ -593,10 +662,6 @@
  "da_verificare": [
   {
    "label": "Superficie complessiva",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
-   "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
