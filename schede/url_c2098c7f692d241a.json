@@ -5,7 +5,7 @@
  "title": "Adeguamento tecnico per modifica del modello di pannello solare e delle strutture di sostegno per il progetto di un impianto fotovoltaico denominato \"Apricena Industriale\" da realizzarsi su aree industriali e cave nelle località \"Podere Camilli - Tufara - San Giovanni - San Sabino\", nel territorio comunale di Apricena (FG) con riduzione di potenza complessiva da 121,023 MWp e immissione di 96,30MW ad una potenza complessiva di 115,318 MWp e immissione di 96,30MW",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11919",
  "source": "mase",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -62,7 +62,8 @@
   "regione": "Puglia",
   "provincia": "FG",
   "comuni": [
-   "FOGGIA"
+   "Apricena",
+   "Tufara"
   ],
   "coordinate": {
    "lat": 41.75023,
@@ -77,6 +78,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.75023,15.42617",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
@@ -343,6 +345,42 @@
   }
  ],
  "stato": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "provvedimento n. 449 del 31/07/2025",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1358739",
+     "page": 1,
+     "document": "Allegato alla Comunicazione VA esito valutazione - Nota tecnica",
+     "excerpt": "Il progetto interessa la medesima area di progetto che ha ottenuto giudizio favorevole di compatibilità ambientale con provvedimento direttoriale n. 449 del 31/07/2025 della Direzione Generale Valutazioni Ambientali del "
+    }
+   }
+  ],
+  "durata_cantiere": null,
+  "autorizzazione": {
+   "atto": "provvedimento n. 449",
+   "data": "31/07/2025",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1358739",
+    "page": 1,
+    "document": "Allegato alla Comunicazione VA esito valutazione - Nota tecnica",
+    "excerpt": "Il progetto interessa la medesima area di progetto che ha ottenuto giudizio favorevole di compatibilità ambientale con provvedimento direttoriale n. 449 del 31/07/2025 della Direzione Generale Valutazioni Ambientali del "
+   }
+  },
+  "note": [
+   "Durata del cantiere non leggibile negli elaborati: fine lavori non stimabile."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
@@ -376,7 +414,7 @@
   {
    "campo": "municipalities",
    "valore_attuale": "FOGGIA",
-   "esito": "non_determinabile"
+   "esito": "conflittuale"
   },
   {
    "campo": "province",
