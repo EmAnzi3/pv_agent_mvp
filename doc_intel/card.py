@@ -913,10 +913,12 @@ def _authorisation(d: dict, record: dict, p: dict, titles: dict) -> dict | None:
     # a one-off citation (another company's decree, a list of nearby projects) is not enough
     from collections import defaultdict
     cited_in = defaultdict(set)
-    for f in d["facts"]:
+    third_party = re.compile(r"(?i)osservazion|lista[\s_]+(?:di[\s_]+)?controllo|controdeduz")
+    facts = [f for f in d["facts"] if not third_party.search(titles.get(f["citation"]["url"]) or "")]
+    for f in facts:
         if f["field"] == "act.issue" and (f.get("qualifiers") or {}).get("kind") == "authorisation":
             cited_in[(f["value"]["number"], f["value"]["date"])].add(f["citation"]["url"])
-    for f in d["facts"]:
+    for f in facts:
         if f["field"] == "act.issue" and (f.get("qualifiers") or {}).get("kind") == "authorisation" and (
                 f.get("subject") == "this_document" or len(cited_in[(f["value"]["number"], f["value"]["date"])]) >= 2):
             v = f["value"]
@@ -937,7 +939,11 @@ def _authorisation(d: dict, record: dict, p: dict, titles: dict) -> dict | None:
         acts = [a for a in acts if a["date"] >= floor]
     if not acts:
         return None
-    # the decisive act is the most recent one; among same-day citations prefer the act's own document
+    # the procedure named after its act (Lazio 'Determinazione n° G00146 del ...', PAUR titles) is that act;
+    # otherwise the decisive act is the most recent one, preferring the act's own document
+    titled = [a for a in acts if a["source"].get("document") == "titolo del procedimento"]
+    if titled:
+        return max(titled, key=lambda a: a["date"])
     return max(acts, key=lambda a: (a["date"], a["own"]))
 
 
