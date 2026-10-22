@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "18 mesi",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 16 mesi (2), 20 giorni (1), 9 mesi (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 16 mesi (2), 9 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1343012",
     "page": 21,
@@ -275,6 +275,75 @@
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "decreto n. 120 del 13/06/2017",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1343012",
+     "page": 2,
+     "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere della CT PNRR-PNIEC del 12 dicembre 2025",
+     "excerpt": "ambientale e sanitario (VIIAS) nelle procedure di autorizzazione ambientale (VAS, VIA, AIA); − il decreto del Presidente della Repubblica n.120 del 13 giugno 2017 - Regolamento recante la disciplina semplificata della ge"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 13/06/2022",
+    "dettaglio": "«efficacia temporale pari a 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1343012",
+     "page": 41,
+     "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere della CT PNRR-PNIEC del 12 dicembre 2025",
+     "excerpt": "e gli ulteriori tempi necessari per arrivare all’avvio dei lavori, si valuta che il provvedimento di VIA possa avere efficacia temporale pari a 5 anni."
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di giugno 2017",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1343012",
+     "page": 2,
+     "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere della CT PNRR-PNIEC del 12 dicembre 2025",
+     "excerpt": "ambientale e sanitario (VIIAS) nelle procedure di autorizzazione ambientale (VAS, VIA, AIA); − il decreto del Presidente della Repubblica n.120 del 13 giugno 2017 - Regolamento recante la disciplina semplificata della ge"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di dicembre 2018",
+    "dettaglio": "inizio stimato + durata del cantiere: 18 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1013786",
+     "page": 53,
+     "document": "A1 Relazione illustrativa generale",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "decreto n. 120",
+   "data": "13/06/2017",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1343012",
+    "page": 2,
+    "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere della CT PNRR-PNIEC del 12 dicembre 2025",
+    "excerpt": "ambientale e sanitario (VIIAS) nelle procedure di autorizzazione ambientale (VAS, VIA, AIA); − il decreto del Presidente della Repubblica n.120 del 13 giugno 2017 - Regolamento recante la disciplina semplificata della ge"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [
    {
