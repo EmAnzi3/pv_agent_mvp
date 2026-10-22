@@ -5,7 +5,7 @@
  "title": "[ID_14085 - WEB-ASSVIA - ASVASV100000006] Progetto di un impianto di produzione di energia elettrica da fonte solare fotovoltaica e relative opere connesse della potenza di 109,1 MWp, denominato \"FERRARA NORD\"",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11793",
  "source": "mase",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -48,8 +48,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "779 giorni (circa 26 mesi)",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 settimane (2), 18 mesi (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1315055",
     "page": 9,
@@ -62,7 +62,7 @@
   "regione": "Emilia-Romagna",
   "provincia": "FE",
   "comuni": [
-   "FERRARA"
+   "Ferrara"
   ],
   "coordinate": {
    "lat": 44.87427,
@@ -77,6 +77,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=44.87427,11.57715",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": {
    "lat": 44.87214,
    "lon": 11.56816,
@@ -251,6 +252,20 @@
   }
  ],
  "stato": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "779 giorni (circa 26 mesi)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
@@ -318,7 +333,7 @@
   {
    "campo": "municipalities",
    "valore_attuale": "FERRARA",
-   "esito": "non_determinabile"
+   "esito": "confermato"
   },
   {
    "campo": "province",
@@ -334,10 +349,6 @@
  "da_verificare": [
   {
    "label": "Superficie complessiva",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
-   "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
