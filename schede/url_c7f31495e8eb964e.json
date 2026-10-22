@@ -5,7 +5,7 @@
  "title": "IMPIANTO AGRIVOLTAICO OX2 ITALY COLLEGATO ALLA RTN, CON POTENZA NOMINALE 167,06 MW",
  "source_url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6902",
  "source": "emilia_romagna",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -104,6 +104,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=44.57651,11.87272",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
@@ -222,10 +223,21 @@
      "value": "fabbric@unione.labassaromagna.it",
      "occurrences": 1,
      "source": {
-      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/649705/6902",
-      "page": 42,
-      "document": "Documentazione con i dati sensibili oscurati",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/649701/6902",
+      "page": 5,
+      "document": "Certificati di Destinazione Urbanistica delle superfici coinvolte",
       "excerpt": "Tecnico referente: Ing. Fabbri Cinzia e-mail: fabbric@unione.labassaromagna.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0545299591",
+     "occurrences": 1,
+     "source": {
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/649701/6902",
+      "page": 5,
+      "document": "Certificati di Destinazione Urbanistica delle superfici coinvolte",
+      "excerpt": "e-mail: fabbric@unione.labassaromagna.it Tel. 0545 299591"
      }
     }
    ],
@@ -397,6 +409,45 @@
   "level": "date_superate",
   "label": "Date di progetto superate: verificare lo stato",
   "reason": "Avvio previsto il 22/03/2018, ma l'iter è proseguito; ultimo documento o atto del 15/10/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "22/03/2018",
+    "dettaglio": "scenario",
+    "source": {
+     "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/649705/6902",
+     "page": 2,
+     "document": "Documentazione con i dati sensibili oscurati",
+     "excerpt": "O opere pubbliche o di pubblica utilità in corso di esecuzione al 22/03/2018; O contratti pubblici di lavori già affidati solo nel caso in cui la consegna dei lavori avvenga entro 5 anni a partire dal 22/03/2018; O proge"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2020",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 32 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/649751/6902",
+     "page": 13,
+     "document": "Pianificazione dei tempi e delle fasi di realizzazione dell'impianto agrivoltaico",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "32 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
  },
  "cronoprogramma": {
   "bars": [
@@ -644,7 +695,7 @@
  },
  "documentazione": {
   "documenti": 140,
-  "pagine": 3990,
+  "pagine": 3995,
   "completa": true
  },
  "confronto": [
@@ -685,7 +736,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "98 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "95 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
