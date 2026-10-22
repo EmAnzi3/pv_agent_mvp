@@ -32,6 +32,13 @@ PROPOSABLE = ("company.vat", "contact.pec", "contact.email", "contact.phone", "r
               "role.epc", "role.bop", "role.contractor")
 
 
+NO_OCR_DOCS = re.compile(
+    r"(?i)disponibilit[aà][\W_]*giuridic|atto[\W_]*di[\W_]*notoriet|atto[\W_]*notori|dichiarazion[ei][\W_]*sostitutiv|(?<![A-Za-z])D\.?S\.?[\W_]*dell|"
+    r"visura|ricevut[ae]|pagament[io]|bonifico|documento[\W_]*(?:di[\W_]*)?identit|carta[\W_]*d.identit|procura|"
+    r"attestazione[\W_]*(?:di[\W_]*)?veridicit|attestazione[\W_]*istituto|atto[\W_]*di[\W_]*sottomission|contratt[oi][\W_]*(?:preliminar|di[\W_]*(?:affitto|superficie|locazione))|"
+    r"certificato[\W_]*di[\W_]*destinazione[\W_]*urbanistica|(?<![A-Za-z])CDU(?![A-Za-z])|piano[\W_]*particellare")
+
+
 def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool = True,
         ocr_max_pages: int = 400, max_docs: int | None = None, workers: int = 3,
         refresh: bool = False, verify_content: bool = False, keep_files: bool = False,
@@ -139,9 +146,12 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
             parsed = []
             for mem in res.members:
                 try:
+                    # scanned legal paperwork (land titles, sworn statements, receipts) takes most of the OCR time
+                    # and carries nothing for the card: its digital text is still read, scans are skipped
+                    low_value = bool(NO_OCR_DOCS.search(f"{ref.title or ''} {mem.name or ''}"))
                     parsed.append((mem, extract_pages(mem.raw, res.sha256, store,
                                                       member=None if mem.depth == 0 else mem.name,
-                                                      ocr=ocr, budget=budget)))
+                                                      ocr=ocr and not low_value, budget=budget)))
                 except Exception as exc:
                     parsed.append((mem, {"error": str(exc)[:300], "pages": [], "summary": {}}))
             payload = extract_document(ref, res, parsed)

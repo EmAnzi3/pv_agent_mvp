@@ -87,8 +87,8 @@ class SiciliaViaAdapter(DocumentAdapter):
                     new += 1
                 info["index_pages"] = n + 1
                 step = step or new
-                if not new or new < step or step >= 200:
-                    break
+                if not new or new < step:
+                    break                           # a short (or empty) page is the last one
                 start += step
             info["enumerated"] = len(found)
             docs.extend(found.values())
