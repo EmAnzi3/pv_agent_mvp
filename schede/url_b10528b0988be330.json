@@ -5,7 +5,7 @@
  "title": "Progetto realizzazione di un impianto fotovoltaico denominato \"Sardinia Agrivolt\" della potenza di 99.792 MW in comune di Uta (CA) località Su Coddu de sa Feurra.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8607",
  "source": "mase",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -76,7 +76,8 @@
   "regione": "Sardegna",
   "provincia": "CA",
   "comuni": [
-   "UTA"
+   "Sardara",
+   "Uta"
   ],
   "coordinate": {
    "lat": 39.23013,
@@ -91,6 +92,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=39.23013,8.94958",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
@@ -326,6 +328,76 @@
   }
  ],
  "stato": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "D.M. n. 557 del 13/11/2023",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1282417",
+     "page": 3,
+     "document": "Lista di controllo per la valutazione preliminare",
+     "excerpt": "Tutti gli elementi sono rappresentati nelle cartografie allegate al progetto generale che ha ottenuto giudizio positivo sulla compatibilità ambientale del progetto (D.M. n. 557 del 13/11/2023) dove è riportata l’esatta p"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 13/11/2028",
+    "dettaglio": "«efficacia del presente provvedimento è di 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/932805",
+     "page": 4,
+     "document": "Decreto del Ministero dell'Ambiente di concerto con il MIC - Progetto realizzazione di un impianto fotovoltaico denominato \"Sardinia Agrivolt\" della potenza di 99,79 MW in comune di Uta (CA) località ",
+     "excerpt": "2. Ai sensi dell’articolo 25, comma 5, del decreto legislativo n. 152 del 2006, la durata dell'efficacia del presente provvedimento è di 5 anni decorrenti dalla data di pubblicazione del presente decreto sul sito interne"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2023",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1282417",
+     "page": 3,
+     "document": "Lista di controllo per la valutazione preliminare",
+     "excerpt": "Tutti gli elementi sono rappresentati nelle cartografie allegate al progetto generale che ha ottenuto giudizio positivo sulla compatibilità ambientale del progetto (D.M. n. 557 del 13/11/2023) dove è riportata l’esatta p"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di luglio 2025",
+    "dettaglio": "inizio stimato + durata del cantiere: 20 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/847076",
+     "page": 58,
+     "document": "Integrazioni del 23/05/2023 - PMA Piano di Monitoraggio Ambientale - revisione02",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "20 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "D.M. n. 557",
+   "data": "13/11/2023",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1282417",
+    "page": 3,
+    "document": "Lista di controllo per la valutazione preliminare",
+    "excerpt": "Tutti gli elementi sono rappresentati nelle cartografie allegate al progetto generale che ha ottenuto giudizio positivo sulla compatibilità ambientale del progetto (D.M. n. 557 del 13/11/2023) dove è riportata l’esatta p"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [
    {
@@ -992,7 +1064,7 @@
   {
    "campo": "municipalities",
    "valore_attuale": "UTA",
-   "esito": "non_determinabile"
+   "esito": "nuovo_verificato"
   },
   {
    "campo": "province",
