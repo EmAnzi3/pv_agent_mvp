@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "24 mesi",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 12 mesi (1), 30 giorni (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 12 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1421188",
     "page": 26,
@@ -256,7 +256,7 @@
    "source": null
   },
   {
-   "name": "Dott. Franco La Fico Guizo",
+   "name": "Dott. Franco La Fico Guzzo",
    "kind": "persona",
    "roles": [],
    "vat": null,
@@ -270,9 +270,9 @@
      "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1243991",
-      "page": 6,
+      "page": 8,
       "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere del Dipartimento dei Beni Culturali e dell'Identità Siciliana del 12/03/2025",
-      "excerpt": "Stanza 6 Plano pi Tel 0957472223 Durata procedimento love non previsto da leggi n cegolament è di 30 glorai)"
+      "excerpt": "Dott. Franco La Fico Guzzo (se non compilato li responsabile è il dirigente preposto alla strumura organizzativa) Stanza 6 Piano 1 Tel. 0957472223 Durata procedimento {ove non previsto da leggi o regolamenti è di 30 gior"
      }
     }
    ],
@@ -407,6 +407,75 @@
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto n. 204 del 15/04/2025",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1421192",
+     "page": 3,
+     "document": "Relazione di ottemperanza",
+     "excerpt": "L’impianto oggetto della presente relazione ha ottenuto giudizio di compatibilità ambientale con Decreto n. 204 del 15/04/2025 (di seguito “Decreto VIA”), rilasciato dal Ministero dell’Ambiente e della Sicurezza Energeti"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 15/04/2030",
+    "dettaglio": "«efficacia del presente provvedimento è di 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1243987",
+     "page": 5,
+     "document": "Decreto del Ministero dell'Ambiente di concerto con il MIC - Realizzazione ed esercizio di un impianto fotovoltaico della potenza di 79.61 MWp e di tutte le relative opere connesse ed infrastrutture ,",
+     "excerpt": "3. Ai sensi dell’articolo 25, comma 5, del decreto legislativo n. 152/2006, la durata dell'efficacia del presente provvedimento è di 5 anni decorrenti dalla data di pubblicazione del presente decreto sul sito internet de"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di aprile 2025",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1421192",
+     "page": 3,
+     "document": "Relazione di ottemperanza",
+     "excerpt": "L’impianto oggetto della presente relazione ha ottenuto giudizio di compatibilità ambientale con Decreto n. 204 del 15/04/2025 (di seguito “Decreto VIA”), rilasciato dal Ministero dell’Ambiente e della Sicurezza Energeti"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di aprile 2027",
+    "dettaglio": "inizio stimato + durata del cantiere: 24 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1421188",
+     "page": 26,
+     "document": "RELAZIONE DI CANTIERIZZAZIONE",
+     "excerpt": "Le tempistiche previste per la costruzione, ad esclusione delle attività di monitoraggio ante operam, sono circa 24 mesi. Resta inteso che il Cronoprogramma potrà subire modifiche in corso d’opera e slittamenti per effet"
+    }
+   }
+  ],
+  "durata_cantiere": "24 mesi",
+  "autorizzazione": {
+   "atto": "Decreto n. 204",
+   "data": "15/04/2025",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1421192",
+    "page": 3,
+    "document": "Relazione di ottemperanza",
+    "excerpt": "L’impianto oggetto della presente relazione ha ottenuto giudizio di compatibilità ambientale con Decreto n. 204 del 15/04/2025 (di seguito “Decreto VIA”), rilasciato dal Ministero dell’Ambiente e della Sicurezza Energeti"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
