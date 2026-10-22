@@ -244,10 +244,14 @@ NOT_PROJECT_ACT = re.compile(r"(?i)D\.?\s?Lgs|legge|L\.\s?R\.|regolamento|circol
                              r"nomina|delega|organizzazion|bilancio|PNIEC|PNRR\b(?!\))")
 PREAMBLE = re.compile(r"(?i)(?:^|[;:•\-–]\s*)(?:vist[oaie]|richiamat[oaie]|ai\s+sensi|in\s+attuazione)\b")
 NORM_CTX = re.compile(r"(?i)regolament|linee\s+guida|oneri\s+istruttori|competenz|canone|norme\s+di\s+attuazione|PGRA|piano\s+(?:di\s+gestione|regionale|paesaggistico)|"
-                      r"recante|disciplina|organizzazion|nomina|delega|D\.?\s?P\.?\s?R|presidente\s+della\s+repubblica|giunta\s+regionale\s+n|"
+                      r"recante|disciplina|organizzazion|nomina|delega|D\.?\s?P\.?\s?R|presidente\s+della\s+repubblica|giunta\s+regionale|D\.?\s?G\.?\s?R\b|D\.?\s?Lgs\.?\s*n?\.?\s*118|"
                       r"stazione\s+elettrica|ampliamento\s+della\s+stazione|elettrodotto")
 AUTH_OUTCOME = re.compile(r"(?i)giudizio\s+(?:positivo|favorevole)|compatibilit[aà]\s+ambientale|autorizzazione\s+unica|P\.?A\.?U\.?R|"
                           r"provvedimento\s+(?:autorizzatorio|unico)|esclusion[ei]\s+dalla|non\s+assoggettab|rilasciat[oa]|autorizzat[oa]")
+NOT_AUTH = re.compile(r"(?i)espropri|ottemperanz|valutazione\s+preliminare|attivit[aà]\s+preliminari|vincol[oi]|art\.?\s*15\s+del\s+D\.?\s?Lgs|"
+                      r"convenzion|giunta\s+comunale|bilancio|permesso\s+di\s+costruire|invasi|proroga\s+(?:del\s+)?termin|"
+                      r"verifica\s+di\s+assoggettabilit[aà]\s+(?:alla\s+)?V\.?I\.?A\.?\s+(?:con\s+)?(?:assoggettament|da\s+assoggettare)|"
+                      r"diniego|archiviazion|improcedibil|parere\s+(?:sfavorevole|negativo)|rigett")
 THIS_PROJECT = re.compile(r"(?i)(?:del|al|per\s+il|relativ[oa]\s+al)\s+progetto|dell'impianto|per\s+l'impianto|in\s+oggetto|di\s+cui\s+all'oggetto|"
                           r"il\s+presente\s+progetto|della\s+societ[aà]\s+proponente")
 DEADLINE_RE = re.compile(
@@ -279,8 +283,11 @@ def _acts(ctx: PageContext, i: int, line: str) -> list[Fact]:
         if not iso or int(iso[:4]) < 2015 or NOT_PROJECT_ACT.search(m.group(0)):
             continue
         own = bool(ctx.page <= 2 and m.start() < 40 and not PREAMBLE.search(line[:m.start() + 1]))   # heading of the act itself
-        sentence = line + " " + window
-        if PREAMBLE.search(line[:m.start() + 1]) or NORM_CTX.search(sentence):
+        # judge the act by the words right around it, not by the whole page
+        joined = " ".join(ctx.lines[max(0, i - 1): i + 2])
+        k = joined.find(m.group(0))
+        sentence = joined[max(0, k - 150): k + len(m.group(0)) + 150] if k >= 0 else line
+        if PREAMBLE.search(line[:m.start() + 1]) or NORM_CTX.search(sentence) or NOT_AUTH.search(sentence):
             kind = "other"                         # 'VISTO il D.P.R. n. 120...', regulations, fees, competences, plans
         elif own and AUTH_CTX.search(sentence + " " + ctx.text[:2500]):
             kind = "authorisation"
