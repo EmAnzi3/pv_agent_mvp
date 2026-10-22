@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto agrofotovoltaico, denominato \"Energia dell'olio\", della potenza di 107,13 MW, unito alle opere di connessione alla RTN, da realizzarsi nei Comuni di Cellere, Canino, Tessennano, Tarquinia, Arlena di Castro, Montalto di Castro, tutti in provincia di Viterbo.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8427",
  "source": "mase",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "249 giorni (circa 8 mesi)",
    "status": "da verificare",
-   "sub": "Inizio lavori 08/08/2022 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 18 mesi (4), 184 giorni (circa 6 mesi) (1), 30 giorni (1)",
+   "sub": "Inizio lavori 08/08/2022 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 18 mesi (4), 184 giorni (circa 6 mesi) (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/663771",
     "page": 188,
@@ -75,12 +75,12 @@
   "regione": "Lazio",
   "provincia": "VT",
   "comuni": [
-   "CELLERE",
-   "CANINO",
-   "TESSENNANO",
-   "TARQUINIA",
-   "ARLENA DI CASTRO",
-   "MONTALTO DI CASTRO"
+   "Cellere",
+   "Tarquinia",
+   "Montalto Di Castro",
+   "Tessennano",
+   "Arlena Di Castro",
+   "Canino"
   ],
   "coordinate": {
    "lat": 42.53892,
@@ -95,6 +95,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.53892,11.83742",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": null,
   "lotti": [
    {
@@ -138,7 +139,7 @@
     {
      "type": "PEC",
      "value": "pacificoberillosrl@legalmail.it",
-     "occurrences": 24,
+     "occurrences": 26,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1439105",
       "page": 1,
@@ -314,12 +315,153 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Alla Edison S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "asee@pec.edison.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1440561",
+      "page": 1,
+      "document": "Allegato al Decreto Direttoriale - Parere MIC del 01/09/2026",
+      "excerpt": "Alla Edison S.p.A. asee@pec.edison.it"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": {
   "level": "date_superate",
   "label": "Date di progetto superate: verificare lo stato",
-  "reason": "Avvio previsto il 02/01/2023, ma l'iter è proseguito; ultimo documento o atto del 15/10/2026: probabile slittamento, non ancora realizzato o in corso."
+  "reason": "Avvio previsto il 02/01/2023, ma l'iter è proseguito; ultimo documento o atto del 22/10/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "08/08/2022",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/857562",
+     "page": 6,
+     "document": "Integrazioni del 15/05/2023 - Richiesta connessione rete elettrica - C02",
+     "excerpt": "• Data prevista di avvio dei lavori di realizzazione dell’impianto ……8/08/2022…………….. •"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "documentata",
+    "valore": "06/02/2023",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/857562",
+     "page": 6,
+     "document": "Integrazioni del 15/05/2023 - Richiesta connessione rete elettrica - C02",
+     "excerpt": "• Data prevista di fine dei lavori di realizzazione dell’impianto ……6/02/2023……………. •"
+    }
+   },
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "06/03/2023",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/857562",
+     "page": 6,
+     "document": "Integrazioni del 15/05/2023 - Richiesta connessione rete elettrica - C02",
+     "excerpt": "• Data prevista di entrata in esercizio ………6/03/2023………………………………….. ……… •"
+    }
+   },
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "02/01/2023 → 07/12/2023",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/663690",
+     "page": 10,
+     "document": "52_PR_17_Cronoprogramma dei lavori",
+     "excerpt": ""
+    }
+   },
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "decreto n. 64 del 13/02/2025",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1439105",
+     "page": 1,
+     "document": "Parere del Ministero della cultura Soprintendenza Speciale per il PNRR, in data 15/10/2026",
+     "excerpt": "Con decreto VIA n. 64 del 13/02/2025 è stata determinata la compatibilità ambientale, ai sensi dell’articolo 23 del D.Lgs. 152/2006, del progetto in argomento, subordinata al rispetto di specifiche condizioni ambientali."
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 13/02/2030",
+    "dettaglio": "«efficacia pari a cinque anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1440560",
+     "page": 4,
+     "document": "Allegato al Decreto Direttoriale - Parere CTVA del 03/08/2026",
+     "excerpt": "- il decreto n. 482 del 25 novembre 2021 ha una durata di efficacia pari a cinque anni decorrenti dalla data della sua pubblicazione, avvenuta il medesimo 25 novembre 2021, e risulta pertanto efficace fino"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di febbraio 2025",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1439105",
+     "page": 1,
+     "document": "Parere del Ministero della cultura Soprintendenza Speciale per il PNRR, in data 15/10/2026",
+     "excerpt": "Con decreto VIA n. 64 del 13/02/2025 è stata determinata la compatibilità ambientale, ai sensi dell’articolo 23 del D.Lgs. 152/2006, del progetto in argomento, subordinata al rispetto di specifiche condizioni ambientali."
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di gennaio 2026",
+    "dettaglio": "inizio stimato + durata del cantiere: 11 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/663690",
+     "page": 10,
+     "document": "52_PR_17_Cronoprogramma dei lavori",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "11 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "decreto n. 64",
+   "data": "13/02/2025",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1439105",
+    "page": 1,
+    "document": "Parere del Ministero della cultura Soprintendenza Speciale per il PNRR, in data 15/10/2026",
+    "excerpt": "Con decreto VIA n. 64 del 13/02/2025 è stata determinata la compatibilità ambientale, ai sensi dell’articolo 23 del D.Lgs. 152/2006, del progetto in argomento, subordinata al rispetto di specifiche condizioni ambientali."
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
  },
  "cronoprogramma": {
   "bars": [
@@ -949,8 +1091,8 @@
   "metodo": "tabella con date"
  },
  "documentazione": {
-  "documenti": 338,
-  "pagine": 5083,
+  "documenti": 343,
+  "pagine": 5110,
   "completa": true
  },
  "confronto": [
@@ -967,7 +1109,7 @@
   {
    "campo": "municipalities",
    "valore_attuale": "CELLERE, CANINO, TESSENNANO, TARQUINIA, ARLENA DI CASTRO, MONTALTO DI CASTRO",
-   "esito": "non_determinabile"
+   "esito": "confermato"
   },
   {
    "campo": "province",
@@ -983,7 +1125,7 @@
  "da_verificare": [
   {
    "label": "Stato del progetto",
-   "reason": "Avvio previsto il 02/01/2023, ma l'iter è proseguito; ultimo documento o atto del 15/10/2026: probabile slittamento, non ancora realizzato o in corso."
+   "reason": "Avvio previsto il 02/01/2023, ma l'iter è proseguito; ultimo documento o atto del 22/10/2026: probabile slittamento, non ancora realizzato o in corso."
   },
   {
    "label": "Superficie complessiva",
@@ -995,7 +1137,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "390 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "403 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
