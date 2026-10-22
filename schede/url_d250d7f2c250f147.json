@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di realizzazione di un nuovo impianto agro-fotovoltaico composto da due sezioni di produzione e sistema di accumulo (storage system) della potenza massima complessiva di 20,452 MW da realizzarsi nei com",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9495",
  "source": "mase",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -248,6 +248,63 @@
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "provvedimento n. 18 del 14/04/2021",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/811118",
+     "page": 1,
+     "document": "Osservazioni della Provincia di Rovigo in data 27/03/2023",
+     "excerpt": "impianto agrofotovolatico ( Marco Polo Solar 2 ) già autorizzato dalla Regione Veneto con provvedimento di PAUR n. 18 del 14.04.2021 per circa 62 Ha ( parte in zona produttiva e parte in zona agricola ), a cui si sommano"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di aprile 2021",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/811118",
+     "page": 1,
+     "document": "Osservazioni della Provincia di Rovigo in data 27/03/2023",
+     "excerpt": "impianto agrofotovolatico ( Marco Polo Solar 2 ) già autorizzato dalla Regione Veneto con provvedimento di PAUR n. 18 del 14.04.2021 per circa 62 Ha ( parte in zona produttiva e parte in zona agricola ), a cui si sommano"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di luglio 2021",
+    "dettaglio": "inizio stimato + durata del cantiere: 3 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/829546",
+     "page": 4,
+     "document": "Richiesta integrazioni della Regione Veneto e del Consorzio di bonifica Adige Po",
+     "excerpt": "✓ PO1 - entro 3 mesi dalla realizzazione dell’impianto; ✓ PO2 - con frequenza ogni 5 anni da PO1 per tutta la durata della fase di esercizio;"
+    }
+   }
+  ],
+  "durata_cantiere": "3 mesi",
+  "autorizzazione": {
+   "atto": "provvedimento n. 18",
+   "data": "14/04/2021",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/811118",
+    "page": 1,
+    "document": "Osservazioni della Provincia di Rovigo in data 27/03/2023",
+    "excerpt": "impianto agrofotovolatico ( Marco Polo Solar 2 ) già autorizzato dalla Regione Veneto con provvedimento di PAUR n. 18 del 14.04.2021 per circa 62 Ha ( parte in zona produttiva e parte in zona agricola ), a cui si sommano"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
@@ -331,12 +388,12 @@
   },
   {
    "campo": "province",
-   "valore_attuale": "",
+   "valore_attuale": "RO",
    "esito": "non_determinabile"
   },
   {
    "campo": "region",
-   "valore_attuale": "",
+   "valore_attuale": "Veneto",
    "esito": "non_determinabile"
   }
  ],
