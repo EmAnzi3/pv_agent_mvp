@@ -909,8 +909,16 @@ def _authorisation(d: dict, record: dict, p: dict, titles: dict) -> dict | None:
     procedure title. Nothing is assumed when no such act is written anywhere."""
     from .extract.schedule import ACT_RE, AUTH_CTX, _parse_date
     acts = []
+    # an authorisation of THIS project is the act itself, or an act the procedure documents keep citing:
+    # a one-off citation (another company's decree, a list of nearby projects) is not enough
+    from collections import defaultdict
+    cited_in = defaultdict(set)
     for f in d["facts"]:
         if f["field"] == "act.issue" and (f.get("qualifiers") or {}).get("kind") == "authorisation":
+            cited_in[(f["value"]["number"], f["value"]["date"])].add(f["citation"]["url"])
+    for f in d["facts"]:
+        if f["field"] == "act.issue" and (f.get("qualifiers") or {}).get("kind") == "authorisation" and (
+                f.get("subject") == "this_document" or len(cited_in[(f["value"]["number"], f["value"]["date"])]) >= 2):
             v = f["value"]
             acts.append({"type": v["type"], "number": v["number"], "date": v["date"], "own": f.get("subject") == "this_document",
                          "source": _source({"url": f["citation"]["url"], "page": f["citation"].get("page"),
