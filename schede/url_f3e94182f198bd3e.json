@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "60 settimane (circa 14 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 36 settimane (circa 8 mesi) (5), 3 settimane (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 36 settimane (circa 8 mesi) (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/900938",
     "page": 99,
@@ -238,6 +238,63 @@
  "altri_soggetti": [],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Deliberazione n. 6 del 19/04/2021",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1149973",
+     "page": 1,
+     "document": "Osservazioni del Libero Consorzio Comunale di TRAPANI - Settore 7 \" Lavori Pubblici, Viabilità, Edilizia Scolastica e Patrimoniale, Patrimonio, Protezione Civile\", in data",
+     "excerpt": "Vista la Deliberazione del Commissario Straordinario n. 6 del 19/04/2021 con la quale è stato approvato il “Regolamento per l’Applicazione del Canone Unico Patrimoniale di Concessione, Autorizzazione,"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di aprile 2021",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1149973",
+     "page": 1,
+     "document": "Osservazioni del Libero Consorzio Comunale di TRAPANI - Settore 7 \" Lavori Pubblici, Viabilità, Edilizia Scolastica e Patrimoniale, Patrimonio, Protezione Civile\", in data",
+     "excerpt": "Vista la Deliberazione del Commissario Straordinario n. 6 del 19/04/2021 con la quale è stato approvato il “Regolamento per l’Applicazione del Canone Unico Patrimoniale di Concessione, Autorizzazione,"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di giugno 2022",
+    "dettaglio": "inizio stimato + durata del cantiere: 60 settimane (circa 14 mesi)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/900938",
+     "page": 99,
+     "document": "SIA - Relazione generale",
+     "excerpt": "4.4.1 Tempistiche realizzative I tempi di realizzazione dell’impianto fotovoltaico sono stimati in questa fase in 60 settimane, secondo il cronoprogramma riportato di seguito (cfr. ERIN-MO_E_04_A_D)."
+    }
+   }
+  ],
+  "durata_cantiere": "60 settimane (circa 14 mesi)",
+  "autorizzazione": {
+   "atto": "Deliberazione n. 6",
+   "data": "19/04/2021",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1149973",
+    "page": 1,
+    "document": "Osservazioni del Libero Consorzio Comunale di TRAPANI - Settore 7 \" Lavori Pubblici, Viabilità, Edilizia Scolastica e Patrimoniale, Patrimonio, Protezione Civile\", in data",
+    "excerpt": "Vista la Deliberazione del Commissario Straordinario n. 6 del 19/04/2021 con la quale è stato approvato il “Regolamento per l’Applicazione del Canone Unico Patrimoniale di Concessione, Autorizzazione,"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
