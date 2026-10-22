@@ -5,7 +5,7 @@
  "title": "Valutazione preliminare ai sensi dell'art.6, c.9 e c.9 bis) del D.Lgs. n. 152/2006, relativa al progetto di un impianto agrivoltaico denominato \"Montemilone_CP 202300146 MOM36\", della potenza di picco pari a 99,33 MW e della potenza nominale e in immissione di 95 MW, ubicato nel Comune di Montemilone (PZ), incluse le relative opere di utenza e di rete per la connessione a 36 kv alla RTN di Terna S.p.a., ubicate nel medesimo comune [VIA_ID_10956].",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11853",
  "source": "mase",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -62,7 +62,7 @@
   "regione": "Basilicata",
   "provincia": "PZ",
   "comuni": [
-   "MONTEMILONE"
+   "Montemilone"
   ],
   "coordinate": {
    "lat": 40.99811,
@@ -77,6 +77,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.99811,15.94976",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
@@ -112,6 +113,64 @@
  ],
  "altri_soggetti": [],
  "stato": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Determinazione n. 202500336 del 27/06/2025",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1300500",
+     "page": 3,
+     "document": "Interferenze con altri impianti",
+     "excerpt": "autorizzata alla soc. BelTeam Srl. con Determinazione n. 202500336 del 27 giugno 2025. Interferenza risolta."
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di giugno 2025",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1300500",
+     "page": 3,
+     "document": "Interferenze con altri impianti",
+     "excerpt": "autorizzata alla soc. BelTeam Srl. con Determinazione n. 202500336 del 27 giugno 2025. Interferenza risolta."
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di dicembre 2026",
+    "dettaglio": "inizio stimato + durata del cantiere: 18 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1300518",
+     "page": 28,
+     "document": "Preventivo di connessione impianto fotovoltaico",
+     "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+    }
+   }
+  ],
+  "durata_cantiere": "18 mesi",
+  "autorizzazione": {
+   "atto": "Determinazione n. 202500336",
+   "data": "27/06/2025",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1300500",
+    "page": 3,
+    "document": "Interferenze con altri impianti",
+    "excerpt": "autorizzata alla soc. BelTeam Srl. con Determinazione n. 202500336 del 27 giugno 2025. Interferenza risolta."
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
@@ -155,7 +214,7 @@
   {
    "campo": "municipalities",
    "valore_attuale": "MONTEMILONE",
-   "esito": "non_determinabile"
+   "esito": "confermato"
   },
   {
    "campo": "province",
