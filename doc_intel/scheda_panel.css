@@ -124,3 +124,15 @@
 .sc-panel .g-dt th { position: static; background: transparent; padding: 4px 6px; color: var(--muted, #64748b); }
 .sc-panel .g-dt td { padding: 4px 6px; vertical-align: baseline; }
 .sc-panel tr:hover td { background: transparent; }
+
+/* tempistica: tre livelli di evidenza */
+.sc-tt { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; min-width: 0 !important; }
+.sc-tt td { padding: 7px 6px; border-bottom: 1px solid var(--line, #e5e7eb); vertical-align: top; }
+.sc-tt td:first-child { width: 98px; }
+.sc-tt td.sc-tv { width: 42%; text-align: right; font-variant-numeric: tabular-nums; }
+.sc-lv { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+.sc-lv.lv-documentata { background: #dcfce7; color: #14532d; }
+.sc-lv.lv-prescritta { background: #dbeafe; color: #1e3a8a; }
+.sc-lv.lv-stimata { background: transparent; color: #57534e; border: 1px dashed #a8a29e; }
+.sc-tt tr.lv-stimata td { color: #57534e; font-style: italic; }
+.sc-leg { margin-top: 6px; }

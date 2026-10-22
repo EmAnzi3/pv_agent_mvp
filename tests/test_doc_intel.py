@@ -1448,3 +1448,45 @@ class SiciliaAdapterTest(unittest.TestCase):
         self.assertEqual(len(disc.documents), 2)
         self.assertIn("rowid=5149", disc.documents[0].url)
         self.assertEqual(disc.documents[0].title, "Elaborato - Relazione 5149")
+
+
+class Timing(unittest.TestCase):
+    """Works window at three levels of evidence; nothing estimated without an authorisation act."""
+
+    def _fact(self, field, value, url="u/act", page=1, subject=None, kind=None, excerpt="x"):
+        return {"field": field, "value": value, "subject": subject, "qualifiers": {"kind": kind} if kind else {},
+                "citation": {"url": url, "page": page, "excerpt": excerpt}}
+
+    def test_prescribed_and_estimated(self):
+        from doc_intel.card import _timing
+        d = {"facts": [self._fact("act.issue", {"type": "Determinazione", "number": "G00146", "date": "2024-01-10", "kind": "authorisation"},
+                                  subject="this_document", kind="authorisation"),
+                       self._fact("schedule.deadline.start", {"n": 1, "unit": "anno", "months": 12, "anchor": "rilascio",
+                                                              "raw": "entro 1 (un) anno dalla data di rilascio"}),
+                       self._fact("schedule.deadline.end_after_start", {"n": 3, "unit": "anni", "months": 36, "anchor": "inizio dei lavori",
+                                                                        "raw": "entro 3 (tre) anni dall'inizio dei lavori"})],
+             "groups": []}
+        gantt = {"bars": [{"name": "Opere", "start": 0, "end": 18}], "unit": "month", "months": 18, "milestones": [], "source": None}
+        t = _timing(d, {"title": "Progetto"}, {"info_url": "u"}, {}, gantt, [])
+        rows = {(r["voce"], r["livello"]): r["valore"] for r in t["righe"]}
+        self.assertEqual(rows[("Inizio lavori", "prescritta")], "entro il 10/01/2025")
+        self.assertEqual(rows[("Fine lavori", "prescritta")], "entro il 10/01/2028")
+        self.assertEqual(rows[("Inizio lavori", "stimata")], "tra gennaio 2024 e gennaio 2025")
+        self.assertEqual(rows[("Fine lavori", "stimata")], "tra luglio 2025 e luglio 2026")
+
+    def test_no_act_no_estimate(self):
+        from doc_intel.card import _timing
+        d = {"facts": [], "groups": []}
+        gantt = {"bars": [{"name": "Opere", "start": 0, "end": 18}], "unit": "month", "months": 18, "milestones": [], "source": None}
+        t = _timing(d, {"title": "Progetto agrivoltaico"}, {"info_url": "u"}, {}, gantt, [])
+        self.assertFalse([r for r in t["righe"] if r["livello"] == "stimata"])
+        self.assertTrue(t["note"])
+
+    def test_act_from_title(self):
+        from doc_intel.card import _timing
+        t = _timing({"facts": [], "groups": []}, {"title": "Provvedimento Autorizzatorio Unico Regionale n° G07411 del 30/05/2023 favorevole"},
+                    {"info_url": "u"}, {}, {"bars": [], "milestones": []},
+                    [{"key": "cantiere", "value": "12 mesi", "source": None}])
+        self.assertEqual(t["autorizzazione"]["data"], "30/05/2023")
+        rows = {(r["voce"], r["livello"]): r["valore"] for r in t["righe"]}
+        self.assertEqual(rows[("Fine lavori", "stimata")], "non prima di maggio 2024")

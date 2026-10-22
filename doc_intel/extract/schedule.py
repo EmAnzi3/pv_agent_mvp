@@ -227,11 +227,119 @@ def extract_phases(ctx: PageContext) -> list[Fact]:
     return out
 
 
+# ----------------------------------------------------------------------------- authorisation acts and deadlines
+NUM_WORDS = {"un": 1, "uno": 1, "una": 1, "due": 2, "tre": 3, "quattro": 4, "cinque": 5, "sei": 6, "sette": 7, "otto": 8,
+             "nove": 9, "dieci": 10, "dodici": 12, "diciotto": 18, "ventiquattro": 24, "trenta": 30, "trentasei": 36,
+             "sessanta": 60, "novanta": 90, "centoventi": 120, "centottanta": 180, "trecentosessantacinque": 365}
+ACT_RE = re.compile(
+    r"(?i)(?P<type>determinazion[ei](?:\s+dirigenziale)?|determina(?:\s+dirigenziale)?|decreto(?:\s+dirigenziale|\s+ministeriale|\s+interministeriale)?|"
+    r"D\.\s?D\.|D\.\s?M\.|D\.\s?G\.\s?R\.|deliberazione|provvedimento\s+autorizzatorio\s+unico(?:\s+regionale)?|"
+    r"provvedimento\s+unico(?:\s+in\s+materia\s+ambientale)?|provvedimento|autorizzazione\s+unica|P\.?A\.?U\.?R\.?)"
+    r"[^.;\n]{0,70}?\b(?:n\.?|n°|nr\.?|numero)\s*(?P<num>[A-Z]{0,4}[\s\-]?\d[\w./\-]{0,14})\s+del(?:l')?\s+"
+    r"(?P<date>[0-3]?\d[/.\-][01]?\d[/.\-]20\d{2}|[0-3]?\d\s+(?:" + "|".join(MONTHS) + r")\s+20\d{2})")
+AUTH_CTX = re.compile(r"(?i)autorizzazione\s+unica|autorizzatorio|provvedimento\s+unico|P\.?A\.?U\.?R|rilasci|autorizz|"
+                      r"compatibilit[aà]\s+ambientale|giudizio\s+(?:positivo|favorevole)|esclusion[ei]\s+dalla\s+(?:procedura\s+di\s+)?V\.?I\.?A|"
+                      r"non\s+assoggettab|esito\s+(?:positivo|favorevole)|favorevole")
+NOT_PROJECT_ACT = re.compile(r"(?i)D\.?\s?Lgs|legge|L\.\s?R\.|regolamento|circolare|linee\s+guida|D\.?P\.?R|D\.?P\.?C\.?M|piano\s+(?:regionale|paesaggistico)|"
+                             r"nomina|delega|organizzazion|bilancio|PNIEC|PNRR\b(?!\))")
+DEADLINE_RE = re.compile(
+    r"(?i)entro\s+(?:e\s+non\s+oltre\s+)?(?:il\s+termine\s+(?:massimo\s+|perentorio\s+)?di\s+)?"
+    r"(?P<n>\d{1,3}|" + "|".join(sorted(NUM_WORDS, key=len, reverse=True)) + r")\s*(?:\(\s*\w+\s*\)\s*)?"
+    r"(?P<unit>ann[io]|mes[ei]|giorni)\b(?P<tail>(?:(?!entro\b)[^.;]){0,120})")
+START_WORDS = re.compile(r"(?i)inizi|avvi[oa]|avviat|intrapres|apertura\s+del\s+cantiere|consegna\s+dei\s+lavori")
+END_WORDS = re.compile(r"(?i)ultimat|ultimazion|conclu|termin(?:at|e\s+dei\s+lavori)|complet|fine\s+(?:dei\s+)?lavori|entra\w*\s+in\s+esercizio|mess[ao]\s+in\s+esercizio")
+WORKS_WORDS = re.compile(r"(?i)lavori|impianto|opere|cantiere|realizzazion|costruzion|esercizio")
+VALIDITY_RE = re.compile(r"(?i)(?:efficacia|validit[aà]|valid[oa]|efficace)[^.;]{0,80}?(?:per\s+(?:un\s+periodo\s+di\s+)?|pari\s+a\s+)?"
+                         r"(?P<n>\d{1,2}|" + "|".join(sorted(NUM_WORDS, key=len, reverse=True)) + r")\s*(?:\(\s*\w+\s*\)\s*)?(?P<unit>ann[io])\b|"
+                         r"(?i:efficacia\s+(?P<q>quinquennale|triennale|decennale))")
+
+
+def _parse_date(text: str) -> str | None:
+    m = DATE_NUM_RE.search(text)
+    if m:
+        mo = int(m.group("m"))
+        return _iso(m.group("d"), mo, m.group("y")) if 1 <= mo <= 12 else None
+    m = DATE_TXT_RE.search(text)
+    return _iso(m.group("d"), MONTHS[m.group("mon").lower()], m.group("y")) if m else None
+
+
+def _acts(ctx: PageContext, i: int, line: str) -> list[Fact]:
+    out = []
+    window = ctx.window(i, 1, 1)
+    for m in ACT_RE.finditer(line):
+        iso = _parse_date(m.group("date"))
+        if not iso or int(iso[:4]) < 2015 or NOT_PROJECT_ACT.search(m.group(0)):
+            continue
+        kind = "authorisation" if AUTH_CTX.search(m.group(0) + " " + window) else "other"
+        own = ctx.page <= 2 and line.strip()[:1] and m.start() < 40     # act heading on the first pages: the document itself
+        out.append(Fact(field="act.issue", value={"type": re.sub(r"\s+", " ", m.group("type")).strip(), "number": m.group("num").strip(),
+                                                 "date": iso, "kind": kind},
+                        subject="this_document" if own else "referenced",
+                        citation=ctx.cite(window), qualifiers={"kind": kind, "own": bool(own)},
+                        limits="Act number and date as written; its content (favourable or not) is read from the context",
+                        extractor="schedule.act"))
+    return out
+
+
+def _deadlines(ctx: PageContext, i: int, line: str) -> list[Fact]:
+    out = []
+    window = ctx.window(i, 1, 1)
+    for m in DEADLINE_RE.finditer(line):
+        before = line[max(0, m.start() - 160): m.start()]
+        tail = m.group("tail")
+        if not WORKS_WORDS.search(before + tail):
+            continue
+        n_raw = m.group("n").lower()
+        n = int(n_raw) if n_raw.isdigit() else NUM_WORDS.get(n_raw)
+        unit = m.group("unit").lower()[:4]
+        if not n:
+            continue
+        months = n * 12 if unit.startswith("ann") else n if unit.startswith("mes") else round(n / 30.4, 2)
+        if unit.startswith("gior") and n < 60:
+            continue                                  # days: notices and transmissions, not works deadlines
+        anchor_m = re.search(r"(?i)\bdal(?:la|l')?\s*(?:data\s+(?:di|del(?:la)?)\s+)?(?P<a>rilascio|notifica|pubblicazione|efficacia|"
+                             r"emanazione|adozione|presente|comunicazione|ricevimento|inizio\s+(?:dei\s+)?lavori|data\s+di\s+inizio)", tail)
+        anchor = (anchor_m.group("a").lower() if anchor_m else None)
+        kind = None
+        last_start = max((x.end() for x in START_WORDS.finditer(before)), default=-1)
+        last_end = max((x.end() for x in END_WORDS.finditer(before)), default=-1)
+        if last_end > last_start:
+            kind = "end"
+        elif last_start >= 0:
+            kind = "start"
+        if not kind:
+            continue
+        if anchor and anchor.startswith(("inizio", "data di inizio")) and kind == "end":
+            kind = "end_after_start"                  # 'ultimati entro 36 mesi dall'inizio dei lavori'
+        out.append(Fact(field=f"schedule.deadline.{kind}", value={"n": n, "unit": unit, "months": months, "anchor": anchor,
+                                                                  "raw": m.group(0)[:160]},
+                        citation=ctx.cite(window), qualifiers={"anchor": anchor},
+                        limits="Deadline imposed or proposed in the documents, counted from the anchor event: a latest date, not a plan",
+                        extractor="schedule.deadline"))
+    for m in VALIDITY_RE.finditer(line):
+        if not re.search(r"(?i)provvediment|decreto|determin|autorizzazion|giudizio|parere|V\.?I\.?A", line + " " + window):
+            continue
+        if m.group("q"):
+            n = {"quinquennale": 5, "triennale": 3, "decennale": 10}[m.group("q").lower()]
+        else:
+            n_raw = m.group("n").lower()
+            n = int(n_raw) if n_raw.isdigit() else NUM_WORDS.get(n_raw)
+        if not n or n > 15:
+            continue
+        out.append(Fact(field="schedule.deadline.validity", value={"n": n, "unit": "anni", "months": n * 12, "anchor": "rilascio",
+                                                                   "raw": m.group(0)[:160]},
+                        citation=ctx.cite(window), limits="Period of validity of the act: works must be done within it",
+                        extractor="schedule.deadline"))
+    return out
+
+
 def extract(ctx: PageContext) -> list[Fact]:
     facts: list[Fact] = extract_gantt(ctx) + extract_phases(ctx)
     for i, line in enumerate(ctx.lines):
         if not line:
             continue
+        facts.extend(_acts(ctx, i, line))
+        facts.extend(_deadlines(ctx, i, line))
         ctx_text = ctx.window(i, 1, 1)
         for m in DUR_RE.finditer(line):
             n1 = int(m.group("num"))

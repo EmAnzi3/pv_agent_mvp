@@ -6,7 +6,8 @@ REM (Sicilia SI-VVI, Sistema Puglia, Basilicata). Da lanciare dal PC dell'uffici
 REM Ogni lancio elabora un blocco di progetti (default 15, dai piu' grandi) e salva le
 REM schede nella memoria su GitHub: compaiono sul sito come quelle del cloud.
 REM I documenti scaricati vengono cancellati dopo l'analisi.
-REM Uso: analizza_fonti_locali.bat [numero progetti]
+REM Uso: analizza_fonti_locali.bat [numero progetti] [ricalcola]
+REM   ricalcola = rilegge i progetti che hanno gia' la scheda (dopo un miglioramento delle regole)
 REM ==========================================================
 cd /d "%~dp0"
 set "PYTHON_EXE=.\.venv\Scripts\python.exe"
@@ -23,10 +24,12 @@ if errorlevel 1 (
 )
 set "MAXP=%~1"
 if "%MAXP%"=="" set "MAXP=15"
+set "EXTRA="
+if /I "%~2"=="ricalcola" set "EXTRA=--recompute"
 echo Aggiorno il repository (git pull)...
 git pull --ff-only
 "%PYTHON_EXE%" -m pip install -q pymupdf pypdf requests beautifulsoup4 >nul 2>nul
-"%PYTHON_EXE%" -m doc_intel local-batch --data ".\docs\data.json" --max %MAXP%
+"%PYTHON_EXE%" -m doc_intel local-batch --data ".\docs\data.json" --max %MAXP% %EXTRA%
 if errorlevel 1 (
     echo.
     echo ATTENZIONE: la memoria non e' stata salvata su GitHub. Riprova piu' tardi.
