@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -126,6 +127,15 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
                     print(f"[locale]   scheda creata: {d['acquisition']['references']} documenti, {d['acquisition']['pages_total']} pagine")
         except Exception as exc:                                  # one portal error never stops the batch
             print(f"[locale]   ERRORE: {str(exc)[:300]}")
+            if re.search(r"(?i)NameResolution|ConnectionError|Max retries|timed out|ConnectTimeout|Temporary failure", str(exc)):
+                # network down (PC asleep, Wi-Fi lost): not the project's fault, retry it at the next run
+                att = store / "queue" / "attempts.json"
+                try:
+                    data_att = json.loads(att.read_text(encoding="utf-8"))
+                    data_att.pop(it["project_key"], None)
+                    att.write_text(json.dumps(data_att, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+                except (OSError, ValueError):
+                    pass
         finally:
             for name in ("blobs", "text"):
                 _rm(store / name)                                 # downloaded files are never kept
