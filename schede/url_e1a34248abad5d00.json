@@ -5,18 +5,19 @@
  "title": "Sistema Agrivoltaico Avanzato AGV Le Rogaie (Grosseto)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9645",
  "source": "mase",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
-   "status": "verificato",
-   "value": "44,99 MW",
-   "sub": null,
+   "status": "da documenti",
+   "value": "44,99 MWp",
+   "sub": "Dagli elaborati (43 occorrenze); il titolo non indica la potenza; altri valori: 1 MWp, 4 MWp, 5,872 MWp",
    "source": {
-    "document": "registro impianti regionale",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9645",
-    "excerpt": "44,9904 MW"
+    "url": "https://va.mite.gov.it/File/Documento/1439377",
+    "page": 6,
+    "document": "Piano di Cantierizzazione PAC Sistema Agrivoltaico Avanzato, Le Rogaie- Grosseto",
+    "excerpt": "Il progetto prevede la realizzazione di un impianto agrivoltaico avanzato della potenza complessiva installata di circa 44,99 MWp, inserito in un territorio prevalentemente pianeggiante e caratterizzato da aree agricole "
    }
   },
   {
@@ -77,6 +78,7 @@
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.83489,11.07719",
   "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
   "connessione": {
    "lat": 42.83556,
    "lon": 11.08861,
@@ -91,47 +93,6 @@
   "lotti": []
  },
  "soggetti": [
-  {
-   "name": "Agricola S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "agricolarogaie@pec.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/825146",
-      "page": 2,
-      "document": "Preventivo di connessione",
-      "excerpt": "Le Rogaie S.S. Soc. Agr. agricolarogaie@pec.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "ferrucciolorenzini@gmail.com",
-     "occurrences": 2,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1439372",
-      "page": 61,
-      "document": "GEOLOGICA - GEOGNOSTICA - IDROGEOLOGICA",
-      "excerpt": "Mobile: 328.0311006 e-mail: ferrucciolorenzini@gmail.com"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1439372",
-    "page": 58,
-    "document": "GEOLOGICA - GEOGNOSTICA - IDROGEOLOGICA",
-    "excerpt": "Committente: Le Rogaie Società Agricola Srl Limi argilloso sabbiosi marroni beige"
-   }
-  },
   {
    "name": "Le Rogaie Società Agricola S.r.l.",
    "kind": "società",
@@ -152,6 +113,17 @@
       "page": 1,
       "document": "Relazione di Ottemperanza",
       "excerpt": "Le Rogaie Società Agricola srl - via D. Lazzaretti 2/P - 58100 Grosseto p.iva 01734860537 pec: lerogaieagricolasrl@pec.it cod. univoco 0000000"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ferrucciolorenzini@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439372",
+      "page": 61,
+      "document": "GEOLOGICA - GEOGNOSTICA - IDROGEOLOGICA",
+      "excerpt": "Mobile: 328.0311006 e-mail: ferrucciolorenzini@gmail.com"
      }
     }
    ],
@@ -225,19 +197,101 @@
  "stato": {
   "level": "previsto",
   "label": "Avvio lavori previsto il 01/01/2027",
-  "reason": "Data di progetto: non prova l'effettivo avvio. Registro impianti: Decreto n. 23376 del 06/11/2025."
+  "reason": "Data di progetto: non prova l'effettivo avvio."
  },
- "registro": {
-  "label": "Registro impianti: Decreto n. 23376 del 06/11/2025",
-  "reason": "Categoria atto: Nuova Autorizzazione; Ente: Regione Toscana; Tipo di autorizzazione: AU. FER.",
-  "fonte": "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=4202",
-  "impianto": "FTV LE ROGAIE",
-  "ditta": "LE ROGAIE SOCIETà AGRICOLA",
-  "comune": "GROSSETO",
-  "provincia": "GR",
-  "fonte_energetica": "AGRIVOLTAICO",
-  "potenza_mw": "44.9904",
-  "procedimento_collegato": null
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "01/01/2027",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1439370",
+     "page": 2,
+     "document": "CHECK LIST RELATIVE AL RISPETTO DEL PRINCIPIO DEL \"DO NO SIGNIFICANT HARM\" (DNSH) - SCHEDA 5 - FASE EX ANTE",
+     "excerpt": "Il Piano di Gestione rifiuti verrà redatto prima dell'inizio lavori, ovvero 01/01/2027 (data stimata)"
+    }
+   },
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "01/07/2024 → 27/08/2025",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/825157",
+     "page": 2,
+     "document": "Cronoprogramma",
+     "excerpt": ""
+    }
+   },
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Autorizzazione Unica n. 23376 del 06/11/2025",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1439375",
+     "page": 1,
+     "document": "Permesso di Costruire - Ampliamento invaso località Barbaruta",
+     "excerpt": "che dalla Provincia di Grosseto in sede di esame di interventi finalizzati all’implementazione degli invasi e Autorizzazione Unica n. 23376 del 06/11/2025; - VISTO il parere sul Rischio Idraulico del 18/12/2025 – PE 1604"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 06/11/2030",
+    "dettaglio": "«efficacia del presente provvedimento è di 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1159155",
+     "page": 6,
+     "document": "Decreto Direttoriale - Sistema agrivoltaico avanzato denominato \"AGV Le Rogaie\" di potenza complessiva pari a 44,99 MWp, da realizzare nel Comune di Grosseto.",
+     "excerpt": "2. Ai sensi dell’articolo 25, comma 5, del decreto legislativo n. 152/2006, la durata dell’efficacia del presente provvedimento è di 5 anni decorrenti dalla data di pubblicazione del presente decreto sul sito internet de"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2025",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1439375",
+     "page": 1,
+     "document": "Permesso di Costruire - Ampliamento invaso località Barbaruta",
+     "excerpt": "che dalla Provincia di Grosseto in sede di esame di interventi finalizzati all’implementazione degli invasi e Autorizzazione Unica n. 23376 del 06/11/2025; - VISTO il parere sul Rischio Idraulico del 18/12/2025 – PE 1604"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di dicembre 2026",
+    "dettaglio": "inizio stimato + durata del cantiere: 14 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/825157",
+     "page": 2,
+     "document": "Cronoprogramma",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "14 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "Autorizzazione Unica n. 23376",
+   "data": "06/11/2025",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1439375",
+    "page": 1,
+    "document": "Permesso di Costruire - Ampliamento invaso località Barbaruta",
+    "excerpt": "che dalla Provincia di Grosseto in sede di esame di interventi finalizzati all’implementazione degli invasi e Autorizzazione Unica n. 23376 del 06/11/2025; - VISTO il parere sul Rischio Idraulico del 18/12/2025 – PE 1604"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
  },
  "cronoprogramma": {
   "bars": [
@@ -571,12 +625,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Potenza",
+   "reason": "non indicata nel titolo: valore ricavato dagli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "268 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "269 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
