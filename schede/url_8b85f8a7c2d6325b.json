@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "13 mesi",
    "status": "da verificare",
-   "sub": "Inizio lavori 05/2025 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 2 mesi (3), 6 mesi (2), 8 mesi (2)",
+   "sub": "Inizio lavori 05/2025 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 8 mesi (2), 15 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/582953",
     "page": 50,
@@ -588,6 +588,87 @@
  ],
  "stato": null,
  "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "05/2025",
+    "dettaglio": "campo presunto di piano di sicurezza o notifica",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1374160",
+     "page": 11,
+     "document": "Integrazioni del 13/03/2026 - Allegato-Piano_di_Sicurezza_e_Coordinamento_PSC_-Elaborato_RS07ADD007A0",
+     "excerpt": "Data inizio dei lavori: Maggio 2025 Stima del numero massimo di"
+    }
+   },
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto n. 307 del 28/10/2022",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1376201",
+     "page": 2,
+     "document": "Integrazioni del 16/03/2026 -MASE ID 13487 - Riscontro nota prot. 37423 del 19 febbraio 2026 del MASE_signed",
+     "excerpt": "PREMESSA 1. con Decreto n. 307 del 28 ottobre 2022 è stato rilasciato, in favore della Società, il provvedimento di compatibilità ambientale per il progetto indicato in oggetto"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 28/10/2027",
+    "dettaglio": "«efficacia del presente provvedimento è di 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/714124",
+     "page": 4,
+     "document": "Decreto del Ministero della Transizione Ecologica - Progetto di un impianto agro-fotovoltaico denominato \"Spiriti-Raso\" da 79,21 MWp (65,00 MW in immissione) con opere connesse ed infrastrutture indis",
+     "excerpt": "2 dell'efficacia del presente provvedimento è di 5 anni decorrenti dalla data di pubblicazione del presente decreto sul sito internet del Ministero della Transizione ecologica, trascorsi i quali,"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di ottobre 2022",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1376201",
+     "page": 2,
+     "document": "Integrazioni del 16/03/2026 -MASE ID 13487 - Riscontro nota prot. 37423 del 19 febbraio 2026 del MASE_signed",
+     "excerpt": "PREMESSA 1. con Decreto n. 307 del 28 ottobre 2022 è stato rilasciato, in favore della Società, il provvedimento di compatibilità ambientale per il progetto indicato in oggetto"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2023",
+    "dettaglio": "inizio stimato + durata del cantiere: 13 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/582953",
+     "page": 50,
+     "document": "Progetto definitivo Impianto AgroFV - Relazione Descrittiva Impianto agro-fotovoltaico Rev0",
+     "excerpt": "Per la realizzazione dell’Impianto agro-fotovoltaico e delle dorsali a 30 kV di collegamento alla Stazione elettrica di trasformazione 150/30 kV (Impianto di Utenza), la Società prevede una durata delle attività di canti"
+    }
+   }
+  ],
+  "durata_cantiere": "13 mesi",
+  "autorizzazione": {
+   "atto": "Decreto n. 307",
+   "data": "28/10/2022",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1376201",
+    "page": 2,
+    "document": "Integrazioni del 16/03/2026 -MASE ID 13487 - Riscontro nota prot. 37423 del 19 febbraio 2026 del MASE_signed",
+    "excerpt": "PREMESSA 1. con Decreto n. 307 del 28 ottobre 2022 è stato rilasciato, in favore della Società, il provvedimento di compatibilità ambientale per il progetto indicato in oggetto"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
  "cronoprogramma": {
   "bars": [],
   "unit": "month",
