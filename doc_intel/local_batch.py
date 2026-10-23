@@ -116,21 +116,35 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
     ocr = _ocr_available()
     print(f"[locale] OCR (Tesseract): {'disponibile' if ocr else 'NON disponibile: le tavole scansionate saranno saltate'}")
     # 'ricalcola': re-read the documents of projects that already have a card (new extraction rules)
-    items = plan(data, store, max_items=max_items, mode="refresh" if recompute else "both", local=True,
+    # queue a reserve: when a portal does not answer, its projects are skipped and the block is filled
+    # with projects of the other portals, so a run is never wasted
+    items = plan(data, store, max_items=max_items * 4, mode="refresh" if recompute else "both", local=True,
                  retry_days=0 if recompute else 14)
+    reserve, items = items[max_items:], items[:max_items]
+    for it in reserve:
+        _forget_attempt(store, it["project_key"])          # reserve projects are not 'attempted' unless processed
     print(f"[locale] progetti in questo blocco: {len(items)}")
     done = 0
     out = Path(out_dir) if out_dir else store.parent / "dossier"
     out.mkdir(parents=True, exist_ok=True)
     from urllib.parse import urlparse
     down: dict[str, int] = {}                       # consecutive connection failures per portal
-    for n, it in enumerate(items, 1):
-        print(f"\n[locale] {n}/{len(items)} {it['url']}")
+    queue_, n, worked = list(items), 0, 0
+    while queue_ and worked < max_items:
+        it = queue_.pop(0)
+        n += 1
+        print(f"\n[locale] {n} {it['url']}")
         host = urlparse(it["url"]).netloc
         if down.get(host, 0) >= 2:
             print(f"[locale]   saltato: {host} non risponde (riprovato al prossimo lancio)")
             _forget_attempt(store, it["project_key"])
+            # replace it with a reserve project from a portal that answers
+            nxt = next((r for r in reserve if down.get(urlparse(r["url"]).netloc, 0) < 2), None)
+            if nxt:
+                reserve.remove(nxt)
+                queue_.append(nxt)
             continue
+        worked += 1
         try:
             d = run(it["url"], str(store), data, ocr=ocr, ocr_max_pages=600,
                     workers=1 if host in ("si-vvi.regione.sicilia.it",) else 3, registry="vies",
@@ -159,5 +173,5 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
     idx = build_index(store / "schede")
     (store / "schede" / "live_index.json").write_text(json.dumps(idx, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     ok = _push(store, f"doc-intel memory: local batch ({done} cards)")
-    print(f"\n[locale] schede create: {done}/{len(items)}; memoria {'salvata su GitHub' if ok else 'NON salvata (riprova piu tardi)'}")
+    print(f"\n[locale] schede create: {done}/{worked}; memoria {'salvata su GitHub' if ok else 'NON salvata (riprova piu tardi)'}")
     return 0 if ok else 1
