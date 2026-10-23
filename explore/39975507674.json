@@ -1,0 +1,48 @@
+[
+ {
+  "url": "https://atos.arrr.it/mappa_fer.php?mn=fer&mnin=mappafer",
+  "status": 200,
+  "final_url": "https://atos.arrr.it/offline.php",
+  "content_type": "text/html; charset=UTF-8",
+  "title": "Sito Offline",
+  "links": [],
+  "text_head": " Sito Offline Siamo temporaneamente offline ",
+  "html_hits": [],
+  "map_hits": [],
+  "xhr": [
+   {
+    "url": "https://atos.arrr.it/mappa_fer.php?mn=fer&mnin=mappafer",
+    "status": 302,
+    "type": "text/html; charset=UTF-8",
+    "method": "GET",
+    "post": ""
+   },
+   {
+    "url": "https://atos.arrr.it/offline.php",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "method": "GET",
+    "post": "",
+    "body_head": "<!DOCTYPE html>\r\n<html lang=\"it\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Sito Offline</title>\r\n    <!-- Tailwind CSS -->\r\n    <script src=\"https://cdn.tailwindcss.com\"></script>\r\n    <!-- Google Font Inter -->\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap\" rel=\"stylesheet\">\r\n    <style>\r\n        body {\r\n            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif;\r\n            background-color: #ffffff;\r\n            color: #111111;\r\n        }\r\n    </style>\r\n</head>\r\n<body class=\"bg-white text-[#111111] min-h-screen flex items-center justify-center p-6 m-0 antialiased selection:bg-gray-200\">\r\n\r\n    <!-- Container centrale -->\r\n    <main class=\"max-w-xl text-center space-y-4\">\r\n        <!-- Titolo Principale -->\r\n        <h1 class=\"text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-[#111111] leading-tight\">\r\n            Siamo temporaneamente offline\r\n        </h1>\r\n        \r\n        <!-- Sottotitolo / Descrizione -->\r\n        <p class=\"text-base sm:text-lg text-[#555555] font-normal leading-relaxed max-w-lg mx-auto\">\r\n                    </p>\r\n    </main>\r\n\r\n</body>\r\n</html>",
+    "body_len": 1288
+   },
+   {
+    "script": "https://cdn.tailwindcss.com/3.4.17",
+    "lines": [
+     "`)){let a=this.raw(e,null,\"indent\");if(a.length)for(let o=0;o<s;o++)i+=a}return i}block(e,t){let i=this.raw(e,\"between\",\"beforeOpen\");this.builder(t+i+\"{\",e,\"start\");let n;e.nodes&&e.nodes.length?(this.body(e),n=this.raw(e,\"after\")):n=this.raw(e,\"after\",\"emptyBody\"),n&&this.builder(n),this.builder(\"",
+     "`?(t=1,i+=1):t+=1;return{column:t,line:i}}prev(){if(!this.parent)return;let e=this.parent.index(this);return this.parent.nodes[e-1]}rangeBy(e){let t={column:this.source.start.column,line:this.source.start.line},i=this.source.end?{column:this.source.end.column+1,line:this.source.end.line}:{column:t.c",
+     "`.charCodeAt(0),ti=\" \".charCodeAt(0),wn=\"\\f\".charCodeAt(0),vn=\"\t\".charCodeAt(0),xn=\"\\r\".charCodeAt(0),Wx=\"[\".charCodeAt(0),Gx=\"]\".charCodeAt(0),Qx=\"(\".charCodeAt(0),Yx=\")\".charCodeAt(0),Kx=\"{\".charCodeAt(0),Xx=\"}\".charCodeAt(0),Zx=\";\".charCodeAt(0),Jx=\"*\".charCodeAt(0),e1=\":\".charCodeAt(0),t1=\"@\".ch",
+     "https://www.w3ctech.com/topic/2226`));let o=t(...a);return o.postcssPlugin=e,o.postcssVersion=new Ta().version,o}let s;return Object.defineProperty(n,\"postcss\",{get(){return s||(s=n()),s}}),n.process=function(a,o,l){return J([n(l)]).process(a,o)},n};J.stringify=F1;J.parse=N1;J.fromJSON=D1;J.list=L1;",
+     "`),v=y.length-1,v>0?(k=a+v,S=w-y[v].length):(k=a,S=s),T=D.comment,a=k,p=k,d=w-S):c===D.slash?(w=o,T=c,p=a,d=o-s,l=w+1):(w=OA(t,o),T=D.word,p=a,d=w-s),l=w+1;break}e.push([T,a,o-s,p,d,o,l]),S&&(s=S,S=null),o=l}return e}});var kd=x((ki,xd)=>{u();\"use strict\";ki.__esModule=!0;ki.default=void 0;var IA=je",
+     "`,CHAR_NO_BREAK_SPACE:\"\\xA0\",CHAR_PERCENT:\"%\",CHAR_PLUS:\"+\",CHAR_QUESTION_MARK:\"?\",CHAR_RIGHT_ANGLE_BRACKET:\">\",CHAR_RIGHT_CURLY_BRACE:\"}\",CHAR_RIGHT_SQUARE_BRACKET:\"]\",CHAR_SEMICOLON:\";\",CHAR_SINGLE_QUOTE:\"'\",CHAR_SPACE:\" \",CHAR_TAB:\"\t\",CHAR_UNDERSCORE:\"_\",CHAR_VERTICAL_LINE:\"|\",CHAR_ZERO_WIDTH_NOB",
+     "`),console.time(\"JIT TOTAL\"),t},async function(t,i){e=ky(t,i)??e;let n=El(e);if(t.type===\"document\"){let s=t.nodes.filter(a=>a.type===\"root\");for(let a of s)a.type===\"root\"&&await Ts(n)(a,i);return}await Ts(n)(t,i)},Ze.DEBUG&&function(t){return console.timeEnd(\"JIT TOTAL\"),console.log(`",
+     "`))}gv.exports=Dr;function Dr(...r){let e;if(r.length===1&&V5(r[0])?(e=r[0],r=void 0):r.length===0||r.length===1&&!r[0]?r=void 0:r.length<=2&&(Array.isArray(r[0])||!r[0])?(e=r[1],r=r[0]):typeof r[r.length-1]==\"object\"&&(e=r.pop()),e||(e={}),e.browser)throw new Error(\"Change `browser` option to `over"
+    ]
+   },
+   {
+    "rendered_links": []
+   }
+  ],
+  "followed": []
+ }
+]
