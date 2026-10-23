@@ -1320,10 +1320,10 @@ __SCHEDA_CSS__
 (function () {
   const mobile = window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
   const desktopRequested = new URLSearchParams(window.location.search).get('desktop') === '1';
-  const isMobilePage = /\/mobile\.html$/i.test(window.location.pathname);
+  const isMobilePage = /\\/mobile\\.html$/i.test(window.location.pathname);
 
   if (mobile && !desktopRequested && !isMobilePage) {
-    const base = window.location.pathname.replace(/index\.html$/i, '').replace(/\/?$/, '/');
+    const base = window.location.pathname.replace(/index\\.html$/i, '').replace(/\\/?$/, '/');
     window.location.href = base + 'mobile.html';
   }
 })();
@@ -1568,7 +1568,7 @@ __SCHEDA_CSS__
       let [integerPart, decimalPart = ''] = fixed.split('.');
 
       // Forza sempre il separatore delle migliaia anche sui numeri a 4 cifre.
-      integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+      integerPart = integerPart.replace(/\\B(?=(\\d{3})+(?!\\d))/g, '.');
       decimalPart = decimalPart.replace(/0+$/, '');
 
       return sign + integerPart + (decimalPart ? ',' + decimalPart : '');
@@ -1599,7 +1599,7 @@ __SCHEDA_CSS__
     function safeUrl(value) {
       const raw = text(value).trim();
 
-      if (!raw || !/^https?:\/\//i.test(raw)) {
+      if (!raw || !/^https?:\\/\\//i.test(raw)) {
         return '';
       }
 
