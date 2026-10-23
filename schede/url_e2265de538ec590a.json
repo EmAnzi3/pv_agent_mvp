@@ -621,7 +621,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "360 giorni (circa 12 mesi)",
+  "durata_cantiere": "20 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -633,16 +633,252 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "viabilità e recinzione temporanea, piazzole, baracche,",
+    "start": 8.38,
+    "end": 9.47,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Costruzione dell'impianto fotovoltaico",
+    "start": 9.57,
+    "end": 20.13,
+    "level": 2,
+    "duration": "230 g",
+    "summary": true
+   },
+   {
+    "name": "Opere civili",
+    "start": 9.57,
+    "end": 17.6,
+    "level": 3,
+    "duration": "175 g",
+    "summary": false
+   },
+   {
+    "name": "per invarianza idraulica",
+    "start": 10.78,
+    "end": 12.39,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "impianto di terra",
+    "start": 11.43,
+    "end": 14.19,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "uscita (area impianto)",
+    "start": 13.73,
+    "end": 14.19,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Attività Riepilogo Progetto: fotovoltaico \"Ranteghetta\"",
+    "start": 6.61,
+    "end": 8.31,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sorgenia Renewables Srl Divisione Riepilogo progetto Data: gio",
+    "start": 6.61,
+    "end": 8.31,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Data: gio Cardine Attività inattiva",
+    "start": 2.42,
+    "end": 12.57,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "realizzazione collegamenti elettrici",
+    "start": 16.68,
+    "end": 19.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "sicurezza/TVCC",
+    "start": 18.52,
+    "end": 19.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Reinterro cavidotti",
+    "start": 17.11,
+    "end": 17.96,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "e test funzionali",
+    "start": 17.57,
+    "end": 17.96,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "pronto effetto",
+    "start": 9.11,
+    "end": 13.7,
+    "level": 1,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
+  "months": 20.13,
   "source": {
    "url": "https://va.mite.gov.it/File/Documento/1386156",
    "page": 5,
    "document": "Impianto Fotovoltaico Ranteghetta - Cronoprogramma",
    "excerpt": ""
   },
-  "asse": null,
+  "asse": {
+   "titolo": "Mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "25",
+     "start": 24.0,
+     "end": 25.0
+    },
+    {
+     "label": "26",
+     "start": 25.0,
+     "end": 26.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "7 giorni",
    "status": "da verificare",
@@ -659,166 +895,15 @@
    "document": "Impianto Fotovoltaico Ranteghetta - Cronoprogramma",
    "url": "https://va.mite.gov.it/File/Documento/1386156"
   },
-  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "note": null,
   "altri": [
    {
     "document": "CRONOPROGRAMMA",
     "url": "https://va.mite.gov.it/File/Documento/1249094"
    }
   ],
-  "durate_fasi": [
-   {
-    "name": "Progettazione pre‐esecutiva per qualifica EPC",
-    "duration": "80 giorni",
-    "months": 2.63
-   },
-   {
-    "name": "Gara d'appalto EPC",
-    "duration": "50 giorni",
-    "months": 1.64
-   },
-   {
-    "name": "Attività EPC",
-    "duration": "360 giorni",
-    "months": 11.84
-   },
-   {
-    "name": "3.1 Progettazione",
-    "duration": "70 giorni",
-    "months": 2.3
-   },
-   {
-    "name": "3.1.1 Pull out test",
-    "duration": "10 giorni",
-    "months": 0.33
-   },
-   {
-    "name": "3.1.2 Progetto esecutivo impianto fotovoltaico",
-    "duration": "60 giorni",
-    "months": 1.97
-   },
-   {
-    "name": "3.1.3 Progetto esecutivo di connessione",
-    "duration": "45 giorni",
-    "months": 1.48
-   },
-   {
-    "name": "3.2 Procurement e consegna materiale in sito",
-    "duration": "50 giorni",
-    "months": 1.64
-   },
-   {
-    "name": "3.2.1 Moduli fotovoltaici",
-    "duration": "50 giorni",
-    "months": 1.64
-   },
-   {
-    "name": "3.2.2 Cabine di trasformazione e inverter",
-    "duration": "50 giorni",
-    "months": 1.64
-   },
-   {
-    "name": "3.2.3 Cabine containerizzate preassemblate",
-    "duration": "50 giorni",
-    "months": 1.64
-   },
-   {
-    "name": "3.2.4 Cavi e corrugati",
-    "duration": "50 giorni",
-    "months": 1.64
-   },
-   {
-    "name": "3.2.5 Strutture tracker",
-    "duration": "50 giorni",
-    "months": 1.64
-   },
-   {
-    "name": "3.2.6 Recinzione e cancelli",
-    "duration": "20 giorni",
-    "months": 0.66
-   },
-   {
-    "name": "3.2.7 Sistema di monitoraggio",
-    "duration": "20 giorni",
-    "months": 0.66
-   },
-   {
-    "name": "3.2.8 Sistema di sicurezza ‐ TVCC",
-    "duration": "20 giorni",
-    "months": 0.66
-   },
-   {
-    "name": "3.2.9 Sistema di illuminazione",
-    "duration": "20 giorni",
-    "months": 0.66
-   },
-   {
-    "name": "3.2.10 Altri materiali",
-    "duration": "35 giorni",
-    "months": 1.15
-   },
-   {
-    "name": "3.2.11 Consegna materiale in sito",
-    "duration": "50 giorni",
-    "months": 1.64
-   },
-   {
-    "name": "3.3 Installazione del cantiere",
-    "duration": "25 giorni",
-    "months": 0.82
-   },
-   {
-    "name": "magazzino merci)",
-    "duration": "25 giorni",
-    "months": 0.82
-   },
-   {
-    "name": "3.3.2 Pulizia del sito",
-    "duration": "15 giorni",
-    "months": 0.49
-   },
-   {
-    "name": "3.4 Costruzione dell'impianto fotovoltaico",
-    "duration": "230 giorni",
-    "months": 7.57
-   },
-   {
-    "name": "3.4.1 Opere civili",
-    "duration": "175 giorni",
-    "months": 5.76
-   },
-   {
-    "name": "3.4.1.1 Picchettamento sito",
-    "duration": "25 giorni",
-    "months": 0.82
-   },
-   {
-    "name": "per invarianza idraulica",
-    "duration": "35 giorni",
-    "months": 1.15
-   },
-   {
-    "name": "3.4.1.3 Recinzione definitiva e cancelli",
-    "duration": "45 giorni",
-    "months": 1.48
-   },
-   {
-    "name": "impianto di terra",
-    "duration": "60 giorni",
-    "months": 1.97
-   },
-   {
-    "name": "uscita (area impianto)",
-    "duration": "10 giorni",
-    "months": 0.33
-   },
-   {
-    "name": "3.4.1.6 Realizzazione fondazioni",
-    "duration": "40 giorni",
-    "months": 1.32
-   }
-  ],
-  "metodo": null
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 395,
