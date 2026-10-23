@@ -184,6 +184,16 @@ def infer_province(title: str, municipalities: list[str], current_province: str)
     return ""
 
 
+def _istat_locate(municipalities: list[str]):
+    try:
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from doc_intel.admin_areas import locate
+        return locate(municipalities) if municipalities else None
+    except Exception:
+        return None
+
+
 def _records_container(data):
     if isinstance(data, dict) and isinstance(data.get("records"), list):
         return data["records"]
@@ -257,6 +267,11 @@ def main() -> int:
         if has_ta_province and not new_province:
             new_region = ""
             new_province = ""
+            # ...but municipalities known in the official ISTAT list give the real province/region
+            # (e.g. Loreo, Adria -> RO, Veneto). Only unambiguous names, single province.
+            loc = _istat_locate(new_municipalities)
+            if loc and "," not in loc["province"] and "/" not in loc["region"]:
+                new_province, new_region = loc["province"], loc["region"]
 
         changed = (
             ", ".join(new_municipalities) != str(old_municipalities)
