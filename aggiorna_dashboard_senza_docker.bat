@@ -462,8 +462,8 @@ echo ==========================================================
 REM Scarica le schede pronte e riempie SOLO i campi vuoti del radar (MW, provincia, regione, comuni)
 REM con valori solidi delle schede. Nessun valore esistente viene sovrascritto; le differenze
 REM di potenza vanno in reports\fill_from_cards_audit.csv per la verifica manuale. Mai bloccante.
-"%PYTHON_EXE%" -m doc_intel sync-schede --out ".\docs\schede"
-"%PYTHON_EXE%" -m doc_intel fill-radar --data "%DATA_JSON%" --cards ".\docs\schede" --audit ".\reports\fill_from_cards_audit.csv"
+"%PYTHON_EXE%" -m doc_intel sync-schede --out ".\reports\schede_cache"
+"%PYTHON_EXE%" -m doc_intel fill-radar --data "%DATA_JSON%" --cards ".\reports\schede_cache" --audit ".\reports\fill_from_cards_audit.csv"
 if errorlevel 1 (
     echo ATTENZIONE: completamento dalle schede non eseguito; la dashboard prosegue senza.
 )
@@ -546,8 +546,8 @@ echo [6B/8] Schede progetto (analisi documentale)
 echo ==========================================================
 REM Le schede si costruiscono nel cloud (GitHub Actions): i nuovi progetti partono da soli
 REM dopo il push di docs\data.json da GitHub Desktop, l'arretrato procede ogni notte.
-REM Qui si scaricano soltanto le schede pronte in docs\schede: pochi secondi, mai bloccante.
-"%PYTHON_EXE%" -m doc_intel sync-schede --out ".\docs\schede"
+REM Qui si scaricano le schede pronte in reports\schede_cache (fuori da Git; la pagina le legge dal cloud): pochi secondi, mai bloccante.
+"%PYTHON_EXE%" -m doc_intel sync-schede --out ".\reports\schede_cache"
 if errorlevel 1 (
     echo ATTENZIONE: schede progetto non aggiornate ^(rete o GitHub non raggiungibile^).
     echo La dashboard e' comunque aggiornata; le schede arriveranno al prossimo run.
