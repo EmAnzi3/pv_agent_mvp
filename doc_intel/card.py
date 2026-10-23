@@ -818,7 +818,8 @@ def _gantt(d: dict, titles: dict) -> dict:
                 if v["name"].lower() in seen or re.match(r"(?i)durata\b", v["name"]):     # totals are shown apart
                     continue
                 seen.add(v["name"].lower())
-                phase_durations.append({"name": v["name"], "duration": v["raw"].replace(" g", " giorni"), "months": v["months"]})
+                raw = re.sub(r"\s(?:g|gg|d)$", " giorni", v["raw"])                 # '30 g' -> '30 giorni' (not 'giorniiorni')
+                phase_durations.append({"name": v["name"], "duration": raw, "months": v["months"]})
             dur_src = _source({"url": u, "page": fs[0]["citation"]["page"]}, titles)
             if not bars:
                 src = dur_src
