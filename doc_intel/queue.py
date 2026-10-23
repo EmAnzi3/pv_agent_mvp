@@ -60,7 +60,7 @@ def _load(path: Path) -> dict:
 
 def plan(data_json: str | Path, memory_dir: str | Path, max_items: int = 35, mode: str = "both",
          retry_days: int = 14, today: date | None = None, record: bool = True,
-         local: bool = False) -> list[dict[str, Any]]:
+         local: bool = False, region: str | None = None) -> list[dict[str, Any]]:
     """Return up to ``max_items`` records to analyse: [{url, project_key, reason, power_mw}].
 
     mode: 'new' (only projects never seen before), 'backlog' (only older ones), 'both', 'refresh'."""
@@ -76,6 +76,8 @@ def plan(data_json: str | Path, memory_dir: str | Path, max_items: int = 35, mod
         key, url = r.get("project_key"), (r.get("url") or "").strip()
         if not key or not url:
             continue
+        if region and not (r.get("region") or "").lower().startswith(region.lower()[:6]):
+            continue                                   # focus on one region (e.g. 'Emilia-Romagna')
         is_new = key not in seen
         if is_new:
             seen[key] = today.isoformat()
