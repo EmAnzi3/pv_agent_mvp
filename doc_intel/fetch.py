@@ -200,7 +200,31 @@ class Fetcher:
         self.sleep = sleeper
         self._lock = threading.Lock()
 
+    # small regional portals: one request at a time with a pause, so a batch never looks like an attack
+    POLITE_HOSTS = {"si-vvi.regione.sicilia.it": 2.0, "www.sistema.puglia.it": 1.0, "valutazioneambientale.regione.basilicata.it": 1.0}
+    _host_locks: dict = {}
+
+    def _polite(self, url: str):
+        import threading
+        from urllib.parse import urlparse
+        host = urlparse(url).netloc
+        pause = self.POLITE_HOSTS.get(host)
+        if not pause:
+            return None
+        lock = self._host_locks.setdefault(host, threading.Lock())
+        lock.acquire()
+        time.sleep(pause)
+        return lock
+
     def _download(self, url: str, auth=None) -> tuple[bytes, dict[str, str]]:
+        lock = self._polite(url)
+        try:
+            return self._download_inner(url, auth)
+        finally:
+            if lock:
+                lock.release()
+
+    def _download_inner(self, url: str, auth=None) -> tuple[bytes, dict[str, str]]:
         last: Exception | None = None
         for attempt in range(self.retries + 1):
             try:
