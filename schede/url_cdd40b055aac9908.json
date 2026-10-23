@@ -101,23 +101,11 @@
    "roles": [
     "Proponente"
    ],
-   "vat": null,
+   "vat": "10413450015",
    "vat_group": false,
-   "verified": false,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "geasiste@pec.it",
-     "occurrences": 80,
-     "source": {
-      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/649905/6919",
-      "page": 1,
-      "document": "PPE",
-      "excerpt": "via Pasubio 2/28 - 10064 PINEROLO (TO) - ITALIA PEC: geasiste@pec.it"
-     }
-    }
-   ],
+   "verified": true,
+   "office": "Via Rubicone 11 00198 Roma Rm",
+   "contacts": [],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6919"
@@ -143,6 +131,43 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "GEA.SISTE S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "07510230019",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Pasubio 2/28 10064 Pinerolo To",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "geasiste@pec.it",
+     "occurrences": 83,
+     "source": {
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/progettoIniziale/scaricaAllegato/649905/6919",
+      "page": 1,
+      "document": "PPE",
+      "excerpt": "via Pasubio 2/28 - 10064 PINEROLO (TO) - ITALIA PEC: geasiste@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "geasiste@geasiste.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/verificacompletezza/scaricaAllegato/9628/6919",
+      "page": 1,
+      "document": "Integrazione per aviazione.zip",
+      "excerpt": "VIA PASUBIO 2/28 - 10064 - PINEROLO (TO) - ITALIA - TEL 0121.393210 - FAX 0121.390455 e - mail: geasiste@geasiste.it - sito internet: www.geasiste.it - PEC: geasiste@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Fotowatio Renewable Ventures S.L.",
    "kind": "società",
@@ -819,7 +844,7 @@
  "da_verificare": [
   {
    "label": "Recapiti",
-   "reason": "108 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "103 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
