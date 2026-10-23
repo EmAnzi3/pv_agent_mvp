@@ -93,6 +93,16 @@ def _push(store: Path, message: str) -> bool:
     return False
 
 
+def _forget_attempt(store: Path, key: str) -> None:
+    att = store / "queue" / "attempts.json"
+    try:
+        data_att = json.loads(att.read_text(encoding="utf-8"))
+        data_att.pop(key, None)
+        att.write_text(json.dumps(data_att, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+    except (OSError, ValueError):
+        pass
+
+
 def main(data: str, max_items: int, budget_min: float, store_dir: str | None = None,
          out_dir: str | None = None, recompute: bool = False) -> int:
     from .card import build_card, write_card
@@ -112,10 +122,18 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
     done = 0
     out = Path(out_dir) if out_dir else store.parent / "dossier"
     out.mkdir(parents=True, exist_ok=True)
+    from urllib.parse import urlparse
+    down: dict[str, int] = {}                       # consecutive connection failures per portal
     for n, it in enumerate(items, 1):
         print(f"\n[locale] {n}/{len(items)} {it['url']}")
+        host = urlparse(it["url"]).netloc
+        if down.get(host, 0) >= 2:
+            print(f"[locale]   saltato: {host} non risponde (riprovato al prossimo lancio)")
+            _forget_attempt(store, it["project_key"])
+            continue
         try:
-            d = run(it["url"], str(store), data, ocr=ocr, ocr_max_pages=600, workers=3, registry="vies",
+            d = run(it["url"], str(store), data, ocr=ocr, ocr_max_pages=600,
+                    workers=1 if host in ("si-vvi.regione.sicilia.it",) else 3, registry="vies",
                     time_budget_s=budget_min * 60, reanalyse=recompute)
             (out / f"{d['project']['source']}-{d['project']['project_id']}.json").write_text(
                 json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -130,14 +148,11 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
         except Exception as exc:                                  # one portal error never stops the batch
             print(f"[locale]   ERRORE: {str(exc)[:300]}")
             if re.search(r"(?i)NameResolution|ConnectionError|Max retries|timed out|ConnectTimeout|Temporary failure", str(exc)):
-                # network down (PC asleep, Wi-Fi lost): not the project's fault, retry it at the next run
-                att = store / "queue" / "attempts.json"
-                try:
-                    data_att = json.loads(att.read_text(encoding="utf-8"))
-                    data_att.pop(it["project_key"], None)
-                    att.write_text(json.dumps(data_att, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
-                except (OSError, ValueError):
-                    pass
+                # network or portal down: not the project's fault, retry it at the next run
+                down[host] = down.get(host, 0) + 1
+                _forget_attempt(store, it["project_key"])
+        else:
+            down[host] = 0
         finally:
             for name in ("blobs", "text"):
                 _rm(store / name)                                 # downloaded files are never kept
