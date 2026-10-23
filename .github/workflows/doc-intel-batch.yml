@@ -22,6 +22,10 @@ on:
         description: 'new | backlog | both | refresh (re-check projects that already have a card)'
         required: false
         default: 'both'
+      region:
+        description: 'Only projects of this region (e.g. Emilia-Romagna); empty = all'
+        required: false
+        default: ''
 permissions:
   contents: write
 concurrency:
@@ -52,13 +56,14 @@ jobs:
           SCHED: ${{ github.event.schedule }}
           IN_MAX: ${{ inputs.max }}
           IN_MODE: ${{ inputs.mode }}
+          IN_REGION: ${{ inputs.region }}
         run: |
           MODE=both; MAX=35; RETRY=14
           if [ "$EVENT" = "push" ]; then MODE=new; MAX=60; fi
           # weekly re-check: cards not checked in the last 6 days, oldest first (new or changed files only)
           if [ "$EVENT" = "schedule" ] && [ "$SCHED" = "0 1 * * 0" ]; then MODE=refresh; MAX=60; RETRY=6; fi
           if [ "$EVENT" = "workflow_dispatch" ]; then MODE="${IN_MODE:-both}"; MAX="${IN_MAX:-35}"; fi
-          python -m doc_intel queue --data docs/data.json --memory .mem --max "$MAX" --mode "$MODE" --retry-days "$RETRY" --github-output "$GITHUB_OUTPUT"
+          python -m doc_intel queue --data docs/data.json --memory .mem --max "$MAX" --mode "$MODE" --retry-days "$RETRY" --region "${IN_REGION:-}" --github-output "$GITHUB_OUTPUT"
           python -m doc_intel queue-status --data docs/data.json --memory .mem
       - name: Save queue state
         run: |
