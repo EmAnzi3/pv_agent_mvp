@@ -138,6 +138,30 @@ def _duration_lines(ctx: PageContext) -> list[dict]:
     return out[:60] if len(out) >= 4 else []
 
 
+NOT_PHASE = re.compile(r"[<>≤≥=]|\bag\b|\bzona\b|sismic|accelerazion|coefficient|categoria\s+(?:di\s+)?suolo|\bTr\b|"
+                       r"\bentro\b|\bogni\b|\bdopo\b|termine|cadenza|frequenz|\bart\.|giorni\s+lavorativi|numero\s+di|"
+                       r"periodo\s+di\s+ritorno|spettr|\bPGA\b|tabella\s+\d", re.I)
+
+
+def _plausible_phases(rows: list[dict], page_text: str) -> list[dict]:
+    """A list of phase durations must look like a works programme: whole durations (no '0,25 g', which is a
+    seismic acceleration in units of g), activity names (no formulas, zones or coefficients)."""
+    if not rows:
+        return []
+    head = page_text[:4000]
+    if re.search(r"(?i)accelerazion|zona\s+sismica|classificazione\s+sismica|\bag\s*[<≤>]", page_text):
+        return []
+    # only a programme of works: not maintenance plans, monitoring, decommissioning, dust or procedure terms
+    if not re.search(r"(?i)cron?o?\s*programma|gantt|programma\s+(?:dei\s+)?lavori|fasi\s+(?:di|del|dei)\s+(?:cantiere|lavor|realizzazion)|"
+                     r"nome\s+attivit|tempistic[ah]\s+(?:di\s+)?realizzazion|durata\s+(?:dei\s+)?lavori", head):
+        return []
+    if re.search(r"(?i)dismission|smantellament|manutenzion|monitoragg|piano\s+di\s+manutenzione|polveri|emission|"
+                 r"procediment[oi]\s+(?:di\s+)?(?:VIA|autorizzat)|sospensione\s+dei\s+termini|rotazion|colture", head):
+        return []
+    good = [r for r in rows if r["value"] >= 1 and float(r["value"]).is_integer() and not NOT_PHASE.search(r["name"])]
+    return good if len(good) >= 4 and len(good) >= 0.7 * len(rows) else []
+
+
 def extract_gantt(ctx: PageContext) -> list[Fact]:
     """Phases from a drawn Gantt (rebuilt from the vector page) or from a dated activity table."""
     out = []
@@ -161,7 +185,7 @@ def extract_gantt(ctx: PageContext) -> list[Fact]:
                             qualifiers={"method": g.get("method", "vector_gantt"), "rows": len(g["rows"]), "scope": scope},
                             limits="Bar positions read from the drawing; periods follow the chart's own axis",
                             extractor="schedule.gantt"))
-    drows = g.get("duration_rows") or _duration_lines(ctx)
+    drows = _plausible_phases(g.get("duration_rows") or _duration_lines(ctx), ctx.text or "")
     for i, r in enumerate(drows):
         u = r["unit"]
         months = r["value"] / (30.4 if u.startswith(("g", "d")) else 4.33 if u.startswith(("s", "w")) else 1)

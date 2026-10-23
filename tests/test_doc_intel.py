@@ -1490,3 +1490,15 @@ class Timing(unittest.TestCase):
         self.assertEqual(t["autorizzazione"]["data"], "30/05/2023")
         rows = {(r["voce"], r["livello"]): r["valore"] for r in t["righe"]}
         self.assertEqual(rows[("Fine lavori", "stimata")], "non prima di maggio 2024")
+
+
+class NotASchedule(unittest.TestCase):
+    def test_seismic_zones_are_not_phases(self):
+        from doc_intel.extract.schedule import _plausible_phases
+        rows = [{"name": "Zona dove 0,15 < ag ≤", "value": 0.25, "unit": "g"}, {"name": "possono", "value": 0.25, "unit": "g"},
+                {"name": "Zona che può 0,05 < ag ≤", "value": 0.15, "unit": "g"}, {"name": "essere", "value": 0.15, "unit": "g"},
+                {"name": "E' la zona ag ≤", "value": 0.05, "unit": "g"}]
+        self.assertEqual(_plausible_phases(rows, "classificazione sismica dei comuni"), [])
+        ok = [{"name": n, "value": v, "unit": "g"} for n, v in (("Progettazione esecutiva", 60), ("Recinzione", 20),
+                                                                  ("Montaggio strutture", 90), ("Cablaggi", 45))]
+        self.assertEqual(len(_plausible_phases(ok, "Cronoprogramma dei lavori")), 4)
