@@ -10,11 +10,11 @@ from typing import Any
 from app.collectors.base import BaseCollector, CollectorResult
 
 
-API_BASE_URL = "https://api.regione.toscana.it"
-API_URL_TEMPLATE = (
-    API_BASE_URL
-    + "/C01/suap-dt/v1/avvisi/eventiPubblici/{page_index}/{page_size}"
-)
+# 10/2026: the portal moved the public list to servizi.toscana.it/pub-api (env-specific.json 'publicApi');
+# the old api.regione.toscana.it route answers 404 'UndefinedOperation'. The old one is kept as fallback.
+API_BASE_URL = "https://servizi.toscana.it/pub-api/suap/services"
+API_URL_TEMPLATE = API_BASE_URL + "/avvisi/eventiPubblici/{page_index}/{page_size}"
+LEGACY_API_URL_TEMPLATE = "https://api.regione.toscana.it/C01/suap-dt/v1/avvisi/eventiPubblici/{page_index}/{page_size}"
 
 PUBLIC_URL = "https://servizi.patti.regione.toscana.it/star-info/avvisiPubblici"
 
@@ -60,7 +60,7 @@ class ToscanaCollector(BaseCollector):
     base_url = PUBLIC_URL
 
     def fetch(self) -> list[CollectorResult]:
-        debug_base = Path("/app/reports/debug_toscana")
+        debug_base = Path("reports/debug_toscana")
         debug_base.mkdir(parents=True, exist_ok=True)
 
         results: list[CollectorResult] = []
@@ -205,6 +205,11 @@ class ToscanaCollector(BaseCollector):
             headers=headers,
             timeout=90,
         )
+        if response.status_code in (404, 405):
+            response = self.session.post(
+                LEGACY_API_URL_TEMPLATE.format(page_index=page_index, page_size=page_size),
+                params=params, json=body, headers=headers, timeout=90,
+            )
         response.raise_for_status()
         return response.json()
 

@@ -1,0 +1,40 @@
+name: Collector check (read only)
+# Runs one radar collector in the cloud and prints how many records it returns: to diagnose a source
+# that returns 0 items on the PC. Nothing is written to the database or to docs/.
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'Collector name (e.g. toscana, toscana_atos, emilia_romagna)'
+        required: true
+  pull_request:
+    paths: ['app/collectors/toscana.py', '.github/workflows/collector-check.yml']
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -q -r requirements.txt
+      - name: Run the collector
+        env:
+          SOURCE: ${{ inputs.source || 'toscana' }}
+        run: |
+          python - <<'PY'
+          import os, importlib, inspect, traceback
+          name = os.environ["SOURCE"]
+          mod = importlib.import_module(f"app.collectors.{name}")
+          from app.collectors.base import BaseCollector
+          cls = next(c for _, c in inspect.getmembers(mod, inspect.isclass) if issubclass(c, BaseCollector) and c is not BaseCollector)
+          try:
+              res = cls().fetch()
+              print(f"::notice title={name}::{len(res)} records")
+              for r in res[:5]:
+                  print(getattr(r, "title", r))
+          except Exception as exc:
+              print(f"::error title={name}::{type(exc).__name__}: {str(exc)[:500]}")
+              traceback.print_exc()
+              raise SystemExit(1)
+          PY
