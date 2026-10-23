@@ -457,6 +457,18 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3ZQ/8] Chiavi progetto stabili rispetto al radar precedente
+echo ==========================================================
+REM Se il record base di un progetto cambia (es. arriva il record MASE di un progetto regionale)
+REM il progetto mantiene la chiave del run precedente: niente falsi "nuovi/rimossi" nel report,
+REM la scheda resta collegata. Abbinamento solo sugli URL ufficiali; audit in reports.
+"%PYTHON_EXE%" ".\scripts\carry_over_project_keys.py" --old "%PREVIOUS_DATA%" --data "%DATA_JSON%" --audit ".\reports\project_key_carry_over_audit.csv"
+if errorlevel 1 (
+    echo ATTENZIONE: riallineamento chiavi non eseguito; la dashboard prosegue senza.
+)
+echo.
+
+echo ==========================================================
 echo [3ZR/8] Completamento dati vuoti dalle schede progetto
 echo ==========================================================
 REM Scarica le schede pronte e riempie SOLO i campi vuoti del radar (MW, provincia, regione, comuni)
