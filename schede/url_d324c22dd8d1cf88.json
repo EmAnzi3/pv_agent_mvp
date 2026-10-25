@@ -3,45 +3,58 @@
  "dossier_schema": "pv-dossier/1.0",
  "project_key": "url:d324c22dd8d1cf88",
  "title": "Progetto di un impianto agri-fotovoltaico della potenza di 87,78 MW e delle relative opere connesse necessarie al collegamento alla Rete di Trasmissione Nazionale, da realizzarsi nei Comuni di Minervino Murge (BT), in località Scapanizza, Venosa (PZ) e Montemilone (PZ).",
- "source_url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63472",
- "source": "sistema_puglia_energia",
- "updated": "2026-10-23",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8387",
+ "source": "mase",
+ "updated": "2026-10-25",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
    "value": "87,78 MW",
-   "sub": null,
+   "sub": "Suddivisa in 3 lotti",
    "source": {
     "document": "titolo del procedimento",
-    "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63472",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8387",
     "excerpt": "87,78 MW"
    }
   },
   {
    "key": "impianto",
    "label": "Impianto",
-   "value": "Agrivoltaico",
+   "value": "Agrivoltaico · tracker monoassiali",
    "status": "da documenti",
    "source": {
-    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOydCAAI&p_name_allegato=&p_esito=0 ",
-    "page": 8,
-    "document": "documento",
-    "excerpt": "Beni archeologici: Per quanto di competenza archeologica, si evidenzia che l’impianto agrovoltaico andrebbe"
+    "url": "https://va.mite.gov.it/File/Documento/1420952",
+    "page": 1,
+    "document": "Elenco Elaborati della documentazione tecnica",
+    "excerpt": "Relazione Tecnica dell'Impianto Agrivoltaico"
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "133,6 ha",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 76 ha (3), 160 ha (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1420913",
+    "page": 1,
+    "document": "PLANIMETRIE COMPARATIVE DEL LAYOUT DI IMPIANTO TRA PROGETTO AUTORIZZATO ED ESECUTIVO",
+    "excerpt": "· Superficie totale di proprietà: 133,60 Ha LEGENDA"
    }
   },
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "18 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "value": "3 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (3), 10–12 mesi (2), 5 mesi (2)",
    "source": {
-    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOydCAAI&p_name_allegato=&p_esito=0 ",
-    "page": 24,
-    "document": "documento",
-    "excerpt": "Bollettino Ufficiale della Regione Puglia - n. 71 del 4-9-2025 quest’ultima intervenga entro e non oltre 18 mesi dalla data di fine dei lavori. In assenza di evidenza all’autorità competente regionale della data di entra"
+    "url": "https://va.mite.gov.it/File/Documento/1420926",
+    "page": 68,
+    "document": "Piano di monitoraggio ambientale",
+    "excerpt": "Continuo 3 mesi (scarico mensile) Per durata cantiere"
    }
   }
  ],
@@ -49,41 +62,396 @@
   "regione": "Puglia",
   "provincia": "BT",
   "comuni": [
-   "Minervino Murge",
-   "Venosa",
-   "Montemilone"
+   "Minervino Murge"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Minervino+Murge%2C+BT%2C+Puglia",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 41.11719,
+   "lon": 16.00092,
+   "tipo": "centro della tavola georeferenziata di progetto (323 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/855142",
+    "page": 1,
+    "document": "Integrazioni del 07/06/2023 - 17EG_2-MURETTI_A_SECCO",
+    "excerpt": "Integrazioni del 07/06/2023 - 17EG_2-MURETTI_A_SECCO"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.11719,16.00092",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
-  "lotti": []
+  "connessione": {
+   "lat": 41.11422,
+   "lon": 15.98585,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1420926",
+    "page": 8,
+    "document": "Piano di monitoraggio ambientale",
+    "excerpt": "582771.80 4551616.56 Minervino"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.11422,15.98585"
+  },
+  "lotti": [
+   {
+    "lotto": "Impianto R1",
+    "lat": 41.00653,
+    "lon": 15.9052,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.00653,15.90520",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/714775",
+     "page": 6,
+     "document": "Nota Integrativa del progetto BIO 001 Minervino",
+     "excerpt": "R1 41,006532 N"
+    }
+   },
+   {
+    "lotto": "Lotto 1",
+    "lat": 41.0866,
+    "lon": 16.0785,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.08660,16.07850",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1420914",
+     "page": 8,
+     "document": "Piano esecutivo di gestione delle terre e rocce da scavo",
+     "excerpt": "Lotto 1 41.0866° N"
+    }
+   },
+   {
+    "lotto": "Lotto 2",
+    "lat": 41.0845,
+    "lon": 16.0448,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.08450,16.04480",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1420914",
+     "page": 8,
+     "document": "Piano esecutivo di gestione delle terre e rocce da scavo",
+     "excerpt": "Lotto 2 41.0845° N"
+    }
+   },
+   {
+    "lotto": "Lotto 3",
+    "lat": 41.0746,
+    "lon": 16.0606,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.07460,16.06060",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1420914",
+     "page": 8,
+     "document": "Piano esecutivo di gestione delle terre e rocce da scavo",
+     "excerpt": "Lotto 3 41.0746° N"
+    }
+   }
+  ]
  },
  "soggetti": [
   {
-   "name": "solar energy ventuno S.r.l.",
+   "name": "Solar Energy Ventuno S.r.l.",
    "kind": "società",
    "roles": [
-    "Proponente"
+    "Proponente",
+    "EPC (da confermare)",
+    "Impresa esecutrice (da confermare)"
+   ],
+   "vat": "03084730211",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Sebastian Altmann 9 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "solarenergyventuno.srl@legalmail.it",
+     "occurrences": 154,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420925",
+      "page": 25,
+      "document": "Piano Unificato di Cantierizzazione",
+      "excerpt": "Via Sebastian Altmann 9, Bolzano (BZ) – PEC: solarenergyventuno.srl@legalmail.it – C.F./P.IVA:"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "solarenerayventuno.si@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/855177",
+      "page": 17,
+      "document": "Integrazioni del 07/06/2023 - 4CR_2_SSE-ALL_1-Catastale",
+      "excerpt": "SOLAR ENERGY VENTUNO S.r.l P.IVA: 03084730211 PEC: solarenerayventuno.si@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "solarenergyventuno@solarig.com",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/714763",
+      "page": 1,
+      "document": "Richiesta data prima bitumazione SP 4 del progetto BIO 001 Minervino",
+      "excerpt": "Tel. 06-83663458 Fax: 06-83664860 PEC: solarenergyventuno.srl@legalmail.it e-mail: SolarEnergyVentuno@solarig.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "solarenerayventuno.s@leqalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/855177",
+      "page": 25,
+      "document": "Integrazioni del 07/06/2023 - 4CR_2_SSE-ALL_1-Catastale",
+      "excerpt": "SOLAR ENERGY VENTUNO S.r.l P.IVA: 03084730211 PEC: solarenerayventuno.s@leqalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0683663458",
+     "occurrences": 32,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/714763",
+      "page": 1,
+      "document": "Richiesta data prima bitumazione SP 4 del progetto BIO 001 Minervino",
+      "excerpt": "SOLAR ENERGY VENTUNO S.r.l – Sede Legale: Via Sebastian Altmann, 9 - 39100 Bolzano (BZ) Italy - P.I. e C.F. 03084730211 Tel. 06-83663458 Fax: 06-83664860 PEC: solarenergyventuno.srl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8387"
+   }
+  },
+  {
+   "name": "Hazel NEW Energy",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "15866281007",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Paolo Emilio 10 00192 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "hazel.energy@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420925",
+      "page": 25,
+      "document": "Piano Unificato di Cantierizzazione",
+      "excerpt": "Via Paolo Emilio 10, Roma (RM) – PEC: hazel.energy@legalmail.it – C.F./P.IVA: 15866281007"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1420922",
+    "page": 2,
+    "document": "Piano Gestione Rischio Incendio BIO001",
+    "excerpt": "PROGETTISTA: HAZEL NEW ENERGY SRL 1"
+   }
+  },
+  {
+   "name": "Dott. Ing. Antonio Alfredo Avallone",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
    ],
    "vat": null,
    "vat_group": false,
    "verified": false,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "antonioavallone@pec.it",
+     "occurrences": 104,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/714735",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale del progetto BIO 001 Minervino",
+      "excerpt": "Ordine degli Ingegneri di Matera n. 924 PEC: antonioavallone@pec.it"
+     }
+    }
+   ],
    "source": {
-    "document": "scheda ufficiale del procedimento",
-    "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63472"
+    "url": "https://va.mite.gov.it/File/Documento/714735",
+    "page": 1,
+    "document": "Studio di Impatto Ambientale del progetto BIO 001 Minervino",
+    "excerpt": "IL PROGETTISTA Dott. Ing. ANTONIO ALFREDO AVALLONE"
+   }
+  },
+  {
+   "name": "Geol. Vincenzo Cortese",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vincenzocortese@live.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420932",
+      "page": 35,
+      "document": "INDAGINI AMBIENTALI E IDROGEOLOGICHE",
+      "excerpt": "TELEFONO: 0874/783120 FAX: 0874/773186 MOBILE: 328.6429991 E-MAIL: vincenzocortese@live.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1420932",
+    "page": 35,
+    "document": "INDAGINI AMBIENTALI E IDROGEOLOGICHE",
+    "excerpt": "GEOLOGO REDATTORE: Geol. Vincenzo Cortese"
    }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "Socotec Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01872430648",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Bariola 101/103 20045 Lainate Mi",
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0293750000",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420935",
+      "page": 1,
+      "document": "Rapporto monitoraggio preliminare componente vegetazione e parametri meteo-climatici",
+      "excerpt": "SOCOTEC ITALIA Srl – P.Iva 01872430648 - Capitale sociale 7.144.000,00 euro Sede Legale: Via Bariola, 101-103 - 20045 Lainate (MI) Tel.: +39 02 9375 0000"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0296115076",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420935",
+      "page": 1,
+      "document": "Rapporto monitoraggio preliminare componente vegetazione e parametri meteo-climatici",
+      "excerpt": "POLO TECNOLOGICO AMBIENTALE: Via Don Luigi Sturzo, 38 - 20045 Lainate (MI) Tel.: +39 02 96115076"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "LAB Ambiente e Sicurezza S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "lab@pec.labambientesicurezza.com",
+     "occurrences": 107,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420932",
+      "page": 58,
+      "document": "INDAGINI AMBIENTALI E IDROGEOLOGICHE",
+      "excerpt": "Email: info@labambientesicurezza.com | PEC: lab@pec.labambientesicurezza.com | Sito internet: www.labambientesicurezza.com ."
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@labambientesicurezza.com",
+     "occurrences": 107,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420932",
+      "page": 58,
+      "document": "INDAGINI AMBIENTALI E IDROGEOLOGICHE",
+      "excerpt": "Email: info@labambientesicurezza.com | PEC: lab@pec.labambientesicurezza.com | Sito internet: www.labambientesicurezza.com ."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasri.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/714774",
+      "page": 39,
+      "document": "Relazione previsionale di impatto acustico del progetto BIO 001 Minervino",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196 www.sonorasri.com - sonora@sonorasri.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/714774",
+      "page": 37,
+      "document": "Relazione previsionale di impatto acustico del progetto BIO 001 Minervino",
+      "excerpt": "Via dei Bersaglieri, 9 - Caserta x sti Tel 0823 351196 - Fax 0823 351196 Signatory of EA, IAF and ILAC"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Spinazzola SPV S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "spinazzolaspvsrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/714665",
+      "page": 4,
+      "document": "Relazione producibilità del progetto BIO 001 Minervino",
+      "excerpt": "Pec : spinazzolaspvsrl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "spinazzola@notaiconsolomazzoni.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/714679",
+      "page": 161,
+      "document": "Disponibilità delle aree",
+      "excerpt": "Piazza Plebiscito n.27 - 76014 SPINAZZOLA (BT) telefono: 0883/683742 - fax: 0883/951017 - e-mail: spinazzola@notaiconsolomazzoni.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": null,
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "18 mesi",
+  "durata_cantiere": "3 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -101,14 +469,14 @@
   "source": null,
   "asse": null,
   "duration": {
-   "text": "18 mesi",
-   "status": "da documenti",
-   "hint": null,
+   "text": "3 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (3), 10–12 mesi (2), 6 settimane (2)",
    "source": {
-    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOydCAAI&p_name_allegato=&p_esito=0 ",
-    "page": 24,
-    "document": "documento",
-    "excerpt": "Bollettino Ufficiale della Regione Puglia - n. 71 del 4-9-2025 quest’ultima intervenga entro e non oltre 18 mesi dalla data di fine dei lavori. In assenza di evidenza all’autorità competente regionale della data di entra"
+    "url": "https://va.mite.gov.it/File/Documento/1420926",
+    "page": 68,
+    "document": "Piano di monitoraggio ambientale",
+    "excerpt": "Continuo 3 mesi (scarico mensile) Per durata cantiere"
    }
   },
   "milestones": [],
@@ -119,30 +487,30 @@
   "metodo": null
  },
  "documentazione": {
-  "documenti": 1,
-  "pagine": 29,
-  "completa": true
+  "documenti": 385,
+  "pagine": 5431,
+  "completa": false
  },
  "confronto": [
   {
    "campo": "proponent",
-   "valore_attuale": "solar energy ventuno s.r.l",
+   "valore_attuale": "Solar Energy Ventuno S.r.l.",
    "esito": "confermato"
   },
   {
    "campo": "power_mw",
-   "valore_attuale": 87.87,
+   "valore_attuale": 87.78,
    "esito": "confermato"
   },
   {
    "campo": "municipalities",
-   "valore_attuale": "Minervino Murge, Venosa, Montemilone",
-   "esito": "non_determinabile"
+   "valore_attuale": "MINERVINO MURGE",
+   "esito": "confermato"
   },
   {
    "campo": "province",
    "valore_attuale": "BT",
-   "esito": "non_determinabile"
+   "esito": "confermato"
   },
   {
    "campo": "region",
@@ -152,8 +520,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "1 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1333 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Solar Energy Ventuno S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
