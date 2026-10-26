@@ -1,0 +1,954 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "url:4f9340c4085e70b2",
+ "title": "Progetto di un impianto agrivoltaico denominato \"Lotto 9\", di potenza pari a 48,917 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Latiano (BR).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9575",
+ "source": "mase",
+ "updated": "2026-10-26",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "48,917 MW",
+   "sub": "Suddivisa in 5 lotti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9575",
+    "excerpt": "48,917 MW"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico · tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1338135",
+    "page": 1,
+    "document": "ITEL-PV-LTN-01-LOF-GN-Elenco dei Documenti",
+    "excerpt": "IMPIANTO AGRIVOLTAICO"
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "123,98 ha",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 60,96 ha (1), 96,67 ha (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1439557",
+    "page": 5,
+    "document": "Integrazioni del 15/10/2026 - RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
+    "excerpt": "- Superficie complessiva interessata: circa 123,98 ettari; -"
+   }
+  },
+  {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "45,73 ha",
+   "status": "da documenti",
+   "sub": "37% dell'area",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1338159",
+    "page": 4,
+    "document": "ITEL-PV-LTN-25-OTT-GN-Piano di monitoraggio agrivoltaico",
+    "excerpt": "Esaminata la superficie massima sviluppata come fascia libera tra le file dei moduli e sotto ai moduli fotovoltaici, ne deriva che la superficie utile di coltivazione è pari a 45,73 Ha."
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "41,25 MW / 144 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 36 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/801490",
+    "page": 113,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "In base alle richieste del cliente, il BESS avrà una potenza nominale di 41,25 MW e una capacità nominale di 165,00 MWh, costituito dai seguenti componenti:"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 12/2024 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 20 mesi (3), 12 mesi (2), 60 settimane (circa 14 mesi) (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1439561",
+    "page": 22,
+    "document": "Integrazioni del 15/10/2026 - Capitolato Speciale d'Appalto - Impianto Agrivoltaico Lotto 9 Comune di Latiano (BR)",
+    "excerpt": "difformità ed i vizi dell’opera, ancorché riconoscibili, purché denunciati dalla Stazione appaltante entro 24 (ventiquattro) mesi dall’ultimazione dei lavori riconosciuta e accettata. 7. L’appaltatore e la DL devono util"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BR",
+  "comuni": [
+   "Latiano"
+  ],
+  "coordinate": {
+   "lat": 40.60367,
+   "lon": 17.74381,
+   "tipo": "coordinate del sito dichiarate negli elaborati (132 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/801474",
+    "page": 31,
+    "document": "Relazione di calcolo strutturale",
+    "excerpt": ": Latitudine = 40.6030° - Longitudine = 17.7425° Coordinate (Datum ED50) del sito"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.60367,17.74381",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Elettra SOL S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "12502450963",
+   "vat_group": false,
+   "verified": true,
+   "office": "Via Bernina 7 20158 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "elettrasol@lamiapec.it",
+     "occurrences": 733,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439563",
+      "page": 23,
+      "document": "Integrazioni del 15/10/2026 - RELAZIONE DI VALUTAZIONE DEI RISCHI DOVUTI AD INCIDENTI",
+      "excerpt": "PEC elettrasol@lamiapec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9575"
+   }
+  },
+  {
+   "name": "Arch. Silvano Carone",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1338141",
+    "page": 1,
+    "document": "ITEL-PV-LTN-07-OTT-GN-Inquadramento generale",
+    "excerpt": "Progettista Arch. Silvano Carone"
+   }
+  },
+  {
+   "name": "Nexta Project Development Apulia Energia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/801490",
+    "page": 1,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "PROGETTAZIONE:"
+   }
+  },
+  {
+   "name": "Dott. Marcello De",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/801486",
+    "page": 45,
+    "document": "Relazione Geologica",
+    "excerpt": "per la realizzazione della nuova SE Terna Latiano 150/380 kV (a firma del geologo Dott. Marcello De Donatis che si allega alla presente) è stato ricostruita la caratterizzazione geologica che consiste nella"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Setinstudio S.r.l. Societa' TRA Professionisti E Societa' Benef",
+   "kind": "società",
+   "roles": [],
+   "vat": "09550730965",
+   "vat_group": false,
+   "verified": true,
+   "office": "Viale Certosa 26 20155 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "setinstudio@pec.it",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338141",
+      "page": 1,
+      "document": "ITEL-PV-LTN-07-OTT-GN-Inquadramento generale",
+      "excerpt": "Tel. 02.66669200 | fax. 02.66669203 info@setinstudio.com | setinstudio@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@setinstudio.com",
+     "occurrences": 21,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338141",
+      "page": 1,
+      "document": "ITEL-PV-LTN-07-OTT-GN-Inquadramento generale",
+      "excerpt": "Tel. 02.66669200 | fax. 02.66669203 info@setinstudio.com | setinstudio@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Marco Ruscica",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "marcoruscica68@gmail.com",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338163",
+      "page": 37,
+      "document": "ITEL-PV-LTN-30-OTT-GN-Relazione di invarianza idraulica e idrologica",
+      "excerpt": "-- Ing. Marco Ruscica -Via Maniace n. 44 Siracusa; mail: marcoruscica68@gmail.com; pec: marco.ruscica@ordineingegnerisiracusa.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "marco.ruscica@ordineingegnerisiracusa.it",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338163",
+      "page": 37,
+      "document": "ITEL-PV-LTN-30-OTT-GN-Relazione di invarianza idraulica e idrologica",
+      "excerpt": "-- Ing. Marco Ruscica -Via Maniace n. 44 Siracusa; mail: marcoruscica68@gmail.com; pec: marco.ruscica@ordineingegnerisiracusa.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Agr. Valentino Fabiana",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "agr.fabianavalentino@gmail.com",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338155",
+      "page": 1,
+      "document": "ITEL-PV-LTN-21-OTT-GN-Relazione di fattibilità agronomica",
+      "excerpt": "Rec. Postale: Santeramo in Colle (BA), Contrada Pantarosa n° 35 – 70029 e-mail: agr.fabianavalentino@gmail.com - cell: +39 3807465636"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3807465636",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338155",
+      "page": 1,
+      "document": "ITEL-PV-LTN-21-OTT-GN-Relazione di fattibilità agronomica",
+      "excerpt": "Rec. Postale: Santeramo in Colle (BA), Contrada Pantarosa n° 35 – 70029 e-mail: agr.fabianavalentino@gmail.com - cell: +39 3807465636"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Cosimo Totaro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "totaro.cosimo@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/801447",
+      "page": 4,
+      "document": "Verifica preliminare delle eventuali interferenze delle opere con la navigazione aerea",
+      "excerpt": "Via Giuseppe di Vittorio n.2, CAP 72023, Tel. 348947480, e_mail: mino.totaro@hotmail.it, pec: totaro.cosimo@ingpec.eu, Ordine degli Ingegneri di Brindisi con Numero Iscrizione: 1718, C.F."
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "mino.totaro@hotmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/801447",
+      "page": 4,
+      "document": "Verifica preliminare delle eventuali interferenze delle opere con la navigazione aerea",
+      "excerpt": "Il sottoscritto Ing. Cosimo Totaro nato a Mesagne (BR) il 01/03/1987 residente in Mesagne (BR), Via Giuseppe di Vittorio n.2, CAP 72023, Tel. 348947480, e_mail: mino.totaro@hotmail.it, pec:"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "348947480",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/801447",
+      "page": 4,
+      "document": "Verifica preliminare delle eventuali interferenze delle opere con la navigazione aerea",
+      "excerpt": "Il sottoscritto Ing. Cosimo Totaro nato a Mesagne (BR) il 01/03/1987 residente in Mesagne (BR), Via Giuseppe di Vittorio n.2, CAP 72023, Tel. 348947480, e_mail: mino.totaro@hotmail.it, pec:"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Di Stefano Francesco",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "francesco.distefano@recurrentenergy.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338184",
+      "page": 2,
+      "document": "ITEL-PV-LTN-ALL-02-OTT-GN-Ottemperanze Allegato_Invio_PEC_PMA_ARPA",
+      "excerpt": "Cell. 349 3085655 Email: francesco.distefano@recurrentenergy.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3493085655",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338184",
+      "page": 2,
+      "document": "ITEL-PV-LTN-ALL-02-OTT-GN-Ottemperanze Allegato_Invio_PEC_PMA_ARPA",
+      "excerpt": "Ing. Di Stefano Francesco Cell. 349 3085655"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Andrea Murianni",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "andrea.murianni@recurrentenergy.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439571",
+      "page": 1,
+      "document": "Integrazioni del 15/10/2026 - Richiesta di coinvolgimento degli Enti competenti nella gestione dell'Oasi di protezione \"Masseria Monte-Madre-Monica\"",
+      "excerpt": "Gestione Ambientale. Siamo a disposizione per necessità e chiarimenti (Ing. Andrea Murianni – tel. 349-1731335 – email: andrea.murianni@recurrentenergy.com)."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Canadian Solar Construction S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "canadiansolarconstruction@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/801473",
+      "page": 2,
+      "document": "STMG + voltura",
+      "excerpt": "20121 Milano (MI) canadiansolarconstruction@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "12/2024",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/801443",
+     "page": 5,
+     "document": "Prime indicazioni sulla sicurezza",
+     "excerpt": "DATA PRESUNTA DI INIZIO LAVORI Dicembre 2024 DATA PRESUNTA DI FINE LAVORI"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "documentata",
+    "valore": "03/2026",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/801443",
+     "page": 5,
+     "document": "Prime indicazioni sulla sicurezza",
+     "excerpt": "DATA PRESUNTA DI FINE LAVORI Marzo 2026 DURATA PRESUNTA DEI LAVORI"
+    }
+   },
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto n. 308 del 03/10/2024",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1375925",
+     "page": 1,
+     "document": "Comunicazione esito valutazione - Progetto di un impianto agrivoltaico denominato \"Lotto 9\", di potenza pari a 48,917 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di La",
+     "excerpt": "Comunicazione esito istruttoria. Con il Decreto Direttoriale n. 308 del 03/10/2024, è stato rilasciato, in favore della Società Elettra Sol S.r.l., il Provvedimento di compatibilità ambientale per il progetto indicato in"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 03/10/2029",
+    "dettaglio": "«efficacia del presente provvedimento è di 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1153853",
+     "page": 7,
+     "document": "Decreto Direttoriale - Progetto di un impianto agrivoltaico denominato \"Lotto 9\", di potenza pari a 48,917 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Latiano (BR)",
+     "excerpt": "2. Ai sensi dell’articolo 25, comma 5, del decreto legislativo n. 152/2006, la durata dell'efficacia del presente provvedimento è di 5 anni decorrenti dalla data di pubblicazione del presente decreto sul sito internet de"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di ottobre 2024",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1375925",
+     "page": 1,
+     "document": "Comunicazione esito valutazione - Progetto di un impianto agrivoltaico denominato \"Lotto 9\", di potenza pari a 48,917 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di La",
+     "excerpt": "Comunicazione esito istruttoria. Con il Decreto Direttoriale n. 308 del 03/10/2024, è stato rilasciato, in favore della Società Elettra Sol S.r.l., il Provvedimento di compatibilità ambientale per il progetto indicato in"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di giugno 2026",
+    "dettaglio": "inizio stimato + durata del cantiere: 20 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1439572",
+     "page": 2,
+     "document": "Integrazioni del 15/10/2026 - Cronoprogramma delle opere da realizzare",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "20 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "Decreto n. 308",
+   "data": "03/10/2024",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1375925",
+    "page": 1,
+    "document": "Comunicazione esito valutazione - Progetto di un impianto agrivoltaico denominato \"Lotto 9\", di potenza pari a 48,917 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di La",
+    "excerpt": "Comunicazione esito istruttoria. Con il Decreto Direttoriale n. 308 del 03/10/2024, è stato rilasciato, in favore della Società Elettra Sol S.r.l., il Provvedimento di compatibilità ambientale per il progetto indicato in"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento cantiere",
+    "start": 0.0,
+    "end": 2.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Picchettamenti",
+    "start": 0.25,
+    "end": 2.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Recinzione e accesso cantiere",
+    "start": 0.25,
+    "end": 2.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione terreno e livellamenti",
+    "start": 0.0,
+    "end": 5.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione viabilità interna",
+    "start": 0.25,
+    "end": 6.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio cancello di ingresso e recinzione",
+    "start": 1.25,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio strutture di supporto dei moduli",
+    "start": 1.25,
+    "end": 8.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione scavi per cavidotti e basamenti cabine",
+    "start": 6.0,
+    "end": 8.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera corrugati e rete di terra",
+    "start": 6.5,
+    "end": 9.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio moduli fotovoltaici",
+    "start": 6.75,
+    "end": 10.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cablaggio stringhe",
+    "start": 7.5,
+    "end": 10.75,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera basamenti cabine",
+    "start": 9.0,
+    "end": 11.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera cabine di trasformazione",
+    "start": 9.75,
+    "end": 11.75,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera cabina di raccolta",
+    "start": 10.75,
+    "end": 12.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera locali tecnici (cabine di stoccaggio)",
+    "start": 11.25,
+    "end": 11.75,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cablaggio cabine elettriche",
+    "start": 11.25,
+    "end": 13.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione impianto di controllo e monitoraggio",
+    "start": 11.75,
+    "end": 14.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione impianto di illuminazione",
+    "start": 12.25,
+    "end": 18.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione sistema di videosorveglianza",
+    "start": 13.75,
+    "end": 19.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione Sistemazione BESS",
+    "start": 8.25,
+    "end": 20.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizazione opere RTN",
+    "start": 0.0,
+    "end": 19.75,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Test-Collaudi-Messa in servizio campo fotovoltaico",
+    "start": 18.75,
+    "end": 20.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Test - Collaudi - Messa in servizio generale",
+    "start": 18.75,
+    "end": 20.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Entrata in esercizio impianto fotovoltaico",
+    "start": 18.75,
+    "end": 20.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di prato permanente stabile",
+    "start": 17.25,
+    "end": 20.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere di mitigazione ambientale",
+    "start": 17.25,
+    "end": 20.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di prato mellifero",
+    "start": 17.25,
+    "end": 20.25,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 20.25,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1439572",
+   "page": 2,
+   "document": "Integrazioni del 15/10/2026 - Cronoprogramma delle opere da realizzare",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "Gennaio",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "Febbraio",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "Marzo",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "Aprile",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "Maggio",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "Giugno",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "Luglio",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "Agosto",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "Settembre",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "Ottobre",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "Novembre",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "Dicembre",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "Gennaio",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "Febbraio",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "Marzo",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "Aprile",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "Maggio",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "Giugno",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "Luglio",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "Agosto",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "Settembre",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "Ottobre",
+     "start": 21.0,
+     "end": 22.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "24 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 giorni (3), 20 mesi (3), 30 giorni (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1439561",
+    "page": 22,
+    "document": "Integrazioni del 15/10/2026 - Capitolato Speciale d'Appalto - Impianto Agrivoltaico Lotto 9 Comune di Latiano (BR)",
+    "excerpt": "difformità ed i vizi dell’opera, ancorché riconoscibili, purché denunciati dalla Stazione appaltante entro 24 (ventiquattro) mesi dall’ultimazione dei lavori riconosciuta e accettata. 7. L’appaltatore e la DL devono util"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "23/06/2016",
+    "iso": "2016-06-23",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1338173",
+     "page": 19,
+     "document": "ITEL-PV-LTN-41-OTT-GN-Studio Impatto ambientale - parte 1",
+     "excerpt": "a 20 anni a partire dalla data di entrata in esercizio commerciale dell’impianto, come previsto dal D.M. del 23/06/2016."
+    }
+   },
+   {
+    "label": "Inizio lavori",
+    "date": "12/2024",
+    "iso": "2024-12",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/801443",
+     "page": 5,
+     "document": "Prime indicazioni sulla sicurezza",
+     "excerpt": "DATA PRESUNTA DI INIZIO LAVORI Dicembre 2024 DATA PRESUNTA DI FINE LAVORI"
+    }
+   },
+   {
+    "label": "Fine lavori",
+    "date": "03/2026",
+    "iso": "2026-03",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/801443",
+     "page": 5,
+     "document": "Prime indicazioni sulla sicurezza",
+     "excerpt": "DATA PRESUNTA DI FINE LAVORI Marzo 2026 DURATA PRESUNTA DEI LAVORI"
+    }
+   }
+  ],
+  "document": {
+   "document": "Integrazioni del 15/10/2026 - Cronoprogramma delle opere da realizzare",
+   "url": "https://va.mite.gov.it/File/Documento/1439572"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "ITEL-PV-LTN-44-OTT-GN-Cronoprogramma delle opere da realizzare",
+    "url": "https://va.mite.gov.it/File/Documento/1338177"
+   },
+   {
+    "document": "Cronoprogramma delle fasi attuative per la realizzazione dell'impianto fotovoltaico e delle opere connesse",
+    "url": "https://va.mite.gov.it/File/Documento/801442"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 155,
+  "pagine": 4108,
+  "completa": true
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "ELETTRA SOL S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 48.917,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "LATIANO",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BR",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "492 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
