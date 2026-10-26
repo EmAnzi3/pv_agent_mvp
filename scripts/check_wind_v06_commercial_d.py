@@ -12,7 +12,7 @@ ASSETS = ROOT / "docs" / "wind" / "assets"
 payload = json.loads((DATA / "commercial-enrichment-v06d.json").read_text(encoding="utf-8"))
 assert payload["version"] == "0.6.0-commercial-enrichment-d"
 assert payload["as_of"] == "2026-09-06"
-assert set(payload["projects"]) == {"greci-montaguto", "serra-giannina"}
+assert set(payload["projects"]) == {"greci-montaguto", "serra-giannina", "alas"}
 
 greci = payload["projects"]["greci-montaguto"]
 relations = greci.get("relations") or []
@@ -30,6 +30,17 @@ assert not (serra.get("relations") or [])
 signal = next(s for s in serra.get("signals") or [] if s.get("type") == "contractor-involvement-employee-direct")
 assert signal["grade"] == "B"
 assert "does not close Civil BoP" in signal["note"]
+
+alas = payload["projects"]["alas"]
+alas_relations = alas.get("relations") or []
+assert len(alas_relations) == 1
+alas_engineering = alas_relations[0]
+assert alas_engineering["company"] == "I.A.T. Consulenza e Progetti S.r.l."
+assert alas_engineering["role"] == "Civil/electrical design & environmental studies"
+assert alas_engineering["status"] == "confirmed"
+assert alas_engineering["confidence"] == "A2"
+assert "does not attribute Civil BoP" in alas_engineering["scope"]
+assert alas_engineering["source_id"] == "alas-iat-design-a2-2020"
 
 for project_id, project_payload in payload["projects"].items():
     sources = project_payload.get("sources") or []
@@ -56,4 +67,4 @@ for project_id, project_payload in payload["projects"].items():
 loader = (ASSETS / "commercial-enrichment-v05.js").read_text(encoding="utf-8")
 assert "commercial-enrichment-v06d.json" in loader
 
-print("v0.6 commercial enrichment D OK: project-specific engineering and B-level contractor lead added with no execution-scope closure")
+print("v0.6 commercial enrichment D OK: project-specific engineering and B-level contractor leads retained with no execution-scope closure")

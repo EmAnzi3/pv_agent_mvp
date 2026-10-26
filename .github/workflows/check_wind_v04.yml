@@ -1,4 +1,4 @@
-name: Wind Radar v0.6 checks
+name: Wind Radar v0.7 checks
 
 on:
   pull_request:
@@ -41,6 +41,7 @@ jobs:
             scripts/check_wind_v06_commercial_c.py
             scripts/check_wind_v06_commercial_d.py
             scripts/check_wind_v06_map.py
+            scripts/check_wind_v07_execution_coverage.py
             scripts/run_wind_agents.py
             scripts/update_wind_radar_local.py
             aggiorna_wind_radar.bat
@@ -135,9 +136,13 @@ jobs:
       - name: Province map v0.6 validation
         run: python scripts/check_wind_v06_map.py
 
+      - name: Execution coverage v0.7 validation
+        run: python scripts/check_wind_v07_execution_coverage.py
+
       - name: JavaScript syntax
         run: |
           node --check docs/wind/assets/app.js
+          node --check docs/wind/assets/execution-coverage-v07.js
           node --check docs/wind/assets/local-run.js
           node --check docs/wind/assets/province-map-v06.js
           node --check docs/wind/assets/discovery-v04.js
