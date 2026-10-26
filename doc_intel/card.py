@@ -260,6 +260,11 @@ NOT_THIS_VALUE = [
 ]
 
 
+def _part_value(field: str, x: dict) -> bool:
+    ex = ((x.get("example") or {}).get("excerpt") or "")
+    return any(field.startswith(pref) and rx.search(ex) for pref, rx in NOT_THIS_VALUE)
+
+
 def _pick(d: dict, field: str, titles: dict, accept=None) -> dict | None:
     """Most frequent value of a field (equivalent spellings and durations merged); alternatives kept as hints."""
     g = next((g for g in d["groups"] if g["field"] == field and g["values"] and isinstance(g["values"][0], dict)
@@ -333,7 +338,8 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         note = None
         cands = [(g["field"], x) for g in d["groups"]
                  if g["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw") and g.get("subject") in ("plant", None)
-                 for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["occurrences"] >= 10]
+                 for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["occurrences"] >= 10
+                 and not _part_value(g["field"], x)]
         cands.sort(key=lambda c: -c[1]["occurrences"])
         shown_field = "tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw"
         shown, status = mw, "verificato"
@@ -363,7 +369,11 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         # such as 'capacità produttiva massima' counts like any other occurrence)
         cands = [(g["field"], x) for g in d["groups"]
                  if g["field"] in ("tech.pv_dc_mwp", "tech.nominal_power_mw", "tech.pv_ac_mw") and g.get("subject") in ("plant", None)
-                 for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["value"] > 0]
+                 for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["value"] > 0
+                 and not _part_value(g["field"], x)]
+        radar_mw = float(record.get("power_mw") or 0)
+        if radar_mw and any(x["value"] >= 0.2 * radar_mw for _, x in cands):
+            cands = [c for c in cands if c[1]["value"] >= 0.2 * radar_mw]   # a block or a subfield, not the plant
         if cands:
             fld, x = max(cands, key=lambda c: (c[1]["occurrences"], c[0] == "tech.pv_dc_mwp"))
             others = sorted({round(o["value"], 3) for _, o in cands if abs(o["value"] - x["value"]) > 0.01 * x["value"]})
@@ -407,8 +417,7 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         if g["field"] == "tech.piles_count" and g["values"] and isinstance(g["values"][0], dict):
             v = g["values"][0]
             subj = g.get("subject") or "non specificato"
-            if subj in ("totale", "non specificato") and re.search(r"(?i)recinzion|rete\s+metallica|filo\s+spinato",
-                                                                    (v.get("example") or {}).get("excerpt") or ""):
+            if re.search(r"(?i)recinzion|rete\s+metallica|filo\s+spinato", (v.get("example") or {}).get("excerpt") or ""):
                 subj = "recinzione"                  # fence posts counted as plant piles
             piles.setdefault(subj, (v, len(g["values"]) > 1))
     structural = [(k, piles[k]) for k in ("totale", "tracker", "strutture fisse") if k in piles]
