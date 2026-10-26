@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-26 — Progetti molto grandi letti su più notti (massimo 120 documenti nuovi per run, rimessi in coda la notte dopo); schede: atti nei titoli senza «n.», tabelle delle fasi ripulite, potenza per blocco e pali della recinzione non più presi come valori dell'impianto; radar eolico con la copertura esecutiva v0.7.
+
 - 2026-10-26 — Notizie di stampa (livello C, da verificare): ogni giorno `doc-intel-news.yml` legge pv-magazine.it, QualEnergia, Rinnovabili.it e SolareB2B, tiene gli articoli su cantieri/contratti fotovoltaici e li abbina a un progetto solo se comune e potenza (o proponente) compaiono nello stesso passaggio con parole di cantiere; esclusi riepiloghi VIA, graduatorie e offerte di lavoro. Etichetta «Stampa», sezione nella scheda, opzione nel filtro EPC.
 - 2026-10-26 — Evidenza EPC/impresa esecutrice: ruoli esecutivi classificati A (atto di cantiere o dichiarazione formale) / B (cartiglio degli elaborati); esclusi proponente, gestori di rete e committenti; sezione «Chi costruisce» nella scheda, etichetta EPC e filtro dedicato in dashboard.
 - 2026-10-26 — Esclusi dal radar i progetti MASE con tutte le procedure «Archiviata» (passo `[3H2/8]`, audit `reports/mase_archived_excluded.csv`); stato della procedura scritto sui record MASE.
