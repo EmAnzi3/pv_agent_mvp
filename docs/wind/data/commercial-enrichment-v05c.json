@@ -1,0 +1,729 @@
+{
+  "version": "0.5.2-commercial-enrichment",
+  "as_of": "2026-09-05",
+  "note": "Completion tranche for the 21 promoted canonicals not covered by v05/v05b. Engineering, owner, survey and development roles are non-execution unless an A1/A2 source explicitly states execution. Design turbine references are not OEM awards.",
+  "projects": {
+    "off-owf-1": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "offshore-scoping",
+          "grade": "A1",
+          "title": "Scoping SIA concluso il 19/06/2026",
+          "note": "La definizione dei contenuti dello SIA è conclusa. Il progetto resta E2: non è evidenza di autorizzazione né di affidamenti esecutivi."
+        },
+        {
+          "type": "bess-separation",
+          "grade": "A1",
+          "title": "200 MW BESS separati dai 1.110 MW wind",
+          "note": "Il sistema di accumulo è mantenuto come capacità distinta e non entra nei MW eolici né chiude scope della supply chain offshore."
+        }
+      ],
+      "sources": [
+        {
+          "id": "owf1-mase-scoping",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "OWF 1 — Definizione contenuti SIA",
+          "date": "2026-06-19",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12010"
+        }
+      ]
+    },
+    "off-tramontana": {
+      "relations": [
+        {
+          "company": "ACCIONA Energía",
+          "role": "Owner / developer",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Il sito ufficiale del progetto indica ACCIONA Energía come proprietaria e sviluppatrice. Nessun ruolo esecutivo è inferito.",
+          "source_id": "tramontana-acciona"
+        }
+      ],
+      "signals": [
+        {
+          "type": "grid-route",
+          "grade": "A2",
+          "title": "Export cable verso stazione a terra e futura Nuova SE Tavernola",
+          "note": "Il developer descrive cavi sottomarini, stazione di trasformazione onshore e collegamento RTN presso la futura Nuova SE Tavernola a Foggia: target per export cable/landfall e onshore grid hunt."
+        },
+        {
+          "type": "historical-configuration",
+          "grade": "A2",
+          "title": "Il sito corporate conserva una configurazione precedente",
+          "note": "La pagina ACCIONA riporta 1.005 MW / 67 WTG da 15 MW; il canonico resta 1.008 MW / 56 WTG da 18 MW sulla configurazione MASE più recente."
+        },
+        {
+          "type": "developer-schedule",
+          "grade": "A2",
+          "title": "Avvio lavori indicato dal developer per il 2027",
+          "note": "È una previsione corporate, non prova di procurement, FID o construction start e quindi non modifica automaticamente lo stage."
+        }
+      ],
+      "sources": [
+        {
+          "id": "tramontana-acciona",
+          "publisher": "ACCIONA Energía",
+          "grade": "A2",
+          "title": "Parco eolico flottante Tramontana",
+          "date": null,
+          "url": "https://www.offshoretramontana.it/"
+        },
+        {
+          "id": "tramontana-mase-current",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "Tramontana — configurazione corrente 1.008 MW / 56 WTG",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11301"
+        }
+      ]
+    },
+    "off-libeccio": {
+      "relations": [
+        {
+          "company": "ACCIONA Energía",
+          "role": "Owner / developer",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Il sito ufficiale del progetto indica ACCIONA Energía come proprietaria. Nessun ruolo esecutivo è inferito.",
+          "source_id": "libeccio-acciona"
+        }
+      ],
+      "signals": [
+        {
+          "type": "developer-schedule",
+          "grade": "A2",
+          "title": "Avvio lavori indicato dal developer per il 2027",
+          "note": "Previsione corporate utile al radar commerciale, ma non costituisce award, FID né avvio lavori."
+        },
+        {
+          "type": "floating-technology",
+          "grade": "A2",
+          "title": "Configurazione floating confermata dal developer",
+          "note": "930 MW / 62 WTG restano coerenti con il canonico; i pacchetti substructure/mooring, WTG installation, IAC, OSS, export cable, grid e marine logistics restano separati."
+        }
+      ],
+      "sources": [
+        {
+          "id": "libeccio-acciona",
+          "publisher": "ACCIONA Energía",
+          "grade": "A2",
+          "title": "Parco eolico flottante Libeccio",
+          "date": null,
+          "url": "https://www.offshorelibeccio.it/"
+        },
+        {
+          "id": "libeccio-mase-current",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "Libeccio — procedura VIA corrente",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11205"
+        }
+      ]
+    },
+    "off-poseidon-sardinia-nw": {
+      "relations": [
+        {
+          "company": "Divento",
+          "role": "Development consortium",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Il progetto è incluso nel portafoglio floating offshore Divento. La relazione è di sviluppo, non di esecuzione.",
+          "source_id": "divento-about"
+        },
+        {
+          "company": "Copenhagen Offshore Partners",
+          "role": "Portfolio project management / development coordination",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Divento identifica COP come principal project management vehicle del portafoglio. Non è automaticamente un contractor di costruzione sul singolo progetto.",
+          "source_id": "divento-about"
+        },
+        {
+          "company": "iLStudio – Studio Severini",
+          "role": "Environmental engineering / project development support",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Divento attribuisce servizi specialistici di environmental engineering e sviluppo ai propri progetti. Ruolo non esecutivo.",
+          "source_id": "divento-about"
+        },
+        {
+          "company": "NiceTechnology",
+          "role": "Specialist engineering / co-founder",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Divento indica NiceTechnology come co-fondatore e fornitore di specialist engineering services ai progetti. Nessuno scope di costruzione è inferito.",
+          "source_id": "divento-about"
+        },
+        {
+          "company": "7Seas Windpower",
+          "role": "Project co-founder / development support",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Divento indica 7Seas Windpower come co-fondatore dei progetti. Nessun execution scope è inferito.",
+          "source_id": "divento-about"
+        }
+      ],
+      "signals": [
+        {
+          "type": "grid-route",
+          "grade": "A2",
+          "title": "Landfall e connessione RTN previsti nell'area di Olbia",
+          "note": "La pagina progetto Divento individua Olbia come area di approdo/connessione, utile per export cable + landfall e onshore grid/SSE hunt."
+        },
+        {
+          "type": "developer-schedule",
+          "grade": "A2",
+          "title": "Costruzione indicata per il 2032",
+          "note": "È una pianificazione del developer e non prova di affidamento. La pagina portafoglio Divento indica inoltre che i formal contractor agreements sono ancora planned."
+        },
+        {
+          "type": "anti-inference-guard",
+          "grade": "A2",
+          "title": "Saipem STAR1 non attribuita a Poseidon",
+          "note": "L'accordo Saipem-Divento del 05/03/2025 riguarda esplicitamente 7Seas Med e Ichnusa Wind Power, non Poseidon. Nessuna estensione per deduzione."
+        }
+      ],
+      "sources": [
+        {
+          "id": "poseidon-divento",
+          "publisher": "Divento",
+          "grade": "A2",
+          "title": "Poseidon Wind Energy — project page",
+          "date": null,
+          "url": "https://diventoenergia.it/en/projects/poseidon-wind-energy/"
+        },
+        {
+          "id": "divento-about",
+          "publisher": "Divento",
+          "grade": "A2",
+          "title": "Divento — project partners and roles",
+          "date": null,
+          "url": "https://diventoenergia.it/en/about/"
+        },
+        {
+          "id": "divento-portfolio-stage",
+          "publisher": "Divento",
+          "grade": "A2",
+          "title": "Divento projects — formal contractor agreements planned",
+          "date": null,
+          "url": "https://diventoenergia.it/en/projects/"
+        },
+        {
+          "id": "saipem-divento-limited",
+          "publisher": "Eni Plenitude",
+          "grade": "A2",
+          "title": "Saipem e Divento — STAR1 su 7Seas Med e Ichnusa",
+          "date": "2025-03-05",
+          "url": "https://corporate.eniplenitude.com/en/media/press-release/renewable-energies/05-03-2025-Saipem-and-Divento-sign-collaboration-agreement-for-floating-wind-in-Italy"
+        }
+      ]
+    },
+    "off-ulisse-1": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "offshore-scoping",
+          "grade": "A1",
+          "title": "Scoping concluso con parere espresso il 10/12/2025",
+          "note": "Milestone autorizzativa utile per maturità del lead; non prova autorizzazione complessiva né supply-chain award."
+        },
+        {
+          "type": "contractor-gap",
+          "grade": "A1",
+          "title": "Otto scope offshore mantenuti aperti",
+          "note": "Nella documentazione canonica non è attribuito alcun contractor esecutivo; substructure/mooring, installation, IAC, OSS, export/landfall, grid, marine logistics e civili onshore restano distinti."
+        }
+      ],
+      "sources": [
+        {
+          "id": "ulisse-mase-scoping",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "Ulisse 1 — Scoping PNIEC-PNRR",
+          "date": "2025-12-10",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11000"
+        }
+      ]
+    },
+    "off-nurax-ne-sardinia": {
+      "relations": [
+        {
+          "company": "Divento",
+          "role": "Development consortium",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Il progetto è incluso nel portafoglio floating offshore Divento. La relazione è di sviluppo, non di esecuzione.",
+          "source_id": "divento-about"
+        },
+        {
+          "company": "Copenhagen Offshore Partners",
+          "role": "Portfolio project management / development coordination",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Divento identifica COP come principal project management vehicle del portafoglio. Non è automaticamente un contractor di costruzione sul singolo progetto.",
+          "source_id": "divento-about"
+        },
+        {
+          "company": "iLStudio – Studio Severini",
+          "role": "Environmental engineering / project development support",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Divento attribuisce servizi specialistici di environmental engineering e sviluppo ai propri progetti. Ruolo non esecutivo.",
+          "source_id": "divento-about"
+        },
+        {
+          "company": "NiceTechnology",
+          "role": "Specialist engineering / co-founder",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Divento indica NiceTechnology come co-fondatore e fornitore di specialist engineering services ai progetti. Nessuno scope di costruzione è inferito.",
+          "source_id": "divento-about"
+        },
+        {
+          "company": "7Seas Windpower",
+          "role": "Project co-founder / development support",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Divento indica 7Seas Windpower come co-fondatore dei progetti. Nessun execution scope è inferito.",
+          "source_id": "divento-about"
+        }
+      ],
+      "signals": [
+        {
+          "type": "grid-route",
+          "grade": "A2",
+          "title": "Landfall e connessione RTN previsti nell'area di Olbia",
+          "note": "La pagina progetto Divento individua Olbia come area di connessione, utile per export cable + landfall e onshore grid/SSE hunt."
+        },
+        {
+          "type": "developer-schedule",
+          "grade": "A2",
+          "title": "Costruzione indicata per il 2030",
+          "note": "Pianificazione del developer, non prova di procurement o award. Divento indica i formal contractor agreements come planned."
+        },
+        {
+          "type": "anti-inference-guard",
+          "grade": "A2",
+          "title": "Saipem STAR1 non attribuita a NURAX",
+          "note": "L'accordo Saipem-Divento pubblico riguarda 7Seas Med e Ichnusa Wind Power; NURAX non viene incluso e resta senza attribuzione Saipem."
+        }
+      ],
+      "sources": [
+        {
+          "id": "nurax-divento",
+          "publisher": "Divento",
+          "grade": "A2",
+          "title": "Nurax Wind Power — project page",
+          "date": null,
+          "url": "https://diventoenergia.it/en/projects/nurax-wind-power/"
+        },
+        {
+          "id": "divento-about",
+          "publisher": "Divento",
+          "grade": "A2",
+          "title": "Divento — project partners and roles",
+          "date": null,
+          "url": "https://diventoenergia.it/en/about/"
+        },
+        {
+          "id": "divento-portfolio-stage",
+          "publisher": "Divento",
+          "grade": "A2",
+          "title": "Divento projects — formal contractor agreements planned",
+          "date": null,
+          "url": "https://diventoenergia.it/en/projects/"
+        },
+        {
+          "id": "saipem-divento-limited",
+          "publisher": "Eni Plenitude",
+          "grade": "A2",
+          "title": "Saipem e Divento — STAR1 su 7Seas Med e Ichnusa",
+          "date": "2025-03-05",
+          "url": "https://corporate.eniplenitude.com/en/media/press-release/renewable-energies/05-03-2025-Saipem-and-Divento-sign-collaboration-agreement-for-floating-wind-in-Italy"
+        }
+      ]
+    },
+    "on-bora-troia": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "bess-separation",
+          "grade": "A1",
+          "title": "64,8 MW wind + 10 MW BESS in VIA",
+          "note": "Il BESS resta separato dalla potenza eolica. Nessun ruolo esecutivo viene inferito dalla sola documentazione di permitting."
+        }
+      ],
+      "sources": [
+        {
+          "id": "bora-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "64,8 MW wind + 10 MW BESS in VIA",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10994"
+        }
+      ]
+    },
+    "on-lujentu": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "access-logistics",
+          "grade": "A1",
+          "title": "Profili piazzole e accessi disponibili nel progetto definitivo",
+          "note": "La documentazione MASE include profili longitudinali di piazzole/accessi, utile per il futuro hunt su viabilità e heavy transport; nessun esecutore è nominato."
+        },
+        {
+          "type": "identity-geography-correction",
+          "grade": "A1",
+          "title": "Comuni corretti: Nardò, Copertino e Galatina",
+          "note": "BURP e documentazione MASE per ID VIP 13419 collocano Lujentu nei comuni di Nardò, Copertino e Galatina. Il precedente abbinamento Campi Salentina/Salice Salentino era errato."
+        }
+      ],
+      "sources": [
+        {
+          "id": "lujentu-access",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "Lujentu — Profilo longitudinale Piazzola e Accesso L05",
+          "date": "2024-11-04",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/MetadatoDocumento/1209584"
+        },
+        {
+          "id": "lujentu-burp",
+          "publisher": "Regione Puglia / BURP",
+          "grade": "A1",
+          "title": "ID VIP 13419 — LUJENTU",
+          "date": "2025-06-11",
+          "url": "https://burp.regione.puglia.it/documents/20135/2677219/DET_259_11_6_2025.pdf/e491c5e2-ffe3-5001-3720-1b538883ebc0?t=1755765373087&version=1.0"
+        }
+      ]
+    },
+    "on-green-power-wind-1": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "permitting-update",
+          "grade": "A1",
+          "title": "III ripubblicazione 2026",
+          "note": "Il progetto resta in istruttoria; la nuova pubblicazione mantiene attivo il lead ma non documenta un award esecutivo."
+        }
+      ],
+      "sources": [
+        {
+          "id": "gpw1-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "III ripubblicazione 2026",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11381"
+        }
+      ]
+    },
+    "on-isili-wind": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "permitting-update",
+          "grade": "A1",
+          "title": "Ripubblicazione agosto 2026",
+          "note": "Attività autorizzativa recente; nessun contractor esecutivo viene attribuito senza evidenza A1/A2."
+        }
+      ],
+      "sources": [
+        {
+          "id": "isili-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "Ripubblicazione agosto 2026",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11028"
+        }
+      ]
+    },
+    "on-costa-delle-ripe": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "permitting-update",
+          "grade": "A1",
+          "title": "Connessione RTN estesa su più comuni",
+          "note": "Il progetto interessa Forenza e opere RTN anche verso Palazzo San Gervasio, Maschito, Venosa e Montemilone: segnale per electrical/SSE e civili di connessione, non award."
+        }
+      ],
+      "sources": [
+        {
+          "id": "costa-ripe-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "Connessione RTN estesa su più comuni",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10646"
+        }
+      ]
+    },
+    "on-energia-della-comunanza": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "bess-separation",
+          "grade": "A1",
+          "title": "90 MW wind + 25 MW BESS",
+          "note": "BESS mantenuto separato dai MW wind; l'iter VIA è evidenza di progetto attivo, non di contractor assignment."
+        }
+      ],
+      "sources": [
+        {
+          "id": "comunanza-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "90 MW wind + 25 MW BESS",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11626"
+        }
+      ]
+    },
+    "on-sv9-monte-camulera": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "permitting-update",
+          "grade": "A1",
+          "title": "Procedura VIA in istruttoria",
+          "note": "Lead corrente ma senza evidenza pubblica A1/A2 sufficiente per assegnare contractor esecutivi."
+        }
+      ],
+      "sources": [
+        {
+          "id": "sv9-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "Procedura VIA in istruttoria",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11871"
+        }
+      ]
+    },
+    "on-piano-madama-giulia-aren": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "permitting-update",
+          "grade": "A1",
+          "title": "II ripubblicazione agosto 2026",
+          "note": "Attività autorizzativa recente; resta aperto il contractor hunt per civili, elettrico, SSE, erection, logistica e fondazioni."
+        }
+      ],
+      "sources": [
+        {
+          "id": "piano-madama-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "II ripubblicazione agosto 2026",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9628"
+        }
+      ]
+    },
+    "on-altamura": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "permitting-update",
+          "grade": "A1",
+          "title": "Alta Wind confermata come proponente",
+          "note": "Identità developer consolidata; nessun contractor esecutivo viene dedotto dalla sola appartenenza societaria o dalla documentazione di progetto."
+        }
+      ],
+      "sources": [
+        {
+          "id": "altamura-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "Alta Wind confermata come proponente",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11015"
+        }
+      ]
+    },
+    "on-fiumicino-wind-bess": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "bess-separation",
+          "grade": "A1",
+          "title": "46,2 MW wind + 18 MW BESS",
+          "note": "Il sistema di accumulo resta separato dal wind. Gli scope esecutivi onshore restano aperti in assenza di award A1/A2."
+        }
+      ],
+      "sources": [
+        {
+          "id": "fiumicino-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "46,2 MW wind + 18 MW BESS",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11111"
+        }
+      ]
+    },
+    "on-lecce-betanrg": {
+      "relations": [
+        {
+          "company": "Leonardo Engineering S.r.l.",
+          "role": "Project engineering / design documentation",
+          "status": "confirmed",
+          "confidence": "A1",
+          "scope": "MASE descrive elaborati del progetto come documenti/redazioni Leonardo Engineering. Ruolo di engineering, non construction execution.",
+          "source_id": "lecce-leonardo-wtg"
+        }
+      ],
+      "signals": [
+        {
+          "type": "oem-design-reference",
+          "grade": "A1",
+          "title": "Siemens Gamesa SG 7.0-170 presente nella scheda tecnica",
+          "note": "Il modello compare nella documentazione tecnica di progetto. Non è prova di ordine, preferred supplier o OEM award e non viene registrato come contractor."
+        },
+        {
+          "type": "historical-configuration",
+          "grade": "A1",
+          "title": "Elaborati Leonardo conservano una configurazione precedente",
+          "note": "Una planimetria riporta 11 WTG / 72,6 MW; il canonico resta 10 WTG / 70 MW dopo le integrazioni del 24/06/2026."
+        }
+      ],
+      "sources": [
+        {
+          "id": "lecce-leonardo-wtg",
+          "publisher": "MASE / BETANRG",
+          "grade": "A1",
+          "title": "Lecce — Scheda tecnica aerogeneratore",
+          "date": "2026-06-22",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/MetadatoDocumento/1409205"
+        },
+        {
+          "id": "lecce-leonardo-plan",
+          "publisher": "MASE / BETANRG",
+          "grade": "A1",
+          "title": "Lecce — Planimetria impianto redatta da Leonardo Engineering",
+          "date": "2025-08-12",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/MetadatoDocumento/1346790"
+        }
+      ]
+    },
+    "on-la-salentina": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "grid-design",
+          "grade": "A1",
+          "title": "43,4 MW wind + 9 MW BESS; connessione RTN interprovinciale",
+          "note": "Le opere di connessione interessano comuni in Lecce e Brindisi. Segnale per electrical/SSE e civili di connessione; nessun contractor è attribuito."
+        }
+      ],
+      "sources": [
+        {
+          "id": "salentina-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "43,4 MW wind + 9 MW BESS; connessione RTN interprovinciale",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11797"
+        }
+      ]
+    },
+    "on-fresagrandinaria-dogliola-lentella": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "permitting-update",
+          "grade": "A1",
+          "title": "PUA in istruttoria con ripubblicazione 2026",
+          "note": "Il progetto resta un lead corrente multi-comunale Abruzzo/Molise; gli execution scope restano aperti senza award A1/A2."
+        }
+      ],
+      "sources": [
+        {
+          "id": "fresagrandinaria-mase",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "PUA in istruttoria con ripubblicazione 2026",
+          "date": null,
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10959"
+        }
+      ]
+    },
+    "on-campovaglio": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "access-logistics",
+          "grade": "A1",
+          "title": "Adeguamento viabilità WTG1 documentato",
+          "note": "Il package integrativo contiene planimetria e profilo di progetto per l'adeguamento viario: segnale concreto per road works e heavy transport hunt, senza esecutore nominato."
+        },
+        {
+          "type": "heavy-electrical-logistics",
+          "grade": "A1",
+          "title": "Due diligence trasporto macchine elettriche per SE 150/36 kV Aglientu",
+          "note": "Elaborato dedicato al trasporto delle macchine elettriche della sottostazione: segnale per logistics/heavy transport e SSE, non contractor attribution."
+        },
+        {
+          "type": "bess-separation",
+          "grade": "A1",
+          "title": "77 MW wind + 20 MW BESS",
+          "note": "La capacità storage resta separata dai MW eolici."
+        }
+      ],
+      "sources": [
+        {
+          "id": "campovaglio-road",
+          "publisher": "MASE / Acciona Energia Global Italia",
+          "grade": "A1",
+          "title": "Campovaglio — Adeguamento viabilità WTG1",
+          "date": "2025-12-01",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/MetadatoDocumento/1376490"
+        },
+        {
+          "id": "campovaglio-transformer-logistics",
+          "publisher": "MASE / Acciona Energia Global Italia",
+          "grade": "A1",
+          "title": "SE Aglientu — Due diligence trasporto macchine elettriche",
+          "date": "2025-12-01",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/MetadatoDocumento/1376610"
+        }
+      ]
+    },
+    "on-energia-molise": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "bess-separation",
+          "grade": "A1",
+          "title": "72 MW wind + 14 MW BESS",
+          "note": "Il BESS resta distinto dalla potenza eolica e non entra nei KPI wind."
+        },
+        {
+          "type": "permitting-update",
+          "grade": "A1",
+          "title": "Integrazioni e avviso pubblico gennaio 2026",
+          "note": "Fred. Olsen Renewables Italy risulta autore degli elaborati integrativi; nessun contractor esecutivo è attribuito da questa evidenza."
+        }
+      ],
+      "sources": [
+        {
+          "id": "energia-molise-mase-2026",
+          "publisher": "MASE / Fred. Olsen Renewables Italy",
+          "grade": "A1",
+          "title": "Energia Molise — Avviso al pubblico del 26/01/2026",
+          "date": "2026-01-26",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/MetadatoDocumento/1347846"
+        }
+      ]
+    }
+  }
+}

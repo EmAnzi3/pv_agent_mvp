@@ -1,0 +1,123 @@
+{
+  "version": "0.6.0-commercial-enrichment-c",
+  "as_of": "2026-09-06",
+  "note": "Additive project-specific intelligence focused on procurement scale, mobilisation timing and configuration history. Historical same-site contractors and B mobilisation leads are retained as leads only and never close current execution scopes.",
+  "projects": {
+    "nulvi-ploaghe": {
+      "signals": [
+        {
+          "type": "procurement-scale",
+          "grade": "A2",
+          "title": "ERG quantifies the repowering at €170m and 27 new WTG",
+          "note": "ERG directly states that Nulvi-Ploaghe will replace 51 existing turbines with 27 new-generation turbines, with an investment of about €170 million and expected production of about 300 GWh/year. This materially strengthens the procurement-scale and route-to-market case, but does not identify any OEM, BoP, foundation, grid, erection or logistics award."
+        },
+        {
+          "type": "configuration-current",
+          "grade": "A2",
+          "title": "Current developer configuration: 27 × 4.5 MW",
+          "note": "ERG's current project communication describes 27 new 4.5 MW turbines, consistent with the authorised 121.5 MW project. The signal is retained as current configuration intelligence without inferring the turbine supplier."
+        }
+      ],
+      "sources": [
+        {
+          "id": "nulvi-erg-scale-a2-2026",
+          "publisher": "ERG",
+          "grade": "A2",
+          "title": "Nulvi-Ploaghe repowering — 27 turbines, €170m investment, about 300 GWh/year",
+          "date": "2026-04",
+          "url": "https://it.linkedin.com/posts/erg-spa_inspiringchangetopowerthefuture-greenenergymakers-activity-7445445138597777408-3A0h"
+        }
+      ]
+    },
+    "greci-montaguto": {
+      "signals": [
+        {
+          "type": "construction-window",
+          "grade": "A2",
+          "title": "ERG kick-off fixes construction start in March 2026 and completion in summer 2027",
+          "note": "ERG's direct project kick-off communication states that construction starts in March 2026, will employ about 40 people on average and is expected to conclude with commissioning of the new WTG in summer 2027. This is strong timing and mobilisation intelligence, not a contractor award."
+        },
+        {
+          "type": "workforce-signal",
+          "grade": "A2",
+          "title": "Average construction workforce around 40 people",
+          "note": "The developer's current kick-off communication gives an average construction workforce of about 40 people, useful for judging site intensity and service demand while leaving all unnamed execution packages open."
+        }
+      ],
+      "sources": [
+        {
+          "id": "greci-erg-kickoff-a2-2026",
+          "publisher": "ERG",
+          "grade": "A2",
+          "title": "Kick Off del repowering Greci-Montaguto",
+          "date": "2026-02-26",
+          "url": "https://www.erg.eu/it/-/kick-off-meeting-for-the-greci-montaguto-repowering-project"
+        }
+      ]
+    },
+    "alia-sclafani": {
+      "relations": [
+        {
+          "company": "SOCEP S.r.l.",
+          "role": "Historical civil / substation works",
+          "status": "historical",
+          "confidence": "A2",
+          "scope": "SOCEP directly lists historical works at the existing Alia-Sclafani site for Asja, including turbine hardstands with inert materials, slope/naturalistic works at the substation and structural consolidation of 850 kW turbines. These references belong to the previous plant and must not be treated as an award on the current 55 MW repowering.",
+          "source_id": "alia-socep-historical-a2"
+        }
+      ],
+      "signals": [
+        {
+          "type": "configuration-current",
+          "grade": "A1",
+          "title": "Municipal PAS confirms current 9-WTG / 55 MW repowering",
+          "note": "The Comune di Alia records the PAS for complete rebuilding of the Alia-Sclafani plant: removal of the existing 30 turbines and replacement with 9 turbines for 55 MW, with grid works in Alia, Sclafani Bagni and Valledolmo. This current public act is retained as a configuration guard against older procedure titles."
+        },
+        {
+          "type": "same-site-historical-supplier",
+          "grade": "A2",
+          "title": "SOCEP is a verified same-site historical civil supplier, not a current repowering award",
+          "note": "SOCEP's own portfolio provides useful local supply-chain intelligence for Alia-Sclafani, but the references pre-date the current 9-WTG repowering and therefore remain historical only."
+        }
+      ],
+      "sources": [
+        {
+          "id": "alia-comune-pas-a1-2025",
+          "publisher": "Comune di Alia",
+          "grade": "A1",
+          "title": "Delibera GM n. 128/2025 — PAS repowering Alia-Sclafani, 9 WTG / 55 MW",
+          "date": "2025-07-30",
+          "url": "https://www.comune.alia.pa.it/Amministrazione/Documenti-e-dati/Atti-normativi/Delibere-di-Giunta-Municipale-Anno-2025"
+        },
+        {
+          "id": "alia-socep-historical-a2",
+          "publisher": "SOCEP S.r.l.",
+          "grade": "A2",
+          "title": "I nostri lavori — references at Alia-Sclafani for Asja",
+          "date": null,
+          "url": "https://www.socep.it/?page_id=66"
+        }
+      ]
+    },
+    "serra-giannina": {
+      "signals": [
+        {
+          "type": "contractor-mobilisation-detail",
+          "grade": "B",
+          "title": "D'Agostino recruiting spans site management, technical office, HSE, environment and administration",
+          "note": "A project-specific recruitment mirror attributed to D'Agostino names Serra Giannina and seeks Site Manager, site assistant, environmental, safety/quality, administration and technical-office staff, including coordination of crews and subcontractors. This materially strengthens the mobilisation lead but remains B because no direct RWE/D'Agostino award statement has been found. No Civil BoP or other execution scope is closed."
+        }
+      ],
+      "sources": [
+        {
+          "id": "serra-giannina-dagostino-hiring-detail-b",
+          "publisher": "D'Agostino Costruzioni Generali — recruitment mirror",
+          "grade": "B",
+          "title": "Capo cantiere / Assistente di Cantiere — Parco Eolico Serra Giannina",
+          "date": "2026-03-13",
+          "url": "https://it.jobrapido.com/jobpreview/6153663040291078144"
+        }
+      ]
+    }
+  }
+}

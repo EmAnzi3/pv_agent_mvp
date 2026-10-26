@@ -1,0 +1,32 @@
+{
+  "version": "0.4.2-refresh-log",
+  "runs": [
+    {
+      "run_id": "2026-09-05-baseline",
+      "as_of": "2026-09-05",
+      "source_state": "MASE current project pages + indexed discovery; some MASE search routes report temporary security-related disablement, therefore this is a refreshable current census tranche rather than a claim of exhaustive historical coverage.",
+      "candidate_count": 47,
+      "current_candidate_count": 38,
+      "stale_candidate_count": 4,
+      "rejected_candidate_count": 5,
+      "current_onshore_count": 28,
+      "current_offshore_count": 10,
+      "current_wind_mw": 11538.67,
+      "current_bess_mw": 661,
+      "stale_wind_mw": 3195,
+      "rejected_wind_mw": 1195.4,
+      "canonical_promotions": 0,
+      "identity_guards": [
+        "NURAX: più procedure MASE, una sola opera da 462 MW",
+        "Atis: scoping e VIA corrente ricondotti alla stessa opera",
+        "Poseidon: scoping/PUA e oggetto 2026 ricondotti alla stessa opera da 1008 MW",
+        "Kailia: configurazione corrente 900 MW distinta dalla configurazione storica 1170/1176 MW senza creare un secondo progetto",
+        "Le Chiancate: procedura 14717 archiviata e nuova istanza 14943 ricondotte alla stessa opera da 86,4 MW",
+        "Nulvi-Sedini WPD: distinto dal canonico ERG Nulvi-Ploaghe e dal progetto FRI-EL Nulvi-Tergu",
+        "SV9 Monte Camulera: MASE mostra un'etichetta tipologica offshore incoerente con il progetto fisicamente onshore; classificazione conservativa onshore con audit",
+        "Chieuti, Puglia 1, Brindisi Evolve, Mazara Wind e Naturgy Thiesi: esiti negativi/archiviazioni conservati come guardie, non opportunità attive"
+      ],
+      "notes": "Nessun candidato discovery modifica i KPI canonici v0.3 finché non viene esplicitamente promosso dopo identity reconciliation e verifica dello stato."
+    }
+  ]
+}

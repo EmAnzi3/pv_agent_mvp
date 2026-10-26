@@ -1,0 +1,211 @@
+{
+  "version": "0.6.0-commercial-enrichment",
+  "as_of": "2026-09-06",
+  "note": "Project-specific commercial intelligence found during v0.6 execution hunt. Non-execution support, supervision, advisory, development and staffing roles never close execution scopes; explicit A1/A2 execution evidence may do so.",
+  "projects": {
+    "andretta-bisaccia": {
+      "relations": [
+        {
+          "company": "Progeco Group / Progeco SE",
+          "role": "Project management / construction supervision support",
+          "status": "signal",
+          "confidence": "A2",
+          "scope": "Current company recruitment is explicitly for Deputy/Site Manager support on the 88.5 MW Andretta-Bisaccia repowering, supervising civil/infrastructure works. This is project-support intelligence, not an execution contractor award.",
+          "source_id": "andretta-progeco-site-manager-202609"
+        }
+      ],
+      "signals": [
+        {
+          "type": "project-support-recruitment",
+          "grade": "A2",
+          "title": "Andretta-Bisaccia site-management recruitment signal",
+          "note": "Progeco Group is recruiting a Deputy/Site Manager for specialist support on the Andretta-Bisaccia wind repowering. The posting describes 18 WTG / 88.5 MW, a new SSE and MT/AT interconnection cables, with supervision of foundations, roads and civil works."
+        },
+        {
+          "type": "commercial-window",
+          "grade": "A2",
+          "title": "24-month site-support requirement",
+          "note": "The current recruitment signal indicates a multi-year site-support window around the project. It strengthens mobilisation timing but does not identify the executing civil, electrical, foundation or logistics contractors."
+        }
+      ],
+      "sources": [
+        {
+          "id": "andretta-progeco-site-manager-202609",
+          "publisher": "Progeco Group",
+          "grade": "A2",
+          "title": "Deputy - Site Manager — Renewable Energy / Wind Repowering — Andretta e Bisaccia",
+          "date": "2026-09-04",
+          "url": "https://it.linkedin.com/jobs/view/deputy-site-manager-at-progeco-group-4461062499"
+        }
+      ]
+    },
+    "carlentini": {
+      "relations": [
+        {
+          "company": "Mammana Michelangelo S.p.A.",
+          "role": "Foundation contractor",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Execution of WTG foundation concrete works at the current Carlentini repowering. Hydro Engineering, acting as Direzione Lavori and foundation designer/quality-control specialist, explicitly identifies Gruppo Mammana as the company carrying out the first foundation pour; a Mammana team member subsequently reports completion of the second plinth. This confirms the foundation package only and does not attribute the full Civil BoP.",
+          "source_id": "car-hydro-mammana-foundation-a2"
+        },
+        {
+          "company": "Hydro Engineering",
+          "role": "Direzione Lavori / foundation engineering & quality control",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Current project-specific Direzione Lavori plus foundation design and technical quality-control support. Non-execution role.",
+          "source_id": "car-hydro-dl-a2"
+        }
+      ],
+      "signals": [
+        {
+          "type": "foundation-execution",
+          "grade": "A2",
+          "title": "Carlentini foundation contractor identified",
+          "note": "Current direct project-participant evidence attributes the R-CA01 foundation concrete pour to Gruppo Mammana; subsequent Mammana-side evidence reports completion of the second plinth. Foundation execution can therefore be treated as A2-confirmed without extending that attribution to the full Civil BoP."
+        },
+        {
+          "type": "construction-progress",
+          "grade": "A2",
+          "title": "WTG foundations actively being poured",
+          "note": "At least the first two turbine plinth pours are publicly documented in the current repowering construction phase."
+        }
+      ],
+      "sources": [
+        {
+          "id": "car-hydro-mammana-foundation-a2",
+          "publisher": "Hydro Engineering",
+          "grade": "A2",
+          "title": "Repowering Carlentini — first WTG foundation pour R-CA01",
+          "date": "2026-08",
+          "url": "https://it.linkedin.com/company/hydro-engineering-s-s"
+        },
+        {
+          "id": "car-hydro-dl-a2",
+          "publisher": "Hydro Engineering",
+          "grade": "A2",
+          "title": "Carlentini repowering — Direzione Lavori kick-off and current foundation supervision",
+          "date": "2026-03-26",
+          "url": "https://it.linkedin.com/company/hydro-engineering-s-s"
+        }
+      ]
+    },
+    "tricarico": {
+      "relations": [
+        {
+          "company": "Vector Renewables",
+          "role": "Lender's Technical Advisor / construction monitoring",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Independent lender-side technical due diligence through financial close, wind energy-yield assessment, and continuing construction-phase monitoring/drawdown-validation support for UniCredit. Advisory/monitoring only: no EPC, BoP, foundation, grid, erection or logistics execution scope is attributed.",
+          "source_id": "tri-vector-lta-a2"
+        }
+      ],
+      "signals": [
+        {
+          "type": "financial-close",
+          "grade": "A2",
+          "title": "€46.5m green mini-perm project financing closed",
+          "note": "UniCredit states that it completed a €46.5m green mini-perm financing for Adest S.r.l. (IC Holding / Gruppo Idoka) to build and commission the 42 MW Tricarico wind farm, with operation expected by H2 2027. The project is already E6 in the radar because the Vestas WTG order is separately confirmed."
+        },
+        {
+          "type": "construction-monitoring",
+          "grade": "A2",
+          "title": "Independent technical monitoring continues through construction",
+          "note": "Vector Renewables states that its Lender's Technical Advisor mandate continues during construction through monitoring and support for financing drawdown validations. This is a useful route to future contractor/timing evidence but is not an execution award."
+        }
+      ],
+      "sources": [
+        {
+          "id": "tri-unicredit-pf-a2",
+          "publisher": "UniCredit",
+          "grade": "A2",
+          "title": "Energia, UniCredit finanzia con 46,5 milioni il nuovo parco eolico di Idoka",
+          "date": "2026-06-11",
+          "url": "https://www.unicreditgroup.eu/it/press-media/news/2026/june/energia--unicredit-finanzia-con-46-5-milioni-il-nuovo-parco-eoli.html"
+        },
+        {
+          "id": "tri-vector-lta-a2",
+          "publisher": "Vector Renewables",
+          "grade": "A2",
+          "title": "42 MW Tricarico wind farm — Lender's Technical Advisor and construction monitoring",
+          "date": "2026-06-15",
+          "url": "https://www.linkedin.com/posts/vector-renewables_vectorrenewables-renewableenergy-technicaladvisory-activity-7472199135132303360-_I4e"
+        }
+      ]
+    },
+    "greci-montaguto": {
+      "signals": [
+        {
+          "type": "wtg-configuration",
+          "grade": "A1",
+          "title": "Greci-Montaguto WTG split verified in regional authorization",
+          "note": "Regione Campania's authorization modification confirms a 10-WTG / 42 MW configuration: six Vestas V136 at 4.5 MW in Greci and four Vestas V117 at 4.2 MW in Montaguto. This resolves the model split without inferring it from the combined Vestas Carlentini/Greci order."
+        },
+        {
+          "type": "long-term-service",
+          "grade": "A2",
+          "title": "Vestas long-term AOM 5000 service agreement",
+          "note": "Vestas' direct order release confirms a long-term AOM 5000 service agreement for the combined Carlentini and Greci-Montaguto order, with turbine delivery and commissioning expected by 2026. This is OEM/service intelligence, not a BoP contractor award."
+        }
+      ],
+      "sources": [
+        {
+          "id": "greci-burc-config-a1",
+          "publisher": "Regione Campania / BURC",
+          "grade": "A1",
+          "title": "Delibera della Giunta Regionale n. 38 del 05/02/2025 — modifica tecnologica Greci-Montaguto",
+          "date": "2025-02-05",
+          "url": "https://burc.regione.campania.it/eBurcWeb/BurcPdfOutput/Burc_2025_2_10_16_44.pdf"
+        },
+        {
+          "id": "greci-vestas-order-a2",
+          "publisher": "Vestas",
+          "grade": "A2",
+          "title": "Vestas announces four new orders for a total of 289 MW",
+          "date": "2025-12-30",
+          "url": "https://www.vestas.com/en/media/company-news/2025/vestas-announces-four-new-orders-for-a-total-of-289-mw-c4287390"
+        }
+      ]
+    },
+    "nulvi-ploaghe": {
+      "relations": [
+        {
+          "company": "Hydro Engineering",
+          "role": "Repowering project development / engineering",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Hydro Engineering directly states that it developed the Nulvi-Ploaghe repowering project for the ERG project now fully authorised at 121.5 MW. This identifies a project-specific development/engineering participant only; it does not attribute Civil BoP, foundations, grid, logistics, erection or OEM execution.",
+          "source_id": "nulvi-hydro-development-a2"
+        }
+      ],
+      "signals": [
+        {
+          "type": "development-chain",
+          "grade": "A2",
+          "title": "Hydro Engineering identified in the Nulvi-Ploaghe development chain",
+          "note": "Direct Hydro Engineering evidence links the engineering company to development of the repowering design. The project remains E4 with all execution/procurement scopes open until direct award evidence appears."
+        }
+      ],
+      "sources": [
+        {
+          "id": "nulvi-hydro-development-a2",
+          "publisher": "Hydro Engineering",
+          "grade": "A2",
+          "title": "Nulvi-Ploaghe repowering — project developed by Hydro Engineering",
+          "date": "2026-04",
+          "url": "https://it.linkedin.com/posts/hydro-engineering-s-s_repowering-hydroengineering-erg-activity-7445475651026972672-0tTB"
+        },
+        {
+          "id": "nulvi-erg-authorized-a2",
+          "publisher": "ERG",
+          "grade": "A2",
+          "title": "ERG Q1 2026 — Nulvi-Ploaghe fully authorised and eligible for Route to Market",
+          "date": "2026-05",
+          "url": "https://www.erg.eu/it/-/il-consiglio-di-amministrazione-di-erg-s.p.a.-approva-i-risultati-consolidati-del-primo-trimestre-2026"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "version": "0.4.0-scope-profiles",
+  "as_of": "2026-09-05",
+  "principle": "I KPI scope contano solo scope esplicitamente applicabili al site_type e alla configurazione del progetto. Nessuno scope offshore viene inferito da quello onshore.",
+  "profiles": {
+    "onshore": {
+      "label": "Onshore",
+      "core_scopes": [
+        {"id": "civil", "label": "Civil BoP", "applicability": "required"},
+        {"id": "electrical", "label": "Electrical BoP", "applicability": "required"},
+        {"id": "sse_grid", "label": "SSE / grid connection", "applicability": "required"},
+        {"id": "foundation", "label": "Fondazioni WTG", "applicability": "required"},
+        {"id": "erection", "label": "Erection WTG", "applicability": "required"},
+        {"id": "logistics", "label": "Logistics / heavy transport", "applicability": "required"},
+        {"id": "dismantling", "label": "Dismantling", "applicability": "repowering_only"}
+      ]
+    },
+    "offshore": {
+      "label": "Offshore",
+      "core_scopes": [
+        {"id": "substructure_mooring", "label": "Fondazioni / substructure / mooring", "applicability": "required", "note": "Per fixed-bottom copre fondazioni/substructure; per floating copre floater, ancoraggi e mooring."},
+        {"id": "turbine_installation", "label": "WTG installation offshore", "applicability": "required"},
+        {"id": "inter_array_cables", "label": "Inter-array cables", "applicability": "required"},
+        {"id": "offshore_substation", "label": "Offshore substation / electrical platform", "applicability": "conditional", "condition": "project_has_offshore_substation"},
+        {"id": "export_cable_landfall", "label": "Export cable + landfall", "applicability": "required"},
+        {"id": "onshore_grid", "label": "Onshore SSE / grid connection", "applicability": "required"},
+        {"id": "marine_logistics_port", "label": "Marine logistics / port / heavy lift", "applicability": "required"},
+        {"id": "onshore_civil", "label": "Opere civili onshore di connessione", "applicability": "conditional", "condition": "project_has_onshore_connection_works"},
+        {"id": "dismantling", "label": "Dismantling / decommissioning", "applicability": "repowering_only"}
+      ]
+    }
+  },
+  "offshore_role_examples": {
+    "substructure_mooring": ["Foundation contractor", "Floating substructure contractor", "Mooring / anchors contractor"],
+    "turbine_installation": ["WTG installation contractor", "T&I contractor"],
+    "inter_array_cables": ["Inter-array cable contractor", "Cable installation contractor"],
+    "offshore_substation": ["Offshore substation EPC", "Electrical platform contractor"],
+    "export_cable_landfall": ["Export cable contractor", "Landfall / HDD contractor"],
+    "onshore_grid": ["SSE / grid contractor", "Onshore electrical BoP"],
+    "marine_logistics_port": ["Marine logistics", "Port marshalling", "Heavy lift / installation vessel"],
+    "onshore_civil": ["Onshore civil works contractor"],
+    "dismantling": ["Decommissioning contractor"]
+  }
+}

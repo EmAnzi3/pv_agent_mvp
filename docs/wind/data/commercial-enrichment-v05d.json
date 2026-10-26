@@ -1,0 +1,53 @@
+{
+  "version": "0.5.3-commercial-enrichment",
+  "as_of": "2026-09-05",
+  "note": "Incremental engineering enrichment for already-covered promoted canonicals. This tranche may extend a project already present in an earlier commercial file; merge is additive and never changes canonical execution scope by itself.",
+  "projects": {
+    "off-tramontana": {
+      "relations": [
+        {
+          "company": "OWC Ltd.",
+          "role": "Offshore project design",
+          "status": "confirmed",
+          "confidence": "A1",
+          "scope": "The official transboundary EIA dossier explicitly lists OWC Ltd. under PROJECT DESIGN for Tramontana. Engineering/design intelligence only; no construction execution scope is inferred.",
+          "source_id": "tramontana-transboundary-eia-design"
+        },
+        {
+          "company": "MPOWER S.r.l.",
+          "role": "Offshore project design",
+          "status": "confirmed",
+          "confidence": "A1",
+          "scope": "The official transboundary EIA dossier explicitly lists MPOWER S.r.l. under PROJECT DESIGN for Tramontana. Engineering/design intelligence only; no construction execution scope is inferred.",
+          "source_id": "tramontana-transboundary-eia-design"
+        },
+        {
+          "company": "WSP ITALIA S.r.l.",
+          "role": "EIA / impact assessment and investigations",
+          "status": "confirmed",
+          "confidence": "A1",
+          "scope": "The official transboundary EIA dossier explicitly lists WSP ITALIA S.r.l. under IMPACT ASSESSMENT AND INVESTIGATIONS. Environmental/technical intelligence only; no construction execution scope is inferred.",
+          "source_id": "tramontana-transboundary-eia-design"
+        }
+      ],
+      "signals": [
+        {
+          "type": "engineering-package",
+          "grade": "A1",
+          "title": "OWC + MPOWER project design; WSP impact assessment/investigations",
+          "note": "Named technical actors are now verified for Tramontana, but none is treated as WTG, foundation, cable, OSS, grid, marine-logistics or onshore-civil execution contractor."
+        }
+      ],
+      "sources": [
+        {
+          "id": "tramontana-transboundary-eia-design",
+          "publisher": "Republic of Croatia / Ministry of Environmental Protection and Green Transition — transboundary EIA dossier submitted by Parco Eolico Flottante Tramontana S.r.l.",
+          "grade": "A1",
+          "title": "Tramontana Environmental Impact Study — Volume 3: project design and impact-assessment team",
+          "date": "2025-04-02",
+          "url": "https://mzozt.gov.hr/UserDocsImages/UPRAVA-ZA-PROCJENU-UTJECAJA-NA-OKOLIS-ODRZIVO-GOSPODARENJE-OTPADOM/Puo/30_04_2025_prekograni%C4%8Dni_PUO__postupak_plutaju%C4%87a_VE_Tramontana_Italija_SUO_volume3_EN.pdf"
+        }
+      ]
+    }
+  }
+}

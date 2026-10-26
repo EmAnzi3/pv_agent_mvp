@@ -1,0 +1,57 @@
+{
+  "version": "0.6.0-discovery-triage",
+  "as_of": "2026-09-06",
+  "public_visibility": false,
+  "policy": "Discovery is an internal research queue. Promote only when identity, current activity, canonical configuration and source-backed stage are sufficiently verified. Keep real-but-incomplete candidates internal; remove only false, duplicate or no-longer-valid opportunities while preserving negative guards where useful to prevent reintroduction.",
+  "current_holds": [
+    {
+      "candidate_id": "off-med-wind-grecale",
+      "name": "Med Wind Grecale",
+      "decision": "hold_internal_real",
+      "wind_mw": 698.25,
+      "reason": "Current project is real and active. MASE confirms VIA procedure 13027 and 698.25 MW; Gazzetta Ufficiale confirms up to 45 WTGs with unit power up to 18.8 MW, but not a single exact final turbine configuration suitable for the canonical card.",
+      "next_action": "Monitor MASE/GU/developer for a fixed project layout or other A1/A2 configuration evidence.",
+      "sources": [
+        {"publisher":"MASE","grade":"A1","url":"https://va.mite.gov.it/it-IT/Oggetti/Info/11241"},
+        {"publisher":"Gazzetta Ufficiale","grade":"A1","url":"https://www.gazzettaufficiale.it/atto/parte_seconda/caricaDettaglioAtto/originario?atto.codiceRedazionale=TX26ADG15&atto.dataPubblicazioneGazzetta=2026-01-03"}
+      ]
+    },
+    {
+      "candidate_id": "off-rospo-offshore",
+      "name": "Rospo Offshore",
+      "decision": "hold_internal_real",
+      "wind_mw": 1005,
+      "bess_mw": 350,
+      "reason": "Current project is real and in MASE scoping procedure 14300. MASE confirms 1005 MW wind plus 350 MW BESS. A 67 x 15 MW configuration is reported by secondary press, but an A1/A2 project-specific source tying that exact layout to the current configuration has not yet been recovered.",
+      "next_action": "Search deposited MASE technical documents or direct developer material for exact current WTG count and model/power.",
+      "sources": [
+        {"publisher":"MASE","grade":"A1","url":"https://va.mite.gov.it/it-IT/Oggetti/Info/11869"},
+        {"publisher":"ANSA","grade":"B","url":"https://www.ansa.it/abruzzo/notizie/2025/12/01/allarme-si-progetto-eolico-off-shore-riguarda-termoli-non-vasto_8e372675-e136-40ca-aa92-09d3fdb98fe9.html"}
+      ]
+    },
+    {
+      "candidate_id": "on-sindia-macomer-43-4",
+      "name": "Sindia-Macomer 43.4 MW",
+      "decision": "hold_internal_real",
+      "wind_mw": 43.4,
+      "reason": "Current MASE project page confirms Wind Energy Sindia S.r.l., 43.4 MW, Sindia/Macomer and procedure 8539 still in technical assessment. Exact current WTG configuration has not yet been recovered from A1/A2 evidence.",
+      "next_action": "Inspect current MASE technical documents and regional authorization material for exact WTG configuration and any post-2024 procedural development.",
+      "sources": [
+        {"publisher":"MASE","grade":"A1","url":"https://va.mite.gov.it/it-IT/Oggetti/Info/9053"}
+      ]
+    },
+    {
+      "candidate_id": "on-le-chiancate",
+      "name": "Le Chiancate",
+      "decision": "hold_internal_real",
+      "wind_mw": 86.4,
+      "reason": "Project is real. The first 2026 VIA instance 14717 was archived, but a new instance 14943 was filed on 8 June 2026 and is in administrative verification. Exact current WTG configuration is not yet sufficiently recovered from A1/A2 evidence.",
+      "next_action": "Monitor the new MASE procedure and recover the full current turbine schedule before promotion.",
+      "sources": [
+        {"publisher":"MASE","grade":"A1","url":"https://va.mite.gov.it/it-IT/Oggetti/Info/12076"},
+        {"publisher":"MASE","grade":"A1","url":"https://va.mite.gov.it/it-IT/Oggetti/Info/12015"}
+      ]
+    }
+  ],
+  "negative_records_policy": "Archived, rejected and stale records are not public opportunities. Keep them only as internal guards when they prevent false rediscovery or identity collisions; otherwise they can be retired from the active research queue."
+}

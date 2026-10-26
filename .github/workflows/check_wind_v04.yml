@@ -1,0 +1,149 @@
+name: Wind Radar v0.6 checks
+
+on:
+  pull_request:
+    paths:
+      - 'docs/wind/**'
+      - 'app/wind_agents/**'
+      - 'scripts/check_wind_*.py'
+      - 'scripts/run_wind_agents.py'
+      - 'scripts/update_wind_radar_local.py'
+      - 'aggiorna_wind_radar.bat'
+      - 'scripts/wind_discovery_engine.py'
+      - '.github/workflows/check_wind_v04.yml'
+      - '.github/workflows/wind_agent_watch.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-wind-radar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Wind files only
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            docs/wind/**
+            app/__init__.py
+            app/wind_agents/**
+            scripts/check_wind_radar.py
+            scripts/check_wind_industry_press.py
+            scripts/check_wind_stages.py
+            scripts/check_wind_v04.py
+            scripts/check_wind_v05.py
+            scripts/check_wind_v05_enrichment.py
+            scripts/check_wind_v06_network.py
+            scripts/check_wind_v06_institutional.py
+            scripts/check_wind_v06_agents.py
+            scripts/check_wind_v06_mase_normalization.py
+            scripts/check_wind_v06_commercial.py
+            scripts/check_wind_v06_commercial_c.py
+            scripts/check_wind_v06_commercial_d.py
+            scripts/check_wind_v06_map.py
+            scripts/run_wind_agents.py
+            scripts/update_wind_radar_local.py
+            aggiorna_wind_radar.bat
+            scripts/wind_discovery_engine.py
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install agent-check dependencies
+        run: pip install requests beautifulsoup4 lxml pydantic openpyxl
+
+      - name: Preserve v0.5 manifest
+        run: cp docs/wind/data/projects.json /tmp/projects-v05.json
+
+      - name: Build temporary v0.3 manifest for regression checks
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('docs/wind/data/projects.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          data['chunks'] = data['chunks'][:3]
+          p.write_text(json.dumps(data, ensure_ascii=False), encoding='utf-8')
+          PY
+
+      - name: Canonical v0.3 regression
+        run: python scripts/check_wind_radar.py
+
+      - name: Industry press separation regression
+        run: python scripts/check_wind_industry_press.py
+
+      - name: Stage consistency regression
+        run: python scripts/check_wind_stages.py
+
+      - name: Discovery v0.4 regression
+        run: python scripts/check_wind_v04.py
+
+      - name: Identity and change engine dry-run
+        run: python scripts/wind_discovery_engine.py
+
+      - name: Restore v0.5 manifest
+        run: cp /tmp/projects-v05.json docs/wind/data/projects.json
+
+      - name: Canonical promotion v0.5 validation
+        run: python scripts/check_wind_v05.py
+
+      - name: Commercial enrichment v0.5 validation
+        run: python scripts/check_wind_v05_enrichment.py
+
+      - name: Company network v0.6 validation
+        run: python scripts/check_wind_v06_network.py
+
+      - name: Institutional source network v0.6 validation
+        run: python scripts/check_wind_v06_institutional.py
+
+      - name: Wind agent architecture v0.6 validation
+        run: python scripts/check_wind_v06_agents.py
+
+      - name: MASE wind normalization v0.6 validation
+        run: python scripts/check_wind_v06_mase_normalization.py
+
+      - name: Wind local launcher offline smoke
+        shell: bash
+        run: |
+          python -m py_compile scripts/update_wind_radar_local.py
+          python scripts/update_wind_radar_local.py --offline
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("docs/wind/data/local-run-status.json")
+          assert path.exists(), "local run status not generated"
+          data = json.loads(path.read_text(encoding="utf-8"))
+          assert data["mode"] == "offline", data
+          assert data["canonical"]["projects"] == 51, data["canonical"]
+          assert abs(float(data["canonical"]["wind_mw"]) - 11202.52) < 0.01, data["canonical"]
+          assert "A1/A2" in data["guard"], data["guard"]
+          print("local launcher offline smoke OK")
+          PY
+
+      - name: Project-specific commercial signals v0.6 validation
+        run: python scripts/check_wind_v06_commercial.py
+
+      - name: Deep project enrichment v0.6 validation
+        run: python scripts/check_wind_v06_commercial_c.py
+
+      - name: Additive commercial enrichment d v0.6 validation
+        run: python scripts/check_wind_v06_commercial_d.py
+
+      - name: Province map v0.6 validation
+        run: python scripts/check_wind_v06_map.py
+
+      - name: JavaScript syntax
+        run: |
+          node --check docs/wind/assets/app.js
+          node --check docs/wind/assets/local-run.js
+          node --check docs/wind/assets/province-map-v06.js
+          node --check docs/wind/assets/discovery-v04.js
+          node --check docs/wind/assets/stage-consistency.js
+          node --check docs/wind/assets/timeline-coherence.js
+          node --check docs/wind/assets/commercial-enrichment-v05.js
+          node --check docs/wind/assets/contractor-direct-fix.js
+          node --check docs/wind/assets/company-network-v06.js
+          node --check docs/wind/assets/institutional-network-v06.js

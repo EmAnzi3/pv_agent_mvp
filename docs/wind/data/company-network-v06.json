@@ -1,0 +1,426 @@
+{
+  "version": "0.6.0",
+  "as_of": "2026-09-05",
+  "scope": "Italy wind commercial network and adjacent renewable execution ecosystem",
+  "principles": [
+    "Company-level capability never closes a project execution scope by itself.",
+    "Only project-specific A1/A2 evidence can close an execution scope.",
+    "Association membership, company websites, press releases and LinkedIn are discovery/commercial intelligence unless tied explicitly to a project award.",
+    "The network registry is broader than the canonical project contractor graph: it includes target companies worth approaching or monitoring even when no canonical project link is yet proven.",
+    "Adjacent renewable players can be commercially relevant without being classified as proven utility-scale wind BoP contractors."
+  ],
+  "monitoring": {
+    "high_priority_cadence_days": 7,
+    "standard_cadence_days": 14,
+    "universe_refresh_days": 30,
+    "signals": [
+      "new project award or EPC/BoP contract",
+      "construction start or mobilization",
+      "WTG order, delivery, installation or commissioning",
+      "substation/grid contract",
+      "civil/foundation/logistics/heavy-lift award",
+      "new Italian wind project or acquisition",
+      "new supplier/partner onboarding route",
+      "new operating site, depot or hiring wave relevant to wind construction",
+      "corporate acquisition changing execution capability"
+    ]
+  },
+  "discovery_sources": [
+    {
+      "name": "ANEV member universe",
+      "url": "https://www.anev.org/soci/",
+      "use": "monthly sector-player census and discovery; membership is not project-award evidence"
+    },
+    {
+      "name": "Company press/news/investor-relations pages",
+      "use": "weekly/fortnightly award, backlog, project-start and capability signals"
+    },
+    {
+      "name": "OEM order press releases",
+      "use": "WTG supply, transport, installation, commissioning and service signals"
+    },
+    {
+      "name": "MASE / regional / municipal project documents",
+      "use": "project-specific evidence and contractor attribution when explicit"
+    },
+    {
+      "name": "Company LinkedIn posts",
+      "use": "lead source only unless direct project execution is explicitly stated and corroborated where needed"
+    }
+  ],
+  "companies": [
+    {
+      "id": "plc",
+      "name": "PLC Group / PLC System / PLC Service Wind",
+      "cluster": ["wind_full_bop", "electrical_grid", "o_and_m"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["Full BoP wind", "AT/MT substations and grid connection", "civil and electrical EPC/BoP", "wind O&M"],
+      "project_links": ["tarsia-ovest", "castelfranco-cer"],
+      "watch_urls": ["https://www.plc-spa.it/", "https://www.plc-spa.it/linee-di-business/engineering-procurement-and-construction/"],
+      "notes": "Official PLC material states Full BoP wind capability and more than 205 MW executed; high-priority rental-network target."
+    },
+    {
+      "id": "tozzi-green",
+      "name": "Tozzi Green",
+      "cluster": ["developer", "wind_epc", "civil_bop", "electrical_bop", "o_and_m"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "target",
+      "known_capabilities": ["Development > EPC > O&M", "wind civil works", "wind electrical works", "WTG transport and assembly procurement"],
+      "project_links": [],
+      "watch_urls": ["https://www.tozzigreen.com/en/press-releases/", "https://www.tozzigreen.com/en/renewable-energies/procurement/"],
+      "notes": "Vertically integrated Italian wind player; official material states BoP civil/electrical construction and wind EPC/O&M."
+    },
+    {
+      "id": "geko",
+      "name": "GEKO S.p.A.",
+      "cluster": ["main_contractor", "civil", "electro_instrumental", "energy"],
+      "commercial_priority": "A",
+      "wind_relevance": "core_adjacent",
+      "relationship_status": "proven_in_radar_non_execution",
+      "known_capabilities": ["civil works", "electro-instrumental works", "main-contractor energy projects", "wind and BESS sector presence"],
+      "project_links": ["andretta-bisaccia"],
+      "watch_urls": ["https://www.gekospa.it/it/", "https://www.gekospa.it/it/chi-siamo/"],
+      "notes": "Already appears in Andretta-Bisaccia engineering/cantierizzazione evidence; execution scope must still be proven project-specifically."
+    },
+    {
+      "id": "dagostino",
+      "name": "D’Agostino Costruzioni Generali",
+      "cluster": ["civil_bop", "electromechanical"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["civil and infrastructural works", "electromechanical works on wind project"],
+      "project_links": ["serra-palino"],
+      "watch_urls": [],
+      "notes": "Direct contractor evidence already present on Serra Palino; monitor repeat awards and RWE/other developer links."
+    },
+    {
+      "id": "idoka",
+      "name": "Idoka Costruzioni",
+      "cluster": ["wind_construction", "civil", "rti"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["wind construction", "RTI participation", "site handover to turbine installer"],
+      "project_links": ["venusia", "tarsia-ovest"],
+      "watch_urls": [],
+      "notes": "Strong commercial target because it appears on multiple active wind projects."
+    },
+    {
+      "id": "mammana-michelangelo",
+      "name": "Mammana Michelangelo S.p.A.",
+      "cluster": ["construction", "rti"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["wind-project RTI participation"],
+      "project_links": ["tarsia-ovest"],
+      "watch_urls": ["https://www.anev.org/soci/"],
+      "notes": "ANEV member and project-linked RTI participant; individual scope must not be inferred from RTI membership."
+    },
+    {
+      "id": "delta-costruzioni",
+      "name": "Delta Costruzioni / Delta S.r.l.",
+      "cluster": ["construction", "rti"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["wind-project RTI participation"],
+      "project_links": ["tarsia-ovest"],
+      "watch_urls": ["https://www.anev.org/soci/"],
+      "notes": "Project-linked RTI member; preserve scope separation until direct evidence appears."
+    },
+    {
+      "id": "espe",
+      "name": "ESPE S.p.A.",
+      "cluster": ["renewables_epc", "system_integrator", "bess", "mini_wind", "electrical"],
+      "commercial_priority": "A",
+      "wind_relevance": "adjacent_high_value",
+      "relationship_status": "target",
+      "known_capabilities": ["renewable EPC", "electrical/civil/detailed engineering", "system integration", "BESS", "mini-wind manufacturing", "supplier onboarding"],
+      "project_links": [],
+      "watch_urls": ["https://www.espe.it/it/investor-relations/", "https://www.espe.it/it/fornitori/", "https://www.espe.it/it/"],
+      "public_contact": "espe@espe.it",
+      "notes": "Important commercial-network target. Current official evidence supports integrated renewables EPC/system integration and mini-wind, not a proven utility-scale wind BoP track record. ESPE explicitly invites qualified suppliers/partners, including logistics and transport providers."
+    },
+    {
+      "id": "fagioli",
+      "name": "Fagioli S.p.A.",
+      "cluster": ["heavy_transport", "heavy_lift", "project_logistics", "offshore_logistics"],
+      "commercial_priority": "A",
+      "wind_relevance": "core_supply_chain",
+      "relationship_status": "target",
+      "known_capabilities": ["heavy transport", "heavy lifting", "renewables logistics", "offshore wind jacket handling"],
+      "project_links": [],
+      "watch_urls": ["https://www.fagioli.com/en/index.php"],
+      "notes": "High-value logistics/heavy-lift network node even without a current canonical project link."
+    },
+    {
+      "id": "mammoet",
+      "name": "Mammoet",
+      "cluster": ["wind_transport", "wind_installation", "heavy_lift", "maintenance"],
+      "commercial_priority": "A",
+      "wind_relevance": "core_supply_chain",
+      "relationship_status": "target",
+      "known_capabilities": ["onshore WTG transport", "WTG installation", "heavy lift", "wind maintenance"],
+      "project_links": [],
+      "watch_urls": ["https://www.mammoet.com/onshore-wind/"],
+      "notes": "Relevant for the logistics/installation ecosystem and route-planning intelligence."
+    },
+    {
+      "id": "hydro-engineering",
+      "name": "Hydro Engineering",
+      "cluster": ["foundation_engineering", "quality_control"],
+      "commercial_priority": "B",
+      "wind_relevance": "core_specialist",
+      "relationship_status": "signal_in_radar",
+      "known_capabilities": ["wind foundation engineering", "foundation quality control"],
+      "project_links": ["carlentini"],
+      "watch_urls": [],
+      "notes": "Useful specialist node; current Carlentini evidence is signal-level and does not establish main Civil BoP."
+    },
+    {
+      "id": "ats-engineering",
+      "name": "ATS Engineering",
+      "cluster": ["engineering"],
+      "commercial_priority": "B",
+      "wind_relevance": "core_specialist",
+      "relationship_status": "proven_in_radar_non_execution",
+      "known_capabilities": ["wind engineering"],
+      "project_links": ["fenice"],
+      "watch_urls": [],
+      "notes": "Engineering intelligence node; do not classify as execution contractor without project-specific award."
+    },
+    {
+      "id": "bautel",
+      "name": "BAUTEL SR",
+      "cluster": ["access_engineering", "heavy_transport_engineering"],
+      "commercial_priority": "B",
+      "wind_relevance": "core_specialist",
+      "relationship_status": "proven_in_radar_non_execution",
+      "known_capabilities": ["access-road and heavy-transport engineering"],
+      "project_links": ["on-parma-a"],
+      "watch_urls": [],
+      "notes": "Specialist route/access intelligence may expose early mobilization needs."
+    },
+    {
+      "id": "vestas",
+      "name": "Vestas",
+      "cluster": ["oem", "wtg_transport", "wtg_installation", "commissioning", "service"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["WTG supply", "transport", "installation", "commissioning", "maintenance"],
+      "project_links": ["andretta-bisaccia", "alia-sclafani", "tricarico", "greci-montaguto", "carlentini", "castelfranco-cer"],
+      "watch_urls": ["https://www.vestas.com/en/media/company-news"],
+      "notes": "Critical OEM signal source: order releases often reveal timing and multi-project frameworks."
+    },
+    {
+      "id": "nordex",
+      "name": "Nordex Group",
+      "cluster": ["oem", "service"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["WTG supply", "wind service"],
+      "project_links": ["serra-palino", "venusia"],
+      "watch_urls": ["https://www.nordex-online.com/en/"],
+      "notes": "Monitor Italian order intake, delivery windows and service awards."
+    },
+    {
+      "id": "siemens-gamesa",
+      "name": "Siemens Gamesa",
+      "cluster": ["oem", "service"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "target",
+      "known_capabilities": ["WTG supply", "wind service"],
+      "project_links": [],
+      "watch_urls": ["https://www.siemensgamesa.com/"],
+      "notes": "Design references in project documents do not equal OEM awards; monitor direct orders."
+    },
+    {
+      "id": "enercon",
+      "name": "ENERCON",
+      "cluster": ["oem", "service"],
+      "commercial_priority": "B",
+      "wind_relevance": "core",
+      "relationship_status": "target",
+      "known_capabilities": ["WTG supply", "service"],
+      "project_links": [],
+      "watch_urls": ["https://www.enercon.de/", "https://www.anev.org/soci/"],
+      "notes": "ANEV member; maintain in OEM universe even without current canonical award."
+    },
+    {
+      "id": "ge-vernova",
+      "name": "GE Vernova",
+      "cluster": ["oem", "grid_technology"],
+      "commercial_priority": "B",
+      "wind_relevance": "core",
+      "relationship_status": "target",
+      "known_capabilities": ["wind turbine technology", "grid technology"],
+      "project_links": [],
+      "watch_urls": ["https://www.gevernova.com/", "https://www.anev.org/soci/"],
+      "notes": "Sector/OEM watch node; no project award inferred from membership."
+    },
+    {
+      "id": "rwe",
+      "name": "RWE Renewables Italia",
+      "cluster": ["developer", "owner_operator"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["Italian onshore wind development and construction"],
+      "project_links": ["serra-giannina", "serra-palino", "venusia"],
+      "watch_urls": ["https://www.rwe.com/en/press/"],
+      "notes": "Priority developer because multiple active construction sites are already in the radar."
+    },
+    {
+      "id": "erg",
+      "name": "ERG",
+      "cluster": ["developer", "owner_operator", "repowering"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["large Italian wind portfolio", "repowering", "framework OEM procurement"],
+      "project_links": ["greci-montaguto", "carlentini", "nulvi-ploaghe"],
+      "watch_urls": ["https://www.erg.eu/en/media/press-releases"],
+      "notes": "Framework procurement and repowering pipeline make ERG a top network account."
+    },
+    {
+      "id": "edison-rinnovabili",
+      "name": "Edison Rinnovabili",
+      "cluster": ["developer", "owner_operator", "repowering"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["wind development", "repowering", "OEM procurement"],
+      "project_links": ["andretta-bisaccia", "on-ripabottoni-edison-repowering", "on-minervino-edison-repowering"],
+      "watch_urls": ["https://www.edison.it/"],
+      "notes": "Immediate relevance through Andretta-Bisaccia construction timing and additional repowering pipeline."
+    },
+    {
+      "id": "plenitude",
+      "name": "Eni Plenitude Renewables Italy",
+      "cluster": ["developer", "owner_operator"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["renewable development and construction"],
+      "project_links": ["tarsia-ovest", "off-atis-current"],
+      "watch_urls": ["https://corporate.eniplenitude.com/it/media/comunicati-stampa"],
+      "notes": "Active project construction and offshore ownership make this a high-value cross-segment account."
+    },
+    {
+      "id": "acciona-energia",
+      "name": "ACCIONA Energía",
+      "cluster": ["developer", "owner_operator", "offshore"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["renewable development", "onshore/offshore project development"],
+      "project_links": ["off-tramontana", "off-libeccio", "on-campovaglio", "on-lama-cupa"],
+      "watch_urls": ["https://www.acciona-energia.com/"],
+      "notes": "Large multi-project Italian pipeline; watch development milestones and eventual execution procurement."
+    },
+    {
+      "id": "fri-el",
+      "name": "FRI-EL Green Power",
+      "cluster": ["developer", "owner_operator"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "target",
+      "known_capabilities": ["Italian wind development and operation"],
+      "project_links": [],
+      "watch_urls": ["https://www.fri-el.it/", "https://www.anev.org/soci/"],
+      "notes": "Core Italian wind account from ANEV universe; requires systematic project mapping."
+    },
+    {
+      "id": "fred-olsen-renewables",
+      "name": "Fred. Olsen Renewables",
+      "cluster": ["developer", "owner_operator"],
+      "commercial_priority": "A",
+      "wind_relevance": "core",
+      "relationship_status": "proven_in_radar",
+      "known_capabilities": ["wind development"],
+      "project_links": ["on-energia-della-comunanza"],
+      "watch_urls": ["https://fredolsenrenewables.com/", "https://www.anev.org/soci/"],
+      "notes": "Current canonical pipeline link and ANEV presence."
+    },
+    {
+      "id": "dnv",
+      "name": "DNV",
+      "cluster": ["technical_advisory", "certification", "wind_engineering"],
+      "commercial_priority": "B",
+      "wind_relevance": "core_advisory",
+      "relationship_status": "target",
+      "known_capabilities": ["wind technical advisory", "certification", "due diligence"],
+      "project_links": [],
+      "watch_urls": ["https://www.dnv.com/", "https://www.anev.org/soci/"],
+      "notes": "Useful network node for early-stage project intelligence and decision-maker ecosystem, not an execution contractor."
+    },
+    {
+      "id": "fichtner",
+      "name": "Fichtner Italia / Fichtner Group",
+      "cluster": ["engineering", "owners_engineer", "technical_advisory"],
+      "commercial_priority": "B",
+      "wind_relevance": "core_advisory",
+      "relationship_status": "target",
+      "known_capabilities": ["renewable engineering", "wind project support", "owners engineering", "grid engineering"],
+      "project_links": [],
+      "watch_urls": ["https://www.fichtner.it/", "https://www.fmc.fichtner.it/"],
+      "notes": "Potential high-level network multiplier because of broad energy advisory and decision-maker access."
+    },
+    {
+      "id": "rina",
+      "name": "RINA",
+      "cluster": ["engineering", "technical_advisory", "offshore"],
+      "commercial_priority": "B",
+      "wind_relevance": "core_advisory",
+      "relationship_status": "proven_in_radar_non_execution",
+      "known_capabilities": ["multidisciplinary engineering", "offshore/environmental studies"],
+      "project_links": ["off-kailia-current"],
+      "watch_urls": ["https://www.rina.org/"],
+      "notes": "Engineering/advisory intelligence only unless a project execution role is explicitly awarded."
+    },
+    {
+      "id": "wsp",
+      "name": "WSP Italia",
+      "cluster": ["engineering", "environmental", "offshore"],
+      "commercial_priority": "B",
+      "wind_relevance": "core_advisory",
+      "relationship_status": "proven_in_radar_non_execution",
+      "known_capabilities": ["EIA", "environmental investigations", "engineering"],
+      "project_links": ["off-kailia-current", "off-tramontana"],
+      "watch_urls": ["https://www.wsp.com/"],
+      "notes": "Repeated offshore project presence makes WSP a useful intelligence/network node."
+    },
+    {
+      "id": "owc",
+      "name": "OWC Ltd.",
+      "cluster": ["offshore_engineering", "project_design"],
+      "commercial_priority": "B",
+      "wind_relevance": "core_offshore_advisory",
+      "relationship_status": "proven_in_radar_non_execution",
+      "known_capabilities": ["offshore project design"],
+      "project_links": ["off-tramontana"],
+      "watch_urls": ["https://owcltd.com/"],
+      "notes": "Offshore design intelligence node; no execution scope closed."
+    },
+    {
+      "id": "mpower",
+      "name": "MPOWER S.r.l.",
+      "cluster": ["offshore_engineering", "project_design"],
+      "commercial_priority": "B",
+      "wind_relevance": "core_offshore_advisory",
+      "relationship_status": "proven_in_radar_non_execution",
+      "known_capabilities": ["offshore project design"],
+      "project_links": ["off-tramontana"],
+      "watch_urls": [],
+      "notes": "Project design presence on Tramontana; monitor for further Italian offshore work."
+    }
+  ]
+}

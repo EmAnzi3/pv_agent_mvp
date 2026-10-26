@@ -1,0 +1,385 @@
+{
+  "project_id": "tarsia-ovest",
+  "expected_base_record_sha256": "b7d4af018305fc568465953feac50e56ca946077cc3739d531425eee9f69c714",
+  "reviewed_on": "2026-10-08",
+  "status_note": "Avvio costruzione annunciato da Plenitude il 27/11/2025. Contratto RTI comunicato da PLC il 12/12/2025; sottostazione MT/AT prevista per il 2026. Questi documenti non confermano la data effettiva di completamento né lo stato del cantiere a ottobre 2026.",
+  "sources": [
+    {
+      "id": "tars-eni-pdf",
+      "title": "Plenitude: configurazione, avvio lavori e recapiti istituzionali (PDF, p.1)",
+      "publisher": "Eni / Plenitude",
+      "date": "2025-11-27",
+      "url": "https://www.eni.com/content/dam/enicom/documents/press-release/migrated/2025-it/11/cs-plenitude-avvia-costruzione-parco-eolico-in-calabria-13-mw.pdf",
+      "grade": "A2"
+    },
+    {
+      "id": "tars-plc-sales",
+      "title": "PLC System: ufficio commerciale; centralino PLC S.p.A.",
+      "publisher": "PLC",
+      "date": null,
+      "url": "https://www.plc-spa.it/plc-system/",
+      "grade": "A2"
+    },
+    {
+      "id": "tars-idoka-contact",
+      "title": "Idoka Costruzioni S.r.l.: contatti societari",
+      "publisher": "Idoka Costruzioni",
+      "date": null,
+      "url": "https://www.idokacostruzioni.com/contatti",
+      "grade": "A2"
+    },
+    {
+      "id": "tars-reg-voltura-2025",
+      "title": "DDG 18794/2025 – voltura PAUR Tarsia Ovest",
+      "publisher": "Regione Calabria",
+      "date": "2025-12-09",
+      "url": "https://www.regione.calabria.it/wp-content/uploads/2025/12/Atto_Numero_18794_del_09-12-2025377543620060097974.pdf",
+      "grade": "A1"
+    },
+    {
+      "id": "tars-reg-variante-2026",
+      "title": "DDG 6500/2026 – variante Tarsia Ovest, pratica 698 CS",
+      "publisher": "Regione Calabria",
+      "date": "2026-04-20",
+      "url": "https://www.regione.calabria.it/wp-content/uploads/2026/04/PDF_97155_3746827047354100418.pdf",
+      "grade": "A1"
+    },
+    {
+      "id": "tars-reg-sia-2020",
+      "title": "Studio d’impatto ambientale PET-S01.01, progetto originario 7 WTG",
+      "publisher": "Regione Calabria / PLT Engineering",
+      "date": "2020-06-18",
+      "url": "https://www.regione.calabria.it/wp-content/uploads/2021/09/Studio-di-Impatto-Ambientale-Tarsia-Ovest.pdf",
+      "grade": "A1"
+    },
+    {
+      "id": "tars-reg-elec-2020",
+      "title": "Relazione tecnica descrittiva opere elettriche PET-E-01, progetto originario",
+      "publisher": "Regione Calabria / PLT Engineering",
+      "date": "2020-06-18",
+      "url": "https://www.regione.calabria.it/wp-content/uploads/2021/09/Relazione-Tecnica-Descrittiva.pdf",
+      "grade": "A1"
+    },
+    {
+      "id": "tars-plc-piva-2025",
+      "title": "Attestazione SOA PLC System – P.IVA",
+      "publisher": "PLC System",
+      "date": "2025-06-25",
+      "url": "https://www.plc-spa.it/wp-content/uploads/2025/07/SOA_59847_17_00.pdf",
+      "grade": "A2"
+    },
+    {
+      "id": "tars-idoka-piva",
+      "title": "Contatti ufficiali e P.IVA Idoka Costruzioni",
+      "publisher": "Idoka Costruzioni",
+      "date": null,
+      "url": "https://www.idokacostruzioni.com/it/contatti",
+      "grade": "A2"
+    },
+    {
+      "id": "tars-mammana-candidate",
+      "title": "Anagrafica pubblica Mammana Michelangelo SRL: corrispondenza Tarsia non provata",
+      "publisher": "SAC – portale gare",
+      "date": null,
+      "url": "https://gare.aeroporto.catania.it/PortaleAppalti/it/ppgare_ammtrasp_contratti.wp?actionPath=%2FExtStr2%2Fdo%2FFrontEnd%2FAmmTrasp%2FviewContratto.action&codice=G00379&currentFrame=7",
+      "grade": "B"
+    }
+  ],
+  "documentary": {
+    "reviewed_on": "2026-10-08",
+    "method": "Verifica mirata di fonti regionali PAUR/voltura/variante, studio ambientale e relazione elettrica originari, comunicati e registri societari. Non certifica la lettura o acquisizione di tutti gli allegati SUAP.",
+    "fields": [
+      {
+        "label": "Progetto / tipologia",
+        "value": "Tarsia Ovest: parco eolico onshore. L'istanza iniziale prevedeva 7 turbine, mentre il PAUR 3509/2023 autorizza solo T1, T5 e T6.",
+        "source_ids": [
+          "tars-reg-old",
+          "tars-reg-variante-2026"
+        ],
+        "basis": "Onshore qualificato dalla localizzazione comunale e dalla descrizione dell’impianto; non è una citazione testuale del termine."
+      },
+      {
+        "label": "Localizzazione",
+        "value": "Calabria, provincia di Cosenza, Comune di Tarsia. Le coordinate di mappa nel radar sono indicative del territorio, non dei singoli aerogeneratori; ubicazione puntuale e superfici da elaborati aggiornati non verificate.",
+        "source_ids": [
+          "tars-reg-variante-2026",
+          "tars-eni-pdf"
+        ]
+      },
+      {
+        "label": "Potenza",
+        "value": "Configurazione variante: 3 turbine Vestas V150-4.3 da 4,3 MW, 12,9 MW eolici complessivi (comunicato: circa 13 MW). I 29,995 MW e 7 WTG appartengono al progetto iniziale, non all'assetto autorizzato/variato. Accumulo non documentato nelle fonti verificate.",
+        "source_ids": [
+          "tars-reg-variante-2026",
+          "tars-reg-old",
+          "tars-eni-pdf"
+        ]
+      },
+      {
+        "label": "Cronoprogramma",
+        "value": "Plenitude comunica l'avvio della costruzione il 27/11/2025; PLC indica come obiettivo il 2026 per la sottostazione MT/AT. La SIA del 2020 indica una durata progettuale di circa 14 mesi per l'originaria configurazione a 7 WTG: non è un cronoprogramma attendibile della variante a 3 WTG. Date effettive di fine lavori/COD non verificate.",
+        "source_ids": [
+          "tars-eni-pdf",
+          "tars-plc",
+          "tars-reg-sia-2020"
+        ]
+      },
+      {
+        "label": "Aziende / ruoli",
+        "value": "PLT Engineering (proponente storico) → Eni Plenitude Technical Services → Eni Plenitude Renewables Italy S.p.A. (titolare per voltura 2025). RTI del comunicato PLC: PLC System, Idoka Costruzioni, Michelangelo Mammana e Delta S.r.l. PLC System: lavori sottostazione MT/AT. GEMSA risulta su elaborati 2020 come redattore/progettazione, non come EPC. Ruoli individuali RTI diversi dalla SSE non accertati.",
+        "source_ids": [
+          "tars-reg-old",
+          "tars-reg-voltura-2025",
+          "tars-plc",
+          "tars-reg-elec-2020"
+        ]
+      },
+      {
+        "label": "Lavorazioni utili",
+        "value": "Lavorazioni indicate nelle fonti: piazzole e viabilità di accesso, fondazioni, cavidotti MT, sottostazione MT/AT e installazione WTG. La variante 2026 cita modifiche a sottostazione, connessioni e rinforzo accesso T1. Quantitativi esecutivi aggiornati, ditte per singolo scope e fabbisogni di macchine non certi.",
+        "source_ids": [
+          "tars-reg-variante-2026",
+          "tars-reg-sia-2020",
+          "tars-plc"
+        ]
+      }
+    ],
+    "contacts": [
+      {
+        "company": "PLC System S.r.l.",
+        "role": "Ufficio commerciale",
+        "email": "commerciale.system@plc-spa.com",
+        "phone": null,
+        "scope": "Societario, non referente acquisti nominativo di Tarsia",
+        "source_ids": [
+          "tars-plc-sales"
+        ]
+      },
+      {
+        "company": "PLC S.p.A.",
+        "role": "Centralino del gruppo",
+        "email": null,
+        "phone": "+39 081 0198565",
+        "scope": "Non è un numero diretto di PLC System o del cantiere",
+        "source_ids": [
+          "tars-plc-sales"
+        ]
+      },
+      {
+        "company": "Idoka Costruzioni S.r.l.",
+        "role": "Contatto generale societario",
+        "email": "info@idokacostruzioni.it",
+        "phone": "+39 0972 536073",
+        "scope": "Non è un referente di cantiere o procurement certificato",
+        "source_ids": [
+          "tars-idoka-contact"
+        ]
+      },
+      {
+        "company": "Plenitude",
+        "role": "Ufficio stampa — non commerciale",
+        "email": "ufficio.stampa@eniplenitude.com",
+        "phone": "+39 02 87103430",
+        "scope": "Recapito pubblicato nel comunicato del 27/11/2025; non acquisti",
+        "source_ids": [
+          "tars-eni-pdf"
+        ]
+      }
+    ],
+    "gaps": [
+      "Allegati completi Calabria SUAP pratica 698 CS non inventariati/scaricati: da acquisire dal portale o tramite esportazione autorizzata.",
+      "Aggiornamento tecnico e cronoprogramma esecutivo del progetto a tre turbine non trovato: nessuna data di fine lavori o COD documentata.",
+      "P.IVA di Michelangelo Mammana e Delta S.r.l. non attribuibili con certezza al rispettivo membro RTI.",
+      "Singoli esecutori di fondazioni, montaggio turbine e logistica/trasporti non verificati.",
+      "Le quantità/superfici del progetto 2020 non vanno trasposte automaticamente sulla variante del 2026."
+    ],
+    "evidence": [
+      {
+        "source_id": "tars-eni-pdf",
+        "page": 1,
+        "sha256": "dfe7bb6d54a5182b955b324d5997957b846d0be936a4172cf019684c5cc4c52b",
+        "capture": "harvester_original",
+        "reading": "text_and_visual",
+        "scope": "intero comunicato di una pagina"
+      },
+      {
+        "source_id": "tars-plc",
+        "section": "Articolo del 12/12/2025, paragrafi sul RTI e sulla sottostazione",
+        "sha256": null,
+        "capture": "web_reader_fallback",
+        "reading": "text",
+        "scope": "accordo e ruoli; originale non acquisito dal runner"
+      },
+      {
+        "source_id": "tars-plc-sales",
+        "section": "Contatti / Sales Department e footer PLC S.p.A.",
+        "sha256": null,
+        "capture": "web_reader_fallback",
+        "reading": "text",
+        "scope": "soli recapiti espliciti societari; esclusi nominativi non qualificati"
+      },
+      {
+        "source_id": "tars-idoka-contact",
+        "section": "Contatti: ragione sociale, email e telefono",
+        "sha256": null,
+        "capture": "web_reader_fallback",
+        "reading": "text",
+        "scope": "pagina dinamica: il solo HTML del runner non contiene i recapiti"
+      },
+      {
+        "source_id": "tars-reg-voltura-2025",
+        "page": 5,
+        "sha256": null,
+        "capture": "official_regional_pdf_text",
+        "reading": "targeted_text",
+        "scope": "Titolare, P.IVA e voltura nel decreto DDG18794"
+      },
+      {
+        "source_id": "tars-reg-variante-2026",
+        "page": 8,
+        "sha256": null,
+        "capture": "official_regional_pdf_text_and_inspected_page",
+        "reading": "targeted_text_and_visual",
+        "scope": "Tre WTG 4.3MW; decreto e parere VPA, pratica SUAP698"
+      },
+      {
+        "source_id": "tars-reg-sia-2020",
+        "page": 103,
+        "sha256": null,
+        "capture": "official_regional_historical_study",
+        "reading": "targeted_text_and_visual",
+        "scope": "Durata relativa 14 mesi del progetto 2020, non trasferibile alla variante"
+      }
+    ],
+    "whole_dossier_complete": false,
+    "paid_model_calls": 0,
+    "company_registry": [
+      {
+        "company": "Eni Plenitude Renewables Italy S.p.A.",
+        "role": "Titolare del PAUR volturato",
+        "vat_id": "09722790962",
+        "status": "verified_project_document",
+        "source_ids": [
+          "tars-reg-voltura-2025"
+        ],
+        "note": "P.IVA e titolarità riportate nel DDG 18794/2025."
+      },
+      {
+        "company": "PLT Engineering S.r.l.",
+        "role": "Proponente storico (poi Eni Plenitude Technical Services)",
+        "vat_id": "05857900723",
+        "status": "verified_historical_document",
+        "source_ids": [
+          "tars-reg-old",
+          "tars-reg-sia-2020"
+        ],
+        "note": "Non trattare come SPV corrente."
+      },
+      {
+        "company": "PLC System S.r.l.",
+        "role": "RTI; SSE MT/AT",
+        "vat_id": "03242081218",
+        "status": "verified_corporate_document",
+        "source_ids": [
+          "tars-plc",
+          "tars-plc-piva-2025"
+        ],
+        "note": "P.IVA distinta dal codice fiscale 07073510633."
+      },
+      {
+        "company": "Idoka Costruzioni S.r.l.",
+        "role": "Membro RTI; scope individuale non specificato",
+        "vat_id": "01903670766",
+        "status": "verified_company_website",
+        "source_ids": [
+          "tars-plc",
+          "tars-idoka-piva"
+        ],
+        "note": "Il contatto pubblicato non prova il responsabile Tarsia."
+      },
+      {
+        "company": "Michelangelo Mammana S.r.l. (denominazione PLC)",
+        "role": "Membro RTI; scope individuale non specificato",
+        "vat_id": null,
+        "status": "legal_entity_match_pending",
+        "source_ids": [
+          "tars-plc",
+          "tars-mammana-candidate"
+        ],
+        "note": "Mammana Michelangelo S.r.l. è registrata con P.IVA 03747220832: denominazione invertita; l'identità con il membro RTI Tarsia non è provata. Non attribuire quella P.IVA al progetto."
+      },
+      {
+        "company": "Delta S.r.l.",
+        "role": "Membro RTI; scope individuale non specificato",
+        "vat_id": null,
+        "status": "legal_entity_match_pending",
+        "source_ids": [
+          "tars-plc"
+        ],
+        "note": "Omomia: nessuna P.IVA assegnabile senza sede o identificativo ufficiale."
+      }
+    ],
+    "dossier_coverage": [
+      {
+        "group": "Regione Calabria — PAUR 3509/2023",
+        "status": "atto_individuato_consultato",
+        "detail": "Atto ufficiale e riferimenti agli allegati disponibili; l'elenco degli elaborati nella procedura non corrisponde a file acquisiti e letti uno per uno.",
+        "source_ids": [
+          "tars-reg-old"
+        ]
+      },
+      {
+        "group": "Regione Calabria — voltura 18794/2025",
+        "status": "atto_consultato",
+        "detail": "Confermata voltura a Eni Plenitude Renewables Italy e P.IVA.",
+        "source_ids": [
+          "tars-reg-voltura-2025"
+        ]
+      },
+      {
+        "group": "Regione Calabria — variante 6500/2026",
+        "status": "atto_e_parere_consultati",
+        "detail": "Parere VPA favorevole e configurazione T1,T5,T6 V150-4.3; il decreto rinvia agli allegati della pratica 698 CS.",
+        "source_ids": [
+          "tars-reg-variante-2026"
+        ]
+      },
+      {
+        "group": "Regione Calabria — elaborati storici 2020",
+        "status": "lettura_mirata_non_fascicolo_completo",
+        "detail": "Studio di impatto ambientale e relazione opere elettriche originari; le durate e quantità 2020 non descrivono automaticamente l'assetto 2026.",
+        "source_ids": [
+          "tars-reg-sia-2020",
+          "tars-reg-elec-2020"
+        ]
+      },
+      {
+        "group": "Calabria SUAP — pratica 698 CS",
+        "status": "allegati_non_acquisiti",
+        "detail": "Relazione tecnica di variante, tavole, elaborati infrastrutturali e verifica acustica sono richiamati nel DDG 6500. Indice completo con URL scaricabili non raggiunto: non dichiarare fascicolo completo.",
+        "source_ids": [
+          "tars-reg-variante-2026"
+        ]
+      },
+      {
+        "group": "MASE",
+        "status": "nessuna_pratica_specifica_verificata",
+        "detail": "La ricerca non ha identificato un procedimento MASE certo per Tarsia Ovest; altri parchi nel Comune di Tarsia non vengono assimilati.",
+        "source_ids": []
+      },
+      {
+        "group": "Fonti aziendali e identificazione fiscale",
+        "status": "lettura_mirata",
+        "detail": "Comunicati Plenitude/PLC, contatti societari, attestazione SOA PLC. P.IVA di Mammana e Delta ancora da collegare alla corretta persona giuridica.",
+        "source_ids": [
+          "tars-eni-pdf",
+          "tars-plc",
+          "tars-plc-piva-2025",
+          "tars-idoka-piva"
+        ]
+      }
+    ],
+    "institutional_review_version": "tarsia-institutional-2026-10-08-v1"
+  },
+  "institutional_update_version": "tarsia-institutional-2026-10-08-v1"
+}

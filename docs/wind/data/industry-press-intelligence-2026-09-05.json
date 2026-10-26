@@ -1,0 +1,161 @@
+{
+  "version": "0.3.0-industry-press",
+  "as_of": "2026-09-05",
+  "note": "Registro separato per stampa di settore e market intelligence. Non chiude core scope esecutivi: ogni contractor/scope deve essere verificato su fonte A1/A2 diretta o istituzionale.",
+  "projects": {
+    "tricarico": {
+      "status": "material-update",
+      "signals": [
+        {
+          "type": "financial-close",
+          "grade": "A2",
+          "title": "Green mini-perm project financing da 46,5 milioni di euro",
+          "date": "2026-06-11",
+          "note": "UniCredit dichiara perfezionato il finanziamento a favore di Adest per costruzione e messa in esercizio del parco da 42 MW; entrata in funzione prevista entro H2 2027. La fonte indica inoltre Vector Renewables come consulente tecnico-ambientale dei finanziatori. È una milestone di maturità/finanziabilità, non prova di Civil/Electrical/Erection contractor.",
+          "source_id": "tri-unicredit-finclose"
+        },
+        {
+          "type": "construction-monitoring",
+          "grade": "A2",
+          "title": "LTA e monitoring durante la costruzione",
+          "date": "2026-07-01",
+          "note": "Vector Renewables comunica di avere assistito il lender fino al financial close e di proseguire durante la costruzione con monitoring e drawdown validation. Ruolo advisory, non esecutivo.",
+          "source_id": "tri-vector-finclose"
+        }
+      ],
+      "sources": [
+        {
+          "id": "tri-unicredit-finclose",
+          "publisher": "UniCredit",
+          "title": "Energia, UniCredit finanzia con 46,5 milioni il nuovo parco eolico di Idoka",
+          "date": "2026-06-11",
+          "url": "https://www.unicreditgroup.eu/it/press-media/news/2026/june/energia--unicredit-finanzia-con-46-5-milioni-il-nuovo-parco-eoli.html",
+          "grade": "A2"
+        },
+        {
+          "id": "tri-vector-finclose",
+          "publisher": "Vector Renewables",
+          "title": "Tricarico — Lender's Technical Advisor through financial close and construction monitoring",
+          "date": "2026-07-01",
+          "url": "https://www.linkedin.com/posts/vector-renewables_vectorrenewables-renewableenergy-technicaladvisory-activity-7472199135132303360-_I4e",
+          "grade": "A2"
+        }
+      ]
+    },
+    "castelfranco-cer": {
+      "status": "identity-guard",
+      "signals": [
+        {
+          "type": "identity-collision",
+          "grade": "A1",
+          "title": "Fri-El / Miscano 29,4 MW è distinto da CER / Difesa Vecchia",
+          "date": "2023-10-23",
+          "note": "La stampa di settore ha fatto emergere un secondo progetto da 29,4 MW a Castelfranco in Miscano. La verifica Regione Campania separa inequivocabilmente CUP 9207 Fri-El, progetto Miscano 29,4 MW, da CUP 9439 CER/Campana Energie Rinnovabili, Difesa Vecchia, repowering dell'impianto esistente. Non trasferire contractor, atti o supply-chain tra i due.",
+          "source_id": "cas-pvmag-friel"
+        }
+      ],
+      "sources": [
+        {
+          "id": "cas-pvmag-friel",
+          "publisher": "pv magazine Italia",
+          "title": "Alerion Clean Power acquisisce in Italia 28 MW di fotovoltaico",
+          "date": "2023-10-23",
+          "url": "https://www.pv-magazine.it/2023/10/23/alerion-clean-power-acquisisce-in-italia-28-mw-di-fotovoltaico/",
+          "grade": "B"
+        },
+        {
+          "id": "cas-campania-friel-9207",
+          "publisher": "Regione Campania",
+          "title": "AU progetto eolico Miscano 29,4 MW — Fri-El S.p.A. — CUP 9207",
+          "date": "2023-10-04",
+          "url": "https://burc.regione.campania.it/eBurcWeb/directServlet?ATTACH_ID=213688&DOCUMENT_ID=00141646",
+          "grade": "A1"
+        },
+        {
+          "id": "cas-campania-cer-9439",
+          "publisher": "Regione Campania",
+          "title": "VIA repowering Difesa Vecchia — CER S.r.l. — CUP 9439",
+          "date": "2024-03-08",
+          "url": "https://burc.regione.campania.it/eBurcWeb/directServlet?ATTACH_ID=217245&DOCUMENT_ID=00143505",
+          "grade": "A1"
+        }
+      ]
+    },
+    "alia-sclafani": {
+      "status": "historical-guard",
+      "signals": [
+        {
+          "type": "same-site-historical-config",
+          "grade": "B",
+          "title": "Finanziamento Crédit Agricole 2019 riferito a precedente potenziamento",
+          "date": "2019-01-10",
+          "note": "Staffetta documenta un precedente intervento Asja con due Gamesa G114 e finanziamento da 6,2 milioni. Non attribuire progettazione/realizzazione Asja o altri soggetti di quel ciclo al repowering corrente da 55 MW / 9 Vestas.",
+          "source_id": "alia-staffetta-2019"
+        },
+        {
+          "type": "site-services-candidate",
+          "grade": "C",
+          "title": "Servizi di vigilanza/portierato nell'area Alia-Sclafani",
+          "date": "2026-08-01",
+          "note": "FM Service Group ha pubblicato vacancy recenti per portierato/vigilanza di cantiere ad Alia, Sclafani Bagni e aree limitrofe. Il progetto eolico non è nominato: mantenere come pista C, non relazione di progetto e non core scope.",
+          "source_id": "alia-fmservice-candidate"
+        }
+      ],
+      "sources": [
+        {
+          "id": "alia-staffetta-2019",
+          "publisher": "Staffetta Quotidiana",
+          "title": "Eolico, 6,2 milioni per Asja in Sicilia",
+          "date": "2019-01-10",
+          "url": "https://www.staffettaonline.com/articolo.aspx?id=302485",
+          "grade": "B"
+        },
+        {
+          "id": "alia-fmservice-candidate",
+          "publisher": "FM Service Group",
+          "title": "Vacancy servizi di cantiere area Alia / Sclafani Bagni",
+          "date": "2026-08-01",
+          "url": "https://it.linkedin.com/company/f-m-serice-group",
+          "grade": "C"
+        }
+      ]
+    },
+    "nulvi-ploaghe": {
+      "status": "commercial-signal-no-names",
+      "signals": [
+        {
+          "type": "local-procurement",
+          "grade": "B",
+          "title": "Circa 40 milioni destinati a imprese e fornitori locali",
+          "date": "2026-04-02",
+          "note": "La stampa di settore e generalista conferma l'impegno economico locale già dichiarato da ERG, ma non rende pubblici i nomi dei fornitori. È un segnale commerciale forte che non chiude alcuno scope.",
+          "source_id": "nulvi-qualenergia-local"
+        }
+      ],
+      "sources": [
+        {
+          "id": "nulvi-qualenergia-local",
+          "publisher": "QualEnergia.it",
+          "title": "Repowering Nulvi-Ploaghe / fronti aperti della Sardegna",
+          "date": "2026-04-01",
+          "url": "https://www.qualenergia.it/articoli/fronti-aperti-sardegna-energia/",
+          "grade": "B"
+        }
+      ]
+    },
+    "carlentini": {
+      "status": "confirmation-only",
+      "signals": [
+        {
+          "type": "foundation-confirmation",
+          "grade": "B",
+          "title": "Stampa/industry pass conferma la fase fondazioni ma non aggiunge nuovi esecutori",
+          "date": "2026-08-01",
+          "note": "Le fonti di settore convergono con l'evidenza diretta Hydro/Mammana già censita. Nessun nuovo scope o soggetto da aggiungere.",
+          "source_id": null
+        }
+      ],
+      "sources": []
+    }
+  }
+}

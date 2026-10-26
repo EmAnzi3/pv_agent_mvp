@@ -1,0 +1,35 @@
+(()=>{'use strict';
+const START=new Date('2025-01-01T00:00:00'),END=new Date('2029-01-01T00:00:00');
+const GROUPS={
+  authorization:{label:'Autorizzazione / milestone',color:'#64748b'},
+  site:{label:'Avvio sito',color:'#56666f'},
+  civil:{label:'Opere civili / costruzione',color:'#087f5b'},
+  foundation:{label:'Fondazioni',color:'#0ca678'},
+  electrical:{label:'Cavidotti / elettrico',color:'#175cd3'},
+  sse:{label:'SSE / connessione',color:'#6941c6'},
+  dismantling:{label:'Smantellamento',color:'#8a5a12'},
+  delivery:{label:'Consegna WTG',color:'#c47a09'},
+  erection:{label:'Montaggio WTG',color:'#d66749'},
+  commissioning:{label:'Collaudo / entrata in esercizio',color:'#163247'}
+};
+const PHASE_GROUP={authorization:'authorization',milestone:'authorization',site:'site',civil:'civil',construction:'civil',foundation:'foundation',cables:'electrical',electrical:'electrical',sse:'sse',dismantling:'dismantling',wtg_delivery:'delivery',erection:'erection',commissioning:'commissioning',energization:'commissioning',cod:'commissioning',closeout:'commissioning'};
+let meta=null,projects=[],timer=null,observer=null;
+const q=s=>document.querySelector(s),all=s=>[...document.querySelectorAll(s)];
+function pct(d){return Math.max(0,Math.min(100,(d-START)/(END-START)*100))}
+function fmt(v){const d=new Date(v+'T00:00:00');return new Intl.DateTimeFormat('it-IT',{day:'2-digit',month:'2-digit',year:'numeric'}).format(d)}
+function stageMap(){return new Map((meta?.maturity_scale||[]).map(x=>[x.code,x.label]))}
+function projectByName(name){return projects.find(p=>p.name===name)}
+function currentRows(){return all('#timelineFallback .fallback-row')}
+function filteredTotal(){return all('#opportunityRows [data-project-id]').length||projects.length}
+function renameSnapshot(){const panel=q('.pipeline-panel');if(!panel)return;const h=panel.querySelector('.panel-heading h2'),p=panel.querySelector('.panel-heading p');if(h)h.textContent='Stato corrente per maturità';if(p)p.textContent='Fotografia dei progetti sulla scala E0–E8 alla data di aggiornamento. I MW BESS non sono sommati all’eolico.';const chart=q('#pipelineChart');if(chart)chart.setAttribute('aria-label','Stato corrente dei progetti per maturità')}
+function decorateHeading(){const panel=q('.timeline-panel');if(!panel)return;const h=panel.querySelector('.panel-heading h2'),p=panel.querySelector('.panel-heading p');if(h)h.textContent='Calendario attività e milestone';if(p)p.textContent='Lo stage E0–E8 indica lo stato corrente; le barre mostrano quando sono avvenute, sono in corso o sono previste le attività.';if(!panel.querySelector('.timeline-reading-note')){const note=document.createElement('div');note.className='timeline-reading-note';const fallback=q('#timelineFallback');if(fallback)fallback.insertAdjacentElement('beforebegin',note)}}
+function updateReadingNote(){const note=q('.timeline-reading-note');if(!note)return;const dated=currentRows().length,total=filteredTotal(),missing=Math.max(0,total-dated);note.innerHTML=`<b>Come leggere i due riquadri insieme:</b> “Stato corrente per maturità” è la fotografia di oggi. Questo calendario contiene <b>${dated}/${total}</b> progetti del filtro con date disponibili${missing?`; gli altri <b>${missing}</b> restano nello stato per maturità ma non compaiono qui perché non abbiamo date pubbliche sufficienti`:''}. Una attività futura non fa avanzare lo stage finché il suo avvio non è osservato.`}
+function addAxis(){const fallback=q('#timelineFallback');if(!fallback||!meta)return;let axis=q('.timeline-axis-row');if(axis)return;axis=document.createElement('div');axis.className='timeline-axis-row';const today=pct(new Date(meta.as_of+'T00:00:00'));axis.innerHTML=`<div class="timeline-axis-label">Periodo</div><div class="timeline-axis-track"><span class="timeline-axis-year first" style="left:0%">2025</span><span class="timeline-axis-year" style="left:25%">2026</span><span class="timeline-axis-year" style="left:50%">2027</span><span class="timeline-axis-year" style="left:75%">2028</span><span class="timeline-axis-year last" style="left:100%">2029</span><i class="timeline-today-axis" style="left:${today}%"><span>oggi · ${fmt(meta.as_of)}</span></i></div>`;fallback.insertAdjacentElement('beforebegin',axis)}
+function decorateRowsAndBars(){if(!meta)return;const sm=stageMap(),today=pct(new Date(meta.as_of+'T00:00:00'));currentRows().forEach(row=>{const label=row.querySelector('.fallback-label'),track=row.querySelector('.fallback-track'),name=label?.querySelector('b')?.textContent||'',project=projectByName(name);if(label&&!label.querySelector('.timeline-stage-meta')){const text=label.textContent||'',m=text.match(/E[0-8]/),mw=text.match(/([0-9.,]+)\s*MW/i);if(m&&name){const code=m[0],stage=sm.get(code)||code;label.innerHTML=`<b>${name}</b><span class="timeline-stage-meta"><strong>${code} · ${stage}</strong><span>${mw?mw[1]+' MW':''}</span></span>`}}if(track&&project){const items=(project.timing||[]).filter(t=>t.date||t.start),bars=[...track.querySelectorAll('.fallback-bar')];bars.forEach((bar,i)=>{const t=items[i];if(!t)return;const group=PHASE_GROUP[t.phase]||'authorization',g=GROUPS[group];bar.dataset.phaseGroup=group;bar.style.background=g.color;bar.title=`${t.label} · ${g.label}`})}if(track&&!track.querySelector('.timeline-today-line')){const line=document.createElement('i');line.className='timeline-today-line';line.style.left=today+'%';line.title='Data di aggiornamento Radar: '+fmt(meta.as_of);track.appendChild(line)}})}
+function renderPhaseLegend(){const root=q('#timelineKey');if(!root)return;const present=new Set;currentRows().forEach(row=>{const name=row.querySelector('.fallback-label b')?.textContent||'',p=projectByName(name);(p?.timing||[]).filter(t=>t.date||t.start).forEach(t=>present.add(PHASE_GROUP[t.phase]||'authorization'))});root.classList.add('timeline-key-expanded');root.innerHTML=Object.entries(GROUPS).filter(([key])=>present.has(key)).map(([key,g])=>`<span class="phase-chip" title="Categoria operativa del calendario"><i style="background:${g.color}"></i>${g.label}</span>`).join('')}
+function observe(){observer?.disconnect();const targets=[q('#timelineFallback'),q('#opportunityRows')].filter(Boolean);if(!targets.length)return;observer=new MutationObserver(schedule);targets.forEach(t=>observer.observe(t,{childList:true,subtree:true}))}
+function refresh(){observer?.disconnect();renameSnapshot();decorateHeading();addAxis();decorateRowsAndBars();renderPhaseLegend();updateReadingNote();observe()}
+function schedule(){clearTimeout(timer);timer=setTimeout(refresh,40)}
+async function init(){try{const manifest=await fetch('data/projects.json',{cache:'no-store'}).then(r=>r.json());const loaded=await Promise.all([fetch('data/'+manifest.meta,{cache:'no-store'}).then(r=>r.json()),...manifest.chunks.map(x=>fetch('data/'+x,{cache:'no-store'}).then(r=>r.json()))]);meta=loaded[0];projects=loaded.slice(1).flat();refresh();observe();setTimeout(refresh,150)}catch(err){console.error('timeline-coherence init failed',err)}}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
