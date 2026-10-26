@@ -4,7 +4,8 @@ Daily: read the RSS feeds of the sector press (pv-magazine.it, QualEnergia, Rinn
 keep the articles about photovoltaic plants being built or contracted (EPC, contract, works start...),
 extract MW, municipalities (ISTAT list), and the companies named as builders, then match them to the
 radar records:
-  * 'comune + MW'        - a municipality of the record is named and one MW value is within 15 %;
+  * 'comune + MW'        - a municipality of the record is named and one MW value is within 5 %
+                           (several plants in that municipality: only the closest power);
   * 'comune + proponente' - a municipality of the record and the record's proponent are named;
   * 'provincia + MW + proponente' - no municipality, but province/region, MW within 5 % and proponent.
 A municipality alone or MW alone never makes a match. Matches are information to verify, never a
@@ -139,7 +140,7 @@ def match(item: dict, records: list[dict]) -> list[tuple[dict, str]]:
     text = f"{item['title']} {item['text']}"
     mws, comuni = item.get("mw") or mw_values(text), {place_key(c) for c in (item.get("comuni") or municipalities(text))}
     low = place_key(text)
-    out = []
+    out, by_mw = [], []
     for r in records:
         if r.get("is_terna") or not r.get("project_key"):
             continue
@@ -149,13 +150,16 @@ def match(item: dict, records: list[dict]) -> list[tuple[dict, str]]:
         prop_hit = len(prop) >= 5 and prop in low
         mw_hit = lambda tol: rmw > 0 and any(abs(v - rmw) <= tol * rmw for v in mws)
         if rc & comuni:
-            if mw_hit(0.15):
-                out.append((r, "comune + MW"))
+            if mw_hit(0.05):
+                by_mw.append((min(abs(v - rmw) / rmw for v in mws), r))
             elif prop_hit:
                 out.append((r, "comune + proponente"))
         elif prop_hit and mw_hit(0.05) and (str(r.get("province") or "") and re.search(rf"\b{re.escape(str(r['province']))}\b", text)
                                             or (r.get("region") and str(r["region"]).lower() in text.lower())):
             out.append((r, "provincia + MW + proponente"))
+    if by_mw:                 # several plants in the same municipality: only the closest power matches
+        best = min(d for d, _ in by_mw)
+        out += [(r, "comune + MW") for d, r in by_mw if d <= best + 0.005]
     return out
 
 
