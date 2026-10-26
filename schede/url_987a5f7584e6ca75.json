@@ -264,7 +264,7 @@
    "name": "Solarig Engineering AND Projects S.L.",
    "kind": "società",
    "roles": [
-    "Impresa esecutrice (da confermare)"
+    "Impresa esecutrice (atto di cantiere)"
    ],
    "vat": null,
    "vat_group": false,
@@ -299,7 +299,20 @@
     "page": 3,
     "document": "proponente 0118600.04-02-2026.pdf",
     "excerpt": "Impresa affidataria dei lavori: SOLARIG ENGINEERING AND PROJECTS S.L. UNIPERSONAL - CALLE RIBERA DEL LOIRA 28 - - MADRID. Legale rappresentante Jorge Useros P.IVA"
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "A",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-101-2021&file_id=f_2132641774961",
+      "page": 3,
+      "document": "proponente 0118600.04-02-2026.pdf",
+      "excerpt": "Impresa affidataria dei lavori: SOLARIG ENGINEERING AND PROJECTS S.L. UNIPERSONAL - CALLE RIBERA DEL LOIRA 28 - - MADRID. Legale rappresentante Jorge Useros P.IVA"
+     }
+    }
+   ]
   },
   {
    "name": "Ing. Carmine Lopriore",
@@ -822,11 +835,29 @@
   {
    "label": "Recapiti",
    "reason": "503 recapiti non attribuibili a un soggetto preciso: non mostrati"
-  },
-  {
-   "label": "Solarig Engineering AND Projects S.L.",
-   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "A",
+  "imprese": [
+   {
+    "impresa": "Solarig Engineering AND Projects S.L.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "A",
+    "source": {
+     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-101-2021&file_id=f_2132641774961",
+     "page": 3,
+     "document": "proponente 0118600.04-02-2026.pdf",
+     "excerpt": "Impresa affidataria dei lavori: SOLARIG ENGINEERING AND PROJECTS S.L. UNIPERSONAL - CALLE RIBERA DEL LOIRA 28 - - MADRID. Legale rappresentante Jorge Useros P.IVA"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }

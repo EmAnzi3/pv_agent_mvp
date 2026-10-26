@@ -157,7 +157,7 @@
    "name": "Comal S.p.A.",
    "kind": "società",
    "roles": [
-    "Impresa esecutrice (da confermare)"
+    "Impresa esecutrice (atto di cantiere)"
    ],
    "vat": "01685280560",
    "vat_group": false,
@@ -214,7 +214,20 @@
     "page": 3,
     "document": "DCS_Comunicazione avvio lavori preliminari.pdf.p7m",
     "excerpt": "che l’impresa esecutrice è la società Comal S.p.A. con sede legale in zona industriale “Due Pini” – S.S. Aurelia al km 113, c. a. p. 01014 in Montalto di Castro (VT), avente p.iva, codice fiscale e numero di iscrizione"
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "A",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=015-2018&file_id=f_1196102806762",
+      "page": 3,
+      "document": "DCS_Comunicazione avvio lavori preliminari.pdf.p7m",
+      "excerpt": "che l’impresa esecutrice è la società Comal S.p.A. con sede legale in zona industriale “Due Pini” – S.S. Aurelia al km 113, c. a. p. 01014 in Montalto di Castro (VT), avente p.iva, codice fiscale e numero di iscrizione"
+     }
+    }
+   ]
   },
   {
    "name": "Ing. Marco Grande",
@@ -3223,15 +3236,29 @@
   {
    "label": "Recapiti",
    "reason": "1323 recapiti non attribuibili a un soggetto preciso: non mostrati"
-  },
-  {
-   "label": "Comal S.p.A.",
-   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
-  },
-  {
-   "label": "Societa' Comal S.p.A.",
-   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "A",
+  "imprese": [
+   {
+    "impresa": "Comal S.p.A.",
+    "partita_iva": "01685280560",
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "A",
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=015-2018&file_id=f_1196102806762",
+     "page": 3,
+     "document": "DCS_Comunicazione avvio lavori preliminari.pdf.p7m",
+     "excerpt": "che l’impresa esecutrice è la società Comal S.p.A. con sede legale in zona industriale “Due Pini” – S.S. Aurelia al km 113, c. a. p. 01014 in Montalto di Castro (VT), avente p.iva, codice fiscale e numero di iscrizione"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }

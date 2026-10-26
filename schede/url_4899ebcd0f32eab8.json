@@ -228,7 +228,7 @@
    "name": "Altenia S.r.l.",
    "kind": "società",
    "roles": [
-    "Impresa esecutrice (da confermare)"
+    "Impresa esecutrice (atto di cantiere)"
    ],
    "vat": "09170680962",
    "vat_group": false,
@@ -240,7 +240,20 @@
     "page": 28,
     "document": "Integrazioni del 09/12/2025 - Piano Cantierizzazione",
     "excerpt": "Impresa Affidataria Altenia S.r.l."
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "A",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1331849",
+      "page": 28,
+      "document": "Integrazioni del 09/12/2025 - Piano Cantierizzazione",
+      "excerpt": "Impresa Affidataria Altenia S.r.l."
+     }
+    }
+   ]
   },
   {
    "name": "Dott. Antonio Petriccione",
@@ -1107,11 +1120,29 @@
   {
    "label": "Recapiti",
    "reason": "561 recapiti non attribuibili a un soggetto preciso: non mostrati"
-  },
-  {
-   "label": "Altenia S.r.l.",
-   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "A",
+  "imprese": [
+   {
+    "impresa": "Altenia S.r.l.",
+    "partita_iva": "09170680962",
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "A",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1331849",
+     "page": 28,
+     "document": "Integrazioni del 09/12/2025 - Piano Cantierizzazione",
+     "excerpt": "Impresa Affidataria Altenia S.r.l."
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }

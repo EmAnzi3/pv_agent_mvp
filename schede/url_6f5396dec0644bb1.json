@@ -138,7 +138,7 @@
    "name": "Protesa S.p.A.",
    "kind": "società",
    "roles": [
-    "Impresa esecutrice (da confermare)"
+    "Impresa esecutrice (indicata negli elaborati)"
    ],
    "vat": "02120631201",
    "vat_group": false,
@@ -173,7 +173,20 @@
     "page": 1,
     "document": "A9_Stato di fatto_planimetria e sezioni",
     "excerpt": "General contractor"
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/801086",
+      "page": 1,
+      "document": "A9_Stato di fatto_planimetria e sezioni",
+      "excerpt": "General contractor"
+     }
+    }
+   ]
   },
   {
    "name": "Per. Ind. Massimo Ghesini",
@@ -806,5 +819,27 @@
    "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Protesa S.p.A.",
+    "partita_iva": "02120631201",
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/801086",
+     "page": 1,
+     "document": "A9_Stato di fatto_planimetria e sezioni",
+     "excerpt": "General contractor"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }

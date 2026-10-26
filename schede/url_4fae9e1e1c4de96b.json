@@ -258,7 +258,7 @@
    "name": "Aiem Group S.r.l.",
    "kind": "società",
    "roles": [
-    "EPC (da confermare)"
+    "EPC (indicata negli elaborati)"
    ],
    "vat": null,
    "vat_group": false,
@@ -293,7 +293,20 @@
     "page": 1,
     "document": "Integrazioni del 06/02/2023 - Relazione Tecnica VVFF",
     "excerpt": "EPC AIEM Group S.r.l."
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "EPC",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/769120",
+      "page": 1,
+      "document": "Integrazioni del 06/02/2023 - Relazione Tecnica VVFF",
+      "excerpt": "EPC AIEM Group S.r.l."
+     }
+    }
+   ]
   },
   {
    "name": "Gruppo Iren S.p.A.",
@@ -1956,5 +1969,27 @@
    "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Aiem Group S.r.l.",
+    "partita_iva": null,
+    "ruolo": "EPC",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/769120",
+     "page": 1,
+     "document": "Integrazioni del 06/02/2023 - Relazione Tecnica VVFF",
+     "excerpt": "EPC AIEM Group S.r.l."
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }

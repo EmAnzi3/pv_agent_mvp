@@ -190,7 +190,7 @@
    "name": "Circet Italia S.p.A.",
    "kind": "società",
    "roles": [
-    "Impresa esecutrice (da confermare)"
+    "Impresa esecutrice (indicata negli elaborati)"
    ],
    "vat": "01481120697",
    "vat_group": false,
@@ -247,7 +247,20 @@
     "page": 47,
     "document": "ITVUL-00031-HX5880-00006 RevB.pdf",
     "excerpt": "Impresa Esecutrice: CIRCET SPA"
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-047-2020&file_id=f_1842850998522",
+      "page": 47,
+      "document": "ITVUL-00031-HX5880-00006 RevB.pdf",
+      "excerpt": "Impresa Esecutrice: CIRCET SPA"
+     }
+    }
+   ]
   },
   {
    "name": "Ing. Francesco Montrone",
@@ -2690,5 +2703,27 @@
    "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Circet Italia S.p.A.",
+    "partita_iva": "01481120697",
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-047-2020&file_id=f_1842850998522",
+     "page": 47,
+     "document": "ITVUL-00031-HX5880-00006 RevB.pdf",
+     "excerpt": "Impresa Esecutrice: CIRCET SPA"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }

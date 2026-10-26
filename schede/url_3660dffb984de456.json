@@ -166,7 +166,7 @@
    "name": "Geosecure S.r.l.",
    "kind": "società",
    "roles": [
-    "Impresa esecutrice (da confermare)"
+    "Impresa esecutrice (atto di cantiere)"
    ],
    "vat": null,
    "vat_group": false,
@@ -178,7 +178,20 @@
     "page": 42,
     "document": "20230901-IT-Rinaldone-PIANO DI RIUTILIZZO TERRE E ROCCE DA SCAVO.pdf",
     "excerpt": "Impresa appaltatrice: GEOSECURE srl"
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "A",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-075-2019&file_id=f_1332462297424",
+      "page": 42,
+      "document": "20230901-IT-Rinaldone-PIANO DI RIUTILIZZO TERRE E ROCCE DA SCAVO.pdf",
+      "excerpt": "Impresa appaltatrice: GEOSECURE srl"
+     }
+    }
+   ]
   },
   {
    "name": "Dott. Geol. Vincenzo Cortese",
@@ -969,11 +982,29 @@
   {
    "label": "Recapiti",
    "reason": "1923 recapiti non attribuibili a un soggetto preciso: non mostrati"
-  },
-  {
-   "label": "Geosecure S.r.l.",
-   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "A",
+  "imprese": [
+   {
+    "impresa": "Geosecure S.r.l.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "A",
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-075-2019&file_id=f_1332462297424",
+     "page": 42,
+     "document": "20230901-IT-Rinaldone-PIANO DI RIUTILIZZO TERRE E ROCCE DA SCAVO.pdf",
+     "excerpt": "Impresa appaltatrice: GEOSECURE srl"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }

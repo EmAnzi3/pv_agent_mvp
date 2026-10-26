@@ -171,7 +171,7 @@
    "name": "Comal S.p.A.",
    "kind": "società",
    "roles": [
-    "Impresa esecutrice (da confermare)"
+    "Impresa esecutrice (atto di cantiere)"
    ],
    "vat": "01685280560",
    "vat_group": false,
@@ -206,7 +206,20 @@
     "page": 3,
     "document": "MemDoc_CreaPdf_732303625282312277115237869252029.pdf.pdf",
     "excerpt": "Ing. Marras Daniele, e l’impresa esecutrice lavori: COMAL spa sede legale in Montalto di Castro (VT) zona industriale \"2 Pini\" S.S. Aurelia km 113 P.Iva 01685280560;"
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "A",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=051-2018&file_id=f_1567652255121",
+      "page": 3,
+      "document": "MemDoc_CreaPdf_732303625282312277115237869252029.pdf.pdf",
+      "excerpt": "Ing. Marras Daniele, e l’impresa esecutrice lavori: COMAL spa sede legale in Montalto di Castro (VT) zona industriale \"2 Pini\" S.S. Aurelia km 113 P.Iva 01685280560;"
+     }
+    }
+   ]
   },
   {
    "name": "Ing. Ivan Antinucci",
@@ -1067,11 +1080,29 @@
   {
    "label": "Recapiti",
    "reason": "1545 recapiti non attribuibili a un soggetto preciso: non mostrati"
-  },
-  {
-   "label": "Comal S.p.A.",
-   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "A",
+  "imprese": [
+   {
+    "impresa": "Comal S.p.A.",
+    "partita_iva": "01685280560",
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "A",
+    "source": {
+     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=051-2018&file_id=f_1567652255121",
+     "page": 3,
+     "document": "MemDoc_CreaPdf_732303625282312277115237869252029.pdf.pdf",
+     "excerpt": "Ing. Marras Daniele, e l’impresa esecutrice lavori: COMAL spa sede legale in Montalto di Castro (VT) zona industriale \"2 Pini\" S.S. Aurelia km 113 P.Iva 01685280560;"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }

@@ -322,7 +322,7 @@
    "name": "Impresa Gema S.p.A.",
    "kind": "società",
    "roles": [
-    "Impresa esecutrice (da confermare)"
+    "Impresa esecutrice (atto di cantiere)"
    ],
    "vat": null,
    "vat_group": false,
@@ -334,7 +334,20 @@
     "page": 2,
     "document": "01. Comunicazione Inizio Lavori_SE Vitorchiano Rev_00_prot.pdf",
     "excerpt": "- IMPRESA ESECUTRICE OPERE CIVILI: Impresa GEMA S.p.A. Impresa Generali Manutenzioni con sede legale in Pasquale Alecce n. 50 (Roma)– 00155, P.IVA e CF n."
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "A",
+     "ambito": "opere civili",
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-098-2019&file_id=f_1471139792517",
+      "page": 2,
+      "document": "01. Comunicazione Inizio Lavori_SE Vitorchiano Rev_00_prot.pdf",
+      "excerpt": "- IMPRESA ESECUTRICE OPERE CIVILI: Impresa GEMA S.p.A. Impresa Generali Manutenzioni con sede legale in Pasquale Alecce n. 50 (Roma)– 00155, P.IVA e CF n."
+     }
+    }
+   ]
   }
  ],
  "altri_soggetti": [
@@ -1235,11 +1248,29 @@
   {
    "label": "Recapiti",
    "reason": "542 recapiti non attribuibili a un soggetto preciso: non mostrati"
-  },
-  {
-   "label": "Impresa Gema S.p.A.",
-   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "A",
+  "imprese": [
+   {
+    "impresa": "Impresa Gema S.p.A.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "opere civili",
+    "evidenza": "A",
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-098-2019&file_id=f_1471139792517",
+     "page": 2,
+     "document": "01. Comunicazione Inizio Lavori_SE Vitorchiano Rev_00_prot.pdf",
+     "excerpt": "- IMPRESA ESECUTRICE OPERE CIVILI: Impresa GEMA S.p.A. Impresa Generali Manutenzioni con sede legale in Pasquale Alecce n. 50 (Roma)– 00155, P.IVA e CF n."
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }

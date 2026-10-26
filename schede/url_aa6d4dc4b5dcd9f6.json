@@ -249,7 +249,7 @@
    "name": "Circet Italia S.p.A.",
    "kind": "società",
    "roles": [
-    "Impresa esecutrice (da confermare)"
+    "Impresa esecutrice (atto di cantiere)"
    ],
    "vat": "01481120697",
    "vat_group": false,
@@ -273,7 +273,20 @@
     "page": 1,
     "document": "Allegato CIL Cavidotto EG SOLE firmata-signed.pdf",
     "excerpt": "L’impresa Esecutrice Circet Italia S.p.A"
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "A",
+     "ambito": "connessione / cavidotto",
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-113-2020&file_id=f_1332484868532",
+      "page": 1,
+      "document": "Allegato CIL Cavidotto EG SOLE firmata-signed.pdf",
+      "excerpt": "L’impresa Esecutrice Circet Italia S.p.A"
+     }
+    }
+   ]
   },
   {
    "name": "Dott. Giovanni Paolo Ottomanelli",
@@ -296,9 +309,7 @@
   {
    "name": "EG Marconi S.r.l.",
    "kind": "società",
-   "roles": [
-    "EPC (da confermare)"
-   ],
+   "roles": [],
    "vat": null,
    "vat_group": false,
    "verified": false,
@@ -309,7 +320,8 @@
     "page": 1,
     "document": "proponente 0148844.06-02-2025.pdf",
     "excerpt": "Reference is made to the Turn-key EPC Contract signed by and between: EG Marconi S.R.L, EG Volta S.R.L, EG Sole S.R.L, EG Rinnovabili S.R.L and SF Celeste (the “Owner”) and"
-   }
+   },
+   "esecuzione": null
   }
  ],
  "altri_soggetti": [
@@ -1525,15 +1537,29 @@
   {
    "label": "Recapiti",
    "reason": "554 recapiti non attribuibili a un soggetto preciso: non mostrati"
-  },
-  {
-   "label": "Circet Italia S.p.A.",
-   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
-  },
-  {
-   "label": "EG Marconi S.r.l.",
-   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "A",
+  "imprese": [
+   {
+    "impresa": "Circet Italia S.p.A.",
+    "partita_iva": "01481120697",
+    "ruolo": "Impresa esecutrice",
+    "ambito": "connessione / cavidotto",
+    "evidenza": "A",
+    "source": {
+     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-113-2020&file_id=f_1332484868532",
+     "page": 1,
+     "document": "Allegato CIL Cavidotto EG SOLE firmata-signed.pdf",
+     "excerpt": "L’impresa Esecutrice Circet Italia S.p.A"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }

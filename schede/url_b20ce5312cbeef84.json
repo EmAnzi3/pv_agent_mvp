@@ -204,7 +204,7 @@
    "name": "Tecnolines Italia S.r.l.",
    "kind": "società",
    "roles": [
-    "Impresa esecutrice (da confermare)"
+    "Impresa esecutrice (indicata negli elaborati)"
    ],
    "vat": null,
    "vat_group": false,
@@ -216,7 +216,20 @@
     "page": 1,
     "document": "T_003_ORTOFOTO_1-1_REV00",
     "excerpt": "IMPRESA ESECUTRICE: Tecnolines Italia S.r.l."
-   }
+   },
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1300426",
+      "page": 1,
+      "document": "T_003_ORTOFOTO_1-1_REV00",
+      "excerpt": "IMPRESA ESECUTRICE: Tecnolines Italia S.r.l."
+     }
+    }
+   ]
   }
  ],
  "altri_soggetti": [
@@ -814,5 +827,27 @@
    "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Tecnolines Italia S.r.l.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1300426",
+     "page": 1,
+     "document": "T_003_ORTOFOTO_1-1_REV00",
+     "excerpt": "IMPRESA ESECUTRICE: Tecnolines Italia S.r.l."
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ }
 }
