@@ -592,6 +592,7 @@
   cursor: pointer; margin: 0; vertical-align: middle;
 }
 .sc-btn:hover { background: var(--accent, #0f766e); color: #fff; }
+.sc-epc { font-size: 11px; font-weight: 700; color: #92400e; background: #fef3c7; border-radius: 999px; padding: 2px 8px; white-space: nowrap; }
 @media (prefers-reduced-motion: no-preference) { .sc-panel:not([hidden]) { animation: sc-in .18s ease-out; } }
 @keyframes sc-in { from { transform: translateX(24px); opacity: .6; } to { transform: none; opacity: 1; } }
 
@@ -794,6 +795,8 @@
             <option value="">Tutti i dati</option>
             <option value="punctual">Solo pipeline operativa</option>
             <option value="terna">Solo radar Terna</option>
+            <option value="card">Solo con scheda</option>
+            <option value="epc">Solo con impresa esecutrice nota</option>
           </select>
           <select id="sourceFilter"></select>
           <select id="regionFilter"></select>
@@ -1058,6 +1061,18 @@
       <span class="sc-lv lv-stimata">Stima<\/span> intervallo calcolato, non una data certa<\/p>`;
     return `<section class="sc-sec"><h3>Tempistica dei lavori<\/h3>${body}${notes}${rows.length ? legend : ''}<\/section>`;
   }
+  function execution(x) {
+    if (!x || !(x.imprese || []).length) return '';
+    const lv = { A: ['documentata', 'Atto di cantiere'], B: ['prescritta', 'Da elaborati'] };
+    const rows = x.imprese.map(r => `<tr>
+        <td><span class="sc-lv lv-${lv[r.evidenza][0]}">${esc(lv[r.evidenza][1])}<\/span><\/td>
+        <td><strong>${esc(r.impresa)}<\/strong><div class="sc-fine">${esc(r.ruolo)} · ${esc(r.ambito)}${r.partita_iva ? ' · P. IVA ' + esc(r.partita_iva) : ''}<\/div><\/td>
+        <td class="sc-tv">${src(r.source)}<\/td><\/tr>`).join('');
+    const leg = x.legenda || {};
+    return `<section class="sc-sec"><h3>Chi costruisce<\/h3><table class="sc-tt"><tbody>${rows}<\/tbody><\/table>
+      <p class="sc-fine sc-leg"><span class="sc-lv lv-documentata">Atto di cantiere<\/span> ${esc(leg.A || '')} ·
+      <span class="sc-lv lv-prescritta">Da elaborati<\/span> ${esc(leg.B || '')}<\/p><\/section>`;
+  }
   function render(card) {
     const l = card.ubicazione || {};
     const withProv = (l.comuni || []).some(c => /\(/.test(c));
@@ -1080,7 +1095,7 @@
         <\/div>
       <\/div>
       ${tiles(card.sintesi)}
-      <div class="sc-body">${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
+      <div class="sc-body">${execution(card.esecuzione)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
         <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.completa ? '' : ' (lettura incompleta)'};
           aggiornata il ${esc((card.updated || '').split('-').reverse().join('/'))}. ${esc(card.avvertenza)}<\/p>
       <\/div>`;
@@ -1222,7 +1237,9 @@
 
     function schedaButton(row) {
       const s = row && row.project_key ? schedeIndex[row.project_key] : null;
-      return s ? ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>` : '';
+      if (!s) return '';
+      const epc = s.epc ? ` <span class="sc-epc" title="${s.epc === 'A' ? 'Impresa esecutrice in un atto di cantiere' : 'Impresa esecutrice indicata negli elaborati'}">EPC ${s.epc === 'A' ? '✓' : '?'}</span>` : '';
+      return ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>${epc}`;
     }
 
     function setText(id, value) {
@@ -1412,6 +1429,8 @@
 
       if (dataKind === 'punctual' && isTerna(record)) return false;
       if (dataKind === 'terna' && !isTerna(record)) return false;
+      if (dataKind === 'card' && !(record.project_key && schedeIndex[record.project_key])) return false;
+      if (dataKind === 'epc' && !(record.project_key && schedeIndex[record.project_key] && schedeIndex[record.project_key].epc)) return false;
       if (source && (record.source_group || record.source) !== source) return false;
       if (region && record.region !== region) return false;
       if (province && record.province !== province) return false;

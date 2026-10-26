@@ -1473,6 +1473,8 @@ __SCHEDA_CSS__
             <option value="">Tutti i dati</option>
             <option value="punctual">Solo pipeline operativa</option>
             <option value="terna">Solo radar Terna</option>
+            <option value="card">Solo con scheda</option>
+            <option value="epc">Solo con impresa esecutrice nota</option>
           </select>
           <select id="sourceFilter"></select>
           <select id="regionFilter"></select>
@@ -1632,7 +1634,9 @@ __SCHEDA_CSS__
 
     function schedaButton(row) {
       const s = row && row.project_key ? schedeIndex[row.project_key] : null;
-      return s ? ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>` : '';
+      if (!s) return '';
+      const epc = s.epc ? ` <span class="sc-epc" title="${s.epc === 'A' ? 'Impresa esecutrice in un atto di cantiere' : 'Impresa esecutrice indicata negli elaborati'}">EPC ${s.epc === 'A' ? '✓' : '?'}</span>` : '';
+      return ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>${epc}`;
     }
 
     function setText(id, value) {
@@ -1822,6 +1826,8 @@ __SCHEDA_CSS__
 
       if (dataKind === 'punctual' && isTerna(record)) return false;
       if (dataKind === 'terna' && !isTerna(record)) return false;
+      if (dataKind === 'card' && !(record.project_key && schedeIndex[record.project_key])) return false;
+      if (dataKind === 'epc' && !(record.project_key && schedeIndex[record.project_key] && schedeIndex[record.project_key].epc)) return false;
       if (source && (record.source_group || record.source) !== source) return false;
       if (region && record.region !== region) return false;
       if (province && record.province !== province) return false;

@@ -187,6 +187,18 @@
       <span class="sc-lv lv-stimata">Stima</span> intervallo calcolato, non una data certa</p>`;
     return `<section class="sc-sec"><h3>Tempistica dei lavori</h3>${body}${notes}${rows.length ? legend : ''}</section>`;
   }
+  function execution(x) {
+    if (!x || !(x.imprese || []).length) return '';
+    const lv = { A: ['documentata', 'Atto di cantiere'], B: ['prescritta', 'Da elaborati'] };
+    const rows = x.imprese.map(r => `<tr>
+        <td><span class="sc-lv lv-${lv[r.evidenza][0]}">${esc(lv[r.evidenza][1])}</span></td>
+        <td><strong>${esc(r.impresa)}</strong><div class="sc-fine">${esc(r.ruolo)} · ${esc(r.ambito)}${r.partita_iva ? ' · P. IVA ' + esc(r.partita_iva) : ''}</div></td>
+        <td class="sc-tv">${src(r.source)}</td></tr>`).join('');
+    const leg = x.legenda || {};
+    return `<section class="sc-sec"><h3>Chi costruisce</h3><table class="sc-tt"><tbody>${rows}</tbody></table>
+      <p class="sc-fine sc-leg"><span class="sc-lv lv-documentata">Atto di cantiere</span> ${esc(leg.A || '')} ·
+      <span class="sc-lv lv-prescritta">Da elaborati</span> ${esc(leg.B || '')}</p></section>`;
+  }
   function render(card) {
     const l = card.ubicazione || {};
     const withProv = (l.comuni || []).some(c => /\(/.test(c));
@@ -209,7 +221,7 @@
         </div>
       </div>
       ${tiles(card.sintesi)}
-      <div class="sc-body">${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
+      <div class="sc-body">${execution(card.esecuzione)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
         <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.completa ? '' : ' (lettura incompleta)'};
           aggiornata il ${esc((card.updated || '').split('-').reverse().join('/'))}. ${esc(card.avvertenza)}</p>
       </div>`;
