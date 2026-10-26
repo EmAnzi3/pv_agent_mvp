@@ -250,6 +250,16 @@ def _example_source(f: dict, titles: dict) -> dict:
     return _source({"url": c.get("url"), "page": c.get("page"), "excerpt": c.get("excerpt")}, titles)
 
 
+# contexts in which a number is not the plant's value for that field
+NOT_THIS_VALUE = [
+    ("tech.pv_dc_mwp", re.compile(r"(?i)\b(?:blocc\w*|sottocamp\w*|ciascun\w*|ogni|singol\w*|unit[aà]|inverter|cabin\w*|"
+                                  r"modul\w*|sezion\w*|lotto|campo)\s+(?:da|di)\s+(?:circa\s+)?\d")),
+    ("tech.nominal_power_mw", re.compile(r"(?i)\b(?:blocc\w*|sottocamp\w*|ciascun\w*|ogni|singol\w*|unit[aà]|inverter|cabin\w*|"
+                                         r"modul\w*|sezion\w*)\s+(?:da|di)\s+(?:circa\s+)?\d")),
+    ("schedule.duration.construction", re.compile(r"(?i)interferenz|sfasament|sovrapposizion")),
+]
+
+
 def _pick(d: dict, field: str, titles: dict, accept=None) -> dict | None:
     """Most frequent value of a field (equivalent spellings and durations merged); alternatives kept as hints."""
     g = next((g for g in d["groups"] if g["field"] == field and g["values"] and isinstance(g["values"][0], dict)
@@ -260,6 +270,9 @@ def _pick(d: dict, field: str, titles: dict, accept=None) -> dict | None:
     for x in g["values"]:
         if not isinstance(x, dict) or (accept and not accept(x["value"])):
             continue
+        ex = ((x.get("example") or {}).get("excerpt") or "")
+        if any(field.startswith(pref) and rx.search(ex) for pref, rx in NOT_THIS_VALUE):
+            continue                     # the value describes a part (a block, the fence, an interference window)
         k = _fmt(field, x["value"])
         if field.startswith("schedule.duration.") and isinstance(x["value"], dict) and x["value"].get("max"):
             mx = x["value"]["max"]
@@ -393,7 +406,11 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
     for g in d["groups"]:
         if g["field"] == "tech.piles_count" and g["values"] and isinstance(g["values"][0], dict):
             v = g["values"][0]
-            piles[g.get("subject") or "non specificato"] = (v, len(g["values"]) > 1)
+            subj = g.get("subject") or "non specificato"
+            if subj in ("totale", "non specificato") and re.search(r"(?i)recinzion|rete\s+metallica|filo\s+spinato",
+                                                                    (v.get("example") or {}).get("excerpt") or ""):
+                subj = "recinzione"                  # fence posts counted as plant piles
+            piles.setdefault(subj, (v, len(g["values"]) > 1))
     structural = [(k, piles[k]) for k in ("totale", "tracker", "strutture fisse") if k in piles]
     if structural:
         k, (v, multi) = structural[0]
@@ -884,9 +901,13 @@ def _gantt(d: dict, titles: dict) -> dict:
                 v = f["value"]
                 if v["name"].lower() in seen or re.match(r"(?i)durata\b", v["name"]):     # totals are shown apart
                     continue
+                if not good_phase_name(v["name"]):
+                    continue
                 seen.add(v["name"].lower())
                 raw = re.sub(r"\s(?:g|gg|d)$", " giorni", v["raw"])                 # '30 g' -> '30 giorni' (not 'giorniiorni')
                 phase_durations.append({"name": v["name"], "duration": raw, "months": v["months"]})
+            if len(phase_durations) < 2 or sum(bool(DISMANTLE.search(x["name"])) for x in phase_durations) > len(phase_durations) / 2:
+                phase_durations = []      # one stray row, or the decommissioning plan: not the works programme
             dur_src = _source({"url": u, "page": fs[0]["citation"]["page"]}, titles)
             if not bars:
                 src = dur_src
@@ -994,7 +1015,7 @@ def _authorisation(d: dict, record: dict, p: dict, titles: dict) -> dict | None:
                          "source": _source({"url": f["citation"]["url"], "page": f["citation"].get("page"),
                                             "excerpt": f["citation"].get("excerpt")}, titles)})
     for title in {record.get("title"), p.get("title")} - {None}:
-        for m in ACT_RE.finditer(title):
+        for m in list(ACT_RE.finditer(title)) or list(TITLE_ACT_RE.finditer(title)):
             iso = _parse_date(m.group("date"))
             if iso and int(iso[:4]) >= 2015 and AUTH_CTX.search(title):
                 acts.append({"type": re.sub(r"\s+", " ", m.group("type")).strip(), "number": m.group("num").strip(), "date": iso,
@@ -1015,6 +1036,29 @@ def _authorisation(d: dict, record: dict, p: dict, titles: dict) -> dict | None:
     return max(acts, key=lambda a: (a["date"], a["own"]))
 
 
+# phase tables read from free text: sentence fragments, workforce/equipment lists and place names are not phases
+FRAGMENT_START = re.compile(r"^[a-zà-ú(),;)]")
+FRAGMENT = re.compile(r"(?i)\b(?:prevede|previst[oa]|può\s+essere|qualora|è\s+però|si\s+possono|"
+                      r"stimat[oa]|la\s+società|durata\s+complessiva)\b|\b(?:circa|di|dei|delle|in|per|i|e)$")
+WORKFORCE = re.compile(r"(?i)\bn\.\s*\d+\s+circa|\boperai\b|\belettricisti\b|^operatore$|autocarr|escavator|lavoratori")
+DISMANTLE = re.compile(r"(?i)rimozion|smontaggi|dismission|smantellament|ripristino\s+(?:dello\s+stato|terreno)")
+
+
+def good_phase_name(name: str) -> bool:
+    n = (name or "").strip()
+    if len(n) < 4 or len(n) > 80 or FRAGMENT_START.search(n) or FRAGMENT.search(n) or WORKFORCE.search(n):
+        return False
+    if n.isupper() and "," in n:                     # 'RONCOFERRARO, CASTEL D'ARIO E ...': a list of places
+        return False
+    return True
+
+
+# procedure titles also write the act without 'n.' ('Determinazione G14612 del 25/10/2019')
+TITLE_ACT_RE = re.compile(
+    r"(?i)(?P<type>determinazion[ei](?:\s+dirigenziale)?|determina|decreto(?:\s+dirigenziale)?|"
+    r"provvedimento\s+autorizzatorio\s+unico(?:\s+regionale)?|provvedimento\s+unico(?:\s+in\s+materia\s+ambientale)?|"
+    r"autorizzazione\s+unica|P\.?A\.?U\.?R\.?)\s+(?:n\.?\s*|n°\s*|nr\.?\s*)?(?P<num>[A-Z]{0,2}\d{3,6}(?:/\d{2,4})?)\s+"
+    r"del(?:l')?\s+(?P<date>[0-3]?\d[/.\-][01]?\d[/.\-]20\d{2})")
 ACT_DOC = re.compile(r"(?i)decret|determin|provvediment|autorizzazion|P\.?A\.?U\.?R|parere|prescrizion|esito|delibera|atto")
 
 
