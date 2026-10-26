@@ -19,7 +19,9 @@ TABLES = [
     {"procedura": "FER X transitorio – fotovoltaico NZIA (PC_FTVNZIA_2025_01)", "pubblicata": "2025-12-10",
      "url": BASE + "Graduatoria_DM_FERXtransitorio_PC_FTVNZIA_2025_TabA.pdf"},
 ]
-UA = {"User-Agent": "Mozilla/5.0 (PV Agent; GSE rankings reader)"}
+UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      "Accept": "application/pdf,text/html;q=0.9,*/*;q=0.8", "Accept-Language": "it-IT,it;q=0.9",
+      "Referer": "https://www.gse.it/servizi-per-te/fonti-rinnovabili/ferx/graduatorie"}
 
 
 def pdf_lines(raw: bytes) -> list[str]:
@@ -33,8 +35,14 @@ def pdf_lines(raw: bytes) -> list[str]:
 
 def dump(get: Callable[[str], Any] | None = None) -> list[str]:
     import requests
-    get = get or (lambda u: requests.get(u, headers=UA, timeout=60))
-    notes = []
+    sess = requests.Session()
+    sess.headers.update(UA)
+    try:
+        home = sess.get("https://www.gse.it/servizi-per-te/fonti-rinnovabili/ferx/graduatorie", timeout=60)
+        notes = [f"pagina graduatorie: HTTP {home.status_code}"]
+    except Exception as exc:
+        notes = [f"pagina graduatorie: {exc}"]
+    get = get or (lambda u: sess.get(u, timeout=60))
     for t in TABLES:
         r = get(t["url"])
         lines = pdf_lines(r.content) if r.status_code == 200 else []
