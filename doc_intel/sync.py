@@ -64,4 +64,6 @@ def build_index(folder: str | Path) -> dict:
             continue
         if c.get("project_key"):
             index[c["project_key"]] = {"file": f.name, "updated": c.get("updated")}
+            if c.get("esecuzione"):
+                index[c["project_key"]]["epc"] = c["esecuzione"].get("livello")
     return index

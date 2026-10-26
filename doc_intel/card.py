@@ -116,6 +116,61 @@ ROLE_TEXT = {"role.proponent": "Proponente", "role.designer": "Progettista", "ro
              "role.epc": "EPC (da confermare)", "role.contractor": "Impresa esecutrice (da confermare)",
              "role.bop": "BoP (da confermare)", "role.supplier": "Fornitore (da confermare)", "role.om": "O&M (da confermare)"}
 ROLE_ORDER = list(ROLE_TEXT)
+
+# --- execution roles (EPC / contractor / BoP): evidence grade -----------------------------------
+# A = named in a site act (notice of works start, CIL/SCIA, safety notice, contract, delivery minutes)
+# B = named in the title block / header of the project drawings or reports (designated, not proven)
+# rejected = the proponent itself, a utility/public body, or a name that the excerpt marks as the
+#            client/owner/designer
+EXEC_FIELDS = {"role.epc", "role.contractor", "role.bop"}
+EXEC_NAME = {"role.epc": "EPC", "role.contractor": "Impresa esecutrice", "role.bop": "BoP"}
+SITE_ACT = re.compile(r"(?i)comunicazion\w*\s+(?:di\s+)?(?:inizio|avvio)\s+(?:dei\s+)?lavori|inizio\s+lavori|avvio\s+lavori|"
+                      r"notifica\s+preliminare|\bCIL[AS]?\b|\bSCIA\b|contratto|turn-?key|consegna\s+(?:dei\s+)?lavori|"
+                      r"piano\s+operativo\s+di\s+sicurezza|\bPOS\b|\bDURC\b|cantierizzazione")
+NOT_EXECUTOR = re.compile(r"(?i)\be-?\s?distribuzione\b|enel\s+distribuzione|\bterna\b|fibercop|telecom|\btim\b|open\s+fiber|"
+                          r"\bsnam\b|italgas|\bacea\b|\banas\b|\brfi\b|ferrovie|consorzio\s+di\s+bonifica|\bcomune\b|regione|provincia")
+STATEMENT = re.compile(r"(?i)impresa\s+(?:esecutrice|affidataria|appaltatrice)(?:\s+(?:dei\s+)?lavori)?\s*(?:è|e'|:)|"
+                       r"affidataria\s+dei\s+lavori|lavori\s+(?:sono\s+)?(?:stati\s+)?affidati\s+a")
+DRAWING_DOC = re.compile(r"(?i)\btav|planimetr|ortofoto|layout|sezion|stato\s+di\s+fatto|particellare|elaborat\w*\s+grafic|"
+                         r"\b[A-Z]{1,3}\d{0,2}_|\bREV\d|rev[\s_.-]?(?:[0-9]{1,2}|[A-Z])\b")
+CLIENT_LABEL = re.compile(r"(?i)\b(?:committente|owner|propriet\w+|titolare|proponente|richiedente|progettazione|progettista)\b")
+
+
+def execution_grade(name: str, source: dict | None, proponent_keys: set[str]) -> str | None:
+    """'A', 'B' or None (rejected) for a company proposed as EPC/contractor/BoP."""
+    if not name or NOT_EXECUTOR.search(name) or _ckey(name) in proponent_keys:
+        return None
+    ex = (source or {}).get("excerpt") or ""
+    doc = (source or {}).get("document") or ""
+    if (source or {}).get("document") == "scheda ufficiale del procedimento" or not ex:
+        return None                                  # the authority's sheet names the proponent, never the builder
+    first = re.escape(name.split()[0])
+    m = re.search(first, ex, re.I)
+    if m:
+        before, after = ex[max(0, m.start() - 40):m.start()], ex[m.end():m.end() + 80]
+        if CLIENT_LABEL.search(before) and not re.search(r"(?i)esecutric|appaltatric|affidatari|EPC|contractor", before):
+            return None
+        if re.search(r"(?i)the\s+[\"“']?owner|committente", after[:60]):
+            return None
+        if re.search(r"(?i)[\"“(]\s*the\s+[\"“']?owner", ex[m.start():]) and not re.search(
+                r"(?i)contractor[\"”']?\)", ex[m.start():]):
+            return None                              # 'contract between <owner companies> (the "Owner") and ...'
+    if SITE_ACT.search(doc) or SITE_ACT.search(ex):
+        return "A"
+    if STATEMENT.search(ex) and not DRAWING_DOC.search(doc):
+        return "A"                                   # formal letter stating who executes the works
+    if re.search(r"(?i)a\s+carico\s+dell[a']\s*impresa|saranno\s+posti\s+a\s+carico", ex):
+        return None                                  # generic clause followed by a list of utilities
+    return "B"
+
+
+def execution_scope(source: dict | None) -> str:
+    t = f"{(source or {}).get('document') or ''} {(source or {}).get('excerpt') or ''}"
+    if re.search(r"(?i)opere\s+civili", t):
+        return "opere civili"
+    if re.search(r"(?i)cavidott|connession|\bSE\b|sottostazion|stazione\s+elettrica|elettrodott", t):
+        return "connessione / cavidotto"
+    return "impianto"
 COMPANY_FORM = re.compile(r"(?i)\bs\.?\s?r\.?\s?l\b|\bs\.?\s?p\.?\s?a\b|\bs\.?\s?n\.?\s?c\b|\bs\.?\s?a\.?\s?s\b|\bs\.\s?s\.?|"
                           r"societ[aà]|\bgmbh\b|\bltd\b|\bs\.?\s?l\.?\s?u?\b|\bspa\b|\bsrl\b")
 PERSON_TITLE = re.compile(r"(?i)^(?:ing|arch|geol|dott(?:\.ssa)?|dr|geom|per\.?\s?ind|avv|agr|prof|p\.?\s?i)\b\.?")
@@ -448,11 +503,22 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
             if _garbled(str(x["value"])):
                 continue
             name = _clean_subject(str(x["value"]))
+            role_text = ROLE_TEXT[field]
+            if field in EXEC_FIELDS:
+                src = _source(x.get("example"), titles)
+                props = {k for en in ents if "Proponente" in en["roles"] for k in en["keys"]}
+                grade = execution_grade(name, src, props)
+                if grade is None:
+                    continue                     # the proponent, a utility or a client named as 'executor'
+                role_text = f"{EXEC_NAME[field]} ({'atto di cantiere' if grade == 'A' else 'indicata negli elaborati'})"
             e = get(name, "company" if is_company(name) else "person")
             if e is None:
                 continue
-            if ROLE_TEXT[field] not in e["roles"]:
-                e["roles"].append(ROLE_TEXT[field])
+            if role_text not in e["roles"]:
+                e["roles"].append(role_text)
+            if field in EXEC_FIELDS:
+                e.setdefault("execution", []).append({"ruolo": EXEC_NAME[field], "evidenza": grade,
+                                                      "ambito": execution_scope(src), "source": src})
             e["mentions"] += x["occurrences"]
             e["role_source"] = e["role_source"] or _source(x.get("example"), titles)
     # 3. contacts, attached to the person or company printed next to them
@@ -544,6 +610,7 @@ def _subjects(d: dict, titles: dict, sheet_proponent: str | None = None, sheet_u
         item = {"name": display, "kind": "società" if e["kind"] == "company" else "persona", "roles": e["roles"],
                 "vat": e["vat"], "vat_group": e.get("vat_group", False),
                 "verified": bool(e["registry"]),
+                "esecuzione": e.get("execution") or None,
                 "office": (e["registry"].get("address") or "").title() if e["registry"] else None,
                 "contacts": [{"type": kind_text[f], "value": v, "occurrences": c["n"],
                               "source": _example_source(c["fact"], titles)} for (f, v), c in contacts[:6]],
@@ -1147,6 +1214,24 @@ def _register(p: dict) -> dict | None:
             "potenza_mw": sh.get("power_mw"), "procedimento_collegato": linked}
 
 
+def _execution_summary(entities: list[dict]) -> dict | None:
+    """Who builds the plant, as far as the documents say: best evidence first (A = site act)."""
+    rows = []
+    for e in entities:
+        for x in e.get("esecuzione") or []:
+            rows.append({"impresa": e["name"], "partita_iva": e.get("vat"), "ruolo": x["ruolo"], "ambito": x["ambito"],
+                         "evidenza": x["evidenza"], "source": x["source"]})
+    if not rows:
+        return None
+    rows.sort(key=lambda r: (r["evidenza"], r["ambito"] != "impianto"))
+    best = rows[0]["evidenza"]
+    return {"livello": best, "imprese": rows,
+            "legenda": {"A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, "
+                             "contratto, piano di cantierizzazione) o in una dichiarazione formale",
+                        "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: "
+                             "designata, non ancora provata"}}
+
+
 # --------------------------------------------------------------------------------------------- card
 def build_card(d: dict[str, Any]) -> dict[str, Any]:
     p = d["project"]
@@ -1157,7 +1242,7 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
     if dropped:
         open_points.append({"label": "Recapiti", "reason": f"{dropped} recapiti non attribuibili a un soggetto preciso: non mostrati"})
     for e in main:
-        if any("da confermare" in r for r in e["roles"]):
+        if any("indicata negli elaborati" in r or "da confermare" in r for r in e["roles"]):
             open_points.append({"label": e["name"], "reason": "ruolo esecutivo indicato negli elaborati, da confermare"})
     loc = _location(d, p, record, titles)
     gantt = _gantt(d, titles)
@@ -1183,6 +1268,7 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         "soggetti": main,
         "altri_soggetti": others,
         "stato": status,
+        "esecuzione": _execution_summary(main + others),
         "registro": register,
         "tempistica": timing,
         "cronoprogramma": gantt,
@@ -1207,6 +1293,8 @@ def write_card(card: dict, out_dir: str | Path) -> Path:
     idx_path = out / "index.json"
     idx = json.loads(idx_path.read_text(encoding="utf-8")) if idx_path.is_file() else {}
     idx[card["project_key"]] = {"file": path.name, "updated": card["updated"], "title": card["title"]}
+    if card.get("esecuzione"):
+        idx[card["project_key"]]["epc"] = card["esecuzione"]["livello"]
     idx_path.write_text(json.dumps(idx, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     return path
 
