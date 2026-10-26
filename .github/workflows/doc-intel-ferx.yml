@@ -1,0 +1,41 @@
+name: Doc Intel FER X rankings (GSE)
+# Downloads the GSE FER X photovoltaic rankings (Table A = awarded) and matches them to radar projects.
+# Saves ferx/awarded.json and ferx/matches.json on the memory branch. On a pull request: dry run only.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 5 * * 1'      # weekly (Monday): new auctions or updated tables
+  pull_request:
+    paths:
+      - 'doc_intel/ferx.py'
+      - '.github/workflows/doc-intel-ferx.yml'
+permissions:
+  contents: write
+jobs:
+  ferx:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -q requests beautifulsoup4 pypdf pymupdf
+      - name: Memory branch
+        run: |
+          git config user.name "doc-intel-bot"
+          git config user.email "doc-intel-bot@users.noreply.github.com"
+          git fetch -q origin doc-intel-state:doc-intel-state
+          git worktree add -q .mem doc-intel-state
+      - name: Rankings and match
+        run: python -m doc_intel ferx --data docs/data.json --memory .mem --annotate
+      - name: Save on the memory branch
+        if: github.event_name != 'pull_request'
+        run: |
+          cd .mem && git add ferx && (git diff --cached --quiet && exit 0 || git commit -q -m "doc-intel ferx: GSE rankings matched to radar projects (run ${{ github.run_id }})")
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
+            git push -q origin HEAD:doc-intel-state && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
