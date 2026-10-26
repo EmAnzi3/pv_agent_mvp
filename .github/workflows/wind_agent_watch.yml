@@ -1,9 +1,11 @@
 name: Wind Radar source and company watch
 
 on:
-  # Manual only after the migration from project_radar_mvp: the old repository keeps its daily
-  # schedule until it is switched off there, so the portals are never queried twice a day.
   workflow_dispatch:
+  schedule:
+    # Daily trigger; runtime state enforces 1/3/7/14/30-day source/company cadences.
+    # (Moved here from project_radar_mvp, where this workflow is now disabled.)
+    - cron: "40 5 * * *"
 
 permissions:
   contents: read
