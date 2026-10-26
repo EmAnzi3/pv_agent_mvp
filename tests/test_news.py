@@ -39,3 +39,15 @@ class News(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class NewsPrecision(unittest.TestCase):
+    def test_roundup_and_far_apart_are_not_matches(self):
+        recs = [{"project_key": "k", "municipalities": "Craco", "power_mw": 19.95, "proponent": "Ambra"}]
+        roundup = {"title": "Valutazioni ambientali: gli esiti di settembre", "text": "Craco 19,95 MW parere favorevole. EPC"}
+        self.assertEqual(match(roundup, recs), [])
+        far = {"title": "Agrivoltaico, partono i lavori", "text": "Il cantiere di Brindisi da 30 MW è avviato. "
+               "Altre notizie. Ancora altro. A Craco c'è un altro progetto fotovoltaico da 19,95 MW in VIA."}
+        self.assertEqual(match(far, recs), [])
+        near = {"title": "Fotovoltaico, partono i lavori", "text": "A Craco è stato avviato il cantiere dell'impianto fotovoltaico da 19,95 MWp."}
+        self.assertEqual([b for _, b in match(near, recs)], ["comune + MW"])

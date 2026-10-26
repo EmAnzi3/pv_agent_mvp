@@ -4,6 +4,13 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-26 — Notizie di stampa (livello C, da verificare): ogni giorno `doc-intel-news.yml` legge pv-magazine.it, QualEnergia, Rinnovabili.it e SolareB2B, tiene gli articoli su cantieri/contratti fotovoltaici e li abbina a un progetto solo se comune e potenza (o proponente) compaiono nello stesso passaggio con parole di cantiere; esclusi riepiloghi VIA, graduatorie e offerte di lavoro. Etichetta «Stampa», sezione nella scheda, opzione nel filtro EPC.
+- 2026-10-26 — Evidenza EPC/impresa esecutrice: ruoli esecutivi classificati A (atto di cantiere o dichiarazione formale) / B (cartiglio degli elaborati); esclusi proponente, gestori di rete e committenti; sezione «Chi costruisce» nella scheda, etichetta EPC e filtro dedicato in dashboard.
+- 2026-10-26 — Esclusi dal radar i progetti MASE con tutte le procedure «Archiviata» (passo `[3H2/8]`, audit `reports/mase_archived_excluded.csv`); stato della procedura scritto sui record MASE.
+- 2026-10-26 — Radar eolico migrato come sezione `docs/wind/` (dashboard, dati canonici v0.5, motore di monitoraggio, controlli); aggiornamento quotidiano spostato qui da project_radar_mvp.
+- 2026-10-26 — Portale VIA Sicilia: accesso prudente dal PC (1 progetto e 150 documenti al giorno, 5 s di pausa, niente elaborati grafici).
+- 2026-10-23 — Chiavi progetto stabili tra i run (passo `[3ZQ/8]`), copie delle schede fuori da Git (`reports/schede_cache`), collector Toscana sulla nuova API pubblica, pulizia falsi Taranto con provincia da elenco ISTAT.
+
 - 2026-10-21 — Schede progetto in dashboard: pulsante «Scheda» accanto ad «Apri» per i progetti analizzati (sintesi, società e contatti, cronoprogramma, ubicazione per lotto, stato del progetto). Le schede si costruiscono su GitHub Actions: i nuovi progetti dopo il push di `docs/data.json`, l'arretrato ogni notte (35 progetti, potenza decrescente). Nuovo passo `[6B/8]` in `aggiorna_dashboard_senza_docker.bat` che scarica in `docs/schede` le schede pronte.
 - doc-intel: scheda progetto v2 (sintesi dei dati essenziali, società con i rispettivi contatti, Gantt ricostruito dal cronoprogramma vettoriale o dalle tabelle con date, ubicazione con link a Google Maps); rianalisi selettiva dei documenti (`--reanalyse-match`).
 - 2026-10-20 — `doc_intel`: i documenti originali vengono eliminati dopo l'estrazione; memoria persistente per progetto (manifest, fatti per SHA-256) con rilevamento di documenti nuovi, modificati o rimossi; adapter regionali Emilia-Romagna, Lazio (Box), Veneto (Nextcloud), regole Basilicata e Sistema Puglia.

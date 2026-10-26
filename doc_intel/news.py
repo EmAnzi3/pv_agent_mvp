@@ -4,11 +4,12 @@ Daily: read the RSS feeds of the sector press (pv-magazine.it, QualEnergia, Rinn
 keep the articles about photovoltaic plants being built or contracted (EPC, contract, works start...),
 extract MW, municipalities (ISTAT list), and the companies named as builders, then match them to the
 radar records:
-  * 'comune + MW'        - a municipality of the record is named and one MW value is within 5 %
-                           (several plants in that municipality: only the closest power);
-  * 'comune + proponente' - a municipality of the record and the record's proponent are named;
-  * 'provincia + MW + proponente' - no municipality, but province/region, MW within 5 % and proponent.
-A municipality alone or MW alone never makes a match. Matches are information to verify, never a
+  * 'comune + MW'         - a municipality of the record and its power (within 5 %) are named in the SAME
+                            passage, together with construction/contract wording (several plants in
+                            that municipality: only the closest power);
+  * 'comune + proponente' - the same, with the proponent instead of the power.
+A municipality alone or MW alone never makes a match; round-ups (VIA outcomes, rankings) and job
+listings are skipped. Matches are information to verify, never a
 confirmed EPC (levels A/B come only from the project documents).
 
 Memory branch: news/items.json (relevant articles, 400 days) and news/matches.json
@@ -136,31 +137,54 @@ def _comp_key(name: str) -> str:
     return re.sub(r"\b(s ?r ?l|s ?p ?a|srl|spa|s ?a|societa|agricola|soc|unipersonale)\b", " ", s).strip()
 
 
+# construction / contract wording that must sit in the SAME passage as the plant (a VIA outcome or a
+# company event is not construction news)
+SITE_WORDS = re.compile(r"(?i)\bEPC\b|commess|contratt|aggiudic|appalt|cantier|avvio\s+(?:dei\s+)?lavori|"
+                        r"inizio\s+(?:dei\s+)?lavori|in\s+costruzione|costruzione\s+(?:è|e'|sono|inizi|partit|avviat)|"
+                        r"inaugur|entrat\w*\s+in\s+esercizio|allacciat|connesso\s+alla\s+rete|financial\s+close|"
+                        r"balance\s+of\s+plant|\bBoP\b|notice\s+to\s+proceed|realizzer[àa]")
+NOT_NEWS = re.compile(r"(?i)offerte\s+di\s+lavoro|webinar|\bdays\b|evento|convegno|graduatori|esiti\s+di|"
+                      r"valutazioni\s+ambientali:|rassegna|settimana\s+in")
+
+
+def passages(text: str) -> list[str]:
+    """Sentences, glued two by two (a plant is often named in one sentence and its builder in the next)."""
+    sents = [x for x in re.split(r"(?<=[.;!?])\s+", text) if x.strip()]
+    return [" ".join(sents[i:i + 2]) for i in range(len(sents))] or [text]
+
+
 def match(item: dict, records: list[dict]) -> list[tuple[dict, str]]:
-    text = f"{item['title']} {item['text']}"
-    mws, comuni = item.get("mw") or mw_values(text), {place_key(c) for c in (item.get("comuni") or municipalities(text))}
-    low = place_key(text)
-    out, by_mw = [], []
-    for r in records:
-        if r.get("is_terna") or not r.get("project_key"):
+    """Records named in a construction passage of the article: municipality + MW (or + proponent)
+    in the same passage as construction/contract wording. Round-ups and job listings are skipped."""
+    if NOT_NEWS.search(item.get("title") or ""):
+        return []
+    found: dict[str, tuple[dict, str, float]] = {}
+    for psg in passages(f"{item['title']}. {item['text']}"):
+        if not (SITE_WORDS.search(psg) and PV.search(psg)):
             continue
-        rmw = float(r.get("power_mw") or 0)
-        rc = {place_key(x) for x in re.split(r"[,;/]", str(r.get("municipalities") or "")) if x.strip()}
-        prop = _comp_key(str(r.get("proponent") or "").split(";")[0])
-        prop_hit = len(prop) >= 5 and prop in low
-        mw_hit = lambda tol: rmw > 0 and any(abs(v - rmw) <= tol * rmw for v in mws)
-        if rc & comuni:
-            if mw_hit(0.05):
-                by_mw.append((min(abs(v - rmw) / rmw for v in mws), r))
-            elif prop_hit:
-                out.append((r, "comune + proponente"))
-        elif prop_hit and mw_hit(0.05) and (str(r.get("province") or "") and re.search(rf"\b{re.escape(str(r['province']))}\b", text)
-                                            or (r.get("region") and str(r["region"]).lower() in text.lower())):
-            out.append((r, "provincia + MW + proponente"))
-    if by_mw:                 # several plants in the same municipality: only the closest power matches
-        best = min(d for d, _ in by_mw)
-        out += [(r, "comune + MW") for d, r in by_mw if d <= best + 0.005]
-    return out
+        mws, comuni = mw_values(psg), {place_key(c) for c in municipalities(psg)}
+        if not comuni:
+            continue
+        low, cands = place_key(psg), []
+        for r in records:
+            if r.get("is_terna") or not r.get("project_key"):
+                continue
+            rc = {place_key(x) for x in re.split(r"[,;/]", str(r.get("municipalities") or "")) if x.strip()}
+            if not rc & comuni:
+                continue
+            rmw = float(r.get("power_mw") or 0)
+            prop = _comp_key(str(r.get("proponent") or "").split(";")[0])
+            d = min((abs(v - rmw) / rmw for v in mws), default=9) if rmw > 0 else 9
+            if d <= 0.05:
+                cands.append((r, "comune + MW", d))
+            elif len(prop) >= 5 and prop in low:
+                cands.append((r, "comune + proponente", 1.0))
+        if cands:                # several plants in the same municipality: only the closest power
+            best = min(c[2] for c in cands)
+            for r, basis, d in cands:
+                if d <= best + 0.005 and r["project_key"] not in found:
+                    found[r["project_key"]] = (r, basis, d)
+    return [(r, basis) for r, basis, _ in found.values()]
 
 
 def run(data_json: str, memory: str, get: Callable[[str], Any] | None = None, backfill_pages: int = 0,

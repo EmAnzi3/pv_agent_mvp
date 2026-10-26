@@ -1480,6 +1480,7 @@ __SCHEDA_CSS__
             <option value="any">EPC trovato (qualsiasi evidenza)</option>
             <option value="A">EPC in atto di cantiere</option>
             <option value="B">EPC solo negli elaborati</option>
+            <option value="news">Notizie di stampa compatibili (da verificare)</option>
           </select>
           <select id="sourceFilter"></select>
           <select id="regionFilter"></select>
@@ -1639,9 +1640,11 @@ __SCHEDA_CSS__
 
     function schedaButton(row) {
       const s = row && row.project_key ? schedeIndex[row.project_key] : null;
-      if (!s) return '';
+      const nw = row && row.project_key && (window.PVNews || {})[row.project_key];
+      const press = nw ? ` <span class="sc-epc sc-press" title="Notizie di stampa compatibili con il progetto: da verificare">Stampa ${nw.length}</span>` : '';
+      if (!s) return press;
       const epc = s.epc ? ` <span class="sc-epc" title="${s.epc === 'A' ? 'Impresa esecutrice in un atto di cantiere' : 'Impresa esecutrice indicata negli elaborati'}">EPC ${s.epc === 'A' ? '✓' : '?'}</span>` : '';
-      return ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>${epc}`;
+      return ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>${epc}${press}`;
     }
 
     function setText(id, value) {
@@ -1833,7 +1836,9 @@ __SCHEDA_CSS__
       if (dataKind === 'terna' && !isTerna(record)) return false;
       if (dataKind === 'card' && !(record.project_key && schedeIndex[record.project_key])) return false;
       const epcSel = document.getElementById('epcFilter').value;
-      if (epcSel) {
+      if (epcSel === 'news') {
+        if (!(record.project_key && (window.PVNews || {})[record.project_key])) return false;
+      } else if (epcSel) {
         const s = record.project_key ? schedeIndex[record.project_key] : null;
         const lv = s && s.epc;
         if (!lv || (epcSel !== 'any' && lv !== epcSel)) return false;
@@ -2190,6 +2195,11 @@ __SCHEDA_CSS__
     // last dashboard update are read from the memory branch of the public repository
     const SCHEDE_LIVE = 'https://raw.githubusercontent.com/EmAnzi3/pv_agent_mvp/doc-intel-state/schede/';
     const getIndex = url => fetch(url, { cache: 'no-cache' }).then(r => r.ok ? r.json() : {}).catch(() => ({}));
+    // sector press matched to the projects (level C, to verify): read from the memory branch
+    getIndex(SCHEDE_LIVE.replace(/schede\/$/, 'news/matches.json')).then(n => {
+      window.PVNews = (n && n.projects) || {};
+      if (Object.keys(window.PVNews).length) { initTopProjects(); renderPipeline(); }
+    });
     Promise.all([getIndex('schede/index.json'), getIndex(SCHEDE_LIVE + 'live_index.json')])
       .then(([local, live]) => {
         const merged = {};

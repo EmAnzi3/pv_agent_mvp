@@ -593,6 +593,7 @@
 }
 .sc-btn:hover { background: var(--accent, #0f766e); color: #fff; }
 .sc-epc { font-size: 11px; font-weight: 700; color: #92400e; background: #fef3c7; border-radius: 999px; padding: 2px 8px; white-space: nowrap; }
+.sc-press { color: #1e3a8a; background: #dbeafe; }
 @media (prefers-reduced-motion: no-preference) { .sc-panel:not([hidden]) { animation: sc-in .18s ease-out; } }
 @keyframes sc-in { from { transform: translateX(24px); opacity: .6; } to { transform: none; opacity: 1; } }
 
@@ -802,6 +803,7 @@
             <option value="any">EPC trovato (qualsiasi evidenza)</option>
             <option value="A">EPC in atto di cantiere</option>
             <option value="B">EPC solo negli elaborati</option>
+            <option value="news">Notizie di stampa compatibili (da verificare)</option>
           </select>
           <select id="sourceFilter"></select>
           <select id="regionFilter"></select>
@@ -1078,6 +1080,15 @@
       <p class="sc-fine sc-leg"><span class="sc-lv lv-documentata">Atto di cantiere<\/span> ${esc(leg.A || '')} ·
       <span class="sc-lv lv-prescritta">Da elaborati<\/span> ${esc(leg.B || '')}<\/p><\/section>`;
   }
+  function press(key) {
+    const list = ((window.PVNews || {})[key] || []).slice(0, 6);
+    if (!list.length) return '';
+    const rows = list.map(n => `<li><a class="sc-src" href="${esc(safeHref(n.link))}" target="_blank" rel="noopener noreferrer">${esc(n.title)}<\/a>
+      <div class="sc-fine">${esc(n.source || '')}${n.date ? ' · ' + esc(n.date.split('-').reverse().join('/')) : ''} · abbinata per ${esc(n.basis)}${(n.builders || []).length ? ' · imprese citate: ' + esc(n.builders.join(', ')) : ''}<\/div><\/li>`).join('');
+    return `<section class="sc-sec"><h3>Notizie di stampa compatibili<\/h3><ul class="sc-open">${rows}<\/ul>
+      <p class="sc-fine sc-leg"><span class="sc-lv lv-stimata">Da verificare<\/span> articolo che cita comune e potenza (o proponente) del progetto:
+      possibile riferimento allo stesso impianto, non una conferma dell'EPC.<\/p><\/section>`;
+  }
   function render(card) {
     const l = card.ubicazione || {};
     const withProv = (l.comuni || []).some(c => /\(/.test(c));
@@ -1100,7 +1111,7 @@
         <\/div>
       <\/div>
       ${tiles(card.sintesi)}
-      <div class="sc-body">${execution(card.esecuzione)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
+      <div class="sc-body">${execution(card.esecuzione)}${press(card.project_key)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
         <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.completa ? '' : ' (lettura incompleta)'};
           aggiornata il ${esc((card.updated || '').split('-').reverse().join('/'))}. ${esc(card.avvertenza)}<\/p>
       <\/div>`;
@@ -1242,9 +1253,11 @@
 
     function schedaButton(row) {
       const s = row && row.project_key ? schedeIndex[row.project_key] : null;
-      if (!s) return '';
+      const nw = row && row.project_key && (window.PVNews || {})[row.project_key];
+      const press = nw ? ` <span class="sc-epc sc-press" title="Notizie di stampa compatibili con il progetto: da verificare">Stampa ${nw.length}</span>` : '';
+      if (!s) return press;
       const epc = s.epc ? ` <span class="sc-epc" title="${s.epc === 'A' ? 'Impresa esecutrice in un atto di cantiere' : 'Impresa esecutrice indicata negli elaborati'}">EPC ${s.epc === 'A' ? '✓' : '?'}</span>` : '';
-      return ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>${epc}`;
+      return ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>${epc}${press}`;
     }
 
     function setText(id, value) {
@@ -1436,7 +1449,9 @@
       if (dataKind === 'terna' && !isTerna(record)) return false;
       if (dataKind === 'card' && !(record.project_key && schedeIndex[record.project_key])) return false;
       const epcSel = document.getElementById('epcFilter').value;
-      if (epcSel) {
+      if (epcSel === 'news') {
+        if (!(record.project_key && (window.PVNews || {})[record.project_key])) return false;
+      } else if (epcSel) {
         const s = record.project_key ? schedeIndex[record.project_key] : null;
         const lv = s && s.epc;
         if (!lv || (epcSel !== 'any' && lv !== epcSel)) return false;
@@ -1793,6 +1808,11 @@
     // last dashboard update are read from the memory branch of the public repository
     const SCHEDE_LIVE = 'https://raw.githubusercontent.com/EmAnzi3/pv_agent_mvp/doc-intel-state/schede/';
     const getIndex = url => fetch(url, { cache: 'no-cache' }).then(r => r.ok ? r.json() : {}).catch(() => ({}));
+    // sector press matched to the projects (level C, to verify): read from the memory branch
+    getIndex(SCHEDE_LIVE.replace(/schede\/$/, 'news/matches.json')).then(n => {
+      window.PVNews = (n && n.projects) || {};
+      if (Object.keys(window.PVNews).length) { initTopProjects(); renderPipeline(); }
+    });
     Promise.all([getIndex('schede/index.json'), getIndex(SCHEDE_LIVE + 'live_index.json')])
       .then(([local, live]) => {
         const merged = {};
