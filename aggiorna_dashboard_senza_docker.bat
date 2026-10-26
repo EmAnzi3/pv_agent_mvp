@@ -240,6 +240,17 @@ if errorlevel 1 (
 
 echo.
 echo ==========================================================
+echo [3H2/8] Esclusione progetti MASE archiviati
+echo ==========================================================
+REM Un progetto MASE con TUTTE le procedure "Archiviata" (chiusa senza provvedimento) e senza altre
+REM fonti vive esce dal radar. Pagine MASE lette con 1 s di pausa e cache in reports; elenco in audit.
+"%PYTHON_EXE%" ".\scripts\exclude_archived_mase.py" --data "%DATA_JSON%" --audit ".\reports\mase_archived_excluded.csv" --apply
+if errorlevel 1 (
+    echo ATTENZIONE: controllo procedure archiviate non eseguito; la dashboard prosegue senza.
+)
+echo.
+
+echo ==========================================================
 echo [3I/8] Override localizzazione MASE
 echo ==========================================================
 if not exist ".\scripts\manual_mase_location_overrides.py" (
