@@ -1,0 +1,208 @@
+name: Wind Radar live source smoke
+
+on:
+  # manual only: it queries every regional portal (Sicily included) from the cloud
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wind-radar-live-smoke-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  institutional-live-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - group: priority-regional
+            sources: 'abruzzo-via liguria-via-procedimenti marche-via-regional molise-au-eolico'
+          - group: national-market
+            sources: 'mase-via mase-provvedimenti terna-econnextion'
+          - group: south-islands
+            sources: 'basilicata-via calabria-via campania-viavas puglia-sistema-energia sardegna-sira sicilia-sivvi'
+          - group: centre-north
+            sources: 'emilia-romagna-regional lazio-regional lombardia-regional piemonte-regional toscana-atos toscana-gea umbria-regional veneto-regional'
+
+    env:
+      WIND_SMOKE_GROUP: ${{ matrix.group }}
+      WIND_SMOKE_SOURCES: ${{ matrix.sources }}
+
+    steps:
+      - name: Checkout Wind agent runtime
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            app/**
+            docs/wind/data/**
+            scripts/run_wind_agents.py
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install runtime dependencies
+        run: pip install requests beautifulsoup4 lxml pydantic openpyxl
+
+      - name: Run adapter group live
+        shell: bash
+        run: |
+          mkdir -p reports/wind-agent-live
+          args=()
+          for source in $WIND_SMOKE_SOURCES; do
+            args+=(--source "$source")
+          done
+          python scripts/run_wind_agents.py run \
+            "${args[@]}" \
+            --output "reports/wind-agent-live/${WIND_SMOKE_GROUP}.json"
+
+      - name: Export live findings for review
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import sqlite3
+          from pathlib import Path
+
+          group = os.environ['WIND_SMOKE_GROUP']
+          report_path = Path(f'reports/wind-agent-live/{group}.json')
+          db_path = Path('data/wind_agent.sqlite')
+          if not report_path.exists() or not db_path.exists():
+              print('No live findings database/report available to export.')
+              raise SystemExit(0)
+
+          report = json.loads(report_path.read_text(encoding='utf-8'))
+          run_id = report.get('run_id')
+          if not run_id:
+              print('Live report has no run_id; skipping findings export.')
+              raise SystemExit(0)
+
+          with sqlite3.connect(db_path) as conn:
+              conn.row_factory = sqlite3.Row
+              rows = conn.execute(
+                  '''
+                  SELECT agent_name, source_name, external_id, source_url, title,
+                         finding_type, payload_json, first_seen, last_seen
+                  FROM raw_findings
+                  WHERE last_run_id = ?
+                  ORDER BY agent_name, source_name, external_id
+                  ''',
+                  (run_id,),
+              ).fetchall()
+
+          findings = []
+          for row in rows:
+              payload = json.loads(row['payload_json'])
+              findings.append({
+                  'agent_name': row['agent_name'],
+                  'source_name': row['source_name'],
+                  'external_id': row['external_id'],
+                  'source_url': row['source_url'],
+                  'title': row['title'],
+                  'finding_type': row['finding_type'],
+                  'payload': payload.get('payload') or {},
+                  'first_seen': row['first_seen'],
+                  'last_seen': row['last_seen'],
+              })
+
+          out = {
+              'group': group,
+              'run_id': run_id,
+              'finding_count': len(findings),
+              'guard': 'Raw live findings for review only; no canonical promotion or scope closure is implied.',
+              'findings': findings,
+          }
+          output = Path(f'reports/wind-agent-live/{group}-findings.json')
+          output.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding='utf-8')
+          print(f'Exported {len(findings)} raw findings to {output}')
+          PY
+
+      - name: Validate live result
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          group = os.environ['WIND_SMOKE_GROUP']
+          expected = set(os.environ['WIND_SMOKE_SOURCES'].split())
+          path = Path(f'reports/wind-agent-live/{group}.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          executed = set(data.get('executed_agents') or [])
+          assert executed == expected, (group, executed, expected)
+
+          per_agent = data.get('per_agent') or {}
+          failures = {
+              source_id: row.get('error') or row.get('status')
+              for source_id, row in per_agent.items()
+              if row.get('status') != 'success'
+          }
+          if failures or data.get('errors'):
+              raise SystemExit(f'{group} live source failures: {failures or data.get("errors")}')
+
+          print(f'{group} live source smoke OK')
+          for source_id in sorted(expected):
+              row = per_agent[source_id]
+              print(
+                  f"{source_id}: health={row.get('data_health', 'legacy')} "
+                  f"findings={row.get('findings', 0)} project_specific={row.get('project_specific_findings', 0)} "
+                  f"new={row.get('new', 0)} changed={row.get('changed', 0)}"
+              )
+          PY
+
+      - name: Publish live smoke summary
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          group = os.environ['WIND_SMOKE_GROUP']
+          report = Path(f'reports/wind-agent-live/{group}.json')
+          findings_report = Path(f'reports/wind-agent-live/{group}-findings.json')
+          lines = [f'## Wind Radar live smoke — {group}']
+          if report.exists():
+              data = json.loads(report.read_text(encoding='utf-8'))
+              health = data.get('data_health') or {}
+              if health:
+                  lines.append('- Data health: ' + ', '.join(f'`{k}` {v}' for k, v in sorted(health.items())))
+              for source_id, row in sorted((data.get('per_agent') or {}).items()):
+                  lines.append(
+                      f"- `{source_id}` — {row.get('status')}; health `{row.get('data_health', 'legacy')}`; "
+                      f"findings {row.get('findings', 0)}; project-specific {row.get('project_specific_findings', 0)}; "
+                      f"new {row.get('new', 0)}; changed {row.get('changed', 0)}"
+                  )
+              if findings_report.exists():
+                  raw = json.loads(findings_report.read_text(encoding='utf-8'))
+                  lines.append(f"- Raw findings exported for review: {raw.get('finding_count', 0)}")
+              if data.get('errors'):
+                  lines.append(f"- Errors: {data['errors']}")
+          else:
+              lines.append('- Live report missing.')
+          text = '\n'.join(lines) + '\n'
+          print(text)
+          summary = os.environ.get('GITHUB_STEP_SUMMARY')
+          if summary:
+              Path(summary).write_text(text, encoding='utf-8')
+          PY
+
+      - name: Upload live smoke report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wind-live-${{ matrix.group }}-${{ github.run_id }}
+          path: reports/wind-agent-live/
+          if-no-files-found: warn
+          retention-days: 14

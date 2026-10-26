@@ -1,0 +1,20 @@
+/* Review 2026-09-04: compact lists, explicit geolocation precision, graph tooltips. */
+.opportunity-rows{max-height:540px;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding-right:4px}
+.opportunity-rows::-webkit-scrollbar{width:9px}.opportunity-rows::-webkit-scrollbar-thumb{background:#c9d5d0;border-radius:999px;border:2px solid #fff}.opportunity-rows::-webkit-scrollbar-track{background:#f6f8f7}
+.geo-caveat{display:inline-flex;align-items:center;gap:5px;border:1px dashed #c7d5cf;background:#f8faf9;color:var(--muted);border-radius:999px;padding:4px 7px;font-size:9px;font-weight:800;white-space:nowrap;margin-right:7px}
+.map-marker.location-approx{border-style:dashed;box-shadow:0 0 0 5px rgba(22,50,71,.08),0 2px 8px rgba(16,42,43,.25)}
+.map-tooltip .geo-accuracy{display:inline-block;margin-top:3px;padding:2px 5px;border:1px solid rgba(255,255,255,.25);border-radius:999px;color:#d8eee5;font-size:9px;font-weight:800}
+.map-shell{width:min(100%,440px);max-width:440px;height:auto;aspect-ratio:600/650;background:#f5faf7}
+.map-base{object-fit:fill;transition:opacity .15s ease}
+.region-overlay{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;overflow:visible}
+.region-shape{fill:#edf5f1;stroke:#8fa99e;stroke-width:1.05;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.map-shell.regions-loaded .map-base{opacity:.08}
+.map-shell.regions-loaded{background:linear-gradient(180deg,#f8fcfa,#f0f7f4)}
+.map-markers{z-index:2}.map-source{display:block;margin-top:3px;font-size:9px;color:#788983}
+.review-chart-tooltip{position:fixed;display:none;z-index:130;max-width:340px;padding:9px 10px;border-radius:10px;background:#14251f;color:#fff;box-shadow:0 10px 26px rgba(0,0,0,.24);font-size:10.5px;line-height:1.4;pointer-events:none;white-space:normal}
+.pipeline-fallback [data-review-tip],.timeline-fallback [data-review-tip]{outline:none}.pipeline-fallback [data-review-tip]:hover .fallback-track,.pipeline-fallback [data-review-tip]:focus .fallback-track{box-shadow:0 0 0 2px rgba(8,127,91,.12)}.timeline-fallback .fallback-bar[data-review-tip]:hover,.timeline-fallback .fallback-bar[data-review-tip]:focus{filter:brightness(.92);box-shadow:0 0 0 2px rgba(255,255,255,.9),0 0 0 4px rgba(22,50,71,.15)}
+.contractor-search input#contractorQ{display:none}.contractor-search select#contractorFocus,.contractor-search select#contractorFocusDirect{height:37px;width:100%;border:1px solid #cfdad5;background:#fff;color:#263730;border-radius:10px;padding:0 10px;outline:none}.contractor-search select#contractorFocus:focus,.contractor-search select#contractorFocusDirect:focus{border-color:#62b99a;box-shadow:0 0 0 3px rgba(12,166,120,.09)}
+.contractor-view{display:block}.contractor-view .contractor-card{display:none;width:100%}.contractor-view .contractor-card.review-selected{display:block}.contractor-view .contractor-card.review-selected .contractor-project{padding:8px 12px}.contractor-view .contractor-card.review-selected .contractor-roles{padding:8px 12px;display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid #e6ece9}
+.contractor-view .contractor-card.direct-contractor-card{display:block!important}.contractor-view-direct .contractor-project{padding:8px 12px}.contractor-view-direct .contractor-roles{padding:8px 12px;display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid #e6ece9}
+.geo-detail b{font-weight:650!important;color:var(--muted)}
+@media(max-width:760px){.opportunity-rows{max-height:none;overflow:visible;overscroll-behavior:auto;scrollbar-gutter:auto;padding-right:0}.contractor-search{min-width:0;width:100%}.geo-caveat{white-space:normal;margin-top:5px}.map-shell{width:min(100%,390px);max-width:390px;height:auto;aspect-ratio:600/650}}

@@ -1,0 +1,11 @@
+.docpass2-section{border-top:1px solid var(--line,#d7e2de);padding-top:18px}
+.docpass2-section h4{margin:16px 0 8px}
+.doc2-list,.doc2-public,.doc2-schedule{display:grid;gap:8px}
+.doc2-card,.doc2-rel,.doc2-public-row,.doc2-schedule-row{display:flex;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid #dbe5e1;border-radius:12px;background:#fff}
+.doc2-card>div,.doc2-rel>div,.doc2-public-row>div{display:grid;gap:3px;min-width:0}
+.doc2-card span,.doc2-rel span,.doc2-public-row span{font-size:.82rem;color:#5b6e68}
+.doc2-note{font-size:.86rem;color:#536761;background:#f5f8f7;border:1px solid #dbe5e1;border-radius:10px;padding:9px 11px;margin-bottom:8px}
+.doc2-schedule-row span{color:#39544c}.doc2-schedule-row b{text-align:right}
+.doc2-level{flex:0 0 auto;align-self:flex-start;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:#27594b!important}
+.doc2-public-row a{font-size:.82rem;font-weight:700;color:#087f5b;text-decoration:none;margin-top:2px}
+@media(max-width:760px){.doc2-card,.doc2-rel,.doc2-public-row,.doc2-schedule-row{align-items:flex-start}.doc2-schedule-row{display:grid}.doc2-schedule-row b{text-align:left}}

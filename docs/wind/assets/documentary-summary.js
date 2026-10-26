@@ -1,0 +1,12 @@
+/* Source-backed commercial reading. Empty for projects without documentary data. */
+(()=>{'use strict';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function links(p,ids,refs=[]){return(ids||[]).flatMap(id=>{const s=(p.sources||[]).find(x=>x.id===id);if(!s||!/^https:\/\//.test(s.url||''))return[];const pages=refs.filter(r=>r.source_id===id&&Number.isInteger(r.page)&&r.page>0);return(pages.length?pages:[null]).map(r=>`<a href="${esc(s.url.split('#')[0]+(r?'#page='+r.page:''))}" target="_blank" rel="noopener noreferrer">${esc(s.publisher||'Fonte')}${r?' · p. '+r.page:''}</a>`)}).join(' · ')}
+function render(p){const d=p.documentary;if(!d)return'';
+const fields=(d.fields||[]).map(f=>`<div class="documentary-item"><b>${esc(f.label)}</b><p>${esc(f.value)}</p><small>${links(p,f.source_ids,f.page_refs)}${f.basis?' · '+esc(f.basis):''}</small></div>`).join('');
+const companyRegistry=(d.company_registry||[]).map(x=>`<div class="documentary-item"><b>${esc(x.company)}</b><p>${x.vat_id?'P.IVA '+esc(x.vat_id):'P.IVA non verificata'} · ${esc(x.role)}</p><small>${esc(x.note||'')} · ${links(p,x.source_ids,x.page_refs)}</small></div>`).join('');
+const coverage=(d.dossier_coverage||[]).map(x=>`<div class="documentary-item"><b>${esc(x.group)}</b><p>${esc(x.detail)}</p><small>Stato: ${esc((x.status||'').replace(/_/g,' '))} · ${links(p,x.source_ids,x.page_refs)}</small></div>`).join('');
+const contacts=(d.contacts||[]).map(c=>{const em=c.email&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.email)?`<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>`:'';const ph=c.phone&&/^[+\d ()-]+$/.test(c.phone)?`<a href="tel:${c.phone.replace(/[^+\d]/g,'')}">${esc(c.phone)}</a>`:'';return`<div class="documentary-item"><b>${esc(c.company)} — ${esc(c.role)}</b><p>${[em,ph].filter(Boolean).join(' · ')}</p><small>${esc(c.scope)} · ${links(p,c.source_ids,c.page_refs)}</small></div>`}).join('');
+return`<section class="detail-section documentary-summary" data-documentary-project="${esc(p.id)}"><h3>Scheda commerciale documentata</h3><p class="detail-note">Verifica del ${esc(d.reviewed_on)}. ${esc(d.method)}</p>${fields}${companyRegistry?'<h3>Aziende e Partite IVA</h3>'+companyRegistry:''}<h3>Contatti aziendali pubblici</h3>${contacts}${coverage?'<h3>Copertura documentale</h3>'+coverage:''}<details><summary>Informazioni ancora da verificare</summary>${(d.gaps||[]).map(x=>`<p>${esc(x)}</p>`).join('')}</details></section>`}
+window.WindDocumentary={render};
+})();

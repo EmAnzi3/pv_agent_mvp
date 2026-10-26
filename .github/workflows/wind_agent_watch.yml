@@ -1,0 +1,181 @@
+name: Wind Radar source and company watch
+
+on:
+  # Manual only after the migration from project_radar_mvp: the old repository keeps its daily
+  # schedule until it is switched off there, so the portals are never queried twice a day.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wind-radar-source-company-watch
+  cancel-in-progress: false
+
+jobs:
+  source-company-watch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 105
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install runtime dependencies
+        run: pip install requests beautifulsoup4 lxml pydantic openpyxl
+
+      - name: Restore persistent wind-agent state
+        uses: actions/cache@v4
+        with:
+          path: data/wind_agent.sqlite
+          key: wind-agent-state-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            wind-agent-state-${{ runner.os }}-
+
+      - name: Show due institutional adapters
+        run: |
+          mkdir -p reports/wind-agent
+          python scripts/run_wind_agents.py due --output reports/wind-agent/institutional-due.json
+
+      - name: Run due institutional adapters
+        run: |
+          python scripts/run_wind_agents.py run --due --output reports/wind-agent/institutional-run.json
+
+      - name: Show due company watches
+        run: |
+          python scripts/run_wind_agents.py company-due --output reports/wind-agent/company-due.json
+
+      - name: Run due company watches
+        run: |
+          python scripts/run_wind_agents.py company-run --due --output reports/wind-agent/company-run.json
+
+      - name: Build execution investigation queue
+        run: |
+          python scripts/run_wind_agents.py execution-queue --output reports/wind-agent/execution-queue.json
+
+      - name: Build review-only commercial digest
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          report_dir = Path("reports/wind-agent")
+          run_ids = []
+          for name in ("institutional-run.json", "company-run.json"):
+              path = report_dir / name
+              if not path.exists():
+                  continue
+              data = json.loads(path.read_text(encoding="utf-8"))
+              run_id = data.get("run_id")
+              if run_id:
+                  run_ids.append(str(run_id))
+
+          if not run_ids:
+              (report_dir / "digest.json").write_text(
+                  json.dumps({"run_ids": [], "events": 0, "actionable_events": 0, "items": []}, indent=2) + "\n",
+                  encoding="utf-8",
+              )
+              sys.exit(0)
+
+          cmd = [sys.executable, "scripts/run_wind_agents.py", "digest"]
+          for run_id in run_ids:
+              cmd.extend(["--run-id", run_id])
+          cmd.extend(["--output", str(report_dir / "digest.json")])
+          subprocess.run(cmd, check=True)
+          PY
+
+      - name: Publish run summary
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+          lines = ["## Wind Radar source + company watch"]
+
+          institutional = Path("reports/wind-agent/institutional-run.json")
+          if institutional.exists():
+              data = json.loads(institutional.read_text(encoding="utf-8"))
+              lines.extend([
+                  "### Institutional",
+                  f"- Executed adapters: {len(data.get('executed_agents', []))}",
+                  f"- Findings: {data.get('findings', 0)}",
+                  f"- New or changed: {data.get('new_or_changed', 0)}",
+                  f"- Source errors: {len(data.get('errors', {}))}",
+              ])
+              for source_id, error in data.get("errors", {}).items():
+                  lines.append(f"  - `{source_id}`: {str(error)[:500]}")
+          else:
+              lines.extend(["### Institutional", "- Run report missing."])
+
+          company = Path("reports/wind-agent/company-run.json")
+          if company.exists():
+              data = json.loads(company.read_text(encoding="utf-8"))
+              lines.extend([
+                  "### Company network",
+                  f"- Companies checked: {len(data.get('executed_companies', []))}",
+                  f"- Source snapshots: {data.get('findings', 0)}",
+                  f"- New or changed: {data.get('new_or_changed', 0)}",
+                  f"- Companies with URL errors: {len(data.get('errors', {}))}",
+              ])
+              for company_id, errors in data.get("errors", {}).items():
+                  text = "; ".join(errors) if isinstance(errors, list) else str(errors)
+                  lines.append(f"  - `{company_id}`: {text[:500]}")
+          else:
+              lines.extend(["### Company network", "- Run report missing."])
+
+          execution = Path("reports/wind-agent/execution-queue.json")
+          if execution.exists():
+              data = json.loads(execution.read_text(encoding="utf-8"))
+              lines.extend([
+                  "### Project execution investigation queue",
+                  f"- E4-E7 projects with open scopes: {data.get('projects', 0)}",
+                  f"- Open execution scopes: {data.get('open_scope_count', 0)}",
+              ])
+              for item in (data.get("priority_projects") or [])[:5]:
+                  lines.append(
+                      f"  - `{item.get('project_id')}` {item.get('name')}: urgency {item.get('urgency_score')}, "
+                      f"stage {item.get('stage')}, open scopes {len(item.get('open_scopes') or [])}"
+                  )
+          else:
+              lines.extend(["### Project execution investigation queue", "- Queue report missing."])
+
+          digest = Path("reports/wind-agent/digest.json")
+          if digest.exists():
+              data = json.loads(digest.read_text(encoding="utf-8"))
+              lines.extend([
+                  "### Reconciliation digest",
+                  f"- New/changed events evaluated: {data.get('events', 0)}",
+                  f"- Actionable review items: {data.get('actionable_events', 0)}",
+                  f"- Non-actionable events retained only in raw history: {data.get('non_actionable_events', 0)}",
+              ])
+              for action_type, count in sorted((data.get("action_types") or {}).items()):
+                  lines.append(f"  - `{action_type}`: {count}")
+          else:
+              lines.extend(["### Reconciliation digest", "- Digest report missing."])
+
+          text = "\n".join(lines) + "\n"
+          print(text)
+          if summary_path:
+              Path(summary_path).write_text(text, encoding="utf-8")
+          PY
+
+      - name: Upload watch report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wind-agent-watch-${{ github.run_id }}
+          path: reports/wind-agent/
+          if-no-files-found: warn
+          retention-days: 30
