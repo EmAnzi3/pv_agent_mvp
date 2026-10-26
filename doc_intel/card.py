@@ -1273,7 +1273,8 @@ def build_card(d: dict[str, Any]) -> dict[str, Any]:
         "tempistica": timing,
         "cronoprogramma": gantt,
         "documentazione": {"documenti": a["references"], "pagine": a["pages_total"],
-                           "completa": d["gates"]["acquisition"]["pass"]},
+                           "completa": d["gates"]["acquisition"]["pass"],
+                           "da_leggere": a.get("deferred_by_deadline", 0)},
         "confronto": [{"campo": r["field"], "valore_attuale": r.get("canonical"), "esito": r["class"]} for r in d.get("delta", [])],
         "da_verificare": open_points[:10],
         "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda "

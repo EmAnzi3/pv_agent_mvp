@@ -1112,7 +1112,7 @@
       <\/div>
       ${tiles(card.sintesi)}
       <div class="sc-body">${execution(card.esecuzione)}${press(card.project_key)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
-        <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.completa ? '' : ' (lettura incompleta)'};
+        <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.da_leggere ? ` (lettura in corso: altri ${esc(doc.da_leggere)} documenti nelle prossime notti)` : (doc.completa ? '' : ' (lettura incompleta)')};
           aggiornata il ${esc((card.updated || '').split('-').reverse().join('/'))}. ${esc(card.avvertenza)}<\/p>
       <\/div>`;
   }

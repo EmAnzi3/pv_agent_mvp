@@ -31,6 +31,10 @@ on:
         description: 'ubuntu-latest, or self-hosted (Italian network, for portals that filter foreign IPs)'
         required: false
         default: 'ubuntu-latest'
+      max_new_docs:
+        description: 'Download at most N new documents in this run (large projects are read over several runs)'
+        required: false
+        default: ''
   workflow_call:
     # used by doc-intel-batch.yml (one project per call, run in parallel from the queue)
     inputs:
@@ -41,6 +45,7 @@ on:
       reanalyse_match: {type: string, required: false, default: ''}
       reanalyse: {type: string, required: false, default: 'no'}
       runner: {type: string, required: false, default: 'ubuntu-latest'}
+      max_new_docs: {type: string, required: false, default: ''}
   pull_request:
     paths:
       - 'doc_intel/**'
@@ -167,8 +172,10 @@ jobs:
           BUDGET: ${{ inputs.time_budget_min }}
           REANALYSE: ${{ inputs.reanalyse }}
           REANALYSE_MATCH: ${{ inputs.reanalyse_match }}
+          MAX_NEW: ${{ inputs.max_new_docs }}
         run: |
           extra=()
+          if [ -n "$MAX_NEW" ]; then extra+=(--max-new-docs "$MAX_NEW"); fi
           if [ "$REANALYSE" = "yes" ]; then extra+=(--reanalyse); fi
           if [ "$REANALYSE" = "yes" ] && [ -n "$REANALYSE_MATCH" ]; then extra+=(--reanalyse-match "$REANALYSE_MATCH"); fi
           if [ -n "$GOLD" ]; then extra+=(--gold "$GOLD"); fi

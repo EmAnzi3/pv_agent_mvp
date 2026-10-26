@@ -51,6 +51,21 @@ def cards_in(mem: Path) -> dict[str, str]:
     return out
 
 
+def incomplete_cards(mem: Path) -> set[str]:
+    """Cards with documents still to read (large projects read over several runs, or time budget hit)."""
+    out = set()
+    for f in sorted((mem / "schede").glob("*.json")):
+        if f.name in ("index.json", "live_index.json"):
+            continue
+        try:
+            c = json.loads(f.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        if c.get("project_key") and ((c.get("documentazione") or {}).get("da_leggere") or 0) > 0:
+            out.add(c["project_key"])
+    return out
+
+
 def _load(path: Path) -> dict:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -69,6 +84,7 @@ def plan(data_json: str | Path, memory_dir: str | Path, max_items: int = 35, mod
     seen_path, att_path = mem / "queue" / "seen.json", mem / "queue" / "attempts.json"
     seen, attempts = _load(seen_path), _load(att_path)
     cards = cards_in(mem)
+    partial = incomplete_cards(mem)
     first_run = not seen
     records = json.loads(Path(data_json).read_text(encoding="utf-8-sig")).get("records", [])
     new, backlog, refresh = [], [], []
@@ -92,7 +108,9 @@ def plan(data_json: str | Path, memory_dir: str | Path, max_items: int = 35, mod
         recent = last and date.fromisoformat(last) > today - timedelta(days=retry_days)
         item = {"url": url, "project_key": key, "power_mw": r.get("power_mw") or 0, "source": r.get("source")}
         if key in cards:
-            if not recent:
+            if key in partial and not (last and date.fromisoformat(last) >= today):
+                backlog.append({**item, "reason": "incomplete"})      # continue the reading the next night
+            elif not recent:
                 refresh.append({**item, "reason": "refresh"})
             continue
         if recent:

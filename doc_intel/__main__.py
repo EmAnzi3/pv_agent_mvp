@@ -38,6 +38,7 @@ def main(argv: list[str] | None = None) -> int:
                    help="re-extract every document with the current extractors (downloads again unless files are kept)")
     r.add_argument("--registry", choices=["vies", "none"], default="none", help="check extracted VATs on EU VIES")
     r.add_argument("--time-budget-min", type=float, help="stop starting OCR after N minutes; pending pages resume next run")
+    r.add_argument("--max-new-docs", type=int, default=None, help="download at most N new documents in this run")
     r.add_argument("--max-mb", type=int, default=1024, help="per-file download cap")
     r.add_argument("--gold")
     e = sub.add_parser("evaluate")
@@ -110,7 +111,8 @@ def main(argv: list[str] | None = None) -> int:
         fetcher = Fetcher(Store(a.store), max_bytes=a.max_mb * 1024 * 1024)
         d = run(a.url, a.store, a.data if Path(a.data).exists() else None, ocr=not a.no_ocr,
                 ocr_max_pages=a.ocr_max_pages, max_docs=a.max_docs, workers=a.workers, refresh=a.refresh, verify_content=a.verify_content, keep_files=a.keep_files, reanalyse=a.reanalyse, reanalyse_match=a.reanalyse_match, registry=None if a.registry == 'none' else a.registry,
-                time_budget_s=a.time_budget_min * 60 if a.time_budget_min else None, fetcher=fetcher)
+                time_budget_s=a.time_budget_min * 60 if a.time_budget_min else None, fetcher=fetcher,
+                max_new_docs=a.max_new_docs)
         if a.gold:
             d["evaluation"] = evaluate(d, load_gold(a.gold))
         out = Path(a.out)
