@@ -38,3 +38,29 @@ class CarryOverKeys(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class LimitedPortal(unittest.TestCase):
+    def test_drawings_filter_keeps_reports_and_programme(self):
+        import re
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from doc_intel.pipeline import DRAWING_TITLES, SCHED_RE, PRIORITY_DOCS
+        skip = lambda t: bool(re.search(DRAWING_TITLES, t, re.I) and not SCHED_RE.search(t) and not PRIORITY_DOCS.search(t))
+        self.assertTrue(skip("08 - SIA - LAYOUT GENERALE DEL PARCO FOTOVOLTAICO"))
+        self.assertTrue(skip("P.T.P. STRALCIO TAVOLA 9.B"))
+        self.assertFalse(skip("Tav. 12 - Cronoprogramma dei lavori"))
+        self.assertFalse(skip("Relazione tecnica con planimetrie"))
+        self.assertFalse(skip("Studio di Impatto Ambientale - Sintesi non tecnica"))
+
+    def test_daily_quota(self):
+        import tempfile
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from doc_intel import local_batch as lb
+        with tempfile.TemporaryDirectory() as tmp:
+            store = Path(tmp) / "memoria"
+            store.mkdir()
+            h = "si-vvi.regione.sicilia.it"
+            self.assertEqual(lb._quota_left(store, h), 150)
+            self.assertIsNone(lb._quota_left(store, "va.mite.gov.it"))
+            lb._quota_add(store, h, 90)
+            self.assertEqual(lb._quota_left(store, h), 0)      # one project per day

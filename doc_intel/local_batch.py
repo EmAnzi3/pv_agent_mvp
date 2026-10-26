@@ -103,10 +103,56 @@ def _forget_attempt(store: Path, key: str) -> None:
         pass
 
 
+# Portals that asked us (by blocking) to keep the load low: at most one project and DAILY_DOCS
+# documents per day, drawings not downloaded, one document at a time with a pause (fetch.POLITE_HOSTS).
+LIMITED_PORTALS = {"si-vvi.regione.sicilia.it": {"projects": 1, "docs": 150}}
+
+
+def _quota_file(store: Path) -> Path:
+    return store.parent / "portal_quota.json"
+
+
+def _quota_used(store: Path, host: str) -> dict:
+    import datetime as _dt
+    try:
+        q = json.loads(_quota_file(store).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        q = {}
+    return q.get(_dt.date.today().isoformat(), {}).get(host, {"projects": 0, "docs": 0})
+
+
+def _quota_add(store: Path, host: str, docs: int) -> None:
+    import datetime as _dt
+    f, today = _quota_file(store), _dt.date.today().isoformat()
+    try:
+        q = json.loads(f.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        q = {}
+    q = {today: q.get(today, {})}                       # only today's counters are kept
+    u = q[today].setdefault(host, {"projects": 0, "docs": 0})
+    u["projects"] += 1
+    u["docs"] += docs
+    try:
+        f.write_text(json.dumps(q, indent=1), encoding="utf-8")
+    except OSError:
+        pass
+
+
+def _quota_left(store: Path, host: str) -> int | None:
+    """None: no limit for this portal; 0: today's quota is used up; n: documents still allowed today."""
+    lim = LIMITED_PORTALS.get(host)
+    if not lim:
+        return None
+    u = _quota_used(store, host)
+    if u["projects"] >= lim["projects"]:
+        return 0
+    return max(0, lim["docs"] - u["docs"])
+
+
 def main(data: str, max_items: int, budget_min: float, store_dir: str | None = None,
          out_dir: str | None = None, recompute: bool = False) -> int:
     from .card import build_card, write_card
-    from .pipeline import run
+    from .pipeline import DRAWING_TITLES, run
     from .queue import plan
     from .sync import build_index
 
@@ -144,11 +190,26 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
                 reserve.remove(nxt)
                 queue_.append(nxt)
             continue
+        left = _quota_left(store, host)
+        if left == 0:
+            print(f"[locale]   rimandato: limite giornaliero per {host} raggiunto (riprende domani)")
+            _forget_attempt(store, it["project_key"])
+            nxt = next((r for r in reserve if _quota_left(store, urlparse(r["url"]).netloc) != 0
+                        and down.get(urlparse(r["url"]).netloc, 0) < 2), None)
+            if nxt:
+                reserve.remove(nxt)
+                queue_.append(nxt)
+            continue
         worked += 1
+        limited = left is not None
         try:
             d = run(it["url"], str(store), data, ocr=ocr, ocr_max_pages=600,
-                    workers=1 if host in ("si-vvi.regione.sicilia.it",) else 3, registry="vies",
+                    workers=1 if limited else 3, registry="vies",
+                    max_docs=left if limited else None,
+                    skip_titles=DRAWING_TITLES if limited else None,
                     time_budget_s=budget_min * 60, reanalyse=recompute)
+            if limited:
+                _quota_add(store, host, d["acquisition"].get("processed_references") or 0)
             (out / f"{d['project']['source']}-{d['project']['project_id']}.json").write_text(
                 json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
             if not d["acquisition"].get("references"):
@@ -161,6 +222,8 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
                     print(f"[locale]   scheda creata: {d['acquisition']['references']} documenti, {d['acquisition']['pages_total']} pagine")
         except Exception as exc:                                  # one portal error never stops the batch
             print(f"[locale]   ERRORE: {str(exc)[:300]}")
+            if limited:
+                _quota_add(store, host, left)                     # unknown downloads: count the whole quota
             if re.search(r"(?i)NameResolution|ConnectionError|Max retries|timed out|ConnectTimeout|Temporary failure", str(exc)):
                 # network or portal down: not the project's fault, retry it at the next run
                 down[host] = down.get(host, 0) + 1
