@@ -1,0 +1,51 @@
+name: Doc Intel news (sector press, level C)
+# Daily: sector press RSS (pv-magazine.it, QualEnergia, Rinnovabili.it, SolareB2B) matched to radar projects.
+# Saves news/items.json and news/matches.json on the memory branch. On a pull request: dry run only.
+on:
+  schedule:
+    - cron: '20 5 * * *'
+  workflow_dispatch:
+    inputs:
+      backfill_pages:
+        description: 'Older feed pages to read as well (first run: 15)'
+        required: false
+        default: '0'
+  pull_request:
+    paths:
+      - 'doc_intel/news.py'
+      - '.github/workflows/doc-intel-news.yml'
+permissions:
+  contents: write
+concurrency:
+  group: doc-intel-news
+  cancel-in-progress: false
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -q requests
+      - name: Memory branch
+        run: |
+          git config user.name "doc-intel-bot"
+          git config user.email "doc-intel-bot@users.noreply.github.com"
+          git fetch -q origin doc-intel-state:doc-intel-state
+          git worktree add -q .mem doc-intel-state
+      - name: Read the press and match
+        env:
+          BACKFILL: ${{ inputs.backfill_pages || (github.event_name == 'pull_request' && '1') || '0' }}
+        run: python -m doc_intel news --data docs/data.json --memory .mem --backfill-pages "$BACKFILL"
+      - name: Save on the memory branch
+        if: github.event_name != 'pull_request'
+        run: |
+          cd .mem && git add news && (git diff --cached --quiet && exit 0 || git commit -q -m "doc-intel news: press matched to radar projects (run ${{ github.run_id }})")
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
+            git push -q origin HEAD:doc-intel-state && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
