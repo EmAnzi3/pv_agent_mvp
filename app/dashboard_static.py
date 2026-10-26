@@ -1474,7 +1474,12 @@ __SCHEDA_CSS__
             <option value="punctual">Solo pipeline operativa</option>
             <option value="terna">Solo radar Terna</option>
             <option value="card">Solo con scheda</option>
-            <option value="epc">Solo con impresa esecutrice nota</option>
+          </select>
+          <select id="epcFilter" title="Impresa esecutrice / EPC trovata nei documenti">
+            <option value="">EPC: tutti i record</option>
+            <option value="any">EPC trovato (qualsiasi evidenza)</option>
+            <option value="A">EPC in atto di cantiere</option>
+            <option value="B">EPC solo negli elaborati</option>
           </select>
           <select id="sourceFilter"></select>
           <select id="regionFilter"></select>
@@ -1827,7 +1832,12 @@ __SCHEDA_CSS__
       if (dataKind === 'punctual' && isTerna(record)) return false;
       if (dataKind === 'terna' && !isTerna(record)) return false;
       if (dataKind === 'card' && !(record.project_key && schedeIndex[record.project_key])) return false;
-      if (dataKind === 'epc' && !(record.project_key && schedeIndex[record.project_key] && schedeIndex[record.project_key].epc)) return false;
+      const epcSel = document.getElementById('epcFilter').value;
+      if (epcSel) {
+        const s = record.project_key ? schedeIndex[record.project_key] : null;
+        const lv = s && s.epc;
+        if (!lv || (epcSel !== 'any' && lv !== epcSel)) return false;
+      }
       if (source && (record.source_group || record.source) !== source) return false;
       if (region && record.region !== region) return false;
       if (province && record.province !== province) return false;
@@ -2160,7 +2170,7 @@ __SCHEDA_CSS__
     }
 
     function attachEvents() {
-      ['searchInput', 'dataKindFilter', 'sourceFilter', 'regionFilter', 'provinceFilter', 'sortFieldFilter', 'sortDirectionFilter'].forEach(id => {
+      ['searchInput', 'dataKindFilter', 'epcFilter', 'sourceFilter', 'regionFilter', 'provinceFilter', 'sortFieldFilter', 'sortDirectionFilter'].forEach(id => {
         document.getElementById(id).addEventListener('input', renderPipeline);
         document.getElementById(id).addEventListener('change', renderPipeline);
       });
