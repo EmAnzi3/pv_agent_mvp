@@ -46,7 +46,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         reanalyse_match: str | None = None,
         registry: str | None = None, registry_client=None,
         time_budget_s: float | None = None, get_html: Callable[[str], str] | None = None,
-        skip_titles: str | None = None,
+        skip_titles: str | None = None, max_new_docs: int | None = None,
         fetcher: Fetcher | None = None, log: Callable[[str], None] = print) -> dict[str, Any]:
     t0 = time.time()
     store = Store(store_dir)
@@ -151,6 +151,13 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
                 return ref, res, store.get_facts(entry["sha256"])
         if deadline and time.time() >= deadline:
             return ref, FetchResult(ref.url, None, None, 0, "deferred", "time budget reached before download"), None
+        if max_new_docs is not None:
+            # very large projects are read over several runs: documents already analysed are reused,
+            # at most max_new_docs new ones are downloaded per run (the card is built on what is read)
+            with lock:
+                if counter.get("new", 0) >= max_new_docs:
+                    return ref, FetchResult(ref.url, None, None, 0, "deferred", "per-run document cap reached"), None
+                counter["new"] = counter.get("new", 0) + 1
         # 2) new, changed, incomplete or forced: download, parse, extract, then delete the bytes
         res = fetcher.fetch(ref.url, manifest, refresh=force, auth=ref.extra.get("auth"))
         payload = None
@@ -192,6 +199,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
 
     t_fetch = time.time()
     unique = list({d.url: d for d in reversed(docs)}.values())[::-1]   # one download per URL
+    if len(unique) > 150:
+        workers = min(workers, 2)          # large projects: fewer big PDFs in memory at once
     with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
         by_url = {ref.url: (res, payload) for ref, res, payload in pool.map(process, unique)}
     results = [(ref, *by_url[ref.url]) for ref in docs]
