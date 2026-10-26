@@ -199,6 +199,15 @@
       <p class="sc-fine sc-leg"><span class="sc-lv lv-documentata">Atto di cantiere</span> ${esc(leg.A || '')} ·
       <span class="sc-lv lv-prescritta">Da elaborati</span> ${esc(leg.B || '')}</p></section>`;
   }
+  function press(key) {
+    const list = ((window.PVNews || {})[key] || []).slice(0, 6);
+    if (!list.length) return '';
+    const rows = list.map(n => `<li><a class="sc-src" href="${esc(safeHref(n.link))}" target="_blank" rel="noopener noreferrer">${esc(n.title)}</a>
+      <div class="sc-fine">${esc(n.source || '')}${n.date ? ' · ' + esc(n.date.split('-').reverse().join('/')) : ''} · abbinata per ${esc(n.basis)}${(n.builders || []).length ? ' · imprese citate: ' + esc(n.builders.join(', ')) : ''}</div></li>`).join('');
+    return `<section class="sc-sec"><h3>Notizie di stampa compatibili</h3><ul class="sc-open">${rows}</ul>
+      <p class="sc-fine sc-leg"><span class="sc-lv lv-stimata">Da verificare</span> articolo che cita comune e potenza (o proponente) del progetto:
+      possibile riferimento allo stesso impianto, non una conferma dell'EPC.</p></section>`;
+  }
   function render(card) {
     const l = card.ubicazione || {};
     const withProv = (l.comuni || []).some(c => /\(/.test(c));
@@ -221,7 +230,7 @@
         </div>
       </div>
       ${tiles(card.sintesi)}
-      <div class="sc-body">${execution(card.esecuzione)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
+      <div class="sc-body">${execution(card.esecuzione)}${press(card.project_key)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
         <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.completa ? '' : ' (lettura incompleta)'};
           aggiornata il ${esc((card.updated || '').split('-').reverse().join('/'))}. ${esc(card.avvertenza)}</p>
       </div>`;
