@@ -1,0 +1,40 @@
+{
+  "version": "0.4.0-identity",
+  "as_of": "2026-09-05",
+  "identity_priority": [
+    "explicit_identity_group",
+    "myterna_anchor",
+    "mase_operation_anchor",
+    "name_site_area_anchor"
+  ],
+  "rules": {
+    "explicit_identity_group": "Usare quando più procedure/fonti sono già state riconciliate come stessa opera; prevale sui singoli codici procedura.",
+    "myterna_anchor": "Se disponibile almeno un codice MYTERNA affidabile, il primo codice normalizzato è l'anchor stabile. Codici aggiuntivi restano alias/connection tracks e non creano automaticamente un nuovo progetto.",
+    "mase_operation_anchor": "Gli ID procedura MASE sono procedure, non identità progetto. Più procedure possono appartenere alla stessa opera e vanno raggruppate quando MASE le presenta come 'altri progetti per la stessa opera' o quando gli elementi identitari coincidono.",
+    "name_site_area_anchor": "Fallback: site_type + nome normalizzato + area/localizzazione normalizzata. MW, WTG, developer e stato procedura NON fanno parte dell'identità perché possono cambiare nel tempo."
+  },
+  "never_identity_fields": ["wind_mw", "bess_mw", "wtg_count", "wtg_mw", "procedure_state", "stage", "developer_or_spv"],
+  "change_fingerprint_fields": [
+    "site_type",
+    "offshore_technology",
+    "wind_mw",
+    "bess_mw",
+    "wtg_count",
+    "wtg_mw",
+    "developer_or_spv",
+    "area",
+    "myterna",
+    "mase_procedure_id",
+    "procedure_state",
+    "stage",
+    "scope_applicability"
+  ],
+  "collision_guards": [
+    "stesso comune o stessa area non implica stessa opera",
+    "stesso developer non implica stessa opera",
+    "stessa SSE o stesso cavidotto non implica stessa opera",
+    "una procedura di connessione può riguardare un progetto diverso",
+    "una configurazione storica non sostituisce la corrente senza riconciliazione",
+    "un esito negativo/archiviato resta guardia storica e non torna attivo senza nuova procedura distinta"
+  ]
+}

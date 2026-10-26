@@ -1,0 +1,93 @@
+{
+  "version": "0.6.0-commercial-enrichment-b",
+  "as_of": "2026-09-06",
+  "note": "Additive current evidence for configuration history and construction-chain intelligence. A1/A2 non-execution support and B project signals never close an execution scope.",
+  "projects": {
+    "andretta-bisaccia": {
+      "signals": [
+        {
+          "type": "configuration-current",
+          "grade": "A1",
+          "title": "Current Edison compliance filing confirms 88.5 MW configuration",
+          "note": "MASE metadata for Edison Rinnovabili's 31 July 2026 compliance report explicitly states that Andretta-Bisaccia was updated with a power reduction to 88.5 MW and turbine replacement. The older top-level procedure title still shows 118.80 MW; the latest project-specific compliance filing is therefore retained as the current configuration signal rather than treating the stale title as a second live configuration."
+        },
+        {
+          "type": "works-readiness",
+          "grade": "A1",
+          "title": "Compliance documentation supports works-start preparation",
+          "note": "The same MASE metadata states that the filing includes technical support for avvio lavori. This strengthens near-term mobilisation timing but does not by itself prove that civil works have started or identify any executing contractor."
+        }
+      ],
+      "sources": [
+        {
+          "id": "andretta-mase-ottemperanza-885-a1",
+          "publisher": "MASE - Valutazioni e Autorizzazioni Ambientali",
+          "grade": "A1",
+          "title": "Relazione illustrativa di verifica di ottemperanza - Andretta-Bisaccia",
+          "date": "2026-08-11",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/MetadatoDocumento/1419737"
+        }
+      ]
+    },
+    "serra-giannina": {
+      "relations": [
+        {
+          "company": "EGM Project",
+          "role": "Construction-phase technical / site follow-up",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Direct EGM Project content documents active Serra Giannina site follow-up at Torre 8, including assembly-area layout, WTG foundation excavation, blade-support areas and heavy-move planning. This confirms project-specific technical presence only and does not attribute Civil BoP, foundations, erection or logistics execution to EGM.",
+          "source_id": "serra-giannina-egm-site-a2"
+        },
+        {
+          "company": "D'Agostino Costruzioni Generali",
+          "role": "Civil/infrastructure construction involvement signal",
+          "status": "signal",
+          "confidence": "B",
+          "scope": "A D'Agostino employee publicly describes participation in the Serra Giannina project alongside RWE and refers to D'Agostino's civil-infrastructure renewable construction capability; company-attributed recruitment notices also seek site staff specifically for Serra Giannina. This is a strong project-specific mobilisation signal, but no direct company/developer award statement has yet been found, so no Civil BoP or other execution scope is closed.",
+          "source_id": "serra-giannina-dagostino-signal-b"
+        }
+      ],
+      "signals": [
+        {
+          "type": "construction-progress",
+          "grade": "A2",
+          "title": "Torre 8 foundation and assembly-area works visibly active",
+          "note": "EGM Project's direct article shows the foundation excavation already formed and assembly/storage areas prepared at Serra Giannina Torre 8, confirming an active construction phase without identifying the executing package contractor."
+        },
+        {
+          "type": "contractor-mobilisation-lead",
+          "grade": "B",
+          "title": "D'Agostino project-specific mobilisation signal",
+          "note": "Employee and recruitment evidence ties D'Agostino to Serra Giannina, but the evidence ceiling remains B until RWE, D'Agostino or a primary project document explicitly states the awarded execution scope."
+        }
+      ],
+      "sources": [
+        {
+          "id": "serra-giannina-egm-site-a2",
+          "publisher": "EGM Project",
+          "grade": "A2",
+          "title": "Dalle fondamenta al vento: come nasce una turbina eolica - Serra Giannina",
+          "date": "2026-07",
+          "url": "https://www.egmproject.it/dalle-fondamenta-al-vento-come-nasce-una-turbina-eolica/"
+        },
+        {
+          "id": "serra-giannina-dagostino-signal-b",
+          "publisher": "D'Agostino project employee / LinkedIn",
+          "grade": "B",
+          "title": "Project-specific participation signal alongside RWE at Serra Giannina",
+          "date": "2026-06",
+          "url": "https://it.linkedin.com/in/marco-troia-12b733285"
+        },
+        {
+          "id": "serra-giannina-dagostino-hiring-b",
+          "publisher": "D'Agostino Costruzioni Generali - job listing mirror",
+          "grade": "B",
+          "title": "Site Manager and site-team recruitment - Parco Eolico Serra Giannina",
+          "date": "2026-03",
+          "url": "https://it.jobrapido.com/jobpreview/6153663040291078144"
+        }
+      ]
+    }
+  }
+}

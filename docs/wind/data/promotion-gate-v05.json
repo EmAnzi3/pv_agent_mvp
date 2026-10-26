@@ -1,0 +1,81 @@
+{
+  "version": "0.5.0-promotion-gate",
+  "as_of": "2026-09-05",
+  "source_current_candidates": 38,
+  "eligible_count": 34,
+  "eligible_wind_mw": 9705.62,
+  "eligible_bess_mw": 311,
+  "blocked_count": 4,
+  "rule": "Promotion requires reconciled identity, current activity, sufficiently canonical MW/WTG configuration, explicit site_type, source-backed E0-E8 stage, applicable scope profile and collision check.",
+  "eligible": [
+    "off-owf-1",
+    "off-tramontana",
+    "off-libeccio",
+    "off-poseidon-sardinia-nw",
+    "off-ulisse-1",
+    "off-nurax-ne-sardinia",
+    "on-tarquinia-ski31",
+    "on-bora-troia",
+    "on-lujentu",
+    "on-green-power-wind-1",
+    "on-isili-wind",
+    "on-costa-delle-ripe",
+    "on-mottola-wind",
+    "on-ruvo-rwind",
+    "on-energia-della-comunanza",
+    "on-sv7-bric-delle-rocche",
+    "on-sv9-monte-camulera",
+    "on-piano-madama-giulia-aren",
+    "on-parma-a",
+    "on-altamura",
+    "on-poggio-dell-oro",
+    "on-fiumicino-wind-bess",
+    "on-ripabottoni-edison-repowering",
+    "on-minervino-edison-repowering",
+    "off-kailia-current",
+    "off-atis-current",
+    "on-lecce-betanrg",
+    "on-la-salentina",
+    "on-monte-rughe",
+    "on-nulvi-sedini-wpd",
+    "on-fresagrandinaria-dogliola-lentella",
+    "on-campovaglio",
+    "on-energia-molise",
+    "on-florinas-repowering"
+  ],
+  "stage_overrides": {
+    "off-owf-1": "E2",
+    "off-tramontana": "E2",
+    "off-libeccio": "E2",
+    "off-poseidon-sardinia-nw": "E2",
+    "off-ulisse-1": "E2",
+    "off-nurax-ne-sardinia": "E2",
+    "on-florinas-repowering": "E3"
+  },
+  "enrichment_overrides": {
+    "on-altamura": {"developer_or_spv": "Alta Wind S.r.l."},
+    "on-poggio-dell-oro": {"developer_or_spv": "Sorgenia Renewables S.r.l."},
+    "on-fiumicino-wind-bess": {"developer_or_spv": "SKI W A4 S.r.l."},
+    "on-fresagrandinaria-dogliola-lentella": {"developer_or_spv": "Q-ENERGY RENEWABLES 2 S.r.l."},
+    "on-florinas-repowering": {"developer_or_spv": "RWE Renewables Italia S.r.l."},
+    "off-atis-current": {"wtg_count": 48, "wtg_mw": 18}
+  },
+  "blocked": [
+    {
+      "candidate_id": "off-med-wind-grecale",
+      "reason": "Official evidence found states a maximum of 45 WTGs up to 18.8 MW, not a sufficiently exact current WTG configuration for the canonical card."
+    },
+    {
+      "candidate_id": "off-rospo-offshore",
+      "reason": "67 x 15 MW is consistently reported by press, but the current promotion gate still lacks an A1/A2 source explicitly tying that exact WTG count to the canonical configuration."
+    },
+    {
+      "candidate_id": "on-sindia-macomer-43-4",
+      "reason": "7 WTGs is reported by sector/local press, while the MASE project page used in discovery does not expose the count. Keep in discovery until A1/A2 configuration evidence is attached."
+    },
+    {
+      "candidate_id": "on-le-chiancate",
+      "reason": "Current MASE identity, developer and 86.4 MW are verified, but an exact WTG count has not yet been recovered from A1/A2 evidence."
+    }
+  ]
+}

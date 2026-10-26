@@ -1,0 +1,200 @@
+{
+  "version": "0.5.0-commercial-enrichment",
+  "as_of": "2026-09-05",
+  "note": "Commercial and technical enrichment for promoted canonicals. Non-execution roles never close core scopes unless the role is explicitly mapped as executable and supported by A1/A2 evidence.",
+  "projects": {
+    "off-kailia-current": {
+      "relations": [
+        {
+          "company": "Renantis",
+          "role": "Developer / sponsor",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Joint promoter of Kailia with BlueFloat Energy; no execution scope inferred.",
+          "source_id": "kailia-bluefloat-eia"
+        },
+        {
+          "company": "BlueFloat Energy",
+          "role": "Developer / sponsor",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Joint promoter of Kailia with Renantis; no execution scope inferred.",
+          "source_id": "kailia-bluefloat-eia"
+        },
+        {
+          "company": "WSP",
+          "role": "EIA engineering / environmental services",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "Developer states WSP undertook the Environmental Impact Assessment work. Technical/environmental role, not construction execution.",
+          "source_id": "kailia-bluefloat-eia"
+        },
+        {
+          "company": "RINA",
+          "role": "Engineering / environmental and multidisciplinary studies",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "RINA project reference covers EIA scoping and navigational, metocean, electrical, anchoring/mooring and related studies on the same Kailia identity; reference uses a historical project configuration.",
+          "source_id": "kailia-rina-reference"
+        }
+      ],
+      "signals": [
+        {
+          "type": "development-partnership",
+          "grade": "A2",
+          "title": "Renantis + BlueFloat Energy joint development",
+          "note": "Direct developer source confirms the partnership; current canonical MW/WTG remain governed by MASE, not older corporate project-size pages."
+        },
+        {
+          "type": "metocean-survey",
+          "grade": "A2",
+          "title": "LiDAR buoy campaign",
+          "note": "Direct project/developer source documents a minimum 12-month floating LiDAR/wind-wave measurement campaign off Brindisi."
+        },
+        {
+          "type": "historical-configuration",
+          "grade": "A2",
+          "title": "Historical 1,176 MW / 98 WTG RINA reference",
+          "note": "Same project identity, historical configuration only; current canonical record remains 900 MW / 60 WTG from MASE."
+        }
+      ],
+      "sources": [
+        {
+          "id": "kailia-bluefloat-eia",
+          "publisher": "BlueFloat Energy",
+          "grade": "A2",
+          "title": "Kailia Floating Offshore Wind Project: Environmental Impact Assessment submitted",
+          "date": "2024-03-14",
+          "url": "https://www.bluefloat.com/kailia-floating-offshore-wind-project-environmental-impact-assessment-submitted/"
+        },
+        {
+          "id": "kailia-bluefloat-lidar",
+          "publisher": "BlueFloat Energy",
+          "grade": "A2",
+          "title": "LiDAR buoy deployed for Kailia Energia and Lupiae Maris",
+          "date": "2023-07-24",
+          "url": "https://www.bluefloat.com/floating-offshore-wind-farm-lidar-buoy-deployed-off-the-brindisi-coast-for-in-depth-studies-to-support-the-design-of-kailia-energia-and-lupiae-maris-wind-farms-2/"
+        },
+        {
+          "id": "kailia-rina-reference",
+          "publisher": "RINA",
+          "grade": "A2",
+          "title": "Offshore Wind Services — Kailia Energia Offshore Wind Farm reference",
+          "date": null,
+          "url": "https://scresources.rina.org/resources/Documents/Brochure%20Offshore%20Wind%20Services_EN_WEB.pdf?Mobile=1"
+        }
+      ]
+    },
+    "off-atis-current": {
+      "relations": [
+        {
+          "company": "Eni Plenitude Renewables Italy S.p.A.",
+          "role": "Owner / sponsor",
+          "status": "confirmed",
+          "confidence": "A1",
+          "scope": "Eni Annual Report 2025 reports 100% ownership of Atis Floating Wind S.r.l.; no execution scope inferred.",
+          "source_id": "atis-eni-ar2025"
+        },
+        {
+          "company": "Geo Bio Team Group (GBT Offshore)",
+          "role": "Geophysical / environmental surveys",
+          "status": "confirmed",
+          "confidence": "A2",
+          "scope": "GBT directly references geophysical and environmental surveys for the Atis Floating Wind project. Survey role, not construction execution.",
+          "source_id": "atis-gbt-reference"
+        }
+      ],
+      "signals": [
+        {
+          "type": "grid-route",
+          "grade": "A1",
+          "title": "Four submarine export cables + landfall and onshore route",
+          "note": "Senato record describes four submarine cables for about 57 km to Rosignano Marittimo, about 7.7 km buried onshore cable to a new SE at Castellina Marittima, plus further RTN connection works."
+        },
+        {
+          "type": "ownership",
+          "grade": "A1",
+          "title": "Atis 100% owned by Eni Plenitude Renewables Italy",
+          "note": "Current corporate ownership from Eni Annual Report 2025."
+        }
+      ],
+      "sources": [
+        {
+          "id": "atis-eni-ar2025",
+          "publisher": "Eni",
+          "grade": "A1",
+          "title": "Eni Annual Report 2025 — Atis Floating Wind Srl ownership",
+          "date": "2026",
+          "url": "https://www.eni.com/content/dam/enicom/documents/eng/reports/2025/ar-2025/Annual-Report-2025.pdf"
+        },
+        {
+          "id": "atis-gbt-reference",
+          "publisher": "GBT Offshore",
+          "grade": "A2",
+          "title": "GBT Offshore — Atis Floating Wind project reference",
+          "date": null,
+          "url": "https://www.gbtoffshore.com/about-us/"
+        },
+        {
+          "id": "atis-senato-route",
+          "publisher": "Senato della Repubblica",
+          "grade": "A1",
+          "title": "Atto 4-02878 — Atis 864 MW and connection works",
+          "date": "2026-03-31",
+          "url": "https://www.senato.it/show-doc?id=1498940&idoggetto=0&leg=19&part=doc_dc-allegatob_ab-sezionetit_icrdrs-atto_402879&tipodoc=Resaula"
+        }
+      ]
+    },
+    "on-parma-a": {
+      "relations": [
+        {
+          "company": "BAUTEL SR",
+          "role": "Access / heavy-transport engineering",
+          "status": "confirmed",
+          "confidence": "A1",
+          "scope": "MASE metadata states a swept-path/access-road drawing for Parma A was prepared by BAUTEL SR, with design by Ing. Silvio Mario Bauducco. Engineering evidence only; logistics execution is not inferred.",
+          "source_id": "parma-bautel-access"
+        }
+      ],
+      "signals": [
+        {
+          "type": "access-logistics",
+          "grade": "A1",
+          "title": "Swept-path / access-road study documented",
+          "note": "Project documentation contains vehicle-envelope studies for access routes, useful for future heavy-transport and road-upgrade contractor hunt."
+        }
+      ],
+      "sources": [
+        {
+          "id": "parma-bautel-access",
+          "publisher": "MASE",
+          "grade": "A1",
+          "title": "Ingombro mezzo semovente tratto GH — Parma A",
+          "date": "2025-03-01",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/MetadatoDocumento/1309622"
+        }
+      ]
+    },
+    "on-ripabottoni-edison-repowering": {
+      "relations": [],
+      "signals": [
+        {
+          "type": "electrical-design",
+          "grade": "A1",
+          "title": "Cable route + substation upgrade package documented",
+          "note": "MASE project documents include three cable-route drawings, CEM electrical report, substation upgrade plans and a single-line electrical diagram. No electrical contractor is named by this evidence."
+        }
+      ],
+      "sources": [
+        {
+          "id": "ripabottoni-cable-package",
+          "publisher": "MASE / Edison Rinnovabili",
+          "grade": "A1",
+          "title": "Ripabottoni repowering — cable route and electrical integration package",
+          "date": "2025-12-22",
+          "url": "https://va.mite.gov.it/it-IT/Oggetti/Documentazione/10531/15594?pagina=4"
+        }
+      ]
+    }
+  }
+}

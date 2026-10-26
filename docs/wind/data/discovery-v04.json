@@ -1,0 +1,188 @@
+{
+  "version": "0.4.2-discovery",
+  "as_of": "2026-09-05",
+  "status": "discovery-layer",
+  "note": "Registro separato dal dataset canonico. Un candidato non entra nel Radar finché identity reconciliation e soglie di evidenza non sono soddisfatte.",
+  "allowed_site_types": ["onshore", "offshore"],
+  "workflow": ["discovered", "identity_checked", "evidence_enriched", "canonical_candidate", "accepted", "needs_reconciliation", "rejected"],
+  "candidate_required_fields": ["candidate_id", "name", "site_type", "status", "sources"],
+  "candidates": [
+    {
+      "candidate_id": "off-med-wind-grecale",
+      "name": "Med Wind Grecale",
+      "site_type": "offshore",
+      "status": "identity_checked",
+      "activity_class": "current",
+      "wind_mw": 698.25,
+      "bess_mw": 0,
+      "developer_or_spv": "Med Wind Grecale S.r.l.",
+      "area": "Canale di Sicilia; Province di Trapani e Palermo",
+      "mase_procedure_id": "13027",
+      "procedure_state": "VIA PNIEC-PNRR — istruttoria tecnica CTPNRR-PNIEC; integrazioni e controdeduzioni 2025-2026",
+      "notes": "Lotto Nord-Est. Identità diretta MASE; non ancora promosso nel dataset canonico.",
+      "sources": [
+        {"publisher": "MASE", "grade": "A1", "title": "Med Wind Grecale — Info progetto", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11241"}
+      ]
+    },
+    {
+      "candidate_id": "off-owf-1",
+      "name": "OWF 1",
+      "site_type": "offshore",
+      "status": "identity_checked",
+      "activity_class": "current",
+      "wind_mw": 1110,
+      "bess_mw": 200,
+      "wtg_count": 74,
+      "wtg_mw": 15,
+      "developer_or_spv": "Maxima Energia S.r.l.",
+      "area": "Mar Adriatico; approdo a Zapponeta (FG)",
+      "myterna": "202403228",
+      "mase_procedure_id": "14706",
+      "procedure_state": "Definizione contenuti SIA conclusa il 19/06/2026",
+      "notes": "BESS separato dai MW wind. Connessione onshore da trattare come parte distinta del progetto offshore.",
+      "sources": [
+        {"publisher": "MASE", "grade": "A1", "title": "OWF 1 — Info progetto", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12010"}
+      ]
+    },
+    {
+      "candidate_id": "off-rospo-offshore",
+      "name": "Rospo Offshore",
+      "site_type": "offshore",
+      "status": "identity_checked",
+      "activity_class": "current",
+      "wind_mw": 1005,
+      "bess_mw": 350,
+      "developer_or_spv": "SMALL SEA ENERGY SRL",
+      "area": "Golfo di Vasto; Abruzzo/Molise e opere di connessione a terra",
+      "mase_procedure_id": "14300",
+      "procedure_state": "Scoping in istruttoria tecnica CTPNRR-PNIEC",
+      "notes": "BESS separato dai MW wind. Numerosi comuni interessati dalle opere di connessione onshore.",
+      "sources": [
+        {"publisher": "MASE", "grade": "A1", "title": "Rospo Offshore — Info progetto", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11869"}
+      ]
+    },
+    {
+      "candidate_id": "off-tramontana",
+      "name": "Tramontana",
+      "site_type": "offshore",
+      "offshore_technology": "floating",
+      "status": "identity_checked",
+      "activity_class": "current",
+      "wind_mw": 1008,
+      "bess_mw": 0,
+      "wtg_count": 56,
+      "wtg_mw": 18,
+      "developer_or_spv": "Parco Eolico Flottante Tramontana S.r.l.",
+      "area": "Adriatico Meridionale; largo delle coste pugliesi tra Vieste e Mola di Bari",
+      "myterna": "202200587",
+      "mase_procedure_id": "13148",
+      "procedure_state": "VIA PNIEC-PNRR in istruttoria tecnica; II ripubblicazione agosto 2026",
+      "notes": "Opere di connessione onshore in Puglia. Floating esplicito nella denominazione MASE.",
+      "sources": [
+        {"publisher": "MASE", "grade": "A1", "title": "Tramontana — Info progetto", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11301"}
+      ]
+    },
+    {
+      "candidate_id": "off-libeccio",
+      "name": "Libeccio",
+      "site_type": "offshore",
+      "offshore_technology": "floating",
+      "status": "identity_checked",
+      "activity_class": "current",
+      "wind_mw": 930,
+      "bess_mw": 0,
+      "wtg_count": 62,
+      "wtg_mw": 15,
+      "developer_or_spv": "Parco Eolico Flottante Libeccio S.r.l.",
+      "area": "Adriatico Meridionale; tratto Barletta-Bari",
+      "myterna": "202200588",
+      "mase_procedure_id": "12979",
+      "procedure_state": "VIA PNIEC-PNRR — Analisi Pareri",
+      "notes": "Floating esplicito; opere onshore di connessione tra Trani, Andria e Corato.",
+      "sources": [
+        {"publisher": "MASE", "grade": "A1", "title": "Libeccio — Info progetto", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11205"}
+      ]
+    },
+    {
+      "candidate_id": "off-poseidon-sardinia-nw",
+      "name": "Poseidon Wind Energy — Sardegna nord-occidentale",
+      "site_type": "offshore",
+      "status": "identity_checked",
+      "activity_class": "current",
+      "identity_group": "poseidon-tirreno-nw-1008",
+      "wind_mw": 1008,
+      "bess_mw": 0,
+      "wtg_count": 72,
+      "wtg_mw": 14,
+      "developer_or_spv": "POSEIDON WIND ENERGY S.R.L.",
+      "area": "Mar Tirreno nord-occidentale, oltre 40 km dalle coste di Olbia",
+      "mase_procedure_id": "13018",
+      "procedure_state": "PUA PNIEC-PNRR — istruttoria tecnica CTPNRR-PNIEC; ripubblicazione conclusa 07/05/2026",
+      "notes": "Stessa opera preceduta da scoping 8672 e con ulteriore oggetto PUA 2026; trattare come una sola identità procedurale.",
+      "sources": [
+        {"publisher": "MASE", "grade": "A1", "title": "Poseidon 1008 MW — PUA corrente", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11234"},
+        {"publisher": "MASE", "grade": "A1", "title": "Poseidon — ulteriore oggetto PUA 2026", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12106"}
+      ]
+    },
+    {
+      "candidate_id": "off-ulisse-1",
+      "name": "Ulisse 1",
+      "site_type": "offshore",
+      "status": "identity_checked",
+      "activity_class": "current",
+      "wind_mw": 1620,
+      "bess_mw": 0,
+      "wtg_count": 108,
+      "wtg_mw": 15,
+      "developer_or_spv": "SCS 28 S.r.l.",
+      "area": "Mar Adriatico, largo della Puglia; approdo a Monopoli (BA)",
+      "myterna": "202102434 / 202102343",
+      "mase_procedure_id": "12636",
+      "procedure_state": "Scoping PNIEC-PNRR concluso; parere espresso 10/12/2025",
+      "notes": "Due codici MYTERNA riportati nell'oggetto MASE: identity guard necessaria prima della promozione canonica.",
+      "sources": [
+        {"publisher": "MASE", "grade": "A1", "title": "Ulisse 1 — Info progetto", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11000"}
+      ]
+    },
+    {
+      "candidate_id": "off-nurax-ne-sardinia",
+      "name": "NURAX — Sardegna nord-orientale 462 MW",
+      "site_type": "offshore",
+      "status": "identity_checked",
+      "activity_class": "current",
+      "identity_group": "nurax-ne-sardinia-462",
+      "wind_mw": 462,
+      "bess_mw": 0,
+      "wtg_count": 33,
+      "wtg_mw": 14,
+      "developer_or_spv": "NURAX WIND POWER S.r.l.",
+      "area": "Mar Tirreno, coste nord-orientali della Sardegna / Olbia",
+      "mase_procedure_id": "8661 + procedure successive collegate",
+      "procedure_state": "Scoping concluso; PUA PNIEC-PNRR avviato nel 2026",
+      "notes": "MASE espone più oggetti/procedure riferite alla stessa opera (Info 8877, 11122 e 12105). Trattare come una sola identità con genealogia procedurale, non come tre progetti.",
+      "sources": [
+        {"publisher": "MASE", "grade": "A1", "title": "NURAX — scoping / opera 462 MW", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8877"},
+        {"publisher": "MASE", "grade": "A1", "title": "NURAX — procedura collegata", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11122"},
+        {"publisher": "MASE", "grade": "A1", "title": "NURAX — PUA 2026", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12105"}
+      ]
+    },
+    {
+      "candidate_id": "off-chieuti-legacy",
+      "name": "Centrale eolica offshore Chieuti",
+      "site_type": "offshore",
+      "status": "rejected",
+      "activity_class": "rejected",
+      "wind_mw": 150,
+      "bess_mw": 0,
+      "wtg_count": 50,
+      "developer_or_spv": "Trevi Energy S.p.A.",
+      "area": "Adriatico tra Chieuti/Serracapriola e Termoli",
+      "mase_procedure_id": "317",
+      "procedure_state": "VIA conclusa — Decreto VIA negativo 29/05/2026",
+      "notes": "Conservato nel discovery registry come guardia storica: non deve rientrare nella pipeline corrente come opportunità attiva salvo nuova procedura distinta.",
+      "sources": [
+        {"publisher": "MASE", "grade": "A1", "title": "Centrale eolica offshore Chieuti — esito VIA", "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/240"}
+      ]
+    }
+  ]
+}
