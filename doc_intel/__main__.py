@@ -95,6 +95,11 @@ def main(argv: list[str] | None = None) -> int:
     ex.add_argument("--out", default="reports/explore.json")
     ex.add_argument("--no-render", action="store_true")
     ex.add_argument("--annotate", action="store_true", help="also print the report as GitHub annotations")
+    nw = sub.add_parser("news", help="sector press / listed EPC news matched to radar projects (level C, to verify)")
+    nw.add_argument("--data", default="docs/data.json")
+    nw.add_argument("--memory", required=True)
+    nw.add_argument("--backfill-pages", type=int, default=0, help="also read N older feed pages (first run)")
+    nw.add_argument("--max-articles", type=int, default=40)
     m = sub.add_parser("render")
     m.add_argument("--dossier", required=True)
     a = ap.parse_args(argv)
@@ -218,6 +223,12 @@ def main(argv: list[str] | None = None) -> int:
         Path(a.out).write_text(json.dumps(idx, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
         print(f"cards index: {len(idx)} cards -> {a.out}")
         return 0
+    if a.cmd == "news":
+        from .news import run as news_run
+        st = news_run(a.data, a.memory, backfill_pages=a.backfill_pages, max_articles=a.max_articles)
+        print(f"::notice title=news::{st['new_relevant']} nuovi articoli rilevanti; {st['projects_matched']} progetti con notizie compatibili; feed {st['feeds']}")
+        return 0
+
     if a.cmd == "explore":
         from .explore import main as explore_main
         Path(a.out).parent.mkdir(parents=True, exist_ok=True)
