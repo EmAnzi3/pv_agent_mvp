@@ -201,7 +201,7 @@ class Fetcher:
         self._lock = threading.Lock()
 
     # small regional portals: one request at a time with a pause, so a batch never looks like an attack
-    POLITE_HOSTS = {"si-vvi.regione.sicilia.it": 2.0, "www.sistema.puglia.it": 1.0, "valutazioneambientale.regione.basilicata.it": 1.0}
+    POLITE_HOSTS = {"si-vvi.regione.sicilia.it": 5.0, "www.sistema.puglia.it": 1.0, "valutazioneambientale.regione.basilicata.it": 1.0}
     _host_locks: dict = {}
 
     def _polite(self, url: str):

@@ -46,6 +46,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         reanalyse_match: str | None = None,
         registry: str | None = None, registry_client=None,
         time_budget_s: float | None = None, get_html: Callable[[str], str] | None = None,
+        skip_titles: str | None = None,
         fetcher: Fetcher | None = None, log: Callable[[str], None] = print) -> dict[str, Any]:
     t0 = time.time()
     store = Store(store_dir)
@@ -66,7 +67,21 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     manifest["procedures"] = disc.procedures
     fetcher = fetcher or Fetcher(store)
     budget = OcrBudget(ocr_max_pages, deadline=(t0 + time_budget_s) if time_budget_s else None)
-    docs = disc.documents[: max_docs or None]
+    docs = list(disc.documents)
+    skipped_titles = 0
+    if skip_titles:
+        # documents whose title says they are drawings are not downloaded (portals with tight limits);
+        # a drawing that is the works programme is always kept
+        keep = [d for d in docs if not re.search(skip_titles, d.title or "", re.I)
+                or SCHED_RE.search(d.title or "") or PRIORITY_DOCS.search(d.title or "")]
+        skipped_titles, docs = len(docs) - len(keep), keep
+        if skipped_titles:
+            log(f"[discover] {skipped_titles} elaborati grafici non scaricati")
+    if max_docs and len(docs) > max_docs:
+        # under a download cap the most informative documents go first (stable order otherwise)
+        rank = lambda d: 0 if PRIORITY_DOCS.search(d.title or "") else 1
+        docs = sorted(docs, key=rank)[:max_docs]
+        log(f"[discover] limite documenti: {max_docs} (i piu' informativi per primi)")
 
     deadline = (t0 + time_budget_s) if time_budget_s else None
     counter = {"n": 0}
@@ -202,7 +217,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     sha_aliases: dict[str, list[str]] = {}
     inventory = []
     by_sha: dict[str, str] = {}
-    acq = {"declared_total": sum(p["declared"] or 0 for p in disc.procedures), "procedures": disc.procedures,
+    acq = {"skipped_by_title": skipped_titles, "declared_total": sum(p["declared"] or 0 for p in disc.procedures), "procedures": disc.procedures,
            "discovery_errors": list(disc.errors), "info_links": identity.raw.get("info_links"),
            "references": len(disc.documents), "processed_references": len(docs), "download_failures": 0,
            "distinct_sha256": 0, "duplicate_references": 0, "pdf_files": 0, "pages_total": 0,
@@ -306,6 +321,9 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     return dossier
 
 
+PRIORITY_DOCS = re.compile(r"(?i)relazion|cron?o?\s*programma|sintesi|istanza|decreto|provvedimento|parere|determin|autorizzaz|computo|quadro\s+economico|preventivo")
+DRAWING_TITLES = (r"\btav(?:ola)?\.?\s*\d|\btav\b|planimetr|layout|elaborat\w*\s+grafic|sezion[ei]\b|prospett|ortofoto|"
+                  r"inquadramento|particolar\w*\s+costruttiv|cartograf|fotoinserim|rendering|profil[oi]\s+longitudinal")
 SCHED_RE = re.compile(r"(?i)cron?o?\s*programma|gantt|diagramma\s+(?:dei\s+)?lavori|programma\s+(?:dei\s+)?lavori")
 # lines kept (max 40 per document) to tune extractors for fields the user asked for, since texts are deleted
 TERM_RE = re.compile(r"(?i)\bpal[io]\b|infiss|superficie|\bettari\b|\d\s*ha\b|cronoprogramma|gantt|\bmes[ei]\s+\d|"
