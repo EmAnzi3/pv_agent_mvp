@@ -1,4 +1,4 @@
-name: Doc Intel FER X rankings (GSE)
+name: Doc Intel FER X rankings (GSE) and 'vicini al cantiere'
 # Matches the GSE FER X awarded plants (doc_intel/data/ferx_awarded.json, imported by hand from the GSE
 # Table A PDFs: the GSE site refuses cloud downloads) to radar projects and their cards.
 # Saves ferx/awarded.json and ferx/matches.json on the memory branch. On a pull request: dry run only.
@@ -13,6 +13,7 @@ on:
   pull_request:
     paths:
       - 'doc_intel/ferx.py'
+      - 'doc_intel/readiness.py'
       - 'doc_intel/data/ferx_awarded.json'
       - '.github/workflows/doc-intel-ferx.yml'
 permissions:
@@ -35,10 +36,12 @@ jobs:
           git worktree add -q .mem doc-intel-state
       - name: Rankings and match
         run: python -m doc_intel ferx --data docs/data.json --memory .mem --annotate
+      - name: Vicini al cantiere (phase, score and reasons per project)
+        run: python -m doc_intel readiness --data docs/data.json --memory .mem
       - name: Save on the memory branch
         if: github.event_name != 'pull_request'
         run: |
-          cd .mem && git add ferx && (git diff --cached --quiet && exit 0 || git commit -q -m "doc-intel ferx: GSE rankings matched to radar projects (run ${{ github.run_id }})")
+          cd .mem && git add ferx readiness && (git diff --cached --quiet && exit 0 || git commit -q -m "doc-intel ferx: GSE rankings matched to radar projects (run ${{ github.run_id }})")
           for i in 1 2 3 4 5; do
             git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
             git push -q origin HEAD:doc-intel-state && exit 0

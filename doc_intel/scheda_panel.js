@@ -199,6 +199,17 @@
       <p class="sc-fine sc-leg"><span class="sc-lv lv-documentata">Atto di cantiere</span> ${esc(leg.A || '')} ·
       <span class="sc-lv lv-prescritta">Da elaborati</span> ${esc(leg.B || '')}</p></section>`;
   }
+  function readiness(key) {
+    const x = (window.PVReady || {})[key];
+    if (!x) return '';
+    const lv = x.level ? `<span class="sc-lv ${x.level === 'Alta' ? 'lv-documentata' : x.level === 'Media' ? 'lv-prescritta' : 'lv-stimata'}">Priorità ${esc(x.level)}</span> ` : '';
+    const reasons = (x.reasons || []).map(r => `<li>${esc(r)}</li>`).join('');
+    return `<section class="sc-sec"><h3>Vicini al cantiere</h3>
+      <p>${lv}<strong>${esc(x.phase_label)}</strong>${x.window ? ' · ' + esc(x.window) : ''}</p>
+      ${reasons ? `<ul class="sc-open">${reasons}</ul>` : ''}
+      <p class="sc-fine">Sintesi dei segnali raccolti (atti, date, incentivo FER X, imprese, stampa): un'indicazione, non una certezza.
+      Le date stimate restano stime.</p></section>`;
+  }
   function incentive(key) {
     const x = ((window.PVFerx || {})[key] || [])[0];
     if (!x) return '';
@@ -243,7 +254,7 @@
         </div>
       </div>
       ${tiles(card.sintesi)}
-      <div class="sc-body">${incentive(card.project_key)}${execution(card.esecuzione)}${press(card.project_key)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
+      <div class="sc-body">${readiness(card.project_key)}${incentive(card.project_key)}${execution(card.esecuzione)}${press(card.project_key)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
         <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.da_leggere ? ` (lettura in corso: altri ${esc(doc.da_leggere)} documenti nelle prossime notti)` : (doc.completa ? '' : ' (lettura incompleta)')};
           aggiornata il ${esc((card.updated || '').split('-').reverse().join('/'))}. ${esc(card.avvertenza)}</p>
       </div>`;

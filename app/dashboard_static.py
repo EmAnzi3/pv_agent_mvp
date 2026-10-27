@@ -1475,6 +1475,7 @@ __SCHEDA_CSS__
             <option value="terna">Solo radar Terna</option>
             <option value="card">Solo con scheda</option>
             <option value="ferx">Solo con incentivo FER X assegnato</option>
+            <option value="cantiere">Vicini al cantiere (priorità alta e media)</option>
           </select>
           <select id="epcFilter" title="Impresa esecutrice / EPC trovata nei documenti">
             <option value="">EPC: tutti i record</option>
@@ -1489,6 +1490,7 @@ __SCHEDA_CSS__
           <select id="sortFieldFilter">
             <option value="">Ordina per...</option>
             <option value="power_mw">MW</option>
+            <option value="readiness">Priorità cantiere</option>
             <option value="title">Progetto</option>
             <option value="proponent">Proponente</option>
             <option value="region">Regione</option>
@@ -1642,12 +1644,15 @@ __SCHEDA_CSS__
     function schedaButton(row) {
       const s = row && row.project_key ? schedeIndex[row.project_key] : null;
       const nw = row && row.project_key && (window.PVNews || {})[row.project_key];
+      const rd = row && row.project_key && (window.PVReady || {})[row.project_key];
+      const ready = rd && (rd.level === 'Alta' || rd.level === 'Media')
+        ? ` <span class="sc-epc sc-ready sc-ready-${rd.level === 'Alta' ? 'a' : 'm'}" title="${escapeHtml(rd.phase_label + (rd.window ? ': ' + rd.window : ''))}">Cantiere ${rd.level === 'Alta' ? '●●' : '●'}</span>` : '';
       const fx = row && row.project_key && (window.PVFerx || {})[row.project_key];
       const ferx = fx ? ` <span class="sc-epc sc-ferx" title="Incentivo FER X assegnato (GSE, graduatoria ${escapeHtml(fx[0].procedura)})">FER X</span>` : '';
       const press = nw ? ` <span class="sc-epc sc-press" title="Notizie di stampa compatibili con il progetto: da verificare">Stampa ${nw.length}</span>` : '';
-      if (!s) return ferx + press;
+      if (!s) return ready + ferx + press;
       const epc = s.epc ? ` <span class="sc-epc" title="${s.epc === 'A' ? 'Impresa esecutrice in un atto di cantiere' : 'Impresa esecutrice indicata negli elaborati'}">EPC ${s.epc === 'A' ? '✓' : '?'}</span>` : '';
-      return ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>${epc}${ferx}${press}`;
+      return ` <button class="sc-btn" type="button" data-scheda="${escapeHtml(s.file)}"${s.live ? ' data-live="1"' : ''}>Scheda</button>${ready}${epc}${ferx}${press}`;
     }
 
     function setText(id, value) {
@@ -1839,6 +1844,10 @@ __SCHEDA_CSS__
       if (dataKind === 'terna' && !isTerna(record)) return false;
       if (dataKind === 'card' && !(record.project_key && schedeIndex[record.project_key])) return false;
       if (dataKind === 'ferx' && !(record.project_key && (window.PVFerx || {})[record.project_key])) return false;
+      if (dataKind === 'cantiere') {
+        const rd = record.project_key && (window.PVReady || {})[record.project_key];
+        if (!rd || !(rd.level === 'Alta' || rd.level === 'Media')) return false;
+      }
       const epcSel = document.getElementById('epcFilter').value;
       if (epcSel === 'news') {
         if (!(record.project_key && (window.PVNews || {})[record.project_key])) return false;
@@ -1879,6 +1888,10 @@ __SCHEDA_CSS__
       const multiplier = direction === 'asc' ? 1 : -1;
 
       return copy.sort((a, b) => {
+        if (field === 'readiness') {
+          const sc = r => { const x = r.project_key && (window.PVReady || {})[r.project_key]; return x && x.level ? x.score : -1; };
+          return ((sc(a) - sc(b)) || (toNumber(a.power_mw || 0) - toNumber(b.power_mw || 0))) * multiplier;
+        }
         if (field === 'power_mw') {
           const av = a.power_mw === null || a.power_mw === undefined || a.power_mw === '' ? -Infinity : toNumber(a.power_mw);
           const bv = b.power_mw === null || b.power_mw === undefined || b.power_mw === '' ? -Infinity : toNumber(b.power_mw);
@@ -1921,7 +1934,11 @@ __SCHEDA_CSS__
         'Tipo',
         'MW',
         'Stato',
-        'Link'
+        'Link',
+        'Vicini al cantiere',
+        'Fase',
+        'Finestra',
+        'Motivi'
       ];
 
       const rows = filtered.map(record => [
@@ -1943,7 +1960,9 @@ __SCHEDA_CSS__
                 3
               ),
         record.status || '',
-        record.url || ''
+        record.url || '',
+        ...(rd => rd ? [rd.level || '', rd.phase_label || '', rd.window || '', (rd.reasons || []).join(' | ')] : ['', '', '', ''])(
+          record.project_key && (window.PVReady || {})[record.project_key])
       ]);
 
       const lineBreak =
@@ -2200,6 +2219,10 @@ __SCHEDA_CSS__
     const SCHEDE_LIVE = 'https://raw.githubusercontent.com/EmAnzi3/pv_agent_mvp/doc-intel-state/schede/';
     const getIndex = url => fetch(url, { cache: 'no-cache' }).then(r => r.ok ? r.json() : {}).catch(() => ({}));
     // sector press matched to the projects (level C, to verify): read from the memory branch
+    getIndex(SCHEDE_LIVE.replace(/schede\/$/, 'readiness/index.json')).then(n => {
+      window.PVReady = (n && n.projects) || {};
+      if (Object.keys(window.PVReady).length) { initTopProjects(); renderPipeline(); }
+    });
     getIndex(SCHEDE_LIVE.replace(/schede\/$/, 'ferx/matches.json')).then(n => {
       window.PVFerx = (n && n.projects) || {};
       if (Object.keys(window.PVFerx).length) { initTopProjects(); renderPipeline(); }
