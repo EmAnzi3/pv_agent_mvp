@@ -29,5 +29,19 @@ class Ferx(unittest.TestCase):
         self.assertEqual(m["c"][0]["basis"], "P. IVA del proponente")
 
 
+    def test_wind_matching_lots_and_companies(self):
+        from doc_intel.ferx import match_wind
+        row = lambda pos, soc, com, kw, proc="FER X transitorio – eolico (PC_EOL_2025_01)": {
+            "posizione": pos, "codice": f"C{pos}", "ragione_sociale": soc, "piva": "1", "comune": com, "provincia": "",
+            "regione": "", "categoria": "", "kw": kw, "kw_ammessi": kw, "procedura": proc}
+        awarded = [row(1, "ERG WIND ENERGY S.R.L.", "Greci", 27000), row(2, "ERG WIND ENERGY S.R.L.", "Montaguto", 16800),
+                   row(3, "ASJA AMBIENTE ITALIA S.R.L.", "Sclafani Bagni", 55000), row(4, "WINDFLOW SRL", "Sclafani Bagni", 9000),
+                   row(5, "ERG SPA", "Greci", 27000, "FER X transitorio – fotovoltaico")]
+        projects = [{"id": "gm", "name": "Greci-Montaguto", "mw": 43.8, "municipalities": ["Greci", "Montaguto"], "spv": "ERG"},
+                    {"id": "as", "name": "Alia-Sclafani", "mw": 55, "municipalities": ["Sclafani Bagni"], "spv": "Asja Ambiente Italia"}]
+        res = {r["posizione"]: (r["progetto"] or {}).get("id") for r in match_wind(awarded, projects)}
+        self.assertEqual(res, {1: "gm", 2: "gm", 3: "as", 4: None})      # PV rows ignored, other company never matched
+
+
 if __name__ == "__main__":
     unittest.main()

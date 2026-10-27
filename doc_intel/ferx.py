@@ -23,14 +23,15 @@ from pathlib import Path
 from .admin_areas import _key as place_key, _table as comuni_table
 
 DATA = Path(__file__).parent / "data" / "ferx_awarded.json"
-PROCEDURES = {"PC_FTVNZIA_2025": ("FER X transitorio – fotovoltaico NZIA (PC_FTVNZIA_2025_01)", "2025-12-10"),
+PROCEDURES = {"PC_EOL_2025": ("FER X transitorio – eolico (PC_EOL_2025_01)", "2025-12-01"),
+              "PC_FTVNZIA_2025": ("FER X transitorio – fotovoltaico NZIA (PC_FTVNZIA_2025_01)", "2025-12-10"),
               "PC_FTV_2025": ("FER X transitorio – fotovoltaico (PC_FTV_2025_01)", "2025-12-01")}
 REGIONS = ["VALLE D'AOSTA", "PIEMONTE", "LOMBARDIA", "TRENTINO ALTO ADIGE", "VENETO", "FRIULI VENEZIA GIULIA", "LIGURIA",
            "EMILIA ROMAGNA", "TOSCANA", "UMBRIA", "MARCHE", "LAZIO", "ABRUZZO", "MOLISE", "CAMPANIA", "PUGLIA",
            "BASILICATA", "CALABRIA", "SICILIA", "SARDEGNA"]
-ROW = re.compile(r"^(?P<pos>\d+)\s+(?P<code>FER\d+)\s+(?P<name>.+?)\s+(?P<vat>\d{11})\s+(?P<place>.+?)\s+"
+ROW = re.compile(r"^(?P<pos>\d+)\s+(?P<code>FER\d+)\s+(?P<name>.+?)\s+(?P<vat>\d{10,11})\s+(?P<place>.+?)\s+"
                  r"(?P<cat>Nuova Costruzione|Integrale Ricostruzione|Potenziamento|Rifacimento|Riattivazione|[A-Z][a-z]+(?: [A-Za-z]+)?)\s+"
-                 r"(?P<pct>[\d,]+%)\s+(?P<flags>(?:(?:SI|NO)\s+)+)(?P<date>\d{1,2}/\d{1,2}/\d{2})\s+\d{1,2}\.\d{2}\s+"
+                 r"(?P<pct>[\d,]+%)\s+(?P<flags>(?:(?:SI|NO)\s+)+)(?P<date>\d(?: ?\d)?/\d(?: ?\d)?/\d ?\d)\s+\d{1,2}\.\s?\d{2}\s+"
                  r"(?P<kw>[\d.]+,\d{3})(?:\s+(?P<cum>[\d.]+,\d{3}))?(?:\s+(?P<quota>[\d. ]+,\d{3}))?")
 
 
@@ -66,9 +67,9 @@ def parse_text(text: str, procedure: str) -> list[dict]:
         kw = _num(m.group("kw"))
         quota = _num(m.group("quota"))
         rows.append({"procedura": procedure, "posizione": int(m.group("pos")), "codice": m.group("code"),
-                     "ragione_sociale": m.group("name").strip(), "piva": m.group("vat"),
+                     "ragione_sociale": m.group("name").strip(), "piva": m.group("vat").zfill(11),
                      "regione": region, "provincia": province, "comune": comune, "categoria": m.group("cat"),
-                     "ribasso": m.group("pct"), "data_domanda": m.group("date"),
+                     "ribasso": m.group("pct"), "data_domanda": m.group("date").replace(" ", ""),
                      "kw": kw, "kw_ammessi": quota if quota and kw and quota <= kw * 1.001 else kw})
     return rows
 
@@ -98,6 +99,8 @@ def match(awarded: list[dict], records: list[dict], card_vats: dict[str, set[str
     first, then the same company with a compatible power (within 35 %)."""
     by_comune: dict[str, list[dict]] = {}
     for a in awarded:
+        if "eolico" in a["procedura"]:
+            continue                                  # the PV radar takes only photovoltaic rankings
         by_comune.setdefault(place_key(a["comune"]), []).append(a)
     strong: dict[str, tuple] = {}
     for r in records:
@@ -123,6 +126,56 @@ def match(awarded: list[dict], records: list[dict], card_vats: dict[str, set[str
     return {key: [{**{k: a[k] for k in fields}, "basis": basis}] for key, (a, basis) in strong.items()}
 
 
+GENERIC = {"srl", "spa", "s", "r", "l", "p", "a", "societa", "benefit", "wind", "eolico", "eolica", "energia", "energy",
+           "italia", "italy", "renewables", "rinnovabili", "power", "green", "the", "di", "e", "group", "sicilia", "puglia"}
+
+
+def _tokens(name: str) -> set[str]:
+    return {t for t in place_key(name).split() if len(t) >= 3 and t not in GENERIC}
+
+
+def match_wind(awarded: list[dict], projects: list[dict]) -> list[dict]:
+    """Every awarded wind plant, with the wind-radar project it belongs to (or None): same municipality,
+    a distinctive company word shared with the project's SPV/developer and a compatible power (35 %)."""
+    out = []
+    for a in (x for x in awarded if "eolico" in x["procedura"]):
+        mw, ck, words = (a["kw"] or 0) / 1000, place_key(a["comune"]), _tokens(a["ragione_sociale"])
+        best = None
+        for p in projects:
+            if ck not in {place_key(m) for m in (p.get("municipalities") or [])}:
+                continue
+            pw = _tokens(f"{p.get('spv') or ''} {p.get('developer') or ''}")
+            pmw = float(p.get("mw") or 0)
+            ratio = abs(pmw - mw) / max(pmw, mw) if pmw and mw else 9
+            if words & pw and ratio <= 0.35 and (best is None or ratio < best[0]):
+                best = (ratio, p)
+        out.append({**{k: a[k] for k in ("posizione", "codice", "ragione_sociale", "piva", "comune", "provincia",
+                                         "regione", "categoria", "kw", "kw_ammessi")},
+                    "progetto": ({"id": best[1]["id"], "nome": best[1]["name"], "fase": best[1].get("stage_label"),
+                                  "mw": best[1].get("mw"), "criterio": "comune + società + potenza"} if best else None)})
+    # a radar project awarded as several lots (e.g. ERG Greci-Montaguto 43.8 MW = 16.8 + 27.0 MW): the
+    # unmatched rows of the same company in the project's municipalities that together give its power
+    for p in projects:
+        pk = {place_key(m) for m in (p.get("municipalities") or [])}
+        pw, pmw = _tokens(f"{p.get('spv') or ''} {p.get('developer') or ''}"), float(p.get("mw") or 0)
+        rows = [o for o in out if not o["progetto"] and place_key(o["comune"]) in pk and _tokens(o["ragione_sociale"]) & pw]
+        tot = sum((o["kw"] or 0) for o in rows) / 1000
+        if len(rows) >= 2 and pmw and abs(pmw - tot) / max(pmw, tot) <= 0.10:
+            for o in rows:
+                o["progetto"] = {"id": p["id"], "nome": p["name"], "fase": p.get("stage_label"), "mw": p.get("mw"),
+                                 "criterio": f"lotti della stessa società ({len(rows)} lotti, {tot:.1f} MW in totale)"}
+    return out
+
+
+def wind_projects(repo_root: Path) -> list[dict]:
+    data = repo_root / "docs" / "wind" / "data"
+    try:
+        manifest = json.loads((data / "projects.json").read_text(encoding="utf-8"))
+        return [p for ch in manifest.get("chunks", []) for p in json.loads((data / ch).read_text(encoding="utf-8"))]
+    except (OSError, ValueError):
+        return []
+
+
 def run(data_json: str, memory: str) -> dict:
     awarded = json.loads(DATA.read_text(encoding="utf-8"))["impianti"]
     records = json.loads(Path(data_json).read_text(encoding="utf-8-sig")).get("records", [])
@@ -144,9 +197,16 @@ def run(data_json: str, memory: str) -> dict:
         "updated": datetime.now(timezone.utc).date().isoformat(), "fonte": "GSE – Graduatorie FER X, Tabella A",
         "url": "https://www.gse.it/servizi-per-te/fonti-rinnovabili/ferx/graduatorie", "projects": m},
         ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+    wind = match_wind(awarded, wind_projects(Path(data_json).resolve().parents[1]))
+    (out_dir / "wind_matches.json").write_text(json.dumps({
+        "updated": datetime.now(timezone.utc).date().isoformat(),
+        "procedura": "FER X transitorio – eolico (PC_EOL_2025_01)", "pubblicata": "2025-12-01",
+        "url": "https://www.gse.it/servizi-per-te/fonti-rinnovabili/ferx/graduatorie", "impianti": wind},
+        ensure_ascii=False, indent=0), encoding="utf-8")
     basis = {}
     for v in m.values():
         for x in v:
             basis[x["basis"]] = basis.get(x["basis"], 0) + 1
     return {"impianti_ammessi": len(awarded), "progetti_radar_abbinati": len(m), "per_criterio": basis,
+            "eolico_ammessi": len(wind), "eolico_nel_radar": sum(1 for w in wind if w["progetto"]),
             "MW_abbinati": round(sum(float(next((r.get("power_mw") or 0) for r in records if r.get("project_key") == k)) for k in m), 1)}

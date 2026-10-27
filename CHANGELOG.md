@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-27 — FER X eolico (PC_EOL_2025_01, 29 impianti, 1.037 MW) importato; graduatorie ora 591 impianti (parser corretto per P. IVA a 10 cifre e date spezzate). Il radar fotovoltaico usa solo le graduatorie fotovoltaiche; il radar eolico ha la sezione «Graduatoria FER X eolico (GSE)» con abbinamento per comune + società + potenza (anche progetti assegnati in più lotti, es. ERG Greci-Montaguto) e indicazione degli impianti non presenti nel radar (`ferx/wind_matches.json`).
+
 - 2026-10-27 — «Vicini al cantiere»: per ogni progetto fase (realizzato, cantiere in corso, avvio entro 12 mesi, avvio possibile, autorizzato, in iter), priorità Alta/Media/Bassa e motivi (atto, date della scheda, verifica di ottemperanza, FER X, impresa esecutrice, stampa, titolo «archiviato»). Filtro dedicato, ordinamento «Priorità cantiere», etichetta in tabella, sezione nella scheda, colonne nell'esportazione CSV. Calcolato ogni giorno e dopo ogni push del radar.
 
 - 2026-10-27 — Correzioni di potenza confermate dall'utente: Lazio VIA-064-2019 36,969 MWp (ridotta da 46,192), Emilia-Romagna 6658 San Giovanni in Persiceto 21,03 MWp (revisione del layout). Esclusione MASE: le procedure secondarie archiviate (modifica, variante, valutazione preliminare) non tolgono il progetto; scarico delle schede sul PC corretto (elenco del ramo di memoria troncato da GitHub).
