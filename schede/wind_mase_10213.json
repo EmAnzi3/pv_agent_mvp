@@ -1,0 +1,175 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10213",
+ "title": "Progetto di un impianto eolico off-shore denominato \"ABEI - Puglia\", composto da 115 aerogeneratori di potenza unitaria pari a 15 MW, per una potenza totale d'impianto di 1.725 MW, da realizzarsi nel Mar Ionio, ad una distanza di circa 28 km dalla costa della Regione Puglia, tra i comuni di Salve (LE), Morciano di Leuca (LE) e Patù (LE), incluse le relative opere di connessione alla RTN (cod. MYTERNA n. 202303285).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10213",
+ "source": "mase",
+ "updated": "2026-10-27",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "1.725 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10213",
+    "excerpt": "1725 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "115",
+   "status": "da documenti",
+   "sub": "15,00 MW ciascuno · altezza mozzo 150 m · diametro rotore 236 m · Valore prevalente negli elaborati; altri valori: 17 (1), 15 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/908560",
+    "page": 1,
+    "document": "Contributo del Ministero della Cultura - Soprintendenza speciale per il Piano Nazionale di Ripresa e Resilienza in data 25/05/2023",
+    "excerpt": "[ID_10333] PUGLIA — Mar lonio: Realizzazione di un impianto eolico off-shore denominato “ABEI — Puglia”, composto da 115 aerogeneratori di potenza unitaria pari a 15 MW, per una potenza totale d'impianto di 1.725 MW, da "
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/908560",
+    "page": 1,
+    "document": "Contributo del Ministero della Cultura - Soprintendenza speciale per il Piano Nazionale di Ripresa e Resilienza in data 25/05/2023",
+    "excerpt": "[ID_10333] PUGLIA — Mar lonio: Realizzazione di un impianto eolico off-shore denominato “ABEI"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "LE",
+  "comuni": [
+   "Galatone",
+   "Melissano",
+   "Acquarica Del Capo",
+   "Galatina",
+   "Presicce",
+   "Ugento",
+   "Racale",
+   "Sannicola",
+   "Taviano",
+   "Morciano Di Leuca",
+   "Patu'",
+   "Gallipoli",
+   "Salve"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Galatone%2C+LE%2C+Puglia",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "AEI Wind Project VI S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "aeiwind-sesta@legalmail.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/908560",
+      "page": 1,
+      "document": "Contributo del Ministero della Cultura - Soprintendenza speciale per il Piano Nazionale di Ripresa e Resilienza in data 25/05/2023",
+      "excerpt": "Who Società AEI WIND PROJECT VI S.r.l. (aeiwind-sesta@legalmail.it)"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10213"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 14,
+  "pagine": 385,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "AEI WIND PROJECT VI S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 1725.0,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SALVE",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LE",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "confermato"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "24 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
