@@ -33,22 +33,29 @@ class MaseWindCollector(MaseCollector):
 
     # the wind typologies are read from the portal (ids are not hard-coded)
     def discover_tipologie(self) -> list[dict]:
-        r = self.session.get(SEARCH_URL, headers=self._headers(), timeout=90)
-        r.raise_for_status()
-        soup = BeautifulSoup(r.text, "html.parser")
+        """Options of the 'tipologiaID' select (project typologies) on the search pages of the portal."""
         found: dict[str, dict] = {}
-        for a in soup.find_all("a", href=True):
-            url = urljoin(SEARCH_URL, a["href"])
-            if "/Ricerca/ViaTipologia" not in url:
-                continue
-            tid = (parse_qs(urlparse(url).query).get("tipologiaID") or [None])[0]
-            label = self._clean_text(a.get_text(" ", strip=True))
-            if tid and label:
-                found[tid] = {"id": tid, "label": label}
-        for opt in soup.find_all("option"):
-            tid, label = opt.get("value"), self._clean_text(opt.get_text(" ", strip=True))
-            if tid and tid.isdigit() and label:
-                found.setdefault(tid, {"id": tid, "label": label})
+        for page in (VIA_TIPOLOGIA_URL, SEARCH_URL):
+            r = self.session.get(page, headers=self._headers(), timeout=90)
+            r.raise_for_status()
+            soup = BeautifulSoup(r.text, "html.parser")
+            for sel in soup.find_all("select"):
+                name = (sel.get("name") or sel.get("id") or "").lower()
+                opts = [(o.get("value"), self._clean_text(o.get_text(" ", strip=True))) for o in sel.find_all("option")]
+                print(f"::notice title=mase-wind select {name} @ {page.rsplit('/', 1)[-1]}::"
+                      + "; ".join(f"{v}={l[:22]}" for v, l in opts)[:950])
+                if "tipologia" in name:
+                    for v, l in opts:
+                        if v and v.isdigit() and l:
+                            found[v] = {"id": v, "label": l}
+            for a in soup.find_all("a", href=True):
+                url = urljoin(page, a["href"])
+                tid = (parse_qs(urlparse(url).query).get("tipologiaID") or [None])[0]
+                label = self._clean_text(a.get_text(" ", strip=True))
+                if "/Ricerca/ViaTipologia" in url and tid and label:
+                    found.setdefault(tid, {"id": tid, "label": label})
+            if found:
+                break
         return list(found.values())
 
     def fetch(self):
@@ -57,8 +64,7 @@ class MaseWindCollector(MaseCollector):
             self.tipologie = [{"id": t["id"], "label": t["label"],
                                "project_type_hint": "Eolico offshore" if re.search(r"(?i)mare|offshore", t["label"]) else "Eolico"}
                               for t in all_t if WIND_TYPOLOGY_RE.search(t["label"])]
-            print(f"::notice title=mase-wind tipologie::{self.tipologie} (su {len(all_t)}: "
-                  + "; ".join(f"{t['id']}={t['label'][:30]}" for t in all_t)[:900] + ")")
+            print(f"::notice title=mase-wind tipologie::{self.tipologie} (su {len(all_t)} tipologie)")
         return super().fetch()
 
     def _fetch_info_page(self, url: str) -> str | None:
