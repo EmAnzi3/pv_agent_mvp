@@ -1,0 +1,325 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9733",
+ "title": "Progetto di un impianto eolico off-shore di tipo flottante, denominato \"Messapia\", composto da 73 aerogeneratori di potenza unitaria pari a 18 MW, per una potenza totale d'impianto di 1314 MW, da realizzarsi nelle acque del Mar Ionio, a circa 28 km al largo delle coste della Puglia tra Tricase e l'area marina a sud-est di Capo Santa Maria di Leuca (LE), incluse due sottostazioni off-shore e opere di connessione alla sottostazione on-shore nel Comune di Galatina (LE).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9733",
+ "source": "mase",
+ "updated": "2026-10-27",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "1.314 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9733",
+    "excerpt": "1314 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "73",
+   "status": "da documenti",
+   "sub": "18,00 MW ciascuno · diametro rotore 250 m · Valore prevalente negli elaborati; altri valori: 4 (4), 37 (4), 36 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/834246",
+    "page": 1,
+    "document": "Contributi dell'Ente Aeroporti di Puglia in data 28/04/2023",
+    "excerpt": "Ambientale ai sensi dell’art. 21 del D.Lgs. 152/2006 relativa alla realizzazione di un impianto eolico off- shore denominato “Messapia”, composto da 73 aerogeneratori di potenza unitaria pari a 18 MW, per un apotenza tot"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/834246",
+    "page": 1,
+    "document": "Contributi dell'Ente Aeroporti di Puglia in data 28/04/2023",
+    "excerpt": "sottostazioni off-shore e opere di connessione alla sottostazione on-shore nel Comune di Galatina (LE)."
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "42 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 22 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/830487",
+    "page": 37,
+    "document": "Relazione Generale",
+    "excerpt": "Costruzione - opere a mare 42 mesi"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "LE",
+  "comuni": [
+   "Galatina"
+  ],
+  "coordinate": {
+   "lat": 39.66414,
+   "lon": 18.66442,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (7 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/830486",
+    "page": 13,
+    "document": "Relazione Elettrica",
+    "excerpt": "F2.1 39,663517"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.66414,18.66442",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Messapia Floating Wind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "messapiafloatingwind@legalmail.it",
+     "occurrences": 261,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/881619",
+      "page": 2,
+      "document": "Contributi del Comando Militare Esercito Puglia in data 04/08/2023",
+      "excerpt": "MESSAPIA FLOATING WIND S.r.l. (messapiafloatingwind@legalmail.it)"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9733"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Rina S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "rinaconsulting@rina.org",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/830480",
+      "page": 1,
+      "document": "Inquadramento su mappa catastale e viabilità",
+      "excerpt": "RINA Consulting S.p.A. | Società soggetta a direzione e coordinamento amministrativo e finanziario del socio unico RINA S.p.A. Via Cecchi, 6 - 16129 GENOVA | P. +39 010 31961 | rinaconsulting@rina.org | www.rina.org"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Danilo Pomponio",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3204731993",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837360",
+      "page": 4,
+      "document": "Osservazioni della Società DGM GLOBAL S.r.l. in data 05/05/2023",
+      "excerpt": "collaborazione e rimanendo a disposizione per qualsiasi chiarimento nella persona dell Ing. Danilo Pomponio, Cell. 3204731993, si porgono i più ossequiosi saluti."
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "42 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/830487",
+   "page": 32,
+   "document": "Relazione Generale",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "2 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 42 mesi (1), 1 mese (1), 22 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/830487",
+    "page": 32,
+    "document": "Relazione Generale",
+    "excerpt": "una nave specializzata possa caricare 9 elementi di ancoraggio e i relativi dispositivi di ormeggio in un unico viaggio e che un giorno sia sufficiente per ancorare 1 fondazione galleggiante, con gli altri 2 giorni neces"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "altri": [],
+  "durate_fasi": [
+   {
+    "name": "Costruzione - opere a mare",
+    "duration": "42 mesi",
+    "months": 42.0
+   },
+   {
+    "name": "Fabbricazione WTG",
+    "duration": "36 mesi",
+    "months": 36.0
+   },
+   {
+    "name": "Assemblaggio fondazioni galleggianti",
+    "duration": "36 mesi",
+    "months": 36.0
+   },
+   {
+    "name": "Trasporto fondazioni galleggianti",
+    "duration": "36 mesi",
+    "months": 36.0
+   },
+   {
+    "name": "Installazione sistema di ormeggio e ormeggio",
+    "duration": "6 mesi",
+    "months": 6.0
+   },
+   {
+    "name": "Installazione cavi di inter-array",
+    "duration": "30 mesi",
+    "months": 30.0
+   },
+   {
+    "name": "Installazione cavi di export",
+    "duration": "13 mesi",
+    "months": 13.0
+   },
+   {
+    "name": "Sottostazione elettrica offshore 1",
+    "duration": "36 mesi",
+    "months": 36.0
+   },
+   {
+    "name": "Sottostazione elettrica offshore 2",
+    "duration": "36 mesi",
+    "months": 36.0
+   },
+   {
+    "name": "Costruzione - opere a terra",
+    "duration": "22 mesi",
+    "months": 22.0
+   },
+   {
+    "name": "Posa del cavo terrestre",
+    "duration": "20 mesi",
+    "months": 20.0
+   },
+   {
+    "name": "Realizzazione stazione di sezionamento e compensazione on-shore",
+    "duration": "5 mesi",
+    "months": 5.0
+   },
+   {
+    "name": "Realizzazione sottostazione elettrica di utenza on-shore",
+    "duration": "6 mesi",
+    "months": 6.0
+   },
+   {
+    "name": "Avviamento del parco eolico",
+    "duration": "2 mesi",
+    "months": 2.0
+   }
+  ],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 33,
+  "pagine": 507,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Messapia Floating Wind S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 1314.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GALATINA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LE",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "24 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
