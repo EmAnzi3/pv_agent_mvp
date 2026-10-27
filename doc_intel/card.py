@@ -330,6 +330,12 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
     title = record.get("title") or p.get("title") or ""
     power_rx = r"(?i)(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?|\d+(?:[.,]\d+)?)\s*(MWp|MW|kWp|KwP|kW)\b"
     tm, title_src = re.search(power_rx, title), "titolo del procedimento"
+    if wind:
+        # wind titles list the turbine rating first ('7 aerogeneratori da 5,6 MW ... complessiva 39,2 MW'): the
+        # census reading of the title gives the plant total
+        from .wind_census import _power as wind_title_power
+        wp = wind_title_power(title)
+        tm = re.search(power_rx, f"{wp:g} MW".replace(".", ",")) if wp else None
     sheet = (p.get("raw") or {}).get("register_sheet") or {}
     if not tm and sheet.get("power_mw"):
         # a register sheet (ATOS) states the power in its own field, not in the plant name
@@ -400,8 +406,8 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
             tiles.append({"key": "wtg", "label": "Aerogeneratori",
                           "value": f"{wtg['value']:g}" if wtg else "numero non indicato",
                           "status": wtg["status"] if wtg else "da verificare",
-                          "sub": " · ".join(x for x in (unit_mw, f"altezza mozzo {hub['text']}" if hub else None,
-                                                        f"diametro rotore {rot['text']}" if rot else None,
+                          "sub": " · ".join(x for x in (unit_mw, f"altezza mozzo {hub['text']}" + ("" if "m" in hub["text"] else " m") if hub else None,
+                                                        f"diametro rotore {rot['text']}" + ("" if "m" in rot["text"] else " m") if rot else None,
                                                         _hint(wtg) if wtg else None) if x) or None,
                           "source": (wtg or hub or rot)["source"]})
     tech = _pick(d, "tech.technology", titles)
