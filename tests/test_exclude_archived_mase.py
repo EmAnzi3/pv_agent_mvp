@@ -27,3 +27,11 @@ class ArchivedMase(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SideProcedures(unittest.TestCase):
+    def test_side_procedures_are_not_dead_projects(self):
+        from exclude_archived_mase import SIDE_PROCEDURE
+        self.assertTrue(SIDE_PROCEDURE.search("Valutazione preliminare ai sensi dell'art.6, comma 9 ... modifica del progetto [Rif. ID VIP: 9253]"))
+        self.assertTrue(SIDE_PROCEDURE.search("Variante opere di connessione relativa al Progetto (ID 9217)"))
+        self.assertFalse(SIDE_PROCEDURE.search("Progetto di un impianto agrivoltaico di potenza pari a 213 MW e delle relative opere"))

@@ -10,7 +10,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-TREE = "https://api.github.com/repos/EmAnzi3/pv_agent_mvp/git/trees/doc-intel-state?recursive=1"
+TREE = "https://api.github.com/repos/EmAnzi3/pv_agent_mvp/git/trees/doc-intel-state"
+# the memory branch is too large for a recursive listing (GitHub truncates it, cards went missing):
+# list the root, then only the schede/ folder
 RAW = "https://raw.githubusercontent.com/EmAnzi3/pv_agent_mvp/doc-intel-state/"
 
 
@@ -26,9 +28,19 @@ def sync_cards(out_dir: str | Path, tree_url: str = TREE, raw_base: str = RAW, g
         state = {}
     r = get(tree_url)
     r.raise_for_status()
-    remote = {e["path"].split("/", 1)[1]: e["sha"] for e in r.json().get("tree", [])
+    root = r.json().get("tree", [])
+    folder = next((e for e in root if e.get("path") == "schede" and e.get("type") == "tree"), None)
+    if folder:
+        rs = get(tree_url.rsplit("/", 1)[0] + "/" + folder["sha"])
+        rs.raise_for_status()
+        entries = [{"path": "schede/" + e["path"], "sha": e["sha"], "type": e["type"]} for e in rs.json().get("tree", [])]
+    else:                                   # recursive listing (tests, small branches)
+        entries = root
+    remote = {e["path"].split("/", 1)[1]: e["sha"] for e in entries
               if e.get("type") == "blob" and e["path"].startswith("schede/") and e["path"].endswith(".json")
               and not e["path"].endswith(("/index.json", "/" + LIVE_INDEX))}
+    if not remote:
+        raise RuntimeError("nessuna scheda trovata sul ramo di memoria: elenco vuoto o non leggibile")
     downloaded = errors = 0
     for name, sha in remote.items():
         target = out / name
