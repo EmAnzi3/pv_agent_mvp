@@ -101,6 +101,9 @@ def main(argv: list[str] | None = None) -> int:
     nw.add_argument("--memory", required=True)
     nw.add_argument("--backfill-pages", type=int, default=0, help="also read N older feed pages (first run)")
     nw.add_argument("--max-articles", type=int, default=40)
+    rd = sub.add_parser("readiness", help="'vicini al cantiere': phase, score and reasons per radar project")
+    rd.add_argument("--data", default="docs/data.json")
+    rd.add_argument("--memory", required=True)
     fi = sub.add_parser("ferx-import", help="read the GSE FER X Table A PDFs downloaded by hand")
     fi.add_argument("pdfs", nargs="+")
     fx = sub.add_parser("ferx", help="GSE FER X rankings matched to radar projects (information only)")
@@ -231,6 +234,11 @@ def main(argv: list[str] | None = None) -> int:
         Path(a.out).write_text(json.dumps(idx, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
         print(f"cards index: {len(idx)} cards -> {a.out}")
         return 0
+    if a.cmd == "readiness":
+        from .readiness import run as readiness_run
+        print("::notice title=readiness::" + json.dumps(readiness_run(a.data, a.memory), ensure_ascii=False))
+        return 0
+
     if a.cmd == "ferx-import":
         from .ferx import import_pdfs
         print(f"FER X: {import_pdfs(a.pdfs)}")

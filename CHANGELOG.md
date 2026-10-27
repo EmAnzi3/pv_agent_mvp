@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-27 — «Vicini al cantiere»: per ogni progetto fase (realizzato, cantiere in corso, avvio entro 12 mesi, avvio possibile, autorizzato, in iter), priorità Alta/Media/Bassa e motivi (atto, date della scheda, verifica di ottemperanza, FER X, impresa esecutrice, stampa, titolo «archiviato»). Filtro dedicato, ordinamento «Priorità cantiere», etichetta in tabella, sezione nella scheda, colonne nell'esportazione CSV. Calcolato ogni giorno e dopo ogni push del radar.
+
 - 2026-10-27 — Correzioni di potenza confermate dall'utente: Lazio VIA-064-2019 36,969 MWp (ridotta da 46,192), Emilia-Romagna 6658 San Giovanni in Persiceto 21,03 MWp (revisione del layout). Esclusione MASE: le procedure secondarie archiviate (modifica, variante, valutazione preliminare) non tolgono il progetto; scarico delle schede sul PC corretto (elenco del ramo di memoria troncato da GitHub).
 
 - 2026-10-27 — Graduatorie FER X (GSE, Tabella A, 562 impianti ammessi): importate da PDF (`python -m doc_intel ferx-import`, il sito GSE rifiuta i download dal cloud) e abbinate ogni giorno ai progetti del radar solo per P. IVA del proponente o per stessa società nello stesso comune; etichetta «FER X», filtro «Solo con incentivo FER X assegnato» e sezione nella scheda.
