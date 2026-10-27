@@ -174,3 +174,31 @@ def run(data_json: str, memory: str) -> dict:
         "updated": datetime.now(timezone.utc).date().isoformat(), "projects": out}, ensure_ascii=False, indent=0,
         sort_keys=True), encoding="utf-8")
     return {"progetti_valutati": len(out), "per_livello": counts}
+
+
+def run_wind(memory: str) -> dict:
+    """Same reading for the wind census (wind/census.json): FER X comes from the census record itself."""
+    mem = Path(memory)
+    census = mem / "wind" / "census.json"
+    if not census.exists():
+        return {"progetti_valutati": 0}
+    records = json.loads(census.read_text(encoding="utf-8")).get("records", [])
+    live = json.loads((mem / "schede" / "live_index.json").read_text(encoding="utf-8"))
+    out, counts = {}, {}
+    for r in records:
+        key = r.get("project_key")
+        card = None
+        if key in live:
+            try:
+                card = json.loads((mem / "schede" / live[key]["file"]).read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                card = None
+        res = classify(card, r.get("ferx") or None, None, record=r)
+        if res:
+            out[key] = res
+            counts[res["level"] or res["phase"]] = counts.get(res["level"] or res["phase"], 0) + 1
+    (mem / "readiness").mkdir(exist_ok=True)
+    (mem / "readiness" / "wind_index.json").write_text(json.dumps({
+        "updated": datetime.now(timezone.utc).date().isoformat(), "projects": out}, ensure_ascii=False, indent=0,
+        sort_keys=True), encoding="utf-8")
+    return {"progetti_valutati": len(out), "per_livello": counts}

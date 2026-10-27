@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'docs/wind/**'
+      - 'doc_intel/scheda_panel.*'
       - 'app/wind_agents/**'
       - 'scripts/check_wind_*.py'
       - 'scripts/run_wind_agents.py'
@@ -145,6 +146,10 @@ jobs:
           node --check docs/wind/assets/execution-coverage-v07.js
           node --check docs/wind/assets/local-run.js
           node --check docs/wind/assets/ferx-wind-v08.js
+          node --check docs/wind/assets/census-v09.js
+          # the wind page uses a copy of the PV card panel: the two must stay identical
+          cmp doc_intel/scheda_panel.js docs/wind/assets/scheda-panel.js
+          cmp doc_intel/scheda_panel.css docs/wind/assets/scheda-panel.css
           node --check docs/wind/assets/province-map-v06.js
           node --check docs/wind/assets/discovery-v04.js
           node --check docs/wind/assets/stage-consistency.js

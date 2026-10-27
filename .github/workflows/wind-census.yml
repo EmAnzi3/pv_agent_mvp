@@ -45,6 +45,8 @@ jobs:
           for r in d["records"][:25]:
               print(f"{r['power_mw']} MW | {r['region']} | {r['proponent']} | {r['procedure_status']} | curato={bool(r['curato'])} ferx={len(r['ferx'])} | {r['title'][:110]}")
           PY
+      - name: Vicini al cantiere (wind census)
+        run: python -c "from doc_intel.readiness import run_wind; print(run_wind('.mem'))"
       - uses: actions/upload-artifact@v4
         with:
           name: wind-census
@@ -53,7 +55,7 @@ jobs:
       - name: Save to memory
         if: github.event_name != 'pull_request' || hashFiles('.github/wind-census-full') != ''
         run: |
-          cd .mem && git add wind
+          cd .mem && git add wind readiness
           git diff --cached --quiet && exit 0
           git commit -q -m "wind census (run ${{ github.run_id }})"
           for i in 1 2 3 4 5; do

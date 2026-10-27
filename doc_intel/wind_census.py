@@ -97,7 +97,7 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
         rest = [x for x in unmatched if place_key(x.get("comune") or "") in {place_key(m) for m in r["municipalities"].split(", ") if m}
                 and _tokens(x.get("ragione_sociale") or "") & _tokens(r.get("proponent") or "")]
         if len(rest) >= 2 and _close(r["power_mw"], sum((x.get("kw") or 0) for x in rest) / 1000, 0.10):
-            r["ferx"] += [_ferx_ref(x) for x in rest]
+            r["ferx"] += [_ferx_ref(x, f"lotti della stessa società ({len(rest)})") for x in rest]
             unmatched = [x for x in unmatched if x not in rest]
     for x in unmatched:
         cur = (x.get("progetto") or {})
@@ -110,7 +110,7 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
             "url": "https://www.gse.it/servizi-per-te/fonti-rinnovabili/ferx/graduatorie", "updated_at": today,
             "project_key": f"wind:ferx_{x.get('codice')}",
             "curato": ({"id": cur["id"], "nome": cur["nome"], "fase": cur.get("fase")} if cur else None),
-            "ferx": [_ferx_ref(x)],
+            "ferx": [_ferx_ref(x, "graduatoria GSE (procedura autorizzativa da individuare)")],
         })
     out = records + leads
     out.sort(key=lambda r: -(r["power_mw"] or 0))
@@ -127,9 +127,9 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
     }
 
 
-def _ferx_ref(x: dict) -> dict:
-    return {k: x.get(k) for k in ("procedura", "posizione", "codice", "ragione_sociale", "comune", "kw", "kw_ammessi")} | {
-        "procedura": "FER X transitorio – eolico (PC_EOL_2025_01)"}
+def _ferx_ref(x: dict, basis: str = "comune + società + potenza") -> dict:
+    return {k: x.get(k) for k in ("posizione", "codice", "ragione_sociale", "piva", "comune", "provincia", "kw", "kw_ammessi")} | {
+        "procedura": "FER X transitorio – eolico (PC_EOL_2025_01)", "basis": basis}
 
 
 def collect(max_pages: int | None = None) -> list[dict]:

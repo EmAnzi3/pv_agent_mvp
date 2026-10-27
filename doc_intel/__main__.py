@@ -73,6 +73,7 @@ def main(argv: list[str] | None = None) -> int:
     q.add_argument("--mode", default="both", choices=["new", "backlog", "both", "refresh"])
     q.add_argument("--retry-days", type=int, default=14, help="skip projects attempted in the last N days")
     q.add_argument("--region", default=None, help="only projects of this region (e.g. Emilia-Romagna)")
+    q.add_argument("--state-prefix", default="", help="separate queue state (e.g. 'wind_' for the wind census)")
     q.add_argument("--github-output", default=None, help="file where to write 'matrix=<json>' for GitHub Actions")
     qs = sub.add_parser("queue-status", help="coverage of the radar by project cards")
     qs.add_argument("--data", required=True)
@@ -200,7 +201,8 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if a.cmd == "queue":
         from .queue import plan
-        items = plan(a.data, a.memory, max_items=a.max, mode=a.mode, retry_days=a.retry_days, region=a.region or None)
+        items = plan(a.data, a.memory, max_items=a.max, mode=a.mode, retry_days=a.retry_days, region=a.region or None,
+                     state_prefix=a.state_prefix)
         print(json.dumps(items, ensure_ascii=False, indent=1))
         print(f"::notice title=queue::{len(items)} projects queued "
               f"({sum(1 for i in items if i['reason'] == 'new')} new, {sum(1 for i in items if i['reason'] == 'backlog')} backlog, "
@@ -245,6 +247,8 @@ def main(argv: list[str] | None = None) -> int:
     if a.cmd == "readiness":
         from .readiness import run as readiness_run
         print("::notice title=readiness::" + json.dumps(readiness_run(a.data, a.memory), ensure_ascii=False))
+        from .readiness import run_wind
+        print("::notice title=readiness-wind::" + json.dumps(run_wind(a.memory), ensure_ascii=False))
         return 0
 
     if a.cmd == "ferx-import":

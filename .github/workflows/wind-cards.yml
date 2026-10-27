@@ -1,0 +1,114 @@
+name: Wind cards (project cards for the wind census)
+# Same toolbox as the PV cards (doc-intel-batch.yml) on the wind census (wind/census.json on the memory
+# branch, written by wind-census.yml): new projects first, then the backlog by decreasing power, a few per
+# night. Separate queue state (queue/wind_*.json); cards land in schede/ with keys 'wind:mase_<id>'.
+on:
+  schedule:
+    - cron: '30 2 * * *'          # every night, after the PV batch has started
+    - cron: '30 3 * * 0'          # Sunday: weekly re-check of existing wind cards
+  workflow_dispatch:
+    inputs:
+      max:
+        description: 'Projects in this batch'
+        required: false
+        default: '15'
+      mode:
+        description: 'new | backlog | both | refresh (re-check projects that already have a card)'
+        required: false
+        default: 'both'
+      region:
+        description: 'Only projects of this region (e.g. Emilia-Romagna); empty = all'
+        required: false
+        default: ''
+permissions:
+  contents: write
+concurrency:
+  group: wind-cards
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.q.outputs.matrix }}
+      count: ${{ steps.q.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install requests beautifulsoup4 pypdf
+      - name: Load memory (branch doc-intel-state)
+        run: |
+          git config user.name "doc-intel-bot"
+          git config user.email "doc-intel-bot@users.noreply.github.com"
+          git fetch origin doc-intel-state:doc-intel-state
+          git worktree add .mem doc-intel-state
+      - name: Choose the projects of this batch
+        id: q
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHED: ${{ github.event.schedule }}
+          IN_MAX: ${{ inputs.max }}
+          IN_MODE: ${{ inputs.mode }}
+          IN_REGION: ${{ inputs.region }}
+        run: |
+          MODE=both; MAX=15; RETRY=14
+          if [ "$EVENT" = "schedule" ] && [ "$SCHED" = "30 3 * * 0" ]; then MODE=refresh; MAX=30; RETRY=6; fi
+          if [ "$EVENT" = "workflow_dispatch" ]; then MODE="${IN_MODE:-both}"; MAX="${IN_MAX:-15}"; fi
+          if [ ! -f .mem/wind/census.json ]; then echo "count=0" >> "$GITHUB_OUTPUT"; echo "::warning title=wind-cards::census not built yet"; exit 0; fi
+          python -m doc_intel queue --data .mem/wind/census.json --memory .mem --state-prefix wind_ --max "$MAX" --mode "$MODE" --retry-days "$RETRY" --region "${IN_REGION:-}" --github-output "$GITHUB_OUTPUT"
+          python -m doc_intel queue-status --data .mem/wind/census.json --memory .mem
+      - name: Save queue state
+        run: |
+          cd .mem
+          git add queue
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "wind cards queue: batch ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
+            git push -q origin HEAD:doc-intel-state && exit 0
+            sleep $((i * 10))
+          done
+          echo "::warning title=queue::queue state not saved (projects may be retried next night)"
+  analyse:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    uses: ./.github/workflows/doc-intel-run.yml
+    with:
+      url: ${{ matrix.url }}
+      time_budget_min: '200'
+      max_new_docs: '120'
+      data: '.doc_intel_store/wind/census.json'
+    secrets: inherit
+  publish-index:
+    needs: [plan, analyse]
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -q requests beautifulsoup4 pypdf
+      - name: Publish the index of the cards (read by the public page)
+        run: |
+          git config --global user.name "doc-intel-bot"
+          git config --global user.email "doc-intel-bot@users.noreply.github.com"
+          git clone -q --depth 1 --branch doc-intel-state \
+            "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" .mem
+          for i in 1 2 3 4 5; do
+            # the index is rebuilt from the current cards on every attempt: no merge is ever needed
+            git -C .mem fetch -q --depth 1 origin doc-intel-state
+            git -C .mem reset -q --hard FETCH_HEAD
+            python -m doc_intel cards-index --folder .mem/schede --out .mem/schede/live_index.json
+            git -C .mem add schede/live_index.json
+            if git -C .mem diff --cached --quiet; then echo "index unchanged"; exit 0; fi
+            git -C .mem commit -q -m "doc-intel: cards index (wind batch ${{ github.run_id }})"
+            if git -C .mem push -q origin HEAD:doc-intel-state; then echo "::notice title=cards::index published"; exit 0; fi
+            sleep $((i * 10))
+          done
+          echo "::warning title=cards::index not published"

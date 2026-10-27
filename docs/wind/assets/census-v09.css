@@ -1,0 +1,36 @@
+/* v0.9 – Censimento eolico (colours from style.css tokens) */
+.wc-panel .panel-heading{align-items:flex-start}
+.wc-kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-bottom:12px}
+.wc-kpi{border:1px solid var(--border);border-radius:12px;padding:9px 11px;background:var(--panel-2)}
+.wc-kpi span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.055em;font-weight:850;color:var(--muted)}
+.wc-kpi strong{display:block;font-size:20px;letter-spacing:-.02em;margin:4px 0 2px}
+.wc-kpi small{display:block;font-size:10px;color:var(--muted);line-height:1.3}
+.wc-filters{display:grid;grid-template-columns:minmax(220px,2fr) repeat(4,minmax(120px,1fr));gap:8px;margin-bottom:8px}
+.wc-filters label{display:flex;flex-direction:column;gap:4px;min-width:0}
+.wc-filters label span{font-size:9px;color:var(--muted);font-weight:850;text-transform:uppercase;letter-spacing:.06em}
+.wc-filters input,.wc-filters select{border:1px solid var(--border);border-radius:10px;padding:7px 9px;background:#fff;color:var(--text);min-width:0}
+.wc-count{font-size:11px;color:var(--muted);margin:4px 0 6px}
+.wc-scroll{overflow-x:auto}
+.wc-table{width:100%;border-collapse:collapse;font-size:12px;min-width:860px}
+.wc-table th{text-align:left;font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);border-bottom:1px solid var(--border);padding:6px 8px;font-weight:850}
+.wc-table td{border-bottom:1px solid var(--border);padding:7px 8px;vertical-align:top}
+.wc-table td small{display:block;color:var(--muted);font-size:10.5px;margin-top:2px;line-height:1.3}
+.wc-table .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wc-table tbody tr:hover td{background:var(--panel-2)}
+.wc-sig{max-width:240px}
+.wc-b{display:inline-block;border-radius:999px;padding:2px 7px;font-size:9.5px;font-weight:800;margin:0 2px 3px 0;white-space:nowrap;border:1px solid transparent}
+.wc-cur{background:var(--green-soft);color:var(--green);border-color:#bfe3d3}
+.wc-ferx{background:#eef4ff;color:var(--blue);border-color:#c9dafc}
+.wc-ready-a{background:var(--green);color:#fff}.wc-ready-m{background:#fff4e0;color:var(--amber);border-color:#f1d29c}.wc-ready-b{background:#f1f4f3;color:var(--muted)}
+.wc-done{background:#f1f4f3;color:var(--muted)}
+.wc-epc{background:#f4efff;color:var(--purple);border-color:#ddd0fb}
+.wc-lead{background:#fff;color:var(--amber);border-color:#f1d29c}
+.wc-act{white-space:nowrap;text-align:right}
+.wc-btn{border:1px solid var(--green);background:var(--green);color:#fff;border-radius:9px;padding:5px 10px;font-size:11px;font-weight:800}
+.wc-btn.ghost{background:#fff;color:var(--green)}
+.wc-link{font-size:11px;color:var(--blue);margin-left:6px}
+.wc-more{display:block;margin:10px auto 0;border:1px solid var(--border);background:#fff;border-radius:10px;padding:7px 14px;font-size:11.5px;color:var(--text)}
+.wc-empty{text-align:center;color:var(--muted);padding:18px}
+.wc-note{font-size:11px;color:var(--muted);margin:10px 0 0;line-height:1.45}
+@media(max-width:1260px){.wc-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.wc-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.wc-filters{grid-template-columns:1fr 1fr}.wc-filters .wide{grid-column:span 2}}
