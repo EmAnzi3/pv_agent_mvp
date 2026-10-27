@@ -317,6 +317,10 @@ COMUNE_TO_PROVINCE = {
 class MaseCollector(BaseCollector):
     source_name = "mase"
     base_url = BASE_URL
+    # overridden by the wind census (app/collectors/mase_wind.py)
+    tipologie = TIPOLOGIE
+    max_pages = MAX_PAGES_PER_CATEGORY
+    type_hints = {"Fotovoltaico", "Agrivoltaico"}
 
     def fetch(self) -> list[CollectorResult]:
         results: list[CollectorResult] = []
@@ -324,12 +328,12 @@ class MaseCollector(BaseCollector):
 
         token = self._get_request_verification_token()
 
-        for tipologia in TIPOLOGIE:
+        for tipologia in self.tipologie:
             page = 1
             last_page = 1
 
             while True:
-                if MAX_PAGES_PER_CATEGORY is not None and page > MAX_PAGES_PER_CATEGORY:
+                if self.max_pages is not None and page > self.max_pages:
                     break
 
                 html_page = self._fetch_search_page(
@@ -738,7 +742,7 @@ class MaseCollector(BaseCollector):
         date_last_update = info_data.get("date_last_update")
 
         project_type_hint = row.get("project_type_hint")
-        if project_type_hint not in {"Fotovoltaico", "Agrivoltaico"}:
+        if project_type_hint not in self.type_hints:
             project_type_hint = self._infer_project_type(enriched_text) or project_type_hint
 
         external_id = f"mase_{object_id}" if object_id else self._build_fallback_external_id(title, proponent)

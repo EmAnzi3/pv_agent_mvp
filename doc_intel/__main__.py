@@ -104,6 +104,10 @@ def main(argv: list[str] | None = None) -> int:
     rd = sub.add_parser("readiness", help="'vicini al cantiere': phase, score and reasons per radar project")
     rd.add_argument("--data", default="docs/data.json")
     rd.add_argument("--memory", required=True)
+    wc = sub.add_parser("wind-census", help="wind projects on the MASE VIA portal + FER X wind leads (census next to the curated wind radar)")
+    wc.add_argument("--memory", required=True)
+    wc.add_argument("--raw", default=None, help="reuse a census_raw.json instead of reading the portal")
+    wc.add_argument("--max-pages", type=int, default=None, help="result pages per typology (test runs)")
     fi = sub.add_parser("ferx-import", help="read the GSE FER X Table A PDFs downloaded by hand")
     fi.add_argument("pdfs", nargs="+")
     fx = sub.add_parser("ferx", help="GSE FER X rankings matched to radar projects (information only)")
@@ -233,6 +237,10 @@ def main(argv: list[str] | None = None) -> int:
         idx = build_index(a.folder)
         Path(a.out).write_text(json.dumps(idx, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
         print(f"cards index: {len(idx)} cards -> {a.out}")
+        return 0
+    if a.cmd == "wind-census":
+        from .wind_census import run as census_run
+        print("::notice title=wind-census::" + json.dumps(census_run(a.memory, ".", a.raw, a.max_pages), ensure_ascii=False))
         return 0
     if a.cmd == "readiness":
         from .readiness import run as readiness_run
