@@ -57,7 +57,8 @@ class MaseWindCollector(MaseCollector):
             self.tipologie = [{"id": t["id"], "label": t["label"],
                                "project_type_hint": "Eolico offshore" if re.search(r"(?i)mare|offshore", t["label"]) else "Eolico"}
                               for t in all_t if WIND_TYPOLOGY_RE.search(t["label"])]
-            print(f"[mase-wind] tipologie eoliche: {self.tipologie} (su {len(all_t)} tipologie lette)")
+            print(f"::notice title=mase-wind tipologie::{self.tipologie} (su {len(all_t)}: "
+                  + "; ".join(f"{t['id']}={t['label'][:30]}" for t in all_t)[:900] + ")")
         return super().fetch()
 
     def _fetch_info_page(self, url: str) -> str | None:
