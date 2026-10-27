@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-27 — Correzioni di potenza confermate dall'utente: Lazio VIA-064-2019 36,969 MWp (ridotta da 46,192), Emilia-Romagna 6658 San Giovanni in Persiceto 21,03 MWp (revisione del layout). Esclusione MASE: le procedure secondarie archiviate (modifica, variante, valutazione preliminare) non tolgono il progetto; scarico delle schede sul PC corretto (elenco del ramo di memoria troncato da GitHub).
+
 - 2026-10-27 — Graduatorie FER X (GSE, Tabella A, 562 impianti ammessi): importate da PDF (`python -m doc_intel ferx-import`, il sito GSE rifiuta i download dal cloud) e abbinate ogni giorno ai progetti del radar solo per P. IVA del proponente o per stessa società nello stesso comune; etichetta «FER X», filtro «Solo con incentivo FER X assegnato» e sezione nella scheda.
 
 - 2026-10-26 — Progetti molto grandi letti su più notti (massimo 120 documenti nuovi per run, rimessi in coda la notte dopo); schede: atti nei titoli senza «n.», tabelle delle fasi ripulite, potenza per blocco e pali della recinzione non più presi come valori dell'impianto; radar eolico con la copertura esecutiva v0.7.
