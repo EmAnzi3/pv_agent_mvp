@@ -4,6 +4,10 @@ name: Doc Intel FER X rankings (GSE)
 # Saves ferx/awarded.json and ferx/matches.json on the memory branch. On a pull request: dry run only.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/data.json'        # new radar records get the FER X badge right after the push
   schedule:
     - cron: '45 5 * * *'      # daily, after the night cards: new cards bring new proponent VAT numbers
   pull_request:
