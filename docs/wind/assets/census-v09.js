@@ -13,6 +13,7 @@
   let rows = [], cards = {}, ready = {}, shown = PAGE, sortKey = "mw";
 
   function shortName(r) {
+    if (r.source === "gse_ferx") return `${r.municipalities} – ${r.proponent}`;
     const t = r.title || "";
     const q = t.match(/[«"“]([^»"”]{3,60})[»"”]/) || t.match(/denominat[oa]\s+([A-Z][^,;(]{2,50})/i);
     if (q) return q[1].trim();
