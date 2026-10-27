@@ -1,0 +1,938 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10147",
+ "title": "Progetto di un parco eolico off-shore per la produzione di energia elettrica da fonte eolica nel Mare Adriatico Meridionale, denominato \"Barium Bay\", costituito da 74 aerogeneratori di potenza unitaria di 15 MW, per una potenza complessiva d'impianto pari a 1.110 MW, incluse le opportune opere di connessione alla RTN (cod. MYTERNA 202102517), da realizzarsi di fronte ad un tratto di costa compreso tra i comuni di Vieste e Monopoli.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10147",
+ "source": "mase",
+ "updated": "2026-10-27",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "1,11 MW",
+   "sub": "Valore ricorrente negli elaborati (21 volte); il titolo riporta 1110 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1078652",
+    "page": 2,
+    "document": "Integrazioni del 30/05/2024 - T_5_6_15_GIS_Alternative_di_ubicazione_analisi",
+    "excerpt": "Progetto per la realizzazione di un impianto per la produzione di energia mediante lo sfruttamento del vento nel mare adriatico meridionale Barium Bay - 74 Turbine eoliche – Potenza Nominale 1,110 MW CONTESTO RURALE"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "74",
+   "status": "da documenti",
+   "sub": "0,02 MW ciascuno · altezza mozzo 150 m · Valore prevalente negli elaborati; altri valori: 13 (7), 61 (6), 8 (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1404587",
+    "page": 3,
+    "document": "Relazione di ottemperanza",
+    "excerpt": "Valutazione di Impatto Ambientale ai sensi dell’art. 23 e ss. del D.lgs. n. 152/2006 per il progetto di un impianto eolico off-shore denominato “Barium Bay”, costituito da 74 aerogeneratori di potenza unitaria di 15 MW, "
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1404594",
+    "page": 1,
+    "document": "Elenco Elaborati della documentazione tecnica",
+    "excerpt": "Modifica 1 - Variazione del layout offshore"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "48 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 giorni (2), 10 giorni (2), 4 settimane (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/897977",
+    "page": 111,
+    "document": "STUDIO DI IMPATTO AMBIENTALE",
+    "excerpt": "3.9 DESCRIZIONE DELLE FASI DI REALIZZAZIONE La realizzazione dell’impianto Barium Bay prevede una tempistica totale di 48 mesi. Con riferimento al cronoprogramma delle lavorazioni (cfr elaborato R.8.2), le macro-operazio"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BT",
+  "comuni": [
+   "Vieste",
+   "Monopoli"
+  ],
+  "coordinate": {
+   "lat": 41.58134,
+   "lon": 16.90563,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (43 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/897958",
+    "page": 8,
+    "document": "Analisi della producibilità attesa",
+    "excerpt": "660252"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.58134,16.90563",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.49365,
+   "lon": 16.37324,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/897966",
+    "page": 95,
+    "document": "Relazione indagini batimetriche e biocenotiche",
+    "excerpt": "614840.71"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.49365,16.37324"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Barium Bay S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "bariumbay@legalmail.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1434423",
+      "page": 1,
+      "document": "Parere del Ministero della cultura - soprintendenza Speciale per il PNRR in data 28/09/2026",
+      "excerpt": "Alla Barium Bay S.r.l. (bariumbay@legalmail.it)"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10147"
+   }
+  },
+  {
+   "name": "Dott. Geol. Alfredo De Giovanni",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1011638",
+    "page": 4,
+    "document": "Integrazioni del 20/03/2024 - Relazione geologica onshore e allegati grafici",
+    "excerpt": "“Relazione Geologica” con cartografie tematiche redatta dal Dott. Geol. Alfredo De Giovanni a corredo del Documento Programmatico Preliminare del PUG di Barletta approvato con la delibera n. 71 del"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Jonian Dolphin Conservations ETS",
+   "kind": "società",
+   "roles": [],
+   "vat": "10804830015",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Vico Vigilante Snc 74123 Taranto Ta",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "joniandolphin@pec-legal.it",
+     "occurrences": 117,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897974",
+      "page": 2,
+      "document": "Avifauna - monitoraggio ante operam area marina",
+      "excerpt": "EMAIL areaprogetti@joniandolphin.it WEB www.joniandolphin.it PEC joniandolphin@pec-legal.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "areaprogetti@joniandolphin.it",
+     "occurrences": 117,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897974",
+      "page": 2,
+      "document": "Avifauna - monitoraggio ante operam area marina",
+      "excerpt": "EMAIL areaprogetti@joniandolphin.it WEB www.joniandolphin.it PEC joniandolphin@pec-legal.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Environmental Surveys S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ensu@pec.it",
+     "occurrences": 27,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897967",
+      "page": 2,
+      "document": "Inquadramento indagini eseguite",
+      "excerpt": "ENVIRONMENTAL SURVEYS S.r.l. Spin-off dell' Università degli Studi di Bari “Aldo Moro” SEDE LEGALE: Via Dario Lupo n. 65 - 74121 TARANTO - Tel: 0997345313 - Fax: 099377902 - WEB: www.ensu.it E-Mail: en.su@libero.it PEC: "
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "en.su@libero.it",
+     "occurrences": 27,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897967",
+      "page": 2,
+      "document": "Inquadramento indagini eseguite",
+      "excerpt": "ENVIRONMENTAL SURVEYS S.r.l. Spin-off dell' Università degli Studi di Bari “Aldo Moro” SEDE LEGALE: Via Dario Lupo n. 65 - 74121 TARANTO - Tel: 0997345313 - Fax: 099377902 - WEB: www.ensu.it E-Mail: en.su@libero.it PEC: "
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0997345313",
+     "occurrences": 27,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897967",
+      "page": 2,
+      "document": "Inquadramento indagini eseguite",
+      "excerpt": "ENVIRONMENTAL SURVEYS S.r.l. Spin-off dell' Università degli Studi di Bari “Aldo Moro” SEDE LEGALE: Via Dario Lupo n. 65 - 74121 TARANTO - Tel: 0997345313 - Fax: 099377902 - WEB: www.ensu.it E-Mail: en.su@libero.it PEC: "
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Cristiano Paoletti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "cristiano.paoletti@libero.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897958",
+      "page": 2,
+      "document": "Analisi della producibilità attesa",
+      "excerpt": "Viale Genova, 27 - 63084 Folignano (AP) Tel.: +39 3518440378 - Mail: cristiano.paoletti@libero.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3518440378",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897958",
+      "page": 3,
+      "document": "Analisi della producibilità attesa",
+      "excerpt": "Viale Genova, 27 - 63084 Folignano (AP) Tel.: +39 3518440378 - Mail: cristiano.paoletti@libero.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Rina S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "rinaconsulting@rina.org",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897963",
+      "page": 35,
+      "document": "Valutazione dell'impatto sulle condizioni di navigazione",
+      "excerpt": "RINA Consulting S.p.A. | Società soggetta a direzione e coordinamento amministrativo e finanziario del socio unico RINA S.p.A. Via Cecchi, 6 - 16129 GENOVA | P. +39 010 31961 | rinaconsulting@rina.org | www.rina.org"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "decreto n. 281 del 20/05/2026",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1436568",
+     "page": 1,
+     "document": "Comunicazione VA esito valutazione MASE_2026-0205142",
+     "excerpt": "Con decreto direttoriale n. 281 del 20 maggio 2026, è stato rilasciato, in favore della Barium Bay S.r.l., giudizio favorevole di compatibilità ambientale per il progetto indicato in oggetto,"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 20/05/2036",
+    "dettaglio": "«efficacia del provvedimento è di 10 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1254589",
+     "page": 6,
+     "document": "Decreto del Ministero dell'Ambiente di concerto con il MIC - Progetto di un parco eolico off-shore per la produzione di energia elettrica da fonte eolica nel Mare Adriatico Meridionale, denominato \"Ba",
+     "excerpt": "2. Ai sensi dell’articolo 25, comma 5, del decreto legislativo n. 152/2006, la durata dell'efficacia del provvedimento è di 10 anni decorrenti dalla data di pubblicazione del presente decreto sul sito internet del Minist"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2026",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1436568",
+     "page": 1,
+     "document": "Comunicazione VA esito valutazione MASE_2026-0205142",
+     "excerpt": "Con decreto direttoriale n. 281 del 20 maggio 2026, è stato rilasciato, in favore della Barium Bay S.r.l., giudizio favorevole di compatibilità ambientale per il progetto indicato in oggetto,"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2030",
+    "dettaglio": "inizio stimato + durata del cantiere: 48 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/897977",
+     "page": 111,
+     "document": "STUDIO DI IMPATTO AMBIENTALE",
+     "excerpt": "3.9 DESCRIZIONE DELLE FASI DI REALIZZAZIONE La realizzazione dell’impianto Barium Bay prevede una tempistica totale di 48 mesi. Con riferimento al cronoprogramma delle lavorazioni (cfr elaborato R.8.2), le macro-operazio"
+    }
+   }
+  ],
+  "durata_cantiere": "48 mesi",
+  "autorizzazione": {
+   "atto": "decreto n. 281",
+   "data": "20/05/2026",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1436568",
+    "page": 1,
+    "document": "Comunicazione VA esito valutazione MASE_2026-0205142",
+    "excerpt": "Con decreto direttoriale n. 281 del 20 maggio 2026, è stato rilasciato, in favore della Barium Bay S.r.l., giudizio favorevole di compatibilità ambientale per il progetto indicato in oggetto,"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "ATTIVITA' PRELIMINARI E INDAGINI",
+    "start": 0.01,
+    "end": 48.02,
+    "level": 0,
+    "summary": false,
+    "duration": "1440 g"
+   },
+   {
+    "name": "Interventi di adeguamento banchine portuali",
+    "start": 0.01,
+    "end": 6.03,
+    "level": 0,
+    "summary": false,
+    "duration": "180 g"
+   },
+   {
+    "name": "Installazione cantiere su banchina/e portuali",
+    "start": 3.01,
+    "end": 8.03,
+    "level": 0,
+    "summary": false,
+    "duration": "150 g"
+   },
+   {
+    "name": "Indagini geofisiche e geognostiche di dettaglio",
+    "start": 0.01,
+    "end": 6.03,
+    "level": 0,
+    "summary": false,
+    "duration": "180 g"
+   },
+   {
+    "name": "Indagini ROV puntuali",
+    "start": 5.0,
+    "end": 8.03,
+    "level": 0,
+    "summary": false,
+    "duration": "90 g"
+   },
+   {
+    "name": "Implementazione monitoraggio",
+    "start": 0.01,
+    "end": 48.02,
+    "level": 0,
+    "summary": false,
+    "duration": "1440 g"
+   },
+   {
+    "name": "SOTTOSTAZIONE OFFSHORE",
+    "start": 0.01,
+    "end": 17.03,
+    "level": 0,
+    "summary": false,
+    "duration": "510 g"
+   },
+   {
+    "name": "Realizzazione carpenteria metallica",
+    "start": 0.01,
+    "end": 12.03,
+    "level": 0,
+    "summary": false,
+    "duration": "180 g"
+   },
+   {
+    "name": "Trasporto e assemblaggio in sito Jacket",
+    "start": 6.0,
+    "end": 13.03,
+    "level": 0,
+    "summary": false,
+    "duration": "60 g"
+   },
+   {
+    "name": "Assemblaggio in banchina topsides",
+    "start": 6.0,
+    "end": 16.03,
+    "level": 0,
+    "summary": false,
+    "duration": "240 g"
+   },
+   {
+    "name": "Trasporto e assemblaggio in sito topsides",
+    "start": 10.0,
+    "end": 17.03,
+    "level": 0,
+    "summary": false,
+    "duration": "60 g"
+   },
+   {
+    "name": "Installazione apparecchiature elettromeccaniche",
+    "start": 11.0,
+    "end": 19.03,
+    "level": 0,
+    "summary": false,
+    "duration": "150 g"
+   },
+   {
+    "name": "Realizzazione aree di fruizione e finiture",
+    "start": 14.0,
+    "end": 22.02,
+    "level": 0,
+    "summary": false,
+    "duration": "180 g"
+   },
+   {
+    "name": "CAVI OFFSHORE",
+    "start": 12.0,
+    "end": 20.03,
+    "level": 0,
+    "summary": false,
+    "duration": "240 g"
+   },
+   {
+    "name": "Esecuzione HDD approdo",
+    "start": 12.0,
+    "end": 13.03,
+    "level": 0,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Cavo export - posa in appoggio",
+    "start": 13.0,
+    "end": 15.03,
+    "level": 0,
+    "summary": false,
+    "duration": "60 g"
+   },
+   {
+    "name": "Cavo export - posa in trenching",
+    "start": 15.0,
+    "end": 16.03,
+    "level": 0,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Cavi di interconnessione aerogeneratori",
+    "start": 16.0,
+    "end": 24.02,
+    "level": 0,
+    "summary": false,
+    "duration": "240 g"
+   },
+   {
+    "name": "ELETTRODOTTO ONSHORE E OPERE DI CONNESSIONE",
+    "start": 0.01,
+    "end": 25.02,
+    "level": 0,
+    "summary": false,
+    "duration": "750 g"
+   },
+   {
+    "name": "Vasca giunti cavo marino-cavo terrestre",
+    "start": 12.0,
+    "end": 13.03,
+    "level": 0,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Elettrodotto interrato",
+    "start": 13.0,
+    "end": 15.03,
+    "level": 0,
+    "summary": false,
+    "duration": "60 g"
+   },
+   {
+    "name": "Stazione Terna",
+    "start": 0.01,
+    "end": 14.03,
+    "level": 0,
+    "summary": false,
+    "duration": "420 g"
+   },
+   {
+    "name": "Elettrodotto aereo",
+    "start": 10.0,
+    "end": 25.02,
+    "level": 0,
+    "summary": false,
+    "duration": "450 g"
+   },
+   {
+    "name": "FONDAZIONI FLOTTANTI E AEROGENERATORI",
+    "start": 6.0,
+    "end": 44.02,
+    "level": 0,
+    "summary": false,
+    "duration": "1140 g"
+   },
+   {
+    "name": "Assemblaggio in banchina componenti floater",
+    "start": 8.0,
+    "end": 41.02,
+    "level": 0,
+    "summary": false,
+    "duration": "990 g"
+   },
+   {
+    "name": "Integrazione aerogeneratori",
+    "start": 9.0,
+    "end": 42.02,
+    "level": 0,
+    "summary": false,
+    "duration": "990 g"
+   },
+   {
+    "name": "Trasporto floater+aerogeneratore in posizione di progetto",
+    "start": 10.0,
+    "end": 43.02,
+    "level": 0,
+    "summary": false,
+    "duration": "990 g"
+   },
+   {
+    "name": "Ormeggio e collegamenti elettrici",
+    "start": 11.0,
+    "end": 44.02,
+    "level": 0,
+    "summary": false,
+    "duration": "990 g"
+   },
+   {
+    "name": "COMMISSIONING",
+    "start": 43.0,
+    "end": 48.02,
+    "level": 0,
+    "summary": false,
+    "duration": "0 g"
+   },
+   {
+    "name": "INTERVENTI DI MITIGAZIONE E COMPENSAZIONE",
+    "start": 12.0,
+    "end": 42.02,
+    "level": 0,
+    "summary": false,
+    "duration": "720 g"
+   }
+  ],
+  "unit": "month",
+  "months": 48.02,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/897977",
+   "page": 111,
+   "document": "STUDIO DI IMPATTO AMBIENTALE",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "25",
+     "start": 24.0,
+     "end": 25.0
+    },
+    {
+     "label": "26",
+     "start": 25.0,
+     "end": 26.0
+    },
+    {
+     "label": "27",
+     "start": 26.0,
+     "end": 27.0
+    },
+    {
+     "label": "28",
+     "start": 27.0,
+     "end": 28.0
+    },
+    {
+     "label": "29",
+     "start": 28.0,
+     "end": 29.0
+    },
+    {
+     "label": "30",
+     "start": 29.0,
+     "end": 30.0
+    },
+    {
+     "label": "31",
+     "start": 30.0,
+     "end": 31.0
+    },
+    {
+     "label": "32",
+     "start": 31.0,
+     "end": 32.0
+    },
+    {
+     "label": "33",
+     "start": 32.0,
+     "end": 33.0
+    },
+    {
+     "label": "34",
+     "start": 33.0,
+     "end": 34.0
+    },
+    {
+     "label": "35",
+     "start": 34.0,
+     "end": 35.0
+    },
+    {
+     "label": "36",
+     "start": 35.0,
+     "end": 36.0
+    },
+    {
+     "label": "37",
+     "start": 36.0,
+     "end": 37.0
+    },
+    {
+     "label": "38",
+     "start": 37.0,
+     "end": 38.0
+    },
+    {
+     "label": "39",
+     "start": 38.0,
+     "end": 39.0
+    },
+    {
+     "label": "40",
+     "start": 39.0,
+     "end": 40.0
+    },
+    {
+     "label": "41",
+     "start": 40.0,
+     "end": 41.0
+    },
+    {
+     "label": "42",
+     "start": 41.0,
+     "end": 42.0
+    },
+    {
+     "label": "43",
+     "start": 42.0,
+     "end": 43.0
+    },
+    {
+     "label": "44",
+     "start": 43.0,
+     "end": 44.0
+    },
+    {
+     "label": "45",
+     "start": 44.0,
+     "end": 45.0
+    },
+    {
+     "label": "46",
+     "start": 45.0,
+     "end": 46.0
+    },
+    {
+     "label": "47",
+     "start": 46.0,
+     "end": 47.0
+    },
+    {
+     "label": "48",
+     "start": 47.0,
+     "end": 48.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "48 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 giorni (2), 10 giorni (2), 4 settimane (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/897977",
+    "page": 111,
+    "document": "STUDIO DI IMPATTO AMBIENTALE",
+    "excerpt": "3.9 DESCRIZIONE DELLE FASI DI REALIZZAZIONE La realizzazione dell’impianto Barium Bay prevede una tempistica totale di 48 mesi. Con riferimento al cronoprogramma delle lavorazioni (cfr elaborato R.8.2), le macro-operazio"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 20/03/2024 - Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1011665"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 20/03/2024 - Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/1011665"
+   },
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/897916"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 253,
+  "pagine": 4596,
+  "completa": false,
+  "da_leggere": 133
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Barium Bay S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 1110.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "VIESTE, MONOPOLI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BT",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 1110 MW, gli elaborati 1,11 MW"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "271 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
