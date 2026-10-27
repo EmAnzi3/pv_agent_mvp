@@ -1,13 +1,15 @@
 name: Doc Intel FER X rankings (GSE)
-# Downloads the GSE FER X photovoltaic rankings (Table A = awarded) and matches them to radar projects.
+# Matches the GSE FER X awarded plants (doc_intel/data/ferx_awarded.json, imported by hand from the GSE
+# Table A PDFs: the GSE site refuses cloud downloads) to radar projects and their cards.
 # Saves ferx/awarded.json and ferx/matches.json on the memory branch. On a pull request: dry run only.
 on:
   workflow_dispatch:
   schedule:
-    - cron: '35 5 * * 1'      # weekly (Monday): new auctions or updated tables
+    - cron: '45 5 * * *'      # daily, after the night cards: new cards bring new proponent VAT numbers
   pull_request:
     paths:
       - 'doc_intel/ferx.py'
+      - 'doc_intel/data/ferx_awarded.json'
       - '.github/workflows/doc-intel-ferx.yml'
 permissions:
   contents: write

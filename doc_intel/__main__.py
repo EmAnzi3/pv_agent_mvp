@@ -101,6 +101,8 @@ def main(argv: list[str] | None = None) -> int:
     nw.add_argument("--memory", required=True)
     nw.add_argument("--backfill-pages", type=int, default=0, help="also read N older feed pages (first run)")
     nw.add_argument("--max-articles", type=int, default=40)
+    fi = sub.add_parser("ferx-import", help="read the GSE FER X Table A PDFs downloaded by hand")
+    fi.add_argument("pdfs", nargs="+")
     fx = sub.add_parser("ferx", help="GSE FER X rankings matched to radar projects (information only)")
     fx.add_argument("--data", default="docs/data.json")
     fx.add_argument("--memory", required=True)
@@ -229,14 +231,15 @@ def main(argv: list[str] | None = None) -> int:
         Path(a.out).write_text(json.dumps(idx, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
         print(f"cards index: {len(idx)} cards -> {a.out}")
         return 0
+    if a.cmd == "ferx-import":
+        from .ferx import import_pdfs
+        print(f"FER X: {import_pdfs(a.pdfs)}")
+        return 0
+
     if a.cmd == "ferx":
-        from . import ferx
-        if hasattr(ferx, "run"):
-            st = ferx.run(a.data, a.memory)
-            print(f"::notice title=ferx::{json.dumps(st, ensure_ascii=False)[:3000]}")
-        else:
-            for n in ferx.dump():
-                print(f"::notice title=ferx-dump::{n[:3800]}")
+        from .ferx import run as ferx_run
+        st = ferx_run(a.data, a.memory)
+        print(("::notice title=ferx::" if a.annotate else "") + json.dumps(st, ensure_ascii=False))
         return 0
 
     if a.cmd == "news":
