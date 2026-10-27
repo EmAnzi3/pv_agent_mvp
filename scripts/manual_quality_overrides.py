@@ -48,6 +48,22 @@ PATCH_RULES = [
         "reason": "title_and_documents_state_27_06_mwp_field_6_mw_wrong_confirmed_by_user_2026_10_21",
     },
     {
+        "name": "fix_lazio_via_064_2019_power_reduced",
+        "url": "https://regionelazio.app.box.com/v/VIA-064-2019",
+        "fields": {
+            "power_mw": 36.969,
+        },
+        "reason": "documents_state_43_132_mwp_reduced_to_36_969_mwp_title_46_192_outdated_confirmed_by_user_2026_10_27",
+    },
+    {
+        "name": "fix_er_6658_san_giovanni_persiceto_power_layout_revision",
+        "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/6658",
+        "fields": {
+            "power_mw": 21.03,
+        },
+        "reason": "layout_revision_peak_power_now_21_03_mwp_was_22_25_confirmed_by_user_2026_10_27",
+    },
+    {
         "name": "fix_mase_6239_serramanna_municipality",
         "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6239",
         "fields": {
