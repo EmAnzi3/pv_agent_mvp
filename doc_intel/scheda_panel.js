@@ -199,6 +199,19 @@
       <p class="sc-fine sc-leg"><span class="sc-lv lv-documentata">Atto di cantiere</span> ${esc(leg.A || '')} ·
       <span class="sc-lv lv-prescritta">Da elaborati</span> ${esc(leg.B || '')}</p></section>`;
   }
+  function incentive(key) {
+    const x = ((window.PVFerx || {})[key] || [])[0];
+    if (!x) return '';
+    const mw = v => (v / 1000).toLocaleString('it-IT', { maximumFractionDigits: 3 }) + ' MW';
+    const quota = x.kw_ammessi && x.kw && x.kw_ammessi < x.kw ? ` · quota ammessa ${mw(x.kw_ammessi)}` : '';
+    return `<section class="sc-sec"><h3>Incentivo FER X assegnato</h3><dl class="sc-dl">
+      <dt>Graduatoria</dt><dd>${esc(x.procedura)} · posizione ${esc(x.posizione)} · codice ${esc(x.codice)}</dd>
+      <dt>Soggetto</dt><dd>${esc(x.ragione_sociale)} · P. IVA ${esc(x.piva)}</dd>
+      <dt>Impianto</dt><dd>${esc(x.comune)} (${esc(x.provincia)}) · ${mw(x.kw)}${quota}</dd>
+      <dt>Abbinamento</dt><dd>${esc(x.basis)} · <a class="sc-src" href="https://www.gse.it/servizi-per-te/fonti-rinnovabili/ferx/graduatorie" target="_blank" rel="noopener noreferrer">graduatoria GSE</a></dd></dl>
+      <p class="sc-fine">Impianto ammesso in posizione utile (Tabella A): tariffa garantita e obbligo di entrata in esercizio
+      entro i termini del bando. È il segnale pubblico più forte che l'impianto verrà costruito.</p></section>`;
+  }
   function press(key) {
     const list = ((window.PVNews || {})[key] || []).slice(0, 6);
     if (!list.length) return '';
@@ -230,7 +243,7 @@
         </div>
       </div>
       ${tiles(card.sintesi)}
-      <div class="sc-body">${execution(card.esecuzione)}${press(card.project_key)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
+      <div class="sc-body">${incentive(card.project_key)}${execution(card.esecuzione)}${press(card.project_key)}${timing(card.tempistica)}${subjects(card)}${gantt(card.cronoprogramma)}${location(l)}${open}
         <p class="sc-warn">${esc(doc.documenti)} documenti, ${esc(doc.pagine)} pagine analizzati${doc.da_leggere ? ` (lettura in corso: altri ${esc(doc.da_leggere)} documenti nelle prossime notti)` : (doc.completa ? '' : ' (lettura incompleta)')};
           aggiornata il ${esc((card.updated || '').split('-').reverse().join('/'))}. ${esc(card.avvertenza)}</p>
       </div>`;

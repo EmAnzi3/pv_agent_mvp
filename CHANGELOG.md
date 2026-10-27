@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-27 — Graduatorie FER X (GSE, Tabella A, 562 impianti ammessi): importate da PDF (`python -m doc_intel ferx-import`, il sito GSE rifiuta i download dal cloud) e abbinate ogni giorno ai progetti del radar solo per P. IVA del proponente o per stessa società nello stesso comune; etichetta «FER X», filtro «Solo con incentivo FER X assegnato» e sezione nella scheda.
+
 - 2026-10-26 — Progetti molto grandi letti su più notti (massimo 120 documenti nuovi per run, rimessi in coda la notte dopo); schede: atti nei titoli senza «n.», tabelle delle fasi ripulite, potenza per blocco e pali della recinzione non più presi come valori dell'impianto; radar eolico con la copertura esecutiva v0.7.
 
 - 2026-10-26 — Notizie di stampa (livello C, da verificare): ogni giorno `doc-intel-news.yml` legge pv-magazine.it, QualEnergia, Rinnovabili.it e SolareB2B, tiene gli articoli su cantieri/contratti fotovoltaici e li abbina a un progetto solo se comune e potenza (o proponente) compaiono nello stesso passaggio con parole di cantiere; esclusi riepiloghi VIA, graduatorie e offerte di lavoro. Etichetta «Stampa», sezione nella scheda, opzione nel filtro EPC.
