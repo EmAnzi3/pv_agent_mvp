@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-27 — Schede eoliche: ordine della coda notturna per vicinanza al cantiere (FER X, verifica di ottemperanza, VIA conclusa onshore, poi gli altri onshore; offshore e scoping per ultimi), a parità per MW decrescenti. Il fotovoltaico resta per MW decrescenti.
+
 - 2026-10-27 — Censimento eolico: ogni lunedì `wind-census.yml` legge tutti i progetti eolici del portale VIA MASE (tipologie «Impianti eolici onshore/offshore», 1 richiesta al secondo), esclude quelli con tutte le procedure archiviate, li collega al radar curato e alla graduatoria FER X eolica e aggiunge come lead gli impianti FER X senza procedura nazionale (`wind/census.json` sul ramo di memoria). Schede documentali eoliche ogni notte (`wind-cards.yml`, 15 progetti, MW decrescenti; potenza eolica e aerogeneratori nella sintesi), «vicini al cantiere» anche per l'eolico; nella pagina eolica nuova sezione «Censimento eolico» con filtri, segnali, scheda ed esportazione CSV. Il radar curato non viene modificato.
 
 - 2026-10-27 — FER X eolico (PC_EOL_2025_01, 29 impianti, 1.037 MW) importato; graduatorie ora 591 impianti (parser corretto per P. IVA a 10 cifre e date spezzate). Il radar fotovoltaico usa solo le graduatorie fotovoltaiche; il radar eolico ha la sezione «Graduatoria FER X eolico (GSE)» con abbinamento per comune + società + potenza (anche progetti assegnati in più lotti, es. ERG Greci-Montaguto) e indicazione degli impianti non presenti nel radar (`ferx/wind_matches.json`).

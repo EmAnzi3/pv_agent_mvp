@@ -177,6 +177,8 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
             "ferx": [_ferx_ref(x, "graduatoria GSE (procedura autorizzativa da individuare)")],
         })
     out = records + leads
+    for r in out:
+        r["queue_priority"] = _queue_priority(r)
     out.sort(key=lambda r: -(r["power_mw"] or 0))
     return {
         "updated": today,
@@ -193,6 +195,20 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
         },
         "records": out,
     }
+
+
+def _queue_priority(r: dict) -> int:
+    """Order of the nightly cards: what is closest to a building site first (offshore and scoping last)."""
+    proc, st = r.get("procedure") or "", r.get("procedure_status") or ""
+    if r.get("secondaria"):
+        return 0
+    if r.get("ferx"):
+        return 4
+    if re.search(r"(?i)ottemperanz", proc):
+        return 3
+    if r.get("project_type") != "Eolico" or re.search(r"(?i)definizione\s+(?:dei\s+)?contenuti|scoping|livello\s+elaborati", proc):
+        return 0
+    return 2 if re.search(r"(?i)conclus", st) else 1
 
 
 def _ferx_ref(x: dict, basis: str = "comune + società + potenza") -> dict:

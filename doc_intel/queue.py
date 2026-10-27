@@ -107,7 +107,8 @@ def plan(data_json: str | Path, memory_dir: str | Path, max_items: int = 35, mod
             continue
         last = attempts.get(key, {}).get("last")
         recent = last and date.fromisoformat(last) > today - timedelta(days=retry_days)
-        item = {"url": url, "project_key": key, "power_mw": r.get("power_mw") or 0, "source": r.get("source")}
+        item = {"url": url, "project_key": key, "power_mw": r.get("power_mw") or 0, "source": r.get("source"),
+                "priority": r.get("queue_priority") or 0}
         if key in cards:
             if key in partial and not (last and date.fromisoformat(last) >= today):
                 backlog.append({**item, "reason": "incomplete"})      # continue the reading the next night
@@ -118,7 +119,8 @@ def plan(data_json: str | Path, memory_dir: str | Path, max_items: int = 35, mod
             continue
         # on the very first run every record is 'new' for the queue: treat them as backlog
         (new if is_new and not first_run else backlog).append({**item, "reason": "new" if is_new and not first_run else "backlog"})
-    backlog.sort(key=lambda x: -(x["power_mw"] or 0))
+    # records may carry a queue priority (wind census: FER X, post-VIA, onshore first); then highest power
+    backlog.sort(key=lambda x: (-(x.get("priority") or 0), -(x["power_mw"] or 0)))
     refresh.sort(key=lambda x: attempts.get(x["project_key"], {}).get("last") or "")
     chosen: list[dict] = []
     if mode in ("new", "both"):
