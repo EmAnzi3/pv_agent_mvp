@@ -1,0 +1,76 @@
+name: Wind census (MASE VIA + FER X leads)
+# Reads every wind project on the MASE VIA portal (one request per second), links it to the curated wind
+# radar and to the GSE FER X wind ranking, and saves wind/census.json on the memory branch (doc-intel-state),
+# which the wind page reads. Nothing is written to docs/ or to the curated wind data.
+# On a pull request: test run on the first result page only, nothing saved.
+on:
+  workflow_dispatch:
+    inputs:
+      reuse_raw:
+        description: 'yes = rebuild from the last portal reading (wind/census_raw.json) without reading MASE again'
+        required: false
+        default: 'no'
+  schedule:
+    - cron: '30 4 * * 1'        # every Monday, before the night cards of the following days
+  pull_request:
+    paths:
+      - 'app/collectors/mase_wind.py'
+      - 'doc_intel/wind_census.py'
+      - '.github/workflows/wind-census.yml'
+permissions:
+  contents: write
+concurrency:
+  group: wind-census
+  cancel-in-progress: false
+jobs:
+  census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -q requests beautifulsoup4 python-dotenv
+      - name: Load memory (branch doc-intel-state)
+        run: |
+          git config user.name "doc-intel-bot"
+          git config user.email "doc-intel-bot@users.noreply.github.com"
+          git fetch origin doc-intel-state:doc-intel-state
+          git worktree add .mem doc-intel-state
+      - name: Census
+        env:
+          EVENT: ${{ github.event_name }}
+          REUSE: ${{ inputs.reuse_raw }}
+        run: |
+          extra=()
+          # pull request: rebuild from the last reading (fast) or, without one, read the first page only
+          if [ "$EVENT" = "pull_request" ] || [ "$REUSE" = "yes" ]; then
+            if [ -f .mem/wind/census_raw.json ]; then extra+=(--raw .mem/wind/census_raw.json); else extra+=(--max-pages 1); fi
+          fi
+          python -m doc_intel wind-census --memory .mem "${extra[@]}"
+          python - <<'PY'
+          import json
+          d = json.load(open(".mem/wind/census.json", encoding="utf-8"))
+          for r in d["records"][:25]:
+              print(f"{r['power_mw']} MW | {r['region']} | {r['proponent']} | {r['procedure_status']} | curato={bool(r['curato'])} ferx={len(r['ferx'])} | {r['title'][:110]}")
+          PY
+      - name: Vicini al cantiere (wind census)
+        run: python -c "from doc_intel.readiness import run_wind; print(run_wind('.mem'))"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wind-census
+          path: .mem/wind/
+          retention-days: 14
+      - name: Save to memory
+        if: github.event_name != 'pull_request'
+        run: |
+          cd .mem && git add wind readiness
+          git diff --cached --quiet && exit 0
+          git commit -q -m "wind census (run ${{ github.run_id }})"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null
+            git push -q origin HEAD:doc-intel-state && exit 0
+            sleep $((i * 10))
+          done
+          exit 1

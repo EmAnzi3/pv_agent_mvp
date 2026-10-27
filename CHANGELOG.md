@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-27 — Censimento eolico: ogni lunedì `wind-census.yml` legge tutti i progetti eolici del portale VIA MASE (tipologie «Impianti eolici onshore/offshore», 1 richiesta al secondo), esclude quelli con tutte le procedure archiviate, li collega al radar curato e alla graduatoria FER X eolica e aggiunge come lead gli impianti FER X senza procedura nazionale (`wind/census.json` sul ramo di memoria). Schede documentali eoliche ogni notte (`wind-cards.yml`, 15 progetti, MW decrescenti; potenza eolica e aerogeneratori nella sintesi), «vicini al cantiere» anche per l'eolico; nella pagina eolica nuova sezione «Censimento eolico» con filtri, segnali, scheda ed esportazione CSV. Il radar curato non viene modificato.
+
 - 2026-10-27 — FER X eolico (PC_EOL_2025_01, 29 impianti, 1.037 MW) importato; graduatorie ora 591 impianti (parser corretto per P. IVA a 10 cifre e date spezzate). Il radar fotovoltaico usa solo le graduatorie fotovoltaiche; il radar eolico ha la sezione «Graduatoria FER X eolico (GSE)» con abbinamento per comune + società + potenza (anche progetti assegnati in più lotti, es. ERG Greci-Montaguto) e indicazione degli impianti non presenti nel radar (`ferx/wind_matches.json`).
 
 - 2026-10-27 — «Vicini al cantiere»: per ogni progetto fase (realizzato, cantiere in corso, avvio entro 12 mesi, avvio possibile, autorizzato, in iter), priorità Alta/Media/Bassa e motivi (atto, date della scheda, verifica di ottemperanza, FER X, impresa esecutrice, stampa, titolo «archiviato»). Filtro dedicato, ordinamento «Priorità cantiere», etichetta in tabella, sezione nella scheda, colonne nell'esportazione CSV. Calcolato ogni giorno e dopo ogni push del radar.

@@ -47,6 +47,7 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 - Esecuzione: ruoli EPC/impresa con evidenza A/B nella scheda («Chi costruisce»); notizie di stampa compatibili (livello C) da `doc-intel-news.yml` in `news/matches.json` del branch di memoria.
 - Vicini al cantiere: `doc_intel/readiness.py` (eseguito da `doc-intel-ferx.yml` dopo l'abbinamento FER X) scrive `readiness/index.json` sul ramo di memoria; regole e punteggi documentati in testa al modulo.
 - Graduatorie FER X: `doc_intel/data/ferx_awarded.json` importato dai PDF GSE (`python -m doc_intel ferx-import`), abbinato ogni giorno e dopo ogni push (`ferx/matches.json`, solo procedure fotovoltaiche); graduatoria eolica abbinata al radar eolico in `ferx/wind_matches.json`, mostrata da `docs/wind/assets/ferx-wind-v08.js`.
+- Censimento eolico: `doc_intel/wind_census.py` + `app/collectors/mase_wind.py`, workflow `wind-census.yml` (settimanale) e `wind-cards.yml` (schede notturne, stato coda `queue/wind_*.json`); dati `wind/census.json`, prontezza `readiness/wind_index.json`; pagina `docs/wind/assets/census-v09.js` (+ copia del pannello scheda `scheda-panel.*`, identica a `doc_intel/scheda_panel.*`, verificata in CI).
 - Radar eolico: sezione `docs/wind/`, aggiornamento quotidiano `wind_agent_watch.yml`; il canonico eolico non viene modificato in automatico.
 
 ## Problemi aperti
@@ -61,4 +62,3 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 2. Rieseguire una volta il batch globale: la migrazione correggerà il valore storico `DC` già presente nel DB.
 3. Il gate finale verifica automaticamente i cinque record baseline, le province Piemonte e l'assenza di proponenti derivati da frammenti di potenza.
 4. Se il batch chiude con `[run-pipeline] OK`, procedere al merge della PR #3.
-

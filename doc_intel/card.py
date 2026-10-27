@@ -323,9 +323,19 @@ def _hint(p: dict) -> str | None:
 # --------------------------------------------------------------------------------------------- summary
 def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], list[dict]]:
     tiles, open_points = [], []
+    # wind census records (technology 'wind'): the plant power is the wind power, and the PV tiles
+    # (modules, panel area, piles) give way to the turbines
+    wind = record.get("technology") == "wind"
+    PF = ("tech.wind_power_mw", "tech.nominal_power_mw") if wind else ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")
     title = record.get("title") or p.get("title") or ""
     power_rx = r"(?i)(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?|\d+(?:[.,]\d+)?)\s*(MWp|MW|kWp|KwP|kW)\b"
     tm, title_src = re.search(power_rx, title), "titolo del procedimento"
+    if wind:
+        # wind titles list the turbine rating first ('7 aerogeneratori da 5,6 MW ... complessiva 39,2 MW'): the
+        # census reading of the title gives the plant total
+        from .wind_census import _power as wind_title_power
+        wp = wind_title_power(title)
+        tm = re.search(power_rx, f"{wp:g} MW".replace(".", ",")) if wp else None
     sheet = (p.get("raw") or {}).get("register_sheet") or {}
     if not tm and sheet.get("power_mw"):
         # a register sheet (ATOS) states the power in its own field, not in the plant name
@@ -337,15 +347,15 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         mw = num / 1000 if unit.lower().startswith("k") else num
         note = None
         cands = [(g["field"], x) for g in d["groups"]
-                 if g["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw") and g.get("subject") in ("plant", None)
+                 if g["field"] in PF and g.get("subject") in ("plant", None)
                  for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["occurrences"] >= 10
                  and not _part_value(g["field"], x)]
         cands.sort(key=lambda c: -c[1]["occurrences"])
-        shown_field = "tech.pv_dc_mwp" if unit.lower().endswith("p") else "tech.nominal_power_mw"
+        shown_field = "tech.pv_dc_mwp" if unit.lower().endswith("p") and not wind else "tech.nominal_power_mw"
         shown, status = mw, "verificato"
         source = {"document": title_src, "url": p.get("info_url"), "excerpt": tm.group(0)}
         title_seen = any(abs(x["value"] - mw) <= 0.01 * mw and x["occurrences"] >= 2 for _, x in
-                         [(g["field"], x) for g in d["groups"] if g["field"] in ("tech.pv_dc_mwp", "tech.pv_ac_mw", "tech.nominal_power_mw")
+                         [(g["field"], x) for g in d["groups"] if g["field"] in PF
                           for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float))])
         for fld, x in cands:
             ratio = mw / x["value"] if x["value"] else 0
@@ -368,7 +378,7 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
         # no power in the title: the plant power the documents state most often (an explicit declaration
         # such as 'capacità produttiva massima' counts like any other occurrence)
         cands = [(g["field"], x) for g in d["groups"]
-                 if g["field"] in ("tech.pv_dc_mwp", "tech.nominal_power_mw", "tech.pv_ac_mw") and g.get("subject") in ("plant", None)
+                 if g["field"] in PF and g.get("subject") in ("plant", None)
                  for x in g["values"] if isinstance(x, dict) and isinstance(x.get("value"), (int, float)) and x["value"] > 0
                  and not _part_value(g["field"], x)]
         radar_mw = float(record.get("power_mw") or 0)
@@ -388,10 +398,22 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
             mw = x["value"] if fld != "tech.pv_ac_mw" else None
             tm = True if mw else None
     plant_mw = mw if tm else None
+    if wind:
+        wtg = _pick(d, "tech.wtg_count", titles, (lambda v: 1 <= v <= 200))
+        hub, rot = _pick(d, "tech.wtg_hub_height_m", titles), _pick(d, "tech.wtg_rotor_diameter_m", titles)
+        if wtg or hub or rot:
+            unit_mw = f"{plant_mw / wtg['value']:.2f}".replace(".", ",") + " MW ciascuno" if wtg and plant_mw else None
+            tiles.append({"key": "wtg", "label": "Aerogeneratori",
+                          "value": f"{wtg['value']:g}" if wtg else "numero non indicato",
+                          "status": wtg["status"] if wtg else "da verificare",
+                          "sub": " · ".join(x for x in (unit_mw, f"altezza mozzo {hub['text']}" + ("" if "m" in hub["text"] else " m") if hub else None,
+                                                        f"diametro rotore {rot['text']}" + ("" if "m" in rot["text"] else " m") if rot else None,
+                                                        _hint(wtg) if wtg else None) if x) or None,
+                          "source": (wtg or hub or rot)["source"]})
     tech = _pick(d, "tech.technology", titles)
     if tech and tech["value"] in ("floating_pv", "offshore") and tech["occurrences"] < 10:
         tech = None                      # passing mentions (alternatives, literature) are not the project's technology
-    mount = _pick(d, "tech.mounting", titles)
+    mount = None if wind else _pick(d, "tech.mounting", titles)
     kind = " · ".join(x["text"] for x in (tech, mount) if x)
     if kind:
         tiles.append({"key": "impianto", "label": "Impianto", "value": kind[:1].upper() + kind[1:], "status": "da documenti",
@@ -401,6 +423,8 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
     ok_tot = (lambda v: 0.8 * plant_mw <= v <= 8 * plant_mw) if plant_mw else None
     ok_pan = (lambda v: 0.25 * plant_mw <= v <= 3 * plant_mw) if plant_mw else None
     tot, pan = _pick(d, "tech.area_available_ha", titles, ok_tot), _pick(d, "tech.area_panels_ha", titles, ok_pan)
+    if wind:
+        tot = pan = None                  # a wind farm has no 'site area' in the PV sense (turbine plots + roads)
     if tot and pan and pan["value"] >= 0.85 * tot["value"]:
         # panels never cover (almost) the whole site: rows are spaced; such a value is the site or farmland area
         open_points.append({"label": "Superficie pannelli", "reason": f"valore letto ({pan['text']}) prossimo all'area totale: non mostrato"})
@@ -421,6 +445,8 @@ def _summary(d: dict, p: dict, record: dict, titles: dict) -> tuple[list[dict], 
                 subj = "recinzione"                  # fence posts counted as plant piles
             piles.setdefault(subj, (v, len(g["values"]) > 1))
     structural = [(k, piles[k]) for k in ("totale", "tracker", "strutture fisse") if k in piles]
+    if wind:
+        structural, piles = [], {}        # foundation piles of a turbine are not PV piles
     if structural:
         k, (v, multi) = structural[0]
         parts = [f"{piles[x][0]['value']:,} {x}".replace(",", ".") for x in ("tracker", "strutture fisse") if x in piles and x != k]
@@ -802,11 +828,12 @@ def _gantt(d: dict, titles: dict) -> dict:
             general = all((f.get("qualifiers") or {}).get("scope", "general") == "general" for f in fs_)
             # completeness first (a 6-row read of a coded chart loses to a 13-phase programme), then reliability
             # the plant's programme (modules, trackers) wins over the substation's or the grid connection's
-            plant = any(re.search(r"(?i)modul|tracker|inseguitor|pannell|fotovolt|\bFV\b|\bpali\b", f["value"]["name"]) for f in fs_)
+            plant = any(re.search(r"(?i)modul|tracker|inseguitor|pannell|fotovolt|\bFV\b|\bpali\b|aerogenerat|\bWTG\b|turbin|navicell|\bpale\b|fondazion", f["value"]["name"]) for f in fs_)
             return (general, plant, min(len(fs_), 10), reliability, bool(SCHED_TITLE.search(titles.get(u) or "")), fits, len(fs_))
         decom = re.compile(r"(?i)smont|dismiss|rimozion|demoliz|smaltim|ripristin")
         works = re.compile(r"(?i)cantier|scav|posa|montagg|install|recinz|cavidot|cabin|modul|tracker|struttur|collaud|"
-                           r"viabil|opere|pali|infiss|conness|inverter|commission|progett|autorizz|realizz|lavor|fornitur")
+                           r"viabil|opere|pali|infiss|conness|inverter|commission|progett|autorizz|realizz|lavor|fornitur|"
+                           r"aerogenerat|WTG|turbin|fondazion|piazzol|\bgru\b|sollevament|eretti|erezion|trasport")
         build = {k: v for k, v in by_page.items()
                  if sum(bool(decom.search(f["value"]["name"])) for f in v) < 0.4 * len(v)        # decommissioning charts
                  and (SCHED_TITLE.search(titles.get(k[0]) or "")
