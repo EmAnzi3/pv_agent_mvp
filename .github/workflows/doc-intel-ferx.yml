@@ -1,7 +1,7 @@
 name: Doc Intel FER X rankings (GSE) and 'vicini al cantiere'
 # Matches the GSE FER X awarded plants (doc_intel/data/ferx_awarded.json, imported by hand from the GSE
 # Table A PDFs: the GSE site refuses cloud downloads) to radar projects and their cards.
-# Saves ferx/awarded.json and ferx/matches.json on the memory branch. On a pull request: dry run only.
+# Saves ferx/awarded.json, ferx/matches.json (PV radar) and ferx/wind_matches.json (wind radar) on the memory branch. On a pull request: dry run only.
 on:
   workflow_dispatch:
   push:
@@ -15,6 +15,7 @@ on:
       - 'doc_intel/ferx.py'
       - 'doc_intel/readiness.py'
       - 'doc_intel/data/ferx_awarded.json'
+      - 'docs/wind/data/**'
       - '.github/workflows/doc-intel-ferx.yml'
 permissions:
   contents: write
