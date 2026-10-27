@@ -1,0 +1,235 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9717",
+ "title": "Progetto di un impianto eolico off-shore denominato \"Dorada\", composto da 108 aerogeneratori di potenza unitaria pari a 15 MW, per una potenza totale d'impianto di 1620 MW, da realizzarsi al largo della Regione Puglia nel Mar Ionio Settentrionale, incluse le opere di connessione con approdo costiero previsto nel Comune di Maruggio (TA).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9717",
+ "source": "mase",
+ "updated": "2026-10-27",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "1.620 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9717",
+    "excerpt": "1620 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "108",
+   "status": "da verificare",
+   "sub": "15,00 MW ciascuno · Valore più ricorrente negli elaborati; altri valori: 36 (16), 6 (15), 78 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/835749",
+    "page": 11,
+    "document": "ContributI del Ministero della Cultura - Soprintendenza speciale per il Piano Nazionale di Ripresa e Resilienza in data 03/05/2023",
+    "excerpt": "alla realizzazione di un impianto eolico off-shore denominato \"Dorada\", composto da 108 aerogeneratori di potenza unitaria pari a 15 MW, per una potenza totale d'impianto di 1620 MW, da realizzarsi al largo della Regione"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/835749",
+    "page": 1,
+    "document": "ContributI del Ministero della Cultura - Soprintendenza speciale per il Piano Nazionale di Ripresa e Resilienza in data 03/05/2023",
+    "excerpt": "realizzazione di un impianto eolico off-shore denominato \"Dorada\", composto da 108"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/820079",
+    "page": 28,
+    "document": "pratica TERNA 202102341",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "TA",
+  "comuni": [
+   "Maruggio"
+  ],
+  "coordinate": {
+   "lat": 40.15581,
+   "lon": 17.63665,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (12 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/837362",
+    "page": 2,
+    "document": "Parere/Contributi dell'Ente ARPA Puglia in data 08/05/2023",
+    "excerpt": "- 36 nell'area (coordinate baricentriche 40.155808° N 17.636653° E) antistante la fascia"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.15581,17.63665",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.53061,
+   "lon": 17.35629,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/837362",
+    "page": 2,
+    "document": "Parere/Contributi dell'Ente ARPA Puglia in data 08/05/2023",
+    "excerpt": "- una stazione utente a 380 kV on-shore localizzata in agro del comune di Taranto (40.530605° N, 17.356288° E)."
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.53061,17.35629"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Helios Energy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "heliosenergysrl@pec.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/835749",
+      "page": 1,
+      "document": "ContributI del Ministero della Cultura - Soprintendenza speciale per il Piano Nazionale di Ripresa e Resilienza in data 03/05/2023",
+      "excerpt": "fl Helios Energy S.r.l. (heliosenergysrl@pec.it)"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9717"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Rina S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "rinaconsulting@rina.org",
+     "occurrences": 45,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/820052",
+      "page": 5,
+      "document": "Elenco elaborati",
+      "excerpt": "RINA Consulting S.p.A. | Società soggetta a direzione e coordinamento amministrativo e finanziario del socio unico RINA S.p.A. Via Cecchi, 6 - 16129 GENOVA | P. +39 010 31961 | rinaconsulting@rina.org | www.rina.org"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/820079",
+    "page": 28,
+    "document": "pratica TERNA 202102341",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 43,
+  "pagine": 1090,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Helios Energy S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 1620.0,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MARUGGIO",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "confermato"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "6 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
