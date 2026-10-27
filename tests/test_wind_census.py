@@ -42,3 +42,19 @@ class WindCensus(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class WindPower(unittest.TestCase):
+    def test_title_cases(self):
+        self.assertEqual(_power("7 nuovi aerogeneratori, smantellamento degli attuali 19 aerogeneratori di potenza complessiva pari a 11,4 MW; "
+                                "7 nuovi aerogeneratori della potenza unitaria di 6 MW"), 42.0)
+        self.assertEqual(_power("costituito da 8 aerogeneratori, ciascuno di potenza nominale pari a 8 MW, da realizzarsi"), 64.0)
+        self.assertEqual(_power("13 WTG della potenza di 93,60 MWp"), 93.6)
+        self.assertEqual(_power("potenza massima complessiva di MW 144 nei comuni"), 144.0)
+        self.assertEqual(_power("33 aerogeneratori della potenza nominale fino a 6 MW, per una potenza complessiva sino a 198 MW"), 198.0)
+        self.assertEqual(_power("sistema di accumulo da 40 MWh e eolico 30 MW"), 30.0)
+
+    def test_place_words_are_not_company_words(self):
+        rows = [raw(5, "Impianto eolico da 43,2 MW", "Gruppo Visconti Brindisi S.r.l.", ["Brindisi"])]
+        c = build(rows, [], [ferx(8, "BRINDISI SANTA TERESA S.R.L.", "Brindisi", 31050)], today="2026-10-27")
+        self.assertEqual(c["records"][0]["ferx"] if c["records"][0]["source"] == "mase" else None, [])

@@ -10,7 +10,7 @@
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
   const num = (v, d = 1) => v == null || v === "" ? "–" : Number(v).toLocaleString("it-IT", {maximumFractionDigits: d});
   const getJson = u => fetch(u, {cache: "no-cache"}).then(r => r.ok ? r.json() : {}).catch(() => ({}));
-  let rows = [], cards = {}, ready = {}, shown = PAGE, sortKey = "mw";
+  let rows = [], cards = {}, ready = {}, shown = PAGE, sortKey = "ready";
 
   function shortName(r) {
     if (r.source === "gse_ferx") return `${r.municipalities} – ${r.proponent}`;
@@ -18,6 +18,19 @@
     const q = t.match(/[«"“]([^»"”]{3,60})[»"”]/) || t.match(/denominat[oa]\s+([A-Z][^,;(]{2,50})/i);
     if (q) return q[1].trim();
     return t.replace(/^(Valutazione|Verifica|Provvedimento|Definizione)[^:]*:\s*/i, "").slice(0, 90) + (t.length > 90 ? "…" : "");
+  }
+  // a plain reading of the MASE procedure: where the project stands in the environmental assessment
+  function phase(r) {
+    if (r.source === "gse_ferx") return "Procedura regionale (da individuare)";
+    const p = r.procedure || "", st = status(r)[0] || "";
+    if (/ottemperanza/i.test(p)) return "Post-VIA: ottemperanza";
+    if (/proroga/i.test(p)) return "Post-VIA: proroga";
+    if (/valutazione preliminare|variant|modific/i.test(p)) return "Modifica di progetto";
+    if (/definizione (?:dei )?contenuti|scoping/i.test(p)) return "Scoping (pre-VIA)";
+    if (/assoggettabilit/i.test(p)) return "Screening";
+    if (/conclus/i.test(st)) return "VIA conclusa (esito da verificare)";
+    if (/impatto ambientale|provvedimento unico|autorizzazione|via/i.test(p)) return "VIA in istruttoria";
+    return "Altra procedura";
   }
   const kind = r => /offshore/i.test(r.project_type || "") ? "Offshore" : "Onshore";
   const status = r => (r.procedure_status || "").split(", ").filter(Boolean);
@@ -33,6 +46,7 @@
     if (x && x.level) out.push(`<span class="wc-b wc-ready-${x.level === "Alta" ? "a" : x.level === "Media" ? "m" : "b"}" title="${esc(x.phase_label)}${x.window ? " · " + esc(x.window) : ""}">Cantiere ${esc(x.level)}</span>`);
     else if (x && x.phase === "realizzato") out.push(`<span class="wc-b wc-done">Realizzato</span>`);
     if (epc(r)) out.push(`<span class="wc-b wc-epc">EPC ${esc(epc(r))}</span>`);
+    if (r.secondaria) out.push(`<span class="wc-b wc-side" title="Modifica, variante, ottemperanza o proroga di un progetto: non conteggiata nei totali">Procedura secondaria</span>`);
     if (r.source === "gse_ferx") out.push(`<span class="wc-b wc-lead" title="Impianto in graduatoria FER X senza procedura VIA nazionale trovata: probabilmente autorizzato in Regione">Procedura da individuare</span>`);
     return out.join(" ");
   }
@@ -40,11 +54,14 @@
   function filtered() {
     const q = (document.getElementById("wcQ").value || "").toLowerCase().trim();
     const reg = document.getElementById("wcRegion").value, tipo = document.getElementById("wcKind").value;
-    const show = document.getElementById("wcShow").value;
+    const show = document.getElementById("wcShow").value, side = document.getElementById("wcSide").checked;
     let out = rows.filter(r => {
+      if (r.secondaria && !side) return false;
       if (q && !`${r.title} ${r.proponent} ${r.municipalities} ${r.province}`.toLowerCase().includes(q)) return false;
       if (reg && r.region !== reg) return false;
       if (tipo && kind(r) !== tipo) return false;
+      const ph = document.getElementById("wcPhase").value;
+      if (ph && phase(r) !== ph) return false;
       if (show === "card" && !cards[r.project_key]) return false;
       if (show === "ferx" && !(r.ferx || []).length) return false;
       if (show === "ready" && !["Alta", "Media"].includes(lv(r))) return false;
@@ -77,7 +94,7 @@
         <td><b>${esc(shortName(r))}</b><small>${esc(r.proponent || "proponente non indicato")}</small></td>
         <td>${esc(r.municipalities || "–")}${r.province ? ` (${esc(r.province)})` : ""}<small>${esc(r.region || "")} · ${kind(r)}</small></td>
         <td class="num">${num(r.power_mw)}</td>
-        <td>${esc(r.procedure || (r.source === "gse_ferx" ? "–" : "Procedura MASE"))}<small>${esc(status(r).join(" · ") || "")}${proc && proc.avvio ? " · avvio " + esc(proc.avvio) : ""}</small></td>
+        <td><b class="wc-ph">${esc(phase(r))}</b><small>${esc(r.procedure || "")}${status(r).length ? " · " + esc(status(r).join(" · ")) : ""}${proc && proc.avvio ? " · avvio " + esc(proc.avvio) : ""}</small></td>
         <td class="wc-sig">${signals(r)}</td>
         <td class="wc-act">${card ? `<button type="button" class="wc-btn" data-wcard="${esc(card.file)}">Scheda</button>` : ""}
           ${r.url ? `<a class="wc-link" href="${esc(r.url)}" target="_blank" rel="noopener">Fonte</a>` : ""}</td></tr>`;
@@ -88,12 +105,14 @@
   }
 
   function kpis(sum) {
-    const withCard = rows.filter(r => cards[r.project_key]).length;
-    const near = rows.filter(r => ["Alta", "Media"].includes(lv(r))).length;
+    const main = rows.filter(r => !r.secondaria);
+    const withCard = main.filter(r => cards[r.project_key]).length;
+    const near = main.filter(r => ["Alta", "Media"].includes(lv(r))).length;
     const items = [
-      ["Progetti vivi", num(rows.length, 0), `${num(sum.mw, 0)} MW eolici`],
+      ["Progetti vivi", num(sum.progetti != null ? sum.progetti : main.length, 0),
+       `${num((sum.mw_onshore || 0) / 1000, 1)} GW onshore · ${num((sum.mw_offshore || 0) / 1000, 1)} GW offshore`],
       ["Con scheda", num(withCard, 0), "lettura notturna dei documenti, MW decrescenti"],
-      ["Incentivo FER X", num(rows.filter(r => (r.ferx || []).length).length, 0), `di cui ${num(sum.lead_ferx, 0)} senza procedura nazionale`],
+      ["Incentivo FER X", num(main.filter(r => (r.ferx || []).length).length, 0), `di cui ${num(sum.lead_ferx, 0)} senza procedura nazionale`],
       ["Vicini al cantiere", num(near, 0), "priorità Alta o Media"],
       ["Già nel radar curato", num(sum.nel_radar_curato, 0), "progetti verificati sopra"],
       ["Archiviati esclusi", num(sum.archiviati_esclusi, 0), `${num(sum.mw_archiviati, 0)} MW, tutte le procedure archiviate`],
@@ -103,11 +122,11 @@
   }
 
   function exportCsv() {
-    const head = ["Progetto", "Proponente", "Comuni", "Provincia", "Regione", "Tipo", "MW", "Procedura", "Stato procedure",
+    const head = ["Progetto", "Proponente", "Comuni", "Provincia", "Regione", "Tipo", "MW", "Fase", "Procedura", "Stato procedure",
                   "Radar curato", "FER X", "Vicini al cantiere", "Fase", "EPC", "Scheda", "Fonte"];
     const q = v => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`;
-    const lines = filtered().map(r => [shortName(r), r.proponent, r.municipalities, r.province, r.region, kind(r),
-      r.power_mw, r.procedure, r.procedure_status, r.curato ? r.curato.nome : "", (r.ferx || []).map(x => "#" + x.posizione).join(" "),
+    const lines = filtered().map(r => [shortName(r) + (r.secondaria ? " (procedura secondaria)" : ""), r.proponent, r.municipalities, r.province, r.region, kind(r),
+      r.power_mw, phase(r), r.procedure, r.procedure_status, r.curato ? r.curato.nome : "", (r.ferx || []).map(x => "#" + x.posizione).join(" "),
       lv(r) || "", (ready[r.project_key] || {}).phase_label || "", epc(r) || "", cards[r.project_key] ? "sì" : "", r.url].map(q).join(";"));
     const blob = new Blob(["﻿" + [head.map(q).join(";")].concat(lines).join("\n")], {type: "text/csv;charset=utf-8"});
     const a = document.createElement("a");
@@ -129,19 +148,22 @@
         <label class="wide"><span>Cerca</span><input id="wcQ" type="search" placeholder="Progetto, proponente, comune…"></label>
         <label><span>Regione</span><select id="wcRegion"><option value="">Tutte</option></select></label>
         <label><span>Tipo</span><select id="wcKind"><option value="">Tutti</option><option>Onshore</option><option>Offshore</option></select></label>
+        <label><span>Fase</span><select id="wcPhase"><option value="">Tutte</option>${["VIA in istruttoria", "VIA conclusa (esito da verificare)",
+          "Post-VIA: ottemperanza", "Scoping (pre-VIA)", "Screening", "Procedura regionale (da individuare)"].map(x => `<option>${x}</option>`).join("")}</select></label>
         <label><span>Mostra</span><select id="wcShow"><option value="">Tutti i progetti</option><option value="card">Solo con scheda</option>
           <option value="ferx">Solo con incentivo FER X</option><option value="ready">Solo vicini al cantiere</option>
           <option value="epc">Solo con evidenza EPC</option><option value="live">Solo con procedura in corso</option>
           <option value="new">Non nel radar curato</option><option value="lead">FER X senza procedura nazionale</option></select></label>
-        <label><span>Ordina</span><select id="wcSort"><option value="mw">MW decrescenti</option><option value="ready">Priorità cantiere</option><option value="date">Procedura più recente</option></select></label>
+        <label class="wc-check"><input id="wcSide" type="checkbox"><span>Includi modifiche e varianti</span></label>
+        <label><span>Ordina</span><select id="wcSort"><option value="ready">Priorità cantiere, poi MW</option><option value="mw">MW decrescenti</option><option value="date">Procedura più recente</option></select></label>
       </div>
       <div class="wc-count" id="wcCount"></div>
-      <div class="wc-scroll"><table class="wc-table"><thead><tr><th>Progetto</th><th>Luogo</th><th class="num">MW</th><th>Procedura</th><th>Segnali</th><th></th></tr></thead>
+      <div class="wc-scroll"><table class="wc-table"><thead><tr><th>Progetto</th><th>Luogo</th><th class="num">MW</th><th>Fase e procedura</th><th>Segnali</th><th></th></tr></thead>
         <tbody id="wcBody"></tbody></table></div>
       <button type="button" class="wc-more" id="wcMore" hidden></button>
       <p class="wc-note" id="wcNote"></p>`;
     anchor.parentNode.insertBefore(sec, anchor);
-    ["wcQ", "wcRegion", "wcKind", "wcShow"].forEach(id => document.getElementById(id).addEventListener("input", () => { shown = PAGE; render(); }));
+    ["wcQ", "wcRegion", "wcKind", "wcPhase", "wcShow", "wcSide"].forEach(id => document.getElementById(id).addEventListener("input", () => { shown = PAGE; render(); }));
     document.getElementById("wcSort").addEventListener("change", e => { sortKey = e.target.value; shown = PAGE; render(); });
     document.getElementById("wcMore").addEventListener("click", () => { shown += PAGE; render(); });
     document.getElementById("wcCsv").addEventListener("click", exportCsv);
@@ -163,7 +185,10 @@
         kpis(census.summary || {});
         document.getElementById("wcNote").textContent = `Censimento aggiornato il ${(census.updated || "").split("-").reverse().join("/")}. ` +
           "Fonti: portale VIA MASE (tipologie «Impianti eolici onshore/offshore»), graduatoria GSE FER X eolico. " +
-          "Esclusi i progetti con tutte le procedure archiviate. Le schede si aggiungono ogni notte, dai progetti più grandi.";
+          "Esclusi i progetti con tutte le procedure archiviate; modifiche, varianti, ottemperanze e proroghe " +
+          `(${num(census.summary && census.summary.procedure_secondarie, 0)}) sono nascoste di default e non entrano nei totali. ` +
+          "«Conclusa» indica una procedura chiusa con decreto, positivo o negativo: l'esito si legge nella scheda o sul portale. " +
+          "Le schede si aggiungono ogni notte, dai progetti più grandi.";
         render();
       });
   }

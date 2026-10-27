@@ -5,6 +5,11 @@ name: Wind census (MASE VIA + FER X leads)
 # On a pull request: test run on the first result page only, nothing saved.
 on:
   workflow_dispatch:
+    inputs:
+      reuse_raw:
+        description: 'yes = rebuild from the last portal reading (wind/census_raw.json) without reading MASE again'
+        required: false
+        default: 'no'
   schedule:
     - cron: '30 4 * * 1'        # every Monday, before the night cards of the following days
   pull_request:
@@ -36,8 +41,13 @@ jobs:
       - name: Census
         env:
           EVENT: ${{ github.event_name }}
+          REUSE: ${{ inputs.reuse_raw }}
         run: |
-          extra=(); if [ "$EVENT" = "pull_request" ] && [ ! -f .github/wind-census-full ]; then extra+=(--max-pages 1); fi
+          extra=()
+          # pull request: rebuild from the last reading (fast) or, without one, read the first page only
+          if [ "$EVENT" = "pull_request" ] || [ "$REUSE" = "yes" ]; then
+            if [ -f .mem/wind/census_raw.json ]; then extra+=(--raw .mem/wind/census_raw.json); else extra+=(--max-pages 1); fi
+          fi
           python -m doc_intel wind-census --memory .mem "${extra[@]}"
           python - <<'PY'
           import json
@@ -53,7 +63,7 @@ jobs:
           path: .mem/wind/
           retention-days: 14
       - name: Save to memory
-        if: github.event_name != 'pull_request' || hashFiles('.github/wind-census-full') != ''
+        if: github.event_name != 'pull_request'
         run: |
           cd .mem && git add wind readiness
           git diff --cached --quiet && exit 0
