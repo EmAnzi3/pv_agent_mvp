@@ -37,7 +37,7 @@ jobs:
         env:
           EVENT: ${{ github.event_name }}
         run: |
-          extra=(); if [ "$EVENT" = "pull_request" ]; then extra+=(--max-pages 1); fi
+          extra=(); if [ "$EVENT" = "pull_request" ] && [ ! -f .github/wind-census-full ]; then extra+=(--max-pages 1); fi
           python -m doc_intel wind-census --memory .mem "${extra[@]}"
           python - <<'PY'
           import json
@@ -51,7 +51,7 @@ jobs:
           path: .mem/wind/
           retention-days: 14
       - name: Save to memory
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' || hashFiles('.github/wind-census-full') != ''
         run: |
           cd .mem && git add wind
           git diff --cached --quiet && exit 0
