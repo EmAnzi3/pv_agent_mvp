@@ -26,6 +26,8 @@ jobs:
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             docs/wind/**
+            doc_intel/scheda_panel.js
+            doc_intel/scheda_panel.css
             app/__init__.py
             app/wind_agents/**
             scripts/check_wind_radar.py
