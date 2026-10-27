@@ -29,6 +29,8 @@ import requests
 
 INFO_RE = re.compile(r"^https?://va\.mite\.gov\.it/[a-z]{2}-[A-Z]{2}/Oggetti/Info/(\d+)")
 ROW_RE = re.compile(r"\b(\d{3,6})\s+(\d{2}/\d{2}/\d{4})\s+([^\d:]{3,60}?)\s+Dettagli procedura")
+SIDE_PROCEDURE = re.compile(r"(?i)\bmodific|\bvariant|valutazione\s+preliminare|art\.?\s*6,?\s*c(?:omma|\.)\s*9|"
+                            r"\bID\s*(?:VIP|_?VIA)?\s*[:_]?\s*\d{3,5}\]?|positivamente\s+valutat|ottemperanz|proroga")
 HEADERS = {"User-Agent": "Mozilla/5.0 (PV Agent radar; procedure status check)"}
 LIVE_TTL, ARCHIVED_TTL = timedelta(days=7), timedelta(days=30)
 
@@ -102,7 +104,11 @@ def main() -> int:
         known = [s for v in statuses.values() if v for s in v]
         if known:
             r["procedure_status"] = ", ".join(dict.fromkeys(known))
-        dead = (len(mase_infos) == len(urls)
+        # a modification, a variant or a preliminary evaluation of an existing project is a side procedure:
+        # its archiving says nothing about the project itself (e.g. 'modifica ... positivamente valutato
+        # con Decreto n. 361 del 23/06/2025 [Rif. ID VIP: 9253]')
+        side = bool(SIDE_PROCEDURE.search(str(r.get("title") or "")))
+        dead = (not side and len(mase_infos) == len(urls)
                 and all(v and all(s == "Archiviata" for s in v) for v in statuses.values()))
         (removed if dead else keep).append(r)
 
