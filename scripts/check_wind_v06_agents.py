@@ -161,7 +161,7 @@ assert reconcile_finding(project_finding, canonical=[], discovery=[])["best"] is
 
 # PV-Agent-style raw/history persistence must detect new / unchanged / changed.
 # Operational cursors and live watch timestamps are separate from canonical data.
-with tempfile.TemporaryDirectory() as tmp:
+with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
     state.DB_PATH = Path(tmp) / "wind_agent_test.sqlite"
     assert state.get_source_cursor("test-cursor") is None
     assert state.get_source_cursor("test-cursor", "100") == "100"

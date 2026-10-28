@@ -65,7 +65,7 @@ if errorlevel 1 (
 if /I not "%MODE%"=="offline" (
   echo.
   echo [1b/3] Censimento eolico regionale dal PC: Sistema Puglia, Basilicata, Sicilia...
-  echo        Sicilia: solo CSV open data e pagine progetto nuove, con pausa di 4 secondi e massimo 150 pagine.
+  echo        Sicilia: solo CSV open data e pagine progetto nuove, con pausa di 6 secondi e massimo 40 pagine.
   "%PY%" -m doc_intel wind-regional --where local --out docs\wind\data\census-regional-local.json
   if errorlevel 1 (
     echo ATTENZIONE: nessun portale regionale raggiungibile. Il censimento usa i dati del giro precedente.
