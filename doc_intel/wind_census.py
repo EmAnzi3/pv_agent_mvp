@@ -98,7 +98,7 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
           regional: list[dict] | None = None) -> dict:
     """raw: [{external_id, source_url, title, payload, statuses, procedures}] from MaseWindCollector."""
     today = today or datetime.now(timezone.utc).date().isoformat()
-    cur_by_info = {}
+    cur_by_info, cur_by_id = {}, {p["id"]: p for p in curated}
     for p in curated:
         for oid in INFO_ID.findall(json.dumps(p.get("sources") or [])):
             cur_by_info[oid] = p
@@ -139,7 +139,7 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
                       and mk & {place_key(m) for m in c.get("municipalities") or []}
                       and (rec["power_mw"] is None or _close(rec["power_mw"], float(c.get("mw") or 0), 0.25))), None)
         if p:
-            rec["curato"] = {"id": p["id"], "nome": p["name"], "fase": p.get("stage_label"), "stage": p.get("stage")}
+            rec["curato"] = _curato_ref(p)
         records.append(rec)
 
     added, merged = _add_regional(records, regional or [], today)
@@ -184,7 +184,8 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
             "procedure_status": "", "procedures": [], "power_mw": round((x.get("kw") or 0) / 1000, 3),
             "url": "https://www.gse.it/servizi-per-te/fonti-rinnovabili/ferx/graduatorie", "updated_at": today,
             "project_key": f"wind:ferx_{x.get('codice')}",
-            "curato": ({"id": cur["id"], "nome": cur["nome"], "fase": cur.get("fase")} if cur else None),
+            "curato": (_curato_ref(cur_by_id[cur["id"]]) if cur and cur.get("id") in cur_by_id else
+                       {"id": cur["id"], "nome": cur["nome"], "fase": cur.get("fase")} if cur else None),
             "ferx": [_ferx_ref(x, "graduatoria GSE (procedura autorizzativa da individuare)")],
         })
     out = records + leads
@@ -216,6 +217,17 @@ REGION_LABEL = {"puglia_opendata": "Regione Puglia (open data VIA FER)", "sistem
                 "sardegna": "Regione Sardegna", "sicilia": "Regione Siciliana (SI-VVI)"}
 
 
+def _curato_ref(p: dict) -> dict:
+    """What the census keeps of a verified project: stage, next milestone and the companies with a confirmed
+    role (A1/A2 evidence), so the dashboard needs no separate page for them."""
+    rel = [f"{r['company']} ({r['role']})" for r in p.get("relations") or []
+           if r.get("status") == "confirmed" and r.get("confidence") in ("A1", "A2")]
+    nxt = p.get("next") or {}
+    return {"id": p["id"], "nome": p["name"], "fase": p.get("stage_label"), "stage": p.get("stage"),
+            "contractor": rel, "prossima_tappa": " ".join(x for x in (nxt.get("label"), nxt.get("date")) if x) or None,
+            "lacune": (p.get("gaps") or [])[:6]}
+
+
 def _add_curated(records: list[dict], curated: list[dict], today: str) -> int:
     """Verified projects of the curated radar that no public procedure of the census explains (typically
     plants already under construction, authorised years ago): added from the curated data, so the census
@@ -234,7 +246,7 @@ def _add_curated(records: list[dict], curated: list[dict], today: str) -> int:
             "procedure": None, "procedure_status": p.get("stage_label") or "", "procedures": [],
             "power_mw": float(p.get("mw") or 0) or None, "url": url, "updated_at": today,
             "project_key": f"wind:curato_{p['id']}", "ferx": [], "altre_fonti": [],
-            "curato": {"id": p["id"], "nome": p["name"], "fase": p.get("stage_label"), "stage": p.get("stage")},
+            "curato": _curato_ref(p),
         }
         records.append(rec)
         n += 1

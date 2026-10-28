@@ -60,6 +60,14 @@
       margin: 0 auto;
     }
 
+    /* switch between the PV and the wind radar (same control on both pages) */
+    .radar-switch { display: inline-flex; gap: 4px; padding: 4px; border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px; background: rgba(255,255,255,0.08); }
+    .radar-switch a { color: rgba(255,255,255,0.80); text-decoration: none; font-weight: 800; font-size: 14px;
+      padding: 8px 20px; border-radius: 999px; letter-spacing: 0.01em; }
+    .radar-switch a.on { background: #ffffff; color: #0f4f4a; }
+    .radar-switch a:not(.on):hover { background: rgba(255,255,255,0.16); color: #ffffff; text-decoration: none; }
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -660,13 +668,8 @@
   <header>
     <div class="hero">
       <div>
-        <div class="eyebrow">PV Market Intelligence</div>
+        <nav class="radar-switch" aria-label="Cambia radar"><a class="on" href="./" aria-current="page">Fotovoltaico</a><a href="wind/">Eolico</a></nav>
         <h1>PV Agent Dashboard</h1>
-        <p>
-          Monitoraggio nazionale della pipeline fotovoltaica: progetti operativi, priorità territoriali e radar Terna.
-          <a href="wind/" style="color:inherit;font-weight:700;text-decoration:underline">Radar eolico &rarr;</a>
-          Snapshot: <strong id="snapshotFile"></strong> · Generata: <strong id="generatedAt"></strong>
-        </p>
       </div>
       <div class="hero-stats">
         <div class="hero-chip">

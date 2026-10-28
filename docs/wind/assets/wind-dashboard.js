@@ -1,6 +1,6 @@
 /* Wind Agent Dashboard: the wind census read with the same sections, filters and table as the PV dashboard.
    Data (memory branch doc-intel-state, public): wind/census.json, schede/live_index.json, readiness/wind_index.json.
-   The verified projects (curated radar) are part of the census: badge «Verificato», details in approfondimento.html. */
+   The verified projects (curated radar) are part of the census: badge «Verificato» with stage, contractors and gaps. */
 (function () {
   'use strict';
   const RAW = 'https://raw.githubusercontent.com/EmAnzi3/pv_agent_mvp/doc-intel-state/';
@@ -83,7 +83,13 @@
     if (rd && isReady(r)) out.push(`<span class="sc-epc sc-ready sc-ready-${rd.level === 'Alta' ? 'a' : 'm'}" title="${escapeHtml(rd.phase_label + (rd.window ? ': ' + rd.window : ''))}">Cantiere ${rd.level === 'Alta' ? '●●' : '●'}</span>`);
     if (s && s.epc) out.push(`<span class="sc-epc" title="${s.epc === 'A' ? 'Impresa esecutrice in un atto di cantiere' : 'Impresa esecutrice indicata negli elaborati'}">EPC ${s.epc === 'A' ? '✓' : '?'}</span>`);
     if ((r.ferx || []).length) out.push(`<span class="sc-epc sc-ferx" title="Incentivo FER X assegnato (GSE, ${escapeHtml(r.ferx[0].procedura)}, posizione ${escapeHtml(r.ferx[0].posizione)})">FER X</span>`);
-    if (r.curato) out.push(`<a class="sc-epc sc-ver" href="approfondimento.html" title="Progetto verificato: fase ${escapeHtml(r.curato.fase || '')}, contractor e cantiere nella pagina di approfondimento">Verificato</a>`);
+    if (r.curato) {
+      const c = r.curato, tip = [`Progetto verificato a mano: ${c.fase || ''}`,
+        (c.contractor || []).length ? 'Contractor confermati: ' + c.contractor.join(', ') : 'Contractor esecutivi non ancora confermati',
+        c.prossima_tappa ? 'Prossima tappa: ' + c.prossima_tappa : '',
+        (c.lacune || []).length ? 'Lacune supply chain: ' + c.lacune.join(', ') : ''].filter(Boolean).join(' · ');
+      out.push(`<span class="sc-epc sc-ver" title="${escapeHtml(tip)}">Verificato</span>`);
+    }
     if (r.source === 'gse_ferx' && !r.curato) out.push('<span class="sc-epc sc-lead" title="In graduatoria FER X ma senza procedura VIA trovata: probabile repowering o autorizzazione regionale semplificata">Da individuare</span>');
     if (r.secondaria) out.push('<span class="sc-epc sc-side" title="Modifica, variante o proroga di un progetto: non conteggiata nei totali">Modifica</span>');
     return out.join(' ');
@@ -262,12 +268,13 @@
     if (!list.length) return;
     const cell = v => '"' + text(v).replace(/[\r\n]+/g, ' ').trim().split('"').join('""') + '"';
     const head = ['Fonte', 'Regione', 'Provincia', 'Comune/i', 'Progetto', 'Proponente', 'Tipo', 'Fase', 'Procedura', 'Stato', 'MW', 'Link',
-      'Verificato', 'FER X', 'Vicini al cantiere', 'Fase cantiere', 'Finestra', 'Motivi', 'EPC', 'Scheda'];
+      'Verificato', 'Contractor confermati', 'Prossima tappa', 'Lacune supply chain', 'FER X', 'Vicini al cantiere', 'Fase cantiere', 'Finestra', 'Motivi', 'EPC', 'Scheda'];
     const rows = list.map(r => {
       const rd = ready[r.project_key] || {};
       return [sourceLabel(r), r.region, r.province, r.municipalities, displayTitle(r), r.proponent, isOffshore(r) ? 'Offshore' : 'Onshore',
         phase(r), r.procedure, r.procedure_status, r.power_mw == null ? '' : formatItalianNumber(r.power_mw, 3), r.url,
-        r.curato ? r.curato.nome + ' (' + (r.curato.fase || '') + ')' : '', (r.ferx || []).map(x => '#' + x.posizione).join(' '),
+        r.curato ? r.curato.nome + ' (' + (r.curato.fase || '') + ')' : '', r.curato ? (r.curato.contractor || []).join(', ') : '',
+        r.curato ? r.curato.prossima_tappa || '' : '', r.curato ? (r.curato.lacune || []).join(', ') : '', (r.ferx || []).map(x => '#' + x.posizione).join(' '),
         rd.level || '', rd.phase_label || '', rd.window || '', (rd.reasons || []).join(' | '),
         (schedeIndex[r.project_key] || {}).epc || '', schedeIndex[r.project_key] ? 'sì' : ''];
     });

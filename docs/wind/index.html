@@ -10,7 +10,6 @@
   <style>
     /* wind page additions, same tokens as the PV dashboard */
     .split > *, .grid > * { min-width: 0; }   /* wide tables scroll inside their card, never the page */
-    .hero p a { color: inherit; font-weight: 700; text-decoration: underline; }
     .kpi-grid.signals .kpi { min-height: 108px; }
     .kpi-grid.signals .value { font-size: 26px; }
     .sc-ver { color: #1e3a8a; background: #dbeafe; text-decoration: none; }
@@ -30,14 +29,8 @@
   <header>
     <div class="hero">
       <div>
-        <div class="eyebrow">Wind Market Intelligence</div>
+        <nav class="radar-switch" aria-label="Cambia radar"><a href="../">Fotovoltaico</a><a class="on" href="./" aria-current="page">Eolico</a></nav>
         <h1>Wind Agent Dashboard</h1>
-        <p>
-          Monitoraggio nazionale della pipeline eolica: progetti operativi onshore, priorità territoriali e pipeline offshore.
-          <a href="../">&larr; Radar fotovoltaico</a> ·
-          <a href="approfondimento.html">Progetti verificati: contractor e cantieri &rarr;</a>
-          Censimento: <strong id="censusDate">-</strong> · Fonti: <strong id="heroSources">-</strong>
-        </p>
       </div>
       <div class="hero-stats">
         <div class="hero-chip"><div class="label">Progetti</div><div class="value" id="heroRecords">-</div></div>

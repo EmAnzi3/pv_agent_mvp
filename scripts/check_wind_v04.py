@@ -172,14 +172,11 @@ def main() -> None:
     if invalid_site_types:
         fail(f"site_type canonici non validi: {invalid_site_types}")
 
-    index = (WIND / "approfondimento.html").read_text(encoding="utf-8")
     app = (WIND / "assets" / "app.js").read_text(encoding="utf-8")
     discovery_js = (WIND / "assets" / "discovery-v04.js").read_text(encoding="utf-8")
     engine = (ROOT / "scripts" / "wind_discovery_engine.py").read_text(encoding="utf-8")
 
-    for token in ['id="siteType"', 'value="onshore"', 'value="offshore"', 'id="discoveryRows"', 'assets/discovery-v04.js']:
-        if token not in index:
-            fail(f"UI v0.4 incompleta: manca {token}")
+    # the curated-radar page was retired (October 2026): the dashboard is docs/wind/index.html, built on the census
     if "p.site_type||'onshore'" not in app:
         fail("fallback legacy site_type=onshore mancante")
     if "projects.length!==17" in app:

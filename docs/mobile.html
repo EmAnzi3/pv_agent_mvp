@@ -51,6 +51,11 @@
       letter-spacing: -0.02em;
     }
 
+    .radar-switch { display: inline-flex; gap: 4px; padding: 3px; margin-bottom: 8px; border: 1px solid #cbd5e1;
+      border-radius: 999px; background: #fff; }
+    .radar-switch a { color: #475569; text-decoration: none; font-weight: 800; font-size: 13px; padding: 6px 16px; border-radius: 999px; }
+    .radar-switch a.on { background: #0f766e; color: #fff; }
+
     .sub {
       margin-top: 4px;
       color: var(--muted);
@@ -450,6 +455,7 @@
 
 <body>
   <header>
+    <nav class="radar-switch" aria-label="Cambia radar"><a class="on" href="mobile.html" aria-current="page">Fotovoltaico</a><a href="wind/">Eolico</a></nav>
     <h1>PV Pipeline</h1>
     <div class="sub">Vista mobile rapida <span style="color:#94a3b8">|</span> <a href="index.html?desktop=1">desktop</a></div>
   </header>
