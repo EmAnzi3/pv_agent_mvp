@@ -5,6 +5,7 @@ import hashlib
 import io
 import json
 import re
+import time
 import unicodedata
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
@@ -29,6 +30,12 @@ SOURCE_URL = "https://si-vvi.regione.sicilia.it/viavas/"
 SIVVI_MAPSERVER = "https://map.sitr.regione.sicilia.it/orbs/rest/services/sivvi/procedure_valutazione_ambientale/MapServer"
 COMUNI_LAYER = "https://map.sitr.regione.sicilia.it/gis/rest/services/catasto/cartografia_catastale/MapServer/9"
 GIS_ENRICHMENT_ENABLED = True
+
+# gentle reading of the SI-VVI project pages (see _fetch_detail_info)
+DETAIL_CACHE = Path("reports") / "sicilia_detail_cache.json"
+DETAIL_TTL_DAYS = 14
+DETAIL_PAUSE_S = 4.0
+DETAIL_MAX_PER_RUN = 150
 
 COMMERCIAL_PV_KEYWORDS = [
     "fotovoltaico",
@@ -1028,6 +1035,42 @@ class SiciliaCollector(BaseCollector):
         if not self._is_valid_url(url) or url == CSV_URL:
             return {}
 
+        # SI-VVI blocked our address once (October 2026): project pages are read gently. A page read in the
+        # last DETAIL_TTL_DAYS comes from the cache; new reads wait DETAIL_PAUSE_S seconds and stop after
+        # DETAIL_MAX_PER_RUN pages (the rest is read on the next runs, the CSV data is used meanwhile).
+        cache = self._detail_cache()
+        hit = cache.get(url)
+        fresh = hit and (time.time() - hit.get("t", 0)) < DETAIL_TTL_DAYS * 86400
+        if fresh or SiciliaCollector._detail_reads >= DETAIL_MAX_PER_RUN:
+            return (hit or {}).get("info") or {}
+        if SiciliaCollector._detail_reads:
+            time.sleep(DETAIL_PAUSE_S)
+        SiciliaCollector._detail_reads += 1
+        info = self._fetch_detail_info_network(url, debug_base)
+        if info:
+            cache[url] = {"t": time.time(), "info": info}
+            self._save_detail_cache()
+        return info or (hit or {}).get("info") or {}
+
+    _detail_reads = 0
+    _detail_cache_data: dict | None = None
+
+    def _detail_cache(self) -> dict:
+        if SiciliaCollector._detail_cache_data is None:
+            try:
+                SiciliaCollector._detail_cache_data = json.loads(DETAIL_CACHE.read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                SiciliaCollector._detail_cache_data = {}
+        return SiciliaCollector._detail_cache_data
+
+    def _save_detail_cache(self) -> None:
+        try:
+            DETAIL_CACHE.parent.mkdir(parents=True, exist_ok=True)
+            DETAIL_CACHE.write_text(json.dumps(SiciliaCollector._detail_cache_data, ensure_ascii=False), encoding="utf-8")
+        except OSError:
+            pass
+
+    def _fetch_detail_info_network(self, url: str, debug_base: Path) -> dict:
         try:
             response = self.session.get(
                 url,
