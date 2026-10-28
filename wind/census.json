@@ -1,17 +1,18 @@
 {
 "updated": "2026-10-28",
 "summary": {
-"progetti": 1053,
-"mw": 131262.3,
+"progetti": 1056,
+"mw": 131367.1,
 "procedure_secondarie": 98,
-"mw_onshore": 53209.3,
+"mw_onshore": 53314.2,
 "mw_offshore": 78052.9,
 "da_mase": 1035,
 "da_regioni": 96,
 "regionali_gia_al_mase": 175,
 "regionali_trasmessi_non_vivi": 22,
 "lead_ferx": 20,
-"nel_radar_curato": 47,
+"nel_radar_curato": 51,
+"solo_verificati": 3,
 "con_ferx": 28,
 "archiviati_esclusi": 83,
 "mw_archiviati": 12154.3
@@ -23146,6 +23147,35 @@
 "queue_priority": 2
 },
 {
+"source": "curato",
+"source_group": "curato",
+"source_label": "Verificato",
+"technology": "wind",
+"title": "Serra Palino – Greenfield",
+"proponent": "RWE",
+"region": "Puglia",
+"province": "Foggia",
+"municipalities": "",
+"project_type": "Eolico",
+"secondaria": false,
+"procedure": null,
+"procedure_status": "Construction",
+"procedures": [],
+"power_mw": 47.0,
+"url": "https://it.rwe.com/ufficio-stampa/2025-10-23-rwe-avvia-la-costruzione-di-due-parchi-eolici-onshore-in-italia/",
+"updated_at": "2026-10-28",
+"project_key": "wind:curato_serra-palino",
+"ferx": [],
+"altre_fonti": [],
+"curato": {
+"id": "serra-palino",
+"nome": "Serra Palino",
+"fase": "Construction",
+"stage": "E7"
+},
+"queue_priority": 1
+},
+{
 "source": "mase",
 "source_group": "mase",
 "source_label": "MASE",
@@ -24198,6 +24228,35 @@
 "curato": null,
 "ferx": [],
 "queue_priority": 2
+},
+{
+"source": "curato",
+"source_group": "curato",
+"source_label": "Verificato",
+"technology": "wind",
+"title": "Venusia – Greenfield",
+"proponent": "RWE",
+"region": "Basilicata",
+"province": "Potenza",
+"municipalities": "Venosa, Maschito",
+"project_type": "Eolico",
+"secondaria": false,
+"procedure": null,
+"procedure_status": "Construction",
+"procedures": [],
+"power_mw": 45.0,
+"url": "https://it.rwe.com/ufficio-stampa/2025-10-23-rwe-avvia-la-costruzione-di-due-parchi-eolici-onshore-in-italia/",
+"updated_at": "2026-10-28",
+"project_key": "wind:curato_venusia",
+"ferx": [],
+"altre_fonti": [],
+"curato": {
+"id": "venusia",
+"nome": "Venusia",
+"fase": "Construction",
+"stage": "E7"
+},
+"queue_priority": 1
 },
 {
 "source": "mase",
@@ -34965,6 +35024,35 @@
 "queue_priority": 4
 },
 {
+"source": "curato",
+"source_group": "curato",
+"source_label": "Verificato",
+"technology": "wind",
+"title": "Tarsia Ovest – Greenfield / variante",
+"proponent": "Eni Plenitude Renewables Italy",
+"region": "Calabria",
+"province": "Cosenza",
+"municipalities": "Tarsia",
+"project_type": "Eolico",
+"secondaria": false,
+"procedure": null,
+"procedure_status": "Construction",
+"procedures": [],
+"power_mw": 12.9,
+"url": "https://corporate.eniplenitude.com/it/media/comunicati-stampa/energie-rinnovabili/27-11-2025-Plenitude-avvia-la-costruzione-di-un-parco-eolico-in-Calabria-da-13-MW",
+"updated_at": "2026-10-28",
+"project_key": "wind:curato_tarsia-ovest",
+"ferx": [],
+"altre_fonti": [],
+"curato": {
+"id": "tarsia-ovest",
+"nome": "Tarsia Ovest",
+"fase": "Construction",
+"stage": "E7"
+},
+"queue_priority": 1
+},
+{
 "source": "sistema_puglia_energia",
 "source_group": "regione",
 "source_label": "Regione Puglia (Sistema Puglia)",
@@ -36009,7 +36097,12 @@
 "date_presented": "18/04/2019",
 "updated_at": "2026-10-28",
 "project_key": "wind:mase_7059",
-"curato": null,
+"curato": {
+"id": "carlentini",
+"nome": "Carlentini",
+"fase": "Construction",
+"stage": "E7"
+},
 "ferx": [
 {
 "posizione": 23,
@@ -36220,7 +36313,12 @@
 "date_presented": "28/08/2024",
 "updated_at": "2026-10-28",
 "project_key": "wind:mase_11244",
-"curato": null,
+"curato": {
+"id": "alia-sclafani",
+"nome": "Alia-Sclafani",
+"fase": "Construction",
+"stage": "E7"
+},
 "ferx": [],
 "queue_priority": 0
 },
@@ -36673,7 +36771,12 @@
 "date_presented": "27/02/2019",
 "updated_at": "2026-10-28",
 "project_key": "wind:mase_7050",
-"curato": null,
+"curato": {
+"id": "tricarico",
+"nome": "Tricarico",
+"fase": "Procurement",
+"stage": "E6"
+},
 "ferx": [],
 "queue_priority": 0
 },
@@ -36704,7 +36807,12 @@
 "date_presented": "27/02/2019",
 "updated_at": "2026-10-28",
 "project_key": "wind:mase_8134",
-"curato": null,
+"curato": {
+"id": "tricarico",
+"nome": "Tricarico",
+"fase": "Procurement",
+"stage": "E6"
+},
 "ferx": [],
 "queue_priority": 0
 },
