@@ -1,8 +1,8 @@
 # Radar eolico
 
-`index.html` è la dashboard eolica, costruita come quella fotovoltaica sul censimento (`wind/census.json` sul ramo `doc-intel-state`). `approfondimento.html` è il radar curato dei progetti verificati (contractor, cantieri, calendario), descritto sotto.
+`index.html` è la dashboard eolica, costruita come quella fotovoltaica sul censimento (`wind/census.json` sul ramo `doc-intel-state`). I 51 progetti del radar curato descritto sotto sono i «Verificati» della dashboard (fase, contractor confermati, prossima tappa, lacune); la vecchia pagina dedicata è stata ritirata.
 
-## Radar curato (approfondimento)
+## Radar curato (progetti verificati)
 
 MVP operativo del radar eolico nazionale, isolato in `docs/wind/` e costruito per leggere la pipeline dal punto di vista commerciale e della supply chain esecutiva.
 

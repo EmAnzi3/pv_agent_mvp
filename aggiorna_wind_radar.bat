@@ -84,7 +84,6 @@ for %%S in (
   scripts\check_wind_v06_commercial_c.py
   scripts\check_wind_v06_commercial_d.py
   scripts\check_wind_v06_institutional.py
-  scripts\check_wind_v06_map.py
   scripts\check_wind_v06_mase_normalization.py
   scripts\check_wind_v06_network.py
 ) do (

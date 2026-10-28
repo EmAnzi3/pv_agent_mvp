@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-28 — Intestazioni delle dashboard FV ed eolica asciugate: al posto del testo descrittivo un selettore ben visibile «Fotovoltaico | Eolico» uguale sulle due pagine. Ritirata la pagina del vecchio radar curato (`approfondimento.html`, ferma a settembre): fase, contractor confermati, prossima tappa e lacune della supply chain dei 51 progetti verificati passano nel censimento (tooltip del segnale «Verificato» ed export CSV).
+
 - 2026-10-28 — Pagina eolica rifatta con la lingua della dashboard FV: stesso stile e stesse sezioni (Executive overview, Priorità territoriale, Letture operative, Top progetti, Pipeline completa con gli stessi filtri, scheda ed esportazione CSV). Un solo elenco: il censimento (MASE, Regioni, GSE FER X) con i 51 progetti verificati come segnale «Verificato» (i 3 senza procedura pubblica aggiunti dal radar verificato); onshore come pipeline operativa, offshore come dato separato. La fase dei progetti verificati (es. cantiere in corso) entra in «vicini al cantiere». Il vecchio radar curato (mappa, calendario, contractor) resta come pagina di approfondimento `approfondimento.html`; eliminate le sezioni duplicate e la tabella FER X che contraddiceva il censimento.
 
 - 2026-10-28 — Primo giro locale del censimento eolico: Sistema Puglia prendeva per eolica ogni pagina (il menu del sito cita l'eolico); ora serve un atto che descriva un impianto eolico con potenza e luogo, e le pagine già lette che non lo sono non vengono riscaricate. Validatore `check_wind_v06_agents.py` su Windows: le connessioni SQLite del motore eolico ora vengono chiuse (il file temporaneo restava bloccato).

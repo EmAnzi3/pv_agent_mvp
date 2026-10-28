@@ -43,7 +43,6 @@ jobs:
             scripts/check_wind_v06_commercial.py
             scripts/check_wind_v06_commercial_c.py
             scripts/check_wind_v06_commercial_d.py
-            scripts/check_wind_v06_map.py
             scripts/check_wind_v07_execution_coverage.py
             scripts/run_wind_agents.py
             scripts/update_wind_radar_local.py
@@ -136,8 +135,6 @@ jobs:
       - name: Additive commercial enrichment d v0.6 validation
         run: python scripts/check_wind_v06_commercial_d.py
 
-      - name: Province map v0.6 validation
-        run: python scripts/check_wind_v06_map.py
 
       - name: Execution coverage v0.7 validation
         run: python scripts/check_wind_v07_execution_coverage.py
