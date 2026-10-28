@@ -37,6 +37,19 @@ class News(unittest.TestCase):
         self.assertEqual(got, {"k1": "comune + MW"})
 
 
+
+class WindNews(unittest.TestCase):
+    def test_wind_article_matches_wind_census_only(self):
+        from doc_intel.news import match, relevant, WIND, PV
+        item = {"title": "Vestas fornirà le turbine del parco eolico di Castelpagano",
+                "text": "Cogein ha affidato a Idoka la costruzione del parco eolico da 39,2 MW a Castelpagano: il cantiere partirà a gennaio."}
+        wind_rec = {"project_key": "wind:mase_7970", "municipalities": "CASTELPAGANO, COLLE SANNITA", "power_mw": 39.2,
+                    "proponent": "Cogein Castelpagano S.r.l."}
+        pv_rec = {"project_key": "pv:1", "municipalities": "Castelpagano", "power_mw": 39.2, "proponent": "Altro"}
+        self.assertTrue(relevant(item))
+        self.assertEqual([r["project_key"] for r, _ in match(item, [wind_rec], WIND)], ["wind:mase_7970"])
+        self.assertEqual(match(item, [pv_rec], PV), [])          # a wind article never lands on a PV project
+
 if __name__ == "__main__":
     unittest.main()
 

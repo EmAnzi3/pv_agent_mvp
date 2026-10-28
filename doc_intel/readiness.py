@@ -184,6 +184,8 @@ def run_wind(memory: str) -> dict:
         return {"progetti_valutati": 0}
     records = json.loads(census.read_text(encoding="utf-8")).get("records", [])
     live = json.loads((mem / "schede" / "live_index.json").read_text(encoding="utf-8"))
+    wn = mem / "news" / "wind_matches.json"
+    news = (json.loads(wn.read_text(encoding="utf-8")).get("projects") or {}) if wn.exists() else {}
     out, counts = {}, {}
     for r in records:
         key = r.get("project_key")
@@ -193,7 +195,7 @@ def run_wind(memory: str) -> dict:
                 card = json.loads((mem / "schede" / live[key]["file"]).read_text(encoding="utf-8"))
             except (OSError, ValueError):
                 card = None
-        res = classify(card, r.get("ferx") or None, None, record=r)
+        res = classify(card, r.get("ferx") or None, news.get(key), record=r)
         res = _verified_stage(res, r.get("curato"))
         if res:
             out[key] = res

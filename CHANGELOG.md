@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-28 — Notizie di stampa anche per l'eolico: stessi giornali e stesse regole (comune + MW o proponente nello stesso passaggio con parole di cantiere/contratto), con parole e imprese dell'eolico (Vestas, Siemens Gamesa, Nordex, Idoka, PLC System, Sarens...); abbinate solo al censimento eolico (`news/wind_matches.json`). Etichetta «Stampa», filtro e sezione nella scheda della pagina eolica; contano in «vicini al cantiere».
+
 - 2026-10-28 — Intestazioni delle dashboard FV ed eolica asciugate: al posto del testo descrittivo un selettore ben visibile «Fotovoltaico | Eolico» uguale sulle due pagine. Ritirata la pagina del vecchio radar curato (`approfondimento.html`, ferma a settembre): fase, contractor confermati, prossima tappa e lacune della supply chain dei 51 progetti verificati passano nel censimento (tooltip del segnale «Verificato» ed export CSV).
 
 - 2026-10-28 — Pagina eolica rifatta con la lingua della dashboard FV: stesso stile e stesse sezioni (Executive overview, Priorità territoriale, Letture operative, Top progetti, Pipeline completa con gli stessi filtri, scheda ed esportazione CSV). Un solo elenco: il censimento (MASE, Regioni, GSE FER X) con i 51 progetti verificati come segnale «Verificato» (i 3 senza procedura pubblica aggiunti dal radar verificato); onshore come pipeline operativa, offshore come dato separato. La fase dei progetti verificati (es. cantiere in corso) entra in «vicini al cantiere». Il vecchio radar curato (mappa, calendario, contractor) resta come pagina di approfondimento `approfondimento.html`; eliminate le sezioni duplicate e la tabella FER X che contraddiceva il censimento.
