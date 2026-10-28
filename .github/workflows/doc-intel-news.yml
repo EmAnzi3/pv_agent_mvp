@@ -1,6 +1,6 @@
 name: Doc Intel news (sector press, level C)
-# Daily: sector press RSS (pv-magazine.it, QualEnergia, Rinnovabili.it, SolareB2B) matched to radar projects.
-# Saves news/items.json and news/matches.json on the memory branch. On a pull request: dry run only.
+# Daily: sector press RSS (pv-magazine.it, QualEnergia, Rinnovabili.it, SolareB2B) matched to the PV radar and
+# to the wind census. Saves news/items.json, news/matches.json and news/wind_matches.json on the memory branch. On a pull request: dry run only.
 on:
   schedule:
     - cron: '20 5 * * *'
@@ -38,7 +38,7 @@ jobs:
       - name: Read the press and match
         env:
           BACKFILL: ${{ inputs.backfill_pages || (github.event_name == 'pull_request' && '1') || '0' }}
-        run: python -m doc_intel news --data docs/data.json --memory .mem --backfill-pages "$BACKFILL"
+        run: python -m doc_intel news --data docs/data.json --memory .mem --wind-data .mem/wind/census.json --backfill-pages "$BACKFILL"
       - name: Save on the memory branch
         if: github.event_name != 'pull_request'
         run: |

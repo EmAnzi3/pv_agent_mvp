@@ -102,6 +102,7 @@ def main(argv: list[str] | None = None) -> int:
     nw.add_argument("--memory", required=True)
     nw.add_argument("--backfill-pages", type=int, default=0, help="also read N older feed pages (first run)")
     nw.add_argument("--max-articles", type=int, default=40)
+    nw.add_argument("--wind-data", default=None, help="wind census (wind/census.json on the memory branch)")
     rd = sub.add_parser("readiness", help="'vicini al cantiere': phase, score and reasons per radar project")
     rd.add_argument("--data", default="docs/data.json")
     rd.add_argument("--memory", required=True)
@@ -275,8 +276,9 @@ def main(argv: list[str] | None = None) -> int:
 
     if a.cmd == "news":
         from .news import run as news_run
-        st = news_run(a.data, a.memory, backfill_pages=a.backfill_pages, max_articles=a.max_articles)
-        print(f"::notice title=news::{st['new_relevant']} nuovi articoli rilevanti; {st['projects_matched']} progetti con notizie compatibili; feed {st['feeds']}")
+        st = news_run(a.data, a.memory, backfill_pages=a.backfill_pages, max_articles=a.max_articles, wind_json=a.wind_data)
+        print(f"::notice title=news::{st['new_relevant']} nuovi articoli rilevanti; {st['projects_matched']} progetti FV e "
+              f"{st.get('wind_projects_matched', 0)} eolici con notizie compatibili; feed {st['feeds']}")
         return 0
 
     if a.cmd == "explore":

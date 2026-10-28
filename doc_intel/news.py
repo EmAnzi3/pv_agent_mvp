@@ -12,8 +12,8 @@ A municipality alone or MW alone never makes a match; round-ups (VIA outcomes, r
 listings are skipped. Matches are information to verify, never a
 confirmed EPC (levels A/B come only from the project documents).
 
-Memory branch: news/items.json (relevant articles, 400 days) and news/matches.json
-(project_key -> articles). Articles are read politely (one request every 2 s, a cap per run).
+Memory branch: news/items.json (relevant articles, 400 days), news/matches.json (PV radar) and
+news/wind_matches.json (wind census): project_key -> articles. Articles are read politely (one request every 2 s, a cap per run).
 """
 from __future__ import annotations
 
@@ -37,6 +37,9 @@ SOURCES = [
 ]
 UA = {"User-Agent": "Mozilla/5.0 (PV Agent news reader; contact via GitHub EmAnzi3/pv_agent_mvp)"}
 PV = re.compile(r"(?i)fotovoltaic|agrivoltaic|agrovoltaic|agri-?fotovoltaic|solar[ei]?\b|\bFV\b|\bPV\b|MWp")
+# wind press (October 2026): same rules, wind wording, matched to the wind census
+WIND = re.compile(r"(?i)\beolic[oaih]|aer[e]?ogenerator|parco\s+eolico|wind\s+farm|repowering\s+eolic|\bWTG\b|turbin[ae]\s+eolic")
+TECH = re.compile(PV.pattern + "|" + WIND.pattern[4:])
 BUILD = re.compile(r"(?i)\bEPC\b|commess|contratt|aggiudic|appalt|costruzion|cantier|avvio\s+(?:dei\s+)?lavori|"
                    r"inizio\s+(?:dei\s+)?lavori|realizzer|realizzazione|balance\s+of\s+plant|\bBoP\b|affidat|"
                    r"entrat\w*\s+in\s+esercizio|allacciat|inaugur|connessione\s+alla\s+rete|financial\s+close|"
@@ -50,7 +53,10 @@ KNOWN_BUILDERS = ["ESI", "ESPE", "Comal", "Innovatec", "Solarig", "Circet", "Alt
                   "Aiem Group", "Panorama", "Impresa Gema", "Geosecure", "BayWa r.e.", "Elmya", "Gransolar", "GRS",
                   "Prodiel", "Gonvarri", "Eiffage", "Sirti", "Ansaldo Energia", "Sun Ballast", "Convert Italia",
                   "Enertronica", "Sicilsaldo", "Renco", "Siram", "Building Energy", "Ecotech", "Emeren",
-                  "Sonnedix", "European Energy", "Ergycapital"]
+                  "Sonnedix", "European Energy", "Ergycapital",
+                  # wind: turbine makers, BoP and heavy-lift contractors active in Italy
+                  "Vestas", "Siemens Gamesa", "Nordex", "Enercon", "GE Vernova", "Goldwind", "Idoka", "PLC System",
+                  "Sarens", "Mammoet", "Fagioli", "Tozzi Green", "Ventura", "Eurowind"]
 KEEP_DAYS = 400
 
 
@@ -85,7 +91,7 @@ def clean_html(s: str) -> str:
 
 def relevant(item: dict) -> bool:
     t = f"{item.get('title', '')} {item.get('text', '')}"
-    return bool(PV.search(t) and BUILD.search(t))
+    return bool(TECH.search(t) and BUILD.search(t))
 
 
 def mw_values(text: str) -> list[float]:
@@ -153,14 +159,15 @@ def passages(text: str) -> list[str]:
     return [" ".join(sents[i:i + 2]) for i in range(len(sents))] or [text]
 
 
-def match(item: dict, records: list[dict]) -> list[tuple[dict, str]]:
+def match(item: dict, records: list[dict], tech: re.Pattern = PV) -> list[tuple[dict, str]]:
     """Records named in a construction passage of the article: municipality + MW (or + proponent)
-    in the same passage as construction/contract wording. Round-ups and job listings are skipped."""
+    in the same passage as construction/contract wording and the technology of the records (PV or wind).
+    Round-ups and job listings are skipped."""
     if NOT_NEWS.search(item.get("title") or ""):
         return []
     found: dict[str, tuple[dict, str, float]] = {}
     for psg in passages(f"{item['title']}. {item['text']}"):
-        if not (SITE_WORDS.search(psg) and PV.search(psg)):
+        if not (SITE_WORDS.search(psg) and tech.search(psg)):
             continue
         mws, comuni = mw_values(psg), {place_key(c) for c in municipalities(psg)}
         if not comuni:
@@ -188,7 +195,8 @@ def match(item: dict, records: list[dict]) -> list[tuple[dict, str]]:
 
 
 def run(data_json: str, memory: str, get: Callable[[str], Any] | None = None, backfill_pages: int = 0,
-        max_articles: int = 40, sleep: Callable[[float], None] = time.sleep, log: Callable[[str], None] = print) -> dict:
+        max_articles: int = 40, sleep: Callable[[float], None] = time.sleep, log: Callable[[str], None] = print,
+        wind_json: str | None = None) -> dict:
     import requests
     get = get or (lambda u: requests.get(u, headers=UA, timeout=30))
     mem = Path(memory) / "news"
@@ -240,16 +248,23 @@ def run(data_json: str, memory: str, get: Callable[[str], Any] | None = None, ba
     items = [i for i in known.values() if not i.get("date") or i["date"] >= cutoff]
     items.sort(key=lambda i: i.get("date") or "", reverse=True)
     items_path.write_text(json.dumps(items, ensure_ascii=False, indent=0), encoding="utf-8")
-    records = json.loads(Path(data_json).read_text(encoding="utf-8-sig")).get("records", [])
-    matches: dict[str, list] = {}
-    for it in items:
-        for r, basis in match(it, records):
-            matches.setdefault(r["project_key"], []).append({
-                "title": it["title"], "link": it["link"], "date": it.get("date"), "source": it.get("source"),
-                "basis": basis, "builders": it.get("builders") or [], "mw": it.get("mw") or []})
-    matches_path.write_text(json.dumps({"updated": datetime.now(timezone.utc).date().isoformat(),
-                                        "level": "C", "note": "notizia compatibile con il progetto: da verificare",
-                                        "projects": matches}, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+    def write(records: list[dict], tech: re.Pattern, path: Path) -> dict:
+        matches: dict[str, list] = {}
+        for it in items:
+            for r, basis in match(it, records, tech):
+                matches.setdefault(r["project_key"], []).append({
+                    "title": it["title"], "link": it["link"], "date": it.get("date"), "source": it.get("source"),
+                    "basis": basis, "builders": it.get("builders") or [], "mw": it.get("mw") or []})
+        path.write_text(json.dumps({"updated": datetime.now(timezone.utc).date().isoformat(),
+                                    "level": "C", "note": "notizia compatibile con il progetto: da verificare",
+                                    "projects": matches}, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+        return matches
+
+    matches = write(json.loads(Path(data_json).read_text(encoding="utf-8-sig")).get("records", []), PV, matches_path)
+    if wind_json and Path(wind_json).exists():
+        wind = write(json.loads(Path(wind_json).read_text(encoding="utf-8")).get("records", []), WIND,
+                     mem / "wind_matches.json")
+        stats["wind_projects_matched"] = len(wind)
     stats.update({"items": len(items), "projects_matched": len(matches)})
     log(f"[news] {json.dumps(stats, ensure_ascii=False)}")
     return stats

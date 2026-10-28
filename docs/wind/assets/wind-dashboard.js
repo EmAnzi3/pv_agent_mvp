@@ -82,6 +82,8 @@
     const rd = ready[r.project_key];
     if (rd && isReady(r)) out.push(`<span class="sc-epc sc-ready sc-ready-${rd.level === 'Alta' ? 'a' : 'm'}" title="${escapeHtml(rd.phase_label + (rd.window ? ': ' + rd.window : ''))}">Cantiere ${rd.level === 'Alta' ? '●●' : '●'}</span>`);
     if (s && s.epc) out.push(`<span class="sc-epc" title="${s.epc === 'A' ? 'Impresa esecutrice in un atto di cantiere' : 'Impresa esecutrice indicata negli elaborati'}">EPC ${s.epc === 'A' ? '✓' : '?'}</span>`);
+    const nw = (window.PVNews || {})[r.project_key];
+    if (nw) out.push(`<span class="sc-epc sc-press" title="Notizie di stampa compatibili con il progetto: da verificare">Stampa ${nw.length}</span>`);
     if ((r.ferx || []).length) out.push(`<span class="sc-epc sc-ferx" title="Incentivo FER X assegnato (GSE, ${escapeHtml(r.ferx[0].procedura)}, posizione ${escapeHtml(r.ferx[0].posizione)})">FER X</span>`);
     if (r.curato) {
       const c = r.curato, tip = [`Progetto verificato a mano: ${c.fase || ''}`,
@@ -232,7 +234,9 @@
     if (kind === 'cantiere' && !isReady(r)) return false;
     if (kind === 'verified' && !r.curato) return false;
     if (kind === 'lead' && r.source !== 'gse_ferx') return false;
-    if (epc) {
+    if (epc === 'news') {
+      if (!(window.PVNews || {})[r.project_key]) return false;
+    } else if (epc) {
       const e = (schedeIndex[r.project_key] || {}).epc;
       if (epc === 'any' ? !e : e !== epc) return false;
     }
@@ -295,8 +299,10 @@
     if (!b || !window.PVScheda) return;
     getJson(RAW + 'schede/' + encodeURIComponent(b.dataset.scheda)).then(c => { if (c && c.project_key) window.PVScheda.open(c); });
   });
-  Promise.all([getJson(RAW + 'wind/census.json'), getJson(RAW + 'schede/live_index.json'), getJson(RAW + 'readiness/wind_index.json')])
-    .then(([census, idx, rd]) => {
+  Promise.all([getJson(RAW + 'wind/census.json'), getJson(RAW + 'schede/live_index.json'), getJson(RAW + 'readiness/wind_index.json'),
+               getJson(RAW + 'news/wind_matches.json')])
+    .then(([census, idx, rd, nw]) => {
+      window.PVNews = (nw && nw.projects) || {};
       records = census.records || [];
       summary = census.summary || {};
       updated = census.updated || '';
