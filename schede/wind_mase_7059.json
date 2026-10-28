@@ -1,0 +1,816 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7059",
+ "title": "Parco eolico localizzato nel Comune di Carlentini (SR) con cavidotto interrato e sottostazione nel Comune di Sortino (SR). Progetto di smantellamento di 38 dei 57 aerogeneratori esistenti ed installazione di 18 nuovi aerogeneratori di potenza pari a 5,5 MW",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7059",
+ "source": "mase",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "5,5 MW",
+   "sub": "Dagli elaborati (32 occorrenze); il titolo non indica la potenza; altri valori: 0,85 MW, 4,2 MW, 4,5 MW",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1365081",
+    "page": 9,
+    "document": "Integrazioni del 04/02/2026 - Piano utilizzo terre e rocce da scavo",
+    "excerpt": "aerogeneratori dei 57 in essere. Gli aerogeneratori dismessi verranno sostituiti con n. 18 nuovi aerogeneratori, distinti dalla sigla R-CA come è possibile vedere nell’immagine seguente, della potenza massima di 5,5 MW p"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "57",
+   "status": "da verificare",
+   "sub": "0,10 MW ciascuno · altezza mozzo 55 m · diametro rotore 158 m · Valore più ricorrente negli elaborati; altri valori: 19 (52), 10 (32), 38 (32)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1343174",
+    "page": 3,
+    "document": "DOCUMENTAZIONE FOTOGRAFICA ANTE OPERAM-CARLENTINI1",
+    "excerpt": "Comune di Sortino (SR) e nel Comune di Carlentini (SR). Il progetto prevede lo smantellamento di 38 dei 57 aerogeneratori esistenti (da 850 kW) e l’installazione di 18 nuovi aerogeneratori di potenza pari a 4,5 MW”."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "SR",
+  "comuni": [
+   "Sortino",
+   "Carlentini"
+  ],
+  "coordinate": {
+   "lat": 37.1843,
+   "lon": 14.96206,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (47 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1343182",
+    "page": 1,
+    "document": "LAY_ GEN_ COORD_WGS 84 UTM 33N",
+    "excerpt": "N WGS84 : LAT. 37°10'56.28\"N LONG. 14°57'34.90\"E SS Elettrica Utente CARLENTINI"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.18430,14.96206",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "ERG Wind Energy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ergwindenergy@legalmail.it",
+     "occurrences": 28,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1343173",
+      "page": 1,
+      "document": "0_ELENCO ELABORATI",
+      "excerpt": "Sede Legale: Torre WTC Via De Marini n. 1 – 16149 - Genova (GE) - Italia Tel. +39 010 24011 PEC: ergwindenergy@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "01024011",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1343162",
+      "page": 19,
+      "document": "RELAZIONE TECNICA ESPLICATIVA-OTTEMPERANZA",
+      "excerpt": "16149 - Genova (GE) - Italia Tel. +39 010 24011 PEC:"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1343177",
+    "page": 4,
+    "document": "RT Specialistica- CAR1",
+    "excerpt": "Per conto della società proponente, ERG Wind Energy S.r.l., società soggetta all’attività di direzione e coordinamento di ERG S.P.A., dedicata allo sviluppo, realizzazione e gestione per la produzione di energia elettric"
+   }
+  },
+  {
+   "name": "ERG Wind Sicilia 3 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02269630642",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via De Marini 1 16149 Genova Ge",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ergwindsicilia3@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/361309",
+      "page": 3,
+      "document": "Richiesta integrazioni del 18/07/2019",
+      "excerpt": "ERG Wind Sicilia 3 S.r.l. Ergwindsicilia3@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7059"
+   }
+  },
+  {
+   "name": "Antex Group S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@antexgroup.it",
+     "occurrences": 62,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1343173",
+      "page": 1,
+      "document": "0_ELENCO ELABORATI",
+      "excerpt": "96100 Siracusa (SR) Tel. 0931.1663409 Web: www.antexgroup.it e-mail: info@antexgroup.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1343177",
+    "page": 4,
+    "document": "RT Specialistica- CAR1",
+    "excerpt": "Le attività di progettazione esecutiva sono state sviluppate dalla società di ingegneria Antex Group Srl, società che fornisce servizi globali di consulenza e management ad Aziende private ed Enti pubblici che intendono "
+   }
+  },
+  {
+   "name": "Utip S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/352606",
+    "page": 9,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "Le attività di progettazione definitiva sono state sviluppate dalla società di ingegneria UTIP Srl, con la consulenza specialistica della Società ANTEX Group Srl."
+   }
+  },
+  {
+   "name": "Ing. Mariano Galbo",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1343218",
+    "page": 1,
+    "document": "progetto delle fondazioni",
+    "excerpt": "DIRETTORE DEI LAVORI: (Ing. Mariano Galbo)"
+   }
+  },
+  {
+   "name": "Dott. Geol. Nastasi Milko",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1343176",
+    "page": 1,
+    "document": "RELAZIONE IDRAULICA OPERE DI DRENAGGIO",
+    "excerpt": "Geologo:"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Ecologica Buffa S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02338030816",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Segesta N.190 91014 Castellammare Del Golfo Tp",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ecologicabuffasrl@legalmail.it",
+     "occurrences": 684,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1343164",
+      "page": 156,
+      "document": "PIANO TERS",
+      "excerpt": "Tel.: 0924/35560; fax: 0924/32284 — e-mail: ecologicabuffasrl@legalmail.it - ecologica.buffa@tiscali.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ecologica.buffa@tiscali.it",
+     "occurrences": 316,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1343164",
+      "page": 156,
+      "document": "PIANO TERS",
+      "excerpt": "Tel.: 0924/35560; fax: 0924/32284 — e-mail: ecologicabuffasrl@legalmail.it - ecologica.buffa@tiscali.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ecologicabuffasri@legaimail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1343164",
+      "page": 214,
+      "document": "PIANO TERS",
+      "excerpt": "Ecologica Buffa S.R.L., via Pompei n. 8, palazzina D — 91014 Castellammare del Golfo (TP) tel.: 0924/35560 — fax: 0924/32284 — cell.: 335/7846069 — e-mail: ecologicabuffasri@legaimail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ecologicabuffasrl@iegalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1343164",
+      "page": 368,
+      "document": "PIANO TERS",
+      "excerpt": "Tel.: 0924/35560; fax: 0924/32284 — e-mail: ecologicabuffasrl@iegalmail.it — ecologica.buffa@tiscali.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "092435560",
+     "occurrences": 771,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1343164",
+      "page": 156,
+      "document": "PIANO TERS",
+      "excerpt": "Ecologica Buffa S.R.L., via Pompei n. 8, palazzina D — 91014 Castellammare del Golfo (TP) tel.: 0924/35560 — fax: 0924/32284 — cell.: 335/7846069 — e-mail: ecologicabuffasri@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3357846069",
+     "occurrences": 771,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1343164",
+      "page": 156,
+      "document": "PIANO TERS",
+      "excerpt": "Ecologica Buffa S.R.L., via Pompei n. 8, palazzina D — 91014 Castellammare del Golfo (TP) tel.: 0924/35560 — fax: 0924/32284 — cell.: 335/7846069 — e-mail: ecologicabuffasri@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ecosystem Care S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ecosystemcaresrl@gigapec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1365082",
+      "page": 52,
+      "document": "Integrazioni del 04/02/2026 - PIANO DI MONITORAGGIO AMBIENTALE",
+      "excerpt": "01866200767 – R.I CCIAA di POTENZA – R.E.A. n° 140356 www.ecosystemcare.it – mail: info@ecosystemcare.it – PEC: ecosystemcaresrl@gigapec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@ecosystemcare.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1365082",
+      "page": 52,
+      "document": "Integrazioni del 04/02/2026 - PIANO DI MONITORAGGIO AMBIENTALE",
+      "excerpt": "01866200767 – R.I CCIAA di POTENZA – R.E.A. n° 140356 www.ecosystemcare.it – mail: info@ecosystemcare.it – PEC: ecosystemcaresrl@gigapec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "ERG Wind Nergy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ergwind4@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1388840",
+      "page": 1,
+      "document": "Parere dell'ARPA Sicilia - UOC - Valutazioni e pareri ambientali in data 7/05/2026",
+      "excerpt": "ERG WIND NERGY SRL ergwind4@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 02/01/2020, ma l'iter è proseguito; ultimo documento o atto del 13/05/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "02/01/2020 → 20/05/2021",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/352617",
+     "page": 8,
+     "document": "Cronoprogramma lavori",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "17 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "© Progettazione Esecutiva",
+    "start": 0.0,
+    "end": 1.97,
+    "level": 0,
+    "dates": [
+     "2020-01-02",
+     "2020-03-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "è Autorizzazioni {Genio Civile, Comune)",
+    "start": 1.97,
+    "end": 3.45,
+    "level": 0,
+    "dates": [
+     "2020-03-02",
+     "2020-04-15"
+    ],
+    "summary": false
+   },
+   {
+    "name": "@ ADEGUAMENTO VIABILITA' E Allestimento Cantiere",
+    "start": 1.97,
+    "end": 8.19,
+    "level": 0,
+    "dates": [
+     "2020-03-02",
+     "2020-09-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "® da Carlentini",
+    "start": 2.76,
+    "end": 8.19,
+    "level": 0,
+    "dates": [
+     "2020-03-26",
+     "2020-09-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "+e. da Sortino",
+    "start": 2.76,
+    "end": 6.32,
+    "level": 0,
+    "dates": [
+     "2020-03-26",
+     "2020-07-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "® Allestimento area di cantirere",
+    "start": 1.97,
+    "end": 2.47,
+    "level": 0,
+    "dates": [
+     "2020-03-02",
+     "2020-03-16"
+    ],
+    "summary": false
+   },
+   {
+    "name": "i. Viabilità interna e piazzole di supporto dismissione",
+    "start": 2.47,
+    "end": 7.2,
+    "level": 0,
+    "dates": [
+     "2020-03-17",
+     "2020-08-07"
+    ],
+    "summary": false
+   },
+   {
+    "name": "«a DISMISSICINE PARCO EOLICO ESISTENTE",
+    "start": 2.47,
+    "end": 4.01,
+    "level": 0,
+    "dates": [
+     "2020-03-17",
+     "2020-05-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "«& Smontaggio Mavicella n.38",
+    "start": 2.47,
+    "end": 3.72,
+    "level": 0,
+    "dates": [
+     "2020-03-17",
+     "2020-04-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "& Smontaggio Torre n.38",
+    "start": 2.5,
+    "end": 3.75,
+    "level": 0,
+    "dates": [
+     "2020-03-18",
+     "2020-04-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "“6 Rimozione Fondazione e Piazzola n.38",
+    "start": 2.4,
+    "end": 5.66,
+    "level": 0,
+    "dates": [
+     "2020-03-15",
+     "2020-06-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "® Rimozione Cavi Linea 1-4-5",
+    "start": 2.47,
+    "end": 8.06,
+    "level": 0,
+    "dates": [
+     "2020-03-17",
+     "2020-09-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Ee = POTENZIAMENTO PARCO EGILICO CARLENTINI",
+    "start": 3.42,
+    "end": 16.45,
+    "level": 0,
+    "dates": [
+     "2020-04-15",
+     "2021-05-15"
+    ],
+    "summary": false
+   },
+   {
+    "name": "EÉ}-e PROGETTO DI REPOWERING",
+    "start": 3.45,
+    "end": 16.61,
+    "level": 0,
+    "dates": [
+     "2020-04-16",
+     "2021-05-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "© Nuova SSEU - SORTING",
+    "start": 3.45,
+    "end": 6.41,
+    "level": 0,
+    "dates": [
+     "2020-04-16",
+     "2020-07-14"
+    ],
+    "summary": false
+   },
+   {
+    "name": "e Cavidott E Cavi",
+    "start": 3.45,
+    "end": 11.64,
+    "level": 0,
+    "dates": [
+     "2020-04-16",
+     "2020-12-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "®. Fondazione e Piazzola",
+    "start": 6.32,
+    "end": 9.93,
+    "level": 0,
+    "dates": [
+     "2020-07-12",
+     "2020-10-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "® Trasporto Aereogeneratori e Scarico in sito",
+    "start": 6.32,
+    "end": 7.8,
+    "level": 0,
+    "dates": [
+     "2020-07-12",
+     "2020-08-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "® AEREGENERATORI Crinale n.1",
+    "start": 8.19,
+    "end": 11.18,
+    "level": 0,
+    "dates": [
+     "2020-09-07",
+     "2020-12-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "® Traspoero Aereogeneratori e scarico in sito",
+    "start": 8.19,
+    "end": 9.34,
+    "level": 0,
+    "dates": [
+     "2020-09-07",
+     "2020-10-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "® Montaggio AEFREOGEMERATORI n.7",
+    "start": 10.49,
+    "end": 11.18,
+    "level": 0,
+    "dates": [
+     "2020-11-16",
+     "2020-12-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Messa In Funzione",
+    "start": 11.64,
+    "end": 15.59,
+    "level": 0,
+    "dates": [
+     "2020-12-21",
+     "2021-04-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "i ei Collaudo - Entrata in esercizio",
+    "start": 15.59,
+    "end": 16.58,
+    "level": 0,
+    "dates": [
+     "2021-04-20",
+     "2021-05-19"
+    ],
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 16.61,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/352617",
+   "page": 8,
+   "document": "Cronoprogramma lavori",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "gen 20",
+     "start": -0.033,
+     "end": 0.967
+    },
+    {
+     "label": "feb 20",
+     "start": 0.967,
+     "end": 1.967
+    },
+    {
+     "label": "mar 20",
+     "start": 1.967,
+     "end": 2.967
+    },
+    {
+     "label": "apr 20",
+     "start": 2.967,
+     "end": 3.967
+    },
+    {
+     "label": "mag 20",
+     "start": 3.967,
+     "end": 4.967
+    },
+    {
+     "label": "giu 20",
+     "start": 4.967,
+     "end": 5.967
+    },
+    {
+     "label": "lug 20",
+     "start": 5.967,
+     "end": 6.967
+    },
+    {
+     "label": "ago 20",
+     "start": 6.967,
+     "end": 7.967
+    },
+    {
+     "label": "set 20",
+     "start": 7.967,
+     "end": 8.967
+    },
+    {
+     "label": "ott 20",
+     "start": 8.967,
+     "end": 9.967
+    },
+    {
+     "label": "nov 20",
+     "start": 9.967,
+     "end": 10.967
+    },
+    {
+     "label": "dic 20",
+     "start": 10.967,
+     "end": 11.967
+    },
+    {
+     "label": "gen 21",
+     "start": 11.967,
+     "end": 12.967
+    },
+    {
+     "label": "feb 21",
+     "start": 12.967,
+     "end": 13.967
+    },
+    {
+     "label": "mar 21",
+     "start": 13.967,
+     "end": 14.967
+    },
+    {
+     "label": "apr 21",
+     "start": 14.967,
+     "end": 15.967
+    },
+    {
+     "label": "mag 21",
+     "start": 15.967,
+     "end": 16.967
+    }
+   ],
+   "unita": null
+  },
+  "duration": null,
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma lavori",
+   "url": "https://va.mite.gov.it/File/Documento/352617"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 239,
+  "pagine": 3469,
+  "completa": false,
+  "da_leggere": 119
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "ERG Wind 2000 S.r.l. ed ERG Wind Sicilia 3 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": null,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CARLENTINI, SORTINO",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SR",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 02/01/2020, ma l'iter è proseguito; ultimo documento o atto del 13/05/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Potenza",
+   "reason": "non indicata nel titolo: valore ricavato dagli elaborati"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "583 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
