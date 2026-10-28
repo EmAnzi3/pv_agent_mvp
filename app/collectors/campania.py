@@ -10,10 +10,10 @@ from bs4 import BeautifulSoup
 from app.collectors.base import BaseCollector, CollectorResult
 
 
-BASE_URL = "http://viavas.regione.campania.it"
+BASE_URL = "https://viavas.regione.campania.it"  # the portal moved to https (http answers 302)
 
 SEARCH_URL = (
-    "http://viavas.regione.campania.it/"
+    "https://viavas.regione.campania.it/"
     "opencms/opencms/VIAVAS/VIA_files_new/Ricerca_Avanzata.html"
 )
 

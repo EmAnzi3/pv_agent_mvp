@@ -58,3 +58,24 @@ class WindPower(unittest.TestCase):
         rows = [raw(5, "Impianto eolico da 43,2 MW", "Gruppo Visconti Brindisi S.r.l.", ["Brindisi"])]
         c = build(rows, [], [ferx(8, "BRINDISI SANTA TERESA S.R.L.", "Brindisi", 31050)], today="2026-10-27")
         self.assertEqual(c["records"][0]["ferx"] if c["records"][0]["source"] == "mase" else None, [])
+
+
+class WindRegional(unittest.TestCase):
+    def reg(self, src, ext, title, mun, prop=None, power_mw=None, status="In corso"):
+        return {"external_id": f"{src}:{ext}", "source": src, "source_url": f"https://example.org/{ext}", "title": title,
+                "payload": {"title": title, "proponent": prop, "municipalities": mun, "region": "Puglia", "province": "FG",
+                            "status_raw": status, "procedure": "PAUR", "power_mw": power_mw}}
+
+    def test_regional_added_merged_and_ferx(self):
+        mase = [raw(1, "Impianto eolico da 66 MW", "Alfa Wind S.r.l.", ["Ascoli Satriano"])]
+        regional = [self.reg("sistema_puglia_energia", 1, "Impianto eolico da 66 MW", ["Ascoli Satriano"], "Alfa Wind S.r.l."),
+                    self.reg("puglia_opendata", 2, "Eolico - Candela (FG) - 16,5 MW", ["Candela"], None, 16.5),
+                    self.reg("sistema_puglia_energia", 3, "Impianto eolico da 16,5 MW", ["Candela"], "Wind Energy Candela S.r.l.")]
+        fx = [ferx(18, "WIND ENERGY CANDELA S.R.L.", "Candela", 16500)]
+        c = build(mase, [], fx, today="2026-10-28", regional=regional)
+        by = {r["project_key"]: r for r in c["records"]}
+        self.assertEqual(c["summary"]["regionali_gia_al_mase"], 2)       # same plant at MASE / in two regional lists
+        self.assertEqual(c["summary"]["da_regioni"], 1)
+        cand = by["wind:puglia_opendata:2"]
+        self.assertEqual(cand["ferx"][0]["posizione"], 18)
+        self.assertEqual(c["summary"]["lead_ferx"], 0)

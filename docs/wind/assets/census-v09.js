@@ -23,6 +23,13 @@
   function phase(r) {
     if (r.source === "gse_ferx") return "Procedura regionale (da individuare)";
     const p = r.procedure || "", st = status(r)[0] || "";
+    if (r.source_group === "regione") {
+      const t = `${p} ${r.procedure_status || ""} ${r.title || ""}`;
+      if (/ottemperanza/i.test(t)) return "Post-VIA: ottemperanza";
+      if (/assoggettabilit|screening/i.test(t)) return "Screening";
+      if (/conclus|rilasciat|favorevol|positiv|archiviat|emanat|adottat/i.test(r.procedure_status || "")) return "Procedura regionale conclusa";
+      return "Procedura regionale in corso";
+    }
     if (/ottemperanza/i.test(p)) return "Post-VIA: ottemperanza";
     if (/proroga/i.test(p)) return "Post-VIA: proroga";
     if (/valutazione preliminare|variant|modific/i.test(p)) return "Modifica di progetto";
@@ -46,6 +53,7 @@
     if (x && x.level) out.push(`<span class="wc-b wc-ready-${x.level === "Alta" ? "a" : x.level === "Media" ? "m" : "b"}" title="${esc(x.phase_label)}${x.window ? " · " + esc(x.window) : ""}">Cantiere ${esc(x.level)}</span>`);
     else if (x && x.phase === "realizzato") out.push(`<span class="wc-b wc-done">Realizzato</span>`);
     if (epc(r)) out.push(`<span class="wc-b wc-epc">EPC ${esc(epc(r))}</span>`);
+    if ((r.altre_fonti || []).length) out.push(`<span class="wc-b wc-side" title="${esc(r.altre_fonti.map(a => a.fonte + (a.procedura ? ": " + a.procedura : "")).join(" · "))}">Anche in Regione</span>`);
     if (r.secondaria) out.push(`<span class="wc-b wc-side" title="Modifica, variante, ottemperanza o proroga di un progetto: non conteggiata nei totali">Procedura secondaria</span>`);
     if (r.source === "gse_ferx") out.push(`<span class="wc-b wc-lead" title="Impianto in graduatoria FER X senza procedura VIA nazionale trovata: probabilmente autorizzato in Regione">Procedura da individuare</span>`);
     return out.join(" ");
@@ -60,7 +68,8 @@
       if (q && !`${r.title} ${r.proponent} ${r.municipalities} ${r.province}`.toLowerCase().includes(q)) return false;
       if (reg && r.region !== reg) return false;
       if (tipo && kind(r) !== tipo) return false;
-      const ph = document.getElementById("wcPhase").value;
+      const ph = document.getElementById("wcPhase").value, src = document.getElementById("wcSrc").value;
+      if (src && (r.source_group || "") !== src) return false;
       if (ph && phase(r) !== ph) return false;
       if (show === "card" && !cards[r.project_key]) return false;
       if (show === "ferx" && !(r.ferx || []).length) return false;
@@ -115,7 +124,7 @@
       ["Incentivo FER X", num(main.filter(r => (r.ferx || []).length).length, 0), `di cui ${num(sum.lead_ferx, 0)} senza procedura nazionale`],
       ["Vicini al cantiere", num(near, 0), "priorità Alta o Media"],
       ["Già nel radar curato", num(sum.nel_radar_curato, 0), "progetti verificati sopra"],
-      ["Archiviati esclusi", num(sum.archiviati_esclusi, 0), `${num(sum.mw_archiviati, 0)} MW, tutte le procedure archiviate`],
+      ["Dalle Regioni", num(sum.da_regioni || 0, 0), `più ${num(sum.regionali_gia_al_mase || 0, 0)} già presenti al MASE · ${num(sum.archiviati_esclusi, 0)} archiviati esclusi`],
     ];
     document.getElementById("wcKpis").innerHTML = items.map(([l, v, s]) =>
       `<div class="wc-kpi"><span>${esc(l)}</span><strong>${esc(v)}</strong><small>${esc(s)}</small></div>`).join("");
@@ -140,16 +149,19 @@
     const sec = document.createElement("section");
     sec.className = "panel wc-panel"; sec.id = "windCensus";
     sec.innerHTML = `<div class="panel-heading"><div><h2>Censimento eolico</h2>
-        <p>Tutti i progetti eolici vivi sul portale VIA del MASE (onshore oltre 30 MW e offshore) e gli impianti FER X senza procedura nazionale.
+        <p>Tutti i progetti eolici vivi sul portale VIA del MASE (onshore oltre 30 MW e offshore), le procedure eoliche dei portali regionali e gli impianti FER X.
         Letti come il radar fotovoltaico: filtri, segnali e scheda documentale. Il radar curato sopra resta il livello verificato.</p></div>
         <button type="button" class="wc-btn ghost" id="wcCsv">Esporta CSV</button></div>
       <div class="wc-kpis" id="wcKpis">Caricamento…</div>
       <div class="wc-filters">
         <label class="wide"><span>Cerca</span><input id="wcQ" type="search" placeholder="Progetto, proponente, comune…"></label>
         <label><span>Regione</span><select id="wcRegion"><option value="">Tutte</option></select></label>
+        <label><span>Fonte</span><select id="wcSrc"><option value="">Tutte</option><option value="mase">MASE (VIA nazionale)</option>
+          <option value="regione">Regioni</option><option value="gse">GSE FER X</option></select></label>
         <label><span>Tipo</span><select id="wcKind"><option value="">Tutti</option><option>Onshore</option><option>Offshore</option></select></label>
         <label><span>Fase</span><select id="wcPhase"><option value="">Tutte</option>${["VIA in istruttoria", "VIA conclusa (esito da verificare)",
-          "Post-VIA: ottemperanza", "Scoping (pre-VIA)", "Screening", "Procedura regionale (da individuare)"].map(x => `<option>${x}</option>`).join("")}</select></label>
+          "Post-VIA: ottemperanza", "Scoping (pre-VIA)", "Screening", "Procedura regionale in corso", "Procedura regionale conclusa",
+          "Procedura regionale (da individuare)"].map(x => `<option>${x}</option>`).join("")}</select></label>
         <label><span>Mostra</span><select id="wcShow"><option value="">Tutti i progetti</option><option value="card">Solo con scheda</option>
           <option value="ferx">Solo con incentivo FER X</option><option value="ready">Solo vicini al cantiere</option>
           <option value="epc">Solo con evidenza EPC</option><option value="live">Solo con procedura in corso</option>
@@ -163,7 +175,7 @@
       <button type="button" class="wc-more" id="wcMore" hidden></button>
       <p class="wc-note" id="wcNote"></p>`;
     anchor.parentNode.insertBefore(sec, anchor);
-    ["wcQ", "wcRegion", "wcKind", "wcPhase", "wcShow", "wcSide"].forEach(id => document.getElementById(id).addEventListener("input", () => { shown = PAGE; render(); }));
+    ["wcQ", "wcRegion", "wcSrc", "wcKind", "wcPhase", "wcShow", "wcSide"].forEach(id => document.getElementById(id).addEventListener("input", () => { shown = PAGE; render(); }));
     document.getElementById("wcSort").addEventListener("change", e => { sortKey = e.target.value; shown = PAGE; render(); });
     document.getElementById("wcMore").addEventListener("click", () => { shown += PAGE; render(); });
     document.getElementById("wcCsv").addEventListener("click", exportCsv);
@@ -184,7 +196,7 @@
         document.getElementById("wcRegion").insertAdjacentHTML("beforeend", regs.map(r => `<option>${esc(r)}</option>`).join(""));
         kpis(census.summary || {});
         document.getElementById("wcNote").textContent = `Censimento aggiornato il ${(census.updated || "").split("-").reverse().join("/")}. ` +
-          "Fonti: portale VIA MASE (tipologie «Impianti eolici onshore/offshore»), graduatoria GSE FER X eolico. " +
+          "Fonti: portale VIA MASE (tipologie «Impianti eolici onshore/offshore»), portali VIA regionali (Puglia, Basilicata, Campania, Calabria, Sardegna, Sicilia), graduatoria GSE FER X eolico. " +
           "Esclusi i progetti con tutte le procedure archiviate; modifiche, varianti, ottemperanze e proroghe " +
           `(${num(census.summary && census.summary.procedure_secondarie, 0)}) sono nascoste di default e non entrano nei totali. ` +
           "«Conclusa» indica una procedura chiusa con decreto, positivo o negativo: l'esito si legge nella scheda o sul portale. " +

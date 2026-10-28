@@ -94,7 +94,8 @@ def _close(a: float | None, b: float | None, tol: float) -> bool:
     return bool(a and b and abs(a - b) / max(a, b) <= tol)
 
 
-def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: str | None = None) -> dict:
+def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: str | None = None,
+          regional: list[dict] | None = None) -> dict:
     """raw: [{external_id, source_url, title, payload, statuses, procedures}] from MaseWindCollector."""
     today = today or datetime.now(timezone.utc).date().isoformat()
     cur_by_info = {}
@@ -141,6 +142,8 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
             rec["curato"] = {"id": p["id"], "nome": p["name"], "fase": p.get("stage_label"), "stage": p.get("stage")}
         records.append(rec)
 
+    added, merged = _add_regional(records, regional or [], today)
+
     # FER X wind plants: on a census record (same municipality, same company, compatible power, or lots of
     # the same company adding up to it); otherwise a lead of its own unless the curated radar already has it
     leads = []
@@ -156,7 +159,14 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
         elif len(cands) == 1 and not cands[0]["power_mw"]:
             cands[0]["ferx"].append(_ferx_ref(x, "comune + società (potenza non indicata nel titolo del procedimento)"))
         else:
-            unmatched.append(x)
+            # regional lists without the company (Puglia open data): same municipality and nearly the same power,
+            # only when a single record qualifies
+            anon = [r for r in records if r["source"] != "mase" and not r.get("proponent") and ck in _places(r)
+                    and _close(r["power_mw"], mw, 0.10)]
+            if len(anon) == 1:
+                anon[0]["ferx"].append(_ferx_ref(x, "comune + potenza (la Regione non indica il proponente)"))
+            else:
+                unmatched.append(x)
     for r in records:                     # lots
         rest = [x for x in unmatched if place_key(x.get("comune") or "") in _places(r)
                 and _company(x.get("ragione_sociale"), x.get("comune")) & _company(r.get("proponent"), r["municipalities"])]
@@ -188,13 +198,79 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
             "procedure_secondarie": sum(1 for r in out if r.get("secondaria")),
             "mw_onshore": round(sum(r["power_mw"] or 0 for r in out if not r.get("secondaria") and r["project_type"] == "Eolico"), 1),
             "mw_offshore": round(sum(r["power_mw"] or 0 for r in out if not r.get("secondaria") and r["project_type"] != "Eolico"), 1),
-            "da_mase": len(records), "lead_ferx": len(leads),
+            "da_mase": sum(1 for r in records if r["source"] == "mase"), "da_regioni": added,
+            "regionali_gia_al_mase": merged, "regionali_trasmessi_non_vivi": getattr(_add_regional, "dropped", 0),
+            "lead_ferx": len(leads),
             "nel_radar_curato": len({r["curato"]["id"] for r in out if r["curato"]}),
             "con_ferx": sum(1 for r in out if r["ferx"]),
             "archiviati_esclusi": len(archived), "mw_archiviati": round(sum(r["power_mw"] or 0 for r in archived), 1),
         },
         "records": out,
     }
+
+
+REGION_LABEL = {"puglia_opendata": "Regione Puglia (open data VIA FER)", "sistema_puglia_energia": "Regione Puglia (Sistema Puglia)",
+                "basilicata": "Regione Basilicata", "campania": "Regione Campania", "calabria": "Regione Calabria",
+                "sardegna": "Regione Sardegna", "sicilia": "Regione Siciliana (SI-VVI)"}
+
+
+REGIONAL_MIN_MW = 5.0
+
+
+def _add_regional(records: list[dict], rows: list[dict], today: str) -> tuple[int, int]:
+    """Regional wind procedures (onshore below 30 MW, PAUR, screening). One already on the MASE census or
+    already added from another regional list (same municipality, power within 10 %, compatible company) is
+    attached to that record as another source instead of becoming a second project."""
+    added = merged = dropped = 0
+    for r in rows:
+        pl = r.get("payload") or {}
+        title = pl.get("title") or r.get("title") or ""
+        mun = pl.get("municipalities") or []
+        mun = mun if isinstance(mun, list) else [m.strip() for m in str(mun).split(",") if m.strip()]
+        power = _power(title) or pl.get("power_mw") or _power(pl.get("power"))
+        try:
+            power = float(power) if power else None
+        except (TypeError, ValueError):
+            power = None
+        rec = {
+            "source": r.get("source"), "source_group": "regione", "source_label": REGION_LABEL.get(r.get("source"), "Regione"),
+            "technology": "wind", "title": title, "proponent": pl.get("proponent"), "region": pl.get("region"),
+            "province": pl.get("province"), "municipalities": ", ".join(mun),
+            "project_type": "Eolico offshore" if re.search(r"(?i)off-?shore|galleggiant", title) else "Eolico",
+            "secondaria": bool(SIDE_PROCEDURE.search(title)),
+            "procedure": pl.get("procedure"), "procedure_status": pl.get("status_raw") or "", "procedures": [],
+            "power_mw": power, "url": r.get("source_url"), "document_url": pl.get("pdf_url") or pl.get("document_url"),
+            "date_presented": pl.get("publication_date"), "updated_at": today,
+            "project_key": "wind:" + re.sub(r"[^A-Za-z0-9_.:-]+", "_", str(r.get("external_id")))[:120],
+            "curato": None, "ferx": [], "altre_fonti": [],
+        }
+        if not rec["municipalities"] and not power:
+            continue
+        if power is not None and power < REGIONAL_MIN_MW:
+            continue                      # single small turbines (mini wind): not a building site for us
+        twin = next((x for x in records if _places(x) & _places(rec) and _close(x["power_mw"], power, 0.10)
+                     and (not rec["proponent"] or not x.get("proponent")
+                          or _company(rec["proponent"], rec["municipalities"]) & _company(x.get("proponent"), x["municipalities"]))), None)
+        if not twin and power and power >= 20:
+            # a regional list naming one municipality of a national project (Puglia open data 'Trasmesso'):
+            # same region, the same power to the decimal and the municipality cited in the national record
+            twin = next((x for x in records if x["source"] == "mase" and x.get("region") == rec["region"]
+                         and _close(x["power_mw"], power, 0.005)
+                         and any(m in place_key(f"{x['title']} {x['municipalities']}") for m in _places(rec))), None)
+        if not twin and rec["source"] == "puglia_opendata" and re.search(r"(?i)trasmess", rec["procedure_status"]):
+            # 'Trasmesso': the Region forwarded it to the national VIA; MASE is the authority on whether it is
+            # alive. Not found among the live MASE projects -> archived or renamed there: not added
+            dropped += 1
+            continue
+        if twin:
+            twin.setdefault("altre_fonti", []).append({"fonte": rec["source_label"], "url": rec["url"],
+                                                       "procedura": rec["procedure"], "stato": rec["procedure_status"]})
+            merged += 1
+            continue
+        records.append(rec)
+        added += 1
+    _add_regional.dropped = dropped
+    return added, merged
 
 
 def _queue_priority(r: dict) -> int:
@@ -229,12 +305,25 @@ def collect(max_pages: int | None = None) -> list[dict]:
     return out
 
 
-def run(memory: str, repo_root: str = ".", raw_json: str | None = None, max_pages: int | None = None) -> dict:
+def run(memory: str, repo_root: str = ".", raw_json: str | None = None, max_pages: int | None = None,
+        regional_cloud: bool = True) -> dict:
+    """MASE census + regional lists: those read in the cloud now (unless regional_cloud=False) and those read
+    from the user's PC (docs/wind/data/census-regional-local.json, committed by aggiorna_wind_radar.bat)."""
     mem = Path(memory)
     raw = json.loads(Path(raw_json).read_text(encoding="utf-8")) if raw_json else collect(max_pages)
+    cloud_file = mem / "wind" / "census_regional_cloud.json"
+    if regional_cloud:
+        from app.collectors.wind_regional import run as regional_run
+        print("::notice title=wind-regional cloud::" + json.dumps(regional_run(where="cloud", out=str(cloud_file)), ensure_ascii=False)[:900])
+    regional = []
+    for f in (cloud_file, Path(repo_root) / "docs" / "wind" / "data" / "census-regional-local.json"):
+        try:
+            regional += json.loads(f.read_text(encoding="utf-8")).get("rows", [])
+        except (OSError, ValueError):
+            pass
     wm = mem / "ferx" / "wind_matches.json"
     ferx_rows = json.loads(wm.read_text(encoding="utf-8")).get("impianti", []) if wm.exists() else []
-    census = build(raw, wind_projects(Path(repo_root)), ferx_rows)
+    census = build(raw, wind_projects(Path(repo_root)), ferx_rows, regional=regional)
     (mem / "wind").mkdir(parents=True, exist_ok=True)
     (mem / "wind" / "census.json").write_text(json.dumps(census, ensure_ascii=False, indent=0), encoding="utf-8")
     if not raw_json:

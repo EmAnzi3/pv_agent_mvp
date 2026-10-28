@@ -109,6 +109,11 @@ def main(argv: list[str] | None = None) -> int:
     wc.add_argument("--memory", required=True)
     wc.add_argument("--raw", default=None, help="reuse a census_raw.json instead of reading the portal")
     wc.add_argument("--max-pages", type=int, default=None, help="result pages per typology (test runs)")
+    wc.add_argument("--no-regional-cloud", action="store_true", help="do not read the regional portals in this run")
+    wr = sub.add_parser("wind-regional", help="regional wind procedures (PV collectors with a wind filter)")
+    wr.add_argument("--where", choices=["cloud", "local"], default=None, help="sources of this kind only")
+    wr.add_argument("--only", nargs="*", help="source names (puglia_opendata, sistema_puglia_energia, basilicata, campania, calabria, sardegna, sicilia)")
+    wr.add_argument("--out", required=True)
     fi = sub.add_parser("ferx-import", help="read the GSE FER X Table A PDFs downloaded by hand")
     fi.add_argument("pdfs", nargs="+")
     fx = sub.add_parser("ferx", help="GSE FER X rankings matched to radar projects (information only)")
@@ -242,8 +247,14 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if a.cmd == "wind-census":
         from .wind_census import run as census_run
-        print("::notice title=wind-census::" + json.dumps(census_run(a.memory, ".", a.raw, a.max_pages), ensure_ascii=False))
+        print("::notice title=wind-census::" + json.dumps(census_run(a.memory, ".", a.raw, a.max_pages,
+                                                                     regional_cloud=not a.no_regional_cloud), ensure_ascii=False))
         return 0
+    if a.cmd == "wind-regional":
+        from app.collectors.wind_regional import run as regional_run
+        rep = regional_run(a.only or None, a.where, a.out)
+        print(json.dumps(rep, ensure_ascii=False, indent=1))
+        return 0 if any("error" not in v for v in rep.values()) else 1
     if a.cmd == "readiness":
         from .readiness import run as readiness_run
         print("::notice title=readiness::" + json.dumps(readiness_run(a.data, a.memory), ensure_ascii=False))

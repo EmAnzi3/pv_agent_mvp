@@ -12,10 +12,14 @@ on:
         default: 'no'
   schedule:
     - cron: '30 4 * * 1'        # every Monday, before the night cards of the following days
+  push:
+    branches: [main]
+    paths: ['docs/wind/data/census-regional-local.json']   # regional lists read from the user's PC
   pull_request:
     paths:
       - 'app/collectors/mase_wind.py'
       - 'doc_intel/wind_census.py'
+      - 'app/collectors/wind_regional.py'
       - '.github/workflows/wind-census.yml'
 permissions:
   contents: write
@@ -31,7 +35,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install -q requests beautifulsoup4 python-dotenv
+      - run: python -m pip install -q requests beautifulsoup4 python-dotenv openpyxl
       - name: Load memory (branch doc-intel-state)
         run: |
           git config user.name "doc-intel-bot"
@@ -45,7 +49,7 @@ jobs:
         run: |
           extra=()
           # pull request: rebuild from the last reading (fast) or, without one, read the first page only
-          if [ "$EVENT" = "pull_request" ] || [ "$REUSE" = "yes" ]; then
+          if [ "$EVENT" = "pull_request" ] || [ "$EVENT" = "push" ] || [ "$REUSE" = "yes" ]; then
             if [ -f .mem/wind/census_raw.json ]; then extra+=(--raw .mem/wind/census_raw.json); else extra+=(--max-pages 1); fi
           fi
           python -m doc_intel wind-census --memory .mem "${extra[@]}"
@@ -57,6 +61,16 @@ jobs:
           PY
       - name: Vicini al cantiere (wind census)
         run: python -c "from doc_intel.readiness import run_wind; print(run_wind('.mem'))"
+      - name: Preview of a pull request (wind/preview/ on the memory branch, never read by the page)
+        if: github.event_name == 'pull_request'
+        run: |
+          mkdir -p .mem/wind/preview && cp .mem/wind/census.json .mem/wind/census_regional_cloud.json .mem/wind/preview/ 2>/dev/null || true
+          cd .mem && git add wind/preview
+          git diff --cached --quiet && exit 0
+          git commit -q -m "wind census preview (PR run ${{ github.run_id }})"
+          git stash -u -q || true          # the census files of this run are not saved on a pull request
+          for i in 1 2 3; do git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null || true; git push -q origin HEAD:doc-intel-state && exit 0; sleep 10; done
+          echo "::warning title=preview::not saved"
       - uses: actions/upload-artifact@v4
         with:
           name: wind-census
