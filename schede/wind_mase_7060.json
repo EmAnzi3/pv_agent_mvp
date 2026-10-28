@@ -1,0 +1,520 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7060",
+ "title": "Parco eolico localizzato nel Comune di Camporeale (PA) e cavidotto anche nei Comuni di Monreale (PA) e Partinico (PA), progetto di smantellamento dei 24 aerogeneratori esistenti ed installazione di 13 nuovi aerogeneratori di potenza parti a 4,2 MW, per una potenza complessiva pari a 54,6 MW.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7060",
+ "source": "mase",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "54,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7060",
+    "excerpt": "54,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "13",
+   "status": "da verificare",
+   "sub": "4,20 MW ciascuno · altezza mozzo 121,5 m · Valore più ricorrente negli elaborati; altri valori: 24 (18), 12 (3), 10 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1324756",
+    "page": 3,
+    "document": "Studio 23AFS-015 mese di Gennaio-signed",
+    "excerpt": "Monitoraggio Ambientale relativamente alla fase di costruzione relativa alla sostituzione dei 24 aerogeneratori esistenti da 0.85 MW con 13 aerogeneratori da 4,2 MW, per una potenza complessiva da installarsi pari a 54,6"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "PA",
+  "comuni": [
+   "Monreale",
+   "Camporeale",
+   "Partinico"
+  ],
+  "coordinate": {
+   "lat": 37.90348,
+   "lon": 13.05862,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (37 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1077093",
+    "page": 45,
+    "document": "ALL 6_CAM-ENG-REL-MOD_ATM_00_rev1_signed",
+    "excerpt": "327041"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.90348,13.05862",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "ERG Wind Energy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "12062051003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via De Marini 1 16149 Genova Ge",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ergwindenergy@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324755",
+      "page": 1,
+      "document": "Prot_Par 0011633 del 29-09-2022 - Documento Doc20220929095549",
+      "excerpt": "ergwindenergy@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "dipartimento@pec.asppalermo.org",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324755",
+      "page": 4,
+      "document": "Prot_Par 0011633 del 29-09-2022 - Documento Doc20220929095549",
+      "excerpt": "all’Autorita di Vigilanza - A.R.P.A- arpa@pecarpa.sicilia.it; all’Autorita sanitaria ASP. - dipartimento@pec.asppalermo.org; ."
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1324756",
+    "page": 1,
+    "document": "Studio 23AFS-015 mese di Gennaio-signed",
+    "excerpt": "COMMITTENTE: ERG WIND ENERGY srl"
+   }
+  },
+  {
+   "name": "Blu Costruzioni S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1324775",
+    "page": 1,
+    "document": "20240621.031 P22 Cav. SP18 A",
+    "excerpt": "Richiedente Blu Costruzioni S.r.l. Via Archeologica, 59/A Carlentini SR"
+   }
+  },
+  {
+   "name": "ERG Wind Sicilia 5 S.r.l. e ERG Wind Sicilia 2 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7060"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "MIT Ambiente S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02572460414",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Strada Selva Grossa Snc 61122 Pesaro Pu",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@mitambiente.com",
+     "occurrences": 124,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324756",
+      "page": 4,
+      "document": "Studio 23AFS-015 mese di Gennaio-signed",
+      "excerpt": "MIT AMBIENTE srl Strada Selva Grossa sn Tel +39 0721 201717 Codice REA PS 192542 info@mitambiente.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0721201717",
+     "occurrences": 99,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324756",
+      "page": 4,
+      "document": "Studio 23AFS-015 mese di Gennaio-signed",
+      "excerpt": "MIT AMBIENTE srl Strada Selva Grossa sn Tel +39 0721 201717 Codice REA PS 192542 info@mitambiente.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Societa' Autotrasporti Eccezionali S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02167840731",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Strada Statale 106 Km 482 00 Snc 74016 Massafra Ta",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "saetrasporti@pec.it",
+     "occurrences": 38,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324693",
+      "page": 1,
+      "document": "ANAS PA CARICO n.020385.23 PROROGA",
+      "excerpt": "Indirizzo STRADA STATALE 106 - KM 482,00 Città MASSAFRA (TA) C.a.p 74016 Telefono 099/4751728 e-mail info@saetrasporti.it PEC SAETRASPORTI@PEC.IT"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@saetrasporti.it",
+     "occurrences": 38,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324693",
+      "page": 1,
+      "document": "ANAS PA CARICO n.020385.23 PROROGA",
+      "excerpt": "Indirizzo STRADA STATALE 106 - KM 482,00 Città MASSAFRA (TA) C.a.p 74016 Telefono 099/4751728 e-mail info@saetrasporti.it PEC SAETRASPORTI@PEC.IT"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0994751728",
+     "occurrences": 38,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324693",
+      "page": 1,
+      "document": "ANAS PA CARICO n.020385.23 PROROGA",
+      "excerpt": "Indirizzo STRADA STATALE 106 - KM 482,00 Città MASSAFRA (TA) C.a.p 74016 Telefono 099/4751728 e-mail info@saetrasporti.it PEC SAETRASPORTI@PEC.IT"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Agr. Vincenzo Lodato",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "g.lodato@epap.confafpec.it",
+     "occurrences": 51,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324691",
+      "page": 2,
+      "document": "Relazione per ottemperanza prescrizioni al 09092025_signed",
+      "excerpt": "Dott. Agr. Gaspare Lodato - Dott. Agr. Vincenzo Lodato - Via G. Fazio s.n.c. – Tel. 092421120 – Cell. 3287292729 – P.IVA 01736930817 E-mail: info@proager.it - gaspare.lodato@proager.it – PEC: g.lodato@epap.confafpec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@proager.it",
+     "occurrences": 51,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324691",
+      "page": 2,
+      "document": "Relazione per ottemperanza prescrizioni al 09092025_signed",
+      "excerpt": "Dott. Agr. Gaspare Lodato - Dott. Agr. Vincenzo Lodato - Via G. Fazio s.n.c. – Tel. 092421120 – Cell. 3287292729 – P.IVA 01736930817 E-mail: info@proager.it - gaspare.lodato@proager.it – PEC: g.lodato@epap.confafpec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "gaspare.lodato@proager.it",
+     "occurrences": 51,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324691",
+      "page": 2,
+      "document": "Relazione per ottemperanza prescrizioni al 09092025_signed",
+      "excerpt": "Dott. Agr. Gaspare Lodato - Dott. Agr. Vincenzo Lodato - Via G. Fazio s.n.c. – Tel. 092421120 – Cell. 3287292729 – P.IVA 01736930817 E-mail: info@proager.it - gaspare.lodato@proager.it – PEC: g.lodato@epap.confafpec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "092421120",
+     "occurrences": 51,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324691",
+      "page": 2,
+      "document": "Relazione per ottemperanza prescrizioni al 09092025_signed",
+      "excerpt": "Progettazione e consulenza per agricoltura e ambiente Dott. Agr. Gaspare Lodato - Dott. Agr. Vincenzo Lodato - Via G. Fazio s.n.c. – Tel. 092421120 – Cell. 3287292729 –"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3287292729",
+     "occurrences": 51,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324691",
+      "page": 2,
+      "document": "Relazione per ottemperanza prescrizioni al 09092025_signed",
+      "excerpt": "Progettazione e consulenza per agricoltura e ambiente Dott. Agr. Gaspare Lodato - Dott. Agr. Vincenzo Lodato - Via G. Fazio s.n.c. – Tel. 092421120 – Cell. 3287292729 –"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "P.L.P. Sicilia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "pipsiciliasri@legalmail.it",
+     "occurrences": 36,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324784",
+      "page": 1,
+      "document": "Rp 019 del 30.01.2023 P03 Pali CR3",
+      "excerpt": "P.L.P. SICILIA S.r.l. Sede Legale e Laboratori: Tel. +39 0922 942718 e-mail: info@plpsiciliasrl.it Prospezioni Contrada Zaccanello - S.S. 640 Km 25 Cell. +39 335 6587734 Pec: pipsiciliasri@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@plpsiciliasrl.it",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324784",
+      "page": 1,
+      "document": "Rp 019 del 30.01.2023 P03 Pali CR3",
+      "excerpt": "APAT CNR IRSA 2060 Man 29 2003 P.L.P. SICILIA S.r.l. Sede Legale e Laboratori: Tel. +39 0922 942718 e-mail: info@plpsiciliasrl.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "pipsiciliasri@legaimail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324794",
+      "page": 1,
+      "document": "Rp 417 del 06.12.2022 P27 Cav. SP39 C",
+      "excerpt": "P.L.P. SICILIA S.r.l. Sede Legale e Laboratori: Tel. +39 0922 942718 e-mail: info@plpsiciliasri.it Prospezioni Contrada Zaccanello - S.S. 640 Km 25 Cell. +39 335 6587734 Pec: pipsiciliasri@legaimail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0922942718",
+     "occurrences": 51,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324784",
+      "page": 1,
+      "document": "Rp 019 del 30.01.2023 P03 Pali CR3",
+      "excerpt": "APAT CNR IRSA 2060 Man 29 2003 P.L.P. SICILIA S.r.l. Sede Legale e Laboratori: Tel. +39 0922 942718 e-mail: info@plpsiciliasrl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3356587734",
+     "occurrences": 51,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324784",
+      "page": 1,
+      "document": "Rp 019 del 30.01.2023 P03 Pali CR3",
+      "excerpt": "P.L.P. SICILIA S.r.l. Sede Legale e Laboratori: Tel. +39 0922 942718 e-mail: info@plpsiciliasrl.it Prospezioni Contrada Zaccanello - S.S. 640 Km 25 Cell. +39 335 6587734 Pec: pipsiciliasri@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Topchem Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "topchemsrl@legalmail.it",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324775",
+      "page": 1,
+      "document": "20240621.031 P22 Cav. SP18 A",
+      "excerpt": "C.F./P.IVA: 05259080652 : E Mail: info@topchemsrl.it - PEC topchemsrl@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@topchemsrl.it",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324775",
+      "page": 1,
+      "document": "20240621.031 P22 Cav. SP18 A",
+      "excerpt": "C.F./P.IVA: 05259080652 : E Mail: info@topchemsrl.it - PEC topchemsrl@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0825523971",
+     "occurrences": 26,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324775",
+      "page": 1,
+      "document": "20240621.031 P22 Cav. SP18 A",
+      "excerpt": "APAT CNR IRSA 2060 Man 29 2003 Topchem Engineering S.r.l. Sede legale: Via Acquasanta, 31 (Trav. G.Carola,1) 84131 Salerno Tel. +390825523971"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Vestas Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vestas-italia@vestas.com",
+     "occurrences": 42,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324695",
+      "page": 16,
+      "document": "ANAS PA CARICO n.035351.22",
+      "excerpt": "procuratore della Società VESTAS ITALIA Srl, codice fiscale/P.IVA, 02170340737 con sede a ROMA, in Via Sardegna nr.40; tel. n. 099/4606111 e.mail: vestas-italia@vestas.com;"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "20 giorni",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1324756",
+    "page": 9,
+    "document": "Studio 23AFS-015 mese di Gennaio-signed",
+    "excerpt": "Durata dei lavori: Massimo 20 giorni lavorativi. •"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 388,
+  "pagine": 2340,
+  "completa": false,
+  "da_leggere": 268
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "ERG Wind Sicilia 5 S.r.l. e ERG Wind Sicilia 2 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 54.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CAMPOREALE, MONREALE",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "516 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
