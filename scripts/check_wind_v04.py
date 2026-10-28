@@ -172,7 +172,7 @@ def main() -> None:
     if invalid_site_types:
         fail(f"site_type canonici non validi: {invalid_site_types}")
 
-    index = (WIND / "index.html").read_text(encoding="utf-8")
+    index = (WIND / "approfondimento.html").read_text(encoding="utf-8")
     app = (WIND / "assets" / "app.js").read_text(encoding="utf-8")
     discovery_js = (WIND / "assets" / "discovery-v04.js").read_text(encoding="utf-8")
     engine = (ROOT / "scripts" / "wind_discovery_engine.py").read_text(encoding="utf-8")

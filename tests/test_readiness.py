@@ -43,6 +43,15 @@ class Readiness(unittest.TestCase):
         self.assertIn("superato", r["window"])
 
 
+
+class VerifiedWind(unittest.TestCase):
+    def test_verified_stage_overrides(self):
+        from doc_intel.readiness import _verified_stage
+        r = _verified_stage({}, {"stage": "E7", "fase": "Construction"})
+        self.assertEqual((r["phase"], r["level"]), ("in_corso", "Alta"))
+        self.assertEqual(_verified_stage({}, {"stage": "E8"})["phase"], "realizzato")
+        self.assertEqual(_verified_stage({"phase": "in_iter"}, {"stage": "E2"}), {"phase": "in_iter"})
+
 if __name__ == "__main__":
     unittest.main()
 

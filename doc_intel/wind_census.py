@@ -137,12 +137,13 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
             mk, tk = {place_key(m) for m in mun}, set(place_key(title).split())
             p = next((c for c in curated if _name_words(c.get("name")) and _name_words(c.get("name")) <= tk
                       and mk & {place_key(m) for m in c.get("municipalities") or []}
-                      and _close(rec["power_mw"], float(c.get("mw") or 0), 0.25)), None)
+                      and (rec["power_mw"] is None or _close(rec["power_mw"], float(c.get("mw") or 0), 0.25))), None)
         if p:
             rec["curato"] = {"id": p["id"], "nome": p["name"], "fase": p.get("stage_label"), "stage": p.get("stage")}
         records.append(rec)
 
     added, merged = _add_regional(records, regional or [], today)
+    verified_only = _add_curated(records, curated, today)
 
     # FER X wind plants: on a census record (same municipality, same company, compatible power, or lots of
     # the same company adding up to it); otherwise a lead of its own unless the curated radar already has it
@@ -202,6 +203,7 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
             "regionali_gia_al_mase": merged, "regionali_trasmessi_non_vivi": getattr(_add_regional, "dropped", 0),
             "lead_ferx": len(leads),
             "nel_radar_curato": len({r["curato"]["id"] for r in out if r["curato"]}),
+            "solo_verificati": verified_only,
             "con_ferx": sum(1 for r in out if r["ferx"]),
             "archiviati_esclusi": len(archived), "mw_archiviati": round(sum(r["power_mw"] or 0 for r in archived), 1),
         },
@@ -212,6 +214,31 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
 REGION_LABEL = {"puglia_opendata": "Regione Puglia (open data VIA FER)", "sistema_puglia_energia": "Regione Puglia (Sistema Puglia)",
                 "basilicata": "Regione Basilicata", "campania": "Regione Campania", "calabria": "Regione Calabria",
                 "sardegna": "Regione Sardegna", "sicilia": "Regione Siciliana (SI-VVI)"}
+
+
+def _add_curated(records: list[dict], curated: list[dict], today: str) -> int:
+    """Verified projects of the curated radar that no public procedure of the census explains (typically
+    plants already under construction, authorised years ago): added from the curated data, so the census
+    is the one complete list."""
+    linked = {r["curato"]["id"] for r in records if r.get("curato")}
+    n = 0
+    for p in curated:
+        if p["id"] in linked:
+            continue
+        url = next((s.get("url") for s in p.get("sources") or [] if s.get("url")), None)
+        rec = {
+            "source": "curato", "source_group": "curato", "source_label": "Verificato", "technology": "wind",
+            "title": f"{p['name']} – {p.get('type') or 'parco eolico'}", "proponent": p.get("spv") or p.get("developer"),
+            "region": p.get("region"), "province": p.get("province"), "municipalities": ", ".join(p.get("municipalities") or []),
+            "project_type": "Eolico offshore" if str(p["id"]).startswith("off-") else "Eolico", "secondaria": False,
+            "procedure": None, "procedure_status": p.get("stage_label") or "", "procedures": [],
+            "power_mw": float(p.get("mw") or 0) or None, "url": url, "updated_at": today,
+            "project_key": f"wind:curato_{p['id']}", "ferx": [], "altre_fonti": [],
+            "curato": {"id": p["id"], "nome": p["name"], "fase": p.get("stage_label"), "stage": p.get("stage")},
+        }
+        records.append(rec)
+        n += 1
+    return n
 
 
 REGIONAL_MIN_MW = 5.0
