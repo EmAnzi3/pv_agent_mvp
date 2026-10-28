@@ -54,7 +54,9 @@ SPECS: dict[str, dict[str, Any]] = {
                         "patch": {"PV_SOURCES": ["eolic"]}},
     "campania": {"module": "app.collectors.campania", "cls": "CampaniaCollector", "region": "Campania", "where": "cloud",
                  # wind projects stay in the regional procedure for years: older filings are still live leads
-                 "patch": {"SEARCH_KEYWORDS": ["eolico", "eolica"], "PV_KEYWORDS": WIND, "MIN_DATE": datetime(2019, 1, 1)},
+                 # the portal returns the 10 most recent matches per search: several wordings widen the net
+                 "patch": {"SEARCH_KEYWORDS": ["eolico", "eolica", "aerogeneratori", "parco eolico", "repowering eolico",
+                                               "impianto eolico"], "PV_KEYWORDS": WIND, "MIN_DATE": datetime(2019, 1, 1)},
                  "strip": ["NON_PV_EXCLUDE"]},
     "calabria": {"module": "app.collectors.calabria", "cls": "CalabriaCollector", "region": "Calabria", "where": "cloud",
                  "patch": {"SEARCH_TERMS": ["impianto eolico", "parco eolico", "VIA eolico"], "PV_KEYWORDS": WIND}},

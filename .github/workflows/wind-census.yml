@@ -61,6 +61,12 @@ jobs:
           PY
       - name: Vicini al cantiere (wind census)
         run: python -c "from doc_intel.readiness import run_wind; print(run_wind('.mem'))"
+      - name: Preview of a pull request (wind/preview/ on the memory branch, never read by the page)
+        if: github.event_name == 'pull_request'
+        run: |
+          mkdir -p .mem/wind/preview && cp .mem/wind/census.json .mem/wind/census_regional_cloud.json .mem/wind/preview/ 2>/dev/null || true
+          cd .mem && git add wind/preview && (git diff --cached --quiet && exit 0 || git commit -q -m "wind census preview (PR run ${{ github.run_id }})")
+          for i in 1 2 3; do git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort 2>/dev/null; git push -q origin HEAD:doc-intel-state && exit 0; sleep 10; done
       - uses: actions/upload-artifact@v4
         with:
           name: wind-census
