@@ -14,6 +14,7 @@
 
   function shortName(r) {
     if (r.source === "gse_ferx") return `${r.municipalities} – ${r.proponent}`;
+    if (r.source === "puglia_opendata") return `Eolico ${r.municipalities}`;
     const t = r.title || "";
     const q = t.match(/[«"“]([^»"”]{3,60})[»"”]/) || t.match(/denominat[oa]\s+([A-Z][^,;(]{2,50})/i);
     if (q) return q[1].trim();
@@ -27,7 +28,7 @@
       const t = `${p} ${r.procedure_status || ""} ${r.title || ""}`;
       if (/ottemperanza/i.test(t)) return "Post-VIA: ottemperanza";
       if (/assoggettabilit|screening/i.test(t)) return "Screening";
-      if (/conclus|rilasciat|favorevol|positiv|archiviat|emanat|adottat/i.test(r.procedure_status || "")) return "Procedura regionale conclusa";
+      if (/conclus|chius|rilasciat|favorevol|positiv|archiviat|emanat|adottat/i.test(r.procedure_status || "")) return "Procedura regionale conclusa";
       return "Procedura regionale in corso";
     }
     if (/ottemperanza/i.test(p)) return "Post-VIA: ottemperanza";
