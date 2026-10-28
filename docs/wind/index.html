@@ -1,155 +1,173 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Alayan Wind Project &amp; Contractor Radar — pipeline, timing e supply chain dei progetti eolici italiani onshore e offshore." name="description"/>
-<title>Wind Project &amp; Contractor Radar</title>
-<link href="assets/style.css" rel="stylesheet"/>
-<link href="assets/review-fixes.css" rel="stylesheet"/>
-<link href="assets/scope-intelligence.css" rel="stylesheet"/>
-<link href="assets/docpass2-intelligence.css" rel="stylesheet"/>
-<link href="assets/glossary.css" rel="stylesheet"/>
-<link href="assets/stage-consistency.css" rel="stylesheet"/>
-<link href="assets/timeline-coherence.css" rel="stylesheet"/>
-<link href="assets/discovery-v04.css" rel="stylesheet"/>
-<link href="assets/province-map-v06.css" rel="stylesheet"/>
-<link href="assets/main-summary-v06.css" rel="stylesheet"/>
-<link href="assets/local-run.css" rel="stylesheet"/>
-<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-<link rel="stylesheet" href="assets/documentary-summary.css">
-<link href="assets/scheda-panel.css" rel="stylesheet"/><link href="assets/census-v09.css" rel="stylesheet"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wind Agent Dashboard</title>
+  <meta name="description" content="Radar eolico Alayan: pipeline nazionale dei progetti eolici onshore e offshore, letta come il radar fotovoltaico.">
+  <link rel="stylesheet" href="assets/dashboard.css">
+  <link rel="stylesheet" href="assets/scheda-panel.css">
+  <style>
+    /* wind page additions, same tokens as the PV dashboard */
+    .split > *, .grid > * { min-width: 0; }   /* wide tables scroll inside their card, never the page */
+    .hero p a { color: inherit; font-weight: 700; text-decoration: underline; }
+    .kpi-grid.signals .kpi { min-height: 108px; }
+    .kpi-grid.signals .value { font-size: 26px; }
+    .sc-ver { color: #1e3a8a; background: #dbeafe; text-decoration: none; }
+    .sc-ver:hover { text-decoration: underline; }
+    .sc-lead { color: #92400e; background: #fff7ed; border: 1px dashed #f59e0b; }
+    .sc-side { color: #475569; background: #f1f5f9; }
+    .badge.gse { background: #d1fae5; color: #065f46; }
+    .badge.curato { background: #e0e7ff; color: #3730a3; }
+    .phase { font-weight: 700; }
+    .phase + .small { display: block; margin-top: 2px; }
+    .check { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--steel); }
+    .check input { width: auto; }
+    .empty { padding: 22px; text-align: center; color: var(--muted); }
+  </style>
 </head>
 <body>
-<header class="hero">
-<div class="hero-inner">
-<div>
-<div class="eyebrow"><a href="../" style="color:inherit;text-decoration:underline">&larr; Radar fotovoltaico</a> · <a href="#windCensus" style="color:inherit;text-decoration:underline">Censimento eolico &darr;</a> · Alayan · Market &amp; Construction Intelligence</div>
-<h1>Wind Project &amp; Contractor Radar</h1>
-<p>Pipeline eolica italiana onshore e offshore letta dal punto di vista commerciale: dove, quanti MW, fase reale, finestre di cantiere e chi sta eseguendo le opere.</p>
-</div>
-<div class="hero-meta">
-<span class="status-dot"></span>
-<span id="asOf">Seed MVP</span>
-</div>
-</div>
-</header>
-<main>
-<section class="portfolio-summary" aria-label="Sintesi complessiva del radar">
-<div class="portfolio-summary-head"><div><div class="eyebrow dark">Quadro complessivo</div><h2>Il Radar oggi, in numeri</h2><p>Il portafoglio canonico è la somma del seed iniziale e dei progetti promossi dal Discovery. I candidati ancora fuori dal canonico restano separati.</p></div></div>
-<div class="portfolio-summary-grid">
-<article class="portfolio-summary-card primary"><span>Radar canonico</span><strong>51 progetti</strong><b>11.202,52 MW eolici</b><small>441 MW BESS separati</small></article>
-<article class="portfolio-summary-card"><span>Origine del canonico</span><strong>17 + 34</strong><b>17 seed originari · 34 promossi</b><small>1.496,9 MW + 9.705,62 MW</small></article>
-<article class="portfolio-summary-card alert"><span>Discovery ancora fuori</span><strong>4 current</strong><b>1.833,05 MW non promossi</b><small>+ 4 scoping datati · 5 guardie/esclusi</small></article>
-</div>
-<div class="portfolio-equation"><b>51 canonici</b> = 17 seed originari + 34 promossi dal Discovery · i 34 promossi non vengono più contati nel Discovery.</div>
-</section>
-<section aria-label="KPI radar" class="kpi-grid" id="kpis"></section>
-<section aria-label="Filtri" class="panel filter-panel">
-<div class="panel-heading compact">
-<div>
-<h2>Filtro operativo</h2>
-<p id="filterCount">Caricamento dataset…</p>
-</div>
-<div class="export-actions">
-<button class="btn secondary" id="resetFilters" type="button">Azzera filtri</button>
-<button class="btn" id="exportCsv" type="button">Esporta CSV</button>
-</div>
-</div>
-<div class="filters">
-<label class="search-field wide"><span>Cerca</span><input id="q" placeholder="Progetto, comune, developer, contractor…" type="search"/></label>
-<label><span>Regione</span><select id="region"><option value="">Tutte</option></select></label>
-<label><span>Ambito</span><select id="siteType"><option value="">Onshore + offshore</option><option value="onshore">Onshore</option><option value="offshore">Offshore</option></select></label>
-<label><span>Maturità</span><select id="stage"><option value="">E0–E8 tutte</option></select></label>
-<label><span>Tipo</span><select id="type"><option value="">Tutti</option></select></label>
-<label><span>Developer</span><select id="developer"><option value="">Tutti</option></select></label>
-<label><span>Contractor</span><select id="contractor"><option value="">Tutti</option></select></label>
-<label><span>MW min</span><input id="mwMin" inputmode="decimal" min="0" placeholder="0" step="10" type="number"/></label>
-<label><span>MW max</span><input id="mwMax" inputmode="decimal" min="0" placeholder="∞" step="10" type="number"/></label>
-<label><span>Finestra</span><select id="window"><option value="">Tutte le date</option><option value="6m">Prossimi 6 mesi</option><option value="12m">Prossimi 12 mesi</option><option value="2026q4">Q4 2026</option><option value="2027">2027</option><option value="2028">2028</option></select></label>
-</div>
-</section>
-<section class="overview-grid">
-<article class="panel map-panel">
-<div class="panel-heading">
-<div><h2>Mappa per provincia</h2><p>Vista amministrativa aggregata sul modello della dashboard PV: il colore rappresenta la concentrazione dei progetti nella provincia canonica e resta leggibile anche con molti record.</p></div>
-</div>
-<div class="province-map-toolbar">
-<div class="province-map-metrics" role="group" aria-label="Metrica mappa province">
-<button class="province-map-metric active" data-metric="mw" type="button">MW eolici</button>
-<button class="province-map-metric" data-metric="projects" type="button">N. progetti</button>
-<button class="province-map-metric" data-metric="e4mw" type="button">MW E4+</button>
-</div>
-<div class="province-map-selection" id="provinceMapSelection">Clicca una provincia per applicarla come filtro al Radar.</div>
-</div>
-<div aria-label="Mappa dei progetti eolici aggregati per provincia" class="province-map-viz" id="provinceMap"></div>
-<div class="province-map-status" id="provinceMapStatus">Caricamento mappa province…</div>
-<div class="province-map-note"><b>Metodo geografico:</b> ogni progetto è conteggiato una sola volta sulla provincia canonica principale, quindi i MW non vengono duplicati. Per l’offshore la provincia è un riferimento amministrativo/territoriale del progetto e non rappresenta l’area delle turbine in mare. I MW BESS restano separati.</div>
-<div class="legacy-map-compat" aria-hidden="true"><div id="stageLegend"></div><div id="projectMap"><div id="mapMarkers"></div><div id="mapTooltip"></div></div></div>
-</article>
-<article class="panel pipeline-panel">
-<div class="panel-heading"><div><h2>Stato corrente per maturità</h2><p>Fotografia dei progetti sulla scala E0–E8 alla data di aggiornamento. I MW BESS non sono sommati all’eolico.</p></div></div>
-<div aria-label="Stato corrente dei progetti per maturità" class="chart pipeline-chart" id="pipelineChart"></div>
-<div class="pipeline-fallback" id="pipelineFallback"></div>
-<div class="scale-note"><b>E4+</b> = autorizzato o più avanzato · <b>E7</b> = costruzione · nessuna percentuale arbitraria.</div>
-</article>
-</section>
-<section class="panel timeline-panel">
-<div class="panel-heading">
-<div><h2>Calendario attività e milestone</h2><p>Lo stage E0–E8 indica lo stato corrente del progetto; le barre mostrano attività documentate o previste nel tempo. Una barra futura non fa avanzare lo stage finché l’avvio non è osservato.</p></div>
-<div class="timeline-key" id="timelineKey"></div>
-</div>
-<div aria-label="Calendario attività e milestone dei progetti" class="chart timeline-chart" id="timelineChart"></div>
-<div class="timeline-fallback" id="timelineFallback"></div>
-</section>
-<section class="panel discovery-panel">
-<div class="panel-heading">
-<div class="discovery-note"><h2>Discovery · candidati fuori dal canonico</h2><p>Qui compaiono soltanto i record che non fanno parte dei 51 progetti canonici: candidati current ancora da completare, scoping datati e guardie/esclusi. I 34 già promossi sono conteggiati nel Radar, non qui.</p></div>
-</div>
-<div class="discovery-summary" id="discoverySummary"></div>
-<div class="discovery-grid" id="discoveryRows"><div class="discovery-empty">Caricamento discovery…</div></div>
-<div class="scale-note"><b>Da completare</b> = progetto corrente che non ha ancora superato tutti i requisiti del canonico · <b>Scoping datato</b> = ultimo avanzamento individuato nel 2022–2023 senza procedura successiva trovata · <b>Escluso / guardia</b> = esito negativo o archiviazione conservati per evitare falsi positivi.</div>
-</section>
-<section class="panel opportunity-panel">
-<div class="panel-heading">
-<div><h2>Opportunità prioritarie</h2><p>Ordinamento commerciale; il contractor gap conta più del semplice nome del developer.</p></div>
-<label class="sort-select"><span>Ordina</span><select id="sort"><option value="priority">Priorità</option><option value="milestone">Prossima milestone</option><option value="mw">MW</option><option value="stage">Maturità</option><option value="updated">Ultimo aggiornamento</option></select></label>
-</div>
-<div aria-hidden="true" class="opportunity-header"><span>Progetto</span><span>Fase</span><span>Prossima milestone</span><span>Developer</span><span>Supply chain esecutiva</span><span>Gap</span><span>Priorità</span></div>
-<div class="opportunity-rows" id="opportunityRows"></div>
-</section>
-<section class="panel contractor-panel">
-<div class="panel-heading">
-<div><h2>Contractor view</h2><p>Vista inversa: azienda → progetti → MW → ruolo → stato → timing. A1/A2 confermati restano separati dai segnali B/C.</p></div>
-<label class="contractor-search"><span>Cerca azienda</span><input id="contractorQ" placeholder="D’Agostino, Idoka, PLC…" type="search"/></label>
-</div>
-<div class="contractor-summary" id="contractorSummary"></div>
-<div class="contractor-view" id="contractorView"></div>
-</section>
-<section class="method-strip">
-<div><b>Regola di attribuzione</b><span>Mai assegnare un ruolo esecutivo per deduzione. Ogni relazione progetto ↔ azienda conserva ruolo, fonte, data e livello di confidenza.</span></div>
-<div><b>GlobalData</b><span>Solo enrichment/lead source. Non prevale su atti, developer, contractor o documentazione di cantiere.</span></div>
-<button class="text-btn" id="openMethod" type="button">Legenda fonti A1–D</button>
-</section>
-</main>
-<footer id="footer"></footer>
-<div aria-hidden="true" class="drawer" id="drawer">
-<button aria-label="Chiudi scheda" class="drawer-backdrop" id="drawerBackdrop"></button>
-<aside aria-labelledby="detailTitle" aria-modal="true" class="drawer-card" role="dialog">
-<div class="drawer-head">
-<div><div class="eyebrow dark">Scheda progetto</div><h2 id="detailTitle">Progetto</h2><div class="badge-line" id="detailBadges"></div></div>
-<button aria-label="Chiudi scheda" class="icon-btn" id="closeDrawer">×</button>
-</div>
-<div id="detailBody"></div>
-</aside>
-</div>
-<div aria-hidden="true" class="modal" id="methodModal">
-<button aria-label="Chiudi legenda" class="modal-backdrop" id="methodBackdrop"></button>
-<section aria-labelledby="methodTitle" aria-modal="true" class="modal-card" role="dialog">
-<div class="drawer-head"><div><div class="eyebrow dark">Metodo</div><h2 id="methodTitle">Confidenza delle evidenze</h2></div><button aria-label="Chiudi" class="icon-btn" id="closeMethod">×</button></div>
-<div id="methodBody"></div>
-</section>
-</div>
-<script src="assets/documentary-summary.js"></script><script src="assets/execution-coverage-v07.js"></script><script src="assets/app.js"></script><script src="assets/main-summary-v06.js"></script><script src="assets/province-map-v06.js"></script><script src="assets/review-fixes.js"></script><script src="assets/contractor-direct-fix.js"></script><script src="assets/scope-intelligence.js"></script><script src="assets/docpass2-intelligence.js"></script><script src="assets/glossary.js"></script><script src="assets/stage-consistency.js"></script><script src="assets/timeline-coherence.js"></script><script src="assets/discovery-v04.js"></script><script src="assets/local-run.js"></script><script src="assets/ferx-wind-v08.js"></script><script src="assets/scheda-panel.js"></script><script src="assets/census-v09.js"></script>
+  <header>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Wind Market Intelligence</div>
+        <h1>Wind Agent Dashboard</h1>
+        <p>
+          Monitoraggio nazionale della pipeline eolica: progetti operativi onshore, priorità territoriali e pipeline offshore.
+          <a href="../">&larr; Radar fotovoltaico</a> ·
+          <a href="approfondimento.html">Progetti verificati: contractor e cantieri &rarr;</a>
+          Censimento: <strong id="censusDate">-</strong> · Fonti: <strong id="heroSources">-</strong>
+        </p>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-chip"><div class="label">Progetti</div><div class="value" id="heroRecords">-</div></div>
+        <div class="hero-chip"><div class="label">MW operativi</div><div class="value" id="heroMw">-</div></div>
+        <div class="hero-chip"><div class="label">Aggiornamento</div><div class="value" id="heroDate">-</div></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="section-title">Executive overview</h2>
+      <p class="section-subtitle">Vista sintetica per capire dove sono i progetti lavorabili e quanto pesa la pipeline offshore, più lontana dal cantiere.</p>
+      <div class="grid kpi-grid">
+        <div class="card kpi kpi-primary"><div class="label">Progetti operativi</div><div class="value" id="kpiRecords">-</div><div class="note">Onshore, progetti vivi; escluse modifiche e varianti</div></div>
+        <div class="card kpi kpi-primary"><div class="label">MW pipeline operativa</div><div class="value" id="kpiMw">-</div><div class="note">Somma MW dei progetti onshore</div></div>
+        <div class="card kpi"><div class="label">Pipeline offshore</div><div class="value" id="kpiOffMw">-</div><div class="note" id="kpiOffNote">Dato separato: in gran parte in scoping o VIA</div></div>
+        <div class="card kpi"><div class="label">Fonti attive</div><div class="value" id="kpiSources">-</div><div class="note">MASE, portali regionali, GSE, verifica manuale</div></div>
+        <div class="card kpi"><div class="label">Ultimo aggiornamento</div><div class="value" id="kpiDate">-</div><div class="note">Censimento più recente</div></div>
+      </div>
+      <div class="grid kpi-grid signals" style="margin-top:18px">
+        <div class="card kpi"><div class="label">Vicini al cantiere</div><div class="value" id="kpiReady">-</div><div class="note">Priorità alta o media</div></div>
+        <div class="card kpi"><div class="label">Incentivo FER X</div><div class="value" id="kpiFerx">-</div><div class="note" id="kpiFerxNote">Graduatoria GSE eolico</div></div>
+        <div class="card kpi"><div class="label">Progetti verificati</div><div class="value" id="kpiVerified">-</div><div class="note">Fase e contractor controllati a mano</div></div>
+        <div class="card kpi"><div class="label">Con scheda</div><div class="value" id="kpiCards">-</div><div class="note">Documenti letti; nuove schede ogni notte</div></div>
+        <div class="card kpi"><div class="label">Archiviati esclusi</div><div class="value" id="kpiArchived">-</div><div class="note" id="kpiArchivedNote">Progetti con tutte le procedure archiviate</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Priorità territoriale</h2>
+      <div class="split">
+        <div class="card"><canvas id="regionPriorityChart" height="130"></canvas></div>
+        <div class="card">
+          <div class="warning-box">
+            <strong>Metodo di lettura:</strong> la priorità è costruita sui progetti onshore. L'offshore resta una pipeline
+            separata: indica la pressione di mercato sulle coste, non cantieri dei prossimi anni.
+          </div>
+          <div class="scroll-small" style="margin-top: 14px;">
+            <table>
+              <thead><tr><th>Regione</th><th class="num">Score</th><th class="num">Progetti</th><th class="num">MW onshore</th><th class="num">MW offshore</th><th class="num">Vicini al cantiere</th></tr></thead>
+              <tbody id="regionBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Letture operative</h2>
+      <div class="grid chart-grid">
+        <div class="card"><canvas id="operationalCountChart" height="135"></canvas></div>
+        <div class="card"><canvas id="phaseMwChart" height="135"></canvas></div>
+        <div class="card"><canvas id="sourceChart" height="135"></canvas></div>
+        <div class="card"><canvas id="offshoreMwChart" height="135"></canvas></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Top progetti vicini al cantiere</h2>
+      <p class="section-subtitle">Vista pensata per scouting: i progetti onshore con i segnali più forti (incentivo FER X, autorizzazione, verifica di ottemperanza, cantiere avviato), poi per MW.</p>
+      <div class="card">
+        <div class="table-wrap top-table">
+          <table>
+            <thead><tr><th>Progetto</th><th>Proponente</th><th>Regione</th><th>Provincia</th><th>Comune/i</th><th>Fonte</th><th>Fase</th><th class="num">MW</th><th>Link</th></tr></thead>
+            <tbody id="topBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Pipeline completa</h2>
+      <div class="card">
+        <div class="filters">
+          <input id="searchInput" placeholder="Cerca progetto, proponente, comune...">
+          <select id="dataKindFilter">
+            <option value="">Tutti i dati</option>
+            <option value="onshore" selected>Solo pipeline operativa (onshore)</option>
+            <option value="offshore">Solo offshore</option>
+            <option value="card">Solo con scheda</option>
+            <option value="ferx">Solo con incentivo FER X assegnato</option>
+            <option value="cantiere">Vicini al cantiere (priorità alta e media)</option>
+            <option value="verified">Solo progetti verificati</option>
+            <option value="lead">FER X senza procedura trovata</option>
+          </select>
+          <select id="epcFilter" title="Impresa esecutrice / EPC trovata nei documenti">
+            <option value="">EPC: tutti i record</option>
+            <option value="any">EPC trovato (qualsiasi evidenza)</option>
+            <option value="A">EPC in atto di cantiere</option>
+            <option value="B">EPC solo negli elaborati</option>
+          </select>
+          <select id="sourceFilter"></select>
+          <select id="regionFilter"></select>
+          <select id="provinceFilter"></select>
+          <select id="phaseFilter"></select>
+          <select id="sortFieldFilter">
+            <option value="">Ordina per...</option>
+            <option value="power_mw">MW</option>
+            <option value="readiness">Priorità cantiere</option>
+            <option value="title">Progetto</option>
+            <option value="proponent">Proponente</option>
+            <option value="region">Regione</option>
+            <option value="province">Provincia</option>
+            <option value="source_label">Fonte</option>
+          </select>
+          <select id="sortDirectionFilter"><option value="desc">Decrescente</option><option value="asc">Crescente</option></select>
+          <label class="check"><input type="checkbox" id="sideFilter"> Includi modifiche e varianti</label>
+        </div>
+        <div class="small muted" style="margin-bottom: 10px;">Record visualizzati: <strong id="visibleCount">0</strong> · limite tabella: 700 righe</div>
+        <button type="button" id="exportFilteredCsv" style="display:block;margin:0 0 12px auto;border:0;border-radius:12px;padding:10px 16px;background:#0f766e;color:#ffffff;font-size:13px;font-weight:800;cursor:pointer;">Esporta CSV</button>
+        <div class="table-legend"><span class="legend-dot xl">≥ 100 MW</span><span class="legend-dot lg">50–99 MW</span></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Fonte</th><th>Regione</th><th>Provincia</th><th>Comune/i</th><th>Progetto</th><th>Proponente</th><th>Fase</th><th class="num">MW</th><th>Link</th></tr></thead>
+            <tbody id="pipelineBody"><tr><td colspan="9" class="empty">Caricamento del censimento…</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-note" id="footerNote">
+      Dashboard statica: i dati sono letti dal censimento eolico pubblicato sul ramo di memoria del progetto.
+      L'offshore è una pipeline separata e non va sommata ai progetti onshore come se fosse cantiere a breve.
+      «VIA conclusa» indica una procedura chiusa con decreto, positivo o negativo: l'esito si legge nella scheda o sul portale.
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+  <script src="assets/scheda-panel.js"></script>
+  <script src="assets/wind-dashboard.js"></script>
 </body>
 </html>

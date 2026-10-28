@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WIND = ROOT / "docs" / "wind"
-html = (WIND / "index.html").read_text(encoding="utf-8")
+html = (WIND / "approfondimento.html").read_text(encoding="utf-8")
 app = (WIND / "assets" / "app.js").read_text(encoding="utf-8")
 js = (WIND / "assets" / "province-map-v06.js").read_text(encoding="utf-8")
 css = (WIND / "assets" / "province-map-v06.css").read_text(encoding="utf-8")

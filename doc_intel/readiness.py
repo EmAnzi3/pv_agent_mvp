@@ -194,6 +194,7 @@ def run_wind(memory: str) -> dict:
             except (OSError, ValueError):
                 card = None
         res = classify(card, r.get("ferx") or None, None, record=r)
+        res = _verified_stage(res, r.get("curato"))
         if res:
             out[key] = res
             counts[res["level"] or res["phase"]] = counts.get(res["level"] or res["phase"], 0) + 1
@@ -202,3 +203,26 @@ def run_wind(memory: str) -> dict:
         "updated": datetime.now(timezone.utc).date().isoformat(), "projects": out}, ensure_ascii=False, indent=0,
         sort_keys=True), encoding="utf-8")
     return {"progetti_valutati": len(out), "per_livello": counts}
+
+
+# stages of the verified wind radar (checked by hand on site documents) override the documentary estimate
+VERIFIED = {"E8": ("realizzato", "Radar verificato: impianto in esercizio"),
+            "E7": ("in_corso", "Radar verificato: cantiere in corso"),
+            "E6": ("entro_12_mesi", "Radar verificato: procurement e affidamenti in corso"),
+            "E5": ("entro_12_mesi", "Radar verificato: decisione di investimento / incentivo"),
+            "E4": ("possibile", "Radar verificato: progetto autorizzato")}
+
+
+def _verified_stage(res: dict, cur: dict | None) -> dict:
+    stage = (cur or {}).get("stage")
+    if stage not in VERIFIED:
+        return res
+    phase, reason = VERIFIED[stage]
+    res = dict(res or {})
+    reasons = [reason] + [x for x in res.get("reasons", []) if x != reason]
+    if phase == "realizzato":
+        return {"phase": phase, "phase_label": PHASE_LABEL[phase], "window": reason, "score": 0, "level": None, "reasons": reasons}
+    score = max(res.get("score") or 0, BASE[phase] + 3)      # verified on site documents: worth an A-level signal
+    level = "Alta" if score >= 7 else "Media" if score >= 4 else "Bassa"
+    return {"phase": phase, "phase_label": PHASE_LABEL[phase], "window": res.get("window") or reason, "score": score,
+            "level": level, "reasons": reasons}

@@ -147,8 +147,7 @@ jobs:
           node --check docs/wind/assets/app.js
           node --check docs/wind/assets/execution-coverage-v07.js
           node --check docs/wind/assets/local-run.js
-          node --check docs/wind/assets/ferx-wind-v08.js
-          node --check docs/wind/assets/census-v09.js
+          node --check docs/wind/assets/wind-dashboard.js
           # the wind page uses a copy of the PV card panel: the two must stay identical
           cmp doc_intel/scheda_panel.js docs/wind/assets/scheda-panel.js
           cmp doc_intel/scheda_panel.css docs/wind/assets/scheda-panel.css
