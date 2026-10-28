@@ -22,6 +22,7 @@ import os
 import re
 import tempfile
 import time
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -52,12 +53,15 @@ SPECS: dict[str, dict[str, Any]] = {
     "puglia_opendata": {"module": "app.collectors.puglia", "cls": "PugliaCollector", "region": "Puglia", "where": "cloud",
                         "patch": {"PV_SOURCES": ["eolic"]}},
     "campania": {"module": "app.collectors.campania", "cls": "CampaniaCollector", "region": "Campania", "where": "cloud",
-                 "patch": {"SEARCH_KEYWORDS": ["eolico", "eolica"], "PV_KEYWORDS": WIND},
+                 # wind projects stay in the regional procedure for years: older filings are still live leads
+                 "patch": {"SEARCH_KEYWORDS": ["eolico", "eolica"], "PV_KEYWORDS": WIND, "MIN_DATE": datetime(2019, 1, 1)},
                  "strip": ["NON_PV_EXCLUDE"]},
     "calabria": {"module": "app.collectors.calabria", "cls": "CalabriaCollector", "region": "Calabria", "where": "cloud",
                  "patch": {"SEARCH_TERMS": ["impianto eolico", "parco eolico", "VIA eolico"], "PV_KEYWORDS": WIND}},
     "sardegna": {"module": "app.collectors.sardegna", "cls": "SardegnaCollector", "region": "Sardegna", "where": "cloud",
-                 "patch": {"SEARCH_KEYWORDS": ["eolico", "eolica"], "PV_KEYWORDS": WIND}, "strip": ["NON_PV_EXCLUDE"]},
+                 "patch": {"SEARCH_KEYWORDS": ["eolico"], "PV_KEYWORDS": WIND,
+                           "SEARCH_YEARS": [str(y) for y in range(datetime.now().year, 2019, -1)]},
+                 "strip": ["NON_PV_EXCLUDE"]},
     "sistema_puglia_energia": {"module": "app.collectors.sistema_puglia_energia", "cls": "SistemaPugliaEnergiaCollector",
                                "region": "Puglia", "where": "local", "patch": {"PV_KEYWORDS": WIND},
                                "strip": ["EXCLUDE_KEYWORDS"]},
@@ -109,8 +113,30 @@ def _windify(name: str, col, region: str) -> None:
         col.wind_mode = True                       # gentle detail reading (see SiciliaCollector._fetch_detail_info)
 
 
+LAST_STATS: dict[str, dict] = {}
+
+
+def _trace(col, method: str, stats: dict) -> None:
+    """Record the errors a collector swallows (a portal refusing the request looks like 'no results')."""
+    f = getattr(col, method, None)
+    if not f:
+        return
+
+    def wrapped(*a, **k):
+        try:
+            out = f(*a, **k)
+            stats.setdefault("calls", 0)
+            stats["calls"] += 1
+            return out
+        except Exception as exc:
+            stats.setdefault("errors", []).append(f"{type(exc).__name__}: {str(exc)[:160]}")
+            raise
+    setattr(col, method, wrapped)
+
+
 def collect(name: str) -> list[dict]:
     spec = SPECS[name]
+    stats = LAST_STATS.setdefault(name, {})
     mod = importlib.import_module(spec["module"])
     values = dict(spec.get("patch") or {})
     for attr in spec.get("strip") or []:
@@ -118,7 +144,10 @@ def collect(name: str) -> list[dict]:
     with _patched(mod, values), _debug_dir(mod):
         col = getattr(mod, spec["cls"])()
         _windify(name, col, spec["region"])
+        for m in ("_post_search", "_get_html", "_fetch_search", "_get_search_form"):
+            _trace(col, m, stats)
         res = col.fetch()
+    stats["collector_rows"] = len(res)
     out = []
     for r in res:
         pl = dict(r.payload or {})
@@ -130,6 +159,8 @@ def collect(name: str) -> list[dict]:
         pl["project_type_hint"] = "Eolico offshore" if re.search(r"(?i)off-?shore|galleggiant", r.title or "") else "Eolico"
         out.append({"external_id": f"{name}:{r.external_id}", "source": name, "source_url": r.source_url,
                     "title": r.title, "payload": pl, "statuses": [], "procedures": []})
+    stats["wind_rows"] = len(out)
+    stats["sample"] = [f"{(o['payload'].get('power_mw') or o['payload'].get('power') or '?')} | {o['title'][:90]}" for o in out[:4]]
     return out
 
 
@@ -145,7 +176,10 @@ def run(names: list[str] | None = None, where: str | None = None, out: str | Non
             report[n] = {"rows": len(got), "seconds": round(time.time() - t0)}
         except Exception as exc:  # one portal down must not stop the others
             report[n] = {"error": f"{type(exc).__name__}: {str(exc)[:300]}"}
-        print(f"[wind-regional] {n}: {report[n]}")
+        st = LAST_STATS.get(n, {})
+        print(f"[wind-regional] {n}: {report[n]} {json.dumps(st, ensure_ascii=False)[:700]}")
+        if os.environ.get("GITHUB_ACTIONS"):
+            print(f"::notice title=wind-regional {n}::{json.dumps({**report[n], **st}, ensure_ascii=False)[:900]}")
     if out:
         Path(out).parent.mkdir(parents=True, exist_ok=True)
         prev = {}
