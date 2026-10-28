@@ -199,7 +199,8 @@ def build(raw: list[dict], curated: list[dict], ferx_rows: list[dict], today: st
             "mw_onshore": round(sum(r["power_mw"] or 0 for r in out if not r.get("secondaria") and r["project_type"] == "Eolico"), 1),
             "mw_offshore": round(sum(r["power_mw"] or 0 for r in out if not r.get("secondaria") and r["project_type"] != "Eolico"), 1),
             "da_mase": sum(1 for r in records if r["source"] == "mase"), "da_regioni": added,
-            "regionali_gia_al_mase": merged, "lead_ferx": len(leads),
+            "regionali_gia_al_mase": merged, "regionali_trasmessi_non_vivi": getattr(_add_regional, "dropped", 0),
+            "lead_ferx": len(leads),
             "nel_radar_curato": len({r["curato"]["id"] for r in out if r["curato"]}),
             "con_ferx": sum(1 for r in out if r["ferx"]),
             "archiviati_esclusi": len(archived), "mw_archiviati": round(sum(r["power_mw"] or 0 for r in archived), 1),
@@ -213,11 +214,14 @@ REGION_LABEL = {"puglia_opendata": "Regione Puglia (open data VIA FER)", "sistem
                 "sardegna": "Regione Sardegna", "sicilia": "Regione Siciliana (SI-VVI)"}
 
 
+REGIONAL_MIN_MW = 5.0
+
+
 def _add_regional(records: list[dict], rows: list[dict], today: str) -> tuple[int, int]:
     """Regional wind procedures (onshore below 30 MW, PAUR, screening). One already on the MASE census or
     already added from another regional list (same municipality, power within 10 %, compatible company) is
     attached to that record as another source instead of becoming a second project."""
-    added = merged = 0
+    added = merged = dropped = 0
     for r in rows:
         pl = r.get("payload") or {}
         title = pl.get("title") or r.get("title") or ""
@@ -242,9 +246,22 @@ def _add_regional(records: list[dict], rows: list[dict], today: str) -> tuple[in
         }
         if not rec["municipalities"] and not power:
             continue
+        if power is not None and power < REGIONAL_MIN_MW:
+            continue                      # single small turbines (mini wind): not a building site for us
         twin = next((x for x in records if _places(x) & _places(rec) and _close(x["power_mw"], power, 0.10)
                      and (not rec["proponent"] or not x.get("proponent")
                           or _company(rec["proponent"], rec["municipalities"]) & _company(x.get("proponent"), x["municipalities"]))), None)
+        if not twin and power and power >= 20:
+            # a regional list naming one municipality of a national project (Puglia open data 'Trasmesso'):
+            # same region, the same power to the decimal and the municipality cited in the national record
+            twin = next((x for x in records if x["source"] == "mase" and x.get("region") == rec["region"]
+                         and _close(x["power_mw"], power, 0.005)
+                         and any(m in place_key(f"{x['title']} {x['municipalities']}") for m in _places(rec))), None)
+        if not twin and rec["source"] == "puglia_opendata" and re.search(r"(?i)trasmess", rec["procedure_status"]):
+            # 'Trasmesso': the Region forwarded it to the national VIA; MASE is the authority on whether it is
+            # alive. Not found among the live MASE projects -> archived or renamed there: not added
+            dropped += 1
+            continue
         if twin:
             twin.setdefault("altre_fonti", []).append({"fonte": rec["source_label"], "url": rec["url"],
                                                        "procedura": rec["procedure"], "stato": rec["procedure_status"]})
@@ -252,6 +269,7 @@ def _add_regional(records: list[dict], rows: list[dict], today: str) -> tuple[in
             continue
         records.append(rec)
         added += 1
+    _add_regional.dropped = dropped
     return added, merged
 
 
