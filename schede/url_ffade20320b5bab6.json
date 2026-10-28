@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"PV Alcamo - Monreale\", della potenza nominale di 40,20 MW e sistema di accumulo di capacità pari a 18 MWh e delle relative opere di connessione alla RTN, da reali",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10409",
  "source": "mase",
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "sintesi": [
   {
    "key": "potenza",
@@ -62,7 +62,7 @@
    "label": "Accumulo",
    "value": "40,2 MW / 18 MWh",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Valore prevalente negli elaborati; altri valori: 40,837 MW (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/945375",
     "page": 1,
@@ -75,7 +75,7 @@
    "label": "Durata cantiere",
    "value": "12 mesi",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Inizio lavori 03/06/2024 (previsione di progetto)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1404564",
     "page": 15,
@@ -92,17 +92,17 @@
    "Monreale"
   ],
   "coordinate": {
-   "lat": 37.89941,
-   "lon": 12.99836,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (68 riferimenti concordi)",
+   "lat": 37.898,
+   "lon": 13.001,
+   "tipo": "coordinate del sito dichiarate negli elaborati (86 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1374911",
-    "page": 18,
-    "document": "Integrazioni del 18/03/2026 - RCE_A_00 - Planimetria con distanze di prima approssimazione_05",
-    "excerpt": "323968,99"
+    "url": "https://va.mite.gov.it/File/Documento/945314",
+    "page": 16,
+    "document": "Relazione tecnica impianto fv ed opere elettriche",
+    "excerpt": "Le coordinate del sito sono: LAT 37,898 Nord; LON 13,001 Est"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.89941,12.99836",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.89800,13.00100",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -121,14 +121,26 @@
    "verified": true,
    "esecuzione": null,
    "office": "Via Triboldi Pietro 4 26015 Soresina Cr",
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "drensolare10@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/964532",
+      "page": 1,
+      "document": "Osservazioni del Libero Consorzio Comunale di Trapani, in data 19/01/2024",
+      "excerpt": "Alla Società DREN SOLARE 10 S.r.l. Pec: drensolare10@legalmail.it"
+     }
+    }
+   ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10409"
    }
   },
   {
-   "name": "Dr. Bellomo Gualtiero",
+   "name": "Dott. Geol. Gualtiero Bellomo",
    "kind": "persona",
    "roles": [
     "Geologo"
@@ -140,15 +152,55 @@
    "office": null,
    "contacts": [],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/945326",
-    "page": 453,
-    "document": "Studio di impatto ambientale",
-    "excerpt": "Il Geologo Dr.ssa Marino Maria Antonietta Dr. Bellomo Gualtiero"
+    "url": "https://va.mite.gov.it/File/Documento/1374914",
+    "page": 9,
+    "document": "Integrazioni del 18/03/2026 - RIR _00 -Relazione sulle interferenze e sulle modalità di risoluzione",
+    "excerpt": "rimanda alla Relazione Geologica redatta dal Dott. Geol. Gualtiero Bellomo allegata al presente progetto."
    }
   }
  ],
- "altri_soggetti": [],
- "stato": null,
+ "altri_soggetti": [
+  {
+   "name": "E-Way Finance S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "e-wayfinance@legalmail.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/960687",
+      "page": 23,
+      "document": "Osservazioni della Società E-Way 8, in data 11/01/2024",
+      "excerpt": "p.t. sig. Domenico Cerruti (C. F. CRRDNC65H20H703W), Pec: e-wayfinance@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "gabrielelipari@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/960687",
+      "page": 23,
+      "document": "Osservazioni della Società E-Way 8, in data 11/01/2024",
+      "excerpt": "Il Promittente Costituente: all'indirizzo sopra riportato in comparenza, PEC: gabrielelipari@pec.it;"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 03/06/2024, ma l'iter è proseguito; ultimo documento o atto del 22/06/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
@@ -163,6 +215,42 @@
      "page": 184,
      "document": "Studio di impatto ambientale",
      "excerpt": "stazione ME-Villa Dante è stata adeguata al PdV e rimessa in esercizio nel mese di febbraio 2020;  nel 2018 le stazioni PdV di proprietà del Libero Consorzio di"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "03/06/2024",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/945316",
+     "page": 10,
+     "document": "P.S.C. in fase di progettazione - schede di sicurezza",
+     "excerpt": "Data presunta di inizio lavori 03.06.2024 Durata presunta dei lavori (gg)"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "documentata",
+    "valore": "05/06/2027",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/945316",
+     "page": 10,
+     "document": "P.S.C. in fase di progettazione - schede di sicurezza",
+     "excerpt": "Data presunta fine lavori 05.06.2027 N° massimo di lavoratori giornalieri"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di giugno 2025",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 12 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1404564",
+     "page": 15,
+     "document": "Allegato al Decreto Direttoriale - Parere CTPNRR PNIEC del 16/04/2026",
+     "excerpt": "sintesi il Proponente, non emetterà inquinanti aeriformi e dunque non influenzerà la qualità dell’aria attuale. Unicamente durante i lavori di cantiere, della durata massima di 12 mesi, un aumento temporaneo del traffico"
     }
    }
   ],
@@ -207,6 +295,32 @@
      "document": "Studio di impatto ambientale",
      "excerpt": "stazione ME-Villa Dante è stata adeguata al PdV e rimessa in esercizio nel mese di febbraio 2020;  nel 2018 le stazioni PdV di proprietà del Libero Consorzio di"
     }
+   },
+   {
+    "label": "Inizio lavori",
+    "date": "03/06/2024",
+    "iso": "2024-06-03",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/945316",
+     "page": 10,
+     "document": "P.S.C. in fase di progettazione - schede di sicurezza",
+     "excerpt": "Data presunta di inizio lavori 03.06.2024 Durata presunta dei lavori (gg)"
+    }
+   },
+   {
+    "label": "Fine lavori",
+    "date": "05/06/2027",
+    "iso": "2027-06-05",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/945316",
+     "page": 10,
+     "document": "P.S.C. in fase di progettazione - schede di sicurezza",
+     "excerpt": "Data presunta fine lavori 05.06.2027 N° massimo di lavoratori giornalieri"
+    }
    }
   ],
   "document": {
@@ -225,9 +339,9 @@
  },
  "documentazione": {
   "documenti": 173,
-  "pagine": 1194,
-  "completa": false,
-  "da_leggere": 53
+  "pagine": 2576,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -258,8 +372,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 03/06/2024, ma l'iter è proseguito; ultimo documento o atto del 22/06/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
    "label": "Recapiti",
-   "reason": "9 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "28 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
