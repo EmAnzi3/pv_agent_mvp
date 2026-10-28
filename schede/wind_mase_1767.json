@@ -1,0 +1,881 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_1767",
+ "title": "Parco eolico Cerignola Veneta Sud nel territorio comunale di Cerignola (FG) della potenza complessiva pari a 79,8 MW",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1767",
+ "source": "mase",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "79,8 MW",
+   "sub": "Suddivisa in 3 lotti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1767",
+    "excerpt": "79,8 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "19",
+   "status": "da documenti",
+   "sub": "4,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 136 m",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1218321",
+    "page": 5,
+    "document": "PIANO INDAGINI PREVENTIVE",
+    "excerpt": "- 19 aerogeneratori; -"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "non indicata",
+   "status": "da verificare",
+   "sub": "Inizio lavori 01/10/2024 (campo presunto di piano di sicurezza o notifica)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1218320",
+    "page": 1,
+    "document": "Cronoprogramma dei lavori",
+    "excerpt": "IMPRESA: Paving Technology S.r.l. CRONOPROGRAMMA LAVORI - Data Consegna Lavori (Presunta): 01/10/2024 - Data Fine Lavori: 01/10/2025 (Rev. 00 - Settembre 2024) Realizzazione piazzola di montaggio e stoccaggio torre VS6"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Cerignola"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Cerignola%2C+FG%2C+Puglia",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Veneta Energia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "03954830281",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Borgogna 2 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "venetaenergia@legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1389878",
+      "page": 1,
+      "document": "Parere di ARPA Puglia, in data 13/05/2026",
+      "excerpt": "Veneta Energia S.r.l. venetaenergia@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1767"
+   }
+  },
+  {
+   "name": "Dott. Ing. Domenico Antonio Nuzzolo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1218325",
+    "page": 1,
+    "document": "Relazione Tecnica Generale - Parco eolico",
+    "excerpt": "Progettista Dott. Ing. Domenico Antonio NUZZOLO"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 01/10/2025, ma l'iter è proseguito; ultimo documento o atto del 22/10/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "decreto ministeriale n. 61 del 24/01/2022",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1389878",
+     "page": 1,
+     "document": "Parere di ARPA Puglia, in data 13/05/2026",
+     "excerpt": "e Con decreto ministeriale n. 61 del 24/01/2022 è stato rilasciato, in favore della Società Veneta Energia S.r.l., giudizio positivo di compatibilità ambientale per il progetto indicato"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di gennaio 2022",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1389878",
+     "page": 1,
+     "document": "Parere di ARPA Puglia, in data 13/05/2026",
+     "excerpt": "e Con decreto ministeriale n. 61 del 24/01/2022 è stato rilasciato, in favore della Società Veneta Energia S.r.l., giudizio positivo di compatibilità ambientale per il progetto indicato"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di febbraio 2023",
+    "dettaglio": "inizio stimato + durata del cantiere: 13 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1218320",
+     "page": 1,
+     "document": "Cronoprogramma dei lavori",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "13 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "decreto ministeriale n. 61",
+   "data": "24/01/2022",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1389878",
+    "page": 1,
+    "document": "Parere di ARPA Puglia, in data 13/05/2026",
+    "excerpt": "e Con decreto ministeriale n. 61 del 24/01/2022 è stato rilasciato, in favore della Società Veneta Energia S.r.l., giudizio positivo di compatibilità ambientale per il progetto indicato"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento/smobilizzo area logistica di cantiere",
+    "start": 12.56,
+    "end": 13.06,
+    "level": 1,
+    "summary": false,
+    "duration": "4 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS1",
+    "start": 0.31,
+    "end": 0.81,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS1",
+    "start": 0.81,
+    "end": 1.06,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS1",
+    "start": 1.06,
+    "end": 2.55,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS2",
+    "start": 1.06,
+    "end": 1.31,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS2",
+    "start": 1.31,
+    "end": 1.56,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS2",
+    "start": 1.56,
+    "end": 3.05,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS3",
+    "start": 1.56,
+    "end": 1.81,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS3",
+    "start": 1.81,
+    "end": 2.06,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS3",
+    "start": 2.06,
+    "end": 3.53,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS4",
+    "start": 2.06,
+    "end": 2.81,
+    "level": 1,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS4",
+    "start": 2.81,
+    "end": 3.06,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS4",
+    "start": 3.06,
+    "end": 4.54,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS5",
+    "start": 3.06,
+    "end": 3.81,
+    "level": 1,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS5",
+    "start": 3.81,
+    "end": 4.06,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Fronte 1 Realizzazione/adeguamento viabilità di accesso torre VS6",
+    "start": 4.06,
+    "end": 5.53,
+    "level": 0,
+    "summary": true,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS5",
+    "start": 4.06,
+    "end": 4.56,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS6",
+    "start": 4.56,
+    "end": 4.81,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS6",
+    "start": 4.81,
+    "end": 6.29,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS7",
+    "start": 4.81,
+    "end": 5.06,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS7",
+    "start": 5.06,
+    "end": 5.31,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS7",
+    "start": 5.31,
+    "end": 6.8,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS8",
+    "start": 5.31,
+    "end": 5.56,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS8",
+    "start": 5.56,
+    "end": 5.81,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS8",
+    "start": 5.81,
+    "end": 7.29,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS9",
+    "start": 5.81,
+    "end": 6.56,
+    "level": 1,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS9",
+    "start": 6.56,
+    "end": 6.81,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS9",
+    "start": 6.81,
+    "end": 8.28,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS10",
+    "start": 6.81,
+    "end": 7.31,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS10",
+    "start": 7.31,
+    "end": 7.56,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS10",
+    "start": 7.56,
+    "end": 9.04,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione cavidotto MV interrato tratti VS3-VS2/VS2-VS1/VS1-VS4/VS4-SE/VS6-V",
+    "start": 2.06,
+    "end": 9.56,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Opere edili accessorie, ripristini e sistemazione finali",
+    "start": 6.06,
+    "end": 11.06,
+    "level": 1,
+    "summary": false,
+    "duration": "20 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS11",
+    "start": 0.31,
+    "end": 1.06,
+    "level": 1,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS11",
+    "start": 1.06,
+    "end": 1.31,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS11",
+    "start": 1.31,
+    "end": 2.79,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS12",
+    "start": 1.31,
+    "end": 2.06,
+    "level": 1,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS12",
+    "start": 2.06,
+    "end": 2.31,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS12",
+    "start": 2.31,
+    "end": 3.79,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS13",
+    "start": 2.31,
+    "end": 3.06,
+    "level": 1,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS13",
+    "start": 3.06,
+    "end": 3.31,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS13",
+    "start": 3.31,
+    "end": 4.79,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS14",
+    "start": 3.31,
+    "end": 3.81,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS14",
+    "start": 3.81,
+    "end": 4.06,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS14",
+    "start": 4.06,
+    "end": 5.54,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS15",
+    "start": 4.06,
+    "end": 4.56,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Fronte 2 Realizzazione fondazione torre VS15",
+    "start": 4.81,
+    "end": 6.29,
+    "level": 0,
+    "summary": true,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS15",
+    "start": 4.56,
+    "end": 4.81,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS16",
+    "start": 4.81,
+    "end": 5.56,
+    "level": 1,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS16",
+    "start": 5.56,
+    "end": 5.81,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS16",
+    "start": 5.81,
+    "end": 7.29,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS17",
+    "start": 5.81,
+    "end": 6.56,
+    "level": 1,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS17",
+    "start": 6.56,
+    "end": 6.81,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS17",
+    "start": 6.81,
+    "end": 8.29,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS18",
+    "start": 6.81,
+    "end": 7.56,
+    "level": 1,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS18",
+    "start": 7.56,
+    "end": 7.81,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS18",
+    "start": 7.81,
+    "end": 9.29,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione/adeguamento viabilità di accesso torre VS19",
+    "start": 7.81,
+    "end": 8.56,
+    "level": 1,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Realizzazione piazzola di montaggio e stoccaggio torre VS19",
+    "start": 8.56,
+    "end": 8.81,
+    "level": 1,
+    "summary": false,
+    "duration": "1 sett."
+   },
+   {
+    "name": "Realizzazione fondazione torre VS19",
+    "start": 8.81,
+    "end": 10.29,
+    "level": 1,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Realizzazione cavidotto MV interrato tratti VS9-VS12/VS13-VS12/VS12-VS11/VS8-VS1",
+    "start": 2.06,
+    "end": 10.06,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "ALLESTIMENTO / SMOBILIZZO AREA LOGISTICA DI CANTIERE CANTIERE",
+    "start": 12.56,
+    "end": 13.06,
+    "level": 1,
+    "summary": false,
+    "duration": "4 sett."
+   },
+   {
+    "name": "REALIZZAZIONE STRADE INTERNE",
+    "start": 0.31,
+    "end": 8.56,
+    "level": 1,
+    "summary": false,
+    "duration": "33 sett."
+   },
+   {
+    "name": "REALIZZAZIONE PIAZZOLE DI MONTAGGIO E STOCCAGGIO",
+    "start": 0.81,
+    "end": 8.81,
+    "level": 1,
+    "summary": false,
+    "duration": "32 sett."
+   },
+   {
+    "name": "REALIZZAZIONE FONDAZIONI AEROGENERATORI",
+    "start": 1.06,
+    "end": 9.31,
+    "level": 1,
+    "summary": false,
+    "duration": "33 sett."
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO MT INTERRATO",
+    "start": 2.06,
+    "end": 10.06,
+    "level": 1,
+    "summary": false,
+    "duration": "32 sett."
+   },
+   {
+    "name": "OPERE EDILI ACCESSORIE, RISPRISTINI E SISTEMAZIONI FINALI",
+    "start": 6.06,
+    "end": 11.06,
+    "level": 1,
+    "summary": false,
+    "duration": "20 sett."
+   }
+  ],
+  "unit": "month",
+  "months": 13.06,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1218320",
+   "page": 1,
+   "document": "Cronoprogramma dei lavori",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "OTTOBRE",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "NOVEMBRE",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "DICEMBRE",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "GENNAIO",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "FEBBRAIO",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "MARZO",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "APRILE",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "MAGGIO",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "GIUGNO",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "LUGLIO",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "AGOSTO",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "SETTEMBRE",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "OTTOBRE",
+     "start": 12.0,
+     "end": 13.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "2 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1218319",
+    "page": 31,
+    "document": "Parere n. 3298 del 17 aprile 2020",
+    "excerpt": "Ottemperanza Fase di cantiere: ogni 2 mesi fino alla fine dei lavori e comunque prima della rimozione e smantellamento del"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "01/10/2024",
+    "iso": "2024-10-01",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1218320",
+     "page": 1,
+     "document": "Cronoprogramma dei lavori",
+     "excerpt": "IMPRESA: Paving Technology S.r.l. CRONOPROGRAMMA LAVORI - Data Consegna Lavori (Presunta): 01/10/2024 - Data Fine Lavori: 01/10/2025 (Rev. 00 - Settembre 2024) Realizzazione piazzola di montaggio e stoccaggio torre VS6"
+    }
+   }
+  ],
+  "document": {
+   "document": "Cronoprogramma dei lavori",
+   "url": "https://va.mite.gov.it/File/Documento/1218320"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 25/02/2019 - tempistiche cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/341069"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 450,
+  "pagine": 1313,
+  "completa": false,
+  "da_leggere": 330
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Veneta Energia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 79.8,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CERIGNOLA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 01/10/2025, ma l'iter è proseguito; ultimo documento o atto del 22/10/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "1803 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
