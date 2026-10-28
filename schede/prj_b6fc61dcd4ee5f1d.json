@@ -1,0 +1,284 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "prj:b6fc61dcd4ee5f1d",
+ "title": "REALIZZAZIONE DI UN IMPIANTO FOTOVOLTAICO DELLA POTENZA DI CIRCA 256,54 MWP E RELATIVO SISTEMA DI ACCUMULO INTEGRATO DELLA POTENZA E CAPACITÀ DI ACCUMULO PARI A 20MW-40MWH DA REALIZZARSI NEI COMUNI DI CATANIA (CT), MOTTA SANT'ANASTASIA (CT) E LENTINI (SR)",
+ "source_url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=274&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
+ "source": "sicilia",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "256,54 MWp",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=274&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0",
+    "excerpt": "256,54 MWP"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9524&repeatcount=0&ajaxIndex=0",
+    "page": 2,
+    "document": "20 - Elaborati di Progetto - RELAZIONE GENERALE PROGETTO DEFINITIVO",
+    "excerpt": "Figura 16 – Strutture di supporto “Tracker mono-assiale” ................................. 29"
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "560 ha",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9526&repeatcount=0&ajaxIndex=0",
+    "page": 3,
+    "document": "20 - Elaborati di Progetto - CRONOPROGRAMMA ESECUZIONE LAVORI",
+    "excerpt": "necessaria per il corretto posizionamento delle strutture e delle opere accessorie al funzionamento dell’impianto, una superficie complessiva pari a circa 560 Ha. Tutti i moduli saranno collegati direttamente agli invert"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "20 MW / 40 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 256,54 MW (2)",
+   "source": {
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9524&repeatcount=0&ajaxIndex=0",
+    "page": 32,
+    "document": "20 - Elaborati di Progetto - RELAZIONE GENERALE PROGETTO DEFINITIVO",
+    "excerpt": "Impianto di storage Si prevede che l’impianto fotovoltaico verrà coadiuvato da un sistema di storage da 20 MW con una capacità di 40 MWh. L’impianto di accumulo potrà operare come sistema integrato"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9528&repeatcount=0&ajaxIndex=0",
+    "page": 4,
+    "document": "02 - Avviso al pubblico - COMPUTO METRICO",
+    "excerpt": "funzionante per il primo ed i successivi mesi di utilizzo in cantiere n. 3 * 18 mesi * 8 aree 432,00"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "CT",
+  "comuni": [
+   "Catania"
+  ],
+  "coordinate": {
+   "lat": 37.8,
+   "lon": 15.876,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (5 riferimenti concordi)",
+   "source": {
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9524&repeatcount=0&ajaxIndex=0",
+    "page": 26,
+    "document": "20 - Elaborati di Progetto - RELAZIONE GENERALE PROGETTO DEFINITIVO",
+    "excerpt": "Lentini 37.800"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.80000,15.87600",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "BIG Fish SPV S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "10796040961",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Monza 259 20126 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "bigfishspv@unapec.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9801&repeatcount=0&ajaxIndex=0",
+      "page": 2,
+      "document": "01 - Istanza di attivazione della procedura - ISTANZA PAUR DI VALUTAZIONE IMPATTO  ...",
+      "excerpt": "Cell.: 3483206445 pec: bigfishspv@unapec.it e-mail: fabrizio.tortora@falckgroup.eu"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=274&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
+   }
+  },
+  {
+   "name": "Planning and development ICS S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9760&repeatcount=0&ajaxIndex=0",
+    "page": 1,
+    "document": "20 - Elaborati di Progetto - CARTA DEI RECETTORI E FONOEMISSIONI",
+    "excerpt": "Tettoia, pensilina Progettazione e sviluppo/Planning and development ICS SRL i | 15 ALL. =="
+   }
+  },
+  {
+   "name": "Dr. Bellomo Gualtiero",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9741&repeatcount=0&ajaxIndex=0",
+    "page": 34,
+    "document": "07 - Sintesi non Tecnica - SINTESI NON TECNICA",
+    "excerpt": "Il Geologo Dr.ssa Marino Maria Antonietta Dr. Bellomo Gualtiero"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Ing. Rossana Miglietta",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138989",
+     "occurrences": 2,
+     "source": {
+      "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9792&repeatcount=0&ajaxIndex=0",
+      "page": 3,
+      "document": "02 - Avviso al pubblico - PREVENTIVO DI CONNESSIONE E ACCETTAZIONE",
+      "excerpt": "Contatti: Eugenio Mazzini Tel. 06.8313.8989."
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9528&repeatcount=0&ajaxIndex=0",
+    "page": 4,
+    "document": "02 - Avviso al pubblico - COMPUTO METRICO",
+    "excerpt": "funzionante per il primo ed i successivi mesi di utilizzo in cantiere n. 3 * 18 mesi * 8 aree 432,00"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "20 - Elaborati di Progetto - CRONOPROGRAMMA ESECUZIONE LAVORI",
+   "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9526&repeatcount=0&ajaxIndex=0"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "20 - Elaborati di Progetto - CRONOPROGRAMMA ESECUZIONE LAVORI",
+    "url": "https://si-vvi.regione.sicilia.it/viavas/index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=1233&formid=28&rowid=9526&repeatcount=0&ajaxIndex=0"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 355,
+  "pagine": 1374,
+  "completa": false,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "BIG FISH SPV S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 256.54,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "Catania, Motta Sant'anastasia, Lentini",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CT",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "confermato"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "578 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
