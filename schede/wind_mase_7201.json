@@ -1,0 +1,374 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7201",
+ "title": "Impianto per la produzione di energia da fonte eolica ricadente nei comuni di Pietragalla (PZ), Vaglio di Basilicata (PZ), e Potenza, in località \"Poggio d'oro\", costituito da 13 aerogeneratori da 4,2 MW per una potenza complessiva pari a 54,6 MW.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7201",
+ "source": "mase",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "54,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7201",
+    "excerpt": "54,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da verificare",
+   "sub": "5,46 MW ciascuno · altezza mozzo 91,5 m · diametro rotore 136 m · Valore più ricorrente negli elaborati; altri valori: 13 (33), 3 (9), 9 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1268078",
+    "page": 11,
+    "document": "Allegato alla Determinazione della PCM - Parere CTVA del 20/05/2022",
+    "excerpt": "− Secondo il nuovo layout proposto, il progetto prevede dunque in sintesi: o la realizzazione di n° 10 aerogeneratori (WTGs) su torre tubolare in acciaio, di tipologia “VESTAS” modello “V136” da 4,2 MW di potenza, per un"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 05/2020 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 21 mesi (1), 8 mesi (1), 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/567018",
+    "page": 54,
+    "document": "Integrazioni del 07/06/2021 - A01_Relazione_Generale",
+    "excerpt": "La costruzione dell’intero parco eolico prevede circa 12 mesi e la vendita inizia al termine dei collaudi, circa un mese dopo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "PZ",
+  "comuni": [
+   "Vaglio Basilicata",
+   "Potenza",
+   "Pietragalla"
+  ],
+  "coordinate": {
+   "lat": 40.72071,
+   "lon": 15.83464,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (42 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/567025",
+    "page": 57,
+    "document": "Integrazioni del 07/06/2021 - A05_Relazione_specialistica-Studio_anemologico",
+    "excerpt": "LATITUDINE 40.725904 40°43’33.255” LONGITUDINE 15.846597 15°50’47.756”"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.72071,15.83464",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Exenergy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "01918210764",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Durini 9 20122 Milano Mi",
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7201"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Arch. Antonio Demaio",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "geologoviviani@gmail.com",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/374654",
+      "page": 1,
+      "document": "Quadro Riferimento Programmatico",
+      "excerpt": "= $| Arch. Antonio Demaio & g| Tel. 339.7511193 s & | ViaN. delli Carri, 48 - 71121 Foggia (FG) ° E-Mail: geologoviviani@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3397511193",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/374654",
+      "page": 1,
+      "document": "Quadro Riferimento Programmatico",
+      "excerpt": "2 2 . . S ‘| Via dei Frassini, 5 - 85100 Potenza (Pz) = $| Arch. Antonio Demaio & g| Tel. 339.7511193"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0881756251",
+     "occurrences": 13,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/374654",
+      "page": 1,
+      "document": "Quadro Riferimento Programmatico",
+      "excerpt": "s & | ViaN. delli Carri, 48 - 71121 Foggia (FG) ° E-Mail: geologoviviani@gmail.com n © | Tel. 0881.756251 | Fax 1784412324"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Clelia Romano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "romanoclelia@gmail.com",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/374654",
+      "page": 1,
+      "document": "Quadro Riferimento Programmatico",
+      "excerpt": "= Tel. 340.5809582 S S| Tel 329.0380983 = E-Mail: antoniobruscella@hotmail it ®© | E-Mail: romanoclelia@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3405809582",
+     "occurrences": 13,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/374654",
+      "page": 1,
+      "document": "Quadro Riferimento Programmatico",
+      "excerpt": "2 Piazza Alcide De Gasperi, 27 - 85100 Potenza (Pz) > Fi Piazza Masaniello, 6 - 85050 Savoia di Lucania (Pz) = Tel. 340.5809582 S S| Tel 329.0380983"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3290380983",
+     "occurrences": 13,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/374654",
+      "page": 1,
+      "document": "Quadro Riferimento Programmatico",
+      "excerpt": "2 Piazza Alcide De Gasperi, 27 - 85100 Potenza (Pz) > Fi Piazza Masaniello, 6 - 85050 Savoia di Lucania (Pz) = Tel. 340.5809582 S S| Tel 329.0380983"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Marianna Denora",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "luigiupo@libero.it",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/567078",
+      "page": 1,
+      "document": "Integrazioni del 07/06/2021 - A17_1_a_3_DOC_SIA_QuadroRiferimentoAmbientale",
+      "excerpt": "3 Corso Roma, 110 - 71121 Foggia 5 @ Via Savona, 3 - 70022 Altamura (BA) g | E-Mail: luigiupo@libero.it H 2 | Tel. Fax 080 3147468"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Global leaders in wind assessment technology WEA sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sales@nrgsystems.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/567025",
+      "page": 21,
+      "document": "Integrazioni del 07/06/2021 - A05_Relazione_specialistica-Studio_anemologico",
+      "excerpt": "110 Riggs Road - Hinesburg : VT 05461 USA - TEL (802) 482-2255 + FAX (802) 482-2272 - EMAIL sales@nrgsystems.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "05/2020",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/374564",
+     "page": 3,
+     "document": "Cronoprogramma",
+     "excerpt": " Progetto esecutivo Apertura cantiere (maggio 2020)  Piazzole piste e Fondazioni"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2021",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 12 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/567018",
+     "page": 54,
+     "document": "Integrazioni del 07/06/2021 - A01_Relazione_Generale",
+     "excerpt": "La costruzione dell’intero parco eolico prevede circa 12 mesi e la vendita inizia al termine dei collaudi, circa un mese dopo."
+    }
+   }
+  ],
+  "durata_cantiere": "12 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 21 mesi (1), 8 mesi (1), 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/567018",
+    "page": 54,
+    "document": "Integrazioni del 07/06/2021 - A01_Relazione_Generale",
+    "excerpt": "La costruzione dell’intero parco eolico prevede circa 12 mesi e la vendita inizia al termine dei collaudi, circa un mese dopo."
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "05/2020",
+    "iso": "2020-05",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/374564",
+     "page": 3,
+     "document": "Cronoprogramma",
+     "excerpt": " Progetto esecutivo Apertura cantiere (maggio 2020)  Piazzole piste e Fondazioni"
+    }
+   }
+  ],
+  "document": {
+   "document": "Integrazioni del 07/06/2021 - A14_Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/567034"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Integrazioni del 07/06/2021 - A14_Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/567034"
+   },
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/374564"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 216,
+  "pagine": 2550,
+  "completa": false,
+  "da_leggere": 96
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Exenergy S.r.l.s.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 54.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "PIETRAGALLA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PZ",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "122 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
