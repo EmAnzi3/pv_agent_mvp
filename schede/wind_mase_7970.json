@@ -5,18 +5,18 @@
  "title": "Progetto di un impianto eolico composto da n. 7 aerogeneratori, ciascuno di potenza nominale di 5,6 MW, e della potenza complessiva pari a 39,2 MW, da realizzarsi nel Comune di Castelpagano (BN), in località \"Masseria Fattori\" e \"Masseria Richi\", e delle relative opere di connessione alla RTN, ubicate anche nei Comuni di Colle Sannita (BN), Circello (BN) e Morcone (BN).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7970",
  "source": "mase",
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
-   "value": "5,6 MW",
+   "value": "39,2 MW",
    "sub": null,
    "source": {
     "document": "titolo del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7970",
-    "excerpt": "5,6 MW"
+    "excerpt": "39,2 MW"
    }
   },
   {
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "7",
    "status": "da documenti",
-   "sub": "0,80 MW ciascuno · diametro rotore 150 · Valore prevalente negli elaborati; altri valori: 6 (5), 3 (3), 1 (3)",
+   "sub": "5,60 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 2 (9), 1 (6), 3 (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1439345",
     "page": 1,
@@ -35,14 +35,14 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "48 mesi",
+   "value": "18 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1), 18 mesi (1), 9 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 48 mesi (1), 8 mesi (1), 9 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1419840",
-    "page": 18,
-    "document": "Capitolato speciale d'appalto - Impianto eolico 45 MW Castelpagano (BN)",
-    "excerpt": "ancorché riconoscibili, purché denunciati dalla COMMITTENZA entro 48 mesi dall'ultimazione dei lavori riconosciuta e accettata."
+    "url": "https://va.mite.gov.it/File/Documento/1400671",
+    "page": 29,
+    "document": "Preventivo connessione impianto eolico 45 MW Castelpagano",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
    }
   }
  ],
@@ -52,9 +52,19 @@
   "comuni": [
    "Castelpagano"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Castelpagano%2C+BN%2C+Campania",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 41.40151,
+   "lon": 14.83999,
+   "tipo": "centro della tavola georeferenziata di progetto (95 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/582740",
+    "page": 78,
+    "document": "ELAB.02 RELAZIONE DI COMPATIBILITA' GEOLOGICA ED IDROGEOLOGICA 1 DI 3",
+    "excerpt": "ELAB.02 RELAZIONE DI COMPATIBILITA' GEOLOGICA ED IDROGEOLOGICA 1 DI 3"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.40151,14.83999",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
@@ -112,10 +122,62 @@
    }
   },
   {
-   "name": "Geol. Alfonso Pappalardo",
+   "name": "Cogein Energy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "07937941214",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Antonio Gramsci 24 80122 Napoli Na",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "cogeinenergy@pec.it",
+     "occurrences": 104,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1419826",
+      "page": 1,
+      "document": "Relazione Previsionale di Impatto Acustico",
+      "excerpt": "COMUNE DI compinvestimenti@libero.it CASTELPAGANO cogeinenergy@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "pec.cogeinenergy@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/582760",
+      "page": 35,
+      "document": "ELAB.20 PIANO DI DISMISSIONE DELL'IMPIANTO EOLICO E DELLE OPERE CONNESSE",
+      "excerpt": "Pec.cogeinenergy@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "compinvestimenti@libero.it",
+     "occurrences": 61,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/582661",
+      "page": 1,
+      "document": "TAV-06.2 INQUADRAMENTO IMPIANTO E OPERE CONNESSE SU ORTOFOTO",
+      "excerpt": "www.newgreen.it compinvestimenti@libero.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1431083",
+    "page": 11,
+    "document": "VERIFICA DI OTTEMPERANZA - CONDIZIONE N° 8 - RELAZIONE TECNICA SCARICO ACQUE METEORICHE SSE",
+    "excerpt": "Committente: Cogein Energy srl Progettista: Dott. Ing. Giuseppe DE MASI"
+   }
+  },
+  {
+   "name": "Dott. Alfonso Pappalardo",
    "kind": "persona",
    "roles": [
-    "Progettista",
     "Geologo"
    ],
    "vat": null,
@@ -138,20 +200,31 @@
     {
      "type": "E-mail",
      "value": "alfonso_pappalardo@libero.it",
-     "occurrences": 11,
+     "occurrences": 13,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1431137",
       "page": 2,
       "document": "integrazioni del 10/09/2026 - VERIFICA DI OTTEMPERANZA CONDIZIONE N° 1 - RELAZIONE GEOLOGICA , IDROGEOLOGICA E INDAGINI GEOGNOSTICHE CA1/21",
       "excerpt": "tel. 0815152559 - cell.re 3389448712 EMAIL: alfonso_pappalardo@libero.it; P.E.C.: alfonso_pappalardo@pec.epap.it"
      }
+    },
+    {
+     "type": "E-mail",
+     "value": "alfonso_pappalardo@epap.sicurezzapostale.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/582740",
+      "page": 1,
+      "document": "ELAB.02 RELAZIONE DI COMPATIBILITA' GEOLOGICA ED IDROGEOLOGICA 1 DI 3",
+      "excerpt": "EMAIL: alfonso_pappalardo@libero.it; P.E.C.: alfonso_pappalardo@epap.sicurezzapostale.it"
+     }
     }
    ],
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1431137",
-    "page": 1,
+    "page": 36,
     "document": "integrazioni del 10/09/2026 - VERIFICA DI OTTEMPERANZA CONDIZIONE N° 1 - RELAZIONE GEOLOGICA , IDROGEOLOGICA E INDAGINI GEOGNOSTICHE CA1/21",
-    "excerpt": "PROGETTAZIONE Geol. Alfonso Pappalardo"
+    "excerpt": "Geologo: Dott. Alfonso Pappalardo"
    }
   },
   {
@@ -260,41 +333,6 @@
    "source": null
   },
   {
-   "name": "Cogein Energy S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "cogeinenergy@pec.it",
-     "occurrences": 12,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1419826",
-      "page": 1,
-      "document": "Relazione Previsionale di Impatto Acustico",
-      "excerpt": "COMUNE DI compinvestimenti@libero.it CASTELPAGANO cogeinenergy@pec.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "compinvestimenti@libero.it",
-     "occurrences": 3,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/582661",
-      "page": 1,
-      "document": "TAV-06.2 INQUADRAMENTO IMPIANTO E OPERE CONNESSE SU ORTOFOTO",
-      "excerpt": "www.newgreen.it compinvestimenti@libero.it"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
    "name": "Sonora S.r.l.",
    "kind": "società",
    "roles": [],
@@ -307,7 +345,7 @@
     {
      "type": "E-mail",
      "value": "sonora@sonorasri.com",
-     "occurrences": 6,
+     "occurrences": 7,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1419826",
       "page": 521,
@@ -324,6 +362,41 @@
       "page": 2,
       "document": "Relazione Previsionale di Impatto Acustico",
       "excerpt": "Sonora S.r.l. - Via dei Bersaglieri, 9, 81100 Caserta - tel 0823351196 - mail sonora@sonorasrl.com - web www.sonorasrl.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/582754",
+      "page": 22,
+      "document": "ELAB.14 RELAZIONE PRELIMINARE SULLE STRUTTURE E FONDAZIONI-CALCOLI",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/582754",
+      "page": 22,
+      "document": "ELAB.14 RELAZIONE PRELIMINARE SULLE STRUTTURE E FONDAZIONI-CALCOLI",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
      }
     }
    ],
@@ -348,6 +421,18 @@
     }
    },
    {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 21/07/2030",
+    "dettaglio": "«efficacia temporale non inferiore a 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/864657",
+     "page": 43,
+     "document": "Allegato al Decreto - parere CTPNRR-PNIEC n. 58 del 16/09/2022",
+     "excerpt": "per la realizzazione e gli ulteriori tempi necessari per arrivare all'avvio dei lavori, si valuta che il provvedimento di VIA possa avere efficacia temporale non inferiore a 5 anni. la Commissione Tecnica PNRR-PNIEC"
+    }
+   },
+   {
     "voce": "Inizio lavori",
     "livello": "stimata",
     "valore": "non prima di luglio 2025",
@@ -362,17 +447,17 @@
    {
     "voce": "Fine lavori",
     "livello": "stimata",
-    "valore": "non prima di luglio 2029",
-    "dettaglio": "inizio stimato + durata del cantiere: 48 mesi",
+    "valore": "non prima di febbraio 2028",
+    "dettaglio": "inizio stimato + durata del cantiere: 32 mesi (cronoprogramma)",
     "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1419840",
-     "page": 18,
-     "document": "Capitolato speciale d'appalto - Impianto eolico 45 MW Castelpagano (BN)",
-     "excerpt": "ancorché riconoscibili, purché denunciati dalla COMMITTENZA entro 48 mesi dall'ultimazione dei lavori riconosciuta e accettata."
+     "url": "https://va.mite.gov.it/File/Documento/582758",
+     "page": 6,
+     "document": "ELAB.17 CRONOPROGRAMMA DELLE ATTIVITA'",
+     "excerpt": ""
     }
    }
   ],
-  "durata_cantiere": "48 mesi",
+  "durata_cantiere": "32 mesi (cronoprogramma)",
   "autorizzazione": {
    "atto": "D.D. n. 61",
    "data": "21/07/2025",
@@ -391,20 +476,310 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "SONDAGGI E INDAGINI DI LABORATORIO",
+    "start": 0.61,
+    "end": 3.62,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "REDAZIONE PROGETTO ESECUTIVO",
+    "start": 2.62,
+    "end": 6.63,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "APERTURA CANTIERE",
+    "start": 6.63,
+    "end": 8.64,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "STRADE E PIAZZOLE",
+    "start": 6.63,
+    "end": 13.65,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "6.CAVIDOTTI",
+    "start": 8.63,
+    "end": 13.65,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Scavi e pali (o platea), magrone",
+    "start": 7.63,
+    "end": 13.65,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Arrivo conci e posizionamento",
+    "start": 10.64,
+    "end": 14.65,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Getto fondazione e maturazione cls",
+    "start": 12.64,
+    "end": 18.66,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Trasporti, Sollevamenti, Montaggio, Completamenti meccanici",
+    "start": 18.65,
+    "end": 23.67,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Approvvigionamento materiali",
+    "start": 7.63,
+    "end": 9.64,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione area stazione e lavori civili",
+    "start": 8.63,
+    "end": 16.65,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Montaggi elettromeccanici",
+    "start": 10.64,
+    "end": 16.65,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Prove sotto tensione",
+    "start": 16.65,
+    "end": 18.66,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "OPERE DI RIPRISTINO AMBIENTALE E DI FINITURA",
+    "start": 23.66,
+    "end": 27.68,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ESERCIZIO DI PROVA, COLLAUDO FINALE",
+    "start": 27.67,
+    "end": 29.68,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "DISMISSIONE CANTIERE",
+    "start": 29.68,
+    "end": 30.68,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "CHIUSURA CANTIERE",
+    "start": 30.68,
+    "end": 31.69,
+    "level": 0,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 31.69,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/582758",
+   "page": 6,
+   "document": "ELAB.17 CRONOPROGRAMMA DELLE ATTIVITA'",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "25",
+     "start": 24.0,
+     "end": 25.0
+    },
+    {
+     "label": "26",
+     "start": 25.0,
+     "end": 26.0
+    },
+    {
+     "label": "27",
+     "start": 26.0,
+     "end": 27.0
+    },
+    {
+     "label": "28",
+     "start": 27.0,
+     "end": 28.0
+    },
+    {
+     "label": "29",
+     "start": 28.0,
+     "end": 29.0
+    },
+    {
+     "label": "30",
+     "start": 29.0,
+     "end": 30.0
+    },
+    {
+     "label": "31",
+     "start": 30.0,
+     "end": 31.0
+    },
+    {
+     "label": "32",
+     "start": 31.0,
+     "end": 32.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
-   "text": "48 mesi",
+   "text": "18 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1), 18 mesi (1), 9 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 48 mesi (1), 8 mesi (1), 9 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1419840",
-    "page": 18,
-    "document": "Capitolato speciale d'appalto - Impianto eolico 45 MW Castelpagano (BN)",
-    "excerpt": "ancorché riconoscibili, purché denunciati dalla COMMITTENZA entro 48 mesi dall'ultimazione dei lavori riconosciuta e accettata."
+    "url": "https://va.mite.gov.it/File/Documento/1400671",
+    "page": 29,
+    "document": "Preventivo connessione impianto eolico 45 MW Castelpagano",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
    }
   },
   "milestones": [],
@@ -412,21 +787,16 @@
    "document": "ELAB.17 CRONOPROGRAMMA DELLE ATTIVITA'",
    "url": "https://va.mite.gov.it/File/Documento/582758"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
-  "altri": [
-   {
-    "document": "ELAB.17 CRONOPROGRAMMA DELLE ATTIVITA'",
-    "url": "https://va.mite.gov.it/File/Documento/582758"
-   }
-  ],
+  "note": null,
+  "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 297,
-  "pagine": 3440,
+  "pagine": 5559,
   "completa": false,
-  "da_leggere": 177
+  "da_leggere": 57
  },
  "confronto": [
   {
@@ -462,7 +832,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "860 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1427 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
