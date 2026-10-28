@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto fotovoltaico denominato \"DIFESA GRANDE\" di potenza pari a 42,9 MW e relative opere di connessione alla RTN, da realizzarsi nel Comune di Ariano Irpino (AV).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11757",
  "source": "mase",
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "sintesi": [
   {
    "key": "potenza",
@@ -32,11 +32,24 @@
    }
   },
   {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "47,58 ha",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1290785",
+    "page": 21,
+    "document": "RELAZIONE TECNICA DI IMPIANTO",
+    "excerpt": "dall’impianto fotovoltaico (m2) Totale superficie recintata: circa 475.802 m2 Superficie occupata dai moduli"
+   }
+  },
+  {
    "key": "pannelli",
    "label": "Superficie coperta dai pannelli",
    "value": "20,979 ha",
    "status": "da documenti",
-   "sub": "",
+   "sub": "44% dell'area",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1369912",
     "page": 19,
@@ -65,21 +78,46 @@
    "Ariano Irpino"
   ],
   "coordinate": {
-   "lat": 44.495,
-   "lon": 15.244,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati",
+   "lat": 41.19914,
+   "lon": 15.15472,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (5 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1369935",
-    "page": 32,
-    "document": "Integrazioni del 25/02/2026 - ANALISI DI STABILITA' DEL VERSANTE",
-    "excerpt": "163.770 0.893 0.953 20.464 45.095 42.968 56.859 54.177 164.662 0.321 0.343 20.464 44.495 15.244 56.263 19.276"
+    "url": "https://va.mite.gov.it/File/Documento/1290728",
+    "page": 2,
+    "document": "CARTA DELLA COPERTURA DEL SUOLO",
+    "excerpt": "CARTA DELLA COPERTURA DEL SUOLO"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=44.49500,15.24400",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.19914,15.15472",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
-  "lotti": []
+  "lotti": [
+   {
+    "lotto": "Area 1",
+    "lat": 41.19227,
+    "lon": 15.17728,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.19227,15.17728",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1290791",
+     "page": 5,
+     "document": "PRIME INDICAZIONI PER LA STESURA DEI PIANI DI SICUREZZA",
+     "excerpt": "Localizzazione AREA 1: Latitudine: 41.192267°N Longitudine: 15.177283°E AREA 2: Latitudine: 41.19543° N Longitudine: 15.162002° E"
+    }
+   },
+   {
+    "lotto": "Area 2",
+    "lat": 41.19543,
+    "lon": 15.162,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.19543,15.16200",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1290791",
+     "page": 5,
+     "document": "PRIME INDICAZIONI PER LA STESURA DEI PIANI DI SICUREZZA",
+     "excerpt": "AREA 1: Latitudine: 41.192267°N Longitudine: 15.177283°E AREA 2: Latitudine: 41.19543° N Longitudine: 15.162002° E"
+    }
+   }
+  ]
  },
  "soggetti": [
   {
@@ -163,6 +201,30 @@
  ],
  "altri_soggetti": [
   {
+   "name": "Dr. Geol. Lorenzo Borselli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "lborselli@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1369935",
+      "page": 3,
+      "document": "Integrazioni del 25/02/2026 - ANALISI DI STABILITA' DEL VERSANTE",
+      "excerpt": "▪ e-mail: lborselli@gmail.com CV e WEB page personale: www.lorenzo-borselli.eu"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "WEB PV Difesa S.r.l.",
    "kind": "società",
    "roles": [],
@@ -216,30 +278,6 @@
       "page": 16,
       "document": "Integrazioni del 25/02/2026 - Benestare-CRM_WEB-I",
       "excerpt": "loc porto Mirabelio, 19125 La Spezia (SP) PEC: webpvariano@legalrnail.it"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Dr. Geol. Lorenzo Borselli",
-   "kind": "persona",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "lborselli@gmail.com",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1369935",
-      "page": 3,
-      "document": "Integrazioni del 25/02/2026 - ANALISI DI STABILITA' DEL VERSANTE",
-      "excerpt": "▪ e-mail: lborselli@gmail.com CV e WEB page personale: www.lorenzo-borselli.eu"
      }
     }
    ],
@@ -324,9 +362,9 @@
  },
  "documentazione": {
   "documenti": 208,
-  "pagine": 1044,
-  "completa": false,
-  "da_leggere": 88
+  "pagine": 2668,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -358,7 +396,7 @@
  "da_verificare": [
   {
    "label": "Recapiti",
-   "reason": "1302 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "3155 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
