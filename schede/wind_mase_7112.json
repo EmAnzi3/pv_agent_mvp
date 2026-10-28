@@ -1,0 +1,678 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7112",
+ "title": "Impianto di produzione di energia elettrica da fonte eolica denominato \"Serra Giannina\" costituito da 10 aerogeneratori, ciascuno di potenza pari a 4,5 MW, per una potenza complessiva di 45 MW, localizzato nei Comuni di Genzano di Lucania (PZ) e Banzi (PZ) e relative opere di connessione elettrica e infrastrutture necessarie.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7112",
+ "source": "mase",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "4,5 MW",
+   "sub": "Valore ricorrente negli elaborati (12 volte); il titolo riporta 45 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1406635",
+    "page": 3,
+    "document": "Integrazioni del 17/06/2026 - RAPPORTO TECNICO DI CARATTERIZZAZIONE DELLE TERRE E ROCCE DA SCAVO",
+    "excerpt": "come modificato in corso di istruttoria attraverso la riduzione del numero di aerogeneratori da 10 a 7 macchine di potenza pari a 4,5 MW e per una potenza complessiva di 31,5 MW . Con Determinazione Dirigenziale n.1092 d"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da verificare",
+   "sub": "0,64 MW ciascuno · altezza mozzo 108 m · diametro rotore 163 m · Valore più ricorrente negli elaborati; altri valori: 6 (34), 10 (13), 1 (10)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1406635",
+    "page": 3,
+    "document": "Integrazioni del 17/06/2026 - RAPPORTO TECNICO DI CARATTERIZZAZIONE DELLE TERRE E ROCCE DA SCAVO",
+    "excerpt": "esercizio di un impianto per la produzione di energia elettrica da fonte eolica denominato “Serra Giannina” costituito da n.7 aerogeneratori, ciascuno di potenza pari a 4,5 MW, per una potenza complessiva di 31,5MW, dell"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "PZ",
+  "comuni": [
+   "Genzano Di Lucania",
+   "Banzi"
+  ],
+  "coordinate": {
+   "lat": 40.88156,
+   "lon": 16.091,
+   "tipo": "centro della tavola georeferenziata di progetto (677 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1374979",
+    "page": 2,
+    "document": "Progetto Esecutivo - Impianto Eolico da 42 MW a Banzi e Genzano",
+    "excerpt": "Progetto Esecutivo - Impianto Eolico da 42 MW a Banzi e Genzano"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.88156,16.09100",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.87747,
+   "lon": 16.09186,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1395190",
+    "page": 22,
+    "document": "Integrazioni del 30/04/2026 - REPORT DI MONITORAGGIO DELLA FAUNA (AVIFAUNA E CHIROTTEROFAUNA)- ANTE OPERAM",
+    "excerpt": "592229,623"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.87747,16.09186"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06400370968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 131,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1432823",
+      "page": 1,
+      "document": "Relazione di Ottemperanza alla condizione ambientale n.4 Mitigazione del Parere CTVIA n. 131 del 23/07/2021",
+      "excerpt": "P.IVA/C.F. 06400370968 PEC: rwerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7112"
+   }
+  },
+  {
+   "name": "EGM Project S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "02094310766",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Vincenzo Verrastro 15/A 85100 Potenza Pz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "egmproject@pec.it",
+     "occurrences": 2205,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1406635",
+      "page": 2,
+      "document": "Integrazioni del 17/06/2026 - RAPPORTO TECNICO DI CARATTERIZZAZIONE DELLE TERRE E ROCCE DA SCAVO",
+      "excerpt": "EGM PROJECT SRL - Via Vincenzo Verrastro - 15/A- 85100 Potenza info@egmproject.it - egmproject@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@egmproject.it",
+     "occurrences": 2205,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1406635",
+      "page": 2,
+      "document": "Integrazioni del 17/06/2026 - RAPPORTO TECNICO DI CARATTERIZZAZIONE DELLE TERRE E ROCCE DA SCAVO",
+      "excerpt": "EGM PROJECT SRL - Via Vincenzo Verrastro - 15/A- 85100 Potenza info@egmproject.it - egmproject@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1432823",
+    "page": 1,
+    "document": "Relazione di Ottemperanza alla condizione ambientale n.4 Mitigazione del Parere CTVIA n. 131 del 23/07/2021",
+    "excerpt": "PROGETTAZIONE: EGM PROJECT S.R.L."
+   }
+  },
+  {
+   "name": "Ing. Carmen Martone",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1406635",
+    "page": 1,
+    "document": "Integrazioni del 17/06/2026 - RAPPORTO TECNICO DI CARATTERIZZAZIONE DELLE TERRE E ROCCE DA SCAVO",
+    "excerpt": "PROGETTAZIONE: Ing. Carmen Martone"
+   }
+  },
+  {
+   "name": "Geol. Raffaele Nardone",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1375036",
+    "page": 31,
+    "document": "Relazione Idrogeologica - Impatto di un impianto eolico nei comuni di Banzi e Genzano (PZ)",
+    "excerpt": "IL GEOLOGO"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Direzione e Coordinamento SG Flat Finance Holding S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dagostinocostruzioni@pec.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420190",
+      "page": 4,
+      "document": "Parere ARPA Basilicata, in data 07/08/2026",
+      "excerpt": "Sede Legale: Viale Padre Accurso, snc – 83030 Montefalcione (AV) – Tel. +39 0825973589 Fax +39 0825977700 PEC: dagostinocostruzioni@pec.it Codice fiscale e P.IVA: 02461490647 Capitale Sociale € 15.000.000,00 R.E.A. di Av"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0825973589",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420190",
+      "page": 4,
+      "document": "Parere ARPA Basilicata, in data 07/08/2026",
+      "excerpt": "Direzione e Coordinamento SG FLAT Finance Holding S.p.A. Sede Legale: Viale Padre Accurso, snc – 83030 Montefalcione (AV) – Tel. +39 0825973589 Fax +39 0825977700"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "STE Energy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0492963900",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1375031",
+      "page": 1,
+      "document": "SOTTOSTAZIONE SERRA GIANNINA",
+      "excerpt": "Via Sorio, 120 - 35141 Padova (IT) Tel. +39 049.2963900 Fax +39 049.2963901 www.ste-energy.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Antonia Rianò",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "antonia.raino@rwe.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420190",
+      "page": 14,
+      "document": "Parere ARPA Basilicata, in data 07/08/2026",
+      "excerpt": "Tel : +39 349 9341765 Email : antonia.raino@rwe.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3499341765",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420190",
+      "page": 14,
+      "document": "Parere ARPA Basilicata, in data 07/08/2026",
+      "excerpt": "Ing. Antonia Rianò Tel : +39 349 9341765"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Unicalce S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "servizitecprodotti@unicalce.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1420190",
+      "page": 9,
+      "document": "Parere ARPA Basilicata, in data 07/08/2026",
+      "excerpt": "apericante 1-24012 Val Brembilla (BG) Fax: +39.(0)341.257282 Stabilimento di Itri (LT) E-mail: servizitecprodotti@unicalce.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto Ministeriale n. 210 del 25/05/2022",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1406634",
+     "page": 1,
+     "document": "Integrazioni del 17/06/2026 - Comunicazione esito istruttoria - Verifica di ottemperanza condizioni ambientali impianto eolico Serra Giannina",
+     "excerpt": "Con Decreto Ministeriale n. 210 del 25.05.2022 è stato rilasciato, in favore della Società RWE Renewables Italia S.r.l., giudizio favorevole di compatibilità ambientale per il progetto in oggetto,"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2022",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1406634",
+     "page": 1,
+     "document": "Integrazioni del 17/06/2026 - Comunicazione esito istruttoria - Verifica di ottemperanza condizioni ambientali impianto eolico Serra Giannina",
+     "excerpt": "Con Decreto Ministeriale n. 210 del 25.05.2022 è stato rilasciato, in favore della Società RWE Renewables Italia S.r.l., giudizio favorevole di compatibilità ambientale per il progetto in oggetto,"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di settembre 2022",
+    "dettaglio": "inizio stimato + durata del cantiere: 4 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1402816",
+     "page": 1,
+     "document": "Integrazioni del 12/06/2026 - Cronoprogramma - Serra Giannina",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "4 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "Decreto Ministeriale n. 210",
+   "data": "25/05/2022",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1406634",
+    "page": 1,
+    "document": "Integrazioni del 17/06/2026 - Comunicazione esito istruttoria - Verifica di ottemperanza condizioni ambientali impianto eolico Serra Giannina",
+    "excerpt": "Con Decreto Ministeriale n. 210 del 25.05.2022 è stato rilasciato, in favore della Società RWE Renewables Italia S.r.l., giudizio favorevole di compatibilità ambientale per il progetto in oggetto,"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Project schedule - Cronoprogramma BoP Wind Farm SERRA",
+    "start": 0.85,
+    "end": 3.88,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "armatura plinto",
+    "start": 1.08,
+    "end": 1.43,
+    "level": 2,
+    "duration": "9 g",
+    "summary": false
+   },
+   {
+    "name": "cavidotto da wtg08 verso wtg 03 ml",
+    "start": 1.54,
+    "end": 2.38,
+    "level": 2,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "realizzazione piazzola",
+    "start": 0.0,
+    "end": 0.23,
+    "level": 2,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "armatura plinto",
+    "start": 1.6,
+    "end": 1.92,
+    "level": 2,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "cavidotto da wtg03 verso wtg04 ml.",
+    "start": 2.22,
+    "end": 3.52,
+    "level": 2,
+    "duration": "30 g",
+    "summary": false
+   },
+   {
+    "name": "Scavo plinto di fondazione",
+    "start": 0.01,
+    "end": 0.26,
+    "level": 2,
+    "duration": "6 g",
+    "summary": false
+   },
+   {
+    "name": "armatura plinto",
+    "start": 3.36,
+    "end": 3.68,
+    "level": 2,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "cavidotto da wtg04 verso SE ml.",
+    "start": 1.77,
+    "end": 3.53,
+    "level": 2,
+    "duration": "40 g",
+    "summary": false
+   },
+   {
+    "name": "WTG05",
+    "start": 0.17,
+    "end": 1.86,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "strada di accesso",
+    "start": 1.08,
+    "end": 1.43,
+    "level": 2,
+    "duration": "9 g",
+    "summary": false
+   },
+   {
+    "name": "cassonetto stradale",
+    "start": 1.44,
+    "end": 1.69,
+    "level": 2,
+    "duration": "6 g",
+    "summary": false
+   },
+   {
+    "name": "realizzazione piazzola",
+    "start": 1.77,
+    "end": 2.08,
+    "level": 2,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "Scavo plinto di fondazione",
+    "start": 2.09,
+    "end": 2.47,
+    "level": 2,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "armatura plinto",
+    "start": 2.68,
+    "end": 3.03,
+    "level": 2,
+    "duration": "9 g",
+    "summary": false
+   },
+   {
+    "name": "completamento piazzola",
+    "start": 3.46,
+    "end": 3.74,
+    "level": 2,
+    "duration": "7 g",
+    "summary": false
+   },
+   {
+    "name": "cavidotto da wtg05 verso wtg09 ml",
+    "start": 1.77,
+    "end": 2.15,
+    "level": 2,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "WTG09",
+    "start": 0.92,
+    "end": 3.84,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "esecuzione pali di fondazione",
+    "start": 1.64,
+    "end": 2.02,
+    "level": 2,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "armatura plinto",
+    "start": 2.32,
+    "end": 2.7,
+    "level": 2,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "cavidotto da wtg09 a wtg10 ml. 1991",
+    "start": 2.22,
+    "end": 2.73,
+    "level": 2,
+    "duration": "12 g",
+    "summary": true
+   },
+   {
+    "name": "Attività Divisione Cardine Riepilogo",
+    "start": 0.3,
+    "end": 1.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "esecuzione pali di fondazione",
+    "start": 1.92,
+    "end": 2.33,
+    "level": 2,
+    "duration": "9 g",
+    "summary": false
+   },
+   {
+    "name": "armatura plinto",
+    "start": 2.67,
+    "end": 3.12,
+    "level": 2,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "getto plinto",
+    "start": 0.0,
+    "end": 0.26,
+    "level": 2,
+    "duration": "1 g",
+    "summary": false
+   },
+   {
+    "name": "cavidtto da wtg10 verso set ml. 2235",
+    "start": 0.0,
+    "end": 4.42,
+    "level": 2,
+    "duration": "15 g",
+    "summary": true
+   },
+   {
+    "name": "Attività Divisione",
+    "start": 1.3,
+    "end": 2.86,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 4.42,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1402816",
+   "page": 1,
+   "document": "Integrazioni del 12/06/2026 - Cronoprogramma - Serra Giannina",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "mese",
+   "etichette": [
+    {
+     "label": "2",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "3",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "4",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "5",
+     "start": 3.0,
+     "end": 4.0
+    }
+   ],
+   "unita": null
+  },
+  "duration": null,
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 12/06/2026 - Cronoprogramma - Serra Giannina",
+   "url": "https://va.mite.gov.it/File/Documento/1402816"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/356593"
+   },
+   {
+    "document": "PROGETTO DI DISMISSIONE DELL'IMPIANTO (Relazione sulle operazioni di dismissione+Computo metrico delle operazioni di dismissione+Cronoprogramma delle fasi attuative di dismissione)",
+    "url": "https://va.mite.gov.it/File/Documento/356713"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 279,
+  "pagine": 4196,
+  "completa": false,
+  "da_leggere": 159
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "RWE Renewables Italia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 45.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GENZANO DI LUCANIA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PZ",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 45 MW, gli elaborati 4,5 MW"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "1619 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
