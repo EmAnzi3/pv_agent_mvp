@@ -127,6 +127,12 @@ def _trace(col, method: str, stats: dict) -> None:
             out = f(*a, **k)
             stats.setdefault("calls", 0)
             stats["calls"] += 1
+            if isinstance(out, (list, str)):          # result sizes: an empty page vs a page with rows
+                stats.setdefault(f"{method}_sizes", []).append(len(out))
+                stats[f"{method}_sizes"] = stats[f"{method}_sizes"][-6:]
+            if isinstance(out, str) and method == "_post_search":
+                txt = re.sub(r"<[^>]+>", " ", out)
+                stats["post_text"] = re.sub(r"\s+", " ", txt)[:260]
             return out
         except Exception as exc:
             stats.setdefault("errors", []).append(f"{type(exc).__name__}: {str(exc)[:160]}")
@@ -144,7 +150,7 @@ def collect(name: str) -> list[dict]:
     with _patched(mod, values), _debug_dir(mod):
         col = getattr(mod, spec["cls"])()
         _windify(name, col, spec["region"])
-        for m in ("_post_search", "_get_html", "_fetch_search", "_get_search_form"):
+        for m in ("_post_search", "_get_html", "_fetch_search", "_get_search_form", "_parse_results_table"):
             _trace(col, m, stats)
         res = col.fetch()
     stats["collector_rows"] = len(res)
