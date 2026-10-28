@@ -16,7 +16,7 @@ Il Radar pubblico corrente contiene:
 
 ## Censimento eolico (v0.9)
 
-Sotto il radar curato la pagina mostra il **censimento automatico**: tutti i progetti eolici vivi del portale VIA MASE e gli impianti FER X eolici senza procedura nazionale, con filtri, segnali (radar curato, FER X, vicini al cantiere, EPC) e la scheda documentale prodotta di notte come per il fotovoltaico. Dati sul ramo `doc-intel-state` (`wind/census.json`). Nessun record del censimento entra nel canonico senza la verifica del Discovery.
+Sotto il radar curato la pagina mostra il **censimento automatico**: tutti i progetti eolici vivi del portale VIA MASE e gli impianti FER X eolici senza procedura nazionale, con filtri, segnali (radar curato, FER X, vicini al cantiere, EPC) e la scheda documentale prodotta di notte come per il fotovoltaico. Dati sul ramo `doc-intel-state` (`wind/census.json`). Le procedure regionali arrivano dal cloud (Puglia open data, Campania, Calabria, Sardegna) e dal PC dell'utente con `aggiorna_wind_radar.bat` (Sistema Puglia, Basilicata, Sicilia, quest'ultima dalla rete aziendale e con letture lente): dopo il BAT, commit e push di `data/census-regional-local.json`. Nessun record del censimento entra nel canonico senza la verifica del Discovery.
 
 ## Discovery interno
 

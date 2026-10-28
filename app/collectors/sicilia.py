@@ -36,6 +36,8 @@ DETAIL_CACHE = Path("reports") / "sicilia_detail_cache.json"
 DETAIL_TTL_DAYS = 14
 DETAIL_PAUSE_S = 4.0
 DETAIL_MAX_PER_RUN = 150
+WIND_DETAIL_MAX_PER_RUN = 40
+WIND_DETAIL_PAUSE_S = 6.0
 
 COMMERCIAL_PV_KEYWORDS = [
     "fotovoltaico",
@@ -1041,10 +1043,12 @@ class SiciliaCollector(BaseCollector):
         cache = self._detail_cache()
         hit = cache.get(url)
         fresh = hit and (time.time() - hit.get("t", 0)) < DETAIL_TTL_DAYS * 86400
-        if fresh or SiciliaCollector._detail_reads >= DETAIL_MAX_PER_RUN:
+        wind = getattr(self, "wind_mode", False)          # wind census: even gentler, it is a second pass
+        cap, pause = (WIND_DETAIL_MAX_PER_RUN, WIND_DETAIL_PAUSE_S) if wind else (DETAIL_MAX_PER_RUN, DETAIL_PAUSE_S)
+        if fresh or SiciliaCollector._detail_reads >= cap:
             return (hit or {}).get("info") or {}
         if SiciliaCollector._detail_reads:
-            time.sleep(DETAIL_PAUSE_S)
+            time.sleep(pause)
         SiciliaCollector._detail_reads += 1
         info = self._fetch_detail_info_network(url, debug_base)
         if info:
