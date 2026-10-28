@@ -4,6 +4,7 @@ import hashlib
 import json
 import os
 import sqlite3
+from contextlib import contextmanager
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -14,11 +15,21 @@ ROOT = Path(__file__).resolve().parents[2]
 DB_PATH = Path(os.environ.get("WIND_AGENT_DB", ROOT / "data" / "wind_agent.sqlite"))
 
 
-def _connect() -> sqlite3.Connection:
+@contextmanager
+def _connect():
+    """Commit (or roll back) and CLOSE the connection: 'with sqlite3.connect()' alone leaves the file open,
+    which on Windows keeps it locked (the validator could not delete its temporary database)."""
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
-    return conn
+    try:
+        yield conn
+        conn.commit()
+    except Exception:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
 
 
 def init_db() -> None:

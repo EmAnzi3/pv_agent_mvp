@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-28 — Primo giro locale del censimento eolico: Sistema Puglia prendeva per eolica ogni pagina (il menu del sito cita l'eolico); ora serve un atto che descriva un impianto eolico con potenza e luogo, e le pagine già lette che non lo sono non vengono riscaricate. Validatore `check_wind_v06_agents.py` su Windows: le connessioni SQLite del motore eolico ora vengono chiuse (il file temporaneo restava bloccato).
+
 - 2026-10-28 — Censimento eolico regionale: i collector regionali del fotovoltaico rilanciati con filtro eolico (`app/collectors/wind_regional.py`). Dal cloud ogni settimana: Puglia (open data VIA FER), Campania, Calabria, Sardegna. Dal PC con `aggiorna_wind_radar.bat` (portali che rifiutano IP esteri): Sistema Puglia, Basilicata e Sicilia; il file `docs/wind/data/census-regional-local.json`, dopo commit e push, aggiorna da solo il censimento. Procedure regionali già presenti al MASE unite al progetto nazionale («Anche in Regione»); le pratiche pugliesi «Trasmesso» al MASE non più vive non entrano; turbine singole sotto 5 MW escluse. Filtro «Fonte» e fasi regionali nella pagina.
 - 2026-10-28 — Sicilia (SI-VVI): pagine di dettaglio lette con cache di 14 giorni, pausa di 4 secondi e al massimo 150 pagine per giro (eolico: 40 pagine, 6 secondi), per non provocare nuovi blocchi. Campania: portale VIA passato a https; la ricerca in http restituiva il modulo vuoto e il collector non trovava più nulla da maggio 2026 (vale anche per il fotovoltaico).
 

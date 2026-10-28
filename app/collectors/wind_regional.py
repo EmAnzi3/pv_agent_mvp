@@ -113,6 +113,49 @@ def _windify(name: str, col, region: str) -> None:
         col._extract_province = lambda text, municipalities: _locate(" ".join(municipalities or []) or (text or ""), region)[1]
     if name == "sicilia":
         col.wind_mode = True                       # gentle detail reading (see SiciliaCollector._fetch_detail_info)
+    if name == "sistema_puglia_energia":
+        _sistema_puglia(col)
+
+
+WIND_ACT = re.compile(r"(?i)impiant\w*\s+(?:di\s+produzione\s+[^.]{0,60}?)?eolic|parc\w*\s+eolic|centrale\s+eolic|"
+                      r"aer[e]?ogenerator|fonte\s+eolica|\beolico\b[^.]{0,40}\b\d+[.,]?\d*\s*mw")
+SP_CACHE = Path("reports") / "wind_sistema_puglia_seen.json"
+
+
+def _sistema_puglia(col) -> None:
+    """Sistema Puglia publishes one act per page and every page carries the site menu (which names wind
+    energy): a page is a wind act only when the act itself describes a wind plant, with a power and a place.
+    Pages already read and found not to be wind acts are not downloaded again (acts never change)."""
+    try:
+        seen = json.loads(SP_CACHE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        seen = {}
+    state = {"url": None}
+    get, parse = col._get_html, col._parse_detail_page
+
+    def get_html(url):
+        if seen.get(url) is False:
+            return None
+        return get(url)
+
+    def parse_page(html_page, url, detail_id):
+        state["url"] = url
+        return parse(html_page=html_page, url=url, detail_id=detail_id)
+
+    def relevant(parsed):
+        act = f"{parsed.get('administrative_title') or ''} {parsed.get('plain_text_sample') or ''}"
+        ok = bool(WIND_ACT.search(act)) and parsed.get("power_mw") is not None \
+            and bool(parsed.get("municipalities") or parsed.get("proponent"))
+        if state["url"]:
+            seen[state["url"]] = ok
+            try:
+                SP_CACHE.parent.mkdir(parents=True, exist_ok=True)
+                SP_CACHE.write_text(json.dumps(seen), encoding="utf-8")
+            except OSError:
+                pass
+        return ok
+
+    col._get_html, col._parse_detail_page, col._is_relevant = get_html, parse_page, relevant
 
 
 LAST_STATS: dict[str, dict] = {}
