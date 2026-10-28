@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un nuovo impianto integrato agri-voltaico da realizzarsi nel comune di Adria (RO) denominato \"Impianto agrivoltaico Adria Bellombra\" e con una potenza nominale di 39.195 kWp\"",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10830",
  "source": "mase",
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "62,35 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 73,22 ha (6), 49,23 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 73,22 ha (14), 49,23 ha (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1207118",
     "page": 5,
@@ -45,11 +45,24 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "17,5 MW / 70 MWh",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1438573",
+    "page": 42,
+    "document": "Allegato al Decreto Direttoriale - Parere Commissione Tecnica PNRR - PNIEC del 04.06.2026",
+    "excerpt": "integrato con sistema di accumulo della potenza nominale di 17,5 MW (70 MWh) denominato \"Gagliardo\" e delle relative opere di connessione alla RTN"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "5 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 100 giorni (circa 3 mesi) (3), 19 settimane (circa 4 mesi) (2), 6 mesi (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 19 settimane (circa 4 mesi) (5), 100 giorni (circa 3 mesi) (5), 6 mesi (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1438573",
     "page": 18,
@@ -67,7 +80,7 @@
   "coordinate": {
    "lat": 45.014,
    "lon": 12.02915,
-   "tipo": "coordinate del sito dichiarate negli elaborati (133 riferimenti concordi)",
+   "tipo": "coordinate del sito dichiarate negli elaborati (222 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1057088",
     "page": 112,
@@ -97,7 +110,7 @@
     {
      "type": "PEC",
      "value": "suncosunredsrl@legalmail.it",
-     "occurrences": 96,
+     "occurrences": 167,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1057088",
       "page": 1,
@@ -126,7 +139,7 @@
     {
      "type": "E-mail",
      "value": "info@flyren.eu",
-     "occurrences": 89,
+     "occurrences": 149,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1057088",
       "page": 1,
@@ -174,6 +187,17 @@
    "contacts": [
     {
      "type": "PEC",
+     "value": "funzione.psa@pec.enav.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1203043",
+      "page": 2,
+      "document": "Integrazioni del 30/12/2024 - Nota Risposta Enti - VIA",
+      "excerpt": "ENAV SPA Operations funzione.psa@pec.enav.it"
+     }
+    },
+    {
+     "type": "PEC",
      "value": "csadria.segreteria-protocollo@pec.it",
      "occurrences": 1,
      "source": {
@@ -181,17 +205,6 @@
       "page": 2,
       "document": "Integrazioni del 30/12/2024 - Nota Risposta Enti - VIA",
       "excerpt": "Comune di Adria csadria.segreteria-protocollo@pec.it"
-     }
-    },
-    {
-     "type": "PEC",
-     "value": "funzione.psa@pec.enav.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1203043",
-      "page": 2,
-      "document": "Integrazioni del 30/12/2024 - Nota Risposta Enti - VIA",
-      "excerpt": "ENAV SPA Operations funzione.psa@pec.enav.it"
      }
     }
    ],
@@ -210,12 +223,36 @@
     {
      "type": "PEC",
      "value": "protocollo.aulss5@pecveneto.it",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1106119",
       "page": 2,
       "document": "Richiesta integrazioni della Regione Veneto",
       "excerpt": "All’Azienda ULSS n. 5 Polesana protocollo.aulss5@pecveneto.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Concrete S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0498754720",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1057058",
+      "page": 12,
+      "document": "Relazione preliminare calcolo strutture",
+      "excerpt": "http://www.concrete.it Rivenditore: CONCRETE SRL - Via della Pieve 19 - 35121 Padova - tel.049-8754720"
      }
     }
    ],
@@ -226,12 +263,68 @@
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": "6 mesi (cronoprogramma)",
-  "autorizzazione": null,
-  "note": [
-   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "DECRETO n. 52 del 30/09/2025",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1311895",
+     "page": 2,
+     "document": "Parere della Regione del Veneto - Unità Organizzativa Valutazione Impatto Ambientale in data 1/10/2025",
+     "excerpt": "DECRETO N. 52 DEL 30 SETTEMBRE 2025"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 30/09/2030",
+    "dettaglio": "«efficacia temporale pari a 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1438573",
+     "page": 48,
+     "document": "Allegato al Decreto Direttoriale - Parere Commissione Tecnica PNRR - PNIEC del 04.06.2026",
+     "excerpt": "ambientali riportate nel seguito del presente documento; – il provvedimento di VIA possa avere efficacia temporale pari a 5 anni, poiché, oltre ai tempi per la realizzazione dell’opera in progetto, si devono aggiungere i"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di settembre 2025",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1311895",
+     "page": 2,
+     "document": "Parere della Regione del Veneto - Unità Organizzativa Valutazione Impatto Ambientale in data 1/10/2025",
+     "excerpt": "DECRETO N. 52 DEL 30 SETTEMBRE 2025"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di marzo 2026",
+    "dettaglio": "inizio stimato + durata del cantiere: 6 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1203073",
+     "page": 2,
+     "document": "Integrazioni del 30/12/2024 - DJ230012-ADR$ T-CRP0-01 Cronoprogramma",
+     "excerpt": ""
+    }
+   }
   ],
+  "durata_cantiere": "6 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "DECRETO n. 52",
+   "data": "30/09/2025",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1311895",
+    "page": 2,
+    "document": "Parere della Regione del Veneto - Unità Organizzativa Valutazione Impatto Ambientale in data 1/10/2025",
+    "excerpt": "DECRETO N. 52 DEL 30 SETTEMBRE 2025"
+   }
+  },
+  "note": [],
   "legenda": {
    "documentata": "data scritta nei documenti",
    "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
@@ -549,7 +642,7 @@
   "duration": {
    "text": "5 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 100 giorni (circa 3 mesi) (3), 1 mese (3), 19 settimane (circa 4 mesi) (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 1 mese (6), 19 settimane (circa 4 mesi) (5), 100 giorni (circa 3 mesi) (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1438573",
     "page": 18,
@@ -574,9 +667,9 @@
  },
  "documentazione": {
   "documenti": 195,
-  "pagine": 1988,
-  "completa": false,
-  "da_leggere": 75
+  "pagine": 3711,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -616,7 +709,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "42 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "298 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
