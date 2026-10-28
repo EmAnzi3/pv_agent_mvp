@@ -1,0 +1,155 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "url:c86fb489c32620ee",
+ "title": "luminora sparpagliata s.r.l - Mesagne, Torre Susanna, Erchie - 30 MW",
+ "source_url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=62922",
+ "source": "sistema_puglia_energia",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "30 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=62922",
+    "excerpt": "30 MW"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOybOAAB&p_name_allegato=&p_esito=0 ",
+    "page": 1,
+    "document": "documento",
+    "excerpt": "ed all’esercizio di un impianto di produzione di energia elettrica di tipo agro-voltaico, da realizzarsi"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "3 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOybOAAB&p_name_allegato=&p_esito=0 ",
+    "page": 17,
+    "document": "documento",
+    "excerpt": "• Copia del presente Nulla Osta, dovrà esserci restituito controfirmato per accettazione prima dell’inizio dei Vs. lavori; inoltre, trascorsi 3 mesi dalla data della presente in mancanza di tale"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BR",
+  "comuni": [
+   "Mesagne",
+   "Torre Susanna",
+   "Erchie"
+  ],
+  "coordinate": {
+   "lat": 40.41156,
+   "lon": 17.75992,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (8 riferimenti concordi)",
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOybOAAB&p_name_allegato=&p_esito=0 ",
+    "page": 16,
+    "document": "documento",
+    "excerpt": "Bollettino Ufficiale della Regione Puglia - n. 15 del 20-2-2025 COORD:40.436332,17.769813"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.41156,17.75992",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "3 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "3 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOybOAAB&p_name_allegato=&p_esito=0 ",
+    "page": 17,
+    "document": "documento",
+    "excerpt": "• Copia del presente Nulla Osta, dovrà esserci restituito controfirmato per accettazione prima dell’inizio dei Vs. lavori; inoltre, trascorsi 3 mesi dalla data della presente in mancanza di tale"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 1,
+  "pagine": 32,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "luminora sparpagliata s.r.l",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 30.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "Mesagne, Torre Susanna, Erchie",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BR",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}

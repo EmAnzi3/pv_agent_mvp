@@ -1,0 +1,163 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "url:f53970ec67b6b38d",
+ "title": "new solar green s.r.l - Salice Salentino, Erchie, Avetrana - 26.4 MW",
+ "source_url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=62887",
+ "source": "sistema_puglia_energia",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "26,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=62887",
+    "excerpt": "26.4 MW"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOychAAB&p_name_allegato=&p_esito=0 ",
+    "page": 12,
+    "document": "documento",
+    "excerpt": "08/11/2021, per l’Impianto Agro-Fotovoltaico identificato con codice ID_VIA 610. Riscontro Vs. nota del"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOychAAB&p_name_allegato=&p_esito=0 ",
+    "page": 30,
+    "document": "documento",
+    "excerpt": "attivata a norma di legge, fino a 20 anni a partire dall’entrata in esercizio commerciale dell’impianto, purché quest’ultima intervenga entro e non oltre 18 mesi dalla data di fine dei lavori. In assenza di evidenza all’"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "LE",
+  "comuni": [
+   "Salice Salentino",
+   "Erchie",
+   "Avetrana"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Salice+Salentino%2C+LE%2C+Puglia",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "NEW Solar Green S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "05059710755",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=62887"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOychAAB&p_name_allegato=&p_esito=0 ",
+    "page": 30,
+    "document": "documento",
+    "excerpt": "attivata a norma di legge, fino a 20 anni a partire dall’entrata in esercizio commerciale dell’impianto, purché quest’ultima intervenga entro e non oltre 18 mesi dalla data di fine dei lavori. In assenza di evidenza all’"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 1,
+  "pagine": 35,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "new solar green s.r.l",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 26.4,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "Salice Salentino, Erchie, Avetrana",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LE",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "1 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
