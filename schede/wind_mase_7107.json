@@ -1,0 +1,612 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7107",
+ "title": "Impianto di produzione di energia elettrica da fonte eolica denominato \"Parco Eolico Montaratro\" costituito da 14 aerogeneratori, per una potenza complessiva di 81,2 MW, localizzato nei Comuni di Troia (FG), Biccari (FG) e Lucera (FG) e relative opere di connessione in Comune di Troia. - Prescrizione: 3c i)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7107",
+ "source": "mase",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "81,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7107",
+    "excerpt": "81,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "23",
+   "status": "da documenti",
+   "sub": "3,53 MW ciascuno · altezza mozzo 121 m · diametro rotore 158 m · Valore prevalente negli elaborati; altri valori: 2 (6), 4 (6), 15 (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1371715",
+    "page": 1,
+    "document": "Allegato alla Comunicazione VA esito valutazione - Parere della CTVA del 18/02/2026",
+    "excerpt": "eolica denominato \"Parco Eolico Montaratro\" costituito da 23 aerogeneratori, ciascuno di potenza pari a 5,3 MW, per una potenza complessiva di 121,90"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/356382",
+    "page": 44,
+    "document": "STUDIO DI IMPATTO AMBIENTALE (S.I.A.)",
+    "excerpt": "Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Troia",
+   "Biccari",
+   "Lucera"
+  ],
+  "coordinate": {
+   "lat": 41.34205,
+   "lon": 15.25997,
+   "tipo": "coordinate del sito dichiarate negli elaborati (17 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/412507",
+    "page": 38,
+    "document": "Integrazioni del 08/07/2020 - Relazione geologica",
+    "excerpt": "Le coordinate del sito investigato (centro degli stendimenti) sono le seguenti: MASW/S.R. – 41°20'32.32\"N - 15°15'35.37\"E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.34205,15.25997",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.34393,
+   "lon": 15.35858,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/356342",
+    "page": 9,
+    "document": "RELAZIONE GEOLOGICA",
+    "excerpt": "530000"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.34393,15.35858"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "WPD Monte Cigliano S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "15225701000",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Luca Gaurico 9-11 00143 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wpdmontecigliano@legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1324374",
+      "page": 1,
+      "document": "Rich_ottemp_cond_3_lett_c_p_i",
+      "excerpt": "Fax 06 96035324 PEC: wpdmontecigliano@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7107"
+   }
+  },
+  {
+   "name": "M&M Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/686667",
+    "page": 1,
+    "document": "EOL-SIA-22-Troia_mon_Avifauna_annuale",
+    "excerpt": "PROPONENTE:"
+   }
+  },
+  {
+   "name": "Ing. Mariano Marseglia",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "ing.marianomarseglia@gmail.com",
+     "occurrences": 90,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686667",
+      "page": 1,
+      "document": "EOL-SIA-22-Troia_mon_Avifauna_annuale",
+      "excerpt": "tel./fax (+39) 0885791912 - ing.marianomarseglia@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/356387",
+    "page": 1,
+    "document": "INQUADRAMENTO TERRITORIALE DEL PARCO EOLICO DI PROGETTO E DEGLI IMPIANTI DI ENERGIA RINNOVABILE RILEVATI NELL'AREA VASTA",
+    "excerpt": "Progettisti : Ing. Mariano Marseglia"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Geol. Domenico DEL Conte",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "domenico.delconte@geoapulia.it",
+     "occurrences": 195,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/412507",
+      "page": 2,
+      "document": "Integrazioni del 08/07/2020 - Relazione geologica",
+      "excerpt": "Cell. +39 329.7160866 Fax +39 0884.89012 E‐mail: domenico.delconte@geoapulia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3297160866",
+     "occurrences": 195,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/412507",
+      "page": 2,
+      "document": "Integrazioni del 08/07/2020 - Relazione geologica",
+      "excerpt": "Corso Giannone, 184 ‐ Cagnano Varano (FG) Cell. +39 329.7160866 Fax +39 0884.89012"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasrl.com",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/356304",
+      "page": 34,
+      "document": "VALUTAZIONE IMPATTO ACUSTICO",
+      "excerpt": "So nora (Si r. | ; Tel 0823 351196 - Fax 0823 351196 Signatory of EA, IAF and ILAC www.sonorastl.com - sonora@sonorasrl.com Mutual Recognition Agreements"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/356304",
+      "page": 32,
+      "document": "VALUTAZIONE IMPATTO ACUSTICO",
+      "excerpt": "Sonora S.r.l. Via del Bersaglieri, 9 - Caserta Tel 0823 351196 - Fax 0823 351196 Signatory of EA, IAF and ILAC"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dr. Geol. Lorenzo Borselli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "lborselli@gmail.com",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/412507",
+      "page": 54,
+      "document": "Integrazioni del 08/07/2020 - Relazione geologica",
+      "excerpt": "*UASLP, San Luis Potosi, Mexico e-mail: lborselli@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "D.D. n. 317 del 15/12/2023",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1371715",
+     "page": 2,
+     "document": "Allegato alla Comunicazione VA esito valutazione - Parere della CTVA del 18/02/2026",
+     "excerpt": "allo stato attuale la potenza autorizzata dell’impianto è pari a 81,2 MW a seguito dell’autorizzazione ambientale rilasciata con D.D. Regione Puglia n. 317 del 15/12/2023; -"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di dicembre 2023",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1371715",
+     "page": 2,
+     "document": "Allegato alla Comunicazione VA esito valutazione - Parere della CTVA del 18/02/2026",
+     "excerpt": "allo stato attuale la potenza autorizzata dell’impianto è pari a 81,2 MW a seguito dell’autorizzazione ambientale rilasciata con D.D. Regione Puglia n. 317 del 15/12/2023; -"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2025",
+    "dettaglio": "inizio stimato + durata del cantiere: 18 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/412525",
+     "page": 20,
+     "document": "Integrazioni del 08/07/2020 - Relazione tecnica",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "D.D. n. 317",
+   "data": "15/12/2023",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1371715",
+    "page": 2,
+    "document": "Allegato alla Comunicazione VA esito valutazione - Parere della CTVA del 18/02/2026",
+    "excerpt": "allo stato attuale la potenza autorizzata dell’impianto è pari a 81,2 MW a seguito dell’autorizzazione ambientale rilasciata con D.D. Regione Puglia n. 317 del 15/12/2023; -"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "RILIEVI IN SITO e PROVE DI LABORATORIO",
+    "start": 0.0,
+    "end": 1.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "PROGETTTAZIONE ESECUTIVA",
+    "start": 0.48,
+    "end": 2.51,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "CANTIERIZZAZIONE",
+    "start": 2.47,
+    "end": 3.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO INTERNO",
+    "start": 2.97,
+    "end": 9.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO ESTERNO",
+    "start": 3.97,
+    "end": 10.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili sottostazione",
+    "start": 2.97,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere elettriche sottostazione",
+    "start": 6.97,
+    "end": 11.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudo Sottostazione",
+    "start": 10.96,
+    "end": 11.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Connessione alla rete della sottostazione",
+    "start": 11.96,
+    "end": 12.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ADEGUAMENTO STRADE ESISTENTI",
+    "start": 2.47,
+    "end": 5.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE E PIAZZOLE",
+    "start": 3.97,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "SCAVI FONDAZIONI TORRI",
+    "start": 5.97,
+    "end": 8.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE PLINTI DI FONDAZIONE",
+    "start": 6.47,
+    "end": 10.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "INSTALLAZIONE AEROGENERATORI",
+    "start": 9.96,
+    "end": 12.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Commissioning WTG",
+    "start": 12.96,
+    "end": 14.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "TAKE OVER WTG",
+    "start": 14.46,
+    "end": 15.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ESERCIZIO DELL'IMPIANTO",
+    "start": 15.96,
+    "end": 16.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "RIPRISTINI",
+    "start": 15.96,
+    "end": 17.99,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 17.99,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/412525",
+   "page": 20,
+   "document": "Integrazioni del 08/07/2020 - Relazione tecnica",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "MESE 1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 45 giorni (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/356382",
+    "page": 44,
+    "document": "STUDIO DI IMPATTO AMBIENTALE (S.I.A.)",
+    "excerpt": "Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 197,
+  "pagine": 3392,
+  "completa": false,
+  "da_leggere": 77
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "wpd Monte Cigliano S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 81.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TROIA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "66 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
