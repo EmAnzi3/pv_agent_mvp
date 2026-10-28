@@ -209,7 +209,9 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
                     skip_titles=DRAWING_TITLES if limited else None,
                     time_budget_s=budget_min * 60, reanalyse=recompute)
             if limited:
-                _quota_add(store, host, d["acquisition"].get("processed_references") or 0)
+                # only real downloads count (documents already read are reused without any request)
+                st = d["acquisition"].get("states") or {}
+                _quota_add(store, host, sum(v for k, v in st.items() if k not in ("reused", "deferred")))
             (out / f"{d['project']['source']}-{d['project']['project_id']}.json").write_text(
                 json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
             if not d["acquisition"].get("references"):

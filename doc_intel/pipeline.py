@@ -77,11 +77,21 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         skipped_titles, docs = len(docs) - len(keep), keep
         if skipped_titles:
             log(f"[discover] {skipped_titles} elaborati grafici non scaricati")
-    if max_docs and len(docs) > max_docs:
-        # under a download cap the most informative documents go first (stable order otherwise)
-        rank = lambda d: 0 if PRIORITY_DOCS.search(d.title or "") else 1
-        docs = sorted(docs, key=rank)[:max_docs]
-        log(f"[discover] limite documenti: {max_docs} (i piu' informativi per primi)")
+    done_urls: set[str] = set()
+    if max_docs:
+        # portals with a daily cap: documents already analysed are reused WITHOUT any request, and the cap
+        # applies to the documents still to read, so a large project advances run after run
+        mdocs = manifest.get("documents", {})
+        done_urls = {d.url for d in docs if (mdocs.get(d.url, {}).get("processed") or {}).get("complete")
+                     and mdocs[d.url].get("sha256") and store.has_facts(mdocs[d.url]["sha256"])}
+        todo = [d for d in docs if d.url not in done_urls]
+        if len(todo) > max_docs:
+            # under a download cap the most informative documents go first (stable order otherwise)
+            rank = lambda d: 0 if PRIORITY_DOCS.search(d.title or "") else 1
+            todo = sorted(todo, key=rank)[:max_docs]
+            log(f"[discover] limite documenti: {max_docs} nuovi (i piu' informativi per primi); "
+                f"{len(done_urls)} gia' letti riusati senza scaricarli")
+        docs = [d for d in docs if d.url in done_urls] + todo
 
     deadline = (t0 + time_budget_s) if time_budget_s else None
     counter = {"n": 0}
@@ -139,7 +149,8 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         done = (entry.get("processed") or {}).get("complete")
         redo = reanalyse and (not reanalyse_match or bool(re.search(reanalyse_match, f"{ref.title or ''} {ref.url}", re.I)))
         if done and entry.get("sha256") and store.has_facts(entry["sha256"]) and not refresh and not redo:
-            change, seen = fetcher.check_remote(ref.url, entry, ref.extra.get("auth"))
+            # capped portals: no change check either (one request less per document already read)
+            change, seen = ("unchecked", None) if ref.url in done_urls else fetcher.check_remote(ref.url, entry, ref.extra.get("auth"))
             force = change == "changed" or verify_content
             if not force:
                 with lock:
