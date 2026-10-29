@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cambiamenti eolico</title>
+  <meta name="description" content="Radar eolico Alayan: cosa è cambiato nel censimento rispetto al precedente (nuovi progetti, avanzamenti, uscite).">
+  <link rel="stylesheet" href="assets/dashboard.css">
+  <style>
+    .split > *, .grid > * { min-width: 0; }
+    .kpi-grid.signals .value { font-size: 26px; }
+    .chg { margin: 0; padding-left: 16px; }
+    .chg li { margin: 2px 0; }
+    .chg .old { color: var(--muted, #6b7280); text-decoration: line-through; }
+    .chg .up { color: #065f46; font-weight: 800; }
+    .badge.up { background: #d1fae5; color: #065f46; }
+    .badge.side { background: #f1f5f9; color: #475569; }
+    .check { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--steel); }
+    .check input { width: auto; }
+    .empty { padding: 22px; text-align: center; color: var(--muted); }
+    .back { color: rgba(255,255,255,0.85); font-weight: 800; text-decoration: none; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div>
+        <nav class="radar-switch" aria-label="Cambia radar"><a href="../">Fotovoltaico</a><a class="on" href="./">Eolico</a></nav>
+        <h1>Cambiamenti eolico</h1>
+        <a class="back" href="./">← Torna alla dashboard eolica</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-chip"><div class="label">Censimento</div><div class="value" id="heroCensus">-</div></div>
+        <div class="hero-chip"><div class="label">Confrontato con</div><div class="value" id="heroPrev">-</div></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="section-title">Riepilogo</h2>
+      <p class="section-subtitle">Confronto del censimento eolico con il precedente. Prima gli avanzamenti verso il cantiere: sono il segnale commerciale.</p>
+      <div class="filters">
+        <select id="reportSelect" aria-label="Report"></select>
+        <label class="check"><input type="checkbox" id="sideFilter"> Includi modifiche e varianti</label>
+      </div>
+      <div class="grid kpi-grid">
+        <div class="card kpi kpi-primary"><div class="label">Avanzamenti</div><div class="value" id="kpiProgress">-</div><div class="note">Più vicini al cantiere: priorità, FER X, contractor, EPC, stampa, procedura chiusa</div></div>
+        <div class="card kpi kpi-primary"><div class="label">Nuovi progetti</div><div class="value" id="kpiNew">-</div><div class="note" id="kpiNewMw">-</div></div>
+        <div class="card kpi"><div class="label">Altre modifiche</div><div class="value" id="kpiChanged">-</div><div class="note">MW, proponente, procedura, schede</div></div>
+        <div class="card kpi"><div class="label">Usciti dal censimento</div><div class="value" id="kpiRemoved">-</div><div class="note" id="kpiRemovedMw">-</div></div>
+        <div class="card kpi"><div class="label">Progetti</div><div class="value" id="kpiTotal">-</div><div class="note" id="kpiTotalNote">-</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Segnali di avanzamento</h2>
+      <div class="card"><div class="table-wrap"><table>
+        <thead><tr><th>Regione</th><th>Comune/i</th><th>Progetto</th><th>Proponente</th><th class="num">MW</th><th>Cosa è cambiato</th></tr></thead>
+        <tbody id="progressBody"></tbody>
+      </table></div></div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Nuovi progetti</h2>
+      <div class="card"><div class="table-wrap"><table>
+        <thead><tr><th>Fonte</th><th>Regione</th><th>Comune/i</th><th>Progetto</th><th>Proponente</th><th>Stato</th><th class="num">MW</th></tr></thead>
+        <tbody id="newBody"></tbody>
+      </table></div></div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Altre modifiche</h2>
+      <div class="card"><div class="table-wrap"><table>
+        <thead><tr><th>Regione</th><th>Comune/i</th><th>Progetto</th><th>Proponente</th><th class="num">MW</th><th>Cosa è cambiato</th></tr></thead>
+        <tbody id="changedBody"></tbody>
+      </table></div></div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Usciti dal censimento</h2>
+      <p class="section-subtitle">Procedure archiviate o ritirate, oppure unite a un altro record dello stesso progetto: controllare sul portale prima di toglierle dal radar commerciale.</p>
+      <div class="card"><div class="table-wrap"><table>
+        <thead><tr><th>Fonte</th><th>Regione</th><th>Comune/i</th><th>Progetto</th><th>Proponente</th><th>Ultimo stato</th><th class="num">MW</th></tr></thead>
+        <tbody id="removedBody"></tbody>
+      </table></div></div>
+    </section>
+
+    <div class="footer-note">
+      Il report si genera da solo a ogni ricostruzione del censimento (ogni lunedì e dopo il push dei portali letti dal PC).
+      Se il censimento risulta parziale (portale non raggiungibile) il confronto viene sospeso e ripreso al giro successivo.
+    </div>
+  </main>
+
+  <script>
+  (function () {
+    'use strict';
+    const RAW = 'https://raw.githubusercontent.com/EmAnzi3/pv_agent_mvp/doc-intel-state/wind/changes/';
+    const text = v => v === null || v === undefined ? '' : String(v);
+    const esc = v => text(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+    const num = (v, d = 0) => { const n = Number(v); if (!Number.isFinite(n)) return '';
+      let [i, f = ''] = Math.abs(n).toFixed(d).split('.'); i = i.replace(/\B(?=(\d{3})+(?!\d))/g, '.'); f = f.replace(/0+$/, '');
+      return (n < 0 ? '-' : '') + i + (f ? ',' + f : ''); };
+    const itDate = iso => (iso || '').slice(0, 10).split('-').reverse().join('/');
+    const safeUrl = v => /^https?:\/\//i.test(text(v).trim()) ? text(v).trim() : '';
+    const getJson = u => fetch(u, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
+    const set = (id, v) => { const n = document.getElementById(id); if (n) n.textContent = v; };
+    let rep = null;
+
+    function val(field, v) {
+      if (Array.isArray(v)) return v.length ? v.join(', ') : '—';
+      if (field === 'power_mw') return v === null || v === undefined ? '—' : num(v, 1) + ' MW';
+      if (field === 'card') return v ? 'presente' : 'assente';
+      if (field === 'news') return v ? v + (v === 1 ? ' notizia' : ' notizie') : 'nessuna';
+      return text(v) || '—';
+    }
+    function changes(c) {
+      return '<ul class="chg">' + c.changes.map(d => '<li' + (d.progress ? ' class="up"' : '') + '><strong>' + esc(d.label) + '</strong>: ' +
+        '<span class="old">' + esc(val(d.field, d.old)) + '</span> → ' + esc(val(d.field, d.new)) + '</li>').join('') + '</ul>';
+    }
+    function title(r) {
+      const u = safeUrl(r.url), t = esc(text(r.title).slice(0, 150)) + (text(r.title).length > 150 ? '…' : '');
+      return (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + t + '</a>' : t) +
+        (r.secondaria ? ' <span class="badge side">Variante</span>' : '');
+    }
+    const place = r => esc([r.municipalities, r.province].filter(Boolean).join(' · ') || '—');
+    const rows = (list, html, cols) => list.length ? list.map(html).join('') : '<tr><td colspan="' + cols + '" class="empty">Nessun record.</td></tr>';
+
+    function render() {
+      const side = document.getElementById('sideFilter').checked;
+      const keep = r => side || !r.secondaria;
+      const prog = rep.modificati.filter(c => c.progress && keep(c));
+      const other = rep.modificati.filter(c => !c.progress && keep(c));
+      const nw = rep.nuovi.filter(keep), rm = rep.rimossi.filter(keep);
+      const mw = l => l.reduce((s, r) => s + (Number(r.power_mw) || 0), 0);
+      set('heroCensus', itDate(rep.census || rep.date)); set('heroPrev', itDate(rep.previous_census) || '-');
+      set('kpiProgress', num(prog.length)); set('kpiNew', num(nw.length)); set('kpiChanged', num(other.length)); set('kpiRemoved', num(rm.length));
+      set('kpiNewMw', num(mw(nw), 1) + ' MW, di cui onshore ' + num(mw(nw.filter(r => !/offshore/i.test(r.project_type || ''))), 1));
+      set('kpiRemovedMw', num(mw(rm), 1) + ' MW');
+      set('kpiTotal', num(rep.counts.attuali)); set('kpiTotalNote', 'erano ' + num(rep.counts.precedenti) + ' (record, varianti incluse)');
+      const chRow = c => '<tr><td>' + esc(c.region) + '</td><td>' + place(c) + '</td><td>' + title(c) + '</td><td>' + esc(c.proponent) +
+        '</td><td class="num">' + num(c.power_mw, 1) + '</td><td>' + changes(c) + '</td></tr>';
+      const recRow = r => '<tr><td>' + esc(r.source_label) + '</td><td>' + esc(r.region) + '</td><td>' + place(r) + '</td><td>' + title(r) +
+        '</td><td>' + esc(r.proponent) + '</td><td>' + esc(r.procedure_status || '—') + (r.readiness ? '<div class="small">' + esc(r.readiness) + '</div>' : '') +
+        '</td><td class="num">' + num(r.power_mw, 1) + '</td></tr>';
+      document.getElementById('progressBody').innerHTML = rows(prog, chRow, 6);
+      document.getElementById('changedBody').innerHTML = rows(other, chRow, 6);
+      document.getElementById('newBody').innerHTML = rows(nw, recRow, 7);
+      document.getElementById('removedBody').innerHTML = rows(rm, recRow, 7);
+    }
+    function load(date) {
+      getJson(RAW + (date ? date : 'latest') + '.json').then(r => {
+        if (!r || !r.counts) {
+          ['progressBody', 'newBody', 'changedBody', 'removedBody'].forEach(id =>
+            document.getElementById(id).innerHTML = '<tr><td colspan="7" class="empty">Nessun report ancora: il primo esce alla prossima ricostruzione del censimento.</td></tr>');
+          return;
+        }
+        rep = r; render();
+      });
+    }
+    getJson(RAW + 'index.json').then(idx => {
+      const sel = document.getElementById('reportSelect'), list = (idx && idx.reports) || [];
+      sel.innerHTML = list.length ? list.map(e => '<option value="' + esc(e.date) + '">Report del ' + esc(itDate(e.date)) +
+        ' · ' + num(e.avanzamenti || 0) + ' avanzamenti, ' + num(e.nuovi || 0) + ' nuovi</option>').join('') : '<option value="">Nessun report</option>';
+      sel.addEventListener('change', () => load(sel.value));
+      load(list.length ? list[0].date : '');
+    });
+    document.getElementById('sideFilter').addEventListener('change', () => rep && render());
+  })();
+  </script>
+</body>
+</html>

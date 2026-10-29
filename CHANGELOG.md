@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-29 — Report cambiamenti eolico (`docs/wind/cambiamenti.html`, link nella dashboard eolica): a ogni ricostruzione del censimento confronta i progetti con il censimento precedente e mostra prima i segnali di avanzamento (priorità cantiere, FER X, contractor verificati, EPC nei documenti, stampa, procedura chiusa), poi nuovi progetti, altre modifiche e uscite. Dati in `wind/changes/` sul ramo di memoria (un report per giorno con cambiamenti, ultimi 26); un censimento parziale non sposta la base del confronto.
+
 - 2026-10-29 — Sicilia: i titoli del portale SI-VVI non mostrano più codici HTML (es. «UN&#039;IMPIANTO» diventa «UN'IMPIANTO»).
 
 - 2026-10-29 — `analizza_fonti_locali.bat N`: il blocco del giro non viene più riempito dai progetti siciliani che sarebbero poi rimandati per il limite giornaliero; la Sicilia prende solo i progetti ancora ammessi oggi (1) e i posti restanti vanno a Sistema Puglia e Basilicata. Prima, con 270 progetti siciliani in testa alla coda, un giro da 30 ne lavorava solo 11.
