@@ -4,6 +4,7 @@ import csv
 import hashlib
 import io
 import json
+import html
 import re
 import time
 import unicodedata
@@ -1898,7 +1899,7 @@ class SiciliaCollector(BaseCollector):
         if value is None:
             return ""
 
-        value = str(value)
+        value = html.unescape(html.unescape(str(value)))   # the portal CSV carries entities, sometimes twice (&amp;#039;)
         value = value.replace("\ufeff", "")
         value = value.replace("\xa0", " ")
         value = value.replace("\r", " ")
