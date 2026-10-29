@@ -1,0 +1,558 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_8300",
+ "title": "Progetto di impianto eolico di 6 aerogeneratori per un totale di 36 MW, ubicato nel comune di Guagnano (LE), integrato da un sistema di accumulo di 18 MW da realizzarsi nel comuni di Erchie (BR), nonché delle relative opere e delle infrastrutture di connessione ricadenti anche nei comuni di San Pancrazio Salentino (BR), Erchie (BR), San Donaci (BR), Avetrana (TA), Brindisi, Mesagne (BR), San Pietro Vernotico (BR), Cellino San Marco (BR), Grottaglie (TA), Francavilla Fontana (BR) ed Oria (BR).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8300",
+ "source": "mase",
+ "updated": "2026-10-29",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "36 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8300",
+    "excerpt": "36 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 2 (3), 1 (1), 5 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1360646",
+    "page": 3,
+    "document": "RELAZIONE DI OTTEMPERANZA",
+    "excerpt": "1 Valutazione preliminare ai sensi dell’art.6, comma 9 del D.Lgs.152/2006 relativa al progetto parco eolico costituito da 6 WTG da 6 MW/cad. e sistema di accumulo dell’energia da 18 MW in agro del Comune di Guagnano e co"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "18 MW / 18 MWh",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1360646",
+    "page": 3,
+    "document": "RELAZIONE DI OTTEMPERANZA",
+    "excerpt": "1 Valutazione preliminare ai sensi dell’art.6, comma 9 del D.Lgs.152/2006 relativa al progetto parco eolico costituito da 6 WTG da 6 MW/cad. e sistema di accumulo dell’energia da 18 MW in agro del Comune di Guagnano e co"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "15 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/865005",
+    "page": 47,
+    "document": "Allegato alla Delibera della Presidenza del Consiglio dei Ministri - Parere Commissione Tecnica PNRR-PNIEC n.75 del 24/10/2022",
+    "excerpt": "Il Proponente presenta un cronoprogramma dettagliato dei lavori, da cui si evince una durata complessiva del cantiere nelle fasi di realizzazione pari a15 mesi. −"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "LE",
+  "comuni": [
+   "Guagnano"
+  ],
+  "coordinate": {
+   "lat": 40.41802,
+   "lon": 17.88595,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (79 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1360646",
+    "page": 5,
+    "document": "RELAZIONE DI OTTEMPERANZA",
+    "excerpt": "744217"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.41802,17.88595",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.41342,
+   "lon": 17.88354,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1360649",
+    "page": 11,
+    "document": "RELAZIONE SUGLI EFFETTI SHADOW-FLICKERING",
+    "excerpt": "744664"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.41342,17.88354"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Sorgenia Renewables S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "EPC (indicata negli elaborati)"
+   ],
+   "vat": "10300050969",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": [
+    {
+     "ruolo": "EPC",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686679",
+      "page": 17,
+      "document": "Integrazioni del 06/09/2022 - MEMORIA DI RISPOSTA ALLA RICHIESTA DI INTEGRAZIONI DEL 05.04.2022",
+      "excerpt": "Le fasi di cantiere e dismissione saranno appaltate a soggetti qualificati nell’ambito di contratti EPC attraverso l’ufficio acquisti e appalti interno di Sorgenia SpA."
+     }
+    }
+   ],
+   "office": "Via Alessandro Algardi N 4 20148 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sorgenia.renewables@legalmail.it",
+     "occurrences": 51,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601794",
+      "page": 1,
+      "document": "Relazione PedoAgronomica",
+      "excerpt": "20148 Milano (MI) sorgenia.renewables@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "renewables@legalmail.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686685",
+      "page": 3,
+      "document": "Integrazioni del 06/09/2022 - T29 - SCAVI E RIPORTI",
+      "excerpt": "20148 Milano (MI) sorgenia renewables@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "sorgenia.libeccio@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1385932",
+      "page": 3,
+      "document": "Comunicazione VA esito valutazione",
+      "excerpt": "Alla Sorgenia Libeccio S.r.l. sorgenia.libeccio@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sorgenia.renewables@legalamail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686670",
+      "page": 1,
+      "document": "Integrazioni del 06/09/2022 - Gittata Massima Elementi rotanti",
+      "excerpt": "20148 Milano (MI) sorgenia.renewables@legalamail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "renewables@lagalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601796",
+      "page": 2,
+      "document": "Rilievo PlanoAltimetrico",
+      "excerpt": "lione 20148 Milano (MI) sorgenia. renewables@lagalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sorgeniarenewables@soergenia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686689",
+      "page": 1,
+      "document": "Integrazioni del 06/09/2022 - MWEB_2021_2021Ver.1-signed",
+      "excerpt": "Email sorgeniarenewables@soergenia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8300"
+   }
+  },
+  {
+   "name": "Dott. Geol. Raffaele Sassone",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/601711",
+    "page": 16,
+    "document": "Calcoli preliminari delle strutture",
+    "excerpt": "MASW come riportato nella Relazione Geologica redatta dal Dott. Geol. Raffaele Sassone: sembra opportuno soffermarsi su alcuni aspetti di carattere generale riguardanti la tematica in oggetto, utili"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 46,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1360655",
+      "page": 2,
+      "document": "Valutazione preliminare della producibilità eolica",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Beshielding S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10105760010",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Monviso 9 10090 Villarbasse To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "shielding@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1360654",
+      "page": 16,
+      "document": "Relazione campi elettrici e magnetici cavidotto MT",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "busbar@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1360654",
+      "page": 16,
+      "document": "Relazione campi elettrici e magnetici cavidotto MT",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Stim Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "m.candeo@pec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686686",
+      "page": 3,
+      "document": "Integrazioni del 06/09/2022 - T30 - VIABILITA' FASE ESERCIZIO",
+      "excerpt": "7] Jo— | YISGNARUEA 370121 AA) Molle 328.0569022 | obi 221.5739206 I I | www.stimeng.it - segreteria@stimeng. it m.candeo@pec.it gabrieleconversano@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "gabrieleconversano@pec.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686686",
+      "page": 3,
+      "document": "Integrazioni del 06/09/2022 - T30 - VIABILITA' FASE ESERCIZIO",
+      "excerpt": "7] Jo— | YISGNARUEA 370121 AA) Molle 328.0569022 | obi 221.5739206 I I | www.stimeng.it - segreteria@stimeng. it m.candeo@pec.it gabrieleconversano@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@stimeng.it",
+     "occurrences": 37,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686684",
+      "page": 2,
+      "document": "Integrazioni del 06/09/2022 - T28 - DISTANZE DPA",
+      "excerpt": "Tel. 080.5210232 - Fax 080.5234353 www.stimeng.it - segreteria@stimeng.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "g.conversano@stimeng.it",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686684",
+      "page": 4,
+      "document": "Integrazioni del 06/09/2022 - T28 - DISTANZE DPA",
+      "excerpt": "70122 Bari g.conversano@stimeng.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0805210232",
+     "occurrences": 23,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686684",
+      "page": 2,
+      "document": "Integrazioni del 06/09/2022 - T28 - DISTANZE DPA",
+      "excerpt": "Tel. 080.5210232 - Fax 080.5234353"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3289569922",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686686",
+      "page": 4,
+      "document": "Integrazioni del 06/09/2022 - T30 - VIABILITA' FASE ESERCIZIO",
+      "excerpt": "VIA GARRUBA, 3 - 70121 BARI Tel. 080.5210232 - Fax 080.5234353 Mobile 328.9569922 Mobile 328.6739206"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Metrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@metrix.it",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601721",
+      "page": 31,
+      "document": "Studio di impatto acustico",
+      "excerpt": "Tel. 0922 992053 info@metrix.it – www.metrix.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0922992053",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601721",
+      "page": 31,
+      "document": "Studio di impatto acustico",
+      "excerpt": "92020 S. Stefano Quisquina (AG) Tel. 0922 992053"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Wind Farm Ubeccio SCS Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "f.decastro@scsingegneria.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1360649",
+      "page": 10,
+      "document": "RELAZIONE SUGLI EFFETTI SHADOW-FLICKERING",
+      "excerpt": "+390831336390 Francesco / f.decastro@scsingegneria.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@scsingegneria.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1360650",
+      "page": 2,
+      "document": "INDAGINE ACUSTICO-AMBIENTALE PREVENTIVA ANTE-OPERAM",
+      "excerpt": "VIA BRINDISI, 38–72017 OSTUNI (BR) – TEL/FAX: 08311771201 E-MAIL: INFO@SCSINGEGNERIA.IT"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Presidenza Giunta Regionale - Lungomare N. Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0805406316",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1360650",
+      "page": 25,
+      "document": "INDAGINE ACUSTICO-AMBIENTALE PREVENTIVA ANTE-OPERAM",
+      "excerpt": "Direzione e Redazione - Presidenza Giunta Regionale - Lungomare N. Sauro, 33 - 70121 Bari - Tel. 0805406316-0805406317-0805406372 - Uff. abbonamenti"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Sorgenia Renewables S.r.l.",
+    "partita_iva": "10300050969",
+    "ruolo": "EPC",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/686679",
+     "page": 17,
+     "document": "Integrazioni del 06/09/2022 - MEMORIA DI RISPOSTA ALLA RICHIESTA DI INTEGRAZIONI DEL 05.04.2022",
+     "excerpt": "Le fasi di cantiere e dismissione saranno appaltate a soggetti qualificati nell’ambito di contratti EPC attraverso l’ufficio acquisti e appalti interno di Sorgenia SpA."
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "15 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "15 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/865005",
+    "page": 47,
+    "document": "Allegato alla Delibera della Presidenza del Consiglio dei Ministri - Parere Commissione Tecnica PNRR-PNIEC n.75 del 24/10/2022",
+    "excerpt": "Il Proponente presenta un cronoprogramma dettagliato dei lavori, da cui si evince una durata complessiva del cantiere nelle fasi di realizzazione pari a15 mesi. −"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 134,
+  "pagine": 1599,
+  "completa": false,
+  "da_leggere": 14
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Sorgenia Libeccio S.r.l. (ex. Sorgenia Renewables S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 36.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GUAGNANO, ERCHIE, SAN PANCRAZIO SALENTINO",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LE",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "357 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Sorgenia Renewables S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
