@@ -5,7 +5,7 @@
  "title": "Progetto di Potenziamento del parco eolico Mineo-Militello-Vizzini - potenza complessiva di 121,8 MW - Prescrizioni: 1 MIC, 1A, 1B, 2A, 2A MIC, 2B, 2B MIC, 2C, 2C MIC, 2D MIC, 3 MIC, 3A, 3B, 3D, 3E",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1755",
  "source": "mase",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,12 +24,25 @@
    "label": "Aerogeneratori",
    "value": "29",
    "status": "da verificare",
-   "sub": "4,20 MW ciascuno · altezza mozzo 112 m · diametro rotore 136 m · Valore più ricorrente negli elaborati; altri valori: 59 (12), 14 (9), 4 (9)",
+   "sub": "4,20 MW ciascuno · altezza mozzo 115 m · diametro rotore 136 m · Valore più ricorrente negli elaborati; altri valori: 59 (36), 14 (16), 4 (16)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/709534",
     "page": 4,
     "document": "MMC-EXE-REL-0002-RELAZIONE TECNICA GENERALE_00",
     "excerpt": "16149 Genova è stata autorizzata ai sensi dell’art.12, comma3 del D.lgs. 29/12/2003 n.387 e s.m.e.i , allo smantellamento dei 29 aerogeneratori esistenti e alla realizzazione e all’esercizio di un impianto eolico di pote"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "17 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 14 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/356505",
+    "page": 8,
+    "document": "Parere CTVIA del 31/05/2019",
+    "excerpt": "— in esercizio non sono previste emissioni in atmosfera, mentre per quanto riguarda il cantiere saranno imputabili ai mezzi su ruota per la durata di 17 mesi e gli impatti si ritengono transitori, considerata anche la sc"
    }
   }
  ],
@@ -41,9 +54,19 @@
    "Militello In Val Di Catania",
    "Vizzini"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Mineo%2C+CT%2C+Sicilia",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 37.2065,
+   "lon": 14.73541,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/233707",
+    "page": 18,
+    "document": "RELAZIONE GEOTECNICA E SISMICA",
+    "excerpt": "coordinate del reticolo di riferimento, WGS84; Latitudine: 37,206505"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.20650,14.73541",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
@@ -64,6 +87,37 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1755"
+   }
+  },
+  {
+   "name": "Ivpc Sicilia 5 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "082526221",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/233691",
+      "page": 100,
+      "document": "RELAZIONE GENERALE DEL PROGETTO DEFINITIVO",
+      "excerpt": "Via Palatucci, 20/B - Tel. 0825 26221 - Fax 0825 37093 - 83100 AVELLINO - Codice Fiscale: CPR CRI 50023 ASOSD - Part"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/233706",
+    "page": 28,
+    "document": "RELAZIONE GEOLOGICA",
+    "excerpt": "Committente... : iVPC SICILIA 5 SRL."
    }
   },
   {
@@ -95,6 +149,44 @@
     "page": 1,
     "document": "Allegato alla comunicazione VA esito valutazione - Parere CTVA del 14/04/2025",
     "excerpt": "Proponente: ERG Wind Energy S.r.l."
+   }
+  },
+  {
+   "name": "Ivpc Sicilias S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/233706",
+    "page": 39,
+    "document": "RELAZIONE GEOLOGICA",
+    "excerpt": "| Committente... : IVPC SICILIAS SRL."
+   }
+  },
+  {
+   "name": "Dott. Carlo Cibella",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/341218",
+    "page": 1,
+    "document": "Integrazioni del 05/03/2019 - Nota del Geologo: risposta al punto 5",
+    "excerpt": "Il GEOLOGO:"
    }
   }
  ],
@@ -138,6 +230,33 @@
    }
   },
   {
+   "name": "Studio Peroni S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03527890101",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Guerrazzi 24/4B 16146 Genova Ge",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "segreteria@studioperoni.org",
+     "occurrences": 125,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/341220",
+      "page": 3,
+      "document": "Integrazioni del 05/03/2019 - Studio del rumore e delle vibrazioni - Risposta ai punti 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21",
+      "excerpt": "P.I. 03527890101 E - Mail: segreteria@studioperoni.org"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Cesi S.p.A.",
    "kind": "società",
    "roles": [],
@@ -163,6 +282,30 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "Ivpc Sicilia 2 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0825781473",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/233691",
+      "page": 82,
+      "document": "RELAZIONE GENERALE DEL PROGETTO DEFINITIVO",
+      "excerpt": "ri Via Circumvallazione. 54/h tel. +39 0825 781473 in pbx - fax +39 0825 781472"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -181,9 +324,33 @@
      "document": "Comunicazione VA esito valutazione - Progetto di Potenziamento del parco eolico Mineo-Militello-Vizzini - potenza complessiva di 121,8 MW - Prescrizioni: 1 MIC, 1A, 1B, 2A, 2A MIC, 2B, 2B MIC, 2C, 2C ",
      "excerpt": "Tecnica VIA-VAS n. 3020 del 31/05/2019 e parere n. 3305 del 17/04/2020 di cui al Provvedimento di VIA D.M. n. 172 del 10/08/2020, ai sensi dell’art.28 del D. Lgs.152/2006 relativa al progetto di potenziamento del parco e"
     }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di agosto 2020",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1253652",
+     "page": 1,
+     "document": "Comunicazione VA esito valutazione - Progetto di Potenziamento del parco eolico Mineo-Militello-Vizzini - potenza complessiva di 121,8 MW - Prescrizioni: 1 MIC, 1A, 1B, 2A, 2A MIC, 2B, 2B MIC, 2C, 2C ",
+     "excerpt": "Tecnica VIA-VAS n. 3020 del 31/05/2019 e parere n. 3305 del 17/04/2020 di cui al Provvedimento di VIA D.M. n. 172 del 10/08/2020, ai sensi dell’art.28 del D. Lgs.152/2006 relativa al progetto di potenziamento del parco e"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di gennaio 2022",
+    "dettaglio": "inizio stimato + durata del cantiere: 17 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/356505",
+     "page": 8,
+     "document": "Parere CTVIA del 31/05/2019",
+     "excerpt": "— in esercizio non sono previste emissioni in atmosfera, mentre per quanto riguarda il cantiere saranno imputabili ai mezzi su ruota per la durata di 17 mesi e gli impatti si ritengono transitori, considerata anche la sc"
+    }
    }
   ],
-  "durata_cantiere": null,
+  "durata_cantiere": "17 mesi",
   "autorizzazione": {
    "atto": "D.M. n. 172",
    "data": "10/08/2020",
@@ -194,9 +361,7 @@
     "excerpt": "Tecnica VIA-VAS n. 3020 del 31/05/2019 e parere n. 3305 del 17/04/2020 di cui al Provvedimento di VIA D.M. n. 172 del 10/08/2020, ai sensi dell’art.28 del D. Lgs.152/2006 relativa al progetto di potenziamento del parco e"
    }
   },
-  "note": [
-   "Durata del cantiere non leggibile negli elaborati: fine lavori non stimabile."
-  ],
+  "note": [],
   "legenda": {
    "documentata": "data scritta nei documenti",
    "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
@@ -209,7 +374,17 @@
   "months": 1,
   "source": null,
   "asse": null,
-  "duration": null,
+  "duration": {
+   "text": "17 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 14 mesi (2), 2 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/356505",
+    "page": 8,
+    "document": "Parere CTVIA del 31/05/2019",
+    "excerpt": "— in esercizio non sono previste emissioni in atmosfera, mentre per quanto riguarda il cantiere saranno imputabili ai mezzi su ruota per la durata di 17 mesi e gli impatti si ritengono transitori, considerata anche la sc"
+   }
+  },
   "milestones": [],
   "document": null,
   "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
@@ -219,9 +394,9 @@
  },
  "documentazione": {
   "documenti": 295,
-  "pagine": 1453,
+  "pagine": 2793,
   "completa": false,
-  "da_leggere": 175
+  "da_leggere": 57
  },
  "confronto": [
   {
@@ -256,8 +431,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "7 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "22 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
