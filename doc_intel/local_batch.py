@@ -93,10 +93,17 @@ def _push(store: Path, message: str) -> bool:
     _git("-c", "user.name=doc-intel-local", "-c", "user.email=doc-intel-local@users.noreply.github.com",
          "commit", "-q", "-m", message, cwd=store)
     for i in range(5):
+        _git("rebase", "--abort", cwd=store, check=False)          # leftovers of an interrupted run
+        _git("merge", "--abort", cwd=store, check=False)
         pl = _git("pull", "-q", "--rebase", "-X", "theirs", "origin", "doc-intel-state", cwd=store, check=False)
         if pl.returncode:
+            # a rebase that stops (e.g. a file changed on both sides) is undone and replaced by a merge that
+            # keeps this run's version of the conflicting files: the cloud rebuilds shared indexes anyway
             _git("rebase", "--abort", cwd=store, check=False)
-            print(f"[locale]   git pull non riuscito: {(pl.stderr or pl.stdout).strip()[:300]}")
+            pl = _git("pull", "-q", "--no-rebase", "--no-edit", "-X", "ours", "origin", "doc-intel-state", cwd=store, check=False)
+            if pl.returncode:
+                _git("merge", "--abort", cwd=store, check=False)
+                print(f"[locale]   git pull non riuscito: {(pl.stderr or pl.stdout).strip()[:300]}")
         ps = _git("push", "-q", "origin", "HEAD:doc-intel-state", cwd=store, check=False)
         if ps.returncode == 0:
             return True
