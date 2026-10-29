@@ -1,0 +1,540 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7458",
+ "title": "Progetto di un impianto eolico denominato \"Montagnola\" composto da 6 aerogeneratori per una potenza complessiva di 34 MW, sito nel comune di Ferrandina (MT) in loc. Montagnola, e delle relative opere di connessione site anche nel comune di Salandra (MT) e Garaguso (MT).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7458",
+ "source": "mase",
+ "updated": "2026-10-29",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "34 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7458",
+    "excerpt": "34 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "5",
+   "status": "da verificare",
+   "sub": "6,80 MW ciascuno · altezza mozzo 99 m · diametro rotore 162 m · Valore più ricorrente negli elaborati; altri valori: 4 (77), 2 (6), 6 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1243324",
+    "page": 1,
+    "document": "A00_Rel02_Rel_opere_civili",
+    "excerpt": "È DENOMINATO \"MONTAGNOLA\" COMPOSTO DA 5 AEROGENERATORI, PER UNA 9 POTENZA COMPLESSIVA DI 34 MW SITO NEL COMUNE DI FERRANDINA (MT),"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "4-6 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 360 giorni (circa 12 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1381369",
+    "page": 107,
+    "document": "Integrazioni del 18/03/2026 - AO11_F0302CR05E_PMA_PianoMonAmb",
+    "excerpt": "polveri e rumori e contenere eventuali forme di inquinamento. I controlli saranno ripetuti due volte a distanza di 4-6 mesi, calibrati sulla base dello stato di avanzamento dei lavori;"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "MT",
+  "comuni": [
+   "Garaguso"
+  ],
+  "coordinate": {
+   "lat": 40.54262,
+   "lon": 16.39732,
+   "tipo": "centro della tavola georeferenziata di progetto (196 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1243358",
+    "page": 54,
+    "document": "C01_Rel_Geologica_WF",
+    "excerpt": "C01_Rel_Geologica_WF"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.54262,16.39732",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.54091,
+   "lon": 16.39187,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1381369",
+    "page": 148,
+    "document": "Integrazioni del 18/03/2026 - AO11_F0302CR05E_PMA_PianoMonAmb",
+    "excerpt": "618012,8172"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.54091,16.39187"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Engineering Geology S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@engeosrl.it",
+     "occurrences": 145,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243367",
+      "page": 25,
+      "document": "C02_08_ALL_C8_Rapporto_tecnico_indagini",
+      "excerpt": "Tel. + 39 0971 26378 Fax +39 0971 1940737 e-mail: info@engeosrl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "097126378",
+     "occurrences": 224,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243367",
+      "page": 33,
+      "document": "C02_08_ALL_C8_Rapporto_tecnico_indagini",
+      "excerpt": "Engineering Geology srl– Via del Gallitello, 90/A - 85100 Potenza Tel 0971 26378 – fax 0971 1940737"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1243366",
+    "page": 33,
+    "document": "C02_07_ALL_C7_Certificati_lab_geotecnico",
+    "excerpt": "COMMITTENTE: Engineering Geology SrL LOCALITA’: Comune di Salandra (MT)"
+   }
+  },
+  {
+   "name": "GR Value Ferrandina S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "11779100962",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Durini 9 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "grvalueferrandina@legalmail.it",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243323",
+      "page": 1,
+      "document": "B00_F0302RR00A-Elenco elaborati fase di ottemperanza AU-PUA_Fase ante operam 1",
+      "excerpt": "Via Durini, 9 Tel. +39.02.50043159 20122 Milano PEC: grvalueferrandina@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "opec210312.20241220123808.209388.982.2.956.42@pec.aruba",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243387",
+      "page": 11,
+      "document": "E09_Prot448_24WFER_PianoTerreRocceDaScavo",
+      "excerpt": "Serial ID : dic-20-2024 11:44:37 opec210312.20241220123808.209388.982.2.956.42@pec.aruba. it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@grvalue.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243387",
+      "page": 1,
+      "document": "E09_Prot448_24WFER_PianoTerreRocceDaScavo",
+      "excerpt": "Sede legale: Via Durini,9 – 20122 Milano info@grvalue.com – PEC: grvalueferrandina@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "fabio.mottura@grvalue.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243387",
+      "page": 2,
+      "document": "E09_Prot448_24WFER_PianoTerreRocceDaScavo",
+      "excerpt": "Nel rimanere a disposizione per qualsiasi chiarimento nella persona del Dr. Fabio Mottura, (fabio.mottura@grvalue.com - 348.0946207) e dell’Ing. Giovanni Perez, (giovanni.perez@grvalue.com -"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "giovanni.perez@grvalue.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243387",
+      "page": 2,
+      "document": "E09_Prot448_24WFER_PianoTerreRocceDaScavo",
+      "excerpt": "Nel rimanere a disposizione per qualsiasi chiarimento nella persona del Dr. Fabio Mottura, (fabio.mottura@grvalue.com - 348.0946207) e dell’Ing. Giovanni Perez, (giovanni.perez@grvalue.com -"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "opec21192.20241220123806.21480.16.5.63.201@sicurezzapostale.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243387",
+      "page": 8,
+      "document": "E09_Prot448_24WFER_PianoTerreRocceDaScavo",
+      "excerpt": "Serial ID : dic-20-2024 11:44:06 opec21192.20241220123806.21480.16.5.63.201@sicurezzapostale.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7458"
+   }
+  },
+  {
+   "name": "F4ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "f4ingegneria@pec.it",
+     "occurrences": 933,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243323",
+      "page": 1,
+      "document": "B00_F0302RR00A-Elenco elaborati fase di ottemperanza AU-PUA_Fase ante operam 1",
+      "excerpt": "Via Di Giura, Centro direzionale Tel: +39 0971 1944797 - Fax: +39 0971 55452 85100 Potenza www.f4ingegneria.it - f4ingegneria@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "09711944797",
+     "occurrences": 32,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243323",
+      "page": 1,
+      "document": "B00_F0302RR00A-Elenco elaborati fase di ottemperanza AU-PUA_Fase ante operam 1",
+      "excerpt": "F4ingegneria srl Via Di Giura, Centro direzionale Tel: +39 0971 1944797 - Fax: +39 0971 55452"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1243323",
+    "page": 1,
+    "document": "B00_F0302RR00A-Elenco elaborati fase di ottemperanza AU-PUA_Fase ante operam 1",
+    "excerpt": "PROGETTISTI"
+   }
+  },
+  {
+   "name": "Dott. Geol. Raffaele Nardone",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1243357",
+    "page": 23,
+    "document": "C00_Rel_Geologica_SSE",
+    "excerpt": "IL GEOLOGO"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Laborgeo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "00671730778",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dei Mestieri 16 75100 Matera Mt",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "laborgeo@tin.it",
+     "occurrences": 29,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243366",
+      "page": 2,
+      "document": "C02_07_ALL_C7_Certificati_lab_geotecnico",
+      "excerpt": "Tel. 0835.387641 - E-mail: laborgeo@tin.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0835387641",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243367",
+      "page": 100,
+      "document": "C02_08_ALL_C8_Rapporto_tecnico_indagini",
+      "excerpt": "Via Dei Mestieri n° 16 — 75100 MATERA Tel. 0835.387641 - E-mail: laborgeo@tin.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "GRV Ferrandina Wind S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "grvferrandina2wind@legalmail.it",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243341",
+      "page": 1,
+      "document": "B07_F0302RT05A-LocAreePregPaes_StorCult",
+      "excerpt": "Via Durini, 9 Tel. -39.02.50043159 Coordinatore del progetto: 20.122 Milano PEC: grvferrandina2wind@legalmail.it Ing. Giovanni PEREZ"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0250043159",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243323",
+      "page": 1,
+      "document": "B00_F0302RR00A-Elenco elaborati fase di ottemperanza AU-PUA_Fase ante operam 1",
+      "excerpt": "GRV Ferrandina Wind S.r.l. Via Durini, 9 Tel. +39.02.50043159"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "SCM Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@scmingegneria.com",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243324",
+      "page": 1,
+      "document": "A00_Rel02_Rel_opere_civili",
+      "excerpt": "Mail: info@scmingegneria.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "cavallo@scmingegneria.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243389",
+      "page": 7,
+      "document": "G00_PSC_FERRANDINA_FTO_PARCO_EOLICORev01",
+      "excerpt": "Email cavallo@scmingegneria.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0831728955",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243324",
+      "page": 1,
+      "document": "A00_Rel02_Rel_opere_civili",
+      "excerpt": "SCM Ingegneria S.r.l. Firma del progettista ce Gi mM Via Carlo del Croix, 55 Tel. +39 0831 728955 È"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "FA ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wwwfaingegneria.it-fdingegneria@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243345",
+      "page": 1,
+      "document": "B11_F0302QT01A_Planimetria_catastale",
+      "excerpt": "Via Di Giura, Centro direzionale Tel:+390971 1944797 - Fax: +39 097155452 85100 Potenza ‘wwwfAingegneria.it-fdingegneria@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Matera Star Quality Sersicica Dalia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "labargaoi@an.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243367",
+      "page": 112,
+      "document": "C02_08_ALL_C8_Rapporto_tecnico_indagini",
+      "excerpt": "Tala: (035 Sarat labargaoi@an.it P.IVA OO6T 1730778"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "4-6 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "4-6 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 90 giorni (circa 3 mesi) (1), 15 giorni (1), 360 giorni (circa 12 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1381369",
+    "page": 107,
+    "document": "Integrazioni del 18/03/2026 - AO11_F0302CR05E_PMA_PianoMonAmb",
+    "excerpt": "polveri e rumori e contenere eventuali forme di inquinamento. I controlli saranno ripetuti due volte a distanza di 4-6 mesi, calibrati sulla base dello stato di avanzamento dei lavori;"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "F0302BR16A_A.14 - Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/411550"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "F0302BR16A_A.14 - Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/411550"
+   },
+   {
+    "document": "F0302BR16A_A.14 - Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/407607"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 507,
+  "pagine": 3974,
+  "completa": false,
+  "da_leggere": 387
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "GR Value Ferrandina S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 34.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "FERRANDINA, SALANDRA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "MT",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "840 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
