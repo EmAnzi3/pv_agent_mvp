@@ -1,0 +1,630 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7160",
+ "title": "Impianto per la produzione di energia da fonte eolica denominato \"Rosamarina\", costituito da 7 aerogeneratori, ciascuno di potenza pari a 5,3 MW per una potenza complessiva pari a 37,1 MW, localizzato nel Comune di Lavello (PZ) ed opere di connessione ricadenti nel Comune di Melfi (PZ).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7160",
+ "source": "mase",
+ "updated": "2026-10-29",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "37,1 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7160",
+    "excerpt": "37,1 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "5,30 MW ciascuno · altezza mozzo 119 m · Valore prevalente negli elaborati; altri valori: 2 (17), 10 (9), 1 (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1235953",
+    "page": 2,
+    "document": "1114-EX-WF-CS_PLANIMETRIA STRADALE",
+    "excerpt": "09 1114_Planimetria Rosamarina - DIN A1_07 WTG 05 10/2024"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "4-6 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 250 giorni (circa 8 mesi) (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1235882",
+    "page": 116,
+    "document": "F0575BR01C - Piano di Monitoraggio Ambientale-signed",
+    "excerpt": "esecuz. lavori 4-6 mesi Durata dei"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "PZ",
+  "comuni": [
+   "Venosa",
+   "Melfi",
+   "Lavello"
+  ],
+  "coordinate": {
+   "lat": 41.0968,
+   "lon": 15.93535,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (334 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1399697",
+    "page": 69,
+    "document": "Integrazioni del 22/04/2026 - Piano monitoraggio ambientale",
+    "excerpt": "578229"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.09680,15.93535",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.06189,
+   "lon": 15.66316,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1399698",
+    "page": 35,
+    "document": "Integrazioni del 22/04/2026 - Studio previsionale di impatto acustico",
+    "excerpt": "555721"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.06189,15.66316"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "EDP Renewables Italia Holding S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "01832190035",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lepetit 8/10 20124 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "edprenewablesitaliaholding@legalmail.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235895",
+      "page": 4,
+      "document": "126_23ros - a Regione Basilicata - Trasmissione integrazioni per CdS Riscontro nota prot. 36677 del 28.11.2022",
+      "excerpt": "A: edprenewablesitaliaholding@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7160"
+   }
+  },
+  {
+   "name": "Idoka Costruzioni S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1235927",
+    "page": 5,
+    "document": "OW320190100400ES_Caratterizione materiali esistenti fondazione TRAS",
+    "excerpt": "Committente dei lavori : IDOKA COSTRUZIONI SRL; VIA DELLA TECNICA N.18; POTENZA"
+   }
+  },
+  {
+   "name": "Icaro S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "icaro@icarocortona.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235879",
+      "page": 1,
+      "document": "24501I_Piano esecutivo gestione TRS",
+      "excerpt": "52044 Cortona (AR) – Piazza Duomo, 1 - Tel. +39-(0)575-63.83.11 - Fax +39-(0)575-63.83.79 icarocortona.it - icaro@icarocortona.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1235879",
+    "page": 27,
+    "document": "24501I_Piano esecutivo gestione TRS",
+    "excerpt": "Committente: ICARO Srl Località: Comuni di Lavello (PZ) e Melfi (PZ)"
+   }
+  },
+  {
+   "name": "F4 ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "f4ingegneria@pec.it",
+     "occurrences": 168,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1399698",
+      "page": 2,
+      "document": "Integrazioni del 22/04/2026 - Studio previsionale di impatto acustico",
+      "excerpt": "F4 Ingegneria srl www.f4ingegneria.it - f4ingegneria@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "09711944797",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1399698",
+      "page": 272,
+      "document": "Integrazioni del 22/04/2026 - Studio previsionale di impatto acustico",
+      "excerpt": "Tel: +39 0971 1944797 - Fax: +39 0971 55452"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1399698",
+    "page": 280,
+    "document": "Integrazioni del 22/04/2026 - Studio previsionale di impatto acustico",
+    "excerpt": "Progettista"
+   }
+  },
+  {
+   "name": "Engineering Geology S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@engeosrl.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1399701",
+      "page": 15,
+      "document": "Integrazioni del 22/04/2026 - Rapporto Monitoraggio Ambientale acque sotterranee",
+      "excerpt": "Tel. + 39 0971 26378 Fax +39 0971 1940737 e-mail: info@engeosrl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "097126378",
+     "occurrences": 21,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1399702",
+      "page": 1,
+      "document": "Integrazioni del 22/04/2026 - Rapporto Monitoraggio Ambientale acque superficiali",
+      "excerpt": "Engineering Geology srl– Via del Gallitello, 90/A - 85100 Potenza Tel 0971 26378 – fax 0971 1940737"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1399702",
+    "page": 1,
+    "document": "Integrazioni del 22/04/2026 - Rapporto Monitoraggio Ambientale acque superficiali",
+    "excerpt": "RELAZIONE GEOLOGICA Engineering Geology srl– Via del Gallitello, 90/A - 85100 Potenza"
+   }
+  },
+  {
+   "name": "Dott. Geol. Raffaele Nardone",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1399701",
+    "page": 15,
+    "document": "Integrazioni del 22/04/2026 - Rapporto Monitoraggio Ambientale acque sotterranee",
+    "excerpt": "Il Geologo Dott. Geol. Raffaele Nardone"
+   }
+  },
+  {
+   "name": "Ing. Egidio Mitidieri",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1235927",
+    "page": 10,
+    "document": "OW320190100400ES_Caratterizione materiali esistenti fondazione TRAS",
+    "excerpt": "Direttore dei Lavori"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "ECO - Servizi 2 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01457110680",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Tratturo 16/B 65010 Spoltore Pe",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "info@pec.eserv2.it",
+     "occurrences": 152,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235879",
+      "page": 47,
+      "document": "24501I_Piano esecutivo gestione TRS",
+      "excerpt": "Sede: 65010 SPOLTORE (PE) - Via Tratturo, 16/B- Tel.- Fax: 085-4154593 - Cod. Fisc. e P. IVA: 01457110680 Cap.soc. € 90.000 i.v. Iscrizione REA Pescara n. 98213 - Sito web: www.eserv2.it - e-mail: eserv2@tin.it - pec: in"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "eserv2@tin.it",
+     "occurrences": 152,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235879",
+      "page": 47,
+      "document": "24501I_Piano esecutivo gestione TRS",
+      "excerpt": "Sede: 65010 SPOLTORE (PE) - Via Tratturo, 16/B- Tel.- Fax: 085-4154593 - Cod. Fisc. e P. IVA: 01457110680 Cap.soc. € 90.000 i.v. Iscrizione REA Pescara n. 98213 - Sito web: www.eserv2.it - e-mail: eserv2@tin.it - pec: in"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Soiltest Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02192910699",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Torquato Scaraviglia 28 66100 Chieti Ch",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "soiltest@arubapec.it",
+     "occurrences": 32,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235879",
+      "page": 27,
+      "document": "24501I_Piano esecutivo gestione TRS",
+      "excerpt": "www.soiltestitalia.com pec: soiltest@arubapec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@soiltestitalia.com",
+     "occurrences": 40,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235879",
+      "page": 27,
+      "document": "24501I_Piano esecutivo gestione TRS",
+      "excerpt": "pec: soiltest@arubapec.it e-mail: info@soiltestitalia.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Vestas Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02170340737",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Sardegna 40 00187 Roma Rm",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vestas-italia@vestas.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235905",
+      "page": 1,
+      "document": "ROSAMARINA - Vestas declaration",
+      "excerpt": "Via Sardegna, 40, 00187, Roma, Italy Tel: +39 099 4606 111, Fax: +39 099 4606 333, vestas-italia@vestas.com, www.vestas.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0994606111",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235905",
+      "page": 1,
+      "document": "ROSAMARINA - Vestas declaration",
+      "excerpt": "Via Sardegna, 40, 00187, Roma, Italy Tel: +39 099 4606 111, Fax: +39 099 4606 333, vestas-italia@vestas.com, www.vestas.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Labortest S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@labortest.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235927",
+      "page": 4,
+      "document": "OW320190100400ES_Caratterizione materiali esistenti fondazione TRAS",
+      "excerpt": "Labortest S.r.l. - Via Castel del Monte, 174 - 70033 Corato (BA) - Iscrizione Registro delle Imprese di Bari Part IVA 06811860722 - R.E.A. 511878 - Tel, 080/8983458 - Fax 050/3591967 - e-mail: info@labortest.it - web: ww"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0808983458",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235927",
+      "page": 5,
+      "document": "OW320190100400ES_Caratterizione materiali esistenti fondazione TRAS",
+      "excerpt": "Labortest S.r.l. - Via Castel del Monte, 174 - 70033 Corato (BA) - Iscrizione Registro delle Imprese di Bari Part. IVA 06811860722 - R.E.A. 511878 - Tel. 080/8983458 - Fax 080/3591967 - e-mail: info@labortest.it - web: w"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Namirial S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "posta-certificata@pro.sicurezzapostale.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235895",
+      "page": 4,
+      "document": "126_23ros - a Regione Basilicata - Trasmissione integrazioni per CdS Riscontro nota prot. 36677 del 28.11.2022",
+      "excerpt": "Da: Namirial S.p.A. <posta-certificata@pro.sicurezzapostale.it>"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Santoro Valter Maria",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "management_igessnc@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235927",
+      "page": 9,
+      "document": "OW320190100400ES_Caratterizione materiali esistenti fondazione TRAS",
+      "excerpt": "Ing. Santoro Valter Maria management_igessnc@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Giuseppe Eligiato",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0971668715",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235898",
+      "page": 1,
+      "document": "247_20rs da Regione Basilicata Uff Foreste NO idrogeologico",
+      "excerpt": "Ing. Giuseppe ELIGIATO Tel. 0971-668715"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollogenerale@pec.enav.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1235901",
+      "page": 1,
+      "document": "Autorizzazione con prescrizione_ENAC",
+      "excerpt": "ENAV SPA Operations via PEC: protocollogenerale@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "4-6 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "4-6 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 250 giorni (circa 8 mesi) (3), 8 settimane (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1235882",
+    "page": 116,
+    "document": "F0575BR01C - Piano di Monitoraggio Ambientale-signed",
+    "excerpt": "esecuz. lavori 4-6 mesi Durata dei"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "CRONOPROGRAMMA",
+   "url": "https://va.mite.gov.it/File/Documento/365625"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "CRONOPROGRAMMA",
+    "url": "https://va.mite.gov.it/File/Documento/365625"
+   },
+   {
+    "document": "CRONOPROGRAMMA DELLE FASI ATTUATIVE DI DISMISSIONE",
+    "url": "https://va.mite.gov.it/File/Documento/365715"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 836,
+  "pagine": 2749,
+  "completa": false,
+  "da_leggere": 716
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "EDP Renewables Italia Holding s.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 37.1,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "LAVELLO, MELFI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PZ",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "328 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}

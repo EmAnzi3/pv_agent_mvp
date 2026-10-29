@@ -1,0 +1,300 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7990",
+ "title": "Progetto di un impianto eolico con storage denominato \"Sava - Maruggio\" costituito da 22 aerogeneratori da 6 MW, per complessivi 132 MW, ed uno storage da 50 MW, per una potenza complessiva di 182 MW, da realizzarsi nei comuni di Erchie (BR), Manduria (TA), Sava (TA), Maruggio (TA) e Torricella (TA)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7990",
+ "source": "mase",
+ "updated": "2026-10-29",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "132 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7990",
+    "excerpt": "132 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "22",
+   "status": "da verificare",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (10), 5 (10), 10 (7)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/599190",
+    "page": 3,
+    "document": "Avviso al Pubblico del 17/02/2022",
+    "excerpt": "Erchie (BR), Manduria (TA) Sava (TA), Maruggio (TA) e Torricella (TA). Le infrastrutture connesse interessano i Comuni citati e prevede la realizzazione di n. 22 aerogeneratori da 6 MW e la realizzazione di un sistema di"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "50 MW / 200 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 182 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/598912",
+    "page": 3,
+    "document": "Valutazione Previsionale di Impatto acustico",
+    "excerpt": "“SG170 6.0MW @ 115m per una potenza totale pari a 132 MW, e di sistema di accumulo di energia elettrica dalla potenza di 50 MW, per una potenza totale di progetto pari a 182 MW."
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "6 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/598913",
+    "page": 17,
+    "document": "Valutazione di Impatto Acustico Previsionale di Cantiere",
+    "excerpt": "per tutto il periodo della sosta. ➢ le operazioni di cantiere, che si svilupperanno per un periodo di circa 6 mesi, saranno effettuate all’interno della fascia oraria compresa tra le 8:30 e le"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BR",
+  "comuni": [
+   "Erchie",
+   "Manduria",
+   "Sava",
+   "Maruggio",
+   "Torricella"
+  ],
+  "coordinate": {
+   "lat": 40.36442,
+   "lon": 17.60824,
+   "tipo": "centro dei vertici delle aree d'impianto (83 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/598911",
+    "page": 141,
+    "document": "Studio impatto ambientale",
+    "excerpt": "721288,1517"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.36442,17.60824",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.39985,
+   "lon": 17.75027,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/598914",
+    "page": 7,
+    "document": "Relazione Pedoagronomica",
+    "excerpt": "733405.516"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.39985,17.75027"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Red Energy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7990"
+   }
+  },
+  {
+   "name": "Geol. Leonardo Gioia",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/598983",
+    "page": 1,
+    "document": "Relazione Geologica",
+    "excerpt": "Relazione Geologica Geol. Leonardo Gioia"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Projetto Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02658050733",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Fratelli Salvioni 6 20154 Milano Mi",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "studio@projetto.eu",
+     "occurrences": 112,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598911",
+      "page": 1,
+      "document": "Studio impatto ambientale",
+      "excerpt": "tel. 099 9574694 Fax 099 2222834 cell. 349.1735914 studio@projetto.eu"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Angelo Leggieri",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "angelo.leggieri@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598914",
+      "page": 2,
+      "document": "Relazione Pedoagronomica",
+      "excerpt": "Cell.: +39 3292930942 E-mail: dott.angeloleggieri@gmail.com, angelo.leggieri@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "dott.angeloleggieri@gmail.com",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598914",
+      "page": 2,
+      "document": "Relazione Pedoagronomica",
+      "excerpt": "Cell.: +39 3292930942 E-mail: dott.angeloleggieri@gmail.com, angelo.leggieri@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3292930942",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598914",
+      "page": 2,
+      "document": "Relazione Pedoagronomica",
+      "excerpt": "Contatti: Cell.: +39 3292930942"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "6 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "30 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 60 giorni (circa 2 mesi) (1), 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/598911",
+    "page": 143,
+    "document": "Studio impatto ambientale",
+    "excerpt": " Allestimento cantiere (circa 30 giorni); "
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 516,
+  "pagine": 1140,
+  "completa": false,
+  "da_leggere": 396
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Red Energy S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 132.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ERCHIE",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BR",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "1010 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}

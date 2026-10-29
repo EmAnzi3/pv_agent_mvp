@@ -1,0 +1,178 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7864",
+ "title": "Progetto di un impianto eolico costituito da 12 turbine da 3 MW ciascuna, per un totale di 36 MW, da realizzarsi nel comune di Casalduni (BN), in località Diruggio, Mastarzio, Pip, Collemarino, Fortunato, Zingolella, Acquaro. - Prescrizioni da assegnare",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7864",
+ "source": "mase",
+ "updated": "2026-10-29",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "36 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7864",
+    "excerpt": "36 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da verificare",
+   "sub": "3,60 MW ciascuno · altezza mozzo 114 m · Valore più ricorrente negli elaborati; altri valori: 12 (3), 7 (1), 3 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/520774",
+    "page": 1,
+    "document": "Decreto Direttoriale - Progetto di un impianto eolico costituito da 12 turbine da 3 MW ciascuna, per un totale di 36 MW, da realizzarsi nel comune di Casalduni (BN), in località Diruggio, Mastarzio, P",
+    "excerpt": "Progetto Impianto eolico composto da 10 aerogeneratori per una potenza complessiva di 34,65 MW, da"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "BN",
+  "comuni": [
+   "Casalduni"
+  ],
+  "coordinate": {
+   "lat": 41.26667,
+   "lon": 14.7,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/487858",
+    "page": 40,
+    "document": "PMA_Allegato1_Relazione_Tecnica_VIA-signed",
+    "excerpt": "con Pontelandolfo, a nord-est con Campolattaro. Ha un territorio di 23,19 km2 con coordinate 41°16'00\"N e 14°42'00\"E, per gran parte collinare, che si adagia lungo le propaggini meridionali del Massiccio"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.26667,14.70000",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Parco Eolico Casalduni House S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7864"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Arch. Maria Falcone",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0667234302",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/487861",
+      "page": 3,
+      "document": "PMA_Allegato4_MATTM_2020-0094513",
+      "excerpt": "Il Responsabile del procedimento — U.O.T.T. 10 - Arch. Maria Falcone Tel. 06/67234302 — Fax 06/67234416 if"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 13,
+  "pagine": 309,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Parco Eolico Casalduni House s.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 36.0,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CASALDUNI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BN",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "3 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}

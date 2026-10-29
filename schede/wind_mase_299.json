@@ -1,0 +1,940 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_299",
+ "title": "Parco eolico nella rada esterna del porto di Taranto",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/299",
+ "source": "mase",
+ "updated": "2026-10-29",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "30 MW",
+   "sub": "Dagli elaborati (10 occorrenze); il titolo non indica la potenza; altri valori: 3 MW",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1280387",
+    "page": 1,
+    "document": "Verbale di sopralluogo congiunto tra Beleolico S.r.l. e Soprintendenza nazionale per il patrimonio culturale subacqueo 24/11/2021",
+    "excerpt": "Beleolico S.r.l. è titolare di un progetto di impianto eolico off-shore, costituito da 10 aerogeneratori da 3 MW per una potenza complessiva pari a 30 MW, da realizzarsi nella rada esterna del Porto di Taranto, ai sensi "
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da verificare",
+   "sub": "3,00 MW ciascuno · diametro rotore 90 m · Valore più ricorrente negli elaborati; altri valori: 4 (3), 6 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1280387",
+    "page": 1,
+    "document": "Verbale di sopralluogo congiunto tra Beleolico S.r.l. e Soprintendenza nazionale per il patrimonio culturale subacqueo 24/11/2021",
+    "excerpt": "Premesse: Cenni iter autorizzativo Beleolico S.r.l. è titolare di un progetto di impianto eolico off-shore, costituito da 10 aerogeneratori da 3 MW per una potenza complessiva pari a 30 MW, da realizzarsi nella rada este"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1421533",
+    "page": 1,
+    "document": "Integrazioni del 07/08/2026 - Beleolico_Integrazioni_PrescrizioneB7",
+    "excerpt": "28 del D.Lgs. 152/2006 relativa ad un impianto eolico off-shore"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 Mesi",
+   "status": "da documenti",
+   "sub": "Inizio lavori 09/2021 (previsione di progetto) · Valore prevalente negli elaborati; altri valori: 18 mese (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1254485",
+    "page": 10,
+    "document": "Integrazioni del 14/05/2025 - Jonian Dolphin Conservation - Cetacean rehabilitation and release refuge",
+    "excerpt": "www.tilebytes.com - info@tilebytes.com SEZIONE 4 – CRONOPROGRAMMA (Sviluppo Progettuale 24 Mesi) Il Soggetto Proponente dovrà indicare la durata del progetto in mesi ed inserire il relativo cronoprogramma."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "TA",
+  "comuni": [
+   "Nessun Comune"
+  ],
+  "coordinate": {
+   "lat": 40.49169,
+   "lon": 17.14248,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (85 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1107339",
+    "page": 26,
+    "document": "VO_2-2_PMA_Eolico_Taranto_Rev_B",
+    "excerpt": "d’acqua e nei sedimenti 40°30'16.89\"N"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.49169,17.14248",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Beleolico S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02908030733",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Abruzzo 410 66100 Chieti Ch",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "beleolico@pec.totoholding.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1381247",
+      "page": 4,
+      "document": "Comunicazione VA esito valutazione",
+      "excerpt": "Alla Beleolico S.r.l. beleolico@pec.totoholding.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/299"
+   }
+  },
+  {
+   "name": "Renexia Services S.r.l.",
+   "kind": "società",
+   "roles": [
+    "EPC (indicata negli elaborati)",
+    "Impresa esecutrice (indicata negli elaborati)"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": [
+    {
+     "ruolo": "EPC",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1115882",
+      "page": 2,
+      "document": "Allegato alla comunicazione VA esito valutazione MASE_2024-0139773 - nota prot. n. 12116 MASE dell'1.07.2024",
+      "excerpt": "30/150 kV denominata “Torre Triolo” e che tale operazione è stata gestita, come da prassi, dall’EPC Contractor Renexia Services S.r.l. e dai subappaltatori incaricati”."
+     }
+    },
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1107339",
+      "page": 1,
+      "document": "VO_2-2_PMA_Eolico_Taranto_Rev_B",
+      "excerpt": "Impresa esecutrice"
+     }
+    }
+   ],
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "renexiaservices@pec.totoholding.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1162832",
+      "page": 1,
+      "document": "Nota di fattibilità degli impianti di acquacoltura a cura dei consulenti tecnici",
+      "excerpt": "Fax +39 0871 5874413 renexiaservices@pec.totoholding.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "r.sticca@renexia.it",
+     "occurrences": 19,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1421533",
+      "page": 2,
+      "document": "Integrazioni del 07/08/2026 - Beleolico_Integrazioni_PrescrizioneB7",
+      "excerpt": "- Ing. Rosalba Sticca, e-mail r.sticca@renexia.it , Cell. 3356313176, Tel. 08715874326"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "e.dimatteo@renexia.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/955123",
+      "page": 3,
+      "document": "Comunicazione avanzamento prescrizioni di competenza ARPA Puglia del decreto di compatibilità ambientale VIA n.391 del 24/07/2012",
+      "excerpt": "Per qualsiasi chiarimento prego contattare - Ing. Emiliano Di Matteo Cell 3386823968 mail e.dimatteo@renexia.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "r.petricciuolo@renexiaservices.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/955127",
+      "page": 2,
+      "document": "Richiesta Ordinanza per cantiere a mare",
+      "excerpt": "Per qualsiasi comunicazione in merito si prega di far riferimento ai seguenti contatti: Raffaele Petricciuolo, Cell. 346/3121699, Email r.petricciuolo@renexiaservices.it ;"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "i.mastrangioli@renexia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/955123",
+      "page": 3,
+      "document": "Comunicazione avanzamento prescrizioni di competenza ARPA Puglia del decreto di compatibilità ambientale VIA n.391 del 24/07/2012",
+      "excerpt": "- Ing. Rosalba Sticca Cell.3356313176 mail r.sticca@renexia.it - Ing. lamila Mastrangioli Tel 08715874368 mail i.mastrangioli@renexia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "087158745",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1162832",
+      "page": 1,
+      "document": "Nota di fattibilità degli impianti di acquacoltura a cura dei consulenti tecnici",
+      "excerpt": "66100 Chieti (CH) Italy Tel. +39 0871 58745 r.a."
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1115882",
+    "page": 2,
+    "document": "Allegato alla comunicazione VA esito valutazione MASE_2024-0139773 - nota prot. n. 12116 MASE dell'1.07.2024",
+    "excerpt": "30/150 kV denominata “Torre Triolo” e che tale operazione è stata gestita, come da prassi, dall’EPC Contractor Renexia Services S.r.l. e dai subappaltatori incaricati”."
+   }
+  },
+  {
+   "name": "Ing. Di Bella",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1254487",
+    "page": 1,
+    "document": "Integrazioni del 14/05/2025 - Zona di concessione per il posizionamento delle vasche",
+    "excerpt": "Livello progettazione Redatto: | Ing. Di Bella A a"
+   }
+  },
+  {
+   "name": "Ing. Luigi Severini",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1280381",
+    "page": 2,
+    "document": "Comunicazione di avanzamento sullo stato di ottemperanza alle prescrizioni di competenza del Ministero della Cultura del decreto di compatibilità ambientale VIA n.391 del 24/07/2012 e successive proro",
+    "excerpt": "Ultimate a firma del Direttore dei Lavori – Ing. Luigi Severini – del 07/08/2023, presentata ai competenti Uffici SUAP-"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "LA Molisana Trasporti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01463480705",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Rio Lecine 30 86014 Guardiaregia Cb",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "lamolisanatrasportisrl@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284410",
+      "page": 1,
+      "document": "Integrazioni del 30/07/2025 - ANASAutorizzazione trasporto eccezionale ANAS",
+      "excerpt": "Telefono 0874785034 e-mail m.mariano@molisanatrasporti.it PEC LAMOLISANATRASPORTISRL@LEGALMAIL.IT"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "m.mariano@molisanatrasporti.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284410",
+      "page": 1,
+      "document": "Integrazioni del 30/07/2025 - ANASAutorizzazione trasporto eccezionale ANAS",
+      "excerpt": "Indirizzo CONTRADA RIO LECINE N.30 Citta GUARDIAREGIA (CB) C.a.p 86014 Telefono 0874785034 e-mail m.mariano@molisanatrasporti.it PEC"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@molisanatrasporti.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284411",
+      "page": 1,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione NA 558 S trasporto eccezionale Autostrade per l'Italia S.p.A.",
+      "excerpt": "E-mail info@molisanatrasporti.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0874785034",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284410",
+      "page": 1,
+      "document": "Integrazioni del 30/07/2025 - ANASAutorizzazione trasporto eccezionale ANAS",
+      "excerpt": "Indirizzo CONTRADA RIO LECINE N.30 Citta GUARDIAREGIA (CB) C.a.p 86014 Telefono 0874785034 e-mail m.mariano@molisanatrasporti.it PEC"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Siemens Energy Transformers S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "00814450227",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Di Spini 9 38121 Trento Tn",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "siemenstrafo.it@siemens.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284415",
+      "page": 7,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione trasporto eccezionale Provincia di Trento",
+      "excerpt": "Italy siemenstrafo.it@siemens.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0461957111",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284415",
+      "page": 7,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione trasporto eccezionale Provincia di Trento",
+      "excerpt": "Via di Spini, No. 9 Tel. +39 0461 957111"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Autostrade PER L'italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "07516911000",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Alberto Bergamini 50 00159 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dpo@pec.autostrade.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284411",
+      "page": 6,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione NA 558 S trasporto eccezionale Autostrade per l'Italia S.p.A.",
+      "excerpt": "(di seguito per brevità \"Titolari\"). Il Data Protection Officer (DPO) per Autostrade per l'Italia S.p.A., è contattabile all'indirizzo di posta elettronica dpo@pec.autostrade.it;"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@autostrade.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284411",
+      "page": 1,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione NA 558 S trasporto eccezionale Autostrade per l'Italia S.p.A.",
+      "excerpt": "Tel. 06-43631 - Fax 06-43634090 E-mail info@autostrade.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "trasporti_eccezionali_dt3@autostrade.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284411",
+      "page": 3,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione NA 558 S trasporto eccezionale Autostrade per l'Italia S.p.A.",
+      "excerpt": "consegna delle merci potrà essere autorizzato il transito alle stazioni o svincoli intermedi. (Art. 10 Comma 18 del CdS). L'autorizzazione dovrà essere richiesta e motivata con anticipo almeno di 48 ore inviando email al"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Italiana S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "gratalo77@gmail.com",
+     "occurrences": 51,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1254486",
+      "page": 2,
+      "document": "Integrazioni del 14/05/2025 - Relazione tecnica integrazioni e approfondimenti",
+      "excerpt": "Tel-fax 099-4005718/+393356516414 e-mail: gratalo77@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Rosalba Sticca",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3356313176",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1421533",
+      "page": 2,
+      "document": "Integrazioni del 07/08/2026 - Beleolico_Integrazioni_PrescrizioneB7",
+      "excerpt": "- Ing. Rosalba Sticca, e-mail r.sticca@renexia.it , Cell. 3356313176, Tel. 08715874326"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "08715874326",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1421533",
+      "page": 2,
+      "document": "Integrazioni del 07/08/2026 - Beleolico_Integrazioni_PrescrizioneB7",
+      "excerpt": "- Ing. Rosalba Sticca, e-mail r.sticca@renexia.it , Cell. 3356313176, Tel. 08715874326"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Autostrada Tirrenica S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dpo@pec.tirrenica.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284411",
+      "page": 6,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione NA 558 S trasporto eccezionale Autostrade per l'Italia S.p.A.",
+      "excerpt": "Il Data Protection Officer (DPO) per Tangenziale di Napoli S.p.A., è contattabile all'indirizzo di posta elettronica dpo@pec.tangenzialedinapoli.it; Il Data Protection Officer (DPO) per Società Autostrada Tirrenica S.p.A"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "dpo@pec.autovie.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284411",
+      "page": 6,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione NA 558 S trasporto eccezionale Autostrade per l'Italia S.p.A.",
+      "excerpt": "Il Data Protection Officer (DPO) per Società Autostrada Tirrenica S.p.A., è contattabile all'indirizzo di posta elettronica dpo@pec.tirrenica.it; Il Data Protection Officer (DPO) per S.p.A. Autovie Venete., è contattabil"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Raffaele Petricciuolo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3463121699",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/955128",
+      "page": 4,
+      "document": "Comunicazione avanzamento prescrizioni di competenza ARPA Puglia del decreto di compatibilità ambientale VIA n.391 del 24/07/2012",
+      "excerpt": "- Ing. Raffaele Petricciuolo, Tel.3463121699"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Emiliano Di Matteo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3386823968",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/955123",
+      "page": 3,
+      "document": "Comunicazione avanzamento prescrizioni di competenza ARPA Puglia del decreto di compatibilità ambientale VIA n.391 del 24/07/2012",
+      "excerpt": "Per qualsiasi chiarimento prego contattare - Ing. Emiliano Di Matteo Cell 3386823968 mail e.dimatteo@renexia.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Raccordo Autostradale Valle d'Aosta S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dpo@pec.ravspa.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284411",
+      "page": 6,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione NA 558 S trasporto eccezionale Autostrade per l'Italia S.p.A.",
+      "excerpt": "Il Data Protection Officer (DPO) per Autostrade per l'Italia S.p.A., è contattabile all'indirizzo di posta elettronica dpo@pec.autostrade.it; Il Data Protection Officer (DPO) per Raccordo Autostradale Valle d'Aosta S.p.A"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Autostrade Meridionali S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dpo@pec.autostrademeridionali.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284411",
+      "page": 6,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione NA 558 S trasporto eccezionale Autostrade per l'Italia S.p.A.",
+      "excerpt": "Il Data Protection Officer (DPO) per Raccordo Autostradale Valle d'Aosta S.p.A., è contattabile all'indirizzo di posta elettronica dpo@pec.ravspa.it; Il Data Protection Officer (DPO) per Società Autostrade Meridionali S."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Tangenziale di Napoli S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dpo@pec.tangenzialedinapoli.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1284411",
+      "page": 6,
+      "document": "Integrazioni del 30/07/2025 - Autorizzazione NA 558 S trasporto eccezionale Autostrade per l'Italia S.p.A.",
+      "excerpt": "Il Data Protection Officer (DPO) per Società Autostrade Meridionali S.p.A., è contattabile all'indirizzo di posta elettronica dpo@pec.autostrademeridionali.it; Il Data Protection Officer (DPO) per Tangenziale di Napoli S"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Cesub S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "cesub@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/907906",
+      "page": 1,
+      "document": "Rif. nota prot. ARPA PUGLIA - Unica AOO - 0155/0004/0003 - Protocollo 0086716 - 155 del 22/12/2021 - - Monitoraggio Ante Operam e in Corso d'Opera",
+      "excerpt": "74027 SAN GIORGIO J. cesub@pec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 13/11/2021, ma l'iter è proseguito; ultimo documento o atto del 24/08/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Renexia Services S.r.l.",
+    "partita_iva": null,
+    "ruolo": "EPC",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1115882",
+     "page": 2,
+     "document": "Allegato alla comunicazione VA esito valutazione MASE_2024-0139773 - nota prot. n. 12116 MASE dell'1.07.2024",
+     "excerpt": "30/150 kV denominata “Torre Triolo” e che tale operazione è stata gestita, come da prassi, dall’EPC Contractor Renexia Services S.r.l. e dai subappaltatori incaricati”."
+    }
+   },
+   {
+    "impresa": "Renexia Services S.r.l.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1107339",
+     "page": 1,
+     "document": "VO_2-2_PMA_Eolico_Taranto_Rev_B",
+     "excerpt": "Impresa esecutrice"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "01/09/2021 → 20/12/2021",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/953172",
+     "page": 5,
+     "document": "Descrizione Opere a Mare e Impatto Acustico sul ricettore \"a Terra\"",
+     "excerpt": ""
+    }
+   },
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "decreto n. 269 del 23/07/2024",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1243631",
+     "page": 2,
+     "document": "Allegato alla Comunicazione esito valutazione - Parere SCTVA del 14/03/2025",
+     "excerpt": "Tecnica di Verifica dell’Impatto Ambientale - VIA e VAS, dei Coordinatori delle Sottocommissioni VIA e VAS, così come modificato dal decreto n. 269 del 23/07/2024, n. 371 del 23/10/2024, n. 389 dell’8/11/2024, n. 407 del"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di luglio 2024",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1243631",
+     "page": 2,
+     "document": "Allegato alla Comunicazione esito valutazione - Parere SCTVA del 14/03/2025",
+     "excerpt": "Tecnica di Verifica dell’Impatto Ambientale - VIA e VAS, dei Coordinatori delle Sottocommissioni VIA e VAS, così come modificato dal decreto n. 269 del 23/07/2024, n. 371 del 23/10/2024, n. 389 dell’8/11/2024, n. 407 del"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di ottobre 2024",
+    "dettaglio": "inizio stimato + durata del cantiere: 4 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/953172",
+     "page": 5,
+     "document": "Descrizione Opere a Mare e Impatto Acustico sul ricettore \"a Terra\"",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "4 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "decreto n. 269",
+   "data": "23/07/2024",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1243631",
+    "page": 2,
+    "document": "Allegato alla Comunicazione esito valutazione - Parere SCTVA del 14/03/2025",
+    "excerpt": "Tecnica di Verifica dell’Impatto Ambientale - VIA e VAS, dei Coordinatori delle Sottocommissioni VIA e VAS, così come modificato dal decreto n. 269 del 23/07/2024, n. 371 del 23/10/2024, n. 389 dell’8/11/2024, n. 407 del"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Installazione Monopali di fondazione",
+    "start": 0.0,
+    "end": 0.66,
+    "level": 0,
+    "dates": [
+     "2021-09-01",
+     "2021-09-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Intallazione delle WTG",
+    "start": 0.66,
+    "end": 1.97,
+    "level": 0,
+    "dates": [
+     "2021-09-21",
+     "2021-10-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installazione Cavi Marini e Materassi di Protezione",
+    "start": 0.16,
+    "end": 3.65,
+    "level": 0,
+    "dates": [
+     "2021-09-06",
+     "2021-12-20"
+    ],
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 3.65,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/953172",
+   "page": 5,
+   "document": "Descrizione Opere a Mare e Impatto Acustico sul ricettore \"a Terra\"",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "set 21",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "ott 21",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "nov 21",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "dic 21",
+     "start": 3.0,
+     "end": 4.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "24 Mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 giorni (2), 18 mese (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1254485",
+    "page": 10,
+    "document": "Integrazioni del 14/05/2025 - Jonian Dolphin Conservation - Cetacean rehabilitation and release refuge",
+    "excerpt": "www.tilebytes.com - info@tilebytes.com SEZIONE 4 – CRONOPROGRAMMA (Sviluppo Progettuale 24 Mesi) Il Soggetto Proponente dovrà indicare la durata del progetto in mesi ed inserire il relativo cronoprogramma."
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "09/2021",
+    "iso": "2021-09",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1280380",
+     "page": 1,
+     "document": "Comunicazione avanzamento prescrizioni di competenza del Ministero della Cultura del decreto di compatibilità ambientale VIA n.391 del 24/07/2012 e successive proroghe Ns. Rif. Protoc. BEL_2021_CH_000",
+     "excerpt": "In vista dell’inizio dei lavori a mare, programmato nel mese corrente (Settembre 2021), con la presente COMUNICA"
+    }
+   },
+   {
+    "label": "Fine lavori",
+    "date": "09/05/2022",
+    "iso": "2022-05-09",
+    "nature": "natura non determinabile",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1152486",
+     "page": 2,
+     "document": "Nota esplicativa sullo stato di ottemperanza nella fase C.O.",
+     "excerpt": "di fine lavori parziale trasmessa al Ministero delle Infrastrutture e Trasporti con nota Ns. Rif. Protoc. BEL_2022_CH_0000077_El 09/05/2022;"
+    }
+   }
+  ],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/565168"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/565168"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 298,
+  "pagine": 3159,
+  "completa": false,
+  "da_leggere": 178
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Beleolico s.r.l (ex Societ Energy S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": null,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 13/11/2021, ma l'iter è proseguito; ultimo documento o atto del 24/08/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Potenza",
+   "reason": "non indicata nel titolo: valore ricavato dagli elaborati"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "149 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Renexia Services S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}

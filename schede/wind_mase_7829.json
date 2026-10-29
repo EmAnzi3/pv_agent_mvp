@@ -1,0 +1,483 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7829",
+ "title": "Progetto di un impianto eolico costituito da 12 turbine da 3 MW ciascuna, per un totale di 36 MW, da realizzarsi nel comune di Casalduni (BN), in località Diruggio, Mastarzio, Pip, Collemarino, Fortunato, Zingolella, Acquaro.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7829",
+ "source": "mase",
+ "updated": "2026-10-29",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "36 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7829",
+    "excerpt": "36 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da verificare",
+   "sub": "3,60 MW ciascuno · altezza mozzo 114 m · Valore più ricorrente negli elaborati; altri valori: 7 (23), 3 (14), 5 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1183534",
+    "page": 1,
+    "document": "Elenco Elaborati",
+    "excerpt": "Commission and Testing procedure (CTP) installazione BMS per i 10 aerogeneratori Parco Eolico Casalduni"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "5 mesi",
+   "status": "da documenti",
+   "sub": "Inizio lavori 13/01/2022 (campo presunto di piano di sicurezza o notifica)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/759644",
+    "page": 3,
+    "document": "Piano di Monitoraggio Acustico per le fasi di cantiere e per la fase di esercizio",
+    "excerpt": "b. Realizzazione Pali di Fondazione – durata stimata 2,5 mesi Tutte le fondazioni, tranne una, saranno realizzate su pali. Ogni fondazione avrà n.12 pali trivellati con"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "BN",
+  "comuni": [
+   "Casalduni"
+  ],
+  "coordinate": {
+   "lat": 41.27528,
+   "lon": 14.67004,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (124 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1183516",
+    "page": 45,
+    "document": "Report ottobre 2022 \"Piano di monitoraggio ambientale - Fauna in fase di cantiere\"",
+    "excerpt": "PA01 41.274306"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.27528,14.67004",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.28362,
+   "lon": 14.7135,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/551518",
+    "page": 5,
+    "document": "Relazione tecnica di ripristino",
+    "excerpt": "476008.14"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.28362,14.71350"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Parco Eolico Casalduni House S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "01527100620",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Abruzzo 410 66100 Chieti Ch",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "parcoeolicocasaldunihouse@pec.totoholding.it",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1183508",
+      "page": 1,
+      "document": "Parere tecnico ARPAC al piano di monitoraggio acque sotterranee CO e PO",
+      "excerpt": "Spett.le Parco Eolico Casalduni House parcoeolicocasaldunihouse@pec.totoholding.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7829"
+   }
+  },
+  {
+   "name": "Renexia Sercice S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "r.sticca@renexia.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1183507",
+      "page": 7,
+      "document": "Nota tecnica relativa allo stato di ottemperanza alle prescrizioni di cui al Parere Tecnico CTVA n. 128 del 11/12/2020 nella fase C.O.",
+      "excerpt": "- Ing. Rosalba Sticca, e-mail r.sticca@renexia.it , Tel. 08715874326, Cell. 3356313176"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "e.dimatteo@renexia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/551511",
+      "page": 3,
+      "document": "Integrazione PUT - Nota PECH caratterizzazione WTG 03 e 18 - 5",
+      "excerpt": "- Rosalba Sticca, r.sticca@renexia.it , Tel. 0871/5874326, Cell. 335/6313176; - Emiliano Di Matteo, e.dimatteo@renexia.it , Tel. 0871/5874364, Cell. 338/6823968"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1442025",
+    "page": 4,
+    "document": "PRELIEVO DI ACQUE SOTTERRANEE e LETTURE PIEZOMETRICHE",
+    "excerpt": "COMMITTENTE | RENEXIA SERCICE S.r.l."
+   }
+  },
+  {
+   "name": "Renexia Services S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollo.casalduni@asmepec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1183515",
+      "page": 1,
+      "document": "Relazione risultanze analitiche ARPAC e rapporti di prova terreno prelievo del 12/07/2022",
+      "excerpt": "e p .c. Spett.le Comune di Casalduni (BN) protocollo.casalduni@asmepec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1183511",
+    "page": 4,
+    "document": "Report Indagine geognostica - Installazione di piezometri luglio 2023",
+    "excerpt": "- Committente: RENEXIA SERVICES s.r.l."
+   }
+  },
+  {
+   "name": "Dott. Domenico Ferraro",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1183511",
+    "page": 6,
+    "document": "Report Indagine geognostica - Installazione di piezometri luglio 2023",
+    "excerpt": "Geologo in sito: Dott. Domenico Ferraro Autorizzazione Ministeriale per l'esecuzione delle indagini in sito"
+   }
+  },
+  {
+   "name": "Dott. Ing. Massimo Lepore",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/551519",
+    "page": 1,
+    "document": "1.2.R00_Acustica",
+    "excerpt": "Progettazione . Dott. Ing. Massimo Lepore"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Ing. Rosalba Sticca",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "08715874326",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1183507",
+      "page": 7,
+      "document": "Nota tecnica relativa allo stato di ottemperanza alle prescrizioni di cui al Parere Tecnico CTVA n. 128 del 11/12/2020 nella fase C.O.",
+      "excerpt": "- Ing. Rosalba Sticca, e-mail r.sticca@renexia.it , Tel. 08715874326, Cell. 3356313176"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3356313176",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1183507",
+      "page": 7,
+      "document": "Nota tecnica relativa allo stato di ottemperanza alle prescrizioni di cui al Parere Tecnico CTVA n. 128 del 11/12/2020 nella fase C.O.",
+      "excerpt": "- Ing. Rosalba Sticca, e-mail r.sticca@renexia.it , Tel. 08715874326, Cell. 3356313176"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dr. Nicola SA",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@geo-in.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/633197",
+      "page": 92,
+      "document": "Risultati delle indagini- Integrazione piste e piazzole",
+      "excerpt": "Dr. Nicola SA Entino 82100 Benevento — Tel e Fax O83: È www.geo-in.it e-mail: info@geo-in.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Maria Falcone",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0667234302",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/477950",
+      "page": 3,
+      "document": "Allegato al Decreto di proroga del Ministero della Transizione Ecologica - Parere MIBACT del 17/11/2020",
+      "excerpt": "Il Responsabile del procedimento — U.O.T.T. 10 - Arch. Maria Falcone Tel. 06/67234302 — Fax 06/67234416 if"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "funzione.psa@pec.enav.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/551514",
+      "page": 1,
+      "document": "Parere ENAC",
+      "excerpt": "Area Operativa Progettazione Spazi Aerei Pec: funzione.psa@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 27/04/2022, ma l'iter è proseguito; ultimo documento o atto del 29/10/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto Ministeriale n. 105 del 24/03/2021",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1211698",
+     "page": 1,
+     "document": "Comunicazione VA esito valutazione",
+     "excerpt": "a2, 1-b, 1-c, 1-d, 1-e contenute nel parere della Commissione tecnica VIA - VAS n. 128 del 11/12/2020 di cui al Decreto Ministeriale n. 105 del 24/03/2021 di proroga dei termini di validità del provvedimento di VIA, rela"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di marzo 2021",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1211698",
+     "page": 1,
+     "document": "Comunicazione VA esito valutazione",
+     "excerpt": "a2, 1-b, 1-c, 1-d, 1-e contenute nel parere della Commissione tecnica VIA - VAS n. 128 del 11/12/2020 di cui al Decreto Ministeriale n. 105 del 24/03/2021 di proroga dei termini di validità del provvedimento di VIA, rela"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di agosto 2021",
+    "dettaglio": "inizio stimato + durata del cantiere: 5 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/759644",
+     "page": 3,
+     "document": "Piano di Monitoraggio Acustico per le fasi di cantiere e per la fase di esercizio",
+     "excerpt": "b. Realizzazione Pali di Fondazione – durata stimata 2,5 mesi Tutte le fondazioni, tranne una, saranno realizzate su pali. Ogni fondazione avrà n.12 pali trivellati con"
+    }
+   }
+  ],
+  "durata_cantiere": "5 mesi",
+  "autorizzazione": {
+   "atto": "Decreto Ministeriale n. 105",
+   "data": "24/03/2021",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1211698",
+    "page": 1,
+    "document": "Comunicazione VA esito valutazione",
+    "excerpt": "a2, 1-b, 1-c, 1-d, 1-e contenute nel parere della Commissione tecnica VIA - VAS n. 128 del 11/12/2020 di cui al Decreto Ministeriale n. 105 del 24/03/2021 di proroga dei termini di validità del provvedimento di VIA, rela"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "2 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/759644",
+    "page": 3,
+    "document": "Piano di Monitoraggio Acustico per le fasi di cantiere e per la fase di esercizio",
+    "excerpt": "a. Realizzazione Piste di cantiere e piattaforme di sollevamento turbine– durata stimata 2 mesi Per poter accedere alle aree di cantiere e consentire le lavorazioni di cui ai punti successivi, si rende"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "13/01/2022",
+    "iso": "2022-01-13",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/947457",
+     "page": 5,
+     "document": "Allegato al Decreto Direttoriale - Parere CTVA del 09/10/2023",
+     "excerpt": "suddetta condizione ambientale in corso d’opera, prima della fine dei lavori, e non in fase esecutiva, prima dell’inizio dei lavori, come previsto dal DM n.8 del 13/01/2022 in recepimento del parere CTVIA n.399 del 14/12"
+    }
+   }
+  ],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 86,
+  "pagine": 1526,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Parco Eolico Casalduni House s.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 36.0,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CASALDUNI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BN",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 27/04/2022, ma l'iter è proseguito; ultimo documento o atto del 29/10/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "200 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}

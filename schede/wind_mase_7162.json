@@ -5,7 +5,7 @@
  "title": "Impianto per la produzione di energia da fonte eolica denominato \"Mondonuovo\" di potenza complessiva pari a 54 MW localizzato nei comuni di Mesagne (BR) ed opere elettriche localizzate nel comune di Brindisi",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7162",
  "source": "mase",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "sintesi": [
   {
    "key": "potenza",
@@ -26,10 +26,23 @@
    "status": "da documenti",
    "sub": "6,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/986580",
+    "url": "https://va.mite.gov.it/File/Documento/986626",
     "page": 3,
     "document": "Relazione Tecnica Generale - Parco eolico",
     "excerpt": "la RTN a servizio dell’impianto eolico Mondonuovo da realizzarsi nel comune di Mesagne (BR) costituito da n. 9 aerogeneratori della potenza nominale complessiva di 54 MW. Parte del collegamento elettrico in media tension"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "6 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/959920",
+    "page": 12,
+    "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI N. 2, 3 E 4 DEL PARERE POSITIVO DELLA CTVIA DEL MASE N. 3409 DEL 15/05/2020",
+    "excerpt": "ambientale 3) 1 campagna 6 mesi prima dell’inizio lavori"
    }
   }
  ],
@@ -39,14 +52,43 @@
   "comuni": [
    "Brindisi"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Brindisi%2C+BR%2C+Puglia",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 40.52914,
+   "lon": 17.85483,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (101 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1433080",
+    "page": 4,
+    "document": "Integrazioni del 22/09/2026 - REPORT ACQUE SOTTERRANEE",
+    "excerpt": "PIEZOMETRO WTG1 40°32'3.87\"N - 17°51'2.84\"E PIEZOMETRO WTG2"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.52914,17.85483",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
  "soggetti": [
+  {
+   "name": "Vamirgeoind Ambiente Geologia E Geofisica S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1433081",
+    "page": 34,
+    "document": "Integrazioni del 22/09/2026 - REPORT SUOLO",
+    "excerpt": "COMMITTENTE: VAMIRGEOIND AMBIENTE GEOLOGIA E GEOFISICA S.R.L."
+   }
+  },
   {
    "name": "RWE Renewables Italia S.r.l.",
    "kind": "società",
@@ -62,12 +104,23 @@
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 3,
+     "occurrences": 17,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1329375",
+      "url": "https://va.mite.gov.it/File/Documento/1329371",
       "page": 4,
       "document": "Comunicazione VA esito valutazione",
       "excerpt": "Alla RWE Renewables Italia S.r.l. rwerenewablesitaliasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0805460111",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1400255",
+      "page": 3,
+      "document": "Parere Arpa Puglia Prot. N.0065259 del 30/10/2025, Parere Arpa Puglia Prot. N. 0065187del 30/10/ 2025; Nota Comune Mesagne - trasmessi da RWE Renewables Italia S.r.l - in data 5/03/2026",
+      "excerpt": "Sede legale: Corso Trieste 27, 70126 Bari Via Giuseppe Maria Galanti n. 16 - Brindisi Tel. 080 5460111 Fax 080 5460150 tel, 0831 099501 fax 0831 099599"
      }
     }
    ],
@@ -78,6 +131,44 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Natura S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02887711212",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Rossini 16 80026 Casoria Na",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "natura@naturasrl.it",
+     "occurrences": 271,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1433082",
+      "page": 45,
+      "document": "Integrazioni del 22/09/2026 - REPORT ATMOSFERA",
+      "excerpt": "Tel 081/5737038 Fax 081/5739776 E-mail: natura@naturasrl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0815737038",
+     "occurrences": 264,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1433081",
+      "page": 34,
+      "document": "Integrazioni del 22/09/2026 - REPORT SUOLO",
+      "excerpt": "80026 Casoria (NA) Tel 081/5737038 Fax 081/5739776"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Laborgeo S.r.l.",
    "kind": "società",
@@ -93,7 +184,7 @@
      "value": "laborgeo@tin.it",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/986579",
+      "url": "https://va.mite.gov.it/File/Documento/986625",
       "page": 53,
       "document": "TOC e interferenze parte idraulica",
       "excerpt": "Tel. 0835.387641 - E-mail: laborgeo@tin.it"
@@ -104,7 +195,7 @@
      "value": "0835387641",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/986579",
+      "url": "https://va.mite.gov.it/File/Documento/986625",
       "page": 53,
       "document": "TOC e interferenze parte idraulica",
       "excerpt": "Tel. 0835.387641 - E-mail: laborgeo@tin.it"
@@ -119,7 +210,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": null,
+  "durata_cantiere": "6 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -136,7 +227,17 @@
   "months": 1,
   "source": null,
   "asse": null,
-  "duration": null,
+  "duration": {
+   "text": "6 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 giorni (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/959920",
+    "page": 12,
+    "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI N. 2, 3 E 4 DEL PARERE POSITIVO DELLA CTVIA DEL MASE N. 3409 DEL 15/05/2020",
+    "excerpt": "ambientale 3) 1 campagna 6 mesi prima dell’inizio lavori"
+   }
+  },
   "milestones": [],
   "document": {
    "document": "Cronoprogramma esecuzione dei lavori",
@@ -154,9 +255,9 @@
  },
  "documentazione": {
   "documenti": 471,
-  "pagine": 857,
+  "pagine": 3134,
   "completa": false,
-  "da_leggere": 351
+  "da_leggere": 231
  },
  "confronto": [
   {
@@ -188,7 +289,7 @@
  "da_verificare": [
   {
    "label": "Recapiti",
-   "reason": "547 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1376 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."

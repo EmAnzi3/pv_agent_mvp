@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto eolico composto da 8 aerogeneratori, ciascuno della potenza di 6,5 MW, per una potenza complessiva di 52 MW, ubicato nel Comune di Ascoli Satriano (FG), in località San Martino - Lagnano",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7401",
  "source": "mase",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "8",
    "status": "da documenti",
-   "sub": "6,50 MW ciascuno · altezza mozzo 125 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 46 (12), 15 (11), 23 (9)",
+   "sub": "6,50 MW ciascuno · altezza mozzo 125 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 4 (13), 46 (12), 15 (11)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1395212",
     "page": 2,
@@ -35,14 +35,14 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "12 mesi",
+   "value": "18 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1395281",
-    "page": 30,
+    "page": 38,
     "document": "PIANO DI MONITORAGGIO AMBIENTALE",
-    "excerpt": "Macrofase 1: realizzazione dei cavidotti e sottostazione, eseguite in parallelo alla realizzazione strade-piazzole-fondazioni; durata lavorazioni stimata di circa 12 mesi. -"
+    "excerpt": "varie attività, considerando secondo le previsioni del cronoprogramma di progetto, una durata della fase di cantiere di 18 mesi."
    }
   }
  ],
@@ -94,24 +94,24 @@
    "contacts": [
     {
      "type": "PEC",
-     "value": "windergsanmartinosrl@pec.it",
-     "occurrences": 2,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1418096",
-      "page": 1,
-      "document": "Parere ARPA Puglia - Dipartimento Provinciale di Foggia in data 6/08/2026",
-      "excerpt": "Winderg San Martino S.r.l. windergsanmartinosrl@pec.it"
-     }
-    },
-    {
-     "type": "PEC",
      "value": "winderg@pecgiambelli.it",
-     "occurrences": 2,
+     "occurrences": 4,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/476533",
       "page": 2,
       "document": "Richiesta integrazioni CreSS",
       "excerpt": "Alla società Winderg S.r.l. winderg@pecgiambelli.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "windergsanmartinosrl@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441105",
+      "page": 1,
+      "document": "Allegato alla Comunicazione VA esito valutazione - Parere ARPA Puglia - Dipartimento Provinciale di Foggia in data 6/08/2026",
+      "excerpt": "Winderg San Martino S.r.l. windergsanmartinosrl@pec.it"
      }
     },
     {
@@ -160,9 +160,90 @@
     "document": "PLANIMETRIA SU C.T.R. E ORTOFOTO CONTENENTE L'INDIVIDUAZIONE DEI FABBRICATI DESUNTI DA CARTOGRAFIE - Quadro 1",
     "excerpt": "Progettista Dott. Ing. Nicola FORTE"
    }
+  },
+  {
+   "name": "Dott. Geol. Stefano Finamore",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/410963",
+    "page": 1,
+    "document": "RELAZIONE GEOLOGICA, GEOTECNICA, IDROGEOMORFOLOGICA E SISMICA",
+    "excerpt": "Geologo Dott. Geol. Stefano FINAMORE"
+   }
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Socotec Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01872430648",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Bariola 101/103 20045 Lainate Mi",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "italia@hpc.ag",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395270",
+      "page": 1,
+      "document": "Piano di monitoraggio acustico",
+      "excerpt": "HPC Italia S.r.l. a socio unico è una società del gruppo HPC AG www.hpc.ag/it • italia@hpc.ag - hpcitalia@legalmail.it • Associata Inogen Alliance www.inogenalliance.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "S. Control S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@dimms.it",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/410963",
+      "page": 57,
+      "document": "RELAZIONE GEOLOGICA, GEOTECNICA, IDROGEOMORFOLOGICA E SISMICA",
+      "excerpt": "Area Industriale A.S.|. Avellino Via Campo di Fiume, 13 83030 Arcella di Montefredane (AV) - Tel. 0825.24353 Fax 0825.248705 - e-mail: info@dimms.it - P.IVA 01872430648"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082524353",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/410963",
+      "page": 57,
+      "document": "RELAZIONE GEOLOGICA, GEOTECNICA, IDROGEOMORFOLOGICA E SISMICA",
+      "excerpt": "Area Industriale A.S.|. Avellino Via Campo di Fiume, 13 83030 Arcella di Montefredane (AV) - Tel. 0825.24353 Fax 0825.248705 - e-mail: info@dimms.it - P.IVA 01872430648"
+     }
+    }
+   ],
+   "source": null
+  },
   {
    "name": "Engineering Geology S.r.l.",
    "kind": "società",
@@ -200,17 +281,6 @@
     {
      "type": "PEC",
      "value": "hpcitalia@legalmail.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1395270",
-      "page": 1,
-      "document": "Piano di monitoraggio acustico",
-      "excerpt": "HPC Italia S.r.l. a socio unico è una società del gruppo HPC AG www.hpc.ag/it • italia@hpc.ag - hpcitalia@legalmail.it • Associata Inogen Alliance www.inogenalliance.com"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "italia@hpc.ag",
      "occurrences": 1,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1395270",
@@ -290,17 +360,17 @@
    {
     "voce": "Fine lavori",
     "livello": "stimata",
-    "valore": "non prima di giugno 2024",
-    "dettaglio": "inizio stimato + durata del cantiere: 12 mesi",
+    "valore": "non prima di dicembre 2024",
+    "dettaglio": "inizio stimato + durata del cantiere: 18 mesi",
     "source": {
      "url": "https://va.mite.gov.it/File/Documento/1395281",
-     "page": 30,
+     "page": 38,
      "document": "PIANO DI MONITORAGGIO AMBIENTALE",
-     "excerpt": "Macrofase 1: realizzazione dei cavidotti e sottostazione, eseguite in parallelo alla realizzazione strade-piazzole-fondazioni; durata lavorazioni stimata di circa 12 mesi. -"
+     "excerpt": "varie attività, considerando secondo le previsioni del cronoprogramma di progetto, una durata della fase di cantiere di 18 mesi."
     }
    }
   ],
-  "durata_cantiere": "12 mesi",
+  "durata_cantiere": "18 mesi",
   "autorizzazione": {
    "atto": "Determinazione Dirigenziale n. 152",
    "data": "27/06/2023",
@@ -322,17 +392,22 @@
   "bars": [],
   "unit": "month",
   "months": 1,
-  "source": null,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/410958",
+   "page": 46,
+   "document": "RELAZIONE TECNICA",
+   "excerpt": ""
+  },
   "asse": null,
   "duration": {
-   "text": "12 mesi",
+   "text": "18 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1395281",
-    "page": 30,
+    "page": 38,
     "document": "PIANO DI MONITORAGGIO AMBIENTALE",
-    "excerpt": "Macrofase 1: realizzazione dei cavidotti e sottostazione, eseguite in parallelo alla realizzazione strade-piazzole-fondazioni; durata lavorazioni stimata di circa 12 mesi. -"
+    "excerpt": "varie attività, considerando secondo le previsioni del cronoprogramma di progetto, una durata della fase di cantiere di 18 mesi."
    }
   },
   "milestones": [],
@@ -340,7 +415,7 @@
    "document": "CRONOPROGRAMMA",
    "url": "https://va.mite.gov.it/File/Documento/1395280"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
   "altri": [
    {
     "document": "CRONOPROGRAMMA",
@@ -351,14 +426,130 @@
     "url": "https://va.mite.gov.it/File/Documento/500489"
    }
   ],
-  "durate_fasi": [],
+  "durate_fasi": [
+   {
+    "name": "AVVIO CANTIERE",
+    "duration": "3 giorni",
+    "months": 0.1
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO INTERNO",
+    "duration": "40 giorni",
+    "months": 1.32
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO ESTERNO",
+    "duration": "60 giorni",
+    "months": 1.97
+   },
+   {
+    "name": "SOTTOSTAZIONE",
+    "duration": "270 giorni",
+    "months": 8.88
+   },
+   {
+    "name": "Opere civili sottostazione",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "Opere elettriche sottostazione",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "Connessione alla rete della sottostazione",
+    "duration": "30 giorni",
+    "months": 0.99
+   },
+   {
+    "name": "ADEGUAMENTO STRADE ESISTENTI",
+    "duration": "6 giorni",
+    "months": 0.2
+   },
+   {
+    "name": "Ingresso dalle SP",
+    "duration": "6 giorni",
+    "months": 0.2
+   },
+   {
+    "name": "REALIZZAZIONE STRADE E PIAZZOLE",
+    "duration": "75 giorni",
+    "months": 2.47
+   },
+   {
+    "name": "SCAVI FONDAZIONI TORRI",
+    "duration": "50 giorni",
+    "months": 1.64
+   },
+   {
+    "name": "TORRI IMPIANTO",
+    "duration": "50 giorni",
+    "months": 1.64
+   },
+   {
+    "name": "PALI DI FONDAZIONI",
+    "duration": "75 giorni",
+    "months": 2.47
+   },
+   {
+    "name": "PALI DI CONTRASTO PER PROVA DI CARICO",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "PALI DI FONDAZIONE TORRI IMPIANTO",
+    "duration": "75 giorni",
+    "months": 2.47
+   },
+   {
+    "name": "PROVA DI CARICO SU PALI",
+    "duration": "18 giorni",
+    "months": 0.59
+   },
+   {
+    "name": "PLINTI DI FONDAZIONE",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "PLINTO DI FOND. TORRI IMPIANTO",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "INSTALLAZIONE AEROGENERATORI",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "TORRE IMPIANTO",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "Operazioni di collaudo",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "TAKING OVER",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "ESERCIZIO DELL'IMPIANTO",
+    "duration": "10 giorni",
+    "months": 0.33
+   }
+  ],
   "metodo": null
  },
  "documentazione": {
   "documenti": 406,
-  "pagine": 3508,
+  "pagine": 5499,
   "completa": false,
-  "da_leggere": 286
+  "da_leggere": 166
  },
  "confronto": [
   {
@@ -394,7 +585,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "1098 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1115 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."

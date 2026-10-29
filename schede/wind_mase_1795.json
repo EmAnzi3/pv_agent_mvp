@@ -1,0 +1,570 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_1795",
+ "title": "Progetto di potenziamento del parco eolico Partinico-Monreale (PA), per una potenza complessiva di 42,0 MW - Prescrizioni: 1 A, 1 B, 1 MIC, 2 C, 2 MIC, 2A, 2B, 3 B, 3 D, 3 E",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1795",
+ "source": "mase",
+ "updated": "2026-10-29",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "4,2 MW",
+   "sub": "Valore ricorrente negli elaborati (26 volte); il titolo riporta 42 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1335365",
+    "page": 3,
+    "document": "MONITORAGGIO AVIFAUNA PARCO EOLICO PARTINICO_MONREALE-signed",
+    "excerpt": "Il progetto di potenziamento consiste nella sostituzione dei 19 aerogeneratori esistenti da 0.85 MW con 10 aerogeneratori da 4,2 MW, per una potenza complessiva da installarsi pari a 42,0 MW."
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "0,42 MW ciascuno · Valore prevalente negli elaborati; altri valori: 19 (7), 6 (2), 4 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1335364",
+    "page": 21,
+    "document": "BCMS® VENTUR-E - SOLUTION A CAMPOREALE E MONREALE PARTINICO - Descrizione Tecnica",
+    "excerpt": "▪ Una singola telecamera monitora efficacemente fino a 10 aerogeneratori (rapporto di copertura effettivo determinato dall'analisi specifica del sito)"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "20 giorni",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1335369",
+    "page": 9,
+    "document": "Studio 22EFS-008 mese di Agosto-signed",
+    "excerpt": "Durata dei lavori: Massimo 20 giorni lavorativi. "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "PA",
+  "comuni": [
+   "Monreale",
+   "Partinico"
+  ],
+  "coordinate": {
+   "lat": 37.95611,
+   "lon": 13.07264,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (2 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1335365",
+    "page": 17,
+    "document": "MONITORAGGIO AVIFAUNA PARCO EOLICO PARTINICO_MONREALE-signed",
+    "excerpt": "❖ PB (osservazione punto fisso). Le coordinate del PA sono 37°57’41” N e 13°05’01” E. Si trova ad un’altitudine di circa 566 m s.l.m."
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.95611,13.07264",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "ERG Wind Energy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "12062051003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via De Marini 1 16149 Genova Ge",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ergwindenergy@legalmail.it",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335366",
+      "page": 1,
+      "document": "Autorizzazione in deroga Partinico",
+      "excerpt": "RAPP. LEG. GASPARI ANDREA ergwindenergy@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1335365",
+    "page": 1,
+    "document": "MONITORAGGIO AVIFAUNA PARCO EOLICO PARTINICO_MONREALE-signed",
+    "excerpt": "Committente: Erg Wind Energy S.r.l."
+   }
+  },
+  {
+   "name": "ERG Wind Sicilia 4 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ergwindsicilia4@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1077080",
+      "page": 1,
+      "document": "Allegato 4",
+      "excerpt": "Alla ERG ergwindsicilia4@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1795"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "MIT Ambiente S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02572460414",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Strada Selva Grossa Snc 61122 Pesaro Pu",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@mitambiente.com",
+     "occurrences": 87,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335369",
+      "page": 27,
+      "document": "Studio 22EFS-008 mese di Agosto-signed",
+      "excerpt": "MIT AMBIENTE srl Strada Selva Grossa sn Tal +39 0721 201717 Codice REA PS 192542 info@mitambiente.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0721201717",
+     "occurrences": 100,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335369",
+      "page": 4,
+      "document": "Studio 22EFS-008 mese di Agosto-signed",
+      "excerpt": "MIT AMBIENTE srl Strada Selva Grossa sn Tel +39 0721 201717 Codice REA PS 192542 info@@mitambiente.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Societa' Autotrasporti Eccezionali S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02167840731",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Strada Statale 106 Km 482 00 Snc 74016 Massafra Ta",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "saetrasporti@pec.it",
+     "occurrences": 29,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335297",
+      "page": 1,
+      "document": "ANAS PA CARICO 027759.21 agg. targhe",
+      "excerpt": "Indirizzo STRADA STATALE 106 - KM 482,00 Città MASSAFRA (TA) C.a.p 74016 Telefono 099/4751728 e-mail info@saetrasporti.it PEC SAETRASPORTI@PEC.IT"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@saetrasporti.it",
+     "occurrences": 29,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335297",
+      "page": 1,
+      "document": "ANAS PA CARICO 027759.21 agg. targhe",
+      "excerpt": "Indirizzo STRADA STATALE 106 - KM 482,00 Città MASSAFRA (TA) C.a.p 74016 Telefono 099/4751728 e-mail info@saetrasporti.it PEC SAETRASPORTI@PEC.IT"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0994751728",
+     "occurrences": 29,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335297",
+      "page": 1,
+      "document": "ANAS PA CARICO 027759.21 agg. targhe",
+      "excerpt": "Indirizzo STRADA STATALE 106 - KM 482,00 Città MASSAFRA (TA) C.a.p 74016 Telefono 099/4751728 e-mail info@saetrasporti.it PEC SAETRASPORTI@PEC.IT"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Rototec S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01476690415",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Artigianato 6 61026 Lunano Pu",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rototec@pec.it",
+     "occurrences": 26,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335291",
+      "page": 1,
+      "document": "Modalità d'interro Rototec Rev.01",
+      "excerpt": "TEL. +39 0722 722801 • FAX +39 0722 70599 • WEB: www.rototec.it E-MAIL: info@rototec.It • PEC: rototec@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@rototec.it",
+     "occurrences": 26,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335291",
+      "page": 1,
+      "document": "Modalità d'interro Rototec Rev.01",
+      "excerpt": "TEL. +39 0722 722801 • FAX +39 0722 70599 • WEB: www.rototec.it E-MAIL: info@rototec.It • PEC: rototec@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Agr. Vincenzo Lodato",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "g.lodato@epap.confafpec.it",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335391",
+      "page": 2,
+      "document": "Relazione per parco eolico Partinico Monreale modifiche al 15102025_signed",
+      "excerpt": "Dott. Agr. Gaspare Lodato - Dott. Agr. Vincenzo Lodato – Agrotecnico Davide Lodato - Via G. Fazio s.n.c. – Tel. 092421120 Cell. 3287292729 – P.IVA 01736930817 E-mail: info@proager.it - gaspare.lodato@proager.it – PEC: g."
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@proager.it",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335391",
+      "page": 2,
+      "document": "Relazione per parco eolico Partinico Monreale modifiche al 15102025_signed",
+      "excerpt": "Dott. Agr. Gaspare Lodato - Dott. Agr. Vincenzo Lodato – Agrotecnico Davide Lodato - Via G. Fazio s.n.c. – Tel. 092421120 Cell. 3287292729 – P.IVA 01736930817 E-mail: info@proager.it - gaspare.lodato@proager.it – PEC: g."
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "gaspare.lodato@proager.it",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335391",
+      "page": 2,
+      "document": "Relazione per parco eolico Partinico Monreale modifiche al 15102025_signed",
+      "excerpt": "Dott. Agr. Gaspare Lodato - Dott. Agr. Vincenzo Lodato – Agrotecnico Davide Lodato - Via G. Fazio s.n.c. – Tel. 092421120 Cell. 3287292729 – P.IVA 01736930817 E-mail: info@proager.it - gaspare.lodato@proager.it – PEC: g."
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "092421120",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335391",
+      "page": 2,
+      "document": "Relazione per parco eolico Partinico Monreale modifiche al 15102025_signed",
+      "excerpt": "Progettazione e consulenza per agricoltura e ambiente Dott. Agr. Gaspare Lodato - Dott. Agr. Vincenzo Lodato – Agrotecnico Davide Lodato - Via G. Fazio s.n.c. – Tel. 092421120"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3287292729",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335391",
+      "page": 2,
+      "document": "Relazione per parco eolico Partinico Monreale modifiche al 15102025_signed",
+      "excerpt": "Dott. Agr. Gaspare Lodato - Dott. Agr. Vincenzo Lodato – Agrotecnico Davide Lodato - Via G. Fazio s.n.c. – Tel. 092421120 Cell. 3287292729 – P.IVA 01736930817 E-mail: info@proager.it - gaspare.lodato@proager.it – PEC: g."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Metrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@metrix.tv",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1077078",
+      "page": 107,
+      "document": "ALL 2 PAR-ENG-REL-0017_00_signed(1)",
+      "excerpt": "Tel. 0922 992053 — Fax 0922 992156 P i e-mail: info@metrix.tv — www.metrix.tv Pagina 1 di 13"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0922992053",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1077078",
+      "page": 107,
+      "document": "ALL 2 PAR-ENG-REL-0017_00_signed(1)",
+      "excerpt": "92020 Santo Stefano Quisquina (AG) Tel. 0922 992053 — Fax 0922 992156 P i"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Vestas Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vestas-italia@vestas.com",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335298",
+      "page": 60,
+      "document": "ANAS PA N.027759.21",
+      "excerpt": "procuratore della Società VESTAS ITALIA Srl, codice fiscale/P.IVA, 02170340737 con sede a ROMA, in Via Sardegna nr.40; tel. n. 099/4606111 e.mail: vestas-italia@vestas.com;"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Antonio Sansone Santamaria",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0917033517",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1077080",
+      "page": 1,
+      "document": "Allegato 4",
+      "excerpt": "Dott. Antonio Sansone Santamaria Via Nairobi, 4 Palermo tel: 091.7033517"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Socio Unico LCE S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@lce.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335377",
+      "page": 22,
+      "document": "Studio 22EFS-025-006 mese di giugno -signed",
+      "excerpt": "lei Platani, 7/9 Opera (MI) Via dei Platani, 7/9 Opera (MI) lei Platani, 7/9 Opera (MI) 02 57602858 - wwwlce.t -info@lce.it T.02 57602858 - www.lce.t - info@lce.it 02 57602858 - www.ce.lt - infvalee.t"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "decreto n. 269 del 23/07/2024",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1152432",
+     "page": 2,
+     "document": "Allegato alla Comunicazione VA esito valutazione - Parere SCVIA del 06/09/2024",
+     "excerpt": "– VIA e VAS, dei Coordinatori delle Sottocommissioni VIA e VAS, così come modificato dal decreto n. 269 del 23/07/2024; 2. Considerato che:"
+    }
+   }
+  ],
+  "durata_cantiere": null,
+  "autorizzazione": {
+   "atto": "decreto n. 269",
+   "data": "23/07/2024",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1152432",
+    "page": 2,
+    "document": "Allegato alla Comunicazione VA esito valutazione - Parere SCVIA del 06/09/2024",
+    "excerpt": "– VIA e VAS, dei Coordinatori delle Sottocommissioni VIA e VAS, così come modificato dal decreto n. 269 del 23/07/2024; 2. Considerato che:"
+   }
+  },
+  "note": [
+   "Durata del cantiere non leggibile negli elaborati: fine lavori non stimabile."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1335287",
+   "page": 8,
+   "document": "PAR-EXE-REL-0300_00_relazione ottemperanza costruzione_REV0710 25_signed",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "20 giorni",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1335369",
+    "page": 9,
+    "document": "Studio 22EFS-008 mese di Agosto-signed",
+    "excerpt": "Durata dei lavori: Massimo 20 giorni lavorativi. "
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "altri": [],
+  "durate_fasi": [
+   {
+    "name": "PAR EXE REL 0300 00",
+    "duration": "2 giorni",
+    "months": 0.07
+   },
+   {
+    "name": "CONDIZIONE AMBIENTALE n.",
+    "duration": "2 giorni",
+    "months": 0.07
+   },
+   {
+    "name": "La condizione ambientale n.",
+    "duration": "2 giorni",
+    "months": 0.07
+   },
+   {
+    "name": "NOTA DI RISPOSTA ALLA CONDIZIONE AMBIENTALE",
+    "duration": "2 giorni",
+    "months": 0.07
+   }
+  ],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 372,
+  "pagine": 1816,
+  "completa": false,
+  "da_leggere": 252
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "ERG Wind Sicilia 4 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 42.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MONREALE",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 42 MW, gli elaborati 4,2 MW"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "461 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
