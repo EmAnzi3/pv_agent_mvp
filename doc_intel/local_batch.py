@@ -61,6 +61,13 @@ def _ensure_memory(store: Path) -> None:
         _git("worktree", "prune", check=False)
         _git("worktree", "add", "--detach", str(store), "origin/doc-intel-state")
     else:
+        # cards of a previous run whose push failed (network, GitHub busy) are pushed now, never discarded
+        ahead = _git("rev-list", "--count", "origin/doc-intel-state..HEAD", cwd=store, check=False).stdout.strip()
+        if ahead.isdigit() and int(ahead) > 0:
+            print(f"[locale] {ahead} salvataggi del giro precedente non ancora su GitHub: li invio ora")
+            if not _push(store, "doc-intel memory: local batch (recovered)"):
+                raise RuntimeError("memoria del giro precedente non inviata: riprova piu' tardi (nulla e' stato perso)")
+            _git("fetch", "-q", "origin", "+refs/heads/doc-intel-state:refs/remotes/origin/doc-intel-state")
         _git("reset", "-q", "--hard", "origin/doc-intel-state", cwd=store)
     for name in ("blobs", "text"):
         _rm(store / name)
