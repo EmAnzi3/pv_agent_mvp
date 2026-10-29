@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico composto da n. 8 aerogeneratori, ciascuno di potenza nominale pari a 6 MW, per una potenza nominale di 48 MW, da realizzarsi nel Comune di Serracapriola (FG) e, le relative opere di connessione e la Sottostazione Elettrica, da realizzarsi nel Comune di Rotello (CB).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7977",
  "source": "mase",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "8",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 4 (1), 10 (1)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 3 (6), 4 (2), 6 (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1414678",
     "page": 5,
@@ -35,14 +35,14 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "18 mesi",
+   "value": "20 mesi",
    "status": "da verificare",
    "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (4), 24 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1414678",
-    "page": 34,
-    "document": "Integrazioni del 22/07/2026 - Piano di Utilizzo delle terre e rocce da scavo ai sensi del D.P.R. 120/17",
-    "excerpt": "saranno gestiti come rifiuto. La durata del cantiere è prevista pari a 18 mesi dall’avvio del cantiere e di conseguenza in tale finestra temporale è previsto il riutilizzo in sito delle terre."
+    "url": "https://va.mite.gov.it/File/Documento/582619",
+    "page": 90,
+    "document": "RELAZIONE DESCRITTIVA",
+    "excerpt": "La durata complessiva dei lavori di realizzazione della Centrale Eolica di Acquaviva è prevista di 20 mesi a partire dall’ottenimento di tutte le autorizzazioni necessarie, salvo cause di forza maggiore."
    }
   }
  ],
@@ -56,17 +56,17 @@
    "Rotello"
   ],
   "coordinate": {
-   "lat": 41.7968,
-   "lon": 15.13325,
-   "tipo": "centro della tavola georeferenziata di progetto (141 riferimenti concordi)",
+   "lat": 41.80519,
+   "lon": 15.13562,
+   "tipo": "centro della tavola georeferenziata di progetto (178 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1396315",
-    "page": 4,
+    "page": 2,
     "document": "Integrazioni del 27/05/2026 - Disegno_tipologico_torre_microclimatica",
     "excerpt": "Integrazioni del 27/05/2026 - Disegno_tipologico_torre_microclimatica"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.79680,15.13325",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.80519,15.13562",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -84,7 +84,7 @@
  },
  "soggetti": [
   {
-   "name": "Enel Green Power Italia S.r.l.",
+   "name": "39-039-62905.1 opera di Enel Green Power S.p.A.",
    "kind": "società",
    "roles": [
     "Proponente",
@@ -95,29 +95,22 @@
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sistemi@sartelco.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/667685",
+      "page": 42,
+      "document": "Integrazioni del 22/06/2022 - RISCONTRO NOTA MITE prot.1315 del 07.03.2022",
+      "excerpt": "Fax, +39-039-62905,99 e-mail sistemi@sartelco.it del 22/07/2015 (Id N. 19916072"
+     }
+    }
+   ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7977"
-   }
-  },
-  {
-   "name": "Enel S.p.A.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1349646",
-    "page": 2,
-    "document": "Schede accertamento perforabilità di un punto con metodologie geofisiche",
-    "excerpt": "Committente: ENEL S.P.A. reg. com"
    }
   },
   {
@@ -209,6 +202,41 @@
       "page": 3,
       "document": "Piano di Gestione Ambientale (PGA)",
       "excerpt": "Il presente documento è stato elaborato da: STUDIO STIGLIANO S.r.l. C.da Bandiera – Zona PIP, GINOSA (TA) Tel 099.4649479"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "SCS Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "v.damico@scsingegneria.it",
+     "occurrences": 73,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/582606",
+      "page": 15,
+      "document": "STUDIO EVOLUZIONE OMBRA - SHADOW FLICKERING",
+      "excerpt": "+390831336390 VALENTINO D'AMICO / v.damico@scsingegneria.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@scsingegneria.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/582608",
+      "page": 2,
+      "document": "INDAGINE ACUSTICO-AMBIENTALE PREVENTIVA NELL'AREA D'INTERVENTO",
+      "excerpt": "VIA F.DO AYROLDI, 10–72017 OSTUNI (BR) – TEL/FAX:0831336390 E-MAIL: INFO@SCSINGEGNERIA.IT"
      }
     }
    ],
@@ -390,6 +418,30 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Presidenza Giunta Regionale - Lungomare N. Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0805406316",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/582607",
+      "page": 96,
+      "document": "VALUTAZIONE DI IMPATTO ACUSTICO",
+      "excerpt": "Direzione e Redazione - Presidenza Giunta Regionale - Lungomare N. Sauro, 33 - 70121 Bari - Tel. 0805406316-0805406317-0805406372 - Uff. abbonamenti"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -397,7 +449,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "18 mesi",
+  "durata_cantiere": "20 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -415,14 +467,14 @@
   "source": null,
   "asse": null,
   "duration": {
-   "text": "18 mesi",
+   "text": "20 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (4), 24 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (4), 24 mesi (1), 10 giorni (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1414678",
-    "page": 34,
-    "document": "Integrazioni del 22/07/2026 - Piano di Utilizzo delle terre e rocce da scavo ai sensi del D.P.R. 120/17",
-    "excerpt": "saranno gestiti come rifiuto. La durata del cantiere è prevista pari a 18 mesi dall’avvio del cantiere e di conseguenza in tale finestra temporale è previsto il riutilizzo in sito delle terre."
+    "url": "https://va.mite.gov.it/File/Documento/582619",
+    "page": 90,
+    "document": "RELAZIONE DESCRITTIVA",
+    "excerpt": "La durata complessiva dei lavori di realizzazione della Centrale Eolica di Acquaviva è prevista di 20 mesi a partire dall’ottenimento di tutte le autorizzazioni necessarie, salvo cause di forza maggiore."
    }
   },
   "milestones": [],
@@ -434,9 +486,9 @@
  },
  "documentazione": {
   "documenti": 311,
-  "pagine": 4804,
+  "pagine": 7246,
   "completa": false,
-  "da_leggere": 191
+  "da_leggere": 77
  },
  "confronto": [
   {
@@ -447,7 +499,7 @@
   {
    "campo": "power_mw",
    "valore_attuale": 48.0,
-   "esito": "conflittuale"
+   "esito": "confermato"
   },
   {
    "campo": "municipalities",
@@ -472,7 +524,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "88 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "171 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
