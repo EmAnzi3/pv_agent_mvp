@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-29 — Sicilia: i titoli del portale SI-VVI non mostrano più codici HTML (es. «UN&#039;IMPIANTO» diventa «UN'IMPIANTO»).
+
 - 2026-10-29 — `analizza_fonti_locali.bat N`: il blocco del giro non viene più riempito dai progetti siciliani che sarebbero poi rimandati per il limite giornaliero; la Sicilia prende solo i progetti ancora ammessi oggi (1) e i posti restanti vanno a Sistema Puglia e Basilicata. Prima, con 270 progetti siciliani in testa alla coda, un giro da 30 ne lavorava solo 11.
 
 - 2026-10-29 — `analizza_fonti_locali.bat`: se il salvataggio su GitHub di un giro precedente non era riuscito, il giro successivo lo reinvia prima di ripartire invece di scartarlo.
