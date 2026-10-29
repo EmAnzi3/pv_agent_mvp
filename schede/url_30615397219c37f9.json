@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto agrofotovoltaico, denominato \"Piraino\", della potenza nominale pari a 37,1 MW da realizzarsi nel Comune di Alcamo (TP) e delle rispettive opere di connessione alla rete, da realizzarsi anche nel Comune di Monreale (PA).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8220",
  "source": "mase",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "sintesi": [
   {
    "key": "potenza",
@@ -35,8 +35,8 @@
    "key": "area",
    "label": "Superficie complessiva",
    "value": "53 ha",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 60 ha (3)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 60 ha (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/597100",
     "page": 6,
@@ -47,22 +47,22 @@
   {
    "key": "pannelli",
    "label": "Superficie coperta dai pannelli",
-   "value": "15,37 ha",
+   "value": "17,485 ha",
    "status": "da verificare",
-   "sub": "29% dell'area · Valore più ricorrente negli elaborati; altri valori: 14,888 ha (2), 17,485 ha (1)",
+   "sub": "33% dell'area · Valore più ricorrente negli elaborati; altri valori: 15,37 ha (4), 14,888 ha (2), 18,2 ha (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1384221",
-    "page": 13,
-    "document": "Studio Opere di Mitigazione a verde",
-    "excerpt": "• Area occupata dai pannelli in posizione flat: 15,37 ha •"
+    "url": "https://va.mite.gov.it/File/Documento/1384216",
+    "page": 126,
+    "document": "RELAZIONE TECNICA DI OTTEMPERANZA",
+    "excerpt": "• superficie pannello: 2.734 m2 ca.; • superficie totale pannelli: 174849,5 m2 ca.."
    }
   },
   {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "12 mesi",
-   "status": "da verificare",
-   "sub": "Inizio lavori 08/03/2021 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "status": "da documenti",
+   "sub": "Inizio lavori 08/03/2021 (previsione di progetto) · Valore prevalente negli elaborati; altri valori: 3 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1384218",
     "page": 16,
@@ -78,17 +78,17 @@
    "Alcamo"
   ],
   "coordinate": {
-   "lat": 37.90306,
-   "lon": 12.99281,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (26 riferimenti concordi)",
+   "lat": 37.90305,
+   "lon": 12.99157,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (37 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1384260",
-    "page": 26,
-    "document": "RELAZIONE ANTINCENDIO - Art. 3 DPR 151 del 1° agosto 2011 - VALUTAZIONE PROGETTO - Impianto AGRIVOLTAICO",
-    "excerpt": "322962.79"
+    "url": "https://va.mite.gov.it/File/Documento/597124",
+    "page": 4,
+    "document": "TRS-Piano_di_utilizzo_delle_terre_e_delle_rocce_di_scavo_signed-signed",
+    "excerpt": "Coordinate baricentriche dell’area di studio: Coordinate geografiche: Lat. 37,903050° N - Long. 12,991566°E. Coordinate nel sistema UTM, WGS84: 33S 323.424,00 m E 4.196.960,00 m N"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.90306,12.99281",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.90305,12.99157",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -111,7 +111,7 @@
     {
      "type": "PEC",
      "value": "limes19@pec.it",
-     "occurrences": 18,
+     "occurrences": 35,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1384216",
       "page": 11,
@@ -134,25 +134,6 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8220"
-   }
-  },
-  {
-   "name": "Contourglobal Erimanto S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": "10363600965",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Via Gaetano Negri 4 20123 Milano Mi",
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1384216",
-    "page": 11,
-    "document": "RELAZIONE TECNICA DI OTTEMPERANZA",
-    "excerpt": "Committente SOCIETÀ CONTOURGLOBAL ERIMANTO SRL – EX LIMES 19 S.r.l."
    }
   },
   {
@@ -180,14 +161,60 @@
     }
    ],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1384221",
+    "url": "https://va.mite.gov.it/File/Documento/1384232",
     "page": 12,
     "document": "Studio Opere di Mitigazione a verde",
     "excerpt": "L’area interessata dall’intervento, secondo la Relazione Geologica redatta dal Dott. Geol. Ignazio Giuffrè per il medesimo progetto d’impianto, ospita terreni caratterizzati da un andamento ondulato e a tratti mammellona"
    }
+  },
+  {
+   "name": "Dott. Ing. Eugenio Bordonali",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1384216",
+    "page": 78,
+    "document": "RELAZIONE TECNICA DI OTTEMPERANZA",
+    "excerpt": "PROGETTISTA: Dott. Ing. Eugenio Bordonali"
+   }
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "S.E.A. Tuscia S.r.l. !!PMI Innovativa",
+   "kind": "società",
+   "roles": [],
+   "vat": "01902580560",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via San Camillo De Lellis Snc 01100 Viterbo Vt",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@seatuscia.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/665925",
+      "page": 1,
+      "document": "Integrazioni del 20/07/2022 - Relazione Integrativa LM19_MITE_signed",
+      "excerpt": "seatuscia pec IT info@seatuscia.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "LAB Ambiente e Siourenza S.r.l.",
    "kind": "società",
@@ -297,7 +324,7 @@
      "value": "studiotecnicodm@gmail.com",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1384221",
+      "url": "https://va.mite.gov.it/File/Documento/1384232",
       "page": 1,
       "document": "Studio Opere di Mitigazione a verde",
       "excerpt": "Mail: studiotecnicodm@gmail.com"
@@ -458,6 +485,18 @@
      "page": 2,
      "document": "Fotoinserimenti",
      "excerpt": "Ambientali di Palermo, di cui al parere del Ministero della Cultura MIC_SS-PNRR n. 5626-P del 14/04/2023 (anche Allegato B del Decreto di Compatibilità Ambientale n. 285 del 14/06/2023), sono state predisposte specifiche"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 14/06/2028",
+    "dettaglio": "«efficacia temporale non inferiore a 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/856366",
+     "page": 28,
+     "document": "Allegato al Decreto - parere della Commissione tecnica PNRR-PNIEC, n. 63 del 16/09/2022",
+     "excerpt": "Considerati i tempi previsti per la realizzazione e gli ulteriori tempi necessari per arrivare all'avvio dei lavori, si valuta che il provvedimento di VIA possa avere efficacia temporale non inferiore a 5 anni."
     }
    },
    {
@@ -1451,8 +1490,8 @@
   },
   "duration": {
    "text": "12 mesi",
-   "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 3 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1384218",
     "page": 16,
@@ -1504,9 +1543,9 @@
  },
  "documentazione": {
   "documenti": 193,
-  "pagine": 3395,
+  "pagine": 5143,
   "completa": false,
-  "da_leggere": 73
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -1541,20 +1580,12 @@
    "reason": "Avvio previsto il 02/05/2022, ma l'iter è proseguito; ultimo documento o atto del 06/05/2026: probabile slittamento, non ancora realizzato o in corso."
   },
   {
-   "label": "Superficie complessiva",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Superficie coperta dai pannelli",
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Recapiti",
-   "reason": "186 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "187 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
