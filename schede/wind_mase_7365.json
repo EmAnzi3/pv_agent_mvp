@@ -1,0 +1,668 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7365",
+ "title": "Progetto di un impianto eolico denominato \"Monte san Vito\", costituito da 10 aerogeneratori per una potenza complessiva di 45 MW, ricedente nel territorio comunale di Grottole ( MT) e di Miglionico (MT).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7365",
+ "source": "mase",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "45 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7365",
+    "excerpt": "45 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da verificare",
+   "sub": "4,50 MW ciascuno · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 8 (26), 7 (4), 27 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1415580",
+    "page": 4,
+    "document": "PIANO DI MONITORAGGIO AMBIENTALE",
+    "excerpt": "Valutazione d’Impatto Ambientale (VIA) (di seguito, il “Procedimento”), relativa al progetto di un impianto eolico denominato \"Monte San Vito\", costituito da 10 aerogeneratori p er una"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 240 giorni (circa 8 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1415576",
+    "page": 8,
+    "document": "STUDIO SPECIALISTICO DI TRAFFICO",
+    "excerpt": "Considerando una durata del cantiere pari a circa 12mesi (circa 240 giorni lavorativi)"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "MT",
+  "comuni": [
+   "Miglionico",
+   "Grottole"
+  ],
+  "coordinate": {
+   "lat": 40.60399,
+   "lon": 16.3456,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (15 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1415573",
+    "page": 8,
+    "document": "Contratto - Realizzazione cavidotto interrato MT Parco Eolico Monte San Vito",
+    "excerpt": "movimentazione del Cavo MT dal luogo di stoccaggio – sito in C.da Valle SP1 Km 535, 75010 Grottole Coordinate: Lat 40.617926° - Long 16.347189° – al Campo Base, oppure (ii) dal Produttore presso il Campo Base. In tale ca"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.60399,16.34560",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Eolico SAN Vito S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "03305890216",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Del Grano 3 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "eolicosanvito@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415572",
+      "page": 31,
+      "document": "Contratto interno - Parco Eolico Monte San Vito",
+      "excerpt": "PEC: eolicosanvito@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1415572",
+    "page": 1,
+    "document": "Contratto interno - Parco Eolico Monte San Vito",
+    "excerpt": "Proponente :"
+   }
+  },
+  {
+   "name": "Ing. Massimo Lo Russo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1415499",
+    "page": 1,
+    "document": "PLANIMETRIA DI PROGETTO SU BASE CTR FOGLIO 1",
+    "excerpt": "Progettazione Ing. Massimo Lo Russo"
+   }
+  },
+  {
+   "name": "Dott. Geologo Gianpiero Monti",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "gianpiero.monti64@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415580",
+      "page": 61,
+      "document": "PIANO DI MONITORAGGIO AMBIENTALE",
+      "excerpt": "Studio: Via C. Battisti, 21 - 83053 Sant’Andrea di Conza (AV) Tel./fax: 0827/35247 - cell.: 329/0728890 - email: gianpiero.monti64@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3290728890",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415580",
+      "page": 61,
+      "document": "PIANO DI MONITORAGGIO AMBIENTALE",
+      "excerpt": "Studio: Via C. Battisti, 21 - 83053 Sant’Andrea di Conza (AV) Tel./fax: 0827/35247 - cell.: 329/0728890 - email: gianpiero.monti64@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1415580",
+    "page": 61,
+    "document": "PIANO DI MONITORAGGIO AMBIENTALE",
+    "excerpt": "Il Geologo Dott. Gianpiero Monti"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Scar Labs S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@analisiscar.it",
+     "occurrences": 200,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415577",
+      "page": 19,
+      "document": "CARATTERIZZAZIONE TERRE E ROCCE DA SCAVO",
+      "excerpt": "Tel. +39 (0)823 459275 — Fax +39 (0)823 453953 — Cell. +39 348 2848510 — E-mail: info@analisiscar.it — Web: www.analisiscar it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3482848510",
+     "occurrences": 207,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415577",
+      "page": 19,
+      "document": "CARATTERIZZAZIONE TERRE E ROCCE DA SCAVO",
+      "excerpt": "Tel. +39 (0)823 459275 — Fax +39 (0)823 453953 — Cell. +39 348 2848510 — E-mail: info@analisiscar.it — Web: www.analisiscar it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823459275",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415577",
+      "page": 55,
+      "document": "CARATTERIZZAZIONE TERRE E ROCCE DA SCAVO",
+      "excerpt": "Sede operativa e laboratorio: Viale delle Industrie snc - 81020 S. Marco Evangelista (CE) Italy 00385 Tel. +39 (0823 459275 — Fax +39 ‘(0823 453953 — Cell. +39 348 2848510 — E-mail: info@analisiscar.it — Web: www.analisi"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "34824310",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415577",
+      "page": 284,
+      "document": "CARATTERIZZAZIONE TERRE E ROCCE DA SCAVO",
+      "excerpt": "Tel. +39 ice 459275 — Fax +39 (0823 453953 — Cell. +39 348 24310 E- mul info@analisiscar.i it — Web: www. analisiscar it it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "F4 ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "f4ingegneria@pec.it",
+     "occurrences": 281,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/400226",
+      "page": 1,
+      "document": "F0307DR05A-A.17.5_SIA_monitoraggio_avifauna_chirotteri",
+      "excerpt": "Tel: +39 0971 1 944 797 - Fax: +39 0971 5 54 52 www.f4ingegneria.it - f4ingegneria@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "fri-elspa@legalmail.it",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/400236",
+      "page": 1,
+      "document": "F0307ET01A_A.21.1 - Carta dei vincoli paesaggistici buffer 50 volte altezza massima aerogeneratori",
+      "excerpt": "00186 Roma (RM) fri-elspa@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "SGC Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "071895023",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415572",
+      "page": 37,
+      "document": "Contratto interno - Parco Eolico Monte San Vito",
+      "excerpt": "60021 Camerano (AN) Tel: +39 071 895023"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0331245353",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415572",
+      "page": 37,
+      "document": "Contratto interno - Parco Eolico Monte San Vito",
+      "excerpt": "21013 Gallarate (VA) Tel.: +39 0331 245353."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "BioPhilia S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3333456900",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/633218",
+      "page": 1,
+      "document": "Integrazioni del 21/04/2022 - VIncA",
+      "excerpt": "Viale Kennedy, 32 - 75016 Pomarico (MT) Tel: +39 333 3456900"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Fichtner Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0105956902",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415572",
+      "page": 37,
+      "document": "Contratto interno - Parco Eolico Monte San Vito",
+      "excerpt": "16121 Genova (GE) Tel: +39 010 5956902"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "DNV Italy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0396899905",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415572",
+      "page": 37,
+      "document": "Contratto interno - Parco Eolico Monte San Vito",
+      "excerpt": "20871 Vimercate (MB) Tel: +39 039 6899905"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Bureau Veritas Italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "02270911",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415572",
+      "page": 37,
+      "document": "Contratto interno - Parco Eolico Monte San Vito",
+      "excerpt": "20126 Milano Tel: +39 02 270911"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "EOS Consulting S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0623260181",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1415572",
+      "page": 37,
+      "document": "Contratto interno - Parco Eolico Monte San Vito",
+      "excerpt": "00169 Roma (RM) Tel. +39 06 23260181"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1415580",
+   "page": 49,
+   "document": "PIANO DI MONITORAGGIO AMBIENTALE",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "5 Giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 240 giorni (circa 8 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1415572",
+    "page": 13,
+    "document": "Contratto interno - Parco Eolico Monte San Vito",
+    "excerpt": "nominare, sostenendone i costi, un proprio rappresentante per la sicurezza affinché provveda, con almeno 5 Giorni Lavorativi di anticipo rispetto alla Data di Inizio dei Lavori, alla redazione ed all’invio al Committente"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "F0307CR14A - A.14_Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/400145"
+  },
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "altri": [
+   {
+    "document": "F0307CR14A - A.14_Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/400145"
+   }
+  ],
+  "durate_fasi": [
+   {
+    "name": "Opere di cantierizzazione (campo base, ecc.)",
+    "duration": "8 giorni",
+    "months": 0.26
+   },
+   {
+    "name": "Scavo plinti-viabilità-piazzole (con 2 squadre o più)",
+    "duration": "157 giorni",
+    "months": 5.16
+   },
+   {
+    "name": "Tratto GRA07 - livellamento scavo o riporto STRADA E PIAZZOLA",
+    "duration": "9 giorni",
+    "months": 0.3
+   },
+   {
+    "name": "Pacchetto stradale (cementificazione dove richiesto)",
+    "duration": "4 giorni",
+    "months": 0.13
+   },
+   {
+    "name": "Completamento piazzola",
+    "duration": "5 giorni",
+    "months": 0.16
+   },
+   {
+    "name": "Tratto GRA09 - livellamento scavo o riporto STRADA E E PIAZZOLA",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Tratto GRA10 - livellamento scavo o riporto STRADA E PIAZZOLA",
+    "duration": "9 giorni",
+    "months": 0.3
+   },
+   {
+    "name": "Tratto GRA08 (cementificazione dove richiesto) STRADA E PIAZZOLA",
+    "duration": "9 giorni",
+    "months": 0.3
+   },
+   {
+    "name": "Tratto GRA05 - livellamento scavo o riporto STRADE E PIAZZOLA",
+    "duration": "9 giorni",
+    "months": 0.3
+   },
+   {
+    "name": "Tratto GRA06 - livellamento scavo o riporto STRADE E PIAZZOLA",
+    "duration": "9 giorni",
+    "months": 0.3
+   },
+   {
+    "name": "Tratto GRA04 - livellamento scavo o riporto STRADA E PIAZZOLA",
+    "duration": "9 giorni",
+    "months": 0.3
+   },
+   {
+    "name": "Tratto GRA03 - livellamento scavo o riporto STRADA E PIAZZOLA",
+    "duration": "9 giorni",
+    "months": 0.3
+   },
+   {
+    "name": "Fondazioni",
+    "duration": "175 giorni",
+    "months": 5.76
+   },
+   {
+    "name": "Anchor cages in sito (Committente)- Prima di iniziare fondazioni",
+    "duration": "13 giorni",
+    "months": 0.43
+   },
+   {
+    "name": "Scavo e Pali di fondazione (con 2 o + squadre)",
+    "duration": "67 giorni",
+    "months": 2.2
+   },
+   {
+    "name": "Scavo e Pali GRA07",
+    "duration": "16 giorni",
+    "months": 0.53
+   },
+   {
+    "name": "Scavo e Pali GRA09",
+    "duration": "16 giorni",
+    "months": 0.53
+   },
+   {
+    "name": "Scavo e Pali GRA10",
+    "duration": "16 giorni",
+    "months": 0.53
+   },
+   {
+    "name": "Scavo e Pali GRA08",
+    "duration": "16 giorni",
+    "months": 0.53
+   },
+   {
+    "name": "Scavo e Pali GRA05",
+    "duration": "16 giorni",
+    "months": 0.53
+   },
+   {
+    "name": "Scavo e Pali GRA06",
+    "duration": "16 giorni",
+    "months": 0.53
+   },
+   {
+    "name": "Scavo e Pali GRA04",
+    "duration": "16 giorni",
+    "months": 0.53
+   },
+   {
+    "name": "Scavo e Pali GRA03",
+    "duration": "16 giorni",
+    "months": 0.53
+   },
+   {
+    "name": "Plinti di fondazione (2 o + squadre)",
+    "duration": "86 giorni",
+    "months": 2.83
+   },
+   {
+    "name": "Fondazione GRA07 + TERRE ARMATE GRA07",
+    "duration": "13 giorni",
+    "months": 0.43
+   },
+   {
+    "name": "Rinterro e maturazione fondazione GRA07 + Grouting + Fondazioni accessorie",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "Fondazione GRA09",
+    "duration": "12 giorni",
+    "months": 0.39
+   },
+   {
+    "name": "Rinterro e maturazione fondazione GRA09 + Grouting + Fondazioni accessorie",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "Fondazione GRA10",
+    "duration": "12 giorni",
+    "months": 0.39
+   },
+   {
+    "name": "Rinterro e maturazione fondazione GRA10 + Grouting + Fondazioni accessorie",
+    "duration": "20 giorni",
+    "months": 0.66
+   }
+  ],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 224,
+  "pagine": 1369,
+  "completa": false,
+  "da_leggere": 104
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Eolico San Vito S.r.l. (ex Fri-el S.p.a.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 45.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "MT",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "546 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}

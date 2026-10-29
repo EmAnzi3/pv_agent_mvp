@@ -1,0 +1,195 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7162",
+ "title": "Impianto per la produzione di energia da fonte eolica denominato \"Mondonuovo\" di potenza complessiva pari a 54 MW localizzato nei comuni di Mesagne (BR) ed opere elettriche localizzate nel comune di Brindisi",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7162",
+ "source": "mase",
+ "updated": "2026-10-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "54 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7162",
+    "excerpt": "54 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "9",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/986580",
+    "page": 3,
+    "document": "Relazione Tecnica Generale - Parco eolico",
+    "excerpt": "la RTN a servizio dell’impianto eolico Mondonuovo da realizzarsi nel comune di Mesagne (BR) costituito da n. 9 aerogeneratori della potenza nominale complessiva di 54 MW. Parte del collegamento elettrico in media tension"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BR",
+  "comuni": [
+   "Brindisi"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Brindisi%2C+BR%2C+Puglia",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06400370968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1329375",
+      "page": 4,
+      "document": "Comunicazione VA esito valutazione",
+      "excerpt": "Alla RWE Renewables Italia S.r.l. rwerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7162"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Laborgeo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "laborgeo@tin.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/986579",
+      "page": 53,
+      "document": "TOC e interferenze parte idraulica",
+      "excerpt": "Tel. 0835.387641 - E-mail: laborgeo@tin.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0835387641",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/986579",
+      "page": 53,
+      "document": "TOC e interferenze parte idraulica",
+      "excerpt": "Tel. 0835.387641 - E-mail: laborgeo@tin.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma esecuzione dei lavori",
+   "url": "https://va.mite.gov.it/File/Documento/365940"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Cronoprogramma esecuzione dei lavori",
+    "url": "https://va.mite.gov.it/File/Documento/365940"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 471,
+  "pagine": 857,
+  "completa": false,
+  "da_leggere": 351
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "RWE Renewables Italia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 54.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BRINDISI, MESAGNE",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BR",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "547 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
