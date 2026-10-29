@@ -5,7 +5,7 @@
  "title": "Modifica progettuale delle opere di connessione alla Rete di Trasmissione Nazionale (RTN) dell'impianto fotovoltaico su cava non suscettibile di ulteriore sfruttamento denominato \"PVC001 Ruvo Jazzo de Rei\", della potenza di 37 MW da realizzarsi nei comuni di Ruvo di Puglia (BA), Bitonto (BA) e Terlizzi (BA)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12179",
  "source": "mase",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "sintesi": [
   {
    "key": "potenza",
@@ -34,14 +34,14 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "24 mesi",
+   "value": "20 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1438650",
-    "page": 21,
-    "document": "Relazione Tecnica Generale SE RTN",
-    "excerpt": "7 CRONOPROGRAMMA Il programma dei lavori al momento è stimato in n. 24 mesi dall’avvio degli stessi; sarà meglio dettagliato in fase di progettazione esecutiva."
+    "url": "https://va.mite.gov.it/File/Documento/1438666",
+    "page": 41,
+    "document": "Relazione Tecnica Illustrativa",
+    "excerpt": "12 CRONOPROGRAMMA I tempi di realizzazione del doppio elettrodotto sono stimati in 20 mesi. In ogni caso, in considerazione dell’urgenza e dell’importanza dell’opera, saranno"
    }
   }
  ],
@@ -54,17 +54,17 @@
    "Terlizzi"
   ],
   "coordinate": {
-   "lat": 40.96389,
-   "lon": 16.63028,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati",
+   "lat": 41.05354,
+   "lon": 16.53083,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (13 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1438669",
-    "page": 3,
-    "document": "Relazione interferenze al volo",
-    "excerpt": "• Aviosuperficie “Campo Volo La Quercia” – Toritto - 40° 57' 50'' Nord - 16° 37' 49'' Est •"
+    "url": "https://va.mite.gov.it/File/Documento/1438768",
+    "page": 7,
+    "document": "Relazione naturalistica",
+    "excerpt": " Coordinate cartografiche dell'intervento: 41°3'13\"N e 16°31'49\"E "
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.96389,16.63028",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.05354,16.53083",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -75,7 +75,8 @@
    "name": "ASP Grumo S.r.l.",
    "kind": "società",
    "roles": [
-    "Proponente"
+    "Proponente",
+    "Progettista"
    ],
    "vat": null,
    "vat_group": false,
@@ -86,7 +87,7 @@
     {
      "type": "PEC",
      "value": "asp_grumo@pec.it",
-     "occurrences": 20,
+     "occurrences": 27,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1438649",
       "page": 1,
@@ -106,7 +107,8 @@
    "name": "Santa Barbara Energia S.r.l.",
    "kind": "società",
    "roles": [
-    "Proponente"
+    "Proponente",
+    "Progettista"
    ],
    "vat": "12420990967",
    "vat_group": false,
@@ -155,6 +157,54 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Ing. Fabio Paccapelo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "fabio.paccapelo@hopegroup.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1438766",
+      "page": 2,
+      "document": "Elenco degli elaborati del progetto fotovoltaico",
+      "excerpt": "Ing. Fabio Paccapelo fabio.paccapelo@hopegroup.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Giuseppe Nicastro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "drnicastrogiuseppe@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1438766",
+      "page": 2,
+      "document": "Elenco degli elaborati del progetto fotovoltaico",
+      "excerpt": "Dott. Giuseppe Nicastro drnicastrogiuseppe@gmail.com"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -162,7 +212,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "24 mesi",
+  "durata_cantiere": "20 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -177,17 +227,22 @@
   "bars": [],
   "unit": "month",
   "months": 1,
-  "source": null,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1438767",
+   "page": 17,
+   "document": "R.1.2 Relazione tecnica descrittiva delle opere di connessione oggetto di verifica - art. 19 D.Lgs. 152/2006",
+   "excerpt": ""
+  },
   "asse": null,
   "duration": {
-   "text": "24 mesi",
+   "text": "20 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1438650",
-    "page": 21,
-    "document": "Relazione Tecnica Generale SE RTN",
-    "excerpt": "7 CRONOPROGRAMMA Il programma dei lavori al momento è stimato in n. 24 mesi dall’avvio degli stessi; sarà meglio dettagliato in fase di progettazione esecutiva."
+    "url": "https://va.mite.gov.it/File/Documento/1438666",
+    "page": 41,
+    "document": "Relazione Tecnica Illustrativa",
+    "excerpt": "12 CRONOPROGRAMMA I tempi di realizzazione del doppio elettrodotto sono stimati in 20 mesi. In ogni caso, in considerazione dell’urgenza e dell’importanza dell’opera, saranno"
    }
   },
   "milestones": [],
@@ -207,9 +262,9 @@
  },
  "documentazione": {
   "documenti": 419,
-  "pagine": 652,
+  "pagine": 1115,
   "completa": false,
-  "da_leggere": 299
+  "da_leggere": 179
  },
  "confronto": [
   {
@@ -245,7 +300,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "366 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "367 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
