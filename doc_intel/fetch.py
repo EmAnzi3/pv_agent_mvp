@@ -216,6 +216,24 @@ class Fetcher:
         time.sleep(pause)
         return lock
 
+    _primed: set = set()
+
+    def _auth_kw(self, auth) -> dict:
+        """auth is [user, password] (basic auth) or {"prime": url}: a public share link (SharePoint guest
+        link) whose visit gives the session the cookie needed to download the files of the share."""
+        if not auth:
+            return {}
+        if isinstance(auth, dict):
+            prime = auth.get("prime")
+            if prime and (id(self.session), prime) not in self._primed:
+                try:
+                    self.session.get(prime, timeout=60, allow_redirects=True)
+                    self._primed.add((id(self.session), prime))
+                except Exception:
+                    pass
+            return {}
+        return {"auth": tuple(auth)}
+
     def _download(self, url: str, auth=None) -> tuple[bytes, dict[str, str]]:
         lock = self._polite(url)
         try:
@@ -228,9 +246,12 @@ class Fetcher:
         last: Exception | None = None
         for attempt in range(self.retries + 1):
             try:
-                kw = {"auth": tuple(auth)} if auth else {}
+                kw = self._auth_kw(auth)
                 with self.session.get(url, timeout=self.timeout, stream=True, **kw) as resp:
                     status = getattr(resp, "status_code", 200)
+                    if status in (401, 403) and isinstance(auth, dict) and attempt < self.retries:
+                        self._primed.discard((id(self.session), auth.get("prime")))   # cookie expired: visit the link again
+                        raise IOError(f"HTTP {status}")
                     if status in (429, 500, 502, 503, 504):
                         raise IOError(f"HTTP {status}")
                     resp.raise_for_status()
@@ -256,7 +277,7 @@ class Fetcher:
 
         Returns ('unchanged' | 'changed' | 'unknown', observed headers)."""
         try:
-            kw = {"auth": tuple(auth)} if auth else {}
+            kw = self._auth_kw(auth)
             head = getattr(self.session, "head", None)
             if head is None:
                 return "unknown", {}

@@ -360,3 +360,106 @@ def _epoch_date(v) -> str | None:
     if not 9.0e8 < x < 4.0e9:
         return None
     return datetime.fromtimestamp(x, timezone.utc).date().isoformat()
+
+
+class CampaniaPaurAdapter(DocumentAdapter):
+    """Regione Campania VIA/PAUR projects (``viavas.regione.campania.it/.../Progetti/prg_<CUP>_...``).
+
+    The project page has no attachments: the files are in the Region's public SharePoint share
+    «Consultazione fascicoli PAUR», one folder per CUP (``02_PAUR/<CUP>``, sometimes ``<CUP>_<note>``)
+    with sub-folders per submission (istanza, perfezionamento, integrazioni, pareri). The guest link gives
+    the session a cookie; folders and files are then listed with the SharePoint REST API, read-only.
+    """
+    source = "campania_paur"
+    capabilities = AdapterCapabilities(
+        source="campania_paur", project_identity=True, procedure_ids=False, document_index=True,
+        pagination="none", download="http", declared_totals=False,
+        obstacles=["files on the Region's public SharePoint share: the guest link must stay public"],
+        status="supported")
+
+    HOST = "viavas.regione.campania.it"
+    PRG_RE = re.compile(r"/Progetti/prg_(\d+)_")
+    SHARE = "https://regionecampania.sharepoint.com/:f:/s/VIA-VAS/EqQCPrpSpBxGlbBR-_uW2NsBnVv8PxTb5NiUzgg_t65CMw"
+    SITE = "https://regionecampania.sharepoint.com/sites/VIA-VAS"
+    ROOT = "/sites/VIA-VAS/Documenti condivisi/02_PAUR"
+    MAX_FOLDERS = 300
+
+    def __init__(self, get_html: Callable[[str], str] | None = None, api: Callable[[str], dict] | None = None):
+        super().__init__(get_html)
+        self._api = api
+        self._session = None
+
+    @classmethod
+    def handles(cls, url: str) -> bool:
+        return urlparse(url).hostname == cls.HOST and bool(cls.PRG_RE.search(url))
+
+    def api(self, path: str) -> dict:
+        if self._api:
+            return self._api(path)
+        if self._session is None:
+            import requests
+            self._session = requests.Session()
+            self._session.headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+            self._session.get(self.SHARE, timeout=60, allow_redirects=True)
+        r = self._session.get(self.SITE + path, headers={"Accept": "application/json;odata=nometadata"}, timeout=60)
+        r.raise_for_status()
+        return r.json()
+
+    @staticmethod
+    def _sp(path: str) -> str:
+        return quote(path.replace("'", "''"), safe="/")
+
+    def identify(self, url: str) -> ProjectIdentity:
+        cup = self.PRG_RE.search(url).group(1)
+        title = None
+        try:
+            text = " ".join(BeautifulSoup(self.get_html(url.replace("http://", "https://", 1)), "html.parser")
+                            .get_text(" ", strip=True).split())
+            m = re.search(rf"»\s*{cup}\s+(.{{20,600}}?)\s+Progetto in fase", text)
+            title = m.group(1)[:300] if m else None
+        except Exception:
+            pass
+        return ProjectIdentity(source="campania", project_id=cup, info_url=url, title=title)
+
+    def discover(self, identity: ProjectIdentity) -> Discovery:
+        cup = identity.project_id
+        try:
+            names = [f["Name"] for f in self.api(f"/_api/web/GetFolderByServerRelativeUrl('{self._sp(self.ROOT)}')/Folders"
+                                                 f"?$select=Name&$top=5000").get("value", [])]
+        except Exception as exc:
+            return Discovery(identity, [], [], [f"SharePoint listing failed: {exc}"[:200]])
+        mine = [n for n in names if n == cup or re.match(rf"{cup}\D", n)]
+        if not mine:
+            return Discovery(identity, [], [], [f"no folder {cup} in the PAUR share yet"])
+        docs: list[DocumentRef] = []
+        counts: dict[str, int] = {}
+        todo = [(f"{self.ROOT}/{n}", 0) for n in mine]
+        seen = 0
+        errors = []
+        while todo and seen < self.MAX_FOLDERS:
+            path, depth = todo.pop(0)
+            seen += 1
+            label = path[len(self.ROOT) + 1:]
+            try:
+                files = self.api(f"/_api/web/GetFolderByServerRelativeUrl('{self._sp(path)}')/Files"
+                                 f"?$select=Name,Length,ServerRelativeUrl,TimeLastModified").get("value", [])
+                subs = self.api(f"/_api/web/GetFolderByServerRelativeUrl('{self._sp(path)}')/Folders?$select=Name").get("value", [])
+            except Exception as exc:
+                errors.append(f"{label}: {exc}"[:200])
+                continue
+            for f in files:
+                m = re.match(r"(\d{4})[_-](\d{2})[_-](\d{2})", f["Name"])
+                docs.append(DocumentRef(
+                    url=f"{self.SITE}/_api/web/GetFileByServerRelativeUrl('{self._sp(f['ServerRelativeUrl'])}')/$value",
+                    procedure_id=label, title=f["Name"][:200], source="campania",
+                    extra={"size": int(f["Length"]) if str(f.get("Length", "")).isdigit() else None,
+                           "index_date": "-".join(m.groups()) if m else (f.get("TimeLastModified") or "")[:10] or None,
+                           "auth": {"prime": self.SHARE}}))
+                counts[label] = counts.get(label, 0) + 1
+            if depth < 4:
+                todo += [(f"{path}/{s['Name']}", depth + 1) for s in subs if s.get("Name") != "Forms"]
+        if todo:
+            errors.append("folder budget exhausted: listing partial")
+        procedures = [{"id": k, "url": identity.info_url, "label": k, "declared": None, "declared_available": False,
+                       "enumerated": v, "index_pages": 1, "errors": []} for k, v in sorted(counts.items())]
+        return Discovery(identity, docs, procedures, errors)
