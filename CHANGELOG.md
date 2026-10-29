@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-29 — `analizza_fonti_locali.bat`: se il salvataggio su GitHub di un giro precedente non era riuscito, il giro successivo lo reinvia prima di ripartire invece di scartarlo.
+
 - 2026-10-28 — Portali con tetto giornaliero (SI-VVI): i documenti già letti si riusano senza scaricarli né interrogare il portale, e il tetto di 150 vale solo per i documenti ancora da leggere; nel conteggio del tetto entrano solo i download reali. Così un progetto grande (es. Big Fish, 355 documenti) avanza giorno dopo giorno invece di rileggere sempre i primi 150.
 
 - 2026-10-28 — Notizie di stampa anche per l'eolico: stessi giornali e stesse regole (comune + MW o proponente nello stesso passaggio con parole di cantiere/contratto), con parole e imprese dell'eolico (Vestas, Siemens Gamesa, Nordex, Idoka, PLC System, Sarens...); abbinate solo al censimento eolico (`news/wind_matches.json`). Etichetta «Stampa», filtro e sezione nella scheda della pagina eolica; contano in «vicini al cantiere».
