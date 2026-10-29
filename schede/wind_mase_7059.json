@@ -5,14 +5,14 @@
  "title": "Parco eolico localizzato nel Comune di Carlentini (SR) con cavidotto interrato e sottostazione nel Comune di Sortino (SR). Progetto di smantellamento di 38 dei 57 aerogeneratori esistenti ed installazione di 18 nuovi aerogeneratori di potenza pari a 5,5 MW",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7059",
  "source": "mase",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "5,5 MW",
-   "sub": "Dagli elaborati (32 occorrenze); il titolo non indica la potenza; altri valori: 0,85 MW, 4,2 MW, 4,5 MW",
+   "sub": "Dagli elaborati (67 occorrenze); il titolo non indica la potenza; altri valori: 0,85 MW, 4,2 MW, 4,5 MW",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1365081",
     "page": 9,
@@ -25,7 +25,7 @@
    "label": "Aerogeneratori",
    "value": "57",
    "status": "da verificare",
-   "sub": "0,10 MW ciascuno · altezza mozzo 55 m · diametro rotore 158 m · Valore più ricorrente negli elaborati; altri valori: 19 (52), 10 (32), 38 (32)",
+   "sub": "0,10 MW ciascuno · altezza mozzo 107,5 m · diametro rotore 158 m · Valore più ricorrente negli elaborati; altri valori: 19 (86), 38 (58), 18 (42)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1343174",
     "page": 3,
@@ -42,9 +42,9 @@
    "Carlentini"
   ],
   "coordinate": {
-   "lat": 37.1843,
-   "lon": 14.96206,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (47 riferimenti concordi)",
+   "lat": 37.18379,
+   "lon": 14.96003,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (97 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1343182",
     "page": 1,
@@ -52,13 +52,63 @@
     "excerpt": "N WGS84 : LAT. 37°10'56.28\"N LONG. 14°57'34.90\"E SS Elettrica Utente CARLENTINI"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.18430,14.96206",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.18379,14.96003",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 37.17242,
+   "lon": 15.01126,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/352639",
+    "page": 6,
+    "document": "Relazione Geologica e idrologica - tavole da 1-6",
+    "excerpt": "501000"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.17242,15.01126"
+  },
   "lotti": []
  },
  "soggetti": [
+  {
+   "name": "ERG Wind Sicilia 3 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02269630642",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via De Marini 1 16149 Genova Ge",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ergwindsicilia3@legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/361309",
+      "page": 3,
+      "document": "Richiesta integrazioni del 18/07/2019",
+      "excerpt": "ERG Wind Sicilia 3 S.r.l. Ergwindsicilia3@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@utipsrl.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/352639",
+      "page": 1,
+      "document": "Relazione Geologica e idrologica - tavole da 1-6",
+      "excerpt": "www.antexgroup.it info@utipsrl.it\u0001-\u0001www.utipsrl.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7059"
+   }
+  },
   {
    "name": "ERG Wind Energy S.r.l.",
    "kind": "società",
@@ -102,35 +152,6 @@
    }
   },
   {
-   "name": "ERG Wind Sicilia 3 S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": "02269630642",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Via De Marini 1 16149 Genova Ge",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "ergwindsicilia3@legalmail.it",
-     "occurrences": 3,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/361309",
-      "page": 3,
-      "document": "Richiesta integrazioni del 18/07/2019",
-      "excerpt": "ERG Wind Sicilia 3 S.r.l. Ergwindsicilia3@legalmail.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "scheda ufficiale del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7059"
-   }
-  },
-  {
    "name": "Antex Group S.r.l.",
    "kind": "società",
    "roles": [
@@ -145,7 +166,7 @@
     {
      "type": "E-mail",
      "value": "info@antexgroup.it",
-     "occurrences": 62,
+     "occurrences": 182,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1343173",
       "page": 1,
@@ -303,6 +324,30 @@
    }
   },
   {
+   "name": "Dr. Filippo Furia",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0935657178",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/352642",
+      "page": 72,
+      "document": "Relazione Geologica e idrologica - relazione impianto esistente",
+      "excerpt": "M.T.R. Meccanica Terre e Rocce Dr. FILIPPO FURIA - TROINA (ENNA)- Via Cristoforo Colombo, 69 tel. 0935/657178"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Ecosystem Care S.r.l.",
    "kind": "società",
    "roles": [],
@@ -332,6 +377,41 @@
       "page": 52,
       "document": "Integrazioni del 04/02/2026 - PIANO DI MONITORAGGIO AMBIENTALE",
       "excerpt": "01866200767 – R.I CCIAA di POTENZA – R.E.A. n° 140356 www.ecosystemcare.it – mail: info@ecosystemcare.it – PEC: ecosystemcaresrl@gigapec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/352633",
+      "page": 22,
+      "document": "Relazione di calcolo Opere Edili SSE Carlentini",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/352633",
+      "page": 22,
+      "document": "Relazione di calcolo Opere Edili SSE Carlentini",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
      }
     }
    ],
@@ -750,7 +830,17 @@
    ],
    "unita": null
   },
-  "duration": null,
+  "duration": {
+   "text": "10 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/352630",
+    "page": 30,
+    "document": "Piano di manutenzione dell'impianto e delle opere connesse",
+    "excerpt": "costruttore e con i risultati dei collaudi per la prima messa in servizio delle apparecchiature. I lavori manutentivi per le stazioni avranno una durata massima prevista di 10 giorni, all’interno dei quali sarà prevista "
+   }
+  },
   "milestones": [],
   "document": {
    "document": "Cronoprogramma lavori",
@@ -763,9 +853,9 @@
  },
  "documentazione": {
   "documenti": 239,
-  "pagine": 3469,
-  "completa": false,
-  "da_leggere": 119
+  "pagine": 5448,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -809,7 +899,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "583 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "727 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
