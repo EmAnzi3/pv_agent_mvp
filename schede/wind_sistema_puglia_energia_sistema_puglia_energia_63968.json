@@ -1,0 +1,169 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:sistema_puglia_energia:sistema_puglia_energia_63968",
+ "title": "eolica aragon s.r.l. p.iva: 06931580960 - San Severo - 12.6 MW",
+ "source_url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63968",
+ "source": "sistema_puglia_energia",
+ "updated": "2026-10-29",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "12,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63968",
+    "excerpt": "12,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "3",
+   "status": "da documenti",
+   "sub": "4,20 MW ciascuno",
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOyV9AAI&p_name_allegato=&p_esito=0 ",
+    "page": 1,
+    "document": "documento",
+    "excerpt": "di San Severo (FG), in località “Torre dei Giunchi – San Matteo”, di potenza elettrica prevista pari a 12,60 MWe, costituito da n. 3 aerogeneratori della potenza uninominale pari a 4,20 MWe, nonché delle opere e infrastr"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOyV9AAI&p_name_allegato=&p_esito=0 ",
+    "page": 24,
+    "document": "documento",
+    "excerpt": "realizzazione del parco agro-fotovoltaico e delle relative opere di connessione elettrica alla rete di"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOyV9AAI&p_name_allegato=&p_esito=0 ",
+    "page": 33,
+    "document": "documento",
+    "excerpt": "attivata a norma di legge, fino a 20 anni a partire dall’entrata in esercizio commerciale dell’impianto, purché quest’ultima intervenga entro e non oltre 18 mesi dalla data di fine dei lavori."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "San Severo"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=San+Severo%2C+FG%2C+Puglia",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Eolica Aragon S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06931580960",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Largo Augusto N 3 20122 Milano Mi",
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63968"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://www.sistema.puglia.it/portal/pls/portal/sispuglia.ges_blob.p_retrieve?p_tname=sispuglia.documenti&p_cname=testo&p_cname_mime=mime_type_testo&p_rowid=AAAh67AB%2BAAOyV9AAI&p_name_allegato=&p_esito=0 ",
+    "page": 33,
+    "document": "documento",
+    "excerpt": "attivata a norma di legge, fino a 20 anni a partire dall’entrata in esercizio commerciale dell’impianto, purché quest’ultima intervenga entro e non oltre 18 mesi dalla data di fine dei lavori."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 1,
+  "pagine": 39,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "eolica aragon s.r.l. p.iva: 06931580960",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 12.6,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "San Severo",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
