@@ -5,7 +5,7 @@
  "title": "Parco eolico Cerignola Veneta NORD nel territorio comunale di Cerignola (FG) della potenza complessiva pari a 45 MW",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1768",
  "source": "mase",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "10",
    "status": "da verificare",
-   "sub": "4,50 MW ciascuno · altezza mozzo 114 m · diametro rotore 136 m · Valore più ricorrente negli elaborati; altri valori: 12 (7), 7 (1)",
+   "sub": "4,50 MW ciascuno · altezza mozzo 114 m · diametro rotore 136 m · Valore più ricorrente negli elaborati; altri valori: 12 (44), 3 (6), 7 (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1208314",
     "page": 2,
@@ -35,14 +35,14 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "non indicata",
-   "status": "da verificare",
-   "sub": "Inizio lavori 01/12/2024 (campo presunto di piano di sicurezza o notifica)",
+   "value": "6 mesi",
+   "status": "da documenti",
+   "sub": "Inizio lavori 01/12/2024 (campo presunto di piano di sicurezza o notifica) · Valore prevalente negli elaborati; altri valori: 18 mesi (1), 16 mesi (1), 18-24 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1218722",
-    "page": 1,
-    "document": "CRONOPROGRAMMA LAVORI",
-    "excerpt": "IMPRESA: Paving Technology S.r.l. CRONOPROGRAMMA LAVORI - Data Consegna Lavori (Presunta): 01/12/2024 - Data Fine Lavori: 15/09/2025 (Rev. 01 - Novembre 2024) Realizzazione piazzola di montaggio e stoccaggio torre VN8"
+    "url": "https://va.mite.gov.it/File/Documento/1129497",
+    "page": 4,
+    "document": "Piano Acustico",
+    "excerpt": "Fase di cantiere: ogni 2 mesi fino alla fine dei lavori e comunque prima della rimozione e smantellamento del cantiere qualora siano rilevati valori oltre i limiti. Fase di esercizio: ogni 6 mesi” In data 19/01/2024 la D"
    }
   }
  ],
@@ -52,9 +52,19 @@
   "comuni": [
    "Cerignola"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Cerignola%2C+FG%2C+Puglia",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 41.3959,
+   "lon": 15.8617,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (150 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1247706",
+    "page": 16,
+    "document": "Piano preliminare di utilizzo in sito delle terre e rocce da scavo escluse dalla disciplina dei rifiuti",
+    "excerpt": " latitudine 41,3959 - longitudine 15,8617 che rappresentano in linea di massima il baricentro del settore occidentale del parco eolico."
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.39590,15.86170",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
@@ -75,12 +85,23 @@
     {
      "type": "PEC",
      "value": "venetaenergia@legalmail.it",
-     "occurrences": 5,
+     "occurrences": 15,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1208314",
       "page": 1,
       "document": "Nulla Osta Idraulico Prov Foggia",
       "excerpt": "Partita Iva 03954830281 PEC: venetaenergia@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sedebari@sitea.info",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/236209",
+      "page": 1,
+      "document": "SCHEMA TIPO DELLE AREE DI IMPIANTO DEGLI AEROGENERATORI",
+      "excerpt": "Tel./Fax 080/9909280 e-mail: sedebari@sitea.info"
      }
     }
    ],
@@ -201,6 +222,78 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Ing. Pietro Tisti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138991",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/341169",
+      "page": 6,
+      "document": "Integrazioni del 25/02/2019 - Stato Accordi con Terna",
+      "excerpt": "Contatti: Ing. Pietro Tisti Tel. 0683138991."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Oreste D’Addese",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138289",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/341169",
+      "page": 6,
+      "document": "Integrazioni del 25/02/2019 - Stato Accordi con Terna",
+      "excerpt": "Contatti: Ing. Pietro Tisti Tel. 0683138991. Ing. Oreste D’Addese Tel. 0683138289."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Clean Power Project S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@clp-project.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/236213",
+      "page": 1,
+      "document": "STUDIO DEL TREMOLIO DELLE OMBRE (SHADOW-FLICKERING)",
+      "excerpt": "Via Macello, 65 - 39100 Bolzano - Tel. +39 0471 98 28 36 n\" e-mail: info@clp-project.com [m]"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": {
@@ -223,9 +316,33 @@
      "document": "Parere ARPA Puglia in data 22/05/2026",
      "excerpt": "S.p.A. con D.D. n. 03 del 12/01/2021. L’impianto eolico di cui trattasi è stato autorizzato con D.D. n.118 del 24/05/2023 della Regione Puglia, e successiva variante D.I.L.A. depositata presso il Comune di Cerignola in d"
     }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2023",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1398762",
+     "page": 2,
+     "document": "Parere ARPA Puglia in data 22/05/2026",
+     "excerpt": "S.p.A. con D.D. n. 03 del 12/01/2021. L’impianto eolico di cui trattasi è stato autorizzato con D.D. n.118 del 24/05/2023 della Regione Puglia, e successiva variante D.I.L.A. depositata presso il Comune di Cerignola in d"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2023",
+    "dettaglio": "inizio stimato + durata del cantiere: 6 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1129497",
+     "page": 4,
+     "document": "Piano Acustico",
+     "excerpt": "Fase di cantiere: ogni 2 mesi fino alla fine dei lavori e comunque prima della rimozione e smantellamento del cantiere qualora siano rilevati valori oltre i limiti. Fase di esercizio: ogni 6 mesi” In data 19/01/2024 la D"
+    }
    }
   ],
-  "durata_cantiere": null,
+  "durata_cantiere": "6 mesi",
   "autorizzazione": {
    "atto": "D.D. n. 118",
    "data": "24/05/2023",
@@ -236,9 +353,7 @@
     "excerpt": "S.p.A. con D.D. n. 03 del 12/01/2021. L’impianto eolico di cui trattasi è stato autorizzato con D.D. n.118 del 24/05/2023 della Regione Puglia, e successiva variante D.I.L.A. depositata presso il Comune di Cerignola in d"
    }
   },
-  "note": [
-   "Durata del cantiere non leggibile negli elaborati: fine lavori non stimabile."
-  ],
+  "note": [],
   "legenda": {
    "documentata": "data scritta nei documenti",
    "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
@@ -640,10 +755,10 @@
   },
   "duration": {
    "text": "2 mesi",
-   "status": "da documenti",
-   "hint": null,
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (5), 18 mesi (1), 16 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1208313",
+    "url": "https://va.mite.gov.it/File/Documento/1193185",
     "page": 32,
     "document": "Parere CTVIA",
     "excerpt": "Ottemperanza Fase di cantiere: ogni 2 mesi fino alla fine dei lavori e comunque prima della rimozione e smantellamento del cantiere"
@@ -680,9 +795,9 @@
  },
  "documentazione": {
   "documenti": 297,
-  "pagine": 993,
+  "pagine": 3266,
   "completa": false,
-  "da_leggere": 177
+  "da_leggere": 58
  },
  "confronto": [
   {
@@ -721,12 +836,8 @@
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Recapiti",
-   "reason": "1000 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "3458 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
