@@ -1,0 +1,253 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_6940",
+ "title": "Impianto eolico denominato \"Valle Verde\" di potenza pari a 31,35 MW da ubicare nel comune di Bovino (FG), località \"Monte Livagni\" e opere di connessione da ubicare anche nei comuni di Castelluccio dei Sauri e Deliceto",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/6940",
+ "source": "mase",
+ "updated": "2026-10-29",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "31,35 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/6940",
+    "excerpt": "31,35 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "3,14 MW ciascuno · altezza mozzo 112 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 9 (12), 5 (4), 7 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1190427",
+    "page": 3,
+    "document": "RAPPORTO TECNICO CAMPIONAMENTI AMBIENTALI_VALLE VERDE_REV.2",
+    "excerpt": "Nell’ambito del progetto definitivo per la realizzazione di un impianto di produzione di energia elettrica da fonte eolica, composto da n°10 aerogeneratori, e relative opere di connessione nel comune di Bovino (FG): al f"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "14 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 4 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1190405",
+    "page": 14,
+    "document": "OW323090401700EW-Piano di utilizzo di terre e rocce da scavo",
+    "excerpt": "Si specifica, infine, che la durata dei depositi delle terre e rocce da scavo sarà coerente con la durata del cantiere. Come evidente dal cronoprogramma dei lavori, si stima una durata del cantiere pari a 14 mesi. Si fa "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Castelluccio Dei Sauri",
+   "Deliceto"
+  ],
+  "coordinate": {
+   "lat": 41.28505,
+   "lon": 15.4303,
+   "tipo": "centro della tavola georeferenziata di progetto (13 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1190424",
+    "page": 378,
+    "document": "OW3230904017EW-PMA_Allegato1_Rapporto_indagini_Strade e piazzole e Sottostazione_signed",
+    "excerpt": "OW3230904017EW-PMA_Allegato1_Rapporto_indagini_Strade e piazzole e Sottostazione_signed"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.28505,15.43030",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Engineering Geology S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@engeosrl.it",
+     "occurrences": 39,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1190424",
+      "page": 2,
+      "document": "OW3230904017EW-PMA_Allegato1_Rapporto_indagini_Strade e piazzole e Sottostazione_signed",
+      "excerpt": "Via del Gallitello 90/A - 85100 Potenza - Tel. 0971/26378 Fax 0971/1940737 www.engeosrl.it E_mail info@engeosrl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "097126378",
+     "occurrences": 57,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1190424",
+      "page": 2,
+      "document": "OW3230904017EW-PMA_Allegato1_Rapporto_indagini_Strade e piazzole e Sottostazione_signed",
+      "excerpt": "ENGINEERING GEOLOGY SRL Via del Gallitello 90/A - 85100 Potenza - Tel. 0971/26378 Fax 0971/1940737"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1190405",
+    "page": 44,
+    "document": "OW323090401700EW-Piano di utilizzo di terre e rocce da scavo",
+    "excerpt": "Committente: ENGINEERING GEOLOGY srl - via del Gallitello 90/A - Potenza"
+   }
+  },
+  {
+   "name": "Winderg S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "04702520968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Larga 8 20122 Milano Mi",
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/6940"
+   }
+  },
+  {
+   "name": "TEN Project S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "01465940623",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Localita' Chianarile 82010 San Martino Sannita Bn",
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1190407",
+    "page": 3,
+    "document": "OW323090401700EW-Relazione strade e piazzole",
+    "excerpt": "La progettazione esecutiva affidata alla Ten Project Srl è riferita alla realizzazione delle strade, piazzole e cavidotti interni al parco eolico; non sono oggetto della presente relazione e del progetto esecutivo la"
+   }
+  },
+  {
+   "name": "Dott. Geol. Raffaele Nardone",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1190424",
+    "page": 37,
+    "document": "OW3230904017EW-PMA_Allegato1_Rapporto_indagini_Strade e piazzole e Sottostazione_signed",
+    "excerpt": "Il Geologo: Dott. Geol. Raffaele NARDONE ASSENTE"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "14 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "14 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 4 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1190405",
+    "page": 14,
+    "document": "OW323090401700EW-Piano di utilizzo di terre e rocce da scavo",
+    "excerpt": "Si specifica, infine, che la durata dei depositi delle terre e rocce da scavo sarà coerente con la durata del cantiere. Come evidente dal cronoprogramma dei lavori, si stima una durata del cantiere pari a 14 mesi. Si fa "
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 934,
+  "pagine": 1489,
+  "completa": false,
+  "da_leggere": 814
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Winderg Valleverde Srl",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 31.35,
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BOVINO, CASTELLUCCIO DEI SAURI, DELICETO",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "947 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
