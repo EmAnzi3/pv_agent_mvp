@@ -89,6 +89,7 @@ def main(argv: list[str] | None = None) -> int:
     lb.add_argument("--max", type=int, default=15)
     lb.add_argument("--budget-min", type=float, default=40, help="OCR time budget per project")
     lb.add_argument("--recompute", action="store_true", help="re-read projects that already have a card (new rules)")
+    lb.add_argument("--wind", action="store_true", help="wind census projects (memory wind/census.json) instead of the PV radar")
     ci = sub.add_parser("cards-index", help="write the index of the cards in a folder (published for the public page)")
     ci.add_argument("--folder", required=True)
     ci.add_argument("--out", required=True)
@@ -241,7 +242,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if a.cmd == "local-batch":
         from .local_batch import main as local_main
-        return local_main(a.data, a.max, a.budget_min, recompute=a.recompute)
+        return local_main(a.data, a.max, a.budget_min, recompute=a.recompute, wind=a.wind)
     if a.cmd == "cards-index":
         from .sync import build_index
         idx = build_index(a.folder)

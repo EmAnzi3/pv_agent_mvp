@@ -112,8 +112,8 @@ def _push(store: Path, message: str) -> bool:
     return False
 
 
-def _forget_attempt(store: Path, key: str) -> None:
-    att = store / "queue" / "attempts.json"
+def _forget_attempt(store: Path, key: str, prefix: str = "") -> None:
+    att = store / "queue" / f"{prefix}attempts.json"
     try:
         data_att = json.loads(att.read_text(encoding="utf-8"))
         data_att.pop(key, None)
@@ -189,7 +189,7 @@ def _select(queue: list[dict], store: Path, max_items: int) -> tuple[list[dict],
 
 
 def main(data: str, max_items: int, budget_min: float, store_dir: str | None = None,
-         out_dir: str | None = None, recompute: bool = False) -> int:
+         out_dir: str | None = None, recompute: bool = False, wind: bool = False) -> int:
     from .card import build_card, write_card
     from .pipeline import DRAWING_TITLES, run
     from .queue import plan
@@ -198,6 +198,12 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
     store = Path(store_dir).resolve() if store_dir else default_store()
     print(f"[locale] memoria in {store}")
     _ensure_memory(store)
+    # wind: the census on the memory branch (Sicily, Sistema Puglia, Basilicata wind procedures), with its
+    # own queue state (queue/wind_*.json) like the nightly wind cards; the SI-VVI daily cap is shared
+    prefix = "wind_" if wind else ""
+    if wind:
+        data = str(store / "wind" / "census.json")
+        print(f"[locale] eolico: censimento {data}")
     ocr = _ocr_available()
     print(f"[locale] OCR (Tesseract): {'disponibile' if ocr else 'NON disponibile: le tavole scansionate saranno saltate'}")
     # 'ricalcola': re-read the documents of projects that already have a card (new extraction rules)
@@ -206,9 +212,9 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
     from .queue import record_attempts
     # the whole local queue, then the block (see _select)
     allq = plan(data, store, max_items=100000, mode="refresh" if recompute else "both", local=True,
-                retry_days=0 if recompute else 14, record=False)
+                retry_days=0 if recompute else 14, record=False, state_prefix=prefix)
     items, reserve = _select(allq, store, max_items)
-    record_attempts(store, [it["project_key"] for it in items])
+    record_attempts(store, [it["project_key"] for it in items], state_prefix=prefix)
     print(f"[locale] progetti in questo blocco: {len(items)}")
     done = 0
     out = Path(out_dir) if out_dir else store.parent / "dossier"
@@ -223,7 +229,7 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
         host = urlparse(it["url"]).netloc
         if down.get(host, 0) >= 2:
             print(f"[locale]   saltato: {host} non risponde (riprovato al prossimo lancio)")
-            _forget_attempt(store, it["project_key"])
+            _forget_attempt(store, it["project_key"], prefix)
             # replace it with a reserve project from a portal that answers
             nxt = next((r for r in reserve if down.get(urlparse(r["url"]).netloc, 0) < 2), None)
             if nxt:
@@ -233,7 +239,7 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
         left = _quota_left(store, host)
         if left == 0:
             print(f"[locale]   rimandato: limite giornaliero per {host} raggiunto (riprende domani)")
-            _forget_attempt(store, it["project_key"])
+            _forget_attempt(store, it["project_key"], prefix)
             nxt = next((r for r in reserve if _quota_left(store, urlparse(r["url"]).netloc) != 0
                         and down.get(urlparse(r["url"]).netloc, 0) < 2), None)
             if nxt:
@@ -269,7 +275,7 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
             if re.search(r"(?i)NameResolution|ConnectionError|Max retries|timed out|ConnectTimeout|Temporary failure", str(exc)):
                 # network or portal down: not the project's fault, retry it at the next run
                 down[host] = down.get(host, 0) + 1
-                _forget_attempt(store, it["project_key"])
+                _forget_attempt(store, it["project_key"], prefix)
         else:
             down[host] = 0
         finally:
@@ -277,6 +283,6 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
                 _rm(store / name)                                 # downloaded files are never kept
     idx = build_index(store / "schede")
     (store / "schede" / "live_index.json").write_text(json.dumps(idx, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
-    ok = _push(store, f"doc-intel memory: local batch ({done} cards)")
+    ok = _push(store, f"doc-intel memory: local batch{' wind' if wind else ''} ({done} cards)")
     print(f"\n[locale] schede create: {done}/{worked}; memoria {'salvata su GitHub' if ok else 'NON salvata (riprova piu tardi)'}")
     return 0 if ok else 1
