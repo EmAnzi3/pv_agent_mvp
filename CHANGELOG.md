@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-29 — Campania: schede documentali anche per i progetti VIA/PAUR della Regione. I documenti non sono sulla pagina del progetto ma nella cartella pubblica SharePoint «Consultazione fascicoli PAUR» (una cartella per CUP, sottocartelle per istanza, perfezionamenti, integrazioni e pareri): nuovo adapter `CampaniaPaurAdapter`, lettura in sola consultazione tramite il link pubblico. Prima nessuno dei 12 progetti campani aveva la scheda.
+
 - 2026-10-29 — Report cambiamenti eolico (`docs/wind/cambiamenti.html`, link nella dashboard eolica): a ogni ricostruzione del censimento confronta i progetti con il censimento precedente e mostra prima i segnali di avanzamento (priorità cantiere, FER X, contractor verificati, EPC nei documenti, stampa, procedura chiusa), poi nuovi progetti, altre modifiche e uscite. Dati in `wind/changes/` sul ramo di memoria (un report per giorno con cambiamenti, ultimi 26); un censimento parziale non sposta la base del confronto.
 
 - 2026-10-29 — Sicilia: i titoli del portale SI-VVI non mostrano più codici HTML (es. «UN&#039;IMPIANTO» diventa «UN'IMPIANTO»).

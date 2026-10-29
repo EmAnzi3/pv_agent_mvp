@@ -7,13 +7,14 @@ from __future__ import annotations
 from .base import AdapterCapabilities, DocumentAdapter, Discovery, ProjectIdentity
 from .mase import MaseAdapter
 from .api_portals import AtosAdapter, SilviaAdapter, ToscanaPattiAdapter
-from .regional import BoxSharedFolderAdapter, HtmlIndexAdapter, NextcloudShareAdapter
+from .regional import BoxSharedFolderAdapter, CampaniaPaurAdapter, HtmlIndexAdapter, NextcloudShareAdapter
 from .sicilia import SiciliaViaAdapter
 
 REGISTRY: dict[str, type[DocumentAdapter]] = {"mase": MaseAdapter, "html_index": HtmlIndexAdapter,
                                                 "nextcloud_share": NextcloudShareAdapter, "box_shared": BoxSharedFolderAdapter,
                                                 "silvia": SilviaAdapter, "toscana_patti": ToscanaPattiAdapter,
-                                                "toscana_atos": AtosAdapter, "sicilia": SiciliaViaAdapter}
+                                                "toscana_atos": AtosAdapter, "sicilia": SiciliaViaAdapter,
+                                                "campania_paur": CampaniaPaurAdapter}
 
 
 def adapter_for_url(url: str) -> DocumentAdapter:
