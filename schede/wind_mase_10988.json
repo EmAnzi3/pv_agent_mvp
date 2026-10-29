@@ -5,7 +5,7 @@
  "title": "Progetto di integrale ricostruzione di un impianto eolico composto da 10 aerogeneratori di potenza unitaria 6,6 MW per una potenza complessiva di 66,6 MW e relative opere di connessione alla RTN nel Comune di Foiano di Val Fortore (BN) in località \"Monte Barbato - Piano del Casino\" e nel Comune di Montefalcone di Val Fortore (BN), con smantellamento di 47 aerogeneratori di potenza pari a 33,20 MW",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10988",
  "source": "mase",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "47",
    "status": "da documenti",
-   "sub": "1,42 MW ciascuno · altezza mozzo 105 m · diametro rotore 155 m · Valore prevalente negli elaborati; altri valori: 10 (286), 16 (10), 9 (10)",
+   "sub": "1,42 MW ciascuno · altezza mozzo 105 m · diametro rotore 155 m · Valore prevalente negli elaborati; altri valori: 10 (353), 16 (12), 20 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1433855",
     "page": 2,
@@ -37,7 +37,7 @@
    "label": "Durata cantiere",
    "value": "12 mesi",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1433855",
     "page": 57,
@@ -53,9 +53,9 @@
    "Foiano Di Val Fortore"
   ],
   "coordinate": {
-   "lat": 41.34475,
-   "lon": 14.97501,
-   "tipo": "centro della tavola georeferenziata di progetto (270 riferimenti concordi)",
+   "lat": 41.34621,
+   "lon": 14.97999,
+   "tipo": "centro della tavola georeferenziata di progetto (278 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1097270",
     "page": 1,
@@ -63,7 +63,7 @@
     "excerpt": "Rilievo Plano-altimetrico"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.34475,14.97501",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.34621,14.97999",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -114,7 +114,7 @@
     {
      "type": "PEC",
      "value": "rinnovabili@pec.edison.it",
-     "occurrences": 7,
+     "occurrences": 9,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1184556",
       "page": 6,
@@ -143,7 +143,7 @@
     {
      "type": "PEC",
      "value": "gekospa@pec.gekospa.it",
-     "occurrences": 94,
+     "occurrences": 108,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1433855",
       "page": 1,
@@ -165,7 +165,7 @@
     {
      "type": "Telefono",
      "value": "0688803910",
-     "occurrences": 98,
+     "occurrences": 112,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1433855",
       "page": 1,
@@ -179,6 +179,37 @@
     "page": 22,
     "document": "Profili longitudinali e sezioni trasversali della viabilità interna al parco",
     "excerpt": "Progettazione GEKO S.p.A."
+   }
+  },
+  {
+   "name": "Dott. Geol. Vincenzo Cortese",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vincenzocortese@live.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1097253",
+      "page": 16,
+      "document": "Relazione di modellazione sismica",
+      "excerpt": "TELEFONO: 0874/783120 FAX: 0874/773186 MOBILE: 328.6429991 E-MAIL: vincenzocortese@live.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1097253",
+    "page": 23,
+    "document": "Relazione di modellazione sismica",
+    "excerpt": "IL GEOLOGO Dott. Geol. Vincenzo CORTESE"
    }
   },
   {
@@ -199,40 +230,36 @@
     "document": "Integrazioni del 06/12/2024 - Allegati 0039 - Integrazioni",
     "excerpt": "Geotecnica fondazioni, opere di presidio, infrastrutture:Progettazione Struttura Garassino srl Sistema fondale : indiretto. - Sistemazione idraulica dell’area : secondo elaborato di progetto."
    }
-  },
+  }
+ ],
+ "altri_soggetti": [
   {
-   "name": "Dott. Geol. Vincenzo Cortese",
-   "kind": "persona",
-   "roles": [
-    "Geologo"
-   ],
-   "vat": null,
+   "name": "Geosecure S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01650420704",
    "vat_group": false,
-   "verified": false,
+   "verified": true,
    "esecuzione": null,
-   "office": null,
+   "office": "Via Degli Scipioni 268A 00192 Roma Rm",
    "contacts": [
     {
      "type": "E-mail",
-     "value": "vincenzocortese@live.it",
-     "occurrences": 2,
+     "value": "info@geosecure.it",
+     "occurrences": 15,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1097253",
-      "page": 16,
-      "document": "Relazione di modellazione sismica",
-      "excerpt": "TELEFONO: 0874/783120 FAX: 0874/773186 MOBILE: 328.6429991 E-MAIL: vincenzocortese@live.it"
+      "url": "https://va.mite.gov.it/File/Documento/1097315",
+      "page": 21,
+      "document": "Indagini geognostiche",
+      "excerpt": "GEOSECURE SRL info@geosecure.it"
      }
     }
    ],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1097253",
-    "page": 23,
-    "document": "Relazione di modellazione sismica",
-    "excerpt": "IL GEOLOGO Dott. Geol. Vincenzo CORTESE"
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
-  }
- ],
- "altri_soggetti": [
+  },
   {
    "name": "Seingim Global Service S.r.l.",
    "kind": "società",
@@ -246,7 +273,7 @@
     {
      "type": "E-mail",
      "value": "info@seingim.it",
-     "occurrences": 95,
+     "occurrences": 109,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1188785",
       "page": 1,
@@ -285,6 +312,76 @@
       "page": 22,
       "document": "Profili longitudinali e sezioni trasversali della viabilità interna al parco",
       "excerpt": "30022 Ceggia (VE) Telefono: 0421/323007"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Archeoservizi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tea-group.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1097337",
+      "page": 1,
+      "document": "VPIA Catalogo dettaglio ricognizioni",
+      "excerpt": "Tel. 05.06396101 E-Mail: info@tea-group.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@archeoservizi.org",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1097337",
+      "page": 1,
+      "document": "VPIA Catalogo dettaglio ricognizioni",
+      "excerpt": "Tel. 0824.1748550 E-Mail: info@archeoservizi.org"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "08241748550",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1097337",
+      "page": 1,
+      "document": "VPIA Catalogo dettaglio ricognizioni",
+      "excerpt": "Via Aldo Moro, nr b/3 - 82021 APICE (BN) Tel. 0824.1748550"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Agr. Paolo Castelli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3342284087",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1097337",
+      "page": 1,
+      "document": "VPIA Catalogo dettaglio ricognizioni",
+      "excerpt": "Viale Croce Rossa, nr 25 - 90146 Palermo (PA) Tel. 334.228 4087"
      }
     }
    ],
@@ -1043,7 +1140,7 @@
   "duration": {
    "text": "12 mesi",
    "status": "da documenti",
-   "hint": null,
+   "hint": "Valore prevalente negli elaborati; altri valori: 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1433855",
     "page": 57,
@@ -1068,9 +1165,9 @@
  },
  "documentazione": {
   "documenti": 158,
-  "pagine": 2899,
-  "completa": false,
-  "da_leggere": 38
+  "pagine": 3240,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -1106,7 +1203,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "707 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "813 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
