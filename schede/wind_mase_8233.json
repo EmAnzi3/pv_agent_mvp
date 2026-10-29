@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto per la produzione di energia da fonte eolica e relative opere connesse, formato da n. 8 aerogeneratori per una potenza di picco di 48 MW, denominato \"San Giorgio La Molara e Molinara\", da realizzarsi nei Comuni di San Giorgio La Molara (BN) e Molinara (BN).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8233",
  "source": "mase",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "8",
    "status": "da verificare",
-   "sub": "6,00 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 7 (31), 42 (4), 66 (3)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 7 (63), 66 (4), 42 (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1419790",
     "page": 3,
@@ -33,11 +33,23 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Fotovoltaico galleggiante",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/648406",
+    "page": 85,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "alluminio anodizzato. Nei locali apparati è stato posto in opera un pavimento modulare flottante per consentire il"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "12 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1247900",
     "page": 55,
@@ -56,7 +68,7 @@
   "coordinate": {
    "lat": 41.29543,
    "lon": 14.93883,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (19 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (27 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/648413",
     "page": 6,
@@ -86,18 +98,71 @@
     {
      "type": "PEC",
      "value": "rinnovabili@pec.edison.it",
-     "occurrences": 107,
+     "occurrences": 211,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1419774",
       "page": 1,
       "document": "COROGRAFIA DI INQUADRAMENTO",
       "excerpt": "Tel. +39 02 6222 1 PEC: rinnovabili@pec.edison.it"
      }
+    },
+    {
+     "type": "E-mail",
+     "value": "risorto.tocci@edison.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1093526",
+      "page": 2,
+      "document": "Controdeduzioni alle osservazioni della Provincia di Benevento (Prot. MASE-2024-0104237 del 06.06.2024 e Prot. MASE-2024-0104273 del 10.06.2024) e della Società IVPC Srl (Prot. MASE-2024-0109127 del 1",
+      "excerpt": "Nome e Cognome: Risorto Tocci Telefono: +39 3371052731 E-mail: risorto.tocci@edison.it"
+     }
     }
    ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8233"
+   }
+  },
+  {
+   "name": "Geko S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gekospa@pec.gekospa.it",
+     "occurrences": 77,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1419774",
+      "page": 1,
+      "document": "COROGRAFIA DI INQUADRAMENTO",
+      "excerpt": "Tel. 06.88803910 | Fax 06.45654740 E-Mail: gekospa@pec.gekospa.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0688803910",
+     "occurrences": 77,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1419774",
+      "page": 1,
+      "document": "COROGRAFIA DI INQUADRAMENTO",
+      "excerpt": "Via Reno, 5 - 00198 Roma (RM) Tel. 06.88803910 | Fax 06.45654740"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1419790",
+    "page": 1,
+    "document": "Relazione tecnica illustrativa di confronto",
+    "excerpt": "Progettazione:"
    }
   },
   {
@@ -118,44 +183,28 @@
     "document": "COROGRAFIA DI INQUADRAMENTO",
     "excerpt": "Progettazione Ing. Massimo Lo Russo"
    }
-  }
- ],
- "altri_soggetti": [
+  },
   {
-   "name": "Geko S.p.A.",
-   "kind": "società",
-   "roles": [],
+   "name": "Dott. Antonio Petriccione",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
    "vat": null,
    "vat_group": false,
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "gekospa@pec.gekospa.it",
-     "occurrences": 63,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1419774",
-      "page": 1,
-      "document": "COROGRAFIA DI INQUADRAMENTO",
-      "excerpt": "Tel. 06.88803910 | Fax 06.45654740 E-Mail: gekospa@pec.gekospa.it"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "0688803910",
-     "occurrences": 63,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1419774",
-      "page": 1,
-      "document": "COROGRAFIA DI INQUADRAMENTO",
-      "excerpt": "Via Reno, 5 - 00198 Roma (RM) Tel. 06.88803910 | Fax 06.45654740"
-     }
-    }
-   ],
-   "source": null
-  },
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1074015",
+    "page": 22,
+    "document": "Integrazioni del 07/05/2024 - Relazione geologica con ubicazioni indagini",
+    "excerpt": "Il Geologo Dott. Antonio Petriccione"
+   }
+  }
+ ],
+ "altri_soggetti": [
   {
    "name": "Progetto Energia S.r.l.",
    "kind": "società",
@@ -169,7 +218,7 @@
     {
      "type": "E-mail",
      "value": "info@progettoenergia.biz",
-     "occurrences": 63,
+     "occurrences": 77,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1419774",
       "page": 1,
@@ -180,7 +229,7 @@
     {
      "type": "Telefono",
      "value": "0825831313",
-     "occurrences": 63,
+     "occurrences": 77,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1419774",
       "page": 1,
@@ -221,6 +270,102 @@
       "page": 2,
       "document": "Relazione previsionale di impatto acustico",
       "excerpt": "STUDIO TECNICO Ing. Carmine Speranza - VIA MANFREDI,95 – 83042 ATRIPALDA (AV) Tel. e Fax 0825622866 - email studiotecnicosperanza@gamil.com - pec carmine.speranza@ingpec.eu"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Tisti Pietro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138315",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/648405",
+      "page": 3,
+      "document": "Preventivo per la connessione",
+      "excerpt": "Contatti: Ing. Tisti Pietro Tel. 0683138315"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. D’Addese Oreste",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138289",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/648405",
+      "page": 3,
+      "document": "Preventivo per la connessione",
+      "excerpt": "Ing. D’Addese Oreste Tel. 0683138289"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sangiorgio Italenergy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sangiorgiosrlenergy@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1379488",
+      "page": 1,
+      "document": "Controdeduzioni alle osservazioni trasmesse da Sangiorgio Italenergy S.r.l.",
+      "excerpt": "Sangiorgio Italenergy S.r.l. sangiorgiosrlenergy@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Lamolara Energia Verde S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energialamolara@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1379486",
+      "page": 1,
+      "document": "Controdeduzioni alle osservazioni trasmesse da Lamolara Energia Verde S.r.l.",
+      "excerpt": "Lamolara Energia Verde S.r.l. energialamolara@pec.it"
      }
     }
    ],
@@ -400,7 +545,7 @@
   "duration": {
    "text": "12 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1247900",
     "page": 55,
@@ -417,9 +562,9 @@
  },
  "documentazione": {
   "documenti": 232,
-  "pagine": 1315,
-  "completa": false,
-  "da_leggere": 112
+  "pagine": 2970,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -459,7 +604,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "13 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "44 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
