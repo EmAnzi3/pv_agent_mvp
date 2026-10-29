@@ -1,0 +1,24 @@
+name: Probe Campania SharePoint (temporary, review only)
+on:
+  pull_request:
+    paths: ['scripts/probe_campania_sp.py', '.github/workflows/probe-campania-sp.yml']
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -q requests
+      - run: python scripts/probe_campania_sp.py 10183 10188 10182 10072 10124
+      - name: Save on the memory branch (explore/campania_sp.json)
+        run: |
+          git config user.name "doc-intel-bot"; git config user.email "doc-intel-bot@users.noreply.github.com"
+          git fetch origin doc-intel-state:doc-intel-state && git worktree add .mem doc-intel-state
+          mkdir -p .mem/explore && cp probe_campania_sp.json .mem/explore/campania_sp.json
+          cd .mem && git add explore && git commit -q -m "probe campania sharepoint" || exit 0
+          for i in 1 2 3; do git pull -q --rebase -X theirs origin doc-intel-state || git rebase --abort; git push -q origin HEAD:doc-intel-state && exit 0; sleep 5; done
