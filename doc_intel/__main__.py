@@ -111,6 +111,8 @@ def main(argv: list[str] | None = None) -> int:
     wc.add_argument("--raw", default=None, help="reuse a census_raw.json instead of reading the portal")
     wc.add_argument("--max-pages", type=int, default=None, help="result pages per typology (test runs)")
     wc.add_argument("--no-regional-cloud", action="store_true", help="do not read the regional portals in this run")
+    wch = sub.add_parser("wind-changes", help="wind change report: census compared with the previous one (wind/changes/)")
+    wch.add_argument("--memory", required=True)
     wr = sub.add_parser("wind-regional", help="regional wind procedures (PV collectors with a wind filter)")
     wr.add_argument("--where", choices=["cloud", "local"], default=None, help="sources of this kind only")
     wr.add_argument("--only", nargs="*", help="source names (puglia_opendata, sistema_puglia_energia, basilicata, campania, calabria, sardegna, sicilia)")
@@ -250,6 +252,10 @@ def main(argv: list[str] | None = None) -> int:
         from .wind_census import run as census_run
         print("::notice title=wind-census::" + json.dumps(census_run(a.memory, ".", a.raw, a.max_pages,
                                                                      regional_cloud=not a.no_regional_cloud), ensure_ascii=False))
+        return 0
+    if a.cmd == "wind-changes":
+        from .wind_changes import run as changes_run
+        print("::notice title=wind-changes::" + json.dumps(changes_run(a.memory), ensure_ascii=False))
         return 0
     if a.cmd == "wind-regional":
         from app.collectors.wind_regional import run as regional_run
