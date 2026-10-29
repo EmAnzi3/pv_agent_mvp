@@ -168,6 +168,26 @@ def _quota_left(store: Path, host: str) -> int | None:
     return max(0, lim["docs"] - u["docs"])
 
 
+def _select(queue: list[dict], store: Path, max_items: int) -> tuple[list[dict], list[dict]]:
+    """Block for this run: a portal with a daily cap gets only the projects it still allows today, so
+    the remaining room goes to the other portals instead of being filled by projects that would be
+    postponed (before: 270 Sicilian projects at the top of the queue crowded out Puglia and Basilicata)."""
+    from urllib.parse import urlparse
+    room: dict[str, int] = {}
+    picked = []
+    for it in queue:
+        host = urlparse(it["url"]).netloc
+        lim = LIMITED_PORTALS.get(host)
+        if lim:
+            if host not in room:
+                room[host] = max(0, lim["projects"] - _quota_used(store, host)["projects"]) if _quota_left(store, host) else 0
+            if room[host] <= 0:
+                continue
+            room[host] -= 1
+        picked.append(it)
+    return picked[:max_items], picked[max_items:max_items * 4]
+
+
 def main(data: str, max_items: int, budget_min: float, store_dir: str | None = None,
          out_dir: str | None = None, recompute: bool = False) -> int:
     from .card import build_card, write_card
@@ -183,11 +203,12 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
     # 'ricalcola': re-read the documents of projects that already have a card (new extraction rules)
     # queue a reserve: when a portal does not answer, its projects are skipped and the block is filled
     # with projects of the other portals, so a run is never wasted
-    items = plan(data, store, max_items=max_items * 4, mode="refresh" if recompute else "both", local=True,
-                 retry_days=0 if recompute else 14)
-    reserve, items = items[max_items:], items[:max_items]
-    for it in reserve:
-        _forget_attempt(store, it["project_key"])          # reserve projects are not 'attempted' unless processed
+    from .queue import record_attempts
+    # the whole local queue, then the block (see _select)
+    allq = plan(data, store, max_items=100000, mode="refresh" if recompute else "both", local=True,
+                retry_days=0 if recompute else 14, record=False)
+    items, reserve = _select(allq, store, max_items)
+    record_attempts(store, [it["project_key"] for it in items])
     print(f"[locale] progetti in questo blocco: {len(items)}")
     done = 0
     out = Path(out_dir) if out_dir else store.parent / "dossier"

@@ -42,7 +42,7 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 ## Toolbox documentale e schede progetto
 
 - `doc_intel/` costruisce le schede dai documenti ufficiali; i documenti sono eliminati dopo l'estrazione, la memoria (manifest, fatti per SHA-256, schede, coda) è sul branch `doc-intel-state`. La pagina pubblica legge le schede da `schede/live_index.json` di quel branch.
-- Cloud (`doc-intel-batch.yml`): nuovi progetti a ogni push di `docs/data.json`, arretrato ogni notte per potenza decrescente, ricontrollo settimanale la domenica. PC (`analizza_fonti_locali.bat`): Sicilia, Sistema Puglia, Basilicata (IP esteri rifiutati); Sicilia con limite di 1 progetto e 150 documenti al giorno.
+- Cloud (`doc-intel-batch.yml`): nuovi progetti a ogni push di `docs/data.json`, arretrato ogni notte per potenza decrescente, ricontrollo settimanale la domenica. PC (`analizza_fonti_locali.bat`): Sicilia, Sistema Puglia, Basilicata (IP esteri rifiutati); Sicilia con limite di 1 progetto e 150 documenti al giorno; il blocco del giro scarta in partenza i progetti oltre il limite, così i posti vanno agli altri portali.
 - Batch locale: `[3H2/8]` esclude i progetti MASE archiviati; `[3ZQ/8]` mantiene le chiavi progetto del run precedente; `[3ZR/8]` riempie solo i campi vuoti dalle schede (cache `reports/schede_cache`, fuori da Git).
 - Esecuzione: ruoli EPC/impresa con evidenza A/B nella scheda («Chi costruisce»); notizie di stampa compatibili (livello C) da `doc-intel-news.yml` in `news/matches.json` del branch di memoria.
 - Vicini al cantiere: `doc_intel/readiness.py` (eseguito da `doc-intel-ferx.yml` dopo l'abbinamento FER X) scrive `readiness/index.json` sul ramo di memoria; regole e punteggi documentati in testa al modulo.

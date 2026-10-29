@@ -140,6 +140,18 @@ def plan(data_json: str | Path, memory_dir: str | Path, max_items: int = 35, mod
     return chosen
 
 
+def record_attempts(memory_dir: str | Path, keys: list[str], today: date | None = None, state_prefix: str = "") -> None:
+    """Mark projects as attempted today (for selections made with plan(..., record=False))."""
+    today = today or date.today()
+    path = Path(memory_dir) / "queue" / f"{state_prefix}attempts.json"
+    attempts = _load(path)
+    for k in keys:
+        a = attempts.setdefault(k, {"runs": 0})
+        a["last"], a["runs"] = today.isoformat(), a.get("runs", 0) + 1
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(attempts, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+
+
 def status(data_json: str | Path, memory_dir: str | Path) -> dict[str, Any]:
     """Coverage of the radar by cards, for the run summary."""
     mem = Path(memory_dir)

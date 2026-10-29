@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-29 — `analizza_fonti_locali.bat N`: il blocco del giro non viene più riempito dai progetti siciliani che sarebbero poi rimandati per il limite giornaliero; la Sicilia prende solo i progetti ancora ammessi oggi (1) e i posti restanti vanno a Sistema Puglia e Basilicata. Prima, con 270 progetti siciliani in testa alla coda, un giro da 30 ne lavorava solo 11.
+
 - 2026-10-29 — `analizza_fonti_locali.bat`: se il salvataggio su GitHub di un giro precedente non era riuscito, il giro successivo lo reinvia prima di ripartire invece di scartarlo.
 
 - 2026-10-28 — Portali con tetto giornaliero (SI-VVI): i documenti già letti si riusano senza scaricarli né interrogare il portale, e il tetto di 150 vale solo per i documenti ancora da leggere; nel conteggio del tetto entrano solo i download reali. Così un progetto grande (es. Big Fish, 355 documenti) avanza giorno dopo giorno invece di rileggere sempre i primi 150.
