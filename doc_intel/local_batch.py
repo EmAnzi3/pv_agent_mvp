@@ -93,9 +93,14 @@ def _push(store: Path, message: str) -> bool:
     _git("-c", "user.name=doc-intel-local", "-c", "user.email=doc-intel-local@users.noreply.github.com",
          "commit", "-q", "-m", message, cwd=store)
     for i in range(5):
-        _git("pull", "-q", "--rebase", "-X", "theirs", "origin", "doc-intel-state", cwd=store, check=False)
-        if _git("push", "-q", "origin", "HEAD:doc-intel-state", cwd=store, check=False).returncode == 0:
+        pl = _git("pull", "-q", "--rebase", "-X", "theirs", "origin", "doc-intel-state", cwd=store, check=False)
+        if pl.returncode:
+            _git("rebase", "--abort", cwd=store, check=False)
+            print(f"[locale]   git pull non riuscito: {(pl.stderr or pl.stdout).strip()[:300]}")
+        ps = _git("push", "-q", "origin", "HEAD:doc-intel-state", cwd=store, check=False)
+        if ps.returncode == 0:
             return True
+        print(f"[locale]   invio a GitHub non riuscito (tentativo {i + 1}/5): {(ps.stderr or ps.stdout).strip()[:300]}")
         time.sleep(10 * (i + 1))
     return False
 
