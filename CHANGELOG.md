@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-10-29 — Schede eoliche notturne: da 15 a 40 progetti a notte (stesse 5 analisi in parallelo, quindi stesso carico al minuto sul portale MASE); l'arretrato onshore (~810 progetti) si chiude in circa tre settimane invece di due mesi.
+
 - 2026-10-29 — `analizza_fonti_locali.bat N eolico` (o `tutto` per fotovoltaico + eolico): schede eoliche dal PC per i portali che rifiutano il cloud (Sistema Puglia, Basilicata, Sicilia), dal censimento eolico sul ramo di memoria, con coda separata (`queue/wind_*.json`) e lo stesso limite giornaliero SI-VVI condiviso col fotovoltaico.
 
 - 2026-10-29 — Campania: schede documentali anche per i progetti VIA/PAUR della Regione. I documenti non sono sulla pagina del progetto ma nella cartella pubblica SharePoint «Consultazione fascicoli PAUR» (una cartella per CUP, sottocartelle per istanza, perfezionamenti, integrazioni e pareri): nuovo adapter `CampaniaPaurAdapter`, lettura in sola consultazione tramite il link pubblico. Prima nessuno dei 12 progetti campani aveva la scheda.

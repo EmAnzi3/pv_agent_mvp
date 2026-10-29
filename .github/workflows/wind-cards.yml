@@ -1,6 +1,6 @@
 name: Wind cards (project cards for the wind census)
 # Same toolbox as the PV cards (doc-intel-batch.yml) on the wind census (wind/census.json on the memory
-# branch, written by wind-census.yml): new projects first, then the backlog by decreasing power, a few per
+# branch, written by wind-census.yml): new projects first, then the backlog by decreasing power, 40 per
 # night. Separate queue state (queue/wind_*.json); cards land in schede/ with keys 'wind:mase_<id>'.
 on:
   schedule:
@@ -11,7 +11,7 @@ on:
       max:
         description: 'Projects in this batch'
         required: false
-        default: '15'
+        default: '40'
       mode:
         description: 'new | backlog | both | refresh (re-check projects that already have a card)'
         required: false
@@ -52,9 +52,9 @@ jobs:
           IN_MODE: ${{ inputs.mode }}
           IN_REGION: ${{ inputs.region }}
         run: |
-          MODE=both; MAX=15; RETRY=14
+          MODE=both; MAX=40; RETRY=14   # 40 a night: backlog closed in about three weeks (same 5 in parallel, so MASE load per minute is unchanged)
           if [ "$EVENT" = "schedule" ] && [ "$SCHED" = "30 3 * * 0" ]; then MODE=refresh; MAX=30; RETRY=6; fi
-          if [ "$EVENT" = "workflow_dispatch" ]; then MODE="${IN_MODE:-both}"; MAX="${IN_MAX:-15}"; fi
+          if [ "$EVENT" = "workflow_dispatch" ]; then MODE="${IN_MODE:-both}"; MAX="${IN_MAX:-40}"; fi
           if [ ! -f .mem/wind/census.json ]; then echo "count=0" >> "$GITHUB_OUTPUT"; echo "::warning title=wind-cards::census not built yet"; exit 0; fi
           python -m doc_intel queue --data .mem/wind/census.json --memory .mem --state-prefix wind_ --max "$MAX" --mode "$MODE" --retry-days "$RETRY" --region "${IN_REGION:-}" --github-output "$GITHUB_OUTPUT"
           python -m doc_intel queue-status --data .mem/wind/census.json --memory .mem
