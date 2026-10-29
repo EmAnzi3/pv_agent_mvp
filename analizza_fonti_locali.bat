@@ -25,18 +25,33 @@ if errorlevel 1 (
 set "MAXP=%~1"
 if "%MAXP%"=="" set "MAXP=15"
 set "EXTRA="
+set "WHAT=fv"
 if /I "%~2"=="ricalcola" set "EXTRA=--recompute"
+if /I "%~2"=="eolico" set "WHAT=eolico"
+if /I "%~2"=="tutto" set "WHAT=tutto"
 echo Aggiorno il repository (git pull)...
 git pull --ff-only
 "%PYTHON_EXE%" -m pip install -q pymupdf pypdf requests beautifulsoup4 >nul 2>nul
-"%PYTHON_EXE%" -m doc_intel local-batch --data ".\docs\data.json" --max %MAXP% %EXTRA%
-if errorlevel 1 (
+if /I not "%WHAT%"=="eolico" (
     echo.
-    echo ATTENZIONE: la memoria non e' stata salvata su GitHub. Riprova piu' tardi.
-    pause
-    exit /b 1
+    echo === Fotovoltaico ===
+    "%PYTHON_EXE%" -m doc_intel local-batch --data ".\docs\data.json" --max %MAXP% %EXTRA%
+    if errorlevel 1 goto :nosave
+)
+if /I not "%WHAT%"=="fv" (
+    echo.
+    echo === Eolico ===
+    "%PYTHON_EXE%" -m doc_intel local-batch --wind --max %MAXP% %EXTRA%
+    if errorlevel 1 goto :nosave
 )
 echo.
 echo Fatto. Le nuove schede saranno visibili sul sito entro pochi minuti.
 pause
 endlocal
+exit /b 0
+
+:nosave
+echo.
+echo ATTENZIONE: la memoria non e' stata salvata su GitHub. Riprova piu' tardi.
+pause
+exit /b 1
