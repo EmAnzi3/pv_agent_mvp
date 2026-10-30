@@ -5,7 +5,7 @@
  "title": "I[ID_12945] Istanza per l'avvio del procedimento di Valutazione di Impatto Ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto: Impianto Agrivoltaico avanzato denominato \"Casalone\" di potenza 36,3 MW da realizzarsi in località Casalone nel comune di Viterbo e delle relative opere di connessione alla RTN.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11174",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "45 ha",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 50,27 ha (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 50,27 ha (1), 42,49 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1375858",
     "page": 29,
@@ -48,8 +48,8 @@
    "key": "pannelli",
    "label": "Superficie coperta dai pannelli",
    "value": "15,764 ha",
-   "status": "da documenti",
-   "sub": "35% dell'area · Valore prevalente negli elaborati; altri valori: 60 ha (1), 27 ha (1)",
+   "status": "da verificare",
+   "sub": "35% dell'area · Valore più ricorrente negli elaborati; altri valori: 60 ha (3), 27 ha (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1149220",
     "page": 7,
@@ -58,11 +58,24 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "125,51 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 42 MW (2), 24,5 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1176814",
+    "page": 7,
+    "document": "Osservazioni del Comune di Viterbo, in data 13/11/2024",
+    "excerpt": "- [ID: 10096] Impianto agrivoltaico da ubicare nel Comune di Viterbo (VT) in Località \"Monterazzano\", potenza nominale pari a 125,51 MWp e sistema di accumulo"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "9 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (8), 3 Mesi (4), 18 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (8), 3 Mesi (6), 18 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1375858",
     "page": 33,
@@ -80,17 +93,17 @@
    "Tuscania"
   ],
   "coordinate": {
-   "lat": 42.357,
-   "lon": 11.956,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (52 riferimenti concordi)",
+   "lat": 42.35556,
+   "lon": 11.95472,
+   "tipo": "coordinate del sito dichiarate negli elaborati (58 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1149208",
-    "page": 15,
-    "document": "Relazione tecnica impianto agrivoltaico Casalone",
-    "excerpt": "Provided inputs: Latitude/Longitude: 42.357,11.956"
+    "url": "https://va.mite.gov.it/File/Documento/1162470",
+    "page": 1,
+    "document": "Parere del Comune di Viterbo in data 22/10/2024",
+    "excerpt": "Latitudine 42° 21’ 20” N Longitudine"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.35700,11.95600",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.35556,11.95472",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -112,7 +125,7 @@
     {
      "type": "PEC",
      "value": "cubicocasalone@legalmail.it",
-     "occurrences": 126,
+     "occurrences": 154,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1404421",
       "page": 1,
@@ -160,7 +173,7 @@
     {
      "type": "PEC",
      "value": "gsrtech@pec.it",
-     "occurrences": 102,
+     "occurrences": 110,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1404421",
       "page": 1,
@@ -171,7 +184,7 @@
     {
      "type": "PEC",
      "value": "ing.giansanti@pec.ording.roma.it",
-     "occurrences": 56,
+     "occurrences": 58,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1404421",
       "page": 1,
@@ -193,7 +206,7 @@
     {
      "type": "E-mail",
      "value": "info@gsrtech.it",
-     "occurrences": 99,
+     "occurrences": 107,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1404421",
       "page": 1,
@@ -204,12 +217,23 @@
     {
      "type": "E-mail",
      "value": "ing.giansanti@gsrtech.com",
-     "occurrences": 87,
+     "occurrences": 95,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1404422",
       "page": 1,
       "document": "INQUADRAMENTO NUOVO ELETTRODOTTO SU ORTOFOTO - OPERE DI RETE \"F\" SU",
       "excerpt": "Ing. Giovanni Maria Giansanti Di Muzio ing.giansanti@gsrtech.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ing.giansanti@gsrtech.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1149224",
+      "page": 4,
+      "document": "Screening di Incidenza Specifico",
+      "excerpt": "Codice Fiscale GNSGNN79E07H501V recapito professionale e-mail – PEC ING.GIANSANTI@GSRTECH.IT ING.GIANSANTI@PEC.ORDING.ROMA.IT"
      }
     }
    ],
@@ -307,12 +331,71 @@
     {
      "type": "E-mail",
      "value": "fabio.sabbatini@tusciaengineering.com",
-     "occurrences": 3,
+     "occurrences": 4,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1297596",
       "page": 1,
       "document": "Integrazioni del 18/08/2025 - Piano particellare elettrodotto di connessione",
       "excerpt": "Ing. Fabio Sabbatini fabio.sabbatini@tusciaengineering.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Casalone Cubico S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "paologreco@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1297580",
+      "page": 1,
+      "document": "Integrazioni del 18/08/2025 - Studio di incidenza - Valutazione appropriata",
+      "excerpt": "DR. AGRONOMO PAOLO GRECO PAOLOGRECO@PEC.IT"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sirio Quattro S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sirio.quattro@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1258788",
+      "page": 1,
+      "document": "Controdeduzioni alle osservazioni della società Acciona Energia Global Italia S.r.l.",
+      "excerpt": "Sirio Quattro S.r.l. | Largo Augusto, 3 | 20122 Milano | Tel. +39 02 321 11 91 | Fax +39 02 321 11 933 Capitale Sociale: 10.000 Euro | C.F. e P. IVA: 13532290965 | REA MI-2728792 | sirio.quattro@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0232111",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1258788",
+      "page": 1,
+      "document": "Controdeduzioni alle osservazioni della società Acciona Energia Global Italia S.r.l.",
+      "excerpt": "Sirio Quattro S.r.l. | Largo Augusto, 3 | 20122 Milano Sirio Quattro S.r.l. | Largo Augusto, 3 | 20122 Milano | Tel. +39 02 321 11 91 | Fax +39 02 321 11 933"
      }
     }
    ],
@@ -333,34 +416,10 @@
      "value": "07612927227",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1418542",
+      "url": "https://va.mite.gov.it/File/Documento/1438537",
       "page": 9,
-      "document": "Parere ARPA Lazio, in data 07/08/2026",
+      "document": "Allegato alla Comunicazione VA Esito Valutazione - Parere ARPA Lazio, in data 07/08/2026",
       "excerpt": "Referente per quanto comunicato: Dott.ssa Caterina Cossio Tel.: 0761.2927227"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Casalone Cubico S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "paologreco@pec.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1297580",
-      "page": 1,
-      "document": "Integrazioni del 18/08/2025 - Studio di incidenza - Valutazione appropriata",
-      "excerpt": "DR. AGRONOMO PAOLO GRECO PAOLOGRECO@PEC.IT"
      }
     }
    ],
@@ -772,7 +831,7 @@
   "duration": {
    "text": "9 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (8), 25 giorni (6), 3 Mesi (4)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (8), 4 settimane (7), 25 giorni (6)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1375858",
     "page": 33,
@@ -792,9 +851,9 @@
  },
  "documentazione": {
   "documenti": 137,
-  "pagine": 1552,
-  "completa": false,
-  "da_leggere": 17
+  "pagine": 2049,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -825,12 +884,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie coperta dai pannelli",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "35 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "39 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
