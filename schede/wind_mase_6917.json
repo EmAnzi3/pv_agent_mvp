@@ -5,7 +5,7 @@
  "title": "Impianto eolico denominato \"Selinus\" di potenza pari a 39,6 MW e opere di connessione, da realizzare nei comuni di Partanna e di Castelvetrano (TP).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/6917",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -22,14 +22,27 @@
   {
    "key": "wtg",
    "label": "Aerogeneratori",
-   "value": "6",
-   "status": "da documenti",
-   "sub": "6,60 MW ciascuno · Valore prevalente negli elaborati; altri valori: 5 (1)",
+   "value": "9",
+   "status": "da verificare",
+   "sub": "4,40 MW ciascuno · altezza mozzo 105 m · diametro rotore 138 m · Valore più ricorrente negli elaborati; altri valori: 8 (19), 6 (9), 5 (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/508055",
-    "page": 14,
-    "document": "PESE_PE_00002_01_00-Relazione_generale",
-    "excerpt": "al minimo le nuove viabilità. Infatti si noti come per realizzare 6 aerogeneratori è bastato solo 1,8 Km di viabilità. Altresì come è possibile constatare dalla consultazione dell’elaborato PESE_PE_00070 dette nuove"
+    "url": "https://va.mite.gov.it/File/Documento/493941",
+    "page": 9,
+    "document": "Piano di utilizzo delle terre",
+    "excerpt": "Il Progetto presentato nel novembre 2018 prevedeva la realizzazione di n. 9 aerogeneratori della potenza di 4.4 MW ciascuno (per complessivi 39.6 MW) con altezza al mozzo di 105 m e rotore avente diametro pari a"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 01/06/2018 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 18 mesi (1), 290 giorni (circa 10 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/342945",
+    "page": 57,
+    "document": "Integrazione del 7/03/2019-Relazione descrittiva con aggiornamento paragrafo viabilità ed accessi",
+    "excerpt": "• attività di costruzione della Parco Eolico: le attività dureranno 12 mesi circa e il personale presente in sito varierà da alcune unità nelle prime fasi costruttive (primi mesi)"
    }
   }
  ],
@@ -40,16 +53,26 @@
    "Partanna",
    "Di Castelvetrano"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Partanna%2C+TP%2C+Sicilia",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 37.68703,
+   "lon": 12.89085,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (28 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/316152",
+    "page": 9,
+    "document": "Relazione di valutazione previsionale dell'impatto acustico",
+    "excerpt": "R01 37°39'24.26\"N 12°51'58.24\"E 01 (710 m)"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.68703,12.89085",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
  "soggetti": [
   {
-   "name": "RWE Renewables Italia S.r.l.",
+   "name": "Geoind Geologia e Geofisica S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente"
@@ -59,32 +82,262 @@
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "e.onclimateerenewablesitaliasrl@legalmail.it",
-     "occurrences": 56,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/508054",
-      "page": 1,
-      "document": "PESE_PE_00001_01_00-Elenco_elaborati-OTTEMPERANZA",
-      "excerpt": "P.IVA/C.F. 06400370968 Pec e.onclimateerenewablesitaliasrl@legalmail.it"
-     }
-    }
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/316088",
+    "page": 163,
+    "document": "Relazione geologica",
+    "excerpt": "COMMITTENTE: Geoind Geologia e Geofisica s.r.l."
+   }
+  },
+  {
+   "name": "Vamirgeoind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
    ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/316088",
+    "page": 115,
+    "document": "Relazione geologica",
+    "excerpt": "COMMITTENTE: Vamirgeoind s.r.l."
+   }
+  },
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06400370968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
+   "contacts": [],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/6917"
    }
+  },
+  {
+   "name": "Dott. Ing. Eugenio Bordonali",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/342961",
+    "page": 1,
+    "document": "Integrazioni del 7/03/2019-Piano di monitoraggio",
+    "excerpt": "Progettista: Dott. Ing. Eugenio Bordonali"
+   }
+  },
+  {
+   "name": "Dr. Giacomo Anselmo",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/316088",
+    "page": 36,
+    "document": "Relazione geologica",
+    "excerpt": "Il geologo Dr. Giacomo Anselmo"
+   }
+  },
+  {
+   "name": "Dott. Ing. Riccardo Cangelosi",
+   "kind": "persona",
+   "roles": [
+    "Coordinatore sicurezza"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/316113",
+    "page": 9,
+    "document": "Piano sicurezza e coordinamento progettazione",
+    "excerpt": "COORDINATORE PER LA SICUREZZA IN FASE DI PROGETTAZIONE: Dott. Ing. Riccardo Cangelosi COORDINATORE PER LA SICUREZZA IN FASE DI ESECUZIONE: Da incaricare"
+   }
   }
  ],
- "altri_soggetti": [],
- "stato": null,
+ "altri_soggetti": [
+  {
+   "name": "Geocima S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "04405870827",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Guglielmo Borremans 36 90145 Palermo Pa",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "geocimasnc@tiscali.it",
+     "occurrences": 121,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/316088",
+      "page": 115,
+      "document": "Relazione geologica",
+      "excerpt": "GEOCIMA s.a.s. - Laboratorio di Geologia Tecnica - Via Borremans, 36 - 90145 - Palermo Tel/Fax 0916824940 – Email: geocimasnc@tiscali.it - P.I. 04405870827"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "LA Molisana Trasporti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01463480705",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Rio Lecine 30 86014 Guardiaregia Cb",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@molisanatrasporti.it",
+     "occurrences": 43,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/316099",
+      "page": 2,
+      "document": "Acess roads 2",
+      "excerpt": "www.molisanatrasporti.com info@molisanatrasporti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Studio Bordonali S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "05502450827",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Umberto Giordano N 152 90144 Palermo Pa",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiobordonali.it",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/316129",
+      "page": 3,
+      "document": "Introduzione al SIA",
+      "excerpt": "Capitale Sociale Euro 10.000,00 i.v. Mail : info@studiobordonali.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "E.ON Climate & Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "e.onclimateerenewablesitaliasrl@legalmail.it",
+     "occurrences": 104,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/316129",
+      "page": 1,
+      "document": "Introduzione al SIA",
+      "excerpt": "°C a) P.IVA/C.F. 06400370968 pec: e.onclimateerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Rossana Miglietta",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138989",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/342942",
+      "page": 2,
+      "document": "Integrazione del 7/03/2019-STMG inviata da TERNA",
+      "excerpt": "Contatti: Eugenio Mazzini Tel. 06.8313.8989."
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 01/06/2018, ma l'iter è proseguito; ultimo documento o atto del 26/04/2022: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": null,
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "20/02/2019",
+    "dettaglio": "natura non determinabile",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/342947",
+     "page": 1,
+     "document": "Integrazione del 7/03/2019-Area vasta con localizzazione impianti eolici in esercizio (50*Hmax)",
+     "excerpt": "Entrata in Esercizio: in fase di allaccio 20/02/2019 PRIMA REVISIONE"
+    }
+   }
+  ],
+  "durata_cantiere": "12 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -101,8 +354,45 @@
   "months": 1,
   "source": null,
   "asse": null,
-  "duration": null,
-  "milestones": [],
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1), 290 giorni (circa 10 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/342945",
+    "page": 57,
+    "document": "Integrazione del 7/03/2019-Relazione descrittiva con aggiornamento paragrafo viabilità ed accessi",
+    "excerpt": "• attività di costruzione della Parco Eolico: le attività dureranno 12 mesi circa e il personale presente in sito varierà da alcune unità nelle prime fasi costruttive (primi mesi)"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "01/06/2018",
+    "iso": "2018-06-01",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/316113",
+     "page": 6,
+     "document": "Piano sicurezza e coordinamento progettazione",
+     "excerpt": "• DATA PREVISTA INIZIO LAVORI: 01/06/2018 •"
+    }
+   },
+   {
+    "label": "Entrata in esercizio",
+    "date": "20/02/2019",
+    "iso": "2019-02-20",
+    "nature": "natura non determinabile",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/342947",
+     "page": 1,
+     "document": "Integrazione del 7/03/2019-Area vasta con localizzazione impianti eolici in esercizio (50*Hmax)",
+     "excerpt": "Entrata in Esercizio: in fase di allaccio 20/02/2019 PRIMA REVISIONE"
+    }
+   }
+  ],
   "document": null,
   "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
   "altri": [],
@@ -111,9 +401,9 @@
  },
  "documentazione": {
   "documenti": 262,
-  "pagine": 790,
+  "pagine": 3283,
   "completa": false,
-  "da_leggere": 142
+  "da_leggere": 22
  },
  "confronto": [
   {
@@ -144,8 +434,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 01/06/2018, ma l'iter è proseguito; ultimo documento o atto del 26/04/2022: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "143 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "370 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
