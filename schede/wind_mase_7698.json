@@ -5,7 +5,7 @@
  "title": "\"Progetto per la realizzazione di un impianto eolico, denominato \"Latiano\", costituito da 7 aerogeneratori, ciascuno di potenza nominale pari a 6 MW, e dalle opere necessarie di connessione alla RTN, per una potenza complessiva di 42 MW, integrato con un sistema di accumulo di potenza pari a 35 MW, da realizzarsi nei Comuni di Latiano (BR) e Mesagne (BR)\".",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7698",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "13",
    "status": "da verificare",
-   "sub": "3,23 MW ciascuno · altezza mozzo 115 m · diametro rotore 165 m · Valore più ricorrente negli elaborati; altri valori: 7 (44), 3 (2), 15 (1)",
+   "sub": "3,23 MW ciascuno · altezza mozzo 115 m · diametro rotore 165 m · Valore più ricorrente negli elaborati; altri valori: 7 (44), 3 (2), 1 (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1391645",
     "page": 3,
@@ -48,8 +48,8 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "35 MW / 2,916 MWh",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 78 MW (4), 42 MW (4)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 78 MW (4), 42 MW (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1391645",
     "page": 3,
@@ -81,7 +81,7 @@
   "coordinate": {
    "lat": 40.58216,
    "lon": 17.71955,
-   "tipo": "coordinate del sito dichiarate negli elaborati (279 riferimenti concordi)",
+   "tipo": "coordinate del sito dichiarate negli elaborati (285 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1403469",
     "page": 67,
@@ -209,7 +209,7 @@
     {
      "type": "PEC",
      "value": "hepv04srl@pec.it",
-     "occurrences": 22,
+     "occurrences": 35,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/547025",
       "page": 1,
@@ -231,7 +231,7 @@
     {
      "type": "Telefono",
      "value": "04611732700",
-     "occurrences": 18,
+     "occurrences": 31,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/547028",
       "page": 1,
@@ -465,6 +465,30 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Wood Solare Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "woodsolareitaliasrl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/547067",
+      "page": 1,
+      "document": "Integrazioni del 06/10/2021 - Risposta_osservazioni_Wood_Solare",
+      "excerpt": "20094 Corsico (MI) PEC woodsolareitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": {
@@ -643,9 +667,9 @@
  },
  "documentazione": {
   "documenti": 333,
-  "pagine": 3260,
+  "pagine": 3433,
   "completa": false,
-  "da_leggere": 213
+  "da_leggere": 95
  },
  "confronto": [
   {
@@ -681,10 +705,6 @@
   },
   {
    "label": "Aerogeneratori",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
-   "label": "Accumulo",
    "reason": "valori diversi negli elaborati"
   },
   {
