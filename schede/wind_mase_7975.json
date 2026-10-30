@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico composto da n. 7 aerogeneratori, da 6 MW ciascuno, denominato \"PHOBOS\", della potenza nominale di 42 MW, e delle relative opere civili ed elettriche connesse ed infrastrutture indispensabili, da realizzarsi nei Comuni di Castel Giorgio (TR) ed Orvieto (TR).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7975",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "7",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · Valore prevalente negli elaborati; altri valori: 5 (7), 4 (3), 6 (3)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · Valore prevalente negli elaborati; altri valori: 5 (13), 4 (5), 6 (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1439472",
     "page": 1,
@@ -37,7 +37,7 @@
    "label": "Durata cantiere",
    "value": "16 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1), 6 mesi (1), 9 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/924623",
     "page": 14,
@@ -53,9 +53,9 @@
    "Castel Giorgio  Ed Orvieto"
   ],
   "coordinate": {
-   "lat": 42.73153,
-   "lon": 11.97287,
-   "tipo": "centro della tavola georeferenziata di progetto (7 riferimenti concordi)",
+   "lat": 42.7317,
+   "lon": 11.97297,
+   "tipo": "centro della tavola georeferenziata di progetto (15 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1418936",
     "page": 1,
@@ -63,7 +63,7 @@
     "excerpt": "Planimetria di confronto su catastale"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.73153,11.97287",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.73170,11.97297",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -85,7 +85,7 @@
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 95,
+     "occurrences": 212,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1436830",
       "page": 11,
@@ -167,6 +167,30 @@
    "source": null
   },
   {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/693046",
+      "page": 47,
+      "document": "Integrazioni del 13/09/2022 - PEOS_OC_11_0_impatto_acustico_Rev.1",
+      "excerpt": "Sonora S.r.l. Tel 0823 351196 - Fax 0823 351196 Lia LAT N°185"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Orta Energy 25 S.r.l.",
    "kind": "società",
    "roles": [],
@@ -196,7 +220,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "16 mesi",
+  "durata_cantiere": "19 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -208,15 +232,182 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Forniture materiali stazione",
+    "start": 0.0,
+    "end": 12.0,
+    "level": 0,
+    "summary": false,
+    "duration": "360 g"
+   },
+   {
+    "name": "Apertura cantiere e realizzazione viabilità di accesso",
+    "start": 4.98,
+    "end": 7.01,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "Sistemazione area di stazione",
+    "start": 5.98,
+    "end": 7.01,
+    "level": 0,
+    "summary": false,
+    "duration": "20 g"
+   },
+   {
+    "name": "Lavori civili stazione 380/132 kV",
+    "start": 6.98,
+    "end": 16.0,
+    "level": 0,
+    "summary": false,
+    "duration": "250 g"
+   },
+   {
+    "name": "Edificio quadro comandi",
+    "start": 9.97,
+    "end": 14.0,
+    "level": 0,
+    "summary": false,
+    "duration": "120 g"
+   },
+   {
+    "name": "Montaggi elettromeccanici stazione 380/132 kV",
+    "start": 11.97,
+    "end": 17.0,
+    "level": 0,
+    "summary": false,
+    "duration": "132 g"
+   },
+   {
+    "name": "Montaggio sistema di controllo stazione 380/132 kV",
+    "start": 15.97,
+    "end": 18.99,
+    "level": 0,
+    "summary": false,
+    "duration": "70 g"
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 18.99,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/613979",
+   "page": 12,
+   "document": "Integrazioni del 07/03/2022 - PEOS_PTO_08_SE_Relazione_Tecnica_Illustrativa",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "M11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "M12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "M13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "M14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "M15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "M16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "M17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "M18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "M19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "M20",
+     "start": 19.0,
+     "end": 20.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "16 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1), 6 mesi (1), 9 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/924623",
     "page": 14,
@@ -229,7 +420,7 @@
    "document": "Cronoprogramma",
    "url": "https://va.mite.gov.it/File/Documento/524656"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "note": null,
   "altri": [
    {
     "document": "Cronoprogramma",
@@ -237,13 +428,13 @@
    }
   ],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 394,
-  "pagine": 1885,
+  "pagine": 3331,
   "completa": false,
-  "da_leggere": 274
+  "da_leggere": 154
  },
  "confronto": [
   {
@@ -279,7 +470,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "14 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "70 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
