@@ -5,7 +5,7 @@
  "title": "Provvedimento Autorizzatorio Unico Regionale n° G12652 del 30/10/2020 Favorevole con prescrizioni - Impianto fotovoltaico potenza 36 MWp in loc. La Viola - Determinazione n°G08694 del 22/07/2020 Favorevole con prescrizioni",
  "source_url": "https://regionelazio.app.box.com/v/VIA-049-2019",
  "source": "lazio",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -32,11 +32,24 @@
    }
   },
   {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "78 ha",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 48,5 ha (1), 45,17 ha (1)",
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471738948286",
+    "page": 4,
+    "document": "Rel11A Relazione Archeologica Preventiva firma digitale.pdf",
+    "excerpt": "L’estensione complessiva del Progetto interessa un’area di circa 78 ettari per una potenza complessiva degli impianti calcolata in 35 MWp."
+   }
+  },
+  {
    "key": "pannelli",
    "label": "Superficie coperta dai pannelli",
    "value": "19 ha",
    "status": "da documenti",
-   "sub": "",
+   "sub": "24% dell'area",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471762746221",
     "page": 6,
@@ -45,15 +58,28 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "13,75 MW",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255481428",
+    "page": 3,
+    "document": "proponente 1481923.20-12-2023.pdf",
+    "excerpt": "denominato “Montalto La Viola” di potenza nominale di 35,139 KWP, sito nel Comune di Montalto di Castro (VT), comprensivo di sistema di accumulo BESS (Battery Energy Storage System) per una taglia pari a 13,75 MW e capac"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "18 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (1)",
+   "sub": "Inizio lavori 29/06/2022 (condizionato) · Valore più ricorrente negli elaborati; altri valori: 5 mesi (1)",
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471760128297",
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471754469216",
     "page": 28,
-    "document": "D.17 Preventivo di Connessione STMG.pdf",
+    "document": "All 5 STMG ottenuta in relazione al progetto.pdf",
     "excerpt": "soggetto non comunichi al gestore di rete l'inizio dei lavori per Ja realizzazione dell'impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
    }
   }
@@ -65,17 +91,17 @@
    "Montalto Di Castro"
   ],
   "coordinate": {
-   "lat": 42.37758,
-   "lon": 11.54556,
-   "tipo": "centro dell'area d'impianto (spigoli dichiarati) (44 riferimenti concordi)",
+   "lat": 42.37939,
+   "lon": 11.54414,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (66 riferimenti concordi)",
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471750669663",
-    "page": 72,
-    "document": "V2_SIA_LaViola_rev1.pdf",
-    "excerpt": "1) (42.37923 N;11.55106 E): Strada Interpoderale spigolo S-E dell’area di intervento."
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_690700450435",
+    "page": 3,
+    "document": "nota prot. n. 71734 del 13 novembre 2019.pdf",
+    "excerpt": "- Latitudine 42.37939°N - Longitudine 11.54414°E"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.37758,11.54556",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.37939,11.54414",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -83,7 +109,7 @@
  },
  "soggetti": [
   {
-   "name": "Canadian Solar Construction S.r.l.",
+   "name": "Construction S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente"
@@ -97,7 +123,7 @@
     {
      "type": "PEC",
      "value": "canadiansolarconstruction@legalmail.it",
-     "occurrences": 4,
+     "occurrences": 10,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471740623089",
       "page": 1,
@@ -108,12 +134,34 @@
     {
      "type": "E-mail",
      "value": "michele.giancarlo@canadiansolar.com",
-     "occurrences": 3,
+     "occurrences": 5,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471747353385",
       "page": 1,
       "document": "D.02 Scheda di sintesi del progetto.pdf",
       "excerpt": "• Mail michele.giancarlo@canadiansolar.com ; Telefono 3462387720"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "support@canadiansolar.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471748143172",
+      "page": 1,
+      "document": "Canadian_Solar-Datasheet-HiKu_CS3W-P_High Efficiency_(1000V_1500V)_v5.56....pdf",
+      "excerpt": "Canadian Solar Inc. 545 Speedvale Avenue West, Guelph, Ontario N1K 1E6, Canada, www.canadiansolar.com, support@canadiansolar.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "francesco.spagnolo@canadiansolar.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556049602320",
+      "page": 45,
+      "document": "Disponibilità delle Aree.pdf",
+      "excerpt": "michele.giancarlo@canadiansolar.com; francesco.spagnolo@canadiansolar.com;"
      }
     },
     {
@@ -126,11 +174,117 @@
       "document": "Proponente 0726474.04-07-2023.pdf",
       "excerpt": "Per eventuali comunicazioni relative alla procedura in esame contattare l’Ing. Aurora Iudice cell. +39 347.1448349 email: aurora.iudice@canadiansolar.com"
      }
+    },
+    {
+     "type": "E-mail",
+     "value": "matteo.donati@refeel.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556048084152",
+      "page": 1,
+      "document": "Verbale TT ampliamento Montalto.pdf",
+      "excerpt": "CANADIAN SOLAR SRL matteo.donati@refeel.eu"
+     }
     }
    ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://regionelazio.app.box.com/v/VIA-049-2019"
+   }
+  },
+  {
+   "name": "Ing. Mauro Marchino",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "mauro.marchino@pec.tusciaengineering.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556038636598",
+      "page": 1,
+      "document": "SEU C1 - OPERE DI RETE - KEYPLANE.pdf",
+      "excerpt": "P. IVA 02290180567 mail: mauro.marchino@tusciaengineering.com = = : are oe ¢ Siepe pec: mauro.marchino@pec.tusciaengineering.com YY pl~wpw]jj co co co di oleandri"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "mauro.marchino@tusciaengineering.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556038636598",
+      "page": 1,
+      "document": "SEU C1 - OPERE DI RETE - KEYPLANE.pdf",
+      "excerpt": "01014 Montalto di Castro (VT) Tel +39 0761345754 Cell +39 3384374669 i P. IVA 02290180567 mail: mauro.marchino@tusciaengineering.com = = : are oe ¢ Siepe"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "m.marchino@vtprogetti.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556048084152",
+      "page": 1,
+      "document": "Verbale TT ampliamento Montalto.pdf",
+      "excerpt": "CAMPOSCALA SRL m.marchino@vtprogetti.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556030965257",
+    "page": 1,
+    "document": "SEU C2 - Relazione tecnica.pdf",
+    "excerpt": "PROGETTISTA Ing. Mauro Marchino"
+   }
+  },
+  {
+   "name": "Ing. Sergio Baluce",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sergio.baluce@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255481428",
+      "page": 5,
+      "document": "proponente 1481923.20-12-2023.pdf",
+      "excerpt": "Direttore dei Lavori: Ing. Sergio Baluce c/o Antex Group srl Via Ionica n.16 96100 Siracusa (SR) PEC: sergio.baluce@ingpec.eu Contatto telefonico +39 348 8610039"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "s.baluce@antexgroup.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255377774",
+      "page": 11,
+      "document": "ALL_2_b_MNT-GGR-P035_PSC (SSEU)_r1_Signed_20231218.pdf",
+      "excerpt": "Indirizzo e-mail s.baluce@antexgroup.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255377774",
+    "page": 11,
+    "document": "ALL_2_b_MNT-GGR-P035_PSC (SSEU)_r1_Signed_20231218.pdf",
+    "excerpt": "Direttore dei lavori Antex Group Ing. Sergio Baluce"
    }
   }
  ],
@@ -148,12 +302,142 @@
     {
      "type": "PEC",
      "value": "magnoliasol@legalmail.it",
-     "occurrences": 7,
+     "occurrences": 23,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1257910425269",
       "page": 1,
       "document": "Proponente 0726474.04-07-2023.pdf",
       "excerpt": "Soggetta alla Direzione e Coordinamento di Canadian Solar Inc. PEC: magnoliasol@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Solarfields Sette S.r.l. !!S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01998810566",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via G B Casti 65 01021 Acquapendente Vt",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "solarfields@pec.it",
+     "occurrences": 25,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471747353385",
+      "page": 1,
+      "document": "D.02 Scheda di sintesi del progetto.pdf",
+      "excerpt": "P.iva 11208741006 – solarfields@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "maurizio.manenti@solarfields.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471747353385",
+      "page": 1,
+      "document": "D.02 Scheda di sintesi del progetto.pdf",
+      "excerpt": "• Mail maurizio.manenti@solarfields.it; Telefono 3884229516"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Montalto DI Castro S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03015130218",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Walther Von Der Vogelweide 8 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "l.ferracuti@atom-energia.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556048084152",
+      "page": 1,
+      "document": "Verbale TT ampliamento Montalto.pdf",
+      "excerpt": "MONTALTO DI CASTRO SRL l.ferracuti@atom-energia.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "m.carboni@reneew-cpengineering.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556048084152",
+      "page": 1,
+      "document": "Verbale TT ampliamento Montalto.pdf",
+      "excerpt": "MONTALTO DI CASTRO SRL m.carboni@reneew-cpengineering.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "SNB Service - S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "04549280289",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Giovanni Boccaccio 34/Q 35128 Padova Pd",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@snbsrl.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394249236336",
+      "page": 289,
+      "document": "ALL_2_a_MNT-GGR-P29_PSC (FV)_R1_signed_20231218.pdf",
+      "excerpt": "REGISTRO IMPRESE PADOVA N. - C.F/P.IVA: 04549280289 E mail: info@snbsrl.it – Sito web: http://www.snbsrl.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Camposcala S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02290180567",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Guido D'Arezzo 15 20145 Milano Mi",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "claudio.cocozza@ceosrl.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556048084152",
+      "page": 1,
+      "document": "Verbale TT ampliamento Montalto.pdf",
+      "excerpt": "CAMPOSCALA SRL Claudio.cocozza@ceosrl.eu"
      }
     }
    ],
@@ -209,7 +493,7 @@
    "source": null
   },
   {
-   "name": "Lady Solare S.r.l.",
+   "name": "AXA Assicurazioni S.p.A.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -220,13 +504,48 @@
    "contacts": [
     {
      "type": "PEC",
-     "value": "solarfields@pec.it",
+     "value": "axaassicurazioni@axa.legalmail.it",
      "occurrences": 12,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471747353385",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255787695",
       "page": 1,
-      "document": "D.02 Scheda di sintesi del progetto.pdf",
-      "excerpt": "P.iva 11208741006 – solarfields@pec.it"
+      "document": "ALL_4_Bozza fideiussione assicurativa dismissione_rev01.pdf",
+      "excerpt": "Sede Legale e Direzione Generale: Corso Como 17, 20154 Milano - Italia PEC: axaassicurazioni@axa.legalmail.it - Capitale Sociale € 232.535.335 interamente versato"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Pala Marina",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "marina.pala@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255481428",
+      "page": 5,
+      "document": "proponente 1481923.20-12-2023.pdf",
+      "excerpt": "Coordinatore di Sicurezza in fase di Esecuzione: Ing. Pala Marina con sede in Viale Giacomo Matteotti 34, Civitavecchia (RM) 00053 – PEC: marina.pala@pec.it Contatto telefonico +39 348 3646266"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "marinapala74@gmail.com",
+     "occurrences": 8,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394245119677",
+      "page": 1,
+      "document": "docviewer (1).pdf",
+      "excerpt": "E-mail: marinapala74@gmail.com"
      }
     }
    ],
@@ -245,23 +564,12 @@
     {
      "type": "E-mail",
      "value": "maurizio.manenti@gmail.com",
-     "occurrences": 3,
+     "occurrences": 4,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471740623089",
       "page": 1,
       "document": "D.16 Richiesta di Connessione alla R.T.N. (1).pdf",
       "excerpt": "canadiansolarconstruction@legalmail.it indirizzo e-mail maurizio.manenti@gmail.com in persona di Maurizio Manenti in qualità di legale rappresentante"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "maurizio.manenti@solarfields.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471747353385",
-      "page": 1,
-      "document": "D.02 Scheda di sintesi del progetto.pdf",
-      "excerpt": "• Mail maurizio.manenti@solarfields.it; Telefono 3884229516"
      }
     },
     {
@@ -273,6 +581,63 @@
       "page": 2,
       "document": "D.01bis Istanza asservimento coattivo.pdf",
       "excerpt": "marcello.astolfi@project-lex.com e l’Avv. Francesca Bocciarelli Cell +39 3486548776 email francesca.bocciarelli@project-lex.com, l’Ing. Maurizio Manenti Cell. +393384229516, email"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "STE Energy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ste.energy@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255481428",
+      "page": 5,
+      "document": "proponente 1481923.20-12-2023.pdf",
+      "excerpt": "Ditta esecutrice dei lavori (Sottostazione): STE Energy S.r.l. Via Sorio, 120 – 35141 Padova Partita IVA: 05252420285, PEC: ste.energy@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "n.fascina@ste-energy.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255481428",
+      "page": 5,
+      "document": "proponente 1481923.20-12-2023.pdf",
+      "excerpt": "- Nicola Fascina +39 342 0237804 n.fascina@ste-energy.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "a.padoan@ste-energy.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255481428",
+      "page": 5,
+      "document": "proponente 1481923.20-12-2023.pdf",
+      "excerpt": "- Alesanndro Padoan +39 337 1384075 a.padoan@ste-energy.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "g.tramarin@ste-energy.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255481428",
+      "page": 5,
+      "document": "proponente 1481923.20-12-2023.pdf",
+      "excerpt": "- Giacomo Tramarin +39 342 5027886 g.tramarin@ste-energy.com"
      }
     }
    ],
@@ -312,13 +677,76 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Hergo Solare Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "nocerino.d@infrastrutture.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556048084152",
+      "page": 1,
+      "document": "Verbale TT ampliamento Montalto.pdf",
+      "excerpt": "HERGO SOLARE ITALIA SRL Nocerino.d@infrastrutture.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ing.vergelli@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_556048084152",
+      "page": 1,
+      "document": "Verbale TT ampliamento Montalto.pdf",
+      "excerpt": "HERGO SOLARE ITALIA SRL Ing.vergelli@gmail.com"
+     }
+    }
+   ],
+   "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 09/11/2023, ma l'iter è proseguito; ultimo documento o atto del 02/09/2025: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
   "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "29/06/2022",
+    "dettaglio": "condizionato",
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_939290950405",
+     "page": 3,
+     "document": "DDRG_650_28032022.p7m",
+     "excerpt": "stessa data con cui si richiedeva, per le motivazioni depositate, di concedere una proroga del termine di inizio lavori di mesi 12, decorrente a far data dal 29/06/2022, o in subordine dal 09/11/2021 o in ulteriore subor"
+    }
+   },
+   {
+    "voce": "Proroga inizio lavori",
+    "livello": "documentata",
+    "valore": "29/06/2022",
+    "dettaglio": "condizionato",
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1092656028046",
+     "page": 2,
+     "document": "CANADIAN.p7m",
+     "excerpt": "03/03/2020 acquisita agli atti dell'Ente al prot. n. 6698 stessa data, per le motivazioni ivi depositate, di concedere una proroga del termine di inizio lavori di mesi 12, decorrente a far data dal 29/06/2022, o in subor"
+    }
+   },
    {
     "voce": "Atto autorizzativo",
     "livello": "documentata",
@@ -349,9 +777,9 @@
     "valore": "non prima di aprile 2022",
     "dettaglio": "inizio stimato + durata del cantiere: 18 mesi",
     "source": {
-     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471760128297",
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471754469216",
      "page": 28,
-     "document": "D.17 Preventivo di Connessione STMG.pdf",
+     "document": "All 5 STMG ottenuta in relazione al progetto.pdf",
      "excerpt": "soggetto non comunichi al gestore di rete l'inizio dei lavori per Ja realizzazione dell'impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
     }
    }
@@ -381,17 +809,44 @@
   "source": null,
   "asse": null,
   "duration": {
-   "text": "18 mesi",
+   "text": "10 giorni",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1), 5 mesi (1)",
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_471760128297",
-    "page": 28,
-    "document": "D.17 Preventivo di Connessione STMG.pdf",
-    "excerpt": "soggetto non comunichi al gestore di rete l'inizio dei lavori per Ja realizzazione dell'impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1394255377774",
+    "page": 3,
+    "document": "ALL_2_b_MNT-GGR-P035_PSC (SSEU)_r1_Signed_20231218.pdf",
+    "excerpt": "integrazioni, che si dovessero rendere necessarie, ai POS, per adeguarli alle integrazioni e/o modifiche richieste, ed a farle pervenire al CSE almeno 10 giorni prima di dar inizio ai lavori."
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "29/06/2022",
+    "iso": "2022-06-29",
+    "nature": "condizionato",
+    "certain": false,
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_939290950405",
+     "page": 3,
+     "document": "DDRG_650_28032022.p7m",
+     "excerpt": "stessa data con cui si richiedeva, per le motivazioni depositate, di concedere una proroga del termine di inizio lavori di mesi 12, decorrente a far data dal 29/06/2022, o in subordine dal 09/11/2021 o in ulteriore subor"
+    }
+   },
+   {
+    "label": "Proroga inizio lavori",
+    "date": "29/06/2022",
+    "iso": "2022-06-29",
+    "nature": "condizionato",
+    "certain": false,
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1092656028046",
+     "page": 2,
+     "document": "CANADIAN.p7m",
+     "excerpt": "03/03/2020 acquisita agli atti dell'Ente al prot. n. 6698 stessa data, per le motivazioni ivi depositate, di concedere una proroga del termine di inizio lavori di mesi 12, decorrente a far data dal 29/06/2022, o in subor"
+    }
+   }
+  ],
   "document": {
    "document": "MNT-ECR-P521_Attr Aurelia_Cronoprogramma_r03_signed.pdf",
    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-049-2019&file_id=f_1504572136629"
@@ -408,9 +863,9 @@
  },
  "documentazione": {
   "documenti": 465,
-  "pagine": 628,
+  "pagine": 1837,
   "completa": false,
-  "da_leggere": 345
+  "da_leggere": 227
  },
  "confronto": [
   {
@@ -441,12 +896,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 09/11/2023, ma l'iter è proseguito; ultimo documento o atto del 02/09/2025: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "17 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "114 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
