@@ -5,7 +5,7 @@
  "title": "\"Parco Eolico San Severo\", localizzato nel Comune di San Severo (FG), località Centoquaranta - Mezzanone, composto da 12 aerogeneratori per una potenza complessiva pari a 54 MW",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/6992",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "12",
    "status": "da documenti",
-   "sub": "4,50 MW ciascuno · altezza mozzo 127,5 m · diametro rotore 43 m · Valore prevalente negli elaborati; altri valori: 5 (44), 7 (42), 10 (13)",
+   "sub": "4,50 MW ciascuno · altezza mozzo 127,5 m · diametro rotore 43 m · Valore prevalente negli elaborati; altri valori: 5 (47), 7 (45), 10 (13)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1363724",
     "page": 3,
@@ -64,9 +64,19 @@
   "comuni": [
    "San Severo"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=San+Severo%2C+FG%2C+Puglia",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 41.68565,
+   "lon": 15.49873,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (7 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/338722",
+    "page": 5,
+    "document": "R10_Piano riutilizzo terre da scavo",
+    "excerpt": "542531,1449"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.68565,15.49873",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
@@ -76,7 +86,8 @@
    "name": "Innogy Italia S.p.A.",
    "kind": "società",
    "roles": [
-    "Proponente"
+    "Proponente",
+    "Progettista"
    ],
    "vat": null,
    "vat_group": false,
@@ -87,12 +98,23 @@
     {
      "type": "PEC",
      "value": "innogy_italia@legalmail.it",
-     "occurrences": 9,
+     "occurrences": 20,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/405315",
       "page": 1,
       "document": "Integrazioni del 18/05/2020 - Integrazione allo studio della viabilita'",
       "excerpt": "Via Franceso Restelli 31/1 - 20124 Milano c.f e P.Iva 02590640211 - PEC innogy_italia@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "fabio.coccia2@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/338716",
+      "page": 56,
+      "document": "R04_San Severo_4.2.4 - Relazione Idrologica",
+      "excerpt": "Via Bezzecca, 39 - 71016 San Severo (FG) ing.fabiococci@gmail.com - fabio.coccia2@ingpec.eu"
      }
     },
     {
@@ -115,6 +137,28 @@
       "page": 5,
       "document": "Integrazioni del 18/05/2020 - IMPATTO CUMULATIVO",
       "excerpt": "REDAZIONE: ARCH. GIOVANNI ALESSANDRO SELANO _ ARCHITETTURA _ PAESAGGIO _ ENERGIA SP 174 x Corato sx Km 3,00 _ 76123 _ Andria (BT) _ 3338971075 _ giovanniselano@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "innogy_italia@legalmaii.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/338780",
+      "page": 1,
+      "document": "Tav IE06-Piante e Prospetti Cabine",
+      "excerpt": "—— _ . . Via Franceso Restelli 31/1 - 20124 Milano | | === Michele R.G. Curtotti cf e P.Iva 02590640211 - PEC innogy_italia@legalmaii.it 0"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0269826300",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/405321",
+      "page": 1,
+      "document": "Integrazioni del 18/05/2020 - Alternative di progetto",
+      "excerpt": "20124 Milano (MI) - ITALY Tel.: 02/69826300"
      }
     }
    ],
@@ -157,7 +201,7 @@
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 50,
+     "occurrences": 79,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1015899",
       "page": 1,
@@ -305,7 +349,7 @@
     {
      "type": "E-mail",
      "value": "info@nordex-online.com",
-     "occurrences": 3,
+     "occurrences": 7,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/338802",
       "page": 93,
@@ -376,6 +420,30 @@
    "source": null
   },
   {
+   "name": "Studio di Ingegneria S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "studlocurtoti@gmall.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/338761",
+      "page": 1,
+      "document": "Tav 9.3.2_Sezioni trasversali Asse WTG 3",
+      "excerpt": "STUDIO DI INGEGNERIA ING. MICHELE R.G. CURTOTTI ing.curtoti@pec it~ studlocurtoti@gmall.it innogy"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Enav S.p.A.",
    "kind": "società",
    "roles": [],
@@ -394,6 +462,30 @@
       "page": 5,
       "document": "Parere dell'Ente ENAC in data 18/04/2024",
       "excerpt": "Area Operativa Progettazione Spazi Aerei Pec: funzione.psa@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alla Ditta Icology S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "icologysrl@arubapec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/534452",
+      "page": 38,
+      "document": "Integrazioni del 15/09/2021 - R10_01-Piano_Preliminare_di_utilizzo_delle_Terre_e_Rocce_da_scavo_aggiornamento",
+      "excerpt": "71016 SAN SEVERO (FG) PEC: icologysrl@arubapec.it"
      }
     }
    ],
@@ -486,9 +578,9 @@
  },
  "documentazione": {
   "documenti": 364,
-  "pagine": 6061,
+  "pagine": 7060,
   "completa": false,
-  "da_leggere": 124
+  "da_leggere": 4
  },
  "confronto": [
   {
@@ -524,7 +616,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "2253 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "2369 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
