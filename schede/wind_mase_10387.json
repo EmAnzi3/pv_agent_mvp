@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico denominato \"Musa\", costituito da 34 aerogeneratori di potenza unitaria di 7,2 MW, per una potenza complessiva di 244,8 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Bonefro, Casacalenda, Monacilioni, Ripabottoni, Sant'Elia a Pianisi (CB), in località Cerro- San Vito.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10387",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -23,8 +23,8 @@
    "key": "wtg",
    "label": "Aerogeneratori",
    "value": "34",
-   "status": "da verificare",
-   "sub": "7,20 MW ciascuno · altezza mozzo 118,5 m · diametro rotore 163 m · Valore più ricorrente negli elaborati; altri valori: 24 (32), 1 (6), 23 (2)",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 118,5 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 24 (34), 1 (6), 23 (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1441705",
     "page": 4,
@@ -36,8 +36,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "12 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 900 giorni (circa 30 mesi) (1), 42 mesi (1), 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1441711",
     "page": 78,
@@ -59,7 +59,7 @@
   "coordinate": {
    "lat": 41.68837,
    "lon": 14.86885,
-   "tipo": "centro della tavola georeferenziata di progetto (172 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (190 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1441717",
     "page": 2,
@@ -85,7 +85,19 @@
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "musaeolicasrl@pec.it",
+     "occurrences": 33,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1053452",
+      "page": 1,
+      "document": "Richiesta integrazioni della Commissione Tecnica PNRR-PNIEC",
+      "excerpt": "Alla Società Musa Eolica S.r.l. musaeolicasrl@pec.it"
+     }
+    }
+   ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10387"
@@ -189,7 +201,7 @@
   "duration": {
    "text": "12 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 giorni (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 giorni (2), 900 giorni (circa 30 mesi) (1), 42 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1441711",
     "page": 78,
@@ -214,9 +226,9 @@
  },
  "documentazione": {
   "documenti": 408,
-  "pagine": 4338,
+  "pagine": 6006,
   "completa": false,
-  "da_leggere": 288
+  "da_leggere": 168
  },
  "confronto": [
   {
@@ -227,7 +239,7 @@
   {
    "campo": "power_mw",
    "valore_attuale": 244.8,
-   "esito": "conflittuale"
+   "esito": "confermato"
   },
   {
    "campo": "municipalities",
@@ -247,12 +259,12 @@
  ],
  "da_verificare": [
   {
-   "label": "Aerogeneratori",
+   "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "562 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "668 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
