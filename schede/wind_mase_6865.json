@@ -5,14 +5,14 @@
  "title": "Potenziamento del parco eolico \"Castelvetrano-Salemi\" (TP)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/6865",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "21 MW",
-   "sub": "Dagli elaborati (8 occorrenze); il titolo non indica la potenza; altri valori: 25,5 MW, 54,6 MW, 58,5 MW",
+   "sub": "Dagli elaborati (9 occorrenze); il titolo non indica la potenza; altri valori: 25,5 MW, 30 MW, 54,6 MW",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/920755",
     "page": 4,
@@ -23,14 +23,14 @@
   {
    "key": "wtg",
    "label": "Aerogeneratori",
-   "value": "10",
+   "value": "30",
    "status": "da verificare",
-   "sub": "2,10 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 20 (6), 13 (5), 30 (3)",
+   "sub": "0,70 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 13 (9), 10 (8), 20 (8)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1249590",
-    "page": 6,
-    "document": "Allegato 5.1 - DL-R17-ERGC804DC - Documentazione fotografica parco castelvetrano_signed",
-    "excerpt": "RIPRISTINI AREE PROVVISORIE PRESCRIZIONE 3B Foto 10 WTG R-CV03 RIDUZIONE A DIMENSIONE MINIMA PIAZZOLA - PRESCRIZIONE N.2C"
+    "url": "https://va.mite.gov.it/File/Documento/1249701",
+    "page": 3,
+    "document": "Studio 24IFS-032-002 R0 sintesi CO-signed",
+    "excerpt": "• Smantellamento di 30 aerogeneratori esistenti da 0,85 MW. •"
    }
   }
  ],
@@ -43,9 +43,9 @@
    "Vita"
   ],
   "coordinate": {
-   "lat": 37.84948,
-   "lon": 12.77992,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (29 riferimenti concordi)",
+   "lat": 37.85035,
+   "lon": 12.78384,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (80 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1249700",
     "page": 13,
@@ -53,7 +53,7 @@
     "excerpt": "™= Lat 37.844094, Long 12.747816 09/04/2023 02:27 PM GMT+02:00"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.84948,12.77992",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.85035,12.78384",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -75,7 +75,7 @@
     {
      "type": "PEC",
      "value": "ergwindenergy@legalmail.it",
-     "occurrences": 3,
+     "occurrences": 7,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1249673",
       "page": 1,
@@ -280,6 +280,33 @@
    }
   },
   {
+   "name": "Cesi S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "00793580150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Rubattino N 54 20134 Milano Mi",
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0221251",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/920800",
+      "page": 1,
+      "document": "A1300001384_B9015355_Rap",
+      "excerpt": "I-20134 Milano - Italy Tel: +39 02 21251"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Dott. Agr. Vincenzo Lodato",
    "kind": "persona",
    "roles": [],
@@ -388,6 +415,18 @@
      "document": "Relazione per parco eolico Salemi-Castelvetrano 16042025_signed",
      "excerpt": "n.840 del 25/09/2023 dalla Commissione Tecnica di Verifica dell’Impatto Ambientale VIA e VAS – Sottocommissione VIA e nel Decreto n.584 del 20/11/2023 rilasciato dal Ministero dell’Ambiente e della Sicurezza Energetica; "
     }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "prescritta",
+    "valore": "entro il 20/11/2024",
+    "dettaglio": "«ENTRO UN ANNO DAL RILASCIO DEL PRESENTE TITOLO ABILITATIVO, ULTIMATI» dall'atto del 20/11/2023",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/920802",
+     "page": 2,
+     "document": "Autorizzazione in deroga_Castelvetrano",
+     "excerpt": "| LAVORI DEVONO ESSERE INIZIATI ENTRO UN ANNO DAL RILASCIO DEL PRESENTE TITOLO ABILITATIVO, ULTIMATI ENTRO TRE ANNI DALL'INIZIO PENA LA DECADENZA DELLA PRESENTE AUTORIZZAZIONE."
+    }
    }
   ],
   "durata_cantiere": null,
@@ -426,9 +465,9 @@
  },
  "documentazione": {
   "documenti": 579,
-  "pagine": 3805,
+  "pagine": 4072,
   "completa": false,
-  "da_leggere": 339
+  "da_leggere": 222
  },
  "confronto": [
   {
@@ -468,7 +507,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "512 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "522 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
