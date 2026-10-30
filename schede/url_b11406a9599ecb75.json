@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"VERDESOLARE\", della potenza di 35,68 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Brindisi (BR)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9316",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -35,8 +35,8 @@
    "key": "area",
    "label": "Superficie complessiva",
    "value": "56,374 ha",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 52,549 ha (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 52,549 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/831615",
     "page": 8,
@@ -45,16 +45,29 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "26 MW",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1398656",
+    "page": 43,
+    "document": "Allegato al Decreto Direttoriale - Parere CTVA del 12/03/2026",
+    "excerpt": "Progetto di un impianto agrivoltaico denominato \"Boccardi\" della potenza di 30,15 MW con impianto di accumulo di 26 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Brindisi"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "11 mesi",
+   "value": "4 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 4 mesi (2), 8 mesi (2), 4 - 5 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 11 mesi (3), 4 - 5 mesi (2), 8 mesi (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/831577",
-    "page": 29,
-    "document": "Relazione Generale",
-    "excerpt": "9.1 Dati caratteristici dell’organizzazione del cantiere −Durata cantiere: 11 mesi −Numero medio di operai impiegati n. 50"
+    "url": "https://va.mite.gov.it/File/Documento/1398656",
+    "page": 30,
+    "document": "Allegato al Decreto Direttoriale - Parere CTVA del 12/03/2026",
+    "excerpt": "si genereranno impatti sulla salute umana legati soprattutto a polveri e rumore, sebbene per un periodo limitato, dato che il cantiere durerà circa 4 mesi. Le principali emissioni di polveri deriveranno da: • movimentazi"
    }
   }
  ],
@@ -65,9 +78,9 @@
    "Brindisi"
   ],
   "coordinate": {
-   "lat": 40.54693,
-   "lon": 17.897,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (21 riferimenti concordi)",
+   "lat": 40.54689,
+   "lon": 17.89694,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (22 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/831615",
     "page": 43,
@@ -75,7 +88,7 @@
     "excerpt": "Latitudine – Longitudine 40°32'45.82\"N; 17°53'44.13\"E Superficie destinata a viabilità interna (mq)"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.54693,17.89700",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.54689,17.89694",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -247,7 +260,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "11 mesi",
+  "durata_cantiere": "4 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -265,14 +278,14 @@
   "source": null,
   "asse": null,
   "duration": {
-   "text": "11 mesi",
+   "text": "4 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 4 mesi (2), 8 mesi (2), 4 - 5 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 11 mesi (3), 4 - 5 mesi (2), 8 mesi (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/831577",
-    "page": 29,
-    "document": "Relazione Generale",
-    "excerpt": "9.1 Dati caratteristici dell’organizzazione del cantiere −Durata cantiere: 11 mesi −Numero medio di operai impiegati n. 50"
+    "url": "https://va.mite.gov.it/File/Documento/1398656",
+    "page": 30,
+    "document": "Allegato al Decreto Direttoriale - Parere CTVA del 12/03/2026",
+    "excerpt": "si genereranno impatti sulla salute umana legati soprattutto a polveri e rumore, sebbene per un periodo limitato, dato che il cantiere durerà circa 4 mesi. Le principali emissioni di polveri deriveranno da: • movimentazi"
    }
   },
   "milestones": [],
@@ -284,9 +297,9 @@
  },
  "documentazione": {
   "documenti": 143,
-  "pagine": 1435,
-  "completa": false,
-  "da_leggere": 23
+  "pagine": 1535,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -317,16 +330,12 @@
  ],
  "da_verificare": [
   {
-   "label": "Superficie complessiva",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "109 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "110 recapiti non attribuibili a un soggetto preciso: non mostrati"
   },
   {
    "label": "Business Devolopment della Opdenergy S.r.l.",
