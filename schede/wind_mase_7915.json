@@ -5,7 +5,7 @@
  "title": "Progetto di un parco eolico, denominato \"Procina\", composto da 18 aereogeneratori di potenza unitaria pari a 8 MW, per una potenza complessiva fino a 144 MW, e dalle opere accessorie per il collegamento alla Rete di Trasmissione Nazionale, da realizzarsi nel Comune di Apricena (FG).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7915",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,12 +24,25 @@
    "label": "Aerogeneratori",
    "value": "18",
    "status": "da documenti",
-   "sub": "8,00 MW ciascuno · altezza mozzo 140 m · diametro rotore 180 m · Valore prevalente negli elaborati; altri valori: 4 (4), 76 (3), 13 (3)",
+   "sub": "8,00 MW ciascuno · altezza mozzo 140 m · diametro rotore 180 m · Valore prevalente negli elaborati; altri valori: 4 (8), 76 (7), 9 (7)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1049482",
     "page": 1,
     "document": "Avviso al pubblico del 17/01/2022",
     "excerpt": "APRICENA (FG) su di un’area che si è rivelata interessante per l’installazione di tale infrastruttura. Il progetto in esame prevede la realizzazione di un impianto eolico, costituito da 18 aerogeneratori della potenza no"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "6-7 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 02/03/2021 (previsione di progetto, campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/504645",
+    "page": 12,
+    "document": "Piano Preliminare Utilizzo Materiali di scavo",
+    "excerpt": "Fase di ripristino a fine costruzione Saranno momentaneamente accantonati (6-7 mesi) nei pressi dell’area di scavo. Finita la costruzione dell’impianto saranno utilizzati per ripristino aree delle piazzole e nei terreni "
    }
   }
  ],
@@ -44,7 +57,7 @@
    "lon": 15.38039,
    "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (4 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/653442",
+    "url": "https://va.mite.gov.it/File/Documento/651654",
     "page": 20,
     "document": "Integrazioni del 20/06/2022 - Rel_2G_Relazione_geotecnica",
     "excerpt": "Sito 2 ID: 28999 Lat: 41,7697 Lon: 15,3674 Distanza: 2676,337"
@@ -57,38 +70,6 @@
   "lotti": []
  },
  "soggetti": [
-  {
-   "name": "Geo Tecnologie S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente",
-    "Geologo"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "geotecnologie@pec.it",
-     "occurrences": 18,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/653429",
-      "page": 1,
-      "document": "Integrazioni del 20/06/2022 -Relazione_idrologica_ed_idraulica",
-      "excerpt": "Ing. Gianfranco Leandro geotecnologie@pec.it"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/653429",
-    "page": 127,
-    "document": "Integrazioni del 20/06/2022 -Relazione_idrologica_ed_idraulica",
-    "excerpt": "Committente: Geo Tecnologie s.r.l. Sigla Campione: C14"
-   }
-  },
   {
    "name": "Spirit S.r.l.",
    "kind": "società",
@@ -104,7 +85,7 @@
     {
      "type": "PEC",
      "value": "spirit@pec.it",
-     "occurrences": 17,
+     "occurrences": 71,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/504679",
       "page": 1,
@@ -130,6 +111,38 @@
    }
   },
   {
+   "name": "Geo Tecnologie S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "geotecnologie@pec.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662839",
+      "page": 1,
+      "document": "Integrazioni del 11/07/2022 Relazione_idrologica_ed_idraulica",
+      "excerpt": "Ing. Gianfranco Leandro geotecnologie@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/662839",
+    "page": 127,
+    "document": "Integrazioni del 11/07/2022 Relazione_idrologica_ed_idraulica",
+    "excerpt": "Committente: Geo Tecnologie s.r.l. Sigla Campione: C14"
+   }
+  },
+  {
    "name": "ATS Engineering S.r.l.",
    "kind": "società",
    "roles": [
@@ -144,7 +157,7 @@
     {
      "type": "PEC",
      "value": "atseng@pec.it",
-     "occurrences": 45,
+     "occurrences": 101,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/504679",
       "page": 1,
@@ -165,14 +178,104 @@
     }
    ],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/653429",
+    "url": "https://va.mite.gov.it/File/Documento/662839",
     "page": 1,
-    "document": "Integrazioni del 20/06/2022 -Relazione_idrologica_ed_idraulica",
+    "document": "Integrazioni del 11/07/2022 Relazione_idrologica_ed_idraulica",
     "excerpt": "Il progettista: ATS Engineering s.r.l."
+   }
+  },
+  {
+   "name": "Ing. Eugenio Di Gianvito",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori",
+    "Coordinatore sicurezza"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "atsing@atsing.eu",
+     "occurrences": 35,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/504679",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Ing. Eugenio Di Gianvito atsing@atsing.eu"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/504643",
+    "page": 6,
+    "document": "Relazione sulla Sicurezza",
+    "excerpt": "Direttore dei lavori: Ing. Eugenio Di Gianvito"
+   }
+  },
+  {
+   "name": "Tecnema S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Impresa esecutrice (indicata negli elaborati)"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "B",
+     "ambito": "opere civili",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/610793",
+      "page": 29,
+      "document": "Osservazioni della Società Lucky Wind S.p.A. in data 21/03/2022",
+      "excerpt": "Che l’impresa esecutrice per le opere civili è la Tecnema S.r.l. con sede in Foggia (FG), Corso Pietro Giannone n° 1/A, P.IVA 03799030717;"
+     }
+    }
+   ],
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/610793",
+    "page": 29,
+    "document": "Osservazioni della Società Lucky Wind S.p.A. in data 21/03/2022",
+    "excerpt": "Che l’impresa esecutrice per le opere civili è la Tecnema S.r.l. con sede in Foggia (FG), Corso Pietro Giannone n° 1/A, P.IVA 03799030717;"
    }
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "WHYSOL-E Sviluppo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10692360968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Meravigli 3 20123 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "whysol-e.sviluppo@legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/611993",
+      "page": 4,
+      "document": "Osservazioni della Società Whysol-E Svi luppo S.r.l . in data 21/03/2022",
+      "excerpt": "whysol-e.sviluppo@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Dott. Geol. Giuseppe Locoratolo",
    "kind": "persona",
@@ -188,7 +291,7 @@
      "value": "glocoratolo@teletu.it",
      "occurrences": 15,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/653441",
+      "url": "https://va.mite.gov.it/File/Documento/651653",
       "page": 39,
       "document": "Integrazioni del 20/06/2022 - Rel_1G_Relazione_geologica",
       "excerpt": "sede: Via Dante, 65 - 75100 Matera - tel. & fax. 0835/264522 - cell. 335/6204363 Indirizzo E-mail: glocoratolo@teletu.it - Indirizzo WEB: http://home.teletu.it/giuloco"
@@ -199,34 +302,10 @@
      "value": "3356204363",
      "occurrences": 15,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/653441",
+      "url": "https://va.mite.gov.it/File/Documento/651653",
       "page": 39,
       "document": "Integrazioni del 20/06/2022 - Rel_1G_Relazione_geologica",
       "excerpt": "(iscritta al Registro delle Imprese di Matera R.E.A. n. 62744) - P.I.: 00 57 63 90 777 sede: Via Dante, 65 - 75100 Matera - tel. & fax. 0835/264522 - cell. 335/6204363"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Ing. Eugenio Di Gianvito",
-   "kind": "persona",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "atsing@atsing.eu",
-     "occurrences": 12,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/504679",
-      "page": 1,
-      "document": "Studio di Impatto Ambientale",
-      "excerpt": "Ing. Eugenio Di Gianvito atsing@atsing.eu"
      }
     }
    ],
@@ -247,7 +326,7 @@
      "value": "agclab@virgilio.it",
      "occurrences": 4,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/653441",
+      "url": "https://va.mite.gov.it/File/Documento/651653",
       "page": 89,
       "document": "Integrazioni del 20/06/2022 - Rel_1G_Relazione_geologica",
       "excerpt": "GENERALI Via Santella (P.co La Perla) Via Appia Antica, 12 Reg. Soc. Trib. n. 1741/82 COSTRUZIONI s.r.l. E-mail: agclab@virgilio.it Tel. 0823.424727 - Fax 0823.424729 — Cap. Soc. Euro 42.120,16 int. vers."
@@ -258,10 +337,34 @@
      "value": "0823424727",
      "occurrences": 4,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/653441",
+      "url": "https://va.mite.gov.it/File/Documento/651653",
       "page": 89,
       "document": "Integrazioni del 20/06/2022 - Rel_1G_Relazione_geologica",
       "excerpt": "GENERALI Via Santella (P.co La Perla) Via Appia Antica, 12 Reg. Soc. Trib. n. 1741/82 COSTRUZIONI s.r.l. E-mail: agclab@virgilio.it Tel. 0823.424727 - Fax 0823.424729 — Cap. Soc. Euro 42.120,16 int. vers."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Lungomare Nazario Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollo.sezionerisorsesostenibili@pec.rupar.puglia.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/706648",
+      "page": 1,
+      "document": "Controdeduzioni della Società AIP 1 SRL parere tecnico istruttorio della Soprintendenza Speciale per il PNRR e pubblicato sul portale ambientale del MiTE in data 05.09.2022 con protocollo n. 0106423 i",
+      "excerpt": "protocollo.sezionerisorsesostenibili@pec.rupar.puglia.it"
      }
     }
    ],
@@ -292,16 +395,97 @@
    "source": null
   }
  ],
- "stato": null,
- "esecuzione": null,
+ "stato": {
+  "level": "previsto",
+  "label": "Avvio lavori previsto il 01/01/2027",
+  "reason": "Data di progetto: non prova l'effettivo avvio."
+ },
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Tecnema S.r.l.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "opere civili",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/610793",
+     "page": 29,
+     "document": "Osservazioni della Società Lucky Wind S.p.A. in data 21/03/2022",
+     "excerpt": "Che l’impresa esecutrice per le opere civili è la Tecnema S.r.l. con sede in Foggia (FG), Corso Pietro Giannone n° 1/A, P.IVA 03799030717;"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": null,
-  "autorizzazione": null,
-  "note": [
-   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  "righe": [
+   {
+    "voce": "Proroga inizio lavori",
+    "livello": "documentata",
+    "valore": "02/03/2021",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/610793",
+     "page": 24,
+     "document": "Osservazioni della Società Lucky Wind S.p.A. in data 21/03/2022",
+     "excerpt": "invocata sospensiva ai sensi del Decreto Legge 8 aprile 2020 per le ragioni in premessa esplicitate; di concedere una proroga del termine di inizio dei lavori a tutto il 02 marzo 2021, ai sensi dell’art. 5 comma 21 della"
+    }
+   },
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto n. 0000238 del 23/07/2024",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1211732",
+     "page": 1,
+     "document": "Relazione tecnica di raffronto",
+     "excerpt": "1. PREMESSA E FINALITA’ DEL DOCUMENTO Con Decreto n.0000238 del 23/07/2024 la Direzione Generale Valutazioni Ambientali del Ministero dell’Ambiente e della Sicurezza Energetica, ha rilasciato alla Società AIP1 S.r.l. (di"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di luglio 2024",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1211732",
+     "page": 1,
+     "document": "Relazione tecnica di raffronto",
+     "excerpt": "1. PREMESSA E FINALITA’ DEL DOCUMENTO Con Decreto n.0000238 del 23/07/2024 la Direzione Generale Valutazioni Ambientali del Ministero dell’Ambiente e della Sicurezza Energetica, ha rilasciato alla Società AIP1 S.r.l. (di"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di febbraio 2025",
+    "dettaglio": "inizio stimato + durata del cantiere: 6-7 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/504645",
+     "page": 12,
+     "document": "Piano Preliminare Utilizzo Materiali di scavo",
+     "excerpt": "Fase di ripristino a fine costruzione Saranno momentaneamente accantonati (6-7 mesi) nei pressi dell’area di scavo. Finita la costruzione dell’impianto saranno utilizzati per ripristino aree delle piazzole e nei terreni "
+    }
+   }
   ],
+  "durata_cantiere": "6-7 mesi",
+  "autorizzazione": {
+   "atto": "Decreto n. 0000238",
+   "data": "23/07/2024",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1211732",
+    "page": 1,
+    "document": "Relazione tecnica di raffronto",
+    "excerpt": "1. PREMESSA E FINALITA’ DEL DOCUMENTO Con Decreto n.0000238 del 23/07/2024 la Direzione Generale Valutazioni Ambientali del Ministero dell’Ambiente e della Sicurezza Energetica, ha rilasciato alla Società AIP1 S.r.l. (di"
+   }
+  },
+  "note": [],
   "legenda": {
    "documentata": "data scritta nei documenti",
    "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
@@ -314,8 +498,45 @@
   "months": 1,
   "source": null,
   "asse": null,
-  "duration": null,
-  "milestones": [],
+  "duration": {
+   "text": "6-7 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (1), 90 giorni (circa 3 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/504645",
+    "page": 12,
+    "document": "Piano Preliminare Utilizzo Materiali di scavo",
+    "excerpt": "Fase di ripristino a fine costruzione Saranno momentaneamente accantonati (6-7 mesi) nei pressi dell’area di scavo. Finita la costruzione dell’impianto saranno utilizzati per ripristino aree delle piazzole e nei terreni "
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "02/03/2021",
+    "iso": "2021-03-02",
+    "nature": "previsione di progetto, campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/610793",
+     "page": 23,
+     "document": "Osservazioni della Società Lucky Wind S.p.A. in data 21/03/2022",
+     "excerpt": "sospensiva ai sensi del Decreto Legge 8 aprile 2020; si ritiene di concedere una proroga di mesi 6 (sei) del termine di inizio dei lavori a tutto il 02 marzo 2021, ai sensi dell’art. 5 comma 21 della L.R. 25/2012;"
+    }
+   },
+   {
+    "label": "Proroga inizio lavori",
+    "date": "02/03/2021",
+    "iso": "2021-03-02",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/610793",
+     "page": 24,
+     "document": "Osservazioni della Società Lucky Wind S.p.A. in data 21/03/2022",
+     "excerpt": "invocata sospensiva ai sensi del Decreto Legge 8 aprile 2020 per le ragioni in premessa esplicitate; di concedere una proroga del termine di inizio dei lavori a tutto il 02 marzo 2021, ai sensi dell’art. 5 comma 21 della"
+    }
+   }
+  ],
   "document": null,
   "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
   "altri": [],
@@ -324,9 +545,9 @@
  },
  "documentazione": {
   "documenti": 196,
-  "pagine": 1209,
-  "completa": false,
-  "da_leggere": 76
+  "pagine": 2252,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -357,8 +578,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "67 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "133 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Tecnema S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
