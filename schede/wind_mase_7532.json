@@ -5,7 +5,7 @@
  "title": "Istanza di avvio della procedura di valutazione d'impatto ambientale ai sensi dell'art. 23 del D.Lgs 152/2006 e ss.mm.ii. relativa al progetto di un impianto eolico denominato \"Contrada Sparpagliata, Donne Masi e Tostini\" costituito da 19 aerogeneratori per una potenza complessiva di 154 MW, da realizzare nei comuni di Erchie (BR), Torre Santa Susanna (BR), Manduria (TA) e Avetrana (TA), comprendente diverse opere connesse tra cui un sistema di accumulo di energia in agro di Erchie (BR) della potenza di 40 MW.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7532",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "19",
    "status": "da verificare",
-   "sub": "8,11 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (14), 5 (13), 11 (13)",
+   "sub": "8,11 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (27), 5 (24), 11 (24)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/421280",
     "page": 1,
@@ -56,9 +56,9 @@
    "Avetrana"
   ],
   "coordinate": {
-   "lat": 40.42589,
-   "lon": 17.76538,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (51 riferimenti concordi)",
+   "lat": 40.42597,
+   "lon": 17.76529,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (130 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/418416",
     "page": 13,
@@ -66,10 +66,20 @@
     "excerpt": "733823.00"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.42589,17.76538",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.42597,17.76529",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 40.40038,
+   "lon": 17.74421,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/522517",
+    "page": 9,
+    "document": "Integrazioni del 19/07/2021 - Relazione Pedoagronomica",
+    "excerpt": "732885.48"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.40038,17.74421"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -116,14 +126,58 @@
    "office": "Via Fratelli Salvioni 6 20154 Milano Mi",
    "contacts": [
     {
+     "type": "PEC",
+     "value": "angelo.leggieri@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/522532",
+      "page": 2,
+      "document": "Integrazioni del 19/07/2021 - Piano di gestione delle interferenze del paesaggio agrario",
+      "excerpt": "Cell.: +39 3292930942 E-mail: dott.angeloleggieri@gmail.com, angelo.leggieri@pec.it"
+     }
+    },
+    {
      "type": "E-mail",
      "value": "studio@projetto.eu",
-     "occurrences": 36,
+     "occurrences": 70,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/418344",
       "page": 1,
       "document": "Tav.2 - Potenziale Archeologico",
       "excerpt": "studio@projetto.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "dott.angeloleggieri@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/522532",
+      "page": 2,
+      "document": "Integrazioni del 19/07/2021 - Piano di gestione delle interferenze del paesaggio agrario",
+      "excerpt": "Cell.: +39 3292930942 E-mail: dott.angeloleggieri@gmail.com, angelo.leggieri@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@archeostudio.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/522536",
+      "page": 1,
+      "document": "Integrazioni del 19/07/2021 - Relazione Archeologica",
+      "excerpt": "ita di K: via Piave n. 24 - 73059 Ugento (LE) socisie dINgegnera info@archeostudio.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3292930942",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/522532",
+      "page": 2,
+      "document": "Integrazioni del 19/07/2021 - Piano di gestione delle interferenze del paesaggio agrario",
+      "excerpt": "Contatti: Cell.: +39 3292930942"
      }
     }
    ],
@@ -158,7 +212,7 @@
   "duration": {
    "text": "30 giorni",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 60 giorni (circa 2 mesi) (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 60 giorni (circa 2 mesi) (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/418415",
     "page": 141,
@@ -175,9 +229,9 @@
  },
  "documentazione": {
   "documenti": 394,
-  "pagine": 1472,
+  "pagine": 3145,
   "completa": false,
-  "da_leggere": 274
+  "da_leggere": 154
  },
  "confronto": [
   {
@@ -217,7 +271,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "1186 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "2404 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
