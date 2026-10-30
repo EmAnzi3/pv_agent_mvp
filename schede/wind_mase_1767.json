@@ -5,7 +5,7 @@
  "title": "Parco eolico Cerignola Veneta Sud nel territorio comunale di Cerignola (FG) della potenza complessiva pari a 79,8 MW",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1767",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "19",
    "status": "da documenti",
-   "sub": "4,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 136 m · Valore prevalente negli elaborati; altri valori: 6 (3)",
+   "sub": "4,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 136 m · Valore prevalente negli elaborati; altri valori: 6 (7), 3 (5), 11 (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1218321",
     "page": 5,
@@ -37,7 +37,7 @@
    "label": "Durata cantiere",
    "value": "6 MESI",
    "status": "da documenti",
-   "sub": "Inizio lavori 01/10/2024 (campo presunto di piano di sicurezza o notifica)",
+   "sub": "Inizio lavori 01/10/2024 (campo presunto di piano di sicurezza o notifica) · Valore prevalente negli elaborati; altri valori: 18 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1421462",
     "page": 444,
@@ -52,9 +52,19 @@
   "comuni": [
    "Cerignola"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Cerignola%2C+FG%2C+Puglia",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 41.23208,
+   "lon": 15.7897,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (130 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/236077",
+    "page": 1,
+    "document": "INQUADRAMENTO TERRITORIALE: COROGRAFIA E COORDINATE AEROGENERATORI",
+    "excerpt": "566844,7566"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.23208,15.78970",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
@@ -75,7 +85,7 @@
     {
      "type": "PEC",
      "value": "venetaenergia@legalmail.it",
-     "occurrences": 5,
+     "occurrences": 13,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1389629",
       "page": 1,
@@ -207,6 +217,52 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "Green Future S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "greenfuturesrl@pec.it",
+     "occurrences": 32,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1436983",
+      "page": 19,
+      "document": "Integrazioni del 07/08/2026 - Protocollo monitoraggio CP-PO_avifauna e chirotteri",
+      "excerpt": "PEC: greenfuturesrl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@greenfuture.it",
+     "occurrences": 32,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1436983",
+      "page": 19,
+      "document": "Integrazioni del 07/08/2026 - Protocollo monitoraggio CP-PO_avifauna e chirotteri",
+      "excerpt": "Corso Calatafimi, 421 – 90129 Palermo Web site: www.greenfuture.it Email: info@greenfuture.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3398381172",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1436983",
+      "page": 19,
+      "document": "Integrazioni del 07/08/2026 - Protocollo monitoraggio CP-PO_avifauna e chirotteri",
+      "excerpt": "Via Umberto Maddalena, 92 - 90131 Palermo mobile: +39 339 8381172"
+     }
+    }
+   ],
+   "source": null
   },
   {
    "name": "Vestas Italia S.r.l.",
@@ -347,6 +403,78 @@
       "page": 81,
       "document": "Integrazioni del 06/08/2026 - Relazione tecnica integrazione ottemperanza",
       "excerpt": "Il Data Protection Officer (DPO) per Società Autostrade Alto Adriatico S.p.A., è contattabile all'indirizzo di posta elettronica dpo@pec.autostradealtoadriatico.it;"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Clean Power Project S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@clp-project.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/236095",
+      "page": 1,
+      "document": "CARTA DELLO SHADOW - FLICKERING (ORE/ANNO DI OMBREGGIAMENTO) INQUADRAMENTO SU ORTOFOTO E CTR",
+      "excerpt": "Via | Maggio, 4 -31010 ORMELLE (TV) e-mail info@clp-project.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Tisti Pietro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138315",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/341068",
+      "page": 5,
+      "document": "Integrazioni del 25/02/2019 - stato accordi con Terna",
+      "excerpt": "Rossana Miglietta. Contatti: Ing. Tisti Pietro Tel. 0683138315"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. D’Addese Oreste",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138289",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/341068",
+      "page": 5,
+      "document": "Integrazioni del 25/02/2019 - stato accordi con Terna",
+      "excerpt": "Contatti: Ing. Tisti Pietro Tel. 0683138315 Ing. D’Addese Oreste Tel. 0683138289"
      }
     }
    ],
@@ -1035,8 +1163,8 @@
   },
   "duration": {
    "text": "6 MESI",
-   "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 2 mesi (1)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 2 mesi (6), 18 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1421462",
     "page": 444,
@@ -1075,9 +1203,9 @@
  },
  "documentazione": {
   "documenti": 450,
-  "pagine": 3672,
+  "pagine": 5791,
   "completa": false,
-  "da_leggere": 210
+  "da_leggere": 91
  },
  "confronto": [
   {
@@ -1113,7 +1241,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "2361 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "3972 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
