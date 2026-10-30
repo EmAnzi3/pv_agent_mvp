@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico, denominato \"Parco eolico del Triolo\", costituito da 29 aerogeneratori, ciascuno di potenza nominale di 6 MW, per una potenza complessiva di 174 MW, da realizzarsi nel territorio comunale di San Severo (FG), con realizzazione di una sottostazione elettrica utente sempre nel territorio comunale di San Severo.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7357",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "29",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 165 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 15 (8), 1 (5), 10 (4)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 165 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 15 (8), 10 (7), 1 (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/421281",
     "page": 1,
@@ -48,8 +48,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "3 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6-7 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/399571",
     "page": 3,
@@ -93,10 +93,41 @@
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wpdtriolo@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/471018",
+      "page": 1,
+      "document": "Controdeduzioni al Comune di San Severo - wpd Triolo S.r.l.",
+      "excerpt": "Fax 06 96035324 PEC: wpdtriolo@legalmail.it"
+     }
+    }
+   ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7357"
+   }
+  },
+  {
+   "name": "Innogy Italia S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/399607",
+    "page": 14,
+    "document": "Studio di inserimento urbanistico",
+    "excerpt": "proponente Innogy Italia S.p.A. ha presentato ricorso presso il Tribunale Amministrativo Regionale della Puglia, impugnando la Deliberazione del Consiglio Comunale di San Severo n. 26 del 5/4/2019, avente ad"
    }
   },
   {
@@ -309,8 +340,8 @@
   },
   "duration": {
    "text": "3 mesi",
-   "status": "da documenti",
-   "hint": null,
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6-7 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/399571",
     "page": 3,
@@ -339,9 +370,9 @@
  },
  "documentazione": {
   "documenti": 140,
-  "pagine": 1882,
-  "completa": false,
-  "da_leggere": 20
+  "pagine": 2089,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -371,6 +402,10 @@
   }
  ],
  "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
   {
    "label": "Recapiti",
    "reason": "272 recapiti non attribuibili a un soggetto preciso: non mostrati"
