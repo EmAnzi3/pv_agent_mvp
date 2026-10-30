@@ -5,7 +5,7 @@
  "title": "Progetto di rifacimento e potenziamento di un impianto eolico esistente, con la contestuale installazione di n. 24 aerogeneratori della potenza nominale unitaria di 6,1 MW ciascuno e delle relative opere di connessione alla RTN, per una potenza complessiva pari a 146,40 MW, ricadente nei Comuni di San Marco dei Cavoti, Molinara, San Giorgio la Molara, Baselice e Foiano di Valfortore, in provincia di Benevento.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8995",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "17",
    "status": "da verificare",
-   "sub": "8,61 MW ciascuno · altezza mozzo 101 m · diametro rotore 158 m · Valore più ricorrente negli elaborati; altri valori: 97 (13), 24 (11), 5 (5)",
+   "sub": "8,61 MW ciascuno · altezza mozzo 101 m · diametro rotore 158 m · Valore più ricorrente negli elaborati; altri valori: 24 (53), 97 (29), 7 (11)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1389640",
     "page": 10,
@@ -36,8 +36,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "3 mesi",
-   "status": "da documenti",
-   "sub": "Inizio lavori 01/04/2026 (campo presunto di piano di sicurezza o notifica)",
+   "status": "da verificare",
+   "sub": "Inizio lavori 01/04/2026 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 18 mesi (1), 12 mesi (1), 8 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1389802",
     "page": 29,
@@ -78,7 +78,8 @@
    "name": "Ivpc S.r.l.",
    "kind": "società",
    "roles": [
-    "Proponente"
+    "Proponente",
+    "Progettista"
    ],
    "vat": null,
    "vat_group": false,
@@ -89,7 +90,7 @@
     {
      "type": "PEC",
      "value": "ivpc@pec.ivpc.com",
-     "occurrences": 512,
+     "occurrences": 596,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1389632",
       "page": 1,
@@ -212,6 +213,44 @@
  ],
  "altri_soggetti": [
   {
+   "name": "Brusaferro Andrea",
+   "kind": "società",
+   "roles": [],
+   "vat": "01549610432",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Fr. Mergnano San Savino N 8 62032 Camerino Mc",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "brusaferro@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/724391",
+      "page": 1,
+      "document": "CARTA DELLA VEGETAZIONE REALE ATTUALE DI AREA VASTA DM 2010 - IMPIANTO DA DISMETTERE",
+      "excerpt": "CFGLLPLAG2P5311501% PEC andrea brusaferro@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "brusaferro@gmail.com",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/724393",
+      "page": 1,
+      "document": "CARTA DELLA VEGETAZIONE REALE ATTUALE DI AREA VASTA DM 2010 - IMPIANTO DI PROGETTO",
+      "excerpt": "Via.G Berta, 4- 62032 Camerino (MC) CF: BRS NDR 65P12F2050 PIVA 01950880433 cell.327/ 2896687 e.mail andrea. brusaferro@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Studio Masc Societa' Cooperativa",
    "kind": "società",
    "roles": [],
@@ -296,6 +335,41 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasri.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1303304",
+      "page": 72,
+      "document": "ALL9_relazione_impatto_acustico",
+      "excerpt": "Sonora S.r.l. Tel 0823 351196 - Fax 0823 351196 “thal LAT N°185 www.sonorasri.com - sonora@sonorasri.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1303304",
+      "page": 72,
+      "document": "ALL9_relazione_impatto_acustico",
+      "excerpt": "Via dei Bersaglieri, 9 - Caserta CASS Sonora S.r.l. Tel 0823 351196 - Fax 0823 351196 “thal LAT N°185"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": {
@@ -346,10 +420,10 @@
     "valore": "Decreto Dirigenziale n. 57 del 17/09/2024",
     "dettaglio": null,
     "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1389798",
-     "page": 3,
-     "document": "VERIFICA DI OTTEMPERANZA - Condizione Ambientale 5",
-     "excerpt": "dell’Impianto Eolico in oggetto ha ottenuto l’Autorizzazione Unica dalla Regione Campania, con Decreto Dirigenziale n° 57 del 17/09/2024."
+     "url": "https://va.mite.gov.it/File/Documento/1303305",
+     "page": 2,
+     "document": "ALL10_Relazione_impatto_elettromagnetico",
+     "excerpt": "ambientale positivo mediante il Decreto n. 161 del 28/05/2024 della Direzione Generale Valutazioni Ambientali del MASE e autorizzato dal Decreto Dirigenziale n. 57 del 17/09/2024 della Regione Campania, per una potenza c"
     }
    },
    {
@@ -358,10 +432,10 @@
     "valore": "non prima di settembre 2024",
     "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
     "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1389798",
-     "page": 3,
-     "document": "VERIFICA DI OTTEMPERANZA - Condizione Ambientale 5",
-     "excerpt": "dell’Impianto Eolico in oggetto ha ottenuto l’Autorizzazione Unica dalla Regione Campania, con Decreto Dirigenziale n° 57 del 17/09/2024."
+     "url": "https://va.mite.gov.it/File/Documento/1303305",
+     "page": 2,
+     "document": "ALL10_Relazione_impatto_elettromagnetico",
+     "excerpt": "ambientale positivo mediante il Decreto n. 161 del 28/05/2024 della Direzione Generale Valutazioni Ambientali del MASE e autorizzato dal Decreto Dirigenziale n. 57 del 17/09/2024 della Regione Campania, per una potenza c"
     }
    },
    {
@@ -382,10 +456,10 @@
    "atto": "Decreto Dirigenziale n. 57",
    "data": "17/09/2024",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1389798",
-    "page": 3,
-    "document": "VERIFICA DI OTTEMPERANZA - Condizione Ambientale 5",
-    "excerpt": "dell’Impianto Eolico in oggetto ha ottenuto l’Autorizzazione Unica dalla Regione Campania, con Decreto Dirigenziale n° 57 del 17/09/2024."
+    "url": "https://va.mite.gov.it/File/Documento/1303305",
+    "page": 2,
+    "document": "ALL10_Relazione_impatto_elettromagnetico",
+    "excerpt": "ambientale positivo mediante il Decreto n. 161 del 28/05/2024 della Direzione Generale Valutazioni Ambientali del MASE e autorizzato dal Decreto Dirigenziale n. 57 del 17/09/2024 della Regione Campania, per una potenza c"
    }
   },
   "note": [],
@@ -947,9 +1021,9 @@
  },
  "documentazione": {
   "documenti": 963,
-  "pagine": 4028,
+  "pagine": 4970,
   "completa": false,
-  "da_leggere": 723
+  "da_leggere": 608
  },
  "confronto": [
   {
@@ -988,8 +1062,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "1014 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1222 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
