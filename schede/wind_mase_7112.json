@@ -5,14 +5,14 @@
  "title": "Impianto di produzione di energia elettrica da fonte eolica denominato \"Serra Giannina\" costituito da 10 aerogeneratori, ciascuno di potenza pari a 4,5 MW, per una potenza complessiva di 45 MW, localizzato nei Comuni di Genzano di Lucania (PZ) e Banzi (PZ) e relative opere di connessione elettrica e infrastrutture necessarie.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7112",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "4,5 MW",
-   "sub": "Valore ricorrente negli elaborati (30 volte); il titolo riporta 45 MW (probabile refuso).",
+   "sub": "Valore ricorrente negli elaborati (39 volte); il titolo riporta 45 MW (probabile refuso).",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1406635",
     "page": 3,
@@ -25,7 +25,7 @@
    "label": "Aerogeneratori",
    "value": "7",
    "status": "da verificare",
-   "sub": "0,64 MW ciascuno · altezza mozzo 112 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 10 (65), 6 (37), 1 (12)",
+   "sub": "0,64 MW ciascuno · altezza mozzo 112 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 10 (106), 6 (48), 9 (18)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1406635",
     "page": 3,
@@ -34,11 +34,23 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/356695",
+    "page": 5,
+    "document": "QUADRO DI RIFERIMENTO PROGRAMMATICO",
+    "excerpt": "portafoglio tecnologico, comprende impianti eolici onshore ed offshore, solari, fotovoltaici e"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "24 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/356592",
     "page": 8,
@@ -57,7 +69,7 @@
   "coordinate": {
    "lat": 40.86958,
    "lon": 16.11617,
-   "tipo": "coordinate del sito dichiarate negli elaborati (751 riferimenti concordi)",
+   "tipo": "coordinate del sito dichiarate negli elaborati (762 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/356578",
     "page": 81,
@@ -97,7 +109,7 @@
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 132,
+     "occurrences": 137,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1432823",
       "page": 1,
@@ -194,6 +206,44 @@
  ],
  "altri_soggetti": [
   {
+   "name": "Societa' Agricola LA Rosa DEI Venti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01304440769",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Corso Vittorio Emanuele 10 85013 Genzano Di Lucania Pz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rosaventi@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/365355",
+      "page": 4,
+      "document": "Osservazioni della Societa'  Agricola Rosa Dei Venti Srl in data 19/07/2019",
+      "excerpt": "EMANUELE 10 CAP 85013 Indirizzo PEC rosaventi@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0971771027",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/365355",
+      "page": 4,
+      "document": "Osservazioni della Societa'  Agricola Rosa Dei Venti Srl in data 19/07/2019",
+      "excerpt": "Indirizzo PEC rosaventi@pec.it Telefono 0971 771027"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "E.ON Climate & Renewables Italia S.r.l.",
    "kind": "società",
    "roles": [],
@@ -206,7 +256,7 @@
     {
      "type": "PEC",
      "value": "e.onclimateerenewablesitaliasrl@legalmail.it",
-     "occurrences": 50,
+     "occurrences": 67,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/356695",
       "page": 1,
@@ -376,6 +426,30 @@
       "page": 25,
       "document": "Relazione Generale",
       "excerpt": "00138, Roma (RM) protocollogenerale@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "NEW Developments S.r.l.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "chi.os.studio@libero.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/474820",
+      "page": 70,
+      "document": "Allegato alle Controdeduzioni RWE Renewables Italia S.r.l.",
+      "excerpt": "i CE -P.IVA 01967710436 NEW DEVELOPMENTS S.r.l.s. chi.os.studio@libero.it"
      }
     }
    ],
@@ -628,8 +702,8 @@
   },
   "duration": {
    "text": "24 mesi",
-   "status": "da documenti",
-   "hint": null,
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/356592",
     "page": 8,
@@ -658,9 +732,9 @@
  },
  "documentazione": {
   "documenti": 279,
-  "pagine": 5945,
-  "completa": false,
-  "da_leggere": 39
+  "pagine": 7046,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -699,8 +773,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "1646 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1719 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
