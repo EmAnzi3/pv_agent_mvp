@@ -1,0 +1,417 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7142",
+ "title": "Impianto per la produzione di energia da fonte eolica denominato \"Parco Eolico Borgo Mezzanone\", costituito da 24 aerogeneratori, ciascuno di potenza pari a 5,425 MW per una potenza complessiva pari a 130,20 MW, localizzato nei Comuni di Manfredonia (FG) e Foggia.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7142",
+ "source": "mase",
+ "updated": "2026-10-31",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "130,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7142",
+    "excerpt": "130,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "24",
+   "status": "da documenti",
+   "sub": "5,42 MW ciascuno · altezza mozzo 150 m · diametro rotore 158 m · Valore prevalente negli elaborati; altri valori: 1 (5), 27 (3), 2 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/360911",
+    "page": 1,
+    "document": "Avviso al Pubblico del 17/07/2019",
+    "excerpt": "Trasformazione per permettere la connessione al nodo della RTN rappresentato dalla SE Manfredonia. E’ prevista la realizzazione di n. 24 aerogeneratori da 5,425 MW con una potenza complessiva pari a 130,2 MW, per una pro"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "6-7 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/360245",
+    "page": 22,
+    "document": "Piano preliminare utilizzo materiali da scavo",
+    "excerpt": "Terreno vegetale da scotico piazzole – 16236 mc (per 24 aerogeneratori) Saranno momentaneamente accantonati (6-7 mesi) nei pressi dell’area di scavo. Finita la costruzione dell’impianto:"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Manfredonia",
+   "Foggia"
+  ],
+  "coordinate": {
+   "lat": 41.41106,
+   "lon": 15.75079,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (222 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/360278",
+    "page": 89,
+    "document": "Relazione generale",
+    "excerpt": "Stazione 1 41,392283"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.41106,15.75079",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Parco Eolico Borgo Mezzanone S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "15225691003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Luca Gaurico 9-11 00143 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "parcoeolicoborgomezzanone@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/360911",
+      "page": 1,
+      "document": "Avviso al Pubblico del 17/07/2019",
+      "excerpt": "+ 39 06 96035324 PEC: parcoeolicoborgomezzanone@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7142"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "WPD Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "07354181005",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Luca Gaurico 9-11 00143 Roma Rm",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "m.sinesi@wpd-italia.it",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/360299",
+      "page": 6,
+      "document": "Analisi dell'evoluzione dell'ombra indotta dagli aereogeneratori. Shadow flickering",
+      "excerpt": "+49 7142 77810 Michela / m.sinesi@wpd-italia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Floema S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "08137300722",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Giorgio La Pira 14 73048 Nardo' Le",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@floemaconsulting.com",
+     "occurrences": 47,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/360288",
+      "page": 3,
+      "document": "Relazione pedo-agronomica",
+      "excerpt": "Sede Legale | Via Stradella del caffè 24/6, 70124 Bari / P. 1. 08137300722 www.floemaconsulting.com / info@floemaconsulting.com / +39 329 155 5199"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Organismo di controllo Csqa Certificazioni S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "csqa@csqa.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/360289",
+      "page": 23,
+      "document": "Rilievo delle produzioni agricole di particolar pregio rispetto al contesto paesaggistico",
+      "excerpt": "l’ Organismo di controllo CSQA Certificazioni Srl – Via San Gaetano, 74 - 36016 Thiene (VI) – tel. +39-044-531301,1 fax +39-0445-313070 e-mail csqa@csqa.it."
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "6-7 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento del cantiere",
+    "start": 0.09,
+    "end": 0.82,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civ — strade",
+    "start": 1.05,
+    "end": 3.95,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civil — fondazioni tori",
+    "start": 0.96,
+    "end": 8.95,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Opere civil ed eletriche = cavidonti",
+    "start": 1.99,
+    "end": 9.98,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Trasporto component tom ed",
+    "start": 5.0,
+    "end": 7.96,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Montaggio tom ed aerogenertori",
+    "start": 6.99,
+    "end": 9.95,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Collaudi",
+    "start": 9.01,
+    "end": 11.94,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "del cantiere e ambiental",
+    "start": 10.97,
+    "end": 13.95,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "period",
+  "months": 13.95,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/360242",
+   "page": 34,
+   "document": "Relazione Descrittiva",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "7",
+     "start": 0,
+     "end": 1
+    },
+    {
+     "label": "8",
+     "start": 1,
+     "end": 2
+    },
+    {
+     "label": "9",
+     "start": 2,
+     "end": 3
+    },
+    {
+     "label": "10",
+     "start": 3,
+     "end": 4
+    },
+    {
+     "label": "11",
+     "start": 4,
+     "end": 5
+    },
+    {
+     "label": "12",
+     "start": 5,
+     "end": 6
+    },
+    {
+     "label": "13",
+     "start": 6,
+     "end": 7
+    },
+    {
+     "label": "14",
+     "start": 7,
+     "end": 8
+    },
+    {
+     "label": "15",
+     "start": 8,
+     "end": 9
+    },
+    {
+     "label": "16",
+     "start": 9,
+     "end": 10
+    },
+    {
+     "label": "17",
+     "start": 10,
+     "end": 11
+    },
+    {
+     "label": "18",
+     "start": 11,
+     "end": 12
+    },
+    {
+     "label": "19",
+     "start": 12,
+     "end": 13
+    },
+    {
+     "label": "20",
+     "start": 13,
+     "end": 14
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "6-7 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/360245",
+    "page": 22,
+    "document": "Piano preliminare utilizzo materiali da scavo",
+    "excerpt": "Terreno vegetale da scotico piazzole – 16236 mc (per 24 aerogeneratori) Saranno momentaneamente accantonati (6-7 mesi) nei pressi dell’area di scavo. Finita la costruzione dell’impianto:"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/360252"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/360252"
+   },
+   {
+    "document": "Piano dismissione e ripristino impianto e relativo cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/360255"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma in immagine (lettura automatica, da verificare)"
+ },
+ "documentazione": {
+  "documenti": 130,
+  "pagine": 1902,
+  "completa": false,
+  "da_leggere": 10
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Parco Eolico Borgo Mezzanone S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 130.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MANFREDONIA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "68 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
