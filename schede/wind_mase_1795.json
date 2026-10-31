@@ -5,14 +5,14 @@
  "title": "Progetto di potenziamento del parco eolico Partinico-Monreale (PA), per una potenza complessiva di 42,0 MW - Prescrizioni: 1 A, 1 B, 1 MIC, 2 C, 2 MIC, 2A, 2B, 3 B, 3 D, 3 E",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1795",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "4,2 MW",
-   "sub": "Valore ricorrente negli elaborati (41 volte); il titolo riporta 42 MW (probabile refuso).",
+   "sub": "Valore ricorrente negli elaborati (83 volte); il titolo riporta 42 MW (probabile refuso).",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1077077",
     "page": 3,
@@ -25,7 +25,7 @@
    "label": "Aerogeneratori",
    "value": "10",
    "status": "da verificare",
-   "sub": "0,42 MW ciascuno · altezza mozzo 115 m · diametro rotore 136 m · Valore più ricorrente negli elaborati; altri valori: 19 (26), 5 (6), 6 (3)",
+   "sub": "0,42 MW ciascuno · altezza mozzo 115 m · diametro rotore 140 m · Valore più ricorrente negli elaborati; altri valori: 19 (76), 5 (22), 6 (8)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1335364",
     "page": 21,
@@ -37,8 +37,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "20 giorni",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 48 settimane (circa 11 mesi) (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 44 settimane (circa 10 mesi) (6)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1335369",
     "page": 9,
@@ -55,9 +55,9 @@
    "Partinico"
   ],
   "coordinate": {
-   "lat": 37.95702,
-   "lon": 13.07385,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (3 riferimenti concordi)",
+   "lat": 37.96038,
+   "lon": 13.07352,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (29 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1077077",
     "page": 17,
@@ -65,13 +65,42 @@
     "excerpt": "❖ PB (osservazione punto fisso). Le coordinate del PA sono 37°57’41” N e 13°05’01” E. Si trova ad un’altitudine di circa 566 m s.l.m."
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.95702,13.07385",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.96038,13.07352",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
  "soggetti": [
+  {
+   "name": "ERG Wind Sicilia 4 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ergwindsicilia4@legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1077080",
+      "page": 1,
+      "document": "Allegato 4",
+      "excerpt": "Alla ERG ergwindsicilia4@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1795"
+   }
+  },
   {
    "name": "ERG Wind Energy S.r.l.",
    "kind": "società",
@@ -104,32 +133,22 @@
    }
   },
   {
-   "name": "ERG Wind Sicilia 4 S.r.l.",
-   "kind": "società",
+   "name": "Dott. Carlo Cibella",
+   "kind": "persona",
    "roles": [
-    "Proponente"
+    "Geologo"
    ],
    "vat": null,
    "vat_group": false,
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "ergwindsicilia4@legalmail.it",
-     "occurrences": 4,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1077080",
-      "page": 1,
-      "document": "Allegato 4",
-      "excerpt": "Alla ERG ergwindsicilia4@legalmail.it"
-     }
-    }
-   ],
+   "contacts": [],
    "source": {
-    "document": "scheda ufficiale del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1795"
+    "url": "https://va.mite.gov.it/File/Documento/341203",
+    "page": 1,
+    "document": "Integrazioni del 05/03/2019 - Nota del Geologo: risposte punto 5 e punto 6",
+    "excerpt": "Il GEOLOGO:"
    }
   }
  ],
@@ -293,6 +312,33 @@
    }
   },
   {
+   "name": "Studio Peroni S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03527890101",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Guerrazzi 24/4B 16146 Genova Ge",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "segreteria@studioperoni.org",
+     "occurrences": 115,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/341205",
+      "page": 3,
+      "document": "Integrazioni del 05/03/2019 - Studio del rumore e delle vibrazioni - Risposta ai punti 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19",
+      "excerpt": "P.I. 03527890101 E - Mail: segreteria@studioperoni.org"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Rototec S.p.A.",
    "kind": "società",
    "roles": [],
@@ -345,9 +391,9 @@
      "value": "0221251",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/709855",
+      "url": "https://va.mite.gov.it/File/Documento/525995",
       "page": 1,
-      "document": "A1300001384_B9015354_Rap",
+      "document": "Progetto di monitoraggio dell'avifauna e relativi risultati",
       "excerpt": "I-20134 Milano - Italy Tel: +39 02 21251"
      }
     }
@@ -438,7 +484,7 @@
     {
      "type": "E-mail",
      "value": "info@metrix.tv",
-     "occurrences": 16,
+     "occurrences": 32,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1077078",
       "page": 107,
@@ -449,7 +495,7 @@
     {
      "type": "Telefono",
      "value": "0922992053",
-     "occurrences": 16,
+     "occurrences": 32,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1077078",
       "page": 107,
@@ -531,6 +577,30 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "RG IVind Sordegno S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "01024011",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/341202",
+      "page": 3,
+      "document": "Integrazioni del 05/03/2019 - Nota di risposta SI4/2018/U/00000030, e relativi allegati - Risposta punto 1",
+      "excerpt": "16149 Genova Italia ph +39 010 24011"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -549,9 +619,33 @@
      "document": "Allegato alla Comunicazione VA esito valutazione - Parere SCVIA del 06/09/2024",
      "excerpt": "– VIA e VAS, dei Coordinatori delle Sottocommissioni VIA e VAS, così come modificato dal decreto n. 269 del 23/07/2024; 2. Considerato che:"
     }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di luglio 2024",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1152432",
+     "page": 2,
+     "document": "Allegato alla Comunicazione VA esito valutazione - Parere SCVIA del 06/09/2024",
+     "excerpt": "– VIA e VAS, dei Coordinatori delle Sottocommissioni VIA e VAS, così come modificato dal decreto n. 269 del 23/07/2024; 2. Considerato che:"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2025",
+    "dettaglio": "inizio stimato + durata del cantiere: 10 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/341204",
+     "page": 40,
+     "document": "Integrazioni del 05/03/2019 - Valutazione di Incidenza Ambientale",
+     "excerpt": ""
+    }
    }
   ],
-  "durata_cantiere": null,
+  "durata_cantiere": "10 mesi (cronoprogramma)",
   "autorizzazione": {
    "atto": "decreto n. 269",
    "data": "23/07/2024",
@@ -562,9 +656,7 @@
     "excerpt": "– VIA e VAS, dei Coordinatori delle Sottocommissioni VIA e VAS, così come modificato dal decreto n. 269 del 23/07/2024; 2. Considerato che:"
    }
   },
-  "note": [
-   "Durata del cantiere non leggibile negli elaborati: fine lavori non stimabile."
-  ],
+  "note": [],
   "legenda": {
    "documentata": "data scritta nei documenti",
    "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
@@ -572,20 +664,330 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Incantieramento",
+    "start": 0.0,
+    "end": 0.46,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "R‐PAR02",
+    "start": 0.92,
+    "end": 1.15,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "R‐PAR04",
+    "start": 0.92,
+    "end": 1.15,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "R‐PAR02",
+    "start": 1.61,
+    "end": 1.85,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "R‐PAR04",
+    "start": 1.38,
+    "end": 1.85,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "R‐PAR02",
+    "start": 2.76,
+    "end": 3.23,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Smontaggio aerogeneratori esistenti ( 19) da 1 a 19",
+    "start": 3.23,
+    "end": 5.54,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti all'esterno del parco",
+    "start": 0.69,
+    "end": 3.93,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti all'interno del parco",
+    "start": 5.07,
+    "end": 6.93,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Completamento della viabilità e delle piazzole",
+    "start": 6.92,
+    "end": 7.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio degli aerogeneratori",
+    "start": 7.84,
+    "end": 10.15,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Adeguamento stazione elettrica",
+    "start": 8.07,
+    "end": 9.46,
+    "level": 0,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
+  "months": 10.15,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/1335287",
-   "page": 8,
-   "document": "PAR-EXE-REL-0300_00_relazione ottemperanza costruzione_REV0710 25_signed",
+   "url": "https://va.mite.gov.it/File/Documento/341204",
+   "page": 40,
+   "document": "Integrazioni del 05/03/2019 - Valutazione di Incidenza Ambientale",
    "excerpt": ""
   },
-  "asse": null,
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "19",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "20",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "21",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "22",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "23",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "24",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "25",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "26",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "27",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "28",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "29",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "30",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "31",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "32",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "33",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "34",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "35",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "36",
+     "start": 8.077,
+     "end": 8.308
+    },
+    {
+     "label": "37",
+     "start": 8.308,
+     "end": 8.538
+    },
+    {
+     "label": "38",
+     "start": 8.538,
+     "end": 8.769
+    },
+    {
+     "label": "39",
+     "start": 8.769,
+     "end": 9.0
+    },
+    {
+     "label": "40",
+     "start": 9.0,
+     "end": 9.231
+    },
+    {
+     "label": "41",
+     "start": 9.231,
+     "end": 9.462
+    },
+    {
+     "label": "42",
+     "start": 9.462,
+     "end": 9.692
+    },
+    {
+     "label": "43",
+     "start": 9.692,
+     "end": 9.923
+    },
+    {
+     "label": "44",
+     "start": 9.923,
+     "end": 10.154
+    }
+   ],
+   "unita": "settimane"
+  },
   "duration": {
    "text": "20 giorni",
-   "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 48 settimane (circa 11 mesi) (1)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 44 settimane (circa 10 mesi) (6)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1335369",
     "page": 9,
@@ -595,37 +997,16 @@
   },
   "milestones": [],
   "document": null,
-  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "note": null,
   "altri": [],
-  "durate_fasi": [
-   {
-    "name": "PAR EXE REL 0300 00",
-    "duration": "2 giorni",
-    "months": 0.07
-   },
-   {
-    "name": "CONDIZIONE AMBIENTALE n.",
-    "duration": "2 giorni",
-    "months": 0.07
-   },
-   {
-    "name": "La condizione ambientale n.",
-    "duration": "2 giorni",
-    "months": 0.07
-   },
-   {
-    "name": "NOTA DI RISPOSTA ALLA CONDIZIONE AMBIENTALE",
-    "duration": "2 giorni",
-    "months": 0.07
-   }
-  ],
-  "metodo": null
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 372,
-  "pagine": 3516,
+  "pagine": 5902,
   "completa": false,
-  "da_leggere": 132
+  "da_leggere": 12
  },
  "confronto": [
   {
@@ -664,8 +1045,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "549 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "710 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
