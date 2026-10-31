@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico composto da n. 7 aerogeneratori, da 6 MW ciascuno, denominato \"PHOBOS\", della potenza nominale di 42 MW, e delle relative opere civili ed elettriche connesse ed infrastrutture indispensabili, da realizzarsi nei Comuni di Castel Giorgio (TR) ed Orvieto (TR).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7975",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "7",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · Valore prevalente negli elaborati; altri valori: 5 (13), 4 (5), 6 (5)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 5 (23), 4 (12), 1 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1439472",
     "page": 1,
@@ -33,11 +33,23 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1420014",
+    "page": 44,
+    "document": "Monitoraggio ambientale - Parco eolico Phobos",
+    "excerpt": "l'attenuazione della mortalità presso i siti onshore e offshore di turbine"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "16 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1), 6 mesi (1), 9 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2), 6 mesi (1), 9 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/924623",
     "page": 14,
@@ -53,17 +65,17 @@
    "Castel Giorgio  Ed Orvieto"
   ],
   "coordinate": {
-   "lat": 42.7317,
-   "lon": 11.97297,
-   "tipo": "centro della tavola georeferenziata di progetto (15 riferimenti concordi)",
+   "lat": 42.67969,
+   "lon": 12.00133,
+   "tipo": "centro della tavola georeferenziata di progetto (355 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1418936",
+    "url": "https://va.mite.gov.it/File/Documento/693048",
     "page": 1,
-    "document": "Planimetria di confronto su catastale",
-    "excerpt": "Planimetria di confronto su catastale"
+    "document": "Integrazioni del 13/09/2022 - PEOS_OC_32_0_sistemazione_finale_Rev.1",
+    "excerpt": "Integrazioni del 13/09/2022 - PEOS_OC_32_0_sistemazione_finale_Rev.1"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.73170,11.97297",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.67969,12.00133",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -85,7 +97,7 @@
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 212,
+     "occurrences": 280,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1436830",
       "page": 11,
@@ -117,9 +129,113 @@
     "document": "Studio di Impatto Ambientale",
     "excerpt": "Il Geologo Dr.ssa Marino Maria Antonietta Dr. Bellomo Gualtiero"
    }
+  },
+  {
+   "name": "NEW Developments S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "newdevelopmentssrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/524729",
+      "page": 2,
+      "document": "Preventivo di connessione",
+      "excerpt": "87100 Cosenza (CS) newdevelopmentssrl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@newdevelopments.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/693074",
+      "page": 429,
+      "document": "Integrazioni del 13/09/2022 - PEOS_S01.01-SIA - aggiornamento ai sensi della richiesta MITE nota n.0005555 del 04.08.2022",
+      "excerpt": "Email Avviso segreteria@newdevelopments.eu"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/614000",
+    "page": 1,
+    "document": "Integrazioni del 07/03/2022 - PEOS_OE_03_0_inquadramento_SE_CTR",
+    "excerpt": "Progettazione: NEW DEVELOPMENTS S.r.l."
+   }
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Amici Della Terra APS",
+   "kind": "società",
+   "roles": [],
+   "vat": "02141761003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ippolito Nievo 62 Sc C I 00153 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amicidellaterra@pec.it",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/649823",
+      "page": 1,
+      "document": "Osservazioni ASSOCIAZIONE AMICI DELLA TERRA ONLUS",
+      "excerpt": "www.amicidellaterra.it amicidellaterra@pec.it – segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@amicidellaterra.it",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/649823",
+      "page": 1,
+      "document": "Osservazioni ASSOCIAZIONE AMICI DELLA TERRA ONLUS",
+      "excerpt": "www.amicidellaterra.it amicidellaterra@pec.it – segreteria@amicidellaterra.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/693046",
+      "page": 47,
+      "document": "Integrazioni del 13/09/2022 - PEOS_OC_11_0_impatto_acustico_Rev.1",
+      "excerpt": "Sonora S.r.l. Tel 0823 351196 - Fax 0823 351196 Lia LAT N°185"
+     }
+    }
+   ],
+   "source": null
+  },
   {
    "name": "Tiemes S.r.l.",
    "kind": "società",
@@ -167,30 +283,6 @@
    "source": null
   },
   {
-   "name": "Sonora S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "Telefono",
-     "value": "0823351196",
-     "occurrences": 2,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/693046",
-      "page": 47,
-      "document": "Integrazioni del 13/09/2022 - PEOS_OC_11_0_impatto_acustico_Rev.1",
-      "excerpt": "Sonora S.r.l. Tel 0823 351196 - Fax 0823 351196 Lia LAT N°185"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
    "name": "Orta Energy 25 S.r.l.",
    "kind": "società",
    "roles": [],
@@ -220,7 +312,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "19 mesi (cronoprogramma)",
+  "durata_cantiere": "16 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -234,172 +326,183 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Forniture materiali stazione",
+    "name": "PROGETTO ESECUTIVO",
     "start": 0.0,
-    "end": 12.0,
-    "level": 0,
-    "summary": false,
-    "duration": "360 g"
+    "end": 1.89,
+    "level": 2,
+    "summary": false
    },
    {
-    "name": "Apertura cantiere e realizzazione viabilità di accesso",
-    "start": 4.98,
-    "end": 7.01,
+    "name": "INDAGINI GEOGNOSTICHE ESECUTIVE",
+    "start": 0.0,
+    "end": 0.89,
     "level": 0,
-    "summary": false,
-    "duration": "40 g"
+    "summary": true
    },
    {
-    "name": "Sistemazione area di stazione",
-    "start": 5.98,
-    "end": 7.01,
-    "level": 0,
-    "summary": false,
-    "duration": "20 g"
+    "name": "AUTORIZZAZIONI SISMICHE",
+    "start": 0.89,
+    "end": 2.88,
+    "level": 1,
+    "summary": true
    },
    {
-    "name": "Lavori civili stazione 380/132 kV",
-    "start": 6.98,
-    "end": 16.0,
-    "level": 0,
-    "summary": false,
-    "duration": "250 g"
+    "name": "CANTIERIZZAZIONE",
+    "start": 2.88,
+    "end": 4.87,
+    "level": 3,
+    "summary": false
    },
    {
-    "name": "Edificio quadro comandi",
-    "start": 9.97,
-    "end": 14.0,
+    "name": "OPERE CIVILI VIABILITA' E PIAZZOLE",
+    "start": 2.88,
+    "end": 7.86,
     "level": 0,
-    "summary": false,
-    "duration": "120 g"
+    "summary": true
    },
    {
-    "name": "Montaggi elettromeccanici stazione 380/132 kV",
-    "start": 11.97,
-    "end": 17.0,
-    "level": 0,
-    "summary": false,
-    "duration": "132 g"
+    "name": "FONDAZIONI",
+    "start": 3.87,
+    "end": 10.85,
+    "level": 3,
+    "summary": false
    },
    {
-    "name": "Montaggio sistema di controllo stazione 380/132 kV",
-    "start": 15.97,
-    "end": 18.99,
+    "name": "INSTALLAZIONE AEREOGENERATORI",
+    "start": 5.86,
+    "end": 12.84,
     "level": 0,
-    "summary": false,
-    "duration": "70 g"
+    "summary": true
+   },
+   {
+    "name": "SOTTOSTAZIONE MT AT",
+    "start": 8.85,
+    "end": 13.83,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "CAVIDOTTO MT",
+    "start": 9.85,
+    "end": 13.83,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "COLLAUDI",
+    "start": 11.84,
+    "end": 14.83,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "ENTRATA IN ESERCIZIO",
+    "start": 14.82,
+    "end": 15.82,
+    "level": 2,
+    "summary": false
    }
   ],
   "unit": "month",
-  "months": 18.99,
+  "months": 15.82,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/613979",
-   "page": 12,
-   "document": "Integrazioni del 07/03/2022 - PEOS_PTO_08_SE_Relazione_Tecnica_Illustrativa",
+   "url": "https://va.mite.gov.it/File/Documento/524656",
+   "page": 2,
+   "document": "Cronoprogramma",
    "excerpt": ""
   },
   "asse": {
-   "titolo": null,
+   "titolo": "mese",
    "etichette": [
     {
-     "label": "M1",
+     "label": "1",
      "start": 0.0,
      "end": 1.0
     },
     {
-     "label": "M2",
+     "label": "2",
      "start": 1.0,
      "end": 2.0
     },
     {
-     "label": "M3",
+     "label": "3",
      "start": 2.0,
      "end": 3.0
     },
     {
-     "label": "M4",
+     "label": "4",
      "start": 3.0,
      "end": 4.0
     },
     {
-     "label": "M5",
+     "label": "5",
      "start": 4.0,
      "end": 5.0
     },
     {
-     "label": "M6",
+     "label": "6",
      "start": 5.0,
      "end": 6.0
     },
     {
-     "label": "M7",
+     "label": "7",
      "start": 6.0,
      "end": 7.0
     },
     {
-     "label": "M8",
+     "label": "8",
      "start": 7.0,
      "end": 8.0
     },
     {
-     "label": "M9",
+     "label": "9",
      "start": 8.0,
      "end": 9.0
     },
     {
-     "label": "M10",
+     "label": "10",
      "start": 9.0,
      "end": 10.0
     },
     {
-     "label": "M11",
+     "label": "11",
      "start": 10.0,
      "end": 11.0
     },
     {
-     "label": "M12",
+     "label": "12",
      "start": 11.0,
      "end": 12.0
     },
     {
-     "label": "M13",
+     "label": "13",
      "start": 12.0,
      "end": 13.0
     },
     {
-     "label": "M14",
+     "label": "14",
      "start": 13.0,
      "end": 14.0
     },
     {
-     "label": "M15",
+     "label": "15",
      "start": 14.0,
      "end": 15.0
     },
     {
-     "label": "M16",
+     "label": "16",
      "start": 15.0,
      "end": 16.0
     },
     {
-     "label": "M17",
+     "label": "17",
      "start": 16.0,
      "end": 17.0
     },
     {
-     "label": "M18",
+     "label": "18",
      "start": 17.0,
      "end": 18.0
-    },
-    {
-     "label": "M19",
-     "start": 18.0,
-     "end": 19.0
-    },
-    {
-     "label": "M20",
-     "start": 19.0,
-     "end": 20.0
     }
    ],
    "unita": "mesi"
@@ -407,7 +510,7 @@
   "duration": {
    "text": "16 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1), 6 mesi (1), 9 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2), 6 mesi (1), 9 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/924623",
     "page": 14,
@@ -421,20 +524,15 @@
    "url": "https://va.mite.gov.it/File/Documento/524656"
   },
   "note": null,
-  "altri": [
-   {
-    "document": "Cronoprogramma",
-    "url": "https://va.mite.gov.it/File/Documento/524656"
-   }
-  ],
+  "altri": [],
   "durate_fasi": [],
   "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 394,
-  "pagine": 3331,
+  "pagine": 5227,
   "completa": false,
-  "da_leggere": 154
+  "da_leggere": 34
  },
  "confronto": [
   {
@@ -470,7 +568,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "70 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "86 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
