@@ -5,7 +5,7 @@
  "title": "Progetto per la costruzione ed esercizio di un impianto per la produzione di energia da fonte rinnovabile di tipo eolico, denominato \"ALAS\", costituito da 10 aerogeneratori da 6,6 MW e delle relative opere civili ed elettriche connesse, della potenza complessiva pari a 66 MW, localizzato nei Comuni di Ittiri (SS) e Villanova Monteleone (SS) - Condizione n. 1, 2, 3, 4 di cui al parere della CTVA n. 227/2022 (deliberazione CdM del 16/09/2022).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7677",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
@@ -25,7 +25,7 @@
    "label": "Aerogeneratori",
    "value": "11",
    "status": "da verificare",
-   "sub": "0,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 10 (51), 9 (8), 2 (8)",
+   "sub": "0,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 10 (51), 2 (11), 9 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1169910",
     "page": 1,
@@ -49,8 +49,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "12 mesi",
-   "status": "da verificare",
-   "sub": "Inizio lavori 14/01/2026 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "status": "da documenti",
+   "sub": "Inizio lavori 14/01/2026 (previsione di progetto) · Valore prevalente negli elaborati; altri valori: 18 mesi (1), 140 giorni (circa 5 mesi) (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/890966",
     "page": 68,
@@ -67,17 +67,17 @@
    "Villanova Monteleone"
   ],
   "coordinate": {
-   "lat": 40.55056,
-   "lon": 8.5213,
-   "tipo": "centro della tavola georeferenziata di progetto (460 riferimenti concordi)",
+   "lat": 40.56913,
+   "lon": 8.58359,
+   "tipo": "coordinate del sito dichiarate negli elaborati (707 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/533216",
-    "page": 20,
-    "document": "Integrazioni del 06/09/2021 - PEALAS-P10_Relazione_Geologica_integrata_con_le_risposte_alla_nota_MiTE_prot_0073259_del_07_07_2021_che_sostituisce_la_re-1",
-    "excerpt": "Integrazioni del 06/09/2021 - PEALAS-P10_Relazione_Geologica_integrata_con_le_risposte_alla_nota_MiTE_prot_0073259_del_0"
+    "url": "https://va.mite.gov.it/File/Documento/1159375",
+    "page": 67,
+    "document": "PEALAS-S09_00_Piano_monitoraggio_ambientale-signed",
+    "excerpt": "B1: 40°34'24.46\"N - 8°36- 45.84\"E B2: 40°34'8.88\"N - 8°35'0.91\"E B3: 40°34'8.49\"N - 8°34'57.09\"E"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.55056,8.52130",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.56913,8.58359",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -187,7 +187,19 @@
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "giuse.frongia@tiscali.it",
+     "occurrences": 355,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/455863",
+      "page": 110,
+      "document": "Studio previsionale di impatto acustico",
+      "excerpt": "+39 070 658297 Giuseppe Frongia / giuse.frongia@tiscali.it"
+     }
+    }
+   ],
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1159371",
     "page": 1,
@@ -248,7 +260,7 @@
     {
      "type": "E-mail",
      "value": "geocimasnc@tiscali.it",
-     "occurrences": 519,
+     "occurrences": 582,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1159392",
       "page": 177,
@@ -319,6 +331,33 @@
       "page": 14,
       "document": "Integrazioni del 06/09/2021 - PEALAS-S02_25-1_Studio_degli_effetti_di_shadow_flickering",
       "excerpt": "+39 070 658297 Giuseppe Frongia / direttore@iatprogetti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "LA Molisana Trasporti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01463480705",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Rio Lecine 30 86014 Guardiaregia Cb",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@molisanatrasporti.it",
+     "occurrences": 34,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/455777",
+      "page": 48,
+      "document": "Analisi degli interventi sulla viabilità principale di accesso al parco eolico",
+      "excerpt": "www.molisanatrasporti.com info@molisanatrasporti.it"
      }
     }
    ],
@@ -448,17 +487,17 @@
    {
     "voce": "Fine lavori",
     "livello": "stimata",
-    "valore": "non prima di luglio 2025",
-    "dettaglio": "inizio stimato + durata del cantiere: 12 mesi",
+    "valore": "non prima di giugno 2025",
+    "dettaglio": "inizio stimato + durata del cantiere: 12 mesi (cronoprogramma)",
     "source": {
-     "url": "https://va.mite.gov.it/File/Documento/890966",
-     "page": 68,
-     "document": "Integrazioni del 24/08/2023 - PEALAS-S04 02b Carta delle Unita del pedo paesaggio 1 20 000",
-     "excerpt": "Per la realizzazione degli interventi previsti dal presente progetto può stimarsi una durata indicativa dei lavori di circa 12 mesi con uno sviluppo delle attività ipotizzato secondo quanto riportato nel cronoprogramma r"
+     "url": "https://va.mite.gov.it/File/Documento/455850",
+     "page": 9,
+     "document": "Cronoprogramma di esecuzione dei lavori",
+     "excerpt": ""
     }
    }
   ],
-  "durata_cantiere": "12 mesi",
+  "durata_cantiere": "12 mesi (cronoprogramma)",
   "autorizzazione": {
    "atto": "decreto n. 269",
    "data": "23/07/2024",
@@ -479,313 +518,297 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Scavi fondazione plinti",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "wtg 02",
-    "start": 2.97,
-    "end": 27.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 05",
-    "start": 2.97,
-    "end": 27.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 06",
-    "start": 5.97,
-    "end": 27.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 07",
-    "start": 5.97,
-    "end": 27.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 04",
-    "start": 9.97,
-    "end": 27.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 03",
-    "start": 9.97,
-    "end": 31.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 08",
-    "start": 13.97,
-    "end": 32.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 09",
-    "start": 13.97,
-    "end": 35.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 10",
-    "start": 13.97,
-    "end": 36.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 11",
-    "start": 13.97,
-    "end": 40.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Magrone e montaggio armatura plinti",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "wtg 02",
-    "start": 13.97,
-    "end": 29.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 05",
-    "start": 13.97,
-    "end": 30.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 06",
-    "start": 13.97,
-    "end": 31.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 07",
-    "start": 13.97,
-    "end": 32.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 04",
-    "start": 13.97,
-    "end": 33.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 03",
-    "start": 13.97,
-    "end": 37.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 08",
-    "start": 13.97,
-    "end": 40.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 09",
-    "start": 13.97,
-    "end": 43.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 10",
-    "start": 13.97,
-    "end": 46.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "wtg 11",
-    "start": 13.97,
-    "end": 49.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Fondazioni e piazzole",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Completamento",
-    "start": 13.97,
-    "end": 53.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Viabilità interna parco",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "movimento terra e scavi",
-    "start": 7.97,
-    "end": 37.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "strade interne pronte per arrivo WTG",
-    "start": 10.97,
-    "end": 41.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Viabilità esterna parco",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "movimento terra e scavi",
-    "start": 13.97,
-    "end": 38.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "strade esterne pronte per arrivo WTG",
-    "start": 13.97,
-    "end": 41.02,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Caviditto MT e fibra ottica",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "arrivo cavo MT in sito",
-    "start": 13.97,
-    "end": 40.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "scavo e posa cavi MT e FO",
-    "start": 13.97,
-    "end": 52.02,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "fine lavori cavidotto (test inclusi)",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Cavidotto AT",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "arrivo cavo AT in sito",
-    "start": 13.97,
-    "end": 49.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "scavo e posa cavi AT",
-    "start": 13.97,
-    "end": 51.02,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "movimento terra, scavi, ecc.",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "fondazioni pronte per apparecchiature",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 2,
-    "summary": true
-   },
-   {
-    "name": "fondazioni pronte per arrivo trafo",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "fondazioni pronte per edificio in CAV",
-    "start": 13.97,
-    "end": 27.03,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "completamento opere civili (recinzione,",
-    "start": 13.97,
-    "end": 27.03,
+    "name": "Realizzazione parco eolico ALAS",
+    "start": 0.32,
+    "end": 11.78,
     "level": 1,
+    "duration": "249 g",
+    "summary": true
+   },
+   {
+    "name": "Allestimento del cantiere",
+    "start": 0.35,
+    "end": 0.65,
+    "level": 2,
+    "duration": "7 g",
+    "summary": false
+   },
+   {
+    "name": "Attività di tracciamento",
+    "start": 0.32,
+    "end": 1.24,
+    "level": 2,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "Approvvigionamento materiali",
+    "start": 0.71,
+    "end": 3.41,
+    "level": 2,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Interventi percorso stradale Porto Torres - Ittiri",
+    "start": 0.32,
+    "end": 1.24,
+    "level": 2,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "Piste di cantiere e approntamento piazzole",
+    "start": 0.78,
+    "end": 3.54,
+    "level": 2,
+    "duration": "60 g",
+    "summary": true
+   },
+   {
+    "name": "Apertura di piste e splateamento Piazzole",
+    "start": 0.78,
+    "end": 3.54,
+    "level": 3,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni",
+    "start": 1.08,
+    "end": 7.87,
+    "level": 2,
+    "duration": "147 g",
+    "summary": true
+   },
+   {
+    "name": "Scavo plinti WTG 1-2-3-4-5",
+    "start": 1.08,
+    "end": 2.68,
+    "level": 3,
+    "duration": "35 g",
+    "summary": false
+   },
+   {
+    "name": "Scavo plinti WTG 6-7- -11",
+    "start": 1.24,
+    "end": 3.14,
+    "level": 3,
+    "duration": "42 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni in c.a. e rinterri",
+    "start": 1.44,
+    "end": 7.87,
+    "level": 3,
+    "duration": "140 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linea interrata MT",
+    "start": 1.47,
+    "end": 5.25,
+    "level": 2,
+    "duration": "83 g",
+    "summary": true
+   },
+   {
+    "name": "Scavi, posa linee MT, rinterri e ripristini",
+    "start": 1.63,
+    "end": 5.25,
+    "level": 3,
+    "duration": "80 g",
+    "summary": false
+   },
+   {
+    "name": "Strade e piazzole",
+    "start": 1.93,
+    "end": 4.69,
+    "level": 2,
+    "duration": "60 g",
+    "summary": true
+   },
+   {
+    "name": "Completamento strade e piazzole",
+    "start": 1.93,
+    "end": 4.69,
+    "level": 3,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Opere e impianti per la connessione alla RTN",
+    "start": 1.53,
+    "end": 11.39,
+    "level": 2,
+    "duration": "214 g",
+    "summary": true
+   },
+   {
+    "name": "Opere civili per realizzazione stazione di trasformazione",
+    "start": 1.54,
+    "end": 10.24,
+    "level": 3,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Opere civili per realizzazione stazione di",
+    "start": 1.53,
+    "end": 10.24,
+    "level": 3,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Installazione componenti elettromeccanici",
+    "start": 10.24,
+    "end": 11.39,
+    "level": 3,
+    "duration": "25 g",
+    "summary": false
+   },
+   {
+    "name": "Montaggi elettromeccanici",
+    "start": 10.4,
+    "end": 11.09,
+    "level": 3,
+    "duration": "15 g",
+    "summary": false
+   },
+   {
+    "name": "Completamento opere per connessione alla RTN",
+    "start": 11.09,
+    "end": 11.39,
+    "level": 3,
+    "duration": "7 g",
+    "summary": false
+   },
+   {
+    "name": "Installazione aerogeneratori",
+    "start": 3.54,
+    "end": 11.78,
+    "level": 2,
+    "duration": "179 g",
+    "summary": true
+   },
+   {
+    "name": "Trasporto aerogeneratori",
+    "start": 3.54,
+    "end": 6.3,
+    "level": 3,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Installazione aerogeneratori",
+    "start": 7.87,
+    "end": 10.4,
+    "level": 3,
+    "duration": "55 g",
+    "summary": false
+   },
+   {
+    "name": "Completamento opere civili e ripristini",
+    "start": 10.4,
+    "end": 11.78,
+    "level": 3,
+    "duration": "30 g",
+    "summary": false
+   },
+   {
+    "name": "Collegamenti elettrici",
+    "start": 5.31,
+    "end": 8.7,
+    "level": 2,
+    "duration": "75 g",
+    "summary": true
+   },
+   {
+    "name": "Completamento collegamenti elettrici SSE",
+    "start": 5.31,
+    "end": 5.61,
+    "level": 3,
+    "duration": "7 g",
+    "summary": false
+   },
+   {
+    "name": "Collegamenti elettrici WTG",
+    "start": 8.1,
+    "end": 8.7,
+    "level": 3,
+    "duration": "14 g",
+    "summary": false
+   },
+   {
+    "name": "Prove e collaudi",
+    "start": 10.4,
+    "end": 11.32,
+    "level": 2,
+    "duration": "20 g",
+    "summary": true
+   },
+   {
+    "name": "Collaudo impianto eolico",
+    "start": 10.4,
+    "end": 10.86,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Collaudo linee MT",
+    "start": 10.86,
+    "end": 11.32,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Avviamento impianto",
+    "start": 11.32,
+    "end": 11.78,
+    "level": 2,
+    "duration": "10 g",
+    "summary": true
+   },
+   {
+    "name": "Avviamento parco eolico",
+    "start": 11.32,
+    "end": 11.78,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Attività Cardine Progetto: PEALAS-RC9_Cronopro",
+    "start": 1.13,
+    "end": 6.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Data: lun Divisione Riepilogo",
+    "start": 0.01,
+    "end": 5.99,
+    "level": 0,
     "summary": false
    }
   ],
   "unit": "month",
-  "months": 53.02,
+  "months": 11.78,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/1340962",
-   "page": 10,
-   "document": "Integrazioni del 09/01/2026 - Comunicazione ai sensi dell'articolo 11 della medesima Deliberazione n.49 del 22/01/2024.",
+   "url": "https://va.mite.gov.it/File/Documento/455850",
+   "page": 9,
+   "document": "Cronoprogramma di esecuzione dei lavori",
    "excerpt": ""
   },
   "asse": {
-   "titolo": null,
+   "titolo": "Mese",
    "etichette": [
     {
-     "label": "settimana 1",
+     "label": "1",
      "start": 0.0,
      "end": 1.0
     },
@@ -843,224 +866,19 @@
      "label": "12",
      "start": 11.0,
      "end": 12.0
-    },
-    {
-     "label": "13",
-     "start": 12.0,
-     "end": 13.0
-    },
-    {
-     "label": "14",
-     "start": 13.0,
-     "end": 14.0
-    },
-    {
-     "label": "15",
-     "start": 14.0,
-     "end": 15.0
-    },
-    {
-     "label": "16",
-     "start": 15.0,
-     "end": 16.0
-    },
-    {
-     "label": "17",
-     "start": 16.0,
-     "end": 17.0
-    },
-    {
-     "label": "18",
-     "start": 17.0,
-     "end": 18.0
-    },
-    {
-     "label": "19",
-     "start": 18.0,
-     "end": 19.0
-    },
-    {
-     "label": "20",
-     "start": 19.0,
-     "end": 20.0
-    },
-    {
-     "label": "21",
-     "start": 20.0,
-     "end": 21.0
-    },
-    {
-     "label": "22",
-     "start": 21.0,
-     "end": 22.0
-    },
-    {
-     "label": "23",
-     "start": 22.0,
-     "end": 23.0
-    },
-    {
-     "label": "24",
-     "start": 23.0,
-     "end": 24.0
-    },
-    {
-     "label": "25",
-     "start": 24.0,
-     "end": 25.0
-    },
-    {
-     "label": "26",
-     "start": 25.0,
-     "end": 26.0
-    },
-    {
-     "label": "27",
-     "start": 26.0,
-     "end": 27.0
-    },
-    {
-     "label": "28",
-     "start": 27.0,
-     "end": 28.0
-    },
-    {
-     "label": "29",
-     "start": 28.0,
-     "end": 29.0
-    },
-    {
-     "label": "30",
-     "start": 29.0,
-     "end": 30.0
-    },
-    {
-     "label": "31",
-     "start": 30.0,
-     "end": 31.0
-    },
-    {
-     "label": "32",
-     "start": 31.0,
-     "end": 32.0
-    },
-    {
-     "label": "33",
-     "start": 32.0,
-     "end": 33.0
-    },
-    {
-     "label": "34",
-     "start": 33.0,
-     "end": 34.0
-    },
-    {
-     "label": "35",
-     "start": 34.0,
-     "end": 35.0
-    },
-    {
-     "label": "36",
-     "start": 35.0,
-     "end": 36.0
-    },
-    {
-     "label": "37",
-     "start": 36.0,
-     "end": 37.0
-    },
-    {
-     "label": "38",
-     "start": 37.0,
-     "end": 38.0
-    },
-    {
-     "label": "39",
-     "start": 38.0,
-     "end": 39.0
-    },
-    {
-     "label": "40",
-     "start": 39.0,
-     "end": 40.0
-    },
-    {
-     "label": "41",
-     "start": 40.0,
-     "end": 41.0
-    },
-    {
-     "label": "42",
-     "start": 41.0,
-     "end": 42.0
-    },
-    {
-     "label": "43",
-     "start": 42.0,
-     "end": 43.0
-    },
-    {
-     "label": "44",
-     "start": 43.0,
-     "end": 44.0
-    },
-    {
-     "label": "45",
-     "start": 44.0,
-     "end": 45.0
-    },
-    {
-     "label": "46",
-     "start": 45.0,
-     "end": 46.0
-    },
-    {
-     "label": "47",
-     "start": 46.0,
-     "end": 47.0
-    },
-    {
-     "label": "48",
-     "start": 47.0,
-     "end": 48.0
-    },
-    {
-     "label": "49",
-     "start": 48.0,
-     "end": 49.0
-    },
-    {
-     "label": "50",
-     "start": 49.0,
-     "end": 50.0
-    },
-    {
-     "label": "51",
-     "start": 50.0,
-     "end": 51.0
-    },
-    {
-     "label": "52",
-     "start": 51.0,
-     "end": 52.0
-    },
-    {
-     "label": "53",
-     "start": 52.0,
-     "end": 53.0
     }
    ],
    "unita": "mesi"
   },
   "duration": {
-   "text": "2 mesi",
+   "text": "12 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 10 giorni (1), 14 giorni (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 2 mesi (2), 10 giorni (1), 14 giorni (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1225903",
-    "page": 8,
-    "document": "Allegato alla Comunicazione VA esito valutazione MASE_2025-0043777 - parere_n_237_SCVIA_del_11-2-25_id_vip_13165",
-    "excerpt": "in corrispondenza dell’aerogeneratore più vicino al ricettore individuato. Il Proponente si impegna a fornire ad ARPAS il cronoprogramma definitivo almeno 2 mesi prima dell’inizio effettivo delle lavorazioni più rumorose"
+    "url": "https://va.mite.gov.it/File/Documento/890966",
+    "page": 68,
+    "document": "Integrazioni del 24/08/2023 - PEALAS-S04 02b Carta delle Unita del pedo paesaggio 1 20 000",
+    "excerpt": "Per la realizzazione degli interventi previsti dal presente progetto può stimarsi una durata indicativa dei lavori di circa 12 mesi con uno sviluppo delle attività ipotizzato secondo quanto riportato nel cronoprogramma r"
    }
   },
   "milestones": [
@@ -1087,10 +905,6 @@
    {
     "document": "PEALAS_PE_00016_01_00-Cronoprogramma_dei_lavori",
     "url": "https://va.mite.gov.it/File/Documento/1159390"
-   },
-   {
-    "document": "Cronoprogramma di esecuzione dei lavori",
-    "url": "https://va.mite.gov.it/File/Documento/455850"
    }
   ],
   "durate_fasi": [],
@@ -1098,9 +912,9 @@
  },
  "documentazione": {
   "documenti": 581,
-  "pagine": 8747,
+  "pagine": 10753,
   "completa": false,
-  "da_leggere": 221
+  "da_leggere": 101
  },
  "confronto": [
   {
@@ -1143,12 +957,8 @@
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Recapiti",
-   "reason": "950 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1305 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
