@@ -5,7 +5,7 @@
  "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico denominato \"San Donaci\" della potenza pari a 31,26 MW e delle relative opere di connessione alla RTN, da realizzarsi nel territorio dei comuni di San Donaci (BR) e",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8852",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
@@ -34,14 +34,27 @@
   {
    "key": "area",
    "label": "Superficie complessiva",
-   "value": "39,2 ha",
+   "value": "35 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 35 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 39,2 ha (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/722812",
-    "page": 7,
-    "document": "RE07-SNT-R0",
-    "excerpt": "• Area contrattualizzata: 39,20 ettari; •"
+    "url": "https://va.mite.gov.it/File/Documento/722781",
+    "page": 45,
+    "document": "RE01-RelazioneTecnicaGenerale-R0",
+    "excerpt": "3.14. Viabilità interna L’area su cui sarà realizzato l’impianto ha una superficie complessiva recintata di circa 35 ettari, distinto in tre lotti adiacenti tra loro, fisicamente separati da una recinzione. Per muoversi"
+   }
+  },
+  {
+   "key": "pali",
+   "label": "Pali da infiggere (strutture fisse)",
+   "value": "12.738",
+   "status": "da documenti",
+   "sub": "recinzione 1.650",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/722829",
+    "page": 6,
+    "document": "RE15-RelazioneDismissione-R0",
+    "excerpt": "calcestruzzo armato. Infatti, tutte le strutture di supporto saranno infisse saldamente al terreno mediante “12.738 pali in acciaio battuti”. In questo modo, in fase di dismissione, gli stessi pali saranno semplicemente "
    }
   },
   {
@@ -68,7 +81,7 @@
   "coordinate": {
    "lat": 40.46775,
    "lon": 17.94683,
-   "tipo": "centro della tavola georeferenziata di progetto (24 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (31 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/722744",
     "page": 1,
@@ -158,12 +171,23 @@
     {
      "type": "PEC",
      "value": "societaeliossrl@pec.it",
-     "occurrences": 71,
+     "occurrences": 94,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/722808",
       "page": 1,
       "document": "RE06-TAV6-Carta della natura-R0",
       "excerpt": "P.I.: 08422270721 e-mailpec: societaeliossrl@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "servizio.ecologia@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1315910",
+      "page": 16,
+      "document": "Parere della Regione Puglia Dipartimento ambiente, paesaggio e qualità urbana Sezione Autorizzazioni Ambientali in data 16/10/2025",
+      "excerpt": "Sezione Autorizzazioni Ambientali servizio.ecologia@pec.rupar.puglia.it"
      }
     },
     {
@@ -217,7 +241,7 @@
     {
      "type": "E-mail",
      "value": "contatti@gruppotekne.it",
-     "occurrences": 109,
+     "occurrences": 141,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/722808",
       "page": 1,
@@ -228,7 +252,7 @@
     {
      "type": "Telefono",
      "value": "0883553714",
-     "occurrences": 112,
+     "occurrences": 144,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/722808",
       "page": 1,
@@ -364,6 +388,30 @@
    "source": null
   },
   {
+   "name": "Alla Società Elios S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "societaelios@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1315910",
+      "page": 16,
+      "document": "Parere della Regione Puglia Dipartimento ambiente, paesaggio e qualità urbana Sezione Autorizzazioni Ambientali in data 16/10/2025",
+      "excerpt": "Elios S.r.l. societaelios@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Siet S.r.l.",
    "kind": "società",
    "roles": [],
@@ -481,9 +529,9 @@
  },
  "documentazione": {
   "documenti": 148,
-  "pagine": 3029,
-  "completa": false,
-  "da_leggere": 28
+  "pagine": 3685,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -519,7 +567,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "336 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "364 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
