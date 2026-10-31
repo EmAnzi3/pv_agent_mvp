@@ -5,7 +5,7 @@
  "title": "Istanza di avvio della procedura di valutazione d'impatto ambientale ai sensi dell'art. 23 del D.Lgs 152/2006 e ss.mm.ii. relativa al progetto di un impianto eolico denominato \"Contrada Sparpagliata, Donne Masi e Tostini\" costituito da 19 aerogeneratori per una potenza complessiva di 154 MW, da realizzare nei comuni di Erchie (BR), Torre Santa Susanna (BR), Manduria (TA) e Avetrana (TA), comprendente diverse opere connesse tra cui un sistema di accumulo di energia in agro di Erchie (BR) della potenza di 40 MW.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7532",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "19",
    "status": "da verificare",
-   "sub": "8,11 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (27), 5 (24), 11 (24)",
+   "sub": "8,11 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (53), 5 (52), 11 (45)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/421280",
     "page": 1,
@@ -33,16 +33,41 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/418415",
+    "page": 41,
+    "document": "Studio impatto ambientale",
+    "excerpt": "off-shore: che sono installati nel nostro mare."
+   }
+  },
+  {
    "key": "accumulo",
    "label": "Accumulo",
-   "value": "154 MW / 160 MWh",
+   "value": "40 MW / 160 MWh",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 40 MW (3), 114 MW (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 154 MW (9), 114 MW (4), 6 MW (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/418422",
+    "url": "https://va.mite.gov.it/File/Documento/1048822",
     "page": 3,
-    "document": "Relazione Geologica",
-    "excerpt": "con storage denominato \"Contrada Sparpagliata, Donne Masi e Tostini\" della potenza complessiva di 154 MW da realizzare nei Comuni di Erchie (BR), Torre Santa Susanna (BR), Manduria (TA) e Avetrana (TA)"
+    "document": "Determina della PCM-Progetto di un impianto eolico denominato \"Contrada Sparpagliata, Donne Masi e Tostini\" costituito da 19 aerogeneratori per una potenza complessiva di 154 MW, da realizzare nei com",
+    "excerpt": "complessiva di 114 MW, oltre ad un sistema di accumulo di energia della potenza di 40 MW, per una potenza complessiva pari a 154 MW, nonché delle relative opere di connessione;"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "13 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/418485",
+    "page": 39,
+    "document": "Relazione Tecnica",
+    "excerpt": "ovvero relativa al settore produttivo direttamente “attivato” dall’intervento. Si prevede che le attività di cantiere necessitino mediamente di circa 50 unità; le attività dureranno 12/13 mesi circa e il personale presen"
    }
   }
  ],
@@ -56,17 +81,17 @@
    "Avetrana"
   ],
   "coordinate": {
-   "lat": 40.42597,
-   "lon": 17.76529,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (130 riferimenti concordi)",
+   "lat": 40.42478,
+   "lon": 17.76619,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (184 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/418416",
-    "page": 13,
-    "document": "Valutazione Previsionale di Impatto acustico",
-    "excerpt": "733823.00"
+    "url": "https://va.mite.gov.it/File/Documento/619516",
+    "page": 20,
+    "document": "Parere della Regione Puglia - Sezione Autortizzazioni Ambientali in data 01/03/2022",
+    "excerpt": "ERI 734178.14 4480483.46"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.42597,17.76529",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.42478,17.76619",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -99,7 +124,7 @@
     {
      "type": "PEC",
      "value": "yellowenergy@arubapec.it",
-     "occurrences": 1,
+     "occurrences": 4,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/502852",
       "page": 1,
@@ -137,9 +162,20 @@
      }
     },
     {
+     "type": "PEC",
+     "value": "projettoengineeringsrl@cgn.legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/418485",
+      "page": 46,
+      "document": "Relazione Tecnica",
+      "excerpt": "MANDURIA (TA) VIA DEI MILLE 5 CAP 74024 Indirizzo di posta certificata: projettoengineeringsrl@cgn.legalmail.it"
+     }
+    },
+    {
      "type": "E-mail",
      "value": "studio@projetto.eu",
-     "occurrences": 70,
+     "occurrences": 158,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/418344",
       "page": 1,
@@ -159,17 +195,6 @@
      }
     },
     {
-     "type": "E-mail",
-     "value": "info@archeostudio.com",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/522536",
-      "page": 1,
-      "document": "Integrazioni del 19/07/2021 - Relazione Archeologica",
-      "excerpt": "ita di K: via Piave n. 24 - 73059 Ugento (LE) socisie dINgegnera info@archeostudio.com"
-     }
-    },
-    {
      "type": "Telefono",
      "value": "3292930942",
      "occurrences": 1,
@@ -185,6 +210,162 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "Eolica Erchie S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02189280742",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Braccio Martello 36 73100 Lecce Le",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "eolicaerchie@pec.it",
+     "occurrences": 24,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/451277",
+      "page": 1,
+      "document": "Osservazioni della Società Società Eolica Erchie Srl in data 05/11/2020",
+      "excerpt": "EOLICA ERCHIE srl: Sede Legale Via Braccio Martello 36 – 73100 Lecce – P.iva 02189280742 Contatti: tel. +39 0832 304180 –– PEC: eolicaerchie@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0832304180",
+     "occurrences": 24,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/451277",
+      "page": 1,
+      "document": "Osservazioni della Società Società Eolica Erchie Srl in data 05/11/2020",
+      "excerpt": "EOLICA ERCHIE srl: Sede Legale Via Braccio Martello 36 – 73100 Lecce – P.iva 02189280742 Contatti: tel. +39 0832 304180 –– PEC: eolicaerchie@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Todisco Simone",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "simone.todisco@pecagrotecnici.it",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1238446",
+      "page": 2,
+      "document": "Piano di Monitoraggio Faunistico",
+      "excerpt": "Str. Chirulli n. 24 D -74015 Martina Franca (TA) Cell. 339-5288925, e-mail: simone.todisco.01@gmail.com, PEC: simone.todisco@pecagrotecnici.it , P.IVA 07797420721– C.F. TDSSMN84R18F376H"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "simone.todisco.01@gmail.com",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1238446",
+      "page": 2,
+      "document": "Piano di Monitoraggio Faunistico",
+      "excerpt": "Str. Chirulli n. 24 D -74015 Martina Franca (TA) Cell. 339-5288925, e-mail: simone.todisco.01@gmail.com, PEC: simone.todisco@pecagrotecnici.it , P.IVA 07797420721– C.F. TDSSMN84R18F376H"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3395288925",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1238446",
+      "page": 2,
+      "document": "Piano di Monitoraggio Faunistico",
+      "excerpt": "Str. Chirulli n. 24 D -74015 Martina Franca (TA) Cell. 339-5288925, e-mail: simone.todisco.01@gmail.com, PEC: simone.todisco@pecagrotecnici.it , P.IVA 07797420721– C.F. TDSSMN84R18F376H"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Lungomare Nazario Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0805401558",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/619516",
+      "page": 68,
+      "document": "Parere della Regione Puglia - Sezione Autortizzazioni Ambientali in data 01/03/2022",
+      "excerpt": "Sezione Risorse Idriche Lungomare Nazario Sauro— 70121Bari - Tel: 080 5401558"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "PRO Etto engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@archeostudio.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/522535",
+      "page": 1,
+      "document": "Integrazioni del 19/07/2021 - Carta del Rischio Archeologico",
+      "excerpt": "aay ate . via Piave n. 24 - 73049 Ugento (LE) società d Ingegneria info@archeostudio.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "43_RIS_N_001_Comb. SLU",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3491735914",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/418433",
+      "page": 193,
+      "document": "Calcoli preliminari delle strutture",
+      "excerpt": "Sede Operativa: Z.I. Lotto 31, 74020 San Marzano di San Giuseppe - Taranto Tel/Fax 099 9574694 mob. 349 1735914"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -192,7 +373,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": null,
+  "durata_cantiere": "23 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -204,15 +385,218 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Affidamento lavori",
+    "start": 4.62,
+    "end": 6.72,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Allestimento del cantiere",
+    "start": 6.7,
+    "end": 7.76,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili ‐ strade",
+    "start": 6.7,
+    "end": 9.58,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili ‐ fondazioni torri",
+    "start": 6.7,
+    "end": 15.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili ed elettriche ‐ cavidotti",
+    "start": 8.64,
+    "end": 16.68,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto componenti torri ed aerogeneratori",
+    "start": 10.59,
+    "end": 14.58,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio torri ed aerogeneratori",
+    "start": 12.64,
+    "end": 18.72,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Costruzione e collegamento Storage",
+    "start": 17.59,
+    "end": 19.76,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Costruzione Stazione Elettrica ‐ Opere elettriche e di connessione alla RTN",
+    "start": 7.73,
+    "end": 19.76,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi",
+    "start": 18.7,
+    "end": 20.88,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Dismissione del cantiere e ripristini ambientali",
+    "start": 19.74,
+    "end": 23.0,
+    "level": 0,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 23.0,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/418485",
+   "page": 31,
+   "document": "Relazione Tecnica",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "30 giorni",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 60 giorni (circa 2 mesi) (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 60 giorni (circa 2 mesi) (2), 13 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/418415",
     "page": 141,
@@ -222,16 +606,16 @@
   },
   "milestones": [],
   "document": null,
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "note": null,
   "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 394,
-  "pagine": 3145,
+  "pagine": 5501,
   "completa": false,
-  "da_leggere": 154
+  "da_leggere": 34
  },
  "confronto": [
   {
@@ -271,7 +655,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "2404 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "4867 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
