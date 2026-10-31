@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico denominato \"Montagnola\" composto da 6 aerogeneratori per una potenza complessiva di 34 MW, sito nel comune di Ferrandina (MT) in loc. Montagnola, e delle relative opere di connessione site anche nel comune di Salandra (MT) e Garaguso (MT).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7458",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "5",
    "status": "da verificare",
-   "sub": "6,80 MW ciascuno · altezza mozzo 99 m · diametro rotore 145 m · Valore più ricorrente negli elaborati; altri valori: 4 (92), 6 (75), 2 (13)",
+   "sub": "6,80 MW ciascuno · altezza mozzo 102,5 m · diametro rotore 145 m · Valore più ricorrente negli elaborati; altri valori: 4 (101), 6 (97), 2 (21)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1243324",
     "page": 1,
@@ -36,8 +36,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "12 mesi",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 4-6 mesi (5), 294 giorni (circa 10 mesi) (1)",
+   "status": "da documenti",
+   "sub": "Inizio lavori 30/01/2021 (campo presunto di piano di sicurezza o notifica) · Valore prevalente negli elaborati; altri valori: 4-6 mesi (5), 294 giorni (circa 10 mesi) (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/411384",
     "page": 190,
@@ -53,9 +53,9 @@
    "Garaguso"
   ],
   "coordinate": {
-   "lat": 40.54384,
-   "lon": 16.39144,
-   "tipo": "centro della tavola georeferenziata di progetto (310 riferimenti concordi)",
+   "lat": 40.54518,
+   "lon": 16.38375,
+   "tipo": "centro della tavola georeferenziata di progetto (356 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1243358",
     "page": 54,
@@ -63,10 +63,20 @@
     "excerpt": "C01_Rel_Geologica_WF"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.54384,16.39144",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.54518,16.38375",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 40.54363,
+   "lon": 16.38848,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1263521",
+    "page": 95,
+    "document": "AO11_F0302CR05D_PMA_PianoMonAmb",
+    "excerpt": "617498,6861"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.54363,16.38848"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -197,7 +207,7 @@
    }
   },
   {
-   "name": "F4ingegneria S.r.l.",
+   "name": "F4 ingegneria S.r.l.",
    "kind": "società",
    "roles": [
     "Progettista"
@@ -211,7 +221,7 @@
     {
      "type": "PEC",
      "value": "f4ingegneria@pec.it",
-     "occurrences": 2624,
+     "occurrences": 3568,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1243323",
       "page": 1,
@@ -220,9 +230,20 @@
      }
     },
     {
+     "type": "E-mail",
+     "value": "info@f4ingegneria.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/411589",
+      "page": 4,
+      "document": "F0302FR01A_D - Prime indicazioni per la sicurezza",
+      "excerpt": "Indirizzo e-mail: info@f4ingegneria.it"
+     }
+    },
+    {
      "type": "Telefono",
      "value": "09711944797",
-     "occurrences": 44,
+     "occurrences": 60,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1243323",
       "page": 1,
@@ -256,6 +277,48 @@
     "document": "C00_Rel_Geologica_SSE",
     "excerpt": "IL GEOLOGO"
    }
+  },
+  {
+   "name": "FA ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ria@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/411371",
+      "page": 5,
+      "document": "F0302BT22A_A.16.a.19_A.16.b.6 - Planimetria del tracciato dell'elettrodotto",
+      "excerpt": "alue el: + www.fain ria@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "wwwfaingegneria.it-fdingegneria@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1243345",
+      "page": 1,
+      "document": "B11_F0302QT01A_Planimetria_catastale",
+      "excerpt": "Via Di Giura, Centro direzionale Tel:+390971 1944797 - Fax: +39 097155452 85100 Potenza ‘wwwfAingegneria.it-fdingegneria@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/407665",
+    "page": 2,
+    "document": "F0302DT06A_A.19.6 - Fotoinserimenti",
+    "excerpt": "Proponente Progettazione"
+   }
   }
  ],
  "altri_soggetti": [
@@ -272,7 +335,7 @@
     {
      "type": "E-mail",
      "value": "laborgeo@tin.it",
-     "occurrences": 58,
+     "occurrences": 118,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1243366",
       "page": 2,
@@ -289,6 +352,33 @@
       "page": 100,
       "document": "C02_08_ALL_C8_Rapporto_tecnico_indagini",
       "excerpt": "Via Dei Mestieri n° 16 — 75100 MATERA Tel. 0835.387641 - E-mail: laborgeo@tin.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 41,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/411541",
+      "page": 1,
+      "document": "F0302BR07A_A.5 - Studio Anemologico",
+      "excerpt": "Tel: 0302056980 Mail: info@tecnogaia.it"
      }
     }
    ],
@@ -317,12 +407,58 @@
       "document": "Avviso al pubblico del 18/05/2021",
       "excerpt": "infe@grvalue.com / PEC: grvaluedevelopment@pec.it"
      }
+    },
+    {
+     "type": "Telefono",
+     "value": "0302056980",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/411541",
+      "page": 18,
+      "document": "F0302BR07A_A.5 - Studio Anemologico",
+      "excerpt": "- Via Matteotti, 311 – SCALA P – Int.10 – 25063 Gardone Val Trompia (BS) Tel. 030 2056980 – Fax 030 831100"
+     }
     }
    ],
    "source": {
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "Dott. Geol. Maurizio Giacomino",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "mauriziogiacomino@gmail.com",
+     "occurrences": 147,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/411536",
+      "page": 2,
+      "document": "F0302BR02A_A.2.1 - Relazione geologica",
+      "excerpt": "Studio Tecnico di Geologia - Dott. Geol. Maurizio Giacomino Via Lucana, 337 – 75100 Matera Cell. 3396629531 e-mail: mauriziogiacomino@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3396629531",
+     "occurrences": 147,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/411536",
+      "page": 2,
+      "document": "F0302BR02A_A.2.1 - Relazione geologica",
+      "excerpt": "Studio Tecnico di Geologia - Dott. Geol. Maurizio Giacomino Via Lucana, 337 – 75100 Matera Cell. 3396629531 e-mail: mauriziogiacomino@gmail.com"
+     }
+    }
+   ],
+   "source": null
   },
   {
    "name": "GRV Ferrandina Wind S.r.l.",
@@ -406,8 +542,8 @@
    "source": null
   },
   {
-   "name": "FA ingegneria S.r.l.",
-   "kind": "società",
+   "name": "Dr. Geol. Lorenzo Borselli",
+   "kind": "persona",
    "roles": [],
    "vat": null,
    "vat_group": false,
@@ -416,25 +552,14 @@
    "office": null,
    "contacts": [
     {
-     "type": "PEC",
-     "value": "wwwfaingegneria.it-fdingegneria@pec.it",
-     "occurrences": 1,
+     "type": "E-mail",
+     "value": "lborselli@gmail.com",
+     "occurrences": 2,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1243345",
-      "page": 1,
-      "document": "B11_F0302QT01A_Planimetria_catastale",
-      "excerpt": "Via Di Giura, Centro direzionale Tel:+390971 1944797 - Fax: +39 097155452 85100 Potenza ‘wwwfAingegneria.it-fdingegneria@pec.it"
-     }
-    },
-    {
-     "type": "PEC",
-     "value": "ria@pec.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/411371",
-      "page": 5,
-      "document": "F0302BT22A_A.16.a.19_A.16.b.6 - Planimetria del tracciato dell'elettrodotto",
-      "excerpt": "alue el: + www.fain ria@pec.it"
+      "url": "https://va.mite.gov.it/File/Documento/411536",
+      "page": 41,
+      "document": "F0302BR02A_A.2.1 - Relazione geologica",
+      "excerpt": "Build No. 10403 BY Dr. Geol. LORENZO BORSELLI - UASLP, San Luis Potosi, Mexico e- mail: lborselli@gmail.com - CV e WEB page personale: www.lorenzo-borselli.eu - già Ricercatore"
      }
     }
    ],
@@ -465,11 +590,27 @@
    "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 30/01/2021, ma l'iter è proseguito; ultimo documento o atto del 25/09/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
   "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "15/05/2020 → 10/01/2022",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/411550",
+     "page": 2,
+     "document": "F0302BR16A_A.14 - Cronoprogramma",
+     "excerpt": ""
+    }
+   },
    {
     "voce": "Atto autorizzativo",
     "livello": "documentata",
@@ -497,17 +638,17 @@
    {
     "voce": "Fine lavori",
     "livello": "stimata",
-    "valore": "non prima di settembre 2023",
-    "dettaglio": "inizio stimato + durata del cantiere: 12 mesi",
+    "valore": "non prima di aprile 2024",
+    "dettaglio": "inizio stimato + durata del cantiere: 20 mesi (cronoprogramma)",
     "source": {
-     "url": "https://va.mite.gov.it/File/Documento/411384",
-     "page": 190,
-     "document": "F0302CR03A_A.17.3 - Studio di Impatto Ambientale - Quadro di riferimento ambientale",
-     "excerpt": "derivante dallo sversamento accidentale di sostanze nocive può essere così classificato:  Temporaneo, legato alla fase di cantiere, stimata in 12 mesi;  Confinato all’interno dell’area di intervento o nei sui immediati"
+     "url": "https://va.mite.gov.it/File/Documento/411550",
+     "page": 2,
+     "document": "F0302BR16A_A.14 - Cronoprogramma",
+     "excerpt": ""
     }
    }
   ],
-  "durata_cantiere": "12 mesi",
+  "durata_cantiere": "20 mesi (cronoprogramma)",
   "autorizzazione": {
    "atto": "Determinazione n. 26078/DICA",
    "data": "27/09/2022",
@@ -526,15 +667,241 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Permitting",
+    "start": 0.0,
+    "end": 6.61,
+    "level": 0,
+    "dates": [
+     "2020-05-15",
+     "2020-12-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Contratto EPC",
+    "start": 6.58,
+    "end": 8.59,
+    "level": 0,
+    "dates": [
+     "2020-12-01",
+     "2021-01-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Cantierizzazione",
+    "start": 8.55,
+    "end": 9.08,
+    "level": 0,
+    "dates": [
+     "2021-01-30",
+     "2021-02-14"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Viabilità",
+    "start": 9.05,
+    "end": 14.01,
+    "level": 0,
+    "dates": [
+     "2021-02-14",
+     "2021-07-14"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Fondazioni",
+    "start": 12.99,
+    "end": 16.32,
+    "level": 0,
+    "dates": [
+     "2021-06-14",
+     "2021-09-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Sottostazione Elettrica Opere Elettromeccaniche",
+    "start": 9.05,
+    "end": 11.05,
+    "level": 0,
+    "dates": [
+     "2021-02-14",
+     "2021-04-15"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Cavidotti",
+    "start": 12.01,
+    "end": 19.93,
+    "level": 0,
+    "dates": [
+     "2021-05-15",
+     "2022-01-10"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio Aerogeneratori",
+    "start": 16.28,
+    "end": 19.28,
+    "level": 0,
+    "dates": [
+     "2021-09-22",
+     "2021-12-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Energizzazione",
+    "start": 19.24,
+    "end": 19.61,
+    "level": 0,
+    "dates": [
+     "2021-12-21",
+     "2021-12-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Avvio produzione",
+    "start": 19.57,
+    "end": 19.93,
+    "level": 0,
+    "dates": [
+     "2021-12-31",
+     "2022-01-10"
+    ],
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 19.93,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/411550",
+   "page": 2,
+   "document": "F0302BR16A_A.14 - Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "mag 20",
+     "start": -0.461,
+     "end": 0.539
+    },
+    {
+     "label": "giu 20",
+     "start": 0.539,
+     "end": 1.539
+    },
+    {
+     "label": "lug 20",
+     "start": 1.539,
+     "end": 2.539
+    },
+    {
+     "label": "ago 20",
+     "start": 2.539,
+     "end": 3.539
+    },
+    {
+     "label": "set 20",
+     "start": 3.539,
+     "end": 4.539
+    },
+    {
+     "label": "ott 20",
+     "start": 4.539,
+     "end": 5.539
+    },
+    {
+     "label": "nov 20",
+     "start": 5.539,
+     "end": 6.539
+    },
+    {
+     "label": "dic 20",
+     "start": 6.539,
+     "end": 7.539
+    },
+    {
+     "label": "gen 21",
+     "start": 7.539,
+     "end": 8.539
+    },
+    {
+     "label": "feb 21",
+     "start": 8.539,
+     "end": 9.539
+    },
+    {
+     "label": "mar 21",
+     "start": 9.539,
+     "end": 10.539
+    },
+    {
+     "label": "apr 21",
+     "start": 10.539,
+     "end": 11.539
+    },
+    {
+     "label": "mag 21",
+     "start": 11.539,
+     "end": 12.539
+    },
+    {
+     "label": "giu 21",
+     "start": 12.539,
+     "end": 13.539
+    },
+    {
+     "label": "lug 21",
+     "start": 13.539,
+     "end": 14.539
+    },
+    {
+     "label": "ago 21",
+     "start": 14.539,
+     "end": 15.539
+    },
+    {
+     "label": "set 21",
+     "start": 15.539,
+     "end": 16.539
+    },
+    {
+     "label": "ott 21",
+     "start": 16.539,
+     "end": 17.539
+    },
+    {
+     "label": "nov 21",
+     "start": 17.539,
+     "end": 18.539
+    },
+    {
+     "label": "dic 21",
+     "start": 18.539,
+     "end": 19.539
+    },
+    {
+     "label": "gen 22",
+     "start": 19.539,
+     "end": 20.539
+    }
+   ],
+   "unita": null
+  },
   "duration": {
    "text": "12 mesi",
-   "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 4-6 mesi (5), 8 settimane (2), 90 giorni (circa 3 mesi) (1)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 4-6 mesi (5), 8 settimane (2), 294 giorni (circa 10 mesi) (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/411384",
     "page": 190,
@@ -542,30 +909,53 @@
     "excerpt": "derivante dallo sversamento accidentale di sostanze nocive può essere così classificato:  Temporaneo, legato alla fase di cantiere, stimata in 12 mesi;  Confinato all’interno dell’area di intervento o nei sui immediati"
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "30/01/2021",
+    "iso": "2021-01-30",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/411589",
+     "page": 2,
+     "document": "F0302FR01A_D - Prime indicazioni per la sicurezza",
+     "excerpt": "Data inizio lavori: 30/01/2021 Data fine lavori (presunta):"
+    }
+   },
+   {
+    "label": "Fine lavori",
+    "date": "31/12/2021",
+    "iso": "2021-12-31",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/411589",
+     "page": 2,
+     "document": "F0302FR01A_D - Prime indicazioni per la sicurezza",
+     "excerpt": "Data fine lavori (presunta): 31/12/2021 Durata in giorni (presunta):"
+    }
+   }
+  ],
   "document": {
    "document": "F0302BR16A_A.14 - Cronoprogramma",
    "url": "https://va.mite.gov.it/File/Documento/411550"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "note": null,
   "altri": [
-   {
-    "document": "F0302BR16A_A.14 - Cronoprogramma",
-    "url": "https://va.mite.gov.it/File/Documento/411550"
-   },
    {
     "document": "F0302BR16A_A.14 - Cronoprogramma",
     "url": "https://va.mite.gov.it/File/Documento/407607"
    }
   ],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "tabella con date"
  },
  "documentazione": {
   "documenti": 507,
-  "pagine": 7235,
+  "pagine": 8758,
   "completa": false,
-  "da_leggere": 267
+  "da_leggere": 147
  },
  "confronto": [
   {
@@ -596,16 +986,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 30/01/2021, ma l'iter è proseguito; ultimo documento o atto del 25/09/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
    "label": "Aerogeneratori",
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Recapiti",
-   "reason": "1169 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1363 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
