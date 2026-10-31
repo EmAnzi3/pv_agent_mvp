@@ -5,7 +5,7 @@
  "title": "\"Progetto per la realizzazione di un impianto eolico, denominato \"Latiano\", costituito da 7 aerogeneratori, ciascuno di potenza nominale pari a 6 MW, e dalle opere necessarie di connessione alla RTN, per una potenza complessiva di 42 MW, integrato con un sistema di accumulo di potenza pari a 35 MW, da realizzarsi nei Comuni di Latiano (BR) e Mesagne (BR)\".",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7698",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
@@ -23,8 +23,8 @@
    "key": "wtg",
    "label": "Aerogeneratori",
    "value": "13",
-   "status": "da verificare",
-   "sub": "3,23 MW ciascuno · altezza mozzo 115 m · diametro rotore 165 m · Valore più ricorrente negli elaborati; altri valori: 7 (44), 3 (2), 1 (2)",
+   "status": "da documenti",
+   "sub": "3,23 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 7 (46), 3 (4), 1 (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1391645",
     "page": 3,
@@ -48,8 +48,8 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "35 MW / 2,916 MWh",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 78 MW (4), 42 MW (4)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 78 MW (16), 42 MW (4), 113 MW (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1391645",
     "page": 3,
@@ -60,14 +60,14 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "18 mesi",
+   "value": "20 mesi",
    "status": "da verificare",
    "sub": "Inizio lavori 27/07/2026 (natura non determinabile) · Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 6 mesi (2), 4 mesi (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1403469",
-    "page": 14,
-    "document": "Integrazioni del 16/06/2026 - PROGETTO DI MONITORAGGIO AMBIENTALE (PMA)",
-    "excerpt": "• CO: per la durata prevista di 18 mesi del cantiere si prevede la restituzione di 2 report con dati mensili per ogni mese vegetativo Ҍ I° report per i primi 12 mesi , II° report per gli ulteriori 6 mesi"
+    "url": "https://va.mite.gov.it/File/Documento/994657",
+    "page": 52,
+    "document": "Allegato al Decreto della Presidenza del Consiglio dei Ministri - Parere CTVA del 04/11/2022",
+    "excerpt": "una volta conseguite tutte le autorizzazioni ed i permessi necessari alla realizzazione ed all’esercizio dell’impianto, si prevede un periodo di durata delle attività di cantiere di circa 20 mesi. Le misure di mitigazion"
    }
   }
  ],
@@ -81,7 +81,7 @@
   "coordinate": {
    "lat": 40.58216,
    "lon": 17.71955,
-   "tipo": "coordinate del sito dichiarate negli elaborati (285 riferimenti concordi)",
+   "tipo": "coordinate del sito dichiarate negli elaborati (358 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1403469",
     "page": 67,
@@ -110,8 +110,19 @@
    "contacts": [
     {
      "type": "E-mail",
+     "value": "v.damico@scsingegneria.it",
+     "occurrences": 422,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/460606",
+      "page": 20,
+      "document": "Studio sugli effetti di shadow flickering",
+      "excerpt": "+390831336390 VALENTINO D'AMICO / v.damico@scsingegneria.it"
+     }
+    },
+    {
+     "type": "E-mail",
      "value": "info@scsingegneria.it",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/547007",
       "page": 2,
@@ -148,6 +159,17 @@
       "page": 3,
       "document": "Comunicazione VA esito valutazione",
       "excerpt": "Alla Enel Green Power Italia S.r.l. enelgreenpoweritalia@enel.pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3407969130",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/493871",
+      "page": 2,
+      "document": "Osservazioni dei Sig.ri Giovanna D'Errico e Giuseppe D'Errico Tramite Studio Legale Caforio in data 13/05/2021",
+      "excerpt": "Via G. Garibaldi, n. 58 Tel./Fax 0831.728812 - Cell. 340.7969130"
      }
     }
    ],
@@ -218,6 +240,17 @@
      }
     },
     {
+     "type": "PEC",
+     "value": "4ideasrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/547025",
+      "page": 1,
+      "document": "Integrazioni del 06/10/2021 - 04_SE-Viabilita_accesso_su_CTR",
+      "excerpt": "tel +39 0832 760144 pec 4ideasrl@pec.it"
+     }
+    },
+    {
      "type": "E-mail",
      "value": "info@studioideaassociati.it",
      "occurrences": 1,
@@ -237,6 +270,88 @@
       "page": 1,
       "document": "Integrazioni del 06/10/2021 - 13_SE-Planimetria_raccolta_e_smaltiment",
       "excerpt": "tel +39 0461 1732700 - fax +39 0461 1732799"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ital Green Energy LATIANO-MESAGNE S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "08253640729",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Giudecca 753/C 30142 Venezia Ve",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ige.latiano-mesagne@legalmail.it",
+     "occurrences": 24,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490896",
+      "page": 12,
+      "document": "Osservazioni della Societa' Ital Green Energy Latiano-Mesagne S.r.l. in data 22/04/2021",
+      "excerpt": "Mesagne srl, con sede legale in Monopoli (BA), C.A.P.70043, alla via/piazza via Baione 200, C.F./P.IVA 08253640729, Tel. 0809734019, p.e.c. ige.latiano-mesagne@legalmail.it."
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "servizio.energierinnovabili@pec.rupar.puglia.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490896",
+      "page": 20,
+      "document": "Osservazioni della Societa' Ital Green Energy Latiano-Mesagne S.r.l. in data 22/04/2021",
+      "excerpt": "provincia@pec.provincia.brindisi.it servizio.energierinnovabili@pec.rupar.puglia.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "mesagne@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490896",
+      "page": 3,
+      "document": "Osservazioni della Societa' Ital Green Energy Latiano-Mesagne S.r.l. in data 22/04/2021",
+      "excerpt": "iscrizione al Registro delle Imprese di Bari 08253640729, indirizzo pec: ige.latiano- mesagne@legalmail.it, indirizzo email: ige.latiano-mesagne@gruppomarseglia.com, qui"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ige.latiano-mesagne@gruppomarseglia.com",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490896",
+      "page": 3,
+      "document": "Osservazioni della Societa' Ital Green Energy Latiano-Mesagne S.r.l. in data 22/04/2021",
+      "excerpt": "iscrizione al Registro delle Imprese di Bari 08253640729, indirizzo pec: ige.latiano- mesagne@legalmail.it, indirizzo email: ige.latiano-mesagne@gruppomarseglia.com, qui"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "mesagne@eruppomarseglia.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/493872",
+      "page": 3,
+      "document": "Osservazioni della Societa' Ital Green Energy Latiano-Mesagne S.r.l. in data 05/05/2021",
+      "excerpt": "08253640729, indirizzo pec: ige.latiano-mesagne@legalmail.it, indirizzo email: ige.latiano- mesagne@eruppomarseglia.com, qui rappresentata dall’ Amministratore Unico e Legale"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0809734019",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490896",
+      "page": 12,
+      "document": "Osservazioni della Societa' Ital Green Energy Latiano-Mesagne S.r.l. in data 22/04/2021",
+      "excerpt": "Mesagne srl, con sede legale in Monopoli (BA), C.A.P.70043, alla via/piazza via Baione 200, C.F./P.IVA 08253640729, Tel. 0809734019, p.e.c. ige.latiano-mesagne@legalmail.it."
      }
     }
    ],
@@ -373,7 +488,7 @@
    "source": null
   },
   {
-   "name": "4IDEA S.r.l.",
+   "name": "Marseglia Group S.p.A.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -383,16 +498,29 @@
    "office": null,
    "contacts": [
     {
-     "type": "PEC",
-     "value": "4ideasrl@pec.it",
-     "occurrences": 1,
+     "type": "Telefono",
+     "value": "08093020",
+     "occurrences": 11,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/547041",
+      "url": "https://va.mite.gov.it/File/Documento/490896",
       "page": 1,
-      "document": "Integrazioni del 06/10/2021 - R10_SE-Relaz_tratt_acque_prima_pioggia",
-      "excerpt": "tel +39 0832 760144 pec 4ideasrl@pec.it"
+      "document": "Osservazioni della Societa' Ital Green Energy Latiano-Mesagne S.r.l. in data 22/04/2021",
+      "excerpt": "Cap. Soc. Euro 10.000,00 i.v. Sede Legale e Amministrazione: 70043 Monopoli (BA) - Via Baione, 200 - Tel. 080.930.20.11 - Fax 080.690.17.67 - ige.latiano-mesagne@legalmail.it"
      }
-    },
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "4IDEA S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
     {
      "type": "Telefono",
      "value": "0832760144",
@@ -413,6 +541,89 @@
       "page": 1,
       "document": "Integrazioni del 06/10/2021 - 04_SE-Viabilita_accesso_su_CTR",
       "excerpt": "Via V. M. STAMPACCHIA, 48 - 73100 Lecce Tel. +39 0832 1798355"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Wood Solare Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "woodsolareitaliasrl@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/547067",
+      "page": 1,
+      "document": "Integrazioni del 06/10/2021 - Risposta_osservazioni_Wood_Solare",
+      "excerpt": "20094 Corsico (MI) PEC woodsolareitaliasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "woodsolareitaliasrl@legamail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/474033",
+      "page": 1,
+      "document": "Osservazioni Wood Solare Italia S.r.l.",
+      "excerpt": "La Società Wood Solare Italia S.r.l. (“Wood Solare Italia”), avente sede legale in Corsico (MI), Via S. Caboto n° 15, Codice Fiscale/Partita IVA/Reg. Imprese Milano 10778080969, Tel. 02 4486 1, PEC woodsolareitaliasrl@le"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Pietro Marseglia",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "pietro.marseglia@gruppomarseglia.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490896",
+      "page": 24,
+      "document": "Osservazioni della Societa' Ital Green Energy Latiano-Mesagne S.r.l. in data 22/04/2021",
+      "excerpt": "fax E-mail pietro.marseglia@gruppomarseglia.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Presidenza Giunta Regionale - Lungomare N. Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0805406316",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/460597",
+      "page": 67,
+      "document": "Relazione impatto acustico",
+      "excerpt": "Direzione e Redazione - Presidenza Giunta Regionale - Lungomare N. Sauro, 33 - 70121 Bari - Tel. 0805406316-0805406317-0805406372 - Uff. abbonamenti"
      }
     }
    ],
@@ -443,8 +654,8 @@
    "source": null
   },
   {
-   "name": "Lungomare Nazario Sau",
-   "kind": "società",
+   "name": "Ing. Andrea Belloli",
+   "kind": "persona",
    "roles": [],
    "vat": null,
    "vat_group": false,
@@ -453,38 +664,14 @@
    "office": null,
    "contacts": [
     {
-     "type": "PEC",
-     "value": "dipartimento.ambiente.territorio@pec.rupar.puglia.it",
+     "type": "E-mail",
+     "value": "andrea.belloli@woodplc.com",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1389469",
+      "url": "https://va.mite.gov.it/File/Documento/474033",
       "page": 1,
-      "document": "Integrazioni del 12/05/2026 - Lettera_di_trasmissione_PUT",
-      "excerpt": "70121 Bari (BA) dipartimento.ambiente.territorio@pec.rupar.puglia.it"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Wood Solare Italia S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "woodsolareitaliasrl@legalmail.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/547067",
-      "page": 1,
-      "document": "Integrazioni del 06/10/2021 - Risposta_osservazioni_Wood_Solare",
-      "excerpt": "20094 Corsico (MI) PEC woodsolareitaliasrl@legalmail.it"
+      "document": "Osservazioni Wood Solare Italia S.r.l.",
+      "excerpt": "Fiscale/Partita IVA/Reg. Imprese Milano 10778080969, Tel. 02 4486 1, PEC woodsolareitaliasrl@legamail.it, qui rappresentata dal Presidente e Legale Rappresentante Ing. Andrea Belloli, e-mail andrea.belloli@woodplc.com,"
      }
     }
    ],
@@ -634,14 +821,14 @@
    "unita": "mesi"
   },
   "duration": {
-   "text": "18 mesi",
+   "text": "20 mesi",
    "status": "da verificare",
    "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 6 mesi (2), 4 mesi (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1403469",
-    "page": 14,
-    "document": "Integrazioni del 16/06/2026 - PROGETTO DI MONITORAGGIO AMBIENTALE (PMA)",
-    "excerpt": "• CO: per la durata prevista di 18 mesi del cantiere si prevede la restituzione di 2 report con dati mensili per ogni mese vegetativo Ҍ I° report per i primi 12 mesi , II° report per gli ulteriori 6 mesi"
+    "url": "https://va.mite.gov.it/File/Documento/994657",
+    "page": 52,
+    "document": "Allegato al Decreto della Presidenza del Consiglio dei Ministri - Parere CTVA del 04/11/2022",
+    "excerpt": "una volta conseguite tutte le autorizzazioni ed i permessi necessari alla realizzazione ed all’esercizio dell’impianto, si prevede un periodo di durata delle attività di cantiere di circa 20 mesi. Le misure di mitigazion"
    }
   },
   "milestones": [
@@ -667,9 +854,9 @@
  },
  "documentazione": {
   "documenti": 333,
-  "pagine": 3433,
+  "pagine": 6028,
   "completa": false,
-  "da_leggere": 95
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -704,7 +891,7 @@
    "reason": "Avvio previsto il 27/07/2026, ma l'iter è proseguito; ultimo documento o atto del 31/08/2026: probabile slittamento, non ancora realizzato o in corso."
   },
   {
-   "label": "Aerogeneratori",
+   "label": "Accumulo",
    "reason": "valori diversi negli elaborati"
   },
   {
@@ -713,7 +900,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "177 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "672 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
