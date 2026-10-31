@@ -1,0 +1,444 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10715",
+ "title": "Progetto di ammodernamento (repowering), relativo all'impianto eolico esistente denominato \"Parco eolico Grottole\" da 54 MW, con dismissione degli attuali 27 aerogeneratori e sostituzione in riduzione degli stessi, con l'installazione di 12 nuovi aerogeneratori della potenza unitaria di 7,2 MW, per una potenza complessiva dell'impianto pari a 86,4 MW, e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Grottole (MT) e Miglionico (MT). Codice pratica MYTERNA n. 202201511.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10715",
+ "source": "mase",
+ "updated": "2026-10-31",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "86,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10715",
+    "excerpt": "86,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "27",
+   "status": "da documenti",
+   "sub": "3,20 MW ciascuno · altezza mozzo 118 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 12 (49), 10 (1), 6 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1047297",
+    "page": 1,
+    "document": "Avviso al Pubblico del 22/04/2024",
+    "excerpt": "Ambientale del progetto: proposta di ammodernamento complessivo (“repowering”) del “Parco Eolico Grottole” esistente da 54 MW, dismissione degli attuali 27 aerogeneratori e sostituzione in riduzione degli stessi, con l’i"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1272674",
+    "page": 86,
+    "document": "Allegato al Decreto Direttoriale MASE-VA-DEC-2025-0000393 - Parere della Commissione tecnica PNRR-PNIEC del 13/03/2025",
+    "excerpt": "- Per la realizzazione dell’opera in progetto il tempo stimato è di circa 12 mesi compresa la redazione del progetto esecutivo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "MT",
+  "comuni": [
+   "Grottole",
+   "Miglionico"
+  ],
+  "coordinate": {
+   "lat": 40.62292,
+   "lon": 16.32814,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (16 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1047038",
+    "page": 6,
+    "document": "Studio sugli effetti di shadow-flickering",
+    "excerpt": "1 Grottole (MT) 18 372 C02-A03 611782,17 | 4498050,32 | 4( | 61° |, | 151° |, | 241° | , | 331° |)"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.62292,16.32814",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "FRI-EL Grottole - S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02471970216",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Del Grano N 3 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fri-el_grottole@legalmail.it",
+     "occurrences": 115,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1047192",
+      "page": 1,
+      "document": "Studio di impatto Ambientale",
+      "excerpt": "Piazza del Grano 3 - 39100 Bolzano (BZ) fri-el_grottole@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10715"
+   }
+  },
+  {
+   "name": "Ing. Massimo Lo Russo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1047192",
+    "page": 1,
+    "document": "Studio di impatto Ambientale",
+    "excerpt": "Progettista:"
+   }
+  },
+  {
+   "name": "Dott. Antonio Petriccione",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1047033",
+    "page": 45,
+    "document": "Relazione geologica",
+    "excerpt": "Il Geologo Dott. Antonio Petriccione"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Inge S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3483850177",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1047033",
+      "page": 62,
+      "document": "Relazione geologica",
+      "excerpt": "81020 Castel Morrone (CE) Tel/Fax 0823399115 Cell. 3483850177 - 3486033921"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Deposito opere civili",
+    "start": 0.18,
+    "end": 2.69,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Picchettamento delle aree",
+    "start": 0.42,
+    "end": 2.19,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione area di cantiere e recinzione provissionale",
+    "start": 0.67,
+    "end": 2.44,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle piazzole per la dismissione degli aereogeneratori",
+    "start": 1.17,
+    "end": 5.18,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Dismissione aereogeneratori",
+    "start": 1.67,
+    "end": 6.93,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Dismissione cavidotti esistenti interni al parco",
+    "start": 2.17,
+    "end": 6.43,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Dismissione piazzole e viabilità parco esistente",
+    "start": 3.17,
+    "end": 7.43,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione della nuova viabilità",
+    "start": 4.41,
+    "end": 6.93,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle piazzole di costruzioni per gli aereogeneratori",
+    "start": 5.16,
+    "end": 7.93,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Realizzazione fondazioni c.a. aereogeneratori",
+    "start": 6.16,
+    "end": 9.17,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e montaggio aereogeneratori",
+    "start": 6.91,
+    "end": 9.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti MT interni al parco nuovi aereogeneratori",
+    "start": 7.66,
+    "end": 9.92,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Dismissione e realizzazione cavidotti dorsali",
+    "start": 5.16,
+    "end": 10.17,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Stazione elettrica di utenza ( quadri in MT, FPO, nuovi trasformatori",
+    "start": 9.15,
+    "end": 10.67,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Regolazione e Collaudo finale",
+    "start": 9.65,
+    "end": 11.17,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione finale del sito",
+    "start": 7.16,
+    "end": 11.71,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 11.71,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1047045",
+   "page": 2,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1272674",
+    "page": 86,
+    "document": "Allegato al Decreto Direttoriale MASE-VA-DEC-2025-0000393 - Parere della Commissione tecnica PNRR-PNIEC del 13/03/2025",
+    "excerpt": "- Per la realizzazione dell’opera in progetto il tempo stimato è di circa 12 mesi compresa la redazione del progetto esecutivo."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1047045"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma delle fasi attuative di dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/1047191"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 207,
+  "pagine": 956,
+  "completa": false,
+  "da_leggere": 87
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Fri-El Grottole S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 86.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GROTTOLE",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "MT",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "6 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
