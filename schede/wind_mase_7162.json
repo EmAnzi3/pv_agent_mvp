@@ -5,7 +5,7 @@
  "title": "Impianto per la produzione di energia da fonte eolica denominato \"Mondonuovo\" di potenza complessiva pari a 54 MW localizzato nei comuni di Mesagne (BR) ed opere elettriche localizzate nel comune di Brindisi",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7162",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
@@ -23,8 +23,8 @@
    "key": "wtg",
    "label": "Aerogeneratori",
    "value": "9",
-   "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 11 (29), 2 (5), 7 (1)",
+   "status": "da verificare",
+   "sub": "6,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore più ricorrente negli elaborati; altri valori: 11 (93), 2 (6), 4 (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/986626",
     "page": 3,
@@ -37,7 +37,7 @@
    "label": "Durata cantiere",
    "value": "23 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 30 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 30 mesi (1), 10-13 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/402145",
     "page": 6,
@@ -55,7 +55,7 @@
   "coordinate": {
    "lat": 40.53017,
    "lon": 17.85216,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (132 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (148 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1432933",
     "page": 4,
@@ -66,7 +66,17 @@
   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.53017,17.85216",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 40.5318,
+   "lon": 17.85473,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/365985",
+    "page": 92,
+    "document": "Relazione Paesaggistica",
+    "excerpt": "741662"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.53180,17.85473"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -104,7 +114,7 @@
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 17,
+     "occurrences": 18,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1329366",
       "page": 4,
@@ -201,12 +211,71 @@
     {
      "type": "PEC",
      "value": "e.onclimateerenewablesitaliasrl@legalmail.it",
-     "occurrences": 56,
+     "occurrences": 108,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/365863",
       "page": 1,
       "document": "Elenco elaborati",
       "excerpt": "P.IVA/C.F. 06400370968 pec: e.onclimateerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Giuseppe Marti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "e.marti@reeione.puelia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/418545",
+      "page": 25,
+      "document": "Osservazioni Regione Puglia- DIPARTIMENTO MOBILITÀ, QUALITÀ URBANA, OPERE PUBBLICHE, ECOLOGIA E PAESAGGIO",
+      "excerpt": "P.E.C; ooa.farindÌ5Ì@oec.rupar.pugiia.it Dirigente di Servizio Dott. Giuseppe MARTI Tel: 0831544321 mail: e.marti@reeione.puelia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0831544321",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/418545",
+      "page": 25,
+      "document": "Osservazioni Regione Puglia- DIPARTIMENTO MOBILITÀ, QUALITÀ URBANA, OPERE PUBBLICHE, ECOLOGIA E PAESAGGIO",
+      "excerpt": "P.E.C; ooa.farindÌ5Ì@oec.rupar.pugiia.it Dirigente di Servizio Dott. Giuseppe MARTI Tel: 0831544321 mail: e.marti@reeione.puelia.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geol. Nicola Palumbo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0809182238",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/378834",
+      "page": 5,
+      "document": "Osservazioni dell'Ente AdB Autorita' di Bacino Distrettuale dell'Appennino Meridionale Sede Puglia in data 16/10/2019",
+      "excerpt": "Geol. Nicola Palumbo Tel. 080/9182238"
      }
     }
    ],
@@ -246,6 +315,54 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "E.On Climate & Renwables Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "e.onclimateerenewablesitaliasrl@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/418545",
+      "page": 2,
+      "document": "Osservazioni Regione Puglia- DIPARTIMENTO MOBILITÀ, QUALITÀ URBANA, OPERE PUBBLICHE, ECOLOGIA E PAESAGGIO",
+      "excerpt": "E.On Climate & Renwables Italia S.r.l. e.onclimateerenewablesitaliasrl@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "E.On Climate &Renwable Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "e.onclimateerenewablesitalia@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/573664",
+      "page": 26,
+      "document": "Parere della Regione Puglia - Sezione Autorizzazioni Ambientali in data 07/04/2020",
+      "excerpt": "E.On Climate &Renwable Italia S.r.l. PEC: e.onclimateerenewablesitalia@pec.it"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -253,7 +370,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "23 mesi",
+  "durata_cantiere": "22 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -265,11 +382,242 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Accesso al Parco - Adeguamento Strade esistenti",
+    "start": 2.98,
+    "end": 7.89,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Accesso al Parco - Realizzazione Strade nuove",
+    "start": 2.95,
+    "end": 12.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole di servizio",
+    "start": 5.94,
+    "end": 15.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di fondazioni",
+    "start": 9.97,
+    "end": 17.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio aerogeneratori",
+    "start": 16.84,
+    "end": 21.04,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione SET - Sottostazione Elettrica Trasformazione",
+    "start": 11.14,
+    "end": 18.53,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione dell'edificio di controllo",
+    "start": 11.94,
+    "end": 16.86,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di cavidotto MT",
+    "start": 5.34,
+    "end": 18.63,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Interventi di mitigazione",
+    "start": 19.3,
+    "end": 22.32,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smobilizzo del cantiere",
+    "start": 19.3,
+    "end": 22.32,
+    "level": 0,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 22.32,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/365940",
+   "page": 2,
+   "document": "Cronoprogramma esecuzione dei lavori",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "25",
+     "start": 24.0,
+     "end": 25.0
+    },
+    {
+     "label": "26",
+     "start": 25.0,
+     "end": 26.0
+    },
+    {
+     "label": "27",
+     "start": 26.0,
+     "end": 27.0
+    },
+    {
+     "label": "28",
+     "start": 27.0,
+     "end": 28.0
+    },
+    {
+     "label": "29",
+     "start": 28.0,
+     "end": 29.0
+    },
+    {
+     "label": "30",
+     "start": 29.0,
+     "end": 30.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "23 mesi",
    "status": "da verificare",
@@ -286,21 +634,16 @@
    "document": "Cronoprogramma esecuzione dei lavori",
    "url": "https://va.mite.gov.it/File/Documento/365940"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
-  "altri": [
-   {
-    "document": "Cronoprogramma esecuzione dei lavori",
-    "url": "https://va.mite.gov.it/File/Documento/365940"
-   }
-  ],
+  "note": null,
+  "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 471,
-  "pagine": 4457,
-  "completa": false,
-  "da_leggere": 111
+  "pagine": 6795,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -331,12 +674,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "1380 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1503 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
