@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico con storage denominato \"Sava - Maruggio\" costituito da 22 aerogeneratori da 6 MW, per complessivi 132 MW, ed uno storage da 50 MW, per una potenza complessiva di 182 MW, da realizzarsi nei comuni di Erchie (BR), Manduria (TA), Sava (TA), Maruggio (TA) e Torricella (TA)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7990",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "22",
    "status": "da verificare",
-   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (10), 5 (10), 10 (7)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (45), 5 (35), 10 (26)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/599190",
     "page": 3,
@@ -36,8 +36,8 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "50 MW / 200 MWh",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 182 MW (2)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 182 MW (10), 6 MW (1), 132 MW (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/598912",
     "page": 3,
@@ -49,8 +49,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "6 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/598913",
     "page": 17,
@@ -72,7 +72,7 @@
   "coordinate": {
    "lat": 40.36442,
    "lon": 17.60824,
-   "tipo": "centro dei vertici delle aree d'impianto (83 riferimenti concordi)",
+   "tipo": "centro dei vertici delle aree d'impianto (134 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/598911",
     "page": 141,
@@ -108,7 +108,19 @@
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "redenergysrl@pec.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613471",
+      "page": 1,
+      "document": "Richiesta integrazioni della documentazione - CTPNRR-PNIEC del 29/03/2022",
+      "excerpt": "Alla Red Energy Srl redenergysrl@pec.it"
+     }
+    }
+   ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7990"
@@ -146,9 +158,20 @@
    "office": "Via Fratelli Salvioni 6 20154 Milano Mi",
    "contacts": [
     {
+     "type": "PEC",
+     "value": "projetto@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/654759",
+      "page": 2,
+      "document": "RELAZIONE ASSEVERATA AREE PERCORSE DAL FUOCO",
+      "excerpt": "Sede operativa 4: Calea Floreasca nr 60 et Tel: +39 0999574694 – pec: projetto@pec.it"
+     }
+    },
+    {
      "type": "E-mail",
      "value": "studio@projetto.eu",
-     "occurrences": 112,
+     "occurrences": 316,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/598911",
       "page": 1,
@@ -175,7 +198,7 @@
     {
      "type": "PEC",
      "value": "angelo.leggieri@pec.it",
-     "occurrences": 3,
+     "occurrences": 5,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/598914",
       "page": 2,
@@ -186,7 +209,7 @@
     {
      "type": "E-mail",
      "value": "dott.angeloleggieri@gmail.com",
-     "occurrences": 3,
+     "occurrences": 5,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/598914",
       "page": 2,
@@ -232,14 +255,14 @@
   "source": null,
   "asse": null,
   "duration": {
-   "text": "30 giorni",
+   "text": "6 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 60 giorni (circa 2 mesi) (1), 6 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (2), 30 giorni (1), 60 giorni (circa 2 mesi) (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/598911",
-    "page": 143,
-    "document": "Studio impatto ambientale",
-    "excerpt": " Allestimento cantiere (circa 30 giorni); "
+    "url": "https://va.mite.gov.it/File/Documento/598913",
+    "page": 17,
+    "document": "Valutazione di Impatto Acustico Previsionale di Cantiere",
+    "excerpt": "per tutto il periodo della sosta. ➢ le operazioni di cantiere, che si svilupperanno per un periodo di circa 6 mesi, saranno effettuate all’interno della fascia oraria compresa tra le 8:30 e le"
    }
   },
   "milestones": [],
@@ -251,9 +274,9 @@
  },
  "documentazione": {
   "documenti": 516,
-  "pagine": 1140,
+  "pagine": 3837,
   "completa": false,
-  "da_leggere": 396
+  "da_leggere": 276
  },
  "confronto": [
   {
@@ -288,12 +311,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Accumulo",
+   "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "1010 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "3965 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
