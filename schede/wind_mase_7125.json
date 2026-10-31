@@ -5,31 +5,45 @@
  "title": "Impianto di produzione di energia elettrica da fonte eolica denominato \"Venusia\", costituito da 10 aerogeneratori, ciascuno di potenza pari a 4,5 MW, per una potenza complessiva di 45 MW.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7125",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
-   "status": "verificato",
-   "value": "45 MW",
-   "sub": null,
+   "status": "da documenti",
+   "value": "4,5 MW",
+   "sub": "Valore ricorrente negli elaborati (30 volte); il titolo riporta 45 MW (probabile refuso).",
    "source": {
-    "document": "titolo del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7125",
-    "excerpt": "45 MW"
+    "url": "https://va.mite.gov.it/File/Documento/1297352",
+    "page": 6,
+    "document": "Piano preliminare di utilizzo delle terre e rocce da scavo e caratterizzazione delle terre e rocce da scavo",
+    "excerpt": "l’impianto di progetto prevedeva la realizzazione di n° 10 aerogeneratori della potenza nominale pari a 4,5 MW per un massimo complessivo di 45 MW; turbine eoliche caratterizzate da un rotore a 3 pale a torre tubolare."
    }
   },
   {
    "key": "wtg",
    "label": "Aerogeneratori",
-   "value": "8",
-   "status": "da documenti",
-   "sub": "5,62 MW ciascuno · altezza mozzo 112 m · diametro rotore 149,1 m · Valore prevalente negli elaborati; altri valori: 10 (6), 4 (4), 1 (1)",
+   "value": "10",
+   "status": "da verificare",
+   "sub": "0,45 MW ciascuno · altezza mozzo 112 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 8 (46), 6 (8), 4 (4)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1297263",
-    "page": 4,
-    "document": "Relazione dimensionamento impianto di terra SET",
-    "excerpt": "verranno descritte le metodologie di calcolo per il dimensionamento dei cavidotti di MT e AT. L’impianto sarà costituito da 8 aerogeneratori del parco eolico sono ubicati: n. 3 (denominati PEVE_01; PEVE_07; PEVE_09) nel "
+    "url": "https://va.mite.gov.it/File/Documento/1297352",
+    "page": 6,
+    "document": "Piano preliminare di utilizzo delle terre e rocce da scavo e caratterizzazione delle terre e rocce da scavo",
+    "excerpt": "In sintesi, nella sua versione antecedente alle integrazioni volontarie, l’impianto di progetto prevedeva la realizzazione di n° 10 aerogeneratori della potenza nominale pari a 4,5 MW per un massimo complessivo di 45"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "10 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1246656",
+    "page": 40,
+    "document": "Clima e salute pubblica",
+    "excerpt": "l’arco del progetto; considerando che nel cronoprogramma le attività sono suddivise in un arco temporale di 10 mesi, si prevede un numero di trasporti pari a circa 95 mezzi al mese per 26 giorni lavorativi 4 viaggi al"
    }
   }
  ],
@@ -44,8 +58,8 @@
   ],
   "coordinate": {
    "lat": 40.9248,
-   "lon": 15.79454,
-   "tipo": "centro della tavola georeferenziata di progetto (37 riferimenti concordi)",
+   "lon": 15.79466,
+   "tipo": "centro della tavola georeferenziata di progetto (84 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1297334",
     "page": 3,
@@ -53,10 +67,20 @@
     "excerpt": "Monografie tombini"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.92480,15.79454",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.92480,15.79466",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 40.93384,
+   "lon": 15.80724,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1246654",
+    "page": 28,
+    "document": "Documento previsionale di impatto acustico",
+    "excerpt": "567200 4531719"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.93384,15.80724"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -64,7 +88,8 @@
    "name": "EGM Project S.r.l.",
    "kind": "società",
    "roles": [
-    "Proponente"
+    "Proponente",
+    "Progettista"
    ],
    "vat": "02094310766",
    "vat_group": false,
@@ -75,9 +100,9 @@
     {
      "type": "PEC",
      "value": "egmproject@pec.it",
-     "occurrences": 685,
+     "occurrences": 732,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1297261",
+      "url": "https://va.mite.gov.it/File/Documento/1297125",
       "page": 2,
       "document": "Relazione sui materiali SET",
       "excerpt": "EGM PROJECT SRL - Via Vincenzo Verrastro - 15/A- 85100 Potenza info@egmproject.it - egmproject@pec.it"
@@ -86,9 +111,9 @@
     {
      "type": "E-mail",
      "value": "info@egmproject.it",
-     "occurrences": 685,
+     "occurrences": 732,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1297261",
+      "url": "https://va.mite.gov.it/File/Documento/1297125",
       "page": 2,
       "document": "Relazione sui materiali SET",
       "excerpt": "EGM PROJECT SRL - Via Vincenzo Verrastro - 15/A- 85100 Potenza info@egmproject.it - egmproject@pec.it"
@@ -96,7 +121,7 @@
     }
    ],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1297265",
+    "url": "https://va.mite.gov.it/File/Documento/1297129",
     "page": 80,
     "document": "Relazione Geologica e Rapporto indagini- Area Stazione di Utenza (SET)",
     "excerpt": "Committente EGM Project Srl"
@@ -117,11 +142,11 @@
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 203,
+     "occurrences": 233,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1363250",
+      "url": "https://va.mite.gov.it/File/Documento/1363716",
       "page": 1,
-      "document": "Integrazioni del 05/02/2026 - Nota di accompagnamento istanza RWE riscontro alla CEV del 29.12.2025",
+      "document": "Integrazioni del 05/02/2026 - Riscontro alla Determina MASE Prot. 0247068 del 29.12.2025 relativo alla verifica di ottemperanza delle Condizioni Ambientali n.1-3-4.",
       "excerpt": "P.IVA/C.F. 06400370968 PEC: rwerenewablesitaliasrl@legalmail.it"
      }
     }
@@ -148,7 +173,7 @@
      "value": "info@engeosrl.it",
      "occurrences": 26,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1297265",
+      "url": "https://va.mite.gov.it/File/Documento/1297129",
       "page": 70,
       "document": "Relazione Geologica e Rapporto indagini- Area Stazione di Utenza (SET)",
       "excerpt": "Tel. + 39 0971 26378 Fax +39 0971 1940737 e-mail: info@engeosrl.it"
@@ -156,7 +181,7 @@
     }
    ],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1298131",
+    "url": "https://va.mite.gov.it/File/Documento/1297355",
     "page": 566,
     "document": "Rapporto Tecnico delle Indagini Area Parco - Aerogeneratori",
     "excerpt": "Committente Engineering Geology Srl"
@@ -175,29 +200,10 @@
    "office": null,
    "contacts": [],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1297265",
+    "url": "https://va.mite.gov.it/File/Documento/1297129",
     "page": 30,
     "document": "Relazione Geologica e Rapporto indagini- Area Stazione di Utenza (SET)",
     "excerpt": "IL GEOLOGO"
-   }
-  },
-  {
-   "name": "Ing. Carmen Martone",
-   "kind": "persona",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1297327",
-    "page": 7,
-    "document": "Inquadramento generale di progetto su CTR",
-    "excerpt": "PROPONENTE: PROGETTAZIONE: RWE es Ing. Carmen Martone"
    }
   }
  ],
@@ -217,7 +223,7 @@
      "value": "laboratorio@geotest.it",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1298131",
+      "url": "https://va.mite.gov.it/File/Documento/1297355",
       "page": 288,
       "document": "Rapporto Tecnico delle Indagini Area Parco - Aerogeneratori",
       "excerpt": "t E-MAIL: laboratorio@geotest.it- http://www.geotest.it - C.F.eP.IVA: 01073440768"
@@ -228,6 +234,78 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "ISO 9001 certificata da Bureau Veritas Italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiorinnovabili.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1335271",
+      "page": 2,
+      "document": "Integrazioni del 09/12/2025 - PEVE_A_6",
+      "excerpt": "Azienda con sistema di gestione qualità ISO 9001 certificata da Bureau Veritas Italia S.p.A. www.studiorinnovabili.it - info@studiorinnovabili.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "E.ON Climate & Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "e.onclimateerenewablesitaliasrl@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/357683",
+      "page": 1,
+      "document": "QUADRO DI RIFERIMENTO PROGRAMMATICO",
+      "excerpt": "P.IVA/C.F. 06400370968 pec: e.onclimateerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollogenerale@pec.enav.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/525434",
+      "page": 26,
+      "document": "Integrazioni del 20/07/2021 - Relazione Generale rev.02",
+      "excerpt": "00138, Roma (RM) protocollogenerale@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -235,7 +313,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": null,
+  "durata_cantiere": "10 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -252,7 +330,17 @@
   "months": 1,
   "source": null,
   "asse": null,
-  "duration": null,
+  "duration": {
+   "text": "10 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1246656",
+    "page": 40,
+    "document": "Clima e salute pubblica",
+    "excerpt": "l’arco del progetto; considerando che nel cronoprogramma le attività sono suddivise in un arco temporale di 10 mesi, si prevede un numero di trasporti pari a circa 95 mezzi al mese per 26 giorni lavorativi 4 viaggi al"
+   }
+  },
   "milestones": [],
   "document": {
    "document": "PROGETTO DI DISMISSIONE DELL'IMPIANTO (Relazione sulle operazioni di dismissione+Computo metrico delle operazioni di dismissione+Cronoprogramma delle fasi attuative di dismissione)",
@@ -274,9 +362,9 @@
  },
  "documentazione": {
   "documenti": 702,
-  "pagine": 3776,
+  "pagine": 5689,
   "completa": false,
-  "da_leggere": 342
+  "da_leggere": 222
  },
  "confronto": [
   {
@@ -307,8 +395,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Potenza",
+   "reason": "il titolo riporta 45 MW, gli elaborati 4,5 MW"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "913 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1040 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
