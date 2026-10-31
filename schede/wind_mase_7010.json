@@ -1,0 +1,165 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7010",
+ "title": "Progetto di ottimizzazione del Parco eolico da 96 MW localizzato in comune di Ulassai",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7010",
+ "source": "mase",
+ "updated": "2026-10-31",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "96 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7010",
+    "excerpt": "96 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "48",
+   "status": "da documenti",
+   "sub": "2,00 MW ciascuno · altezza mozzo 67 m · diametro rotore 80 m · Valore prevalente negli elaborati; altri valori: 6 (2), 4 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/340825",
+    "page": 6,
+    "document": "Relazione illustrativa degli interventi in progetto",
+    "excerpt": "Il Parco Eolico di Ulassai, di titolarità della Società Sardeolica S.r.l. – Gruppo Saras, è costituito da 48 aerogeneratori di tipo Vestas V80, di potenza unitaria pari a 2 MW, per una capacità complessiva di 96 MW."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "TA",
+  "comuni": [
+   "Ulassai"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Ulassai%2C+TA%2C+Sardegna",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Sardeolica S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "comunicazioni.sardeolica@pec.grupposaras.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/342601",
+      "page": 1,
+      "document": "Comunicazione DVA esito valutazione del 13/03/2013 - Progetto di ottimizzazione del Parco eolico da 96 MW localizzato in comune di Ulassai",
+      "excerpt": "Sardeolica S.r.l. comunicazioni.sardeolica@pec.grupposaras.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7010"
+   }
+  },
+  {
+   "name": "Coordinamento Fad System S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/340825",
+    "page": 80,
+    "document": "Relazione illustrativa degli interventi in progetto",
+    "excerpt": "PROGETTAZIONE: Coordinamento Fad System s.r.l. –"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 10,
+  "pagine": 129,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Sardeolica S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 96.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ULASSAI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "conflittuale"
+  }
+ ],
+ "da_verificare": [],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
