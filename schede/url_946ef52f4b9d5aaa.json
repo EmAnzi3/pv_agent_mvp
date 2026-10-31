@@ -5,14 +5,14 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la costruzione e l'esercizio di un impianto agrivoltaico per la produzione di energia elettrica da fonte rinnovabile solare e delle relative opere connesse denominato F-CORTE, con potenza di generaz",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9902",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "26 MW",
-   "sub": "Dagli elaborati (90 occorrenze); il titolo non indica la potenza; altri valori: 10 MW, 25 MW, 29,25 MW",
+   "sub": "Dagli elaborati (191 occorrenze); il titolo non indica la potenza; altri valori: 10 MW, 18 MW, 19 MW",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/858510",
     "page": 1,
@@ -46,11 +46,24 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "10 MW",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1398684",
+    "page": 16,
+    "document": "Allegato al Decreto Direttoriale - Parere della CT PNRR-PNIEC del 09/10/2025",
+    "excerpt": "Progetto di un impianto agrivoltaico, denominato \"Sassari 2\", di potenza nominale pari a 25 MW, e delle relative opere di rete, integrato con un sistema di accumulo da 10 MW, da realizzarsi nel Comune di Sassari (SS), in"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "12 mesi",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 10 mesi (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 8 mesi (2), 10 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/858479",
     "page": 360,
@@ -68,7 +81,7 @@
   "coordinate": {
    "lat": 40.74648,
    "lon": 8.31164,
-   "tipo": "centro della tavola georeferenziata di progetto (9 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (12 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/858438",
     "page": 1,
@@ -98,7 +111,7 @@
     {
      "type": "PEC",
      "value": "asja.nurra@pec.it",
-     "occurrences": 67,
+     "occurrences": 78,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/858479",
       "page": 1,
@@ -110,25 +123,6 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9902"
-   }
-  },
-  {
-   "name": "Enerland S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1116404",
-    "page": 4,
-    "document": "Inntegrazioni del 26/07/2024 - Relazione tecnica illustrativa stazione di rete",
-    "excerpt": "La società proponente Enerland srl, nell’ambito del proprio piano di sviluppo delle fonti energetiche rinnovabili nella Regione Sardegna, ha richiesto la soluzione di connessione alla"
    }
   }
  ],
@@ -157,8 +151,8 @@
   "asse": null,
   "duration": {
    "text": "12 mesi",
-   "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 4 giorni (1), 1 mese (1)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 8 mesi (2), 4 giorni (1), 1 mese (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/858479",
     "page": 360,
@@ -183,9 +177,9 @@
  },
  "documentazione": {
   "documenti": 137,
-  "pagine": 1605,
-  "completa": false,
-  "da_leggere": 17
+  "pagine": 2095,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -220,12 +214,8 @@
    "reason": "non indicata nel titolo: valore ricavato dagli elaborati"
   },
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Recapiti",
-   "reason": "8 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "10 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
