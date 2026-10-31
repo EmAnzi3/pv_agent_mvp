@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico costituito da n. 31 aerogeneratori da 4,5 MW, per una potenza complessiva di 139,50 MW e relative opere di connessione alla RTN, localizzato nei Comuni di Terranova da Sibari, San Demetrio Corone, Spezzano Albanese, Corigliano - Rossano, Santa Sofia D'Epiro e Tarsia in Provincia di Cosenza.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10573",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "31",
    "status": "da documenti",
-   "sub": "4,50 MW ciascuno · altezza mozzo 125 m · diametro rotore 166 m · Valore prevalente negli elaborati; altri valori: 3 (12), 16 (7), 4 (7)",
+   "sub": "4,50 MW ciascuno · altezza mozzo 125 m · diametro rotore 166 m · Valore prevalente negli elaborati; altri valori: 3 (20), 4 (13), 10 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1386569",
     "page": 3,
@@ -33,23 +33,11 @@
    }
   },
   {
-   "key": "impianto",
-   "label": "Impianto",
-   "value": "Agrivoltaico",
-   "status": "da documenti",
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1338967",
-    "page": 21,
-    "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere del Ministero della Cultura - Soprintendenza Speciale per il PNRR in data 18/11/2025",
-    "excerpt": "Nell’area ricompresa nel buffer di 10,4 km ricade anche l’impianto Agrivoltaico denominato \"Fattoria Solare San"
-   }
-  },
-  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "9 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (2), 354 giorni (circa 12 mesi) (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1192577",
     "page": 10,
@@ -71,9 +59,9 @@
    "Santa Sofia D'Epiro"
   ],
   "coordinate": {
-   "lat": 39.70383,
-   "lon": 16.33854,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (58 riferimenti concordi)",
+   "lat": 39.70335,
+   "lon": 16.3391,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (59 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/982628",
     "page": 341,
@@ -81,7 +69,7 @@
     "excerpt": "613650,16"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.70383,16.33854",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.70335,16.33910",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -89,21 +77,21 @@
  },
  "soggetti": [
   {
-   "name": "Hergo Renewables S.p.A.",
+   "name": "Hergo Renewables S.p.A. !!HERGO",
    "kind": "società",
    "roles": [
     "Proponente"
    ],
-   "vat": null,
+   "vat": "10416260965",
    "vat_group": false,
-   "verified": false,
+   "verified": true,
    "esecuzione": null,
-   "office": null,
+   "office": "Via Privata Maria Teresa 8 20123 Milano Mi",
    "contacts": [
     {
      "type": "PEC",
      "value": "hergorenewables@legalmail.it",
-     "occurrences": 3,
+     "occurrences": 4,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1392839",
       "page": 1,
@@ -210,6 +198,30 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "AUSTEy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@austex.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/982627",
+      "page": 1,
+      "document": "Valutazione della produzione attesa",
+      "excerpt": "via Privata Maria Teresa, 8 - 20123 Milano Tel: 02/36570.811 E-mail: info@austex.eu Fax: 02/36570.801"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -217,7 +229,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "19 mesi (cronoprogramma)",
+  "durata_cantiere": "6 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -231,68 +243,365 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Forniture materiali stazione",
+    "name": "IMPIANTO EOLICO TERRANOVA DA SIBARI",
     "start": 0.0,
-    "end": 12.0,
-    "level": 0,
-    "summary": false,
-    "duration": "360 g"
+    "end": 5.66,
+    "level": 1,
+    "duration": "534 giorni",
+    "summary": true
    },
    {
-    "name": "Apertura cantiere e realizzazione viabilità di accesso",
-    "start": 4.97,
-    "end": 7.0,
-    "level": 0,
-    "summary": false,
-    "duration": "40 g"
+    "name": "Apertura cantiere",
+    "start": 0.0,
+    "end": 0.2,
+    "level": 2,
+    "duration": "4 sett",
+    "summary": false
    },
    {
-    "name": "Sistemazione area di stazione",
-    "start": 5.97,
-    "end": 7.0,
-    "level": 0,
-    "summary": false,
-    "duration": "20 g"
+    "name": "REALIZZAZIONE NUOVO IMPIANTO",
+    "start": 0.21,
+    "end": 3.96,
+    "level": 2,
+    "duration": "354 giorni",
+    "summary": true
    },
    {
-    "name": "Lavori civili stazione 380/120/36 kV",
-    "start": 6.98,
-    "end": 16.01,
-    "level": 0,
-    "summary": false,
-    "duration": "250 g"
+    "name": "Viabilità di accesso (realizzazione e adeguamenti) e piazzole100 giorni",
+    "start": 0.21,
+    "end": 1.26,
+    "level": 3,
+    "summary": false
    },
    {
-    "name": "Edificio quadro comandi",
-    "start": 9.97,
-    "end": 14.01,
-    "level": 0,
-    "summary": false,
-    "duration": "120 g"
+    "name": "Viabilità di accesso da STT01 a STT10",
+    "start": 0.21,
+    "end": 0.73,
+    "level": 3,
+    "duration": "10 sett",
+    "summary": false
    },
    {
-    "name": "Montaggi elettromeccanici stazione",
-    "start": 11.98,
-    "end": 17.0,
-    "level": 0,
-    "summary": false,
-    "duration": "132 g"
+    "name": "Piazzole da STT01 a STT10",
+    "start": 0.69,
+    "end": 1.1,
+    "level": 3,
+    "duration": "8 sett",
+    "summary": false
    },
    {
-    "name": "Montaggio sistema di controllo",
-    "start": 15.99,
-    "end": 19.01,
+    "name": "Viabilità di accesso da STT11 a STT19",
+    "start": 0.21,
+    "end": 0.94,
+    "level": 3,
+    "duration": "14 sett",
+    "summary": false
+   },
+   {
+    "name": "Piazzole da STT11 a STT19",
+    "start": 0.9,
+    "end": 1.26,
+    "level": 3,
+    "duration": "7 sett",
+    "summary": false
+   },
+   {
+    "name": "Viabilità di accesso da STT20 a STT31",
+    "start": 0.21,
+    "end": 0.73,
+    "level": 3,
+    "duration": "10 sett",
+    "summary": false
+   },
+   {
+    "name": "Piazzole da STT20 a STT31",
+    "start": 0.69,
+    "end": 1.15,
+    "level": 3,
+    "duration": "9 sett",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni aerogeneratori",
+    "start": 1.11,
+    "end": 2.74,
+    "level": 3,
+    "duration": "155 giorni",
+    "summary": false
+   },
+   {
+    "name": "Fondazione da STT01 a STT10",
+    "start": 1.11,
+    "end": 2.43,
+    "level": 3,
+    "duration": "25 sett",
+    "summary": false
+   },
+   {
+    "name": "Fondazione da STT11 a STT19",
+    "start": 1.27,
+    "end": 2.43,
+    "level": 3,
+    "duration": "22 sett",
+    "summary": false
+   },
+   {
+    "name": "Fondazione da STT20 a STT31",
+    "start": 1.17,
+    "end": 2.74,
+    "level": 3,
+    "duration": "30 sett",
+    "summary": false
+   },
+   {
+    "name": "Montaggio aerogeneratori",
+    "start": 2.68,
+    "end": 3.96,
+    "level": 3,
+    "duration": "120 giorni",
+    "summary": false
+   },
+   {
+    "name": "Installazione aerogeneratori da STT01 a STT10",
+    "start": 2.68,
+    "end": 3.48,
+    "level": 3,
+    "duration": "15 sett",
+    "summary": false
+   },
+   {
+    "name": "Installazione aerogeneratori da STT11 a STT19",
+    "start": 2.68,
+    "end": 3.43,
+    "level": 3,
+    "duration": "14 sett",
+    "summary": false
+   },
+   {
+    "name": "Installazione aerogeneratori da STT20 a STT31",
+    "start": 3.0,
+    "end": 3.96,
+    "level": 3,
+    "duration": "18 sett",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione Cavidotti 30 kV e Cavidotto 150 kV",
+    "start": 0.58,
+    "end": 2.64,
+    "level": 3,
+    "duration": "195 giorni",
+    "summary": false
+   },
+   {
+    "name": "Linea da STT01 a STT10",
+    "start": 0.58,
+    "end": 1.63,
+    "level": 3,
+    "duration": "20 sett",
+    "summary": false
+   },
+   {
+    "name": "Linea da STT11 a STT19",
+    "start": 0.58,
+    "end": 1.2,
+    "level": 3,
+    "duration": "12 sett",
+    "summary": false
+   },
+   {
+    "name": "Linea da STT20 a STT31",
+    "start": 0.58,
+    "end": 1.58,
+    "level": 3,
+    "duration": "19 sett",
+    "summary": false
+   },
+   {
+    "name": "Linea di connessione 150 kV da SSE Utente a SE RTN",
+    "start": 2.44,
+    "end": 2.64,
+    "level": 3,
+    "duration": "4 sett",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione CABINA DI RACCOLTA 36 kV",
+    "start": 0.21,
+    "end": 0.73,
+    "level": 3,
+    "duration": "50 giorni",
+    "summary": false
+   },
+   {
+    "name": "Opere civili, elettriche e meccaniche",
+    "start": 0.21,
+    "end": 0.73,
+    "level": 3,
+    "duration": "10 sett",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione 8 Aree di Trasbordo",
+    "start": 0.21,
+    "end": 0.99,
+    "level": 3,
+    "duration": "75 giorni",
+    "summary": false
+   },
+   {
+    "name": "Opere civili",
+    "start": 0.21,
+    "end": 0.99,
+    "level": 3,
+    "duration": "15 sett",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione SSE Utente 150/30 kV",
+    "start": 0.21,
+    "end": 2.32,
+    "level": 3,
+    "duration": "200 giorni",
+    "summary": false
+   },
+   {
+    "name": "Altra sezione del cronoprogramma",
+    "separator": true,
+    "start": 0.0,
+    "end": 0.0,
+    "level": 0
+   },
+   {
+    "name": "Opere civili, elettriche e meccaniche",
+    "start": 0.21,
+    "end": 2.32,
+    "level": 3,
+    "duration": "40 sett",
+    "summary": false
+   },
+   {
+    "name": "Espianto e reimpianto Ulivi",
+    "start": 0.21,
+    "end": 2.21,
+    "level": 3,
+    "duration": "190 giorni",
+    "summary": false
+   },
+   {
+    "name": "Espianto e reimpianto N°3000 Ulivi",
+    "start": 0.21,
+    "end": 2.21,
+    "level": 3,
+    "duration": "38 sett",
+    "summary": false
+   },
+   {
+    "name": "COMMISSIONING E AVVIAMENTO",
+    "start": 3.96,
+    "end": 5.66,
+    "level": 2,
+    "duration": "160 giorni",
+    "summary": true
+   },
+   {
+    "name": "Commissioning",
+    "start": 3.96,
+    "end": 5.23,
+    "level": 3,
+    "duration": "120 giorni",
+    "summary": false
+   },
+   {
+    "name": "Commissioning da STT01 a STT10",
+    "start": 3.96,
+    "end": 5.02,
+    "level": 3,
+    "duration": "20 sett",
+    "summary": false
+   },
+   {
+    "name": "Commissioning da STT11 a STT19",
+    "start": 3.96,
+    "end": 4.91,
+    "level": 3,
+    "duration": "18 sett",
+    "summary": false
+   },
+   {
+    "name": "Commissioning da STT20 a STT31",
+    "start": 3.96,
+    "end": 5.23,
+    "level": 3,
+    "duration": "24 sett",
+    "summary": false
+   },
+   {
+    "name": "Commissioning CABINA DI RACCOLTA",
+    "start": 3.96,
+    "end": 4.12,
+    "level": 3,
+    "duration": "3 sett",
+    "summary": false
+   },
+   {
+    "name": "Commissioning SSE Utente 150/30 kV",
+    "start": 3.96,
+    "end": 4.49,
+    "level": 3,
+    "duration": "10 sett",
+    "summary": false
+   },
+   {
+    "name": "Dismissione cantiere",
+    "start": 5.23,
+    "end": 5.66,
+    "level": 3,
+    "duration": "8 sett",
+    "summary": false
+   },
+   {
+    "name": "Task Project",
+    "start": 0.32,
+    "end": 3.27,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Split External Tasks Project: Cronoprogramma_AP",
+    "start": 0.3,
+    "end": 4.52,
     "level": 0,
-    "summary": false,
-    "duration": "70 g"
+    "summary": false
+   },
+   {
+    "name": "Date: mar External",
+    "start": 1.57,
+    "end": 2.01,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "External",
+    "start": 4.04,
+    "end": 4.52,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Summary Inactive Task",
+    "start": 0.3,
+    "end": 4.52,
+    "level": 3,
+    "summary": false
    }
   ],
   "unit": "month",
-  "months": 19.01,
+  "months": 5.66,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/1192578",
-   "page": 16,
-   "document": "Integrazioni del 12/12/2024 - IT-VesSco-Gem-E-EG-RE-01_Relazione tecnica illustrativa",
+   "url": "https://va.mite.gov.it/File/Documento/982605",
+   "page": 2,
+   "document": "Cronoprogramma lavori",
    "excerpt": ""
   },
   "asse": {
@@ -397,6 +706,31 @@
      "label": "M20",
      "start": 19.0,
      "end": 20.0
+    },
+    {
+     "label": "M21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "M22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "M23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "M24",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "M25",
+     "start": 24.0,
+     "end": 25.0
     }
    ],
    "unita": "mesi"
@@ -404,7 +738,7 @@
   "duration": {
    "text": "9 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 giorni (2), 50 giorni (2), 5 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 giorni (2), 50 giorni (2), 5 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1192577",
     "page": 10,
@@ -418,20 +752,15 @@
    "url": "https://va.mite.gov.it/File/Documento/982605"
   },
   "note": null,
-  "altri": [
-   {
-    "document": "Cronoprogramma lavori",
-    "url": "https://va.mite.gov.it/File/Documento/982605"
-   }
-  ],
+  "altri": [],
   "durate_fasi": [],
   "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 219,
-  "pagine": 3661,
-  "completa": false,
-  "da_leggere": 99
+  "pagine": 5899,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -467,7 +796,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "490 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "573 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
