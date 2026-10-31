@@ -5,14 +5,14 @@
  "title": "Intervento di realizzazione di un impianto fotovoltaico a terra della potenza di 39 Mw in AC e 40 Mw in DC e delle relative opere di connessione alla RTN, denominato “EG MARCONI\" Provvedimento Autorizzatorio Unico Regionale n° G01298 del 09/02/2022 Determinazione n° G14313 del 22/11/2021 Favorevole con prescrizioni",
  "source_url": "https://regionelazio.app.box.com/v/VIA-119-2020",
  "source": "lazio",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
    "value": "39 MW",
-   "sub": null,
+   "sub": "Suddivisa in 2 lotti",
    "source": {
     "document": "titolo del procedimento",
     "url": "https://regionelazio.app.box.com/v/VIA-119-2020",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "44 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 71 ha (12), 45,64 ha (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 71 ha (20), 45,64 ha (5), 33,6 ha (4)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_908371357142",
     "page": 1,
@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "18 mesi",
    "status": "da verificare",
-   "sub": "Inizio lavori 19/01/2023 (natura non determinabile) · Valore più ricorrente negli elaborati; altri valori: 4 mesi (1), 6 mesi (1)",
+   "sub": "Inizio lavori 19/01/2023 (natura non determinabile) · Valore più ricorrente negli elaborati; altri valori: 4 mesi (1), 6 mesi (1), 12 mesi (1)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_959246340958",
     "page": 30,
@@ -78,20 +78,30 @@
    "Montalto Di Castro"
   ],
   "coordinate": {
-   "lat": 42.39892,
-   "lon": 11.58185,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (9 riferimenti concordi)",
+   "lat": 42.37806,
+   "lon": 11.59926,
+   "tipo": "centro dei vertici delle aree d'impianto (43 riferimenti concordi)",
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_812717126344",
-    "page": 11,
-    "document": "DI014_RELAZIONE IDRAULICA.pdf",
-    "excerpt": "94-95 42,410894"
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_748191856336",
+    "page": 2,
+    "document": "AT03_024.02.01.W04_.Studio planoaltimetrico.pdf",
+    "excerpt": "1 - 714817.952 4694924.297,"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.39892,11.58185",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.37806,11.59926",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 42.37342,
+   "lon": 11.60592,
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_748178220770",
+    "page": 38,
+    "document": "All_A1_Relazione illustrativa .pdf",
+    "excerpt": "LATITUDINE 42° 22’ 24.30” N LONGITUDINE"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.37342,11.60592"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -110,7 +120,7 @@
     {
      "type": "PEC",
      "value": "egmarconi@pec.it",
-     "occurrences": 215,
+     "occurrences": 260,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_860764350911",
       "page": 1,
@@ -130,9 +140,20 @@
      }
     },
     {
+     "type": "PEC",
+     "value": "hergomontalto@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_1277777550136",
+      "page": 1,
+      "document": "ARPA 0886433.07-08-2023.pdf",
+      "excerpt": "A EG Marconi srl srl hergomontalto@legalmail.it"
+     }
+    },
+    {
      "type": "E-mail",
      "value": "boni@psem.it",
-     "occurrences": 61,
+     "occurrences": 83,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_805209752905",
       "page": 1,
@@ -155,25 +176,6 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://regionelazio.app.box.com/v/VIA-119-2020"
-   }
-  },
-  {
-   "name": "Circet Italia S.p.A.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": "01481120697",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Via Aterno 108 66020 San Giovanni Teatino Ch",
-   "contacts": [],
-   "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_1239258388293",
-    "page": 1,
-    "document": "7236_2158_2022 terreno_Ottomanelli 2022_08_17 campione S13_punto c.2_1 mt (13,2).pdf",
-    "excerpt": "campione denominato \"S13\" - punto di campionamento 2 - 1 mt p.c. (13,2); COMMITTENTE: Circet Italia S.p.A - Via Aterno 108 - Z.I. Sambuceto - San Giovanni Teatino (CH) - 66020"
    }
   },
   {
@@ -220,7 +222,7 @@
    "office": null,
    "contacts": [],
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_1189720735788",
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_1196113760271",
     "page": 1,
     "document": "RELAZIONE TERRE E ROCCE DA SCAVO.pdf",
     "excerpt": "IL GEOLOGO Dott. Giovanni Paolo Ottomanelli"
@@ -252,7 +254,7 @@
     {
      "type": "E-mail",
      "value": "psem4.0@psem.it",
-     "occurrences": 94,
+     "occurrences": 118,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_805209752905",
       "page": 1,
@@ -290,7 +292,7 @@
     {
      "type": "E-mail",
      "value": "ferrini@psem.it",
-     "occurrences": 106,
+     "occurrences": 147,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_805209752905",
       "page": 1,
@@ -377,7 +379,7 @@
     {
      "type": "E-mail",
      "value": "estraolzini@enfinity.global",
-     "occurrences": 3,
+     "occurrences": 6,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_2012294492802",
       "page": 1,
@@ -388,7 +390,7 @@
     {
      "type": "E-mail",
      "value": "ibaca@enfinity.global",
-     "occurrences": 2,
+     "occurrences": 3,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_829987782313",
       "page": 3,
@@ -399,12 +401,50 @@
     {
      "type": "E-mail",
      "value": "pencinoso@enfinity.global",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_2012294943637",
       "page": 1,
       "document": "Allegato_2.pdf",
       "excerpt": "To: Castelluzzo, Giuseppe ITALYE-DRN/E/PQ2 <Giuseppe.Castelluzzo@shell.com> Cc: Paula Encinoso <pencinoso@enfinity.global>"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Vulci S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03074860218",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Amedeo Duca D'Aosta 51 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "vulcisrl@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_959246340958",
+      "page": 31,
+      "document": "GRUPPO_TERNA.P20220041260-16.05.2022.pdf",
+      "excerpt": "VULCI S.R.L. vulcisrl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "r.camposcala@tiscali.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_2012291942180",
+      "page": 1,
+      "document": "Vulci_Srl_-_Comunicazione_Provincia_signed.pdf",
+      "excerpt": "01014 – Montalto di Castro r.camposcala@tiscali.it"
      }
     }
    ],
@@ -468,33 +508,6 @@
    }
   },
   {
-   "name": "Vulci S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": "03074860218",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Viale Amedeo Duca D'Aosta 51 39100 Bolzano .Bozen. Bz",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "vulcisrl@pec.it",
-     "occurrences": 3,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_959246340958",
-      "page": 31,
-      "document": "GRUPPO_TERNA.P20220041260-16.05.2022.pdf",
-      "excerpt": "VULCI S.R.L. vulcisrl@pec.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
-  },
-  {
    "name": "LAB Ambiente e Sicurezza S.r.l.",
    "kind": "società",
    "roles": [],
@@ -542,12 +555,23 @@
     {
      "type": "E-mail",
      "value": "cornacchia@psem.it",
-     "occurrences": 51,
+     "occurrences": 89,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_805209752905",
       "page": 1,
       "document": "AT2 - Planimetria stazione RTN-AT2.pdf",
       "excerpt": "Ing. Marco CORNACCHIA Via L. Beccali 14 01100 - Viterbo (VT) e-mail: cornacchia@psem.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "nacchia@psem.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-119-2020&file_id=f_748185565358",
+      "page": 1,
+      "document": "T09_Particolari costruttivi accessi recinzione e viabilità.pdf",
+      "excerpt": "| ‘nacchia@psem.it"
      }
     }
    ],
@@ -1581,9 +1605,9 @@
  },
  "documentazione": {
   "documenti": 792,
-  "pagine": 3388,
+  "pagine": 5234,
   "completa": false,
-  "da_leggere": 315
+  "da_leggere": 197
  },
  "confronto": [
   {
@@ -1627,7 +1651,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "1126 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1146 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
