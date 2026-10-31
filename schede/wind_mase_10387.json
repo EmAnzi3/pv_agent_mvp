@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico denominato \"Musa\", costituito da 34 aerogeneratori di potenza unitaria di 7,2 MW, per una potenza complessiva di 244,8 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Bonefro, Casacalenda, Monacilioni, Ripabottoni, Sant'Elia a Pianisi (CB), in località Cerro- San Vito.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10387",
  "source": "mase",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "34",
    "status": "da documenti",
-   "sub": "7,20 MW ciascuno · altezza mozzo 118,5 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 24 (34), 1 (6), 23 (4)",
+   "sub": "7,20 MW ciascuno · altezza mozzo 118,5 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 24 (34), 1 (8), 28 (6)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1441705",
     "page": 4,
@@ -37,7 +37,7 @@
    "label": "Durata cantiere",
    "value": "12 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 900 giorni (circa 30 mesi) (1), 42 mesi (1), 18 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 42 mesi (2), 270 giorni (circa 9 mesi) (2), 900 giorni (circa 30 mesi) (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1441711",
     "page": 78,
@@ -57,17 +57,17 @@
    "Sant'Elia A Pianisi"
   ],
   "coordinate": {
-   "lat": 41.68837,
-   "lon": 14.86885,
-   "tipo": "centro della tavola georeferenziata di progetto (190 riferimenti concordi)",
+   "lat": 41.69245,
+   "lon": 14.87216,
+   "tipo": "centro della tavola georeferenziata di progetto (296 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1441717",
-    "page": 2,
+    "page": 9,
     "document": "PLANIMETRIA AREE DI RIPRISTINO VEGETAZIONALE",
     "excerpt": "PLANIMETRIA AREE DI RIPRISTINO VEGETAZIONALE"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.68837,14.86885",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.69245,14.87216",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -144,6 +144,28 @@
       "document": "Elaborati Ambientali - Studio degli Effetti di Shadow-Flickering",
       "excerpt": "0254118173 Elide Moneta / wp-moneta@montanapp.com"
      }
+    },
+    {
+     "type": "E-mail",
+     "value": "mastio@montanambiente.com",
+     "occurrences": 393,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/943906",
+      "page": 34,
+      "document": "Studio degli effetti di shadow-flickering",
+      "excerpt": "0254118173 Andrea Mastio / mastio@montanambiente.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "025418173",
+     "occurrences": 167,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/943815",
+      "page": 1,
+      "document": "Tipologici piazzole - fase di cantiere e di esercizio",
+      "excerpt": "Montana S.p.A Tel. +39.02.5418173"
+     }
     }
    ],
    "source": {
@@ -164,7 +186,7 @@
     {
      "type": "Telefono",
      "value": "0498754720",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1441748",
       "page": 34,
@@ -181,7 +203,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "12 mesi",
+  "durata_cantiere": "10 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -193,20 +215,881 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "PROGETTAZIONE ESECUTIVA",
+    "start": 0.0,
+    "end": 2.19,
+    "level": 0,
+    "summary": false,
+    "duration": "38 g"
+   },
+   {
+    "name": "indagini",
+    "start": 0.0,
+    "end": 0.58,
+    "level": 0,
+    "summary": false,
+    "duration": "10 g"
+   },
+   {
+    "name": "redazione progetto",
+    "start": 0.11,
+    "end": 2.19,
+    "level": 0,
+    "summary": false,
+    "duration": "36 g"
+   },
+   {
+    "name": "ESECUZIONE LAVORI",
+    "start": 1.96,
+    "end": 9.67,
+    "level": 0,
+    "summary": false,
+    "duration": "134 g"
+   },
+   {
+    "name": "adeguamento viabilità esistente",
+    "start": 1.96,
+    "end": 2.65,
+    "level": 0,
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "approvigionamento materiali",
+    "start": 2.01,
+    "end": 7.9,
+    "level": 0,
+    "summary": false,
+    "duration": "102 g"
+   },
+   {
+    "name": "Cab SMIST 1",
+    "start": 2.07,
+    "end": 5.25,
+    "level": 0,
+    "summary": false,
+    "duration": "55 g"
+   },
+   {
+    "name": "Realizzazione piste e piazzole",
+    "start": 2.07,
+    "end": 3.4,
+    "level": 0,
+    "summary": false,
+    "duration": "23 g"
+   },
+   {
+    "name": "pista MU24",
+    "start": 2.07,
+    "end": 2.13,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU24",
+    "start": 2.13,
+    "end": 2.25,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista MU25",
+    "start": 2.19,
+    "end": 2.25,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU25",
+    "start": 2.25,
+    "end": 2.37,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista MU26",
+    "start": 2.3,
+    "end": 2.37,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU26",
+    "start": 2.36,
+    "end": 2.48,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista MU27",
+    "start": 2.42,
+    "end": 2.48,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU27",
+    "start": 2.48,
+    "end": 2.6,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista MU28",
+    "start": 2.53,
+    "end": 2.6,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU28",
+    "start": 2.59,
+    "end": 2.71,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista MU29",
+    "start": 2.65,
+    "end": 2.71,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU29",
+    "start": 2.71,
+    "end": 2.83,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista MU30",
+    "start": 2.76,
+    "end": 2.83,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU30",
+    "start": 2.82,
+    "end": 2.94,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista MU31",
+    "start": 2.88,
+    "end": 2.94,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU31",
+    "start": 2.94,
+    "end": 3.06,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista MU32",
+    "start": 3.0,
+    "end": 3.06,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU32",
+    "start": 3.05,
+    "end": 3.17,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista MU33",
+    "start": 3.11,
+    "end": 3.17,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU33",
+    "start": 3.17,
+    "end": 3.29,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista MU34",
+    "start": 3.23,
+    "end": 3.29,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU34",
+    "start": 3.28,
+    "end": 3.4,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Realizzazione fondazioni",
+    "start": 2.19,
+    "end": 3.81,
+    "level": 0,
+    "summary": false,
+    "duration": "28 g"
+   },
+   {
+    "name": "fondazione MU24",
+    "start": 2.19,
+    "end": 2.65,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione MU25",
+    "start": 2.3,
+    "end": 2.77,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione MU26",
+    "start": 2.42,
+    "end": 2.88,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione MU27",
+    "start": 2.53,
+    "end": 3.0,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione MU28",
+    "start": 2.65,
+    "end": 3.12,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione MU29",
+    "start": 2.76,
+    "end": 3.23,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione MU30",
+    "start": 2.88,
+    "end": 3.35,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione MU31",
+    "start": 3.0,
+    "end": 3.46,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione MU32",
+    "start": 3.11,
+    "end": 3.58,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione MU33",
+    "start": 3.23,
+    "end": 3.69,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione MU34",
+    "start": 3.34,
+    "end": 3.81,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "Montaggio torri",
+    "start": 2.82,
+    "end": 4.15,
+    "level": 0,
+    "summary": false,
+    "duration": "23 g"
+   },
+   {
+    "name": "Montaggio torre MU24",
+    "start": 2.82,
+    "end": 3.0,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre MU25",
+    "start": 2.94,
+    "end": 3.12,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre MU26",
+    "start": 3.05,
+    "end": 3.23,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre MU27",
+    "start": 3.17,
+    "end": 3.35,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre MU28",
+    "start": 3.28,
+    "end": 3.46,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre MU29",
+    "start": 3.4,
+    "end": 3.58,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre MU30",
+    "start": 3.51,
+    "end": 3.69,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre MU31",
+    "start": 3.63,
+    "end": 3.81,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre MU32",
+    "start": 3.75,
+    "end": 3.92,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre MU33",
+    "start": 3.86,
+    "end": 4.04,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre MU34",
+    "start": 3.98,
+    "end": 4.15,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Posa cavi",
+    "start": 4.15,
+    "end": 5.31,
+    "level": 0,
+    "summary": false,
+    "duration": "20 g"
+   },
+   {
+    "name": "connessioni interne al parco",
+    "start": 4.15,
+    "end": 5.31,
+    "level": 0,
+    "summary": false,
+    "duration": "20 g"
+   },
+   {
+    "name": "connessione cabina smist÷cabina utente",
+    "start": 4.78,
+    "end": 5.31,
+    "level": 0,
+    "summary": false,
+    "duration": "9 g"
+   },
+   {
+    "name": "Ripristini di cantiere",
+    "start": 4.03,
+    "end": 5.31,
+    "level": 0,
+    "summary": false,
+    "duration": "22 g"
+   },
+   {
+    "name": "piazzola MU24",
+    "start": 4.03,
+    "end": 4.1,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU24",
+    "start": 4.09,
+    "end": 4.15,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU25",
+    "start": 4.15,
+    "end": 4.21,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU25",
+    "start": 4.21,
+    "end": 4.27,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU26",
+    "start": 4.26,
+    "end": 4.33,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU26",
+    "start": 4.32,
+    "end": 4.38,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU27",
+    "start": 4.38,
+    "end": 4.44,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU27",
+    "start": 4.44,
+    "end": 4.5,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU28",
+    "start": 4.5,
+    "end": 4.56,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU28",
+    "start": 4.55,
+    "end": 4.62,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU29",
+    "start": 4.61,
+    "end": 4.67,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU29",
+    "start": 4.67,
+    "end": 4.73,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU30",
+    "start": 4.73,
+    "end": 4.79,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU30",
+    "start": 4.78,
+    "end": 4.85,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU31",
+    "start": 4.84,
+    "end": 4.9,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU31",
+    "start": 4.9,
+    "end": 4.96,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU32",
+    "start": 4.96,
+    "end": 5.02,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU32",
+    "start": 5.01,
+    "end": 5.08,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU33",
+    "start": 5.07,
+    "end": 5.13,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU33",
+    "start": 5.13,
+    "end": 5.19,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola MU34",
+    "start": 5.19,
+    "end": 5.25,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio MU34",
+    "start": 5.25,
+    "end": 5.31,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 9.67,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/943909",
+   "page": 4,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "19",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "20",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "21",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "22",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "23",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "24",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "25",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "26",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "27",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "28",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "29",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "30",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "31",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "32",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "33",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "34",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "35",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "36",
+     "start": 8.077,
+     "end": 8.308
+    },
+    {
+     "label": "37",
+     "start": 8.308,
+     "end": 8.538
+    },
+    {
+     "label": "38",
+     "start": 8.538,
+     "end": 8.769
+    },
+    {
+     "label": "39",
+     "start": 8.769,
+     "end": 9.0
+    },
+    {
+     "label": "40",
+     "start": 9.0,
+     "end": 9.231
+    },
+    {
+     "label": "41",
+     "start": 9.231,
+     "end": 9.462
+    },
+    {
+     "label": "42",
+     "start": 9.462,
+     "end": 9.692
+    }
+   ],
+   "unita": "settimane"
+  },
   "duration": {
-   "text": "12 mesi",
+   "text": "15 giorni",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 giorni (2), 900 giorni (circa 30 mesi) (1), 42 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 42 mesi (2), 270 giorni (circa 9 mesi) (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1441711",
-    "page": 78,
+    "page": 137,
     "document": "PIANO DI MONITORAGGIO AMBIENTALE - RISPOSTA ALLE CONDIZIONI TRASMESSE DAL MASE - COMMISSIONE TECNICA PNRR-PNIEC, PARERE N. 590 DEL 07/02/2025, CON PROT. N. 0003257 DEL 06/03/2025",
-    "excerpt": "4.15 CRONOPROGRAMMA DELLA DISMISSIONE Il tempo necessario per la realizzazione degli interventi è stimato in circa 12 mesi. La durata delle operazioni è obbligata dai tempi dettati dalle dismissioni degli aerogeneratori,"
+    "excerpt": "prevendono n. 2 campagne all’anno per tutta la durata delle attività di cantiere; una delle campagne dovrebbe ricadere all’interno di una finestra al massimo di 15 giorni intorno alla data dei rilievi svolti in ante oper"
    }
   },
   "milestones": [],
@@ -214,21 +1097,16 @@
    "document": "Cronoprogramma",
    "url": "https://va.mite.gov.it/File/Documento/943909"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
-  "altri": [
-   {
-    "document": "Cronoprogramma",
-    "url": "https://va.mite.gov.it/File/Documento/943909"
-   }
-  ],
+  "note": null,
+  "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 408,
-  "pagine": 6006,
+  "pagine": 9160,
   "completa": false,
-  "da_leggere": 168
+  "da_leggere": 48
  },
  "confronto": [
   {
@@ -264,7 +1142,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "668 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1095 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
