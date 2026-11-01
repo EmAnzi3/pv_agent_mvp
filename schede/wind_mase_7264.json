@@ -1,0 +1,414 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7264",
+ "title": "Progetto di un impianto eolico composto da 18 aerogeneratori per un totale di 86.04 MW, ricadente nei territori comunali di Mazara del Vallo (TP), con opere connesse ricadenti anche nei comuni di Castelvetrano e Santa Ninfa (TP).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7264",
+ "source": "mase",
+ "updated": "2026-11-01",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "86,04 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7264",
+    "excerpt": "86,04 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "18",
+   "status": "da documenti",
+   "sub": "4,78 MW ciascuno · altezza mozzo 120 m · diametro rotore 158 m · Valore prevalente negli elaborati; altri valori: 10 (1), 24 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/403658",
+    "page": 1,
+    "document": "Avviso al Pubblico del 16/05/2020",
+    "excerpt": "Il progetto prevede la realizzazione di un parco eolico, denominato “Gazzera”, di potenza 86,4 MW, costituito da 18 aerogeneratori, una stazione di trasformazione Media / Alta tensione ed il relativo elettrodotto di coll"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "TP",
+  "comuni": [
+   "Castelvetrano",
+   "Santa Ninfa"
+  ],
+  "coordinate": {
+   "lat": 37.69895,
+   "lon": 12.68231,
+   "tipo": "centro della tavola georeferenziata di progetto (36 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/735933",
+    "page": 1,
+    "document": "Integrazioni del 12/12/2022 - SEU_31_01 Layout aerogeneratori approvati dal MiC con proposta di variante non sostanziale",
+    "excerpt": "Integrazioni del 12/12/2022 - SEU_31_01 Layout aerogeneratori approvati dal MiC con proposta di variante non sostanziale"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.69895,12.68231",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 37.74208,
+   "lon": 12.78094,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/500553",
+    "page": 4,
+    "document": "Integrazioni del 26/05/2021 - Relazione Geologica",
+    "excerpt": "MW in D.C., avrà come punto di connessione la stazione di nuova costruzione denominata SE Partanna 3, di coordinate geografiche latitudine 37°44'31.49\"N e longitudine 12°46'51.40\"E. Fig.2.1: localizzazione p.to di connes"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.74208,12.78094"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Societa' Eolica UNO S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06699240823",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Notarbartolo 38 90141 Palermo Pa",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "societaeolicauno@pec.it",
+     "occurrences": 72,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/735932",
+      "page": 1,
+      "document": "Integrazioni del 12/12/2022 - SEU_Elenco Elaborati",
+      "excerpt": "societaeolicauno@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0971281981",
+     "occurrences": 66,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/673351",
+      "page": 2,
+      "document": "Integrazioni del 29/07/2022 - SEU_RFI Report fotografico interferenze idrauliche",
+      "excerpt": "societaeolicauno@pec.it Tel: 0971 281981"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7264"
+   }
+  },
+  {
+   "name": "Studio Bordonali S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "05502450827",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Umberto Giordano N 152 90144 Palermo Pa",
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/500520",
+    "page": 2,
+    "document": "Integrazioni del 26/05/2021 - Rendering Fotografici 01",
+    "excerpt": "Progettista Studio Bordonali Srl"
+   }
+  },
+  {
+   "name": "Dott. Ignazio Giuffré",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "ignazio.giuffre@tin.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/622965",
+      "page": 2,
+      "document": "Integrazioni del 13/04/2022 - Relazione geologica - Nota Integrativa",
+      "excerpt": "VIA MAZZINI 9, TERMINI IMERESE (PA) – CELL. 338.4373063 – E MAIL: ignazio.giuffre@tin.it – P. IVA: 04698200823"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ignazio.giuffre@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/622965",
+      "page": 1,
+      "document": "Integrazioni del 13/04/2022 - Relazione geologica - Nota Integrativa",
+      "excerpt": "P. IVA: 04698200823 E Mail – ignazio.giuffre@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/622965",
+    "page": 1,
+    "document": "Integrazioni del 13/04/2022 - Relazione geologica - Nota Integrativa",
+    "excerpt": "Il Geologo"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Dott. Geol. Marcello Militello",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "marcellomilitello@epap.sicurezzapostale.it",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/500553",
+      "page": 3,
+      "document": "Integrazioni del 26/05/2021 - Relazione Geologica",
+      "excerpt": "Dott. Geol. Marcello Militello Cell:+393386978072 pec: marcellomilitello@epap.sicurezzapostale.it email: marcellomilitello@hotmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "marcellomilitello@hotmail.com",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/500553",
+      "page": 3,
+      "document": "Integrazioni del 26/05/2021 - Relazione Geologica",
+      "excerpt": "Dott. Geol. Marcello Militello Cell:+393386978072 pec: marcellomilitello@epap.sicurezzapostale.it email: marcellomilitello@hotmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3386978072",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/500553",
+      "page": 3,
+      "document": "Integrazioni del 26/05/2021 - Relazione Geologica",
+      "excerpt": "Dott. Geol. Marcello Militello Cell:+393386978072 pec: marcellomilitello@epap.sicurezzapostale.it email: marcellomilitello@hotmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Francesco Chiri",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "francesco.chiri@postacertificata.org",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/500551",
+      "page": 1,
+      "document": "Integrazioni del 26/05/2021 - Organizzazione PTO ed elenco elaborati",
+      "excerpt": "Studio Tecnico Ing. Francesco Chiri - Via Marco Tullio Cicerone n23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 9783000 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@studiochiri.it",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/500551",
+      "page": 1,
+      "document": "Integrazioni del 26/05/2021 - Organizzazione PTO ed elenco elaborati",
+      "excerpt": "Studio Tecnico Ing. Francesco Chiri - Via Marco Tullio Cicerone n23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 9783000 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0916195726",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/500551",
+      "page": 1,
+      "document": "Integrazioni del 26/05/2021 - Organizzazione PTO ed elenco elaborati",
+      "excerpt": "Studio Tecnico Ing. Francesco Chiri - Via Marco Tullio Cicerone n23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 9783000 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Metrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@metrix.tv",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/500533",
+      "page": 30,
+      "document": "Integrazioni del 26/05/2021 - Relazione di valutazione previsionale dell'impatto acustico con mappe a curve isofone",
+      "excerpt": "Tel. 0922 992053 — Fax 0922 992156 i A e-mail: info@metrix.tv — www.metrix.tv Pagina 1 di 13"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0922992053",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/500533",
+      "page": 30,
+      "document": "Integrazioni del 26/05/2021 - Relazione di valutazione previsionale dell'impatto acustico con mappe a curve isofone",
+      "excerpt": "92020 Santo Stefano Quisquina (AG) Tel. 0922 992053 — Fax 0922 992156 i A"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "D.D. n. 286 del 14/06/2023",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/936142",
+     "page": 1,
+     "document": "Decreto Direttoriale - Progetto di un impianto eolico denominato \"Gazzera\", composto da 18 aerogeneratori per un totale di 86.04 MW, ricadente nei territori comunali di Mazara del Vallo (TP), con oper",
+     "excerpt": "Decreto direttoriale di compatibilità ambientale D.D. n. 286 del 14 giugno 2023. Verbale della seduta conclusiva della Conferenza"
+    }
+   }
+  ],
+  "durata_cantiere": null,
+  "autorizzazione": {
+   "atto": "D.D. n. 286",
+   "data": "14/06/2023",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/936142",
+    "page": 1,
+    "document": "Decreto Direttoriale - Progetto di un impianto eolico denominato \"Gazzera\", composto da 18 aerogeneratori per un totale di 86.04 MW, ricadente nei territori comunali di Mazara del Vallo (TP), con oper",
+    "excerpt": "Decreto direttoriale di compatibilità ambientale D.D. n. 286 del 14 giugno 2023. Verbale della seduta conclusiva della Conferenza"
+   }
+  },
+  "note": [
+   "Durata del cantiere non leggibile negli elaborati: fine lavori non stimabile."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": {
+   "document": "SEU_RTG Relazione Tecnica Generale con Allegato Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/382306"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "SEU_RTG Relazione Tecnica Generale con Allegato Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/382306"
+   },
+   {
+    "document": "Relazione Tecnica Generale con Allegato Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/394526"
+   },
+   {
+    "document": "Relazione Tecnica Generale con Allegato Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/394525"
+   },
+   {
+    "document": "Relazione Tecnica Generale con Allegato Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/394527"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 347,
+  "pagine": 1114,
+  "completa": false,
+  "da_leggere": 227
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Società Eolica Uno S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 86.04,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CASTELVETRANO, SANTA NINFA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TP",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "19 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
