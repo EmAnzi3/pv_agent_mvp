@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico con storage denominato \"Sava - Maruggio\" costituito da 22 aerogeneratori da 6 MW, per complessivi 132 MW, ed uno storage da 50 MW, per una potenza complessiva di 182 MW, da realizzarsi nei comuni di Erchie (BR), Manduria (TA), Sava (TA), Maruggio (TA) e Torricella (TA)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7990",
  "source": "mase",
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "22",
    "status": "da verificare",
-   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (45), 5 (35), 10 (26)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (67), 5 (57), 10 (47)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/599190",
     "page": 3,
@@ -33,11 +33,23 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/598911",
+    "page": 43,
+    "document": "Studio impatto ambientale",
+    "excerpt": "off-shore: che sono installati nel nostro mare."
+   }
+  },
+  {
    "key": "accumulo",
    "label": "Accumulo",
    "value": "50 MW / 200 MWh",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 182 MW (10), 6 MW (1), 132 MW (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 182 MW (21), 6 MW (1), 132 MW (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/598912",
     "page": 3,
@@ -48,14 +60,14 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "6 mesi",
+   "value": "11 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 23 mesi (2), 13 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/598913",
-    "page": 17,
-    "document": "Valutazione di Impatto Acustico Previsionale di Cantiere",
-    "excerpt": "per tutto il periodo della sosta. ➢ le operazioni di cantiere, che si svilupperanno per un periodo di circa 6 mesi, saranno effettuate all’interno della fascia oraria compresa tra le 8:30 e le"
+    "url": "https://va.mite.gov.it/File/Documento/654735",
+    "page": 32,
+    "document": "Integrazioni del 20/05/2022 Piano di dismissione con relativi costi",
+    "excerpt": "relativa al settore produttivo direttamente “attivato” dall’intervento . Si prevede che le attività di cantiere necessitino mediamente di circa 35 unità; le attività dureranno 11 mesi circa e il personale presente in sit"
    }
   }
  ],
@@ -72,7 +84,7 @@
   "coordinate": {
    "lat": 40.36442,
    "lon": 17.60824,
-   "tipo": "centro dei vertici delle aree d'impianto (134 riferimenti concordi)",
+   "tipo": "centro dei vertici delle aree d'impianto (202 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/598911",
     "page": 141,
@@ -112,7 +124,7 @@
     {
      "type": "PEC",
      "value": "redenergysrl@pec.it",
-     "occurrences": 5,
+     "occurrences": 6,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/613471",
       "page": 1,
@@ -124,6 +136,48 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7990"
+   }
+  },
+  {
+   "name": "Projetto Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "02658050733",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Fratelli Salvioni 6 20154 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "projetto@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/654759",
+      "page": 2,
+      "document": "RELAZIONE ASSEVERATA AREE PERCORSE DAL FUOCO",
+      "excerpt": "Sede operativa 4: Calea Floreasca nr 60 et Tel: +39 0999574694 – pec: projetto@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "studio@projetto.eu",
+     "occurrences": 407,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598911",
+      "page": 1,
+      "document": "Studio impatto ambientale",
+      "excerpt": "tel. 099 9574694 Fax 099 2222834 cell. 349.1735914 studio@projetto.eu"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/654830",
+    "page": 1,
+    "document": "Integrazioni del 20/05/2022 Piano particellare di esproprio e di asservimento descrittivo e grafico",
+    "excerpt": "Il progettista incaricato è la società di ingegneria Projetto Engineering s.r.l. con sede legale in Via dei Mille, 5, 74024 Manduria (TA), P.IVA 02658050733, in persona del suo direttore tecnico ing."
    }
   },
   {
@@ -147,44 +201,6 @@
   }
  ],
  "altri_soggetti": [
-  {
-   "name": "Projetto Engineering S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": "02658050733",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Via Fratelli Salvioni 6 20154 Milano Mi",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "projetto@pec.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/654759",
-      "page": 2,
-      "document": "RELAZIONE ASSEVERATA AREE PERCORSE DAL FUOCO",
-      "excerpt": "Sede operativa 4: Calea Floreasca nr 60 et Tel: +39 0999574694 – pec: projetto@pec.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "studio@projetto.eu",
-     "occurrences": 316,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/598911",
-      "page": 1,
-      "document": "Studio impatto ambientale",
-      "excerpt": "tel. 099 9574694 Fax 099 2222834 cell. 349.1735914 studio@projetto.eu"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
-  },
   {
    "name": "Dott. Angelo Leggieri",
    "kind": "persona",
@@ -237,7 +253,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "6 mesi",
+  "durata_cantiere": "23 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -249,34 +265,244 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Affidamento lavori",
+    "start": 4.62,
+    "end": 6.72,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Allestimento del cantiere",
+    "start": 6.7,
+    "end": 7.76,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili - strade",
+    "start": 6.7,
+    "end": 9.57,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili - fondazioni torri",
+    "start": 6.7,
+    "end": 15.62,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili ed elettriche - cavidotti",
+    "start": 8.64,
+    "end": 16.68,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto componenti torri ed aerogeneratori",
+    "start": 10.59,
+    "end": 14.58,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio torri ed aerogeneratori",
+    "start": 12.63,
+    "end": 18.73,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Costruzione e collegamento Storage",
+    "start": 17.59,
+    "end": 19.76,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Costruzione Stazione Elettrica - Opere elettriche e di connessione alla RTN",
+    "start": 7.73,
+    "end": 19.76,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi",
+    "start": 18.7,
+    "end": 20.88,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Dismissione del cantiere e ripristini ambientali",
+    "start": 19.74,
+    "end": 23.0,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Materiale di trasporto",
+    "start": 4.03,
+    "end": 11.65,
+    "level": 1,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 23.0,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/654841",
+   "page": 36,
+   "document": "Integrazioni del 20/05/2022 Relazione Tecnica",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
-   "text": "6 mesi",
+   "text": "11 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (2), 30 giorni (1), 60 giorni (circa 2 mesi) (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 30 giorni (2), 60 giorni (circa 2 mesi) (2), 6 mesi (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/598913",
-    "page": 17,
-    "document": "Valutazione di Impatto Acustico Previsionale di Cantiere",
-    "excerpt": "per tutto il periodo della sosta. ➢ le operazioni di cantiere, che si svilupperanno per un periodo di circa 6 mesi, saranno effettuate all’interno della fascia oraria compresa tra le 8:30 e le"
+    "url": "https://va.mite.gov.it/File/Documento/654735",
+    "page": 32,
+    "document": "Integrazioni del 20/05/2022 Piano di dismissione con relativi costi",
+    "excerpt": "relativa al settore produttivo direttamente “attivato” dall’intervento . Si prevede che le attività di cantiere necessitino mediamente di circa 35 unità; le attività dureranno 11 mesi circa e il personale presente in sit"
    }
   },
   "milestones": [],
   "document": null,
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "note": null,
   "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 516,
-  "pagine": 3837,
+  "pagine": 6048,
   "completa": false,
-  "da_leggere": 276
+  "da_leggere": 156
  },
  "confronto": [
   {
@@ -316,7 +542,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "3965 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "7147 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
