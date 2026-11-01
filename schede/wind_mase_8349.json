@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico composto da 16 aerogeneratori per una potenza totale di 99.2 MW in località \"Incoronata - San Sabino\" nel territorio comunale di Apricena (FG). Le opere accessorie previste ricadono nei comuni di San Paolo di Civitate (FG), Torremaggiore (FG) e San Severo (FG)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8349",
  "source": "mase",
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "16",
    "status": "da documenti",
-   "sub": "6,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 6 (9), 10 (9), 2 (4)",
+   "sub": "6,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 6 (16), 10 (16), 15 (7)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/837233",
     "page": 1,
@@ -67,17 +67,17 @@
    "San Severo"
   ],
   "coordinate": {
-   "lat": 41.78053,
-   "lon": 15.34981,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (7 riferimenti concordi)",
+   "lat": 41.57093,
+   "lon": 15.09509,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (3 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/752050",
-    "page": 28,
-    "document": "RELAZIONE ARCHEOLOGICA",
-    "excerpt": "Foglio 34, p.lla 199 41°46'36.63\"N 15°19'44.62\"E"
+    "url": "https://va.mite.gov.it/File/Documento/752072",
+    "page": 1,
+    "document": "INQUADRAMENTO CON INDICAZIONE IMPIANTI FER IN AREE LIMITROFE E DISTANZA MINIMA DAGLI STESSI",
+    "excerpt": "510.000"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.78053,15.34981",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.57093,15.09509",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -122,7 +122,7 @@
     {
      "type": "Telefono",
      "value": "0828984561",
-     "occurrences": 92,
+     "occurrences": 145,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/833848",
       "page": 1,
@@ -179,7 +179,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "16 mesi",
+  "durata_cantiere": "16 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -191,11 +191,430 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Picchettamento delle Aree",
+    "start": 0.53,
+    "end": 1.93,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Recinzione Provvisoria",
+    "start": 0.84,
+    "end": 2.4,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione della Viabilità",
+    "start": 1.15,
+    "end": 4.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione C.A. Fondazioni",
+    "start": 2.86,
+    "end": 7.32,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa in Opera Cavidotto 1",
+    "start": 1.93,
+    "end": 8.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa in Opera Cavidotto 2",
+    "start": 1.93,
+    "end": 11.31,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e Montaggio Aerogeneratori",
+    "start": 4.97,
+    "end": 12.95,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "elettriche di connesione alla RTN",
+    "start": 1.15,
+    "end": 15.06,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Pulizia e Sistema finale del Sito",
+    "start": 14.58,
+    "end": 15.99,
+    "level": 0,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 15.99,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/752196",
+   "page": 2,
+   "document": "CRONOPROGRAMMA",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "25",
+     "start": 24.0,
+     "end": 25.0
+    },
+    {
+     "label": "26",
+     "start": 25.0,
+     "end": 26.0
+    },
+    {
+     "label": "27",
+     "start": 26.0,
+     "end": 27.0
+    },
+    {
+     "label": "28",
+     "start": 27.0,
+     "end": 28.0
+    },
+    {
+     "label": "29",
+     "start": 28.0,
+     "end": 29.0
+    },
+    {
+     "label": "30",
+     "start": 29.0,
+     "end": 30.0
+    },
+    {
+     "label": "31",
+     "start": 30.0,
+     "end": 31.0
+    },
+    {
+     "label": "32",
+     "start": 31.0,
+     "end": 32.0
+    },
+    {
+     "label": "33",
+     "start": 32.0,
+     "end": 33.0
+    },
+    {
+     "label": "34",
+     "start": 33.0,
+     "end": 34.0
+    },
+    {
+     "label": "35",
+     "start": 34.0,
+     "end": 35.0
+    },
+    {
+     "label": "36",
+     "start": 35.0,
+     "end": 36.0
+    },
+    {
+     "label": "37",
+     "start": 36.0,
+     "end": 37.0
+    },
+    {
+     "label": "38",
+     "start": 37.0,
+     "end": 38.0
+    },
+    {
+     "label": "39",
+     "start": 38.0,
+     "end": 39.0
+    },
+    {
+     "label": "40",
+     "start": 39.0,
+     "end": 40.0
+    },
+    {
+     "label": "41",
+     "start": 40.0,
+     "end": 41.0
+    },
+    {
+     "label": "42",
+     "start": 41.0,
+     "end": 42.0
+    },
+    {
+     "label": "43",
+     "start": 42.0,
+     "end": 43.0
+    },
+    {
+     "label": "44",
+     "start": 43.0,
+     "end": 44.0
+    },
+    {
+     "label": "45",
+     "start": 44.0,
+     "end": 45.0
+    },
+    {
+     "label": "46",
+     "start": 45.0,
+     "end": 46.0
+    },
+    {
+     "label": "47",
+     "start": 46.0,
+     "end": 47.0
+    },
+    {
+     "label": "48",
+     "start": 47.0,
+     "end": 48.0
+    },
+    {
+     "label": "49",
+     "start": 48.0,
+     "end": 49.0
+    },
+    {
+     "label": "50",
+     "start": 49.0,
+     "end": 50.0
+    },
+    {
+     "label": "51",
+     "start": 50.0,
+     "end": 51.0
+    },
+    {
+     "label": "52",
+     "start": 51.0,
+     "end": 52.0
+    },
+    {
+     "label": "53",
+     "start": 52.0,
+     "end": 53.0
+    },
+    {
+     "label": "54",
+     "start": 53.0,
+     "end": 54.0
+    },
+    {
+     "label": "55",
+     "start": 54.0,
+     "end": 55.0
+    },
+    {
+     "label": "56",
+     "start": 55.0,
+     "end": 56.0
+    },
+    {
+     "label": "57",
+     "start": 56.0,
+     "end": 57.0
+    },
+    {
+     "label": "58",
+     "start": 57.0,
+     "end": 58.0
+    },
+    {
+     "label": "59",
+     "start": 58.0,
+     "end": 59.0
+    },
+    {
+     "label": "60",
+     "start": 59.0,
+     "end": 60.0
+    },
+    {
+     "label": "61",
+     "start": 60.0,
+     "end": 61.0
+    },
+    {
+     "label": "62",
+     "start": 61.0,
+     "end": 62.0
+    },
+    {
+     "label": "63",
+     "start": 62.0,
+     "end": 63.0
+    },
+    {
+     "label": "64",
+     "start": 63.0,
+     "end": 64.0
+    },
+    {
+     "label": "65",
+     "start": 64.0,
+     "end": 65.0
+    },
+    {
+     "label": "66",
+     "start": 65.0,
+     "end": 66.0
+    },
+    {
+     "label": "67",
+     "start": 66.0,
+     "end": 67.0
+    },
+    {
+     "label": "68",
+     "start": 67.0,
+     "end": 68.0
+    },
+    {
+     "label": "69",
+     "start": 68.0,
+     "end": 69.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "16 mesi",
    "status": "da verificare",
@@ -212,21 +631,16 @@
    "document": "CRONOPROGRAMMA",
    "url": "https://va.mite.gov.it/File/Documento/752196"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
-  "altri": [
-   {
-    "document": "CRONOPROGRAMMA",
-    "url": "https://va.mite.gov.it/File/Documento/752196"
-   }
-  ],
+  "note": null,
+  "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 478,
-  "pagine": 1024,
+  "pagine": 3514,
   "completa": false,
-  "da_leggere": 358
+  "da_leggere": 239
  },
  "confronto": [
   {
@@ -262,7 +676,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "109 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "162 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
