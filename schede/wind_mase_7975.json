@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico composto da n. 7 aerogeneratori, da 6 MW ciascuno, denominato \"PHOBOS\", della potenza nominale di 42 MW, e delle relative opere civili ed elettriche connesse ed infrastrutture indispensabili, da realizzarsi nei Comuni di Castel Giorgio (TR) ed Orvieto (TR).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7975",
  "source": "mase",
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "7",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 5 (23), 4 (12), 1 (10)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 5 (28), 4 (12), 1 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1439472",
     "page": 1,
@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "16 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2), 6 mesi (1), 9 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 18 mesi (2), 6 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/924623",
     "page": 14,
@@ -67,7 +67,7 @@
   "coordinate": {
    "lat": 42.67969,
    "lon": 12.00133,
-   "tipo": "centro della tavola georeferenziata di progetto (355 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (360 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/693048",
     "page": 1,
@@ -78,7 +78,17 @@
   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.67969,12.00133",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 42.6571,
+   "lon": 12.0511,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1243948",
+    "page": 22,
+    "document": "Parere del Comune di Castel San Giorgio, in data 15/04/2025",
+    "excerpt": "gs (579m x GPS: 42.6571, 12.0511"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.65710,12.05110"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -97,7 +107,7 @@
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 280,
+     "occurrences": 283,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1436830",
       "page": 11,
@@ -171,6 +181,25 @@
     "document": "Integrazioni del 07/03/2022 - PEOS_OE_03_0_inquadramento_SE_CTR",
     "excerpt": "Progettazione: NEW DEVELOPMENTS S.r.l."
    }
+  },
+  {
+   "name": "SIA predisposto dalla RWE Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/825967",
+    "page": 1,
+    "document": "Osservazioni del Sig. Michele Alessandro in data 19/10/2022",
+    "excerpt": "1. Ancora sull’inidoneità del sito — Il contenuto della “RELAZIONE GEOLOGICA, GEOMORFOLOGICA, IDROGEOLOGICA” allegata al SIA predisposto dalla RWE ITALIA SRL."
+   }
   }
  ],
  "altri_soggetti": [
@@ -187,7 +216,7 @@
     {
      "type": "PEC",
      "value": "amicidellaterra@pec.it",
-     "occurrences": 12,
+     "occurrences": 21,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/649823",
       "page": 1,
@@ -198,12 +227,23 @@
     {
      "type": "E-mail",
      "value": "segreteria@amicidellaterra.it",
-     "occurrences": 12,
+     "occurrences": 18,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/649823",
       "page": 1,
       "document": "Osservazioni ASSOCIAZIONE AMICI DELLA TERRA ONLUS",
       "excerpt": "www.amicidellaterra.it amicidellaterra@pec.it – segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "tommasi@amicidellaterra.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1295736",
+      "page": 4,
+      "document": "Parere del Comune di Castel San Giorgio, in data 04/08/2025",
+      "excerpt": "PEC: amicidellaterra@pec.it tommasi@amicidellaterra.it"
      }
     }
    ],
@@ -231,6 +271,126 @@
       "page": 47,
       "document": "Integrazioni del 13/09/2022 - PEOS_OC_11_0_impatto_acustico_Rev.1",
       "excerpt": "Sonora S.r.l. Tel 0823 351196 - Fax 0823 351196 Lia LAT N°185"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Avv. Michele Greco",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "michelegreco@pec.ordineavvocatigrosseto.com",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1295736",
+      "page": 4,
+      "document": "Parere del Comune di Castel San Giorgio, in data 04/08/2025",
+      "excerpt": "c/o Avv. Michele Greco michelegreco@pec.ordineavvocatigrosseto.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Avv. Mario Pilade Chiti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "mariopiladechiti@pec.ordineavvocatifirenze.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1295736",
+      "page": 4,
+      "document": "Parere del Comune di Castel San Giorgio, in data 04/08/2025",
+      "excerpt": "c/o Prof. Avv. Mario Pilade Chiti mariopiladechiti@pec.ordineavvocatifirenze.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Avv. Simona Sacripanti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "avvsimonasacripanti@puntopec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1295736",
+      "page": 4,
+      "document": "Parere del Comune di Castel San Giorgio, in data 04/08/2025",
+      "excerpt": "avvsimonasacripanti@puntopec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Avv. Fabiana Seghini",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "avv.fabianaseghini@pec.net",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1295736",
+      "page": 4,
+      "document": "Parere del Comune di Castel San Giorgio, in data 04/08/2025",
+      "excerpt": "c/o Avv. Fabiana Seghini avv.fabianaseghini@pec.net"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Avv. Stenio Salzano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "steniosalzano@ordineavvocatiroma.org",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1295736",
+      "page": 5,
+      "document": "Parere del Comune di Castel San Giorgio, in data 04/08/2025",
+      "excerpt": "steniosalzano@ordineavvocatiroma.org"
      }
     }
    ],
@@ -510,7 +670,7 @@
   "duration": {
    "text": "16 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2), 6 mesi (1), 9 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 2 mesi (2), 12 mesi (2), 18 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/924623",
     "page": 14,
@@ -530,9 +690,9 @@
  },
  "documentazione": {
   "documenti": 394,
-  "pagine": 5227,
-  "completa": false,
-  "da_leggere": 34
+  "pagine": 5733,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -568,7 +728,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "86 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "169 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
