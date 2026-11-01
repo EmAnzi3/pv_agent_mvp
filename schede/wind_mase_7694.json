@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione un impianto eolico denominato \"Trapani 2\", ai sensi dell'art.23 del D.Lgs. 152/2006, costituito da 16 aerogeneratori e dalle opere necessarie di connessione alla RTN, per una potenza complessiva pari a 96 MW, da realizzarsi nei Comuni di Marsala (TP), Mazara del Vallo (TP), Castelvetrano (TP) e Santa Ninfa (TP).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7694",
  "source": "mase",
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "16",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 84 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 8 (10), 3 (9), 6 (8)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 3 (15), 6 (11), 12 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1285175",
     "page": 1,
@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "26 mesi",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 20 mesi (1), 534 giorni (circa 18 mesi) (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/535152",
     "page": 48,
@@ -68,17 +68,17 @@
    "Santa Ninfa"
   ],
   "coordinate": {
-   "lat": 37.76058,
-   "lon": 12.65025,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati",
+   "lat": 37.74832,
+   "lon": 12.63751,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (20 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/535094",
-    "page": 18,
-    "document": "Integrazioni del 27/09/2021 - GRE.EEC.R.73.IT.W.13824.00.120.00 - Riscontro Integrazioni MiTE1di3",
-    "excerpt": "(a destra) presso la centrale eolica \"VRG Wind 060\" della VGE (coordinate 37°45'38.10\"N, 12°39'0.90\"E)."
+    "url": "https://va.mite.gov.it/File/Documento/472395",
+    "page": 9,
+    "document": "Studio evoluzione ombra (Shadow Flickering)",
+    "excerpt": "290176"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.76058,12.65025",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.74832,12.63751",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -103,10 +103,10 @@
    }
   },
   {
-   "name": "Energia Verde Trapani S.r.l.",
+   "name": "Solutions S.r.l.",
    "kind": "società",
    "roles": [
-    "Proponente"
+    "O&M (da confermare)"
    ],
    "vat": null,
    "vat_group": false,
@@ -115,14 +115,212 @@
    "office": null,
    "contacts": [],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/535151",
-    "page": 4,
-    "document": "Integrazioni del 27/09/2021 - GRE.EEC.R.26.IT.W.13824.00.010.01 - SIA - Quadro Programmatico_signed",
-    "excerpt": "proponente (Energia Verde Trapani srl - impianto di produzione di energia elettrica da fonte fotovoltaica da 150 MW \"Pozzillo\"- adeguamento delle infrastrutture della RTN) e risulta"
+    "url": "https://va.mite.gov.it/File/Documento/503357",
+    "page": 71,
+    "document": "Osservazioni della Società Edison Rinnovabili Spa in data 21/05/2021",
+    "excerpt": "Progetto di scissione mediante 01/08/2014 ENERGY O&M SOLUTIONS S.R.L. trasferimento nella/e societa' C.F. 08729010960"
    }
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Societa' Eolica UNO S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "06699240823",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Notarbartolo 38 90141 Palermo Pa",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "societaeolicauno@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/502590",
+      "page": 1,
+      "document": "Osservazioni della Societò Eolica Uno in data 11/05/2021",
+      "excerpt": "90145 Palermo (PA) | Italy societaeolicauno@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0971281981",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/502590",
+      "page": 1,
+      "document": "Osservazioni della Societò Eolica Uno in data 11/05/2021",
+      "excerpt": "societaeolicauno@pec.it Tel: +39 0971 281981"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Edison Rinnovabili S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12921540154",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rinnovabili@pec.edison.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1273903",
+      "page": 81,
+      "document": "Allegato al Decreto Direttoriale - Resoconto_verbale",
+      "excerpt": "Proponente : Edison Rinnovabili SpA, Foro Buonaparte, 31, 20121 Milano, pec: rinnovabili@pec.edison.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "rinnovabili@pec.edison",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503357",
+      "page": 39,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 21/05/2021",
+      "excerpt": "BUONAPARTE 31 CAP 20121 Indirizzo PEC rinnovabili@pec.edison. it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "fabio.dalessandro@edison.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503357",
+      "page": 35,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 21/05/2021",
+      "excerpt": "E2I Energie Speciali S.r.l. fabio.dalessandro@edison.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Societa' Eolica DUE S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "06718530824",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Notarbartolo 38 90141 Palermo Pa",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "societaeolicadue@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/501863",
+      "page": 1,
+      "document": "Osservazioni della Società Eolica Due S.r.l. in data 10/05/2021",
+      "excerpt": "societaeolicadue@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Libeccio S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01616120893",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lanza 5 96017 Noto Sr",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "libeccio@pec.ferasrl.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503359",
+      "page": 1,
+      "document": "Osservazioni della Società LIBECCIO S.r.l. in data 25/05/2021",
+      "excerpt": "Amm.ne: Via Antonio da Recanate,1 – 20124 Milano – Tel. 0262690471 – Fax 02 32066804 e-mail libeccio@pec.ferasrl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0262690471",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503359",
+      "page": 1,
+      "document": "Osservazioni della Società LIBECCIO S.r.l. in data 25/05/2021",
+      "excerpt": "Amm.ne: Via Antonio da Recanate,1 – 20124 Milano – Tel. 0262690471 – Fax 02 32066804 e-mail libeccio@pec.ferasrl.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Energia Verde Trapani S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "giuseppevilla@hotmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503357",
+      "page": 35,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 21/05/2021",
+      "excerpt": "Energia Verde Trapani Srl giuseppevilla@hotmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "gp@gerenovables.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503357",
+      "page": 35,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 21/05/2021",
+      "excerpt": "Energia Verde Trapani Srl gp@gerenovables.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "michele.giancarlo@canadiansolar.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503357",
+      "page": 35,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 21/05/2021",
+      "excerpt": "Energia Verde Trapani Srl michele.giancarlo@canadiansolar.com"
+     }
+    }
+   ],
+   "source": null
+  },
   {
    "name": "Messinello Wind S.r.l.",
    "kind": "società",
@@ -159,30 +357,6 @@
    "source": null
   },
   {
-   "name": "Edison Rinnovabili S.p.A.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "rinnovabili@pec.edison.it",
-     "occurrences": 2,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1273903",
-      "page": 81,
-      "document": "Allegato al Decreto Direttoriale - Resoconto_verbale",
-      "excerpt": "Proponente : Edison Rinnovabili SpA, Foro Buonaparte, 31, 20121 Milano, pec: rinnovabili@pec.edison.it"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
    "name": "Arch. Girolama Fontana",
    "kind": "persona",
    "roles": [],
@@ -205,14 +379,103 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Ing. Rossana Miglietta",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138989",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503357",
+      "page": 6,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 21/05/2021",
+      "excerpt": "Contatti: Eugenio Mazzini Tel. 06.8313.8989."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Patrizia Murana",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0923806658",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503361",
+      "page": 4,
+      "document": "Osservazioni del Libero Consorzio Comunale di Trapani già Provincia Regionale di Trapani in data 24/05/2021",
+      "excerpt": "Responsabile del Servizio Ing. Patrizia Murana, tel 0923806658, e-mail: pmur: nsorzi"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Africa S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "carla.ditillio@x-elio.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503357",
+      "page": 35,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 21/05/2021",
+      "excerpt": "Africa Srl carla.ditillio@x-elio.com"
+     }
+    }
+   ],
+   "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 01/03/2022, ma l'iter è proseguito; ultimo documento o atto del 06/08/2025: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": "26 mesi (cronoprogramma)",
+  "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "01/03/2022 → 15/03/2024",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/472407",
+     "page": 2,
+     "document": "Cronoprogramma",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "25 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -227,1025 +490,1284 @@
   "bars": [
    {
     "name": "IMPIANTO EOLICO TRAPANI 2",
-    "start": 1.97,
-    "end": 26.48,
-    "level": 1,
-    "summary": true
+    "start": 0.0,
+    "end": 24.54,
+    "level": 0,
+    "dates": [
+     "2022-03-01",
+     "2024-03-15"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Allestimento cantiere",
+    "start": 0.0,
+    "end": 0.23,
+    "level": 0,
+    "dates": [
+     "2022-03-01",
+     "2022-03-07"
+    ],
+    "summary": false
    },
    {
     "name": "REALIZZAZIONE NUOVO IMPIANTO",
-    "start": 2.2,
-    "end": 25.3,
-    "level": 2,
-    "summary": true
+    "start": 0.23,
+    "end": 23.36,
+    "level": 0,
+    "dates": [
+     "2022-03-08",
+     "2024-02-08"
+    ],
+    "summary": false
    },
    {
     "name": "Adeguamenti viabilità esistente",
-    "start": 2.2,
-    "end": 3.58,
-    "level": 3,
+    "start": 0.23,
+    "end": 1.61,
+    "level": 0,
+    "dates": [
+     "2022-03-08",
+     "2022-04-18"
+    ],
     "summary": false
    },
    {
     "name": "Realizzazione strade e piazzole",
-    "start": 3.12,
-    "end": 10.48,
-    "level": 3,
+    "start": 1.15,
+    "end": 8.52,
+    "level": 0,
+    "dates": [
+     "2022-04-05",
+     "2022-11-14"
+    ],
     "summary": false
    },
    {
     "name": "Strada G01",
-    "start": 3.12,
-    "end": 3.58,
-    "level": 3,
+    "start": 1.15,
+    "end": 1.61,
+    "level": 0,
+    "dates": [
+     "2022-04-05",
+     "2022-04-18"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G01",
-    "start": 3.58,
-    "end": 4.04,
-    "level": 3,
+    "start": 1.61,
+    "end": 2.07,
+    "level": 0,
+    "dates": [
+     "2022-04-19",
+     "2022-05-02"
+    ],
     "summary": false
    },
    {
     "name": "Strada G02",
-    "start": 4.04,
-    "end": 4.5,
-    "level": 3,
+    "start": 2.07,
+    "end": 2.53,
+    "level": 0,
+    "dates": [
+     "2022-05-03",
+     "2022-05-16"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G02",
-    "start": 4.5,
-    "end": 4.96,
-    "level": 3,
+    "start": 2.53,
+    "end": 2.99,
+    "level": 0,
+    "dates": [
+     "2022-05-17",
+     "2022-05-30"
+    ],
     "summary": false
    },
    {
     "name": "Strada G03",
-    "start": 4.96,
-    "end": 5.42,
-    "level": 3,
+    "start": 2.99,
+    "end": 3.45,
+    "level": 0,
+    "dates": [
+     "2022-05-31",
+     "2022-06-13"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G03",
-    "start": 5.42,
-    "end": 5.88,
-    "level": 3,
+    "start": 3.45,
+    "end": 3.91,
+    "level": 0,
+    "dates": [
+     "2022-06-14",
+     "2022-06-27"
+    ],
     "summary": false
    },
    {
     "name": "Strada G04",
-    "start": 5.88,
-    "end": 6.34,
-    "level": 3,
+    "start": 3.91,
+    "end": 4.38,
+    "level": 0,
+    "dates": [
+     "2022-06-28",
+     "2022-07-11"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G04",
-    "start": 6.34,
-    "end": 6.8,
-    "level": 3,
+    "start": 4.38,
+    "end": 4.84,
+    "level": 0,
+    "dates": [
+     "2022-07-12",
+     "2022-07-25"
+    ],
     "summary": false
    },
    {
     "name": "Strada G05",
-    "start": 6.8,
-    "end": 7.26,
-    "level": 3,
+    "start": 4.84,
+    "end": 5.3,
+    "level": 0,
+    "dates": [
+     "2022-07-26",
+     "2022-08-08"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G05",
-    "start": 7.26,
-    "end": 7.72,
-    "level": 3,
+    "start": 5.3,
+    "end": 5.76,
+    "level": 0,
+    "dates": [
+     "2022-08-09",
+     "2022-08-22"
+    ],
     "summary": false
    },
    {
     "name": "Strada G06",
-    "start": 7.72,
-    "end": 8.18,
-    "level": 3,
+    "start": 5.76,
+    "end": 6.22,
+    "level": 0,
+    "dates": [
+     "2022-08-23",
+     "2022-09-05"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G06",
-    "start": 8.18,
-    "end": 8.64,
-    "level": 3,
+    "start": 6.22,
+    "end": 6.68,
+    "level": 0,
+    "dates": [
+     "2022-09-06",
+     "2022-09-19"
+    ],
     "summary": false
    },
    {
     "name": "Strada G07",
-    "start": 8.64,
-    "end": 9.1,
-    "level": 3,
+    "start": 6.68,
+    "end": 7.14,
+    "level": 0,
+    "dates": [
+     "2022-09-20",
+     "2022-10-03"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G07",
-    "start": 9.1,
-    "end": 9.56,
-    "level": 3,
+    "start": 7.14,
+    "end": 7.6,
+    "level": 0,
+    "dates": [
+     "2022-10-04",
+     "2022-10-17"
+    ],
     "summary": false
    },
    {
     "name": "Strada G08",
-    "start": 9.56,
-    "end": 10.02,
-    "level": 3,
+    "start": 7.6,
+    "end": 8.06,
+    "level": 0,
+    "dates": [
+     "2022-10-18",
+     "2022-10-31"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G08",
-    "start": 10.02,
-    "end": 10.48,
-    "level": 3,
+    "start": 8.06,
+    "end": 8.52,
+    "level": 0,
+    "dates": [
+     "2022-11-01",
+     "2022-11-14"
+    ],
     "summary": false
    },
    {
     "name": "Strada G09",
-    "start": 3.12,
-    "end": 3.58,
-    "level": 3,
+    "start": 1.15,
+    "end": 1.61,
+    "level": 0,
+    "dates": [
+     "2022-04-05",
+     "2022-04-18"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G09",
-    "start": 3.58,
-    "end": 4.04,
-    "level": 3,
+    "start": 1.61,
+    "end": 2.07,
+    "level": 0,
+    "dates": [
+     "2022-04-19",
+     "2022-05-02"
+    ],
     "summary": false
    },
    {
     "name": "Strada G10",
-    "start": 4.04,
-    "end": 4.5,
-    "level": 3,
+    "start": 2.07,
+    "end": 2.53,
+    "level": 0,
+    "dates": [
+     "2022-05-03",
+     "2022-05-16"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G10",
-    "start": 4.5,
-    "end": 4.96,
-    "level": 3,
+    "start": 2.53,
+    "end": 2.99,
+    "level": 0,
+    "dates": [
+     "2022-05-17",
+     "2022-05-30"
+    ],
     "summary": false
    },
    {
     "name": "Strada G11",
-    "start": 4.96,
-    "end": 5.42,
-    "level": 3,
+    "start": 2.99,
+    "end": 3.45,
+    "level": 0,
+    "dates": [
+     "2022-05-31",
+     "2022-06-13"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G11",
-    "start": 5.42,
-    "end": 5.88,
-    "level": 3,
+    "start": 3.45,
+    "end": 3.91,
+    "level": 0,
+    "dates": [
+     "2022-06-14",
+     "2022-06-27"
+    ],
     "summary": false
    },
    {
     "name": "Strada G12",
-    "start": 5.88,
-    "end": 6.34,
-    "level": 3,
+    "start": 3.91,
+    "end": 4.38,
+    "level": 0,
+    "dates": [
+     "2022-06-28",
+     "2022-07-11"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G12",
-    "start": 6.34,
-    "end": 6.8,
-    "level": 3,
+    "start": 4.38,
+    "end": 4.84,
+    "level": 0,
+    "dates": [
+     "2022-07-12",
+     "2022-07-25"
+    ],
     "summary": false
    },
    {
     "name": "Strada G13",
-    "start": 6.8,
-    "end": 7.26,
-    "level": 3,
+    "start": 4.84,
+    "end": 5.3,
+    "level": 0,
+    "dates": [
+     "2022-07-26",
+     "2022-08-08"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G13",
-    "start": 7.26,
-    "end": 7.72,
-    "level": 3,
+    "start": 5.3,
+    "end": 5.76,
+    "level": 0,
+    "dates": [
+     "2022-08-09",
+     "2022-08-22"
+    ],
     "summary": false
    },
    {
     "name": "Strada G14",
-    "start": 7.72,
-    "end": 8.18,
-    "level": 3,
+    "start": 5.76,
+    "end": 6.22,
+    "level": 0,
+    "dates": [
+     "2022-08-23",
+     "2022-09-05"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G14",
-    "start": 8.18,
-    "end": 8.64,
-    "level": 3,
+    "start": 6.22,
+    "end": 6.68,
+    "level": 0,
+    "dates": [
+     "2022-09-06",
+     "2022-09-19"
+    ],
     "summary": false
    },
    {
     "name": "Strada G15",
-    "start": 8.64,
-    "end": 9.1,
-    "level": 3,
+    "start": 6.68,
+    "end": 7.14,
+    "level": 0,
+    "dates": [
+     "2022-09-20",
+     "2022-10-03"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G15",
-    "start": 9.1,
-    "end": 9.56,
-    "level": 3,
+    "start": 7.14,
+    "end": 7.6,
+    "level": 0,
+    "dates": [
+     "2022-10-04",
+     "2022-10-17"
+    ],
     "summary": false
    },
    {
     "name": "Strada G16",
-    "start": 9.56,
-    "end": 10.02,
-    "level": 3,
+    "start": 7.6,
+    "end": 8.06,
+    "level": 0,
+    "dates": [
+     "2022-10-18",
+     "2022-10-31"
+    ],
     "summary": false
    },
    {
     "name": "Piazzola G16",
-    "start": 10.02,
-    "end": 10.48,
-    "level": 3,
+    "start": 8.06,
+    "end": 8.52,
+    "level": 0,
+    "dates": [
+     "2022-11-01",
+     "2022-11-14"
+    ],
     "summary": false
    },
    {
-    "name": "Realizzazione scavo, pali e plinti di fondazio",
-    "start": 4.04,
-    "end": 13.57,
-    "level": 3,
+    "name": "Realizzazione scavo, pali e plinti di fondazione",
+    "start": 2.07,
+    "end": 11.61,
+    "level": 0,
+    "dates": [
+     "2022-05-03",
+     "2023-02-16"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G01",
-    "start": 4.04,
-    "end": 7.13,
-    "level": 3,
+    "start": 2.07,
+    "end": 5.16,
+    "level": 0,
+    "dates": [
+     "2022-05-03",
+     "2022-08-04"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G02",
-    "start": 4.96,
-    "end": 8.05,
-    "level": 3,
+    "start": 2.99,
+    "end": 6.09,
+    "level": 0,
+    "dates": [
+     "2022-05-31",
+     "2022-09-01"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G03",
-    "start": 5.88,
-    "end": 8.97,
-    "level": 3,
+    "start": 3.91,
+    "end": 7.01,
+    "level": 0,
+    "dates": [
+     "2022-06-28",
+     "2022-09-29"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G04",
-    "start": 6.8,
-    "end": 9.89,
-    "level": 3,
+    "start": 4.84,
+    "end": 7.93,
+    "level": 0,
+    "dates": [
+     "2022-07-26",
+     "2022-10-27"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G05",
-    "start": 7.72,
-    "end": 10.81,
-    "level": 3,
+    "start": 5.76,
+    "end": 8.85,
+    "level": 0,
+    "dates": [
+     "2022-08-23",
+     "2022-11-24"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G06",
-    "start": 8.64,
-    "end": 11.73,
-    "level": 3,
+    "start": 6.68,
+    "end": 9.77,
+    "level": 0,
+    "dates": [
+     "2022-09-20",
+     "2022-12-22"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G07",
-    "start": 9.56,
-    "end": 12.65,
-    "level": 3,
+    "start": 7.6,
+    "end": 10.69,
+    "level": 0,
+    "dates": [
+     "2022-10-18",
+     "2023-01-19"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G08",
-    "start": 10.48,
-    "end": 13.57,
-    "level": 3,
+    "start": 8.52,
+    "end": 11.61,
+    "level": 0,
+    "dates": [
+     "2022-11-15",
+     "2023-02-16"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G09",
-    "start": 4.04,
-    "end": 7.13,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Task",
-    "start": 1.19,
-    "end": 19.49,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Split Project: Cronoprogramma",
-    "start": 6.6,
-    "end": 24.9,
+    "start": 2.07,
+    "end": 5.16,
     "level": 0,
-    "summary": false
-   },
-   {
-    "name": "Date: mer 15‐09‐21",
-    "start": 12.1,
-    "end": 24.9,
-    "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Summary",
-    "start": 1.28,
-    "end": 24.9,
-    "level": 3,
+    "dates": [
+     "2022-05-03",
+     "2022-08-04"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G10",
-    "start": 4.96,
-    "end": 8.05,
-    "level": 3,
+    "start": 2.76,
+    "end": 5.86,
+    "level": 0,
+    "dates": [
+     "2022-05-31",
+     "2022-09-01"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G11",
-    "start": 5.88,
-    "end": 8.97,
-    "level": 3,
+    "start": 3.68,
+    "end": 6.78,
+    "level": 0,
+    "dates": [
+     "2022-06-28",
+     "2022-09-29"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G12",
-    "start": 6.8,
-    "end": 9.89,
-    "level": 3,
+    "start": 4.61,
+    "end": 7.7,
+    "level": 0,
+    "dates": [
+     "2022-07-26",
+     "2022-10-27"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G13",
-    "start": 7.72,
-    "end": 10.81,
-    "level": 3,
+    "start": 5.53,
+    "end": 8.62,
+    "level": 0,
+    "dates": [
+     "2022-08-23",
+     "2022-11-24"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G14",
-    "start": 8.64,
-    "end": 11.73,
-    "level": 3,
+    "start": 6.45,
+    "end": 9.54,
+    "level": 0,
+    "dates": [
+     "2022-09-20",
+     "2022-12-22"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G15",
-    "start": 9.56,
-    "end": 12.65,
-    "level": 3,
+    "start": 7.37,
+    "end": 10.46,
+    "level": 0,
+    "dates": [
+     "2022-10-18",
+     "2023-01-19"
+    ],
     "summary": false
    },
    {
     "name": "Fondazione G16",
-    "start": 10.48,
-    "end": 13.57,
-    "level": 3,
+    "start": 8.29,
+    "end": 11.38,
+    "level": 0,
+    "dates": [
+     "2022-11-15",
+     "2023-02-16"
+    ],
     "summary": false
    },
    {
     "name": "Montaggio aerogeneratori",
-    "start": 14.26,
-    "end": 25.3,
-    "level": 3,
+    "start": 12.07,
+    "end": 23.12,
+    "level": 0,
+    "dates": [
+     "2023-03-10",
+     "2024-02-08"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G01",
-    "start": 14.26,
-    "end": 14.95,
-    "level": 3,
+    "start": 12.07,
+    "end": 12.76,
+    "level": 0,
+    "dates": [
+     "2023-03-10",
+     "2023-03-30"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G02",
-    "start": 14.95,
-    "end": 15.64,
-    "level": 3,
+    "start": 12.76,
+    "end": 13.45,
+    "level": 0,
+    "dates": [
+     "2023-03-31",
+     "2023-04-20"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G03",
-    "start": 15.64,
-    "end": 16.33,
-    "level": 3,
+    "start": 13.45,
+    "end": 14.14,
+    "level": 0,
+    "dates": [
+     "2023-04-21",
+     "2023-05-11"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G04",
-    "start": 16.33,
-    "end": 17.02,
-    "level": 3,
+    "start": 14.14,
+    "end": 14.84,
+    "level": 0,
+    "dates": [
+     "2023-05-12",
+     "2023-06-01"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G05",
-    "start": 17.02,
-    "end": 17.71,
-    "level": 3,
+    "start": 14.84,
+    "end": 15.53,
+    "level": 0,
+    "dates": [
+     "2023-06-02",
+     "2023-06-22"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G06",
-    "start": 17.71,
-    "end": 18.4,
-    "level": 3,
+    "start": 15.53,
+    "end": 16.22,
+    "level": 0,
+    "dates": [
+     "2023-06-23",
+     "2023-07-13"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G07",
-    "start": 18.4,
-    "end": 19.09,
-    "level": 3,
+    "start": 16.22,
+    "end": 16.91,
+    "level": 0,
+    "dates": [
+     "2023-07-14",
+     "2023-08-03"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G08",
-    "start": 19.09,
-    "end": 19.78,
-    "level": 3,
+    "start": 16.91,
+    "end": 17.6,
+    "level": 0,
+    "dates": [
+     "2023-08-04",
+     "2023-08-24"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G09",
-    "start": 19.78,
-    "end": 20.47,
-    "level": 3,
+    "start": 17.6,
+    "end": 18.29,
+    "level": 0,
+    "dates": [
+     "2023-08-25",
+     "2023-09-14"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G10",
-    "start": 20.47,
-    "end": 21.16,
-    "level": 3,
+    "start": 18.29,
+    "end": 18.98,
+    "level": 0,
+    "dates": [
+     "2023-09-15",
+     "2023-10-05"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G11",
-    "start": 21.16,
-    "end": 21.85,
-    "level": 3,
+    "start": 18.98,
+    "end": 19.67,
+    "level": 0,
+    "dates": [
+     "2023-10-06",
+     "2023-10-26"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G12",
-    "start": 21.85,
-    "end": 22.54,
-    "level": 3,
+    "start": 19.67,
+    "end": 20.36,
+    "level": 0,
+    "dates": [
+     "2023-10-27",
+     "2023-11-16"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G13",
-    "start": 22.54,
-    "end": 23.23,
-    "level": 3,
+    "start": 20.36,
+    "end": 21.05,
+    "level": 0,
+    "dates": [
+     "2023-11-17",
+     "2023-12-07"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G14",
-    "start": 23.23,
-    "end": 23.92,
-    "level": 3,
+    "start": 21.05,
+    "end": 21.74,
+    "level": 0,
+    "dates": [
+     "2023-12-08",
+     "2023-12-28"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G15",
-    "start": 23.92,
-    "end": 24.61,
-    "level": 3,
+    "start": 21.74,
+    "end": 22.43,
+    "level": 0,
+    "dates": [
+     "2023-12-29",
+     "2024-01-18"
+    ],
     "summary": false
    },
    {
     "name": "Installazione aerogeneratore G16",
-    "start": 24.61,
-    "end": 25.3,
-    "level": 3,
+    "start": 22.43,
+    "end": 23.12,
+    "level": 0,
+    "dates": [
+     "2024-01-19",
+     "2024-02-08"
+    ],
     "summary": false
    },
    {
     "name": "Cavidotti MT",
-    "start": 3.35,
-    "end": 11.63,
-    "level": 3,
+    "start": 1.15,
+    "end": 9.44,
+    "level": 0,
+    "dates": [
+     "2022-04-12",
+     "2022-12-19"
+    ],
     "summary": false
    },
    {
     "name": "Sottocampo 1",
-    "start": 3.35,
-    "end": 5.65,
-    "level": 3,
+    "start": 1.15,
+    "end": 3.45,
+    "level": 0,
+    "dates": [
+     "2022-04-12",
+     "2022-06-20"
+    ],
     "summary": false
    },
    {
     "name": "Sottocampo 2",
-    "start": 6.11,
-    "end": 8.41,
-    "level": 3,
+    "start": 3.91,
+    "end": 6.22,
+    "level": 0,
+    "dates": [
+     "2022-07-05",
+     "2022-09-12"
+    ],
     "summary": false
    },
    {
     "name": "Sottocampo 3",
-    "start": 8.87,
-    "end": 11.17,
-    "level": 3,
+    "start": 6.68,
+    "end": 8.98,
+    "level": 0,
+    "dates": [
+     "2022-09-27",
+     "2022-12-05"
+    ],
     "summary": false
    },
    {
     "name": "Sottocampo 4",
-    "start": 4.27,
-    "end": 6.57,
-    "level": 3,
+    "start": 2.07,
+    "end": 4.38,
+    "level": 0,
+    "dates": [
+     "2022-05-10",
+     "2022-07-18"
+    ],
     "summary": false
    },
    {
     "name": "Sottocampo 5",
-    "start": 7.03,
-    "end": 9.33,
-    "level": 3,
+    "start": 4.84,
+    "end": 7.14,
+    "level": 0,
+    "dates": [
+     "2022-08-02",
+     "2022-10-10"
+    ],
     "summary": false
    },
    {
     "name": "Sottocampo 6",
-    "start": 9.33,
-    "end": 11.63,
-    "level": 3,
+    "start": 7.14,
+    "end": 9.44,
+    "level": 0,
+    "dates": [
+     "2022-10-11",
+     "2022-12-19"
+    ],
     "summary": false
    },
    {
     "name": "Cavidotto AT",
-    "start": 2.2,
-    "end": 11.4,
-    "level": 3,
+    "start": 0.0,
+    "end": 9.21,
+    "level": 0,
+    "dates": [
+     "2022-03-08",
+     "2022-12-12"
+    ],
     "summary": false
    },
    {
     "name": "Realizzazione SE 220kV/33kV opere utenza",
-    "start": 2.2,
-    "end": 12.32,
-    "level": 3,
+    "start": 0.0,
+    "end": 10.13,
+    "level": 0,
+    "dates": [
+     "2022-03-08",
+     "2023-01-09"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Opere civili, elettriche e meccaniche",
+    "start": 0.0,
+    "end": 8.29,
+    "level": 0,
+    "dates": [
+     "2022-03-08",
+     "2022-11-14"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Reinterri e ripristino morfologico",
+    "start": 8.29,
+    "end": 10.13,
+    "level": 0,
+    "dates": [
+     "2022-11-15",
+     "2023-01-09"
+    ],
     "summary": false
    },
    {
     "name": "COMMISSIONING E AVVIAMENTO",
-    "start": 10.48,
-    "end": 26.48,
-    "level": 2,
-    "summary": true
+    "start": 8.29,
+    "end": 24.31,
+    "level": 0,
+    "dates": [
+     "2022-11-15",
+     "2024-03-15"
+    ],
+    "summary": false
    },
    {
     "name": "Commissioning",
-    "start": 10.48,
-    "end": 26.25,
-    "level": 3,
+    "start": 8.29,
+    "end": 24.08,
+    "level": 0,
+    "dates": [
+     "2022-11-15",
+     "2024-03-08"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G01",
-    "start": 14.95,
-    "end": 15.9,
-    "level": 3,
+    "start": 12.76,
+    "end": 13.72,
+    "level": 0,
+    "dates": [
+     "2023-03-31",
+     "2023-04-28"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G02",
-    "start": 15.64,
-    "end": 16.59,
-    "level": 3,
+    "start": 13.45,
+    "end": 14.41,
+    "level": 0,
+    "dates": [
+     "2023-04-21",
+     "2023-05-19"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G03",
-    "start": 16.33,
-    "end": 17.28,
-    "level": 3,
+    "start": 14.14,
+    "end": 15.1,
+    "level": 0,
+    "dates": [
+     "2023-05-12",
+     "2023-06-09"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G04",
-    "start": 17.02,
-    "end": 17.97,
-    "level": 3,
+    "start": 14.84,
+    "end": 15.79,
+    "level": 0,
+    "dates": [
+     "2023-06-02",
+     "2023-06-30"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G05",
-    "start": 17.71,
-    "end": 18.66,
-    "level": 3,
+    "start": 15.53,
+    "end": 16.48,
+    "level": 0,
+    "dates": [
+     "2023-06-23",
+     "2023-07-21"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G06",
-    "start": 18.4,
-    "end": 19.35,
-    "level": 3,
+    "start": 16.22,
+    "end": 17.17,
+    "level": 0,
+    "dates": [
+     "2023-07-14",
+     "2023-08-11"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G07",
-    "start": 19.09,
-    "end": 20.04,
-    "level": 3,
+    "start": 16.91,
+    "end": 17.86,
+    "level": 0,
+    "dates": [
+     "2023-08-04",
+     "2023-09-01"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G08",
-    "start": 19.78,
-    "end": 20.73,
-    "level": 3,
+    "start": 17.6,
+    "end": 18.55,
+    "level": 0,
+    "dates": [
+     "2023-08-25",
+     "2023-09-22"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G09",
-    "start": 20.47,
-    "end": 21.42,
-    "level": 3,
+    "start": 18.29,
+    "end": 19.24,
+    "level": 0,
+    "dates": [
+     "2023-09-15",
+     "2023-10-13"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G10",
-    "start": 21.16,
-    "end": 22.11,
-    "level": 3,
+    "start": 18.98,
+    "end": 19.93,
+    "level": 0,
+    "dates": [
+     "2023-10-06",
+     "2023-11-03"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G11",
-    "start": 21.85,
-    "end": 22.8,
-    "level": 3,
+    "start": 11.38,
+    "end": 12.34,
+    "level": 0,
+    "dates": [
+     "2023-10-27",
+     "2023-11-24"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G12",
-    "start": 22.54,
-    "end": 23.49,
-    "level": 3,
+    "start": 12.07,
+    "end": 13.03,
+    "level": 0,
+    "dates": [
+     "2023-11-17",
+     "2023-12-15"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G13",
-    "start": 23.23,
-    "end": 24.18,
-    "level": 3,
+    "start": 12.76,
+    "end": 13.72,
+    "level": 0,
+    "dates": [
+     "2023-12-08",
+     "2024-01-05"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G14",
-    "start": 23.92,
-    "end": 24.87,
-    "level": 3,
+    "start": 13.45,
+    "end": 14.41,
+    "level": 0,
+    "dates": [
+     "2023-12-29",
+     "2024-01-26"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G15",
-    "start": 24.61,
-    "end": 25.56,
-    "level": 3,
+    "start": 14.14,
+    "end": 15.1,
+    "level": 0,
+    "dates": [
+     "2024-01-19",
+     "2024-02-16"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning G16",
-    "start": 25.3,
-    "end": 26.25,
-    "level": 3,
+    "start": 14.84,
+    "end": 15.79,
+    "level": 0,
+    "dates": [
+     "2024-02-09",
+     "2024-03-08"
+    ],
     "summary": false
    },
    {
     "name": "Commissioning SSE",
-    "start": 10.48,
-    "end": 11.17,
-    "level": 3,
+    "start": 0.0,
+    "end": 0.69,
+    "level": 0,
+    "dates": [
+     "2022-11-15",
+     "2022-12-05"
+    ],
     "summary": false
    },
    {
-    "name": "OPERE DI RETE ‐ elettrodotto Partanna ‐ Partanna",
-    "start": 9.99,
-    "end": 24.41,
-    "level": 1,
-    "summary": true
-   },
-   {
-    "name": "Rilievo del tracciato e progettazione del profilo",
-    "start": 9.99,
-    "end": 10.38,
-    "level": 2,
+    "name": "1° parallelo con rete elettrica",
+    "start": 15.76,
+    "end": 15.79,
+    "level": 0,
+    "dates": [
+     "2024-03-08",
+     "2024-03-08"
+    ],
     "summary": false
    },
    {
-    "name": "Indagini geognostiche",
-    "start": 10.45,
-    "end": 11.07,
-    "level": 2,
+    "name": "Avviamento",
+    "start": 15.86,
+    "end": 16.02,
+    "level": 0,
+    "dates": [
+     "2024-03-11",
+     "2024-03-15"
+    ],
     "summary": false
    },
    {
-    "name": "Approvazione documentazione di progetto",
-    "start": 11.14,
-    "end": 16.59,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Ordine materiali",
-    "start": 13.9,
-    "end": 16.59,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Collaudo materiali",
-    "start": 15.74,
-    "end": 17.51,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Stubs e basi dei sostegni al Sito (fabbricazione)",
-    "start": 16.66,
-    "end": 18.66,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Materiale di messa a terra al sito",
-    "start": 16.66,
-    "end": 18.66,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Parti superiori dei sostegni al sito",
-    "start": 18.5,
-    "end": 21.19,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Conuttori e corde di guardia al Sito",
-    "start": 18.96,
-    "end": 21.65,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Isolatori al sito (fabbricazione)",
-    "start": 18.5,
-    "end": 21.19,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Morsettiera al sito (fabbricaione)",
-    "start": 18.5,
-    "end": 21.19,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Asservimenti",
-    "start": 12.98,
-    "end": 18.43,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Esecuzione degli scavi",
-    "start": 16.66,
-    "end": 20.27,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Ass.degli Stubs e delle basi, casseri e armature",
-    "start": 16.66,
-    "end": 21.19,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Getto del calcestruzzo",
-    "start": 17.12,
-    "end": 20.73,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Riempimento degli scavi",
-    "start": 17.58,
-    "end": 21.88,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Assemblaggio delle parti superiori dei sostegni",
-    "start": 18.27,
-    "end": 22.57,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Assemblaggio e montaggio isolatori e",
-    "start": 18.27,
-    "end": 22.57,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Tesatura",
-    "start": 21.95,
-    "end": 23.72,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Collaudo al sito",
-    "start": 23.79,
-    "end": 24.41,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Ampliamento SE RTN Partanna",
-    "start": 9.99,
-    "end": 16.13,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Realizzazione SE RTN Partanna 3",
-    "start": 9.99,
-    "end": 23.72,
-    "level": 2,
+    "name": "Entrata in esercizio ‐ COD",
+    "start": 15.99,
+    "end": 16.02,
+    "level": 0,
+    "dates": [
+     "2024-03-15",
+     "2024-03-15"
+    ],
     "summary": false
    }
   ],
   "unit": "month",
-  "months": 26.48,
+  "months": 24.54,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/535136",
+   "url": "https://va.mite.gov.it/File/Documento/472407",
    "page": 2,
-   "document": "Integrazioni del 27/09/2021 - GRE.EEC.R.73.IT.W.13824.00.033.01 - Cronoprogramma_signed",
+   "document": "Cronoprogramma",
    "excerpt": ""
   },
   "asse": {
    "titolo": null,
    "etichette": [
     {
-     "label": "gen",
+     "label": "mar 22",
      "start": 0.0,
      "end": 1.0
     },
     {
-     "label": "feb",
+     "label": "apr 22",
      "start": 1.0,
      "end": 2.0
     },
     {
-     "label": "mar",
+     "label": "mag 22",
      "start": 2.0,
      "end": 3.0
     },
     {
-     "label": "apr",
+     "label": "giu 22",
      "start": 3.0,
      "end": 4.0
     },
     {
-     "label": "mag",
+     "label": "lug 22",
      "start": 4.0,
      "end": 5.0
     },
     {
-     "label": "giu",
+     "label": "ago 22",
      "start": 5.0,
      "end": 6.0
     },
     {
-     "label": "lug",
+     "label": "set 22",
      "start": 6.0,
      "end": 7.0
     },
     {
-     "label": "ago",
+     "label": "ott 22",
      "start": 7.0,
      "end": 8.0
     },
     {
-     "label": "set",
+     "label": "nov 22",
      "start": 8.0,
      "end": 9.0
     },
     {
-     "label": "ott",
+     "label": "dic 22",
      "start": 9.0,
      "end": 10.0
     },
     {
-     "label": "nov",
+     "label": "gen 23",
      "start": 10.0,
      "end": 11.0
     },
     {
-     "label": "dic",
+     "label": "feb 23",
      "start": 11.0,
      "end": 12.0
     },
     {
-     "label": "gen",
+     "label": "mar 23",
      "start": 12.0,
      "end": 13.0
     },
     {
-     "label": "feb",
+     "label": "apr 23",
      "start": 13.0,
      "end": 14.0
     },
     {
-     "label": "mar",
+     "label": "mag 23",
      "start": 14.0,
      "end": 15.0
     },
     {
-     "label": "apr",
+     "label": "giu 23",
      "start": 15.0,
      "end": 16.0
     },
     {
-     "label": "mag",
+     "label": "lug 23",
      "start": 16.0,
      "end": 17.0
     },
     {
-     "label": "giu",
+     "label": "ago 23",
      "start": 17.0,
      "end": 18.0
     },
     {
-     "label": "lug",
+     "label": "set 23",
      "start": 18.0,
      "end": 19.0
     },
     {
-     "label": "ago",
+     "label": "ott 23",
      "start": 19.0,
      "end": 20.0
     },
     {
-     "label": "set",
+     "label": "nov 23",
      "start": 20.0,
      "end": 21.0
     },
     {
-     "label": "ott",
+     "label": "dic 23",
      "start": 21.0,
      "end": 22.0
     },
     {
-     "label": "nov",
+     "label": "gen 24",
      "start": 22.0,
      "end": 23.0
     },
     {
-     "label": "dic",
+     "label": "feb 24",
      "start": 23.0,
      "end": 24.0
     },
     {
-     "label": "gen",
+     "label": "mar 24",
      "start": 24.0,
      "end": 25.0
-    },
-    {
-     "label": "feb",
-     "start": 25.0,
-     "end": 26.0
-    },
-    {
-     "label": "mar",
-     "start": 26.0,
-     "end": 27.0
     }
    ],
    "unita": "mesi"
@@ -1253,7 +1775,7 @@
   "duration": {
    "text": "26 mesi",
    "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 20 mesi (1), 534 giorni (circa 18 mesi) (1)",
+   "hint": "Valore prevalente negli elaborati; altri valori: 18 mesi (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/535152",
     "page": 48,
@@ -1269,18 +1791,18 @@
   "note": null,
   "altri": [
    {
-    "document": "Cronoprogramma",
-    "url": "https://va.mite.gov.it/File/Documento/472407"
+    "document": "Integrazioni del 27/09/2021 - GRE.EEC.R.73.IT.W.13824.00.033.01 - Cronoprogramma_signed",
+    "url": "https://va.mite.gov.it/File/Documento/535136"
    }
   ],
   "durate_fasi": [],
-  "metodo": "diagramma vettoriale"
+  "metodo": "tabella con date"
  },
  "documentazione": {
   "documenti": 241,
-  "pagine": 1685,
+  "pagine": 3464,
   "completa": false,
-  "da_leggere": 121
+  "da_leggere": 1
  },
  "confronto": [
   {
@@ -1311,8 +1833,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 01/03/2022, ma l'iter è proseguito; ultimo documento o atto del 06/08/2025: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
    "label": "Recapiti",
-   "reason": "29 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "47 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Solutions S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
