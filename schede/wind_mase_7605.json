@@ -5,7 +5,7 @@
  "title": "progetto di un impianto eolico denominato \"EWR1 -San Martino - Serre\", composta da 19 aerogeneratori per una potenza complessiva di 115 MW, ricadente nei comuni di Rocchetta Sant'Antonio, Candela, Sant'Agata di Puglia, Ascoli Satriano e Deliceto, tutti ricadenti nella Provincia di Foggia.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7605",
  "source": "mase",
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "19",
    "status": "da documenti",
-   "sub": "6,05 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 5 (17), 14 (14), 70 (1)",
+   "sub": "6,05 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 5 (27), 14 (22), 2 (8)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/458852",
     "page": 1,
@@ -37,7 +37,7 @@
    "label": "Durata cantiere",
    "value": "24 mesi",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Inizio lavori 11/01/2022 (campo presunto di piano di sicurezza o notifica)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/436226",
     "page": 7,
@@ -57,9 +57,9 @@
    "Sant'Agata Di Puglia"
   ],
   "coordinate": {
-   "lat": 41.10863,
-   "lon": 15.46198,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (188 riferimenti concordi)",
+   "lat": 41.10595,
+   "lon": 15.46337,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (212 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/436300",
     "page": 10,
@@ -67,7 +67,7 @@
     "excerpt": "R52 537842,8846 | 4553019,382 Rocchetta S. A. 2 92 | fabbr. rurale si"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.10863,15.46198",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.10595,15.46337",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -99,7 +99,7 @@
     {
      "type": "PEC",
      "value": "sinergia.ewr1@pec.it",
-     "occurrences": 11,
+     "occurrences": 16,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/458852",
       "page": 1,
@@ -110,12 +110,23 @@
     {
      "type": "E-mail",
      "value": "ing.scia@gmail.com",
-     "occurrences": 43,
+     "occurrences": 84,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/436218",
+      "url": "https://va.mite.gov.it/File/Documento/436296",
       "page": 1,
       "document": "Studio di Impatto Ambientale",
       "excerpt": "80143 Napoli (NA), Italia email: ing.scia@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sinergia.ewr@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/507764",
+      "page": 1,
+      "document": "2021_05_11_OUT_Riscontro_MiTE_MiC_nota_541_signed",
+      "excerpt": "mail: sinergia.ewr@gmail.com"
      }
     },
     {
@@ -251,14 +262,55 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "EWRl S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "l@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/507734",
+      "page": 1,
+      "document": "2021_02_17_IN_AdB_Prot_4528",
+      "excerpt": "EWRl S.r.l. sinergia.ewr l@pec.it"
+     }
+    }
+   ],
+   "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 11/01/2022, ma l'iter è proseguito; ultimo documento o atto del 16/12/2025: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": "24 mesi",
+  "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "10/01/2022 → 09/02/2024",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/436252",
+     "page": 82,
+     "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "25 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -270,11 +322,728 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Interferenza nel periodo dal",
+    "start": 0.0,
+    "end": 0.39,
+    "level": 0,
+    "dates": [
+     "2022-03-28",
+     "2022-04-08"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Dette lavorazioni interferiscono fra loro per i seguenti periodi: dal",
+    "start": 0.0,
+    "end": 0.39,
+    "level": 0,
+    "dates": [
+     "2022-03-28",
+     "2022-04-08"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Interferenza nel periodo dal",
+    "start": 0.46,
+    "end": 0.86,
+    "level": 0,
+    "dates": [
+     "2022-04-11",
+     "2022-04-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Dette lavorazioni interferiscono fra loro per i seguenti periodi: dal",
+    "start": 0.46,
+    "end": 0.86,
+    "level": 0,
+    "dates": [
+     "2022-04-11",
+     "2022-04-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Interferenza nel periodo dal",
+    "start": 1.38,
+    "end": 1.55,
+    "level": 0,
+    "dates": [
+     "2022-05-09",
+     "2022-05-13"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OPERE ELETTRICHE, sono eseguite rispettivamente dal",
+    "start": 1.38,
+    "end": 1.55,
+    "level": 0,
+    "dates": [
+     "2022-05-09",
+     "2022-05-13"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Dette lavorazioni interferiscono fra loro per i seguenti periodi: dal",
+    "start": 1.38,
+    "end": 1.55,
+    "level": 0,
+    "dates": [
+     "2022-05-09",
+     "2022-05-13"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Interferenza nel periodo dal",
+    "start": 3.22,
+    "end": 5.46,
+    "level": 0,
+    "dates": [
+     "2023-06-05",
+     "2023-08-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "ELETTRICHE, sono eseguite rispettivamente dal",
+    "start": 0.0,
+    "end": 9.61,
+    "level": 0,
+    "dates": [
+     "2023-02-27",
+     "2023-12-15"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Dette lavorazioni interferiscono fra loro per i seguenti periodi: dal",
+    "start": 3.22,
+    "end": 5.46,
+    "level": 0,
+    "dates": [
+     "2023-06-05",
+     "2023-08-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "DURATA COMPLESSIVA DEL CANTIERE 529",
+    "start": 0.0,
+    "end": 25.03,
+    "level": 0,
+    "dates": [
+     "2022-01-10",
+     "2024-02-09"
+    ],
+    "summary": false,
+    "duration": "761 g"
+   },
+   {
+    "name": "Realizzazione della recinzione e degli accessi al cantiere 10",
+    "start": 0.0,
+    "end": 0.39,
+    "level": 0,
+    "dates": [
+     "2022-01-10",
+     "2022-01-21"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "Realizzazione di impianto elettrico del cantiere 10",
+    "start": 0.46,
+    "end": 0.86,
+    "level": 0,
+    "dates": [
+     "2022-01-24",
+     "2022-02-04"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "Realizzazione di impianto di messa a terra del cantiere 10",
+    "start": 0.92,
+    "end": 1.32,
+    "level": 0,
+    "dates": [
+     "2022-02-07",
+     "2022-02-18"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "Realizzazione di impianto idrico del cantiere 5",
+    "start": 1.38,
+    "end": 1.55,
+    "level": 0,
+    "dates": [
+     "2022-02-21",
+     "2022-02-25"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Realizzazione della viabilità del cantiere 20",
+    "start": 1.61,
+    "end": 2.47,
+    "level": 0,
+    "dates": [
+     "2022-02-28",
+     "2022-03-25"
+    ],
+    "summary": false,
+    "duration": "26 g"
+   },
+   {
+    "name": "Allestimento di depositi, zone per lo stoccaggio dei materiali e per gli impiant",
+    "start": 2.53,
+    "end": 2.93,
+    "level": 0,
+    "dates": [
+     "2022-03-28",
+     "2022-04-08"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Allestimento di strutture prefabbricate del cantiere 10",
+    "start": 2.99,
+    "end": 3.39,
+    "level": 0,
+    "dates": [
+     "2022-04-11",
+     "2022-04-22"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "FORMAZIONE STRADA E PIAZZOLA 253",
+    "start": 1.61,
+    "end": 13.52,
+    "level": 0,
+    "dates": [
+     "2022-02-28",
+     "2023-02-24"
+    ],
+    "summary": false,
+    "duration": "362 g"
+   },
+   {
+    "name": "Scavo di sbancamento 5",
+    "start": 1.61,
+    "end": 1.78,
+    "level": 0,
+    "dates": [
+     "2022-02-28",
+     "2022-03-04"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Formazione di fondazione stradale 5",
+    "start": 1.84,
+    "end": 2.01,
+    "level": 0,
+    "dates": [
+     "2022-03-07",
+     "2022-03-11"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Formazione di rilevato stradale 5",
+    "start": 2.07,
+    "end": 2.24,
+    "level": 0,
+    "dates": [
+     "2022-03-14",
+     "2022-03-18"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Sagomatura della massicciata e modellazione con terreno vegetale 5",
+    "start": 2.3,
+    "end": 2.47,
+    "level": 0,
+    "dates": [
+     "2022-03-21",
+     "2022-03-25"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "OPERE DI FONDAZIONE 233",
+    "start": 2.53,
+    "end": 13.52,
+    "level": 0,
+    "dates": [
+     "2022-03-28",
+     "2023-02-24"
+    ],
+    "summary": false,
+    "duration": "334 g"
+   },
+   {
+    "name": "Scavo di sbancamento 2",
+    "start": 2.53,
+    "end": 2.6,
+    "level": 0,
+    "dates": [
+     "2022-03-28",
+     "2022-03-29"
+    ],
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Realizzazione della carpenteria per le strutture in fondazione 3",
+    "start": 2.6,
+    "end": 2.7,
+    "level": 0,
+    "dates": [
+     "2022-03-30",
+     "2022-04-01"
+    ],
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Lavorazione e posa ferri di armatura per le strutture in fondazione 5",
+    "start": 2.76,
+    "end": 2.93,
+    "level": 0,
+    "dates": [
+     "2022-04-04",
+     "2022-04-08"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Getto in calcestruzzo per le strutture in fondazione 3",
+    "start": 2.99,
+    "end": 3.09,
+    "level": 0,
+    "dates": [
+     "2022-04-11",
+     "2022-04-13"
+    ],
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Rinterro di scavo 2",
+    "start": 3.09,
+    "end": 3.16,
+    "level": 0,
+    "dates": [
+     "2022-04-14",
+     "2022-04-15"
+    ],
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "OPERE ELETTRICHE DI CONNESSIONE 276",
+    "start": 3.68,
+    "end": 16.71,
+    "level": 0,
+    "dates": [
+     "2022-05-02",
+     "2023-06-01"
+    ],
+    "summary": false,
+    "duration": "396 g"
+   },
+   {
+    "name": "Scavo a sezione obbligata per cavidotto di collegamento 5",
+    "start": 3.68,
+    "end": 3.85,
+    "level": 0,
+    "dates": [
+     "2022-05-02",
+     "2022-05-06"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Posa di conduttura elettrica - fibra ottica 5",
+    "start": 3.91,
+    "end": 4.08,
+    "level": 0,
+    "dates": [
+     "2022-05-09",
+     "2022-05-13"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Rinterro di scavo 5",
+    "start": 4.14,
+    "end": 4.31,
+    "level": 0,
+    "dates": [
+     "2022-05-16",
+     "2022-05-20"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Montaggio degli aereogeneratori 204",
+    "start": 13.59,
+    "end": 23.19,
+    "level": 0,
+    "dates": [
+     "2023-02-27",
+     "2023-12-15"
+    ],
+    "summary": false,
+    "duration": "292 g"
+   },
+   {
+    "name": "OPERE EDILI STAZIONE UTENTE 50",
+    "start": 16.81,
+    "end": 19.05,
+    "level": 0,
+    "dates": [
+     "2023-06-05",
+     "2023-08-11"
+    ],
+    "summary": false,
+    "duration": "68 g"
+   },
+   {
+    "name": "Realizzazione della fondazione dell'edificio utente in c.a. 10",
+    "start": 16.81,
+    "end": 17.2,
+    "level": 0,
+    "dates": [
+     "2023-06-05",
+     "2023-06-16"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "Realizzazione di muri esterni ed interni 10",
+    "start": 17.27,
+    "end": 17.66,
+    "level": 0,
+    "dates": [
+     "2023-06-19",
+     "2023-06-30"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "Realizzazione intonaco e tinteggiatura di superfici esterne ed interne 5",
+    "start": 17.73,
+    "end": 17.89,
+    "level": 0,
+    "dates": [
+     "2023-07-03",
+     "2023-07-07"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Installazione di porte e serramenti 5",
+    "start": 17.96,
+    "end": 18.12,
+    "level": 0,
+    "dates": [
+     "2023-07-10",
+     "2023-07-14"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Posa di pavimenti per interni sopraelevati 5",
+    "start": 18.19,
+    "end": 18.36,
+    "level": 0,
+    "dates": [
+     "2023-07-17",
+     "2023-07-21"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Posa di recinzioni e cancellate 5",
+    "start": 18.42,
+    "end": 18.59,
+    "level": 0,
+    "dates": [
+     "2023-07-24",
+     "2023-07-28"
+    ],
+    "summary": false,
+    "duration": "5 g"
+   },
+   {
+    "name": "Installazione sistema HVAC 10",
+    "start": 18.65,
+    "end": 19.05,
+    "level": 0,
+    "dates": [
+     "2023-07-31",
+     "2023-08-11"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "MONTAGGI ELETTROMECCANICI STAZIONE UTENTE 40",
+    "start": 0.0,
+    "end": 1.78,
+    "level": 0,
+    "dates": [
+     "2023-08-28",
+     "2023-10-20"
+    ],
+    "summary": false,
+    "duration": "54 g"
+   },
+   {
+    "name": "Posa e collegamento cavi di piazzale e sala quadri 10",
+    "start": 0.0,
+    "end": 0.39,
+    "level": 0,
+    "dates": [
+     "2023-08-28",
+     "2023-09-08"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "Realizzazione impianti elettrici FM/Luce/TVcc/Antintrusione ed Illuminazione est",
+    "start": 0.46,
+    "end": 0.86,
+    "level": 0,
+    "dates": [
+     "2023-09-11",
+     "2023-09-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio apparecchiature MT/BT 10",
+    "start": 0.92,
+    "end": 1.32,
+    "level": 0,
+    "dates": [
+     "2023-09-25",
+     "2023-10-06"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "Posa e messa in esercizio TRAFO 30/150 KV 10",
+    "start": 1.38,
+    "end": 1.78,
+    "level": 0,
+    "dates": [
+     "2023-10-09",
+     "2023-10-20"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "OPERAZIONI DI COMMISSIONING 27",
+    "start": 3.68,
+    "end": 5.0,
+    "level": 0,
+    "dates": [
+     "2023-12-18",
+     "2024-01-26"
+    ],
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "Smobilizzo del cantiere 10",
+    "start": 5.07,
+    "end": 5.46,
+    "level": 0,
+    "dates": [
+     "2024-01-29",
+     "2024-02-09"
+    ],
+    "summary": false,
+    "duration": "12 g"
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 25.03,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/436252",
+   "page": 82,
+   "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "gen 22",
+     "start": -0.296,
+     "end": 0.704
+    },
+    {
+     "label": "feb 22",
+     "start": 0.704,
+     "end": 1.704
+    },
+    {
+     "label": "mar 22",
+     "start": 1.704,
+     "end": 2.704
+    },
+    {
+     "label": "apr 22",
+     "start": 2.704,
+     "end": 3.704
+    },
+    {
+     "label": "mag 22",
+     "start": 3.704,
+     "end": 4.704
+    },
+    {
+     "label": "giu 22",
+     "start": 4.704,
+     "end": 5.704
+    },
+    {
+     "label": "lug 22",
+     "start": 5.704,
+     "end": 6.704
+    },
+    {
+     "label": "ago 22",
+     "start": 6.704,
+     "end": 7.704
+    },
+    {
+     "label": "set 22",
+     "start": 7.704,
+     "end": 8.704
+    },
+    {
+     "label": "ott 22",
+     "start": 8.704,
+     "end": 9.704
+    },
+    {
+     "label": "nov 22",
+     "start": 9.704,
+     "end": 10.704
+    },
+    {
+     "label": "dic 22",
+     "start": 10.704,
+     "end": 11.704
+    },
+    {
+     "label": "gen 23",
+     "start": 11.704,
+     "end": 12.704
+    },
+    {
+     "label": "feb 23",
+     "start": 12.704,
+     "end": 13.704
+    },
+    {
+     "label": "mar 23",
+     "start": 13.704,
+     "end": 14.704
+    },
+    {
+     "label": "apr 23",
+     "start": 14.704,
+     "end": 15.704
+    },
+    {
+     "label": "mag 23",
+     "start": 15.704,
+     "end": 16.704
+    },
+    {
+     "label": "giu 23",
+     "start": 16.704,
+     "end": 17.704
+    },
+    {
+     "label": "lug 23",
+     "start": 17.704,
+     "end": 18.704
+    },
+    {
+     "label": "ago 23",
+     "start": 18.704,
+     "end": 19.704
+    },
+    {
+     "label": "set 23",
+     "start": 19.704,
+     "end": 20.704
+    },
+    {
+     "label": "ott 23",
+     "start": 20.704,
+     "end": 21.704
+    },
+    {
+     "label": "nov 23",
+     "start": 21.704,
+     "end": 22.704
+    },
+    {
+     "label": "dic 23",
+     "start": 22.704,
+     "end": 23.704
+    },
+    {
+     "label": "gen 24",
+     "start": 23.704,
+     "end": 24.704
+    },
+    {
+     "label": "feb 24",
+     "start": 24.704,
+     "end": 25.704
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "24 mesi",
    "status": "da documenti",
@@ -286,18 +1055,45 @@
     "excerpt": "esproprio dell'area e, per ogni mese o frazione di mese, una indennità pari ad un dodicesimo di quella annua. Si stima per l’esecuzione dei lavori un periodo di tempo di 24 mesi. Per la tipologia di superfici passate all"
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "11/01/2022",
+    "iso": "2022-01-11",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/436252",
+     "page": 2,
+     "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+     "excerpt": "Data inizio lavori: 11/01/2022 Data fine lavori (presunta):"
+    }
+   },
+   {
+    "label": "Fine lavori",
+    "date": "12/02/2024",
+    "iso": "2024-02-12",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/436252",
+     "page": 2,
+     "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+     "excerpt": "Data fine lavori (presunta): 12/02/2024 Durata in giorni (presunta):"
+    }
+   }
+  ],
   "document": null,
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "note": null,
   "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "tabella con date"
  },
  "documentazione": {
   "documenti": 263,
-  "pagine": 4074,
+  "pagine": 4822,
   "completa": false,
-  "da_leggere": 143
+  "da_leggere": 23
  },
  "confronto": [
   {
@@ -328,8 +1124,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 11/01/2022, ma l'iter è proseguito; ultimo documento o atto del 16/12/2025: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
    "label": "Recapiti",
-   "reason": "583 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1001 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
