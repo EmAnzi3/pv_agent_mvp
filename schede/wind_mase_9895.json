@@ -1,0 +1,399 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9895",
+ "title": "Progetto di un impianto eolico denominato \"Leo\", costituito da 12 aerogeneratori di potenza nominale pari a 6,6 MW, per una potenza complessiva di 79,2 MW, localizzato nei comuni di Contessa Entellina (PA), Corleone (PA), Monreale (PA) e Piana degli Albanesi (PA).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9895",
+ "source": "mase",
+ "updated": "2026-11-01",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "79,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9895",
+    "excerpt": "79,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "12",
+   "status": "da documenti",
+   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 1 (6), 2 (5), 4 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/862083",
+    "page": 1,
+    "document": "Avviso al Pubblico del 28/06/2023",
+    "excerpt": "realizzazione e l’esercizio di un Impianto per la produzione di energia elettrica da fonte rinnovabile di tipo eolico costituito da 12 aerogeneratori di potenza nominale pari a 6,6 MW per un totale di 79,2 MW (nel seguit"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 22 mesi (2), 18 mesi (2), 16 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/862077",
+    "page": 159,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "Si prevede una durata complessiva per le opere precedentemente descritte di circa 12 mesi. In primo luogo, si procede alla costruzione o adeguamento delle vie di"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "PA",
+  "comuni": [
+   "Monreale",
+   "Contessa Entellina",
+   "Corleone",
+   "Piana Degli Albanesi"
+  ],
+  "coordinate": {
+   "lat": 37.86781,
+   "lon": 13.16118,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (63 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/985335",
+    "page": 2,
+    "document": "Integrazioni del 21/02/2024 - Planimetria scavi e riporti 3 di 3",
+    "excerpt": "STRADA PROVINCIALE n.27 lat. 37.881675°N long. 13.152083°E FOGLIO 164"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.86781,13.16118",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06400370968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 102,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/862077",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "P.IVA/C.F. 06400370968 pec: rwerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/971689",
+    "page": 2,
+    "document": "Richiesta integrazioni della Commissione Tecnica PNRR-PNIEC",
+    "excerpt": "Proponente: RWE Renewables Italia S.r.l."
+   }
+  },
+  {
+   "name": "Vamirgeoind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/985355",
+    "page": 101,
+    "document": "Integrazioni del 21/02/2024 - Relazione Geologica",
+    "excerpt": "COMMITTENTE: Vamirgeoind s.r.l.."
+   }
+  },
+  {
+   "name": "Sicily Wind One S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9895"
+   }
+  },
+  {
+   "name": "Dott. Geol. Gualtiero Bellomo",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/861807",
+    "page": 8,
+    "document": "Relazione tecnica generale",
+    "excerpt": "riportate nella Relazione Geologica redatta dal Dott. Geol. Gualtiero Bellomo allegata al presente progetto."
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Geocima S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "04405870827",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Guglielmo Borremans 36 90145 Palermo Pa",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "geocimasnc@tiscali.it",
+     "occurrences": 45,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985355",
+      "page": 101,
+      "document": "Integrazioni del 21/02/2024 - Relazione Geologica",
+      "excerpt": "GEOCIMA s.a.s. - Laboratorio di Geologia Tecnica - Via Borremans, 36 - 90145 - Palermo Tel/Fax 0916824940 – Email: geocimasnc@tiscali.it - P.I. 04405870827"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "LA Molisana Trasporti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01463480705",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Rio Lecine 30 86014 Guardiaregia Cb",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@molisanatrasporti.it",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/861851",
+      "page": 2,
+      "document": "Schede informative Viabilità di accesso al parco",
+      "excerpt": "Sede Legale e Operativa info@molisanatrasporti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Rewind Energy S.r.l.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rewindenergy@pec.it",
+     "occurrences": 106,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/862077",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "P.IVA/C.F. 02785820818 pec: rewindenergy@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Piana Degli Albanesi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "pianadeglialbanesi2020@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985330",
+      "page": 2,
+      "document": "Integrazioni del 21/02/2024 - Comunicazione Terna assegnazione stallo in SE Monreale 3",
+      "excerpt": "PIANA DEGLI ALBANESI SRL pianadeglialbanesi2020@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Edpr Sicilia DUE S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "edprsicilia.2@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985330",
+      "page": 2,
+      "document": "Integrazioni del 21/02/2024 - Comunicazione Terna assegnazione stallo in SE Monreale 3",
+      "excerpt": "EDPR SICILIA DUE S.R.L. edprsicilia.2@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "TRE Rinnovabili S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "trerinnovabili@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985330",
+      "page": 2,
+      "document": "Integrazioni del 21/02/2024 - Comunicazione Terna assegnazione stallo in SE Monreale 3",
+      "excerpt": "TRE RINNOVABILI S.R.L. trerinnovabili@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 22 mesi (2), 18 mesi (2), 20 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/862077",
+    "page": 159,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "Si prevede una durata complessiva per le opere precedentemente descritte di circa 12 mesi. In primo luogo, si procede alla costruzione o adeguamento delle vie di"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 344,
+  "pagine": 3024,
+  "completa": false,
+  "da_leggere": 224
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Sicily Wind One S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 79.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CONTESSA ENTELLINA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "35 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
