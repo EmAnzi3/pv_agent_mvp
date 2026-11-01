@@ -5,7 +5,7 @@
  "title": "Progetto per un impianto eolico composto da 15 aerogeneratori, ciascuno dei quali di potenza nominale pari a 6 MW, per una potenza totale pari a 90 MW, da realizzarsi nei territori comunali di Brindisi, Mesagne (BR), San Donaci (BR), San Pancrazio (BR) e Cellino San Marco (BR)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7425",
  "source": "mase",
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "15",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 165 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 4 (7), 6 (5), 84 (5)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 165 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 4 (16), 6 (13), 9 (12)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/410174",
     "page": 1,
@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "8 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (4), 14 mesi (2), 6-7 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/404035",
     "page": 15,
@@ -70,7 +70,7 @@
   "coordinate": {
    "lat": 40.4842,
    "lon": 17.85072,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (34 riferimenti concordi)",
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (66 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/404039",
     "page": 24,
@@ -81,7 +81,17 @@
   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.48420,17.85072",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 40.35441,
+   "lon": 17.78995,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/404014",
+    "page": 188,
+    "document": "Verifica preventiva rischio archeologicopilare",
+    "excerpt": "IGM : F°203 I SE Tuturano Coordinate GPS: 40°21’15.89” N"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.35441,17.78995"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -112,48 +122,6 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7425"
-   }
-  },
-  {
-   "name": "Muro S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "Telefono",
-     "value": "08321798355",
-     "occurrences": 38,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/404033",
-      "page": 1,
-      "document": "Studio Fattibilità Ambientale 34a-signed",
-      "excerpt": "Tel. +39 0832 1798355 C.F. e P.I. 15443431000"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "06960353",
-     "occurrences": 10,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/526336",
-      "page": 1,
-      "document": "Integrazioni del 09/08/2021 - EPD 5.0",
-      "excerpt": "Tel. +39 0832 1798355 C.F. e P.I. 15443431000 fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu Pa tel. +39 06 960 353-00"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/484588",
-    "page": 3,
-    "document": "Integrazioni del 22/02/2020 - Relazione Descrittiva",
-    "excerpt": "La società proponente è wpdMURO S.r.l. con sede in viale Aventino, 102 00153 Roma (P. IVA 15443431000). E’ prevista la realizzazione di 15 aerogeneratori di ultima generazione nei"
    }
   },
   {
@@ -190,7 +158,7 @@
     {
      "type": "PEC",
      "value": "fabio.calcarella@ingpec.eu",
-     "occurrences": 58,
+     "occurrences": 114,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/404033",
       "page": 1,
@@ -201,12 +169,93 @@
     {
      "type": "E-mail",
      "value": "fabio.calcarella@gmail.com",
-     "occurrences": 118,
+     "occurrences": 214,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/404033",
       "page": 1,
       "document": "Studio Fattibilità Ambientale 34a-signed",
       "excerpt": "Tel. +39 0832 1798355 C.F. e P.I. 15443431000 fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu » tel. +39 06 960 353-00"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Muro S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fblo.colcarello@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/403958",
+      "page": 1,
+      "document": "SSE - Planimetria",
+      "excerpt": "ei. +39 0832 1708385 fabio caicarelaegmali.com — fblo.colcarello@ingpec.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "calcarella@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/403964",
+      "page": 1,
+      "document": "SSE - Impianti antincendio",
+      "excerpt": "Tel. +39 0832 1798355 » C.F. e P.I. 15443431000 ‘fabio. calcarella@gmail.com - fabio.calcarella@ingpec.eu tel. +39 06 960 353-00"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "08321798355",
+     "occurrences": 92,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/404033",
+      "page": 1,
+      "document": "Studio Fattibilità Ambientale 34a-signed",
+      "excerpt": "Tel. +39 0832 1798355 C.F. e P.I. 15443431000"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "06960353",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/526336",
+      "page": 1,
+      "document": "Integrazioni del 09/08/2021 - EPD 5.0",
+      "excerpt": "Tel. +39 0832 1798355 C.F. e P.I. 15443431000 fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu Pa tel. +39 06 960 353-00"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "WPD Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "studiocalcarella@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/403949",
+      "page": 9,
+      "document": "Sezioni trincee cavidotti con interferenze",
+      "excerpt": "studiocalcarella@gmail.com - fabio.calcarella@gmail.com"
      }
     }
    ],
@@ -327,7 +376,7 @@
     }
    }
   ],
-  "durata_cantiere": "14 mesi (cronoprogramma)",
+  "durata_cantiere": "8 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -341,149 +390,243 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Allestimento del cantiere",
-    "start": 0.02,
-    "end": 0.99,
+    "name": "WTG 1",
+    "start": 0.0,
+    "end": 12.81,
     "level": 3,
     "summary": false
    },
    {
-    "name": "Opere civili – strade",
-    "start": 1.02,
-    "end": 2.99,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Opere civili – fondazioni torri",
-    "start": 1.02,
-    "end": 8.0,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Opere civili ed elettriche – cavidotti",
-    "start": 3.02,
-    "end": 9.0,
-    "level": 1,
-    "summary": true
-   },
-   {
-    "name": "Trasporto componenti torri ed aerogeneratori",
-    "start": 6.02,
-    "end": 8.0,
-    "level": 2,
-    "summary": false
-   },
-   {
-    "name": "Montaggio torri ed aerogeneratori",
-    "start": 7.02,
-    "end": 10.0,
-    "level": 1,
-    "summary": false
-   },
-   {
-    "name": "Costruzione SSE – Opere elettriche e di connessione alla RTN",
-    "start": 1.02,
-    "end": 11.0,
+    "name": "FONDAZIONI, TRASPORTO E MONTAGGIO WTG8",
+    "start": 1.71,
+    "end": 14.63,
     "level": 0,
     "summary": true
    },
    {
-    "name": "Collaudi",
-    "start": 10.03,
-    "end": 12.0,
+    "name": "WTG2",
+    "start": 0.0,
+    "end": 12.81,
     "level": 3,
     "summary": false
    },
    {
-    "name": "Dismissione del cantiere e ripristini ambientali prima dell’entrata in esercizio",
-    "start": 12.03,
-    "end": 14.01,
-    "level": 0,
+    "name": "WTG3",
+    "start": 0.0,
+    "end": 12.81,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "WTG4",
+    "start": 0.0,
+    "end": 13.72,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "WTG5",
+    "start": 0.54,
+    "end": 13.72,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "WTG6",
+    "start": 0.54,
+    "end": 13.72,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "WTG7",
+    "start": 1.71,
+    "end": 14.63,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "WTG9",
+    "start": 2.87,
+    "end": 14.63,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "AEROGENERATORI WTG12",
+    "start": 0.0,
+    "end": 5.17,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "WTG10",
+    "start": 2.87,
+    "end": 15.55,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "WTG11",
+    "start": 10.08,
+    "end": 15.55,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "WTG13",
+    "start": 0.0,
+    "end": 5.17,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "WTG14",
+    "start": 0.0,
+    "end": 5.17,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "WTG15",
+    "start": 0.0,
+    "end": 5.17,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "CAVIDOTTI",
+    "start": 0.0,
+    "end": 5.17,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "OPERE CIVILI",
+    "start": 0.0,
+    "end": 13.72,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "OPERE CIVILI SSE",
+    "start": 11.0,
+    "end": 13.72,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "OPERE ELETTRICHE",
+    "start": 2.87,
+    "end": 12.81,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "RIPRISTINI",
+    "start": 6.36,
+    "end": 13.72,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "CONNESSIONE",
+    "start": 11.0,
+    "end": 14.63,
+    "level": 3,
     "summary": false
    }
   ],
-  "unit": "month",
-  "months": 14.01,
+  "unit": "period",
+  "months": 15.55,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/484588",
-   "page": 40,
-   "document": "Integrazioni del 22/02/2020 - Relazione Descrittiva",
+   "url": "https://va.mite.gov.it/File/Documento/404011",
+   "page": 24,
+   "document": "Piani di sicurezza",
    "excerpt": ""
   },
   "asse": {
    "titolo": null,
    "etichette": [
     {
-     "label": "1",
-     "start": 0.0,
-     "end": 1.0
-    },
-    {
-     "label": "2",
-     "start": 1.0,
-     "end": 2.0
-    },
-    {
-     "label": "3",
-     "start": 2.0,
-     "end": 3.0
-    },
-    {
-     "label": "4",
-     "start": 3.0,
-     "end": 4.0
-    },
-    {
-     "label": "5",
-     "start": 4.0,
-     "end": 5.0
-    },
-    {
-     "label": "6",
-     "start": 5.0,
-     "end": 6.0
-    },
-    {
-     "label": "7",
-     "start": 6.0,
-     "end": 7.0
-    },
-    {
-     "label": "8",
-     "start": 7.0,
-     "end": 8.0
-    },
-    {
-     "label": "9",
-     "start": 8.0,
-     "end": 9.0
-    },
-    {
      "label": "10",
-     "start": 9.0,
-     "end": 10.0
+     "start": 0,
+     "end": 1
     },
     {
      "label": "11",
-     "start": 10.0,
-     "end": 11.0
+     "start": 1,
+     "end": 2
     },
     {
      "label": "12",
-     "start": 11.0,
-     "end": 12.0
+     "start": 2,
+     "end": 3
     },
     {
      "label": "13",
-     "start": 12.0,
-     "end": 13.0
+     "start": 3,
+     "end": 4
     },
     {
      "label": "14",
-     "start": 13.0,
-     "end": 14.0
+     "start": 4,
+     "end": 5
+    },
+    {
+     "label": "15",
+     "start": 5,
+     "end": 6
+    },
+    {
+     "label": "16",
+     "start": 6,
+     "end": 7
+    },
+    {
+     "label": "17",
+     "start": 7,
+     "end": 8
+    },
+    {
+     "label": "18",
+     "start": 8,
+     "end": 9
+    },
+    {
+     "label": "19",
+     "start": 9,
+     "end": 10
+    },
+    {
+     "label": "20",
+     "start": 10,
+     "end": 11
+    },
+    {
+     "label": "21",
+     "start": 11,
+     "end": 12
+    },
+    {
+     "label": "22",
+     "start": 12,
+     "end": 13
+    },
+    {
+     "label": "23",
+     "start": 13,
+     "end": 14
+    },
+    {
+     "label": "24",
+     "start": 14,
+     "end": 15
+    },
+    {
+     "label": "25",
+     "start": 15,
+     "end": 16
     }
    ],
    "unita": "mesi"
@@ -491,7 +634,7 @@
   "duration": {
    "text": "8 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (4), 14 mesi (2), 6-7 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/404035",
     "page": 15,
@@ -522,9 +665,9 @@
  },
  "documentazione": {
   "documenti": 245,
-  "pagine": 3184,
+  "pagine": 5704,
   "completa": false,
-  "da_leggere": 125
+  "da_leggere": 6
  },
  "confronto": [
   {
@@ -560,7 +703,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "220 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "535 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
