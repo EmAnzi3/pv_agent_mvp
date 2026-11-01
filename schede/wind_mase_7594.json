@@ -1,0 +1,158 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7594",
+ "title": "Progetto di un impianto eolico denominato \"Monte Raitiello\" autorizzato con DGR n. 1415 del 23.10.2012 della Regione Basilicata per una potenza complessiva di 80 MW, sul territorio comunale di di Muro Lucano e opere accessorie nei comuni di Bella, Balvano e Baragiano.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7594",
+ "source": "mase",
+ "updated": "2026-11-01",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "80 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7594",
+    "excerpt": "80 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "16",
+   "status": "da verificare",
+   "sub": "5,00 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 25 (13), 2 (7), 8 (7)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/534333",
+    "page": 3,
+    "document": "Decreto Direttoriale - Progetto di un impianto eolico denominato \"Monte Raitiello\" autorizzato con DGR n. 1415 del 23.10.2012 della Regione Basilicata per una potenza complessiva di 80 MW, sul territo",
+    "excerpt": "aerogeneratore, in particolar modo del numero di aerogeneratori da 25 a 16. L'impianto eolico prevede l'installazione di n. 16 aerogeneratori (per una potenza complessiva di 80 MW) e relative opere di accessorie sul terr"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "TA",
+  "comuni": [
+   "Muro Lucano",
+   "Balvano",
+   "Bella",
+   "Baragiano"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Muro+Lucano%2C+TA%2C+Basilicata",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Monte Raitiello S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "monteraitiello@pec.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/432110",
+      "page": 1,
+      "document": "Studio preliminare ambientale",
+      "excerpt": "CF 01531560769 monteraitiello@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7594"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 12,
+  "pagine": 423,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Monte Raitiello S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 80.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BELLA, BALVANO, BARAGIANO",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "conflittuale"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "40 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
