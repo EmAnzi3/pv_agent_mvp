@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto fotovoltaico, denominato \"Assoro_2\", per una potenza pari a 181,17 MW, unito alle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Assoro (EN), Raddusa (CT), Aidone (EN) ed Enna (EN).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8610",
  "source": "mase",
- "updated": "2026-10-23",
+ "updated": "2026-11-01",
  "sintesi": [
   {
    "key": "potenza",
@@ -238,6 +238,7 @@
    "vat": "03099650214",
    "vat_group": false,
    "verified": true,
+   "esecuzione": null,
    "office": "Viale Amedeo Duca D'Aosta 76 39100 Bolzano .Bozen. Bz",
    "contacts": [
     {
@@ -272,11 +273,25 @@
    "name": "Arcadia S.r.l.",
    "kind": "società",
    "roles": [
-    "Progettista"
+    "Progettista",
+    "BoP (indicata negli elaborati)"
    ],
    "vat": "06863370828",
    "vat_group": false,
    "verified": true,
+   "esecuzione": [
+    {
+     "ruolo": "BoP",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1077236",
+      "page": 1,
+      "document": "Integrazioni del 22/05/2024 - Carta dell'Effetto cumulo su Ortofoto",
+      "excerpt": "401. 1° Emissione Dott Bop. Ervico Arcadia s.rl 1BVI24 srl Camerata Scovazzo"
+     }
+    }
+   ],
    "office": "Via Houel 29 90138 Palermo Pa",
    "contacts": [
     {
@@ -307,8 +322,7 @@
     "page": 1,
     "document": "Integrazioni del 22/05/2024 - Quadro sinottico risposte quesiti",
     "excerpt": "Progettazione: ARCADIA srls"
-   },
-   "esecuzione": null
+   }
   }
  ],
  "altri_soggetti": [
@@ -319,6 +333,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -353,6 +368,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -376,6 +392,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -394,6 +411,28 @@
   }
  ],
  "stato": null,
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Arcadia S.r.l.",
+    "partita_iva": "06863370828",
+    "ruolo": "BoP",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1077236",
+     "page": 1,
+     "document": "Integrazioni del 22/05/2024 - Carta dell'Effetto cumulo su Ortofoto",
+     "excerpt": "401. 1° Emissione Dott Bop. Ervico Arcadia s.rl 1BVI24 srl Camerata Scovazzo"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
  "registro": null,
  "tempistica": {
   "righe": [],
@@ -447,7 +486,8 @@
  "documentazione": {
   "documenti": 239,
   "pagine": 4560,
-  "completa": true
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -488,8 +528,11 @@
   {
    "label": "Recapiti",
    "reason": "437 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Arcadia S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
- "esecuzione": null
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
 }
