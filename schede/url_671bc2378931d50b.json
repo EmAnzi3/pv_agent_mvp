@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto agrivoltaico, denominato \"Aliai\", di potenza pari a circa 227 MW e delle relative opere connesse ed infrastrutture necessarie alla connessione alla RTN, da realizzarsi nei Comuni di Ramacca (CT), Castel di ludica (CT), Paternò (CT) e Centuripe (EN).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8824",
  "source": "mase",
- "updated": "2026-10-23",
+ "updated": "2026-11-01",
  "sintesi": [
   {
    "key": "potenza",
@@ -94,6 +94,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -122,6 +123,7 @@
    "vat": "00485050892",
    "vat_group": false,
    "verified": true,
+   "esecuzione": null,
    "office": "Via Nervesa 21 20139 Milano Mi",
    "contacts": [
     {
@@ -174,14 +176,6 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1412571",
-    "page": 1,
-    "document": "Piano Particellare Impianto FV",
-    "excerpt": "EPC Contractor PANORAMA SRL"
-   },
    "esecuzione": [
     {
      "ruolo": "EPC",
@@ -194,7 +188,15 @@
       "excerpt": "EPC Contractor PANORAMA SRL"
      }
     }
-   ]
+   ],
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1412571",
+    "page": 1,
+    "document": "Piano Particellare Impianto FV",
+    "excerpt": "EPC Contractor PANORAMA SRL"
+   }
   },
   {
    "name": "Ing. Serafino Torregrossa",
@@ -205,6 +207,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [],
    "source": {
@@ -223,6 +226,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [],
    "source": {
@@ -241,6 +245,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [],
    "source": {
@@ -259,6 +264,7 @@
    "vat": "08829430720",
    "vat_group": false,
    "verified": true,
+   "esecuzione": null,
    "office": "Via Giovanni Amendola 170/11 70126 Bari Ba",
    "contacts": [
     {
@@ -296,6 +302,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -341,6 +348,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -375,6 +383,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -398,6 +407,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -416,6 +426,28 @@
   }
  ],
  "stato": null,
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Panorama S.r.l.",
+    "partita_iva": null,
+    "ruolo": "EPC",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1412571",
+     "page": 1,
+     "document": "Piano Particellare Impianto FV",
+     "excerpt": "EPC Contractor PANORAMA SRL"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
  "registro": null,
  "tempistica": {
   "righe": [],
@@ -675,7 +707,8 @@
  "documentazione": {
   "documenti": 398,
   "pagine": 6002,
-  "completa": true
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -718,27 +751,5 @@
    "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
- "esecuzione": {
-  "livello": "B",
-  "imprese": [
-   {
-    "impresa": "Panorama S.r.l.",
-    "partita_iva": null,
-    "ruolo": "EPC",
-    "ambito": "impianto",
-    "evidenza": "B",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1412571",
-     "page": 1,
-     "document": "Piano Particellare Impianto FV",
-     "excerpt": "EPC Contractor PANORAMA SRL"
-    }
-   }
-  ],
-  "legenda": {
-   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
-   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
-  }
- }
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
 }
