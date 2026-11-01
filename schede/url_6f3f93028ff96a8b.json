@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"F-SASSA\" della potenza di 30,157 MWp da realizzarsi nel Comune di Sassari (SS).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10958",
  "source": "mase",
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "sintesi": [
   {
    "key": "potenza",
@@ -35,13 +35,26 @@
    "key": "area",
    "label": "Superficie complessiva",
    "value": "47,5 ha",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 60,907 ha (2)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 60,907 ha (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1367772",
     "page": 30,
     "document": "Allegato al Decreto Direttoriale - Parere CTPNRR PNIEC del 06/11/2025",
     "excerpt": "del materiale di scavo, nelle sue quote escluse dalla disciplina sui rifiuti (art. 24 dPR 120/2017). Il progetto andrà a insistere su un'area totale di circa 47,5ha. Il Proponente descrive l’assetto progettuale sofferman"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "12,5 MW / 82,5 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 MW (1), 143,87 MW (1), 45 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1367772",
+    "page": 12,
+    "document": "Allegato al Decreto Direttoriale - Parere CTPNRR PNIEC del 06/11/2025",
+    "excerpt": "Proponente: Sigma Ariete S.r.l. 27 “Progetto agrivoltaico denominato \"Fattoria Solare Casa Scaccia\" dalla potenza di 43,9 MWp, con sistema di accumulo da 12,5 MW e opere di connessione alla RTN, nel Comune di Sassari”. P"
    }
   },
   {
@@ -97,37 +110,29 @@
     {
      "type": "PEC",
      "value": "asja.sassari@pec.it",
-     "occurrences": 45,
+     "occurrences": 96,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1122619",
       "page": 1,
       "document": "Integrazioni del 08/08/2024 - Elenco elaborati",
       "excerpt": "10123 Torino - Italia asja.sassari@pec.it"
      }
+    },
+    {
+     "type": "E-mail",
+     "value": "protocollogenerale@enas.sardegna.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1133123",
+      "page": 1,
+      "document": "Osservazioni dell'Ente ENAS in data 09/08/2024",
+      "excerpt": "Telefono: (+39) 070 60211 E- mail: protocollogenerale@enas.sardegna.it"
+     }
     }
    ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10958"
-   }
-  },
-  {
-   "name": "Metka S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1367772",
-    "page": 11,
-    "document": "Allegato al Decreto Direttoriale - Parere CTPNRR PNIEC del 06/11/2025",
-    "excerpt": "risultano autorizzati due impianti posti a più di dieci chilometri dall’area di progetto (proponente Metka s.r.l. presso la centrale di Fiumesanto e Sassari 01 proponente WhysolE Sviluppo S.r.l. presso il confine sud"
    }
   },
   {
@@ -264,9 +269,9 @@
  },
  "documentazione": {
   "documenti": 172,
-  "pagine": 1619,
-  "completa": false,
-  "da_leggere": 52
+  "pagine": 2254,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -297,8 +302,12 @@
  ],
  "da_verificare": [
   {
-   "label": "Superficie complessiva",
+   "label": "Accumulo",
    "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "11 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
