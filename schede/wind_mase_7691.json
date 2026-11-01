@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione un impianto eolico denominato \"Trapani 3\", ai sensi dell'art.23 del D.Lgs. 152/2006, costituito da 30 aerogeneratori e dalle opere necessarie di connessione alla RTN, per una potenza complessiva pari a 126 MW, da realizzarsi nei Comuni di Marsala (TP), Mazara del Vallo (TP), Salemi (TP) e Trapani (TP).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7691",
  "source": "mase",
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "sintesi": [
   {
    "key": "potenza",
@@ -23,8 +23,8 @@
    "key": "wtg",
    "label": "Aerogeneratori",
    "value": "30",
-   "status": "da documenti",
-   "sub": "4,20 MW ciascuno · Valore prevalente negli elaborati; altri valori: 4 (15), 3 (5), 20 (4)",
+   "status": "da verificare",
+   "sub": "4,20 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 4 (33), 6 (11), 3 (11)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/919863",
     "page": 1,
@@ -37,7 +37,7 @@
    "label": "Durata cantiere",
    "value": "28 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 559 giorni (circa 18 mesi) (4), 24 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 559 giorni (circa 18 mesi) (6), 24 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/472291",
     "page": 33,
@@ -56,9 +56,9 @@
    "Trapani"
   ],
   "coordinate": {
-   "lat": 37.78804,
-   "lon": 12.61603,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (12 riferimenti concordi)",
+   "lat": 37.78763,
+   "lon": 12.61078,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (59 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/472291",
     "page": 6,
@@ -66,7 +66,7 @@
     "excerpt": "287930,52"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.78804,12.61603",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.78763,12.61078",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -99,9 +99,226 @@
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7691"
    }
+  },
+  {
+   "name": "Solutions S.r.l.",
+   "kind": "società",
+   "roles": [
+    "O&M (da confermare)"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/503364",
+    "page": 71,
+    "document": "Osservazioni della Società Edison Rinnovabili Spa in data 24/05/2021",
+    "excerpt": "Progetto di scissione mediante 01/08/2014 ENERGY O&M SOLUTIONS S.R.L. trasferimento nella/e societa' C.F. 08729010960"
+   }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "Libeccio S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01616120893",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lanza 5 96017 Noto Sr",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "libeccio@pec.ferasrl.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503354",
+      "page": 1,
+      "document": "Osservazioni della Società LIBECCIO S.r.l. in data 25/05/2021",
+      "excerpt": "Amm.ne: Via Antonio da Recanate,1 – 20124 Milano – Tel. 0262690471 – Fax 02 32066804 e-mail libeccio@pec.ferasrl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0262690471",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503354",
+      "page": 1,
+      "document": "Osservazioni della Società LIBECCIO S.r.l. in data 25/05/2021",
+      "excerpt": "Amm.ne: Via Antonio da Recanate,1 – 20124 Milano – Tel. 0262690471 – Fax 02 32066804 e-mail libeccio@pec.ferasrl.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Engie Rinnovabili S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "05246990484",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Giorgio Ribotta 31 00144 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rinnovabili@pec.edison",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503364",
+      "page": 39,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 24/05/2021",
+      "excerpt": "BUONAPARTE 31 CAP 20121 Indirizzo PEC rinnovabili@pec.edison. it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "rinnovabili@pec.edison.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503364",
+      "page": 76,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 24/05/2021",
+      "excerpt": "Indirizzo PEC rinnovabili@pec.edison.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Edison Rinnovabili S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12921540154",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "fabio.dalessandro@edison.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503364",
+      "page": 35,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 24/05/2021",
+      "excerpt": "E2I Energie Speciali S.r.l. fabio.dalessandro@edison.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Energia Verde Trapani S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "giuseppevilla@hotmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503364",
+      "page": 35,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 24/05/2021",
+      "excerpt": "Energia Verde Trapani Srl giuseppevilla@hotmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "gp@gerenovables.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503364",
+      "page": 35,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 24/05/2021",
+      "excerpt": "Energia Verde Trapani Srl gp@gerenovables.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "michele.giancarlo@canadiansolar.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503364",
+      "page": 35,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 24/05/2021",
+      "excerpt": "Energia Verde Trapani Srl michele.giancarlo@canadiansolar.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Rossana Miglietta",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138989",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503364",
+      "page": 6,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 24/05/2021",
+      "excerpt": "Contatti: Eugenio Mazzini Tel. 06.8313.8989."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Africa S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "carla.ditillio@x-elio.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/503364",
+      "page": 35,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 24/05/2021",
+      "excerpt": "Africa Srl carla.ditillio@x-elio.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
@@ -1706,7 +1923,7 @@
   "duration": {
    "text": "28 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 559 giorni (circa 18 mesi) (4), 24 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 559 giorni (circa 18 mesi) (6), 24 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/472291",
     "page": 33,
@@ -1731,9 +1948,9 @@
  },
  "documentazione": {
   "documenti": 240,
-  "pagine": 1631,
-  "completa": false,
-  "da_leggere": 120
+  "pagine": 3542,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -1764,12 +1981,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "9 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "28 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Solutions S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
