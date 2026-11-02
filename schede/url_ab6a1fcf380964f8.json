@@ -5,7 +5,7 @@
  "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di impianto agrivoltaico denominato \"Mulas FV\" della potenza di 29,73 MWp e delle relative opere di connessione alla RTN in zona agricola del Comune di Sassari (SS) in località Lughia",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11176",
  "source": "mase",
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "76,44 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 70 ha (2), 27,24 ha (1), 28,57 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 57,09 ha (3), 70 ha (2), 27,24 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1290187",
     "page": 4,
@@ -48,8 +48,8 @@
    "key": "pannelli",
    "label": "Superficie coperta dai pannelli",
    "value": "12,825 ha",
-   "status": "da documenti",
-   "sub": "17% dell'area",
+   "status": "da verificare",
+   "sub": "17% dell'area · Valore più ricorrente negli elaborati; altri valori: 32 ha (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1439325",
     "page": 31,
@@ -62,7 +62,7 @@
    "label": "Accumulo",
    "value": "120 MW / 20 MWh",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 MW (2), 36 MW (1), 20 MW (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 MW (3), 36 MW (2), 20 MW (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1439325",
     "page": 45,
@@ -93,7 +93,7 @@
   "coordinate": {
    "lat": 40.78478,
    "lon": 8.37569,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (102 riferimenti concordi)",
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (122 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1215694",
     "page": 3,
@@ -109,48 +109,6 @@
  },
  "soggetti": [
   {
-   "name": "Greenergy S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "greenergyimpianti@arubapec.it",
-     "occurrences": 2019,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1215711",
-      "page": 2,
-      "document": "SIA- STUDIO IMPATTO AMBIENTALE",
-      "excerpt": "www.greenergy.it PEC: greenergyimpianti@arubapec.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "info@greenergy.it",
-     "occurrences": 2134,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1238626",
-      "page": 1,
-      "document": "Avviso al pubblico del 01/04/2025",
-      "excerpt": "P.IVA 02599060734, REA TA-157230 www.greenergy.it, mail:info@greenergy.it"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1215653",
-    "page": 1,
-    "document": "INQUADRAMENTO GENERALE SU ORTOFOTO",
-    "excerpt": "il Committente GREENERGY SRL"
-   }
-  },
-  {
    "name": "Pivexo Tramontana S.r.l.",
    "kind": "società",
    "roles": [
@@ -165,7 +123,7 @@
     {
      "type": "PEC",
      "value": "pivexotramontana@pec.it",
-     "occurrences": 160,
+     "occurrences": 225,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1265037",
       "page": 1,
@@ -201,6 +159,52 @@
  ],
  "altri_soggetti": [
   {
+   "name": "Greenergy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "greenergyimpianti@arubapec.it",
+     "occurrences": 2323,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1215711",
+      "page": 2,
+      "document": "SIA- STUDIO IMPATTO AMBIENTALE",
+      "excerpt": "www.greenergy.it PEC: greenergyimpianti@arubapec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@greenergy.it",
+     "occurrences": 2460,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1238626",
+      "page": 1,
+      "document": "Avviso al pubblico del 01/04/2025",
+      "excerpt": "P.IVA 02599060734, REA TA-157230 www.greenergy.it, mail:info@greenergy.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "maitinfo@greenergy.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1215649",
+      "page": 1,
+      "document": "RELAZIONE ARCHEOLOGICA",
+      "excerpt": "REA: TA-213217 PIVA 02599060734, REA TA-157230 PEC: pivexotramontana@pec.it www.greenergy it, maitinfo@greenergy.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Stazione S.n.c.",
    "kind": "società",
    "roles": [],
@@ -213,12 +217,36 @@
     {
      "type": "Telefono",
      "value": "0998441860",
-     "occurrences": 2019,
+     "occurrences": 2323,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1215711",
       "page": 2,
       "document": "SIA- STUDIO IMPATTO AMBIENTALE",
       "excerpt": "74011 Castellaneta (TA) Tel: 099 8441860"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Giacomo Laconi",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0706064351",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1313452",
+      "page": 38,
+      "document": "Osservazioni della Regione Autonoma della Sardegna - Direzione Generale dell'Ambiente , in data 08/10/2025",
+      "excerpt": "Viale Trieste, 186 - 09123 Cagliari — Tel +39 070 6064351 4/4"
      }
     }
    ],
@@ -255,7 +283,7 @@
   "duration": {
    "text": "9 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 90 giorni (circa 3 mesi) (3), 4 settimane (2), 2 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 4 settimane (4), 90 giorni (circa 3 mesi) (3), 2 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1439325",
     "page": 23,
@@ -311,9 +339,9 @@
  },
  "documentazione": {
   "documenti": 164,
-  "pagine": 2624,
-  "completa": false,
-  "da_leggere": 44
+  "pagine": 3439,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -348,12 +376,16 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Superficie coperta dai pannelli",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Accumulo",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "12 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "47 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
