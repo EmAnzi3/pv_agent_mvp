@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico, denominato \"Serra Palino\" composto da 8 turbine da 6 MW ciascuna, per un totale di 48 MW, da realizzarsi nei comuni di Sant Agata di Puglia (FG) e Candela(FG), con opere connesse da realizzarsi nei comuni di Sant Agata di Puglia, Candela, Ascoli Satriano e Deliceto, tutti ricadenti in Provincia di Foggia",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7515",
  "source": "mase",
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "8",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 122,5 m · diametro rotore 155 m · Valore prevalente negli elaborati; altri valori: 4 (15), 2 (9), 9 (2)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 122,5 m · diametro rotore 155 m · Valore prevalente negli elaborati; altri valori: 2 (16), 4 (15), 6 (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1285413",
     "page": 2,
@@ -68,7 +68,7 @@
   "coordinate": {
    "lat": 41.17587,
    "lon": 15.48745,
-   "tipo": "centro della tavola georeferenziata di progetto (74 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (112 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1285486",
     "page": 86,
@@ -119,7 +119,7 @@
      "value": "rwerenewablesitaliasrl@legalmail.it",
      "occurrences": 8,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1416053",
+      "url": "https://va.mite.gov.it/File/Documento/1416048",
       "page": 1,
       "document": "Comunicazione VA esito valutazione MASE_2026-0158675",
       "excerpt": "Alla RWE Renewables Italia S.r.l. rwerenewablesitaliasrl@legalmail.it"
@@ -282,16 +282,16 @@
     "voce": "Fine lavori",
     "livello": "stimata",
     "valore": "non prima di settembre 2025",
-    "dettaglio": "inizio stimato + durata del cantiere: 40 settimane (circa 9 mesi)",
+    "dettaglio": "inizio stimato + durata del cantiere: 9 mesi (cronoprogramma)",
     "source": {
-     "url": "https://va.mite.gov.it/File/Documento/705327",
-     "page": 33,
-     "document": "Allegato alla Determinazione del Presidente del Consiglio dei Ministri - Parere CTVA del 05/03/2021",
-     "excerpt": "− Il tempo totale previsto per la realizzazione dell’opera è pari a 40 settimane a cui vanno aggiunte altre quattro settimane per il commissioning e i ripristini finali per complessive 44 settimane."
+     "url": "https://va.mite.gov.it/File/Documento/414353",
+     "page": 44,
+     "document": "PESPA-P01-0_Relazione_tecnica_descrittiva_del_progetto_",
+     "excerpt": ""
     }
    }
   ],
-  "durata_cantiere": "40 settimane (circa 9 mesi)",
+  "durata_cantiere": "9 mesi (cronoprogramma)",
   "autorizzazione": {
    "atto": "D.D. n. 298",
    "data": "05/12/2024",
@@ -310,11 +310,313 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Incantieramento",
+    "start": 0.0,
+    "end": 0.46,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "PESPA-01",
+    "start": 0.69,
+    "end": 0.92,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "PESPA-03",
+    "start": 0.92,
+    "end": 1.15,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "PESPA-05",
+    "start": 1.15,
+    "end": 1.38,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "PESPA-07",
+    "start": 1.38,
+    "end": 1.62,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "PESPA-01",
+    "start": 0.92,
+    "end": 1.38,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "PESPA-03",
+    "start": 1.38,
+    "end": 1.85,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "PESPA-05",
+    "start": 1.84,
+    "end": 2.31,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "PESPA-07",
+    "start": 2.3,
+    "end": 2.77,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti all'esterno del parco",
+    "start": 0.69,
+    "end": 3.92,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti all'interno del parco",
+    "start": 5.07,
+    "end": 5.77,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Completamento della viabilità e delle piazzole",
+    "start": 5.76,
+    "end": 7.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio degli aerogeneratori",
+    "start": 7.14,
+    "end": 9.23,
+    "level": 0,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 9.23,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/414353",
+   "page": 44,
+   "document": "PESPA-P01-0_Relazione_tecnica_descrittiva_del_progetto_",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "19",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "20",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "21",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "22",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "23",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "24",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "25",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "26",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "27",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "28",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "29",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "30",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "31",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "32",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "33",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "34",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "35",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "36",
+     "start": 8.077,
+     "end": 8.308
+    },
+    {
+     "label": "37",
+     "start": 8.308,
+     "end": 8.538
+    },
+    {
+     "label": "38",
+     "start": 8.538,
+     "end": 8.769
+    },
+    {
+     "label": "39",
+     "start": 8.769,
+     "end": 9.0
+    },
+    {
+     "label": "40",
+     "start": 9.0,
+     "end": 9.231
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "40 settimane (circa 9 mesi)",
    "status": "da documenti",
@@ -331,7 +633,7 @@
    "document": "Cronoprogramma delle opere di costruzione",
    "url": "https://va.mite.gov.it/File/Documento/1289041"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "note": null,
   "altri": [
    {
     "document": "Cronoprogramma delle opere di costruzione",
@@ -355,13 +657,13 @@
    }
   ],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 731,
-  "pagine": 5748,
+  "pagine": 7481,
   "completa": false,
-  "da_leggere": 131
+  "da_leggere": 11
  },
  "confronto": [
   {
@@ -393,7 +695,7 @@
  "da_verificare": [
   {
    "label": "Recapiti",
-   "reason": "1456 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1459 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
