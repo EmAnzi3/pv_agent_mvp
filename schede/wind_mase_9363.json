@@ -5,7 +5,7 @@
  "title": "Progetto di ammodernamento complessivo (\"repowering\"), relativo all'impianto eolico esistente denominato \"Parco Eolico Sant'Agata\" della potenza complessiva di 72 MW, con smantellamento degli attuali 36 aerogeneratori e sostituzione in riduzione degli stessi con l'installazione di 17 nuovi aerogeneratori, della potenza unitaria di 6,8 MW, per una potenza totale di impianto pari a 115,6 MW, da realizzarsi nel Comune di Sant'Agata di Puglia (FG), con opere di connessione alla RTN (cod. MYTERNA 202102182) ricadenti anche nel Comune di Accadia (FG).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9363",
  "source": "mase",
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "36",
    "status": "da verificare",
-   "sub": "2,00 MW ciascuno · altezza mozzo 67 m · diametro rotore 172 m · Valore più ricorrente negli elaborati; altri valori: 17 (754), 16 (35), 7 (13)",
+   "sub": "2,00 MW ciascuno · altezza mozzo 67 m · diametro rotore 172 m · Valore più ricorrente negli elaborati; altri valori: 17 (1851), 16 (74), 7 (25)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/785175",
     "page": 1,
@@ -36,8 +36,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "15 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mese (1), 4 mese (1), 5 mese (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1169580",
     "page": 76,
@@ -53,9 +53,9 @@
    "Sant'Agata Di Puglia"
   ],
   "coordinate": {
-   "lat": 41.17946,
-   "lon": 15.45393,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (9 riferimenti concordi)",
+   "lat": 41.17907,
+   "lon": 15.45551,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (18 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1021137",
     "page": 24,
@@ -63,7 +63,7 @@
     "excerpt": "Area plinto e piazzola Coordinate: 41°11’12.11”N 15°25’44.55”E"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.17946,15.45393",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.17907,15.45551",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -85,7 +85,7 @@
     {
      "type": "PEC",
      "value": "fri-el_s.agata@legalmail.it",
-     "occurrences": 109,
+     "occurrences": 222,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/852526",
       "page": 1,
@@ -117,15 +117,59 @@
     "document": "1MTGFJ4_StudioFattibilitàAmbientale_01 - Studio di impatto ambientale",
     "excerpt": "Progettista:"
    }
+  },
+  {
+   "name": "Dott. Antonio Petriccione",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1021195",
+    "page": 20,
+    "document": "Integrazioni del 19/03/2024 - 1MTGFJ4_Relazione geologica",
+    "excerpt": "Il Geologo Dott. Antonio Petriccione"
+   }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "Inge S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3483850177",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1021196",
+      "page": 63,
+      "document": "Integrazioni del 19/03/2024 - 1MTGFJ4_Relazione geotecnica",
+      "excerpt": "81020 Castel Morrone (CE) Tel/Fax 0823399115 Cell. 3483850177 - 3486033921"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "16 mesi (cronoprogramma)",
+  "durata_cantiere": "9 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -139,61 +183,82 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Deposito opere civili",
-    "start": 0.17,
-    "end": 2.69,
+    "name": "Realizzazione delle piazzole per la dismissione degli aereogeneratori",
+    "start": 0.88,
+    "end": 5.65,
     "level": 3,
     "summary": false
    },
    {
-    "name": "Picchettamento delle aree",
-    "start": 0.42,
-    "end": 2.19,
+    "name": "Dismissione aereogeneratori esistenti interferenti ( WTG SG 01 - WTG SG 03- WTG ",
+    "start": 2.13,
+    "end": 3.9,
     "level": 3,
     "summary": false
    },
    {
-    "name": "Realizzazione della nuova viabilità",
-    "start": 1.17,
-    "end": 3.94,
+    "name": "(WTG SG 02-WTG SG 04-WTG SG 05-WTG SG 06-WTG SG 07-WTG SG 08-WTG SG 09-WTG SG 10",
+    "start": 3.13,
+    "end": 6.9,
     "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Dismissione cavidotti esistenti interni al parco",
+    "start": 2.88,
+    "end": 8.4,
+    "level": 3,
     "summary": false
    },
    {
-    "name": "Dismissione e realizzazione cavidotti dorsali",
-    "start": 3.92,
-    "end": 10.94,
+    "name": "Realizzazione della nuova viabilità AREA CANTIERE 2",
+    "start": 0.13,
+    "end": 2.9,
     "level": 0,
     "summary": true
    },
    {
-    "name": "Trasporto e montaggio aereogeneratori",
-    "start": 6.17,
-    "end": 11.94,
-    "level": 1,
-    "summary": true
-   },
-   {
-    "name": "Regolazione e Collaudo finale",
-    "start": 10.92,
-    "end": 13.94,
+    "name": "non interferenti",
+    "start": 2.63,
+    "end": 3.9,
     "level": 3,
     "summary": false
    },
    {
-    "name": "Sistemazione finale del sito",
-    "start": 7.42,
-    "end": 15.69,
+    "name": "Realizzazione delle piazzole di costruzioni per gli aereogeneratori interferenti",
+    "start": 3.38,
+    "end": 8.65,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni c.a. aereogeneratori interferenti REALIZZAZIONE ( WTG S",
+    "start": 3.88,
+    "end": 5.9,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Trasporto e montaggio aereogeneratori",
+    "start": 3.88,
+    "end": 7.9,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti MT interni al parco nuovi aereogeneratori",
+    "start": 2.88,
+    "end": 8.4,
     "level": 3,
     "summary": false
    }
   ],
   "unit": "month",
-  "months": 15.69,
+  "months": 8.65,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/785160",
-   "page": 100,
-   "document": "1MTGFJ4_StudioFattibilitàAmbientale_01 - Studio di impatto ambientale",
+   "url": "https://va.mite.gov.it/File/Documento/889347",
+   "page": 20,
+   "document": "Integrazioni del 14/08/2023 - _1MTGFJ4_NotaTecnica_01",
    "excerpt": ""
   },
   "asse": {
@@ -243,49 +308,14 @@
      "label": "9",
      "start": 8.0,
      "end": 9.0
-    },
-    {
-     "label": "10",
-     "start": 9.0,
-     "end": 10.0
-    },
-    {
-     "label": "11",
-     "start": 10.0,
-     "end": 11.0
-    },
-    {
-     "label": "12",
-     "start": 11.0,
-     "end": 12.0
-    },
-    {
-     "label": "13",
-     "start": 12.0,
-     "end": 13.0
-    },
-    {
-     "label": "14",
-     "start": 13.0,
-     "end": 14.0
-    },
-    {
-     "label": "15",
-     "start": 14.0,
-     "end": 15.0
-    },
-    {
-     "label": "16",
-     "start": 15.0,
-     "end": 16.0
     }
    ],
    "unita": "mesi"
   },
   "duration": {
    "text": "15 mesi",
-   "status": "da documenti",
-   "hint": null,
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 1 mese (1), 2 mese (1), 3 mese (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1169580",
     "page": 76,
@@ -314,9 +344,9 @@
  },
  "documentazione": {
   "documenti": 365,
-  "pagine": 1310,
+  "pagine": 3005,
   "completa": false,
-  "da_leggere": 245
+  "da_leggere": 126
  },
  "confronto": [
   {
@@ -351,8 +381,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "10 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "18 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
