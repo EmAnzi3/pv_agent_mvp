@@ -111,6 +111,9 @@ def _same(field: str, a, b) -> bool:
             return abs(float(a or 0) - float(b or 0)) < 0.05
         except (TypeError, ValueError):
             return a == b
+    if field == "procedure_status" and isinstance(a, str) and isinstance(b, str):
+        parts = lambda v: {" ".join(x.lower().split()) for x in v.split(",") if x.strip()}
+        return parts(a) == parts(b)       # same statuses in another order
     if isinstance(a, str) and isinstance(b, str):
         return " ".join(a.lower().split()) == " ".join(b.lower().split())
     return a == b
@@ -122,7 +125,7 @@ def _progress(field: str, old, new) -> bool:
     if field in ("ferx", "contractor"):
         return bool(set(new or []) - set(old or []))
     if field == "card":
-        return bool(new) and not old
+        return False                      # a new card is our reading, not a step of the project
     if field == "epc":
         return (new or "") == EPC_LABEL["A"] != (old or "") or (bool(new) and not old)
     if field == "news":
