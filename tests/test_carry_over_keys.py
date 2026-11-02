@@ -63,4 +63,8 @@ class LimitedPortal(unittest.TestCase):
             self.assertEqual(lb._quota_left(store, h), 150)
             self.assertIsNone(lb._quota_left(store, "va.mite.gov.it"))
             lb._quota_add(store, h, 90)
-            self.assertEqual(lb._quota_left(store, h), 0)      # one project per day
+            self.assertEqual(lb._quota_left(store, h), 60)     # downloads left today, shared by the next projects
+            lb._quota_add(store, h, 60)
+            self.assertEqual(lb._quota_left(store, h), 0)      # daily download cap reached
+            lb._quota_add(store, h, 0)                         # a project that reused everything still counts
+            self.assertEqual(lb._quota_left(store, h), 0)
