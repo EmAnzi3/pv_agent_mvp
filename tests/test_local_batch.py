@@ -24,12 +24,13 @@ class SelectTests(unittest.TestCase):
     def test_limited_portal_does_not_crowd_out_others(self):
         items, reserve = lb._select(self.queue, self.store, 30)
         hosts = [i["project_key"][0] for i in items]
-        self.assertEqual(hosts.count("s"), 1)
+        self.assertEqual(hosts.count("s"), lb.LIMITED_PORTALS["si-vvi.regione.sicilia.it"]["projects"])
         self.assertEqual(hosts.count("p"), 8)
         self.assertEqual(reserve, [])
 
     def test_quota_used_today_excludes_portal(self):
-        lb._quota_add(self.store, "si-vvi.regione.sicilia.it", 10)
+        for _ in range(lb.LIMITED_PORTALS["si-vvi.regione.sicilia.it"]["projects"]):
+            lb._quota_add(self.store, "si-vvi.regione.sicilia.it", 10)
         items, _ = lb._select(self.queue, self.store, 30)
         self.assertTrue(all(i["project_key"].startswith("p") for i in items))
         self.assertEqual(len(items), 8)
