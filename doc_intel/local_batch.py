@@ -124,7 +124,7 @@ def _forget_attempt(store: Path, key: str, prefix: str = "") -> None:
 
 # Portals that asked us (by blocking) to keep the load low: at most one project and DAILY_DOCS
 # documents per day, drawings not downloaded, one document at a time with a pause (fetch.POLITE_HOSTS).
-LIMITED_PORTALS = {"si-vvi.regione.sicilia.it": {"projects": 1, "docs": 150}}
+LIMITED_PORTALS = {"si-vvi.regione.sicilia.it": {"projects": 3, "docs": 150}}   # 3 projects from 2026-11-02 (a week without blocks); downloads cap unchanged
 
 
 def _quota_file(store: Path) -> Path:

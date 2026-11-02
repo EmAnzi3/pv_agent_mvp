@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-02 — Schede eoliche notturne: fino a 300 documenti nuovi per progetto (prima 120), così le schede parziali dei progetti grandi si chiudono in 1-2 notti e liberano posti per i progetti nuovi. Sicilia (SI-VVI) dal PC: 3 progetti al giorno invece di 1 dopo una settimana senza blocchi, tetto di 150 download al giorno invariato.
+
 - 2026-10-29 — Schede eoliche notturne: da 15 a 40 progetti a notte (stesse 5 analisi in parallelo, quindi stesso carico al minuto sul portale MASE); l'arretrato onshore (~810 progetti) si chiude in circa tre settimane invece di due mesi.
 
 - 2026-10-29 — `analizza_fonti_locali.bat N eolico` (o `tutto` per fotovoltaico + eolico): schede eoliche dal PC per i portali che rifiutano il cloud (Sistema Puglia, Basilicata, Sicilia), dal censimento eolico sul ramo di memoria, con coda separata (`queue/wind_*.json`) e lo stesso limite giornaliero SI-VVI condiviso col fotovoltaico.

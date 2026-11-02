@@ -81,7 +81,7 @@ jobs:
     with:
       url: ${{ matrix.url }}
       time_budget_min: '200'
-      max_new_docs: '120'
+      max_new_docs: '300'   # large projects done in 1-2 nights, freeing slots for new ones
       data: '.doc_intel_store/wind/census.json'
     secrets: inherit
   publish-index:
