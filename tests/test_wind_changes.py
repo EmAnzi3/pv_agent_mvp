@@ -26,11 +26,12 @@ class CompareTests(unittest.TestCase):
         self.assertEqual({d["field"] for d in a["changes"]}, {"ferx", "readiness", "card", "epc"})
         c = next(c for c in r["modificati"] if c["project_key"] == "c")
         self.assertFalse(c["progress"])
+        self.assertFalse(next(d for d in a["changes"] if d["field"] == "card")["progress"])
         self.assertEqual(r["modificati"][0]["project_key"], "a")          # progress first
         self.assertEqual(r["counts"]["avanzamenti"], 1)
 
     def test_cosmetic_changes_ignored(self):
-        a, b = rec("a"), rec("a")
+        a, b = rec("a", status="Conclusa, Non necessita di ulteriori valutazioni"), rec("a", status="Non necessita di ulteriori valutazioni, Conclusa")
         b["title"], b["proponent"] = "PARCO EOLICO A (nuovo titolo)", "alfa  wind srl"
         r = wc.compare(wc.snapshot({"records": [a]}, {}, {}, {}), wc.snapshot({"records": [b]}, {}, {}, {}))
         self.assertEqual(r["modificati"], [])
