@@ -5,7 +5,7 @@
  "title": "progetto di ammodernamento complessivo (\"repowering\") del Parco Eolico Nulvi Tergu esistente da 29,75 MW in un parco con potenza totale finale pari a 99 MW ed opere connesse ed infrastrutture indispensabili, nei Comuni di Tergu, Nulvi, Sedini, Chiaramonti, Ploaghe e Codrongianos (SS)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9537",
  "source": "mase",
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "15",
    "status": "da verificare",
-   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 35 (809), 5 (7), 3 (6)",
+   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 35 (984), 5 (9), 6 (7)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/800008",
     "page": 1,
@@ -57,9 +57,19 @@
    "Ploaghe",
    "Codrongianos"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Tergu%2C+SS%2C+Sardegna",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 40.8367,
+   "lon": 8.73352,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (16 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/799979",
+    "page": 54,
+    "document": "AE-1_Road Survey_signed",
+    "excerpt": "OB. 48 Coord: 40°51'48.66\" N, 8°42'34.76\" E Rimozione dei cavi sospesi indicati."
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.83670,8.73352",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
@@ -80,7 +90,7 @@
     {
      "type": "PEC",
      "value": "fri-elanglona@legalmail.it",
-     "occurrences": 169,
+     "occurrences": 271,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/799980",
       "page": 1,
@@ -90,13 +100,13 @@
     },
     {
      "type": "PEC",
-     "value": "el_anglona@legalmail.it",
-     "occurrences": 1,
+     "value": "elanglona@legalmail.it",
+     "occurrences": 2,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1052579",
+      "url": "https://va.mite.gov.it/File/Documento/799974",
       "page": 1,
-      "document": "Integrazioni del 19/04/2024 - 224308_D_R_0341_01 Rel geol e geot",
-      "excerpt": "39100Bolzano (BZ) fri‐el_anglona@legalmail.it"
+      "document": "224308_D_T_0370_00 Elenco prezzi con analisi nuovi prezzi",
+      "excerpt": "39100 Bolzano (BZ) fri‐elanglona@legalmail.it"
      }
     }
    ],
@@ -126,6 +136,33 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "LA Molisana Trasporti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01463480705",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Rio Lecine 30 86014 Guardiaregia Cb",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@molisanatrasporti.it",
+     "occurrences": 73,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/799979",
+      "page": 1,
+      "document": "AE-1_Road Survey_signed",
+      "excerpt": "www.molisanatrasporti.com info@molisanatrasporti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Irpinia Vento S.r.l.",
    "kind": "società",
@@ -393,9 +430,9 @@
  },
  "documentazione": {
   "documenti": 374,
-  "pagine": 2646,
+  "pagine": 3681,
   "completa": false,
-  "da_leggere": 134
+  "da_leggere": 14
  },
  "confronto": [
   {
@@ -435,7 +472,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "241 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "242 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
