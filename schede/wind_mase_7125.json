@@ -5,14 +5,14 @@
  "title": "Impianto di produzione di energia elettrica da fonte eolica denominato \"Venusia\", costituito da 10 aerogeneratori, ciascuno di potenza pari a 4,5 MW, per una potenza complessiva di 45 MW.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7125",
  "source": "mase",
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "4,5 MW",
-   "sub": "Valore ricorrente negli elaborati (49 volte); il titolo riporta 45 MW (probabile refuso).",
+   "sub": "Valore ricorrente negli elaborati (66 volte); il titolo riporta 45 MW (probabile refuso).",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1297216",
     "page": 6,
@@ -25,7 +25,7 @@
    "label": "Aerogeneratori",
    "value": "10",
    "status": "da verificare",
-   "sub": "0,45 MW ciascuno · altezza mozzo 112 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 8 (46), 6 (14), 4 (5)",
+   "sub": "0,45 MW ciascuno · altezza mozzo 112 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 8 (47), 6 (21), 4 (8)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1297216",
     "page": 6,
@@ -34,11 +34,23 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1297217",
+    "page": 7,
+    "document": "Piano delle misure di mitigazione e compensazione",
+    "excerpt": "l'attenuazione della mortalità presso i siti onshore e offshore di turbine"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "1 mese",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (6), 18 mesi (3), 704 giorni (circa 23 mesi) (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (6), 18 mesi (3), 704 giorni (circa 23 mesi) (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/383711",
     "page": 144,
@@ -57,17 +69,17 @@
    "Maschito"
   ],
   "coordinate": {
-   "lat": 40.92465,
-   "lon": 15.79473,
-   "tipo": "centro della tavola georeferenziata di progetto (88 riferimenti concordi)",
+   "lat": 40.92432,
+   "lon": 15.78198,
+   "tipo": "coordinate del sito dichiarate negli elaborati (142 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1297198",
-    "page": 3,
-    "document": "Monografie tombini",
-    "excerpt": "Monografie tombini"
+    "url": "https://va.mite.gov.it/File/Documento/357704",
+    "page": 55,
+    "document": "Relazione ed indagini geologiche",
+    "excerpt": "Prova Penetrometrica n_1 e Stendimento sismico di tipo MASW n_1 COORDINATE (WGS84) 40.924317, 15.781978"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.92465,15.79473",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.92432,15.78198",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -142,7 +154,7 @@
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 233,
+     "occurrences": 234,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1363716",
       "page": 1,
@@ -236,6 +248,33 @@
    }
   },
   {
+   "name": "Inerti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01879520763",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ex S S 93 Km 93+800 Snc 85020 Filiano Pz",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "amministrazione@inertisrlpz.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/524949",
+      "page": 7,
+      "document": "Allegato all'Integrazione delle controdeduzioni alle Osservazioni del Pubblico della CM WIND srl.",
+      "excerpt": "A: <amministrazione@inertisrlpz.it>"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "E.ON Climate & Renewables Italia S.r.l.",
    "kind": "società",
    "roles": [],
@@ -248,12 +287,80 @@
     {
      "type": "PEC",
      "value": "e.onclimateerenewablesitaliasrl@legalmail.it",
-     "occurrences": 25,
+     "occurrences": 67,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/357683",
       "page": 1,
       "document": "QUADRO DI RIFERIMENTO PROGRAMMATICO",
       "excerpt": "P.IVA/C.F. 06400370968 pec: e.onclimateerenewablesitaliasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "e.onclimateerenewablesitaliasri@legalmaii.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/357739",
+      "page": 1,
+      "document": "Planimetria stradale con indicazione delle curve di livello 1 di 2",
+      "excerpt": "o P.IVAIC.F. 06400370968 pec: e.onclimateerenewablesitaliasri@legalmaii.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "CM Wind S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "cmwindsrl@pec.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/524949",
+      "page": 5,
+      "document": "Allegato all'Integrazione delle controdeduzioni alle Osservazioni del Pubblico della CM WIND srl.",
+      "excerpt": "02043930763, pec cmwindsrl@pec.it, in persona del suo legale rappresentante Ing. Domenico"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "cmwind@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/524949",
+      "page": 1,
+      "document": "Allegato all'Integrazione delle controdeduzioni alle Osservazioni del Pubblico della CM WIND srl.",
+      "excerpt": "La società CM Wind srl socio unico con sede in Potenza (PZ), Via della Tecnica, 18, P. IVA 02043930763, pec cmwind@legalmail.it, in persona del suo legale rappresentante Ing."
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "cmwind@lagalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/524949",
+      "page": 3,
+      "document": "Allegato all'Integrazione delle controdeduzioni alle Osservazioni del Pubblico della CM WIND srl.",
+      "excerpt": "anche all'indirizzo pec cmwind@lagalmail.it."
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "cmwindsrl@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/524949",
+      "page": 9,
+      "document": "Allegato all'Integrazione delle controdeduzioni alle Osservazioni del Pubblico della CM WIND srl.",
+      "excerpt": "Mm Gmail domenico colangelo <cmwindsrl@gmail.com>"
      }
     }
    ],
@@ -269,6 +376,17 @@
    "esecuzione": null,
    "office": null,
    "contacts": [
+    {
+     "type": "PEC",
+     "value": "certificata@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/357822",
+      "page": 5,
+      "document": "PROGETTO DI SVILUPPO LOCALE",
+      "excerpt": "Identificativo messaggio: AFBF1AE9.0008A41C.B69BB4BD.1B99F9B6.posta- certificata@legalmail.it"
+     }
+    },
     {
      "type": "E-mail",
      "value": "info@studiorinnovabili.it",
@@ -296,12 +414,36 @@
     {
      "type": "PEC",
      "value": "protocollogenerale@pec.enav.it",
-     "occurrences": 2,
+     "occurrences": 3,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/525434",
       "page": 26,
       "document": "Integrazioni del 20/07/2021 - Relazione Generale rev.02",
       "excerpt": "00138, Roma (RM) protocollogenerale@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sviluppo Sede Legale Tema S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683198111",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/524949",
+      "page": 19,
+      "document": "Allegato all'Integrazione delle controdeduzioni alle Osservazioni del Pubblico della CM WIND srl.",
+      "excerpt": "273 pe ; : @ Dispacciamento. : Tel. +39 0683198111 - www.tema.it"
      }
     }
    ],
@@ -313,7 +455,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": null,
+  "durata_cantiere": "18 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -325,15 +467,193 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "PROGETTO ESECUTIVO / RILIEVI",
+    "start": 0.0,
+    "end": 3.89,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "INDAGINI GEOTEGNICHE",
+    "start": 0.0,
+    "end": 1.9,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "AUTORIZZAZIONI GEN CIVILE",
+    "start": 3.89,
+    "end": 5.88,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "CANTIERIZZAZIONE",
+    "start": 4.88,
+    "end": 5.88,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "OPERE CIVILI STRADE",
+    "start": 5.88,
+    "end": 12.85,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "FONDAZIONI",
+    "start": 7.87,
+    "end": 12.85,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "INSTALLAZIONE AEREOGENERATORI",
+    "start": 10.85,
+    "end": 14.84,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "SOTTOSTAZIONE MT AT",
+    "start": 7.87,
+    "end": 15.84,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "CAVIDOTTO MT",
+    "start": 6.87,
+    "end": 13.84,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "COLLAUDI",
+    "start": 13.84,
+    "end": 16.83,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "ENTRATA IN ESERCIZIO",
+    "start": 16.83,
+    "end": 17.83,
+    "level": 3,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 17.83,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/357720",
+   "page": 2,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "1 mese",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (6), 18 mesi (3), 704 giorni (circa 23 mesi) (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (6), 18 mesi (3), 704 giorni (circa 23 mesi) (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/383711",
     "page": 144,
@@ -346,25 +666,21 @@
    "document": "PROGETTO DI DISMISSIONE DELL'IMPIANTO (Relazione sulle operazioni di dismissione+Computo metrico delle operazioni di dismissione+Cronoprogramma delle fasi attuative di dismissione)",
    "url": "https://va.mite.gov.it/File/Documento/357821"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "note": null,
   "altri": [
    {
     "document": "PROGETTO DI DISMISSIONE DELL'IMPIANTO (Relazione sulle operazioni di dismissione+Computo metrico delle operazioni di dismissione+Cronoprogramma delle fasi attuative di dismissione)",
     "url": "https://va.mite.gov.it/File/Documento/357821"
-   },
-   {
-    "document": "Cronoprogramma",
-    "url": "https://va.mite.gov.it/File/Documento/357720"
    }
   ],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 702,
-  "pagine": 8602,
-  "completa": false,
-  "da_leggere": 102
+  "pagine": 10004,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -408,7 +724,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "1048 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1077 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
