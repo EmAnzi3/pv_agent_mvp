@@ -1,0 +1,299 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7782",
+ "title": "Progetto di un impianto eolico denominato \"Pegaso\", costituito da 10 aereogeneratori da 6 MW per una potenza complessiva di 60 MW ricadenti nei territori comunali di Ascoli Satriano (FG), Castelluccio dei Sauri (FG).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7782",
+ "source": "mase",
+ "updated": "2026-11-03",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "6 MW",
+   "sub": "Valore ricorrente negli elaborati (93 volte); il titolo riporta 60 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/519778",
+    "page": 1,
+    "document": "Avviso al Pubblico del 02/08/2021",
+    "excerpt": "progetto in esame prevede la realizzazione di un impianto eolico, costituito da 10 aerogeneratori della potenza nominale fino a 6 MW per una potenza complessiva fino a 60 MW e di tutte le opere accessorie per il collegam"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "0,60 MW ciascuno · altezza mozzo 140 m · diametro rotore 180 m · Valore prevalente negli elaborati; altri valori: 56 (8), 46 (5), 80 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/519778",
+    "page": 1,
+    "document": "Avviso al Pubblico del 02/08/2021",
+    "excerpt": "SATRIANO (FG) su di un’area che si è rivelata adatta per l’installazione di tale infrastruttura. Il progetto in esame prevede la realizzazione di un impianto eolico, costituito da 10 aerogeneratori della potenza nominale"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1273735",
+    "page": 29,
+    "document": "Allegato al DM MASE DM_2025-0000402 - MASE_2025-0062263",
+    "excerpt": "da fonte rinnovabile (fotovoltaica/agrivoltaica, eolico onshore ed offshore), tale da prefigurarsi la sostanziale"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "6-7 mesi",
+   "status": "da documenti",
+   "sub": "Inizio lavori 01/01/2026 (campo presunto di piano di sicurezza o notifica)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/499661",
+    "page": 12,
+    "document": "Piano preliminare materiali di scavo",
+    "excerpt": "Saranno momentaneamente accantonati (6-7 mesi) nei pressi dell’area di scavo. Finita la costruzione dell’impianto saranno utilizzati per ripristino aree delle piazzole e nei terreni immediatamente adiacenti"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Castelluccio Dei Sauri",
+   "Ascoli Satriano"
+  ],
+  "coordinate": {
+   "lat": 41.35704,
+   "lon": 15.53182,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/610807",
+    "page": 60,
+    "document": "Integrazioni del 16/03/2022 -A01_PEGASO_Rel_Paesag",
+    "excerpt": "• Punto n. 2: visuale Nord rispetto all’area d’intervento – ripresa fotografica da via S. Nicola Montecalvello, in località ponte Albanito (coordinate: Lat. 41.357040°; Long. 15.531817°), consente di includere nelle foto"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.35704,15.53182",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "AEP Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1273736",
+    "page": 1,
+    "document": "Allegato al DM MASE DM_2025-0000402 - Parere_n_433_dell_11_04_23-ID_VIP_5872",
+    "excerpt": "una potenza complessiva di 60 MW ricadenti nei territori comunali di Ascoli Satriano (FG), Castelluccio dei Sauri (FG) – Proponente: AEP Engineering S.r.l."
+   }
+  },
+  {
+   "name": "ATS Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "atseng@pec.it",
+     "occurrences": 61,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/499648",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "0882/393197 atseng@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "aepvento@pec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/610810",
+      "page": 1,
+      "document": "Integrazioni del 16/03/2022 - T01_PEGASO_IGM",
+      "excerpt": "P.IVA 04335890713 aepvento@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "ahsyhqwr@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/552869",
+      "page": 1,
+      "document": "Integrazioni del 25/10/2021 - A04_PEGASO_Relazione_Paesaggistica_01",
+      "excerpt": "0882/393197 aHSYHQWR@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/499659",
+    "page": 3,
+    "document": "Relazione sulla Sicurezza",
+    "excerpt": "Il Progettista: ATS Engineering srl Coordinatore per la Sicurezza: Ing. Eugenio Di Gianvito."
+   }
+  },
+  {
+   "name": "Ing. Eugenio Di Gianvito",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori",
+    "Coordinatore sicurezza"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "atsing@atsing.eu",
+     "occurrences": 46,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/499648",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Ing. Eugenio Di Gianvito atsing@atsing.eu"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/499659",
+    "page": 6,
+    "document": "Relazione sulla Sicurezza",
+    "excerpt": "Direttore dei lavori: Ing. Eugenio Di Gianvito"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": {
+  "level": "potenzialmente_avviato",
+  "label": "Potenzialmente avviato o realizzato",
+  "reason": "L'avvio dei lavori era previsto il 01/01/2026 e non risultano documenti successivi."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "6-7 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "6-7 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/499661",
+    "page": 12,
+    "document": "Piano preliminare materiali di scavo",
+    "excerpt": "Saranno momentaneamente accantonati (6-7 mesi) nei pressi dell’area di scavo. Finita la costruzione dell’impianto saranno utilizzati per ripristino aree delle piazzole e nei terreni immediatamente adiacenti"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "01/01/2026",
+    "iso": "2026-01-01",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/499659",
+     "page": 6,
+     "document": "Relazione sulla Sicurezza",
+     "excerpt": "Data presunta inizio lavori: 01/01/2026 Durata presunta lavori (gg):"
+    }
+   }
+  ],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 113,
+  "pagine": 1656,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "AEP S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 60.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "L'avvio dei lavori era previsto il 01/01/2026 e non risultano documenti successivi."
+  },
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 60 MW, gli elaborati 6 MW"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "55 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
