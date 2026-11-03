@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico composto da 17 aerogeneratori del tipo Vestas V150 di potenza pari a 4,2 MW, per un potenza complessiva pari a 71,4 MW. I comuni interessati sono Montemilone (PZ) per il parco eolico e i comuni di Venosa (PZ), Banzi (PZ), Palazzo San Gervasio (PZ), Genzano di Lucania (PZ) e Spinazzola (BAT), ricadenti nelle regioni Puglia e Basilicata.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7341",
  "source": "mase",
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "sintesi": [
   {
    "key": "potenza",
@@ -23,8 +23,8 @@
    "key": "wtg",
    "label": "Aerogeneratori",
    "value": "17",
-   "status": "da documenti",
-   "sub": "4,20 MW ciascuno · altezza mozzo 105 m · Valore prevalente negli elaborati; altri valori: 5 (7), 8 (6), 15 (3)",
+   "status": "da verificare",
+   "sub": "4,20 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 5 (64), 8 (8), 6 (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/398806",
     "page": 1,
@@ -37,7 +37,7 @@
    "label": "Durata cantiere",
    "value": "16 settimane (circa 4 mesi)",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 30 mesi (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (2), 30 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/397137",
     "page": 124,
@@ -57,9 +57,19 @@
    "Banzi",
    "Montemilone"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Venosa%2C+PZ%2C+Basilicata",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 40.97856,
+   "lon": 15.99851,
+   "tipo": "centro della tavola georeferenziata di progetto (83 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/397093",
+    "page": 2,
+    "document": "Allegato grafico alla relazione geologica e idrogeologica",
+    "excerpt": "Allegato grafico alla relazione geologica e idrogeologica"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.97856,15.99851",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
@@ -80,12 +90,23 @@
     {
      "type": "PEC",
      "value": "cogeinenergy@pec.it",
-     "occurrences": 20,
+     "occurrences": 55,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/470452",
       "page": 2,
       "document": "Integrazioni del 22/02/2021 - ISTANZE DI ACCESSO AGLI ATTI",
       "excerpt": "Codice fiscale e p. iva: 07937941214 Pec. cogeinenergy@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "servizio.ecologia@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/519596",
+      "page": 1,
+      "document": "Parere dellla Regione Puglia Sezione Autorizzazioni Ambientali in data 16/07/2021",
+      "excerpt": "Via Gentile, 52 – 70126 Bari Tel: 080 540 4316 ; pec: servizio.ecologia@pec.rupar.puglia.it"
      }
     },
     {
@@ -98,15 +119,95 @@
       "document": "Integrazioni del 22/02/2021 - ISTANZE DI ACCESSO AGLI ATTI",
       "excerpt": "Sede Amministrativa: Via Diocleziano 107 – 80125 Napoli Tel. 081 19566613 – Fax. 081 7618640"
      }
+    },
+    {
+     "type": "Telefono",
+     "value": "0805404316",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/519596",
+      "page": 1,
+      "document": "Parere dellla Regione Puglia Sezione Autorizzazioni Ambientali in data 16/07/2021",
+      "excerpt": "Via Gentile, 52 – 70126 Bari Tel: 080 540 4316 ; pec: servizio.ecologia@pec.rupar.puglia.it"
+     }
     }
    ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7341"
    }
+  },
+  {
+   "name": "Inse S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "inse.srl@virgilio.it",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397145",
+      "page": 1,
+      "document": "Piano particellare di esproprio grafico",
+      "excerpt": "80128 - NAPOLI Tel. 081 5797998 - e-mail: inse.srl@virgilio.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0815797998",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397145",
+      "page": 1,
+      "document": "Piano particellare di esproprio grafico",
+      "excerpt": "80128 - NAPOLI Tel. 081 5797998 - e-mail: inse.srl@virgilio.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/397145",
+    "page": 1,
+    "document": "Piano particellare di esproprio grafico",
+    "excerpt": "Progettazione: INSE S.R.L."
+   }
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Vestas Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02170340737",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Sardegna 40 00187 Roma Rm",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vestas-italia@vestas.com",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397117",
+      "page": 13,
+      "document": "Analisi degli effetti della rottura degli elementi rotanti - Verifica dei requisiti previsti dal PIEAR",
+      "excerpt": "Via Tirso 14, 00198 Roma, Italy Tel: +39 099 4606 111, Fax: +39 099 4606 333, vestas-italia@vestas.com, www.vestas.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Ing. Giuseppe De Masi",
    "kind": "persona",
@@ -141,6 +242,89 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397123",
+      "page": 17,
+      "document": "Relazione preliminare sulle strutture e fondazioni - Calcoli",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397123",
+      "page": 17,
+      "document": "Relazione preliminare sulle strutture e fondazioni - Calcoli",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Tisti Pietro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138315",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397133",
+      "page": 3,
+      "document": "Soluzione di connessione alla RTN - Benestare del gestore di rete alle opere di connessione",
+      "excerpt": "Rossana Miglietta. Contatti: Ing. Tisti Pietro Tel. 0683138315"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. D'Addese Oreste",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138289",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397133",
+      "page": 4,
+      "document": "Soluzione di connessione alla RTN - Benestare del gestore di rete alle opere di connessione",
+      "excerpt": "Ing. D'Addese Oreste —’Tel 0683138289"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -148,7 +332,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "16 settimane (circa 4 mesi)",
+  "durata_cantiere": "30 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -160,15 +344,351 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "SONDAGGI E INDAGINI DI LABORATORIO",
+    "start": 0.61,
+    "end": 3.62,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "REDAZIONE PROGETTO ESECUTIVO",
+    "start": 2.61,
+    "end": 6.63,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "APERTURA CANTIERE",
+    "start": 6.62,
+    "end": 7.63,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "• 1° Gruppo costituito dalle WTG: MN01 - MN02 – MN03 – MN04 – MN10 – MN11",
+    "start": 6.62,
+    "end": 10.64,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "• 2° Gruppo costituito dalle WTG: MN05 - MN06 – MN14 - MN12 – MN15 – MN14",
+    "start": 8.63,
+    "end": 12.64,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "• 3° Gruppo costituito dalle WTG: MN07 - MN08 – MN09 - MN15 – MN16 – MN17",
+    "start": 10.63,
+    "end": 14.65,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "• Cavidotti 1° gruppo (MN01-MN02-MN03-MN04-MN10-MN11) fino alla stazione di uten",
+    "start": 8.63,
+    "end": 11.64,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "• Cavidotti 2° gruppo (MN05-MN06-MN12-MN15-MN14) fino alla stazione di utenza",
+    "start": 9.63,
+    "end": 12.64,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "• Cavidotti 3° gruppo (MN07-MN08-MN09-MN15-MN16-MN17) fino alla stazione di uten",
+    "start": 10.63,
+    "end": 13.64,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cavidotto di collegamento dalla CS alla stazione trasformazione 30-150 kV",
+    "start": 12.64,
+    "end": 14.65,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Scavi e pali (o platea), magrone",
+    "start": 7.63,
+    "end": 10.64,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Arrivo conci e posizionamento",
+    "start": 10.63,
+    "end": 12.64,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Getto fondazione e maturazione cls",
+    "start": 12.64,
+    "end": 18.66,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Scavi e pali (o platea), magrone",
+    "start": 7.63,
+    "end": 12.64,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Arrivo conci e posizionamento",
+    "start": 12.64,
+    "end": 18.66,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "1° gruppo",
+    "start": 18.65,
+    "end": 21.66,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "2° gruppo",
+    "start": 19.66,
+    "end": 22.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "3° gruppo",
+    "start": 20.66,
+    "end": 23.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Approvvigionamento materiali",
+    "start": 7.63,
+    "end": 9.64,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione area stazione e lavori civili",
+    "start": 8.63,
+    "end": 16.65,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Montaggi elettromeccanici",
+    "start": 10.63,
+    "end": 16.65,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Prove sotto tensione",
+    "start": 16.65,
+    "end": 25.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "OPERE DI RIPRISTINO AMBIENTALE E DI FINITURA",
+    "start": 25.67,
+    "end": 27.68,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "DISMISSIONE CANTIERE",
+    "start": 27.67,
+    "end": 28.68,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "CHIUSURA CANTIERE",
+    "start": 28.68,
+    "end": 29.68,
+    "level": 2,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 29.68,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/397127",
+   "page": 9,
+   "document": "Cronoprogramma realizzazione impianto",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "25",
+     "start": 24.0,
+     "end": 25.0
+    },
+    {
+     "label": "26",
+     "start": 25.0,
+     "end": 26.0
+    },
+    {
+     "label": "27",
+     "start": 26.0,
+     "end": 27.0
+    },
+    {
+     "label": "28",
+     "start": 27.0,
+     "end": 28.0
+    },
+    {
+     "label": "29",
+     "start": 28.0,
+     "end": 29.0
+    },
+    {
+     "label": "30",
+     "start": 29.0,
+     "end": 30.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "16 settimane (circa 4 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 settimane (8), 15 giorni (4), 20 – 30 giorni (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 settimane (8), 15 giorni (4), 1 mese (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/397137",
     "page": 124,
@@ -181,25 +701,21 @@
    "document": "Cronoprogramma realizzazione impianto",
    "url": "https://va.mite.gov.it/File/Documento/397127"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "note": null,
   "altri": [
-   {
-    "document": "Cronoprogramma realizzazione impianto",
-    "url": "https://va.mite.gov.it/File/Documento/397127"
-   },
    {
     "document": "Piano di dismissione dell'impianto eolico e cronoprogramma delle fasi attuative",
     "url": "https://va.mite.gov.it/File/Documento/397130"
    }
   ],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 339,
-  "pagine": 1384,
-  "completa": false,
-  "da_leggere": 219
+  "pagine": 4886,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -230,8 +746,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "264 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "672 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
