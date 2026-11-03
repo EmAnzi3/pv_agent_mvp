@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto agrovoltaico, denominato \"Sparpagliata\" e delle relative opere di connessione, avente una potenza nominale pari a 30 MW, ubicato nei comuni di Torre Santa Susanna, Mesagne ed Erchie (BR).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8360",
  "source": "mase",
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "58,059 ha",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 50,983 ha (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 50,983 ha (1), 41 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1337522",
     "page": 2,
@@ -49,7 +49,7 @@
    "label": "Superficie coperta dai pannelli",
    "value": "9,815 ha",
    "status": "da verificare",
-   "sub": "17% dell'area · Valore più ricorrente negli elaborati; altri valori: 13,624 ha (1), 15,91 ha (1)",
+   "sub": "17% dell'area · Valore più ricorrente negli elaborati; altri valori: 13,624 ha (2), 15,91 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/606388",
     "page": 5,
@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "48 settimane (circa 11 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1), 14 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 14 mesi (2), 5 mesi (2), 4 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/606531",
     "page": 54,
@@ -81,7 +81,7 @@
   "coordinate": {
    "lat": 40.46329,
    "lon": 17.75982,
-   "tipo": "centro della tavola georeferenziata di progetto (157 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (170 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/606382",
     "page": 1,
@@ -94,6 +94,18 @@
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": [
+   {
+    "lotto": "Area 1",
+    "lat": 40.45271,
+    "lon": 17.76903,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=40.45271,17.76903",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/652573",
+     "page": 2,
+     "document": "Integrazioni del 17/06/2022 - Allegato 4.2-signed-signed",
+     "excerpt": "40°27'10.41\"N; 17°46'22.18\"E Area 1 40°27'2.44\"N; 17°46'0.91\"E |om 40°26'50.05\"N; 17°45'55.45\"E"
+    }
+   },
    {
     "lotto": "Lotto SP1",
     "lat": 40.47384,
@@ -230,8 +242,8 @@
    }
   },
   {
-   "name": "PROJETT0 engineering S.r.l.",
-   "kind": "società",
+   "name": "Dott. Geologo Dario Fischetto",
+   "kind": "persona",
    "roles": [
     "Geologo"
    ],
@@ -242,10 +254,10 @@
    "office": null,
    "contacts": [],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/606497",
-    "page": 1,
-    "document": "C9DVVB4_ImpiantodiRete_27_Rev1",
-    "excerpt": "Relazione geologica PROJETT0 engineering s.r.l."
+    "url": "https://va.mite.gov.it/File/Documento/606531",
+    "page": 16,
+    "document": "C9DVVB4_RelazioneGenerale_Rev4",
+    "excerpt": "Rinviando alla relazione geologica redatta dal Dott. Geologo Dario Fischetto, si riportano I dati di inquadramento geologico dell’area."
    }
   }
  ],
@@ -263,7 +275,7 @@
     {
      "type": "E-mail",
      "value": "studio@projetto.eu",
-     "occurrences": 41,
+     "occurrences": 42,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/606451",
       "page": 1,
@@ -656,7 +668,7 @@
   "duration": {
    "text": "48 settimane (circa 11 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1), 14 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 14 mesi (2), 5 mesi (2), 4 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/606531",
     "page": 54,
@@ -673,9 +685,9 @@
  },
  "documentazione": {
   "documenti": 367,
-  "pagine": 2557,
+  "pagine": 3142,
   "completa": false,
-  "da_leggere": 127
+  "da_leggere": 7
  },
  "confronto": [
   {
@@ -715,7 +727,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "1659 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1900 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
