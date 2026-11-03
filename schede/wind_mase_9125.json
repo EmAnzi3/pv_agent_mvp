@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico, costituito da 11 aerogeneratori della potenza di 6,00 MW ciascuno, per una potenza complessiva di 66,00 MW, da installare nei comuni di Buseto Palizzolo (TP), Erice (TP) e Valderice (TP).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9125",
  "source": "mase",
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "11",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 5 (5), 4 (5), 6 (4)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 5 (16), 4 (8), 3 (8)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/814881",
     "page": 1,
@@ -45,16 +45,29 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "20 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 9,4 MW (1), 99 MW (1), 24 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/838103",
+    "page": 2,
+    "document": "Osservazioni della Società Repower Renewable Spa in data 27/04/2023",
+    "excerpt": "“Giamboi-Blandano”, della potenza complessiva pari a 24 MW comprensivo di un sistema di accumulo pari a 20 MW, da realizzarsi nei Comuni di Valderice (TP) e Buseto Palizzolo (TP), inclusivo delle relative opere di connes"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "16 mesi",
+   "value": "18 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (1), 18 mesi (1), 9 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 16 mesi (1), 24 mesi (1), 9 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1395177",
-    "page": 9,
-    "document": "Allegato alla Determinazione motivata di conclusione positiva della Conferenza di Servizi - Parere della CT PNRR-PNIEC del 29/01/2026",
-    "excerpt": "In merito al Cronoprogramma il Proponente nell’elaborato “IT-VESLVT-TEN-SPE-TR-06.R00_signed” riporta il diagramma di Gantt con una durata di 16 mesi."
+    "url": "https://va.mite.gov.it/File/Documento/814724",
+    "page": 97,
+    "document": "RELAZIONE TECNICA",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
    }
   }
  ],
@@ -67,17 +80,17 @@
    "Valderice"
   ],
   "coordinate": {
-   "lat": 37.99379,
-   "lon": 12.73781,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (6 riferimenti concordi)",
+   "lat": 37.98897,
+   "lon": 12.66497,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (20 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/814726",
-    "page": 49,
+    "page": 5,
     "document": "RELAZIONE DI FATTIBILITA' GEOLOGICA E GEOMORFOLOGICA",
-    "excerpt": "Sito 1 45830 37,981750 12,668500 722,9 Sito 2 45831 37,982230 12,731700 5154,4"
+    "excerpt": "Coordinate geografiche (WGS84): Lat 37.980585°, Long 12.656183°"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.99379,12.73781",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.98897,12.66497",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -85,17 +98,39 @@
  },
  "soggetti": [
   {
-   "name": "Levant Wind S.r.l.",
+   "name": "Levant Wind S.r.l. !!S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente"
    ],
-   "vat": null,
+   "vat": "16181151008",
    "vat_group": false,
-   "verified": false,
+   "verified": true,
    "esecuzione": null,
-   "office": null,
+   "office": "Via Chiaravalle 7/9 20122 Milano Mi",
    "contacts": [
+    {
+     "type": "PEC",
+     "value": "levantwindsrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1374069",
+      "page": 1,
+      "document": "Controdeduzioni al parere del Dipartimento",
+      "excerpt": "La Società Levant Wind S.r.l. con sede in Via Chiaravalle, 7/9 - 20122 Milano, iscritta al Registro delle Imprese di Milano, Monza Brianza e Lodi n. REA MI - 2718815, codice fiscale P. IVA: 16181151008, PEC: levantwindsr"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@levantwind.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1374069",
+      "page": 1,
+      "document": "Controdeduzioni al parere del Dipartimento",
+      "excerpt": "Società soggetta ad attività di direzione e coordinamento da parte di PLT holding S.r.l. info@levantwind.it"
+     }
+    },
     {
      "type": "Telefono",
      "value": "0302056980",
@@ -111,25 +146,6 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9125"
-   }
-  },
-  {
-   "name": "Dott. Ing. Nicola Forte",
-   "kind": "persona",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/814842",
-    "page": 2,
-    "document": "STUDIO DI IMPATTO AMBIENTALE - QUADRO DI RIFERIMENTO PROGRAMMATICO",
-    "excerpt": "Progettista Dott. Ing. Nicola FORTE"
    }
   },
   {
@@ -149,6 +165,25 @@
     "page": 2,
     "document": "STUDIO DI IMPATTO AMBIENTALE - QUADRO DI RIFERIMENTO PROGRAMMATICO",
     "excerpt": "Consulente per la progettazione Dott. Ing. Gaetano PUPELLA"
+   }
+  },
+  {
+   "name": "Dott. Ing. Nicola Forte",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/814842",
+    "page": 2,
+    "document": "STUDIO DI IMPATTO AMBIENTALE - QUADRO DI RIFERIMENTO PROGRAMMATICO",
+    "excerpt": "Progettista Dott. Ing. Nicola FORTE"
    }
   },
   {
@@ -211,6 +246,33 @@
    }
   },
   {
+   "name": "SO.GEST Ambiente S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "04507550822",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dei Cantieri N 47 90142 Palermo Pa",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@sogestambiente.it",
+     "occurrences": 27,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/814731",
+      "page": 43,
+      "document": "PIANO PRELIMINARE DI UTILIZZO IN SITO DELLE TERRE E ROCCE DA SCAVO",
+      "excerpt": "SO.GEST AMBIENTE - Via dei cantieri, 47 - 90142 Palermo (PA) - Tel/Fax: 091 587788 Cod. Fisc. - P.IVA: 04507550822 -www.sogestambiente.it info@sogestambiente.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Tecnogaia S.r.l.",
    "kind": "società",
    "roles": [],
@@ -229,6 +291,33 @@
       "page": 4,
       "document": "Stima di producibilità dell'impianto",
       "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Repower Renewable S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03647930274",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lavaredo 44/52 Mestre 30174 Venezia Ve",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@elettrostudio.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/838103",
+      "page": 1,
+      "document": "Osservazioni della Società Repower Renewable Spa in data 27/04/2023",
+      "excerpt": "Repower Renewable Spa via Lavaredo 44/52 - 30174 Venezia Partita iva e codice fiscale T +39 041 5349997 Società diretta e coordinata da Capitale sociale sottoscritto e 03647930274 info@elettrostudio.it"
      }
     }
    ],
@@ -1249,14 +1338,14 @@
    "unita": "settimane"
   },
   "duration": {
-   "text": "16 mesi",
+   "text": "18 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (1), 18 mesi (1), 9 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 16 mesi (1), 24 mesi (1), 9 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1395177",
-    "page": 9,
-    "document": "Allegato alla Determinazione motivata di conclusione positiva della Conferenza di Servizi - Parere della CT PNRR-PNIEC del 29/01/2026",
-    "excerpt": "In merito al Cronoprogramma il Proponente nell’elaborato “IT-VESLVT-TEN-SPE-TR-06.R00_signed” riporta il diagramma di Gantt con una durata di 16 mesi."
+    "url": "https://va.mite.gov.it/File/Documento/814724",
+    "page": 97,
+    "document": "RELAZIONE TECNICA",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
    }
   },
   "milestones": [],
@@ -1276,9 +1365,9 @@
  },
  "documentazione": {
   "documenti": 169,
-  "pagine": 2947,
-  "completa": false,
-  "da_leggere": 49
+  "pagine": 4267,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -1309,12 +1398,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "41 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "73 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
