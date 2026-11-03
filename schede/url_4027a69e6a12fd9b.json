@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Greppo\", di potenza pari a 26,60 MWp e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Montepulciano (SI) e Cortona (AR).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9077",
  "source": "mase",
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "sintesi": [
   {
    "key": "potenza",
@@ -35,8 +35,8 @@
    "key": "area",
    "label": "Superficie complessiva",
    "value": "38 ha",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 48,389 ha (1), 108 ha (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 48,389 ha (4), 108 ha (1), 28 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1370606",
     "page": 6,
@@ -45,11 +45,24 @@
    }
   },
   {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "28 ha",
+   "status": "da documenti",
+   "sub": "74% dell'area",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/755977",
+    "page": 41,
+    "document": "Parere della Regione Toscana - Giunta Regionale in data 18/01/2023",
+    "excerpt": "le produzioni di energia elettrica ed agricole. L’attività agricola sarà realizzata nell’area in cui verranno installati i moduli fotovoltaici, su di una superficie di circa 28 Ha. Allo scopo saranno previsti accorgiment"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "15 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (2), 180 giorni (circa 6 mesi) (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (2), 180 giorni (circa 6 mesi) (1), 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1234772",
     "page": 24,
@@ -68,7 +81,7 @@
   "coordinate": {
    "lat": 43.171,
    "lon": 11.827,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (13 riferimenti concordi)",
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (16 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1370606",
     "page": 7,
@@ -80,7 +93,7 @@
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
-   "lat": 43.22023,
+   "lat": 43.22011,
    "lon": 11.88993,
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1370606",
@@ -88,7 +101,7 @@
     "document": "Allegato al Decreto Direttoriale - Parere CTPNRR-PNIEC del 17/04/2025",
     "excerpt": "stazione TERNA Farneta RT. La Stazione di Elevazione di Utenza (SEU), viene realizzata nel Comune di Cortona (AR) in prossimità della stazione Terna \"Farneta RT\" e precisamente alle seguenti coordinate geografiche: latit"
    },
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=43.22023,11.88993"
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=43.22011,11.88993"
   },
   "lotti": []
  },
@@ -104,7 +117,30 @@
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "accionaglobalitalia@legalmail.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/821341",
+      "page": 3,
+      "document": "Osservazioni della Regione Toscana in data 31/03/2023",
+      "excerpt": "ACCIONA ENERGIA GLOBAL ITALIA S.R.L. accionaglobalitalia@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0650514225",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/820677",
+      "page": 1,
+      "document": "Controdeduzioni della Società Acciona Energia Global Italia S.r.l. al contributo istruttorio del Comune di Montepulciano prot. n. 0012407 del 09 gennaio 2023",
+      "excerpt": "Sede Legale: Via Achille Campanile, 73 – 00144 Roma Tel. +39 06 50514225 - Fax +39 06 5014551"
+     }
+    }
+   ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9077"
@@ -125,7 +161,7 @@
     {
      "type": "E-mail",
      "value": "mauro.marchino@tusciaengineering.com",
-     "occurrences": 110,
+     "occurrences": 137,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/733537",
       "page": 1,
@@ -149,7 +185,7 @@
     {
      "type": "E-mail",
      "value": "fabio.sabbatini@tusciaengineering.com",
-     "occurrences": 107,
+     "occurrences": 131,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/733537",
       "page": 1,
@@ -221,14 +257,14 @@
   "source": null,
   "asse": null,
   "duration": {
-   "text": "3 mesi",
+   "text": "90 giorni (circa 3 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 mesi (2), 22 giorni (1), 180 giorni (circa 6 mesi) (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 mesi (3), 22 giorni (1), 180 giorni (circa 6 mesi) (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/733467",
-    "page": 5,
-    "document": "VALUTAZIONE PREVISIONALE DI IMPATTO ACUSTICO AMBIENTALE",
-    "excerpt": "15 mesi, mentre la vita dell’impianto è stimata in 25-30 anni. Dei 15 mesi previsti per la completa realizzazione del progetto si stima che 3 mesi saranno necessari alla realizzazione del solo cavidotto interrato."
+    "url": "https://va.mite.gov.it/File/Documento/1234772",
+    "page": 29,
+    "document": "Integrazioni del 13/03/2025 - SINTESI NON TECNICA",
+    "excerpt": "sia aree con presenza di edifici che aree completamente inedificate nei comuni di Montepulciano e Cortona, tali lavori si protrarranno per un periodo stimato complessivamente pari a 90 giorni; consistono in lavori di sca"
    }
   },
   "milestones": [
@@ -254,9 +290,9 @@
  },
  "documentazione": {
   "documenti": 153,
-  "pagine": 1141,
-  "completa": false,
-  "da_leggere": 33
+  "pagine": 1500,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -287,12 +323,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "160 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "188 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
