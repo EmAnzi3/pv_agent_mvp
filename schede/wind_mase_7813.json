@@ -1,0 +1,349 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7813",
+ "title": "Progetto per l'installazione di un impianto eolico denominato \"Contessa\", costituito da 10 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva pari a 60 MW, e delle relative opere elettriche connesse da localizzarsi nei territori comunali di Contessa Entellina (PA), S. Margherita Belice (AG), Montevago (AG) e Partanna (TP). Proponente: RWE Renewables Italia S.r.l.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7813",
+ "source": "mase",
+ "updated": "2026-11-03",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "60 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7813",
+    "excerpt": "60 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 4 (13), 14 (8), 3 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488462",
+    "page": 1,
+    "document": "Avviso al Pubblico del 03/05/2021",
+    "excerpt": "Il progetto è localizzato nella Regione Sicilia e prevede la realizzazione un nuovo parco eolico da 60 MW (10 aerogeneratori eolici tripala da 6 MW installati nel comune di Contessa Entellina) e delle relative opere civi"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "6 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 13 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/596685",
+    "page": 31,
+    "document": "PECO-A-0803_00 - Piano Monitoraggio Ambientale.pdf",
+    "excerpt": " In Operam: n. 2 campionamenti ed analisi per in ciascun punto (1 ogni 6 mesi. L’ultimo a fine lavori)."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "PA",
+  "comuni": [
+   "Montevago",
+   "Partanna",
+   "Contessa Entellina",
+   "Santa Margherita Di Belice"
+  ],
+  "coordinate": {
+   "lat": 38.00881,
+   "lon": 12.53941,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (14 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/487994",
+    "page": 7,
+    "document": "PECO-P-0113_00 - Schede informative della viabilità di accesso al parco",
+    "excerpt": "OB.01 Coord. 38°00'45.72\"N - 12°31'23.44\"E Uscita dal porto di Trapani"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=38.00881,12.53941",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06400370968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 154,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/487919",
+      "page": 1,
+      "document": "PECO-A-0400_00 - SIA - Parte I",
+      "excerpt": "P.IVA/C.F. 06400370968 pec: rwerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7813"
+   }
+  },
+  {
+   "name": "Vamirgeoind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/487921",
+    "page": 100,
+    "document": "PECO-A-0402_00 - Relazione geologica",
+    "excerpt": "COMMITTENTE: Vamirgeoind s.r.l."
+   }
+  },
+  {
+   "name": "Ing. Riccardo Cangelosi",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/487919",
+    "page": 1,
+    "document": "PECO-A-0400_00 - SIA - Parte I",
+    "excerpt": "Il Progettista: Ing. Riccardo Cangelosi"
+   }
+  },
+  {
+   "name": "Dott. Gualtiero Bellomo",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/487921",
+    "page": 24,
+    "document": "PECO-A-0402_00 - Relazione geologica",
+    "excerpt": "Il Geologo:Dott. Gualtiero Bellomo Allegati:"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "LA Molisana Trasporti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01463480705",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Rio Lecine 30 86014 Guardiaregia Cb",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@molisanatrasporti.it",
+     "occurrences": 45,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/487994",
+      "page": 2,
+      "document": "PECO-P-0113_00 - Schede informative della viabilità di accesso al parco",
+      "excerpt": "www.molisanatrasporti.com info@molisanatrasporti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geocima S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "04405870827",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Guglielmo Borremans 36 90145 Palermo Pa",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "geocimasnc@tiscali.it",
+     "occurrences": 35,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/487921",
+      "page": 100,
+      "document": "PECO-A-0402_00 - Relazione geologica",
+      "excerpt": "GEOCIMA s.a.s. - Laboratorio di Geologia Tecnica - Via Borremans, 36 - 90145 - Palermo Tel/Fax 0916824940 – Email: geocimasnc@tiscali.it - P.I. 04405870827"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Francesco Chiri",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiochiri.it",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/487969",
+      "page": 1,
+      "document": "PECO-E-0200_00 - Relazione Tecnica SSE",
+      "excerpt": "\u0013\u0014\u0017\u001a\u00033$/(502\u0003\u0010 Tel: 091/6195726 - Mobile: 335/8419256 - Fax: 091/9783000 - email: info@studiochiri.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0916195726",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/487969",
+      "page": 1,
+      "document": "PECO-E-0200_00 - Relazione Tecnica SSE",
+      "excerpt": "\u0013\u0014\u0017\u001a\u00033$/(502\u0003\u0010 Tel: 091/6195726 - Mobile: 335/8419256 - Fax: 091/9783000 - email: info@studiochiri.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3358419256",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/487969",
+      "page": 1,
+      "document": "PECO-E-0200_00 - Relazione Tecnica SSE",
+      "excerpt": "\u0013\u0014\u0017\u001a\u00033$/(502\u0003\u0010 Tel: 091/6195726 - Mobile: 335/8419256 - Fax: 091/9783000 - email: info@studiochiri.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "6 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "6 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 13 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/596685",
+    "page": 31,
+    "document": "PECO-A-0803_00 - Piano Monitoraggio Ambientale.pdf",
+    "excerpt": " In Operam: n. 2 campionamenti ed analisi per in ciascun punto (1 ogni 6 mesi. L’ultimo a fine lavori)."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 130,
+  "pagine": 3560,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "RWE Renewables Italia S.r.l.",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 60.0,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "14 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
