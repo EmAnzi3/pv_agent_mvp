@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico composto da 11 aerogeneratori per una potenza complessiva di 70 MW, da realizzarsi nel territorio comunale di Spinazzola (BAT), con opere accessorie ricadenti nel comune di Montemilone (PZ)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7309",
  "source": "mase",
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "11",
    "status": "da documenti",
-   "sub": "6,36 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 3 (7), 8 (5), 5 (5)",
+   "sub": "6,36 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 3 (14), 8 (10), 5 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/396647",
     "page": 1,
@@ -36,8 +36,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "5 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1), 540 giorni (circa 18 mesi) (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/394534",
     "page": 29,
@@ -53,9 +53,9 @@
    "Montemilone"
   ],
   "coordinate": {
-   "lat": 40.9526,
-   "lon": 16.03131,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (6 riferimenti concordi)",
+   "lat": 40.95156,
+   "lon": 16.03778,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (29 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/394545",
     "page": 1,
@@ -63,7 +63,7 @@
     "excerpt": "ITW_SPZ01_AM_07_TAV03_1_PPTR_Componenti_geomorfologiche"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.95260,16.03131",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.95156,16.03778",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -85,12 +85,23 @@
     {
      "type": "PEC",
      "value": "itw.spinazzola1@pec.it",
-     "occurrences": 5,
+     "occurrences": 10,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/410760",
       "page": 1,
       "document": "integrazioni del 30/06/2020 - Risposta Osservazioni_MIBACT",
       "excerpt": "Sede legale : Via del Gallitello n 89 - 85100 Potenza (PZ) - Italia Tel/Fax +39 0971 283416 - PEC : itw.spinazzola1@pec.it - C.F. e P IVA 02054880766"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "servizio.ecologia@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/519617",
+      "page": 1,
+      "document": "Parere dellla Regione Puglia Sezione Autorizzazioni Ambientali in data 16/07/2021",
+      "excerpt": "Tel: 080 540 4316 pec: servizio.ecologia@pec.rupar.puglia.it Pagina 1 di 1"
      }
     }
    ],
@@ -101,6 +112,41 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Delta OHM S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@deltaohm.com",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/394632",
+      "page": 23,
+      "document": "ITW_SPZ01_PR_11_Relazione_previsione_di_impatto_Spinazzola_1",
+      "excerpt": "e-mail: info@deltaohm.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "049897715",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/394632",
+      "page": 23,
+      "document": "ITW_SPZ01_PR_11_Relazione_previsione_di_impatto_Spinazzola_1",
+      "excerpt": "35030 Caselle di Selvazzano (PD) Laboratorio Accreditato EZIO LAT N° 124 Tel. 0039-0498977150 ."
+     }
+    }
+   ],
+   "source": null
+  },
   {
    "name": "Qair Italia S.r.l.",
    "kind": "società",
@@ -168,6 +214,30 @@
       "page": 1,
       "document": "Integrazioni del 29/04/2022 - 220415_ITW_SPZ01_BENESTARE_PROGETTO_TERNA_P20220033242",
       "excerpt": "ITW EMME S.R.L. itwemme@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Atech S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "atechsrl@libero.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/394536",
+      "page": 13,
+      "document": "ITW_SPZ01_AM_03_Studio_di_Incidenza_Ambientale",
+      "excerpt": "Redattore: Atech srl e.mail: atechsrl@libero.it"
      }
     }
    ],
@@ -368,7 +438,7 @@
   "duration": {
    "text": "19 giorni",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (1), 90 giorni (circa 3 mesi) (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (2), 90 giorni (circa 3 mesi) (1), 8 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/394534",
     "page": 28,
@@ -393,9 +463,9 @@
  },
  "documentazione": {
   "documenti": 196,
-  "pagine": 789,
-  "completa": false,
-  "da_leggere": 76
+  "pagine": 1770,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -426,8 +496,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "55 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "201 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
