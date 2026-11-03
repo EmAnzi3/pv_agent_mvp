@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico composto da 15 aerogeneratori di potenza complessiva di 63 MW, ricadente nei comuni di Avetrana (TA), con opere accessorie ricadenti nei comuni di Erchie (BR) e San Pancrazio Salentino (BR).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7339",
  "source": "mase",
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "15",
    "status": "da documenti",
-   "sub": "4,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 5 (9), 6 (9), 7 (8)",
+   "sub": "4,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 6 (16), 5 (11), 7 (9)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1404895",
     "page": 1,
@@ -33,16 +33,28 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Fotovoltaico galleggiante",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/412453",
+    "page": 16,
+    "document": "Integrazioni del 03/07/2020 - A7OXWD6_DocumentazioneSpecialistica_40",
+    "excerpt": "a) rimozione degli infissi interni ed esterni, arredamenti e sanitari, pavimentazione flottante,"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "200 giorni (circa 7 mesi)",
-   "status": "da documenti",
-   "sub": null,
+   "value": "3 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 14 mesi (2), 8 mesi (2), 200 giorni (circa 7 mesi) (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/553927",
-    "page": 27,
-    "document": "Integrazioni del 25/10/2021 - A7OXWD6_ConvenzioneComuneAvetrana_R39a",
-    "excerpt": "oltre 200 giorni dal completamento dei lavori di realizzazione del Parco"
+    "url": "https://va.mite.gov.it/File/Documento/397574",
+    "page": 21,
+    "document": "Computo metrico estimativo del progetto definitivo",
+    "excerpt": "la “eco-compatibilità” e l’idoneità all’utilizzo del materiale nello stesso luogo di impiego. A lavoro ultimato sarà consegnato al Direttore Lavori certificazione dei materiali utilizzati e delle miscele impiegate. La mi"
    }
   }
  ],
@@ -53,17 +65,17 @@
    "Avetrana"
   ],
   "coordinate": {
-   "lat": 40.37061,
-   "lon": 17.78085,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (31 riferimenti concordi)",
+   "lat": 40.37222,
+   "lon": 17.77641,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (98 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/553933",
+    "url": "https://va.mite.gov.it/File/Documento/412445",
     "page": 1,
-    "document": "Integrazioni del 25/10/2021 - A7OXWD6_StudioFattibilitaAmbientale-33a",
-    "excerpt": "Integrazioni del 25/10/2021 - A7OXWD6_StudioFattibilitaAmbientale-33a"
+    "document": "Integrazioni del 03/07/2020 - A7OXWD6_Documentazione_specialistica_27a-signed",
+    "excerpt": "Integrazioni del 03/07/2020 - A7OXWD6_Documentazione_specialistica_27a-signed"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.37061,17.78085",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.37222,17.77641",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -95,7 +107,7 @@
     {
      "type": "PEC",
      "value": "avetrana.energia@legalmail.it",
-     "occurrences": 125,
+     "occurrences": 213,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1404895",
       "page": 1,
@@ -115,6 +127,28 @@
      }
     },
     {
+     "type": "PEC",
+     "value": "stcprogetti@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397589",
+      "page": 1,
+      "document": "Studio viabilità accesso al sito",
+      "excerpt": "stcprogetti@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "servizio.ecologia@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/519622",
+      "page": 1,
+      "document": "Parere dellla Regione Puglia Sezione Autorizzazioni Ambientali in data 16/07/2021",
+      "excerpt": "Via Gentile, 52 – 70126 Bari Tel: 080 540 4316 ; pec: servizio.ecologia@pec.rupar.puglia.it"
+     }
+    },
+    {
      "type": "E-mail",
      "value": "avetrana.energia@fri-el.it",
      "occurrences": 1,
@@ -123,6 +157,17 @@
       "page": 2,
       "document": "Integrazioni del 01/04/2020 - IntegrFotoIns",
       "excerpt": "Nome e Cognome : Mario Tocco Telefono : +39 3667766991 +39 0471324210 email : avetrana.energia@fri-el.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "urbanisticaavetrana@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828959",
+      "page": 2,
+      "document": "Parere del Comune di Avetrana in data 06/04/2023",
+      "excerpt": "Via Vittorio Emanuele n. 19 - 74020 Avetrana (TA) - C.F. 80009250731, Tel. 099/6613879 — Codice Univoco Ufficio: 8K9QXC mail: urbanisticaavetrana@gmail.com - pec: urbanistica.comune.avetrana@pec.rupar.puglia.it"
      }
     }
    ],
@@ -165,7 +210,7 @@
     {
      "type": "PEC",
      "value": "msc.innovativesolutions@pec.it",
-     "occurrences": 4,
+     "occurrences": 21,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/397591",
       "page": 1,
@@ -176,7 +221,7 @@
     {
      "type": "E-mail",
      "value": "info@fri-el.it",
-     "occurrences": 44,
+     "occurrences": 96,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1404916",
       "page": 1,
@@ -187,12 +232,50 @@
     {
      "type": "Telefono",
      "value": "0668804163",
-     "occurrences": 45,
+     "occurrences": 105,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1404916",
       "page": 1,
       "document": "Relazione Pedoagronomica",
       "excerpt": "Piazza della Rotonda, 2 - 00186 Roma (RM) - Italia Tel. +39 06 6880 4163 - Fax. +39 06 6821 2764"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Vestas Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02170340737",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Sardegna 40 00187 Roma Rm",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vestas-italia@vestas.com",
+     "occurrences": 19,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397581",
+      "page": 21,
+      "document": "Gitatta massima elementi rotanti per rottura accidentale",
+      "excerpt": "Via Tirso 14, 00198 Roma, Italy Tel: +39 099 4606 111, Fax: +39 099 4606 333, vestas-italia@vestas.com, www.vestas.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0994606111",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397588",
+      "page": 8,
+      "document": "Relazione ostacoli per navigazione aerea",
+      "excerpt": "Vestas Italia S.r.l. Via Tirso 14, 00198 Roma, Italy Tel: +39 099 4606 111, Fax: +39 099 4606 333, vestas-italia@vestas.com, www.vestas.com"
      }
     }
    ],
@@ -214,7 +297,7 @@
     {
      "type": "E-mail",
      "value": "fabio.calcarella@gmail.com",
-     "occurrences": 53,
+     "occurrences": 127,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/553926",
       "page": 1,
@@ -223,14 +306,49 @@
      }
     },
     {
+     "type": "E-mail",
+     "value": "rella@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397572",
+      "page": 1,
+      "document": "Relazione Idrologica",
+      "excerpt": "Piazza Mazzini, 64 - 73100 - Lecce (LE) tel. +39 0832 1594953 - fabio.calc rella@gmail.com"
+     }
+    },
+    {
      "type": "Telefono",
      "value": "08321594953",
-     "occurrences": 49,
+     "occurrences": 94,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/553926",
       "page": 1,
       "document": "Integrazioni del 25/10/2021 - A7OXWD6_CHIARIMENTI_DELIBERA_GR_7_7_2021_N1095",
       "excerpt": "Piazza Mazzini, 64 - 73100 - Lecce (LE) tel. +39 0832 1594953 - fabio.calcarella@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Vr enerwind S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "enerwind@pec.it",
+     "occurrences": 110,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/412449",
+      "page": 1,
+      "document": "Integrazioni del 03/07/2020 - A7OXWD6_DocumentazioneSpecialistica_28-signed",
+      "excerpt": "Via San Lorenzo 155 - cap 72023 MESAGNE (BR) P.IVA 02549880744 - REA BR-154453 - enerwind@pec.it"
      }
     }
    ],
@@ -261,7 +379,42 @@
    "source": null
   },
   {
-   "name": "Vr enerwind S.r.l.",
+   "name": "Dott. Ing. Santo Masilla",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "ingmasilla@gmail.com",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397515",
+      "page": 2,
+      "document": "Sezioni cavidotti",
+      "excerpt": "Via Torre Santa Susanna, 67 - 72020 Erchie (BR) tel. +39 0831.767860 - ingmasilla@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0831767860",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397515",
+      "page": 2,
+      "document": "Sezioni cavidotti",
+      "excerpt": "Via Torre Santa Susanna, 67 - 72020 Erchie (BR) tel. +39 0831.767860 - ingmasilla@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Lecce STC S.r.l.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -271,14 +424,95 @@
    "office": null,
    "contacts": [
     {
-     "type": "PEC",
-     "value": "enerwind@pec.it",
-     "occurrences": 38,
+     "type": "E-mail",
+     "value": "studiocalcarella@gmail.com",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397515",
+      "page": 5,
+      "document": "Sezioni cavidotti",
+      "excerpt": "Tel./Fax +39 0832 1790192 studiocalcarella@gmail.com - fabio.calcarella@gmail.com Avetrana Energia s.r.l. - societa' DEL Gruppo FRI-ELGREENPOWER 0 4"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "calcarella@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397515",
+      "page": 8,
+      "document": "Sezioni cavidotti",
+      "excerpt": "Tel./Fax +39 0832 1790192 studiocalcarella@gmail.com - fabio. calcarella@gmail.com Avetrana Energia s.r.l. - societa' DEL Gruppo FRI-ELGREENPOWER 0) /"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Agr. Luciano Brocca",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "lucianobrocca@alice.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397562",
+      "page": 1,
+      "document": "Relazione tecnico-agronomica sulle modalità di espianto e reimpianto degli alberi di ulivo",
+      "excerpt": "Tel. +39 338 4296378 lucianobrocca@alice.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3384296378",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397561",
+      "page": 1,
+      "document": "Relazione pedo-agronomica",
+      "excerpt": "Via Malta, 121 - 73036 Mura'LecoBsE{\\E; Tel. +39 338 4296378"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Giacomo Marzano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "giacomomarzano@gmai.com",
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/412449",
       "page": 1,
       "document": "Integrazioni del 03/07/2020 - A7OXWD6_DocumentazioneSpecialistica_28-signed",
-      "excerpt": "Via San Lorenzo 155 - cap 72023 MESAGNE (BR) P.IVA 02549880744 - REA BR-154453 - enerwind@pec.it"
+      "excerpt": "mob. +39 328 6568300 mail: giacomomarzano@gmai.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3286568300",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/397579",
+      "page": 1,
+      "document": "Relazione Faunistica",
+      "excerpt": "Via della Masseria Fossa-Zundrano, 773100 Lecce mob. +39 328 6568300 mail:"
      }
     }
    ],
@@ -289,8 +523,21 @@
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": "14 mesi (cronoprogramma)",
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "12/2021",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/397551",
+     "page": 4,
+     "document": "Relazione specialistica Opere Elettriche",
+     "excerpt": "Nome del progetto di impianto eolico: Avetrana Entrata in esercizio (previsione): dicembre 2021"
+    }
+   }
+  ],
+  "durata_cantiere": "3 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -304,165 +551,266 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Allestimento del cantiere",
-    "start": 0.27,
-    "end": 1.13,
-    "level": 0,
+    "name": "WTG 1",
+    "start": 0.0,
+    "end": 2.94,
+    "level": 2,
     "summary": false
    },
    {
-    "name": "Opere civili ‐ strade",
-    "start": 1.14,
-    "end": 2.85,
-    "level": 0,
+    "name": "WTG2",
+    "start": 0.0,
+    "end": 2.94,
+    "level": 2,
     "summary": false
    },
    {
-    "name": "Opere civili ‐ fondazioni torri",
-    "start": 1.14,
-    "end": 8.03,
+    "name": "FONDAZIONI, TRASPORTO E MONTAGGIO WTG8",
+    "start": 0.38,
+    "end": 3.36,
     "level": 0,
+    "summary": true
+   },
+   {
+    "name": "WTG3",
+    "start": 0.0,
+    "end": 2.94,
+    "level": 2,
     "summary": false
    },
    {
-    "name": "Opere civili ed elettrihe ‐ cavidotti",
-    "start": 2.86,
-    "end": 9.18,
-    "level": 0,
+    "name": "WTG4",
+    "start": 0.0,
+    "end": 3.15,
+    "level": 2,
     "summary": false
    },
    {
-    "name": "Trosporto componenti torri ed aerogenratori",
-    "start": 6.03,
-    "end": 8.03,
-    "level": 0,
+    "name": "WTG5",
+    "start": 0.11,
+    "end": 3.15,
+    "level": 2,
     "summary": false
    },
    {
-    "name": "Montaggio torri ed aerogeneratori",
-    "start": 6.89,
-    "end": 10.23,
-    "level": 0,
+    "name": "WTG6",
+    "start": 0.11,
+    "end": 3.15,
+    "level": 2,
     "summary": false
    },
    {
-    "name": "Costruzione SSE ‐ Opere elettriche e di connessione alla RTN",
-    "start": 1.14,
-    "end": 11.11,
-    "level": 0,
+    "name": "WTG7",
+    "start": 0.38,
+    "end": 3.36,
+    "level": 2,
     "summary": false
    },
    {
-    "name": "Collaudi",
-    "start": 10.24,
-    "end": 11.99,
-    "level": 0,
+    "name": "WTG9",
+    "start": 0.65,
+    "end": 3.36,
+    "level": 2,
     "summary": false
    },
    {
-    "name": "Dismissione del cantiere",
-    "start": 12.0,
-    "end": 13.74,
-    "level": 0,
+    "name": "AEROGENERATORI WTG12",
+    "start": 0.0,
+    "end": 1.18,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "WTG10",
+    "start": 0.65,
+    "end": 3.57,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "WTG11",
+    "start": 2.31,
+    "end": 3.57,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "WTG13",
+    "start": 0.0,
+    "end": 1.18,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "WTG14",
+    "start": 0.0,
+    "end": 1.18,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "WTG15",
+    "start": 0.0,
+    "end": 1.18,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "CAVIDOTTI",
+    "start": 0.0,
+    "end": 1.18,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "OPERE CIVILI",
+    "start": 0.0,
+    "end": 3.15,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "OPERE ELETTRICHE",
+    "start": 0.65,
+    "end": 2.94,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RIPRISTINI",
+    "start": 1.45,
+    "end": 3.15,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "CONNESSIONE",
+    "start": 2.52,
+    "end": 3.36,
+    "level": 2,
     "summary": false
    }
   ],
-  "unit": "month",
-  "months": 13.74,
+  "unit": "period",
+  "months": 3.57,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/412464",
-   "page": 36,
-   "document": "Integrazioni del 03/07/2020 - A7OXWD6_RelazioneDescrittiva_01_rev1",
+   "url": "https://va.mite.gov.it/File/Documento/397587",
+   "page": 24,
+   "document": "Documento contenente le prime indicazioni e disposizioni per la stesura dei Piani di Sicurezza",
    "excerpt": ""
   },
   "asse": {
    "titolo": null,
    "etichette": [
     {
-     "label": "1",
-     "start": 0.0,
-     "end": 1.0
-    },
-    {
-     "label": "2",
-     "start": 1.0,
-     "end": 2.0
-    },
-    {
-     "label": "3",
-     "start": 2.0,
-     "end": 3.0
-    },
-    {
-     "label": "4",
-     "start": 3.0,
-     "end": 4.0
-    },
-    {
-     "label": "5",
-     "start": 4.0,
-     "end": 5.0
-    },
-    {
-     "label": "6",
-     "start": 5.0,
-     "end": 6.0
-    },
-    {
-     "label": "7",
-     "start": 6.0,
-     "end": 7.0
-    },
-    {
-     "label": "8",
-     "start": 7.0,
-     "end": 8.0
-    },
-    {
-     "label": "9",
-     "start": 8.0,
-     "end": 9.0
-    },
-    {
      "label": "10",
-     "start": 9.0,
-     "end": 10.0
+     "start": 0,
+     "end": 1
     },
     {
      "label": "11",
-     "start": 10.0,
-     "end": 11.0
+     "start": 1,
+     "end": 2
     },
     {
      "label": "12",
-     "start": 11.0,
-     "end": 12.0
+     "start": 2,
+     "end": 3
     },
     {
      "label": "13",
-     "start": 12.0,
-     "end": 13.0
+     "start": 3,
+     "end": 4
     },
     {
      "label": "14",
-     "start": 13.0,
-     "end": 14.0
+     "start": 4,
+     "end": 5
+    },
+    {
+     "label": "15",
+     "start": 5,
+     "end": 6
+    },
+    {
+     "label": "16",
+     "start": 6,
+     "end": 7
+    },
+    {
+     "label": "17",
+     "start": 7,
+     "end": 8
+    },
+    {
+     "label": "18",
+     "start": 8,
+     "end": 9
+    },
+    {
+     "label": "19",
+     "start": 9,
+     "end": 10
+    },
+    {
+     "label": "20",
+     "start": 10,
+     "end": 11
+    },
+    {
+     "label": "21",
+     "start": 11,
+     "end": 12
+    },
+    {
+     "label": "22",
+     "start": 12,
+     "end": 13
+    },
+    {
+     "label": "23",
+     "start": 13,
+     "end": 14
+    },
+    {
+     "label": "24",
+     "start": 14,
+     "end": 15
+    },
+    {
+     "label": "25",
+     "start": 15,
+     "end": 16
     }
    ],
    "unita": "settimane"
   },
   "duration": {
-   "text": "200 giorni (circa 7 mesi)",
-   "status": "da documenti",
-   "hint": null,
+   "text": "3 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 14 mesi (2), 8 mesi (2), 200 giorni (circa 7 mesi) (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/553927",
-    "page": 27,
-    "document": "Integrazioni del 25/10/2021 - A7OXWD6_ConvenzioneComuneAvetrana_R39a",
-    "excerpt": "oltre 200 giorni dal completamento dei lavori di realizzazione del Parco"
+    "url": "https://va.mite.gov.it/File/Documento/397574",
+    "page": 21,
+    "document": "Computo metrico estimativo del progetto definitivo",
+    "excerpt": "la “eco-compatibilità” e l’idoneità all’utilizzo del materiale nello stesso luogo di impiego. A lavoro ultimato sarà consegnato al Direttore Lavori certificazione dei materiali utilizzati e delle miscele impiegate. La mi"
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "12/2021",
+    "iso": "2021-12",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/397551",
+     "page": 4,
+     "document": "Relazione specialistica Opere Elettriche",
+     "excerpt": "Nome del progetto di impianto eolico: Avetrana Entrata in esercizio (previsione): dicembre 2021"
+    }
+   }
+  ],
   "document": null,
   "note": null,
   "altri": [],
@@ -471,9 +819,9 @@
  },
  "documentazione": {
   "documenti": 211,
-  "pagine": 2298,
-  "completa": false,
-  "da_leggere": 91
+  "pagine": 5214,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -504,8 +852,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "545 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1133 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
