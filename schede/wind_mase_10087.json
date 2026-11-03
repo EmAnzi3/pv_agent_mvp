@@ -5,7 +5,7 @@
  "title": "Progetto di impianto eolico denominato \"Truncu Reale\" dalla potenza di 64 MW, con sistema di accumulo da 36 MW e opere di connessione alla RTN, da realizzarsi nel Comune di Sassari.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10087",
  "source": "mase",
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "9",
    "status": "da verificare",
-   "sub": "7,11 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore più ricorrente negli elaborati; altri valori: 6 (13), 3 (8), 2 (7)",
+   "sub": "7,11 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore più ricorrente negli elaborati; altri valori: 6 (31), 3 (25), 5 (21)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/893305",
     "page": 3,
@@ -49,7 +49,7 @@
    "label": "Accumulo",
    "value": "36 MW / 201 MWh",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 120 MW (1), 143,87 MW (1), 70 MW (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 35 MW (2), 120 MW (1), 143,87 MW (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/893305",
     "page": 3,
@@ -80,7 +80,7 @@
   "coordinate": {
    "lat": 40.76417,
    "lon": 8.44997,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (4 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (7 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/893390",
     "page": 47,
@@ -110,7 +110,7 @@
     {
      "type": "PEC",
      "value": "fimenergia@pec.it",
-     "occurrences": 1,
+     "occurrences": 4,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/893309",
       "page": 6,
@@ -139,7 +139,7 @@
     {
      "type": "E-mail",
      "value": "cf@fadsystem.net",
-     "occurrences": 48,
+     "occurrences": 77,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/893305",
       "page": 1,
@@ -163,12 +163,36 @@
     {
      "type": "E-mail",
      "value": "cosima.atzori@gaiaconsulting.eu",
-     "occurrences": 48,
+     "occurrences": 77,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/893305",
       "page": 1,
       "document": "Avviso al pubblico del 31/08/2023",
       "excerpt": "CONSULENTI Via Bologna, 30 09033 Decimomannu (CA) - +39 070 7346008 - cosima.atzori@gaiaconsulting.eu"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "funzione.psa@pec.enav.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/930038",
+      "page": 10,
+      "document": "Controdeduzioni alle osservazioni DELL'ASSESSORATO DELLA DIFESA DELL'AMBIENTE DELLA REGIONE SARDEGNA \"m_amte. MASE.REGISTRO UFFICIALE.INGRESSO.0156401.02-10-2023",
+      "excerpt": "ENAV S.p.A. Progettazione Spazi Aerei funzione.psa@pec.enav.it"
      }
     }
    ],
@@ -245,13 +269,50 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Sogeaal S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sogeaal@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/930038",
+      "page": 10,
+      "document": "Controdeduzioni alle osservazioni DELL'ASSESSORATO DELLA DIFESA DELL'AMBIENTE DELLA REGIONE SARDEGNA \"m_amte. MASE.REGISTRO UFFICIALE.INGRESSO.0156401.02-10-2023",
+      "excerpt": "SOGEAAL S.p.A. sogeaal@legalmail.it"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
+  "righe": [
+   {
+    "voce": "Fine lavori",
+    "livello": "documentata",
+    "valore": "08/03/2023",
+    "dettaglio": "natura non determinabile",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/909312",
+     "page": 2,
+     "document": "Osservazioni della Regione Autonoma della Sardegna assessorato della difesa dell'ambiente in data 02/10/2023",
+     "excerpt": "Si premette che nella medesima area di intervento è stato di recente realizzato un impianto proposto dalla Società Renergy (comunicazione di fine lavori trasmessa a questa Direzione Generale in data 08.03.2023, prot. D.G"
+    }
+   }
+  ],
   "durata_cantiere": "20 mesi",
   "autorizzazione": null,
   "note": [
@@ -280,7 +341,21 @@
     "excerpt": "La fase di costruzione dell’impianto impiegherà un totale di circa 120 addetti in un periodo, come da cronoprogramma, di circa 20 mesi. Questo comporterà un coordinamento di forza lavoro composta da maestranze, ingegneri"
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Fine lavori",
+    "date": "08/03/2023",
+    "iso": "2023-03-08",
+    "nature": "natura non determinabile",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/909312",
+     "page": 2,
+     "document": "Osservazioni della Regione Autonoma della Sardegna assessorato della difesa dell'ambiente in data 02/10/2023",
+     "excerpt": "Si premette che nella medesima area di intervento è stato di recente realizzato un impianto proposto dalla Società Renergy (comunicazione di fine lavori trasmessa a questa Direzione Generale in data 08.03.2023, prot. D.G"
+    }
+   }
+  ],
   "document": {
    "document": "CRONOPROGRAMMA DEGLI INTERVENTI",
    "url": "https://va.mite.gov.it/File/Documento/893317"
@@ -297,9 +372,9 @@
  },
  "documentazione": {
   "documenti": 156,
-  "pagine": 4309,
-  "completa": false,
-  "da_leggere": 36
+  "pagine": 5477,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -335,7 +410,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "2367 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "2637 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
