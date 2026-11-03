@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto solare agrivoltaico connesso alla RTN della potenza di picco pari a 27,65 MW e delle relative opere di connessione alla RTN ricadenti nel comune di Buseto Palizzolo (TP) e piano agronomic",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9020",
  "source": "mase",
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "46,1 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 35 ha (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 35 ha (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/717903",
     "page": 85,
@@ -55,6 +55,19 @@
     "page": 10,
     "document": "integrazioni del 25/10/2023 - RELAZIONE PAESAGGISTICA rev.0.1",
     "excerpt": "tracker ad inseguimento monoassiale, suddivisi in stringhe aventi ognuna 26 moduli in configurazione bifilare 2x13. L’area effettivamente occupata dai moduli è di 12,35 ettari."
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "99 MW",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1372817",
+    "page": 18,
+    "document": "Allegato al Decreto Direttoriale - Parere CTVA del del 05/03/2026",
+    "excerpt": "\"Buseto 99\", integrato da un sistema di accumulo da 9,4 MWp, della potenza complessiva di circa 99 MWp, e delle V-Ridium Solar Sicilia 5 S.r.l."
    }
   },
   {
@@ -78,9 +91,9 @@
    "Buseto Palizzolo"
   ],
   "coordinate": {
-   "lat": 38.01605,
-   "lon": 12.68742,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (28 riferimenti concordi)",
+   "lat": 38.01532,
+   "lon": 12.68813,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (35 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1372817",
     "page": 24,
@@ -88,7 +101,7 @@
     "excerpt": "Punto 2 - Coordinate Lat 37.998678° Long 12.691364°, in catasto al Foglio 29 del Comune di Buseto Palizzolo. Tale interferenza non rappresenta un vero attraversamento, in quanto il cavidotto"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=38.01605,12.68742",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=38.01532,12.68813",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -109,50 +122,19 @@
    "contacts": [
     {
      "type": "PEC",
-     "value": "ineelios-mentasrl@legalmail.it",
-     "occurrences": 1,
+     "value": "ineleios-mentasrl@legalmail.it",
+     "occurrences": 4,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/936336",
+      "url": "https://va.mite.gov.it/File/Documento/717846",
       "page": 3,
-      "document": "integrazioni del 25/10/2023 - RELAZIONE DESCRITTIVA ED ILLUSTRATIVA rev.0.1",
-      "excerpt": "Rappresentante dell’impresa: KIOS Sasha, CHIERICONI Sergio, BRAGHIERI Roberto Walter PEC: ineelios-mentasrl@legalmail.it"
+      "document": "Relazione descrittiva ed illustrativa",
+      "excerpt": "Rappresentante dell’impresa: KIOS Sasha, CHIERICONI Sergio, BRAGHIERI Roberto Walter PEC: ineleios-mentasrl@legalmail.it"
      }
     }
    ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9020"
-   }
-  },
-  {
-   "name": "2 A Sinergy S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": "03384670794",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Piazza Verdi 8 00198 Roma Rm",
-   "contacts": [
-    {
-     "type": "Telefono",
-     "value": "0968201203",
-     "occurrences": 72,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/717903",
-      "page": 1,
-      "document": "Studio di impatto ambientale",
-      "excerpt": "00198 Roma Tel. 0968 201203"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/936328",
-    "page": 1,
-    "document": "integrazioni del 25/10/2023 - RELAZIONE FOTOGRAFICA E FOTOINSERIMENTO rev.0.1",
-    "excerpt": "PROGETTAZIONE 2A SINERGY S.r.l. S.B."
    }
   },
   {
@@ -175,7 +157,62 @@
    }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "2 A Sinergy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03384670794",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Verdi 8 00198 Roma Rm",
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0968201203",
+     "occurrences": 85,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/717903",
+      "page": 1,
+      "document": "Studio di impatto ambientale",
+      "excerpt": "00198 Roma Tel. 0968 201203"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Parco Eolico Buseto S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03680150277",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Agrigento 92 91012 Buseto Palizzolo Tp",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@elettrostudio.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/741782",
+      "page": 1,
+      "document": "Osservazioni della Società Parco Eolico Buseto S.p.A. in data 09/12/2022",
+      "excerpt": "Parco Eolico Buseto Spa via Reggio Calabria 3 Casa Santa — Partita iva e codice fiscale T +39 041 534 9997 Società unipersonale diretta e 91016 Erice (TP) 03680150277 info@elettrostudio.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  }
+ ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
@@ -497,9 +534,9 @@
  },
  "documentazione": {
   "documenti": 164,
-  "pagine": 2080,
-  "completa": false,
-  "da_leggere": 44
+  "pagine": 2554,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -535,7 +572,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "17 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "40 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
