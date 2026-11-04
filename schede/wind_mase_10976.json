@@ -1,0 +1,499 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10976",
+ "title": "Progetto di un impianto eolico composto da 8 aerogeneratori di potenza 6 MW per una potenza di 48 MW e relative opere di connessione alla RTN nei comuni di Vallata (AV) e Bisaccia (AV), con smantellamento di 24 aerogeneratori di potenza pari a 48 MW",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10976",
+ "source": "mase",
+ "updated": "2026-11-04",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "48 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10976",
+    "excerpt": "48 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "24",
+   "status": "da verificare",
+   "sub": "2,00 MW ciascuno · altezza mozzo 98 m · diametro rotore 155 m · Valore più ricorrente negli elaborati; altri valori: 8 (239), 1 (14), 10 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1443449",
+    "page": 1,
+    "document": "Studio preliminare ambientale",
+    "excerpt": "Vallata (AV) e relative opere di connessione nei Comuni di Vallata e Bisaccia (AV) con smantellamento di n.24 aerogeneratori di potenza in esercizio pari a 48MW Approvazione"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1097008",
+    "page": 8,
+    "document": "Preventivo per la connessione",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "AV",
+  "comuni": [
+   "Vallata",
+   "Bisaccia"
+  ],
+  "coordinate": {
+   "lat": 41.01283,
+   "lon": 15.2975,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (308 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1443448",
+    "page": 6,
+    "document": "Relazione illustrativa di Verifica di ottemperanza",
+    "excerpt": "R96 40° 59′ 42.12″ N 15° 17′ 50.80″ E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.01283,15.29750",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Edison Rinnovabili S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rinnovabili@pec.edison.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1146692",
+      "page": 6,
+      "document": "Arrivo Richiesta Integrazioni da parte della COMMISSIONE TECNICA DI VERIFICA DELL'IMPATTO AMBIENTALE - VIA",
+      "excerpt": "Alla Società Edison Rinnovabili S.p.A. rinnovabili@pec.edison.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10976"
+   }
+  },
+  {
+   "name": "Ing. Massimo Lo Russo",
+   "kind": "persona",
+   "roles": [
+    "Progettista",
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1443449",
+    "page": 1,
+    "document": "Studio preliminare ambientale",
+    "excerpt": "Progettista: Ing. Massimo Lo Russo"
+   }
+  },
+  {
+   "name": "Dott. Antonio Petriccione",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1097016",
+    "page": 29,
+    "document": "Relazione geologica",
+    "excerpt": "Il Geologo Dott. Antonio Petriccione"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Geko S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gekospa@pec.gekospa.it",
+     "occurrences": 135,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443449",
+      "page": 1,
+      "document": "Studio preliminare ambientale",
+      "excerpt": "Tel. 06.88803910 | Fax 06.45654740 E-Mail: gekospa@pec.gekospa.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0688803910",
+     "occurrences": 135,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443449",
+      "page": 1,
+      "document": "Studio preliminare ambientale",
+      "excerpt": "Via Reno, 5 - 00198 Roma (RM) Tel. 06.88803910 | Fax 06.45654740"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Progetto Energia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@progettoenergia.biz",
+     "occurrences": 133,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443449",
+      "page": 1,
+      "document": "Studio preliminare ambientale",
+      "excerpt": "Tel. 0825.831313 E-Mail: info@progettoenergia.biz"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0825831313",
+     "occurrences": 133,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443449",
+      "page": 1,
+      "document": "Studio preliminare ambientale",
+      "excerpt": "Via Cardito, 202 - 83031 Ariano Irpino (AV) Tel. 0825.831313"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "11 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Realizzazione area di cantiere e recinzione provissionale",
+    "start": 0.0,
+    "end": 1.56,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle piazzole per la dismissione degli aereogeneratori",
+    "start": 0.79,
+    "end": 5.31,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Dismissione aereogeneratori esistenti interferenti (WTG V1 - WTG V8 - WTG V16)",
+    "start": 1.79,
+    "end": 2.81,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Dismissione cavidotti MT esistenti",
+    "start": 2.54,
+    "end": 6.56,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Dismissione piazzole e viabilità parco esistente",
+    "start": 3.29,
+    "end": 7.55,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione finale del sito",
+    "start": 5.29,
+    "end": 9.3,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Picchettamento delle aree",
+    "start": 0.0,
+    "end": 1.56,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione della nuova viabilità",
+    "start": 0.54,
+    "end": 2.56,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle piazzole di costruzioni per gli aereogeneratori non interfer",
+    "start": 1.79,
+    "end": 4.31,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Realizzazione fondazioni c.a. aereogeneratori non interferenti (WTG Val01 - WTG ",
+    "start": 2.29,
+    "end": 3.56,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle piazzole di costruzioni per gli aereogeneratori interferenti",
+    "start": 2.54,
+    "end": 4.56,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni c.a. aereogeneratori interferenti (WTG Val03 - WTG Val0",
+    "start": 3.04,
+    "end": 3.81,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Trasporto e montaggio aereogeneratori",
+    "start": 3.54,
+    "end": 6.06,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti MT",
+    "start": 4.54,
+    "end": 8.55,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Impianto di utenza per la connessione",
+    "start": 6.04,
+    "end": 7.8,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Stazione elettrica di utenza (ammodernamento)",
+    "start": 6.53,
+    "end": 8.3,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Regolazione e Collaudo finale",
+    "start": 7.53,
+    "end": 9.8,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione finale del sito",
+    "start": 8.03,
+    "end": 11.3,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 11.3,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1097031",
+   "page": 2,
+   "document": "Cronoprogramma lavori",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1097008",
+    "page": 8,
+    "document": "Preventivo per la connessione",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma lavori",
+   "url": "https://va.mite.gov.it/File/Documento/1097031"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 142,
+  "pagine": 2674,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "EDISON Rinnovabili S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 48.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "VALLATA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AV",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "300 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
