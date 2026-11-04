@@ -1,0 +1,901 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9435",
+ "title": "Progetto per la realizzazione di un impianto eolico di potenza nominale 48 MW da realizzarsi in comune di Manciano (GR), loc. Montauto",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9435",
+ "source": "mase",
+ "updated": "2026-11-04",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "48 MW",
+   "sub": "Suddivisa in 6 lotti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9435",
+    "excerpt": "48 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 1 (19), 10 (9), 2 (8)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/790164",
+    "page": 1,
+    "document": "Avviso al pubblico del 07/03/2023",
+    "excerpt": "Il progetto riguarda la realizzazione di un nuovo Parco Eolico della potenza complessiva di 48 MW, che prevede l’installazione di n. 8 aerogeneratori da 6,0 MW nel territorio comunale di Manciano (GR), in Località “Monta"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/790147",
+    "page": 12,
+    "document": "Valutazione degli impatti cumulativi",
+    "excerpt": "Progetto per la realizzazione di un nuovo impianto agrofotovoltaico,"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "4,5 MW / 20 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 15 MW (2), 10 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/828869",
+    "page": 76,
+    "document": "Allegati alla richiesta integrazioni del 04/04/2023 Regione Toscana",
+    "excerpt": "RTN, integrato da un sistema di accumulo avente una potenza nominale complessiva di 4,5 MW, da realizzarsi nel Comune di Montalto di Castro (VT), in località Vaccareccia. Progetto PNIEC, attivata dalla Società Ergon20 sr"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 4 mesi (1), 9 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/790135",
+    "page": 76,
+    "document": "Studio previsionale di impatto acustico",
+    "excerpt": "Nella figura successiva si riporta il cronogramma di cantiere, così come desunto dagli elaborati progettuali. Per quanto sopra descritto si ipotizza siano necessari circa 18 mesi di lavoro."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Toscana",
+  "provincia": "GR",
+  "comuni": [
+   "Manciano"
+  ],
+  "coordinate": {
+   "lat": 42.44053,
+   "lon": 11.58904,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (90 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/790135",
+    "page": 35,
+    "document": "Studio previsionale di impatto acustico",
+    "excerpt": "Coordinate 42°26'48.9\"N 11°34'28.1\"E Postazione di misura"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.44053,11.58904",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Wind Italy 1 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "11515930961",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Fabio Filzi 7 20124 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "winditaly1@legalmail.it",
+     "occurrences": 23,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/790164",
+      "page": 1,
+      "document": "Avviso al pubblico del 07/03/2023",
+      "excerpt": "La società WIND ITALY 1 S.r.l. con sede legale in Via dell’Annunciata, 23/4 – 20121 Milano (MI) – PEC winditaly1@legalmail.it comunica di aver presentato in data 28/12/2022 al Ministero della"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0554384389",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/908784",
+      "page": 1,
+      "document": "Osservazioni della Regione Toscana -Giunta Regionale - Direzione Ambiente ed Energia in data 27/09/2023",
+      "excerpt": "Piazza Unità italiana 1, 50123 Firenze Tel. 055 4384389 Fax 055 4384390"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/790135",
+    "page": 6,
+    "document": "Studio previsionale di impatto acustico",
+    "excerpt": "La Società proponente è la Wind Italy 1 S.R.L.., con sede legale in Via dell’Annunziata 23/4, 20121 Milano."
+   }
+  },
+  {
+   "name": "Wind Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9435"
+   }
+  },
+  {
+   "name": "Ing. Laura Maria Conti",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/890389",
+    "page": 1,
+    "document": "Integrazioni del 04/08/2023 - Relazione Interferenze",
+    "excerpt": "Progettista Ing. Laura Maria Conti – Ordine Ing. Prov. Pavia n. 1726"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Montana S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10414270156",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Angelo Carlo Fumagalli 6 20143 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energia-montana@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/790070",
+      "page": 1,
+      "document": "Richiesta verifica procedimenti tutela Art. 13.3",
+      "excerpt": "1 energia-montana@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "montana@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/790070",
+      "page": 1,
+      "document": "Richiesta verifica procedimenti tutela Art. 13.3",
+      "excerpt": "sussistenza procedimenti tutela ai sensi art. 13.3 DM Sviluppo Economico\" proveniente da \"energia- montana@pec.it\" ed indirizzato a \"sabap-si@pec.cultura.gov.it\" è stato consegnato nella casella di"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "fronteddu@montanambiente.com",
+     "occurrences": 175,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/790087",
+      "page": 30,
+      "document": "Studio degli effetti di shadow flickering",
+      "excerpt": "0254118173 Andrea Mastio / fronteddu@montanambiente.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0254118173",
+     "occurrences": 26,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981282",
+      "page": 1,
+      "document": "Integrazioni del 20/02/2024 - Aerogeneratore MA06 - Pianta, Profilo e Sezioni",
+      "excerpt": "Montana S.p.A Tel. +39.02.54118173"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Amici Della Terra APS",
+   "kind": "società",
+   "roles": [],
+   "vat": "02141761003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ippolito Nievo 62 Sc C I 00153 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amicidellaterra@pec.it",
+     "occurrences": 23,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/877589",
+      "page": 1,
+      "document": "Parere dell'ASSOCIAZIONE AMICI DELLA TERRA ONLUS in data 27/07/2023",
+      "excerpt": "amicidellaterra@pec.it — segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@amicidellaterra.it",
+     "occurrences": 23,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/877589",
+      "page": 1,
+      "document": "Parere dell'ASSOCIAZIONE AMICI DELLA TERRA ONLUS in data 27/07/2023",
+      "excerpt": "amicidellaterra@pec.it — segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "tommasi@amicidellaterra.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/898838",
+      "page": 1,
+      "document": "Osservazioni del Comune di Manciano in data 06/09/2023",
+      "excerpt": "uc-collinedelfiora@postacert.toscana.it. Pc tommasi@amicidellaterra.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/790090",
+      "page": 2,
+      "document": "Analisi dati anemometrici d'area e Valutazione della Produzione Eolica preliminare",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Beshielding S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10105760010",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Monviso 9 10090 Villarbasse To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "shielding@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/790108",
+      "page": 15,
+      "document": "Relazione campi elettromagnetici",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "busbar@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/790108",
+      "page": 15,
+      "document": "Relazione campi elettromagnetici",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Diegoli Giorgio",
+   "kind": "società",
+   "roles": [],
+   "vat": "01633000383",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Grengoli 5 S Matteo Decima 40017 San Giovanni In Persiceto Bo",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "diegoligiorgio@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897836",
+      "page": 1,
+      "document": "Osservazioni della Ditta Individuale Giorgio Diegoli in data 06/09/2023",
+      "excerpt": "Contatto Telefonico 3806577810 PEC: diegoligiorgio@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02152021008",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Salaria 716 00138 Roma Rm",
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0681661",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/908784",
+      "page": 6,
+      "document": "Osservazioni della Regione Toscana -Giunta Regionale - Direzione Ambiente ed Energia in data 27/09/2023",
+      "excerpt": "Via Salaria, 716 – 00138 Roma Tel. +39 06 81661 – Cap. Soc. € 541.744.385,00 I.V."
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Novello S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "novello.srl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/790072",
+      "page": 1,
+      "document": "Voltura STMG",
+      "excerpt": "30030 PIANIGA (VE) novello.srl@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0302056980",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/790090",
+      "page": 2,
+      "document": "Analisi dati anemometrici d'area e Valutazione della Produzione Eolica preliminare",
+      "excerpt": "- Via Matteotti, 311 – SCALA P – Int.10 – 25063 Gardone Val Trompia (BS) Tel. 030 2056980 – Fax 030 831100"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Roberto Tasselli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "r.tasselli@cb6toscanasud.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828869",
+      "page": 62,
+      "document": "Allegati alla richiesta integrazioni del 04/04/2023 Regione Toscana",
+      "excerpt": "sito www.cb6toscanasud.it, accedendo alla sezione “privacy”. Pratica 2023/064- AREA Demanio e Contratti Responsabile del Procedimento ai sensi della Legge 07/08/1990 n.241: Ing. Roberto Tasselli - Tel. 0564 435679 – e-ma"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0564435679",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828869",
+      "page": 62,
+      "document": "Allegati alla richiesta integrazioni del 04/04/2023 Regione Toscana",
+      "excerpt": "sito www.cb6toscanasud.it, accedendo alla sezione “privacy”. Pratica 2023/064- AREA Demanio e Contratti Responsabile del Procedimento ai sensi della Legge 07/08/1990 n.241: Ing. Roberto Tasselli - Tel. 0564 435679 – e-ma"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Maurizio Padovani",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "m.padovani@cb6toscansud.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828869",
+      "page": 62,
+      "document": "Allegati alla richiesta integrazioni del 04/04/2023 Regione Toscana",
+      "excerpt": "Pratica 2023/064- AREA Demanio e Contratti Responsabile del Procedimento ai sensi della Legge 07/08/1990 n.241: Ing. Roberto Tasselli - Tel. 0564 435679 – e-mail: r.tasselli@cb6toscanasud.it SEZIONE Autorizzazioni, Conce"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Riccardo Battigalli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "r.battigalli@cb6toscanasud.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828869",
+      "page": 62,
+      "document": "Allegati alla richiesta integrazioni del 04/04/2023 Regione Toscana",
+      "excerpt": "SEZIONE Autorizzazioni, Concessioni Referenti: Geom. Maurizio Padovani - Tel. 0564-435681 - e-mail: m.padovani@cb6toscansud.it - Geom. Riccardo Battigalli - Tel. 0564-435677 - e-mail: r.battigalli@cb6toscanasud.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "FC Renewables S.r.l.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fabriziocecilia@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828869",
+      "page": 33,
+      "document": "Allegati alla richiesta integrazioni del 04/04/2023 Regione Toscana",
+      "excerpt": "FC Renewables S.r.l.s. fabriziocecilia@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alla Società Iberdrola Renovables Italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "iberdrolarenovablesitalia@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/891219",
+      "page": 25,
+      "document": "Osservazioni del Comune di Montalto di Castro in data 29/08/2023",
+      "excerpt": "Alla Società Iberdrola Renovables Italia S.p.A. iberdrolarenovablesitalia@pec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "24 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "PROGETTAZIONE DEFINITIVA",
+    "start": 0.0,
+    "end": 2.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ITER AUTORIZZATIVO",
+    "start": 1.99,
+    "end": 6.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "rilievi, indagini in sito e prove di laboratorio",
+    "start": 5.99,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "progettazione esecutiva",
+    "start": 6.49,
+    "end": 8.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "cantierizzazione",
+    "start": 7.74,
+    "end": 8.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "adeguamenti strade esistenti",
+    "start": 7.99,
+    "end": 10.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "realizzazione piste e piazzole",
+    "start": 8.24,
+    "end": 13.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "realizzazione pali di fondazione",
+    "start": 10.74,
+    "end": 17.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "scavi e realizzazione plinti di fondazione",
+    "start": 11.99,
+    "end": 19.75,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "trasporto, preparazione e montaggio torri",
+    "start": 16.73,
+    "end": 22.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "realizzazione Stazione MT/AT Utente",
+    "start": 15.73,
+    "end": 22.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "realizzazione cavidotti",
+    "start": 12.24,
+    "end": 22.75,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "commissioning",
+    "start": 21.48,
+    "end": 23.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "sistemazione ambientale delle piazzole",
+    "start": 21.98,
+    "end": 23.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "collaudi",
+    "start": 22.73,
+    "end": 24.0,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 24.0,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/790141",
+   "page": 32,
+   "document": "Studio di impatto ambientale",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "mese 1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24",
+     "start": 23.0,
+     "end": 24.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 15 giorni (1), 4 mesi (1), 9 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/790135",
+    "page": 76,
+    "document": "Studio previsionale di impatto acustico",
+    "excerpt": "Nella figura successiva si riporta il cronogramma di cantiere, così come desunto dagli elaborati progettuali. Per quanto sopra descritto si ipotizza siano necessari circa 18 mesi di lavoro."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/790092"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/790092"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 196,
+  "pagine": 4796,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Wind Italia s.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 48.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MANCIANO",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "GR",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Toscana",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "402 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
