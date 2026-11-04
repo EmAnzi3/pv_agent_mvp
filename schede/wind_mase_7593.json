@@ -1,0 +1,180 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7593",
+ "title": "Progetto di impianto eolico autorizzato con n. 23AF.2016/D.00334 del 22.11.2016, da realizzarsi nel comuni di Atella (PZ) e Bella (PZ) in località \"Monte Caruso\" costituito da n. 15 aerogeneratori di potenza complessiva nominale pari a 51.75 MW.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7593",
+ "source": "mase",
+ "updated": "2026-11-04",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "51,75 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7593",
+    "excerpt": "51,75 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "15",
+   "status": "da documenti",
+   "sub": "3,45 MW ciascuno · altezza mozzo 82 m · diametro rotore 136 m · Valore prevalente negli elaborati; altri valori: 3 (3), 13 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/432086",
+    "page": 2,
+    "document": "4-Lista di controllo-GE.BEL01.PDV.3.1",
+    "excerpt": "PROPOSTA DI ADEGUAMENTO AL PROGETTO DI IMPIANTO EOLICO AUTORIZZATO CON DD. N. 23AF.2016/D.00334 DEL 22/11/2016 COSTITUITO DA 15 AEROGENERATORI DI POTENZA COMPLESSIVA NOMINALE AUTORIZZATA PARI A 51.75 MW. PROPONENTE SOCIE"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "PZ",
+  "comuni": [
+   "Atella",
+   "Bella"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Atella%2C+PZ%2C+Basilicata",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Ares S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": "02441940224",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Guglielmo Marconi 179 85100 Potenza Pz",
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7593"
+   }
+  },
+  {
+   "name": "Dott. Ing. Nicola Forte",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/432089",
+    "page": 1,
+    "document": "Analisi degli effetti della rottura degli organi rotanti",
+    "excerpt": "Progettista Dott. Ing. Nicola FORTE"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Al Legale Rappresentante della Ares S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ares2016@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/444425",
+      "page": 1,
+      "document": "Comunicazione esito valutazione",
+      "excerpt": "ares2016@pec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 21,
+  "pagine": 337,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Ares s.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 51.75,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ATELLA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PZ",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
