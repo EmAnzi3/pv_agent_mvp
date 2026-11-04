@@ -1,0 +1,573 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7848",
+ "title": "Progetto di un impianto eolico composto da 8 aerogeneratori della potenza nominale di 6 MW, e della potenza complessiva di 48 MW e delle relative opere di connessione da realizzarsi nei Comuni di Mazara del Vallo e Marsala, in località \"Borgo Chitarra\", e nei Comuni di Salemi, Castelvetrano, Santa Ninfea, e Partanna, in provincia di Trapani, comprensivo di un sistema di accumulo con batterie agli ioni di litio.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7848",
+ "source": "mase",
+ "updated": "2026-11-04",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "48 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7848",
+    "excerpt": "48 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 100 (4), 111 (2), 180 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488586",
+    "page": 1,
+    "document": "Avviso al Pubblico del 05/05/2021",
+    "excerpt": "Il progetto, comprensivo di tutte le opere, è localizzato in Sicilia nei Comuni di Mazara del Vallo (TP) e Marsala (TP) e prevede la realizzazione di un impianto Eolico composto da 8 aerogeneratori della potenza nominale"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "12,5 MW / 12,5 MWh",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 48 MW (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/919623",
+    "page": 2,
+    "document": "Decreto del Ministero dell'Ambiente di concerto con il MIC - Progetto di un impianto eolico composto da 8 aerogeneratori della potenza complessiva di 48 MW, comprensivo di un sistema di accumulo con b",
+    "excerpt": "trasformazione 30/220 kV in prossimità della costruenda stazione RTN di smistamento “Partanna 2” e un sistema BESS per una taglia complessiva pari a 12,5 MW e capacità di 12,5 MWh;"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "20 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 16 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/746143",
+    "page": 16,
+    "document": "Integrazioni del 09/01/2023 - Relazione Sintesi Non Tecnica",
+    "excerpt": "I lavori di realizzazione degli elettrodotti AT avranno inizio dopo che sarà ottenuto il Decreto Autorizzativo, e comunque a valle dell’av- vio dei lavori relativi alla nuova SE Partanna 3, prevedendo una durata compless"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "TP",
+  "comuni": [
+   "Mazara Del Vallo",
+   "Marsala"
+  ],
+  "coordinate": {
+   "lat": 37.71498,
+   "lon": 12.82565,
+   "tipo": "centro della tavola georeferenziata di progetto (21 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/746089",
+    "page": 1,
+    "document": "Integrazioni del 09/01/2023 - Planimetria catasale con DPA Fg.4 Castevetrano",
+    "excerpt": "Integrazioni del 09/01/2023 - Planimetria catasale con DPA Fg.4 Castevetrano"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.71498,12.82565",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Martellago - Venezia - Italy Tenproject S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tenproject.it",
+     "occurrences": 91,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488135",
+      "page": 1,
+      "document": "STUDIO DI IMPATTO AMBIENTALE - QUADRO DI RIFERIMENTO PROGRAMMATICO",
+      "excerpt": "t +39 0824 337144 - f +39 0824 49315 tenproject.it - info@tenproject.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/613869",
+    "page": 1,
+    "document": "Integrazioni del 01/04/2022 - IDONEITA' GEOLOGICA ED IDROGEOLOGICA",
+    "excerpt": "PROPONENTE Tenproject Srl -via De Gasperi 61"
+   }
+  },
+  {
+   "name": "Repower Renewable S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": "03647930274",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lavaredo 44/52 Mestre 30174 Venezia Ve",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "elettrostudioenergiaspa@cgn.legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488586",
+      "page": 1,
+      "document": "Avviso al Pubblico del 05/05/2021",
+      "excerpt": "Via Lavaredo, 44/52 – 30174 Venezia (VE) P. IVA 03647930274 – Pec: elettrostudioenergiaspa@cgn.legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7848"
+   }
+  },
+  {
+   "name": "Ing. Filippo Bittante",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/613869",
+    "page": 1,
+    "document": "Integrazioni del 01/04/2022 - IDONEITA' GEOLOGICA ED IDROGEOLOGICA",
+    "excerpt": "Progettista : Ing. Filippo Bittante"
+   }
+  },
+  {
+   "name": "Ing. Nicola Forte",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488135",
+    "page": 1,
+    "document": "STUDIO DI IMPATTO AMBIENTALE - QUADRO DI RIFERIMENTO PROGRAMMATICO",
+    "excerpt": "Progettista : Ing. Nicola Forte"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Sinergo S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@sinergospa.com",
+     "occurrences": 100,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613870",
+      "page": 1,
+      "document": "Integrazioni del 01/04/2022 - RELAZIONE SULLO STATO DELL'AVIFAUNA E DELLA CHIROTTEROFAUNA",
+      "excerpt": "tel 041.3642511 - fax 041.640481 sinergospa.com - info@sinergospa.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "filippo.bittante@sinergospa.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488112",
+      "page": 14,
+      "document": "Prime indicazioni sulla sicurezza",
+      "excerpt": "T. 041/3642511 F. 041/640481 filippo.bittante@sinergospa.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0413642511",
+     "occurrences": 30,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613870",
+      "page": 1,
+      "document": "Integrazioni del 01/04/2022 - RELAZIONE SULLO STATO DELL'AVIFAUNA E DELLA CHIROTTEROFAUNA",
+      "excerpt": "30030 - Maerne di Martellago - Venezia - Italy tel 041.3642511 - fax 041.640481"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Francesco Chiri",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "francesco.chiri@postacertificata.org",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/746040",
+      "page": 1,
+      "document": "Integrazioni del 09/01/2023 - Elenco ditte catastali",
+      "excerpt": "Studio Tecnico Ing. Francesco Chiri - Via Marco Tullio Cicerone n 23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 7481009 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@studiochiri.it",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/746040",
+      "page": 1,
+      "document": "Integrazioni del 09/01/2023 - Elenco ditte catastali",
+      "excerpt": "Studio Tecnico Ing. Francesco Chiri - Via Marco Tullio Cicerone n 23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 7481009 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0916195726",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/746040",
+      "page": 1,
+      "document": "Integrazioni del 09/01/2023 - Elenco ditte catastali",
+      "excerpt": "Studio Tecnico Ing. Francesco Chiri - Via Marco Tullio Cicerone n 23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 7481009 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ingegneria Progetti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "priolo@ingegneriaprogetti.com",
+     "occurrences": 34,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613870",
+      "page": 1,
+      "document": "Integrazioni del 01/04/2022 - RELAZIONE SULLO STATO DELL'AVIFAUNA E DELLA CHIROTTEROFAUNA",
+      "excerpt": "t +39 091 640 5229 priolo@ingegneriaprogetti.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "pupella@ingegneriaprogetti.com",
+     "occurrences": 34,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613870",
+      "page": 1,
+      "document": "Integrazioni del 01/04/2022 - RELAZIONE SULLO STATO DELL'AVIFAUNA E DELLA CHIROTTEROFAUNA",
+      "excerpt": "priolo@ingegneriaprogetti.com pupella@ingegneriaprogetti.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Laap Architects S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@laap.it",
+     "occurrences": 58,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/746147",
+      "page": 1,
+      "document": "Integrazioni del 09/01/2023 - Carte Mitigazioni e Compensazioni Ambientali - SE RTN Partanna 2 e Opere di Connessione",
+      "excerpt": "t 091.7834427 - fax 091.7834427 laap.it - info@laap.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Edison Rinnovabili S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "ignazio.sciortino@gmail.com",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/746041",
+      "page": 1,
+      "document": "Integrazioni del 09/01/2023 - Relazione geologica",
+      "excerpt": "Studio d'Ingegneria Sciortino - Corso Pisani 22 - 90129 Palermo Cell: +39 329 6276508 - e-mail: ignazio.sciortino@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3296276508",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/746041",
+      "page": 1,
+      "document": "Integrazioni del 09/01/2023 - Relazione geologica",
+      "excerpt": "Studio d'Ingegneria Sciortino - Corso Pisani 22 - 90129 Palermo Cell: +39 329 6276508 - e-mail: ignazio.sciortino@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "20 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/488113",
+   "page": 1,
+   "document": "Cronoprogramma dei lavori",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "20 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 16 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/746143",
+    "page": 16,
+    "document": "Integrazioni del 09/01/2023 - Relazione Sintesi Non Tecnica",
+    "excerpt": "I lavori di realizzazione degli elettrodotti AT avranno inizio dopo che sarà ottenuto il Decreto Autorizzativo, e comunque a valle dell’av- vio dei lavori relativi alla nuova SE Partanna 3, prevedendo una durata compless"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 01/04/2022 - PMA E CRONOPROGRAMMA",
+   "url": "https://va.mite.gov.it/File/Documento/613872"
+  },
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "altri": [
+   {
+    "document": "Integrazioni del 01/04/2022 - PMA E CRONOPROGRAMMA",
+    "url": "https://va.mite.gov.it/File/Documento/613872"
+   }
+  ],
+  "durate_fasi": [
+   {
+    "name": "CAMPO EOLICO",
+    "duration": "435 giorni",
+    "months": 14.31
+   },
+   {
+    "name": "Installazione area di cantiere",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Cavidotto di collegamento interno",
+    "duration": "90 giorni",
+    "months": 2.96
+   },
+   {
+    "name": "Esecuzione scavi a sezione obbligata",
+    "duration": "60 giorni",
+    "months": 1.97
+   },
+   {
+    "name": "Posa cavidotto MT",
+    "duration": "70 giorni",
+    "months": 2.3
+   },
+   {
+    "name": "Rinterro e ripristini viabilità esistente",
+    "duration": "45 giorni",
+    "months": 1.48
+   },
+   {
+    "name": "Realizzazione nuova viabilità",
+    "duration": "30 giorni",
+    "months": 0.99
+   },
+   {
+    "name": "Aerogeneratore A1",
+    "duration": "130 giorni",
+    "months": 4.28
+   },
+   {
+    "name": "Esecuzione scavi di fondazione",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Realizzazione pali di fondazione",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "Armatura e getto plinto di fondazione",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Trasporto e stoccaggio componenti torre eolica",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Esecuzione lavori di completamento piazzola e viabilità definitiva",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "Collegamenti elettrici",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Smobilizzo cantiere e ripristino terreni come esistente",
+    "duration": "5 giorni",
+    "months": 0.16
+   },
+   {
+    "name": "Aerogeneratore A2",
+    "duration": "130 giorni",
+    "months": 4.28
+   },
+   {
+    "name": "Aerogeneratore A3",
+    "duration": "130 giorni",
+    "months": 4.28
+   },
+   {
+    "name": "Aerogeneratore A4",
+    "duration": "130 giorni",
+    "months": 4.28
+   },
+   {
+    "name": "Aerogeneratore A5",
+    "duration": "130 giorni",
+    "months": 4.28
+   },
+   {
+    "name": "Aerogeneratore A6",
+    "duration": "130 giorni",
+    "months": 4.28
+   }
+  ],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 326,
+  "pagine": 2815,
+  "completa": false,
+  "da_leggere": 26
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Repower Renewable S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 48.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SALEMI, CASTELVETRANO, SANTA NINFEA, PARTANNA, COMPRENSIVO DI UN SISTEMA DI ACCUMULO CON BATTERIE AGLI IONI DI LITIO",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TP",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "207 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
