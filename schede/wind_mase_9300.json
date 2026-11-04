@@ -1,0 +1,487 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9300",
+ "title": "Progetto di un impianto eolico denominato \"Alba Wind\", costituito da 8 aerogeneratori, ciascuno di potenza nominale pari a 7,2 MW, per una potenza complessiva di 57,6 MW, da realizzarsi nel comune di Piana degli Albanesi (PA) e Monreale (PA).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9300",
+ "source": "mase",
+ "updated": "2026-11-04",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "57,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9300",
+    "excerpt": "57,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 4 (8), 16 (7), 5 (7)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1266513",
+    "page": 1,
+    "document": "Confronto nuovo layout con progetto",
+    "excerpt": "Piazzola temporanea Parco eolico con 8 aerogeneratori Nuovo layout con 8 aerogeneratori"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1266523",
+    "page": 3,
+    "document": "Relazione comparativa di modifica non sostanziale",
+    "excerpt": "impianto agrivoltaico in corso di autorizzazione. Le posizioni degli aerogeneratori 3 e 6, invece,"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1266525",
+    "page": 6,
+    "document": "Lista di controllo per valutazione preliminare impianti eolici",
+    "excerpt": "- smobilizzo di ogni attività di cantiere. Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi Descrivere la fase di esercizio (aree definitivamente impegnate; risorse utilizzate,"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "PA",
+  "comuni": [
+   "Piana Degli Albanesi",
+   "Monreale"
+  ],
+  "coordinate": {
+   "lat": 37.85333,
+   "lon": 13.35917,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (2 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/791448",
+    "page": 22,
+    "document": "Relazione floro-faunistica",
+    "excerpt": "La Zona Speciale di Conservazione si estende per 6236 ha, nei comuni di Prizzi, Corleone, Godrano e Monreale, con coordinate geografiche del suo punto centrale LAT 37,853333 LONG 13,359167. Il Sito interessa un biotopo d"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.85333,13.35917",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Alba Wind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0302056980",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791471",
+      "page": 4,
+      "document": "Studio anemologico e di producibilità",
+      "excerpt": "- Via Matteotti, 311 – SCALA P – Int.10 – 25063 Gardone Val Trompia (BS) Tel. 030 2056980 – Fax 030 831100"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9300"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 21,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791471",
+      "page": 4,
+      "document": "Studio anemologico e di producibilità",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Studio Tecnico BFP S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "m.matarrese@bfpgroup.net",
+     "occurrences": 60,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791444",
+      "page": 13,
+      "document": "Studio evoluzione ombra (shadow flickering)",
+      "excerpt": "+39 080 5046361 Matarrese Miriam / m.matarrese@bfpgroup.net"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasrl.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791447",
+      "page": 107,
+      "document": "Valutazione di impatto acustico previsionale di cantiere",
+      "excerpt": "www.sonorasrl.com - sonora@sonorasrl.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791447",
+      "page": 107,
+      "document": "Valutazione di impatto acustico previsionale di cantiere",
+      "excerpt": "Via dei Bersaglieri, 9 - Caserta Tel 0823 351196 - Fax 0823 351196"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "RILIEVI TOPOGRAFICI E PROVE DI LABORATORIO",
+    "start": 0.02,
+    "end": 0.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "PROGETTAZIONE ESECUTIVA",
+    "start": 0.5,
+    "end": 1.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "CANTIERIZZAZIONE",
+    "start": 1.5,
+    "end": 1.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE E PIAZZOLE",
+    "start": 2.0,
+    "end": 5.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ADEGUAMENTO STRADE ESISTENTI",
+    "start": 2.0,
+    "end": 5.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "SCAVI FONDAZIONI PLINTI",
+    "start": 2.0,
+    "end": 5.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE PLINTI DI FONDAZIONE",
+    "start": 4.5,
+    "end": 10.97,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTI",
+    "start": 3.49,
+    "end": 8.97,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ISTALLAZIONE AEROGENERATORI",
+    "start": 9.98,
+    "end": 14.95,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "OPERE ELETTRICHE E CONNESSIONE ALLA RETE",
+    "start": 12.47,
+    "end": 14.95,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "COMMISSIONING WTG",
+    "start": 13.97,
+    "end": 16.45,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "TAKE OVER WTG",
+    "start": 14.47,
+    "end": 16.45,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "MESSA IN ESERCIZIO DELL'IMPIANTO",
+    "start": 16.47,
+    "end": 16.95,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "RIPRISTINI",
+    "start": 16.47,
+    "end": 17.95,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 17.95,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/791467",
+   "page": 6,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1266525",
+    "page": 6,
+    "document": "Lista di controllo per valutazione preliminare impianti eolici",
+    "excerpt": "- smobilizzo di ogni attività di cantiere. Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi Descrivere la fase di esercizio (aree definitivamente impegnate; risorse utilizzate,"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/791467"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 154,
+  "pagine": 2562,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "ALBA WIND S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 57.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "PIANA DEGLI ALBANESI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "776 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
