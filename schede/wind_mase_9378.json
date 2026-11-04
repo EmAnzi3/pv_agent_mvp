@@ -5,14 +5,14 @@
  "title": "Parco Eolico \"Energia Caldarola\" costituito da 12 aerogeneratori della potenza unitaria di 5,0 MW per una potenza complessiva dell'impianto pari a 60,0 MW integrato con un sistema di accumulo della capacità di 20,0 MW e delle relative opere di connessione alla RTN sito nei Comuni di Caldarola e Camerino (MC). Codice pratica MYTERNA n. 202102245.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9378",
  "source": "mase",
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "6 MW",
-   "sub": "Valore ricorrente negli elaborati (21 volte); il titolo riporta 60 MW (probabile refuso).",
+   "sub": "Valore ricorrente negli elaborati (27 volte); il titolo riporta 60 MW (probabile refuso).",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1178704",
     "page": 4,
@@ -25,7 +25,7 @@
    "label": "Aerogeneratori",
    "value": "12",
    "status": "da verificare",
-   "sub": "0,50 MW ciascuno · altezza mozzo 80 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 7 (80), 4 (39), 1 (31)",
+   "sub": "0,50 MW ciascuno · altezza mozzo 80 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 7 (125), 4 (65), 1 (55)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/793776",
     "page": 1,
@@ -50,7 +50,7 @@
    "label": "Accumulo",
    "value": "20 MW / 80 MWh",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 1,429 MW (19), 60 MW (1), 80 MW (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 1,429 MW (27), 60 MW (2), 80 MW (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/793776",
     "page": 1,
@@ -63,7 +63,7 @@
    "label": "Durata cantiere",
    "value": "14 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (4), 8 mesi (1)",
+   "sub": "Inizio lavori 01/01/2025 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 18 mesi (7), 8 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/964991",
     "page": 46,
@@ -80,9 +80,9 @@
    "Camerino"
   ],
   "coordinate": {
-   "lat": 43.13569,
-   "lon": 13.2214,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (194 riferimenti concordi)",
+   "lat": 43.1359,
+   "lon": 13.22097,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (212 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/793635",
     "page": 134,
@@ -90,7 +90,7 @@
     "excerpt": "355596"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=43.13569,13.22140",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=43.13590,13.22097",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -179,7 +179,7 @@
     {
      "type": "E-mail",
      "value": "fabiolunerti@gmail.com",
-     "occurrences": 34,
+     "occurrences": 68,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/965108",
       "page": 57,
@@ -190,7 +190,7 @@
     {
      "type": "Telefono",
      "value": "3336955128",
-     "occurrences": 32,
+     "occurrences": 64,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/965108",
       "page": 58,
@@ -214,7 +214,7 @@
     {
      "type": "E-mail",
      "value": "gubinelli.massimo@gmail.com",
-     "occurrences": 20,
+     "occurrences": 40,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1178777",
       "page": 32,
@@ -225,7 +225,7 @@
     {
      "type": "Telefono",
      "value": "3387013274",
-     "occurrences": 5,
+     "occurrences": 12,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1178777",
       "page": 1,
@@ -249,7 +249,7 @@
     {
      "type": "E-mail",
      "value": "info@studiorinnovabili.it",
-     "occurrences": 2,
+     "occurrences": 3,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/965001",
       "page": 1,
@@ -261,12 +261,53 @@
    "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "potenzialmente_realizzato",
+  "label": "Potenzialmente realizzato",
+  "reason": "La fine lavori prevista (20/08/2026) è passata e non ci sono documenti successivi: verificare se l'impianto è in esercizio."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": "17 mesi (cronoprogramma)",
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "01/01/2025",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1178914",
+     "page": 2,
+     "document": "Integrazioni del 15/11/2024 - Programma cronologico dei lavori",
+     "excerpt": "Apertura cantiere stazione 132 kV 01/01/2025 31/01/2025"
+    }
+   },
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "22/06/2024 → 20/08/2026",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1178914",
+     "page": 2,
+     "document": "Integrazioni del 15/11/2024 - Programma cronologico dei lavori",
+     "excerpt": ""
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di febbraio 2027",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 26 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1178914",
+     "page": 2,
+     "document": "Integrazioni del 15/11/2024 - Programma cronologico dei lavori",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "26 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -280,171 +321,415 @@
  "cronoprogramma": {
   "bars": [
    {
-    "name": "Redazione progetto esecutivo",
-    "start": 0.0,
-    "end": 2.78,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Assegnazione dei lavori",
-    "start": 1.77,
-    "end": 2.78,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Allestimento cantiere",
-    "start": 2.77,
-    "end": 3.78,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Realizzazione ed adeguamento strade, realizzazione piazzole",
-    "start": 2.77,
-    "end": 8.78,
-    "level": 1,
-    "summary": true
-   },
-   {
-    "name": "Realizzazione delle fondazioni",
-    "start": 3.77,
-    "end": 9.78,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Realizzazione cavidotti MT ed AT e ripristino",
-    "start": 4.77,
-    "end": 10.78,
-    "level": 3,
-    "summary": false
-   },
-   {
-    "name": "Realizzazione sottostazione elettrica di utenza e BESS (opere civili ed elettric",
-    "start": 3.77,
-    "end": 12.78,
+    "name": "A STAZIONE FUTURA 132 kV \"Camerino RTN\"",
+    "start": 6.35,
+    "end": 24.01,
     "level": 0,
-    "summary": true
-   },
-   {
-    "name": "Trasporto e montaggio componenti aerogeneratori",
-    "start": 9.77,
-    "end": 16.78,
-    "level": 2,
-    "summary": true
-   },
-   {
-    "name": "Opere RTN",
-    "start": 9.77,
-    "end": 16.78,
-    "level": 3,
+    "dates": [
+     "2025-01-01",
+     "2026-06-21"
+    ],
     "summary": false
    },
    {
-    "name": "Dismissione cantiere, ripristini ambientali e collaudi",
-    "start": 15.77,
-    "end": 16.78,
-    "level": 2,
+    "name": "Apertura cantiere stazione 132 kV",
+    "start": 6.35,
+    "end": 7.37,
+    "level": 0,
+    "dates": [
+     "2025-01-01",
+     "2025-01-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Sistemazione area di stazione e strada di accesso",
+    "start": 7.37,
+    "end": 10.69,
+    "level": 0,
+    "dates": [
+     "2025-02-01",
+     "2025-05-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Posa rete di terra",
+    "start": 10.69,
+    "end": 11.71,
+    "level": 0,
+    "dates": [
+     "2025-05-13",
+     "2025-06-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Opere civile di stazione",
+    "start": 11.71,
+    "end": 19.31,
+    "level": 0,
+    "dates": [
+     "2025-06-13",
+     "2026-01-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Costruzione edificio Quadri e SA",
+    "start": 12.37,
+    "end": 17.99,
+    "level": 0,
+    "dates": [
+     "2025-07-03",
+     "2025-12-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio apparecchiature AT",
+    "start": 17.3,
+    "end": 19.97,
+    "level": 0,
+    "dates": [
+     "2025-11-30",
+     "2026-02-18"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Cablaggi",
+    "start": 19.97,
+    "end": 21.97,
+    "level": 0,
+    "dates": [
+     "2026-02-19",
+     "2026-04-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio sistema di controllo",
+    "start": 21.97,
+    "end": 22.99,
+    "level": 0,
+    "dates": [
+     "2026-04-21",
+     "2026-05-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Prove stazione",
+    "start": 22.99,
+    "end": 24.01,
+    "level": 0,
+    "dates": [
+     "2026-05-22",
+     "2026-06-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "B LINEE AEREE 132 kV",
+    "start": 7.66,
+    "end": 25.66,
+    "level": 0,
+    "dates": [
+     "2025-02-10",
+     "2026-08-10"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Apertura cantiere",
+    "start": 7.7,
+    "end": 12.66,
+    "level": 0,
+    "dates": [
+     "2025-02-11",
+     "2025-07-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Fondazioni sostegni nuova realizzazione",
+    "start": 12.66,
+    "end": 16.64,
+    "level": 0,
+    "dates": [
+     "2025-07-12",
+     "2025-11-09"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assemblaggio sostegni 150 kV",
+    "start": 16.64,
+    "end": 20.3,
+    "level": 0,
+    "dates": [
+     "2025-11-10",
+     "2026-02-28"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Collegamenti SE-Linea 150 kV",
+    "start": 20.3,
+    "end": 24.28,
+    "level": 0,
+    "dates": [
+     "2026-03-01",
+     "2026-06-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Prove",
+    "start": 24.28,
+    "end": 25.62,
+    "level": 0,
+    "dates": [
+     "2026-06-30",
+     "2026-08-09"
+    ],
+    "summary": false
+   },
+   {
+    "name": "C ELETTRODOTTO IN CAVO 132 kV e BY PASS",
+    "start": 22.3,
+    "end": 25.62,
+    "level": 0,
+    "dates": [
+     "2026-05-01",
+     "2026-08-09"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Apertura cantiere",
+    "start": 22.3,
+    "end": 22.66,
+    "level": 0,
+    "dates": [
+     "2026-05-01",
+     "2026-05-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Realizzazione Stalli arrivo cavo",
+    "start": 22.66,
+    "end": 23.32,
+    "level": 0,
+    "dates": [
+     "2026-05-12",
+     "2026-05-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Apertura trincea",
+    "start": 23.32,
+    "end": 24.01,
+    "level": 0,
+    "dates": [
+     "2026-06-01",
+     "2026-06-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Posa Cavi",
+    "start": 0.0,
+    "end": 0.69,
+    "level": 0,
+    "dates": [
+     "2024-06-22",
+     "2024-07-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Rinterri",
+    "start": 0.33,
+    "end": 0.69,
+    "level": 0,
+    "dates": [
+     "2024-07-02",
+     "2024-07-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Prove",
+    "start": 0.69,
+    "end": 1.38,
+    "level": 0,
+    "dates": [
+     "2024-07-13",
+     "2024-08-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "ATTIVAZIONE STAZIONE",
+    "start": 23.98,
+    "end": 25.99,
+    "level": 0,
+    "dates": [
+     "2026-06-21",
+     "2026-08-20"
+    ],
     "summary": false
    }
   ],
   "unit": "month",
-  "months": 16.78,
+  "months": 25.99,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/1178775",
-   "page": 8,
-   "document": "Integrazioni del 15/11/2024 - Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1178914",
+   "page": 2,
+   "document": "Integrazioni del 15/11/2024 - Programma cronologico dei lavori",
    "excerpt": ""
   },
   "asse": {
-   "titolo": "Mese",
+   "titolo": null,
    "etichette": [
     {
-     "label": "1",
-     "start": 0.0,
-     "end": 1.0
+     "label": "giu 24",
+     "start": -0.691,
+     "end": 0.309
     },
     {
-     "label": "2",
-     "start": 1.0,
-     "end": 2.0
+     "label": "lug 24",
+     "start": 0.309,
+     "end": 1.309
     },
     {
-     "label": "3",
-     "start": 2.0,
-     "end": 3.0
+     "label": "ago 24",
+     "start": 1.309,
+     "end": 2.309
     },
     {
-     "label": "4",
-     "start": 3.0,
-     "end": 4.0
+     "label": "set 24",
+     "start": 2.309,
+     "end": 3.309
     },
     {
-     "label": "5",
-     "start": 4.0,
-     "end": 5.0
+     "label": "ott 24",
+     "start": 3.309,
+     "end": 4.309
     },
     {
-     "label": "6",
-     "start": 5.0,
-     "end": 6.0
+     "label": "nov 24",
+     "start": 4.309,
+     "end": 5.309
     },
     {
-     "label": "7",
-     "start": 6.0,
-     "end": 7.0
+     "label": "dic 24",
+     "start": 5.309,
+     "end": 6.309
     },
     {
-     "label": "8",
-     "start": 7.0,
-     "end": 8.0
+     "label": "gen 25",
+     "start": 6.309,
+     "end": 7.309
     },
     {
-     "label": "9",
-     "start": 8.0,
-     "end": 9.0
+     "label": "feb 25",
+     "start": 7.309,
+     "end": 8.309
     },
     {
-     "label": "10",
-     "start": 9.0,
-     "end": 10.0
+     "label": "mar 25",
+     "start": 8.309,
+     "end": 9.309
     },
     {
-     "label": "11",
-     "start": 10.0,
-     "end": 11.0
+     "label": "apr 25",
+     "start": 9.309,
+     "end": 10.309
     },
     {
-     "label": "12",
-     "start": 11.0,
-     "end": 12.0
+     "label": "mag 25",
+     "start": 10.309,
+     "end": 11.309
     },
     {
-     "label": "13",
-     "start": 12.0,
-     "end": 13.0
+     "label": "giu 25",
+     "start": 11.309,
+     "end": 12.309
     },
     {
-     "label": "14",
-     "start": 13.0,
-     "end": 14.0
+     "label": "lug 25",
+     "start": 12.309,
+     "end": 13.309
     },
     {
-     "label": "15",
-     "start": 14.0,
-     "end": 15.0
+     "label": "ago 25",
+     "start": 13.309,
+     "end": 14.309
     },
     {
-     "label": "16",
-     "start": 15.0,
-     "end": 16.0
+     "label": "set 25",
+     "start": 14.309,
+     "end": 15.309
     },
     {
-     "label": "17",
-     "start": 16.0,
-     "end": 17.0
+     "label": "ott 25",
+     "start": 15.309,
+     "end": 16.309
+    },
+    {
+     "label": "nov 25",
+     "start": 16.309,
+     "end": 17.309
+    },
+    {
+     "label": "dic 25",
+     "start": 17.309,
+     "end": 18.309
+    },
+    {
+     "label": "gen 26",
+     "start": 18.309,
+     "end": 19.309
+    },
+    {
+     "label": "feb 26",
+     "start": 19.309,
+     "end": 20.309
+    },
+    {
+     "label": "mar 26",
+     "start": 20.309,
+     "end": 21.309
+    },
+    {
+     "label": "apr 26",
+     "start": 21.309,
+     "end": 22.309
+    },
+    {
+     "label": "mag 26",
+     "start": 22.309,
+     "end": 23.309
+    },
+    {
+     "label": "giu 26",
+     "start": 23.309,
+     "end": 24.309
+    },
+    {
+     "label": "lug 26",
+     "start": 24.309,
+     "end": 25.309
+    },
+    {
+     "label": "ago 26",
+     "start": 25.309,
+     "end": 26.309
     }
    ],
    "unita": "mesi"
@@ -452,7 +737,7 @@
   "duration": {
    "text": "14 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (4), 8 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (7), 8 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/964991",
     "page": 46,
@@ -460,7 +745,21 @@
     "excerpt": "del quale avranno inizio i lavori di realizzazione dell’impianto eolico per una durata totale di circa 14 mesi. Contemporaneamente all’allestimento del cantiere e per sei mesi saranno adeguate le strade"
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "01/01/2025",
+    "iso": "2025-01-01",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1178914",
+     "page": 2,
+     "document": "Integrazioni del 15/11/2024 - Programma cronologico dei lavori",
+     "excerpt": "Apertura cantiere stazione 132 kV 01/01/2025 31/01/2025"
+    }
+   }
+  ],
   "document": {
    "document": "Integrazioni del 15/11/2024 - Cronoprogramma",
    "url": "https://va.mite.gov.it/File/Documento/1178775"
@@ -468,18 +767,22 @@
   "note": null,
   "altri": [
    {
+    "document": "Integrazioni del 15/11/2024 - Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/1178775"
+   },
+   {
     "document": "Cronoprogramma",
     "url": "https://va.mite.gov.it/File/Documento/793610"
    }
   ],
   "durate_fasi": [],
-  "metodo": "diagramma vettoriale"
+  "metodo": "tabella con date"
  },
  "documentazione": {
   "documenti": 717,
-  "pagine": 4229,
+  "pagine": 8167,
   "completa": false,
-  "da_leggere": 417
+  "da_leggere": 117
  },
  "confronto": [
   {
@@ -510,6 +813,10 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "La fine lavori prevista (20/08/2026) è passata e non ci sono documenti successivi: verificare se l'impianto è in esercizio."
+  },
+  {
    "label": "Potenza",
    "reason": "il titolo riporta 60 MW, gli elaborati 6 MW"
   },
@@ -527,7 +834,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "388 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "938 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
