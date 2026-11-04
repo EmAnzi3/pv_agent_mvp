@@ -1,0 +1,846 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7957",
+ "title": "Progetto di un impianto di produzione di energia di energia eolica localizzato nei comuni di Avetrana (TA), Salice Salentino (LE), Nardò (LE) e Porto Cesareo (LE) in località \"il Canalone\" con opere di connessione realizzate anche nel comune di Erchie (BR), composta da 6 aereogeneratori di potenza pari a 6 MW per una potenza complessiva pari a 57,20 MW comprensivo di un sistema di accumulo",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7957",
+ "source": "mase",
+ "updated": "2026-11-04",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "57,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7957",
+    "excerpt": "57,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "8,17 MW ciascuno · altezza mozzo 125 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 2 (4), 4 (4), 42 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/549570",
+    "page": 1,
+    "document": "Avviso al pubblico del 28/10/2021",
+    "excerpt": "Il progetto prevede la realizzazione di un impianto eolico costituito da 7 aerogeneratori della potenza di 6 MW ciascuno, per una potenza di 42 MW, comprensivo di un sistema di accumulo"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/546994",
+    "page": 7,
+    "document": "Quadro di riferimento programmatico",
+    "excerpt": "eolico a terra e 17 GW di eolico offshore, senza dimenticare 7 GW di"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "57,2 MW / 3,125 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 15,2 MW (36), 6 MW (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/549570",
+    "page": 1,
+    "document": "Avviso al pubblico del 28/10/2021",
+    "excerpt": "sistema di accumulo con batterie agli ioni di litio di potenza pari a 15,20 MW, per una potenza complessiva dell’impianto di 57,20 MW”"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/519998",
+    "page": 124,
+    "document": "RELAZIONE TECNICA",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "TA",
+  "comuni": [
+   "Avetrana",
+   "Salice Salentino",
+   "Nardò",
+   "Porto Cesareo"
+  ],
+  "coordinate": {
+   "lat": 40.35375,
+   "lon": 17.8022,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (5 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/520115",
+    "page": 55,
+    "document": "RELAZIONE DI PREVISIONE DELL'IMPATTO ACUSTICO DELL'IMPIANTO",
+    "excerpt": "738319 4471981"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.35375,17.80220",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Repower Renewable S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": "03647930274",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lavaredo 44/52 Mestre 30174 Venezia Ve",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "elettrostudioenergiaspa@cgn.legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/549570",
+      "page": 1,
+      "document": "Avviso al pubblico del 28/10/2021",
+      "excerpt": "Via Lavaredo, 44/52 – 30174 Venezia (VE) P. IVA 03647930274 – Pec: elettrostudioenergiaspa@cgn.legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7957"
+   }
+  },
+  {
+   "name": "Ing. Massimo Lepore",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/520100",
+    "page": 1,
+    "document": "STIMA DI PRODUCIBILITA' DELL'IMPIANTO",
+    "excerpt": "Progettista : Ing. Massimo Lepore"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "TEN Project S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01465940623",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Localita' Chianarile 82010 San Martino Sannita Bn",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tenproject.it",
+     "occurrences": 131,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/546994",
+      "page": 1,
+      "document": "Quadro di riferimento programmatico",
+      "excerpt": "t +39 0824 337144 - f +39 0824 49315 tenproject.it - info@tenproject.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "nicola.forte@tenproject.it",
+     "occurrences": 19,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/520103",
+      "page": 2,
+      "document": "PIANO DI SICUREZZA E COORDINAMENTO CON ALLEGATI - IMPIANTO EOLICO",
+      "excerpt": "Tel.: 0881 362699 - Fax: -- E-Mail: nicola.forte@tenproject.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Soil Project S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@soilprojectsas.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/520001",
+      "page": 43,
+      "document": "RELAZIONE GEOLOGICA, GEOTECNICA, IDROGEOMORFOLOGICA E SISMICA",
+      "excerpt": "Tel: 0824 1816668; cell: 340 6867752 - 333 1153056; info: www.soilprojectsas.it; email: info@soilprojectsas.it P.1.:01515280624"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "08241816668",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/520001",
+      "page": 41,
+      "document": "RELAZIONE GEOLOGICA, GEOTECNICA, IDROGEOMORFOLOGICA E SISMICA",
+      "excerpt": "Viale Europa snc - Loc. Cubante, 82018 CALVI (BN) Tel: 0824 1816668; cell: 340 6867752 - 333 1153056; info: www.soilprojectsas.it;"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3406867752",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/520001",
+      "page": 41,
+      "document": "RELAZIONE GEOLOGICA, GEOTECNICA, IDROGEOMORFOLOGICA E SISMICA",
+      "excerpt": "Viale Europa snc - Loc. Cubante, 82018 CALVI (BN) Tel: 0824 1816668; cell: 340 6867752 - 333 1153056; info: www.soilprojectsas.it;"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sinergo S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@sinergospa.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/520034",
+      "page": 1,
+      "document": "PTCP PROVINCIA DI LECCE - VINCOLI E SALVAGUARDIA: STRATI - VINCOLI ESTESI - TAV. V.5.1.2",
+      "excerpt": "tel 041.3642511 - fax 041.640481 sinergospa.com - info@sinergospa.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0413642511",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/520034",
+      "page": 1,
+      "document": "PTCP PROVINCIA DI LECCE - VINCOLI E SALVAGUARDIA: STRATI - VINCOLI ESTESI - TAV. V.5.1.2",
+      "excerpt": "30030 - Maerne di Martellago - Venezia - Italy tel 041.3642511 - fax 041.640481"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/520101",
+      "page": 30,
+      "document": "RELAZIONE DI CALCOLO PRELIMINARE DELLE STRUTTURE",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/520101",
+      "page": 30,
+      "document": "RELAZIONE DI CALCOLO PRELIMINARE DELLE STRUTTURE",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Coltella presentato dalla società MY SUN S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "parcofotovoltaico@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/569614",
+      "page": 17,
+      "document": "Osservazioni della Società Avetrana Energia Srl data 22/11/2021",
+      "excerpt": "Santa Susanna in località Coltella presentato dalla società MY SUN SRL (Via Domenica Nicolai, 104, Bari - parcofotovoltaico@pec.it) a condizione che vengano realizzate tutte le opere di mitigazione"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Masserie Salentine S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "maasseriesalentine@pec-mail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/864778",
+      "page": 2,
+      "document": "Osservazioni della Masserie Salentine S.r.l. Società Agricola in data 05/07/2023",
+      "excerpt": "Masserie Salentine S.r.l. Società Agricola maasseriesalentine@pec-mail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "WIND FARM VEGLIE 7 WTG",
+    "start": 0.24,
+    "end": 10.62,
+    "level": 1,
+    "duration": "226 g",
+    "summary": false
+   },
+   {
+    "name": "Allestimento area di presidio",
+    "start": 0.24,
+    "end": 0.54,
+    "level": 1,
+    "duration": "7 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE DI STRADE E PIAZZOLE 2",
+    "start": 0.54,
+    "end": 2.11,
+    "level": 1,
+    "duration": "34 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione della nuova viabilità di accesso 2",
+    "start": 0.54,
+    "end": 2.11,
+    "level": 1,
+    "duration": "34 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE SOTTOSTAZIONE 2II+",
+    "start": 1.16,
+    "end": 7.5,
+    "level": 1,
+    "duration": "139 g",
+    "summary": false
+   },
+   {
+    "name": "Opere civili sottostazione 2II+",
+    "start": 1.16,
+    "end": 4.25,
+    "level": 1,
+    "duration": "68 g",
+    "summary": false
+   },
+   {
+    "name": "Opere elettriche sottostazione 6II+",
+    "start": 1.46,
+    "end": 6.52,
+    "level": 1,
+    "duration": "110 g",
+    "summary": false
+   },
+   {
+    "name": "Montaggi e connessioni 7",
+    "start": 6.52,
+    "end": 7.53,
+    "level": 1,
+    "duration": "23 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTI 2II+",
+    "start": 0.83,
+    "end": 7.63,
+    "level": 1,
+    "duration": "147 g",
+    "summary": false
+   },
+   {
+    "name": "Posa e collegamento cavidotto interno 2II+",
+    "start": 0.83,
+    "end": 3.26,
+    "level": 1,
+    "duration": "52 g",
+    "summary": false
+   },
+   {
+    "name": "Posa e collegamento cavidotto esterno 10",
+    "start": 3.26,
+    "end": 7.63,
+    "level": 1,
+    "duration": "95 g",
+    "summary": false
+   },
+   {
+    "name": "SCAVO PLINTI DI FONDAZIONE 4",
+    "start": 2.21,
+    "end": 3.16,
+    "level": 1,
+    "duration": "21 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE DEI PLINTI DI FONDAZIONE",
+    "start": 4.25,
+    "end": 6.81,
+    "level": 1,
+    "duration": "56 g",
+    "summary": false
+   },
+   {
+    "name": "Getto magrone del plinto",
+    "start": 4.22,
+    "end": 4.51,
+    "level": 1,
+    "duration": "7 g",
+    "summary": false
+   },
+   {
+    "name": "Armatura della carpenteria metallica del 14",
+    "start": 4.51,
+    "end": 6.12,
+    "level": 1,
+    "duration": "35 g",
+    "summary": false
+   },
+   {
+    "name": "Getto cls plinto di fondazione 15",
+    "start": 6.12,
+    "end": 6.48,
+    "level": 1,
+    "duration": "7 g",
+    "summary": false
+   },
+   {
+    "name": "Scasseratura plinto e trattamento 16",
+    "start": 6.48,
+    "end": 6.78,
+    "level": 1,
+    "duration": "7 g",
+    "summary": false
+   },
+   {
+    "name": "Sistemazione delle strade di accesso alle 17II+",
+    "start": 6.94,
+    "end": 8.19,
+    "level": 1,
+    "duration": "28 g",
+    "summary": false
+   },
+   {
+    "name": "MONTAGGIO AEROGENERATORI 18",
+    "start": 8.19,
+    "end": 9.14,
+    "level": 1,
+    "duration": "21 g",
+    "summary": false
+   },
+   {
+    "name": "ATTIVITÀ DI RIPRISTINO ANTE OPERAM 20",
+    "start": 9.34,
+    "end": 10.26,
+    "level": 1,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "SMOBILIZZO CANTIERE 21",
+    "start": 10.26,
+    "end": 10.62,
+    "level": 1,
+    "duration": "7 g",
+    "summary": true
+   },
+   {
+    "name": "Attività Riepilogo progetto",
+    "start": 2.95,
+    "end": 4.4,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Progetto: Proget1 Divisione Attività inattiva",
+    "start": 2.88,
+    "end": 12.43,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Data: mer Cardine Cardine inattiva",
+    "start": 2.88,
+    "end": 12.43,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Riepilogo Riepilogo inattiva",
+    "start": 2.95,
+    "end": 4.4,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Altra sezione del cronoprogramma (pag. 71)",
+    "separator": true,
+    "start": 0,
+    "end": 0,
+    "level": 0
+   },
+   {
+    "name": "STAZIONE ELETTRICA DI UTENZA",
+    "start": 0.81,
+    "end": 7.28,
+    "level": 2,
+    "duration": "142 g",
+    "summary": false
+   },
+   {
+    "name": "OPERE CIVILI",
+    "start": 0.81,
+    "end": 3.95,
+    "level": 2,
+    "duration": "68 g",
+    "summary": false
+   },
+   {
+    "name": "OPERE ELETTRICHE 2II+",
+    "start": 1.07,
+    "end": 6.1,
+    "level": 2,
+    "duration": "110 g",
+    "summary": true
+   },
+   {
+    "name": "Approvigionamento imp. Tecnologici",
+    "start": 1.07,
+    "end": 1.53,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Approvigionamento apparecchiature MT",
+    "start": 1.07,
+    "end": 6.1,
+    "level": 3,
+    "duration": "110 g",
+    "summary": false
+   },
+   {
+    "name": "Approvigionamento apparecchiature BT",
+    "start": 1.07,
+    "end": 4.27,
+    "level": 3,
+    "duration": "70 g",
+    "summary": false
+   },
+   {
+    "name": "Approvigionamento cavi BT, MT e impianto di terra",
+    "start": 1.07,
+    "end": 2.44,
+    "level": 3,
+    "duration": "30 g",
+    "summary": false
+   },
+   {
+    "name": "Approvigionamento cavo AT",
+    "start": 1.07,
+    "end": 1.53,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "MONTAGGI E CONNESSIONI",
+    "start": 6.07,
+    "end": 7.31,
+    "level": 2,
+    "duration": "28 g",
+    "summary": true
+   },
+   {
+    "name": "Posa e collegamento cavi MT e BT 10",
+    "start": 6.27,
+    "end": 6.95,
+    "level": 3,
+    "duration": "15 g",
+    "summary": false
+   },
+   {
+    "name": "Attività Riepilogo progetto",
+    "start": 1.09,
+    "end": 1.93,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Progetto: Divisione Attività inattiva",
+    "start": 1.05,
+    "end": 6.58,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cronoprogramma Cardine Cardine inattiva Riporto",
+    "start": 1.05,
+    "end": 6.58,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Data: lun Riepilogo Riepilogo inattiva Riepilogo",
+    "start": 1.09,
+    "end": 1.93,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 12.43,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/519998",
+   "page": 70,
+   "document": "RELAZIONE TECNICA",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M36",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M37",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M38",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M39",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M40",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M41",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M42",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M43",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M44",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M45",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "M46",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "M47",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "M48",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "M49",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "M50",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "M51",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "M52",
+     "start": 16.0,
+     "end": 17.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "14 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/520103",
+    "page": 342,
+    "document": "PIANO DI SICUREZZA E COORDINAMENTO CON ALLEGATI - IMPIANTO EOLICO",
+    "excerpt": "· l’obbligo del datore di lavoro di informare preventivamente il personale, e chi intende fare ingresso nel cantiere, della preclusione dell’accesso a chi, negli ultimi 14 giorni, abbia avuto contatti con soggetti risult"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 148,
+  "pagine": 3076,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Repower Renewable S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 57.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ERCHIE, AVETRANA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "77 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
