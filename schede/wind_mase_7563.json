@@ -1,0 +1,619 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7563",
+ "title": "Progetto di un impianto eolico composto da 10 aerogeneratori dell'altezza di 180 m, della potenza nominale di 5,6 MW ciascuno, con una potenza totale di 56 MW da realizzarsi nei comuni di Ortanova (FG), Ordona (FG) e Stornara (FG), in località \"Posta delle Canne \" e \" Mascitelli\".",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7563",
+ "source": "mase",
+ "updated": "2026-11-04",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "5,6 MW",
+   "sub": "Valore ricorrente negli elaborati (76 volte); il titolo riporta 56 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1108275",
+    "page": 3,
+    "document": "Provvedimento Direttoriale del 23/07/2024 - MASE_VA_DEC_2024-0000236",
+    "excerpt": "acquisita al prot. n. 64334/MATTM in data 14 agosto 2020, per il progetto di un parco eolico composto da 10 aerogeneratori, di potenza nominale pari a 5,6 MW, per una potenza complessiva di 56 MW, da realizzarsi nei comu"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "0,56 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 5 (7), 28 (4), 13 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/500510",
+    "page": 1,
+    "document": "Richiesta integrazioni della documentazione - CreSS",
+    "excerpt": "provvedimento unico ambientale ai sensi dell'art. 27 del D.Lgs 152/2006 e ss.mm.ii., relativo al progetto di un impianto eolico composto da 10 aerogeneratori dell'altezza di 180 m, della potenza nominale di 5,6 MW ciascu"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/868799",
+    "page": 19,
+    "document": "Parere del Ministero della Cultura - Soprintendenza speciale per il Piano Nazionale di Ripresa e Resilienza in data 13/07/2023",
+    "excerpt": "realizzazione di impianti da fonte rinnovabile (fotovoltaica/agrivoltaica, eolico onshore ed offshore), tale da"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/421053",
+    "page": 49,
+    "document": "DC20053D-V01_SIA",
+    "excerpt": "Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi,"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Ortanova",
+   "Ordona",
+   "Stornara"
+  ],
+  "coordinate": {
+   "lat": 41.32411,
+   "lon": 15.66929,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (26 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/520343",
+    "page": 4,
+    "document": "Integrazioni del 23/06/2021 - Avifauna_PostaCanne_Annuale",
+    "excerpt": "e 6, 7)  Coordinate cartografiche dell’intervento: 41°19'26.22\"N e 15°39'46.17\"E  pSIC/ZPS/IBA interessati dall’intervento: Nessuno"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.32411,15.66929",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Posta Delle Canne S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "08416570722",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Durini 9 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "postadellecanne@legalmail.it",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/500510",
+      "page": 1,
+      "document": "Richiesta integrazioni della documentazione - CreSS",
+      "excerpt": "Alla Società Posta Delle Canne S.r.l. postadellecanne@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "servizio.ecologia@pec.rupar.puglia.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/512082",
+      "page": 9,
+      "document": "Osservazioni della Società Posta delle Canne S.r.l. in data 31/05/2021",
+      "excerpt": "Sezione Autorizzazioni Ambientali PEC: servizio.ecologia@pec.rupar.puglia.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@bfpgroup.net",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/514862",
+      "page": 1,
+      "document": "Integrazioni del 13/07/2021 - DW20053D-V23_Fotosimulazioni_3D_signed",
+      "excerpt": "tel (+39) 0805046361 - fax (+39) 0805619384 www.bfpgroup.net - info@bfpgroup.net"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7563"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Geol. Domenico DEL Conte",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "domenico.delconte@geoapulia.it",
+     "occurrences": 164,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/421095",
+      "page": 2,
+      "document": "DC20053D-V17_RELAZIONE_GEOLOGICA",
+      "excerpt": "Cell. +39 329.7160866 Fax +39 0884.89012 E-mail: domenico.delconte@geoapulia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3297160866",
+     "occurrences": 164,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/421095",
+      "page": 2,
+      "document": "DC20053D-V17_RELAZIONE_GEOLOGICA",
+      "excerpt": "Corso Giannone, 184 - Cagnano Varano (FG) Cell. +39 329.7160866 Fax +39 0884.89012"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Studio Tecnico BFP S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "crisafulli@studiobfp.com",
+     "occurrences": 105,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/421081",
+      "page": 11,
+      "document": "DC20053D-V10_Studio_evoluzione_ombra_shadow_flickering_signed",
+      "excerpt": "+39 080 5046361 Antonio Crisafulli / crisafulli@studiobfp.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasri.com",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/421091",
+      "page": 140,
+      "document": "DC20053D-V15_Impatto_acustico",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196 www.sonorasri.com - sonora@sonorasri.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 28,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/421091",
+      "page": 140,
+      "document": "DC20053D-V15_Impatto_acustico",
+      "excerpt": "Via dei Bersaglieri, 9 - Caserta Tel 0823 351196 - Fax 0823 351196"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Enza Covesnon",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "enza.covesnon@grvalue.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/500134",
+      "page": 1,
+      "document": "Integrazioni del 14/05/2021 - Nota di Trasmissione",
+      "excerpt": "Certi della Vostra collaborazione e rimanendo a disposizione per qualsiasi chiarimento nella persona dell’ing. Enza Covesnon, enza.covesnon@grvalue.com (+39.331.1825198), l’occasione è gradita per porgere i nostri più co"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Salvatore Pizzi",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0885331218",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/493866",
+      "page": 8,
+      "document": "Parere Comuni di Ordona e di Stornara Tramite Società Posta delle Canne Srl in data 23/04/2021",
+      "excerpt": "Via E. Fieramosca, 24 — 71047 Stornara (FG) - Tel. 0885 331218 fax 331225 C.F./P.I. 00397570714 Cod. Univoco UFCF4D"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "S&W Energy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "swenergy@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/421049",
+      "page": 15,
+      "document": "DC20053D-E01_Rel_connessione_signed",
+      "excerpt": "70132 Bari PEC: swenergy@pec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "RILIEVI IN SITO e PROVE DI LABORATORIO",
+    "start": 0.0,
+    "end": 1.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "PROGETTTAZIONE ESECUTIVA",
+    "start": 0.48,
+    "end": 2.51,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "CANTIERIZZAZIONE",
+    "start": 2.47,
+    "end": 3.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO INTERNO",
+    "start": 2.97,
+    "end": 9.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO ESTERNO",
+    "start": 3.97,
+    "end": 10.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili sottostazione",
+    "start": 2.97,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere elettriche sottostazione",
+    "start": 6.97,
+    "end": 11.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudo Sottostazione",
+    "start": 10.96,
+    "end": 11.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Connessione alla rete della sottostazione",
+    "start": 11.96,
+    "end": 12.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ADEGUAMENTO STRADE ESISTENTI",
+    "start": 2.47,
+    "end": 5.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE E PIAZZOLE",
+    "start": 3.97,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "SCAVI FONDAZIONI TORRI",
+    "start": 5.97,
+    "end": 8.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE PLINTI DI FONDAZIONE",
+    "start": 6.47,
+    "end": 10.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "INSTALLAZIONE AEROGENERATORI",
+    "start": 9.96,
+    "end": 12.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Commissioning WTG",
+    "start": 12.96,
+    "end": 14.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "TAKE OVER WTG",
+    "start": 14.46,
+    "end": 15.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ESERCIZIO DELL'IMPIANTO",
+    "start": 15.96,
+    "end": 16.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "RIPRISTINI",
+    "start": 15.96,
+    "end": 17.99,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 17.99,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/421020",
+   "page": 19,
+   "document": "DC20053D-C01_Relazione_Tecnica_Generale_signed",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "MESE 1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/421053",
+    "page": 49,
+    "document": "DC20053D-V01_SIA",
+    "excerpt": "Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi,"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 277,
+  "pagine": 3853,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Posta delle Canne S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 56.0,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ORTANOVA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 56 MW, gli elaborati 5,6 MW"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "310 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
