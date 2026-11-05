@@ -1,0 +1,338 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_1678",
+ "title": "Parco eolico \"Cerignola Borgo Libertà\"",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1678",
+ "source": "mase",
+ "updated": "2026-11-05",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "40,8 MW",
+   "sub": "Dagli elaborati (76 occorrenze); il titolo non indica la potenza; altri valori: 13,6 MW, 30 MW, 47,6 MW",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/208943",
+    "page": 1,
+    "document": "Avviso al pubblico del 3 agosto 2017",
+    "excerpt": "provincia di Foggia, e prevede la realizzazione di n. 12 aerogeneratori da 3,4 MW con una potenza complessiva pari a 40,8 MW. In particolare 7 dei 12 aerogeneratori ricadono nel territorio Comunale di Cerignola e i resta"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "12",
+   "status": "da documenti",
+   "sub": "3,40 MW ciascuno · altezza mozzo 115 m · diametro rotore 130 m · Valore prevalente negli elaborati; altri valori: 7 (10), 92 (5), 90 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/208943",
+    "page": 1,
+    "document": "Avviso al pubblico del 3 agosto 2017",
+    "excerpt": "Nella Regione Puglia ed in particolare nei territori Comunali di Cerignola e Ascoli Satriano provincia di Foggia, e prevede la realizzazione di n. 12 aerogeneratori da 3,4 MW con una potenza complessiva pari a 40,8 MW. I"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "15 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/231720",
+    "page": 6,
+    "document": "Parere CTVIA del 02/03/2018",
+    "excerpt": "le attività relative alla cantierizzazione avranno una durata di circa 15 mesi, l’area di cantiere avrà dimensioni previste di 2.900 mq e alla fine delle attività di cantiere sono previsti i ripristini ambientali;"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Ascoli Satriano",
+   "Cerignola"
+  ],
+  "coordinate": {
+   "lat": 41.16545,
+   "lon": 15.73547,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (48 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/227395",
+    "page": 90,
+    "document": "Integrazioni del 02/01/2018 - Integrazioni richieste allo SIA",
+    "excerpt": "IMPIANTO FV2: 559280 4556000, ricadente all'interno dei limiti amministrativi del Comune di"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.16545,15.73547",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.16928,
+   "lon": 15.72636,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/208662",
+    "page": 4,
+    "document": "CALCOLI PRELIMINARI STRUTTURE EDILI: 1a PARTE DESCRITTIVA",
+    "excerpt": "560932"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.16928,15.72636"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Tozzi Green S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02132890399",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Brigata Ebraica 50 48123 Ravenna Ra",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "tozzi.re@legalmail.it",
+     "occurrences": 88,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/208943",
+      "page": 1,
+      "document": "Avviso al pubblico del 3 agosto 2017",
+      "excerpt": "tozzi.re@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "re@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/208726",
+      "page": 1,
+      "document": "STRALCIO CARTOGRAFIA PIANO REGIONALE ATTIVITA' ESTRATTIVE",
+      "excerpt": "tozzi re@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0544525311",
+     "occurrences": 29,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/208943",
+      "page": 1,
+      "document": "Avviso al pubblico del 3 agosto 2017",
+      "excerpt": "Tozzi Green S.p.A. tel. +39 0544 525311 Capitale Sociale € 2.300.000,00 i.v."
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1678"
+   }
+  },
+  {
+   "name": "Ing. Massimo Candeo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "m.candeo@pec.it",
+     "occurrences": 69,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/208729",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale - Quadro di riferimento Programmatico",
+      "excerpt": "70125 Bari m.candeo@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/208722",
+    "page": 1,
+    "document": "STRALCIO MAPPA AREE NON IDONEE FER - REGOLAMENTO 24-2010",
+    "excerpt": "Progettista:"
+   }
+  },
+  {
+   "name": "Dott. Luigi Buttiglione",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/208669",
+    "page": 1,
+    "document": "RELAZIONE GEOLOGICA",
+    "excerpt": "IL GEOLOGO: Dott. Luigi BUTTIGLIONE"
+   }
+  },
+  {
+   "name": "Ing. Massimo Canadeo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/227390",
+    "page": 1,
+    "document": "Integrazioni del 02/01/2018 - Descrizione grafica renderizzata delle trasformazioni paesaggistiche",
+    "excerpt": "Progettazione"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Innova Puglia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "segreteria@pec.adb.puglia.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/230200",
+      "page": 5,
+      "document": "Osservazioni del Comune di Cerignola - Settore Urbanistica P.R.G. e Patrimonio - Servizio Urbanistica - Ufficio del Piano acquisite tramite il Proponente in data 22/02/2018",
+      "excerpt": "tel. 080 9182000 - fax. 080 9182244 - C.F. 93289020724 www.adb.puglia.it e-mail: segreteria@adb.puglia.it - segreteria@pec.adb.puglia.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@adb.puglia.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/230200",
+      "page": 5,
+      "document": "Osservazioni del Comune di Cerignola - Settore Urbanistica P.R.G. e Patrimonio - Servizio Urbanistica - Ufficio del Piano acquisite tramite il Proponente in data 22/02/2018",
+      "excerpt": "tel. 080 9182000 - fax. 080 9182244 - C.F. 93289020724 www.adb.puglia.it e-mail: segreteria@adb.puglia.it - segreteria@pec.adb.puglia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0809182000",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/230200",
+      "page": 5,
+      "document": "Osservazioni del Comune di Cerignola - Settore Urbanistica P.R.G. e Patrimonio - Servizio Urbanistica - Ufficio del Piano acquisite tramite il Proponente in data 22/02/2018",
+      "excerpt": "Str. Prov. per Casamassima Km 3 - 70010 Valenzano — Bari tel. 080 9182000 - fax. 080 9182244 - C.F. 93289020724"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "15 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "15 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/231720",
+    "page": 6,
+    "document": "Parere CTVIA del 02/03/2018",
+    "excerpt": "le attività relative alla cantierizzazione avranno una durata di circa 15 mesi, l’area di cantiere avrà dimensioni previste di 2.900 mq e alla fine delle attività di cantiere sono previsti i ripristini ambientali;"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 119,
+  "pagine": 1909,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Tozzi Green S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 40.8,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CERIGNOLA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "non indicata nel titolo: valore ricavato dagli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "247 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
