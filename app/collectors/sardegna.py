@@ -160,6 +160,8 @@ class SardegnaCollector(BaseCollector):
                 continue
 
             seen_ids.add(external_id)
+            if not normalized.get("power") and normalized.get("url") and normalized["url"] != NEWS_URL:
+                self._enrich_from_notice(normalized)
             matched_blocks.append(normalized)
 
             results.append(
@@ -249,6 +251,30 @@ class SardegnaCollector(BaseCollector):
             "power": power,
             "url": detail_url or page_url,
         }
+
+    def _enrich_from_notice(self, normalized: dict) -> None:
+        """The listing title can leave the power blank ('di potenza pari a kW'): the notice page states it
+        ('di potenza nominale pari a 17.000 kWn'), with proponent and municipalities. One request per such
+        notice; the record key is computed before, so it does not change."""
+        import time
+        try:
+            time.sleep(1)
+            r = self.session.get(normalized["url"], timeout=60)
+            r.raise_for_status()
+            soup = BeautifulSoup(r.content.decode("utf-8", errors="replace"), "html.parser")
+        except Exception:
+            return
+        h = soup.find(["h1", "h2"], string=lambda t: t and normalized["title"][:30].lower() in t.lower())
+        node = h.parent if h is not None else soup
+        text = self._clean_text(node.get_text(" ", strip=True))
+        if h is not None and len(text) < 200 and h.parent is not None and h.parent.parent is not None:
+            text = self._clean_text(h.parent.parent.get_text(" ", strip=True))
+        text = text.split("Consulta i documenti")[0][:6000]
+        normalized["power"] = self._extract_power_text(text) or normalized.get("power")
+        if not normalized.get("proponent") or "consulta" in (normalized.get("proponent") or "").lower():
+            normalized["proponent"] = self._extract_proponent(text) or normalized.get("proponent")
+        normalized["municipality"] = normalized.get("municipality") or self._extract_municipality(text)
+        normalized["province"] = normalized.get("province") or self._extract_province(text)
 
     def _extract_news_title(self, block, text: str) -> str | None:
         title_node = block.select_one(".news-sardegna-title h4")
@@ -845,8 +871,8 @@ class SardegnaCollector(BaseCollector):
         patterns = [
             r"Società Proponente\s*:?\s*(.+?)(?:,\s+per\s+la\s+quale|;\s+per\s+la\s+quale|\s+per\s+la\s+quale|$)",
             r"Societa Proponente\s*:?\s*(.+?)(?:,\s+per\s+la\s+quale|;\s+per\s+la\s+quale|\s+per\s+la\s+quale|$)",
-            r"La società\s+(.+?)(?:,\s+in data|\s+in data|\s+ha\s+depositato|\s+ha\s+trasmesso|$)",
-            r"La Società\s+(.+?)(?:,\s+in data|\s+in data|\s+ha\s+depositato|\s+ha\s+trasmesso|$)",
+            r"La società\s+(.+?)(?:,\s+in data|\s+in data|\s+ha\s+(?:depositato|trasmesso|presentato|avviato|richiesto|chiesto|inoltrato)|\s+Consulta\b|$)",
+            r"La Società\s+(.+?)(?:,\s+in data|\s+in data|\s+ha\s+(?:depositato|trasmesso|presentato|avviato|richiesto|chiesto|inoltrato)|\s+Consulta\b|$)",
             r"dalla Società\s+(.+?)(?:,\s+per|\s+per\s+la\s+quale|$)",
             r"dal Proponente\s+(.+?)(?:,\s+per|\s+per\s+la\s+quale|$)",
             r"Proponente\s*:?\s*(.+?)(?:\s*\||,|;|$)",
@@ -858,6 +884,8 @@ class SardegnaCollector(BaseCollector):
                 value = self._clean_text(m.group(1))
                 value = value.strip(" .,:;")
 
+                value = re.sub(r"\s+(?:Consulta|Scarica|Entro|Per\s+informazioni|Il\s+pubblico)\b.*$", "", value, flags=re.IGNORECASE)
+                value = re.sub(r"^(?:Societ[àa]\s+)+", "", value, flags=re.IGNORECASE)
                 value = re.sub(r"\s+relativo\s+all.*$", "", value, flags=re.IGNORECASE)
                 value = re.sub(r"\s+per\s+la\s+quale.*$", "", value, flags=re.IGNORECASE)
                 value = self._clean_text(value).strip(" .,:;")
@@ -917,7 +945,7 @@ class SardegnaCollector(BaseCollector):
             r"(?:\d+)"
             r")"
             r"\s*"
-            r"(MWp|MW|MVA|MWh|kWp|KWp|kW|KW|kw)"
+            r"(MWp|MWn|MWe|MWac|MW|MVA|MWh|kWp|KWp|kWn|kWe|kWac|kW|KW|kw)"
             r"\b",
             text,
             flags=re.IGNORECASE,

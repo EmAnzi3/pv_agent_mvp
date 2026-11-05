@@ -279,7 +279,7 @@ class LombardiaCollector(BaseCollector):
                             "title": title[:700],
                             "proponent": normalized.get("proponent"),
                             "status_raw": normalized.get("status"),
-                            "region": "Lombardia",
+                            "region": _region_for(normalized.get("province")),
                             "province": normalized.get("province"),
                             "municipalities": normalized.get("municipalities") or [],
                             "power": normalized.get("power"),
@@ -643,8 +643,12 @@ class LombardiaCollector(BaseCollector):
 
         province_codes = re.findall(r"\(([A-Z]{2})\)", text)
 
+        # the plant's own province comes first in the title ("nel comune di Melara (RO) ed opere di
+        # connessione ... Ostiglia (MN)"): a SILVIA procedure can concern a plant just over the border
+        from app.geo_enrichment import PROVINCE_TO_REGION
         for code in province_codes:
-            if code in set(PROVINCE_NAME_TO_CODE.values()):
+            # AT / MT are also 'alta / media tensione' in titles: only taken when they are Lombard codes
+            if code in set(PROVINCE_NAME_TO_CODE.values()) or (code in PROVINCE_TO_REGION and code not in ("AT", "MT")):
                 return code
 
         province_name_match = re.search(
@@ -993,3 +997,9 @@ if __name__ == "__main__":
             "|",
             item.source_url,
         )
+
+
+def _region_for(province: str | None) -> str:
+    """Region of the plant: Lombardia unless the title puts it in a province of another region."""
+    from app.geo_enrichment import PROVINCE_TO_REGION
+    return PROVINCE_TO_REGION.get((province or "").upper()) or "Lombardia"

@@ -22,6 +22,15 @@ class CarryOverKeys(unittest.TestCase):
         carry_over(old, new)
         self.assertEqual(new[0]["project_key"], "prj:a")
 
+    def test_terna_monthly_file_keeps_key(self):
+        t = "https://dati.terna.it/download-center#terna_econnextion_{}_lazio_solare_stmg_accettate"
+        old = [{"project_key": "agg:terna:a:split:1", "url": t.format("2026_10")},
+               {"project_key": "agg:terna:b", "url": t.format("2026_10").replace("lazio", "molise")}]
+        new = [{"project_key": "agg:terna:a:split:9", "url": t.format("2026_11")}]
+        audit = carry_over(old, new)
+        self.assertEqual(new[0]["project_key"], "agg:terna:a:split:1")
+        self.assertEqual(audit[0]["rule"], "terna_same_slot")
+
     def test_split_gives_key_once(self):
         u1, u2 = "https://si/976", "https://si/977"
         old = [{"project_key": "prj:mazara", "url": u1, "_dedupe_urls": [u1, u2]}]
