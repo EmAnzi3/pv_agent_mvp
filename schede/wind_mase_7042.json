@@ -1,0 +1,156 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7042",
+ "title": "Adeguamento tecnico progetto relativo ad impianto eolico localizzato nel Comune di Lacedonia (AV)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7042",
+ "source": "mase",
+ "updated": "2026-11-05",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da verificare",
+   "value": "50,4 MW",
+   "sub": "Dagli elaborati (1 occorrenze); il titolo non indica la potenza",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/345462",
+    "page": 3,
+    "document": "Lista di controllo per la valutazione preliminare",
+    "excerpt": "autorizzata (da 33 WTG a 15 WTG) e di ulteriori 14% rispetto al progetto approvato in variante del 2016 (da 15 WTG a 12 WTG), conservandone la potenza installata a 50.4MW, limita l'occupazione del suolo e le relative alt"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "12",
+   "status": "da verificare",
+   "sub": "4,20 MW ciascuno · altezza mozzo 105 m · Valore più ricorrente negli elaborati; altri valori: 33 (1), 15 (1), 11 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/345462",
+    "page": 3,
+    "document": "Lista di controllo per la valutazione preliminare",
+    "excerpt": "autorizzata (da 33 WTG a 15 WTG) e di ulteriori 14% rispetto al progetto approvato in variante del 2016 (da 15 WTG a 12 WTG), conservandone la potenza installata a 50.4MW, limita l'occupazione del suolo e le relative alt"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "AV",
+  "comuni": [
+   "Lacedonia"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Lacedonia%2C+AV%2C+Campania",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Serralonga Energia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "serralongaenergiasrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/345463",
+      "page": 1,
+      "document": "Comunicazione esi to del la valutazione",
+      "excerpt": "Serralonga Energia serralongaenergiasrl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7042"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 2,
+  "pagine": 21,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Serralonga Energia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 45.0,
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "LACEDONIA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AV",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "confermato"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "non indicata nel titolo: valore ricavato dagli elaborati"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
