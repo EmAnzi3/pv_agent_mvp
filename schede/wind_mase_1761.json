@@ -1,0 +1,659 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_1761",
+ "title": "Parco eolico \"Poggio Imperiale\" della potenza pari a 42,0 MW e infrastrutture connesse",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1761",
+ "source": "mase",
+ "updated": "2026-11-05",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "4,2 MW",
+   "sub": "Valore ricorrente negli elaborati (27 volte); il titolo riporta 42 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/236051",
+    "page": 1,
+    "document": "Avviso al pubblico del 24/04/2018",
+    "excerpt": "Paolo di Civitate (FG) per la realizzazione della sottostazione elettrica di utenza e connessione alla rete elettrica nazionale. Il progetto prevede la realizzazione di n. 10 aerogeneratori da 4,2 MW con una potenza comp"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da verificare",
+   "sub": "0,42 MW ciascuno · altezza mozzo 114 m · diametro rotore 150 m · Valore più ricorrente negli elaborati; altri valori: 6 (73), 1 (10), 14 (7)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/236051",
+    "page": 1,
+    "document": "Avviso al pubblico del 24/04/2018",
+    "excerpt": "Paolo di Civitate (FG) per la realizzazione della sottostazione elettrica di utenza e connessione alla rete elettrica nazionale. Il progetto prevede la realizzazione di n. 10 aerogeneratori da 4,2 MW con una potenza comp"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/341471",
+    "page": 4,
+    "document": "Parere CTVIA del 22/02/2019",
+    "excerpt": "realizzazione dell’impianto eolico off-shore;"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "7 giorni",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (1), 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1179424",
+    "page": 24,
+    "document": "Impianto Eolico Poggio Imperiale: Disciplinare Descrittivo e Prestazionale",
+    "excerpt": "La realizzazione del sistema di videosorveglianza sarà finalizzato al raggiungimento dei seguenti obiettivi: controllo delle aree monitorate h 24, 7 giorni su 7; ·"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Lesina",
+   "San Paolo Di Civitate",
+   "Apricena",
+   "Poggio Imperiale"
+  ],
+  "coordinate": {
+   "lat": 41.80885,
+   "lon": 15.41097,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (105 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/235292",
+    "page": 77,
+    "document": "SIA ALL.12",
+    "excerpt": "534137"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.80885,15.41097",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": [
+   {
+    "lotto": "Area D",
+    "lat": 41.81667,
+    "lon": 15.36667,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.81667,15.36667",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/235231",
+     "page": 5,
+     "document": "Stima di Producibilità",
+     "excerpt": "Poggio Imperiale è un Comune della Provincia di Foggia (Lat.: 41°49’0” Nord; Long.: 15°22’0” Est) di circa 2709 abitanti, situato a Nord Nord-Ovest del capoluogo di Provincia e distante da esso circa 60,9 Km;"
+    }
+   },
+   {
+    "lotto": "Area FV",
+    "lat": 41.80885,
+    "lon": 15.41097,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.80885,15.41097",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/235292",
+     "page": 77,
+     "document": "SIA ALL.12",
+     "excerpt": "534137"
+    }
+   }
+  ]
+ },
+ "soggetti": [
+  {
+   "name": "Renvico Italy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": "07438050960",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Chiese 72 20126 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "renvicoitaly@legalmail.it",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/236051",
+      "page": 1,
+      "document": "Avviso al pubblico del 24/04/2018",
+      "excerpt": "+39 02 67876927 renvicoitaly@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "ing.curtotti@pec.it",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/470445",
+      "page": 1,
+      "document": "Integrazioni del 08/02/2021 - PIANO PRELIMINARE DI UTILIZZO IN SITO DELLE TERRE E ROCCE DA SCAVO",
+      "excerpt": "RENVICO ITALY SRL Vial Giugno 386-71016SenSeeo FO) . . ing.curtotti@pec.it - studiocurtotti@gmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "studiocurtotti@gmail.it",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/470445",
+      "page": 1,
+      "document": "Integrazioni del 08/02/2021 - PIANO PRELIMINARE DI UTILIZZO IN SITO DELLE TERRE E ROCCE DA SCAVO",
+      "excerpt": "RENVICO ITALY SRL Vial Giugno 386-71016SenSeeo FO) . . ing.curtotti@pec.it - studiocurtotti@gmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1761"
+   }
+  },
+  {
+   "name": "Dott. Geol. Raffaele Nardone",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1179391",
+    "page": 39,
+    "document": "Progetto Definitivo Impianto Eolico Poggio Imperiale",
+    "excerpt": "Il Geologo Dott. Geol. Raffaele NARDONE"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "EGM Project S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02094310766",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Vincenzo Verrastro 15/A 85100 Potenza Pz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "egmproject@pec.it",
+     "occurrences": 2017,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1179372",
+      "page": 2,
+      "document": "Studio di Impatto Ambientale del progetto Poggio Imperiale",
+      "excerpt": "EGM PROJECT SRL - Via Vincenzo Verrastro - 15/A- 85100 Potenza info@egmproject.it - egmproject@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@egmproject.it",
+     "occurrences": 2017,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1179372",
+      "page": 2,
+      "document": "Studio di Impatto Ambientale del progetto Poggio Imperiale",
+      "excerpt": "EGM PROJECT SRL - Via Vincenzo Verrastro - 15/A- 85100 Potenza info@egmproject.it - egmproject@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "WEB Poggio Imperiale S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03266270218",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Leonardo Da Vinci 15 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "webpoggioimperiale@legalmail.it",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1265302",
+      "page": 1,
+      "document": "Riscontro alla nota n. 00169 del 17/04/2025 del Registro delle Determinazioni della UOR 089; Protocollo N.0206698/2025 del 18/04/2025",
+      "excerpt": "italia@web.energy webpoggioimperiale@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Engineering Geology S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "097126378",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1179375",
+      "page": 70,
+      "document": "Rapporto delle indagini area parco",
+      "excerpt": "VIA DEL GALITELLO 90/A TEL.097126378-Fax 09711940737"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Marco Notarnicola",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sezioneautorizzazioniambientali@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1248686",
+      "page": 24,
+      "document": "Parere della Regione Puglia Dipartimento ambiente, paesaggio e qualità urbana Sezione Autorizzazioni Ambientali , in data 22/04/2025",
+      "excerpt": "PEC sezioneautorizzazioniambientali@pec.rupar.puglia.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "8 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Recinzione e apprestamenti del cantiere",
+    "start": 0.0,
+    "end": 2.61,
+    "level": 0,
+    "duration": "9 g",
+    "summary": true
+   },
+   {
+    "name": "Realizzazione della recinzione e degli accessi al cantiere Z1",
+    "start": 0.0,
+    "end": 0.93,
+    "level": 1,
+    "duration": "4 g",
+    "summary": false
+   },
+   {
+    "name": "Allestimento di depositi, zone per lo stoccaggio dei materiali e",
+    "start": 1.39,
+    "end": 2.54,
+    "level": 1,
+    "duration": "5 g",
+    "summary": false
+   },
+   {
+    "name": "Impianti di servizio del cantiere",
+    "start": 2.94,
+    "end": 5.84,
+    "level": 0,
+    "duration": "10 g",
+    "summary": true
+   },
+   {
+    "name": "Realizzazione di impianto di messa a terra del cantiere",
+    "start": 3.0,
+    "end": 4.16,
+    "level": 1,
+    "duration": "5 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di impianto elettrico del cantiere",
+    "start": 4.62,
+    "end": 5.77,
+    "level": 1,
+    "duration": "5 g",
+    "summary": false
+   },
+   {
+    "name": "Impianto eolico a terra",
+    "start": 6.17,
+    "end": 8.31,
+    "level": 0,
+    "duration": "220 g",
+    "summary": true
+   },
+   {
+    "name": "Scavi e rinterri",
+    "start": 6.17,
+    "end": 8.31,
+    "level": 1,
+    "duration": "50 g",
+    "summary": true
+   },
+   {
+    "name": "Scavo a sezione obbligata",
+    "start": 6.23,
+    "end": 8.31,
+    "level": 2,
+    "duration": "30 g",
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 8.31,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1179390",
+   "page": 2,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "19",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "20",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "21",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "22",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "23",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "24",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "25",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "26",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "27",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "28",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "29",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "30",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "31",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "32",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "33",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "34",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "35",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "36",
+     "start": 8.077,
+     "end": 8.308
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "7 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (1), 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1179424",
+    "page": 24,
+    "document": "Impianto Eolico Poggio Imperiale: Disciplinare Descrittivo e Prestazionale",
+    "excerpt": "La realizzazione del sistema di videosorveglianza sarà finalizzato al raggiungimento dei seguenti obiettivi: controllo delle aree monitorate h 24, 7 giorni su 7; ·"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1179390"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 226,
+  "pagine": 4935,
+  "completa": false,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Renvico Italy S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 42.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "POGGIO IMPERIALE, LESINA, APRICENA, SAN PAOLO DI CIVITATE",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 42 MW, gli elaborati 4,2 MW"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "305 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
