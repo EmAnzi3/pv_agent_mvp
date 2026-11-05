@@ -1,0 +1,316 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_8930",
+ "title": "Progetto di un impianto di produzione di energia elettrica da fonte eolica denominato \"La Montagnola\" da realizzarsi nei comuni di Piana degli Albanesi (PA) e Monreale (PA) con potenza di 42 MW e relative opere di connessione alla rete.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8930",
+ "source": "mase",
+ "updated": "2026-11-05",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "42 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8930",
+    "excerpt": "42 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da verificare",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 5 (21), 8 (14), 6 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1416235",
+    "page": 8,
+    "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere della CT PNRR-PNIEC del 18/06/2026",
+    "excerpt": "Figura 1: Inquadramento territoriale degli aerogeneratori del Parco Eolico, cavidotti e Stazione Utente, come in ultima riconfigura a destra (5 aerogeneratori), a sinistra precedente layout (7 aerogeneratori) (cfr. Tav_3"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1416235",
+    "page": 18,
+    "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere della CT PNRR-PNIEC del 18/06/2026",
+    "excerpt": "Per quanto riguarda gli aerogeneratori A03 e A05, essi interferiscono con un impianto agrivoltaico ID 7773,"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12-14 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 8 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/773697",
+    "page": 16,
+    "document": "Piano di Monitoraggio Ambientale",
+    "excerpt": "della componente ambientale suolo e sottosuolo, impatti generalmente transitori in quanto esse sono limitate alla durata del cantiere, che coprono un arco temporale di circa 12-14 mesi. Tali operazioni prevedono anche le"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "PA",
+  "comuni": [
+   "Monreale",
+   "Piana Degli Albanesi"
+  ],
+  "coordinate": {
+   "lat": 37.91941,
+   "lon": 13.30973,
+   "tipo": "centro della tavola georeferenziata di progetto (30 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/773720",
+    "page": 1,
+    "document": "Carta dei Vincoli su ortofoto",
+    "excerpt": "Carta dei Vincoli su ortofoto"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.91941,13.30973",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Edpr Sicilia Wind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": "11072450965",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Roberto Lepetit 8/10 20124 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "edprsiciliawindsrl@legalmail.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/773696",
+      "page": 17,
+      "document": "Relazione Terre e rocce da Scavo",
+      "excerpt": "PEC edprsiciliawindsrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8930"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Edpr Sicilia DUE S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12332170963",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Roberto Lepetit 8/10 20124 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "edprsicilia.2@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/889923",
+      "page": 1,
+      "document": "Integrazioni del 16/08/2023 - Comunicazione Cod. MYTERNA",
+      "excerpt": "(MI), Via Roberto Lepetit 8/10 CAP 20124 – P. IVA 12332170963 – Indirizzo PEC edprsicilia.2@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Piana Degli Albanesi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "11480510962",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Fabio Filzi 7 20124 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "pianadeglialbanesi2020@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338192",
+      "page": 1,
+      "document": "Osservazioni della Società Piana degli Albanesi s.r.l. in data 3/12/2025",
+      "excerpt": "In data 2 Dec 2025 10:12:45, pianadeglialbanesi2020@legalmail.it ha scritto:"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Vittorio Cannizzaro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vittorio.cannizzaro@edp.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1123012",
+      "page": 3,
+      "document": "Integrazioni del 27/07/2024 - Rel_001 Integr._ Relazione di Sintesi Soprintendenza",
+      "excerpt": "Il referente per la pratica è l’Ing. Vittorio Cannizzaro – cell: +39 345 298 68 46 - email: vittorio.cannizzaro@edp.com."
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "34529868",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1123012",
+      "page": 3,
+      "document": "Integrazioni del 27/07/2024 - Rel_001 Integr._ Relazione di Sintesi Soprintendenza",
+      "excerpt": "Il referente per la pratica è l’Ing. Vittorio Cannizzaro – cell: +39 345 298 68 46 - email:"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alba Wind S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollo@pec.pianalbanesi.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/831224",
+      "page": 1,
+      "document": "Controdeduzioni della società Edpr Sicilia Due Srl del 05/04/2023",
+      "excerpt": "COMUNE DI PIANA DEGLI ALBANESI PEC: protocollo@pec.pianalbanesi.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12-14 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "12-14 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 8 mesi (1), 1 mese (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/773697",
+    "page": 16,
+    "document": "Piano di Monitoraggio Ambientale",
+    "excerpt": "della componente ambientale suolo e sottosuolo, impatti generalmente transitori in quanto esse sono limitate alla durata del cantiere, che coprono un arco temporale di circa 12-14 mesi. Tali operazioni prevedono anche le"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 307,
+  "pagine": 1770,
+  "completa": false,
+  "da_leggere": 7
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "EDPR Sicilia Wind S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 42.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "PIANA DEGLI ALBANESI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "18 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
