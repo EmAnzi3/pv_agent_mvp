@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico composto da 8 aerogeneratori della potenza nominale di 6 MW, e della potenza complessiva di 48 MW e delle relative opere di connessione da realizzarsi nei Comuni di Mazara del Vallo e Marsala, in località \"Borgo Chitarra\", e nei Comuni di Salemi, Castelvetrano, Santa Ninfea, e Partanna, in provincia di Trapani, comprensivo di un sistema di accumulo con batterie agli ioni di litio.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7848",
  "source": "mase",
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "8",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 100 (4), 111 (2), 180 (2)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 6 (7), 100 (6), 111 (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/488586",
     "page": 1,
@@ -71,16 +71,26 @@
    "lon": 12.82565,
    "tipo": "centro della tavola georeferenziata di progetto (21 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/746089",
+    "url": "https://va.mite.gov.it/File/Documento/697787",
     "page": 1,
-    "document": "Integrazioni del 09/01/2023 - Planimetria catasale con DPA Fg.4 Castevetrano",
-    "excerpt": "Integrazioni del 09/01/2023 - Planimetria catasale con DPA Fg.4 Castevetrano"
+    "document": "documento",
+    "excerpt": "Planimetria catastale con DPA Foglio di mappa 4 - Castelvetrano"
    }
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.71498,12.82565",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 37.78742,
+   "lon": 12.63585,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488130",
+    "page": 46,
+    "document": "RELAZIONE DI PREVISIONE DELL'IMPATTO ACUSTICO DELL'IMPIANTO",
+    "excerpt": "291821 4184862"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.78742,12.63585"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -99,7 +109,7 @@
     {
      "type": "E-mail",
      "value": "info@tenproject.it",
-     "occurrences": 91,
+     "occurrences": 107,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/488135",
       "page": 1,
@@ -131,12 +141,23 @@
     {
      "type": "PEC",
      "value": "elettrostudioenergiaspa@cgn.legalmail.it",
-     "occurrences": 3,
+     "occurrences": 5,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/488586",
       "page": 1,
       "document": "Avviso al Pubblico del 05/05/2021",
       "excerpt": "Via Lavaredo, 44/52 – 30174 Venezia (VE) P. IVA 03647930274 – Pec: elettrostudioenergiaspa@cgn.legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@elettrostudio.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613500",
+      "page": 1,
+      "document": "Controdeduzioni della Società Repower Renewable Spa alle osservazioni presentate dalla Società Lebeccio Srl",
+      "excerpt": "Repower Renewable spa via Lavaredo 44/52 - 30174 Mestre Partita iva e codice fiscale T +39 0415349997 Società diretta e coordinata da {VE) 03647930274 info@elettrostudio.it"
      }
     }
    ],
@@ -186,6 +207,93 @@
  ],
  "altri_soggetti": [
   {
+   "name": "Edison Rinnovabili S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12921540154",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rinnovabili@pec.edison.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/736145",
+      "page": 1,
+      "document": "Osservazioni della Società Edison Rinnovabili Spa in data 02/12/2022",
+      "excerpt": "PEC: rinnovabili@pec.edison.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ignazio.sciortino@gmail.com",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/697719",
+      "page": 1,
+      "document": "documento",
+      "excerpt": "Studio d'Ingegneria Sciortino - Corso Pisani 22 - 90129 Palermo Cell: +39 329 6276508 - e-mail: ignazio.sciortino@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3296276508",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/697719",
+      "page": 1,
+      "document": "documento",
+      "excerpt": "Studio d'Ingegneria Sciortino - Corso Pisani 22 - 90129 Palermo Cell: +39 329 6276508 - e-mail: ignazio.sciortino@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Libeccio S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01616120893",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lanza 5 96017 Noto Sr",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "libeccio@pec.ferasrl.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/518681",
+      "page": 1,
+      "document": "Osservazioni della Società Libeccio Srl data 14/07/2021",
+      "excerpt": "Amm.ne: Via Antonio da Recanate,1 – 20124 Milano – Tel. 0262690471 – Fax 02 32066804 e-mail libeccio@pec.ferasrl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0262690471",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/518681",
+      "page": 1,
+      "document": "Osservazioni della Società Libeccio Srl data 14/07/2021",
+      "excerpt": "Amm.ne: Via Antonio da Recanate,1 – 20124 Milano – Tel. 0262690471 – Fax 02 32066804 e-mail libeccio@pec.ferasrl.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Sinergo S.p.A.",
    "kind": "società",
    "roles": [],
@@ -198,7 +306,7 @@
     {
      "type": "E-mail",
      "value": "info@sinergospa.com",
-     "occurrences": 100,
+     "occurrences": 117,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/613870",
       "page": 1,
@@ -220,12 +328,47 @@
     {
      "type": "Telefono",
      "value": "0413642511",
-     "occurrences": 30,
+     "occurrences": 42,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/613870",
       "page": 1,
       "document": "Integrazioni del 01/04/2022 - RELAZIONE SULLO STATO DELL'AVIFAUNA E DELLA CHIROTTEROFAUNA",
       "excerpt": "30030 - Maerne di Martellago - Venezia - Italy tel 041.3642511 - fax 041.640481"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ingegneria Progetti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "priolo@ingegneriaprogetti.com",
+     "occurrences": 49,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613870",
+      "page": 1,
+      "document": "Integrazioni del 01/04/2022 - RELAZIONE SULLO STATO DELL'AVIFAUNA E DELLA CHIROTTEROFAUNA",
+      "excerpt": "t +39 091 640 5229 priolo@ingegneriaprogetti.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "pupella@ingegneriaprogetti.com",
+     "occurrences": 46,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613870",
+      "page": 1,
+      "document": "Integrazioni del 01/04/2022 - RELAZIONE SULLO STATO DELL'AVIFAUNA E DELLA CHIROTTEROFAUNA",
+      "excerpt": "priolo@ingegneriaprogetti.com pupella@ingegneriaprogetti.com"
      }
     }
    ],
@@ -246,9 +389,9 @@
      "value": "francesco.chiri@postacertificata.org",
      "occurrences": 31,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/746040",
+      "url": "https://va.mite.gov.it/File/Documento/697846",
       "page": 1,
-      "document": "Integrazioni del 09/01/2023 - Elenco ditte catastali",
+      "document": "documento",
       "excerpt": "Studio Tecnico Ing. Francesco Chiri - Via Marco Tullio Cicerone n 23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 7481009 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
      }
     },
@@ -257,9 +400,9 @@
      "value": "info@studiochiri.it",
      "occurrences": 31,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/746040",
+      "url": "https://va.mite.gov.it/File/Documento/697846",
       "page": 1,
-      "document": "Integrazioni del 09/01/2023 - Elenco ditte catastali",
+      "document": "documento",
       "excerpt": "Studio Tecnico Ing. Francesco Chiri - Via Marco Tullio Cicerone n 23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 7481009 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
      }
     },
@@ -268,45 +411,10 @@
      "value": "0916195726",
      "occurrences": 31,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/746040",
+      "url": "https://va.mite.gov.it/File/Documento/697846",
       "page": 1,
-      "document": "Integrazioni del 09/01/2023 - Elenco ditte catastali",
+      "document": "documento",
       "excerpt": "Studio Tecnico Ing. Francesco Chiri - Via Marco Tullio Cicerone n 23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 7481009 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Ingegneria Progetti S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "priolo@ingegneriaprogetti.com",
-     "occurrences": 34,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/613870",
-      "page": 1,
-      "document": "Integrazioni del 01/04/2022 - RELAZIONE SULLO STATO DELL'AVIFAUNA E DELLA CHIROTTEROFAUNA",
-      "excerpt": "t +39 091 640 5229 priolo@ingegneriaprogetti.com"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "pupella@ingegneriaprogetti.com",
-     "occurrences": 34,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/613870",
-      "page": 1,
-      "document": "Integrazioni del 01/04/2022 - RELAZIONE SULLO STATO DELL'AVIFAUNA E DELLA CHIROTTEROFAUNA",
-      "excerpt": "priolo@ingegneriaprogetti.com pupella@ingegneriaprogetti.com"
      }
     }
    ],
@@ -337,7 +445,7 @@
    "source": null
   },
   {
-   "name": "Edison Rinnovabili S.p.A.",
+   "name": "Società VGE 03 S.r.l.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -347,25 +455,14 @@
    "office": null,
    "contacts": [
     {
-     "type": "E-mail",
-     "value": "ignazio.sciortino@gmail.com",
-     "occurrences": 14,
+     "type": "PEC",
+     "value": "vge03@legalmail.it",
+     "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/746041",
-      "page": 1,
-      "document": "Integrazioni del 09/01/2023 - Relazione geologica",
-      "excerpt": "Studio d'Ingegneria Sciortino - Corso Pisani 22 - 90129 Palermo Cell: +39 329 6276508 - e-mail: ignazio.sciortino@gmail.com"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "3296276508",
-     "occurrences": 14,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/746041",
-      "page": 1,
-      "document": "Integrazioni del 09/01/2023 - Relazione geologica",
-      "excerpt": "Studio d'Ingegneria Sciortino - Corso Pisani 22 - 90129 Palermo Cell: +39 329 6276508 - e-mail: ignazio.sciortino@gmail.com"
+      "url": "https://va.mite.gov.it/File/Documento/753231",
+      "page": 6,
+      "document": "Osservazioni della Società VGE 03 Srl in data 22/12/2022",
+      "excerpt": "p.c Spett.le Società VGE 03 S.r.l. vge03@legalmail.it"
      }
     }
    ],
@@ -528,9 +625,9 @@
  },
  "documentazione": {
   "documenti": 326,
-  "pagine": 2815,
-  "completa": false,
-  "da_leggere": 26
+  "pagine": 3488,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -566,7 +663,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "207 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "216 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
