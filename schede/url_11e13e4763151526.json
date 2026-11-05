@@ -1,0 +1,879 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "url:11e13e4763151526",
+ "title": "Progetto di un impianto agrovoltaico denominato \"Cluster B\", di potenza pari a 123,88 MW e delle relative opere di connessione alla RTN da realizzarsi nei comuni di Salemi, Mazzara del Vallo, Santa Ninfa e Castelvetrano (TP).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9501",
+ "source": "mase",
+ "updated": "2026-11-05",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "123,88 MW",
+   "sub": "Suddivisa in 8 lotti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9501",
+    "excerpt": "123,88 MW"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico · tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1443724",
+    "page": 2,
+    "document": "Elenco Elaborati della documentazione tecnica",
+    "excerpt": "Cronoprogramma - Impianto Agrovoltaico Cluster B"
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "157 ha",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 164 ha (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1443742",
+    "page": 7,
+    "document": "Integrazioni del 27/10/2026 - PIANO DI DISMISSIONE E RIPRISTINO DEI LUOGHI",
+    "excerpt": "DESCRIZIONE GENERALE DEL PROGETTO ESECUTIVO L’area d’intervento si estende catastalmente per una superficie totale di 157 ha e area d’impianto di 92,40 ha. L’area d’impianto, al fine di garantire la sicurezza, sarà delim"
+   }
+  },
+  {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "42,4 ha",
+   "status": "da documenti",
+   "sub": "27% dell'area",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1443742",
+    "page": 7,
+    "document": "Integrazioni del 27/10/2026 - PIANO DI DISMISSIONE E RIPRISTINO DEI LUOGHI",
+    "excerpt": "Hi-MO 9 LR8-66HYD-660M per una potenza complessiva pari a 96,89 MWp. I moduli occuperanno una superficie totale netta pari a circa 42,4 ha, definiti come la somma delle superfici individuate dal profilo esterno di massim"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "14 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 20 MESI (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/776394",
+    "page": 122,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "dell’Autorizzazione Unica, previa realizzazione del progetto esecutivo. Si stima una durata complessiva dei lavori pari a 14 mesi. Per il dettaglio delle tempistiche e delle attività si faccia riferimento agli elaborati "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "TP",
+  "comuni": [
+   "Salemi",
+   "Mazara Del Vallo",
+   "Santa Ninfa",
+   "Castelvetrano"
+  ],
+  "coordinate": {
+   "lat": 37.76132,
+   "lon": 12.73052,
+   "tipo": "coordinate del sito dichiarate negli elaborati (158 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/776394",
+    "page": 29,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "- Latitudine: 37°46'17.86\"N -"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.76132,12.73052",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": [
+   {
+    "lotto": "Campo 3",
+    "lat": 37.772,
+    "lon": 12.70713,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.77200,12.70713",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1443696",
+     "page": 4,
+     "document": "RELAZIONE CAMPI ELETTROMAGNETICI",
+     "excerpt": "CAMPO 3 37° 46’ 19,19” N 12° 42’ 25,66” E"
+    }
+   },
+   {
+    "lotto": "Campo 4",
+    "lat": 37.76658,
+    "lon": 12.71557,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.76658,12.71557",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1443696",
+     "page": 4,
+     "document": "RELAZIONE CAMPI ELETTROMAGNETICI",
+     "excerpt": "CAMPO 4 37° 45’ 59,69” N 12° 42’ 56,05” E"
+    }
+   },
+   {
+    "lotto": "Campo 9",
+    "lat": 37.75382,
+    "lon": 12.78488,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.75382,12.78488",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1443696",
+     "page": 4,
+     "document": "RELAZIONE CAMPI ELETTROMAGNETICI",
+     "excerpt": "CAMPO 9 37° 45’ 13,75” N 12° 47’ 05,56” E"
+    }
+   },
+   {
+    "lotto": "Campo 10",
+    "lat": 37.75155,
+    "lon": 12.75463,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.75155,12.75463",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1443696",
+     "page": 4,
+     "document": "RELAZIONE CAMPI ELETTROMAGNETICI",
+     "excerpt": "CAMPO 10 37° 45’ 05,58” N 12° 45’ 16,66” E"
+    }
+   }
+  ]
+ },
+ "soggetti": [
+  {
+   "name": "Absolute Energy Sicilia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "15502321001",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Di Villa Emiliani 10 00197 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "absoluteenergysicilia@legalmail.it",
+     "occurrences": 143,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443693",
+      "page": 1,
+      "document": "RELAZIONE TECNICA GENERALE",
+      "excerpt": "P.IVA/C.F: 15502321001 · PEC: absoluteenergysicilia@legalmail.it · https://ae-capital.com/"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "jpec13219.20261002131123.02815.5009.1.2@pec.aruba.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443723",
+      "page": 88,
+      "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
+      "excerpt": "+39 3755121893 Serial ID: Oct-02-2026 13:17:07 jpec13219.20261002131123.02815.5009.1.2@pec.aruba.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "jpec13219.20261002130015.38436.5015.1.2@pec.aruba.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443723",
+      "page": 104,
+      "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
+      "excerpt": "+39 3755121893 Serial ID: Oct-02-2026 13:12:57 jpec13219.20261002130015.38436.5015.1.2@pec.aruba.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "jpec13219.20261002131123.48125.5014.1.2@pec.aruba.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443723",
+      "page": 112,
+      "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
+      "excerpt": "+39 3755121893 Serial ID: Oct-02-2026 13:17:31 jpec13219.20261002131123.48125.5014.1.2@pec.aruba.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "jpec13219.20261002124501.59907.5002.1.2@pec.aruba.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443723",
+      "page": 127,
+      "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
+      "excerpt": "+39 3755121896 Serial ID: Oct-02-2026 12:47:16 jpec13219.20261002124501.59907.5002.1.2@pec.aruba.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "domenico.passariello@absolute-energy.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443723",
+      "page": 138,
+      "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
+      "excerpt": "C1 Confidential Da: Domenico Passariello <domenico.passariello@absolute-energy.it>"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9501"
+   }
+  },
+  {
+   "name": "Ing. Francesco Lioniello",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1443701",
+    "page": 1,
+    "document": "PLANIMETRIA ELETTROMECCANICA STAZIONE 220_30 KV",
+    "excerpt": "PROGETTAZIONE: Ing. Francesco Lioniello F. LIONIELLO"
+   }
+  },
+  {
+   "name": "Dr. Geol. Giuseppe Borzì",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "borzigiuseppe@open.legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443743",
+      "page": 1,
+      "document": "Integrazioni del 27/10/2026 - RELAZIONE IDROGEOLOGICA SCAVI CON BENNA INDAGINI ELETTROMAGNETICHE",
+      "excerpt": "via MARCHESE, 14, 95047 Paternò (CT) tel. 347/54.49.239 E-mail giu.bor@tiscali.it P.E.C. borzigiuseppe@open.legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "geolgiubor@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443743",
+      "page": 2,
+      "document": "Integrazioni del 27/10/2026 - RELAZIONE IDROGEOLOGICA SCAVI CON BENNA INDAGINI ELETTROMAGNETICHE",
+      "excerpt": "Via marchese, 14 – 95047 Paternò (CT) Tel 347/54.49.239 Email to geolgiubor@gmail.com pec borzigiuseppe@open.legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1443743",
+    "page": 46,
+    "document": "Integrazioni del 27/10/2026 - RELAZIONE IDROGEOLOGICA SCAVI CON BENNA INDAGINI ELETTROMAGNETICHE",
+    "excerpt": "Il Geologo Dr. Giuseppe Borzì"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Energia Verde Trapani S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "06734140822",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energiaverdetrapani@pec.edison.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443723",
+      "page": 138,
+      "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
+      "excerpt": "energiaverdetrapani@pec.edison.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "E-Prima S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "e-prima@pec.it",
+     "occurrences": 98,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443693",
+      "page": 1,
+      "document": "RELAZIONE TECNICA GENERALE",
+      "excerpt": "P.IVA/C.F: 05669850876 · PEC: e-prima@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@e-prima.eu",
+     "occurrences": 190,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443702",
+      "page": 2,
+      "document": "CAPITOLATO SPECIALE DI APPALTO OPERE DI MITIGAZIONE E COMPENSAZIONE AMBIENTALE",
+      "excerpt": "1 E-Prima s.r.l. – via Ulrico Hoepli 3 - 20121 Milano (MI) tel. 333/9533392 - P. IVA 05669850876 - mail: info@e-prima.eu"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3339533392",
+     "occurrences": 183,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443702",
+      "page": 2,
+      "document": "CAPITOLATO SPECIALE DI APPALTO OPERE DI MITIGAZIONE E COMPENSAZIONE AMBIENTALE",
+      "excerpt": "1 E-Prima s.r.l. – via Ulrico Hoepli 3 - 20121 Milano (MI) tel. 333/9533392 - P. IVA 05669850876 - mail: info@e-prima.eu"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0952900613",
+     "occurrences": 66,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443720",
+      "page": 2,
+      "document": "Piano di Monitoraggio Ambientale",
+      "excerpt": "E-prima srl - Via Ulrico Hoepli 3 20121 Milano (Mi) tel:0952900613 - cell:3339533392 P. IVA 05669850876 - email:info@e-prima.eu"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "095914116",
+     "occurrences": 33,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443708",
+      "page": 2,
+      "document": "RELAZIONE IDROLOGICO-IDRAULICA",
+      "excerpt": "I E-Prima s.r.l.–via Manganelli 20/G 95030 Nicolosi (CT) tel. 095 914116 - 333/9533392 - P. IVA 05669850876 mail: info@e-prima.eu"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Eolpower Investments S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0814243089",
+     "occurrences": 79,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443701",
+      "page": 1,
+      "document": "PLANIMETRIA ELETTROMECCANICA STAZIONE 220_30 KV",
+      "excerpt": "Absolute Energy Sicilia S.R.L. - Via Virginio Orsini, 19 - 00192 Roma Eolpower Investments srl - Via G. Carducci, 29 - 80121 Napoli (NA) Tel. 0814243089"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Paola D’Aguanno",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollo@pec.cittadisalemi.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443723",
+      "page": 106,
+      "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
+      "excerpt": "Arch. Paola D’Aguanno PEC: protocollo@pec.cittadisalemi.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "p.daguanno@cittadisalemi.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443723",
+      "page": 100,
+      "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
+      "excerpt": "RIFERIMENTI: arch. Paola D’Aguanno p.daguanno@cittadisalemi.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Qubix S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0497801994",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443693",
+      "page": 20,
+      "document": "RELAZIONE TECNICA GENERALE",
+      "excerpt": "Tel. +39 049 7801994 — Fax +39 049 775657 = Wi wow qui QUBDI S.p.A. Networking solutions — Via Canada, 22/A — 35127 Padova — Italy"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "20 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "FASE DI CANTIERE",
+    "start": 0.08,
+    "end": 19.89,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Attività preliminari di accantieramento",
+    "start": 0.08,
+    "end": 3.86,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Preparazione della viabilità di accesso ai cantieri e alle aree di stoccaggio",
+    "start": 0.08,
+    "end": 3.86,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "e alle aree di stoccaggio",
+    "start": 0.2,
+    "end": 3.74,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione dei cantieri e preparazione delle aree di stoccaggio",
+    "start": 0.08,
+    "end": 3.86,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "aree di stoccaggio",
+    "start": 0.2,
+    "end": 3.74,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Pulizia Terreni",
+    "start": 0.08,
+    "end": 3.86,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Picchettamento aree interessate",
+    "start": 0.08,
+    "end": 3.86,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Rifornimento delle aree di stoccaggio",
+    "start": 0.08,
+    "end": 5.78,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavo fossi di guardia, posa cavidotti e rinterri per tutta l’area di interesse",
+    "start": 0.08,
+    "end": 5.78,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "per tutta l’area di interesse",
+    "start": 0.2,
+    "end": 5.66,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Recinzione delle aree di impianto",
+    "start": 0.08,
+    "end": 5.78,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione del parco fotovoltaico",
+    "start": 1.12,
+    "end": 6.85,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Infissione delle strutture nel terreno",
+    "start": 1.12,
+    "end": 6.85,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio telai metallici di supporto dei moduli",
+    "start": 1.12,
+    "end": 6.85,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio moduli (o pannelli)",
+    "start": 1.12,
+    "end": 6.85,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle cabine di raccolta e trasformazione",
+    "start": 3.87,
+    "end": 6.85,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "trasformazione",
+    "start": 3.99,
+    "end": 6.74,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cablaggi elettrici",
+    "start": 5.79,
+    "end": 11.17,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa cavi dalle cabine di raccolta alla SSE ABSOLUTE ENERGY SICILIA",
+    "start": 10.01,
+    "end": 15.93,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ABSOLUTE ENERGY SICILIA",
+    "start": 10.14,
+    "end": 15.81,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Interventi di mitigazione ambientale",
+    "start": 2.98,
+    "end": 8.96,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Rimozione aree di cantiere, ripristini e pulizia delle aree di lavoro",
+    "start": 10.01,
+    "end": 15.93,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "delle aree di lavoro",
+    "start": 10.14,
+    "end": 15.81,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "COLLAUDO E MESSA IN ESERCIZIO",
+    "start": 15.94,
+    "end": 19.89,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Verifica dell’intervento",
+    "start": 15.94,
+    "end": 19.89,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Messa in esercizio",
+    "start": 15.94,
+    "end": 19.89,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "DURATA PREVISTA DEI LAVORI",
+    "start": 0.08,
+    "end": 19.89,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 19.89,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1443718",
+   "page": 2,
+   "document": "Cronoprogramma - Impianto Agrovoltaico Cluster B",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "Lug",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "Lug Ago",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "Ago Set",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "Set Ott",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "Ott Nov",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "Nov Dic",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "Dic Gen",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "Gen Feb",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "Feb Mar",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "Mar Apr",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "Apr Mag",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "Mag Giu",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "Giu Lug",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "Lug Ago",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "Ago Set",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "Set Ott",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "Ott Nov",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "Nov Dic",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "Dic Gen",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "Gen Feb",
+     "start": 19.0,
+     "end": 20.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "14 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 MESI (3), 2 settimane (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/776394",
+    "page": 122,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "dell’Autorizzazione Unica, previa realizzazione del progetto esecutivo. Si stima una durata complessiva dei lavori pari a 14 mesi. Per il dettaglio delle tempistiche e delle attività si faccia riferimento agli elaborati "
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma - Impianto Agrovoltaico Cluster B",
+   "url": "https://va.mite.gov.it/File/Documento/1443718"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/776339"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 217,
+  "pagine": 2042,
+  "completa": false,
+  "da_leggere": 97
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Absolute Energy Sicilia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 123.88,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SALEMI, MAZZARA DEL VALLO, SANTA NINFA, CASTELVETRANO",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TP",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "53 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
