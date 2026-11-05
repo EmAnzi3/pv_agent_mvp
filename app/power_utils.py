@@ -13,14 +13,14 @@ POWER_RE = re.compile(
     r"(?:\d+)"
     r")"
     r"\s*"
-    r"(?P<unit>MWp|MW|kWp|KWp|kW|KW)"
+    r"(?P<unit>MWp|MWn|MWe|MWac|MW|kWp|KWp|kWn|kWe|kWac|kW|KW)"
     r"\b",
     flags=re.IGNORECASE,
 )
 
 POWER_RE_UNIT_FIRST = re.compile(
     r"\b"
-    r"(?P<unit>MWp|MW|kWp|KWp|kW|KW)"
+    r"(?P<unit>MWp|MWn|MWe|MWac|MW|kWp|KWp|kWn|kWe|kWac|kW|KW)"
     r"\b"
     r"\s*[:=]?\s*"
     r"(?P<value>"
@@ -33,6 +33,12 @@ POWER_RE_UNIT_FIRST = re.compile(
     r"(?![\d.,'?])",
     flags=re.IGNORECASE,
 )
+
+
+def _norm_unit(unit: str) -> str:
+    """kWn/kWe/kWac (nominal, electric, AC) are kW; MWn/MWe/MWac are MW."""
+    u = unit.lower()
+    return {"kwn": "kw", "kwe": "kw", "kwac": "kw", "mwn": "mw", "mwe": "mw", "mwac": "mw"}.get(u, u)
 
 
 def _find_power_match(text: str):
@@ -65,7 +71,7 @@ def parse_power_to_mw(text: str | None) -> float | None:
         return None
 
     raw_value = match.group("value")
-    unit = match.group("unit").lower()
+    unit = _norm_unit(match.group("unit"))
 
     value = _parse_number(raw_value, unit)
     if value is None:

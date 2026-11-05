@@ -13,6 +13,8 @@ matching by the official URLs (url + _dedupe_urls). Rules, conservative:
      with the largest overlap (each previous key is given to one record only);
   3. a record that already holds a previous key by itself is never changed;
   4. no match, no change (new projects keep their new key).
+Terna Econnextion aggregates (one record per region / technology / status) are matched first by that
+slot: their URL carries the month of the Terna file (..._2026_10_lazio_...), which changes every month.
 Every reassignment goes to the audit CSV.
 """
 from __future__ import annotations
@@ -40,6 +42,16 @@ def urls_of(row: dict[str, Any]) -> set[str]:
     return {u for u in out if u.startswith("http")}
 
 
+def terna_slot(row: dict[str, Any]) -> str:
+    """'dati.terna.it/...#terna_econnextion_2026_11_lazio_solare_stmg_accettate' -> 'lazio_solare_stmg_accettate'."""
+    import re
+    url = str(row.get("url") or "")
+    if "dati.terna.it" not in url:
+        return ""
+    m = re.search(r"terna_econnextion_\d{4}_\d{2}_(.+)$", url)
+    return m.group(1) if m else ""
+
+
 def carry_over(old_rows: list[dict[str, Any]], new_rows: list[dict[str, Any]]) -> list[dict[str, str]]:
     old_by_key = {str(r.get("project_key")): r for r in old_rows if r.get("project_key")}
     base_owner: dict[str, set[str]] = defaultdict(set)
@@ -64,6 +76,18 @@ def carry_over(old_rows: list[dict[str, Any]], new_rows: list[dict[str, Any]]) -
                       "url": str(row.get("url") or ""), "title": str(row.get("title") or "")[:160]})
 
     pending = [r for r in new_rows if str(r.get("project_key") or "") not in old_by_key]
+    slot_owner: dict[str, set[str]] = defaultdict(set)
+    for key, r in old_by_key.items():
+        if terna_slot(r):
+            slot_owner[terna_slot(r)].add(key)
+    after_terna = []
+    for row in pending:  # rule 0: Terna aggregates, same region / technology / status
+        owners = slot_owner.get(terna_slot(row), set()) if terna_slot(row) else set()
+        if len(owners) == 1 and next(iter(owners)) not in used:
+            assign(row, next(iter(owners)), "terna_same_slot")
+        else:
+            after_terna.append(row)
+    pending = after_terna
     rest = []
     for row in pending:  # rule 1
         owners = base_owner.get(str(row.get("url") or "").strip(), set())
