@@ -5,7 +5,7 @@
  "title": "Parco Eolico denominato \"Appia Energia\", da realizzare in agro dei comuni di Mesagne, Torre S. Susanna, San Pancrazio Salentino ed Erchie (BR), della potenza di 49,6 MW",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8357",
  "source": "mase",
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "8",
    "status": "da documenti",
-   "sub": "6,20 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 15 (7), 7 (6), 3 (6)",
+   "sub": "6,20 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 15 (12), 7 (9), 3 (8)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/606827",
     "page": 3,
@@ -45,11 +45,24 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "24 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 48,7 MW (1), 18 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1254742",
+    "page": 6,
+    "document": "Allegato al Decreto della Presidenza del Consiglio dei Ministri - Parere della Commissione Tecnica PNRR - PNIEC del 16/06/2023",
+    "excerpt": "MWp e un sistema di accumulo della potenza nominale di 24 MW e relative opere di connessione alla rete."
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "8 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (2), 25 mesi (1), 10 mesi (1)",
+   "sub": "Inizio lavori 30/03/2023 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 3 mesi (2), 20 mesi (2), 25 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1254742",
     "page": 45,
@@ -66,9 +79,9 @@
    "Torre Santa Susanna"
   ],
   "coordinate": {
-   "lat": 40.50984,
-   "lon": 17.76971,
-   "tipo": "centro della tavola georeferenziata di progetto (43 riferimenti concordi)",
+   "lat": 40.51516,
+   "lon": 17.76759,
+   "tipo": "centro della tavola georeferenziata di progetto (244 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/606836",
     "page": 4,
@@ -76,7 +89,7 @@
     "excerpt": "Studio Ecologico Vegetazionale-Repertorio cartografico-Target di conservazione e interferenze progetto"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.50984,17.76971",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.51516,17.76759",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -114,6 +127,17 @@
       "page": 1,
       "document": "Integrazioni del 13/02/2023 - Riscontro nota CTVA 0006972: Integrazione documentale procedura di VIA",
       "excerpt": "Tel: Tel: +39 0654832107 energialevantesrl@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "tecnico@insesrl.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1314820",
+      "page": 1,
+      "document": "Relazione di Valutazione Preliminare Ambientale",
+      "excerpt": "SSE Renewables Italy srl mail: tecnico@insesrl.it"
      }
     },
     {
@@ -170,7 +194,7 @@
     {
      "type": "PEC",
      "value": "enersat@pec.it",
-     "occurrences": 151,
+     "occurrences": 183,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/606827",
       "page": 1,
@@ -223,7 +247,7 @@
     {
      "type": "PEC",
      "value": "peolicobanzi@legalmail.it",
-     "occurrences": 106,
+     "occurrences": 124,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/606828",
       "page": 1,
@@ -340,6 +364,33 @@
    }
   },
   {
+   "name": "Sorgenia Libeccio S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12804430960",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Alessandro Algardi 4 20148 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sorgenia.libeccio@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1006982",
+      "page": 4,
+      "document": "Osservazioni del Signor Matteo Ceroti, in qualità di legale rappresentante della Società SORGENIA LIBECCIO SRL, in data 13/03/2024",
+      "excerpt": "C.F. e Partita IVA 12804430960 PEC sorgenia.libeccio@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "MSC Innovative Solutions S.r.l.s.",
    "kind": "società",
    "roles": [],
@@ -412,11 +463,27 @@
    "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 30/03/2023, ma l'iter è proseguito; ultimo documento o atto del 13/11/2025: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
   "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "30/03/2023",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/606825",
+     "page": 5,
+     "document": "Schede ostacoli ENAC-per navigazione aerea",
+     "excerpt": "Data prevista per l'inizio lavori: 30 marzo 2023 Data completamento lavori : 30 dicembre 2023"
+    }
+   },
    {
     "voce": "Entrata in esercizio",
     "livello": "documentata",
@@ -427,6 +494,18 @@
      "page": 4,
      "document": "Relazione specialistica Opere Elettriche",
      "excerpt": "Nome del progetto di impianto eolico: APPIA ENERGIA Entrata in esercizio (previsione): dicembre 2023"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2024",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 20 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/606669",
+     "page": 2,
+     "document": "Cronoprogramma in fase di esecuzione",
+     "excerpt": ""
     }
    }
   ],
@@ -652,7 +731,7 @@
   "duration": {
    "text": "8 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (2), 25 mesi (1), 10 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (2), 20 mesi (2), 25 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1254742",
     "page": 45,
@@ -661,6 +740,19 @@
    }
   },
   "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "30/03/2023",
+    "iso": "2023-03-30",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/606825",
+     "page": 5,
+     "document": "Schede ostacoli ENAC-per navigazione aerea",
+     "excerpt": "Data prevista per l'inizio lavori: 30 marzo 2023 Data completamento lavori : 30 dicembre 2023"
+    }
+   },
    {
     "label": "Entrata in esercizio",
     "date": "12/2023",
@@ -691,9 +783,9 @@
  },
  "documentazione": {
   "documenti": 341,
-  "pagine": 3534,
-  "completa": false,
-  "da_leggere": 41
+  "pagine": 4803,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -724,12 +816,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 30/03/2023, ma l'iter è proseguito; ultimo documento o atto del 13/11/2025: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "487 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "500 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
