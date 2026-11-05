@@ -191,6 +191,8 @@ def normalize_power_to_mw(value: Any) -> float | None:
     text_norm = text_norm.replace("mw p", "mw")
     text_norm = text_norm.replace("kwp", "kw")
     text_norm = text_norm.replace("kw p", "kw")
+    # nominal / electric / AC power: 17.000 kWn, 30 MWe, 25 MWac
+    text_norm = re.sub(r"\b(\d[\d.,]*\s*)(k|m)w(?:n|e|ac)\b", r"\1\2w", text_norm)
 
     patterns = [
         r"potenza(?:\s+\w+){0,8}?\s*(?:pari\s+a|di|da)?\s*([0-9]+(?:[.,][0-9]+)*(?:[.,][0-9]+)?)\s*(mw|kw)\b",
@@ -205,6 +207,8 @@ def normalize_power_to_mw(value: Any) -> float | None:
             unit = match.group(2).lower()
 
             number = parse_italian_number(number_raw)
+            if unit == "kw" and re.fullmatch(r"\d{1,3}(?:\.\d{3})+", number_raw):
+                number = Decimal(number_raw.replace(".", ""))   # 17.000 kW is seventeen thousand kW
             if number is None:
                 continue
 
@@ -233,6 +237,8 @@ def normalize_power_to_mw(value: Any) -> float | None:
             number_raw = match.group(2)
 
             number = parse_italian_number(number_raw)
+            if unit == "kw" and re.fullmatch(r"\d{1,3}(?:\.\d{3})+", number_raw):
+                number = Decimal(number_raw.replace(".", ""))   # 17.000 kW is seventeen thousand kW
             if number is None:
                 continue
 

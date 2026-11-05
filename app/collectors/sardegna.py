@@ -954,7 +954,8 @@ class SardegnaCollector(BaseCollector):
         if not m:
             return None
 
-        return f"{m.group(1)} {m.group(2)}"
+        unit = re.sub(r"(?i)^(k|m)w(?:n|e|ac)$", lambda u: u.group(1) + "W", m.group(2))   # kWn -> kW
+        return f"{m.group(1)} {unit}"
 
     def _extract_first_url(self, block, page_url: str) -> str | None:
         preferred: list[str] = []
