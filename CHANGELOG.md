@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-06 — Veneto: potenze scritte come coppia DC/AC («29.98/28.8 MW») lette come 29,98 MW; prima veniva preso «8 MW» dalla seconda cifra (Bressane Nord).
+
 - 2026-11-06 — Report cambiamenti eolico: un progetto che cambia chiave (es. titolo ripulito dai codici HTML) non compare più insieme tra i «nuovi» e gli «usciti» se titolo, regione e MW coincidono.
 
 - 2026-11-06 — Report cambiamenti eolico anche come file locale `reports/change_reports/wind_changes_latest.html`, stesso formato del report FV: `aggiorna_wind_radar.bat` lo scarica a fine giro (dopo la pubblicazione attende fino a 15 minuti il censimento ricostruito nel cloud) e lo apre; comando `python -m doc_intel wind-report`.

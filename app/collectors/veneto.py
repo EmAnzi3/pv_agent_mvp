@@ -145,8 +145,12 @@ class VenetoCollector(BaseCollector):
         return []
 
     def _extract_power(self, title: str) -> str | None:
+        # "29.98/28.8 MW DC/AC": the first value (DC) of the pair; before, '8 MW' was taken from '28.8 MW'
+        m = re.search(r"(?<![\d.,])(\d+(?:[.,]\d+)?)\s*/\s*\d+(?:[.,]\d+)?\s*(MWp|MW|kWp|kW)\b", title, flags=re.IGNORECASE)
+        if m:
+            return f"{m.group(1)} {m.group(2)}"
         m = re.search(
-            r"(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?|\d+(?:,\d+)?)\s*(MWp|MW|Kwp|kWp)",
+            r"(?<![\d.,])(\d{1,3}(?:[.\s]\d{3})+(?:,\d+)?|\d+(?:[.,]\d+)?)\s*(MWp|MW|Kwp|kWp|kW)\b",
             title,
             flags=re.IGNORECASE,
         )
