@@ -1,0 +1,143 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10230",
+ "title": "Progetto di un impianto eolico da 39,1 MW da realizzarsi nel Comune di Calitri (AV) ai sensi dell'art. 23 del Dlgs. 152/2006 e ss.mm.ii.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10230",
+ "source": "mase",
+ "updated": "2026-11-06",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "39,1 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10230",
+    "excerpt": "39,1 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "20",
+   "status": "da verificare",
+   "sub": "1,96 MW ciascuno · altezza mozzo 80 m · Valore più ricorrente negli elaborati; altri valori: 17 (2), 6 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/961283",
+    "page": 1,
+    "document": "Decreto del Ministero dell'Ambiente - Progetto di un impianto eolico da 39,1 MW da realizzarsi nel Comune di Calitri (AV) ai sensi dell'art. 23 del Dlgs. 152/2006 e ss.mm.ii.",
+    "excerpt": "ID 4853 - Istanza di proroga dei termini di validità del provvedimento di VIA rilasciato dalla Regione Campania DGR n. 121 del 05/08/2014 relativo al progetto di un impianto eolico da 39,1 MW da realizzarsi nel Comune di"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "AV",
+  "comuni": [
+   "Calitri"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Calitri%2C+AV%2C+Campania",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Parco Eolico di Calitri S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10230"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 5,
+  "pagine": 29,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Parco Eolico di Calitri S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 39.1,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CALITRI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AV",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "1 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
