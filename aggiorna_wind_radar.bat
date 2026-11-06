@@ -119,6 +119,7 @@ start "" "%RADAR_URL%"
 
 REM Publish the regional reading: the push rebuilds the wind census in the cloud and with it the
 REM change report (docs/wind/cambiamenti.html). Only this data file is committed, after a question.
+set "WIND_SINCE="
 git diff --quiet -- docs\wind\data\census-regional-local.json 2>nul
 if errorlevel 1 (
   echo.
@@ -129,8 +130,10 @@ if errorlevel 1 (
     git add docs\wind\data\census-regional-local.json
     git commit -m "Censimento eolico regionale dal PC" -- docs\wind\data\census-regional-local.json
     git pull --rebase --autostash
+    for /f %%t in ('powershell -NoProfile -Command "(Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')"') do set "WIND_SINCE=%%t"
     git push
     if errorlevel 1 (
+      set "WIND_SINCE="
       echo ATTENZIONE: push non riuscito. Riprova con GitHub Desktop.
     ) else (
       echo Pubblicato. Tra 10-15 minuti il report e' nella pagina eolica del sito,
@@ -138,6 +141,17 @@ if errorlevel 1 (
     )
   )
 )
+
+REM Local copy of the wind change report, like the PV reports\change_reports\changes_latest.html:
+REM after a publish it waits (max 15 min) for the census rebuilt in the cloud, otherwise it shows the last one.
+echo.
+echo Report cambiamenti eolico...
+if defined WIND_SINCE (
+  "%PY%" -m doc_intel wind-report --out reports\change_reports\wind_changes_latest.html --newer-than %WIND_SINCE% --wait-min 15
+) else (
+  "%PY%" -m doc_intel wind-report --out reports\change_reports\wind_changes_latest.html
+)
+if exist reports\change_reports\wind_changes_latest.html start "" reports\change_reports\wind_changes_latest.html
 
 echo.
 echo ============================================================
