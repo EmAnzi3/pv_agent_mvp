@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-06 — Report cambiamenti eolico: un progetto che cambia chiave (es. titolo ripulito dai codici HTML) non compare più insieme tra i «nuovi» e gli «usciti» se titolo, regione e MW coincidono.
+
 - 2026-11-06 — Report cambiamenti eolico anche come file locale `reports/change_reports/wind_changes_latest.html`, stesso formato del report FV: `aggiorna_wind_radar.bat` lo scarica a fine giro (dopo la pubblicazione attende fino a 15 minuti il censimento ricostruito nel cloud) e lo apre; comando `python -m doc_intel wind-report`.
 
 - 2026-11-06 — `aggiorna_wind_radar.bat`: a fine giro, se i portali regionali sono cambiati, chiede se pubblicare `docs/wind/data/census-regional-local.json` (solo quel file) e fa commit e push; il push ricostruisce censimento eolico e report cambiamenti nel cloud. Prima andava fatto a mano e il report non compariva.

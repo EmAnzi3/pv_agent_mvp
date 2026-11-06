@@ -144,9 +144,33 @@ def _row(key: str, s: dict) -> dict:
     return {"project_key": key, **{k: s.get(k) for k in keep}}
 
 
+def _same_project(r: dict) -> tuple:
+    import html
+    title = " ".join(html.unescape(html.unescape(r.get("title") or "")).lower().split())
+    return title, (r.get("region") or "").lower(), round(float(r.get("power_mw") or 0), 1)
+
+
+def _drop_rekeyed(new: list[dict], removed: list[dict]) -> tuple[list[dict], list[dict]]:
+    """A project whose key changed (e.g. a title cleaned of HTML codes) shows up as both new and removed
+    with the same title, region and MW: it is the same project, so neither."""
+    gone = {}
+    for r in removed:
+        gone.setdefault(_same_project(r), []).append(r)
+    keep_new = []
+    for r in new:
+        twins = gone.get(_same_project(r))
+        if twins:
+            twins.pop()
+        else:
+            keep_new.append(r)
+    keep_removed = [r for rows in gone.values() for r in rows]
+    return keep_new, keep_removed
+
+
 def compare(prev: dict, cur: dict) -> dict:
     new = [_row(k, cur[k]) for k in cur if k not in prev]
     removed = [_row(k, prev[k]) for k in prev if k not in cur]
+    new, removed = _drop_rekeyed(new, removed)
     changed = []
     for k in cur.keys() & prev.keys():
         diff = [{"field": f, "label": lab, "old": prev[k].get(f), "new": cur[k].get(f),

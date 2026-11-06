@@ -30,6 +30,12 @@ class CompareTests(unittest.TestCase):
         self.assertEqual(r["modificati"][0]["project_key"], "a")          # progress first
         self.assertEqual(r["counts"]["avanzamenti"], 1)
 
+    def test_rekeyed_project_is_neither_new_nor_removed(self):
+        a, b = rec("old"), rec("new")
+        a["title"], b["title"] = "PARCO EOLICO SANTA CATERINA D&#039;ALESSANDRIA", "PARCO EOLICO SANTA CATERINA D'ALESSANDRIA"
+        r = wc.compare(wc.snapshot({"records": [a]}, {}, {}, {}), wc.snapshot({"records": [b]}, {}, {}, {}))
+        self.assertEqual((r["nuovi"], r["rimossi"]), ([], []))
+
     def test_cosmetic_changes_ignored(self):
         a, b = rec("a", status="Conclusa, Non necessita di ulteriori valutazioni"), rec("a", status="Non necessita di ulteriori valutazioni, Conclusa")
         b["title"], b["proponent"] = "PARCO EOLICO A (nuovo titolo)", "alfa  wind srl"
