@@ -133,8 +133,8 @@ if errorlevel 1 (
     if errorlevel 1 (
       echo ATTENZIONE: push non riuscito. Riprova con GitHub Desktop.
     ) else (
-      echo Pubblicato. Report cambiamenti tra 10-15 minuti:
-      echo   https://emanzi3.github.io/pv_agent_mvp/wind/cambiamenti.html
+      echo Pubblicato. Tra 10-15 minuti il report e' nella pagina eolica del sito,
+      echo link "Cosa e' cambiato dall'ultimo censimento" ^(wind/cambiamenti.html^).
     )
   )
 )
