@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-06 — `aggiorna_wind_radar.bat`: a fine giro, se i portali regionali sono cambiati, chiede se pubblicare `docs/wind/data/census-regional-local.json` (solo quel file) e fa commit e push; il push ricostruisce censimento eolico e report cambiamenti nel cloud. Prima andava fatto a mano e il report non compariva.
+
 - 2026-11-05 — Potenze in kW con punto delle migliaia («17.000 kW») lette come 17 MW e non 0,017 MW; unità kWn/MWn/kWe/kWac riconosciute anche nella pipeline del radar (Smeraldo_Pot 1, Sardegna, restava senza potenza).
 
 - 2026-11-05 — Radar FV, segnalazioni dell'utente: (1) Sardegna: se il titolo dell'avviso lascia vuota la potenza («di potenza pari a kW»), la potenza, il proponente e il comune si leggono dalla pagina dell'avviso (es. Smeraldo_Pot 1, 17.000 kWn); riconosciute le unità kWn/MWn/kWe/kWac; proponente ripulito da «Consulta i documenti…» e da «Società» ripetuto. (2) Lombardia (SILVIA): provincia e regione dell'impianto dalla prima sigla del titolo anche fuori regione (es. Melara (RO): Veneto, non Mantova). (3) Report cambiamenti: gli aggregati Terna Econnextion mantengono la chiave quando cambia il mese del file Terna (prima comparivano ogni mese come ~40 «nuovi» e ~40 «rimossi»).
