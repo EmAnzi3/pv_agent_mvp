@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Parco Agrovoltaico con impianto di accumulo e delle opere connesse denominato \"Pecciapertosa\", della potenza complessiva di 22,57 MW, nei comuni di Castronovo di Sicilia e Lercara Friddi (PA)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8740",
  "source": "mase",
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "sintesi": [
   {
    "key": "potenza",
@@ -48,8 +48,8 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "10 MW / 40 MWh",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 22,57 MW (1), 19,596 MW (1), 29,595 MW (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 49,6 MW (3), 39,6 MW (2), 22,57 MW (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1368491",
     "page": 10,
@@ -61,8 +61,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "12 mesi",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 17 mesi (1), 24 mesi (1), 8 mesi (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 36 mesi (2), 17 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1368491",
     "page": 15,
@@ -79,9 +79,9 @@
    "Lercara Friddi"
   ],
   "coordinate": {
-   "lat": 37.73001,
-   "lon": 13.65972,
-   "tipo": "centro della tavola georeferenziata di progetto (98 riferimenti concordi)",
+   "lat": 37.73159,
+   "lon": 13.66018,
+   "tipo": "centro della tavola georeferenziata di progetto (264 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1213953",
     "page": 1,
@@ -89,7 +89,7 @@
     "excerpt": "Integrazioni del 27/01/2025 - Layout d'insieme su ortofoto"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.73001,13.65972",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.73159,13.66018",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -111,6 +111,37 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8740"
+   }
+  },
+  {
+   "name": "Dott. Eugenio Martire",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "martireeugenio@yahoo.it",
+     "occurrences": 56,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1214091",
+      "page": 2,
+      "document": "Integrazioni del 27/01/2025 - Relazione geologica preliminare (stazione)",
+      "excerpt": "GEOLOGO Eugenio MARTIRE – Via Umbria 7, 87046 MONTALTO UFFUGO (CS) TEL. 389 5566768 - email martireeugenio@yahoo.it pag. 1"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1214000",
+    "page": 28,
+    "document": "Integrazioni del 27/01/2025 - Relazione Geologica",
+    "excerpt": "Il geologo Dott. Eugenio Martire"
    }
   },
   {
@@ -143,25 +174,6 @@
     "document": "Integrazioni del 27/01/2025 - Uso del suolo",
     "excerpt": "Progettazione: NEW DEVELOPMENTS srl"
    }
-  },
-  {
-   "name": "Dott. Eugenio Martire",
-   "kind": "persona",
-   "roles": [
-    "Geologo"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1214000",
-    "page": 28,
-    "document": "Integrazioni del 27/01/2025 - Relazione Geologica",
-    "excerpt": "Il geologo Dott. Eugenio Martire"
-   }
   }
  ],
  "altri_soggetti": [
@@ -178,7 +190,7 @@
     {
      "type": "PEC",
      "value": "protocollogenerale@pec.enav.it",
-     "occurrences": 4,
+     "occurrences": 5,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/751144",
       "page": 103,
@@ -437,8 +449,8 @@
   },
   "duration": {
    "text": "12 mesi",
-   "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 17 mesi (1), 24 mesi (1), 8 mesi (1)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 36 mesi (2), 17 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1368491",
     "page": 15,
@@ -463,9 +475,9 @@
  },
  "documentazione": {
   "documenti": 265,
-  "pagine": 2290,
+  "pagine": 3314,
   "completa": false,
-  "da_leggere": 145
+  "da_leggere": 27
  },
  "confronto": [
   {
@@ -504,8 +516,16 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "20 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "79 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
