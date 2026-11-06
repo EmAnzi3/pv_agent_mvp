@@ -46,7 +46,7 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
         reanalyse_match: str | None = None,
         registry: str | None = None, registry_client=None,
         time_budget_s: float | None = None, get_html: Callable[[str], str] | None = None,
-        skip_titles: str | None = None, max_new_docs: int | None = None,
+        skip_titles: str | None = None, max_new_docs: int | None = None, skip_zip_drawings: bool = False,
         fetcher: Fetcher | None = None, log: Callable[[str], None] = print) -> dict[str, Any]:
     t0 = time.time()
     store = Store(store_dir)
@@ -66,6 +66,11 @@ def run(record_url: str, store_dir: str, data_json: str | None = None, ocr: bool
     manifest = store.load_manifest(adapter.source, identity.project_id)
     manifest["procedures"] = disc.procedures
     fetcher = fetcher or Fetcher(store)
+    if skip_zip_drawings:
+        # drawings inside archives are not parsed (local runs): schedules and reports are always kept
+        _draw = re.compile(DRAWING_TITLES, re.I)
+        fetcher.skip_member = lambda name: bool(_draw.search(name.replace("_", " "))) and not (
+            SCHED_RE.search(name) or PRIORITY_DOCS.search(name))
     budget = OcrBudget(ocr_max_pages, deadline=(t0 + time_budget_s) if time_budget_s else None)
     docs = list(disc.documents)
     skipped_titles = 0

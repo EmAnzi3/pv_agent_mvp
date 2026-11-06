@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-06 — Giri dal PC: dentro gli archivi zip le tavole grafiche (tavole, planimetrie, sezioni, profili, layout…) non vengono più analizzate; restano relazioni, cronoprogrammi, computi, pareri e atti. Un archivio da 70 MB di elaborati idraulici («Le Toppe», Basilicata) aveva richiesto 3 ore e 15 minuti.
+
 - 2026-11-06 — Veneto: potenze scritte come coppia DC/AC («29.98/28.8 MW») lette come 29,98 MW; prima veniva preso «8 MW» dalla seconda cifra (Bressane Nord).
 
 - 2026-11-06 — Report cambiamenti eolico: un progetto che cambia chiave (es. titolo ripulito dai codici HTML) non compare più insieme tra i «nuovi» e gli «usciti» se titolo, regione e MW coincidono.

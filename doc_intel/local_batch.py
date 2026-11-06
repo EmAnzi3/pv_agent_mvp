@@ -252,7 +252,7 @@ def main(data: str, max_items: int, budget_min: float, store_dir: str | None = N
             d = run(it["url"], str(store), data, ocr=ocr, ocr_max_pages=600,
                     workers=1 if limited else 3, registry="vies",
                     max_docs=left if limited else None,
-                    skip_titles=DRAWING_TITLES if limited else None,
+                    skip_titles=DRAWING_TITLES if limited else None, skip_zip_drawings=True,
                     time_budget_s=budget_min * 60, reanalyse=recompute)
             if limited:
                 # only real downloads count (documents already read are reused without any request)
