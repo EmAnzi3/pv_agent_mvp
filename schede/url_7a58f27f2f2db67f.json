@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto solare fotovoltaico ed opere connesse della potenza di 75,832 MWp nel comune di Aquileia",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10492",
  "source": "mase",
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "sintesi": [
   {
    "key": "potenza",
@@ -22,13 +22,13 @@
   {
    "key": "impianto",
    "label": "Impianto",
-   "value": "Tracker monoassiali",
+   "value": "Fotovoltaico galleggiante · tracker monoassiali",
    "status": "da documenti",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/967481",
-    "page": 1,
-    "document": "Avviso al Pubblico del 25/01/2024",
-    "excerpt": "moduli fotovoltaici bifacciali montati su apposite strutture a inseguimento monoassiale installate a terra su"
+    "url": "https://va.mite.gov.it/File/Documento/1171970",
+    "page": 28,
+    "document": "Integrazioni del 11/11/2024 - Cod059_FV_BGR_0009_Studio_idraulico_generale_rev01",
+    "excerpt": "L’acqua riportata nel pozzetto di sentina verrà sollevata da una pompa (attivata da galleggiante) che"
    }
   },
   {
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "137,53 ha",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 112,47 ha (2)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 112,47 ha (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/967481",
     "page": 1,
@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "60 settimane (circa 14 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (4)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (4), 6 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1443756",
     "page": 41,
@@ -67,7 +67,7 @@
   "coordinate": {
    "lat": 45.75804,
    "lon": 13.33135,
-   "tipo": "centro della tavola georeferenziata di progetto (43 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (52 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1171940",
     "page": 1,
@@ -98,7 +98,7 @@
     {
      "type": "PEC",
      "value": "irengreengenerationtech@pec.gruppoiren.it",
-     "occurrences": 27,
+     "occurrences": 45,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/983558",
       "page": 1,
@@ -141,6 +141,37 @@
     "document": "Verifica impatti cumulativi-signed",
     "excerpt": "COMMITTENTE Greenplan Engineering S.r.l."
    }
+  },
+  {
+   "name": "Pharos S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Impresa esecutrice (indicata negli elaborati)"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/967466",
+      "page": 1,
+      "document": "Relazione di calcolo distanze di prima approssimazione (DPA)-signed",
+      "excerpt": "ID Documento Appaltatore"
+     }
+    }
+   ],
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/967466",
+    "page": 1,
+    "document": "Relazione di calcolo distanze di prima approssimazione (DPA)-signed",
+    "excerpt": "ID Documento Appaltatore"
+   }
   }
  ],
  "altri_soggetti": [
@@ -181,7 +212,28 @@
   }
  ],
  "stato": null,
- "esecuzione": null,
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Pharos S.r.l.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/967466",
+     "page": 1,
+     "document": "Relazione di calcolo distanze di prima approssimazione (DPA)-signed",
+     "excerpt": "ID Documento Appaltatore"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
  "registro": null,
  "tempistica": {
   "righe": [],
@@ -205,7 +257,7 @@
   "duration": {
    "text": "60 settimane (circa 14 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (4), 20 giorni (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (4), 20 giorni (2), 6 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1443756",
     "page": 41,
@@ -230,9 +282,9 @@
  },
  "documentazione": {
   "documenti": 145,
-  "pagine": 3456,
-  "completa": false,
-  "da_leggere": 25
+  "pagine": 4693,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -268,7 +320,11 @@
   },
   {
    "label": "Recapiti",
-   "reason": "36 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "77 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Pharos S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
