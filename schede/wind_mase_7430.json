@@ -1,0 +1,147 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7430",
+ "title": "Adeguamento tecnico al progetto per la realizzazione di un impianto eolico della potenza di 37,95 MW autorizzato con D.D. n.75 del 17/02/2014 e successivo D.D.. n.246 del 05/12/2016 ubicato nel comune di Baselice (BN) in località Pietramonte, con opere connesse nei comuni di Baselice, Molinara e Foiano di val fortore (BN)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7430",
+ "source": "mase",
+ "updated": "2026-11-06",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "37,95 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7430",
+    "excerpt": "37,95 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "14",
+   "status": "da verificare",
+   "sub": "2,71 MW ciascuno · altezza mozzo 94 m · diametro rotore 117 m · Valore più ricorrente negli elaborati; altri valori: 11 (5), 10 (2), 2 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/404178",
+    "page": 4,
+    "document": "decreti_VIA_AU",
+    "excerpt": "Comune di Baselice (BN), Molinara (BN) e Foiano di Valfortore (BN), per una potenza nominale iniziale di MW 42 per n. 14 aerogeneratori; b. che con nota, acquisita al protocollo regionale n. 2011.0238238 del 25/03/2011, "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "BN",
+  "comuni": [
+   "Baselice"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Baselice%2C+BN%2C+Campania",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto Ministeriale n. 51 del 28/02/2020",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/404176",
+     "page": 1,
+     "document": "relazione_ambientale",
+     "excerpt": "Proroga ottenuta dal Ministero dell’Ambiente e della Tutela del Territorio e del Mare con Decreto Ministeriale n.51 del 28.02.2020 PROGETTAZIONE"
+    }
+   }
+  ],
+  "durata_cantiere": null,
+  "autorizzazione": {
+   "atto": "Decreto Ministeriale n. 51",
+   "data": "28/02/2020",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/404176",
+    "page": 1,
+    "document": "relazione_ambientale",
+    "excerpt": "Proroga ottenuta dal Ministero dell’Ambiente e della Tutela del Territorio e del Mare con Decreto Ministeriale n.51 del 28.02.2020 PROGETTAZIONE"
+   }
+  },
+  "note": [
+   "Durata del cantiere non leggibile negli elaborati: fine lavori non stimabile."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 10,
+  "pagine": 96,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "C&C Uno Energy S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 37.95,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BASELICE, MOLINARA, FOIANO DI VAL FORTORE",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BN",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "65 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
