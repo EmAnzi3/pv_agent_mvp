@@ -70,7 +70,7 @@ if /I not "%MODE%"=="offline" (
   if errorlevel 1 (
     echo ATTENZIONE: nessun portale regionale raggiungibile. Il censimento usa i dati del giro precedente.
   ) else (
-    echo        Fatto. Fai commit e push di docs\wind\data\census-regional-local.json: il censimento si aggiorna da solo.
+    echo        Fatto. A fine giro ti chiedo se pubblicarlo: il censimento e il report cambiamenti si aggiornano da soli.
   )
 )
 
@@ -116,6 +116,28 @@ if errorlevel 1 (
 )
 
 start "" "%RADAR_URL%"
+
+REM Publish the regional reading: the push rebuilds the wind census in the cloud and with it the
+REM change report (docs/wind/cambiamenti.html). Only this data file is committed, after a question.
+git diff --quiet -- docs\wind\data\census-regional-local.json 2>nul
+if errorlevel 1 (
+  echo.
+  echo Portali regionali aggiornati: pubblicarli adesso fa ricostruire il censimento eolico
+  echo e il report cambiamenti nel cloud, visibili in circa 10-15 minuti.
+  choice /C SN /M "Pubblico docs\wind\data\census-regional-local.json su GitHub"
+  if not errorlevel 2 (
+    git add docs\wind\data\census-regional-local.json
+    git commit -m "Censimento eolico regionale dal PC" -- docs\wind\data\census-regional-local.json
+    git pull --rebase --autostash
+    git push
+    if errorlevel 1 (
+      echo ATTENZIONE: push non riuscito. Riprova con GitHub Desktop.
+    ) else (
+      echo Pubblicato. Report cambiamenti tra 10-15 minuti:
+      echo   https://emanzi3.github.io/pv_agent_mvp/wind/cambiamenti.html
+    )
+  )
+)
 
 echo.
 echo ============================================================
