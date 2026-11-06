@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto agrovoltaico denominato \"Cluster B\", di potenza pari a 123,88 MW e delle relative opere di connessione alla RTN da realizzarsi nei comuni di Salemi, Mazzara del Vallo, Santa Ninfa e Castelvetrano (TP).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9501",
  "source": "mase",
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "sintesi": [
   {
    "key": "potenza",
@@ -34,14 +34,14 @@
   {
    "key": "area",
    "label": "Superficie complessiva",
-   "value": "157 ha",
+   "value": "164 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 164 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 157 ha (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1443742",
-    "page": 7,
-    "document": "Integrazioni del 27/10/2026 - PIANO DI DISMISSIONE E RIPRISTINO DEI LUOGHI",
-    "excerpt": "DESCRIZIONE GENERALE DEL PROGETTO ESECUTIVO L’area d’intervento si estende catastalmente per una superficie totale di 157 ha e area d’impianto di 92,40 ha. L’area d’impianto, al fine di garantire la sicurezza, sarà delim"
+    "url": "https://va.mite.gov.it/File/Documento/1137396",
+    "page": 8,
+    "document": "Allegato al Decreto Direttoriale - Parere CTVA del 14/03/2024",
+    "excerpt": "Nuova Gibellina (11,8 km). La superficie totale disponibile è di circa 164 ha, suddivisa in 9 sottocampi (IMP_B_01-09) e i Comuni interessati dalle opere sono (Figura 1):"
    }
   },
   {
@@ -49,7 +49,7 @@
    "label": "Superficie coperta dai pannelli",
    "value": "42,4 ha",
    "status": "da documenti",
-   "sub": "27% dell'area",
+   "sub": "26% dell'area",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1443742",
     "page": 7,
@@ -61,8 +61,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "14 mesi",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 20 MESI (3)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 20 MESI (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/776394",
     "page": 122,
@@ -81,9 +81,9 @@
    "Castelvetrano"
   ],
   "coordinate": {
-   "lat": 37.76132,
-   "lon": 12.73052,
-   "tipo": "coordinate del sito dichiarate negli elaborati (158 riferimenti concordi)",
+   "lat": 37.76555,
+   "lon": 12.72654,
+   "tipo": "coordinate del sito dichiarate negli elaborati (238 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/776394",
     "page": 29,
@@ -91,10 +91,20 @@
     "excerpt": "- Latitudine: 37°46'17.86\"N -"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.76132,12.73052",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.76555,12.72654",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 37.74363,
+   "lon": 12.77844,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/776387",
+    "page": 2,
+    "document": "Relazione geologica, geofisica ed idrogeologica",
+    "excerpt": "Il parco fotovoltaico, composto dai suddetti impianti, avrà come punto di connessione alla stazione SE S/E Absolute Energy Sicilia, di coordinate geografiche, latitudine 37,742396 e longitudine 12,77844. L’impianto, deno"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.74363,12.77844"
+  },
   "lotti": [
    {
     "lotto": "Campo 3",
@@ -162,7 +172,7 @@
     {
      "type": "PEC",
      "value": "absoluteenergysicilia@legalmail.it",
-     "occurrences": 143,
+     "occurrences": 154,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1443693",
       "page": 1,
@@ -232,6 +242,37 @@
    }
   },
   {
+   "name": "Energia Verde Trapani S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06734140822",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energiaverdetrapani@pec.edison.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443723",
+      "page": 138,
+      "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
+      "excerpt": "energiaverdetrapani@pec.edison.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/776334",
+    "page": 10,
+    "document": "PTO SE RTN Partanna 3 - Parte 2 di 5",
+    "excerpt": "COMMITTENTE: ENERGIA VERDE TRAPANI SRL"
+   }
+  },
+  {
    "name": "Ing. Francesco Lioniello",
    "kind": "persona",
    "roles": [
@@ -251,7 +292,7 @@
    }
   },
   {
-   "name": "Dr. Geol. Giuseppe Borzì",
+   "name": "Dott. Geol. Leonardo Mauceri",
    "kind": "persona",
    "roles": [
     "Geologo"
@@ -264,55 +305,99 @@
    "contacts": [
     {
      "type": "PEC",
-     "value": "borzigiuseppe@open.legalmail.it",
-     "occurrences": 3,
+     "value": "geologomauceri@epap.pec.it",
+     "occurrences": 2,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1443743",
-      "page": 1,
-      "document": "Integrazioni del 27/10/2026 - RELAZIONE IDROGEOLOGICA SCAVI CON BENNA INDAGINI ELETTROMAGNETICHE",
-      "excerpt": "via MARCHESE, 14, 95047 Paternò (CT) tel. 347/54.49.239 E-mail giu.bor@tiscali.it P.E.C. borzigiuseppe@open.legalmail.it"
+      "url": "https://va.mite.gov.it/File/Documento/776387",
+      "page": 4,
+      "document": "Relazione geologica, geofisica ed idrogeologica",
+      "excerpt": "Dott. Geol. Leonardo Mauceri – Studio Geologico: Via Olanda n. 15 - 92010 Montevago (AG) - C.F. MCR LRD 64D28 F655F - P.IVA 01945310843 - www.maucerigeologo.it Tel/fax 0925/38573 – cell. 347/3552528 – 338/3059800 – e-mai"
      }
     },
     {
      "type": "E-mail",
-     "value": "geolgiubor@gmail.com",
+     "value": "geologomauceri@gmail.com",
      "occurrences": 2,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1443743",
-      "page": 2,
-      "document": "Integrazioni del 27/10/2026 - RELAZIONE IDROGEOLOGICA SCAVI CON BENNA INDAGINI ELETTROMAGNETICHE",
-      "excerpt": "Via marchese, 14 – 95047 Paternò (CT) Tel 347/54.49.239 Email to geolgiubor@gmail.com pec borzigiuseppe@open.legalmail.it"
+      "url": "https://va.mite.gov.it/File/Documento/776387",
+      "page": 4,
+      "document": "Relazione geologica, geofisica ed idrogeologica",
+      "excerpt": "Dott. Geol. Leonardo Mauceri – Studio Geologico: Via Olanda n. 15 - 92010 Montevago (AG) - C.F. MCR LRD 64D28 F655F - P.IVA 01945310843 - www.maucerigeologo.it Tel/fax 0925/38573 – cell. 347/3552528 – 338/3059800 – e-mai"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@maucerigeologo.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/776387",
+      "page": 4,
+      "document": "Relazione geologica, geofisica ed idrogeologica",
+      "excerpt": "Dott. Geol. Leonardo Mauceri – Studio Geologico: Via Olanda n. 15 - 92010 Montevago (AG) - C.F. MCR LRD 64D28 F655F - P.IVA 01945310843 - www.maucerigeologo.it Tel/fax 0925/38573 – cell. 347/3552528 – 338/3059800 – e-mai"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3473552528",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/776387",
+      "page": 4,
+      "document": "Relazione geologica, geofisica ed idrogeologica",
+      "excerpt": "Dott. Geol. Leonardo Mauceri – Studio Geologico: Via Olanda n. 15 - 92010 Montevago (AG) - C.F. MCR LRD 64D28 F655F - P.IVA 01945310843 - www.maucerigeologo.it Tel/fax 0925/38573 – cell. 347/3552528 – 338/3059800 – e-mai"
      }
     }
    ],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1443743",
-    "page": 46,
-    "document": "Integrazioni del 27/10/2026 - RELAZIONE IDROGEOLOGICA SCAVI CON BENNA INDAGINI ELETTROMAGNETICHE",
-    "excerpt": "Il Geologo Dr. Giuseppe Borzì"
+    "url": "https://va.mite.gov.it/File/Documento/776387",
+    "page": 4,
+    "document": "Relazione geologica, geofisica ed idrogeologica",
+    "excerpt": "IL GEOLOGO Dr. Leonardo Mauceri"
    }
   }
  ],
  "altri_soggetti": [
   {
-   "name": "Energia Verde Trapani S.r.l.",
+   "name": "Pa'ropos Societa' Cooperativa",
    "kind": "società",
    "roles": [],
-   "vat": "06734140822",
+   "vat": "05929940822",
    "vat_group": false,
    "verified": true,
    "esecuzione": null,
-   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "office": "Via Conte Federico N 46 90124 Palermo Pa",
    "contacts": [
     {
-     "type": "PEC",
-     "value": "energiaverdetrapani@pec.edison.it",
-     "occurrences": 1,
+     "type": "E-mail",
+     "value": "muratore@paropos.com",
+     "occurrences": 16,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1443723",
-      "page": 138,
-      "document": "RELAZIONE DI OTTEMPERANZA ALLE CONDIZIONI AMBIENTALI",
-      "excerpt": "energiaverdetrapani@pec.edison.it"
+      "url": "https://va.mite.gov.it/File/Documento/847977",
+      "page": 23,
+      "document": "Integrazioni del 23/05/2023 - Relazione archeologica",
+      "excerpt": "RO 5 Riferimenti Amministrazione Società Coop erativa n 5 Dott. Muratore: 3389783397 - muratore@paropos.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "locurto@paropos.com",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/847977",
+      "page": 23,
+      "document": "Integrazioni del 23/05/2023 - Relazione archeologica",
+      "excerpt": "Società Coop erativa n 5 Dott. Muratore: 3389783397 - muratore@paropos.com Ricerca, documentazione, didattica, Dott.ssa Lo Curto 3462209236 - locurto@paropos.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "puglisi@paropos.com",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/847977",
+      "page": 23,
+      "document": "Integrazioni del 23/05/2023 - Relazione archeologica",
+      "excerpt": "Ricerca, documentazione, didattica, Dott.ssa Lo Curto 3462209236 - locurto@paropos.com valorizzazione dei beni culturali, Dott.ssa Puglisi: 3288858555 - puglisi@paropos.com"
      }
     }
    ],
@@ -390,6 +475,52 @@
    "source": null
   },
   {
+   "name": "Ing. Francesco Chiri",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "francesco.chiri@postacertificata.org",
+     "occurrences": 70,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/776334",
+      "page": 2,
+      "document": "PTO SE RTN Partanna 3 - Parte 2 di 5",
+      "excerpt": "lng. Francesco Ghiri Te/: +39 091 6195726 - Fax: +39 091 9783000 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@studiochiri.it",
+     "occurrences": 63,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/776334",
+      "page": 377,
+      "document": "PTO SE RTN Partanna 3 - Parte 2 di 5",
+      "excerpt": "Studio Tecnico Ing. Francesco C hiri - Via Marco Tullio Cicerone n 23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 9783000 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0916195726",
+     "occurrences": 63,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/776334",
+      "page": 377,
+      "document": "PTO SE RTN Partanna 3 - Parte 2 di 5",
+      "excerpt": "Studio Tecnico Ing. Francesco C hiri - Via Marco Tullio Cicerone n 23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 9783000 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Eolpower Investments S.r.l.",
    "kind": "società",
    "roles": [],
@@ -402,12 +533,58 @@
     {
      "type": "Telefono",
      "value": "0814243089",
-     "occurrences": 79,
+     "occurrences": 186,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1443701",
       "page": 1,
       "document": "PLANIMETRIA ELETTROMECCANICA STAZIONE 220_30 KV",
       "excerpt": "Absolute Energy Sicilia S.R.L. - Via Virginio Orsini, 19 - 00192 Roma Eolpower Investments srl - Via G. Carducci, 29 - 80121 Napoli (NA) Tel. 0814243089"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Geol. Marcello Militello",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "marcellomilitello@epap.sicurezzapostale.it",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/776334",
+      "page": 329,
+      "document": "PTO SE RTN Partanna 3 - Parte 2 di 5",
+      "excerpt": "Dott. Geol. Marcello Militello Cell:+393386978072 pec: marcellomilitello@epap.sicurezzapostale.it email: marcellomilitello@hotmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "marcellomilitello@hotmail.com",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/776334",
+      "page": 329,
+      "document": "PTO SE RTN Partanna 3 - Parte 2 di 5",
+      "excerpt": "Dott. Geol. Marcello Militello Cell:+393386978072 pec: marcellomilitello@epap.sicurezzapostale.it email: marcellomilitello@hotmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3386978072",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/776334",
+      "page": 329,
+      "document": "PTO SE RTN Partanna 3 - Parte 2 di 5",
+      "excerpt": "Dott. Geol. Marcello Militello Cell:+393386978072 pec: marcellomilitello@epap.sicurezzapostale.it email: marcellomilitello@hotmail.com"
      }
     }
    ],
@@ -449,7 +626,42 @@
    "source": null
   },
   {
-   "name": "Qubix S.p.A.",
+   "name": "Dr. Geol. Giuseppe Borzì",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "borzigiuseppe@open.legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443743",
+      "page": 1,
+      "document": "Integrazioni del 27/10/2026 - RELAZIONE IDROGEOLOGICA SCAVI CON BENNA INDAGINI ELETTROMAGNETICHE",
+      "excerpt": "via MARCHESE, 14, 95047 Paternò (CT) tel. 347/54.49.239 E-mail giu.bor@tiscali.it P.E.C. borzigiuseppe@open.legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "geolgiubor@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1443743",
+      "page": 2,
+      "document": "Integrazioni del 27/10/2026 - RELAZIONE IDROGEOLOGICA SCAVI CON BENNA INDAGINI ELETTROMAGNETICHE",
+      "excerpt": "Via marchese, 14 – 95047 Paternò (CT) Tel 347/54.49.239 Email to geolgiubor@gmail.com pec borzigiuseppe@open.legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Wi wow qui Qubdi S.p.A.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -466,7 +678,7 @@
       "url": "https://va.mite.gov.it/File/Documento/1443693",
       "page": 20,
       "document": "RELAZIONE TECNICA GENERALE",
-      "excerpt": "Tel. +39 049 7801994 — Fax +39 049 775657 = Wi wow qui QUBDI S.p.A. Networking solutions — Via Canada, 22/A — 35127 Padova — Italy"
+      "excerpt": "Tel. +39 049 7801994 — Fax +39 049 775657 = Wi wow qui QUBDI S.p.A. Networking solutions — Via Canada, 22/A — 35127 Padova — Italy Tel +39 049 7801994 — Fax +39 049 775867 — tw guts il"
      }
     }
    ],
@@ -804,8 +1016,8 @@
   },
   "duration": {
    "text": "14 mesi",
-   "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 MESI (3), 2 settimane (1)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 20 MESI (3), 2 settimane (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/776394",
     "page": 122,
@@ -830,9 +1042,9 @@
  },
  "documentazione": {
   "documenti": 217,
-  "pagine": 2042,
-  "completa": false,
-  "da_leggere": 97
+  "pagine": 4888,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -867,12 +1079,8 @@
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Recapiti",
-   "reason": "53 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "175 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
