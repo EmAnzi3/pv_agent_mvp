@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico, denominato \"SAN NICOLA\", di potenza pari a 46,2 MW, con sistema di accumulo integrato da 23,4 MW, comprensivo delle opere di rete per la connessione da realizzarsi nei Comuni di Resuttano (CL) e di Santa Caterina (CL), Alimena (PA) , Villalba (CL), Santa Caterina (CL), Castellana Sicula (PA) e Petralia Sottana (PA).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10518",
  "source": "mase",
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "7",
    "status": "da verificare",
-   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 6 (28), 3 (3), 15 (2)",
+   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 6 (34), 2 (8), 3 (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/977567",
     "page": 3,
@@ -36,8 +36,8 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "23,4 MW / 596 MWh",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 30 MW (43), 32,194 MW (26), 39,6 MW (12)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 30 MW (49), 32,194 MW (27), 69,6 MW (18)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/977567",
     "page": 1,
@@ -50,7 +50,7 @@
    "label": "Durata cantiere",
    "value": "14 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (5), 21 Mese (3), 24 Mese (3)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (6), 21 Mese (3), 24 Mese (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/977562",
     "page": 329,
@@ -72,9 +72,9 @@
    "Petralia Sottana"
   ],
   "coordinate": {
-   "lat": 37.63241,
-   "lon": 14.07226,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (114 riferimenti concordi)",
+   "lat": 37.63277,
+   "lon": 14.07328,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (176 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/977562",
     "page": 33,
@@ -82,13 +82,64 @@
     "excerpt": "1 37°38'37.97\" N 14°02'44.15\" E"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.63241,14.07226",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.63277,14.07328",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
  "soggetti": [
+  {
+   "name": "NP Sicilia 7 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "12931930965",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Galleria Passarella 2 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "npsicilia7@legalmail.it",
+     "occurrences": 19,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/977567",
+      "page": 1,
+      "document": "Avviso al Pubblico del 15/02/2024",
+      "excerpt": "PEC npsicilia7@legalmail.it,"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "fabio.borgia@starlight-energy.com",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1153620",
+      "page": 82,
+      "document": "Risposta alle osservazioni del pubblico - Risposta alle osservazioni del pubblico",
+      "excerpt": "Passarella, 2 - 20122 Milano (MI), C.F. e P. Iva ed iscrizione al registro delle imprese della CCIAA di Milano n. 12931930965, npsicilia7@legalmail.it, fabio.borgia@starlight-energy.com, (la"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0287284480",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1122205",
+      "page": 2,
+      "document": "Arrivo controdeduzioni Proponente a parere CTS Regione Siciliana",
+      "excerpt": "Passarella, 2 - 20122 Milano (MI), C.F., P. IVA ed Iscrizione al Registro delle Imprese della CCIAA di Milano n. 12931930965, REA MI-2693253, tel. 0287284480, fax 0244386505, PEC"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10518"
+   }
+  },
   {
    "name": "NPD Sicilia 7 S.r.l.",
    "kind": "società",
@@ -123,7 +174,7 @@
     {
      "type": "PEC",
      "value": "npditaliaii@legalmail.it",
-     "occurrences": 2,
+     "occurrences": 3,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1121240",
       "page": 1,
@@ -137,35 +188,6 @@
     "page": 34,
     "document": "Integrazioni del 01/08/2024 - Studio geologico preliminare var1",
     "excerpt": "COMMITTENTE: NPD Italia II srl FINALITÀ DEL LAVORO: Progetto per la realizzazione di un impianto eolico - WTG4"
-   }
-  },
-  {
-   "name": "NP Sicilia 7 S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": "12931930965",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Galleria Passarella 2 20122 Milano Mi",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "npsicilia7@legalmail.it",
-     "occurrences": 7,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/977567",
-      "page": 1,
-      "document": "Avviso al Pubblico del 15/02/2024",
-      "excerpt": "PEC npsicilia7@legalmail.it,"
-     }
-    }
-   ],
-   "source": {
-    "document": "scheda ufficiale del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10518"
    }
   },
   {
@@ -271,7 +293,7 @@
     {
      "type": "E-mail",
      "value": "vrandazzo@agonservizi.it",
-     "occurrences": 1809,
+     "occurrences": 1935,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/977562",
       "page": 2,
@@ -295,7 +317,7 @@
     {
      "type": "E-mail",
      "value": "vdimarco@agonservizi.it",
-     "occurrences": 1809,
+     "occurrences": 1935,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/977562",
       "page": 2,
@@ -336,6 +358,198 @@
       "page": 142,
       "document": "Integrazioni del 01/08/2024 - Valutazione previsionale di impatto acustico_var1",
       "excerpt": "35030 Caselle di Selvazzano (PD) Laboratorio Accreditato CITATO LAT N° 124 Tel. 0039-0498977150 i"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Giuseppina Leone",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "giuseppinaleone@emilymiddleton.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/994571",
+      "page": 6,
+      "document": "Osservazioni del dottor Vezio Vazzano, legale rappresentante della Società AM FTV Rolica Menta srl- Cefalù (PA), in data 04/03/2024",
+      "excerpt": "PM e Progetto ambientale giuseppinaleone@emilymiddleton.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Vincenzo Butticè",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vincenzobuttice@emilymiddleton.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/994571",
+      "page": 6,
+      "document": "Osservazioni del dottor Vezio Vazzano, legale rappresentante della Società AM FTV Rolica Menta srl- Cefalù (PA), in data 04/03/2024",
+      "excerpt": "Progetto opere civili vincenzobuttice@emilymiddleton.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Elena Belvedere",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "belvederelena@gmail.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/994571",
+      "page": 6,
+      "document": "Osservazioni del dottor Vezio Vazzano, legale rappresentante della Società AM FTV Rolica Menta srl- Cefalù (PA), in data 04/03/2024",
+      "excerpt": "Progetto paesaggistico e di intervisibilità belvederelena@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Giuseppe Pecoraro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "giuseppepecoraro.agr@gmail.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/994571",
+      "page": 6,
+      "document": "Osservazioni del dottor Vezio Vazzano, legale rappresentante della Società AM FTV Rolica Menta srl- Cefalù (PA), in data 04/03/2024",
+      "excerpt": "Consulenza vincolistica giuseppepecoraro.agr@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Marcello Militello",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "marcellomilitello@hotmail.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/994571",
+      "page": 6,
+      "document": "Osservazioni del dottor Vezio Vazzano, legale rappresentante della Società AM FTV Rolica Menta srl- Cefalù (PA), in data 04/03/2024",
+      "excerpt": "Consulenza geologica marcellomilitello@hotmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Giuseppe D'Angelo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "gdangelo84@gmail.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/994571",
+      "page": 6,
+      "document": "Osservazioni del dottor Vezio Vazzano, legale rappresentante della Società AM FTV Rolica Menta srl- Cefalù (PA), in data 04/03/2024",
+      "excerpt": "Consulenza pedoagronomica e avifaunistica gdangelo84@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Giovanni Spallino",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "giovannispallino@gmail.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/994571",
+      "page": 6,
+      "document": "Osservazioni del dottor Vezio Vazzano, legale rappresentante della Società AM FTV Rolica Menta srl- Cefalù (PA), in data 04/03/2024",
+      "excerpt": "Consulenza archeologica giovannispallino@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Antonio Covais",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "antoniocovais@gmail.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/994571",
+      "page": 6,
+      "document": "Osservazioni del dottor Vezio Vazzano, legale rappresentante della Società AM FTV Rolica Menta srl- Cefalù (PA), in data 04/03/2024",
+      "excerpt": "Consulenza acustica antoniocovais@gmail.com"
      }
     }
    ],
@@ -3213,7 +3427,7 @@
   "duration": {
    "text": "14 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (5), 21 Mese (3), 24 Mese (3)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (6), 10 giorni (4), 21 Mese (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/977562",
     "page": 329,
@@ -3242,9 +3456,9 @@
  },
  "documentazione": {
   "documenti": 400,
-  "pagine": 4215,
-  "completa": false,
-  "da_leggere": 100
+  "pagine": 4911,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -3283,16 +3497,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Accumulo",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "140 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "258 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
