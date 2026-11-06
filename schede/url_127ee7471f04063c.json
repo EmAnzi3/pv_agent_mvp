@@ -5,14 +5,14 @@
  "title": "Provvedimento Autorizzatorio Unico Regionale n° G18470 del 22/12/2022 Determinazione n°G15296 del 08/11/2022 Favorevole con prescrizioni Realizzazione dell’impianto fotovoltaico da 21.490,92 kWp denominato “Fiano”",
  "source_url": "https://regionelazio.box.com/v/VIA-114-2021",
  "source": "lazio",
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
    "value": "21,491 MWp",
-   "sub": null,
+   "sub": "Suddivisa in 2 lotti",
    "source": {
     "document": "titolo del procedimento",
     "url": "https://regionelazio.box.com/v/VIA-114-2021",
@@ -22,7 +22,7 @@
   {
    "key": "impianto",
    "label": "Impianto",
-   "value": "Agrivoltaico",
+   "value": "Agrivoltaico · strutture fisse",
    "status": "da documenti",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1033280163530",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "21,12 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 22,172 ha (1), 19,557 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 22,172 ha (1), 19,557 ha (1), 27,95 ha (1)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1136952111294",
     "page": 3,
@@ -56,6 +56,19 @@
     "document": "ARPA 1063789.22-12-2021.pdf",
     "excerpt": " Area lotto: 221.724 m2  Superficie pannelli: 96.439 m2 Per quanto concerne l’area in cui sarà realizzato il progetto, essa sorge ad est del centro abitato di Fiano"
    }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "10 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1895368755903",
+    "page": 67,
+    "document": "PSC_PV_FIANO_ Rev01___.pdf",
+    "excerpt": "La durata presunta dei lavori è di circa 8/10 mesi."
+   }
   }
  ],
  "ubicazione": {
@@ -67,7 +80,7 @@
   "coordinate": {
    "lat": 42.16039,
    "lon": 12.57983,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (3 riferimenti concordi)",
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (30 riferimenti concordi)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1031115992181",
     "page": 3,
@@ -97,7 +110,7 @@
     {
      "type": "PEC",
      "value": "vpd.solar.5@legpec.it",
-     "occurrences": 23,
+     "occurrences": 53,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_979710509003",
       "page": 1,
@@ -117,6 +130,39 @@
      }
     },
     {
+     "type": "PEC",
+     "value": "ambiente@pec.cittametropolitanaroma.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1031029988074",
+      "page": 1,
+      "document": "INT 03 08 0957311.04-10-2022.pdf",
+      "excerpt": "Da \"vpd.solar.5\" vpd.solar.5@legpec.it A ufficiovia@regione.lazio.legalmail.it, ambiente@pec.cittametropolitanaroma.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "vpdsolar5@rubis-photosol.com",
+     "occurrences": 3,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1643727054954",
+      "page": 1,
+      "document": "Modello_0913 soggetti coinvolti Fiano_signed.pdf",
+      "excerpt": "vpd.solar.5@legpec.it vpdsolar5@rubis-photosol.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "hkp@contradapalui.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_991213522172",
+      "page": 1,
+      "document": "VPD Solar 5_Ricevuta Comune Roma diritti di segretaria_07-22.pdf",
+      "excerpt": "03097030211 hkp@contradapalui.com"
+     }
+    },
+    {
      "type": "Telefono",
      "value": "069130051",
      "occurrences": 1,
@@ -131,6 +177,25 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://regionelazio.box.com/v/VIA-114-2021"
+   }
+  },
+  {
+   "name": "Eagleprojects S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1895363495757",
+    "page": 1,
+    "document": "ELETTRODOTTO_FIANO_R-ELABORATI_GRAFICI_ORTOFOTO_def.pdf.p7m",
+    "excerpt": "SERVICE DI PROGETTAZIONE: EAGLEPROJECTS S.P.A."
    }
   },
   {
@@ -174,6 +239,33 @@
  ],
  "altri_soggetti": [
   {
+   "name": "TEA Gest S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "07272261210",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Santa Lucia 36 80132 Napoli Na",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "teagest@adpec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1895370928174",
+      "page": 1,
+      "document": "Visura Camerale T.E.A. GEST_Scadenza 04.03.2025      (AGGIORNATA 05.09.2024).pdf",
+      "excerpt": "Domicilio digitale/PEC teagest@adpec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Gruppo Vela Societa' Agricola S.r.l.",
    "kind": "società",
    "roles": [],
@@ -186,7 +278,7 @@
     {
      "type": "PEC",
      "value": "gruppovelasrl@pec.it",
-     "occurrences": 3,
+     "occurrences": 11,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1159138512827",
       "page": 1,
@@ -199,6 +291,90 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "Setinstudio S.r.l. Societa' TRA Professionisti E Societa' Benef",
+   "kind": "società",
+   "roles": [],
+   "vat": "09550730965",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Certosa 26 20155 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "setinstudio@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_2186484985499",
+      "page": 1,
+      "document": "proponente 0360721.02-04-2026.pdf",
+      "excerpt": "arch. Silvano Carone Da setinstudio@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@setinstudio.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1895360932165",
+      "page": 1,
+      "document": "PSC_PV_FIANO_Layout_Rev01.pdf",
+      "excerpt": "Viale Certosa 26, 20155 Milano | t. 02.66669200 | f. 02.66669203 | info@setinstudio.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "s.carone@setinstudio.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1895368755903",
+      "page": 20,
+      "document": "PSC_PV_FIANO_ Rev01___.pdf",
+      "excerpt": "E-mail s.carone@setinstudio.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Antonio Zingariello",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "a.zingariello@pec.ording.roma.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1031029988074",
+      "page": 1,
+      "document": "INT 03 08 0957311.04-10-2022.pdf",
+      "excerpt": "viabilita@pec.cittametropolitanaroma.it, pianificaterr@pec.cittametropolitanaroma.it, segreteria.dica@mailbox.governo.it,\"a.zingariello\" a.zingariello@pec.ording.roma.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "a.zingariello@studiozingariello.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_935506278729",
+      "page": 2,
+      "document": "220318_Fiano_roma.pdf.pdf",
+      "excerpt": "DELEGA ALLA PRESENTAZIONE ED AL RITIRO DEGLI ATTI AMMINISTRATIVI Il tecnico: Antonio Zingariello Emai/:a.zingariello@studiozingariello.it"
+     }
+    }
+   ],
+   "source": null
   },
   {
    "name": "Dott. Geol. Alessio Argentieri",
@@ -297,6 +473,65 @@
    "source": null
   },
   {
+   "name": "Agsm AIM S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "quisti@pec.agsmaim.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1026130046707",
+      "page": 1,
+      "document": "Pubblicazione Avviso pubblico su Il Messaggero.pdf",
+      "excerpt": "03004930248, telefono 0444394911 - pec: ac- quisti@pec.agsmaim.it, http://www.agsmaim.it, ren-"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0444394911",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1026130046707",
+      "page": 1,
+      "document": "Pubblicazione Avviso pubblico su Il Messaggero.pdf",
+      "excerpt": "ge Galtarossa, 8 – 37133 Verona – C.F. e P.IVA 03004930248, telefono 0444394911 - pec: ac-"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Antonio Maria Ciro Zingariello",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3289321055",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1643726623164",
+      "page": 1,
+      "document": "Relazione_Tecnica_Asseverativa_DILA_Fiano_signed.pdf.p7m",
+      "excerpt": "Via del Quadraro 58 int.2 - Roma Tel. 328/9321055"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Alla E-Distribuzione S.p.A.",
    "kind": "società",
    "roles": [],
@@ -319,6 +554,30 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Agenzia delle Entrate si avvale di Sogei S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "entrate.dpo@agenziaentrate.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_991217347392",
+      "page": 13,
+      "document": "Accordo bonario per servitù particella 527.pdf",
+      "excerpt": "Responsabile della Il dato di contatto del Responsabile della Protezione dei Dati è: entrate.dpo@agenziaentrate.it"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -337,9 +596,33 @@
      "document": "titolo del procedimento",
      "excerpt": "Provvedimento Autorizzatorio Unico Regionale n° G18470 del 22/12/2022"
     }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di dicembre 2022",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://regionelazio.box.com/v/VIA-114-2021",
+     "page": null,
+     "document": "titolo del procedimento",
+     "excerpt": "Provvedimento Autorizzatorio Unico Regionale n° G18470 del 22/12/2022"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di ottobre 2023",
+    "dettaglio": "inizio stimato + durata del cantiere: 10 mesi",
+    "source": {
+     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1895368755903",
+     "page": 67,
+     "document": "PSC_PV_FIANO_ Rev01___.pdf",
+     "excerpt": "La durata presunta dei lavori è di circa 8/10 mesi."
+    }
    }
   ],
-  "durata_cantiere": null,
+  "durata_cantiere": "10 mesi",
   "autorizzazione": {
    "atto": "Provvedimento Autorizzatorio Unico Regionale n. G18470",
    "data": "22/12/2022",
@@ -350,9 +633,7 @@
     "excerpt": "Provvedimento Autorizzatorio Unico Regionale n° G18470 del 22/12/2022"
    }
   },
-  "note": [
-   "Durata del cantiere non leggibile negli elaborati: fine lavori non stimabile."
-  ],
+  "note": [],
   "legenda": {
    "documentata": "data scritta nei documenti",
    "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
@@ -365,7 +646,17 @@
   "months": 1,
   "source": null,
   "asse": null,
-  "duration": null,
+  "duration": {
+   "text": "15 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (1)",
+   "source": {
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-114-2021&file_id=f_1895368755903",
+    "page": 18,
+    "document": "PSC_PV_FIANO_ Rev01___.pdf",
+    "excerpt": "Imprese Esecutrici. Il suo contenuto minimo è determinato dall’allegato XV. Almeno 15 giorni prima dall’ingresso in cantiere, ciascuna impresa dovrà presentare al CSE il proprio POS (vedi art. 101 D.Lgs. 81/08), dal qual"
+   }
+  },
   "milestones": [],
   "document": null,
   "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
@@ -375,9 +666,9 @@
  },
  "documentazione": {
   "documenti": 422,
-  "pagine": 443,
+  "pagine": 1529,
   "completa": false,
-  "da_leggere": 302
+  "da_leggere": 183
  },
  "confronto": [
   {
@@ -413,7 +704,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "96 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "158 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
