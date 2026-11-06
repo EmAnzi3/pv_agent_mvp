@@ -1,0 +1,819 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_1807",
+ "title": "Parco eolico onshore \"Spinazzola\" della potenza pari a 32,4 MW e infrastrutture connesse",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1807",
+ "source": "mase",
+ "updated": "2026-11-06",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "32,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1807",
+    "excerpt": "32,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "9",
+   "status": "da documenti",
+   "sub": "3,60 MW ciascuno · altezza mozzo 112 m · diametro rotore 138 m · Valore prevalente negli elaborati; altri valori: 8 (13), 11 (6), 5 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/240576",
+    "page": 1,
+    "document": "Avviso al pubblico del 18/06/2018",
+    "excerpt": "interesseranno i comuni di Banzi (PZ) e Genzano di Lucania (PZ) dove è prevista la connessione alla rete. Il progetto prevede la realizzazione di n. 9 aerogeneratori da 3,6 MW, per una potenza complessiva di 32.4 MW. La "
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 9 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/239974",
+    "page": 120,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "3.7. TEMPISTICA La tempistica globale della fase di realizzazione è di circa 12 mesi. Nella tabella seguente è indicata la pianificazione delle attività di progettazione esecutiva e di cantierizzazione."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "PZ",
+  "comuni": [
+   "Genzano Di Lucania"
+  ],
+  "coordinate": {
+   "lat": 40.90645,
+   "lon": 16.1137,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (2 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/342249",
+    "page": 83,
+    "document": "Integrazioni del 11/03/2019 - Relazine archeologica",
+    "excerpt": "Integrazioni del 11/03/2019 - Relazine archeologica"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.90645,16.11370",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "RC Wind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rcwind@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/240576",
+      "page": 1,
+      "document": "Avviso al pubblico del 18/06/2018",
+      "excerpt": "Via Nino Bixio, 30 – 20129 Milano P.IVA 09313850969 – PEC: rcwind@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1807"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/239977",
+      "page": 26,
+      "document": "Studio potenziale eolico",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. DE Donatis Marcello Ruffano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0833692992",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/342250",
+      "page": 2,
+      "document": "Integrazioni del 11/03/2019 - Relazione idrogeologica",
+      "excerpt": "Dott. DE DONATIS MARCELLO RUFFANO, P.zza della Libertà 11 Tel 0833/692992 Fax 08331820673"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Tisti Pietro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138315",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/239963",
+      "page": 53,
+      "document": "Relazione linea elettrica (calcoli impinati, campi elettromagnetici)",
+      "excerpt": "Contatti: Ing. Tisti Pietro Tel. 0683138315"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. D’Addese Oreste",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138289",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/239963",
+      "page": 53,
+      "document": "Relazione linea elettrica (calcoli impinati, campi elettromagnetici)",
+      "excerpt": "Ing. D’Addese Oreste Tel. 0683138289"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Progettazione opere civili",
+    "start": 0.0,
+    "end": 0.79,
+    "level": 0,
+    "summary": false,
+    "duration": "4 sett."
+   },
+   {
+    "name": "Progettazione opere elettriche",
+    "start": 0.0,
+    "end": 0.79,
+    "level": 0,
+    "summary": false,
+    "duration": "4 sett."
+   },
+   {
+    "name": "recinzione, realizzazione campo base, caratterizzazione ambientale del sito)",
+    "start": 0.78,
+    "end": 2.79,
+    "level": 0,
+    "summary": false,
+    "duration": "8 sett."
+   },
+   {
+    "name": "Piazzola e scavo di fondazione AG01",
+    "start": 2.78,
+    "end": 3.54,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Piazzola e scavo di fondazione AG02",
+    "start": 2.78,
+    "end": 3.54,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Piazzola e scavo di fondazione AG03",
+    "start": 3.03,
+    "end": 3.79,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Piazzola e scavo di fondazione AG04",
+    "start": 3.03,
+    "end": 3.79,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Piazzola e scavo di fondazione AG05",
+    "start": 3.28,
+    "end": 4.04,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Piazzola e scavo di fondazione AG06",
+    "start": 3.28,
+    "end": 4.04,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Piazzola e scavo di fondazione AG07",
+    "start": 3.53,
+    "end": 4.29,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Piazzola e scavo di fondazione AG08",
+    "start": 3.53,
+    "end": 4.29,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Piazzola e scavo di fondazione AG09",
+    "start": 3.78,
+    "end": 4.54,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Viabilità interna",
+    "start": 2.78,
+    "end": 4.79,
+    "level": 0,
+    "summary": false,
+    "duration": "8 sett."
+   },
+   {
+    "name": "Viabilità esterna",
+    "start": 3.28,
+    "end": 5.79,
+    "level": 0,
+    "summary": false,
+    "duration": "10 sett."
+   },
+   {
+    "name": "Armatura e getto AG01 - plinto e colletto",
+    "start": 3.53,
+    "end": 4.79,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Armatura e getto AG02 - plinto e colletto",
+    "start": 3.78,
+    "end": 5.04,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Armatura e getto AG03 - plinto e colletto",
+    "start": 4.03,
+    "end": 5.29,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Armatura e getto AG04 - plinto e colletto",
+    "start": 4.28,
+    "end": 5.54,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Armatura e getto AG05 - plinto e colletto",
+    "start": 4.53,
+    "end": 5.79,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Armatura e getto AG06 - plinto e colletto",
+    "start": 4.78,
+    "end": 6.04,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Armatura e getto AG07 - plinto e colletto",
+    "start": 5.03,
+    "end": 6.29,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Armatura e getto AG08 - plinto e colletto",
+    "start": 5.28,
+    "end": 6.54,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Armatura e getto AG09 - plinto e colletto",
+    "start": 5.53,
+    "end": 6.79,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Cavidotto extraparco",
+    "start": 3.53,
+    "end": 5.79,
+    "level": 0,
+    "summary": false,
+    "duration": "9 sett."
+   },
+   {
+    "name": "Cavidotto infraparco",
+    "start": 5.78,
+    "end": 7.04,
+    "level": 0,
+    "summary": false,
+    "duration": "5 sett."
+   },
+   {
+    "name": "Movimento terra",
+    "start": 4.28,
+    "end": 5.04,
+    "level": 0,
+    "summary": false,
+    "duration": "3 sett."
+   },
+   {
+    "name": "Opere civili",
+    "start": 5.03,
+    "end": 6.54,
+    "level": 0,
+    "summary": false,
+    "duration": "6 sett."
+   },
+   {
+    "name": "Allestimento elettrico",
+    "start": 6.53,
+    "end": 8.54,
+    "level": 0,
+    "summary": false,
+    "duration": "8 sett."
+   },
+   {
+    "name": "Trasporto e montaggio AG01",
+    "start": 5.53,
+    "end": 6.04,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Trasporto e montaggio AG02",
+    "start": 5.78,
+    "end": 6.29,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Trasporto e montaggio AG03",
+    "start": 6.03,
+    "end": 6.54,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Trasporto e montaggio AG04",
+    "start": 6.28,
+    "end": 6.79,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Trasporto e montaggio AG05",
+    "start": 6.53,
+    "end": 7.04,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Trasporto e montaggio AG06",
+    "start": 6.78,
+    "end": 7.29,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Trasporto e montaggio AG07",
+    "start": 7.03,
+    "end": 7.54,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Trasporto e montaggio AG08",
+    "start": 7.28,
+    "end": 7.79,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Trasporto e montaggio AG09",
+    "start": 7.53,
+    "end": 8.04,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Montaggio meccanico ed elettrico AG01",
+    "start": 6.03,
+    "end": 6.54,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Montaggio meccanico ed elettrico AG02",
+    "start": 6.28,
+    "end": 6.79,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Montaggio meccanico ed elettrico AG03",
+    "start": 6.53,
+    "end": 7.04,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Montaggio meccanico ed elettrico AG04",
+    "start": 6.78,
+    "end": 7.29,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Montaggio meccanico ed elettrico AG05",
+    "start": 7.03,
+    "end": 7.54,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Montaggio meccanico ed elettrico AG06",
+    "start": 7.28,
+    "end": 7.79,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Montaggio meccanico ed elettrico AG07",
+    "start": 7.53,
+    "end": 8.04,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Montaggio meccanico ed elettrico AG08",
+    "start": 7.78,
+    "end": 8.29,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Montaggio meccanico ed elettrico AG09",
+    "start": 8.03,
+    "end": 8.54,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Test di verifica AG01",
+    "start": 6.53,
+    "end": 7.04,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Test di verifica AG02",
+    "start": 6.78,
+    "end": 7.29,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Test di verifica AG03",
+    "start": 7.03,
+    "end": 7.54,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Test di verifica AG04",
+    "start": 7.28,
+    "end": 7.79,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Test di verifica AG05",
+    "start": 7.53,
+    "end": 8.04,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Test di verifica AG06",
+    "start": 7.78,
+    "end": 8.29,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Test di verifica AG07",
+    "start": 8.03,
+    "end": 8.54,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Test di verifica AG08",
+    "start": 8.28,
+    "end": 8.79,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Test di verifica AG09",
+    "start": 8.53,
+    "end": 9.04,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Collaudo dell'impianto elettrico",
+    "start": 9.03,
+    "end": 10.79,
+    "level": 0,
+    "summary": false,
+    "duration": "7 sett."
+   },
+   {
+    "name": "Test di accettazione",
+    "start": 10.78,
+    "end": 11.29,
+    "level": 0,
+    "summary": false,
+    "duration": "2 sett."
+   },
+   {
+    "name": "Sistemazione aree e ripristino ambientale",
+    "start": 10.78,
+    "end": 11.79,
+    "level": 0,
+    "summary": false,
+    "duration": "4 sett."
+   }
+  ],
+  "unit": "month",
+  "months": 11.79,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/239962",
+   "page": 106,
+   "document": "Relazione tecnica descrittiva generale",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 9 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/239974",
+    "page": 120,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "3.7. TEMPISTICA La tempistica globale della fase di realizzazione è di circa 12 mesi. Nella tabella seguente è indicata la pianificazione delle attività di progettazione esecutiva e di cantierizzazione."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 108,
+  "pagine": 2603,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "RC Wind S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 32.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GENZANO DI LUCANIA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PZ",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "623 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
