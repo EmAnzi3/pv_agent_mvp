@@ -114,6 +114,10 @@ def main(argv: list[str] | None = None) -> int:
     wc.add_argument("--no-regional-cloud", action="store_true", help="do not read the regional portals in this run")
     wch = sub.add_parser("wind-changes", help="wind change report: census compared with the previous one (wind/changes/)")
     wch.add_argument("--memory", required=True)
+    wrh = sub.add_parser("wind-report", help="wind change report as local HTML (like the PV changes_latest.html)")
+    wrh.add_argument("--out", default="reports/change_reports/wind_changes_latest.html")
+    wrh.add_argument("--newer-than", default=None, help="ISO UTC: wait for a report generated after this time")
+    wrh.add_argument("--wait-min", type=float, default=0)
     wr = sub.add_parser("wind-regional", help="regional wind procedures (PV collectors with a wind filter)")
     wr.add_argument("--where", choices=["cloud", "local"], default=None, help="sources of this kind only")
     wr.add_argument("--only", nargs="*", help="source names (puglia_opendata, sistema_puglia_energia, basilicata, campania, calabria, sardegna, sicilia)")
@@ -258,6 +262,9 @@ def main(argv: list[str] | None = None) -> int:
         from .wind_changes import run as changes_run
         print("::notice title=wind-changes::" + json.dumps(changes_run(a.memory), ensure_ascii=False))
         return 0
+    if a.cmd == "wind-report":
+        from .wind_changes_html import run as report_run
+        return report_run(a.out, a.newer_than, a.wait_min)
     if a.cmd == "wind-regional":
         from app.collectors.wind_regional import run as regional_run
         rep = regional_run(a.only or None, a.where, a.out)
