@@ -147,8 +147,11 @@ class FetchResult:
 
 
 def expand_archive(raw: bytes, parent_sha: str, cap: int, depth: int = 0,
-                   max_depth: int = 2) -> tuple[list[Member], list[dict]]:
-    """Inventory every ZIP entry; return processable members and an explicit skip list."""
+                   max_depth: int = 2, skip_names=None) -> tuple[list[Member], list[dict]]:
+    """Inventory every ZIP entry; return processable members and an explicit skip list.
+
+    skip_names: optional callable(name) -> bool for members not to parse (drawings in local runs: a 70 MB
+    archive of hydraulic drawings took over three hours to parse)."""
     members: list[Member] = []
     skipped: list[dict] = []
     with zipfile.ZipFile(io.BytesIO(raw)) as z:
@@ -157,6 +160,9 @@ def expand_archive(raw: bytes, parent_sha: str, cap: int, depth: int = 0,
                 continue
             if info.file_size > cap:
                 skipped.append({"name": info.filename, "reason": "exceeds size cap", "size": info.file_size})
+                continue
+            if skip_names and not info.filename.lower().endswith(".zip") and skip_names(info.filename):
+                skipped.append({"name": info.filename, "reason": "drawing not parsed", "size": info.file_size})
                 continue
             try:
                 data = z.read(info)
@@ -169,7 +175,7 @@ def expand_archive(raw: bytes, parent_sha: str, cap: int, depth: int = 0,
                 if inner:
                     data, kind = inner, sniff(inner)
             if kind == "zip" and depth < max_depth:
-                sub, sub_skip = expand_archive(data, parent_sha, cap, depth + 1, max_depth)
+                sub, sub_skip = expand_archive(data, parent_sha, cap, depth + 1, max_depth, skip_names)
                 for m in sub:
                     m.name = f"{info.filename}/{m.name}"
                 members.extend(sub)
@@ -331,7 +337,8 @@ class Fetcher:
         if kind == "pdf":
             result.members = [Member(url.rsplit("/", 1)[-1] + ".pdf", "pdf", raw, sha, 0)]
         elif kind == "zip":
-            result.members, result.skipped_members = expand_archive(raw, sha, self.max_bytes)
+            result.members, result.skipped_members = expand_archive(raw, sha, self.max_bytes,
+                                                                    skip_names=getattr(self, "skip_member", None))
         else:
             result.skipped_members = [{"name": url, "reason": f"format {kind} not parsed", "size": len(raw)}]
         return result
