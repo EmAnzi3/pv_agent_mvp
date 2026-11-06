@@ -5,14 +5,14 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"FRAGAGNANO\", della potenza di 66 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Mesagne (BR), San Donaci (BR) e Cellino San Marco",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9345",
  "source": "mase",
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
    "value": "66 MW",
-   "sub": null,
+   "sub": "Suddivisa in 3 lotti",
    "source": {
     "document": "titolo del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9345",
@@ -47,14 +47,14 @@
   {
    "key": "pannelli",
    "label": "Superficie coperta dai pannelli",
-   "value": "19,608 ha",
+   "value": "33,086 ha",
    "status": "da verificare",
-   "sub": "22% dell'area · Valore più ricorrente negli elaborati; altri valori: 33,086 ha (1), 17,903 ha (1), 16,533 ha (1)",
+   "sub": "37% dell'area · Valore più ricorrente negli elaborati; altri valori: 19,608 ha (2), 17,903 ha (1), 16,533 ha (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/839342",
-    "page": 31,
-    "document": "Relazione progetto agricolo",
-    "excerpt": "• l’area tra le file dei tracker sviluppa 196.082 mq di area coltivabile; •"
+    "url": "https://va.mite.gov.it/File/Documento/839332",
+    "page": 25,
+    "document": "Relazione impatti cumulativi",
+    "excerpt": "Gli elementi dimensionali che caratterizzano l’impianto di progetto sono: 1. Superficie pannelli: 330.861 mq; 2. Altezza min. dei pannelli dal suolo: 1,20 cm"
    }
   },
   {
@@ -62,7 +62,7 @@
    "label": "Accumulo",
    "value": "10 MW",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 60 MW (2), 50 MW (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 60 MW (5), 50 MW (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/839356",
     "page": 24,
@@ -75,7 +75,7 @@
    "label": "Durata cantiere",
    "value": "16 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 10 mesi (2), 16 settimane (circa 4 mesi) (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (4), 16 settimane (circa 4 mesi) (3), 11 mesi (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1442029",
     "page": 13,
@@ -95,7 +95,7 @@
   "coordinate": {
    "lat": 40.46988,
    "lon": 17.88201,
-   "tipo": "centro della tavola georeferenziata di progetto (22 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (24 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/839385",
     "page": 1,
@@ -163,7 +163,7 @@
     {
      "type": "PEC",
      "value": "ambrasolare21@legalmail.it",
-     "occurrences": 99,
+     "occurrences": 114,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/839455",
       "page": 1,
@@ -296,7 +296,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "16 mesi",
+  "durata_cantiere": "5 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -308,15 +308,394 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Preparazione della viabilità di accesso cantiere",
+    "start": 0.21,
+    "end": 0.57,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Impianto del cantiere e preparazione delle aree di stoccaggio",
+    "start": 0.21,
+    "end": 0.57,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "stoccaggio",
+    "start": 0.26,
+    "end": 0.53,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Pulizia dei terreni dalle piante infestanti",
+    "start": 0.39,
+    "end": 0.57,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Rifornimento delle aree di stoccaggio",
+    "start": 0.58,
+    "end": 4.3,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Recinzione",
+    "start": 0.58,
+    "end": 0.95,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Infissione tramite avvitatura dei supporti nel terreno",
+    "start": 0.95,
+    "end": 1.69,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Montaggio tracker di supporto dei moduli",
+    "start": 1.14,
+    "end": 2.15,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Montaggio pannelli",
+    "start": 1.32,
+    "end": 2.42,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Scavo trincee, posa cavidotti e rinterri per tutta l’area interessata",
+    "start": 1.7,
+    "end": 2.95,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "interessata",
+    "start": 1.75,
+    "end": 2.91,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione rete di distribuzione e cablaggio dei pannelli",
+    "start": 2.69,
+    "end": 4.56,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Piantumazione olivi intensivi sul perimetro",
+    "start": 3.23,
+    "end": 3.76,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Semina interfilari",
+    "start": 3.49,
+    "end": 3.76,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzaione cavidotto interrato di connessione",
+    "start": 1.7,
+    "end": 2.15,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa cavo interrato cavidotto di connessione",
+    "start": 2.15,
+    "end": 3.76,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Rimozione area di cantiere",
+    "start": 3.23,
+    "end": 3.76,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Avvio impianto fotovoltaico",
+    "start": 3.23,
+    "end": 3.76,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Altra sezione del cronoprogramma (pag. 57)",
+    "separator": true,
+    "start": 0,
+    "end": 0,
+    "level": 0
+   },
+   {
+    "name": "Preparazione della viabilità di accessao cantiere",
+    "start": 0.14,
+    "end": 0.53,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Impianto del cantiere e preparazione delle aree di stoccaggio",
+    "start": 0.14,
+    "end": 0.53,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Pulizia dei terreni dalle piante infestanti",
+    "start": 0.33,
+    "end": 0.53,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Rifornimento delle aree di stoccaggio",
+    "start": 0.53,
+    "end": 3.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Recinzione",
+    "start": 0.53,
+    "end": 0.93,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Montaggio tracker di supporto dei moduli",
+    "start": 1.13,
+    "end": 2.2,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Montaggio pannelli",
+    "start": 1.33,
+    "end": 2.48,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Scavo trincee, posa cavidotti e rinterri per tutta l’area",
+    "start": 1.73,
+    "end": 3.03,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "interessata",
+    "start": 1.79,
+    "end": 2.97,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione rete di distribuzione e cablaggio dei pannelli",
+    "start": 2.76,
+    "end": 3.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Piantumazione olivi intensivi sul perimetro",
+    "start": 3.31,
+    "end": 3.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Semina interfilari",
+    "start": 3.59,
+    "end": 3.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzaione cavidotto interrato di connessione",
+    "start": 1.73,
+    "end": 2.2,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa cavo interrato cavidotto di connessione",
+    "start": 2.2,
+    "end": 3.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Rimozione area di cantiere",
+    "start": 3.31,
+    "end": 3.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Avvio impianto fotovoltaico",
+    "start": 3.31,
+    "end": 3.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Altra sezione del cronoprogramma (pag. 58)",
+    "separator": true,
+    "start": 0,
+    "end": 0,
+    "level": 0
+   },
+   {
+    "name": "Area 1",
+    "start": 0.23,
+    "end": 1.89,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Area 2",
+    "start": 1.71,
+    "end": 3.69,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Area 3",
+    "start": 1.71,
+    "end": 3.17,
+    "level": 3,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 4.56,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/839438",
+   "page": 56,
+   "document": "Relazione Generale",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "19",
+     "start": 4.154,
+     "end": 4.385
+    }
+   ],
+   "unita": "settimane"
+  },
   "duration": {
    "text": "16 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 10 mesi (2), 16 settimane (circa 4 mesi) (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (4), 16 settimane (circa 4 mesi) (3), 11 mesi (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1442029",
     "page": 13,
@@ -326,16 +705,16 @@
   },
   "milestones": [],
   "document": null,
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "note": null,
   "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 174,
-  "pagine": 1569,
-  "completa": false,
-  "da_leggere": 54
+  "pagine": 2046,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -383,7 +762,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "142 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "161 recapiti non attribuibili a un soggetto preciso: non mostrati"
   },
   {
    "label": "Ambra Solare 21 S.r.l.",
