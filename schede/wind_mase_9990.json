@@ -1,0 +1,592 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9990",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"FLORIO\", costituito da 32 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva d'impianto di 230,4 MW, da realizzarsi nei comuni di San Severo (FG) e Rignano Garganico (FG), con opere di connessione alla RTN ricadenti nei medesimi territori comunali (cod. MYTERNA n. 201300095).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9990",
+ "source": "mase",
+ "updated": "2026-11-07",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "230,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9990",
+    "excerpt": "230,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "32",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 175 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 2 (13), 5 (12), 12 (12)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1053455",
+    "page": 2,
+    "document": "Richiesta integrazioni della Commissione Tecnica PNRR-PNIEC",
+    "excerpt": "Oggetto: [ID 10014] Progetto per la realizzazione di un impianto eolico denominato \"FLORIO\", costituito da 32 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva d'impianto di 230,4 MW, da reali"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1233787",
+    "page": 23,
+    "document": "Parere del Ministero della Cultura - Soprintendenza speciale per il Piano Nazionale di Ripresa e Resilienza in data 24/03/2025",
+    "excerpt": "- il progetto identificato con l’ID 9217 (impianto agrivoltaico in corso di istruttoria di VIA) si sovrappone al"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6-7 mesi (1), 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1079144",
+    "page": 5,
+    "document": "Integrazioni del 20/05/2024 - RELAZIONE RICADUTE OCCUPAZIONALI",
+    "excerpt": "di manutenzione/esercizio che nella fase di dismissione. I lavori di realizzazione del presente progetto hanno una durata stimata di circa 24 mesi. In merito, a tali ricadute occupazionali generate dal mercato degli impi"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "San Severo",
+   "Rignano Garganico"
+  ],
+  "coordinate": {
+   "lat": 41.64915,
+   "lon": 15.50524,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (13 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1079148",
+    "page": 9,
+    "document": "Integrazioni del 20/05/2024 - Documento unitario risposte a richiesta d'integrazione prot. n. 0005550 del 26/04/2024 del MASE",
+    "excerpt": "Segue fotografia scattata in data 02/05/2024, dal punto di coordinate geografiche 41°40’13.88” N, 15°30’38.87” E, in direzione del Comune di Rignano Garganico, che mostra il cantiere del progetto eolico"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.64915,15.50524",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "GEO Tecnologie S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1079139",
+    "page": 61,
+    "document": "Integrazioni del 20/05/2024 - Relazione Geologica",
+    "excerpt": "Committente: GEO TECNOLOGIE S.r.L. - Bari"
+   }
+  },
+  {
+   "name": "ATS Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "atseng@pec.it",
+     "occurrences": 166,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1079131",
+      "page": 1,
+      "document": "Integrazioni del 20/05/2024 - Verifica preventiva dell'interesse archeologico - premessa metodologica e documentazione fotografica",
+      "excerpt": "0882/393197 atseng@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "nva.srl@pecimprese.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1079151",
+      "page": 1,
+      "document": "Integrazioni del 20/05/2024 - CARTA DELL'INTERVISIBILITA' (su base IGM)",
+      "excerpt": "info@nvarenewables com 0880093 A EUGENIO | nva.srl@pecimprese.it atseng@pec.it 162210"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@nvarenewables.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/883950",
+      "page": 1,
+      "document": "SIA Componenti ambientali_ecosistemi-habitat-flora-fauna",
+      "excerpt": "20045 Lainate (MI) 71017 Torremaggiore (FG) Il Tecnico Naturalista/Faunista: info@nvarenewables.com 0882/393197 Michele Zullo"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1079132",
+    "page": 4,
+    "document": "Integrazioni del 20/05/2024 - Verifica preventiva dell'interesse archeologico - MOPR",
+    "excerpt": "Garganico in provincia di Foggia. La progettazione è realizzata da ATS Engineering s.r.l. con sede in Torremaggiore alla P.zza Giovanni Paolo II, n. 8. La società proponente è la NVA S.r.l. con sede"
+   }
+  },
+  {
+   "name": "Ing. Eugenio Di Gianvito",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "atsing@atsing.eu",
+     "occurrences": 71,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1079131",
+      "page": 1,
+      "document": "Integrazioni del 20/05/2024 - Verifica preventiva dell'interesse archeologico - premessa metodologica e documentazione fotografica",
+      "excerpt": "Ing. Eugenio Di Gianvito atsing@atsing.eu"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/883946",
+    "page": 7,
+    "document": "Relazione sulla sicurezza",
+    "excerpt": "Direttore dei lavori: Ing. Eugenio Di Gianvito"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Dott. Geol. Giuseppe Locoratolo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "glocoratolo@teletu.it",
+     "occurrences": 24,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1079139",
+      "page": 62,
+      "document": "Integrazioni del 20/05/2024 - Relazione Geologica",
+      "excerpt": "sede: Via Dante, 65 - 75100 Matera - tel. & fax. 0835/264522 - cell. 335/6204363 Indirizzo E-mail: glocoratolo@teletu.it - Indirizzo WEB: http://home.teletu.it/giuloco"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3356204363",
+     "occurrences": 24,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1079139",
+      "page": 62,
+      "document": "Integrazioni del 20/05/2024 - Relazione Geologica",
+      "excerpt": "(iscritta al Registro delle Imprese di Matera R.E.A. 62744) - P.I.: 00 57 63 90 777 sede: Via Dante, 65 - 75100 Matera - tel. & fax. 0835/264522 - cell. 335/6204363"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Lungomare Nazario Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "servizio.risorseidriche@pec.rupar.puglia.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1085407",
+      "page": 22,
+      "document": "Parere della Regione Puglia - SEZIONE AUTORIZZAZIONI AMBIENTALI in data 07/06/2024",
+      "excerpt": "Lungomare Nazario Sauro nn.47 – 49 – 70121 Bari (BA) - Tel: 080 5406959 mail: p.calabrese@regione.puglia.it - pec: servizio.risorseidriche@pec.rupar.puglia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0805406959",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1085407",
+      "page": 22,
+      "document": "Parere della Regione Puglia - SEZIONE AUTORIZZAZIONI AMBIENTALI in data 07/06/2024",
+      "excerpt": "Sezione Risorse Idriche Lungomare Nazario Sauro nn.47 – 49 – 70121 Bari (BA) - Tel: 080 5406959"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Stefano Di Stefano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "serviziarcheologia@pec.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1079131",
+      "page": 1,
+      "document": "Integrazioni del 20/05/2024 - Verifica preventiva dell'interesse archeologico - premessa metodologica e documentazione fotografica",
+      "excerpt": "(nr. 4421 elenco MiC Archeologo Fascia I abilitato redazione VPIA serviziarcheologia@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Paolo Perrone",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "servizio.ecologia@pec.rupar.puglia.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1085407",
+      "page": 19,
+      "document": "Parere della Regione Puglia - SEZIONE AUTORIZZAZIONI AMBIENTALI in data 07/06/2024",
+      "excerpt": "RUP Dott. Paolo Perrone PEC servizio.ecologia@pec.rupar.puglia.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "24 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Accesso al Parco ‐ Adeguamento Strade esistenti",
+    "start": 2.63,
+    "end": 7.66,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Accesso al Parco ‐ Adeguamento Strade nuove",
+    "start": 2.63,
+    "end": 11.68,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazzione piazzole di servizio",
+    "start": 5.64,
+    "end": 14.69,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazzione di fondazioni",
+    "start": 9.66,
+    "end": 17.7,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio aerogenatori",
+    "start": 13.68,
+    "end": 18.71,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazzione SET ‐ Sottostazione Elettrica Trasformazione",
+    "start": 10.67,
+    "end": 18.71,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazzione di cavidotti",
+    "start": 11.67,
+    "end": 20.72,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Interventi di mitigazione",
+    "start": 19.71,
+    "end": 23.73,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smobilizzo del cantiere",
+    "start": 19.71,
+    "end": 23.73,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 23.73,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/883928",
+   "page": 3,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24",
+     "start": 23.0,
+     "end": 24.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "24 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6-7 mesi (1), 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1079144",
+    "page": 5,
+    "document": "Integrazioni del 20/05/2024 - RELAZIONE RICADUTE OCCUPAZIONALI",
+    "excerpt": "di manutenzione/esercizio che nella fase di dismissione. I lavori di realizzazione del presente progetto hanno una durata stimata di circa 24 mesi. In merito, a tali ricadute occupazionali generate dal mercato degli impi"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/883928"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 196,
+  "pagine": 3842,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "NVA S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 230.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SAN SEVERO",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "476 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
