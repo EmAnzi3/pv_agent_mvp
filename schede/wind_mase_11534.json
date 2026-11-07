@@ -1,0 +1,379 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11534",
+ "title": "Progetto di un impianto eolico denominato \"Parco Eolico Tolve San Chirico\", costituito da 16 aerogeneratori di potenza nominale pari a 7,2 MW, per una potenza complessiva di 115,2 MW, da realizzarsi nei comuni di Tolve (PZ) e San Chirico Nuovo (PZ), e delle relative opere di connessione alla RTN ricadenti anche nei comuni di Tricarico (MT), Genzano di Lucania (PZ), Oppido Lucano (PZ) ed Irsina (MT) (codice pratica MYTERNA n. 202404557).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11534",
+ "source": "mase",
+ "updated": "2026-11-07",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "115,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11534",
+    "excerpt": "115,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "16",
+   "status": "da verificare",
+   "sub": "7,20 MW ciascuno · altezza mozzo 95 m · diametro rotore 172 m · Valore più ricorrente negli elaborati; altri valori: 4 (57), 12 (42), 3 (23)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1215351",
+    "page": 2,
+    "document": "Avviso al pubblico del 14/02/2025",
+    "excerpt": "L’impianto eolico di nuova realizzazione presenta una potenza nominale totale pari a 102 MW ed è costituito da 16 aerogeneratori, di potenza nominale pari a 7,2 MW (modello Vestas V172 con altezza torre all’hub pari a 13"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "120 giorni (circa 4 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 settimane (circa 6 mesi) (1), 11 mesi (1), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1298381",
+    "page": 43,
+    "document": "integrazioni del 25/07/2025 - Piano preliminare utilizzo terre e rocce da scavo",
+    "excerpt": "Figura 9.2: Planimetria in fase di costruzione e montaggio Prevedendo di aprire su più fronti di lavorazioni interne al cantiere si presumono 120 giorni per la realizzazione per ognuna delle 2 fasi di lavorazione soprade"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "PZ",
+  "comuni": [
+   "Tricarico",
+   "San Chirico Nuovo",
+   "Genzano Di Lucania",
+   "Irsina",
+   "Oppido Lucano",
+   "Tolve"
+  ],
+  "coordinate": {
+   "lat": 40.70555,
+   "lon": 16.10971,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (1871 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1215319",
+    "page": 39,
+    "document": "Studio d'impatto Ambientale - Relazionale generale",
+    "excerpt": "Tolve 40.729462°"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.70555,16.10971",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Aria Prime S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ariaprimesrl@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1279192",
+      "page": 1,
+      "document": "Richiesta integrazioni del MIC",
+      "excerpt": "Società Aria Prime S.r.l. ariaprimesrl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11534"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "120 giorni (circa 4 mesi)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento Cantiere",
+    "start": 0.03,
+    "end": 0.25,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle viabilità di cantiere",
+    "start": 0.25,
+    "end": 1.17,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole di montaggio",
+    "start": 0.25,
+    "end": 1.17,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni aerogeneratori",
+    "start": 0.48,
+    "end": 1.4,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Completamento viabilità e piazzole di montaggio",
+    "start": 0.71,
+    "end": 1.62,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzaz. sottostazione di trasformazione SEU",
+    "start": 0.48,
+    "end": 1.4,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzaz. Sottostazione elettrica condivisa SEC",
+    "start": 0.48,
+    "end": 1.4,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ampliamento Terna 150 kV della SE RTN 380/150 kV",
+    "start": 0.71,
+    "end": 1.4,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linee di distribuzione MT",
+    "start": 0.48,
+    "end": 1.4,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linee di distribuzione AT",
+    "start": 0.71,
+    "end": 1.4,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio Aerogeneratori",
+    "start": 0.71,
+    "end": 1.4,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Energizzazione Sottostazione e impianto eolico",
+    "start": 1.4,
+    "end": 1.62,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Commissioning aerogeneratori",
+    "start": 1.63,
+    "end": 2.08,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Entrate in esercizio impianto eolico",
+    "start": 1.86,
+    "end": 2.31,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristino opere civile e definizione piazzole definitive",
+    "start": 1.86,
+    "end": 2.31,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Chiusura cantiere",
+    "start": 2.32,
+    "end": 2.54,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "period",
+  "months": 2.54,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1215275",
+   "page": 5,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0,
+     "end": 1
+    },
+    {
+     "label": "2",
+     "start": 1,
+     "end": 2
+    },
+    {
+     "label": "3",
+     "start": 2,
+     "end": 3
+    },
+    {
+     "label": "4",
+     "start": 3,
+     "end": 4
+    },
+    {
+     "label": "5",
+     "start": 4,
+     "end": 5
+    },
+    {
+     "label": "6",
+     "start": 5,
+     "end": 6
+    },
+    {
+     "label": "7",
+     "start": 6,
+     "end": 7
+    },
+    {
+     "label": "8",
+     "start": 7,
+     "end": 8
+    },
+    {
+     "label": "9",
+     "start": 8,
+     "end": 9
+    },
+    {
+     "label": "10",
+     "start": 9,
+     "end": 10
+    },
+    {
+     "label": "11",
+     "start": 10,
+     "end": 11
+    }
+   ],
+   "unita": "giorni"
+  },
+  "duration": {
+   "text": "120 giorni (circa 4 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 giorni (2), 90 giorni (circa 3 mesi) (2), 30 giorni (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1298381",
+    "page": 43,
+    "document": "integrazioni del 25/07/2025 - Piano preliminare utilizzo terre e rocce da scavo",
+    "excerpt": "Figura 9.2: Planimetria in fase di costruzione e montaggio Prevedendo di aprire su più fronti di lavorazioni interne al cantiere si presumono 120 giorni per la realizzazione per ognuna delle 2 fasi di lavorazione soprade"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1215275"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 196,
+  "pagine": 4143,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Aria Prime S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 115.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TOLVE, TRICARICO",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PZ",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "658 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
