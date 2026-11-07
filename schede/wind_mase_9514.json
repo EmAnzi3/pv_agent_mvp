@@ -1,0 +1,365 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9514",
+ "title": "Progetto di realizzazione di un nuovo parco eolico composto da 20 aerogeneratori denominato \"Monte Giarolo\" e relative opere connesse, della potenza massima complessiva di 124 MW, sito nei Comuni di Albera Ligure, Cabella Ligure, Fabbrica Curone e Santa Margherita di Staffora",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9514",
+ "source": "mase",
+ "updated": "2026-11-07",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "124 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9514",
+    "excerpt": "124 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "20",
+   "status": "da documenti",
+   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 12 (1), 5 (1), 3 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1118284",
+    "page": 3,
+    "document": "Richiesta integrazioni Regione Lombardia",
+    "excerpt": "Progetto di realizzazione di un nuovo parco eolico composto da 20 aerogeneratori denominato \"Monte Giarolo\" e relative opere connesse, della potenza massima"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "240 giorni (circa 8 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 36-48 mesi (1), 36 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1239516",
+    "page": 91,
+    "document": "(integrazioni del 07/02/2025)quadro_programmatico-signed",
+    "excerpt": "in 16.000 viaggi ripartiti, anche se in modo non uniforme, nei 4 anni di durata prevista del cantiere. 30 Considerando 240 giorni di lavoro annui e 10 ore di lavoro al giorno questo movimento corrisponde a una media di m"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Piemonte",
+  "provincia": "AL",
+  "comuni": [
+   "Albera Ligure",
+   "Cabella Ligure",
+   "Fabbrica Curone"
+  ],
+  "coordinate": {
+   "lat": 44.72447,
+   "lon": 9.17907,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (2 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/938003",
+    "page": 1,
+    "document": "Cartografia inq. dei tipi forestali e uso del suolo-signed",
+    "excerpt": "Cartografia inq. dei tipi forestali e uso del suolo-signed"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=44.72447,9.17907",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Piu’ Energia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "15piuenergia@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1118284",
+      "page": 1,
+      "document": "Richiesta integrazioni Regione Lombardia",
+      "excerpt": "Società 15 PIU' ENERGIA SRL Email: 15piuenergia@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9514"
+   }
+  },
+  {
+   "name": "Ing. Silvio Mario Bauducco",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0116052113",
+     "occurrences": 96,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1061669",
+      "page": 1,
+      "document": "Integrazioni del 22/04/2024 - ESTRATTO AEROFOTOGRAMMETRICO INQUADRAMENTO",
+      "excerpt": "Sede Amministrativa via Maroncelli, 23 10024 Moncalieri (TO) tel 011.6052113 - 011.6059915 e-mail: amministrazione@bautel.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/938027",
+    "page": 1,
+    "document": "Analisi percettiva dell'area-signed",
+    "excerpt": "Coord. gruppo di progettazione Ing. Silvio Mario Bauducco"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Bautel S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10009540013",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Maroncelli 23 10024 Moncalieri To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "amministrazione@bautel.it",
+     "occurrences": 247,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/938005",
+      "page": 1,
+      "document": "Analisi intervisibilità AG.01",
+      "excerpt": "tel 011.6052113 - 011.6059915 e-mail: amministrazione@bautel.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geosistemi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01160140057",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Fraz Valenzani Via Calcini 6/8 14030 Castagnole Monferrato At",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@geosistemi.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1186539",
+      "page": 59,
+      "document": "Integrazioni del 05/11/2024 - 15PIU-EN_AL_MIT-RIP_REV01-24CAL",
+      "excerpt": "Tel. 0141.292620 Fax 0141.292621 E-mail: info@geosistemi.it sito: www.geosistemi.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. For. Marco Calandri",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "marco.calandri@pec.epap.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1186542",
+      "page": 1,
+      "document": "Integrazioni del 05/11/2024 - 15PIU-EN_AL_PMA-ALL_REV01-24CAL",
+      "excerpt": "Dott. For. Marco Calandri SEDE: Via Coronata 28 - 12045 – Fossano (CN) - Cell: 339.57.16.741 - PEC: marco.calandri@pec.epap.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "marco.calandri@atprogetti.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/938036",
+      "page": 1,
+      "document": "studio vegetazionale",
+      "excerpt": "Sede Legale ed Amm. Via Coronata 28 – 12045 Fossano (CN) Cell. +39 339 5716741 – Email: marco.calandri@atprogetti.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3395716741",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/938036",
+      "page": 1,
+      "document": "studio vegetazionale",
+      "excerpt": "Sede Legale ed Amm. Via Coronata 28 – 12045 Fossano (CN) Cell. +39 339 5716741 – Email: marco.calandri@atprogetti.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Officine Maccaferri Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@it.maccaferri.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1186539",
+      "page": 53,
+      "document": "Integrazioni del 05/11/2024 - 15PIU-EN_AL_MIT-RIP_REV01-24CAL",
+      "excerpt": "Tel. (+39) 051-6436000 - Fax (+39) 051-6436201 E-mail: info@it.maccaferri.com - Web site: www.maccaferri.com/it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "comit@maccaferri.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1186539",
+      "page": 58,
+      "document": "Integrazioni del 05/11/2024 - 15PIU-EN_AL_MIT-RIP_REV01-24CAL",
+      "excerpt": "Fax ++39 051 6436201 e-mail: comit@maccaferri.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "240 giorni (circa 8 mesi)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "240 giorni (circa 8 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 36-48 mesi (1), 36 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1239516",
+    "page": 91,
+    "document": "(integrazioni del 07/02/2025)quadro_programmatico-signed",
+    "excerpt": "in 16.000 viaggi ripartiti, anche se in modo non uniforme, nei 4 anni di durata prevista del cantiere. 30 Considerando 240 giorni di lavoro annui e 10 ore di lavoro al giorno questo movimento corrisponde a una media di m"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 22/04/2024 - DIAGRAMMA GANTT",
+   "url": "https://va.mite.gov.it/File/Documento/1061748"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Integrazioni del 22/04/2024 - DIAGRAMMA GANTT",
+    "url": "https://va.mite.gov.it/File/Documento/1061748"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 800,
+  "pagine": 1351,
+  "completa": false,
+  "da_leggere": 500
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "15 PIU' ENERGIA SRL",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 124.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ALBERA LIGURE, CABELLA LIGURE, FABBRICA CURONE, SANTA MARGHERITA DI STAFFORA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AL",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Piemonte",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "691 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
