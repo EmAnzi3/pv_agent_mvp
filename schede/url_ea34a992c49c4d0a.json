@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Parco Agrovoltaico con impianto di accumulo e delle opere connesse denominato \"Pecciapertosa\", della potenza complessiva di 22,57 MW, nei comuni di Castronovo di Sicilia e Lercara Friddi (PA)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8740",
  "source": "mase",
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "27,3 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 25,21 ha (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 25,21 ha (2), 30,755 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1368491",
     "page": 9,
@@ -48,8 +48,8 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "10 MW / 40 MWh",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 49,6 MW (3), 39,6 MW (2), 22,57 MW (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 22,57 MW (3), 49,6 MW (3), 19,596 MW (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1368491",
     "page": 10,
@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "12 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 36 mesi (2), 17 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (3), 36 mesi (2), 17 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1368491",
     "page": 15,
@@ -81,7 +81,7 @@
   "coordinate": {
    "lat": 37.73159,
    "lon": 13.66018,
-   "tipo": "centro della tavola georeferenziata di progetto (264 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (283 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1213953",
     "page": 1,
@@ -97,7 +97,7 @@
  },
  "soggetti": [
   {
-   "name": "ND-THREE S.r.l.",
+   "name": "ND-Three S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente"
@@ -107,7 +107,19 @@
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "nd3@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/773214",
+      "page": 1,
+      "document": "Parere della Città Metropolitana di Palermo in data 17/02/2023",
+      "excerpt": "ND-Three S.r.l. nd3@pec.it"
+     }
+    }
+   ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8740"
@@ -145,21 +157,21 @@
    }
   },
   {
-   "name": "NEW Developments S.r.l.",
+   "name": "NEW Developments Societa' A Resposabilita' Limitata",
    "kind": "società",
    "roles": [
     "Progettista"
    ],
-   "vat": null,
+   "vat": "03538160783",
    "vat_group": false,
-   "verified": false,
+   "verified": true,
    "esecuzione": null,
-   "office": null,
+   "office": "Piazza Europa 9 87100 Cosenza Cs",
    "contacts": [
     {
      "type": "PEC",
      "value": "newdevelopmentssrl@pec.it",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1214013",
       "page": 2,
@@ -450,7 +462,7 @@
   "duration": {
    "text": "12 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 36 mesi (2), 17 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (3), 36 mesi (2), 17 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1368491",
     "page": 15,
@@ -475,9 +487,9 @@
  },
  "documentazione": {
   "documenti": 265,
-  "pagine": 3314,
-  "completa": false,
-  "da_leggere": 27
+  "pagine": 4390,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -516,16 +528,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Accumulo",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "79 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "88 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
