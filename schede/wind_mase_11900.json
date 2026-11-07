@@ -1,0 +1,808 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11900",
+ "title": "Progetto di un impianto eolico costituito da 22 aerogeneratori, di potenza unitaria pari a 6 MW, per una potenza complessiva di 132 MW, da realizzarsi nel Comune di Sant'Agata di Puglia (FG), incluse le relative opere di connessione alla RTN ricadenti nel medesimo territorio comunale (codice MYTERNA 202301253).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11900",
+ "source": "mase",
+ "updated": "2026-11-07",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "132 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11900",
+    "excerpt": "132 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "22",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 17 (3), 5 (3), 12 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347295",
+    "page": 1,
+    "document": "Avviso al pubblico del 23/01/2026",
+    "excerpt": "Impianto di produzione di energia elettrica da fonte eolica costituito da 22 aerogeneratori della potenza di 6 MW ciascuno, per una potenza di 132 MW con relative opere di connessione da"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "365 giorni (circa 12 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347176",
+    "page": 195,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "Sulla base di conversioni appropriate e ipotizzando, in via cautelativa, che le attività di cantiere si protraggano per un intero anno solare (365 giorni), l’incremento stimato delle emissioni risulta trascurabile, con i"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Sant'Agata Di Puglia"
+  ],
+  "coordinate": {
+   "lat": 41.13252,
+   "lon": 15.39597,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (134 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1346900",
+    "page": 17,
+    "document": "Verifica Preventiva Interesse Archeologico",
+    "excerpt": "viene percorsa per circa 3 km. Giunti a un crocevia tra la SP 101 e due strade sterrate in direzione rispettivamente sud-ovest e nord-est (41° 9' 26.61\" N, 15° 26' 3.60\" E), si svolta a sinistra in direzione sud-ovest. D"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.13252,15.39597",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.16477,
+   "lon": 15.46491,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347175",
+    "page": 3,
+    "document": "Analisi delle interferenze con le attività minerarie",
+    "excerpt": "SE TERNA Vertice 3 41,164767"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.16477,15.46491"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Vento Sud S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ventosud@diellepec.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 88,
+      "document": "Relazione generale",
+      "excerpt": "Domicilio digitale/PEC ventosud@diellepec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11900"
+   }
+  },
+  {
+   "name": "Dott. Ing. Vittorio Iacono",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1346884",
+    "page": 1,
+    "document": "Planimetria su C.T.R. fabbricati desunti cartografie",
+    "excerpt": "Progettista Dott. Ing. Vittorio Iacono"
+   }
+  },
+  {
+   "name": "Dott. Geol. Stefano Fina",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347012",
+    "page": 1,
+    "document": "Relazione geomorfologica e di analisi del rischio",
+    "excerpt": "Geologo Dott. Geol. Stefano FINA0ORE"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Green Energy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01787400769",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Castello 26 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "green.energy@gigapec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 126,
+      "document": "Relazione generale",
+      "excerpt": "P.IVA 01787400769 e numero d'iscrizione nel Registro delle imprese di Milano con numero REA MI —2107378, PEC green.energy@gigapec.it, Codice destinatario fatturazione MSUXCRI, rappresentata"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Rocchetta Solar S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02446570562",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Guido D'Arezzo 15 20145 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rocchettasolar@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 127,
+      "document": "Relazione generale",
+      "excerpt": "P.IVA 02446570562 e numero d’iscrizione nel Registro delle imprese di Rieti-Viterbo con numero REA VT-206933, PEC r rocchettasolar@legalmail.it, rappresentata da Fabrizio Rosciani i in qualità di"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Finam Holding S.r.l. !!FINAM",
+   "kind": "società",
+   "roles": [],
+   "vat": "16895851000",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Rasella 4 00187 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "finamholding@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 127,
+      "document": "Relazione generale",
+      "excerpt": "e numero d'iscrizione nel Registro. delle imprese «di Roma con numero REA RM-1682502, PEC finamholding@legalmail.it, Codice destinatario fatturazione KRRH6B9, rappresentata da ‘Andrea"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Energy Total Capital S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "08084231219",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Nuova Delle Brecce 214 80147 Napoli Na",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energytotalcapital@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 127,
+      "document": "Relazione generale",
+      "excerpt": "P.IVA 08084231219 e numero d’iscrizione nel Registro delle imprese di Napoli con numero REA NA-930855, PEC energytotalcapital@pec.it, Codice destinatario fatturazione KRRH6B9,"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "MC Service S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "mcservicesrl@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 97,
+      "document": "Relazione generale",
+      "excerpt": "84022 CAMPAGNA (SALERNO) mcservicesrl@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346997",
+      "page": 28,
+      "document": "Relazione di calcolo preliminare sulle strutture",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346997",
+      "page": 28,
+      "document": "Relazione di calcolo preliminare sulle strutture",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "S2SE Nove S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "s2senovesrl@levalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 125,
+      "document": "Relazione generale",
+      "excerpt": "17383611005 e numero d’iscrizione nel Registro delle Imprese di di Roma con numero REA RM — 1714948, PEC s2senovesrl@levalmail.it, Codice destinatario fatturazione elettronica KRRH6B9,"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Avika Renewables S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "avapaenergysri@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 125,
+      "document": "Relazione generale",
+      "excerpt": "13022790961 e numero d’iscrizione nel Registro delle Imprese di Milano con numero REA MI- 2698871, PEC avapaenergysri@legalmail.it, Codice destinatario fatturazione elettronica USAL8PV,"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "DL Bess 4 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dibess4@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 126,
+      "document": "Relazione generale",
+      "excerpt": "06198250653 e numero d'iscrizione nel Registro delle imprese di Milano con numero REA MI- 2711046, PEC dibess4@legalmail.it, Codice destinatario fatturazione USAL8PV, rappresentata da"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Field Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fielditalia@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 126,
+      "document": "Relazione generale",
+      "excerpt": "11884380962 e numero d’iscrizione nel Registro delle imprese di Milano con numero REA MI - 2629015, PEC fielditalia@pec.it, Codice destinatario fatturazione RETS6KO, rappresentata da Amit"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Agriplus S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "agriplus.italia@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 127,
+      "document": "Relazione generale",
+      "excerpt": "258310, PEC agriplus.italia@pec.it, Codice destinatario fatturazione KRRH6B9, rappresentata dal"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "RPC Vignole S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rpe.vignole@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1346946",
+      "page": 127,
+      "document": "Relazione generale",
+      "excerpt": "1311913, PEC rpe.vignole@legalmail.it, Codice destinatario fatturazione USAL8PV, rappresentata"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "27 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "TOTALE GIORNI",
+    "start": 0.06,
+    "end": 26.83,
+    "level": 0,
+    "duration": "565 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE AREA DI CANTIERE",
+    "start": 0.06,
+    "end": 1.03,
+    "level": 0,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADA E PIAZZOLE",
+    "start": 0.98,
+    "end": 6.84,
+    "level": 0,
+    "duration": "125 g",
+    "summary": false
+   },
+   {
+    "name": "ADEGUAMENTO DELLA VIABILITA' ESISTENTE",
+    "start": 5.95,
+    "end": 10.91,
+    "level": 0,
+    "duration": "105 g",
+    "summary": false
+   },
+   {
+    "name": "ESECUZIONE DEI PLINTI DI FONDAZIONE",
+    "start": 9.03,
+    "end": 15.64,
+    "level": 0,
+    "duration": "140 g",
+    "summary": false
+   },
+   {
+    "name": "INSTALLAZIONE AEROGENERATORI",
+    "start": 14.41,
+    "end": 19.64,
+    "level": 0,
+    "duration": "110 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO E POSA FIBRA OTTICA",
+    "start": 15.59,
+    "end": 22.69,
+    "level": 0,
+    "duration": "150 g",
+    "summary": false
+   },
+   {
+    "name": "CONNESSIONE ALLA RETE",
+    "start": 22.72,
+    "end": 25.22,
+    "level": 0,
+    "duration": "50 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE DELLA SSE - OPERE CIVILI",
+    "start": 9.03,
+    "end": 12.88,
+    "level": 0,
+    "duration": "80 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE DELLA SSE - OPERE ELETTRICHE",
+    "start": 12.57,
+    "end": 14.42,
+    "level": 0,
+    "duration": "40 g",
+    "summary": false
+   },
+   {
+    "name": "COLLAUDI E TEST",
+    "start": 25.21,
+    "end": 26.14,
+    "level": 0,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "SMOBILIZZO CANTIERE E RIPRISTINI",
+    "start": 26.13,
+    "end": 26.83,
+    "level": 0,
+    "duration": "15 g",
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 26.83,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1346921",
+   "page": 2,
+   "document": "Cronoprogramma dei lavori di realizzazione",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "M11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "M12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "M13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "M14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "M15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "M16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "M17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "M18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "M19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "M20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "M21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "M22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "M23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "M24",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "M25",
+     "start": 24.0,
+     "end": 25.0
+    },
+    {
+     "label": "M26",
+     "start": 25.0,
+     "end": 26.0
+    },
+    {
+     "label": "M27",
+     "start": 26.0,
+     "end": 27.0
+    },
+    {
+     "label": "M28",
+     "start": 27.0,
+     "end": 28.0
+    },
+    {
+     "label": "M29",
+     "start": 28.0,
+     "end": 29.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "365 giorni (circa 12 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347176",
+    "page": 195,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "Sulla base di conversioni appropriate e ipotizzando, in via cautelativa, che le attività di cantiere si protraggano per un intero anno solare (365 giorni), l’incremento stimato delle emissioni risulta trascurabile, con i"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma dei lavori di realizzazione",
+   "url": "https://va.mite.gov.it/File/Documento/1346921"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma dei lavori di dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/1347105"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 415,
+  "pagine": 3077,
+  "completa": false,
+  "da_leggere": 115
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Vento Sud S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 132.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SANT'AGATA DI PUGLIA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "56 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
