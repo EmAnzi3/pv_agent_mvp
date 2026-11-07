@@ -5,7 +5,7 @@
  "title": "Impianto eolico denominato \"Serra Gagliardi\", costituito da n. 10 aerogeneratori aventi potenza unitaria pari a 3,6 MW per una potenza complessiva pari a 36 MW e relative opere di connessione. Riduzione numero di aerogeneratori da 10 a 7 e cambio modello di aerogeneratore.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8166",
  "source": "mase",
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "10",
    "status": "da verificare",
-   "sub": "3,60 MW ciascuno · altezza mozzo 119 m · diametro rotore 112 m · Valore più ricorrente negli elaborati; altri valori: 14 (31), 5 (7), 3 (6)",
+   "sub": "3,60 MW ciascuno · altezza mozzo 119 m · diametro rotore 112 m · Valore più ricorrente negli elaborati; altri valori: 14 (50), 3 (10), 5 (8)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/563577",
     "page": 4,
@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "12-18 mesi",
    "status": "da verificare",
-   "sub": "Inizio lavori 07/11/2018 (natura non determinabile) · Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 28 mesi (2)",
+   "sub": "Inizio lavori 07/11/2018 (natura non determinabile) · Valore più ricorrente negli elaborati; altri valori: 28 mesi (3), 12 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/598648",
     "page": 67,
@@ -64,11 +64,31 @@
   "comuni": [
    "Genzano Di Lucania"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Genzano+Di+Lucania%2C+TA%2C+Basilicata",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 40.79966,
+   "lon": 16.07637,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (29 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/598361",
+    "page": 14,
+    "document": "Studio_sugli_effetti_Shadow-Flickering_Rev2",
+    "excerpt": "TR01 2.610.639 4.516.924 351,0 VESTAS V112-3... Sì VESTAS V112-3.6 Gridstreame-3.600 3.600"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.79966,16.07637",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 40.88747,
+   "lon": 16.12248,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/598746",
+    "page": 29,
+    "document": "relazione_Geologica_Genzano-3",
+    "excerpt": "geografiche: P. 106/1d Lat. 40° 53’ 14.87623” N Lon.16° 07’ 20.93474” E P. 106/2d Lat. 40° 53’ 05.64047” N Lon.16° 07’ 15.92464“ E"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.88747,16.12248"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -76,7 +96,8 @@
    "name": "Skywind S.r.l.",
    "kind": "società",
    "roles": [
-    "Proponente"
+    "Proponente",
+    "Progettista"
    ],
    "vat": "02516730591",
    "vat_group": false,
@@ -87,12 +108,56 @@
     {
      "type": "PEC",
      "value": "admin@pec.skywind.it",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/563578",
       "page": 1,
       "document": "Comunicazione CreSS esito valutazione",
       "excerpt": "Skywind S.r.l. admin@pec.skywind.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "skywind@skywind.it",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598361",
+      "page": 14,
+      "document": "Studio_sugli_effetti_Shadow-Flickering_Rev2",
+      "excerpt": "Non-valid for commercial use Skywind S.r.l. / skywind@skywind.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "mariano.martellucci@skywind.it",
+     "occurrences": 24,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598757",
+      "page": 1,
+      "document": "Modello_A1",
+      "excerpt": "(0771/465249 (0771/465249 mariano.martellucci@skywind.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "admin@skywind.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598748",
+      "page": 4,
+      "document": "STMG_ed_Accettazione",
+      "excerpt": "indirizzo e-mail admin@skywind.it,"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0771465249",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598765",
+      "page": 1,
+      "document": "Istanza_richiesta_aut_D_Lgs_29_12_2003_n_387_art_12",
+      "excerpt": "Partita I.VA 02516730591 telefono 0771465249, fax 0771465249, e-mail mariano.martellucci@skywind.it"
      }
     }
    ],
@@ -102,7 +167,86 @@
    }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "Vestas Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02170340737",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Sardegna 40 00187 Roma Rm",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vestas-italia@vestas.com",
+     "occurrences": 32,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598359",
+      "page": 21,
+      "document": "Relazione specialistica_Calcolo_Gittata_Massima_Rev2",
+      "excerpt": "Via Tirso 14, 00198 Roma, Italy Tel: +39 099 4606 111, Fax: +39 099 4606 333, vestas-italia@vestas.com, www.vestas.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Euro Installazioni S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02073940591",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Xxiv Maggio 4 04026 Minturno Lt",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@euroinstallazioni.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598684",
+      "page": 134,
+      "document": "A_5_Campagna_dei_Rilievi_Anemometrici",
+      "excerpt": "Sede Operativa ed Amministrativa: Via Appia, 1431 - 04026 MARINA DI MINTURNO (LT) - Tel. e Fax 0771.660672 Sito: www.euroinstallazioni.it * E-mail: info@euroinstallazioni.it * P IVA e C.F. 0207394 059 1"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Nicola Bono",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138956",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/598748",
+      "page": 3,
+      "document": "STMG_ed_Accettazione",
+      "excerpt": "Dott. Nicola Bono Tel. 0683138956."
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": {
   "level": "date_superate",
   "label": "Date di progetto superate: verificare lo stato",
@@ -181,7 +325,7 @@
   "duration": {
    "text": "12-18 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 28 mesi (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 28 mesi (3), 12 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/598648",
     "page": 67,
@@ -246,9 +390,9 @@
  },
  "documentazione": {
   "documenti": 534,
-  "pagine": 1530,
+  "pagine": 3654,
   "completa": false,
-  "da_leggere": 234
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -292,7 +436,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "189 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "420 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
