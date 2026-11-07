@@ -1,0 +1,594 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10630",
+ "title": "Progetto di un impianto di produzione di energia elettrica da fonte eolica denominato \"Esterzili Wind\" costituito da 22 aerogeneratori, avente potenza in immissione pari a 136,84 MW, con relativo collegamento alla rete elettrica, ubicato nei comuni di Esterzili (CA), Escalaplano (CA) e Seui (OG).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10630",
+ "source": "mase",
+ "updated": "2026-11-07",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "136,84 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10630",
+    "excerpt": "136,84 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "22",
+   "status": "da documenti",
+   "sub": "6,22 MW ciascuno · altezza mozzo 112 m · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 12 (33), 7 (29), 6 (28)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981156",
+    "page": 2,
+    "document": "Avviso al pubblico del 22/02/2024",
+    "excerpt": "Costruzione ed esercizio di un nuovo impianto di produzione dell’energia elettrica da fonte eolica costituito da 22 wtg con potenza unitaria di 6,22 MW, avente potenza in immissione pari a 136,84 MW con relativo collegam"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1008976",
+    "page": 2,
+    "document": "Osservazioni del Comune di ESTERZILI, in data 18/03/2024",
+    "excerpt": "- Progetto di impianto agrivoltaico denominato \"SERRI\", dalla potenza di 39,33 MW, integrato con"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "15 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 26,576 MW (9), 49 MW (9), 64 MW (9)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1008976",
+    "page": 2,
+    "document": "Osservazioni del Comune di ESTERZILI, in data 18/03/2024",
+    "excerpt": "- Progetto di impianto agrivoltaico denominato \"SERRI\", dalla potenza di 39,33 MW, integrato con sistema di accumulo da 15 MW da realizzarsi nel Comune di Serri, con relative opere di connessione nei comuni di Isili (SU)"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (4), 5-7 mesi (4), 32 mesi (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387553",
+    "page": 8,
+    "document": "Integrazioni del 21/04/2026 - 040.21.02.R05",
+    "excerpt": "Realizzazione della S.E. “Escalaplano” 24 mesi"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "CA",
+  "comuni": [
+   "Esterzili",
+   "Escalaplano",
+   "Seui"
+  ],
+  "coordinate": {
+   "lat": 39.69547,
+   "lon": 9.3447,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (264 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/983427",
+    "page": 243,
+    "document": "Integrazioni del 06/02/2024 - SCS_REL_028-Road_survey_Esterzili_signed",
+    "excerpt": "Coord: 39°40'2.21\"N; 9°21'4.03\"E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.69547,9.34470",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 39.75778,
+   "lon": 9.37714,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1416110",
+    "page": 47,
+    "document": "Integrazioni del 16/01/2025 - Impatti Cumulativi rev.01",
+    "excerpt": "SE-08 39,758014"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=39.75778,9.37714"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Sardeolica S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "comunicazioni.sardeolica@pec.grupposa",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1387688",
+      "page": 1,
+      "document": "Integrazioni del 21/04/2026 - WEBMODULE_MWEB_2024_1768",
+      "excerpt": "Email comunicazioni.sardeolica@pec.grupposa"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "sardeolica@pec.grupposaras.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1015416",
+      "page": 1,
+      "document": "Osservazioni dell'Ente Acque della Sardegna, in data 25/03/2024",
+      "excerpt": "sardeolica@pec.grupposaras.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1008976",
+    "page": 2,
+    "document": "Osservazioni del Comune di ESTERZILI, in data 18/03/2024",
+    "excerpt": "(SU) e Genoni (SU). Proponente: Sardeolica S.r.l. - Stato procedura: Istruttoria tecnica CTPNRR-PNIEC Cod. 10855."
+   }
+  },
+  {
+   "name": "Loto Rinnovabili S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "lotorinnovabili@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1015416",
+      "page": 1,
+      "document": "Osservazioni dell'Ente Acque della Sardegna, in data 25/03/2024",
+      "excerpt": "lotorinnovabili@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1416110",
+    "page": 47,
+    "document": "Integrazioni del 16/01/2025 - Impatti Cumulativi rev.01",
+    "excerpt": "• Parco Eolico Sedda Meddau: la Società proponente LOTO Rinnovabili S.r.l. (controllata da BayWa r.e. Progetti S.r.l.) propone la realizzazione di un impianto eolico, nel Comune di Seui"
+   }
+  },
+  {
+   "name": "Sorgenia Renewables S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1008976",
+    "page": 4,
+    "document": "Osservazioni del Comune di ESTERZILI, in data 18/03/2024",
+    "excerpt": "Sardegna - Proponente: Sorgenia Renewables S.r.l. - Stato procedura: Istruttoria tecnica CTPNRR-PNIEC Cod. 8780,"
+   }
+  },
+  {
+   "name": "Green Energy Sardegna 2 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387631",
+    "page": 3,
+    "document": "Integrazioni del 21/04/2026 - G855_DEF_R_058_Rel_VVF_RTN_1-1_REV01",
+    "excerpt": "(RTN) di una serie di iniziative eoliche del proponente “Green Energy Sardegna 2 s.r.l.” ha lo scopo di dimostrare il rispetto delle distanze di sicurezza della Stazione Elettrica 150/380 kV “SE Sanluri” e i raccordi"
+   }
+  },
+  {
+   "name": "GRV Wind Sardegna 6 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1008976",
+    "page": 2,
+    "document": "Osservazioni del Comune di ESTERZILI, in data 18/03/2024",
+    "excerpt": "comuni di Genoni, Gesturi e Nuragus (SU) - Proponente: GRV Wind Sardegna 6 S.r.l. - Stato procedura: Istruttoria tecnica CTPNRR-PNIEC Cod. 9474."
+   }
+  },
+  {
+   "name": "Geotech S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "00738810142",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Nani 7 23017 Morbegno So",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@geotech-srl.it",
+     "occurrences": 324,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1387619",
+      "page": 1,
+      "document": "Integrazioni del 21/04/2026 - G855_DEF_E_023_Elenco_beni_espr_ass_1-1_REV01",
+      "excerpt": "E-mail: info@geotech-srl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0342610774",
+     "occurrences": 44,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1387621",
+      "page": 1,
+      "document": "Integrazioni del 21/04/2026 - G855_DEF_R_005_Rel_tec_SE_1-1_REV02",
+      "excerpt": "Via T.Nani, 7 Morbegno (SO) Tel. +39 0342610774"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387621",
+    "page": 1,
+    "document": "Integrazioni del 21/04/2026 - G855_DEF_R_005_Rel_tec_SE_1-1_REV02",
+    "excerpt": "PROGETTISTA"
+   }
+  },
+  {
+   "name": "Geol. Carlo Alberto",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1416115",
+    "page": 3,
+    "document": "Integrazioni del 16/01/2025 - Relazione Geologica Idrogeologica Esterzili integrazione",
+    "excerpt": "La presente relazione geologica geotecnica è stata redatta dal sottoscritto Geol. Carlo Alberto Solano, iscritto all’Ordine dei Geologi della Sardegna al numero 785, ed è finalizzata alla costruzione"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@lipu.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1007782",
+      "page": 1,
+      "document": "Osservazioni del Dott. Francesco Guillot, Coordinatore regionale per la Sardegna della Lipu ODV), in data 19/03/2024",
+      "excerpt": "sardegna@lipu.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dr. Agr. Antonio Frioli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "antoniofrioli@gmail.com",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981091",
+      "page": 2,
+      "document": "Relazione Pedoagronomica",
+      "excerpt": "Via Mesagne, 17 – 72028 Torre Santa Susanna (BR) Tel.: 320/4549459 e-mail: antoniofrioli@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3204549459",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981091",
+      "page": 2,
+      "document": "Relazione Pedoagronomica",
+      "excerpt": "Via Mesagne, 17 – 72028 Torre Santa Susanna (BR) Tel.: 320/4549459 e-mail: antoniofrioli@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acciona Energia Global Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "accionaglobalitalia@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1015416",
+      "page": 1,
+      "document": "Osservazioni dell'Ente Acque della Sardegna, in data 25/03/2024",
+      "excerpt": "accionaglobalitalia@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "protocollogenerale@pec.enas.sardegna",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1015416",
+      "page": 4,
+      "document": "Osservazioni dell'Ente Acque della Sardegna, in data 25/03/2024",
+      "excerpt": "E- mail: protocollogenerale@enas.sardegna.it PEC: protocollogenerale@pec.enas.sardegna"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alla Società SCS 15 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "scs15@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136512",
+      "page": 1,
+      "document": "Richiesta Integrazioni CTPNRR-PNIEC",
+      "excerpt": "Alla Società SCS 15 S.r.l. scs15@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Escala Wind S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "studiomusanti@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1015416",
+      "page": 1,
+      "document": "Osservazioni dell'Ente Acque della Sardegna, in data 25/03/2024",
+      "excerpt": "studiomusanti@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Fred. Olsen Renewables S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "iat@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1015416",
+      "page": 1,
+      "document": "Osservazioni dell'Ente Acque della Sardegna, in data 25/03/2024",
+      "excerpt": "iat@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Paola S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "paola2022@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1015416",
+      "page": 2,
+      "document": "Osservazioni dell'Ente Acque della Sardegna, in data 25/03/2024",
+      "excerpt": "Paola2022@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "24 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "50 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (5), 12 mesi (4), 5-7 mesi (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387553",
+    "page": 25,
+    "document": "Integrazioni del 21/04/2026 - 040.21.02.R05",
+    "excerpt": "posizionati ogni 4-8 km) e di stendimento della fune di guida (attività eseguita con elicottero). La durata massima di ogni cantiere è di 50 giorni, compresa la stagionatura dei getti."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Esterzili Gantt Chart",
+   "url": "https://va.mite.gov.it/File/Documento/981096"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Esterzili Gantt Chart",
+    "url": "https://va.mite.gov.it/File/Documento/981096"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 267,
+  "pagine": 5802,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "SCS 15 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 136.84,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ESTERZILI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "356 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
