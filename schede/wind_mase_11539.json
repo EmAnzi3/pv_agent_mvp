@@ -1,0 +1,416 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11539",
+ "title": "Progetto di un impianto eolico denominato \"Genovese\", di potenza pari a 108,8 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Menfi (AG), Sambuca di Sicilia (AG), Sciacca (AG), Castelvetrano (TP) e Partanna (TP).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11539",
+ "source": "mase",
+ "updated": "2026-11-07",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "108,8 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11539",
+    "excerpt": "108,8 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "16",
+   "status": "da documenti",
+   "sub": "6,80 MW ciascuno · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 7 (5), 5 (4), 1 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1225956",
+    "page": 3,
+    "document": "Relazione Pedo_Agronomica",
+    "excerpt": "In particolare, con il termine “Progetto” si fa riferimento all’insieme di: Impianto Eolico (costituito da n° 16 aerogeneratori), Cavidotto 30 kV di collegamento fra gli aerogeneratori e la stazione elettrica utente, Sta"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "60 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 15 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1225923",
+    "page": 1,
+    "document": "Sezioni stradali tipo",
+    "excerpt": "E RELATIVE OPERE DI CONNESSIONE ALLA RTN NEL COMUNE DI SERRAVALLE DI CHIENTI (MC), POTENZA NOMINALE PARI A 60 MW E SISTEMA STORAGE PARI A 15 MW DENOMINAZIONE IMPIANTO - PE \"FONDI E COLLECROCE\""
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 MESI",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1226004",
+    "page": 2,
+    "document": "Cronoprogramma",
+    "excerpt": "DURATA DEI LAVORI PREVISTA 24 MESI PROGETTO PER LA REALIZZAZIONE DI UN PARCO"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "AG",
+  "comuni": [
+   "Menfi",
+   "Sambuca Di Sicilia",
+   "Sciacca",
+   "Castelvetrano",
+   "Partanna"
+  ],
+  "coordinate": {
+   "lat": 37.63818,
+   "lon": 12.9799,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (16 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1225911",
+    "page": 2,
+    "document": "Scheda tecnica ostacoli verticali",
+    "excerpt": "GEN 12 37.629018°"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.63818,12.97990",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Acciona Energia Global Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "accionaglobalitalia@legalmail.it",
+     "occurrences": 2060,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1225908",
+      "page": 2,
+      "document": "Valutazione rischio campi elettromagnetici",
+      "excerpt": "P. IVA n. 12990031002 PEC: accionaglobalitalia@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11539"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Energia Ecosostenibile S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02112720764",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Della Chimica 103 85100 Potenza Pz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energiaecosostenibile@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1225923",
+      "page": 1,
+      "document": "Sezioni stradali tipo",
+      "excerpt": "85100 POTENZA (PZ) energiaecosostenibile@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geoingegneria S. E T. S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "geoingegneriasrls@gmail.com",
+     "occurrences": 60,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1225974",
+      "page": 2,
+      "document": "Relazione Geologica Preliminare",
+      "excerpt": "Via G. Marconi n.127, Castellammare del Golfo (TP) Tel. 328.4911173 - geoingegneriasrls@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3284911173",
+     "occurrences": 62,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1225974",
+      "page": 2,
+      "document": "Relazione Geologica Preliminare",
+      "excerpt": "Via G. Marconi n.127, Castellammare del Golfo (TP) Tel. 328.4911173 - geoingegneriasrls@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Lo Bianco",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "lobianco@paropos.com",
+     "occurrences": 36,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1225970",
+      "page": 17,
+      "document": "Relazione Valutazione del Rischio Archeologico",
+      "excerpt": "Ricerca, documentazione, didattica, Dott.ssa Lo Curto 3462209236 - locurto@paropos.com valorizzazione dei beni culturali, Dott. Lo Bianco: 3273106902 - lobianco@paropos.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "puglisi@paropos.com",
+     "occurrences": 36,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1225970",
+      "page": 17,
+      "document": "Relazione Valutazione del Rischio Archeologico",
+      "excerpt": "valorizzazione dei beni culturali, Dott. Lo Bianco: 3273106902 - lobianco@paropos.com ci x ‘etici Dott.ssa Puglisi: 3288858555 - puglisi@paropos.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Metrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@metrix.it",
+     "occurrences": 34,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1226005",
+      "page": 171,
+      "document": "Valutazione impatto acustico",
+      "excerpt": "Tel. 0922 992053 info@metrix.it – www.metrix.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0922992053",
+     "occurrences": 34,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1226005",
+      "page": 171,
+      "document": "Valutazione impatto acustico",
+      "excerpt": "92020 S. Stefano Quisquina (AG) Tel. 0922 992053"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Servizi per l’Archeologia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "muratore@paropos.com",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1225970",
+      "page": 22,
+      "document": "Relazione Valutazione del Rischio Archeologico",
+      "excerpt": "Ri ‘a i E s È Dott. Muratore: 3389783397 - muratore@paropos.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "locurto@paropos.com",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1225970",
+      "page": 22,
+      "document": "Relazione Valutazione del Rischio Archeologico",
+      "excerpt": "Ricerca, documentazione, didattica, Dott.ssa Lo Curto 3462209236 - locurto@paropos.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1225942",
+      "page": 20,
+      "document": "Relazione di calcolo strutturale",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1225942",
+      "page": 20,
+      "document": "Relazione di calcolo strutturale",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "24 MESI",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1226004",
+    "page": 2,
+    "document": "Cronoprogramma",
+    "excerpt": "DURATA DEI LAVORI PREVISTA 24 MESI PROGETTO PER LA REALIZZAZIONE DI UN PARCO"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1226004"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/1226004"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 105,
+  "pagine": 3981,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Acciona Energia Global Italia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 108.8,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MENFI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "214 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
