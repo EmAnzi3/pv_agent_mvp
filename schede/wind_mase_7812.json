@@ -1,0 +1,337 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7812",
+ "title": "Progetto di un impianto eolico, denominato \"Luceria\", costituito da 33 aerogeneratori della potenza nominale fino a 6 MW, per una potenza complessiva sino a 198 MW, e di tutte le opere accessorie per il collegamento alla rete di trasmissione nazionale, da realizzarsi nel Comune di Lucera (FG).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7812",
+ "source": "mase",
+ "updated": "2026-11-07",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "198 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7812",
+    "excerpt": "198 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "33",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 140 m · diametro rotore 180 m · Valore prevalente negli elaborati; altri valori: 116 (4), 126 (3), 141 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/521290",
+    "page": 1,
+    "document": "Avviso al Pubblico del 06/08/2021",
+    "excerpt": "adatta per l’installazione di tale infrastruttura. Il progetto in esame prevede la realizzazione di un impianto eolico, costituito da 33 aerogeneratori della potenza nominale fino a 6 MW per una potenza complessiva fino "
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "5 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 01/01/2026 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 6-7 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/499721",
+    "page": 108,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "In media un parco eolico in Europa rimborserà l’energia usata per la sua costruzione in un periodo di tempo che va dai 3 ai 5 mesi e nell’arco di tutto il suo ciclo di durata una turbina eolica produrrà più di 30 volte l"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Lucera"
+  ],
+  "coordinate": {
+   "lat": 41.50967,
+   "lon": 15.32362,
+   "tipo": "centro dei vertici delle aree d'impianto (14 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/533652",
+    "page": 87,
+    "document": "Integrazioni del 13/09/2021 - Relazione Paesaggistica",
+    "excerpt": " Punto n. 6 (Lat. 41.509671° - Long. 15.323616°): punto a Nord-Est del camminamento perimetrale alle mura del Castello, alla base della “Torre del Leone”."
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.50967,15.32362",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "ATS Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "atseng@pec.it",
+     "occurrences": 118,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/499721",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "0882/393197 atseng@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/619538",
+    "page": 1,
+    "document": "Integrazioni del 27/04/2022 - ID_VIP_5877-Progetto_Luceria-Relazione_idrologica_ed_idraulica",
+    "excerpt": "Il progettista: ATS Engineering srl"
+   }
+  },
+  {
+   "name": "Ing. Eugenio Di Gianvito",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori",
+    "Coordinatore sicurezza"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "atsing@atsing.eu",
+     "occurrences": 97,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/499721",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Ing. Eugenio Di Gianvito atsing@atsing.eu"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/568757",
+    "page": 6,
+    "document": "Integrazioni del 17/12/2021 - A07_LUCERIA",
+    "excerpt": "Direttore dei lavori: Ing. Eugenio Di Gianvito"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Geo Teconologie S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "geotecnologie@pec.it",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/619538",
+      "page": 1,
+      "document": "Integrazioni del 27/04/2022 - ID_VIP_5877-Progetto_Luceria-Relazione_idrologica_ed_idraulica",
+      "excerpt": "Ing. Elena Pierri geotecnologie@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alla Società AEP S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "aepvento@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/568749",
+      "page": 1,
+      "document": "Integrazioni del 17/12/2021 - DG_ABAP_PROT_36478_29-10-21_ID_VIP_5877_Eolico_Luceria",
+      "excerpt": "Alla Società AEP s.r.l. (aepvento@pec.it)"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "potenzialmente_avviato",
+  "label": "Potenzialmente avviato o realizzato",
+  "reason": "L'avvio dei lavori era previsto il 01/01/2026 e non risultano documenti successivi."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "determinazione n. 29 del 16/09/2020",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/524538",
+     "page": 1,
+     "document": "Parere della Regione Puglia Dipartimento Agricoltura Sviluppo Rurale ed Ambientale in data 03/08/2021",
+     "excerpt": "e la determinazione del Dirigente Sezione Coordinamento dei Servizi Territoriali n. 29 del 16/09/2020;"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di settembre 2020",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/524538",
+     "page": 1,
+     "document": "Parere della Regione Puglia Dipartimento Agricoltura Sviluppo Rurale ed Ambientale in data 03/08/2021",
+     "excerpt": "e la determinazione del Dirigente Sezione Coordinamento dei Servizi Territoriali n. 29 del 16/09/2020;"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di febbraio 2021",
+    "dettaglio": "inizio stimato + durata del cantiere: 5 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/499721",
+     "page": 108,
+     "document": "Studio di Impatto Ambientale",
+     "excerpt": "In media un parco eolico in Europa rimborserà l’energia usata per la sua costruzione in un periodo di tempo che va dai 3 ai 5 mesi e nell’arco di tutto il suo ciclo di durata una turbina eolica produrrà più di 30 volte l"
+    }
+   }
+  ],
+  "durata_cantiere": "5 mesi",
+  "autorizzazione": {
+   "atto": "determinazione n. 29",
+   "data": "16/09/2020",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/524538",
+    "page": 1,
+    "document": "Parere della Regione Puglia Dipartimento Agricoltura Sviluppo Rurale ed Ambientale in data 03/08/2021",
+    "excerpt": "e la determinazione del Dirigente Sezione Coordinamento dei Servizi Territoriali n. 29 del 16/09/2020;"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "5 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6-7 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/499721",
+    "page": 108,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "In media un parco eolico in Europa rimborserà l’energia usata per la sua costruzione in un periodo di tempo che va dai 3 ai 5 mesi e nell’arco di tutto il suo ciclo di durata una turbina eolica produrrà più di 30 volte l"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "01/01/2026",
+    "iso": "2026-01-01",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/568757",
+     "page": 6,
+     "document": "Integrazioni del 17/12/2021 - A07_LUCERIA",
+     "excerpt": "Data presunta inizio lavori: 01/01/2026 Durata presunta lavori (gg):"
+    }
+   }
+  ],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 171,
+  "pagine": 3650,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "AEP S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 198.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "LUCERA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "L'avvio dei lavori era previsto il 01/01/2026 e non risultano documenti successivi."
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "111 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
