@@ -1,0 +1,452 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11335",
+ "title": "Progetto di un impianto di produzione di energia elettrica da fonte eolica denominato \"BARPIE\" di potenza massima complessiva di MW 144 nei comuni di Barrafranca e Pietrapersa (EN).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11335",
+ "source": "mase",
+ "updated": "2026-11-07",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "144 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11335",
+    "excerpt": "144 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "32",
+   "status": "da verificare",
+   "sub": "4,50 MW ciascuno · altezza mozzo 118 m · diametro rotore 166 m · Valore più ricorrente negli elaborati; altri valori: 1 (44), 2 (5), 18 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1179596",
+    "page": 1,
+    "document": "Avviso al pubblico del 04/12/2024",
+    "excerpt": "Pietraperzia (EN) per l’impianto eolico, e Pietraperzia (EN) per le opere di connessione alla rete e prevede la realizzazione di n° 32 aerogeneratori di altezza massima 201m (mozzo e pala) insieme con le piste di accesso"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da documenti",
+   "sub": "Inizio lavori 09/06/2025 (campo presunto di piano di sicurezza o notifica) · Valore prevalente negli elaborati; altri valori: 28 mesi (2), 8 mesi (2), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1179516",
+    "page": 15,
+    "document": "Relazione ricadute socio-occupazionali",
+    "excerpt": "- 24 mesi circa. In particolare, per la fase di cantiere si stima di utilizzare, compatibilmente con il"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "EN",
+  "comuni": [
+   "Barrafranca",
+   "Pietrapersa"
+  ],
+  "coordinate": {
+   "lat": 37.38967,
+   "lon": 14.15248,
+   "tipo": "centro della tavola georeferenziata di progetto (207 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1179538",
+    "page": 3,
+    "document": "Aerogeneratori con fabbricati residenziali",
+    "excerpt": "Aerogeneratori con fabbricati residenziali"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.38967,14.15248",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 37.3896,
+   "lon": 14.1346,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1306247",
+    "page": 4,
+    "document": "Integrazioni del 15/09/2025 - Piano tecnico delle opere",
+    "excerpt": "• campata sulla linea 150kV “Caltanissetta CP – Butera SE” - coord. sostegno lato Caltanissetta CP: 37.3896N, 14.1313 E"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.38960,14.13460"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Enef S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "enefsrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1179547",
+      "page": 1,
+      "document": "Connessione impianto eolico Pietraperzia",
+      "excerpt": "90144 PALERMO (PA) enefsrl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11335"
+   }
+  },
+  {
+   "name": "Dedra S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dedrasrl@arubapec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1306277",
+      "page": 1,
+      "document": "Integrazioni del 15/09/2025 - Richiesta di connessione alla Rete di Trasmissione Nazionale per impianto eolico",
+      "excerpt": "DEDRA SRL dedrasrl@arubapec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1179545",
+    "page": 6,
+    "document": "Relazione Impatti Cumulativi",
+    "excerpt": "Proponente: Dedra S.r.l.; -"
+   }
+  },
+  {
+   "name": "Dott. Geol. Ignazio Giuffrè",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "ignazio.giuffre@gmail.com",
+     "occurrences": 194,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1306283",
+      "page": 1,
+      "document": "Integrazioni del 15/09/2025 - Relazione Geologica",
+      "excerpt": "Via Mazzini, 9 - 90018 Termini Imerese (PA) Tel. 338.4373063 P. IVA: 04698200823 E Mail – ignazio.giuffre@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3384373063",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1306283",
+      "page": 1,
+      "document": "Integrazioni del 15/09/2025 - Relazione Geologica",
+      "excerpt": "Dott. Geol. Ignazio Giuffrè Via Mazzini, 9 - 90018 Termini Imerese (PA) Tel. 338.4373063"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1306245",
+    "page": 15,
+    "document": "Integrazioni del 15/09/2025 - Relazione Tecnica Generale del progetto BARPIE",
+    "excerpt": "riportate nella Relazione Geologica redatta dal Dott. Geol. Ignazio Giuffrè allegata al presente progetto."
+   }
+  },
+  {
+   "name": "Ing. Eugenio Bordonali",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "eugeniobordonali@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1179569",
+      "page": 2,
+      "document": "Lettera d'incarico al progettista",
+      "excerpt": "E-mail eugeniobordonali@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1306240",
+    "page": 3,
+    "document": "Integrazioni del 15/09/2025 - Piano tecnico delle opere profili altimetrici",
+    "excerpt": "PROGETTISTA: Ing. Eugenio Bordonali"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Dott. Lo Bianco",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "lobianco@paropos.com",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1179541",
+      "page": 20,
+      "document": "Relazione di valutazione del rischio archeologico",
+      "excerpt": "| valorizzazione dei beni culturali, Dott. Lo Bianco: 3273106902 - lobianco@paropos.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "puglisi@paropos.com",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1179541",
+      "page": 20,
+      "document": "Relazione di valutazione del rischio archeologico",
+      "excerpt": "| valorizzazione dei beni culturali, Dott. Lo Bianco: 3273106902 - lobianco@paropos.com SIE NECA Dott.ssa Puglisi: 3288858555 - puglisi@paropos.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Servizi per l’Archeologia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "paroposarcheologia@pec.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1179541",
+      "page": 26,
+      "document": "Relazione di valutazione del rischio archeologico",
+      "excerpt": "PEC: paroposarcheologia@pec.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "muratore@paropos.com",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1179541",
+      "page": 20,
+      "document": "Relazione di valutazione del rischio archeologico",
+      "excerpt": "7 me è È Dott. Muratore: 3389783397 - muratore@paropos.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "locurto@paropos.com",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1179541",
+      "page": 20,
+      "document": "Relazione di valutazione del rischio archeologico",
+      "excerpt": "7 me è È Dott. Muratore: 3389783397 - muratore@paropos.com Ricerca, documentazione, didattica, Dott.ssa Lo Curto 3462209236 - locurto@paropos.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Angelo Di Franco",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "09355076348",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1228973",
+      "page": 1,
+      "document": "Richiesta integrazioni della Regione Siciliana",
+      "excerpt": "Responsabile procedimento: _ Arch. Angelo Di Franco : : {se non compitato il responsabile è il dirigente preposto alla struttura organizzativa) Funzionario istruttore Maurizio Bruno __ Stanza _16__ Piano _1°_ Tel. 0935 5"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 09/06/2025, ma l'iter è proseguito; ultimo documento o atto del 02/07/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "24 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "24 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 28 mesi (2), 8 mesi (2), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1179516",
+    "page": 15,
+    "document": "Relazione ricadute socio-occupazionali",
+    "excerpt": "- 24 mesi circa. In particolare, per la fase di cantiere si stima di utilizzare, compatibilmente con il"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "09/06/2025",
+    "iso": "2025-06-09",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1306307",
+     "page": 7,
+     "document": "Integrazioni del 15/09/2025 - P.S.C. in fase di progettazione - schede di sicurezza",
+     "excerpt": "Data presunta di inizio lavori 09/06/2025 Durata presunta dei lavori (gg)"
+    }
+   },
+   {
+    "label": "Fine lavori",
+    "date": "22/10/2027",
+    "iso": "2027-10-22",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1306307",
+     "page": 8,
+     "document": "Integrazioni del 15/09/2025 - P.S.C. in fase di progettazione - schede di sicurezza",
+     "excerpt": "Data presunta fine lavori 22/10/2027 N° massimo di lavoratori giornalieri"
+    }
+   }
+  ],
+  "document": {
+   "document": "Relazione tecnica generale e cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1179508"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Relazione tecnica generale e cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/1179508"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 166,
+  "pagine": 6127,
+  "completa": false,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "ENEF S.r.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 144.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BARRAFRANCA, PIETRAPERSA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "EN",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 09/06/2025, ma l'iter è proseguito; ultimo documento o atto del 02/07/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "252 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
