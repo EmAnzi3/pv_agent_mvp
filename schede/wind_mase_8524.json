@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico denominato \"Parco Eolico Energia Viterbo\", costituito da 13 aerogeneratori per una potenza complessiva pari a 33,6 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comune di Montefiascone (VT) e Viterbo.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8524",
  "source": "mase",
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "13",
    "status": "da documenti",
-   "sub": "2,58 MW ciascuno · altezza mozzo 105 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 6 (5), 9 (5), 1 (5)",
+   "sub": "2,58 MW ciascuno · altezza mozzo 105 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 9 (12), 10 (11), 5 (9)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/708645",
     "page": 1,
@@ -35,13 +35,13 @@
   {
    "key": "impianto",
    "label": "Impianto",
-   "value": "Agrivoltaico",
+   "value": "Offshore",
    "status": "da documenti",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1405876",
-    "page": 57,
-    "document": "Allegato alla Determina della PCM - Parere della CT PNRR-PNIEC del 03/12/2024",
-    "excerpt": "agrivoltaico"
+    "url": "https://va.mite.gov.it/File/Documento/1137991",
+    "page": 9,
+    "document": "Integrazioni del 04/09/2024 - Riscontro alle osservazioni del pubblico",
+    "excerpt": "non aver considerato l’utilizzo di micro e mini eolico o di tecnologia off-shore."
    }
   },
   {
@@ -51,23 +51,23 @@
    "status": "da documenti",
    "sub": "Valore prevalente negli elaborati; altri valori: 107,64 MW (1), 72,64 MW (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1137940",
+    "url": "https://va.mite.gov.it/File/Documento/708479",
     "page": 1,
-    "document": "Integrazioni del 04/09/2024 - Relazione Studio di Inserimento Paesistico",
+    "document": "Relazione Studio di Inserimento Paesistico",
     "excerpt": "Accumulo Potenza Nominale 35 MW connesso alla rete RTN"
    }
   },
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "450 giorni (circa 15 mesi)",
+   "value": "14 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 17 mesi (5), 20 mesi (1), 8 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 17 mesi (6), 20 mesi (1), 8 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/708605",
-    "page": 97,
-    "document": "Studio d'Impatto Ambientale",
-    "excerpt": "ciascuna alla propria mansione. È possibile prevedere una durata del cantiere pari a circa 420- 450 giorni naturali e consecutivi a partire dal verbale di inizio lavori. 3.15. DISMISSIONE DELL’IMPIANTO"
+    "url": "https://va.mite.gov.it/File/Documento/847829",
+    "page": 5,
+    "document": "Integrazioni del 11/05/2023 - Soluzione tecnica minima generale 78MW",
+    "excerpt": "o 8 mesi + 1 mese/km per la realizzazione dei raccordi a 380 kV; o 14 mesi + 2 mesi/km per la realizzazione dei nuovi collegamenti in cavo a 150 kV."
    }
   }
  ],
@@ -82,7 +82,7 @@
   "coordinate": {
    "lat": 42.57189,
    "lon": 12.0835,
-   "tipo": "centro della tavola georeferenziata di progetto (119 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (145 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1138151",
     "page": 1,
@@ -94,15 +94,15 @@
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
-   "lat": 42.50503,
-   "lon": 12.15316,
+   "lat": 42.55735,
+   "lon": 12.10029,
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/708605",
-    "page": 84,
-    "document": "Studio d'Impatto Ambientale",
-    "excerpt": "759074.0"
+    "url": "https://va.mite.gov.it/File/Documento/1138015",
+    "page": 12,
+    "document": "Integrazioni del 04/09/2024 - Relazione Tecnica Generale",
+    "excerpt": "754470.5"
    },
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.50503,12.15316"
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.55735,12.10029"
   },
   "lotti": []
  },
@@ -133,12 +133,34 @@
     {
      "type": "PEC",
      "value": "fred.olsenrenewables@legalmail.it",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1138000",
       "page": 5,
       "document": "Integrazioni del 04/09/2024 - Relazione preliminare ENAV-ENAC",
       "excerpt": "FRED OLSEN RENEWABLES SRL fred.olsenrenewables@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "alepao@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/720971",
+      "page": 6,
+      "document": "Osservazioni del Sig. Alessandro Paoletti in data 16/11/2022",
+      "excerpt": "| |inditizzo pec: alepao@pec.it in qualità di portatore"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "assotuscania@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/721405",
+      "page": 1,
+      "document": "Osservazioni dell'Associazione AssoTuscania Tramite Ufficio di Gabinetto in data 10/11/2022",
+      "excerpt": "\"assotuscania@pec.it\""
      }
     }
    ],
@@ -148,8 +170,39 @@
    }
   },
   {
-   "name": "Ing. Vincenzo Chiricotto Ing",
-   "kind": "persona",
+   "name": "Studio Rinnovabili S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiorinnovabili.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1138007",
+      "page": 2,
+      "document": "Integrazioni del 04/09/2024 - Relazione previsionale di impatto acustico",
+      "excerpt": "Azienda con sistema di gestione qualità ISO 9001 certificata da Bureau Veritas Italia S.p.A. www.studiorinnovabili.it - info@studiorinnovabili.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/721410",
+    "page": 13,
+    "document": "Osservazioni della dott.ssa Silvia Nevi Tramite Ufficio di Gabinetto in data 16/11/2022",
+    "excerpt": "Progettazione affidata sempre al medesimo Studio Rinnovabili S.r.l.,, VIA Nazionale, Codice procedura 8024, estensione ettari 54;"
+   }
+  },
+  {
+   "name": "Lumistudio S.r.l.",
+   "kind": "società",
    "roles": [
     "Progettista"
    ],
@@ -160,10 +213,10 @@
    "office": null,
    "contacts": [],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1137940",
-    "page": 1,
-    "document": "Integrazioni del 04/09/2024 - Relazione Studio di Inserimento Paesistico",
-    "excerpt": "Progettazione : Ing. Vincenzo CHIRICOTTO"
+    "url": "https://va.mite.gov.it/File/Documento/721410",
+    "page": 13,
+    "document": "Osservazioni della dott.ssa Silvia Nevi Tramite Ufficio di Gabinetto in data 16/11/2022",
+    "excerpt": "stesso studio di progettazione, Lumistudio S.r.l. con sede legale in via Stadera n. 3, 20141 a Milano, e ricadenti sui Comuni di Montefiascone, Celleno, Bagnoregio e Viterbo."
    }
   },
   {
@@ -215,6 +268,79 @@
    }
   },
   {
+   "name": "Amici Della Terra APS",
+   "kind": "società",
+   "roles": [],
+   "vat": "02141761003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ippolito Nievo 62 Sc C I 00153 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amicidellaterra@pec.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1264820",
+      "page": 1,
+      "document": "Osservazioni dell'Associazione Amici della Terra, in data 11/06/2025",
+      "excerpt": "Da amicidellaterra@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@amicidellaterra.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1264820",
+      "page": 11,
+      "document": "Osservazioni dell'Associazione Amici della Terra, in data 11/06/2025",
+      "excerpt": "HUwww.amicidellaterra.itUH amicidellaterra@pec.it – segreteria@amicidellaterra.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Avv. Angela Persia",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "angela.persia@pec-avvocatiteramo.it",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/723027",
+      "page": 51,
+      "document": "Osservazioni del Sig. Adrian Moss Tramite Ufficio di Gabinetto in data 22/11/2022",
+      "excerpt": "00106884) (soggetto responsabile), l'Avv. Angela Persia del foro di Teramo (CF PRSNGL78E66L1030; pec angela.persia@pec-avvocatiteramo.it fax 086 1285721), conferendo le"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "persia@pec-avvocatiteramo.it",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/723027",
+      "page": 49,
+      "document": "Osservazioni del Sig. Adrian Moss Tramite Ufficio di Gabinetto in data 22/11/2022",
+      "excerpt": "D.M.16.02.2016 (CT00101960) (soggetto responsabile), l’ Avv. Angela Persia del foro di Teramo (CF PRSNGL78E66L1030; pec angela persia@pec-avvocatiteramo.it fax 0861285721),"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Agr. Francesco Violani",
    "kind": "persona",
    "roles": [],
@@ -239,6 +365,30 @@
    "source": null
   },
   {
+   "name": "Avv. Tommaso Paparo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "tommasopaparo@ordineavvocatiroma.org",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/723027",
+      "page": 3,
+      "document": "Osservazioni del Sig. Adrian Moss Tramite Ufficio di Gabinetto in data 22/11/2022",
+      "excerpt": "Via Lazio, n. 9 (scala B, int. 2) - (00187) Roma Pec: tommasopaparo@ordineavvocatiroma.org"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "e-Solar 2 S.r.l.",
    "kind": "società",
    "roles": [],
@@ -253,9 +403,9 @@
      "value": "e-solar2@pec.it",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1137942",
+      "url": "https://va.mite.gov.it/File/Documento/708481",
       "page": 1,
-      "document": "Integrazioni del 04/09/2024 - GRUPPO TERNA.P20210069264-08.09.2021",
+      "document": "GRUPPO TERNA.P20210069264-08.09.2021",
       "excerpt": "E-SOLAR 2 SRL e-solar2@pec.it"
      }
     },
@@ -264,9 +414,9 @@
      "value": "vincenzo@chiricotto.it",
      "occurrences": 2,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1137943",
+      "url": "https://va.mite.gov.it/File/Documento/708482",
       "page": 1,
-      "document": "Integrazioni del 04/09/2024 - Studio di Impatto Ambientale",
+      "document": "Studio di Impatto Ambientale",
       "excerpt": "Tel.Fax.: +39 0761 972329; Mob.: +39 338 6316126. Email: vincenzo@chiricotto.it;"
      }
     },
@@ -275,9 +425,9 @@
      "value": "3386316126",
      "occurrences": 3,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1137940",
+      "url": "https://va.mite.gov.it/File/Documento/708479",
       "page": 1,
-      "document": "Integrazioni del 04/09/2024 - Relazione Studio di Inserimento Paesistico",
+      "document": "Relazione Studio di Inserimento Paesistico",
       "excerpt": "Tel.Fax.: +39 0761 972329; Mob.: +39 338 6316126;"
      }
     }
@@ -349,30 +499,6 @@
       "page": 44,
       "document": "Integrazioni del 04/09/2024 - Relazione Terre e Rocce da Scavo Rev11",
       "excerpt": "0744/192.32.02 – 329/25.13.363 studiotecnicobf@libero.it - cbflaboratori@pec.net"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "ISO 9001 certificata da Bureau Veritas Italia S.p.A.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "info@studiorinnovabili.it",
-     "occurrences": 2,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1138007",
-      "page": 2,
-      "document": "Integrazioni del 04/09/2024 - Relazione previsionale di impatto acustico",
-      "excerpt": "Azienda con sistema di gestione qualità ISO 9001 certificata da Bureau Veritas Italia S.p.A. www.studiorinnovabili.it - info@studiorinnovabili.it"
      }
     }
    ],
@@ -624,14 +750,14 @@
    "unita": "mesi"
   },
   "duration": {
-   "text": "450 giorni (circa 15 mesi)",
+   "text": "14 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 17 mesi (5), 20 mesi (1), 8 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 17 mesi (6), 20 mesi (1), 8 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/708605",
-    "page": 97,
-    "document": "Studio d'Impatto Ambientale",
-    "excerpt": "ciascuna alla propria mansione. È possibile prevedere una durata del cantiere pari a circa 420- 450 giorni naturali e consecutivi a partire dal verbale di inizio lavori. 3.15. DISMISSIONE DELL’IMPIANTO"
+    "url": "https://va.mite.gov.it/File/Documento/847829",
+    "page": 5,
+    "document": "Integrazioni del 11/05/2023 - Soluzione tecnica minima generale 78MW",
+    "excerpt": "o 8 mesi + 1 mese/km per la realizzazione dei raccordi a 380 kV; o 14 mesi + 2 mesi/km per la realizzazione dei nuovi collegamenti in cavo a 150 kV."
    }
   },
   "milestones": [],
@@ -651,9 +777,9 @@
  },
  "documentazione": {
   "documenti": 469,
-  "pagine": 3475,
+  "pagine": 6232,
   "completa": false,
-  "da_leggere": 169
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -689,7 +815,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "43 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "154 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
