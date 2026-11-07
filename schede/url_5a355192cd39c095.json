@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto agrivoltaico connesso alla RTN di potenza nominale pari a 25.000 kW e di picco pari a 26.480 kW”, in località Strada vicinale Ticchia",
  "source_url": "https://regionelazio.box.com/v/VIA-059-2024",
  "source": "lazio",
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "38,5 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 44,27 ha (4), 25,774 ha (1), 31 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 44,27 ha (5), 25,774 ha (1), 31 ha (1)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2035271269340",
     "page": 9,
@@ -58,11 +58,24 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "130 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 100 MW (2)",
+   "source": {
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530562759043",
+    "page": 8,
+    "document": "CP202306204-2_CONN01-Benestare-CRM_RCF-0_1777896866921.pdf",
+    "excerpt": "a) RCF 013 è titolare di un progetto per la realizzazione ed esercizio di un impianto di accumulo di potenza complessiva pari a 130 MW e relative opere connesse da realizzare nel territorio del Comune di Anagni (FR) (il "
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "8 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 4 mesi (5), 6 mesi (5), 18 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 4 mesi (5), 6 mesi (5), 12 mesi (2)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1581247329509",
     "page": 25,
@@ -80,7 +93,7 @@
   "coordinate": {
    "lat": 41.7519,
    "lon": 13.0656,
-   "tipo": "coordinate del sito dichiarate negli elaborati (237 riferimenti concordi)",
+   "tipo": "coordinate del sito dichiarate negli elaborati (263 riferimenti concordi)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1581258475184",
     "page": 10,
@@ -110,23 +123,12 @@
     {
      "type": "PEC",
      "value": "ivabsolar6@pec.it",
-     "occurrences": 58,
+     "occurrences": 115,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2083671971464",
       "page": 1,
       "document": "proponente 1221139.11-12-2025.pdf",
       "excerpt": "47921 Rimini (RN) Ivabsolar6@pec.it"
-     }
-    },
-    {
-     "type": "PEC",
-     "value": "protocollo.paliano@actalispec.it",
-     "occurrences": 3,
-     "source": {
-      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2045053825544",
-      "page": 1,
-      "document": "Rich. Doc. Impianto AV potenza 25.000 kW Comune di Paliano e Anagni FR in località Strada vicinale Ticchia IVAB SOLAR 6 S.R.L. 59-24.pdf",
-      "excerpt": "e p.c.: Comune di Paliano protocollo.paliano@actalispec.it"
      }
     },
     {
@@ -143,7 +145,7 @@
     {
      "type": "E-mail",
      "value": "ingegneria@acap.green",
-     "occurrences": 8,
+     "occurrences": 9,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1614760204604",
       "page": 8,
@@ -152,9 +154,20 @@
      }
     },
     {
+     "type": "E-mail",
+     "value": "ivabsolar6@outlook.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2083674020408",
+      "page": 1,
+      "document": "Amm_29_R0.pdf",
+      "excerpt": "Tel. +39 3514788078 E_mail. ivabsolar6@outlook.it"
+     }
+    },
+    {
      "type": "Telefono",
      "value": "3203725065",
-     "occurrences": 6,
+     "occurrences": 7,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1914356522171",
       "page": 1,
@@ -169,8 +182,8 @@
    }
   },
   {
-   "name": "Ing. Francesco Barrese",
-   "kind": "persona",
+   "name": "Mate System S.r.l.",
+   "kind": "società",
    "roles": [
     "Progettista"
    ],
@@ -182,25 +195,124 @@
    "contacts": [
     {
      "type": "PEC",
-     "value": "francesco.barrese@ingpec.eu",
-     "occurrences": 2,
+     "value": "matesystem@pec.it",
+     "occurrences": 112,
      "source": {
-      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1581246738173",
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530557615601",
       "page": 1,
-      "document": "14_Esclusione iter ENAC.pdf",
-      "excerpt": "Lavello (PZ) in via Dante n. 136, codice fiscale BRRNFC70S16508C, - pec: francesco.barrese@ingpec.eu"
+      "document": "NUOVA_SSE_PALIANO.zip",
+      "excerpt": "tel. +39 080 3072072 mail: info@matesystemsrl.it |pec: matesystem@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@matesystemsrl.it",
+     "occurrences": 112,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530557615601",
+      "page": 1,
+      "document": "NUOVA_SSE_PALIANO.zip",
+      "excerpt": "tel. +39 080 3072072 mail: info@matesystemsrl.it |pec: matesystem@pec.it"
      }
     }
    ],
    "source": {
-    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1581247348015",
-    "page": 7,
-    "document": "Prog_07.pdf",
-    "excerpt": "Il Progettista Ing. Francesco Barrese"
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530557615601",
+    "page": 2,
+    "document": "NUOVA_SSE_PALIANO.zip",
+    "excerpt": "Progettazione: Mate System Srl - Via Papa Pio XII n.8 Cassano delle Murge (BA) – Dott. Ing. Francesco Ambron"
+   }
+  },
+  {
+   "name": "Dott. Ing. Francesco Ambron",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530557615601",
+    "page": 1,
+    "document": "NUOVA_SSE_PALIANO.zip",
+    "excerpt": "PROGETTISTA: Dott. Ing. Francesco Ambron"
+   }
+  },
+  {
+   "name": "Dott. Davide Casinelli",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "davide.casinelli@pec.geologilazio.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530561910377",
+      "page": 2,
+      "document": "Richiesta-Nulla-Osta-Vincolo-Idrogeologico.pdf.p7m.p7m",
+      "excerpt": "casinellidavide@yahoo.it davide.casinelli@pec.geologilazio.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "casinellidavide@yahoo.it",
+     "occurrences": 86,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530561910377",
+      "page": 2,
+      "document": "Richiesta-Nulla-Osta-Vincolo-Idrogeologico.pdf.p7m.p7m",
+      "excerpt": "329 715 9323 casinellidavide@yahoo.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530558206125",
+    "page": 30,
+    "document": "RELAZIONE IDROGEOLOGICA PALIANO.pdf.p7m.p7m.p7m",
+    "excerpt": "IL GEOLOGO"
    }
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Paliano S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03128640210",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "A Duca D'Aosta-Allee 51 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollo.paliano@actalispec.it",
+     "occurrences": 17,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2070860200448",
+      "page": 1,
+      "document": "20251126_-_Paliano_-_richiesta_di_proroga_GB.pdf",
+      "excerpt": "Comune di Paliano protocollo.paliano@actalispec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Altrafo S.r.l.",
    "kind": "società",
@@ -214,7 +326,7 @@
     {
      "type": "E-mail",
      "value": "sales@altrafo.com",
-     "occurrences": 7,
+     "occurrences": 8,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1581253987159",
       "page": 19,
@@ -225,7 +337,7 @@
     {
      "type": "E-mail",
      "value": "ufficiotecnico@altrafo.com",
-     "occurrences": 7,
+     "occurrences": 8,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1581253987159",
       "page": 19,
@@ -236,7 +348,7 @@
     {
      "type": "E-mail",
      "value": "tecnico@altrafo.com",
-     "occurrences": 7,
+     "occurrences": 8,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1581253987159",
       "page": 19,
@@ -265,7 +377,7 @@
      "value": "delgsrl@pec.it",
      "occurrences": 2,
      "source": {
-      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1581248020670",
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1614757847718",
       "page": 8,
       "document": "26_Disponibilità.pdf",
       "excerpt": "rappresentata dal Sig. Lorenzo Palladini, nella sua qualità di Amministratore unico che indica per le comunicazioni il seguente indirizzo Pec: delgsrl@pec.it"
@@ -292,7 +404,7 @@
      "value": "info@pec.nostoi",
      "occurrences": 1,
      "source": {
-      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1614771085529",
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1614767660843",
       "page": 10,
       "document": "Amb_03b-RCG.pdf",
       "excerpt": "Nostoi S.r.l. 1.C.F./ P.IVA: 03653560270 | codice univoco MSUXCRI | info@pec.nostoi-archeologia it"
@@ -303,7 +415,7 @@
      "value": "linfo@nostoi-archeologia.it",
      "occurrences": 1,
      "source": {
-      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1614771085529",
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1614767660843",
       "page": 10,
       "document": "Amb_03b-RCG.pdf",
       "excerpt": "CONTATTI: linfo@nostoi-archeologia.it ITel. +39 0972 83694 | mobile +39 348 762 3630 si Ay)"
@@ -314,10 +426,48 @@
      "value": "3487623630",
      "occurrences": 1,
      "source": {
-      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1614771085529",
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1614767660843",
       "page": 9,
       "document": "Amb_03b-RCG.pdf",
       "excerpt": "—_—— CONTATTI: | info@nostoi-archeologia it ITel. +39 0972 83694 | mobile +39 348 762 3630"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Santa Barbara Energia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12420990967",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lanzone 31 20123 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "santabarbara.srl@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530562154740",
+      "page": 1,
+      "document": "GRUPPO TERNA.P20250129902-30.10.2025 (002).pdf",
+      "excerpt": "20123 MILANO (MI) santabarbara.srl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "rcf015@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530562759043",
+      "page": 1,
+      "document": "CP202306204-2_CONN01-Benestare-CRM_RCF-0_1777896866921.pdf",
+      "excerpt": "20123 Milano (MI) rcf015@legalmail.it"
      }
     }
    ],
@@ -339,7 +489,7 @@
     {
      "type": "PEC",
      "value": "mauro.ranauro@ingpec.eu",
-     "occurrences": 6,
+     "occurrences": 7,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1914356522171",
       "page": 12,
@@ -356,6 +506,54 @@
       "page": 1,
       "document": "CopertinaCD NEW.pdf",
       "excerpt": "tel. 3203725065 mama.ranauro@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "BiProject S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "m.manfro@biproject.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530562759043",
+      "page": 22,
+      "document": "CP202306204-2_CONN01-Benestare-CRM_RCF-0_1777896866921.pdf",
+      "excerpt": "BiProject S.r.l. - Via Marconi 36, 81100 Caserta (CE) — Tel/fax: 081.5361511 Email: m.manfro@biproject.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "RCF Storage S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rcfstorage@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_2530562154740",
+      "page": 1,
+      "document": "GRUPPO TERNA.P20250129902-30.10.2025 (002).pdf",
+      "excerpt": "20125 MILANO (MI) rcfstorage@legalmail.it"
      }
     }
    ],
@@ -641,7 +839,7 @@
   "duration": {
    "text": "8 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 4 mesi (5), 6 mesi (5), 1 mese (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 4 mesi (5), 6 mesi (5), 12 mesi (2)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-059-2024&file_id=f_1581247329509",
     "page": 25,
@@ -658,9 +856,9 @@
  },
  "documentazione": {
   "documenti": 649,
-  "pagine": 3242,
-  "completa": false,
-  "da_leggere": 60
+  "pagine": 4005,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -699,12 +897,16 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "74 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "233 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
