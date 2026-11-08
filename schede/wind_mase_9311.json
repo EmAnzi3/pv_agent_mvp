@@ -5,7 +5,7 @@
  "title": "Progetto definitivo per la realizzazione di un parco eolico denominato \"Parco Eolico Nuraxeddu\" composto da 29 aerogeneratori, ciascuno di potenza nominale pari a circa 5,3 MW per una potenza complessiva di 153,9 MW e relative opere connesse nei comuni di Esterzili (CA), Escalaplano (CA) e Seui (OG).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9311",
  "source": "mase",
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "29",
    "status": "da documenti",
-   "sub": "5,31 MW ciascuno · altezza mozzo 118 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 16 (20), 13 (19), 6 (11)",
+   "sub": "5,31 MW ciascuno · altezza mozzo 118 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 13 (34), 16 (30), 6 (20)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/783425",
     "page": 1,
@@ -33,11 +33,36 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/783297",
+    "page": 32,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "offshore) e rafforzamento delle reti (più smart e resilienti) per accomodare e sincronizzare le nuove risorse"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "15 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 26,576 MW (2), 49 MW (2), 64 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1107645",
+    "page": 2,
+    "document": "Osservazioni della Comunità Montana \"Sarcidano Barbagia di Seulo\" in data 17/07/2024",
+    "excerpt": "6. Progetto di impianto agrivoltaico denominato \"SERRI\", dalla potenza di 39,33 MW, integrato con sistema di accumulo da 15 MW da realizzarsi nel Comune di Serri, con relative opere di"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "500 giorni (circa 16 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 730 giorni (circa 24 mesi) (3), 12 mesi (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (4), 12 mesi (2), 26 settimane (circa 6 mesi) (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/783297",
     "page": 185,
@@ -72,7 +97,7 @@
    "lat": 39.69258,
    "lon": 9.37307,
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/783242",
+    "url": "https://va.mite.gov.it/File/Documento/783047",
     "page": 6,
     "document": "Fotoinserimenti",
     "excerpt": "SOTTOSTAZIONE 2 (39°41'31.93\"N - 9°22'23.05\"E)"
@@ -97,9 +122,9 @@
     {
      "type": "PEC",
      "value": "lotorinnovabili@legalmail.it",
-     "occurrences": 122,
+     "occurrences": 208,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/783185",
+      "url": "https://va.mite.gov.it/File/Documento/782979",
       "page": 1,
       "document": "Cronoprogramma lavori esecuzione",
       "excerpt": "Milano pec:lotorinnovabili@legalmail.it"
@@ -108,7 +133,7 @@
     {
      "type": "PEC",
      "value": "rinnovabili@pec.agreenpower.it",
-     "occurrences": 4,
+     "occurrences": 6,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/783296",
       "page": 10,
@@ -119,7 +144,7 @@
     {
      "type": "Telefono",
      "value": "023211191",
-     "occurrences": 5,
+     "occurrences": 7,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/783296",
       "page": 10,
@@ -148,9 +173,9 @@
     {
      "type": "E-mail",
      "value": "info@agreenpower.it",
-     "occurrences": 116,
+     "occurrences": 198,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/783185",
+      "url": "https://va.mite.gov.it/File/Documento/782979",
       "page": 1,
       "document": "Cronoprogramma lavori esecuzione",
       "excerpt": "09038 Serramanna (SU) - ITALIA Email: info@agreenpower.it"
@@ -162,6 +187,25 @@
     "page": 2,
     "document": "Schema unifilare",
     "excerpt": "Progettazione Agreenpower Srl Agreenpower Srl"
+   }
+  },
+  {
+   "name": "Ing. Nicola Sollai",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/783309",
+    "page": 22,
+    "document": "Piano di utilizzo",
+    "excerpt": "alle sezioni delle opere civili riportate negli elaborati del progettista delle opere civili, Ing. Nicola Sollai: ELB29 Piazzole tipo aerogeneratore (piante e sezioni), ELB30 Planimetrie, profili e sezioni aree piazzole,"
    }
   }
  ],
@@ -196,6 +240,33 @@
       "page": 2,
       "document": "Integrazioni del 22/09/2023 - Report Installazione torre anemometrica",
       "excerpt": "82020 Pietrelcina (BN) – ITALY Tel. +39 0824 983550"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@italianostra.org",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/825938",
+      "page": 20,
+      "document": "Osservazioni dell'Associazione Italia Nostra Sardegna del 03/04/2023",
+      "excerpt": "Italia Nostra Sardegna sardegna@italianostra.org"
      }
     }
    ],
@@ -458,7 +529,7 @@
   "unit": "month",
   "months": 23.99,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/783185",
+   "url": "https://va.mite.gov.it/File/Documento/782979",
    "page": 2,
    "document": "Cronoprogramma lavori esecuzione",
    "excerpt": ""
@@ -592,7 +663,7 @@
   "duration": {
    "text": "500 giorni (circa 16 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 730 giorni (circa 24 mesi) (3), 12 mesi (2), 1 mese (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (4), 12 mesi (2), 1 mese (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/783297",
     "page": 185,
@@ -608,12 +679,12 @@
   "note": null,
   "altri": [
    {
-    "document": "Cronoprogramma lavori dismissione",
-    "url": "https://va.mite.gov.it/File/Documento/783186"
+    "document": "Cronoprogramma lavori esecuzione",
+    "url": "https://va.mite.gov.it/File/Documento/783185"
    },
    {
-    "document": "Cronoprogramma lavori esecuzione",
-    "url": "https://va.mite.gov.it/File/Documento/782979"
+    "document": "Cronoprogramma lavori dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/783186"
    },
    {
     "document": "Cronoprogramma lavori dismissione",
@@ -633,9 +704,9 @@
  },
  "documentazione": {
   "documenti": 593,
-  "pagine": 2494,
-  "completa": false,
-  "da_leggere": 293
+  "pagine": 4319,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -666,12 +737,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "6 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "64 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
