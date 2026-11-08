@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la realizzazione di un impianto fotovoltaico a terra su terreno agricolo di potenza di picco pari a 31,418 MWp e potenza nominale pari a 26,40 MW ubicato nel comune di Ferrara (FE)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9323",
  "source": "mase",
- "updated": "2026-10-23",
+ "updated": "2026-11-08",
  "sintesi": [
   {
    "key": "potenza",
@@ -104,6 +104,7 @@
    "vat": "02700980390",
    "vat_group": false,
    "verified": true,
+   "esecuzione": null,
    "office": "Vicolo Gabbiani 30 48121 Ravenna Ra",
    "contacts": [
     {
@@ -143,6 +144,19 @@
    "vat": "02120631201",
    "vat_group": false,
    "verified": true,
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/801086",
+      "page": 1,
+      "document": "A9_Stato di fatto_planimetria e sezioni",
+      "excerpt": "General contractor"
+     }
+    }
+   ],
    "office": "Via Ugo La Malfa 24 40026 Imola Bo",
    "contacts": [
     {
@@ -173,20 +187,7 @@
     "page": 1,
     "document": "A9_Stato di fatto_planimetria e sezioni",
     "excerpt": "General contractor"
-   },
-   "esecuzione": [
-    {
-     "ruolo": "Impresa esecutrice",
-     "evidenza": "B",
-     "ambito": "impianto",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/801086",
-      "page": 1,
-      "document": "A9_Stato di fatto_planimetria e sezioni",
-      "excerpt": "General contractor"
-     }
-    }
-   ]
+   }
   },
   {
    "name": "Per. Ind. Massimo Ghesini",
@@ -197,6 +198,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [],
    "source": {
@@ -215,6 +217,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [],
    "source": {
@@ -233,6 +236,7 @@
    "vat": "03987351206",
    "vat_group": false,
    "verified": true,
+   "esecuzione": null,
    "office": "Via Emilia 67 40026 Imola Bo",
    "contacts": [
     {
@@ -270,6 +274,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -315,6 +320,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -336,6 +342,28 @@
   "level": "date_superate",
   "label": "Date di progetto superate: verificare lo stato",
   "reason": "Avvio previsto il 13/02/2024, ma l'iter è proseguito; ultimo documento o atto del 01/06/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Protesa S.p.A.",
+    "partita_iva": "02120631201",
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/801086",
+     "page": 1,
+     "document": "A9_Stato di fatto_planimetria e sezioni",
+     "excerpt": "General contractor"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
  },
  "registro": null,
  "tempistica": {
@@ -776,7 +804,8 @@
  "documentazione": {
   "documenti": 106,
   "pagine": 1636,
-  "completa": false
+  "completa": false,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -819,27 +848,5 @@
    "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
- "esecuzione": {
-  "livello": "B",
-  "imprese": [
-   {
-    "impresa": "Protesa S.p.A.",
-    "partita_iva": "02120631201",
-    "ruolo": "Impresa esecutrice",
-    "ambito": "impianto",
-    "evidenza": "B",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/801086",
-     "page": 1,
-     "document": "A9_Stato di fatto_planimetria e sezioni",
-     "excerpt": "General contractor"
-    }
-   }
-  ],
-  "legenda": {
-   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
-   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
-  }
- }
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
 }
