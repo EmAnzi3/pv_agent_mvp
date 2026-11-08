@@ -5,7 +5,7 @@
  "title": "Progetto impianto eolico denominato \"Scano-Sindia\", della potenza di 336 MW, da realizzarsi nei comuni di Sindia (NU) e Scano di Montiferro (OR).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9068",
  "source": "mase",
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "sintesi": [
   {
    "key": "potenza",
@@ -23,8 +23,8 @@
    "key": "wtg",
    "label": "Aerogeneratori",
    "value": "56",
-   "status": "da verificare",
-   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 164 m · Valore più ricorrente negli elaborati; altri valori: 12 (13), 2 (11), 1 (6)",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 12 (23), 7 (14), 5 (13)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/734941",
     "page": 5,
@@ -33,11 +33,23 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/832037",
+    "page": 5,
+    "document": "Integrazioni del 17/04/2023 - ASPETTI NATURALISTICI - CONTRODEDUZIONI ALLE OSSERVAZIONI RICEVUTE",
+    "excerpt": "at Offshore Wind Farms.)."
+   }
+  },
+  {
    "key": "accumulo",
    "label": "Accumulo",
    "value": "336 MW / 56,32 MWh",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 49 MW (20), 385 MW (16)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 49 MW (22), 385 MW (19)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/734941",
     "page": 28,
@@ -69,7 +81,7 @@
   "coordinate": {
    "lat": 40.25791,
    "lon": 8.664,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (1192 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (1473 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1151046",
     "page": 40,
@@ -110,7 +122,7 @@
     {
      "type": "PEC",
      "value": "vccscanosindia@legalmail.it",
-     "occurrences": 350,
+     "occurrences": 528,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/734941",
       "page": 2,
@@ -121,7 +133,7 @@
     {
      "type": "E-mail",
      "value": "vccscanosindiasrl@gmail.com",
-     "occurrences": 487,
+     "occurrences": 504,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1151046",
       "page": 2,
@@ -141,9 +153,20 @@
      }
     },
     {
+     "type": "E-mail",
+     "value": "vccscanos1ndla@legalmall.lt",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/734903",
+      "page": 1,
+      "document": "TIPICI SEZIONI STRADE",
+      "excerpt": "P.IVA e C.F.: 02097190660 PEC: vccscanos1ndla@legalmall.lt"
+     }
+    },
+    {
      "type": "Telefono",
      "value": "08631870710",
-     "occurrences": 702,
+     "occurrences": 743,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/734941",
       "page": 2,
@@ -198,6 +221,33 @@
  ],
  "altri_soggetti": [
   {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@lipu.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/845682",
+      "page": 1,
+      "document": "Osservazioni dell'Associazione Lipu Sardegna in data 10/05/2023",
+      "excerpt": "sardegna@lipu.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "VCC Trapani S.r.l.",
    "kind": "società",
    "roles": [],
@@ -221,58 +271,23 @@
     {
      "type": "E-mail",
      "value": "vcc.trapani.srl@gmail.com",
-     "occurrences": 69,
+     "occurrences": 110,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/832028",
+      "url": "https://va.mite.gov.it/File/Documento/1151062",
       "page": 1,
-      "document": "Integrazioni del 17/04/2023 - INQUADRAMENTO SU IGM ZONE DI INFLUENZA VISIVA",
+      "document": "Integrazioni del 19/09/2024 - Inquadramento su IGM zone di influenza visiva",
       "excerpt": "Area Vasta VCC Trapani S.r.l. - Via O.Ranelletti n.281 - 67043 - Celano (AQ) - tel.0863/1870710 - e-mail: vcc.trapani.srl@gmail.com"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Dr. Geol. Giovanni Salvatore Calia Gutturu",
-   "kind": "persona",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "geologocalia@pec.it",
-     "occurrences": 12,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/832035",
-      "page": 2,
-      "document": "Integrazioni del 17/04/2023 - RELAZIONE IDROLOGICA E IDROGEOLOGICA",
-      "excerpt": "Dr. Geol. Giovanni Salvatore Calia Gutturu Santu Nicola, 9 – NUORO Cell. 328 8237180 email geostudiocalia@gmail.com pec geologocalia@pec.it"
      }
     },
     {
      "type": "E-mail",
-     "value": "geostudiocalia@gmail.com",
-     "occurrences": 12,
+     "value": "ycc.trapanf.srl@gmall.com",
+     "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/832035",
-      "page": 2,
-      "document": "Integrazioni del 17/04/2023 - RELAZIONE IDROLOGICA E IDROGEOLOGICA",
-      "excerpt": "Dr. Geol. Giovanni Salvatore Calia Gutturu Santu Nicola, 9 – NUORO Cell. 328 8237180 email geostudiocalia@gmail.com pec geologocalia@pec.it"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "3288237180",
-     "occurrences": 12,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/832035",
-      "page": 2,
-      "document": "Integrazioni del 17/04/2023 - RELAZIONE IDROLOGICA E IDROGEOLOGICA",
-      "excerpt": "Dr. Geol. Giovanni Salvatore Calia Gutturu Santu Nicola, 9 – NUORO Cell. 328 8237180 email geostudiocalia@gmail.com pec geologocalia@pec.it"
+      "url": "https://va.mite.gov.it/File/Documento/734900",
+      "page": 1,
+      "document": "PARTICOLARE ATTRAVERSAMENTO CORSO D'ACQUA",
+      "excerpt": "SCALA 1:200 [ VCC Trapani S.r.l. - Via O.Ranellettt n.281 - 67043 - Celano (AQ) - tel.0863/1870710 - e-mail: YCC.trapanf.srl@gmall.com"
      }
     }
    ],
@@ -291,7 +306,7 @@
     {
      "type": "Telefono",
      "value": "091341746",
-     "occurrences": 4,
+     "occurrences": 48,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/832026",
       "page": 3,
@@ -302,12 +317,58 @@
     {
      "type": "Telefono",
      "value": "3204328205",
-     "occurrences": 4,
+     "occurrences": 48,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/832026",
       "page": 3,
       "document": "Integrazioni del 17/04/2023 - RELAZIONE DI IMPATTO ACUSTICO - Integrazione su recettori e rilievo fonometrico notturno",
       "excerpt": "Via M. D’Azeglio n° 27/C, 90143 – Palermo Tel. 091-341746 Fax 091-9770488 Cell. +39 320 4328205"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dr. Geol. Giovanni Salvatore Calia Gutturu",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "geologocalia@pec.it",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832035",
+      "page": 2,
+      "document": "Integrazioni del 17/04/2023 - RELAZIONE IDROLOGICA E IDROGEOLOGICA",
+      "excerpt": "Dr. Geol. Giovanni Salvatore Calia Gutturu Santu Nicola, 9 – NUORO Cell. 328 8237180 email geostudiocalia@gmail.com pec geologocalia@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "geostudiocalia@gmail.com",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832035",
+      "page": 2,
+      "document": "Integrazioni del 17/04/2023 - RELAZIONE IDROLOGICA E IDROGEOLOGICA",
+      "excerpt": "Dr. Geol. Giovanni Salvatore Calia Gutturu Santu Nicola, 9 – NUORO Cell. 328 8237180 email geostudiocalia@gmail.com pec geologocalia@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3288237180",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832035",
+      "page": 2,
+      "document": "Integrazioni del 17/04/2023 - RELAZIONE IDROLOGICA E IDROGEOLOGICA",
+      "excerpt": "Dr. Geol. Giovanni Salvatore Calia Gutturu Santu Nicola, 9 – NUORO Cell. 328 8237180 email geostudiocalia@gmail.com pec geologocalia@pec.it"
      }
     }
    ],
@@ -326,12 +387,71 @@
     {
      "type": "E-mail",
      "value": "drvincenzoferri@gmail.com",
-     "occurrences": 3,
+     "occurrences": 7,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/832034",
       "page": 3,
       "document": "Integrazioni del 17/04/2023 - PIANO DI MONITORAGGIO POST-OPERAM - AGGIORNAMENTO INTEGRAZIONE",
       "excerpt": "Naturalista, Ecologo drvincenzoferri@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Domenico Scanu",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "scanu.domenico@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/769235",
+      "page": 2,
+      "document": "Osservazioni dell'ASSOCIAZIONE MEDICI PER L'AMBIENTE - ISDE ITALIA ONLUS in data 13/02/2023",
+      "excerpt": "Il sottoscritto Dott. Domenico Scanu, in qualità di Presidente dell’ Associazione Medici per l'Ambiente ISDE Italia - sezione Sardegna, posta elettronica: scanu.domenico@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "dscanu.eco@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/769235",
+      "page": 2,
+      "document": "Osservazioni dell'ASSOCIAZIONE MEDICI PER L'AMBIENTE - ISDE ITALIA ONLUS in data 13/02/2023",
+      "excerpt": "dscanu.eco@gmail.com formula le seguenti"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Arrnngelo Tacrnne",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "vccscall05india@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/734939",
+      "page": 1,
+      "document": "SEZIONE TIPO CAVIDOTTI 36 kV",
+      "excerpt": "P.IVA e C.F.: 02097190660 PEC: vccscall05india@legalmail.it"
      }
     }
    ],
@@ -356,6 +476,30 @@
       "page": 12,
       "document": "RELAZIONE DI INQUADRAMENTO URBANISTICO",
       "excerpt": "26.05.1977 e residente in Aielli (AQ). Via C.da Sardellino n°32 ; Tel. 3398975140. nella sua vesie di rappresentante Legale della"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "I VCC Trapant S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "trapanf.srl@llmatl.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/734939",
+      "page": 1,
+      "document": "SEZIONE TIPO CAVIDOTTI 36 kV",
+      "excerpt": "SCALA 1:10 I VCC Trapant S.r.l. - vta O.Ranellettl n.2111 - 6704l - Celane IAQ) - tel.086l/1S70710 - e-matl: vo:.trapanf.srl@llmatl.com"
      }
     }
    ],
@@ -2808,9 +2952,9 @@
  },
  "documentazione": {
   "documenti": 421,
-  "pagine": 3092,
+  "pagine": 4739,
   "completa": false,
-  "da_leggere": 121
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -2845,16 +2989,12 @@
    "reason": "Avvio previsto il 08/09/2017, ma l'iter è proseguito; ultimo documento o atto del 16/06/2026: probabile slittamento, non ancora realizzato o in corso."
   },
   {
-   "label": "Aerogeneratori",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "212 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "422 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
