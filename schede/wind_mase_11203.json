@@ -1,0 +1,900 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11203",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"Lama Cupa\", costituito da 14 aerogeneratori di potenza nominale pari a 7 MW, per una potenza complessiva di 98 MW, ricadente nei comuni di Acquaviva delle Fonti (BA), Gioia del Colle (BA), Sammichele di Bari (BA) e Casamassima (BA), con annesso sistema di accumulo da 30 MW e incluse le opportune opere di connessione alla RTN (cod. MYTERNA 202304180)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11203",
+ "source": "mase",
+ "updated": "2026-11-08",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "98 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11203",
+    "excerpt": "98 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "14",
+   "status": "da documenti",
+   "sub": "7,00 MW ciascuno · altezza mozzo 142 m · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 98 (4), 3 (3), 8 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1133955",
+    "page": 3,
+    "document": "DC23078D-C14RelazioneGittataMassima_signed",
+    "excerpt": "ACCIONA ENERGIA GLOBAL ITALIA S.R.L. . Il progetto prevede l‘installazione di 14 aerogeneratori del tipo NORDEX N175 o similare, ciascuno di potenza massima pari a 7 MW. È inoltre previsto un sistema di accumulo"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "30 MW",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 128 MW (10)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1133955",
+    "page": 3,
+    "document": "DC23078D-C14RelazioneGittataMassima_signed",
+    "excerpt": "ciascuno di potenza massima pari a 7 MW. È inoltre previsto un sistema di accumulo elettrochimico (BESS) di potenza massima pari a 30 MW per un totale complessivo di potenza prevista in progetto di 128 MW."
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1133957",
+    "page": 43,
+    "document": "DC23078D-V01SIA_signed",
+    "excerpt": "42 Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BA",
+  "comuni": [
+   "Acquaviva Delle Fonti",
+   "Gioia Del Colle",
+   "Sammichele Di Bari",
+   "Casamassima"
+  ],
+  "coordinate": {
+   "lat": 40.93,
+   "lon": 16.885,
+   "tipo": "coordinate del sito dichiarate negli elaborati (27 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1133917",
+    "page": 5,
+    "document": "DC23078D-C12Calcolipreliminaridellestrutture-CabineElettriche_signed",
+    "excerpt": "tabelle allegate alla normativa. In particolare, le coordinate geografiche del sito sono: latitudine 40.930°, longitudine 16.885°. Il tipo di costruzione è ordinario, la classe d'uso è la III (importante) e la muratura p"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.93000,16.88500",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Mate System S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista",
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "matesystem@pec.it",
+     "occurrences": 50,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327372",
+      "page": 1,
+      "document": "Integrazioni del 07/11/2025 - Piano Tecnico delle Opere",
+      "excerpt": "tel. +39 080 3072072 mail: info@matesystemsrl.it | pec: matesystem@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@matesystemsrl.it",
+     "occurrences": 50,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327372",
+      "page": 1,
+      "document": "Integrazioni del 07/11/2025 - Piano Tecnico delle Opere",
+      "excerpt": "tel. +39 080 3072072 mail: info@matesystemsrl.it | pec: matesystem@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0803072072",
+     "occurrences": 50,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327372",
+      "page": 1,
+      "document": "Integrazioni del 07/11/2025 - Piano Tecnico delle Opere",
+      "excerpt": "Via Papa Pio XII, n.8 | 70020 - Cassano delle Murge (BA) tel. +39 080 3072072"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1327373",
+    "page": 1,
+    "document": "Integrazioni del 07/11/2025 - Componenti geomorfologiche secondo PPTR",
+    "excerpt": "Committente: Questo documento contiene informazioni di proprietà della società Mate System srl e deve essere utilizzato esclusivamente dal destinatario in relazione alle finalità per le quali è stato ricevuto. E' vietata"
+   }
+  },
+  {
+   "name": "Acciona Energia Global Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "accionaglobalitalia@legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1171436",
+      "page": 1,
+      "document": "Richiesta integrazioni del MIC",
+      "excerpt": "Alla società Acciona Energia Global Italia S.r.l. (accionaglobalitalia@legalmail.it)"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0650514225",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327419",
+      "page": 3,
+      "document": "Integrazioni del 07/11/2025 - Riscontro alle richieste di integrazioni",
+      "excerpt": "Premessa La Società Acciona Energia Global Italia S.r.l., Codice Fiscale e P.IVA 12990031002, Tel. 06 50514225, PEC:"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11203"
+   }
+  },
+  {
+   "name": "Ing. Francesco Ambron",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1327372",
+    "page": 1,
+    "document": "Integrazioni del 07/11/2025 - Piano Tecnico delle Opere",
+    "excerpt": "Progettista: Ing. Francesco Ambron"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Beshielding S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10105760010",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Monviso 9 10090 Villarbasse To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "shielding@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327378",
+      "page": 13,
+      "document": "Integrazioni del 07/11/2025 - Relazione Campi Elettrici e Magnetici",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "busbar@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327378",
+      "page": 13,
+      "document": "Integrazioni del 07/11/2025 - Relazione Campi Elettrici e Magnetici",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geopolis S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "robe11meni@gmail.com",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327430",
+      "page": 2,
+      "document": "Integrazioni del 07/11/2025 - Relazione geologica preliminare",
+      "excerpt": "GEOPOLIS srl - 00164 Roma - Via Arnobio, 27 – robe11meni@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Brulli Trasmissione S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "brullit@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327412",
+      "page": 1,
+      "document": "Integrazioni del 07/11/2025 - Nulla osta ampliamento stazione elettrica",
+      "excerpt": "Brulli Trasmissione Srl Unipersonale - Capitale sociale versato € 1.000.000 - Registro Imprese, codice fiscale e partita IVA No. IT 02627590355 Via Meuccio Ruini, 2 - 42124 Reggio nell’Emilia - Italia - Tel +39.0522.23.3"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@brulli.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327412",
+      "page": 1,
+      "document": "Integrazioni del 07/11/2025 - Nulla osta ampliamento stazione elettrica",
+      "excerpt": "Brulli Trasmissione Srl Unipersonale - Capitale sociale versato € 1.000.000 - Registro Imprese, codice fiscale e partita IVA No. IT 02627590355 Via Meuccio Ruini, 2 - 42124 Reggio nell’Emilia - Italia - Tel +39.0522.23.3"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "23/06/2016",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1133957",
+     "page": 12,
+     "document": "DC23078D-V01SIA_signed",
+     "excerpt": "durata pari a 20 anni a partire dalla data di entrata in esercizio commerciale dell’impianto, come previsto dal D.M. del 23/06/2016. 2.2 Valutazione di impatto ambientale"
+    }
+   }
+  ],
+  "durata_cantiere": "21 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Voltura autorizzazione a Terna",
+    "start": 0.13,
+    "end": 1.11,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Elaborati generali di commessa",
+    "start": 1.11,
+    "end": 2.49,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Elaborati costruttivi opere civili",
+    "start": 2.72,
+    "end": 4.57,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Elaborati costruttivi opere meccaniche",
+    "start": 2.49,
+    "end": 4.34,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Emissione specifiche tecniche apparati AT/MT/BT",
+    "start": 2.72,
+    "end": 4.11,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Progetto elettrico sistema di automazione & controllo",
+    "start": 2.95,
+    "end": 5.26,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Riesame della progettazione",
+    "start": 5.26,
+    "end": 6.64,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Approvazione progetto esecutivo",
+    "start": 6.64,
+    "end": 7.62,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo TR AT/AT",
+    "start": 4.11,
+    "end": 15.78,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo apparecchiature AT",
+    "start": 7.62,
+    "end": 13.21,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo quadri 36 kV",
+    "start": 7.62,
+    "end": 11.57,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO e subappalto opere civili",
+    "start": 7.62,
+    "end": 9.6,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e consegna prefabbricati edifici",
+    "start": 7.69,
+    "end": 10.39,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo carpenterie zincate per apparecchiature AT",
+    "start": 7.69,
+    "end": 10.39,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, fornitura e collaudo isolatori, morse e conduttori alluminio",
+    "start": 7.69,
+    "end": 11.77,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo apparecchiature MT e BT per SA ca e cc",
+    "start": 7.69,
+    "end": 11.77,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo apparecchiature MT",
+    "start": 7.69,
+    "end": 11.77,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo quadri sistema automazione & controllo",
+    "start": 7.69,
+    "end": 10.39,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, fornitura e collaudo cavi MT e BT",
+    "start": 7.69,
+    "end": 9.0,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Allestimento cantiere e vie di accesso",
+    "start": 9.6,
+    "end": 10.29,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazione fabbricati",
+    "start": 10.52,
+    "end": 10.98,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni trasformatori AT/AT",
+    "start": 10.52,
+    "end": 11.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni apparecchiature AT",
+    "start": 10.52,
+    "end": 12.59,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione rete di terra primaria",
+    "start": 10.52,
+    "end": 11.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione vie cavi e polifore acque meteoriche",
+    "start": 10.52,
+    "end": 12.59,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera prefabbricati e realizzazione opere di finitura",
+    "start": 10.98,
+    "end": 11.44,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Preparazione piazzali, drenaggi e cordoli strade",
+    "start": 12.59,
+    "end": 13.51,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione recinzione",
+    "start": 10.52,
+    "end": 11.9,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Asfaltature strade",
+    "start": 13.51,
+    "end": 13.8,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione aree a verde",
+    "start": 13.51,
+    "end": 14.2,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa trasformatori AT/AT",
+    "start": 15.78,
+    "end": 16.24,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa carpenterie metalliche",
+    "start": 13.51,
+    "end": 14.89,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa apparecchiature AT",
+    "start": 14.89,
+    "end": 17.65,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Montaggio sbarre AT e collegamenti AT",
+    "start": 17.65,
+    "end": 18.8,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione rete di terra secondaria",
+    "start": 14.89,
+    "end": 16.27,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione impianti tecnologici edifici e illuminazione esterna",
+    "start": 11.44,
+    "end": 12.36,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa quadri 36 kV",
+    "start": 12.36,
+    "end": 13.74,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa apparecchiature MT",
+    "start": 12.36,
+    "end": 13.05,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa apparecchiature MT e BT SA ca e cc",
+    "start": 13.05,
+    "end": 13.51,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa quadri ed apparati sistema di protezione e controllo",
+    "start": 13.51,
+    "end": 14.2,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa e collegamento cavi MT e BT",
+    "start": 14.89,
+    "end": 16.04,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Verifiche di passo e contatto rete di terra",
+    "start": 17.65,
+    "end": 18.11,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo sistema servizi ausiliari stazione ca e cc",
+    "start": 17.65,
+    "end": 18.11,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo apparecchiature AT di piazzale",
+    "start": 17.65,
+    "end": 19.03,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo quadri 36 kV",
+    "start": 17.65,
+    "end": 18.34,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Taratura protezioni di linea e di impianto",
+    "start": 19.03,
+    "end": 19.49,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo e verifiche SCADA",
+    "start": 19.49,
+    "end": 19.95,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Ripristini e smobilizzo cantiere",
+    "start": 19.95,
+    "end": 20.94,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Attività Riepilogo",
+    "start": 5.18,
+    "end": 6.37,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Divisione Riepilogo progetto",
+    "start": 5.18,
+    "end": 6.37,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Cardine Attività inattiva",
+    "start": 2.25,
+    "end": 9.34,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 20.94,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1327414",
+   "page": 2,
+   "document": "Integrazioni del 07/11/2025 - Cronoprogramma delle Attività",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "M11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "M12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "M13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "M14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "M15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "M16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "M17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "M18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "M19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "M20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "M21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "M22",
+     "start": 21.0,
+     "end": 22.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1133957",
+    "page": 43,
+    "document": "DC23078D-V01SIA_signed",
+    "excerpt": "42 Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  },
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "23/06/2016",
+    "iso": "2016-06-23",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1133957",
+     "page": 12,
+     "document": "DC23078D-V01SIA_signed",
+     "excerpt": "durata pari a 20 anni a partire dalla data di entrata in esercizio commerciale dell’impianto, come previsto dal D.M. del 23/06/2016. 2.2 Valutazione di impatto ambientale"
+    }
+   }
+  ],
+  "document": {
+   "document": "Integrazioni del 07/11/2025 - Cronoprogramma attività SE RTN",
+   "url": "https://va.mite.gov.it/File/Documento/1327379"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 07/11/2025 - Cronoprogramma attività SE RTN",
+    "url": "https://va.mite.gov.it/File/Documento/1327379"
+   },
+   {
+    "document": "DC23078D-C17Cronoprogramma_signed",
+    "url": "https://va.mite.gov.it/File/Documento/1133920"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 197,
+  "pagine": 2805,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Acciona Energia Global Italia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 98.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ACQUAVIVA DELLE FONTI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "348 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
