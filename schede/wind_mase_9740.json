@@ -5,7 +5,7 @@
  "title": "Progetto di parco eolico \"Amistade\", costituito da 21 aerogeneratori per una potenza complessiva di 130,2 MW, da realizzarsi nei Comuni di Esterzili ed Escalaplano, con opere di connessione alla RTN.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9740",
  "source": "mase",
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "21",
    "status": "da documenti",
-   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 14 (26), 7 (22), 57 (12)",
+   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 7 (30), 14 (29), 12 (16)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/840177",
     "page": 1,
@@ -42,6 +42,19 @@
     "page": 11,
     "document": "Analisi costi-benefici",
     "excerpt": "c€/kWh per quella off-shore."
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "15 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 26,576 MW (2), 49 MW (2), 64 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1107519",
+    "page": 2,
+    "document": "Osservazioni della Comunità Montana \"Sarcidano Barbagia di Seulo\", in data 17/07/2024",
+    "excerpt": "6. Progetto di impianto agrivoltaico denominato \"SERRI\", dalla potenza di 39,33 MW, integrato con sistema di accumulo da 15 MW da realizzarsi nel Comune di Serri, con relative opere di"
    }
   },
   {
@@ -1128,9 +1141,9 @@
  },
  "documentazione": {
   "documenti": 339,
-  "pagine": 5846,
-  "completa": false,
-  "da_leggere": 39
+  "pagine": 6284,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -1161,12 +1174,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "109 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "127 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
