@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico costituito da 22 aerogeneratori, di potenza unitaria pari a 6 MW, per una potenza complessiva di 132 MW, da realizzarsi nel Comune di Sant'Agata di Puglia (FG), incluse le relative opere di connessione alla RTN ricadenti nel medesimo territorio comunale (codice MYTERNA 202301253).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11900",
  "source": "mase",
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "22",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 17 (3), 5 (3), 12 (2)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 17 (5), 5 (5), 12 (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1347295",
     "page": 1,
@@ -33,11 +33,24 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "56 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 99 MW (1), 95 MW (1), 30 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347175",
+    "page": 1,
+    "document": "Analisi delle interferenze con le attività minerarie",
+    "excerpt": "NOMINALE PARI A 59.347,44 kWp E POTENZA IN IMMISSIONE PARI A 56 MW CON SISTEMA DI ACCUMULO INTEGRATO E RELATIVE OPERE DI CONNESSIONE ALLA RETE RTN"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "365 giorni (circa 12 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 27 mesi (3), 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1347176",
     "page": 195,
@@ -95,7 +108,7 @@
     {
      "type": "PEC",
      "value": "ventosud@diellepec.it",
-     "occurrences": 6,
+     "occurrences": 8,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1346946",
       "page": 88,
@@ -149,6 +162,33 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Nizzoli Servizi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02619450121",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Molinelli Snc 21015 Lonate Pozzolo Va",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@nizzoli.com",
+     "occurrences": 56,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1347186",
+      "page": 2,
+      "document": "Report dei trasporti",
+      "excerpt": "Via Molinelli, snc – CP 58 - 21015 Lonate Pozzolo (VA) Italia – www.nizzoli.com – info@nizzoli.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Green Energy S.r.l.",
    "kind": "società",
@@ -435,30 +475,6 @@
     }
    ],
    "source": null
-  },
-  {
-   "name": "RPC Vignole S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "rpe.vignole@legalmail.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1346946",
-      "page": 127,
-      "document": "Relazione generale",
-      "excerpt": "1311913, PEC rpe.vignole@legalmail.it, Codice destinatario fatturazione USAL8PV, rappresentata"
-     }
-    }
-   ],
-   "source": null
   }
  ],
  "stato": null,
@@ -738,7 +754,7 @@
   "duration": {
    "text": "365 giorni (circa 12 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 27 mesi (3), 18 mesi (1), 1 mese (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1347176",
     "page": 195,
@@ -763,9 +779,9 @@
  },
  "documentazione": {
   "documenti": 415,
-  "pagine": 3077,
-  "completa": false,
-  "da_leggere": 115
+  "pagine": 4380,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -796,12 +812,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "56 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "92 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
