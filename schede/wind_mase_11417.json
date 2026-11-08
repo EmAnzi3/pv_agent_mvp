@@ -1,0 +1,378 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11417",
+ "title": "Progetto di un impianto eolico denominato \"Parco Eolico San Mauro Stigliano\", costituito da 17 aerogeneratori di potenza nominale pari a 6,0 MW, per una potenza complessiva di 102 MW, da realizzarsi nei comuni di San Mauro Forte (MT) e Stigliano (MT), e delle relative opere di connessione alla RTN ricadenti anche nei comuni di Salandra (MT), Garaguso (MT) e Oliveto Lucano (MT) (codice MY TERNA n. 202403459)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11417",
+ "source": "mase",
+ "updated": "2026-11-08",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "102 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11417",
+    "excerpt": "102 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "17",
+   "status": "da verificare",
+   "sub": "6,00 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 11 (35), 6 (16), 3 (14)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1191177",
+    "page": 1,
+    "document": "Avviso al pubblico del 20/12/2024",
+    "excerpt": "per la produzione di energia elettrica da fonte rinnovabile eolica di potenza complessiva pari a 102 MW, costituito da 17 aerogeneratori, ciascuno di potenza nominale pari a 6 MW, da realizzarsi nella Provincia di Matera"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1197691",
+    "page": 48,
+    "document": "Integrazioni del 16/12/2024 - Verifica Preventiva dell'Interesse Archeologico",
+    "excerpt": "impianto agrivoltaico di potenza nominale pari a 19,994,88 kWp denominato “Caramelle” ubicato nel comune"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "11 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 120 giorni (circa 4 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1191068",
+    "page": 4,
+    "document": "Cronoprogramma",
+    "excerpt": "suddivisa in due zone, nord e sud distanti tra loro 5 km, si avranno due aree cantiere, sulle quali si lavorerà contemporaneamente per una durata di 11 mesi, incluse le attività di allestimento, chiusura cantieri ed un m"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "MT",
+  "comuni": [
+   "San Mauro Forte",
+   "Oliveto Lucano",
+   "Salandra",
+   "Stigliano",
+   "Garaguso"
+  ],
+  "coordinate": {
+   "lat": 40.47881,
+   "lon": 16.26433,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (377 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1191061",
+    "page": 1,
+    "document": "Carta delle distanze tra aerogeneratori",
+    "excerpt": "Carta delle distanze tra aerogeneratori"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.47881,16.26433",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Zefiro Prime S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11417"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "11 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento Cantieri",
+    "start": 0.11,
+    "end": 1.08,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle viabilità di cantiere",
+    "start": 1.1,
+    "end": 5.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole di montaggio",
+    "start": 1.1,
+    "end": 5.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni aerogeneratori",
+    "start": 2.1,
+    "end": 6.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Completamento viabilità e piazzole di montaggio",
+    "start": 3.09,
+    "end": 7.04,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzaz. sottostazione di trasformazione SEU",
+    "start": 2.1,
+    "end": 6.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzaz. Sottostazione elettrica condivisa SEC",
+    "start": 2.1,
+    "end": 6.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Connessione RTN Terna 150/36 kV",
+    "start": 3.09,
+    "end": 6.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linee di distribuzione MT",
+    "start": 2.1,
+    "end": 6.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linee di distribuzione AT",
+    "start": 3.09,
+    "end": 6.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio Aerogeneratori",
+    "start": 3.09,
+    "end": 6.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Energizzazione Sottostazione e impianto eolico",
+    "start": 6.07,
+    "end": 7.04,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Commissioning aerogeneratori",
+    "start": 7.07,
+    "end": 9.03,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Entrate in esercizio impianto eolico",
+    "start": 8.06,
+    "end": 10.02,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristino opere civile e definizione piazzole definitive",
+    "start": 8.06,
+    "end": 10.02,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Chiusura cantiere",
+    "start": 10.05,
+    "end": 11.02,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "period",
+  "months": 11.02,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1191068",
+   "page": 5,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0,
+     "end": 1
+    },
+    {
+     "label": "2",
+     "start": 1,
+     "end": 2
+    },
+    {
+     "label": "3",
+     "start": 2,
+     "end": 3
+    },
+    {
+     "label": "4",
+     "start": 3,
+     "end": 4
+    },
+    {
+     "label": "5",
+     "start": 4,
+     "end": 5
+    },
+    {
+     "label": "6",
+     "start": 5,
+     "end": 6
+    },
+    {
+     "label": "7",
+     "start": 6,
+     "end": 7
+    },
+    {
+     "label": "8",
+     "start": 7,
+     "end": 8
+    },
+    {
+     "label": "9",
+     "start": 8,
+     "end": 9
+    },
+    {
+     "label": "10",
+     "start": 9,
+     "end": 10
+    },
+    {
+     "label": "11",
+     "start": 10,
+     "end": 11
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "11 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 120 giorni (circa 4 mesi) (1), 90 giorni (circa 3 mesi) (1), 30 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1191068",
+    "page": 4,
+    "document": "Cronoprogramma",
+    "excerpt": "suddivisa in due zone, nord e sud distanti tra loro 5 km, si avranno due aree cantiere, sulle quali si lavorerà contemporaneamente per una durata di 11 mesi, incluse le attività di allestimento, chiusura cantieri ed un m"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1191068"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 121,
+  "pagine": 2562,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Zefiro Prime S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 102.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SAN MAURO FORTE, SALANDRA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "MT",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "433 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
