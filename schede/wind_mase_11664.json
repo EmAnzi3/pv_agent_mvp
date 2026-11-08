@@ -5,7 +5,7 @@
  "title": "Progetto di un parco eolico denominato \"EOLIA\" costituito da n. 25 aerogeneratori ciascuno dalla potenza nominale pari a 6 MW, per una potenza complessiva di 150 MW, da realizzarsi nei Comuni di Berchidda, Monti, Telti, Olbia e Padru, in Provincia di Olbia-Tempio.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11664",
  "source": "mase",
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "25",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 175 m · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 4 (4), 14 (3), 12 (3)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 175 m · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 5 (9), 4 (8), 10 (7)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1385964",
     "page": 1,
@@ -33,11 +33,36 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1292550",
+    "page": 16,
+    "document": "SIA_Quadro_di_riferimento_Programmatico",
+    "excerpt": "l'obiettivo di raggiungere almeno 480 GW di capacità eolica onshore e offshore entro il 2030. Per accelerare il processo,"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "11,88 MW / 64,8 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 25 MW (2), 58 MW (2), 31 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1377255",
+    "page": 78,
+    "document": "Osservazioni della Regione Autonoma della Sardegna - Direzione Generale dell'Ambiente in data 19/02/2026",
+    "excerpt": "al progetto di impianto eolico (costituito da n. 9 aerogeneratori) di potenza complessiva pari a 59,4 MW, integrato con sistema di accumulo di potenza 11,88 MW, da realizzarsi nel Comune di Sant'Antonio di Gallura (SS). "
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "24 mesi",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 104 giorni (circa 3 mesi) (1), 626 giorni (circa 21 mesi) (1), 365 giorni (circa 12 mesi) (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 12 mesi (5), 6 mesi (2), 104 giorni (circa 3 mesi) (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1292552",
     "page": 17,
@@ -85,6 +110,37 @@
  },
  "soggetti": [
   {
+   "name": "ATS Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "atseng@pec.it",
+     "occurrences": 77,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1292550",
+      "page": 1,
+      "document": "SIA_Quadro_di_riferimento_Programmatico",
+      "excerpt": "Torremaggiore (FG) 0882/393197 atseng@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1292471",
+    "page": 1,
+    "document": "Tipologico_Fondazioni_Aerogeneratori",
+    "excerpt": "Il progettista: ATS Engineering srl"
+   }
+  },
+  {
    "name": "Ing. Andrea Marangon",
    "kind": "persona",
    "roles": [
@@ -106,6 +162,33 @@
  ],
  "altri_soggetti": [
   {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@lipu.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1339413",
+      "page": 1,
+      "document": "Osservazioni della LIPU (Lega Italiana Protezione Uccelli) ODV Sardegna in data 5/12/2025",
+      "excerpt": "Coordinamento reg. Lipu Sardegna sardegna@lipu.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Seingim Global Service S.r.l.",
    "kind": "società",
    "roles": [],
@@ -118,7 +201,7 @@
     {
      "type": "E-mail",
      "value": "info@seingim.it",
-     "occurrences": 74,
+     "occurrences": 77,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1292550",
       "page": 1,
@@ -141,8 +224,8 @@
    "source": null
   },
   {
-   "name": "ATS Engineering S.r.l.",
-   "kind": "società",
+   "name": "Dott. Attilio Gaetano Sequi",
+   "kind": "persona",
    "roles": [],
    "vat": null,
    "vat_group": false,
@@ -152,13 +235,13 @@
    "contacts": [
     {
      "type": "PEC",
-     "value": "atseng@pec.it",
-     "occurrences": 74,
+     "value": "amm.ne.centrale@pec.infn.it",
+     "occurrences": 2,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1292550",
+      "url": "https://va.mite.gov.it/File/Documento/1375467",
       "page": 1,
-      "document": "SIA_Quadro_di_riferimento_Programmatico",
-      "excerpt": "Torremaggiore (FG) 0882/393197 atseng@pec.it"
+      "document": "Parere del MIUR e dell'INFN , in data 24/03/2025",
+      "excerpt": "Direttore generale amm.ne.centrale@pec.infn.it"
      }
     }
    ],
@@ -187,18 +270,86 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Alla Società Aren Green S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "arengreensrl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1329589",
+      "page": 1,
+      "document": "Osservazioni della Provincia Regionale di Trapani , in data 14/11/2024",
+      "excerpt": "e, p.c. Alla Società AREN Green S.r.l. PEC: arengreensrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": "24 mesi (cronoprogramma)",
-  "autorizzazione": null,
-  "note": [
-   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "deliberazione n. 20 del 30/04/2025",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1307354",
+     "page": 2,
+     "document": "Parere del COMUNE DI BERCHIDDA, in data 24/09/2025",
+     "excerpt": "con deliberazione n. 20 del 30/04/2025 il Consiglio comunale ha unanimemente espresso la propria ferma opposizione al suddetto progetto, ricadente tra le aree"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di aprile 2025",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1307354",
+     "page": 2,
+     "document": "Parere del COMUNE DI BERCHIDDA, in data 24/09/2025",
+     "excerpt": "con deliberazione n. 20 del 30/04/2025 il Consiglio comunale ha unanimemente espresso la propria ferma opposizione al suddetto progetto, ricadente tra le aree"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di marzo 2027",
+    "dettaglio": "inizio stimato + durata del cantiere: 24 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1292546",
+     "page": 2,
+     "document": "Cronoprogramma",
+     "excerpt": ""
+    }
+   }
   ],
+  "durata_cantiere": "24 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "deliberazione n. 20",
+   "data": "30/04/2025",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1307354",
+    "page": 2,
+    "document": "Parere del COMUNE DI BERCHIDDA, in data 24/09/2025",
+    "excerpt": "con deliberazione n. 20 del 30/04/2025 il Consiglio comunale ha unanimemente espresso la propria ferma opposizione al suddetto progetto, ricadente tra le aree"
+   }
+  },
+  "note": [],
   "legenda": {
    "documentata": "data scritta nei documenti",
    "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
@@ -429,7 +580,7 @@
   "duration": {
    "text": "24 mesi",
    "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 52 giorni (1), 104 giorni (circa 3 mesi) (1), 626 giorni (circa 21 mesi) (1)",
+   "hint": "Valore prevalente negli elaborati; altri valori: 12 mesi (5), 6 mesi (2), 52 giorni (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1292552",
     "page": 17,
@@ -454,9 +605,9 @@
  },
  "documentazione": {
   "documenti": 561,
-  "pagine": 3448,
-  "completa": false,
-  "da_leggere": 261
+  "pagine": 5401,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -487,8 +638,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "184 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "344 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
