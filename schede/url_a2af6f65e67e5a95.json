@@ -5,7 +5,7 @@
  "title": "PAUR per progetto realizzazione impianto fotovoltaico di pot. nominale installata pari a 24,99 MWp e potenza nominale di connessione pari a 24,15 MW da istallare in provincia di Avellino, nei Comuni di Scampitella e Vallata.",
  "source_url": "http://viavas.regione.campania.it/opencms/opencms/VIAVAS/VIA_files_new/Progetti/prg_10148_prot_2025.554130_del_23-10-2025.viavi",
  "source": "campania",
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "sintesi": [
   {
    "key": "potenza",
@@ -61,8 +61,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "18 mesi",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 215 giorni (circa 7 mesi) (1), 14 mesi (1), 6 mesi (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 215 giorni (circa 7 mesi) (1), 14 mesi (1)",
    "source": {
     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10148/2026_08_27%20nota%20TERNA%20prot_n_0715343_2026.pdf')/$value",
     "page": 31,
@@ -601,8 +601,8 @@
   },
   "duration": {
    "text": "18 mesi",
-   "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 215 giorni (circa 7 mesi) (1), 14 mesi (1), 6 mesi (1)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 215 giorni (circa 7 mesi) (1), 14 mesi (1)",
    "source": {
     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10148/2026_08_27%20nota%20TERNA%20prot_n_0715343_2026.pdf')/$value",
     "page": 31,
@@ -619,9 +619,9 @@
  },
  "documentazione": {
   "documenti": 1556,
-  "pagine": 5769,
+  "pagine": 6937,
   "completa": false,
-  "da_leggere": 836
+  "da_leggere": 716
  },
  "confronto": [
   {
@@ -652,8 +652,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "403 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "405 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
