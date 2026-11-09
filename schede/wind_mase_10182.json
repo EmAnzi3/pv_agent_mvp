@@ -1,0 +1,652 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10182",
+ "title": "Progetto per la realizzazione di un impianto eolico costituito da n. 13 aerogeneratori, di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 93,6 MW, ricadente nei comuni di Canino (VT) e Montalto di Castro (VT), con opere di connessione che interessano anche il Comune di Manciano (GR), oltre ad un sistema di accumulo da 24 MW.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10182",
+ "source": "mase",
+ "updated": "2026-11-09",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "93,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10182",
+    "excerpt": "93,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "13",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 150 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 12 (15), 7 (9), 1 (9)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/899772",
+    "page": 1,
+    "document": "Avviso al pubblico del 18/09/2023",
+    "excerpt": "Il progetto prevede la realizzazione di n. 13 aerogeneratori della potenza unitaria di 7,2 MW, caratterizzati da altezza al mozzo pari a 150 m e diametro rotorico pari a 172 m. In altri termini, si"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/899731",
+    "page": 76,
+    "document": "Studio faunistico",
+    "excerpt": "Ahlén I., Bach L., Baagøe H.J., Pettersson J. 2007. Bats and offshore wind turbines studied in"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "24 MW / 2 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 93,6 MW (62)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/899737",
+    "page": 9,
+    "document": "Studio di inserimento urbanistico",
+    "excerpt": "L’impianto di accumulo sarà costituito da 48 Container Batteria ognuno di capacità pari a 2 MWh, disposti ed assemblati per dare una potenza complessiva pari a 24 MW. Nel particolare, si formeranno due piazzole, ciascuna"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "15 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1), 6 mesi (1), 22 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1410253",
+    "page": 5,
+    "document": "Integrazioni del 15/06/2026 - Piano Particellare di esproprio",
+    "excerpt": "Le indennità per occupazione temporanea sono state calcolate pertanto secondo il criterio indicato è riferite all’intera durata dei lavori pari a 15 mesi come da cronoprogramma."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Lazio",
+  "provincia": "VT",
+  "comuni": [
+   "Canino",
+   "Montalto Di Castro"
+  ],
+  "coordinate": {
+   "lat": 42.39048,
+   "lon": 11.72216,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (187 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1410255",
+    "page": 16,
+    "document": "Integrazioni del 15/06/2026 - Relazione sulle interferenze",
+    "excerpt": "724212,372"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.39048,11.72216",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Canino Sugarella S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "13192330960",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Guido D'Arezzo 15 20145 Milano Mi",
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3474161242",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1276056",
+      "page": 17,
+      "document": "Integrazioni del 26/06/2025 - WON016_ES_12__Perizia_demaniale_usi_civici_signed-signed",
+      "excerpt": "Il sottoscritto, dott. agronomo Serafino Ranauro, tel. 347 4161242 su incarico della Società"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10182"
+   }
+  },
+  {
+   "name": "Iberdrola Renovables Italia S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06977481008",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazzale Dell'Industria 40 00144 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "iberdrolarenovablesitalia@pec.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1233753",
+      "page": 1,
+      "document": "Integrazioni del 14/03/2025 - Relazione tecnica generale",
+      "excerpt": "Sede legale in Piazzale dell’Industria, 40, 00144, Roma Partita I.V.A. 06977481008 – PEC: iberdrolarenovablesitalia@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1233727",
+    "page": 1,
+    "document": "Integrazioni del 14/03/2025 - Intereferenza al volo torri faro",
+    "excerpt": "Committente:"
+   }
+  },
+  {
+   "name": "Antex Group S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@antexgroup.it",
+     "occurrences": 23,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1233727",
+      "page": 1,
+      "document": "Integrazioni del 14/03/2025 - Intereferenza al volo torri faro",
+      "excerpt": "Via Jonica, 16 - Loc. Belvedere - 96100 Siracusa (SR) Tel. 0931.1663409 web: www.antexgroup.it e-mail: info@antexgroup.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1276090",
+    "page": 83,
+    "document": "Integrazioni del 26/06/2025 - WON016_S_3_02_Studio_di_impatto_ambientale-signed",
+    "excerpt": "capofila per la progettazione delle Opere di Rete, ha incaricato la società di ingegneria ANTEX GROUP Srl di redigere il progetto definitivo delle stesse da sottoporre a Terna SpA al fine di ricevere il suo parere di"
+   }
+  },
+  {
+   "name": "Dott. Ing. Antonino Signorello",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1233727",
+    "page": 1,
+    "document": "Integrazioni del 14/03/2025 - Intereferenza al volo torri faro",
+    "excerpt": "Progettista:"
+   }
+  },
+  {
+   "name": "OX2 Italy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1410259",
+    "page": 29,
+    "document": "Integrazioni del 15/06/2026 - Sintesi non tecnica",
+    "excerpt": "È stata definita una proposta progettuale che prevede la realizzazione di una stazione 380/132 kV ed è in corso la progettazione della sezione a 380/36 kV a cura della società OX2 Italy s.r.l., proponente di un altro imp"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Beshielding S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10105760010",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Monviso 9 10090 Villarbasse To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "shielding@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1233761",
+      "page": 14,
+      "document": "Integrazioni del 14/03/2025 - Relazione campi elettrici e magnetici",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "busbar@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1233761",
+      "page": 14,
+      "document": "Integrazioni del 14/03/2025 - Relazione campi elettrici e magnetici",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Hope Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "francesca.saccarola@hopegroup.it",
+     "occurrences": 44,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1276061",
+      "page": 18,
+      "document": "Integrazioni del 26/06/2025 - WON016_ES_6_02_Shadow_flickering-signed",
+      "excerpt": "+393487125089 Fabio Paccapelo / francesca.saccarola@hopegroup.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Agronomo Serafino Ranauro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "s.ranauro@epap.conafpec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1276056",
+      "page": 17,
+      "document": "Integrazioni del 26/06/2025 - WON016_ES_12__Perizia_demaniale_usi_civici_signed-signed",
+      "excerpt": "Dott. Agronomo Serafino Ranauro s.ranauro@epap.conafpec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Antonino Signorelo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "09311663409",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1233740",
+      "page": 1,
+      "document": "Integrazioni del 14/03/2025 - Schema elettrico",
+      "excerpt": "web: www.antexgroup.it e-mail: info@antexgroup.it Via Jonica, 16 - Loc. Belvedere - 96100 Siracusa (SR) Tel.: 0931.1663409"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alla San Nicola Energia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "srlsannicola@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/936119",
+      "page": 1,
+      "document": "Richiesta integrazioni MiC",
+      "excerpt": "Alla San Nicola Energia S.r.l. srlsannicola@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Lamco S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@lamco.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/899685",
+      "page": 1,
+      "document": "Inquadramento impianto eolico su CTR",
+      "excerpt": "Geom. Antonio Melchiorri info@lamco.eu"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "15 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Espropri",
+    "start": 0.0,
+    "end": 4.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Affidamento lavori",
+    "start": 1.98,
+    "end": 3.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Allestimento cantiere",
+    "start": 2.98,
+    "end": 4.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili - strade",
+    "start": 3.98,
+    "end": 7.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili - fondazioni torri",
+    "start": 3.98,
+    "end": 8.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili ed elettriche - cavidotti",
+    "start": 4.98,
+    "end": 11.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto componenti torri e aerogeneratori",
+    "start": 7.98,
+    "end": 11.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio torri e aerogeneratori",
+    "start": 8.98,
+    "end": 13.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cabina di raccolta e sistema di accumulo",
+    "start": 6.98,
+    "end": 12.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi",
+    "start": 11.98,
+    "end": 14.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Dismissione cantiere e ripristini ambientali",
+    "start": 11.98,
+    "end": 15.01,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 15.01,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1410254",
+   "page": 39,
+   "document": "Integrazioni del 15/06/2026 - Relazione descrittiva",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "10 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 mesi (3), 3 mesi (1), 12 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1276055",
+    "page": 74,
+    "document": "Integrazioni del 26/06/2025 - WON016_ES_10_1_02_Studio_di_incidenza-signed",
+    "excerpt": "legati alla presenza del cantiere stesso, si potrebbe valutare di proseguire i lavori anche durante i giorni festivi in modo tale da limitare la durata complessiva del cantiere ai 10 giorni effettivamente utili (nell’ipo"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/899718"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/899718"
+   },
+   {
+    "document": "Piano dismissione e ripristino impianto e relativo cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/899722"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 413,
+  "pagine": 4098,
+  "completa": false,
+  "da_leggere": 113
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Canino Sugarella S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 93.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MANCIANO, CANINO",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "VT",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Lazio",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "97 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
