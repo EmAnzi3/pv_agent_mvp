@@ -1,0 +1,865 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7704",
+ "title": "Progetto per la realizzazione di un impianto eolico, denominato \"BRUNCU e NIADA\", costituito da 14 aerogeneratori, ciascuno di potenza nominale pari a 6,6 MW, e dalle opere necessarie di connessione alla RTN, per una potenza complessiva di 92,4 MW, da realizzarsi nei comuni di Ballao (CA), Armungia (CA) e Villaputzu (CA).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7704",
+ "source": "mase",
+ "updated": "2026-11-09",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "92,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7704",
+    "excerpt": "92,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "14",
+   "status": "da documenti",
+   "sub": "6,60 MW ciascuno · altezza mozzo 135 m · Valore prevalente negli elaborati; altri valori: 7 (15), 29 (9), 26 (8)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/460884",
+    "page": 4,
+    "document": "Relazionesulrichiodiincendioboschivo",
+    "excerpt": "• 14 WTG della potenza unitaria fino a 6,6 MW, per una potenza complessiva di circa 92,4 MW; •"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "15 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 26,576 MW (1), 49 MW (1), 64 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1007508",
+    "page": 2,
+    "document": "Osservazioni della Comunità Montana del \"Sarcidano-Barbagia di Seulo\", in data 14/03/2024",
+    "excerpt": "6. Progetto di impianto agrivoltaico denominato \"SERRI\", dalla potenza di 39,33 MW, integrato con sistema di accumulo da 15 MW da realizzarsi nel Comune di Serri, con relative opere di connessione nei comuni di Isili (SU"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da documenti",
+   "sub": "Inizio lavori 13/04/2022 (natura non determinabile) · Valore prevalente negli elaborati; altri valori: 36 mesi (1), 189 giorni (circa 6 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/662766",
+    "page": 52,
+    "document": "Integrazioni del 12/07/2022 - AU-PD-WIND001_REL001",
+    "excerpt": "il montaggio degli aerogeneratori e la loro messa in esercizio. La durata complessiva di queste attività si stima in circa 12 mesi dall’apertura del cantiere. Durante questa prima fase si procederà agli sbancamenti per r"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "CA",
+  "comuni": [
+   "Ballao",
+   "Armungia",
+   "Villaputzu"
+  ],
+  "coordinate": {
+   "lat": 39.59921,
+   "lon": 9.41535,
+   "tipo": "centro della tavola georeferenziata di progetto (26 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/662734",
+    "page": 1,
+    "document": "Integrazioni del 12/07/2022 - Layout_su_CTR_con_buffer_gittata",
+    "excerpt": "Integrazioni del 12/07/2022 - Layout_su_CTR_con_buffer_gittata"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.59921,9.41535",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Econergy Project 2 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "10982660960",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Senato 28 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "econergyproject2@legalmail.it",
+     "occurrences": 67,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/460884",
+      "page": 1,
+      "document": "Relazionesulrichiodiincendioboschivo",
+      "excerpt": "C. F. e P. IVA: 10982660960 PEC: econergyproject2@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "protocollo@pec.cittametropolitanacagliari.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/531493",
+      "page": 42,
+      "document": "Allegato alle Osservazioni Regione Sardegna - ASSESSORATO DELLA DIFESA DELL'AMBIENTE",
+      "excerpt": "Città Metropolitana di Cagliari protocollo@pec.cittametropolitanacagliari.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "dstiglitz@quenter.co.uk",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/562425",
+      "page": 2,
+      "document": "Richiesta integrazioni MiC",
+      "excerpt": "(econergyproject2@legalmail.it dstiglitz@quenter.co.uk)"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7704"
+   }
+  },
+  {
+   "name": "Ing. Marco Angelo Luigi Murru",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/662709",
+    "page": 1,
+    "document": "Integrazioni del 12/07/2022 - 2332E_10020_00-Valutazione_Previsionale_CEM_Opere_di_Rete-signed",
+    "excerpt": "PROGETTAZIONE"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Gestione Liquidatoria Regionale DI ATS !!ATS Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00935650903",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Enrico Costa 57 07100 Sassari Ss",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@italianostra.org",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/509072",
+      "page": 42,
+      "document": "Osservazioni dell'Associazione Italia Nostra Sardegna onlus in data 01/07/2021",
+      "excerpt": "Italia Nostra Sardegna sardegna@italianostra.org"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ecowind 3 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "11437650960",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Senato 28 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ecowind3srl@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662719",
+      "page": 1,
+      "document": "Integrazioni del 12/07/2022 - INTEGRAZIONE_WIND001_REL002-Piano_di_dismissione",
+      "excerpt": "C. F. e P. IVA: 11437650960 PEC: ecowind3srl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. D’Addese Oreste",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138289",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662731",
+      "page": 3,
+      "document": "Integrazioni del 12/07/2022 - Preventivo_di_connessione_STMG_",
+      "excerpt": "Contatti: Ing. D’Addese Oreste Tel. 0683138289"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Guendalina Demontis",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138096",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662731",
+      "page": 3,
+      "document": "Integrazioni del 12/07/2022 - Preventivo_di_connessione_STMG_",
+      "excerpt": "Contatti: Ing. D’Addese Oreste Tel. 0683138289 Dott. Guendalina Demontis Tel. 06 8313 8096"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Bioenergy 3 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "bioenergy3srls@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662733",
+      "page": 1,
+      "document": "Integrazioni del 12/07/2022 - Voltura_STMG_a_Econergy_Porject_2",
+      "excerpt": "24050 Cividate Al Piano (BG) PEC: bioenergy3srls@pec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 13/04/2022, ma l'iter è proseguito; ultimo documento o atto del 09/04/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "13/04/2022",
+    "dettaglio": "natura non determinabile",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/662732",
+     "page": 1,
+     "document": "Integrazioni del 12/07/2022 - Screenshot_portale_Terna_account_Econergy_Project_2",
+     "excerpt": "a e Notizie Terna ° (=) Uiente Richiedente Comunicare Avvio Lavori 13/04/2022 Utente Richiedente | Comunicare Mancato Avvio Lavori i 1310/2021 È 43/04/2002 65"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di aprile 2023",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 12 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/460932",
+     "page": 65,
+     "document": "Quadrodiriferimentoprogettuale",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "12 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Acquisto materiali",
+    "start": 0.41,
+    "end": 6.42,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Tender contractors",
+    "start": 0.41,
+    "end": 1.06,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Approvvigionamento",
+    "start": 1.06,
+    "end": 2.89,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Approvvigionamento",
+    "start": 1.39,
+    "end": 2.89,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Approvvigionamento",
+    "start": 1.06,
+    "end": 6.42,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili",
+    "start": 1.06,
+    "end": 7.13,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Apertura cantiere",
+    "start": 1.06,
+    "end": 1.22,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sbancamenti e",
+    "start": 1.06,
+    "end": 2.89,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavo plinti",
+    "start": 1.22,
+    "end": 2.89,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione",
+    "start": 1.95,
+    "end": 2.89,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione",
+    "start": 2.89,
+    "end": 4.54,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "calcestruzzo dei",
+    "start": 4.11,
+    "end": 7.08,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "viabilità d'accesso",
+    "start": 5.76,
+    "end": 7.08,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere elettriche",
+    "start": 2.89,
+    "end": 4.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi e posa linee",
+    "start": 2.89,
+    "end": 3.6,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "cavidotto MT verso",
+    "start": 3.64,
+    "end": 4.26,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Stazione MT/AT",
+    "start": 3.6,
+    "end": 4.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio",
+    "start": 7.13,
+    "end": 11.14,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto",
+    "start": 7.13,
+    "end": 9.02,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa aerogeneratori",
+    "start": 9.49,
+    "end": 11.14,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Prove e collaudi",
+    "start": 11.14,
+    "end": 12.08,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudo \"a freddo\"",
+    "start": 11.14,
+    "end": 11.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudo linee MT",
+    "start": 11.14,
+    "end": 11.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Avviamento",
+    "start": 11.61,
+    "end": 12.08,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 12.08,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/460932",
+   "page": 65,
+   "document": "Quadrodiriferimentoprogettuale",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "19",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "20",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "21",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "22",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "23",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "24",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "25",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "26",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "27",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "28",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "29",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "30",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "31",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "32",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "33",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "34",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "35",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "36",
+     "start": 8.077,
+     "end": 8.308
+    },
+    {
+     "label": "37",
+     "start": 8.308,
+     "end": 8.538
+    },
+    {
+     "label": "38",
+     "start": 8.538,
+     "end": 8.769
+    },
+    {
+     "label": "39",
+     "start": 8.769,
+     "end": 9.0
+    },
+    {
+     "label": "40",
+     "start": 9.0,
+     "end": 9.231
+    },
+    {
+     "label": "41",
+     "start": 9.231,
+     "end": 9.462
+    },
+    {
+     "label": "42",
+     "start": 9.462,
+     "end": 9.692
+    },
+    {
+     "label": "43",
+     "start": 9.692,
+     "end": 9.923
+    },
+    {
+     "label": "44",
+     "start": 9.923,
+     "end": 10.154
+    },
+    {
+     "label": "45",
+     "start": 10.154,
+     "end": 10.385
+    },
+    {
+     "label": "46",
+     "start": 10.385,
+     "end": 10.615
+    },
+    {
+     "label": "47",
+     "start": 10.615,
+     "end": 10.846
+    },
+    {
+     "label": "48",
+     "start": 10.846,
+     "end": 11.077
+    },
+    {
+     "label": "49",
+     "start": 11.077,
+     "end": 11.308
+    },
+    {
+     "label": "50",
+     "start": 11.308,
+     "end": 11.538
+    },
+    {
+     "label": "51",
+     "start": 11.538,
+     "end": 11.769
+    },
+    {
+     "label": "52",
+     "start": 11.769,
+     "end": 12.0
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 36 mesi (1), 189 giorni (circa 6 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/662766",
+    "page": 52,
+    "document": "Integrazioni del 12/07/2022 - AU-PD-WIND001_REL001",
+    "excerpt": "il montaggio degli aerogeneratori e la loro messa in esercizio. La durata complessiva di queste attività si stima in circa 12 mesi dall’apertura del cantiere. Durante questa prima fase si procederà agli sbancamenti per r"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "13/04/2022",
+    "iso": "2022-04-13",
+    "nature": "natura non determinabile",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/662732",
+     "page": 1,
+     "document": "Integrazioni del 12/07/2022 - Screenshot_portale_Terna_account_Econergy_Project_2",
+     "excerpt": "a e Notizie Terna ° (=) Uiente Richiedente Comunicare Avvio Lavori 13/04/2022 Utente Richiedente | Comunicare Mancato Avvio Lavori i 1310/2021 È 43/04/2002 65"
+    }
+   }
+  ],
+  "document": {
+   "document": "Integrazioni del 12/07/2022 - AU-WIND001_REL017b-Cronoprogramma_dei_lavori_di_dismissione_e_ripristino",
+   "url": "https://va.mite.gov.it/File/Documento/662718"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 12/07/2022 - AU-WIND001_REL017b-Cronoprogramma_dei_lavori_di_dismissione_e_ripristino",
+    "url": "https://va.mite.gov.it/File/Documento/662718"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 200,
+  "pagine": 4199,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Econergy Project 2 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 92.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BALLAO",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 13/04/2022, ma l'iter è proseguito; ultimo documento o atto del 09/04/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "423 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
