@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico composto da n. 22 aerogeneratori, ciascuno di potenza pari a 4,5 per complessivi 99 MW con le relative opere ed infrastrutture da realizzarsi nei Comuni di Monreale (PA) Piana degli albanesi (PA)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9967",
  "source": "mase",
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "sintesi": [
   {
    "key": "potenza",
@@ -22,14 +22,39 @@
   {
    "key": "wtg",
    "label": "Aerogeneratori",
-   "value": "14",
+   "value": "22",
    "status": "da verificare",
-   "sub": "7,07 MW ciascuno · altezza mozzo 118 m · diametro rotore 163 m · Valore più ricorrente negli elaborati; altri valori: 22 (42), 3 (1), 11 (1)",
+   "sub": "4,50 MW ciascuno · altezza mozzo 118 m · diametro rotore 163 m · Valore più ricorrente negli elaborati; altri valori: 14 (53), 2 (4), 3 (3)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1310965",
-    "page": 3,
-    "document": "Integrazioni del 09/09/2025 - Analisi Costi Benefici - Ricadute Socio Occupazionali - Misure di Mitigazione - rev 01",
-    "excerpt": "denominato “Frisella”. I 14 aerogeneratori in progetto avranno potenza 4.5 MW ciascuno - per una potenza totale istallata di 63 MW, altezza al mozzo 118m e diametro rotore 163m. Essi"
+    "url": "https://va.mite.gov.it/File/Documento/892923",
+    "page": 4,
+    "document": "Analisi Costi Benefici - Ricadute Socio Occupazionali - Misure di Mitigazione",
+    "excerpt": "denominato “Frisella”. I 22 aerogeneratori in progeƩo avranno potenza 4.5 MW ciascuno - per una potenza totale istallata di 99 MW, altezza al mozzo 118m e diametro rotore 163m. Essi"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1310982",
+    "page": 6,
+    "document": "Integrazioni del 09/09/2025 - Relazione di effetto cumulo impianti FER",
+    "excerpt": "AGRIVOLTAICO"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "20 MW",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1103625",
+    "page": 25,
+    "document": "Parere della Regione Siciliana - Servizio 1 \"Autorizzazioni e Valutazioni Ambientali\" Palermo in data 10/07/2024",
+    "excerpt": "decreto di PAUR ai sensi dell'art. 23-27bis del D.Lgs 152/2006, relativa al progetto di un impianto eolico denominato \"Monreale Lupotto\" con potenza pari a 30 MW inclusivo di un sistema di accumulo da 20 MW, e delle rela"
    }
   },
   {
@@ -37,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "22 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1), 16 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 36 mesi (2), 8 mesi (1), 16 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1311010",
     "page": 24,
@@ -55,7 +80,7 @@
   "coordinate": {
    "lat": 37.90426,
    "lon": 13.27831,
-   "tipo": "centro della tavola georeferenziata di progetto (55 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (57 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1311020",
     "page": 1,
@@ -85,12 +110,23 @@
     {
      "type": "PEC",
      "value": "nuovaenergiasiciliasrl@pec.it",
-     "occurrences": 386,
+     "occurrences": 393,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1310966",
       "page": 2,
       "document": "Integrazioni del 09/09/2025 - Analisi ecologica",
       "excerpt": "Sede legale Viale Umberto Giordano 152, 94144 Palermo e-mail: nuovaenergiasiciliasrl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info.nesicilia@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1303204",
+      "page": 1,
+      "document": "Controdeduzioni della società Nuova Energia Sicilia Srl in riscontro al Parere del CTS N. 348 del 14/06/20244 (prot.DRA n.50748 del 10/07/2024)",
+      "excerpt": "90144 Palermo (PA) info.nesicilia@gmail.com"
      }
     }
    ],
@@ -161,7 +197,43 @@
    }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "Ing. Angelo Sapienza",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "angelo.sapienza@siciliaeprogresso.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/910851",
+      "page": 1,
+      "document": "Osservazioni della Società S&P 15 srl in data 29/09/2023",
+      "excerpt": "Il referente della società è l'Ing. Angelo Sapienza (Cell: 335 5228504 mail: angelo.sapienza@siciliaeprogresso.it)"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3355228504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/910851",
+      "page": 1,
+      "document": "Osservazioni della Società S&P 15 srl in data 29/09/2023",
+      "excerpt": "Il referente della società è l'Ing. Angelo Sapienza (Cell: 335 5228504 mail: angelo.sapienza@siciliaeprogresso.it)"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
@@ -430,7 +502,7 @@
   "duration": {
    "text": "22 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1), 1 mese (1), 16 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 36 mesi (2), 8 mesi (1), 1 mese (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1311010",
     "page": 24,
@@ -447,9 +519,9 @@
  },
  "documentazione": {
   "documenti": 326,
-  "pagine": 3072,
+  "pagine": 3271,
   "completa": false,
-  "da_leggere": 26
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -460,7 +532,7 @@
   {
    "campo": "power_mw",
    "valore_attuale": 99.0,
-   "esito": "conflittuale"
+   "esito": "confermato"
   },
   {
    "campo": "municipalities",
@@ -489,7 +561,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "180 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "197 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
