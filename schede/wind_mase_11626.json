@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico denominato \"Energia della Comunanza\", costituito da n. 16 aerogeneratori di potenza nominale pari a 6 MW, per una potenza complessiva di 96 MW (90 MWe in immissione), integrato con un sistema di accumulo della potenza di 25 MW e delle relative opere di connessione alla RTN nei comuni di Serravalle di Chienti, Monte Cavallo e Pieve Torina (MC).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11626",
  "source": "mase",
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "16",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 112 m · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 12 (10), 1 (9), 2 (8)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 112 m · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 12 (30), 10 (18), 1 (11)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1265147",
     "page": 6,
@@ -47,9 +47,9 @@
   {
    "key": "accumulo",
    "label": "Accumulo",
-   "value": "25 MW / 2,752 MWh",
+   "value": "25 MW / 110 MWh",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Valore prevalente negli elaborati; altri valori: 15 MW (10), 60 MW (5), 20 MW (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1265147",
     "page": 6,
@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "18 mesi",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 8 mesi (2)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 8 mesi (2), 22 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1265147",
     "page": 71,
@@ -82,7 +82,7 @@
   "coordinate": {
    "lat": 43.00949,
    "lon": 12.92876,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (46 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (62 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1421548",
     "page": 1,
@@ -122,7 +122,7 @@
     {
      "type": "PEC",
      "value": "fred.olsenrenewablesitaly@legalmail.it",
-     "occurrences": 162,
+     "occurrences": 167,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1265147",
       "page": 1,
@@ -134,38 +134,6 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11626"
-   }
-  },
-  {
-   "name": "Intellienergia S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente",
-    "Progettista"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "info@intellienergia.com",
-     "occurrences": 160,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1265147",
-      "page": 1,
-      "document": "Studio Impatto Ambientale",
-      "excerpt": "tel. 0733/1990394 - fax 0733 /1990394 info@intellienergia.com - www.intellienergia.com"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1265114",
-    "page": 1,
-    "document": "Indagine Botanico-Vegetazionale per Impianto Eolico",
-    "excerpt": "Committente"
    }
   },
   {
@@ -186,9 +154,78 @@
     "document": "Studio Impatto Ambientale",
     "excerpt": "eolico il cui proponente è Energia Eco Sostenibile S.r.l., denominato “Fondi e Collacroce”, che risulta composto da 10 aerogeneratori per una potenza complessiva di 60 MW."
    }
+  },
+  {
+   "name": "Intellienergia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@intellienergia.com",
+     "occurrences": 164,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1265147",
+      "page": 1,
+      "document": "Studio Impatto Ambientale",
+      "excerpt": "tel. 0733/1990394 - fax 0733 /1990394 info@intellienergia.com - www.intellienergia.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1265147",
+    "page": 6,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "IL PROGETTISTA: Intellienergia S.r.l. è una società di consulenza e progettazione, con sede operativa a Macerata oltre che a"
+   }
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Amici Della Terra APS",
+   "kind": "società",
+   "roles": [],
+   "vat": "02141761003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ippolito Nievo 62 Sc C I 00153 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amicidellaterra@pec.it",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1258704",
+      "page": 2,
+      "document": "Osservazioni dell'Associazione Amici della Terra, in data 26/05/2025",
+      "excerpt": "amicidellaterra@pec.it — segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@amicidellaterra.it",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1258704",
+      "page": 2,
+      "document": "Osservazioni dell'Associazione Amici della Terra, in data 26/05/2025",
+      "excerpt": "amicidellaterra@pec.it — segreteria@amicidellaterra.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Geco S.r.l.",
    "kind": "società",
@@ -217,6 +254,44 @@
    }
   },
   {
+   "name": "Wind Energy Monte Cavallo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02372170684",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Caravaggio N 125 65125 Pescara Pe",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "windenergymontecavallo@legpec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1251361",
+      "page": 3,
+      "document": "Osservazioni della Società WIND ENERGY MONTE CAVALLO S.R.L. in data 12/05/2025",
+      "excerpt": "Wind Energy Monte Cavallo Srl - Via Caravaggio 125 - 65125 Pescara - Tel. +39 085 388801 - Fax +39 085 3888200 Reg. Imp. Pescara, C.F. e P. Iva 02372170684 - Cap. Soc. € 10.000 i.v. - PEC windenergymontecavallo@legpec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "085388801",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1251361",
+      "page": 3,
+      "document": "Osservazioni della Società WIND ENERGY MONTE CAVALLO S.R.L. in data 12/05/2025",
+      "excerpt": "Wind Energy Monte Cavallo Srl - Via Caravaggio 125 - 65125 Pescara - Tel. +39 085 388801 - Fax +39 085 3888200"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Dott. Geol. Marco Fiocco",
    "kind": "persona",
    "roles": [],
@@ -229,7 +304,7 @@
     {
      "type": "E-mail",
      "value": "m.fiocco@studiogeologia.com",
-     "occurrences": 150,
+     "occurrences": 151,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1421536",
       "page": 2,
@@ -312,7 +387,7 @@
   "duration": {
    "text": "18 mesi",
    "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 8 mesi (2)",
+   "hint": "Valore prevalente negli elaborati; altri valori: 8 mesi (2), 22 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1265147",
     "page": 71,
@@ -341,9 +416,9 @@
  },
  "documentazione": {
   "documenti": 386,
-  "pagine": 2171,
-  "completa": false,
-  "da_leggere": 86
+  "pagine": 3161,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -375,7 +450,7 @@
  "da_verificare": [
   {
    "label": "Recapiti",
-   "reason": "513 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "670 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
