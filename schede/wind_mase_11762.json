@@ -1,0 +1,267 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11762",
+ "title": "Progetto di un impianto eolico costituito da 13 aerogeneratori di potenza unitaria 7,2 MWp, per una potenza complessiva di 93,60 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Rende, Marano Principato, Falconara Albanese, Cerisano, Fiumefreddo Bruzio e Mendicino (CS).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11762",
+ "source": "mase",
+ "updated": "2026-11-09",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "93,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11762",
+    "excerpt": "93,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "13",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 2 (10), 1 (7), 94 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1268071",
+    "page": 2,
+    "document": "Avviso al pubblico del 26/06/2025",
+    "excerpt": "L’impianto eolico in progetto è costituito da 13 aerogeneratori (anche detti WTG) di potenza nominale unitaria pari a 7,2 MWp, per una potenza nominale complessiva pari a 93,6 MW."
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "45 MW",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 93,6 MW (8)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1268071",
+    "page": 2,
+    "document": "Avviso al pubblico del 26/06/2025",
+    "excerpt": "nominale unitaria pari a 7,2 MWp, per una potenza nominale complessiva pari a 93,6 MW. L’impianto è integrato da un sistema di accumulo di potenza nominale pari a 45 MW e corredato dalle opere di connessione e dalle infr"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Calabria",
+  "provincia": "CS",
+  "comuni": [
+   "Rende",
+   "Marano Principato",
+   "Falconara Albanese",
+   "Cerisano",
+   "Fiumefreddo Bruzio",
+   "Mendicino"
+  ],
+  "coordinate": {
+   "lat": 39.28163,
+   "lon": 16.13184,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (31 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1268024",
+    "page": 1,
+    "document": "Carta Geomorfologica",
+    "excerpt": "Carta Geomorfologica"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.28163,16.13184",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 39.19528,
+   "lon": 16.17164,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1268048",
+    "page": 12,
+    "document": "Qualificazione dell'area rispetto al D. Lgs. 199/21",
+    "excerpt": "601176,6"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=39.19528,16.17164"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Wind Power 01 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "windpower01srl@legalmail.it",
+     "occurrences": 252,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1268005",
+      "page": 3,
+      "document": "Inquadramento generale su strumenti urbanistici comunali",
+      "excerpt": "P.IVA 13414260961 . urbanistici comunali PEC windpower01srl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "r01srl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1268057",
+      "page": 2,
+      "document": "Inquadramento planimetrico rispetto al D.Lgs. 199/21",
+      "excerpt": "YY beh aes Pea Re Via Alberico Albricci, 7 Inquadramento planimetrico rispetto al D. Bs Yj L DA \"a é di 3 PEC win r01srl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11762"
+   }
+  },
+  {
+   "name": "Appaltatore deve fare riferimento ai requisiti Evolve S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista",
+    "Impresa esecutrice (indicata negli elaborati)"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1268003",
+      "page": 34,
+      "document": "Disciplinare descrittivo e prestazionale degli elementi tecnici",
+      "excerpt": "L'Appaltatore fornirà a EVOLVE S.r.l. i certificati dello stabilimento per tutte le spedizioni di rinforzi in acciaio, inclusi i dettagli del laminatoio, il peso della spedizione, il contenuto di acciaio e qualità,"
+     }
+    }
+   ],
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1268003",
+    "page": 35,
+    "document": "Disciplinare descrittivo e prestazionale degli elementi tecnici",
+    "excerpt": "progettazione, l'Appaltatore deve fare riferimento ai requisiti EVOLVE S.r.l.. Le tolleranze per i tirafondi relativi agli aerogeneratori devono sempre soddisfare quelli stabiliti dal"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Appaltatore deve fare riferimento ai requisiti Evolve S.r.l.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1268003",
+     "page": 34,
+     "document": "Disciplinare descrittivo e prestazionale degli elementi tecnici",
+     "excerpt": "L'Appaltatore fornirà a EVOLVE S.r.l. i certificati dello stabilimento per tutte le spedizioni di rinforzi in acciaio, inclusi i dettagli del laminatoio, il peso della spedizione, il contenuto di acciaio e qualità,"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "5 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 28 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1268003",
+    "page": 13,
+    "document": "Disciplinare descrittivo e prestazionale degli elementi tecnici",
+    "excerpt": "stoccaggio corrispondente ad una giornata lavorativa. Il tempo di conservazione in cantiere non deve superare i 5 giorni (Fonte: USACE Lime Stabilization Guideline). La calce immagazzinata in sacchi va conservata al chiu"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 79,
+  "pagine": 2049,
+  "completa": false,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "WIND POWER 01 S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 93.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "RENDE, MARANO PRINCIPATO, FALCONARA ALBANESE, CERISANO, FIUMEFREDDO BRUZIO, MENDICINO",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Calabria",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "5 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Appaltatore deve fare riferimento ai requisiti Evolve S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
