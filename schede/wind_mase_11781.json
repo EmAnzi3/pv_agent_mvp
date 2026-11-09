@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto eolico denominato \"Ruvo\", costituito da 17 aerogeneratori di potenza unitaria pari a 6,2 MW, per una potenza complessiva di 105,4 MW, da realizzarsi nei comuni di Ruvo di Puglia (BA), Bitonto (BA) e Terlizzi (BA), incluse le relative opere di connessione alla RTN (cod. MYTERNA n. 202402821).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11781",
  "source": "mase",
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "17",
    "status": "da documenti",
-   "sub": "6,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 8 (11), 13 (11), 46 (9)",
+   "sub": "6,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 5 (18), 8 (17), 2 (16)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1290149",
     "page": 2,
@@ -49,7 +49,7 @@
    "label": "Accumulo",
    "value": "50 MW",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 21,035 MW (6)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 21,035 MW (8)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1289927",
     "page": 5,
@@ -61,8 +61,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "18 mesi",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 300 giorni (circa 10 mesi) (2), 6 mesi (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 300 giorni (circa 10 mesi) (3), 6 mesi (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1290114",
     "page": 115,
@@ -80,9 +80,9 @@
    "Ruvo Di Puglia"
   ],
   "coordinate": {
-   "lat": 41.05994,
-   "lon": 16.51603,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (141 riferimenti concordi)",
+   "lat": 41.06033,
+   "lon": 16.51594,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (157 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1289901",
     "page": 4,
@@ -90,7 +90,7 @@
     "excerpt": "Pianificazione comunale"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.05994,16.51603",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.06033,16.51594",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -108,7 +108,7 @@
  },
  "soggetti": [
   {
-   "name": "R-Wind S.r.l.",
+   "name": "R-WIND S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente"
@@ -122,12 +122,23 @@
     {
      "type": "PEC",
      "value": "r-wind@pec.it",
-     "occurrences": 1,
+     "occurrences": 6,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1318830",
       "page": 1,
       "document": "Richiesta integrazioni del MIC",
       "excerpt": "Società R-Wind S.r.l. r-wind@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "claudio.coscarella.e80555@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1290051",
+      "page": 2,
+      "document": "Perizia di stima dei beni da espropriare",
+      "excerpt": "CSCCLD71M02D086B, con studio in Cosenza alla via Perugini 12, iscritto all’Ordine degli Ingegneri della Provincia di Cosenza con il n°4179, pec: claudio.coscarella.e80555@ingpec.eu, in qualità di tecnico abilitato e inca"
      }
     }
    ],
@@ -185,6 +196,33 @@
    }
   },
   {
+   "name": "Ingesis S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "07843700720",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Italo Balbo 32 70038 Terlizzi Ba",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@ingesis.it",
+     "occurrences": 21,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1422271",
+      "page": 5,
+      "document": "Parere del Comune di Terlizzi, in data 25/08/2026",
+      "excerpt": "/ 080.91.41.076  INFO@INGESIS.IT"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Gemsa Pro S.r.l.",
    "kind": "società",
    "roles": [],
@@ -218,6 +256,76 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Lungomare Nazario Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "servizio.risorseidriche@pec.rupar.puglia.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1316270",
+      "page": 36,
+      "document": "Parere della Regione Puglia - Dipartimento ambiente, paesaggio e qualità urbana Sezione Autorizzazioni Ambientali in data 20/10/2025",
+      "excerpt": "mail: p.calabrese@regione.puglia.it - a.natuzzi@regione.puglia.it- pec: servizio.risorseidriche@pec.rupar.puglia.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "sezioneautorizzazioniambientali@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1316270",
+      "page": 54,
+      "document": "Parere della Regione Puglia - Dipartimento ambiente, paesaggio e qualità urbana Sezione Autorizzazioni Ambientali in data 20/10/2025",
+      "excerpt": "Sezione Autorizzazioni Ambientali sezioneautorizzazioniambientali@pec.rupar.puglia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0805404889",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1316270",
+      "page": 36,
+      "document": "Parere della Regione Puglia - Dipartimento ambiente, paesaggio e qualità urbana Sezione Autorizzazioni Ambientali in data 20/10/2025",
+      "excerpt": "Lungomare Nazario Sauro nn.47 – 49 – 70121 Bari (BA) - Tel: 080 5404889-080 5406959"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Agricola Colle Optimo Societa' Agricola S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "colleoptimosrl@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1302778",
+      "page": 1,
+      "document": "Osservazioni della Soc. Agr. Colle Optimo srl, in data 10/09/2025",
+      "excerpt": "legale presso S.P. 89 BITONTO MELLITTO KM 11 300 70032 BITONTO (BA) — P.IVA — CUAA 07804560725 indirizzo PEC: COLLEOPTIMOSRL@PEC.IT"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -225,7 +333,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "18 mesi",
+  "durata_cantiere": "18 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -237,15 +345,193 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "[Allestimento del cantiere I",
+    "start": 0.0,
+    "end": 1.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Accesso al Parco - Adeguamento Strade esistenti",
+    "start": 1.02,
+    "end": 4.91,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Accesso al Parco - Realizzazione Strade nuove",
+    "start": 1.98,
+    "end": 8.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole di servizio",
+    "start": 6.04,
+    "end": 8.95,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di fondazioni",
+    "start": 5.01,
+    "end": 11.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio aerogeneratori",
+    "start": 8.02,
+    "end": 15.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione SET - Sottostazione Elettrica Trasformazione",
+    "start": 12.09,
+    "end": 17.02,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione dell'edificio di controllo",
+    "start": 15.0,
+    "end": 17.02,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di linea elettrica sotterranea",
+    "start": 8.01,
+    "end": 16.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Interventi di mitigazione",
+    "start": 14.0,
+    "end": 17.96,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "\\Smobilizzo del cantiere",
+    "start": 15.96,
+    "end": 17.96,
+    "level": 0,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 17.96,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1290086",
+   "page": 2,
+   "document": "Cronoprogramma dei lavori",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "18 mesi",
-   "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 300 giorni (circa 10 mesi) (2), 6 mesi (1)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 300 giorni (circa 10 mesi) (3), 6 mesi (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1290114",
     "page": 115,
@@ -258,21 +544,16 @@
    "document": "Cronoprogramma dei lavori",
    "url": "https://va.mite.gov.it/File/Documento/1290086"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
-  "altri": [
-   {
-    "document": "Cronoprogramma dei lavori",
-    "url": "https://va.mite.gov.it/File/Documento/1290086"
-   }
-  ],
+  "note": null,
+  "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma in immagine (lettura automatica, da verificare)"
  },
  "documentazione": {
   "documenti": 433,
-  "pagine": 5648,
+  "pagine": 7370,
   "completa": false,
-  "da_leggere": 133
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -307,12 +588,8 @@
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Recapiti",
-   "reason": "44 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "218 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
