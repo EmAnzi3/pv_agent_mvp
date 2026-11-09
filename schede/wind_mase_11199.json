@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico denominato \"IMPIANTO EOLICO ACRI\" costituito da 23 aerogeneratori di potenza unitaria 4,5 MW, per una potenza complessiva di 103,5 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Acri, San Demetrio Corone, Terranova Da Sibari, Corigliano - Rossano, Casali Del Manco (CS).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11199",
  "source": "mase",
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "23",
    "status": "da documenti",
-   "sub": "4,50 MW ciascuno · altezza mozzo 125 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 3 (10), 4 (7), 1 (6)",
+   "sub": "4,50 MW ciascuno · altezza mozzo 125 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 3 (10), 19 (8), 4 (7)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1145923",
     "page": 2,
@@ -47,14 +47,14 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "110 giorni (circa 4 mesi)",
+   "value": "409 giorni (circa 13 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 409 giorni (circa 13 mesi) (4), 9 mesi (3), 5 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 110 giorni (circa 4 mesi) (4), 9 mesi (3), 5 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1145895",
-    "page": 2,
-    "document": "Cronoprogrammi lavori",
-    "excerpt": "Realizzazione fondazioni aerogeneratori 110 giorni 12"
+    "url": "https://va.mite.gov.it/File/Documento/1145920",
+    "page": 12,
+    "document": "Screening di incidenza ambientale",
+    "excerpt": "ID ID [Task Name [Durata M-1 M1 M2 M3 M4 MS M6 M7 M8 M9 M10 Mii M12 M13 M14 M15 M16 M17 M18 M19 M20 1 |l IMPIANTO EOLICO ACRI 409 giorni 2 2 Apertura cantiere 4 sett."
    }
   }
  ],
@@ -71,7 +71,7 @@
   "coordinate": {
    "lat": 39.51642,
    "lon": 16.43331,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (433 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (440 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1145908",
     "page": 32,
@@ -101,12 +101,34 @@
     {
      "type": "PEC",
      "value": "hergorenewables@legalmail.it",
-     "occurrences": 6,
+     "occurrences": 9,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1166041",
       "page": 1,
       "document": "Richiesta integrazioni del MIC",
       "excerpt": "Società Hergo Renewables S.p.a. hergorenewables@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "info@pec.sigeaweb.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1167309",
+      "page": 6,
+      "document": "Osservazioni del Collettivo Serra Crista Acri, in data 18/10/2024",
+      "excerpt": "info@pec.sigeaweb.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "web@quotidianodelsud.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1167309",
+      "page": 5,
+      "document": "Osservazioni del Collettivo Serra Crista Acri, in data 18/10/2024",
+      "excerpt": "web@quotidianodelsud.it"
      }
     }
    ],
@@ -317,7 +339,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "4 mesi (cronoprogramma)",
+  "durata_cantiere": "19 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -333,7 +355,7 @@
    {
     "name": "IMPIANTO EOLICO ACRI",
     "start": 0.0,
-    "end": 4.33,
+    "end": 18.76,
     "level": 1,
     "duration": "409 giorni",
     "summary": true
@@ -341,313 +363,313 @@
    {
     "name": "Apertura cantiere",
     "start": 0.0,
-    "end": 0.2,
+    "end": 0.85,
     "level": 2,
     "duration": "4 sett",
     "summary": false
    },
    {
     "name": "PARCO EOLICO",
-    "start": 0.21,
-    "end": 3.16,
+    "start": 0.91,
+    "end": 13.7,
     "level": 2,
     "duration": "279 giorni",
     "summary": true
    },
    {
     "name": "Viabilità di accesso (realizzazione e adeguamenti) e piazzole",
-    "start": 0.21,
-    "end": 0.99,
+    "start": 0.91,
+    "end": 4.3,
     "level": 3,
     "duration": "75 giorni",
     "summary": false
    },
    {
     "name": "Viabilità di accesso da ACR01 a ACR08",
-    "start": 0.21,
-    "end": 0.62,
+    "start": 0.91,
+    "end": 2.69,
     "level": 3,
     "duration": "8 sett",
     "summary": false
    },
    {
     "name": "Piazzole da ACR01 a ACR08",
-    "start": 0.58,
-    "end": 0.99,
+    "start": 2.53,
+    "end": 4.3,
     "level": 3,
     "duration": "8 sett",
     "summary": false
    },
    {
     "name": "Viabilità di accesso da ACR09 a ACR17",
-    "start": 0.21,
-    "end": 0.67,
+    "start": 0.91,
+    "end": 2.92,
     "level": 3,
     "duration": "9 sett",
     "summary": false
    },
    {
     "name": "Piazzole da ACR09 a ACR17",
-    "start": 0.63,
-    "end": 0.99,
+    "start": 2.75,
+    "end": 4.3,
     "level": 3,
     "duration": "7 sett",
     "summary": false
    },
    {
     "name": "Viabilità di accesso da ACR18 a ACR23",
-    "start": 0.21,
-    "end": 0.57,
+    "start": 0.91,
+    "end": 2.46,
     "level": 3,
     "duration": "7 sett",
     "summary": false
    },
    {
     "name": "Piazzole da ACR18 a ACR23",
-    "start": 0.53,
-    "end": 0.99,
+    "start": 2.3,
+    "end": 4.3,
     "level": 3,
     "duration": "9 sett",
     "summary": false
    },
    {
     "name": "Realizzazione fondazioni aerogeneratori",
-    "start": 1.01,
-    "end": 2.16,
+    "start": 4.36,
+    "end": 9.36,
     "level": 3,
     "duration": "110 giorni",
     "summary": false
    },
    {
     "name": "Fondazione da ACR01 a ACR08",
-    "start": 1.01,
-    "end": 2.0,
+    "start": 4.36,
+    "end": 8.67,
     "level": 3,
     "duration": "19 sett",
     "summary": false
    },
    {
     "name": "Fondazione da ACR09 a ACR17",
-    "start": 1.01,
-    "end": 2.16,
+    "start": 4.36,
+    "end": 9.36,
     "level": 3,
     "duration": "22 sett",
     "summary": false
    },
    {
     "name": "Fondazione da ACR18 a ACR23",
-    "start": 1.01,
-    "end": 1.79,
+    "start": 4.36,
+    "end": 7.75,
     "level": 3,
     "duration": "15 sett",
     "summary": false
    },
    {
     "name": "Montaggio aerogeneratori",
-    "start": 2.05,
-    "end": 3.16,
+    "start": 8.87,
+    "end": 13.7,
     "level": 3,
     "duration": "105 giorni",
     "summary": false
    },
    {
     "name": "Installazione aerogeneratori da ACR01 a ACR08",
-    "start": 2.26,
-    "end": 2.9,
+    "start": 9.79,
+    "end": 12.55,
     "level": 3,
     "duration": "12 sett",
     "summary": false
    },
    {
     "name": "Installazione aerogeneratori da ACR09 a ACR17",
-    "start": 2.42,
-    "end": 3.16,
+    "start": 10.48,
+    "end": 13.7,
     "level": 3,
     "duration": "14 sett",
     "summary": false
    },
    {
     "name": "Installazione aerogeneratori da ACR18 a ACR23",
-    "start": 2.05,
-    "end": 2.52,
+    "start": 8.87,
+    "end": 10.94,
     "level": 3,
     "duration": "9 sett",
     "summary": false
    },
    {
     "name": "Realizzazione Cavidotti 36 kV",
-    "start": 0.21,
-    "end": 2.08,
+    "start": 0.91,
+    "end": 9.03,
     "level": 3,
     "duration": "177 giorni",
     "summary": false
    },
    {
     "name": "Linee Cluster 1 e Cluster 2",
-    "start": 0.28,
-    "end": 2.08,
+    "start": 1.21,
+    "end": 9.03,
     "level": 3,
     "duration": "34 sett",
     "summary": false
    },
    {
     "name": "Linee Cluster 3",
-    "start": 0.28,
-    "end": 1.02,
+    "start": 1.21,
+    "end": 4.43,
     "level": 3,
     "duration": "14 sett",
     "summary": false
    },
    {
     "name": "Linea Cluster 4 e Cluster 7",
-    "start": 0.28,
-    "end": 1.55,
+    "start": 1.21,
+    "end": 6.73,
     "level": 3,
     "duration": "24 sett",
     "summary": false
    },
    {
     "name": "Linea Cluster 5 e Cluster 6",
-    "start": 0.28,
-    "end": 2.03,
+    "start": 1.21,
+    "end": 8.8,
     "level": 3,
     "duration": "33 sett",
     "summary": false
    },
    {
     "name": "Linea da Cabina di Raccolta 36 kV a Stallo SE di connessione",
-    "start": 0.21,
-    "end": 1.2,
+    "start": 0.91,
+    "end": 5.22,
     "level": 3,
     "duration": "19 sett",
     "summary": false
    },
    {
     "name": "Realizzazione CABINA DI RACCOLTA 36 kV",
-    "start": 0.21,
-    "end": 0.73,
+    "start": 0.91,
+    "end": 3.15,
     "level": 3,
     "duration": "50 giorni",
     "summary": false
    },
    {
     "name": "Opere civili, elettriche e meccaniche",
-    "start": 0.21,
-    "end": 0.73,
+    "start": 0.91,
+    "end": 3.15,
     "level": 3,
     "duration": "10 sett",
     "summary": false
    },
    {
     "name": "Realizzazione 1 Area di Trasbordo e 5 Aree di Stoccaggio",
-    "start": 0.21,
-    "end": 0.99,
+    "start": 0.91,
+    "end": 4.3,
     "level": 3,
     "duration": "75 giorni",
     "summary": false
    },
    {
     "name": "Opere civili",
-    "start": 0.21,
-    "end": 0.99,
+    "start": 0.91,
+    "end": 4.3,
     "level": 3,
     "duration": "15 sett",
     "summary": false
    },
    {
     "name": "COMMISSIONING E AVVIAMENTO",
-    "start": 3.16,
-    "end": 4.33,
+    "start": 13.7,
+    "end": 18.76,
     "level": 2,
     "duration": "110 giorni",
     "summary": true
    },
    {
     "name": "Commissioning",
-    "start": 3.16,
-    "end": 3.9,
+    "start": 13.7,
+    "end": 16.92,
     "level": 3,
     "duration": "70 giorni",
     "summary": false
    },
    {
     "name": "Commissioning da ACR01 a ACR08",
-    "start": 3.16,
-    "end": 3.85,
+    "start": 13.7,
+    "end": 16.69,
     "level": 3,
     "duration": "13 sett",
     "summary": false
    },
    {
     "name": "Commissioning da ACR09 a ACR17",
-    "start": 3.16,
-    "end": 3.9,
+    "start": 13.7,
+    "end": 16.92,
     "level": 3,
     "duration": "14 sett",
     "summary": false
    },
    {
     "name": "Commissioning da ACR18 a ACR23",
-    "start": 3.16,
-    "end": 3.69,
+    "start": 13.7,
+    "end": 16.0,
     "level": 3,
     "duration": "10 sett",
     "summary": false
    },
    {
     "name": "Commissioning CABINA DI RACCOLTA",
-    "start": 3.16,
-    "end": 3.27,
+    "start": 13.7,
+    "end": 14.16,
     "level": 3,
     "duration": "2 sett",
     "summary": false
    },
    {
     "name": "Dismissione cantiere",
-    "start": 3.9,
-    "end": 4.33,
+    "start": 16.92,
+    "end": 18.76,
     "level": 3,
     "duration": "8 sett",
     "summary": false
    },
    {
     "name": "Task Project Summary",
-    "start": 0.09,
-    "end": 2.54,
+    "start": 0.4,
+    "end": 11.01,
     "level": 3,
     "summary": false
    },
    {
     "name": "Split External Tasks Project: Cronoprogramma_AP",
-    "start": 0.08,
-    "end": 3.57,
+    "start": 0.33,
+    "end": 15.49,
     "level": 0,
     "summary": false
    },
    {
     "name": "Date: mar External",
-    "start": 1.13,
-    "end": 1.49,
+    "start": 4.88,
+    "end": 6.45,
     "level": 0,
     "summary": true
    },
    {
     "name": "External",
-    "start": 3.18,
-    "end": 3.57,
+    "start": 13.77,
+    "end": 15.49,
     "level": 3,
     "summary": false
    },
    {
     "name": "Summary Inactive Task",
-    "start": 0.08,
-    "end": 3.57,
+    "start": 0.33,
+    "end": 15.49,
     "level": 3,
     "summary": false
    }
   ],
   "unit": "month",
-  "months": 4.33,
+  "months": 18.76,
   "source": {
    "url": "https://va.mite.gov.it/File/Documento/1145895",
    "page": 2,
@@ -761,14 +783,14 @@
    "unita": "mesi"
   },
   "duration": {
-   "text": "110 giorni (circa 4 mesi)",
+   "text": "409 giorni (circa 13 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 409 giorni (circa 13 mesi) (4), 20 giorni (3), 50 giorni (3)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 110 giorni (circa 4 mesi) (4), 20 giorni (3), 50 giorni (3)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1145895",
-    "page": 2,
-    "document": "Cronoprogrammi lavori",
-    "excerpt": "Realizzazione fondazioni aerogeneratori 110 giorni 12"
+    "url": "https://va.mite.gov.it/File/Documento/1145920",
+    "page": 12,
+    "document": "Screening di incidenza ambientale",
+    "excerpt": "ID ID [Task Name [Durata M-1 M1 M2 M3 M4 MS M6 M7 M8 M9 M10 Mii M12 M13 M14 M15 M16 M17 M18 M19 M20 1 |l IMPIANTO EOLICO ACRI 409 giorni 2 2 Apertura cantiere 4 sett."
    }
   },
   "milestones": [],
@@ -780,9 +802,9 @@
  },
  "documentazione": {
   "documenti": 355,
-  "pagine": 5589,
+  "pagine": 6275,
   "completa": false,
-  "da_leggere": 55
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -818,7 +840,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "503 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "686 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
