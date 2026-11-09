@@ -1,0 +1,739 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9615",
+ "title": "Progetto per la realizzazione di un impianto di produzione di energia elettrica da fonte eolica denominato Monte Rosso costituito da n. 14 aerogeneratori con potenza complessiva pari a 92,4 MW e dalle opere di connessione alla RTN da realizzarsi nei Comuni di Putifigari e Ittiri (SS).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9615",
+ "source": "mase",
+ "updated": "2026-11-09",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "92,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9615",
+    "excerpt": "92,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "14",
+   "status": "da documenti",
+   "sub": "6,60 MW ciascuno · altezza mozzo 165 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 11 (15), 9 (13), 4 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/804952",
+    "page": 1,
+    "document": "Avviso al Pubblico del 24/03/2023",
+    "excerpt": "comunali di Ittiri e Putifigari (SS). Il progetto prevede l’installazione di 14 aerogeneratori della potenza unitaria di 6.6 MW, diametro del rotore pari a 170 m, altezza hub di 165 m ed altezza complessiva fuori terra d"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/804934",
+    "page": 30,
+    "document": "F0529DR01A - Studio di Impatto Ambientale-signed",
+    "excerpt": "▪ Sviluppo di impianti innovativi (incluse soluzioni off-shore), combinando tecnologie ad"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 382 giorni (circa 13 mesi) (2), 229 giorni (circa 8 mesi) (2), 48 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/804901",
+    "page": 28,
+    "document": "F0529AR24A - Preventivo di connessione Terna-signed",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Putifigari",
+   "Ittiri"
+  ],
+  "coordinate": {
+   "lat": 40.57014,
+   "lon": 8.5092,
+   "tipo": "centro della tavola georeferenziata di progetto (114 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/804915",
+    "page": 7,
+    "document": "F0529AT14A - Planimetria catastale e particellare grafico delle aree oggetto di intervento-signed",
+    "excerpt": "F0529AT14A - Planimetria catastale e particellare grafico delle aree oggetto di intervento-signed"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.57014,8.50920",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.57565,
+   "lon": 8.61957,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1302853",
+    "page": 125,
+    "document": "Integrazioni del 04/09/2025 - SIA - Piano di monitoraggio ambientale",
+    "excerpt": "467801"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.57565,8.61957"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Monte Rosso S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wpdmonterosso@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837232",
+      "page": 18,
+      "document": "Osservazioni della Regione Autonoma della Sardegna - Direzione Generale dell'Ambiente data 24/04/2023",
+      "excerpt": "Alla Società WPD Monte Rosso S.r.l. wpdmonterosso@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9615"
+   }
+  },
+  {
+   "name": "F4 ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "f4ingegneria@pec.it",
+     "occurrences": 3209,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/804934",
+      "page": 1,
+      "document": "F0529DR01A - Studio di Impatto Ambientale-signed",
+      "excerpt": "Tel: +39 0971 1944797 - Fax: +39 0971 55452 www.f4ingegneria.it - f4ingegneria@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "fingegnerta@pec.kt",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1302848",
+      "page": 10,
+      "document": "Integrazioni del 04/09/2025 - Planimetria del tracciato dell'elettrodotto con indicazione delle DPI delle interferenze e dei punti di campionamento ai sensi del dpr 120-17",
+      "excerpt": "a Tel: +39 0971 1944797 - Fax: +39 0971 55452 ia gi wave Hingseneria tte Fingegnerta@pec.kt <GEGNER, Ing. Alessandro Carmine DE PAOLA"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ftingegneria@pac.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1302847",
+      "page": 19,
+      "document": "Integrazioni del 04/09/2025 - Planimetria catastale e particellare grafico delle aree oggetto di intervento",
+      "excerpt": "\\ / / “4 SECC I fai ja.it - £4i - Ing. Giuseppe MANZI \\ he / BR Y www.fdingegneria.it- ftingegneria@pac.it ALONE) Ing. Alessandro Carmine DE PAOLA"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@f4ingegneria.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/804893",
+      "page": 4,
+      "document": "F0529AR16A - Prime indicazioni sulla sicurezza-signed",
+      "excerpt": "Indirizzo e-mail: info@f4ingegneria.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "09711944797",
+     "occurrences": 282,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/804934",
+      "page": 1,
+      "document": "F0529DR01A - Studio di Impatto Ambientale-signed",
+      "excerpt": "Via Di Giura - Centro direzionale, 85100 Potenza Tel: +39 0971 1944797 - Fax: +39 0971 55452"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/804934",
+    "page": 1,
+    "document": "F0529DR01A - Studio di Impatto Ambientale-signed",
+    "excerpt": "Progettazione"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Pa'ropos Societa' Cooperativa",
+   "kind": "società",
+   "roles": [],
+   "vat": "05929940822",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Conte Federico N 46 90124 Palermo Pa",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "muratore@paropos.com",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/804930",
+      "page": 20,
+      "document": "F0529CR01A - Verifica Preventiva dell'Impatto Archeologico-signed",
+      "excerpt": "Saat È Riferimenti Amministrazione Società Coop erativa 7 , Dott. Muratore: 3389783397 - muratore@paropos.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "locurto@paropos.com",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/804930",
+      "page": 20,
+      "document": "F0529CR01A - Verifica Preventiva dell'Impatto Archeologico-signed",
+      "excerpt": "Società Coop erativa 7 , Dott. Muratore: 3389783397 - muratore@paropos.com Ricerca, documentazione, didattica, Dott.ssa Lo Curto 3462209236 - locurto@paropos.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "puglisi@paropos.com",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/804930",
+      "page": 20,
+      "document": "F0529CR01A - Verifica Preventiva dell'Impatto Archeologico-signed",
+      "excerpt": "Ricerca, documentazione, didattica, Dott.ssa Lo Curto 3462209236 - locurto@paropos.com valorizzazione dei beni culturali, Dott.ssa Puglisi: 3288858555 - puglisi@paropos.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@lipu.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/835790",
+      "page": 1,
+      "document": "Osservazioni del Coordinamento Regionale Lipu Sardegna in data 24/04/2023",
+      "excerpt": "Coordinamento Regionale Lipu Sardegna sardegna@lipu.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Archeoservizi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "archeoservizi@pec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981810",
+      "page": 1,
+      "document": "Integrazioni del 08/02/2024 - F0529FT01A_Inquadramento_territoriale_Eolico_Putifigari-Ittiri-SS-signed",
+      "excerpt": "archeoservizi@pec.it SE R VI ZI"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@archeoservizi.org",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981809",
+      "page": 1,
+      "document": "Integrazioni del 08/02/2024 - F0529FR01A_VPIA_Documento_di_sintesi_Impianto_eolico_Ittiri-Putifigari-SS-signed",
+      "excerpt": "Via A. Moro b/3 «—N info@archeoservizi.org Bio"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "WPD Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wpditaliasrl@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/804901",
+      "page": 2,
+      "document": "F0529AR24A - Preventivo di connessione Terna-signed",
+      "excerpt": "00198 ROMA (RM) wpditaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 01/07/2023, ma l'iter è proseguito; ultimo documento o atto del 07/09/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "01/07/2023 → 11/01/2026",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1302837",
+     "page": 2,
+     "document": "Integrazioni del 04/09/2025 - Cronoprogramma",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "30 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Permitting",
+    "start": 0.0,
+    "end": 12.04,
+    "level": 0,
+    "dates": [
+     "2023-07-01",
+     "2024-06-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Contratto EPC",
+    "start": 12.01,
+    "end": 14.01,
+    "level": 0,
+    "dates": [
+     "2024-06-30",
+     "2024-08-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Cantierizzazione",
+    "start": 13.98,
+    "end": 17.96,
+    "level": 0,
+    "dates": [
+     "2024-08-29",
+     "2024-12-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Viabilità",
+    "start": 17.93,
+    "end": 22.89,
+    "level": 0,
+    "dates": [
+     "2024-12-27",
+     "2025-05-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Fondazioni",
+    "start": 21.88,
+    "end": 25.86,
+    "level": 0,
+    "dates": [
+     "2025-04-26",
+     "2025-08-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Sottostazione Elettrica Opere Civili",
+    "start": 17.93,
+    "end": 20.59,
+    "level": 0,
+    "dates": [
+     "2024-12-27",
+     "2025-03-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Sottostazione Elettrica Opere Elettromeccaniche",
+    "start": 18.91,
+    "end": 21.58,
+    "level": 0,
+    "dates": [
+     "2025-01-26",
+     "2025-04-16"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Cavidotti",
+    "start": 20.89,
+    "end": 24.87,
+    "level": 0,
+    "dates": [
+     "2025-03-27",
+     "2025-07-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio Aerogeneratori",
+    "start": 24.84,
+    "end": 28.16,
+    "level": 0,
+    "dates": [
+     "2025-07-25",
+     "2025-11-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Energizzazione",
+    "start": 28.12,
+    "end": 29.47,
+    "level": 0,
+    "dates": [
+     "2025-11-02",
+     "2025-12-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Avvio produzione",
+    "start": 29.44,
+    "end": 30.46,
+    "level": 0,
+    "dates": [
+     "2025-12-12",
+     "2026-01-11"
+    ],
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 30.46,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1302837",
+   "page": 2,
+   "document": "Integrazioni del 04/09/2025 - Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "lug 23",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "ago 23",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "set 23",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "ott 23",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "nov 23",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "dic 23",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "gen 24",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "feb 24",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "mar 24",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "apr 24",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "mag 24",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "giu 24",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "lug 24",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "ago 24",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "set 24",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "ott 24",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "nov 24",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "dic 24",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "gen 25",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "feb 25",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "mar 25",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "apr 25",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "mag 25",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "giu 25",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "lug 25",
+     "start": 24.0,
+     "end": 25.0
+    },
+    {
+     "label": "ago 25",
+     "start": 25.0,
+     "end": 26.0
+    },
+    {
+     "label": "set 25",
+     "start": 26.0,
+     "end": 27.0
+    },
+    {
+     "label": "ott 25",
+     "start": 27.0,
+     "end": 28.0
+    },
+    {
+     "label": "nov 25",
+     "start": 28.0,
+     "end": 29.0
+    },
+    {
+     "label": "dic 25",
+     "start": 29.0,
+     "end": 30.0
+    },
+    {
+     "label": "gen 26",
+     "start": 30.0,
+     "end": 31.0
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 382 giorni (circa 13 mesi) (2), 229 giorni (circa 8 mesi) (2), 48 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/804901",
+    "page": 28,
+    "document": "F0529AR24A - Preventivo di connessione Terna-signed",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 04/09/2025 - Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1302837"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "F0529AR11A - Cronoprogramma-signed",
+    "url": "https://va.mite.gov.it/File/Documento/804889"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 152,
+  "pagine": 4487,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "wpd Monte Rosso s.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 92.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "PUTIFIGARI, ITTIRI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 01/07/2023, ma l'iter è proseguito; ultimo documento o atto del 07/09/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "126 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
