@@ -1,0 +1,597 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11450",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"Foggia - Lucera - Troia\", costituito da 12 aerogeneratori di potenza unitaria pari a 6,7 MW, per una potenza complessiva di 80 MW, da realizzarsi nei comuni di Foggia (FG), Lucera (FG) e Troia (FG), incluse le opportune opere di connessione alla RTN (cod. MYTERNA n. 202305262).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11450",
+ "source": "mase",
+ "updated": "2026-11-10",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "80 MW",
+   "sub": "Suddivisa in 2 lotti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11450",
+    "excerpt": "80 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "12",
+   "status": "da documenti",
+   "sub": "6,67 MW ciascuno · altezza mozzo 112,5 m · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 10 (11), 1 (3), 19 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1209328",
+    "page": 1,
+    "document": "Avviso al pubblico del 03/02/2025",
+    "excerpt": "“PARCO EOLICO FOGGIA, LUCERA, TROIA” Realizzazione di un impianto eolico composto da 12 aerogeneratori per una potenza totale di 80 MW da installare nei Comuni di Foggia (FG), Lucera (FG) e Troia (FG) con opere di"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1209293",
+    "page": 85,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "Agrivoltaico"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 01/09/2025 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 4 mesi (1), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1209200",
+    "page": 41,
+    "document": "Relazione Tecnica",
+    "excerpt": "cabine e cavidotti I tempi di realizzazione del Parco Eolico in progetto saranno compresi entro 24 mesi, a decorrere dalla data ultima di ottenimento di tutti i permessi e le autorizzazioni necessarie"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Lucera",
+   "Foggia",
+   "Troia"
+  ],
+  "coordinate": {
+   "lat": 41.40756,
+   "lon": 15.46315,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (38 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1209249",
+    "page": 45,
+    "document": "Valutazione degli impatti cumulativi",
+    "excerpt": "538914"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.40756,15.46315",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Green Energy Development S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "greenenergydevelopment@pec.it",
+     "occurrences": 333,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209249",
+      "page": 1,
+      "document": "Valutazione degli impatti cumulativi",
+      "excerpt": "p.Iva 13162400967 PEC: greenenergydevelopment@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "sezioneautorizzazioniambientali@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1365337",
+      "page": 1,
+      "document": "Parere dell'Autorità di Bacino Distrettuale dell'Appennino Meridionale in data 13/02/2026",
+      "excerpt": "Sezione Autorizzazioni Ambientali sezioneautorizzazioniambientali@pec.rupar.puglia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11450"
+   }
+  },
+  {
+   "name": "Wind Farm Lucera S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1209203",
+    "page": 38,
+    "document": "Studio Geologico Finamore",
+    "excerpt": "Committente Wind Farm Lucera S.r.l. SONDAGGIO |FOGLIO"
+   }
+  },
+  {
+   "name": "Best Energy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1209203",
+    "page": 140,
+    "document": "Studio Geologico Finamore",
+    "excerpt": "Committente Best Energy S.r.l."
+   }
+  },
+  {
+   "name": "Dott. Geol. Stefano Finamore",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "studiogeologicofinamore@pec.epap.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 2,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "e-mail: stefanofinamore@tiscali.it Pec: studiogeologicofinamore@pec.epap.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "stefanofinamore@tiscali.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 2,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "Cell. 3287178199 e-mail: stefanofinamore@tiscali.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1209203",
+    "page": 2,
+    "document": "Studio Geologico Finamore",
+    "excerpt": "Il Geologo Dott. Geol. Stefano FINAMORE"
+   }
+  },
+  {
+   "name": "Dott. Ing. Francesco Gramazio",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1209293",
+    "page": 93,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "I Progettisti"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Soil Project S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@soilprojectsas.it",
+     "occurrences": 74,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 141,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "email: info@soilprojectsas.it; P.I. 01515280624"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "08241816668",
+     "occurrences": 74,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 141,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "Viale Europa snc, loc. Cubante, 82018 Calvi (BN) Tel: 0824 1816668; info: www.soilprojectsas.it;"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3406867752",
+     "occurrences": 66,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 143,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "Viale Europa snc - Loc. Cubante, 82018 CALVI (BN) Tel: 0824 1816668; cell: 340 6867752 - 333 1153056; info: www.soilprojectsas.it;"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0824160001",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 168,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "Viale Europa snc - Loc. Cubante, 82018 CALVI (BN) Tel 0824 160001; cell: 346 8554913 - 340 6867752; info: www.soilprojectsas.it;"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3468554913",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 168,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "Viale Europa snc - Loc. Cubante, 82018 CALVI (BN) Tel 0824 160001; cell: 346 8554913 - 340 6867752; info: www.soilprojectsas.it;"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "340686156",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 156,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "Viale Europa snc - Loc. Cubante, 82018 CALVI (BN) Rev. 1 Tel: 0824 1816668; cell: 340 686 156; info: www.soilprojectsas.it; del 07/01/2013"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "L.P. Holding S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "lpholdingsrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209200",
+      "page": 52,
+      "document": "Relazione Tecnica",
+      "excerpt": "20100 Milano (MI) lpholdingsrl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "francesco.gramazio@lpholdingsrl.com",
+     "occurrences": 93,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1266299",
+      "page": 1,
+      "document": "Integrazioni del 03/06/2025 - Sintesi non tecnica",
+      "excerpt": "71036 Lucera (FG) mail: francesco.gramazio@lpholdingsrl.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "luca.orsogno@lpholdingsrl.com",
+     "occurrences": 93,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1266299",
+      "page": 1,
+      "document": "Integrazioni del 03/06/2025 - Sintesi non tecnica",
+      "excerpt": "71121 Foggia (FG) mail: luca.orsogno@lpholdingsrl.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "lpholdingsrl@gmail.com",
+     "occurrences": 46,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1266298",
+      "page": 4,
+      "document": "Integrazioni del 03/06/2025 - Valutazione degli impatti cumulativi",
+      "excerpt": "3482234870 LP HOLDING / lpholdingsrl@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Laboratorio DI Geotecnica D.I.M.M.S. Control S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@dimms.it",
+     "occurrences": 63,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 46,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "Area Industriale A.S.I. Avellino Via Campo di Fiume, 13 83030 Arcella di Montefredane (AV) Tel. 0825.24353 Fax 0825.248705 - e-mail: info@dimms.it - P.IVA 01872430648"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@dimme.ji",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209208",
+      "page": 129,
+      "document": "Relazione geotecnica",
+      "excerpt": "Arsa Iindustiali ASI Awellino Via Campo di Fluma, 13 89030 Arcalla di Montaftedana {AV} Tal. 060524353 Fax 0825249705 » email info@dimme.Ji » PIVA 01 672430648"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082524353",
+     "occurrences": 60,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 46,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "Area Industriale A.S.I. Avellino Via Campo di Fiume, 13 83030 Arcella di Montefredane (AV) Tel. 0825.24353 Fax 0825.248705 - e-mail: info@dimms.it - P.IVA 01872430648"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Orazio Buonamico",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "orazio.82@gmail.com",
+     "occurrences": 42,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209266",
+      "page": 3,
+      "document": "Valutazione impatto acustico",
+      "excerpt": "Studio Tecnico Ing. Orazio Buonamico – San Severo, C.so G. Fortunato 15 – cell: 3294750719 – e-mail: orazio.82@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3294750719",
+     "occurrences": 42,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209266",
+      "page": 3,
+      "document": "Valutazione impatto acustico",
+      "excerpt": "Studio Tecnico Ing. Orazio Buonamico – San Severo, C.so G. Fortunato 15 – cell: 3294750719 – e-mail: orazio.82@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "GeoService S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0881500025",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209203",
+      "page": 119,
+      "document": "Studio Geologico Finamore",
+      "excerpt": "71036 Lucera (FG) tel. 0881500025- fax. 0881500026"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Luca C. Orsogno",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "q-energyrenewables2srl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209221",
+      "page": 108,
+      "document": "Piano di Sicurezza e Coordinamento",
+      "excerpt": "20124 Milano PEC: q-energyrenewables2srl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "previsto",
+  "label": "Avvio lavori previsto il 04/05/2027",
+  "reason": "Data di progetto: non prova l'effettivo avvio."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "24 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "24 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 4 mesi (1), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1209200",
+    "page": 41,
+    "document": "Relazione Tecnica",
+    "excerpt": "cabine e cavidotti I tempi di realizzazione del Parco Eolico in progetto saranno compresi entro 24 mesi, a decorrere dalla data ultima di ottenimento di tutti i permessi e le autorizzazioni necessarie"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "01/09/2025",
+    "iso": "2025-09-01",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1209221",
+     "page": 2,
+     "document": "Piano di Sicurezza e Coordinamento",
+     "excerpt": "Entità presunta del lavoro: 200 uomini/giorno Data inizio lavori (presunta): 01/09/2025 Data fine lavori (presunta): 04/05/2027"
+    }
+   }
+  ],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 164,
+  "pagine": 2630,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Wind Energy Maestrale S.r.l. (ex Green Energy Development S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 80.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "FOGGIA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "87 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
