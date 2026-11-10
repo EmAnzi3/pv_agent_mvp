@@ -1,0 +1,772 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7695",
+ "title": "Progetto per la realizzazione di un impianto eolico, ai sensi dell'art.23 del D.Lgs. 152/2006, costituito da 14 aerogeneratori, ciascuno di potenza nominale pari a 6 MW, e dalle opere necessarie di connessione alla RTN, per una potenza complessiva di 84 MW, da realizzarsi nei Comuni di Salice Salentino (LE), Veglie (LE), Guagnano (LE), San Pancrazio Salentino (BR), Avetrana (TA) ed Erchie (BR).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7695",
+ "source": "mase",
+ "updated": "2026-11-10",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "84 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7695",
+    "excerpt": "84 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "14",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 7 (10), 10 (9), 84 (8)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/470494",
+    "page": 1,
+    "document": "Avviso al Pubblico del 24/02/2021",
+    "excerpt": "Salentino (LE) e Veglie (LE) con opere ed infrastrutture ad esso connesse nei Comuni di Guagnano (LE), Avetrana (TA), San Pancrazio Salentino (BR) ed Erchie (BR). I 14 aerogeneratori ricadono nei territori comunali di Sa"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/527784",
+    "page": 3,
+    "document": "Osservazioni della Società HEPV06 SRL in data 10/08/2021",
+    "excerpt": "realizzazione di un impianto agrovoltaico denominato “SPOT40”, della potenza nominale pari a"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "6 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 57,2 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/864666",
+    "page": 12,
+    "document": "Osservazioni delle Masserie Salentine S.r.l. Società Agricola del 05/07/2023",
+    "excerpt": "in località \"il Canalone\" con opere di connessione realizzate anche nel comune di Erchie (BR), composta da 6 aereogeneratori di potenza pari a 6 MW per una potenza complessiva pari a 57,20 MW comprensivo di un sistema di"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 282 giorni (circa 9 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/569511",
+    "page": 10,
+    "document": "Integrazioni del 17/12/2021 - PIANO DI MONITORAGGIO AMBIENTALE",
+    "excerpt": "l’equilibrio del sito (viabilità, zona agricola, ecc.). Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "LE",
+  "comuni": [
+   "Salice Salentino",
+   "Veglie",
+   "Guagnano",
+   "San Pancrazio Salentino",
+   "Avetrana  Ed Erchie"
+  ],
+  "coordinate": {
+   "lat": 40.38932,
+   "lon": 17.8497,
+   "tipo": "coordinate del sito dichiarate negli elaborati (82 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/460100",
+    "page": 113,
+    "document": "VALUTAZIONE DI IMPATTO ACUSTICO",
+    "excerpt": "739525.00"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.38932,17.84970",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.39708,
+   "lon": 17.76749,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/460100",
+    "page": 76,
+    "document": "VALUTAZIONE DI IMPATTO ACUSTICO",
+    "excerpt": "734873.00"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.39708,17.76749"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Enel Green Power S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@bfpgroup.net",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/460092",
+      "page": 1,
+      "document": "GRE_EEC_R_26_IT_W_15000_00_011_00_SIA.pdf",
+      "excerpt": "Via Napoli, 363/I – 70132 Bari – Italy www.bfpgroup.net – info@bfpgroup.net"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7695"
+   }
+  },
+  {
+   "name": "Dott. Lucia Santopietro",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/460086",
+    "page": 28,
+    "document": "RELAZIONE GEOLOGICA",
+    "excerpt": "IL GEOLOGO Dott. Lucia Santopietro"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Masserie Salentine S.r.l. Societa' Agricola",
+   "kind": "società",
+   "roles": [],
+   "vat": "08269440015",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Walter Rossi Lotto 152 73048 Nardo' Le",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "masseriesalentine@pec-mail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/864666",
+      "page": 1,
+      "document": "Osservazioni delle Masserie Salentine S.r.l. Società Agricola del 05/07/2023",
+      "excerpt": "Cod. Fisc. e numero di iscrizione al Registro delle Imprese 08269440015 Indirizzo pec: masseriesalentine@pec-mail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "ufficio.energia@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/902802",
+      "page": 2,
+      "document": "Conferma delle precedenti Osservazioni, aggiornamento e rinnovo della consequenziale istanza delle Masserie Salentine srl Società Agricola in data 30/08/2023",
+      "excerpt": "Sezione Transizione Energetica Pec: ufficio.energia@pec.rupar.puglia.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "protocollo@pecnardo.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/902802",
+      "page": 9,
+      "document": "Conferma delle precedenti Osservazioni, aggiornamento e rinnovo della consequenziale istanza delle Masserie Salentine srl Società Agricola in data 30/08/2023",
+      "excerpt": "Comune di Nardò protocollo@pecnardo.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Studio Tecnico BFP S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "crisafulli@studiobfp.com",
+     "occurrences": 56,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/460099",
+      "page": 11,
+      "document": "STUDIO EVOLUZIONE DELL'OMBRA",
+      "excerpt": "+39 080 5046361 Antonio Crisafulli / crisafulli@studiobfp.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Fabio Coccia",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fabio.coccia2@ingpec.eu",
+     "occurrences": 40,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/460100",
+      "page": 9,
+      "document": "VALUTAZIONE DI IMPATTO ACUSTICO",
+      "excerpt": "39 – 71016 San Severo (FG) (E-mail: studioingegneriacoccia@gmail.com, P.E.C.: fabio.coccia2@ingpec.eu), nominato Tecnico competente in Acustica ambientale mediante"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "studioingegneriacoccia@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/460100",
+      "page": 9,
+      "document": "VALUTAZIONE DI IMPATTO ACUSTICO",
+      "excerpt": "Il sottoscritto Ing. Fabio Coccia, con Studio professionale d’Ingegneria sito in Via Bezzecca, 39 – 71016 San Severo (FG) (E-mail: studioingegneriacoccia@gmail.com, P.E.C.:"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ing.fabiococcia@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/460100",
+      "page": 90,
+      "document": "VALUTAZIONE DI IMPATTO ACUSTICO",
+      "excerpt": "Email ing.fabiococcia@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "HEPVO& S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@heliopolis.eu",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/649826",
+      "page": 4,
+      "document": "Osservazioni di HEPV06 SRL",
+      "excerpt": "HEPVO& S.r.l. | Email: info@heliopolis.eu | Tel: +39 0461 1732700 | Fax: +39 0441 1732799 | PEC: hepv0ésri@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "04611732700",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/649826",
+      "page": 4,
+      "document": "Osservazioni di HEPV06 SRL",
+      "excerpt": "HEPVO& S.r.l. | Email: info@heliopolis.eu | Tel: +39 0461 1732700 | Fax: +39 0441 1732799 | PEC: hepv0ésri@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Giamfranco Imbriani",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "gianfrancoimbriani@libero.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490850",
+      "page": 43,
+      "document": "Osservazioni dell'Ing. Cosimo Salvatore Montefusco in data 21/04/2021",
+      "excerpt": "Geom. Giamfranco IMBRIANI gianfrancoimbriani@libero.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Giuseppe Crisostomo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "gcrisostomo@libero.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490850",
+      "page": 43,
+      "document": "Osservazioni dell'Ing. Cosimo Salvatore Montefusco in data 21/04/2021",
+      "excerpt": "Geom. Giuseppe CRISOSTOMO gcrisostomo@libero.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Tony Colazzo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "colazzo.t@virgilio.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490850",
+      "page": 44,
+      "document": "Osservazioni dell'Ing. Cosimo Salvatore Montefusco in data 21/04/2021",
+      "excerpt": "colazzo.t@virgilio.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Cosimo Saponaro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "mimmosapo@yahoo.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490850",
+      "page": 44,
+      "document": "Osservazioni dell'Ing. Cosimo Salvatore Montefusco in data 21/04/2021",
+      "excerpt": "Geom. Cosimo SAPONARO Mimmosapo@yahoo.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Teseo Montefusco - Risanambiente S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "teseo_m@libero.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490850",
+      "page": 46,
+      "document": "Osservazioni dell'Ing. Cosimo Salvatore Montefusco in data 21/04/2021",
+      "excerpt": "Teseo MONTEFUSCO - Risanambiente S.a.s. teseo_m@libero.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Massimo Pagano - Risanambiente S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "paganoul@hotmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/490850",
+      "page": 46,
+      "document": "Osservazioni dell'Ing. Cosimo Salvatore Montefusco in data 21/04/2021",
+      "excerpt": "Massimo PAGANO - Risanambiente S.a.s. paganoul@hotmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "RILIEVI IN SITO e PROVE DI LABORATORIO",
+    "start": 0.0,
+    "end": 1.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "PROGETTTAZIONE ESECUTIVA",
+    "start": 0.48,
+    "end": 2.51,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "CANTIERIZZAZIONE",
+    "start": 2.47,
+    "end": 3.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO INTERNO",
+    "start": 2.97,
+    "end": 9.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO ESTERNO",
+    "start": 3.97,
+    "end": 10.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili sottostazione",
+    "start": 2.97,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere elettriche sottostazione",
+    "start": 6.97,
+    "end": 11.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudo Sottostazione",
+    "start": 10.96,
+    "end": 11.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Connessione alla rete della sottostazione",
+    "start": 11.96,
+    "end": 12.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ADEGUAMENTO STRADE ESISTENTI",
+    "start": 2.47,
+    "end": 5.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE E PIAZZOLE",
+    "start": 3.97,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "SCAVI FONDAZIONI TORRI",
+    "start": 5.97,
+    "end": 8.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE PLINTI DI FONDAZIONE",
+    "start": 6.47,
+    "end": 10.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "INSTALLAZIONE AEROGENERATORI",
+    "start": 9.96,
+    "end": 12.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Commissioning WTG",
+    "start": 12.96,
+    "end": 14.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "TAKE OVER WTG",
+    "start": 14.46,
+    "end": 15.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ESERCIZIO DELL'IMPIANTO",
+    "start": 15.96,
+    "end": 16.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "RIPRISTINI",
+    "start": 15.96,
+    "end": 17.99,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 17.99,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/460047",
+   "page": 33,
+   "document": "RELAZIONE TECNICA GENERALE",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "MESE 1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 282 giorni (circa 9 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/569511",
+    "page": 10,
+    "document": "Integrazioni del 17/12/2021 - PIANO DI MONITORAGGIO AMBIENTALE",
+    "excerpt": "l’equilibrio del sito (viabilità, zona agricola, ecc.). Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 207,
+  "pagine": 4576,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Enel Green Power Italia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 84.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SALICE SALENTINO",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LE",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "3784 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
