@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico costituito da 16 aerogeneratori, di potenza totale pari a 96 MW e relative opere di connessione nei comuni di Enna (EN), Gangi (PA), Villarosa (EN) e Calascibetta (EN).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9505",
  "source": "mase",
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,12 +24,24 @@
    "label": "Aerogeneratori",
    "value": "16",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 2 (8), 1 (7), 13 (3)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 13 (47), 2 (16), 6 (9)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/915838",
     "page": 2,
     "document": "Avviso al pubblico del 16/10/2023",
     "excerpt": "• 16 aerogeneratori di potenza nominale 6,0 MW, diametro di rotore 150 m e altezza al mozzo 125 m (del tipo Vestas V150 o assimilabili);"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/885126",
+    "page": 1,
+    "document": "INQUADRAMENTO CON INDICAZIONE IMPIANTI FER IN AREE LIMITROFE E DISTANZA MINIMA DAGLI STESSI",
+    "excerpt": "Parco fotovoltaico/agrivoltaico esistente"
    }
   },
   {
@@ -56,24 +68,24 @@
    "Calascibetta"
   ],
   "coordinate": {
-   "lat": 37.65674,
-   "lon": 14.1952,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (76 riferimenti concordi)",
+   "lat": 37.66638,
+   "lon": 14.1907,
+   "tipo": "centro della tavola georeferenziata di progetto (78 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/885096",
-    "page": 94,
-    "document": "VALUTAZIONE PREVISIONALE DI IMPATTO ACUSTICO",
-    "excerpt": "MISURE CON POSTAZIONE MOBILE DI CARATTERIZZAZIONE DEL CLIMA ACUSTICO ANTE OPERAM Latitudine: 37.677908° - Longitudine: 14.214491° CARATTERISTICHE DELLE SORGENTI DI RUMORE"
+    "url": "https://va.mite.gov.it/File/Documento/979804",
+    "page": 179,
+    "document": "Controdeduzioni al Parere della Regione Siciliana - Assessorato del Territorio e dell'Ambiente - Commissione Specialistica per le Autorizzazioni Ambientali di competenza regionale (C.T.S.) n. 668/2023",
+    "excerpt": "Controdeduzioni al Parere della Regione Siciliana - Assessorato del Territorio e dell'Ambiente - Commissione Specialisti"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.65674,14.19520",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.66638,14.19070",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
    "lat": 37.84181,
    "lon": 14.44312,
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/884987",
+    "url": "https://va.mite.gov.it/File/Documento/885126",
     "page": 1,
     "document": "INQUADRAMENTO CON INDICAZIONE IMPIANTI FER IN AREE LIMITROFE E DISTANZA MINIMA DAGLI STESSI",
     "excerpt": "451.000"
@@ -82,8 +94,86 @@
   },
   "lotti": []
  },
- "soggetti": [],
+ "soggetti": [
+  {
+   "name": "Sorgenia Maestrale S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "12497900964",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Alessandro Algardi 4 20148 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sorgenia.maestrale@legalmail.it",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/947458",
+      "page": 3,
+      "document": "Osservazioni del Signor Matteo Ceroti, legale rappresentante della Società SORGENIA MAESTRALE SRL, in data 14/12/2023",
+      "excerpt": "C.F. e P.IVA 12497900964 PEC sorgenia.maestrale@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1107391",
+    "page": 19,
+    "document": "Parere della Regione Sicilia Servizio 1 \"Autorizzazioni e Valutazioni Ambientali\" Palermo in data 19/07/2024",
+    "excerpt": "Enna (EN) e Villarosa(EN). Proponente: Sorgenia Maestrale S.r.l.”, ove alla criticità n. 2 riporta “Poiché dalle osservazioni pervenute risulta che gli aerogeneratori GA09, CA05 e CA06 ricadono in terreni già in regolare"
+   }
+  },
+  {
+   "name": "Ing. Bottone Antonio",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/964857",
+    "page": 2,
+    "document": "Parere della Regione Sicilia Servizio 1 \"Autorizzazioni e Valutazioni Ambientali\" Palermo in data 22/01/2024",
+    "excerpt": "Progettisti Ing. Bottone Antonio;"
+   }
+  }
+ ],
  "altri_soggetti": [
+  {
+   "name": "Alta Capital 12 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12531540016",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Galleria San Federico 16 10121 Torino To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "altacapital12.pec@maildoc.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1236330",
+      "page": 1,
+      "document": "Osservazioni della Società \"Alta Capital 12 s.r.l.\", in data 19/03/2025",
+      "excerpt": "Numero di iscrizione al Registro delle Imprese e C.F. 12531540016 - R.E.A. n. TO-1297042 Pec: altacapital12.pec@maildoc.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "E-WAY Finance S.p.A.",
    "kind": "società",
@@ -97,7 +187,7 @@
     {
      "type": "PEC",
      "value": "e-wayfinance@legalmail.it",
-     "occurrences": 3,
+     "occurrences": 5,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/885112",
       "page": 4,
@@ -133,7 +223,55 @@
    "source": null
   },
   {
-   "name": "scrivente società E-WAY 3 S.r.l.",
+   "name": "Dott. Greco Massimo Stanza",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "09355076348",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/939528",
+      "page": 2,
+      "document": "Parere della Regione Siciliana - Soprintendenza per i Beni Culturali e Ambientali di Enna in data 30/11/2023",
+      "excerpt": "Responsabile procedimento: _ Arch. Piero Gurgone (se non compilato il responsabile è il dirigente preposto alla struttura organizzativa) Funzionario istruttore __ FD Dott. Greco Massimo Stanza _16_ Piano _1°_ Tel. 0935 5"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Avv. Gaetano Armao",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "presidente.cts.sicilia@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/979804",
+      "page": 1,
+      "document": "Controdeduzioni al Parere della Regione Siciliana - Assessorato del Territorio e dell'Ambiente - Commissione Specialistica per le Autorizzazioni Ambientali di competenza regionale (C.T.S.) n. 668/2023",
+      "excerpt": "Avv. Gaetano Armao presidente.cts.sicilia@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Spett. E-WAY 3 S.r.l.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -147,10 +285,10 @@
      "value": "e-way3srl@legalmail.it",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/885112",
-      "page": 12,
-      "document": "VOLTURA STMG",
-      "excerpt": "La scrivente società E-WAY 3 SRL, con sede legale in Roma (RM) Piazza San Lorenzo in Lucina n° 4, CAP 00186 RM - 1667691; Codice Fiscale e Partita IVA 16647721006 PEC e-way3srl@legalmail.it, rappresentata dall’amministra"
+      "url": "https://va.mite.gov.it/File/Documento/1236330",
+      "page": 1,
+      "document": "Osservazioni della Società \"Alta Capital 12 s.r.l.\", in data 19/03/2025",
+      "excerpt": "00186 ROMA (RM) PEC: e-way3srl@legalmail.it"
      }
     }
    ],
@@ -504,9 +642,9 @@
  },
  "documentazione": {
   "documenti": 364,
-  "pagine": 2740,
-  "completa": false,
-  "da_leggere": 64
+  "pagine": 3234,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -538,7 +676,7 @@
  "da_verificare": [
   {
    "label": "Recapiti",
-   "reason": "691 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "768 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
