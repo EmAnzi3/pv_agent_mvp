@@ -1,0 +1,540 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9833",
+ "title": "Progetto di impianto eolico denominato \"Parco Eolico Monti Alà dei Sardi\", sito nei comuni di Monti (OT), Alà dei Sardi (OT) e Buddussò (OT), costituito da 12 aerogeneratori per una potenza totale pari a 86,4 MW e relative opere di connessione alla RTN.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9833",
+ "source": "mase",
+ "updated": "2026-11-10",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "86,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9833",
+    "excerpt": "86,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "12",
+   "status": "da verificare",
+   "sub": "7,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore più ricorrente negli elaborati; altri valori: 5 (56), 7 (46), 3 (26)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/845583",
+    "page": 1,
+    "document": "Avviso al pubblico del 22/05/2023",
+    "excerpt": "Ambientale del progetto di un impianto per la produzione di energia elettrica da fonte rinnovabile eolica di potenza complessiva pari a 86,4 MW, costituito da 12 aerogeneratori, ciascuno di potenza nominale pari a 7,2 MW"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "25 MW",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 86,4 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1327736",
+    "page": 34,
+    "document": "Integrazioni del 18/11/2025 - Soluzione Tecnica Minima Generale (STMG) di connessione alla RTN",
+    "excerpt": "per un impianto di generazione da fonte rinnovabile (eolica) con potenza nominale pari a 81,6 MW integrato con un sistema di accumulo da 25 MW. La potenza richiesta ai fini della connessione è pari a 81,6 MW in immission"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "8 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2), 24 settimane (circa 6 mesi) (1), 120 giorni (circa 4 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1327736",
+    "page": 9,
+    "document": "Integrazioni del 18/11/2025 - Soluzione Tecnica Minima Generale (STMG) di connessione alla RTN",
+    "excerpt": "i tempi di realizzazione delle opere RTN necessarie alla connessione sono 20 mesi per la realizzazione delle nuove stazioni RTN e 8 mesi + 1 mese/km per i nuovi elettrodotti RTN a 150 kV e per il potenziamento/rifaciment"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Monti",
+   "Ala' Dei Sardi",
+   "Budduso'"
+  ],
+  "coordinate": {
+   "lat": 40.75196,
+   "lon": 9.36456,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (901 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/845588",
+    "page": 21,
+    "document": "Analisi intervisibilità",
+    "excerpt": "381 40,771558"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.75196,9.36456",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.7105,
+   "lon": 9.36611,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/889378",
+    "page": 95,
+    "document": "Integrazioni del 10/08/2023 - Relazione Archeologica - VPIA",
+    "excerpt": "Localizzazione: Alà dei Sardi, località senza nome a sud di Punta Ziccheddu Coordinate (UTM 33 WGS84): 40°42'37.79\"N 9°21'57.98\"E"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.71050,9.36611"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Ponente Prime S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ponenteprimesrl@pec.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/845583",
+      "page": 3,
+      "document": "Avviso al pubblico del 22/05/2023",
+      "excerpt": "Telefono _3392020261 PEC ponenteprimesrl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9833"
+   }
+  },
+  {
+   "name": "Gecodor Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@gecodor.it",
+     "occurrences": 154,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/845588",
+      "page": 29,
+      "document": "Analisi intervisibilità",
+      "excerpt": "IT-74023 Grottaglie (TA) Gaetano D'Oronzio / info@gecodor.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "gaetano.doronzio@gecodor.it",
+     "occurrences": 144,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327781",
+      "page": 31,
+      "document": "Integrazioni del 18/11/2025 - Studio sugli effetti dello shadow flickering",
+      "excerpt": "IT-74023 Grottaglie (TA) Gaetano / gaetano.doronzio@gecodor.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "gaetano.dor@gecodor.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/845583",
+      "page": 3,
+      "document": "Avviso al pubblico del 22/05/2023",
+      "excerpt": "PEC ponenteprimesrl@pec.it E-mail gaetano.dor@gecodor.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1327693",
+    "page": 1,
+    "document": "Integrazioni del 18/11/2025 - Piano preliminare utilizzo terre e rocce da scavo",
+    "excerpt": "PROGETTAZIONE"
+   }
+  },
+  {
+   "name": "Ing. Gaetano D'Oronzio",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/845601",
+    "page": 1,
+    "document": "Planimetria di regimentazione delle acque",
+    "excerpt": "PROGETTISTA Ing. Gaetano D'Oronzio"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/845668",
+      "page": 2,
+      "document": "Valutazione risorsa eolica ed analisi di producibilità",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@lipu.it",
+     "occurrences": 21,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/895458",
+      "page": 7,
+      "document": "Osservazioni del COMUNE DI MONTI PROVINCIA DI SASSARI - ZONA OMOGENEA OLBIA - TEMPIO - in data 01/09/2023",
+      "excerpt": "Coordinamento reg. Lipu Sardegna Lipu è il partner italiano di BirdLife International sardegna@lipu.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "SPV Parco Eolico Maestrale S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "spvparcomaestrale@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1327736",
+      "page": 36,
+      "document": "Integrazioni del 18/11/2025 - Soluzione Tecnica Minima Generale (STMG) di connessione alla RTN",
+      "excerpt": "00143 ROMA (RM) spvparcomaestrale@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento Cantiere",
+    "start": 0.0,
+    "end": 0.76,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione viabilità di cantiere",
+    "start": 0.79,
+    "end": 2.79,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole di montaggio",
+    "start": 0.79,
+    "end": 2.79,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni aerogeneratori",
+    "start": 1.8,
+    "end": 4.81,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Completamento viabilità e piazzole di montaggio",
+    "start": 3.83,
+    "end": 6.83,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizz. sottostazione di trasformazione SEU 150/33 kV",
+    "start": 1.8,
+    "end": 5.82,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linee di distribuzione Media Tensione",
+    "start": 2.81,
+    "end": 5.82,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linea di collegamento AT",
+    "start": 3.83,
+    "end": 5.82,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio Aerogeneratori",
+    "start": 4.83,
+    "end": 6.83,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Energizzazione Sottostazione e impianto eolico",
+    "start": 6.86,
+    "end": 7.85,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Commissioning aerogeneratori",
+    "start": 7.87,
+    "end": 9.87,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Entrate in esercizio impianto eolico",
+    "start": 9.9,
+    "end": 10.88,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristino opere civile e definizione piazzole definitive",
+    "start": 7.87,
+    "end": 10.88,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Chiusura cantiere",
+    "start": 10.9,
+    "end": 11.96,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 11.96,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/845671",
+   "page": 4,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "1 mese",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (3), 18 mesi (2), 90 giorni (circa 3 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1327736",
+    "page": 9,
+    "document": "Integrazioni del 18/11/2025 - Soluzione Tecnica Minima Generale (STMG) di connessione alla RTN",
+    "excerpt": "i tempi di realizzazione delle opere RTN necessarie alla connessione sono 20 mesi per la realizzazione delle nuove stazioni RTN e 8 mesi + 1 mese/km per i nuovi elettrodotti RTN a 150 kV e per il potenziamento/rifaciment"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/845671"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 226,
+  "pagine": 4047,
+  "completa": false,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Ponente Prime S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 86.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MONTI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "580 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
