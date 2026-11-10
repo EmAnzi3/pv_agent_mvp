@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto eolico costituito da n. 13 aerogeneratori, di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 93,6 MW, ricadente nei comuni di Canino (VT) e Montalto di Castro (VT), con opere di connessione che interessano anche il Comune di Manciano (GR), oltre ad un sistema di accumulo da 24 MW.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10182",
  "source": "mase",
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "13",
    "status": "da documenti",
-   "sub": "7,20 MW ciascuno · altezza mozzo 150 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 12 (15), 7 (9), 1 (9)",
+   "sub": "7,20 MW ciascuno · altezza mozzo 150 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 9 (22), 12 (20), 7 (12)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/899772",
     "page": 1,
@@ -49,7 +49,7 @@
    "label": "Accumulo",
    "value": "24 MW / 2 MWh",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 93,6 MW (62)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 93,6 MW (69), 15 MW (3), 10 MW (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/899737",
     "page": 9,
@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "15 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1), 6 mesi (1), 22 mesi (1)",
+   "sub": "Inizio lavori 23/07/2023 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 3 mesi (2), 6 mesi (1), 22 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1410253",
     "page": 5,
@@ -81,7 +81,7 @@
   "coordinate": {
    "lat": 42.39048,
    "lon": 11.72216,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (187 riferimenti concordi)",
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (191 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1410255",
     "page": 16,
@@ -92,7 +92,17 @@
   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.39048,11.72216",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 42.45539,
+   "lon": 11.57704,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/899725",
+    "page": 5,
+    "document": "Relazione geologica, morfologica e idrogeologica",
+    "excerpt": "711902.52"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.45539,11.57704"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -109,6 +119,17 @@
    "office": "Via Guido D'Arezzo 15 20145 Milano Mi",
    "contacts": [
     {
+     "type": "PEC",
+     "value": "caninosugarella@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1416565",
+      "page": 2,
+      "document": "Parere ARPA Lazio - Dipartimento Stato dell'Ambiente Servizio Suolo e Bonifiche - Unità Suolo e Bonifiche Area Nord In data 3/08/2026",
+      "excerpt": "Canino Sugarella s.r.l. caninosugarella@legalmail.it"
+     }
+    },
+    {
      "type": "Telefono",
      "value": "3474161242",
      "occurrences": 2,
@@ -117,6 +138,17 @@
       "page": 17,
       "document": "Integrazioni del 26/06/2025 - WON016_ES_12__Perizia_demaniale_usi_civici_signed-signed",
       "excerpt": "Il sottoscritto, dott. agronomo Serafino Ranauro, tel. 347 4161242 su incarico della Società"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0554384389",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1337971",
+      "page": 1,
+      "document": "Parere della Regione TOSCANA - Direzione Tutela dell'Ambiente ed Energia, in data 22/12/2025",
+      "excerpt": "Piazza Unità Italiana 1, 50123 Firenze Tel. 055 4384389 - Fax 055 4384390"
      }
     }
    ],
@@ -154,6 +186,56 @@
     "page": 1,
     "document": "Integrazioni del 14/03/2025 - Intereferenza al volo torri faro",
     "excerpt": "Committente:"
+   }
+  },
+  {
+   "name": "San Nicola Energia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "srlsannicola@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/936119",
+      "page": 1,
+      "document": "Richiesta integrazioni MiC",
+      "excerpt": "Alla San Nicola Energia S.r.l. srlsannicola@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/936119",
+    "page": 1,
+    "document": "Richiesta integrazioni MiC",
+    "excerpt": "Proponente: San Nicola Energia S.r.l RICHIESTA INTEGRAZIONI DOCUMENTALI DEL MINISTERO DELLA CULTURA"
+   }
+  },
+  {
+   "name": "Atlante S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1309053",
+    "page": 5,
+    "document": "Osservazioni della Signora Giuseppina Fontana in data 17/09/2025",
+    "excerpt": "Canino (VT) - località \"Sugarella\" ed opere connesse nel comune di Tuscania (VT). Proponente Atlante s.r.l. Registro elenco progetti: n. 106/2020. È stato già bocciato un progetto che non teneva in considerazione il"
    }
   },
   {
@@ -227,6 +309,71 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Amici Della Terra APS",
+   "kind": "società",
+   "roles": [],
+   "vat": "02141761003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ippolito Nievo 62 Sc C I 00153 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amicidellaterra@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/920807",
+      "page": 4,
+      "document": "Osservazioni dell'Associazione Amici della Terra ONLUS, Legale Rappresentante Signora Monica Tommasi, in data 18/10/2023",
+      "excerpt": "amicidellaterra@pec.it — segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@amicidellaterra.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/920807",
+      "page": 4,
+      "document": "Osservazioni dell'Associazione Amici della Terra ONLUS, Legale Rappresentante Signora Monica Tommasi, in data 18/10/2023",
+      "excerpt": "amicidellaterra@pec.it — segreteria@amicidellaterra.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Montalto DI Castro S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03015130218",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Walther Von Der Vogelweide 8 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "suap.montaltodicastro@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1285125",
+      "page": 24,
+      "document": "Parere del Comune di Montalto di Castro , in data 05/08/2025",
+      "excerpt": "1. È fatto obbligo alla concessionaria di dare comunicazione all'Ufficio SUAP, a mezzo pec all'indirizzo suap.montaltodicastro@legalmail.it, di inizio lavori almeno 3 (tre) giorni prima e"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Beshielding S.r.l.",
    "kind": "società",
@@ -338,8 +485,8 @@
    "source": null
   },
   {
-   "name": "Alla San Nicola Energia S.r.l.",
-   "kind": "società",
+   "name": "Ing. Roberto Tasselli",
+   "kind": "persona",
    "roles": [],
    "vat": null,
    "vat_group": false,
@@ -348,14 +495,97 @@
    "office": null,
    "contacts": [
     {
-     "type": "PEC",
-     "value": "srlsannicola@legalmail.it",
+     "type": "E-mail",
+     "value": "r.tasselli@cb6toscanasud.it",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/936119",
-      "page": 1,
-      "document": "Richiesta integrazioni MiC",
-      "excerpt": "Alla San Nicola Energia S.r.l. srlsannicola@legalmail.it"
+      "url": "https://va.mite.gov.it/File/Documento/1337971",
+      "page": 29,
+      "document": "Parere della Regione TOSCANA - Direzione Tutela dell'Ambiente ed Energia, in data 22/12/2025",
+      "excerpt": "sito www.cb6toscanasud.it, accedendo alla sezione “privacy”. Pratica 2023/230- AREA Demanio e Contratti Responsabile del Procedimento ai sensi della Legge 07/08/1990 n.241: Ing. Roberto Tasselli - Tel. 0564 435679 – e-ma"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0564435679",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1337971",
+      "page": 29,
+      "document": "Parere della Regione TOSCANA - Direzione Tutela dell'Ambiente ed Energia, in data 22/12/2025",
+      "excerpt": "sito www.cb6toscanasud.it, accedendo alla sezione “privacy”. Pratica 2023/230- AREA Demanio e Contratti Responsabile del Procedimento ai sensi della Legge 07/08/1990 n.241: Ing. Roberto Tasselli - Tel. 0564 435679 – e-ma"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Maurizio Padovani",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "m.padovani@cb6toscansud.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1337971",
+      "page": 29,
+      "document": "Parere della Regione TOSCANA - Direzione Tutela dell'Ambiente ed Energia, in data 22/12/2025",
+      "excerpt": "Pratica 2023/230- AREA Demanio e Contratti Responsabile del Procedimento ai sensi della Legge 07/08/1990 n.241: Ing. Roberto Tasselli - Tel. 0564 435679 – e-mail: r.tasselli@cb6toscanasud.it SEZIONE Autorizzazioni, Conce"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Riccardo Battigalli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "r.battigalli@cb6toscanasud.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1337971",
+      "page": 29,
+      "document": "Parere della Regione TOSCANA - Direzione Tutela dell'Ambiente ed Energia, in data 22/12/2025",
+      "excerpt": "SEZIONE Autorizzazioni, Concessioni Referenti: Geom. Maurizio Padovani - Tel. 0564-435681 - e-mail: m.padovani@cb6toscansud.it - Geom. Riccardo Battigalli - Tel. 0564-435677 - e-mail: r.battigalli@cb6toscanasud.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Avv. Marco Luigi Marchetti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "076143391",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1285124",
+      "page": 21,
+      "document": "Parere del Comune di Canino , in data 05/08/2025",
+      "excerpt": "Via Roma 2, 01011 CANINO (VT) - C.F. : 00156710568 Tel.0761/43391 Fax: 0761/438485"
      }
     }
    ],
@@ -386,11 +616,40 @@
    "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 23/07/2023, ma l'iter è proseguito; ultimo documento o atto del 14/10/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "23/07/2023",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1285125",
+     "page": 50,
+     "document": "Parere del Comune di Montalto di Castro , in data 05/08/2025",
+     "excerpt": "fa prolungarsi inaspettato dell'iter amministrativo presso la Provincia di Viterbo, volto all'approvazione La degli esecutivi e pertanto il nuovo inizio lavori è stimato per il giorno 23/07/2023 con fine lavori ON . ."
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di settembre 2024",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 15 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/899718",
+     "page": 2,
+     "document": "Cronoprogramma",
+     "excerpt": ""
+    }
+   }
+  ],
   "durata_cantiere": "15 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
@@ -407,87 +666,87 @@
    {
     "name": "Espropri",
     "start": 0.0,
-    "end": 4.01,
+    "end": 3.98,
     "level": 0,
     "summary": false
    },
    {
     "name": "Affidamento lavori",
     "start": 1.98,
-    "end": 3.01,
+    "end": 2.98,
     "level": 0,
     "summary": false
    },
    {
     "name": "Allestimento cantiere",
     "start": 2.98,
-    "end": 4.01,
+    "end": 3.98,
     "level": 0,
     "summary": false
    },
    {
     "name": "Opere civili - strade",
     "start": 3.98,
-    "end": 7.01,
+    "end": 6.98,
     "level": 0,
     "summary": false
    },
    {
     "name": "Opere civili - fondazioni torri",
     "start": 3.98,
-    "end": 8.01,
+    "end": 7.98,
     "level": 0,
     "summary": false
    },
    {
     "name": "Opere civili ed elettriche - cavidotti",
     "start": 4.98,
-    "end": 11.01,
+    "end": 10.98,
     "level": 0,
     "summary": false
    },
    {
     "name": "Trasporto componenti torri e aerogeneratori",
     "start": 7.98,
-    "end": 11.01,
+    "end": 10.98,
     "level": 0,
     "summary": false
    },
    {
     "name": "Montaggio torri e aerogeneratori",
     "start": 8.98,
-    "end": 13.01,
+    "end": 12.98,
     "level": 0,
     "summary": false
    },
    {
-    "name": "Cabina di raccolta e sistema di accumulo",
+    "name": "Costruzione SSE - Opere elettriche e di connessione alla RTN",
     "start": 6.98,
-    "end": 12.01,
+    "end": 11.98,
     "level": 0,
     "summary": false
    },
    {
     "name": "Collaudi",
     "start": 11.98,
-    "end": 14.01,
+    "end": 13.98,
     "level": 0,
     "summary": false
    },
    {
     "name": "Dismissione cantiere e ripristini ambientali",
     "start": 11.98,
-    "end": 15.01,
+    "end": 14.98,
     "level": 0,
     "summary": false
    }
   ],
   "unit": "month",
-  "months": 15.01,
+  "months": 14.98,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/1410254",
-   "page": 39,
-   "document": "Integrazioni del 15/06/2026 - Relazione descrittiva",
+   "url": "https://va.mite.gov.it/File/Documento/899718",
+   "page": 2,
+   "document": "Cronoprogramma",
    "excerpt": ""
   },
   "asse": {
@@ -574,7 +833,7 @@
   "duration": {
    "text": "10 giorni",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 mesi (3), 3 mesi (1), 12 giorni (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 mesi (3), 3 mesi (2), 2 giorni (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1276055",
     "page": 74,
@@ -582,17 +841,27 @@
     "excerpt": "legati alla presenza del cantiere stesso, si potrebbe valutare di proseguire i lavori anche durante i giorni festivi in modo tale da limitare la durata complessiva del cantiere ai 10 giorni effettivamente utili (nell’ipo"
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "23/07/2023",
+    "iso": "2023-07-23",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1285125",
+     "page": 50,
+     "document": "Parere del Comune di Montalto di Castro , in data 05/08/2025",
+     "excerpt": "fa prolungarsi inaspettato dell'iter amministrativo presso la Provincia di Viterbo, volto all'approvazione La degli esecutivi e pertanto il nuovo inizio lavori è stimato per il giorno 23/07/2023 con fine lavori ON . ."
+    }
+   }
+  ],
   "document": {
    "document": "Cronoprogramma",
    "url": "https://va.mite.gov.it/File/Documento/899718"
   },
   "note": null,
   "altri": [
-   {
-    "document": "Cronoprogramma",
-    "url": "https://va.mite.gov.it/File/Documento/899718"
-   },
    {
     "document": "Piano dismissione e ripristino impianto e relativo cronoprogramma",
     "url": "https://va.mite.gov.it/File/Documento/899722"
@@ -603,9 +872,9 @@
  },
  "documentazione": {
   "documenti": 413,
-  "pagine": 4098,
-  "completa": false,
-  "da_leggere": 113
+  "pagine": 6599,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -636,6 +905,10 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 23/07/2023, ma l'iter è proseguito; ultimo documento o atto del 14/10/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
    "label": "Accumulo",
    "reason": "valori diversi negli elaborati"
   },
@@ -645,7 +918,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "97 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "222 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
