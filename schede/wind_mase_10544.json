@@ -1,0 +1,443 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10544",
+ "title": "Ricostruzione di un impianto eolico composto da 13 aerogeneratori di potenza unitaria 6,6 MW per una potenza complessiva di 85,8 MW e relative opere di connessione alla RTN nei comuni di Bisaccia (AV), Vallata (AV) e Andretta (AV) con smantellamento di 18 aerogeneratori di potenza pari a 54 MW",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10544",
+ "source": "mase",
+ "updated": "2026-11-10",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "85,8 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10544",
+    "excerpt": "85,8 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "18",
+   "status": "da verificare",
+   "sub": "4,77 MW ciascuno · altezza mozzo 80 m · diametro rotore 155 m · Valore più ricorrente negli elaborati; altri valori: 13 (22), 4 (8), 11 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/962231",
+    "page": 2,
+    "document": "Lista di controllo per la valutazione preliminare (art.6, comma 9, D.L.GS. 152/2006)",
+    "excerpt": "opere di connessione nei Comuni di Bisaccia (AV), Vallata (AV) e Andretta (AV) con smantellamento di n.18 aerogeneratori di potenza in esercizio pari a 54MW"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "AV",
+  "comuni": [
+   "Vallata",
+   "Andretta",
+   "Bisaccia"
+  ],
+  "coordinate": {
+   "lat": 40.97378,
+   "lon": 15.31185,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (101 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/962223",
+    "page": 12,
+    "document": "Relazione di shadow flickering",
+    "excerpt": "357 ANDRETTA (AV) 2 260-416- areal 526170 | 4534550 | 4( 74° , 164° , 254° , 344° )"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.97378,15.31185",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Winbis S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "winbis@pec.edison.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1013717",
+      "page": 1,
+      "document": "Comunicazione VA esito valutazione",
+      "excerpt": "Alla Società Winbis S.r.l. winbis@pec.edison.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10544"
+   }
+  },
+  {
+   "name": "Ing. Massimo Lo Russo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/962176",
+    "page": 1,
+    "document": "Corografia di inquadramento",
+    "excerpt": "Progettista: Ing. Massimo Lo Russo"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Geko S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gekospa@pec.gekospa.it",
+     "occurrences": 55,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/962176",
+      "page": 1,
+      "document": "Corografia di inquadramento",
+      "excerpt": "Tel. 06.88803910 | Fax 06.45654740 E-Mail: gekospa@pec.gekospa.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0688803910",
+     "occurrences": 55,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/962176",
+      "page": 1,
+      "document": "Corografia di inquadramento",
+      "excerpt": "Via Reno, 5 - 00198 Roma (RM) Tel. 06.88803910 | Fax 06.45654740"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Progetto Energia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@progettoenergia.biz",
+     "occurrences": 55,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/962176",
+      "page": 1,
+      "document": "Corografia di inquadramento",
+      "excerpt": "Tel. 0825.831313 E-Mail: info@progettoenergia.biz"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0825831313",
+     "occurrences": 55,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/962176",
+      "page": 1,
+      "document": "Corografia di inquadramento",
+      "excerpt": "Via Cardito, 202 - 83031 Ariano Irpino (AV) Tel. 0825.831313"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "11 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Realizzazione area di cantiere e recinzione provissionale",
+    "start": 0.0,
+    "end": 1.56,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle piazzole per la dismissione degli aereogeneratori",
+    "start": 0.79,
+    "end": 4.81,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Dismissione aereogeneratori esistenti interferenti (WTG WIN 1 - WTG WIN6- WTG WI",
+    "start": 1.79,
+    "end": 2.81,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Dismissione cavidotti MT esistenti interni al parco",
+    "start": 2.54,
+    "end": 6.56,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Dismissione piazzole e viabilità parco esistente",
+    "start": 3.04,
+    "end": 6.81,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione finale del sito",
+    "start": 5.04,
+    "end": 8.55,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Picchettamento delle aree",
+    "start": 0.0,
+    "end": 1.56,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione della nuova viabilità",
+    "start": 0.54,
+    "end": 2.56,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "WinBis 01 - WTG WinBis 02 - WTG WinBis 03 - WTG WinBis 04 - WTG WinBis 07 - WTG ",
+    "start": 1.54,
+    "end": 5.31,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle piazzole di costruzioni per gli aereogeneratori interferenti",
+    "start": 3.04,
+    "end": 5.06,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni c.a. aereogeneratori interferenti (WTG WinBis 05 - WTG ",
+    "start": 3.54,
+    "end": 4.31,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Trasporto e montaggio aereogeneratori",
+    "start": 3.29,
+    "end": 7.06,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti MT",
+    "start": 4.79,
+    "end": 9.05,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Stazione elettrica di utenza (ammodernamento)",
+    "start": 6.78,
+    "end": 8.55,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Regolazione e Collaudo finale",
+    "start": 7.78,
+    "end": 10.05,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione finale del sito",
+    "start": 8.03,
+    "end": 11.3,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 11.3,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/962229",
+   "page": 2,
+   "document": "Cronoprogramma lavori",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": null,
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma lavori",
+   "url": "https://va.mite.gov.it/File/Documento/962229"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 58,
+  "pagine": 335,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Winbis S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 85.8,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BISACCIA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AV",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "110 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
