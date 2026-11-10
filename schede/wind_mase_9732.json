@@ -1,0 +1,633 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9732",
+ "title": "Progetto di un parco eolico denominato \"Serradenti\", costituito da 14 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva di 84 MW, da realizzarsi nei Comuni di Atella (PZ), Avigliano (PZ) Filiano (PZ) e Potenza e delle relative opere di connessione per il collegamento alla RTN mediante la realizzazione di una nuova sottostazione di utenza MT/AT da realizzare nel Comune di Potenza. Codice pratica MYTERNA n. 201900144.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9732",
+ "source": "mase",
+ "updated": "2026-11-10",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "84 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9732",
+    "excerpt": "84 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "14",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 15 (3), 1 (2), 5 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/925422",
+    "page": 2,
+    "document": "Avviso al pubblico del 30/10/2023",
+    "excerpt": "particolare nei comuni di Atella (PZ), Avigliano (PZ) Filiano (PZ) e Potenza, e prevede l’installazione di n. 14 aerogeneratori di potenza unitaria pari a 6,0 MW per una potenza complessiva pari a 84 MW con relative anne"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "84 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 30 MW (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/857308",
+    "page": 18,
+    "document": "QUADRO DI RIFERIMENTO PROGRAMMATICO",
+    "excerpt": "MW, nei comuni di Atella, Avigliano, Filiano e Potenza (PZ) in località “Serradenti”. La potenza complessiva di impianto pari a circa 84 MW integrato ad un sistema di accumulo da 30 MW, da collegarsi mediante elettrodott"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "730 giorni (circa 24 mesi)",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/857311",
+    "page": 110,
+    "document": "RELAZIONE PAESAGGISTICA DI IMPATTO VISIVO",
+    "excerpt": "temporaneo poiché limitato alla sola fase di cantiere la cui durata indicativamente è posta pari a 730 giorni; -"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "PZ",
+  "comuni": [
+   "Potenza"
+  ],
+  "coordinate": {
+   "lat": 40.78542,
+   "lon": 15.70309,
+   "tipo": "centro della tavola georeferenziata di progetto (56 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/857278",
+    "page": 2,
+    "document": "TAV III_SCHEDE FOTOINSERIMENTI",
+    "excerpt": "TAV III_SCHEDE FOTOINSERIMENTI"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.78542,15.70309",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Ripawind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ripawind@pec.it",
+     "occurrences": 147,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/857284",
+      "page": 1,
+      "document": "TAV III_SEZIONI DI VISTA",
+      "excerpt": "P.IVA 01960620761 Indirizzo pec: ripawind@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "ripawindsrl@pec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/924216",
+      "page": 1,
+      "document": "Integrazioni del 13/10/2023 - CARTA DEI VINCOLI DELL'AREA - USI CIVICI - TAVOLA I",
+      "excerpt": "P.IVA 01960620761 Indirizzo pec: ripawindsrl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9732"
+   }
+  },
+  {
+   "name": "R.S.V. DHign Studio S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "fo@m-os.il",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/857183",
+      "page": 1,
+      "document": "PLANIMETRIA CON INDIVIDUAZIONE INTERFERENZE - TAVOLA II",
+      "excerpt": "f.111 Ql83l!/f,1,,0 1,1.,lfu,. +li 0911985490 I , .,,,.;1,i,fo@m-Os.il"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/857183",
+    "page": 1,
+    "document": "PLANIMETRIA CON INDIVIDUAZIONE INTERFERENZE - TAVOLA II",
+    "excerpt": "Progettazione: R.S.V. DHign Studio S.r.l."
+   }
+  },
+  {
+   "name": "Rizzoni S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Impresa esecutrice (atto di cantiere)"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "A",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/857249",
+      "page": 57,
+      "document": "Relazione Geologica",
+      "excerpt": "Impresa esecutrice: Rizzoni Srl - Potenza Data: 05/0672020 - 11/08/2020"
+     }
+    }
+   ],
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/857249",
+    "page": 57,
+    "document": "Relazione Geologica",
+    "excerpt": "Impresa esecutrice: Rizzoni Srl - Potenza Data: 05/0672020 - 11/08/2020"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Dott. Geol. Gennaro Di Lucchio",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "rino.dilucchio@tenproject.it",
+     "occurrences": 52,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/857249",
+      "page": 2,
+      "document": "Relazione Geologica",
+      "excerpt": "Dott. Geol. Gennaro Di Lucchio tel 339 2634749 - e_mail: rino.dilucchio@tenproject.it - pec: dottgennarodilucchio@epap.sicurezzapostale.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "dottgennarodilucchio@epap.sicurezzapostale.it",
+     "occurrences": 52,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/857249",
+      "page": 2,
+      "document": "Relazione Geologica",
+      "excerpt": "Dott. Geol. Gennaro Di Lucchio tel 339 2634749 - e_mail: rino.dilucchio@tenproject.it - pec: dottgennarodilucchio@epap.sicurezzapostale.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3392634749",
+     "occurrences": 52,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/857249",
+      "page": 2,
+      "document": "Relazione Geologica",
+      "excerpt": "Dott. Geol. Gennaro Di Lucchio tel 339 2634749 - e_mail: rino.dilucchio@tenproject.it - pec: dottgennarodilucchio@epap.sicurezzapostale.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "R.S.V. Design Studio S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@rsv-ds.it",
+     "occurrences": 119,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/857304",
+      "page": 1,
+      "document": "ELENCO FABBRICATI NEI PRESSI DEL PARCO EOLICO",
+      "excerpt": "P.IVA 05885970656 Tel./fax:+39 0974 985490 | e-mail: info@rsv-ds.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasrl.com",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/857259",
+      "page": 74,
+      "document": "Studio di fattibilità acustica",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196 Any |y\\s LAT N°185 www.sonorasrl.com - sonora@sonorasrl.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/857259",
+      "page": 70,
+      "document": "Studio di fattibilità acustica",
+      "excerpt": "1) Sonora S.r.l Tel 0823 351196 - Fax 0823 351196 ZITO LAT N°185"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": {
+  "livello": "A",
+  "imprese": [
+   {
+    "impresa": "Rizzoni S.r.l.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "A",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/857249",
+     "page": 57,
+     "document": "Relazione Geologica",
+     "excerpt": "Impresa esecutrice: Rizzoni Srl - Potenza Data: 05/0672020 - 11/08/2020"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "24 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Acquisizione delle aree",
+    "start": 0.02,
+    "end": 3.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Test geologici",
+    "start": 3.0,
+    "end": 5.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Progettazione esecutiva architettonica",
+    "start": 5.0,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Progettazione geotecnica e strutturale",
+    "start": 5.0,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Apertura del cantiere",
+    "start": 7.0,
+    "end": 8.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Predisposizione della viabilità",
+    "start": 8.0,
+    "end": 10.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa cavi elettrici",
+    "start": 8.0,
+    "end": 11.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Predisposizione fondazioni",
+    "start": 10.0,
+    "end": 13.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e montaggio aerogeneratori",
+    "start": 12.0,
+    "end": 15.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e montaggio stazione elettrica",
+    "start": 15.0,
+    "end": 18.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristini ambientali",
+    "start": 18.0,
+    "end": 19.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudo aerogeneratori",
+    "start": 19.0,
+    "end": 22.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Dismissione cantiere",
+    "start": 22.0,
+    "end": 23.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Chiusura cantiere",
+    "start": 23.0,
+    "end": 23.97,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 23.97,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/857096",
+   "page": 2,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1°",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2°",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3°",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4°",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5°",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6°",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7°",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8°",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9°",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10°",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11°",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12°",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13°",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14°",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15°",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16°",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17°",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18°",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19°",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20°",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21°",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22°",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23°",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24°",
+     "start": 23.0,
+     "end": 24.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "730 giorni (circa 24 mesi)",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/857311",
+    "page": 110,
+    "document": "RELAZIONE PAESAGGISTICA DI IMPATTO VISIVO",
+    "excerpt": "temporaneo poiché limitato alla sola fase di cantiere la cui durata indicativamente è posta pari a 730 giorni; -"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/857096"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 314,
+  "pagine": 1435,
+  "completa": false,
+  "da_leggere": 14
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "RIPAWIND S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 84.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ATELLA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PZ",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "11 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
