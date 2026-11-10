@@ -5,7 +5,7 @@
  "title": "Progetto per un impianto Eolico denominato \"PIANI SAN PIETRO\" costituito da n. 16 aerogeneratori di potenza unitaria 6 MW, per una potenza complessiva dell'impianto di 96 MW, da realizzarsi nei comuni di Bisaccia e Calitri (AV).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9074",
  "source": "mase",
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "16",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 6 (8), 5 (6), 9 (5)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 6 (10), 5 (6), 17 (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/752988",
     "page": 1,
@@ -36,8 +36,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "370 giorni (circa 12 mesi)",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 200 giorni (circa 7 mesi) (1), 18 mesi (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 200 giorni (circa 7 mesi) (2), 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/753165",
     "page": 91,
@@ -56,7 +56,7 @@
   "coordinate": {
    "lat": 40.95592,
    "lon": 15.4007,
-   "tipo": "centro della tavola georeferenziata di progetto (9 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (11 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1265259",
     "page": 1,
@@ -173,7 +173,7 @@
     {
      "type": "PEC",
      "value": "arengreensrl@legalmail.it",
-     "occurrences": 289,
+     "occurrences": 293,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1265225",
       "page": 2,
@@ -324,6 +324,17 @@
    "office": null,
    "contacts": [
     {
+     "type": "PEC",
+     "value": "cameliarinnovabili@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1391238",
+      "page": 1,
+      "document": "Osservazioni della Aren Green srl, in data 05/05/2026",
+      "excerpt": "Camelia Rinnovabili S.r.l. A mezzo PEC: cameliarinnovabili@legalmail.it"
+     }
+    },
+    {
      "type": "Telefono",
      "value": "0815797998",
      "occurrences": 1,
@@ -356,6 +367,30 @@
       "page": 145,
       "document": "Imp.acustico_Monit",
       "excerpt": "Via dei Bersaglieri, 9 - Casorta SAAS Sonora S.rl. Tel 0823 351196 - Fax 0823 351196 LITTA LAT N°185"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Patco Eolico di Calitri S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "parcoeolicodicalitri@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/781497",
+      "page": 1,
+      "document": "Controdeduzioni della Società AREN Electric Power S.p.A. alle osservazioni presentate da Parco Eolico di Calitri S.r.l. in data 15 febbraio 2023 e pubblicate sul sito del MASE",
+      "excerpt": "A mezzo PEC: parcoeolicodicalitri@pec.it"
      }
     }
    ],
@@ -817,8 +852,8 @@
   },
   "duration": {
    "text": "370 giorni (circa 12 mesi)",
-   "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 200 giorni (circa 7 mesi) (1), 18 mesi (1)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 200 giorni (circa 7 mesi) (2), 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/753165",
     "page": 91,
@@ -843,9 +878,9 @@
  },
  "documentazione": {
   "documenti": 346,
-  "pagine": 2900,
-  "completa": false,
-  "da_leggere": 46
+  "pagine": 3504,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -876,8 +911,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "551 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "589 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
