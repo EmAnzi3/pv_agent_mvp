@@ -1,0 +1,391 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7837",
+ "title": "Progetto per la realizzazione di un impianto eolico, denominato \"Parco eolico di Ariano e Savignano Irpino\", costituito da 13 aerogeneratori di potenza unitaria pari a 6,2 MW, per una potenza complessiva di 80,6 MW, da realizzarsi nei territori comunali di Ariano Irpino (AV) e Savignano Irpino (AV), e delle relative opere di connessione per il collegamento alla RTN, da realizzarsi nel Comune di Ariano Irpino, mediante la realizzazione di una nuova stazione utente MT/AT ed il collegamento con la futura stazione elettrica di trasformazione della RTN 308/150 kV, Proponente: Wpd Mezzana S.r.l.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7837",
+ "source": "mase",
+ "updated": "2026-11-10",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "80,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7837",
+    "excerpt": "80,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "13",
+   "status": "da documenti",
+   "sub": "6,20 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 20 (4), 66 (2), 81 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488479",
+    "page": 1,
+    "document": "Avviso al Pubblico del 03/05/2021",
+    "excerpt": "Il progetto è localizzato nella Regione Campania ed in particolare nei territori comunali di Ariano e Savignano Irpino, all’interno dei quali ricadono i 13 aerogeneratori da 6,2 MW, per una potenza complessiva pari a 80,"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/480548",
+    "page": 28,
+    "document": "PREVENTIVO PER LA CONNESSIONE",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "AV",
+  "comuni": [
+   "Savignano Irpino",
+   "Ariano Irpino"
+  ],
+  "coordinate": {
+   "lat": 41.18278,
+   "lon": 15.15956,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (20 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/480604",
+    "page": 7,
+    "document": "RELAZIONE DI SHADOW FLICKERING",
+    "excerpt": "515028,4"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.18278,15.15956",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "WPD Mezzana S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "15978931002",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Luca Gaurico 9-11 00143 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wpdmezzanasrl@legalmail.it",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488479",
+      "page": 1,
+      "document": "Avviso al Pubblico del 03/05/2021",
+      "excerpt": "Fax 06 96035324 PEC: wpdmezzanasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/480549",
+    "page": 1,
+    "document": "STUDIO DI IMPATTO AMBIENTALE",
+    "excerpt": "Proponente:"
+   }
+  },
+  {
+   "name": "Ing. Massimo Lo Russo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/480549",
+    "page": 1,
+    "document": "STUDIO DI IMPATTO AMBIENTALE",
+    "excerpt": "Progettista:"
+   }
+  },
+  {
+   "name": "Dott. Antonio Petriccione",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/480608",
+    "page": 21,
+    "document": "RELAZIONE GEOLOGICA",
+    "excerpt": "Il Geologo Dott. Antonio Petriccione"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "WPD Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wpditaliasrl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/480548",
+      "page": 2,
+      "document": "PREVENTIVO PER LA CONNESSIONE",
+      "excerpt": "000153 Roma (RM) wpditaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Deposito opere civili",
+    "start": 0.68,
+    "end": 2.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Picchettamento delle aree",
+    "start": 0.43,
+    "end": 1.69,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione area di cantiere e recinzione provissionale",
+    "start": 0.68,
+    "end": 1.93,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Realizzazione della viabilità",
+    "start": 1.17,
+    "end": 3.9,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni c.a. aereogeneratori",
+    "start": 2.65,
+    "end": 5.63,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Posa in opera di cavidotti MT",
+    "start": 1.66,
+    "end": 7.6,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e montaggio aereogeneratori",
+    "start": 3.39,
+    "end": 7.11,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Costruzione SSE – Opere elettriche e di connessione alla RTN",
+    "start": 2.16,
+    "end": 9.12,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Regolazione e Collaudo finale",
+    "start": 8.32,
+    "end": 10.74,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Pulizia e sistemazione finale del sito",
+    "start": 10.18,
+    "end": 11.81,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 11.81,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/480549",
+   "page": 90,
+   "document": "STUDIO DI IMPATTO AMBIENTALE",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/480548",
+    "page": 28,
+    "document": "PREVENTIVO PER LA CONNESSIONE",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 251,
+  "pagine": 1798,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Wpd Mezzana S.r.l.",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 80.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ARIANO IRPINO",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AV",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "112 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
