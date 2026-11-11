@@ -1,0 +1,423 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11552",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"Civitas\", costituito da 11 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 79,2 MW, da realizzarsi nei comuni di San Paolo di Civitate (FG), Torremaggiore (FG) e San Severo (FG), incluse le opportune opere di connessione alla RTN (cod. MYTERNA n. 202306449).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11552",
+ "source": "mase",
+ "updated": "2026-11-11",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "79,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11552",
+    "excerpt": "79,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "11",
+   "status": "da verificare",
+   "sub": "7,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore più ricorrente negli elaborati; altri valori: 2 (10), 4 (5), 3 (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1216425",
+    "page": 2,
+    "document": "Avviso al pubblico del 17/02/2025",
+    "excerpt": "Il progetto è localizzato nei Comuni di San Paolo di Civitate, Torremaggiore e San Severo in Provincia di Foggia; prevede la nuova realizzazione di n. 11 aerogeneratori con hub a 119 m, altezza massima punta pala pari a "
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 14 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1216366",
+    "page": 180,
+    "document": "Studio di impatto ambientale Parco Eolico Civitas",
+    "excerpt": "Per come detto in precedenza, è previsto che la fase di realizzazione del parco eolico abbia una durata stimata in 18 mesi articolata nelle seguenti fasi:"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "San Severo",
+   "San Paolo Di Civitate",
+   "Torremaggiore"
+  ],
+  "coordinate": {
+   "lat": 41.73244,
+   "lon": 15.31021,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (10 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1216244",
+    "page": 1,
+    "document": "Layout aereogeneratori IGM",
+    "excerpt": "Layout aereogeneratori IGM"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.73244,15.31021",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Civitas S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "civitas1@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1231184",
+      "page": 1,
+      "document": "Richiesta integrazioni MiC",
+      "excerpt": "Alla Società Civitas S.r.l. (civitas1@pec.it)"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11552"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1216341",
+      "page": 3,
+      "document": "Studio Anemologico",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "2024-VPE- Gemsa Pro S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0302056980",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1216341",
+      "page": 3,
+      "document": "Studio Anemologico",
+      "excerpt": "- Via Matteotti, 311 – SCALA P – Int.10 – 25063 Gardone Val Trompia (BS) Tel. 030 2056980 – Fax 030 831100"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "del cantiere",
+    "start": 0.0,
+    "end": 1.98,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Accesso al Parco - Adeguamento Strade esistenti",
+    "start": 1.0,
+    "end": 5.1,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Accesso al Parco - Realizzazione Strade nuove",
+    "start": 1.96,
+    "end": 8.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole di servizio",
+    "start": 6.04,
+    "end": 8.94,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di fondazioni",
+    "start": 5.01,
+    "end": 9.42,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio aerogeneratori",
+    "start": 8.03,
+    "end": 16.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione SET - Sottostazione Elettrica Trasformazione",
+    "start": 12.09,
+    "end": 17.03,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione dell'edificio di controllo",
+    "start": 15.0,
+    "end": 17.03,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di linea elettrica sotterranea",
+    "start": 7.99,
+    "end": 15.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Interventi di mitigazione",
+    "start": 13.99,
+    "end": 17.97,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smobilizzo del cantiere",
+    "start": 15.96,
+    "end": 17.95,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 17.97,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1216309",
+   "page": 2,
+   "document": "Cronoprogramma Parco Eolico",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 2 settimane (3), 4 settimane (3), 6 settimane (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1216366",
+    "page": 180,
+    "document": "Studio di impatto ambientale Parco Eolico Civitas",
+    "excerpt": "Per come detto in precedenza, è previsto che la fase di realizzazione del parco eolico abbia una durata stimata in 18 mesi articolata nelle seguenti fasi:"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma Parco Eolico",
+   "url": "https://va.mite.gov.it/File/Documento/1216309"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma in immagine (lettura automatica, da verificare)"
+ },
+ "documentazione": {
+  "documenti": 185,
+  "pagine": 2045,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Civitas S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 79.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SAN PAOLO DI CIVITATE",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "45 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
