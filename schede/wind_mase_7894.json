@@ -1,0 +1,879 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7894",
+ "title": "Progetto di un impianto eolico, denominato \"Ciavatta\", costituito da 13 aerogeneratori della potenza nominale di 6 MW, e della potenza complessiva di 78 MW, e dalle relative opere di connessione alla rete di trasmissione elettrica nazionale, da realizzarsi nel Comune di Serracapriola (FG) e di Rotello (CB).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7894",
+ "source": "mase",
+ "updated": "2026-11-11",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "78 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7894",
+    "excerpt": "78 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "13",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 7 (62), 6 (16), 1 (7)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/573667",
+    "page": 2,
+    "document": "Avviso al pubblico del 17/01/2022",
+    "excerpt": "elettrica 380/150 kV avverrà nel comune di Rotello (CB), in Molise; e prevede l’installazione di 13 aerogeneratori ciascuno di potenza nominale pari a 6,0 MW, per una potenza d'impianto complessiva pari a P= 78 MW. Gli a"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/662790",
+    "page": 31,
+    "document": "Integrazioni 11/07/2022 2_1_Studio_naturalistico-VINCA_parte_1",
+    "excerpt": "habitat utilizzabile, è un fattore da considerare per le costruzioni eoliche sia terrestri sia offshore. Tali"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 06/06/2022 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/504767",
+    "page": 7,
+    "document": "Piano particellare d'esproprio - Relazione descrittiva",
+    "excerpt": "sarebbe dovuto nel caso di esproprio dell'area e, per ogni mese o frazione di mese, una indennità pari ad un dodicesimo di quella annua. Si stima per l’esecuzione dei lavori un periodo di tempo di 12 mesi. Per la tipolog"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Molise",
+  "provincia": "CB",
+  "comuni": [
+   "Serracapriola",
+   "Di Rotello"
+  ],
+  "coordinate": {
+   "lat": 41.78719,
+   "lon": 15.17933,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (6 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/504789",
+    "page": 1,
+    "document": "Tavole di interesse archeologico",
+    "excerpt": "Tavole di interesse archeologico"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.78719,15.17933",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "EDP Renewables Italia Holding S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "01832190035",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lepetit 8/10 20124 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "edprenewablesitaliaholding@legalmail.it",
+     "occurrences": 53,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/650016",
+      "page": 1,
+      "document": "Richiesta integrazioni - CTVA",
+      "excerpt": "Alla EDP Renewables Italia Holding S.r.l., edprenewablesitaliaholding@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "gpsd@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/504768",
+      "page": 1,
+      "document": "Piano particellare d'esproprio - Elenco ditte e indennità",
+      "excerpt": "via Marco Partipilo n.48 - 70124 BARI pec: gpsd@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "dipartimento.ambiente.territorio@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/740706",
+      "page": 2,
+      "document": "Parere della Regione Puglia - SEZIONE AUTORIZZAZIONI AMBIENTALI in data 16/12/2022",
+      "excerpt": "Dipartimento Ambiente, Paesaggio e Qualità Urbana dipartimento.ambiente.territorio@pec.rupar.puglia.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "opec298111.20220705175228.104486.811.1.708.47@pec.aruba.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/765417",
+      "page": 52,
+      "document": "Controdeduzioni della Società edp renewables italia holding Srl alla nota prot.15778 del 16 dicembre 2022 della Regione Puglia contenente D.G.R. n. 1791 del 5 dicembre 2022",
+      "excerpt": "Serial ID : lug-05-2022 18:12:01 opec298111.20220705175228.104486.811.1.708.47@pec.aruba.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "opec298111.20220705175228.104849.683.1.563.42@pec.aruba.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/765417",
+      "page": 54,
+      "document": "Controdeduzioni della Società edp renewables italia holding Srl alla nota prot.15778 del 16 dicembre 2022 della Regione Puglia contenente D.G.R. n. 1791 del 5 dicembre 2022",
+      "excerpt": "Serial ID : lug-05-2022 18:12:43 opec298111.20220705175228.104849.683.1.563.42@pec.aruba.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "privacy.italia@edpr.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/765417",
+      "page": 48,
+      "document": "Controdeduzioni della Società edp renewables italia holding Srl alla nota prot.15778 del 16 dicembre 2022 della Regione Puglia contenente D.G.R. n. 1791 del 5 dicembre 2022",
+      "excerpt": "Lepetit n. 8 (di seguito, la “Società” o il \"Titolare\") che può essere contattata al seguente indirizzo email privacy.italia@edpr.com, la informa - in qualità di titolare del trattamento - che i dati personali"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7894"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Maxima Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "06948690729",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Marco Partipilo 48 70124 Bari Ba",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "massimo.magnotta@maximaingegneria.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/504726",
+      "page": 4,
+      "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+      "excerpt": "Indirizzo e-mail: massimo.magnotta@maximaingegneria.com- Pec: gpsd@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "annalisa.gentile@maximaingegneria.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/504726",
+      "page": 4,
+      "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+      "excerpt": "Indirizzo e-mail: annalisa.gentile@maximaingegneria.com PEC:"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "I.V.P.C. Power 8 S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02523350649",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Fersina 23 38123 Trento Tn",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ivpcpower8@pec.ivpc.com",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/504784",
+      "page": 1,
+      "document": "4.3.11.2.1 Schema unifilare Stazione Rotello 380-150 kV",
+      "excerpt": "108 Indirizzo email ivpcpower8@pec.ivpc.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Metrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@metrix.it",
+     "occurrences": 30,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662808",
+      "page": 32,
+      "document": "Integrazioni 11/07/2022 9_Studio_di_impatto_acustico_revB",
+      "excerpt": "Tel. 0922 992053 info@metrix.it – www.metrix.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "g.conversano@stimeng.it",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662780",
+      "page": 238,
+      "document": "Integrazioni 11/07/2022 11_1_Relazione_paesaggistica_integrazione_",
+      "excerpt": "Ord. Ing. Bari 3755 g.conversano@stimeng.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@stimeng.it",
+     "occurrences": 24,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662780",
+      "page": 1,
+      "document": "Integrazioni 11/07/2022 11_1_Relazione_paesaggistica_integrazione_",
+      "excerpt": "080/5210232 segreteria@stimeng.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "stimdue@stimeng.it",
+     "occurrences": 21,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662780",
+      "page": 238,
+      "document": "Integrazioni 11/07/2022 11_1_Relazione_paesaggistica_integrazione_",
+      "excerpt": "Ord. Ing. Bari 3755 stimdue@stimeng.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "d.buccolieri@stimeng.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662785",
+      "page": 8,
+      "document": "Integrazioni 11/07/2022 11_5_Fotoinserimenti_MIC",
+      "excerpt": "d.buccolieri@stimeng.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "a.perago@stimeng.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662808",
+      "page": 1,
+      "document": "Integrazioni 11/07/2022 9_Studio_di_impatto_acustico_revB",
+      "excerpt": "Ord. ing. Bari 5931 a.perago@stimeng.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Massimo Candeo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "m.candeo@pec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/504792",
+      "page": 1,
+      "document": "Inquadramento di dettaglio vincoli da PPTR e Regolamento 24_2010",
+      "excerpt": "70125 Bari m.candeo@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Gabriele Conversano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gabrieleconversano@pec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/504792",
+      "page": 1,
+      "document": "Inquadramento di dettaglio vincoli da PPTR e Regolamento 24_2010",
+      "excerpt": "70122 Bari gabrieleconversano@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "SOLAR-KONZEPT Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@solar-konzept.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/504784",
+      "page": 1,
+      "document": "4.3.11.2.1 Schema unifilare Stazione Rotello 380-150 kV",
+      "excerpt": "www.solar-konzept.de info@solar-konzept.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3409196155",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/504784",
+      "page": 1,
+      "document": "4.3.11.2.1 Schema unifilare Stazione Rotello 380-150 kV",
+      "excerpt": "Galleria Vintler 17 - IT 39100 Bolzano (BZ) Tel +39 3409196155"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "potenzialmente_realizzato",
+  "label": "Potenzialmente realizzato",
+  "reason": "La fine lavori prevista (05/12/2023) è passata e non ci sono documenti successivi: verificare se l'impianto è in esercizio."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "06/06/2022 → 01/12/2023",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/504726",
+     "page": 51,
+     "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+     "excerpt": ""
+    }
+   },
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "decreto n. 1 del 20/12/2021",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/793140",
+     "page": 1,
+     "document": "Parere dell'Ente AdB Autorita' di Bacino Distrettuale dell'Appennino Meridionale in data 08/03/2023",
+     "excerpt": "Piano - ai sensi degli artt. 65 e 66 del D. Lgs. 152/2006 e delle relative misure di salvaguardia ai sensi dell’art. 65 c. 7 e 8 del medesimo decreto - adottato con Delibera CIP n° 1 del 20/12/2021. In attesa del DPCM di"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di dicembre 2021",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/793140",
+     "page": 1,
+     "document": "Parere dell'Ente AdB Autorita' di Bacino Distrettuale dell'Appennino Meridionale in data 08/03/2023",
+     "excerpt": "Piano - ai sensi degli artt. 65 e 66 del D. Lgs. 152/2006 e delle relative misure di salvaguardia ai sensi dell’art. 65 c. 7 e 8 del medesimo decreto - adottato con Delibera CIP n° 1 del 20/12/2021. In attesa del DPCM di"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di maggio 2023",
+    "dettaglio": "inizio stimato + durata del cantiere: 18 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/504726",
+     "page": 51,
+     "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "decreto n. 1",
+   "data": "20/12/2021",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/793140",
+    "page": 1,
+    "document": "Parere dell'Ente AdB Autorita' di Bacino Distrettuale dell'Appennino Meridionale in data 08/03/2023",
+    "excerpt": "Piano - ai sensi degli artt. 65 e 66 del D. Lgs. 152/2006 e delle relative misure di salvaguardia ai sensi dell’art. 65 c. 7 e 8 del medesimo decreto - adottato con Delibera CIP n° 1 del 20/12/2021. In attesa del DPCM di"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Interferenza nel periodo dal",
+    "start": 0.0,
+    "end": 10.95,
+    "level": 0,
+    "dates": [
+     "2022-07-04",
+     "2023-06-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Dette lavorazioni interferiscono fra loro per i seguenti periodi: dal",
+    "start": 0.0,
+    "end": 0.86,
+    "level": 0,
+    "dates": [
+     "2022-07-04",
+     "2022-07-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "per lavorativi, dal",
+    "start": 7.37,
+    "end": 8.22,
+    "level": 0,
+    "dates": [
+     "2023-02-13",
+     "2023-03-10"
+    ],
+    "summary": false
+   },
+   {
+    "name": "giorni lavorativi, dal",
+    "start": 9.21,
+    "end": 10.07,
+    "level": 0,
+    "dates": [
+     "2023-04-10",
+     "2023-05-05"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Interferenza nel periodo dal",
+    "start": 5.99,
+    "end": 11.91,
+    "level": 0,
+    "dates": [
+     "2023-01-02",
+     "2023-06-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Dette lavorazioni interferiscono fra loro per i seguenti periodi: dal",
+    "start": 5.99,
+    "end": 11.91,
+    "level": 0,
+    "dates": [
+     "2023-01-02",
+     "2023-06-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Interferenza nel periodo dal",
+    "start": 5.99,
+    "end": 10.95,
+    "level": 0,
+    "dates": [
+     "2023-01-02",
+     "2023-06-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Dette lavorazioni interferiscono fra loro per i seguenti periodi: dal",
+    "start": 0.0,
+    "end": 4.97,
+    "level": 0,
+    "dates": [
+     "2023-01-02",
+     "2023-06-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Interferenza nel periodo dal",
+    "start": 10.59,
+    "end": 10.95,
+    "level": 0,
+    "dates": [
+     "2023-11-20",
+     "2023-11-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Dette lavorazioni interferiscono fra loro per i seguenti periodi: dal",
+    "start": 10.59,
+    "end": 10.95,
+    "level": 0,
+    "dates": [
+     "2023-11-20",
+     "2023-11-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "DURATA DEL CANTIERE 379 543",
+    "start": 0.0,
+    "end": 17.86,
+    "level": 0,
+    "dates": [
+     "2022-06-06",
+     "2023-11-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "FORMAZIONE STRADA E PIAZZOLA-DURATA 242 347",
+    "start": 0.46,
+    "end": 11.88,
+    "level": 0,
+    "dates": [
+     "2022-06-20",
+     "2023-06-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OPERE DI FONDAZIONE 20 26",
+    "start": 0.92,
+    "end": 1.78,
+    "level": 0,
+    "dates": [
+     "2022-07-04",
+     "2022-07-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OPERE ELETTRICHE DI CONNESSIONE 213 306",
+    "start": 2.76,
+    "end": 12.83,
+    "level": 0,
+    "dates": [
+     "2022-08-29",
+     "2023-06-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OPERE EDILI STAZIONE UTENTE 24 33",
+    "start": 3.91,
+    "end": 5.0,
+    "level": 0,
+    "dates": [
+     "2022-10-03",
+     "2022-11-04"
+    ],
+    "summary": false
+   },
+   {
+    "name": "MONTAGGI ELETTROMECCANICI STAZIONE UTENTE 20 26",
+    "start": 5.07,
+    "end": 5.92,
+    "level": 0,
+    "dates": [
+     "2022-11-07",
+     "2022-12-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio degli aereogeneratori 224 320",
+    "start": 6.91,
+    "end": 17.43,
+    "level": 0,
+    "dates": [
+     "2023-01-02",
+     "2023-11-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Smobilizzo del cantiere 10 12",
+    "start": 17.5,
+    "end": 17.89,
+    "level": 0,
+    "dates": [
+     "2023-11-20",
+     "2023-12-01"
+    ],
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 17.89,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/504726",
+   "page": 51,
+   "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "giu 22",
+     "start": -0.164,
+     "end": 0.836
+    },
+    {
+     "label": "lug 22",
+     "start": 0.836,
+     "end": 1.836
+    },
+    {
+     "label": "ago 22",
+     "start": 1.836,
+     "end": 2.836
+    },
+    {
+     "label": "set 22",
+     "start": 2.836,
+     "end": 3.836
+    },
+    {
+     "label": "ott 22",
+     "start": 3.836,
+     "end": 4.836
+    },
+    {
+     "label": "nov 22",
+     "start": 4.836,
+     "end": 5.836
+    },
+    {
+     "label": "dic 22",
+     "start": 5.836,
+     "end": 6.836
+    },
+    {
+     "label": "gen 23",
+     "start": 6.836,
+     "end": 7.836
+    },
+    {
+     "label": "feb 23",
+     "start": 7.836,
+     "end": 8.836
+    },
+    {
+     "label": "mar 23",
+     "start": 8.836,
+     "end": 9.836
+    },
+    {
+     "label": "apr 23",
+     "start": 9.836,
+     "end": 10.836
+    },
+    {
+     "label": "mag 23",
+     "start": 10.836,
+     "end": 11.836
+    },
+    {
+     "label": "giu 23",
+     "start": 11.836,
+     "end": 12.836
+    },
+    {
+     "label": "lug 23",
+     "start": 12.836,
+     "end": 13.836
+    },
+    {
+     "label": "ago 23",
+     "start": 13.836,
+     "end": 14.836
+    },
+    {
+     "label": "set 23",
+     "start": 14.836,
+     "end": 15.836
+    },
+    {
+     "label": "ott 23",
+     "start": 15.836,
+     "end": 16.836
+    },
+    {
+     "label": "nov 23",
+     "start": 16.836,
+     "end": 17.836
+    },
+    {
+     "label": "dic 23",
+     "start": 17.836,
+     "end": 18.836
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/504767",
+    "page": 7,
+    "document": "Piano particellare d'esproprio - Relazione descrittiva",
+    "excerpt": "sarebbe dovuto nel caso di esproprio dell'area e, per ogni mese o frazione di mese, una indennità pari ad un dodicesimo di quella annua. Si stima per l’esecuzione dei lavori un periodo di tempo di 12 mesi. Per la tipolog"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "06/06/2022",
+    "iso": "2022-06-06",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/504726",
+     "page": 2,
+     "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+     "excerpt": "Data inizio lavori: 06/06/2022 Data fine lavori (presunta):"
+    }
+   },
+   {
+    "label": "Fine lavori",
+    "date": "05/12/2023",
+    "iso": "2023-12-05",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/504726",
+     "page": 2,
+     "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+     "excerpt": "Data fine lavori (presunta): 05/12/2023 Durata in giorni (presunta):"
+    }
+   }
+  ],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 146,
+  "pagine": 3422,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "EDP Renewables Italia Holding s.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 78.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SERRACAPRIOLA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CB",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Molise",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "La fine lavori prevista (05/12/2023) è passata e non ci sono documenti successivi: verificare se l'impianto è in esercizio."
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "221 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
