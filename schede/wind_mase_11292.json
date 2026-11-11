@@ -1,0 +1,680 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11292",
+ "title": "Progetto di un impianto eolico denominato \"Sa Murta\" costituito da 11 aerogeneratori, ciascuno della potenza di 7,2 MW, per una potenza complessiva di 79,2 MW da realizzarsi nei Comuni di Mandas (CA) Gesico (CA) ed Escolca (CA) e delle relative opere di connessione alla RTN ricadenti anche nel Comune di Genoni (CA).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11292",
+ "source": "mase",
+ "updated": "2026-11-11",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "79,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11292",
+    "excerpt": "79,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "11",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 166 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 3 (12), 2 (11), 7 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1165013",
+    "page": 1,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "Progetto definitivo per la realizzazione di un parco eolico composto da 11 aerogeneratori da 7,2 MW per una potenza complessiva di 79,2 MW sito nei Comuni di"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1164964",
+    "page": 7,
+    "document": "Analisi costi benefici",
+    "excerpt": "aree: eolico offshore e accumuli."
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 17 mesi (4), 6 mesi (2), 19 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1165013",
+    "page": 256,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "sullo stato fitosanitario degli individui vegetali eventualmente interessati dall’impatto. Durante la fase di corso d’opera ed in fase post-operam sino a 12 mesi dalla chiusura del cantiere, l’intera superficie interessa"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "CA",
+  "comuni": [
+   "Mandas  Gesico  Ed Escolca"
+  ],
+  "coordinate": {
+   "lat": 39.63996,
+   "lon": 9.0865,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (136 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1165013",
+    "page": 17,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "N 39°38'12.29\"N 9° 3'41.15\"E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.63996,9.08650",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 39.64098,
+   "lon": 9.09054,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1165013",
+    "page": 180,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "507769"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=39.64098,9.09054"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Sa Murta S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wpdsamurtasrl@legalmail.it",
+     "occurrences": 210,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1165013",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Tel: +39 (06) 960 353 01 PEC: wpdsamurtasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "wpdsamurtasri@legalmaii.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1164971",
+      "page": 1,
+      "document": "Planimetria con vincoli - allegato e) (3 di5)",
+      "excerpt": "be think energy PEC: wpdsamurtasri@legalmaii.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11292"
+   }
+  },
+  {
+   "name": "Inse S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "tecnico@insesrl.it",
+     "occurrences": 198,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1165013",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "tel. 081 579 7998 mail: tecnico@insesrl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0815797998",
+     "occurrences": 203,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1165013",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "80129 - Napoli (NA) tel. 081 579 7998"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1165013",
+    "page": 1,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "Progettazione INSE Srl"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Opificio Innova S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "06960353",
+     "occurrences": 222,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1165013",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Cagliari (CA) c/o Opificio Innova S.r.l. Tel: +39 (06) 960 353 01"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geol. Vittorio Emanuele Iervolino",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "geologoiervolino@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1165036",
+      "page": 1,
+      "document": "Relazione Geologica e di Caratterizzazione Geotecnica e Sismica",
+      "excerpt": "cell. 3203539199 email: geologoiervolino@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3203539199",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1165036",
+      "page": 1,
+      "document": "Relazione Geologica e di Caratterizzazione Geotecnica e Sismica",
+      "excerpt": "Geol. Vittorio Emanuele Iervolino cell. 3203539199"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1164963",
+      "page": 20,
+      "document": "Calcoli preliminari delle strutture",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1164963",
+      "page": 20,
+      "document": "Calcoli preliminari delle strutture",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Andrea Mandras",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "andrea.mandras@cbsm.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1189775",
+      "page": 42,
+      "document": "Osservazioni della Regione Autonoma della Sardegna - Assessorato della difesa dell'ambiente, in data 17/12/2024",
+      "excerpt": "Ing. Andrea Mandras andrea.mandras@cbsm.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Paolo Cassaro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "paolo.cassaro@cbsm.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1189775",
+      "page": 42,
+      "document": "Osservazioni della Regione Autonoma della Sardegna - Assessorato della difesa dell'ambiente, in data 17/12/2024",
+      "excerpt": "Geom. Paolo Cassaro paolo.cassaro@cbsm.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "BioPhilia Wind&Sun S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "infobio@biophilia.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444348",
+      "page": 2,
+      "document": "\"Integrazioni del 29/10/2026 - Report di monitoraggio faunistico ante operam\"",
+      "excerpt": "CCIAA Bari/P.IVA/C.F. 08785430722 R.E.A. 649838 - Capitale Sociale 10.000,00 € i.v. Tweb: www.biophilia.eu - mail: infobio@biophilia.eu"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "ISO 9001 certificata da Bureau Veritas Italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiorinnovabili.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1164975",
+      "page": 2,
+      "document": "Valutazione Previsionale Impatto Acustico",
+      "excerpt": "Azienda con sistema di gestione qualità ISO 9001 certificata da Bureau Veritas Italia S.p.A. www.studiorinnovabili.it - info@studiorinnovabili.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "16 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "SONDAGGI E INDAGINI DI LABORATORIO",
+    "start": 0.99,
+    "end": 2.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REDAZIONE PROGETTO ESECUTIVO",
+    "start": 1.99,
+    "end": 4.99,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Realizzazione piazzola MG03 - MG04",
+    "start": 6.99,
+    "end": 8.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzola MG05 - MG06",
+    "start": 7.99,
+    "end": 9.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzola MG07 - MG08",
+    "start": 8.99,
+    "end": 10.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazione MG03 - MG04",
+    "start": 7.99,
+    "end": 9.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazione MG05 - MG06",
+    "start": 8.99,
+    "end": 10.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazione MG07 - MG08",
+    "start": 9.99,
+    "end": 11.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione area stazione e lavori civili",
+    "start": 8.99,
+    "end": 14.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Montaggi elettromeccanici",
+    "start": 9.99,
+    "end": 15.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Cavidotto sottocampo 2 (MG10 - MG09 - SE 30/150 kV)",
+    "start": 8.99,
+    "end": 10.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Cavidotto sottocampo 3 (MG07 - MG08 - MG03 - SE 30/150 kV)",
+    "start": 9.99,
+    "end": 11.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Cavidotto sottocampo 4 (MG06 - MG05 - MG04 - SE 30/150 kV)",
+    "start": 10.99,
+    "end": 12.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Cavidotto sottocampo 5 (MG11 - SE 30/150 kV)",
+    "start": 11.99,
+    "end": 13.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Cavidotto esterno al parco 1000 mm2 (SE 30/150 kV - SE condivisa-utente)",
+    "start": 12.99,
+    "end": 15.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Rete di terra",
+    "start": 12.99,
+    "end": 14.99,
+    "level": 1,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 15.99,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1165009",
+   "page": 2,
+   "document": "Cronoprogramma delle attività",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 17 mesi (4), 6 mesi (2), 19 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1165013",
+    "page": 256,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "sullo stato fitosanitario degli individui vegetali eventualmente interessati dall’impatto. Durante la fase di corso d’opera ed in fase post-operam sino a 12 mesi dalla chiusura del cantiere, l’intera superficie interessa"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma delle attività",
+   "url": "https://va.mite.gov.it/File/Documento/1165009"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma dei Lavori Opere Elettriche",
+    "url": "https://va.mite.gov.it/File/Documento/1165021"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 162,
+  "pagine": 4144,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "WPD SA MURTA S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 79.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GENONI, MANDAS",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "44 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
