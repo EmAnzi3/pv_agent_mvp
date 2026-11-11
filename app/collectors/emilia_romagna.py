@@ -651,6 +651,19 @@ class EmiliaRomagnaCollector(BaseCollector):
         if candidates:
             return str(candidates[0]["value"])
 
+        # titles cut by the portal or written without unit: 'POTENZA PARI A 9,98704' (the description says
+        # MW). A decimal number below 1.000 after «potenza ... pari a / di» is read as MW, an integer of
+        # 1.000 or more as kW; anything else is left empty rather than guessed.
+        m = re.search(
+            r"\bpotenza(?:\s+(?:nominale|complessiva|di\s+picco|installata|massima))?\s+(?:pari\s+a|di)\s+"
+            r"([0-9]{1,3}(?:\.[0-9]{3})+|[0-9]+(?:,[0-9]+)?)(?![0-9.,]*\s*(?:MWh|kWh))\s*(?:$|[\s\-–(),;\"'])",
+            text, flags=re.IGNORECASE)
+        if m:
+            raw = m.group(1)
+            if "," in raw and float(raw.replace(",", ".")) < 1000:
+                return f"{raw} MW"
+            if re.fullmatch(r"[0-9]{1,3}(?:\.[0-9]{3})+|[0-9]{4,}", raw):
+                return f"{raw} kW"
         return None
 
     def _build_external_id(self, detail_url: str) -> str:
