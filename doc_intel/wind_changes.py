@@ -121,7 +121,9 @@ def _same(field: str, a, b) -> bool:
 
 def _progress(field: str, old, new) -> bool:
     if field == "readiness":
-        return LEVELS.get((new or "").split(" · ")[0], 0) > LEVELS.get((old or "").split(" · ")[0], 0)
+        lv_new, lv_old = LEVELS.get((new or "").split(" · ")[0], 0), LEVELS.get((old or "").split(" · ")[0], 0)
+        # «Bassa · in iter» on a project just read is not a step forward; Media/Alta or authorised is
+        return lv_new > lv_old and (lv_new >= 2 or "autorizz" in (new or "").lower())
     if field in ("ferx", "contractor"):
         return bool(set(new or []) - set(old or []))
     if field == "card":
