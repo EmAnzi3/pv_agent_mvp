@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico di potenza complessiva pari a 19,947 MW, e relative opere per la connessione alla RTN, denominato \"Di Benedetto 1\" da realizzarsi nei territori del Comune di Craco (MT), come",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8636",
  "source": "mase",
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "28,47 ha",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Valore prevalente negli elaborati; altri valori: 29,5 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/662118",
     "page": 170,
@@ -49,12 +49,25 @@
    "label": "Superficie coperta dai pannelli",
    "value": "9,394 ha",
    "status": "da documenti",
-   "sub": "33% dell'area",
+   "sub": "33% dell'area · Valore prevalente negli elaborati; altri valori: 8,666 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1385760",
     "page": 33,
     "document": "Allegato alla Determinazione della PCM - Parere CTPNRR PNIEC del 23/01/2025",
     "excerpt": "arboree. Nelle aree di impianto non si è rilevata la presenza di siti contaminati. Il totale della superficie coperta dai moduli fotovoltaici è pari a 93.936,08 m² (a seguito della modifica della tipologia di moduli foto"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "10 MW / 30 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 20 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1174699",
+    "page": 51,
+    "document": "Integrazioni del 15/11/2024 - A1 - RELAZIONE GENERALE-signed",
+    "excerpt": "La potenza nominale del BESS è stata scelta attorno a circa il 50 % della potenza nominale dell’impianto, portando la scelta di accumulo di potenza pari 10 MW (potenza dell’impianto pari a circa 20 MWp)."
    }
   },
   {
@@ -78,17 +91,17 @@
    "Craco"
   ],
   "coordinate": {
-   "lat": 40.3789,
-   "lon": 16.41906,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (13 riferimenti concordi)",
+   "lat": 40.38112,
+   "lon": 16.38274,
+   "tipo": "centro della tavola georeferenziata di progetto (32 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/662118",
-    "page": 101,
-    "document": "G13908A01 - A13 - SIA-01 - STUDIO DI IMPATTO AMBIENTALE-signed",
-    "excerpt": "Luogo geografico Ubicazione Parametri progetto Benedetto 1 &2 Latitudine 40.38 °N Albedo 0.22 Italia Longitudine 16.39 °E"
+    "url": "https://va.mite.gov.it/File/Documento/662008",
+    "page": 1,
+    "document": "G13908A01 - A.2-6 - CARTA IDROGEOLOGICA-signed-signed",
+    "excerpt": "G13908A01 - A.2-6 - CARTA IDROGEOLOGICA-signed-signed"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.37890,16.41906",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.38112,16.38274",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -110,7 +123,7 @@
     {
      "type": "PEC",
      "value": "ambrasolare40@legalmail.it",
-     "occurrences": 98,
+     "occurrences": 341,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/662114",
       "page": 1,
@@ -122,6 +135,44 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8636"
+   }
+  },
+  {
+   "name": "Ambra Solare 39 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "16111141004",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Tevere 41 00198 Roma Rm",
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1174813",
+    "page": 43,
+    "document": "Integrazioni del 15/11/2024 - B.1 - PIANO DI GESTIONE E MANUTENZIONE IMPIANTO-signed",
+    "excerpt": "COMMITTENTE: AMBRA SOLARE 39 SRL"
+   }
+  },
+  {
+   "name": "Geol. Antonio Dibiase",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1174790",
+    "page": 48,
+    "document": "Integrazioni del 15/11/2024 - A2.1 - RELAZIONE GEOLOGICA-signed",
+    "excerpt": "I geologi Dott. Antonio Dibiase"
    }
   },
   {
@@ -158,7 +209,7 @@
     {
      "type": "E-mail",
      "value": "info@powertis.com",
-     "occurrences": 18,
+     "occurrences": 58,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/662114",
       "page": 2,
@@ -175,6 +226,44 @@
       "page": 1,
       "document": "Integrazioni del 18/08/2023 - G13908A01 - 5a - DOCUMENTAZIONE FOTOGRAFICA_signed-signed",
       "excerpt": "Via della Pineta 1 - 85100 - Potenza email: info@gvcingegneria.it -"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "progettazione@nuovaatlantide.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662010",
+      "page": 2,
+      "document": "G13908A01 - A.3 - RELAZIONE IDRAULICA-signed-signed",
+      "excerpt": "ambrasolare40@legalmail.it progettazione@nuovaatlantide.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ambra Solare 17 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "15946181003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Tevere 41 00198 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ambrasolare17srl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1174787",
+      "page": 1,
+      "document": "Integrazioni del 15/11/2024 - A12d02 - TIPOLOGICI PER MITIGAZIONE-signed",
+      "excerpt": "Via XX Settembre n.1 - 00187 ROMA, Italia ambrasolare17srl@legalmail.it"
      }
     }
    ],
@@ -196,7 +285,7 @@
     {
      "type": "PEC",
      "value": "paolo_castelli@pec.it",
-     "occurrences": 192,
+     "occurrences": 386,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/662117",
       "page": 2,
@@ -207,7 +296,7 @@
     {
      "type": "E-mail",
      "value": "paolo_castelli@hotmail.it",
-     "occurrences": 192,
+     "occurrences": 386,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/662117",
       "page": 2,
@@ -242,12 +331,36 @@
     {
      "type": "E-mail",
      "value": "antoniobruscella@hotmail.it",
-     "occurrences": 59,
+     "occurrences": 101,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1174700",
       "page": 1,
       "document": "Integrazioni del 15/11/2024 - A10 - CRONOPROGRAMMA-signed",
       "excerpt": "Piazza Alcide De Gasperi 27 - 85100 - Potenza email: antoniobruscella@hotmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Geologo Potenza",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "e-mail..galileopz@virgilio.it",
+     "occurrences": 62,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1174791",
+      "page": 2,
+      "document": "Integrazioni del 15/11/2024 - A2.10 - REPORT INDAGINI GEOGNOSTICHE ESEGUITE-signed",
+      "excerpt": "Galileo – Via dei Gerani 59/B - 85100 - Potenza - (PZ) – E-Mail..galileopz@virgilio.it - Cell. – 3207644905"
      }
     }
    ],
@@ -301,7 +414,7 @@
     {
      "type": "Telefono",
      "value": "3342284087",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/662117",
       "page": 21,
@@ -426,9 +539,16 @@
     "summary": false
    },
    {
-    "name": "CAVIDOTTO AT DI VETTORIAMENTO",
-    "start": 6.66,
+    "name": "CAVIDOTTO MT",
+    "start": 6.16,
     "end": 9.66,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE SOTTOSTAZIONE E STALLO DI CONNESSIONE",
+    "start": 2.91,
+    "end": 9.41,
     "level": 0,
     "summary": false
    },
@@ -471,9 +591,9 @@
   "unit": "month",
   "months": 12.16,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/1174700",
+   "url": "https://va.mite.gov.it/File/Documento/662024",
    "page": 2,
-   "document": "Integrazioni del 15/11/2024 - A10 - CRONOPROGRAMMA-signed",
+   "document": "G13908A01 - A.10 - CRONOPROGRAMMA-signed-signed",
    "excerpt": ""
   },
   "asse": {
@@ -545,7 +665,7 @@
   "duration": {
    "text": "260 giorni (circa 9 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 settimane (circa 2 mesi) (2), 12 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 settimane (circa 2 mesi) (6), 12 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1385760",
     "page": 22,
@@ -561,8 +681,8 @@
   "note": null,
   "altri": [
    {
-    "document": "G13908A01 - A.10 - CRONOPROGRAMMA-signed-signed",
-    "url": "https://va.mite.gov.it/File/Documento/662024"
+    "document": "Integrazioni del 15/11/2024 - A10 - CRONOPROGRAMMA-signed",
+    "url": "https://va.mite.gov.it/File/Documento/1174700"
    }
   ],
   "durate_fasi": [],
@@ -570,9 +690,9 @@
  },
  "documentazione": {
   "documenti": 300,
-  "pagine": 1303,
+  "pagine": 3011,
   "completa": false,
-  "da_leggere": 180
+  "da_leggere": 60
  },
  "confronto": [
   {
@@ -603,8 +723,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "668 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1455 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
