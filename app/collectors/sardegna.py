@@ -160,7 +160,8 @@ class SardegnaCollector(BaseCollector):
                 continue
 
             seen_ids.add(external_id)
-            if not normalized.get("power") and normalized.get("url") and normalized["url"] != NEWS_URL:
+            if (not normalized.get("power") or not normalized.get("proponent")) and normalized.get("url") \
+                    and normalized["url"] != NEWS_URL:
                 self._enrich_from_notice(normalized)
             matched_blocks.append(normalized)
 
@@ -867,7 +868,19 @@ class SardegnaCollector(BaseCollector):
 
         return None
 
+    LEGAL_FORM = (r"(?:S\.?\s?r\.?\s?l\.?(?:\s?s\.?)?|S\.?\s?p\.?\s?A\.?|S\.?\s?a\.?\s?s\.?|S\.?\s?n\.?\s?c\.?|"
+                  r"S\.?\s?c\.?\s?a\.?\s?r\.?\s?l\.?|S\.?\s?C\.?\s?p\.?\s?A\.?|GmbH|Ltd\.?|B\.?V\.?|S\.?A\.?S\.?|SE)")
+
     def _extract_proponent(self, text: str) -> str | None:
+        # a company name ending with its legal form ("Proponente: Società Apollo Decimoputzu S.r.l.") is the
+        # most reliable reading: tried first, so free text after it is never taken
+        for lead in (r"Societ[àa]\s+Proponente\s*:?", r"Proponente\s*:", r"(?:La|dalla)\s+Societ[àa]", r"Proponente"):
+            m = re.search(lead + r"\s*(?:Societ[àa]\s+)?([A-Z0-9][^:;|\n]{1,120}?\b" + self.LEGAL_FORM + r")(?![A-Za-z])",
+                          text, flags=re.IGNORECASE)
+            if m:
+                value = self._clean_text(m.group(1)).strip(" ,:;")
+                if 2 <= len(value) <= 150:
+                    return value
         patterns = [
             r"Società Proponente\s*:?\s*(.+?)(?:,\s+per\s+la\s+quale|;\s+per\s+la\s+quale|\s+per\s+la\s+quale|$)",
             r"Societa Proponente\s*:?\s*(.+?)(?:,\s+per\s+la\s+quale|;\s+per\s+la\s+quale|\s+per\s+la\s+quale|$)",

@@ -344,6 +344,35 @@ def html_progress_table(rows: list[dict[str, Any]], note: str) -> str:
             f"<th>Cosa è cambiato</th></tr></thead><tbody>{''.join(body)}</tbody></table>")
 
 
+def missing_fields(record: dict[str, Any]) -> list[str]:
+    miss = []
+    if not record.get("power_mw"):
+        miss.append("MW")
+    if clean(record.get("proponent")) in ("", "n/d"):
+        miss.append("proponente")
+    if clean(record.get("municipalities")) in ("", "n/d") and clean(record.get("province")) in ("", "n/d"):
+        miss.append("localizzazione")
+    return miss
+
+
+def html_missing_table(rows: list[dict[str, Any]]) -> str:
+    """New records with empty key fields: shown, not hidden, so they are checked before publishing."""
+    if not rows:
+        return ""
+    body = []
+    for r in rows:
+        url = url_of(r)
+        title = esc(title_of(r))
+        title = f'<a href="{esc(url)}" target="_blank" rel="noopener noreferrer">{title}</a>' if url else title
+        body.append(f"<tr><td>{esc(source_of(r))}</td><td>{esc(clean(r.get('region')))}</td><td>{title}</td>"
+                    f"<td><strong>{esc(', '.join(missing_fields(r)))}</strong></td></tr>")
+    return ("<section><h2>Nuovi progetti con dati mancanti (" + str(len(rows)) + ")</h2>"
+            "<p class=\"small\">Campi non trovati nel portale. Si completano da soli dalla scheda documentale "
+            "(lettura notturna dopo la pubblicazione) al prossimo aggiornamento; se restano vuoti, vanno segnalati.</p>"
+            "<table><thead><tr><th>Fonte</th><th>Regione</th><th>Titolo</th><th>Mancano</th></tr></thead><tbody>"
+            + "".join(body) + "</tbody></table></section>")
+
+
 def build_html(result: dict[str, Any]) -> str:
     added = result["added"]
     removed = result["removed"]
@@ -451,6 +480,7 @@ ul {{
 
   <section>{html_progress_table(result.get("progress", []), result.get("progress_note", ""))}</section>
   <section>{html_record_table("Nuovi progetti", added)}</section>
+  {html_missing_table([r for r in added if missing_fields(r) and "terna" not in url_of(r)])}
   <section>{html_changed_table(changed)}</section>
   <section>{html_record_table("Progetti rimossi", removed)}</section>
 </main>
