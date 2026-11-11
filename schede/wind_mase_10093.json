@@ -1,0 +1,688 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10093",
+ "title": "Progetto di un impianto eolico costituito da 9 aerogeneratori con potenza massima di immissione pari a 75 MW, comprensiva di sistema di accumulo da 15,6 MW, e relative opere connesse ricadenti nei Comuni di Seneghe, Narbolia, San Vero Milis, Zeddiani, Siamaggiore e Solarussa.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10093",
+ "source": "mase",
+ "updated": "2026-11-11",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "75 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10093",
+    "excerpt": "75 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da verificare",
+   "sub": "9,38 MW ciascuno · altezza mozzo 125 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 9 (80), 4 (7), 2 (7)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/885509",
+    "page": 149,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "La configurazione originaria di layout era composta da 9 aerogeneratori, localizzati in agro del Comune di Seneghe (8 WTG) e nel territorio comunale di Narbolia (1 WTG) secondo quanto riportato nella Figura 9.1."
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "15,6 MW / 31,2 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 22,2 MW (26), 52,8 MW (7), 59,4 MW (7)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/885309",
+    "page": 1,
+    "document": "Avviso al pubblico del 09/08/2023",
+    "excerpt": "“Impianto eolico nei Comuni di Seneghe e Narbolia - Potenza massima in immissione di 75 MW comprensiva di sistema di accumulo integrato da 15,60 MW” compreso nella tipologia elencata nell'Allegato II alla Parte Seconda d"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (12)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/885509",
+    "page": 228,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "Per la realizzazione degli interventi previsti dal presente progetto può stimarsi una durata indicativa dei lavori di circa 18 mesi con uno sviluppo delle attività ipotizzato secondo quanto riportato nel cronoprogramma r"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "OR",
+  "comuni": [
+   "Siamaggiore",
+   "Zeddiani",
+   "Solarussa",
+   "Narbolia",
+   "Seneghe",
+   "San Vero Milis"
+  ],
+  "coordinate": {
+   "lat": 40.0711,
+   "lon": 8.56142,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (99 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/885512",
+    "page": 142,
+    "document": "Studio previsionale di impatto acustico",
+    "excerpt": "[m] NA10 1.461.895 4.433.589 236,8 Siemens Gamesa SG 6.6... Yes Siemens Gamesa SG 6.6-170!!-6.600 6.600"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.07110,8.56142",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Sorgenia Renewables S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sorgeniarenewables@sorgenia.it",
+     "occurrences": 4695,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/885509",
+      "page": 1,
+      "document": "Studio di impatto ambientale - Relazione generale",
+      "excerpt": "Via Algardi, 4 - 20148 Milano (MI) sorgeniarenewables@sorgenia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10093"
+   }
+  },
+  {
+   "name": "Dott. Ing. Giuseppe Frongia",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/885510",
+    "page": 1,
+    "document": "Mappa del campo sonoro generato dall'impianto eolico",
+    "excerpt": "Progettazione: Dott. Ing. Giuseppe Frongia"
+   }
+  },
+  {
+   "name": "I.A.T. Consulenza e progetti S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "direttore@iatprogetti.it",
+     "occurrences": 129,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/885512",
+      "page": 142,
+      "document": "Studio previsionale di impatto acustico",
+      "excerpt": "+39 070 658297 Giuseppe Frongia / direttore@iatprogetti.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/885509",
+    "page": 1,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "PROGETTAZIONE I.A.T. CONSULENZA E PROGETTI S.R.L."
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Dott. Arch. Carlo Vigo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "carlo.vigo@archiworld.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1118573",
+      "page": 75,
+      "document": "Integrazioni del 11/07/2024 - Stralcio norme tecniche di attuazione strumenti urbanistici",
+      "excerpt": "- Piazza Tristani, 7 - 09127 - Cagliari - Tel:070 3511303 - e-mail: carlo.vigo@archiworld.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0703511303",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1118573",
+      "page": 75,
+      "document": "Integrazioni del 11/07/2024 - Stralcio norme tecniche di attuazione strumenti urbanistici",
+      "excerpt": "- Piazza Tristani, 7 - 09127 - Cagliari - Tel:070 3511303 - e-mail: carlo.vigo@archiworld.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento del cantiere",
+    "start": 0.0,
+    "end": 0.35,
+    "level": 2,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Attività di tracciamento 408",
+    "start": 0.0,
+    "end": 1.63,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Approvvigionamento materiali",
+    "start": 0.35,
+    "end": 4.47,
+    "level": 2,
+    "duration": "90 g",
+    "summary": false
+   },
+   {
+    "name": "Interventi percorso stradale Porto di Oristano - 308",
+    "start": 0.0,
+    "end": 1.17,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Piste di cantiere e approntamento pi: zole",
+    "start": 0.3,
+    "end": 2.55,
+    "level": 2,
+    "duration": "50 g",
+    "summary": true
+   },
+   {
+    "name": "Apertura di piste e splateamento Piazzole sog",
+    "start": 0.32,
+    "end": 2.54,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Apertura di piste e splateamento Piazzole 408",
+    "start": 0.32,
+    "end": 2.09,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fonda: 1578",
+    "start": 0.58,
+    "end": 7.74,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Scavo plinti SEO5-SE02-SE03-SE04-SE08",
+    "start": 0.62,
+    "end": 4.28,
+    "level": 3,
+    "duration": "80 g",
+    "summary": false
+   },
+   {
+    "name": "Scavo plinti da SEO7-SEO6-NA10-NAOS 708",
+    "start": 0.78,
+    "end": 3.92,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni in c.a. e rinterri",
+    "start": 0.92,
+    "end": 7.77,
+    "level": 3,
+    "duration": "150 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linea interrata 30kV",
+    "start": 0.99,
+    "end": 7.77,
+    "level": 2,
+    "duration": "153 g",
+    "summary": true
+   },
+   {
+    "name": "Scavi, posa linee 30KV, rinterri e ripristini",
+    "start": 1.1,
+    "end": 7.97,
+    "level": 3,
+    "duration": "150 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di cabina di sezionamento 108",
+    "start": 4.38,
+    "end": 4.74,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Strade e piazzole",
+    "start": 1.45,
+    "end": 6.44,
+    "level": 2,
+    "duration": "110 g",
+    "summary": true
+   },
+   {
+    "name": "Completamento strade e piazzole 1108",
+    "start": 1.49,
+    "end": 6.3,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Trasporto aerogeneratori 758",
+    "start": 7.79,
+    "end": 11.22,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Installazione aerogeneratori 908",
+    "start": 8.15,
+    "end": 12.26,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Completamento opere civile ripristini",
+    "start": 12.32,
+    "end": 16.84,
+    "level": 3,
+    "duration": "100 g",
+    "summary": false
+   },
+   {
+    "name": "Collegamenti elettrici WTG 458",
+    "start": 8.59,
+    "end": 10.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civili stazione di utenza",
+    "start": 11.66,
+    "end": 14.27,
+    "level": 3,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "fed Installazione componenti elettromeccanici 308",
+    "start": 14.32,
+    "end": 15.71,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Montaggi elettromeccanici 158",
+    "start": 14.43,
+    "end": 15.12,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Completamento opere per connessione alla RTN10 g",
+    "start": 15.14,
+    "end": 15.58,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Allestimento sezione BESS 958",
+    "start": 10.65,
+    "end": 15.03,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Realizzazione recinzione e preparazione dell'are",
+    "start": 10.67,
+    "end": 11.57,
+    "level": 3,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione basamenti container BESS 158",
+    "start": 11.57,
+    "end": 12.26,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Fornitura e install ine container BESS 308",
+    "start": 12.26,
+    "end": 13.63,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti e opere elettromeccanici",
+    "start": 13.63,
+    "end": 14.55,
+    "level": 3,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione opere di finitura e collaudo",
+    "start": 14.55,
+    "end": 15.0,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Collaudo impianto eolico 208",
+    "start": 15.72,
+    "end": 16.47,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Collaudo linee 30kV",
+    "start": 16.54,
+    "end": 16.93,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Avviamento parco eolico",
+    "start": 16.97,
+    "end": 17.39,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Attività logo progetto",
+    "start": 9.8,
+    "end": 11.45,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Divisione Attività esterne Progetto: SR-BP-RC9_Cronoprogr",
+    "start": 9.85,
+    "end": 11.38,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Data: ven cardine Cardine esterno",
+    "start": 5.47,
+    "end": 6.99,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "I Attività inattiva Riepilogo",
+    "start": 5.5,
+    "end": 6.99,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "period",
+  "months": 17.39,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/885442",
+   "page": 5,
+   "document": "Cronoprogramma degli interventi",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0,
+     "end": 1
+    },
+    {
+     "label": "Mese 2",
+     "start": 1,
+     "end": 2
+    },
+    {
+     "label": "Mese 3",
+     "start": 2,
+     "end": 3
+    },
+    {
+     "label": "4",
+     "start": 3,
+     "end": 4
+    },
+    {
+     "label": "Mese 5",
+     "start": 4,
+     "end": 5
+    },
+    {
+     "label": "Mese 6",
+     "start": 5,
+     "end": 6
+    },
+    {
+     "label": "7",
+     "start": 6,
+     "end": 7
+    },
+    {
+     "label": "Mese 8",
+     "start": 7,
+     "end": 8
+    },
+    {
+     "label": "Mese 9",
+     "start": 8,
+     "end": 9
+    },
+    {
+     "label": "Mese 10",
+     "start": 9,
+     "end": 10
+    },
+    {
+     "label": "Mese 11",
+     "start": 10,
+     "end": 11
+    },
+    {
+     "label": "12",
+     "start": 11,
+     "end": 12
+    },
+    {
+     "label": "13",
+     "start": 12,
+     "end": 13
+    },
+    {
+     "label": "14",
+     "start": 13,
+     "end": 14
+    },
+    {
+     "label": "15",
+     "start": 14,
+     "end": 15
+    },
+    {
+     "label": "16",
+     "start": 15,
+     "end": 16
+    },
+    {
+     "label": "17",
+     "start": 16,
+     "end": 17
+    },
+    {
+     "label": "18",
+     "start": 17,
+     "end": 18
+    },
+    {
+     "label": "19",
+     "start": 18,
+     "end": 19
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (12), 25 giorni (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/885509",
+    "page": 228,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "Per la realizzazione degli interventi previsti dal presente progetto può stimarsi una durata indicativa dei lavori di circa 18 mesi con uno sviluppo delle attività ipotizzato secondo quanto riportato nel cronoprogramma r"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 11/07/2024 - Cronoprogramma degli interventi",
+   "url": "https://va.mite.gov.it/File/Documento/1118622"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 11/07/2024 - Cronoprogramma degli interventi",
+    "url": "https://va.mite.gov.it/File/Documento/1118622"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma in immagine (lettura automatica, da verificare)"
+ },
+ "documentazione": {
+  "documenti": 529,
+  "pagine": 7295,
+  "completa": false,
+  "da_leggere": 229
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Sorgenia Renewables S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 75.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SENEGHE, NARBOLIA, SAN VERO MILIS, ZEDDIANI, SIAMAGGIORE, SOLARUSSA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "OR",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "139 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
