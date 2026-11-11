@@ -1,0 +1,491 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9777",
+ "title": "Progetto del \"Parco Eolico Gallura\", sito nei comuni di Tempio Pausania (OT), Luras (OT) e Calangianus (OT), costituito da 11 aerogeneratori dalla potenza complessiva pari a 79,2 MW, e un sistema di accumulo di energia (BESS) di potenza pari a 64,8 MW, per una potenza totale pari a 144 MW.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9777",
+ "source": "mase",
+ "updated": "2026-11-11",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "79,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9777",
+    "excerpt": "79,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "11",
+   "status": "da verificare",
+   "sub": "7,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore più ricorrente negli elaborati; altri valori: 8 (50), 3 (31), 49 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/843988",
+    "page": 1,
+    "document": "Avviso al pubblico del 19/05/2023",
+    "excerpt": "Ambientale del progetto di un impianto per la produzione di energia elettrica da fonte rinnovabile eolica si potenza complessiva in immissione pari a 144 MW, costituito da 11 aerogeneratori, ciascuno di potenza nominale "
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "64,8 MW / 64,8 MWh",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 144 MW (24), 79,2 MW (5), 4,536 MW (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/843988",
+    "page": 2,
+    "document": "Avviso al pubblico del 19/05/2023",
+    "excerpt": "pari a 114 m e rotore pari a 172 m), per una potenza complessiva installata pari a 79,2 MW, e un sistema di accumulo di energia (BESS, Battery Energy Storage System) di potenza pari a 64,8 MW."
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "8 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2), 28 settimane (circa 6 mesi) (1), 140 giorni (circa 5 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1342227",
+    "page": 9,
+    "document": "Integrazioni del 15/12/2025 - Soluzione Tecnica Minima Generale (STMG) di connessione alla RTN",
+    "excerpt": "i tempi di realizzazione delle opere RTN necessarie alla connessione sono 20 mesi per la realizzazione delle nuove SE RTN e 8 mesi + 1 mese/km per i raccordi e per il nuovo elettrodotto."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Calangianus",
+   "Tempio Pausania",
+   "Luras"
+  ],
+  "coordinate": {
+   "lat": 40.94389,
+   "lon": 9.14945,
+   "tipo": "coordinate del sito dichiarate negli elaborati (833 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/843897",
+    "page": 120,
+    "document": "RELAZIONE ARCHEOLOGICA - VPIA",
+    "excerpt": "extraurbana Coordinate: da Est a Ovest da 40°56'33.98\"N 9°10'22.08\"E a 40°56'20.73\"N 9°08'45.78\"E Toponomastica: Luras via Boccaccio e via Giovanni XXIII, loc. s. n. a sud di M. Aspris, loc. s. n. a sud di"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.94389,9.14945",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.94201,
+   "lon": 9.1691,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/843897",
+    "page": 114,
+    "document": "RELAZIONE ARCHEOLOGICA - VPIA",
+    "excerpt": "attualmente incolto e relativo alla futura Stazione Elettrica. Coordinate: da Nord a Sud da 40°56'31.23\"N 9°10'22.38\"E a 40°54'49.48\"N 9°10'06.90\"E Toponomastica: M. Toveddu, Stazione di Luras, Santu Bastianu, Canatu, La"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.94201,9.16910"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Sardegna Prime S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sardegnaprimesrl@pec.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/843988",
+      "page": 3,
+      "document": "Avviso al pubblico del 19/05/2023",
+      "excerpt": "Telefono _3392020261 PEC sardegnaprimesrl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9777"
+   }
+  },
+  {
+   "name": "Ing. Gaetano D'Oronzio",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/843964",
+    "page": 1,
+    "document": "Carta d'uso del suolo con area d'impianto",
+    "excerpt": "PROGETTISTA Ing. Gaetano D'Oronzio"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@lipu.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/910689",
+      "page": 1,
+      "document": "Osservazioni del Coordinatore regionale per la Sardegna della Lipu ODV (Lega Italiana Protezione Uccelli) dott.Francesco Guillot, in data 30/09/2023",
+      "excerpt": "Coordinamento reg. Lipu Sardegna Lipu è il partner italiano di BirdLife International sardegna@lipu.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geom. Maria Luisa Alivesi",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0792088335",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/857840",
+      "page": 30,
+      "document": "Osservazioni della Regione Autonoma della Sardegna - Direzione Generale dell'Ambiente data 20/06/2023",
+      "excerpt": "Servizio rimane a disposizione per ogni eventuale chiarimento: Geom. Maria Luisa Alivesi al numero di telefono 079/2088335, e-mail:"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Gian Pietro Oggiano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "079679989",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1349927",
+      "page": 1,
+      "document": "Richiesta Integrazioni della Città di Tempio Pausania - Provincia della Gallura Nord-Est Sardegna",
+      "excerpt": "Pagina 1 di 1 Piazza Gallura, 3 - 07029 Tempio Pausania tel. +39 079 679989/943 fax +39 079 679943"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento Cantiere",
+    "start": 0.0,
+    "end": 0.76,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione viabilità di cantiere",
+    "start": 0.79,
+    "end": 2.79,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole di montaggio",
+    "start": 0.79,
+    "end": 2.79,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni aerogeneratori",
+    "start": 1.8,
+    "end": 4.81,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Completamento viabilità e piazzole di montaggio",
+    "start": 3.83,
+    "end": 6.83,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizz. sottostazione di trasformazione SEU 150/33 kV",
+    "start": 1.8,
+    "end": 5.82,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione BESS",
+    "start": 2.81,
+    "end": 5.82,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linee di distribuzione Media Tensione",
+    "start": 2.81,
+    "end": 5.82,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linea di collegamento AT",
+    "start": 3.83,
+    "end": 5.82,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio Aerogeneratori",
+    "start": 4.83,
+    "end": 6.83,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Energizzazione Sottostazione e impianto eolico",
+    "start": 6.86,
+    "end": 7.85,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Commissioning aerogeneratori",
+    "start": 7.87,
+    "end": 9.87,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Entrate in esercizio impianto eolico",
+    "start": 9.9,
+    "end": 10.88,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristino opere civile e definizione piazzole definitive",
+    "start": 7.87,
+    "end": 10.88,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Chiusura cantiere",
+    "start": 10.9,
+    "end": 11.96,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 11.96,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/843905",
+   "page": 3,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "1 mese",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 18 mesi (2), 60 giorni (circa 2 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1342227",
+    "page": 9,
+    "document": "Integrazioni del 15/12/2025 - Soluzione Tecnica Minima Generale (STMG) di connessione alla RTN",
+    "excerpt": "i tempi di realizzazione delle opere RTN necessarie alla connessione sono 20 mesi per la realizzazione delle nuove SE RTN e 8 mesi + 1 mese/km per i raccordi e per il nuovo elettrodotto."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/843905"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 153,
+  "pagine": 3021,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Sardegna Prime S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 79.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TEMPIO PAUSANIA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "336 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
