@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-11 — Dati mancanti, segnalazioni dell'utente: (1) Sardegna: proponente letto prima di tutto come nome di società con forma giuridica («Proponente: Società Apollo Decimoputzu S.r.l.» → «Apollo Decimoputzu S.r.l.»), e pagina dell'avviso letta anche quando manca solo il proponente. (2) Completamento dalle schede (passo 3ZR, `fill-radar`): ora riempie anche il proponente vuoto con la società indicata come Proponente nei documenti (oltre a MW e localizzazione), così i MW presenti solo nei documenti (es. «Isola Barbieri AFV», SILVIA) entrano nel radar appena la scheda è pronta. (3) Report cambiamenti FV: nuova sezione «Nuovi progetti con dati mancanti», per vedere subito i record senza MW, proponente o localizzazione.
+
 - 2026-11-11 — Emilia-Romagna: potenza letta anche quando il titolo non riporta l'unità («IMPIANTO FOTOVOLTAICO "GATTEO" POTENZA PARI A 9,98704»): numero decimale sotto 1.000 = MW, intero da 1.000 in su = kW; altrimenti resta vuota.
 
 - 2026-11-11 — Report cambiamenti FV (`changes_latest.html` / `.csv`): nuova sezione «Avanzamenti verso il cantiere», come nel report eolico. Confronta i segnali del ramo di memoria (priorità cantiere, FER X, EPC nei documenti, notizie di stampa) tra la pubblicazione precedente di `docs/data.json` e oggi (`scripts/pv_signals.py`); se GitHub non è raggiungibile il report esce comunque, con una nota. Nel report FV e in quello eolico una priorità «Bassa · in iter» su un progetto appena letto non conta più come avanzamento.

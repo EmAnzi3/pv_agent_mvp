@@ -1,6 +1,6 @@
 """Fill EMPTY radar fields from the project cards (approved policy, 21/10/2026).
 
-Only empty fields are filled, never overwritten: power (MW), province, region, municipalities.
+Only empty fields are filled, never overwritten: power (MW), province, region, municipalities, proponent.
 A value is taken only when it is solid:
 * power: the card's power tile is 'verificato' (title confirmed by the documents) or 'da documenti'
   (most frequent plant power in the documents, at least 3 occurrences, no conflicting value flagged);
@@ -43,6 +43,11 @@ def card_values(card: dict) -> dict:
         out["region"] = loc["regione"]
     if loc.get("comuni"):
         out["municipalities"] = ", ".join(loc["comuni"])
+    # proponent: the company the documents name as Proponente (VAT checked on VIES when available)
+    prop = [x for x in card.get("soggetti") or [] if "Proponente" in (x.get("roles") or []) and x.get("name")]
+    prop.sort(key=lambda x: (not x.get("verified"), not x.get("vat")))
+    if prop:
+        out["proponent"] = prop[0]["name"]
     return out
 
 

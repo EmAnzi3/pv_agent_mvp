@@ -80,7 +80,7 @@ def main(argv: list[str] | None = None) -> int:
     qs.add_argument("--memory", required=True)
     sy = sub.add_parser("sync-schede", help="download the published project cards for the dashboard (docs/schede)")
     sy.add_argument("--out", default="reports/schede_cache")
-    fr = sub.add_parser("fill-radar", help="fill EMPTY radar fields (MW, province, region, municipalities) from the project cards")
+    fr = sub.add_parser("fill-radar", help="fill EMPTY radar fields (MW, province, region, municipalities, proponent) from the project cards")
     fr.add_argument("--data", required=True)
     fr.add_argument("--cards", default="reports/schede_cache")
     fr.add_argument("--audit", default="reports/fill_from_cards_audit.csv")
