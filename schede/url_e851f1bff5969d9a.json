@@ -5,7 +5,7 @@
  "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"CSPV LEVERANO\", di potenza pari a 19,578 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Nardò (LE).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9570",
  "source": "mase",
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "sintesi": [
   {
    "key": "potenza",
@@ -78,9 +78,9 @@
    "Nardò"
   ],
   "coordinate": {
-   "lat": 40.23307,
-   "lon": 18.02795,
-   "tipo": "centro della tavola georeferenziata di progetto (26 riferimenti concordi)",
+   "lat": 40.23184,
+   "lon": 18.02816,
+   "tipo": "centro della tavola georeferenziata di progetto (33 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/807949",
     "page": 1,
@@ -88,7 +88,7 @@
     "excerpt": "Planimetria dell'area di impianto con localizzazione georeferenziata"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.23307,18.02795",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.23184,18.02816",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -113,6 +113,25 @@
    }
   },
   {
+   "name": "Dott. Geol. Raffaele Nardone",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1294870",
+    "page": 27,
+    "document": "Integrazioni del 07/08/2025- Relazione geologica",
+    "excerpt": "Il Geologo Dott. Geol. Raffaele NARDONE"
+   }
+  },
+  {
    "name": "Dott. Andrea Lòpez Rodriguez",
    "kind": "persona",
    "roles": [
@@ -130,25 +149,6 @@
     "document": "Allegato al Decreto Provvedimento Unico in materia Ambientale Progetto di un impianto agrivoltaico, denominato \"CSPV LEVERANO\", di potenza pari a 19,578 MW, e delle relative opere di connessione alla ",
     "excerpt": "Progettista Dott. Andrea Lòpez Rodriguez"
    }
-  },
-  {
-   "name": "Geol. Raffaele Nardone",
-   "kind": "persona",
-   "roles": [
-    "Geologo"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1294870",
-    "page": 1,
-    "document": "Integrazioni del 07/08/2025- Relazione geologica",
-    "excerpt": "RELAZIONE GEOLOGICA Geol. Raffaele Nardone"
-   }
   }
  ],
  "altri_soggetti": [
@@ -165,7 +165,7 @@
     {
      "type": "PEC",
      "value": "egmproject@pec.it",
-     "occurrences": 1289,
+     "occurrences": 1589,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/807921",
       "page": 2,
@@ -176,7 +176,7 @@
     {
      "type": "E-mail",
      "value": "info@egmproject.it",
-     "occurrences": 1289,
+     "occurrences": 1589,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/807921",
       "page": 2,
@@ -222,12 +222,17 @@
   "bars": [],
   "unit": "month",
   "months": 1,
-  "source": null,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/807828",
+   "page": 2,
+   "document": "CRONOPROGRAMMA",
+   "excerpt": ""
+  },
   "asse": null,
   "duration": {
    "text": "26 settimane (circa 6 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 30 giorni (3), 3 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 30 giorni (4), 3 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1392848",
     "page": 13,
@@ -240,21 +245,122 @@
    "document": "CRONOPROGRAMMA",
    "url": "https://va.mite.gov.it/File/Documento/807828"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
-  "altri": [
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "altri": [],
+  "durate_fasi": [
    {
-    "document": "CRONOPROGRAMMA",
-    "url": "https://va.mite.gov.it/File/Documento/807828"
+    "name": "Recinzione e apprestamenti del cantiere",
+    "duration": "19 giorni",
+    "months": 0.62
+   },
+   {
+    "name": "Realizzazione della recinzione e degli accessi al cantiere",
+    "duration": "9 giorni",
+    "months": 0.3
+   },
+   {
+    "name": "Impianti di servizio del cantiere",
+    "duration": "18 giorni",
+    "months": 0.59
+   },
+   {
+    "name": "Realizzazione di impianto di messa a terra del cantiere",
+    "duration": "8 giorni",
+    "months": 0.26
+   },
+   {
+    "name": "Realizzazione di impianto elettrico del cantiere",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Lavori accessori per fotovoltaico a terra",
+    "duration": "83 giorni",
+    "months": 2.73
+   },
+   {
+    "name": "Scavi e rinterri",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "Scavo a sezione obbligata",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Rinterro di scavo eseguito a macchina",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Recinzione per fotovoltaico a terra",
+    "duration": "22 giorni",
+    "months": 0.72
+   },
+   {
+    "name": "Realizzazione della carpenteria per opere non strutturali",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Lavorazione e posa ferri di armatura per opere non strut",
+    "duration": "6 giorni",
+    "months": 0.2
+   },
+   {
+    "name": "Getto in calcestruzzo per opere non strutturali",
+    "duration": "6 giorni",
+    "months": 0.2
+   },
+   {
+    "name": "Fondazioni per fotovoltaico a terra",
+    "duration": "12 giorni",
+    "months": 0.39
+   },
+   {
+    "name": "Realizzazione della carpenteria per le strutture in fondaz",
+    "duration": "3 giorni",
+    "months": 0.1
+   },
+   {
+    "name": "Lavorazione e posa ferri di armatura per le strutture in fo",
+    "duration": "5 giorni",
+    "months": 0.16
+   },
+   {
+    "name": "Getto in calcestruzzo per le strutture in fondazione",
+    "duration": "4 giorni",
+    "months": 0.13
+   },
+   {
+    "name": "Impianti solari fotovoltaici",
+    "duration": "29 giorni",
+    "months": 0.95
+   },
+   {
+    "name": "Installazione di sistema di accumulo",
+    "duration": "14 giorni",
+    "months": 0.46
+   },
+   {
+    "name": "Realizzazione di impianto solare fotovoltaico",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Smobilizzo del cantiere",
+    "duration": "5 giorni",
+    "months": 0.16
    }
   ],
-  "durate_fasi": [],
   "metodo": null
  },
  "documentazione": {
   "documenti": 258,
-  "pagine": 2179,
+  "pagine": 2757,
   "completa": false,
-  "da_leggere": 138
+  "da_leggere": 19
  },
  "confronto": [
   {
@@ -286,7 +392,7 @@
  "da_verificare": [
   {
    "label": "Recapiti",
-   "reason": "147 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "151 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
