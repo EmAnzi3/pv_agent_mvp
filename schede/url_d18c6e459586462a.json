@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un nuovo impianto agrovoltaico, denominato \"Sterpara 1\", della potenza nominale pari a 19,88 MW, e relative opere di connessione alla rete, con sistema di accumulo da 10 MW, da realizzarsi nel Comune",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8632",
  "source": "mase",
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "41,4 ha",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Valore prevalente negli elaborati; altri valori: 29,6 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/670855",
     "page": 3,
@@ -48,8 +48,8 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "10 MW",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 18 MW (5), 19,88 MW (1), 2 MW (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 MW (42), 19,88 MW (3), 2 MW (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/670986",
     "page": 1,
@@ -61,8 +61,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "38 settimane (circa 9 mesi)",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1385428",
     "page": 4,
@@ -77,9 +77,19 @@
   "comuni": [
    "Montemilone"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Montemilone%2C+PZ%2C+Basilicata",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 40.03419,
+   "lon": 15.73349,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/670957",
+    "page": 6,
+    "document": "A_16_Relazione_Agronomica_Mitigazione_Miglioramento_Ambientale",
+    "excerpt": "considerando la stazione termometrica situata nel comune di Lavello denominata “Ofanto – Diga del Rendina” (codice stazione D09OFPZ) posta a 201,4 m s.l.m. con latitudine 40.03419 N e longitudine 15.73349 E."
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.03419,15.73349",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
@@ -100,12 +110,34 @@
     {
      "type": "PEC",
      "value": "ambrasolare29@legalmail.it",
-     "occurrences": 21,
+     "occurrences": 40,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/670986",
       "page": 1,
       "document": "Avviso al pubblico del 01/08/2022",
       "excerpt": "P.IVA 16110081003 PEC: ambrasolare29@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "alfonso.alto@gmail.com",
+     "occurrences": 307,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/670954",
+      "page": 2,
+      "document": "A_13a_Studio_di_Impatto_Ambientale",
+      "excerpt": "Committente AMBRA SOLARE 29 S.R.L. Phone & E-mail: +39 338 223 2467 alfonso.alto@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "alfonso.tortora@unibas.it",
+     "occurrences": 37,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/670957",
+      "page": 2,
+      "document": "A_16_Relazione_Agronomica_Mitigazione_Miglioramento_Ambientale",
+      "excerpt": "Committente AMBRA SOLARE 29 S.R.L. Phone & E-mail: +39 338 223 2467 – alfonso.tortora@unibas.it o alfonso.alto@gmail.com"
      }
     },
     {
@@ -210,7 +242,149 @@
    }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "Winderg Santo Stefano S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12610470960",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Trento 64 20871 Vimercate Mb",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "winderg@pecgiambelli.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/852222",
+      "page": 1,
+      "document": "Osservazioni della società Winderg S.r.L.",
+      "excerpt": "Winderg S.r.l. – Via Trento, 64 – 20871 Vimercate (MB) - Tel 039.6026270 - Fax 039.6026222 –Cap. Soc. €. 100.000,00i.v. Reg. Imprese Milano Monza Brianza Lodi, C.F. e P.IVA 04702520968 -direzione@winderg.it –PEC winderg@"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "windergsantostefanosrl@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1252544",
+      "page": 1,
+      "document": "Osservazioni della WINDERG SANTO STEFANO srl, in data 02/05/2025",
+      "excerpt": "Reg. Imprese Milano Monza Brianza Lodi - C.F e P.IVA 12610470960- direzione@winderg.it — PEC windergsantostefanosrl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "direzione@winderg.it",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1252544",
+      "page": 1,
+      "document": "Osservazioni della WINDERG SANTO STEFANO srl, in data 02/05/2025",
+      "excerpt": "Winderg Santo Stefano S.r.l. - Via Trento, 64 - 20871 Vimercate (MB) - Tel. 039.6026270 - Cap. Soc. €. 200.000,00 i.v. Reg. Imprese Milano Monza Brianza Lodi - C.F e P.IVA 12610470960- direzione@winderg.it — PEC"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "luca.mariani@winderg.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1252544",
+      "page": 3,
+      "document": "Osservazioni della WINDERG SANTO STEFANO srl, in data 02/05/2025",
+      "excerpt": "Per ogni comunicazione, il referente della Scrivente è il dott. Luca Mariani (Tel: 039 6026270; Cell: 340 7751934; mail: luca.mariani@winderg.it — direzione@winderg.it)"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0396026270",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1252544",
+      "page": 1,
+      "document": "Osservazioni della WINDERG SANTO STEFANO srl, in data 02/05/2025",
+      "excerpt": "Winderg Santo Stefano S.r.l. - Via Trento, 64 - 20871 Vimercate (MB) - Tel. 039.6026270 - Cap. Soc. €. 200.000,00 i.v."
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3407751934",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/852222",
+      "page": 7,
+      "document": "Osservazioni della società Winderg S.r.L.",
+      "excerpt": "Per ogni comunicazione, il referente di Winderg S.r.l. è il dott. Luca Mariani (Tel: 039/6026270; Cell. 340/7751934;"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "F4 Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "f4ingegneria@pec.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/670959",
+      "page": 2,
+      "document": "A_3_Relazione_idrologica_e_idraulica",
+      "excerpt": "F4 Ingegneria srl www.f4ingegneria.it - f4ingegneria@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Geol. Laurita Salvatore",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "salvalaurita@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/670958",
+      "page": 1,
+      "document": "A_2_Relazione_Geologica",
+      "excerpt": "Via Valle di Todaro, 63/G 85100 – Potenza (PZ) e-mail: salvalaurita@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "salvatorelaurita@epap.sicurezzapostale.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/670958",
+      "page": 1,
+      "document": "A_2_Relazione_Geologica",
+      "excerpt": "e-mail: salvalaurita@gmail.com PEC: salvatorelaurita@epap.sicurezzapostale.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
@@ -235,8 +409,8 @@
   "asse": null,
   "duration": {
    "text": "38 settimane (circa 9 mesi)",
-   "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1385428",
     "page": 4,
@@ -275,9 +449,9 @@
  },
  "documentazione": {
   "documenti": 152,
-  "pagine": 354,
-  "completa": false,
-  "da_leggere": 32
+  "pagine": 1048,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -308,12 +482,12 @@
  ],
  "da_verificare": [
   {
-   "label": "Durata cantiere",
+   "label": "Accumulo",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "20 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "66 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
