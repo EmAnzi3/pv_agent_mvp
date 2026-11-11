@@ -5,7 +5,7 @@
  "title": "Progetto per l'installazione di un impianto eolico, denominato \"Pranu Nieddu\", costituito da 13 aerogeneratori di potenza unitaria pari a 6,6 MW, per una potenza complessiva pari a 85,8 MW, da localizzarsi nel territorio comunale di Siurgus Donigala (SU), e dalle relative opere di connessioni per il collegamento alla RTN ricadenti nei Comuni di Suelli (SU) e Senorbi (SU) attraverso la stazione elettrica da realizzare nel Comune di Selegas (SU).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7840",
  "source": "mase",
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "sintesi": [
   {
    "key": "potenza",
@@ -23,26 +23,51 @@
    "key": "wtg",
    "label": "Aerogeneratori",
    "value": "13",
-   "status": "da documenti",
-   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 14 (18), 29 (12), 10 (9)",
+   "status": "da verificare",
+   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 14 (102), 29 (26), 10 (25)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/667914",
+    "url": "https://va.mite.gov.it/File/Documento/668065",
     "page": 3,
     "document": "Integrazioni del 18/05/2022 - V.1.11 Piano di gestione delle terre e rocce da scavo",
     "excerpt": "previsti dal D. Lgs. 152/2006 e successive modificazioni sulla gestione delle terre e rocce da scavo di un nuovo impianto per la produzione di energia mediante lo sfruttamento del vento costituito da n° 13 aerogeneratori"
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/667919",
+    "page": 87,
+    "document": "Integrazioni del 18/05/2022 - 1.11 - Disciplinare tecnico prestazionale",
+    "excerpt": "DNV-DS-J102:2010 Design and Manufacture of Wind Turbine Blades, Offshore and Onshore Wind Turbines"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "15 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 26,576 MW (1), 49 MW (1), 64 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1007510",
+    "page": 2,
+    "document": "Osservazioni della Comunità Montana del \"Sarcidano-Barbagia di Seulo\", in data 14/03/2024",
+    "excerpt": "6. Progetto di impianto agrivoltaico denominato \"SERRI\", dalla potenza di 39,33 MW, integrato con sistema di accumulo da 15 MW da realizzarsi nel Comune di Serri, con relative opere di connessione nei comuni di Isili (SU"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "17 mesi",
+   "value": "12 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (4), 13 mesi (3), 36 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 17 mesi (5), 20 mesi (5), 24 mesi (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/668070",
-    "page": 9,
-    "document": "Integrazioni del 18/05/2022 - V.1.16 Studio d'Incidenza Ambientale",
-    "excerpt": "in base al cronoprogramma preliminare elaborato, si stima una durata complessiva di installazione dell’impianto pari a circa 17 mesi, come si evince dal successivo cronoprogramma, elaborato 1.10."
+    "url": "https://va.mite.gov.it/File/Documento/480911",
+    "page": 53,
+    "document": "Relazione tecnica generale",
+    "excerpt": "il montaggio degli aerogeneratori e la loro messa in esercizio. La durata complessiva di queste attività si stima in circa 12 mesi dall’apertura del cantiere. Durante questa prima fase si procederà agli sbancamenti per r"
    }
   }
  ],
@@ -85,12 +110,34 @@
     {
      "type": "PEC",
      "value": "siurgus@pec.it",
-     "occurrences": 216,
+     "occurrences": 259,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/480911",
       "page": 1,
       "document": "Relazione tecnica generale",
       "excerpt": "C.F. e P.IVA 11189260968 PEC : siurgus@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "vma@eurowindenergy.com",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/528004",
+      "page": 1,
+      "document": "Controdeduzioni del proponente Siurgus S.r.l. alle osservazioni presentate dall'Azienda Agricola di De Muro Dolores in data 23/06/2021",
+      "excerpt": "Siurgus Srl via Michelangelo Buonarroti, Milano tel 3477051372 vma@eurowindenergy.com siurgus@pec.it Società soggetta a direzione e coordinamento di Eurowind Energy A/S"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3477051372",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/528004",
+      "page": 1,
+      "document": "Controdeduzioni del proponente Siurgus S.r.l. alle osservazioni presentate dall'Azienda Agricola di De Muro Dolores in data 23/06/2021",
+      "excerpt": "Siurgus Srl via Michelangelo Buonarroti, Milano tel 3477051372 vma@eurowindenergy.com siurgus@pec.it Società soggetta a direzione e coordinamento di Eurowind Energy A/S"
      }
     }
    ],
@@ -98,9 +145,89 @@
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7840"
    }
+  },
+  {
+   "name": "Sophos Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/481008",
+    "page": 4,
+    "document": "Tabulati di calcolo preliminare fondazioni aerogeneratori",
+    "excerpt": "Progettista: Sophos Engineering srl"
+   }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sardegna@pec.copagrisardegna.it",
+     "occurrences": 13,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/507661",
+      "page": 1,
+      "document": "Osservazioni dell'Associazione COPAGRI Sardegna in data 17/06/2021",
+      "excerpt": "Tel. +39.070.22125 – Fax 1782731547 e-mail: copagrisardegna@tiscali.it – sardegna@copagri.it – sardegna@pec.copagrisardegna.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sardegna@italianostra.org",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/502660",
+      "page": 52,
+      "document": "Osservazioni dell'Associazione Italia Nostra Sardegna onlus in data 18/05/2021",
+      "excerpt": "Italia Nostra Sardegna sardegna@italianostra.org"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sardegna@copagri.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/507661",
+      "page": 1,
+      "document": "Osservazioni dell'Associazione COPAGRI Sardegna in data 17/06/2021",
+      "excerpt": "Tel. +39.070.22125 – Fax 1782731547 e-mail: copagrisardegna@tiscali.it – sardegna@copagri.it – sardegna@pec.copagrisardegna.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sardegna@lipu.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/694365",
+      "page": 1,
+      "document": "Osservazioni dell'Associazione Lipu Sardegna in data 05/09/2022",
+      "excerpt": "sardegna@lipu.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  }
+ ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
@@ -399,14 +526,14 @@
    "unita": "mesi"
   },
   "duration": {
-   "text": "17 mesi",
+   "text": "12 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (4), 13 mesi (3), 36 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 17 mesi (5), 20 mesi (5), 24 mesi (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/668070",
-    "page": 9,
-    "document": "Integrazioni del 18/05/2022 - V.1.16 Studio d'Incidenza Ambientale",
-    "excerpt": "in base al cronoprogramma preliminare elaborato, si stima una durata complessiva di installazione dell’impianto pari a circa 17 mesi, come si evince dal successivo cronoprogramma, elaborato 1.10."
+    "url": "https://va.mite.gov.it/File/Documento/480911",
+    "page": 53,
+    "document": "Relazione tecnica generale",
+    "excerpt": "il montaggio degli aerogeneratori e la loro messa in esercizio. La durata complessiva di queste attività si stima in circa 12 mesi dall’apertura del cantiere. Durante questa prima fase si procederà agli sbancamenti per r"
    }
   },
   "milestones": [],
@@ -430,9 +557,9 @@
  },
  "documentazione": {
   "documenti": 413,
-  "pagine": 4133,
-  "completa": false,
-  "da_leggere": 113
+  "pagine": 7242,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -463,12 +590,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "451 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "553 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
