@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 import csv
 import html
 import json
@@ -324,6 +325,25 @@ def html_changed_table(changed: list[dict[str, Any]], max_rows: int = 500) -> st
     """
 
 
+def html_progress_table(rows: list[dict[str, Any]], note: str) -> str:
+    if not rows:
+        return f"<h2>Avanzamenti verso il cantiere</h2><p class=\"small\">{esc(note)}</p><p>Nessun record.</p>"
+    body = []
+    for item in rows:
+        r = item["record"]
+        diffs = "".join(f"<li><strong>{esc(d['label'])}</strong>: {esc(d['old'])} → {esc(d['new'])}</li>" for d in item["diffs"])
+        url = url_of(r)
+        title = esc(title_of(r))
+        title = f'<a href="{esc(url)}" target="_blank" rel="noopener noreferrer">{title}</a>' if url else title
+        loc = " - ".join(x for x in [clean(r.get("province")), clean(r.get("municipalities"))] if x) or "n/d"
+        body.append(f"<tr><td>{esc(source_of(r))}</td><td>{esc(clean(r.get('region')))}</td><td>{esc(loc)}</td>"
+                    f"<td>{esc(fmt_mw(r.get('power_mw')))}</td><td>{esc(clean(r.get('proponent')))}</td>"
+                    f"<td>{title}</td><td><ul>{diffs}</ul></td></tr>")
+    return (f"<h2>Avanzamenti verso il cantiere ({len(rows)})</h2><p class=\"small\">{esc(note)}</p><table><thead><tr>"
+            "<th>Fonte</th><th>Regione</th><th>Localizzazione</th><th>MW</th><th>Proponente</th><th>Titolo</th>"
+            f"<th>Cosa è cambiato</th></tr></thead><tbody>{''.join(body)}</tbody></table>")
+
+
 def build_html(result: dict[str, Any]) -> str:
     added = result["added"]
     removed = result["removed"]
@@ -356,7 +376,7 @@ h1 {{
 }}
 .cards {{
   display: grid;
-  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
   gap: 12px;
   margin: 18px 0 24px;
 }}
@@ -413,6 +433,7 @@ ul {{
   <p class="small">Generato il {esc(datetime.now().strftime("%d/%m/%Y %H:%M"))}</p>
 
   <div class="cards">
+    <div class="card"><strong>{len(result.get("progress", []))}</strong>Avanzamenti verso il cantiere</div>
     <div class="card"><strong>{len(added)}</strong>Nuovi progetti</div>
     <div class="card"><strong>{len(changed)}</strong>Record modificati</div>
     <div class="card"><strong>{len(removed)}</strong>Progetti rimossi</div>
@@ -428,6 +449,7 @@ ul {{
     </p>
   </section>
 
+  <section>{html_progress_table(result.get("progress", []), result.get("progress_note", ""))}</section>
   <section>{html_record_table("Nuovi progetti", added)}</section>
   <section>{html_changed_table(changed)}</section>
   <section>{html_record_table("Progetti rimossi", removed)}</section>
@@ -446,6 +468,16 @@ def write_csv(path: Path, result: dict[str, Any]) -> None:
             "change_type", "source", "region", "province", "municipalities",
             "mw", "proponent", "title", "field", "old_value", "new_value", "url"
         ])
+
+        for item in result.get("progress", []):
+            record = item["record"]
+            for diff in item["diffs"]:
+                writer.writerow([
+                    "progress", source_of(record), clean(record.get("region")),
+                    clean(record.get("province")), clean(record.get("municipalities")),
+                    fmt_mw(record.get("power_mw")), clean(record.get("proponent")),
+                    title_of(record, 300), diff["label"], diff["old"], diff["new"], url_of(record)
+                ])
 
         for record in result["added"]:
             writer.writerow([
@@ -480,12 +512,20 @@ def main() -> int:
     parser.add_argument("--new", required=True)
     parser.add_argument("--out-html", required=True)
     parser.add_argument("--out-csv", required=True)
+    parser.add_argument("--no-signals", action="store_true", help="skip the «avanzamenti verso il cantiere» section")
     args = parser.parse_args()
 
     old_records = load_records(Path(args.old))
     new_records = load_records(Path(args.new))
 
     result = compare(old_records, new_records)
+    if not args.no_signals:
+        try:
+            sys.path.insert(0, str(Path(__file__).resolve().parent))
+            from pv_signals import progress
+            result["progress"], result["progress_note"] = progress(new_records)
+        except Exception as exc:  # the report must come out anyway
+            result["progress"], result["progress_note"] = [], f"Segnali di cantiere non disponibili ({exc})"[:200]
 
     html_path = Path(args.out_html)
     csv_path = Path(args.out_csv)
@@ -501,6 +541,7 @@ def main() -> int:
     print(f"added: {len(result['added'])}")
     print(f"changed: {len(result['changed'])}")
     print(f"removed: {len(result['removed'])}")
+    print(f"progress: {len(result.get('progress', []))}")
     print(f"html: {html_path}")
     print(f"csv: {csv_path}")
 
