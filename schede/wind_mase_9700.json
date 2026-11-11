@@ -1,0 +1,549 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9700",
+ "title": "Progetto di un impianto eolico denominato progetto \"Parco Eolico Selva Wind\", costituito da n. 11 aerogeneratori, ciascuno di potenza nominale pari a 7,2 MW, per una potenza complessiva di 79,2 MW, sito nei comuni di Enna (EN), Piazza Armerina (EN) e Valguarnera Caropepe (EN).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9700",
+ "source": "mase",
+ "updated": "2026-11-11",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "79,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9700",
+    "excerpt": "79,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "11",
+   "status": "da verificare",
+   "sub": "7,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore più ricorrente negli elaborati; altri valori: 9 (124), 2 (46), 4 (37)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/818417",
+    "page": 2,
+    "document": "Avviso al Pubblico del 30/03/2030",
+    "excerpt": "e prevede la realizzazione di un impianto eolico per la produzione di energia elettrica da fonte rinnovabile eolica, costituito da 11 aerogeneratori, ciascuno di potenza nominale pari a 7,2 MW per una potenza complessiva"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1442725",
+    "page": 1,
+    "document": "Integrazioni del 09/10/2026 - Inquadramento del parco eolico di progetto e degli impianti FER rilevati nell'area vasta",
+    "excerpt": "Impianto agrivoltaico \"Piazza Armerina\" (cod. 10939 - DS ITALIA 9 SRL)*"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/818412",
+    "page": 40,
+    "document": "Studio di impatto ambientale (S.I.A.)",
+    "excerpt": "Parco Eolico Selva Wind sito nel Comune di Enna Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "EN",
+  "comuni": [
+   "Enna",
+   "Piazza Armerina",
+   "Valguarnera Caropepe"
+  ],
+  "coordinate": {
+   "lat": 37.46258,
+   "lon": 14.269,
+   "tipo": "centro della tavola georeferenziata di progetto (27 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/818327",
+    "page": 1,
+    "document": "VPIA_Template_Progetto_GNA_1.2",
+    "excerpt": "VPIA_Template_Progetto_GNA_1.2"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.46258,14.26900",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Selva Wind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0302056980",
+     "occurrences": 19,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/818395",
+      "page": 4,
+      "document": "Valutazione risorsa eolica e analisi producibilità",
+      "excerpt": "- Via Matteotti, 311 – SCALA P – Int.10 – 25063 Gardone Val Trompia (BS) Tel. 030 2056980 – Fax 030 831100"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9700"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/818395",
+      "page": 4,
+      "document": "Valutazione risorsa eolica e analisi producibilità",
+      "excerpt": "Tel. 030 2056980 – Fax 030 831100 E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geol. Domenico DEL Conte",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "domenico.delconte@geoapulia.it",
+     "occurrences": 325,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1442781",
+      "page": 2,
+      "document": "Integrazioni del 09/10/2026 - RELAZIONE GEOLOGICA",
+      "excerpt": "Cell. +39 329.7160866 Fax +39 0884.89012 E-mail: domenico.delconte@geoapulia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3297160866",
+     "occurrences": 325,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1442781",
+      "page": 2,
+      "document": "Integrazioni del 09/10/2026 - RELAZIONE GEOLOGICA",
+      "excerpt": "Corso Giannone, 184 - Cagnano Varano (FG) Cell. +39 329.7160866 Fax +39 0884.89012"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Studio Tecnico BFP S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "r.albanese@bfpgroup.net",
+     "occurrences": 87,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1442747",
+      "page": 15,
+      "document": "Integrazioni del 09/10/2026 - Studio evoluzione ombra (shadow flickering)",
+      "excerpt": "+39 080 5046361 roberta / r.albanese@bfpgroup.net"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Quercus pubescens s.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "carella.rocco@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/818371",
+      "page": 58,
+      "document": "Valutazione di Incidenza Ambientale",
+      "excerpt": "Realizzazione di un impianto eolico in territorio di Enna Studio Ambientale-Forestale Rocco Carella carella.rocco@gmail.com Tel. 3760819533"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3760819533",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/818371",
+      "page": 58,
+      "document": "Valutazione di Incidenza Ambientale",
+      "excerpt": "Realizzazione di un impianto eolico in territorio di Enna Studio Ambientale-Forestale Rocco Carella carella.rocco@gmail.com Tel. 3760819533"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Thesis Rinnovabili S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "thesisrinnovabilisrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1257186",
+      "page": 1,
+      "document": "Osservazioni della Società \"THESIS RINNOVABILI SRL\", in data 21/05/2025",
+      "excerpt": "La società \"THESIS RINNOVABILI SRL\" con sede legale in Via Umberto Giordano, 152 CAP 90144, comune Palermo (PA) Italia, P.IVA: 07146300822, PEC: thesisrinnovabilisrl@pec.it in persona"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "RILIEVI TOPOGRAFICI E PROVE DI LABORATORIO",
+    "start": 0.02,
+    "end": 0.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "PROGETTAZIONE ESECUTIVA",
+    "start": 0.51,
+    "end": 1.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "CANTIERIZZAZIONE",
+    "start": 1.5,
+    "end": 1.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE E PIAZZOLE",
+    "start": 2.0,
+    "end": 5.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE PLINTI DI FONDAZIONE",
+    "start": 4.5,
+    "end": 10.97,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTI",
+    "start": 3.0,
+    "end": 7.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ISTALLAZIONE AEROGENERATORI",
+    "start": 7.99,
+    "end": 13.96,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili",
+    "start": 8.98,
+    "end": 12.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere elettriche",
+    "start": 11.48,
+    "end": 14.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Colllaudi e connessione alla Rete",
+    "start": 14.47,
+    "end": 15.45,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "COMMISSIONING WTG",
+    "start": 13.97,
+    "end": 16.45,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "MESSA IN ESERCIZIO DELL'IMPIANTO",
+    "start": 16.46,
+    "end": 16.95,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "RIPRISTINI",
+    "start": 16.46,
+    "end": 17.95,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 17.95,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1442771",
+   "page": 5,
+   "document": "Integrazioni del 09/10/2026 - Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/818412",
+    "page": 40,
+    "document": "Studio di impatto ambientale (S.I.A.)",
+    "excerpt": "Parco Eolico Selva Wind sito nel Comune di Enna Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 09/10/2026 - Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1442771"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/818391"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 204,
+  "pagine": 5563,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "SELVA WIND S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 79.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ENNA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "EN",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "1057 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
