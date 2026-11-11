@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-11 — Emilia-Romagna: potenza letta anche quando il titolo non riporta l'unità («IMPIANTO FOTOVOLTAICO "GATTEO" POTENZA PARI A 9,98704»): numero decimale sotto 1.000 = MW, intero da 1.000 in su = kW; altrimenti resta vuota.
+
 - 2026-11-11 — Report cambiamenti FV (`changes_latest.html` / `.csv`): nuova sezione «Avanzamenti verso il cantiere», come nel report eolico. Confronta i segnali del ramo di memoria (priorità cantiere, FER X, EPC nei documenti, notizie di stampa) tra la pubblicazione precedente di `docs/data.json` e oggi (`scripts/pv_signals.py`); se GitHub non è raggiungibile il report esce comunque, con una nota. Nel report FV e in quello eolico una priorità «Bassa · in iter» su un progetto appena letto non conta più come avanzamento.
 
 - 2026-11-06 — Giri dal PC: dentro gli archivi zip le tavole grafiche (tavole, planimetrie, sezioni, profili, layout…) non vengono più analizzate; restano relazioni, cronoprogrammi, computi, pareri e atti. Un archivio da 70 MB di elaborati idraulici («Le Toppe», Basilicata) aveva richiesto 3 ore e 15 minuti.
