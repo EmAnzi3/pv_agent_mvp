@@ -1,0 +1,967 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "url:5e9044ba05c543ea",
+ "title": "Progetto di un nuovo impianto fotovoltaico della potenza nominale di 30 MW, denominato \"Sassari 02\", con annesso impianto di accumulo energetico della potenza di 90 MW e relative opere di connessione alla rete, ubicato nei Comuni di Sassari (SS) e Porto Torres (SS) su una superficie di ca. 43 ha. Il progetto prevede l'implementazione di un biomonitoraggio tramite apicoltura.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8094",
+ "source": "mase",
+ "updated": "2026-11-12",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "30 MW",
+   "sub": "Suddivisa in 3 lotti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8094",
+    "excerpt": "30 MW"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico · tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1444388",
+    "page": 4,
+    "document": "Capitolato Speciale d'Appalto",
+    "excerpt": "impianto agrivoltaico di proprietà della W SASSARI 02 S.r.l., avente sede legale alla Via"
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "43 ha",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/654362",
+    "page": 3,
+    "document": "Integrazioni del 23/06/2022 Riscontro alle richieste di integrazioni",
+    "excerpt": " La superficie complessiva di progetto è di 43 ha circa; "
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "90 MW / 180 MWh",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 30,884 MW (2), 30 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1444392",
+    "page": 1,
+    "document": "Verifica ottemperanza \"Sassari 02\" Decreto di Compatibilità Ambientale del MASE n. 315 del 04/11/2022 - Trasmissione Osservazioni",
+    "excerpt": "fotovoltaico, con potenza nominale pari a 30 MW, asservito da un sistema di accumulo dell'energia a batterie (BESS) della capacità di 90 MW, da ubicarsi all'interno del territorio comunale di Sassari. L'infrastruttura di"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "7 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 15 mesi (1), 6 mesi (1), 10-12 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/716460",
+    "page": 26,
+    "document": "Allegato al Decreto del Ministero della Transizione Ecologica - Parere Commissione Tecnica PNRR-PNIEC del 10/08/2022",
+    "excerpt": "- per la realizzazione dell’opera in progetto il tempo stimato è di circa 7 mesi e consecutivi, al quale si devono aggiungere i tempi per la progettazione esecutiva, nonché i procedimenti autorizzatori"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Sassari",
+   "Porto Torres"
+  ],
+  "coordinate": {
+   "lat": 40.82617,
+   "lon": 8.39042,
+   "tipo": "centro della tavola georeferenziata di progetto (12 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/595694",
+    "page": 11,
+    "document": "Stralcio PUC area impianto fotovoltaico ed opere di connessione",
+    "excerpt": "Stralcio PUC area impianto fotovoltaico ed opere di connessione"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.82617,8.39042",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "WHYSOL-E Sviluppo S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "10692360968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Meravigli 3 20123 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "whysol-e.sviluppo@legalmail.it",
+     "occurrences": 47,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444390",
+      "page": 1,
+      "document": "Comunicazione conclusione del procedimento ex art. 2 co.1 L. 241/90",
+      "excerpt": "Whysol-E Sviluppo Srl whysol-e.sviluppo@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@whysol.it",
+     "occurrences": 46,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444388",
+      "page": 1,
+      "document": "Capitolato Speciale d'Appalto",
+      "excerpt": "fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu info@whysol.it - wsassari02@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sviluppo.rinnovabili@whysol.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444390",
+      "page": 2,
+      "document": "Comunicazione conclusione del procedimento ex art. 2 co.1 L. 241/90",
+      "excerpt": "Email sviluppo.rinnovabili@whysol.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@whysol.it-whysol-e.sviluppo",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/595731",
+      "page": 1,
+      "document": "SSE - Impianto elettrico",
+      "excerpt": "Tal: +39 02 359605 info@whysol.it-whysol-e.sviluppo@Jegalmail.i1"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "i1jl-e.sviluppo@lagalmail.il",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/595732",
+      "page": 1,
+      "document": "SSE - Impianti e dispositivi antincendio",
+      "excerpt": "Tel: +39 02 359605 info@wh)'l!ol.il - why1;i1Jl-e.sviluppo@lagalmail.il"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3409243575",
+     "occurrences": 41,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/924807",
+      "page": 1,
+      "document": "Particolari struttura di sostegno moduli fotovoltaici e modalità di ancoraggio al suolo",
+      "excerpt": "Via Bartolomeo Ravenna, 14 - 73100 Lecce Mob. +39 340 9243575"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1444396",
+    "page": 1,
+    "document": "Aggiornamento modalità operative",
+    "excerpt": "Proponente:"
+   }
+  },
+  {
+   "name": "W Sassari 02 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "14015980965",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Meravigli 3 20123 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wsassari02@legalmail.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444388",
+      "page": 1,
+      "document": "Capitolato Speciale d'Appalto",
+      "excerpt": "fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu info@whysol.it - wsassari02@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8094"
+   }
+  },
+  {
+   "name": "Dott. Ing. Fabio Calcarella",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fabio.calcarella@ingpec.eu",
+     "occurrences": 62,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444388",
+      "page": 1,
+      "document": "Capitolato Speciale d'Appalto",
+      "excerpt": "fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu info@whysol.it - wsassari02@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "fabio.calcarella@gmail.com",
+     "occurrences": 798,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444388",
+      "page": 1,
+      "document": "Capitolato Speciale d'Appalto",
+      "excerpt": "fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu info@whysol.it - wsassari02@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1444391",
+    "page": 1,
+    "document": "DICHIARAZIONE DI NON INTERFERENZA CON ATTIVITÀ MINERARIE",
+    "excerpt": "IL PROGETTISTA Dott. Ing. Fabio Calcarella"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Inses S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "inses@facilepec.com",
+     "occurrences": 57,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444403",
+      "page": 78,
+      "document": "PREDISPOSIZIONE DI UNO STUDIO PEDOLOGICO, MIRATO ALLA CLASSIFICAZIONE DELLA CAPACITÀ D'USO DEI SUOLI INTERESSATI DALLA REALIZZAZIONE DI UN IMPIANTO DI PRODUZIONE DI ENERGIA DA FONTE SOLARE FOTOVOLTAIC",
+      "excerpt": "TEL/FAX 070/9313074 - C.F e P.IVA 03671710923 R.E.A. Cagliari n. 288894 Capitale Sociale € 20.000,00 E-mail - inses@tiscali.it - PEC inses@facilepec.com - Sito Web - WWW.insesanalisi .it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "inses@tiscali.it",
+     "occurrences": 57,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444403",
+      "page": 78,
+      "document": "PREDISPOSIZIONE DI UNO STUDIO PEDOLOGICO, MIRATO ALLA CLASSIFICAZIONE DELLA CAPACITÀ D'USO DEI SUOLI INTERESSATI DALLA REALIZZAZIONE DI UN IMPIANTO DI PRODUZIONE DI ENERGIA DA FONTE SOLARE FOTOVOLTAIC",
+      "excerpt": "TEL/FAX 070/9313074 - C.F e P.IVA 03671710923 R.E.A. Cagliari n. 288894 Capitale Sociale € 20.000,00 E-mail - inses@tiscali.it - PEC inses@facilepec.com - Sito Web - WWW.insesanalisi .it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sinergye Ring S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@sinergye.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/595735",
+      "page": 1,
+      "document": "SE - SASSARI 02 Sezioni elettromeccaniche SE di utenti",
+      "excerpt": "e_mail: info@sinergye.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "pipponobile@sinergye.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/595736",
+      "page": 1,
+      "document": "SE - SASSARI 02 Edificio comandi SE impianto Monet",
+      "excerpt": ". Ung 70125 BARI È 3 © Sinorgye Rings pipponobile@sinergye.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Consulnet S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "r.accossu@epap.conafpec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444403",
+      "page": 1,
+      "document": "PREDISPOSIZIONE DI UNO STUDIO PEDOLOGICO, MIRATO ALLA CLASSIFICAZIONE DELLA CAPACITÀ D'USO DEI SUOLI INTERESSATI DALLA REALIZZAZIONE DI UN IMPIANTO DI PRODUZIONE DI ENERGIA DA FONTE SOLARE FOTOVOLTAIC",
+      "excerpt": "E-mail accossu@tiscali.it - r.accossu@epap.conafpec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "accossu@tiscali.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444403",
+      "page": 1,
+      "document": "PREDISPOSIZIONE DI UNO STUDIO PEDOLOGICO, MIRATO ALLA CLASSIFICAZIONE DELLA CAPACITÀ D'USO DEI SUOLI INTERESSATI DALLA REALIZZAZIONE DI UN IMPIANTO DI PRODUZIONE DI ENERGIA DA FONTE SOLARE FOTOVOLTAIC",
+      "excerpt": "E-mail accossu@tiscali.it - r.accossu@epap.conafpec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3401893681",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444403",
+      "page": 1,
+      "document": "PREDISPOSIZIONE DI UNO STUDIO PEDOLOGICO, MIRATO ALLA CLASSIFICAZIONE DELLA CAPACITÀ D'USO DEI SUOLI INTERESSATI DALLA REALIZZAZIONE DI UN IMPIANTO DI PRODUZIONE DI ENERGIA DA FONTE SOLARE FOTOVOLTAIC",
+      "excerpt": "Dottore Agronomo Roberto Accossu -Via S. Pellico 1 - 09039 Villacidro (SU) Studio Z.I. Villacidro Strada A c/o Consulnet S.r.l. -Tel. 340/1893681- 348/3408649"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollogenerale@pec.enav.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1444390",
+      "page": 1,
+      "document": "Comunicazione conclusione del procedimento ex art. 2 co.1 L. 241/90",
+      "excerpt": "e p.c. ENAV SPA Operations protocollogenerale@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "10 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento cantiere",
+    "start": 0.0,
+    "end": 0.45,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sbancamenti e livellazioni",
+    "start": 0.22,
+    "end": 0.91,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione recinzione e cancelli",
+    "start": 0.68,
+    "end": 1.14,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per Cabine e posa manufatti",
+    "start": 1.14,
+    "end": 1.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per sottoservizi",
+    "start": 1.37,
+    "end": 5.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cablaggi cavi BT e MT interrati",
+    "start": 1.6,
+    "end": 6.22,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione strutture",
+    "start": 1.83,
+    "end": 9.22,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio moduli FV, QP e cablaggio",
+    "start": 2.07,
+    "end": 9.68,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzaizone cavidotto tra aree Ovest",
+    "start": 1.37,
+    "end": 2.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione strade",
+    "start": 1.14,
+    "end": 2.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotto esterno MT",
+    "start": 2.99,
+    "end": 4.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi e commissioning",
+    "start": 9.68,
+    "end": 10.14,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smobilizzo cantiere",
+    "start": 9.91,
+    "end": 10.38,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Altra sezione del cronoprogramma",
+    "separator": true,
+    "start": 0,
+    "end": 0,
+    "level": 0
+   },
+   {
+    "name": "Allestimento cantiere",
+    "start": 0.91,
+    "end": 1.37,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sbancamenti e livellazioni",
+    "start": 1.14,
+    "end": 1.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione recinzione e cancelli",
+    "start": 1.6,
+    "end": 2.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per fabbricato servizi",
+    "start": 1.83,
+    "end": 2.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazioe fabbricato servizi",
+    "start": 2.07,
+    "end": 4.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per sottoservizi",
+    "start": 2.53,
+    "end": 4.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione sottoservizi",
+    "start": 2.99,
+    "end": 4.38,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per apparecchiature AT",
+    "start": 3.91,
+    "end": 6.22,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione apparecchiature AT",
+    "start": 5.07,
+    "end": 6.68,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavi per Impianto trattamento acque",
+    "start": 1.83,
+    "end": 2.76,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione Impianto trattamento acque",
+    "start": 2.07,
+    "end": 2.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cablaggi BT. MT e AT",
+    "start": 3.22,
+    "end": 5.3,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione Trasfromatore MT/AT",
+    "start": 6.68,
+    "end": 7.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzaizone cavidotto AT da SSE a SE Terna",
+    "start": 6.91,
+    "end": 7.38,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi e commissioning",
+    "start": 7.37,
+    "end": 7.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smobilizzo cantiere",
+    "start": 7.6,
+    "end": 8.07,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 10.38,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/595763",
+   "page": 2,
+   "document": "Cronoprogramma lavori di costruzione - Cronoprogramma lavori di ripristino",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "W1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "W2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "W3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "W4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "W5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "W6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "W7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "W8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "W9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "W10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "W11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "W12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "W13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "W14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "W15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "W16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "W17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "W18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "W19",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "W20",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "W21",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "W22",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "W23",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "W24",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "W25",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "W26",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "W27",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "W28",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "W29",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "W30",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "W31",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "W32",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "W33",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "W34",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "W35",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "W36",
+     "start": 8.077,
+     "end": 8.308
+    },
+    {
+     "label": "W37",
+     "start": 8.308,
+     "end": 8.538
+    },
+    {
+     "label": "W38",
+     "start": 8.538,
+     "end": 8.769
+    },
+    {
+     "label": "W39",
+     "start": 8.769,
+     "end": 9.0
+    },
+    {
+     "label": "W40",
+     "start": 9.0,
+     "end": 9.231
+    },
+    {
+     "label": "W41",
+     "start": 9.231,
+     "end": 9.462
+    },
+    {
+     "label": "W42",
+     "start": 9.462,
+     "end": 9.692
+    },
+    {
+     "label": "W43",
+     "start": 9.692,
+     "end": 9.923
+    },
+    {
+     "label": "W44",
+     "start": 9.923,
+     "end": 10.154
+    },
+    {
+     "label": "W45",
+     "start": 10.154,
+     "end": 10.385
+    },
+    {
+     "label": "W46",
+     "start": 10.385,
+     "end": 10.615
+    },
+    {
+     "label": "W47",
+     "start": 10.615,
+     "end": 10.846
+    },
+    {
+     "label": "W48",
+     "start": 10.846,
+     "end": 11.077
+    },
+    {
+     "label": "W49",
+     "start": 11.077,
+     "end": 11.308
+    },
+    {
+     "label": "W50",
+     "start": 11.308,
+     "end": 11.538
+    },
+    {
+     "label": "W51",
+     "start": 11.538,
+     "end": 11.769
+    },
+    {
+     "label": "W52",
+     "start": 11.769,
+     "end": 12.0
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "7 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 mesi (1), 6 mesi (1), 10-12 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/716460",
+    "page": 26,
+    "document": "Allegato al Decreto del Ministero della Transizione Ecologica - Parere Commissione Tecnica PNRR-PNIEC del 10/08/2022",
+    "excerpt": "- per la realizzazione dell’opera in progetto il tempo stimato è di circa 7 mesi e consecutivi, al quale si devono aggiungere i tempi per la progettazione esecutiva, nonché i procedimenti autorizzatori"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma lavori di costruzione - Cronoprogramma lavori di ripristino",
+   "url": "https://va.mite.gov.it/File/Documento/595763"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 170,
+  "pagine": 2092,
+  "completa": false,
+  "da_leggere": 50
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "W SASSARI 02 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 30.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SASSARI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "1517 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
