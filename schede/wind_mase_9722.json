@@ -1,0 +1,706 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9722",
+ "title": "Progetto di impianto eolico denominato \"Energia Monte Taccu\", costituito da 12 aerogeneratori con potenza complessiva in immissione di 72,6 MW, con opere di connessione alla RTN e sistema di accumulo, da realizzarsi nei comuni di San Nicolò Gerrei e Armungia (CA).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9722",
+ "source": "mase",
+ "updated": "2026-11-12",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "72,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9722",
+    "excerpt": "72,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "12",
+   "status": "da documenti",
+   "sub": "6,05 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 11 (15), 7 (9), 9 (8)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/825075",
+    "page": 13,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "Italy s.r.l. (di seguito “la Società” o “FORI”). L’impianto sarà composto da n. 12 aerogeneratori con potenza nominale unitaria di 6.6 MW e potenza complessiva in immissione di 72.6 MW - comprendente anche la potenza ero"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/825075",
+    "page": 61,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "lo sviluppo dell’agro-voltaico, ossia l’implementazione di sistemi ibridi agricoltura-"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "25,2 MW / 53,88 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 72,6 MW (5), 15 MW (4), 26,576 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/825075",
+    "page": 163,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "36kV entro apposito container, ognuno da posizionarsi su apposita piazzola. Il sistema di accumulo complessivo avrà una potenza nominale di 25,2 MW e capacità di accumulo pari a 53,88 MWh e sarà limitato nel funzionament"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (5), 14 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/825075",
+    "page": 205,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "Per la realizzazione degli interventi previsti dal presente progetto può stimarsi una durata indicativa dei lavori di circa 18 mesi con uno sviluppo delle attività ipotizzato secondo quanto riportato nel cronoprogramma r"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "CA",
+  "comuni": [
+   "San Nicolò Gerrei",
+   "Armungia"
+  ],
+  "coordinate": {
+   "lat": 39.51711,
+   "lon": 9.32399,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (67 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/825075",
+    "page": 249,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "Ai margini della viabilità di collegamento T05-T06 (39°30'43.78\"N . 09°19'41.95\"E), si riscontra individuo di Olea europaea L. var. sylvestris Brot. vetusto, del quale si riportano i caratteri"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.51711,9.32399",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Fred. Olsen Renewables Italy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fred.olsenrenewablesitaly@legalmail.it",
+     "occurrences": 167,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/824986",
+      "page": 1,
+      "document": "Carta delle Unità di Terre",
+      "excerpt": "Viale Castro Pretorio, 122 - 00185 Roma(RM) PEC: fred.olsenrenewablesitaly@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9722"
+   }
+  },
+  {
+   "name": "Ing. Giuseppe Frongia",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/824986",
+    "page": 1,
+    "document": "Carta delle Unità di Terre",
+    "excerpt": "Gruppo di progettazione: Ing. Giuseppe Frongia"
+   }
+  },
+  {
+   "name": "Dott. Mauro Pompei",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/824975",
+    "page": 3,
+    "document": "Relazione geologica e geotecnica",
+    "excerpt": "In tale ambito, gli scriventi geologi Dott.ssa MARIA FRANCESCA LOBINA e Dott. MAURO POMPEI sono stati incaricati per la stesura della presente «RELAZIONE GEOLOGICA E GEOTECNICA» quale corredo"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "I.A.T. Consulenza e progetti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "direttore@iatprogetti.it",
+     "occurrences": 40,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/825078",
+      "page": 125,
+      "document": "Studio previsionale di impatto acustico",
+      "excerpt": "+39 070 658297 Giuseppe Frongia / direttore@iatprogetti.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Giuseppe Furcas",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0706065176",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/905691",
+      "page": 1,
+      "document": "Parere Regione Autonoma della Sardegna in data 15/09/2023",
+      "excerpt": "Viale Trieste, 186 09123 Cagliari - tel +39 070 606 5176 fax +39 070 606 7532"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Realizzazione parco eolico \"Energia Monte Taccu\"",
+    "start": 0.36,
+    "end": 17.54,
+    "level": 1,
+    "duration": "374 g",
+    "summary": true
+   },
+   {
+    "name": "Allestimento del cantiere",
+    "start": 0.39,
+    "end": 0.85,
+    "level": 2,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Attività di tracciamento",
+    "start": 0.36,
+    "end": 3.11,
+    "level": 2,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Approvvigionamento materiali",
+    "start": 0.85,
+    "end": 4.98,
+    "level": 2,
+    "duration": "90 g",
+    "summary": false
+   },
+   {
+    "name": "Interventi percorso stradale Porto di Cagliari - Sito Parco eo",
+    "start": 0.36,
+    "end": 4.95,
+    "level": 2,
+    "duration": "100 g",
+    "summary": false
+   },
+   {
+    "name": "Piste di cantiere e approntamento piazzole",
+    "start": 0.82,
+    "end": 6.78,
+    "level": 2,
+    "duration": "130 g",
+    "summary": true
+   },
+   {
+    "name": "Apertura di piste e splateamento Piazzole T01",
+    "start": 0.82,
+    "end": 4.49,
+    "level": 3,
+    "duration": "180 g",
+    "summary": false
+   },
+   {
+    "name": "Apertura di piste e splateamento Piazzole T05",
+    "start": 0.82,
+    "end": 3.57,
+    "level": 3,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Apertura di piste e splateamento Piazzole T09-10-11",
+    "start": 4.49,
+    "end": 6.78,
+    "level": 3,
+    "duration": "50 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni",
+    "start": 1.11,
+    "end": 8.36,
+    "level": 2,
+    "duration": "157 g",
+    "summary": true
+   },
+   {
+    "name": "Scavo plinti T01- - -08-12",
+    "start": 1.11,
+    "end": 3.87,
+    "level": 3,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Scavo plinti da T09-10-11",
+    "start": 5.41,
+    "end": 6.78,
+    "level": 3,
+    "duration": "30 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni in c.a. e rinterri",
+    "start": 1.47,
+    "end": 8.36,
+    "level": 3,
+    "duration": "150 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione linea interrata 30kV",
+    "start": 1.51,
+    "end": 13.08,
+    "level": 2,
+    "duration": "253 g",
+    "summary": true
+   },
+   {
+    "name": "Scavi, posa linee 30kV, rinterri e ripristini",
+    "start": 1.67,
+    "end": 13.08,
+    "level": 3,
+    "duration": "250 g",
+    "summary": false
+   },
+   {
+    "name": "Strade e piazzole",
+    "start": 6.78,
+    "end": 11.83,
+    "level": 2,
+    "duration": "110 g",
+    "summary": true
+   },
+   {
+    "name": "Completamento strade e piazzole",
+    "start": 6.78,
+    "end": 11.83,
+    "level": 3,
+    "duration": "110 g",
+    "summary": false
+   },
+   {
+    "name": "Installazione aerogeneratori",
+    "start": 8.36,
+    "end": 17.54,
+    "level": 2,
+    "duration": "200 g",
+    "summary": true
+   },
+   {
+    "name": "Trasporto aerogeneratori",
+    "start": 8.36,
+    "end": 12.49,
+    "level": 3,
+    "duration": "90 g",
+    "summary": false
+   },
+   {
+    "name": "Installazione aerogeneratori",
+    "start": 9.28,
+    "end": 12.95,
+    "level": 3,
+    "duration": "80 g",
+    "summary": false
+   },
+   {
+    "name": "Completamento opere civili e ripristini",
+    "start": 12.95,
+    "end": 17.54,
+    "level": 3,
+    "duration": "100 g",
+    "summary": false
+   },
+   {
+    "name": "Collegamenti elettrici",
+    "start": 9.74,
+    "end": 14.55,
+    "level": 2,
+    "duration": "105 g",
+    "summary": true
+   },
+   {
+    "name": "Collegamenti elettrici WTG",
+    "start": 9.74,
+    "end": 13.4,
+    "level": 3,
+    "duration": "80 g",
+    "summary": false
+   },
+   {
+    "name": "Opere e impianti per la connessione alla RTN",
+    "start": 10.0,
+    "end": 14.55,
+    "level": 3,
+    "duration": "99 g",
+    "summary": false
+   },
+   {
+    "name": "Opere civili stazione di utenza",
+    "start": 10.0,
+    "end": 12.75,
+    "level": 3,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Installazione componenti elettromeccanici",
+    "start": 12.75,
+    "end": 14.13,
+    "level": 3,
+    "duration": "30 g",
+    "summary": false
+   },
+   {
+    "name": "Montaggi elettromeccanici",
+    "start": 13.4,
+    "end": 14.09,
+    "level": 3,
+    "duration": "15 g",
+    "summary": false
+   },
+   {
+    "name": "Completamento opere per connessione alla RTN",
+    "start": 14.09,
+    "end": 14.55,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Prove e collaudi",
+    "start": 14.55,
+    "end": 15.93,
+    "level": 2,
+    "duration": "30 g",
+    "summary": true
+   },
+   {
+    "name": "Collaudo impianto eolico",
+    "start": 14.55,
+    "end": 15.47,
+    "level": 3,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "Collaudo linee 30-36kV",
+    "start": 15.47,
+    "end": 15.93,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Avviamento impianto",
+    "start": 15.93,
+    "end": 16.39,
+    "level": 2,
+    "duration": "10 g",
+    "summary": true
+   },
+   {
+    "name": "Avviamento parco eolico",
+    "start": 15.93,
+    "end": 16.39,
+    "level": 3,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Attività Riepilogo",
+    "start": 0.21,
+    "end": 15.18,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Progetto: SR-BP-RC9_Cronoprogr Divisione Riepilogo progetto Data: mar",
+    "start": 0.21,
+    "end": 9.54,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Divisione Riepilogo progetto Data: mar",
+    "start": 2.96,
+    "end": 6.74,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Cardine Attività esterne",
+    "start": 0.16,
+    "end": 6.79,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 17.54,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/825000",
+   "page": 2,
+   "document": "Cronoprogramma degli interventi",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "M11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "M12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "M13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "M14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "M15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "M16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "M17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "M18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "M19",
+     "start": 18.0,
+     "end": 19.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (5), 14 mesi (1), 25 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/825075",
+    "page": 205,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "Per la realizzazione degli interventi previsti dal presente progetto può stimarsi una durata indicativa dei lavori di circa 18 mesi con uno sviluppo delle attività ipotizzato secondo quanto riportato nel cronoprogramma r"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma degli interventi",
+   "url": "https://va.mite.gov.it/File/Documento/825000"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 176,
+  "pagine": 3830,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Fred. Olsen Renewables Italy S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 72.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SAN NICOLÒ GERREI, ARMUNGIA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "151 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
