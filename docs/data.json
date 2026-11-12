@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-11-05 18:55:00",
-    "snapshot_file": "projects_snapshot_20261105_175237.csv",
-    "total_records": 1541,
-    "punctual_records": 1459,
+    "generated_at": "2026-11-11 16:20:18",
+    "snapshot_file": "projects_snapshot_20261111_151844.csv",
+    "total_records": 1555,
+    "punctual_records": 1473,
     "terna_records": 82,
-    "total_mw_punctual": 39170.344,
+    "total_mw_punctual": 39587.601,
     "total_mw_terna": 140021.064,
     "source_counts": [
       {
@@ -16,7 +16,7 @@
       {
         "source": "mase",
         "label": "MASE",
-        "count": 291
+        "count": 300
       },
       {
         "source": "sicilia",
@@ -36,7 +36,7 @@
       {
         "source": "lombardia",
         "label": "Lombardia",
-        "count": 78
+        "count": 79
       },
       {
         "source": "puglia",
@@ -46,7 +46,7 @@
       {
         "source": "emilia_romagna",
         "label": "Emilia-Romagna",
-        "count": 33
+        "count": 36
       },
       {
         "source": "veneto",
@@ -74,26 +74,26 @@
         "count": 12
       },
       {
-        "source": "umbria",
-        "label": "Umbria",
+        "source": "sardegna",
+        "label": "Sardegna",
         "count": 7
       },
       {
-        "source": "sardegna",
-        "label": "Sardegna",
-        "count": 6
+        "source": "umbria",
+        "label": "Umbria",
+        "count": 7
       }
     ],
     "regions": [
       {
         "region": "Sicilia",
-        "punctual_count": 361,
-        "punctual_mw": 11778.716,
+        "punctual_count": 364,
+        "punctual_mw": 11958.336,
         "terna_count": 5,
         "terna_mw": 34916.541,
         "terna_practices": 0,
-        "total_mw": 46695.257,
-        "priority_score": 36.8
+        "total_mw": 46874.877,
+        "priority_score": 37.1
       },
       {
         "region": "Lazio",
@@ -107,13 +107,13 @@
       },
       {
         "region": "Puglia",
-        "punctual_count": 155,
-        "punctual_mw": 7058.294,
+        "punctual_count": 158,
+        "punctual_mw": 7152.717,
         "terna_count": 5,
         "terna_mw": 35877.846,
         "terna_practices": 0,
-        "total_mw": 42936.14,
-        "priority_score": 22.0
+        "total_mw": 43030.563,
+        "priority_score": 22.2
       },
       {
         "region": "Toscana",
@@ -126,8 +126,18 @@
         "priority_score": 19.4
       },
       {
+        "region": "Emilia-Romagna",
+        "punctual_count": 53,
+        "punctual_mw": 2213.452,
+        "terna_count": 5,
+        "terna_mw": 7738.734,
+        "terna_practices": 0,
+        "total_mw": 9952.186,
+        "priority_score": 6.4
+      },
+      {
         "region": "Lombardia",
-        "punctual_count": 78,
+        "punctual_count": 79,
         "punctual_mw": 1701.845,
         "terna_count": 4,
         "terna_mw": 3805.39,
@@ -136,34 +146,24 @@
         "priority_score": 6.4
       },
       {
-        "region": "Emilia-Romagna",
-        "punctual_count": 50,
-        "punctual_mw": 2158.767,
-        "terna_count": 5,
-        "terna_mw": 7738.734,
-        "terna_practices": 0,
-        "total_mw": 9897.501,
-        "priority_score": 6.2
-      },
-      {
         "region": "Sardegna",
-        "punctual_count": 24,
-        "punctual_mw": 876.059,
+        "punctual_count": 26,
+        "punctual_mw": 924.648,
         "terna_count": 5,
         "terna_mw": 15823.653,
         "terna_practices": 0,
-        "total_mw": 16699.712,
-        "priority_score": 5.2
+        "total_mw": 16748.301,
+        "priority_score": 5.4
       },
       {
         "region": "Basilicata",
-        "punctual_count": 39,
-        "punctual_mw": 907.547,
+        "punctual_count": 41,
+        "punctual_mw": 947.487,
         "terna_count": 5,
         "terna_mw": 10797.054,
         "terna_practices": 0,
-        "total_mw": 11704.601,
-        "priority_score": 5.0
+        "total_mw": 11744.541,
+        "priority_score": 5.2
       },
       {
         "region": "Veneto",
@@ -908,11 +908,11 @@
       ]
     },
     "quality": {
-      "punctual_records": 1459,
-      "missing_mw": 140,
+      "punctual_records": 1473,
+      "missing_mw": 141,
       "missing_region": 0,
       "missing_province": 6,
-      "missing_municipality": 15,
+      "missing_municipality": 16,
       "missing_url": 0,
       "province_deduced": 51,
       "municipalities_deduced": 5
@@ -932,13 +932,13 @@
       {
         "source": "mase",
         "source_label": "MASE",
-        "count": 291,
+        "count": 300,
         "missing_mw": 1,
         "missing_province": 0,
-        "missing_municipality": 1,
+        "missing_municipality": 2,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 99.8
+        "completeness_pct": 99.7
       },
       {
         "source": "sicilia",
@@ -976,13 +976,13 @@
       {
         "source": "lombardia",
         "source_label": "Lombardia",
-        "count": 78,
-        "missing_mw": 4,
+        "count": 79,
+        "missing_mw": 5,
         "missing_province": 5,
         "missing_municipality": 8,
         "province_deduced": 0,
         "municipalities_deduced": 2,
-        "completeness_pct": 92.7
+        "completeness_pct": 92.4
       },
       {
         "source": "puglia",
@@ -998,7 +998,7 @@
       {
         "source": "emilia_romagna",
         "source_label": "Emilia-Romagna",
-        "count": 33,
+        "count": 36,
         "missing_mw": 0,
         "missing_province": 0,
         "missing_municipality": 0,
@@ -1062,6 +1062,17 @@
         "completeness_pct": 100.0
       },
       {
+        "source": "sardegna",
+        "source_label": "Sardegna",
+        "count": 7,
+        "missing_mw": 0,
+        "missing_province": 1,
+        "missing_municipality": 1,
+        "province_deduced": 1,
+        "municipalities_deduced": 0,
+        "completeness_pct": 90.5
+      },
+      {
         "source": "umbria",
         "source_label": "Umbria",
         "count": 7,
@@ -1071,17 +1082,6 @@
         "province_deduced": 0,
         "municipalities_deduced": 0,
         "completeness_pct": 100.0
-      },
-      {
-        "source": "sardegna",
-        "source_label": "Sardegna",
-        "count": 6,
-        "missing_mw": 0,
-        "missing_province": 1,
-        "missing_municipality": 1,
-        "province_deduced": 1,
-        "municipalities_deduced": 0,
-        "completeness_pct": 88.9
       }
     ]
   },
@@ -2848,7 +2848,7 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/8613"
       ],
       "project_key": "url:fab40fb2ca56e4a6",
-      "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC, In attesa parere altra Amministrazione, Conclusa"
+      "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC, Conclusa, In attesa parere altra Amministrazione"
     },
     {
       "source": "mase",
@@ -4199,7 +4199,7 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/8132"
       ],
       "project_key": "url:3094cb06e2a06df1",
-      "procedure_status": "Conclusa"
+      "procedure_status": "Verifica amministrativa, Conclusa"
     },
     {
       "source": "toscana_atos",
@@ -4231,6 +4231,38 @@
         "https://atos.arrr.it/scheda_impianto_fer.php?mn=fer&id_impianto=4160"
       ],
       "project_key": "prj:b0607abf2d93b582"
+    },
+    {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto per un impianto fotovoltaico denominato \"Impianto FV e BESS - Ex Aeroporto Castelvetrano\", di potenza pari a 78,63 MWp e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Castelvetrano (TP) e Partanna (TP).",
+      "proponent": "GreenIT S.p.A.",
+      "region": "Sicilia",
+      "province": "TP",
+      "municipalities": "CASTELVETRANO",
+      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
+      "power_mw": 78.63,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8960",
+      "updated_at": "2026-11-11T14:12:36.307873",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto per un impianto fotovoltaico denominato \"Impianto FV e BESS - Ex Aeroporto Castelvetrano\", di potenza pari a 78,63 MWp e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Castelvetrano (TP) e Partanna (TP)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8960"
+      ],
+      "project_key": "url:1760cdf493afa8c0",
+      "procedure_status": "Verifica amministrativa, Conclusa"
     },
     {
       "source": "lombardia",
@@ -5510,7 +5542,7 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11090"
       ],
       "project_key": "url:858031382bbee8e4",
-      "procedure_status": "Verifica amministrativa, Conclusa"
+      "procedure_status": "Valutazione in corso, Conclusa"
     },
     {
       "source": "sicilia",
@@ -7575,7 +7607,7 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11923"
       ],
       "project_key": "src:82060ae70a69a821",
-      "procedure_status": "Parere CTPNRR-PNIEC emesso"
+      "procedure_status": "In attesa concerto"
     },
     {
       "source": "mase_provvedimenti",
@@ -7919,6 +7951,37 @@
         "https://sharing.regione.veneto.it/index.php/s/2tGcw5Xmnd6Hmo8"
       ],
       "project_key": "prj:f0812f1722ab2e17"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"Zigolo HV\" di potenza pari a 53,34 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Mazzarino (CL), in località \"Contrada Piano La",
+      "proponent": "HF SOLAR 19 S.r.l.",
+      "region": "Sicilia",
+      "province": "CL",
+      "municipalities": "Mazzarino",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 53.34,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6548",
+      "updated_at": "2026-11-11T09:48:49.438915",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"Zigolo HV\" di potenza pari a 53,34 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Mazzarino (CL), in località \"Contrada Piano La"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6548"
+      ],
+      "project_key": "url:16256154d05d5e92"
     },
     {
       "source": "lazio",
@@ -8515,6 +8578,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6016"
       ],
       "project_key": "url:ea35a21dff196a6e"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"FOGGIA II\", di potenza pari a 50,83 MWp e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Foggia (FG).",
+      "proponent": "AEI SOLAR PROJECT II S.R.L.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "Foggia",
+      "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
+      "power_mw": 50.83,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6547",
+      "updated_at": "2026-11-11T09:48:49.438915",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"FOGGIA II\", di potenza pari a 50,83 MWp e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Foggia (FG)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6547"
+      ],
+      "project_key": "url:b912fc084498ed17"
     },
     {
       "source": "toscana",
@@ -9195,7 +9289,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-11-05T17:41:53.736402",
+      "updated_at": "2026-11-11T15:08:28.521737",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -9841,6 +9935,37 @@
         "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=62760"
       ],
       "project_key": "url:c63e3a82eccbd29c"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Mineo Agrivoltaico Avanzato\", di potenza pari a 47,65 MW, e relative opere di connessione alla RTN, da realizzarsi nel Comune di Mineo (CT), in Contrada Pietraros",
+      "proponent": "MOTTOLA S.R.L.",
+      "region": "Sicilia",
+      "province": "CT",
+      "municipalities": "Mineo",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 47.65,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6553",
+      "updated_at": "2026-11-11T09:48:49.438915",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Mineo Agrivoltaico Avanzato\", di potenza pari a 47,65 MW, e relative opere di connessione alla RTN, da realizzarsi nel Comune di Mineo (CT), in Contrada Pietraros"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6553"
+      ],
+      "project_key": "url:e23d553e7034cdd6"
     },
     {
       "source": "mase",
@@ -10695,7 +10820,7 @@
         "https://www.sistema.puglia.it/portal/page/portal/SistemaPuglia/DettaglioInfo?id=63809"
       ],
       "project_key": "url:f7e4cb92957ef48b",
-      "procedure_status": "Verifica amministrativa, Istruttoria tecnica CTPNRR-PNIEC, Conclusa"
+      "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC, Conclusa"
     },
     {
       "source": "toscana_atos",
@@ -11139,7 +11264,7 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11757"
       ],
       "project_key": "url:5482c5d58b132f8d",
-      "procedure_status": "Istruttoria tecnica CTVIA, Archiviata"
+      "procedure_status": "Archiviata, Istruttoria tecnica CTVIA"
     },
     {
       "source": "mase_provvedimenti",
@@ -15480,6 +15605,38 @@
       "procedure_status": "In attesa parere altra Amministrazione, Conclusa"
     },
     {
+      "source": "mase",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Progetto di un nuovo impianto fotovoltaico della potenza nominale di 30 MW, denominato \"Sassari 02\", con annesso impianto di accumulo energetico della potenza di 90 MW e relative opere di connessione alla rete, ubicato nei Comuni di Sassari (SS) e Porto Torres (SS) su una superficie di ca. 43 ha. Il progetto prevede l'implementazione di un biomonitoraggio tramite apicoltura.",
+      "proponent": "W SASSARI 02 S.r.l.",
+      "region": "Sardegna",
+      "province": "SS",
+      "municipalities": "SASSARI",
+      "project_type": "Verifica di Ottemperanza (PNIEC-PNRR)",
+      "power_mw": 30.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8094",
+      "updated_at": "2026-11-11T09:45:39.425340",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Progetto di un nuovo impianto fotovoltaico della potenza nominale di 30 MW, denominato \"Sassari 02\", con annesso impianto di accumulo energetico della potenza di 90 MW e relative opere di connessione alla rete, ubicato nei Comuni di Sassari (SS) e Porto Torres (SS) su una superficie di ca. 43 ha. Il progetto prevede l'implementazione di un biomonitoraggio tramite apicoltura."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Oggetti/Info/8094"
+      ],
+      "project_key": "url:5e9044ba05c543ea",
+      "procedure_status": "Verifica amministrativa, In attesa parere altra Amministrazione, Conclusa"
+    },
+    {
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
@@ -17140,7 +17297,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-11-05T17:41:53.736402",
+      "updated_at": "2026-11-11T15:08:28.521737",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -17219,6 +17376,37 @@
         "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/18158"
       ],
       "project_key": "prj:1410bc3d21a56f17"
+    },
+    {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "REALIZZAZIONE DI IMPIANTO AGRIVOLTAICO DI POTENZA COMPLESSIVA DI 24.994,98 KWP, SISTEMA DI ACCUMULO BESS DI 8.000 KW E OPERE CONNESSE IN COMUNE DI CREVALCORE (BO)",
+      "proponent": "AG 33 S.R.L.",
+      "region": "Emilia-Romagna",
+      "province": "BO",
+      "municipalities": "Crevalcore",
+      "project_type": "VIA",
+      "power_mw": 24.995,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7068",
+      "updated_at": "2026-11-11T09:18:46.724252",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "REALIZZAZIONE DI IMPIANTO AGRIVOLTAICO DI POTENZA COMPLESSIVA DI 24.994,98 KWP, SISTEMA DI ACCUMULO BESS DI 8.000 KW E OPERE CONNESSE IN COMUNE DI CREVALCORE (BO)"
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7068"
+      ],
+      "project_key": "url:8620867733bcfe81"
     },
     {
       "source": "campania",
@@ -17842,6 +18030,37 @@
         "https://si-vvi.regione.sicilia.it/viavas/index.php/it/component/fabrik/list/30?Itemid=332&procedura___oggetto_raw=1152&limitstart30=0&resetfilters=1&fabrik_incsessionfilters=0"
       ],
       "project_key": "prj:8fcc85ae575db3f0"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"CAR01 - La Pescia\", di potenza complessiva pari a 24 MW, da realizzarsi nel Comune di Carapelle (FG), e delle relative opere di connessione alla RTN, ricadenti a",
+      "proponent": "Green Genius Italy Utility 12 S.R.L.",
+      "region": "Puglia",
+      "province": "FG",
+      "municipalities": "Carapelle, Manfredonia",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 24.0,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6552",
+      "updated_at": "2026-11-11T09:48:49.438915",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"CAR01 - La Pescia\", di potenza complessiva pari a 24 MW, da realizzarsi nel Comune di Carapelle (FG), e delle relative opere di connessione alla RTN, ricadenti a"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6552"
+      ],
+      "project_key": "url:73a830662e6c0ac5"
     },
     {
       "source": "sicilia",
@@ -19446,7 +19665,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-11-05T17:41:53.736402",
+      "updated_at": "2026-11-11T15:08:28.521737",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -20002,6 +20221,37 @@
       "source": "mase_provvedimenti",
       "source_group": "mase",
       "source_label": "MASE",
+      "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico della potenza pari a 19,98 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di San Gervasio (PZ), Banzi (PZ) e Genzano di Lucania (PZ)",
+      "proponent": "Palazzo San Gervasio 1 SPV S.r.l.",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "",
+      "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
+      "power_mw": 19.98,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6546",
+      "updated_at": "2026-11-11T09:48:49.438915",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico della potenza pari a 19,98 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di San Gervasio (PZ), Banzi (PZ) e Genzano di Lucania (PZ)"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6546"
+      ],
+      "project_key": "url:e5b293f25f9480de"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
       "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto per la costruzione ed esercizio di un impianto fotovoltaico, denominato \"Calanchi Solari\", di potenza pari a 19,98 MW, comprensivo delle opere di connessione alla RTN e delle relative infrastrutture ind",
       "proponent": "ConCom Solar Italia 02 S.r.l.",
       "region": "Basilicata",
@@ -20121,6 +20371,37 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6241"
       ],
       "project_key": "url:4025c56c214bee52"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un nuovo impianto agrovoltaico, denominato \"Forestella Carretta\", della potenza nominale pari a 19,96 MW, e relative opere di connessione alla RTN, ubicato nei Comuni di Montemilone (PZ) e Venosa (PZ",
+      "proponent": "Ambra Solare 23 S.r.l.",
+      "region": "Basilicata",
+      "province": "PZ",
+      "municipalities": "Montemilone",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 19.96,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6545",
+      "updated_at": "2026-11-11T09:48:49.438915",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un nuovo impianto agrovoltaico, denominato \"Forestella Carretta\", della potenza nominale pari a 19,96 MW, e relative opere di connessione alla RTN, ubicato nei Comuni di Montemilone (PZ) e Venosa (PZ"
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6545"
+      ],
+      "project_key": "url:83d8af91619f0dcd"
     },
     {
       "source": "mase_provvedimenti",
@@ -20717,6 +20998,68 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6080"
       ],
       "project_key": "url:d003a775e429c194"
+    },
+    {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "ARPAE: IMPIANTO FOTOVOLTAICO DI POTENZA PARI A 19.703,24 KWP DENOMINATO “FITODEPURATORE FTV” INTEGRATO CON UN SISTEMA DI ACCUMULO DA 60 MW/H E OPERE CONNESSE.",
+      "proponent": "BRENTO S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "BO",
+      "municipalities": "Castel Maggiore",
+      "project_type": "Verifica Assoggettabilità VIA (Screening)",
+      "power_mw": 19.703,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7054",
+      "updated_at": "2026-11-11T09:18:46.724252",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "ARPAE: IMPIANTO FOTOVOLTAICO DI POTENZA PARI A 19.703,24 KWP DENOMINATO “FITODEPURATORE FTV” INTEGRATO CON UN SISTEMA DI ACCUMULO DA 60 MW/H E OPERE CONNESSE."
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7054"
+      ],
+      "project_key": "url:f30cdeb03cbd8ba6"
+    },
+    {
+      "source": "mase_provvedimenti",
+      "source_group": "mase",
+      "source_label": "MASE",
+      "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico, della potenza di 19,593 MW, da realizzarsi nel Comune di Melpignano (LE), e delle relative opere di connessione alla RTN, ricadenti anche nel Comune di Cutrofiano (LE).",
+      "proponent": "CCEN MELPIGNANO S.R.L.",
+      "region": "Puglia",
+      "province": "LE",
+      "municipalities": "Melpignano, Cutrofiano",
+      "project_type": "Valutazione Impatto Ambientale (PNIEC-PNRR)",
+      "power_mw": 19.593,
+      "status": "",
+      "url": "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6554",
+      "updated_at": "2026-11-11T09:48:49.438915",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "mase_provvedimenti"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico, della potenza di 19,593 MW, da realizzarsi nel Comune di Melpignano (LE), e delle relative opere di connessione alla RTN, ricadenti anche nel Comune di Cutrofiano (LE)."
+      ],
+      "_dedupe_urls": [
+        "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6554"
+      ],
+      "project_key": "url:6f11cd8e914b9a1f"
     },
     {
       "source": "mase_provvedimenti",
@@ -21634,6 +21977,38 @@
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6108"
       ],
       "project_key": "url:5efb32904d8466b6"
+    },
+    {
+      "source": "Sardegna",
+      "source_group": "Sardegna",
+      "source_label": "Sardegna",
+      "title": "PAUR volontario - impianto agrovoltaico “Decimoputzu” in località “Mitza Canna\" e “Coddu Sera Gureu” - Decimoputzu",
+      "proponent": "Apollo Decimoputzu S.r.l.",
+      "region": "Sardegna",
+      "province": "SU",
+      "municipalities": "Decimoputzu",
+      "project_type": "PAUR",
+      "power_mw": 18.589,
+      "status": "",
+      "url": "https://portal.sardegnasira.it/-/paur-volontario-impianto-agrovoltaico-decimoputzu-in-localita-mitza-canna-e-coddu-sera-gureu-decimoputzu",
+      "updated_at": "2026-11-11T15:09:59.856945",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "Sardegna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "PAUR volontario - impianto agrovoltaico “Decimoputzu” in località “Mitza Canna\" e “Coddu Sera Gureu” - Decimoputzu"
+      ],
+      "_dedupe_urls": [
+        "https://portal.sardegnasira.it/-/paur-volontario-impianto-agrovoltaico-decimoputzu-in-localita-mitza-canna-e-coddu-sera-gureu-decimoputzu"
+      ],
+      "project_key": "prj:6975080bf01f85d6",
+      "_project_key_previous_run": "prj:6975080bf01f85d6"
     },
     {
       "source": "mase_provvedimenti",
@@ -22740,7 +23115,7 @@
       "source_group": "Sardegna",
       "source_label": "Sardegna",
       "title": "Verifica - Impianto agrovoltaico denominato \"Smeraldo_Pot 1\" nei comuni di Ottana e Bolotana",
-      "proponent": "GRV Smeraldo S.r.l",
+      "proponent": "GRV Smeraldo S.r.l.",
       "region": "Sardegna",
       "province": "NU",
       "municipalities": "Ottana",
@@ -22748,7 +23123,7 @@
       "power_mw": 17.0,
       "status": "",
       "url": "https://portal.sardegnasira.it/-/verifica-impianto-agrovoltaico-denominato-smeraldo_pot-1-di-potenza-pari-a-kw-nei-comuni-di-ottana-e-bolotana",
-      "updated_at": "2026-11-05T17:43:38.259763",
+      "updated_at": "2026-11-11T15:09:59.856945",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -27162,6 +27537,37 @@
       "project_key": "prj:1bd0d1fb0dc9401a"
     },
     {
+      "source": "emilia_romagna",
+      "source_group": "emilia_romagna",
+      "source_label": "Emilia-Romagna",
+      "title": "ARPAE: IMPIANTO FOTOVOLTAICO \"GATTEO\" POTENZA PARI A 9,98704",
+      "proponent": "Sole PV Solar 2 S.r.l.",
+      "region": "Emilia-Romagna",
+      "province": "FC",
+      "municipalities": "Gatteo",
+      "project_type": "Verifica Assoggettabilità VIA (Screening)",
+      "power_mw": 9.987,
+      "status": "",
+      "url": "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7070",
+      "updated_at": "2026-11-11T13:56:44.345952",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "emilia_romagna"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "ARPAE: IMPIANTO FOTOVOLTAICO \"GATTEO\" POTENZA PARI A 9,98704"
+      ],
+      "_dedupe_urls": [
+        "https://serviziambiente.regione.emilia-romagna.it/viavasweb/ricerca/dettaglio/7070"
+      ],
+      "project_key": "url:10cc631dcdb60907"
+    },
+    {
       "source": "lazio",
       "source_group": "lazio",
       "source_label": "Lazio",
@@ -29168,7 +29574,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-11-05T17:41:53.736402",
+      "updated_at": "2026-11-11T15:08:28.521737",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29509,7 +29915,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-11-05T17:41:53.736402",
+      "updated_at": "2026-11-11T15:08:28.521737",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -32548,7 +32954,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-11-05T17:41:53.736402",
+      "updated_at": "2026-11-11T15:08:28.521737",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -42661,6 +43067,37 @@
       "project_key": "prj:10f5d67ffec474e0"
     },
     {
+      "source": "lombardia",
+      "source_group": "lombardia",
+      "source_label": "Lombardia",
+      "title": "Impianto agrivoltaico avanzato integrato con un sistema di accumulo elettrochimico (BESS) denominato \"Isola Barbieri AFV\", nel Comune di Mezzana Bigli (PV). Connessione alla RTN tramite elettrodotto interrato a 36 kV, che attraversa i Comuni di Cornale e Bastida e Casei Gerola (PV), Molino dei Torti e Alzano Scrivia (AL), fino alla sezione a 36 kV della nuova stazione RTN di ampliamento/satellite della SE Terna 380/132 kV di Castelnuovo Scrivia (AL).",
+      "proponent": "IOTA II srl",
+      "region": "Lombardia",
+      "province": "PV",
+      "municipalities": "Mezzana Bigli",
+      "project_type": "V.E.R. Provinciali",
+      "power_mw": null,
+      "status": "",
+      "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=22339&idProvenienza=2",
+      "updated_at": "2026-11-11T13:58:32.604171",
+      "numero_pratiche": 0,
+      "is_terna": false,
+      "is_punctual": true,
+      "province_deduced": false,
+      "municipalities_deduced": false,
+      "_merged_sources": [
+        "lombardia"
+      ],
+      "_dedupe_group_size": 1,
+      "_dedupe_titles": [
+        "Impianto agrivoltaico avanzato integrato con un sistema di accumulo elettrochimico (BESS) denominato \"Isola Barbieri AFV\", nel Comune di Mezzana Bigli (PV). Connessione alla RTN tramite elettrodotto interrato a 36 kV, che attraversa i Comuni di Cornale e Bastida e Casei Gerola (PV), Molino dei Torti e Alzano Scrivia (AL), fino alla sezione a 36 kV della nuova stazione RTN di ampliamento/satellite della SE Terna 380/132 kV di Castelnuovo Scrivia (AL)."
+      ],
+      "_dedupe_urls": [
+        "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/22339"
+      ],
+      "project_key": "prj:7fec559c85d83f3a"
+    },
+    {
       "source": "sicilia",
       "source_group": "sicilia",
       "source_label": "Sicilia",
@@ -50009,13 +50446,13 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-11-05T18:55:01",
+    "generated_at": "2026-11-11T16:20:18",
     "input_file": "reports\\site\\data.json",
-    "records_before": 2162,
-    "records_after": 1810,
+    "records_before": 2176,
+    "records_after": 1824,
     "merged_or_removed": 352,
     "accepted_pairs": 560,
-    "rejected_pairs": 1685,
+    "rejected_pairs": 1687,
     "field_repairs": 72,
     "manual_actions": 14,
     "manual_proponent_overrides": 10,
@@ -50043,13 +50480,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-11-05T18:55:27",
+      "generated_at": "2026-11-11T16:20:30",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-11-05T19:03:55"
+    "derived_fields_rebuilt_at": "2026-11-11T16:29:59"
   }
 }
