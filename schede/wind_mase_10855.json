@@ -1,0 +1,385 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10855",
+ "title": "Progetto di un impianto eolico, denominato \"Energia Molise\", costituito da 12 aerogeneratori, per una potenza complessiva di 72 MW, integrato con un sistema di accumulo della potenza di 14 MW, da realizzarsi nei comuni di Bonefro (CB), Casacalenda (CB), Ripabottoni (CB), Sant'Elia a Pianisi (CB), San Giuliano di Puglia (CB) e Santa Croce di Magliano (CB), e delle relative opere di connessione ricadenti anche nel comune di Rotello (CB).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10855",
+ "source": "mase",
+ "updated": "2026-11-12",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "72 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10855",
+    "excerpt": "72 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "12",
+   "status": "da verificare",
+   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore più ricorrente negli elaborati; altri valori: 8 (23), 9 (21), 5 (20)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1093266",
+    "page": 1,
+    "document": "Avviso al pubblico del 24/06/2024",
+    "excerpt": "“Nuova realizzazione di un impianto di produzione di energia rinnovabile da fonte eolica denominato \"Energia Molise\" composto da 12 aerogeneratori da 6,2 MW, per una potenza complessiva di esercizio di 72 MW e di un sist"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1093261",
+    "page": 26,
+    "document": "Studio di impatto Ambientale (SIA)",
+    "excerpt": "lo sviluppo dell’agro-voltaico, ossia l’implementazione di sistemi ibridi agricoltura-produzione"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "14 MW",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 72 MW (1), 1,86 MW (1), 14,88 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1093266",
+    "page": 1,
+    "document": "Avviso al pubblico del 24/06/2024",
+    "excerpt": "denominato \"Energia Molise\" composto da 12 aerogeneratori da 6,2 MW, per una potenza complessiva di esercizio di 72 MW e di un sistema di accumulo integrato da 14 MW, sito nei comuni di Bonefro, Casacalenda, Ripabottoni,"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "20 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 53 settimane (circa 12 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1093261",
+    "page": 157,
+    "document": "Studio di impatto Ambientale (SIA)",
+    "excerpt": "Si prevede che le attività di realizzazione dell’impianto eolico avvengano in un arco temporale di circa 20 mesi. Per poter rispettare la durata del cantiere, è necessario che l’emissione degli ordini di acquisto"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Molise",
+  "provincia": "CB",
+  "comuni": [
+   "Bonefro",
+   "Casacalenda",
+   "Ripabottoni",
+   "Sant'Elia A Pianisi",
+   "San Giuliano Di Puglia",
+   "Santa Croce Di Magliano"
+  ],
+  "coordinate": {
+   "lat": 41.70095,
+   "lon": 14.88625,
+   "tipo": "centro della tavola georeferenziata di progetto (28 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1093177",
+    "page": 1,
+    "document": "Inquadramento impianto rispetto alle interferenze con fabbricati e ricettori",
+    "excerpt": "Inquadramento impianto rispetto alle interferenze con fabbricati e ricettori"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.70095,14.88625",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.71255,
+   "lon": 15.04694,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1375861",
+    "page": 19,
+    "document": "Integrazioni del 23/03/2026 - Relazione acustica",
+    "excerpt": "puntuale 503905 4617863"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.71255,15.04694"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Fred. Olsen Renewables Italy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fred.olsenrenewablesitaly@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1211799",
+      "page": 2,
+      "document": "Richiesta integrazioni del MIC",
+      "excerpt": "Alla Società Fred. Olsen Renewables Italy S.r.l. fred.olsenrenewablesitaly@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10855"
+   }
+  },
+  {
+   "name": "Stantec S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0294757240",
+     "occurrences": 65,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1207413",
+      "page": 1,
+      "document": "Integrazioni del 13/05/2025 - Inquadramento su ortofoto SEU stallo di condivisione e consegna RTN",
+      "excerpt": "(Milano) Tel: +39 02 94757240"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1093261",
+    "page": 1,
+    "document": "Studio di impatto Ambientale (SIA)",
+    "excerpt": "Progettista:"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "06400370968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1145583",
+      "page": 1,
+      "document": "Osservazioni della Società RWE Renewables Italia Srl in data 12/07/2024",
+      "excerpt": "rwerenewablesitaliasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0695056362",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1145583",
+      "page": 31,
+      "document": "Osservazioni della Società RWE Renewables Italia Srl in data 12/07/2024",
+      "excerpt": "via A. Doria, 41/G, - 00192 Roma (RM), C.F./P.IVA 06400370968 tel. +39 0695056362 – fax 0695056108"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Rinnovabili SUD TRE S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02079460768",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Della Chimica 115 85100 Potenza Pz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rinnovabilisudtre@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1112271",
+      "page": 1,
+      "document": "Osservazioni del Signor Giuseppe De Benedictis, in qualità di amministratore unico della società RINNOVABILI SUD TRE S.r.l., in data 19/07/2024",
+      "excerpt": "rinnovabilisudtre@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "ISO 9001 certificata da Bureau Veritas Italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiorinnovabili.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1375861",
+      "page": 1,
+      "document": "Integrazioni del 23/03/2026 - Relazione acustica",
+      "excerpt": "Azienda con sistema di gestione qualità ISO 9001 certificata da Bureau Veritas Italia S.p.A. www.studiorinnovabili.it - info@studiorinnovabili.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Isoambiente S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@isoambiente.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1375861",
+      "page": 124,
+      "document": "Integrazioni del 23/03/2026 - Relazione acustica",
+      "excerpt": "Tel. & Fax +39 0875 702542 Laboratorio di Taratura info@isoambiente.com prati 00239"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "20 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "20 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 5 giorni (2), 53 settimane (circa 12 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1093261",
+    "page": 157,
+    "document": "Studio di impatto Ambientale (SIA)",
+    "excerpt": "Si prevede che le attività di realizzazione dell’impianto eolico avvengano in un arco temporale di circa 20 mesi. Per poter rispettare la durata del cantiere, è necessario che l’emissione degli ordini di acquisto"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma dei lavori di realizzazione dell'impianto",
+   "url": "https://va.mite.gov.it/File/Documento/1093146"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Cronoprogramma dei lavori di realizzazione dell'impianto",
+    "url": "https://va.mite.gov.it/File/Documento/1093146"
+   },
+   {
+    "document": "Piano di dismissione delle opere e ripristino dello stato dei luoghi con relativa analisi dei prezzi e cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/1093200"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 175,
+  "pagine": 3325,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Fred. Olsen Renewables Italy S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 72.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ROTELLO, BONEFRO",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CB",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Molise",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "88 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
