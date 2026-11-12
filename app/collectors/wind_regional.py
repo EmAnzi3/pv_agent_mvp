@@ -240,6 +240,16 @@ def run(names: list[str] | None = None, where: str | None = None, out: str | Non
             pass
         # a source that failed this time keeps its previous rows (a portal down is not a project withdrawn)
         # and sources not run this time keep theirs too
+        # a source that returns nothing while it had rows before is treated as failed too: a portal that
+        # answers with an empty list (block, maintenance, network) must not wipe its projects (12/11: Sicily 0
+        # rows in 21 s removed 24 wind procedures from the census)
+        prev_count = {}
+        for r in prev.get("rows", []):
+            prev_count[r.get("source")] = prev_count.get(r.get("source"), 0) + 1
+        for n, v in report.items():
+            if "error" not in v and v.get("rows", 0) == 0 and prev_count.get(n, 0) > 0:
+                v["error"] = f"0 righe (prima {prev_count[n]}): righe precedenti mantenute"
+                print(f"[wind-regional] ATTENZIONE {n}: nessun progetto letto, tengo i {prev_count[n]} precedenti")
         ok = {n for n, v in report.items() if "error" not in v}
         keep = [r for r in prev.get("rows", []) if r.get("source") not in ok]
         data = {"updated": time.strftime("%Y-%m-%d"), "sources": {**prev.get("sources", {}), **report}, "rows": rows + keep}
