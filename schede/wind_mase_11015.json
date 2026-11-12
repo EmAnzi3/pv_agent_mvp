@@ -1,0 +1,503 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11015",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"Altamura\", costituito da 10 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 72 MW, da realizzarsi nel Comune di Altamura (BA), incluse le opportune opere di connessione alla RTN ricadenti anche nei comuni di Mottola (TA), Santeramo in Colle (BA) e Gioia del Colle (BA).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11015",
+ "source": "mase",
+ "updated": "2026-11-12",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "72 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11015",
+    "excerpt": "72 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "9",
+   "status": "da documenti",
+   "sub": "8,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 10 (73), 2 (8), 3 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1099129",
+    "page": 1,
+    "document": "Carta dell'intervisibilità teorica aerogeneratori in progetto",
+    "excerpt": "Area in cui risulta visibile n. 8 aerogeneratori Area in cui risulta visibile n. 9 aerogeneratori Area in cui risulta visibile n. 10 aerogeneratori"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 12 mesi (2), 300 giorni (circa 10 mesi) (1), 15 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1099104",
+    "page": 85,
+    "document": "Studio di Impatto Ambientale relativo alla costruzione ed esercizio del parco eolico \"Altamura\" situato nel comune di Altamura (BA), con opere di connessione e adeguamento della viabilità.",
+    "excerpt": "con le colture esistenti. Il tempo previsto per l’esecuzione del progetto sarà di circa 18 mesi a partire dalla data di inizio lavori da avviarsi successivamente al rilascio dell’autorizzazione unica e al conseguimento d"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BA",
+  "comuni": [
+   "Altamura",
+   "Santeramo In Colle",
+   "Gioia Del Colle"
+  ],
+  "coordinate": {
+   "lat": 40.77123,
+   "lon": 16.64486,
+   "tipo": "centro della tavola georeferenziata di progetto (53 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/781942",
+    "page": 8,
+    "document": "ElaboratoGrafico_0_07_03-signed",
+    "excerpt": "ElaboratoGrafico_0_07_03-signed"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.77123,16.64486",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Alta Wind S.r.l. !!S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "03914760784",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Chiaravalle 7/9 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "claudio.coscarella.e80555@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1099199",
+      "page": 2,
+      "document": "Stima del valore di esproprio dei terreni interessati dalla costruzione del parco eolico \"Altamura\" e relative opere accessorie, nei Comuni di Altamura (BA), Santeramo in Colle (BA), Mottola (TA) e Gi",
+      "excerpt": "CSCCLD71M02D086B, con studio in Cosenza alla via Perugini 12, iscritto all9Ordine degli Ingegneri della Provincia di Cosenza con il n°4179, pec: claudio.coscarella.e80555@ingpec.eu, in qualità di tecnico abilitato e inca"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11015"
+   }
+  },
+  {
+   "name": "Ing. Massimo Candeo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "m.candeo@pec.it",
+     "occurrences": 56,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/781992",
+      "page": 1,
+      "document": "StudioImpattoAmbientale-signed",
+      "excerpt": "Mobile: 328.9569922 m.candeo@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/781992",
+    "page": 1,
+    "document": "StudioImpattoAmbientale-signed",
+    "excerpt": "PROGETTAZIONE: Ing. Massimo Candeo"
+   }
+  },
+  {
+   "name": "Dott. Geol. Raffaele Sassone",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/781922",
+    "page": 15,
+    "document": "CalcoliPrelStrutture-signed",
+    "excerpt": "dell’aerogeneratore sono state eseguite indagini sismiche con metodologia MASW come riportato nella Relazione Geologica redatta dal Dott. Geol. Raffaele Sassone: sembra opportuno soffermarsi su alcuni aspetti di caratter"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 27,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1099171",
+      "page": 3,
+      "document": "Studio anemologico e valutazione preliminare della producibilità di un impianto eolico nel Comune di Altamura, Provincia di Bari, Regione Puglia.",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Stim Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "segreteria@stimeng.it",
+     "occurrences": 36,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/781938",
+      "page": 3,
+      "document": "ElaboratoGrafico_0_05-signed",
+      "excerpt": "Tel. 080.5210232 - Fax 080.5234353 www.stimeng.it - segreteria@stimeng.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "g.conversano@stimeng.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/781940",
+      "page": 9,
+      "document": "ElaboratoGrafico_0_07_01-signed",
+      "excerpt": "70122 Bari g.conversano@stimeng.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0805210232",
+     "occurrences": 40,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/781937",
+      "page": 5,
+      "document": "ElaboratoGrafico_0_04-signed",
+      "excerpt": "Tel. 080.5210232 - Fax 080.5234353"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Metrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@metrix.it",
+     "occurrences": 30,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/781928",
+      "page": 34,
+      "document": "DocumentazioneSpecialistica_05-signed",
+      "excerpt": "Tel. 0922 992053 info@metrix.it – www.metrix.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0922992053",
+     "occurrences": 30,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/781928",
+      "page": 34,
+      "document": "DocumentazioneSpecialistica_05-signed",
+      "excerpt": "92020 S. Stefano Quisquina (AG) Tel. 0922 992053"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Gemsa Pro S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0302056980",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1099171",
+      "page": 3,
+      "document": "Studio anemologico e valutazione preliminare della producibilità di un impianto eolico nel Comune di Altamura, Provincia di Bari, Regione Puglia.",
+      "excerpt": "- Via Matteotti, 311 – SCALA P – Int.10 – 25063 Gardone Val Trompia (BS) Tel. 030 2056980 – Fax 030 831100"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dr. Agr. Antonio Frioli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "antoniofrioli@gmail.com",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/781977",
+      "page": 2,
+      "document": "Relazione pedoagronomica-signed(1)",
+      "excerpt": "Via Mesagne, 17 – 72028 Torre Santa Susanna (BR) Tel.: 320/4549459 e-mail: antoniofrioli@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3204549459",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/781977",
+      "page": 2,
+      "document": "Relazione pedoagronomica-signed(1)",
+      "excerpt": "Via Mesagne, 17 – 72028 Torre Santa Susanna (BR) Tel.: 320/4549459 e-mail: antoniofrioli@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Alessandro Perago",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "alessandro.perago@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/781928",
+      "page": 1,
+      "document": "DocumentazioneSpecialistica_05-signed",
+      "excerpt": "Ordine Ing. Bari n. 5961 alessandro.perago@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "8 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "del cantiere",
+    "start": 0.0,
+    "end": 1.98,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Accesso al Parco - Adeguamento Strade esistenti",
+    "start": 1.0,
+    "end": 4.94,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Accesso al Parco - Realizzazione Strade nuove",
+    "start": 1.96,
+    "end": 8.01,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 8.01,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1099145",
+   "page": 2,
+   "document": "Cronoprogramma dei lavori per il progetto del Parco Eolico 'Altamura'",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 12 mesi (2), 300 giorni (circa 10 mesi) (1), 15 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1099104",
+    "page": 85,
+    "document": "Studio di Impatto Ambientale relativo alla costruzione ed esercizio del parco eolico \"Altamura\" situato nel comune di Altamura (BA), con opere di connessione e adeguamento della viabilità.",
+    "excerpt": "con le colture esistenti. Il tempo previsto per l’esecuzione del progetto sarà di circa 18 mesi a partire dalla data di inizio lavori da avviarsi successivamente al rilascio dell’autorizzazione unica e al conseguimento d"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma dei lavori per il progetto del Parco Eolico 'Altamura'",
+   "url": "https://va.mite.gov.it/File/Documento/1099145"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma in immagine (lettura automatica, da verificare)"
+ },
+ "documentazione": {
+  "documenti": 315,
+  "pagine": 3978,
+  "completa": false,
+  "da_leggere": 15
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Alta Wind S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 72.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ALTAMURA, MOTTOLA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "281 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
