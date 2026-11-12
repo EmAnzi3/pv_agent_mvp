@@ -1,0 +1,358 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10069",
+ "title": "Progetto di impianto eolico denominato \"Sanluri-Sardara\" dalla potenza pari a 72 MW e impianto di accumulo elettrochimico di potenza pari a 35 MW e opere di connessione, sito nei territori dei comuni di Sanluri, Sardara e Villanovaforru.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10069",
+ "source": "mase",
+ "updated": "2026-11-12",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "72 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10069",
+    "excerpt": "72 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "12",
+   "status": "da verificare",
+   "sub": "6,00 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 3 (16), 36 (8), 15 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/919063",
+    "page": 4,
+    "document": "Studio di impatto ambientale - Stima impatti",
+    "excerpt": "Progettuale”, le attività previste comprenderanno: 1. Realizzazione del nuovo impianto (12 WTG); 2. Esercizio del nuovo impianto;"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Fotovoltaico galleggiante",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1112228",
+    "page": 18,
+    "document": "Integrazioni del 16/07/2024 - Relazione archeologica - VPIA e allegati",
+    "excerpt": "segregazioni per le vie cavi (canalizzazioni e pavimento flottante), isolamento termico e"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "35 MW / 280 MWh",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 72 MW (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/918948",
+    "page": 1,
+    "document": "Avviso al pubblico del 17/10/2023",
+    "excerpt": "l’installazione di un sistema di accumulo elettrochimico, in linea con gli standard più alti presenti sul mercato, per una potenza installata pari a 35 MW; "
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "67 settimane (circa 15 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (10), 34 settimane (circa 8 mesi) (7), 42 settimane (circa 10 mesi) (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/919063",
+    "page": 17,
+    "document": "Studio di impatto ambientale - Stima impatti",
+    "excerpt": "In particolare, si prevede che la realizzazione del parco eolico avverrà in un arco temporale di circa 67 settimane. Sulla base dei valori disponibili nella bibliografia specializzata, e volendo adottare un"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SU",
+  "comuni": [
+   "Villanovaforru",
+   "Sanluri",
+   "Sardara"
+  ],
+  "coordinate": {
+   "lat": 39.59532,
+   "lon": 8.8817,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (93 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/919064",
+    "page": 3,
+    "document": "Studio di impatto ambientale - Analisi Costi Benefici",
+    "excerpt": "▪ Latitudine: 39°35'49,84\"N ▪"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.59532,8.88170",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 39.58129,
+   "lon": 14.92437,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1013944",
+    "page": 18,
+    "document": "Integrazioni del 13/03/2024 - Dati di progetto per valutazione preliminare ENAC",
+    "excerpt": "493510,89"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=39.58129,14.92437"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Marte S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10069"
+   }
+  },
+  {
+   "name": "Geotech S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "00738810142",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Nani 7 23017 Morbegno So",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@geotech-srl.it",
+     "occurrences": 356,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1013944",
+      "page": 19,
+      "document": "Integrazioni del 13/03/2024 - Dati di progetto per valutazione preliminare ENAC",
+      "excerpt": "| E-mail: info@geotech-srl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0342610774",
+     "occurrences": 45,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1013944",
+      "page": 19,
+      "document": "Integrazioni del 13/03/2024 - Dati di progetto per valutazione preliminare ENAC",
+      "excerpt": "Via T.Nani, 7 Morbegno (SO) Tel. +39 0342610774"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1013944",
+    "page": 19,
+    "document": "Integrazioni del 13/03/2024 - Dati di progetto per valutazione preliminare ENAC",
+    "excerpt": "PROGETTISTA"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Allemano Metrology S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "labmet@allemanometrology.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/919013",
+      "page": 230,
+      "document": "Relazione impatto acustico_Allegato 2",
+      "excerpt": "tel. 011 857723 — fax. 011 853165 email:labmet@allemanometrology.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "011857723",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/919013",
+      "page": 230,
+      "document": "Relazione impatto acustico_Allegato 2",
+      "excerpt": "Via Bologna 50 - 10152 Torino tel. 011 857723 — fax. 011 853165"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Allèemano Metrology S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "emalitlabmet@aliemanometrolpgy.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/919013",
+      "page": 234,
+      "document": "Relazione impatto acustico_Allegato 2",
+      "excerpt": "tei. $11-857723 ~ fax. 071.853165. emalitlabmet@aliemanometrolpgy.com ‘Signatory of EA, TAF and ILAT"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "67 settimane (circa 15 mesi)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1013892",
+   "page": 10,
+   "document": "Integrazioni del 13/03/2024 - Relazione Paesaggistica e compatibilità (DPCM 2005)",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "67 settimane (circa 15 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (10), 34 settimane (circa 8 mesi) (7), 42 settimane (circa 10 mesi) (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/919063",
+    "page": 17,
+    "document": "Studio di impatto ambientale - Stima impatti",
+    "excerpt": "In particolare, si prevede che la realizzazione del parco eolico avverrà in un arco temporale di circa 67 settimane. Sulla base dei valori disponibili nella bibliografia specializzata, e volendo adottare un"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma-signed",
+   "url": "https://va.mite.gov.it/File/Documento/919020"
+  },
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "altri": [
+   {
+    "document": "Cronoprogramma-signed",
+    "url": "https://va.mite.gov.it/File/Documento/919020"
+   }
+  ],
+  "durate_fasi": [
+   {
+    "name": "• realizzazione strade e piazzole (durata",
+    "duration": "34 settimane",
+    "months": 7.85
+   },
+   {
+    "name": "• realizzazione scavo, pali e plinti di fondazione (durata",
+    "duration": "42 settimane",
+    "months": 9.7
+   },
+   {
+    "name": "• montaggio aerogeneratori (durata",
+    "duration": "13 settimane",
+    "months": 3.0
+   },
+   {
+    "name": "• posa cavidotti interrati 33kV (durata",
+    "duration": "34 settimane",
+    "months": 7.85
+   },
+   {
+    "name": "• realizzazione della SSE 150kV/33kV (durata",
+    "duration": "5 settimane",
+    "months": 1.15
+   }
+  ],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 334,
+  "pagine": 4969,
+  "completa": false,
+  "da_leggere": 34
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Marte S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 72.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SANLURI, SARDARA, VILLANOVAFORRU",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SU",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "546 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
