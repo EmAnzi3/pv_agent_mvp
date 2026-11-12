@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico costituito da 9 aerogeneratori con potenza massima di immissione pari a 75 MW, comprensiva di sistema di accumulo da 15,6 MW, e relative opere connesse ricadenti nei Comuni di Seneghe, Narbolia, San Vero Milis, Zeddiani, Siamaggiore e Solarussa.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10093",
  "source": "mase",
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "sintesi": [
   {
    "key": "potenza",
@@ -22,22 +22,34 @@
   {
    "key": "wtg",
    "label": "Aerogeneratori",
-   "value": "8",
+   "value": "9",
    "status": "da verificare",
-   "sub": "9,38 MW ciascuno · altezza mozzo 125 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 9 (80), 4 (7), 2 (7)",
+   "sub": "8,33 MW ciascuno · altezza mozzo 125 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 5 (115), 8 (104), 13 (30)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/885309",
+    "page": 1,
+    "document": "Avviso al pubblico del 09/08/2023",
+    "excerpt": "Regione Sardegna – Assessorato dell’Industria – Servizio Energia ed Economia Verde. Il progetto prevede l’installazione di n. 9 aerogeneratori nei Comuni di Seneghe (OR) e Narbolia (OR), con altezza al mozzo fino a 125 m"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/885509",
-    "page": 149,
+    "page": 66,
     "document": "Studio di impatto ambientale - Relazione generale",
-    "excerpt": "La configurazione originaria di layout era composta da 9 aerogeneratori, localizzati in agro del Comune di Seneghe (8 WTG) e nel territorio comunale di Narbolia (1 WTG) secondo quanto riportato nella Figura 9.1."
+    "excerpt": "la promozione impianti innovativi (incluso off-shore), che combinino tecnologie ad alto"
    }
   },
   {
    "key": "accumulo",
    "label": "Accumulo",
    "value": "15,6 MW / 31,2 MWh",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 22,2 MW (26), 52,8 MW (7), 59,4 MW (7)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 22,2 MW (33), 75 MW (19), 59,4 MW (9)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/885309",
     "page": 1,
@@ -101,14 +113,36 @@
    "office": null,
    "contacts": [
     {
+     "type": "PEC",
+     "value": "adiconsumsardegna@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1274176",
+      "page": 2,
+      "document": "Osservazioni dell'ADICONSUM Sardegna, in data 2/07/2025",
+      "excerpt": "Sede legale: Via Ancona 1 – 09125 CAGLIARI • PEC: adiconsumsardegna@legalmail.it • e.mail: sardegna@adiconsum.it • C.F. 92116540920"
+     }
+    },
+    {
      "type": "E-mail",
      "value": "sorgeniarenewables@sorgenia.it",
-     "occurrences": 4695,
+     "occurrences": 5394,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/885509",
       "page": 1,
       "document": "Studio di impatto ambientale - Relazione generale",
       "excerpt": "Via Algardi, 4 - 20148 Milano (MI) sorgeniarenewables@sorgenia.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sardegna@adiconsum.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1274176",
+      "page": 2,
+      "document": "Osservazioni dell'ADICONSUM Sardegna, in data 2/07/2025",
+      "excerpt": "Sede legale: Via Ancona 1 – 09125 CAGLIARI • PEC: adiconsumsardegna@legalmail.it • e.mail: sardegna@adiconsum.it • C.F. 92116540920"
      }
     }
    ],
@@ -635,9 +669,9 @@
  },
  "documentazione": {
   "documenti": 529,
-  "pagine": 7295,
+  "pagine": 12216,
   "completa": false,
-  "da_leggere": 229
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -672,16 +706,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Accumulo",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "139 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "472 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
