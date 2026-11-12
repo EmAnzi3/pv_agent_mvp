@@ -34,3 +34,20 @@ class WindRegional(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class EmptySourceKeepsRows(unittest.TestCase):
+    def test_zero_rows_keep_previous(self):
+        import json
+        import tempfile
+        from pathlib import Path
+        from unittest import mock
+        from app.collectors import wind_regional as wr
+        with tempfile.TemporaryDirectory() as t:
+            out = Path(t) / "r.json"
+            out.write_text(json.dumps({"rows": [{"source": "sicilia", "title": "A"}, {"source": "basilicata", "title": "B"}]}), encoding="utf-8")
+            with mock.patch.object(wr, "collect", side_effect=lambda n: [] if n == "sicilia" else [{"source": "basilicata", "title": "C"}]):
+                res = wr.run(["sicilia", "basilicata"], out=str(out))
+            data = json.loads(out.read_text(encoding="utf-8"))
+            self.assertEqual(sorted(r["title"] for r in data["rows"]), ["A", "C"])
+            self.assertIn("error", data["sources"]["sicilia"])
