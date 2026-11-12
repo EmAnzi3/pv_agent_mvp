@@ -5,18 +5,18 @@
  "title": "Impianto fotovoltaico Lombardore 1 - Lombardore 2 - San Benigno 1",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8018",
  "source": "mase",
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "18,77 MW",
-   "sub": "Dagli elaborati (98 occorrenze); il titolo non indica la potenza; altri valori: 4,577 MW, 5,354 MW, 5,99 MW",
+   "sub": "Dagli elaborati (109 occorrenze); il titolo non indica la potenza; altri valori: 4,577 MW, 5,35 MW, 5,354 MW",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1438974",
+    "url": "https://va.mite.gov.it/File/Documento/1422697",
     "page": 1,
-    "document": "Integrazioni del 13/10/2026 - Comunicazione esito istruttoria",
+    "document": "Comunicazione VA esito valutazione",
     "excerpt": "ambientali contenute nel Provvedimento di VIA n. 127 del 2 marzo 2023, relativa al progetto per la realizzazione di un impianto fotovoltaico della potenza di 18,77 MW e delle opere di connessione alla RTN, da realizzarsi"
    }
   },
@@ -36,8 +36,8 @@
    "key": "area",
    "label": "Superficie complessiva",
    "value": "25 ha",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 80,5 ha (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 80,5 ha (1), 23,831 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/595686",
     "page": 1,
@@ -69,7 +69,7 @@
   "coordinate": {
    "lat": 45.22539,
    "lon": 7.73693,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (49 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (51 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1395137",
     "page": 21,
@@ -80,7 +80,17 @@
   "maps_url": "https://www.google.com/maps/search/?api=1&query=45.22539,7.73693",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 45.2269,
+   "lon": 7.74063,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/595671",
+    "page": 14,
+    "document": "Relazione geologica e di caratterizzazione geotecnica",
+    "excerpt": "• Latitudine: 45,226903; •"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=45.22690,7.74063"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -99,11 +109,11 @@
     {
      "type": "PEC",
      "value": "ecopiedmont1srl@legalmail.it",
-     "occurrences": 6,
+     "occurrences": 7,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1438974",
+      "url": "https://va.mite.gov.it/File/Documento/1422697",
       "page": 4,
-      "document": "Integrazioni del 13/10/2026 - Comunicazione esito istruttoria",
+      "document": "Comunicazione VA esito valutazione",
       "excerpt": "Alla Società Ecopiedmont1 S.r.l. ecopiedmont1srl@legalmail.it"
      }
     },
@@ -192,6 +202,44 @@
    }
   },
   {
+   "name": "Amici Della Terra APS",
+   "kind": "società",
+   "roles": [],
+   "vat": "02141761003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ippolito Nievo 62 Sc C I 00153 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amicidellaterra@pec.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/607119",
+      "page": 2,
+      "document": "Osservazioni dell'Associazione Amici della Terra Onlus e Amici della Terra club Vauda in data 11/03/2022",
+      "excerpt": "www.amicidellaterra.it amicidellaterra@pec.it – segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@amicidellaterra.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/607119",
+      "page": 2,
+      "document": "Osservazioni dell'Associazione Amici della Terra Onlus e Amici della Terra club Vauda in data 11/03/2022",
+      "excerpt": "www.amicidellaterra.it amicidellaterra@pec.it – segreteria@amicidellaterra.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Anthemis Environment S.r.l.",
    "kind": "società",
    "roles": [],
@@ -203,24 +251,24 @@
    "contacts": [
     {
      "type": "E-mail",
-     "value": "info@progeo.biz",
-     "occurrences": 23,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/686506",
-      "page": 1,
-      "document": "Integrazioni del 01/08/2022 Valutazione di Incidenza Ambientale",
-      "excerpt": "+39 0123 320667 +39 011 9977387 +39 0124 77537 info@progeo.biz info@anthemisassociates.it studio@sdprogetto.net"
-     }
-    },
-    {
-     "type": "E-mail",
      "value": "studio@sdprogetti.net",
-     "occurrences": 17,
+     "occurrences": 38,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/595635",
       "page": 1,
       "document": "Relazione tecnico illustrativa",
       "excerpt": "= studio@sdprogetti.net"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@progeo.biz",
+     "occurrences": 32,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/686506",
+      "page": 1,
+      "document": "Integrazioni del 01/08/2022 Valutazione di Incidenza Ambientale",
+      "excerpt": "+39 0123 320667 +39 011 9977387 +39 0124 77537 info@progeo.biz info@anthemisassociates.it studio@sdprogetto.net"
      }
     },
     {
@@ -232,6 +280,54 @@
       "page": 1,
       "document": "Integrazioni del 01/08/2022 Elenco elaborati",
       "excerpt": "+39 011 9977387 info@anthemisassociates.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Filippo Baretti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0114323476",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/612340",
+      "page": 2,
+      "document": "Parere della Regione Piemonte in data 22/03/2022",
+      "excerpt": "Referenti: Dott. Filippo Baretti tel. 0114323476"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Daniele Calavita",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "ufficio.sportelloconcessioni@cittametropolitana.torino.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/609345",
+      "page": 4,
+      "document": "Parere della Città Metropolitana di Torino in data 04/03/2022",
+      "excerpt": "Ufficio informazioni: Sportello Concessioni presso Direzione Coordinamento Viabilità mail ufficio.sportelloconcessioni@cittametropolitana.torino.it"
      }
     }
    ],
@@ -289,9 +385,9 @@
     "valore": "Provvedimento n. 127 del 02/03/2023",
     "dettaglio": null,
     "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1438974",
+     "url": "https://va.mite.gov.it/File/Documento/1422697",
      "page": 1,
-     "document": "Integrazioni del 13/10/2026 - Comunicazione esito istruttoria",
+     "document": "Comunicazione VA esito valutazione",
      "excerpt": "Con Provvedimento di VIA n. 127 del 2 marzo 2023 è stato rilasciato, in favore della Ecopiedmont1 S.r.l., giudizio favorevole di compatibilità ambientale per il progetto in oggetto."
     }
    },
@@ -301,9 +397,9 @@
     "valore": "non prima di marzo 2023",
     "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
     "source": {
-     "url": "https://va.mite.gov.it/File/Documento/1438974",
+     "url": "https://va.mite.gov.it/File/Documento/1422697",
      "page": 1,
-     "document": "Integrazioni del 13/10/2026 - Comunicazione esito istruttoria",
+     "document": "Comunicazione VA esito valutazione",
      "excerpt": "Con Provvedimento di VIA n. 127 del 2 marzo 2023 è stato rilasciato, in favore della Ecopiedmont1 S.r.l., giudizio favorevole di compatibilità ambientale per il progetto in oggetto."
     }
    },
@@ -325,9 +421,9 @@
    "atto": "Provvedimento n. 127",
    "data": "02/03/2023",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1438974",
+    "url": "https://va.mite.gov.it/File/Documento/1422697",
     "page": 1,
-    "document": "Integrazioni del 13/10/2026 - Comunicazione esito istruttoria",
+    "document": "Comunicazione VA esito valutazione",
     "excerpt": "Con Provvedimento di VIA n. 127 del 2 marzo 2023 è stato rilasciato, in favore della Ecopiedmont1 S.r.l., giudizio favorevole di compatibilità ambientale per il progetto in oggetto."
    }
   },
@@ -1370,9 +1466,9 @@
  },
  "documentazione": {
   "documenti": 140,
-  "pagine": 2483,
-  "completa": false,
-  "da_leggere": 20
+  "pagine": 2789,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -1411,12 +1507,12 @@
    "reason": "non indicata nel titolo: valore ricavato dagli elaborati"
   },
   {
-   "label": "Superficie complessiva",
-   "reason": "valori diversi negli elaborati"
+   "label": "Superficie pannelli",
+   "reason": "valore letto (25 ha) prossimo all'area totale: non mostrato"
   },
   {
    "label": "Recapiti",
-   "reason": "147 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "183 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
