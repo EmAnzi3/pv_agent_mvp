@@ -1,0 +1,676 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11553",
+ "title": "Progetto di un impianto eolico denominato \"Berchidda\", costituito da n. 10 aerogeneratori ciascuno dalla potenza di 7,20 MW collocati nel Comune di Berchidda (SS), per una potenza complessiva di 72 MWp da realizzarsi nei Comuni di Berchidda (SS), Monti(SS), Loiri Porto San Paolo(SS), Olbia(SS).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11553",
+ "source": "mase",
+ "updated": "2026-11-12",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "7,2 MW",
+   "sub": "Valore ricorrente negli elaborati (15 volte); il titolo riporta 72 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1231048",
+    "page": 1,
+    "document": "Avviso al pubblico del 19/03/2025",
+    "excerpt": "Parco Eolico denominato \"Berchidda\", composto da n. 10 aerogeneratori, con potenza nominale fino a 7,20 MW, per una potenza complessiva di 72,00 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da verificare",
+   "sub": "0,72 MW ciascuno · altezza mozzo 118 m · diametro rotore 158 m · Valore più ricorrente negli elaborati; altri valori: 5 (12), 3 (8), 4 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1231048",
+    "page": 1,
+    "document": "Avviso al pubblico del 19/03/2025",
+    "excerpt": "Parco Eolico denominato \"Berchidda\", composto da n. 10 aerogeneratori, con potenza nominale fino a 7,20 MW, per una potenza complessiva di 72,00 MW"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "32,4 MW / 64,8 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 64,8 MW (2), 144 MW (2), 25 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1250010",
+    "page": 15,
+    "document": "Osservazioni della Regione Autonoma della Sardegna- Direzione Generale Pianificazione Urbanistica Territoriale della Vigilanza Edilizia, in data 18/04/2025",
+    "excerpt": "- [ID: 9736] Parco eolico denominato \"Sinnada\", costituito da 8 aerogeneratori, con una potenza complessiva di 49,6 MW e un sistema di accumulo (BESS) 32,4 MW/64,8 MWh e relative opere connesse, localizzato nei Comuni di"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Berchidda"
+  ],
+  "coordinate": {
+   "lat": 40.83616,
+   "lon": 9.28353,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (102 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1231005",
+    "page": 4,
+    "document": "Relazione agro forestale e pedologica",
+    "excerpt": "- BRCH-01 – Latitudine 40°50'10.68\"N – Longitudine 9°16'25.45\"E -"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.83616,9.28353",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Edison Rinnovabili S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rinnovabili@pec.edison.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1247863",
+      "page": 28,
+      "document": "Osservazioni della Regione Autonoma della Sardegna - Assessorato dell'Ambiente - Direzione Generale Ambiente, in data 22/04/2025",
+      "excerpt": "Alla Società Edison Rinnovabili S.p.a. rinnovabili@pec.edison.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11553"
+   }
+  },
+  {
+   "name": "Dott. Geol. Antonio Damiano Mulas",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1231010",
+    "page": 84,
+    "document": "Relazione geologica e geotecnica",
+    "excerpt": "Il Geologo: Dott. Geol. Antonio Damiano Mulas"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@lipu.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1247860",
+      "page": 1,
+      "document": "Osservazioni dell'Associazione LIPU ODV Bird Life - Coordinamento Sardegna, in data 22/04/2025",
+      "excerpt": "Coordinamento reg. Lipu Sardegna sardegna@lipu.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Alberto Antinori",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "studioantinori@arubapec.it",
+     "occurrences": 99,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1230989",
+      "page": 2,
+      "document": "Relazione tecnica campo elettromagnetico",
+      "excerpt": "Via G. Randaccio n.49 09134 Cagliari - P.Iva 02516850928 CF NTNLRT71P13B354S Tel.070522840 Fax.0702357883 Email studioantinori@virgilio.it Pec studioantinori@arubapec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "studioantinori@virgilio.it",
+     "occurrences": 99,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1230989",
+      "page": 2,
+      "document": "Relazione tecnica campo elettromagnetico",
+      "excerpt": "Via G. Randaccio n.49 09134 Cagliari - P.Iva 02516850928 CF NTNLRT71P13B354S Tel.070522840 Fax.0702357883 Email studioantinori@virgilio.it Pec studioantinori@arubapec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "070522840",
+     "occurrences": 99,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1230989",
+      "page": 2,
+      "document": "Relazione tecnica campo elettromagnetico",
+      "excerpt": "Via G. Randaccio n.49 09134 Cagliari - P.Iva 02516850928 CF NTNLRT71P13B354S Tel.070522840 Fax.0702357883 Email studioantinori@virgilio.it Pec studioantinori@arubapec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "AEI Wind Project Xiii S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0792088300",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1250010",
+      "page": 20,
+      "document": "Osservazioni della Regione Autonoma della Sardegna- Direzione Generale Pianificazione Urbanistica Territoriale della Vigilanza Edilizia, in data 18/04/2025",
+      "excerpt": "BUDDUSO'- ALA’ DEI SARDI * AEI WIND PROJECT XIII srl 9 59 Viale Dante Alighieri, 37 — 07100 Sassari - tel. +39 079 2088300 - fax +39 079 2088907"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "previsto",
+  "label": "Avvio lavori previsto il 03/01/2028",
+  "reason": "Data di progetto: non prova l'effettivo avvio."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "03/01/2028 → 04/07/2029",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1230979",
+     "page": 2,
+     "document": "Cronoprogramma dei lavori di costruzione",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Visualizza settimana: 1",
+    "start": 0.0,
+    "end": 0.26,
+    "level": 0,
+    "dates": [
+     "2028-01-03",
+     "2028-01-10"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Preparazione area di cantiere",
+    "start": 0.0,
+    "end": 0.49,
+    "level": 0,
+    "dates": [
+     "2028-01-03",
+     "2028-01-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Pulizia preliminare area di cantiere",
+    "start": 0.16,
+    "end": 0.86,
+    "level": 0,
+    "dates": [
+     "2028-01-08",
+     "2028-01-28"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Creazione viabilità preliminare",
+    "start": 0.33,
+    "end": 5.3,
+    "level": 0,
+    "dates": [
+     "2028-01-13",
+     "2028-06-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Creazione recinzione",
+    "start": 0.39,
+    "end": 1.74,
+    "level": 0,
+    "dates": [
+     "2028-01-15",
+     "2028-02-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Realizzazione plint di fondazione",
+    "start": 5.26,
+    "end": 8.59,
+    "level": 0,
+    "dates": [
+     "2028-06-11",
+     "2028-09-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole di cantiere",
+    "start": 5.26,
+    "end": 9.24,
+    "level": 0,
+    "dates": [
+     "2028-06-11",
+     "2028-10-09"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Opere idrauliche",
+    "start": 9.18,
+    "end": 11.18,
+    "level": 0,
+    "dates": [
+     "2028-10-08",
+     "2028-12-07"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Completamente viabilità e piazzole",
+    "start": 13.98,
+    "end": 15.66,
+    "level": 0,
+    "dates": [
+     "2029-03-03",
+     "2029-04-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Passaggio cavidotti interni all'impianto",
+    "start": 8.95,
+    "end": 12.6,
+    "level": 0,
+    "dates": [
+     "2028-10-01",
+     "2029-01-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Realizzazione edificio produttore",
+    "start": 12.07,
+    "end": 13.09,
+    "level": 0,
+    "dates": [
+     "2029-01-04",
+     "2029-02-03"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Realizzazione opere di connessione",
+    "start": 12.57,
+    "end": 17.04,
+    "level": 0,
+    "dates": [
+     "2029-01-19",
+     "2029-06-03"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Collegamento Trasformatori BT/MT",
+    "start": 17.04,
+    "end": 18.06,
+    "level": 0,
+    "dates": [
+     "2029-06-04",
+     "2029-07-04"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Avviamento impianto",
+    "start": 15.13,
+    "end": 15.33,
+    "level": 0,
+    "dates": [
+     "2029-04-07",
+     "2029-04-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio aerogeneratori",
+    "start": 15.62,
+    "end": 17.8,
+    "level": 0,
+    "dates": [
+     "2029-04-22",
+     "2029-06-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Visualizza settimana: 1",
+    "start": 2.53,
+    "end": 2.8,
+    "level": 0,
+    "dates": [
+     "2028-03-20",
+     "2028-03-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Visualizza settimana: 1",
+    "start": 5.3,
+    "end": 5.56,
+    "level": 0,
+    "dates": [
+     "2028-06-12",
+     "2028-06-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Visualizza settimana: 1",
+    "start": 7.83,
+    "end": 8.09,
+    "level": 0,
+    "dates": [
+     "2028-08-28",
+     "2028-09-04"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Visualizza settimana: 1",
+    "start": 10.36,
+    "end": 10.62,
+    "level": 0,
+    "dates": [
+     "2028-11-13",
+     "2028-11-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Visualizza settimana: 1",
+    "start": 12.66,
+    "end": 12.93,
+    "level": 0,
+    "dates": [
+     "2029-01-22",
+     "2029-01-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Visualizza settimana: 1",
+    "start": 15.43,
+    "end": 15.69,
+    "level": 0,
+    "dates": [
+     "2029-04-16",
+     "2029-04-23"
+    ],
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 18.06,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1230979",
+   "page": 2,
+   "document": "Cronoprogramma dei lavori di costruzione",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "gen 28",
+     "start": -0.066,
+     "end": 0.934
+    },
+    {
+     "label": "feb 28",
+     "start": 0.934,
+     "end": 1.934
+    },
+    {
+     "label": "mar 28",
+     "start": 1.934,
+     "end": 2.934
+    },
+    {
+     "label": "apr 28",
+     "start": 2.934,
+     "end": 3.934
+    },
+    {
+     "label": "mag 28",
+     "start": 3.934,
+     "end": 4.934
+    },
+    {
+     "label": "giu 28",
+     "start": 4.934,
+     "end": 5.934
+    },
+    {
+     "label": "lug 28",
+     "start": 5.934,
+     "end": 6.934
+    },
+    {
+     "label": "ago 28",
+     "start": 6.934,
+     "end": 7.934
+    },
+    {
+     "label": "set 28",
+     "start": 7.934,
+     "end": 8.934
+    },
+    {
+     "label": "ott 28",
+     "start": 8.934,
+     "end": 9.934
+    },
+    {
+     "label": "nov 28",
+     "start": 9.934,
+     "end": 10.934
+    },
+    {
+     "label": "dic 28",
+     "start": 10.934,
+     "end": 11.934
+    },
+    {
+     "label": "gen 29",
+     "start": 11.934,
+     "end": 12.934
+    },
+    {
+     "label": "feb 29",
+     "start": 12.934,
+     "end": 13.934
+    },
+    {
+     "label": "mar 29",
+     "start": 13.934,
+     "end": 14.934
+    },
+    {
+     "label": "apr 29",
+     "start": 14.934,
+     "end": 15.934
+    },
+    {
+     "label": "mag 29",
+     "start": 15.934,
+     "end": 16.934
+    },
+    {
+     "label": "giu 29",
+     "start": 16.934,
+     "end": 17.934
+    },
+    {
+     "label": "lug 29",
+     "start": 17.934,
+     "end": 18.934
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "15 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 1 mese (1), 2 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1231032",
+    "page": 10,
+    "document": "Piano di monitoraggio ambientale",
+    "excerpt": "Pertanto le centraline durante il CO saranno poste in funzione, nelle aree da individuare secondo i lavori da eseguire, in modo continuo durante i lavori con rilievi quindicinali per almeno 15 giorni. I valori rilevati s"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma dei lavori di costruzione",
+   "url": "https://va.mite.gov.it/File/Documento/1230979"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma dei lavori di dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/1230981"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 101,
+  "pagine": 1383,
+  "completa": false,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "EDISON Rinnovabili S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 72.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BERCHIDDA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 72 MW, gli elaborati 7,2 MW"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "99 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
