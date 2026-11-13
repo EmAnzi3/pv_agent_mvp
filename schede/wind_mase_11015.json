@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto eolico denominato \"Altamura\", costituito da 10 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 72 MW, da realizzarsi nel Comune di Altamura (BA), incluse le opportune opere di connessione alla RTN ricadenti anche nei comuni di Mottola (TA), Santeramo in Colle (BA) e Gioia del Colle (BA).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11015",
  "source": "mase",
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "9",
    "status": "da documenti",
-   "sub": "8,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 10 (73), 2 (8), 3 (6)",
+   "sub": "8,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 10 (73), 2 (8), 1 (8)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1099129",
     "page": 1,
@@ -36,8 +36,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "18 mesi",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 12 mesi (2), 300 giorni (circa 10 mesi) (1), 15 mesi (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (4), 300 giorni (circa 10 mesi) (1), 15 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1099104",
     "page": 85,
@@ -116,7 +116,7 @@
     {
      "type": "PEC",
      "value": "m.candeo@pec.it",
-     "occurrences": 56,
+     "occurrences": 62,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/781992",
       "page": 1,
@@ -349,12 +349,56 @@
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": "8 mesi (cronoprogramma)",
-  "autorizzazione": null,
-  "note": [
-   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Deliberazione n. 76 del 13/04/2023",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/835307",
+     "page": 2,
+     "document": "Parere del Comune di Altamura - Commissario Straordinario in data 18/04/2023",
+     "excerpt": "Deliberazione n. 76 del 13/04/2023 Proposta n. 85 del 21/03/2023"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di aprile 2023",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/835307",
+     "page": 2,
+     "document": "Parere del Comune di Altamura - Commissario Straordinario in data 18/04/2023",
+     "excerpt": "Deliberazione n. 76 del 13/04/2023 Proposta n. 85 del 21/03/2023"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di dicembre 2023",
+    "dettaglio": "inizio stimato + durata del cantiere: 8 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1099145",
+     "page": 2,
+     "document": "Cronoprogramma dei lavori per il progetto del Parco Eolico 'Altamura'",
+     "excerpt": ""
+    }
+   }
   ],
+  "durata_cantiere": "8 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "Deliberazione n. 76",
+   "data": "13/04/2023",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/835307",
+    "page": 2,
+    "document": "Parere del Comune di Altamura - Commissario Straordinario in data 18/04/2023",
+    "excerpt": "Deliberazione n. 76 del 13/04/2023 Proposta n. 85 del 21/03/2023"
+   }
+  },
+  "note": [],
   "legenda": {
    "documentata": "data scritta nei documenti",
    "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
@@ -441,8 +485,8 @@
   },
   "duration": {
    "text": "18 mesi",
-   "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 12 mesi (2), 300 giorni (circa 10 mesi) (1), 15 mesi (1)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (4), 300 giorni (circa 10 mesi) (1), 15 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1099104",
     "page": 85,
@@ -462,9 +506,9 @@
  },
  "documentazione": {
   "documenti": 315,
-  "pagine": 3978,
-  "completa": false,
-  "da_leggere": 15
+  "pagine": 4576,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -495,8 +539,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "281 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "326 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
