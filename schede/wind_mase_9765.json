@@ -1,0 +1,550 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9765",
+ "title": "Progetto per la realizzazione di un impianto di produzione di energia elettrica mediante lo sfruttamento del vento, costituito da n. 15 aerogeneratori di potenza unitaria pari a 4,7 MW, per una potenza complessiva di 70,5 MW, da realizzarsi nel Comune di Venosa (PZ) e Montemilone (PZ) in località Piano Regio, con opere di connessione ricadenti nei medesimi comuni. Codice pratica MYTERNA n. 202201742.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9765",
+ "source": "mase",
+ "updated": "2026-11-13",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "70,5 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9765",
+    "excerpt": "70,5 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "15",
+   "status": "da documenti",
+   "sub": "4,70 MW ciascuno · altezza mozzo 90 m · diametro rotore 155 m · Valore prevalente negli elaborati; altri valori: 8 (9), 10 (8), 7 (7)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/865463",
+    "page": 1,
+    "document": "Avviso al pubblico del 07/07/2023",
+    "excerpt": "prevede la realizzazione di un impianto di produzione di energia elettrica mediante lo sfruttamento del vento, da ubicarsi in località Piano Regio, in Comuni di Venosa (PZ) e Montemilone (PZ) costituito da n. 15 aerogene"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1183128",
+    "page": 5,
+    "document": "Integrazioni del 28/11/2024 - MONTEMILONE_PTO_5.pdf",
+    "excerpt": "agrivoltaico nel territorio comunale di Venosa (PZ) al foglio 16 particelle 213, 215, 254, 256, 257,"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "355 giorni (circa 12 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/865447",
+    "page": 83,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "“PRGDG_GENL00700_00_Cronoprogramma” dal quale si evince che la durata delle lavorazioni è prevista in 355 giorni."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "PZ",
+  "comuni": [
+   "Venosa",
+   "Montemilone"
+  ],
+  "coordinate": {
+   "lat": 40.99908,
+   "lon": 15.80024,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (14 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1053979",
+    "page": 7,
+    "document": "Integrazioni del 09/04/2024 - PRGDT_GENR02102_01_Relazione rendering e fotoinserimenti",
+    "excerpt": "566726"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.99908,15.80024",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Aren Green S.r.l. Unipersonale",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "04032170401",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Arrigoni 308 47522 Cesena Fc",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "arengreensrl@legalmail.it",
+     "occurrences": 304,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/865447",
+      "page": 2,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Ph. +39 0547 415245 - email: arengreensrl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "rpasrl@legalmail.it",
+     "occurrences": 249,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/865275",
+      "page": 2,
+      "document": "Disciplinare descrittivo e prestazionale",
+      "excerpt": "Ph. +39 0547 415245 - email: rpasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0547415245",
+     "occurrences": 554,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/865447",
+      "page": 2,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Ph. +39 0547 415245 - email: arengreensrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9765"
+   }
+  },
+  {
+   "name": "Pheedra S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@pheedra.it",
+     "occurrences": 421,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1053978",
+      "page": 1,
+      "document": "Integrazioni del 09/04/2024 - PRGDT_GENR02100_01_Relazione paesaggistica",
+      "excerpt": "Tel. 099.7722302 - Fax 099.9870285 e-mail: info@pheedra.it - web: www.pheedra.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0997722302",
+     "occurrences": 421,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1053978",
+      "page": 1,
+      "document": "Integrazioni del 09/04/2024 - PRGDT_GENR02100_01_Relazione paesaggistica",
+      "excerpt": "74121 - Taranto Tel. 099.7722302 - Fax 099.9870285"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1053978",
+    "page": 1,
+    "document": "Integrazioni del 09/04/2024 - PRGDT_GENR02100_01_Relazione paesaggistica",
+    "excerpt": "REDAZIONE / PROGETTISTA:"
+   }
+  },
+  {
+   "name": "Aren Electric Power S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "03803880404",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Arrigoni 308 47522 Cesena Fc",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "areaenergia@legalmail.it",
+     "occurrences": 92,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1183139",
+      "page": 2,
+      "document": "Integrazioni del 28/11/2024 - Relazione generale opere di connessione",
+      "excerpt": "Ph. +39 0547 415245 - email: areaenergia@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "areaenergiasrl@legalmail.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/865350",
+      "page": 1,
+      "document": "Preventivo di connessione",
+      "excerpt": "areaenergiasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@aren-ep.com",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/865387",
+      "page": 2,
+      "document": "Relazione geologica, geotecnica, idrogeomorfologica e sismica",
+      "excerpt": "AREA TECNICA - AREN Electric Power S.p.A. EMAIL info@aren-ep.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/865447",
+    "page": 1,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "REDAZIONE / PROGETTISTA:"
+   }
+  },
+  {
+   "name": "Dott. Antonio Raspatelli",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "antonioraspatelli@softpec.it",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/865387",
+      "page": 1,
+      "document": "Relazione geologica, geotecnica, idrogeomorfologica e sismica",
+      "excerpt": "e-mail: antonioraspatelli@tiscali.it Pec: antonioraspatelli@softpec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "antonioraspatelli@tiscali.it",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/865387",
+      "page": 1,
+      "document": "Relazione geologica, geotecnica, idrogeomorfologica e sismica",
+      "excerpt": "P.I. 03500240712 e-mail: antonioraspatelli@tiscali.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/865387",
+    "page": 2,
+    "document": "Relazione geologica, geotecnica, idrogeomorfologica e sismica",
+    "excerpt": "IL GEOLOGO Dott. Antonio RASPATELLI"
+   }
+  },
+  {
+   "name": "Ing. Samuele Ulivi",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/865447",
+    "page": 1,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "TIMBRO E FIRMA PROGETTISTA:"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "15 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Redazione Progetto Esecutivo",
+    "start": 0.0,
+    "end": 1.8,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Deposito Opere Civili",
+    "start": 0.79,
+    "end": 2.8,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Picchettamento Aerogeneratori ed Aree",
+    "start": 0.79,
+    "end": 1.3,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Cantierizzazione",
+    "start": 1.29,
+    "end": 2.3,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle viabilità Interna",
+    "start": 1.79,
+    "end": 4.3,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Fondazioni Aerogeneratori",
+    "start": 2.79,
+    "end": 11.8,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera cavidotto AT",
+    "start": 6.29,
+    "end": 11.8,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e Montaggio Aerogeneratori",
+    "start": 7.29,
+    "end": 12.8,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione della Viabilità Interna Definitiva",
+    "start": 10.79,
+    "end": 13.8,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Avviamento Parco Eolico e Collaudo Finale",
+    "start": 11.79,
+    "end": 14.8,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Pulizia e Sistemazione Finale del Sito",
+    "start": 13.79,
+    "end": 14.8,
+    "level": 1,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 14.8,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/865359",
+   "page": 36,
+   "document": "Relazione tecnica impianto",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "Mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "355 giorni (circa 12 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1), 1 mese (1), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/865447",
+    "page": 83,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "“PRGDG_GENL00700_00_Cronoprogramma” dal quale si evince che la durata delle lavorazioni è prevista in 355 giorni."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/865356"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/865356"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 306,
+  "pagine": 2135,
+  "completa": false,
+  "da_leggere": 6
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "AREN Green S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 70.5,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "VENOSA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PZ",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "87 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
