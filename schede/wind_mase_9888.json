@@ -5,14 +5,14 @@
  "title": "Progetto di un impianto eolico, costituito da 10 turbine aventi potenza complessiva pari a 72 MW pari a 72 MW, ubicato nei comuni di Torre di Ruggiero (CZ), Chiaravalle Centrale (CZ) e Petrizzi (CZ).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9888",
  "source": "mase",
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "7,2 MW",
-   "sub": "Valore ricorrente negli elaborati (24 volte); il titolo riporta 72 MW (probabile refuso).",
+   "sub": "Valore ricorrente negli elaborati (37 volte); il titolo riporta 72 MW (probabile refuso).",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/867074",
     "page": 201,
@@ -25,7 +25,7 @@
    "label": "Aerogeneratori",
    "value": "10",
    "status": "da documenti",
-   "sub": "0,72 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 2 (9), 6 (8), 5 (8)",
+   "sub": "0,72 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 5 (16), 2 (12), 6 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/867073",
     "page": 1,
@@ -50,7 +50,7 @@
    "label": "Durata cantiere",
    "value": "12 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 22 mesi (3), 7 mese (1), 6 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 22 mesi (5), 7 mese (2), 6 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/867074",
     "page": 233,
@@ -67,9 +67,9 @@
    "Chiaravalle Centrale"
   ],
   "coordinate": {
-   "lat": 38.68204,
-   "lon": 16.33782,
-   "tipo": "centro della tavola georeferenziata di progetto (478 riferimenti concordi)",
+   "lat": 38.68195,
+   "lon": 16.33867,
+   "tipo": "centro della tavola georeferenziata di progetto (509 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1268992",
     "page": 1,
@@ -77,7 +77,7 @@
     "excerpt": "Integrazioni del 06/06/2025 - PIANO PARTICELLARE DI ESPROPRIO GRAFICO - QUADRO 1"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=38.68204,16.33782",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=38.68195,16.33867",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -136,6 +136,17 @@
       "document": "Integrazioni del 06/06/2025 - CERTIFICAZIONI USI CIVICI",
       "excerpt": "Telefono +39 345 453 4404 E-mail giuseppe.tortorici@statkraft.com"
      }
+    },
+    {
+     "type": "Telefono",
+     "value": "0302056980",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/867059",
+      "page": 2,
+      "document": "A.5 STUDIO ANEMOLOGICO",
+      "excerpt": "- Via Matteotti, 311 – SCALA P – Int.10 – 25063 Gardone Val Trompia (BS) Tel. 030 2056980 – Fax 030 831100"
+     }
     }
    ],
    "source": {
@@ -156,7 +167,7 @@
     {
      "type": "E-mail",
      "value": "info@tecnogaia.it",
-     "occurrences": 24,
+     "occurrences": 47,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1129668",
       "page": 1,
@@ -171,6 +182,41 @@
    }
   },
   {
+   "name": "Delta OHM S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@deltaohm.com",
+     "occurrences": 40,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1129670",
+      "page": 21,
+      "document": "Integrazioni del 13/08/2024 - RELAZIONE PREVISIONALE DI IMPATTO ACUSTICO",
+      "excerpt": "Fax 0039-049635596 e-mail: info@deltaohm.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "049897715",
+     "occurrences": 30,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1129670",
+      "page": 21,
+      "document": "Integrazioni del 13/08/2024 - RELAZIONE PREVISIONALE DI IMPATTO ACUSTICO",
+      "excerpt": "35030 Caselle di Selvazzano (PD) Tel. 0039-0498977150"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Alla SKI WA1 S.r.l.",
    "kind": "società",
    "roles": [],
@@ -183,12 +229,23 @@
     {
      "type": "PEC",
      "value": "skiwa1@unapec.it",
-     "occurrences": 43,
+     "occurrences": 50,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/897600",
       "page": 1,
       "document": "Richiesta integrazioni del MIC",
       "excerpt": "Alla SKI WA1 S.r.l. skiwa1@unapec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "skiwa1@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/936105",
+      "page": 1,
+      "document": "Controdeduzioni della SKI W A1 S.r.l alle osservazioni presentate dal WWF in data 17 Ottobre 2023 + le osservazioni presentate dall'Ing. Rauti in data 8 novembre 2023",
+      "excerpt": "PEC skiwa1@pec.it"
      }
     }
    ],
@@ -253,7 +310,7 @@
     {
      "type": "PEC",
      "value": "atechsrl@legalmail.it",
-     "occurrences": 11,
+     "occurrences": 29,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1129527",
       "page": 1,
@@ -283,6 +340,54 @@
       "page": 14,
       "document": "Integrazioni del 06/06/2025 - CERTIFICAZIONI USI CIVICI",
       "excerpt": "Project Manager Ing. Giuseppe Tortorici Telefono +39 345 453 4404"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/918795",
+      "page": 68,
+      "document": "Osservazioni dell'Associazione WWF Calabria in data 17/10/2023",
+      "excerpt": "www.rwe.com rwerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Parco Eolico di Primus S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "parcoeolicodibrognaturo@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/918795",
+      "page": 110,
+      "document": "Osservazioni dell'Associazione WWF Calabria in data 17/10/2023",
+      "excerpt": "É a Società Parco Eolico di Primus, S.r.l. e Venisbero (parcoeolicodibrognaturo@pec.it)"
      }
     }
    ],
@@ -480,7 +585,7 @@
   "duration": {
    "text": "12 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 22 mesi (3), 20 giorni (1), 7 mese (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 22 mesi (5), 20 giorni (2), 7 mese (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/867074",
     "page": 233,
@@ -513,9 +618,9 @@
  },
  "documentazione": {
   "documenti": 456,
-  "pagine": 5965,
-  "completa": false,
-  "da_leggere": 156
+  "pagine": 8997,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -555,7 +660,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "1232 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1731 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
