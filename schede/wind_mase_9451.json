@@ -1,0 +1,504 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9451",
+ "title": "Progetto di parco eolico denominato \"Aregu\", di potenza massima complessiva di 66 MW, localizzato nei Comuni di Giave, Cossoine, Cheremule (SS) e relative opere di connessione alla RTN",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9451",
+ "source": "mase",
+ "updated": "2026-11-13",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "66 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9451",
+    "excerpt": "66 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "11",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 14 (10), 121 (9), 132 (9)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/784303",
+    "page": 2,
+    "document": "Avviso al Pubblico del 06/03/2023",
+    "excerpt": "Il progetto è localizzato nella Regione Sardegna, in Provincia di Sassari, nei Comuni di Giave, Cossoine e Cheremule e prevede la realizzazione di n. 11 aerogeneratori da 6,0 MW con una potenza complessiva pari a 66 MW, "
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1440569",
+    "page": 7,
+    "document": "Osservazioni del CeSim - Centro studi identità e memoria/APS- in data 07/10/2026",
+    "excerpt": "agrivoltaico «Campanedda» —"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 253 giorni (circa 8 mesi) (1), 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/784151",
+    "page": 17,
+    "document": "Analisi delle possibili ricadute sociali",
+    "excerpt": "La fase di costruzione dell’impianto impiegherà un totale di circa 89 addetti in un periodo, come da Cronoprogramma, di circa 12 mesi. Questo comporterà un coordinamento di forza lavoro composta da maestranze, ingegneri "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Giave",
+   "Cossoine",
+   "Cheremule"
+  ],
+  "coordinate": {
+   "lat": 40.47267,
+   "lon": 8.64166,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (51 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/784129",
+    "page": 1,
+    "document": "Tavola della vegetazione",
+    "excerpt": "Tavola della vegetazione"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.47267,8.64166",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Aregu Wind S.r.l. !!S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Geologo"
+   ],
+   "vat": "16181141009",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Chiaravalle 7/9 20122 Milano Mi",
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9451"
+   }
+  },
+  {
+   "name": "Ing. Maurizio Contu",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "contumaurizio@gmail.com",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/784037",
+      "page": 2,
+      "document": "Elenco elaborati progetto civile",
+      "excerpt": "Mob. +39 3388487648 e-mail: contumaurizio@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/784037",
+    "page": 2,
+    "document": "Elenco elaborati progetto civile",
+    "excerpt": "Progettista:"
+   }
+  },
+  {
+   "name": "Dott. Giulio Casu",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/784100",
+    "page": 1,
+    "document": "Inquadramento su Database Geotopografico DBGT10k",
+    "excerpt": "Progettista: Dott. Giulio Casu Dott.ssa Ing. Silvia Exana"
+   }
+  },
+  {
+   "name": "Ing. Alessandra Scalas",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/784151",
+    "page": 2,
+    "document": "Analisi delle possibili ricadute sociali",
+    "excerpt": "Progettista:"
+   }
+  },
+  {
+   "name": "Geol. Cosima Atzori",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/784154",
+    "page": 2,
+    "document": "Relazione previsionale dell'impatto dovuto alle vibrazioni",
+    "excerpt": "Progettista:"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/784157",
+      "page": 4,
+      "document": "Studio anemologico e di producibilità",
+      "excerpt": "E-mail: info@tecnogaia.it Cap. Soc. € 119.000,00 interamente versato"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@lipu.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/827989",
+      "page": 1,
+      "document": "Osservazioni del Coordinamento Regionale Lipu Sardegna in data 04/04/2023",
+      "excerpt": "Coordinamento Regionale Lipu Sardegna sardegna@lipu.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sardegna@italianostra.org",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/825909",
+      "page": 31,
+      "document": "Osservazioni dell'Associazione Italia Nostra Sardegna del 03/04/2023",
+      "excerpt": "Italia Nostra Sardegna sardegna@italianostra.org"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "IAT Consulenza E Progetti S.r.l. Unipersonale",
+   "kind": "società",
+   "roles": [],
+   "vat": "02748010929",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Giua Snc 09122 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@iatprogetti.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/784052",
+      "page": 2,
+      "document": "Calcoli preliminari di dimensionamento delle strutture",
+      "excerpt": "Tel. /Fax +39.070.658297 Email: info@iatprogetti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geoservice S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "geoservice.sas@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/784060",
+      "page": 3,
+      "document": "Relazione tecnica sulle indagini geofisiche",
+      "excerpt": "mail: info@geoservicesardegna.com; PEC: geoservice.sas@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@geoservicesardegna.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/784060",
+      "page": 3,
+      "document": "Relazione tecnica sulle indagini geofisiche",
+      "excerpt": "P.IVA/C.F.: 03008730925 - R.E.A.: 239536 di Cagliari mail: info@geoservicesardegna.com;"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3474032606",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/784060",
+      "page": 3,
+      "document": "Relazione tecnica sulle indagini geofisiche",
+      "excerpt": "Capitale Sociale: € 20.000,00 Tel. 3474032606; Fax: 1782206528;"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento Cantiere",
+    "start": 0.45,
+    "end": 0.81,
+    "level": 0,
+    "summary": false,
+    "duration": "79 g"
+   },
+   {
+    "name": "Attivita' di tracciamento",
+    "start": 0.45,
+    "end": 1.59,
+    "level": 0,
+    "summary": false,
+    "duration": "259 g"
+   },
+   {
+    "name": "Interventi su viabilita\": come da report \"MOLISANA\"",
+    "start": 0.64,
+    "end": 1.79,
+    "level": 0,
+    "summary": false,
+    "duration": "259 g"
+   },
+   {
+    "name": "Adeguamento strade esistenti",
+    "start": 1.1,
+    "end": 3.52,
+    "level": 0,
+    "summary": false,
+    "duration": "709 g"
+   },
+   {
+    "name": "Realizzazione innesti/slarghi su viabilità esistente",
+    "start": 1.79,
+    "end": 3.52,
+    "level": 0,
+    "summary": false,
+    "duration": "609 g"
+   },
+   {
+    "name": "Nuova Viabilità di accesso Pale AG",
+    "start": 2.37,
+    "end": 3.52,
+    "level": 0,
+    "summary": false,
+    "duration": "609 g"
+   },
+   {
+    "name": "Predisposizione piano di posa Piazzole Temporanee",
+    "start": 2.86,
+    "end": 3.51,
+    "level": 0,
+    "summary": false,
+    "duration": "409 g"
+   }
+  ],
+  "unit": "period",
+  "months": 3.52,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/784046",
+   "page": 3,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "Mese 1",
+     "start": 0,
+     "end": 1
+    },
+    {
+     "label": "2",
+     "start": 1,
+     "end": 2
+    },
+    {
+     "label": "Mese 3",
+     "start": 2,
+     "end": 3
+    },
+    {
+     "label": "4",
+     "start": 3,
+     "end": 4
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 2 giorni (3), 5-6 giorni (2), 9-10 giorni (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/784151",
+    "page": 17,
+    "document": "Analisi delle possibili ricadute sociali",
+    "excerpt": "La fase di costruzione dell’impianto impiegherà un totale di circa 89 addetti in un periodo, come da Cronoprogramma, di circa 12 mesi. Questo comporterà un coordinamento di forza lavoro composta da maestranze, ingegneri "
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/784046"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma in immagine (lettura automatica, da verificare)"
+ },
+ "documentazione": {
+  "documenti": 238,
+  "pagine": 3913,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Aregu Wind S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 66.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GIAVE, COSSOINE, CHEREMULE",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "651 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
