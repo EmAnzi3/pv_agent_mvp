@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto fotovoltaico, della potenza di 17,169 MW e delle relative opere di connessione alla RTN, sito nel Comune di Ariano Irpino (AV) in località Masseria delle Monache.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9524",
  "source": "mase",
- "updated": "2026-10-29",
+ "updated": "2026-11-13",
  "sintesi": [
   {
    "key": "potenza",
@@ -48,8 +48,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "6 mesi",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 12 mesi (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/785581",
     "page": 198,
@@ -98,7 +98,7 @@
     {
      "type": "PEC",
      "value": "heliosone@legalmail.it",
-     "occurrences": 3,
+     "occurrences": 4,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/898991",
       "page": 1,
@@ -110,25 +110,6 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9524"
-   }
-  },
-  {
-   "name": "Fdgl S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1296689",
-    "page": 1,
-    "document": "integrazioni del 01/08/2025 - RELAZIONE GENERALE",
-    "excerpt": "COMMITTENTE FDGL s.r.l."
    }
   },
   {
@@ -144,9 +125,9 @@
    "office": null,
    "contacts": [],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/785582",
+    "url": "https://va.mite.gov.it/File/Documento/898993",
     "page": 1,
-    "document": "SIA_TAV.01A",
+    "document": "Integrazioni del 11/09/2023 - SIA_TAV.01A",
     "excerpt": "Progettista: Ing. Fabrizio Davidde"
    }
   },
@@ -264,12 +245,23 @@
       "document": "DEF_REL.13",
       "excerpt": "Sonora S.rl. Tel 0823 351196 - Fax 0823 351196 thay lah LAT N°185 www.sonorasrl.com - sonora@sonorasrl.com"
      }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/785548",
+      "page": 22,
+      "document": "DEF_REL.13",
+      "excerpt": "Via dei Bersaglieri, 9 - Caserta CAUZIONE Sonora S.rl. Tel 0823 351196 - Fax 0823 351196 thay lah LAT N°185"
+     }
     }
    ],
    "source": null
   },
   {
-   "name": "S Doni S.r.l.",
+   "name": "Milestone S.r.l.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -279,14 +271,14 @@
    "office": null,
    "contacts": [
     {
-     "type": "Telefono",
-     "value": "0823351196",
+     "type": "PEC",
+     "value": "milestonesrl2019@pec.it",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/785548",
-      "page": 23,
-      "document": "DEF_REL.13",
-      "excerpt": "Via dei Bersaglieri, 9 - Caserta CALI Sonora S.r | Tel 0823 351196 - Fax 0823 351196 lr | LAT N°185"
+      "url": "https://va.mite.gov.it/File/Documento/785580",
+      "page": 2,
+      "document": "Elaborati di Progetto",
+      "excerpt": "80121 Napoli (NA) milestonesrl2019@pec.it"
      }
     }
    ],
@@ -317,8 +309,8 @@
   "asse": null,
   "duration": {
    "text": "6 mesi",
-   "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 12 mesi (1)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/785581",
     "page": 198,
@@ -335,9 +327,9 @@
  },
  "documentazione": {
   "documenti": 149,
-  "pagine": 1916,
-  "completa": false,
-  "da_leggere": 29
+  "pagine": 2175,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -368,8 +360,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "53 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "82 recapiti non attribuibili a un soggetto preciso: non mostrati"
   },
   {
    "label": "Helios One S.r.l.",
