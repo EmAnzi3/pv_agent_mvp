@@ -1,0 +1,663 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7987",
+ "title": "Progetto di un impianto per la produzione di energia elettrica a fonte eolica sito nel comune di Altamura (BA) ed opere di interconnessione nel comune di Altamura e Gravina di Puglia (BA) costituito da 12 aereogeneratori della potenza unitaria di 6 MW per una potenza complessiva dell'impianto pari a 72 MW.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7987",
+ "source": "mase",
+ "updated": "2026-11-13",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "72 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7987",
+    "excerpt": "72 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "12",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 165 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 72 (3), 1 (2), 10 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/589202",
+    "page": 1,
+    "document": "Avviso al pubblico del 31/01/2022",
+    "excerpt": "Altamura (BA) ed opere di connessione nel comune di Altamura e Gravina in Puglia (BA) costituito da 12 aerogeneratori della potenza unitaria di 6 MW per una potenza complessiva dell`impianto pari a 72 MW"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/695379",
+    "page": 1,
+    "document": "Integrazioni del 20/09/2022 - Relazione geologica idrogeologica e geotecnica",
+    "excerpt": "DI UN IMPIANTO AGROVOLTAICO"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 8 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/525826",
+    "page": 43,
+    "document": "DC20123D-V01-SIA.pdf",
+    "excerpt": "Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BA",
+  "comuni": [
+   "Altamura",
+   "Gravina In Puglia"
+  ],
+  "coordinate": {
+   "lat": 40.76051,
+   "lon": 16.51761,
+   "tipo": "coordinate del sito dichiarate negli elaborati (103 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/695239",
+    "page": 14,
+    "document": "Integrazioni del 20/09/2022 - Verifica dei fabbricati nell'area di studio",
+    "excerpt": "628771.00"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.76051,16.51761",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "WPD Altilia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "16194721003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Luca Gaurico 9-11 00143 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wpdaltiliasrl@legalmail.it",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/614459",
+      "page": 1,
+      "document": "Richiesta integrazioni CTPNRR-PNIEC",
+      "excerpt": "Alla Wpd Altilia S.r.l. wpdaltiliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7987"
+   }
+  },
+  {
+   "name": "Mysun S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "08183900722",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Fontana 6 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "parcofotovoltaico@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/695379",
+      "page": 1,
+      "document": "Integrazioni del 20/09/2022 - Relazione geologica idrogeologica e geotecnica",
+      "excerpt": "70122 Bari (BA) pec: parcofotovoltaico@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/695380",
+    "page": 2,
+    "document": "Integrazioni del 20/09/2022 - Studio di incidenza ambientale V.Inc.A.",
+    "excerpt": "Proponente: Mysun Srl"
+   }
+  },
+  {
+   "name": "Dott. Luisiana Serravalle",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "luisiana.serravalle@epap.sicurezzapostale.it",
+     "occurrences": 28,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/695379",
+      "page": 1,
+      "document": "Integrazioni del 20/09/2022 - Relazione geologica idrogeologica e geotecnica",
+      "excerpt": "72027 - San Pietro Vernotico (BR) pec: luisiana.serravalle@epap.sicurezzapostale.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "luisiana.serravalle@gmail.com",
+     "occurrences": 27,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/695379",
+      "page": 3,
+      "document": "Integrazioni del 20/09/2022 - Relazione geologica idrogeologica e geotecnica",
+      "excerpt": "Via Puglie, 1 -San Pietro Vernotico (BR)- Pec: luisiana.serravalle@epap.sicurezzapostale.it - E-mail: luisiana.serravalle@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/695379",
+    "page": 2,
+    "document": "Integrazioni del 20/09/2022 - Relazione geologica idrogeologica e geotecnica",
+    "excerpt": "IL GEOLOGO"
+   }
+  },
+  {
+   "name": "Ing. Danilo Pomponio",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/648673",
+    "page": 5,
+    "document": "Integrazioni del 07/06/2022 - DC20123D-V35 Relazione di sintesi integrazioni_signed",
+    "excerpt": "Si trasmette dichiarazione del tecnico progettista Ing. Danilo Pomponio attestante che nulla è significativamente cambiato nelle aree interessate dall’impianto e nelle aree limitrofe."
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Studio Tecnico BFP S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "06552640721",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Degli Arredatori 8 70026 Modugno Ba",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "crisafulli@studiobfp.com",
+     "occurrences": 168,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/648666",
+      "page": 57,
+      "document": "Integrazioni del 07/06/2022 - 5.1.a.1 - DC20123D-V10 rev01 Studio evoluzione ombra (shadow flickering)_signed",
+      "excerpt": "+39 080 5046361 Antonio Crisafulli / crisafulli@studiobfp.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "angela-lariccia@hotmail.it",
+     "occurrences": 112,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/648666",
+      "page": 113,
+      "document": "Integrazioni del 07/06/2022 - 5.1.a.1 - DC20123D-V10 rev01 Studio evoluzione ombra (shadow flickering)_signed",
+      "excerpt": "+39 080 5046361 laricciaa / angela-lariccia@hotmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "tecnico@insesrl.it",
+     "occurrences": 44,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/695328",
+      "page": 1,
+      "document": "Integrazioni del 20/09/2022 - Planimetria catastale con API e occupazione temporanea per piste cantiere",
+      "excerpt": "TEL.081 579 7998 mail: tecnico@insesrl.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@bfpgroup.net",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/648652",
+      "page": 1,
+      "document": "Integrazioni del 07/06/2022 - 1.1.d. - BFP_Dich.NonVariazioneSito_signed",
+      "excerpt": "Studio Tecnico BFP s.r.l.  Sede legale e operativa: Via Degli Arredatori, 8 70026 Modugno (BA) Italy t. +39 080 5046361  www.bfpgroup.net info@bfpgroup.net Registro Imprese, CCIAA Bari e P.I. 06552640721 REA n. BA"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "WPD Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "07354181005",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Luca Gaurico 9-11 00143 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wpditaliasrl@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/648674",
+      "page": 1,
+      "document": "Integrazioni del 07/06/2022 - STMG_ GRUPPO TERNA.P20220033530-19.04.2022",
+      "excerpt": "WPD Altilia S.r.l. wpditaliasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@wpd-italia.it",
+     "occurrences": 44,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/695328",
+      "page": 1,
+      "document": "Integrazioni del 20/09/2022 - Planimetria catastale con API e occupazione temporanea per piste cantiere",
+      "excerpt": "Tel: +39 06 960 353-10 e-mail: info@wpd-italia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geol. Domenico DEL Conte",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "domenico.delconte@geoapulia.it",
+     "occurrences": 100,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/695243",
+      "page": 2,
+      "document": "Integrazioni del 20/09/2022 - Relazione compatibilità PTA",
+      "excerpt": "Cell. +39 329.7160866 Fax +39 0884.89012 E-mail: domenico.delconte@geoapulia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3297160866",
+     "occurrences": 100,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/695243",
+      "page": 2,
+      "document": "Integrazioni del 20/09/2022 - Relazione compatibilità PTA",
+      "excerpt": "Corso Giannone, 184 - Cagnano Varano (FG) Cell. +39 329.7160866 Fax +39 0884.89012"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Namirial S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "posta-certificata@pro.sicurezzapostale.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/648654",
+      "page": 4,
+      "document": "Integrazioni del 07/06/2022 - 2.1.b.1 - VERIFICA IMPIANTI AU_Basilicata",
+      "excerpt": "Da: Namirial S.p.A. <posta-certificata@pro.sicurezzapostale.it>"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Atech S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "atechsrl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/695380",
+      "page": 1,
+      "document": "Integrazioni del 20/09/2022 - Studio di incidenza ambientale V.Inc.A.",
+      "excerpt": "70125- Bari (BA) pec: atechsrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "RILIEVI TOPOGRAFICI E PROVE DI LABORATORIO",
+    "start": 0.01,
+    "end": 0.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "PROGETTAZIONE ESECUTIVA",
+    "start": 0.5,
+    "end": 1.48,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "CANTIERIZZAZIONE",
+    "start": 1.5,
+    "end": 1.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE E PIAZZOLE",
+    "start": 2.0,
+    "end": 5.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE PLINTI DI FONDAZIONE",
+    "start": 4.5,
+    "end": 10.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTI",
+    "start": 3.5,
+    "end": 8.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili",
+    "start": 9.0,
+    "end": 12.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere elettriche",
+    "start": 11.5,
+    "end": 14.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Colllaudi e connessione alla Rete",
+    "start": 14.5,
+    "end": 15.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ISTALLAZIONE AEROGENERATORI",
+    "start": 10.0,
+    "end": 14.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "COMMISSIONING WTG",
+    "start": 14.0,
+    "end": 16.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "MESSA IN ESERCIZIO DELL'IMPIANTO",
+    "start": 16.5,
+    "end": 16.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "RIPRISTINI",
+    "start": 16.5,
+    "end": 17.99,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 17.99,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/525806",
+   "page": 36,
+   "document": "Relazione Tecnica Generale",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 8 mesi (1), 1 mese (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/525826",
+    "page": 43,
+    "document": "DC20123D-V01-SIA.pdf",
+    "excerpt": "Per la realizzazione dell’impianto è previsto un tempo complessivo prossimo di circa 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 329,
+  "pagine": 4949,
+  "completa": false,
+  "da_leggere": 29
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Wpd altilia srl",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 72.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ALTAMURA, GRAVINA DI PUGLIA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "1700 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
