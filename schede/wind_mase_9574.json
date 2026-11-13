@@ -1,0 +1,569 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9574",
+ "title": "Progetto di un impianto eolico, denominato \"PARCO EOLICO SANTERAMO\", costituito da n. 11 aerogeneratori con potenza unitaria di 6,4 MW, per una potenza complessiva pari a 70,4 MW, da realizzarsi nel Comune di Santeramo in Colle (BA) con le opere di connessione e infrastrutturali da realizzarsi anche nel Comune di Matera (MT). Codice pratica MYTERNA 202100701.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9574",
+ "source": "mase",
+ "updated": "2026-11-13",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "70,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9574",
+    "excerpt": "70,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "11",
+   "status": "da documenti",
+   "sub": "6,40 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 5 (30), 4 (27), 2 (18)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/805166",
+    "page": 15,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "La società proponente, IBERDROLA Renovables Italia S.p.A, propone la realizzazione di un impianto di produzione di energia elettrica da fonte eolica, mediante l’installazione di 11 aerogeneratori di potenza unitaria pari"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "MT",
+  "comuni": [
+   "Santeramo In Colle",
+   "Matera"
+  ],
+  "coordinate": {
+   "lat": 40.73238,
+   "lon": 16.6978,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (127 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/805172",
+    "page": 11,
+    "document": "Valutazione previsionale di impatto acustico e piano di monitoraggio di un parco eolico denominato \"Santeramo\" di potenza pari a 70.4 MWda compilare",
+    "excerpt": "643789.8"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.73238,16.69780",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Iberdrola Renovables Italia S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06977481008",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazzale Dell'Industria 40 00144 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "iberdrolarenovablesitalia@pec.it",
+     "occurrences": 58,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/805166",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Sede legale in Piazzale dell’Industria, 40, 00144, Roma Partita I.V.A. 06977481008 – PEC: iberdrolarenovablesitalia@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "09311663409",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/805174",
+      "page": 1,
+      "document": "Relazione sull'analisi dell'evoluzione dell'ombra indotta dagli aerogeneratori Effetto \"shadow flickering\"",
+      "excerpt": "Società di Progettazione: Ingegneria & Innovazione Via Jonica, 16 - Loc. Belvedere - 96100 Siracusa (SR) Tel. 0931.1663409"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9574"
+   }
+  },
+  {
+   "name": "AmbraSolare S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ambrasolare26@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985391",
+      "page": 1,
+      "document": "Integrazioni del 13/02/2024 - Benestare PTO",
+      "excerpt": "AMBRA SOLARE 26 S.R.L. ambrasolare26@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/805144",
+    "page": 1,
+    "document": "Inquadramento impianto su PPTR della Regione Puglia - impianto eolico",
+    "excerpt": "Area SSEU produttori con progettazione a cura della società capofila \"AmbraSolare S.r.l. - Powertis\" Cavidotto interrato MT"
+   }
+  },
+  {
+   "name": "Antex Group S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@antexgroup.it",
+     "occurrences": 60,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/805166",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Via Jonica, 16 - Loc. Belvedere - 96100 Siracusa (SR) Tel. 0931.1663409 Web: www.antexgroup.it e-mail: info@antexgroup.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/805173",
+    "page": 3,
+    "document": "Relazione gittata massima elementi rotanti e analisi di possibili incidenti",
+    "excerpt": "L’incarico della progettazione definitiva e lo studio di impatto ambientale sono stati affidati alla Società Antex Group Srl per i suoi professionisti selezionati e qualificati che pongono a fondamento delle attività, qu"
+   }
+  },
+  {
+   "name": "Dott. Geol. Milko Nastasi",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/985401",
+    "page": 2,
+    "document": "Integrazioni del 13/02/2024 - Elenco degli esperti firmatari degli elaborati",
+    "excerpt": "Geologo: Dott. Geol. Milko Nastasi"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "GRM Group S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "07816120724",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Gian Giacomo Porro 8 00197 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "grmgroupsrl@pec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985392",
+      "page": 1,
+      "document": "Integrazioni del 13/02/2024 - Relazione Generale",
+      "excerpt": "P. IVA 07816120724 PEC: grmgroupsrl@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0804168931",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985392",
+      "page": 1,
+      "document": "Integrazioni del 13/02/2024 - Relazione Generale",
+      "excerpt": "PEC: grmgroupsrl@pec.it Tel.: 0804168931"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ecotec S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10479120965",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Soresina 2 20144 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ecotec@pec.netclean.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985391",
+      "page": 1,
+      "document": "Integrazioni del 13/02/2024 - Benestare PTO",
+      "excerpt": "ECOTEC SRL ecotec@pec.netclean.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ripa DI Corvo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "11952030960",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Tortona 33 20144 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ripadicorvo@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985391",
+      "page": 1,
+      "document": "Integrazioni del 13/02/2024 - Benestare PTO",
+      "excerpt": "RIPA DI CORVO SRL ripadicorvo@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ccen Matera S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03090410212",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Walther-Von-Der-Vogelweide-Platz 8 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ccen_pv11@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985391",
+      "page": 1,
+      "document": "Integrazioni del 13/02/2024 - Benestare PTO",
+      "excerpt": "CCEN MATERA SRL ccen_pv11@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Studio Progettazione Acustica DI Marianna Denora",
+   "kind": "società",
+   "roles": [],
+   "vat": "07474570723",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Savona 3 Int 10 70022 Altamura Ba",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studioprogettazioneacustica.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/805172",
+      "page": 2,
+      "document": "Valutazione previsionale di impatto acustico e piano di monitoraggio di un parco eolico denominato \"Santeramo\" di potenza pari a 70.4 MWda compilare",
+      "excerpt": "STUDIO PROGETTAZIONE ACUSTICA Via Savona, 3 70022 Altamura(BA) Email info@studioprogettazioneacustica.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasri.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/805172",
+      "page": 109,
+      "document": "Valutazione previsionale di impatto acustico e piano di monitoraggio di un parco eolico denominato \"Santeramo\" di potenza pari a 70.4 MWda compilare",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196 www.sonorasri.com - sonora@sonorasri.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/805172",
+      "page": 109,
+      "document": "Valutazione previsionale di impatto acustico e piano di monitoraggio di un parco eolico denominato \"Santeramo\" di potenza pari a 70.4 MWda compilare",
+      "excerpt": "Via dei Bersaglieri, 9 - Caserta Tel 0823 351196 - Fax 0823 351196"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/805129",
+      "page": 19,
+      "document": "Relazione di predimensionamento delle fondazioni degli aerogeneratori",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/805129",
+      "page": 19,
+      "document": "Relazione di predimensionamento delle fondazioni degli aerogeneratori",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Marianna Denora",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "mdenora@archiworldpec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/805172",
+      "page": 2,
+      "document": "Valutazione previsionale di impatto acustico e piano di monitoraggio di un parco eolico denominato \"Santeramo\" di potenza pari a 70.4 MWda compilare",
+      "excerpt": "STUDIO PROGETTAZIONE ACUSTICA Via Savona, 3 70022 Altamura(BA) Email info@studioprogettazioneacustica.it di Arch. Marianna Denora Telefono (+39) 0809162455 PEC mdenora@archiworldpec.it SDI KRRH6B9"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Marinella S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "parcomarinella@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985391",
+      "page": 1,
+      "document": "Integrazioni del 13/02/2024 - Benestare PTO",
+      "excerpt": "LA MARINELLA SRL parcomarinella@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Green Italy Jesce S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "greenitalyjesce@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985391",
+      "page": 1,
+      "document": "Integrazioni del 13/02/2024 - Benestare PTO",
+      "excerpt": "GREEN ITALY JESCE SRL greenitalyjesce@pec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "10 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/805135",
+    "page": 25,
+    "document": "Piano di manutenzione dell'impianto e delle opere di connessione",
+    "excerpt": "dei collaudi per la prima messa in servizio delle apparecchiature. I lavori manutentivi per le stazioni avranno una durata massima prevista di 10 giorni, all’interno dei quali sarà prevista una finestra di 5 giorni nei q"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 13/02/2024 - Cronoprogramma e Stima dei costi sui lavori di dismissione",
+   "url": "https://va.mite.gov.it/File/Documento/985432"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Integrazioni del 13/02/2024 - Cronoprogramma e Stima dei costi sui lavori di dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/985432"
+   },
+   {
+    "document": "Cronoprogramma lavori",
+    "url": "https://va.mite.gov.it/File/Documento/805140"
+   },
+   {
+    "document": "Cronoprogramma e Stima dei costi sui lavori di dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/805141"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 182,
+  "pagine": 4112,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "IBERDROLA RENOVABLES ITALIA S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 70.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SANTERAMO IN COLLE, MATERA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "MT",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "92 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
