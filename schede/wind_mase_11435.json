@@ -1,0 +1,572 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11435",
+ "title": "Progetto di un impianto per la produzione di energia elettrica da fonte eolica denominato \"Bruzio\", di potenza pari a 70 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di San Fili, San Lucido, Marano Principato, Cerisano (CS).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11435",
+ "source": "mase",
+ "updated": "2026-11-13",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "7 MW",
+   "sub": "Valore ricorrente negli elaborati (33 volte); il titolo riporta 70 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1213911",
+    "page": 1,
+    "document": "Avviso al pubblico del 11/02/2025",
+    "excerpt": "energia elettrica da fonte rinnovabile di tipo eolico della potenza nominale di 70 MW costituito da 10 generatori eolici da 7,0 MW collocati nei comune di San Lucido (2 WTG), San Fili (3 WTG), Marano Principato (3 WTG) e"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da verificare",
+   "sub": "0,70 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (22), 3 (16), 4 (16)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1213873",
+    "page": 2,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "Provincia di Cosenza, e più precisamente nei territori Comunali di San Lucido, San Fili, Marano Principato e Cerisano, di un impianto costituito da 10 aerogeneratori, ciascuno di potenza nominale di 7,0 MW, e delle relat"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 10/07/2026 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 12 mesi (3), 4 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1213873",
+    "page": 485,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "manodopera essenzialmente ricollegabile a:  Fase di costruzione del Parco Eolico: le attività dureranno 24 mesi circa e il personale presente in sito varierà da alcune unita nelle prime fasi costruttive (primi"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Calabria",
+  "provincia": "CS",
+  "comuni": [
+   "San Fili",
+   "San Lucido",
+   "Marano Principato",
+   "Cerisano"
+  ],
+  "coordinate": {
+   "lat": 39.30429,
+   "lon": 16.12611,
+   "tipo": "centro della tavola georeferenziata di progetto (137 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1213847",
+    "page": 1,
+    "document": "Relazione progetto impianto eolico Bruzio",
+    "excerpt": "Relazione progetto impianto eolico Bruzio"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.30429,16.12611",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 39.30471,
+   "lon": 16.12067,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1213873",
+    "page": 498,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "596607,92"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=39.30471,16.12067"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 170,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1213830",
+      "page": 1,
+      "document": "Carta del rischio frana",
+      "excerpt": "P.IVA/C.F. 06400370968 PEC: rwerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11435"
+   }
+  },
+  {
+   "name": "Gaiatech S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "03497340780",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Pedro Alvares Cabral 16 87036 Rende Cs",
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1213830",
+    "page": 1,
+    "document": "Carta del rischio frana",
+    "excerpt": "PROGETTAZIONE: GaiaTech S.r.l."
+   }
+  },
+  {
+   "name": "Dott. Angelo Gatti",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1213829",
+    "page": 149,
+    "document": "Relazione Geologica, Geomorfologica ed Idrogeologica",
+    "excerpt": "Malito (CS), Luglio 2024 il Geologo Dott. Angelo Gatti"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1213804",
+      "page": 17,
+      "document": "Relazione di Predimensionamento delle Fondazioni",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1213804",
+      "page": 17,
+      "document": "Relazione di Predimensionamento delle Fondazioni",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "potenzialmente_avviato",
+  "label": "Potenzialmente avviato o realizzato",
+  "reason": "L'avvio dei lavori era previsto il 10/07/2026 e non risultano documenti successivi."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "24 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "RILIEVI, ALLESTIMENTO CANTIERE",
+    "start": 0.0,
+    "end": 0.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "SONDAGGI E INDAGINI DI LABORATORIO",
+    "start": 1.0,
+    "end": 3.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "REDAZIONE PROGETTO ESECUTIVO",
+    "start": 1.0,
+    "end": 4.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "STRADE E PIAZZOLE",
+    "start": 5.01,
+    "end": 9.0,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "6.CAVIDOTTI",
+    "start": 5.01,
+    "end": 9.0,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Scavi e pali (o platea), magrone",
+    "start": 6.01,
+    "end": 12.0,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Arrivo conci e posizionamento",
+    "start": 9.02,
+    "end": 13.0,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Getto fondazione e maturazione cls",
+    "start": 11.02,
+    "end": 19.02,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Trasporti, Sollevamenti, Montaggio, Completamenti meccanici",
+    "start": 10.02,
+    "end": 19.02,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Approvvigionamento materiali",
+    "start": 6.01,
+    "end": 8.0,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione area stazione e lavori civili",
+    "start": 8.02,
+    "end": 12.0,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Montaggi elettromeccanici",
+    "start": 9.02,
+    "end": 15.01,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Prove sotto tensione",
+    "start": 19.03,
+    "end": 20.02,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "OPERE DI RIPRISTINO AMBIENTALE E DI FINITURA",
+    "start": 19.03,
+    "end": 20.02,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "ESERCIZIO DI PROVA, COLLAUDO FINALE",
+    "start": 20.04,
+    "end": 22.02,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "DISMISSIONE CANTIERE",
+    "start": 22.04,
+    "end": 23.02,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "CHIUSURA CANTIERE",
+    "start": 23.04,
+    "end": 23.67,
+    "level": 2,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 23.67,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1213816",
+   "page": 2,
+   "document": "Cronoprogramma degli interventi",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24",
+     "start": 23.0,
+     "end": 24.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "24 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (3), 4 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1213873",
+    "page": 485,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "manodopera essenzialmente ricollegabile a:  Fase di costruzione del Parco Eolico: le attività dureranno 24 mesi circa e il personale presente in sito varierà da alcune unita nelle prime fasi costruttive (primi"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "10/07/2026",
+    "iso": "2026-07-10",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1213809",
+     "page": 2,
+     "document": "Prime indicazioni e misure per la stesura dei piani di sicurezza",
+     "excerpt": "Data inizio lavori: 10/07/2026 Data fine lavori (presunta):"
+    }
+   },
+   {
+    "label": "Fine lavori",
+    "date": "01/10/2028",
+    "iso": "2028-10-01",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1213809",
+     "page": 2,
+     "document": "Prime indicazioni e misure per la stesura dei piani di sicurezza",
+     "excerpt": "Data fine lavori (presunta): 01/10/2028 Durata in giorni (presunta):"
+    }
+   }
+  ],
+  "document": {
+   "document": "Cronoprogramma degli interventi",
+   "url": "https://va.mite.gov.it/File/Documento/1213816"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 218,
+  "pagine": 3498,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "RWE Renewables Italia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 70.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SAN FILI, SAN LUCIDO, MARANO PRINCIPATO, CERISANO",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Calabria",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "L'avvio dei lavori era previsto il 10/07/2026 e non risultano documenti successivi."
+  },
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 70 MW, gli elaborati 7 MW"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "21 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
