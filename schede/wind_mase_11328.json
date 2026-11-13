@@ -1,0 +1,440 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11328",
+ "title": "Progetto di un impianto eolico denominato \" Contrada Macario\", costituito da 10 aerogeneratori di potenza nominale pari a 6,6 MW, per una potenza complessiva di 66 MW, da realizzarsi nei comuni di Barletta (BT), Andria (BT) e Trani (BT), e delle relative opere di connessione alla RTN ricadenti nei medesimi comuni (cod. MYTERNA n. 202305775)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11328",
+ "source": "mase",
+ "updated": "2026-11-13",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "6,6 MW",
+   "sub": "Valore ricorrente negli elaborati (66 volte); il titolo riporta 66 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1173429",
+    "page": 2,
+    "document": "Avviso al pubblico del 25/11/2024",
+    "excerpt": "l’installazione, nuova realizzazione, di 10 aerogeneratori di tipo “SG6.6@ 115m HH” da 6.6 MW cadauno per una potenza complessiva di 66,00 MW con altezza del mozzo pari a 115 m."
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da verificare",
+   "sub": "0,66 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 5 (52), 4 (43), 3 (25)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1173429",
+    "page": 2,
+    "document": "Avviso al pubblico del 25/11/2024",
+    "excerpt": "l’installazione, nuova realizzazione, di 10 aerogeneratori di tipo “SG6.6@ 115m HH” da 6.6 MW cadauno per una potenza complessiva di 66,00 MW con altezza del mozzo pari a 115 m."
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1263867",
+    "page": 52,
+    "document": "Integrazioni del 26/05/2025 - Relazione faunistica",
+    "excerpt": "Assessments for Offshore Wind Farms in the UK: A Comparison of Ship and Aerial"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "6 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 17 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1263866",
+    "page": 35,
+    "document": "Integrazioni del 26/05/2025 - Piano di dismissione e relativi costi",
+    "excerpt": "al settore produttivo direttamente “attivato” dall’intervento. Si prevede che le attività di cantiere necessitino mediamente di circa 13 unità; le attività dureranno 6 mesi circa e il personale presente in sito varierà d"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BT",
+  "comuni": [
+   "Barletta",
+   "Trani",
+   "Andria"
+  ],
+  "coordinate": {
+   "lat": 41.26327,
+   "lon": 16.3132,
+   "tipo": "centro della tavola georeferenziata di progetto (205 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1173205",
+    "page": 36,
+    "document": "Piano particellare di esproprio",
+    "excerpt": "Piano particellare di esproprio"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.26327,16.31320",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Ocher Energy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ocherenergysrl@pec.it",
+     "occurrences": 13,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1199001",
+      "page": 1,
+      "document": "Richiesta integrazioni del Ministero della cultura",
+      "excerpt": "Alla società OCHER ENERGY S.r.l. (ocherenergysrl@pec.it)"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11328"
+   }
+  },
+  {
+   "name": "Orange S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1173272",
+    "page": 38,
+    "document": "Relazione geotecnica Contrada Macario",
+    "excerpt": "Committente: Orange Srl Descrizione: Progetto dell'impianto eolico denominato Contrada Macario"
+   }
+  },
+  {
+   "name": "Geol. Leonardo Gioia",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1263871",
+    "page": 1,
+    "document": "Integrazioni del 26/05/2025 - Relazione Geologica",
+    "excerpt": "RELAZIONE GEOLOGICA Geol. Leonardo Gioia"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Projetto Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02658050733",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Fratelli Salvioni 6 20154 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "projettoengineeringsrl@cgn.legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1173161",
+      "page": 67,
+      "document": "Relazione Tecnica Contrada Macario",
+      "excerpt": "MANDURIA (TA) VIA DEI MILLE 5 CAP 74024 Indirizzo di posta certificata: projettoengineeringsrl@cgn.legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "projetto@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1211673",
+      "page": 1,
+      "document": "Integrazioni del 21/01/2025 - Richiesta attestazione vincolo demaniale di uso civico",
+      "excerpt": "Rappresentate legale Sig. Vanni Marchitelli projetto@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "studio@projetto.eu",
+     "occurrences": 459,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1173151",
+      "page": 1,
+      "document": "Studio di Fattibilità Ambientale",
+      "excerpt": "tel. 099 9574694 Fax 099 2222834 cell. 349.1735914 studio@projetto.eu"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@2si.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1173201",
+      "page": 18,
+      "document": "Calcoli preliminari delle strutture",
+      "excerpt": "strutturali esecutivi e delle relazioni di calcolo”, utilizzando il software PRO-SAP di 2S.I. Software e Servizi per l'Ingegneria S.r.l. , Via Garibaldi, 90, 44121 Ferrara FE (Italy) Tel. +39 0532 200091 www.2si.it info@"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0532200091",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1173201",
+      "page": 18,
+      "document": "Calcoli preliminari delle strutture",
+      "excerpt": "strutturali esecutivi e delle relazioni di calcolo”, utilizzando il software PRO-SAP di 2S.I. Software e Servizi per l'Ingegneria S.r.l. , Via Garibaldi, 90, 44121 Ferrara FE (Italy) Tel. +39 0532 200091 www.2si.it info@"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "6 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "SMONTAGGIO DELLE TORRI",
+    "start": 0.06,
+    "end": 0.29,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "DELLE TORRI",
+    "start": 0.13,
+    "end": 0.39,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "MATERIALE DI RISULTA DELLE",
+    "start": 0.35,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "FONDAZIONI",
+    "start": 0.36,
+    "end": 0.45,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "RIMOZIONE DELLE APPARECCHIATURE",
+    "start": 0.46,
+    "end": 0.63,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ELETTROMECCANICHE",
+    "start": 0.48,
+    "end": 0.62,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1173156",
+   "page": 44,
+   "document": "Relazione Descrittiva",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "GENNAIO",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "FEBBRAIO",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "MARZO",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "APRILE",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "MAGGIO",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "GIUGNO",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "LUGLIO",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "AGOSTO",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "SETTEMBRE",
+     "start": 8.0,
+     "end": 9.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "15 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 75 giorni (circa 2 mesi) (3), 30 giorni (3), 7 giorni (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1173405",
+    "page": 115,
+    "document": "Studio di Fattibilità Ambientale",
+    "excerpt": "• Allestimento cantiere e area di stoccaggio cantiere (circa 15 giorni); •"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma Realizzazione",
+   "url": "https://va.mite.gov.it/File/Documento/1173200"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma Realizzazione",
+    "url": "https://va.mite.gov.it/File/Documento/1173200"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 317,
+  "pagine": 5804,
+  "completa": false,
+  "da_leggere": 17
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "OCHER ENERGY S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 66.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BARLETTA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BT",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 66 MW, gli elaborati 6,6 MW"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "8724 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
