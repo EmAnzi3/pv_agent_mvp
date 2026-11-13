@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Mineo Agrivoltaico Avanzato\", di potenza pari a 47,65 MW, e relative opere di connessione alla RTN, da realizzarsi nel Comune di Mineo (CT), in Contrada Pietraros",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11531",
  "source": "mase",
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "sintesi": [
   {
    "key": "potenza",
@@ -35,8 +35,8 @@
    "key": "area",
    "label": "Superficie complessiva",
    "value": "82,07 ha",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 103 ha (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 103 ha (2), 296,89 ha (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1444676",
     "page": 6,
@@ -45,16 +45,42 @@
    }
   },
   {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "20,274 ha",
+   "status": "da verificare",
+   "sub": "25% dell'area · Valore più ricorrente negli elaborati; altri valori: 82,077 ha (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1233307",
+    "page": 4,
+    "document": "Piano di Monitoraggio Ambientale Mineo Agrivoltaico",
+    "excerpt": "denominato “Mineo Agrivoltaico Avanzato”. L’impianto in progetto prevede l’installazione a terra, superficie totale massima coperta dai moduli sarà di circa 202.745,38 m2. Per la redazione del presente studio si farà rif"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "36 MW",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1444676",
+    "page": 18,
+    "document": "Allegato al Decreto Direttoriale - Parere CT PNRR-PNIEC del 15/10/2026",
+    "excerpt": "EOLICO CALTAGIRONE\" di potenza nominale pari a 54,00 MW con un sistema di accumulo integrato da 36,00 MW e relative opere di connessione alla rete di distribuzione, da realizzarsi nei Comuni di Caltagirone, Mineo,"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "6 mesi",
+   "value": "7 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 7 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 8 mesi (1), 12 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1233295",
-    "page": 62,
-    "document": "Relazione Progetto Mineo Agrivoltaico Avanzato",
-    "excerpt": "Ricevute tutte le autorizzazioni e le concessioni relative al nuovo impianto, si valutano come brevi i tempi di realizzazione delle opere, presumibilmente dell’ordine di 6 mesi. Tali tempi sono condizionati dalla posa in"
+    "url": "https://va.mite.gov.it/File/Documento/1444676",
+    "page": 47,
+    "document": "Allegato al Decreto Direttoriale - Parere CT PNRR-PNIEC del 15/10/2026",
+    "excerpt": "- Per la realizzazione dell’opera in progetto il tempo stimato è 7 mesi, al quale si devono aggiungere i tempi per la progettazione esecutiva, nonché i procedimenti autorizzatori necessari e le attività fino"
    }
   }
  ],
@@ -71,7 +97,7 @@
   "coordinate": {
    "lat": 37.33414,
    "lon": 14.53008,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (63 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (119 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1233254",
     "page": 3,
@@ -108,9 +134,9 @@
    },
    {
     "lotto": "Impianto FV",
-    "lat": 37.33806,
-    "lon": 14.52953,
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.33806,14.52953",
+    "lat": 37.33797,
+    "lon": 14.52942,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=37.33797,14.52942",
     "source": {
      "url": "https://va.mite.gov.it/File/Documento/1233246",
      "page": 3,
@@ -148,7 +174,7 @@
     {
      "type": "PEC",
      "value": "mottola.srl@legalmail.it",
-     "occurrences": 40,
+     "occurrences": 44,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1233247",
       "page": 1,
@@ -159,7 +185,7 @@
     {
      "type": "Telefono",
      "value": "0236567674",
-     "occurrences": 222,
+     "occurrences": 488,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1233252",
       "page": 1,
@@ -171,6 +197,25 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11531"
+   }
+  },
+  {
+   "name": "Agon Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1233382",
+    "page": 2,
+    "document": "Computo Metrico Lavori Impianto Agrivoltaico Mineo",
+    "excerpt": "Progettista AGON Engineering S.R.L."
    }
   },
   {
@@ -279,7 +324,7 @@
     {
      "type": "E-mail",
      "value": "contatti@gruppotekne.it",
-     "occurrences": 10,
+     "occurrences": 14,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1233252",
       "page": 1,
@@ -290,7 +335,7 @@
     {
      "type": "Telefono",
      "value": "0883553714",
-     "occurrences": 14,
+     "occurrences": 19,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1233252",
       "page": 1,
@@ -355,7 +400,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "6 mesi",
+  "durata_cantiere": "7 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -373,14 +418,14 @@
   "source": null,
   "asse": null,
   "duration": {
-   "text": "6 mesi",
+   "text": "7 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 7 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 8 mesi (1), 1 mese (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1233295",
-    "page": 62,
-    "document": "Relazione Progetto Mineo Agrivoltaico Avanzato",
-    "excerpt": "Ricevute tutte le autorizzazioni e le concessioni relative al nuovo impianto, si valutano come brevi i tempi di realizzazione delle opere, presumibilmente dell’ordine di 6 mesi. Tali tempi sono condizionati dalla posa in"
+    "url": "https://va.mite.gov.it/File/Documento/1444676",
+    "page": 47,
+    "document": "Allegato al Decreto Direttoriale - Parere CT PNRR-PNIEC del 15/10/2026",
+    "excerpt": "- Per la realizzazione dell’opera in progetto il tempo stimato è 7 mesi, al quale si devono aggiungere i tempi per la progettazione esecutiva, nonché i procedimenti autorizzatori necessari e le attività fino"
    }
   },
   "milestones": [],
@@ -392,9 +437,9 @@
  },
  "documentazione": {
   "documenti": 151,
-  "pagine": 1805,
+  "pagine": 2438,
   "completa": false,
-  "da_leggere": 31
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -425,8 +470,12 @@
  ],
  "da_verificare": [
   {
-   "label": "Superficie pannelli",
-   "reason": "valore letto (82,077 ha) prossimo all'area totale: non mostrato"
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Superficie coperta dai pannelli",
+   "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Durata cantiere",
@@ -434,7 +483,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "23 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "36 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
