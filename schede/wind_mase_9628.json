@@ -1,0 +1,366 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9628",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"Piano Madama Giulia\", costituito da 15 aerogeneratori della potenza unitaria di 4,7 MW, per una potenza complessiva pari a 70,5 MW, da realizzarsi nei comuni di Spinazzola (BT), Palazzo San Gervasio (PZ) e Banzi (PZ), incluse le opere di connessione alla Rete di Trasmissione Nazionale (cod. MYTERNA 202201747).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9628",
+ "source": "mase",
+ "updated": "2026-11-13",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "70,5 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9628",
+    "excerpt": "70,5 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "15",
+   "status": "da documenti",
+   "sub": "4,70 MW ciascuno · altezza mozzo 90 m · diametro rotore 155 m · Valore prevalente negli elaborati; altri valori: 7 (4), 11 (3), 3 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/806291",
+    "page": 1,
+    "document": "Avviso al Pubblico",
+    "excerpt": "sfruttamento del vento, da ubicarsi in località Piano Madama Giulia, in Comuni di Spinazzola (BT), Banzi (PZ) e Palazzo San Gervasio (PZ) costituito da n. 15 aerogeneratori di potenza unitaria 4,7 MW, per una potenza com"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "355 giorni (circa 12 mesi)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/806100",
+    "page": 107,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "“PMGDG_GENL00700_00_Cronoprogramma” dal quale si evince che la durata delle lavorazioni è prevista in 355 giorni."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BT",
+  "comuni": [
+   "Spinazzola",
+   "Palazzo San Gervasio",
+   "Banzi"
+  ],
+  "coordinate": {
+   "lat": 40.90655,
+   "lon": 16.1026,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (23 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/901715",
+    "page": 7,
+    "document": "Integrazioni del 08/09/2023 - Relazione rendering e fotoinserimenti",
+    "excerpt": "590432"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.90655,16.10260",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Aren Green S.r.l. Unipersonale",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "04032170401",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Arrigoni 308 47522 Cesena Fc",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "arengreensrl@legalmail.it",
+     "occurrences": 554,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/806100",
+      "page": 2,
+      "document": "Studio Impatto Ambientale",
+      "excerpt": "Ph. +39 0547 415245 - email: arengreensrl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "rpasrl@legalmail.it",
+     "occurrences": 245,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/811116",
+      "page": 2,
+      "document": "PMGDT_GENR03201_00_Relazione_geologica_geotecnica_idrogeologica_e_sismica",
+      "excerpt": "Codice Fiscale, P. IVA e numero di iscrizione al Registro delle Imprese di FC: 04032170401 rpasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0547415245",
+     "occurrences": 800,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/806100",
+      "page": 2,
+      "document": "Studio Impatto Ambientale",
+      "excerpt": "Ph. +39 0547 415245 - email: arengreensrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9628"
+   }
+  },
+  {
+   "name": "Aren Electric Power S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "03803880404",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Arrigoni 308 47522 Cesena Fc",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "areaenergia@legalmail.it",
+     "occurrences": 120,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/811110",
+      "page": 2,
+      "document": "PMGDC_GENR00500_00_Relazione_idrologica_e_idraulica_pdf",
+      "excerpt": "Sede legale: Via dell'Arrigoni n. 308 - 47522 Cesena (FC), Italia Ph. +39 0547 415245 - email: areaenergia@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "areaenergiasrl@legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/811116",
+      "page": 2,
+      "document": "PMGDT_GENR03201_00_Relazione_geologica_geotecnica_idrogeologica_e_sismica",
+      "excerpt": "EMAIL info@aren-ep.com PEC: areaenergiasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@aren-ep.com",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/811116",
+      "page": 2,
+      "document": "PMGDT_GENR03201_00_Relazione_geologica_geotecnica_idrogeologica_e_sismica",
+      "excerpt": "AREA TECNICA - AREN Electric Power S.p.A. EMAIL info@aren-ep.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/806100",
+    "page": 1,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "REDAZIONE / PROGETTISTA:"
+   }
+  },
+  {
+   "name": "Dott. Antonio Raspatelli",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "antonioraspatelli@softpec.it",
+     "occurrences": 62,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/811116",
+      "page": 1,
+      "document": "PMGDT_GENR03201_00_Relazione_geologica_geotecnica_idrogeologica_e_sismica",
+      "excerpt": "e-mail: antonioraspatelli@tiscali.it Pec: antonioraspatelli@softpec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "antonioraspatelli@tiscali.it",
+     "occurrences": 62,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/811116",
+      "page": 1,
+      "document": "PMGDT_GENR03201_00_Relazione_geologica_geotecnica_idrogeologica_e_sismica",
+      "excerpt": "P.I. 03500240712 e-mail: antonioraspatelli@tiscali.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/811116",
+    "page": 2,
+    "document": "PMGDT_GENR03201_00_Relazione_geologica_geotecnica_idrogeologica_e_sismica",
+    "excerpt": "IL GEOLOGO Dott. Antonio RASPATELLI"
+   }
+  },
+  {
+   "name": "Ing. Samuele Ulivi",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/806100",
+    "page": 1,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "TIMBRO E FIRMA PROGETTISTA:"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Pheedra S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@pheedra.it",
+     "occurrences": 686,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/901714",
+      "page": 1,
+      "document": "Integrazioni del 08/09/2023 - Relazione paesaggistica e di compatibilità al PPTR",
+      "excerpt": "Tel. 099.7722302 - Fax 099.9870285 e-mail: info@pheedra.it - web: www.pheedra.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0997722302",
+     "occurrences": 686,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/901714",
+      "page": 1,
+      "document": "Integrazioni del 08/09/2023 - Relazione paesaggistica e di compatibilità al PPTR",
+      "excerpt": "74121 - Taranto Tel. 099.7722302 - Fax 099.9870285"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "355 giorni (circa 12 mesi)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "355 giorni (circa 12 mesi)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/806100",
+    "page": 107,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "“PMGDG_GENL00700_00_Cronoprogramma” dal quale si evince che la durata delle lavorazioni è prevista in 355 giorni."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "PMGDG_GENL00700_00_Cronoprogramma-signed",
+   "url": "https://va.mite.gov.it/File/Documento/811115"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "PMGDG_GENL00700_00_Cronoprogramma-signed",
+    "url": "https://va.mite.gov.it/File/Documento/811115"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 304,
+  "pagine": 2853,
+  "completa": false,
+  "da_leggere": 4
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "AREN Green S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 70.5,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SPINAZZOLA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BT",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "160 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
