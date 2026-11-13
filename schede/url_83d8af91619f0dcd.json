@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un nuovo impianto agrovoltaico, denominato \"Forestella Carretta\", della potenza nominale pari a 19,96 MW, e relative opere di connessione alla RTN, ubicato nei Comuni di Montemilone (PZ) e Venosa (PZ",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8628",
  "source": "mase",
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "27 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 22,7 ha (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 22,89 ha (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/725238",
     "page": 4,
@@ -48,8 +48,8 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "10 MW",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 15 MW (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 15 MW (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1444409",
     "page": 5,
@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "6 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/725246",
     "page": 4,
@@ -79,23 +79,52 @@
    "Venosa"
   ],
   "coordinate": {
-   "lat": 41.04648,
-   "lon": 15.89351,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (30 riferimenti concordi)",
+   "lat": 41.05451,
+   "lon": 15.88129,
+   "tipo": "centro della tavola georeferenziata di progetto (124 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1060717",
-    "page": 12,
-    "document": "Integrazioni del 18/04/2024 - RELAZIONE DI ACCOMPAGNAMENTO ALLE INTEGRAZIONI _ MIC",
-    "excerpt": "575521,00"
+    "url": "https://va.mite.gov.it/File/Documento/1019838",
+    "page": 1,
+    "document": "Integrazioni del 28/03/2024 - SIA-Fotoinserimenti Integrativi PS17",
+    "excerpt": "Integrazioni del 28/03/2024 - SIA-Fotoinserimenti Integrativi PS17"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.04648,15.89351",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.05451,15.88129",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 41.05021,
+   "lon": 15.90441,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1019871",
+    "page": 70,
+    "document": "Integrazioni del 28/03/2024 - Relazione Archeologica",
+    "excerpt": "DEL CANTORE) 41°3'0.76\"N 15°54'20.08\"E"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.05021,15.90441"
+  },
   "lotti": []
  },
  "soggetti": [
+  {
+   "name": "ITW Spinazzola 1 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1019882",
+    "page": 2,
+    "document": "Integrazioni del 28/03/2024 - Relazione Tecnico Illustrativa",
+    "excerpt": "Committente: ITW SPINAZZOLA 1 srl Via del Gallitello n. 89 – 85100 Potenza"
+   }
+  },
   {
    "name": "Ambra Solare 23 S.r.l.",
    "kind": "società",
@@ -128,7 +157,7 @@
     {
      "type": "E-mail",
      "value": "info@powertis.com",
-     "occurrences": 10,
+     "occurrences": 16,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/725205",
       "page": 1,
@@ -141,6 +170,52 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "Dott. Geologo Potenza Galileo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "galileopz@virgilio.it",
+     "occurrences": 42,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1019865",
+      "page": 2,
+      "document": "Integrazioni del 28/03/2024 - Relazione Geologica",
+      "excerpt": "Via dei Gerani 59/B - 85100 - Potenza - (PZ) E-mail galileopz@virgilio.it - Cell. 3207644905"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "e-mail..galileopz@virgilio.it",
+     "occurrences": 29,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1019860",
+      "page": 3,
+      "document": "Integrazioni del 28/03/2024 - Report indagini realizzate",
+      "excerpt": "Galileo – Via dei Gerani 59/B - 85100 - Potenza - (PZ) – E-Mail..galileopz@virgilio.it - Cell. – 3207644905"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3207644905",
+     "occurrences": 42,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1019865",
+      "page": 2,
+      "document": "Integrazioni del 28/03/2024 - Relazione Geologica",
+      "excerpt": "Via dei Gerani 59/B - 85100 - Potenza - (PZ) E-mail galileopz@virgilio.it - Cell. 3207644905"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -168,7 +243,7 @@
   "duration": {
    "text": "6 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (2), 66 giorni (circa 2 mesi) (2), 4-6 settimane (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 giorni (4), 3 mesi (4), 66 giorni (circa 2 mesi) (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/725246",
     "page": 4,
@@ -197,9 +272,9 @@
  },
  "documentazione": {
   "documenti": 345,
-  "pagine": 781,
+  "pagine": 2734,
   "completa": false,
-  "da_leggere": 225
+  "da_leggere": 105
  },
  "confronto": [
   {
@@ -234,16 +309,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Accumulo",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "23 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "186 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
