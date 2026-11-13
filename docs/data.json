@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-11-11 16:20:18",
-    "snapshot_file": "projects_snapshot_20261111_151844.csv",
+    "generated_at": "2026-11-13 08:47:54",
+    "snapshot_file": "projects_snapshot_20261113_074526.csv",
     "total_records": 1555,
     "punctual_records": 1473,
     "terna_records": 82,
-    "total_mw_punctual": 39587.601,
+    "total_mw_punctual": 39605.76,
     "total_mw_terna": 140021.064,
     "source_counts": [
       {
@@ -138,11 +138,11 @@
       {
         "region": "Lombardia",
         "punctual_count": 79,
-        "punctual_mw": 1701.845,
+        "punctual_mw": 1720.004,
         "terna_count": 4,
         "terna_mw": 3805.39,
         "terna_practices": 0,
-        "total_mw": 5507.235,
+        "total_mw": 5525.394,
         "priority_score": 6.4
       },
       {
@@ -909,10 +909,10 @@
     },
     "quality": {
       "punctual_records": 1473,
-      "missing_mw": 141,
+      "missing_mw": 140,
       "missing_region": 0,
       "missing_province": 6,
-      "missing_municipality": 16,
+      "missing_municipality": 15,
       "missing_url": 0,
       "province_deduced": 51,
       "municipalities_deduced": 5
@@ -935,10 +935,10 @@
         "count": 300,
         "missing_mw": 1,
         "missing_province": 0,
-        "missing_municipality": 2,
+        "missing_municipality": 1,
         "province_deduced": 0,
         "municipalities_deduced": 0,
-        "completeness_pct": 99.7
+        "completeness_pct": 99.8
       },
       {
         "source": "sicilia",
@@ -977,12 +977,12 @@
         "source": "lombardia",
         "source_label": "Lombardia",
         "count": 79,
-        "missing_mw": 5,
+        "missing_mw": 4,
         "missing_province": 5,
         "missing_municipality": 8,
         "province_deduced": 0,
         "municipalities_deduced": 2,
-        "completeness_pct": 92.4
+        "completeness_pct": 92.8
       },
       {
         "source": "puglia",
@@ -3696,7 +3696,7 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/10052"
       ],
       "project_key": "url:b20ce5312cbeef84",
-      "procedure_status": "Conclusa"
+      "procedure_status": "Verifica amministrativa, Conclusa"
     },
     {
       "source": "lazio",
@@ -9289,7 +9289,7 @@
       "power_mw": 49.374,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-040-2021",
-      "updated_at": "2026-11-11T15:08:28.521737",
+      "updated_at": "2026-11-13T07:33:37.267411",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -10065,7 +10065,7 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/8746"
       ],
       "project_key": "url:7f1eb82a42a2c9ba",
-      "procedure_status": "Conclusa, In attesa parere altra Amministrazione, Istruttoria tecnica CTPNRR-PNIEC"
+      "procedure_status": "Verifica amministrativa, Conclusa, In attesa parere altra Amministrazione, Istruttoria tecnica CTPNRR-PNIEC"
     },
     {
       "source": "lombardia",
@@ -11264,7 +11264,7 @@
         "https://va.mite.gov.it/it-IT/Oggetti/Info/11757"
       ],
       "project_key": "url:5482c5d58b132f8d",
-      "procedure_status": "Archiviata, Istruttoria tecnica CTVIA"
+      "procedure_status": "Istruttoria tecnica CTVIA, Archiviata"
     },
     {
       "source": "mase_provvedimenti",
@@ -17297,7 +17297,7 @@
       "power_mw": 25.0,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-108-2020",
-      "updated_at": "2026-11-11T15:08:28.521737",
+      "updated_at": "2026-11-13T07:33:37.267411",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -19665,7 +19665,7 @@
       "power_mw": 19.999,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-012-2025",
-      "updated_at": "2026-11-11T15:08:28.521737",
+      "updated_at": "2026-11-13T07:33:37.267411",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -20225,7 +20225,7 @@
       "proponent": "Palazzo San Gervasio 1 SPV S.r.l.",
       "region": "Basilicata",
       "province": "PZ",
-      "municipalities": "",
+      "municipalities": "Palazzo San Gervasio, Banzi, Genzano Di Lucania",
       "project_type": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR)",
       "power_mw": 19.98,
       "status": "",
@@ -20246,7 +20246,10 @@
       "_dedupe_urls": [
         "https://va.mite.gov.it/it-IT/Comunicazione/DettaglioUltimiProvvedimenti/6546"
       ],
-      "project_key": "url:e5b293f25f9480de"
+      "project_key": "url:e5b293f25f9480de",
+      "_filled_from_card": [
+        "municipalities"
+      ]
     },
     {
       "source": "mase_provvedimenti",
@@ -29574,7 +29577,7 @@
       "power_mw": 8.619,
       "status": "",
       "url": "https://regionelazio.box.com/v/VIA-130-2020",
-      "updated_at": "2026-11-11T15:08:28.521737",
+      "updated_at": "2026-11-13T07:33:37.267411",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -29915,7 +29918,7 @@
       "power_mw": 8.208,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-044-2022",
-      "updated_at": "2026-11-11T15:08:28.521737",
+      "updated_at": "2026-11-13T07:33:37.267411",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -32954,7 +32957,7 @@
       "power_mw": 6.004,
       "status": "",
       "url": "https://regionelazio.app.box.com/v/VIA-015-2024",
-      "updated_at": "2026-11-11T15:08:28.521737",
+      "updated_at": "2026-11-13T07:33:37.267411",
       "numero_pratiche": 0,
       "is_terna": false,
       "is_punctual": true,
@@ -43076,7 +43079,7 @@
       "province": "PV",
       "municipalities": "Mezzana Bigli",
       "project_type": "V.E.R. Provinciali",
-      "power_mw": null,
+      "power_mw": 18.159,
       "status": "",
       "url": "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi?idTipoEnte=6&idTipoProcedura=2&idProgetto=22339&idProvenienza=2",
       "updated_at": "2026-11-11T13:58:32.604171",
@@ -43095,7 +43098,10 @@
       "_dedupe_urls": [
         "https://www.silvia.servizirl.it/silviaweb/#/scheda-sintesi/22339"
       ],
-      "project_key": "prj:7fec559c85d83f3a"
+      "project_key": "prj:7fec559c85d83f3a",
+      "_filled_from_card": [
+        "power_mw"
+      ]
     },
     {
       "source": "sicilia",
@@ -50446,7 +50452,7 @@
     }
   ],
   "data_quality": {
-    "generated_at": "2026-11-11T16:20:18",
+    "generated_at": "2026-11-13T08:47:54",
     "input_file": "reports\\site\\data.json",
     "records_before": 2176,
     "records_after": 1824,
@@ -50480,13 +50486,13 @@
       "bad_proponent_values_are_cleared": true
     },
     "mase_proponent_enrichment": {
-      "generated_at": "2026-11-11T16:20:30",
+      "generated_at": "2026-11-13T08:48:21",
       "targets": 0,
       "recovered": 0,
       "failed": 0,
       "still_missing": 0,
       "audit": "reports\\mase_proponent_enrichment.csv"
     },
-    "derived_fields_rebuilt_at": "2026-11-11T16:29:59"
+    "derived_fields_rebuilt_at": "2026-11-13T08:59:00"
   }
 }
