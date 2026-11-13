@@ -5,14 +5,14 @@
  "title": "Progetto di un parco eolico denominato \"Saetta\", composto da 10 aerogeneratori di potenza nominale pari a 7,2 MW, per una potenza complessiva di 72 MW, da realizzarsi nei comuni di Pescopagano (PZ) e Castelgrande (PZ) , con opere di connessione alla RTN ricadenti anche nel Comune di Santomenna (SA), Conza della Campania (AV) e Castelnuovo di Conza (SA), questi ultimi ove ricade anche la Stazione Elettrica (SE) esistente. Codice pratica MYTERNA n. 202304590.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10953",
  "source": "mase",
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "7,2 MW",
-   "sub": "Valore ricorrente negli elaborati (57 volte); il titolo riporta 72 MW (probabile refuso).",
+   "sub": "Valore ricorrente negli elaborati (99 volte); il titolo riporta 72 MW (probabile refuso).",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1145933",
     "page": 3,
@@ -24,8 +24,8 @@
    "key": "wtg",
    "label": "Aerogeneratori",
    "value": "10",
-   "status": "da verificare",
-   "sub": "0,72 MW ciascuno · altezza mozzo 138 m · diametro rotore 172 m · Valore più ricorrente negli elaborati; altri valori: 1 (33), 5 (16), 7 (16)",
+   "status": "da documenti",
+   "sub": "0,72 MW ciascuno · altezza mozzo 138 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 1 (40), 5 (21), 6 (18)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1145933",
     "page": 3,
@@ -34,11 +34,23 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1091600",
+    "page": 15,
+    "document": "A.17.a.1 Studio di Impatto Ambientale",
+    "excerpt": "In particolare, relativamente all’eolico offshore, il PNIEC pone come obiettivi la produzione di 300 MW"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "10 mesi",
    "status": "da verificare",
-   "sub": "Inizio lavori 01/01/2027 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "sub": "Inizio lavori 01/01/2027 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 3 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1384633",
     "page": 121,
@@ -55,17 +67,17 @@
    "Castelgrande"
   ],
   "coordinate": {
-   "lat": 40.81802,
-   "lon": 15.42477,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (172 riferimenti concordi)",
+   "lat": 40.81751,
+   "lon": 15.41367,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (238 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1091593",
-    "page": 1,
-    "document": "A.17.a.12 Sistema Naturalistico Ambientale - Carta della Natura",
-    "excerpt": "A.17.a.12 Sistema Naturalistico Ambientale - Carta della Natura"
+    "url": "https://va.mite.gov.it/File/Documento/1091629",
+    "page": 101,
+    "document": "A.17.a.3 Piano di Monitoraggio Ambientale",
+    "excerpt": "537641,079"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.81802,15.42477",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.81751,15.41367",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -83,68 +95,48 @@
  },
  "soggetti": [
   {
-   "name": "EGM Project S.r.l.",
+   "name": "WEB Saetta S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente"
    ],
-   "vat": "02094310766",
+   "vat": "03266310212",
    "vat_group": false,
    "verified": true,
    "esecuzione": null,
-   "office": "Via Vincenzo Verrastro 15/A 85100 Potenza Pz",
+   "office": "Via Leonardo Da Vinci 15 39100 Bolzano .Bozen. Bz",
    "contacts": [
     {
      "type": "PEC",
-     "value": "egmproject@pec.it",
-     "occurrences": 6767,
+     "value": "websaetta@legalmail.it",
+     "occurrences": 8,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1091591",
+      "url": "https://va.mite.gov.it/File/Documento/1416285",
       "page": 1,
-      "document": "A.17.a.0 Elenco elaborati SIA",
-      "excerpt": "www.egmproject.it egmproject@pec.it"
+      "document": "Controdeduzioni al parere della Regione Basilicata - Ufficio Pianificazione Territoriale e Paesaggio",
+      "excerpt": "italia@web.energy websaetta@legalmail.it"
      }
     },
     {
-     "type": "E-mail",
-     "value": "info@egmproject.it",
-     "occurrences": 6693,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1091600",
-      "page": 2,
-      "document": "A.17.a.1 Studio di Impatto Ambientale",
-      "excerpt": "EGM PROJECT SRL - Via Vincenzo Verrastro - 15/A- 85100 Potenza info@egmproject.it - egmproject@pec.it"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1091387",
-    "page": 2,
-    "document": "A.4.1. Carta attestazioni tipologia",
-    "excerpt": "Committente EGM PROJECT SRL"
-   }
-  },
-  {
-   "name": "Rinnovabili S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
      "type": "PEC",
      "value": "webitalia@legalmail.it",
-     "occurrences": 4,
+     "occurrences": 6,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1153613",
       "page": 1,
       "document": "Richiesta Integrazioni del Ministero della Cultura",
       "excerpt": "Web Italia Energie Rinnovabili S.r.l. webitalia@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "italia@web.energy",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1416285",
+      "page": 1,
+      "document": "Controdeduzioni al parere della Regione Basilicata - Ufficio Pianificazione Territoriale e Paesaggio",
+      "excerpt": "Sede Operativa: Loc. Mirabello, Box 45, 19121 La Spezia (SP) italia@web.energy"
      }
     },
     {
@@ -216,7 +208,45 @@
  ],
  "altri_soggetti": [
   {
-   "name": "Enginreering Geology S.r.l.",
+   "name": "EGM Project S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02094310766",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Vincenzo Verrastro 15/A 85100 Potenza Pz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "egmproject@pec.it",
+     "occurrences": 7881,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1091591",
+      "page": 1,
+      "document": "A.17.a.0 Elenco elaborati SIA",
+      "excerpt": "www.egmproject.it egmproject@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@egmproject.it",
+     "occurrences": 7771,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1091600",
+      "page": 2,
+      "document": "A.17.a.1 Studio di Impatto Ambientale",
+      "excerpt": "EGM PROJECT SRL - Via Vincenzo Verrastro - 15/A- 85100 Potenza info@egmproject.it - egmproject@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Engineering Geology S.r.l.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -228,12 +258,12 @@
     {
      "type": "Telefono",
      "value": "097126378",
-     "occurrences": 44,
+     "occurrences": 85,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1136624",
-      "page": 2,
-      "document": "Integrazioni del 26/08/2024 - A.2.a_Note Geologiche Integrative-signed-signed",
-      "excerpt": "Enginreering Geology srl - Via del Gallitello 90/A - 85100 Potenza Tel 0971 26378 – Fax 0971 1940737"
+      "url": "https://va.mite.gov.it/File/Documento/1384645",
+      "page": 110,
+      "document": "Integrazioni del 02/04/2026 - A.17.a.20 Carta aree idonee ai sensi DLgs 175 /2025",
+      "excerpt": "Via del Gallitello 90/A Tel. 0971.26378 - Fax 0971.1940737"
      }
     }
    ],
@@ -282,6 +312,30 @@
       "page": 182,
       "document": "Integrazioni del 02/04/2026 - A.17.a.33 Studio di incidenza ambientale - Valutazione appropriata",
       "excerpt": "Email martinapezzuti@hotmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Massimiliano Cuozzo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "info@pec.parcoregionalemontipicentini.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1403879",
+      "page": 1,
+      "document": "Controdeduzioni alle osservazioni presentate dal presidente dell'Ente Parco Monti Picentini",
+      "excerpt": "Ente Parco Monti Picentini pec info@pec.parcoregionalemontipicentini.it"
      }
     }
    ],
@@ -620,7 +674,7 @@
   "duration": {
    "text": "10 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1), 7 giorni (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (2), 7 giorni (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1384633",
     "page": 121,
@@ -676,9 +730,9 @@
  },
  "documentazione": {
   "documenti": 502,
-  "pagine": 10462,
+  "pagine": 12840,
   "completa": false,
-  "da_leggere": 202
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -713,16 +767,12 @@
    "reason": "il titolo riporta 72 MW, gli elaborati 7,2 MW"
   },
   {
-   "label": "Aerogeneratori",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "224 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "374 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
