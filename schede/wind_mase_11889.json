@@ -1,0 +1,382 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11889",
+ "title": "Progetto di nuovo parco eolico denominato \"SV7 BRIC DELLE ROCCHE\", composto da 10 aerogeneratori di potenza nominale pari a 6,2 MW, per una potenza complessiva di 62 MW, da realizzare nei comuni di Dego (SV) e Cairo Montenotte (SV), incluse le relative opere di connessione alla RTN ricadenti anche nei comuni di Savona, Altare (SV) e Mallare (SV).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11889",
+ "source": "mase",
+ "updated": "2026-11-14",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "62 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11889",
+    "excerpt": "62 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 4 (6), 6 (2), 7 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1350755",
+    "page": 2,
+    "document": "Avviso al pubblico del 02/02/2026",
+    "excerpt": "Montenotte e Dego, nella provincia di Savona. e prevede la realizzazione di un nuovo parco eolico composto da 10 aerogeneratori di potenza ciascuno pari a 6,2 MW e aventi l’altezza al mozzo pari a 125 m e diametro rotore"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1350709",
+    "page": 17,
+    "document": "Analisi costi benefici",
+    "excerpt": "valutazione della desiderabilità sociale dell’intervento in progetto dal punto di vista dell’utilizzo efficiente delle risorse disponibili svolta questo costo è stato considerato come uniformemente ripartito nei 24 mesi "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Liguria",
+  "provincia": "SV",
+  "comuni": [
+   "Cairo Montenotte",
+   "Altare",
+   "Savona",
+   "Dego",
+   "Mallare"
+  ],
+  "coordinate": {
+   "lat": 44.4037,
+   "lon": 8.34647,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (40 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1350311",
+    "page": 6,
+    "document": "Relazione Geologica Generale",
+    "excerpt": "SV7 - Ag. 1 44,37839"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=44.40370,8.34647",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Duferco Sviluppo S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11889"
+   }
+  },
+  {
+   "name": "Ing. Silvio Mario Bauducco Ing",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "amministrazione@bautel.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1411653",
+      "page": 1,
+      "document": "Integrazioni del 18/06/2026 - Elenco elaborati - Intervisibilità",
+      "excerpt": "Sede Amministrativa via Maroncelli, 23 10024 Moncalieri (TO) Ing. Silvio Mario Bauducco Ing. Occhiuto Felice tel 011.6052113 - 011.6059915 e-mail: amministrazione@bautel.it Arch. Ostino Paolo"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0116052113",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1411653",
+      "page": 1,
+      "document": "Integrazioni del 18/06/2026 - Elenco elaborati - Intervisibilità",
+      "excerpt": "Sede Amministrativa via Maroncelli, 23 10024 Moncalieri (TO) Ing. Silvio Mario Bauducco Ing. Occhiuto Felice tel 011.6052113 - 011.6059915 e-mail: amministrazione@bautel.it Arch. Ostino Paolo"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1350202",
+    "page": 1,
+    "document": "Indagine Interferenze Visive",
+    "excerpt": "Il Progettista Ing. Silvio Mario Bauducco"
+   }
+  },
+  {
+   "name": "Dott. Geologo Alessandro Canavero",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1350311",
+    "page": 3,
+    "document": "Relazione Geologica Generale",
+    "excerpt": "Gli Scriventi, Dott.ssa Geologo Sabrina Santini e Dott. Geologo Alessandro Canavero, domiciliati presso lo Studio Associato di Geologia Tecnica GEO.LAB, con sede a Savona in Piazza Diaz 11/5, ed"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Ing. Giuseppe Bodoira Geom",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "bodoira@libero.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350749",
+      "page": 1,
+      "document": "Valutazione dell'impatto acustico",
+      "excerpt": "Sede Amministrativa : Via San Marco n.6 - 10034 Chivasso (TO) tel.011.9107240, email. bodoira@libero.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0119107240",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350749",
+      "page": 1,
+      "document": "Valutazione dell'impatto acustico",
+      "excerpt": "Sede Amministrativa : Via San Marco n.6 - 10034 Chivasso (TO) tel.011.9107240, email. bodoira@libero.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3478863499",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1411686",
+      "page": 1,
+      "document": "Integrazioni del 18/06/2026 - VALUTAZIONE PREVISIONALE DEL CLIMA ACUSTICO - VALUTAZIONE DI IMPATTO ACUSTICO",
+      "excerpt": "Sede Amministrativa : Via San Marco n.6 - 10034 Chivasso (TO) tel.3478863499, email. bodoira@libero.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Luciano Messori",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiomessori.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350709",
+      "page": 1,
+      "document": "Analisi costi benefici",
+      "excerpt": "Sede Amministrativa : Via Milano n.7 - 40139 Bologna tel. 051.6240807, email. info@studiomessori.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0516240807",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350709",
+      "page": 1,
+      "document": "Analisi costi benefici",
+      "excerpt": "Sede Amministrativa : Via Milano n.7 - 40139 Bologna tel. 051.6240807, email. info@studiomessori.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Domenico Bresciano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "emmecsris@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1411681",
+      "page": 1,
+      "document": "Integrazioni del 18/06/2026 - Approfondimenti idrogeologici",
+      "excerpt": "va Hone ei ico mne ali Geom. Domenico Bresciano EMME CONSULTING... e-mail: emmecsris@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "12/2022",
+    "dettaglio": "natura non determinabile",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1411656",
+     "page": 11,
+     "document": "Integrazioni del 18/06/2026 - RISPOSTA COMUNE DI MALLARE",
+     "excerpt": "al secondo semestre 2025, quindi durante la fase di cantiere del parco eolico Monte Greppino (marzo-ottobre 2022) e per i primi 3 anni dalla sua entrata in esercizio (dicembre 2022)."
+    }
+   }
+  ],
+  "durata_cantiere": "24 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "2 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (1), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1350716",
+    "page": 51,
+    "document": "Quadro di riferimento ambientale",
+    "excerpt": "parte della carpenteria e cemento armato dei plinti. Per la realizzazione dei micropali di fondazione si prevedono n. 2 mesi a plinto circa con la presenza di 2 macchine perforatrici (1 per fondazione) cosi da velocizzar"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "12/2022",
+    "iso": "2022-12",
+    "nature": "natura non determinabile",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1411656",
+     "page": 11,
+     "document": "Integrazioni del 18/06/2026 - RISPOSTA COMUNE DI MALLARE",
+     "excerpt": "al secondo semestre 2025, quindi durante la fase di cantiere del parco eolico Monte Greppino (marzo-ottobre 2022) e per i primi 3 anni dalla sua entrata in esercizio (dicembre 2022)."
+    }
+   }
+  ],
+  "document": {
+   "document": "Cronoprogramma Lavori",
+   "url": "https://va.mite.gov.it/File/Documento/1350653"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Cronoprogramma Lavori",
+    "url": "https://va.mite.gov.it/File/Documento/1350653"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 602,
+  "pagine": 2118,
+  "completa": false,
+  "da_leggere": 302
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Duferco Sviluppo S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 62.0,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "DEGO, SAVONA, ALTARE",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SV",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Liguria",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "2135 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
