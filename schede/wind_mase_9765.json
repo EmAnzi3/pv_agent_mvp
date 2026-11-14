@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto di produzione di energia elettrica mediante lo sfruttamento del vento, costituito da n. 15 aerogeneratori di potenza unitaria pari a 4,7 MW, per una potenza complessiva di 70,5 MW, da realizzarsi nel Comune di Venosa (PZ) e Montemilone (PZ) in località Piano Regio, con opere di connessione ricadenti nei medesimi comuni. Codice pratica MYTERNA n. 202201742.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9765",
  "source": "mase",
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "15",
    "status": "da documenti",
-   "sub": "4,70 MW ciascuno · altezza mozzo 90 m · diametro rotore 155 m · Valore prevalente negli elaborati; altri valori: 8 (9), 10 (8), 7 (7)",
+   "sub": "4,70 MW ciascuno · altezza mozzo 90 m · diametro rotore 155 m · Valore prevalente negli elaborati; altri valori: 10 (12), 8 (12), 7 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/865463",
     "page": 1,
@@ -45,11 +45,24 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "10 MW / 30 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 15 MW (2), 5,1 MW (1), 18 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1319359",
+    "page": 39,
+    "document": "Parere del Ministero della Cultura - Soprintendenza Speciale per il PNRR in data 27/10/2025",
+    "excerpt": "Progetto di un nuovo impianto agrovoltaico della potenza nominale pari a 18,87 MW, e relative opere di connessione alla rete, con sistema di accumulo da 10 MW, da realizzarsi nel Comune di Montemilone (PZ), in località \""
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "355 giorni (circa 12 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1), 18 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1), 18 mesi (1), 180 giorni (circa 6 mesi) (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/865447",
     "page": 83,
@@ -98,7 +111,7 @@
     {
      "type": "PEC",
      "value": "arengreensrl@legalmail.it",
-     "occurrences": 304,
+     "occurrences": 318,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/865447",
       "page": 2,
@@ -120,7 +133,7 @@
     {
      "type": "Telefono",
      "value": "0547415245",
-     "occurrences": 554,
+     "occurrences": 567,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/865447",
       "page": 2,
@@ -291,7 +304,43 @@
    }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "BEL Team S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "belteam@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/895838",
+      "page": 1,
+      "document": "Osservazioni BEL Team Srl del 01/09/2023",
+      "excerpt": "C.C.I.A.A della Basilicata - C.F. e Partita IVA IT_02061000762 R.E.A. PZ203536 Tel. +39 0972.88567 e Fax +39 0972.86090 — pec: belteam@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "097288567",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/895838",
+      "page": 1,
+      "document": "Osservazioni BEL Team Srl del 01/09/2023",
+      "excerpt": "C.C.I.A.A della Basilicata - C.F. e Partita IVA IT_02061000762 R.E.A. PZ203536 Tel. +39 0972.88567 e Fax +39 0972.86090 — pec: belteam@pec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
@@ -505,9 +554,9 @@
  },
  "documentazione": {
   "documenti": 306,
-  "pagine": 2135,
-  "completa": false,
-  "da_leggere": 6
+  "pagine": 2234,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -538,12 +587,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "87 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "88 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
