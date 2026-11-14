@@ -5,18 +5,19 @@
  "title": "Progetto definitivo di impianto eolico \"CE Nuoro Sud\" con potenza complessiva di 66 MW e opere connesse, nei comuni di Orani, Orgosolo e Nuoro",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10703",
  "source": "mase",
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
-   "status": "verificato",
-   "value": "66 MW",
-   "sub": null,
+   "status": "da documenti",
+   "value": "6,6 MW",
+   "sub": "Valore ricorrente negli elaborati (20 volte); il titolo riporta 66 MW (probabile refuso).",
    "source": {
-    "document": "titolo del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10703",
-    "excerpt": "66 MW"
+    "url": "https://va.mite.gov.it/File/Documento/987374",
+    "page": 57,
+    "document": "Sintesi non tecnica",
+    "excerpt": "termini di numero di aerogeneratori rientra nella categoria di impianti di grandi dimensioni, tuttavia le caratteristiche di potenza per aerogeneratore, pari a 6.6 MW, comportano una potenza complessiva pari a 66 MW graz"
    }
   },
   {
@@ -24,12 +25,24 @@
    "label": "Aerogeneratori",
    "value": "10",
    "status": "da documenti",
-   "sub": "6,60 MW ciascuno · altezza mozzo 155 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 3 (10), 2 (9), 5 (7)",
+   "sub": "0,66 MW ciascuno · altezza mozzo 155 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 5 (17), 2 (12), 3 (10)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/987541",
+    "url": "https://va.mite.gov.it/File/Documento/987415",
     "page": 1,
     "document": "Cronoprogramma dei lavori di esecuzione",
     "excerpt": "FASE PROGETTUALE PROGETTO DEFINITIVO DI UN IMPIANTO EOLICO COMPOSTO DA 10 AEROGENERATORI CON POTENZA COMPLESSIVA DI 66 MW, DENOMINATO \"CE NUORO SUD\", NEI COMUNI DI ORANI (NU), ORGOSOLO"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1440415",
+    "page": 7,
+    "document": "Osservazioni del CeSim - Centro studi identità e memoria/APS- in data 07/10/2026",
+    "excerpt": "agrivoltaico «Campanedda» —"
    }
   },
   {
@@ -37,9 +50,9 @@
    "label": "Durata cantiere",
    "value": "12 mesi",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Valore prevalente negli elaborati; altri valori: 6 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/987617",
+    "url": "https://va.mite.gov.it/File/Documento/987371",
     "page": 191,
     "document": "Studio di Impatto Ambientale",
     "excerpt": "• Durante la fase di corso d’opera ed in fase post-operam sino a 12 mesi dalla chiusura del cantiere, l’intera superficie interessata dai lavori sarà adeguatamente ispezionata da un"
@@ -55,17 +68,17 @@
    "Orgosolo"
   ],
   "coordinate": {
-   "lat": 40.26355,
-   "lon": 9.27252,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (47 riferimenti concordi)",
+   "lat": 40.26397,
+   "lon": 9.27238,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (48 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/987543",
+    "url": "https://va.mite.gov.it/File/Documento/987417",
     "page": 1,
     "document": "Classificazione recettori (D.G.R 59/90 del 27/11/2020)",
     "excerpt": "Classificazione recettori (D.G.R 59/90 del 27/11/2020)"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.26355,9.27252",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.26397,9.27238",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -88,9 +101,9 @@
     {
      "type": "PEC",
      "value": "aeiwind-settima@legalmail.it",
-     "occurrences": 85,
+     "occurrences": 95,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/987541",
+      "url": "https://va.mite.gov.it/File/Documento/987415",
       "page": 1,
       "document": "Cronoprogramma dei lavori di esecuzione",
       "excerpt": "Via Savoia n.78 - 00198 Roma (RM) PEC: aeiwind-settima@legalmail.it"
@@ -101,7 +114,7 @@
      "value": "windpro@emd.dk",
      "occurrences": 198,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/987630",
+      "url": "https://va.mite.gov.it/File/Documento/987385",
       "page": 24,
       "document": "Relazione impatto shadow flickering",
       "excerpt": "WindPRO version 2.8.579 Dec 2012 WindPRO is developed by EMD International A/S, Niels Jernesvej 10, DK-9220 Aalborg Ø, Tel. +45 96 35 44 44, Fax +45 96 35 44 46, e-mail: windpro@emd.dk"
@@ -111,6 +124,25 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10703"
+   }
+  },
+  {
+   "name": "Ing. Nicola Sollai",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/987540",
+    "page": 2,
+    "document": "Tabulati di calcolo di predimensionamento delle fondazioni degli aerogeneratori",
+    "excerpt": "Progettista Ing. Nicola Sollai – Ordine Ingegneri Cagliari n. 6173"
    }
   }
  ],
@@ -130,7 +162,7 @@
      "value": "info@geologika.eu",
      "occurrences": 42,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/987621",
+      "url": "https://va.mite.gov.it/File/Documento/987376",
       "page": 2,
       "document": "Relazione geologica, geotecnica e sismica",
       "excerpt": "GEOLOGIKA srls – Sede operativa Via Michelangelo, 17/C – 09023, Monastir (SU) – Tel. 070.4619002 – info@geologika.eu"
@@ -141,10 +173,37 @@
      "value": "0704619002",
      "occurrences": 42,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/987621",
+      "url": "https://va.mite.gov.it/File/Documento/987376",
       "page": 2,
       "document": "Relazione geologica, geotecnica e sismica",
       "excerpt": "GEOLOGIKA srls – Sede operativa Via Michelangelo, 17/C – 09023, Monastir (SU) – Tel. 070.4619002 – info@geologika.eu"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Tratos - Gruppo IVA",
+   "kind": "società",
+   "roles": [],
+   "vat": "02328320516",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Stadio N 2 52036 Pieve Santo Stefano Ar",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tratos.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/987513",
+      "page": 121,
+      "document": "Relazione specialistica elettrica",
+      "excerpt": "Filiale - Strada XIII Zona Industriale, 57 - Catania (CT) - 95121 – Italy tel. +39 0575 794.1 - fax +39 0575 794246 - e-mail info@tratos.it - www.tratos.eu"
      }
     }
    ],
@@ -166,9 +225,9 @@
     {
      "type": "PEC",
      "value": "rinnovabili@pec.agreenpower.it",
-     "occurrences": 9,
+     "occurrences": 13,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/987617",
+      "url": "https://va.mite.gov.it/File/Documento/987371",
       "page": 10,
       "document": "Studio di Impatto Ambientale",
       "excerpt": "legale e operativa in Sardegna in via Serra, 44 - 09038 Serramanna (SU), Cod. Fisc. e P.IVA 03968630925 – REA CA 352875, PEC: rinnovabili@pec.agreenpower.it."
@@ -177,12 +236,36 @@
     {
      "type": "E-mail",
      "value": "info@agreenpower.it",
-     "occurrences": 48,
+     "occurrences": 58,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/987541",
+      "url": "https://va.mite.gov.it/File/Documento/987415",
       "page": 1,
       "document": "Cronoprogramma dei lavori di esecuzione",
       "excerpt": "09038 Serramanna (SU) - ITALIA Email: info@agreenpower.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Antonio Castiglia",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0706064351",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1078581",
+      "page": 3,
+      "document": "Osservazioni della Regione Autonoma della Sardegna - Assessorato degli Enti Locali Finanze e Urbanistica - Direzione generale della pianificazione urbanistica territoriale e della vigilanza edilizia -",
+      "excerpt": "Viale Trieste, 186 - 09123 Cagliari — Tel +39 070 6064351 3/3"
      }
     }
    ],
@@ -203,7 +286,7 @@
      "value": "shielding@beshielding.com",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/987615",
+      "url": "https://va.mite.gov.it/File/Documento/987369",
       "page": 20,
       "document": "Relazione tecnica compatibilità elettromagnetica impianto e linea di connessione",
       "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
@@ -214,10 +297,58 @@
      "value": "busbar@beshielding.com",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/987615",
+      "url": "https://va.mite.gov.it/File/Documento/987369",
       "page": 20,
       "document": "Relazione tecnica compatibilità elettromagnetica impianto e linea di connessione",
       "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Nando Minnella",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amm.ne.centrale@pec.infn.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1155912",
+      "page": 1,
+      "document": "Parere del Ministero dell'università e della ricerca in data 08/10/2024",
+      "excerpt": "Direttore Generale amm.ne.centrale@pec.infn.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alla Società AEI Wind Project Xiii S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "aeiwindprojectxiii@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1155912",
+      "page": 1,
+      "document": "Parere del Ministero dell'università e della ricerca in data 08/10/2024",
+      "excerpt": "Dott. Vincenzo Ballerino aeiwindprojectxiii@legalmail.it"
      }
     }
    ],
@@ -323,7 +454,7 @@
   "unit": "month",
   "months": 19.39,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/987541",
+   "url": "https://va.mite.gov.it/File/Documento/987415",
    "page": 2,
    "document": "Cronoprogramma dei lavori di esecuzione",
    "excerpt": ""
@@ -757,9 +888,9 @@
   "duration": {
    "text": "12 mesi",
    "status": "da documenti",
-   "hint": null,
+   "hint": "Valore prevalente negli elaborati; altri valori: 6 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/987617",
+    "url": "https://va.mite.gov.it/File/Documento/987371",
     "page": 191,
     "document": "Studio di Impatto Ambientale",
     "excerpt": "• Durante la fase di corso d’opera ed in fase post-operam sino a 12 mesi dalla chiusura del cantiere, l’intera superficie interessata dai lavori sarà adeguatamente ispezionata da un"
@@ -773,6 +904,10 @@
   "note": null,
   "altri": [
    {
+    "document": "Cronoprogramma dei lavori di esecuzione",
+    "url": "https://va.mite.gov.it/File/Documento/987541"
+   },
+   {
     "document": "Cronoprogramma dei lavori di dismissione",
     "url": "https://va.mite.gov.it/File/Documento/987542"
    },
@@ -785,10 +920,6 @@
     "url": "https://va.mite.gov.it/File/Documento/987284"
    },
    {
-    "document": "Cronoprogramma dei lavori di esecuzione",
-    "url": "https://va.mite.gov.it/File/Documento/987415"
-   },
-   {
     "document": "Cronoprogramma dei lavori di dismissione",
     "url": "https://va.mite.gov.it/File/Documento/987416"
    }
@@ -798,9 +929,9 @@
  },
  "documentazione": {
   "documenti": 378,
-  "pagine": 1960,
-  "completa": false,
-  "da_leggere": 78
+  "pagine": 3457,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -811,7 +942,7 @@
   {
    "campo": "power_mw",
    "valore_attuale": 66.0,
-   "esito": "conflittuale"
+   "esito": "confermato"
   },
   {
    "campo": "municipalities",
@@ -831,8 +962,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Potenza",
+   "reason": "il titolo riporta 66 MW, gli elaborati 6,6 MW"
+  },
+  {
    "label": "Recapiti",
-   "reason": "210 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "281 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
