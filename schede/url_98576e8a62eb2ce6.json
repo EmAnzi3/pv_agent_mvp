@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto fotovoltaico, denominato \"Apricena 01\", della potenza nominale di 16,9 MW con annesso impianto di accumulo energetico della potenza di 50 MW e relative opere di connessione alla rete, ubicato nei Comuni di Apricena (FG) e San Paolo di Civitate (FG).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8263",
  "source": "mase",
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "sintesi": [
   {
    "key": "potenza",
@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "8 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 9 mesi (2)",
+   "sub": "Inizio lavori 31/07/2020 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 9 mesi (2), 24 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/598279",
     "page": 36,
@@ -81,7 +81,7 @@
   "coordinate": {
    "lat": 41.77671,
    "lon": 15.36713,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (20 riferimenti concordi)",
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (22 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/598317",
     "page": 4,
@@ -97,17 +97,17 @@
  },
  "soggetti": [
   {
-   "name": "Whysol-E Sviluppo S.r.l.",
+   "name": "WHYSOL-E Sviluppo S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente",
     "Progettista"
    ],
-   "vat": null,
+   "vat": "10692360968",
    "vat_group": false,
-   "verified": false,
+   "verified": true,
    "esecuzione": null,
-   "office": null,
+   "office": "Via Meravigli 3 20123 Milano Mi",
    "contacts": [
     {
      "type": "PEC",
@@ -143,6 +143,25 @@
     "page": 16,
     "document": "Computo Metrico Estimativo",
     "excerpt": "COMMITTENTE: WHYSOL INVESTMENT & SVILUPPO s.r.l. - Via Meravigli, 3 - 20123 Milano A R I P O R T A R E"
+   }
+  },
+  {
+   "name": "Minerva S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/665862",
+    "page": 1,
+    "document": "Integrazioni del 12/07/2022 - VIARC_Allegati",
+    "excerpt": "rl I PROGETTISTI MINERVA SRL e dott. ing. Fabio Cerino"
    }
   }
  ],
@@ -196,11 +215,40 @@
    "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 31/07/2020, ma l'iter è proseguito; ultimo documento o atto del 02/10/2025: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "31/07/2020",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/852091",
+     "page": 21,
+     "document": "Controdeduzioni della Società Whysol-E Sviluppo S.r.l. al Parere tecnico-istruttorio del Ministero della Cultura - Soprintendenza Speciale per il PNRR (la \"SS PNRR\") prot. 8686 del 22/05/2023 (il \"Par",
+     "excerpt": "la Sezione, con nota AOO_159 -1.07.2020 — 0004653, riscontrando la nota sopra citata, comunicava alla società che il termine ultimo previsto per l’inizio dei lavori fissato per il 31.7.2020, non perde l’efficacia allo sp"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di marzo 2021",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 8 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/598279",
+     "page": 36,
+     "document": "Relazione Tecnica Opere Elettriche SSE",
+     "excerpt": "- 8 mesi + 1 mese/km per il ripotenziamento e per la realizzazione degli elettrodotti a 150 kV e 380 kV."
+    }
+   }
+  ],
   "durata_cantiere": "8 mesi",
   "autorizzazione": null,
   "note": [
@@ -234,7 +282,21 @@
     "excerpt": "- 8 mesi + 1 mese/km per il ripotenziamento e per la realizzazione degli elettrodotti a 150 kV e 380 kV."
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "31/07/2020",
+    "iso": "2020-07-31",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/852091",
+     "page": 21,
+     "document": "Controdeduzioni della Società Whysol-E Sviluppo S.r.l. al Parere tecnico-istruttorio del Ministero della Cultura - Soprintendenza Speciale per il PNRR (la \"SS PNRR\") prot. 8686 del 22/05/2023 (il \"Par",
+     "excerpt": "la Sezione, con nota AOO_159 -1.07.2020 — 0004653, riscontrando la nota sopra citata, comunicava alla società che il termine ultimo previsto per l’inizio dei lavori fissato per il 31.7.2020, non perde l’efficacia allo sp"
+    }
+   }
+  ],
   "document": {
    "document": "Cronoprogramma",
    "url": "https://va.mite.gov.it/File/Documento/598328"
@@ -277,9 +339,9 @@
  },
  "documentazione": {
   "documenti": 165,
-  "pagine": 1274,
-  "completa": false,
-  "da_leggere": 45
+  "pagine": 1756,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -310,12 +372,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 31/07/2020, ma l'iter è proseguito; ultimo documento o atto del 02/10/2025: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "8 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "14 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
