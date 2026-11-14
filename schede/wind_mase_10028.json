@@ -5,14 +5,14 @@
  "title": "Progetto per la realizzazione di un impianto eolico denominato \"Capece\", costituito da 10 aerogeneratori di potenza unitaria di 6,6 MW, per una potenza complessiva d'impianto pari a 66 MW, da realizzarsi nei comuni di Francavilla Fontana (BR), San Michele Salentino (BR), San Vito del Normanni (BR) e Latiano (BR), incluse le opere di connessione alla RTN e un sistema di accumulo da 20 MW (cod. MYTERNA n. 202102973).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10028",
  "source": "mase",
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "6,6 MW",
-   "sub": "Valore ricorrente negli elaborati (32 volte); il titolo riporta 66 MW (probabile refuso).",
+   "sub": "Valore ricorrente negli elaborati (46 volte); il titolo riporta 66 MW (probabile refuso).",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/926944",
     "page": 18,
@@ -25,7 +25,7 @@
    "label": "Aerogeneratori",
    "value": "10",
    "status": "da verificare",
-   "sub": "0,66 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (49), 6 (46), 3 (6)",
+   "sub": "0,66 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (71), 6 (64), 3 (7)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/947935",
     "page": 3,
@@ -50,7 +50,7 @@
    "label": "Accumulo",
    "value": "20 MW / 80 MWh",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 66 MW (18), 86 MW (11), 6,6 MW (3)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 66 MW (23), 86 MW (14), 6,6 MW (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/947935",
     "page": 1,
@@ -61,14 +61,14 @@
   {
    "key": "cantiere",
    "label": "Durata cantiere",
-   "value": "17 mesi",
+   "value": "6 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 17 mesi (3)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/946285",
-    "page": 55,
-    "document": "Integrazioni del 07/12/2023 - RELAZIONE TECNICA",
-    "excerpt": "relativa al settore produttivo direttamente “attivato” dall’intervento. Si prevede che le attività di cantiere necessitino mediamente di circa 50 unità; le attività dureranno 17 mesi circa e il personale presente in sito"
+    "url": "https://va.mite.gov.it/File/Documento/946274",
+    "page": 19,
+    "document": "Integrazioni del 07/12/2023 - Valutazione di impatto acustico previsionale di cantiere",
+    "excerpt": "per tutto il periodo della sosta. ➢ le operazioni di cantiere, che si svilupperanno per un periodo di circa 6 mesi, saranno effettuate all’interno della fascia oraria compresa tra le 8:30 e le 16:30."
    }
   }
  ],
@@ -84,7 +84,7 @@
   "coordinate": {
    "lat": 40.57621,
    "lon": 17.56609,
-   "tipo": "centro della tavola georeferenziata di progetto (124 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (147 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1103285",
     "page": 51,
@@ -95,7 +95,17 @@
   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.57621,17.56609",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": null,
+  "connessione": {
+   "lat": 40.59559,
+   "lon": 17.58919,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1103538",
+    "page": 1,
+    "document": "Integrazioni del 12/06/2024 - CARTA DEI PAESAGGI E DEI PROGETTI PRIORITARI PER IL PAESAGGIO (FONTE P.T.C.P.)",
+    "excerpt": "WTG06 719092 4497086"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.59559,17.58919"
+  },
   "lotti": []
  },
  "soggetti": [
@@ -114,7 +124,7 @@
     {
      "type": "PEC",
      "value": "brownenergysrl@pec.it",
-     "occurrences": 4,
+     "occurrences": 12,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1268406",
       "page": 71,
@@ -126,6 +136,25 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10028"
+   }
+  },
+  {
+   "name": "Ing. Leonardo Filotico",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/926748",
+    "page": 5,
+    "document": "TRASMISSIONE ISTANZA MITE",
+    "excerpt": "IL PROGETTISTA Ing. Leonardo Filotico"
    }
   },
   {
@@ -162,7 +191,7 @@
     {
      "type": "PEC",
      "value": "projettoengineeringsrl@cgn.legalmail.it",
-     "occurrences": 2,
+     "occurrences": 4,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1268406",
       "page": 75,
@@ -173,7 +202,7 @@
     {
      "type": "PEC",
      "value": "projetto@pec.it",
-     "occurrences": 2,
+     "occurrences": 3,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1103336",
       "page": 2,
@@ -184,7 +213,7 @@
     {
      "type": "E-mail",
      "value": "studio@projetto.eu",
-     "occurrences": 180,
+     "occurrences": 426,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/994575",
       "page": 1,
@@ -211,7 +240,7 @@
     {
      "type": "E-mail",
      "value": "info@2si.it",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1103272",
       "page": 19,
@@ -222,12 +251,36 @@
     {
      "type": "Telefono",
      "value": "0532200091",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1103272",
       "page": 19,
       "document": "Integrazioni del 12/06/2024 - CALCOLI PRELIMINARI DEGLI IMPIANTI",
       "excerpt": "strutturali esecutivi e delle relazioni di calcolo”, utilizzando il software PRO-SAP di 2S.I. Software e Servizi per l'Ingegneria S.r.l. , Via Garibaldi, 90, 44121 Ferrara FE (Italy) Tel. +39 0532 200091 www.2si.it info@"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Zona Industriale Lotto 31 S.n.c.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0999574694",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/926747",
+      "page": 1,
+      "document": "TRASMISSIONE ISTANZA ENAC",
+      "excerpt": "Partita IVA 03350050732, con sede legale in ZONA INDUSTRIALE LOTTO 31, SNC – 74020 – SAN MARZANO DI S.G. (TA) Tel.: 0999574694 pec: brownenergysrl@pec.it, ai sensi"
      }
     }
    ],
@@ -239,7 +292,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "17 mesi",
+  "durata_cantiere": "6 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -357,7 +410,7 @@
   "duration": {
    "text": "15 giorni",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 30 giorni (3), 75 giorni (circa 2 mesi) (3), 7 giorni (3)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 30 giorni (4), 75 giorni (circa 2 mesi) (4), 7 giorni (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/926944",
     "page": 134,
@@ -390,9 +443,9 @@
  },
  "documentazione": {
   "documenti": 729,
-  "pagine": 6489,
+  "pagine": 9901,
   "completa": false,
-  "da_leggere": 429
+  "da_leggere": 131
  },
  "confronto": [
   {
@@ -436,7 +489,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "9560 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "14624 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
