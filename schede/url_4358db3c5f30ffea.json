@@ -1,0 +1,741 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "url:4358db3c5f30ffea",
+ "title": "Progetto per la costruzione ed esercizio di un impianto fotovoltaico, denominato \"ELLO3\", di potenza pari a 15,24 MW, comprensivo delle opere di connessione alla RTN, da realizzare nel Comune di Alessandria (AL), in località Cascina Maddalena.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8274",
+ "source": "mase",
+ "updated": "2026-11-14",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "15,24 MW",
+   "sub": "Suddivisa in 3 lotti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8274",
+    "excerpt": "15,24 MW"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico · tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1349870",
+    "page": 1,
+    "document": "ELENCO ELABORATI",
+    "excerpt": "PROGETTO DI REALIZZAZIONE NUOVO IMPIANTO AGRIVOLTAICO"
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "24,2 ha",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/839880",
+    "page": 171,
+    "document": "Integrazioni del 05/05/2023 - STUDIO D'IMPATTO AMBIENTALE",
+    "excerpt": "8 mesi solari Ampiezza area di intervento 24,2 ha Numero medio operai impiegati"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "6 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 268 giorni (circa 9 mesi) (2), 137 giorni (circa 5 mesi) (1), 116 giorni (circa 4 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/659458",
+    "page": 157,
+    "document": "Studio preliminare ambientale",
+    "excerpt": "prossimità degli ingressi. Nella fase di costruzione dell’impianto, la cui durata è stimata in circa 6 mesi, si avranno delle emissioni in atmosfera generate dall’utilizzo delle macchine operatrici di cantiere. Le operaz"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Piemonte",
+  "provincia": "AL",
+  "comuni": [
+   "Sale"
+  ],
+  "coordinate": {
+   "lat": 44.89227,
+   "lon": 8.60628,
+   "tipo": "centro della tavola georeferenziata di progetto (16 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/839874",
+    "page": 54,
+    "document": "Integrazioni del 05/05/2023 - RELAZIONE GEOLOGICA E IDROGEOLOGICA",
+    "excerpt": "Integrazioni del 05/05/2023 - RELAZIONE GEOLOGICA E IDROGEOLOGICA"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=44.89227,8.60628",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Ellomay Solar Italy Three S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "03069260218",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Sebastian Altmann 9 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ellomaysolaritalythree@legalmail.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1376933",
+      "page": 1,
+      "document": "Parere del Ministero della Cultura - Soprintendenza Archeologica belle Arti e Paesaggio per le Province di Alessandria e Cuneo, in data 31/03/2026",
+      "excerpt": "A Ellomay Solar Italy Three S.r.l Pec: ellomaysolaritalythree@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "ellomaysolaritalythirteen@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/839897",
+      "page": 1,
+      "document": "Integrazioni del 05/05/2023 - APPROVAZIONE SONDAGGI SOPRINTENDENZA",
+      "excerpt": "39100 BOLZANO ellomaysolaritalythirteen@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8274"
+   }
+  },
+  {
+   "name": "Ing. Riccardo Valz Gris",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1349870",
+    "page": 1,
+    "document": "ELENCO ELABORATI",
+    "excerpt": "IL PROGETTISTA Ing. Riccardo Valz Gris"
+   }
+  },
+  {
+   "name": "Techgea S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/839897",
+    "page": 2,
+    "document": "Integrazioni del 05/05/2023 - APPROVAZIONE SONDAGGI SOPRINTENDENZA",
+    "excerpt": "geologo dott. Emmanuele Duò (Techgea s.r.l.); preso atto che codesta Società, evidenziando l’attuale indisponibilità dei terreni sui quali è previsto"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Land Live S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12236320961",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Goffredo Mameli 38 20129 Milano Mi",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@landlive.it",
+     "occurrences": 44,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/839859",
+      "page": 1,
+      "document": "Integrazioni del 05/05/2023 - CARBON FOOTPRINT",
+      "excerpt": "C.F./P.IVA 12236320961 Email info@landlive.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0236549116",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1349870",
+      "page": 1,
+      "document": "ELENCO ELABORATI",
+      "excerpt": "20124 Milano - Citycenter Regus - Via Lepetit 8/10 Tel. +39 02 36549116"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "01532838",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1349870",
+      "page": 1,
+      "document": "ELENCO ELABORATI",
+      "excerpt": "13900 Biella - Via Repubblica 41 Tel. +39 015 32838 - Fax +39 015 30878"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Rete Ferroviaria Italiana - S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01008081000",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Della Croce Rossa 1 00161 Roma Rm",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "v.crimi@rfi.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/839899",
+      "page": 2,
+      "document": "Integrazioni del 05/05/2023 - PARERE RFI OLD",
+      "excerpt": "Per ragioni fiscali, nota dell’avvenuto pagamento dovrà essere comunicato tramite mail ai seguenti indirizzi di posta: Crimì Vincenza (v.crimi@rfi.it), Schirinzi Sonia"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Domenico Lo Iudice",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "domenico.loiudice@gmail.com",
+     "occurrences": 90,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/839886",
+      "page": 1,
+      "document": "Integrazioni del 05/05/2023 - RELAZIONE ACUSTICA NEW",
+      "excerpt": "Ing. Domenico Lo Iudice - Via Piermarini 44 – 20853 Biassono MB Tel. +39.339.1600572 Mail. Domenico.loiudice@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3391600572",
+     "occurrences": 90,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/839886",
+      "page": 1,
+      "document": "Integrazioni del 05/05/2023 - RELAZIONE ACUSTICA NEW",
+      "excerpt": "Ing. Domenico Lo Iudice - Via Piermarini 44 – 20853 Biassono MB Tel. +39.339.1600572 Mail. Domenico.loiudice@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Valz Gris",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0200696321",
+     "occurrences": 36,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/839903",
+      "page": 1,
+      "document": "Integrazioni del 05/05/2023 - PLANIMETRIA GENERALE DI PROGETTO",
+      "excerpt": "20124 Milano - Citycenter Regus - Via Lepetit 8/10 Tel. +39 02 0069 6321"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Gabriella Rago",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "archgabriellarago@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/745156",
+      "page": 1,
+      "document": "Richiesta integrazioni CTPNRR-PNIEC",
+      "excerpt": "Arch. Gabriella Rago archgabriellarago@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 09/11/2022, ma l'iter è proseguito; ultimo documento o atto del 20/04/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "22/01/2025",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/839865",
+     "page": 3,
+     "document": "Integrazioni del 05/05/2023 - CRONOPROGRAMMA",
+     "excerpt": "In funzione della pianificazione proposta la data di entrata in esercizio dell’impianto potrà avvenire nel caso più favorevole a decorrere dal 22/01/2025. I cronoprogrammi sono riportati al capitolo 3."
+    }
+   },
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "09/11/2022 → 12/05/2023",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/659418",
+     "page": 13,
+     "document": "Cronoprogramma",
+     "excerpt": ""
+    }
+   },
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto n. 61 del 16/02/2024",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1376933",
+     "page": 2,
+     "document": "Parere del Ministero della Cultura - Soprintendenza Archeologica belle Arti e Paesaggio per le Province di Alessandria e Cuneo, in data 31/03/2026",
+     "excerpt": "sottoposto a procedimento di Valutazione di Impatto Ambientale (ID VIP 7693) ai sensi dell’art. 23 del D.Lgs. 3 aprile 2006 n. 152 e s.m.i. e conclusosi con Decreto n. 61 del 16.02.2024, con il quale il Ministero dell’Am"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 16/02/2034",
+    "dettaglio": "«efficacia temporale pari a 10 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/978537",
+     "page": 42,
+     "document": "Allegato al Decreto del Ministero dell'Ambiente - Parere Commissione Tecnica PNRR-PNIEC del 21/12/2023",
+     "excerpt": "per la realizzazione e gli ulteriori tempi necessari per arrivare all'avvio dei lavori, si valuta che il provvedimento di VIA possa avere efficacia temporale pari a 10 anni ai sensi dell’art. 51, comma 2, del decreto-leg"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di febbraio 2024",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1376933",
+     "page": 2,
+     "document": "Parere del Ministero della Cultura - Soprintendenza Archeologica belle Arti e Paesaggio per le Province di Alessandria e Cuneo, in data 31/03/2026",
+     "excerpt": "sottoposto a procedimento di Valutazione di Impatto Ambientale (ID VIP 7693) ai sensi dell’art. 23 del D.Lgs. 3 aprile 2006 n. 152 e s.m.i. e conclusosi con Decreto n. 61 del 16.02.2024, con il quale il Ministero dell’Am"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di agosto 2024",
+    "dettaglio": "inizio stimato + durata del cantiere: 6 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/659418",
+     "page": 13,
+     "document": "Cronoprogramma",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "6 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "Decreto n. 61",
+   "data": "16/02/2024",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1376933",
+    "page": 2,
+    "document": "Parere del Ministero della Cultura - Soprintendenza Archeologica belle Arti e Paesaggio per le Province di Alessandria e Cuneo, in data 31/03/2026",
+    "excerpt": "sottoposto a procedimento di Valutazione di Impatto Ambientale (ID VIP 7693) ai sensi dell’art. 23 del D.Lgs. 3 aprile 2006 n. 152 e s.m.i. e conclusosi con Decreto n. 61 del 16.02.2024, con il quale il Ministero dell’Am"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Consegna lavori 0 0",
+    "start": 0.0,
+    "end": 0.03,
+    "level": 0,
+    "dates": [
+     "2022-11-09",
+     "2022-11-09"
+    ],
+    "summary": false,
+    "duration": "0 g"
+   },
+   {
+    "name": "Scotico terreno 16 30",
+    "start": 0.53,
+    "end": 1.02,
+    "level": 0,
+    "dates": [
+     "2022-11-25",
+     "2022-12-09"
+    ],
+    "summary": false,
+    "duration": "14 g"
+   },
+   {
+    "name": "Picchettamento terreno 31 42",
+    "start": 1.02,
+    "end": 1.41,
+    "level": 0,
+    "dates": [
+     "2022-12-10",
+     "2022-12-21"
+    ],
+    "summary": false,
+    "duration": "11 g"
+   },
+   {
+    "name": "Realizzazione viabilità e piazzole 43 73",
+    "start": 1.41,
+    "end": 2.43,
+    "level": 0,
+    "dates": [
+     "2022-12-22",
+     "2023-01-21"
+    ],
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Realizzazione recinzione 15 26",
+    "start": 1.02,
+    "end": 1.41,
+    "level": 0,
+    "dates": [
+     "2022-12-10",
+     "2022-12-21"
+    ],
+    "summary": false,
+    "duration": "11 g"
+   },
+   {
+    "name": "Realizzazione impianto di illuminazione 57 71",
+    "start": 1.88,
+    "end": 2.37,
+    "level": 0,
+    "dates": [
+     "2023-01-05",
+     "2023-01-19"
+    ],
+    "summary": false,
+    "duration": "14 g"
+   },
+   {
+    "name": "Realizzazione impianto antifurto 57 63",
+    "start": 1.97,
+    "end": 2.2,
+    "level": 0,
+    "dates": [
+     "2023-01-08",
+     "2023-01-14"
+    ],
+    "summary": false,
+    "duration": "6 g"
+   },
+   {
+    "name": "Installazione quadri di campo e parallelo cc 72 81",
+    "start": 2.37,
+    "end": 2.7,
+    "level": 0,
+    "dates": [
+     "2023-01-20",
+     "2023-01-29"
+    ],
+    "summary": false,
+    "duration": "9 g"
+   },
+   {
+    "name": "Stringatura e cablaggi cc 82 121",
+    "start": 2.76,
+    "end": 4.08,
+    "level": 0,
+    "dates": [
+     "2023-02-01",
+     "2023-03-12"
+    ],
+    "summary": false,
+    "duration": "39 g"
+   },
+   {
+    "name": "Montaggio dei moduli fotovoltaici 92 131",
+    "start": 3.22,
+    "end": 4.54,
+    "level": 0,
+    "dates": [
+     "2023-02-15",
+     "2023-03-26"
+    ],
+    "summary": false,
+    "duration": "39 g"
+   },
+   {
+    "name": "Allestimento cabina di consegna 134 136",
+    "start": 4.61,
+    "end": 4.7,
+    "level": 0,
+    "dates": [
+     "2023-03-29",
+     "2023-03-31"
+    ],
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Cablaggi MT 137 150",
+    "start": 4.67,
+    "end": 5.13,
+    "level": 0,
+    "dates": [
+     "2023-03-31",
+     "2023-04-13"
+    ],
+    "summary": false,
+    "duration": "13 g"
+   },
+   {
+    "name": "Realizzazione opere di rete 137 178",
+    "start": 4.67,
+    "end": 6.05,
+    "level": 0,
+    "dates": [
+     "2023-03-31",
+     "2023-05-11"
+    ],
+    "summary": false,
+    "duration": "41 g"
+   },
+   {
+    "name": "Ultimazione lavori 180 180",
+    "start": 6.05,
+    "end": 6.09,
+    "level": 0,
+    "dates": [
+     "2023-05-12",
+     "2023-05-12"
+    ],
+    "summary": false,
+    "duration": "0 g"
+   }
+  ],
+  "unit": "month",
+  "months": 6.09,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/659418",
+   "page": 13,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "nov 22",
+     "start": -0.263,
+     "end": 0.737
+    },
+    {
+     "label": "dic 22",
+     "start": 0.737,
+     "end": 1.737
+    },
+    {
+     "label": "gen 23",
+     "start": 1.737,
+     "end": 2.737
+    },
+    {
+     "label": "feb 23",
+     "start": 2.737,
+     "end": 3.737
+    },
+    {
+     "label": "mar 23",
+     "start": 3.737,
+     "end": 4.737
+    },
+    {
+     "label": "apr 23",
+     "start": 4.737,
+     "end": 5.737
+    },
+    {
+     "label": "mag 23",
+     "start": 5.737,
+     "end": 6.737
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "6 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 268 giorni (circa 9 mesi) (2), 7 giorni (2), 14 giorni (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/659458",
+    "page": 157,
+    "document": "Studio preliminare ambientale",
+    "excerpt": "prossimità degli ingressi. Nella fase di costruzione dell’impianto, la cui durata è stimata in circa 6 mesi, si avranno delle emissioni in atmosfera generate dall’utilizzo delle macchine operatrici di cantiere. Le operaz"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "22/01/2025",
+    "iso": "2025-01-22",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/839865",
+     "page": 3,
+     "document": "Integrazioni del 05/05/2023 - CRONOPROGRAMMA",
+     "excerpt": "In funzione della pianificazione proposta la data di entrata in esercizio dell’impianto potrà avvenire nel caso più favorevole a decorrere dal 22/01/2025. I cronoprogrammi sono riportati al capitolo 3."
+    }
+   }
+  ],
+  "document": {
+   "document": "Integrazioni del 05/05/2023 - CRONOPROGRAMMA",
+   "url": "https://va.mite.gov.it/File/Documento/839865"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 05/05/2023 - CRONOPROGRAMMA",
+    "url": "https://va.mite.gov.it/File/Documento/839865"
+   },
+   {
+    "document": "Integrazioni del 05/05/2023 - CRONOPROGRAMMA DISMISSIONE",
+    "url": "https://va.mite.gov.it/File/Documento/839878"
+   },
+   {
+    "document": "Cronoprogramma dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/659437"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 129,
+  "pagine": 2215,
+  "completa": false,
+  "da_leggere": 9
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "ELLOMAY SOLAR ITALY THREE S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 15.24,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ALESSANDRIA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AL",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Piemonte",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 09/11/2022, ma l'iter è proseguito; ultimo documento o atto del 20/04/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "162 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
