@@ -1,0 +1,399 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10158",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"E90\", costituito da 10 aerogeneratori della potenza complessiva di 62,00 MW ed opere di connessione alla RTN da realizzarsi nei Comuni di Borgia, San Floro, Girifalco, Cortale e Maida, in Provincia di Catanzaro.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10158",
+ "source": "mase",
+ "updated": "2026-11-15",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "6,2 MW",
+   "sub": "Valore ricorrente negli elaborati (26 volte); il titolo riporta 62 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898330",
+    "page": 1,
+    "document": "Avviso al pubblico del 13/09/2023",
+    "excerpt": "Cortale e Maida e prevede una nuova realizzazione di un parco eolico a terra con infrastrutture ed opere connesse, formato da n. 10 aerogeneratori della potenza di 6,2 MW, di altezza complessiva fuori terra pari a 200 me"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "4",
+   "status": "da verificare",
+   "sub": "1,55 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 6 (17), 1 (14), 10 (10)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898469",
+    "page": 5,
+    "document": "STUDIO DI IMPATTO AMBIENTALE QUADRO DI RIFERIMENTO PROGRAMMATICO",
+    "excerpt": "Lignatarello(E1,E10), località Canonicato-Giardinello(E3,E4,E6) e località Timpone Sansone(E6, E7) e nel territorio del comune di San Floro (4 Aerogeneratori) rispettivamente in località Lignatarello(E2,E10) e località T"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "4 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 16 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898334",
+    "page": 72,
+    "document": "RELAZIONE TECNICA",
+    "excerpt": "Realizzazione di 10 plinti di Fondazioni: Tempi necessari 4mesi. "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Calabria",
+  "provincia": "CZ",
+  "comuni": [
+   "Cortale",
+   "Borgia",
+   "San Floro",
+   "Maida",
+   "Girifalco"
+  ],
+  "coordinate": {
+   "lat": 38.83771,
+   "lon": 16.56992,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (15 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898530",
+    "page": 118,
+    "document": "RELAZIONE PAESAGGISTICA E FOTOINSERIMENTI",
+    "excerpt": "634707.0"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=38.83771,16.56992",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Energia Levante S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energialevantesrl@legalmail.it",
+     "occurrences": 191,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/898330",
+      "page": 1,
+      "document": "Avviso al pubblico del 13/09/2023",
+      "excerpt": "Tel: Tel: +39 0654832107 energialevantesrl@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0654832107",
+     "occurrences": 75,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/898330",
+      "page": 1,
+      "document": "Avviso al pubblico del 13/09/2023",
+      "excerpt": "4 piano – 00143 Roma Italia Tel: Tel: +39 0654832107"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10158"
+   }
+  },
+  {
+   "name": "Ing. Rosario Mattace",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898338",
+    "page": 7,
+    "document": "PRIME INDICAZIONI SULLA SICUREZZA",
+    "excerpt": "COORDINATORE PER LA SICUREZZA IN FASE DI PROGETTAZIONE: Ing. Rosario Mattace"
+   }
+  },
+  {
+   "name": "Dott. Geol. Fulvio Mattace",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898474",
+    "page": 24,
+    "document": "RELAZIONE GEOLOGICA",
+    "excerpt": "Il Geologo Dott. Geol. Fulvio Mattace"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Santuori Crescenzio",
+   "kind": "società",
+   "roles": [],
+   "vat": "02631840796",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Edmondo Buccarelli 16 88100 Catanzaro Cz",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "studiolegale@santuori.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1215173",
+      "page": 1,
+      "document": "Osservazioni della Camas Energy srl Tramite Studio Legale Santuori in data 28/01/2025",
+      "excerpt": "T. 0961 747918 - F. 0961 541105 - M. 329 6211976 studiolegale@santuori.it - crescenzio.santuori@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Camas Energy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02765800798",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Carra' Snc 88025 Maida Cz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "crescenzio.santuori@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1215173",
+      "page": 1,
+      "document": "Osservazioni della Camas Energy srl Tramite Studio Legale Santuori in data 28/01/2025",
+      "excerpt": "Claudio Nicola Cirillo, elettivamente domiciliati presso il mio studio legale e all’indirizzo di posta elettronica certificata crescenzio.santuori@pec.it, ove"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Ing. Giuseppe Ferraina",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "giuseppe.ferraina@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1215173",
+      "page": 3,
+      "document": "Osservazioni della Camas Energy srl Tramite Studio Legale Santuori in data 28/01/2025",
+      "excerpt": "E-mail: giuseppeferraina.cz@alice.it giuseppe.ferraina@ingpec.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "giuseppeferraina.cz@alice.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1215173",
+      "page": 3,
+      "document": "Osservazioni della Camas Energy srl Tramite Studio Legale Santuori in data 28/01/2025",
+      "excerpt": "Tel. 339/5856876 E-mail: giuseppeferraina.cz@alice.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3395856876",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1215173",
+      "page": 3,
+      "document": "Osservazioni della Camas Energy srl Tramite Studio Legale Santuori in data 28/01/2025",
+      "excerpt": "Dott. Ing. Giuseppe FERRAINA Tel. 339/5856876"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "ISO 9001 certificata da Bureau Veritas Italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiorinnovabili.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/898472",
+      "page": 2,
+      "document": "RELAZIONE ACUSTICA DEL PROGETTO EOLICO",
+      "excerpt": "Azienda con sistema di gestione qualità ISO 9001 certificata da Bureau Veritas Italia S.p.A. www.studiorinnovabili.it - info@studiorinnovabili.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Topcad Ingenieria S.L.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "topcad@topcadingenieria.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/898341",
+      "page": 3,
+      "document": "RILIEVO LIDAR DELL'AREA DI PROGETTO",
+      "excerpt": "Ribadeo - Lugo topcad@topcadingenieria.com tel- 982 13 12 10 ó 982 12 00 16 Fax.- 982 12 97 38"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "4 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "2 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 4 mesi (2), 16 mesi (2), 10 giorni (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898334",
+    "page": 72,
+    "document": "RELAZIONE TECNICA",
+    "excerpt": "Realizzazione delle 10 piazzole a servizio degli aerogeneratori: Tempi necessari 2mesi. "
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 203,
+  "pagine": 2122,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Energia Levante S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 62.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BORGIA, SAN FLORO, GIRIFALCO, CORTALE, MAIDA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CZ",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Calabria",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 62 MW, gli elaborati 6,2 MW"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "126 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
