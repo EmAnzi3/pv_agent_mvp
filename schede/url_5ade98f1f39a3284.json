@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico della potenza di 16,63 MW e relative opere di connessione alla RTN, da realizzarsi nei Comuni di Brindisi e Cellino San Marco (BR).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8729",
  "source": "mase",
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "sintesi": [
   {
    "key": "potenza",
@@ -48,8 +48,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "8 mesi",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 30 mesi (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 30 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1368952",
     "page": 12,
@@ -68,12 +68,12 @@
   "coordinate": {
    "lat": 40.47991,
    "lon": 17.88632,
-   "tipo": "centro dei vertici delle aree d'impianto (31 riferimenti concordi)",
+   "tipo": "coordinate del sito dichiarate negli elaborati (32 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/742863",
-    "page": 2,
-    "document": "Piante, prospetti e sezioni dei manufatti 1 - Cellino San Marco",
-    "excerpt": "perimetrale di 15m/20 m COORDINATE GEOGRAFICHE: 40.479913N, 17.886321E"
+    "url": "https://va.mite.gov.it/File/Documento/1169410",
+    "page": 9,
+    "document": "Allegato alle Controdeduzioni Parere Regione Puglia MASE_2024-0203667 - All_n_1-089_DIR_2024_00641_DeterminaPUB",
+    "excerpt": "- coordinate geografiche di Brindisi sono 40.49469 lat N, 17.87716 long. E; le coordinate di Cellino - sono 40.479913, 17.886321"
    }
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.47991,17.88632",
@@ -515,7 +515,11 @@
    "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "potenzialmente_realizzato",
+  "label": "Potenzialmente realizzato",
+  "reason": "La fine lavori prevista (30/06/2026) è passata e non ci sono documenti successivi: verificare se l'impianto è in esercizio."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
@@ -584,9 +588,9 @@
  },
  "documentazione": {
   "documenti": 259,
-  "pagine": 5789,
-  "completa": false,
-  "da_leggere": 19
+  "pagine": 6011,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -617,16 +621,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "La fine lavori prevista (30/06/2026) è passata e non ci sono documenti successivi: verificare se l'impianto è in esercizio."
+  },
+  {
    "label": "Superficie complessiva",
    "reason": "valori diversi negli elaborati"
   },
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Recapiti",
-   "reason": "1093 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1103 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
