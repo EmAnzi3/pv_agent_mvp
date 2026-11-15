@@ -1,0 +1,396 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_8732",
+ "title": "Progetto di un impianto eolico della potenza complessiva di 60,00 MW, situato nel Comune di Pietrelcina (BN) in località \"Difesa e Maitine\", con opere connesse ricadenti nei Comuni di Pesco Sannita (BN) e Benevento (BN).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8732",
+ "source": "mase",
+ "updated": "2026-11-15",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "60 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8732",
+    "excerpt": "60 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "9",
+   "status": "da verificare",
+   "sub": "6,67 MW ciascuno · altezza mozzo 118 m · diametro rotore 163 m · Valore più ricorrente negli elaborati; altri valori: 8 (16), 5 (6), 4 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/751070",
+    "page": 1,
+    "document": "Avviso al pubblico del 18/01/2023",
+    "excerpt": "e prevede la nuova realizzazione di un impianto eolico composto da n.9 aerogeneratori per una potenza totale di 60,00 MW da ubicarsi nel Comune di Pietrelcina (BN) alla località “Difesa” e"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da documenti",
+   "sub": "Inizio lavori 13/06/2017 (natura non determinabile) · Valore prevalente negli elaborati; altri valori: 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/751032",
+    "page": 105,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "La durata presunta dei lavori è di circa 24 mesi."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "BN",
+  "comuni": [
+   "Pietrelcina"
+  ],
+  "coordinate": {
+   "lat": 41.19937,
+   "lon": 14.8114,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (34 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/751043",
+    "page": 45,
+    "document": "Relazione geologica",
+    "excerpt": "S1 41°12'29.4\"N 14°48'38.9\"E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.19937,14.81140",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.17906,
+   "lon": 14.78414,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/751051",
+    "page": 34,
+    "document": "RELAZIONE ARCHEOLOGICA",
+    "excerpt": "La ricognizione si conclude con l’area della stazione elettrica di trasformazione denominata “Benevento 3” ( 41°10'44.616\"N, 14°47'2.904\"E) dove la visibilità del suolo riscontrato è classificata come parzialmente rileva"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.17906,14.78414"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "PLC Power S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "05192140654",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Delle Industrie 100 80011 Acerra Na",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "plcpower@pec.it",
+     "occurrences": 13,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/751070",
+      "page": 1,
+      "document": "Avviso al pubblico del 18/01/2023",
+      "excerpt": "P.I. e C.F. 05192140654 – R.E.A. NA-992856 – Cap. Soc. € 100.000,00 i.v. P.E.C.: plcpower@pec.it – WEB: www.plc-spa.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8732"
+   }
+  },
+  {
+   "name": "Energy & Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "02618900647",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Xxiii Luglio 139 83044 Bisaccia Av",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energyengineering@legalmail.it",
+     "occurrences": 109,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/750924",
+      "page": 1,
+      "document": "Planimetria con ubicazione indagini geologiche",
+      "excerpt": "Tel./Fax. 0827/81480 pec: energyengineering@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "davidetriv@gmail.com",
+     "occurrences": 202,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/751064",
+      "page": 2,
+      "document": "Shadow Flickering",
+      "excerpt": "3398492932 sara gargano / davidetriv@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/750924",
+    "page": 1,
+    "document": "Planimetria con ubicazione indagini geologiche",
+    "excerpt": "PROGETTAZIONE ENERGY & ENGINEERING S.R.L."
+   }
+  },
+  {
+   "name": "Dott. Fusco Tommaso",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/750925",
+    "page": 1,
+    "document": "Carta geologica PIETRELCINA",
+    "excerpt": "IL GEOLOGO Dott. Fusco Tommaso"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Soil Project S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@soilprojectsas.it",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/751043",
+      "page": 81,
+      "document": "Relazione geologica",
+      "excerpt": "email: info@soilprojectsas.it; P.I. 01515280624"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "08241816668",
+     "occurrences": 27,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/751043",
+      "page": 81,
+      "document": "Relazione geologica",
+      "excerpt": "Viale Europa snc, loc. Cubante, 82018 Calvi (BN) Tel: 0824 1816668; info: www.soilprojectsas. it;"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3406867752",
+     "occurrences": 26,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/751043",
+      "page": 83,
+      "document": "Relazione geologica",
+      "excerpt": "Viale Europa snc - Loc. Cubante, 82018 CALVI (BN) Tel: 0824 1816668; cell: 340 6867752 - 333 1153056; info: www.soilprojectsas it;"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasr.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/751048",
+      "page": 61,
+      "document": "Previsione di impatto acustico",
+      "excerpt": "www.sonorasri.com - sonora@sonorasr.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/751048",
+      "page": 60,
+      "document": "Previsione di impatto acustico",
+      "excerpt": "Via dei Bersaglieri, 9 - Caserta “LTS Sonora S.r.l. Tel 0823 351196 - Fax 0823 351196 layla ‘LAT N°185"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 13/06/2017, ma l'iter è proseguito; ultimo documento o atto del 22/02/2023: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "13/06/2017",
+    "dettaglio": "natura non determinabile",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/750920",
+     "page": 4,
+     "document": "R_07_Piano_di_Utilizzo_Terre_e_Rocce_da_scavo-signed",
+     "excerpt": "ambientale territorialmente competente, per via telematica, almeno novanta giorni prima dell'inizio dei lavori secondo quanto indicato all’art. 9 del DPR 13/06/2017 n° 120."
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di giugno 2019",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 24 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/751032",
+     "page": 105,
+     "document": "Studio di impatto ambientale",
+     "excerpt": "La durata presunta dei lavori è di circa 24 mesi."
+    }
+   }
+  ],
+  "durata_cantiere": "24 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "24 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 4 settimane (4), 3 settimane (4), 12 settimane (circa 3 mesi) (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/751032",
+    "page": 105,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "La durata presunta dei lavori è di circa 24 mesi."
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "13/06/2017",
+    "iso": "2017-06-13",
+    "nature": "natura non determinabile",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/750920",
+     "page": 4,
+     "document": "R_07_Piano_di_Utilizzo_Terre_e_Rocce_da_scavo-signed",
+     "excerpt": "ambientale territorialmente competente, per via telematica, almeno novanta giorni prima dell'inizio dei lavori secondo quanto indicato all’art. 9 del DPR 13/06/2017 n° 120."
+    }
+   }
+  ],
+  "document": {
+   "document": "Cronoprogramma relativo alle fasi realizzative",
+   "url": "https://va.mite.gov.it/File/Documento/751056"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Cronoprogramma relativo alle fasi realizzative",
+    "url": "https://va.mite.gov.it/File/Documento/751056"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 157,
+  "pagine": 2495,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "PLC Power S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 60.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "PIETRELCINA, PESCO SANNITA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BN",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 13/06/2017, ma l'iter è proseguito; ultimo documento o atto del 22/02/2023: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "253 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
