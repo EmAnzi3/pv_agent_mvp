@@ -1,0 +1,496 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10888",
+ "title": "Progetto di un parco eolico di potenza nominale pari a 60 MW e sistema di storage da 15 MW sito nei Comuni di Foligno e Nocera Umbra (PG) e relative opere di connessione alla RTN nel Comune di Serravalle di Chienti (MC).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10888",
+ "source": "mase",
+ "updated": "2026-11-15",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "6 MW",
+   "sub": "Suddivisa in 4 lotti · Valore ricorrente negli elaborati (43 volte); il titolo riporta 60 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1139212",
+    "page": 2,
+    "document": "Avviso al pubblico del 09/09/2024",
+    "excerpt": "eolica denominato “Fondi e Collecroce” ubicato nei comuni di Nocera Umbra (PG) e Foligno (PG), costituito da: 1) 10 (dieci) aerogeneratori di potenza nominale massima 6,0 MW per un totale di 60 MW, 2) opere connesse a 30"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "0,60 MW ciascuno · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 6 (12), 4 (12), 1 (9)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1139119",
+    "page": 3,
+    "document": "D_10_Relazione_impatto_elettromagnetico",
+    "excerpt": "“Serravalle di Chienti”, nel seguito definito il “Progetto”. In particolare, con il termine “Progetto” si fa riferimento all’insieme di: Impianto Eolico (costituito da n° 10 aerogeneratori), Cavidotto 30 kV di collegamen"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1139137",
+    "page": 217,
+    "document": "D_3_Studio_di_Impatto_Ambientale",
+    "excerpt": "negativamente la realizzazione dell'impianto agro-fotovoltaico in oggetto; difatti non si"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "15 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 60 MW (2103)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1139212",
+    "page": 1,
+    "document": "Avviso al pubblico del 09/09/2024",
+    "excerpt": "(PG) E RELATIVE OPERE DI CONNESSIONE ALLA RTN NEL COMUNE DI SERRAVALLE DI CHIENTI (MC), POTENZA NOMINALE PARI A 60 MW E SISTEMA DI STORAGE PARI A 15 MW DENOMINAZIONE IMPIANTO – PE “FONDI E COLLECROCE”"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "14 MESI",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1139165",
+    "page": 50,
+    "document": "A_2_Relazione_generale",
+    "excerpt": "DURATA DEI LAVORI PREVISTA 14 MESI MESE 11"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Marche",
+  "provincia": "PG",
+  "comuni": [
+   "Foligno",
+   "Nocera Umbra"
+  ],
+  "coordinate": {
+   "lat": 43.08531,
+   "lon": 12.85085,
+   "tipo": "centro della tavola georeferenziata di progetto (21 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1435855",
+    "page": 15,
+    "document": "Integrazioni del 16/09/2026 - Regione dell'Umbria - Richiesta certificazione di presenza/assenza di usi civici per nn. 73 particelle site nei Comuni di Foligno e Nocera Umbra, a mezzo PEC 277360/2022",
+    "excerpt": "Integrazioni del 16/09/2026 - Regione dell'Umbria - Richiesta certificazione di presenza/assenza di usi civici per nn. 7"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=43.08531,12.85085",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 45.11278,
+   "lon": 8.95167,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1252186",
+    "page": 6,
+    "document": "Osservazioni della Provincia di PAVIA - Settore Tutela Ambientale e Biodiversità, Promozione del Territorio, Sostenibilità - U.O. Bonifiche e Compatibilità Ambientale, in data 9/05/2025",
+    "excerpt": "PIEVE ALBIGNOLA (PV), al Foglio 10 Particelle 37, 183, 179, 181, 184, 187, 44, 45, 46, 58, in località Cascina Tombone ad un’altitudine media di circa 84 m slm, Latitudine 45,112778° N - Longitudine 8,951667° E."
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=45.11278,8.95167"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Energia Ecosostenibile S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02112720764",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Della Chimica 103 85100 Potenza Pz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energiaecosostenibile@pec.it",
+     "occurrences": 1990,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139119",
+      "page": 1,
+      "document": "D_10_Relazione_impatto_elettromagnetico",
+      "excerpt": "85100 POTENZA (PZ) energiaecosostenibile@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "antongirolami@archeolab.net",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1435847",
+      "page": 25,
+      "document": "Integrazioni del 16/09/2026 - Trasmissione Integrazioni in riscontro alla nota del Ministero della Cultura - Soprintendenza Speciale per il Piano di Ripresa e Resilienza prot. MASE n. 0136181 del 18/0",
+      "excerpt": "Da: viviana antongirolami@archeolab.net"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0302056980",
+     "occurrences": 19,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1242419",
+      "page": 3,
+      "document": "Integrazioni del 20/01/2025 - A_22-Studio_Anemologico_e_Valutazione_preliminare_signed",
+      "excerpt": "- Via Matteotti, 311 – SCALA P – Int.10 – 25063 Gardone Val Trompia (BS) Tel. 030 2056980 – Fax 030 831100"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0971281981",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1435847",
+      "page": 24,
+      "document": "Integrazioni del 16/09/2026 - Trasmissione Integrazioni in riscontro alla nota del Ministero della Cultura - Soprintendenza Speciale per il Piano di Ripresa e Resilienza prot. MASE n. 0136181 del 18/0",
+      "excerpt": "Energia Ecosostenibile Srl energiaecosostenibile@pec.it Via della Chimica 103 Tel: +39 0971 281981"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10888"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 24,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1242419",
+      "page": 3,
+      "document": "Integrazioni del 20/01/2025 - A_22-Studio_Anemologico_e_Valutazione_preliminare_signed",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Amici Della Terra APS",
+   "kind": "società",
+   "roles": [],
+   "vat": "02141761003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ippolito Nievo 62 Sc C I 00153 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amicidellaterra@pec.it",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156894",
+      "page": 3,
+      "document": "Osservazioni della Signora MONICA TOMMASI in qualità di legale rappresentante della Associazione AMICI DELLA TERRA ONLUS, in data 10/10/2024",
+      "excerpt": "www.amicidellaterra.it amicidellaterra@pec.it — segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@amicidellaterra.it",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156894",
+      "page": 3,
+      "document": "Osservazioni della Signora MONICA TOMMASI in qualità di legale rappresentante della Associazione AMICI DELLA TERRA ONLUS, in data 10/10/2024",
+      "excerpt": "www.amicidellaterra.it amicidellaterra@pec.it — segreteria@amicidellaterra.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Geol. Fabio Guadagnano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "guadagnano@pec.epap.it",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139160",
+      "page": 10,
+      "document": "A_14_4_Rapporto_tecnico_Indagini_Geofisiche_parte_4_di_4",
+      "excerpt": "Sede Legale: Via Lussemburgo, snc, 06023 Gualdo Tadino (PG) E-mail: geologo.guadagnano@gmail.com – Pec: guadagnano@pec.epap.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "geologo.guadagnano@gmail.com",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139160",
+      "page": 10,
+      "document": "A_14_4_Rapporto_tecnico_Indagini_Geofisiche_parte_4_di_4",
+      "excerpt": "Sede Legale: Via Lussemburgo, snc, 06023 Gualdo Tadino (PG) E-mail: geologo.guadagnano@gmail.com – Pec: guadagnano@pec.epap.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3333658037",
+     "occurrences": 177,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139156",
+      "page": 3,
+      "document": "A_14_Relazione_geologica",
+      "excerpt": "Dott. Geol. Fabio Guadagnano Via Lussemburgo, snc - 06023 Gualdo Tadino (PG) - Cell. +39 333 365 8037"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Metrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@metrix.it",
+     "occurrences": 34,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139148",
+      "page": 188,
+      "document": "D_7_Valutazione_impatto_acustico",
+      "excerpt": "Tel. 0922 992053 info@metrix.it – www.metrix.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0922992053",
+     "occurrences": 34,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139148",
+      "page": 188,
+      "document": "D_7_Valutazione_impatto_acustico",
+      "excerpt": "92020 S. Stefano Quisquina (AG) Tel. 0922 992053"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ingeteam S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "bess.energy@ingeteam.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139148",
+      "page": 184,
+      "document": "D_7_Valutazione_impatto_acustico",
+      "excerpt": "Fax: +34 948 288 001 e-mail: bess.energy@ingeteam.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "italia.energy@ingeteam.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139148",
+      "page": 184,
+      "document": "D_7_Valutazione_impatto_acustico",
+      "excerpt": "Fax: +39 054 665 5391 e-mail: italia.energy@ingeteam.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "france@ingeteam.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139148",
+      "page": 184,
+      "document": "D_7_Valutazione_impatto_acustico",
+      "excerpt": "Fax: +33 (0)5 61 25 00 11 e-mail: france@ingeteam.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "solar.us@ingeteam.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139148",
+      "page": 184,
+      "document": "D_7_Valutazione_impatto_acustico",
+      "excerpt": "Fax: +1 (414) 342 0736 e-mail: solar.us@ingeteam.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "czech@ingeteam.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139148",
+      "page": 184,
+      "document": "D_7_Valutazione_impatto_acustico",
+      "excerpt": "Fax: +420 59 732 6899 e-mail: czech@ingeteam.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "shanghai@ingeteam.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1139148",
+      "page": 184,
+      "document": "D_7_Valutazione_impatto_acustico",
+      "excerpt": "Fax: +86 21 65 07 76 38 e-mail: shanghai@ingeteam.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "14 MESI",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 15 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1139165",
+    "page": 50,
+    "document": "A_2_Relazione_generale",
+    "excerpt": "DURATA DEI LAVORI PREVISTA 14 MESI MESE 11"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "A_20_Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1139166"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "A_20_Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/1139166"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 222,
+  "pagine": 3608,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Energia Ecosostenibile S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 60.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SERRAVALLE DI CHIENTI, FOLIGNO, NOCERA UMBRA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "MC",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Marche",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 60 MW, gli elaborati 6 MW"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "176 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
