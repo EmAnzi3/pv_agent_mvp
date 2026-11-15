@@ -1,0 +1,952 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10918",
+ "title": "Progetto di un impianto eolico denominato \"PELLESTRINA WIND\" di potenza complessiva pari a 59,4 MW da realizzare in Località Casalappi nei comuni di Campiglia Marittima (LI), Piombino (LI) e Suvereto (LI).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10918",
+ "source": "mase",
+ "updated": "2026-11-15",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "59,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10918",
+    "excerpt": "59,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "9",
+   "status": "da verificare",
+   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (75), 3 (49), 4 (44)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1160909",
+    "page": 2,
+    "document": "Avviso al Pubblico del 16/10/2024",
+    "excerpt": "territorio provinciale di Livorno e prevede la realizzazione di un nuovo Parco Eolico della potenza complessiva di 59,4 MW, con l’installazione di n. 9 aerogeneratori da 6,6 MW con relative opere di connessione."
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1160886",
+    "page": 174,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "procedura 11060): Progetto di un impianto agrivoltaico denominato \"Piombino\" della potenza di"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 330 giorni (circa 11 mesi) (2), 32 settimane (circa 7 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1160886",
+    "page": 324,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "monitoraggio ante operam. Per quanto riguarda il sollevamento delle polveri, la durata della fase di cantiere prevista è di 18 mesi; tale durata è comprensiva della fase di montaggio degli aerogeneratori e la loro messa "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Toscana",
+  "provincia": "LI",
+  "comuni": [
+   "Campiglia Marittima",
+   "Piombino",
+   "Suvereto"
+  ],
+  "coordinate": {
+   "lat": 43.02129,
+   "lon": 10.6814,
+   "tipo": "centro della tavola georeferenziata di progetto (28 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1160832",
+    "page": 2,
+    "document": "Planimentria ubicazione indagini geologiche - ubicazione",
+    "excerpt": "Planimentria ubicazione indagini geologiche - ubicazione"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=43.02129,10.68140",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Pellestrina S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "pellestrinawindsrl@legalmail.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1248609",
+      "page": 1,
+      "document": "Richiesta integrazioni della Regione Toscana, Giunta Regionale del 17/04/2025 - Progetto di un impianto eolico denominato \"Pellestrina Wind\" di potenza complessiva pari a 59,4 MW da realizzare in Loca",
+      "excerpt": "Alla Società Pellestrina Wind S.r.l. pellestrinawindsrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10918"
+   }
+  },
+  {
+   "name": "Ing. Laura Maria Conti",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1160886",
+    "page": 1,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "Progettista Ing. Laura Maria Conti – Ordine Ing. Prov. Pavia n.1726"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Montana S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10414270156",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Angelo Carlo Fumagalli 6 20143 Milano Mi",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "mastio@montanambiente.com",
+     "occurrences": 294,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1160837",
+      "page": 28,
+      "document": "Studio degli effetti di shadow-flickering",
+      "excerpt": "0254118173 Andrea Mastio / mastio@montanambiente.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "025418173",
+     "occurrences": 38,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1160895",
+      "page": 1,
+      "document": "Assetto Orografico",
+      "excerpt": "Montana S.p.A Tel. +39.02.5418173"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Concrete S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0498754720",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1160841",
+      "page": 25,
+      "document": "Relazione strutture",
+      "excerpt": "http://www.concrete.it Rivenditore: CONCRETE SRL - Via della Pieve 19 - 35121 Padova - tel.049-8754720"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "4 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "PROGETTAZIONE ESECUTIVA",
+    "start": 0.0,
+    "end": 0.87,
+    "level": 0,
+    "summary": false,
+    "duration": "15 g"
+   },
+   {
+    "name": "indagini",
+    "start": 0.0,
+    "end": 0.23,
+    "level": 0,
+    "summary": false,
+    "duration": "4 g"
+   },
+   {
+    "name": "redazione progetto",
+    "start": 0.17,
+    "end": 0.87,
+    "level": 0,
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "ESECUZIONE LAVORI",
+    "start": 0.81,
+    "end": 3.86,
+    "level": 0,
+    "summary": false,
+    "duration": "53 g"
+   },
+   {
+    "name": "adeguamento viabilità esistente",
+    "start": 0.81,
+    "end": 0.92,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "approvigionamento materiali",
+    "start": 0.86,
+    "end": 2.25,
+    "level": 0,
+    "summary": false,
+    "duration": "24 g"
+   },
+   {
+    "name": "Realizzazione piste e piazzole",
+    "start": 0.92,
+    "end": 1.85,
+    "level": 0,
+    "summary": false,
+    "duration": "16 g"
+   },
+   {
+    "name": "pista VNT01",
+    "start": 0.92,
+    "end": 0.98,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT01",
+    "start": 0.98,
+    "end": 1.1,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista VNT02",
+    "start": 1.03,
+    "end": 1.15,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola VNT02",
+    "start": 1.09,
+    "end": 1.21,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista VNT03",
+    "start": 1.15,
+    "end": 1.27,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola VNT03",
+    "start": 1.21,
+    "end": 1.33,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista VNT04",
+    "start": 1.26,
+    "end": 1.33,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT04",
+    "start": 1.26,
+    "end": 1.38,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista VNT05",
+    "start": 1.32,
+    "end": 1.38,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT05",
+    "start": 1.32,
+    "end": 1.44,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista VNT06",
+    "start": 1.38,
+    "end": 1.44,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT06",
+    "start": 1.38,
+    "end": 1.5,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista VNT07",
+    "start": 1.44,
+    "end": 1.56,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola VNT07",
+    "start": 1.5,
+    "end": 1.62,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista VNT08",
+    "start": 1.55,
+    "end": 1.67,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola VNT08",
+    "start": 1.61,
+    "end": 1.73,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista VNT09",
+    "start": 1.67,
+    "end": 1.79,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola VNT09",
+    "start": 1.73,
+    "end": 1.85,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Realizzazione fondazioni",
+    "start": 1.21,
+    "end": 2.48,
+    "level": 0,
+    "summary": false,
+    "duration": "22 g"
+   },
+   {
+    "name": "fondazione VNT01",
+    "start": 1.21,
+    "end": 1.67,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione VNT02",
+    "start": 1.32,
+    "end": 1.79,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione VNT03",
+    "start": 1.44,
+    "end": 1.9,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione VNT04",
+    "start": 1.55,
+    "end": 2.02,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione VNT05",
+    "start": 1.67,
+    "end": 2.13,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione VNT06",
+    "start": 1.78,
+    "end": 2.25,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione VNT07",
+    "start": 1.9,
+    "end": 2.37,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione VNT09",
+    "start": 2.01,
+    "end": 2.48,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "Montaggio torri",
+    "start": 1.55,
+    "end": 2.6,
+    "level": 0,
+    "summary": false,
+    "duration": "18 g"
+   },
+   {
+    "name": "Montaggio torre VNT01",
+    "start": 1.55,
+    "end": 1.67,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre VNT02",
+    "start": 1.67,
+    "end": 1.79,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre VNT03",
+    "start": 1.78,
+    "end": 1.9,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre VNT04",
+    "start": 1.9,
+    "end": 2.02,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre VNT05",
+    "start": 2.01,
+    "end": 2.13,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre VNT06",
+    "start": 2.13,
+    "end": 2.25,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre VNT07",
+    "start": 2.25,
+    "end": 2.37,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre VNT08",
+    "start": 2.36,
+    "end": 2.48,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre VNT09",
+    "start": 2.48,
+    "end": 2.6,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Posa cavi",
+    "start": 0.81,
+    "end": 3.63,
+    "level": 0,
+    "summary": false,
+    "duration": "56 g"
+   },
+   {
+    "name": "connessioni interne al parco",
+    "start": 0.81,
+    "end": 3.52,
+    "level": 0,
+    "summary": false,
+    "duration": "54 g"
+   },
+   {
+    "name": "connessione cabine Utente÷SE",
+    "start": 3.51,
+    "end": 3.63,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Opere per connessione RTN",
+    "start": 1.21,
+    "end": 3.86,
+    "level": 0,
+    "summary": false,
+    "duration": "50 g"
+   },
+   {
+    "name": "Ripristini e dismissione cantiere",
+    "start": 2.59,
+    "end": 3.57,
+    "level": 0,
+    "summary": false,
+    "duration": "17 g"
+   },
+   {
+    "name": "strada esercizio VNT01",
+    "start": 2.59,
+    "end": 2.65,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT01",
+    "start": 2.65,
+    "end": 2.71,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio VNT02",
+    "start": 2.71,
+    "end": 2.77,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT02",
+    "start": 2.76,
+    "end": 2.83,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio VNT03",
+    "start": 2.82,
+    "end": 2.88,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT03",
+    "start": 2.88,
+    "end": 2.94,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio VNT04",
+    "start": 2.94,
+    "end": 3.0,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT04",
+    "start": 3.0,
+    "end": 3.06,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio VNT05",
+    "start": 3.05,
+    "end": 3.12,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT05",
+    "start": 3.11,
+    "end": 3.17,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio VNT06",
+    "start": 3.17,
+    "end": 3.23,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT06",
+    "start": 3.23,
+    "end": 3.29,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio VNT07",
+    "start": 3.28,
+    "end": 3.35,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT07",
+    "start": 3.34,
+    "end": 3.4,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio VNT08",
+    "start": 3.4,
+    "end": 3.46,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT08",
+    "start": 3.46,
+    "end": 3.52,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "strada esercizio VNT09",
+    "start": 3.51,
+    "end": 3.57,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola VNT09",
+    "start": 3.57,
+    "end": 3.63,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "COMMISIONING E AVVIAMENTO",
+    "start": 2.48,
+    "end": 4.15,
+    "level": 0,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Commisioning, test e collaudi",
+    "start": 2.48,
+    "end": 4.04,
+    "level": 0,
+    "summary": false,
+    "duration": "28 g"
+   },
+   {
+    "name": "Start up",
+    "start": 4.03,
+    "end": 4.15,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   }
+  ],
+  "unit": "month",
+  "months": 4.15,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1160842",
+   "page": 3,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "18",
+     "start": 3.923,
+     "end": 4.154
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 330 giorni (circa 11 mesi) (2), 32 settimane (circa 7 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1160886",
+    "page": 324,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "monitoraggio ante operam. Per quanto riguarda il sollevamento delle polveri, la durata della fase di cantiere prevista è di 18 mesi; tale durata è comprensiva della fase di montaggio degli aerogeneratori e la loro messa "
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1160842"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 560,
+  "pagine": 3743,
+  "completa": false,
+  "da_leggere": 260
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Pellestrina S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 59.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CAMPIGLIA MARITTIMA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Toscana",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "423 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
