@@ -5,14 +5,14 @@
  "title": "Progetto Parco Eolico \"Sibilla\" per una potenza complessiva di 64,80 MW, da installare nei comuni di Montalto di Castro (VT) e Canino (VT) in località \"Parco San Nicola e Villa Abbado\"",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9660",
  "source": "mase",
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
    "value": "64,8 MW",
-   "sub": null,
+   "sub": "Suddivisa in 3 lotti",
    "source": {
     "document": "titolo del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9660",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "9",
    "status": "da documenti",
-   "sub": "7,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 8 (17), 16 (8), 4 (4)",
+   "sub": "7,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 8 (31), 16 (16), 12 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/813776",
     "page": 1,
@@ -33,11 +33,36 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1440881",
+    "page": 3,
+    "document": "Integrazioni del 02/10/2026 - Nota Spostamento_T06_con allegati",
+    "excerpt": "il nuovo posizionamento della T06 insiste un progetto agrivoltaico denominato “Solare"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "4,5 MW / 20 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 27,6 MW (2), 15 MW (2), 10 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/876931",
+    "page": 32,
+    "document": "Richiesta integrazioni della Regione Toscana - DIREZIONE AMBIENTE ED ENERGIA",
+    "excerpt": "RTN, integrato da un sistema di accumulo avente una potenza nominale complessiva di 4,5 MW, da realizzarsi nel Comune di Montalto di Castro (VT), in località Vaccareccia. Progetto PNIEC, attivata dalla Società Ergon20 sr"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "18 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1284679",
     "page": 79,
@@ -92,6 +117,17 @@
       "page": 9,
       "document": "Integrazioni del 02/10/2026 - Nota Spostamento_T06_con allegati",
       "excerpt": "------------------- Serial ID: Jul-15-2026 15:42:50 3F91417C.03FD281C.71D18285.10251F0E.posta-certificata@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0302056980",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/813711",
+      "page": 4,
+      "document": "Stima di producibilità dell'impianto",
+      "excerpt": "- Via Matteotti, 311 – SCALA P – Int.10 – 25063 Gardone Val Trompia (BS) Tel. 030 2056980 – Fax 030 831100"
      }
     }
    ],
@@ -158,7 +194,121 @@
    }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "TEN Project S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01465940623",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Localita' Chianarile 82010 San Martino Sannita Bn",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "nuzzolo@tenproject.it",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/813703",
+      "page": 3,
+      "document": "Piano sicurezza e coordinamento + allegati - Impianto Eolico",
+      "excerpt": "Tel.: 39 0824 337144 - Fax: 0824 49315 E-Mail: nuzzolo@tenproject.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/813711",
+      "page": 4,
+      "document": "Stima di producibilità dell'impianto",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Iberdrola Renovables Italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "iberdrolarenovablesitalia@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338208",
+      "page": 58,
+      "document": "Parere della Regione Toscana - Direzione Tutela dell'Ambiente ed Energia -Settore Valutazione Impatto Ambientale in data 22/12/2025",
+      "excerpt": "IBERDROLA RENOVABLES ITALIA SPA iberdrolarenovablesitalia@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "gpavin@iberdrola.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338208",
+      "page": 67,
+      "document": "Parere della Regione Toscana - Direzione Tutela dell'Ambiente ed Energia -Settore Valutazione Impatto Ambientale in data 22/12/2025",
+      "excerpt": "Email gpavin@iberdrola.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ergon 20 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ergon20@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338208",
+      "page": 58,
+      "document": "Parere della Regione Toscana - Direzione Tutela dell'Ambiente ed Energia -Settore Valutazione Impatto Ambientale in data 22/12/2025",
+      "excerpt": "ERGON 20 S.R.L. ergon20@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
@@ -717,8 +867,8 @@
   },
   "duration": {
    "text": "18 mesi",
-   "status": "da documenti",
-   "hint": null,
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1284679",
     "page": 79,
@@ -747,9 +897,9 @@
  },
  "documentazione": {
   "documenti": 367,
-  "pagine": 3785,
-  "completa": false,
-  "da_leggere": 67
+  "pagine": 6452,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -780,8 +930,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "316 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "382 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
