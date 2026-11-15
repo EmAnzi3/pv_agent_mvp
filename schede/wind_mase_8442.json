@@ -5,7 +5,7 @@
  "title": "Progetto per realizzazione di un impianto eolico, denominato \"Montemilone Wind\", composto da n. 11 aerogeneratori di potenza nominale pari a 6 MW, per una potenza complessiva di 66 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Montemilone (PZ).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8442",
  "source": "mase",
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "11",
    "status": "da verificare",
-   "sub": "6,00 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 3 (21), 2 (21), 10 (15)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 2 (24), 3 (22), 10 (19)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/701572",
     "page": 1,
@@ -33,11 +33,36 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/852216",
+    "page": 7,
+    "document": "Osservazioni della società Winderg S.r.L.",
+    "excerpt": "comuni di Montemilone (PZ) e Venosa (PZ), denominato “Agrivoltaico Venosa Boreano”, codice pratica"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "10 MW / 30 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 15 MW (2), 5,1 MW (1), 30 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1166374",
+    "page": 8,
+    "document": "Integrazioni del 27/09/2024 - BENESTARE STAZIONE UTENTE_EGP_Progetto MONTEMILONE + OPERE RTN",
+    "excerpt": "e) SINERGIA GP21 intende realizzare un impianto fotovoltaico della potenza di 16.958 kWac integrato con sistema di accumulo da 10.000 kW per una potenza complessiva in immissione sulla RTN di 26.958 kWac (\"impianto Siner"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "56 settimane (circa 13 mesi)",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/620218",
     "page": 222,
@@ -55,7 +80,7 @@
   "coordinate": {
    "lat": 41.01267,
    "lon": 15.98022,
-   "tipo": "coordinate del sito dichiarate negli elaborati (28 riferimenti concordi)",
+   "tipo": "coordinate del sito dichiarate negli elaborati (29 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1166366",
     "page": 9,
@@ -124,6 +149,25 @@
     "document": "INQUADRAMENTO TERRITORIALE DELLE OPERE RTN SU ORTOFOTO",
     "excerpt": "Progettisti"
    }
+  },
+  {
+   "name": "Geol. Bartolo Romaniello",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/620165",
+    "page": 18,
+    "document": "RELAZIONE GEOLOGICA",
+    "excerpt": "Il Geologo"
+   }
   }
  ],
  "altri_soggetti": [
@@ -166,6 +210,126 @@
    }
   },
   {
+   "name": "Winderg S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "04702520968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Larga 8 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "winderg@pecgiambelli.it",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1166374",
+      "page": 1,
+      "document": "Integrazioni del 27/09/2024 - BENESTARE STAZIONE UTENTE_EGP_Progetto MONTEMILONE + OPERE RTN",
+      "excerpt": "WINDERG S.R.L. winderg@pecgiambelli.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "direzione@winderg.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/852216",
+      "page": 1,
+      "document": "Osservazioni della società Winderg S.r.L.",
+      "excerpt": "Winderg S.r.l. – Via Trento, 64 – 20871 Vimercate (MB) - Tel 039.6026270 - Fax 039.6026222 –Cap. Soc. €. 100.000,00i.v. Reg. Imprese Milano Monza Brianza Lodi, C.F. e P.IVA 04702520968 -direzione@winderg.it –PEC winderg@"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "luca.mariani@winderg.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/852216",
+      "page": 7,
+      "document": "Osservazioni della società Winderg S.r.L.",
+      "excerpt": "Per ogni comunicazione, il referente di Winderg S.r.l. è il dott. Luca Mariani (Tel: 039/6026270; Cell. 340/7751934; mail: luca.mariani@winderg.it – direzione@winderg.it)."
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0396026270",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/852216",
+      "page": 1,
+      "document": "Osservazioni della società Winderg S.r.L.",
+      "excerpt": "Winderg S.r.l. – Via Trento, 64 – 20871 Vimercate (MB) - Tel 039.6026270 - Fax 039.6026222 –Cap. Soc. €. 100.000,00i.v."
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3407751934",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/852216",
+      "page": 7,
+      "document": "Osservazioni della società Winderg S.r.L.",
+      "excerpt": "Per ogni comunicazione, il referente di Winderg S.r.l. è il dott. Luca Mariani (Tel: 039/6026270; Cell. 340/7751934;"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "BEL Team S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02061000762",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Papa Giovanni Paolo Primo 14 85024 Lavello Pz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "belteam@pec.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/899013",
+      "page": 1,
+      "document": "Osservazioni della Bel Team srl in data 01/09/2023",
+      "excerpt": "C.C.I.A.A della Basilicata - C.F. e Partita IVA IT_02061000762 R.E.A. PZ203536 Tel. +39 0972.88567 e Fax +39 0972.86090 — pec: belteam@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3393713228",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1439739",
+      "page": 1,
+      "document": "Osservazioni della società BEL TEAM S.r.l., in data 15/09/2026.",
+      "excerpt": "C.C.I.A.A di Milano Monza Brianza e Lodi - C.F. e Partita IVA 02061000762 R.E.A. MI2809378 Tel. +39 3393713228 e Fax +39 0972209167– pec: belteam@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "097288567",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/899013",
+      "page": 1,
+      "document": "Osservazioni della Bel Team srl in data 01/09/2023",
+      "excerpt": "C.C.I.A.A della Basilicata - C.F. e Partita IVA IT_02061000762 R.E.A. PZ203536 Tel. +39 0972.88567 e Fax +39 0972.86090 — pec: belteam@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Dr. Geol. Lorenzo Borselli",
    "kind": "persona",
    "roles": [],
@@ -184,6 +348,41 @@
       "page": 46,
       "document": "Integrazioni del 16/06/2023 - A.2.2 Relazione Geotecnica",
       "excerpt": "*UASLP, San Luis Potosi, Mexico e‐mail: lborselli@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "NP Basilicata 1 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "npbasilicata1@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1239480",
+      "page": 1,
+      "document": "Osservazioni della Società NP Basilicata 1 S.r.l., in data 2/04/2025",
+      "excerpt": "NP Basilicata 1 S.r.l. | PEC: npbasilicata1@legalmail.it | Sede Legale: Galleria Passarella, 2 - 20122 Milano"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "eugenio.guerra@starlight-energy.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1239480",
+      "page": 2,
+      "document": "Osservazioni della Società NP Basilicata 1 S.r.l., in data 2/04/2025",
+      "excerpt": "Passarella, 2 – 20122 Milano (MI), C.F. e P. IVA ed Iscrizione al Registro delle Imprese della CCIAA di Milano n. 13004260967– REA MI-2697619, e-mail eugenio.guerra@starlight-energy.com, PEC"
      }
     }
    ],
@@ -243,30 +442,6 @@
       "page": 1,
       "document": "Integrazioni del 27/09/2024 - BENESTARE STAZIONE UTENTE_EGP_Progetto MONTEMILONE + OPERE RTN",
       "excerpt": "SINERGIA GP21 S.R.L. sinergia.gp21@pec.it"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Winderg S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "winderg@pecgiambelli.it",
-     "occurrences": 2,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1166374",
-      "page": 1,
-      "document": "Integrazioni del 27/09/2024 - BENESTARE STAZIONE UTENTE_EGP_Progetto MONTEMILONE + OPERE RTN",
-      "excerpt": "WINDERG S.R.L. winderg@pecgiambelli.it"
      }
     }
    ],
@@ -513,7 +688,7 @@
   "unit": "month",
   "months": 12.04,
   "source": {
-   "url": "https://va.mite.gov.it/File/Documento/620187",
+   "url": "https://va.mite.gov.it/File/Documento/620215",
    "page": 2,
    "document": "CRONOPROGRAMMA DELLE ATTIVITÀ RACCORDI",
    "excerpt": ""
@@ -586,8 +761,8 @@
   },
   "duration": {
    "text": "56 settimane (circa 13 mesi)",
-   "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 5 giorni (1), 28 giorni (1), 18 mesi (1)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2), 5 giorni (1), 28 giorni (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/620218",
     "page": 222,
@@ -619,8 +794,8 @@
     "url": "https://va.mite.gov.it/File/Documento/620186"
    },
    {
-    "document": "CRONOPROGRAMMA DELLE ATTIVITÀ SE RTN",
-    "url": "https://va.mite.gov.it/File/Documento/620214"
+    "document": "CRONOPROGRAMMA DELLE ATTIVITÀ RACCORDI",
+    "url": "https://va.mite.gov.it/File/Documento/620187"
    }
   ],
   "durate_fasi": [],
@@ -628,9 +803,9 @@
  },
  "documentazione": {
   "documenti": 524,
-  "pagine": 3837,
-  "completa": false,
-  "da_leggere": 224
+  "pagine": 4130,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -665,8 +840,16 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "115 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "126 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
