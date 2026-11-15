@@ -5,7 +5,7 @@
  "title": "Realizzazione ed esercizio di un impianto fotovoltaico a terra della potenza di 15,73 MWp ed opere connesse in località “Termine”.",
  "source_url": "https://regionelazio.box.com/v/VIA-009-2024",
  "source": "lazio",
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "26,04 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 45 ha (4)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 45 ha (8)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557120877376",
     "page": 11,
@@ -61,13 +61,26 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "6,38 MW",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 15,772 MW (10)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1556997045467",
     "page": 2,
     "document": "Hergo_Renewables_Rep.9_2024_Richiesta_di_integrazione_timbrato.pdf",
     "excerpt": "di circa 27.588.042 kWh/annui. L’impianto sarà inoltre integrato con una unità di accumulo BESS di potenza pari a 6,38 MW. Il terreno a disposizione del Proponente ha una destinazione d’uso agricola ed un’estensione comp"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557118647976",
+    "page": 28,
+    "document": "Doc.11_PGI1_Prev.Connessione_Accettazione-Voltura.pdf.p7m",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
    }
   }
  ],
@@ -78,9 +91,9 @@
    "Pignataro Interamna"
   ],
   "coordinate": {
-   "lat": 41.45205,
-   "lon": 13.75389,
-   "tipo": "coordinate del sito dichiarate negli elaborati (13 riferimenti concordi)",
+   "lat": 41.45147,
+   "lon": 13.75464,
+   "tipo": "coordinate del sito dichiarate negli elaborati (44 riferimenti concordi)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557116850980",
     "page": 10,
@@ -88,7 +101,7 @@
     "excerpt": "Comune di Villa Santa Lucia (FR) in Loc. Colle San Francesco. Le Coordinate geografiche del sito sono: Lat. 41.452050° Nord; Long. 13.753889° Est."
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.45205,13.75389",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.45147,13.75464",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -112,12 +125,23 @@
     {
      "type": "PEC",
      "value": "hergorenewables@legalmail.it",
-     "occurrences": 31,
+     "occurrences": 44,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1504595716250",
       "page": 1,
       "document": "Allegato_ Pignataro Interamna Hergo Renovables bis.pdf",
       "excerpt": "Alla HERGO RENEWABLES S.p.A. hergorenewables@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "m.mescia@hergorenewables.com",
+     "occurrences": 4,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557121051005",
+      "page": 1,
+      "document": "240321_PGI1_Istanza AU.pdf.p7m",
+      "excerpt": "sita nel Comune di MILANO (MI), in Via PRIVATA MARIA TERESA n. 8, CAP 20123, Tel +39 02.36570800, e-mail: m.mescia@hergorenewables.com, indirizzo di posta elettronica certificata:"
      }
     }
    ],
@@ -125,13 +149,13 @@
     "document": "scheda ufficiale del procedimento",
     "url": "https://regionelazio.box.com/v/VIA-009-2024"
    }
-  }
- ],
- "altri_soggetti": [
+  },
   {
    "name": "Farenti S.r.l.",
    "kind": "società",
-   "roles": [],
+   "roles": [
+    "Progettista"
+   ],
    "vat": "02604750600",
    "vat_group": false,
    "verified": true,
@@ -141,7 +165,7 @@
     {
      "type": "E-mail",
      "value": "piero@farenti.it",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557117950156",
       "page": 3,
@@ -152,7 +176,7 @@
     {
      "type": "E-mail",
      "value": "sviluppo@farenti.it",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557117950156",
       "page": 4,
@@ -163,7 +187,7 @@
     {
      "type": "Telefono",
      "value": "07761805460",
-     "occurrences": 35,
+     "occurrences": 115,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1490129687749",
       "page": 1,
@@ -173,10 +197,14 @@
     }
    ],
    "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557121051005",
+    "page": 2,
+    "document": "240321_PGI1_Istanza AU.pdf.p7m",
+    "excerpt": "Il Progettista"
    }
-  },
+  }
+ ],
+ "altri_soggetti": [
   {
    "name": "Dott. Geol. Davide Casinelli",
    "kind": "persona",
@@ -190,7 +218,7 @@
     {
      "type": "PEC",
      "value": "davide.casinelli@pec.geologilazio.it",
-     "occurrences": 1,
+     "occurrences": 4,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557118463724",
       "page": 1,
@@ -201,7 +229,7 @@
     {
      "type": "E-mail",
      "value": "casinellidavide@yahoo.it",
-     "occurrences": 26,
+     "occurrences": 104,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557118463724",
       "page": 2,
@@ -212,7 +240,7 @@
     {
      "type": "Telefono",
      "value": "3297159323",
-     "occurrences": 26,
+     "occurrences": 54,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557118463724",
       "page": 2,
@@ -238,7 +266,7 @@
      "value": "0236570",
      "occurrences": 6,
      "source": {
-      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_2303781387960",
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_2509962584761",
       "page": 1,
       "document": "PGI1_200618_Enti_RichPubblEsproprio.pdf",
       "excerpt": "Società di Eni Plenitude S.p.A. Società Benefit Tel. +39 02 365 70 800"
@@ -270,6 +298,30 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Hergo Solare Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "hsisrl@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557118647976",
+      "page": 34,
+      "document": "Doc.11_PGI1_Prev.Connessione_Accettazione-Voltura.pdf.p7m",
+      "excerpt": "20123 MILANO (MI) hsisrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -277,7 +329,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": null,
+  "durata_cantiere": "18 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -401,8 +453,8 @@
   },
   "duration": {
    "text": "75 giorni (circa 2 mesi)",
-   "status": "da documenti",
-   "hint": null,
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-009-2024&file_id=f_1557122348611",
     "page": 11,
@@ -443,9 +495,9 @@
  },
  "documentazione": {
   "documenti": 1206,
-  "pagine": 1197,
+  "pagine": 2749,
   "completa": false,
-  "da_leggere": 1086
+  "da_leggere": 967
  },
  "confronto": [
   {
@@ -480,8 +532,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "66 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "149 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
