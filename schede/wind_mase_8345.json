@@ -1,0 +1,456 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_8345",
+ "title": "Progetto di impianto eolico composto da 10 aerogeneratori da 6 MW ciascuno, per un totale di 60 MW, con 30 MW di sistema di accumulo, da realizzarsi nei comuni di Mesagne (BR), Torre Santa Susanna (BR) e Latiano (BR).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8345",
+ "source": "mase",
+ "updated": "2026-11-15",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "6 MW",
+   "sub": "Valore ricorrente negli elaborati (23 volte); il titolo riporta 60 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/602230",
+    "page": 1,
+    "document": "Avviso al Pubblico del 24/02/2022",
+    "excerpt": "alla linea RTN a 380 kV “Brindisi-Taranto N2” È prevista la nuova realizzazione di n. 10 aerogeneratori da 6 MW con una potenza complessiva pari a 60 MW, e di un sistema di accumulo integrato con una potenza di 30 MW. La"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "0,60 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 36 (10), 3 (9), 2 (9)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/602230",
+    "page": 1,
+    "document": "Avviso al Pubblico del 24/02/2022",
+    "excerpt": "alla linea RTN a 380 kV “Brindisi-Taranto N2” È prevista la nuova realizzazione di n. 10 aerogeneratori da 6 MW con una potenza complessiva pari a 60 MW, e di un sistema di accumulo integrato con una potenza di 30 MW. La"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "30 MW / 120 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 60 MW (290), 90 MW (2), 48,7 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/602230",
+    "page": 1,
+    "document": "Avviso al Pubblico del 24/02/2022",
+    "excerpt": "dell’art.23 del D.Lgs.152/2006, istanza per l’avvio del procedimento di Valutazione di Impatto Ambientale del progetto di un “Impianto eolico della potenza di 60 MW wind + 30 MW BESS Comuni di Mesagne e Torre Santa Susan"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "20 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 8 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/601925",
+    "page": 207,
+    "document": "STUDIO DI IMPATTO AMBIENTALE",
+    "excerpt": "4.3.2. Layout di cantiere Si prevede un periodo di durata delle attività di cantiere di circa 20 mesi. Per gli impatti di cantiere, saranno adottate le soluzioni tecnico-logistiche più appropriate,"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BR",
+  "comuni": [
+   "Mesagne",
+   "Torre Santa Susanna",
+   "Latiano"
+  ],
+  "coordinate": {
+   "lat": 40.54075,
+   "lon": 17.78582,
+   "tipo": "centro della tavola georeferenziata di progetto (30 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/601855",
+    "page": 82,
+    "document": "RELAZIONE GEOLOGICA E SISMICA",
+    "excerpt": "RELAZIONE GEOLOGICA E SISMICA"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.54075,17.78582",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Enel Green Power Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/654686",
+    "page": 3,
+    "document": "Integrazioni del 27/06 /2022 - Proposta di piano di indagini archeologiche",
+    "excerpt": "La società proponente è Enel Green Power Italia Srl, una controllata di Enel Green Power S.p.A. (EGP)."
+   }
+  },
+  {
+   "name": "Enel Green Power Puglia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8345"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "HEPV04 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02523220222",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Della Rena 20 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "hepv04srl@pec.it",
+     "occurrences": 35,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601890",
+      "page": 1,
+      "document": "RACCORDI - ELENCO ELABORATI",
+      "excerpt": "| IN O4 Tel: +39.0461.1732700 - Fax: +39.0461.1732799 hepv04srl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@studioideaassociati.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601886",
+      "page": 1,
+      "document": "Inquadramento SE TERNA e area di condivisione Sottostazioni Utenti su CTR",
+      "excerpt": "pec 4ideasrl@pec.it info@studioideaassociati.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "04611732700",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601889",
+      "page": 1,
+      "document": "Impianto di raccolta, trattamento e smaltimento acque meteoriche su catastale SE TERNA e area di condivisione Sottostazioni Utenti attivi",
+      "excerpt": "tel +39 0461 1732700 - fax +39 0461 1732799"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Ing. Fabio Calcarella",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fabio.calcarella@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601886",
+      "page": 1,
+      "document": "Inquadramento SE TERNA e area di condivisione Sottostazioni Utenti su CTR",
+      "excerpt": "Tel. +39 0832 1798355 fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "fabio.calcarella@gmail.com",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601886",
+      "page": 1,
+      "document": "Inquadramento SE TERNA e area di condivisione Sottostazioni Utenti su CTR",
+      "excerpt": "Tel. +39 0832 1798355 fabio.calcarella@gmail.com - fabio.calcarella@ingpec.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@heliopolis.eu",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601887",
+      "page": 1,
+      "document": "Inquadramento SE TERNA e area di condivisione Sottostazioni Utenti su Catastale",
+      "excerpt": "fabio.calcarella@gmali.com - fabio.calcarella@ingpgf 49 tel +39 0461 1732700 - fax +39 0461 1732799 Direttore Tecnico: Dott. Ing. Fabio CALCARELLA e.mail: info@heliopolis.eu - pec: hepv04srl@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "4IDEA S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "4ideasrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601902",
+      "page": 1,
+      "document": "Relazione di trattamento acque meteoriche di prima pioggia SE TERNA e area di condivisione Sottostazioni Utenti attivi",
+      "excerpt": "tel +39 0832 760144 pec 4ideasrl@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0832760144",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601887",
+      "page": 1,
+      "document": "Inquadramento SE TERNA e area di condivisione Sottostazioni Utenti su Catastale",
+      "excerpt": "Via G. Brunetti, 50 - 73019 Trepuzzi tel +39 0832 760144"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "08321798355",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601886",
+      "page": 1,
+      "document": "Inquadramento SE TERNA e area di condivisione Sottostazioni Utenti su CTR",
+      "excerpt": "Via V. M. STAMPACCHIA, 48 - 73100 Lecce Tel. +39 0832 1798355"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "SCS Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@scsingegneria.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/601865",
+      "page": 2,
+      "document": "INDAGINE ACUSTICO-AMBIENTALE PREVENTIVA NELL'AREA D'INTERVENTO",
+      "excerpt": "VIA F.DO AYROLDI, 10–72017 OSTUNI (BR) – TEL/FAX:0831336390 E-MAIL: INFO@SCSINGEGNERIA.IT"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "7 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Realizzazione",
+    "start": 0.42,
+    "end": 2.92,
+    "level": 0,
+    "summary": false,
+    "duration": "8 sett."
+   },
+   {
+    "name": "Montaggio SPCC",
+    "start": 3.94,
+    "end": 5.29,
+    "level": 0,
+    "summary": false,
+    "duration": "4 sett."
+   },
+   {
+    "name": "Montaggio servizi",
+    "start": 5.28,
+    "end": 6.62,
+    "level": 0,
+    "summary": false,
+    "duration": "4 sett."
+   }
+  ],
+  "unit": "month",
+  "months": 6.62,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/601904",
+   "page": 31,
+   "document": "Relazione Tecnica Stazione RTN",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "20 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 giorni (2), 5 giorni (2), 8 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/601925",
+    "page": 207,
+    "document": "STUDIO DI IMPATTO AMBIENTALE",
+    "excerpt": "4.3.2. Layout di cantiere Si prevede un periodo di durata delle attività di cantiere di circa 20 mesi. Per gli impatti di cantiere, saranno adottate le soluzioni tecnico-logistiche più appropriate,"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 142,
+  "pagine": 3449,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Enel Green Power Puglia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 60.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MESAGNE",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BR",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 60 MW, gli elaborati 6 MW"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "88 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
