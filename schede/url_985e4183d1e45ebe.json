@@ -1,0 +1,860 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "url:985e4183d1e45ebe",
+ "title": "Progetto di un impianto fotovoltaico di potenza pari a 12,66 MWp in località Levada nel territorio comunale di Concordia Sagittaria (VE).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8133",
+ "source": "mase",
+ "updated": "2026-11-16",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "12,66 MWp",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8133",
+    "excerpt": "12,66 MWp"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Tracker monoassiali",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1245598",
+    "page": 4,
+    "document": "CA 1 - 00 Appendice 2 F320RAKP001_3_Particolarità di impianto",
+    "excerpt": "monoassiali), con disposizione one portrait e con tecnologia backtracking."
+   }
+  },
+  {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "5,265 ha",
+   "status": "da documenti",
+   "sub": "",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/592776",
+    "page": 271,
+    "document": "A_EDISON_SIA_R00_signed",
+    "excerpt": "dell’impianto solare comprensive degli spazi tra una stringa e l’altra. Infatti la superficie occupata nel complesso dai pannelli sarà pari a 52.650,56 mq valore ottenuto considerando i pannelli in posizione orizzontale."
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "8 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (5), 12 mesi (2), 4 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1245615",
+    "page": 49,
+    "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+    "excerpt": "Il rilievo delle polveri in fase (cfr. § 6.1.3.1.1), come detto, sarà esteso a tutta la durata temporale del cantiere pari a 8 mesi. 6.1.6.2"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Veneto",
+  "provincia": "VE",
+  "comuni": [
+   "Portogruaro",
+   "Concordia Sagittaria"
+  ],
+  "coordinate": {
+   "lat": 45.75216,
+   "lon": 12.81087,
+   "tipo": "centro della tavola georeferenziata di progetto (88 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/592783",
+    "page": 1,
+    "document": "M06 - CORINE LAND COVER_signed",
+    "excerpt": "M06 - CORINE LAND COVER_signed"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=45.75216,12.81087",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Edison S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "08263330014",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rinnovabili@pec.edison.it",
+     "occurrences": 44,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1321735",
+      "page": 1,
+      "document": "Comunicazione VA esito valutazione",
+      "excerpt": "Alla Società Edison Rinnovabili SpA rinnovabili@pec.edison.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "asee@pec.edison.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1321735",
+      "page": 1,
+      "document": "Comunicazione VA esito valutazione",
+      "excerpt": "rinnovabili@pec.edison.it asee@pec.edison.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@edison.it",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/592778",
+      "page": 1,
+      "document": "M01 - COROGRAFIA 100.000_signed",
+      "excerpt": "Tel. 02 62228367 info@edison.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@studiocapellino.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/592779",
+      "page": 1,
+      "document": "M02 - COROGRAFIA 25.000_signed",
+      "excerpt": "Tel. 0174551247 info@studiocapellino.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0262228367",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/592778",
+      "page": 1,
+      "document": "M01 - COROGRAFIA 100.000_signed",
+      "excerpt": "20121 Milano (MI) Tel. 02 62228367"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0516428711",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245615",
+      "page": 1,
+      "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+      "excerpt": "20121 Milano (MI) Tel. 051 6428711"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8133"
+   }
+  },
+  {
+   "name": "Dott. Ing. Alberto Bonello",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "alberto.bonello@studiocapellino.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245615",
+      "page": 1,
+      "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+      "excerpt": "( 328-4541205 * alberto.bonello@studiocapellino.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "alberto.bonello@e3studio.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245611",
+      "page": 1,
+      "document": "CA 10 - T15.1 Piante e viste cabina di consegna_signed",
+      "excerpt": "j ENGINEERING ENVIRONMENTENERGY Dott. Ing. ALBERTO BONELLO | | È . n @ 328 45 41 205 alberto.bonello@e3studio.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1245624",
+    "page": 2,
+    "document": "CA 5 - SQ-PS-MOD-P06-01-RICHIESTA-CONC-PARERE-v2_edison_signed",
+    "excerpt": "Il tecnico/studio incaricato per la progettazione è Ing. Alberto Bonello/e3 Studio di Capellino e Associati con studio in comune di ______________"
+   }
+  },
+  {
+   "name": "Dott. Arch. Daniele Borgna",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "daniele.borgna@studiocapellino.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245615",
+      "page": 1,
+      "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+      "excerpt": "( 339-3131477 * daniele.borgna@studiocapellino.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "daniele.borgna@e3studio.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245611",
+      "page": 1,
+      "document": "CA 10 - T15.1 Piante e viste cabina di consegna_signed",
+      "excerpt": "| . 0@ i) 29 Dott. Arch. DANIELE BORGNA =% VA DI CUNEG i . ; o e @ 339 31 31 477 54 daniele.borgna@e3studio.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "borgna@esstudio.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245610",
+      "page": 1,
+      "document": "CA 10 - T07 Planimetria di progetto_signed",
+      "excerpt": "Dott. Arch. DANIELE BORGNA | 0 ‘ 339 31 31 477 © daniele borgna@eSstudio.it |"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1245608",
+    "page": 11,
+    "document": "CA 1 - 09 Dichiarazione DL",
+    "excerpt": "Il Direttore Lavori Arch. Daniele Borgna"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Eambiente S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03794570261",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Delle Industrie 5 30175 Venezia Ve",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gare.eambiente@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/592777",
+      "page": 132,
+      "document": "C_EDISON_VPIA_R00_signed",
+      "excerpt": "ricercasviluppog@eambiente. it gare.eambiente@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@eambiente.it",
+     "occurrences": 662,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245615",
+      "page": 2,
+      "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+      "excerpt": "Rev. 03 Tel: 041 5093820; Fax: 041 5093886; mailto: info@eambiente.it; PEC: eambiente.srl@sicurezzapostale.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "eambiente.srl@sicurezzapostale.it",
+     "occurrences": 653,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245615",
+      "page": 2,
+      "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+      "excerpt": "Rev. 03 Tel: 041 5093820; Fax: 041 5093886; mailto: info@eambiente.it; PEC: eambiente.srl@sicurezzapostale.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@eambientegroup.com",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245615",
+      "page": 1,
+      "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+      "excerpt": "* info@eambientegroup.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "contattaci@imqeambiente.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245616",
+      "page": 11,
+      "document": "CA 3 - 04_2024.11.27_Chiarimenti_Edison_PMA_signed",
+      "excerpt": "tel. (+39) 041 5093820 contattaci@imqeambiente.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Scotta S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03429380045",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Monviso 41 12020 Villafalletto Cn",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "scottaspa@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245602",
+      "page": 284,
+      "document": "CA 1 - 03 ASBUILT elettrodotto di connessione",
+      "excerpt": "Domicilio digitale/PEC scottaspa@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "tecnico@scotta.it",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245609",
+      "page": 1,
+      "document": "CA 10 - RI-01 Relazione lluminazione-integraz_signed",
+      "excerpt": " 0171 93 511  tecnico@scotta.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "giancarlo.moi@scotta.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245610",
+      "page": 1,
+      "document": "CA 10 - T07 Planimetria di progetto_signed",
+      "excerpt": "Dott. Ing. GIANCARLO MOI S C GT T, A ® 334 64 98 151 © giancarlo.moi@scotta.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "marco.basso@scotta.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245610",
+      "page": 1,
+      "document": "CA 10 - T07 Planimetria di progetto_signed",
+      "excerpt": "; n Dott. Arch. MARCO BASSO FILARE ARBUSTIVO DI = Pr = 7 x @ 344 18 10 761 ©2 marco.basso@scotta.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "giorgio.persico@scotta.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245610",
+      "page": 1,
+      "document": "CA 10 - T07 Planimetria di progetto_signed",
+      "excerpt": "Dott. Ing. PERSICO GIORGIO ® 0171 935 173 © giorgio.persico@scotta.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "diego.beltrando@scotta.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245610",
+      "page": 1,
+      "document": "CA 10 - T07 Planimetria di progetto_signed",
+      "excerpt": "AEREA ESISTENTE = tecnico@scotta.it ®@ 334 14 25 263 [3 diego.beltrando@scotta.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Tesar S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "00341260511",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Loc Chiaveretto 37B Fraz Baccano 52010 Subbiano Ar",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tesar.eu",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245602",
+      "page": 313,
+      "document": "CA 1 - 03 ASBUILT elettrodotto di connessione",
+      "excerpt": "Tel. +39-0575-317.1 - Fax +39-0575-317.201 e-mail: info@tesar.eu"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Tecnoelectra S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02220270280",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Galileo Galilei 11 35012 Camposampiero Pd",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnoelectrasrl.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245602",
+      "page": 212,
+      "document": "CA 1 - 03 ASBUILT elettrodotto di connessione",
+      "excerpt": "02220270280 con sede legale in Camposampiero (PD), Via Galileo Galiei, 11, CAP 35012 , Tel n. 049/9300756 Fax n. 049/9303747 E-mail: info@tecnoelectrasrl.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Arch. Ivano Garelli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "e3studio@legalmail.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245610",
+      "page": 1,
+      "document": "CA 10 - T07 Planimetria di progetto_signed",
+      "excerpt": "@ 0174 55 12 47 Dott. Arch. IVANO GARELLI Lx info@eSstudio.it I e3studio@legalmail.it ‘® 331 84 59 912 [3 ivano.garelli@e3studio.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ivano.garelli@studiocapellino.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245615",
+      "page": 1,
+      "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+      "excerpt": "( 331-8459912 * ivano.garelli@studiocapellino.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@esstudio.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245610",
+      "page": 1,
+      "document": "CA 10 - T07 Planimetria di progetto_signed",
+      "excerpt": "@ 0174 55 12 47 Dott. Arch. IVANO GARELLI Lx info@eSstudio.it I e3studio@legalmail.it ‘® 331 84 59 912 [3 ivano.garelli@e3studio.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ivano.garelli@e3studio.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245610",
+      "page": 1,
+      "document": "CA 10 - T07 Planimetria di progetto_signed",
+      "excerpt": "@ 0174 55 12 47 Dott. Arch. IVANO GARELLI Lx info@eSstudio.it I e3studio@legalmail.it ‘® 331 84 59 912 [3 ivano.garelli@e3studio.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "garelli@e3studio.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1215181",
+      "page": 1,
+      "document": "Integrazioni del 06/02/2025 - m1_modalita_di_misurazione",
+      "excerpt": "@ 017455 12 47 Dott. Arch. IVANO GARELLI E info@e3studio.it E e3studio@legalmail.it @ 33184 59 912 E ivano garelli@e3studio.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Ing. Antonio Capellino",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "antonio.capellino@ingpec.eu",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245615",
+      "page": 1,
+      "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+      "excerpt": "* info@studiocapellino.it * antonio.capellino@ingpec.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "antonio.capellino@e3studio.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1215181",
+      "page": 1,
+      "document": "Integrazioni del 06/02/2025 - m1_modalita_di_misurazione",
+      "excerpt": "a o” Dott. Ing. ANTONIO CAPELLINO iA oD @ 33565 60 172 © antonio.capellino@e3studio.it È"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "capellino@esstudio.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245612",
+      "page": 1,
+      "document": "CA 10 - T15.2 Pianta e viste cabina di trasformazione_signed",
+      "excerpt": "0.10 4 3 Poe Dott. Ing. ANTONIO CAPELLINO _ © © ® 335 65 60 172 © antonio. capellino@eSstudio.it = INGEGNER"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Alberto Balsamo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "alberto.balsamo@studiocapellino.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245615",
+      "page": 1,
+      "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+      "excerpt": "( 347-4097196 * alberto.balsamo@studiocapellino.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "alberto.balsamo@esstudio.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245610",
+      "page": 1,
+      "document": "CA 10 - T07 Planimetria di progetto_signed",
+      "excerpt": "DI CAPELLINO E ASSOCIATI ‘ 347 40 97 196 > alberto.balsamo@eSstudio.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sama S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3355309951",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245599",
+      "page": 44,
+      "document": "CA 1 - 00 PSC Imp FVT Concordia Sagittaria (VE)",
+      "excerpt": "20123 MILANO (MI) Cell. 335.5309951"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "TUV Rheinland LGA Products GmbH",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "service@de.tuv.comenertest",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245602",
+      "page": 320,
+      "document": "CA 1 - 03 ASBUILT elettrodotto di connessione",
+      "excerpt": "TUV Rheinland LGA Products GmbH, Tillystrasse 2, D-90431 Nurnberg / Contact: + 49 221 806 2477 email: service@de.tuv.comenertest@de.tuv.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Finarvedi S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "071781846",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1245605",
+      "page": 26,
+      "document": "CA 1 - 06 Certificati e schede tecniche componenti",
+      "excerpt": "26100 Cremona (CR) 60027 Osimo (AN) Cap. Soc. € 2.100.000,00 Tel: 071.781846 - 071.781196"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alla Società Moncada Energy Group S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "moncadaenergy@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613425",
+      "page": 1,
+      "document": "Richiesta integrazioni della documentazione - CTPNRR-PNIEC del 23/03/2022",
+      "excerpt": "Alla Società Moncada Energy Group S.r.l. moncadaenergy@pec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Decreto n. 276 del 19/10/2022",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1321736",
+     "page": 1,
+     "document": "Allegato alla Comunicazione VA esito valutazione - Parere MiC del 26/09/2025",
+     "excerpt": "CONSIDERATO che la Condizione Ambientale n. 1 del parere 2316-P del 09.08.2022 della Soprintendenza Speciale per il PNRR di cui al Decreto Direttoriale n. 276 del 19.10.2022, risulta ottemperata con determina del MASE pr"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di ottobre 2022",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1321736",
+     "page": 1,
+     "document": "Allegato alla Comunicazione VA esito valutazione - Parere MiC del 26/09/2025",
+     "excerpt": "CONSIDERATO che la Condizione Ambientale n. 1 del parere 2316-P del 09.08.2022 della Soprintendenza Speciale per il PNRR di cui al Decreto Direttoriale n. 276 del 19.10.2022, risulta ottemperata con determina del MASE pr"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di giugno 2023",
+    "dettaglio": "inizio stimato + durata del cantiere: 8 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1245615",
+     "page": 49,
+     "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+     "excerpt": "Il rilievo delle polveri in fase (cfr. § 6.1.3.1.1), come detto, sarà esteso a tutta la durata temporale del cantiere pari a 8 mesi. 6.1.6.2"
+    }
+   }
+  ],
+  "durata_cantiere": "8 mesi",
+  "autorizzazione": {
+   "atto": "Decreto n. 276",
+   "data": "19/10/2022",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1321736",
+    "page": 1,
+    "document": "Allegato alla Comunicazione VA esito valutazione - Parere MiC del 26/09/2025",
+    "excerpt": "CONSIDERATO che la Condizione Ambientale n. 1 del parere 2316-P del 09.08.2022 della Soprintendenza Speciale per il PNRR di cui al Decreto Direttoriale n. 276 del 19.10.2022, risulta ottemperata con determina del MASE pr"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "8 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (5), 12 mesi (2), 4 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1245615",
+    "page": 49,
+    "document": "CA 2_3_4_8_9_11_13 01_2023.08.04_E_EDISON_PMA_R03_signed",
+    "excerpt": "Il rilievo delle polveri in fase (cfr. § 6.1.3.1.1), come detto, sarà esteso a tutta la durata temporale del cantiere pari a 8 mesi. 6.1.6.2"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 17/06/2022 R11_CRONOPROGRAMMA_R00-signed",
+   "url": "https://va.mite.gov.it/File/Documento/654626"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Integrazioni del 17/06/2022 R11_CRONOPROGRAMMA_R00-signed",
+    "url": "https://va.mite.gov.it/File/Documento/654626"
+   },
+   {
+    "document": "R11_CRONOPROGRAMMA_R00-signed",
+    "url": "https://va.mite.gov.it/File/Documento/592745"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 274,
+  "pagine": 2332,
+  "completa": false,
+  "da_leggere": 154
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "EDISON S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 12.66,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "VENEZIA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "VE",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Veneto",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "814 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
