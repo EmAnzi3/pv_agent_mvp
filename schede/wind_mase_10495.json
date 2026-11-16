@@ -5,31 +5,44 @@
  "title": "Progetto di un impianto eolico denominato \"Tufaroli\", costituito da 10 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva di 60 MW, da realizzarsi nel Comune di Forenza (PZ) e Palazzo San Gervasio (PZ), con opere di connessione ricadenti nei medesimi comuni. Codice pratica MYTERNA n. 202300437.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10495",
  "source": "mase",
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
-   "status": "verificato",
-   "value": "60 MW",
-   "sub": null,
+   "status": "da documenti",
+   "value": "6 MW",
+   "sub": "Valore ricorrente negli elaborati (11 volte); il titolo riporta 60 MW (probabile refuso).",
    "source": {
-    "document": "titolo del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10495",
-    "excerpt": "60 MW"
+    "url": "https://va.mite.gov.it/File/Documento/969244",
+    "page": 66,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "Per il progetto “Tufaroli” sono previsti n.10 aerogeneratori marca Vestas, modello V150-6.0, aventi potenza 6 MW l’uno, per un totale di 60 MW (identificati da una numerazione progressiva da TU1 a TU10)."
    }
   },
   {
    "key": "wtg",
    "label": "Aerogeneratori",
    "value": "10",
-   "status": "da verificare",
-   "sub": "6,00 MW ciascuno · Valore più ricorrente negli elaborati; altri valori: 14 (5), 7 (1), 9 (1)",
+   "status": "da documenti",
+   "sub": "0,60 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 8 (6), 7 (5), 14 (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/968963",
     "page": 1,
     "document": "Avviso al pubblico del 02/02/2024",
     "excerpt": "e Palazzo San Gervasio (PZ) in località “Tufaroli”, e prevede lo sviluppo di un parco eolico costituito da n. 10 aerogeneratori di potenza unitaria 6MW per una potenza complessiva di 60 MW."
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1137930",
+    "page": 3,
+    "document": "Osservazioni del Signor Francesco Di Paolo, in data 21/08/2024",
+    "excerpt": "In particolare, il progetto agrovoltaico della Emmeuno Solar S.r.l. consentirebbe allo scrivente di"
    }
   },
   {
@@ -54,17 +67,17 @@
    "Palazzo San Gervasio"
   ],
   "coordinate": {
-   "lat": 40.53937,
-   "lon": 15.55214,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (3 riferimenti concordi)",
+   "lat": 40.88177,
+   "lon": 15.86483,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (65 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1339053",
-    "page": 2,
-    "document": "Integrazioni del 04/12/2025 - Analisi delle interferenze con attività minerarie",
-    "excerpt": "[1] 40,531877"
+    "url": "https://va.mite.gov.it/File/Documento/969199",
+    "page": 17,
+    "document": "Relazione impatto acustico",
+    "excerpt": "570500.00"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.53937,15.55214",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.88177,15.86483",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -87,7 +100,7 @@
     {
      "type": "PEC",
      "value": "arengreensrl@legalmail.it",
-     "occurrences": 276,
+     "occurrences": 331,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/969244",
       "page": 2,
@@ -98,23 +111,12 @@
     {
      "type": "PEC",
      "value": "rpasrl@legalmail.it",
-     "occurrences": 121,
+     "occurrences": 167,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/969169",
       "page": 2,
       "document": "Studio impatto elettromagnetico",
       "excerpt": "Ph. +39 0547 415245 - email: rpasrl@legalmail.it"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "0547415245",
-     "occurrences": 400,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/969244",
-      "page": 2,
-      "document": "Studio di Impatto Ambientale",
-      "excerpt": "Ph. +39 0547 415245 - email: arengreensrl@legalmail.it"
      }
     }
    ],
@@ -124,10 +126,40 @@
    }
   },
   {
+   "name": "Brindisi Energia 1 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "brindisienergia1@legalmail.it",
+     "occurrences": 54,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338986",
+      "page": 1,
+      "document": "Integrazioni del 04/12/2025 - Inquadramento delle opere RTN su carta IGM",
+      "excerpt": "Corso Libertà, n.17| 13100 - Vercelli (VC) pec: brindisienergia1@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1338986",
+    "page": 1,
+    "document": "Integrazioni del 04/12/2025 - Inquadramento delle opere RTN su carta IGM",
+    "excerpt": "Committente:"
+   }
+  },
+  {
    "name": "Mate System S.r.l.",
    "kind": "società",
    "roles": [
-    "Proponente",
     "Progettista"
    ],
    "vat": null,
@@ -171,41 +203,10 @@
     }
    ],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1339021",
-    "page": 1,
-    "document": "Integrazioni del 04/12/2025 - Indicazione dei regimi di intervento e strategie programmate",
-    "excerpt": "Committente: Questo documento contiene informazioni di proprietà della società Mate System srl e deve essere utilizzato esclusivamente dal destinatario in relazione alle finalità per le quali è stato ricevuto. E' vietata"
-   }
-  },
-  {
-   "name": "Brindisi Energia 1 S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "brindisienergia1@legalmail.it",
-     "occurrences": 54,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1338986",
-      "page": 1,
-      "document": "Integrazioni del 04/12/2025 - Inquadramento delle opere RTN su carta IGM",
-      "excerpt": "Corso Libertà, n.17| 13100 - Vercelli (VC) pec: brindisienergia1@legalmail.it"
-     }
-    }
-   ],
-   "source": {
     "url": "https://va.mite.gov.it/File/Documento/1338986",
     "page": 1,
     "document": "Integrazioni del 04/12/2025 - Inquadramento delle opere RTN su carta IGM",
-    "excerpt": "Committente:"
+    "excerpt": "Progettazione:"
    }
   },
   {
@@ -242,12 +243,23 @@
     {
      "type": "PEC",
      "value": "areaenergia@legalmail.it",
-     "occurrences": 10,
+     "occurrences": 64,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/969083",
       "page": 2,
       "document": "Piano di dismissione e ripristino dei luoghi",
       "excerpt": "Sede legale: Via dell'Arrigoni n. 308 - 47522 Cesena (FC), Italia Ph. +39 0547 415245 - email: areaenergia@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0547415245",
+     "occurrences": 540,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/969244",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Società soggetta alla direzione e coordinamento di AREN Electric Power S.p.A. Sede legale e amministrativa: Via dell’Arrigoni n. 308 | 47522 Cesena (FC) | Ph. +39 0547 415245"
      }
     }
    ],
@@ -255,6 +267,65 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "Pheedra S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@pheedra.it",
+     "occurrences": 203,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/969198",
+      "page": 1,
+      "document": "Relazione sull'evoluzione delle ombre",
+      "excerpt": "Tel. 099.7722302 - Fax 099.9870285 e-mail: info@pheedra.it - web: www.pheedra.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0997722302",
+     "occurrences": 202,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/969198",
+      "page": 1,
+      "document": "Relazione sull'evoluzione delle ombre",
+      "excerpt": "74121 - Taranto Tel. 099.7722302 - Fax 099.9870285"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geol. Angela Rosa Simone",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3496532293",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/969207",
+      "page": 1,
+      "document": "Relazione Verifiche Stabilità",
+      "excerpt": "Via S. Pertini n. 38 - 83059 Vallata (AV) Ph. +39 3496532293 - Fax +39 082791532"
+     }
+    }
+   ],
+   "source": null
   },
   {
    "name": "Ing. Maurizio Casarella",
@@ -501,9 +572,9 @@
  },
  "documentazione": {
   "documenti": 378,
-  "pagine": 1179,
-  "completa": false,
-  "da_leggere": 78
+  "pagine": 2769,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -514,7 +585,7 @@
   {
    "campo": "power_mw",
    "valore_attuale": 60.0,
-   "esito": "confermato"
+   "esito": "conflittuale"
   },
   {
    "campo": "municipalities",
@@ -534,8 +605,8 @@
  ],
  "da_verificare": [
   {
-   "label": "Aerogeneratori",
-   "reason": "valori diversi negli elaborati"
+   "label": "Potenza",
+   "reason": "il titolo riporta 60 MW, gli elaborati 6 MW"
   },
   {
    "label": "Durata cantiere",
@@ -543,7 +614,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "9 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "131 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
