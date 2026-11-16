@@ -5,7 +5,7 @@
  "title": "Progetto di un parco eolico denominato \"Santa Venere\", costituito da 15 aerogeneratori per una potenza complessiva di 62 MW, da realizzarsi nei Comuni di Montegiordano (CS), Rocca Imperiale (CS) e delle relative opere di connessione alla RTN nei Comuni di Canna (CS), Nova Siri (MT), Oriolo (CS), Roseto Capo Spulico (CS)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11167",
  "source": "mase",
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "15",
    "status": "da documenti",
-   "sub": "4,13 MW ciascuno · altezza mozzo 126 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 2 (6), 4 (4), 11 (4)",
+   "sub": "4,13 MW ciascuno · altezza mozzo 126 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 4 (8), 11 (8), 3 (8)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1125843",
     "page": 2,
@@ -42,6 +42,19 @@
     "page": 11,
     "document": "Integrazioni del 25/09/2026 - Relazione illustrativa integrazioni",
     "excerpt": "agrivoltaico sarebbe necessaria l'occupazione di circa 124-150 ettari di suolo. L'agrivoltaico,"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "20 MW",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1150889",
+    "page": 1,
+    "document": "Osservazioni del Signor Gostner Ernst in qualità di legale rappresentante della Società Fri-El S.p.A, in data 19/09/2024",
+    "excerpt": "costituito da 9 aerogeneratori, per una potenza massima complessiva di 64,80 MW, integrato con un sistema di accumulo di 20,00 MW, e opere di connessione alla RTN, da realizzarsi nei Comuni di Rocca Imperiale (CS), Monte"
    }
   },
   {
@@ -69,9 +82,9 @@
    "Roseto Capo Spulico"
   ],
   "coordinate": {
-   "lat": 40.10712,
-   "lon": 16.56824,
-   "tipo": "centro della tavola georeferenziata di progetto (46 riferimenti concordi)",
+   "lat": 40.11095,
+   "lon": 16.55855,
+   "tipo": "centro della tavola georeferenziata di progetto (80 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1126129",
     "page": 6,
@@ -79,7 +92,7 @@
     "excerpt": "MOPR e dettaglio ricognizioni (SCHEDE UU.RR.)"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.10712,16.56824",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.11095,16.55855",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -108,30 +121,22 @@
       "document": "Richiesta integrazioni CTPNRR-PNIEC",
       "excerpt": "VENERE WIND S.R.L. VENEREWINDSRL@PEC.IT"
      }
+    },
+    {
+     "type": "PEC",
+     "value": "claudio.coscarella.e80555@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1125962",
+      "page": 2,
+      "document": "Perizia giurata di stima",
+      "excerpt": "CSCCLD71M02D086B, con studio in Cosenza alla via Perugini 12, iscritto all9Ordine degli Ingegneri della Provincia di Cosenza con il n°4179, pec: claudio.coscarella.e80555@ingpec.eu, in qualità di tecnico abilitato e inca"
+     }
     }
    ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11167"
-   }
-  },
-  {
-   "name": "Cropani Wind Energy S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1125920",
-    "page": 2,
-    "document": "Computo metrico estimativo",
-    "excerpt": "COMMITTENTE: CROPANI WIND ENERGY SRL A R I P O R T A R E"
    }
   }
  ],
@@ -435,9 +440,9 @@
  },
  "documentazione": {
   "documenti": 434,
-  "pagine": 3416,
-  "completa": false,
-  "da_leggere": 134
+  "pagine": 4864,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -469,7 +474,7 @@
  "da_verificare": [
   {
    "label": "Recapiti",
-   "reason": "491 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "528 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
