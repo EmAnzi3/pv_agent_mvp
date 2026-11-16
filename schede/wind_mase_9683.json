@@ -5,14 +5,14 @@
  "title": "Progetto di un impianto eolico denominato \"Terranova\" composto da 10 aerogeneratori da 6 MW, per una potenza complessiva di 60 MW, da localizzarsi nei comuni di Terranova da Sibari (CS) e Corigliano Rossano (CS).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9683",
  "source": "mase",
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "6 MW",
-   "sub": "Valore ricorrente negli elaborati (73 volte); il titolo riporta 60 MW (probabile refuso).",
+   "sub": "Valore ricorrente negli elaborati (87 volte); il titolo riporta 60 MW (probabile refuso).",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/836371",
     "page": 1,
@@ -25,7 +25,7 @@
    "label": "Aerogeneratori",
    "value": "10",
    "status": "da documenti",
-   "sub": "0,60 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 2 (6), 8 (4), 3 (4)",
+   "sub": "0,60 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 12 (8), 2 (7), 31 (6)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/836371",
     "page": 1,
@@ -71,9 +71,9 @@
    "lon": 16.2184,
    "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (10 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/865889",
+    "url": "https://va.mite.gov.it/File/Documento/836342",
     "page": 4,
-    "document": "Integrazioni del 20/04/2023 - Scheda_ostacoli_verticali",
+    "document": "Scheda_ostacoli_verticali",
     "excerpt": "T01 39.401451"
    }
   },
@@ -83,27 +83,7 @@
   "connessione": null,
   "lotti": []
  },
- "soggetti": [
-  {
-   "name": "Cropani Wind Energy S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/865907",
-    "page": 2,
-    "document": "Integrazioni del 20/04/2023 - Computo metrico estimativo opere di dismissione e ripristino",
-    "excerpt": "COMMITTENTE: CROPANI WIND ENERGY SRL A R I P O R T A R E"
-   }
-  }
- ],
+ "soggetti": [],
  "altri_soggetti": [
   {
    "name": "Sonora S.r.l.",
@@ -124,6 +104,76 @@
       "page": 33,
       "document": "Rapporto_misure_fonometriche",
       "excerpt": "Via del Bersaglieri, 9 - Caserta SMIRNE Sonora S.r.l. Tel 0823 351196 - Fax 0823 351196 ill ve LAT N°185"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "ITW Terranova S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "itwterranova@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/852371",
+      "page": 1,
+      "document": "Osservazioni della Società ITW Terranova SRL in data 07/06/2023",
+      "excerpt": "della società ITW Terranova SRL, con sede in Potenza (PZ) — Via Vincenzo Verrastro n.15/a, tel. 0971 283416, PEC: itwterranova@pec.it, avente C.F./P.IVA. 02082800760"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0971283416",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/852371",
+      "page": 1,
+      "document": "Osservazioni della Società ITW Terranova SRL in data 07/06/2023",
+      "excerpt": "della società ITW Terranova SRL, con sede in Potenza (PZ) — Via Vincenzo Verrastro n.15/a, tel. 0971 283416,"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Infrastrutture S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "infrastrutture@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/852455",
+      "page": 3,
+      "document": "Osservazioni del Sig. Miracolo Domenico in data 06/06/2023",
+      "excerpt": "Infrastrutture S.p.A. infrastrutture@legalmail.it Member of"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@infrastrutture.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/852834",
+      "page": 9,
+      "document": "Osservazioni del Sig. Carelli Pasquale Antonio in data 07/06/2023",
+      "excerpt": "Email: info@infrastrutture.eu"
      }
     }
    ],
@@ -309,9 +359,9 @@
  },
  "documentazione": {
   "documenti": 320,
-  "pagine": 3045,
+  "pagine": 3210,
   "completa": false,
-  "da_leggere": 20
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -347,7 +397,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "40 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "47 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
