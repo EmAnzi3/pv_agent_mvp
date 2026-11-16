@@ -1,0 +1,600 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11261",
+ "title": "Progetto di un impianto eolico costituito da 11 aerogeneratori di potenza nominale pari a 5,2 MW, per una potenza complessiva di 57,20 MW, da realizzarsi nei comuni di Alberona (FG) e Biccari (FG), e delle relative opere di connessione alla RTN ricadenti anche nel Comune di Troia (FG) (cod. pratica MYTERNA n. 202101147).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11261",
+ "source": "mase",
+ "updated": "2026-11-16",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "57,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11261",
+    "excerpt": "57,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "11",
+   "status": "da documenti",
+   "sub": "5,20 MW ciascuno · altezza mozzo 127,5 m · diametro rotore 145 m · Valore prevalente negli elaborati; altri valori: 15 (1), 13 (1), 22 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1177576",
+    "page": 1,
+    "document": "Avviso al pubblico del 27/11/2024",
+    "excerpt": "per l’avvio del procedimento di Valutazione di Impatto Ambientale per il “Progetto per la realizzazione di un impianto eolico, nei Comuni di Alberona e Biccari, di potenza nominale pari a 57.20 MW, costituito da n.11 WTG"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1228087",
+    "page": 39,
+    "document": "Relazione Anemologica",
+    "excerpt": "Design and Manufacturing of Wind turbines blades, offshore and"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (6), 5 mesi (3), 504 giorni (circa 17 mesi) (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1177576",
+    "page": 3,
+    "document": "Avviso al pubblico del 27/11/2024",
+    "excerpt": "- temporaneo poiché limitato alla sola fase di cantiere la cui durata indicativamente è posta pari a 24 mesi; -"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Alberona",
+   "Biccari",
+   "Troia"
+  ],
+  "coordinate": {
+   "lat": 41.41228,
+   "lon": 15.21315,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (27 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1177436",
+    "page": 2,
+    "document": "Carta della copertura",
+    "excerpt": "Carta della copertura"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.41228,15.21315",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.36066,
+   "lon": 15.25886,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1177541",
+    "page": 10,
+    "document": "Relazione elettrica dimensionamento cavi",
+    "excerpt": "quadri della sezione 36 kV della SE 380/150/36 kV Troia 2 alla Cabina Utente posta in adiacenza ad essa, in corrispondenza delle coordinate 41°21'38.38\" N– 15°15'31.91\" E, attraversando terreno agricolo. •"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.36066,15.25886"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Ragnar Energia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02742600998",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Brigate Partigiane 10/4 16129 Genova Ge",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ragnarenergiasrl@legalmail.it",
+     "occurrences": 41,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1177576",
+      "page": 1,
+      "document": "Avviso al pubblico del 27/11/2024",
+      "excerpt": "16129 Genova PEC: ragnarenergiasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11261"
+   }
+  },
+  {
+   "name": "Genesi S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "03003710211",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Walther 22 39100 Bolzano .Bozen. Bz",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@g-genesi.ch",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1177442",
+      "page": 2,
+      "document": "Progetto SE380/150/36 KV TROIA2 - Raccordi380 kV",
+      "excerpt": "E-mail info@g-genesi.ch"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1177493",
+    "page": 1,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "Progettisti GENESI SRL"
+   }
+  },
+  {
+   "name": "Geol. Rocco Caruso",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1177462",
+    "page": 3,
+    "document": "Relazione indagini geognostiche e geotecniche",
+    "excerpt": "La stessa si basa sulla relazione geologica redatta dal dott. Geol. Rocco Caruso, nel rispetto delle disposizioni nazionali e regionali in materia di edificabilità in zona sismica, che ha attestato la compatibilità tra l"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Quarrel Energia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02742620996",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Brigate Partigiane 10/4 16129 Genova Ge",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "quarrelenergiasrl@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1177442",
+      "page": 2,
+      "document": "Progetto SE380/150/36 KV TROIA2 - Raccordi380 kV",
+      "excerpt": "Pec quarrelenergiasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "GEO Consultlab S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02683470641",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Strada Statale 7 Bis Area Pip Snc 83030 Manocalzati Av",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@geoconsultlab.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1177462",
+      "page": 17,
+      "document": "Relazione indagini geognostiche e geotecniche",
+      "excerpt": "Pag. 1 di 1 Sede Legale SS7 bis - Area PIP - 83030 Manocalzati (AV)- Tel. 0825675873 - Fax 0825675872 - E-mail info@geoconsultlab.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Centro Diagnostico Roselli S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0818251775",
+     "occurrences": 196,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1177402",
+      "page": 47,
+      "document": "Piano preliminare di utilizzo in sito delle terre e rocce da scavo",
+      "excerpt": "Sede Legale:Via E. De Nicola 16 80030 Tufino(NA) Tel. 081-8251775 P.IVA 01294711211"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sorgenia Renewables S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sorgenia.renewables@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1186366",
+      "page": 1,
+      "document": "Osservazioni della Sorgenia Renewables S.r.l., in data 13/12/2024",
+      "excerpt": "iscritta alla Camera di Commercio di Milano n. 2520666, tel. 02671941, fax 0267194210, e-mail: sorgeniarenewables@sorgenia.it, PEC: sorgenia.renewables@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sorgeniarenewables@sorgenia.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1186366",
+      "page": 1,
+      "document": "Osservazioni della Sorgenia Renewables S.r.l., in data 13/12/2024",
+      "excerpt": "iscritta alla Camera di Commercio di Milano n. 2520666, tel. 02671941, fax 0267194210, e-mail: sorgeniarenewables@sorgenia.it, PEC: sorgenia.renewables@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasri.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1177503",
+      "page": 78,
+      "document": "Relazione previsionale di impatto acustico",
+      "excerpt": "Sonora S.r.l Tel 0823 351196 - Fax 0823 351196 www.sonorasri.com - sonora@sonorasri.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1177503",
+      "page": 78,
+      "document": "Relazione previsionale di impatto acustico",
+      "excerpt": "Sonora S.r.l Tel 0823 351196 - Fax 0823 351196"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Daunia Wind Farm S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dauniawindfarm@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1202164",
+      "page": 1,
+      "document": "Osservazioni del Signor Giuseppe Stampone. in data 23/12/2024",
+      "excerpt": "Via Leopardi, 18 – 71032 Biccari Pec : dauniawindfarm@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Silift S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "donatolorenzo.tilli@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1201189",
+      "page": 1,
+      "document": "Osservazioni dell'Ing. Donato Lorenzo TILLI in proprio e in veste di legale rappresentante delle Società ICO ILLIT srl, CHECCHIA LUCIA WIND FARM srl e SILIFT srl, in data 23/12/2024",
+      "excerpt": "telefax 0881688254 PEC : <mailto:donatolorenzo.tilli@ingpec.eu>"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "10 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Trasporto, ed installazione degli aerogeneratori",
+    "start": 9.16,
+    "end": 9.59,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Realizzazione delle opere civili opere RTN",
+    "start": 9.16,
+    "end": 9.59,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione dei cavidotti interrati AT-elettrodotto AT",
+    "start": 9.16,
+    "end": 9.59,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Altra sezione del cronoprogramma",
+    "separator": true,
+    "start": 0,
+    "end": 0,
+    "level": 0
+   },
+   {
+    "name": "Trasporto, ed installazione degli aerogeneratori",
+    "start": 0.0,
+    "end": 0.65,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione dei cavidotti interrati AT-elettrodotto AT",
+    "start": 0.0,
+    "end": 3.86,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione opere elettromeccaniche per la connessione elettrica",
+    "start": 0.0,
+    "end": 9.59,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Dismissione delle opere temporanee",
+    "start": 3.43,
+    "end": 3.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Smaltimento dei materiali di risulta",
+    "start": 0.0,
+    "end": 3.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Start up dell'impianto di produzione",
+    "start": 9.16,
+    "end": 9.59,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 9.59,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1177382",
+   "page": 25,
+   "document": "Fasi e modalità di esecuzione dei lavori di costruzione",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "MESE",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "24 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (6), 5 mesi (3), 504 giorni (circa 17 mesi) (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1177576",
+    "page": 3,
+    "document": "Avviso al pubblico del 27/11/2024",
+    "excerpt": "- temporaneo poiché limitato alla sola fase di cantiere la cui durata indicativamente è posta pari a 24 mesi; -"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 208,
+  "pagine": 4065,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Ragnar Energia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 57.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TROIA, ALBERONA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "774 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
