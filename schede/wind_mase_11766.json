@@ -1,0 +1,938 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11766",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"Energia della Valnerina\" costituito da n. 8 aerogeneratori, per una potenza complessiva di 57,6 MW, da installare nei comuni di Sant'Anatolia di Narco (PG), Vallo di Nera (PG) e Spoleto (PG) in località \"Monte Galenne - Monte Pianciano\", integrato con un sistema di accumulo da 12 MW, con opere di connessione ricadenti anche nel Comune di Ferentillo (TR).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11766",
+ "source": "mase",
+ "updated": "2026-11-16",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "57,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11766",
+    "excerpt": "57,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 10 (4), 4 (4), 12 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1277917",
+    "page": 1,
+    "document": "Avviso al pubblico del 21/07/2025",
+    "excerpt": "La proposta progettuale è finalizzata alla nuova realizzazione di un impianto per la produzione di energia elettrica da fonte rinnovabile eolica, costituito da 8 aerogeneratori per una potenza complessiva di esercizio pa"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "12 MW / 80,24 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 60 MW (5), 15 MW (5), 69,6 MW (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1277917",
+    "page": 1,
+    "document": "Avviso al pubblico del 21/07/2025",
+    "excerpt": "complessiva di esercizio pari a 57,6 MW e di un sistema di accumulo integrato con una potenza di 12 MW. Le opere di connessione alla RTN consistono in una nuova Stazione"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 7 mesi (1), 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1277844",
+    "page": 115,
+    "document": "Relazione Tecnica",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Umbria",
+  "provincia": "PG",
+  "comuni": [
+   "Sant'Anatolia Di Narco",
+   "Vallo Di Nera",
+   "Spoleto"
+  ],
+  "coordinate": {
+   "lat": 42.78549,
+   "lon": 12.83517,
+   "tipo": "centro della tavola georeferenziata di progetto (15 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1277872",
+    "page": 1,
+    "document": "Ricognizione UR01",
+    "excerpt": "Ricognizione UR01"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.78549,12.83517",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "FRED. Olsen Renewables Italy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "15604711000",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Castro Pretorio 122 00185 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fred.olsenrenewablesitaly@legalmail.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1315909",
+      "page": 1,
+      "document": "Richiesta integrazioni del MIC",
+      "excerpt": "Società Fred Olsen Renewables Italy S.r.l. fred.olsenrenewablesitaly@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11766"
+   }
+  },
+  {
+   "name": "Dott. Ing. Nicola Forte",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1277767",
+    "page": 1,
+    "document": "Aree idonee del D.LGS. 199/2021",
+    "excerpt": "Progettista Dott. Ing. Nicola Forte"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Amici Della Terra APS",
+   "kind": "società",
+   "roles": [],
+   "vat": "02141761003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ippolito Nievo 62 Sc C I 00153 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amicidellaterra@pec.it",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1295753",
+      "page": 13,
+      "document": "Osservazioni dell'Associazione AMICI DELLA TERRA ONLUS in data 21/08/2025",
+      "excerpt": "HUwww.amicidellaterra.itUH amicidellaterra@pec.it – segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@amicidellaterra.it",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1295753",
+      "page": 13,
+      "document": "Osservazioni dell'Associazione AMICI DELLA TERRA ONLUS in data 21/08/2025",
+      "excerpt": "HUwww.amicidellaterra.itUH amicidellaterra@pec.it – segreteria@amicidellaterra.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Societa' Agricola Federici Bruno & C. S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@viola.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 40,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "info@viola.it;"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "costadelriparo@viola.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 40,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "info@viola.it; costadelriparo@viola.it;"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "marcoviola@viola.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 40,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "costadelriparo@viola.it; marcoviola@viola.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Antico Frantoio Trampolini S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "olio@oliotrampolini.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 234,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "DENOMINAZIONE CUAA VIA CAP COMUNE PROVINCIA MAIL 250 ANTICO FRANTOIO TRAMPOLINI S.A.S. DI 00367410545 VIA ENRICO DAL POZZO 06126 PERUGIA PG OLIO@OLIOTRAMPOLINI.IT"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "frantoioercolanetti@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 234,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "ANTONIO TRAMPOLINI 105 , 251 SOCIETA’ AGRICOLA FRANTOIO | COLLI DI 03586950549 VIA PALAZZETTA, SNC 06084 BETTONA PG frantoioercolanetti@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "luisafuccelli@libero.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 234,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "BETTONA SOCIETA' SEMPLICE i 8 ” 252 PLACIDI LILIANA PLCLLN40S41E229A VIA VILLA DELL'ORO , 6 06035 GUALDO CATTANEO luisafuccelli@libero.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Giacomo Giujusa",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "g.giujusa@pec.archrm.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1295209",
+      "page": 13,
+      "document": "Osservazioni del Signor Giacomo Giujusa ed altri, in data 19/08/2025",
+      "excerpt": "giacomogiujusa@gmail.com g.giujusa@pec.archrm.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "giacomogiujusa@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1295209",
+      "page": 13,
+      "document": "Osservazioni del Signor Giacomo Giujusa ed altri, in data 19/08/2025",
+      "excerpt": "349 7570350 giacomogiujusa@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Frantoio Petasecca Donati S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "bugiantellalaura@gmail.co",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 135,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "BUGIANTELLALAURA@GMAIL.CO"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "laurabugiantella@alice.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 135,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "M; LAURABUGIANTELLA@ALICE.IT"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Azienda Agricola Casale Ciaffardini S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@casaleciaffardini.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 137,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "INFO@CASALECIAFFARDINI.COM"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "agricola@nizzi.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 224,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "agricola@nizzi.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Oleificio Cecci S.n.c.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@frantoiocecci.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 234,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "OLEIFICIO CECCI SNC DI CECCI VINCENZO E CECCI FRAZ.NE PIAN LUNGO - 254 00594700551 05014 CASTEL VISCARDO TR info@frantoiocecci.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@tenutasanfelice.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 234,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "SIRO RENICCI x x INFO@TENUTASANFELICE.COM;"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Societa' Agricola Terre DEL Papa S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "michele.volpi@icloud.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 234,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "255 TENUTA SAN FELICE SOCIETÀ AGRICOLA 02488660545 LOCALITÀ SAN FELICE 06030 GIANO DELL'UMBRIA PG . dA: michele.volpi@icloud.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@terredelpapa.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 234,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "michele.volpi@icloud.com 256 SOCIETA' AGRICOLA TERRE DEL PAPA S.R.L. 03498170541 LOC. PIANA, 24 - SISMANO 05020 AVIGLIANO UMBRO INFO@TERREDELPAPA.COM"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Roberto & C. S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sorokavalentyna@hotmail.co",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 235,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "ROBERTO & C. S.A.S. -SOCIETA' AGRICOLA PIANELLO i sorokavalentyna@HOTMAIL.CO"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "devis.merli@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 235,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "SOCIETA' AGRICOLA DEVIS E CHIARA DI MERLI 270 03670630544 VOC SAN LORENZO 8 pe PG DEVIS.MERLI@GMAIL.COM"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Roberto Caloni",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0755044365",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1349922",
+      "page": 17,
+      "document": "Osservazioni dell'Associazione Amici della Terra, in data 27/01/2026",
+      "excerpt": "Ing. Roberto Caloni tel.: 0755044365"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "16. Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "funzione.psa@pec.enav.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1277844",
+      "page": 62,
+      "document": "Relazione Tecnica",
+      "excerpt": "Area Operativa Progettazione Spazi Aerei PEC: funzione.psa@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Murlo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@murlo.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1441018",
+      "page": 91,
+      "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+      "excerpt": "5497 MURLO SRL 10349631001 VIA DEI CONDOTTI 91 INFO@MURLO.COM"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "16/07/2025",
+    "dettaglio": "natura non determinabile",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1441018",
+     "page": 184,
+     "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+     "excerpt": "dovessero rendere disponibili a seguito dell’approvazione del regolamento comunitario della programmazione 2028-2034 [bozza COM(2025) 565 final 2025/0240 (COD) del 16.7.2025] e/o alla rimodulazione finanziaria del CSR pe"
+    }
+   },
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Autorizzazione Unica n. 190 del 25/11/2024",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1277917",
+     "page": 1,
+     "document": "Avviso al pubblico del 21/07/2025",
+     "excerpt": "La tipologia di procedura autorizzativa necessaria ai fini della realizzazione del progetto è l’Autorizzazione Unica ai sensi del Decreto Legislativo N.190 del 25/11/2024 e s.m.i. e l’Autorità competente al rilascio è la"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2024",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1277917",
+     "page": 1,
+     "document": "Avviso al pubblico del 21/07/2025",
+     "excerpt": "La tipologia di procedura autorizzativa necessaria ai fini della realizzazione del progetto è l’Autorizzazione Unica ai sensi del Decreto Legislativo N.190 del 25/11/2024 e s.m.i. e l’Autorità competente al rilascio è la"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2025",
+    "dettaglio": "inizio stimato + durata del cantiere: 12 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1277723",
+     "page": 2,
+     "document": "Cronoprogramma di realizzazione",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "12 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "Autorizzazione Unica n. 190",
+   "data": "25/11/2024",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1277917",
+    "page": 1,
+    "document": "Avviso al pubblico del 21/07/2025",
+    "excerpt": "La tipologia di procedura autorizzativa necessaria ai fini della realizzazione del progetto è l’Autorizzazione Unica ai sensi del Decreto Legislativo N.190 del 25/11/2024 e s.m.i. e l’Autorità competente al rilascio è la"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "REALIZZAZIONE AREA DI PRESIDIO",
+    "start": 0.35,
+    "end": 0.98,
+    "level": 0,
+    "duration": "15 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE E PIAZZOLE",
+    "start": 0.61,
+    "end": 3.01,
+    "level": 0,
+    "duration": "50 g",
+    "summary": false
+   },
+   {
+    "name": "ADEGUAMENTO DELLA VIABILITA' ESISTENTE",
+    "start": 3.11,
+    "end": 3.96,
+    "level": 0,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE PLNTI DI FONDAZIONE",
+    "start": 3.57,
+    "end": 5.57,
+    "level": 0,
+    "duration": "44 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE DEL CAVIDOTTO",
+    "start": 0.61,
+    "end": 5.57,
+    "level": 0,
+    "duration": "105 g",
+    "summary": false
+   },
+   {
+    "name": "INSTALLAZIONE AEROGENERATORI",
+    "start": 5.63,
+    "end": 7.64,
+    "level": 0,
+    "duration": "45 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CABINA DI RACCOLTA",
+    "start": 6.32,
+    "end": 8.32,
+    "level": 0,
+    "duration": "44 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE ACCESSO BESS",
+    "start": 3.63,
+    "end": 3.96,
+    "level": 0,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE ACCESSO AREA COMUNE",
+    "start": 3.34,
+    "end": 3.67,
+    "level": 0,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE ACCESSO SE UTENTE",
+    "start": 3.34,
+    "end": 3.67,
+    "level": 0,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO AT",
+    "start": 3.66,
+    "end": 4.36,
+    "level": 0,
+    "duration": "15 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE DELLA SE UTENTE - AREA COMUNE - OPERE CIVILI",
+    "start": 4.52,
+    "end": 6.95,
+    "level": 0,
+    "duration": "53 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE DELLA SE UTENTE - AREA COMUNE - OPERE ELETTR",
+    "start": 7.01,
+    "end": 8.49,
+    "level": 0,
+    "duration": "32 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE IMPIANTO DI ACCUMULO BESS - OPERE CIVILI",
+    "start": 3.66,
+    "end": 4.52,
+    "level": 0,
+    "duration": "18 g",
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE IMPIANTO DI ACCUMULO BESS - OPERE ELETTRICHE",
+    "start": 4.52,
+    "end": 4.98,
+    "level": 0,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "COLLAUDI E TEST",
+    "start": 8.49,
+    "end": 10.03,
+    "level": 0,
+    "duration": "31 g",
+    "summary": false
+   },
+   {
+    "name": "SMOBILIZZO DEL CANTIERE",
+    "start": 10.06,
+    "end": 12.46,
+    "level": 0,
+    "duration": "53 g",
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 12.46,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1277723",
+   "page": 2,
+   "document": "Cronoprogramma di realizzazione",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "M11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "M12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "M13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "M14",
+     "start": 13.0,
+     "end": 14.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (2), 1 mese (2), 7 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1277844",
+    "page": 115,
+    "document": "Relazione Tecnica",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  },
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "16/07/2025",
+    "iso": "2025-07-16",
+    "nature": "natura non determinabile",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1441018",
+     "page": 184,
+     "document": "Osservazioni dell' Agricola Pianciano di Bachetoni Rossi Vaccari Giovanni & C. Società Agricola in Accomandita Semplice, in data 28/09/2026",
+     "excerpt": "dovessero rendere disponibili a seguito dell’approvazione del regolamento comunitario della programmazione 2028-2034 [bozza COM(2025) 565 final 2025/0240 (COD) del 16.7.2025] e/o alla rimodulazione finanziaria del CSR pe"
+    }
+   }
+  ],
+  "document": {
+   "document": "Cronoprogramma di realizzazione",
+   "url": "https://va.mite.gov.it/File/Documento/1277723"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma di dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/1277905"
+   },
+   {
+    "document": "Piano di monitoraggio ambientale e cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/1277686"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 304,
+  "pagine": 4086,
+  "completa": false,
+  "da_leggere": 4
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "FRED.OLSEN RENEWABLES ITALY S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 57.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "FERENTILLO, SANT'ANATOLIA DI NARCO",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PG",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Umbria",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "1284 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
