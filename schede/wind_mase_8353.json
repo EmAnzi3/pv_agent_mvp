@@ -1,0 +1,644 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_8353",
+ "title": "Progetto di un impianto eolico composto da 10 aerogeneratori per un totale di 56 MW da ubicare nel comune di Francavilla Fontana (BR) in località \"Masseria Vizzo\", per le opere di connessione saranno coinvolti anche i comuni di Taranto, Grottaglie (TA) e Villa Castelli (BR).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8353",
+ "source": "mase",
+ "updated": "2026-11-16",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "5,6 MW",
+   "sub": "Valore ricorrente negli elaborati (23 volte); il titolo riporta 56 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/613756",
+    "page": 3,
+    "document": "STUDIO EFFETTI SHADOW FLICKERING",
+    "excerpt": "L’impianto oggetto di studio, da realizzare in agro del comune di Francavilla Fontana (BR), è costituito da 10 aerogeneratori della potenza individuale nominale di circa 5.6 MW per una potenza totale complessiva di circa"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "0,56 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 4 (3), 3 (2), 6 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/705405",
+    "page": 2,
+    "document": "Richiesta integrazioni CTPNRR-PNIEC",
+    "excerpt": "Oggetto: [ID 7923] Progetto di un impianto eolico composto da 10 aerogeneratori per un totale di 56 MW da ubicare nel comune di Francavilla Fontana (BR) in località"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "730 giorni (circa 24 mesi)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/613615",
+    "page": 44,
+    "document": "Q_AMBIENTALE",
+    "excerpt": "֍ temporanei in quanto limitati alla sola fase di cantiere la cui durata indicativamente è posta pari a 730 giorni (come da cronoprogramma standard); ֍ circoscritti all’area di cantiere, applicando in maniera attenta le "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BR",
+  "comuni": [
+   "Francavilla Fontana"
+  ],
+  "coordinate": {
+   "lat": 40.54691,
+   "lon": 17.51817,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (42 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/940561",
+    "page": 55,
+    "document": "Integrazioni del 20/11/2023 - Relazione Acustica_signed",
+    "excerpt": "Postazione di misura PM 01 Coordinate: 40°32'05.6\"N 17°29'58.0\"E Foto aerea punto di misura"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.54691,17.51817",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "ITW Francavilla S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "itwfrancavilla@pec.it",
+     "occurrences": 66,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/705405",
+      "page": 1,
+      "document": "Richiesta integrazioni CTPNRR-PNIEC",
+      "excerpt": "Alla ITW Francavilla itwfrancavilla@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0971283416",
+     "occurrences": 40,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/838040",
+      "page": 1,
+      "document": "Controdeduzioni della Società ITW Francavilla S.r.l. al Parere espresso in data 14 novembre 2022 con Prot. n. 0005615-P dalla Soprintendenza Speciale per il Piano Nazionale di Ripresa e Resilienza del",
+      "excerpt": "Sede legale: Via Vincenzo Verrastro 15/A - 85100 Potenza (PZ) - Italia Tel. +39 0971 283416 - PEC: itwfrancavilla@pec.it - C.F. e P IVA 02082790763 Pagina 1 di 4"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/940557",
+    "page": 1,
+    "document": "Integrazioni del 20/11/2023 - Elenco Elaborati Integrazione Volontaria_signed",
+    "excerpt": "Proponente: ITW Francavilla Srl ID_VIP: 7923"
+   }
+  },
+  {
+   "name": "ITW Francavilla",
+   "kind": "persona",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8353"
+   }
+  },
+  {
+   "name": "Dott. Geol Antonio De Carlo",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/940565",
+    "page": 1,
+    "document": "Integrazioni del 20/11/2023 - Relazione Geologica Integrativa_signed",
+    "excerpt": "Geologo: Dott. Geol Antonio De Carlo"
+   }
+  },
+  {
+   "name": "Geol. Bartolo Romaniello",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/940581",
+    "page": 16,
+    "document": "Integrazioni del 20/11/2023 - Relazione Geologica_Rev01_signed",
+    "excerpt": "Il Geologo"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "BioPhilia S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "infobio@biophilia.eu",
+     "occurrences": 146,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/940558",
+      "page": 3,
+      "document": "Integrazioni del 20/11/2023 - Censimento Vegetazione_signed",
+      "excerpt": "BioPhilia Sas – infobio@biophilia.eu Pag. 2 a 29"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "R.S.V. Design Studio S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@rsv-ds.it",
+     "occurrences": 89,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613729",
+      "page": 1,
+      "document": "INQUADRAMENTO AREA VASTA",
+      "excerpt": "P.IVA 05885970656 Tel./fax:+39 0974 985490 | e-mail: info@rsv-ds.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasrl.com",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/940561",
+      "page": 75,
+      "document": "Integrazioni del 20/11/2023 - Relazione Acustica_signed",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196 Any |y\\s LAT N°185 www.sonorasrl.com - sonora@sonorasrl.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/940561",
+      "page": 71,
+      "document": "Integrazioni del 20/11/2023 - Relazione Acustica_signed",
+      "excerpt": "1) Sonora S.r.l Tel 0823 351196 - Fax 0823 351196 ZITO LAT N°185"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Quirino Vassalli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "q.vassalli@quadran-international.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/613649",
+      "page": 2,
+      "document": "RICHIESTA DI CONNESSIONE ALLA RTN",
+      "excerpt": "quadran.italia@pec.it q.vassalli@quadran-international.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3482668098",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/838040",
+      "page": 7,
+      "document": "Controdeduzioni della Società ITW Francavilla S.r.l. al Parere espresso in data 14 novembre 2022 con Prot. n. 0005615-P dalla Soprintendenza Speciale per il Piano Nazionale di Ripresa e Resilienza del",
+      "excerpt": "Telefono 3482668098 - E-mail: g.vassalli@gair. energy"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Carmine Antonio Speranza",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "a.speranza@gair.energy",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/838040",
+      "page": 7,
+      "document": "Controdeduzioni della Società ITW Francavilla S.r.l. al Parere espresso in data 14 novembre 2022 con Prot. n. 0005615-P dalla Soprintendenza Speciale per il Piano Nazionale di Ripresa e Resilienza del",
+      "excerpt": "Nome e Cognome Ing. Carmine Antonio Speranza Telefono 3408080840 - E-mail: a.speranza@gair.energy"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3408080840",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/838040",
+      "page": 7,
+      "document": "Controdeduzioni della Società ITW Francavilla S.r.l. al Parere espresso in data 14 novembre 2022 con Prot. n. 0005615-P dalla Soprintendenza Speciale per il Piano Nazionale di Ripresa e Resilienza del",
+      "excerpt": "Nome e Cognome Ing. Carmine Antonio Speranza Telefono 3408080840 - E-mail: a.speranza@gair.energy"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "24 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Acquisizione delle aree",
+    "start": 0.02,
+    "end": 2.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Test geologici",
+    "start": 3.01,
+    "end": 4.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Progettazione esecutiva architettonica",
+    "start": 5.01,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Progettazione geotecnica e strutturale",
+    "start": 5.01,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Apertura del cantiere",
+    "start": 7.01,
+    "end": 8.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Predisposizione della viabilità",
+    "start": 8.01,
+    "end": 10.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa cavi elettrici",
+    "start": 8.01,
+    "end": 11.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Predisposizione fondazioni",
+    "start": 10.01,
+    "end": 12.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e montaggio aerogeneratori",
+    "start": 12.01,
+    "end": 14.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e montaggio stazione elettrica",
+    "start": 15.01,
+    "end": 17.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristini ambientali",
+    "start": 18.01,
+    "end": 18.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudo aerogeneratori",
+    "start": 19.01,
+    "end": 21.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Dismissione cantiere",
+    "start": 22.01,
+    "end": 22.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Chiusura cantiere",
+    "start": 23.01,
+    "end": 23.97,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 23.97,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/613722",
+   "page": 3,
+   "document": "CRONOPROGRAMMA",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1°",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2°",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3°",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4°",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5°",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6°",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7°",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8°",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9°",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10°",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11°",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12°",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13°",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14°",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15°",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16°",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17°",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18°",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19°",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20°",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21°",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22°",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23°",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24°",
+     "start": 23.0,
+     "end": 24.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "730 giorni (circa 24 mesi)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 18 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/613615",
+    "page": 44,
+    "document": "Q_AMBIENTALE",
+    "excerpt": "֍ temporanei in quanto limitati alla sola fase di cantiere la cui durata indicativamente è posta pari a 730 giorni (come da cronoprogramma standard); ֍ circoscritti all’area di cantiere, applicando in maniera attenta le "
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "CRONOPROGRAMMA",
+   "url": "https://va.mite.gov.it/File/Documento/613722"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 220,
+  "pagine": 2268,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "ITW Francavilla",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 56.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "FRANCAVILLA FONTANA, TARANTO, GROTTAGLIE",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BR",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 56 MW, gli elaborati 5,6 MW"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "295 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
