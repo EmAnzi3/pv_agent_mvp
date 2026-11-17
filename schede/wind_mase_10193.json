@@ -1,0 +1,339 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10193",
+ "title": "Progetto \"Impianto eolico di Telti\", dalla potenza di 54 MW con opere di connessione alla RTN, nei comuni di Telti e Calangianus (SS)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10193",
+ "source": "mase",
+ "updated": "2026-11-17",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "54 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10193",
+    "excerpt": "54 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "11",
+   "status": "da documenti",
+   "sub": "4,91 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 3 (6), 9 (6), 5 (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/985475",
+    "page": 2,
+    "document": "Richiesta Integrazioni CTPNRR-PNIEC",
+    "excerpt": "connessione, proposto da Enel Green Power Italia S.r.l. nei territori comunali di Telti e Calangianus. Il progetto prevede l’installazione di n. 11 aerogeneratori di grande taglia, aventi potenza unitaria 6.0 MW e diamet"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/903611",
+    "page": 31,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "lo sviluppo dell’agro-voltaico, ossia l’implementazione di sistemi ibridi agricoltura-"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "6 MW / 64,8 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 32,4 MW (4), 64,8 MW (3), 144 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/903611",
+    "page": 92,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "Potenza Installata 11 x 6 MW Storage"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 360 giorni (circa 12 mesi) (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/903607",
+    "page": 58,
+    "document": "Relazione impatto acustico",
+    "excerpt": "Assunta una produzione totale di circa 230.299 m³ di terre da scavo, corrispondente a 414.538 t, durata del cantiere 18 mesi, 8 ore di lavorazione per ciascun giorno ed una portata media dei mezzi di trasporto terra pari"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Telti",
+   "Calangianus"
+  ],
+  "coordinate": {
+   "lat": 40.87384,
+   "lon": 9.32138,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (55 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/903607",
+    "page": 70,
+    "document": "Relazione impatto acustico",
+    "excerpt": "Noise_Standard TL 02 1.528.385 4.528.124 356,0 Siemens Gamesa SG ... Yes Siemens Gamesa SG 6.0-170-6.000 6.000"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.87384,9.32138",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Enel Green Power Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10193"
+   }
+  },
+  {
+   "name": "Geol. Maria Francesca Lobina",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/903611",
+    "page": 140,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "sottosuolo, si rimanda alla relazione geologico-tecnica propedeutica alla progettazione definitiva del parco eolico, nella persona della Dott.ssa Geol. Maria Francesca Lobina e del"
+   }
+  },
+  {
+   "name": "Dott. Mauro Pompei",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/903646",
+    "page": 3,
+    "document": "Relazione Geologica, geomorfologica e sismica",
+    "excerpt": "In tale ambito, gli scriventi geologi Dott.ssa Maria Francesca Lobina e Dott. Mauro Pompei hanno proceduto, su mandato della società di ingegneria I.A.T. Consulenza e progetti S.r.l.,"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "IAT Consulenza E Progetti S.r.l. Unipersonale",
+   "kind": "società",
+   "roles": [],
+   "vat": "02748010929",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Giua Snc 09122 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "direttore@iatprogetti.it",
+     "occurrences": 270,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/903607",
+      "page": 70,
+      "document": "Relazione impatto acustico",
+      "excerpt": "+39 070 658297 Giuseppe Frongia / direttore@iatprogetti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Massimiliano Ponti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0706062014",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/967383",
+      "page": 50,
+      "document": "Osservazioni della Regione Autonoma della Sardegna Assessorato della difesa dell'ambiente in data 25/01/2024",
+      "excerpt": "Ing. Massimiliano Ponti Istruttore: geom. Giangiacomo Brau tel. 070 606 2014"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0706062440",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/967383",
+      "page": 50,
+      "document": "Osservazioni della Regione Autonoma della Sardegna Assessorato della difesa dell'ambiente in data 25/01/2024",
+      "excerpt": "Istruttore: geom. Giangiacomo Brau tel. 070 606 2014 Responsabile Settore: ing. Stefano Porcu tel. 070 606 2440"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "I.V.P.C. Power 8 S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ivpcpower8@pec.ivpc.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1051173",
+      "page": 1,
+      "document": "Integrazioni del 26/03/2024 - 2024-01-10 - Codice Pratica 202100928 - Comune di Telti (SS) - Benestare TERNA al progetto",
+      "excerpt": "I.V.P.C. POWER 8 SPA ivpcpower8@pec.ivpc.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 360 giorni (circa 12 mesi) (3), 30 giorni (2), 5 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/903607",
+    "page": 58,
+    "document": "Relazione impatto acustico",
+    "excerpt": "Assunta una produzione totale di circa 230.299 m³ di terre da scavo, corrispondente a 414.538 t, durata del cantiere 18 mesi, 8 ore di lavorazione per ciascun giorno ed una portata media dei mezzi di trasporto terra pari"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/903617"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/903617"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 215,
+  "pagine": 3029,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Enel Green Power Italia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 54.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TELTI, CALANGIANUS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "326 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
