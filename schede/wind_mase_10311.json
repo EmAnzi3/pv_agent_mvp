@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto eolico composto da n. 13 aerogeneratori di potenza unitaria pari a 4,5 MW, per una potenza complessiva pari a 58,5 MW, denominato \"Termini\", da realizzarsi nel Comune di Monreale (PA), con relative opere di connessione alla RTN, ricadenti anche nei Comuni di Camporeale (PA) e Piana degli Albanesi (PA)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10311",
  "source": "mase",
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "sintesi": [
   {
    "key": "potenza",
@@ -22,14 +22,26 @@
   {
    "key": "wtg",
    "label": "Aerogeneratori",
-   "value": "11",
+   "value": "13",
    "status": "da verificare",
-   "sub": "5,32 MW ciascuno · altezza mozzo 118 m · diametro rotore 163 m · Valore più ricorrente negli elaborati; altri valori: 13 (40), 9 (18), 2 (17)",
+   "sub": "4,50 MW ciascuno · altezza mozzo 118 m · diametro rotore 163 m · Valore più ricorrente negli elaborati; altri valori: 11 (46), 2 (20), 9 (20)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1363252",
+    "url": "https://va.mite.gov.it/File/Documento/929869",
     "page": 3,
-    "document": "Integrazioni del 29/01/2025 - ACB Analisi costi benefici - rev 01_signed",
-    "excerpt": "Soprintendenza BB.CC.AA. di Palermo con parere prot. 0018542 del 20/6/2024. Il layout rimodulato prevede 11 WTG per complessivi 49,5 MW, avendo (i) eliminato n.2 WTG e (ii) dislocato n.9 WTG (rif. elaborato Tav.36 Tavola"
+    "document": "ACB Analisi costi benefici - riccadute socio occupazioni - misure di mitigazione",
+    "excerpt": "per la realizzazione dell’impianto di produzione di energia elettrica da fonte eolica sito nel Comune di Monreale in Provincia di Palermo denominato “Termini”. I 13 aerogeneratori in progetto avranno potenza 4.5 MW ciasc"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1363271",
+    "page": 8,
+    "document": "Integrazioni del 29/01/2025 - REC Relazione di effetto cumulo_signed",
+    "excerpt": "AGRIVOLTAICO"
    }
   },
   {
@@ -96,7 +108,7 @@
     {
      "type": "PEC",
      "value": "tetarinnovabilisrl@pec.it",
-     "occurrences": 1,
+     "occurrences": 3,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1094364",
       "page": 1,
@@ -184,7 +196,78 @@
    }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "Sicilia E Progresso S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "siciliaeprogresso@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/964574",
+      "page": 3,
+      "document": "Osservazioni della Società S&P 8 s.r.l., in data 19/01/2024",
+      "excerpt": "email: siciliaeprogresso@gmail.com pec: siciliaeprogresso@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "siciliaeprogresso@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/964574",
+      "page": 3,
+      "document": "Osservazioni della Società S&P 8 s.r.l., in data 19/01/2024",
+      "excerpt": "C.F.: 06944970828 email: siciliaeprogresso@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "angelo.sapienza@siciliaeprogresso.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/961282",
+      "page": 1,
+      "document": "Osservazioni della Società S&P 12 s.r.l., in data 15/01/2024",
+      "excerpt": "Il referente della società è l’Ing. Angelo Sapienza (Cell: 335 5228504 mail: angelo.sapienza@siciliaeprogresso.it)"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Angelo Sapienza",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3355228504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/961282",
+      "page": 1,
+      "document": "Osservazioni della Società S&P 12 s.r.l., in data 15/01/2024",
+      "excerpt": "Il referente della società è l’Ing. Angelo Sapienza (Cell: 335 5228504 mail: angelo.sapienza@siciliaeprogresso.it)"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
@@ -498,9 +581,9 @@
  },
  "documentazione": {
   "documenti": 358,
-  "pagine": 3201,
+  "pagine": 3420,
   "completa": false,
-  "da_leggere": 58
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -536,7 +619,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "163 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "181 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
