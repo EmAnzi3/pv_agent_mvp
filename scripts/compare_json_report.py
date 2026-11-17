@@ -536,12 +536,64 @@ def write_csv(path: Path, result: dict[str, Any]) -> None:
             ])
 
 
+def _zone_row(record: dict[str, Any], what: str) -> dict[str, Any]:
+    return {
+        "project_key": clean(record.get("project_key")),
+        "region": clean(record.get("region")),
+        "province": clean(record.get("province")),
+        "municipalities": clean(record.get("municipalities")),
+        "title": title_of(record, 300),
+        "proponent": clean(record.get("proponent")),
+        "power_mw": parse_float(record.get("power_mw")),
+        "what": what,
+    }
+
+
+def write_json(path: Path, result: dict[str, Any], since: str = "") -> None:
+    """Compact list of the news for the dashboard «La mia zona» (new projects and progress towards the site).
+
+    Terna aggregates are left out: they are not projects. Lists are capped so the file stays small."""
+    def live(record: dict[str, Any]) -> bool:
+        return not (record.get("is_terna") or record.get("source") == "terna_econnextion")
+
+    nuovi = [_zone_row(r, "nuovo") for r in result["added"] if live(r)][:1500]
+    avanz = []
+    for item in result.get("progress", []):
+        record = item["record"]
+        if not live(record):
+            continue
+        diffs = item.get("diffs") or []
+        main = next((d for d in diffs if d.get("label") == "Fase"), diffs[0] if diffs else {})
+        what = clean(main.get("new")) if main.get("label") == "Fase" else ": ".join(
+            x for x in (clean(main.get("label")), clean(main.get("new"))) if x)
+        avanz.append(_zone_row(record, what or "avanzamento"))
+    payload = {
+        "date": datetime.now().strftime("%Y-%m-%d"),
+        "since": since,
+        "counts": {"nuovi": len(nuovi), "avanzamenti": len(avanz)},
+        "nuovi": nuovi,
+        "avanzamenti": avanz[:1500],
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
+
+def _generated_at(path: Path) -> str:
+    try:
+        data = json.loads(path.read_text(encoding="utf-8-sig"))
+    except (OSError, ValueError):
+        return ""
+    summary = data.get("summary") if isinstance(data, dict) else None
+    return clean((summary or {}).get("generated_at"))[:10]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Confronta due data.json e genera report HTML/CSV.")
     parser.add_argument("--old", required=True)
     parser.add_argument("--new", required=True)
     parser.add_argument("--out-html", required=True)
     parser.add_argument("--out-csv", required=True)
+    parser.add_argument("--out-json", help="news for the dashboard «La mia zona» (docs/changes_latest.json)")
     parser.add_argument("--no-signals", action="store_true", help="skip the «avanzamenti verso il cantiere» section")
     args = parser.parse_args()
 
@@ -564,6 +616,8 @@ def main() -> int:
     html_path.write_text(build_html(result), encoding="utf-8")
 
     write_csv(csv_path, result)
+    if args.out_json:
+        write_json(Path(args.out_json), result, since=_generated_at(Path(args.old)))
 
     print("[compare-json-report]")
     print(f"old_records: {result['old_count']}")

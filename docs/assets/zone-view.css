@@ -1,0 +1,83 @@
+/* «La mia zona» view shared by the PV and wind dashboards (docs/assets/zone-view.js). */
+.zone-bar {
+  position: sticky; top: 0; z-index: 20;
+  background: #ffffff; border-bottom: 1px solid #d9e2ea;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  padding: 10px max(16px, 3vw);
+  display: flex; align-items: flex-end; gap: 14px; flex-wrap: wrap;
+}
+.zone-bar .zone-label { font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #475569; padding-bottom: 10px; }
+.zone-bar label { display: flex; flex-direction: column; gap: 2px; font-size: 11px; color: #64748b; }
+.zone-bar select { font: inherit; font-size: 14px; color: #0f172a; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 10px; min-width: 200px; background: #ffffff; }
+.zone-bar .zone-reset { font: inherit; font-size: 13px; font-weight: 700; padding: 8px 12px; border-radius: 10px; border: 1px solid #0f2a3a; background: #ffffff; color: #0f2a3a; cursor: pointer; }
+.zone-bar .zone-summary { margin-left: auto; font-size: 13px; color: #475569; padding-bottom: 10px; }
+
+.zone-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.zone-kpis > * { min-width: 0; }
+.zone-kpi { background: #ffffff; border: 1px solid #d9e2ea; border-radius: 16px; padding: 14px 18px; }
+.zone-kpi .label { font-size: 12px; color: #64748b; font-weight: 700; }
+.zone-kpi .value { font-size: 28px; font-weight: 800; color: #0f172a; margin: 4px 0 2px; }
+.zone-kpi.primary .value { color: #0f766e; }
+.zone-kpi .note { font-size: 12px; color: #64748b; }
+
+.zone-card { background: #ffffff; border: 1px solid #d9e2ea; border-radius: 18px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.zone-card h2 { margin: 0; font-size: 19px; color: #0f172a; }
+.zone-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.zone-head .small { font-size: 13px; color: #64748b; }
+.near-row { display: grid; grid-template-columns: minmax(0, 2.2fr) 0.7fr minmax(0, 1.4fr) minmax(0, 1.8fr) auto; gap: 12px; align-items: center; padding: 10px 12px; border: 1px solid #e5edf3; border-radius: 12px; font-size: 14px; }
+.near-row.head { border: 0; padding: 0 12px; font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.04em; }
+.near-row .who { display: block; font-size: 12px; color: #64748b; }
+.near-row .mw { text-align: right; font-weight: 800; }
+.near-row .why { font-size: 12px; color: #334155; }
+.near-row .acts { display: flex; gap: 8px; align-items: center; white-space: nowrap; }
+.near-row .acts a { font-size: 13px; font-weight: 700; }
+.phase-pill { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+.phase-pill.alta { background: #d1fae5; color: #065f46; }
+.phase-pill.media { background: #dbeafe; color: #1e3a8a; }
+.zone-more { align-self: flex-start; font: inherit; font-size: 14px; font-weight: 700; color: #0f766e; background: none; border: 0; padding: 4px 0; cursor: pointer; }
+.zone-empty { padding: 14px; color: #64748b; font-size: 14px; }
+
+.zone-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.zone-two > * { min-width: 0; }
+.news-item { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; border-bottom: 1px solid #eef2f6; padding-bottom: 8px; }
+.news-item:last-child { border-bottom: 0; padding-bottom: 0; }
+.news-item .tag { color: #0f766e; font-weight: 700; text-align: right; }
+
+.nat-grid { display: grid; grid-template-columns: 420px minmax(0, 1fr); gap: 20px; align-items: stretch; }
+.nat-grid > * { min-width: 0; }
+.nat-side { display: grid; grid-template-rows: repeat(2, auto); gap: 20px; }
+.tile-map { display: grid; grid-template-columns: repeat(6, 56px); grid-auto-rows: 52px; gap: 5px; justify-content: center; }
+.tile-map button { border-radius: 9px; border: 1px solid transparent; font: inherit; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; padding: 0; cursor: pointer; }
+.tile-map button .c { font-size: 10px; font-weight: 700; }
+.tile-map button .n { font-size: 16px; font-weight: 800; }
+.tile-map button.on { border: 3px solid #0f2a3a; }
+.tile-map button:focus-visible { outline: 3px solid #f59e0b; outline-offset: 1px; }
+.tile-legend { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #64748b; justify-content: center; }
+.tile-legend span.sw { width: 18px; height: 11px; border-radius: 3px; display: inline-block; }
+.hbars { display: flex; flex-direction: column; gap: 8px; }
+.hbar { display: grid; grid-template-columns: minmax(0, 190px) minmax(0, 1fr) 90px; gap: 10px; align-items: center; font-size: 13px; }
+.hbar .track { height: 14px; background: #eef2f6; border-radius: 4px; overflow: hidden; }
+.hbar .fill { height: 14px; background: #0f766e; border-radius: 4px; }
+.hbar .v { text-align: right; font-weight: 700; }
+
+@media (max-width: 900px) {
+  .zone-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .zone-two, .nat-grid { grid-template-columns: 1fr; }
+  .near-row { grid-template-columns: minmax(0, 1fr) auto; }
+  .near-row.head { display: none; }
+  .near-row .why, .near-row .ph { grid-column: 1 / -1; }
+  .zone-bar .zone-summary { margin-left: 0; width: 100%; padding-bottom: 0; }
+}
+
+/* compact header with the national line */
+header.compact { padding-block: 16px 14px; }
+header.compact .hero { grid-template-columns: auto minmax(0, 1fr); align-items: center; }
+header.compact h1 { font-size: 24px; margin: 8px 0 0; }
+.nat-line { justify-self: end; text-align: right; color: rgba(255, 255, 255, 0.86); font-size: 14px; line-height: 1.5; }
+.nat-line strong { color: #ffffff; }
+.zone-section { display: flex; flex-direction: column; gap: 20px; margin-top: 4px; }
+.zone-note { font-size: 12px; color: #64748b; margin: 0 0 10px; }
+@media (max-width: 900px) {
+  header.compact .hero { grid-template-columns: 1fr; }
+  .nat-line { justify-self: start; text-align: left; }
+}

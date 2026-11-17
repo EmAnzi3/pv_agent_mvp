@@ -65,3 +65,9 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 2. Rieseguire una volta il batch globale: la migrazione correggerà il valore storico `DC` già presente nel DB.
 3. Il gate finale verifica automaticamente i cinque record baseline, le province Piemonte e l'assenza di proponenti derivati da frammenti di potenza.
 4. Se il batch chiude con `[run-pipeline] OK`, procedere al merge della PR #3.
+
+## Dashboard: vista «La mia zona» (17/11/2026)
+
+- Pagine `docs/index.html` (template in `app/dashboard_static.py`) e `docs/wind/index.html` aperte sulla zona scelta: barra fissa regione/provincia (chiave browser `alayanRadarZone`), indicatori e progetti vicini al cantiere della zona, avanzamenti e nuovi, tabella completa, quadro nazionale in fondo.
+- Codice comune `docs/assets/zone-view.js` / `.css`: la pagina eolica li carica da `../assets/`, quella FV li incorpora al build.
+- Novità FV: `docs/changes_latest.json` (nuovi progetti e avanzamenti verso il cantiere, senza Terna), scritto a ogni `aggiorna_dashboard_senza_docker.bat` e pubblicato con `docs/data.json`. Finché non esiste, i riquadri mostrano «Disponibile dal prossimo aggiornamento».

@@ -532,7 +532,7 @@ if not exist ".\scripts\compare_json_report.py" (
     exit /b 1
 )
 
-"%PYTHON_EXE%" ".\scripts\compare_json_report.py" --old "%PREVIOUS_DATA%" --new "%DATA_JSON%" --out-html "%CHANGE_HTML%" --out-csv "%CHANGE_CSV%"
+"%PYTHON_EXE%" ".\scripts\compare_json_report.py" --old "%PREVIOUS_DATA%" --new "%DATA_JSON%" --out-html "%CHANGE_HTML%" --out-csv "%CHANGE_CSV%" --out-json ".\docs\changes_latest.json"
 if errorlevel 1 (
     echo.
     echo ERRORE: generazione report cambiamenti fallita.
@@ -562,6 +562,7 @@ if errorlevel 1 (
 echo Dashboard aggiornata:
 echo - docs\data.json
 echo - docs\index.html
+echo - docs\changes_latest.json
 
 echo.
 echo ==========================================================

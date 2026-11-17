@@ -1,10 +1,9 @@
-/* Wind Agent Dashboard: the wind census read with the same sections, filters and table as the PV dashboard.
+/* Wind Agent Dashboard: the wind census read with the same «La mia zona» view, filters and table as the PV dashboard.
    Data (memory branch doc-intel-state, public): wind/census.json, schede/live_index.json, readiness/wind_index.json.
    The verified projects (curated radar) are part of the census: badge «Verificato» with stage, contractors and gaps. */
 (function () {
   'use strict';
   const RAW = 'https://raw.githubusercontent.com/EmAnzi3/pv_agent_mvp/doc-intel-state/';
-  const CHART_COLORS = ['#0f766e', '#1d4ed8', '#334155', '#d97706', '#16a34a', '#7c3aed', '#0e7490', '#b45309', '#475569', '#059669', '#2563eb', '#64748b'];
   const SOURCE_LABEL = {
     mase: 'MASE', puglia_opendata: 'Puglia', sistema_puglia_energia: 'Puglia', basilicata: 'Basilicata',
     campania: 'Campania', calabria: 'Calabria', sardegna: 'Sardegna', sicilia: 'Sicilia', gse_ferx: 'GSE FER X', curato: 'Verificato'
@@ -33,7 +32,6 @@
   const link = v => { const u = safeUrl(v); return u ? `<a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer">Apri</a>` : ''; };
   const titleCase = s => /[a-z]/.test(s) ? s : s.toLowerCase().replace(/(^|[\s'(-])([a-zà-ù])/g, (m, a, b) => a + b.toUpperCase());
   const mwBand = v => toNumber(v) >= 100 ? 'mw-xl' : toNumber(v) >= 50 ? 'mw-lg' : '';
-  const chartColors = n => Array.from({ length: n }, (_, i) => CHART_COLORS[i % CHART_COLORS.length]);
 
   // ---------------------------------------------------------------- reading of a census record
   const isOffshore = r => /offshore/i.test(r.project_type || '');
@@ -99,92 +97,6 @@
   const badgeClass = r => r.source === 'mase' ? 'badge mase' : r.source === 'gse_ferx' ? 'badge gse' : r.source === 'curato' ? 'badge curato' : 'badge';
   const sourceLabel = r => SOURCE_LABEL[r.source] || r.source_label || r.source;
 
-  // ---------------------------------------------------------------- sections
-  function regions() {
-    const by = {};
-    records.filter(isLive).forEach(r => {
-      const k = (r.region || 'n/d').split(' / ')[0];
-      const x = by[k] = by[k] || { region: k, count: 0, mw: 0, off: 0, ready: 0 };
-      if (isOffshore(r)) x.off += toNumber(r.power_mw);
-      else { x.count += 1; x.mw += toNumber(r.power_mw); if (isReady(r)) x.ready += 1; }
-    });
-    // same reading as the PV score: operational MW in GW + 0.05 per project + the macro pipeline (here offshore) / 5 GW
-    return Object.values(by).map(x => Object.assign(x, { score: Math.round((x.mw / 1000 + x.count * 0.05 + x.off / 5000) * 10) / 10 }))
-      .sort((a, b) => b.score - a.score);
-  }
-
-  function initKpis() {
-    const op = operational(), off = offshore();
-    const mw = op.reduce((s, r) => s + toNumber(r.power_mw), 0), offMw = off.reduce((s, r) => s + toNumber(r.power_mw), 0);
-    const sources = new Set(records.map(sourceLabel));
-    setText('heroRecords', fmtNum(op.length)); setText('heroMw', formatItalianNumber(mw, 3)); setText('heroDate', updated);
-    const regional = new Set(records.filter(r => r.source_group === 'regione').map(r => (r.region || '').split(' / ')[0]));
-    setText('censusDate', itDate(updated));
-    setText('heroSources', `MASE, ${regional.size} portali regionali, GSE FER X, verifica manuale`);
-    setText('kpiRecords', fmtNum(op.length)); setText('kpiMw', fmtMw(mw)); setText('kpiOffMw', fmtMw(offMw));
-    setText('kpiOffNote', `${fmtNum(off.length)} progetti: dato separato, in gran parte in scoping o VIA`);
-    setText('kpiSources', fmtNum(sources.size)); setText('kpiDate', updated);
-    setText('kpiReady', fmtNum(records.filter(r => isLive(r) && isReady(r)).length));
-    const fx = records.filter(r => (r.ferx || []).length);
-    setText('kpiFerx', fmtNum(fx.length));
-    setText('kpiFerxNote', `di cui ${fmtNum(fx.filter(r => r.source === 'gse_ferx').length)} senza procedura trovata`);
-    setText('kpiVerified', fmtNum(new Set(records.filter(r => r.curato).map(r => r.curato.id)).size));
-    setText('kpiCards', fmtNum(records.filter(r => schedeIndex[r.project_key]).length));
-    setText('kpiArchived', fmtNum(summary.archiviati_esclusi || 0));
-    setText('kpiArchivedNote', `${fmtMw(summary.mw_archiviati || 0)} con tutte le procedure archiviate`);
-  }
-
-  function initRegions() {
-    document.getElementById('regionBody').innerHTML = regions().slice(0, 20).map(x => `<tr>
-      <td><strong>${escapeHtml(x.region)}</strong></td><td class="num">${formatItalianNumber(x.score, 1)}</td>
-      <td class="num">${fmtNum(x.count)}</td><td class="num">${fmtMw(x.mw)}</td><td class="num">${fmtMw(x.off)}</td>
-      <td class="num">${fmtNum(x.ready)}</td></tr>`).join('');
-  }
-
-  function chartOptions(title, isMw = false) {
-    return {
-      responsive: true, maintainAspectRatio: true,
-      plugins: {
-        legend: { display: false },
-        title: { display: true, text: title, color: '#334155', font: { size: 15, weight: 'bold' } },
-        tooltip: { backgroundColor: '#0f172a', padding: 10, callbacks: { label: c => isMw ? fmtMw(c.parsed.y) : fmtNum(c.parsed.y) } }
-      },
-      scales: {
-        x: { grid: { display: false }, ticks: { color: '#64748b' } },
-        y: { beginAtZero: true, grid: { color: '#e8edf2' }, ticks: { color: '#64748b', callback: v => isMw ? fmtMw(v).replace(' MW', '') : fmtNum(v) } }
-      }
-    };
-  }
-  function bar(id, rows, label, key, title, isMw) {
-    if (!window.Chart) return;
-    new Chart(document.getElementById(id), {
-      type: 'bar',
-      data: { labels: rows.map(x => x.label), datasets: [{ label, data: rows.map(x => x[key]), backgroundColor: chartColors(rows.length), borderRadius: 8 }] },
-      options: chartOptions(title, isMw)
-    });
-  }
-  function initCharts() {
-    if (!window.Chart) return;
-    const reg = regions();
-    bar('regionPriorityChart', reg.slice(0, 12).map(x => ({ label: x.region, v: x.score })), 'Score priorità', 'v', 'Indice priorità commerciale per regione');
-    bar('operationalCountChart', [...reg].sort((a, b) => b.count - a.count).slice(0, 12).map(x => ({ label: x.region, v: x.count })), 'Progetti operativi', 'v', 'Pipeline operativa: numero progetti per regione');
-    const ph = {};
-    operational().forEach(r => { const k = phaseGroup(r); ph[k] = (ph[k] || 0) + toNumber(r.power_mw); });
-    bar('phaseMwChart', PHASE_ORDER.filter(k => ph[k]).map(k => ({ label: k.replace('Post-VIA: ', ''), v: ph[k] })), 'MW', 'v', 'Pipeline operativa: MW per fase autorizzativa', true);
-    bar('offshoreMwChart', [...reg].filter(x => x.off).sort((a, b) => b.off - a.off).slice(0, 12).map(x => ({ label: x.region, v: x.off })), 'MW', 'v', 'Pipeline offshore: MW per regione', true);
-    const src = {};
-    records.filter(isLive).forEach(r => { const k = sourceLabel(r); src[k] = (src[k] || 0) + 1; });
-    const s = Object.entries(src).sort((a, b) => b[1] - a[1]);
-    new Chart(document.getElementById('sourceChart'), {
-      type: 'doughnut',
-      data: { labels: s.map(x => x[0]), datasets: [{ label: 'Record', data: s.map(x => x[1]), backgroundColor: chartColors(s.length), borderWidth: 0 }] },
-      options: { responsive: true, cutout: '62%', plugins: {
-        legend: { position: 'bottom', labels: { boxWidth: 12, color: '#64748b' } },
-        title: { display: true, text: 'Distribuzione progetti per fonte', color: '#334155', font: { size: 15, weight: 'bold' } },
-        tooltip: { backgroundColor: '#0f172a', padding: 10 } } }
-    });
-  }
-
   function row(r, top) {
     const prop = text(r.proponent) ? escapeHtml(r.proponent) : '<span class="muted">n/d</span>';
     // like the PV 'Tipo' column: the procedure, not the whole status history (that is in the card and the CSV)
@@ -200,14 +112,6 @@
          `<td class="project-title"><strong>${escapeHtml(displayTitle(r))}</strong></td>`, `<td class="proponent-col">${prop}</td>`];
     return `<tr class="${mwBand(r.power_mw)}">${cells.join('')}<td>${ph}</td><td class="num">${fmtMw(r.power_mw)}</td>
       <td><span class="sc-cell">${link(r.url)}${badges(r)}</span></td></tr>`;
-  }
-
-  function initTop() {
-    const rank = r => (ready[r.project_key] || {}).score || 0;
-    const top = operational().filter(r => isReady(r) || r.curato)
-      .sort((a, b) => rank(b) - rank(a) || toNumber(b.power_mw) - toNumber(a.power_mw)).slice(0, 25);
-    document.getElementById('topBody').innerHTML = top.map(r => row(r, true)).join('') ||
-      '<tr><td colspan="9" class="empty">Nessun progetto con segnali di cantiere.</td></tr>';
   }
 
   // ---------------------------------------------------------------- pipeline
@@ -314,6 +218,34 @@
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
   }
 
+  // ---------------------------------------------------------------- «la mia zona»
+  let zoneChanges = { loaded: false };
+  const zoneItem = r => ({
+    key: r.project_key, region: regionOf(r), provinces: provincesOf(r), place: r.municipalities, proponent: r.proponent,
+    title: displayTitle(r), mw: r.power_mw, url: r.url, rd: ready[r.project_key] || null,
+    card: !!schedeIndex[r.project_key], file: schedeIndex[r.project_key]
+  });
+  const changeItem = (m, what) => ({
+    key: m.project_key, region: regionOf(m), provinces: provincesOf(m), place: m.municipalities, proponent: m.proponent,
+    title: m.title, mw: m.power_mw, what
+  });
+  function zoneActions(x) {
+    const u = safeUrl(x.url);
+    return (x.file ? `<button class="sc-btn" type="button" data-scheda="${escapeHtml(x.file.file)}">Scheda</button>` : '')
+      + (u ? `<a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer">Portale</a>` : '');
+  }
+  function zoneNational() {
+    const ph = {}, off = {};
+    operational().forEach(r => { const k = phaseGroup(r); ph[k] = (ph[k] || 0) + toNumber(r.power_mw); });
+    offshore().forEach(r => { const k = regionOf(r) || 'n/d'; off[k] = (off[k] || 0) + toNumber(r.power_mw); });
+    return [
+      { title: 'MW onshore per fase autorizzativa', note: 'Italia', unit: 'mw',
+        rows: PHASE_ORDER.filter(k => ph[k]).map(k => ({ label: k.replace('Post-VIA: ', 'Post-VIA ').replace('Verificato', 'Verificati'), value: ph[k] })) },
+      { title: 'MW offshore per regione', note: 'prime 5, pipeline separata', unit: 'mw',
+        rows: Object.entries(off).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([label, value]) => ({ label, value })) }
+    ];
+  }
+
   // ---------------------------------------------------------------- start
   const getJson = u => fetch(u, { cache: 'no-cache' }).then(r => r.ok ? r.json() : {}).catch(() => ({}));
   document.addEventListener('click', e => {
@@ -336,7 +268,7 @@
         document.getElementById('pipelineBody').innerHTML = '<tr><td colspan="9" class="empty">Censimento non disponibile al momento.</td></tr>';
         return;
       }
-      initKpis(); initRegions(); initTop(); initFilters(); renderPipeline(); initCharts();
+      initFilters(); renderPipeline();
       // registered first, so the province list is updated before the table is redrawn
       document.getElementById('regionFilter').addEventListener('change', refreshProvinces);
       document.getElementById('provinceFilter').addEventListener('change', () => {
@@ -353,5 +285,26 @@
         document.getElementById(id).addEventListener('change', renderPipeline);
       });
       document.getElementById('exportFilteredCsv').addEventListener('click', exportCsv);
+      window.ZoneView.mount({
+        items: () => operational().map(zoneItem),
+        changes: () => zoneChanges,
+        actions: zoneActions,
+        national: zoneNational,
+        provinceLabel: provLabel,
+        updated: () => updated,
+        scopeNote: 'onshore',
+        showNear: () => { const k = document.getElementById('dataKindFilter'); k.value = 'cantiere'; k.dispatchEvent(new Event('change')); }
+      });
+      getJson(RAW + 'wind/changes/latest.json').then(c => {
+        if (!c || !c.date) return;
+        const what = m => {
+          const ch = (m.changes || []).find(x => x.progress) || (m.changes || [])[0] || {};
+          return ch.field === 'procedure_status' ? text(ch.new) : [ch.label, ch.new].filter(Boolean).join(': ');
+        };
+        zoneChanges = { loaded: true, date: c.date, since: c.previous_census,
+          nuovi: (c.nuovi || []).filter(m => !m.secondaria).map(m => changeItem(m, 'nuovo')),
+          avanzamenti: (c.modificati || []).filter(m => m.progress).map(m => changeItem(m, what(m))) };
+        window.ZoneView.render();
+      });
     });
 })();
