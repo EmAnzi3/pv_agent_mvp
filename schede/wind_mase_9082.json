@@ -1,0 +1,3254 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9082",
+ "title": "Progetto per la produzione di energia elettrica da fonte eolica, denominato \"Energia Is Coris\", costituito da 9 aerogeneratori di potenza complessiva pari a 55,8 MWp, da realizzarsi nei comuni di Villamassargia (CI), Narcao (CI), Musei (CI).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9082",
+ "source": "mase",
+ "updated": "2026-11-17",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "55,8 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9082",
+    "excerpt": "55,8 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "9",
+   "status": "da documenti",
+   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 3 (24), 145 (11), 154 (11)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/735129",
+    "page": 1,
+    "document": "Avviso al pubblico del 12/12/2022",
+    "excerpt": "mediante lo sfruttamento del vento nel territorio comunale di Villamassargia (SU) , Narcao (SU), e Musei (SU), costituito da 9 aerogeneratori della potenza nominale di 5,33 MW, per una potenza complessiva di 48 MW compre"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1350811",
+    "page": 45,
+    "document": "Integrazioni del 16/01/2026 - Piano di manutenzione generale",
+    "excerpt": "segnalazione per gli aerei ed un’eventuale piattaforma di supporto per la discesa da elicottero (per l’accesso alle turbine off-shore)."
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 28/06/2022 (natura non determinabile) · Valore più ricorrente negli elaborati; altri valori: 8 mesi (7), 24 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/745189",
+    "page": 52,
+    "document": "WIND01_REL01_-_Relazione_Tecnica_Generale_Rev1-signed",
+    "excerpt": "− il montaggio degli aerogeneratori e la loro messa in esercizio. La durata complessiva di queste attività si stima in circa 12 mesi dall’apertura del cantiere."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "CI",
+  "comuni": [
+   "Villamassargia",
+   "Narcao",
+   "Musei"
+  ],
+  "coordinate": {
+   "lat": 39.22242,
+   "lon": 8.63042,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (72 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1350803",
+    "page": 23,
+    "document": "Integrazioni del 16/01/2026 - Relazione interventi su viabilità di trasporto turbine - Road Survey",
+    "excerpt": "OB.16 Coord. 39°11'40.85\"N - 8°37'21.95\"E Site access 1"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.22242,8.63042",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Fred. Olsen Renewables Italy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "corrado.bacco@fredolsen.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350804",
+      "page": 25,
+      "document": "Integrazioni del 16/01/2026 - Valutazione preliminare della risorsa eolica",
+      "excerpt": "+39 335 7722878 Corrado.Bacco@fredolsen.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9082"
+   }
+  },
+  {
+   "name": "3E Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1176934",
+    "page": 2,
+    "document": "Integrazioni del 24/10/2024 - Relazione asseverata di compatibilità idraulica",
+    "excerpt": "Progettazione 3E Ingegneria srl"
+   }
+  },
+  {
+   "name": "Geol. Cosima Atzori",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1350800",
+    "page": 1,
+    "document": "Integrazioni del 16/01/2026 - Relazione Geologica",
+    "excerpt": "Relazione geologica Dott.ssa Geol. Cosima Atzori"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "LA Molisana Trasporti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01463480705",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Rio Lecine 30 86014 Guardiaregia Cb",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@molisanatrasporti.it",
+     "occurrences": 38,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350803",
+      "page": 3,
+      "document": "Integrazioni del 16/01/2026 - Relazione interventi su viabilità di trasporto turbine - Road Survey",
+      "excerpt": "www.molisanatrasporti.com info@molisanatrasporti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Sartelco Sistemi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "05506930964",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Torri Bianche 1 20871 Vimercate Mb",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sistemi@sartelco.it",
+     "occurrences": 30,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350804",
+      "page": 25,
+      "document": "Integrazioni del 16/01/2026 - Valutazione preliminare della risorsa eolica",
+      "excerpt": "Via Torri Bianche, 1 - 20871 Vimercate (MB) - Italy Tel. +39-039-62905.1 - Fax. +39-039-62905.99 C.F. e P. IVA IT05506930964 - Cert. ISO 9001:2015 e-mail sistemi@sartelco.it - www.sartelco.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "c.giunta@sartelco.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350804",
+      "page": 25,
+      "document": "Integrazioni del 16/01/2026 - Valutazione preliminare della risorsa eolica",
+      "excerpt": "c.giunta@sartelco.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "d.sartini@sartelco.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350804",
+      "page": 25,
+      "document": "Integrazioni del 16/01/2026 - Valutazione preliminare della risorsa eolica",
+      "excerpt": "Tel.039-62905.1 d.sartini@sartelco.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "tecnico@sartelco.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350804",
+      "page": 30,
+      "document": "Integrazioni del 16/01/2026 - Valutazione preliminare della risorsa eolica",
+      "excerpt": "Status Email Address |tecnico@sartelco.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Idnamic Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01474550629",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Strada Statale Area Pip Ss 212 Km 9 82020 Pietrelcina Bn",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "italia@idnamic.com",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350804",
+      "page": 56,
+      "document": "Integrazioni del 16/01/2026 - Valutazione preliminare della risorsa eolica",
+      "excerpt": "Tel. +39 0824 983550 E-mail: italia@idnamic.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0824983550",
+     "occurrences": 12,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350804",
+      "page": 56,
+      "document": "Integrazioni del 16/01/2026 - Valutazione preliminare della risorsa eolica",
+      "excerpt": "82020 Pietrelcina (BN) – ITALY Tel. +39 0824 983550"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Ing. Luca Salvadori",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energhiabia@pec.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/735113",
+      "page": 1,
+      "document": "Premessa e Quadro di riferimento programmatico",
+      "excerpt": "Dott. Ing. Luca Salvadori energhiabia@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Giulio Casu",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "nerghabio@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350921",
+      "page": 1,
+      "document": "Integrazioni del 16/01/2026 - Inquadramento su DBMP Parco eolico",
+      "excerpt": "‘energhiabia@gmailcom nerghabio@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "energhiabia@gmall.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350914",
+      "page": 1,
+      "document": "Integrazioni del 16/01/2026 - Inquadramento Territoriale",
+      "excerpt": "Dott. Giulio Casu + 39 347 596 5654 energhiabia@gmall.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "cnerghiaba@gmat.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350941",
+      "page": 1,
+      "document": "Integrazioni del 16/01/2026 - Inquadramento si PAI Line Elettrica",
+      "excerpt": "1 Dott. Giulio Casu + 39 347 596 5654 cnerghiaba@gmat.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ia@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1350942",
+      "page": 1,
+      "document": "Integrazioni del 16/01/2026 - Inquadramento si PAI Parco eolico",
+      "excerpt": "¥ } al “ Dott. Giulio Casu IO + 39 347 596 5654 Je — rf ia@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geotech S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@geotech-srl.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1176969",
+      "page": 6,
+      "document": "Integrazioni del 24/10/2024 - Accordo utilizzo opere condivise di collegamnto alla futura stazione elettrica di smistamento della RTN \"Museu\" da collegare in entra-esce alla linea RTN 150 kV Iglesias2",
+      "excerpt": "Via Nani, 7 Morbegno (SO) E-mail: info@geotech-srl.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 28/06/2022, ma l'iter è proseguito; ultimo documento o atto del 06/08/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "28/06/2022",
+    "dettaglio": "natura non determinabile",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1176969",
+     "page": 1,
+     "document": "Integrazioni del 24/10/2024 - Accordo utilizzo opere condivise di collegamnto alla futura stazione elettrica di smistamento della RTN \"Museu\" da collegare in entra-esce alla linea RTN 150 kV Iglesias2",
+     "excerpt": "d) ESNA ha protocollato l’avvio lavori il 28/06/2022;"
+    }
+   },
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "02/04/1968 → 12/07/2011",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1350811",
+     "page": 149,
+     "document": "Integrazioni del 16/01/2026 - Piano di manutenzione generale",
+     "excerpt": ""
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di giugno 2023",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 12 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/745189",
+     "page": 52,
+     "document": "WIND01_REL01_-_Relazione_Tecnica_Generale_Rev1-signed",
+     "excerpt": "− il montaggio degli aerogeneratori e la loro messa in esercizio. La durata complessiva di queste attività si stima in circa 12 mesi dall’apertura del cantiere."
+    }
+   }
+  ],
+  "durata_cantiere": "12 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Legge",
+    "start": 249.57,
+    "end": 464.34,
+    "level": 0,
+    "dates": [
+     "1989-01-09",
+     "2006-11-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Lavori Pubblici",
+    "start": 0.0,
+    "end": 0.33,
+    "level": 0,
+    "dates": [
+     "1968-04-02",
+     "1968-04-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "C.M. Lavori Pubblici",
+    "start": 220.46,
+    "end": 410.39,
+    "level": 0,
+    "dates": [
+     "1986-08-08",
+     "2002-05-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "febbraio 2012, n. 11; Decreto Legge",
+    "start": 517.96,
+    "end": 519.97,
+    "level": 0,
+    "dates": [
+     "2011-05-13",
+     "2011-07-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Riferimenti normativi: Legge",
+    "start": 128.65,
+    "end": 343.42,
+    "level": 0,
+    "dates": [
+     "1989-01-09",
+     "2006-11-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "e Trasporti",
+    "start": 289.44,
+    "end": 316.41,
+    "level": 0,
+    "dates": [
+     "2002-05-29",
+     "2004-08-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Legge",
+    "start": 397.04,
+    "end": 399.05,
+    "level": 0,
+    "dates": [
+     "2011-05-13",
+     "2011-07-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Ufficiale CNR",
+    "start": 0.0,
+    "end": 27.14,
+    "level": 0,
+    "dates": [
+     "1978-04-26",
+     "1980-07-28"
+    ],
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 519.97,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1350811",
+   "page": 149,
+   "document": "Integrazioni del 16/01/2026 - Piano di manutenzione generale",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "apr 68",
+     "start": -0.033,
+     "end": 0.967
+    },
+    {
+     "label": "mag 68",
+     "start": 0.967,
+     "end": 1.967
+    },
+    {
+     "label": "giu 68",
+     "start": 1.967,
+     "end": 2.967
+    },
+    {
+     "label": "lug 68",
+     "start": 2.967,
+     "end": 3.967
+    },
+    {
+     "label": "ago 68",
+     "start": 3.967,
+     "end": 4.967
+    },
+    {
+     "label": "set 68",
+     "start": 4.967,
+     "end": 5.967
+    },
+    {
+     "label": "ott 68",
+     "start": 5.967,
+     "end": 6.967
+    },
+    {
+     "label": "nov 68",
+     "start": 6.967,
+     "end": 7.967
+    },
+    {
+     "label": "dic 68",
+     "start": 7.967,
+     "end": 8.967
+    },
+    {
+     "label": "gen 69",
+     "start": 8.967,
+     "end": 9.967
+    },
+    {
+     "label": "feb 69",
+     "start": 9.967,
+     "end": 10.967
+    },
+    {
+     "label": "mar 69",
+     "start": 10.967,
+     "end": 11.967
+    },
+    {
+     "label": "apr 69",
+     "start": 11.967,
+     "end": 12.967
+    },
+    {
+     "label": "mag 69",
+     "start": 12.967,
+     "end": 13.967
+    },
+    {
+     "label": "giu 69",
+     "start": 13.967,
+     "end": 14.967
+    },
+    {
+     "label": "lug 69",
+     "start": 14.967,
+     "end": 15.967
+    },
+    {
+     "label": "ago 69",
+     "start": 15.967,
+     "end": 16.967
+    },
+    {
+     "label": "set 69",
+     "start": 16.967,
+     "end": 17.967
+    },
+    {
+     "label": "ott 69",
+     "start": 17.967,
+     "end": 18.967
+    },
+    {
+     "label": "nov 69",
+     "start": 18.967,
+     "end": 19.967
+    },
+    {
+     "label": "dic 69",
+     "start": 19.967,
+     "end": 20.967
+    },
+    {
+     "label": "gen 70",
+     "start": 20.967,
+     "end": 21.967
+    },
+    {
+     "label": "feb 70",
+     "start": 21.967,
+     "end": 22.967
+    },
+    {
+     "label": "mar 70",
+     "start": 22.967,
+     "end": 23.967
+    },
+    {
+     "label": "apr 70",
+     "start": 23.967,
+     "end": 24.967
+    },
+    {
+     "label": "mag 70",
+     "start": 24.967,
+     "end": 25.967
+    },
+    {
+     "label": "giu 70",
+     "start": 25.967,
+     "end": 26.967
+    },
+    {
+     "label": "lug 70",
+     "start": 26.967,
+     "end": 27.967
+    },
+    {
+     "label": "ago 70",
+     "start": 27.967,
+     "end": 28.967
+    },
+    {
+     "label": "set 70",
+     "start": 28.967,
+     "end": 29.967
+    },
+    {
+     "label": "ott 70",
+     "start": 29.967,
+     "end": 30.967
+    },
+    {
+     "label": "nov 70",
+     "start": 30.967,
+     "end": 31.967
+    },
+    {
+     "label": "dic 70",
+     "start": 31.967,
+     "end": 32.967
+    },
+    {
+     "label": "gen 71",
+     "start": 32.967,
+     "end": 33.967
+    },
+    {
+     "label": "feb 71",
+     "start": 33.967,
+     "end": 34.967
+    },
+    {
+     "label": "mar 71",
+     "start": 34.967,
+     "end": 35.967
+    },
+    {
+     "label": "apr 71",
+     "start": 35.967,
+     "end": 36.967
+    },
+    {
+     "label": "mag 71",
+     "start": 36.967,
+     "end": 37.967
+    },
+    {
+     "label": "giu 71",
+     "start": 37.967,
+     "end": 38.967
+    },
+    {
+     "label": "lug 71",
+     "start": 38.967,
+     "end": 39.967
+    },
+    {
+     "label": "ago 71",
+     "start": 39.967,
+     "end": 40.967
+    },
+    {
+     "label": "set 71",
+     "start": 40.967,
+     "end": 41.967
+    },
+    {
+     "label": "ott 71",
+     "start": 41.967,
+     "end": 42.967
+    },
+    {
+     "label": "nov 71",
+     "start": 42.967,
+     "end": 43.967
+    },
+    {
+     "label": "dic 71",
+     "start": 43.967,
+     "end": 44.967
+    },
+    {
+     "label": "gen 72",
+     "start": 44.967,
+     "end": 45.967
+    },
+    {
+     "label": "feb 72",
+     "start": 45.967,
+     "end": 46.967
+    },
+    {
+     "label": "mar 72",
+     "start": 46.967,
+     "end": 47.967
+    },
+    {
+     "label": "apr 72",
+     "start": 47.967,
+     "end": 48.967
+    },
+    {
+     "label": "mag 72",
+     "start": 48.967,
+     "end": 49.967
+    },
+    {
+     "label": "giu 72",
+     "start": 49.967,
+     "end": 50.967
+    },
+    {
+     "label": "lug 72",
+     "start": 50.967,
+     "end": 51.967
+    },
+    {
+     "label": "ago 72",
+     "start": 51.967,
+     "end": 52.967
+    },
+    {
+     "label": "set 72",
+     "start": 52.967,
+     "end": 53.967
+    },
+    {
+     "label": "ott 72",
+     "start": 53.967,
+     "end": 54.967
+    },
+    {
+     "label": "nov 72",
+     "start": 54.967,
+     "end": 55.967
+    },
+    {
+     "label": "dic 72",
+     "start": 55.967,
+     "end": 56.967
+    },
+    {
+     "label": "gen 73",
+     "start": 56.967,
+     "end": 57.967
+    },
+    {
+     "label": "feb 73",
+     "start": 57.967,
+     "end": 58.967
+    },
+    {
+     "label": "mar 73",
+     "start": 58.967,
+     "end": 59.967
+    },
+    {
+     "label": "apr 73",
+     "start": 59.967,
+     "end": 60.967
+    },
+    {
+     "label": "mag 73",
+     "start": 60.967,
+     "end": 61.967
+    },
+    {
+     "label": "giu 73",
+     "start": 61.967,
+     "end": 62.967
+    },
+    {
+     "label": "lug 73",
+     "start": 62.967,
+     "end": 63.967
+    },
+    {
+     "label": "ago 73",
+     "start": 63.967,
+     "end": 64.967
+    },
+    {
+     "label": "set 73",
+     "start": 64.967,
+     "end": 65.967
+    },
+    {
+     "label": "ott 73",
+     "start": 65.967,
+     "end": 66.967
+    },
+    {
+     "label": "nov 73",
+     "start": 66.967,
+     "end": 67.967
+    },
+    {
+     "label": "dic 73",
+     "start": 67.967,
+     "end": 68.967
+    },
+    {
+     "label": "gen 74",
+     "start": 68.967,
+     "end": 69.967
+    },
+    {
+     "label": "feb 74",
+     "start": 69.967,
+     "end": 70.967
+    },
+    {
+     "label": "mar 74",
+     "start": 70.967,
+     "end": 71.967
+    },
+    {
+     "label": "apr 74",
+     "start": 71.967,
+     "end": 72.967
+    },
+    {
+     "label": "mag 74",
+     "start": 72.967,
+     "end": 73.967
+    },
+    {
+     "label": "giu 74",
+     "start": 73.967,
+     "end": 74.967
+    },
+    {
+     "label": "lug 74",
+     "start": 74.967,
+     "end": 75.967
+    },
+    {
+     "label": "ago 74",
+     "start": 75.967,
+     "end": 76.967
+    },
+    {
+     "label": "set 74",
+     "start": 76.967,
+     "end": 77.967
+    },
+    {
+     "label": "ott 74",
+     "start": 77.967,
+     "end": 78.967
+    },
+    {
+     "label": "nov 74",
+     "start": 78.967,
+     "end": 79.967
+    },
+    {
+     "label": "dic 74",
+     "start": 79.967,
+     "end": 80.967
+    },
+    {
+     "label": "gen 75",
+     "start": 80.967,
+     "end": 81.967
+    },
+    {
+     "label": "feb 75",
+     "start": 81.967,
+     "end": 82.967
+    },
+    {
+     "label": "mar 75",
+     "start": 82.967,
+     "end": 83.967
+    },
+    {
+     "label": "apr 75",
+     "start": 83.967,
+     "end": 84.967
+    },
+    {
+     "label": "mag 75",
+     "start": 84.967,
+     "end": 85.967
+    },
+    {
+     "label": "giu 75",
+     "start": 85.967,
+     "end": 86.967
+    },
+    {
+     "label": "lug 75",
+     "start": 86.967,
+     "end": 87.967
+    },
+    {
+     "label": "ago 75",
+     "start": 87.967,
+     "end": 88.967
+    },
+    {
+     "label": "set 75",
+     "start": 88.967,
+     "end": 89.967
+    },
+    {
+     "label": "ott 75",
+     "start": 89.967,
+     "end": 90.967
+    },
+    {
+     "label": "nov 75",
+     "start": 90.967,
+     "end": 91.967
+    },
+    {
+     "label": "dic 75",
+     "start": 91.967,
+     "end": 92.967
+    },
+    {
+     "label": "gen 76",
+     "start": 92.967,
+     "end": 93.967
+    },
+    {
+     "label": "feb 76",
+     "start": 93.967,
+     "end": 94.967
+    },
+    {
+     "label": "mar 76",
+     "start": 94.967,
+     "end": 95.967
+    },
+    {
+     "label": "apr 76",
+     "start": 95.967,
+     "end": 96.967
+    },
+    {
+     "label": "mag 76",
+     "start": 96.967,
+     "end": 97.967
+    },
+    {
+     "label": "giu 76",
+     "start": 97.967,
+     "end": 98.967
+    },
+    {
+     "label": "lug 76",
+     "start": 98.967,
+     "end": 99.967
+    },
+    {
+     "label": "ago 76",
+     "start": 99.967,
+     "end": 100.967
+    },
+    {
+     "label": "set 76",
+     "start": 100.967,
+     "end": 101.967
+    },
+    {
+     "label": "ott 76",
+     "start": 101.967,
+     "end": 102.967
+    },
+    {
+     "label": "nov 76",
+     "start": 102.967,
+     "end": 103.967
+    },
+    {
+     "label": "dic 76",
+     "start": 103.967,
+     "end": 104.967
+    },
+    {
+     "label": "gen 77",
+     "start": 104.967,
+     "end": 105.967
+    },
+    {
+     "label": "feb 77",
+     "start": 105.967,
+     "end": 106.967
+    },
+    {
+     "label": "mar 77",
+     "start": 106.967,
+     "end": 107.967
+    },
+    {
+     "label": "apr 77",
+     "start": 107.967,
+     "end": 108.967
+    },
+    {
+     "label": "mag 77",
+     "start": 108.967,
+     "end": 109.967
+    },
+    {
+     "label": "giu 77",
+     "start": 109.967,
+     "end": 110.967
+    },
+    {
+     "label": "lug 77",
+     "start": 110.967,
+     "end": 111.967
+    },
+    {
+     "label": "ago 77",
+     "start": 111.967,
+     "end": 112.967
+    },
+    {
+     "label": "set 77",
+     "start": 112.967,
+     "end": 113.967
+    },
+    {
+     "label": "ott 77",
+     "start": 113.967,
+     "end": 114.967
+    },
+    {
+     "label": "nov 77",
+     "start": 114.967,
+     "end": 115.967
+    },
+    {
+     "label": "dic 77",
+     "start": 115.967,
+     "end": 116.967
+    },
+    {
+     "label": "gen 78",
+     "start": 116.967,
+     "end": 117.967
+    },
+    {
+     "label": "feb 78",
+     "start": 117.967,
+     "end": 118.967
+    },
+    {
+     "label": "mar 78",
+     "start": 118.967,
+     "end": 119.967
+    },
+    {
+     "label": "apr 78",
+     "start": 119.967,
+     "end": 120.967
+    },
+    {
+     "label": "mag 78",
+     "start": 120.967,
+     "end": 121.967
+    },
+    {
+     "label": "giu 78",
+     "start": 121.967,
+     "end": 122.967
+    },
+    {
+     "label": "lug 78",
+     "start": 122.967,
+     "end": 123.967
+    },
+    {
+     "label": "ago 78",
+     "start": 123.967,
+     "end": 124.967
+    },
+    {
+     "label": "set 78",
+     "start": 124.967,
+     "end": 125.967
+    },
+    {
+     "label": "ott 78",
+     "start": 125.967,
+     "end": 126.967
+    },
+    {
+     "label": "nov 78",
+     "start": 126.967,
+     "end": 127.967
+    },
+    {
+     "label": "dic 78",
+     "start": 127.967,
+     "end": 128.967
+    },
+    {
+     "label": "gen 79",
+     "start": 128.967,
+     "end": 129.967
+    },
+    {
+     "label": "feb 79",
+     "start": 129.967,
+     "end": 130.967
+    },
+    {
+     "label": "mar 79",
+     "start": 130.967,
+     "end": 131.967
+    },
+    {
+     "label": "apr 79",
+     "start": 131.967,
+     "end": 132.967
+    },
+    {
+     "label": "mag 79",
+     "start": 132.967,
+     "end": 133.967
+    },
+    {
+     "label": "giu 79",
+     "start": 133.967,
+     "end": 134.967
+    },
+    {
+     "label": "lug 79",
+     "start": 134.967,
+     "end": 135.967
+    },
+    {
+     "label": "ago 79",
+     "start": 135.967,
+     "end": 136.967
+    },
+    {
+     "label": "set 79",
+     "start": 136.967,
+     "end": 137.967
+    },
+    {
+     "label": "ott 79",
+     "start": 137.967,
+     "end": 138.967
+    },
+    {
+     "label": "nov 79",
+     "start": 138.967,
+     "end": 139.967
+    },
+    {
+     "label": "dic 79",
+     "start": 139.967,
+     "end": 140.967
+    },
+    {
+     "label": "gen 80",
+     "start": 140.967,
+     "end": 141.967
+    },
+    {
+     "label": "feb 80",
+     "start": 141.967,
+     "end": 142.967
+    },
+    {
+     "label": "mar 80",
+     "start": 142.967,
+     "end": 143.967
+    },
+    {
+     "label": "apr 80",
+     "start": 143.967,
+     "end": 144.967
+    },
+    {
+     "label": "mag 80",
+     "start": 144.967,
+     "end": 145.967
+    },
+    {
+     "label": "giu 80",
+     "start": 145.967,
+     "end": 146.967
+    },
+    {
+     "label": "lug 80",
+     "start": 146.967,
+     "end": 147.967
+    },
+    {
+     "label": "ago 80",
+     "start": 147.967,
+     "end": 148.967
+    },
+    {
+     "label": "set 80",
+     "start": 148.967,
+     "end": 149.967
+    },
+    {
+     "label": "ott 80",
+     "start": 149.967,
+     "end": 150.967
+    },
+    {
+     "label": "nov 80",
+     "start": 150.967,
+     "end": 151.967
+    },
+    {
+     "label": "dic 80",
+     "start": 151.967,
+     "end": 152.967
+    },
+    {
+     "label": "gen 81",
+     "start": 152.967,
+     "end": 153.967
+    },
+    {
+     "label": "feb 81",
+     "start": 153.967,
+     "end": 154.967
+    },
+    {
+     "label": "mar 81",
+     "start": 154.967,
+     "end": 155.967
+    },
+    {
+     "label": "apr 81",
+     "start": 155.967,
+     "end": 156.967
+    },
+    {
+     "label": "mag 81",
+     "start": 156.967,
+     "end": 157.967
+    },
+    {
+     "label": "giu 81",
+     "start": 157.967,
+     "end": 158.967
+    },
+    {
+     "label": "lug 81",
+     "start": 158.967,
+     "end": 159.967
+    },
+    {
+     "label": "ago 81",
+     "start": 159.967,
+     "end": 160.967
+    },
+    {
+     "label": "set 81",
+     "start": 160.967,
+     "end": 161.967
+    },
+    {
+     "label": "ott 81",
+     "start": 161.967,
+     "end": 162.967
+    },
+    {
+     "label": "nov 81",
+     "start": 162.967,
+     "end": 163.967
+    },
+    {
+     "label": "dic 81",
+     "start": 163.967,
+     "end": 164.967
+    },
+    {
+     "label": "gen 82",
+     "start": 164.967,
+     "end": 165.967
+    },
+    {
+     "label": "feb 82",
+     "start": 165.967,
+     "end": 166.967
+    },
+    {
+     "label": "mar 82",
+     "start": 166.967,
+     "end": 167.967
+    },
+    {
+     "label": "apr 82",
+     "start": 167.967,
+     "end": 168.967
+    },
+    {
+     "label": "mag 82",
+     "start": 168.967,
+     "end": 169.967
+    },
+    {
+     "label": "giu 82",
+     "start": 169.967,
+     "end": 170.967
+    },
+    {
+     "label": "lug 82",
+     "start": 170.967,
+     "end": 171.967
+    },
+    {
+     "label": "ago 82",
+     "start": 171.967,
+     "end": 172.967
+    },
+    {
+     "label": "set 82",
+     "start": 172.967,
+     "end": 173.967
+    },
+    {
+     "label": "ott 82",
+     "start": 173.967,
+     "end": 174.967
+    },
+    {
+     "label": "nov 82",
+     "start": 174.967,
+     "end": 175.967
+    },
+    {
+     "label": "dic 82",
+     "start": 175.967,
+     "end": 176.967
+    },
+    {
+     "label": "gen 83",
+     "start": 176.967,
+     "end": 177.967
+    },
+    {
+     "label": "feb 83",
+     "start": 177.967,
+     "end": 178.967
+    },
+    {
+     "label": "mar 83",
+     "start": 178.967,
+     "end": 179.967
+    },
+    {
+     "label": "apr 83",
+     "start": 179.967,
+     "end": 180.967
+    },
+    {
+     "label": "mag 83",
+     "start": 180.967,
+     "end": 181.967
+    },
+    {
+     "label": "giu 83",
+     "start": 181.967,
+     "end": 182.967
+    },
+    {
+     "label": "lug 83",
+     "start": 182.967,
+     "end": 183.967
+    },
+    {
+     "label": "ago 83",
+     "start": 183.967,
+     "end": 184.967
+    },
+    {
+     "label": "set 83",
+     "start": 184.967,
+     "end": 185.967
+    },
+    {
+     "label": "ott 83",
+     "start": 185.967,
+     "end": 186.967
+    },
+    {
+     "label": "nov 83",
+     "start": 186.967,
+     "end": 187.967
+    },
+    {
+     "label": "dic 83",
+     "start": 187.967,
+     "end": 188.967
+    },
+    {
+     "label": "gen 84",
+     "start": 188.967,
+     "end": 189.967
+    },
+    {
+     "label": "feb 84",
+     "start": 189.967,
+     "end": 190.967
+    },
+    {
+     "label": "mar 84",
+     "start": 190.967,
+     "end": 191.967
+    },
+    {
+     "label": "apr 84",
+     "start": 191.967,
+     "end": 192.967
+    },
+    {
+     "label": "mag 84",
+     "start": 192.967,
+     "end": 193.967
+    },
+    {
+     "label": "giu 84",
+     "start": 193.967,
+     "end": 194.967
+    },
+    {
+     "label": "lug 84",
+     "start": 194.967,
+     "end": 195.967
+    },
+    {
+     "label": "ago 84",
+     "start": 195.967,
+     "end": 196.967
+    },
+    {
+     "label": "set 84",
+     "start": 196.967,
+     "end": 197.967
+    },
+    {
+     "label": "ott 84",
+     "start": 197.967,
+     "end": 198.967
+    },
+    {
+     "label": "nov 84",
+     "start": 198.967,
+     "end": 199.967
+    },
+    {
+     "label": "dic 84",
+     "start": 199.967,
+     "end": 200.967
+    },
+    {
+     "label": "gen 85",
+     "start": 200.967,
+     "end": 201.967
+    },
+    {
+     "label": "feb 85",
+     "start": 201.967,
+     "end": 202.967
+    },
+    {
+     "label": "mar 85",
+     "start": 202.967,
+     "end": 203.967
+    },
+    {
+     "label": "apr 85",
+     "start": 203.967,
+     "end": 204.967
+    },
+    {
+     "label": "mag 85",
+     "start": 204.967,
+     "end": 205.967
+    },
+    {
+     "label": "giu 85",
+     "start": 205.967,
+     "end": 206.967
+    },
+    {
+     "label": "lug 85",
+     "start": 206.967,
+     "end": 207.967
+    },
+    {
+     "label": "ago 85",
+     "start": 207.967,
+     "end": 208.967
+    },
+    {
+     "label": "set 85",
+     "start": 208.967,
+     "end": 209.967
+    },
+    {
+     "label": "ott 85",
+     "start": 209.967,
+     "end": 210.967
+    },
+    {
+     "label": "nov 85",
+     "start": 210.967,
+     "end": 211.967
+    },
+    {
+     "label": "dic 85",
+     "start": 211.967,
+     "end": 212.967
+    },
+    {
+     "label": "gen 86",
+     "start": 212.967,
+     "end": 213.967
+    },
+    {
+     "label": "feb 86",
+     "start": 213.967,
+     "end": 214.967
+    },
+    {
+     "label": "mar 86",
+     "start": 214.967,
+     "end": 215.967
+    },
+    {
+     "label": "apr 86",
+     "start": 215.967,
+     "end": 216.967
+    },
+    {
+     "label": "mag 86",
+     "start": 216.967,
+     "end": 217.967
+    },
+    {
+     "label": "giu 86",
+     "start": 217.967,
+     "end": 218.967
+    },
+    {
+     "label": "lug 86",
+     "start": 218.967,
+     "end": 219.967
+    },
+    {
+     "label": "ago 86",
+     "start": 219.967,
+     "end": 220.967
+    },
+    {
+     "label": "set 86",
+     "start": 220.967,
+     "end": 221.967
+    },
+    {
+     "label": "ott 86",
+     "start": 221.967,
+     "end": 222.967
+    },
+    {
+     "label": "nov 86",
+     "start": 222.967,
+     "end": 223.967
+    },
+    {
+     "label": "dic 86",
+     "start": 223.967,
+     "end": 224.967
+    },
+    {
+     "label": "gen 87",
+     "start": 224.967,
+     "end": 225.967
+    },
+    {
+     "label": "feb 87",
+     "start": 225.967,
+     "end": 226.967
+    },
+    {
+     "label": "mar 87",
+     "start": 226.967,
+     "end": 227.967
+    },
+    {
+     "label": "apr 87",
+     "start": 227.967,
+     "end": 228.967
+    },
+    {
+     "label": "mag 87",
+     "start": 228.967,
+     "end": 229.967
+    },
+    {
+     "label": "giu 87",
+     "start": 229.967,
+     "end": 230.967
+    },
+    {
+     "label": "lug 87",
+     "start": 230.967,
+     "end": 231.967
+    },
+    {
+     "label": "ago 87",
+     "start": 231.967,
+     "end": 232.967
+    },
+    {
+     "label": "set 87",
+     "start": 232.967,
+     "end": 233.967
+    },
+    {
+     "label": "ott 87",
+     "start": 233.967,
+     "end": 234.967
+    },
+    {
+     "label": "nov 87",
+     "start": 234.967,
+     "end": 235.967
+    },
+    {
+     "label": "dic 87",
+     "start": 235.967,
+     "end": 236.967
+    },
+    {
+     "label": "gen 88",
+     "start": 236.967,
+     "end": 237.967
+    },
+    {
+     "label": "feb 88",
+     "start": 237.967,
+     "end": 238.967
+    },
+    {
+     "label": "mar 88",
+     "start": 238.967,
+     "end": 239.967
+    },
+    {
+     "label": "apr 88",
+     "start": 239.967,
+     "end": 240.967
+    },
+    {
+     "label": "mag 88",
+     "start": 240.967,
+     "end": 241.967
+    },
+    {
+     "label": "giu 88",
+     "start": 241.967,
+     "end": 242.967
+    },
+    {
+     "label": "lug 88",
+     "start": 242.967,
+     "end": 243.967
+    },
+    {
+     "label": "ago 88",
+     "start": 243.967,
+     "end": 244.967
+    },
+    {
+     "label": "set 88",
+     "start": 244.967,
+     "end": 245.967
+    },
+    {
+     "label": "ott 88",
+     "start": 245.967,
+     "end": 246.967
+    },
+    {
+     "label": "nov 88",
+     "start": 246.967,
+     "end": 247.967
+    },
+    {
+     "label": "dic 88",
+     "start": 247.967,
+     "end": 248.967
+    },
+    {
+     "label": "gen 89",
+     "start": 248.967,
+     "end": 249.967
+    },
+    {
+     "label": "feb 89",
+     "start": 249.967,
+     "end": 250.967
+    },
+    {
+     "label": "mar 89",
+     "start": 250.967,
+     "end": 251.967
+    },
+    {
+     "label": "apr 89",
+     "start": 251.967,
+     "end": 252.967
+    },
+    {
+     "label": "mag 89",
+     "start": 252.967,
+     "end": 253.967
+    },
+    {
+     "label": "giu 89",
+     "start": 253.967,
+     "end": 254.967
+    },
+    {
+     "label": "lug 89",
+     "start": 254.967,
+     "end": 255.967
+    },
+    {
+     "label": "ago 89",
+     "start": 255.967,
+     "end": 256.967
+    },
+    {
+     "label": "set 89",
+     "start": 256.967,
+     "end": 257.967
+    },
+    {
+     "label": "ott 89",
+     "start": 257.967,
+     "end": 258.967
+    },
+    {
+     "label": "nov 89",
+     "start": 258.967,
+     "end": 259.967
+    },
+    {
+     "label": "dic 89",
+     "start": 259.967,
+     "end": 260.967
+    },
+    {
+     "label": "gen 90",
+     "start": 260.967,
+     "end": 261.967
+    },
+    {
+     "label": "feb 90",
+     "start": 261.967,
+     "end": 262.967
+    },
+    {
+     "label": "mar 90",
+     "start": 262.967,
+     "end": 263.967
+    },
+    {
+     "label": "apr 90",
+     "start": 263.967,
+     "end": 264.967
+    },
+    {
+     "label": "mag 90",
+     "start": 264.967,
+     "end": 265.967
+    },
+    {
+     "label": "giu 90",
+     "start": 265.967,
+     "end": 266.967
+    },
+    {
+     "label": "lug 90",
+     "start": 266.967,
+     "end": 267.967
+    },
+    {
+     "label": "ago 90",
+     "start": 267.967,
+     "end": 268.967
+    },
+    {
+     "label": "set 90",
+     "start": 268.967,
+     "end": 269.967
+    },
+    {
+     "label": "ott 90",
+     "start": 269.967,
+     "end": 270.967
+    },
+    {
+     "label": "nov 90",
+     "start": 270.967,
+     "end": 271.967
+    },
+    {
+     "label": "dic 90",
+     "start": 271.967,
+     "end": 272.967
+    },
+    {
+     "label": "gen 91",
+     "start": 272.967,
+     "end": 273.967
+    },
+    {
+     "label": "feb 91",
+     "start": 273.967,
+     "end": 274.967
+    },
+    {
+     "label": "mar 91",
+     "start": 274.967,
+     "end": 275.967
+    },
+    {
+     "label": "apr 91",
+     "start": 275.967,
+     "end": 276.967
+    },
+    {
+     "label": "mag 91",
+     "start": 276.967,
+     "end": 277.967
+    },
+    {
+     "label": "giu 91",
+     "start": 277.967,
+     "end": 278.967
+    },
+    {
+     "label": "lug 91",
+     "start": 278.967,
+     "end": 279.967
+    },
+    {
+     "label": "ago 91",
+     "start": 279.967,
+     "end": 280.967
+    },
+    {
+     "label": "set 91",
+     "start": 280.967,
+     "end": 281.967
+    },
+    {
+     "label": "ott 91",
+     "start": 281.967,
+     "end": 282.967
+    },
+    {
+     "label": "nov 91",
+     "start": 282.967,
+     "end": 283.967
+    },
+    {
+     "label": "dic 91",
+     "start": 283.967,
+     "end": 284.967
+    },
+    {
+     "label": "gen 92",
+     "start": 284.967,
+     "end": 285.967
+    },
+    {
+     "label": "feb 92",
+     "start": 285.967,
+     "end": 286.967
+    },
+    {
+     "label": "mar 92",
+     "start": 286.967,
+     "end": 287.967
+    },
+    {
+     "label": "apr 92",
+     "start": 287.967,
+     "end": 288.967
+    },
+    {
+     "label": "mag 92",
+     "start": 288.967,
+     "end": 289.967
+    },
+    {
+     "label": "giu 92",
+     "start": 289.967,
+     "end": 290.967
+    },
+    {
+     "label": "lug 92",
+     "start": 290.967,
+     "end": 291.967
+    },
+    {
+     "label": "ago 92",
+     "start": 291.967,
+     "end": 292.967
+    },
+    {
+     "label": "set 92",
+     "start": 292.967,
+     "end": 293.967
+    },
+    {
+     "label": "ott 92",
+     "start": 293.967,
+     "end": 294.967
+    },
+    {
+     "label": "nov 92",
+     "start": 294.967,
+     "end": 295.967
+    },
+    {
+     "label": "dic 92",
+     "start": 295.967,
+     "end": 296.967
+    },
+    {
+     "label": "gen 93",
+     "start": 296.967,
+     "end": 297.967
+    },
+    {
+     "label": "feb 93",
+     "start": 297.967,
+     "end": 298.967
+    },
+    {
+     "label": "mar 93",
+     "start": 298.967,
+     "end": 299.967
+    },
+    {
+     "label": "apr 93",
+     "start": 299.967,
+     "end": 300.967
+    },
+    {
+     "label": "mag 93",
+     "start": 300.967,
+     "end": 301.967
+    },
+    {
+     "label": "giu 93",
+     "start": 301.967,
+     "end": 302.967
+    },
+    {
+     "label": "lug 93",
+     "start": 302.967,
+     "end": 303.967
+    },
+    {
+     "label": "ago 93",
+     "start": 303.967,
+     "end": 304.967
+    },
+    {
+     "label": "set 93",
+     "start": 304.967,
+     "end": 305.967
+    },
+    {
+     "label": "ott 93",
+     "start": 305.967,
+     "end": 306.967
+    },
+    {
+     "label": "nov 93",
+     "start": 306.967,
+     "end": 307.967
+    },
+    {
+     "label": "dic 93",
+     "start": 307.967,
+     "end": 308.967
+    },
+    {
+     "label": "gen 94",
+     "start": 308.967,
+     "end": 309.967
+    },
+    {
+     "label": "feb 94",
+     "start": 309.967,
+     "end": 310.967
+    },
+    {
+     "label": "mar 94",
+     "start": 310.967,
+     "end": 311.967
+    },
+    {
+     "label": "apr 94",
+     "start": 311.967,
+     "end": 312.967
+    },
+    {
+     "label": "mag 94",
+     "start": 312.967,
+     "end": 313.967
+    },
+    {
+     "label": "giu 94",
+     "start": 313.967,
+     "end": 314.967
+    },
+    {
+     "label": "lug 94",
+     "start": 314.967,
+     "end": 315.967
+    },
+    {
+     "label": "ago 94",
+     "start": 315.967,
+     "end": 316.967
+    },
+    {
+     "label": "set 94",
+     "start": 316.967,
+     "end": 317.967
+    },
+    {
+     "label": "ott 94",
+     "start": 317.967,
+     "end": 318.967
+    },
+    {
+     "label": "nov 94",
+     "start": 318.967,
+     "end": 319.967
+    },
+    {
+     "label": "dic 94",
+     "start": 319.967,
+     "end": 320.967
+    },
+    {
+     "label": "gen 95",
+     "start": 320.967,
+     "end": 321.967
+    },
+    {
+     "label": "feb 95",
+     "start": 321.967,
+     "end": 322.967
+    },
+    {
+     "label": "mar 95",
+     "start": 322.967,
+     "end": 323.967
+    },
+    {
+     "label": "apr 95",
+     "start": 323.967,
+     "end": 324.967
+    },
+    {
+     "label": "mag 95",
+     "start": 324.967,
+     "end": 325.967
+    },
+    {
+     "label": "giu 95",
+     "start": 325.967,
+     "end": 326.967
+    },
+    {
+     "label": "lug 95",
+     "start": 326.967,
+     "end": 327.967
+    },
+    {
+     "label": "ago 95",
+     "start": 327.967,
+     "end": 328.967
+    },
+    {
+     "label": "set 95",
+     "start": 328.967,
+     "end": 329.967
+    },
+    {
+     "label": "ott 95",
+     "start": 329.967,
+     "end": 330.967
+    },
+    {
+     "label": "nov 95",
+     "start": 330.967,
+     "end": 331.967
+    },
+    {
+     "label": "dic 95",
+     "start": 331.967,
+     "end": 332.967
+    },
+    {
+     "label": "gen 96",
+     "start": 332.967,
+     "end": 333.967
+    },
+    {
+     "label": "feb 96",
+     "start": 333.967,
+     "end": 334.967
+    },
+    {
+     "label": "mar 96",
+     "start": 334.967,
+     "end": 335.967
+    },
+    {
+     "label": "apr 96",
+     "start": 335.967,
+     "end": 336.967
+    },
+    {
+     "label": "mag 96",
+     "start": 336.967,
+     "end": 337.967
+    },
+    {
+     "label": "giu 96",
+     "start": 337.967,
+     "end": 338.967
+    },
+    {
+     "label": "lug 96",
+     "start": 338.967,
+     "end": 339.967
+    },
+    {
+     "label": "ago 96",
+     "start": 339.967,
+     "end": 340.967
+    },
+    {
+     "label": "set 96",
+     "start": 340.967,
+     "end": 341.967
+    },
+    {
+     "label": "ott 96",
+     "start": 341.967,
+     "end": 342.967
+    },
+    {
+     "label": "nov 96",
+     "start": 342.967,
+     "end": 343.967
+    },
+    {
+     "label": "dic 96",
+     "start": 343.967,
+     "end": 344.967
+    },
+    {
+     "label": "gen 97",
+     "start": 344.967,
+     "end": 345.967
+    },
+    {
+     "label": "feb 97",
+     "start": 345.967,
+     "end": 346.967
+    },
+    {
+     "label": "mar 97",
+     "start": 346.967,
+     "end": 347.967
+    },
+    {
+     "label": "apr 97",
+     "start": 347.967,
+     "end": 348.967
+    },
+    {
+     "label": "mag 97",
+     "start": 348.967,
+     "end": 349.967
+    },
+    {
+     "label": "giu 97",
+     "start": 349.967,
+     "end": 350.967
+    },
+    {
+     "label": "lug 97",
+     "start": 350.967,
+     "end": 351.967
+    },
+    {
+     "label": "ago 97",
+     "start": 351.967,
+     "end": 352.967
+    },
+    {
+     "label": "set 97",
+     "start": 352.967,
+     "end": 353.967
+    },
+    {
+     "label": "ott 97",
+     "start": 353.967,
+     "end": 354.967
+    },
+    {
+     "label": "nov 97",
+     "start": 354.967,
+     "end": 355.967
+    },
+    {
+     "label": "dic 97",
+     "start": 355.967,
+     "end": 356.967
+    },
+    {
+     "label": "gen 98",
+     "start": 356.967,
+     "end": 357.967
+    },
+    {
+     "label": "feb 98",
+     "start": 357.967,
+     "end": 358.967
+    },
+    {
+     "label": "mar 98",
+     "start": 358.967,
+     "end": 359.967
+    },
+    {
+     "label": "apr 98",
+     "start": 359.967,
+     "end": 360.967
+    },
+    {
+     "label": "mag 98",
+     "start": 360.967,
+     "end": 361.967
+    },
+    {
+     "label": "giu 98",
+     "start": 361.967,
+     "end": 362.967
+    },
+    {
+     "label": "lug 98",
+     "start": 362.967,
+     "end": 363.967
+    },
+    {
+     "label": "ago 98",
+     "start": 363.967,
+     "end": 364.967
+    },
+    {
+     "label": "set 98",
+     "start": 364.967,
+     "end": 365.967
+    },
+    {
+     "label": "ott 98",
+     "start": 365.967,
+     "end": 366.967
+    },
+    {
+     "label": "nov 98",
+     "start": 366.967,
+     "end": 367.967
+    },
+    {
+     "label": "dic 98",
+     "start": 367.967,
+     "end": 368.967
+    },
+    {
+     "label": "gen 99",
+     "start": 368.967,
+     "end": 369.967
+    },
+    {
+     "label": "feb 99",
+     "start": 369.967,
+     "end": 370.967
+    },
+    {
+     "label": "mar 99",
+     "start": 370.967,
+     "end": 371.967
+    },
+    {
+     "label": "apr 99",
+     "start": 371.967,
+     "end": 372.967
+    },
+    {
+     "label": "mag 99",
+     "start": 372.967,
+     "end": 373.967
+    },
+    {
+     "label": "giu 99",
+     "start": 373.967,
+     "end": 374.967
+    },
+    {
+     "label": "lug 99",
+     "start": 374.967,
+     "end": 375.967
+    },
+    {
+     "label": "ago 99",
+     "start": 375.967,
+     "end": 376.967
+    },
+    {
+     "label": "set 99",
+     "start": 376.967,
+     "end": 377.967
+    },
+    {
+     "label": "ott 99",
+     "start": 377.967,
+     "end": 378.967
+    },
+    {
+     "label": "nov 99",
+     "start": 378.967,
+     "end": 379.967
+    },
+    {
+     "label": "dic 99",
+     "start": 379.967,
+     "end": 380.967
+    },
+    {
+     "label": "gen 00",
+     "start": 380.967,
+     "end": 381.967
+    },
+    {
+     "label": "feb 00",
+     "start": 381.967,
+     "end": 382.967
+    },
+    {
+     "label": "mar 00",
+     "start": 382.967,
+     "end": 383.967
+    },
+    {
+     "label": "apr 00",
+     "start": 383.967,
+     "end": 384.967
+    },
+    {
+     "label": "mag 00",
+     "start": 384.967,
+     "end": 385.967
+    },
+    {
+     "label": "giu 00",
+     "start": 385.967,
+     "end": 386.967
+    },
+    {
+     "label": "lug 00",
+     "start": 386.967,
+     "end": 387.967
+    },
+    {
+     "label": "ago 00",
+     "start": 387.967,
+     "end": 388.967
+    },
+    {
+     "label": "set 00",
+     "start": 388.967,
+     "end": 389.967
+    },
+    {
+     "label": "ott 00",
+     "start": 389.967,
+     "end": 390.967
+    },
+    {
+     "label": "nov 00",
+     "start": 390.967,
+     "end": 391.967
+    },
+    {
+     "label": "dic 00",
+     "start": 391.967,
+     "end": 392.967
+    },
+    {
+     "label": "gen 01",
+     "start": 392.967,
+     "end": 393.967
+    },
+    {
+     "label": "feb 01",
+     "start": 393.967,
+     "end": 394.967
+    },
+    {
+     "label": "mar 01",
+     "start": 394.967,
+     "end": 395.967
+    },
+    {
+     "label": "apr 01",
+     "start": 395.967,
+     "end": 396.967
+    },
+    {
+     "label": "mag 01",
+     "start": 396.967,
+     "end": 397.967
+    },
+    {
+     "label": "giu 01",
+     "start": 397.967,
+     "end": 398.967
+    },
+    {
+     "label": "lug 01",
+     "start": 398.967,
+     "end": 399.967
+    },
+    {
+     "label": "ago 01",
+     "start": 399.967,
+     "end": 400.967
+    },
+    {
+     "label": "set 01",
+     "start": 400.967,
+     "end": 401.967
+    },
+    {
+     "label": "ott 01",
+     "start": 401.967,
+     "end": 402.967
+    },
+    {
+     "label": "nov 01",
+     "start": 402.967,
+     "end": 403.967
+    },
+    {
+     "label": "dic 01",
+     "start": 403.967,
+     "end": 404.967
+    },
+    {
+     "label": "gen 02",
+     "start": 404.967,
+     "end": 405.967
+    },
+    {
+     "label": "feb 02",
+     "start": 405.967,
+     "end": 406.967
+    },
+    {
+     "label": "mar 02",
+     "start": 406.967,
+     "end": 407.967
+    },
+    {
+     "label": "apr 02",
+     "start": 407.967,
+     "end": 408.967
+    },
+    {
+     "label": "mag 02",
+     "start": 408.967,
+     "end": 409.967
+    },
+    {
+     "label": "giu 02",
+     "start": 409.967,
+     "end": 410.967
+    },
+    {
+     "label": "lug 02",
+     "start": 410.967,
+     "end": 411.967
+    },
+    {
+     "label": "ago 02",
+     "start": 411.967,
+     "end": 412.967
+    },
+    {
+     "label": "set 02",
+     "start": 412.967,
+     "end": 413.967
+    },
+    {
+     "label": "ott 02",
+     "start": 413.967,
+     "end": 414.967
+    },
+    {
+     "label": "nov 02",
+     "start": 414.967,
+     "end": 415.967
+    },
+    {
+     "label": "dic 02",
+     "start": 415.967,
+     "end": 416.967
+    },
+    {
+     "label": "gen 03",
+     "start": 416.967,
+     "end": 417.967
+    },
+    {
+     "label": "feb 03",
+     "start": 417.967,
+     "end": 418.967
+    },
+    {
+     "label": "mar 03",
+     "start": 418.967,
+     "end": 419.967
+    },
+    {
+     "label": "apr 03",
+     "start": 419.967,
+     "end": 420.967
+    },
+    {
+     "label": "mag 03",
+     "start": 420.967,
+     "end": 421.967
+    },
+    {
+     "label": "giu 03",
+     "start": 421.967,
+     "end": 422.967
+    },
+    {
+     "label": "lug 03",
+     "start": 422.967,
+     "end": 423.967
+    },
+    {
+     "label": "ago 03",
+     "start": 423.967,
+     "end": 424.967
+    },
+    {
+     "label": "set 03",
+     "start": 424.967,
+     "end": 425.967
+    },
+    {
+     "label": "ott 03",
+     "start": 425.967,
+     "end": 426.967
+    },
+    {
+     "label": "nov 03",
+     "start": 426.967,
+     "end": 427.967
+    },
+    {
+     "label": "dic 03",
+     "start": 427.967,
+     "end": 428.967
+    },
+    {
+     "label": "gen 04",
+     "start": 428.967,
+     "end": 429.967
+    },
+    {
+     "label": "feb 04",
+     "start": 429.967,
+     "end": 430.967
+    },
+    {
+     "label": "mar 04",
+     "start": 430.967,
+     "end": 431.967
+    },
+    {
+     "label": "apr 04",
+     "start": 431.967,
+     "end": 432.967
+    },
+    {
+     "label": "mag 04",
+     "start": 432.967,
+     "end": 433.967
+    },
+    {
+     "label": "giu 04",
+     "start": 433.967,
+     "end": 434.967
+    },
+    {
+     "label": "lug 04",
+     "start": 434.967,
+     "end": 435.967
+    },
+    {
+     "label": "ago 04",
+     "start": 435.967,
+     "end": 436.967
+    },
+    {
+     "label": "set 04",
+     "start": 436.967,
+     "end": 437.967
+    },
+    {
+     "label": "ott 04",
+     "start": 437.967,
+     "end": 438.967
+    },
+    {
+     "label": "nov 04",
+     "start": 438.967,
+     "end": 439.967
+    },
+    {
+     "label": "dic 04",
+     "start": 439.967,
+     "end": 440.967
+    },
+    {
+     "label": "gen 05",
+     "start": 440.967,
+     "end": 441.967
+    },
+    {
+     "label": "feb 05",
+     "start": 441.967,
+     "end": 442.967
+    },
+    {
+     "label": "mar 05",
+     "start": 442.967,
+     "end": 443.967
+    },
+    {
+     "label": "apr 05",
+     "start": 443.967,
+     "end": 444.967
+    },
+    {
+     "label": "mag 05",
+     "start": 444.967,
+     "end": 445.967
+    },
+    {
+     "label": "giu 05",
+     "start": 445.967,
+     "end": 446.967
+    },
+    {
+     "label": "lug 05",
+     "start": 446.967,
+     "end": 447.967
+    },
+    {
+     "label": "ago 05",
+     "start": 447.967,
+     "end": 448.967
+    },
+    {
+     "label": "set 05",
+     "start": 448.967,
+     "end": 449.967
+    },
+    {
+     "label": "ott 05",
+     "start": 449.967,
+     "end": 450.967
+    },
+    {
+     "label": "nov 05",
+     "start": 450.967,
+     "end": 451.967
+    },
+    {
+     "label": "dic 05",
+     "start": 451.967,
+     "end": 452.967
+    },
+    {
+     "label": "gen 06",
+     "start": 452.967,
+     "end": 453.967
+    },
+    {
+     "label": "feb 06",
+     "start": 453.967,
+     "end": 454.967
+    },
+    {
+     "label": "mar 06",
+     "start": 454.967,
+     "end": 455.967
+    },
+    {
+     "label": "apr 06",
+     "start": 455.967,
+     "end": 456.967
+    },
+    {
+     "label": "mag 06",
+     "start": 456.967,
+     "end": 457.967
+    },
+    {
+     "label": "giu 06",
+     "start": 457.967,
+     "end": 458.967
+    },
+    {
+     "label": "lug 06",
+     "start": 458.967,
+     "end": 459.967
+    },
+    {
+     "label": "ago 06",
+     "start": 459.967,
+     "end": 460.967
+    },
+    {
+     "label": "set 06",
+     "start": 460.967,
+     "end": 461.967
+    },
+    {
+     "label": "ott 06",
+     "start": 461.967,
+     "end": 462.967
+    },
+    {
+     "label": "nov 06",
+     "start": 462.967,
+     "end": 463.967
+    },
+    {
+     "label": "dic 06",
+     "start": 463.967,
+     "end": 464.967
+    },
+    {
+     "label": "gen 07",
+     "start": 464.967,
+     "end": 465.967
+    },
+    {
+     "label": "feb 07",
+     "start": 465.967,
+     "end": 466.967
+    },
+    {
+     "label": "mar 07",
+     "start": 466.967,
+     "end": 467.967
+    },
+    {
+     "label": "apr 07",
+     "start": 467.967,
+     "end": 468.967
+    },
+    {
+     "label": "mag 07",
+     "start": 468.967,
+     "end": 469.967
+    },
+    {
+     "label": "giu 07",
+     "start": 469.967,
+     "end": 470.967
+    },
+    {
+     "label": "lug 07",
+     "start": 470.967,
+     "end": 471.967
+    },
+    {
+     "label": "ago 07",
+     "start": 471.967,
+     "end": 472.967
+    },
+    {
+     "label": "set 07",
+     "start": 472.967,
+     "end": 473.967
+    },
+    {
+     "label": "ott 07",
+     "start": 473.967,
+     "end": 474.967
+    },
+    {
+     "label": "nov 07",
+     "start": 474.967,
+     "end": 475.967
+    },
+    {
+     "label": "dic 07",
+     "start": 475.967,
+     "end": 476.967
+    },
+    {
+     "label": "gen 08",
+     "start": 476.967,
+     "end": 477.967
+    },
+    {
+     "label": "feb 08",
+     "start": 477.967,
+     "end": 478.967
+    },
+    {
+     "label": "mar 08",
+     "start": 478.967,
+     "end": 479.967
+    },
+    {
+     "label": "apr 08",
+     "start": 479.967,
+     "end": 480.967
+    },
+    {
+     "label": "mag 08",
+     "start": 480.967,
+     "end": 481.967
+    },
+    {
+     "label": "giu 08",
+     "start": 481.967,
+     "end": 482.967
+    },
+    {
+     "label": "lug 08",
+     "start": 482.967,
+     "end": 483.967
+    },
+    {
+     "label": "ago 08",
+     "start": 483.967,
+     "end": 484.967
+    },
+    {
+     "label": "set 08",
+     "start": 484.967,
+     "end": 485.967
+    },
+    {
+     "label": "ott 08",
+     "start": 485.967,
+     "end": 486.967
+    },
+    {
+     "label": "nov 08",
+     "start": 486.967,
+     "end": 487.967
+    },
+    {
+     "label": "dic 08",
+     "start": 487.967,
+     "end": 488.967
+    },
+    {
+     "label": "gen 09",
+     "start": 488.967,
+     "end": 489.967
+    },
+    {
+     "label": "feb 09",
+     "start": 489.967,
+     "end": 490.967
+    },
+    {
+     "label": "mar 09",
+     "start": 490.967,
+     "end": 491.967
+    },
+    {
+     "label": "apr 09",
+     "start": 491.967,
+     "end": 492.967
+    },
+    {
+     "label": "mag 09",
+     "start": 492.967,
+     "end": 493.967
+    },
+    {
+     "label": "giu 09",
+     "start": 493.967,
+     "end": 494.967
+    },
+    {
+     "label": "lug 09",
+     "start": 494.967,
+     "end": 495.967
+    },
+    {
+     "label": "ago 09",
+     "start": 495.967,
+     "end": 496.967
+    },
+    {
+     "label": "set 09",
+     "start": 496.967,
+     "end": 497.967
+    },
+    {
+     "label": "ott 09",
+     "start": 497.967,
+     "end": 498.967
+    },
+    {
+     "label": "nov 09",
+     "start": 498.967,
+     "end": 499.967
+    },
+    {
+     "label": "dic 09",
+     "start": 499.967,
+     "end": 500.967
+    },
+    {
+     "label": "gen 10",
+     "start": 500.967,
+     "end": 501.967
+    },
+    {
+     "label": "feb 10",
+     "start": 501.967,
+     "end": 502.967
+    },
+    {
+     "label": "mar 10",
+     "start": 502.967,
+     "end": 503.967
+    },
+    {
+     "label": "apr 10",
+     "start": 503.967,
+     "end": 504.967
+    },
+    {
+     "label": "mag 10",
+     "start": 504.967,
+     "end": 505.967
+    },
+    {
+     "label": "giu 10",
+     "start": 505.967,
+     "end": 506.967
+    },
+    {
+     "label": "lug 10",
+     "start": 506.967,
+     "end": 507.967
+    },
+    {
+     "label": "ago 10",
+     "start": 507.967,
+     "end": 508.967
+    },
+    {
+     "label": "set 10",
+     "start": 508.967,
+     "end": 509.967
+    },
+    {
+     "label": "ott 10",
+     "start": 509.967,
+     "end": 510.967
+    },
+    {
+     "label": "nov 10",
+     "start": 510.967,
+     "end": 511.967
+    },
+    {
+     "label": "dic 10",
+     "start": 511.967,
+     "end": 512.967
+    },
+    {
+     "label": "gen 11",
+     "start": 512.967,
+     "end": 513.967
+    },
+    {
+     "label": "feb 11",
+     "start": 513.967,
+     "end": 514.967
+    },
+    {
+     "label": "mar 11",
+     "start": 514.967,
+     "end": 515.967
+    },
+    {
+     "label": "apr 11",
+     "start": 515.967,
+     "end": 516.967
+    },
+    {
+     "label": "mag 11",
+     "start": 516.967,
+     "end": 517.967
+    },
+    {
+     "label": "giu 11",
+     "start": 517.967,
+     "end": 518.967
+    },
+    {
+     "label": "lug 11",
+     "start": 518.967,
+     "end": 519.967
+    },
+    {
+     "label": "ago 11",
+     "start": 519.967,
+     "end": 520.967
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (7), 1 mese (7), 15 giorni (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/745189",
+    "page": 52,
+    "document": "WIND01_REL01_-_Relazione_Tecnica_Generale_Rev1-signed",
+    "excerpt": "− il montaggio degli aerogeneratori e la loro messa in esercizio. La durata complessiva di queste attività si stima in circa 12 mesi dall’apertura del cantiere."
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "28/06/2022",
+    "iso": "2022-06-28",
+    "nature": "natura non determinabile",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1176969",
+     "page": 1,
+     "document": "Integrazioni del 24/10/2024 - Accordo utilizzo opere condivise di collegamnto alla futura stazione elettrica di smistamento della RTN \"Museu\" da collegare in entra-esce alla linea RTN 150 kV Iglesias2",
+     "excerpt": "d) ESNA ha protocollato l’avvio lavori il 28/06/2022;"
+    }
+   }
+  ],
+  "document": {
+   "document": "Integrazioni del 16/01/2026 - Cronoprogramma lavori",
+   "url": "https://va.mite.gov.it/File/Documento/1350809"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 16/01/2026 - Cronoprogramma lavori",
+    "url": "https://va.mite.gov.it/File/Documento/1350809"
+   },
+   {
+    "document": "Integrazioni del 16/01/2026 - Cronoprogramma dei lavori di dismissione e ripristino",
+    "url": "https://va.mite.gov.it/File/Documento/1350810"
+   },
+   {
+    "document": "Cronoprogramma lavori",
+    "url": "https://va.mite.gov.it/File/Documento/735007"
+   },
+   {
+    "document": "Cronoprogramma dei lavori di dismissione e ripristino",
+    "url": "https://va.mite.gov.it/File/Documento/735008"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 492,
+  "pagine": 6959,
+  "completa": false,
+  "da_leggere": 192
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Fred. Olsen Renewables Italy S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 55.8,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "VILLAMASSARGIA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 28/06/2022, ma l'iter è proseguito; ultimo documento o atto del 06/08/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "2025 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
