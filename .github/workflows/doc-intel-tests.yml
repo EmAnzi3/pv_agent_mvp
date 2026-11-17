@@ -5,6 +5,8 @@ on:
       - 'doc_intel/**'
       - 'tests/test_doc_intel.py'
       - 'tests/test_wind_*.py'
+      - 'tests/test_compare_zone_json.py'
+      - 'scripts/compare_json_report.py'
       - 'app/collectors/wind_regional.py'
       - 'app/collectors/sicilia.py'
       - 'tests/doc_intel_fixtures.py'
@@ -29,7 +31,7 @@ jobs:
           python -m unittest tests.test_doc_intel tests.test_evidence_toolbox 2>&1 | tee ut.log \
             || { echo "::error title=unit-failed::$(grep -E -A12 '^(FAIL|ERROR):' ut.log | head -c 3500 | tr '\n' ' ')"; exit 1; }
       - name: Wind census, FER X and readiness tests
-        run: python -m unittest tests.test_wind_census tests.test_wind_regional tests.test_ferx tests.test_readiness
+        run: python -m unittest tests.test_wind_census tests.test_wind_regional tests.test_ferx tests.test_readiness tests.test_compare_zone_json
       - name: Same tests without PyMuPDF (fallback backends)
         run: |
           python -m pip uninstall -y pymupdf

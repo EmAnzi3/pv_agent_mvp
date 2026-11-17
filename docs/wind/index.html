@@ -7,6 +7,7 @@
   <meta name="description" content="Radar eolico Alayan: pipeline nazionale dei progetti eolici onshore e offshore, letta come il radar fotovoltaico.">
   <link rel="stylesheet" href="assets/dashboard.css">
   <link rel="stylesheet" href="assets/scheda-panel.css">
+  <link rel="stylesheet" href="../assets/zone-view.css">
   <style>
     /* wind page additions, same tokens as the PV dashboard */
     .split > *, .grid > * { min-width: 0; }   /* wide tables scroll inside their card, never the page */
@@ -26,84 +27,41 @@
   </style>
 </head>
 <body>
-  <header>
+  <header class="compact">
     <div class="hero">
       <div>
         <nav class="radar-switch" aria-label="Cambia radar"><a href="../">Fotovoltaico</a><a class="on" href="./" aria-current="page">Eolico</a></nav>
         <h1>Wind Agent Dashboard</h1>
       </div>
-      <div class="hero-stats">
-        <div class="hero-chip"><div class="label">Progetti</div><div class="value" id="heroRecords">-</div></div>
-        <div class="hero-chip"><div class="label">MW operativi</div><div class="value" id="heroMw">-</div></div>
-        <div class="hero-chip"><div class="label">Aggiornamento</div><div class="value" id="heroDate">-</div></div>
-      </div>
+      <div class="nat-line" id="natLine">-</div>
     </div>
   </header>
 
+  <div class="zone-bar" id="zoneBar">
+    <span class="zone-label">La mia zona</span>
+    <label>Regione<select id="regionFilter"></select></label>
+    <label>Provincia<select id="provinceFilter"></select></label>
+    <button type="button" class="zone-reset" id="zoneReset" hidden>Tutta Italia</button>
+    <span class="zone-summary" id="zoneSummary"></span>
+  </div>
+
   <main>
-    <section>
-      <h2 class="section-title">Executive overview</h2>
-      <p class="section-subtitle">Vista sintetica per capire dove sono i progetti lavorabili e quanto pesa la pipeline offshore, più lontana dal cantiere. <a href="cambiamenti.html">Cosa è cambiato dall'ultimo censimento →</a></p>
-      <div class="grid kpi-grid">
-        <div class="card kpi kpi-primary"><div class="label">Progetti operativi</div><div class="value" id="kpiRecords">-</div><div class="note">Onshore, progetti vivi; escluse modifiche e varianti</div></div>
-        <div class="card kpi kpi-primary"><div class="label">MW pipeline operativa</div><div class="value" id="kpiMw">-</div><div class="note">Somma MW dei progetti onshore</div></div>
-        <div class="card kpi"><div class="label">Pipeline offshore</div><div class="value" id="kpiOffMw">-</div><div class="note" id="kpiOffNote">Dato separato: in gran parte in scoping o VIA</div></div>
-        <div class="card kpi"><div class="label">Fonti attive</div><div class="value" id="kpiSources">-</div><div class="note">MASE, portali regionali, GSE, verifica manuale</div></div>
-        <div class="card kpi"><div class="label">Ultimo aggiornamento</div><div class="value" id="kpiDate">-</div><div class="note">Censimento più recente</div></div>
+    <section class="zone-section">
+      <div class="zone-kpis" id="zoneKpis"></div>
+      <div class="zone-card">
+        <div class="zone-head"><h2 id="nearTitle">Vicini al cantiere</h2><span class="small" id="nearByProv"></span></div>
+        <div id="nearList"></div>
+        <button type="button" class="zone-more" id="nearMore" hidden></button>
       </div>
-      <div class="grid kpi-grid signals" style="margin-top:18px">
-        <div class="card kpi"><div class="label">Vicini al cantiere</div><div class="value" id="kpiReady">-</div><div class="note">Priorità alta o media</div></div>
-        <div class="card kpi"><div class="label">Incentivo FER X</div><div class="value" id="kpiFerx">-</div><div class="note" id="kpiFerxNote">Graduatoria GSE eolico</div></div>
-        <div class="card kpi"><div class="label">Progetti verificati</div><div class="value" id="kpiVerified">-</div><div class="note">Fase e contractor controllati a mano</div></div>
-        <div class="card kpi"><div class="label">Con scheda</div><div class="value" id="kpiCards">-</div><div class="note">Documenti letti; nuove schede ogni notte</div></div>
-        <div class="card kpi"><div class="label">Archiviati esclusi</div><div class="value" id="kpiArchived">-</div><div class="note" id="kpiArchivedNote">Progetti con tutte le procedure archiviate</div></div>
+      <div class="zone-two">
+        <div class="zone-card"><div class="zone-head"><h2>Avanzamenti in zona</h2><span class="small" id="changesSince"></span></div><div id="progressList"></div></div>
+        <div class="zone-card"><div class="zone-head"><h2>Nuovi in zona</h2><a class="small" href="cambiamenti.html">Tutti i cambiamenti →</a></div><div id="newList"></div></div>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">Priorità territoriale</h2>
-      <div class="split">
-        <div class="card"><canvas id="regionPriorityChart" height="130"></canvas></div>
-        <div class="card">
-          <div class="warning-box">
-            <strong>Metodo di lettura:</strong> la priorità è costruita sui progetti onshore. L'offshore resta una pipeline
-            separata: indica la pressione di mercato sulle coste, non cantieri dei prossimi anni.
-          </div>
-          <div class="scroll-small" style="margin-top: 14px;">
-            <table>
-              <thead><tr><th>Regione</th><th class="num">Score</th><th class="num">Progetti</th><th class="num">MW onshore</th><th class="num">MW offshore</th><th class="num">Vicini al cantiere</th></tr></thead>
-              <tbody id="regionBody"></tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Letture operative</h2>
-      <div class="grid chart-grid">
-        <div class="card"><canvas id="operationalCountChart" height="135"></canvas></div>
-        <div class="card"><canvas id="phaseMwChart" height="135"></canvas></div>
-        <div class="card"><canvas id="sourceChart" height="135"></canvas></div>
-        <div class="card"><canvas id="offshoreMwChart" height="135"></canvas></div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Top progetti vicini al cantiere</h2>
-      <p class="section-subtitle">Vista pensata per scouting: i progetti onshore con i segnali più forti (incentivo FER X, autorizzazione, verifica di ottemperanza, cantiere avviato), poi per MW.</p>
-      <div class="card">
-        <div class="table-wrap top-table">
-          <table>
-            <thead><tr><th>Progetto</th><th>Proponente</th><th>Regione</th><th>Provincia</th><th>Comune/i</th><th>Fonte</th><th>Fase</th><th class="num">MW</th><th>Link</th></tr></thead>
-            <tbody id="topBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section>
+    <section id="pipelineSection">
       <h2 class="section-title">Pipeline completa</h2>
+      <p class="section-subtitle">La tabella segue la zona scelta in alto.</p>
       <div class="card">
         <div class="filters">
           <input id="searchInput" placeholder="Cerca progetto, proponente, comune...">
@@ -125,8 +83,6 @@
             <option value="news">Notizie di stampa compatibili (da verificare)</option>
           </select>
           <select id="sourceFilter"></select>
-          <select id="regionFilter"></select>
-          <select id="provinceFilter"></select>
           <select id="phaseFilter"></select>
           <select id="sortFieldFilter">
             <option value="">Ordina per...</option>
@@ -153,6 +109,18 @@
       </div>
     </section>
 
+    <section>
+      <h2 class="section-title">Quadro nazionale</h2>
+      <div class="nat-grid">
+        <div class="zone-card">
+          <div class="zone-head"><h2>Vicini al cantiere per regione</h2><span class="small">clic su una regione per sceglierla</span></div>
+          <div class="tile-map" id="tileMap"></div>
+          <div class="tile-legend"><span class="sw" style="background:#eef2f6"></span>0 <span class="sw" style="background:#dbe9f1"></span>1–4 <span class="sw" style="background:#b9d9e8"></span>5–29 <span class="sw" style="background:#5d9fc0"></span>30–79 <span class="sw" style="background:#1f5f86"></span>80+</div>
+        </div>
+        <div class="nat-side" id="natCharts"></div>
+      </div>
+    </section>
+
     <div class="footer-note" id="footerNote">
       Dashboard statica: i dati sono letti dal censimento eolico pubblicato sul ramo di memoria del progetto.
       L'offshore è una pipeline separata e non va sommata ai progetti onshore come se fosse cantiere a breve.
@@ -160,8 +128,8 @@
     </div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
   <script src="assets/scheda-panel.js"></script>
+  <script src="../assets/zone-view.js"></script>
   <script src="assets/wind-dashboard.js"></script>
 </body>
 </html>

@@ -821,7 +821,6 @@ class StaticDashboardBuilder:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PV Agent Dashboard</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
   <style>
     :root {
       --bg: #eef2f5;
@@ -1322,6 +1321,7 @@ class StaticDashboardBuilder:
 
 
 __SCHEDA_CSS__
+__ZONE_CSS__
 </style>
 <!-- MOBILE REDIRECT START -->
 <script>
@@ -1339,136 +1339,41 @@ __SCHEDA_CSS__
 <!-- MOBILE REDIRECT END -->
 </head>
 <body>
-  <header>
+  <header class="compact">
     <div class="hero">
       <div>
         <nav class="radar-switch" aria-label="Cambia radar"><a class="on" href="./" aria-current="page">Fotovoltaico</a><a href="wind/">Eolico</a></nav>
         <h1>PV Agent Dashboard</h1>
       </div>
-      <div class="hero-stats">
-        <div class="hero-chip">
-          <div class="label">Progetti</div>
-          <div class="value" id="heroOperationalRecords">-</div>
-        </div>
-        <div class="hero-chip">
-          <div class="label">MW operativi</div>
-          <div class="value" id="heroOperationalMw">-</div>
-        </div>
-        <div class="hero-chip">
-          <div class="label">Aggiornamento</div>
-          <div class="value" id="heroGeneratedShort">-</div>
-        </div>
-      </div>
+      <div class="nat-line" id="natLine">-</div>
     </div>
   </header>
 
+  <div class="zone-bar" id="zoneBar">
+    <span class="zone-label">La mia zona</span>
+    <label>Regione<select id="regionFilter"></select></label>
+    <label>Provincia<select id="provinceFilter"></select></label>
+    <button type="button" class="zone-reset" id="zoneReset" hidden>Tutta Italia</button>
+    <span class="zone-summary" id="zoneSummary"></span>
+  </div>
+
   <main>
-    <section>
-      <h2 class="section-title">Executive overview</h2>
-      <p class="section-subtitle">Vista sintetica per capire dove sono i progetti lavorabili e dove il mercato mostra maggiore pressione.</p>
-      <div class="grid kpi-grid">
-        <div class="card kpi kpi-primary">
-          <div class="label">Progetti operativi</div>
-          <div class="value" id="kpiOperationalRecords">-</div>
-          <div class="note">Solo record puntuali, escluso Terna</div>
-        </div>
-        <div class="card kpi kpi-primary">
-          <div class="label">MW pipeline operativa</div>
-          <div class="value" id="kpiOperationalMw">-</div>
-          <div class="note">Somma MW dei progetti puntuali</div>
-        </div>
-        <div class="card kpi">
-          <div class="label">Radar Terna</div>
-          <div class="value" id="kpiTernaMw">-</div>
-          <div class="note">Dato aggregato, non lead puntuali</div>
-        </div>
-        <div class="card kpi">
-          <div class="label">Fonti attive</div>
-          <div class="value" id="kpiSources">-</div>
-          <div class="note">Collector presenti nello snapshot</div>
-        </div>
-        <div class="card kpi">
-          <div class="label">Ultimo aggiornamento</div>
-          <div class="value" id="kpiGeneratedShort">-</div>
-          <div class="note">Snapshot dati più recente</div>
-        </div>
+    <section class="zone-section">
+      <div class="zone-kpis" id="zoneKpis"></div>
+      <div class="zone-card">
+        <div class="zone-head"><h2 id="nearTitle">Vicini al cantiere</h2><span class="small" id="nearByProv"></span></div>
+        <div id="nearList"></div>
+        <button type="button" class="zone-more" id="nearMore" hidden></button>
+      </div>
+      <div class="zone-two">
+        <div class="zone-card"><div class="zone-head"><h2>Avanzamenti in zona</h2><span class="small" id="changesSince"></span></div><div id="progressList"></div></div>
+        <div class="zone-card"><div class="zone-head"><h2>Nuovi in zona</h2><span class="small">dall'ultimo aggiornamento</span></div><div id="newList"></div></div>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">Priorità territoriale</h2>
-      <div class="split">
-        <div class="card">
-          <canvas id="regionPriorityChart" height="130"></canvas>
-        </div>
-        <div class="card">
-          <div class="warning-box">
-            <strong>Metodo di lettura:</strong> la priorità è costruita sui progetti puntuali. Terna Econnextion resta un radar macro:
-            serve a leggere la pressione di mercato, non a identificare singoli lead.
-          </div>
-          <div class="scroll-small" style="margin-top: 14px;">
-            <table>
-              <thead>
-                <tr>
-                  <th>Regione</th>
-                  <th class="num">Score</th>
-                  <th class="num">Progetti</th>
-                  <th class="num">MW puntuali</th>
-                  <th class="num">MW Terna</th>
-                </tr>
-              </thead>
-              <tbody id="regionRankingBody"></tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Letture operative</h2>
-      <div class="grid chart-grid">
-        <div class="card">
-          <canvas id="operationalCountChart" height="135"></canvas>
-        </div>
-        <div class="card">
-          <canvas id="ternaMwChart" height="135"></canvas>
-        </div>
-        <div class="card">
-          <canvas id="sourceChart" height="135"></canvas>
-        </div>
-        <div class="card">
-          <canvas id="sourceMwChart" height="135"></canvas>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Top progetti operativi per MW</h2>
-      <p class="section-subtitle">Vista pensata per scouting: progetto, proponente, localizzazione, fonte, stato e link.</p>
-      <div class="card">
-        <div class="table-wrap top-table">
-          <table>
-            <thead>
-              <tr>
-                <th>Progetto</th>
-                <th>Proponente</th>
-                <th>Regione</th>
-                <th>Provincia</th>
-                <th>Comune/i</th>
-                <th>Fonte</th>
-                <th>Tipo</th>
-                <th class="num">MW</th>
-                <th>Link</th>
-              </tr>
-            </thead>
-            <tbody id="topProjectsBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section>
+    <section id="pipelineSection">
       <h2 class="section-title">Pipeline completa</h2>
+      <p class="section-subtitle">La tabella segue la zona scelta in alto.</p>
       <div class="card">
         <div class="filters">
           <input id="searchInput" placeholder="Cerca progetto, proponente, comune...">
@@ -1488,8 +1393,6 @@ __SCHEDA_CSS__
             <option value="news">Notizie di stampa compatibili (da verificare)</option>
           </select>
           <select id="sourceFilter"></select>
-          <select id="regionFilter"></select>
-          <select id="provinceFilter"></select>
           <select id="sortFieldFilter">
             <option value="">Ordina per...</option>
             <option value="power_mw">MW</option>
@@ -1555,6 +1458,18 @@ __SCHEDA_CSS__
       </div>
     </section>
 
+    <section>
+      <h2 class="section-title">Quadro nazionale</h2>
+      <div class="nat-grid">
+        <div class="zone-card">
+          <div class="zone-head"><h2>Vicini al cantiere per regione</h2><span class="small">clic su una regione per sceglierla</span></div>
+          <div class="tile-map" id="tileMap"></div>
+          <div class="tile-legend"><span class="sw" style="background:#eef2f6"></span>0 <span class="sw" style="background:#dbe9f1"></span>1–4 <span class="sw" style="background:#b9d9e8"></span>5–29 <span class="sw" style="background:#5d9fc0"></span>30–79 <span class="sw" style="background:#1f5f86"></span>80+</div>
+        </div>
+        <div class="nat-side" id="natCharts"></div>
+      </div>
+    </section>
+
     <div class="footer-note">
       Dashboard HTML statica generata automaticamente da PV Agent.
       Terna Econnextion è un dato aggregato e non deve essere sommato ai progetti puntuali come se fosse una lista di impianti.
@@ -1563,6 +1478,7 @@ __SCHEDA_CSS__
   </main>
 
   <script>__SCHEDA_JS__</script>
+  <script>__ZONE_JS__</script>
   <script>
     const DASHBOARD_DATA = __DASHBOARD_DATA__;
 
@@ -1711,99 +1627,11 @@ __SCHEDA_CSS__
       return records.filter(r => r.source === source).length;
     }
 
-    function initKpis() {
-      const operational = operationalRecords();
-      const terna = ternaRecords();
-      const withProponent = operational.filter(r => text(r.proponent).trim()).length;
-      const missingProponent = operational.length - withProponent;
-      setText('snapshotFile', summary.snapshot_file || '');
-      setText('generatedAt', summary.generated_at || '');
-
-      setText('heroOperationalRecords', fmtNum(operational.length || summary.punctual_records));
-      setText('heroOperationalMw', fmtMw(summary.total_mw_punctual).replace(' MW', ''));
-      setText('heroGeneratedShort', (summary.generated_at || '').slice(0, 10));
-
-      setText('kpiOperationalRecords', fmtNum(operational.length || summary.punctual_records));
-      setText('kpiOperationalMw', fmtMw(summary.total_mw_punctual));
-      setText('kpiTernaMw', fmtMw(summary.total_mw_terna));
-      setText('kpiSources', fmtNum((summary.source_counts || []).length));
-      setText('kpiGeneratedShort', (summary.generated_at || '').slice(0, 10));
-    }
-
-    function initRegionRanking() {
-      const body = document.getElementById('regionRankingBody');
-      body.innerHTML = '';
-
-      (summary.regions || []).slice(0, 20).forEach(row => {
-        const tr = document.createElement('tr');
-
-        tr.innerHTML = `
-          <td><strong>${escapeHtml(row.region)}</strong></td>
-          <td class="num">${fmtNum(row.priority_score)}</td>
-          <td class="num">${fmtNum(row.punctual_count)}</td>
-          <td class="num">${fmtMw(row.punctual_mw)}</td>
-          <td class="num">${fmtMw(row.terna_mw)}</td>
-        `;
-
-        body.appendChild(tr);
-      });
-    }
-
     function mwBandClass(value) {
       const mw = toNumber(value);
       if (mw >= 100) return 'mw-xl';
       if (mw >= 50) return 'mw-lg';
       return '';
-    }
-
-    function initTopProjects() {
-      const body = document.getElementById('topProjectsBody');
-      body.innerHTML = '';
-
-      const topRows = (summary.top_projects && summary.top_projects.length)
-        ? summary.top_projects
-        : topN(operationalRecords().filter(r => r.power_mw), 'power_mw', 20);
-
-      topRows.forEach(row => {
-        const tr = document.createElement('tr');
-        tr.className = mwBandClass(row.power_mw);
-        const link = safeExternalLink(row.url);
-        const proponent = text(row.proponent) ? escapeHtml(row.proponent) : '<span class="muted">n/d</span>';
-
-        tr.innerHTML = `
-          <td class="project-title"><strong>${escapeHtml(row.title)}</strong></td>
-          <td class="proponent-col">${proponent}</td>
-          <td>${escapeHtml(row.region)}</td>
-          <td>${escapeHtml(row.province)} ${deducedBadge(row.province_deduced)}</td>
-          <td>${escapeHtml(row.municipalities)} ${deducedBadge(row.municipalities_deduced)}</td>
-          <td><span class="${badgeClass(row.source_group || row.source)}">${escapeHtml(row.source_label || sourceLabel(row.source))}</span></td>
-          <td>${escapeHtml(row.project_type)}</td>
-          <td class="num">${fmtMw(row.power_mw)}</td>
-          <td><span class="sc-cell">${link}${schedaButton(row)}</span></td>
-        `;
-
-        body.appendChild(tr);
-      });
-    }
-
-    function initQualityBySource() {
-      const body = document.getElementById('qualityBySourceBody');
-      body.innerHTML = '';
-
-      (summary.quality_by_source || []).forEach(row => {
-        const tr = document.createElement('tr');
-
-        tr.innerHTML = `
-          <td><span class="${badgeClass(row.source_group || row.source)}">${escapeHtml(row.source_label)}</span></td>
-          <td class="num">${fmtNum(row.count)}</td>
-          <td class="num">${fmtNum(row.missing_mw)}</td>
-          <td class="num">${fmtNum(row.missing_province)}</td>
-          <td class="num">${fmtNum(row.missing_municipality)}</td>
-          <td class="num">${escapeHtml(row.completeness_pct)}%</td>
-        `;
-
-        body.appendChild(tr);
-      });
     }
 
     function uniqueValues(key, dataset = records) {
@@ -2096,137 +1924,6 @@ __SCHEDA_CSS__
       });
     }
 
-    const CHART_COLORS = [
-      '#0f766e', '#1d4ed8', '#334155', '#d97706', '#16a34a',
-      '#7c3aed', '#0e7490', '#b45309', '#475569', '#059669',
-      '#2563eb', '#64748b'
-    ];
-
-    function chartColors(count) {
-      return Array.from({ length: count }, (_, i) => CHART_COLORS[i % CHART_COLORS.length]);
-    }
-
-    function chartOptions(title, isMw = false) {
-      return {
-        responsive: true,
-        maintainAspectRatio: true,
-        plugins: {
-          legend: { display: false },
-          title: {
-            display: true,
-            text: title,
-            color: '#334155',
-            font: { size: 15, weight: 'bold' }
-          },
-          tooltip: {
-            backgroundColor: '#0f172a',
-            padding: 10,
-            callbacks: {
-              label: context => isMw ? fmtMw(context.parsed.y) : fmtNum(context.parsed.y)
-            }
-          }
-        },
-        scales: {
-          x: {
-            grid: { display: false },
-            ticks: { color: '#64748b' }
-          },
-          y: {
-            beginAtZero: true,
-            grid: { color: '#e8edf2' },
-            ticks: {
-              color: '#64748b',
-              callback: value => isMw ? fmtMw(value).replace(' MW', '') : fmtNum(value)
-            }
-          }
-        }
-      };
-    }
-
-    function operationalMwBySource() {
-      const totals = {};
-      operationalRecords().forEach(r => {
-        const label = r.source_label || r.source || 'n/d';
-        totals[label] = (totals[label] || 0) + toNumber(r.power_mw);
-      });
-
-      return Object.entries(totals)
-        .map(([source, mw]) => ({ source, mw }))
-        .sort((a, b) => b.mw - a.mw)
-        .slice(0, 10);
-    }
-
-    function initCharts() {
-      const topPriority = topN(summary.regions || [], 'priority_score', 12);
-      new Chart(document.getElementById('regionPriorityChart'), {
-        type: 'bar',
-        data: {
-          labels: topPriority.map(x => x.region),
-          datasets: [{ label: 'Score priorità', data: topPriority.map(x => x.priority_score), backgroundColor: chartColors(topPriority.length), borderRadius: 8 }]
-        },
-        options: chartOptions('Indice priorità commerciale per regione')
-      });
-
-      const topOperationalCount = topN(summary.regions || [], 'punctual_count', 12);
-      new Chart(document.getElementById('operationalCountChart'), {
-        type: 'bar',
-        data: {
-          labels: topOperationalCount.map(x => x.region),
-          datasets: [{ label: 'Progetti operativi', data: topOperationalCount.map(x => x.punctual_count), backgroundColor: chartColors(topOperationalCount.length), borderRadius: 8 }]
-        },
-        options: chartOptions('Pipeline operativa: numero progetti per regione')
-      });
-
-      const topTernaMw = topN(summary.regions || [], 'terna_mw', 12);
-      new Chart(document.getElementById('ternaMwChart'), {
-        type: 'bar',
-        data: {
-          labels: topTernaMw.map(x => x.region),
-          datasets: [{ label: 'MW Terna Solare', data: topTernaMw.map(x => x.terna_mw), backgroundColor: chartColors(topTernaMw.length), borderRadius: 8 }]
-        },
-        options: chartOptions('Radar Terna: MW solare per regione', true)
-      });
-
-      const mergedSourceCounts = Object.values((summary.source_counts || []).reduce((acc, x) => {
-        const label = x.label || 'n/d';
-        acc[label] = acc[label] || { label, count: 0 };
-        acc[label].count += Number(x.count || 0);
-        return acc;
-      }, {})).sort((a, b) => b.count - a.count);
-
-      new Chart(document.getElementById('sourceChart'), {
-        type: 'doughnut',
-        data: {
-          labels: mergedSourceCounts.map(x => x.label),
-          datasets: [{ label: 'Record', data: mergedSourceCounts.map(x => x.count), backgroundColor: chartColors(mergedSourceCounts.length), borderWidth: 0 }]
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: { position: 'bottom', labels: { boxWidth: 12, color: '#64748b' } },
-            title: {
-              display: true,
-              text: 'Distribuzione record per fonte',
-              color: '#334155',
-              font: { size: 15, weight: 'bold' }
-            },
-            tooltip: { backgroundColor: '#0f172a', padding: 10 }
-          },
-          cutout: '62%'
-        }
-      });
-
-      const sourceMw = operationalMwBySource();
-      new Chart(document.getElementById('sourceMwChart'), {
-        type: 'bar',
-        data: {
-          labels: sourceMw.map(x => x.source),
-          datasets: [{ label: 'MW', data: sourceMw.map(x => x.mw), backgroundColor: chartColors(sourceMw.length), borderRadius: 8 }]
-        },
-        options: chartOptions('Pipeline operativa: MW per fonte', true)
-      });
-    }
-
     function attachEvents() {
       // registered first, so the province list is updated before the table is redrawn
       document.getElementById('regionFilter').addEventListener('change', refreshProvinces);
@@ -2262,15 +1959,15 @@ __SCHEDA_CSS__
     // sector press matched to the projects (level C, to verify): read from the memory branch
     getIndex(SCHEDE_LIVE.replace(/schede\/$/, 'readiness/index.json')).then(n => {
       window.PVReady = (n && n.projects) || {};
-      if (Object.keys(window.PVReady).length) { initTopProjects(); renderPipeline(); }
+      if (Object.keys(window.PVReady).length) { renderPipeline(); window.ZoneView.render(); }
     });
     getIndex(SCHEDE_LIVE.replace(/schede\/$/, 'ferx/matches.json')).then(n => {
       window.PVFerx = (n && n.projects) || {};
-      if (Object.keys(window.PVFerx).length) { initTopProjects(); renderPipeline(); }
+      if (Object.keys(window.PVFerx).length) { renderPipeline(); }
     });
     getIndex(SCHEDE_LIVE.replace(/schede\/$/, 'news/matches.json')).then(n => {
       window.PVNews = (n && n.projects) || {};
-      if (Object.keys(window.PVNews).length) { initTopProjects(); renderPipeline(); }
+      if (Object.keys(window.PVNews).length) { renderPipeline(); }
     });
     Promise.all([getIndex('schede/index.json'), getIndex(SCHEDE_LIVE + 'live_index.json')])
       .then(([local, live]) => {
@@ -2281,18 +1978,68 @@ __SCHEDA_CSS__
         Object.entries(local || {}).forEach(([k, v]) => { if (!merged[k]) merged[k] = v; });
         schedeIndex = merged;
         if (Object.keys(schedeIndex).length) {
-          initTopProjects();
           renderPipeline();
+          window.ZoneView.render();
         }
       });
 
-    initKpis();
-    initRegionRanking();
-    initTopProjects();
+    // «La mia zona»: near-site projects, news and national picture for the chosen region / province
+    let zoneChanges = { loaded: false };
+    const provincesOfRecord = r => text(r.province).split(/[,/ ]+/).filter(Boolean);
+    function zoneItem(r) {
+      return {
+        key: r.project_key, region: r.region, provinces: provincesOfRecord(r), place: r.municipalities,
+        proponent: r.proponent, title: r.title, mw: r.power_mw, url: r.url,
+        rd: r.project_key ? (window.PVReady || {})[r.project_key] : null,
+        card: !!(r.project_key && schedeIndex[r.project_key]), file: r.project_key && schedeIndex[r.project_key]
+      };
+    }
+    const changeItem = x => ({
+      key: x.project_key, region: x.region, provinces: provincesOfRecord(x), place: x.municipalities,
+      proponent: x.proponent, title: x.title, mw: x.power_mw, what: x.what
+    });
+    function zoneActions(x) {
+      const u = safeUrl(x.url);
+      const portal = u ? `<a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer">Portale</a>` : '';
+      const card = x.file ? `<button class="sc-btn" type="button" data-scheda="${escapeHtml(x.file.file)}"${x.file.live ? ' data-live="1"' : ''}>Scheda</button>` : '';
+      return card + portal;
+    }
+    function zoneNational() {
+      const near = operationalRecords().map(zoneItem).filter(x => x.rd && (x.rd.level === 'Alta' || x.rd.level === 'Media'));
+      const byPhase = {};
+      near.forEach(x => { const k = x.rd.phase_label || x.rd.level; byPhase[k] = (byPhase[k] || 0) + toNumber(x.mw); });
+      return [
+        { title: 'MW vicini al cantiere per fase', note: 'Italia', unit: 'mw',
+          rows: Object.entries(byPhase).sort((a, b) => b[1] - a[1]).map(([label, value]) => ({ label, value })) },
+        { title: 'MW richiesti a Terna per regione', note: 'prime 5, dato aggregato', unit: 'mw',
+          rows: topN(summary.regions || [], 'terna_mw', 5).filter(x => x.terna_mw).map(x => ({ label: x.region, value: x.terna_mw })) }
+      ];
+    }
+
     initFilters();
     renderPipeline();
-    initCharts();
     attachEvents();
+    window.ZoneView.mount({
+      items: () => operationalRecords().map(zoneItem),
+      changes: () => zoneChanges,
+      actions: zoneActions,
+      national: zoneNational,
+      provinceLabel: provLabel,
+      updated: () => summary.generated_at || '',
+      scopeNote: 'escluso radar Terna',
+      showNear: () => {
+        const kind = document.getElementById('dataKindFilter');
+        kind.value = 'cantiere';
+        kind.dispatchEvent(new Event('change'));
+      }
+    });
+    // changes since the previous dashboard update, written by the local update next to data.json
+    getIndex('changes_latest.json').then(c => {
+      if (!c || !c.date) return;
+      zoneChanges = { loaded: true, date: c.date, since: c.since,
+        nuovi: (c.nuovi || []).map(changeItem), avanzamenti: (c.avanzamenti || []).map(changeItem) };
+      window.ZoneView.render();
+    });
 
     const pipelineExportButton =
       document.getElementById(
@@ -2315,7 +2062,11 @@ __SCHEDA_CSS__
             scheda_js = (panel_dir / "scheda_panel.js").read_text(encoding="utf-8").replace("</", "<\\/")
         except OSError:
             scheda_css, scheda_js = "", ""
+        assets_dir = Path(__file__).resolve().parent.parent / "docs" / "assets"
+        zone_css = (assets_dir / "zone-view.css").read_text(encoding="utf-8")
+        zone_js = (assets_dir / "zone-view.js").read_text(encoding="utf-8").replace("</", "<\\/")
         return (template.replace("__SCHEDA_CSS__", scheda_css).replace("__SCHEDA_JS__", scheda_js)
+                .replace("__ZONE_CSS__", zone_css).replace("__ZONE_JS__", zone_js)
                 .replace("__DASHBOARD_DATA__", data_json))
 
 
