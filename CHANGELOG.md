@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-17 — Dashboard FV ed eolica, filtri geografici: scelta una regione, il filtro province mostra solo le sue province, con sigla e nome (es. «FG – Foggia») e, nel FV, il numero di progetti; scegliendo una provincia senza regione, la regione si imposta da sola.
+
 - 2026-11-12 — Portali eolici regionali dal PC: una fonte che restituisce 0 progetti mentre prima ne aveva è trattata come non riuscita e mantiene i progetti precedenti. Il 12/11 SI-VVI ha risposto vuoto (21 s) e 24 procedure siciliane erano uscite dal censimento: ripristinate le righe del 06/11, report del 12/11 ritirato e base del confronto riportata al 09/11.
 
 - 2026-11-11 — Dati mancanti, segnalazioni dell'utente: (1) Sardegna: proponente letto prima di tutto come nome di società con forma giuridica («Proponente: Società Apollo Decimoputzu S.r.l.» → «Apollo Decimoputzu S.r.l.»), e pagina dell'avviso letta anche quando manca solo il proponente. (2) Completamento dalle schede (passo 3ZR, `fill-radar`): ora riempie anche il proponente vuoto con la società indicata come Proponente nei documenti (oltre a MW e localizzazione), così i MW presenti solo nei documenti (es. «Isola Barbieri AFV», SILVIA) entrano nel radar appena la scheda è pronta. (3) Report cambiamenti FV: nuova sezione «Nuovi progetti con dati mancanti», per vedere subito i record senza MW, proponente o localizzazione.
