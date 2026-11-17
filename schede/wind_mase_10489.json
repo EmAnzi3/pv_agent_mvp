@@ -1,0 +1,817 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10489",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"PARCO EOLICO CALTAGIRONE\" di potenza nominale pari a 54,00 MW con un sistema di accumulo integrato da 36,00 MW e relative opere di connessione alla rete di distribuzione, da realizzarsi nei Comuni di Caltagirone, Mineo, Aidone, Ramacca.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10489",
+ "source": "mase",
+ "updated": "2026-11-17",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "54 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10489",
+    "excerpt": "54 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "9",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 6 (3), 8 (3), 2 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981667",
+    "page": 4,
+    "document": "CAL-SA-R10_Studio Faunistico_signed",
+    "excerpt": "destinazione agricola. L’impianto eolico sarà composto da n° 9 aerogeneratori, ciascuno di potenza massima da 6,00 MW, corrispondenti ad una potenza installata massima di 54.00 MW, ubicati nel Comune di"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "36 MW / 72 MWh",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 90 MW (14), 54 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981713",
+    "page": 1,
+    "document": "Avviso al pubblico del 22/02/2024",
+    "excerpt": "EOLICO CALTAGIRONE” DI POTENZA NOMINALE PARI A 54,00 MW INTEGRATO CON UN SISTEMA DI ACCUMULO DA 36,00 MW E RELATIVE OPERE DI CONNESSIONE ALLA RETE DI DISTRIBUZIONE"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "8 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981658",
+    "page": 8,
+    "document": "038.21.01.R01",
+    "excerpt": "sostegni lungo il tracciato e quindi l’armamento di nuovi conduttori. I tempi medi per la realizzazione di tutte le azioni previste è stimato in circa 8 mesi + 1 mese/km. Una valutazione più accurata dei tempi di realizz"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "CT",
+  "comuni": [
+   "Mineo",
+   "Ramacca",
+   "Aidone",
+   "Caltagirone"
+  ],
+  "coordinate": {
+   "lat": 37.30382,
+   "lon": 14.59949,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (101 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981550",
+    "page": 43,
+    "document": "CAL-PD-R01_Relazione tecnica descrittiva_signed",
+    "excerpt": "provincia di Catania in contrada Gallinica (particelle n.150 e 149 del foglio 38); la sua posizione è identificata dalle coordinate geografiche: 37°18'13.76\"N, 14°35'58.17\"E. L’area del BESS e dell’edificio Consegna è di"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.30382,14.59949",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 37.45776,
+   "lon": 14.59132,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981623",
+    "page": 7,
+    "document": "038.21.01.R12",
+    "excerpt": "geografiche sono le seguenti:  Latitudine: 37°27'27.92\" N  Longitudine: 14°35'28.76\" E."
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.45776,14.59132"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Wind Energy Caltagirone S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "windcaltagirone@legpec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1106718",
+      "page": 1,
+      "document": "Richiesta Integrazioni del MIC",
+      "excerpt": "Alla Società WIND ENERGY CALTAGIRONE S.R.L windcaltagirone@legpec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10489"
+   }
+  },
+  {
+   "name": "Blunova servizi S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981570",
+    "page": 25,
+    "document": "CAL-PD-R50_Relazione geologica_signed",
+    "excerpt": "Committente Blunova servizi s.r.l. Cantiere Realizzazione di un impianto eolico"
+   }
+  },
+  {
+   "name": "Qair Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981630",
+    "page": 2,
+    "document": "038.21.01.R12",
+    "excerpt": "RTN a 380 kV, da realizzarsi nel comune di Ramacca (CT). Proponente Qair Italia S.r.l."
+   }
+  },
+  {
+   "name": "Dott. Carlo Cibella",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981570",
+    "page": 2,
+    "document": "CAL-PD-R50_Relazione geologica_signed",
+    "excerpt": "- RELAZIONE GEOLOGICA -"
+   }
+  },
+  {
+   "name": "Blusolar Caltagirone 1 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981604",
+    "page": 1,
+    "document": "CAL-PD-T44 Inq.to accumulo su ortofoto BESS 36MW 72MWh Rev.01_signed",
+    "excerpt": "PROGETTISTA : BLUSOLAR CALTAGIRONE 1 S.r.l si riserva tutti i diritti su questo documento che non può essere riprodotto neppure parzialmente senza la sua autorizzazione scritta."
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Ipool S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01784280479",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Enrico Fermi 75 51100 Pistoia Pt",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "acustica@i-pool.it",
+     "occurrences": 78,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1004450",
+      "page": 2,
+      "document": "Integrazioni del 18/01/2024 - CALSAR06_Allegato01_signed",
+      "excerpt": "IPOOL s.r.l. C.F. e P.IVA 01784280479 - Email: acustica@i-pool.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 42,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981663",
+      "page": 2,
+      "document": "CAL-SA-R05_Studio anemologico e analisi di producibilità_signed",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "VRG Wind 819 S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "05637410480",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Alessandro Algardi 4 20148 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "parcoelicomineo@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1021115",
+      "page": 3,
+      "document": "Osservazioni dell'Ing. Valeriano Giusti, Legale Rappresentante della Società VRG WIND 819 SPA, in data 16/04/2024",
+      "excerpt": "20148 MILANO (MI) - P.IVA/CF 05637410480 - tel. 02671941 - fax 0267194210 - PEC: parcoelicomineo@legalmail.it, ai sensi dell’art. 24 comma 3 del D.Lgs. 152/2006 e s.m.i. presenta le seguenti"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "02671941",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1021115",
+      "page": 3,
+      "document": "Osservazioni dell'Ing. Valeriano Giusti, Legale Rappresentante della Società VRG WIND 819 SPA, in data 16/04/2024",
+      "excerpt": "qualità di Amministratore Delegato della società VRG Wind 819 S.p.A., con sede in via A. ALGARDI 4 - 20148 MILANO (MI) - P.IVA/CF 05637410480 - tel. 02671941 - fax 0267194210 - PEC:"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "NP Sicilia 9 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "npsicilia9@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1053453",
+      "page": 1,
+      "document": "Integrazioni alle osservazioni del 16/04/2024 Prot. 0070907, della Società NP Sicilia 9, in data 18/04/2024",
+      "excerpt": "Sede Legale: Galleria Passarella, 2 - 20122 Milano - PEC: npsicilia9@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0287284480",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1020547",
+      "page": 1,
+      "document": "Osservazioni della Società NP Sicilia 9 s.r.l., in data 16/04/2024",
+      "excerpt": "NP SICILIA 9 S.R.L. con sede legale a Milano (MI), in Galleria Passarella, 2 - CAP 20122, C.F., P. IVA ed Iscrizione al Registro delle Imprese della CCIAA di Milano n. 13004290964, REA-MI-2697702, tel. 0287284480,"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "8 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Smontaggio (rotore-pale-mozzo)",
+    "start": 0.0,
+    "end": 1.15,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smontaggio (navicella)",
+    "start": 0.46,
+    "end": 1.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smontaggio (trami tubolari - 4 trami per singola torre)",
+    "start": 0.69,
+    "end": 2.31,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cavidotti di collegamento tra gli aerogeneratori",
+    "start": 1.15,
+    "end": 3.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cavidotti di collegamento alla SE di connessione e consegna MT/AT",
+    "start": 1.84,
+    "end": 4.15,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cavidotto di collegamento SE MT/AT - stallo della stazione RTN",
+    "start": 3.69,
+    "end": 4.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Fondazioni bess",
+    "start": 0.69,
+    "end": 1.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cavidotti interrati interni",
+    "start": 1.15,
+    "end": 1.84,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Livellamento del terreno secondo l'originaria morfologia",
+    "start": 1.61,
+    "end": 2.31,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Movimento di materie per liberare l'estradosso ed il perimetro del plinto",
+    "start": 1.61,
+    "end": 2.54,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Demolizione del calcestruzzo armato fino a quota -1,00 m",
+    "start": 2.07,
+    "end": 5.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Taglio, movimentazione ed accatastamento ferri di armatura",
+    "start": 3.69,
+    "end": 5.54,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Carico e trasporto delle materie di risulta ad impianto di recupero",
+    "start": 5.07,
+    "end": 6.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristino della pavimentazione stradale",
+    "start": 4.15,
+    "end": 6.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristino delle aree delle piazzole e dei plinti dismessi",
+    "start": 5.53,
+    "end": 7.15,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristino delle opere idrauliche per il deflusso delle acque meteoriche",
+    "start": 6.69,
+    "end": 7.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione delle aree a verde con le specie autoctone",
+    "start": 7.15,
+    "end": 8.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Varie",
+    "start": 7.84,
+    "end": 8.31,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cavo da 185 mm²",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cavo da 300 mm²",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Cavo da 630 mm²",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Lunghezza totale cavi",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Lunghezza strade asfaltate",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Superficie plinto",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Superficie piazzola",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Superficie (plinto + piazzola) da ripristinare",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Volume cls da demolire a qota -1,00 m x ciscun plinto",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Acciaio da dismettere x ciascun plinto",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Superficie stazione elettrica",
+    "start": 0.23,
+    "end": 0.46,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 8.31,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/981560",
+   "page": 2,
+   "document": "CAL-PD-R10.2_Cronoprogramma dismissione_signed",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "19",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "20",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "21",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "22",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "23",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "24",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "25",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "26",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "27",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "28",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "29",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "30",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "31",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "32",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "33",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "34",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "35",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "36",
+     "start": 8.077,
+     "end": 8.308
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "14 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1), 1 mese (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981556",
+    "page": 180,
+    "document": "CAL-PD-R07_Disciplinare descrittivo e prestazionale degli elementi  tecnici_signed",
+    "excerpt": "provini (il numero e la frequenza verrà stabilito a discrezione del Direttore dei Lavori) da sottoporre a prova di resistenza a compressione iniziale (3, 7 e 14 giorni). I valori di questi ultimi saranno costantemente mo"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "CAL-PD-R10.1_Cronoprogramma dei lavori_signed",
+   "url": "https://va.mite.gov.it/File/Documento/981559"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "CAL-PD-R10.1_Cronoprogramma dei lavori_signed",
+    "url": "https://va.mite.gov.it/File/Documento/981559"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 197,
+  "pagine": 2873,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "WIND ENERGY CALTAGIRONE S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 54.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CALTAGIRONE, MINEO, AIDONE, RAMACCA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CT",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "150 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
