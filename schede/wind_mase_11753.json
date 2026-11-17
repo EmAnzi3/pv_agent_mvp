@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto eolico composto da 8 aerogeneratori di potenza nominale complessiva pari a 57,60 MWp denominato \"H019 - Castel Giorgio\" e relative opere connesse, ubicato nel Comune di Castel Giorgio (TR), Castel Viscardo (TR) e Orvieto (TR).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11753",
  "source": "mase",
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "8",
    "status": "da documenti",
-   "sub": "7,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 29 (1), 3 (1), 4 (1)",
+   "sub": "7,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 29 (2), 3 (2), 4 (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1317811",
     "page": 1,
@@ -48,8 +48,8 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "98 MW",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 40 MW (1), 155,2 MW (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1418499",
     "page": 1,
@@ -80,9 +80,9 @@
    "Orvieto"
   ],
   "coordinate": {
-   "lat": 42.72028,
-   "lon": 11.99309,
-   "tipo": "centro della tavola georeferenziata di progetto (113 riferimenti concordi)",
+   "lat": 42.71954,
+   "lon": 11.99445,
+   "tipo": "centro della tavola georeferenziata di progetto (119 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1317685",
     "page": 1,
@@ -90,7 +90,7 @@
     "excerpt": "Planimetria catastale piano quotato"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.72028,11.99309",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.71954,11.99445",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -113,7 +113,7 @@
     {
      "type": "PEC",
      "value": "gruppovisconticastelgiorgio@pec.it",
-     "occurrences": 123,
+     "occurrences": 137,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1317808",
       "page": 1,
@@ -124,18 +124,98 @@
     {
      "type": "PEC",
      "value": "gruppoviscontisrl@pec.it",
-     "occurrences": 116,
+     "occurrences": 132,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1317808",
       "page": 1,
       "document": "S.I.A.53-VNSIA0038D0-signed_signed",
       "excerpt": "P.IVA 04217420712 gruppoviscontisrl@pec.it"
      }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@gruppovisconti.net",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1317774",
+      "page": 5,
+      "document": "Checklist per esame procedibilità istanza VIA",
+      "excerpt": "Telefono: 366/2551911; e-mail: info@gruppovisconti.net ; pec: gruppoviscontisrl@pec.it"
+     }
     }
    ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11753"
+   }
+  },
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 29,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418415",
+      "page": 1,
+      "document": "Integrazioni del 24/07/2026 - Relazione Generale",
+      "excerpt": "P.IVA/C.F. 06400370968 PEC: rwerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1335433",
+    "page": 6,
+    "document": "Osservazioni della Signora Costanza Bracci Testasecca, in data 24/11/2025",
+    "excerpt": "- PHOBOS (parco eolico) - proponente RWE Renewables Italia S.r.l."
+   }
+  },
+  {
+   "name": "Grupotec Solar Italia 14 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1335433",
+    "page": 6,
+    "document": "Osservazioni della Signora Costanza Bracci Testasecca, in data 24/11/2025",
+    "excerpt": "- Campo fotovoltaico “Vencaiola” - proponente GRUPOTEC SOLAR ITALIA 14 S.r.l. (indicata nel"
+   }
+  },
+  {
+   "name": "Rinascita Botticelli S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1335433",
+    "page": 6,
+    "document": "Osservazioni della Signora Costanza Bracci Testasecca, in data 24/11/2025",
+    "excerpt": "- Castra Energiae Umbriae — BESS (accumulo stand-alone) - proponente Rinascita Botticelli S.r.l."
    }
   },
   {
@@ -160,28 +240,31 @@
  ],
  "altri_soggetti": [
   {
-   "name": "RWE Renewables Italia S.r.l.",
+   "name": "Basalti Orvieto - S.r.l.",
    "kind": "società",
    "roles": [],
-   "vat": null,
+   "vat": "01288040668",
    "vat_group": false,
-   "verified": false,
+   "verified": true,
    "esecuzione": null,
-   "office": null,
+   "office": "Via Rocca Di Corno 49 67100 L'Aquila Aq",
    "contacts": [
     {
      "type": "PEC",
-     "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 29,
+     "value": "basaltiorvieto@pec.basaltiorvieto.com",
+     "occurrences": 2,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1418415",
-      "page": 1,
-      "document": "Integrazioni del 24/07/2026 - Relazione Generale",
-      "excerpt": "P.IVA/C.F. 06400370968 PEC: rwerenewablesitaliasrl@legalmail.it"
+      "url": "https://va.mite.gov.it/File/Documento/1330867",
+      "page": 2,
+      "document": "Osservazioni della Società Basalti Orvieto s.r.l. in data 13/11/2025",
+      "excerpt": "Il sottoscritto Gianluca Pizzuti, in qualità di legale rappresentante di Basalti Orvieto s.r.l., corrente in Castel Viscardo (TR), località il Cornale, PEC basaltiorvieto@pec.basaltiorvieto.com, con riguardo al"
      }
     }
    ],
-   "source": null
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
   },
   {
    "name": "Tiemes S.r.l.",
@@ -830,9 +913,9 @@
  },
  "documentazione": {
   "documenti": 658,
-  "pagine": 2242,
+  "pagine": 6810,
   "completa": false,
-  "da_leggere": 358
+  "da_leggere": 61
  },
  "confronto": [
   {
@@ -867,12 +950,16 @@
    "reason": "La fine lavori prevista (07/09/2026) è passata e non ci sono documenti successivi: verificare se l'impianto è in esercizio."
   },
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "159 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "176 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
