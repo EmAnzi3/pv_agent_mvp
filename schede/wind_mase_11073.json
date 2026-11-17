@@ -5,7 +5,7 @@
  "title": "Progetto di un parco eolico denominato \"Sedda Meddau\" composto da 12 aerogeneratori dalla potenza nominale pari a circa 4,7 MW ciascuno e per una potenza complessiva di 57 MW, da realizzarsi ne Comuni di Seui (OG), Esterzili (CA) ed Escalaplano (CA).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11073",
  "source": "mase",
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "12",
    "status": "da documenti",
-   "sub": "4,75 MW ciascuno · altezza mozzo 118 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 3 (2), 4 (1)",
+   "sub": "4,75 MW ciascuno · altezza mozzo 118 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 3 (10), 4 (5), 2 (5)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1111612",
     "page": 1,
@@ -36,8 +36,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "12 mesi",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 24 mesi (2), 14 mesi (1), 200 giorni (circa 7 mesi) (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 200 giorni (circa 7 mesi) (3), 14 mesi (2), 24 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1111604",
     "page": 162,
@@ -68,21 +68,21 @@
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
-   "lat": 39.58129,
-   "lon": 14.92437,
+   "lat": 39.75801,
+   "lon": 9.37714,
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1373138",
-    "page": 2,
-    "document": "Integrazioni del 10/03/2026 - Tabella di picchettazione - Stazione elettrica 150/380 kV 'SE Sanluri'",
-    "excerpt": "493510,89"
+    "url": "https://va.mite.gov.it/File/Documento/1111581",
+    "page": 20,
+    "document": "Relazione tecnica generale",
+    "excerpt": "SE-08 39,758014"
    },
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=39.58129,14.92437"
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=39.75801,9.37714"
   },
   "lotti": []
  },
  "soggetti": [
   {
-   "name": "Loto Rinnovabili S.r.l.",
+   "name": "è Loto Rinnovabili S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente"
@@ -96,7 +96,7 @@
     {
      "type": "PEC",
      "value": "lotorinnovabili@legalmail.it",
-     "occurrences": 128,
+     "occurrences": 183,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1111603",
       "page": 1,
@@ -107,7 +107,7 @@
     {
      "type": "PEC",
      "value": "rinnovabili@pec.agreenpower.it",
-     "occurrences": 1,
+     "occurrences": 6,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1111604",
       "page": 8,
@@ -118,7 +118,7 @@
     {
      "type": "Telefono",
      "value": "023211191",
-     "occurrences": 1,
+     "occurrences": 7,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1111604",
       "page": 8,
@@ -208,7 +208,7 @@
     {
      "type": "E-mail",
      "value": "info@agreenpower.it",
-     "occurrences": 125,
+     "occurrences": 173,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1111603",
       "page": 1,
@@ -518,7 +518,7 @@
   "duration": {
    "text": "12 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 50 giorni (6), 20 giorni (2), 24 mesi (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 50 giorni (6), 200 giorni (circa 7 mesi) (3), 14 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1111604",
     "page": 162,
@@ -538,9 +538,9 @@
  },
  "documentazione": {
   "documenti": 354,
-  "pagine": 3567,
+  "pagine": 5449,
   "completa": false,
-  "da_leggere": 54
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -571,8 +571,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "281 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "349 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
