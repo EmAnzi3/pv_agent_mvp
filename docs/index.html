@@ -1470,10 +1470,37 @@
       });
     }
 
+
+    // geography: the province list follows the region (sigla + name + number of projects); picking a
+    // province with no region selected sets its region
+    const PROV_NAMES = {"AG":"Agrigento","AL":"Alessandria","AN":"Ancona","AO":"Aosta","AP":"Ascoli Piceno","AQ":"L'Aquila","AR":"Arezzo","AT":"Asti","AV":"Avellino","BA":"Bari","BG":"Bergamo","BI":"Biella","BL":"Belluno","BN":"Benevento","BO":"Bologna","BR":"Brindisi","BS":"Brescia","BT":"Barletta-Andria-Trani","BZ":"Bolzano","CA":"Cagliari","CB":"Campobasso","CE":"Caserta","CH":"Chieti","CL":"Caltanissetta","CN":"Cuneo","CO":"Como","CR":"Cremona","CS":"Cosenza","CT":"Catania","CZ":"Catanzaro","EN":"Enna","FC":"Forlì-Cesena","FE":"Ferrara","FG":"Foggia","FI":"Firenze","FM":"Fermo","FR":"Frosinone","GE":"Genova","GO":"Gorizia","GR":"Grosseto","IM":"Imperia","IS":"Isernia","KR":"Crotone","LC":"Lecco","LE":"Lecce","LI":"Livorno","LO":"Lodi","LT":"Latina","LU":"Lucca","MB":"Monza e Brianza","MC":"Macerata","ME":"Messina","MI":"Milano","MN":"Mantova","MO":"Modena","MS":"Massa-Carrara","MT":"Matera","NA":"Napoli","NO":"Novara","NU":"Nuoro","OR":"Oristano","PA":"Palermo","PC":"Piacenza","PD":"Padova","PE":"Pescara","PG":"Perugia","PI":"Pisa","PN":"Pordenone","PO":"Prato","PR":"Parma","PT":"Pistoia","PU":"Pesaro e Urbino","PV":"Pavia","PZ":"Potenza","RA":"Ravenna","RC":"Reggio Calabria","RE":"Reggio Emilia","RG":"Ragusa","RI":"Rieti","RM":"Roma","RN":"Rimini","RO":"Rovigo","SA":"Salerno","SI":"Siena","SO":"Sondrio","SP":"La Spezia","SR":"Siracusa","SS":"Sassari","SU":"Sud Sardegna","SV":"Savona","TA":"Taranto","TE":"Teramo","TN":"Trento","TO":"Torino","TP":"Trapani","TR":"Terni","TS":"Trieste","TV":"Treviso","UD":"Udine","VA":"Varese","VB":"Verbano-Cusio-Ossola","VC":"Vercelli","VE":"Venezia","VI":"Vicenza","VR":"Verona","VT":"Viterbo","VV":"Vibo Valentia"};
+    function provLabel(code) {
+      return PROV_NAMES[code] ? code + ' – ' + PROV_NAMES[code] : code;
+    }
+    function refreshProvinces() {
+      const region = document.getElementById('regionFilter').value;
+      const select = document.getElementById('provinceFilter');
+      const current = select.value;
+      const counts = {};
+      records.forEach(r => {
+        if (!r.province || (region && r.region !== region)) return;
+        counts[r.province] = (counts[r.province] || 0) + 1;
+      });
+      const codes = Object.keys(counts).sort((a, b) => provLabel(a).localeCompare(provLabel(b), 'it'));
+      fillSelect('provinceFilter', region ? 'Tutte le province (' + region + ')' : 'Tutte le province', codes,
+        code => provLabel(code) + ' (' + counts[code] + ')');
+      select.value = counts[current] ? current : '';
+    }
+    function regionForProvince(code) {
+      const counts = {};
+      records.forEach(r => { if (r.province === code && r.region) counts[r.region] = (counts[r.region] || 0) + 1; });
+      return Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0] || '';
+    }
+
     function initFilters() {
       fillSelect('sourceFilter', 'Tutte le fonti', uniqueValues('source_group'), value => sourceLabel(value));
       fillSelect('regionFilter', 'Tutte le regioni', uniqueValues('region'));
-      fillSelect('provinceFilter', 'Tutte le province', uniqueValues('province'));
+      refreshProvinces();
     }
 
     function recordMatchesFilters(record) {
@@ -1841,6 +1868,17 @@
     }
 
     function attachEvents() {
+      // registered first, so the province list is updated before the table is redrawn
+      document.getElementById('regionFilter').addEventListener('change', refreshProvinces);
+      document.getElementById('provinceFilter').addEventListener('change', () => {
+        const code = document.getElementById('provinceFilter').value;
+        const regionSelect = document.getElementById('regionFilter');
+        if (code && !regionSelect.value) {
+          regionSelect.value = regionForProvince(code);
+          refreshProvinces();
+          document.getElementById('provinceFilter').value = code;
+        }
+      });
       ['searchInput', 'dataKindFilter', 'epcFilter', 'sourceFilter', 'regionFilter', 'provinceFilter', 'sortFieldFilter', 'sortDirectionFilter'].forEach(id => {
         document.getElementById(id).addEventListener('input', renderPipeline);
         document.getElementById(id).addEventListener('change', renderPipeline);

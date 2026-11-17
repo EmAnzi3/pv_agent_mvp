@@ -211,15 +211,37 @@
   }
 
   // ---------------------------------------------------------------- pipeline
-  function fillSelect(id, first, values) {
+  function fillSelect(id, first, values, label = v => v) {
     const el = document.getElementById(id);
-    el.innerHTML = `<option value="">${first}</option>` + values.map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('');
+    el.innerHTML = `<option value="">${escapeHtml(first)}</option>` + values.map(v => `<option value="${escapeHtml(v)}">${escapeHtml(label(v))}</option>`).join('');
+  }
+  // geography: the province list follows the region (sigla + name); picking a
+  // province with no region selected sets its region
+  const PROV_NAMES = {"AG":"Agrigento","AL":"Alessandria","AN":"Ancona","AO":"Aosta","AP":"Ascoli Piceno","AQ":"L'Aquila","AR":"Arezzo","AT":"Asti","AV":"Avellino","BA":"Bari","BG":"Bergamo","BI":"Biella","BL":"Belluno","BN":"Benevento","BO":"Bologna","BR":"Brindisi","BS":"Brescia","BT":"Barletta-Andria-Trani","BZ":"Bolzano","CA":"Cagliari","CB":"Campobasso","CE":"Caserta","CH":"Chieti","CL":"Caltanissetta","CN":"Cuneo","CO":"Como","CR":"Cremona","CS":"Cosenza","CT":"Catania","CZ":"Catanzaro","EN":"Enna","FC":"Forlì-Cesena","FE":"Ferrara","FG":"Foggia","FI":"Firenze","FM":"Fermo","FR":"Frosinone","GE":"Genova","GO":"Gorizia","GR":"Grosseto","IM":"Imperia","IS":"Isernia","KR":"Crotone","LC":"Lecco","LE":"Lecce","LI":"Livorno","LO":"Lodi","LT":"Latina","LU":"Lucca","MB":"Monza e Brianza","MC":"Macerata","ME":"Messina","MI":"Milano","MN":"Mantova","MO":"Modena","MS":"Massa-Carrara","MT":"Matera","NA":"Napoli","NO":"Novara","NU":"Nuoro","OR":"Oristano","PA":"Palermo","PC":"Piacenza","PD":"Padova","PE":"Pescara","PG":"Perugia","PI":"Pisa","PN":"Pordenone","PO":"Prato","PR":"Parma","PT":"Pistoia","PU":"Pesaro e Urbino","PV":"Pavia","PZ":"Potenza","RA":"Ravenna","RC":"Reggio Calabria","RE":"Reggio Emilia","RG":"Ragusa","RI":"Rieti","RM":"Roma","RN":"Rimini","RO":"Rovigo","SA":"Salerno","SI":"Siena","SO":"Sondrio","SP":"La Spezia","SR":"Siracusa","SS":"Sassari","SU":"Sud Sardegna","SV":"Savona","TA":"Taranto","TE":"Teramo","TN":"Trento","TO":"Torino","TP":"Trapani","TR":"Terni","TS":"Trieste","TV":"Treviso","UD":"Udine","VA":"Varese","VB":"Verbano-Cusio-Ossola","VC":"Vercelli","VE":"Venezia","VI":"Vicenza","VR":"Verona","VT":"Viterbo","VV":"Vibo Valentia"};
+  const provLabel = code => PROV_NAMES[code] ? `${code} – ${PROV_NAMES[code]}` : code;
+  const regionOf = r => (r.region || '').split(' / ')[0];
+  const provincesOf = r => (r.province || '').split(/[,/ ]+/).filter(p => /^[A-Z]{2}$/.test(p));
+  function refreshProvinces() {
+    const region = val('regionFilter'), el = document.getElementById('provinceFilter'), current = el.value;
+    const counts = {};
+    records.forEach(r => {
+      if (region && regionOf(r) !== region) return;
+      provincesOf(r).forEach(p => { counts[p] = (counts[p] || 0) + 1; });
+    });
+    const codes = Object.keys(counts).sort((a, b) => provLabel(a).localeCompare(provLabel(b), 'it'));
+    fillSelect('provinceFilter', region ? `Tutte le province (${region})` : 'Tutte le province', codes, provLabel);   // no counts: the table hides offshore and variants by default
+    el.value = counts[current] ? current : '';
+  }
+  function regionForProvince(code) {
+    const counts = {};
+    records.forEach(r => { if (provincesOf(r).includes(code) && regionOf(r)) counts[regionOf(r)] = (counts[regionOf(r)] || 0) + 1; });
+    return Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0] || '';
   }
   function initFilters() {
     const uniq = arr => [...new Set(arr.filter(Boolean))].sort((a, b) => a.localeCompare(b, 'it'));
     fillSelect('sourceFilter', 'Tutte le fonti', uniq(records.map(sourceLabel)));
     fillSelect('regionFilter', 'Tutte le regioni', uniq(records.map(r => (r.region || '').split(' / ')[0])));
-    fillSelect('provinceFilter', 'Tutte le province', uniq(records.flatMap(r => (r.province || '').split(/[,/ ]+/))).filter(p => /^[A-Z]{2}$/.test(p)));
+    refreshProvinces();
     fillSelect('phaseFilter', 'Tutte le fasi', PHASE_ORDER.filter(k => records.some(r => phaseGroup(r) === k)));
   }
   const val = id => document.getElementById(id).value;
@@ -315,6 +337,16 @@
         return;
       }
       initKpis(); initRegions(); initTop(); initFilters(); renderPipeline(); initCharts();
+      // registered first, so the province list is updated before the table is redrawn
+      document.getElementById('regionFilter').addEventListener('change', refreshProvinces);
+      document.getElementById('provinceFilter').addEventListener('change', () => {
+        const code = val('provinceFilter'), regionSelect = document.getElementById('regionFilter');
+        if (code && !regionSelect.value) {
+          regionSelect.value = regionForProvince(code);
+          refreshProvinces();
+          document.getElementById('provinceFilter').value = code;
+        }
+      });
       ['searchInput', 'dataKindFilter', 'epcFilter', 'sourceFilter', 'regionFilter', 'provinceFilter', 'phaseFilter',
        'sortFieldFilter', 'sortDirectionFilter', 'sideFilter'].forEach(id => {
         document.getElementById(id).addEventListener('input', renderPipeline);
