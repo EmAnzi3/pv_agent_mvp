@@ -5,14 +5,14 @@
  "title": "Progetto per la realizzazione di un impianto eolico denominato \"Agrifoglio\", costituito da 9 aerogeneratori, di cui 6 da 6 MW e 3 da 6,2 MW, per una potenza complessiva dell'impianto pari a 54,6 MW, da realizzarsi nei comuni di Atella (PZ) e San Fele (PZ), incluso un sistema di accumulo da 30 MW e le relative opere di connessione alla RTN ricadenti anche nei comuni di Avigliano (PZ), Filiano (PZ) e Potenza (PZ). Codice pratica MYTERNA n. 202202217.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10290",
  "source": "mase",
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
    "value": "54,6 MW",
-   "sub": null,
+   "sub": "Suddivisa in 2 lotti",
    "source": {
     "document": "titolo del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10290",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "9",
    "status": "da documenti",
-   "sub": "6,07 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 3 (7), 6 (6), 25 (3)",
+   "sub": "6,07 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 3 (8), 6 (6), 25 (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/986281",
     "page": 2,
@@ -37,7 +37,7 @@
    "label": "Accumulo",
    "value": "30 MW",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 54,6 MW (5), 54 MW (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 54,6 MW (8), 54 MW (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/936955",
     "page": 18,
@@ -111,9 +111,9 @@
     {
      "type": "PEC",
      "value": "ripawindsrl@pec.it",
-     "occurrences": 120,
+     "occurrences": 122,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/936926",
+      "url": "https://va.mite.gov.it/File/Documento/936703",
       "page": 1,
       "document": "TAVIII_SCHEDE FOTOINSERIMENTI PO13-PO18",
       "excerpt": "P.IVA 01960620761 Indirizzo pec: ripawindsrl@pec.it"
@@ -122,7 +122,7 @@
     {
      "type": "PEC",
      "value": "ripawind@pec.it",
-     "occurrences": 8,
+     "occurrences": 10,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/983477",
       "page": 1,
@@ -151,9 +151,9 @@
     {
      "type": "E-mail",
      "value": "info@rsv-ds.it",
-     "occurrences": 116,
+     "occurrences": 118,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/936926",
+      "url": "https://va.mite.gov.it/File/Documento/936703",
       "page": 1,
       "document": "TAVIII_SCHEDE FOTOINSERIMENTI PO13-PO18",
       "excerpt": "P.IVA 05885970656 Tel./fax:+39 0974 985490 | e-mail: info@rsv-ds.it"
@@ -188,6 +188,44 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Andreone Marbles S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02099780641",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piano Insediamento Produttivo Aree 83053 Sant'Andrea Di Conza Av",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "andreonemarbles@pec.it",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1150936",
+      "page": 2,
+      "document": "Osservazioni della Società Agriecology S.r.l., in data 27/08/2024",
+      "excerpt": "Tel/fax: 0827/35639 PEC: andreonemarbles@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "marbles@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1150936",
+      "page": 7,
+      "document": "Osservazioni della Società Agriecology S.r.l., in data 27/08/2024",
+      "excerpt": "sione di documentazione integrativa Ufficio marbles@pec.it\""
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Helios Energy S.r.l.",
    "kind": "società",
@@ -536,9 +574,9 @@
  },
  "documentazione": {
   "documenti": 337,
-  "pagine": 1332,
-  "completa": false,
-  "da_leggere": 37
+  "pagine": 1462,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -574,7 +612,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "6 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "29 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
