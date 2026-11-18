@@ -1,0 +1,770 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10790",
+ "title": "Progetto per la realizzazione di un parco eolico denominato \"Parco eolico di Manciano\", per la produzione di energia elettrica da fonte eolica di potenza complessiva 50,4 MW sito in Manciano (GR) e le relative opere di connessione per l'immissione nella rete di trasmissione nazionale RTN.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10790",
+ "source": "mase",
+ "updated": "2026-11-18",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "50,4 MW",
+   "sub": "Suddivisa in 3 lotti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10790",
+    "excerpt": "50,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 25 (10), 4 (9), 3 (8)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1282484",
+    "page": 3,
+    "document": "Richiesta integrazioni della documentazione da parte di ARPA Toscana.",
+    "excerpt": "all’agricoltura, silvicoltura, agriturismo e attività domestiche. Dal PCCA del Comune di Manciano risulta che i 7 aerogeneratori sono situati in III classe acustica, con gli aerogeneratori WTG1 e WTG4 posizionati a poche"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1282484",
+    "page": 2,
+    "document": "Richiesta integrazioni della documentazione da parte di ARPA Toscana.",
+    "excerpt": "alternato ad un altrettanto maxi-impianto fotovoltaico/agrivoltaico."
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "27,6 MW / 20 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 15 MW (4), 10 MW (4), 20 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1131568",
+    "page": 70,
+    "document": "Richiesta integrazioni Regione Toscana",
+    "excerpt": "costituito da 6 aerogeneratori, ciascuno di potenza nominale pari a 7,2 MW per una potenza eolica complessiva di 43,2 MW, oltre ad un sistema di accumulo da 27,6 MW, potenza totale in immissione pari a 70,8 MW, in agro n"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "100 giorni (circa 3 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 302 giorni (circa 10 mesi) (2), 15 mesi (1), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1121619",
+    "page": 48,
+    "document": "Emissioni Polverulente",
+    "excerpt": "Il ricettore più vicino al cantiere relativo alle piazzole degli aerogeneratori è ubicato ad una distanza pari a circa 290 m. Le attività avranno durata pari a circa 31 giorni lavorativi, inferiore quindi ai 100 giorni. "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Toscana",
+  "provincia": "GR",
+  "comuni": [
+   "Manciano"
+  ],
+  "coordinate": {
+   "lat": 42.4734,
+   "lon": 11.57359,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (3 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1121616",
+    "page": 30,
+    "document": "Valutazione Previsionale di Impatto Acustico",
+    "excerpt": "P1 42° 28' 45.11\" N 11° 33' 43.88\" E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.47340,11.57359",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Gruppo Visconti Manciano S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gruppoviscontimanciano@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1131568",
+      "page": 23,
+      "document": "Richiesta integrazioni Regione Toscana",
+      "excerpt": "Gruppo Visconti Manciano S.r.l. gruppoviscontimanciano@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "gruppoviscontisrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1131568",
+      "page": 25,
+      "document": "Richiesta integrazioni Regione Toscana",
+      "excerpt": "20141 MILANO (MI) gruppoviscontisrl@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "scontimanciano@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1264559",
+      "page": 2,
+      "document": "Integrazioni del 22/05/2025 -Lettera di accompagnamento al Ministero dell'Ambiente",
+      "excerpt": "ponente) scontimanciano@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10790"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Sintecnica Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10246080963",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Iv Novembre 4 20124 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "a.engineering@pec.sintecnica.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1264559",
+      "page": 2,
+      "document": "Integrazioni del 22/05/2025 -Lettera di accompagnamento al Ministero dell'Ambiente",
+      "excerpt": "si prega di contattare i seguenti riferimenti: a.engineering@pec.sintecnica.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Roberto Tasselli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "r.tasselli@cb6toscanasud.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1131568",
+      "page": 80,
+      "document": "Richiesta integrazioni Regione Toscana",
+      "excerpt": "sito www.cb6toscanasud.it, accedendo alla sezione “privacy”. Pratica 2024/115- AREA Demanio e Contratti Responsabile del Procedimento ai sensi della Legge 07/08/1990 n.241: Ing. Roberto Tasselli - Tel. 0564 435679 – e-ma"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0564435679",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1131568",
+      "page": 80,
+      "document": "Richiesta integrazioni Regione Toscana",
+      "excerpt": "sito www.cb6toscanasud.it, accedendo alla sezione “privacy”. Pratica 2024/115- AREA Demanio e Contratti Responsabile del Procedimento ai sensi della Legge 07/08/1990 n.241: Ing. Roberto Tasselli - Tel. 0564 435679 – e-ma"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Francesca Benvenuti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0554386894",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1131568",
+      "page": 7,
+      "document": "Richiesta integrazioni Regione Toscana",
+      "excerpt": "- Arch. Francesca Benvenuti tel. 055/4386894"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Geol. Stefano Pignotti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0554387254",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1365684",
+      "page": 14,
+      "document": "Parere della Regione Toscana, in data 15/09/2025",
+      "excerpt": "Carducci 57 e in particolare ai seguenti Dipendenti: Procedure tecniche autorizzative in materia di difesa del suolo: Titolare di Incarico di Elevata Qualificazione Dott. Geol. Stefano Pignotti (tel. 0554387254 email:"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Maurizio Padovani",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "m.padovani@cb6toscansud.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1131568",
+      "page": 80,
+      "document": "Richiesta integrazioni Regione Toscana",
+      "excerpt": "Pratica 2024/115- AREA Demanio e Contratti Responsabile del Procedimento ai sensi della Legge 07/08/1990 n.241: Ing. Roberto Tasselli - Tel. 0564 435679 – e-mail: r.tasselli@cb6toscanasud.it SEZIONE Autorizzazioni, Conce"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Riccardo Battigalli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "r.battigalli@cb6toscanasud.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1131568",
+      "page": 80,
+      "document": "Richiesta integrazioni Regione Toscana",
+      "excerpt": "SEZIONE Autorizzazioni, Concessioni Referenti: Geom. Maurizio Padovani - Tel. 0564-435681 - e-mail: m.padovani@cb6toscansud.it - Geom. Riccardo Battigalli - Tel. 0564-435677 - e-mail: r.battigalli@cb6toscanasud.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sibilla Wind S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0564625348",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1102719",
+      "page": 14,
+      "document": "Osservazioni del COMUNE DI MANCIANO (PROVINCIA DI GROSSETO) Area Tecnica Urbanistica - Edilizia Privata, in data 05/07/2024",
+      "excerpt": "Sede Legale: Piazza Magenta n. 1 — 58014 Manciano (GR) Tel. 0564/625348 — 0564/625349"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Faggio Scritto S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "faggioscritto@lamiapec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1293438",
+      "page": 1,
+      "document": "Osservazioni della Società FAGGIO SCRITTO sas e Società LA.ES. IMMOBILIARE s.r.l., in data 12/08/2025",
+      "excerpt": "recapito PEC: faggioscritto@lamiapec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "LA.ES. Immobiliare S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "laesspa@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1293438",
+      "page": 1,
+      "document": "Osservazioni della Società FAGGIO SCRITTO sas e Società LA.ES. IMMOBILIARE s.r.l., in data 12/08/2025",
+      "excerpt": "recapito PEC: laesspa@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "16 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Verifica ed eventuale BOB",
+    "start": 0.39,
+    "end": 0.84,
+    "level": 1,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Viabilità di accesso al sito e regimazione acque (escluso pacchetto stradale)",
+    "start": 1.3,
+    "end": 5.44,
+    "level": 1,
+    "duration": "90 g",
+    "summary": true
+   },
+   {
+    "name": "Opere di sostegno Piazzole #1, 2, 3",
+    "start": 3.08,
+    "end": 5.14,
+    "level": 2,
+    "duration": "45 g",
+    "summary": false
+   },
+   {
+    "name": "Completamento movimenti di terra Piazzole #1, 2, 3",
+    "start": 3.6,
+    "end": 5.66,
+    "level": 2,
+    "duration": "45 g",
+    "summary": false
+   },
+   {
+    "name": "Opere di sostegno Piazzola #4, 5, 6, 7",
+    "start": 5.87,
+    "end": 8.62,
+    "level": 2,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Completamento movimenti di terra Piazzole #4, 5, 6, 7",
+    "start": 6.79,
+    "end": 12.83,
+    "level": 2,
+    "duration": "54 g",
+    "summary": false
+   },
+   {
+    "name": "Completamento movimenti di terra Piazzole Sottostazione Utente",
+    "start": 3.18,
+    "end": 3.64,
+    "level": 1,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Fondazioni Cabina utente e opere complementari",
+    "start": 3.64,
+    "end": 4.95,
+    "level": 1,
+    "duration": "28 g",
+    "summary": false
+   },
+   {
+    "name": "Cabina utente primaria",
+    "start": 4.95,
+    "end": 5.25,
+    "level": 1,
+    "duration": "7 g",
+    "summary": false
+   },
+   {
+    "name": "Pali plinti di fondazione P.la #1, 2, 3",
+    "start": 5.67,
+    "end": 8.42,
+    "level": 1,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Fondazioni per WTG 1, 2, 3",
+    "start": 7.05,
+    "end": 8.42,
+    "level": 1,
+    "duration": "30 g",
+    "summary": false
+   },
+   {
+    "name": "Pali plinti di fondazione P.la #4, 5",
+    "start": 8.43,
+    "end": 10.26,
+    "level": 1,
+    "duration": "40 g",
+    "summary": false
+   },
+   {
+    "name": "Fondazioni per WTG 4, 5",
+    "start": 9.75,
+    "end": 10.99,
+    "level": 1,
+    "duration": "28 g",
+    "summary": false
+   },
+   {
+    "name": "Fondazioni per WTG 6, 7",
+    "start": 9.81,
+    "end": 11.12,
+    "level": 1,
+    "duration": "28 g",
+    "summary": false
+   },
+   {
+    "name": "Pavimentazioni piazzole #1, 2, 3",
+    "start": 8.43,
+    "end": 9.12,
+    "level": 1,
+    "duration": "15 g",
+    "summary": false
+   },
+   {
+    "name": "Pavimentazioni piazzole #4, 5, 6, 7",
+    "start": 9.12,
+    "end": 10.03,
+    "level": 1,
+    "duration": "20 g",
+    "summary": false
+   },
+   {
+    "name": "Trasporto",
+    "start": 11.42,
+    "end": 13.71,
+    "level": 1,
+    "duration": "50 g",
+    "summary": false
+   },
+   {
+    "name": "Montaggio",
+    "start": 11.79,
+    "end": 14.93,
+    "level": 1,
+    "duration": "70 g",
+    "summary": false
+   },
+   {
+    "name": "Operazioni EE su WTG",
+    "start": 8.43,
+    "end": 11.18,
+    "level": 1,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Linee MT di connessione e sul sito",
+    "start": 8.43,
+    "end": 11.18,
+    "level": 1,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Fibra ottica",
+    "start": 8.43,
+    "end": 10.72,
+    "level": 1,
+    "duration": "50 g",
+    "summary": false
+   },
+   {
+    "name": "Linea CP Utente AT/MT",
+    "start": 5.25,
+    "end": 6.4,
+    "level": 1,
+    "duration": "25 g",
+    "summary": false
+   },
+   {
+    "name": "Prove e collaudi",
+    "start": 15.01,
+    "end": 15.62,
+    "level": 1,
+    "duration": "15 g",
+    "summary": false
+   },
+   {
+    "name": "Progetto: PARCO EOLICO \"POG Attività Cardine Data: ven",
+    "start": 5.08,
+    "end": 11.82,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Progetto: PARCO EOLICO \"POG Attività Cardine Data: ven Divisione Riepilogo Attiv",
+    "start": 7.04,
+    "end": 7.83,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Data: ven Divisione Riepilogo Attività",
+    "start": 1.05,
+    "end": 5.84,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 15.62,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1080524",
+   "page": 2,
+   "document": "R_CV_395_GVI_23_006_00_CRONOPROGRAMMA_signed",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "gennaio",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "febbraio",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "marzo",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "aprile",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "maggio",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "giugno",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "luglio",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "agosto",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "settembre",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "ottobre",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "novembre",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "dicembre",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "gennaio",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "febbraio",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "marzo",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "aprile",
+     "start": 15.0,
+     "end": 16.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "68 giorni (circa 2 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 31 giorni (3), 100 giorni (circa 3 mesi) (3), 302 giorni (circa 10 mesi) (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1080476",
+    "page": 370,
+    "document": "R_CV_395_GVI_23_018_00_Studio_di_Impatto_Ambientale_signed_signed",
+    "excerpt": "Gli impatti negativi significativi durante la fase di cantiere sono legati alla natura stessa dell’esecuzione dei lavori da effettuare e quindi limitate al periodo di lavoro (dalle 8:00 alle 17:00) per una durata previst"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "R_CV_395_GVI_23_006_00_CRONOPROGRAMMA_signed",
+   "url": "https://va.mite.gov.it/File/Documento/1080524"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 229,
+  "pagine": 2750,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Gruppo Visconti Manciano S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 50.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MANCIANO",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "GR",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Toscana",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "112 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
