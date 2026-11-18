@@ -1,0 +1,827 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9721",
+ "title": "Progetto di un impianto eolico \"Siliqua Wind\" costituito da n. 8 aerogeneratori da 6,6 MW ciascuno per una potenza complessiva di 52,8 MW in località Tanca Romita - SP 88 - SS 136 per Musei nei Comuni di Siliqua (CA) e Musei (CI).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9721",
+ "source": "mase",
+ "updated": "2026-11-18",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "52,8 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9721",
+    "excerpt": "52,8 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da documenti",
+   "sub": "6,60 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 1 (8), 2 (4), 3 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/827988",
+    "page": 1,
+    "document": "Avviso al Pubblico del 14/04/2023",
+    "excerpt": "• N° 8 aerogeneratori della potenza nominale di 6.6 MW ciascuno •"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 300 giorni (circa 10 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/827970",
+    "page": 260,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "monitoraggio ante operam. Per quanto riguarda il sollevamento delle polveri, la durata della fase di cantiere prevista è di 18 mesi; tale durata è comprensiva della fase di montaggio degli aerogeneratori e la loro messa "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "CI",
+  "comuni": [
+   "Siliqua",
+   "Musei"
+  ],
+  "coordinate": {
+   "lat": 39.3132,
+   "lon": 8.73211,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (261 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/827971",
+    "page": 1,
+    "document": "Corografia di inquadramento dell'area su IGM",
+    "excerpt": "008° 43' 33.40401617\" E 39° 19' 09.57228870\" N SQ02"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.31320,8.73211",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Siliqua S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9721"
+   }
+  },
+  {
+   "name": "Ing. Laura Maria Conti",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/827970",
+    "page": 1,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "Progettista Ing. Laura Maria Conti 3 Ordine Ing. Prov. Pavia n. 1726"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Montana S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10414270156",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Angelo Carlo Fumagalli 6 20143 Milano Mi",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "mastio@montanambiente.com",
+     "occurrences": 135,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/827875",
+      "page": 25,
+      "document": "Studio degli effetti di shadow-flickering",
+      "excerpt": "0254118173 Andrea Mastio / mastio@montanambiente.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "025418173",
+     "occurrences": 69,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/889999",
+      "page": 1,
+      "document": "Integrazioni del 14/08/2023 - Attraversamenti idraulici",
+      "excerpt": "Montana S.p.A Tel. +39.02.5418173"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Andrea Mandras",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "andrea.mandras@cbsm.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/871446",
+      "page": 3,
+      "document": "Parere della Regione Autonoma della Sardegna assessorato della difesa dell'ambiente in data 13/07/2023",
+      "excerpt": "Ing. Andrea Mandras [ID: 9659] Procedura di Valutazione di andrea.mandras@cbsm.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Sandro Mameli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sandro.mameli@cbsm.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/871446",
+      "page": 3,
+      "document": "Parere della Regione Autonoma della Sardegna assessorato della difesa dell'ambiente in data 13/07/2023",
+      "excerpt": "R.T.N. in località Tanca Romita - SP 88 - SS Geom. Sandro Mameli 136 per Musei nei Comuni di Siliqua e sandro.mameli@cbsm.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Paolo Cassaro",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "paolo.cassaro@cbsm.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897834",
+      "page": 1,
+      "document": "Osservazioni dell Consorzio Bonifica Sardegna Meridionale in data 05/09/2023",
+      "excerpt": "Geom. Paolo Cassaro paolo.cassaro@cbsm.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Concrete S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0498754720",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/827877",
+      "page": 27,
+      "document": "Relazione strutture",
+      "excerpt": "http://www.concrete.it Rivenditore: CONCRETE SRL - Via della Pieve 19 - 35121 Padova - tel.049-8754720"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "4 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "PROGETTAZIONE ESECUTIVA",
+    "start": 0.0,
+    "end": 0.86,
+    "level": 0,
+    "summary": false,
+    "duration": "15 g"
+   },
+   {
+    "name": "indagini",
+    "start": 0.0,
+    "end": 0.23,
+    "level": 0,
+    "summary": false,
+    "duration": "4 g"
+   },
+   {
+    "name": "redazione progetto",
+    "start": 0.17,
+    "end": 0.86,
+    "level": 0,
+    "summary": false,
+    "duration": "12 g"
+   },
+   {
+    "name": "ESECUZIONE LAVORI",
+    "start": 0.81,
+    "end": 3.81,
+    "level": 0,
+    "summary": false,
+    "duration": "52 g"
+   },
+   {
+    "name": "adeguamento viabilità esistente",
+    "start": 0.81,
+    "end": 1.04,
+    "level": 0,
+    "summary": false,
+    "duration": "4 g"
+   },
+   {
+    "name": "approvigionamento materiali",
+    "start": 0.98,
+    "end": 2.36,
+    "level": 0,
+    "summary": false,
+    "duration": "24 g"
+   },
+   {
+    "name": "Realizzazione piste e piazzole",
+    "start": 1.09,
+    "end": 2.07,
+    "level": 0,
+    "summary": false,
+    "duration": "9 g"
+   },
+   {
+    "name": "pista SIL01",
+    "start": 1.09,
+    "end": 1.21,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola SIL01",
+    "start": 1.15,
+    "end": 1.27,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista SIL02",
+    "start": 1.21,
+    "end": 1.32,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola SIL02",
+    "start": 1.27,
+    "end": 1.38,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista SIL03",
+    "start": 1.32,
+    "end": 1.44,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola SIL03",
+    "start": 1.38,
+    "end": 1.5,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista SIL04",
+    "start": 1.44,
+    "end": 1.56,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola SIL04",
+    "start": 1.5,
+    "end": 1.61,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista SIL05",
+    "start": 1.56,
+    "end": 1.67,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola SIL05",
+    "start": 1.61,
+    "end": 1.73,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista SIL06",
+    "start": 1.67,
+    "end": 1.79,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola SIL06",
+    "start": 1.73,
+    "end": 1.84,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista SIL07",
+    "start": 1.79,
+    "end": 1.9,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola SIL07",
+    "start": 1.84,
+    "end": 1.96,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista SIL08",
+    "start": 1.9,
+    "end": 2.02,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "piazzola SIL08",
+    "start": 1.96,
+    "end": 2.07,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Realizzazione fondazioni",
+    "start": 1.21,
+    "end": 2.48,
+    "level": 0,
+    "summary": false,
+    "duration": "22 g"
+   },
+   {
+    "name": "fondazione SLQ01",
+    "start": 1.21,
+    "end": 1.67,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione SLQ02",
+    "start": 1.32,
+    "end": 1.79,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione SLQ03",
+    "start": 1.44,
+    "end": 1.9,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione SLQ04",
+    "start": 1.56,
+    "end": 2.02,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione SLQ05",
+    "start": 1.67,
+    "end": 2.13,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione SLQ06",
+    "start": 1.79,
+    "end": 2.25,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione SLQ07",
+    "start": 1.9,
+    "end": 2.36,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione SLQ08",
+    "start": 2.02,
+    "end": 2.48,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "Montaggio torri",
+    "start": 1.67,
+    "end": 2.59,
+    "level": 0,
+    "summary": false,
+    "duration": "16 g"
+   },
+   {
+    "name": "Montaggio torre SLQ01",
+    "start": 1.67,
+    "end": 1.79,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre SLQ02",
+    "start": 1.79,
+    "end": 1.9,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre SLQ03",
+    "start": 1.9,
+    "end": 2.02,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre SLQ04",
+    "start": 2.02,
+    "end": 2.13,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre SLQ05",
+    "start": 2.13,
+    "end": 2.25,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre SLQ06",
+    "start": 2.25,
+    "end": 2.36,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre SLQ07",
+    "start": 2.36,
+    "end": 2.48,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Montaggio torre SLQ08",
+    "start": 2.48,
+    "end": 2.59,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Posa cavi",
+    "start": 0.52,
+    "end": 3.63,
+    "level": 0,
+    "summary": false,
+    "duration": "56 g"
+   },
+   {
+    "name": "connessioni interne al parco",
+    "start": 0.52,
+    "end": 3.63,
+    "level": 0,
+    "summary": false,
+    "duration": "54 g"
+   },
+   {
+    "name": "connessione cabine Utente÷SE",
+    "start": 3.52,
+    "end": 3.63,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Opere per connessione RTN",
+    "start": 0.81,
+    "end": 3.81,
+    "level": 0,
+    "summary": false,
+    "duration": "52 g"
+   },
+   {
+    "name": "Ripristini e dismissione cantiere",
+    "start": 2.59,
+    "end": 3.17,
+    "level": 0,
+    "summary": false,
+    "duration": "10 g"
+   },
+   {
+    "name": "COMMISIONING E AVVIAMENTO",
+    "start": 2.25,
+    "end": 4.15,
+    "level": 0,
+    "summary": false,
+    "duration": "33 g"
+   },
+   {
+    "name": "Commisioning, test e collaudi",
+    "start": 2.25,
+    "end": 4.09,
+    "level": 0,
+    "summary": false,
+    "duration": "32 g"
+   },
+   {
+    "name": "Start up",
+    "start": 4.09,
+    "end": 4.15,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   }
+  ],
+  "unit": "month",
+  "months": 4.15,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/827878",
+   "page": 4,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "18",
+     "start": 3.923,
+     "end": 4.154
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 300 giorni (circa 10 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/827970",
+    "page": 260,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "monitoraggio ante operam. Per quanto riguarda il sollevamento delle polveri, la durata della fase di cantiere prevista è di 18 mesi; tale durata è comprensiva della fase di montaggio degli aerogeneratori e la loro messa "
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/827878"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 156,
+  "pagine": 2175,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Siliqua S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 52.8,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SILIQUA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CI",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "173 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
