@@ -5,7 +5,7 @@
  "title": "PAUR per progetto 'impianto agrivoltaico Giugliano' di potenza complessiva pari a 13,874 MWp (rispetto ai precedenti 16,396 MWp) ubicato nel Comune di Giugliano in Campania (Na), con opere di connessione ubicate nel Comune di Giugliano in Campania (Na), Villa Literno (Ce) e Cancello Arnone (Ce)",
  "source_url": "http://viavas.regione.campania.it/opencms/opencms/VIAVAS/VIA_files_new/Progetti/prg_10159_prot_2026.103673_del_09-02-2026.via",
  "source": "campania",
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "sintesi": [
   {
    "key": "potenza",
@@ -48,8 +48,8 @@
    "key": "pannelli",
    "label": "Superficie coperta dai pannelli",
    "value": "7,123 ha",
-   "status": "da documenti",
-   "sub": "31% dell'area · Valore prevalente negli elaborati; altri valori: 6,035 ha (6)",
+   "status": "da verificare",
+   "sub": "31% dell'area · Valore più ricorrente negli elaborati; altri valori: 6,035 ha (8)",
    "source": {
     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10159/2026_02_09_prot_103673_SOLAR%20LUX_istanza/PAUR_VIA_2/07%20Attraversamento%20linee%20elettriche/T.17%20PLANIMETRIA%20PROGETTO%20CTR_signed.pdf')/$value",
     "page": 1,
@@ -80,7 +80,7 @@
   "coordinate": {
    "lat": 40.95784,
    "lon": 14.05944,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (53 riferimenti concordi)",
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (62 riferimenti concordi)",
    "source": {
     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10159/2026_02_09_prot_103673_SOLAR%20LUX_istanza/PAUR_VIA_3/R.01%20STUDIO%20IMPATTO%20AMBIENTALE_signed.pdf')/$value",
     "page": 6,
@@ -110,7 +110,7 @@
     {
      "type": "PEC",
      "value": "solar.lux@pec.it",
-     "occurrences": 60,
+     "occurrences": 63,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10159/2026_04_23_prot_0387738_Solar%20Lux_perfezionamenti/ENAC/IN/RICHIESTA%20ENAC.pdf')/$value",
       "page": 1,
@@ -183,7 +183,7 @@
     {
      "type": "PEC",
      "value": "epsengineering@pec.it",
-     "occurrences": 21,
+     "occurrences": 22,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10159/2026_03_18_prot_n_0280411_SNAM%20Caserta.pdf')/$value",
       "page": 1,
@@ -194,7 +194,7 @@
     {
      "type": "E-mail",
      "value": "service@epsnet.it",
-     "occurrences": 1048,
+     "occurrences": 1121,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10159/2026_02_09_prot_103673_SOLAR%20LUX_istanza/PAUR_VIA_3/R.01%20STUDIO%20IMPATTO%20AMBIENTALE_signed.pdf')/$value",
       "page": 1,
@@ -259,9 +259,9 @@
  },
  "documentazione": {
   "documenti": 437,
-  "pagine": 2269,
-  "completa": false,
-  "da_leggere": 84
+  "pagine": 2655,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -292,8 +292,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie coperta dai pannelli",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "154 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "158 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
