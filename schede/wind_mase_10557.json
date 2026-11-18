@@ -1,0 +1,330 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10557",
+ "title": "Parco Eolico da 50,4 MW composto da 7 turbine e relative opere di connessione alla RTN situato nel Comune di Isili (SU)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10557",
+ "source": "mase",
+ "updated": "2026-11-18",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "50,4 MW",
+   "sub": "Suddivisa in 5 lotti",
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10557",
+    "excerpt": "50,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 5 (13), 12 (12), 26 (10)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/972234",
+    "page": 1,
+    "document": "Carta delle ZVI",
+    "excerpt": " Nurri-in istruttoria-7 WTG-D=150m-H=125m-Vestas V150 "
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/972279",
+    "page": 10,
+    "document": "Analisi costi benefici ambientali",
+    "excerpt": "0.09 c€/kWh per quella off-shore."
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "15 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 26,576 MW (2), 49 MW (2), 64 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1107503",
+    "page": 2,
+    "document": "Osservazioni della Comunità Montana \"Sarcidano Barbagia di Seulo\", in data 17/07/2024",
+    "excerpt": "6. Progetto di impianto agrivoltaico denominato \"SERRI\", dalla potenza di 39,33 MW, integrato con sistema di accumulo da 15 MW da realizzarsi nel Comune di Serri, con relative opere di"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 379 giorni (circa 12 mesi) (4), 4 mesi (1), 250 giorni (circa 8 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/972208",
+    "page": 3,
+    "document": "Avviso al pubblico del 12/02/2024",
+    "excerpt": "l’assunzione temporanea media, nella fase di costruzione dell’impianto, di circa 70 risorse per circa 18 mesi; -"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SU",
+  "comuni": [
+   "Isili"
+  ],
+  "coordinate": {
+   "lat": 39.78662,
+   "lon": 9.1457,
+   "tipo": "centro della tavola georeferenziata di progetto (111 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/972248",
+    "page": 1,
+    "document": "Inquadramento su PUC",
+    "excerpt": "Inquadramento su PUC"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.78662,9.14570",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Sardeolica S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sardeolica@pec.grupposaras.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/972300",
+      "page": 2,
+      "document": "IS_PE_A003_STMG_signed.pdf",
+      "excerpt": "09010 UTA (CA) sardeolica@pec.grupposaras.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10557"
+   }
+  },
+  {
+   "name": "FAD System S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "03167950926",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Argiolas 134 09134 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@fadsystem.net",
+     "occurrences": 443,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/972216",
+      "page": 1,
+      "document": "Carta delle Unità delle Terre",
+      "excerpt": "Via Argiolas 134 - 09134 - Cagliari - Uffici Via Rossini 81- 09044 Quartucciu (CA) Tel./Fax: 070/2348760 - e-mail info@fadsystem.net"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1007309",
+    "page": 49,
+    "document": "Osservazioni della Regione Autonoma della Sardegna, in data 13/03/2024",
+    "excerpt": "La progettazione delle opere è a firma della Società di Ingegneria FAD SYSTEM SRL con sede legale in Via Argiolas n.134 a Cagliari."
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "LA Molisana Trasporti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01463480705",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Rio Lecine 30 86014 Guardiaregia Cb",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@molisanatrasporti.it",
+     "occurrences": 114,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/972334",
+      "page": 2,
+      "document": "Report trasporti speciali sulla viabilità principale esterna al sito",
+      "excerpt": "www.molisanatrasporti.com info@molisanatrasporti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geoservice S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "geoservice.sas@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/972262",
+      "page": 2,
+      "document": "Relazione indagini geofisiche signed",
+      "excerpt": "mail: info@geoservicesardegna.com; PEC: geoservice.sas@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@geoservicesardegna.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/972262",
+      "page": 2,
+      "document": "Relazione indagini geofisiche signed",
+      "excerpt": "P.IVA/C.F.: 03008730925 - R.E.A.: 239536 di Cagliari mail: info@geoservicesardegna.com;"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3474032606",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/972262",
+      "page": 2,
+      "document": "Relazione indagini geofisiche signed",
+      "excerpt": "Capitale Sociale: € 20.000,00 Tel. 3474032606; Fax: 1782206528;"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 379 giorni (circa 12 mesi) (4), 5-6 giorni (2), 2 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/972208",
+    "page": 3,
+    "document": "Avviso al pubblico del 12/02/2024",
+    "excerpt": "l’assunzione temporanea media, nella fase di costruzione dell’impianto, di circa 70 risorse per circa 18 mesi; -"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/972341"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/972341"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 196,
+  "pagine": 4281,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Sardeolica S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 50.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ISILI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SU",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "1187 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
