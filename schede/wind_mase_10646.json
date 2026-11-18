@@ -1,0 +1,706 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10646",
+ "title": "Progetto di un impianto eolico denominato \"Wind Farm Costa delle Ripe\", composto da 7 aerogeneratori, ciascuno di potenza pari a 7,2 MW, per una potenza complessiva di 50,4 MW, da realizzarsi nel Comune di Forenza (PZ), con opere di connessione alla RTN ricadenti nei comuni di Palazzo San Gervasio (PZ), Maschito (PZ), Venosa (PZ) e Montemilone (PZ). Codice pratica MYTERNA n. 202303439.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10646",
+ "source": "mase",
+ "updated": "2026-11-18",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "50,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10646",
+    "excerpt": "50,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 135 m · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 3 (2), 10 (1), 8 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1013305",
+    "page": 1,
+    "document": "Avviso al pubblico del 02/04/2024",
+    "excerpt": "Impatto Ambientale del Progetto per la costruzione e l’esercizio di un Impianto eolico denominato “Wind Farm Costa delle Ripe” composto da 7 aerogeneratori da 7,2 MW ciascuno per una potenza complessiva di 50,4 MW sito n"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (4), 6 mesi (3), 5 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1418614",
+    "page": 112,
+    "document": "Integrazioni del 15/06/2026 - Relazione Generale_rev1",
+    "excerpt": "entrata in esercizio dell’impianto. Considerando che la fase di progettazione esecutiva si avvierà sei mesi prima dell’apertura del cantiere possiamo considerare 18 mesi come durata effettiva delle attività lavorative (s"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "PZ",
+  "comuni": [
+   "Forenza"
+  ],
+  "coordinate": {
+   "lat": 40.88685,
+   "lon": 15.92347,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (305 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1418702",
+    "page": 8,
+    "document": "Integrazioni del 15/06/2026 - Relazione tecnica delle opere di connessione alla rete elettrica nazionale",
+    "excerpt": "Coordinate SEU Punto baricentrico area d’impianto: 40°53'12.65\"N, 15°55'24.50\"E 3.1. Inquadramento territoriale"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.88685,15.92347",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.98215,
+   "lon": 15.90358,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1418696",
+    "page": 1,
+    "document": "Integrazioni del 15/06/2026 - FOTOINSERIMENTI",
+    "excerpt": "Punti di osservazione ANTE : Punto di osservazione 2: Masseria Matinella Veltri: 40°58'55.75\"N, 15°54'12.87\"E POST : Punto di osservazione 2: Masseria Matinella Veltri: 40°58'55.75\"N, 15°54'12.87\"E"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.98215,15.90358"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Brindisi Energia 1 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "brindisienergia1@legalmail.it",
+     "occurrences": 152,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418544",
+      "page": 1,
+      "document": "Integrazioni del 15/06/2026 - Elenco elaborati",
+      "excerpt": "Corso Libertà, n.17| 13100 - Vercelli (VC) pec: brindisienergia1@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1418544",
+    "page": 1,
+    "document": "Integrazioni del 15/06/2026 - Elenco elaborati",
+    "excerpt": "Committente:"
+   }
+  },
+  {
+   "name": "Mate System S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "matesystem@pec.it",
+     "occurrences": 239,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418544",
+      "page": 1,
+      "document": "Integrazioni del 15/06/2026 - Elenco elaborati",
+      "excerpt": "Mail: info@matesystemsrl.it |Pec: matesystem@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@matesystemsrl.it",
+     "occurrences": 239,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418544",
+      "page": 1,
+      "document": "Integrazioni del 15/06/2026 - Elenco elaborati",
+      "excerpt": "Mail: info@matesystemsrl.it |Pec: matesystem@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0805746758",
+     "occurrences": 144,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418545",
+      "page": 1,
+      "document": "Integrazioni del 15/06/2026 - Relazione tecnica SE RTN",
+      "excerpt": "70020 - Cassano delle Murge (BA) Tel. +39 080 5746758"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1418544",
+    "page": 1,
+    "document": "Integrazioni del 15/06/2026 - Elenco elaborati",
+    "excerpt": "Progettazione:"
+   }
+  },
+  {
+   "name": "Ing. Francesco Ambron",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1418544",
+    "page": 1,
+    "document": "Integrazioni del 15/06/2026 - Elenco elaborati",
+    "excerpt": "Progettista: Ing. Francesco Ambron"
+   }
+  },
+  {
+   "name": "Dott. Giuseppe Amorosi",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1418643",
+    "page": 37,
+    "document": "Integrazioni del 15/06/2026 - Relazione geologica_rev1",
+    "excerpt": "IL GEOLOGO"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 45,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1013288",
+      "page": 2,
+      "document": "STUDIO ANEMOLOGICO",
+      "excerpt": "E-mail: info@tecnogaia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Caltatech S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "04624120988",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Leopardi Giacomo 55-59 90144 Palermo Pa",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "amministrazione@caltatech.com",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418631",
+      "page": 2,
+      "document": "Integrazioni del 15/06/2026 - Disegni architettonici SEU_rev1",
+      "excerpt": "Tel: +39 091 7379322 amministrazione@caltatech.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0917379322",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418631",
+      "page": 2,
+      "document": "Integrazioni del 15/06/2026 - Disegni architettonici SEU_rev1",
+      "excerpt": "P.IVA: 04624120988 Tel: +39 091 7379322"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Statkraft Italia Gruppo IVA",
+   "kind": "società",
+   "roles": [],
+   "vat": "11412940964",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Foro Buonaparte 60 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "statkraftitalia@unapec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418703",
+      "page": 60,
+      "document": "Integrazioni del 15/06/2026 - Preventivo connessione STMG",
+      "excerpt": "20123 MILANO (MI) statkraftitalia@unapec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Ing. Alberto Maurelli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@maurelli.net",
+     "occurrences": 54,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418725",
+      "page": 3,
+      "document": "Integrazioni del 15/06/2026 - ACUSTICO",
+      "excerpt": "Studio Tecnico Maurelli - Via Brigata Bari 128 - 70123 - Bari telefono: 080 2379126 – mail: info@maurelli.net"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0802379126",
+     "occurrences": 54,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418725",
+      "page": 3,
+      "document": "Integrazioni del 15/06/2026 - ACUSTICO",
+      "excerpt": "Studio Tecnico Maurelli - Via Brigata Bari 128 - 70123 - Bari telefono: 080 2379126 – mail: info@maurelli.net"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Atech S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "atechsrl@legalmail.it",
+     "occurrences": 83,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1013295",
+      "page": 1,
+      "document": "Allegati grafici SIA",
+      "excerpt": "70124- Bari (BA) pec: atechsrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Delta OHM S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@deltaohm.com",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1013289",
+      "page": 23,
+      "document": "RELAZIONE PREVISIONALE DI IMPATTO ACUSTICO",
+      "excerpt": "Fax 0039-049635596 e-mail: info@deltaohm.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "049897715",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1013289",
+      "page": 23,
+      "document": "RELAZIONE PREVISIONALE DI IMPATTO ACUSTICO",
+      "excerpt": "35030 Caselle di Selvazzano (PD) Tel. 0039-0498977150"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Abei Energy Italy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "abeienergyitaly@legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418703",
+      "page": 2,
+      "document": "Integrazioni del 15/06/2026 - Preventivo connessione STMG",
+      "excerpt": "00198 ROMA (RM) abeienergyitaly@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Foro Buonaparte n. 60 Atech S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "skiwa9@unapec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418619",
+      "page": 1,
+      "document": "Integrazioni del 15/06/2026 - COROGRAFIA IGM_rev1",
+      "excerpt": "P.Iva 12655800964 70125- Bari (BA) skiwa9@unapec.it pec: atechsrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Blue Stone Renewable I S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "bluestonerenewable1@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1418703",
+      "page": 30,
+      "document": "Integrazioni del 15/06/2026 - Preventivo connessione STMG",
+      "excerpt": "00198 Roma PEC: bluestonerenewable1@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Accantieramenti",
+    "start": 0.19,
+    "end": 1.06,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizz. ed adeguamento strade, realizzazione piazzole",
+    "start": 0.19,
+    "end": 4.95,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni",
+    "start": 1.08,
+    "end": 5.85,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti MT ed AT e ripristino",
+    "start": 1.99,
+    "end": 6.75,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ripristino",
+    "start": 2.12,
+    "end": 6.61,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione sottostazione (opera civili ed elettriche)",
+    "start": 3.18,
+    "end": 8.85,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "civili ed elettriche)",
+    "start": 6.01,
+    "end": 8.71,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e Montaggio Aerogeneratori",
+    "start": 4.08,
+    "end": 10.04,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Aerogeneratori",
+    "start": 6.01,
+    "end": 9.9,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere RTN",
+    "start": 5.87,
+    "end": 12.44,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristino, avviamento e collaudo",
+    "start": 11.26,
+    "end": 12.44,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 12.44,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1013225",
+   "page": 6,
+   "document": "CRONOPROGRAMMA",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "M11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "M12",
+     "start": 11.0,
+     "end": 12.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (4), 6 mesi (3), 20 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1418614",
+    "page": 112,
+    "document": "Integrazioni del 15/06/2026 - Relazione Generale_rev1",
+    "excerpt": "entrata in esercizio dell’impianto. Considerando che la fase di progettazione esecutiva si avvierà sei mesi prima dell’apertura del cantiere possiamo considerare 18 mesi come durata effettiva delle attività lavorative (s"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "CRONOPROGRAMMA",
+   "url": "https://va.mite.gov.it/File/Documento/1013225"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "RELAZIONE SULLE OPERAZIONI DI DISMISSIONE, STIMA DELLE OPERAZIONI DI DISMISSIONE E CRONOPROGRAMMA",
+    "url": "https://va.mite.gov.it/File/Documento/1013294"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 281,
+  "pagine": 5034,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "SKI W A9 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 50.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "FORENZA, PALAZZO SAN GERVASIO",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PZ",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "347 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
