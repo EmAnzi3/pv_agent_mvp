@@ -5,7 +5,7 @@
  "title": "Determinazione n° G01128 del 04/02/2022 Favorevole con prescrizioni Realizzazione IMPIANTO FOTOVOLTAICO potenza 13,54402 MWp denominato “CIVITAVECCHIA PORTO 1” in via Braccianese Claudia",
  "source_url": "https://regionelazio.app.box.com/v/VIA-011-2021",
  "source": "lazio",
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "26 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 17,2 ha (8), 70 ha (1), 19,5 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 17,2 ha (12), 70 ha (1), 19,5 ha (1)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_806676708716",
     "page": 9,
@@ -49,7 +49,7 @@
    "label": "Superficie coperta dai pannelli",
    "value": "6,4 ha",
    "status": "da documenti",
-   "sub": "25% dell'area · Valore prevalente negli elaborati; altri valori: 6,6 ha (2)",
+   "sub": "25% dell'area · Valore prevalente negli elaborati; altri valori: 6,6 ha (2), 6,9 ha (2)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_883234082549",
     "page": 6,
@@ -71,11 +71,24 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "5,985 MW",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_775169095994",
+    "page": 9,
+    "document": "Domanda di connessione Civitavecchia Porto 1.pdf",
+    "excerpt": "Sistema di Accumulo: ASSENTE; Potenza in immissione richiesta: 5985 kW; Potenza Nominale CENSIMP: 5985 kW;"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "6 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (5), 12 mesi (1)",
+   "sub": "Inizio lavori 25/03/2025 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 8 mesi (7), 12 mesi (3), 18 mesi (1)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_834655389767",
     "page": 15,
@@ -93,7 +106,7 @@
   "coordinate": {
    "lat": 42.11858,
    "lon": 11.80166,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (13 riferimenti concordi)",
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (21 riferimenti concordi)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_897760101135",
     "page": 3,
@@ -109,25 +122,6 @@
  },
  "soggetti": [
   {
-   "name": "Teimec S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": "02030790568",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Via Giuseppe Taschini 19 01033 Civita Castellana Vt",
-   "contacts": [],
-   "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_806678902021",
-    "page": 92,
-    "document": "REL 9 - REV-1- RelazioneGeologica-Fotovoltaico-Tessennano(1).pdf.p7m",
-    "excerpt": "Committente: Teimec srl Data: 29/05/2020"
-   }
-  },
-  {
    "name": "Civitavecchia Porto 1 !!S.r.l.",
    "kind": "società",
    "roles": [
@@ -142,7 +136,7 @@
     {
      "type": "PEC",
      "value": "civitavecchiaporto1@legalmail.it",
-     "occurrences": 21,
+     "occurrences": 47,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_807287686316",
       "page": 1,
@@ -166,7 +160,7 @@
      "value": "civitavecchiaporto1@gmail.com",
      "occurrences": 1,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_870181582586",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_870182389424",
       "page": 1,
       "document": "Vidimazione dfinitivo CVT1.pdf",
       "excerpt": "Enel SpA civitavecchiaporto1@gmail.com"
@@ -187,6 +181,25 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://regionelazio.app.box.com/v/VIA-011-2021"
+   }
+  },
+  {
+   "name": "Teimec S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02030790568",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Giuseppe Taschini 19 01033 Civita Castellana Vt",
+   "contacts": [],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_806678902021",
+    "page": 92,
+    "document": "REL 9 - REV-1- RelazioneGeologica-Fotovoltaico-Tessennano(1).pdf.p7m",
+    "excerpt": "Committente: Teimec srl Data: 29/05/2020"
    }
   },
   {
@@ -225,63 +238,6 @@
     "page": 1,
     "document": "CVP 1_Tav 1a Layout impianto su ortofoto.pdf.p7m",
     "excerpt": "Il Progettista: Ing. Andrea De Checchi"
-   }
-  },
-  {
-   "name": "P.I. Lamberto Chiodi",
-   "kind": "persona",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_806676789257",
-    "page": 1,
-    "document": "REL 22 -Relazione di Valutazione di Impatto Archeologico Preliminare.pdf.p7m",
-    "excerpt": "Progettazione:"
-   }
-  },
-  {
-   "name": "P.I. Danilo Rocco",
-   "kind": "persona",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_806676789257",
-    "page": 1,
-    "document": "REL 22 -Relazione di Valutazione di Impatto Archeologico Preliminare.pdf.p7m",
-    "excerpt": "Progettazione impianti P.I. Danilo Rocco"
-   }
-  },
-  {
-   "name": "Dott. Agr. Alberto Cardarelli",
-   "kind": "persona",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_806676789257",
-    "page": 1,
-    "document": "REL 22 -Relazione di Valutazione di Impatto Archeologico Preliminare.pdf.p7m",
-    "excerpt": "tecnologie e Impianti progettazione e sviluppo Dott. Agr. Alberto Cardarelli"
    }
   },
   {
@@ -329,6 +285,33 @@
  ],
  "altri_soggetti": [
   {
+   "name": "Enerdev S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "11066121002",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Danimarca 23 00040 Pomezia Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "enerdev@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_775178188443",
+      "page": 4,
+      "document": "Visura Civitavecchia Porto 1.pdf",
+      "excerpt": "POMEZIA (RM) VIALE DANIMARCA 23 CAP 00071 Indirizzo di posta certificata: enerdev@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Dott. Geol. Emma Bernardini",
    "kind": "persona",
    "roles": [],
@@ -375,6 +358,41 @@
    "source": null
   },
   {
+   "name": "Foursam S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "enrico@immobiliaremauto.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_775168880571",
+      "page": 5,
+      "document": "Catastali terra Civitavecchia.pdf",
+      "excerpt": "Telefono: 39076623196 Via Carlo Fean 7 Email: enrico@immobiliaremauto.com 00161 Roma (RM) - IT"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "39076623196",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_775168880571",
+      "page": 5,
+      "document": "Catastali terra Civitavecchia.pdf",
+      "excerpt": "Telefono: 39076623196 Via Carlo Fean 7"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Enel S.p.A.",
    "kind": "società",
    "roles": [],
@@ -389,7 +407,7 @@
      "value": "dechecchi@pec.ording.roma.it",
      "occurrences": 1,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_870181582586",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_870182389424",
       "page": 1,
       "document": "Vidimazione dfinitivo CVT1.pdf",
       "excerpt": "De Checchi Andrea dechecchi@pec.ording.roma.it"
@@ -399,11 +417,27 @@
    "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "potenzialmente_avviato",
+  "label": "Potenzialmente avviato o realizzato",
+  "reason": "L'avvio dei lavori era previsto il 25/03/2025 e non risultano documenti successivi."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
   "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "25/03/2025",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_1476566410912",
+     "page": 2,
+     "document": "2024.03.18_Proroga-CIV.-PORTO-1_signed_watermark.pdf",
+     "excerpt": "la proroga di un anno del termine di inizio lavori, con nuova scadenza in data 25 marzo 2025."
+    }
+   },
    {
     "voce": "Atto autorizzativo",
     "livello": "documentata",
@@ -468,7 +502,7 @@
   "duration": {
    "text": "6 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (5), 12 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (7), 12 mesi (3), 18 mesi (1)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_834655389767",
     "page": 15,
@@ -476,7 +510,34 @@
     "excerpt": "Fase di costruzione Nella fase di costruzione dell’impianto, la cui durata è stimata in circa 6 mesi, si avranno delle emissioni in atmosfera generate dall’utilizzo delle macchine operatrici di cantiere."
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "10/01/2022",
+    "iso": "2022-01-10",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_775169095994",
+     "page": 3,
+     "document": "Domanda di connessione Civitavecchia Porto 1.pdf",
+     "excerpt": "• C10 - numero delle sezioni di impianto 1; Sezione nuova 1: potenza 5985 kW, data prevista entrata in esercizio 10/01/2022; • C11 - data prevista di avvio dei lavori di realizzazione dell'impianto di produzione o della "
+    }
+   },
+   {
+    "label": "Inizio lavori",
+    "date": "25/03/2025",
+    "iso": "2025-03-25",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_1476566410912",
+     "page": 2,
+     "document": "2024.03.18_Proroga-CIV.-PORTO-1_signed_watermark.pdf",
+     "excerpt": "la proroga di un anno del termine di inizio lavori, con nuova scadenza in data 25 marzo 2025."
+    }
+   }
+  ],
   "document": {
    "document": "REL 13 - Computo metrico - Elenco Prezzi - Quadro economico - Cronoprogramma - REV 1.pdf.p7m",
    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2021&file_id=f_806676718304"
@@ -493,9 +554,9 @@
  },
  "documentazione": {
   "documenti": 381,
-  "pagine": 2882,
+  "pagine": 3905,
   "completa": false,
-  "da_leggere": 143
+  "da_leggere": 25
  },
  "confronto": [
   {
@@ -526,6 +587,10 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "L'avvio dei lavori era previsto il 25/03/2025 e non risultano documenti successivi."
+  },
+  {
    "label": "Superficie complessiva",
    "reason": "valori diversi negli elaborati"
   },
@@ -535,7 +600,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "81 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "142 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
