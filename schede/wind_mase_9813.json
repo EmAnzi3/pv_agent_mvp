@@ -1,0 +1,515 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9813",
+ "title": "Progetto per la realizzazione di un impianto eolico, costituito da 7 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 50,4 MW, da realizzarsi nel territorio comunale di Troia (FG), incluse le relative opere di connessione alla RTN (cod. MYTERNA n. 07002151).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9813",
+ "source": "mase",
+ "updated": "2026-11-18",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "50,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9813",
+    "excerpt": "50,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 150 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 113 (7), 5 (6), 15 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/847008",
+    "page": 1,
+    "document": "Avviso al Pubblico del 25/05/2023",
+    "excerpt": "Il progetto prevede la realizzazione di n. 7 aerogeneratori della potenza unitaria di 7.2 MW, caratterizzati da altezza al mozzo pari a 150 m e diametro rotorico pari a 172 m. In altri termini, si"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "15 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/846933",
+    "page": 5,
+    "document": "Piano Particellare di esproprio",
+    "excerpt": "Le indennità per occupazione temporanea sono state calcolate pertanto secondo il criterio indicato è riferite all’intera durata dei lavori pari a 15 mesi come da cronoprogramma."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Troia"
+  ],
+  "coordinate": {
+   "lat": 41.34089,
+   "lon": 15.33806,
+   "tipo": "centro della tavola georeferenziata di progetto (109 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/846970",
+    "page": 2,
+    "document": "Carta della visibilità del suolo",
+    "excerpt": "Carta della visibilità del suolo"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.34089,15.33806",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.34227,
+   "lon": 15.34509,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/846984",
+    "page": 1,
+    "document": "Planimetria generale con indicazione dei recettori",
+    "excerpt": "528847.37"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.34227,15.34509"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "EOS 3 Troia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/846944",
+    "page": 146,
+    "document": "Relazione geologica, morfologica e idrogeologica",
+    "excerpt": "i COMMITTENTE : EOS 3 Troia S.r.l."
+   }
+  },
+  {
+   "name": "Aren Electric Power S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0547415245",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1084975",
+      "page": 3,
+      "document": "Osservazioni del Signor Roberto Stella in qualità di legale rappresentante della AREN Green S.r.l, in data 06/06/2024",
+      "excerpt": "AREN Green S.r.l. Unipersonale | Società soggetta alla direzione e coordinamento di AREN Electric Power S.p.A. Via dell’Arrigoni n. 308 | 47522 Cesena (FC) | Ph. +39 0547 415245 | Fax +39 0547 415274"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/857750",
+    "page": 3,
+    "document": "Parere del Comune di Troia in data 20/06/2023",
+    "excerpt": "di progetto n. WTG11, Foglio 60 particella 121 della proponente soc. AREN Electric Power S.p.a.;"
+   }
+  },
+  {
+   "name": "Santa Rita Energia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "srlsantarita@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1399582",
+      "page": 1,
+      "document": "Richiesta integrazioni da parte di ISPRA",
+      "excerpt": "Santa Rita Energia S.r.l. srlsantarita@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9813"
+   }
+  },
+  {
+   "name": "Troia e Castelluccio dei Sau",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/846950",
+    "page": 14,
+    "document": "Studio faunistico",
+    "excerpt": "L’area di progettazione è ubicata tra i centri abitati di Troia e Castelluccio dei Sauri, posti in posizione dominante sulle colline che delimitano la valle del Cervaro. L’area vasta è stata definita da un raggio di 10 k"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Aren Green S.r.l. Unipersonale",
+   "kind": "società",
+   "roles": [],
+   "vat": "04032170401",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Arrigoni 308 47522 Cesena Fc",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "arengreensrl@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1084975",
+      "page": 8,
+      "document": "Osservazioni del Signor Roberto Stella in qualità di legale rappresentante della AREN Green S.r.l, in data 06/06/2024",
+      "excerpt": "per l’invio delle comunicazioni la sede legale della Società: Via dell'Arrigoni n. 308, 47522 Cesena (FC), PEC: arengreensrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Iron solar S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "francesca.saccarola@hopegroup.it",
+     "occurrences": 21,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/846980",
+      "page": 11,
+      "document": "Analisi dell'evoluzione dell'ombra indotta dagli aereogeneratori_Shadow flickering",
+      "excerpt": "+393487125089 Fabio Paccapelo / francesca.saccarola@hopegroup.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Q-ENERGY Renewables S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "q-energyrenewablessrl@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1076966",
+      "page": 1,
+      "document": "Integrazioni del 15/05/2024 - Benestare Terna s.pa.",
+      "excerpt": "Q-ENERGY RENEWABLES SRL q-energyrenewablessrl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "15 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Espropri",
+    "start": 0.0,
+    "end": 3.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Affidamento lavori",
+    "start": 1.98,
+    "end": 2.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Allestimento cantiere",
+    "start": 2.98,
+    "end": 3.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili - strade",
+    "start": 3.98,
+    "end": 6.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili - fondazioni torri",
+    "start": 3.98,
+    "end": 7.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili ed elettriche - cavidotti",
+    "start": 4.98,
+    "end": 10.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto componenti torri e aerogeneratori",
+    "start": 7.98,
+    "end": 10.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio torri e aerogeneratori",
+    "start": 8.98,
+    "end": 12.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione SSE 150/30 kV - Opere elettriche e di connessione alla RTN",
+    "start": 6.98,
+    "end": 11.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi",
+    "start": 11.98,
+    "end": 13.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Dismissione cantiere e ripristini ambientali",
+    "start": 11.98,
+    "end": 14.98,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 14.98,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/846937",
+   "page": 2,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "15 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/846933",
+    "page": 5,
+    "document": "Piano Particellare di esproprio",
+    "excerpt": "Le indennità per occupazione temporanea sono state calcolate pertanto secondo il criterio indicato è riferite all’intera durata dei lavori pari a 15 mesi come da cronoprogramma."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/846937"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Piano dismissione e ripristino impianto e relativo cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/846941"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 158,
+  "pagine": 2521,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Santa Rita Energia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 50.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "46 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
