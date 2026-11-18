@@ -1,0 +1,323 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10524",
+ "title": "Impianto per la produzione di energia da fonte rinnovabile di tipo eolico, della potenza complessiva di 50,4 MW composto da 7 aerogeneratori e delle relative opere di connesse, localizzato nei comuni di Ittiri (SS) e Villanova Monteleone (SS) denominato \"Alas 2\"",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10524",
+ "source": "mase",
+ "updated": "2026-11-18",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "50,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10524",
+    "excerpt": "50,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 11 (9), 4 (4), 1 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/979180",
+    "page": 137,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "5. DESCRIZIONE DEL PROGETTO L’impianto sarà composto da n. 7 aerogeneratori, aventi potenza unitaria pari a 7,2 MW per una potenza nominale complessiva in immissione"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1440559",
+    "page": 7,
+    "document": "Osservazioni del CeSim - Centro studi identità e memoria/APS- in data 07/10/2026",
+    "excerpt": "agrivoltaico «Campanedda» —"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 14 mesi (3), 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/979212",
+    "page": 60,
+    "document": "Studio previsionale di impatto acustico",
+    "excerpt": "produzione totale di circa 108.069 m³ di terre da scavo, corrispondente a 194.524 t, durata del cantiere 12 mesi, 8 ore di lavorazione per ciascun giorno ed una portata media dei mezzi di trasporto terra pari a 40 t, può"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Ittiri",
+   "Villanova Monteleone"
+  ],
+  "coordinate": {
+   "lat": 40.51416,
+   "lon": 8.50246,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (76 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/979200",
+    "page": 5,
+    "document": "Relazione archeologica",
+    "excerpt": "UR 05 40,518617° N 8,503429° E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.51416,8.50246",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1102828",
+      "page": 1,
+      "document": "Osservazioni del Signor Salvatore Pisanu, in data 8/07/2024",
+      "excerpt": "e p.c. RWE Renewables Italia S.R.L. rwerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10524"
+   }
+  },
+  {
+   "name": "Ing. Giuseppe Frongia",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/979180",
+    "page": 1,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "Gruppo di progettazione: Ing. Giuseppe Frongia"
+   }
+  },
+  {
+   "name": "Dr. Bellomo Gualtiero",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/979180",
+    "page": 767,
+    "document": "Studio di impatto ambientale - Relazione generale",
+    "excerpt": "Il Geologo Dr.ssa Marino Maria Antonietta Dr. Bellomo Gualtiero"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Idnamic Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01474550629",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Strada Statale Area Pip Ss 212 Km 9 82020 Pietrelcina Bn",
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0824953550",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/979106",
+      "page": 39,
+      "document": "Studio anemologico e analisi producibilità",
+      "excerpt": "B2000 Pietrscina (BN) — ITALY da parte di Monteforte: Panfilo Holding Sr). > RINA & 6 L ‘Tel. +39 0824 953550 - Fax +35 0604 953563 REA di BN 123376 - Copiiaie Socisie € 5.000 000,00 Lv. pose — PLC"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "I.A.T. Consulenza e progetti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "direttore@iatprogetti.it",
+     "occurrences": 30,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/979210",
+      "page": 18,
+      "document": "Analisi degli effetti di shadow - flickering",
+      "excerpt": "+39 070 658297 Giuseppe Frongia / direttore@iatprogetti.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Agenzia",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "argea@pec.agenziaargea.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1008012",
+      "page": 72,
+      "document": "Osservazioni della Regione Autonoma della Sardegna, in data 15/03/2024",
+      "excerpt": "PEC AGENZIA: argea@pec.agenziaargea.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 14 mesi (3), 25 giorni (1), 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/979212",
+    "page": 60,
+    "document": "Studio previsionale di impatto acustico",
+    "excerpt": "produzione totale di circa 108.069 m³ di terre da scavo, corrispondente a 194.524 t, durata del cantiere 12 mesi, 8 ore di lavorazione per ciascun giorno ed una portata media dei mezzi di trasporto terra pari a 40 t, può"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma degli interventi",
+   "url": "https://va.mite.gov.it/File/Documento/979098"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Cronoprogramma degli interventi",
+    "url": "https://va.mite.gov.it/File/Documento/979098"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 216,
+  "pagine": 4196,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "RWE Renewables Italia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 50.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ITTIRI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "58 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
