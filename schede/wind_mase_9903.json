@@ -1,0 +1,930 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9903",
+ "title": "Progetto per la realizzazione di un impianto eolico, costituito da 7 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 50,4 MW, da realizzarsi nei comuni di Turi (BA), Casamassima (BA) e Rutigliano (BA), incluse le relative opere di connessione alla RTN (cod. MYTERNA n. 202203118).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9903",
+ "source": "mase",
+ "updated": "2026-11-18",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "50,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9903",
+    "excerpt": "50,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 150 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 23 (10), 1 (7), 3 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/856954",
+    "page": 1,
+    "document": "Avviso al Pubblico del 19/06/2023",
+    "excerpt": "Il progetto prevede la realizzazione di n. 7 aerogeneratori della potenza unitaria di 7,2 MW, caratterizzati da altezza al mozzo pari a 150 m e diametro rotorico pari a 172 m. In altri termini, si"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/856899",
+    "page": 86,
+    "document": "Studio faunistico",
+    "excerpt": "Techniques in Connection with Environmental Impact Assessments for Offshore Wind Farms in the UK: A"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "12 MW / 2 MWh",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 50,4 MW (3), 15,2 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1448409",
+    "page": 10,
+    "document": "Integrazioni del 29/10/2026 - Relazione sugli impatti derivanti dalla vulnerabilita' del progetto ai rischi di gravi incidenti e/o calamita'",
+    "excerpt": "L’impianto di accumulo sarà costituito da 12 Container Batteria ognuno di capacità pari a 4 MWh, disposti ed assemblati per dare una potenza complessiva pari a 12 MW. In particolare, si formeranno 2 piazzole ciascuna com"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "15 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1175055",
+    "page": 5,
+    "document": "Integrazioni del 11/11/2024 - Piano Particellare di esproprio",
+    "excerpt": "Le indennità per occupazione temporanea sono state calcolate pertanto secondo il criterio indicato è riferite all’intera durata dei lavori pari a 15 mesi come da cronoprogramma."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BA",
+  "comuni": [
+   "Turi",
+   "Casamassima",
+   "Rutigliano"
+  ],
+  "coordinate": {
+   "lat": 40.95915,
+   "lon": 17.02312,
+   "tipo": "centro della tavola georeferenziata di progetto (156 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/856913",
+    "page": 2,
+    "document": "Carta della visibilità del suolo",
+    "excerpt": "Carta della visibilità del suolo"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.95915,17.02312",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.94831,
+   "lon": 16.99829,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/856925",
+    "page": 1,
+    "document": "Planimetria generale con indicazione dei recettori",
+    "excerpt": "668187.62 4535278.40"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.94831,16.99829"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Mate System S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista",
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "matesystem@pec.it",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1175068",
+      "page": 1,
+      "document": "Integrazioni del 11/11/2024 - Relazione Tecnica SE RTN",
+      "excerpt": "tel. +39 080 3072072 mail: info@matesystemsrl.it | pec: matesystem@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@matesystemsrl.it",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1175068",
+      "page": 1,
+      "document": "Integrazioni del 11/11/2024 - Relazione Tecnica SE RTN",
+      "excerpt": "tel. +39 080 3072072 mail: info@matesystemsrl.it | pec: matesystem@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0803072072",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1175068",
+      "page": 1,
+      "document": "Integrazioni del 11/11/2024 - Relazione Tecnica SE RTN",
+      "excerpt": "Via Papa Pio XII, n.8 | 70020 - Cassano delle Murge (BA) tel. +39 080 3072072"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1175068",
+    "page": 1,
+    "document": "Integrazioni del 11/11/2024 - Relazione Tecnica SE RTN",
+    "excerpt": "Committente: Questo documento contiene informazioni di proprietà della società Mate System srl e deve essere utilizzato esclusivamente dal destinatario in relazione alle finalità per le quali è stato ricevuto. E' vietata"
+   }
+  },
+  {
+   "name": "Turi Baronessa S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "13029160960",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lanzone 31 20123 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "turibaronessa@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1175132",
+      "page": 1,
+      "document": "Integrazioni del 11/11/2024 - Benestare Terna",
+      "excerpt": "20123 MILANO (MI) turibaronessa@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "srisantarita@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1085071",
+      "page": 28,
+      "document": "Parere della Regione Puglia - SEZIONE AUTORIZZAZIONI AMBIENTALI in data 04/06/2024",
+      "excerpt": "Santa Rita Energia S.r.l. srisantarita@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9903"
+   }
+  },
+  {
+   "name": "Ing. Francesco Ambron",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1175068",
+    "page": 1,
+    "document": "Integrazioni del 11/11/2024 - Relazione Tecnica SE RTN",
+    "excerpt": "Progettista: Ing. Francesco Ambron"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Beshielding S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10105760010",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Monviso 9 10090 Villarbasse To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "shielding@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1175101",
+      "page": 13,
+      "document": "Integrazioni del 11/11/2024 - Relazione tecnica di valutazione del campo elettrico e magnetico e calcolo della fascia di rispetto",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "busbar@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1175101",
+      "page": 13,
+      "document": "Integrazioni del 11/11/2024 - Relazione tecnica di valutazione del campo elettrico e magnetico e calcolo della fascia di rispetto",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Iron solar S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "francesca.saccarola@hopegroup.it",
+     "occurrences": 70,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/856919",
+      "page": 84,
+      "document": "Valutazione Previsionale di Impatto Acustico",
+      "excerpt": "+393487125089 Fabio Paccapelo / francesca.saccarola@hopegroup.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geopolis S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "robe11meni@gmail.com",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1175107",
+      "page": 2,
+      "document": "Integrazioni del 11/11/2024 - Relazione geologica preliminare",
+      "excerpt": "GEOPOLIS srl - 00164 Roma - Via Arnobio, 27 – robe11meni@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Brulli Trasmissione S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "brullit@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1175104",
+      "page": 1,
+      "document": "Integrazioni del 11/11/2024 - Dichiarazione non interferenza con attività minerarie",
+      "excerpt": "Brulli Trasmissione Srl Unipersonale - Capitale sociale versato € 1.000.000 - Registro Imprese, codice fiscale e partita IVA No. IT 02627590355 Via Meuccio Ruini, 2 - 42124 Reggio nell’Emilia - Italia - Tel +39.0522.23.3"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@brulli.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1175104",
+      "page": 1,
+      "document": "Integrazioni del 11/11/2024 - Dichiarazione non interferenza con attività minerarie",
+      "excerpt": "Brulli Trasmissione Srl Unipersonale - Capitale sociale versato € 1.000.000 - Registro Imprese, codice fiscale e partita IVA No. IT 02627590355 Via Meuccio Ruini, 2 - 42124 Reggio nell’Emilia - Italia - Tel +39.0522.23.3"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "21 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Voltura autorizzazione a Terna",
+    "start": 0.13,
+    "end": 1.11,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Elaborati generali di commessa",
+    "start": 1.11,
+    "end": 2.49,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Elaborati costruttivi opere civili",
+    "start": 2.72,
+    "end": 4.57,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Elaborati costruttivi opere meccaniche",
+    "start": 2.49,
+    "end": 4.34,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Emissione specifiche tecniche apparati AT/MT/BT",
+    "start": 2.72,
+    "end": 4.11,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Progetto elettrico sistema di automazione & controllo",
+    "start": 2.95,
+    "end": 5.26,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Riesame della progettazione",
+    "start": 5.26,
+    "end": 6.64,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Approvazione progetto esecutivo",
+    "start": 6.64,
+    "end": 7.62,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo TR AT/AT",
+    "start": 4.11,
+    "end": 15.78,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo apparecchiature AT",
+    "start": 7.62,
+    "end": 13.21,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo quadri 36 kV",
+    "start": 7.62,
+    "end": 11.57,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO e subappalto opere civili",
+    "start": 7.62,
+    "end": 9.6,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e consegna prefabbricati edifici",
+    "start": 7.69,
+    "end": 10.39,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo carpenterie zincate per apparecchiature AT",
+    "start": 7.69,
+    "end": 10.39,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, fornitura e collaudo isolatori, morse e conduttori alluminio",
+    "start": 7.69,
+    "end": 11.77,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo apparecchiature MT e BT per SA ca e cc",
+    "start": 7.69,
+    "end": 11.77,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo apparecchiature MT",
+    "start": 7.69,
+    "end": 11.77,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo quadri sistema automazione & controllo",
+    "start": 7.69,
+    "end": 10.39,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, fornitura e collaudo cavi MT e BT",
+    "start": 7.69,
+    "end": 9.0,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Allestimento cantiere e vie di accesso",
+    "start": 9.6,
+    "end": 10.29,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazione fabbricati",
+    "start": 10.52,
+    "end": 10.98,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni trasformatori AT/AT",
+    "start": 10.52,
+    "end": 11.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni apparecchiature AT",
+    "start": 10.52,
+    "end": 12.59,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione rete di terra primaria",
+    "start": 10.52,
+    "end": 11.67,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione vie cavi e polifore acque meteoriche",
+    "start": 10.52,
+    "end": 12.59,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera prefabbricati e realizzazione opere di finitura",
+    "start": 10.98,
+    "end": 11.44,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Preparazione piazzali, drenaggi e cordoli strade",
+    "start": 12.59,
+    "end": 13.51,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione recinzione",
+    "start": 10.52,
+    "end": 11.9,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Asfaltature strade",
+    "start": 13.51,
+    "end": 13.8,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione aree a verde",
+    "start": 13.51,
+    "end": 14.2,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa trasformatori AT/AT",
+    "start": 15.78,
+    "end": 16.24,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa carpenterie metalliche",
+    "start": 13.51,
+    "end": 14.89,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa apparecchiature AT",
+    "start": 14.89,
+    "end": 17.65,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Montaggio sbarre AT e collegamenti AT",
+    "start": 17.65,
+    "end": 18.8,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione rete di terra secondaria",
+    "start": 14.89,
+    "end": 16.27,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione impianti tecnologici edifici e illuminazione esterna",
+    "start": 11.44,
+    "end": 12.36,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa quadri 36 kV",
+    "start": 12.36,
+    "end": 13.74,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa apparecchiature MT",
+    "start": 12.36,
+    "end": 13.05,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa apparecchiature MT e BT SA ca e cc",
+    "start": 13.05,
+    "end": 13.51,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa quadri ed apparati sistema di protezione e controllo",
+    "start": 13.51,
+    "end": 14.2,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa e collegamento cavi MT e BT",
+    "start": 14.89,
+    "end": 16.04,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Verifiche di passo e contatto rete di terra",
+    "start": 17.65,
+    "end": 18.11,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo sistema servizi ausiliari stazione ca e cc",
+    "start": 17.65,
+    "end": 18.11,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo apparecchiature AT di piazzale",
+    "start": 17.65,
+    "end": 19.03,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo quadri 36 kV",
+    "start": 17.65,
+    "end": 18.34,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Taratura protezioni di linea e di impianto",
+    "start": 19.03,
+    "end": 19.49,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo e verifiche SCADA",
+    "start": 19.49,
+    "end": 19.95,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Ripristini e smobilizzo cantiere",
+    "start": 19.95,
+    "end": 20.94,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Attività Riepilogo",
+    "start": 5.18,
+    "end": 6.37,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Divisione Riepilogo progetto",
+    "start": 5.18,
+    "end": 6.37,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Cardine Attività inattiva",
+    "start": 2.25,
+    "end": 9.34,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 20.94,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1175099",
+   "page": 2,
+   "document": "Integrazioni del 11/11/2024 - Cronoprogramma delle attività",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "M11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "M12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "M13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "M14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "M15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "M16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "M17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "M18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "M19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "M20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "M21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "M22",
+     "start": 21.0,
+     "end": 22.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "15 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1175055",
+    "page": 5,
+    "document": "Integrazioni del 11/11/2024 - Piano Particellare di esproprio",
+    "excerpt": "Le indennità per occupazione temporanea sono state calcolate pertanto secondo il criterio indicato è riferite all’intera durata dei lavori pari a 15 mesi come da cronoprogramma."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 11/11/2024 - Cronoprogramma delle attivita' SE RTN",
+   "url": "https://va.mite.gov.it/File/Documento/1175086"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 11/11/2024 - Cronoprogramma delle attivita' SE RTN",
+    "url": "https://va.mite.gov.it/File/Documento/1175086"
+   },
+   {
+    "document": "Integrazioni del 11/11/2024 - Cronoprogramma delle attivita' dei raccordi",
+    "url": "https://va.mite.gov.it/File/Documento/1175087"
+   },
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/856884"
+   },
+   {
+    "document": "Piano dismissione e ripristino impianto e relativo cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/856888"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 281,
+  "pagine": 4066,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Turi Baronessa S.r.l. (ex. Santa Rita Energia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 50.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TURI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "265 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
