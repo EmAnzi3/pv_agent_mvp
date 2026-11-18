@@ -5,7 +5,7 @@
  "title": "Istanza per l'avvio del procedimento di Valutazione di Impatto ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto di un impianto eolico costituito da n. 9 aerogeneratori, di potenza nominale singola pari a 6 MW per una potenza complessiva di 54 MW, da realizzare nei territori comunali di Stigliano e Craco, nella provincia di Matera, in Regione Basilicata. Codice pratica MYTERNA n. 202102654",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9620",
  "source": "mase",
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "9",
    "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 3 (20), 4 (9), 1 (6)",
+   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 3 (25), 4 (10), 11 (8)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/812317",
     "page": 2,
@@ -87,12 +87,23 @@
     {
      "type": "PEC",
      "value": "hergorenewables@legalmail.it",
-     "occurrences": 3,
+     "occurrences": 4,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1254994",
       "page": 1,
       "document": "Richiesta integrazioni del MIC",
       "excerpt": "Società Hergo Renewables S.p.a. hergorenewables@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "hergorenewables@legaimail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/842337",
+      "page": 2,
+      "document": "Osservazioni del 28/04/2023 - Sudio Legale Pinto (Pierfilippo Laviani)",
+      "excerpt": "hergorenewables@legaimail.it"
      }
     }
    ],
@@ -240,6 +251,30 @@
    }
   },
   {
+   "name": "Eni Plenitude S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0236570",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1322238",
+      "page": 1,
+      "document": "Integrazioni del 08/10/2025 - Nota di trasmissione integrazioni",
+      "excerpt": "Società di Eni Plenitude S.p.A. Società Benefit Tel. +39 02 365 70 800"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Ing. Leonardo Sblendido",
    "kind": "persona",
    "roles": [],
@@ -264,7 +299,7 @@
    "source": null
   },
   {
-   "name": "Eni Plenitude S.p.A.",
+   "name": "Green & Green S.r.l.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -274,14 +309,14 @@
    "office": null,
    "contacts": [
     {
-     "type": "Telefono",
-     "value": "0236570",
+     "type": "E-mail",
+     "value": "info@greengreen.it",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1322238",
-      "page": 1,
-      "document": "Integrazioni del 08/10/2025 - Nota di trasmissione integrazioni",
-      "excerpt": "Società di Eni Plenitude S.p.A. Società Benefit Tel. +39 02 365 70 800"
+      "url": "https://va.mite.gov.it/File/Documento/842337",
+      "page": 6,
+      "document": "Osservazioni del 28/04/2023 - Sudio Legale Pinto (Pierfilippo Laviani)",
+      "excerpt": "GH Oe wate FES erent lor r@,orbt@@€-(@+1@ n o1o-u1172omuccouuetl UE se info@greengreen.it"
      }
     }
    ],
@@ -1093,9 +1128,9 @@
  },
  "documentazione": {
   "documenti": 315,
-  "pagine": 5094,
+  "pagine": 5641,
   "completa": false,
-  "da_leggere": 15
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -1131,7 +1166,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "653 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "667 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
