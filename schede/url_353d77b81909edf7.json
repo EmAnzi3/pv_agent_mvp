@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrovoltaico denominato (CO2)^2, di potenza in c.c pari a 12,16 MWp e potenza nominale attiva in immissione pari a 12 MWe, localizzato tra la Regione Basilicata e la Regione Puglia, in pa",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8283",
  "source": "mase",
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "sintesi": [
   {
    "key": "potenza",
@@ -32,6 +32,19 @@
    }
   },
   {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "28,659 ha",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 29,661 ha (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/662293",
+    "page": 15,
+    "document": "Relazione Generale Soprintendenza",
+    "excerpt": "Area Interessata dall'intervento:286.593 mq Incidenza sull'area arboricoltura: 73"
+   }
+  },
+  {
    "key": "pali",
    "label": "Pali da infiggere (tracker)",
    "value": "180",
@@ -49,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "3 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (3), 18 mesi (3), 14 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (4), 18 mesi (4), 14 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1383996",
     "page": 31,
@@ -68,7 +81,7 @@
   "coordinate": {
    "lat": 40.7167,
    "lon": 16.71294,
-   "tipo": "coordinate del sito dichiarate negli elaborati (10 riferimenti concordi)",
+   "tipo": "coordinate del sito dichiarate negli elaborati (23 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/662341",
     "page": 4,
@@ -98,7 +111,7 @@
     {
      "type": "PEC",
      "value": "agrinewtechitalia@pec.it",
-     "occurrences": 391,
+     "occurrences": 539,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/662464",
       "page": 1,
@@ -160,7 +173,7 @@
     {
      "type": "PEC",
      "value": "matesystem@pec.it",
-     "occurrences": 29,
+     "occurrences": 31,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/662261",
       "page": 1,
@@ -171,7 +184,7 @@
     {
      "type": "E-mail",
      "value": "info@matesystemsrl.it",
-     "occurrences": 29,
+     "occurrences": 31,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/662261",
       "page": 1,
@@ -230,6 +243,17 @@
       "page": 9,
       "document": "STMG accettazione preventivo",
       "excerpt": "a.terlizzi@matesystemsrl.it antonio.terlizzi@ingpec.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "annamariaterlizzi@studio79.eu",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/662293",
+      "page": 2,
+      "document": "Relazione Generale Soprintendenza",
+      "excerpt": "annamariaterlizzi@studio79.eu"
      }
     }
    ],
@@ -328,7 +352,7 @@
     {
      "type": "E-mail",
      "value": "info@sunelectrics.it",
-     "occurrences": 483,
+     "occurrences": 535,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/725285",
       "page": 1,
@@ -778,7 +802,7 @@
   "duration": {
    "text": "3 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (3), 18 mesi (3), 14 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (4), 18 mesi (4), 14 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1383996",
     "page": 31,
@@ -807,9 +831,9 @@
  },
  "documentazione": {
   "documenti": 137,
-  "pagine": 2019,
-  "completa": false,
-  "da_leggere": 17
+  "pagine": 2466,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -840,12 +864,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "938 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "1067 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
