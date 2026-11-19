@@ -5,7 +5,7 @@
  "title": "[ID_13833]Progetto per la realizzazione di un impianto eolico da 50,4 MW costituito da 7 aerogeneratori di potenza unitaria pari a 7,2 MW da installare nella regione Lazio nei comuni di Grotte di Castro (VT), Acquapendente (VT) con opere di connessione ricadenti anche nel comune di Castel Giorgio (TR) in Umbria",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11667",
  "source": "mase",
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,12 +24,24 @@
    "label": "Aerogeneratori",
    "value": "7",
    "status": "da documenti",
-   "sub": "7,20 MW ciascuno · altezza mozzo 105 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 3 (10), 55 (8), 4 (4)",
+   "sub": "7,20 MW ciascuno · altezza mozzo 105 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 3 (11), 55 (9), 4 (4)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1363950",
     "page": 1,
     "document": "Richiesta integrazioni da Regione Lazio",
     "excerpt": "27 del D.lgs. 152/2006, relativa al progetto per la realizzazione di un impianto eolico da 50,4 MW costituito da 7 aerogeneratori di potenza unitaria pari a 7,2 MW da installare nella regione Lazio nei comuni di Grotte d"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1247223",
+    "page": 8,
+    "document": "Relazione Tecnica Generale_signed-signed",
+    "excerpt": "IEC 61400-3 “Design requirements for offshore wind turbines”"
    }
   },
   {
@@ -53,9 +65,9 @@
    "Grotte Di Castro"
   ],
   "coordinate": {
-   "lat": 42.73105,
-   "lon": 11.97261,
-   "tipo": "centro della tavola georeferenziata di progetto (11 riferimenti concordi)",
+   "lat": 42.73083,
+   "lon": 11.97169,
+   "tipo": "centro della tavola georeferenziata di progetto (12 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1247231",
     "page": 1,
@@ -63,7 +75,7 @@
     "excerpt": "Planimetria_Catastale_rev.01"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.73105,11.97261",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.73083,11.97169",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -95,7 +107,7 @@
     {
      "type": "PEC",
      "value": "q-energyrenewables2srl@legalmail.it",
-     "occurrences": 182,
+     "occurrences": 226,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1247119",
       "page": 1,
@@ -115,16 +127,16 @@
    "name": "RWE Renewables Italia S.r.l.",
    "kind": "società",
    "roles": [],
-   "vat": null,
+   "vat": "06400370968",
    "vat_group": false,
-   "verified": false,
+   "verified": true,
    "esecuzione": null,
-   "office": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
    "contacts": [
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 30,
+     "occurrences": 33,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1247228",
       "page": 1,
@@ -133,7 +145,10 @@
      }
     }
    ],
-   "source": null
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
   },
   {
    "name": "Dott. Geol. Massimo Gubinelli",
@@ -178,6 +193,30 @@
       "page": 2,
       "document": "Relazione di impatto acustico_signed-signed",
       "excerpt": "Azienda con sistema di gestione qualità ISO 9001 certificata da Bureau Veritas Italia S.p.A. www.studiorinnovabili.it - info@studiorinnovabili.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollogenerale@pec.enav.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1318534",
+      "page": 28,
+      "document": "Osservazion della società RWE Renewables Italia S.r.l., in data 21/10/2025.",
+      "excerpt": "Via Salaria, 716, 00138, Roma (RM) protocollogenerale@pec.enav.it"
      }
     }
    ],
@@ -395,9 +434,9 @@
  },
  "documentazione": {
   "documenti": 331,
-  "pagine": 3343,
-  "completa": false,
-  "da_leggere": 31
+  "pagine": 3877,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -429,7 +468,7 @@
  "da_verificare": [
   {
    "label": "Recapiti",
-   "reason": "19 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "85 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
