@@ -1,0 +1,481 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7827",
+ "title": "Progetto di un impianto eolico composto da 6 aerogeneratori della potenza nominale di 6 MW ciascuno, comprensivo di un sistema di accumulo di potenza pari a 12,5 MW e delle relative opere di connessione, per una potenza complessiva di 48,50 MW, da realizzarsi nei Comuni di Torre Santa Susanna (BR), Mesagne (BR) e Latiano (BR), in località \"Galesano\".",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7827",
+ "source": "mase",
+ "updated": "2026-11-19",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "48,5 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7827",
+    "excerpt": "48,5 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "8,08 MW ciascuno · altezza mozzo 125 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 4 (10), 42 (2), 40 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488582",
+    "page": 1,
+    "document": "Avviso al Pubblico del 05/05/2021",
+    "excerpt": "Latiano (BR) e prevede la realizzazione di un impianto Eolico nei Comuni di Torre Santa Susanna (BR) e Mesagne (BR) alla località “Galesano” composto da 6 aerogeneratori della potenza nominale di 6.00 MW comprensivo di u"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "48,5 MW / 3,125 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12,5 MW (20)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488582",
+    "page": 1,
+    "document": "Avviso al Pubblico del 05/05/2021",
+    "excerpt": "“Galesano” comprensivo di un sistema di accumulo con batterie agli ioni di litio, per una potenza complessiva di 48,50 MW”"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488146",
+    "page": 115,
+    "document": "RELAZIONE TECNICA",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BR",
+  "comuni": [
+   "Torre Santa Susanna",
+   "Mesagne",
+   "Latiano"
+  ],
+  "coordinate": {
+   "lat": 40.51499,
+   "lon": 17.76963,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (10 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488251",
+    "page": 39,
+    "document": "RELAZIONE DI PREVISIONE DELL'IMPATTO ACUSTICO DELL'IMPIANTO",
+    "excerpt": "735300 4490157"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.51499,17.76963",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Repower Renewable S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": "03647930274",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lavaredo 44/52 Mestre 30174 Venezia Ve",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "elettrostudioenergiaspa@cgn.legalmail.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488582",
+      "page": 1,
+      "document": "Avviso al Pubblico del 05/05/2021",
+      "excerpt": "Via Lavaredo, 44/52 – 30174 Venezia (VE) P. IVA 03647930274 – Pec: elettrostudioenergiaspa@cgn.legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "giuseppe.caricato@repower.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/489280",
+      "page": 1,
+      "document": "Elenco elaborati",
+      "excerpt": "Email: giuseppe.caricato@repower.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7827"
+   }
+  },
+  {
+   "name": "Ing. Filippo Bittante",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488146",
+    "page": 1,
+    "document": "RELAZIONE TECNICA",
+    "excerpt": "Progettista : Ing. Filippo Bittante"
+   }
+  },
+  {
+   "name": "Ing. Nicola Forte",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488273",
+    "page": 1,
+    "document": "STUDIO DI IMPATTO AMBIENTALE - QUADRO DI RIFERIMENTO PROGRAMMATICO",
+    "excerpt": "Progettista : Ing. Nicola Forte"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Sinergo S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@sinergospa.com",
+     "occurrences": 121,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488266",
+      "page": 1,
+      "document": "RICOGNIZIONE DEI BENI ARCHITETTONICI",
+      "excerpt": "tel 041.3642511 - fax 041.640481 sinergospa.com - info@sinergospa.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "filippo.bittante@sinergospa.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488239",
+      "page": 15,
+      "document": "PRIME INDICAZIONI SULLA SICUREZZA",
+      "excerpt": "T. 041/3642511 F. 041/640481 filippo.bittante@sinergospa.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0413642511",
+     "occurrences": 102,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488266",
+      "page": 1,
+      "document": "RICOGNIZIONE DEI BENI ARCHITETTONICI",
+      "excerpt": "30030 - Maerne di Martellago - Venezia - Italy tel 041.3642511 - fax 041.640481"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Tenproject S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tenproject.it",
+     "occurrences": 116,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488266",
+      "page": 1,
+      "document": "RICOGNIZIONE DEI BENI ARCHITETTONICI",
+      "excerpt": "t +39 0824 337144 - f +39 0824 49315 tenproject.it - info@tenproject.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sinego S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0475042511",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488267",
+      "page": 1,
+      "document": "RELAZIONE ARCHEOLOGICA",
+      "excerpt": "30000 - Maire cl Manellago - Vaneofa - [tay tel 047 5042511 - be"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sloergo S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "ifo@einsrpospa.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/488268",
+      "page": 1,
+      "document": "TAVOLA INQUADRAMENTO AREA DI PROGETTO",
+      "excerpt": "tel 041.3642511 - fac 041.640481 82018 S.Giorgio del Sanno SEN sinergospa.com - ifo@einsrpospa.com 1+39 0824 337144 -1 +) 5"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/488240",
+   "page": 3,
+   "document": "CRONOPROGRAMMA DEI LAVORI",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/488146",
+    "page": 115,
+    "document": "RELAZIONE TECNICA",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "CRONOPROGRAMMA DEI LAVORI",
+   "url": "https://va.mite.gov.it/File/Documento/488240"
+  },
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "altri": [],
+  "durate_fasi": [
+   {
+    "name": "CAMPO EOLICO",
+    "duration": "355 giorni",
+    "months": 11.68
+   },
+   {
+    "name": "Installazione area di cantiere",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Cavidotto di collegamento interno",
+    "duration": "90 giorni",
+    "months": 2.96
+   },
+   {
+    "name": "Esecuzione scavi a sezione obbligata",
+    "duration": "60 giorni",
+    "months": 1.97
+   },
+   {
+    "name": "Posa cavidotto MT",
+    "duration": "70 giorni",
+    "months": 2.3
+   },
+   {
+    "name": "Rinterro e ripristini viabilità esistente",
+    "duration": "45 giorni",
+    "months": 1.48
+   },
+   {
+    "name": "Realizzazione nuova viabilità",
+    "duration": "30 giorni",
+    "months": 0.99
+   },
+   {
+    "name": "Aerogeneratore S1",
+    "duration": "130 giorni",
+    "months": 4.28
+   },
+   {
+    "name": "Esecuzione scavi di fondazione",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Realizzazione pali di fondazione",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "Armatura e getto plinto di fondazione",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Trasporto e stoccaggio componenti torre eolica",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Esecuzione lavori di completamento piazzola e viabilità definitiva",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "Collegamenti elettrici",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Smobilizzo cantiere e ripristino terreni come esistente",
+    "duration": "5 giorni",
+    "months": 0.16
+   },
+   {
+    "name": "Aerogeneratore S2",
+    "duration": "130 giorni",
+    "months": 4.28
+   },
+   {
+    "name": "Aerogeneratore S3",
+    "duration": "130 giorni",
+    "months": 4.28
+   },
+   {
+    "name": "Aerogeneratore S4",
+    "duration": "130 giorni",
+    "months": 4.28
+   },
+   {
+    "name": "Aerogeneratore S5",
+    "duration": "130 giorni",
+    "months": 4.28
+   },
+   {
+    "name": "Aerogeneratore S6",
+    "duration": "130 giorni",
+    "months": 4.28
+   }
+  ],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 140,
+  "pagine": 2083,
+  "completa": false,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Repower Renewable S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 48.5,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TORRE SANTA SUSANNA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BR",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "165 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
