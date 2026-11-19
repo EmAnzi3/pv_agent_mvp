@@ -1,0 +1,753 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10892",
+ "title": "Progetto di parco eolico denominato \"Ennas\" costituito da 8 turbine, per una potenza in immissione di 48 MW e opere accessorie e di connessione alla RTN da realizzarsi nei Comuni di Suelli, Selegas e Gesico nella Provincia (CA).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10892",
+ "source": "mase",
+ "updated": "2026-11-19",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "48 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10892",
+    "excerpt": "48 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da verificare",
+   "sub": "8,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 8 (64), 5 (14), 11 (8)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1075735",
+    "page": 1,
+    "document": "Avviso al pubblico del 30/05/2024",
+    "excerpt": "Il progetto è localizzato in Regione Sardegna nel territorio del Comune di Calangianus, appartenente alla provincia di Sassari. Il progetto prevede l’installazione di n. 6 aerogeneratori da 6,6 MW ciascuno, per una poten"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "58 MW / 64,8 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 32,4 MW (3), 64,8 MW (3), 20 MW (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1100606",
+    "page": 7,
+    "document": "Osservazioni dell'ARPAS - Agenzia Regionale per la Protezione dell'Ambiente della Sardegna - Dipartimento Sassari e Gallura, in data 28/06/2024",
+    "excerpt": "pari a 33 MW, integrato con sistema di accumulo di potenza nominale pari a 25 MW, per una potenza complessiva pari a 58 MW nel Comune di Calangianus (SS) e opere di connessione alla R.T.N. Proponente: EVO S.r.l.” Si evid"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 10 mesi (2), 14 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/892673",
+    "page": 41,
+    "document": "Relazione floristico vegetazionale",
+    "excerpt": "§ Durante la fase di corso d’opera ed in fase post-operam sino a 12 mesi dalla chiusura del cantiere, l’intera superficie interessata dai lavori sarà adeguatamente ispezionata da un esperto"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "CA",
+  "comuni": [
+   "Suelli",
+   "Selegas",
+   "Gesico Nella Provincia"
+  ],
+  "coordinate": {
+   "lat": 39.5868,
+   "lon": 9.14381,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (71 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/892670",
+    "page": 21,
+    "document": "Analisi degli effetti di shadow - flickering",
+    "excerpt": "AG01 1.511.479 4.382.890 360,0 Siemens Gamesa SG ...Yes Siemens Gamesa SG 6.2-170-6.200"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.58680,9.14381",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Baltex Sardegna 12 Suelli S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "baltexsardegna12suelli@legalmail.it",
+     "occurrences": 1974,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/892660",
+      "page": 1,
+      "document": "Sovrapposizione delle opere RTN con i tematismi del P.P.R.",
+      "excerpt": "20129 Milano (MI) baltexsardegna12suelli@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "12suelli@legalmal.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/892785",
+      "page": 1,
+      "document": "Carta geologica",
+      "excerpt": "Ce E PROGETTI ® (4) 20129 Milano (MI) ‘aprogett it baltexsardegna 12suelli@legalmal.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/892670",
+    "page": 1,
+    "document": "Analisi degli effetti di shadow - flickering",
+    "excerpt": "COMMITTENTE BALTEX SARDEGNA 12 SUELLI S.R.L."
+   }
+  },
+  {
+   "name": "AEI Wind Project XVI S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "aeiwindprojectxvi@legalmail.it",
+     "occurrences": 46,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1075698",
+      "page": 1,
+      "document": "Catalogo MOSI",
+      "excerpt": "Sede Legale: Via Savoia n. 78 – 00198 - Roma (RM) - Italia PEC: aeiwindprojectxvi@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "windpro@emd.dk",
+     "occurrences": 103,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/892670",
+      "page": 21,
+      "document": "Analisi degli effetti di shadow - flickering",
+      "excerpt": "windPRO 3.4.415 by EMD International A/S, Tel. +45 96 35 44 44, www.emd.dk, windpro@emd.dk"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10892"
+   }
+  },
+  {
+   "name": "Ing. Giuseppe Frongia",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/892660",
+    "page": 1,
+    "document": "Sovrapposizione delle opere RTN con i tematismi del P.P.R.",
+    "excerpt": "Gruppo di progettazione: Ing. Giuseppe Frongia"
+   }
+  },
+  {
+   "name": "I.A.T. Consulenza e progetti S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "direttore@iatprogetti.it",
+     "occurrences": 103,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/892670",
+      "page": 21,
+      "document": "Analisi degli effetti di shadow - flickering",
+      "excerpt": "+39 070 658297 Giuseppe Frongia / direttore@iatprogetti.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/892670",
+    "page": 1,
+    "document": "Analisi degli effetti di shadow - flickering",
+    "excerpt": "PROGETTAZIONE I.A.T. CONSULENZA E PROGETTI S.R.L."
+   }
+  },
+  {
+   "name": "Dott. Geol. Milko Nastasi",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1075624",
+    "page": 3,
+    "document": "Elenco degli esperti firmatari degli elaborati",
+    "excerpt": "Geologo: Dott. Geol. Milko Nastasi"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Premier Engineering and Procurement SL",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "jviar@premier-pv.com",
+     "occurrences": 33,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/892788",
+      "page": 2,
+      "document": "Stima producibilità del parco eolico",
+      "excerpt": "ES-50197 Zaragoza Javier Viar / jviar@premier-pv.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1075667",
+      "page": 19,
+      "document": "Relazione di predimensionamento delle fondazioni degli aerogeneratori",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1075667",
+      "page": 19,
+      "document": "Relazione di predimensionamento delle fondazioni degli aerogeneratori",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geom. Maria Luisa Alivesi",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0792088335",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1097571",
+      "page": 54,
+      "document": "Parere della Regione Autonoma della Sardegna assessorato della difesa dell'ambiente in data 28/06/2024",
+      "excerpt": "Per ogni eventuale chiarimento si rimane a disposizione: Geom. Maria Luisa Alivesi e-mail: mlalivesi@regio e numero di telefono 079/2088335."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dr. Agr. Carlo Maxia",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "carlo.maxia@cbsm.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/909060",
+      "page": 28,
+      "document": "Parere della Regione Autonoma della Sardegna assessorato della difesa dell'ambiente in data 02/10/2023",
+      "excerpt": "Parere Tecnico. Dr. Agr. Carlo Maxia Nota inviata solo a mezzo P.E;C. 0 email carlo.maxia@cbsm.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Allestimento del cantiere",
+    "start": 0.05,
+    "end": 0.47,
+    "level": 1,
+    "summary": false,
+    "duration": "108 g"
+   },
+   {
+    "name": "Attività di tracciamento",
+    "start": 0.01,
+    "end": 1.35,
+    "level": 1,
+    "duration": "30 g",
+    "summary": false
+   },
+   {
+    "name": "Approwigionamento materiali",
+    "start": 0.49,
+    "end": 4.61,
+    "level": 1,
+    "summary": false,
+    "duration": "908 g"
+   },
+   {
+    "name": "Interventi percorso stradale Porto Oristano - Suelli",
+    "start": 0.01,
+    "end": 0.89,
+    "level": 1,
+    "summary": true,
+    "duration": "208 g"
+   },
+   {
+    "name": "Apertura di piste e splateamento Piazzole",
+    "start": 0.46,
+    "end": 3.65,
+    "level": 2,
+    "summary": true,
+    "duration": "708 g"
+   },
+   {
+    "name": "zazione fonda:",
+    "start": 0.74,
+    "end": 8.45,
+    "level": 3,
+    "summary": false,
+    "duration": "1678 g"
+   },
+   {
+    "name": "Scavo plinti",
+    "start": 0.75,
+    "end": 2.81,
+    "level": 2,
+    "summary": false,
+    "duration": "458 g"
+   },
+   {
+    "name": "Realizzazione fondazioni in c.a. e rinterri",
+    "start": 1.17,
+    "end": 8.44,
+    "level": 2,
+    "duration": "160 g",
+    "summary": false
+   },
+   {
+    "name": "Scavi, posa linee 36KV, rinterri e ripristini",
+    "start": 1.3,
+    "end": 6.73,
+    "level": 2,
+    "duration": "120 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cabina collettriche di",
+    "start": 4.04,
+    "end": 4.91,
+    "level": 2,
+    "summary": false,
+    "duration": "208 g"
+   },
+   {
+    "name": "Strade e piazzole",
+    "start": 1.58,
+    "end": 6.65,
+    "level": 1,
+    "duration": "110 g",
+    "summary": true
+   },
+   {
+    "name": "Completamento strade e piazzole",
+    "start": 1.6,
+    "end": 6.64,
+    "level": 2,
+    "duration": "110 g",
+    "summary": false
+   },
+   {
+    "name": "Trasporto aerogeneratori",
+    "start": 5.5,
+    "end": 8.24,
+    "level": 2,
+    "duration": "60 g",
+    "summary": false
+   },
+   {
+    "name": "Installazione aerogeneratori",
+    "start": 8.44,
+    "end": 10.26,
+    "level": 2,
+    "summary": false,
+    "duration": "408 g"
+   },
+   {
+    "name": "Completamento opere civil e ripristini",
+    "start": 10.29,
+    "end": 11.86,
+    "level": 2,
+    "summary": false,
+    "duration": "358 g"
+   },
+   {
+    "name": "Opere per la connessione alla RTN",
+    "start": 6.81,
+    "end": 7.9,
+    "level": 1,
+    "summary": true,
+    "duration": "258 g"
+   },
+   {
+    "name": "Installazione componenti elettromeccanici",
+    "start": 6.78,
+    "end": 7.87,
+    "level": 2,
+    "summary": false,
+    "duration": "258 g"
+   },
+   {
+    "name": "Montaggi elettromeccanici",
+    "start": 6.9,
+    "end": 7.55,
+    "level": 2,
+    "summary": false,
+    "duration": "158 g"
+   },
+   {
+    "name": "Completamento opere per connessione alla RTN",
+    "start": 7.6,
+    "end": 7.89,
+    "level": 2,
+    "summary": false,
+    "duration": "78 g"
+   },
+   {
+    "name": "Collegamenti elettrici ng",
+    "start": 6.81,
+    "end": 10.05,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Completamento collegamenti elettrici SSE",
+    "start": 6.8,
+    "end": 7.1,
+    "level": 2,
+    "summary": false,
+    "duration": "78 g"
+   },
+   {
+    "name": "Collegamenti elettrici WTG",
+    "start": 8.67,
+    "end": 10.04,
+    "level": 2,
+    "summary": false,
+    "duration": "308 g"
+   },
+   {
+    "name": "Collaudo impianto eolico",
+    "start": 10.27,
+    "end": 10.73,
+    "level": 2,
+    "summary": false,
+    "duration": "108 g"
+   },
+   {
+    "name": "Collaudo linee MT",
+    "start": 10.73,
+    "end": 11.19,
+    "level": 2,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Avviamento impianto",
+    "start": 11.31,
+    "end": 11.65,
+    "level": 1,
+    "summary": true,
+    "duration": "108 g"
+   },
+   {
+    "name": "Avviamento parco eolico",
+    "start": 11.19,
+    "end": 11.64,
+    "level": 2,
+    "summary": true,
+    "duration": "108 g"
+   },
+   {
+    "name": "Riepilogo progetto Attività",
+    "start": 6.26,
+    "end": 7.48,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Data: mar Cardine Cardine esterno",
+    "start": 3.03,
+    "end": 4.17,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Riepilogo Attività inattiva",
+    "start": 3.06,
+    "end": 4.17,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "period",
+  "months": 11.86,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/892748",
+   "page": 5,
+   "document": "Cronoprogramma degli interventi",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "Mese 1",
+     "start": 0,
+     "end": 1
+    },
+    {
+     "label": "Mese 2",
+     "start": 1,
+     "end": 2
+    },
+    {
+     "label": "Mese 3",
+     "start": 2,
+     "end": 3
+    },
+    {
+     "label": "Mese 4",
+     "start": 3,
+     "end": 4
+    },
+    {
+     "label": "Mese 5",
+     "start": 4,
+     "end": 5
+    },
+    {
+     "label": "6",
+     "start": 5,
+     "end": 6
+    },
+    {
+     "label": "7",
+     "start": 6,
+     "end": 7
+    },
+    {
+     "label": "Mese 8",
+     "start": 7,
+     "end": 8
+    },
+    {
+     "label": "9",
+     "start": 8,
+     "end": 9
+    },
+    {
+     "label": "Mese 10",
+     "start": 9,
+     "end": 10
+    },
+    {
+     "label": "Mese 11",
+     "start": 10,
+     "end": 11
+    },
+    {
+     "label": "Mese 12",
+     "start": 11,
+     "end": 12
+    },
+    {
+     "label": "Mese 13",
+     "start": 12,
+     "end": 13
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 giorni (3), 5 giorni (3), 10 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/892673",
+    "page": 41,
+    "document": "Relazione floristico vegetazionale",
+    "excerpt": "§ Durante la fase di corso d’opera ed in fase post-operam sino a 12 mesi dalla chiusura del cantiere, l’intera superficie interessata dai lavori sarà adeguatamente ispezionata da un esperto"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1075677"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/1075677"
+   },
+   {
+    "document": "Cronoprogramma e Stima dei costi sui lavori di dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/1075678"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma in immagine (lettura automatica, da verificare)"
+ },
+ "documentazione": {
+  "documenti": 277,
+  "pagine": 5670,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "AEI WIND PROJECT XVI S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 48.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SUELLI, SELEGAS",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "201 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
