@@ -24,12 +24,13 @@
 .zone-card h2 { margin: 0; font-size: 19px; color: #0f172a; }
 .zone-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .zone-head .small { font-size: 13px; color: #64748b; }
-.near-row { display: grid; grid-template-columns: minmax(0, 2.2fr) 0.7fr minmax(0, 1.4fr) minmax(0, 1.8fr) auto; gap: 12px; align-items: center; padding: 10px 12px; border: 1px solid #e5edf3; border-radius: 12px; font-size: 14px; }
+/* fixed widths for MW, phase and buttons: every row (and the header) lines up even when a project has no card */
+.near-row { display: grid; grid-template-columns: minmax(0, 2fr) 96px 230px minmax(0, 2fr) 150px; gap: 12px; align-items: center; padding: 10px 12px; border: 1px solid #e5edf3; border-radius: 12px; font-size: 14px; }
 .near-row.head { border: 0; padding: 0 12px; font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.04em; }
 .near-row .who { display: block; font-size: 12px; color: #64748b; }
 .near-row .mw { text-align: right; font-weight: 800; }
 .near-row .why { font-size: 12px; color: #334155; }
-.near-row .acts { display: flex; gap: 8px; align-items: center; white-space: nowrap; }
+.near-row .acts { display: flex; gap: 8px; align-items: center; justify-content: flex-end; white-space: nowrap; }
 .near-row .acts a { font-size: 13px; font-weight: 700; }
 .phase-pill { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; }
 .phase-pill.alta { background: #d1fae5; color: #065f46; }
@@ -39,9 +40,9 @@
 
 .zone-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .zone-two > * { min-width: 0; }
-.news-item { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; border-bottom: 1px solid #eef2f6; padding-bottom: 8px; }
+.news-item { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 38%); align-items: start; gap: 12px; font-size: 14px; border-bottom: 1px solid #eef2f6; padding-bottom: 8px; }
 .news-item:last-child { border-bottom: 0; padding-bottom: 0; }
-.news-item .tag { color: #0f766e; font-weight: 700; text-align: right; }
+.news-item .tag { color: #0f766e; font-weight: 700; font-size: 13px; text-align: right; }
 .news-item .tag.done { color: #475569; }
 
 .nat-grid { display: grid; grid-template-columns: 420px minmax(0, 1fr); gap: 20px; align-items: stretch; }
@@ -65,6 +66,7 @@
   .zone-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .zone-two, .nat-grid { grid-template-columns: 1fr; }
   .near-row { grid-template-columns: minmax(0, 1fr) auto; }
+  .near-row .acts { justify-content: flex-start; }
   .near-row.head { display: none; }
   .near-row .why, .near-row .ph { grid-column: 1 / -1; }
   .zone-bar .zone-summary { margin-left: 0; width: 100%; padding-bottom: 0; }
