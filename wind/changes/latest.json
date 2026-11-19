@@ -1,63 +1,228 @@
 {
 "counts": {
-"nuovi": 6,
-"rimossi": 0,
-"modificati": 136,
-"avanzamenti": 9,
-"precedenti": 1159,
-"attuali": 1165
+"nuovi": 0,
+"rimossi": 1,
+"modificati": 88,
+"avanzamenti": 8,
+"precedenti": 1165,
+"attuali": 1164
 },
 "mw": {
-"nuovi": 295.2,
-"rimossi": 0,
-"nuovi_onshore": 295.2,
-"rimossi_onshore": 0
+"nuovi": 0,
+"rimossi": 28.8,
+"nuovi_onshore": 0,
+"rimossi_onshore": 28.8
 },
-"nuovi": [
+"nuovi": [],
+"rimossi": [
 {
-"project_key": "wind:mase_12227",
-"title": "Istanza di Valutazione di Impatto Ambientale nell'ambito dell'Autorizzazione Unica ex art. 9 del D.Lgs. n. 190/2024, per la costruzione ed esercizio di un impianto eolico denominato \"Stigliano XP\" costituito da n. 12 aerogeneratori della po",
-"region": "Basilicata",
-"province": "MT",
-"municipalities": "STIGLIANO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12227",
-"power_mw": 84.0,
-"proponent": "XPower S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Verifica amministrativa",
-"readiness": "",
-"secondaria": false
-},
-{
-"project_key": "wind:mase_12226",
-"title": "Istanza di Valutazione di Impatto Ambientale nell'ambito dell'Autorizzazione Unica ex art. 9 del D.Lgs. n. 190/2024, per la realizzazione di un impianto eolico denominato \"BLUE WIND\", costituito da 12 aerogeneratori di potenza nominale pari",
+"project_key": "wind:basilicata:basilicata_153651",
+"title": "Impianto eolico \"Serra delle ginestre\" di potenza nominale di 28.8 MW nei comuni di Pescopagano e Rapone (PZ) e opere connesse da realizzarsi nei comuni di Pescopagano, Rapone (PZ) e Calitri (AV) - Proponente: F4 Ingegneria srl Società Bene",
 "region": "Basilicata",
 "province": "PZ",
-"municipalities": "PALAZZO SAN GERVASIO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12226",
-"power_mw": 81.6,
-"proponent": "BLUE WIND S.R.L.",
+"municipalities": "Pescopagano, Potenza, Rapone",
+"source_label": "Regione Basilicata",
+"url": "http://valutazioneambientale.regione.basilicata.it/valutazioneambie/detail.jsp?sec=150867&otype=1011&id=153651",
+"power_mw": 28.8,
+"proponent": "F4 Ingegneria srl",
 "project_type": "Eolico",
-"procedure_status": "Verifica amministrativa",
+"procedure_status": "VIA regionale - Anno 2026",
 "readiness": "",
 "secondaria": false
+}
+],
+"modificati": [
+{
+"project_key": "wind:mase_9945",
+"title": "Progetto per la realizzazione di un impianto per la produzione di energia elettrica da fonte rinnovabile eolica, costituito da 9 aerogeneratori, ciascuno di potenza nominale pari a 6,2 MW, per una potenza complessiva di 55,80 MW e da un sis",
+"region": "Lazio",
+"province": "VT",
+"municipalities": "TUSCANIA, TARQUINIA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9945",
+"power_mw": 55.8,
+"proponent": "Sorgenia Renewables S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Parere CTPNRR-PNIEC emesso",
+"readiness": "Media · Avvio possibile entro 12 mesi",
+"secondaria": false,
+"changes": [
+{
+"field": "readiness",
+"label": "Priorità cantiere",
+"old": "",
+"new": "Media · Avvio possibile entro 12 mesi",
+"progress": true
 },
 {
-"project_key": "wind:mase_12041",
-"title": "Progetto di un impianto eolico onshore denominato \"Ripalta\", costituito da n.8 aerogeneratori, ciascuno di potenza nominale pari a 7,2 MW, per una potenza complessiva di 57,6 MW, da realizzarsi nei Comuni di Lesina (FG), Poggio Imperiale (F",
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": true
+},
+{
+"project_key": "wind:mase_9226",
+"title": "Costruzione ed esercizio di un impianto di produzione dell'energia elettrica da fonte eolica avente potenza in immissione pari a 54 MW, costituito da n. 9 aerogeneratori di potenza pari a 6 MW con relativo collegamento alla rete elettrica -",
+"region": "Basilicata",
+"province": "PZ",
+"municipalities": "ALTAMURA, SANTERAMO IN COLLE",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9226",
+"power_mw": 54.0,
+"proponent": "SCS 10 Srl",
+"project_type": "Eolico",
+"procedure_status": "",
+"readiness": "Media · Avvio possibile entro 12 mesi",
+"secondaria": false,
+"changes": [
+{
+"field": "readiness",
+"label": "Priorità cantiere",
+"old": "",
+"new": "Media · Avvio possibile entro 12 mesi",
+"progress": true
+},
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": true
+},
+{
+"project_key": "wind:mase_8538",
+"title": "Progetto di impianto eolico denominato \"Palombino\" composto da n. 9 aerogeneratori, ciascuno con potenza nominale pari a 6 MW, per una potenza complessiva di 54 MW, da installare nei Comuni di Apricena (FG) e San Severo (FG), e delle relati",
 "region": "Puglia",
 "province": "FG",
-"municipalities": "LESINA",
+"municipalities": "APRICENA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12041",
-"power_mw": 57.6,
-"proponent": "NVA 9 S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8538",
+"power_mw": 54.0,
+"proponent": "EDP Renewables Italia Holding s.r.l.",
 "project_type": "Eolico",
-"procedure_status": "Verifica amministrativa, Archiviata",
-"readiness": "",
-"secondaria": false
+"procedure_status": "",
+"readiness": "Media · Avvio possibile entro 12 mesi",
+"secondaria": false,
+"changes": [
+{
+"field": "readiness",
+"label": "Priorità cantiere",
+"old": "",
+"new": "Media · Avvio possibile entro 12 mesi",
+"progress": true
+},
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": true
+},
+{
+"project_key": "wind:mase_10809",
+"title": "Progetto di un impianto eolico denominato \"Tronco\", costituito da 8 aerogeneratori di potenza unitaria pari a 6,6 MW, per una potenza complessiva di 52,8 MW, da realizzarsi nei Comuni di Serracapriola e Torremaggiore (FG), con opere di conn",
+"region": "Puglia",
+"province": "FG",
+"municipalities": "ROTELLO, SERRACAPRIOLA, TORREMAGGIORE",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10809",
+"power_mw": 52.8,
+"proponent": "SKI 12 S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "Media · Avvio possibile entro 12 mesi",
+"secondaria": false,
+"changes": [
+{
+"field": "readiness",
+"label": "Priorità cantiere",
+"old": "",
+"new": "Media · Avvio possibile entro 12 mesi",
+"progress": true
+},
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": true
+},
+{
+"project_key": "wind:mase_11728",
+"title": "[ID_13941 - WEB-VIA FER-VIAVIAF00000462] Istanza per l'avvio del procedimento di Valutazione di Impatto Ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto:Parco eolico denominato \"Energia Montebibico\" di potenza massi",
+"region": "Umbria",
+"province": "TR",
+"municipalities": "SPOLETO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11728",
+"power_mw": 49.6,
+"proponent": "FRED.OLSEN RENEWABLES ITALY S.R.L.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "Media · Avvio possibile entro 12 mesi",
+"secondaria": false,
+"changes": [
+{
+"field": "readiness",
+"label": "Priorità cantiere",
+"old": "",
+"new": "Media · Avvio possibile entro 12 mesi",
+"progress": true
+},
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": true
+},
+{
+"project_key": "wind:mase_11053",
+"title": "Progetto di un impianto eolico composto da 8 aerogeneratori, di potenza nominale pari a 6,2 MW, per una potenza complessiva di 49,6 MW, da realizzarsi nel Comune di Matera (MT), in località \"Masseria Verzellina\", con opere di connessione ri",
+"region": "Basilicata",
+"province": "MT",
+"municipalities": "MATERA, ALTAMURA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11053",
+"power_mw": 49.6,
+"proponent": "ATON 30 S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "Media · Avvio entro 12 mesi",
+"secondaria": false,
+"changes": [
+{
+"field": "readiness",
+"label": "Priorità cantiere",
+"old": "",
+"new": "Media · Avvio entro 12 mesi",
+"progress": true
+},
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": true
 },
 {
 "project_key": "wind:mase_12229",
@@ -71,396 +236,63 @@
 "proponent": "EDISON Rinnovabili S.p.A.",
 "project_type": "Eolico",
 "procedure_status": "Valutazione in corso",
-"readiness": "",
-"secondaria": true
-},
-{
-"project_key": "wind:sardegna:news_16-novembre-2026_paur---impianto-eolico-putifigari-della-potenza-complessiva-di-24mw-nei-comuni-di-putifig",
-"title": "PAUR - Impianto eolico “Putifigari” della potenza complessiva di 24MW nei comuni di Putifigari e Ittiri (SS)",
-"region": "Sardegna",
-"province": "SS",
-"municipalities": "",
-"source_label": "Regione Sardegna",
-"url": "https://portal.sardegnasira.it/-/paur-impianto-eolico-putifigari-della-potenza-complessiva-di-24mw-nei-comuni-di-putifigari-e-ittiri-ss-",
-"power_mw": 24.0,
-"proponent": "",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false
-},
-{
-"project_key": "wind:mase_12222",
-"title": "Valutazione preliminare ai sensi dell'art.6, c.9 e c.9 bis) del D.Lgs. 152/2006 relativa alla modifica del layout del progetto di un impianto eolico ubicato nel territorio comunale di Ascoli Satriano (FG), nelle località Pozzo Spagnuolo, Co",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "DELICETO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12222",
-"power_mw": null,
-"proponent": "Wind Energy Ascoli S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Verifica amministrativa",
-"readiness": "",
-"secondaria": true
-}
-],
-"rimossi": [],
-"modificati": [
-{
-"project_key": "wind:mase_11330",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"Lucera-Margherita\", costituito da 12 aerogeneratori di potenza nominale pari a 6,67 MW, per una potenza complessiva di 80 MW, ricadente nei comuni di Lucera (FG) e Troia (FG), ",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "LUCERA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11330",
-"power_mw": 80.0,
-"proponent": "Margherita S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Parere CTPNRR-PNIEC emesso",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Istruttoria tecnica CTPNRR-PNIEC",
-"new": "Parere CTPNRR-PNIEC emesso",
-"progress": true
-}
-],
-"progress": true
-},
-{
-"project_key": "wind:mase_11015",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"Altamura\", costituito da 10 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 72 MW, da realizzarsi nel Comune di Altamura (BA), incluse le oppor",
-"region": "Puglia",
-"province": "BA",
-"municipalities": "ALTAMURA, MOTTOLA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11015",
-"power_mw": 72.0,
-"proponent": "Alta Wind S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "Media · Avvio possibile entro 12 mesi",
-"secondaria": false,
-"changes": [
-{
-"field": "readiness",
-"label": "Priorità cantiere",
-"old": "",
-"new": "Media · Avvio possibile entro 12 mesi",
-"progress": true
-}
-],
-"progress": true
-},
-{
-"project_key": "wind:mase_11611",
-"title": "Progetto di un impianto eolico denominato \"Parco Eolico Primus\" costituito da 9 aerogeneratori di potenza unitaria di 7,2 MW, per una potenza complessiva di 64,8 MW e relative opere di connessione alla RTN, da realizzarsi nel nei Comuni di ",
-"region": "Calabria",
-"province": "VV",
-"municipalities": "VALLELONGA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11611",
-"power_mw": 64.8,
-"proponent": "WPD PRIMUS S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "Media · Cantiere in corso",
-"secondaria": false,
-"changes": [
-{
-"field": "readiness",
-"label": "Priorità cantiere",
-"old": "",
-"new": "Media · Cantiere in corso",
-"progress": true
-},
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": true
-},
-{
-"project_key": "wind:mase_11834",
-"title": "Progetto di un impianto eolico denominato \"Mesagne - Orsini\", composto da 9 aerogeneratori di potenza nominale pari a 7 MW, per una potenza complessiva di 63 MW, da realizzarsi nei comuni di Mesagne (BR) e Brindisi (BR), incluse le relative",
-"region": "Puglia",
-"province": "BR",
-"municipalities": "MESAGNE, CELLINO SAN MARCO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11834",
-"power_mw": 63.0,
-"proponent": "WPD Orsini S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "Media · Avvio entro 12 mesi",
-"secondaria": false,
-"changes": [
-{
-"field": "readiness",
-"label": "Priorità cantiere",
-"old": "",
-"new": "Media · Avvio entro 12 mesi",
-"progress": true
-},
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": true
-},
-{
-"project_key": "wind:mase_11889",
-"title": "Progetto di nuovo parco eolico denominato \"SV7 BRIC DELLE ROCCHE\", composto da 10 aerogeneratori di potenza nominale pari a 6,2 MW, per una potenza complessiva di 62 MW, da realizzare nei comuni di Dego (SV) e Cairo Montenotte (SV), incluse",
-"region": "Liguria",
-"province": "SV",
-"municipalities": "DEGO, SAVONA, ALTARE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11889",
-"power_mw": 62.0,
-"proponent": "Duferco Sviluppo S.p.A.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "Media · Avvio possibile entro 12 mesi",
-"secondaria": false,
-"changes": [
-{
-"field": "readiness",
-"label": "Priorità cantiere",
-"old": "",
-"new": "Media · Avvio possibile entro 12 mesi",
-"progress": true
-},
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": true
-},
-{
-"project_key": "wind:mase_7838",
-"title": "Progetto per un impianto eolico denominato ATS Alexina composto da 10 aerogeneratori da 6 MW ciascuno per una potenza complessiva di 60 MW, da realizzarsi nei territori comunali di Lesina (FG) e San Paolo Civitate (FG).",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "LESINA, SAN PAOLO CIVITATE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7838",
-"power_mw": 60.0,
-"proponent": "AEP S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "Media · Avvio possibile entro 12 mesi",
-"secondaria": false,
-"changes": [
-{
-"field": "readiness",
-"label": "Priorità cantiere",
-"old": "",
-"new": "Media · Avvio possibile entro 12 mesi",
-"progress": true
-},
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": true
-},
-{
-"project_key": "wind:mase_11879",
-"title": "Progetto di un impianto eolico denominato \"NULVI\", costituito da 10 aerogeneratori, ciascuno dalla potenza di 6 MW e dalla potenza complessiva di 60 MW, e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Nulvi, Mar",
-"region": "Sardegna",
-"province": "SS",
-"municipalities": "NULVI, MARTIS, TERGU, LAERRU",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11879",
-"power_mw": 60.0,
-"proponent": "NULVI S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "Media · Avvio entro 12 mesi",
-"secondaria": false,
-"changes": [
-{
-"field": "readiness",
-"label": "Priorità cantiere",
-"old": "",
-"new": "Media · Avvio entro 12 mesi",
-"progress": true
-},
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": true
-},
-{
-"project_key": "wind:mase_11804",
-"title": "Progetto per la realizzazione di un impianto eolico, denominato \"Sorano Wind\" costituito da otto aerogeneratori della potenza di 7,2 MW ciascuno, per una potenza complessiva di 57,6 MW, da installare nel Comune di Sorano (GR) in località \"V",
-"region": "Toscana",
-"province": "GR",
-"municipalities": "SORANO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11804",
-"power_mw": 57.6,
-"proponent": "Sorano Wind S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "Media · Avvio possibile entro 12 mesi",
-"secondaria": false,
-"changes": [
-{
-"field": "readiness",
-"label": "Priorità cantiere",
-"old": "",
-"new": "Media · Avvio possibile entro 12 mesi",
-"progress": true
-},
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": true
-},
-{
-"project_key": "wind:mase_8800",
-"title": "Nuova realizzazione di un parco eolico a terra e opere funzionali connesse, denominato TREXENTA, formato da n. 7 aerogeneratori di altezza complessiva fuori terra pari a 200 metri e con potenza complessiva di 43,4MW, ubicati nel territorio ",
-"region": "Sardegna",
-"province": "CA",
-"municipalities": "SELEGAS, SEGARIU",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8800",
-"power_mw": 43.4,
-"proponent": "Green Energy Sardegna 2 S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Parere CTPNRR-PNIEC emesso",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Istruttoria tecnica CTPNRR-PNIEC",
-"new": "Parere CTPNRR-PNIEC emesso",
-"progress": true
-}
-],
-"progress": true
-},
-{
-"project_key": "wind:mase_10387",
-"title": "Progetto di un impianto eolico denominato \"Musa\", costituito da 34 aerogeneratori di potenza unitaria di 7,2 MW, per una potenza complessiva di 244,8 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Bonefro, Casacalenda, Mon",
-"region": "Molise",
-"province": "CB",
-"municipalities": "BONEFRO, CASACALENDA, MONACILIONI, RIPABOTTONI, SANT'ELIA A PIANISI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10387",
-"power_mw": 244.8,
-"proponent": "MUSA EOLICA S.R.L",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC, Conclusa",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Verifica amministrativa, Conclusa",
-"new": "Istruttoria tecnica CTPNRR-PNIEC, Conclusa",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_12207",
-"title": "Valutazione preliminare ai sensi dell'art.6, c.9 e c.9 bis) del D.Lgs. 152/2006 relativa alla modifica in riduzione del layout del progetto di un impianto eolico denominato \"Sava - Maruggio\", costituito originariamente da 22 aerogeneratori ",
-"region": "Puglia",
-"province": "BR",
-"municipalities": "ERCHIE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12207",
-"power_mw": 132.0,
-"proponent": "Red Energy S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Valutazione in corso",
-"readiness": "",
 "secondaria": true,
 "changes": [
 {
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Verifica amministrativa",
-"new": "Valutazione in corso",
+"field": "readiness",
+"label": "Priorità cantiere",
+"old": "",
+"new": "Media · Avvio possibile entro 12 mesi",
+"progress": true
+},
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
 "progress": false
 }
 ],
-"progress": false
+"progress": true
 },
 {
-"project_key": "wind:mase_8252",
-"title": "Progetto di un parco eolico denominato \"Eolico Arlena\", di potenza complessiva pari a 84 MW, costituito da 14 aerogeneratori, situato nei Comuni di Tessennano e Arlena di Castro (VT).",
-"region": "Lazio",
-"province": "VT",
-"municipalities": "TESSENNANO, ARLENA DI CASTRO",
+"project_key": "wind:mase_1810",
+"title": "Progetto di ammodernamento parziale del parco eolico, in fase di realizzazione, composto da 15 aerogeneratori da 2,4 MW ciascuno, per una potenza totale di 36 MW, nel comune di Andali (CZ)",
+"region": "Calabria",
+"province": "CZ",
+"municipalities": "ANDALI",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8252",
-"power_mw": 84.0,
-"proponent": "Wind Energy 1 S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1810",
+"power_mw": 36.0,
+"proponent": "Andali Energia S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Conclusa",
+"readiness": "Bassa · In iter autorizzativo",
+"secondaria": false,
+"changes": [
+{
+"field": "readiness",
+"label": "Priorità cantiere",
+"old": "",
+"new": "Bassa · In iter autorizzativo",
+"progress": true
+}
+],
+"progress": true
+},
+{
+"project_key": "wind:mase_9082",
+"title": "Progetto per la produzione di energia elettrica da fonte eolica, denominato \"Energia Is Coris\", costituito da 9 aerogeneratori di potenza complessiva pari a 55,8 MWp, da realizzarsi nei comuni di Villamassargia (CI), Narcao (CI), Musei (CI)",
+"region": "Sardegna",
+"province": "CI",
+"municipalities": "VILLAMASSARGIA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9082",
+"power_mw": 55.8,
+"proponent": "Fred. Olsen Renewables Italy S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "In attesa concerto",
-"readiness": "Media · Avvio possibile entro 12 mesi",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Parere CTPNRR-PNIEC emesso",
-"new": "In attesa concerto",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9678",
-"title": "Progetto di un impianto eolico da 72 MW costituito da 12 aerogeneratori della potenza nominale di 6.0 MW ciascuno, e delle relative opere di connessione alla RTN da realizzarsi nei Comuni di Mandas (CA), Gergei (CA), Villanovafranca (VS), E",
-"region": "Sardegna",
-"province": "CA",
-"municipalities": "MANDAS",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9678",
-"power_mw": 72.0,
-"proponent": "Giudecca Wind S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
 "readiness": "",
 "secondaria": false,
 "changes": [
@@ -475,17 +307,17 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_9709",
-"title": "Progetto di parco eolico \"Escala\", dalla potenza complessiva di 72 MW e delle relative opere di connessione alla RTN da realizzarsi nel Comune di Escalaplano (CA).",
+"project_key": "wind:mase_9754",
+"title": "Progetto di un parco eolico originariamente costituito da 9 aerogeneratori per una potenza complessiva pari a 55,8 MW e successivamente rimodulato in riduzione per un'installazione di 7 aereogeneratori per una potenza complessiva pari a 43,",
 "region": "Sardegna",
-"province": "CA",
-"municipalities": "ESCALAPLANO",
+"province": "SU",
+"municipalities": "SARDARA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9709",
-"power_mw": 72.0,
-"proponent": "Escala Wind S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9754",
+"power_mw": 55.8,
+"proponent": "Asja Serra S.r.l.",
 "project_type": "Eolico",
-"procedure_status": "",
+"procedure_status": "Esame dissenso",
 "readiness": "",
 "secondaria": false,
 "changes": [
@@ -500,15 +332,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_9196",
-"title": "Progetto di un impianto eolico di potenza complessiva di 72 MW, costituito da n.12 aerogeneratori, da realizzarsi nei comuni di Sassari, Stintino e Porto Torres (SS), nelle località \"S'Elicheddu\" e \"Margoneddu\".",
-"region": "Sardegna",
-"province": "SS",
-"municipalities": "SASSARI, STINTINO, PORTO TORRES",
+"project_key": "wind:mase_9774",
+"title": "Progetto per la realizzazione di un impianto eolico, costituito da 9 aerogeneratori di potenza unitaria pari a 6,2 MW, per una potenza complessiva di 55,8 MW, da realizzarsi nei comuni di Biccari (FG) e Troia (FG), incluse le relative opere",
+"region": "Puglia",
+"province": "FG",
+"municipalities": "BICCARI",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9196",
-"power_mw": 72.0,
-"proponent": "PLANET SARDINIA 2 S.R.L.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9774",
+"power_mw": 55.8,
+"proponent": "Sorgenia Renewables S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -525,40 +357,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_7987",
-"title": "Progetto di un impianto per la produzione di energia elettrica a fonte eolica sito nel comune di Altamura (BA) ed opere di interconnessione nel comune di Altamura e Gravina di Puglia (BA) costituito da 12 aereogeneratori della potenza unita",
-"region": "Puglia",
-"province": "BA",
-"municipalities": "ALTAMURA, GRAVINA DI PUGLIA",
+"project_key": "wind:mase_10294",
+"title": "Progetto di un impianto eolico costituito da 10 aerogeneratori con potenza complessiva di 55 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Riccia (CB), Tufara (CB), Gambatesa(CB), Castelpagano(BN).",
+"region": "Molise",
+"province": "CB",
+"municipalities": "RICCIA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7987",
-"power_mw": 72.0,
-"proponent": "Wpd altilia srl",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9729",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"Impianto Guagnano\", costituito da 12 aerogeneratori della potenza unitaria di 6 MW, per una potenza complessiva pari a 72 MW, incluso un sistema di accumulo integrato con poten",
-"region": "Puglia",
-"province": "LE",
-"municipalities": "GUAGNANO, CELLINO SAN MARCO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9729",
-"power_mw": 72.0,
-"proponent": "Enel Green Power Puglia S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10294",
+"power_mw": 55.0,
+"proponent": "EN.IT S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -575,40 +382,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_9765",
-"title": "Progetto per la realizzazione di un impianto di produzione di energia elettrica mediante lo sfruttamento del vento, costituito da n. 15 aerogeneratori di potenza unitaria pari a 4,7 MW, per una potenza complessiva di 70,5 MW, da realizzarsi",
+"project_key": "wind:mase_10290",
+"title": "Progetto per la realizzazione di un impianto eolico denominato \"Agrifoglio\", costituito da 9 aerogeneratori, di cui 6 da 6 MW e 3 da 6,2 MW, per una potenza complessiva dell'impianto pari a 54,6 MW, da realizzarsi nei comuni di Atella (PZ) ",
 "region": "Basilicata",
 "province": "PZ",
-"municipalities": "VENOSA",
+"municipalities": "ATELLA, AVIGLIANO",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9765",
-"power_mw": 70.5,
-"proponent": "AREN Green S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9628",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"Piano Madama Giulia\", costituito da 15 aerogeneratori della potenza unitaria di 4,7 MW, per una potenza complessiva pari a 70,5 MW, da realizzarsi nei comuni di Spinazzola (BT)",
-"region": "Puglia",
-"province": "BT",
-"municipalities": "SPINAZZOLA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9628",
-"power_mw": 70.5,
-"proponent": "AREN Green S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10290",
+"power_mw": 54.6,
+"proponent": "RIPAWIND S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -625,15 +407,165 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_9574",
-"title": "Progetto di un impianto eolico, denominato \"PARCO EOLICO SANTERAMO\", costituito da n. 11 aerogeneratori con potenza unitaria di 6,4 MW, per una potenza complessiva pari a 70,4 MW, da realizzarsi nel Comune di Santeramo in Colle (BA) con le ",
+"project_key": "wind:mase_10233",
+"title": "Progetto per la realizzazione di un impianto eolico denominato \"Wind 1\", costituito da 8 aerogeneratori di potenza unitaria di 6,8 MW, per una potenza complessiva d'impianto pari a 54,4 MW, da realizzarsi nel Comune di Foggia (FG) in locali",
+"region": "Puglia",
+"province": "FG",
+"municipalities": "FOGGIA, LUCERA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10233",
+"power_mw": 54.4,
+"proponent": "Progetto UNO S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Parere CTPNRR-PNIEC emesso",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9084",
+"title": "Progetto di un impianto eolico denominato \"Energia Monte Pizzinnu\", costituito da n. 8 turbine di potenza complessiva di 54,4 MW, da realizzarsi nei comuni di Bessude, Borutta, Ittiri, Thiesi (SS).",
+"region": "Sardegna",
+"province": "SS",
+"municipalities": "BESSUDE, BORUTTA, ITTIRI, THIESI",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9084",
+"power_mw": 54.4,
+"proponent": "Fred. Olsen Renewables Italy S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10477",
+"title": "Progetto di un impianto eolico, denominato \"Portella di Naro\", costituito da 9 aerogeneratori di potenza unitaria 6,00 MW, per una potenza complessiva di 54,00 MW, e opere di connessione alla RTN, da realizzarsi nei Comuni di Campobello di ",
+"region": "Sicilia",
+"province": "AG",
+"municipalities": "CAMPOBELLO DI LICATA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10477",
+"power_mw": 54.0,
+"proponent": "EDISON Rinnovabili S.p.A.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10489",
+"title": "Progetto per la realizzazione di un impianto eolico denominato \"PARCO EOLICO CALTAGIRONE\" di potenza nominale pari a 54,00 MW con un sistema di accumulo integrato da 36,00 MW e relative opere di connessione alla rete di distribuzione, da re",
+"region": "Sicilia",
+"province": "CT",
+"municipalities": "CALTAGIRONE, MINEO, AIDONE, RAMACCA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10489",
+"power_mw": 54.0,
+"proponent": "WIND ENERGY CALTAGIRONE S.R.L.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9662",
+"title": "Progetto di un impianto eolico denominato \"CE FULGATORE\", costituito da 9 aerogeneratori, con potenza complessiva pari a 54 MW, da realizzarsi nei comuni di Paceco (TP), di Trapani (TP) e di Marsala (TP).",
+"region": "Sicilia",
+"province": "TP",
+"municipalities": "PACECO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9662",
+"power_mw": 54.0,
+"proponent": "AEI WIND PROJECT II S.R.L.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10772",
+"title": "Progetto di un impianto eolico denominato \"Albano\", costituito da 9 aerogeneratori di potenza nominale pari a 6 MW, per una potenza complessiva di 54 MW, da realizzarsi nel Comune di Albano di Lucania (PZ) e Tricarico (MT), con opere di con",
 "region": "Basilicata",
 "province": "MT",
-"municipalities": "SANTERAMO IN COLLE, MATERA",
+"municipalities": "ALBANO DI LUCANIA, TOLVE",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9574",
-"power_mw": 70.4,
-"proponent": "IBERDROLA RENOVABLES ITALIA S.p.A.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10772",
+"power_mw": 54.0,
+"proponent": "Clean Energy Prime S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10412",
+"title": "Progetto per la realizzazione di un impianto eolico da 54 MW composto da n. 9 aerogeneratori ricadenti nei Comuni di Ripabottoni, Sant'Elia a Pianisi, Monacilioni e Morrone Del Sannio, in Provincia di Campobasso, e delle relative opere ed i",
+"region": "Molise",
+"province": "CB",
+"municipalities": "RIPABOTTONI, SANT'ELIA A PIANISI, MONACILIONI, MORRONE DEL SANNIO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10412",
+"power_mw": 54.0,
+"proponent": "EN.IT S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "",
 "readiness": "",
@@ -650,14 +582,364 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_11435",
-"title": "Progetto di un impianto per la produzione di energia elettrica da fonte eolica denominato \"Bruzio\", di potenza pari a 70 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di San Fili, San Lucido, Marano Principato",
-"region": "Calabria",
-"province": "CS",
-"municipalities": "SAN FILI, SAN LUCIDO, MARANO PRINCIPATO, CERISANO",
+"project_key": "wind:mase_11262",
+"title": "Progetto di un impianto eolico denominato \"Donna Marianna\", costituito da 9 aerogeneratori di potenza nominale pari a 6 MW, per una potenza complessiva di 54 MW, da realizzarsi nei comuni di Acerenza (PZ) e Oppido Lucano (PZ), e delle relat",
+"region": "Basilicata",
+"province": "PZ",
+"municipalities": "ACERENZA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11435",
-"power_mw": 70.0,
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11262",
+"power_mw": 54.0,
+"proponent": "AREN Green S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_8509",
+"title": "Progetto di un impianto eolico denominato \"Parco eolico di Ittiri\" costituito da n. 9 aerogeneratori con potenza unitaria di 6 MW, per una potenza complessiva di 54 MW, e delle relative opere di connessione alla RTN, da realizzarsi nei Comu",
+"region": "Sardegna",
+"province": "SS",
+"municipalities": "ITTIRI",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8509",
+"power_mw": 54.0,
+"proponent": "Infrastrutture S.p.a.",
+"project_type": "Eolico",
+"procedure_status": "",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10193",
+"title": "Progetto \"Impianto eolico di Telti\", dalla potenza di 54 MW con opere di connessione alla RTN, nei comuni di Telti e Calangianus (SS)",
+"region": "Sardegna",
+"province": "SS",
+"municipalities": "TELTI, CALANGIANUS",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10193",
+"power_mw": 54.0,
+"proponent": "Enel Green Power Italia S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_7592",
+"title": "Progetto di un impianto eolico denominato \"San Pancrazio Wind\" composto da 9 aerogeneratori di potenza nominale pari a 6 MW, per una potenza complessiva di 54 MW ricadenti nei comuni di San Pancrazio Salentino, Mesagne e Torre Santa Susanna",
+"region": "Puglia",
+"province": "BR",
+"municipalities": "SAN PANCRAZIO SALENTINO, MESAGNE, TORRE SANTA SUSANNA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7592",
+"power_mw": 54.0,
+"proponent": "SCS 03 S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_7753",
+"title": "Progetto di un impianto eolico composto da 9 aerogeneratori della potenza nominale di 6 MW, e della potenza complessiva di 54 MW e delle relative opere di connessione da realizzarsi nel Comune di Serracapriola (FG) e Rotello (CB).",
+"region": "Molise",
+"province": "CB",
+"municipalities": "SERRACAPRIOLA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7753",
+"power_mw": 54.0,
+"proponent": "Repower Renewable S.p.A.",
+"project_type": "Eolico",
+"procedure_status": "",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11625",
+"title": "Progetto per la realizzazione di un impianto eolico denominato \"Casalvecchio\", costituito da 9 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva di 54 MW, da realizzarsi nel Comune di Casalvecchio di Puglia (FG), c",
+"region": "Puglia",
+"province": "FG",
+"municipalities": "CASALVECCHIO DI PUGLIA, TORREMAGGIORE",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11625",
+"power_mw": 54.0,
+"proponent": "NCD - Divisione Eolica S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9620",
+"title": "Istanza per l'avvio del procedimento di Valutazione di Impatto ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto di un impianto eolico costituito da n. 9 aerogeneratori, di potenza nominale singola pari a 6 MW per un",
+"region": "Basilicata",
+"province": "MT",
+"municipalities": "",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9620",
+"power_mw": 54.0,
+"proponent": "Hergo Renewables S.p.a.",
+"project_type": "Eolico",
+"procedure_status": "Sospeso su richiesta del Proponente",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9797",
+"title": "COSTRUZIONE ED ESERCIZIO DI UN IMPIANTO DI PRODUZIONE DELL'ENERGIA ELETTRICA DA FONTE EOLICA AVENTE POTENZA IN IMMISSIONE PARI A 54 MW CON RELATIVO COLLEGAMENTO ALLA RETE ELETTRICA - IMPIANTO DENOMINATO \"BADIA WIND\" UBICATO IN AGRO DEL COMU",
+"region": "Puglia",
+"province": "TA",
+"municipalities": "BADIA TEDALDA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9797",
+"power_mw": 54.0,
+"proponent": "SCS 09 s.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Conclusa",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9558",
+"title": "Progetto di un impianto eolico costituito da n. 8 aerogeneratori, per una potenza complessiva di 52,8 MW, da realizzarsi nei comuni di Montecilfone (CB), Palata (CB) e Guglionesi (CB), in località \"STAFFIGLIONE\".",
+"region": "Molise",
+"province": "CB",
+"municipalities": "MONTECILFONE",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9558",
+"power_mw": 52.8,
+"proponent": "Q-ENERGY RENEWABLES 2 S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10617",
+"title": "Progetto di un impianto eolico costituito da n.8 aerogeneratori per una potenza complessiva di 52,80 MW, denominato \"Caterina II\" e delle relative opere di connessione alla RTN, da realizzare nei Comuni di Caltavuturo, Polizzi Generosa, Cas",
+"region": "Sicilia",
+"province": "PA",
+"municipalities": "CALTAVUTURO, POLIZZI GENEROSA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10617",
+"power_mw": 52.8,
+"proponent": "AEI WIND PROJECT XI S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10656",
+"title": "Progetto di parco eolico \"Buddusò Sud I\" dalla potenza di 52,8 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Buddusò (OT) e Alà dei Sardi (OT).",
+"region": "Sardegna",
+"province": "SS",
+"municipalities": "BUDDUSÒ",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10656",
+"power_mw": 52.8,
+"proponent": "AEI WIND PROJECT XII S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Sospeso su richiesta del Proponente",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9203",
+"title": "Progetto di un impianto eolico denominato \"TARQUINIA\", composto da 8 aerogeneratori aventi potenza unitaria di 6,6 MW e potenza complessiva di 52,8 MW, da realizzarsi nei comuni di Tarquinia (VT) e Tuscania (VT).",
+"region": "Lazio",
+"province": "VT",
+"municipalities": "TARQUINIA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9203",
+"power_mw": 52.8,
+"proponent": "SKI 31 S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9309",
+"title": "Istanza per l'avvio del procedimento di Valutazione di Impatto Ambientale, ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto di un impianto per la produzione di energia elettrica da fonte eolica sito nei comuni di Guadagno (LE)",
+"region": "Puglia",
+"province": "BR",
+"municipalities": "GUADAGNO, SAN PANCRAZIO SALENTINO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9309",
+"power_mw": 52.8,
+"proponent": "wpd Salentina s.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9721",
+"title": "Progetto di un impianto eolico \"Siliqua Wind\" costituito da n. 8 aerogeneratori da 6,6 MW ciascuno per una potenza complessiva di 52,8 MW in località Tanca Romita - SP 88 - SS 136 per Musei nei Comuni di Siliqua (CA) e Musei (CI).",
+"region": "Sardegna",
+"province": "CI",
+"municipalities": "SILIQUA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9721",
+"power_mw": 52.8,
+"proponent": "Siliqua S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10363",
+"title": "Progetto per la costruzione ed esercizio di un impianto eolico composto da n. 8 aerogeneratori di potenza unitaria pari a 6,6 MW, per una potenza complessiva pari a 52,8 MW, denominato \"Cesepiano\" localizzato nei Comuni di Tufara (CB) e Gam",
+"region": "Molise",
+"province": "CB",
+"municipalities": "TUFARA, RICCIA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10363",
+"power_mw": 52.8,
 "proponent": "RWE Renewables Italia S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
@@ -675,65 +957,265 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_10084",
-"title": "Progetto definitivo per la realizzazione di un parco eolico composto da 11 aerogeneratori per una potenza complessiva di 68,4 MW nei comuni di Guamaggiore e Selegas (CA) e relative opere di connessione alla RTN.",
-"region": "Sardegna",
-"province": "CA",
-"municipalities": "GUAMAGGIORE, SELEGAS",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10084",
-"power_mw": 68.4,
-"proponent": "Loto Rinnovabili S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8848",
-"title": "Progetto di impianto di produzione di energia elettrica da fonte eolica, costituito da 11 aerogeneratori di potenza unitaria pari a 6,2 MW, per una potenza complessiva di 68,2 MW, da realizzarsi nei Comuni di Bovino e di Orsara di Puglia (F",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "BOVINO, DI ORSARA DI PUGLIA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8848",
-"power_mw": 68.2,
-"proponent": "Engie Eolica Lavella S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_7969",
-"title": "Progetto di un impianto eolico composto da n.11 aerogeneratori, ciascuno della potenza nominale di 6,2 MW, e della potenza complessiva pari a 68,2 MW, e delle relative opere di connessione alla RTN in corrispondenza della SE TERNA di Rotell",
+"project_key": "wind:mase_9897",
+"title": "Progetto di un impianto eolico denominato \"Sant'Elia\", costituito da 8 aerogeneratori da 6,6 MW, per una potenza complessiva di 52,8 MW, localizzato nei comuni di Casacalenda (CB), Ripabottoni (CB), Sant'Elia a Pianisi (CB) e Morrone del Sa",
 "region": "Molise",
 "province": "CB",
-"municipalities": "SAN GIULIANO DI PUGLIA",
+"municipalities": "CASACALENDA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7969",
-"power_mw": 68.2,
-"proponent": "Fred. Olsen Renewables Italy S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9897",
+"power_mw": 52.8,
+"proponent": "RWE Renewables Italia S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10535",
+"title": "Costruzione ed esercizio di un impianto di produzione di energia elettrica da fonte eolica \"FIORA\" di potenza nominale pari a 52,8 MW, da realizzarsi nel comune di Manciano (GR) e delle opere ed infrastrutture connesse.",
+"region": "Toscana",
+"province": "GR",
+"municipalities": "MANCIANO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10535",
+"power_mw": 52.8,
+"proponent": "Apollo Wind S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11524",
+"title": "Progetto di un impianto eolico costituito da 10 aerogeneratori di potenza unitaria 5,28 MW, per una potenza complessiva di 52,8 MW e opere di connessione alla RTN, da realizzarsi in località \"Masseria Gallina di Sotto\", nei Comuni di Guglio",
+"region": "Molise",
+"province": "CB",
+"municipalities": "GUGLIONESI",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11524",
+"power_mw": 52.8,
+"proponent": "CUBICO DANIEL S.R.L.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11180",
+"title": "Progetto di un parco eolico denominato \"Serra e mesu\", composto da n. 7 aerogeneratori della potenza nominale di 7.2 MW ciascuno e avente potenza complessiva di di 50.4 MWp e relative opere di connessione alla RTN, da realizzarsi nei Comuni",
+"region": "Sardegna",
+"province": "OR",
+"municipalities": "MOGORELLA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11180",
+"power_mw": 50.4,
+"proponent": "WPD SERRA E MESU S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9921",
+"title": "Progetto per la realizzazione di un impianto eolico composto da 7 aerogeneratori per una potenza complessiva di 50,4 MW collocato nel territorio del Comune di Trinitapoli (BT) in località \"Chiavicella Grande\", con opere di connessione ricad",
+"region": "Puglia",
+"province": "BT",
+"municipalities": "TRINITAPOLI",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9921",
+"power_mw": 50.4,
+"proponent": "Q-ENERGY RENEWABLES 2 S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9903",
+"title": "Progetto per la realizzazione di un impianto eolico, costituito da 7 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 50,4 MW, da realizzarsi nei comuni di Turi (BA), Casamassima (BA) e Rutigliano (BA), inclu",
+"region": "Puglia",
+"province": "BA",
+"municipalities": "TURI",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9903",
+"power_mw": 50.4,
+"proponent": "Turi Baronessa S.r.l. (ex. Santa Rita Energia S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11667",
+"title": "[ID_13833]Progetto per la realizzazione di un impianto eolico da 50,4 MW costituito da 7 aerogeneratori di potenza unitaria pari a 7,2 MW da installare nella regione Lazio nei comuni di Grotte di Castro (VT), Acquapendente (VT) con opere di",
+"region": "Lazio",
+"province": "VT",
+"municipalities": "CASTEL GIORGIO, GROTTE DI CASTRO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11667",
+"power_mw": 50.4,
+"proponent": "Q-ENERGY RENEWABLES 2 S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11270",
+"title": "Progetto per la realizzazione di un impianto eolico costituito da 7 (ex. 9) aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 50,4 MW (ex. 64,8 MW), da realizzarsi nei comuni di Montefiascone (VT), Vitorchiano",
+"region": "Lazio",
+"province": "VT",
+"municipalities": "BOMARZO, MONTEFIASCONE",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11270",
+"power_mw": 50.4,
+"proponent": "Q-ENERGY RENEWABLES 2 S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11671",
+"title": "Progetto di un impianto eolico denominato \"Parco Eolico Bonifati\" costituito da 8 aerogeneratori di potenza unitaria 6,3 MW, per una potenza complessiva di 50,4 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Bonifati, Fagn",
+"region": "Calabria",
+"province": "CS",
+"municipalities": "BONIFATI, FAGNANO CASTELLO, CETRARO, SANT'AGATA DI ESARO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11671",
+"power_mw": 50.4,
+"proponent": "HAIZEA GREEN S.R.L.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11831",
+"title": "Progetto di un impianto per la produzione di energia elettrica da fonte eolica mediante l'installazione di n. 7 aerogeneratori, ciascuno con potenza massima pari a 7,2MW, per una potenza complessiva dell'impianto pari a 50,4MW, ubicato in p",
+"region": "Abruzzo",
+"province": "CH",
+"municipalities": "MONTEODORISIO, FRESAGRANDINARIA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11831",
+"power_mw": 50.4,
+"proponent": "WPD Ferrato S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_7492",
+"title": "Progetto si un impianto eolico denominato \"Ischinditta\" composto da 9 aerogeneratori ciascuno della potenza nominale di 5,6 MW, per una potenza complessiva di 50,4 MW, ricadente nel territorio comunale di Ozieri (SS), Chiaramonti (SS), Erul",
+"region": "Sardegna",
+"province": "SS",
+"municipalities": "",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7492",
+"power_mw": 50.4,
+"proponent": "GRVDEP Energia S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "",
 "readiness": "",
@@ -750,15 +1232,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_11189",
-"title": "Progetto di un parco eolico dalla potenza complessiva di 68,2 MWp, composto n. 11 aereogeneratori e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Nuraminis, Samatzai, Ussana, Furtei e Sanluri (SU)",
-"region": "Sardegna",
-"province": "SU",
-"municipalities": "NURAMINIS, SAMATZAI, USSANA, FURTEI, SANLURI",
+"project_key": "wind:mase_10790",
+"title": "Progetto per la realizzazione di un parco eolico denominato \"Parco eolico di Manciano\", per la produzione di energia elettrica da fonte eolica di potenza complessiva 50,4 MW sito in Manciano (GR) e le relative opere di connessione per l'imm",
+"region": "Toscana",
+"province": "GR",
+"municipalities": "MANCIANO",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11189",
-"power_mw": 68.2,
-"proponent": "BALTEX SARDEGNA 15 NURAMINIS S.r.l",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10790",
+"power_mw": 50.4,
+"proponent": "Gruppo Visconti Manciano S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -775,14 +1257,89 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_10735",
-"title": "Parco eolico composto da 10 aerogeneratori di potenza nominale pari a 6.8 MW, per una potenza complessiva di 68 MW sito nel Comune di Seui (OG).",
+"project_key": "wind:mase_11944",
+"title": "Progetto di un impianto eolico denominato \"Foligno\" costituito da 7 areogeneratori con potenza complessiva di 50,4 MW da realizzare nel Comune di Foligno (PG) con un sistema di accumulo da 20 MW e relative opere di connessione nel Comune di",
+"region": "Umbria",
+"province": "PG",
+"municipalities": "FOLIGNO, SERRAVALLE DI CHIENTI",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11944",
+"power_mw": 50.4,
+"proponent": "Sorgenia Renewables S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10756",
+"title": "Progetto di un impianto eolico denominato \"Masseria Terlecchia Piccola\", costituito da 7 aerogeneratori di potenza nominale pari a 7,2 MW, per una potenza complessiva di 50,4 MW, e delle relative opere di connessione alla RTN, da realizzars",
+"region": "Basilicata",
+"province": "MT",
+"municipalities": "MATERA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10756",
+"power_mw": 50.4,
+"proponent": "E-WAY 7 S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10665",
+"title": "Progetto di un impianto eolico composto da n. 7 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 50,4 MW, e da un sistema di accumulo di energia (bess) di potenza pari a 18 MW, da realizzarsi nel Comune di To",
+"region": "Puglia",
+"province": "BR",
+"municipalities": "TORCHIAROLO, SAN PIETRO VERNOTICO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10665",
+"power_mw": 50.4,
+"proponent": "Torchiarolo Valesio S.r.l. (ex. Santa Chiara Energia S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10557",
+"title": "Parco Eolico da 50,4 MW composto da 7 turbine e relative opere di connessione alla RTN situato nel Comune di Isili (SU)",
 "region": "Sardegna",
 "province": "SU",
-"municipalities": "SEUI",
+"municipalities": "ISILI",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10735",
-"power_mw": 68.0,
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10557",
+"power_mw": 50.4,
 "proponent": "Sardeolica S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
@@ -800,814 +1357,14 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_9067",
-"title": "Progetto di impianto eolico denominato \"Montarzo\", costituito da 11 aerogeneratori di potenza nominale di 6,18 MW e potenza complessiva di 68 MW, da realizzarsi nei comuni di Onano (VT), Acquapendente (VT) e Castel Giorgio (TR).",
-"region": "Lazio",
-"province": "VT",
-"municipalities": "ONANO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9067",
-"power_mw": 68.0,
-"proponent": "Fri-el S.p.a.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10532",
-"title": "Progetto di integrale ricostruzione di un impianto eolico composto da 10 aerogeneratori di potenza unitaria 6,6 MW per una potenza complessiva di 66,6 MW e relative opere di connessione alla RTN nel Comune di Foiano di Val Fortore (BN) in l",
-"region": "Campania",
-"province": "BN",
-"municipalities": "FOIANO DI VAL FORTORE, MONTEFALCONE DI VAL FORTORE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10532",
-"power_mw": 66.6,
-"proponent": "EDISON Rinnovabili S.p.A.",
-"project_type": "Eolico",
-"procedure_status": "Necessita di ulteriori valutazioni ambientali",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11674",
-"title": "Progetto di un impianto eolico costituito da 9 aerogeneratori di potenza unitaria 7,2 MW, per una potenza complessiva di 66 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Salemi, Marsala e Trapani (TP).",
-"region": "Sicilia",
-"province": "TP",
-"municipalities": "SALEMI, MARSALA, TRAPANI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11674",
-"power_mw": 66.0,
-"proponent": "Energia Levante S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10028",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"Capece\", costituito da 10 aerogeneratori di potenza unitaria di 6,6 MW, per una potenza complessiva d'impianto pari a 66 MW, da realizzarsi nei comuni di Francavilla Fontana (B",
+"project_key": "wind:mase_11472",
+"title": "Progetto di un impianto eolico denominato \"PE_Campi\", costituito da 7 aerogeneratori di potenza nominale pari a 7,2 MW, per una potenza complessiva di 50,4 MW, e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Gua",
 "region": "Puglia",
-"province": "BR",
-"municipalities": "FRANCAVILLA FONTANA",
+"province": "LE",
+"municipalities": "GUAGNANO",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10028",
-"power_mw": 66.0,
-"proponent": "Brown Energy S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10703",
-"title": "Progetto definitivo di impianto eolico \"CE Nuoro Sud\" con potenza complessiva di 66 MW e opere connesse, nei comuni di Orani, Orgosolo e Nuoro",
-"region": "Sardegna",
-"province": "NU",
-"municipalities": "ORANI, ORGOSOLO, NUORO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10703",
-"power_mw": 66.0,
-"proponent": "AEI WIND PROJECT VIII S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Sospeso su richiesta del Proponente",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11507",
-"title": "Progetto di un impianto eolico denominato \"Parco Eolico dell'Angitola\" costituito da 11 aerogeneratori di potenza nominale pari a 6,0 MW, per una potenza complessiva di 66,00 MW, da realizzarsi nei Comuni di Capistrano (VV), San Vito sullo ",
-"region": "Calabria",
-"province": "VV",
-"municipalities": "CAPISTRANO, FILOGASO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11507",
-"power_mw": 66.0,
-"proponent": "PARCO EOLICO DELL'ANGITOLA S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8442",
-"title": "Progetto per realizzazione di un impianto eolico, denominato \"Montemilone Wind\", composto da n. 11 aerogeneratori di potenza nominale pari a 6 MW, per una potenza complessiva di 66 MW, e delle relative opere di connessione alla RTN, da real",
-"region": "Basilicata",
-"province": "PZ",
-"municipalities": "MONTEMILONE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8442",
-"power_mw": 66.0,
-"proponent": "Enel Green Power Solar Energy S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9451",
-"title": "Progetto di parco eolico denominato \"Aregu\", di potenza massima complessiva di 66 MW, localizzato nei Comuni di Giave, Cossoine, Cheremule (SS) e relative opere di connessione alla RTN",
-"region": "Sardegna",
-"province": "SS",
-"municipalities": "GIAVE, COSSOINE, CHEREMULE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9451",
-"power_mw": 66.0,
-"proponent": "Aregu Wind S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Potere sostitutivo",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11210",
-"title": "Progetto di un impianto eolico denominato \"GRAVINA IN PUGLIA\", composto da 10 aerogeneratori di potenza nominale pari a 6,6 MW, per una potenza complessiva di 66 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel Comune ",
-"region": "Puglia",
-"province": "BA",
-"municipalities": "GRAVINA IN PUGLIA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11210",
-"power_mw": 66.0,
-"proponent": "GAMMANRG S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10413",
-"title": "Progetto di un impianto eolico denominato \"Turrumè\", costituito da 11 aerogeneratori di potenza unitaria di 6 MW, per una potenza complessiva di 66 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Polizzi Generosa (PA), Cast",
-"region": "Sicilia",
-"province": "PA",
-"municipalities": "POLIZZI GENEROSA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10413",
-"power_mw": 66.0,
-"proponent": "EDISON Rinnovabili S.p.A.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8678",
-"title": "Progetto di un impianto eolico denominato \"TURSI SANT'ARCANGELO\" costituito da 11 aerogeneratori della potenza nominale pari a 6 MW, per una potenza complessiva dell' impianto pari a 66 MW, integrato a un sistema di accumulo energia elettri",
-"region": "Basilicata",
-"province": "PZ",
-"municipalities": "ALIANO, TURSI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8678",
-"power_mw": 66.0,
-"proponent": "ENERGY PRIME S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11055",
-"title": "Progetto per la realizzazione di un impianto eolico, costituito da 10 aerogeneratori di potenza unitaria pari a 6,6 MW, per una potenza complessiva di 66 MW, da realizzarsi nei comuni di Canosa di Puglia (BT) e Minervino (BT), nelle localit",
-"region": "Puglia",
-"province": "BT",
-"municipalities": "ANDRIA, CANOSA DI PUGLIA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11055",
-"power_mw": 66.0,
-"proponent": "NPD Italia II S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9104",
-"title": "Progetto di un impianto eolico denominato \"PARCO EOLICO DI CARBONIA\", costituito da 11 aerogeneratori con potenza unitaria di 6 MW, per una potenza complessiva di impianto di 66MW, da realizzarsi nei comuni di Carbonia, Iglesias e Gonnesa (",
-"region": "Sardegna",
-"province": "CI",
-"municipalities": "CARBONIA, IGLESIAS, GONNESA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9104",
-"power_mw": 66.0,
-"proponent": "IBERDROLA RENOVABLES ITALIA S.p.A.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8429",
-"title": "Progetto un impianto eolico denominato \"Parco eolico Samassi-Serrenti\" costituito da n. 11 aereogeneratori con potenza unitaria di 6 MW, per una potenza complessiva di 66 MW, da realizzarsi nei comuni di Samassi (VS) e Serrenti (VS).",
-"region": "Puglia",
-"province": "TA",
-"municipalities": "SAMASSI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8429",
-"power_mw": 66.0,
-"proponent": "Sorgenia Renewables S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11328",
-"title": "Progetto di un impianto eolico denominato \" Contrada Macario\", costituito da 10 aerogeneratori di potenza nominale pari a 6,6 MW, per una potenza complessiva di 66 MW, da realizzarsi nei comuni di Barletta (BT), Andria (BT) e Trani (BT), e ",
-"region": "Puglia",
-"province": "BT",
-"municipalities": "BARLETTA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11328",
-"power_mw": 66.0,
-"proponent": "OCHER ENERGY S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10405",
-"title": "Progetto di un impianto per la produzione di energia elettrica da fonte eolica, denominato \"Parco Eolico Abruzzo\", sito nei comuni di Cupello (CH), Fresagrandinaria (CH), Palmoli (CH), Tufillo (CH) e Furci (CH), di potenza totale pari a 66 ",
-"region": "Abruzzo",
-"province": "CH",
-"municipalities": "CUPELLO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10405",
-"power_mw": 66.0,
-"proponent": "Sviluppo Prime S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9457",
-"title": "Procedimento di Valutazione di Impatto Ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto per la realizzazione di un parco eolico sul Monte Pelao nei Comuni di Borutta, Bonnanaro, Bessude e Siligo (prov. Di Sassari) e",
-"region": "Sardegna",
-"province": "SS",
-"municipalities": "",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9457",
-"power_mw": 66.0,
-"proponent": "IVPC POWER 8 S.p.A.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9804",
-"title": "Progetto di un impianto eolico, denominato \"CE Partanna III\", costituito da 11 aerogeneratori, con potenza complessiva pari a 66 MW, da realizzarsi nei comuni di Calatafimi-Segesta (TP), Salemi (TP), Vita (TP), e delle relative opere di con",
-"region": "Sicilia",
-"province": "TP",
-"municipalities": "SANTA NINFA, CALATAFIMI-SEGESTA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9804",
-"power_mw": 66.0,
-"proponent": "AEI WIND PROJECT V S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11912",
-"title": "Progetto di un impianto eolico denominato \"Tolve 2\", costituito da 10 aerogeneratori di potenza nominale pari a 6,6 MW, per una potenza complessiva di 66 MW, da realizzarsi nel Comune di Tolve (PZ), con opere di connessione alla RTN ricaden",
-"region": "Basilicata",
-"province": "PZ",
-"municipalities": "TOLVE, OPPIDO LUCANO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11912",
-"power_mw": 66.0,
-"proponent": "Tulbium Wind Farm 2 S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11875",
-"title": "Progetto di un impianto eolico denominato \"Parco eolico dello Jato\", di potenza complessiva pari a 65 MW, e delle relative opere di connessione alla RTN, da realizzare nel Comune di Partinico (PA), in Contrada Bosco e Contrada Tammì, e nel ",
-"region": "Sicilia",
-"province": "PA",
-"municipalities": "PARTINICO, MONREALE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11875",
-"power_mw": 65.0,
-"proponent": "S&P 16 A S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9994",
-"title": "Progetto per la realizzazione di un impianto eolico, costituito da 9 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva d'impianto di 64,8 MW, integrato con un sistema di accumulo da 41,6 MW, da realizzarsi nei co",
-"region": "Puglia",
-"province": "BA",
-"municipalities": "CONVERSANO, TURI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9994",
-"power_mw": 64.8,
-"proponent": "Repower Renewable S.p.A.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10657",
-"title": "Progetto per la realizzazione di un parco eolico per la produzione di energia elettrica da fonte rinnovabile costituito da n. 9 aerogeneratori di potenza nominale di 7,2 MW cadauno per una potenza di picco 64,8 MWp e opere di connessione al",
-"region": "Sardegna",
-"province": "SS",
-"municipalities": "POZZOMAGGIORE, SINDIA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10657",
-"power_mw": 64.8,
-"proponent": "Eos Monte Rughe S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Parere CTPNRR-PNIEC emesso",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11002",
-"title": "Progetto di un impianto eolico denominato \"Saladino\", costituito da 9 aerogeneratori per una potenza complessiva di 64,8 MW, con sistema di accumulo da 41,6 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Nar",
-"region": "Sicilia",
-"province": "AG",
-"municipalities": "NARO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11002",
-"power_mw": 64.8,
-"proponent": "ESE SALADINO S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_12145",
-"title": "Istanza di Valutazione di Impatto Ambientale nell'ambito dell'Autorizzazione Unica ex art. 9 del D.Lgs. n. 190/2024 (Cod. Id: NB5OA68), per la costruzione ed esercizio di un impianto eolico costituito da 9 aerogeneratori, ciascuno di potenz",
-"region": "Puglia",
-"province": "BR",
-"municipalities": "BRINDISI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12145",
-"power_mw": 64.8,
-"proponent": "EVOLVE ENERGY S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11939",
-"title": "Progetto per la realizzazione di un impianto eolico costituito da 9 aerogeneratori di potenza nominale pari a 7,2 MW, per una potenza nominale complessiva pari a 64,8 MW, integrato da un sistema di accumulo di potenza nominale pari a 32 MW ",
-"region": "Toscana",
-"province": "GR",
-"municipalities": "MANCIANO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11939",
-"power_mw": 64.8,
-"proponent": "Zefiro Green Power S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10994",
-"title": "Progetto di un impianto eolico denominato \"Bora Troia\", composto da 9 aerogeneratori di potenza nominale pari a 7,2 MW, per una potenza complessiva di 64,8 MW, integrato da un sistema di accumulo da 10 MW, da realizzarsi nel Comune di Troia",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "TROIA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10994",
-"power_mw": 64.8,
-"proponent": "Troia Wind S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11938",
-"title": "Progetto di un impianto eolico denominato \"Gubbio Nord\" di potenza nominale pari a 64,8 MW integrato con un sstema di accumulo da 63 MW e relative opere di connessione da realizzare nel Comune di Gubbio (PG).",
-"region": "Umbria",
-"province": "PG",
-"municipalities": "GUBBIO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11938",
-"power_mw": 64.8,
-"proponent": "EDURNE GREEN S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10707",
-"title": "Progetto di un impianto eolico denominato \"Rocca Imperiale\" costituito da 9 aerogeneratori, per una potenza massima complessiva di 64,80 MW, integrato con un sistema di accumulo di 20,00 MW, e opere di connessione alla RTN, da realizzarsi n",
-"region": "Calabria",
-"province": "CS",
-"municipalities": "DI ROCCA IMPERIALE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10707",
-"power_mw": 64.8,
-"proponent": "Fri-el S.p.a.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10615",
-"title": "Progetto di un impianto eolico, denominato \"Caterina I\", costituito da n.9 aerogeneratori, per una potenza complessiva di 64,80 MW, e delle relative opere di connessione alla RTN, da realizzare nei comuni di Sclafani Bagni (PA), Valledolmo ",
-"region": "Sicilia",
-"province": "PA",
-"municipalities": "SCLAFANI BAGNI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10615",
-"power_mw": 64.8,
-"proponent": "AEI WIND PROJECT X S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10027",
-"title": "Progetto per la realizzazione di un impianto eolico composto da 9 aerogeneratori della potenza unitaria di 7,2 MW per la produzione di energia da realizzarsi nel territorio comunale di Tarquinia (VT), potenza complessiva 64,8 MW.",
-"region": "Lazio",
-"province": "VT",
-"municipalities": "TARQUINIA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10027",
-"power_mw": 64.8,
-"proponent": "Tarquinia Buligname S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9277",
-"title": "Progetto per la realizzazione di un parco eolico costituito da n. 9 aerogeneratori, per una potenza complessiva di 64,8 MW e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Canicattì (AG).",
-"region": "Sicilia",
-"province": "AG",
-"municipalities": "CANICATTÌ",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9277",
-"power_mw": 64.8,
-"proponent": "AKRA WIND S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10783",
-"title": "Progetto per la realizzazione di un impianto eolico, costituito da 9 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 64,8 MW, da realizzarsi nel Comune di Apricena (FG), in località \"Mezzana della Quercia\", ",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "APRICENA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10783",
-"power_mw": 64.8,
-"proponent": "Apricena Mezzana Quercia S.r.l. (ex. Santa Chiara Energia S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11628",
-"title": "Progetto di un impianto eolico denominato \"Forenza\", costituito da 10 aerogeneratori di potenza nominale pari a 6,48 MW, per una potenza complessiva di 64,8 MW, da realizzarsi nei comuni di Forenza (PZ), Maschito (PZ) e Venosa (PZ), e delle",
-"region": "Basilicata",
-"province": "PZ",
-"municipalities": "PALAZZO SAN GERVASIO, FORENZA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11628",
-"power_mw": 64.8,
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11472",
+"power_mw": 50.4,
 "proponent": "SSE Renewables Italy S.r.l. (già ENERGIA LEVANTE S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
@@ -1625,117 +1382,42 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_9660",
-"title": "Progetto Parco Eolico \"Sibilla\" per una potenza complessiva di 64,80 MW, da installare nei comuni di Montalto di Castro (VT) e Canino (VT) in località \"Parco San Nicola e Villa Abbado\"",
-"region": "Lazio",
-"province": "VT",
-"municipalities": "MONTALTO DI CASTRO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9660",
-"power_mw": 64.8,
-"proponent": "Sibilla Wind s.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10622",
-"title": "Costruzione ed esercizio di un impianto di produzione di energia elettrica da fonte eolica onshore denominato \"Serra Joni\" e relative opere di connessione alla RTN, previsto nei Comuni di Ussassai (NU), Esterzili (SU) e Escalaplano (SU), av",
-"region": "Sardegna",
-"province": "NU",
-"municipalities": "USSASSAI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10622",
-"power_mw": 64.0,
-"proponent": "Acciona Energia Global Italia S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11294",
-"title": "Progetto di un impianto eolico costituito da 9 aerogeneratori di potenza unitaria 7 MW, per una potenza complessiva di 63 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Santa Croce di Magliano (CB) e Rotello (CB).",
-"region": "Molise",
-"province": "CB",
-"municipalities": "SANTA CROCE DI MAGLIANO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11294",
-"power_mw": 63.0,
-"proponent": "oceano rinnovabili S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10285",
-"title": "Progetto di un impianto eolico denominato \"Caltagirone\", composto da n. 14 aerogeneratori da 4,5 MW, per una potenza complessiva di 63 MW e opere di connessione alla RTN, da realizzarsi nei comuni di Caltagirone (CT), Licodia Eubea (CT) e C",
-"region": "Sicilia",
-"province": "CT",
-"municipalities": "CALTAGIRONE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10285",
-"power_mw": 63.0,
-"proponent": "Calta Wind S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11561",
-"title": "Progetto di un impianto eolico denominato \"Nuel\", costituito da 9 generatori ciascuno dalla potenza di 6,97 MW collocati nel comune di Nule (SS), per una potenza complessiva pari a 62,73 MWp e dalle relative opere di connessione alla RTN da",
+"project_key": "wind:mase_10524",
+"title": "Impianto per la produzione di energia da fonte rinnovabile di tipo eolico, della potenza complessiva di 50,4 MW composto da 7 aerogeneratori e delle relative opere di connesse, localizzato nei comuni di Ittiri (SS) e Villanova Monteleone (S",
 "region": "Sardegna",
 "province": "SS",
-"municipalities": "NULE",
+"municipalities": "ITTIRI",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11561",
-"power_mw": 62.73,
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10524",
+"power_mw": 50.4,
 "proponent": "RWE Renewables Italia S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "Alta · Cantiere in corso",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9813",
+"title": "Progetto per la realizzazione di un impianto eolico, costituito da 7 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 50,4 MW, da realizzarsi nel territorio comunale di Troia (FG), incluse le relative opere d",
+"region": "Puglia",
+"province": "FG",
+"municipalities": "",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9813",
+"power_mw": 50.4,
+"proponent": "Santa Rita Energia S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Analisi Pareri",
 "readiness": "",
 "secondaria": false,
 "changes": [
@@ -1750,17 +1432,92 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_10418",
-"title": "Progetto per la realizzazione di un impianto di produzione di energia elettrica da fonte eolica denominato \"Gualdo Tadino\" con potenza di immissione in rete pari a 62 MW e relative opere connesse da realizzarsi nei comuni di Gualdo Tadino (",
+"project_key": "wind:mase_10274",
+"title": "Progetto per la realizzazione di un impianto eolico denominato \"Sant'Eufemia\", costituito da 7 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva dell'impianto pari a 50,40 MW, da realizzarsi nel Comune di Irsina ",
+"region": "Basilicata",
+"province": "MT",
+"municipalities": "IRSINA, OPPIDO LUCANO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10274",
+"power_mw": 50.4,
+"proponent": "Winderg s.r.l.",
+"project_type": "Eolico",
+"procedure_status": "",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10646",
+"title": "Progetto di un impianto eolico denominato \"Wind Farm Costa delle Ripe\", composto da 7 aerogeneratori, ciascuno di potenza pari a 7,2 MW, per una potenza complessiva di 50,4 MW, da realizzarsi nel Comune di Forenza (PZ), con opere di conness",
+"region": "Basilicata",
+"province": "PZ",
+"municipalities": "FORENZA, PALAZZO SAN GERVASIO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10646",
+"power_mw": 50.4,
+"proponent": "SKI W A9 S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10284",
+"title": "Progetto di un impianto eolico denominato \"Del Giudice\", costituito da n. 9 aerogeneratori della potenza unitaria di 5,6 MW, per una potenza complessiva di 50,4 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di",
+"region": "Sicilia",
+"province": "AG",
+"municipalities": "SANTA MARGHERITA DI BELICE, SAMBUCA DI SICILIA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10284",
+"power_mw": 50.4,
+"proponent": "RH Sambuca Wind S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11003",
+"title": "Progetto definitivo per la realizzazione di un impianto eolico composto da n.12 Aerogeneratori da 4,2 MW per una potenza complessiva di 50,4 MW sito nei comuni di Trevi, Sellano e Foligno (PG) e delle opere di connessione indispensabili all",
 "region": "Umbria",
 "province": "PG",
-"municipalities": "GUALDO TADINO",
+"municipalities": "TREVI, SELLANO, FOLIGNO",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10418",
-"power_mw": 62.0,
-"proponent": "Renexia S.p.A.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11003",
+"power_mw": 50.4,
+"proponent": "Lucky Wind S.p.a.",
 "project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"procedure_status": "In attesa integrazione atti",
 "readiness": "",
 "secondaria": false,
 "changes": [
@@ -1775,15 +1532,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_11726",
-"title": "Progetto di un impianto eolico denominato \"Santa Agrippina\" di potenza complessiva di 62 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Vizzini e Mineo (CT).",
+"project_key": "wind:mase_9544",
+"title": "Progetto di un impianto eolico denominato \"S&P 15\", costituito da n. 10 aerogeneratori, per una potenza complessiva pari a 50 MW, da realizzarsi nel comune di Monreale (PA).",
 "region": "Sicilia",
-"province": "CT",
-"municipalities": "VIZZINI, MINEO",
+"province": "PA",
+"municipalities": "MONREALE",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11726",
-"power_mw": 62.0,
-"proponent": "Vibio Wind S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9544",
+"power_mw": 50.0,
+"proponent": "S&P 15 S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -1800,90 +1557,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_11385",
-"title": "Progetto di un impianto eolico di potenza pari a 62 MWp, composto da 10 aerogeneratori aventi ciascuno una potenza nominale di 6,2 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Nurri (SU), Serri (SU), Isili",
-"region": "Sardegna",
-"province": "SU",
-"municipalities": "NURRI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11385",
-"power_mw": 62.0,
-"proponent": "SARDEGNA NURRI 1 SRL",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11167",
-"title": "Progetto di un parco eolico denominato \"Santa Venere\", costituito da 15 aerogeneratori per una potenza complessiva di 62 MW, da realizzarsi nei Comuni di Montegiordano (CS), Rocca Imperiale (CS) e delle relative opere di connessione alla RT",
-"region": "Calabria",
-"province": "CS",
-"municipalities": "MONTEGIORDANO, CANNA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11167",
-"power_mw": 62.0,
-"proponent": "VENERE WIND S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9731",
-"title": "Progetto di un impianto eolico, costituito da 10 aerogeneratori di potenza unitaria pari a 6,2 MW, per una potenza massima complessiva di 62 MW+31 MW di BESS, e delle relative opere di connessione da realizzarsi nei Comuni di Craco e Montal",
-"region": "Basilicata",
-"province": "MT",
-"municipalities": "CRACO, MONTALBANO JONICO, IN",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9731",
-"power_mw": 62.0,
-"proponent": "MYT EOLO 1 S.r.l",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10158",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"E90\", costituito da 10 aerogeneratori della potenza complessiva di 62,00 MW ed opere di connessione alla RTN da realizzarsi nei Comuni di Borgia, San Floro, Girifalco, Cortale ",
+"project_key": "wind:mase_10137",
+"title": "Progetto di realizzazione di un parco eolico a terra, con infrastrutture ed opere connesse, localizzato nell'agro di Marcellinara, Maida e Caraffa Di Catanzaro (CZ) con potenza complessiva di 50,00 MW.",
 "region": "Calabria",
 "province": "CZ",
-"municipalities": "BORGIA, SAN FLORO, GIRIFALCO, CORTALE, MAIDA",
+"municipalities": "",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10158",
-"power_mw": 62.0,
-"proponent": "Energia Levante S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10137",
+"power_mw": 50.0,
+"proponent": "ENERGIA LEVANTE Srl",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -1900,64 +1582,14 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_10771",
-"title": "Parco eolico denominato \"Esterzili/Escalaplano\" composto da 11 aerogeneratori da 5,6 MW per una potenza complessiva di 61,60 MW, da realizzarsi nei Comuni di Esterzili (CA), Escalaplano (CA) e Seui (OG).",
-"region": "Sardegna",
-"province": "CA",
-"municipalities": "ESTERZILI",
+"project_key": "wind:mase_9807",
+"title": "Impianto Eolico denominato \"Poggio delle Campane\" ubicato nel comune di Badia Tedalda (AR) e Sestino (AR) costituito da 8 (otto) aerogeneratori di potenza nominale 6,2 MW per un totale di 49,6 MW con relative opere connesse ed infrastruttur",
+"region": "Toscana",
+"province": "AR",
+"municipalities": "BADIA TEDALDA, SESTINO",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10771",
-"power_mw": 61.6,
-"proponent": "ETANRG S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10504",
-"title": "Impianto eolico costituito da 9 turbine della potenza di 6,8MW, per una potenza complessiva 61,2MW, denominato \"Laccanu\" da realizzarsi nei Comuni di Ittiri, Bessude, Banari e Thiesi (SS) con le relative opere di connessione elettriche",
-"region": "Sardegna",
-"province": "SS",
-"municipalities": "ITTIRI, BESSUDE, BANARI, THIESI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10504",
-"power_mw": 61.2,
-"proponent": "Queequeg Renewables Due S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9360",
-"title": "Istanza per l'avvio del procedimento di Valutazione di Impatto Ambientale ai sensi dell'art. 23 del D.Lgs. 152/2006 relativa al progetto di un impianto di produzione di energia rinnovabile da fonte eolica e relative opere connesse ed infras",
-"region": "Basilicata",
-"province": "MT",
-"municipalities": "MONTESCAGLIOSO, POMARICO, BERNALDA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9360",
-"power_mw": 61.2,
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9807",
+"power_mw": 49.6,
 "proponent": "Fri-el S.p.a.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
@@ -1975,265 +1607,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_9863",
-"title": "Progetto di un impianto eolico, costituito da n. 10 aerogeneratori, per una potenza complessiva di 60 MW, da realizzarsi nei comuni di Acquaviva Collecroce, Tavenna, San Felice del Molise, Montenero di Bisaccia e Montecilfone (CB).",
-"region": "Molise",
-"province": "CB",
-"municipalities": "ACQUAVIVA COLLECROCE, TAVENNA, SAN FELICE DEL MOLISE, MONTENERO DI BISACCIA, MONTECILFONE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9863",
-"power_mw": 60.0,
-"proponent": "V-RIDIUM WIND MOLISE 1 S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8545",
-"title": "Progetto di impianto di produzione di energia elettrica da fonte eolica denominato \"EWR3 - Ascoli Satriano\", composto da n. 10 aerogeneratori della potenza unitaria di 6 MW , per una potenza complessiva pari a 60 MW, da realizzarsi nel Comu",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "ASCOLI SATRIANO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8545",
-"power_mw": 60.0,
-"proponent": "Sinergia EWR3 s.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Analisi Pareri",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10495",
-"title": "Progetto di un impianto eolico denominato \"Tufaroli\", costituito da 10 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva di 60 MW, da realizzarsi nel Comune di Forenza (PZ) e Palazzo San Gervasio (PZ), con opere di",
-"region": "Basilicata",
-"province": "PZ",
-"municipalities": "FORENZA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10495",
-"power_mw": 60.0,
-"proponent": "AREN Green S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11034",
-"title": "Progetto di un impianto eolico composto da 10 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva di 60 MW, integrato con un sistema di accumulo elettrochimico di potenza pari a 15 MW e capacità 30 MWh, da realizzars",
-"region": "Basilicata",
-"province": "PZ",
-"municipalities": "LAVELLO, MELFI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11034",
-"power_mw": 60.0,
-"proponent": "Energia Pulita Due S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8314",
-"title": "Progetto di un parco eolico denominato \"Parco eolico di Suni\", costituito da 10 aerogeneratori, ciascuno di potenza unitaria pari a 6 MW, per potenza complessiva pari a 60 MW e delle relative opere di connessione alla RTN, da realizzarsi ne",
-"region": "Sardegna",
-"province": "OR",
-"municipalities": "SUNI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8314",
-"power_mw": 60.0,
-"proponent": "Hergo Renewables S.p.a.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11784",
-"title": "Progetto di un impianto eolico denominato \"ALIANO\", costituito da 10 aerogeneratori di potenza nominale pari a 6 MW, per una potenza complessiva di 60 MW, da realizzarsi nei comuni di Senise (PZ), Sant'Arcangelo (PZ) e Roccanova (PZ), e del",
-"region": "Basilicata",
-"province": "PZ",
-"municipalities": "SENISE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11784",
-"power_mw": 60.0,
-"proponent": "AEI WIND PROJECT XV S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9683",
-"title": "Progetto di un impianto eolico denominato \"Terranova\" composto da 10 aerogeneratori da 6 MW, per una potenza complessiva di 60 MW, da localizzarsi nei comuni di Terranova da Sibari (CS) e Corigliano Rossano (CS).",
-"region": "Calabria",
-"province": "CS",
-"municipalities": "TERRANOVA DA SIBARI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9683",
-"power_mw": 60.0,
-"proponent": "PLT RE S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "In attesa concerto",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10623",
-"title": "Progetto per la realizzazione di un impianto eolico della potenza di 60 MW denominato \"EOLICO CAPODIMONTE - MARTA\" e delle relative opere di connessione, da realizzarsi nei comuni di Capodimonte (VT) e Marta (VT).",
-"region": "Lazio",
-"province": "VT",
-"municipalities": "CAPODIMONTE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10623",
-"power_mw": 60.0,
-"proponent": "Wind Energy 2 S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10888",
-"title": "Progetto di un parco eolico di potenza nominale pari a 60 MW e sistema di storage da 15 MW sito nei Comuni di Foligno e Nocera Umbra (PG) e relative opere di connessione alla RTN nel Comune di Serravalle di Chienti (MC).",
-"region": "Marche",
-"province": "MC",
-"municipalities": "SERRAVALLE DI CHIENTI, FOLIGNO, NOCERA UMBRA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10888",
-"power_mw": 60.0,
-"proponent": "Energia Ecosostenibile S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_7259",
-"title": "Impianto per la produzione di energia da fonte eolica denominato \"La camera\" costituito da 10 aerogeneratori, per una potenza complessiva di 60 MW, ricadente nel comune di San Severo (FG).",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "SAN SEVERO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7259",
-"power_mw": 60.0,
-"proponent": "Enerwing S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10359",
-"title": "Progetto di un impianto eolico composto da 10 aerogeneratori, ciascuno di potenza pari a 6,0 MW, per una potenza complessiva pari a 60 MW, da realizzarsi in agro del Comune di Lucera (FG), in località \"PALMORI\", con opere di connessione all",
+"project_key": "wind:mase_9764",
+"title": "Progetto per la realizzazione di un impianto eolico costituito da 7 aerogeneratori della potenza unitaria di 7,08 MW, per una potenza complessiva pari a 49,6 MW, da realizzarsi nel Comune di Lucera (FG), in località \"Palmori\", incluse le op",
 "region": "Puglia",
 "province": "FG",
 "municipalities": "LUCERA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10359",
-"power_mw": 60.0,
-"proponent": "RGP WIND PUGLIA S.r.l. (ex. Ravano Wind S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9764",
+"power_mw": 49.6,
+"proponent": "Lucera Palmori S.r.l. (ex. Green Energy House S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -2250,339 +1632,14 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_11817",
-"title": "Progetto di un impianto di produzione di energia da fonte eolica e opere connesse sito nei Comuni di Castiglione della Pescaia, Gavorrano e Grosseto (GR) di potenza 60 MW, denominato \"Parco Eolico Grosseto\".",
-"region": "Toscana",
-"province": "GR",
-"municipalities": "CASTIGLIONE DELLA PESCAIA, GAVORRANO, GROSSETO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11817",
-"power_mw": 60.0,
-"proponent": "Revalue Wind 1 S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8345",
-"title": "Progetto di impianto eolico composto da 10 aerogeneratori da 6 MW ciascuno, per un totale di 60 MW, con 30 MW di sistema di accumulo, da realizzarsi nei comuni di Mesagne (BR), Torre Santa Susanna (BR) e Latiano (BR).",
-"region": "Puglia",
-"province": "BR",
-"municipalities": "MESAGNE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8345",
-"power_mw": 60.0,
-"proponent": "Enel Green Power Puglia S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11940",
-"title": "Progetto di un impianto eolico denominato \"San Severo\", costituito da 10 aerogeneratori, ciascuno di potenza nominale pari a 6 MW, per una potenza complessiva di 60 MW, da realizzarsi nel Comune di San Severo (FG), incluse le relative opere",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "SAN SEVERO, LUCERA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11940",
-"power_mw": 60.0,
-"proponent": "OPR WIND 4 S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8732",
-"title": "Progetto di un impianto eolico della potenza complessiva di 60,00 MW, situato nel Comune di Pietrelcina (BN) in località \"Difesa e Maitine\", con opere connesse ricadenti nei Comuni di Pesco Sannita (BN) e Benevento (BN).",
-"region": "Campania",
-"province": "BN",
-"municipalities": "PIETRELCINA, PESCO SANNITA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8732",
-"power_mw": 60.0,
-"proponent": "PLC Power S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8344",
-"title": "Progetto di un impianto eolico composto da 10 aerogeneratori per una potenza pari a 60 MW, da ubicarsi nel territorio comunale di Salice Salentino (LE), Veglie (LE), con opere accessorie ricadenti anche nei territori di Avetrana (TA), San P",
-"region": "Puglia",
-"province": "LE",
-"municipalities": "ERCHIE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8344",
-"power_mw": 60.0,
-"proponent": "Avetrana Energia S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9724",
-"title": "Progetto di un impianto eolico denominato \"Acquaviva Collecroce\", costituito da n. 10 aerogeneratori, per una potenza complessiva di 60 MW, da realizzarsi nei comuni di Acquaviva Collecroce, San Felice del Molise, Palata, Castelmauro, Taven",
-"region": "Molise",
-"province": "CB",
-"municipalities": "ACQUAVIVA COLLECROCE, SAN FELICE DEL MOLISE, PALATA, CASTELMAURO, TAVENNA, MONTECILFONE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9724",
-"power_mw": 60.0,
-"proponent": "Enel Green Power Italia S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10679",
-"title": "Progetto di un impianto eolico denominato \"Parco Eolico Colobraro Tursi\", costituito da 10 aerogeneratori di potenza nominale pari a 6 MW, per una potenza complessiva di 60 MW, da realizzarsi nel territorio dei Comuni di Colobraro e Tursi (",
-"region": "Basilicata",
-"province": "MT",
-"municipalities": "SANT'ARCANGELO, COLOBRARO, TURSI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10679",
-"power_mw": 60.0,
-"proponent": "Wpd Murge S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10692",
-"title": "Parco eolico denominato \"BUDDUSO' SUD II\" costituito da 9 aerogeneratori con una potenza nominale di 6,6 MW, per una potenza complessiva del parco eolico di 59,4 MW e delle relative opere di connessione alla RTN, da realizzarsi nel comune A",
+"project_key": "wind:mase_9769",
+"title": "Progetto di parco eolico denominato \"Sinnada\", con una potenza complessiva di 49,6 MW e un sistema di accumulo (BESS) 32,4 MW/64,8 MWh e relative opere connesse, localizzato nei Comuni di Luras, Calangianus e Tempio Pausania (SS).",
 "region": "Sardegna",
 "province": "SS",
-"municipalities": "",
+"municipalities": "LURAS, CALANGIANUS, TEMPIO PAUSANIA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10692",
-"power_mw": 59.4,
-"proponent": "AEI WIND PROJECT XIII S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Sospeso su richiesta del Proponente",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10918",
-"title": "Progetto di un impianto eolico denominato \"PELLESTRINA WIND\" di potenza complessiva pari a 59,4 MW da realizzare in Località Casalappi nei comuni di Campiglia Marittima (LI), Piombino (LI) e Suvereto (LI).",
-"region": "Toscana",
-"province": "LI",
-"municipalities": "CAMPIGLIA MARITTIMA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10918",
-"power_mw": 59.4,
-"proponent": "Pellestrina S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10939",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"Contrada Magliana\", costituito da 9 aerogeneratori di potenza unitaria pari a 6,6 MW, per una potenza complessiva di 59,4 MW, da realizzarsi nei comuni di Veglie (LE), Salice S",
-"region": "Puglia",
-"province": "LE",
-"municipalities": "VEGLIE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10939",
-"power_mw": 59.4,
-"proponent": "Magenta Energy S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10328",
-"title": "Progetto di impianto eolico di potenza pari a 59,4 MW, integrato con sistema di accumulo di potenza 11,88 MW, da realizzarsi nel Comune di Sant'Antonio di Gallura (OT).",
-"region": "Sardegna",
-"province": "SS",
-"municipalities": "SANT'ANTONIO DI GALLURA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10328",
-"power_mw": 59.4,
-"proponent": "ANT S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9586",
-"title": "Progetto \"Nuova realizzazione ed esercizio di un impianto di produzione di energia elettrica da fonte eolica denominato \"Planu Serrantis\" composto da 9 aerogeneratori da 6,6 MW, per una potenza complessiva di 59,4 MW sito nei comuni di Sele",
-"region": "Sardegna",
-"province": "CA",
-"municipalities": "SELEGAS, GESICO, MANDAS, GUASILA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9586",
-"power_mw": 59.4,
-"proponent": "GRV Wind Sardegna 6 S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10806",
-"title": "Progetto di un impianto eolico costituito da 9 aerogeneratori di potenza unitaria pari a 6,6 MW, per una potenza complessiva di 59,4 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Scandale (KR) e San Mauro M",
-"region": "Calabria",
-"province": "KR",
-"municipalities": "SCANDALE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10806",
-"power_mw": 59.4,
-"proponent": "SINNER WIND S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9935",
-"title": "Progetto di \"Parco eolico Sud Iglesiente\" nel Comune di Villamassargia (SU) con potenza massima di immissione pari a 59,15 MW comprensiva di sistema di accumulo elettrochimico integrato (BESS) da 15,75 MW, con opere connesse ricadenti nei C",
-"region": "Sardegna",
-"province": "SU",
-"municipalities": "VILLAMASSARGIA, SILIQUA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9935",
-"power_mw": 59.15,
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9769",
+"power_mw": 49.6,
 "proponent": "Sorgenia Renewables S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
@@ -2600,40 +1657,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_9394",
-"title": "Progetto di un impianto eolico on-shore denominato \"Parco eolico Gangi\", costituito da 13 aerogeneratori, di potenza complessiva di 58,76 MW, lo calizzato nei comuni di Gangi (PA), Calascibetta (EN), Enna (EN) e Villarosa (EN)",
-"region": "Sicilia",
-"province": "PA",
-"municipalities": "GANGI",
+"project_key": "wind:mase_9761",
+"title": "Progetto per la realizzazione di un impianto eolico, costituito da 12 aerogeneratori di potenza unitaria pari a 4,13 MW, per una potenza complessiva di 49,6 MW, da realizzarsi nel territorio comunale di Foggia e Manfredonia (FG), incluse le",
+"region": "Puglia",
+"province": "FG",
+"municipalities": "FOGGIA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9394",
-"power_mw": 58.76,
-"proponent": "Sorgenia Maestrale S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Parere CTPNRR-PNIEC emesso",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10311",
-"title": "Progetto per la realizzazione di un impianto eolico composto da n. 13 aerogeneratori di potenza unitaria pari a 4,5 MW, per una potenza complessiva pari a 58,5 MW, denominato \"Termini\", da realizzarsi nel Comune di Monreale (PA), con relati",
-"region": "Sicilia",
-"province": "PA",
-"municipalities": "MONREALE, CAMPOREALE",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10311",
-"power_mw": 58.5,
-"proponent": "TETA RINNOVABILI S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9761",
+"power_mw": 49.6,
+"proponent": "Green Energy House S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -2650,15 +1682,65 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_9891",
-"title": "Progetto per la realizzazione di un impianto eolico costituito da 9 aerogeneratori, dei quali 2 con potenza nominale di 6,6 MW e 7 di potenza pari a 6,4 MW, per una potenza complessiva di 58 MW, da realizzarsi nei comuni di Taranto (TA), Fa",
+"project_key": "wind:mase_9829",
+"title": "Progetto per la realizzazione di un impianto eolico denominato \"Fauci\", costituito da 8 aerogeneratori della potenza complessiva di 49,60 MW e opere di connessione alla RTN da realizzarsi nei Comuni di Isola Capo Rizzuto, Cutro,Crotone e Sc",
+"region": "Calabria",
+"province": "KR",
+"municipalities": "ISOLA CAPO RIZZUTO, CUTRO, CROTONE, SCANDALE",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9829",
+"power_mw": 49.6,
+"proponent": "Energia Levante S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10596",
+"title": "Progetto di un impianto eolico denominato \"San Cosmo\" composto da 8 Aerogeneratori da 6,2 MW per una potenza complessiva di 49,6 MW nei comuni di Comuni di San Cosmo Albanese (CS), Vaccarizzo Albanese (CS), San Giorgio Albanese (CS), Corigl",
+"region": "Calabria",
+"province": "CS",
+"municipalities": "COMUNI DI SAN COSMO ALBANESE",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10596",
+"power_mw": 49.6,
+"proponent": "Kosmo Wind S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_9445",
+"title": "Progetto di un impianto per la produzione di energia elettrica da fonte eolica denominato \"Messapia Energia\", costituito da 8 aerogeneratori di potenza unitaria pari a 6,2 MW, per una potenza complessiva di impianto di 49,6 MW, da realizzar",
 "region": "Puglia",
 "province": "TA",
-"municipalities": "TARANTO",
+"municipalities": "MANDURIA, SAVA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9891",
-"power_mw": 58.0,
-"proponent": "Wind Energy Lizzano S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9445",
+"power_mw": 49.6,
+"proponent": "SSE Renewables Italy S.r.l. (ex. Energia Levante S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -2675,190 +1757,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_11816",
-"title": "Progetto di un parco eolico denominato \"Del Rosario\" costituito da 10 aerogeneratori, di potenza complessiva pari a 57,60 MW, e dalle relative opere di connessione alla RTN, situato nei Comuni di Ventimiglia di Sicilia (PA), Bolognetta (PA)",
-"region": "Sicilia",
-"province": "PA",
-"municipalities": "VENTIMIGLIA DI SICILIA, CEFALÀ DIANA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11816",
-"power_mw": 57.6,
-"proponent": "Rosa Wind S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11918",
-"title": "Progetto definitivo per la realizzazione di un parco eolico composto da 8 aerogeneratori da 7,2 MW per una potenza complessiva di 57,6 MW sito nei Comuni di Nulvi (SS) e Sedini (SS) con le relative opere di connessione.",
-"region": "Sardegna",
-"province": "SS",
-"municipalities": "NULVI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11918",
-"power_mw": 57.6,
-"proponent": "WPD MONTE ENTOSU S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11928",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"Montebello\", di potenza pari a 57,6 MW, costituito da n. 8 aerogeneratori di potenza unitaria di 7,2 MW, da realizzarsi nel Comune di Tuscania (VT) e delle relative opere di co",
-"region": "Lazio",
-"province": "VT",
-"municipalities": "TUSCANIA, MONTALTO DI CASTRO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11928",
-"power_mw": 57.6,
-"proponent": "Aren Renewind S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11219",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"Alpha 1\", costituito da 8 aerogeneratori di potenza nominale pari a 7,2 MW, per una potenza complessiva di 57,6 MW, ricadente nel territorio comunale di Cerignola (FG), incluse",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "CERIGNOLA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11219",
-"power_mw": 57.6,
-"proponent": "NVA Alpha S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11753",
-"title": "Progetto per la realizzazione di un impianto eolico composto da 8 aerogeneratori di potenza nominale complessiva pari a 57,60 MWp denominato \"H019 - Castel Giorgio\" e relative opere connesse, ubicato nel Comune di Castel Giorgio (TR), Caste",
-"region": "Umbria",
-"province": "TR",
-"municipalities": "CASTEL GIORGIO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11753",
-"power_mw": 57.6,
-"proponent": "GRUPPO VISCONTI CASTEL GIORGIO S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11224",
-"title": "Progetto di un impianto eolico denominato \"Anzi\", composto da 8 aerogeneratori di potenza nominale pari a 7,2 MW, per una potenza complessiva di 57,6 MW, da realizzarsi nel Comune di Anzi (PZ) e Brindisi Montagna (PZ), e delle relative oper",
-"region": "Basilicata",
-"province": "PZ",
-"municipalities": "ANZI, TRIVIGNO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11224",
-"power_mw": 57.6,
-"proponent": "Zero Emissioni Prime S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11049",
-"title": "Progetto di un parco eolico denominato \"Fissanu\" della potenza di 57,6 MWp e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Villanova Monteleone, Romana, Monteleone Roccadoria e Ittiri (SS).",
-"region": "Sardegna",
-"province": "SS",
-"municipalities": "VILLANOVA MONTELEONE, ROMANA, MONTELEONE ROCCADORIA, ITTIRI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11049",
-"power_mw": 57.6,
-"proponent": "FISANUGREEN S.R.L",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10767",
-"title": "Progetto per la realizzazione di un impianto eolico, costituito da 8 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 57,6 MW, da realizzarsi nel Comune di Ruvo di Puglia (BA), oltre ad un sistema di accumulo",
+"project_key": "wind:mase_12167",
+"title": "Istanza di Valutazione di Impatto Ambientale nell'ambito dell'Autorizzazione Unica ex art. 9 del D.Lgs. n. 190/2024 (Cod. Id: KB9B5L9), per la costruzione ed esercizio di un impianto eolico costituito da 8 aerogeneratori, ciascuno di potenz",
 "region": "Puglia",
 "province": "BA",
-"municipalities": "RUVO DI PUGLIA, TERLIZZI",
+"municipalities": "PALO DEL COLLE, BITONTO",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10767",
-"power_mw": 57.6,
-"proponent": "RDP S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12167",
+"power_mw": 49.6,
+"proponent": "DC ENERGY S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -2875,17 +1782,17 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_11076",
-"title": "Progetto di ammodernamento complessivo (\"repowering\"), relativo ad un impianto eolico esistente, denominato \"Parco Eolico Ordona\", con smantellamento degli attuali 17 aerogeneratori di potenza complessiva pari a 34 MW, e realizzazione di 8 ",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "ORDONA, CARAPELLE",
+"project_key": "wind:mase_11381",
+"title": "Progetto di un impianto eolico denominato \"GREEN POWER WIND 1\", costituito da 11 aerogeneratori di potenza nominale pari a 4,5 MW, per una potenza complessiva di 49,5 MW, da realizzarsi nel Comune di Stigliano (MT), e delle relative opere d",
+"region": "Basilicata",
+"province": "MT",
+"municipalities": "STIGLIANO",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11076",
-"power_mw": 57.6,
-"proponent": "Ordona Energia S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11381",
+"power_mw": 49.5,
+"proponent": "Green Power Wind 1 S.r.l.",
 "project_type": "Eolico",
-"procedure_status": "Parere CTPNRR-PNIEC emesso",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
 "secondaria": false,
 "changes": [
@@ -2900,15 +1807,40 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_11540",
-"title": "Progetto di un impianto eolico denominato \"Orione\", composto da 8 aerogeneratori della potenza nominale pari a 7,2 MW, per una potenza complessiva di 57,6 MW, incluse le relative opere di connessione alla RTN, da realizzarsi nei comuni di A",
+"project_key": "wind:mase_11058",
+"title": "Progetto di un impianto eolico denominato \"\"Pontelandolfo WIND FARM 1\" costituito da 11 aerogeneratori di potenza unitaria 4,5 MW, per una potenza complessiva di 49,50 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Campola",
+"region": "Campania",
+"province": "BN",
+"municipalities": "CAMPOLATTARO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11058",
+"power_mw": 49.5,
+"proponent": "ENERGY TOTAL CAPITAL PONTELANDOLFO WIND FARM S.R.L.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10905",
+"title": "Progetto per la realizzazione di un impianto eolico costituito da n.12 aerogeneratori connesso alla rete elettrica di distribuzione ubicato entro i territori comunali di Monte Cavallo, Pieve Torina e Serravalle di Chienti (MC) della potenza",
 "region": "Marche",
-"province": "PU",
-"municipalities": "APECCHIO",
+"province": "MC",
+"municipalities": "",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11540",
-"power_mw": 57.6,
-"proponent": "RWE Renewables Italia S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10905",
+"power_mw": 49.4,
+"proponent": "Wind Energy Monte Cavallo S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -2925,65 +1857,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_8087",
-"title": "Progetto di un impianto eolico composto da 12 aerogeneratori della potenza unitaria di 4,8 MW, per una potenza complessiva di 57.6 MW, ricadente nella nei comuni di Candela (FG), Ascoli Satriano (FG) e Deliceto (FG).",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "CANDELA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8087",
-"power_mw": 57.6,
-"proponent": "Wpd Daunia",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9850",
-"title": "Progetto per la realizzazione di un impianto eolico, costituito da 8 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 57,6 MW, da realizzarsi nei comuni di Canosa di Puglia (BT) e Minervino Murge (BT), con op",
+"project_key": "wind:mase_10146",
+"title": "Progetto per la realizzazione di un impianto eolico denominato \"Ofanto\", costituito da 7 aerogeneratori di potenza unitaria di 7 MW, per una potenza complessiva d'impianto pari a 49 MW, da realizzarsi nei comuni di Cerignola (FG) e Trinitap",
 "region": "Puglia",
 "province": "BT",
-"municipalities": "CANOSA DI PUGLIA, MONTEMILONE",
+"municipalities": "CERIGNOLA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9850",
-"power_mw": 57.6,
-"proponent": "Canosa Lamalunga S.r.l. (ex. Santa Rita Energia S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11766",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"Energia della Valnerina\" costituito da n. 8 aerogeneratori, per una potenza complessiva di 57,6 MW, da installare nei comuni di Sant'Anatolia di Narco (PG), Vallo di Nera (PG) ",
-"region": "Umbria",
-"province": "PG",
-"municipalities": "FERENTILLO, SANT'ANATOLIA DI NARCO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11766",
-"power_mw": 57.6,
-"proponent": "FRED.OLSEN RENEWABLES ITALY S.R.L.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10146",
+"power_mw": 49.0,
+"proponent": "Fri-El Ofanto S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -3000,117 +1882,17 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_11208",
-"title": "Progetto di un impianto eolico composto da 8 aerogeneratori di potenza nominale pari a 7,2 MW, per una potenza complessiva di 57,6 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel comune di Spinazzola (BT)",
-"region": "Puglia",
-"province": "BT",
-"municipalities": "SPINAZZOLA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11208",
-"power_mw": 57.6,
-"proponent": "EN.E.R. Wind S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11261",
-"title": "Progetto di un impianto eolico costituito da 11 aerogeneratori di potenza nominale pari a 5,2 MW, per una potenza complessiva di 57,20 MW, da realizzarsi nei comuni di Alberona (FG) e Biccari (FG), e delle relative opere di connessione alla",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "TROIA, ALBERONA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11261",
-"power_mw": 57.2,
-"proponent": "Ragnar Energia S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11073",
-"title": "Progetto di un parco eolico denominato \"Sedda Meddau\" composto da 12 aerogeneratori dalla potenza nominale pari a circa 4,7 MW ciascuno e per una potenza complessiva di 57 MW, da realizzarsi ne Comuni di Seui (OG), Esterzili (CA) ed Escalap",
-"region": "Sardegna",
-"province": "CA",
-"municipalities": "SEUI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11073",
-"power_mw": 57.0,
-"proponent": "Società Loto Rinnovabili S.r.l",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11937",
-"title": "Progetto di un impianto eolico costituito da 7 aerogeneratori di potenza nominale pari a 8 MW, per una potenza complessiva di 56 MW, da realizzarsi nel Comune di Candela (FG), incluse le relative opere di connessione alla RTN ricadenti anch",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "CANDELA, ASCOLI SATRIANO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11937",
-"power_mw": 56.0,
-"proponent": "Green Energy Levante S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8266",
-"title": "Progetto di un impianto eolico, denominato \"Marsa-Allah\", costituito da n. 10 aerogeneratori, per una potenza nominale pari a 56 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Marsala (TP).",
+"project_key": "wind:mase_11039",
+"title": "Progetto per la realizzazione di un impianto eolico, per una potenza complessiva di 49 MW, e di un impianto energy storage (BESS), annesso al parco eolico, di potenza in immissione pari a 31,60 MW, per una potenza complessiva pari a 80,60 M",
 "region": "Sicilia",
 "province": "TP",
 "municipalities": "MARSALA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8266",
-"power_mw": 56.0,
-"proponent": "GRV Wind Sicilia 2 S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11039",
+"power_mw": 49.0,
+"proponent": "AQUITANIA S.r.l.",
 "project_type": "Eolico",
-"procedure_status": "Conferenza di Servizi Regione",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
 "secondaria": false,
 "changes": [
@@ -3125,39 +1907,14 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_8353",
-"title": "Progetto di un impianto eolico composto da 10 aerogeneratori per un totale di 56 MW da ubicare nel comune di Francavilla Fontana (BR) in località \"Masseria Vizzo\", per le opere di connessione saranno coinvolti anche i comuni di Taranto, Gro",
-"region": "Puglia",
-"province": "BR",
-"municipalities": "FRANCAVILLA FONTANA, TARANTO, GROTTAGLIE",
+"project_key": "wind:mase_9713",
+"title": "Progetto di un impianto eolico denominato \"Riccia\", costituito da 7 aerogeneratori, ciascuno di potenza pari a 7,0 MW, per una potenza complessiva di 49,00 MW, da realizzarsi nel comune di Riccia (CB), e dalle relative opere di connessione ",
+"region": "Molise",
+"province": "CB",
+"municipalities": "RICCIA, CERCEMAGGIORE",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8353",
-"power_mw": 56.0,
-"proponent": "ITW Francavilla",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "card",
-"label": "Scheda documenti",
-"old": false,
-"new": true,
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11618",
-"title": "Progetto per la realizzazione e l'esercizio di un impianto eolico denominato \"La Fonte\" della potenza nominale di 56 MW, costituito da 8 generatori eolici da 7,0 MW collocati nei comuni di Badia Tedalda (AR) e Pieve Santo Stefano (AR) e rel",
-"region": "Toscana",
-"province": "AR",
-"municipalities": "SANSEPOLCRO, BADIA TEDALDA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11618",
-"power_mw": 56.0,
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9713",
+"power_mw": 49.0,
 "proponent": "RWE Renewables Italia S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
@@ -3175,15 +1932,15 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_7604",
-"title": "Progetto di un impianto eolico denominato Parco Eolico \"Bitti-Area PIP\", composto da 11 aerogeneratori, per una potenza complessiva di 56 MW ed opere accessorie, da realizzarsi nei territori comunali di Bitti (NU), Osidda (NU), Buddusò (OT)",
-"region": "Sardegna",
-"province": "NU",
-"municipalities": "",
+"project_key": "wind:mase_7827",
+"title": "Progetto di un impianto eolico composto da 6 aerogeneratori della potenza nominale di 6 MW ciascuno, comprensivo di un sistema di accumulo di potenza pari a 12,5 MW e delle relative opere di connessione, per una potenza complessiva di 48,50",
+"region": "Puglia",
+"province": "BR",
+"municipalities": "TORRE SANTA SUSANNA",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7604",
-"power_mw": 56.0,
-"proponent": "Green Energy Sardegna 2 S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7827",
+"power_mw": 48.5,
+"proponent": "Repower Renewable S.p.A.",
 "project_type": "Eolico",
 "procedure_status": "",
 "readiness": "",
@@ -3200,15 +1957,40 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_10618",
-"title": "Progetto per la realizzazione di un impianto eolico, costituito da 9 aerogeneratori di potenza unitaria pari a 6,2 MW, per una potenza complessiva di 55,8 MW, da realizzarsi nel Comune di Cerignola (FG), in località \"Bellaveduta\", incluse l",
-"region": "Puglia",
-"province": "FG",
-"municipalities": "CERIGNOLA",
+"project_key": "wind:mase_7443",
+"title": "Progetto di un impianto eolico costituito da 14 aerogeneratori da 48,3 MW totali da realizzarsi nel comune di Melfi (PZ) in località \"Sant'Alessandro - Piana dei gelsi - Serra Schiavo\". Piano di utilizzo terre e rocce da scavo.",
+"region": "Basilicata",
+"province": "PZ",
+"municipalities": "MELFI",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10618",
-"power_mw": 55.8,
-"proponent": "Cerignola Wind S.r.l.",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7443",
+"power_mw": 48.3,
+"proponent": "Breva Wind s.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Approvato con/senza prescrizioni",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10443",
+"title": "Progetto di un impianto eolico denominato \"Borgo Fazio\" costituito 8 aerogeneratori di potenza unitaria 6,00 MW, per una potenza complessiva di 48,00MW e opere di connessione alla RTN, da realizzarsi nel Comune di Trapani (TP), in località ",
+"region": "Sicilia",
+"province": "TP",
+"municipalities": "TRAPANI",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10443",
+"power_mw": 48.0,
+"proponent": "EDISON Rinnovabili S.p.A.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -3225,15 +2007,190 @@
 "progress": false
 },
 {
-"project_key": "wind:mase_11255",
-"title": "Progetto per la realizzazione di un impianto eolico denominato \"Veglie\", costituito da 9 aerogeneratori di potenza nominale pari a 6,2 MW, per una potenza complessiva di 55,8 MW, ricadente nei comuni di Veglie (LE), Carmiano (LE) e Leverano",
-"region": "Puglia",
-"province": "LE",
-"municipalities": "VEGLIE, COPERTINO",
+"project_key": "wind:mase_10702",
+"title": "Parco Eolico denominato \"San Gavino Monreale\" composto da n°8 aerogeneratori e relative opere di connessione, per una potenza complessiva di 48 MW ed ubicato nel Comune di San Gavino Monreale (VS)",
+"region": "Sicilia",
+"province": "PA",
+"municipalities": "SAN GAVINO MONREALE",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11255",
-"power_mw": 55.8,
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10702",
+"power_mw": 48.0,
+"proponent": "Wind Energy San Gavino Monreale S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11106",
+"title": "Progetto di un impianto eolico denominato \"Calcibaida\" costituito da 8 aerogeneratori di potenza unitaria 6 MW, per una potenza complessiva di 48 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Caltavuturo e Petralia Sottan",
+"region": "Sicilia",
+"province": "PA",
+"municipalities": "CALTAVUTURO, PETRALIA SOTTANA",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11106",
+"power_mw": 48.0,
+"proponent": "IBERDROLA RENOVABLES ITALIA S.p.A.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10360",
+"title": "Progetto di un impianto eolico composto da 8 aerogeneratori, ciascuno di potenza pari a 6,0 MW, per una potenza complessiva pari a 48 MW, da realizzarsi in agro del Comune di Rignano Garganico (FG), in località \"Coppa del Vento\", con relati",
+"region": "Puglia",
+"province": "FG",
+"municipalities": "RIGNANO GARGANICO, FOGGIA, SAN SEVERO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10360",
+"power_mw": 48.0,
 "proponent": "RGP WIND PUGLIA S.r.l. (ex. Ravano Wind S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11913",
+"title": "Progetto di un impianto eolico denominato \"Sant'Agostino\", dotato di una potenza complessiva di 48,00 MW, da realizzare in località \"Sant'Agostino\", nei Comuni di Trapani e Paceco (TP), e delle relative opere di connessione alla RTN, ricade",
+"region": "Sicilia",
+"province": "TP",
+"municipalities": "MISILISCEMI, TRAPANI, PACECO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11913",
+"power_mw": 48.0,
+"proponent": "EE Santagostino S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_11926",
+"title": "Progetto di un impianto eolico denominato \"La Contessa\" costituito da n.8 aerogeneratori di potenza nominale pari a 48 MW con un sistema integrato con potenza 25 MW e relative opere di connessione da realizzare nel Comune di Gubbio (PG).",
+"region": "Umbria",
+"province": "PG",
+"municipalities": "GUBBIO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11926",
+"power_mw": 48.0,
+"proponent": "PRIMAVERA RESOURCES ITALY S.R.L.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10892",
+"title": "Progetto di parco eolico denominato \"Ennas\" costituito da 8 turbine, per una potenza in immissione di 48 MW e opere accessorie e di connessione alla RTN da realizzarsi nei Comuni di Suelli, Selegas e Gesico nella Provincia (CA).",
+"region": "Sardegna",
+"province": "CA",
+"municipalities": "SUELLI, SELEGAS",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10892",
+"power_mw": 48.0,
+"proponent": "AEI WIND PROJECT XVI S.R.L.",
+"project_type": "Eolico",
+"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10802",
+"title": "Progetto per la realizzazione di un impianto eolico denominato \"Conca d'Oro\", costituito da 8 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva di 48 MW, da realizzarsi nei comuni di Ascoli Satriano (FG), Castelluc",
+"region": "Puglia",
+"province": "FG",
+"municipalities": "ASCOLI SATRIANO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10802",
+"power_mw": 48.0,
+"proponent": "AREN Green S.r.l.",
+"project_type": "Eolico",
+"procedure_status": "",
+"readiness": "",
+"secondaria": false,
+"changes": [
+{
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
+"progress": false
+}
+],
+"progress": false
+},
+{
+"project_key": "wind:mase_10778",
+"title": "Progetto di un impianto eolico denominato \"Serra della Croce\", costituito da 8 aerogeneratori di potenza nominale pari a 6 MW, per una potenza complessiva di 48 MW e storage di 50 MW, da realizzarsi nel Comune di Stigliano (MT), con opere d",
+"region": "Basilicata",
+"province": "MT",
+"municipalities": "STIGLIANO, ALIANO",
+"source_label": "MASE",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10778",
+"power_mw": 48.0,
+"proponent": "Khaky Energy S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
@@ -3265,300 +2222,68 @@
 "secondaria": false,
 "changes": [
 {
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Analisi Pareri",
-"new": "",
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
 "progress": false
 }
 ],
 "progress": false
 },
 {
-"project_key": "wind:mase_10976",
-"title": "Progetto di un impianto eolico composto da 8 aerogeneratori di potenza 6 MW per una potenza di 48 MW e relative opere di connessione alla RTN nei comuni di Vallata (AV) e Bisaccia (AV), con smantellamento di 24 aerogeneratori di potenza par",
-"region": "Campania",
-"province": "AV",
-"municipalities": "VALLATA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10976",
-"power_mw": 48.0,
-"proponent": "EDISON Rinnovabili S.p.A.",
-"project_type": "Eolico",
-"procedure_status": "Istruttoria tecnica CTPNRR-PNIEC, Conclusa",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Verifica amministrativa, Conclusa",
-"new": "Istruttoria tecnica CTPNRR-PNIEC, Conclusa",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8777",
-"title": "Progetto di un impianto eolico, denominato \"CE Montemilone\", costituito da 8 aerogeneratori di potenza nominale pari a 6 MW per una potenza complessiva di 48 MW, e relative opere di connessione alla R.T.N, da realizzarsi nel comune di Lavel",
+"project_key": "wind:mase_11485",
+"title": "Progetto per la realizzazione di un impianto eolico denominato \"Veglie\", costituito da 8 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva di 48 MW, da realizzarsi nel territorio comunale di Veglie (LE), incluse le",
 "region": "Puglia",
-"province": "TA",
-"municipalities": "LAVELLO",
+"province": "LE",
+"municipalities": "NARDÒ",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8777",
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11485",
 "power_mw": 48.0,
-"proponent": "ABEI ENERGY GREEN ITALY II Srl",
-"project_type": "Eolico",
-"procedure_status": "In attesa concerto",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Parere CTPNRR-PNIEC emesso",
-"new": "In attesa concerto",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9964",
-"title": "Progetto di un impianto per la produzione di energia da fonte eolica on-shore di potenza complessiva pari a 48 MW, denominato \"Impianto eolico di Collinas\", costituito da 8 aerogeneratori localizzati nel comune di Collinas (SU), e relative ",
-"region": "Sardegna",
-"province": "SU",
-"municipalities": "COLLINAS",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9964",
-"power_mw": 48.0,
-"proponent": "Sorgenia Eolo S.r.l.",
+"proponent": "NVA 3 S.r.l.",
 "project_type": "Eolico",
 "procedure_status": "Istruttoria tecnica CTPNRR-PNIEC",
 "readiness": "",
 "secondaria": false,
 "changes": [
 {
-"field": "proponent",
-"label": "Proponente",
-"old": "Sorgenia Renewables S.r.l.",
-"new": "Sorgenia Eolo S.r.l.",
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
 "progress": false
 }
 ],
 "progress": false
 },
 {
-"project_key": "wind:mase_9160",
-"title": "Progetto di un impianto eolico denominato \"San Giorgio\", costituito da 7 aerogeneratori ciascuno di potenza pari a 6,8 MW, per una potenza complessiva di 47,60 MW, da realizzarsi nei comuni di Polizzi Generosa, Castellana Sicula e Petralia ",
-"region": "Sicilia",
-"province": "PA",
-"municipalities": "POLIZZI GENEROSA, CASTELLANA SICULA, PETRALIA SOTTANA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9160",
-"power_mw": 47.6,
-"proponent": "AM FTV TUDIA S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Analisi Pareri",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "In attesa integrazione atti",
-"new": "Analisi Pareri",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_9759",
-"title": "Progetto di un impianto eolico denominato Anemos, costituito da n. 10 aerogeneratori, della potenza di 45 MW, da realizzarsi nei comuni di Mazara del Vallo (TP), Salemi (TP) e Santa Ninfa (TP).",
-"region": "Sicilia",
-"province": "TP",
-"municipalities": "MAZARA DEL VALLO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9759",
-"power_mw": 45.0,
-"proponent": "Geremo S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Conferenza di Servizi Regione",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Analisi Pareri",
-"new": "Conferenza di Servizi Regione",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_1777",
-"title": "Progetto di un impianto eolico nel Comune di Ascoli Satriano (FG) in località Pozzo spagnuolo, Conca d'oro, Tamariceto, Posticchio, composto da 12 aerogeneratori della potenza nominale di 3,6 MW, per una potenza complessiva di 43,2 MW, e de",
+"project_key": "wind:mase_12222",
+"title": "Valutazione preliminare ai sensi dell'art.6, c.9 e c.9 bis) del D.Lgs. 152/2006 relativa alla modifica del layout del progetto di un impianto eolico ubicato nel territorio comunale di Ascoli Satriano (FG), nelle località Pozzo Spagnuolo, Co",
 "region": "Puglia",
 "province": "FG",
-"municipalities": "ASCOLI SATRIANO, DELICETO",
+"municipalities": "DELICETO",
 "source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/1777",
-"power_mw": 43.2,
+"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12222",
+"power_mw": null,
 "proponent": "Wind Energy Ascoli S.r.l.",
 "project_type": "Eolico",
-"procedure_status": "Conclusa",
+"procedure_status": "Verifica amministrativa",
 "readiness": "",
-"secondaria": false,
+"secondaria": true,
 "changes": [
 {
-"field": "procedure",
-"label": "Procedura",
-"old": "",
-"new": "Valutazione Impatto Ambientale",
-"progress": false
-},
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Verifica amministrativa, Conclusa",
-"new": "Conclusa",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8975",
-"title": "Progetto di un impianto eolico, costituito da 7 aerogeneratori di potenza complessiva di 42 MW, e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Canicattì, Naro, Castrofilippo, Agrigento, e Favara, in Provincia d",
-"region": "Sicilia",
-"province": "AG",
-"municipalities": "CANICATTÌ, NARO, CASTROFILIPPO, AGRIGENTO, FAVARA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8975",
-"power_mw": 42.0,
-"proponent": "RWE Renewables Italia S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Conferenza di Servizi Regione",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Analisi Pareri",
-"new": "Conferenza di Servizi Regione",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_12188",
-"title": "Variazione progettuale del parco eolico con impianto di accumulo e opere connesse denominato \"Astra\", della potenza complessiva di 39,6 MW, ricadente nei comuni di Castronovo di Sicilia (PA), Roccapalumba (PA), Lercara Friddi (PA) [ID 8475]",
-"region": "Sicilia",
-"province": "PA",
-"municipalities": "CASTRONOVO DI SICILIA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/12188",
-"power_mw": 39.6,
-"proponent": "Renantis Sicilia S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Valutazione in corso",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Verifica amministrativa",
-"new": "Valutazione in corso",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_11107",
-"title": "Progetto di un impianto eolico costituito da 6 aerogeneratori, per una potenza complessiva di 37,20 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Campagna (SA), Contursi Terme (SA) e Sicignano degli Alburni (SA).",
-"region": "Campania",
-"province": "SA",
-"municipalities": "CAMPAGNA",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11107",
-"power_mw": 37.2,
-"proponent": "Ame Energy S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "Analisi Pareri",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "In attesa concerto",
-"new": "Analisi Pareri",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_8849",
-"title": "Progetto di impianto per la produzione di energia elettrica da fonte rinnovabile eolica, costituito da 5 aerogeneratori, ciascuno di potenza nominale pari a 6,2 MW per una potenza complessiva di 31 MW e di un sistema di accumulo integrato c",
-"region": "Puglia",
-"province": "LE",
-"municipalities": "SQUINZANO",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8849",
-"power_mw": 31.0,
-"proponent": "Enel Green Power Puglia S.r.l.",
-"project_type": "Eolico",
-"procedure_status": "",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "Analisi Pareri",
-"new": "",
-"progress": false
-}
-],
-"progress": false
-},
-{
-"project_key": "wind:mase_10110",
-"title": "Progetto di un impianto eolico denominato \"BELMONTE\", costituito da n. 5 aerogeneratori con potenza unitaria di 6,1 MW, per una potenza complessiva di 30,5 MW, da realizzarsi nei comuni di Calamonaci (AG) e Ribera (AG).",
-"region": "Sicilia",
-"province": "AG",
-"municipalities": "CALAMONACI",
-"source_label": "MASE",
-"url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10110",
-"power_mw": 30.5,
-"proponent": "NP SICILIA 5 S.R.L.",
-"project_type": "Eolico",
-"procedure_status": "Analisi Pareri",
-"readiness": "",
-"secondaria": false,
-"changes": [
-{
-"field": "procedure_status",
-"label": "Stato procedura",
-"old": "In attesa concerto",
-"new": "Analisi Pareri",
+"field": "card",
+"label": "Scheda documenti",
+"old": false,
+"new": true,
 "progress": false
 }
 ],
 "progress": false
 }
 ],
-"generated": "2026-11-16T13:42:32Z",
-"date": "2026-11-16",
-"previous_census": "2026-11-13",
-"census": "2026-11-16"
+"generated": "2026-11-19T16:34:26Z",
+"date": "2026-11-19",
+"previous_census": "2026-11-16",
+"census": "2026-11-19"
 }
