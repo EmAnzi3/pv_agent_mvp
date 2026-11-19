@@ -1,0 +1,489 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10146",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"Ofanto\", costituito da 7 aerogeneratori di potenza unitaria di 7 MW, per una potenza complessiva d'impianto pari a 49 MW, da realizzarsi nei comuni di Cerignola (FG) e Trinitapoli (BT), incluse le relative opere di connessione alla RTN (cod. MYTERNA n. 202101434).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10146",
+ "source": "mase",
+ "updated": "2026-11-19",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "49 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10146",
+    "excerpt": "49 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "7,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 66 (2), 49 (1), 8 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/904477",
+    "page": 1,
+    "document": "Avviso al Pubblico del 22/09/2023",
+    "excerpt": "[ID_VIP: 10210] Impianto per la produzione di energia elettrica da fonte eolica composto da n.7 aerogeneratori con potenza totale installata pari a 49 MW e relative opere connesse denominato “Ofanto” sito nei Comuni di C"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/904421",
+    "page": 29,
+    "document": "Preventivo per la connessione",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BT",
+  "comuni": [
+   "Cerignola",
+   "Trinitapoli"
+  ],
+  "coordinate": {
+   "lat": 41.3724,
+   "lon": 15.88083,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (10 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/904332",
+    "page": 5,
+    "document": "Relazione di shadow flickering",
+    "excerpt": "1 Cerignola (FG) | 78 430 A03 572719,9 |4580349,6|4( 20° , 110° , 200° , 290° )"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.37240,15.88083",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.36593,
+   "lon": 15.89547,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/904338",
+    "page": 3,
+    "document": "Nulla osta attività minerarie",
+    "excerpt": "8 41.364785° 15.895473° Stazione elettrica di Utenza"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.36593,15.89547"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Fri-El Ofanto S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fri-el.ofanto@legalmail.it",
+     "occurrences": 152,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/904456",
+      "page": 1,
+      "document": "Relazione PPTR",
+      "excerpt": "Piazza del Grano 3, I-39100 Bolzano (BZ) fri-el.ofanto@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0471324210",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/984573",
+      "page": 1,
+      "document": "Controdeduzioni in risposta alle osservazioni",
+      "excerpt": "con sede legale in: Bolzano (BZ), C.A.P. 39100, Piazza del Grano, n.3, telefono +39 0471 324 210, PEC:"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10146"
+   }
+  },
+  {
+   "name": "Ing. Massimo Lo Russo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "massimo.lorusso@progettoenergia.biz",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/904321",
+      "page": 1,
+      "document": "ELENCO DOCUMENTI_VIA",
+      "excerpt": "M. LO RUSSO massimo.lorusso@progettoenergia.biz"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/904456",
+    "page": 1,
+    "document": "Relazione PPTR",
+    "excerpt": "Progettista:"
+   }
+  },
+  {
+   "name": "Dott. Antonio Petriccione",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/904439",
+    "page": 1,
+    "document": "Relazione geologica del progetto definitivo",
+    "excerpt": "Progettazione: Geologo: Dott. Antonio Petriccione"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Inge S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3483850177",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/904440",
+      "page": 50,
+      "document": "Relazione geotecnica del progetto definitivo",
+      "excerpt": "81020 Castel Morrone (CE) Tel/Fax 0823399115 Cell. 3483850177 - 3486033921"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Progetto Energia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@progettoenergia.biz",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/904439",
+      "page": 1,
+      "document": "Relazione geologica del progetto definitivo",
+      "excerpt": "STATI www.progattoenergia.biz | info@progettoenergia.biz TINI"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0825891313",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/904423",
+      "page": 1,
+      "document": "Relazione Archeologica",
+      "excerpt": "Tel. +39 0825 891313"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alerion Servizi Tecnici E Sviluppo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "bioenergia_srl@legalmail.itpreventivo",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/904421",
+      "page": 2,
+      "document": "Preventivo per la connessione",
+      "excerpt": "DIV4NO6_PreventivoConnessione bioenergia_srl@legalmail.itPREVENTIVO"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "12 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Deposito opere civili",
+    "start": 0.71,
+    "end": 2.71,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Picchettamento delle aree",
+    "start": 0.47,
+    "end": 1.72,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione area di cantiere e recinzione provvisionale",
+    "start": 0.71,
+    "end": 1.97,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione della viabilità",
+    "start": 1.21,
+    "end": 3.94,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni c.a. aereogeneratori",
+    "start": 2.69,
+    "end": 5.67,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Posa in opera di cavidotti 30 kV",
+    "start": 1.7,
+    "end": 7.64,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e montaggio aereogeneratori",
+    "start": 3.43,
+    "end": 7.15,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Costruzione SSE – Opere elettriche e di connessione alla RTN",
+    "start": 2.19,
+    "end": 9.16,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Regolazione e Collaudo finale",
+    "start": 8.36,
+    "end": 10.78,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Pulizia e sistemazione finale del sito",
+    "start": 10.22,
+    "end": 11.85,
+    "level": 2,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 11.85,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/904461",
+   "page": 152,
+   "document": "Studio di impatto ambientale",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/904421",
+    "page": 29,
+    "document": "Preventivo per la connessione",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma lavori",
+   "url": "https://va.mite.gov.it/File/Documento/904336"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma lavori",
+    "url": "https://va.mite.gov.it/File/Documento/904336"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 161,
+  "pagine": 1702,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Fri-El Ofanto S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 49.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CERIGNOLA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BT",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "8 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
