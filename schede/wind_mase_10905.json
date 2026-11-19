@@ -1,0 +1,622 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10905",
+ "title": "Progetto per la realizzazione di un impianto eolico costituito da n.12 aerogeneratori connesso alla rete elettrica di distribuzione ubicato entro i territori comunali di Monte Cavallo, Pieve Torina e Serravalle di Chienti (MC) della potenza totale di 49,4 MW.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10905",
+ "source": "mase",
+ "updated": "2026-11-19",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "49,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10905",
+    "excerpt": "49,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "12",
+   "status": "da documenti",
+   "sub": "4,12 MW ciascuno · altezza mozzo 92 m · diametro rotore 115 m · Valore prevalente negli elaborati; altri valori: 4 (4), 5 (4), 73 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1079102",
+    "page": 1,
+    "document": "Avviso al Pubblico del 10/06/2024",
+    "excerpt": "Ambientale del progetto Impianto eolico costituito da 12 aerogeneratori connesso alla rete elettrica di distribuzione ubicato entro i territori comunali di Monte Cavallo, Pieve Torina e Serravalle di Chienti (MC) della p"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1398575",
+    "page": 93,
+    "document": "Integrazioni del 31/03/2026 - Monitoraggio Avifauna",
+    "excerpt": "Key Uncertaintes of Seabird Flight and Avoidance Behaviours at Offshore Wind Farms.)."
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "60 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 15 MW (16)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1104139",
+    "page": 4,
+    "document": "Richiesta integrazioni della documentazione della Regione Marche",
+    "excerpt": "nei comuni di Pieve Torina (MC), Serravalle di Chienti (MC) e Montecavallo (MC). Restart 2023; - [ID: 12505] Progetto di un parco eolico nominale pari a 60 MW e sistema di storage da 15 MW sito nei Comuni di Foligno e No"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (3), 18 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1078996",
+    "page": 92,
+    "document": "IE_360_PD_SIA_001_01_SIA_signed",
+    "excerpt": "loc. Fonte delle Mattinate nel comune di Serravalle del Chienti. In conclusione la realizzazione dell’opera, che avverrà nell’arco di circa 12 mesi, prevede l’esecuzione di fasi sequenziali e non contemporanee di lavoro "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Marche",
+  "provincia": "MC",
+  "comuni": [
+   "Pieve Torina",
+   "Serravalle Di Chienti",
+   "Monte Cavallo"
+  ],
+  "coordinate": {
+   "lat": 42.99496,
+   "lon": 12.9527,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (614 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1078996",
+    "page": 69,
+    "document": "IE_360_PD_SIA_001_01_SIA_signed",
+    "excerpt": "T1 2354199.53 4764137.18 1200"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.99496,12.95270",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 43.02873,
+   "lon": 12.89057,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1210171",
+    "page": 5,
+    "document": "Integrazioni del 23/12/202 - Impatto Visivo Fotoinserimenti",
+    "excerpt": "DISTANZA FOCALE: 50 mm Ce = - = COORDINATE GEOGRAFICHE WGS84 PUNTO: 43° 1'43.41\"N - 12°53'26.04\"E ==: Posa 2 QUOTA PUNTO DI SCATTO: h. 762,6 m sim x >"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=43.02873,12.89057"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Wind Energy Monte Cavallo S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02372170684",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Caravaggio N 125 65125 Pescara Pe",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "windenergymontecavallo@legpec.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1208820",
+      "page": 1,
+      "document": "Integrazioni del 17/01/2025 . Procedura VIA PNIEC-PNRR impianto eolico",
+      "excerpt": "Wind Energy Monte Cavallo Srl - Via Caravaggio 125 - 65125 Pescara - Tel. +39 085 388801 - Fax +39 085 3888200 Reg. Imp. Pescara, C.F. e P. Iva 02372170684 - Cap. Soc. € 10.000 i.v. - Email info@carlomaresca.it - PEC win"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@carlomaresca.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1208820",
+      "page": 1,
+      "document": "Integrazioni del 17/01/2025 . Procedura VIA PNIEC-PNRR impianto eolico",
+      "excerpt": "Wind Energy Monte Cavallo Srl - Via Caravaggio 125 - 65125 Pescara - Tel. +39 085 388801 - Fax +39 085 3888200 Reg. Imp. Pescara, C.F. e P. Iva 02372170684 - Cap. Soc. € 10.000 i.v. - Email info@carlomaresca.it - PEC win"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "085388801",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1208820",
+      "page": 1,
+      "document": "Integrazioni del 17/01/2025 . Procedura VIA PNIEC-PNRR impianto eolico",
+      "excerpt": "Wind Energy Monte Cavallo Srl - Via Caravaggio 125 - 65125 Pescara - Tel. +39 085 388801 - Fax +39 085 3888200"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10905"
+   }
+  },
+  {
+   "name": "Dott. Geologo Davide Lo Conte",
+   "kind": "persona",
+   "roles": [
+    "Progettista",
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1078996",
+    "page": 1,
+    "document": "IE_360_PD_SIA_001_01_SIA_signed",
+    "excerpt": "Geologia: Geosystem Studio Associato di Geologia e Progettazione"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Agrifolia Studio Associato DI DR. D.DALLARI,GIANFILIPPO, MOR",
+   "kind": "società",
+   "roles": [],
+   "vat": "06798751001",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Abetone 4 00141 Roma Rm",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "studio@agrifolia.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1398575",
+      "page": 1,
+      "document": "Integrazioni del 31/03/2026 - Monitoraggio Avifauna",
+      "excerpt": "Via Abetone, 4 - 00141 Roma - Tel. 06.8719.4907 E-mail: studio@agrifolia.it - www.agrifolia.it - P.IVA: 06798751001"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Amici Della Terra APS",
+   "kind": "società",
+   "roles": [],
+   "vat": "02141761003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ippolito Nievo 62 Sc C I 00153 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amicidellaterra@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1095507",
+      "page": 1,
+      "document": "Osservazioni dell'ASSOCIAZIONE AMICI DELLA TERRA ONLUS, in data 25/06/2024",
+      "excerpt": "HUwww.amicidellaterra.itUH amicidellaterra@pec.it – segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@amicidellaterra.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1095507",
+      "page": 1,
+      "document": "Osservazioni dell'ASSOCIAZIONE AMICI DELLA TERRA ONLUS, in data 25/06/2024",
+      "excerpt": "HUwww.amicidellaterra.itUH amicidellaterra@pec.it – segreteria@amicidellaterra.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ingenium engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "info@pec.ingenium-engineering.com",
+     "occurrences": 1927,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1078996",
+      "page": 2,
+      "document": "IE_360_PD_SIA_001_01_SIA_signed",
+      "excerpt": "Via Lorenzo Maitani 3 - 05018 Orvieto (TR) tel. 0763.530340 fax 0763.530344 e-mail: info@ingenium-engineering.com - PEC: info@pec.ingenium-engineering.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@ingenium-engineering.com",
+     "occurrences": 2023,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1078996",
+      "page": 1,
+      "document": "IE_360_PD_SIA_001_01_SIA_signed",
+      "excerpt": "tel. 0763.530340 fax 0763.530344 e mail: info@ingenium-engineering.com LOR E NZOTTI"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0763530340",
+     "occurrences": 1680,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1078996",
+      "page": 1,
+      "document": "IE_360_PD_SIA_001_01_SIA_signed",
+      "excerpt": "O Via Maitani, 3 - 05018 Orvieto (TR) Roberto tel. 0763.530340 fax 0763.530344"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0763344796",
+     "occurrences": 63,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1299756",
+      "page": 1,
+      "document": "Integrazioni del 05/08/2025 - IE_360_PD_FI_008-021_FOTOINSERIMENTIINTEGRAT_signed",
+      "excerpt": "Via Maitani, 3 - 05018 Orvieto (TR) tel. 0763.344796"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasri.com",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1210119",
+      "page": 32,
+      "document": "Integrazioni del 23/12/202 - Valutazione Previsionale di Impatto Acustico in fase di cantiere",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196 www.Sonorasil.com - sonora@sonorasri.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 60,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1210119",
+      "page": 28,
+      "document": "Integrazioni del 23/12/202 - Valutazione Previsionale di Impatto Acustico in fase di cantiere",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sinergye Ring S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@sinergye.it",
+     "occurrences": 47,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1210101",
+      "page": 1,
+      "document": "Integrazioni del 23/12/202 - Relazione Tecnica Generale - Parco Eolico Serravalle",
+      "excerpt": "e_mail: info@sinergye.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "pipponobile@sinergye.it",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1210101",
+      "page": 1,
+      "document": "Integrazioni del 23/12/202 - Relazione Tecnica Generale - Parco Eolico Serravalle",
+      "excerpt": "pipponobile@sinergye.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Blusolar Servizi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "blusolarservizisrl@legpec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1210149",
+      "page": 1,
+      "document": "Integrazioni del 23/12/202 - Preventivo di Connessione per Impianto Eolico",
+      "excerpt": "65125 PESCARA (PE) blusolarservizisrl@legpec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Wind Energia Monte Cavallo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0737617511",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1099082",
+      "page": 1,
+      "document": "Osservazioni dell'Unione Montana \"Marca di Camerino\", in data 2/07/2024",
+      "excerpt": "Via V. Varano, 2 — 62032 CAMERINO (MC) © A’; ww.uni memarcadicameri : E-mail: iunionemarcadicameri i 1 cod.fisc.e P.IVA 01874730433 tel. 0737 617511 - fax 0737 617501. PEC: unionemarcadicamerino sica"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "6 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "OOCC A SERVIZIO RETE ELETTRICA E TELECONTROLLO ‐ CAVIDOTTO INTERNO (Scavi, rinte",
+    "start": 0.0,
+    "end": 3.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "OOCC A SERVIZIO RETE ELETTRICA E TELECONTROLLO ‐ CAVIDOTTO ESTERNO (Scavi, rinte",
+    "start": 0.99,
+    "end": 4.0,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "TRASPORTI",
+    "start": 0.99,
+    "end": 4.0,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "MONTAGGIO SOLLEVAMENTO",
+    "start": 1.49,
+    "end": 5.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "MESSA IN ESERCIZIO: installazione apparecchiature e realizzazione collegamenti O",
+    "start": 1.99,
+    "end": 6.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTI INTERNI OOEE",
+    "start": 0.99,
+    "end": 4.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTI ESTERNI OOEE",
+    "start": 1.99,
+    "end": 5.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CABINA DI RACCOLTA/SMISTAMENTO E OPERE DI RETE OOEE",
+    "start": 2.99,
+    "end": 6.0,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 6.0,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1210173",
+   "page": 2,
+   "document": "Integrazioni del 23/12/202 - Cronoprogramma Impianto Eolico Monte Cavallo",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "6°",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "7°",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "8°",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "9°",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "10°",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "11°",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "12°",
+     "start": 6.0,
+     "end": 7.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 mesi (3), 4 settimane (2), 18 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1078996",
+    "page": 92,
+    "document": "IE_360_PD_SIA_001_01_SIA_signed",
+    "excerpt": "loc. Fonte delle Mattinate nel comune di Serravalle del Chienti. In conclusione la realizzazione dell’opera, che avverrà nell’arco di circa 12 mesi, prevede l’esecuzione di fasi sequenziali e non contemporanee di lavoro "
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 23/12/202 - Cronoprogramma Impianto Eolico Monte Cavallo",
+   "url": "https://va.mite.gov.it/File/Documento/1210173"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "IE_360_PD_RG_005_cronoprogramma_signed",
+    "url": "https://va.mite.gov.it/File/Documento/1079081"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 329,
+  "pagine": 4304,
+  "completa": false,
+  "da_leggere": 29
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Wind Energy Monte Cavallo S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 49.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "MC",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Marche",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "541 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
