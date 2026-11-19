@@ -43,6 +43,22 @@ class ZoneJsonTest(unittest.TestCase):
         cjr.write_json(out, result)
         self.assertEqual(json.loads(out.read_text(encoding="utf-8"))["avanzamenti"][0]["what"], "FER X: incentivo assegnato")
 
+    def test_realised_goes_to_its_own_list(self):
+        import pv_signals
+        base = {"level": "", "phase": "", "phase_label": "", "ferx": False, "epc": "", "news": 0}
+        prev = {"k": dict(base, level="Media", phase="possibile", phase_label="Avvio possibile entro 12 mesi")}
+        cur = {"k": dict(base, phase="realizzato", phase_label="Realizzato o in esercizio", epc="A")}
+        ch = pv_signals.compare(prev, cur)["k"]
+        self.assertEqual(ch[0]["label"], pv_signals.REALIZED)
+        self.assertNotIn("Priorità cantiere", [d["label"] for d in ch])
+        rec = {"project_key": "k", "region": "Lazio"}
+        out = self.tmp / "r.json"
+        cjr.write_json(out, {"added": [], "progress": [], "realized": [{"record": rec, "diffs": ch, "kind": "realizzato"}]})
+        data = json.loads(out.read_text(encoding="utf-8"))
+        self.assertEqual(data["counts"]["realizzati"], 1)
+        self.assertEqual(data["realizzati"][0]["what"], "Realizzato o in esercizio")
+        self.assertEqual(data["avanzamenti"], [])
+
     def test_generated_at_reads_old_snapshot(self):
         old = self.tmp / "old.json"
         old.write_text(json.dumps({"summary": {"generated_at": "2026-11-13 08:47:54"}, "records": []}), encoding="utf-8")

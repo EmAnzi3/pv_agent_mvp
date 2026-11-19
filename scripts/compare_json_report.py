@@ -325,9 +325,14 @@ def html_changed_table(changed: list[dict[str, Any]], max_rows: int = 500) -> st
     """
 
 
-def html_progress_table(rows: list[dict[str, Any]], note: str) -> str:
+REALIZED_NOTE = ("Impianti arrivati a fine lavori o in esercizio dall'ultima pubblicazione: non sono più cantieri, "
+                 "ma restano opportunità di noleggio per manutenzione e gestione. «Probabilmente realizzato» = "
+                 "fine lavori prevista passata su un progetto autorizzato, senza atti successivi: da verificare.")
+
+
+def html_progress_table(rows: list[dict[str, Any]], note: str, title: str = "Avanzamenti verso il cantiere") -> str:
     if not rows:
-        return f"<h2>Avanzamenti verso il cantiere</h2><p class=\"small\">{esc(note)}</p><p>Nessun record.</p>"
+        return f"<h2>{esc(title)}</h2><p class=\"small\">{esc(note)}</p><p>Nessun record.</p>"
     body = []
     for item in rows:
         r = item["record"]
@@ -339,7 +344,7 @@ def html_progress_table(rows: list[dict[str, Any]], note: str) -> str:
         body.append(f"<tr><td>{esc(source_of(r))}</td><td>{esc(clean(r.get('region')))}</td><td>{esc(loc)}</td>"
                     f"<td>{esc(fmt_mw(r.get('power_mw')))}</td><td>{esc(clean(r.get('proponent')))}</td>"
                     f"<td>{title}</td><td><ul>{diffs}</ul></td></tr>")
-    return (f"<h2>Avanzamenti verso il cantiere ({len(rows)})</h2><p class=\"small\">{esc(note)}</p><table><thead><tr>"
+    return (f"<h2>{esc(title)} ({len(rows)})</h2><p class=\"small\">{esc(note)}</p><table><thead><tr>"
             "<th>Fonte</th><th>Regione</th><th>Localizzazione</th><th>MW</th><th>Proponente</th><th>Titolo</th>"
             f"<th>Cosa è cambiato</th></tr></thead><tbody>{''.join(body)}</tbody></table>")
 
@@ -405,7 +410,7 @@ h1 {{
 }}
 .cards {{
   display: grid;
-  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-columns: repeat(6, minmax(140px, 1fr));
   gap: 12px;
   margin: 18px 0 24px;
 }}
@@ -463,6 +468,7 @@ ul {{
 
   <div class="cards">
     <div class="card"><strong>{len(result.get("progress", []))}</strong>Avanzamenti verso il cantiere</div>
+    <div class="card"><strong>{len(result.get("realized", []))}</strong>Progetti realizzati</div>
     <div class="card"><strong>{len(added)}</strong>Nuovi progetti</div>
     <div class="card"><strong>{len(changed)}</strong>Record modificati</div>
     <div class="card"><strong>{len(removed)}</strong>Progetti rimossi</div>
@@ -479,6 +485,7 @@ ul {{
   </section>
 
   <section>{html_progress_table(result.get("progress", []), result.get("progress_note", ""))}</section>
+  <section>{html_progress_table(result.get("realized", []), REALIZED_NOTE, "Progetti realizzati")}</section>
   <section>{html_record_table("Nuovi progetti", added)}</section>
   {html_missing_table([r for r in added if missing_fields(r) and "terna" not in url_of(r)])}
   <section>{html_changed_table(changed)}</section>
@@ -499,11 +506,11 @@ def write_csv(path: Path, result: dict[str, Any]) -> None:
             "mw", "proponent", "title", "field", "old_value", "new_value", "url"
         ])
 
-        for item in result.get("progress", []):
+        for item in result.get("progress", []) + result.get("realized", []):
             record = item["record"]
             for diff in item["diffs"]:
                 writer.writerow([
-                    "progress", source_of(record), clean(record.get("region")),
+                    "realized" if item.get("kind") == "realizzato" else "progress", source_of(record), clean(record.get("region")),
                     clean(record.get("province")), clean(record.get("municipalities")),
                     fmt_mw(record.get("power_mw")), clean(record.get("proponent")),
                     title_of(record, 300), diff["label"], diff["old"], diff["new"], url_of(record)
@@ -567,12 +574,15 @@ def write_json(path: Path, result: dict[str, Any], since: str = "") -> None:
         what = clean(main.get("new")) if main.get("label") == "Fase" else ": ".join(
             x for x in (clean(main.get("label")), clean(main.get("new"))) if x)
         avanz.append(_zone_row(record, what or "avanzamento"))
+    realizzati = [_zone_row(item["record"], clean(item["diffs"][0].get("new")) or "Realizzato")
+                  for item in result.get("realized", []) if live(item["record"])]
     payload = {
         "date": datetime.now().strftime("%Y-%m-%d"),
         "since": since,
-        "counts": {"nuovi": len(nuovi), "avanzamenti": len(avanz)},
+        "counts": {"nuovi": len(nuovi), "avanzamenti": len(avanz), "realizzati": len(realizzati)},
         "nuovi": nuovi,
         "avanzamenti": avanz[:1500],
+        "realizzati": realizzati[:1500],
     }
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
@@ -605,7 +615,9 @@ def main() -> int:
         try:
             sys.path.insert(0, str(Path(__file__).resolve().parent))
             from pv_signals import progress
-            result["progress"], result["progress_note"] = progress(new_records)
+            rows, result["progress_note"] = progress(new_records)
+            result["realized"] = [r for r in rows if r.get("kind") == "realizzato"]
+            result["progress"] = [r for r in rows if r.get("kind") != "realizzato"]
         except Exception as exc:  # the report must come out anyway
             result["progress"], result["progress_note"] = [], f"Segnali di cantiere non disponibili ({exc})"[:200]
 
@@ -626,6 +638,7 @@ def main() -> int:
     print(f"changed: {len(result['changed'])}")
     print(f"removed: {len(result['removed'])}")
     print(f"progress: {len(result.get('progress', []))}")
+    print(f"realized: {len(result.get('realized', []))}")
     print(f"html: {html_path}")
     print(f"csv: {csv_path}")
 

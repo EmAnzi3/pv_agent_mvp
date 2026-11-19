@@ -18,7 +18,8 @@ REPO = "EmAnzi3/pv_agent_mvp"
 BRANCH = "doc-intel-state"
 FILES = {"readiness": "readiness/index.json", "cards": "schede/live_index.json", "news": "news/matches.json"}
 LEVELS = {None: 0, "": 0, "Bassa": 1, "Media": 2, "Alta": 3}
-NEAR_SITE = ("in_corso", "entro_12_mesi", "realizzato")
+NEAR_SITE = ("in_corso", "entro_12_mesi")
+REALIZED = "Realizzato"      # diff label of a project that reached «realizzato»: reported apart (O&M rentals)
 EPC_LABEL = {"A": "in atto di cantiere", "B": "solo negli elaborati"}
 
 
@@ -80,9 +81,13 @@ def compare(prev: dict, cur: dict) -> dict[str, list[dict]]:
     for k, n in cur.items():
         o = prev.get(k) or {"level": "", "phase": "", "phase_label": "", "ferx": False, "epc": "", "news": 0}
         ch = []
+        if n["phase"] == "realizzato" and o["phase"] != "realizzato":
+            ch.append({"label": REALIZED, "old": o["phase_label"] or "—", "new": n["phase_label"]})
         # a project just read that lands on «Bassa · in iter» is not a step forward: only a priority that
         # reaches Media/Alta, or an authorisation, counts
-        if LEVELS.get(n["level"], 0) > LEVELS.get(o["level"], 0) and (
+        if ch:
+            pass                          # realised: the phase is already said, no priority line
+        elif LEVELS.get(n["level"], 0) > LEVELS.get(o["level"], 0) and (
                 LEVELS.get(n["level"], 0) >= 2 or n["phase"] in ("autorizzato",) + NEAR_SITE):
             ch.append({"label": "Priorità cantiere",
                        "old": " · ".join(x for x in [o["level"], o["phase_label"]] if x) or "—",
@@ -111,6 +116,7 @@ def progress(new_records: list[dict]) -> tuple[list[dict], str]:
     if not prev:
         return [], "Segnali di cantiere: nessuno stato precedente da confrontare."
     by_key = {str(r.get("project_key") or ""): r for r in new_records}
-    rows = [{"record": by_key[k], "diffs": ch} for k, ch in compare(prev, cur).items() if k in by_key]
+    rows = [{"record": by_key[k], "diffs": ch, "kind": "realizzato" if ch[0]["label"] == REALIZED else "avanzamento"}
+            for k, ch in compare(prev, cur).items() if k in by_key]
     rows.sort(key=lambda r: -float(r["record"].get("power_mw") or 0))
     return rows, f"Rispetto alla pubblicazione del {since[8:10]}/{since[5:7]}/{since[:4]}: priorità cantiere salita, FER X, EPC trovato nei documenti, nuove notizie di stampa."

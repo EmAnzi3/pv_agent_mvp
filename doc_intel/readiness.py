@@ -2,7 +2,8 @@
 collected (project cards, GSE FER X rankings, execution evidence, press). Information only.
 
 Every project gets a phase, a score and the list of reasons behind it - never a bare number:
-  phase   realizzato      works ended / plant in operation (documented) or planned end passed with no later act
+  phase   realizzato      works ended / plant in operation (documented) or planned end passed with no later
+                          act on an authorised project («Probabilmente realizzato (da verificare)»)
           in_corso        start of works documented (or planned start passed with nothing filed after it)
           entro_12_mesi   documented or planned start date within the next 12 months
           possibile       authorised, start window (estimated from the act and its validity) open in the next
@@ -75,7 +76,10 @@ def classify(card: dict | None, ferx: list | None = None, news: list | None = No
         auth = t.get("autorizzazione")
         if auth:
             reasons.append(f"Atto autorizzativo: {auth.get('atto')} del {auth.get('data')}")
-        if ended or stato == "potenzialmente_realizzato":
+        # an end date that only passed on paper means «probably built» only when the project was authorised
+        # (or works started): a project still in its procedure («rinviato a VIA») cannot have been built
+        presumed = not ended and stato == "potenzialmente_realizzato" and bool(auth or start_doc)
+        if ended or presumed:
             phase = "realizzato"
             window = f"fine lavori / esercizio {_fmt(max(ended))}" if ended else (card.get("stato") or {}).get("reason")
         elif stato == "avviato":
@@ -136,8 +140,10 @@ def classify(card: dict | None, ferx: list | None = None, news: list | None = No
     if phase is None:
         return {}
     if phase == "realizzato":
-        return {"phase": phase, "phase_label": PHASE_LABEL[phase], "window": window, "score": 0, "level": None,
-                "reasons": reasons}
+        presumed = bool(card) and not ended
+        label = "Probabilmente realizzato (da verificare)" if presumed else PHASE_LABEL[phase]
+        return {"phase": phase, "phase_label": label, "window": window, "score": 0, "level": None,
+                "reasons": reasons, **({"presunto": True} if presumed else {})}
     score = BASE[phase] + (4 if ferx else 0) + (1 if news else 0) + (2 if ottemperanza else 0) - (3 if archived else 0)
     if card:
         ex = card.get("esecuzione") or {}

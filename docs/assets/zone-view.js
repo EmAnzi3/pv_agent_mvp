@@ -69,6 +69,7 @@
     const near = items.filter(isNear).sort(nearSort);
     const ch = A.changes() || {};
     const nuovi = (ch.nuovi || []).filter(x => inZone(x, z)), avanz = (ch.avanzamenti || []).filter(x => inZone(x, z));
+    const realiz = (ch.realizzati || []).filter(x => inZone(x, z)).map(x => Object.assign({ done: true }, x));
     const sum = list => list.reduce((s, x) => s + num(x.mw), 0);
     const name = zoneName(z);
 
@@ -84,8 +85,8 @@
     const withCard = items.filter(x => x.card).length;
     $('zoneKpis').innerHTML = [
       kpi('Vicini al cantiere', it(near.length), esc(mw(sum(near))) + ' · priorità alta e media', true),
-      kpi("Novità dall'ultimo aggiornamento", ch.loaded ? it(nuovi.length + avanz.length) : '–',
-        ch.loaded ? `${it(nuovi.length)} nuovi · ${it(avanz.length)} avanzamenti${since ? ' · ' + esc(since) : ''}` : 'Disponibile dal prossimo aggiornamento'),
+      kpi("Novità dall'ultimo aggiornamento", ch.loaded ? it(nuovi.length + avanz.length + realiz.length) : '–',
+        ch.loaded ? `${it(nuovi.length)} nuovi · ${it(avanz.length)} avanzamenti${realiz.length ? ' · ' + it(realiz.length) + ' realizzati' : ''}${since ? ' · ' + esc(since) : ''}` : 'Disponibile dal prossimo aggiornamento'),
       kpi('Progetti in zona', it(items.length), esc(mw(sum(items))) + (A.scopeNote ? ' · ' + esc(A.scopeNote) : '')),
       kpi('Con scheda documenti', it(withCard), items.length ? Math.round(withCard * 100 / items.length) + '% dei progetti in zona' : '')
     ].join('');
@@ -111,11 +112,11 @@
 
     // news in the zone
     const newsList = (list, tag, empty) => list.length
-      ? list.slice(0, 6).map(x => `<div class="news-item"><span title="${esc(x.title)}"><strong>${esc(placeOf(x))}</strong>${x.proponent ? ' · ' + esc(x.proponent) : ''}${x.mw ? ' · ' + esc(mw(x.mw)) : ''}</span><span class="tag">${esc(tag(x))}</span></div>`).join('')
+      ? list.slice(0, 6).map(x => `<div class="news-item"><span title="${esc(x.title)}"><strong>${esc(placeOf(x))}</strong>${x.proponent ? ' · ' + esc(x.proponent) : ''}${x.mw ? ' · ' + esc(mw(x.mw)) : ''}</span><span class="tag${x.done ? ' done' : ''}">${esc(tag(x))}</span></div>`).join('')
         + (list.length > 6 ? `<div class="small muted">e altri ${it(list.length - 6)}</div>` : '')
       : `<div class="zone-empty">${empty}</div>`;
     const wait = 'Disponibile dal prossimo aggiornamento.';
-    $('progressList').innerHTML = ch.loaded ? newsList(avanz, x => x.what || 'avanzamento', `Nessun avanzamento in ${esc(name)} nell'ultimo aggiornamento.`) : `<div class="zone-empty">${wait}</div>`;
+    $('progressList').innerHTML = ch.loaded ? newsList(avanz.concat(realiz), x => x.what || (x.done ? 'realizzato' : 'avanzamento'), `Nessun avanzamento in ${esc(name)} nell'ultimo aggiornamento.`) : `<div class="zone-empty">${wait}</div>`;
     $('newList').innerHTML = ch.loaded ? newsList(nuovi, x => x.what || 'nuovo', `Nessun nuovo progetto in ${esc(name)} nell'ultimo aggiornamento.`) : `<div class="zone-empty">${wait}</div>`;
     if ($('changesSince')) $('changesSince').textContent = since;
 

@@ -1366,7 +1366,7 @@ __ZONE_CSS__
         <button type="button" class="zone-more" id="nearMore" hidden></button>
       </div>
       <div class="zone-two">
-        <div class="zone-card"><div class="zone-head"><h2>Avanzamenti in zona</h2><span class="small" id="changesSince"></span></div><div id="progressList"></div></div>
+        <div class="zone-card"><div class="zone-head"><h2>Avanzamenti e realizzati in zona</h2><span class="small" id="changesSince"></span></div><div id="progressList"></div></div>
         <div class="zone-card"><div class="zone-head"><h2>Nuovi in zona</h2><span class="small">dall'ultimo aggiornamento</span></div><div id="newList"></div></div>
       </div>
     </section>
@@ -2037,7 +2037,7 @@ __ZONE_CSS__
     getIndex('changes_latest.json').then(c => {
       if (!c || !c.date) return;
       zoneChanges = { loaded: true, date: c.date, since: c.since,
-        nuovi: (c.nuovi || []).map(changeItem), avanzamenti: (c.avanzamenti || []).map(changeItem) };
+        nuovi: (c.nuovi || []).map(changeItem), avanzamenti: (c.avanzamenti || []).map(changeItem), realizzati: (c.realizzati || []).map(changeItem) };
       window.ZoneView.render();
     });
 

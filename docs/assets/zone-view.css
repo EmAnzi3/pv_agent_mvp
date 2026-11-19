@@ -42,6 +42,7 @@
 .news-item { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; border-bottom: 1px solid #eef2f6; padding-bottom: 8px; }
 .news-item:last-child { border-bottom: 0; padding-bottom: 0; }
 .news-item .tag { color: #0f766e; font-weight: 700; text-align: right; }
+.news-item .tag.done { color: #475569; }
 
 .nat-grid { display: grid; grid-template-columns: 420px minmax(0, 1fr); gap: 20px; align-items: stretch; }
 .nat-grid > * { min-width: 0; }
