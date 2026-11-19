@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-19 — Dashboard «La mia zona», riquadri «Avanzamenti e realizzati» e «Nuovi»: ogni progetto su due righe (luogo e MW; proponente ed esito), esito in un'etichetta breve colorata (verde cantiere / priorità alta, blu priorità media, grigio tratteggiato realizzato; testo completo al passaggio del mouse). Nei nuovi l'etichetta «nuovo», ridondante, è sostituita dalla fase quando nota.
+
 - 2026-11-19 — Dashboard «La mia zona»: colonne dell'elenco «Vicini al cantiere» allineate (larghezze fisse per MW, fase e pulsanti, anche quando un progetto non ha la scheda) e riquadri avanzamenti/nuovi impaginati su due colonne.
 
 - 2026-11-19 — «Realizzato» separato dagli avanzamenti verso il cantiere (resta utile per i noleggi su impianti finiti). (1) Priorità cantiere (`doc_intel/readiness.py`): la fine lavori prevista passata senza atti successivi fa «Probabilmente realizzato (da verificare)» solo se il progetto è autorizzato o ha un inizio lavori documentato; un progetto ancora in procedura (es. Prato Mentuccia, «Rinviato a VIA») non risulta più realizzato. La fine lavori documentata resta «Realizzato o in esercizio». (2) Report FV (`changes_latest.html`/`.csv`): nuova sezione e riquadro «Progetti realizzati», fuori dagli avanzamenti; `changes_latest.json` ha la lista `realizzati`. (3) Dashboard FV ed eolica: riquadro «Avanzamenti e realizzati in zona», con i realizzati in grigio e contati a parte.

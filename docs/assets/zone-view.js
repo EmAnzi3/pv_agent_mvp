@@ -63,6 +63,20 @@
     return `<div class="zone-kpi${primary ? ' primary' : ''}"><div class="label">${esc(label)}</div><div class="value">${value}</div><div class="note">${note}</div></div>`;
   }
 
+  // short label for a change: «Priorità cantiere: Media · Avvio possibile entro 12 mesi» → blue chip «Avvio possibile ≤ 12 mesi»
+  function chip(x) {
+    const full = x.what || (x.done ? 'Realizzato' : 'Avanzamento');
+    let text = full, cls = (x.level || '').toLowerCase();
+    const m = full.match(/^Priorit\S* cantiere:\s*(Alta|Media|Bassa)\s*·\s*(.+)$/i);
+    if (m) { cls = m[1].toLowerCase(); text = m[2]; }
+    text = text.replace(/^EPC nei documenti:\s*/i, 'EPC ').replace(/^FER X:.*$/i, 'FER X assegnato')
+      .replace(/^Notizie di stampa:.*$/i, 'Nuove notizie').replace(/^Parere\s+\S+\s+emesso$/i, 'Parere emesso')
+      .replace(/entro 12 mesi/i, '≤ 12 mesi').replace(/oltre 12 mesi/i, '> 12 mesi').replace(/ \(da verificare\)$/, ' (da verif.)');
+    if (x.done || /realizzat/i.test(full)) cls = 'done';
+    else if (/cantiere in corso/i.test(full)) cls = 'alta';
+    return { text, full, cls: cls || 'info' };
+  }
+
   function render() {
     if (!A) return;
     const z = zone(), all = A.items(), items = all.filter(x => inZone(x, z));
@@ -110,14 +124,20 @@
     $('nearMore').hidden = near.length <= top.length;
     $('nearMore').textContent = `Vedi tutti i ${it(near.length)} nella tabella →`;
 
-    // news in the zone
-    const newsList = (list, tag, empty) => list.length
-      ? list.slice(0, 6).map(x => `<div class="news-item"><span title="${esc(x.title)}"><strong>${esc(placeOf(x))}</strong>${x.proponent ? ' · ' + esc(x.proponent) : ''}${x.mw ? ' · ' + esc(mw(x.mw)) : ''}</span><span class="tag${x.done ? ' done' : ''}">${esc(tag(x))}</span></div>`).join('')
-        + (list.length > 6 ? `<div class="small muted">e altri ${it(list.length - 6)}</div>` : '')
+    // news in the zone: place and MW on the first line, proponent and one short coloured chip on the second
+    const byKey = {};
+    all.forEach(x => { if (x.key) byKey[x.key] = x; });
+    const newsList = (list, chipOf, empty) => list.length
+      ? list.slice(0, 6).map(x => {
+          const c = chipOf(x);
+          return `<div class="news-item" title="${esc(x.title)}">
+            <span class="pl">${esc(placeOf(x))}</span><span class="mwv">${x.mw ? esc(mw(x.mw)) : ''}</span>
+            <span class="who">${esc(x.proponent || '')}</span>${c ? `<span class="chip ${c.cls}" title="${esc(c.full)}">${esc(c.text)}</span>` : '<span></span>'}</div>`;
+        }).join('') + (list.length > 6 ? `<div class="news-more">e altri ${it(list.length - 6)}</div>` : '')
       : `<div class="zone-empty">${empty}</div>`;
     const wait = 'Disponibile dal prossimo aggiornamento.';
-    $('progressList').innerHTML = ch.loaded ? newsList(avanz.concat(realiz), x => x.what || (x.done ? 'realizzato' : 'avanzamento'), `Nessun avanzamento in ${esc(name)} nell'ultimo aggiornamento.`) : `<div class="zone-empty">${wait}</div>`;
-    $('newList').innerHTML = ch.loaded ? newsList(nuovi, x => x.what || 'nuovo', `Nessun nuovo progetto in ${esc(name)} nell'ultimo aggiornamento.`) : `<div class="zone-empty">${wait}</div>`;
+    $('progressList').innerHTML = ch.loaded ? newsList(avanz.concat(realiz), chip, `Nessun avanzamento in ${esc(name)} nell'ultimo aggiornamento.`) : `<div class="zone-empty">${wait}</div>`;
+    $('newList').innerHTML = ch.loaded ? newsList(nuovi, x => { const r = byKey[x.key] && byKey[x.key].rd; return r && r.phase_label ? chip({ what: r.phase_label, level: r.level }) : null; }, `Nessun nuovo progetto in ${esc(name)} nell'ultimo aggiornamento.`) : `<div class="zone-empty">${wait}</div>`;
     if ($('changesSince')) $('changesSince').textContent = since;
 
     // national picture: tile map (near-site projects per region, whole country) and the page charts

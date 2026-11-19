@@ -40,10 +40,18 @@
 
 .zone-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .zone-two > * { min-width: 0; }
-.news-item { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 38%); align-items: start; gap: 12px; font-size: 14px; border-bottom: 1px solid #eef2f6; padding-bottom: 8px; }
-.news-item:last-child { border-bottom: 0; padding-bottom: 0; }
-.news-item .tag { color: #0f766e; font-weight: 700; font-size: 13px; text-align: right; }
-.news-item .tag.done { color: #475569; }
+.news-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 3px 12px; padding: 9px 0; border-bottom: 1px solid #eef2f6; font-size: 14px; }
+.news-item:first-child { padding-top: 0; }
+.news-item:last-of-type { border-bottom: 0; }
+.news-item .pl { font-weight: 700; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.news-item .mwv { font-weight: 700; color: #0f172a; text-align: right; white-space: nowrap; }
+.news-item .who { font-size: 12px; color: #64748b; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.news-item .chip { justify-self: end; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 700; white-space: nowrap; max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+.chip.alta { background: #d1fae5; color: #065f46; }
+.chip.media { background: #dbeafe; color: #1e3a8a; }
+.chip.bassa, .chip.info { background: #eef2f6; color: #334155; }
+.chip.done { background: #f1f5f9; color: #475569; border: 1px dashed #94a3b8; }
+.news-more { font-size: 12px; color: #64748b; padding-top: 6px; }
 
 .nat-grid { display: grid; grid-template-columns: 420px minmax(0, 1fr); gap: 20px; align-items: stretch; }
 .nat-grid > * { min-width: 0; }
