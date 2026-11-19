@@ -5,7 +5,7 @@
  "title": "Realizzazione Impianto Agrivoltaico “AgriTuscia della potenza elettrica installata di 11.700 kWp.",
  "source_url": "https://regionelazio.app.box.com/v/VIA-020-2024",
  "source": "lazio",
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "18,4 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 17,15 ha (2), 25,157 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 17,15 ha (3), 25,157 ha (1)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-020-2024&file_id=f_1876870984351",
     "page": 3,
@@ -61,8 +61,8 @@
    "key": "accumulo",
    "label": "Accumulo",
    "value": "11,14 MW / 60 MWh",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 15 MW (18), 11,7 MW (6)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 15 MW (85), 12,287 MW (52), 11,7 MW (11)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-020-2024&file_id=f_1876870984351",
     "page": 1,
@@ -75,7 +75,7 @@
    "label": "Durata cantiere",
    "value": "8 mesi",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 18 mesi (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 330 giorni (circa 11 mesi) (2), 6 mesi (2), 18 mesi (1)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-020-2024&file_id=f_1535784950176",
     "page": 215,
@@ -91,17 +91,17 @@
    "Ischia Di Castro"
   ],
   "coordinate": {
-   "lat": 42.5509,
-   "lon": 11.7922,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (70 riferimenti concordi)",
+   "lat": 42.55352,
+   "lon": 11.78571,
+   "tipo": "coordinate del sito dichiarate negli elaborati (234 riferimenti concordi)",
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-020-2024&file_id=f_1657938997633",
-    "page": 8,
-    "document": "ICA_192_REL21_Relazione_Tecnica_ SNAM.pdf",
-    "excerpt": "Le coordinate geografiche riferite al baricentro dei lotti sono le seguenti: - Latitudine 42.5509° - Longitudine 11.7922°"
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-020-2024&file_id=f_1758473893223",
+    "page": 396,
+    "document": "ICA_192_SIA__REV02_Studio di impatto ambientale.pdf",
+    "excerpt": "RO er i f Imagery Date: 10/15/2024 42°33'08.59\" N 11°47'38.70\"E elev 1574 ft eyealt 10347 ft ©)"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.55090,11.79220",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.55352,11.78571",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -115,7 +115,32 @@
    },
    "maps_url": "https://www.google.com/maps/search/?api=1&query=42.37405,11.82923"
   },
-  "lotti": []
+  "lotti": [
+   {
+    "lotto": "Impianto PV",
+    "lat": 42.55055,
+    "lon": 11.81088,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=42.55055,11.81088",
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-020-2024&file_id=f_1535791034117",
+     "page": 210,
+     "document": "ICA_192_REL15_Relazione_paesaggistica_REV01.pdf",
+     "excerpt": "PV 1 42.55054882°"
+    }
+   },
+   {
+    "lotto": "Sottocampo 1",
+    "lat": 42.55444,
+    "lon": 11.78504,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=42.55444,11.78504",
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-020-2024&file_id=f_1758473893223",
+     "page": 319,
+     "document": "ICA_192_SIA__REV02_Studio di impatto ambientale.pdf",
+     "excerpt": "mitigazione, l’impianto sarà completamente eclissato. 3. PV9: Coordinate del punto di vista: latitudine 42.55444196°, longitudine 11.78503501°. Il punto di scatto si trova lungo una strada vicinale, ripreso in direzione "
+    }
+   }
+  ]
  },
  "soggetti": [],
  "altri_soggetti": [
@@ -138,6 +163,30 @@
       "page": 1,
       "document": "ICA_REN_SEI.pdf.pdf",
       "excerpt": "Referente per quanto comunicato: Ing. Elisa Colangeli Tel. : 0648054235"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Cogna S.n.c.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "mario.leuzzi@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-020-2024&file_id=f_1758476994474",
+      "page": 1,
+      "document": "All.3. Visura CCIAA Impresa Agricola .pdf",
+      "excerpt": "Domicilio digitale/PEC mario.leuzzi@pec.it"
      }
     }
    ],
@@ -190,6 +239,30 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Cogein Energy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "cogeinenergy@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-020-2024&file_id=f_1758471455551",
+      "page": 1,
+      "document": "ICA_192_STMG_BENESTARE_TERNA.pdf",
+      "excerpt": "COGEIN ENERGY S.R.L. cogeinenergy@pec.it"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -216,8 +289,8 @@
   "asse": null,
   "duration": {
    "text": "8 mesi",
-   "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 55 giorni (1), 18 mesi (1)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 55 giorni (3), 330 giorni (circa 11 mesi) (2), 6 mesi (2)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-020-2024&file_id=f_1535784950176",
     "page": 215,
@@ -250,9 +323,9 @@
  },
  "documentazione": {
   "documenti": 471,
-  "pagine": 1721,
+  "pagine": 4127,
   "completa": false,
-  "da_leggere": 351
+  "da_leggere": 234
  },
  "confronto": [
   {
@@ -291,8 +364,12 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "63 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "71 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
