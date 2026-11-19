@@ -1,0 +1,594 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9769",
+ "title": "Progetto di parco eolico denominato \"Sinnada\", con una potenza complessiva di 49,6 MW e un sistema di accumulo (BESS) 32,4 MW/64,8 MWh e relative opere connesse, localizzato nei Comuni di Luras, Calangianus e Tempio Pausania (SS).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9769",
+ "source": "mase",
+ "updated": "2026-11-19",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "49,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9769",
+    "excerpt": "49,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da documenti",
+   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 14 (8), 2 (7), 3 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/837231",
+    "page": 2,
+    "document": "Avviso al Pubblico del 08/05/2023",
+    "excerpt": "Regione Autonoma della Sardegna, con opere elettriche connesse ricadenti nei medesimi comuni e prevede la realizzazione di 8 aerogeneratori localizzati nel Comune di Luras (SS), di potenza unitaria nominale fino a 6,2 MW"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "32,4 MW / 64,8 MWh",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 64,8 MW (5), 144 MW (4), 82 MW (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/837231",
+    "page": 2,
+    "document": "Avviso al Pubblico del 08/05/2023",
+    "excerpt": "a 6,2 MW per una potenza installata fino a 49,6 MW e di un sistema di accumulo elettrochimico “Battery Energy Storage System” di potenza nominale pari a 32,4 MW con capacità di accumulo pari a 64,8 MWh."
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 06/2025 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 22 mesi (2), 12 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1107287",
+    "page": 22,
+    "document": "Integrazioni del 05/07/2023 - Documento di risposta alle osservazioni pervenute",
+    "excerpt": "Vi saranno inoltre i trasporti delle altre componenti e materiali (conci di torre, navicelle, mozzo, altre componenti elettriche…ecc.). Tali trasporti avverranno nell’arco di durata del cantiere (18 mesi circa) e, di con"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Luras",
+   "Calangianus",
+   "Tempio Pausania"
+  ],
+  "coordinate": {
+   "lat": 40.97207,
+   "lon": 9.15741,
+   "tipo": "centro della tavola georeferenziata di progetto (223 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/837190",
+    "page": 2,
+    "document": "Planimetria catastale",
+    "excerpt": "Planimetria catastale"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.97207,9.15741",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Sorgenia Renewables S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sorgenia.renewables@legalmail.it",
+     "occurrences": 119,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837227",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "P.IVA/CF: 10300050969 PEC: sorgenia.renewables@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9769"
+   }
+  },
+  {
+   "name": "Tiemes S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "info@pec.tiemes.it",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837209",
+      "page": 1,
+      "document": "Carta geologica",
+      "excerpt": "tel: 024983104 - fax:0249631510 PEC: info@pec.tiemes.it - mail: info@tmsweb.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "alice.cozzi@tmsweb.it",
+     "occurrences": 61,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837176",
+      "page": 16,
+      "document": "Studio anemologico e relazione di producibilità",
+      "excerpt": "+39 02 4983104 ALICE COZZI / alice.cozzi@tmsweb.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@tmsweb.it",
+     "occurrences": 28,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837161",
+      "page": 5,
+      "document": "Computo metrico estimativo",
+      "excerpt": "Telefono: 024983104 e-mail: info@tmsweb.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "024983104",
+     "occurrences": 66,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837227",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Via Riccardo Galli 9 20148 Milano tel. 024983104/ fax. 0249631510"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/837227",
+    "page": 1,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "Progettista"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Delta OHM S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@deltaohm.com",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837177",
+      "page": 72,
+      "document": "Studio di fattibilità acustica",
+      "excerpt": "e-mail: info@deltaohm.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "049897715",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837177",
+      "page": 72,
+      "document": "Studio di fattibilità acustica",
+      "excerpt": "35030 Caselle di Selvazzano (PD) Laboratorio Accreditato Nah LAT N° 124 Tel. 0039-0498977150 È"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837184",
+      "page": 21,
+      "document": "Relazione preliminare delle strutture",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/837184",
+      "page": 21,
+      "document": "Relazione preliminare delle strutture",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "22 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Realizzazione nuovi raccordi RTN",
+    "start": 0.39,
+    "end": 22.15,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Scavo di sbancamento per la realizzazione delle fondazioni",
+    "start": 5.31,
+    "end": 6.83,
+    "level": 0,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Realizzazione delle fondazioni: pali",
+    "start": 5.48,
+    "end": 7.0,
+    "level": 0,
+    "summary": false,
+    "duration": "45 g"
+   },
+   {
+    "name": "Realizzazione delle fondazioni: cemento armato (getto e maturazione)",
+    "start": 5.82,
+    "end": 8.52,
+    "level": 0,
+    "summary": false,
+    "duration": "80 g"
+   },
+   {
+    "name": "Posa dei sottoservizi interrati (rete di terra, pozzetti, etc)",
+    "start": 14.57,
+    "end": 14.91,
+    "level": 0,
+    "summary": false,
+    "duration": "10 g"
+   },
+   {
+    "name": "Installazione trasformatore, quadri, stalli, etc",
+    "start": 14.91,
+    "end": 15.59,
+    "level": 0,
+    "summary": true,
+    "duration": "20 g"
+   },
+   {
+    "name": "7^ GRUPPO: ESECUZIONE COLLEGAMENTI ELETTRICI RETE INTERNA",
+    "start": 3.46,
+    "end": 16.09,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Posa cavi e fibre ottiche",
+    "start": 3.63,
+    "end": 4.98,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "RiempimentI e ripristini terreno naturale",
+    "start": 3.8,
+    "end": 5.15,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "Realizzazione sottofondo stradale (viabilità esistente)",
+    "start": 3.97,
+    "end": 5.32,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "Posa pozzetti",
+    "start": 5.82,
+    "end": 6.83,
+    "level": 0,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Posa cavi e fibre ottiche",
+    "start": 5.99,
+    "end": 7.5,
+    "level": 0,
+    "summary": false,
+    "duration": "60 g"
+   },
+   {
+    "name": "Smantellamento piazzole e aree di cantiere e rimozione baracche",
+    "start": 16.43,
+    "end": 17.78,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "Reinterri finale e ripristino stato dei luoghi",
+    "start": 17.61,
+    "end": 17.95,
+    "level": 0,
+    "summary": false,
+    "duration": "10 g"
+   },
+   {
+    "name": "Messa in servizio dell'impianto",
+    "start": 20.97,
+    "end": 21.65,
+    "level": 0,
+    "summary": false,
+    "duration": "20 g"
+   }
+  ],
+  "unit": "month",
+  "months": 22.15,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/837164",
+   "page": 5,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1°",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2°",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3°",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4°",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5°",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6°",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7°",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8°",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9°",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10°",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11°",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12°",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13°",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14°",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15°",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16°",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17°",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18°",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19°",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20°",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21°",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22°",
+     "start": 21.0,
+     "end": 22.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 22 mesi (2), 12 giorni (2), 12 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1107287",
+    "page": 22,
+    "document": "Integrazioni del 05/07/2023 - Documento di risposta alle osservazioni pervenute",
+    "excerpt": "Vi saranno inoltre i trasporti delle altre componenti e materiali (conci di torre, navicelle, mozzo, altre componenti elettriche…ecc.). Tali trasporti avverranno nell’arco di durata del cantiere (18 mesi circa) e, di con"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "06/2025",
+    "iso": "2025-06",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/837170",
+     "page": 5,
+     "document": "Prime indicazioni e disposizioni per la stesura dei piani di sicurezza",
+     "excerpt": "La data presunta di inizio lavori sarà Giugno 2025."
+    }
+   }
+  ],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/837164"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 100,
+  "pagine": 2752,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Sorgenia Renewables S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 49.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "LURAS, CALANGIANUS, TEMPIO PAUSANIA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "310 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
