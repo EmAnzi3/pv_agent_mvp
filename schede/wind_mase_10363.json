@@ -5,7 +5,7 @@
  "title": "Progetto per la costruzione ed esercizio di un impianto eolico composto da n. 8 aerogeneratori di potenza unitaria pari a 6,6 MW, per una potenza complessiva pari a 52,8 MW, denominato \"Cesepiano\" localizzato nei Comuni di Tufara (CB) e Gambatesa (CB) e delle relative opere di connessione alla RTN site nei Comuni di Riccia (CB) e Cercemaggiore (CB).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10363",
  "source": "mase",
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "sintesi": [
   {
    "key": "potenza",
@@ -23,13 +23,39 @@
    "key": "wtg",
    "label": "Aerogeneratori",
    "value": "8",
-   "status": "da verificare",
-   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 4 (9), 7 (8), 5 (5)",
+   "status": "da documenti",
+   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 7 (14), 18 (12), 4 (10)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/942272",
     "page": 1,
     "document": "Avviso al pubblico del 05/12/2023",
     "excerpt": "impianto per la produzione dei energia da fonte rinnovabile di tipo eolico della potenza complessiva di 52,8 MW, costituito da 8 aerogeneratori da 6,6 MW ciascuno e delle relative opere civili ed elettriche connesse (qua"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "30 MW",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/957959",
+    "page": 9,
+    "document": "Osservazioni del COMUNE DI GAMBATESA, in data 05/01/2024",
+    "excerpt": "• Impianto 17 aerogeneratori, potenza complessiva di 98 MW, da realizzarsi nei comuni di Celenza Valfortore (FG) e Carlantino (FG), con opere di connessione alla RTN e sistema di accumulo da 30 MW ricadenti anche nei com"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "14 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/957959",
+    "page": 111,
+    "document": "Osservazioni del COMUNE DI GAMBATESA, in data 05/01/2024",
+    "excerpt": "15.5, L'autorizzazione unica prevede un termine per l'avvio dci lavori pari, di norma, a 14 mesi prorogabili, decorsi inutilmente i quali decade. Il rispetto del termine per l’avvio dei lavori può essere dimostrato anche"
    }
   }
  ],
@@ -44,7 +70,7 @@
   "coordinate": {
    "lat": 41.48255,
    "lon": 14.92176,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (35 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (43 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/942736",
     "page": 74,
@@ -65,16 +91,16 @@
    "roles": [
     "Proponente"
    ],
-   "vat": null,
+   "vat": "06400370968",
    "vat_group": false,
-   "verified": false,
+   "verified": true,
    "esecuzione": null,
-   "office": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
    "contacts": [
     {
      "type": "PEC",
      "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 310,
+     "occurrences": 340,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/942462",
       "page": 1,
@@ -122,7 +148,7 @@
     {
      "type": "PEC",
      "value": "energyengineering@legalmail.it",
-     "occurrences": 308,
+     "occurrences": 334,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/942462",
       "page": 1,
@@ -188,7 +214,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": null,
+  "durata_cantiere": "14 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -206,14 +232,14 @@
   "source": null,
   "asse": null,
   "duration": {
-   "text": "2 settimane",
+   "text": "4 settimane",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 4 settimane (2), 3 settimane (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 2 settimane (5), 3 settimane (5), 14 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1075535",
     "page": 45,
     "document": "Integrazioni del 17/05/2024 - PEPI_INT_R_EA_1",
-    "excerpt": "cantiere (uffici, bagni, spogliatoi, mensa, ecc.). TEMPI DI ESECUZIONE: 2 settimane. Sottofase 2) Esecuzione di tracciamenti per la realizzazione della nuova"
+    "excerpt": "sufficiente qualità per la costruzione di strade e piazzole. TEMPI DI ESECUZIONE: 4 settimane. Sottofase 4) Armatura e getto plinti di fondazione su pali trivellati. Il getto"
    }
   },
   "milestones": [],
@@ -233,9 +259,9 @@
  },
  "documentazione": {
   "documenti": 356,
-  "pagine": 2510,
+  "pagine": 5887,
   "completa": false,
-  "da_leggere": 56
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -266,12 +292,8 @@
  ],
  "da_verificare": [
   {
-   "label": "Aerogeneratori",
-   "reason": "valori diversi negli elaborati"
-  },
-  {
    "label": "Recapiti",
-   "reason": "88 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "122 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
