@@ -303,7 +303,10 @@
         };
         zoneChanges = { loaded: true, date: c.date, since: c.previous_census,
           nuovi: (c.nuovi || []).filter(m => !m.secondaria).map(m => changeItem(m, 'nuovo')),
-          avanzamenti: (c.modificati || []).filter(m => m.progress).map(m => changeItem(m, what(m))) };
+          avanzamenti: (c.modificati || []).filter(m => m.progress).map(m => changeItem(m, what(m))),
+          // reached «realizzato» (documented or probable): not a site any more, still an O&M rental lead
+          realizzati: (c.modificati || []).filter(m => !m.progress && (m.changes || []).some(x => x.field === 'readiness'
+            && /realizzat/i.test(text(x.new)) && !/realizzat/i.test(text(x.old)))).map(m => changeItem(m, (m.changes.find(x => x.field === 'readiness') || {}).new)) };
         window.ZoneView.render();
       });
     });

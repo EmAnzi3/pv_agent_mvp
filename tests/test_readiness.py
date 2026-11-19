@@ -22,6 +22,20 @@ class Readiness(unittest.TestCase):
         c = card([{"voce": "Fine lavori", "livello": "documentata", "valore": "11/02/2025", "dettaglio": "previsione di progetto"}])
         self.assertNotEqual(classify(c, today=T)["phase"], "realizzato")
 
+    def test_presumed_built_needs_authorisation(self):
+        st = {"level": "potenzialmente_realizzato", "reason": "La fine lavori prevista (04/08/2025) è passata"}
+        r = classify(card(stato=st, auth=None), today=T)
+        self.assertNotEqual(r.get("phase"), "realizzato")          # e.g. «rinviato a VIA»: still in procedure
+        r = classify(card(stato=st), today=T)
+        self.assertEqual((r["phase"], r.get("presunto")), ("realizzato", True))
+        self.assertIn("da verificare", r["phase_label"])
+
+    def test_documented_end_is_not_presumed(self):
+        c = card([{"voce": "Fine lavori", "livello": "documentata", "valore": "11/02/2025", "dettaglio": ""}])
+        r = classify(c, today=T)
+        self.assertEqual(r["phase_label"], "Realizzato o in esercizio")
+        self.assertNotIn("presunto", r)
+
     def test_start_within_12_months(self):
         c = card([{"voce": "Cronoprogramma con date", "livello": "documentata", "valore": "01/03/2027 → 01/12/2027"}])
         r = classify(c, today=T)
