@@ -1,0 +1,427 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11039",
+ "title": "Progetto per la realizzazione di un impianto eolico, per una potenza complessiva di 49 MW, e di un impianto energy storage (BESS), annesso al parco eolico, di potenza in immissione pari a 31,60 MW, per una potenza complessiva pari a 80,60 MW, e delle relative opere di connessione alle RTN, da realizzarsi in località \"Matarocco\" nel Comune di Marsala (TP).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11039",
+ "source": "mase",
+ "updated": "2026-11-19",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "49 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11039",
+    "excerpt": "49 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "7,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 11 (8), 6 (6), 3 (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1101819",
+    "page": 2,
+    "document": "Avviso al pubblico del 09/07/2024",
+    "excerpt": "energia elettrica da fonte rinnovabile eolica, denominato Aquitania di potenza pari a 49 MW composto da n. 7 aerogeneratori, ciascuno di potenza nominale pari a 7 MW e di un impianto di energy storage (BESS) annesso al p"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "31,6 MW / 126,4 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 80,6 MW (3), 49 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1101807",
+    "page": 3,
+    "document": "Valutazione del rischio di esposizione ai campi elettromagnetici",
+    "excerpt": "completa con un sistema di accumulo dell’energia denominato BESS, Battery Energy Storage System, con potenza pari a 31,60 MW: pertanto, la potenza totale è pari a 80,60 MW. La presente relazione tecnica specialistica ha "
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "34 settimane (circa 8 mesi)",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1101810",
+    "page": 45,
+    "document": "Studio di impatto ambientale - Sintesi non tecnica",
+    "excerpt": "parco gestendo la fase dello smontaggio graduale dell’impianto esistente. Il tempo previsto per la realizzazione dell’opera è pari a 34 settimane a cui vanno aggiunte altre quattro settimane per il commissioning e i ripr"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "TP",
+  "comuni": [
+   "Marsala"
+  ],
+  "coordinate": {
+   "lat": 37.84486,
+   "lon": 12.63389,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (19 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1101729",
+    "page": 48,
+    "document": "Relazione tecnica descrittiva",
+    "excerpt": "punto baricentrico dell’area interessata dal progetto: • Latitudine 37°50'41.5\"N - Longitudine 12°38'02\"E L’accesso alla SE Fulgatore 2 è reso agevole dal posizionamento in un’area compresa fra le"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.84486,12.63389",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Aquitania S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "aquitania2022@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1119052",
+      "page": 1,
+      "document": "Osservazioni del Libero Consorzio Comunale di Trapani, in data 7/08/2024",
+      "excerpt": "e, p.c. Alla Società Aquitania S.r.l. PEC: aquitania2022@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0236516713",
+     "occurrences": 168,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1101759",
+      "page": 1,
+      "document": "IMPIANTO EOLICO \"MATAROCCO\" NEL COMUNE DI MARSALA (TP) E RELATIVE OPERE DI CONNESSIONE ALLA RTN",
+      "excerpt": "Via Alessandro Manzoni 41- 20121 Milano -Italia Tel. +39 0236516713"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11039"
+   }
+  },
+  {
+   "name": "IBS Energy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@ibsenergy.it",
+     "occurrences": 169,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1101759",
+      "page": 1,
+      "document": "IMPIANTO EOLICO \"MATAROCCO\" NEL COMUNE DI MARSALA (TP) E RELATIVE OPERE DI CONNESSIONE ALLA RTN",
+      "excerpt": "Via Sardegna, 32, 20146, Milano-Italia Tel. +39 348 -info@ibsenergy.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1183609",
+    "page": 2,
+    "document": "Parere della Regione Sicilia Servizio 1 \"Autorizzazioni e Valutazioni Ambientali\" Palermo (C.T.S. (Commissione Tecnica Specialistica per le autorizzazioni ambientali)) in data 10/12/2024",
+    "excerpt": "Progettisti IBS ENERGY S.r.l. - Via Sardegna, 32, 20146, Milano-Italia"
+   }
+  },
+  {
+   "name": "Dott. Carlo Cibella",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1101741",
+    "page": 29,
+    "document": "Relazione geologica PE Matarocco",
+    "excerpt": "Il Geologo"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "5 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "a quota -10 cm dalla quota finale",
+    "start": 0.0,
+    "end": 2.31,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Completamento della viabilità e delle piazzole",
+    "start": 2.3,
+    "end": 3.23,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione Opere di connessione a 30 Kv",
+    "start": 2.53,
+    "end": 3.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "BESS",
+    "start": 1.38,
+    "end": 3.46,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio degli aerogeneratori",
+    "start": 2.3,
+    "end": 3.69,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Commissioning",
+    "start": 3.68,
+    "end": 4.62,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 4.62,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1270894",
+   "page": 17,
+   "document": "Integrazioni del 02/07/2025 - Pianodicantierizzazione",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "19",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "20",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "21",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "22",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "23",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "24",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "25",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "26",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "27",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "28",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "29",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "30",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "31",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "32",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "33",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "34",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "35",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "36",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "37",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "38",
+     "start": 4.385,
+     "end": 4.615
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "34 settimane (circa 8 mesi)",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1101810",
+    "page": 45,
+    "document": "Studio di impatto ambientale - Sintesi non tecnica",
+    "excerpt": "parco gestendo la fase dello smontaggio graduale dell’impianto esistente. Il tempo previsto per la realizzazione dell’opera è pari a 34 settimane a cui vanno aggiunte altre quattro settimane per il commissioning e i ripr"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma dei lavori di costruzione",
+   "url": "https://va.mite.gov.it/File/Documento/1101739"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma dei lavori di costruzione",
+    "url": "https://va.mite.gov.it/File/Documento/1101739"
+   },
+   {
+    "document": "Cronoprogramma dei lavori di dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/1101740"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 145,
+  "pagine": 2678,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "AQUITANIA S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 49.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MARSALA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TP",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "36 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
