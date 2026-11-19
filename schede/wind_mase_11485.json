@@ -1,0 +1,938 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11485",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"Veglie\", costituito da 8 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva di 48 MW, da realizzarsi nel territorio comunale di Veglie (LE), incluse le relative opere di connessione alla RTN ricadenti anche nei comuni di Nardò (LE), Leverano (LE) e Copertino (LE) (cod. MYTERNA n. 202404372).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11485",
+ "source": "mase",
+ "updated": "2026-11-19",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "48 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11485",
+    "excerpt": "48 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 175 m · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 2 (3), 120 (3), 3 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1251692",
+    "page": 2,
+    "document": "Avviso al pubblico del 13/05/2025",
+    "excerpt": "delle sue opere connesse da ubicare nei territori comunali di Veglie (LE), Nardò (LE), Leverano (LE), Copertino (LE). Il progetto in esame consiste nella realizzazione di un impianto eolico costituito da 8 aerogeneratori"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "48 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 MW (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1395441",
+    "page": 4,
+    "document": "Integrazioni del 13/05/2026 - Relazione delle produzioni agricole di pregio",
+    "excerpt": "produzioni agricole di pregio dell’area interessata dalla realizzazione di un impianto eolico della potenza complessiva di 48 MW e impianto di accumulo 10 MW nell’agro di Veglie (Le), e delle relative opere connesse, red"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "6 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 01/03/2027 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 20 mesi (2), 24 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1202786",
+    "page": 12,
+    "document": "Computo Metrico Estimativo Dismissione",
+    "excerpt": "05 Per Cantiere fisso principale (1 cartello x 6 mesi di utilizzo) 1,00"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "LE",
+  "comuni": [
+   "Leverano",
+   "Nardo'",
+   "Veglie",
+   "Copertino"
+  ],
+  "coordinate": {
+   "lat": 40.24834,
+   "lon": 18.00418,
+   "tipo": "centro della tavola georeferenziata di progetto (49 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1395413",
+    "page": 1,
+    "document": "Integrazioni del 13/05/2026 - Planimetria raccordi",
+    "excerpt": "Integrazioni del 13/05/2026 - Planimetria raccordi"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.24834,18.00418",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "ATS Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "atseng@pec.it",
+     "occurrences": 219,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1202784",
+      "page": 1,
+      "document": "Elenco Elaborati di Progetto",
+      "excerpt": "0882/393197 atseng@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "nva.3@legalmail.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395410",
+      "page": 1,
+      "document": "Integrazioni del 13/05/2026 - Piante e prospetti dei chiostri terna e del locale consegna MT e TLC",
+      "excerpt": "info@nvarenewables.com 0882/393197 24.09.2025 13:00:08 nva.3@legalmail.it atseng@pec.it CMTtOZOO"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "nva.srl@pecimprese.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1202769",
+      "page": 1,
+      "document": "Layout su CTR",
+      "excerpt": "info@nvarenewables.com 0882/393197 EUGENIO nva.srl@pecimprese.it atseng@pec.it Bono"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "atsing@atsing.eu",
+     "occurrences": 47,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395410",
+      "page": 1,
+      "document": "Integrazioni del 13/05/2026 - Piante e prospetti dei chiostri terna e del locale consegna MT e TLC",
+      "excerpt": "NVA 3 S.r.l. ATS Engineering srl Ing. Eugenio Di Gianvito Via Lepetit, 8 P.zza Giovanni Paolo II, 8 atsing@atsing.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@nvarenewables.com",
+     "occurrences": 40,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395410",
+      "page": 1,
+      "document": "Integrazioni del 13/05/2026 - Piante e prospetti dei chiostri terna e del locale consegna MT e TLC",
+      "excerpt": "20045 Lainate (MI) 71017 Torremaggiore (FG) info@nvarenewables.com 0882/393197 24.09.2025 13:00:08"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1395410",
+    "page": 4,
+    "document": "Integrazioni del 13/05/2026 - Piante e prospetti dei chiostri terna e del locale consegna MT e TLC",
+    "excerpt": "progettista ATS Engineering s.r.l. con sede in Torremaggiore alla P.zza G. Paolo II, n. 8. Il parco eolico è costituito da n. 8 aerogeneratori con potenza nominale attiva fino a 6 MW"
+   }
+  },
+  {
+   "name": "Dott. Lucia Santopietro",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1395381",
+    "page": 21,
+    "document": "Integrazioni del 13/05/2026 - Iquadramento generale su IGM",
+    "excerpt": "IL GEOLOGO Dott. Lucia Santopietro"
+   }
+  },
+  {
+   "name": "Ing. Eugenio Di Gianvito",
+   "kind": "persona",
+   "roles": [
+    "Direttore lavori",
+    "Coordinatore sicurezza"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1202821",
+    "page": 6,
+    "document": "Relazione sulla Sicurezza",
+    "excerpt": "Direttore dei lavori: Ing. Eugenio Di Gianvito; Descrizione dell’opera: Parco eolico “Veglie”;"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Beshielding S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10105760010",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Monviso 9 10090 Villarbasse To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "shielding@beshielding.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395339",
+      "page": 17,
+      "document": "Integrazioni del 13/05/2026 - Relazione campi elettrici magnetici",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "busbar@beshielding.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395339",
+      "page": 17,
+      "document": "Integrazioni del 13/05/2026 - Relazione campi elettrici magnetici",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geopolis S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "robe11meni@gmail.com",
+     "occurrences": 23,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395343",
+      "page": 1,
+      "document": "Integrazioni del 13/05/2026 - Relazione geologica preliminare e compatibilità idrogeologica ampliamento SE380/15036 kV Leverano e raccordo linea esistente",
+      "excerpt": "GEOPOLIS srl - 00164 Roma - Via Arnobio, 27 — robe11meni@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "1meni@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395343",
+      "page": 2,
+      "document": "Integrazioni del 13/05/2026 - Relazione geologica preliminare e compatibilità idrogeologica ampliamento SE380/15036 kV Leverano e raccordo linea esistente",
+      "excerpt": "GEOPOLIS srl - 00164 Roma - Via Arnobio, 27 — robe1 1meni@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Brulli Trasmissione S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "brullit@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395341",
+      "page": 1,
+      "document": "Integrazioni del 13/05/2026 - Nulla osta dell'autorità mineraria",
+      "excerpt": "Brulli Trasmissione Srl Unipersonale - Capitale sociale versato € 1.000.000 - Registro Imprese, codice fiscale e partita IVA No. IT 02627590355 Via Meuccio Ruini, 2 - 42124 Reggio nell’Emilia - Italia - Tel +39.0522.23.3"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@brulli.eu",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395341",
+      "page": 1,
+      "document": "Integrazioni del 13/05/2026 - Nulla osta dell'autorità mineraria",
+      "excerpt": "Brulli Trasmissione Srl Unipersonale - Capitale sociale versato € 1.000.000 - Registro Imprese, codice fiscale e partita IVA No. IT 02627590355 Via Meuccio Ruini, 2 - 42124 Reggio nell’Emilia - Italia - Tel +39.0522.23.3"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Antonio Anglano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "08321770260",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1395447",
+      "page": 7,
+      "document": "Integrazioni del 13/05/2026 - Attestazione di insussistenza di usi civici",
+      "excerpt": "Tel: 0832/1770260"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "previsto",
+  "label": "Avvio lavori previsto il 01/03/2027",
+  "reason": "Data di progetto: non prova l'effettivo avvio."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "5 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Voltura autorizzazione a Terna",
+    "start": 0.03,
+    "end": 0.26,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Elaborati generali di commessa",
+    "start": 0.26,
+    "end": 0.57,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Elaborati costruttivi opere civili",
+    "start": 0.63,
+    "end": 1.05,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Elaborati costruttivi opere meccaniche",
+    "start": 0.57,
+    "end": 1.0,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Emissione specifiche tecniche apparati AT/MT/BT",
+    "start": 0.63,
+    "end": 0.95,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Progetto elettrico sistema di automazione & controllo",
+    "start": 0.68,
+    "end": 1.21,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Riesame della progettazione",
+    "start": 1.21,
+    "end": 1.53,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Approvazione progetto esecutivo",
+    "start": 1.53,
+    "end": 1.76,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo TR AAT/AT",
+    "start": 0.95,
+    "end": 3.64,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo apparecchiature AT",
+    "start": 1.76,
+    "end": 3.05,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo quadri 36 kV",
+    "start": 1.76,
+    "end": 2.67,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO e subappalto opere civili",
+    "start": 1.76,
+    "end": 2.22,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e consegna prefabbricati edifici",
+    "start": 1.77,
+    "end": 2.4,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo carpenterie zincate per apparecchiature AT",
+    "start": 1.77,
+    "end": 2.4,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, fornitura e collaudo isolatori, morse e conduttori alluminio",
+    "start": 1.77,
+    "end": 2.72,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo apparecchiature MT e BT per SA ca e cc",
+    "start": 1.77,
+    "end": 2.72,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo apparecchiature MT",
+    "start": 1.77,
+    "end": 2.72,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, costruzione e collaudo quadri sistema automazione & controllo",
+    "start": 1.77,
+    "end": 2.4,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "RdO, ordine, fornitura e collaudo cavi MT e BT",
+    "start": 1.77,
+    "end": 2.08,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Allestimento cantiere e vie di accesso",
+    "start": 2.22,
+    "end": 2.37,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazione fabbricati",
+    "start": 2.43,
+    "end": 2.53,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni trasformatori AAT/AT",
+    "start": 2.43,
+    "end": 2.69,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni apparecchiature AT",
+    "start": 2.43,
+    "end": 2.91,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione rete di terra primaria",
+    "start": 2.43,
+    "end": 2.69,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione vie cavi e polifore acque meteoriche",
+    "start": 2.43,
+    "end": 2.91,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera prefabbricati e realizzazione opere di finitura",
+    "start": 2.53,
+    "end": 2.64,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Preparazione piazzali, drenaggi e cordoli strade",
+    "start": 2.91,
+    "end": 3.12,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione recinzione",
+    "start": 2.43,
+    "end": 2.75,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Asfaltature strade",
+    "start": 3.12,
+    "end": 3.18,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione aree a verde",
+    "start": 3.12,
+    "end": 3.28,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa trasformatori AAT/AT",
+    "start": 3.64,
+    "end": 3.75,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa carpenterie metalliche",
+    "start": 3.12,
+    "end": 3.44,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa apparecchiature AT",
+    "start": 3.44,
+    "end": 4.07,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Montaggio sbarre AT e collegamenti AT",
+    "start": 4.07,
+    "end": 4.34,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione rete di terra secondaria",
+    "start": 3.44,
+    "end": 3.75,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione impianti tecnologici edifici e illuminazione esterna",
+    "start": 2.64,
+    "end": 2.85,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa quadri 36 kV",
+    "start": 2.85,
+    "end": 3.17,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa apparecchiature MT",
+    "start": 2.85,
+    "end": 3.01,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa apparecchiature MT e BT SA ca e cc",
+    "start": 3.01,
+    "end": 3.12,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa quadri ed apparati sistema di protezione e controllo",
+    "start": 3.12,
+    "end": 3.28,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Posa e collegamento cavi MT e BT",
+    "start": 3.44,
+    "end": 3.7,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Verifiche di passo e contatto rete di terra",
+    "start": 4.07,
+    "end": 4.18,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo sistema servizi ausiliari stazione ca e cc",
+    "start": 4.07,
+    "end": 4.18,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo apparecchiature AT di piazzale",
+    "start": 4.07,
+    "end": 4.39,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo quadri 36 kV",
+    "start": 4.07,
+    "end": 4.23,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Taratura protezioni di linea e di impianto",
+    "start": 4.39,
+    "end": 4.5,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collaudo e verifiche SCADA",
+    "start": 4.5,
+    "end": 4.6,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Ripristini e smobilizzo cantiere",
+    "start": 4.6,
+    "end": 4.83,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Attività Riepilogo",
+    "start": 1.2,
+    "end": 1.47,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Divisione Riepilogo progetto",
+    "start": 1.2,
+    "end": 1.47,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Cardine Attività inattiva",
+    "start": 0.52,
+    "end": 2.16,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 4.83,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1395337",
+   "page": 2,
+   "document": "Integrazioni del 13/05/2026 - Cronoprogramma delle attività",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "M11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "M12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "M13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "M14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "M15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "M16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "M17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "M18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "M19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "M20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "M21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "M22",
+     "start": 21.0,
+     "end": 22.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "6 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (2), 24 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1202786",
+    "page": 12,
+    "document": "Computo Metrico Estimativo Dismissione",
+    "excerpt": "05 Per Cantiere fisso principale (1 cartello x 6 mesi di utilizzo) 1,00"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "01/03/2027",
+    "iso": "2027-03-01",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1202821",
+     "page": 6,
+     "document": "Relazione sulla Sicurezza",
+     "excerpt": "Collocazione urbanistica: area Agricola; Data presunta inizio lavori: 01/03/2027; Durata presunta lavori(gg): 360;"
+    }
+   }
+  ],
+  "document": {
+   "document": "Integrazioni del 13/05/2026 - Cronoprogramma delle attività",
+   "url": "https://va.mite.gov.it/File/Documento/1395337"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 13/05/2026 - Raccordi 380kV cronoprogramma delle attività",
+    "url": "https://va.mite.gov.it/File/Documento/1395371"
+   },
+   {
+    "document": "Integrazioni del 13/05/2026 - Cronoprogramma di massima delle lavorazioni",
+    "url": "https://va.mite.gov.it/File/Documento/1395401"
+   },
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/1202790"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 452,
+  "pagine": 3629,
+  "completa": false,
+  "da_leggere": 152
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "NVA 3 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 48.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "NARDÒ",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LE",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "426 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
