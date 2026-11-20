@@ -1,0 +1,516 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9759",
+ "title": "Progetto di un impianto eolico denominato Anemos, costituito da n. 10 aerogeneratori, della potenza di 45 MW, da realizzarsi nei comuni di Mazara del Vallo (TP), Salemi (TP) e Santa Ninfa (TP).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9759",
+ "source": "mase",
+ "updated": "2026-11-20",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "4,5 MW",
+   "sub": "Valore ricorrente negli elaborati (17 volte); il titolo riporta 45 MW (probabile refuso).",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/832377",
+    "page": 96,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "Impianto eolico Il parco eolico è costituito da 10 aerogeneratori di potenza 4,5 MW cadauno, per una potenza nominale complessiva pari a 45 MW, intesa come somma delle potenze di targa o nominale di ciascun aerogenerator"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "0,45 MW ciascuno · altezza mozzo 118,5 m · diametro rotore 163 m · Valore prevalente negli elaborati; altri valori: 8 (9), 2 (8), 7 (8)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/832397",
+    "page": 1,
+    "document": "Avviso al Pubblico del 21/04/2023",
+    "excerpt": "provincia di Trapani. Il parco eolico proposto è composto dall’insieme di n. 10 aerogeneratori di potenza nominale singola di 4,5 MW collegati tramite cavidotti in MT della lunghezza di circa 34 km alla stazione di trasf"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "16 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 22 mesi (3), 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/832377",
+    "page": 116,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "Si stima una durata complessiva dei lavori pari a 16 mesi."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "TP",
+  "comuni": [
+   "Mazara Del Vallo",
+   "Salemi",
+   "Santa Ninfa"
+  ],
+  "coordinate": {
+   "lat": 37.75632,
+   "lon": 12.61085,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (41 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/832295",
+    "page": 8,
+    "document": "Relazione tecnica generale",
+    "excerpt": "WTG01 37°45'43.50\"N 12°34'50.40\"E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.75632,12.61085",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 37.74571,
+   "lon": 12.7895,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/832295",
+    "page": 8,
+    "document": "Relazione tecnica generale",
+    "excerpt": "SSE 37°44'44.54\"N 12°47'22.19\"E"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.74571,12.78950"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Geremo S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "04045191204",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 31/2 40129 Bologna Bo",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "geremo_srl@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1218792",
+      "page": 1,
+      "document": "Trasmissione relazione di Controdeduzione al parere della CTS regionale n. 481/2024 del 26.07.2024",
+      "excerpt": "Cod. Fiscale e P.IVA 04045191204 PEC: geremo_srl@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "asja.castellana@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1386481",
+      "page": 1,
+      "document": "Parere della Regione Siciliana - Soprintendenza per i Beni Culturali e Ambientali di Trapani in data 4/05/2026",
+      "excerpt": "Proponente: GEREMO SRL, costituita il 15/06/2022, ha sede legale ed operativa in Bologna (BO), Via Milaz- zo, 17; pec: asja.castellana@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9759"
+   }
+  },
+  {
+   "name": "Dott. Geol. Marcello Militello",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "marcellomilitello@epap.sicurezzapostale.it",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832305",
+      "page": 329,
+      "document": "PTO SE RTN Partanna 3 - Parte 1 di 4",
+      "excerpt": "Dott. Geol. Marcello Militello Cell:+393386978072 pec: marcellomilitello@epap.sicurezzapostale.it email: marcellomilitello@hotmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "marcellomilitello@hotmail.com",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832305",
+      "page": 329,
+      "document": "PTO SE RTN Partanna 3 - Parte 1 di 4",
+      "excerpt": "Dott. Geol. Marcello Militello Cell:+393386978072 pec: marcellomilitello@epap.sicurezzapostale.it email: marcellomilitello@hotmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3386978072",
+     "occurrences": 48,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832305",
+      "page": 329,
+      "document": "PTO SE RTN Partanna 3 - Parte 1 di 4",
+      "excerpt": "Dott. Geol. Marcello Militello Cell:+393386978072 pec: marcellomilitello@epap.sicurezzapostale.it email: marcellomilitello@hotmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/832305",
+    "page": 327,
+    "document": "PTO SE RTN Partanna 3 - Parte 1 di 4",
+    "excerpt": "IL GEOLOGO Dott. Marcello Militello"
+   }
+  },
+  {
+   "name": "Ing. Francesco Desiderio Lanzalaco",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/832377",
+    "page": 1,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "Progettazione Ing. Francesco Desiderio Lanzalaco"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Mediacom - S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02012740813",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Amabilina 755-755A 91025 Marsala Tp",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "mediacomsrl@gigapec.it",
+     "occurrences": 36,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832377",
+      "page": 1,
+      "document": "Studio Impatto Ambientale",
+      "excerpt": "91025 - Marsala (TP) mediacomsrl@gigapec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0923714668",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832367",
+      "page": 2,
+      "document": "Studio di impatto acustico",
+      "excerpt": "91025 Marsala (TP) Telefono: 0923.714668 fax 714396"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Pa'ropos Societa' Cooperativa",
+   "kind": "società",
+   "roles": [],
+   "vat": "05929940822",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Conte Federico N 46 90124 Palermo Pa",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "muratore@paropos.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832369",
+      "page": 20,
+      "document": "Relazione Archeologica",
+      "excerpt": "Società Coop erativa n 5 Dott. Muratore: 3389783397 - muratore@paropos.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "locurto@paropos.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832369",
+      "page": 20,
+      "document": "Relazione Archeologica",
+      "excerpt": "Ricerca, documentazione, didattica, Dott.ssa Lo Curto 3462209236 - locurto@paropos.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "puglisi@paropos.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832369",
+      "page": 20,
+      "document": "Relazione Archeologica",
+      "excerpt": "valorizzazione dei beni culturali, Dott.ssa Puglisi: 3288858555 - puglisi@paropos.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Francesco Chiri",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "francesco.chiri@postacertificata.org",
+     "occurrences": 70,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832305",
+      "page": 2,
+      "document": "PTO SE RTN Partanna 3 - Parte 1 di 4",
+      "excerpt": "lng. Francesco Ghiri Te/: +39 091 6195726 - Fax: +39 091 9783000 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@studiochiri.it",
+     "occurrences": 63,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832305",
+      "page": 377,
+      "document": "PTO SE RTN Partanna 3 - Parte 1 di 4",
+      "excerpt": "Studio Tecnico Ing. Francesco C hiri - Via Marco Tullio Cicerone n 23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 9783000 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0916195726",
+     "occurrences": 63,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832305",
+      "page": 377,
+      "document": "PTO SE RTN Partanna 3 - Parte 1 di 4",
+      "excerpt": "Studio Tecnico Ing. Francesco C hiri - Via Marco Tullio Cicerone n 23 - 90147 Palermo Tel: +39 091 6195726 - Fax: +39 091 9783000 - email: info@studiochiri.it - pec: francesco.chiri@postacertificata.org"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "SeaWindPower S.r.l.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "seawindpower@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832294",
+      "page": 3,
+      "document": "Piano preliminare di utilizzo in sito delle terre e rocce da scavo",
+      "excerpt": "via A. Ognibene 107 - 92013 - Menfi - Agrigento - Italy tel 3935041496 - seawindpowersrls@gmail.com - seawindpower@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "seawindpowersrls@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832294",
+      "page": 3,
+      "document": "Piano preliminare di utilizzo in sito delle terre e rocce da scavo",
+      "excerpt": "via A. Ognibene 107 - 92013 - Menfi - Agrigento - Italy tel 3935041496 - seawindpowersrls@gmail.com - seawindpower@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3935041496",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832294",
+      "page": 3,
+      "document": "Piano preliminare di utilizzo in sito delle terre e rocce da scavo",
+      "excerpt": "via A. Ognibene 107 - 92013 - Menfi - Agrigento - Italy tel 3935041496 - seawindpowersrls@gmail.com - seawindpower@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Matrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0922982063",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832367",
+      "page": 66,
+      "document": "Studio di impatto acustico",
+      "excerpt": "92020 §, Stefano Quisquina {AG} Tel 0922 982063 A Pagina 6 di 12"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Motrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0922892083",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/832367",
+      "page": 76,
+      "document": "Studio di impatto acustico",
+      "excerpt": "Tel. 0922 892083 ."
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "16 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "16 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 22 mesi (3), 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/832377",
+    "page": 116,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "Si stima una durata complessiva dei lavori pari a 16 mesi."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 110,
+  "pagine": 2480,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Geremo S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 45.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MAZARA DEL VALLO",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TP",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "il titolo riporta 45 MW, gli elaborati 4,5 MW"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "260 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
