@@ -1,0 +1,673 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9571",
+ "title": "Progetto di un impianto eolico denominato \"IBE Guglionesi\", costituito da 8 aerogeneratori della potenza unitaria di 6.0 MW, per una potenza complessiva di 48 MW, da realizzarsi nei comuni di Guglionesi, Montenero di Bisaccia e Montecilfone (CB).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9571",
+ "source": "mase",
+ "updated": "2026-11-20",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "48 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9571",
+    "excerpt": "48 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 5 (7), 50 (6), 7 (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/785672",
+    "page": 1,
+    "document": "Avviso del 06/03/2023",
+    "excerpt": "eolica denominato “IBE Guglionesi” avente potenza nominale pari a 48 MW. Il progetto prevede l’installazione di 8 aerogeneratori della potenza unitaria di 6.0 MW, diametro del rotore pari a 170 m, altezza hub di 115 m ed"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "246 giorni (circa 8 mesi)",
+   "status": "da verificare",
+   "sub": "Inizio lavori 04/06/2028 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 148 giorni (circa 5 mesi) (2), 22 mesi (2), 6 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/785653",
+    "page": 178,
+    "document": "Relazione di Studio d'Impatto Ambientale",
+    "excerpt": "giorni durante la durata del cantiere pari a 256 giorni), pertanto potrebbe esserci la necessità di bagnatura delle superfici per 246 giorni all’anno e 148 durante l’esecuzione dei lavori. Nei giorni non piovosi, in real"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Molise",
+  "provincia": "CB",
+  "comuni": [
+   "Guglionesi",
+   "Montenero Di Bisaccia",
+   "Montecilfone"
+  ],
+  "coordinate": {
+   "lat": 41.95019,
+   "lon": 14.853,
+   "tipo": "centro della tavola georeferenziata di progetto (55 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/785629",
+    "page": 1,
+    "document": "Inquadramento su strumento urbanistico comunale",
+    "excerpt": "Inquadramento su strumento urbanistico comunale"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.95019,14.85300",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "IBE Guglionesi Wind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ibe.guglionesi@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/785610",
+      "page": 43,
+      "document": "Relazione Generale",
+      "excerpt": "IBE GUGLIONESI S.r.l. ibe.guglionesi@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0110195120",
+     "occurrences": 249,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/785653",
+      "page": 1,
+      "document": "Relazione di Studio d'Impatto Ambientale",
+      "excerpt": "Corso Re Umberto, 8 10121 Torino (TO) Tel. 011-0195120"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9571"
+   }
+  },
+  {
+   "name": "F4 ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "f4ingegneria@pec.it",
+     "occurrences": 205,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/785653",
+      "page": 1,
+      "document": "Relazione di Studio d'Impatto Ambientale",
+      "excerpt": "Tel: +39 0971 1944797 - Fax: +39 0971 55452 www.f4ingegneria.it - f4ingegneria@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "ia@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/785633",
+      "page": 3,
+      "document": "Carta dei vincoli",
+      "excerpt": "i F4 ingegneria srl Gruppo di lavoro Da A N vw fdingegnerait= Migegna ia@pec.it Dl, encore"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@f4ingegneria.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1317854",
+      "page": 4,
+      "document": "Integrazioni del 27/08/2025 - F0516AR15B - Prime indicazioni sulla sicurezza-signed_signed",
+      "excerpt": "Indirizzo e-mail: info@f4ingegneria.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "09711944797",
+     "occurrences": 220,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/785653",
+      "page": 1,
+      "document": "Relazione di Studio d'Impatto Ambientale",
+      "excerpt": "Via Di Giura - Centro direzionale, 85100 Potenza Tel: +39 0971 1944797 - Fax: +39 0971 55452"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/785653",
+    "page": 1,
+    "document": "Relazione di Studio d'Impatto Ambientale",
+    "excerpt": "Progettazione"
+   }
+  },
+  {
+   "name": "Dott. Geol. Maurizio Giacomino",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "mauriziogiacomino@gmail.com",
+     "occurrences": 38,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/785653",
+      "page": 1,
+      "document": "Relazione di Studio d'Impatto Ambientale",
+      "excerpt": "75100 Matera mauriziogiacomino@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3396629531",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/785647",
+      "page": 2,
+      "document": "F0516ER01A-Relazione_geologica-signed_signed.pdf",
+      "excerpt": "Studio Tecnico di Geologia Dott. Geol. Maurizio Giacomino Via del Ginepro, 23 – 75100 Matera - Cell. 3396629531 e-mail: mauriziogiacomino@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/785647",
+    "page": 18,
+    "document": "F0516ER01A-Relazione_geologica-signed_signed.pdf",
+    "excerpt": "Il Geologo Dott. Maurizio Giacomino"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasrl.com",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/785612",
+      "page": 109,
+      "document": "Studio previsionale impatto acustico",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196 www.sonorasrl,com - sonora@sonorasrl.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/785612",
+      "page": 109,
+      "document": "Studio previsionale impatto acustico",
+      "excerpt": "Via dei Bersaglieri, 9 - Caserta Tel 0823 351196 - Fax 0823 351196"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "previsto",
+  "label": "Avvio lavori previsto il 04/06/2028",
+  "reason": "Data di progetto: non prova l'effettivo avvio."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "01/01/2023 → 05/05/2025",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/785619",
+     "page": 2,
+     "document": "Cronoprogramma",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "28 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Permitting",
+    "start": 0.0,
+    "end": 12.04,
+    "level": 0,
+    "dates": [
+     "2023-01-01",
+     "2024-01-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Contratto EPC",
+    "start": 12.01,
+    "end": 14.01,
+    "level": 0,
+    "dates": [
+     "2024-01-01",
+     "2024-03-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Cantierizzazione",
+    "start": 13.98,
+    "end": 17.96,
+    "level": 0,
+    "dates": [
+     "2024-03-01",
+     "2024-06-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Viabilità",
+    "start": 17.93,
+    "end": 21.91,
+    "level": 0,
+    "dates": [
+     "2024-06-29",
+     "2024-10-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Fondazioni",
+    "start": 20.89,
+    "end": 23.88,
+    "level": 0,
+    "dates": [
+     "2024-09-27",
+     "2024-12-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Sottostazione Elettrica Opere Civili",
+    "start": 17.93,
+    "end": 20.59,
+    "level": 0,
+    "dates": [
+     "2024-06-29",
+     "2024-09-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Sottostazione Elettrica Opere Elettromeccaniche",
+    "start": 18.91,
+    "end": 21.58,
+    "level": 0,
+    "dates": [
+     "2024-07-29",
+     "2024-10-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Cavidotti",
+    "start": 19.9,
+    "end": 22.89,
+    "level": 0,
+    "dates": [
+     "2024-08-28",
+     "2024-11-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio Aerogeneratori",
+    "start": 22.86,
+    "end": 26.18,
+    "level": 0,
+    "dates": [
+     "2024-11-26",
+     "2025-03-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Energizzazione",
+    "start": 26.15,
+    "end": 27.17,
+    "level": 0,
+    "dates": [
+     "2025-03-06",
+     "2025-04-05"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Avvio produzione",
+    "start": 27.14,
+    "end": 28.16,
+    "level": 0,
+    "dates": [
+     "2025-04-05",
+     "2025-05-05"
+    ],
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 28.16,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/785619",
+   "page": 2,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "gen 23",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "feb 23",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "mar 23",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "apr 23",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "mag 23",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "giu 23",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "lug 23",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "ago 23",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "set 23",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "ott 23",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "nov 23",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "dic 23",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "gen 24",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "feb 24",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "mar 24",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "apr 24",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "mag 24",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "giu 24",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "lug 24",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "ago 24",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "set 24",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "ott 24",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "nov 24",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "dic 24",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "gen 25",
+     "start": 24.0,
+     "end": 25.0
+    },
+    {
+     "label": "feb 25",
+     "start": 25.0,
+     "end": 26.0
+    },
+    {
+     "label": "mar 25",
+     "start": 26.0,
+     "end": 27.0
+    },
+    {
+     "label": "apr 25",
+     "start": 27.0,
+     "end": 28.0
+    },
+    {
+     "label": "mag 25",
+     "start": 28.0,
+     "end": 29.0
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "246 giorni (circa 8 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 148 giorni (circa 5 mesi) (2), 22 mesi (2), 6 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/785653",
+    "page": 178,
+    "document": "Relazione di Studio d'Impatto Ambientale",
+    "excerpt": "giorni durante la durata del cantiere pari a 256 giorni), pertanto potrebbe esserci la necessità di bagnatura delle superfici per 246 giorni all’anno e 148 durante l’esecuzione dei lavori. Nei giorni non piovosi, in real"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "04/06/2028",
+    "iso": "2028-06-04",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1317854",
+     "page": 2,
+     "document": "Integrazioni del 27/08/2025 - F0516AR15B - Prime indicazioni sulla sicurezza-signed_signed",
+     "excerpt": "Data inizio lavori: 04/06/2028 Data fine lavori (presunta):"
+    }
+   },
+   {
+    "label": "Fine lavori",
+    "date": "14/02/2030",
+    "iso": "2030-02-14",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1317854",
+     "page": 2,
+     "document": "Integrazioni del 27/08/2025 - F0516AR15B - Prime indicazioni sulla sicurezza-signed_signed",
+     "excerpt": "Data fine lavori (presunta): 14/02/2030 Durata in giorni (presunta):"
+    }
+   }
+  ],
+  "document": {
+   "document": "Integrazioni del 27/08/2025 - F0516AR10B - Cronoprogramma-signed_signed",
+   "url": "https://va.mite.gov.it/File/Documento/1317849"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 27/08/2025 - F0516AR10B - Cronoprogramma-signed_signed",
+    "url": "https://va.mite.gov.it/File/Documento/1317849"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 152,
+  "pagine": 2475,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "IBE Guglionesi Wind S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 48.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GUGLIONESI, MONTENERO DI BISACCIA, MONTECILFONE",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CB",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Molise",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "325 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
