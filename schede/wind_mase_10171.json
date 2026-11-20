@@ -1,0 +1,335 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10171",
+ "title": "Progetto di un impianto eolico denominato \"Licata\", costituito da 8 aerogeneratori per una potenza complessiva di 48MW, con sistema di accumulo di 24MW, e delle relative opere di connessione alla RTN da realizzarsi nel Comune di Licata e Campobello di Licata, in Provincia di Agrigento.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10171",
+ "source": "mase",
+ "updated": "2026-11-20",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "48 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10171",
+    "excerpt": "48 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 9 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/978261",
+    "page": 1,
+    "document": "Avviso al pubblico del 16/02/2024",
+    "excerpt": "Trattasi di un impianto eolico per la produzione industriale di energia elettrica da fonte rinnovabile eolica, costituito da n° 8 aerogeneratori tripala (WTG) ad asse orizzontale, ciascuno di potenza nominale pari a 6,0 "
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/978206",
+    "page": 28,
+    "document": "SCS.LC.RE.06-Impatti Cumulativi-signed",
+    "excerpt": "In corso di progettazione, invece, si evidenzia un impianto agrovoltaico “LICATA” in prossimità"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "24 MW / 96 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 48 MW (49)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/978261",
+    "page": 1,
+    "document": "Avviso al pubblico del 16/02/2024",
+    "excerpt": "ELETTRICA DA FONTE EOLICA AVENTE POTENZA IN IMMISSIONE PARI A 48MW E ACCUMULO DI 24MW CON RELATIVO COLLEGAMENTO ALLA RETE ELETTRICA - IMPIANTO DENOMINATO \"LICATA\" UBICATO IN AGRO DEL COMUNE DI LICATA E"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "5-7 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (1), 3-4 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/978205",
+    "page": 11,
+    "document": "SCS.LC.REL.03-Piano preliminare di utilizzo in sito di terre e rocce da scavo-signed",
+    "excerpt": "avendo cura di mantenere inalterato l’andamento plano-altimetrico dei luoghi. Tempo di attesa prima del riutilizzo 5-7 mesi, ovvero il tempo necessario alla costruzione dell’impianto eolico."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "AG",
+  "comuni": [
+   "Licata"
+  ],
+  "coordinate": {
+   "lat": 37.20178,
+   "lon": 13.87982,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (4 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/978220",
+    "page": 1,
+    "document": "SCS.LC.REL.20-TAVOLE LICATA",
+    "excerpt": "SCS.LC.REL.20-TAVOLE LICATA"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.20178,13.87982",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "SCS Innovations S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "emanuele.verdoscia@scsinnovations.com",
+     "occurrences": 41,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/978257",
+      "page": 1,
+      "document": "SCS.LC.REL.01-SIA-signed",
+      "excerpt": "Via Lecce 65 - 73041 Carmiano (LE) tel. 3898549083 - emanuele.verdoscia@scsinnovations.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/978207",
+    "page": 2,
+    "document": "SCS.LC.REL.07-Prime indicazioni di sicurezza-signed",
+    "excerpt": "COMMITTENTE: SCS INNOVATIONS SRL."
+   }
+  },
+  {
+   "name": "Voltalia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1309753",
+    "page": 3,
+    "document": "Parere della Regione Siciliana - Assessorato dei Beni Culturali e dell'Identità Siciliana , in data 01/10/2025",
+    "excerpt": "Proponente / VOLTALIA S.r.l. relativa alla realizzazione di un impianto per la produzione di energia elettrica da fonte solare, denominato “CIC01” nel Comune di Campobello di Licata); Procedura di"
+   }
+  },
+  {
+   "name": "Dott. Geol. Carmelino Mondello",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "geomondello@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/978214",
+      "page": 2,
+      "document": "SCS.LC.REL.14-001_RELAZIONE INDAGINI-signed",
+      "excerpt": "C.da Morera n. 4 - 98060 Montagnareale (ME) - cell.: 320 2521625 e-mail: geomondello@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3202521625",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/978214",
+      "page": 2,
+      "document": "SCS.LC.REL.14-001_RELAZIONE INDAGINI-signed",
+      "excerpt": "Dott. Geol. Carmelino Mondello C.da Morera n. 4 - 98060 Montagnareale (ME) - cell.: 320 2521625"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/978216",
+    "page": 1,
+    "document": "SCS.LC.REL.16-RELAZIONE GEOLOGICA DI FATTIBILITÀ-signed",
+    "excerpt": "RELAZIONE GEOLOGICA Geol. Mondello Carmelino"
+   }
+  },
+  {
+   "name": "Ing. Emanuele Verdoscia",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1082432",
+    "page": 2,
+    "document": "Parere della Regione Sicilia Servizio 1 \"Autorizzazioni e Valutazioni Ambientali\" Palermo in data 12/06/2024",
+    "excerpt": "Progettisti Studio SCS Innovations di Ing. Emanuele Verdoscia; Dr. Agr. Antonio Frioli; dott. chimico"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Dr. Agr. Antonio Frioli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "antoniofrioli@gmail.com",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/978217",
+      "page": 2,
+      "document": "SCS.LC.REL.17-SCAN_RELAZIONE IMPIANTO EOLICO LICATA_signed",
+      "excerpt": "Via Mesagne, 17 – 72028 Torre Santa Susanna (BR) Tel.: 320/4549459 e-mail: antoniofrioli@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3204549459",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/978217",
+      "page": 2,
+      "document": "SCS.LC.REL.17-SCAN_RELAZIONE IMPIANTO EOLICO LICATA_signed",
+      "excerpt": "Via Mesagne, 17 – 72028 Torre Santa Susanna (BR) Tel.: 320/4549459 e-mail: antoniofrioli@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "5-7 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "5-7 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (1), 3-4 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/978205",
+    "page": 11,
+    "document": "SCS.LC.REL.03-Piano preliminare di utilizzo in sito di terre e rocce da scavo-signed",
+    "excerpt": "avendo cura di mantenere inalterato l’andamento plano-altimetrico dei luoghi. Tempo di attesa prima del riutilizzo 5-7 mesi, ovvero il tempo necessario alla costruzione dell’impianto eolico."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 60,
+  "pagine": 852,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "SCS 18 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 48.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "LICATA, CAMPOBELLO DI LICATA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "50 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
