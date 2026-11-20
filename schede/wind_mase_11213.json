@@ -1,0 +1,679 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11213",
+ "title": "Progetto di un impianto eolico denominato \"Iesce\", composto da 7 aerogeneratori di potenza nominale pari a 6,8 MW, per una potenza complessiva di 47,6 MW, e delle relative opere di connessione alla RTN, da realizzarsi nel Comune di Matera (MT), in località \"Iesce\" (cod. MYTERNA n. 202304859).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11213",
+ "source": "mase",
+ "updated": "2026-11-20",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "47,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11213",
+    "excerpt": "47,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "6,80 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 1 (2), 3 (2), 14 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1258691",
+    "page": 1,
+    "document": "Richiesta integrazioni della Regione Basilicata - Ufficio Pianificazione Territoriale e Paesaggio",
+    "excerpt": "D.Lgs. n. 152/2006 e ss.mm.ii., relativa al progetto di un impianto eolico, denominato “Iesce”, composto da 7 aerogeneratori di potenza nominale pari a 6,8 MW, per una potenza complessiva di 47,6 MW, e delle relative ope"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1442817",
+    "page": 8,
+    "document": "Osservazioni della Signora Francesca Augugliaro in data 2/11/2026",
+    "excerpt": "Riteniamo l’agrivoltaico come una forma meno intensiva rispetto al tradizionale fotovoltaico a terra, ma non"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "non indicata",
+   "status": "da verificare",
+   "sub": "Inizio lavori 12/01/2026 (campo presunto di piano di sicurezza o notifica)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1156361",
+    "page": 3,
+    "document": "PSC_Prime indicazioni",
+    "excerpt": "Data inizio lavori: 12/01/2026 Data fine lavori (presunta):"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Basilicata",
+  "provincia": "MT",
+  "comuni": [
+   "Matera"
+  ],
+  "coordinate": {
+   "lat": 40.7124,
+   "lon": 16.682,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (13 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1156362",
+    "page": 30,
+    "document": "Relazione geologica",
+    "excerpt": "Fig. 1 – PUNTO CENTRALE DEL PARCO EOLICO (LAT. 40.71240 – LONG. 16.68200) Mappa di pericolosità sismica del territorio nazionale espressa in termini di accelerazione massima del suolo con"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.71240,16.68200",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Maxima RW1 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "maxima.rw1@pec.it",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1200479",
+      "page": 2,
+      "document": "Richiesta integrazioni del MIC",
+      "excerpt": "Società MAXIMA RW1 S.r.l maxima.rw1@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11213"
+   }
+  },
+  {
+   "name": "Maxima Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "06948690729",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Marco Partipilo 48 70124 Bari Ba",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gpsd@pec.it",
+     "occurrences": 150,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156382",
+      "page": 1,
+      "document": "Impianti FER esistenti ed autorizzati",
+      "excerpt": "via Marco Partipilo n.48 - 70124 BARI pec: gpsd@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "annalisa_gentile@archiworldpec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156361",
+      "page": 2,
+      "document": "PSC_Prime indicazioni",
+      "excerpt": "Tel.: $EMPTY_CSP_09$ - Fax: $EMPTY_CSP_10$ E-Mail: annalisa.gentile@maximaingegneria.com- Pec: annalisa_gentile@archiworldpec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@maximaingegneria.com",
+     "occurrences": 520,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1347829",
+      "page": 160,
+      "document": "Integrazioni del 22/12/2025 - Relazione di impatto acustico",
+      "excerpt": "+39 080 5052189 Massimo Magnotta / info@maximaingegneria.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "annalisa.gentile@maximaingegneria.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156361",
+      "page": 2,
+      "document": "PSC_Prime indicazioni",
+      "excerpt": "Tel.: $EMPTY_CSP_09$ - Fax: $EMPTY_CSP_10$ E-Mail: annalisa.gentile@maximaingegneria.com- Pec: annalisa_gentile@archiworldpec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "massimo.magnotta@maximaingegneria.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156361",
+      "page": 5,
+      "document": "PSC_Prime indicazioni",
+      "excerpt": "Indirizzo e-mail: massimo.magnotta@maximaingegneria.com- Pec: gpsd@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347821",
+    "page": 1,
+    "document": "Integrazioni del 22/12/2025 - Definizione dell'area vasta e classificazione acustica del territorio interessato",
+    "excerpt": "PROGETTAZIONE:"
+   }
+  },
+  {
+   "name": "Dott. Rocco Porsia",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "porsiarocco@pec.epap.it",
+     "occurrences": 59,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156362",
+      "page": 2,
+      "document": "Relazione geologica",
+      "excerpt": "contrada Giardinelle, 7 – 75100 Matera – tel. 0835237271 – cell. 3477151670 e-mail: r.porsia@laboratorioterre.it – pec: porsiarocco@pec.epap.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "r.porsia@laboratorioterre.it",
+     "occurrences": 209,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156382",
+      "page": 1,
+      "document": "Impianti FER esistenti ed autorizzati",
+      "excerpt": "Dott. Geol. Rocco Porsia e-mail: r.porsia@laboratorioterre.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "antonio@virgii.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1298233",
+      "page": 2,
+      "document": "Integrazioni del 30/07/2025 - A_16_a_18_Aree_idonee_ai_sensi_del_D_Lgs_199_2021_rev00_firmato",
+      "excerpt": "e-mail: mesisca antonio@virgii.it e-mail: r.porsia@laboratorioterre.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0835237271",
+     "occurrences": 59,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156362",
+      "page": 2,
+      "document": "Relazione geologica",
+      "excerpt": "GEOTECH - Dott. Rocco PORSIA - GEOLOGO contrada Giardinelle, 7 – 75100 Matera – tel. 0835237271 – cell. 3477151670"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3477151670",
+     "occurrences": 59,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156362",
+      "page": 2,
+      "document": "Relazione geologica",
+      "excerpt": "GEOTECH - Dott. Rocco PORSIA - GEOLOGO contrada Giardinelle, 7 – 75100 Matera – tel. 0835237271 – cell. 3477151670"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1156350",
+    "page": 4,
+    "document": "Relazione geotecnica",
+    "excerpt": "Riferimenti: “Relazione geologica”, elaborata dal Dott. Geol. Rocco Porsia."
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Solare Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02510040229",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Largo Augusto 3 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "solareitaliasrl@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1176855",
+      "page": 1,
+      "document": "Osservazioni della Solare Italia S.r.l.in data 07/11/2024",
+      "excerpt": "In data 2024-11-05T18:09:03+0100, solareitaliasrl@legalmail.it <solareitaliasrl@legalmail.it> ha scritto:"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Ing. Sabrina Scaramuzzi",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sabrina.scaramuzzi7038@pec.ordingbari.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156373",
+      "page": 83,
+      "document": "Relazione impatto acustico-signed",
+      "excerpt": "Pec sabrina.scaramuzzi7038@pec.ordingbari.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ing.scaramuzzis@gmail.com",
+     "occurrences": 151,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156382",
+      "page": 1,
+      "document": "Impianti FER esistenti ed autorizzati",
+      "excerpt": "Ing. Sabrina Scaramuzzi e-mail: ing.scaramuzzis@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Agronomo Marina D'Este",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "m.deste20@gmail.com",
+     "occurrences": 143,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156382",
+      "page": 1,
+      "document": "Impianti FER esistenti ed autorizzati",
+      "excerpt": "Dott. Agronomo Marina D'Este e-mail: m.deste20@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Archeologo Antonio Mesisca",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "mesisca.antonio@virgilio.it",
+     "occurrences": 134,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156382",
+      "page": 1,
+      "document": "Impianti FER esistenti ed autorizzati",
+      "excerpt": "Dott. Archeologo Antonio Mesisca e-mail: mesisca.antonio@virgilio.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Archeoservisi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@archeoservizi.org",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156280",
+      "page": 1,
+      "document": "Carta ricognizione e visibilità dei suoli",
+      "excerpt": "via A. Moro 3/B - 82021 - APICE (BN) info@archeoservizi.org"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 12/01/2026, ma l'iter è proseguito; ultimo documento o atto del 02/11/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1156305",
+   "page": 5,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "15 giorni",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1194962",
+    "page": 2,
+    "document": "Osservazioni dell'Ente ARPA Basilicata - Unità Ufficio Pareri e Impatti Ambientali in data 02/01/2025",
+    "excerpt": "dell’inizio dei lavori nei 15 giorni presso i punti alle fasi di realizzazione"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "12/01/2026",
+    "iso": "2026-01-12",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1156361",
+     "page": 3,
+     "document": "PSC_Prime indicazioni",
+     "excerpt": "Data inizio lavori: 12/01/2026 Data fine lavori (presunta):"
+    }
+   },
+   {
+    "label": "Fine lavori",
+    "date": "26/02/2027",
+    "iso": "2027-02-26",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1156361",
+     "page": 3,
+     "document": "PSC_Prime indicazioni",
+     "excerpt": "Data fine lavori (presunta): 26/02/2027 Durata in giorni (presunta):"
+    }
+   }
+  ],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1156305"
+  },
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "altri": [],
+  "durate_fasi": [
+   {
+    "name": "ALLESTIMENTO CANTIERE",
+    "duration": "35 giorni",
+    "months": 1.15
+   },
+   {
+    "name": "Realizzazione della recinzione e degli accessi al cantiere",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Realizzazione di impianto di messa a terra del cantiere",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Allestimento di depositi, zone per lo stoccaggio dei materiali e per gli im",
+    "duration": "5 giorni",
+    "months": 0.16
+   },
+   {
+    "name": "Allestimento di strutture prefabbricate del cantiere",
+    "duration": "5 giorni",
+    "months": 0.16
+   },
+   {
+    "name": "FORMAZIONE STRADA E PIAZZOLA",
+    "duration": "44 giorni",
+    "months": 1.45
+   },
+   {
+    "name": "Scavo di sbancamento",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Formazione di fondazione stradale",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Formazione di rilevato stradale",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Sagomatura della massicciata e modellazione con terreno vegetale",
+    "duration": "9 giorni",
+    "months": 0.3
+   },
+   {
+    "name": "OPERE DI FONDAZIONE WTG1",
+    "duration": "24 giorni",
+    "months": 0.79
+   },
+   {
+    "name": "Realizzazione della carpenteria per le strutture in fondazione",
+    "duration": "2 giorni",
+    "months": 0.07
+   },
+   {
+    "name": "Lavorazione e posa ferri di armatura per le strutture in fondazione",
+    "duration": "2 giorni",
+    "months": 0.07
+   },
+   {
+    "name": "Getto in calcestruzzo per le strutture in fondazione",
+    "duration": "1 giorni",
+    "months": 0.03
+   },
+   {
+    "name": "Rinterro di scavo",
+    "duration": "1 giorni",
+    "months": 0.03
+   },
+   {
+    "name": "OPERE DI FONDAZIONE WTG2",
+    "duration": "24 giorni",
+    "months": 0.79
+   },
+   {
+    "name": "OPERE DI FONDAZIONE WTG3",
+    "duration": "25 giorni",
+    "months": 0.82
+   },
+   {
+    "name": "OPERE DI FONDAZIONE WTG4",
+    "duration": "25 giorni",
+    "months": 0.82
+   },
+   {
+    "name": "OPERE DI FONDAZIONE WTG5",
+    "duration": "25 giorni",
+    "months": 0.82
+   },
+   {
+    "name": "OPERE DI FONDAZIONE WTG6",
+    "duration": "25 giorni",
+    "months": 0.82
+   },
+   {
+    "name": "OPERE ELETTRICHE DI CONNESSIONE",
+    "duration": "45 giorni",
+    "months": 1.48
+   },
+   {
+    "name": "Scavo a sezione obbligata per cavidotto di collegamento",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Posa di conduttura elettrica - fibra ottica",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Realizzazione cabina di consegna MT",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Commissioning e allacci",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "REALIZZAZIONE SOTTOSTAZIONE UTENTE",
+    "duration": "30 giorni",
+    "months": 0.99
+   },
+   {
+    "name": "Realizzazione di strutture in fondazione per SSU",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "Montaggio di strutture prefabbricate per SSU",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "MONTAGGIO AEREOGENERATORE WTG1",
+    "duration": "15 giorni",
+    "months": 0.49
+   },
+   {
+    "name": "Montaggio dell' aereogeneratore",
+    "duration": "15 giorni",
+    "months": 0.49
+   }
+  ],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 179,
+  "pagine": 2726,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "MAXIMA RW1 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 47.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MATERA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "MT",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Basilicata",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 12/01/2026, ma l'iter è proseguito; ultimo documento o atto del 02/11/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "602 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
