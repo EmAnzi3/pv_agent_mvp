@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto eolico denominato \"Veglie\", costituito da 8 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva di 48 MW, da realizzarsi nel territorio comunale di Veglie (LE), incluse le relative opere di connessione alla RTN ricadenti anche nei comuni di Nardò (LE), Leverano (LE) e Copertino (LE) (cod. MYTERNA n. 202404372).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11485",
  "source": "mase",
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "sintesi": [
   {
    "key": "potenza",
@@ -22,14 +22,14 @@
   {
    "key": "wtg",
    "label": "Aerogeneratori",
-   "value": "8",
-   "status": "da documenti",
-   "sub": "6,00 MW ciascuno · altezza mozzo 175 m · diametro rotore 175 m · Valore prevalente negli elaborati; altri valori: 2 (3), 120 (3), 3 (2)",
+   "value": "9",
+   "status": "da verificare",
+   "sub": "5,33 MW ciascuno · altezza mozzo 175 m · diametro rotore 175 m · Valore più ricorrente negli elaborati; altri valori: 8 (132), 120 (6), 1 (5)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1251692",
+    "url": "https://va.mite.gov.it/File/Documento/1395435",
     "page": 2,
-    "document": "Avviso al pubblico del 13/05/2025",
-    "excerpt": "delle sue opere connesse da ubicare nei territori comunali di Veglie (LE), Nardò (LE), Leverano (LE), Copertino (LE). Il progetto in esame consiste nella realizzazione di un impianto eolico costituito da 8 aerogeneratori"
+    "document": "Integrazioni del 13/05/2026 - VRD - Carta del rischio archeologico",
+    "excerpt": "Nello specifico l’area che rientra in questa campagna di ricognizione ricade nei territori di Veglie, Leverano, Copertino e Nardò, tutti comuni della provincia di Lecce. L’intervento in oggetto prevede la realizzazione d"
    }
   },
   {
@@ -50,7 +50,7 @@
    "label": "Durata cantiere",
    "value": "6 mesi",
    "status": "da verificare",
-   "sub": "Inizio lavori 01/03/2027 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 20 mesi (2), 24 mesi (1)",
+   "sub": "Inizio lavori 01/03/2027 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 20 mesi (2), 24 mesi (1), 8 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1202786",
     "page": 12,
@@ -69,23 +69,54 @@
    "Copertino"
   ],
   "coordinate": {
-   "lat": 40.24834,
-   "lon": 18.00418,
-   "tipo": "centro della tavola georeferenziata di progetto (49 riferimenti concordi)",
+   "lat": 40.32772,
+   "lon": 17.99838,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (553 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1395413",
-    "page": 1,
-    "document": "Integrazioni del 13/05/2026 - Planimetria raccordi",
-    "excerpt": "Integrazioni del 13/05/2026 - Planimetria raccordi"
+    "url": "https://va.mite.gov.it/File/Documento/1395445",
+    "page": 20,
+    "document": "Integrazioni del 13/05/2026 - Relazione di inquadramento sismico",
+    "excerpt": "IT_62830 40,335, 17.970"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.24834,18.00418",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.32772,17.99838",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
  },
  "soggetti": [
+  {
+   "name": "Ravano Wind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02815210998",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dodici Ottobre 2/91 16121 Genova Ge",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ravanowind@pec.it",
+     "occurrences": 108,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1155992",
+      "page": 1,
+      "document": "Legenda e coordinate del parco eolico",
+      "excerpt": "P.IVA 02815210998 ravanowind@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1155969",
+    "page": 2,
+    "document": "Relazione sulle essenze di pregio",
+    "excerpt": "Proponente: RAVANO WIND S.R.L. Progetto per la costruzione ed esercizio di un impianto eolico e relative opere"
+   }
+  },
   {
    "name": "ATS Engineering S.r.l.",
    "kind": "società",
@@ -101,7 +132,7 @@
     {
      "type": "PEC",
      "value": "atseng@pec.it",
-     "occurrences": 219,
+     "occurrences": 246,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1202784",
       "page": 1,
@@ -112,7 +143,7 @@
     {
      "type": "PEC",
      "value": "nva.3@legalmail.it",
-     "occurrences": 6,
+     "occurrences": 10,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1395410",
       "page": 1,
@@ -134,7 +165,7 @@
     {
      "type": "E-mail",
      "value": "atsing@atsing.eu",
-     "occurrences": 47,
+     "occurrences": 54,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1395410",
       "page": 1,
@@ -241,6 +272,52 @@
    }
   },
   {
+   "name": "S.T.P. Damiani & Partners S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "stp.damiani@pec.it",
+     "occurrences": 47,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1155992",
+      "page": 1,
+      "document": "Legenda e coordinate del parco eolico",
+      "excerpt": "mail: info@damianiandpartners.com pec: stp.damiani@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@damianiandpartners.com",
+     "occurrences": 47,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1155992",
+      "page": 1,
+      "document": "Legenda e coordinate del parco eolico",
+      "excerpt": "71036 Lucera (FG) mail: info@damianiandpartners.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3398220246",
+     "occurrences": 47,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1155992",
+      "page": 1,
+      "document": "Legenda e coordinate del parco eolico",
+      "excerpt": "pec: ing.curtotti@pec.it Cell:339/8220246"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Geopolis S.r.l.",
    "kind": "società",
    "roles": [],
@@ -270,6 +347,30 @@
       "page": 2,
       "document": "Integrazioni del 13/05/2026 - Relazione geologica preliminare e compatibilità idrogeologica ampliamento SE380/15036 kV Leverano e raccordo linea esistente",
       "excerpt": "GEOPOLIS srl - 00164 Roma - Via Arnobio, 27 — robe1 1meni@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Notti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3487623630",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1202780",
+      "page": 24,
+      "document": "RCG - Dettaglio ricognizione, carta della copertura e della visibilità del suolo",
+      "excerpt": "eee CONTATTI linfotnostoi-archoologia.it Tal. +39 0972 82004 | mobile +39 348 762 3630"
      }
     }
    ],
@@ -311,6 +412,41 @@
    "source": null
   },
   {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156038",
+      "page": 20,
+      "document": "Elaborato Calcolo Preliminare Strutture Cabina di Consegna",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156038",
+      "page": 20,
+      "document": "Elaborato Calcolo Preliminare Strutture Cabina di Consegna",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Arch. Antonio Anglano",
    "kind": "persona",
    "roles": [],
@@ -329,6 +465,30 @@
       "page": 7,
       "document": "Integrazioni del 13/05/2026 - Attestazione di insussistenza di usi civici",
       "excerpt": "Tel: 0832/1770260"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ravano Power S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0108599500",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1265646",
+      "page": 1,
+      "document": "Controdeduzioni proponente",
+      "excerpt": "Codice fiscale - Partita iva 02997920992 Sede legale: Via XII Ottobre, 2 — 16121 Genova — Tel. 0108599500 — Fax 0108599503"
      }
     }
    ],
@@ -842,7 +1002,7 @@
   "duration": {
    "text": "6 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (2), 24 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (2), 24 mesi (1), 8 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1202786",
     "page": 12,
@@ -889,9 +1049,9 @@
  },
  "documentazione": {
   "documenti": 452,
-  "pagine": 3629,
+  "pagine": 7021,
   "completa": false,
-  "da_leggere": 152
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -922,6 +1082,10 @@
  ],
  "da_verificare": [
   {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Accumulo",
    "reason": "valori diversi negli elaborati"
   },
@@ -931,7 +1095,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "426 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "939 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
