@@ -1,0 +1,954 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9051",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"Bivento\", costituito da 8 aerogeneratori, di potenza unitaria pari a 6 MW, per una potenza complessiva di 48 MW, da realizzarsi nel Comune di Chieuti (FG), con opere di connessione ricadenti nei comuni di Serracapriola (FG) e Rotello (CB).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9051",
+ "source": "mase",
+ "updated": "2026-11-20",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "48 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9051",
+    "excerpt": "48 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "8",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 10 (4), 1 (4), 20 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/776057",
+    "page": 1,
+    "document": "Avviso al pubblico del 28/02/2023",
+    "excerpt": "ecologica ai sensi dell’art.27 del D.Lgs.152/2006, istanza per l’avvio del procedimento di Valutazione di Impatto Ambientale del progetto impianto eolico composto da 8 aerogeneratori per una potenza complessiva di 48 MW "
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "15 mesi",
+   "status": "da verificare",
+   "sub": "Inizio lavori 13/06/2024 (campo presunto di piano di sicurezza o notifica) · Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 24 mesi (1), 20 settimane (circa 5 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/713028",
+    "page": 24,
+    "document": "Relazione Descrittiva",
+    "excerpt": "saranno necessari 450 giorni lavorativi per la costruzione del parco eolico in progetto, corrispondenti a poco meno di 15 mesi di cantiere. Una volta terminato il parco avverrà la prima energizzazione in presenza di pers"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Chieuti"
+  ],
+  "coordinate": {
+   "lat": 41.85541,
+   "lon": 15.13299,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (94 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/713066",
+    "page": 4,
+    "document": "Studio acustico",
+    "excerpt": "511684.4"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.85541,15.13299",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Q-ENERGY Renewables S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "12448130968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Gorani 4 20123 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "q-energyrenewablessrl@legalmail.it",
+     "occurrences": 22,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713020",
+      "page": 1,
+      "document": "Planimetria Catastale",
+      "excerpt": "P.IVA 12448130968 q-energyrenewablessrl@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "q-energyrenewablessri@legalmall.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713010",
+      "page": 1,
+      "document": "Tavola Fotosimulazioni 03",
+      "excerpt": "P.IVA 12448130068 q-energyrenewablessri@legalmall.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9051"
+   }
+  },
+  {
+   "name": "Arch. Antonio Demaio",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/713026",
+    "page": 2,
+    "document": "Relazione Tecnica opere di rete",
+    "excerpt": "Progettista: Arch. Antonio Demaio"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "I.V.P.C. Power 8 S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02523350649",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Fersina 23 38123 Trento Tn",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ivpcpower8@pec.ivpc.com",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713017",
+      "page": 1,
+      "document": "Layout stazione rotello",
+      "excerpt": "108 Indirizzo email ivpcpower8@pec.ivpc.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Vega S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiovega.org",
+     "occurrences": 27,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713065",
+      "page": 8,
+      "document": "Studio Ombra Giornaliera",
+      "excerpt": "+39 0881 756251 Vega sas / info@studiovega.org"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sitvega@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713053",
+      "page": 1,
+      "document": "Tavola aerogeneratore",
+      "excerpt": "È sE Via delli Carri, 48 - 71121 Foggia - Tel. 0881.756251 - Fax 1784412324 € 3 Tel. 0881.756251 | Fax 1784412324 2 2 mall:info@studiovegaorg - website: www.studiovega.org 3 $ | E-Mail: sitvega@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0881756251",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713024",
+      "page": 1,
+      "document": "Stallo AT consegna Terna - Planimetria e profilo",
+      "excerpt": "BS VEGA sas & URBAN PLANNING [2B | Tel. 0881.756251 | Fax 1784412324 = | ————"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0601758251",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713054",
+      "page": 1,
+      "document": "Tavola Piazzola, strade e cavidotti",
+      "excerpt": "3 i VEGA sas ai $ i Va. dll Cari, 48-71121 Foggia (FG) 1) ATA. er ) via dea caret a8-73121 Fogela- el. 0881.756251-Fox 1784412324 È î Tel 0601.758251 | Fex'1704412524 ls ù"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Antonio Bruscella",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "antoniobruscella@hotmail.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713020",
+      "page": 1,
+      "document": "Planimetria Catastale",
+      "excerpt": "Tel. 340.5809582 E-Mail: antoniobruscella@hotmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3405809582",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713020",
+      "page": 1,
+      "document": "Planimetria Catastale",
+      "excerpt": "Piazza Alcide De Gasperi, 27 - 85100 Potenza (Pz) Tel. 340.5809582"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Forestale Luigi Lupo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "luigilupo@libero.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713020",
+      "page": 1,
+      "document": "Planimetria Catastale",
+      "excerpt": "Corso Roma, 110 - 71121 Foggia E-Mail: luigilupo@libero.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@studioprogettazioneacustica.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713022",
+      "page": 1,
+      "document": "Particolari edificio utente",
+      "excerpt": "Sg | Corso Roma, 110-71121 Foggia & 3 | Tel. Fax0803147468 3 5 E-Mail: luigilupo@libero.it <= | E-Mal: info@studioprogettazioneacustica.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geol. Giovanna Amedei",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "giovannaamedei@tiscali.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713020",
+      "page": 1,
+      "document": "Planimetria Catastale",
+      "excerpt": "Tel./Fax 0884.965793 | Cell. 347.6262259 E-Mail: giovannaamedei@tiscali.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "gidvahhaamedei@tiscali.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713025",
+      "page": 1,
+      "document": "Schema elettrico Unifilare",
+      "excerpt": "Ss E-Mail: antoniobruscella@hotmail.it e-mail info@odosarcheologia.t o LIF ax 9793 | Cell, 347.6262259 eu TCS | | | | È 3 ) il: Gidvahhaamedei@tiscali.it Z | È"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3476262259",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/771863",
+      "page": 1,
+      "document": "Integrazioni del 14/02/2023 - Dichiarazione responsabilità",
+      "excerpt": "Puglia, al n. 438, con studio professionale in Rodi Garganico (FG), Via Pietro Nenni n. 4, tel/fax: 0884/965793; cell. 3476262259, incaricata di redigere la Relazione Idro-geo morfologica ai sensi"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "SOLAR-KONZEPT Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@solar-konzept.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713017",
+      "page": 1,
+      "document": "Layout stazione rotello",
+      "excerpt": "www.solar-konzept.de info@solar-konzept.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3409196155",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713017",
+      "page": 1,
+      "document": "Layout stazione rotello",
+      "excerpt": "Galleria Vintler 17 - IT 39100 Bolzano (BZ) Tel +39 3409196155"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasri.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713066",
+      "page": 64,
+      "document": "Studio acustico",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196 www.sonorasri.com - sonora@sonorasri.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713066",
+      "page": 64,
+      "document": "Studio acustico",
+      "excerpt": "Via dei Bersaglieri, 9 - Caserta Tel 0823 351196 - Fax 0823 351196"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Antonella Laura Giordangg",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0881331935",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713054",
+      "page": 1,
+      "document": "Tavola Piazzola, strade e cavidotti",
+      "excerpt": "£ S| Viale degli Aviator, 73/F14 - 71122 Foggia (FA è è Tel. 0881.331935 Td]"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollogenerale@pec.enav.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/713035",
+      "page": 40,
+      "document": "Relazione Tecnica",
+      "excerpt": "ENAV S.p.A. protocollogenerale@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 13/06/2024, ma l'iter è proseguito; ultimo documento o atto del 25/03/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Determinazione Dirigenziale n. 661 del 29/03/2023",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/823308",
+     "page": 1,
+     "document": "Parere della Provincia di Campobasso in data 03/04/2023",
+     "excerpt": "Con la presente si trasmette la Determinazione Dirigenziale n° 661 del 29/03/2023 relativa alle osservazioni espresse da questo Ente in merito alla realizzazione del progetto"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di marzo 2023",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/823308",
+     "page": 1,
+     "document": "Parere della Provincia di Campobasso in data 03/04/2023",
+     "excerpt": "Con la presente si trasmette la Determinazione Dirigenziale n° 661 del 29/03/2023 relativa alle osservazioni espresse da questo Ente in merito alla realizzazione del progetto"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2023",
+    "dettaglio": "inizio stimato + durata del cantiere: 8 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/713033",
+     "page": 7,
+     "document": "Cronoprogramma",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "8 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "Determinazione Dirigenziale n. 661",
+   "data": "29/03/2023",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/823308",
+    "page": 1,
+    "document": "Parere della Provincia di Campobasso in data 03/04/2023",
+    "excerpt": "Con la presente si trasmette la Determinazione Dirigenziale n° 661 del 29/03/2023 relativa alle osservazioni espresse da questo Ente in merito alla realizzazione del progetto"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Recinzione e apprestamenti del cantiere",
+    "start": 0.0,
+    "end": 4.45,
+    "level": 0,
+    "duration": "12 g",
+    "summary": true
+   },
+   {
+    "name": "Realizzazione della recinzione e degli accessi al cantiere Z1",
+    "start": 0.0,
+    "end": 1.85,
+    "level": 1,
+    "duration": "5 g",
+    "summary": false
+   },
+   {
+    "name": "Allestimento di depositi, zone per lo stoccaggio dei materiali e",
+    "start": 1.62,
+    "end": 4.39,
+    "level": 1,
+    "duration": "8 g",
+    "summary": false
+   },
+   {
+    "name": "Impianti di servizio del cantiere",
+    "start": 2.25,
+    "end": 8.31,
+    "level": 0,
+    "duration": "24 g",
+    "summary": true
+   },
+   {
+    "name": "Realizzazione di impianto di messa a terra del cantiere",
+    "start": 2.31,
+    "end": 4.16,
+    "level": 1,
+    "duration": "6 g",
+    "summary": false
+   },
+   {
+    "name": "Realizzazione di impianto elettrico del cantiere",
+    "start": 3.93,
+    "end": 8.31,
+    "level": 1,
+    "duration": "19 g",
+    "summary": false
+   },
+   {
+    "name": "Grande Eolico",
+    "start": 2.71,
+    "end": 8.31,
+    "level": 0,
+    "duration": "69 g",
+    "summary": true
+   },
+   {
+    "name": "Scavi e rinterri",
+    "start": 2.71,
+    "end": 8.31,
+    "level": 1,
+    "duration": "29 g",
+    "summary": true
+   },
+   {
+    "name": "Scavo a sezione obbligata",
+    "start": 2.77,
+    "end": 8.31,
+    "level": 2,
+    "duration": "22 g",
+    "summary": false
+   },
+   {
+    "name": "Rinterro di scavo eseguito a macchina",
+    "start": 7.16,
+    "end": 8.31,
+    "level": 2,
+    "duration": "16 g",
+    "summary": false
+   },
+   {
+    "name": "Fondazione turbine",
+    "start": 2.71,
+    "end": 8.31,
+    "level": 1,
+    "duration": "35 g",
+    "summary": true
+   },
+   {
+    "name": "Realizzazione della carpenteria per le strutture in fondaz",
+    "start": 2.77,
+    "end": 7.62,
+    "level": 2,
+    "duration": "15 g",
+    "summary": false
+   },
+   {
+    "name": "Lavorazione e posa ferri di armatura per le strutture in fo",
+    "start": 5.54,
+    "end": 8.31,
+    "level": 2,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Recinzione plinto",
+    "start": 5.48,
+    "end": 8.31,
+    "level": 1,
+    "duration": "15 g",
+    "summary": true
+   },
+   {
+    "name": "Realizzazione della carpenteria per opere non strutturali",
+    "start": 5.54,
+    "end": 8.31,
+    "level": 2,
+    "duration": "13 g",
+    "summary": false
+   },
+   {
+    "name": "Lavorazione e posa ferri di armatura per opere non strut",
+    "start": 6.23,
+    "end": 8.31,
+    "level": 2,
+    "duration": "12 g",
+    "summary": false
+   },
+   {
+    "name": "Getto in calcestruzzo per opere non strutturali",
+    "start": 7.16,
+    "end": 8.31,
+    "level": 2,
+    "duration": "10 g",
+    "summary": false
+   },
+   {
+    "name": "Posa di recinzioni e cancellate",
+    "start": 5.54,
+    "end": 7.39,
+    "level": 2,
+    "duration": "6 g",
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 8.31,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/713033",
+   "page": 7,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "14",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "15",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "16",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "17",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "18",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "19",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "20",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "21",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "22",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "23",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "24",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "25",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "26",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "27",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "28",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "29",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "30",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "31",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "32",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "33",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "34",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "35",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "36",
+     "start": 8.077,
+     "end": 8.308
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "15 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 24 mesi (1), 20 settimane (circa 5 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/713028",
+    "page": 24,
+    "document": "Relazione Descrittiva",
+    "excerpt": "saranno necessari 450 giorni lavorativi per la costruzione del parco eolico in progetto, corrispondenti a poco meno di 15 mesi di cantiere. Una volta terminato il parco avverrà la prima energizzazione in presenza di pers"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Fine lavori",
+    "date": "26/11/2023",
+    "iso": "2023-11-26",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/713027",
+     "page": 3,
+     "document": "Piano Preliminare di Sicurezza",
+     "excerpt": "Data fine lavori (presunta): 26/11/2023 Dati del CANTIERE:"
+    }
+   },
+   {
+    "label": "Inizio lavori",
+    "date": "13/06/2024",
+    "iso": "2024-06-13",
+    "nature": "campo presunto di piano di sicurezza o notifica",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/713027",
+     "page": 3,
+     "document": "Piano Preliminare di Sicurezza",
+     "excerpt": "Data inizio lavori: 13/06/2024 Data fine lavori (presunta):"
+    }
+   }
+  ],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/713033"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 132,
+  "pagine": 2384,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Q-Energy Renewables S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 48.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CHIEUTI, SERRACAPRIOLA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 13/06/2024, ma l'iter è proseguito; ultimo documento o atto del 25/03/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "117 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
