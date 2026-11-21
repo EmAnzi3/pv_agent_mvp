@@ -1,0 +1,550 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_8975",
+ "title": "Progetto di un impianto eolico, costituito da 7 aerogeneratori di potenza complessiva di 42 MW, e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Canicattì, Naro, Castrofilippo, Agrigento, e Favara, in Provincia di Agrigento.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8975",
+ "source": "mase",
+ "updated": "2026-11-21",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "42 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8975",
+    "excerpt": "42 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 4 (19), 2 (14), 6 (12)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/756247",
+    "page": 164,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "Il progetto prevede la realizzazione di un impianto per la produzione di energia da fonte eolica, composto da 7 aerogeneratori tripala con potenza nominale da 6,00 MW ciascuno, dislocati nel territorio dei comuni di"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "6 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (2), 12 mesi (2), 14 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1149870",
+    "page": 777,
+    "document": "Integrazioni del 16/04/2024 - Studio Impatto Ambientale",
+    "excerpt": "effettuare un intervento preparatorio consistente nella realizzazione di metà della zolla (fase 1) definitiva almeno 6 mesi prima del trapianto definitivo (fase 2)."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "AG",
+  "comuni": [
+   "Canicatti'",
+   "Favara",
+   "Agrigento",
+   "Castrofilippo",
+   "Naro"
+  ],
+  "coordinate": {
+   "lat": 37.34749,
+   "lon": 13.75314,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (52 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1149898",
+    "page": 4,
+    "document": "Integrazioni del 16/04/2024 - Report Anemologico",
+    "excerpt": "387424"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.34749,13.75314",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06400370968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 242,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/756246",
+      "page": 1,
+      "document": "Elenco Elaborati SIA",
+      "excerpt": "P.IVA/C.F. 06400370968 pec: rwerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8975"
+   }
+  },
+  {
+   "name": "Vamirgeoind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/756249",
+    "page": 26,
+    "document": "Relazione geologica",
+    "excerpt": "Committente: Vamirgeoind srl Località: Castrofilippo (AG) Pagina n° 1 di 1 dametri 0,00 ametri 30,00 |Profondità del Sondaggiom 30,00 |Coordinate WGS84 N= E= H="
+   }
+  },
+  {
+   "name": "Dott. Geol. Gualtiero Bellomo",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1149912",
+    "page": 8,
+    "document": "Integrazioni del 16/04/2024 - Relazione generale",
+    "excerpt": "riportate nella Relazione Geologica redatta dal Dott. Geol. Gualtiero Bellomo allegata al presente progetto."
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "LA Molisana Trasporti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01463480705",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Rio Lecine 30 86014 Guardiaregia Cb",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@molisanatrasporti.it",
+     "occurrences": 77,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/756181",
+      "page": 2,
+      "document": "Schede informative viabilità di accesso al parco",
+      "excerpt": "www.molisanatrasporti.com info@molisanatrasporti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geocima S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "04405870827",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Guglielmo Borremans 36 90145 Palermo Pa",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "geocimasnc@tiscali.it",
+     "occurrences": 64,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/756249",
+      "page": 90,
+      "document": "Relazione geologica",
+      "excerpt": "GEOCIMA s.a.s. ­ Laboratorio di Geologia Tecnica ­ Via Borremans, 36 ­ 90145 ­ Palermo Tel/Fax 0916824940 – Email: geocimasnc@tiscali.it ­ P.I. 04405870827"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Amici Della Terra APS",
+   "kind": "società",
+   "roles": [],
+   "vat": "02141761003",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ippolito Nievo 62 Sc C I 00153 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "amicidellaterra@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/780118",
+      "page": 3,
+      "document": "Osservazioni della Sig.ra Monica Tommasi in data 27/02/2023",
+      "excerpt": "www.amicidellaterra.it amicidellaterra@pec.it — segreteria@amicidellaterra.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@amicidellaterra.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/780118",
+      "page": 3,
+      "document": "Osservazioni della Sig.ra Monica Tommasi in data 27/02/2023",
+      "excerpt": "www.amicidellaterra.it amicidellaterra@pec.it — segreteria@amicidellaterra.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Rewind Energy S.r.l.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rewindenergy@pec.it",
+     "occurrences": 129,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1149867",
+      "page": 1,
+      "document": "Integrazioni del 16/04/2024 - Elenco elaborati",
+      "excerpt": "P.IVA/C.F. 02785820818 pec: rewindenergy@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Giuseppe Pullara",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "studiotecnicopullara@gmail.com",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/802143",
+      "page": 11,
+      "document": "Osservazioni dell'AZIENDA AGRICOLA ERIKA LA RUSSA Tramite Studio Legale Cardella in data 14/03/2023",
+      "excerpt": "S ta to f tt U a | e ì Via Bersagliere Urso n. 53 Favara (Ag) Tel. 0922070004 - 3200689953 e-mail: studiotecnicopullara@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0922070004",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/802143",
+      "page": 11,
+      "document": "Osservazioni dell'AZIENDA AGRICOLA ERIKA LA RUSSA Tramite Studio Legale Cardella in data 14/03/2023",
+      "excerpt": "S ta to f tt U a | e ì Via Bersagliere Urso n. 53 Favara (Ag) Tel. 0922070004 - 3200689953 e-mail: studiotecnicopullara@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Giovanni Crisostomo Nucera Responsabile",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0922552626",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/779534",
+      "page": 30,
+      "document": "Osservazioni della Sig.ra La Russa Erika in data 27/02/2023",
+      "excerpt": "Responsabile procedimento Arch. Giovanni Crisostomo Nucera Responsabile Istruttoria: Stanza 18. Piano 3 Tel. 0922 552626 Durata procedimento 120 giorni"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sorgenia Grecale S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sorgenia.grecale@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1149869",
+      "page": 1,
+      "document": "Integrazioni del 16/04/2024 - Validazione progetto opere di rete di TERNA",
+      "excerpt": "SORGENIA GRECALE S.R.L. sorgenia.grecale@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Rossana Miglietta",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0683138989",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1149868",
+      "page": 3,
+      "document": "Integrazioni del 16/04/2024 - Soluzione tecnica minima generale",
+      "excerpt": "Contatti: Eugenio Mazzini Tel. 06.8313.8989"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Avv. Enzo Gianmaria Cardella",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "cardellaenzo@avvocatiagrigento.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/802143",
+      "page": 1,
+      "document": "Osservazioni dell'AZIENDA AGRICOLA ERIKA LA RUSSA Tramite Studio Legale Cardella in data 14/03/2023",
+      "excerpt": "pec: cardellaenzo@avvocatiagrigento.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "E-WAY Gamma S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "e-waygamma@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1149869",
+      "page": 1,
+      "document": "Integrazioni del 16/04/2024 - Validazione progetto opere di rete di TERNA",
+      "excerpt": "E-WAY GAMMA SRL e-waygamma@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "E-Way Finance S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "______e-wayfinance@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1149869",
+      "page": 14,
+      "document": "Integrazioni del 16/04/2024 - Validazione progetto opere di rete di TERNA",
+      "excerpt": "00186 Roma PEC: ______e-wayfinance@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Idhamic Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0824383550",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1149898",
+      "page": 33,
+      "document": "Integrazioni del 16/04/2024 - Report Anemologico",
+      "excerpt": "B2000 Pietreicina (2M) — ITALY da parte di Monietome Panilio Hoiding Sr ae RIMA a ‘Tel. +39 0824 383550 - Fan. +35 0824 583563 (REA di BH 123376 - Capitale Sociale € 5/000. 000.00 Ly. «de e"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "6 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "6 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (2), 12 mesi (2), 14 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1149870",
+    "page": 777,
+    "document": "Integrazioni del 16/04/2024 - Studio Impatto Ambientale",
+    "excerpt": "effettuare un intervento preparatorio consistente nella realizzazione di metà della zolla (fase 1) definitiva almeno 6 mesi prima del trapianto definitivo (fase 2)."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 279,
+  "pagine": 5067,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "RWE Renewables Italia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 42.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CANICATTÌ, NARO, CASTROFILIPPO, AGRIGENTO, FAVARA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "206 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
