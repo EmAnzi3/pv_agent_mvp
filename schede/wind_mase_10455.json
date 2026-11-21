@@ -1,0 +1,308 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10455",
+ "title": "Progetto eolico denominato \"Monte Cerchio\" della potenza complessiva di 43,4 MW e relative opere connesse, sito nei Comuni di CAIRO MONTENOTTE e CENGIO in provincia di Savona e SALICETO in provincia di Cuneo",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10455",
+ "source": "mase",
+ "updated": "2026-11-21",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "43,4 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10455",
+    "excerpt": "43,4 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 10 (1), 18 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/958439",
+    "page": 2,
+    "document": "Avviso al pubblico del 08/01/2024",
+    "excerpt": "Comune/i, aree marine) e prevede _la realizzazione di un nuovo parco eolico composto da 7 aerogeneratori di potenza ciascuno pari a 6,2 MW e aventi l’altezza al mozzo pari a 125 m e diametro rotore pari a 162"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/958650",
+    "page": 113,
+    "document": "Relazione_avifauna_chirotteri-signed",
+    "excerpt": "semi-offshore areas, p. 99-108, en Wind Energy and Landscape, Proceedings of the 2nd European"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "196 giorni (circa 6 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 30 mesi (1), 490 giorni (circa 16 mesi) (1), 5 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1142674",
+    "page": 16,
+    "document": "Integrazioni del 01/08/2024 - Integrazione Regione Piemonte (2)-signed",
+    "excerpt": "Risulta quindi che si debba procedere, a titolo preventivo e di valutazione dell’intervento, a innaffiare la strada per un totale complessivo di 196 giorni all’anno, pertanto per il cantiere in oggetto pari a 490 giorni."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Liguria",
+  "provincia": "SV",
+  "comuni": [
+   "Cairo Montenotte",
+   "Cengio In Provincia Di Savona",
+   "Saliceto In Provincia Di Cuneo"
+  ],
+  "coordinate": {
+   "lat": 44.42621,
+   "lon": 8.22266,
+   "tipo": "coordinate del sito dichiarate negli elaborati (14 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/958654",
+    "page": 4,
+    "document": "Relazione Geologica_Programma indagini-signed-signed.pdf",
+    "excerpt": "438195"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=44.42621,8.22266",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Windtek S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10455"
+   }
+  },
+  {
+   "name": "Ing. Silvio Mario Bauducco",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/958656",
+    "page": 1,
+    "document": "BIBLIOGRAFIA_signed",
+    "excerpt": "Coord. gruppo di progettazione Ing. Silvio Mario Bauducco"
+   }
+  },
+  {
+   "name": "Dott. Geologo Alessandro Canavero",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/958651",
+    "page": 3,
+    "document": "Geologica Generale_REV01-signed-signed",
+    "excerpt": "Gli Scriventi, Dott.ssa Geologo Sabrina Santini e Dott. Geologo Alessandro Canavero, domiciliati presso lo Studio Associato di Geologia Tecnica GEO.LAB, con sede a Savona in Piazza Diaz 11/5, ed"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Deca Service S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10934720011",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Nino Bonnet 6/B 20154 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "decaservicesrl@legalmail.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1007271",
+      "page": 1,
+      "document": "Richiesta Integrazioni MiC",
+      "excerpt": "Società WINDTEK S.r.l. decaservicesrl@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0114143812",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1184376",
+      "page": 1,
+      "document": "Integrazioni del 03/12/2024 - nov-18-2024-10-32-52-consegna-codice-procedura-10",
+      "excerpt": "P.IVA 10934720011 tel 011/4143812 - fax 011/4080153"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Geom. Domenico Bresciano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "emmecsris@gmail.com",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/958651",
+      "page": 1,
+      "document": "Geologica Generale_REV01-signed-signed",
+      "excerpt": "M via e (CU) Geom. Domenico Bresciano EMME CONSULTING... e-mail: emmecsris@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "196 giorni (circa 6 mesi)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1142674",
+   "page": 16,
+   "document": "Integrazioni del 01/08/2024 - Integrazione Regione Piemonte (2)-signed",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "196 giorni (circa 6 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 30 mesi (1), 490 giorni (circa 16 mesi) (1), 5 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1142674",
+    "page": 16,
+    "document": "Integrazioni del 01/08/2024 - Integrazione Regione Piemonte (2)-signed",
+    "excerpt": "Risulta quindi che si debba procedere, a titolo preventivo e di valutazione dell’intervento, a innaffiare la strada per un totale complessivo di 196 giorni all’anno, pertanto per il cantiere in oggetto pari a 490 giorni."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 01/08/2024 - Cronoprogramma dei lavori-signed",
+   "url": "https://va.mite.gov.it/File/Documento/1142925"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Integrazioni del 01/08/2024 - Cronoprogramma dei lavori-signed",
+    "url": "https://va.mite.gov.it/File/Documento/1142925"
+   },
+   {
+    "document": "Cronoprogramma-signed",
+    "url": "https://va.mite.gov.it/File/Documento/958647"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 800,
+  "pagine": 2550,
+  "completa": false,
+  "da_leggere": 500
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "WINDTEK S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 43.4,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CAIRO MONTENOTTE",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SV",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Liguria",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "3259 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
