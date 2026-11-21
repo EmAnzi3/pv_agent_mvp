@@ -5,7 +5,7 @@
  "title": "Realizzazione Impianto Agrivoltaico della Potenza di 10 MW – denominato Aprilia01 in località Buon Riposo Determinazione G14890 del 10/11/2025 - Favorevole con prescrizioni ( Determinazione G03753 del 20/03/2026",
  "source_url": "https://regionelazio.app.box.com/v/VIA-012-2023",
  "source": "lazio",
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "sintesi": [
   {
    "key": "potenza",
@@ -22,13 +22,39 @@
   {
    "key": "impianto",
    "label": "Impianto",
-   "value": "Agrivoltaico",
+   "value": "Agrivoltaico · tracker monoassiali",
    "status": "da documenti",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1603099431664",
     "page": 1,
     "document": "signed_26031-04_VIA 178_RL12-23 DREN SOLARE 3_ CDS II_26-07-24-signed-signed.pdf",
     "excerpt": "PROGETTO: \"REALIZZAZIONE IMPIANTO AGRIVOLTAICO DELLA POTENZA DI 10 MW - DENOMINATO"
+   }
+  },
+  {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "12,7 ha",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 ha (5), 19,4 ha (2), 13,8 ha (1)",
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1928925294619",
+    "page": 18,
+    "document": "Verbale 3°parte III^CdS del 18.07.2025  Aprilia Buon Riposo DREN 012-2023.pdf",
+    "excerpt": "realizzazione e all’esercizio dell’intervento in esame, per una potenza nominale definitiva di 10 MWp circa su una superficie recintata comprensiva di mitigazione è di 12,7 ha a fronte dei 17,8 ha originari,"
+   }
+  },
+  {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "5,558 ha",
+   "status": "da documenti",
+   "sub": "44% dell'area",
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1842862609284",
+    "page": 11,
+    "document": "Rel.20_-_Relazione_Paesaggistica_rev03_.pdf.20_-_Relazione_Paesaggistica_rev03_.pdf",
+    "excerpt": "Superficie viabilità 4.500 mq Superficie totale netta pannelli fotovoltaici e cabine e viabilità 55.584 mq Superficie totale percentuale netta pannelli fotovoltaici e cabine 21%"
    }
   }
  ],
@@ -38,9 +64,19 @@
   "comuni": [
    "Aprilia"
   ],
-  "coordinate": null,
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Aprilia%2C+LT%2C+Lazio",
-  "maps_precision": "comune",
+  "coordinate": {
+   "lat": 41.57778,
+   "lon": 12.61389,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati",
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1499730811143",
+    "page": 1,
+    "document": "P061PRDECAPRREL001  Allegato Cartografico Relazione PAI tavolaA1.pdf",
+    "excerpt": "41°34'50\"N 41°34'40\"N 12°36'50\"E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.57778,12.61389",
+  "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
   "lotti": []
@@ -61,7 +97,7 @@
     {
      "type": "PEC",
      "value": "drensolare3@legalmail.it",
-     "occurrences": 24,
+     "occurrences": 77,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1643716835048",
       "page": 1,
@@ -71,7 +107,7 @@
     }
    ],
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1643669298882",
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1643720319969",
     "page": 1,
     "document": "signed_Risposta_osservazioni (1).pdf",
     "excerpt": "Richiedente: soc. DREN SOLARE 3 s.r.l."
@@ -92,7 +128,7 @@
     {
      "type": "E-mail",
      "value": "dreansolare3@leagimail.it",
-     "occurrences": 1,
+     "occurrences": 3,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1657942466194",
       "page": 4,
@@ -134,6 +170,65 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "Dott. Marco Rizzuto",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0648054256",
+     "occurrences": 4,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1928773640914",
+      "page": 1,
+      "document": "Arpa rel tec 0864127.04-07-2024.pdf",
+      "excerpt": "Referente per quanto comunicato: Dott. Marco Rizzuto Tel. : 0648054256"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Lungomare Nazario Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vito1.loparco@aeronautica.difesa.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_2167779139077",
+      "page": 127,
+      "document": "COPIA_AT_2026_177.pdf",
+      "excerpt": "Indirizzo postale: Lungomare Nazario Sauro 39 – 70121 Bari PEI personale: vito1.loparco@aeronautica.difesa.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0805418422",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_2167779139077",
+      "page": 127,
+      "document": "COPIA_AT_2026_177.pdf",
+      "excerpt": "S.M.A. Loparco V. R. – Tel. 0805418422 (6702422)"
+     }
+    }
+   ],
+   "source": null
   },
   {
    "name": "ItaliaOggi Editori - Erinne S.r.l.",
@@ -182,30 +277,6 @@
    "source": null
   },
   {
-   "name": "Dott. Marco Rizzuto",
-   "kind": "persona",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "Telefono",
-     "value": "0648054256",
-     "occurrences": 2,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1657946456824",
-      "page": 1,
-      "document": "5_Arpa rel tec 0864127 del 04-07-2024.pdf",
-      "excerpt": "Referente per quanto comunicato: Dott. Marco Rizzuto Tel. : 0648054256"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
    "name": "Aemerald 02 S.r.l.",
    "kind": "società",
    "roles": [],
@@ -224,6 +295,30 @@
       "page": 1,
       "document": "ALEX_6.pdf",
       "excerpt": "AEMERALD 02 S.R.L emerald02@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Idran S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@idran.net",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-012-2023&file_id=f_1499732925306",
+      "page": 1,
+      "document": "P061PRDECAPRREL001 Relazione Vincolo PAI_04122023_Cartiglio (1)-signed-signed_signed.pdf",
+      "excerpt": "26015 - Soresina (CR) IDRAN SRL (info@idran.net)"
      }
     }
    ],
@@ -332,9 +427,9 @@
  },
  "documentazione": {
   "documenti": 448,
-  "pagine": 346,
+  "pagine": 1651,
   "completa": false,
-  "da_leggere": 328
+  "da_leggere": 208
  },
  "confronto": [
   {
@@ -365,8 +460,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "40 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "118 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
