@@ -1,0 +1,547 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10083",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"Leverano\", costituito da 6 aerogeneratori di potenza nominale di 7,2 MW, per una potenza complessiva d'impianto pari a 43,2 MW, da realizzarsi nei comuni di Veglie (LE) e Leverano (LE), con opere di connessione alla RTN ricadenti anche nei comuni di Copertino (LE) e Nardò (LE) (cod. MYTERNA n. 202200319).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10083",
+ "source": "mase",
+ "updated": "2026-11-21",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "43,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10083",
+    "excerpt": "43,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 150 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 5 (13), 1 (7), 2 (7)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898006",
+    "page": 1,
+    "document": "Avviso al pubblico del 13/09/2023",
+    "excerpt": "Valutazione di Impatto Ambientale del progetto per la realizzazione e l’esercizio di un impianto di produzione di energia elettrica da fonte eolica denominato “Leverano”, costituito da 6 aerogeneratori della potenza nomi"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/919084",
+    "page": 8,
+    "document": "Osservazioni della RIFUGIO SOCIETA' SEMPLICE SOC. AGRICOLA in data 13/10/2023",
+    "excerpt": "* aree idonee per impianti di grandi dimensioni on shore e off-shore (colore rosso). Aree"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898112",
+    "page": 40,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "39 Per la completa esecuzione dei lavori è previsto un tempo complessivo di 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "LE",
+  "comuni": [
+   "Veglie",
+   "Leverano"
+  ],
+  "coordinate": {
+   "lat": 40.305,
+   "lon": 17.96461,
+   "tipo": "coordinate del sito dichiarate negli elaborati (125 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898032",
+    "page": 10,
+    "document": "Studio evoluzione dell'ombra",
+    "excerpt": "751947; 4465829"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.30500,17.96461",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Salentina 2 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista",
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10083"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Geol. Domenico DEL Conte",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "domenico.delconte@geoapulia.it",
+     "occurrences": 110,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/898037",
+      "page": 2,
+      "document": "Relazione Geologica",
+      "excerpt": "Cell. +39 329.7160866 Fax +39 0884.89012 E-mail: domenico.delconte@geoapulia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3297160866",
+     "occurrences": 110,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/898037",
+      "page": 2,
+      "document": "Relazione Geologica",
+      "excerpt": "Corso Giannone, 184 - Cagnano Varano (FG) Cell. +39 329.7160866 Fax +39 0884.89012"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Studio Tecnico BFP S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "m.matarrese@bfpgroup.net",
+     "occurrences": 84,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/898032",
+      "page": 14,
+      "document": "Studio evoluzione dell'ombra",
+      "excerpt": "+39 080 5046361 Matarrese Miriam / m.matarrese@bfpgroup.net"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Credemtel S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollo@pec.autoritaidrica.puglia.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1013679",
+      "page": 1,
+      "document": "Osservazioni della Autorità Idrica Pugliese, in data 26/03/2024",
+      "excerpt": "Viale Borsellino e Falcone 2 Tel. 080.9641.401 - Fax. 080.9641.430 70125 Bari PEC protocollo@pec.autoritaidrica.puglia.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@autoritaidrica.puglia.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1013679",
+      "page": 1,
+      "document": "Osservazioni della Autorità Idrica Pugliese, in data 26/03/2024",
+      "excerpt": "70125 Bari PEC protocollo@pec.autoritaidrica.puglia.it https://www.autoritaidrica.puglia. it/ Mail segreteria@autoritaidrica.puglia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0809641401",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1013679",
+      "page": 1,
+      "document": "Osservazioni della Autorità Idrica Pugliese, in data 26/03/2024",
+      "excerpt": "Viale Borsellino e Falcone 2 Tel. 080.9641.401 - Fax. 080.9641.430"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "23/06/2016",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/898112",
+     "page": 10,
+     "document": "Studio di impatto ambientale",
+     "excerpt": "durata pari a 20 anni a partire dalla data di entrata in esercizio commerciale dell’impianto, come previsto dal D.M. del 23/06/2016. 2.2 Valutazione di impatto ambientale"
+    }
+   }
+  ],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "RILIEVI IN SITO e PROVE DI LABORATORIO",
+    "start": 0.0,
+    "end": 1.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "PROGETTTAZIONE ESECUTIVA",
+    "start": 0.48,
+    "end": 2.51,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "CANTIERIZZAZIONE",
+    "start": 2.47,
+    "end": 3.01,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO INTERNO",
+    "start": 2.97,
+    "end": 9.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO ESTERNO",
+    "start": 3.97,
+    "end": 10.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere civili sottostazione",
+    "start": 2.97,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere elettriche sottostazione",
+    "start": 6.97,
+    "end": 11.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudo Sottostazione",
+    "start": 10.96,
+    "end": 11.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Connessione alla rete della sottostazione",
+    "start": 11.96,
+    "end": 12.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ADEGUAMENTO STRADE ESISTENTI",
+    "start": 2.47,
+    "end": 5.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE STRADE E PIAZZOLE",
+    "start": 3.97,
+    "end": 7.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "SCAVI FONDAZIONI TORRI",
+    "start": 5.97,
+    "end": 8.5,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REALIZZAZIONE PLINTI DI FONDAZIONE",
+    "start": 6.47,
+    "end": 10.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "INSTALLAZIONE AEROGENERATORI",
+    "start": 9.96,
+    "end": 12.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Commissioning WTG",
+    "start": 12.96,
+    "end": 14.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "TAKE OVER WTG",
+    "start": 14.46,
+    "end": 15.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ESERCIZIO DELL'IMPIANTO",
+    "start": 15.96,
+    "end": 16.49,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "RIPRISTINI",
+    "start": 15.96,
+    "end": 17.99,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 17.99,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/898011",
+   "page": 18,
+   "document": "Relazione descrittiva",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "MESE 1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/898112",
+    "page": 40,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "39 Per la completa esecuzione dei lavori è previsto un tempo complessivo di 18 mesi, come illustrato nel cronoprogramma seguente."
+   }
+  },
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "23/06/2016",
+    "iso": "2016-06-23",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/898112",
+     "page": 10,
+     "document": "Studio di impatto ambientale",
+     "excerpt": "durata pari a 20 anni a partire dalla data di entrata in esercizio commerciale dell’impianto, come previsto dal D.M. del 23/06/2016. 2.2 Valutazione di impatto ambientale"
+    }
+   }
+  ],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 141,
+  "pagine": 2949,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Wpd Salentina 2 S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 43.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "VEGLIE, COPERTINO",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LE",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "1032 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
