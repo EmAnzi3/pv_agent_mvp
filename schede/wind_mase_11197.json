@@ -1,0 +1,498 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11197",
+ "title": "Progetto di un impianto eolico denominato \"NAHAR\", costituito 6 aerogeneratori di potenza nominale di 7 MW, per una potenza complessiva di 42,00 MW, integrato da un accumulo elettrochimico della potenza di 10 MW",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11197",
+ "source": "mase",
+ "updated": "2026-11-21",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "42 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11197",
+    "excerpt": "42 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "7,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 1 (6), 40 (2), 5 (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1140133",
+    "page": 1,
+    "document": "Avviso al pubblico del 09/09/2024",
+    "excerpt": "realizzazione e l’esercizio di un impianto per la produzione di energia elettrica da fonte rinnovabile di tipo eolico della potenza nominale di 42 MW costituito da 6 aerogeneratori da 7,0 MW cadauno collocati nel comune "
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "10 MW / 40 MWh",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1140133",
+    "page": 1,
+    "document": "Avviso al pubblico del 09/09/2024",
+    "excerpt": "localizzato nel comune di Naro (AG) ed integrato da un accumulo elettrochimico della potenza di 10 MW. Il progetto prevede la produzione di energia elettrica per una potenza massima complessiva di 52 MW, compreso nella t"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1140143",
+    "page": 28,
+    "document": "Progetto di fattibilità tecnica ed economica",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "AG",
+  "comuni": [
+   "Naro"
+  ],
+  "coordinate": {
+   "lat": 37.30658,
+   "lon": 13.85231,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (263 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1140235",
+    "page": 217,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "- latitudine: 37.306575 N - longitudine: 13.852313 E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.30658,13.85231",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 37.31118,
+   "lon": 13.84611,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1140166",
+    "page": 1,
+    "document": "Carta con localizzazione georeferenziata",
+    "excerpt": "ipaq Se ¢ ei Di ant. WTG_03 397749,1 4130017,7"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.31118,13.84611"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06400370968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 68,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1140235",
+      "page": 1,
+      "document": "Studio di impatto ambientale",
+      "excerpt": "P.IVA/C.F. 06400370968 PEC: rwerenewablesitaliasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "lliasrl@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1140172",
+      "page": 1,
+      "document": "Planimetria del Tracciato dell'Elettrodotto",
+      "excerpt": "P.IVA/C.F. 06400370968 PEC: rwerenewablesit<'lliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11197"
+   }
+  },
+  {
+   "name": "New Developments S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "newdevelopmentssrl@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1140143",
+      "page": 2,
+      "document": "Progetto di fattibilità tecnica ed economica",
+      "excerpt": "87100 COSENZA (CS) newdevelopmentssrl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1140142",
+    "page": 9,
+    "document": "Verifica interferenze ENAC/ENAV",
+    "excerpt": "Progettisti: New Developments s.r.l., p.zza Europa, 14 – 87100 Cosenza: ing. Giovanni Guzzo"
+   }
+  },
+  {
+   "name": "Ing. Francesco Meringolo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1140143",
+    "page": 1,
+    "document": "Progetto di fattibilità tecnica ed economica",
+    "excerpt": "Progettisti: dott.ing. Giovanni Guzzo Foliaro dott.ing Amedeo Costabile dott. Ing. Francesco Meringolo"
+   }
+  },
+  {
+   "name": "Dott. Eugenio Martire",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1140224",
+    "page": 37,
+    "document": "Relazione Geologica",
+    "excerpt": "Il geologo Dott. Eugenio Martire"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollogenerale@pec.enav.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1140235",
+      "page": 118,
+      "document": "Studio di impatto ambientale",
+      "excerpt": "00138, Roma (RM) protocollogenerale@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "16 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "PROGETTO ESECUTIVO",
+    "start": 0.0,
+    "end": 1.86,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "INDAGINI GEOGNOSTICHE ESECUTIVE",
+    "start": 0.0,
+    "end": 0.86,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "AUTORIZZAZIONI SISMICHE",
+    "start": 0.86,
+    "end": 2.85,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "CANTIERIZZAZIONE",
+    "start": 2.85,
+    "end": 4.84,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "OPERE CIVILI VIABILITA' E PIAZZOLE",
+    "start": 2.85,
+    "end": 8.82,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "FONDAZIONI",
+    "start": 3.84,
+    "end": 9.82,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "INSTALLAZIONE AEREOGENERATORI",
+    "start": 5.83,
+    "end": 11.81,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "OPERE DI CONNESSIONE E ACCUMULO",
+    "start": 9.81,
+    "end": 12.8,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "CAVIDOTTO AT",
+    "start": 10.81,
+    "end": 13.8,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "COLLAUDI",
+    "start": 11.8,
+    "end": 14.79,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "ENTRATA IN ESERCIZIO",
+    "start": 14.79,
+    "end": 15.79,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 15.79,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1140140",
+   "page": 2,
+   "document": "Cronoprogramma realizzazione parco eolico 'Nahar'",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1140143",
+    "page": 28,
+    "document": "Progetto di fattibilità tecnica ed economica",
+    "excerpt": "soggetto non comunichi al gestore di rete l’inizio dei lavori per la realizzazione dell’impianto di produzione di energia elettrica entro 18 (diciotto) mesi dalla data di comunicazione di accettazione del preventivo."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma realizzazione parco eolico 'Nahar'",
+   "url": "https://va.mite.gov.it/File/Documento/1140140"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 117,
+  "pagine": 2042,
+  "completa": false,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "RWE Renewables Italia S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 42.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "NARO",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AG",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "8 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
