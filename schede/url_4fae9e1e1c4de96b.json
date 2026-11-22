@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un impianto agrovoltaico, denominato \"Corte San Marco\" di potenza pari a 49 MW, unito alle relative opere di connessione alla RTN, da realizzarsi nel Comune di Rovigo (RO).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8815",
  "source": "mase",
- "updated": "2026-10-26",
+ "updated": "2026-11-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -127,6 +127,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -202,6 +203,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -263,6 +265,19 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": [
+    {
+     "ruolo": "EPC",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/769120",
+      "page": 1,
+      "document": "Integrazioni del 06/02/2023 - Relazione Tecnica VVFF",
+      "excerpt": "EPC AIEM Group S.r.l."
+     }
+    }
+   ],
    "office": null,
    "contacts": [
     {
@@ -293,20 +308,7 @@
     "page": 1,
     "document": "Integrazioni del 06/02/2023 - Relazione Tecnica VVFF",
     "excerpt": "EPC AIEM Group S.r.l."
-   },
-   "esecuzione": [
-    {
-     "ruolo": "EPC",
-     "evidenza": "B",
-     "ambito": "impianto",
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/769120",
-      "page": 1,
-      "document": "Integrazioni del 06/02/2023 - Relazione Tecnica VVFF",
-      "excerpt": "EPC AIEM Group S.r.l."
-     }
-    }
-   ]
+   }
   },
   {
    "name": "Gruppo Iren S.p.A.",
@@ -317,6 +319,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [],
    "source": {
@@ -335,6 +338,7 @@
    "vat": "04405870827",
    "vat_group": false,
    "verified": true,
+   "esecuzione": null,
    "office": "Via Guglielmo Borremans 36 90145 Palermo Pa",
    "contacts": [
     {
@@ -361,6 +365,7 @@
    "vat": "03378780245",
    "vat_group": false,
    "verified": true,
+   "esecuzione": null,
    "office": "Via Retrone 29/31 36077 Altavilla Vicentina Vi",
    "contacts": [
     {
@@ -420,6 +425,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -454,6 +460,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -499,6 +506,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -533,6 +541,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -578,6 +587,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -612,6 +622,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -657,6 +668,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -680,6 +692,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -703,6 +716,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -726,6 +740,7 @@
    "vat": null,
    "vat_group": false,
    "verified": false,
+   "esecuzione": null,
    "office": null,
    "contacts": [
     {
@@ -744,6 +759,28 @@
   }
  ],
  "stato": null,
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Aiem Group S.r.l.",
+    "partita_iva": null,
+    "ruolo": "EPC",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/769120",
+     "page": 1,
+     "document": "Integrazioni del 06/02/2023 - Relazione Tecnica VVFF",
+     "excerpt": "EPC AIEM Group S.r.l."
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
  "registro": null,
  "tempistica": {
   "righe": [
@@ -1881,14 +1918,14 @@
    "unita": "mesi"
   },
   "duration": {
-   "text": "2 giorni",
+   "text": "5 giorni",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 giorni (37), 13 giorni (36), 5 giorni (24)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 2 mesi (12), 12 mesi (12), 6-7 mesi (9)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1303663",
-    "page": 153,
-    "document": "All.5.4_250710_0395_0125_C_E_003_R01_00_PSC",
-    "excerpt": "17) Interferenza nel periodo dal 65° g al 86° g dall'inizio dei lavori, per un totale di 2 giorni lavorativi. Fasi: - Realizzazione carpenteria per muri in c.a. e recinzione perimetrale"
+    "url": "https://va.mite.gov.it/File/Documento/1303688",
+    "page": 33,
+    "document": "RtB088_FV_01024_DCR_R1_signed",
+    "excerpt": "• i giorni totali lavorativi sono circa 400 (ipotizzando 5 giorni lavorativi a settimana), la produzione di CO2 dovuta al cantiere è pari a 2.000*2,61*400/1000 = 2.088,00 t CO2, pari"
    }
   },
   "milestones": [
@@ -1918,7 +1955,8 @@
  "documentazione": {
   "documenti": 388,
   "pagine": 12868,
-  "completa": true
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -1969,27 +2007,5 @@
    "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
   }
  ],
- "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso.",
- "esecuzione": {
-  "livello": "B",
-  "imprese": [
-   {
-    "impresa": "Aiem Group S.r.l.",
-    "partita_iva": null,
-    "ruolo": "EPC",
-    "ambito": "impianto",
-    "evidenza": "B",
-    "source": {
-     "url": "https://va.mite.gov.it/File/Documento/769120",
-     "page": 1,
-     "document": "Integrazioni del 06/02/2023 - Relazione Tecnica VVFF",
-     "excerpt": "EPC AIEM Group S.r.l."
-    }
-   }
-  ],
-  "legenda": {
-   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
-   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
-  }
- }
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
 }
