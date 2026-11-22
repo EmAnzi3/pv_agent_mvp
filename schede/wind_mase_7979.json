@@ -1,0 +1,657 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7979",
+ "title": "Progetto di un impianto eolico composto da n. 7 aerogeneratori, ciascuno di potenza pari a 5,6 MW, per una potenza nominale di 39,2 MW, da realizzarsi nel Comune di Riccia (CB) e, le relative opere di connessione alla RTN, da realizzarsi nei Comuni di Cercemaggiore (CB) e Castelpagano (BN).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7979",
+ "source": "mase",
+ "updated": "2026-11-22",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "39,2 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7979",
+    "excerpt": "39,2 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "7",
+   "status": "da documenti",
+   "sub": "5,60 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 2 (8), 3 (6), 4 (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/526030",
+    "page": 7,
+    "document": "STUDIO DI IMPATTO AMBIENTALE (SIA)",
+    "excerpt": "Provincia di Campobasso ed opere di connessione nel comune di Cercemaggiore (CB). L’ipotesi progettuale prevede l’installazione di n.7 aerogeneratori della potenza nominale di 5,6 MW per una potenza complessiva di impian"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Fotovoltaico galleggiante",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/735752",
+    "page": 51,
+    "document": "Integrazioni del 12/12/2022 - INT_S216_R_07_Programmazione_del_piano_di_monitoragio_impiantistico",
+    "excerpt": "° 01.05.07 Strato di protezione con pavimento galleggiante"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12-18 mesi",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/526030",
+    "page": 109,
+    "document": "STUDIO DI IMPATTO AMBIENTALE (SIA)",
+    "excerpt": "Nel calcolo della superficie occupata non sono state prese in considerazione le aree spazzate delle pale e le aree di occupazione temporanea (12-18 mesi) necessarie alla costruzione del parco eolico da restituire success"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Molise",
+  "provincia": "CB",
+  "comuni": [
+   "Riccia  E",
+   "Le Relative Opere Di Connessione Alla Rtn",
+   "Castelpagano"
+  ],
+  "coordinate": {
+   "lat": 41.4467,
+   "lon": 14.81639,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (7 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/526054",
+    "page": 24,
+    "document": "RELAZIONE GEOLOGICA",
+    "excerpt": "30545 41.427240"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.44670,14.81639",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "NEW Green Energy S.r.l. IN Sigla N.G.E. S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "05098141210",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Diocleziano 107 80125 Napoli Na",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "newgreen@pec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/610559",
+      "page": 2,
+      "document": "Richiesta integrazioni MiC",
+      "excerpt": "newgreen@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "danilo.sgambati@newgreen.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/735760",
+      "page": 31,
+      "document": "Integrazioni del 12/12/2022 - MS216_EU02_R-Connessione_alla_Rete_elettrica_nazionale-STMG_con_accettazione-REV01",
+      "excerpt": "A: danilo.sgambati@newgreen.it; salvatorecaputo@enitgroup.eu"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "08119566613",
+     "occurrences": 174,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/526030",
+      "page": 1,
+      "document": "STUDIO DI IMPATTO AMBIENTALE (SIA)",
+      "excerpt": "cap 80125 Napoli Tel:081-195 66613"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7979"
+   }
+  },
+  {
+   "name": "Inse S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/526075",
+    "page": 3,
+    "document": "RELAZIONE DI VALUTAZIONE DEL RISCHIO ARCHEOLOGICO",
+    "excerpt": "progettazione INSE Srl – Ingegneria & Servizi, sita in Viale Michelangelo 71, 80129 Napoli, specializzata nella progettazione di impianti per la produzione e la distribuzione di energia da fonti"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasri.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/526045",
+      "page": 89,
+      "document": "RELAZIONE PREVISIONALE DI IMPATTO ACUSTICO",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196 www.sonorasi.com - sonora@sonorasri.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/526045",
+      "page": 89,
+      "document": "RELAZIONE PREVISIONALE DI IMPATTO ACUSTICO",
+      "excerpt": "Tel 0823 351196 - Fax 0823 351196"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/526084",
+      "page": 24,
+      "document": "CALCOLI PRELIMINARI DELLE STRUTTURE - RELAZIONE",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/526084",
+      "page": 24,
+      "document": "CALCOLI PRELIMINARI DELLE STRUTTURE - RELAZIONE",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "19 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "RILASCIO AUTORIZZAZIONE UNICA",
+    "start": 0.0,
+    "end": 0.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "RILIEVI, ALLESTIMENTO CANTIERE",
+    "start": 0.0,
+    "end": 0.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "SONDAGGI E INDAGINI DI LABORATORIO",
+    "start": 0.99,
+    "end": 2.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "REDAZIONE PROGETTO ESECUTIVO",
+    "start": 1.99,
+    "end": 4.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "APERTURA CANTIERE",
+    "start": 4.99,
+    "end": 5.99,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Realizzazione nuova viabilità e adeguamento di quella esistente",
+    "start": 4.99,
+    "end": 6.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione palificata WTG01 - WTG02",
+    "start": 4.99,
+    "end": 6.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione palificata WTG03 - WTG04",
+    "start": 5.99,
+    "end": 7.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione palificata WTG05 - WTG06",
+    "start": 6.99,
+    "end": 8.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione palificata WTG07",
+    "start": 7.99,
+    "end": 9.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione plinti WTG01 - WTG02",
+    "start": 5.99,
+    "end": 7.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione plinti WTG03 - WTG04",
+    "start": 6.99,
+    "end": 8.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione plinti WTG05 - WTG06",
+    "start": 7.99,
+    "end": 9.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione plinto WTG07",
+    "start": 7.99,
+    "end": 9.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole WTG01 - WTG02",
+    "start": 6.99,
+    "end": 8.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole WTG03 - WTG04",
+    "start": 7.99,
+    "end": 9.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzole WTG05 - WTG06",
+    "start": 8.99,
+    "end": 10.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione piazzola WTG07",
+    "start": 8.99,
+    "end": 10.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "WTG01 - WTG02",
+    "start": 8.99,
+    "end": 10.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "WTG03 - WTG04",
+    "start": 9.99,
+    "end": 11.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "WTG05 - WTG06",
+    "start": 10.99,
+    "end": 12.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "WTG07",
+    "start": 11.99,
+    "end": 13.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Approvvigionamento materiali",
+    "start": 0.99,
+    "end": 8.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Sistemazione area stazione e lavori civili",
+    "start": 3.99,
+    "end": 9.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Montaggi elettromeccanici",
+    "start": 4.99,
+    "end": 10.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Prove sotto tensione",
+    "start": 15.99,
+    "end": 16.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Cavidotto linea magenta",
+    "start": 2.99,
+    "end": 4.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Cavidotto linea ciano",
+    "start": 3.99,
+    "end": 6.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Cavidotto linea blu",
+    "start": 4.99,
+    "end": 6.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Rete di terra",
+    "start": 5.99,
+    "end": 7.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Fibra ottica",
+    "start": 5.99,
+    "end": 9.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Collegamento tra stazione utente e stazione Terna",
+    "start": 10.99,
+    "end": 13.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "raccordi aerei 150 kV per il collegamento in entra-esci tra la nuova SE di smist",
+    "start": 10.99,
+    "end": 15.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "COMMISSIONING, PROVE E COLLAUDI",
+    "start": 16.99,
+    "end": 19.0,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 19.0,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/526082",
+   "page": 6,
+   "document": "CRONOPROGRAMMA DELLE ATTIVITA'",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12-18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 1 mese (2), 6 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/526030",
+    "page": 109,
+    "document": "STUDIO DI IMPATTO AMBIENTALE (SIA)",
+    "excerpt": "Nel calcolo della superficie occupata non sono state prese in considerazione le aree spazzate delle pale e le aree di occupazione temporanea (12-18 mesi) necessarie alla costruzione del parco eolico da restituire success"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "CRONOPROGRAMMA DELLE ATTIVITA'",
+   "url": "https://va.mite.gov.it/File/Documento/526082"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 143,
+  "pagine": 3139,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "New Green Energy S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 39.2,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "RICCIA, CERCEMAGGIORE",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "CB",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Molise",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "380 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
