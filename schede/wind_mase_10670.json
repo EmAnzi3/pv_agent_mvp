@@ -1,0 +1,558 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10670",
+ "title": "Progetto per la realizzazione di un impianto eolico costituito da 6 aerogeneratori di potenza unitaria pari a 6,8 MW, per una potenza complessiva di 40,8 MW, ubicato nei comuni di Turi (BA), Rutigliano (BA) e Conversano (BA), incluse le relative opere di connessione alla RTN ricadenti anche nei comuni di Casamassima (BA) e Acquaviva delle Fonti (BA), oltre ad un sistema di accumulo da 30 MW (cod. MYTERNA n. 202301232).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10670",
+ "source": "mase",
+ "updated": "2026-11-22",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "40,8 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10670",
+    "excerpt": "40,8 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "6,80 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 7 (2), 9 (2), 60 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/985905",
+    "page": 1,
+    "document": "Avviso al pubblico del 05/03/2024",
+    "excerpt": "Conversano, Casamassima ed Acquaviva delle Fonti con opere di connessione ricadenti nei medesimi comuni e prevede la realizzazione di un impianto eolico composto da 6 aerogeneratori ognuno della potenza di 6,8 MW per una"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "70,8 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 30 MW (1778), 6,8 MW (3), 40,8 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/985899",
+    "page": 2,
+    "document": "Studio di Impatto Ambientale - Quadro di riferimento programmatico",
+    "excerpt": "DI 40,8 MW, CON SISTEMA DI ACCUMULO DA 30 MW PER UNA POTENZA COMPLESSIVA DI 70,8 MW E RELATIVE OPERE DI CONNESSIONE ALLA RTN,"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BA",
+  "comuni": [
+   "Turi",
+   "Casamassima",
+   "Rutigliano",
+   "Acquaviva Delle Fonti",
+   "Conversano"
+  ],
+  "coordinate": {
+   "lat": 40.95247,
+   "lon": 17.0534,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (20 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/985852",
+    "page": 4,
+    "document": "Relazione geotecnica",
+    "excerpt": "672162"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.95247,17.05340",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Oceano Rinnovabili S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "oceanorinnovabili@legalmail.it",
+     "occurrences": 93,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985899",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale - Quadro di riferimento programmatico",
+      "excerpt": "Milano (MI) PEC/mail: oceanorinnovabili@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "oceanorinnovabili@baywa-re.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1052233",
+      "page": 3,
+      "document": "Controdeduzioni alle osservazioni del Comune di Rutigliano",
+      "excerpt": "Telefono 3311716965 E-mail oceanorinnovabili@baywa-re.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0232111",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1278719",
+      "page": 1,
+      "document": "Integrazioni del 04/07/2025 - 2025_07_04_ID_11107_Riscontro_osservazioni_Regione_Puglia_e_Comune_di_Rutigliano",
+      "excerpt": "Oceano Rinnovabili S.r.l. | Largo Augusto, 3 | 20122 Milano Oceano Rinnovabili S.r.l. | Largo Augusto, 3 | 20122 Milano | Tel. +39 02 321 11 91 | Fax +39 02 321 11 933"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10670"
+   }
+  },
+  {
+   "name": "Ing. Gianluca Brugnoni",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1095151",
+    "page": 1,
+    "document": "Integrazioni del 30/05/2024 - 74407A",
+    "excerpt": "Il Progettista Ing. Gianluca Brugnoni"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Beshielding S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10105760010",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Monviso 9 10090 Villarbasse To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "shielding@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1095148",
+      "page": 13,
+      "document": "Integrazioni del 30/05/2024 - 74404A",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "busbar@beshielding.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1095148",
+      "page": 13,
+      "document": "Integrazioni del 30/05/2024 - 74404A",
+      "excerpt": "BEShielding S.r.l. - Via Pavia, 116/A - 10098 Rivoli (TO) Italy - Tel. +39.011.95.90.111 - Fax +39.011.95.90.230 - shielding@beshielding.com - busbar@beshielding.com - www.beshielding.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Pheedra S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@pheedra.it",
+     "occurrences": 1848,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985899",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale - Quadro di riferimento programmatico",
+      "excerpt": "Tel. 099.7722302 - Fax 099.9870285 e-mail: info@pheedra.it - web: www.pheedra.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0997722302",
+     "occurrences": 1848,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/985899",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale - Quadro di riferimento programmatico",
+      "excerpt": "74121 - Taranto Tel. 099.7722302 - Fax 099.9870285"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geopolis S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "robe11meni@gmail.com",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1095154",
+      "page": 2,
+      "document": "Integrazioni del 30/05/2024 - 74417A",
+      "excerpt": "GEOPOLIS srl - 00164 Roma - Via Arnobio, 27 – robe11meni@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Brulli Trasmissione S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "brullit@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1095151",
+      "page": 1,
+      "document": "Integrazioni del 30/05/2024 - 74407A",
+      "excerpt": "Brulli Trasmissione Srl Unipersonale - Capitale sociale versato € 1.000.000 - Registro Imprese, codice fiscale e partita IVA No. IT 02627590355 Via Meuccio Ruini, 2 - 42124 Reggio nell’Emilia - Italia - Tel +39.0522.23.3"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@brulli.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1095151",
+      "page": 1,
+      "document": "Integrazioni del 30/05/2024 - 74407A",
+      "excerpt": "Brulli Trasmissione Srl Unipersonale - Capitale sociale versato € 1.000.000 - Registro Imprese, codice fiscale e partita IVA No. IT 02627590355 Via Meuccio Ruini, 2 - 42124 Reggio nell’Emilia - Italia - Tel +39.0522.23.3"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Progetto esecutivo",
+    "start": 0.0,
+    "end": 3.02,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Convenzioni per attraversamenti e interferenze",
+    "start": 0.0,
+    "end": 3.02,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Espropri",
+    "start": 0.0,
+    "end": 3.02,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Affidamento lavori",
+    "start": 0.99,
+    "end": 3.02,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Allestimento del cantiere",
+    "start": 2.98,
+    "end": 4.02,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civili - strade",
+    "start": 3.98,
+    "end": 6.01,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civili - fondazioni torri",
+    "start": 3.98,
+    "end": 8.0,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civili ed elettriche - cavidotti",
+    "start": 5.97,
+    "end": 9.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Trasporto componenti torri ed aerogeneratori",
+    "start": 6.97,
+    "end": 9.0,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Montaggio torri ed aerogeneratori",
+    "start": 7.96,
+    "end": 10.99,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Costruzione cabina elettrica di trasformazione - Opere elettriche e di connessio",
+    "start": 5.97,
+    "end": 12.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Costruzione Bess Substation con Tecnologia Tesla o similari - Opere elettriche",
+    "start": 7.96,
+    "end": 12.98,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Collaudi",
+    "start": 11.95,
+    "end": 14.97,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Dismissione del cantiere e ripristini ambientali",
+    "start": 12.94,
+    "end": 18.11,
+    "level": 1,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 18.11,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/985846",
+   "page": 2,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": null,
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/985846"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 152,
+  "pagine": 2616,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "oceano rinnovabili S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 40.8,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TURI, CASAMASSIMA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "7 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
