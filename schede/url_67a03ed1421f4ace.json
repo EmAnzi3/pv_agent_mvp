@@ -5,7 +5,7 @@
  "title": "Realizzazione di impianto fotovoltaico a terra denominato MALNOME 10 in un'area di cava, connesso alla rete elettrica MT di Areti, di potenza nominale 9991,8 kWp e potenza complessiva lato AC degli inverter pari a 9822 KVA, in Via di Malnome snc",
  "source_url": "https://regionelazio.app.box.com/v/VIA-050-2022",
  "source": "lazio",
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -35,8 +35,8 @@
    "key": "area",
    "label": "Superficie complessiva",
    "value": "17,282 ha",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 24 ha (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 ha (3), 13 ha (2), 15 ha (2)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_973506366935",
     "page": 2,
@@ -48,8 +48,8 @@
    "key": "pannelli",
    "label": "Superficie coperta dai pannelli",
    "value": "4,454 ha",
-   "status": "da documenti",
-   "sub": "26% dell'area · Valore prevalente negli elaborati; altri valori: 12,8 ha (1), 25,4 ha (1)",
+   "status": "da verificare",
+   "sub": "26% dell'area · Valore più ricorrente negli elaborati; altri valori: 4,17 ha (4), 12,8 ha (3), 25,4 ha (3)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145003725120",
     "page": 3,
@@ -61,8 +61,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "7 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6-12 mesi (4), 3 Mesi (3)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145015472744",
     "page": 5,
@@ -80,7 +80,7 @@
   "coordinate": {
    "lat": 41.83429,
    "lon": 12.28787,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (26 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (34 riferimenti concordi)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145007689956",
     "page": 10,
@@ -92,9 +92,87 @@
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
-  "lotti": []
+  "lotti": [
+   {
+    "lotto": "Area I",
+    "lat": 41.83465,
+    "lon": 12.28951,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.83465,12.28951",
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365605378353",
+     "page": 3,
+     "document": "M33.rev26 Piano preliminare rocce da scavo.pdf",
+     "excerpt": "I terreni individuati per l’installazione dell’ impianto (di coordinate geografiche: Latitudine 41° 50' 04.75\" N, Longitudine 12° 17' 22.24\" E) di proprietà della Astroverde Sud srl, si trovano ubicati in provincia di Ro"
+    }
+   },
+   {
+    "lotto": "Sezione D",
+    "lat": 41.83472,
+    "lon": 12.29056,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.83472,12.29056",
+    "source": {
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145012288323",
+     "page": 8,
+     "document": "M23 rev 01-Relazione tecnica descrittiva.pdf.p7m",
+     "excerpt": "Comune di Roma al foglio 745 particelle 288, 65, 66. Le coordinate GPS sono latitudine 41° 50' 5\" Nord longitudine 12° 17' 26\" Est. Il sito di installazione presenta delle caratteristiche che lo rendono particolarmente"
+    }
+   }
+  ]
  },
  "soggetti": [
+  {
+   "name": "Acea Solar S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "15257721009",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazzale Ostiense 2 00154 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "aceasolar@pec.aceaspa.it",
+     "occurrences": 108,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1339799845893",
+      "page": 1,
+      "document": "Progetto Acea Solar_Malnome_comunicazione integrazioni in corso_13.10.2023.pdf",
+      "excerpt": "srl, CF e P.IVA15257721009 con sede legale in Piazzale Ostiense 2, Roma (RM) 00154, pec aceasolar@pec.aceaspa.it,"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "alfonso.messina@aceaspa.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1113028100047",
+      "page": 1,
+      "document": "DICHIARAZIONE ANTIMAFIA ACEA SOLAR.pdf",
+      "excerpt": "rappresentante di ACEA SOLAR SRL , con sede legale in Piazzale Ostiense, 2 Roma 00154, CF e P.IVA 15257721009 Tel.0657991 Fax 0657993736 email alfonso.messina@aceaspa.it pec aceasolar@pec.aceaspa.it ,"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "fabio.portelli@aceaspa.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1113038086291",
+      "page": 2,
+      "document": "Richiesta voltura PAUR Reg Progetti 050-2022.pdf",
+      "excerpt": "per ACEA SOLAR SRL: LUCIANO MASO luciano.maso@aceaspa.it FABIO PORTELLI fabio.portelli@aceaspa.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1339799845893",
+    "page": 1,
+    "document": "Progetto Acea Solar_Malnome_comunicazione integrazioni in corso_13.10.2023.pdf",
+    "excerpt": "Proponente: ACEA SOLAR SRL Registro elenco progetti: n. 050/2022"
+   }
+  },
   {
    "name": "Malnome FV S.r.l.",
    "kind": "società",
@@ -214,7 +292,7 @@
     {
      "type": "PEC",
      "value": "ing.giansanti@pec.ording.roma.it",
-     "occurrences": 19,
+     "occurrences": 81,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_989709867051",
       "page": 1,
@@ -244,66 +322,6 @@
  ],
  "altri_soggetti": [
   {
-   "name": "Acea Solar S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": "15257721009",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Piazzale Ostiense 2 00154 Roma Rm",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "aceasolar@pec.aceaspa.it",
-     "occurrences": 32,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1339799845893",
-      "page": 1,
-      "document": "Progetto Acea Solar_Malnome_comunicazione integrazioni in corso_13.10.2023.pdf",
-      "excerpt": "srl, CF e P.IVA15257721009 con sede legale in Piazzale Ostiense 2, Roma (RM) 00154, pec aceasolar@pec.aceaspa.it,"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "alfonso.messina@aceaspa.it",
-     "occurrences": 2,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1113028100047",
-      "page": 1,
-      "document": "DICHIARAZIONE ANTIMAFIA ACEA SOLAR.pdf",
-      "excerpt": "rappresentante di ACEA SOLAR SRL , con sede legale in Piazzale Ostiense, 2 Roma 00154, CF e P.IVA 15257721009 Tel.0657991 Fax 0657993736 email alfonso.messina@aceaspa.it pec aceasolar@pec.aceaspa.it ,"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "luciano.maso@aceaspa.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1113038086291",
-      "page": 2,
-      "document": "Richiesta voltura PAUR Reg Progetti 050-2022.pdf",
-      "excerpt": "Per qualsiasi informazione è possibile contattare: per ACEA SOLAR SRL: LUCIANO MASO luciano.maso@aceaspa.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "fabio.portelli@aceaspa.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1113038086291",
-      "page": 2,
-      "document": "Richiesta voltura PAUR Reg Progetti 050-2022.pdf",
-      "excerpt": "per ACEA SOLAR SRL: LUCIANO MASO luciano.maso@aceaspa.it FABIO PORTELLI fabio.portelli@aceaspa.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "registro europeo VIES",
-    "url": "https://ec.europa.eu/taxation_customs/vies/"
-   }
-  },
-  {
    "name": "Enav S.p.A.",
    "kind": "società",
    "roles": [],
@@ -329,6 +347,52 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "GSR Tech S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gsrtech@pec.it",
+     "occurrences": 57,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365619744837",
+      "page": 1,
+      "document": "M10.064.PSC Prime indicazioni Piano di Sicurezza.pdf",
+      "excerpt": "info@gsrtech.it gsrtech@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@gsrtech.it",
+     "occurrences": 48,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365619744837",
+      "page": 1,
+      "document": "M10.064.PSC Prime indicazioni Piano di Sicurezza.pdf",
+      "excerpt": "Roma 00123 info@gsrtech.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ing.giansanti@gsrtech.com",
+     "occurrences": 24,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365619744837",
+      "page": 1,
+      "document": "M10.064.PSC Prime indicazioni Piano di Sicurezza.pdf",
+      "excerpt": "Ing. Giovanni Maria Giansanti Di Muzio ing.giansanti@gsrtech.com"
+     }
+    }
+   ],
+   "source": null
   },
   {
    "name": "Ingeteam S.r.l.",
@@ -410,6 +474,76 @@
    "source": null
   },
   {
+   "name": "Romaunica S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "roma@atradius.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1184710995008",
+      "page": 6,
+      "document": "M54 Riscontro alla comunicazione di Roma Capitale del 8 marzo 2023.pdf.p7m",
+      "excerpt": "Sede Legale e Operativa: Fax +39 06 32501289 Via Sabotino, 12 roma@atradius.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0632111515",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1184710995008",
+      "page": 6,
+      "document": "M54 Riscontro alla comunicazione di Roma Capitale del 8 marzo 2023.pdf.p7m",
+      "excerpt": "Telefono +39 06 32111515"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Areti S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "areti@pec.areti.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365583248091",
+      "page": 2,
+      "document": "Riapertura_iter_cds_2026.pdf.pdf",
+      "excerpt": "Areti areti@pec.areti.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "luciano.maso@aceaspa.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1184706290707",
+      "page": 2,
+      "document": "M58 Voltura Preventivo di connessione.pdf.p7m",
+      "excerpt": "connessione, potrà essere contattato anche: Nome LUCIANO MASO Cel. 335404712 email LUCIANO.MASO@ACEASPA.IT"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Valle del Bottegone denominata C15_ALA B- ALA S.r.l.",
    "kind": "società",
    "roles": [],
@@ -434,6 +568,76 @@
    "source": null
   },
   {
+   "name": "Autostrade per l’Italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "autostradeperlitaliadt5fianoromano@pec.autostrade.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365583248091",
+      "page": 2,
+      "document": "Riapertura_iter_cds_2026.pdf.pdf",
+      "excerpt": "Autostrade per l’Italia S.p.A. autostradeperlitaliadt5fianoromano@pec.autostrade.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "reteferroviariaitaliana@pec.rfi.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365583248091",
+      "page": 2,
+      "document": "Riapertura_iter_cds_2026.pdf.pdf",
+      "excerpt": "Rete Ferroviaria Italiana R.F.I. reteferroviariaitaliana@pec.rfi.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Siel S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sales@sielups.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365603226054",
+      "page": 4,
+      "document": "M13.rev26 DATASHEET DEI MATERIALI.pdf",
+      "excerpt": "Phone: +39.02.909861 www.sielups.com sales@sielups.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "02909861",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365603226054",
+      "page": 4,
+      "document": "M13.rev26 DATASHEET DEI MATERIALI.pdf",
+      "excerpt": "Via I° Maggio 25 – 20060 Trezzano Rosa (MI) – ITALY Phone: +39.02.909861"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "Dott. Marco Rizzuto",
    "kind": "persona",
    "roles": [],
@@ -452,6 +656,30 @@
       "page": 1,
       "document": "Malnome_FV__Richiesta_integrazioni_timbrato.pdf",
       "excerpt": "Referente per quanto comunicato: Dott. Marco Rizzuto Tel. : 0648054256"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "All’ENAV S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "funzione.psa@pec.enav.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1305939436066",
+      "page": 1,
+      "document": "Lettera MWEB_2022_1899.pdf",
+      "excerpt": "All’ENAV SpA - Area Operativa - Progettazione Spazi Aerei-Sett. Ostacoli funzione.psa@pec.enav.it"
      }
     }
    ],
@@ -767,8 +995,8 @@
   },
   "duration": {
    "text": "7 mesi",
-   "status": "da documenti",
-   "hint": null,
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6-12 mesi (4), 3 Mesi (3), 3-4 giorni (2)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145015472744",
     "page": 5,
@@ -823,9 +1051,9 @@
  },
  "documentazione": {
   "documenti": 384,
-  "pagine": 1242,
+  "pagine": 2412,
   "completa": false,
-  "da_leggere": 264
+  "da_leggere": 144
  },
  "confronto": [
   {
@@ -856,8 +1084,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Superficie coperta dai pannelli",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "127 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "155 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
