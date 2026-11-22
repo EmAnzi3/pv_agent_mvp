@@ -1,0 +1,782 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9941",
+ "title": "Progetto di un impianto eolico denominato \"Celso-Pesces\", costituito da n. 6 aerogeneratori con potenza unitaria di 6,6 MW, per una potenza complessiva pari a 39,6 MW, da realizzarsi nei comuni di Salemi (TP) e Marsala (TP).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9941",
+ "source": "mase",
+ "updated": "2026-11-22",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "39,6 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9941",
+    "excerpt": "39,6 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 23 (20), 2 (4), 36 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/862084",
+    "page": 3,
+    "document": "Avviso al Pubblico",
+    "excerpt": "In sintesi, l’intervento prevede: ➢ L'installazione di n. 6 aerogeneratori del modello tipo Gamesa SG 6,6 - 170 di potenza pari a 6,6 MW e altezza al mozzo pari a 115 m;"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "13,4 MW / 54 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 53 MW (17), 20 MW (11), 39,6 MW (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/862084",
+    "page": 1,
+    "document": "Avviso al Pubblico",
+    "excerpt": "PESCES”, sito nei Comuni di Salemi (TP) e Marsala (TP), avente potenza nominale di 39,6 MW affiancato da un sistema di storage avente potenza nominale di 13,4 MW, per una potenza richiesta in immissione di 53 MW alla ten"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "14 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (2), 24 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/862208",
+    "page": 296,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "e dismissione. La fase di cantiere, della durata di circa 14 mesi, è la fase nella quale si determinano i maggiori impatti a causa delle attività correlate alla realizzazione dell9impianto, legate"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "TP",
+  "comuni": [
+   "Salemi",
+   "Marsala"
+  ],
+  "coordinate": {
+   "lat": 37.83439,
+   "lon": 12.74664,
+   "tipo": "coordinate del sito dichiarate negli elaborati (66 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/862101",
+    "page": 54,
+    "document": "Verifica preventiva interesse archeologico",
+    "excerpt": "CTR: F. COORDINATE: 37°49'57.87\"N 12°44'46.85\"E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.83439,12.74664",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "NP Sicilia 2 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "12844470968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Galleria Passarella 2 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "npsicilia2@legalmail.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/862084",
+      "page": 1,
+      "document": "Avviso al Pubblico",
+      "excerpt": "PEC npsicilia2@legalmail.it,"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "npsicilia2@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074219",
+      "page": 7,
+      "document": "Integrazioni del 09/05/2024 - Voltura STMG",
+      "excerpt": "A: npsicilia2@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9941"
+   }
+  },
+  {
+   "name": "NPD Italia 2 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1074090",
+    "page": 1,
+    "document": "Integrazioni del 09/05/2024 - Report Avifauna",
+    "excerpt": "Committente: NPD ITALIA 2 S.R.L."
+   }
+  },
+  {
+   "name": "Dott. Ing. Vincenzo Di Marco",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "vdimarco@agonservizi.it",
+     "occurrences": 2499,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/862208",
+      "page": 2,
+      "document": "Studio Impatto Ambientale",
+      "excerpt": "Caltanissetta (CL) Dott. Ing. Vincenzo Di Marco, 3931507844, vdimarco@agonservizi.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/862114",
+    "page": 1,
+    "document": "Inquadramento su Beni Paesaggistici",
+    "excerpt": "IL PROGETTISTA: Dott. Ing. Vincenzo Di Marco"
+   }
+  },
+  {
+   "name": "Dott. Ing. Vittorio Maria Randazzo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "vittoriomaria.randazzo@ingpec.eu",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074097",
+      "page": 69,
+      "document": "Integrazioni del 09/05/2024 - Valutazione previsionale di impatto acustico_var1",
+      "excerpt": "Pec vittoriomaria.randazzo@ingpec.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "vrandazzo@agonservizi.it",
+     "occurrences": 2499,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/862208",
+      "page": 2,
+      "document": "Studio Impatto Ambientale",
+      "excerpt": "Dott. Ing. Vincenzo Di Marco, 3931507844, vdimarco@agonservizi.it Dott. Ing. Vittorio Maria Randazzo, 3406003292, vrandazzo@agonservizi.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1161529",
+    "page": 1,
+    "document": "Integrazioni del 17/10/2024 - NPS2_SAL_C01_SIA-Studio_Impatto_Ambientale_var2",
+    "excerpt": "IL PROGETTISTA"
+   }
+  },
+  {
+   "name": "Agon Engineering S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1074220",
+    "page": 3,
+    "document": "Integrazioni del 09/05/2024 - Computo metrico estimativo - Opere di costruzione_var1",
+    "excerpt": "Progettista: AGON ENGINEERING S.R.L. Pagina 1"
+   }
+  },
+  {
+   "name": "Dott. Maurizio Miceli",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dottmicelimaurizio@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074093",
+      "page": 67,
+      "document": "Integrazioni del 09/05/2024 - Studio geologico preliminare_var1",
+      "excerpt": "Email: geomaumi@yahoo.it Pec: dottmicelimaurizio@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/862208",
+    "page": 163,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "al progetto, redatta dai Geologi Dott. Maurizio Miceli e Dott. Leonardo Mauceri, alla quale si rimanda per i dettagli."
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "NPD Italia II S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "11987560965",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Galleria Passarella 2 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "npditaliaii@legalmail.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074219",
+      "page": 1,
+      "document": "Integrazioni del 09/05/2024 - Voltura STMG",
+      "excerpt": "20121 MILANO (MI) npditaliaii@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Engie Rinnovabili S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "05246990484",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Giorgio Ribotta 31 00144 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "engierinnovabili@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/880395",
+      "page": 1,
+      "document": "Osservazioni della Società ENGIE RINNOVABILI SPA in data 27/07/2023",
+      "excerpt": "ENGIE SA PEC: engierinnovabili@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "06310321",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/880395",
+      "page": 1,
+      "document": "Osservazioni della Società ENGIE RINNOVABILI SPA in data 27/07/2023",
+      "excerpt": "00144 Roma – Italia Tel. +39 06 310321 – Fax +39 06 31032661"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Sorgenia Grecale S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "11884780963",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Alessandro Algardi 4 20148 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sorgenia.grecale@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/871086",
+      "page": 1,
+      "document": "Osservazioni della Società Sorgenia Grecale srl in data 14/07/2023",
+      "excerpt": "sorgeniagrecale@sorgenia.it, PEC: sorgenia.grecale@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sorgeniagrecale@sorgenia.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/871086",
+      "page": 1,
+      "document": "Osservazioni della Società Sorgenia Grecale srl in data 14/07/2023",
+      "excerpt": "sorgeniagrecale@sorgenia.it, PEC: sorgenia.grecale@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "02671941",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/871086",
+      "page": 3,
+      "document": "Osservazioni della Società Sorgenia Grecale srl in data 14/07/2023",
+      "excerpt": "4, 20148 Milano (MI) P.IVA/CF 11884780963, iscritta alla Camera di Commercio di Milano n. 2629161, tel. 02671941, fax 0267194210, e-mail: sorgeniagrecale@sorgenia.it, PEC:"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Delta OHM S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@deltaohm.com",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074097",
+      "page": 71,
+      "document": "Integrazioni del 09/05/2024 - Valutazione previsionale di impatto acustico_var1",
+      "excerpt": "e-mail: info@deltaohm.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "049897715",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074097",
+      "page": 71,
+      "document": "Integrazioni del 09/05/2024 - Valutazione previsionale di impatto acustico_var1",
+      "excerpt": "35030 Caselle di Selvazzano (PD) Laboratorio Accreditato CITATO LAT N° 124 Tel. 0039-0498977150 i"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Entrope S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "entropesnc@pec.entrope.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074217",
+      "page": 1,
+      "document": "Integrazioni del 09/05/2024 - STMG",
+      "excerpt": "65026 POPOLI (PE) entropesnc@pec.entrope.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "areatecnica@entrope.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074218",
+      "page": 1,
+      "document": "Integrazioni del 09/05/2024 - Accettazione STMG",
+      "excerpt": "Comune POPOLI Provincia (PE) CAP 65026, numero telefonico 085976763, posta elettronica certificata entropesnc@pec.entrope.it indirizzo e-mail areatecnica@entrope.it,"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "14 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Installazione apparecchiature elettriche",
+    "start": 6.12,
+    "end": 9.09,
+    "level": 1,
+    "summary": false,
+    "duration": "90 g"
+   },
+   {
+    "name": "Stesura cavi MT",
+    "start": 9.08,
+    "end": 10.07,
+    "level": 0,
+    "summary": true,
+    "duration": "30 g"
+   },
+   {
+    "name": "Collegamento cavi",
+    "start": 9.08,
+    "end": 10.07,
+    "level": 1,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Completamento meccanico SS",
+    "start": 9.08,
+    "end": 10.07,
+    "level": 1,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Accantieramento",
+    "start": 0.2,
+    "end": 1.19,
+    "level": 0,
+    "summary": true,
+    "duration": "30 g"
+   },
+   {
+    "name": "Preparazione strade",
+    "start": 1.29,
+    "end": 4.03,
+    "level": 1,
+    "summary": false,
+    "duration": "90 g"
+   },
+   {
+    "name": "Preparazione piazzole",
+    "start": 1.18,
+    "end": 5.14,
+    "level": 1,
+    "summary": false,
+    "duration": "120 g"
+   },
+   {
+    "name": "Fondazione dirette Aereogeneratori",
+    "start": 2.2,
+    "end": 7.11,
+    "level": 1,
+    "summary": false,
+    "duration": "150 g"
+   },
+   {
+    "name": "Fondazioni su pali Aereogeneratori",
+    "start": 2.17,
+    "end": 7.11,
+    "level": 1,
+    "summary": false,
+    "duration": "150 g"
+   },
+   {
+    "name": "Posa cavi elettrici 36 kV",
+    "start": 6.12,
+    "end": 9.09,
+    "level": 0,
+    "summary": true,
+    "duration": "90 g"
+   },
+   {
+    "name": "Installazione Aereogeneratori",
+    "start": 8.12,
+    "end": 10.98,
+    "level": 1,
+    "summary": false,
+    "duration": "90 g"
+   },
+   {
+    "name": "Completamento meccanico",
+    "start": 10.06,
+    "end": 11.06,
+    "level": 1,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Commissioning",
+    "start": 10.06,
+    "end": 12.05,
+    "level": 1,
+    "summary": false,
+    "duration": "60 g"
+   },
+   {
+    "name": "Stazione pronta per energizzazione",
+    "start": 11.05,
+    "end": 12.05,
+    "level": 1,
+    "summary": true,
+    "duration": "30 g"
+   },
+   {
+    "name": "1° parallelo con rete elettrica (entrata in esercizio)",
+    "start": 12.04,
+    "end": 13.03,
+    "level": 2,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Completamento, collaudo e avviamento",
+    "start": 13.02,
+    "end": 13.95,
+    "level": 1,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Test run",
+    "start": 14.01,
+    "end": 15.02,
+    "level": 0,
+    "summary": true,
+    "duration": "30 g"
+   },
+   {
+    "name": "Entrata in esercizio commerciale Impianto Eolico (COD)",
+    "start": 14.01,
+    "end": 15.02,
+    "level": 1,
+    "summary": false,
+    "duration": "30 g"
+   }
+  ],
+  "unit": "period",
+  "months": 15.02,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/862201",
+   "page": 4,
+   "document": "Cronoprogramma Generale",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0,
+     "end": 1
+    },
+    {
+     "label": "2",
+     "start": 1,
+     "end": 2
+    },
+    {
+     "label": "3",
+     "start": 2,
+     "end": 3
+    },
+    {
+     "label": "4",
+     "start": 3,
+     "end": 4
+    },
+    {
+     "label": "5",
+     "start": 4,
+     "end": 5
+    },
+    {
+     "label": "6",
+     "start": 5,
+     "end": 6
+    },
+    {
+     "label": "7",
+     "start": 6,
+     "end": 7
+    },
+    {
+     "label": "Mese 8",
+     "start": 7,
+     "end": 8
+    },
+    {
+     "label": "9",
+     "start": 8,
+     "end": 9
+    },
+    {
+     "label": "Mese 10",
+     "start": 9,
+     "end": 10
+    },
+    {
+     "label": "Mese 11",
+     "start": 10,
+     "end": 11
+    },
+    {
+     "label": "Mese 12",
+     "start": 11,
+     "end": 12
+    },
+    {
+     "label": "Mese 13",
+     "start": 12,
+     "end": 13
+    },
+    {
+     "label": "Mese 14",
+     "start": 13,
+     "end": 14
+    },
+    {
+     "label": "Mese 15",
+     "start": 14,
+     "end": 15
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "14 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 giorni (2), 5 giorni (2), 18 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/862208",
+    "page": 296,
+    "document": "Studio Impatto Ambientale",
+    "excerpt": "e dismissione. La fase di cantiere, della durata di circa 14 mesi, è la fase nella quale si determinano i maggiori impatti a causa delle attività correlate alla realizzazione dell9impianto, legate"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Integrazioni del 09/05/2024 - Cronoprogramma Generale_var1",
+   "url": "https://va.mite.gov.it/File/Documento/1074222"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Integrazioni del 09/05/2024 - Cronoprogramma Generale_var1",
+    "url": "https://va.mite.gov.it/File/Documento/1074222"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma in immagine (lettura automatica, da verificare)"
+ },
+ "documentazione": {
+  "documenti": 294,
+  "pagine": 4614,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "NP SICILIA 2 S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 39.6,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SALEMI",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TP",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "187 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
