@@ -5,7 +5,7 @@
  "title": "Determinazione di P.A.U.R. n°G12972 dell’08/10/2025 eventuale testo Intervento di Realizzazione Impianto Agrivoltaico “Aprilia 2” della potenza elettrica installata di 10.000 kWp e della potenza elettrica netta immessa in rete di 10.000 kW, con associato sistema di accumulo da 10 MVA Determinazione n°G03206 del 14/03/2025 – Favorevole con prescrizioni",
  "source_url": "https://regionelazio.app.box.com/v/VIA-005-2024",
  "source": "lazio",
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "sintesi": [
   {
    "key": "potenza",
@@ -75,7 +75,7 @@
    "label": "Durata cantiere",
    "value": "8 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 16 mesi (5), 10 mesi (4), 100 giorni (circa 3 mesi) (3)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 16 mesi (7), 10 mesi (4), 100 giorni (circa 3 mesi) (3)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1577796138356",
     "page": 112,
@@ -93,7 +93,7 @@
   "coordinate": {
    "lat": 41.54463,
    "lon": 12.62721,
-   "tipo": "coordinate del sito dichiarate negli elaborati (35 riferimenti concordi)",
+   "tipo": "coordinate del sito dichiarate negli elaborati (41 riferimenti concordi)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1577796138356",
     "page": 179,
@@ -261,7 +261,7 @@
     {
      "type": "Telefono",
      "value": "0648054256",
-     "occurrences": 4,
+     "occurrences": 5,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1602876109460",
       "page": 1,
@@ -344,7 +344,7 @@
     {
      "type": "Telefono",
      "value": "0805418754",
-     "occurrences": 2,
+     "occurrences": 3,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_2007640609480",
       "page": 35,
@@ -356,7 +356,7 @@
    "source": null
   },
   {
-   "name": "Alla ICA REN TRE S.r.l.",
+   "name": "Iica REN TRE S.r.l.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -370,10 +370,10 @@
      "value": "icarentre.srl@legalmail.it",
      "occurrences": 1,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1433433162350",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1657935265352",
       "page": 1,
-      "document": "Richiesta visure storiche impianto Aprilia 2_signed_signed.pdf",
-      "excerpt": "Alla ICA REN TRE S.R.L. icarentre.srl@legalmail.it"
+      "document": "TERNA 1156959.23-09-2024.pdf",
+      "excerpt": "IICA REN TRE S.r.l. icarentre.srl@legalmail.it"
      }
     }
    ],
@@ -412,17 +412,17 @@
    {
     "voce": "Fine lavori",
     "livello": "stimata",
-    "valore": "non prima di novembre 2025",
-    "dettaglio": "inizio stimato + durata del cantiere: 8 mesi",
+    "valore": "non prima di giugno 2026",
+    "dettaglio": "inizio stimato + durata del cantiere: 15 mesi (cronoprogramma)",
     "source": {
-     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1577796138356",
-     "page": 112,
-     "document": "ICA_121_Studio di impatto ambientale_REV01.pdf",
-     "excerpt": "si stima che saranno necessari 280 mezzi totali per il trasporto delle suddette terre in esubero suddivisi in un periodo temporale di circa 7/8 mesi (tempi necessari per la realizzazione del cavidotto). Pertanto, si prev"
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1403832118995",
+     "page": 2,
+     "document": "ICA_121_REL10_Cronoprogramma.pdf.p7m",
+     "excerpt": ""
     }
    }
   ],
-  "durata_cantiere": "8 mesi",
+  "durata_cantiere": "15 mesi (cronoprogramma)",
   "autorizzazione": {
    "atto": "Determinazione n. G03206",
    "data": "14/03/2025",
@@ -441,15 +441,372 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "Istallazione del cantiere",
+    "start": 0.99,
+    "end": 1.45,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Attività di tracciamento",
+    "start": 1.45,
+    "end": 1.82,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere Civili: Preparazione e sistemazione delle Aree",
+    "start": 1.82,
+    "end": 2.8,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera di recinzione",
+    "start": 1.82,
+    "end": 2.57,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Allestimento viabilità di impianto",
+    "start": 2.28,
+    "end": 3.43,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Infissione pali tracker monoassiali",
+    "start": 2.8,
+    "end": 4.64,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Completamento strutture",
+    "start": 3.49,
+    "end": 5.34,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Assemblaggio moduli fotovoltaici",
+    "start": 4.41,
+    "end": 5.8,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Esecuzione collegamenti in BT DC e AC",
+    "start": 4.88,
+    "end": 6.72,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Installazione inverter e cabine elettriche",
+    "start": 4.88,
+    "end": 5.34,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione della distribuzione elettrica a 30kV interna",
+    "start": 4.88,
+    "end": 6.72,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Assemblaggio dei componenti elettrici",
+    "start": 5.34,
+    "end": 7.18,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione collegamento 30kV Impianto, SEU 150/30kV e collegamento",
+    "start": 1.82,
+    "end": 13.66,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione opere civili impianto di rete per la connessione",
+    "start": 3.2,
+    "end": 4.19,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Istallazione dei componenti elettromeccanici",
+    "start": 4.19,
+    "end": 5.57,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudi Elettromeccanici e delle Opere in CAP",
+    "start": 13.66,
+    "end": 14.35,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera di ripristini e opere di mitigazione",
+    "start": 7.54,
+    "end": 8.86,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Impianto di videosorveglianza",
+    "start": 3.49,
+    "end": 4.88,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Collaudo funzionale",
+    "start": 8.92,
+    "end": 13.63,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Smobilizzo del cantiere",
+    "start": 13.63,
+    "end": 13.92,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Avviamento del Piano agricolo-colturale e fornitura e posa in opera di un",
+    "start": 13.63,
+    "end": 14.32,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Avviamento impianto",
+    "start": 14.22,
+    "end": 14.61,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Critical Split",
+    "start": 10.44,
+    "end": 15.01,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Critical Split Task",
+    "start": 0.89,
+    "end": 11.78,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Critical Progress Manual",
+    "start": 0.89,
+    "end": 14.94,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Task Start-only",
+    "start": 7.28,
+    "end": 8.63,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Altra sezione del cronoprogramma (pag. 3)",
+    "separator": true,
+    "start": 0,
+    "end": 0,
+    "level": 0
+   },
+   {
+    "name": "Inizio delle attività previste dal Piano agricolo-colturale: Aratura superficial",
+    "start": 0.81,
+    "end": 1.72,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Pascolamento controllato ovini:Concimazione naturale tramite le deiezioni degli",
+    "start": 0.81,
+    "end": 1.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Fienaggione:Trattore con falciatrice semovente; pressatura fieno, raccolta fieno",
+    "start": 1.99,
+    "end": 4.02,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Pulizia sotto la proiezione a terra dei pannelli, ove non è possibile operare la",
+    "start": 1.99,
+    "end": 2.9,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Trinciatura meccanica e/o manuale della superficie a prato migliorato",
+    "start": 7.01,
+    "end": 8.39,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Concimazione: Distribuzione di copertura di concimi organo-minerali con ausilio ",
+    "start": 8.39,
+    "end": 9.76,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Pascolamento controllato ovini: Concimazione naturale tramite le deiezioni degli",
+    "start": 9.99,
+    "end": 13.01,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Critical Split",
+    "start": 8.69,
+    "end": 13.01,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Critical Split Task Progress",
+    "start": 2.65,
+    "end": 9.96,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Critical Progress Manual Task",
+    "start": 2.65,
+    "end": 12.94,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Task Start-only",
+    "start": 5.7,
+    "end": 6.97,
+    "level": 2,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 15.01,
+  "source": {
+   "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1403832118995",
+   "page": 2,
+   "document": "ICA_121_REL10_Cronoprogramma.pdf.p7m",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "Jul",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "Aug",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "Sep",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "Oct",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "Nov",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "Dec",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "Jan",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "Feb",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "Mar",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "Apr",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "May",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "Jun",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "Jul",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "Aug",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "Sep",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "Oct",
+     "start": 15.0,
+     "end": 16.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "8 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 16 mesi (5), 10 mesi (4), 100 giorni (circa 3 mesi) (3)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 16 mesi (7), 10 mesi (4), 100 giorni (circa 3 mesi) (3)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1577796138356",
     "page": 112,
@@ -462,25 +819,21 @@
    "document": "ICA_121_REL10_Cronoprogramma.pdf.p7m",
    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1403832118995"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "note": null,
   "altri": [
-   {
-    "document": "ICA_121_REL10_Cronoprogramma.pdf.p7m",
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1403832118995"
-   },
    {
     "document": "ICA_121_REL10_Cronoprogramma.pdf",
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-005-2024&file_id=f_1403833564514"
    }
   ],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 391,
-  "pagine": 2046,
+  "pagine": 3189,
   "completa": false,
-  "da_leggere": 151
+  "da_leggere": 37
  },
  "confronto": [
   {
@@ -516,7 +869,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "192 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "211 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
