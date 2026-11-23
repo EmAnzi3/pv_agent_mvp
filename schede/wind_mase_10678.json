@@ -1,0 +1,830 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10678",
+ "title": "Progetto di un impianto eolico denominato \"NEXT2\", composto da 6 aerogeneratori di potenza nominale pari a 6 MW, per una potenza complessiva di 36 MW, e da un sistema di accumulo integrato di potenza pari a 24 MW, per una potenza in immissione pari a 60 MW, da realizzarsi nel Comune di San Pancrazio Salentino (BR) e Salice Salentino (LE), con opere di connessione alla RTN ricadenti anche nei Comuni di Avetrana (TA) ed Erchie (BR). Codice pratica MY TERNA n. 202203107.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10678",
+ "source": "mase",
+ "updated": "2026-11-23",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "36 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10678",
+    "excerpt": "36 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 84 (12), 10 (8), 9 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/991305",
+    "page": 3,
+    "document": "R39b_SIA_Progettuale",
+    "excerpt": "Il presente Studio di Impatto Ambientale (S.I.A.) è stato elaborato ai fini di valutare i possibili impatti derivanti dalla realizzazione di un impianto eolico composto da 6 aerogeneratori e relative opere di connessione"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Fotovoltaico galleggiante",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/991197",
+    "page": 1,
+    "document": "4_21_ElaboratoGrafico",
+    "excerpt": "b pavimento flottante"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "24 MW / 48 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 60 MW (178), 36 MW (7), 6 MW (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/991304",
+    "page": 1,
+    "document": "R39a_SIA_Programmatico",
+    "excerpt": "CON ANNESSO SISTEMA DI ACCUMULO INTEGRATO DI POTENZA PARI A 24 MW, PER UNA POTENZA IN IMMISSIONE PARI A 60MW"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12-20 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (2), 11 mesi (2), 3 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/991305",
+    "page": 12,
+    "document": "R39b_SIA_Progettuale",
+    "excerpt": "Nel calcolo della superficie occupata non sono state prese in considerazione le aree spazzate delle pale e le aree di occupazione temporanea (12-20 mesi) necessarie alla costruzione del parco eolico da restituire success"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "LE",
+  "comuni": [
+   "San Pancrazio Salentino",
+   "Salice Salentino"
+  ],
+  "coordinate": {
+   "lat": 40.40056,
+   "lon": 17.77153,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (288 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/991249",
+    "page": 19,
+    "document": "R01_RelazioneDescrittiva",
+    "excerpt": "è individuata dalle seguenti coordinate geografiche (espresse come punto centrale): Latitudine : 40° 24' 31\" N Longitudine : 17° 47' 48\" E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.40056,17.77153",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "NPD Italia II S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "11987560965",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Galleria Passarella 2 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "npditaliaii@legalmail.it",
+     "occurrences": 152,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991429",
+      "page": 1,
+      "document": "Avviso al pubblico del 11/03/2024",
+      "excerpt": "20122, C.F., P. IVA ed Iscrizione al Registro delle Imprese della CCIAA di Milano n. 11987560965, REA MI - 2633611, tel 0287284480, fax 0244386505, PEC npditaliaii@legalmail.it, e-mail"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "stefano.pieroni@nextenergycapital.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991429",
+      "page": 1,
+      "document": "Avviso al pubblico del 11/03/2024",
+      "excerpt": "REA MI - 2633611, tel 0287284480, fax 0244386505, PEC npditaliaii@legalmail.it, e-mail stefano.pieroni@nextenergycapital.com,"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "npditalia@legalmal.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991052",
+      "page": 1,
+      "document": "0_02b-6_ElaboratoGrafico",
+      "excerpt": ", Cap - 20122 MILANO \" email: npditalia@legalmal.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0287284480",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991429",
+      "page": 1,
+      "document": "Avviso al pubblico del 11/03/2024",
+      "excerpt": "20122, C.F., P. IVA ed Iscrizione al Registro delle Imprese della CCIAA di Milano n. 11987560965, REA MI - 2633611, tel 0287284480, fax 0244386505, PEC npditaliaii@legalmail.it, e-mail"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10678"
+   }
+  },
+  {
+   "name": "Qmsolar S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "qmsolar.sris@pec.it",
+     "occurrences": 87,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991038",
+      "page": 1,
+      "document": "0_1b_Inquadramento_IGM_25000",
+      "excerpt": "Via Guglielmo Marconi scala C n.166 - Cap 72023 MESAGNE (BR) Galleria Passarella, 2, Cap - 20122 MILANO P.IVA 02683290742 - qmsolar.sris@pec.it P.IVA 11987560965 - email: npditaliaii@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "amsolarsis@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991089",
+      "page": 1,
+      "document": "1_05_ElaboratoGrafico",
+      "excerpt": "= asia x [o ose IN WN du Ill i di ) {| Via Guglielmo Marconi scala C'n.166 - Cap 72023 MESAGNE (BR) Galleria Passerella n.2 - Cap 20122 MILANO , crespi n SS ose 632 TX | 628 — > L | LU P.IVA 02683200742. amsolarsis@pec.i"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "npditaliali@legalmall.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991066",
+      "page": 1,
+      "document": "0_04a-10_ElaboratoGrafico",
+      "excerpt": "Via Guglielmo Marconi scala C n.166 - Cap 72023 MESAGNE (BR) Galleria Passarella, 2, Cap - 20122 MILANO ai gmsolr sris@pec.it P.IVA 11987560965 - email: npditaliali@legalmall.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "npditlili@legalmal.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991162",
+      "page": 1,
+      "document": "42_StudioFattibilitàAmbientale",
+      "excerpt": "P.IVA 02683290742 - qmsolar.sris@pec.it P.IVA 11987550965. - email: npditlili@legalmal.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "nnovstiesolutions@gmal.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991212",
+      "page": 1,
+      "document": "4_29c_ElaboratoGrafico",
+      "excerpt": "MSC Innovative Solutions ss - Via Milzia SS - 72100 LECCE (LE) P.IVA 05030190754 - mec nnovstiesolutions@gmal.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/991433",
+    "page": 1,
+    "document": "RelazioneProducibilità_REV",
+    "excerpt": "(— Progettazione: Committente: >)"
+   }
+  },
+  {
+   "name": "MSC Innovative Solutions S.R.L.S.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "05030190754",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via F Milizia 55 73100 Lecce Le",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "msc.innovativesolutions@gmail.com",
+     "occurrences": 147,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991304",
+      "page": 1,
+      "document": "R39a_SIA_Programmatico",
+      "excerpt": "MSC Innovative Solutions s.r.l.s - Via Milizia 55 - 73100 LECCE (LE) P.IVA 05030190754 - msc.innovativesolutions@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "innovativesolutions@gmall.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991040",
+      "page": 1,
+      "document": "0_02a-2_ElaboratoGrafico",
+      "excerpt": "MSC Innovative Solutions s.r..s - Via Milizia 5S - 73100 LECCE (LE) P.IVA 05030190754 - msc innovativesolutions@gmall.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ivesolutions@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991047",
+      "page": 1,
+      "document": "0_02b-1_ElaboratoGrafico",
+      "excerpt": "Via Milizia 55 - 73100 LECCE (LE) s ivesolutions@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "lutions@gmall.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991057",
+      "page": 1,
+      "document": "0_03a-4_ElaboratoGrafico",
+      "excerpt": "lizia SS - 73100 LECCE (LE) lutions@gmall.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ativesolutions@gmall.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991063",
+      "page": 1,
+      "document": "0_03b-3_ElaboratoGrafico",
+      "excerpt": "MSC Innovative Solutions s.r.l.s - Via Milizia SS - 73100 LECCE (LE) P.IVA 05030190754 ativesolutions@gmall.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ovativesolutions@gmal.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991146",
+      "page": 1,
+      "document": "31h_StudioFattibilitàAmbientale",
+      "excerpt": "= Via Milizia 55 - 73100 LECCE (LE) ovativesolutions@gmal.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/991304",
+    "page": 1,
+    "document": "R39a_SIA_Programmatico",
+    "excerpt": "Gruppo di progettazione:"
+   }
+  },
+  {
+   "name": "Dott. Gianluca Selleri",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/991278",
+    "page": 1,
+    "document": "R25_RelazioneIdrogeologica",
+    "excerpt": "Geologo Dott. Gianluca Selleri"
+   }
+  },
+  {
+   "name": "Dott. Marcello De Donatis",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/991276",
+    "page": 1,
+    "document": "R23_RelazioneGeologica",
+    "excerpt": "Geologo Dott. Marcello De Donatis"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Dott. Ing. Santo Masilla",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "ingmasilla@gmail.com",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991085",
+      "page": 4,
+      "document": "1_05d_ElaboratoGrafico",
+      "excerpt": "Via Torre Santa Susanna, 67 - 72020 Erchie (BR) tel. +39 0831.767860 - ingmasilla@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0831767860",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991085",
+      "page": 4,
+      "document": "1_05d_ElaboratoGrafico",
+      "excerpt": "Via Torre Santa Susanna, 67 - 72020 Erchie (BR) tel. +39 0831.767860 - ingmasilla@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "NPD Italia Il S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "npditlili@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991433",
+      "page": 1,
+      "document": "RelazioneProducibilità_REV",
+      "excerpt": "PIVA 02683290742 qmsolorerl@pect. O PVA 11987560965 - email. npditlili@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "sris@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991205",
+      "page": 1,
+      "document": "4_28b_ElaboratoGrafico",
+      "excerpt": "Via Guglielmo Marconi scala C n.166 - Cap 72023 MESAGNE (BR) Galleria Passerella n.2 - Cap 20122 MILANO avn re unico tno Fr amsolar sris@pec.it P.IVA 11987560965 - email: npditaliaii@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "npatll@legalmal.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991112",
+      "page": 1,
+      "document": "1_06i2-h_ElaboratoGrafico",
+      "excerpt": "QMSOLAR s.r.l. NPD Italia Il S.r.l. RIVA onazasora > qua ico 72022 MESKONE CS) P.IVA 11967360965 ~ ngi: npatll@legalmal.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "pditlai@legalmai.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991120",
+      "page": 1,
+      "document": "2_07_ElaboratoGrafico",
+      "excerpt": "DIVA 02683200742. asa sistpecito \"> MESAGNE (BR) PVA 11987560965 < email: pditlai@legalmai.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "nodtls@legatmal.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991140",
+      "page": 1,
+      "document": "31e_StudioFattibilitàAmbientale",
+      "excerpt": "Via Gugliel Ali ‘€ n.166 - Cap 72023 MESAGNE (BR) Galleria Passarella n.2 - Cap 20122 MILANO. -sAsopecit B.VA 11987560965 - ema: nodtls@legatmal.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "nditalat@legalma.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/991184",
+      "page": 1,
+      "document": "49b-1_StudioFattibilitàAmbientale",
+      "excerpt": "QMSOLAR s.r.l. NPD Italia Il S.r.l. PIVA 02683990742\" qreclerstsOpectt o ESAGNE (80) RIVA 11987560968 < ema nditalat@legalma.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "12/2025",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/991253",
+     "page": 4,
+     "document": "R05a_RelazioneOpereElettriche",
+     "excerpt": "Nome del progetto di impianto eolico: NEXT2 Entrata in esercizio (previsione): dicembre 2025"
+    }
+   }
+  ],
+  "durata_cantiere": "20 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Progetto esecutivo",
+    "start": 0.01,
+    "end": 5.97,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Convenzioni per attraversamenti e interferenze",
+    "start": 0.01,
+    "end": 5.97,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Convenzioni per attraversamenti e",
+    "start": 0.01,
+    "end": 5.97,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Espropri",
+    "start": 0.01,
+    "end": 5.97,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Affidamento lavori",
+    "start": 4.0,
+    "end": 5.97,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Allestimento del cantiere",
+    "start": 6.0,
+    "end": 6.96,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civili – strade",
+    "start": 7.0,
+    "end": 8.96,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civili – fondazioni torri",
+    "start": 7.0,
+    "end": 13.97,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Opere civili ed elettriche – cavidotti",
+    "start": 8.99,
+    "end": 14.97,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Trasporto componenti torri ed aerogeneratori",
+    "start": 12.0,
+    "end": 13.97,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Trasporto componenti torri ed",
+    "start": 12.0,
+    "end": 13.97,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Montaggio torri ed aerogeneratori",
+    "start": 13.0,
+    "end": 15.97,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Costruzione SSE – Opere elettriche e di connessione alla RTN",
+    "start": 7.0,
+    "end": 16.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Costruzione SSE – Opere elettriche e di",
+    "start": 7.0,
+    "end": 16.98,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Collaudi",
+    "start": 16.0,
+    "end": 17.98,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Dismissione del cantiere e ripristini ambientali",
+    "start": 18.01,
+    "end": 19.98,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Dismissione del cantiere e ripristini",
+    "start": 18.01,
+    "end": 19.98,
+    "level": 1,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 19.98,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/991285",
+   "page": 2,
+   "document": "R31b _CronoprogrammaRealizzazione",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12-20 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 1 mese (3), 6 mesi (2), 11 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/991305",
+    "page": 12,
+    "document": "R39b_SIA_Progettuale",
+    "excerpt": "Nel calcolo della superficie occupata non sono state prese in considerazione le aree spazzate delle pale e le aree di occupazione temporanea (12-20 mesi) necessarie alla costruzione del parco eolico da restituire success"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "12/2025",
+    "iso": "2025-12",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/991253",
+     "page": 4,
+     "document": "R05a_RelazioneOpereElettriche",
+     "excerpt": "Nome del progetto di impianto eolico: NEXT2 Entrata in esercizio (previsione): dicembre 2025"
+    }
+   }
+  ],
+  "document": {
+   "document": "R31b _CronoprogrammaRealizzazione",
+   "url": "https://va.mite.gov.it/File/Documento/991285"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "R31c_CronoprogrammaDismissione",
+    "url": "https://va.mite.gov.it/File/Documento/991286"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 309,
+  "pagine": 5085,
+  "completa": false,
+  "da_leggere": 9
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "NPD Italia II S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 36.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "SAN PANCRAZIO SALENTINO, AVETRANA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LE",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "55 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
