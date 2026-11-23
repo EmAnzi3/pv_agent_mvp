@@ -1,0 +1,739 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11566",
+ "title": "Progetto per la realizzazione di un impianto eolico costituito da 5 aerogeneratori di potenza unitaria pari a 7,2 MW, per una potenza complessiva di 36 MW, da realizzarsi nei comuni di Grumo Appula (BA) e Cassano delle Murge (BA), con le opportune opere di connessione alla RTN ricadenti anche nel Comune di Toritto (BA), oltre ad un sistema di accumulo associato da 40 MW (cod. MYTERNA n. 202402823).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11566",
+ "source": "mase",
+ "updated": "2026-11-23",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "36 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11566",
+    "excerpt": "36 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "5",
+   "status": "da documenti",
+   "sub": "7,20 MW ciascuno · altezza mozzo 150 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 18 (6), 6 (5), 21 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1232217",
+    "page": 1,
+    "document": "Avviso al pubblico del 21/03/2025",
+    "excerpt": "D.Lgs.152/2006, istanza per l’avvio del procedimento di Valutazione di Impatto Ambientale del progetto “IMPIANTO EOLICO COMPOSTO DA 5 WTG DA 7.2 MW, UBICATE NEL COMUNE DI GRUMO APPULA (BA) E CASSANO DELLE MURGE (BA) E AS"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1232166",
+    "page": 15,
+    "document": "Analisi Impatti Cumulati",
+    "excerpt": "agrivoltaico"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "40 MW / 320 MWh",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 36 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1232115",
+    "page": 1,
+    "document": "Planimetria della Sottostazione Elettrica Utente e del BESS",
+    "excerpt": "PowerTitan 2.0 - ST5015kWh (ne sono previsti complessivamente n. 64 ciascuno in configurazione da 625,00 kW per un BESS complessivo di potenza 40 MW - Capacità 320 MWh) 13"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1232163",
+    "page": 106,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "opere elettromeccaniche per SSE e BESS. Si prevede un tempo di realizzazione tra 9 e 12 mesi. In merito alla realizzazione delle opere RTN, si specifica che la STMG prevede un tempo di 20 mesi per la loro realizzazione, "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BA",
+  "comuni": [
+   "Grumo Appula",
+   "Cassano Delle Murge"
+  ],
+  "coordinate": {
+   "lat": 40.91422,
+   "lon": 16.74917,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1232118",
+    "page": 15,
+    "document": "Studio di impatto acustico",
+    "excerpt": "Punto di misura M1 (coordinate nel sistema di riferimento WGS 84 UTM 33N: E 647302, N 4530708)"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.91422,16.74917",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Ing. Massimo Candeo",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "m.candeo@pec.it",
+     "occurrences": 122,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232163",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "70125 Bari m.candeo@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1232132",
+    "page": 12,
+    "document": "Verifica Interferenza Titoli Minerari",
+    "excerpt": "IL PROGETTISTA Ing. Massimo Candeo"
+   }
+  },
+  {
+   "name": "Dott. Geol. Raffaele Sassone",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "r.sassone@yahoo.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232139",
+      "page": 1,
+      "document": "Elenco Elaborati",
+      "excerpt": "Dott. Geol. Raffaele Sassone r.sassone@yahoo.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1232131",
+    "page": 33,
+    "document": "Relazione Geotecnica e Sismica",
+    "excerpt": "il Geologo"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Geomonitek - S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "07316560726",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Trieste E Trento 112 70011 Alberobello Ba",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@geomonitek.com",
+     "occurrences": 130,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232131",
+      "page": 35,
+      "document": "Relazione Geotecnica e Sismica",
+      "excerpt": "Sede legale: Corso Trieste e Trento, 112 - 70011 Alberobello (BA) - Italia – P.IVA 07316560726 Tel. 0804322730 - e-mail: info@geomonitek.com - www.geomonitek.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0804322730",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232131",
+      "page": 35,
+      "document": "Relazione Geotecnica e Sismica",
+      "excerpt": "Sede legale: Corso Trieste e Trento, 112 - 70011 Alberobello (BA) - Italia – P.IVA 07316560726 Tel. 0804322730 - e-mail: info@geomonitek.com - www.geomonitek.com"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Stim Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "versano@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232134",
+      "page": 5,
+      "document": "Rilievo planoaltimetrico parco eolico Grumo Appula e Cassano delle Murge",
+      "excerpt": "Tel. 080.5210232 - Fax 080.5234353 m.candeo@pec.it g.conversano@stimeng. it www.stimeng.it - segreteria@stimeng.it sti @stimeng.it gal versano@pec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "canden@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232159",
+      "page": 10,
+      "document": "Inquadramento su CTR del Parco Eolico",
+      "excerpt": "VIA GARRUBA, 3 - 70121 BARI 70125 Bari 70122 Bari Tel. 080.5210232 - Fax 080.5234353 canden@pec.it conversano@®stimeng.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "g.conversano@stimeng.it",
+     "occurrences": 118,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232163",
+      "page": 214,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "70122 Bari g.conversano@stimeng.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "segreteria@stimeng.it",
+     "occurrences": 114,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232163",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Tel. 080.5210232 - Fax 080.5234353 www.stimeng.it - segreteria@stimeng.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "stimdue@stimeng.it",
+     "occurrences": 108,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232163",
+      "page": 214,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "m.candeo@pec.it stimdue@stimeng.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "domenico.laforgia@stimeng.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232139",
+      "page": 1,
+      "document": "Elenco Elaborati",
+      "excerpt": "Prof. Ing. Domenico Laforgia domenico.laforgia@stimeng.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Gianluca Pantile",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "pantile.gianluca@ingpec.eu",
+     "occurrences": 139,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232163",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "Tel. cell. 3471939994 PEC: pantile.gianluca@ingpec.eu"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "gianluca.pantile@gmail.com",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232139",
+      "page": 1,
+      "document": "Elenco Elaborati",
+      "excerpt": "Ing. Gianluca Pantile gianluca.pantile@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "gpantile@libero.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232139",
+      "page": 1,
+      "document": "Elenco Elaborati",
+      "excerpt": "Ing. Gianluca Pantile gpantile@libero.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Gabriele Conversano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gabrieleconversano@pec.it",
+     "occurrences": 108,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232163",
+      "page": 1,
+      "document": "Studio di Impatto Ambientale",
+      "excerpt": "g.conversano@stimeng.it gabrieleconversano@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Metrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@metrix.it",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232118",
+      "page": 38,
+      "document": "Studio di impatto acustico",
+      "excerpt": "Tel. 0922 992053 info@metrix.it – www.metrix.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0922992053",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232118",
+      "page": 38,
+      "document": "Studio di impatto acustico",
+      "excerpt": "92020 S. Stefano Quisquina (AG) Tel. 0922 992053"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Agr. Stefano Convertini",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "constef@gmail.com",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232124",
+      "page": 1,
+      "document": "Relazione Paesaggio Agrario",
+      "excerpt": "ODAF Brindisi n. 228 constef@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Autostrade PER L’italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollo@pec.distrettoappenninomeridionale.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1251338",
+      "page": 33,
+      "document": "Osservazioni della Società Energia Rinnovabile Italia S.u.r.l. in data 22/04/2025",
+      "excerpt": "AUTORITÀ DI BACINO DISTRETTUALE DELL’APPENNINO MERIDIONALE protocollo@pec.distrettoappenninomeridionale.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "autostradeperlitalia@pec.autostrade.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1251338",
+      "page": 33,
+      "document": "Osservazioni della Società Energia Rinnovabile Italia S.u.r.l. in data 22/04/2025",
+      "excerpt": "AUTOSTRADE PER L’ITALIA S.p.A. autostradeperlitalia@pec.autostrade.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Fabio Mastropasqua",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "fabiomastro77@gmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232139",
+      "page": 1,
+      "document": "Elenco Elaborati",
+      "excerpt": "Dott. Fabio Mastropasqua fabiomastro77@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Stefano Di Stefano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "deleo@serviziarcheologia.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1232139",
+      "page": 2,
+      "document": "Elenco Elaborati",
+      "excerpt": "Dott. Stefano Di Stefano deleo@serviziarcheologia.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Anas S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollo.palodelcolle@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1251338",
+      "page": 33,
+      "document": "Osservazioni della Società Energia Rinnovabile Italia S.u.r.l. in data 22/04/2025",
+      "excerpt": "COMUNE DI PALO DEL COLLE (BA) protocollo.palodelcolle@pec.rupar.puglia.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Enel Distribuzione S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "funzione.psa@pec.enav.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1251338",
+      "page": 34,
+      "document": "Osservazioni della Società Energia Rinnovabile Italia S.u.r.l. in data 22/04/2025",
+      "excerpt": "ENAV - AOT funzione.psa@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Rete Ferroviaria Italiana S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rfi-dpr-dtp.ba.staff@pec.rfi.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1251338",
+      "page": 34,
+      "document": "Osservazioni della Società Energia Rinnovabile Italia S.u.r.l. in data 22/04/2025",
+      "excerpt": "RFI – RETE FERROVIARIA ITALIANA S.p.A. rfi-dpr-dtp.ba.staff@pec.rfi.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "6 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "e preparazione delle piazzole",
+    "start": 0.0,
+    "end": 2.99,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione delle fondazioni",
+    "start": 0.97,
+    "end": 2.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "[Montaggio aerogeneratori",
+    "start": 4.01,
+    "end": 4.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "[Montaggi: impianto elettrico aerogeneratori",
+    "start": 5.01,
+    "end": 5.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "[Opere di movimento terra per SSE e BESS",
+    "start": 0.97,
+    "end": 2.02,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "[Opere civili SSE e BESS.",
+    "start": 2.02,
+    "end": 4.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "[Opere elettromeccaniche SSE e BESS",
+    "start": 5.01,
+    "end": 5.98,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 5.98,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1232144",
+   "page": 9,
+   "document": "Disciplinare Descrittivo degli Elementi Tecnici",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "2",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "3",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "4",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "5",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "6",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "7",
+     "start": 5.0,
+     "end": 6.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (4), 90 giorni (circa 3 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1232163",
+    "page": 106,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "opere elettromeccaniche per SSE e BESS. Si prevede un tempo di realizzazione tra 9 e 12 mesi. In merito alla realizzazione delle opere RTN, si specifica che la STMG prevede un tempo di 20 mesi per la loro realizzazione, "
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma in immagine (lettura automatica, da verificare)"
+ },
+ "documentazione": {
+  "documenti": 112,
+  "pagine": 2534,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "BST S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 36.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TORITTO, GRUMO APPULA",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "675 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
