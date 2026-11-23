@@ -1,0 +1,549 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11623",
+ "title": "[ID_13681 - VIAVIA100000078] Progetto di un impianto di produzione di energia elettrica da fonte eolica denominato \"Parco eolico Mercatello\" di potenza nominale 36 MW",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11623",
+ "source": "mase",
+ "updated": "2026-11-23",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "36 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11623",
+    "excerpt": "36 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 3 (5), 2 (4), 4 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1247358",
+    "page": 3,
+    "document": "Analisi degli effetti della rottura degli organi rotanti",
+    "excerpt": "di Mercatello sul Metauro. L’impianto, denominato parco eolico “Mercatello”, sarà costituito da 6 aerogeneratori di potenza unitaria nominale fino a 6 MW, per una potenza installata complessiva fino a 36 MW."
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1260213",
+    "page": 6,
+    "document": "Osservazioni del Signor Giuseppe Dini, in data 3/06/2025",
+    "excerpt": "da fonte rinnovabile (fotovoltaica/agrivoltaica, eolico onshore ed offshore) ... tanto da prefigurarsi la"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (3), 25 mesi (2), 16 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1247405",
+    "page": 223,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "La fase di cantiere durerà circa 18 mesi, secondo il cronoprogramma di cui all’elaborato “23044MRC.PD.D.02-00 - Cronoprogramma”."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Marche",
+  "provincia": "PU",
+  "comuni": [
+   "Sestino",
+   "Mercatello Sul Metauro",
+   "Montecalvo In Foglia",
+   "Citta' Di Castello",
+   "Sant'Angelo In Vado",
+   "San Giustino",
+   "Borgo Pace",
+   "Urbino",
+   "Sassocorvaro",
+   "Colbordolo",
+   "Badia Tedalda"
+  ],
+  "coordinate": {
+   "lat": 43.62517,
+   "lon": 12.34462,
+   "tipo": "centro della tavola georeferenziata di progetto (46 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1247404",
+    "page": 1,
+    "document": "Planimetria su mappa catastale",
+    "excerpt": "Planimetria su mappa catastale"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=43.62517,12.34462",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Engie Mercatello S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "engiemercatello@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1277532",
+      "page": 1,
+      "document": "Richiesta integrazioni del MIC",
+      "excerpt": "Alla Società ENGIE MERCATELLO S.R.L. engiemercatello@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "mercatello@emarche.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1258983",
+      "page": 14,
+      "document": "Osservazioni della REGIONE MARCHE/Registro Unico della Giunta Regionale/SETTORE VALUTAZIONI E AUTORIZZAZIONI AMBIENTALI , in data 22/05/2025",
+      "excerpt": "MUNICIPIO - Piazza Garibaldi n.5 — 61040 Mercatello sul Metauro (PU) - tel.centr. 0722/89114 E-MAIL: comune.mercatello@provincia.ps.it PEC: comune. mercatello@emarche.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11623"
+   }
+  },
+  {
+   "name": "Tiemes S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "info@pec.tiemes.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1247368",
+      "page": 1,
+      "document": "Carta uso del suolo - carta vegetazionale",
+      "excerpt": "Via privata Riccardo Galli 9, 20148 Milano Tel/PEC: 024983104/info@pec.tiemes.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "alice.cozzi@tmsweb.it",
+     "occurrences": 34,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1247360",
+      "page": 34,
+      "document": "Studio di Fattibilità Acustica Parco Eolico Mercatello",
+      "excerpt": "+39 02 4983104 Alice / alice.cozzi@tmsweb.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@tmsweb.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1247384",
+      "page": 9,
+      "document": "Piano di dismissione",
+      "excerpt": "Telefono: 024983104 e-mail: info@tmsweb.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "024983104",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1247384",
+      "page": 9,
+      "document": "Piano di dismissione",
+      "excerpt": "20148 Milano Telefono: 024983104"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1247358",
+    "page": 1,
+    "document": "Analisi degli effetti della rottura degli organi rotanti",
+    "excerpt": "PROGETTISTA Tiemes Srl"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Delta OHM S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@deltaohm.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1247360",
+      "page": 55,
+      "document": "Studio di Fattibilità Acustica Parco Eolico Mercatello",
+      "excerpt": "e-mail: info@deltaohm.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "049897715",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1247360",
+      "page": 55,
+      "document": "Studio di Fattibilità Acustica Parco Eolico Mercatello",
+      "excerpt": "35030 Caselle di Selvazzano (PD) Laboratorio Accreditato EZIO LAT N° 124 Tel. 0039-0498977150 ;"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "22 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Scavo di sbancamento per la realizzazione delle fondazioni",
+    "start": 5.32,
+    "end": 6.84,
+    "level": 0,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Realizzazione delle fondazioni: pali",
+    "start": 5.49,
+    "end": 7.0,
+    "level": 0,
+    "summary": false,
+    "duration": "45 g"
+   },
+   {
+    "name": "Realizzazione delle fondazioni: cemento armato (getto e maturazione)",
+    "start": 5.82,
+    "end": 8.52,
+    "level": 0,
+    "summary": false,
+    "duration": "80 g"
+   },
+   {
+    "name": "Posa dei sottoservizi interrati (rete di terra, pozzetti, etc)",
+    "start": 14.58,
+    "end": 14.92,
+    "level": 0,
+    "summary": false,
+    "duration": "10 g"
+   },
+   {
+    "name": "Installazione trasformatore, quadri, stalli, etc",
+    "start": 14.91,
+    "end": 15.59,
+    "level": 0,
+    "summary": false,
+    "duration": "20 g"
+   },
+   {
+    "name": "Posa cavi e fibre ottiche",
+    "start": 3.64,
+    "end": 4.99,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "RiempimentI e ripristini terreno naturale",
+    "start": 3.8,
+    "end": 5.15,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "Realizzazione sottofondo stradale (viabilità esistente)",
+    "start": 3.97,
+    "end": 5.32,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "Posa pozzetti",
+    "start": 5.82,
+    "end": 6.84,
+    "level": 0,
+    "summary": false,
+    "duration": "30 g"
+   },
+   {
+    "name": "Posa cavi e fibre ottiche",
+    "start": 5.99,
+    "end": 7.51,
+    "level": 0,
+    "summary": false,
+    "duration": "60 g"
+   },
+   {
+    "name": "Smantellamento piazzole e aree di cantiere e rimozione baracche",
+    "start": 16.43,
+    "end": 17.78,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "Reinterri finale e ripristino stato dei luoghi",
+    "start": 17.6,
+    "end": 17.94,
+    "level": 0,
+    "summary": false,
+    "duration": "10 g"
+   },
+   {
+    "name": "Messa in servizio dell'impianto",
+    "start": 20.97,
+    "end": 21.65,
+    "level": 0,
+    "summary": false,
+    "duration": "20 g"
+   }
+  ],
+  "unit": "month",
+  "months": 21.65,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1247385",
+   "page": 5,
+   "document": "Cronoprogramma Parco Eolico Mercatello",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1°",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2°",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3°",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4°",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5°",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6°",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7°",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8°",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9°",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10°",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11°",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12°",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13°",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14°",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15°",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16°",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17°",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18°",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19°",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20°",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21°",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22°",
+     "start": 21.0,
+     "end": 22.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "18 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (3), 1 mese (3), 25 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1247405",
+    "page": 223,
+    "document": "Studio di Impatto Ambientale",
+    "excerpt": "La fase di cantiere durerà circa 18 mesi, secondo il cronoprogramma di cui all’elaborato “23044MRC.PD.D.02-00 - Cronoprogramma”."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma Parco Eolico Mercatello",
+   "url": "https://va.mite.gov.it/File/Documento/1247385"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 151,
+  "pagine": 2470,
+  "completa": false,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "ENGIE MERCATELLO S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 36.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PU",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Marche",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "462 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
