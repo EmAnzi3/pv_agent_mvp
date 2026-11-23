@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto eolico denominato \"H017 - Brindisi Wind\", composto da 6 aerogeneratori di potenza nominale pari a 7,2 MW, per una potenza complessiva di 43,20 MW, da realizzarsi nel comune di Brindisi (BR), e delle relative opere di connessione alla RTN ricadenti nel medesimo comune (codice MYTERNA n. 202500324).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11755",
  "source": "mase",
- "updated": "2026-11-21",
+ "updated": "2026-11-23",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "6",
    "status": "da documenti",
-   "sub": "7,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 2 (3), 3 (2), 1 (1)",
+   "sub": "7,20 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore prevalente negli elaborati; altri valori: 2 (4), 3 (3), 22 (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1294795",
     "page": 1,
@@ -35,21 +35,21 @@
   {
    "key": "impianto",
    "label": "Impianto",
-   "value": "Fotovoltaico galleggiante",
+   "value": "Agrivoltaico",
    "status": "da documenti",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1403597",
-    "page": 1,
-    "document": "Integrazioni del 20/05/2026 - PIANO TECNICO DELLE OPERE AMPLIAMENTO BRINDISI PIGNICELLE SE EDIFICIO COMANDI SEZIONI E PROSPETTI",
-    "excerpt": "FLOTTANTE"
+    "url": "https://va.mite.gov.it/File/Documento/1295018",
+    "page": 10,
+    "document": "Relazione sugli impatti cumulativi",
+    "excerpt": "Se poniamo in rapporto il parco agro-voltaico con gli altri impianti FER individuati all’interno"
    }
   },
   {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "22-24 mesi",
-   "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 20 mesi (1)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1403615",
     "page": 26,
@@ -98,7 +98,7 @@
     {
      "type": "PEC",
      "value": "gruppoviscontibrindisi@pec.it",
-     "occurrences": 180,
+     "occurrences": 278,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1295003",
       "page": 1,
@@ -109,7 +109,7 @@
     {
      "type": "PEC",
      "value": "gruppoviscontisrl@pec.it",
-     "occurrences": 178,
+     "occurrences": 275,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1295003",
       "page": 1,
@@ -140,14 +140,25 @@
      }
     },
     {
-     "type": "E-mail",
-     "value": "dario.sinacori@gruppovisconti.net",
-     "occurrences": 221,
+     "type": "PEC",
+     "value": "sezioneautorizzazioniambientali@pec.rupar.puglia.it",
+     "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1403478",
-      "page": 16,
-      "document": "Integrazioni del 20/05/2026 - RELAZIONE SULL' EFFETTO SHADOW FLICKERING",
-      "excerpt": "+39 329 1140532 Dario Sinacori / dario.sinacori@gruppovisconti.net"
+      "url": "https://va.mite.gov.it/File/Documento/1365338",
+      "page": 1,
+      "document": "Parere ARPA Puglia, in data 13/02/2026",
+      "excerpt": "SEZIONE AUTORIZZAZIONI AMBIENTALI sezioneautorizzazioniambientali@pec.rupar.puglia.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "dario.sinacori@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1365338",
+      "page": 1,
+      "document": "Parere ARPA Puglia, in data 13/02/2026",
+      "excerpt": "gruppoviscontibrindisi@pec.it dario.sinacori@ingpec.eu"
      }
     }
    ],
@@ -742,8 +753,8 @@
   },
   "duration": {
    "text": "22-24 mesi",
-   "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 20 mesi (1)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1403615",
     "page": 26,
@@ -768,9 +779,9 @@
  },
  "documentazione": {
   "documenti": 391,
-  "pagine": 3264,
-  "completa": false,
-  "da_leggere": 91
+  "pagine": 3946,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -805,8 +816,12 @@
    "reason": "La fine lavori prevista (07/09/2026) è passata e non ci sono documenti successivi: verificare se l'impianto è in esercizio."
   },
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "489 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "527 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
