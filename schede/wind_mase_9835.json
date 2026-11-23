@@ -5,7 +5,7 @@
  "title": "Progetto di un parco eolico denominato \"CE Partanna II\", costituito da 6 aerogeneratori, con potenza complessiva pari a 39,6 MW e opere di connessione alla RTN, da realizzarsi nei comuni di Marsala (TP) Mazara del Vallo (TP), Salemi (TP) e Trapani.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9835",
  "source": "mase",
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "sintesi": [
   {
    "key": "potenza",
@@ -22,14 +22,14 @@
   {
    "key": "wtg",
    "label": "Aerogeneratori",
-   "value": "1",
+   "value": "6",
    "status": "da verificare",
-   "sub": "39,60 MW ciascuno · altezza mozzo 105 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 6 (42), 2 (12), 11 (2)",
+   "sub": "6,60 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 1 (47), 2 (13), 5 (4)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1204845",
-    "page": 2,
-    "document": "Integrazioni del 07/01/2025 - PRT_PD_01 RELAZIONE TECNICA GENERALE-signed_signed",
-    "excerpt": "DESCRIZIONE TECNICA DEI COMPONENTI DELL’IMPIANTO ....................................47 6.1 Aerogeneratori ................................................................................................................."
+    "url": "https://va.mite.gov.it/File/Documento/1204847",
+    "page": 12,
+    "document": "Integrazioni del 07/01/2025 - PRT_PD_03 STUDIO ANEMOLOGICO-signed_signed",
+    "excerpt": "di produzione CE PARTANNA II stimati da Furow per un periodo di tempo annuale. L'energia annua generata dalle 6 turbine eoliche Gamesa G170 6,6 MW sarà di 116.213,8 MWh/anno."
    }
   },
   {
@@ -37,7 +37,7 @@
    "label": "Durata cantiere",
    "value": "3 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1204857",
     "page": 8,
@@ -57,7 +57,7 @@
   "coordinate": {
    "lat": 37.84606,
    "lon": 12.64215,
-   "tipo": "centro della tavola georeferenziata di progetto (35 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (37 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/866227",
     "page": 1,
@@ -93,7 +93,19 @@
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "aeiwind-quarta@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1079123",
+      "page": 1,
+      "document": "Parere del Libero Consorzio Comunale di Trapani già Provincia Regionale di Trapani in data 06/06/2024",
+      "excerpt": "E, p.c. Alla Società AEI WIND PROJECT IV S.r.l. Aeiwind-quarta@legalmail.it"
+     }
+    }
+   ],
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9835"
@@ -114,7 +126,7 @@
     {
      "type": "PEC",
      "value": "egmproject@pec.it",
-     "occurrences": 2915,
+     "occurrences": 3129,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1204845",
       "page": 2,
@@ -125,7 +137,7 @@
     {
      "type": "E-mail",
      "value": "info@egmproject.it",
-     "occurrences": 2915,
+     "occurrences": 3129,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1204845",
       "page": 2,
@@ -138,7 +150,7 @@
      "value": "marsilio@egmproject.it",
      "occurrences": 14,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/866037",
+      "url": "https://va.mite.gov.it/File/Documento/866109",
       "page": 2,
       "document": "RELAZIONE DELLA VISIBILITA' TEORICA E DEGLI IMPATTI CUMULATIVI",
       "excerpt": "IT-85100 Potenza Girolamo / marsilio@egmproject.it"
@@ -172,13 +184,65 @@
    }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "GRV Wind Sicilia 8 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12038420969",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Durini 9 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "grvwindsicilia8@legalmail.it",
+     "occurrences": 13,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/881791",
+      "page": 1,
+      "document": "Osservazioni della Società GRV Wind Sicilia 8 S.r.l. in data 02/08/2023",
+      "excerpt": "Sede legale: Via Durini,9 – 20122 Milano info@grvalue.com – PEC: grvwindsicilia8@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dott. Francesco Trapani",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0923807356",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/897601",
+      "page": 1,
+      "document": "Parere Corpo Forestale Sicilia in data 07/09/2023",
+      "excerpt": "Firma autografa omessa ai sensi Plesso: SIRF 16 - Via Virgilio 119 - Trapani, Piano: 2°, Stanza: 23, Tel. 0923 807356 dell’art 3 co.2 D.Lgs. 39/1993"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": null,
  "esecuzione": null,
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "8 mesi (cronoprogramma)",
+  "durata_cantiere": "3 mesi",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -194,7 +258,7 @@
    {
     "name": "Recinzione e apprestamenti del cantiere",
     "start": 0.0,
-    "end": 2.38,
+    "end": 0.55,
     "level": 0,
     "duration": "8 g",
     "summary": true
@@ -202,70 +266,70 @@
    {
     "name": "Realizzazione della recinzione e degli accessi al cantiere Z1",
     "start": 0.0,
-    "end": 0.7,
+    "end": 0.16,
     "level": 1,
     "duration": "3 g",
     "summary": false
    },
    {
     "name": "Allestimento di depositi, zone per lo stoccaggio dei materiali e",
-    "start": 1.16,
-    "end": 2.31,
+    "start": 0.27,
+    "end": 0.53,
     "level": 1,
     "duration": "5 g",
     "summary": false
    },
    {
     "name": "Impianti di servizio del cantiere",
-    "start": 2.71,
-    "end": 5.61,
+    "start": 0.63,
+    "end": 1.29,
     "level": 0,
     "duration": "9 g",
     "summary": true
    },
    {
     "name": "Realizzazione di impianto di messa a terra del cantiere",
-    "start": 2.77,
-    "end": 3.93,
+    "start": 0.64,
+    "end": 0.91,
     "level": 1,
     "duration": "5 g",
     "summary": false
    },
    {
     "name": "Realizzazione di impianto elettrico del cantiere",
-    "start": 4.62,
-    "end": 5.54,
+    "start": 1.07,
+    "end": 1.28,
     "level": 1,
     "duration": "4 g",
     "summary": false
    },
    {
     "name": "Impianto eolico a terra",
-    "start": 5.94,
-    "end": 8.31,
+    "start": 1.37,
+    "end": 1.92,
     "level": 0,
     "duration": "86 g",
     "summary": true
    },
    {
     "name": "Scavi e rinterri",
-    "start": 5.94,
-    "end": 8.31,
+    "start": 1.37,
+    "end": 1.92,
     "level": 1,
     "duration": "23 g",
     "summary": true
    },
    {
     "name": "Scavo a sezione obbligata",
-    "start": 6.0,
-    "end": 8.31,
+    "start": 1.38,
+    "end": 1.92,
     "level": 2,
     "duration": "13 g",
     "summary": false
    }
   ],
   "unit": "month",
-  "months": 8.31,
+  "months": 1.92,
   "source": {
    "url": "https://va.mite.gov.it/File/Documento/1204865",
    "page": 2,
@@ -459,14 +523,14 @@
    "unita": "settimane"
   },
   "duration": {
-   "text": "10 giorni",
+   "text": "3 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 5 giorni (2), 3 mesi (1), 10 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 10 giorni (2), 5 giorni (2), 10 mesi (2)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1204858",
-    "page": 41,
-    "document": "Integrazioni del 07/01/2025 - PRT_PD_14 PIANO DI MANUTENZIONE DELL'IMPIANTO E DELLE OPERE CONNESSE-signed_signed",
-    "excerpt": "e con i risultati dei collaudi per la prima messa in servizio delle apparecchiature. I lavori manutentivi per le stazioni avranno una durata massima prevista di 10 giorni, all’interno dei quali sarà prevista una finestra"
+    "url": "https://va.mite.gov.it/File/Documento/1204857",
+    "page": 8,
+    "document": "Integrazioni del 07/01/2025 - PRT_PD_13 PIANO PRELIMINARE DI UTILIZZO IN SITO DELLE TERRE E ROCCE DA SCAVO ESCLUSE DALLA DISCIPLINA DEI RIFIUTI-signed_signed",
+    "excerpt": "recupero o smaltimento terre e rocce da scavo (CER 170504) individuare l’eventuale deposito temporaneo presso cantiere di produzione (non deve superare i 3 mesi o i 20 mc) il trasporto deve essere effettuato da ditte isc"
    }
   },
   "milestones": [],
@@ -486,9 +550,9 @@
  },
  "documentazione": {
   "documenti": 413,
-  "pagine": 3988,
+  "pagine": 4276,
   "completa": false,
-  "da_leggere": 113
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -528,7 +592,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "350 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "374 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
