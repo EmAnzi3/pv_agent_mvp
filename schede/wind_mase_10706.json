@@ -1,0 +1,989 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10706",
+ "title": "Progetto di un impianto eolico denominato \"GAMBINO\" costituito da 6 aerogeneratori di potenza unitaria 6 MW, per una potenza complessiva di 36 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Buseto Palizzolo, Erice e Trapani (TP)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10706",
+ "source": "mase",
+ "updated": "2026-11-23",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "36 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10706",
+    "excerpt": "36 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 105 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 5 (5), 56 (4), 14 (4)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1085258",
+    "page": 1,
+    "document": "Avviso al pubblico del 13/06/2024",
+    "excerpt": "Palizzolo, Erice e Trapani (TP) in località “Gambino” e prevede lo sviluppo di un parco eolico costituito da n.6 aerogeneratori di potenza unitaria 6MW per una potenza complessiva di 36 MW."
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1252476",
+    "page": 1,
+    "document": "Integrazioni del 29/04/2025 - Relazione Tecnica Generale",
+    "excerpt": "PARCO AGRIVOLTAICO \"RACARRUME\", 25 MW + 20 MW ACCUMULO"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "20 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 MW (115), 25 MW (115), 9,4 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1252476",
+    "page": 1,
+    "document": "Integrazioni del 29/04/2025 - Relazione Tecnica Generale",
+    "excerpt": "INSE Srl PARCO EOLICO \"GIAMBOI-BLANDANO\", 24 MW + 20 MW ACCUMULO PARCO AGRIVOLTAICO \"RACARRUME\", 25 MW + 20 MW ACCUMULO"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "347 giorni (circa 11 mesi)",
+   "status": "da verificare",
+   "sub": "Inizio lavori 01/01/2025 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 180 giorni (circa 6 mesi) (4), 13 settimane (circa 3 mesi) (2), 20 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1205859",
+    "page": 20,
+    "document": "Relazione di riscontro al parere C.T.S. Regione Siciliana",
+    "excerpt": "le condizioni richiedono il ricorso alla bagnatura delle piste. Considerando la durata del cantiere stimata da Cronoprogramma in 347 giorni, quindi poco meno di un anno, tale necessità si avrà nei mesi estivi di giugno, "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "TP",
+  "comuni": [
+   "Buseto Palizzolo",
+   "Erice",
+   "Trapani"
+  ],
+  "coordinate": {
+   "lat": 37.98819,
+   "lon": 12.73242,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (21 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1085212",
+    "page": 6,
+    "document": "GMBDT_GENR03200_00_Relazione_geologica_geotecnica_idrogeomorfologica_e_sismica.pdf",
+    "excerpt": "CG_01 37.988192°"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=37.98819,12.73242",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Aren Green S.r.l. Unipersonale",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "04032170401",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Arrigoni 308 47522 Cesena Fc",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "arengreensrl@legalmail.it",
+     "occurrences": 841,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1452381",
+      "page": 1,
+      "document": "Allegato al Decreto Direttoriale - verbale dell'incontro del 23/06/2026 tra la Soprintendenza per i Beni Culturali e Ambientali di Trapani e la Società AREN Green S.r.l.",
+      "excerpt": "Ph. +39 0547 415245 - email: arengreensrl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "rpasrl@legalmail.it",
+     "occurrences": 598,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1205869",
+      "page": 2,
+      "document": "Piano di Monitoraggio Ambientale",
+      "excerpt": "Ph. +39 0547 415245 - email: rpasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0547415245",
+     "occurrences": 1441,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1452381",
+      "page": 1,
+      "document": "Allegato al Decreto Direttoriale - verbale dell'incontro del 23/06/2026 tra la Soprintendenza per i Beni Culturali e Ambientali di Trapani e la Società AREN Green S.r.l.",
+      "excerpt": "Ph. +39 0547 415245 - email: arengreensrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10706"
+   }
+  },
+  {
+   "name": "Repower Renewable S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1252476",
+    "page": 1,
+    "document": "Integrazioni del 29/04/2025 - Relazione Tecnica Generale",
+    "excerpt": "PROPONENTE Repower Renewable Spa"
+   }
+  },
+  {
+   "name": "Inse S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "tecnico@insesrl.it",
+     "occurrences": 84,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1252476",
+      "page": 1,
+      "document": "Integrazioni del 29/04/2025 - Relazione Tecnica Generale",
+      "excerpt": "t 081.5797998 tecnico@insesrl.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1252476",
+    "page": 1,
+    "document": "Integrazioni del 29/04/2025 - Relazione Tecnica Generale",
+    "excerpt": "PROGETTAZIONE INSE Srl"
+   }
+  },
+  {
+   "name": "Aren Electric Power S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "03803880404",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Arrigoni 308 47522 Cesena Fc",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "areaenergia@legalmail.it",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1252537",
+      "page": 2,
+      "document": "Integrazioni del 29/04/2025 - Relazione Generale Opere di Connessione",
+      "excerpt": "Ph. +39 0547 415245 - email: areaenergia@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "areaenergiasrl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1085173",
+      "page": 2,
+      "document": "GMBDE_GENR00900_00_Preventivo_per_la_connessione.pdf",
+      "excerpt": "47521 CESENA (FC) areaenergiasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1085079",
+    "page": 1,
+    "document": "GMBDT_GENR00100_00_Studio_Impatto_Ambientale.pdf",
+    "excerpt": "REDAZIONE / PROGETTISTA:"
+   }
+  },
+  {
+   "name": "Ing. Samuele Ulivi Ordine",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1085079",
+    "page": 1,
+    "document": "GMBDT_GENR00100_00_Studio_Impatto_Ambientale.pdf",
+    "excerpt": "TIMBRO E FIRMA PROGETTISTA:"
+   }
+  },
+  {
+   "name": "Dott. Geol. Antonio Mendola",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1085187",
+    "page": 2,
+    "document": "GMBDG_GENR01200_00_Elenco_dei_Soggetti_Firmatari.pdf",
+    "excerpt": "7 Geologo Dott. Geol. Antonio Mendola"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Bruca S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "08610570726",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Del Parco 16 95030 Tremestieri Etneo Ct",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "brucasrl@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1264537",
+      "page": 1,
+      "document": "Osservazioni della Società BRUCA Srl, in data 10/06/2025",
+      "excerpt": "BRUCA S.R.L., Partita IVA 08610570726, con sede legale in MILANO (MI) VIA CHIESE 72 CAP 20126, pec: brucasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "TECNOSurvey S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnosurvey.it",
+     "occurrences": 23,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1205847",
+      "page": 1,
+      "document": "Tavola Impatti Cumulativi con Fotoinserimenti",
+      "excerpt": "Dir. & Uffici: vicolo Romagnosi, 1 - 96013 Carlentini (SR) Tel. 095 783 10 50 - E.mail: info@tecnosurvey.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "09578310",
+     "occurrences": 23,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1205847",
+      "page": 1,
+      "document": "Tavola Impatti Cumulativi con Fotoinserimenti",
+      "excerpt": "Dir. & Uffici: vicolo Romagnosi, 1 - 96013 Carlentini (SR) Tel. 095 783 10 50 - E.mail: info@tecnosurvey.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Metrix Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@metrix.it",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1085207",
+      "page": 60,
+      "document": "GMBDT_GENR02600_00_Relazione_su_impatto_acustico.pdf",
+      "excerpt": "Tel. 0922 992053 info@metrix.it — www.metrix.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0922992053",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1085207",
+      "page": 59,
+      "document": "GMBDT_GENR02600_00_Relazione_su_impatto_acustico.pdf",
+      "excerpt": "Tel. 0922 992053 j i"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Laap Architects S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@laap.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1252501",
+      "page": 1,
+      "document": "Integrazioni del 29/04/2025 - Cabina primaria Ospedaletto - Piano tecnico opere di rete",
+      "excerpt": "t 091.7834427 - fax 091.7834427 laap.it - info@laap.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Francesco R. Lipari",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "flipari@posta.artasicilia.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1085207",
+      "page": 75,
+      "document": "GMBDT_GENR02600_00_Relazione_su_impatto_acustico.pdf",
+      "excerpt": "Servizio 2 “Industrie a rischio e tutela dall’inquinamento atmosferico, acustico ed elettromagnetico” — Dirig. Resp: Ing. Paola Pendino Responsabile procedimento: Ing. Francesco R. Lipari — Tel.: 091-7077196 — Fax: 091-7"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0917077196",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1085207",
+      "page": 75,
+      "document": "GMBDT_GENR02600_00_Relazione_su_impatto_acustico.pdf",
+      "excerpt": "Servizio 2 “Industrie a rischio e tutela dall’inquinamento atmosferico, acustico ed elettromagnetico” — Dirig. Resp: Ing. Paola Pendino Responsabile procedimento: Ing. Francesco R. Lipari — Tel.: 091-7077196 — Fax: 091-7"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Laura Masini",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "l.masini@aren-ep.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1205859",
+      "page": 25,
+      "document": "Relazione di riscontro al parere C.T.S. Regione Siciliana",
+      "excerpt": "reali caratteristiche e condizioni. Il referente della Società per il progetto Gambino è l’Ing. Arch. Laura Masini, mail l.masini@aren-ep.com,"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 11/02/2026, ma l'iter è proseguito; ultimo documento o atto del 23/11/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "01/01/2025",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1252528",
+     "page": 2,
+     "document": "Integrazioni del 29/04/2025 - Programma cronologico dei lavori",
+     "excerpt": "Apertura cantiere stazione 150/36 kV 01/01/2025 31/01/2025"
+    }
+   },
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "01/01/2025 → 31/07/2026",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1252528",
+     "page": 2,
+     "document": "Integrazioni del 29/04/2025 - Programma cronologico dei lavori",
+     "excerpt": ""
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di luglio 2026",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 19 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1252528",
+     "page": 2,
+     "document": "Integrazioni del 29/04/2025 - Programma cronologico dei lavori",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "19 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "A STAZIONE FUTURA 150/36 Kv \"Buseto 2\"",
+    "start": 0.0,
+    "end": 17.66,
+    "level": 0,
+    "dates": [
+     "2025-01-01",
+     "2026-06-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Apertura cantiere stazione 150/36 kV",
+    "start": 0.0,
+    "end": 1.02,
+    "level": 0,
+    "dates": [
+     "2025-01-01",
+     "2025-01-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Sistemazione area di stazione e strada di accesso",
+    "start": 1.02,
+    "end": 4.34,
+    "level": 0,
+    "dates": [
+     "2025-02-01",
+     "2025-05-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Posa rete di terra",
+    "start": 4.34,
+    "end": 5.36,
+    "level": 0,
+    "dates": [
+     "2025-05-13",
+     "2025-06-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Opere civile di stazione",
+    "start": 5.36,
+    "end": 12.96,
+    "level": 0,
+    "dates": [
+     "2025-06-13",
+     "2026-01-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Costruzione edificio Quadri e SA",
+    "start": 6.02,
+    "end": 11.64,
+    "level": 0,
+    "dates": [
+     "2025-07-03",
+     "2025-12-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio apparecchiature AT",
+    "start": 10.95,
+    "end": 13.62,
+    "level": 0,
+    "dates": [
+     "2025-11-30",
+     "2026-02-18"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Cablaggi",
+    "start": 13.62,
+    "end": 15.62,
+    "level": 0,
+    "dates": [
+     "2026-02-19",
+     "2026-04-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio sistema di controllo",
+    "start": 15.62,
+    "end": 16.64,
+    "level": 0,
+    "dates": [
+     "2026-04-21",
+     "2026-05-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Prove stazione",
+    "start": 16.64,
+    "end": 17.66,
+    "level": 0,
+    "dates": [
+     "2026-05-22",
+     "2026-06-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "B RACCORDI AEREI 150 kV",
+    "start": 13.32,
+    "end": 17.3,
+    "level": 0,
+    "dates": [
+     "2026-02-10",
+     "2026-06-10"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Apertura cantiere",
+    "start": 13.36,
+    "end": 13.72,
+    "level": 0,
+    "dates": [
+     "2026-02-11",
+     "2026-02-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Fondazioni sostegni nuova realizzazione",
+    "start": 13.72,
+    "end": 14.41,
+    "level": 0,
+    "dates": [
+     "2026-02-22",
+     "2026-03-14"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assemblaggio sostegni 150 kV",
+    "start": 14.41,
+    "end": 16.74,
+    "level": 0,
+    "dates": [
+     "2026-03-15",
+     "2026-05-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Collegamenti SE-Linea 150 kV",
+    "start": 16.74,
+    "end": 17.3,
+    "level": 0,
+    "dates": [
+     "2026-05-25",
+     "2026-06-10"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Prove",
+    "start": 17.3,
+    "end": 17.66,
+    "level": 0,
+    "dates": [
+     "2026-06-11",
+     "2026-06-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "C ELETTRODOTTO IN CAVO 150 kV",
+    "start": 13.03,
+    "end": 17.99,
+    "level": 0,
+    "dates": [
+     "2026-02-01",
+     "2026-07-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Apertura cantiere",
+    "start": 13.03,
+    "end": 13.39,
+    "level": 0,
+    "dates": [
+     "2026-02-01",
+     "2026-02-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Realizzazione Stalli arrivo cavo",
+    "start": 12.34,
+    "end": 14.31,
+    "level": 0,
+    "dates": [
+     "2026-01-11",
+     "2026-03-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Apertura trincea",
+    "start": 13.39,
+    "end": 15.07,
+    "level": 0,
+    "dates": [
+     "2026-02-12",
+     "2026-04-03"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Posa Cavi",
+    "start": 14.38,
+    "end": 16.05,
+    "level": 0,
+    "dates": [
+     "2026-03-14",
+     "2026-05-03"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Rinterri",
+    "start": 15.69,
+    "end": 17.04,
+    "level": 0,
+    "dates": [
+     "2026-04-23",
+     "2026-06-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Prove",
+    "start": 17.04,
+    "end": 17.99,
+    "level": 0,
+    "dates": [
+     "2026-06-03",
+     "2026-07-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "ATTIVAZIONE STAZIONE",
+    "start": 17.63,
+    "end": 18.98,
+    "level": 0,
+    "dates": [
+     "2026-06-21",
+     "2026-07-31"
+    ],
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 18.98,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1252528",
+   "page": 2,
+   "document": "Integrazioni del 29/04/2025 - Programma cronologico dei lavori",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "gen 25",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "feb 25",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "mar 25",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "apr 25",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "mag 25",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "giu 25",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "lug 25",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "ago 25",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "set 25",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "ott 25",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "nov 25",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "dic 25",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "gen 26",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "feb 26",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "mar 26",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "apr 26",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "mag 26",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "giu 26",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "lug 26",
+     "start": 18.0,
+     "end": 19.0
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "347 giorni (circa 11 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 180 giorni (circa 6 mesi) (4), 13 settimane (circa 3 mesi) (2), 5 giorni (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1205859",
+    "page": 20,
+    "document": "Relazione di riscontro al parere C.T.S. Regione Siciliana",
+    "excerpt": "le condizioni richiedono il ricorso alla bagnatura delle piste. Considerando la durata del cantiere stimata da Cronoprogramma in 347 giorni, quindi poco meno di un anno, tale necessità si avrà nei mesi estivi di giugno, "
+   }
+  },
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "01/01/2025",
+    "iso": "2025-01-01",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1252528",
+     "page": 2,
+     "document": "Integrazioni del 29/04/2025 - Programma cronologico dei lavori",
+     "excerpt": "Apertura cantiere stazione 150/36 kV 01/01/2025 31/01/2025"
+    }
+   }
+  ],
+  "document": {
+   "document": "GMBDG_GENL00700_00_Cronoprogramma.pdf",
+   "url": "https://va.mite.gov.it/File/Documento/1085179"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "GMBDG_GENL00700_00_Cronoprogramma.pdf",
+    "url": "https://va.mite.gov.it/File/Documento/1085179"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 292,
+  "pagine": 2709,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "AREN Green S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 36.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "BUSETO PALIZZOLO, ERICE, TRAPANI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TP",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 11/02/2026, ma l'iter è proseguito; ultimo documento o atto del 23/11/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "188 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
