@@ -5,7 +5,7 @@
  "title": "Progetto di un impianto per la produzione di energia elettrica da fonte eolica, costituito da 6 aerogeneratori, ciascuno di potenza nominale pari a 6,6 MW, per una potenza complessiva di 39,6 MW, da realizzarsi nel Comune di Gravina di Puglia (BA) e opere di connessione nel Comune di Altamura (BA)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/8871",
  "source": "mase",
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "sintesi": [
   {
    "key": "potenza",
@@ -108,7 +108,7 @@
     {
      "type": "PEC",
      "value": "wpdsilviumsrl@legalmail.it",
-     "occurrences": 218,
+     "occurrences": 221,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/680196",
       "page": 1,
@@ -139,6 +139,17 @@
      }
     },
     {
+     "type": "PEC",
+     "value": "servizio.energierinnovabili@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1316838",
+      "page": 14,
+      "document": "Parere della Regione Puglia - Dipartimento ambiente, paesaggio e qualità urbana - Sezione Autorizzazioni Ambientali in data 21/10/2025",
+      "excerpt": "Sezione Transizione Energetica servizio.energierinnovabili@pec.rupar.puglia.it"
+     }
+    },
+    {
      "type": "E-mail",
      "value": "wpdsilviumsrl@llesalmail.it",
      "occurrences": 1,
@@ -158,17 +169,6 @@
       "page": 1,
       "document": "Integrazioni del 09/10/2026 - Sezioni geologiche ed idrogeologiche",
       "excerpt": "00143 Roma (RM) Via del Ginepro, 23, 75100 Matera et 340383 01 maurogacomino@pmal.com"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "06960353",
-     "occurrences": 165,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/680196",
-      "page": 1,
-      "document": "Studio di Impatto Ambientale - Analisi delle coerenze",
-      "excerpt": "00198 Roma (RM) Tel: +39 06 960 353 01"
      }
     }
    ],
@@ -223,7 +223,7 @@
     {
      "type": "PEC",
      "value": "f4ingegneria@pec.it",
-     "occurrences": 2302,
+     "occurrences": 2308,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/680196",
       "page": 1,
@@ -605,10 +605,34 @@
     }
    },
    {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Deliberazione n. 140 del 14/10/2022",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721901",
+     "page": 2,
+     "document": "Parere del Comune di Altamura in data 17/11/2022",
+     "excerpt": "Deliberazione n. 140 del 14/10/2022 Proposta n. 177 del 06/10/2022"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di ottobre 2022",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/721901",
+     "page": 2,
+     "document": "Parere del Comune di Altamura in data 17/11/2022",
+     "excerpt": "Deliberazione n. 140 del 14/10/2022 Proposta n. 177 del 06/10/2022"
+    }
+   },
+   {
     "voce": "Fine lavori",
     "livello": "stimata",
-    "valore": "non prima di aprile 2025",
-    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 26 mesi (cronoprogramma)",
+    "valore": "non prima di dicembre 2024",
+    "dettaglio": "inizio stimato + durata del cantiere: 26 mesi (cronoprogramma)",
     "source": {
      "url": "https://va.mite.gov.it/File/Documento/680197",
      "page": 32,
@@ -618,10 +642,17 @@
    }
   ],
   "durata_cantiere": "26 mesi (cronoprogramma)",
-  "autorizzazione": null,
-  "note": [
-   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
-  ],
+  "autorizzazione": {
+   "atto": "Deliberazione n. 140",
+   "data": "14/10/2022",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/721901",
+    "page": 2,
+    "document": "Parere del Comune di Altamura in data 17/11/2022",
+    "excerpt": "Deliberazione n. 140 del 14/10/2022 Proposta n. 177 del 06/10/2022"
+   }
+  },
+  "note": [],
   "legenda": {
    "documentata": "data scritta nei documenti",
    "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
@@ -947,9 +978,9 @@
  },
  "documentazione": {
   "documenti": 305,
-  "pagine": 4903,
+  "pagine": 4970,
   "completa": false,
-  "da_leggere": 5
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -989,7 +1020,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "488 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "553 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
