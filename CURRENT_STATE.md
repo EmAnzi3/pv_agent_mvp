@@ -71,3 +71,7 @@ Il vecchio host `www.sistemapiemonte.it` ha mostrato un failure DNS durante il r
 - Pagine `docs/index.html` (template in `app/dashboard_static.py`) e `docs/wind/index.html` aperte sulla zona scelta: barra fissa regione/provincia (chiave browser `alayanRadarZone`), indicatori e progetti vicini al cantiere della zona, avanzamenti e nuovi, tabella completa, quadro nazionale in fondo.
 - Codice comune `docs/assets/zone-view.js` / `.css`: la pagina eolica li carica da `../assets/`, quella FV li incorpora al build.
 - Novità FV: `docs/changes_latest.json` (nuovi progetti e avanzamenti verso il cantiere, senza Terna), scritto a ogni `aggiorna_dashboard_senza_docker.bat` e pubblicato con `docs/data.json`. Finché non esiste, i riquadri mostrano «Disponibile dal prossimo aggiornamento».
+
+## Aggiornamento automatico del codice nei run locali (23/11/2026)
+
+- `aggiorna_dashboard_senza_docker.bat` e `aggiorna_wind_radar.bat` chiamano `scripts\pull_before_run.bat` all'avvio: pull solo se non ci sono modifiche locali in sospeso, altrimenti avviso e pausa. `analizza_fonti_locali.bat` faceva già `git pull --ff-only`.

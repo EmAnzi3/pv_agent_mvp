@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-23 — `aggiorna_dashboard_senza_docker.bat` e `aggiorna_wind_radar.bat` scaricano da soli l'ultima versione del codice all'avvio (`scripts/pull_before_run.bat`, `git pull --ff-only`). Se ci sono risultati di un run precedente non pubblicati non scaricano nulla e avvisano (pubblicare prima con GitHub Desktop); se il pull aggiorna il bat stesso chiedono di rilanciarlo; senza git o senza rete proseguono con il codice attuale.
+
 - 2026-11-19 — Dashboard «La mia zona», riquadri «Avanzamenti e realizzati» e «Nuovi»: ogni progetto su due righe (luogo e MW; proponente ed esito), esito in un'etichetta breve colorata (verde cantiere / priorità alta, blu priorità media, grigio tratteggiato realizzato; testo completo al passaggio del mouse). Nei nuovi l'etichetta «nuovo», ridondante, è sostituita dalla fase quando nota.
 
 - 2026-11-19 — Dashboard «La mia zona»: colonne dell'elenco «Vicini al cantiere» allineate (larghezze fisse per MW, fase e pulsanti, anche quando un progetto non ha la scheda) e riquadri avanzamenti/nuovi impaginati su due colonne.
