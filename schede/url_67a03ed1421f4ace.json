@@ -5,14 +5,14 @@
  "title": "Realizzazione di impianto fotovoltaico a terra denominato MALNOME 10 in un'area di cava, connesso alla rete elettrica MT di Areti, di potenza nominale 9991,8 kWp e potenza complessiva lato AC degli inverter pari a 9822 KVA, in Via di Malnome snc",
  "source_url": "https://regionelazio.app.box.com/v/VIA-050-2022",
  "source": "lazio",
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
    "value": "9,992 MWp",
-   "sub": null,
+   "sub": "Suddivisa in 5 lotti",
    "source": {
     "document": "titolo del procedimento",
     "url": "https://regionelazio.app.box.com/v/VIA-050-2022",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "17,282 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 ha (3), 13 ha (2), 15 ha (2)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 ha (8), 30,17 ha (4), 13 ha (2)",
    "source": {
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_973506366935",
     "page": 2,
@@ -47,14 +47,14 @@
   {
    "key": "pannelli",
    "label": "Superficie coperta dai pannelli",
-   "value": "4,454 ha",
+   "value": "4,745 ha",
    "status": "da verificare",
-   "sub": "26% dell'area · Valore più ricorrente negli elaborati; altri valori: 4,17 ha (4), 12,8 ha (3), 25,4 ha (3)",
+   "sub": "27% dell'area · Valore più ricorrente negli elaborati; altri valori: 12,8 ha (8), 25,4 ha (8), 4,454 ha (6)",
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145003725120",
-    "page": 3,
-    "document": "M25 rev 03- Sintesi Tecnica.pdf.p7m",
-    "excerpt": " Superficie occupata dai moduli fv: 4,454 ha "
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_956728166544",
+    "page": 7,
+    "document": "M20-Studio preliminare ambientale.pdf.p7m",
+    "excerpt": "Potenza in immissione nella rete di distribuzione MT Areti: 9822 kW Superficie captante: 47450 mq (minore di un terzo della superficie totale dell'impianto) Classificazione architettonica: non integrato"
    }
   },
   {
@@ -62,9 +62,9 @@
    "label": "Durata cantiere",
    "value": "7 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 6-12 mesi (4), 3 Mesi (3)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 Mesi (4), 6-12 mesi (4)",
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145015472744",
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148822563505",
     "page": 5,
     "document": "M26 rev 01-Descrizione delle fasi di cantiere e delle ricadute economiche e occupazionali.pdf.p7m",
     "excerpt": "proprietà Areti e dichiarazione di entrata in esercizio al Gestore dei Servizi Energetici. Si prevede una durata dei lavori di circa 7 mesi (in condizioni di normale operatività e dunque senza interruzioni forzate delle "
@@ -80,9 +80,9 @@
   "coordinate": {
    "lat": 41.83429,
    "lon": 12.28787,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (34 riferimenti concordi)",
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (47 riferimenti concordi)",
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145007689956",
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148815656253",
     "page": 10,
     "document": "M50 Risposta alla nota di Arpa Lazio.pdf.p7m",
     "excerpt": "CABINA ARETI 41°50'05.04” N 12°17'12.14” E"
@@ -111,7 +111,7 @@
     "lon": 12.29056,
     "maps_url": "https://www.google.com/maps/search/?api=1&query=41.83472,12.29056",
     "source": {
-     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145012288323",
+     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148826840927",
      "page": 8,
      "document": "M23 rev 01-Relazione tecnica descrittiva.pdf.p7m",
      "excerpt": "Comune di Roma al foglio 745 particelle 288, 65, 66. Le coordinate GPS sono latitudine 41° 50' 5\" Nord longitudine 12° 17' 26\" Est. Il sito di installazione presenta delle caratteristiche che lo rendono particolarmente"
@@ -121,11 +121,190 @@
  },
  "soggetti": [
   {
-   "name": "Acea Solar S.r.l.",
+   "name": "Malnome FV S.r.l.",
    "kind": "società",
    "roles": [
     "Proponente"
    ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "malnomefv@pec.it",
+     "occurrences": 803,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_973504240052",
+      "page": 2,
+      "document": "NA20220003409-QL20220016379-639_REG_1643871080190_SIGNED_COMUNICAZIONE_ENTI_VE164_21_MALNOME.pdf",
+      "excerpt": "MALNOME FV S.R.L. malnomefv@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "malnomefv@gmail.com",
+     "occurrences": 652,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1220073849883",
+      "page": 1,
+      "document": "AOO_COM.REGISTRO UFFICIALE.2023.0099062.pdf",
+      "excerpt": "malnomefv@pec.it malnomefv@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "f.sabbatini@vtprogetti.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_956727266641",
+      "page": 2,
+      "document": "M05 rev 01-Preventivo di connessione e accettazione.pdf.p7m",
+      "excerpt": "00123 ROMA RM Indirizzo e-mail: f.sabbatini@vtprogetti.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0630365398",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_956729104238",
+      "page": 9,
+      "document": "M01-Istanza con allegati.pdf.p7m",
+      "excerpt": "CF e P.IVA 15908371006 con sede legale in Via del casale della castelluccia 47, Roma (RM) 00123 tel.0630365398, fax 0630356357, malnomefv@pec.it,"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://regionelazio.app.box.com/v/VIA-050-2022"
+   }
+  },
+  {
+   "name": "Dott. Geol. Roberto Agnolet",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "agnolet@pec.epap.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148817792649",
+      "page": 1,
+      "document": "Relazione geologica_Malmone_fotovoltaico_REV dic 2022.pdf.p7m.p7m",
+      "excerpt": "Via Colle dell’Asino 22/V – 00052 Cerveteri (Roma) Tel. 06/9953109 Cell. 348/8119171 C.fisc. GNLRRT67S08H211M P.Iva 04922241007 Email: agnolet@geoambiente.it PEC: agnolet@pec.epap.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "agnolet@geoambiente.it",
+     "occurrences": 68,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148825525023",
+      "page": 46,
+      "document": "447-Malnome FV_Rev_01.pdf.p7m.p7m",
+      "excerpt": "Via Colle dell'Asino 22/V — 00052 Cerveteri (Roma) Tel. 06/9953109 Cell. 348/8119171 C.fisc. GNLRRT67S08H211M P.Iva 04922241007 agnolet@geoambiente.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "agnolet@epap.sicurezzapostale.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_956728475575",
+      "page": 1,
+      "document": "M22-Relazione Geologica e Idrogeologica.pdf.p7m",
+      "excerpt": "Via Colle dell’Asino 22/V – 00052 Cerveteri (Roma) Tel. 06/9953109 Cell. 348/8119171 C.fisc. GNLRRT67S08H211M P.Iva 04922241007 Email: agnolet@geoambiente.it PEC: agnolet@epap.sicurezzapostale.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "069953109",
+     "occurrences": 72,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148825525023",
+      "page": 46,
+      "document": "447-Malnome FV_Rev_01.pdf.p7m.p7m",
+      "excerpt": "Dott. Geol. ROBERTO AGNOLET Via Colle dell'Asino 22/V — 00052 Cerveteri (Roma) Tel. 06/9953109 Cell. 348/8119171"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3488119171",
+     "occurrences": 68,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148825525023",
+      "page": 46,
+      "document": "447-Malnome FV_Rev_01.pdf.p7m.p7m",
+      "excerpt": "Dott. Geol. ROBERTO AGNOLET Via Colle dell'Asino 22/V — 00052 Cerveteri (Roma) Tel. 06/9953109 Cell. 348/8119171"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148817792649",
+    "page": 1,
+    "document": "Relazione geologica_Malmone_fotovoltaico_REV dic 2022.pdf.p7m.p7m",
+    "excerpt": "IL GEOLOGO: Dott. Roberto Agnolet"
+   }
+  },
+  {
+   "name": "Ing. Giovanni Maria Giansanti Di",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ing.giansanti@pec.ording.roma.it",
+     "occurrences": 118,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_989709867051",
+      "page": 1,
+      "document": "M41-Planimetria cumulo con impianti raggio 5 KM.pdf.p7m",
+      "excerpt": "Ordine degli ingegneri di Roma n. A 34380 ing.giansanti@pec.ording.roma.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "giansanti@pec.ording.roma.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148820247343",
+      "page": 1,
+      "document": "M44 rev 01 Progetto del verde.pdf.p7m",
+      "excerpt": "Ordine degli ingegneri di Roma n. A 34380 ing giansanti@pec.ording.roma.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148826528592",
+    "page": 7,
+    "document": "M38 rev 01-Studio impatto ambientale SIA_.pdf.p7m",
+    "excerpt": "Progettista: Ing. Giovanni Maria Giansanti Di Muzio iscritto all’Ordine degli Ingegneri di Roma al num. A34380 Potenza nominale complessiva dei moduli fv: 9.984 kWp (9,98 MW)"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Acea Solar S.r.l.",
+   "kind": "società",
+   "roles": [],
    "vat": "15257721009",
    "vat_group": false,
    "verified": true,
@@ -135,7 +314,7 @@
     {
      "type": "PEC",
      "value": "aceasolar@pec.aceaspa.it",
-     "occurrences": 108,
+     "occurrences": 132,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1339799845893",
       "page": 1,
@@ -167,160 +346,59 @@
     }
    ],
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1339799845893",
-    "page": 1,
-    "document": "Progetto Acea Solar_Malnome_comunicazione integrazioni in corso_13.10.2023.pdf",
-    "excerpt": "Proponente: ACEA SOLAR SRL Registro elenco progetti: n. 050/2022"
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
   },
   {
-   "name": "Malnome FV S.r.l.",
+   "name": "Areti S.p.A.",
    "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
+   "roles": [],
+   "vat": "05816611007",
    "vat_group": false,
-   "verified": false,
+   "verified": true,
    "esecuzione": null,
-   "office": null,
+   "office": "Piazzale Ostiense 2 00154 Roma Rm",
    "contacts": [
     {
      "type": "PEC",
-     "value": "malnomefv@pec.it",
-     "occurrences": 30,
+     "value": "areti@pec.areti.it",
+     "occurrences": 27,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_973504240052",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_989727130443",
+      "page": 1,
+      "document": "INT 23 07 0728186.25-07-2022.pdf",
+      "excerpt": "segreteria.dica@mailbox.governo.it, protocollo.generale@pec.aslroma2.it, protocollo.tutelaambientale@pec.comune.roma.it, areti@pec.areti.it,"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "giuliano.serpa@areti.it",
+     "occurrences": 6,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_956727266641",
+      "page": 3,
+      "document": "M05 rev 01-Preventivo di connessione e accettazione.pdf.p7m",
+      "excerpt": "7. Il nominativo del Responsabile a cui fare riferimento per l’intero iter della pratica di connessione è Serpa Giuliano reperibile ai seguenti recapiti (tel/mail): 0657992059 GIULIANO.SERPA@ARETI.IT"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "luciano.maso@aceaspa.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1184706290707",
       "page": 2,
-      "document": "NA20220003409-QL20220016379-639_REG_1643871080190_SIGNED_COMUNICAZIONE_ENTI_VE164_21_MALNOME.pdf",
-      "excerpt": "MALNOME FV S.R.L. malnomefv@pec.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "malnomefv@gmail.com",
-     "occurrences": 12,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1220073849883",
-      "page": 1,
-      "document": "AOO_COM.REGISTRO UFFICIALE.2023.0099062.pdf",
-      "excerpt": "malnomefv@pec.it malnomefv@gmail.com"
+      "document": "M58 Voltura Preventivo di connessione.pdf.p7m",
+      "excerpt": "connessione, potrà essere contattato anche: Nome LUCIANO MASO Cel. 335404712 email LUCIANO.MASO@ACEASPA.IT"
      }
     }
    ],
    "source": {
-    "document": "scheda ufficiale del procedimento",
-    "url": "https://regionelazio.app.box.com/v/VIA-050-2022"
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
   },
-  {
-   "name": "Dott. Geol. Roberto Agnolet",
-   "kind": "persona",
-   "roles": [
-    "Geologo"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "agnolet@pec.epap.it",
-     "occurrences": 2,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145009169661",
-      "page": 1,
-      "document": "Relazione geologica_Malmone_fotovoltaico_REV dic 2022.pdf.p7m.p7m",
-      "excerpt": "Via Colle dell’Asino 22/V – 00052 Cerveteri (Roma) Tel. 06/9953109 Cell. 348/8119171 C.fisc. GNLRRT67S08H211M P.Iva 04922241007 Email: agnolet@geoambiente.it PEC: agnolet@pec.epap.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "agnolet@geoambiente.it",
-     "occurrences": 36,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145012201375",
-      "page": 46,
-      "document": "447-Malnome FV_Rev_01.pdf.p7m.p7m",
-      "excerpt": "Via Colle dell'Asino 22/V — 00052 Cerveteri (Roma) Tel. 06/9953109 Cell. 348/8119171 C.fisc. GNLRRT67S08H211M P.Iva 04922241007 agnolet@geoambiente.it"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "069953109",
-     "occurrences": 36,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145012201375",
-      "page": 46,
-      "document": "447-Malnome FV_Rev_01.pdf.p7m.p7m",
-      "excerpt": "Dott. Geol. ROBERTO AGNOLET Via Colle dell'Asino 22/V — 00052 Cerveteri (Roma) Tel. 06/9953109 Cell. 348/8119171"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "3488119171",
-     "occurrences": 36,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145012201375",
-      "page": 46,
-      "document": "447-Malnome FV_Rev_01.pdf.p7m.p7m",
-      "excerpt": "Dott. Geol. ROBERTO AGNOLET Via Colle dell'Asino 22/V — 00052 Cerveteri (Roma) Tel. 06/9953109 Cell. 348/8119171"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145009169661",
-    "page": 1,
-    "document": "Relazione geologica_Malmone_fotovoltaico_REV dic 2022.pdf.p7m.p7m",
-    "excerpt": "IL GEOLOGO: Dott. Roberto Agnolet"
-   }
-  },
-  {
-   "name": "Ing. Giovanni Maria Giansanti Di",
-   "kind": "persona",
-   "roles": [
-    "Progettista"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "ing.giansanti@pec.ording.roma.it",
-     "occurrences": 81,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_989709867051",
-      "page": 1,
-      "document": "M41-Planimetria cumulo con impianti raggio 5 KM.pdf.p7m",
-      "excerpt": "Ordine degli ingegneri di Roma n. A 34380 ing.giansanti@pec.ording.roma.it"
-     }
-    },
-    {
-     "type": "PEC",
-     "value": "giansanti@pec.ording.roma.it",
-     "occurrences": 2,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145002409700",
-      "page": 1,
-      "document": "M44 rev 01 Progetto del verde.pdf.p7m",
-      "excerpt": "Ordine degli ingegneri di Roma n. A 34380 ing giansanti@pec.ording.roma.it"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145014150761",
-    "page": 7,
-    "document": "M38 rev 01-Studio impatto ambientale SIA_.pdf.p7m",
-    "excerpt": "Progettista: Ing. Giovanni Maria Giansanti Di Muzio iscritto all’Ordine degli Ingegneri di Roma al num. A34380 Potenza nominale complessiva dei moduli fv: 9.984 kWp (9,98 MW)"
-   }
-  }
- ],
- "altri_soggetti": [
   {
    "name": "Enav S.p.A.",
    "kind": "società",
@@ -361,7 +439,7 @@
     {
      "type": "PEC",
      "value": "gsrtech@pec.it",
-     "occurrences": 57,
+     "occurrences": 68,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365619744837",
       "page": 1,
@@ -372,7 +450,7 @@
     {
      "type": "E-mail",
      "value": "info@gsrtech.it",
-     "occurrences": 48,
+     "occurrences": 54,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365619744837",
       "page": 1,
@@ -383,7 +461,7 @@
     {
      "type": "E-mail",
      "value": "ing.giansanti@gsrtech.com",
-     "occurrences": 24,
+     "occurrences": 26,
      "source": {
       "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365619744837",
       "page": 1,
@@ -406,21 +484,10 @@
    "contacts": [
     {
      "type": "E-mail",
-     "value": "solar.us@ingeteam.com",
-     "occurrences": 5,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145006028104",
-      "page": 4,
-      "document": "M13 rev 01- Data sheet dei materiali.pdf.p7m",
-      "excerpt": "Tel.: +1 (414) 934 4100 / +1 (855) 821 7190 / Fax: +1 (414) 342 0736 e-mail: solar.us@ingeteam.com"
-     }
-    },
-    {
-     "type": "E-mail",
      "value": "solar.energy@ingeteam.com",
-     "occurrences": 4,
+     "occurrences": 7,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145006028104",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148821999467",
       "page": 4,
       "document": "M13 rev 01- Data sheet dei materiali.pdf.p7m",
       "excerpt": "Tel.: +34 948 288 000 / Fax: +34 948 288 001 e-mail: solar.energy@ingeteam.com"
@@ -428,10 +495,21 @@
     },
     {
      "type": "E-mail",
-     "value": "italia.energy@ingeteam.com",
-     "occurrences": 4,
+     "value": "solar.us@ingeteam.com",
+     "occurrences": 7,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145006028104",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148821999467",
+      "page": 4,
+      "document": "M13 rev 01- Data sheet dei materiali.pdf.p7m",
+      "excerpt": "Tel.: +1 (414) 934 4100 / +1 (855) 821 7190 / Fax: +1 (414) 342 0736 e-mail: solar.us@ingeteam.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "italia.energy@ingeteam.com",
+     "occurrences": 5,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148821999467",
       "page": 4,
       "document": "M13 rev 01- Data sheet dei materiali.pdf.p7m",
       "excerpt": "Tel.: +39 0546 651 490 / Fax: +39 054 665 5391 e-mail: italia.energy@ingeteam.com"
@@ -440,9 +518,9 @@
     {
      "type": "E-mail",
      "value": "france@ingeteam.com",
-     "occurrences": 4,
+     "occurrences": 5,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145006028104",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148821999467",
       "page": 4,
       "document": "M13 rev 01- Data sheet dei materiali.pdf.p7m",
       "excerpt": "Tel: +33 (0)5 61 25 00 00 / Fax: +33 (0)5 61 25 00 11 e-mail: france@ingeteam.com"
@@ -451,9 +529,9 @@
     {
      "type": "E-mail",
      "value": "czech@ingeteam.com",
-     "occurrences": 4,
+     "occurrences": 5,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145006028104",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148821999467",
       "page": 4,
       "document": "M13 rev 01- Data sheet dei materiali.pdf.p7m",
       "excerpt": "Tel.: +420 59 732 6800 / Fax: +420 59 732 6899 e-mail: czech@ingeteam.com"
@@ -462,12 +540,71 @@
     {
      "type": "E-mail",
      "value": "shanghai@ingeteam.com",
-     "occurrences": 4,
+     "occurrences": 5,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145006028104",
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148821999467",
       "page": 4,
       "document": "M13 rev 01- Data sheet dei materiali.pdf.p7m",
       "excerpt": "Tel.. +86 21 65 07 76 36 / Fax: +86 21 65 07 76 38 e-mail: shanghai@ingeteam.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. For. Roberto Fagioli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "robfagioli@tin.it",
+     "occurrences": 18,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_956731443920",
+      "page": 1,
+      "document": "Indagine vegetazionale-signed.pdf.p7m",
+      "excerpt": "Dott. For. Roberto Fagioli, cell. 339/2365088, mail: robfagioli@tin.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3392365088",
+     "occurrences": 18,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_956731443920",
+      "page": 1,
+      "document": "Indagine vegetazionale-signed.pdf.p7m",
+      "excerpt": "Dott. For. Roberto Fagioli, cell. 339/2365088, mail: robfagioli@tin.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Stefano Giansanti",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "stefanogiansanti@yahoo.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148826840927",
+      "page": 36,
+      "document": "M23 rev 01-Relazione tecnica descrittiva.pdf.p7m",
+      "excerpt": "E-mail stefanogiansanti@yahoo.it"
      }
     }
    ],
@@ -509,7 +646,7 @@
    "source": null
   },
   {
-   "name": "Areti S.p.A.",
+   "name": "Siel S.p.A.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -519,25 +656,49 @@
    "office": null,
    "contacts": [
     {
-     "type": "PEC",
-     "value": "areti@pec.areti.it",
-     "occurrences": 1,
+     "type": "E-mail",
+     "value": "sales@sielups.com",
+     "occurrences": 2,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365583248091",
-      "page": 2,
-      "document": "Riapertura_iter_cds_2026.pdf.pdf",
-      "excerpt": "Areti areti@pec.areti.it"
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365603226054",
+      "page": 4,
+      "document": "M13.rev26 DATASHEET DEI MATERIALI.pdf",
+      "excerpt": "Phone: +39.02.909861 www.sielups.com sales@sielups.com"
      }
     },
     {
-     "type": "E-mail",
-     "value": "luciano.maso@aceaspa.it",
+     "type": "Telefono",
+     "value": "02909861",
      "occurrences": 2,
      "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1184706290707",
-      "page": 2,
-      "document": "M58 Voltura Preventivo di connessione.pdf.p7m",
-      "excerpt": "connessione, potrà essere contattato anche: Nome LUCIANO MASO Cel. 335404712 email LUCIANO.MASO@ACEASPA.IT"
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365603226054",
+      "page": 4,
+      "document": "M13.rev26 DATASHEET DEI MATERIALI.pdf",
+      "excerpt": "Via I° Maggio 25 – 20060 Trezzano Rosa (MI) – ITALY Phone: +39.02.909861"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Marco Rizzuto",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0648054256",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1030014917034",
+      "page": 1,
+      "document": "Malnome_FV__Richiesta_integrazioni_timbrato.pdf",
+      "excerpt": "Referente per quanto comunicato: Dott. Marco Rizzuto Tel. : 0648054256"
      }
     }
    ],
@@ -601,89 +762,6 @@
     }
    ],
    "source": null
-  },
-  {
-   "name": "Siel S.p.A.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "sales@sielups.com",
-     "occurrences": 1,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365603226054",
-      "page": 4,
-      "document": "M13.rev26 DATASHEET DEI MATERIALI.pdf",
-      "excerpt": "Phone: +39.02.909861 www.sielups.com sales@sielups.com"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "02909861",
-     "occurrences": 1,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_2365603226054",
-      "page": 4,
-      "document": "M13.rev26 DATASHEET DEI MATERIALI.pdf",
-      "excerpt": "Via I° Maggio 25 – 20060 Trezzano Rosa (MI) – ITALY Phone: +39.02.909861"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Dott. Marco Rizzuto",
-   "kind": "persona",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "Telefono",
-     "value": "0648054256",
-     "occurrences": 1,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1030014917034",
-      "page": 1,
-      "document": "Malnome_FV__Richiesta_integrazioni_timbrato.pdf",
-      "excerpt": "Referente per quanto comunicato: Dott. Marco Rizzuto Tel. : 0648054256"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "All’ENAV S.p.A.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "funzione.psa@pec.enav.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1305939436066",
-      "page": 1,
-      "document": "Lettera MWEB_2022_1899.pdf",
-      "excerpt": "All’ENAV SpA - Area Operativa - Progettazione Spazi Aerei-Sett. Ostacoli funzione.psa@pec.enav.it"
-     }
-    }
-   ],
-   "source": null
   }
  ],
  "stato": null,
@@ -727,86 +805,114 @@
    {
     "name": "Installazione recinzione perimetrale",
     "start": 0.42,
-    "end": 0.89,
+    "end": 0.9,
     "level": 3,
     "summary": false
    },
    {
-    "name": "Installazione sistema di videosorveglianza DEL CANTIERE",
-    "start": 0.65,
+    "name": "APPRONTAMENT",
+    "start": 0.66,
     "end": 1.37,
-    "level": 1,
+    "level": 0,
     "summary": true
    },
    {
-    "name": "Delimitazione-preparazione piste di cantiere",
-    "start": 0.65,
-    "end": 0.89,
+    "name": "Installazione sistema di videosorveglianza O DEL CANTIERE",
+    "start": 0.66,
+    "end": 1.37,
+    "level": 2,
+    "summary": true
+   },
+   {
+    "name": "Delimitazione-preparazione piste di",
+    "start": 0.66,
+    "end": 0.9,
     "level": 3,
     "summary": false
    },
    {
     "name": "Installazione Locali tecnici e servizi",
     "start": 0.42,
-    "end": 0.65,
+    "end": 0.66,
     "level": 3,
     "summary": false
    },
    {
     "name": "Infissione Pali",
     "start": 1.37,
-    "end": 2.08,
+    "end": 2.09,
     "level": 3,
     "summary": false
    },
    {
-    "name": "Installazione Tracker",
+    "name": "Installazione Tacker",
     "start": 1.85,
     "end": 2.8,
     "level": 3,
     "summary": false
    },
    {
-    "name": "Posa cabine di campo e di trasformazione CANTIERE",
+    "name": "Realizzazione scavi e posa cavidotti",
+    "start": 2.8,
+    "end": 3.99,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Installazione Moduli Fotovoltaici",
+    "start": 2.8,
+    "end": 3.99,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Possa cabine di campo e di trasformazione CANTIERE",
     "start": 3.75,
     "end": 4.23,
-    "level": 2,
-    "summary": true
+    "level": 3,
+    "summary": false
    },
    {
     "name": "Cablaggi BT-MT-Segnale",
     "start": 3.99,
-    "end": 4.91,
+    "end": 4.92,
     "level": 3,
     "summary": false
    },
    {
     "name": "Risistemazione stradelli impianto",
     "start": 4.71,
-    "end": 5.1,
-    "level": 0,
-    "summary": true
+    "end": 5.11,
+    "level": 3,
+    "summary": false
    },
    {
-    "name": "Installazione sistema di monitoraggio",
-    "start": 4.91,
-    "end": 5.1,
+    "name": "Installazione sistema di monitoriaggio",
+    "start": 4.92,
+    "end": 5.11,
     "level": 3,
     "summary": false
    },
    {
     "name": "Commissioning",
-    "start": 5.1,
-    "end": 5.28,
+    "start": 5.11,
+    "end": 5.29,
     "level": 3,
     "summary": false
    },
    {
     "name": "Collaudi e test",
-    "start": 5.47,
+    "start": 5.28,
     "end": 5.66,
     "level": 3,
     "summary": false
+   },
+   {
+    "name": "Smobilizzazione area di cantiere",
+    "start": 5.66,
+    "end": 5.86,
+    "level": 0,
+    "summary": true
    },
    {
     "name": "Installazione cabina consegna MT",
@@ -816,25 +922,25 @@
     "summary": false
    },
    {
-    "name": "Collaudi in corso d'opera ALLACCIO ALLA",
+    "name": "ALLACCIO ALLA Collaudi in corso d'opera",
     "start": 2.8,
-    "end": 3.27,
+    "end": 3.28,
     "level": 1,
     "summary": false
    },
    {
-    "name": "Misura e Verifica impianti di terra RETE E MESSA IN",
-    "start": 3.27,
-    "end": 3.51,
+    "name": "RETE E MESSA IN Misura e Verifica impianti di terra",
+    "start": 3.28,
+    "end": 3.52,
     "level": 0,
     "summary": true
    },
    {
     "name": "ESERCIZIO Collaudo opere di rete",
-    "start": 3.51,
-    "end": 3.75,
-    "level": 2,
-    "summary": true
+    "start": 3.52,
+    "end": 3.76,
+    "level": 3,
+    "summary": false
    },
    {
     "name": "Messa in esercizio",
@@ -847,9 +953,9 @@
   "unit": "month",
   "months": 6.07,
   "source": {
-   "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145006882843",
+   "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_956727594426",
    "page": 1,
-   "document": "M49- Cronoprogramma rev 01.pdf.p7m",
+   "document": "M40-Cronoprogramma.pdf.p7m",
    "excerpt": ""
   },
   "asse": {
@@ -996,9 +1102,9 @@
   "duration": {
    "text": "7 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 6-12 mesi (4), 3 Mesi (3), 3-4 giorni (2)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 90 giorni (circa 3 mesi) (10), 30 giorni (6), 15 giorni (6)",
    "source": {
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145015472744",
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148822563505",
     "page": 5,
     "document": "M26 rev 01-Descrizione delle fasi di cantiere e delle ricadute economiche e occupazionali.pdf.p7m",
     "excerpt": "proprietà Areti e dichiarazione di entrata in esercizio al Gestore dei Servizi Energetici. Si prevede una durata dei lavori di circa 7 mesi (in condizioni di normale operatività e dunque senza interruzioni forzate delle "
@@ -1026,6 +1132,10 @@
   "note": null,
   "altri": [
    {
+    "document": "M49- Cronoprogramma rev 01.pdf.p7m",
+    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145006882843"
+   },
+   {
     "document": "M49- Cronoprogramma rev 01.pdf",
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1145006527979"
    },
@@ -1038,10 +1148,6 @@
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_1148817926569"
    },
    {
-    "document": "M40-Cronoprogramma.pdf.p7m",
-    "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_956727594426"
-   },
-   {
     "document": "M40-Cronoprogramma.pdf",
     "url": "https://regionelazio.app.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-050-2022&file_id=f_956728307497"
    }
@@ -1051,9 +1157,9 @@
  },
  "documentazione": {
   "documenti": 384,
-  "pagine": 2412,
+  "pagine": 4254,
   "completa": false,
-  "da_leggere": 144
+  "da_leggere": 26
  },
  "confronto": [
   {
@@ -1097,7 +1203,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "155 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "248 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
