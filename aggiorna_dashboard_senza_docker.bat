@@ -7,6 +7,7 @@ REM Flusso: Python locale + SQLite + GitHub Desktop
 REM ==========================================================
 
 cd /d "%~dp0"
+call ".\scripts\pull_before_run.bat" "%~nx0" || exit /b 1
 
 set "PYTHON_EXE=.\.venv\Scripts\python.exe"
 set "DATA_JSON=.\reports\site\data.json"

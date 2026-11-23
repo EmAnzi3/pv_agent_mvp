@@ -1,6 +1,7 @@
 @echo off
 setlocal EnableExtensions
 cd /d "%~dp0"
+call ".\scripts\pull_before_run.bat" "%~nx0" || exit /b 1
 title Alayan Wind Radar - aggiornamento locale
 
 echo.
