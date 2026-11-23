@@ -5,7 +5,7 @@
  "title": "Progetto eolico denominato \"Monte Cerchio\" della potenza complessiva di 43,4 MW e relative opere connesse, sito nei Comuni di CAIRO MONTENOTTE e CENGIO in provincia di Savona e SALICETO in provincia di Cuneo",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10455",
  "source": "mase",
- "updated": "2026-11-21",
+ "updated": "2026-11-23",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "7",
    "status": "da documenti",
-   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 10 (1), 18 (1)",
+   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 1 (6), 18 (3), 22 (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/958439",
     "page": 2,
@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "196 giorni (circa 6 mesi)",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 30 mesi (1), 490 giorni (circa 16 mesi) (1), 5 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 30 mesi (3), 490 giorni (circa 16 mesi) (2), 5 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1142674",
     "page": 16,
@@ -69,7 +69,7 @@
   "coordinate": {
    "lat": 44.42621,
    "lon": 8.22266,
-   "tipo": "coordinate del sito dichiarate negli elaborati (14 riferimenti concordi)",
+   "tipo": "coordinate del sito dichiarate negli elaborati (17 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/958654",
     "page": 4,
@@ -142,6 +142,60 @@
  ],
  "altri_soggetti": [
   {
+   "name": "Bautel S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10009540013",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Maroncelli 23 10024 Moncalieri To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "amministrazione@bautel.it",
+     "occurrences": 433,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/958656",
+      "page": 1,
+      "document": "BIBLIOGRAFIA_signed",
+      "excerpt": "Sede Amministrativa via Maroncelli, 23 10024 Moncalieri (TO) tel 011.6052113 - 011.6059915 e-mail: amministrazione@bautel.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Tecnogaia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "13029730150",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Matteotti 311 25063 Gardone Val Trompia Bs",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnogaia.it",
+     "occurrences": 42,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1142952",
+      "page": 2,
+      "document": "Integrazioni del 01/08/2024 - 2024-07-12_Controdeduzioni_WINDTEK_per_Avv_BRIGNONE_Nadia",
+      "excerpt": "E-mail: info@tecnogaia.it Cap. Soc. € 119.000,00 interamente versato"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Deca Service S.r.l.",
    "kind": "società",
    "roles": [],
@@ -154,7 +208,7 @@
     {
      "type": "PEC",
      "value": "decaservicesrl@legalmail.it",
-     "occurrences": 6,
+     "occurrences": 8,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1007271",
       "page": 1,
@@ -192,12 +246,47 @@
     {
      "type": "E-mail",
      "value": "emmecsris@gmail.com",
-     "occurrences": 8,
+     "occurrences": 9,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/958651",
       "page": 1,
       "document": "Geologica Generale_REV01-signed-signed",
       "excerpt": "M via e (CU) Geom. Domenico Bresciano EMME CONSULTING... e-mail: emmecsris@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Luciano Messori",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiomessori.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1142958",
+      "page": 1,
+      "document": "Integrazioni del 01/08/2024 - quadro di riferimento ambientale_signed",
+      "excerpt": "Sede Amministrativa : Via Milano n.7 - 40139 Bologna tel. 051.6240807, email. info@studiomessori.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0516240807",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1142958",
+      "page": 1,
+      "document": "Integrazioni del 01/08/2024 - quadro di riferimento ambientale_signed",
+      "excerpt": "Sede Amministrativa : Via Milano n.7 - 40139 Bologna tel. 051.6240807, email. info@studiomessori.it"
      }
     }
    ],
@@ -234,7 +323,7 @@
   "duration": {
    "text": "196 giorni (circa 6 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 30 mesi (1), 490 giorni (circa 16 mesi) (1), 5 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 30 mesi (3), 490 giorni (circa 16 mesi) (2), 5 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1142674",
     "page": 16,
@@ -263,9 +352,9 @@
  },
  "documentazione": {
   "documenti": 800,
-  "pagine": 2550,
+  "pagine": 4779,
   "completa": false,
-  "da_leggere": 500
+  "da_leggere": 200
  },
  "confronto": [
   {
@@ -301,7 +390,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "3259 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "4916 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
