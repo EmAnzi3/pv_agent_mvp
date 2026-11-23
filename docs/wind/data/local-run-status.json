@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T17:07:30+01:00",
+  "generated_at": "2026-11-23T15:15:25+01:00",
   "mode": "due",
-  "duration_seconds": 366.7,
+  "duration_seconds": 769.5,
   "outcome": "partial",
   "canonical": {
     "projects": 51,
@@ -11,23 +11,23 @@
     "version": "0.5.0"
   },
   "institutional": {
-    "due": 15,
-    "executed": 15,
-    "findings": 264,
-    "new_or_changed": 49,
+    "due": 20,
+    "executed": 20,
+    "findings": 270,
+    "new_or_changed": 10,
     "errors": 2,
     "data_health": {
       "channel_or_market_only": 4,
-      "project_data": 8,
-      "empty_success": 1,
+      "project_data": 10,
+      "empty_success": 4,
       "error": 2
     }
   },
   "company": {
-    "due": 3,
-    "executed": 3,
-    "findings": 2,
-    "new_or_changed": 0,
+    "due": 40,
+    "executed": 40,
+    "findings": 67,
+    "new_or_changed": 5,
     "errors": 2
   },
   "execution_queue": {
@@ -35,12 +35,14 @@
     "open_scope_count": 72
   },
   "digest": {
-    "events": 49,
-    "actionable_events": 49,
+    "events": 15,
+    "actionable_events": 15,
     "non_actionable_events": 0,
     "action_types": {
-      "canonical_update_review": 48,
-      "new_project_lead": 1
+      "canonical_update_review": 9,
+      "company_project_signal": 4,
+      "new_project_lead": 1,
+      "company_network_update": 1
     }
   },
   "guard": "Review-only: raw finding e digest non modificano automaticamente il canonico. Uno scope esecutivo si chiude solo con evidenza project-specific A1/A2."
