@@ -1,0 +1,817 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10338",
+ "title": "Progetto per la realizzazione di un impianto eolico denominato \"NEXT1\", costituito da 6 aerogeneratori di potenza unitaria pari a 6 MW, per una potenza complessiva di 36 MW, da realizzarsi nei comuni di Guagnano (LE) e Salice Salentino (LE), incluse le opere di connessione alla RTN e un sistema di accumulo di potenza pari a 24 MW, ricadenti anche nei comuni di Campi Salentina (LE), San Donaci (BR) e Cellino San Marco (BR) (cod. MYTERNA n. 202203106).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10338",
+ "source": "mase",
+ "updated": "2026-11-23",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "36 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10338",
+    "excerpt": "36 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 84 (10), 10 (10), 17 (8)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/934318",
+    "page": 2,
+    "document": "Avviso al pubblico del 20/11/2023",
+    "excerpt": "CAMPI SALENTINA (LE) e prevede una nuova realizzazione di un parco eolico a terra con infrastrutture ed opere connesse, formato da n. 6 aerogeneratori di altezza complessiva fuori terra pari a 200 metri e con potenza com"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Fotovoltaico galleggiante",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/934456",
+    "page": 1,
+    "document": "O3Q5NM4_NPDI2_GUA_4_22_ElaboratoGrafico_signed",
+    "excerpt": "MESSA A TERRA DEL PAVIMENTO FLOTTANTE o 3 +"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "24 MW / 48 MWh",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 60 MW (174), 36 MW (3), 6 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/934318",
+    "page": 2,
+    "document": "Avviso al pubblico del 20/11/2023",
+    "excerpt": "infrastrutture ed opere connesse, formato da n. 6 aerogeneratori di altezza complessiva fuori terra pari a 200 metri e con potenza complessiva di 36 MW, un impianto di accumulo di 24 MW, con annesse opere ed infrastruttu"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12-20 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (3), 3 mesi (2), 11 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/934610",
+    "page": 14,
+    "document": "O3Q5NM4_NPDI2_GUA_R39b_SIA_QuadroProgettuale_signed",
+    "excerpt": "Nel calcolo della superficie occupata non sono state prese in considerazione le aree spazzate delle pale e le aree di occupazione temporanea (12-20 mesi) necessarie alla costruzione del parco eolico da restituire success"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "LE",
+  "comuni": [
+   "Guagnano",
+   "San Donaci",
+   "Salice Salentino",
+   "Campi Salentina",
+   "Cellino San Marco"
+  ],
+  "coordinate": {
+   "lat": 40.405,
+   "lon": 17.92194,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (198 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/934524",
+    "page": 4,
+    "document": "O3Q5NM4_NPDI2_GUA_R23_RelazioneGeologica_signed",
+    "excerpt": "(espresse come punto centrale): − Latitudine : 40° 24' 18\" N − Longitudine : 17° 55' 19\" E"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.40500,17.92194",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 40.41359,
+   "lon": 17.92063,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/934397",
+    "page": 1,
+    "document": "O3Q5NM4_NPDI2_GUA_1_05a_ElaboratoGrafico_signed",
+    "excerpt": "— TT T > cevidoto MT YY 5 | NOS 748374 4477779 Guagnano Lecce 22 ral"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.41359,17.92063"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "NPD Italia II S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "11987560965",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Galleria Passarella 2 20122 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "npditalia@legalmail.it",
+     "occurrences": 107,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934608",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_R17_StudioVisibilità_signed",
+      "excerpt": "Via Guglielmo Marconi scala C n.166 - Cap 72023 MESAGNE (BR) Galleria Passarella, 2, Cap - 20122 MILANO P.IVA 02683290742 - qmsolar.srls@pec.it santo masilla P.IVA 11987560965 - email: npditalia@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "npitaliaii@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1258377",
+      "page": 1,
+      "document": "CONTRODEDUZIONE TECNICA ALLE OSSERVAZIONI DI ENERGIA LEVANTE prot. MASE 2024/0101724.",
+      "excerpt": "NPD Italia II S.r.l. | Società con socio unico | PEC: npitaliaii@legalmail.it | Sede Legale: Galleria Passarella, 2 - 20122 Milano"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "npditalia@legalmal.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934357",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_0_02a-2_ElaboratoGrafico_signed",
+      "excerpt": "P.IVA 02683290742 - amsolar.sris@pec.i santo masilla P.IVA 11987560965. email: npditalia@legalmal.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "fabio.borgia@starlight-energy.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1258377",
+      "page": 1,
+      "document": "CONTRODEDUZIONE TECNICA ALLE OSSERVAZIONI DI ENERGIA LEVANTE prot. MASE 2024/0101724.",
+      "excerpt": "delle Imprese della CCIAA di Milano n. 11987560965, REA MI - 2633611, tel. 0287284480, fax 0244386505, PEC npditaliaii@legalmail.it, e-mail fabio.borgia@starlight-energy.com,"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "stefano.pieroni@nextenergycapital.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934318",
+      "page": 1,
+      "document": "Avviso al pubblico del 20/11/2023",
+      "excerpt": "Passarella, 2 - CAP 20122, REA MI-2633611, tel 0287284480, fax 0244386505, PEC npditaliaii@legalmail.it, e-mail stefano.pieroni@nextenergycapital.com,"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0287284480",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934318",
+      "page": 1,
+      "document": "Avviso al pubblico del 20/11/2023",
+      "excerpt": "20122, C.F., P. IVA ed Iscrizione al Registro delle Imprese della CCIAA di Milano n. Galleria Passarella, 2 - CAP 20122, REA MI-2633611, tel 0287284480, fax 0244386505, PEC"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10338"
+   }
+  },
+  {
+   "name": "Qmsolar S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "qmsolar.srls@pec.it",
+     "occurrences": 67,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934608",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_R17_StudioVisibilità_signed",
+      "excerpt": "Via Guglielmo Marconi scala C n.166 - Cap 72023 MESAGNE (BR) Galleria Passarella, 2, Cap - 20122 MILANO P.IVA 02683290742 - qmsolar.srls@pec.it santo masilla P.IVA 11987560965 - email: npditalia@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "sis@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934583",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_45-a2_StudioFattibilitàAmbientale_signed",
+      "excerpt": "Via Guglielmo Marconi scala C n.166 - Cap 7202 MESAGNE (BR) Galleria Passarella n.2 - Cap 20122 MILANO P.IVA 02683290782 - qmsolor sis@pec.it ‘ao masta P.IVA 11987560965 - ema: npitaiai@legalmallt"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "nnovativesoutons@gmal.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934336",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_R10-24_ElaboratoGrafico_signed",
+      "excerpt": "| si SMETTI e n muerte x H pri e = P.IVA 05030190754 - mac nnovativesoutons@gmal.com tarli nel"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/934356",
+    "page": 1,
+    "document": "O3Q5NM4_NPDI2_GUA_0_02a-1_ElaboratoGrafico_signed",
+    "excerpt": "Progettazione: Committente: QMSOLAR s.r.l. NPD Italia Il s.r."
+   }
+  },
+  {
+   "name": "MSC Innovative Solutions S.R.L.S.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "05030190754",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via F Milizia 55 73100 Lecce Le",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "msc.innovativesolutions@gmail.com",
+     "occurrences": 113,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934608",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_R17_StudioVisibilità_signed",
+      "excerpt": "MSC Innovative Solutions s.r.l.s - Via Milizia 55 - 73100 LECCE (LE) P.IVA 05030190754 - msc.innovativesolutions@gmail.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "innovativesolutions@gmal.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934443",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_2_10_ElaboratoGrafico_signed",
+      "excerpt": "* n.1 turca da cantiere sarà posizionata in prossimità MSC Innovative Solutions s.r.1.s - Via Milizia 55 - 73100 LECCE (LE) ia Re dole Soe P.IVA 05030190754 = msc innovativesolutions@gmal.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "msc-innovativesolutions@gmali.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934365",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_0_02a_ElaboratoGrafico_signed",
+      "excerpt": "© HH MSC Innovative Solutions 5.1.3 - Via Milizia 55 - 73100 LECCE (LE) È P.IVA 05030190754 - msc-innovativesolutions@gmali.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/934608",
+    "page": 1,
+    "document": "O3Q5NM4_NPDI2_GUA_R17_StudioVisibilità_signed",
+    "excerpt": "Gruppo di progettazione:"
+   }
+  },
+  {
+   "name": "Dott. Marcello De Donatis",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/934524",
+    "page": 8,
+    "document": "O3Q5NM4_NPDI2_GUA_R23_RelazioneGeologica_signed",
+    "excerpt": "Geologo Dott. Marcello De Donatis"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Dott. Ing. Santo Masilla",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "ingmasilla@gmail.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934403",
+      "page": 6,
+      "document": "O3Q5NM4_NPDI2_GUA_1_05d_ElaboratoGrafico_signed",
+      "excerpt": "Via Torre Santa Susanna, 67 - 72020 Erchie (BR) tel. +39 0831.767860 - ingmasilla@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0831767860",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934403",
+      "page": 6,
+      "document": "O3Q5NM4_NPDI2_GUA_1_05d_ElaboratoGrafico_signed",
+      "excerpt": "Via Torre Santa Susanna, 67 - 72020 Erchie (BR) tel. +39 0831.767860 - ingmasilla@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "NPD Italia Il S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "npaltaia@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934369",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_0_02b-4_ElaboratoGrafico_signed",
+      "excerpt": "Via Guglielmo Marconi scala C n.166 - Cap 72023 MESAGNE (BR) Galleria Passerella 2 - Cap 20122 MILANO P.IVA 02683290742 - qmsolar.sris@pec.i it santo masi P.IVA 11987560965 - email: npaltaia@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "npditaliali@legalmall.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934586",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_45-b2_StudioFattibilitàAmbientale_signed",
+      "excerpt": "Via Guglielmo Marconi scala C n.166 - Cap 72023 MFSAGNE (BR) Galleria Passarella n.2 - Cap 20122 MILANO P.IVA 02683290742 - qmsolar.stis@pec.it. Santo masila P.IVA 11987560965 - email: npditaliali@legalmall.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "npcitalai@legalmal.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934562",
+      "page": 1,
+      "document": "O3Q5NM4_NPDI2_GUA_31h-1_StudioFattibilitàAmbientale_signed",
+      "excerpt": "i (APO2 062057 | Galleria Passrea n2 - Cap 20122 MILANO GiNt=b0:00 P.IVA 11987560965 - email: npcitalai@legalmal.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Energia Levante S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "energialevantesrl@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1084976",
+      "page": 3,
+      "document": "Osservazioni del Signor Giancarlo Mercurio, in qualità di Presidente del Consiglio di Amministrazione e legale rappresentante pro tempore della ENERGIA LEVANTE S.R.L., in data 3/06/2024",
+      "excerpt": "Energia Levante S.r.l. Regus Eur Tel: Tel: +39 0654832107 Via Luca Gaurico,9/11 energialevantesrl@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0654832107",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1084976",
+      "page": 3,
+      "document": "Osservazioni del Signor Giancarlo Mercurio, in qualità di Presidente del Consiglio di Amministrazione e legale rappresentante pro tempore della ENERGIA LEVANTE S.R.L., in data 3/06/2024",
+      "excerpt": "Energia Levante S.r.l. Regus Eur Tel: Tel: +39 0654832107"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "TT Sfoprove S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "379359506",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/934525",
+      "page": 62,
+      "document": "O3Q5NM4_NPDI2_GUA_R24_RelazioneGeotecnica_signed",
+      "excerpt": "& © » DD) (EN \\ {TT SFOPROVE SRL P.IVA 03940590750 | cu ez DM 278 tra ° 18 tees @ ‘ a \\/L ; fon 2853 591002 Cell. 379 359 506 cdorres ai sinora du ="
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "12/2025",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/934502",
+     "page": 5,
+     "document": "O3Q5NM4_NPDI2_GUA_R05a_RelazioneOpereElettriche_signed",
+     "excerpt": "Nome del progetto di impianto eolico: NEXT1 Entrata in esercizio (previsione): dicembre 2025"
+    }
+   }
+  ],
+  "durata_cantiere": "20 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Progetto esecutivo",
+    "start": 0.01,
+    "end": 5.97,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Convenzioni per attraversamenti e interferenze",
+    "start": 0.01,
+    "end": 5.97,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Convenzioni per attraversamenti e",
+    "start": 0.01,
+    "end": 5.97,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Espropri",
+    "start": 0.01,
+    "end": 5.97,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Affidamento lavori",
+    "start": 4.0,
+    "end": 5.97,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Allestimento del cantiere",
+    "start": 6.0,
+    "end": 6.96,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civili – strade",
+    "start": 7.0,
+    "end": 8.96,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civili – fondazioni torri",
+    "start": 7.0,
+    "end": 13.97,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Opere civili ed elettriche – cavidotti",
+    "start": 8.99,
+    "end": 14.97,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Trasporto componenti torri ed aerogeneratori",
+    "start": 12.0,
+    "end": 13.97,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Trasporto componenti torri ed",
+    "start": 12.0,
+    "end": 13.97,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Montaggio torri ed aerogeneratori",
+    "start": 13.0,
+    "end": 15.97,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Costruzione SSE – Opere elettriche e di connessione alla RTN",
+    "start": 7.0,
+    "end": 16.98,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Costruzione SSE – Opere elettriche e di",
+    "start": 7.0,
+    "end": 16.98,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Collaudi",
+    "start": 16.0,
+    "end": 17.98,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Dismissione del cantiere e ripristini ambientali",
+    "start": 18.01,
+    "end": 19.98,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "Dismissione del cantiere e ripristini",
+    "start": 18.01,
+    "end": 19.98,
+    "level": 1,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 19.98,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/934533",
+   "page": 2,
+   "document": "O3Q5NM4_NPDI2_GUA_R31b_CronoprogrammaRealizzazione_signed",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12-20 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 1 mese (4), 6 mesi (3), 3 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/934610",
+    "page": 14,
+    "document": "O3Q5NM4_NPDI2_GUA_R39b_SIA_QuadroProgettuale_signed",
+    "excerpt": "Nel calcolo della superficie occupata non sono state prese in considerazione le aree spazzate delle pale e le aree di occupazione temporanea (12-20 mesi) necessarie alla costruzione del parco eolico da restituire success"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "12/2025",
+    "iso": "2025-12",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/934502",
+     "page": 5,
+     "document": "O3Q5NM4_NPDI2_GUA_R05a_RelazioneOpereElettriche_signed",
+     "excerpt": "Nome del progetto di impianto eolico: NEXT1 Entrata in esercizio (previsione): dicembre 2025"
+    }
+   }
+  ],
+  "document": {
+   "document": "O3Q5NM4_NPDI2_GUA_R31b_CronoprogrammaRealizzazione_signed",
+   "url": "https://va.mite.gov.it/File/Documento/934533"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "O3Q5NM4_NPDI2_GUA_R31c_CronoprogrammaDismissione_signed",
+    "url": "https://va.mite.gov.it/File/Documento/934534"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 300,
+  "pagine": 5856,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "NPD Italia II S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 36.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GUAGNANO, CAMPI SALENTINA",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LE",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "45 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
