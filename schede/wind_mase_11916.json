@@ -1,0 +1,685 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11916",
+ "title": "Progetto di un impianto eolico denominato \"Gubbio Sud\" di potenza nominale pari a 36 MW integrato con un sistema di accumulo da 12 MW e relative opere di connessione da realizzare nel Comune di Gubbio (PG).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11916",
+ "source": "mase",
+ "updated": "2026-11-23",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "36 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11916",
+    "excerpt": "36 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "5",
+   "status": "da verificare",
+   "sub": "7,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore più ricorrente negli elaborati; altri valori: 2 (20), 1 (17), 3 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1364739",
+    "page": 16,
+    "document": "Impianto Eolico Gubbio Sud",
+    "excerpt": "Il parco eolico in progetto prevede l’installazione di 5 aerogeneratori (anche detti WTG) di potenza nominale unitaria pari a 7,2 MW, per una potenza nominale complessiva pari a 36 MWp,"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "12 MW",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 36 MW (3), 63 MW (3), 50 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1364815",
+    "page": 2,
+    "document": "Avviso al pubblico del 12/02/2026",
+    "excerpt": "ciascuna da 7,2 MW, per una potenza complessiva d’impianto pari a 36 MW. L’impianto è integrato da un sistema di accumulo di potenza nominale pari a 12 MW e corredato dalle opere di connessione e dalle infrastrutture ind"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "8 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 16 mesi (1), 18 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1364761",
+    "page": 54,
+    "document": "Relazione tecnica descrittiva",
+    "excerpt": "• Fase di costruzione: durante il cantiere, che avrà una durata stimata di circa 8 mesi, si prevede l’impiego diretto di circa 200 lavoratori nel periodo di maggiore attività."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Umbria",
+  "provincia": "PG",
+  "comuni": [
+   "Gubbio"
+  ],
+  "coordinate": {
+   "lat": 43.26703,
+   "lon": 12.51958,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (71 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1364770",
+    "page": 6,
+    "document": "Qualificazione dell'area eolico Gubbio Sud",
+    "excerpt": "297360"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=43.26703,12.51958",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 43.28279,
+   "lon": 12.53511,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1364775",
+    "page": 5,
+    "document": "Fotosimulazioni di inserimento",
+    "excerpt": "299926"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=43.28279,12.53511"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Edurne Green S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "edurnegreen@legalmail.it",
+     "occurrences": 222,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1364732",
+      "page": 2,
+      "document": "Carta Litotecnica",
+      "excerpt": "Codice fiscale: 13654540965 edurnegreen@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11916"
+   }
+  },
+  {
+   "name": "Geol. Flavio Buratti",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1372661",
+    "page": 87,
+    "document": "Parere del Comune di Gubbio, in data 16/03/2026",
+    "excerpt": "GEOLOGO INCARICATO: Geol. Flavio BURATTI"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Ipool S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01784280479",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Enrico Fermi 75 51100 Pistoia Pt",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "acustica@i-pool.it",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1372661",
+      "page": 76,
+      "document": "Parere del Comune di Gubbio, in data 16/03/2026",
+      "excerpt": "Sede Legale/Registered office: Via E. Fermi, 75 — 51100 Pistoia (PT), Italia Sede Operativa/Headquarters: Div. Acustica: via Cocchi, 3 - 56121 Pisa (PI), Italia, email: acustica@i-pool.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "materiali@i-pool.it",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1372661",
+      "page": 76,
+      "document": "Parere del Comune di Gubbio, in data 16/03/2026",
+      "excerpt": "Sede Operativa/Headquarters: Div. Acustica: via Cocchi, 3 - 56121 Pisa (PI), Italia, email: acustica@i-pool.it Sede Operativa/Headquarters: Div. Materiali: via Cocchi, 7 - 56121 Pisa (PI), Italia, email: materiali@i-pool"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Green Apply S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "greenapply@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1364777",
+      "page": 1,
+      "document": "Preventivo di connessione - Comune di Gubbio",
+      "excerpt": "20100 Milano (MI) greenapply@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Guido Cianciulli - Copyright Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sblendido@greengreen.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1364750",
+      "page": 2,
+      "document": "Prime indicazioni sulla sicurezza",
+      "excerpt": "Tel.: - - Fax: - E-Mail: sblendido@greengreen.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "13 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "INSTALLAZIONE WTG_05 E RIPRISTINO PARZIALE PIAZZOLA 205 230",
+    "start": 1.16,
+    "end": 1.39,
+    "level": 1,
+    "summary": false,
+    "duration": "25 mesi"
+   },
+   {
+    "name": "COMMISSIONING SSE 250 270",
+    "start": 10.39,
+    "end": 10.62,
+    "level": 1,
+    "summary": false,
+    "duration": "20 mesi"
+   },
+   {
+    "name": "COMMISSIONING WTG_01 250 270",
+    "start": 10.39,
+    "end": 10.62,
+    "level": 1,
+    "summary": false,
+    "duration": "20 mesi"
+   },
+   {
+    "name": "COMMISSIONING WTG_02 250 270",
+    "start": 10.39,
+    "end": 10.62,
+    "level": 1,
+    "summary": false,
+    "duration": "20 mesi"
+   },
+   {
+    "name": "COMMISSIONING WTG_03 250 270",
+    "start": 10.39,
+    "end": 10.62,
+    "level": 1,
+    "summary": false,
+    "duration": "20 mesi"
+   },
+   {
+    "name": "COMMISSIONING WTG_04 250 270",
+    "start": 10.39,
+    "end": 10.62,
+    "level": 1,
+    "summary": false,
+    "duration": "20 mesi"
+   },
+   {
+    "name": "COMMISSIONING WTG_05 250 270",
+    "start": 10.39,
+    "end": 10.62,
+    "level": 1,
+    "summary": false,
+    "duration": "20 mesi"
+   },
+   {
+    "name": "DISMISSIONE CANTIERE",
+    "start": 0.0,
+    "end": 12.93,
+    "level": 0,
+    "summary": false,
+    "duration": "7 mesi"
+   },
+   {
+    "name": "DISMISSIONE CANTIERE 270 277",
+    "start": 12.0,
+    "end": 12.23,
+    "level": 0,
+    "summary": false,
+    "duration": "7 mesi"
+   }
+  ],
+  "unit": "month",
+  "months": 12.93,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1364736",
+   "page": 5,
+   "document": "Calendario Lavori Parco Eolico Gubbio Sud",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "225",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "226",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "227",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "228",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "229",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "230",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "231",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "232",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "233",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "234",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "235",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "236",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "237",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "238",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "239",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "240",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "241",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "242",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "243",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "244",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "245",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "246",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "247",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "248",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "249",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "250",
+     "start": 5.769,
+     "end": 6.0
+    },
+    {
+     "label": "251",
+     "start": 6.0,
+     "end": 6.231
+    },
+    {
+     "label": "252",
+     "start": 6.231,
+     "end": 6.462
+    },
+    {
+     "label": "253",
+     "start": 6.462,
+     "end": 6.692
+    },
+    {
+     "label": "254",
+     "start": 6.692,
+     "end": 6.923
+    },
+    {
+     "label": "255",
+     "start": 6.923,
+     "end": 7.154
+    },
+    {
+     "label": "256",
+     "start": 7.154,
+     "end": 7.385
+    },
+    {
+     "label": "257",
+     "start": 7.385,
+     "end": 7.615
+    },
+    {
+     "label": "258",
+     "start": 7.615,
+     "end": 7.846
+    },
+    {
+     "label": "259",
+     "start": 7.846,
+     "end": 8.077
+    },
+    {
+     "label": "260",
+     "start": 8.077,
+     "end": 8.308
+    },
+    {
+     "label": "261",
+     "start": 8.308,
+     "end": 8.538
+    },
+    {
+     "label": "262",
+     "start": 8.538,
+     "end": 8.769
+    },
+    {
+     "label": "263",
+     "start": 8.769,
+     "end": 9.0
+    },
+    {
+     "label": "264",
+     "start": 9.0,
+     "end": 9.231
+    },
+    {
+     "label": "265",
+     "start": 9.231,
+     "end": 9.462
+    },
+    {
+     "label": "266",
+     "start": 9.462,
+     "end": 9.692
+    },
+    {
+     "label": "267",
+     "start": 9.692,
+     "end": 9.923
+    },
+    {
+     "label": "268",
+     "start": 9.923,
+     "end": 10.154
+    },
+    {
+     "label": "269",
+     "start": 10.154,
+     "end": 10.385
+    },
+    {
+     "label": "270",
+     "start": 10.385,
+     "end": 10.615
+    },
+    {
+     "label": "271",
+     "start": 10.615,
+     "end": 10.846
+    },
+    {
+     "label": "272",
+     "start": 10.846,
+     "end": 11.077
+    },
+    {
+     "label": "273",
+     "start": 11.077,
+     "end": 11.308
+    },
+    {
+     "label": "274",
+     "start": 11.308,
+     "end": 11.538
+    },
+    {
+     "label": "275",
+     "start": 11.538,
+     "end": 11.769
+    },
+    {
+     "label": "276",
+     "start": 11.769,
+     "end": 12.0
+    },
+    {
+     "label": "277",
+     "start": 12.0,
+     "end": 12.231
+    },
+    {
+     "label": "278",
+     "start": 12.231,
+     "end": 12.462
+    },
+    {
+     "label": "279",
+     "start": 12.462,
+     "end": 12.692
+    },
+    {
+     "label": "280",
+     "start": 12.692,
+     "end": 12.923
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "8 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 28 giorni (2), 5 giorni (1), 16 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1364761",
+    "page": 54,
+    "document": "Relazione tecnica descrittiva",
+    "excerpt": "• Fase di costruzione: durante il cantiere, che avrà una durata stimata di circa 8 mesi, si prevede l’impiego diretto di circa 200 lavoratori nel periodo di maggiore attività."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 103,
+  "pagine": 3072,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "EDURNE GREEN S.R.L.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 36.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GUBBIO",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "PG",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Umbria",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "224 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
