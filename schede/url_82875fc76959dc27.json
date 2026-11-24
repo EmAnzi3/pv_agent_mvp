@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico denominato \"Green and Blue Mortara\" (GBM) di potenza pari a 72,21 MWp da realizzare nel Comune di Mortara (PV), con linea di connessione che attraversa i Comuni di Cergnago,",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11072",
  "source": "mase",
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "sintesi": [
   {
    "key": "potenza",
@@ -62,7 +62,7 @@
    "label": "Durata cantiere",
    "value": "24 mesi",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 13 mesi (1), 10 mesi (1), 18 mesi (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 10 mesi (2), 18 mesi (2), 13 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1156875",
     "page": 60,
@@ -110,7 +110,7 @@
     {
      "type": "PEC",
      "value": "icubemortarasrl@pec.it",
-     "occurrences": 87,
+     "occurrences": 96,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1183501",
       "page": 2,
@@ -145,6 +145,33 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Icube Renewables S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "12679060967",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Piazza Bo Bardi Lina 3 20124 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "icuberenewables@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1156778",
+      "page": 1,
+      "document": "Preventivo di connessione per il Comune di Mortara (PV)",
+      "excerpt": "20124 MILANO (MI) icuberenewables@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Beshielding S.r.l.",
    "kind": "società",
@@ -196,7 +223,7 @@
     {
      "type": "E-mail",
      "value": "blueislandsas@gmail.com",
-     "occurrences": 61,
+     "occurrences": 169,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1156875",
       "page": 1,
@@ -226,6 +253,41 @@
       "page": 2,
       "document": "Integrazioni del 16/02/2026 - Relazione Geologica - Ampliamento a 36 kV della Stazione Elettrica 380 kV Pieve Albignola",
       "excerpt": "GEOPOLIS srl - 00164 Roma - Via Arnobio, 27 – robe11meni@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Acca software S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@acca.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1276526",
+      "page": 35,
+      "document": "Integrazioni del 01/07/2025 - Dimensionamento Preliminare e Calcoli",
+      "excerpt": "Tel. 0827/69504 r.a. - Fax 0827/601235 e-mail: info@acca.it - Internet: www.acca.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "082769504",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1276526",
+      "page": 35,
+      "document": "Integrazioni del 01/07/2025 - Dimensionamento Preliminare e Calcoli",
+      "excerpt": "83043 BAGNOLI IRPINO (AV) - Italy Tel. 0827/69504 r.a. - Fax 0827/601235"
      }
     }
    ],
@@ -272,7 +334,7 @@
  "registro": null,
  "tempistica": {
   "righe": [],
-  "durata_cantiere": "24 mesi",
+  "durata_cantiere": "12 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -284,15 +346,210 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "DEFINIZIONE ORDINI MATERIALI PRINCIPALI",
+    "start": 0.0,
+    "end": 0.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "APPRONTAMENTO CANTIERE",
+    "start": 0.0,
+    "end": 0.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "MOVIMENTI TERRA",
+    "start": 0.99,
+    "end": 2.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "SISTEMAZIONE AREE VERDI",
+    "start": 4.99,
+    "end": 5.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "SCAVI STRADALI",
+    "start": 6.99,
+    "end": 7.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "POSA CAVIDOTTI POZZETTI E CAVI",
+    "start": 6.99,
+    "end": 8.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "POSA PREFABBRICATI CABINE CONNESSIONE E DI SEZIONAMENTO",
+    "start": 8.99,
+    "end": 10.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "FINITURA VIABILITA' E SUP. CALPESTIO",
+    "start": 8.99,
+    "end": 9.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "CONNESSIONE LINEE E APPARECCHIATURE",
+    "start": 9.99,
+    "end": 11.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "COLLAUDI",
+    "start": 9.99,
+    "end": 10.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "MONTAGGI STRUTTURE SUPPORTO PANNELLI - MONTAGGI PANNELLI",
+    "start": 3.99,
+    "end": 7.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "POSA CAVIDOTTI POZZETTI E CAVI",
+    "start": 4.99,
+    "end": 5.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "MONTAGGI PANNELLI FOTOVOLTAICI - CABLAGGI",
+    "start": 5.99,
+    "end": 6.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "POSA PREFABBRICATO CABINE PS E CABINE CONCENTRAZIONE",
+    "start": 7.99,
+    "end": 8.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "MONTAGGI APPARECCHIATURE ELETTRICHE",
+    "start": 8.99,
+    "end": 11.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "CONNESSIONE LINEE E APPARECCHIATURE",
+    "start": 9.99,
+    "end": 10.99,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "COLLAUDI",
+    "start": 10.99,
+    "end": 11.99,
+    "level": 0,
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 11.99,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1156785",
+   "page": 2,
+   "document": "CRONOPROGRAMMA",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    }
+   ],
+   "unita": "mesi"
+  },
   "duration": {
    "text": "24 mesi",
    "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 5 settimane (2), 13 mesi (1), 20 giorni (1)",
+   "hint": "Valore prevalente negli elaborati; altri valori: 5 settimane (2), 20 giorni (2), 10 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1156875",
     "page": 60,
@@ -305,21 +562,16 @@
    "document": "CRONOPROGRAMMA",
    "url": "https://va.mite.gov.it/File/Documento/1156785"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
-  "altri": [
-   {
-    "document": "CRONOPROGRAMMA",
-    "url": "https://va.mite.gov.it/File/Documento/1156785"
-   }
-  ],
+  "note": null,
+  "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "diagramma vettoriale"
  },
  "documentazione": {
   "documenti": 318,
-  "pagine": 2249,
+  "pagine": 4653,
   "completa": false,
-  "da_leggere": 198
+  "da_leggere": 78
  },
  "confronto": [
   {
@@ -355,7 +607,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "4 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "15 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
