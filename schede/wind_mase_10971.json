@@ -1,0 +1,800 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10971",
+ "title": "Progetto di un impianto di produzione di energia elettrica da fonte eolica denominato \"Tuscania\" di potenza nominale pari a 33 MW e relative opere connesse, da realizzarsi nel comune di Tuscania (VT).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10971",
+ "source": "mase",
+ "updated": "2026-11-24",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "33 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10971",
+    "excerpt": "33 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "5",
+   "status": "da documenti",
+   "sub": "6,60 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 14 (32), 13 (16), 8 (16)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1189723",
+    "page": 2,
+    "document": "Richiesta integrazioni della Regione Lazio",
+    "excerpt": "dell’impianto eolico di progetto, denominato “Tuscania”, interessa il territorio comunale di Tuscania, in provincia di Viterbo. Il parco eolico è costituito da 5 aerogeneratori di potenza unitaria pari a 6.6 MW, in accor"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1136876",
+    "page": 27,
+    "document": "Studio di Impatto ambientale",
+    "excerpt": "notevolmente anche la generazione elettrica di fonte eolica offshore che dai 561 GWh circa proiettati"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "259 giorni (circa 9 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 155 giorni (circa 5 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1136876",
+    "page": 234,
+    "document": "Studio di Impatto ambientale",
+    "excerpt": "durante la durata del cantiere pari a 327 giorni), pertanto potrebbe esserci la necessità di bagnatura delle superfici per 259 giorni all’anno e 155 durante l’esecuzione dei lavori. Nei giorni non piovosi, in realtà, le "
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Lazio",
+  "provincia": "VT",
+  "comuni": [
+   "Tuscania"
+  ],
+  "coordinate": {
+   "lat": 42.37491,
+   "lon": 11.83298,
+   "tipo": "centro della tavola georeferenziata di progetto (81 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1136861",
+    "page": 1,
+    "document": "Stralcio Piano Regolatore Comunale",
+    "excerpt": "Stralcio Piano Regolatore Comunale"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.37491,11.83298",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Renexia S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista",
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "renexia@pec.totoholding.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1323926",
+      "page": 1,
+      "document": "Osservazioni di ARPA Lazio - Sede di Viterbo - Servizio Suoli e Bonifiche, in data 27/10/2025",
+      "excerpt": "Renexia S.p.A renexia@pec.totoholding.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "r.sticca@renexia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1230319",
+      "page": 3,
+      "document": "Riscontro alle osservazioni e pareri pervenuti",
+      "excerpt": "Per qualsiasi comunicazione o chiarimento in merito, si invitano le SV a contattare: - Rosalba Sticca, e-mail r.sticca@renexia.it , Cell. 3356313176, Tel. 08715874326"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@renexia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1230319",
+      "page": 3,
+      "document": "Riscontro alle osservazioni e pareri pervenuti",
+      "excerpt": "info@renexia.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10971"
+   }
+  },
+  {
+   "name": "F4 Ingegneria S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "01822640767",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Di Giura Centro Dir Le 85100 Potenza Pz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "f4ingegneria@pec.it",
+     "occurrences": 1379,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136876",
+      "page": 1,
+      "document": "Studio di Impatto ambientale",
+      "excerpt": "Tel: +39 0971 1944797 - Fax: +39 0971 55452 www.f4ingegneria.it - f4ingegneria@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@f4ingegneria.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136855",
+      "page": 5,
+      "document": "Prime indicazioni sulla sicurezza",
+      "excerpt": "Indirizzo e-mail: info@f4ingegneria.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "09711944797",
+     "occurrences": 100,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136876",
+      "page": 1,
+      "document": "Studio di Impatto ambientale",
+      "excerpt": "Via Di Giura - Centro direzionale, 85100 Potenza Tel: +39 0971 1944797 - Fax: +39 0971 55452"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "339097119447",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136890",
+      "page": 1,
+      "document": "Carte del piano territoriale paesistico regionale PTPR",
+      "excerpt": ". 439 Ing. Giuseppe MANZI d Tel: 3390971 1944797. Fax +39 0971 55452 Dott. For. Luigi ZUCCARO"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1136876",
+    "page": 1,
+    "document": "Studio di Impatto ambientale",
+    "excerpt": "Progettazione"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Dott. Geol. Maurizio Giacomino",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "mauriziogiacomino@gmail.com",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136903",
+      "page": 2,
+      "document": "Relazione geologica",
+      "excerpt": "Studio Tecnico di Geologia - Dott. Geol. Maurizio Giacomino Via del Ginepro, 23 – 75100 Matera - Cell. 3396629531 e-mail: mauriziogiacomino@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3396629531",
+     "occurrences": 31,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136903",
+      "page": 2,
+      "document": "Relazione geologica",
+      "excerpt": "Studio Tecnico di Geologia - Dott. Geol. Maurizio Giacomino Via del Ginepro, 23 – 75100 Matera - Cell. 3396629531 e-mail: mauriziogiacomino@gmail.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasrl.com",
+     "occurrences": 13,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136845",
+      "page": 72,
+      "document": "Studio previsionale di impatto acustico",
+      "excerpt": "www.sonorasrl.com - sonora@sonorasrl.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136845",
+      "page": 72,
+      "document": "Studio previsionale di impatto acustico",
+      "excerpt": "4 x Sonora S rl Tel 0823 351196 - Fax 0823 351196 AITTINTA NA LAT N°185"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Archeoservizi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@archeoservizi.org",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136897",
+      "page": 1,
+      "document": "V.P.I.A. Inquadramento territoriale su base IGM",
+      "excerpt": "S E R VI Z | info@archeoservizi.org"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3271616306",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1136897",
+      "page": 1,
+      "document": "V.P.I.A. Inquadramento territoriale su base IGM",
+      "excerpt": "Cell. +393271616306"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 05/02/2024, ma l'iter è proseguito; ultimo documento o atto del 13/11/2025: probabile slittamento, non ancora realizzato o in corso."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "05/02/2024 → 22/03/2028",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1136851",
+     "page": 2,
+     "document": "Cronoprogramma",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "259 giorni (circa 9 mesi)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Permitting",
+    "start": 0.0,
+    "end": 31.18,
+    "level": 0,
+    "dates": [
+     "2024-02-05",
+     "2026-09-09"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Contratto EPC",
+    "start": 31.15,
+    "end": 33.16,
+    "level": 0,
+    "dates": [
+     "2026-09-09",
+     "2026-11-08"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Cantierizzazione",
+    "start": 33.12,
+    "end": 37.11,
+    "level": 0,
+    "dates": [
+     "2026-11-08",
+     "2027-03-08"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Viabilità",
+    "start": 37.07,
+    "end": 42.04,
+    "level": 0,
+    "dates": [
+     "2027-03-08",
+     "2027-08-05"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Fondazioni",
+    "start": 41.02,
+    "end": 45.0,
+    "level": 0,
+    "dates": [
+     "2027-07-06",
+     "2027-11-03"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Sottostazione Elettrica Opere Civili",
+    "start": 37.07,
+    "end": 39.74,
+    "level": 0,
+    "dates": [
+     "2027-03-08",
+     "2027-05-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Sottostazione Elettrica Opere Elettromeccaniche",
+    "start": 38.06,
+    "end": 40.72,
+    "level": 0,
+    "dates": [
+     "2027-04-07",
+     "2027-06-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Cavidotti",
+    "start": 40.03,
+    "end": 44.01,
+    "level": 0,
+    "dates": [
+     "2027-06-06",
+     "2027-10-04"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio Aerogeneratori",
+    "start": 43.98,
+    "end": 47.3,
+    "level": 0,
+    "dates": [
+     "2027-10-04",
+     "2028-01-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Energizzazione",
+    "start": 47.27,
+    "end": 48.62,
+    "level": 0,
+    "dates": [
+     "2028-01-12",
+     "2028-02-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Avvio produzione",
+    "start": 48.59,
+    "end": 49.61,
+    "level": 0,
+    "dates": [
+     "2028-02-21",
+     "2028-03-22"
+    ],
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 49.61,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1136851",
+   "page": 2,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "feb 24",
+     "start": -0.132,
+     "end": 0.868
+    },
+    {
+     "label": "mar 24",
+     "start": 0.868,
+     "end": 1.868
+    },
+    {
+     "label": "apr 24",
+     "start": 1.868,
+     "end": 2.868
+    },
+    {
+     "label": "mag 24",
+     "start": 2.868,
+     "end": 3.868
+    },
+    {
+     "label": "giu 24",
+     "start": 3.868,
+     "end": 4.868
+    },
+    {
+     "label": "lug 24",
+     "start": 4.868,
+     "end": 5.868
+    },
+    {
+     "label": "ago 24",
+     "start": 5.868,
+     "end": 6.868
+    },
+    {
+     "label": "set 24",
+     "start": 6.868,
+     "end": 7.868
+    },
+    {
+     "label": "ott 24",
+     "start": 7.868,
+     "end": 8.868
+    },
+    {
+     "label": "nov 24",
+     "start": 8.868,
+     "end": 9.868
+    },
+    {
+     "label": "dic 24",
+     "start": 9.868,
+     "end": 10.868
+    },
+    {
+     "label": "gen 25",
+     "start": 10.868,
+     "end": 11.868
+    },
+    {
+     "label": "feb 25",
+     "start": 11.868,
+     "end": 12.868
+    },
+    {
+     "label": "mar 25",
+     "start": 12.868,
+     "end": 13.868
+    },
+    {
+     "label": "apr 25",
+     "start": 13.868,
+     "end": 14.868
+    },
+    {
+     "label": "mag 25",
+     "start": 14.868,
+     "end": 15.868
+    },
+    {
+     "label": "giu 25",
+     "start": 15.868,
+     "end": 16.868
+    },
+    {
+     "label": "lug 25",
+     "start": 16.868,
+     "end": 17.868
+    },
+    {
+     "label": "ago 25",
+     "start": 17.868,
+     "end": 18.868
+    },
+    {
+     "label": "set 25",
+     "start": 18.868,
+     "end": 19.868
+    },
+    {
+     "label": "ott 25",
+     "start": 19.868,
+     "end": 20.868
+    },
+    {
+     "label": "nov 25",
+     "start": 20.868,
+     "end": 21.868
+    },
+    {
+     "label": "dic 25",
+     "start": 21.868,
+     "end": 22.868
+    },
+    {
+     "label": "gen 26",
+     "start": 22.868,
+     "end": 23.868
+    },
+    {
+     "label": "feb 26",
+     "start": 23.868,
+     "end": 24.868
+    },
+    {
+     "label": "mar 26",
+     "start": 24.868,
+     "end": 25.868
+    },
+    {
+     "label": "apr 26",
+     "start": 25.868,
+     "end": 26.868
+    },
+    {
+     "label": "mag 26",
+     "start": 26.868,
+     "end": 27.868
+    },
+    {
+     "label": "giu 26",
+     "start": 27.868,
+     "end": 28.868
+    },
+    {
+     "label": "lug 26",
+     "start": 28.868,
+     "end": 29.868
+    },
+    {
+     "label": "ago 26",
+     "start": 29.868,
+     "end": 30.868
+    },
+    {
+     "label": "set 26",
+     "start": 30.868,
+     "end": 31.868
+    },
+    {
+     "label": "ott 26",
+     "start": 31.868,
+     "end": 32.868
+    },
+    {
+     "label": "nov 26",
+     "start": 32.868,
+     "end": 33.868
+    },
+    {
+     "label": "dic 26",
+     "start": 33.868,
+     "end": 34.868
+    },
+    {
+     "label": "gen 27",
+     "start": 34.868,
+     "end": 35.868
+    },
+    {
+     "label": "feb 27",
+     "start": 35.868,
+     "end": 36.868
+    },
+    {
+     "label": "mar 27",
+     "start": 36.868,
+     "end": 37.868
+    },
+    {
+     "label": "apr 27",
+     "start": 37.868,
+     "end": 38.868
+    },
+    {
+     "label": "mag 27",
+     "start": 38.868,
+     "end": 39.868
+    },
+    {
+     "label": "giu 27",
+     "start": 39.868,
+     "end": 40.868
+    },
+    {
+     "label": "lug 27",
+     "start": 40.868,
+     "end": 41.868
+    },
+    {
+     "label": "ago 27",
+     "start": 41.868,
+     "end": 42.868
+    },
+    {
+     "label": "set 27",
+     "start": 42.868,
+     "end": 43.868
+    },
+    {
+     "label": "ott 27",
+     "start": 43.868,
+     "end": 44.868
+    },
+    {
+     "label": "nov 27",
+     "start": 44.868,
+     "end": 45.868
+    },
+    {
+     "label": "dic 27",
+     "start": 45.868,
+     "end": 46.868
+    },
+    {
+     "label": "gen 28",
+     "start": 46.868,
+     "end": 47.868
+    },
+    {
+     "label": "feb 28",
+     "start": 47.868,
+     "end": 48.868
+    },
+    {
+     "label": "mar 28",
+     "start": 48.868,
+     "end": 49.868
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "259 giorni (circa 9 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 155 giorni (circa 5 mesi) (1), 10 giorni (1), 5 giorni (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1136876",
+    "page": 234,
+    "document": "Studio di Impatto ambientale",
+    "excerpt": "durante la durata del cantiere pari a 327 giorni), pertanto potrebbe esserci la necessità di bagnatura delle superfici per 259 giorni all’anno e 155 durante l’esecuzione dei lavori. Nei giorni non piovosi, in realtà, le "
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1136851"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 131,
+  "pagine": 2692,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Renexia S.p.A.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 33.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TUSCANIA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "VT",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Lazio",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 05/02/2024, ma l'iter è proseguito; ultimo documento o atto del 13/11/2025: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "62 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
