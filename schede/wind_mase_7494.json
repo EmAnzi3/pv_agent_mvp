@@ -1,0 +1,182 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7494",
+ "title": "Progetto per un impianto eolico composto da 10 aerogeneratori per un potenza complessiva di 34,65 MW, da realizzarsi nel comune di Casalduni (BN) e relative opere di connessione cosi come autorizzato dal realizzato",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7494",
+ "source": "mase",
+ "updated": "2026-11-24",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "34,65 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7494",
+    "excerpt": "34,65 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "10",
+   "status": "da documenti",
+   "sub": "3,46 MW ciascuno",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/519572",
+    "page": 1,
+    "document": "Allegato al Decreto Direttoriale - Parere CTVIA del 20/11/2020",
+    "excerpt": "Progetto: Impianto eolico composto da 10 aerogeneratori per una potenza complessiva di 34,65 MW, da"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/410744",
+    "page": 77,
+    "document": "PIANO DI UTILIZZO DELLE TERRE E ROCCE DA SCAVO",
+    "excerpt": "5.2.98 o D.M. 27.9.10 secondo specificità. La durata del presente piano è definita in 24 mesi dalla data di consegna dei lavori relativi alle opere di cui si tratta."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "BN",
+  "comuni": [
+   "Casalduni"
+  ],
+  "coordinate": {
+   "lat": 41.21751,
+   "lon": 15.07631,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/410744",
+    "page": 65,
+    "document": "PIANO DI UTILIZZO DELLE TERRE E ROCCE DA SCAVO",
+    "excerpt": "sottoprodotti sono stati individuati i seguenti siti di destinazione: 1. FRATELLI MIELE Ariano Irpino 83031 (AV) (Figura 23) – coordinate WGS84 Lat. 41.217515° N, Long. 15.076312° E."
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.21751,15.07631",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.28362,
+   "lon": 14.7135,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/410744",
+    "page": 13,
+    "document": "PIANO DI UTILIZZO DELLE TERRE E ROCCE DA SCAVO",
+    "excerpt": "476008.14"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.28362,14.71350"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Parco Eolico Casalduni House S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7494"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "24 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "24 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/410744",
+    "page": 77,
+    "document": "PIANO DI UTILIZZO DELLE TERRE E ROCCE DA SCAVO",
+    "excerpt": "5.2.98 o D.M. 27.9.10 secondo specificità. La durata del presente piano è definita in 24 mesi dalla data di consegna dei lavori relativi alle opere di cui si tratta."
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 8,
+  "pagine": 366,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Parco Eolico Casalduni House s.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 34.65,
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CASALDUNI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BN",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "11 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
