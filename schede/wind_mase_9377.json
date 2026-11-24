@@ -1,0 +1,580 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9377",
+ "title": "Progetto di un impianto di produzione di energia elettrica da fonte eolica denominato \"San Domenico\", costituito da 6 aerogeneratori, ciascuno di potenza nominale pari a 6 MW, per una potenza complessiva d'impianto di 36 MW, da realizzarsi nel Comune di Gravina in Puglia (BA), abbinato ad un sistema di accumulo e opere di connessione alla rete (cod. MYTERNA n. 202100118) ricadenti nel medesimo territorio comunale.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9377",
+ "source": "mase",
+ "updated": "2026-11-24",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "36 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9377",
+    "excerpt": "36 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "6",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 2 (2), 27 (1), 3 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/852349",
+    "page": 2,
+    "document": "Avviso al Pubblico del 31/05/2023",
+    "excerpt": "Il progetto è localizzato in Puglia, nel territorio comunale di Gravina in Puglia (Bari), e prevede l’installazione di n. 6 aerogeneratori, ciascuno di potenza nominale di 6,0 MW, per una potenza complessiva di 36,0 MW, "
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/766401",
+    "page": 31,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "communities” e impianti integrati offshore). Viene inoltre accelerato lo sviluppo di soluzione"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "24 MW / 48 MWh",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/766300",
+    "page": 26,
+    "document": "Relazione tecnica elettrica",
+    "excerpt": "dell’energia da media a bassa tensione ed il raddrizzamento della corrente da alternata a continua. Nel complesso l’impianto storage è caratterizzato da una potenza nominale pari a circa 24MW e da una capacità energetica"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "40 settimane (circa 9 mesi)",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/766402",
+    "page": 35,
+    "document": "SIA - Sintesi non tecnica",
+    "excerpt": "del parco. Il tempo previsto per la realizzazione dell’opera è pari a 40 settimane a cui vanno aggiunte altre quattro settimane per il commissioning e i ripristini finali per complessive 44 settimane."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "BA",
+  "comuni": [
+   "Gravina In Puglia"
+  ],
+  "coordinate": {
+   "lat": 40.7878,
+   "lon": 16.36667,
+   "tipo": "centro della tavola georeferenziata di progetto (134 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/766318",
+    "page": 31,
+    "document": "Relazione compatibilità idraulica",
+    "excerpt": "Relazione compatibilità idraulica"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.78780,16.36667",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "EDP Renewables Italia Holding S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "01832190035",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Lepetit 8/10 20124 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "edprenewablesitaliaholding@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828962",
+      "page": 1,
+      "document": "Controdeduzioni della Società EDP Renewables Italia Holding S.r.l. alla comunicazione prot. n. 0021120 del 04/04/2023 del Servizio Territoriale BA-BAT della Regione Puglia",
+      "excerpt": "Indirizzo PEC edprenewablesitaliaholding@legalmail.it Soggetto alla direzione ed al coordinamento di EDP RENEWABLES EUROPE S.L."
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "edprenewablesitalia@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828551",
+      "page": 1,
+      "document": "Parere della Regione Puglia del 07/04/2023",
+      "excerpt": "Via Lepetit n.8/10-MILANO edprenewablesitalia@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "026696966",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828962",
+      "page": 1,
+      "document": "Controdeduzioni della Società EDP Renewables Italia Holding S.r.l. alla comunicazione prot. n. 0021120 del 04/04/2023 del Servizio Territoriale BA-BAT della Regione Puglia",
+      "excerpt": "Sede Legale Via Roberto Lepetit 8/10 - 20124 Milano Numero REA: MI-2000304 www.edpr.com Phone +39 02 6696966 Capitale Sociale i.v. Euro 347.000,00"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9377"
+   }
+  },
+  {
+   "name": "Dott. Carlo Cibella",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1364593",
+    "page": 42,
+    "document": "Integrazioni del 03/02/2026 -SDM-PD-R48_1_Studio_geologico_signed",
+    "excerpt": "Il Geologo"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Ing. Ilaria Maria Pierri",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "ilaria.pierri@edp.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/944153",
+      "page": 4,
+      "document": "Controdeduzioni alle osservazioni dell'Associazione Bosco Difesa Grande prot. MASE n. 154899 del 29 settembre 2023",
+      "excerpt": "Il referente della pratica è l’Ing. Ilaria Maria Pierri, reperibile per telefono al numero 345 940 2678 e via e-mail ilaria.pierri@edp.com."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "ISO 9001 certificata da Bureau Veritas Italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@studiorinnovabili.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1364591",
+      "page": 1,
+      "document": "Integrazioni del 03/02/2026 -EDPR-GRV-RIA-C_2_signed",
+      "excerpt": "Azienda con sistema di gestione qualità ISO 9001 certificata da Bureau Veritas Italia S.p.A. www.studiorinnovabili.it - info@studiorinnovabili.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Lungomare N. Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "upa.bari@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828551",
+      "page": 1,
+      "document": "Parere della Regione Puglia del 07/04/2023",
+      "excerpt": "SEZIONE COORDINAMENTO DEI SERVIZI TERRITORIALI Servizio Territoriale Bari – Lungomare N. Sauro 45/47- 70121 BARI– pec: upa.bari@pec.rupar.puglia.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "servizio.foreste.ba@pec.rupar.puglia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828551",
+      "page": 1,
+      "document": "Parere della Regione Puglia del 07/04/2023",
+      "excerpt": "pec: servizio.foreste.ba@pec.rupar.puglia.it, mail: pa.manghisi@regione.puglia.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Paolo Antonio Manghisi",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0805404405",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828551",
+      "page": 1,
+      "document": "Parere della Regione Puglia del 07/04/2023",
+      "excerpt": "Servizio Territoriale Bari – Lungomare N. Sauro 45/47- 70121 BARI– pec: upa.bari@pec.rupar.puglia.it Dott. Paolo Antonio MANGHISI – P.O. “Attuazione Politiche Forestali” – tel. 080/5404405"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Francesco Savino",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "francesco.savino@edpr.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/828962",
+      "page": 3,
+      "document": "Controdeduzioni della Società EDP Renewables Italia Holding S.r.l. alla comunicazione prot. n. 0021120 del 04/04/2023 del Servizio Territoriale BA-BAT della Regione Puglia",
+      "excerpt": "I referenti della pratica sono l’Ing. Francesco Savino, reperibile per telefono al numero: 340 9393994, e-mail: francesco.savino@edpr.com, e l’Ing. Ilaria Maria Pierri, reperibile via e-mail"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "6 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Opere idrauliche",
+    "start": 0.0,
+    "end": 2.77,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti all'interno del parco",
+    "start": 0.0,
+    "end": 2.77,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Completamento della viabilità e delle piazzole",
+    "start": 2.77,
+    "end": 3.69,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere di bioingegneria",
+    "start": 2.77,
+    "end": 3.69,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione Opere di connessione a 36 Kv",
+    "start": 0.92,
+    "end": 3.69,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Montaggio degli aerogeneratori",
+    "start": 2.77,
+    "end": 5.07,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Commissioning",
+    "start": 5.07,
+    "end": 6.0,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 6.0,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/766305",
+   "page": 2,
+   "document": "Cronoprogramma dei lavori",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "19",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "20",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "21",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "22",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "23",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "24",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "25",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "26",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "27",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "28",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "29",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "30",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "31",
+     "start": 2.769,
+     "end": 3.0
+    },
+    {
+     "label": "32",
+     "start": 3.0,
+     "end": 3.231
+    },
+    {
+     "label": "33",
+     "start": 3.231,
+     "end": 3.462
+    },
+    {
+     "label": "34",
+     "start": 3.462,
+     "end": 3.692
+    },
+    {
+     "label": "35",
+     "start": 3.692,
+     "end": 3.923
+    },
+    {
+     "label": "36",
+     "start": 3.923,
+     "end": 4.154
+    },
+    {
+     "label": "37",
+     "start": 4.154,
+     "end": 4.385
+    },
+    {
+     "label": "38",
+     "start": 4.385,
+     "end": 4.615
+    },
+    {
+     "label": "39",
+     "start": 4.615,
+     "end": 4.846
+    },
+    {
+     "label": "40",
+     "start": 4.846,
+     "end": 5.077
+    },
+    {
+     "label": "41",
+     "start": 5.077,
+     "end": 5.308
+    },
+    {
+     "label": "42",
+     "start": 5.308,
+     "end": 5.538
+    },
+    {
+     "label": "43",
+     "start": 5.538,
+     "end": 5.769
+    },
+    {
+     "label": "44",
+     "start": 5.769,
+     "end": 6.0
+    }
+   ],
+   "unita": "settimane"
+  },
+  "duration": {
+   "text": "15 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 40 settimane (circa 9 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/766312",
+    "page": 68,
+    "document": "Prime indicazioni di sicurezza",
+    "excerpt": "I lavori hanno inizio dopo l’esito positivo delle suddette verifiche che sono effettuate tempestivamente e comunque non oltre 15 giorni dall’avvenuta ricezione. Sarà compito dell’impresa appaltatrice, dandone evidenza og"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma dei lavori",
+   "url": "https://va.mite.gov.it/File/Documento/766305"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma delle opere di dismissione",
+    "url": "https://va.mite.gov.it/File/Documento/766306"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 171,
+  "pagine": 3469,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "EDP Renewables Italia Holding s.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 36.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "GRAVINA IN PUGLIA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "BA",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "89 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
