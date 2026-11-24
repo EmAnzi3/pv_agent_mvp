@@ -1,0 +1,773 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10367",
+ "title": "Progetto di un impianto eolico denominato \"CHIARAMONTI\" da 34 MW in Località Strada di Santa Giusta, Comuni di Chiaramonti e Ploaghe (SS), con opere di connessione alla RTN.",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10367",
+ "source": "mase",
+ "updated": "2026-11-24",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "34 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10367",
+    "excerpt": "34 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "5",
+   "status": "da verificare",
+   "sub": "6,80 MW ciascuno · altezza mozzo 114 m · diametro rotore 172 m · Valore più ricorrente negli elaborati; altri valori: 1 (44), 4 (39), 2 (7)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/939926",
+    "page": 2,
+    "document": "Avviso al Pubblico del 01/12/2023",
+    "excerpt": "e prevede la realizzazione di un nuovo Parco Eolico della potenza complessiva di 34 MW, che prevede l’installazione di n. 5 aerogeneratori da 6,8 MW con relative opere di connessione."
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "120 giorni (circa 4 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 13 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/939868",
+    "page": 13,
+    "document": "Piano di dismissione",
+    "excerpt": "o Costo totale previsto per la dismissione_€ 9.637.702,22 Il tempo necessario per la realizzazione degli interventi è stimato in circa 120 giorni lavorativi. La durata delle operazioni è obbligata dai tempi dettati dalle"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SS",
+  "comuni": [
+   "Chiaramonti",
+   "Ploaghe"
+  ],
+  "coordinate": {
+   "lat": 40.72805,
+   "lon": 8.80721,
+   "tipo": "centro della tavola georeferenziata di progetto (21 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/979977",
+    "page": 2,
+    "document": "Integrazioni del 30/01/2024 - Beni paesaggistici Art.143 D.LGS. 42/04 e repertorio del mosaico dei beni paesaggistici",
+    "excerpt": "Integrazioni del 30/01/2024 - Beni paesaggistici Art.143 D.LGS. 42/04 e repertorio del mosaico dei beni paesaggistici"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.72805,8.80721",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Poveglia Wind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "povegliawindsrl@legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/979975",
+      "page": 1,
+      "document": "Integrazioni del 30/01/2024 - Richiesta cartografia vegetazione boschiva",
+      "excerpt": "Da: povegliawindsrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10367"
+   }
+  },
+  {
+   "name": "Sedini S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/939842",
+    "page": 9,
+    "document": "Computo metrico estimativo",
+    "excerpt": "COMMITTENTE: SEDINI S.R.L. A R I P O R T A R E"
+   }
+  },
+  {
+   "name": "Ing. Laura Maria Conti",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/939902",
+    "page": 1,
+    "document": "Studio di impatto ambientale",
+    "excerpt": "Progettista Ing. Laura Maria Conti – Ordine Ing. Prov. Pavia n. 1726"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Montana S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10414270156",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Angelo Carlo Fumagalli 6 20143 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "posta-certificata@pec.aruba.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/979975",
+      "page": 2,
+      "document": "Integrazioni del 30/01/2024 - Richiesta cartografia vegetazione boschiva",
+      "excerpt": "Da: posta-certificata@pec.aruba.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "025418173",
+     "occurrences": 55,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/979982",
+      "page": 1,
+      "document": "Integrazioni del 30/01/2024 - Punti di vista e fotosimulazioni emergenze archeologiche",
+      "excerpt": "Montana S.p.A Tel. +39.02.5418173"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Wind S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "31ed3359.00076fce.3680929d.e6649bac.posta-certificata@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/979975",
+      "page": 2,
+      "document": "Integrazioni del 30/01/2024 - Richiesta cartografia vegetazione boschiva",
+      "excerpt": "è stato consegnato nella casella di destinazione. Identificativo messaggio: 31ED3359.00076FCE.3680929D.E6649BAC.posta-certificata@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Concrete S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0498754720",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/939857",
+      "page": 25,
+      "document": "Relazione struttutre",
+      "excerpt": "http://www.concrete.it Rivenditore: CONCRETE SRL - Via della Pieve 19 - 35121 Padova - tel.049-8754720"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "3 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "PROGETTAZIONE ESECUTIVA",
+    "start": 0.0,
+    "end": 0.58,
+    "level": 0,
+    "summary": false,
+    "duration": "10 g"
+   },
+   {
+    "name": "indagini",
+    "start": 0.0,
+    "end": 0.18,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "redazione progetto",
+    "start": 0.11,
+    "end": 0.58,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "ESECUZIONE LAVORI",
+    "start": 0.57,
+    "end": 2.88,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "adeguamento viabilità esistente",
+    "start": 0.57,
+    "end": 0.81,
+    "level": 0,
+    "summary": false,
+    "duration": "4 g"
+   },
+   {
+    "name": "approvigionamento materiali",
+    "start": 0.63,
+    "end": 1.5,
+    "level": 0,
+    "summary": false,
+    "duration": "15 g"
+   },
+   {
+    "name": "Realizzazione piste e piazzole",
+    "start": 0.69,
+    "end": 1.56,
+    "level": 0,
+    "summary": false,
+    "duration": "15 g"
+   },
+   {
+    "name": "pista CHR01",
+    "start": 0.69,
+    "end": 0.75,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola CHR01",
+    "start": 0.75,
+    "end": 0.87,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista CHR02",
+    "start": 0.86,
+    "end": 0.92,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola CHR02",
+    "start": 0.92,
+    "end": 1.04,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista CHR03",
+    "start": 1.03,
+    "end": 1.1,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola CHR03",
+    "start": 1.09,
+    "end": 1.21,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista CHR04",
+    "start": 1.21,
+    "end": 1.27,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola CHR04",
+    "start": 1.26,
+    "end": 1.38,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "pista CHR05",
+    "start": 1.38,
+    "end": 1.44,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola CHR05",
+    "start": 1.44,
+    "end": 1.56,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "Realizzazione fondazioni",
+    "start": 0.86,
+    "end": 1.67,
+    "level": 0,
+    "summary": false,
+    "duration": "14 g"
+   },
+   {
+    "name": "fondazione CHR01",
+    "start": 0.86,
+    "end": 1.33,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione CHR02",
+    "start": 0.98,
+    "end": 1.44,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione CHR03",
+    "start": 1.09,
+    "end": 1.56,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione CHR04",
+    "start": 1.21,
+    "end": 1.67,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "fondazione CHR05",
+    "start": 1.32,
+    "end": 1.79,
+    "level": 0,
+    "summary": false,
+    "duration": "8 g"
+   },
+   {
+    "name": "Montaggio torri",
+    "start": 1.32,
+    "end": 1.96,
+    "level": 0,
+    "summary": false,
+    "duration": "11 g"
+   },
+   {
+    "name": "Montaggio torre CHR01",
+    "start": 1.32,
+    "end": 1.5,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre CHR02",
+    "start": 1.44,
+    "end": 1.62,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre CHR03",
+    "start": 1.55,
+    "end": 1.73,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre CHR04",
+    "start": 1.67,
+    "end": 1.85,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Montaggio torre CHR05",
+    "start": 1.78,
+    "end": 1.96,
+    "level": 0,
+    "summary": false,
+    "duration": "3 g"
+   },
+   {
+    "name": "Posa cavi",
+    "start": 0.57,
+    "end": 2.88,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "connessioni interne al parco",
+    "start": 0.57,
+    "end": 2.77,
+    "level": 0,
+    "summary": false,
+    "duration": "38 g"
+   },
+   {
+    "name": "connessione cabina di con./ cabina MT step-up 30/36",
+    "start": 0.57,
+    "end": 2.88,
+    "level": 0,
+    "summary": false,
+    "duration": "40 g"
+   },
+   {
+    "name": "Opere per connessione RTN",
+    "start": 0.0,
+    "end": 2.88,
+    "level": 0,
+    "summary": false,
+    "duration": "50 g"
+   },
+   {
+    "name": "Ripristini e dismissione cantiere",
+    "start": 1.78,
+    "end": 2.42,
+    "level": 0,
+    "summary": false,
+    "duration": "11 g"
+   },
+   {
+    "name": "piazzola CHR01",
+    "start": 1.78,
+    "end": 1.9,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "strada esercizio CHR01",
+    "start": 1.9,
+    "end": 1.96,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola CHR02",
+    "start": 1.9,
+    "end": 2.02,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "strada esercizio CHR02",
+    "start": 2.01,
+    "end": 2.08,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola CHR03",
+    "start": 2.01,
+    "end": 2.13,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "strada esercizio CHR03",
+    "start": 2.13,
+    "end": 2.19,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola CHR04",
+    "start": 2.13,
+    "end": 2.25,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "strada esercizio CHR04",
+    "start": 2.25,
+    "end": 2.31,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "piazzola CHR05",
+    "start": 2.25,
+    "end": 2.37,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   },
+   {
+    "name": "strada esercizio CHR05",
+    "start": 2.36,
+    "end": 2.42,
+    "level": 0,
+    "summary": false,
+    "duration": "1 g"
+   },
+   {
+    "name": "COMMISSIONING E AVVIAMENTO",
+    "start": 2.01,
+    "end": 3.0,
+    "level": 0,
+    "summary": false,
+    "duration": "16 g"
+   },
+   {
+    "name": "Commissioning, test e collaudi",
+    "start": 2.01,
+    "end": 2.88,
+    "level": 0,
+    "summary": false,
+    "duration": "15 g"
+   },
+   {
+    "name": "Start up",
+    "start": 2.88,
+    "end": 3.0,
+    "level": 0,
+    "summary": false,
+    "duration": "2 g"
+   }
+  ],
+  "unit": "month",
+  "months": 3.0,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/939858",
+   "page": 8,
+   "document": "Cronoprogramma",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.231
+    },
+    {
+     "label": "2",
+     "start": 0.231,
+     "end": 0.462
+    },
+    {
+     "label": "3",
+     "start": 0.462,
+     "end": 0.692
+    },
+    {
+     "label": "4",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "label": "5",
+     "start": 0.923,
+     "end": 1.154
+    },
+    {
+     "label": "6",
+     "start": 1.154,
+     "end": 1.385
+    },
+    {
+     "label": "7",
+     "start": 1.385,
+     "end": 1.615
+    },
+    {
+     "label": "8",
+     "start": 1.615,
+     "end": 1.846
+    },
+    {
+     "label": "9",
+     "start": 1.846,
+     "end": 2.077
+    },
+    {
+     "label": "10",
+     "start": 2.077,
+     "end": 2.308
+    },
+    {
+     "label": "11",
+     "start": 2.308,
+     "end": 2.538
+    },
+    {
+     "label": "12",
+     "start": 2.538,
+     "end": 2.769
+    },
+    {
+     "label": "13",
+     "start": 2.769,
+     "end": 3.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "120 giorni (circa 4 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 13 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/939868",
+    "page": 13,
+    "document": "Piano di dismissione",
+    "excerpt": "o Costo totale previsto per la dismissione_€ 9.637.702,22 Il tempo necessario per la realizzazione degli interventi è stimato in circa 120 giorni lavorativi. La durata delle operazioni è obbligata dai tempi dettati dalle"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/939858"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 108,
+  "pagine": 2102,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Poveglia Wind S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 34.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "CHIARAMONTI, PLOAGHE",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SS",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "58 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
