@@ -5,14 +5,14 @@
  "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"Lama di Pozzo\", di potenza pari a 40,396 MW e delle relative opere di connessione alla RTN, da realizzarsi in zona agricola nei comuni di Castellaneta",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10527",
  "source": "mase",
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
    "value": "40,396 MW",
-   "sub": null,
+   "sub": "Suddivisa in 4 lotti",
    "source": {
     "document": "titolo del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10527",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "91,256 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 80,584 ha (1), 98,56 ha (1), 200,043 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 200,043 ha (3), 116,146 ha (2), 80,584 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1161616",
     "page": 3,
@@ -45,11 +45,24 @@
    }
   },
   {
+   "key": "pannelli",
+   "label": "Superficie coperta dai pannelli",
+   "value": "12,82 ha",
+   "status": "da documenti",
+   "sub": "14% dell'area",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1074822",
+    "page": 1,
+    "document": "LAYOUT SU BASE CTR BLOCCO 4",
+    "excerpt": "NUMERO SOTTOCAMPI : 7 SUPERFICIE OCCUPATA DAI PANNELLI : 12,82 Ha SUPERFICIE OCCUPATA DALLA VIABILITA' INTERNA : 2,96 Ha"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "26 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (1), 8 mesi (1)",
+   "sub": "Inizio lavori 01/01/2025 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 12 mesi (1), 8 mesi (1), 6 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1448270",
     "page": 15,
@@ -66,17 +79,17 @@
    "Ginosa"
   ],
   "coordinate": {
-   "lat": 40.48528,
-   "lon": 16.81673,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (6 riferimenti concordi)",
+   "lat": 40.48702,
+   "lon": 16.84078,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (19 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1074883",
-    "page": 173,
-    "document": "STUDIO DI IMPATTO AMBIENTALE",
-    "excerpt": "BLOCCO 1 16° 50' 17\" E, 40° 27' 32\" N; BLOCCO 2 16° 51' 6\" E, 40° 28' 54\" N; BLOCCO 3 16° 51' 16\" E, 40° 29' 43\" N;"
+    "url": "https://va.mite.gov.it/File/Documento/1074807",
+    "page": 7,
+    "document": "RELAZIONE GEOLOGICA E GEOTECNICA E SISMICA",
+    "excerpt": "656010,477"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.48528,16.81673",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.48702,16.84078",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -95,9 +108,9 @@
    },
    {
     "lotto": "Blocco 2",
-    "lat": 40.48167,
-    "lon": 16.85444,
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=40.48167,16.85444",
+    "lat": 40.48394,
+    "lon": 16.84968,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=40.48394,16.84968",
     "source": {
      "url": "https://va.mite.gov.it/File/Documento/1074883",
      "page": 173,
@@ -135,7 +148,7 @@
     {
      "type": "PEC",
      "value": "castellanetapvsrl@pec.it",
-     "occurrences": 64,
+     "occurrences": 186,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1074883",
       "page": 1,
@@ -146,7 +159,7 @@
     {
      "type": "Telefono",
      "value": "0284571972",
-     "occurrences": 64,
+     "occurrences": 181,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1074883",
       "page": 1,
@@ -164,7 +177,6 @@
    "name": "X-ELIO Emena S.r.l.",
    "kind": "società",
    "roles": [
-    "Proponente",
     "Progettista"
    ],
    "vat": null,
@@ -178,7 +190,7 @@
      "value": "068412640",
      "occurrences": 19,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1074690",
+      "url": "https://va.mite.gov.it/File/Documento/1074740",
       "page": 1,
       "document": "Relazione Tecnica",
       "excerpt": "Via Lima n.48 00198 ROMA Tel.+39 06.8412640 - Fax +39 06.8551726"
@@ -186,15 +198,15 @@
     }
    ],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1074690",
+    "url": "https://va.mite.gov.it/File/Documento/1074725",
     "page": 1,
-    "document": "Relazione Tecnica",
-    "excerpt": "Committente X-ELIO EMENA S.r.l."
+    "document": "CTR OPERE ATTRAVERSATE",
+    "excerpt": "PROGETTISTA: X-ELIO EMENA S.r.l."
    }
   },
   {
-   "name": "PLC System S.r.l.",
-   "kind": "società",
+   "name": "Ing. Vasco Piccoli",
+   "kind": "persona",
    "roles": [
     "Progettista"
    ],
@@ -205,14 +217,106 @@
    "office": null,
    "contacts": [],
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1074690",
+    "url": "https://va.mite.gov.it/File/Documento/1074844",
     "page": 1,
-    "document": "Relazione Tecnica",
-    "excerpt": "Progettista PLC SYSTEM S.r.l. Via delle Industrie, 100 Zona ASI - Località Pantano 80011 - Acerra (NA) Italia"
+    "document": "INQUADRAMENTO IGM - PTO RTN",
+    "excerpt": "Progettista Ing. Vasco Piccoli"
    }
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Geosolution S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03031400736",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via S Francesco P Co Valentino C/3 74011 Castellaneta Ta",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "geosolutionsrl@pec.it",
+     "occurrences": 91,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074808",
+      "page": 3,
+      "document": "RELAZIONE IDROGIOLOGICA E IDRAULICA",
+      "excerpt": "Via San Francesco - Parco Valentino C/3 – 74011 Castellaneta (TA) – P.I. 03031400736 Tel. 3203372247 - email geosolutionsrl@gmail.com – PEC: geosolutionsrl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "geosolutionsrl@gmail.com",
+     "occurrences": 91,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074808",
+      "page": 3,
+      "document": "RELAZIONE IDROGIOLOGICA E IDRAULICA",
+      "excerpt": "Via San Francesco - Parco Valentino C/3 – 74011 Castellaneta (TA) – P.I. 03031400736 Tel. 3203372247 - email geosolutionsrl@gmail.com – PEC: geosolutionsrl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "GSB Consulting S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "11882750968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Passo Rolle 9 20134 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gsbconsultingsrl@pec.it",
+     "occurrences": 24,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074844",
+      "page": 1,
+      "document": "INQUADRAMENTO IGM - PTO RTN",
+      "excerpt": "P.IVA 11882750968 pec: gsbconsultingsrl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Gamma Orione S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "11467080963",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Bernina 7 20158 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gammaorione@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074870",
+      "page": 2,
+      "document": "NOTA ESPLICATIVA PTO OPERE DI LINEA E SE",
+      "excerpt": "La società Gamma Orione S.r.l., con sede legale in Milano (MI), Via Mercato 3, P.IVA: 11467080963, PEC:gammaorione@legalmail.it, in persona del suo Legale Rappresentante Gugliota Giampiero"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Greenergy S.r.l.",
    "kind": "società",
@@ -237,7 +341,7 @@
     {
      "type": "E-mail",
      "value": "info@greenergy.it",
-     "occurrences": 72,
+     "occurrences": 164,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1074883",
       "page": 1,
@@ -248,7 +352,7 @@
     {
      "type": "Telefono",
      "value": "0998441860",
-     "occurrences": 64,
+     "occurrences": 156,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1074883",
       "page": 1,
@@ -258,14 +362,91 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Falck Renewables Sviluppo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "renantis.italia@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074870",
+      "page": 2,
+      "document": "NOTA ESPLICATIVA PTO OPERE DI LINEA E SE",
+      "excerpt": "sede legale in Corso Italia 3, Milano iscritta al Registro Imprese di Milano Monza Brianza Lodi REA MI 1675378 - PEC renantis.italia@legalmail.it in persona del legale rappresentante Carmelo Scalone,"
+     }
+    }
+   ],
+   "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 01/01/2025, ma l'iter è proseguito; ultimo documento o atto del 17/11/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": "26 mesi",
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "23/06/2016",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1074800",
+     "page": 49,
+     "document": "RELAZIONE TECNICA DESCRITTIVA",
+     "excerpt": "debbano prevedere una durata pari a 20 anni a partire dalla data di entrata in esercizio commerciale dell'impianto, come previsto dal D.M. del 23.06.2016. •"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "01/01/2025",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1074868",
+     "page": 2,
+     "document": "CRONOPROGRAMMA - PTO UTENTE",
+     "excerpt": "Apertura cantiere rete MT 01/01/2025 11/01/2025"
+    }
+   },
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "01/01/2025 → 01/10/2025",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1074868",
+     "page": 2,
+     "document": "CRONOPROGRAMMA - PTO UTENTE",
+     "excerpt": ""
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di ottobre 2025",
+    "dettaglio": "inizio indicato nei documenti + durata del cantiere: 9 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1074868",
+     "page": 2,
+     "document": "CRONOPROGRAMMA - PTO UTENTE",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "9 mesi (cronoprogramma)",
   "autorizzazione": null,
   "note": [
    "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
@@ -277,46 +458,350 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "A RETE MT",
+    "start": 0.0,
+    "end": 4.64,
+    "level": 0,
+    "dates": [
+     "2025-01-01",
+     "2025-05-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Apertura cantiere rete MT",
+    "start": 0.0,
+    "end": 0.36,
+    "level": 0,
+    "dates": [
+     "2025-01-01",
+     "2025-01-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Realizzazione trincea di scavo",
+    "start": 0.36,
+    "end": 2.37,
+    "level": 0,
+    "dates": [
+     "2025-01-12",
+     "2025-03-13"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Posa in opera cavo ed esecuzione giunti",
+    "start": 2.37,
+    "end": 4.38,
+    "level": 0,
+    "dates": [
+     "2025-03-14",
+     "2025-05-13"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Prove cavi MT",
+    "start": 4.38,
+    "end": 4.64,
+    "level": 0,
+    "dates": [
+     "2025-05-14",
+     "2025-05-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "B STAZIONE 30/150kV",
+    "start": 0.0,
+    "end": 7.99,
+    "level": 0,
+    "dates": [
+     "2025-01-01",
+     "2025-08-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Apertura cantiere stazione 30/150kV",
+    "start": 0.0,
+    "end": 0.36,
+    "level": 0,
+    "dates": [
+     "2025-01-01",
+     "2025-01-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Posa rete di terra",
+    "start": 1.38,
+    "end": 1.91,
+    "level": 0,
+    "dates": [
+     "2025-02-12",
+     "2025-02-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Opere civile di stazione",
+    "start": 1.91,
+    "end": 4.57,
+    "level": 0,
+    "dates": [
+     "2025-02-28",
+     "2025-05-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Costruzione edificio Quadri e SA",
+    "start": 2.24,
+    "end": 4.9,
+    "level": 0,
+    "dates": [
+     "2025-03-10",
+     "2025-05-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio apparecchiature AT",
+    "start": 4.9,
+    "end": 5.92,
+    "level": 0,
+    "dates": [
+     "2025-05-30",
+     "2025-06-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio Trasformatori",
+    "start": 5.92,
+    "end": 6.28,
+    "level": 0,
+    "dates": [
+     "2025-06-30",
+     "2025-07-10"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Montaggio sistema di controllo",
+    "start": 6.28,
+    "end": 7.63,
+    "level": 0,
+    "dates": [
+     "2025-07-11",
+     "2025-08-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Prove stazione",
+    "start": 7.63,
+    "end": 7.99,
+    "level": 0,
+    "dates": [
+     "2025-08-21",
+     "2025-08-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "C ELETTRODOTTO 150kV IN CAVO",
+    "start": 0.0,
+    "end": 2.11,
+    "level": 0,
+    "dates": [
+     "2025-01-01",
+     "2025-03-05"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Realizzazione trincea di scavo",
+    "start": 0.36,
+    "end": 1.38,
+    "level": 0,
+    "dates": [
+     "2025-01-12",
+     "2025-02-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Posa in opera cavo ed esecuzione giunti",
+    "start": 1.38,
+    "end": 1.91,
+    "level": 0,
+    "dates": [
+     "2025-02-12",
+     "2025-02-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Prove cavi AT",
+    "start": 1.91,
+    "end": 2.11,
+    "level": 0,
+    "dates": [
+     "2025-02-28",
+     "2025-03-05"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Collegamento con stazione Terna",
+    "start": 2.11,
+    "end": 2.3,
+    "level": 0,
+    "dates": [
+     "2025-03-06",
+     "2025-03-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "ATTIVAZIONE Parco Fotovoltaico",
+    "start": 7.99,
+    "end": 9.01,
+    "level": 0,
+    "dates": [
+     "2025-09-01",
+     "2025-10-01"
+    ],
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 9.01,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1074868",
+   "page": 2,
+   "document": "CRONOPROGRAMMA - PTO UTENTE",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "gen 25",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "feb 25",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "mar 25",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "apr 25",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "mag 25",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "giu 25",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "lug 25",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "ago 25",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "set 25",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "ott 25",
+     "start": 9.0,
+     "end": 10.0
+    }
+   ],
+   "unita": null
+  },
   "duration": {
-   "text": "26 mesi",
+   "text": "90 giorni (circa 3 mesi)",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (1), 8 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 26 mesi (1), 12 mesi (1), 8 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1448270",
-    "page": 15,
-    "document": "Allegato al Decreto Direttoriale - Parere CT PNRR-PNIEC del 04/09/2026",
-    "excerpt": "61'249'196 €. Dall’ottenimento dell’autorizzazione le attività di progettazione esecutiva, approvvigionamento materiali, stipula servitù e realizzazione avranno una durata prevista, stimata dal Proponente pari a circa 26"
+    "url": "https://va.mite.gov.it/File/Documento/1074800",
+    "page": 179,
+    "document": "RELAZIONE TECNICA DESCRITTIVA",
+    "excerpt": "La realizzazione di servizi igienico-sanitari considerando la durata dei lavori di cantiere superiore ai 90 giorni; •"
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "23/06/2016",
+    "iso": "2016-06-23",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1074800",
+     "page": 49,
+     "document": "RELAZIONE TECNICA DESCRITTIVA",
+     "excerpt": "debbano prevedere una durata pari a 20 anni a partire dalla data di entrata in esercizio commerciale dell'impianto, come previsto dal D.M. del 23.06.2016. •"
+    }
+   },
+   {
+    "label": "Inizio lavori",
+    "date": "01/01/2025",
+    "iso": "2025-01-01",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1074868",
+     "page": 2,
+     "document": "CRONOPROGRAMMA - PTO UTENTE",
+     "excerpt": "Apertura cantiere rete MT 01/01/2025 11/01/2025"
+    }
+   }
+  ],
   "document": {
    "document": "CRONOPROGRAMMA - PTO RTN",
    "url": "https://va.mite.gov.it/File/Documento/1074859"
   },
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "note": null,
   "altri": [
    {
     "document": "CRONOPROGRAMMA - PTO RTN",
     "url": "https://va.mite.gov.it/File/Documento/1074859"
-   },
-   {
-    "document": "CRONOPROGRAMMA - PTO UTENTE",
-    "url": "https://va.mite.gov.it/File/Documento/1074868"
    }
   ],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "tabella con date"
  },
  "documentazione": {
   "documenti": 243,
-  "pagine": 1297,
+  "pagine": 3100,
   "completa": false,
-  "da_leggere": 123
+  "da_leggere": 3
  },
  "confronto": [
   {
@@ -347,6 +832,10 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 01/01/2025, ma l'iter è proseguito; ultimo documento o atto del 17/11/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
    "label": "Superficie complessiva",
    "reason": "valori diversi negli elaborati"
   },
@@ -356,7 +845,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "122 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "250 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
