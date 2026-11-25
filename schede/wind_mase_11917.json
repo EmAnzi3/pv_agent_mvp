@@ -1,0 +1,764 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11917",
+ "title": "Progetto di un impianto di produzione di energia elettrica da fonte eolica denominato \"Tenuta Giovanna\" ubicato nel Comune di Montalto di Castro (VT), costituito da n. 5 aerogeneratori di potenza unitaria di 6,20 MW, per una potenza complessiva dell'impianto di 31,00 MW e delle relative opere di connessione con la RTN che interessano potenzialmente anche il Comune di Tuscania (VT) (cod. MYTERNA 202502295).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11917",
+ "source": "mase",
+ "updated": "2026-11-25",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "31 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11917",
+    "excerpt": "31 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "5",
+   "status": "da documenti",
+   "sub": "6,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 8 (14), 9 (8), 14 (5)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387066",
+    "page": 2,
+    "document": "Avviso al pubblico del 06/05/2026",
+    "excerpt": "del vento da ubicarsi in località Tenuta Giovanna, nel comune di Tuscania e Montalto di Castro (VT) costituito da n. 5 aerogeneratori di potenza unitaria 6.2 MW, per una potenza complessiva dell’impianto di 31 MW."
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1399671",
+    "page": 36,
+    "document": "Osservazioni del Signor Adrian Moss, in data 08/06/2026",
+    "excerpt": "instance, the UK Government aims to expand offshore wind capacity to"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "15 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 27,6 MW (2), 6,2 MW (1), 55,8 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387077",
+    "page": 103,
+    "document": "VALUTAZIONE PREVISIONALE DI IMPATTO ACUSTICO",
+    "excerpt": "nominale pari a 6,2 MW, per una potenza complessiva di 55,80 MW e da un sistema di accumulo da 15 MW, in località \"Poggio dell'Oro\" nel comune di Tuscania (VT) e opere connesse anche nel comune di Tarquinia (VT) - Propon"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "245 giorni (circa 8 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (1), 180 giorni (circa 6 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387074",
+    "page": 90,
+    "document": "Studio d'impatto ambientale Tenuta Giovanna",
+    "excerpt": "costituito dall’elaborato “TEGDG_GENL00700_00_Cronoprogramma” dal quale si evince che la durata delle lavorazioni è prevista in 245 giorni. 5.9 Fase di esercizio"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Lazio",
+  "provincia": "VT",
+  "comuni": [
+   "Montalto Di Castro",
+   "Tuscania"
+  ],
+  "coordinate": {
+   "lat": 42.33726,
+   "lon": 11.64696,
+   "tipo": "coordinate del sito dichiarate negli elaborati (17 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1386866",
+    "page": 12,
+    "document": "Relazione Geologica",
+    "excerpt": "=» Coordinate del sito di intervento: Latitudine 42,337261; Longitudine 11,646957 (coordinate geografiche sistema ED50 - gradi sessadecimali)."
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.33726,11.64696",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 42.36019,
+   "lon": 11.64922,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387074",
+    "page": 82,
+    "document": "Studio d'impatto ambientale Tenuta Giovanna",
+    "excerpt": "Coordinate WGS84 UTM32 Stazione Utente ‘Soluzione A’: 718168 N 4693169 E"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=42.36019,11.64922"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Aren Renewind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "04771210400",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Arrigoni 308 47522 Cesena Fc",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "arenrenewind@legalmail.it",
+     "occurrences": 684,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1387077",
+      "page": 2,
+      "document": "VALUTAZIONE PREVISIONALE DI IMPATTO ACUSTICO",
+      "excerpt": "Sede legale: Via dell'Arrigoni n. 308 - 47522 Cesena (FC), Italia Ph. +39 0547 415245 - email: arenrenewind@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "arenrenewindsrl@legalmail.it",
+     "occurrences": 642,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1387074",
+      "page": 2,
+      "document": "Studio d'impatto ambientale Tenuta Giovanna",
+      "excerpt": "Ph. +39 0547 415245 - email: arenrenewindsrl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "rpasrl@legalmail.it",
+     "occurrences": 47,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1386962",
+      "page": 2,
+      "document": "Relazione sulle strutture",
+      "excerpt": "Ph. +39 0547 415245 - e-mail: rpasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "adrianmoss@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1399671",
+      "page": 8,
+      "document": "Osservazioni del Signor Adrian Moss, in data 08/06/2026",
+      "excerpt": "\"Osservazioni nle procedimento della V.I.A per i progetti \"Eolico Montebello\" e \"Tenuta Giovanna\" della AREN Renewind S.r.l.\" proveniente da \"adrianmoss@pec.it\""
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0547415245",
+     "occurrences": 1364,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1387074",
+      "page": 2,
+      "document": "Studio d'impatto ambientale Tenuta Giovanna",
+      "excerpt": "Ph. +39 0547 415245 - email: arenrenewindsrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11917"
+   }
+  },
+  {
+   "name": "Sorgenia Renewables S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387077",
+    "page": 103,
+    "document": "VALUTAZIONE PREVISIONALE DI IMPATTO ACUSTICO",
+    "excerpt": "connesse anche nel comune di Tarquinia (VT) - Proponente: Sorgenia Renewables S.r.l. - Procedura: Valutazione Impatto Ambientale (PNIEC-PNRR) - Data presentazione"
+   }
+  },
+  {
+   "name": "Aren Electric Power S.p.A.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": "03803880404",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Arrigoni 308 47522 Cesena Fc",
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1409049",
+    "page": 1,
+    "document": "Integrazioni del 03/07/2026- RELAZIONE DI RISCONTRO ALLE RICHIESTE DI INTEGRAZIONE ARPALAZIO CON PROT. n. 30403 DEL 06/05/2026",
+    "excerpt": "REDAZIONE / PROGETTISTA:"
+   }
+  },
+  {
+   "name": "Tecnocreo S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tecnocreo.it",
+     "occurrences": 15,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1387070",
+      "page": 1,
+      "document": "TAVOLA FOTOSIMULAZIONI",
+      "excerpt": "Tel. 0585 876887 info@tecnocreo.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0585876887",
+     "occurrences": 14,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1387070",
+      "page": 1,
+      "document": "TAVOLA FOTOSIMULAZIONI",
+      "excerpt": "54033 Carrara (MS) Tel. 0585 876887"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387070",
+    "page": 1,
+    "document": "TAVOLA FOTOSIMULAZIONI",
+    "excerpt": "TIMBRO E FIRMA PROGETTISTA: Tecnocreo S.r.l."
+   }
+  },
+  {
+   "name": "Ing. Samuele Ulivi Ordine",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387074",
+    "page": 1,
+    "document": "Studio d'impatto ambientale Tenuta Giovanna",
+    "excerpt": "TIMBRO E FIRMA PROGETTISTA:"
+   }
+  },
+  {
+   "name": "Dott. Geol. Andrea Cricca",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "andreacricca@pec.epap.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1386866",
+      "page": 1,
+      "document": "Relazione Geologica",
+      "excerpt": "www.tecnocreo.it andreacricca@gmail.com andreacricca@pec.epap.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "andreacricca@gmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1386866",
+      "page": 1,
+      "document": "Relazione Geologica",
+      "excerpt": "www.tecnocreo.it andreacricca@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3396020461",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1386866",
+      "page": 19,
+      "document": "Relazione Geologica",
+      "excerpt": "Viale della Repubblica n.156 - 54100 Massa (MS) Cell. 339 6020461 - E-mail: andreacricca@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1409050",
+    "page": 15,
+    "document": "Integrazioni del 03/07/2026- RELAZIONE ARCHEOLOGICA MOPR",
+    "excerpt": "(Relazione geologica a cura del Dott. Geol. Andrea Cricca documento n. TEGDC_GENR03200_00)."
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Arch. Laura Masini",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "l.masini@aren-ep.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1386898",
+      "page": 5,
+      "document": "Checklist esame procedibilità istanza VIA",
+      "excerpt": "Telefono +39 0547 415245 Fax +39 0547 415274 E-mail l.masini@aren-ep.com"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "245 giorni (circa 8 mesi)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Costruzione Parco Eolico TENUTA GIOVANNA",
+    "start": 0.0,
+    "end": 0.37,
+    "level": 0,
+    "duration": "245 giorni",
+    "summary": true
+   },
+   {
+    "name": "Opere Civili",
+    "start": 0.0,
+    "end": 0.22,
+    "level": 1,
+    "duration": "147 giorni",
+    "summary": true
+   },
+   {
+    "name": "Strade e Piazzole Temporanee",
+    "start": 0.02,
+    "end": 0.09,
+    "level": 2,
+    "duration": "50 giorni",
+    "summary": false
+   },
+   {
+    "name": "Scavi e Pali WTG",
+    "start": 0.03,
+    "end": 0.06,
+    "level": 2,
+    "duration": "20 giorni",
+    "summary": false
+   },
+   {
+    "name": "Fondazioni e Rinterri WTG",
+    "start": 0.07,
+    "end": 0.1,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Scavi e Pali WTG",
+    "start": 0.06,
+    "end": 0.09,
+    "level": 2,
+    "duration": "20 giorni",
+    "summary": false
+   },
+   {
+    "name": "Fondazioni e Rinterri WTG",
+    "start": 0.1,
+    "end": 0.13,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Scavi e Pali WTG",
+    "start": 0.09,
+    "end": 0.12,
+    "level": 2,
+    "duration": "20 giorni",
+    "summary": false
+   },
+   {
+    "name": "Fondazione e Rinterri WTG",
+    "start": 0.13,
+    "end": 0.16,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Scavi e Pali WTG",
+    "start": 0.12,
+    "end": 0.15,
+    "level": 2,
+    "duration": "20 giorni",
+    "summary": false
+   },
+   {
+    "name": "Fondazione e Rinterri WTG",
+    "start": 0.16,
+    "end": 0.19,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Scavi e Pali WTG",
+    "start": 0.15,
+    "end": 0.18,
+    "level": 2,
+    "duration": "20 giorni",
+    "summary": false
+   },
+   {
+    "name": "Fondazione e Rinterri WTG",
+    "start": 0.19,
+    "end": 0.22,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Edificio Utente",
+    "start": 0.02,
+    "end": 0.07,
+    "level": 2,
+    "duration": "35 giorni",
+    "summary": false
+   },
+   {
+    "name": "Opere Elettromeccaniche",
+    "start": 0.07,
+    "end": 0.37,
+    "level": 1,
+    "duration": "199 giorni",
+    "summary": true
+   },
+   {
+    "name": "Cavidotto e FO",
+    "start": 0.11,
+    "end": 0.25,
+    "level": 2,
+    "duration": "100 giorni",
+    "summary": false
+   },
+   {
+    "name": "Impianti Elettrici Stazione Utente",
+    "start": 0.07,
+    "end": 0.11,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Installazione Quadri AT",
+    "start": 0.09,
+    "end": 0.1,
+    "level": 2,
+    "duration": "10 giorni",
+    "summary": false
+   },
+   {
+    "name": "Installazione WTG",
+    "start": 0.14,
+    "end": 0.18,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Installazione WTG",
+    "start": 0.18,
+    "end": 0.22,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Installazione WTG",
+    "start": 0.22,
+    "end": 0.26,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Installazione WTG",
+    "start": 0.26,
+    "end": 0.3,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Installazione WTG",
+    "start": 0.3,
+    "end": 0.34,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Connessione SE Terna e Prima Energizzazione",
+    "start": 0.31,
+    "end": 0.35,
+    "level": 2,
+    "duration": "25 giorni",
+    "summary": false
+   },
+   {
+    "name": "Avviamento & Collaudi",
+    "start": 0.34,
+    "end": 0.36,
+    "level": 2,
+    "duration": "15 giorni",
+    "summary": false
+   },
+   {
+    "name": "Ripristini Finali",
+    "start": 0.34,
+    "end": 0.37,
+    "level": 2,
+    "duration": "20 giorni",
+    "summary": true
+   },
+   {
+    "name": "Task Project Summary",
+    "start": 0.0,
+    "end": 0.22,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Split External Tasks",
+    "start": 0.0,
+    "end": 0.22,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "External",
+    "start": 0.09,
+    "end": 0.13,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Summary Inactive Task",
+    "start": 0.0,
+    "end": 0.13,
+    "level": 3,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1386914",
+   "page": 2,
+   "document": "Cronoprogramma delle opere",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": "Mese",
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 0.033
+    },
+    {
+     "label": "2",
+     "start": 0.033,
+     "end": 0.066
+    },
+    {
+     "label": "3",
+     "start": 0.066,
+     "end": 0.099
+    },
+    {
+     "label": "4",
+     "start": 0.099,
+     "end": 0.132
+    },
+    {
+     "label": "5",
+     "start": 0.132,
+     "end": 0.164
+    },
+    {
+     "label": "6",
+     "start": 0.164,
+     "end": 0.197
+    },
+    {
+     "label": "7",
+     "start": 0.197,
+     "end": 0.23
+    },
+    {
+     "label": "8",
+     "start": 0.23,
+     "end": 0.263
+    },
+    {
+     "label": "9",
+     "start": 0.263,
+     "end": 0.296
+    },
+    {
+     "label": "10",
+     "start": 0.296,
+     "end": 0.329
+    },
+    {
+     "label": "11",
+     "start": 0.329,
+     "end": 0.362
+    },
+    {
+     "label": "12",
+     "start": 0.362,
+     "end": 0.395
+    },
+    {
+     "label": "13",
+     "start": 0.395,
+     "end": 0.428
+    }
+   ],
+   "unita": "giorni"
+  },
+  "duration": {
+   "text": "245 giorni (circa 8 mesi)",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (1), 180 giorni (circa 6 mesi) (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1387074",
+    "page": 90,
+    "document": "Studio d'impatto ambientale Tenuta Giovanna",
+    "excerpt": "costituito dall’elaborato “TEGDG_GENL00700_00_Cronoprogramma” dal quale si evince che la durata delle lavorazioni è prevista in 245 giorni. 5.9 Fase di esercizio"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma delle opere",
+   "url": "https://va.mite.gov.it/File/Documento/1386914"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 240,
+  "pagine": 2568,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Aren Renewind S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 31.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MONTALTO DI CASTRO, TUSCANIA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "VT",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Lazio",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "108 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
