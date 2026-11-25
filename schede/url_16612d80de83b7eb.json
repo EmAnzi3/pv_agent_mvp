@@ -5,14 +5,14 @@
  "title": "Determinazione n°G00623 del 21/01/2026 – Favorevole con prescrizioni Determinazione di P.A.U.R. n°G09842 del 15/07/2026 REALIZZAZIONE DELL' IMPIANTO AGROVOLTAICO \"BAINSIZZA\" DA 9819,81 kWp E DELLE RELATIVE OPERE ED INFRASTRUTTURE CONNESSE in località BORGO BAINSIZZA",
  "source_url": "https://regionelazio.box.com/v/VIA-165-2021",
  "source": "lazio",
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "verificato",
    "value": "9,82 MWp",
-   "sub": null,
+   "sub": "Suddivisa in 3 impianti",
    "source": {
     "document": "titolo del procedimento",
     "url": "https://regionelazio.box.com/v/VIA-165-2021",
@@ -35,8 +35,8 @@
    "key": "area",
    "label": "Superficie complessiva",
    "value": "16,6 ha",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 ha (6)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_937016023848",
     "page": 5,
@@ -49,7 +49,7 @@
    "label": "Durata cantiere",
    "value": "100 giorni (circa 3 mesi)",
    "status": "da documenti",
-   "sub": null,
+   "sub": "Valore prevalente negli elaborati; altri valori: 24 mesi (3), 6 mesi (3)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_2023656712672",
     "page": 14,
@@ -65,30 +65,20 @@
    "Latina"
   ],
   "coordinate": {
-   "lat": 41.52026,
-   "lon": 12.79245,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (2 riferimenti concordi)",
+   "lat": 41.48196,
+   "lon": 12.7762,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (51 riferimenti concordi)",
    "source": {
-    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_926689490725",
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_968387240902",
     "page": 6,
-    "document": "Rel 01 PTO e-d REV 01 Relazione Tecnica Impianto di Rete MT.pdf",
-    "excerpt": "Punto di inserimento 41°31'12.99\" N – 12°47'32.49\" E NCT - Latina (LT) Sez. B"
+    "document": "01_Lettera Risposta REGIONE.LAZIO.REGISTRO UFFICIALE.U.0439934.05-05-2022.pdf",
+    "excerpt": "Monfalcone confinante con la Discarica Borgo Montello – Ecoambiente S.r.l. (Coordinate WGS84 gradi decimali: 41,488583 N; 12,7718 E) ad oggi con procedimento di bonifica"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.52026,12.79245",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.48196,12.77620",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
-  "connessione": {
-   "lat": 41.48286,
-   "lon": 12.77629,
-   "source": {
-    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_926689490725",
-    "page": 6,
-    "document": "Rel 01 PTO e-d REV 01 Relazione Tecnica Impianto di Rete MT.pdf",
-    "excerpt": "Punto di consegna 41°28'58.29\" N – 12°46'34.64\" E NCT - Latina (LT) Sez. B"
-   },
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.48286,12.77629"
-  },
+  "connessione": null,
   "lotti": []
  },
  "soggetti": [
@@ -107,12 +97,23 @@
     {
      "type": "PEC",
      "value": "inebainsizzasrl@legalmail.it",
-     "occurrences": 288,
+     "occurrences": 3291,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1212373611005",
       "page": 1,
       "document": "INE Bainsizza_Prot. 221117_184_O_INE_ricontro nota Regione_MITE.pdf",
       "excerpt": "P. IVA 16311541003 P.e.c. inebainsizzasrl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "p.e.c.inebainsizzasrl@legalmail.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1614758101268",
+      "page": 1,
+      "document": "Rel 03 REV02 PD_DOCL2115 Sintesi non tecnica.pdf.p7m",
+      "excerpt": "P. IVA 16311541003 P.e.c.inebainsizzasrl@legalmail.it"
      }
     },
     {
@@ -130,6 +131,48 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://regionelazio.box.com/v/VIA-165-2021"
+   }
+  },
+  {
+   "name": "Geol. Nicola Pellecchia",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "nico.pellecchia@pec.epap.it",
+     "occurrences": 36,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1233995321791",
+      "page": 2,
+      "document": "A_PTO_RTN_05_A PD_DOCL2303 Relazione Geologica. Geotec, Idrogeolog e Sism.pdf.p7m",
+      "excerpt": "vico Simone, 1 – 70028 - Sannicandro di Bari (BA), Tell.: 080/9934679; 347 5495822; e-mail: nico.pellecchia67@gmail.com; P.E.C.: nico.pellecchia@pec.epap.it; P. IVA: 04775460720; C.F.: PLLNCL67B06A048E"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "nico.pellecchia67@gmail.com",
+     "occurrences": 36,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1233995321791",
+      "page": 2,
+      "document": "A_PTO_RTN_05_A PD_DOCL2303 Relazione Geologica. Geotec, Idrogeolog e Sism.pdf.p7m",
+      "excerpt": "vico Simone, 1 – 70028 - Sannicandro di Bari (BA), Tell.: 080/9934679; 347 5495822; e-mail: nico.pellecchia67@gmail.com;"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1233995321791",
+    "page": 2,
+    "document": "A_PTO_RTN_05_A PD_DOCL2303 Relazione Geologica. Geotec, Idrogeolog e Sism.pdf.p7m",
+    "excerpt": "RELAZIONE GEOLOGICA"
    }
   },
   {
@@ -158,7 +201,7 @@
     {
      "type": "E-mail",
      "value": "roberto.dimonte@dimonte.eu",
-     "occurrences": 4,
+     "occurrences": 6,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1220076608400",
       "page": 3,
@@ -189,7 +232,7 @@
     {
      "type": "PEC",
      "value": "apollosolare@pec.it",
-     "occurrences": 77,
+     "occurrences": 124,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_994695300150",
       "page": 1,
@@ -200,7 +243,7 @@
     {
      "type": "E-mail",
      "value": "apollosolare@ermesgroup.it",
-     "occurrences": 77,
+     "occurrences": 124,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_994695300150",
       "page": 1,
@@ -211,7 +254,7 @@
     {
      "type": "Telefono",
      "value": "0759481199",
-     "occurrences": 77,
+     "occurrences": 124,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_994695300150",
       "page": 1,
@@ -238,12 +281,39 @@
     {
      "type": "PEC",
      "value": "ermes@pec.ermesgroup.it",
-     "occurrences": 77,
+     "occurrences": 124,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_994695300150",
       "page": 1,
       "document": "PTO RTN 00 ELENCO ELABORATI PTO RTN.pdf",
       "excerpt": "info@ermesgroup.it, ermes@pec.ermesgroup.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Sunville S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03740071208",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Guido D'Arezzo 15 20145 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sunvillesrl@pec.it",
+     "occurrences": 12,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1212414780392",
+      "page": 1,
+      "document": "Allegato 3 - Nota MATTM_2021-0022525.pdf",
+      "excerpt": "Alla Società SUNVILLE S.r.l. sunvillesrl@pec.it"
      }
     }
    ],
@@ -265,12 +335,58 @@
     {
      "type": "Telefono",
      "value": "0694838941",
-     "occurrences": 77,
+     "occurrences": 124,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_994695300150",
       "page": 1,
       "document": "PTO RTN 00 ELENCO ELABORATI PTO RTN.pdf",
       "excerpt": "Piazza Albania 10, 00153, Roma, Italia Tel: +39 06.94838941"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Sabrina Scaramuzzi",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "sabrina.scaramuzzi@ingpec.eu",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1614757317466",
+      "page": 2,
+      "document": "Rel 11 REV02 PD_DOCL2115 Valutazione impatto acustico.pdf.p7m",
+      "excerpt": "e-mail: ing.scaramuzzis@gmail.com pec: sabrina.scaramuzzi@ingpec.eu"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "sabrina.scaramuzzi7038@pec.ordingbari.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1614757317466",
+      "page": 59,
+      "document": "Rel 11 REV02 PD_DOCL2115 Valutazione impatto acustico.pdf.p7m",
+      "excerpt": "Pec sabrina.scaramuzzi7038@pec.ordingbari.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3285589821",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1614757317466",
+      "page": 2,
+      "document": "Rel 11 REV02 PD_DOCL2115 Valutazione impatto acustico.pdf.p7m",
+      "excerpt": "Viale Luigi De Laurentis 6/20– 70124 Bari Tel./Fax: 080.2082652 - Cell.: 328.5589821"
      }
     }
    ],
@@ -301,7 +417,7 @@
    "source": null
   },
   {
-   "name": "Alla Società Sunville S.r.l.",
+   "name": "A Edison Rinnovabili S.p.A.",
    "kind": "società",
    "roles": [],
    "vat": null,
@@ -312,24 +428,40 @@
    "contacts": [
     {
      "type": "PEC",
-     "value": "sunvillesrl@pec.it",
+     "value": "rinnovabili@pec.edison.it",
      "occurrences": 1,
      "source": {
-      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1212414780392",
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1519308081343",
       "page": 1,
-      "document": "Allegato 3 - Nota MATTM_2021-0022525.pdf",
-      "excerpt": "Alla Società SUNVILLE S.r.l. sunvillesrl@pec.it"
+      "document": "Riscontro_MiTE_2022-0049275.pdf",
+      "excerpt": "A Edison Rinnovabili S.p.A. rinnovabili@pec.edison.it"
      }
     }
    ],
    "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 08/07/2003, ma l'iter è proseguito; ultimo documento o atto del 20/11/2026: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
   "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "08/07/2003 → 29/04/2013",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1519296927956",
+     "page": 2,
+     "document": "T.A.R. Sardegna N. 249_1 aprile_2014.pdf",
+     "excerpt": ""
+    }
+   },
    {
     "voce": "Atto autorizzativo",
     "livello": "documentata",
@@ -386,34 +518,684 @@
   }
  },
  "cronoprogramma": {
-  "bars": [],
+  "bars": [
+   {
+    "name": "L’Autorizzazione Unica del",
+    "start": 116.05,
+    "end": 117.89,
+    "level": 0,
+    "dates": [
+     "2013-03-05",
+     "2013-04-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "progetto autorizzato – violazione dell’art. 36 comma 7 bis del D.L.",
+    "start": 111.51,
+    "end": 113.85,
+    "level": 0,
+    "dates": [
+     "2012-10-18",
+     "2012-12-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "nel DPCM",
+    "start": 0.0,
+    "end": 58.82,
+    "level": 0,
+    "dates": [
+     "2003-07-08",
+     "2008-05-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "dell’",
+    "start": 100.92,
+    "end": 104.44,
+    "level": 0,
+    "dates": [
+     "2011-12-01",
+     "2012-03-16"
+    ],
+    "summary": false
+   }
+  ],
   "unit": "month",
-  "months": 1,
-  "source": null,
-  "asse": null,
+  "months": 117.89,
+  "source": {
+   "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_1519296927956",
+   "page": 2,
+   "document": "T.A.R. Sardegna N. 249_1 aprile_2014.pdf",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "lug 03",
+     "start": -0.23,
+     "end": 0.77
+    },
+    {
+     "label": "ago 03",
+     "start": 0.77,
+     "end": 1.77
+    },
+    {
+     "label": "set 03",
+     "start": 1.77,
+     "end": 2.77
+    },
+    {
+     "label": "ott 03",
+     "start": 2.77,
+     "end": 3.77
+    },
+    {
+     "label": "nov 03",
+     "start": 3.77,
+     "end": 4.77
+    },
+    {
+     "label": "dic 03",
+     "start": 4.77,
+     "end": 5.77
+    },
+    {
+     "label": "gen 04",
+     "start": 5.77,
+     "end": 6.77
+    },
+    {
+     "label": "feb 04",
+     "start": 6.77,
+     "end": 7.77
+    },
+    {
+     "label": "mar 04",
+     "start": 7.77,
+     "end": 8.77
+    },
+    {
+     "label": "apr 04",
+     "start": 8.77,
+     "end": 9.77
+    },
+    {
+     "label": "mag 04",
+     "start": 9.77,
+     "end": 10.77
+    },
+    {
+     "label": "giu 04",
+     "start": 10.77,
+     "end": 11.77
+    },
+    {
+     "label": "lug 04",
+     "start": 11.77,
+     "end": 12.77
+    },
+    {
+     "label": "ago 04",
+     "start": 12.77,
+     "end": 13.77
+    },
+    {
+     "label": "set 04",
+     "start": 13.77,
+     "end": 14.77
+    },
+    {
+     "label": "ott 04",
+     "start": 14.77,
+     "end": 15.77
+    },
+    {
+     "label": "nov 04",
+     "start": 15.77,
+     "end": 16.77
+    },
+    {
+     "label": "dic 04",
+     "start": 16.77,
+     "end": 17.77
+    },
+    {
+     "label": "gen 05",
+     "start": 17.77,
+     "end": 18.77
+    },
+    {
+     "label": "feb 05",
+     "start": 18.77,
+     "end": 19.77
+    },
+    {
+     "label": "mar 05",
+     "start": 19.77,
+     "end": 20.77
+    },
+    {
+     "label": "apr 05",
+     "start": 20.77,
+     "end": 21.77
+    },
+    {
+     "label": "mag 05",
+     "start": 21.77,
+     "end": 22.77
+    },
+    {
+     "label": "giu 05",
+     "start": 22.77,
+     "end": 23.77
+    },
+    {
+     "label": "lug 05",
+     "start": 23.77,
+     "end": 24.77
+    },
+    {
+     "label": "ago 05",
+     "start": 24.77,
+     "end": 25.77
+    },
+    {
+     "label": "set 05",
+     "start": 25.77,
+     "end": 26.77
+    },
+    {
+     "label": "ott 05",
+     "start": 26.77,
+     "end": 27.77
+    },
+    {
+     "label": "nov 05",
+     "start": 27.77,
+     "end": 28.77
+    },
+    {
+     "label": "dic 05",
+     "start": 28.77,
+     "end": 29.77
+    },
+    {
+     "label": "gen 06",
+     "start": 29.77,
+     "end": 30.77
+    },
+    {
+     "label": "feb 06",
+     "start": 30.77,
+     "end": 31.77
+    },
+    {
+     "label": "mar 06",
+     "start": 31.77,
+     "end": 32.77
+    },
+    {
+     "label": "apr 06",
+     "start": 32.77,
+     "end": 33.77
+    },
+    {
+     "label": "mag 06",
+     "start": 33.77,
+     "end": 34.77
+    },
+    {
+     "label": "giu 06",
+     "start": 34.77,
+     "end": 35.77
+    },
+    {
+     "label": "lug 06",
+     "start": 35.77,
+     "end": 36.77
+    },
+    {
+     "label": "ago 06",
+     "start": 36.77,
+     "end": 37.77
+    },
+    {
+     "label": "set 06",
+     "start": 37.77,
+     "end": 38.77
+    },
+    {
+     "label": "ott 06",
+     "start": 38.77,
+     "end": 39.77
+    },
+    {
+     "label": "nov 06",
+     "start": 39.77,
+     "end": 40.77
+    },
+    {
+     "label": "dic 06",
+     "start": 40.77,
+     "end": 41.77
+    },
+    {
+     "label": "gen 07",
+     "start": 41.77,
+     "end": 42.77
+    },
+    {
+     "label": "feb 07",
+     "start": 42.77,
+     "end": 43.77
+    },
+    {
+     "label": "mar 07",
+     "start": 43.77,
+     "end": 44.77
+    },
+    {
+     "label": "apr 07",
+     "start": 44.77,
+     "end": 45.77
+    },
+    {
+     "label": "mag 07",
+     "start": 45.77,
+     "end": 46.77
+    },
+    {
+     "label": "giu 07",
+     "start": 46.77,
+     "end": 47.77
+    },
+    {
+     "label": "lug 07",
+     "start": 47.77,
+     "end": 48.77
+    },
+    {
+     "label": "ago 07",
+     "start": 48.77,
+     "end": 49.77
+    },
+    {
+     "label": "set 07",
+     "start": 49.77,
+     "end": 50.77
+    },
+    {
+     "label": "ott 07",
+     "start": 50.77,
+     "end": 51.77
+    },
+    {
+     "label": "nov 07",
+     "start": 51.77,
+     "end": 52.77
+    },
+    {
+     "label": "dic 07",
+     "start": 52.77,
+     "end": 53.77
+    },
+    {
+     "label": "gen 08",
+     "start": 53.77,
+     "end": 54.77
+    },
+    {
+     "label": "feb 08",
+     "start": 54.77,
+     "end": 55.77
+    },
+    {
+     "label": "mar 08",
+     "start": 55.77,
+     "end": 56.77
+    },
+    {
+     "label": "apr 08",
+     "start": 56.77,
+     "end": 57.77
+    },
+    {
+     "label": "mag 08",
+     "start": 57.77,
+     "end": 58.77
+    },
+    {
+     "label": "giu 08",
+     "start": 58.77,
+     "end": 59.77
+    },
+    {
+     "label": "lug 08",
+     "start": 59.77,
+     "end": 60.77
+    },
+    {
+     "label": "ago 08",
+     "start": 60.77,
+     "end": 61.77
+    },
+    {
+     "label": "set 08",
+     "start": 61.77,
+     "end": 62.77
+    },
+    {
+     "label": "ott 08",
+     "start": 62.77,
+     "end": 63.77
+    },
+    {
+     "label": "nov 08",
+     "start": 63.77,
+     "end": 64.77
+    },
+    {
+     "label": "dic 08",
+     "start": 64.77,
+     "end": 65.77
+    },
+    {
+     "label": "gen 09",
+     "start": 65.77,
+     "end": 66.77
+    },
+    {
+     "label": "feb 09",
+     "start": 66.77,
+     "end": 67.77
+    },
+    {
+     "label": "mar 09",
+     "start": 67.77,
+     "end": 68.77
+    },
+    {
+     "label": "apr 09",
+     "start": 68.77,
+     "end": 69.77
+    },
+    {
+     "label": "mag 09",
+     "start": 69.77,
+     "end": 70.77
+    },
+    {
+     "label": "giu 09",
+     "start": 70.77,
+     "end": 71.77
+    },
+    {
+     "label": "lug 09",
+     "start": 71.77,
+     "end": 72.77
+    },
+    {
+     "label": "ago 09",
+     "start": 72.77,
+     "end": 73.77
+    },
+    {
+     "label": "set 09",
+     "start": 73.77,
+     "end": 74.77
+    },
+    {
+     "label": "ott 09",
+     "start": 74.77,
+     "end": 75.77
+    },
+    {
+     "label": "nov 09",
+     "start": 75.77,
+     "end": 76.77
+    },
+    {
+     "label": "dic 09",
+     "start": 76.77,
+     "end": 77.77
+    },
+    {
+     "label": "gen 10",
+     "start": 77.77,
+     "end": 78.77
+    },
+    {
+     "label": "feb 10",
+     "start": 78.77,
+     "end": 79.77
+    },
+    {
+     "label": "mar 10",
+     "start": 79.77,
+     "end": 80.77
+    },
+    {
+     "label": "apr 10",
+     "start": 80.77,
+     "end": 81.77
+    },
+    {
+     "label": "mag 10",
+     "start": 81.77,
+     "end": 82.77
+    },
+    {
+     "label": "giu 10",
+     "start": 82.77,
+     "end": 83.77
+    },
+    {
+     "label": "lug 10",
+     "start": 83.77,
+     "end": 84.77
+    },
+    {
+     "label": "ago 10",
+     "start": 84.77,
+     "end": 85.77
+    },
+    {
+     "label": "set 10",
+     "start": 85.77,
+     "end": 86.77
+    },
+    {
+     "label": "ott 10",
+     "start": 86.77,
+     "end": 87.77
+    },
+    {
+     "label": "nov 10",
+     "start": 87.77,
+     "end": 88.77
+    },
+    {
+     "label": "dic 10",
+     "start": 88.77,
+     "end": 89.77
+    },
+    {
+     "label": "gen 11",
+     "start": 89.77,
+     "end": 90.77
+    },
+    {
+     "label": "feb 11",
+     "start": 90.77,
+     "end": 91.77
+    },
+    {
+     "label": "mar 11",
+     "start": 91.77,
+     "end": 92.77
+    },
+    {
+     "label": "apr 11",
+     "start": 92.77,
+     "end": 93.77
+    },
+    {
+     "label": "mag 11",
+     "start": 93.77,
+     "end": 94.77
+    },
+    {
+     "label": "giu 11",
+     "start": 94.77,
+     "end": 95.77
+    },
+    {
+     "label": "lug 11",
+     "start": 95.77,
+     "end": 96.77
+    },
+    {
+     "label": "ago 11",
+     "start": 96.77,
+     "end": 97.77
+    },
+    {
+     "label": "set 11",
+     "start": 97.77,
+     "end": 98.77
+    },
+    {
+     "label": "ott 11",
+     "start": 98.77,
+     "end": 99.77
+    },
+    {
+     "label": "nov 11",
+     "start": 99.77,
+     "end": 100.77
+    },
+    {
+     "label": "dic 11",
+     "start": 100.77,
+     "end": 101.77
+    },
+    {
+     "label": "gen 12",
+     "start": 101.77,
+     "end": 102.77
+    },
+    {
+     "label": "feb 12",
+     "start": 102.77,
+     "end": 103.77
+    },
+    {
+     "label": "mar 12",
+     "start": 103.77,
+     "end": 104.77
+    },
+    {
+     "label": "apr 12",
+     "start": 104.77,
+     "end": 105.77
+    },
+    {
+     "label": "mag 12",
+     "start": 105.77,
+     "end": 106.77
+    },
+    {
+     "label": "giu 12",
+     "start": 106.77,
+     "end": 107.77
+    },
+    {
+     "label": "lug 12",
+     "start": 107.77,
+     "end": 108.77
+    },
+    {
+     "label": "ago 12",
+     "start": 108.77,
+     "end": 109.77
+    },
+    {
+     "label": "set 12",
+     "start": 109.77,
+     "end": 110.77
+    },
+    {
+     "label": "ott 12",
+     "start": 110.77,
+     "end": 111.77
+    },
+    {
+     "label": "nov 12",
+     "start": 111.77,
+     "end": 112.77
+    },
+    {
+     "label": "dic 12",
+     "start": 112.77,
+     "end": 113.77
+    },
+    {
+     "label": "gen 13",
+     "start": 113.77,
+     "end": 114.77
+    },
+    {
+     "label": "feb 13",
+     "start": 114.77,
+     "end": 115.77
+    },
+    {
+     "label": "mar 13",
+     "start": 115.77,
+     "end": 116.77
+    },
+    {
+     "label": "apr 13",
+     "start": 116.77,
+     "end": 117.77
+    },
+    {
+     "label": "mag 13",
+     "start": 117.77,
+     "end": 118.77
+    }
+   ],
+   "unita": null
+  },
   "duration": {
-   "text": "25 giorni",
-   "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 100 giorni (circa 3 mesi) (1)",
+   "text": "100 giorni (circa 3 mesi)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 25 giorni (4), 24 mesi (3), 80 giorni (circa 3 mesi) (3)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-165-2021&file_id=f_2023656712672",
     "page": 14,
     "document": "07 RL 0900797 del 12-09-2025 ARPA rel tecnica.pdf",
-    "excerpt": "Le durate considerate e la stima delle emissioni polverulente di PM10 per le varie attività sono: • Fase 1: Preparazione dell’area: 25 giorni lavorativi – 1001 g/h; • Fase 2: Realizzazione parco fotovoltaico: 100 giorni "
+    "excerpt": "• Fase 1: Preparazione dell’area: 25 giorni lavorativi – 1001 g/h; • Fase 2: Realizzazione parco fotovoltaico: 100 giorni lavorativi – 830,74 g/h; • Fase 3: Realizzazione cavidotti interrati: 80 giorni lavorativi – 953,8"
    }
   },
   "milestones": [],
   "document": null,
-  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "note": null,
   "altri": [],
   "durate_fasi": [],
-  "metodo": null
+  "metodo": "tabella con date"
  },
  "documentazione": {
   "documenti": 698,
-  "pagine": 1521,
+  "pagine": 5548,
   "completa": false,
-  "da_leggere": 458
+  "da_leggere": 341
  },
  "confronto": [
   {
@@ -444,8 +1226,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 08/07/2003, ma l'iter è proseguito; ultimo documento o atto del 20/11/2026: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "174 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "294 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
