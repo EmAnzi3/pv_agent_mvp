@@ -1,0 +1,449 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10453",
+ "title": "Progetto per la realizzazione di un impianto eolico, denominato \"Masserie Leone\", costituito da 5 aerogeneratori di potenza nominale pari a 6,6 MW, per una potenza complessiva di 33 MW, ubicato nel Comune di Ascoli Satriano (FG), incluse le opere di connessione alla RTN ricadenti nel medesimo territorio comunale (cod. MYTERNA n. 202201358).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10453",
+ "source": "mase",
+ "updated": "2026-11-25",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "33 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10453",
+    "excerpt": "33 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "5",
+   "status": "da documenti",
+   "sub": "6,60 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 1 (3), 7 (1), 31 (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981261",
+    "page": 1,
+    "document": "Avviso al Pubblico del 22/02/2024",
+    "excerpt": "L’intervento in oggetto è finalizzato alla realizzazione di un impianto di produzione di energia elettrica tramite conversione da fonte eolica costituito da 5 aerogeneratori da 6,6 MW ciascuno per una potenza complessiva"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981254",
+    "page": 53,
+    "document": "Studio Di Impatto Ambientale",
+    "excerpt": "R036-Studio di impatto ambientale Complessivamente, per la realizzazione del parco eolico si prevede una durata complessiva di circa 12 mesi."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "FG",
+  "comuni": [
+   "Ascoli Satriano"
+  ],
+  "coordinate": {
+   "lat": 41.15866,
+   "lon": 15.62915,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (8 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1162086",
+    "page": 12,
+    "document": "(Integrazioni del 07/05/2024) R_int_4_Studio_impatti_cumulativi-signed_signed_signed",
+    "excerpt": "554155"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.15866,15.62915",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.11943,
+   "lon": 15.70066,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981165",
+    "page": 1,
+    "document": "Inquadramento Territoriale - IGM",
+    "excerpt": "N 4 558 820,00 4 552 252,00"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.11943,15.70066"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "AME Energy S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "12779110969",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Corso Magenta 85 20123 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ameenergysri@legalmail.it",
+     "occurrences": 72,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981254",
+      "page": 1,
+      "document": "Studio Di Impatto Ambientale",
+      "excerpt": "Via Pietro Cossa, 5 20122 Milano (MI) ameenergysri@legalmail.it P. IVA O79 10969"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10453"
+   }
+  },
+  {
+   "name": "Ing. Federica Scarano",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981169",
+    "page": 1,
+    "document": "Inquadramento Territoriale - (P.A.I.)",
+    "excerpt": "PROGETTISTA: Ing. Federica SCARANO"
+   }
+  },
+  {
+   "name": "Dr. Rocco Rafaniello",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "roccorafaniello@pec.epap.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981232",
+      "page": 2,
+      "document": "Relazione Geologica",
+      "excerpt": "p.e.c. roccorafaniello@pec.epap.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "roccorafaniello@libero.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981232",
+      "page": 2,
+      "document": "Relazione Geologica",
+      "excerpt": "P. IVA 03112550649 roccorafaniello@libero.it"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981232",
+    "page": 2,
+    "document": "Relazione Geologica",
+    "excerpt": "Il Geologo Dr. Rocco Rafaniello"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Simec S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "03758220713",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Pertini 35 71020 Rocchetta Sant'Antonio Fg",
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0972750364",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1205952",
+      "page": 4,
+      "document": "Osservazioni della Società Sigma Bel Energy s.r.l., in data 24/0//1014",
+      "excerpt": "P.IVA 03758220713 tel 0972-750364"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Dr. Agronomo Cornacchia Gaetano",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "gaetano.cornacchia@conafpec.it",
+     "occurrences": 231,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981233",
+      "page": 2,
+      "document": "Relazione Pedo-Agronomica",
+      "excerpt": "C.da Serro Pignataro Snc, 83044, Bisaccia, Avellino P.IVA: IT03141960645 Pec: gaetano.cornacchia@conafpec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Giovanni Maggino Motivo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "082789652",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/981173",
+      "page": 1,
+      "document": "Inquadramento Territoriale - USO DEL SUOLO",
+      "excerpt": "83044 Bisaccia (AV) > tel. 0827.89652 a 1"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "6 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "(Redazione progetto esecutivo",
+    "start": 1.03,
+    "end": 1.48,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "[Deposito opere civili",
+    "start": 1.03,
+    "end": 1.48,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Picchettamento delle aree",
+    "start": 1.03,
+    "end": 1.48,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "provvisionale",
+    "start": 1.03,
+    "end": 1.48,
+    "level": 1,
+    "summary": false
+   },
+   {
+    "name": "laereogeneratori",
+    "start": 3.53,
+    "end": 5.71,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Posa in opera di cavidotti MT",
+    "start": 2.78,
+    "end": 5.73,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "laereogeneratori",
+    "start": 5.27,
+    "end": 5.71,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 5.73,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/981254",
+   "page": 53,
+   "document": "Studio Di Impatto Ambientale",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/981254",
+    "page": 53,
+    "document": "Studio Di Impatto Ambientale",
+    "excerpt": "R036-Studio di impatto ambientale Complessivamente, per la realizzazione del parco eolico si prevede una durata complessiva di circa 12 mesi."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma Dei Lavori",
+   "url": "https://va.mite.gov.it/File/Documento/981250"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "Cronoprogramma Dei Lavori",
+    "url": "https://va.mite.gov.it/File/Documento/981250"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma in immagine (lettura automatica, da verificare)"
+ },
+ "documentazione": {
+  "documenti": 130,
+  "pagine": 2952,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Ame Energy S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 33.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ASCOLI SATRIANO",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "FG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "340 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
