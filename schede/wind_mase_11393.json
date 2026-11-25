@@ -1,0 +1,340 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11393",
+ "title": "Progetto di un impianto eolico, costituito da 5 aereogeneratori di potenza 6,2 MW ciascuno, per una potenza totale di 31 MWp, integrato con sistema di accumulo da 8 MW e delle relative opere di connessione alla RTN, da realizzarsi nei Comuni di Isili, Nurallao, Nuragus, Genoni (SU)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11393",
+ "source": "mase",
+ "updated": "2026-11-25",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "31 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11393",
+    "excerpt": "31 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "5",
+   "status": "da documenti",
+   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 13 (11), 10 (9), 7 (9)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1189318",
+    "page": 2,
+    "document": "Avviso al pubblico del 17/12/2024",
+    "excerpt": "di Isili (SS) di potenza complessiva 31 MW integrato con un sistema di accumulo con potenza nominale 8 MW. L’impianto sarà costituito da 5 aerogeneratori di potenza 6,2 MW ciascuno, per un totale di 31 MW e un impianto d"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1189252",
+    "page": 81,
+    "document": "Relazione Faunistica",
+    "excerpt": "(Avian Sensitivity Maps) riguardo allo sviluppo di impianti eolici onshore e offshore."
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "8 MW / 56 MWh",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 31 MW (20), 4 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1189318",
+    "page": 1,
+    "document": "Avviso al pubblico del 17/12/2024",
+    "excerpt": "ISILI FORMATO DA 5 TURBINE CON POTENZA TOTALE 31 MW INTEGRATO CON SISTEMA DI ACCUMULO 8 MW’’"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "24 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1189294",
+    "page": 4,
+    "document": "Computo metrico sicurezza",
+    "excerpt": "successivo. uffici di cantiere successivi 24 mesi 5,00"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sardegna",
+  "provincia": "SU",
+  "comuni": [
+   "Isili",
+   "Nurallao",
+   "Nuragus",
+   "Genoni"
+  ],
+  "coordinate": {
+   "lat": 39.7591,
+   "lon": 9.157,
+   "tipo": "centro della tavola georeferenziata di progetto (42 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1189240",
+    "page": 1,
+    "document": "Inquadramento su ortofoto",
+    "excerpt": "Inquadramento su ortofoto"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=39.75910,9.15700",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 39.78941,
+   "lon": 9.0214,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1189253",
+    "page": 8,
+    "document": "Progetto definitivo",
+    "excerpt": "WTG02. Il cavidotto a 36 kV che collega la sottostazione di consegna utente (SSEU) alla nuova SE con coordinate 39.78941, 9.02140"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=39.78941,9.02140"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Vento Solare S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "01981860768",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Della Chimica 103 85100 Potenza Pz",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ventosolaresrl@pec.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1189302",
+      "page": 12,
+      "document": "Studio di impatto ambientale",
+      "excerpt": "Domicilio digitale ventosolaresrl@pec.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11393"
+   }
+  },
+  {
+   "name": "Dott. Geol. Alessandro Grosso",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1189252",
+    "page": 2,
+    "document": "Relazione Faunistica",
+    "excerpt": "Progettisti:"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "LA Molisana Trasporti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01463480705",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Contrada Rio Lecine 30 86014 Guardiaregia Cb",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@molisanatrasporti.it",
+     "occurrences": 67,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1189296",
+      "page": 3,
+      "document": "Relazione Road Survey",
+      "excerpt": "www.molisanatrasporti.com È STATI | sora info@molisanatrasporti.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "F&F Engineering S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "ffengineering@pec.it",
+     "occurrences": 56,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1254642",
+      "page": 1,
+      "document": "Integrazioni del 06/05/2025 - Shadow flickering: worst case annual",
+      "excerpt": "Via Lussu 9 - 07100 Sassari Pec ffengineering@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@ffengineering.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1189269",
+      "page": 4,
+      "document": "Prime indicazioni per la stesura del piano di sicurezza",
+      "excerpt": "Tel.: 079 233342 - Fax: 079 237366 E-Mail: info@ffengineering.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Nicola Concari",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "nicola.concari@vsb.energy",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1254640",
+      "page": 7,
+      "document": "Integrazioni del 06/05/2025 - Controdeduzioni alle osservazioni della Procedura di VIA",
+      "excerpt": "Dott. Nicola Concari Cel. 3477181561 – mail: nicola.concari@vsb.energy"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "24 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": {
+   "text": "2 settimane",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 24 mesi (1), 12 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1189299",
+    "page": 23,
+    "document": "Relazione cumulo progetti",
+    "excerpt": "al rumore lungo il cantiere LdB(A) Campagne di 2 settimane per stabilire il rumore di fondo e"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma",
+   "url": "https://va.mite.gov.it/File/Documento/1189244"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Cronoprogramma",
+    "url": "https://va.mite.gov.it/File/Documento/1189244"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 161,
+  "pagine": 2646,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Vento Solare S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 31.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ISILI, NURALLAO, NURAGUS, GENONI",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "SU",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sardegna",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "79 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
