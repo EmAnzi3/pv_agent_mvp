@@ -5,7 +5,7 @@
  "title": "Provvedimento Unico in materia Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, denominato \"Lama di Pozzo\", di potenza pari a 40,396 MW e delle relative opere di connessione alla RTN, da realizzarsi in zona agricola nei comuni di Castellaneta",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10527",
  "source": "mase",
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "91,256 ha",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 200,043 ha (3), 116,146 ha (2), 80,584 ha (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 80,584 ha (3), 98,56 ha (3), 200,043 ha (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1161616",
     "page": 3,
@@ -58,11 +58,24 @@
    }
   },
   {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "52 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 10 MW (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1313332",
+    "page": 27,
+    "document": "Parere del Ministero della Cultura - Soprintendenza Speciale per il PNRR in data 10/10/2025",
+    "excerpt": "Agricola Lacalamita Rosa. Ed inoltre risulta attivo presso il MASE il procedimento PE-93-2023-10 relativo all’Istanza di Autorizzazione Unica ex D.L. n. 7/2002 e per la realizzazione di un impianto di accumulo della pote"
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "26 mesi",
    "status": "da verificare",
-   "sub": "Inizio lavori 01/01/2025 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 12 mesi (1), 8 mesi (1), 6 mesi (1)",
+   "sub": "Inizio lavori 01/01/2025 (previsione di progetto) · Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 8 mesi (1), 6 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1448270",
     "page": 15,
@@ -81,7 +94,7 @@
   "coordinate": {
    "lat": 40.48702,
    "lon": 16.84078,
-   "tipo": "baricentro dell'impianto dichiarato negli elaborati (19 riferimenti concordi)",
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (20 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1074807",
     "page": 7,
@@ -108,9 +121,9 @@
    },
    {
     "lotto": "Blocco 2",
-    "lat": 40.48394,
-    "lon": 16.84968,
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=40.48394,16.84968",
+    "lat": 40.48361,
+    "lon": 16.84998,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=40.48361,16.84998",
     "source": {
      "url": "https://va.mite.gov.it/File/Documento/1074883",
      "page": 173,
@@ -148,7 +161,7 @@
     {
      "type": "PEC",
      "value": "castellanetapvsrl@pec.it",
-     "occurrences": 186,
+     "occurrences": 187,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1074883",
       "page": 1,
@@ -225,6 +238,55 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Greenergy S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02599060734",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Stazione Snc 74011 Castellaneta Ta",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "greenergyimpianti@arubapec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074692",
+      "page": 2,
+      "document": "ELENCO ELABORATI rev.01",
+      "excerpt": "www.greenergy.it PEC: greenergyimpianti@arubapec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@greenergy.it",
+     "occurrences": 164,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074883",
+      "page": 1,
+      "document": "STUDIO DI IMPATTO AMBIENTALE",
+      "excerpt": "P.IVA 02599060734, REA TA-157230, www.greenergy.it, mail:info@greenergy.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0998441860",
+     "occurrences": 156,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1074883",
+      "page": 1,
+      "document": "STUDIO DI IMPATTO AMBIENTALE",
+      "excerpt": "Via Stazione snc - 74011 Castellaneta (TA) , Tel +39 0998441860, Fax +39 0998445168,"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Geosolution S.r.l.",
    "kind": "società",
@@ -316,52 +378,6 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
-  },
-  {
-   "name": "Greenergy S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "greenergyimpianti@arubapec.it",
-     "occurrences": 8,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1074692",
-      "page": 2,
-      "document": "ELENCO ELABORATI rev.01",
-      "excerpt": "www.greenergy.it PEC: greenergyimpianti@arubapec.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "info@greenergy.it",
-     "occurrences": 164,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1074883",
-      "page": 1,
-      "document": "STUDIO DI IMPATTO AMBIENTALE",
-      "excerpt": "P.IVA 02599060734, REA TA-157230, www.greenergy.it, mail:info@greenergy.it"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "0998441860",
-     "occurrences": 156,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1074883",
-      "page": 1,
-      "document": "STUDIO DI IMPATTO AMBIENTALE",
-      "excerpt": "Via Stazione snc - 74011 Castellaneta (TA) , Tel +39 0998441860, Fax +39 0998445168,"
-     }
-    }
-   ],
-   "source": null
   },
   {
    "name": "Falck Renewables Sviluppo S.r.l.",
@@ -745,14 +761,14 @@
    "unita": null
   },
   "duration": {
-   "text": "90 giorni (circa 3 mesi)",
+   "text": "26 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 26 mesi (1), 12 mesi (1), 8 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 12 mesi (2), 90 giorni (circa 3 mesi) (2), 8 mesi (1)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1074800",
-    "page": 179,
-    "document": "RELAZIONE TECNICA DESCRITTIVA",
-    "excerpt": "La realizzazione di servizi igienico-sanitari considerando la durata dei lavori di cantiere superiore ai 90 giorni; •"
+    "url": "https://va.mite.gov.it/File/Documento/1448270",
+    "page": 15,
+    "document": "Allegato al Decreto Direttoriale - Parere CT PNRR-PNIEC del 04/09/2026",
+    "excerpt": "61'249'196 €. Dall’ottenimento dell’autorizzazione le attività di progettazione esecutiva, approvvigionamento materiali, stipula servitù e realizzazione avranno una durata prevista, stimata dal Proponente pari a circa 26"
    }
   },
   "milestones": [
@@ -799,9 +815,9 @@
  },
  "documentazione": {
   "documenti": 243,
-  "pagine": 3100,
-  "completa": false,
-  "da_leggere": 3
+  "pagine": 3228,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -840,12 +856,16 @@
    "reason": "valori diversi negli elaborati"
   },
   {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Durata cantiere",
    "reason": "valori diversi negli elaborati"
   },
   {
    "label": "Recapiti",
-   "reason": "250 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "252 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
