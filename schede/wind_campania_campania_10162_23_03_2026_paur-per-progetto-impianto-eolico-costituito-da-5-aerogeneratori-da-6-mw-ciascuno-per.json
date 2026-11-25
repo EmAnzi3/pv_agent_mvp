@@ -1,0 +1,739 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:campania:campania_10162_23_03_2026_paur-per-progetto-impianto-eolico-costituito-da-5-aerogeneratori-da-6-mw-ciascuno-per",
+ "title": "PAUR per progetto impianto Eolico costituito da 5 Aerogeneratori da 6 MW ciascuno per una potenza totale di 30 MW da installare nei comuni di Ariano Irpino (AV) e Castelfranco in Miscano (BN) e relative opere di connessioni ricadenti nei medesimi comuni",
+ "source_url": "https://viavas.regione.campania.it/opencms/opencms/VIAVAS/VIA_files_new/Progetti/prg_10162_prot_2026.293748_del_23-03-2026.viavi",
+ "source": "campania",
+ "updated": "2026-11-25",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "30 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://viavas.regione.campania.it/opencms/opencms/VIAVAS/VIA_files_new/Progetti/prg_10162_prot_2026.293748_del_23-03-2026.viavi",
+    "excerpt": "30 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "5",
+   "status": "da documenti",
+   "sub": "6,00 MW ciascuno · altezza mozzo 125 m · diametro rotore 150 m · Valore prevalente negli elaborati; altri valori: 3 (4), 2 (4), 136 (1)",
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_04_15_prot_n_0362850_ENAC_0060759-P.pdf')/$value",
+    "page": 1,
+    "document": "2026_04_15_prot_n_0362850_ENAC_0060759-P.pdf",
+    "excerpt": "Pec: francesco.gramazio@lpholdingsrl.com Oggetto: Progetto di realizzazione di un “Impianto Eolico costituito da 5 Aerogeneratori da 6 MW ciascuno per una potenza totale di 30 MW da installare nei comuni di Ariano Irpino"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "20 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1)",
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/UOS%20208.03.01%20RISORSE%20ENERGETICHE/5.1STMG%20P20250064968-29.05.2025.pdf')/$value",
+    "page": 6,
+    "document": "5.1STMG P20250064968-29.05.2025.pdf",
+    "excerpt": "i tempi di realizzazione delle opere RTN necessarie alla connessione sono pari a 20 mesi per la realizzazione della nuova SE RTN a 380/150 kV e pari a 8 mesi + 1 mese/km per i relativi raccordi."
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Campania",
+  "provincia": "AV",
+  "comuni": [
+   "ARIANO IRPINO"
+  ],
+  "coordinate": {
+   "lat": 41.25346,
+   "lon": 15.10599,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (9 riferimenti concordi)",
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_05_19_prot_n_0457145_SNAM_2026BENE078.pdf')/$value",
+    "page": 1,
+    "document": "2026_05_19_prot_n_0457145_SNAM_2026BENE078.pdf",
+    "excerpt": "Biccari-Napoli DN 600”, nel comune di Ariano Irpino – coordinate indicative di riferimento (41.243244,15.105600)"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.25346,15.10599",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 41.25258,
+   "lon": 15.09787,
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_03_23_prot_0293748_Q-Energy%20Renewables%202_istanza/PAUR_VIA_3/IMMAGINI%20SATELLITARI/012g_ARI-CIV-TAV-012g_00-Immagini%20satellitari_signed-signed.pdf')/$value",
+    "page": 3,
+    "document": "012g_ARI-CIV-TAV-012g_00-Immagini satellitari_signed-signed.pdf",
+    "excerpt": "507600 4566800 507800 508000 508200 4566600"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.25258,15.09787"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Q-ENERGY Renewables 2 S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": "12490070963",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Gorani 4 20123 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "q-energyrenewables2srl@legalmail.it",
+     "occurrences": 1578,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_04_15_prot_n_0362850_ENAC_0060759-P.pdf')/$value",
+      "page": 1,
+      "document": "2026_04_15_prot_n_0362850_ENAC_0060759-P.pdf",
+      "excerpt": "Soc. Q-Energy Renewables 2 S.r.l. Pec: q-energyrenewables2srl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "jpec1312.20260413172543.52488.514.1.2@pec.aruba.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/ENAC/CONSEGNA__Istanza_M_WEB_2026_0661.pdf')/$value",
+      "page": 2,
+      "document": "CONSEGNA__Istanza_M_WEB_2026_0661.pdf",
+      "excerpt": "Serial ID: Apr-13-2026 17:28:09 jpec1312.20260413172543.52488.514.1.2@pec.aruba.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "eleonora.zeolla@qenergy.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/UOS%20208.03.01%20RISORSE%20ENERGETICHE/3.Oneri%20istruttori%20PAUR-signed.pdf')/$value",
+      "page": 1,
+      "document": "3.Oneri istruttori PAUR-signed.pdf",
+      "excerpt": "12490070963 eleonora.zeolla@qenergy.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "q-energyrenewables2srl@legalmai.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_03_23_prot_0293748_Q-Energy%20Renewables%202_istanza/PAUR_VIA_3/IMMAGINI%20SATELLITARI/012g_ARI-CIV-TAV-012g_00-Immagini%20satellitari_signed-signed.pdf')/$value",
+      "page": 2,
+      "document": "012g_ARI-CIV-TAV-012g_00-Immagini satellitari_signed-signed.pdf",
+      "excerpt": "Via Gorani, 4 - CAP: 20123 — Milano (MI) MAIL: q-energyrenewables2srl@legalmai.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3482234870",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/COMUNITA%20MONTANA%20FORTORE/ALLEGATO%2013-signed.pdf')/$value",
+      "page": 1,
+      "document": "ALLEGATO 13-signed.pdf",
+      "excerpt": "Telefono cell. 3482234870"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://viavas.regione.campania.it/opencms/opencms/VIAVAS/VIA_files_new/Progetti/prg_10162_prot_2026.293748_del_23-03-2026.viavi"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Pheedra S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "info@pec.pheedra.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/COMUNITA%20MONTANA%20FORTORE/094_ARI_INT-REL-094_00-Dichiarazione%20tecnica%20terreni_signed-signed.pdf')/$value",
+      "page": 2,
+      "document": "094_ARI_INT-REL-094_00-Dichiarazione tecnica terreni_signed-signed.pdf",
+      "excerpt": "PHEEDRA s.r.l. · Società di Ingegneria · Via Lago di Nemi, 90 · 74121 Taranto (TA) · Italy · +39.099.7722302 www.pheedra.it · info@pheedra.it · info@pec.pheedra.it · IT 02643990738 · SDI: KRRH6B9 · R.E.A. TA 160362"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@pheedra.it",
+     "occurrences": 1556,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_07_13_prot_0619299_Q-Energy%20Renewables%202_per_snam/PAUR_VIA_5/102_ARI-INT-REL-102_00-Relazione%20SNAM_signed-signed.pdf')/$value",
+      "page": 1,
+      "document": "102_ARI-INT-REL-102_00-Relazione SNAM_signed-signed.pdf",
+      "excerpt": "Tel. 099.7722302 - Fax 099.9870285 e-mail: info@pheedra.it - web: www.pheedra.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0997722302",
+     "occurrences": 1524,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_07_13_prot_0619299_Q-Energy%20Renewables%202_per_snam/PAUR_VIA_5/102_ARI-INT-REL-102_00-Relazione%20SNAM_signed-signed.pdf')/$value",
+      "page": 1,
+      "document": "102_ARI-INT-REL-102_00-Relazione SNAM_signed-signed.pdf",
+      "excerpt": "74121 - Taranto Tel. 099.7722302 - Fax 099.9870285"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ing. Francesco Gramazio",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "francesco.gramazio@lpholdingsrl.com",
+     "occurrences": 11,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_04_15_prot_n_0362850_ENAC_0060759-P.pdf')/$value",
+      "page": 1,
+      "document": "2026_04_15_prot_n_0362850_ENAC_0060759-P.pdf",
+      "excerpt": "Pec: q-energyrenewables2srl@legalmail.it Pec: francesco.gramazio@lpholdingsrl.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3389722166",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/U.S.%20306.00.00/7a1_Modello_Istanza_VIA_PAUR_versEOLICI_2025_6_rev-signed.pdf')/$value",
+      "page": 7,
+      "document": "7a1_Modello_Istanza_VIA_PAUR_versEOLICI_2025_6_rev-signed.pdf",
+      "excerpt": "Telefono 338.9722166 E-mail francesco.gramazio@lpholdingsrl.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "protocollogenerale@pec.enav.it",
+     "occurrences": 11,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_11_23_prot_n_0982426_avvio_procedimento.pdf')/$value",
+      "page": 2,
+      "document": "2026_11_23_prot_n_0982426_avvio_procedimento.pdf",
+      "excerpt": "Enav S.P.A. protocollogenerale@pec.enav.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ferrovie dello Stato Italiane S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "fsitaliane@pec.fsitaliane.it",
+     "occurrences": 11,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_11_23_prot_n_0982426_avvio_procedimento.pdf')/$value",
+      "page": 2,
+      "document": "2026_11_23_prot_n_0982426_avvio_procedimento.pdf",
+      "excerpt": "Ferrovie dello Stato Italiane S.p.A. fsitaliane@pec.fsitaliane.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "L.P. Holding S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "lpholdingsrl@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/UOS%20208.03.01%20RISORSE%20ENERGETICHE/5.3BENESTARE%20OPERE%20DI%20RETE.pdf')/$value",
+      "page": 1,
+      "document": "5.3BENESTARE OPERE DI RETE.pdf",
+      "excerpt": "20100 Milano (MI) lpholdingsrl@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "ludovico.lombardi@nlpholdingsrl.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/VV.FF.%20AVELLINO/PIN_1-ValutazioneProgetto%20VVFF%20Avellino-signed.pdf')/$value",
+      "page": 1,
+      "document": "PIN_1-ValutazioneProgetto VVFF Avellino-signed.pdf",
+      "excerpt": "comune provincia telefono Ludovico.lombardi@nlpholdingsrl.com q-energyrenewables2srl@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Efna S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "efnasrl@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/UOS%20208.03.01%20RISORSE%20ENERGETICHE/5.3BENESTARE%20OPERE%20DI%20RETE.pdf')/$value",
+      "page": 1,
+      "document": "5.3BENESTARE OPERE DI RETE.pdf",
+      "excerpt": "82100 Benevento (BN) efnasrl@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Castelluccio dei Sau",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "lpsolutionssrl@pec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_03_23_prot_0293748_Q-Energy%20Renewables%202_istanza/PAUR_VIA_2/01%20PROGETTAZIONE/021a_ARI-CIV-REL-021a_00-Dismissione%20parco%20eolico_signed-signed.pdf')/$value",
+      "page": 17,
+      "document": "021a_ARI-CIV-REL-021a_00-Dismissione parco eolico_signed-signed.pdf",
+      "excerpt": "71025 Castelluccio dei Sauri (FG) lpsolutionssrl@pec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "D.D. n. 368 del 23/10/2023",
+    "dettaglio": null,
+    "source": {
+     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/U.S.%20306.00.00/7a1_Modello_Istanza_VIA_PAUR_versEOLICI_2025_6_rev-signed.pdf')/$value",
+     "page": 1,
+     "document": "7a1_Modello_Istanza_VIA_PAUR_versEOLICI_2025_6_rev-signed.pdf",
+     "excerpt": "un cavo AT a 150 kV alla stazione 150/380 kV di Ariano Irpino, che rappresenta il punto di connessione alla RTN. (già autorizzata con D.D. della Regione Campania n. 368 del 23/10/2023 ed attualmente in fase di realizzazi"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di ottobre 2023",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/U.S.%20306.00.00/7a1_Modello_Istanza_VIA_PAUR_versEOLICI_2025_6_rev-signed.pdf')/$value",
+     "page": 1,
+     "document": "7a1_Modello_Istanza_VIA_PAUR_versEOLICI_2025_6_rev-signed.pdf",
+     "excerpt": "un cavo AT a 150 kV alla stazione 150/380 kV di Ariano Irpino, che rappresenta il punto di connessione alla RTN. (già autorizzata con D.D. della Regione Campania n. 368 del 23/10/2023 ed attualmente in fase di realizzazi"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di novembre 2025",
+    "dettaglio": "inizio stimato + durata del cantiere: 25 mesi (cronoprogramma)",
+    "source": {
+     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_03_23_prot_0293748_Q-Energy%20Renewables%202_istanza/PAUR_VIA_3/031b_ARI-AMB-REL-031b_00-SIA%20-%20QR%20progettuale_signed-signed.pdf')/$value",
+     "page": 61,
+     "document": "031b_ARI-AMB-REL-031b_00-SIA - QR progettuale_signed-signed.pdf",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "25 mesi (cronoprogramma)",
+  "autorizzazione": {
+   "atto": "D.D. n. 368",
+   "data": "23/10/2023",
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/U.S.%20306.00.00/7a1_Modello_Istanza_VIA_PAUR_versEOLICI_2025_6_rev-signed.pdf')/$value",
+    "page": 1,
+    "document": "7a1_Modello_Istanza_VIA_PAUR_versEOLICI_2025_6_rev-signed.pdf",
+    "excerpt": "un cavo AT a 150 kV alla stazione 150/380 kV di Ariano Irpino, che rappresenta il punto di connessione alla RTN. (già autorizzata con D.D. della Regione Campania n. 368 del 23/10/2023 ed attualmente in fase di realizzazi"
+   }
+  },
+  "note": [],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Progetto esecutivo",
+    "start": 0.08,
+    "end": 6.02,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Convenzioni per attraversamenti e interferenze",
+    "start": 0.08,
+    "end": 6.02,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Espropri",
+    "start": 0.08,
+    "end": 6.02,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Affidamento lavori",
+    "start": 4.01,
+    "end": 6.02,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Allestimento del cantiere",
+    "start": 5.98,
+    "end": 7.01,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Opere civili - strade",
+    "start": 6.97,
+    "end": 8.98,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civili - fondazioni torri",
+    "start": 6.97,
+    "end": 14.88,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Opere civili ed elettriche - cavidotti",
+    "start": 8.94,
+    "end": 15.87,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Trasporto componenti torri ed aerogeneratori",
+    "start": 10.91,
+    "end": 13.9,
+    "level": 1,
+    "summary": true
+   },
+   {
+    "name": "Montaggio torri ed aerogeneratori",
+    "start": 12.88,
+    "end": 16.93,
+    "level": 2,
+    "summary": false
+   },
+   {
+    "name": "Costruzione SSE e cabina di raccolta - Opere elettriche e di connessione alla RT",
+    "start": 6.97,
+    "end": 19.01,
+    "level": 0,
+    "summary": true
+   },
+   {
+    "name": "Collaudi",
+    "start": 18.97,
+    "end": 22.08,
+    "level": 3,
+    "summary": false
+   },
+   {
+    "name": "Dismissione del cantiere e ripristini ambientali",
+    "start": 22.04,
+    "end": 25.15,
+    "level": 1,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 25.15,
+  "source": {
+   "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_03_23_prot_0293748_Q-Energy%20Renewables%202_istanza/PAUR_VIA_3/031b_ARI-AMB-REL-031b_00-SIA%20-%20QR%20progettuale_signed-signed.pdf')/$value",
+   "page": 61,
+   "document": "031b_ARI-AMB-REL-031b_00-SIA - QR progettuale_signed-signed.pdf",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "10",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "11",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "12",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "13",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "14",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "15",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "16",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "17",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "18",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "19",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "20",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "21",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "22",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "23",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "24",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "25",
+     "start": 24.0,
+     "end": 25.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "20 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 8 mesi (1)",
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_06_04_prot_0503800_Q-Energy%20Renewables%202_perfezionamenti/UOS%20208.03.01%20RISORSE%20ENERGETICHE/5.1STMG%20P20250064968-29.05.2025.pdf')/$value",
+    "page": 6,
+    "document": "5.1STMG P20250064968-29.05.2025.pdf",
+    "excerpt": "i tempi di realizzazione delle opere RTN necessarie alla connessione sono pari a 20 mesi per la realizzazione della nuova SE RTN a 380/150 kV e pari a 8 mesi + 1 mese/km per i relativi raccordi."
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "020c_ARI-CIV-REL-020c_00-Cronoprogramma_signed-signed.pdf",
+   "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_03_23_prot_0293748_Q-Energy%20Renewables%202_istanza/PAUR_VIA_2/01%20PROGETTAZIONE/020c_ARI-CIV-REL-020c_00-Cronoprogramma_signed-signed.pdf')/$value"
+  },
+  "note": null,
+  "altri": [
+   {
+    "document": "020c_ARI-CIV-REL-020c_00-Cronoprogramma_signed-signed.pdf",
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_03_23_prot_0293748_Q-Energy%20Renewables%202_istanza/PAUR_VIA_2/01%20PROGETTAZIONE/020c_ARI-CIV-REL-020c_00-Cronoprogramma_signed-signed.pdf')/$value"
+   },
+   {
+    "document": "020c_ARI-CIV-REL-020c_00-Cronoprogramma_signed-signed.pdf",
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10162/2026_03_23_prot_0293748_Q-Energy%20Renewables%202_istanza/PAUR_VIA_2/02%20AUT_ART.%2012%20D.lgs%20387.2003/B%20RELAZIONI/020c_ARI-CIV-REL-020c_00-Cronoprogramma_signed-signed.pdf')/$value"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 653,
+  "pagine": 2549,
+  "completa": false,
+  "da_leggere": 353
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Q-Energy Renewables 2 S.r.l.",
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 30.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "ARIANO IRPINO",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "AV",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Campania",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "213 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
