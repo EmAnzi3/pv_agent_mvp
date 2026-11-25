@@ -1,0 +1,495 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9511",
+ "title": "Progetto di un impianto per la produzione di energia elettrica da fonte eolica denominato \"CE Nardò\", costituito da 5 aerogeneratori di potenza unitaria pari a 6,6 MW, per una potenza complessiva di impianto di 33 MW, incluse le opere di connessione alla RTN (cod. MYTERNA n. 202200290), da realizzarsi nei comuni di Nardò (LE), Salice Salentino (LE), Veglie (LE), Leverano (LE) e Copertino (LE).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9511",
+ "source": "mase",
+ "updated": "2026-11-25",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "33 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9511",
+    "excerpt": "33 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "5",
+   "status": "da documenti",
+   "sub": "6,60 MW ciascuno · altezza mozzo 135 m · diametro rotore 170 m · Valore prevalente negli elaborati; altri valori: 6 (9), 9 (3), 14 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/839703",
+    "page": 3,
+    "document": "Avviso al pubblico del 15/05/2023",
+    "excerpt": "Veglie, Leverano e Copertino e prevede la realizzazione di un impianto eolico di potenza complessiva di 33 MW costituito da 5 turbine eoliche ciascuna avente diametro rotore di 170 m e altezza al mozzo di 135 metri, da u"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Agrivoltaico",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/770384",
+    "page": 5,
+    "document": "Relazione pedoagronomica",
+    "excerpt": "fotovoltaica, con l’introduzione del concetto di “agrovoltaico” che prevede la contemporanea presenza"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "12 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 4 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/770378",
+    "page": 32,
+    "document": "Studio di Impatto Ambientale - Quadro di riferimento Progettuale",
+    "excerpt": "alla entrata in esercizio dell’impianto. Considerando che la fase di progettazione esecutiva si avvierà sei mesi prima dell’apertura del cantiere possiamo considerare 12 mesi come durata effettiva delle attività lavorati"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Puglia",
+  "provincia": "LE",
+  "comuni": [
+   "Nardò",
+   "Salice Salentino",
+   "Veglie",
+   "Leverano",
+   "Copertino"
+  ],
+  "coordinate": {
+   "lat": 40.28218,
+   "lon": 17.95642,
+   "tipo": "centro della tavola georeferenziata di progetto (58 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/770244",
+    "page": 7,
+    "document": "Carte Archeologiche",
+    "excerpt": "Carte Archeologiche"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.28218,17.95642",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "AEI Wind Project III S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "aeiwind-terza@legalmail.it",
+     "occurrences": 97,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/839703",
+      "page": 1,
+      "document": "Avviso al pubblico del 15/05/2023",
+      "excerpt": "iscritta al registro delle imprese di ROMA con numero 16805251002 P.IVA 16805251002 pec: aeiwind-terza@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "atechsrl@legalmail.it",
+     "occurrences": 88,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/770374",
+      "page": 1,
+      "document": "Allegati Grafici al SIA",
+      "excerpt": "e-mail: atechsrl@libero.it pec: atechsrl@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "aeiwind-prima@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/770278",
+      "page": 1,
+      "document": "Tabella Elenco Elaborati",
+      "excerpt": "00198 Roma (RM) pec: aeiwind-prima@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9511"
+   }
+  },
+  {
+   "name": "Dott. Geol. Michele Valerio",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "atechsrl@libero.it",
+     "occurrences": 32,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/770299",
+      "page": 1,
+      "document": "Profili Longitudinali - WTG01",
+      "excerpt": "Dott. Geol. Michele VALERIO e-mail: atechsrl@libero.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "va.michele1976@gmail.com",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/770340",
+      "page": 3,
+      "document": "Relazione geologica",
+      "excerpt": "Via Cesare Battisti, 51 – 70032 Bitonto (BA) Cell. 349-6373204 – mail: va.michele1976@gmail.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3496373204",
+     "occurrences": 16,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/770340",
+      "page": 3,
+      "document": "Relazione geologica",
+      "excerpt": "Via Cesare Battisti, 51 – 70032 Bitonto (BA) Cell. 349-6373204 – mail: va.michele1976@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/770340",
+    "page": 17,
+    "document": "Relazione geologica",
+    "excerpt": "Il Geologo"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Delta OHM S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@deltaohm.com",
+     "occurrences": 20,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/770245",
+      "page": 23,
+      "document": "Relazione previsionale impatto acustico",
+      "excerpt": "e-mail: info@deltaohm.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "049897715",
+     "occurrences": 10,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/770245",
+      "page": 23,
+      "document": "Relazione previsionale impatto acustico",
+      "excerpt": "35030 Caselle di Selvazzano (PD) Laboratorio Accreditato CITATA LAT N° 124 Tel. 0039-0498977150 A"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Masserie Salentine S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "masseriesalentine@pec-mail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1174423",
+      "page": 1,
+      "document": "Osservazioni delle Masserie Salentine S.r.l. Società Agricola del 08/11/2024",
+      "excerpt": "Sede Legale: Nardò (LE), Viale Walter Rossi Lotto, n. 152 - Amm.ne: Via Baione, 200 - 70043 Monopoli (Ba) - Tel. 080 930.20.11 Nr. REA: LE - 283032 - Cod. Fisc. , P.IVA e Reg. Impr. di Venezia 08269440015 - PEC: masserie"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "protocollo@pecnardo.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/902816",
+      "page": 18,
+      "document": "Osservazioni delle Masserie Salentine S.r.l. Società Agricola del 16/09/2023",
+      "excerpt": "Comune di Nardò protocollo@pecnardo.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "08093020",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1174423",
+      "page": 1,
+      "document": "Osservazioni delle Masserie Salentine S.r.l. Società Agricola del 08/11/2024",
+      "excerpt": "Sede Legale: Nardò (LE), Viale Walter Rossi Lotto, n. 152 - Amm.ne: Via Baione, 200 - 70043 Monopoli (Ba) - Tel. 080 930.20.11"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "10 mesi (cronoprogramma)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Accantieramenti",
+    "start": 0.05,
+    "end": 0.96,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizz. ed adeguamento strade, realizzazione piazzole",
+    "start": 0.05,
+    "end": 5.0,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione fondazioni",
+    "start": 0.98,
+    "end": 5.94,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione cavidotti MT ed AT e ripristino",
+    "start": 3.16,
+    "end": 6.87,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "ripristino",
+    "start": 6.1,
+    "end": 6.73,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Realizzazione sottostazione (opera civili ed elettriche)",
+    "start": 1.92,
+    "end": 9.05,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "elettriche)",
+    "start": 2.06,
+    "end": 8.91,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Trasporto e Montaggio Aerogeneratori",
+    "start": 5.02,
+    "end": 10.29,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Opere RTN",
+    "start": 5.96,
+    "end": 10.29,
+    "level": 0,
+    "summary": false
+   },
+   {
+    "name": "Ripristino, avviamento e collaudo",
+    "start": 9.07,
+    "end": 10.29,
+    "level": 0,
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 10.29,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/770370",
+   "page": 6,
+   "document": "Cronoprogramma dei lavori",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "M1",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "M2",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "M3",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "M4",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "M5",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "M6",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "M7",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "M8",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "M9",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "M10",
+     "start": 9.0,
+     "end": 10.0
+    }
+   ],
+   "unita": "mesi"
+  },
+  "duration": {
+   "text": "12 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 20 giorni (2), 4 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/770378",
+    "page": 32,
+    "document": "Studio di Impatto Ambientale - Quadro di riferimento Progettuale",
+    "excerpt": "alla entrata in esercizio dell’impianto. Considerando che la fase di progettazione esecutiva si avvierà sei mesi prima dell’apertura del cantiere possiamo considerare 12 mesi come durata effettiva delle attività lavorati"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma dei lavori",
+   "url": "https://va.mite.gov.it/File/Documento/770370"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "diagramma vettoriale"
+ },
+ "documentazione": {
+  "documenti": 213,
+  "pagine": 1927,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "AEI WIND PROJECT III S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 33.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "NARDÒ",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LE",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Puglia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "134 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
