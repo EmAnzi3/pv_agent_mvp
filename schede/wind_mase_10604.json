@@ -5,7 +5,7 @@
  "title": "Progetto per la realizzazione di un Impianto per la produzione di energia elettrica da fonte eolica di potenza pari a 35 MW denominato \"Mistral\", comprensivo delle relative opere connesse ed infrastrutture indispensabili da realizzare nei comuni di Luogosanto, Tempio Pausania e Aglientu (SS).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10604",
  "source": "mase",
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "5",
    "status": "da verificare",
-   "sub": "7,00 MW ciascuno · altezza mozzo 115 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 27 (44), 4 (35), 2 (33)",
+   "sub": "7,00 MW ciascuno · altezza mozzo 200 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 27 (54), 4 (41), 2 (34)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/983400",
     "page": 1,
@@ -82,7 +82,7 @@
   "coordinate": {
    "lat": 40.54803,
    "lon": 8.34357,
-   "tipo": "centro della tavola georeferenziata di progetto (162 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (187 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1097911",
     "page": 118,
@@ -94,19 +94,73 @@
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
-   "lat": 40.56662,
-   "lon": 8.41333,
+   "lat": 40.237,
+   "lon": 7.97561,
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1268445",
-    "page": 110,
-    "document": "Integrazioni del 17/06/2025 - Piano di Monitoraggio Ambientale",
-    "excerpt": "450347.66"
+    "url": "https://va.mite.gov.it/File/Documento/1268619",
+    "page": 12,
+    "document": "Integrazioni del 17/06/2025 - Approfondimenti Tecnici sulle Soluzioni di Ormeggio",
+    "excerpt": "411985"
    },
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.56662,8.41333"
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=40.23700,7.97561"
   },
   "lotti": []
  },
  "soggetti": [
+  {
+   "name": "Parco Eolico Flottante Mistral S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Progettista"
+   ],
+   "vat": "17481551004",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Dell'Arte 25 00144 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "parcoeolicomistral@legalmail.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1209089",
+      "page": 1,
+      "document": "Richiesta Integrazioni da CTPNRR-PNIEC",
+      "excerpt": "Alla Società Parco Eolico Flottante Mistral S.r.l. parcoeolicomistral@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "424cea02.00d49416.b30b9609.07ae7bdc.posta-certificata@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1268441",
+      "page": 299,
+      "document": "Integrazioni del 17/06/2025 - Riscontro alla Richiesta di Integrazioni CTPNRR-PNIEC",
+      "excerpt": "è stato consegnato nella casella di destinazione. Identificativo messaggio: 424CEA02.00D49416.B30B9609.07AE7BDC.posta-certificata@legalmail.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0650514225",
+     "occurrences": 42,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1097905",
+      "page": 2,
+      "document": "ID_VIP 9247 Chiarimenti Esito Valutazione Scoping",
+      "excerpt": "Sede Legale: Via Achille Campanile, 73 – 00144 Roma Tel. +39 06 50514225 - Fax +39 06 5014551"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1097906",
+    "page": 26,
+    "document": "Studio di Impatto Ambientale (SIA) - VOLUME 1",
+    "excerpt": "Società Proponente Il soggetto proponente dell’iniziativa è la Società Parco Eolico Flottante Mistral S.r.l. avente sede legale ed"
+   }
+  },
   {
    "name": "Engie Mistral S.r.l.",
    "kind": "società",
@@ -167,59 +221,6 @@
    "source": {
     "document": "scheda ufficiale del procedimento",
     "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10604"
-   }
-  },
-  {
-   "name": "Parco Eolico Flottante Mistral S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": "17481551004",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Via Dell'Arte 25 00144 Roma Rm",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "parcoeolicomistral@legalmail.it",
-     "occurrences": 2,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1209089",
-      "page": 1,
-      "document": "Richiesta Integrazioni da CTPNRR-PNIEC",
-      "excerpt": "Alla Società Parco Eolico Flottante Mistral S.r.l. parcoeolicomistral@legalmail.it"
-     }
-    },
-    {
-     "type": "PEC",
-     "value": "424cea02.00d49416.b30b9609.07ae7bdc.posta-certificata@legalmail.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1268441",
-      "page": 299,
-      "document": "Integrazioni del 17/06/2025 - Riscontro alla Richiesta di Integrazioni CTPNRR-PNIEC",
-      "excerpt": "è stato consegnato nella casella di destinazione. Identificativo messaggio: 424CEA02.00D49416.B30B9609.07AE7BDC.posta-certificata@legalmail.it"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "0650514225",
-     "occurrences": 42,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1097905",
-      "page": 2,
-      "document": "ID_VIP 9247 Chiarimenti Esito Valutazione Scoping",
-      "excerpt": "Sede Legale: Via Achille Campanile, 73 – 00144 Roma Tel. +39 06 50514225 - Fax +39 06 5014551"
-     }
-    }
-   ],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1097906",
-    "page": 26,
-    "document": "Studio di Impatto Ambientale (SIA) - VOLUME 1",
-    "excerpt": "Società Proponente Il soggetto proponente dell’iniziativa è la Società Parco Eolico Flottante Mistral S.r.l. avente sede legale ed"
    }
   },
   {
@@ -1151,9 +1152,9 @@
  },
  "documentazione": {
   "documenti": 986,
-  "pagine": 9470,
+  "pagine": 10519,
   "completa": false,
-  "da_leggere": 387
+  "da_leggere": 89
  },
  "confronto": [
   {
