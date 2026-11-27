@@ -5,14 +5,14 @@
  "title": "Progetto di nuovo parco eolico denominato \"SV6 BRIC DEI MORI\" e relative opere connesse nei comuni di Pontinvrea e Cairo Montenotte (SV)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11186",
  "source": "mase",
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "sintesi": [
   {
    "key": "potenza",
    "label": "Potenza",
    "status": "da documenti",
    "value": "43,4 MW",
-   "sub": "Dagli elaborati (9 occorrenze); il titolo non indica la potenza; altri valori: 1 MW, 2 MW, 3 MW",
+   "sub": "Dagli elaborati (17 occorrenze); il titolo non indica la potenza; altri valori: 1 MW, 2 MW, 3 MW",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1160548",
     "page": 19,
@@ -25,7 +25,7 @@
    "label": "Aerogeneratori",
    "value": "7",
    "status": "da documenti",
-   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 3 (3), 10 (2), 26 (2)",
+   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 3 (9), 2 (7), 5 (6)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1160611",
     "page": 2,
@@ -50,7 +50,7 @@
    "label": "Durata cantiere",
    "value": "30 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (3), 490 giorni (circa 16 mesi) (1), 12 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (3), 12 mesi (2), 98 giorni (circa 3 mesi) (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1160547",
     "page": 61,
@@ -135,7 +135,7 @@
    }
   },
   {
-   "name": "Ing. Silvio Mario Bauducco",
+   "name": "Ing. Silvio Mario Bauducco Ing",
    "kind": "persona",
    "roles": [
     "Progettista"
@@ -145,7 +145,19 @@
    "verified": false,
    "esecuzione": null,
    "office": null,
-   "contacts": [],
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0116052113",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1160529",
+      "page": 1,
+      "document": "TIPICO AEROGENERATORE",
+      "excerpt": "Sede Amministrativa via Maroncelli, 23 10024 Moncalieri (TO) Ing. Silvio Mario Bauducco Ing. Occhiuto Felice tel 011.6052113 - 011.6059915 e-mail: amministrazione@bautel.it Arch. Ostino Paolo"
+     }
+    }
+   ],
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1247552",
     "page": 1,
@@ -174,6 +186,33 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Bautel S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10009540013",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Maroncelli 23 10024 Moncalieri To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "amministrazione@bautel.it",
+     "occurrences": 714,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1247552",
+      "page": 1,
+      "document": "Integrazioni del 04/04/2025 - Inquadramento punti analizzati analisi visiva Piemonte",
+      "excerpt": "Sede Amministrativa via Maroncelli, 23 10024 Moncalieri (TO) tel 011.6052113 - 011.6059915 e-mail: amministrazione@bautel.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Tecnogaia S.r.l.",
    "kind": "società",
@@ -214,7 +253,7 @@
     {
      "type": "E-mail",
      "value": "emmecsris@gmail.com",
-     "occurrences": 7,
+     "occurrences": 10,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1160551",
       "page": 1,
@@ -294,6 +333,30 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "Arch. Giorgia Vecchi",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0198313328",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1253083",
+      "page": 1,
+      "document": "Osservazioni della Provincia di Savona in data 14/05/2025",
+      "excerpt": "Ing. Chiara Vacca Arch. Giorgia Vecchi (tel. 019 8313328)"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -321,7 +384,7 @@
   "duration": {
    "text": "30 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (3), 1 mese (1), 490 giorni (circa 16 mesi) (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (3), 12 mesi (2), 98 giorni (circa 3 mesi) (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1160547",
     "page": 61,
@@ -346,9 +409,9 @@
  },
  "documentazione": {
   "documenti": 422,
-  "pagine": 2308,
-  "completa": false,
-  "da_leggere": 122
+  "pagine": 3428,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -388,7 +451,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "3009 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "3373 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
