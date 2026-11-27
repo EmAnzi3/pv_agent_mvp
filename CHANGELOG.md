@@ -4,6 +4,8 @@ Formato consigliato: voci brevi, orientate a cosa cambia per il progetto.
 
 ## Unreleased
 
+- 2026-11-27 — Sardegna: lo stesso impianto presente sia tra gli avvisi sia nella ricerca progetti non genera più due record (es. «ORI 1» 44,7426 MWp; Inconel, Sassari, 24,893 MWp). Serve stessa potenza più un altro indizio (nome dell'impianto, proponente o un comune); la riga della ricerca completa i campi vuoti dell'avviso (proponente, comuni, provincia) e viene scartata. Al primo aggiornamento il report segnerà le righe doppie come rimosse.
+
 - 2026-11-27 — Report cambiamenti FV: i titoli delle sezioni «Avanzamenti verso il cantiere» e «Progetti realizzati» mostravano il link dell'ultimo progetto della tabella (variabile sovrascritta nel ciclo). Sardegna: proponente letto anche con forma societaria troncata nell'avviso («proposto dalla Società CCEN ORISTANO 1 S.r., denominato…» → «CCEN ORISTANO 1 S.r.l.»); il testo libero dopo «dalla Società» si ferma a «denominato» / «con sede».
 
 - 2026-11-23 — `aggiorna_dashboard_senza_docker.bat` e `aggiorna_wind_radar.bat` scaricano da soli l'ultima versione del codice all'avvio (`scripts/pull_before_run.bat`, `git pull --ff-only`). Se ci sono risultati di un run precedente non pubblicati non scaricano nulla e avvisano (pubblicare prima con GitHub Desktop); se il pull aggiorna il bat stesso chiedono di rilanciarlo; senza git o senza rete proseguono con il codice attuale.
