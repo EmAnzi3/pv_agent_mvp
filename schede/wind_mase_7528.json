@@ -1,0 +1,615 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_7528",
+ "title": "Impianto per la produzione di energia da fonte eolica denominato \"Parco eolico Tuscania\", sito nel Comune di Tuscania (VT) e relative opere di connessione nei Comuni di Tuscania (VT) e Arlena di Castro (VT)",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7528",
+ "source": "mase",
+ "updated": "2026-11-27",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "da documenti",
+   "value": "90 MW",
+   "sub": "Dagli elaborati (251 occorrenze); il titolo non indica la potenza; altri valori: 1 MW, 2 MW, 5 MW",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1454021",
+    "page": 1,
+    "document": "Determina della Presidenza del Consiglio dei Ministri - Progetto di un impianto per la produzione di energia da fonte eolica denominato \"Parco eolico Tuscania\", sito nel Comune di Tuscania (VT) e rela",
+    "excerpt": "un impianto eolico denominato “Parco eolico Tuscania”, di potenza complessiva pari a 90 MW, sito nel comune di Tuscania (VT) e relative opere di connessione nei Comuni di Tuscania (VT) e Arlena di Castro (VT)."
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "16",
+   "status": "da verificare",
+   "sub": "5,62 MW ciascuno · altezza mozzo 165 m · diametro rotore 170 m · Valore più ricorrente negli elaborati; altri valori: 6 (137), 10 (100), 14 (24)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/418544",
+    "page": 1,
+    "document": "Avviso al pubblico del 03/08/2020",
+    "excerpt": "Il progetto è localizzato nella Regione Lazio ed in particolare nel territorio comunale di Tuscania, all’interno del quale ricadono i 16 aerogeneratori da 5,625 MW, per una potenza complessiva pari a 90 MW. Il progetto p"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1454023",
+    "page": 14,
+    "document": "Allegato alla Determina della Presidenza del Consiglio dei Ministri - Parere MiC del 19/04/2024",
+    "excerpt": "10/15 m in meno rispetto al modello Hiliade-X (260 m) previsto per il Dogger Bank wind park, impianto offshore"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "18 mesi",
+   "status": "da documenti",
+   "sub": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/773022",
+    "page": 40,
+    "document": "00_-_PMA_Maggio_2022",
+    "excerpt": "varie attività, considerando secondo le previsioni del cronoprogramma di progetto, una durata della fase di cantiere di 18 mesi (vedi allegato A della relazione tecnica). Contestualmente alla stesura del piano di monitor"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Lazio",
+  "provincia": "VT",
+  "comuni": [
+   "Tuscania"
+  ],
+  "coordinate": {
+   "lat": 42.47327,
+   "lon": 17.87128,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (3 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/417944",
+    "page": 52,
+    "document": "RELAZIONE DI PREVISIONE DELL'IMPATTO ACUSTICO DELL'IMPIANTO",
+    "excerpt": "735156"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=42.47327,17.87128",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "WPD SAN Giuliano S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "15443461007",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Viale Luca Gaurico 9-11 00143 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "wpdsangiuliano@legalmail.it",
+     "occurrences": 17,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/820315",
+      "page": 3,
+      "document": "Richiesta integrazioni CTVA",
+      "excerpt": "Alla Società wpd San Giuliano S.r.l. wpdsangiuliano@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/7528"
+   }
+  },
+  {
+   "name": "Dott. Ing. Nicola Forte",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/417954",
+    "page": 1,
+    "document": "STUDIO DI IMPATTO AMBIENTALE - QUADRO PROGRAMMATICO",
+    "excerpt": "Progettista Dott. Ing. Nicola FORTE"
+   }
+  },
+  {
+   "name": "Geovit S.a.s.",
+   "kind": "società",
+   "roles": [
+    "Impresa esecutrice (indicata negli elaborati)"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/652717",
+      "page": 88,
+      "document": "Integrazioni del 30/05/2022 - GE_TSC01_PD_0_2_R01_signed",
+      "excerpt": "IMPRESA AFFIDATARIA - ESECUTRICE: GEOVIT SAS - FB. S.r.l."
+     }
+    }
+   ],
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/652717",
+    "page": 88,
+    "document": "Integrazioni del 30/05/2022 - GE_TSC01_PD_0_2_R01_signed",
+    "excerpt": "IMPRESA AFFIDATARIA - ESECUTRICE: GEOVIT SAS - FB. S.r.l."
+   }
+  },
+  {
+   "name": "Ing. Lorenzo Longo Dott",
+   "kind": "persona",
+   "roles": [
+    "Geologo"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/417835",
+    "page": 1,
+    "document": "RELAZIONE GEOLOGICA E STUDIO DI COMPATIBILITA' GEOMORFOLOGICA",
+    "excerpt": "Amministratore Geologo Ing. Lorenzo LONGO Dott. Geol. Stefano FINAMORE"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "TEN Project S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01465940623",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Localita' Chianarile 82010 San Martino Sannita Bn",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@tenproject.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/417920",
+      "page": 2,
+      "document": "VERIFICA PRELIMINARE ENAV",
+      "excerpt": "Mail: info@tenproject.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Idnamic Italia S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "01474550629",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Strada Statale Area Pip Ss 212 Km 9 82020 Pietrelcina Bn",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "italia@idnamic.com",
+     "occurrences": 19,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/773027",
+      "page": 1,
+      "document": "05_-_Report_install_Anem",
+      "excerpt": "Tel. +39 0824 983550 - Fax. +39 0824 983563 E-mail: italia@idnamic.com Sito Web: www.idnamic.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0824983550",
+     "occurrences": 19,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/773027",
+      "page": 1,
+      "document": "05_-_Report_install_Anem",
+      "excerpt": "82020 Pietrelcina (BN) – ITALY Tel. +39 0824 983550 - Fax. +39 0824 983563"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Soil Project S.a.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@soilprojectsas.it",
+     "occurrences": 37,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/652717",
+      "page": 44,
+      "document": "Integrazioni del 30/05/2022 - GE_TSC01_PD_0_2_R01_signed",
+      "excerpt": "email: info@soilprojectsas.it; P.I. 01515280624"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "08241816668",
+     "occurrences": 51,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/652717",
+      "page": 44,
+      "document": "Integrazioni del 30/05/2022 - GE_TSC01_PD_0_2_R01_signed",
+      "excerpt": "Viale Europa snc, loc. Cubante, 82018 Calvi (BN) Tel: 0824 1816668; info: www.soilprojectsas.it;"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3406867752",
+     "occurrences": 35,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/652717",
+      "page": 47,
+      "document": "Integrazioni del 30/05/2022 - GE_TSC01_PD_0_2_R01_signed",
+      "excerpt": "Viale Europa snc - Loc. Cubante, 82018 CALVI (BN) Tel: 0824 1816668; cell: 340 6867752 - 333 1153056; info: www.soilprojectsas.it;"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Agr. Francesco Violani",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3290960658",
+     "occurrences": 63,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/533561",
+      "page": 2,
+      "document": "Integrazioni del 30/08/2021 - GE_TSC01_PD_Punto_8-Perizie_demaniali",
+      "excerpt": "Dr Agr. Francesco Violani Via del Pincio 28/M – tel. 3290960658"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Sergio Pregagnoli",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sergiopregagnoli@hotmail.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/533543",
+      "page": 1,
+      "document": "Integrazioni del 30/08/2021 - Riscontro_epistolare_su_CatastoGregoriano_con_ArchivioStato",
+      "excerpt": "Inviato: mercoledì 26 maggio 2021 18:02 A: sergiopregagnoli@hotmail.com <sergiopregagnoli@hotmail.com>"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3384699279",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/533543",
+      "page": 4,
+      "document": "Integrazioni del 30/08/2021 - Riscontro_epistolare_su_CatastoGregoriano_con_ArchivioStato",
+      "excerpt": "Servizi per l'archeologia cell. +39.338.4699279"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alla DCS S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "dessoc@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/434805",
+      "page": 4,
+      "document": "Osservazioni dell'Associazione Gruppo di Intervento Giuridico Tramite Ufficio di Gabinetto in 07/10/2020",
+      "excerpt": "Alla DCS Srl dessoc@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Geovit S.a.s.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/652717",
+     "page": 88,
+     "document": "Integrazioni del 30/05/2022 - GE_TSC01_PD_0_2_R01_signed",
+     "excerpt": "IMPRESA AFFIDATARIA - ESECUTRICE: GEOVIT SAS - FB. S.r.l."
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": "18 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/417833",
+   "page": 55,
+   "document": "RELAZIONE TECNICA",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "18 mesi",
+   "status": "da documenti",
+   "hint": null,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/773022",
+    "page": 40,
+    "document": "00_-_PMA_Maggio_2022",
+    "excerpt": "varie attività, considerando secondo le previsioni del cronoprogramma di progetto, una durata della fase di cantiere di 18 mesi (vedi allegato A della relazione tecnica). Contestualmente alla stesura del piano di monitor"
+   }
+  },
+  "milestones": [],
+  "document": null,
+  "note": "Il cronoprogramma riporta solo le durate delle fasi, senza date né sequenza: non è possibile disegnare il Gantt.",
+  "altri": [],
+  "durate_fasi": [
+   {
+    "name": "AVVIO CANTIERE",
+    "duration": "3 giorni",
+    "months": 0.1
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO INTERNO",
+    "duration": "40 giorni",
+    "months": 1.32
+   },
+   {
+    "name": "REALIZZAZIONE CAVIDOTTO ESTERNO",
+    "duration": "60 giorni",
+    "months": 1.97
+   },
+   {
+    "name": "SOTTOSTAZIONE",
+    "duration": "270 giorni",
+    "months": 8.88
+   },
+   {
+    "name": "Opere civili sottostazione",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "Opere elettriche sottostazione",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "Connessione alla rete della sottostazione",
+    "duration": "30 giorni",
+    "months": 0.99
+   },
+   {
+    "name": "ADEGUAMENTO STRADE ESISTENTI",
+    "duration": "6 giorni",
+    "months": 0.2
+   },
+   {
+    "name": "Ingresso dalle SP",
+    "duration": "6 giorni",
+    "months": 0.2
+   },
+   {
+    "name": "REALIZZAZIONE STRADE E PIAZZOLE",
+    "duration": "75 giorni",
+    "months": 2.47
+   },
+   {
+    "name": "SCAVI FONDAZIONI TORRI",
+    "duration": "50 giorni",
+    "months": 1.64
+   },
+   {
+    "name": "TORRI IMPIANTO",
+    "duration": "50 giorni",
+    "months": 1.64
+   },
+   {
+    "name": "PALI DI FONDAZIONI",
+    "duration": "75 giorni",
+    "months": 2.47
+   },
+   {
+    "name": "PALI DI CONTRASTO PER PROVA DI CARICO",
+    "duration": "10 giorni",
+    "months": 0.33
+   },
+   {
+    "name": "PALI DI FONDAZIONE TORRI IMPIANTO",
+    "duration": "75 giorni",
+    "months": 2.47
+   },
+   {
+    "name": "PROVA DI CARICO SU PALI",
+    "duration": "18 giorni",
+    "months": 0.59
+   },
+   {
+    "name": "PLINTI DI FONDAZIONE",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "PLINTO DI FOND. TORRI IMPIANTO",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "INSTALLAZIONE AEROGENERATORI",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "TORRE IMPIANTO",
+    "duration": "120 giorni",
+    "months": 3.95
+   },
+   {
+    "name": "Operazioni di collaudo",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "TAKING OVER",
+    "duration": "20 giorni",
+    "months": 0.66
+   },
+   {
+    "name": "ESERCIZIO DELL'IMPIANTO",
+    "duration": "10 giorni",
+    "months": 0.33
+   }
+  ],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 533,
+  "pagine": 5104,
+  "completa": false,
+  "da_leggere": 233
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "wpd San Giuliano S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": null,
+   "esito": "conflittuale"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "TUSCANIA",
+   "esito": "confermato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "VT",
+   "esito": "confermato"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Lazio",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Potenza",
+   "reason": "non indicata nel titolo: valore ricavato dagli elaborati"
+  },
+  {
+   "label": "Aerogeneratori",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "164 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Geovit S.a.s.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
