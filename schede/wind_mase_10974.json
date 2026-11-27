@@ -5,7 +5,7 @@
  "title": "Progetto di un nuovo parco eolico denominato \"Sassello Forte Lodrino\" e relative opere connesse, on potenza massima complessiva di 31 MW, sito nel Comune di Sassello (SV)",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10974",
  "source": "mase",
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "5",
    "status": "da documenti",
-   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 3 (3), 10 (1), 16 (1)",
+   "sub": "6,20 MW ciascuno · altezza mozzo 125 m · diametro rotore 162 m · Valore prevalente negli elaborati; altri valori: 3 (4), 4 (3), 6 (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1155361",
     "page": 22,
@@ -36,8 +36,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "30 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 3 mesi (1), 12 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1155538",
     "page": 10,
@@ -85,7 +85,7 @@
     {
      "type": "PEC",
      "value": "17piuenergia@pec.it",
-     "occurrences": 1,
+     "occurrences": 3,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1212165",
       "page": 1,
@@ -111,17 +111,6 @@
    "esecuzione": null,
    "office": null,
    "contacts": [
-    {
-     "type": "E-mail",
-     "value": "amministrazione@bautel.it",
-     "occurrences": 5,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/1155403",
-      "page": 1,
-      "document": "Inquadr cab di consegna su curve di livello",
-      "excerpt": "Sede Amministrativa via Maroncelli, 23 10024 Moncalieri (TO) Ing. Silvio Mario Bauducco Ing. Occhiuto Felice tel 011.6052113 - 011.6059915 e-mail: amministrazione@bautel.it Arch. Ostino Paolo"
-     }
-    },
     {
      "type": "Telefono",
      "value": "0116052113",
@@ -162,6 +151,33 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Bautel S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10009540013",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Maroncelli 23 10024 Moncalieri To",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "amministrazione@bautel.it",
+     "occurrences": 621,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1257847",
+      "page": 1,
+      "document": "Integrazioni del 15/05/2025 - analisi dei punti di crinale piu bassi_signed",
+      "excerpt": "Sede Amministrativa via Maroncelli, 23 10024 Moncalieri (TO) tel 011.6052113 - 011.6059915 e-mail: amministrazione@bautel.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "Dott. For. Marco Calandri",
    "kind": "persona",
@@ -338,8 +354,8 @@
   "asse": null,
   "duration": {
    "text": "30 mesi",
-   "status": "da documenti",
-   "hint": null,
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 2 mesi (1), 3 mesi (1), 12 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1155538",
     "page": 10,
@@ -364,9 +380,9 @@
  },
  "documentazione": {
   "documenti": 682,
-  "pagine": 2300,
-  "completa": false,
-  "da_leggere": 82
+  "pagine": 2962,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -397,8 +413,12 @@
  ],
  "da_verificare": [
   {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "2887 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "3053 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
