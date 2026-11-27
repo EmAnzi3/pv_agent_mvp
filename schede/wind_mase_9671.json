@@ -1,0 +1,166 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_9671",
+ "title": "Progetto di un impianto eolico offshore denominato \"Mazara del Vallo Offshore Wind Project\" costituito da 74 aerogeneratori per una potenza complessiva di 1110 MW",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9671",
+ "source": "mase",
+ "updated": "2026-11-27",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "1.110 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9671",
+    "excerpt": "1110 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "74",
+   "status": "da documenti",
+   "sub": "15,00 MW ciascuno · altezza mozzo 143 m · diametro rotore 240 m",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/843602",
+    "page": 2,
+    "document": "Contributi della Regione Siciliana - Soprintendenza del Mare in data 04/05/2023",
+    "excerpt": "Wind Project” prevede “prevede la realizzazione di un parco eolico al largo della costa della Siciliana composto da 74 aerogeneratori per una potenza complessiva di 1110 MW, con fondazioni galleggianti ancorate al fondal"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/843602",
+    "page": 1,
+    "document": "Contributi della Regione Siciliana - Soprintendenza del Mare in data 04/05/2023",
+    "excerpt": "offshore denominato \"Mazara del Vallo Offshore Wind Project” costituito da 74"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "TP",
+  "comuni": [
+   "Partanna",
+   "Campobello Di Mazara",
+   "Castelvetrano",
+   "Mazara Del Vallo"
+  ],
+  "coordinate": null,
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Partanna%2C+TP%2C+Sicilia",
+  "maps_precision": "comune",
+  "mappa_ufficiale": null,
+  "connessione": null,
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Mazar Wind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "aquileiaenergy@legalmail.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/829046",
+      "page": 1,
+      "document": "Contributi della Capitaneria di Porto di Trapani in data 05/04/2023",
+      "excerpt": "Mazar Wind S.r.l. aquileiaenergy@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9671"
+   }
+  }
+ ],
+ "altri_soggetti": [],
+ "stato": null,
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [],
+  "durata_cantiere": null,
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": null,
+  "asse": null,
+  "duration": null,
+  "milestones": [],
+  "document": null,
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 43,
+  "pagine": 456,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Mazar Wind S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 1110.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "MAZARA DEL VALLO",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "TP",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Recapiti",
+   "reason": "8 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
