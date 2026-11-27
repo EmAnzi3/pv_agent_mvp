@@ -5,7 +5,7 @@
  "title": "PAUR per progetto ammodernamento parco eolico esistente nel Comune di Casalbore (AV) alla loc. Piano Nicola per una pot. di 21,6 MW e opere connesse nei Comuni di San Giorgio la Molara, Molinara e Foiano di Val Fortore",
  "source_url": "https://viavas.regione.campania.it/opencms/opencms/VIAVAS/VIA_files_new/Progetti/prg_10038_prot_2024.564287_del_27-11-2024.via",
  "source": "campania",
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "3",
    "status": "da verificare",
-   "sub": "7,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore più ricorrente negli elaborati; altri valori: 18 (50), 4 (3), 22 (3)",
+   "sub": "7,20 MW ciascuno · altezza mozzo 119 m · diametro rotore 162 m · Valore più ricorrente negli elaborati; altri valori: 18 (84), 56 (10), 1 (10)",
    "source": {
     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2026_10_14_Verbale%201a%20seduta%20CdS_10038.pdf')/$value",
     "page": 8,
@@ -33,11 +33,36 @@
    }
   },
   {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Fotovoltaico galleggiante",
+   "status": "da documenti",
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2026_06_17%20Integrazioni%20tecniche/USVA%20306.00.00/WEC_SIA_REL%2001_Rev1%20Relazione%20SIA.pdf')/$value",
+    "page": 139,
+    "document": "WEC_SIA_REL 01_Rev1 Relazione SIA.pdf",
+    "excerpt": "infissi realizzati in alluminio anodizzato. Nei locali apparati è stato posto in opera un pavimento modulare flottante per consentire il"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "1 MW",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 8,6 MW (1), 4 MW (1)",
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/00%20Progettazione/WEC_PD_REL%2005_Relazione%20tecnico%20impiantistica.pdf')/$value",
+    "page": 8,
+    "document": "WEC_PD_REL 05_Relazione tecnico impiantistica.pdf",
+    "excerpt": "In particolare la soluzione benestariata da TERNA alla società WEF, cod Pratica: 202000284, prevede l’allaccio di un impianto eolico da 11MW integrato con un sistema di accumulo da 1 MW."
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "7 mesi",
    "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1), 8 mesi (1)",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (7), 8 mesi (3), 180 giorni (circa 6 mesi) (2)",
    "source": {
     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_01_22%20perfezionamento%20documentale/ENAC-ENAV/WEC_PD_REL%2001_Relazione%20tecnica%20descrittiva.pdf')/$value",
     "page": 60,
@@ -53,9 +78,9 @@
    "CASALBORE"
   ],
   "coordinate": {
-   "lat": 41.27268,
-   "lon": 14.9936,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (43 riferimenti concordi)",
+   "lat": 41.27382,
+   "lon": 14.99486,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (66 riferimenti concordi)",
    "source": {
     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2026_06_17%20Integrazioni%20tecniche/USVA%20306.00.00/Relazione%20monitoraggio%20ante%20operam.pdf')/$value",
     "page": 13,
@@ -63,7 +88,7 @@
     "excerpt": "497338"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.27268,14.99360",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=41.27382,14.99486",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": null,
@@ -74,8 +99,7 @@
    "name": "Wind Energy Casalbore S.r.l.",
    "kind": "società",
    "roles": [
-    "Proponente",
-    "Progettista"
+    "Proponente"
    ],
    "vat": "03159250616",
    "vat_group": false,
@@ -86,12 +110,23 @@
     {
      "type": "PEC",
      "value": "protocollo.casalbore@asmepec.it",
-     "occurrences": 20,
+     "occurrences": 30,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2026_08_17%20nota%20SABAP%20prot_n_0688950_2026_Stampa%20copia.pdf')/$value",
       "page": 2,
       "document": "2026_08_17 nota SABAP prot_n_0688950_2026_Stampa copia.pdf",
       "excerpt": "Comune di Casalbore protocollo.casalbore@asmepec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "utc.casalbore@asmepec.it",
+     "occurrences": 3,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2026_06_17%20Integrazioni%20tecniche/UOS%20208.03.01/Pas%20Comune%20di%20Casalbore.pdf')/$value",
+      "page": 4,
+      "document": "Pas Comune di Casalbore.pdf",
+      "excerpt": "~ Provincia di Avellino DX utc@comune.casalbore.av.it Ufficio Tecnico Comunale al utc.casalbore@asmepec.it"
      }
     },
     {
@@ -119,17 +154,6 @@
     {
      "type": "PEC",
      "value": "giuseppe.virgilio@geopec.it",
-     "occurrences": 1,
-     "source": {
-      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_04_24%20parere%20CMFortore%20prot_01788%20del%2024-04-2025.pdf')/$value",
-      "page": 1,
-      "document": "2025_04_24 parere CMFortore prot_01788 del 24-04-2025.pdf",
-      "excerpt": "comune.foianovf@asmepec.it windenergycasalbore@cert.gruppoes.com giuseppe.virgilio@geopec.it massimo.paradiso@geopec.it fbn42853@pec.carabinieri.it"
-     }
-    },
-    {
-     "type": "PEC",
-     "value": "massimo.paradiso@geopec.it",
      "occurrences": 1,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_04_24%20parere%20CMFortore%20prot_01788%20del%2024-04-2025.pdf')/$value",
@@ -170,7 +194,7 @@
     {
      "type": "PEC",
      "value": "r.quarantiello@pec.epap.it",
-     "occurrences": 3,
+     "occurrences": 12,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/00%20Progettazione/WEM_PD_GEO%2003_Carta%20idrogeologica.pdf')/$value",
       "page": 1,
@@ -181,7 +205,7 @@
     {
      "type": "E-mail",
      "value": "roberto.quarantiello@gmail.com",
-     "occurrences": 3,
+     "occurrences": 12,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/00%20Progettazione/WEM_PD_GEO%2003_Carta%20idrogeologica.pdf')/$value",
       "page": 1,
@@ -227,6 +251,98 @@
     "document": "WEM_PD_GEO 01_Relazione geologica.pdf",
     "excerpt": "impresa esecutrice: Trivel Sondaggi s.a.s. Data: Giugno 2004 Coordinate: Redattore:"
    }
+  },
+  {
+   "name": "Geom. Massimo Paradiso",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "massimo.paradiso@geopec.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_04_24%20parere%20CMFortore%20prot_01788%20del%2024-04-2025.pdf')/$value",
+      "page": 1,
+      "document": "2025_04_24 parere CMFortore prot_01788 del 24-04-2025.pdf",
+      "excerpt": "<windenergycasalbore@cert.gruppoes.com>, rinaldo.cristini@pec.it <rinaldo.cristini@pec.it>, massimo.paradiso@geopec.it <massimo.paradiso@geopec.it>,"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/15%20Stmg/REL%2001_Relazione%20tecnica.pdf')/$value",
+    "page": 1,
+    "document": "REL 01_Relazione tecnica.pdf",
+    "excerpt": "PROGETTISTI Geom. Massimo Paradiso"
+   }
+  },
+  {
+   "name": "Arch. Rinaldo Cristini",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rinaldo.cristini@pec.it",
+     "occurrences": 8,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_04_24%20parere%20CMFortore%20prot_01788%20del%2024-04-2025.pdf')/$value",
+      "page": 1,
+      "document": "2025_04_24 parere CMFortore prot_01788 del 24-04-2025.pdf",
+      "excerpt": "windenergycasalbore@cert.gruppoes.com <windenergycasalbore@cert.gruppoes.com>, rinaldo.cristini@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "rinaldo.cristini@gmail.com",
+     "occurrences": 3,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/7d1_Modello_dichiarazione_professionista_SIA_SnT_vers4.pdf')/$value",
+      "page": 2,
+      "document": "7d1_Modello_dichiarazione_professionista_SIA_SnT_vers4.pdf",
+      "excerpt": "E-mail: rinaldo.cristini@pec.it PEC: Rinaldo.cristini@gmail.com"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/08%20Nulla%20osta%20ai%20sensi%20dell_articolo%2095%20del%20D.Lgs%20259%20del%202003%20e%20%20TU%201775.33/Dichiarazione%20interferenze%20demanio%20idrico.pdf')/$value",
+    "page": 1,
+    "document": "Dichiarazione interferenze demanio idrico.pdf",
+    "excerpt": "I Progettisti Arch. Rinaldo Cristini"
+   }
+  },
+  {
+   "name": "Ing. Fabio Sarnataro",
+   "kind": "persona",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/00%20Progettazione/WEC_PD_REL%2005_Relazione%20tecnico%20impiantistica.pdf')/$value",
+    "page": 26,
+    "document": "WEC_PD_REL 05_Relazione tecnico impiantistica.pdf",
+    "excerpt": "Il Progettista Ing. Fabio Sarnataro"
+   }
   }
  ],
  "altri_soggetti": [
@@ -243,7 +359,7 @@
     {
      "type": "E-mail",
      "value": "m.paradiso@vpservicesrl.it",
-     "occurrences": 25,
+     "occurrences": 59,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2026_06_17%20Integrazioni%20tecniche/USVA%20306.00.00/WEC_SIA_REL%2003%20Rev%2001_Relazione%20Shodow%20Flickering.pdf')/$value",
       "page": 42,
@@ -254,7 +370,7 @@
     {
      "type": "E-mail",
      "value": "info@vpservicesrl.it",
-     "occurrences": 18,
+     "occurrences": 36,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/00%20Progettazione/WEC_PD_REL%2010_Analisi%20producibilit%C3%A0.pdf')/$value",
       "page": 2,
@@ -265,7 +381,7 @@
     {
      "type": "E-mail",
      "value": "vpservicesrl@email.it",
-     "occurrences": 10,
+     "occurrences": 20,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/00%20Progettazione/WEC_PD_REL%2010_Analisi%20producibilit%C3%A0.pdf')/$value",
       "page": 35,
@@ -330,7 +446,7 @@
     {
      "type": "E-mail",
      "value": "info@soilprojectsas.it",
-     "occurrences": 21,
+     "occurrences": 90,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/00%20Progettazione/WEM_PD_GEO%2001_Relazione%20geologica.pdf')/$value",
       "page": 56,
@@ -341,7 +457,7 @@
     {
      "type": "Telefono",
      "value": "08241816668",
-     "occurrences": 32,
+     "occurrences": 128,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/00%20Progettazione/WEM_PD_GEO%2001_Relazione%20geologica.pdf')/$value",
       "page": 52,
@@ -352,7 +468,7 @@
     {
      "type": "Telefono",
      "value": "3406867752",
-     "occurrences": 29,
+     "occurrences": 116,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/00%20Progettazione/WEM_PD_GEO%2001_Relazione%20geologica.pdf')/$value",
       "page": 52,
@@ -387,7 +503,7 @@
     {
      "type": "E-mail",
      "value": "ing.scia@gmail.com",
-     "occurrences": 3,
+     "occurrences": 4,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2026_06_17%20Integrazioni%20tecniche/2026-06-11_OUT_Riscontro%20nota%20USVA%20Prot.%200668032_25_signed.pdf')/$value",
       "page": 2,
@@ -398,7 +514,7 @@
     {
      "type": "Telefono",
      "value": "3389055174",
-     "occurrences": 1,
+     "occurrences": 2,
      "source": {
       "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2026_06_17%20Integrazioni%20tecniche/2026-06-11_OUT_Riscontro%20nota%20USVA%20Prot.%200668032_25_signed.pdf')/$value",
       "page": 2,
@@ -410,8 +526,8 @@
    "source": null
   },
   {
-   "name": "Arch. Rinaldo Cristini",
-   "kind": "persona",
+   "name": "Direzione e Coordinamento Energia & Servizi S.r.l.",
+   "kind": "società",
    "roles": [],
    "vat": null,
    "vat_group": false,
@@ -420,25 +536,25 @@
    "office": null,
    "contacts": [
     {
-     "type": "PEC",
-     "value": "rinaldo.cristini@pec.it",
-     "occurrences": 7,
+     "type": "E-mail",
+     "value": "info@inenergygroup.it",
+     "occurrences": 5,
      "source": {
-      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_04_24%20parere%20CMFortore%20prot_01788%20del%2024-04-2025.pdf')/$value",
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/10%20Verifica%20assenza%20di%20colture%20DOC%20-%20DOCG/DC%2001_Richiesta%20assenza%20DOC%20DOCG.pdf')/$value",
       "page": 1,
-      "document": "2025_04_24 parere CMFortore prot_01788 del 24-04-2025.pdf",
-      "excerpt": "windenergycasalbore@cert.gruppoes.com <windenergycasalbore@cert.gruppoes.com>, rinaldo.cristini@pec.it"
+      "document": "DC 01_Richiesta assenza DOC DOCG.pdf",
+      "excerpt": "Sito internet: www.inenergygroup.it e-mail: info@inenergygroup.it"
      }
     },
     {
      "type": "E-mail",
-     "value": "rinaldo.cristini@gmail.com",
+     "value": "info@gruppoes.com",
      "occurrences": 3,
      "source": {
-      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/7d1_Modello_dichiarazione_professionista_SIA_SnT_vers4.pdf')/$value",
-      "page": 2,
-      "document": "7d1_Modello_dichiarazione_professionista_SIA_SnT_vers4.pdf",
-      "excerpt": "E-mail: rinaldo.cristini@pec.it PEC: Rinaldo.cristini@gmail.com"
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_01_22%20perfezionamento%20documentale/ENAC-ENAV/SV%2001_2024-10-09%20-%20OUT%20Istanza.pdf')/$value",
+      "page": 1,
+      "document": "SV 01_2024-10-09 - OUT Istanza.pdf",
+      "excerpt": "Sito internet: www.gruppoes.com e-mail: info@gruppoes.com"
      }
     }
    ],
@@ -515,6 +631,41 @@
    "source": null
   },
   {
+   "name": "Sonora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sonora@sonorasri.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_06%20documentazione%20istanza%20prot.reg.%20564287%20del%2028_11_2024/PAUR_VIA_2/07%20Parere%20circa%20la%20compatibilit%C3%A0%20elettromagnetica%20ed%20acustica/WEC_SIA_REL%2006_Relazione%20impatto%20acustico.pdf')/$value",
+      "page": 55,
+      "document": "WEC_SIA_REL 06_Relazione impatto acustico.pdf",
+      "excerpt": "www.sonorasri.com - sonora@sonorasri.com"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0823351196",
+     "occurrences": 5,
+     "source": {
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2026_06_17%20Integrazioni%20tecniche/USVA%20306.00.00/Relazione%20impatto%20acustico%20cantiere.pdf')/$value",
+      "page": 28,
+      "document": "Relazione impatto acustico cantiere.pdf",
+      "excerpt": "Via dei rie 9 - Caserta “ff-~S Sonora S.r.l. Tel 0823 351196 - Fax 0823 351196 QI LAT N°185"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
    "name": "CDG - Anas S.p.A.",
    "kind": "società",
    "roles": [],
@@ -529,7 +680,7 @@
      "value": "posta-certificata@legalmail.it",
      "occurrences": 2,
      "source": {
-      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_30%20nota%20Anas%20prot..2024.1118180.pdf')/$value",
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_01_22%20perfezionamento%20documentale/ANAS/2024_12_30%20nota%20Anas%20prot..2024.1118180.pdf')/$value",
       "page": 1,
       "document": "2024_12_30 nota Anas prot..2024.1118180.pdf",
       "excerpt": "Da Per conto di: anas.campania@postacert.stradeanas.it <posta-certificata@legalmail.it>"
@@ -540,58 +691,10 @@
      "value": "e444e397.0009e7c6.f406b134.a9de768a.posta-certificata@legalmail.it",
      "occurrences": 1,
      "source": {
-      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2024_12_30%20nota%20Anas%20prot..2024.1118180.pdf')/$value",
+      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_01_22%20perfezionamento%20documentale/ANAS/2024_12_30%20nota%20Anas%20prot..2024.1118180.pdf')/$value",
       "page": 1,
       "document": "2024_12_30 nota Anas prot..2024.1118180.pdf",
       "excerpt": "The original message is attached. Message ID: E444E397.0009E7C6.F406B134.A9DE768A.posta-certificata@legalmail.it"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Sonora S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "Telefono",
-     "value": "0823351196",
-     "occurrences": 3,
-     "source": {
-      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2026_06_17%20Integrazioni%20tecniche/USVA%20306.00.00/Relazione%20impatto%20acustico%20cantiere.pdf')/$value",
-      "page": 28,
-      "document": "Relazione impatto acustico cantiere.pdf",
-      "excerpt": "Via dei rie 9 - Caserta “ff-~S Sonora S.r.l. Tel 0823 351196 - Fax 0823 351196 QI LAT N°185"
-     }
-    }
-   ],
-   "source": null
-  },
-  {
-   "name": "Direzione e Coordinamento Energia & Servizi S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "E-mail",
-     "value": "info@gruppoes.com",
-     "occurrences": 2,
-     "source": {
-      "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_01_22%20perfezionamento%20documentale/ENAC-ENAV/SV%2001_2024-10-09%20-%20OUT%20Istanza.pdf')/$value",
-      "page": 1,
-      "document": "SV 01_2024-10-09 - OUT Istanza.pdf",
-      "excerpt": "Sito internet: www.gruppoes.com e-mail: info@gruppoes.com"
      }
     }
    ],
@@ -668,7 +771,7 @@
   "duration": {
    "text": "7 mesi",
    "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (1), 8 mesi (1)",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 18 mesi (7), 8 mesi (3), 1 mese (2)",
    "source": {
     "url": "https://regionecampania.sharepoint.com/sites/VIA-VAS/_api/web/GetFileByServerRelativeUrl('/sites/VIA-VAS/Documenti%20condivisi/02_PAUR/10038/2025_01_22%20perfezionamento%20documentale/ENAC-ENAV/WEC_PD_REL%2001_Relazione%20tecnica%20descrittiva.pdf')/$value",
     "page": 60,
@@ -697,9 +800,9 @@
  },
  "documentazione": {
   "documenti": 605,
-  "pagine": 2791,
+  "pagine": 5220,
   "completa": false,
-  "da_leggere": 305
+  "da_leggere": 5
  },
  "confronto": [
   {
@@ -739,7 +842,7 @@
   },
   {
    "label": "Recapiti",
-   "reason": "452 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "534 recapiti non attribuibili a un soggetto preciso: non mostrati"
   },
   {
    "label": "Trivel Sondaggi S.a.s.",
