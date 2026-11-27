@@ -5,7 +5,7 @@
  "title": "Provvedimento Autorizzatorio Unico Regionale n° G15992 del 20/12/2021 Determinazione n° G09169 del 08/07/2021 Favorevole con prescrizioni Realizzazione impianto FV di circa 8.9 MWp in loc. Fosso Rubinaccio",
  "source_url": "https://regionelazio.box.com/v/VIA-011-2020",
  "source": "lazio",
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "sintesi": [
   {
    "key": "potenza",
@@ -48,8 +48,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "6 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Inizio lavori 19/12/2024 (natura non determinabile) · Valore più ricorrente negli elaborati; altri valori: 30 mesi (1)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2020&file_id=f_614150882568",
     "page": 18,
@@ -98,7 +98,7 @@
     {
      "type": "PEC",
      "value": "studiointhemasrl@legalmail.it",
-     "occurrences": 105,
+     "occurrences": 106,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2020&file_id=f_614149936443",
       "page": 1,
@@ -120,7 +120,7 @@
     {
      "type": "E-mail",
      "value": "carlo.patrizio@studiointhema.it",
-     "occurrences": 5,
+     "occurrences": 6,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2020&file_id=f_614156862807",
       "page": 3,
@@ -210,7 +210,7 @@
     {
      "type": "E-mail",
      "value": "info@sistansgr.com",
-     "occurrences": 7,
+     "occurrences": 8,
      "source": {
       "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2020&file_id=f_614154968724",
       "page": 2,
@@ -279,13 +279,53 @@
     }
    ],
    "source": null
+  },
+  {
+   "name": "scrivente STN 4 S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "stn4@legalmail.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2020&file_id=f_1720603874372",
+      "page": 1,
+      "document": "proponente 1500422.05-12-2024.pdf",
+      "excerpt": "La scrivente STN 4 S.r.l. con sede legale in Roma, Piazza delle Muse 8, codice fiscale, partita IVA e numero di iscrizione al registro delle imprese di Roma n. 15028361002, P.E.C. stn4@legalmail.com, qui"
+     }
+    }
+   ],
+   "source": null
   }
  ],
- "stato": null,
+ "stato": {
+  "level": "date_superate",
+  "label": "Date di progetto superate: verificare lo stato",
+  "reason": "Avvio previsto il 20/12/2024, ma l'iter è proseguito; ultimo documento o atto del 10/12/2025: probabile slittamento, non ancora realizzato o in corso."
+ },
  "esecuzione": null,
  "registro": null,
  "tempistica": {
   "righe": [
+   {
+    "voce": "Inizio lavori",
+    "livello": "documentata",
+    "valore": "19/12/2024",
+    "dettaglio": "natura non determinabile",
+    "source": {
+     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2020&file_id=f_1720603874372",
+     "page": 2,
+     "document": "proponente 1500422.05-12-2024.pdf",
+     "excerpt": "- Il termine di inizio lavori scadrà il 19.12.2024, ossia tre anni dopo l’emissione del PAUR G15992 del 20/12/2024"
+    }
+   },
    {
     "voce": "Atto autorizzativo",
     "livello": "documentata",
@@ -349,8 +389,8 @@
   "asse": null,
   "duration": {
    "text": "6 mesi",
-   "status": "da documenti",
-   "hint": null,
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 30 mesi (1)",
    "source": {
     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2020&file_id=f_614150882568",
     "page": 18,
@@ -358,7 +398,21 @@
     "excerpt": "confinati in cui fossero installati. I lavori di realizzazione del progetto hanno una durata massima prevista pari a circa 6 mesi. Tale durata è condizionata dall’approvvigionamento delle apparecchiature elettriche neces"
    }
   },
-  "milestones": [],
+  "milestones": [
+   {
+    "label": "Inizio lavori",
+    "date": "19/12/2024",
+    "iso": "2024-12-19",
+    "nature": "natura non determinabile",
+    "certain": false,
+    "source": {
+     "url": "https://regionelazio.box.com/index.php?rm=box_download_shared_file&vanity_name=VIA-011-2020&file_id=f_1720603874372",
+     "page": 2,
+     "document": "proponente 1500422.05-12-2024.pdf",
+     "excerpt": "- Il termine di inizio lavori scadrà il 19.12.2024, ossia tre anni dopo l’emissione del PAUR G15992 del 20/12/2024"
+    }
+   }
+  ],
   "document": null,
   "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente).",
   "altri": [],
@@ -367,9 +421,9 @@
  },
  "documentazione": {
   "documenti": 275,
-  "pagine": 1362,
-  "completa": false,
-  "da_leggere": 37
+  "pagine": 1491,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -400,8 +454,16 @@
  ],
  "da_verificare": [
   {
+   "label": "Stato del progetto",
+   "reason": "Avvio previsto il 20/12/2024, ma l'iter è proseguito; ultimo documento o atto del 10/12/2025: probabile slittamento, non ancora realizzato o in corso."
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "282 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "316 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
