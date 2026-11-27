@@ -868,7 +868,8 @@ class SardegnaCollector(BaseCollector):
 
         return None
 
-    LEGAL_FORM = (r"(?:S\.?\s?r\.?\s?l\.?(?:\s?s\.?)?|S\.?\s?p\.?\s?A\.?|S\.?\s?a\.?\s?s\.?|S\.?\s?n\.?\s?c\.?|"
+    # «S.r.» is a truncated «S.r.l.» seen in notices («proposto dalla Società CCEN ORISTANO 1 S.r., denominato»)
+    LEGAL_FORM = (r"(?:S\.?\s?r\.?\s?l\.?(?:\s?s\.?)?|S\.\s?r\.|S\.?\s?p\.?\s?A\.?|S\.?\s?a\.?\s?s\.?|S\.?\s?n\.?\s?c\.?|"
                   r"S\.?\s?c\.?\s?a\.?\s?r\.?\s?l\.?|S\.?\s?C\.?\s?p\.?\s?A\.?|GmbH|Ltd\.?|B\.?V\.?|S\.?A\.?S\.?|SE)")
 
     def _extract_proponent(self, text: str) -> str | None:
@@ -879,6 +880,7 @@ class SardegnaCollector(BaseCollector):
                           text, flags=re.IGNORECASE)
             if m:
                 value = self._clean_text(m.group(1)).strip(" ,:;")
+                value = re.sub(r"\bS\.\s?r\.$", "S.r.l.", value)
                 if 2 <= len(value) <= 150:
                     return value
         patterns = [
@@ -886,7 +888,7 @@ class SardegnaCollector(BaseCollector):
             r"Societa Proponente\s*:?\s*(.+?)(?:,\s+per\s+la\s+quale|;\s+per\s+la\s+quale|\s+per\s+la\s+quale|$)",
             r"La società\s+(.+?)(?:,\s+in data|\s+in data|\s+ha\s+(?:depositato|trasmesso|presentato|avviato|richiesto|chiesto|inoltrato)|\s+Consulta\b|$)",
             r"La Società\s+(.+?)(?:,\s+in data|\s+in data|\s+ha\s+(?:depositato|trasmesso|presentato|avviato|richiesto|chiesto|inoltrato)|\s+Consulta\b|$)",
-            r"dalla Società\s+(.+?)(?:,\s+per|\s+per\s+la\s+quale|$)",
+            r"dalla Società\s+(.+?)(?:,\s+per|\s+per\s+la\s+quale|,?\s+denominat|,\s+con\s+sede|$)",
             r"dal Proponente\s+(.+?)(?:,\s+per|\s+per\s+la\s+quale|$)",
             r"Proponente\s*:?\s*(.+?)(?:\s*\||,|;|$)",
         ]

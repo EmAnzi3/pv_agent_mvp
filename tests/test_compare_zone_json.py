@@ -59,6 +59,13 @@ class ZoneJsonTest(unittest.TestCase):
         self.assertEqual(data["realizzati"][0]["what"], "Realizzato o in esercizio")
         self.assertEqual(data["avanzamenti"], [])
 
+    def test_progress_heading_is_not_the_last_title(self):
+        rows = [{"record": {"title": "Impianto Vico", "url": "https://x/1", "source": "lazio"},
+                 "diffs": [{"label": "Fase", "old": "In iter", "new": "Autorizzato"}]}]
+        html = cjr.html_progress_table(rows, "nota", "Progetti realizzati")
+        self.assertIn("<h2>Progetti realizzati (1)</h2>", html)
+        self.assertIn("<h2>Avanzamenti verso il cantiere (1)</h2>", cjr.html_progress_table(rows, "nota"))
+
     def test_generated_at_reads_old_snapshot(self):
         old = self.tmp / "old.json"
         old.write_text(json.dumps({"summary": {"generated_at": "2026-11-13 08:47:54"}, "records": []}), encoding="utf-8")

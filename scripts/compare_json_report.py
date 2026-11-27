@@ -330,9 +330,9 @@ REALIZED_NOTE = ("Impianti arrivati a fine lavori o in esercizio dall'ultima pub
                  "fine lavori prevista passata su un progetto autorizzato, senza atti successivi: da verificare.")
 
 
-def html_progress_table(rows: list[dict[str, Any]], note: str, title: str = "Avanzamenti verso il cantiere") -> str:
+def html_progress_table(rows: list[dict[str, Any]], note: str, heading: str = "Avanzamenti verso il cantiere") -> str:
     if not rows:
-        return f"<h2>{esc(title)}</h2><p class=\"small\">{esc(note)}</p><p>Nessun record.</p>"
+        return f"<h2>{esc(heading)}</h2><p class=\"small\">{esc(note)}</p><p>Nessun record.</p>"
     body = []
     for item in rows:
         r = item["record"]
@@ -344,7 +344,7 @@ def html_progress_table(rows: list[dict[str, Any]], note: str, title: str = "Ava
         body.append(f"<tr><td>{esc(source_of(r))}</td><td>{esc(clean(r.get('region')))}</td><td>{esc(loc)}</td>"
                     f"<td>{esc(fmt_mw(r.get('power_mw')))}</td><td>{esc(clean(r.get('proponent')))}</td>"
                     f"<td>{title}</td><td><ul>{diffs}</ul></td></tr>")
-    return (f"<h2>{esc(title)} ({len(rows)})</h2><p class=\"small\">{esc(note)}</p><table><thead><tr>"
+    return (f"<h2>{esc(heading)} ({len(rows)})</h2><p class=\"small\">{esc(note)}</p><table><thead><tr>"
             "<th>Fonte</th><th>Regione</th><th>Localizzazione</th><th>MW</th><th>Proponente</th><th>Titolo</th>"
             f"<th>Cosa è cambiato</th></tr></thead><tbody>{''.join(body)}</tbody></table>")
 
