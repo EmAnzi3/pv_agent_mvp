@@ -84,6 +84,7 @@ class SardegnaCollector(BaseCollector):
 
         news_results = self._fetch_news(debug_base)
         search_results = self._fetch_search(debug_base)
+        search_results = self._merge_search_into_news(news_results, search_results)
 
         for item in news_results + search_results:
             if item.external_id in seen_external_ids:
@@ -102,6 +103,79 @@ class SardegnaCollector(BaseCollector):
         )
 
         return all_results
+
+    # ---------------------------------------------------------------------
+    # 0) SAME PROJECT IN THE NEWS AND IN THE PROJECT SEARCH
+    # ---------------------------------------------------------------------
+
+    _NAME_NOISE = re.compile(r"\b(?:impianto|agro|agri|foto|fotovoltaico|agrofotovoltaico|agrivoltaico|agrovoltaico|"
+                             r"agrifv|fv|denominato|progetto)\b", re.IGNORECASE)
+
+    @classmethod
+    def _plant_name(cls, title: str) -> str:
+        """Quoted plant name, without generic words: «"Agrofotovoltaico ORI 1"» and «denominato "ORI 1"» → «ori 1»."""
+        m = re.search(r"[\"“”«]([^\"“”«»]{2,60})[\"“”»]", title or "")
+        if not m:
+            return ""
+        return " ".join(cls._NAME_NOISE.sub(" ", m.group(1).lower()).split())
+
+    @staticmethod
+    def _company_core(name: str | None) -> str:
+        """«CCEN ORISTANO 1 SRL % CCEN ORISTANO 1 GMBH» and «CCEN ORISTANO 1 S.r.l.» → «ccen oristano 1»."""
+        value = (name or "").split("%")[0].lower()
+        value = re.sub(r"\bsociet[àa]\b", " ", value)
+        value = re.sub(r"\b(?:s\.?\s?r\.?\s?l\.?|s\.\s?r\.|s\.?\s?p\.?\s?a\.?|gmbh|ltd)(?![a-z])", " ", value)
+        return " ".join(re.sub(r"[^a-z0-9àèéìòù ]", " ", value).split())
+
+    @staticmethod
+    def _towns(payload: dict) -> set[str]:
+        towns = set()
+        for m in payload.get("municipalities") or []:
+            towns.update(t.strip().lower() for t in re.split(r"[,;/]| e ", m) if t.strip())
+        return towns
+
+    def _merge_search_into_news(self, news: list[CollectorResult], search: list[CollectorResult]) -> list[CollectorResult]:
+        """The same project is often both a notice (with its page and documents) and a row of the project search
+        (with the full proponent and all the municipalities): two radar records for one plant (e.g. «ORI 1»,
+        44,7426 MWp, Siamanna/Santa Giusta). Same power plus one more clue (plant name, proponent or a
+        municipality) → the search row only fills the notice's empty fields and is dropped."""
+        from app.power_utils import parse_power_to_mw
+
+        def mw(item: CollectorResult):
+            return parse_power_to_mw(item.payload.get("power")) if item.payload.get("power") else None
+
+        kept = []
+        for row in search:
+            row_mw, merged = mw(row), False
+            if row_mw:
+                for notice in news:
+                    n_mw = mw(notice)
+                    if not n_mw or abs(n_mw - row_mw) > max(0.01, row_mw * 0.0005):
+                        continue
+                    a, b = notice.payload, row.payload
+                    same_name = bool(self._plant_name(a.get("title"))) and \
+                        self._plant_name(a.get("title")) == self._plant_name(b.get("title"))
+                    pa, pb = self._company_core(a.get("proponent")), self._company_core(b.get("proponent"))
+                    same_company = bool(pa) and pa == pb
+                    same_town = bool(self._towns(a) & self._towns(b))
+                    if not (same_name or same_company or same_town):
+                        continue
+                    if not a.get("proponent") and b.get("proponent"):
+                        a["proponent"] = b["proponent"].split("%")[0].strip()
+                    towns = list(a.get("municipalities") or [])
+                    seen = self._towns(a)
+                    for m in b.get("municipalities") or []:
+                        for t in re.split(r"[,;/]", m):
+                            if t.strip() and t.strip().lower() not in seen:
+                                towns.append(t.strip().title() if t.strip().isupper() else t.strip())
+                                seen.add(t.strip().lower())
+                    a["municipalities"] = towns
+                    a["province"] = a.get("province") or b.get("province")
+                    merged = True
+                    break
+            if not merged:
+                kept.append(row)
+        return kept
 
     # ---------------------------------------------------------------------
     # 1) HOME "ULTIME NOTIZIE"
