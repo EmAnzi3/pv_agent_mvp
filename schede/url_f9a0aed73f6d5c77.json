@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, della potenza di 103,314 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Foggia, Manfredonia (FG) e Zapponeta (FG).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9627",
  "source": "mase",
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "192 ha",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 134 ha (2)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 134 ha (2), 145,738 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/796030",
     "page": 258,
@@ -48,8 +48,8 @@
    "key": "pannelli",
    "label": "Superficie coperta dai pannelli",
    "value": "134 ha",
-   "status": "da documenti",
-   "sub": "70% dell'area",
+   "status": "da verificare",
+   "sub": "70% dell'area · Valore più ricorrente negli elaborati; altri valori: 49,409 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1197674",
     "page": 39,
@@ -60,9 +60,9 @@
   {
    "key": "accumulo",
    "label": "Accumulo",
-   "value": "20 MW",
+   "value": "20 MW / 5 MWh",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 103,314 MW (18), 100 MW (6)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 103,314 MW (26), 100 MW (6), 15 MW (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/796036",
     "page": 2,
@@ -95,7 +95,7 @@
   "coordinate": {
    "lat": 41.42596,
    "lon": 15.74427,
-   "tipo": "centro della tavola georeferenziata di progetto (45 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (49 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1118959",
     "page": 1,
@@ -239,7 +239,43 @@
    }
   }
  ],
- "altri_soggetti": [],
+ "altri_soggetti": [
+  {
+   "name": "Parco Eolico Borgo Mezzanone S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "montaltosolar@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/847859",
+      "page": 1,
+      "document": "Controdeduzioni della Società Foggia Solar Srl alle osservazioni da parte di Parco Eolico Borgo Mezzanone Srl",
+      "excerpt": "propria osservazione fuori termine. Via Don Felice Canelli 21, 71016 San Severo (FG), Italia; P.I. 04375970714; N. REA FG-322623; Tel.+39 0882070482; montaltosolar@pec.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0882070482",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/847859",
+      "page": 1,
+      "document": "Controdeduzioni della Società Foggia Solar Srl alle osservazioni da parte di Parco Eolico Borgo Mezzanone Srl",
+      "excerpt": "propria osservazione fuori termine. Via Don Felice Canelli 21, 71016 San Severo (FG), Italia; P.I. 04375970714; N. REA FG-322623; Tel.+39 0882070482; montaltosolar@pec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
  "stato": {
   "level": "date_superate",
   "label": "Date di progetto superate: verificare lo stato",
@@ -346,9 +382,9 @@
  },
  "documentazione": {
   "documenti": 220,
-  "pagine": 3674,
-  "completa": false,
-  "da_leggere": 100
+  "pagine": 4540,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -383,8 +419,12 @@
    "reason": "Avvio previsto il 30/11/2022, ma l'iter è proseguito; ultimo documento o atto del 23/11/2026: probabile slittamento, non ancora realizzato o in corso."
   },
   {
+   "label": "Superficie coperta dai pannelli",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "13 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "31 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
