@@ -1,0 +1,543 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_11902",
+ "title": "Progetto di un impianto eolico offshore flottante denominato \"Bluwind Pozzallo\" costituito da 54 aerogeneratori di potenza unitaria 18 MW, per una potenza complessiva di 972 MW e opere di connessione alla RTN, da realizzarsi nei Comuni di Pozzallo (RG), Ispica (RG), Noto (SR) e Palazzolo Acreide (SR).",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11902",
+ "source": "mase",
+ "updated": "2026-11-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "972 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11902",
+    "excerpt": "972 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "54",
+   "status": "da documenti",
+   "sub": "18,00 MW ciascuno · altezza mozzo 171 m · diametro rotore 240 m · Valore prevalente negli elaborati; altri valori: 65 (10), 4 (8), 2 (6)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1348230",
+    "page": 1,
+    "document": "Avviso al pubblico del 26/01/2026",
+    "excerpt": "orientale della Sicilia, nel Canale di Malta e prevede la realizzazione di un parco eolico offshore flottante denominato “Bluwind Pozzallo” composto da n.54 aerogeneratori per una potenza complessiva di 972 MW. Ciascun a"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Fotovoltaico galleggiante",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1348230",
+    "page": 1,
+    "document": "Avviso al pubblico del 26/01/2026",
+    "excerpt": "PROGETTO PER LA REALIZZAZIONE DELL’IMPIANTO EOLICO OFFSHORE FLOTTANTE “BLUWIND"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "48 mesi",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 36 mesi (3), 18 mesi (2), 3 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347995",
+    "page": 206,
+    "document": "Studio di Impatto Ambientale - Volume 3A",
+    "excerpt": "assemblaggio della tralicciatura. Ciascun microcantiere avrà dimensioni pari a circa 25 x 25 m. Complessivamente, la realizzazione della linea elettrica avrà durata pari a 36/48 mesi. Analogamente a quanto"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Sicilia",
+  "provincia": "RG",
+  "comuni": [
+   "Pozzallo",
+   "Ispica",
+   "Noto",
+   "Palazzolo Acreide"
+  ],
+  "coordinate": {
+   "lat": 36.46706,
+   "lon": 14.93757,
+   "tipo": "centro dei vertici delle aree d'impianto (39 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347985",
+    "page": 12,
+    "document": "Indagini Ambientali su Sedimenti, Acque, Habitat bentonici e Benthos",
+    "excerpt": "493186,23"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=36.46706,14.93757",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 37.05953,
+   "lon": 14.967,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1348056",
+    "page": 21,
+    "document": "Relazione tecnica generale",
+    "excerpt": "497066.49"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=37.05953,14.96700"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Wind Energy Pozzallo S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "02350590689",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "windpozzallo@legpec.it",
+     "occurrences": 7,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1348052",
+      "page": 35,
+      "document": "Preventivo connessione RTN impianto eolico offshore",
+      "excerpt": "WIND ENERGY POZZALLO S.R.L windpozzallo@legpec.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "va@pec.ntase",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1372754",
+      "page": 1,
+      "document": "Parere del LIBERO CONSORZIO COMUNALE DI SIRACUSA, in data 05/03/2026",
+      "excerpt": "Ministero dell'Antbiente e della Sicurezza Energetica va@pec.ntase. gov.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11902"
+   }
+  },
+  {
+   "name": "Tecnoconsult Engineering Construction S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347968",
+    "page": 1,
+    "document": "Prime indicazioni e prescrizioni per la stesura dei piani di sicurezza",
+    "excerpt": "Progettazione Tecnoconsult Engineering Construction Srl"
+   }
+  },
+  {
+   "name": "Tekra S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Impresa esecutrice (indicata negli elaborati)"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": [
+    {
+     "ruolo": "Impresa esecutrice",
+     "evidenza": "B",
+     "ambito": "impianto",
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1348163",
+      "page": 179,
+      "document": "Studio di Impatto Ambientale - Volume 2A",
+      "excerpt": "La gestione è affidata alla SRR ATO 7 Ragusa, tramite un appaltatore privato (attualmente Tekra S.r.l.), con la supervisione del Comune di Ispica. Il sistema si basa sull’utilizzo di impianti di trattamento esterni, poic"
+     }
+    }
+   ],
+   "office": null,
+   "contacts": [],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1348163",
+    "page": 179,
+    "document": "Studio di Impatto Ambientale - Volume 2A",
+    "excerpt": "La gestione è affidata alla SRR ATO 7 Ragusa, tramite un appaltatore privato (attualmente Tekra S.r.l.), con la supervisione del Comune di Ispica. Il sistema si basa sull’utilizzo di impianti di trattamento esterni, poic"
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "White Lab S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0541777213",
+     "occurrences": 516,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1347985",
+      "page": 128,
+      "document": "Indagini Ambientali su Sedimenti, Acque, Habitat bentonici e Benthos",
+      "excerpt": "Sede Legale: Galleria San Babila, 4B - 20122 Milano (MI) P.IVA e C.F.: 13079170968 Sede operativa: Via Nuova Circonvallazione 57/S - 47923 Rimini (RN) Tel. 0541 777213"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Paolo Tiralongo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0931450820",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1377189",
+      "page": 2,
+      "document": "Parere della Regione Siciliana - Assessorato dei Beni Culturali e dell'Identità Siciliana - Soprintendenza dei Beni Culturali e Ambientali di Siracusa in data 2/04/2026",
+      "excerpt": "Stanza 220 Piano T Tel 0931450820 Orario Da lunedì al venerdì dalle ore 09,00 alle 13,00/ Mercoledì 15:00-17:00"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Ingegneria Progetti S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "studio@ingegneriaprogetti.com",
+     "occurrences": 6,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1371729",
+      "page": 52,
+      "document": "Osservazioni della sig.ra Barbara Francesca Seroflli, in data 21/02/2026.",
+      "excerpt": "90143 PALERMO e-mail studio@ingegneriaprogetti.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Roberto La Rocca",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "3346476280",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1370505",
+      "page": 1,
+      "document": "Parere della Regione Siciliana - Soprintendenza del Mare - in data 03/03/2026",
+      "excerpt": "7 3298190087 Di fi x \\ ; Stanza Piano 2 Tel. 3346476280 Durata procedimento (ove non previsto da leggi o regolamenti è di 30 giorni)"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3298190097",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1370505",
+      "page": 3,
+      "document": "Parere della Regione Siciliana - Soprintendenza del Mare - in data 03/03/2026",
+      "excerpt": "Responsabile procedimento Dott. Roberto La Rocca organizzativa) Stanza Piano 2 Tel. 3298190097 . Durata procedimento (ove non previsto da leggi o regolamenti è di 30 giorni)"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Avv. Giovanni Mandolfo",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "mandolfo@pec.ordineavvocaticatania",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1371729",
+      "page": 134,
+      "document": "Osservazioni della sig.ra Barbara Francesca Seroflli, in data 21/02/2026.",
+      "excerpt": "Avv. Giovanni Mandolfo MAI L: giovanni. mandolfo@pec.ordineavvocaticatania. it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Blue Metocean Consultants S.r.l.s.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "contact@bluemetocean.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1348000",
+      "page": 3,
+      "document": "Studio meteomarino",
+      "excerpt": "16148 Genova, Italia e-mail: contact@bluemetocean.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Blusolar Servizi S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "blusolarservizisrl@legpec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1348052",
+      "page": 1,
+      "document": "Preventivo connessione RTN impianto eolico offshore",
+      "excerpt": "65125 PESCARA (PE) blusolarservizisrl@legpec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Regolo Rinnovabili S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "regolorinnovabili@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/861469",
+      "page": 1,
+      "document": "Contributo ENAC del 26/06/2023",
+      "excerpt": "REGOLO RINNOVABILI S.R.L. Pec: regolorinnovabili@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": null,
+ "esecuzione": {
+  "livello": "B",
+  "imprese": [
+   {
+    "impresa": "Tekra S.r.l.",
+    "partita_iva": null,
+    "ruolo": "Impresa esecutrice",
+    "ambito": "impianto",
+    "evidenza": "B",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1348163",
+     "page": 179,
+     "document": "Studio di Impatto Ambientale - Volume 2A",
+     "excerpt": "La gestione è affidata alla SRR ATO 7 Ragusa, tramite un appaltatore privato (attualmente Tekra S.r.l.), con la supervisione del Comune di Ispica. Il sistema si basa sull’utilizzo di impianti di trattamento esterni, poic"
+    }
+   }
+  ],
+  "legenda": {
+   "A": "impresa indicata in un atto di cantiere (comunicazione di inizio lavori, CIL/SCIA, contratto, piano di cantierizzazione) o in una dichiarazione formale",
+   "B": "impresa indicata nel cartiglio o nell'intestazione degli elaborati di progetto: designata, non ancora provata"
+  }
+ },
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Entrata in esercizio",
+    "livello": "documentata",
+    "valore": "12/2025",
+    "dettaglio": "previsione di progetto",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1348155",
+     "page": 39,
+     "document": "Studio di Impatto Ambientale - Volume 2B",
+     "excerpt": "all’Europa Occidentale, inclusa l’Italia); ▪ Africa-1: attualmente in fase di realizzazione, con messa in esercizio prevista per dicembre 2025. Questo sistema di cavi presenta una lunghezza di circa 10.000 km e collegher"
+    }
+   }
+  ],
+  "durata_cantiere": "48 mesi",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [],
+  "unit": "month",
+  "months": 1,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1347996",
+   "page": 221,
+   "document": "Studio di Impatto Ambientale - Volume 1",
+   "excerpt": ""
+  },
+  "asse": null,
+  "duration": {
+   "text": "48 mesi",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 36 mesi (3), 30 giorni (3), 18 mesi (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1347995",
+    "page": 206,
+    "document": "Studio di Impatto Ambientale - Volume 3A",
+    "excerpt": "assemblaggio della tralicciatura. Ciascun microcantiere avrà dimensioni pari a circa 25 x 25 m. Complessivamente, la realizzazione della linea elettrica avrà durata pari a 36/48 mesi. Analogamente a quanto"
+   }
+  },
+  "milestones": [
+   {
+    "label": "Entrata in esercizio",
+    "date": "12/2025",
+    "iso": "2025-12",
+    "nature": "previsione di progetto",
+    "certain": false,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1348155",
+     "page": 39,
+     "document": "Studio di Impatto Ambientale - Volume 2B",
+     "excerpt": "all’Europa Occidentale, inclusa l’Italia); ▪ Africa-1: attualmente in fase di realizzazione, con messa in esercizio prevista per dicembre 2025. Questo sistema di cavi presenta una lunghezza di circa 10.000 km e collegher"
+    }
+   }
+  ],
+  "document": {
+   "document": "Cronoprogramma di progetto",
+   "url": "https://va.mite.gov.it/File/Documento/1348202"
+  },
+  "note": "Le fasi del cronoprogramma non sono leggibili automaticamente (allegato in formato immagine o non presente). Il documento è indicato sotto.",
+  "altri": [
+   {
+    "document": "Cronoprogramma di progetto",
+    "url": "https://va.mite.gov.it/File/Documento/1348202"
+   }
+  ],
+  "durate_fasi": [],
+  "metodo": null
+ },
+ "documentazione": {
+  "documenti": 295,
+  "pagine": 8254,
+  "completa": false,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Wind Energy Pozzallo S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 972.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "POZZALLO",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "RG",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Sicilia",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "1058 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  },
+  {
+   "label": "Tekra S.r.l.",
+   "reason": "ruolo esecutivo indicato negli elaborati, da confermare"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
