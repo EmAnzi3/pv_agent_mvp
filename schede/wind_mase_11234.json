@@ -5,7 +5,7 @@
  "title": "Progetto di parco eolico offshore nel Mar Tirreno Nord - Occidentale \"Poseidon\" ad oltre 40 km dalle coste di Olbia, composto da 72 aerogeneratori da 14 MW ciascuno, di potenza nominale totale pari a 1008 MW.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/11234",
  "source": "mase",
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "sintesi": [
   {
    "key": "potenza",
@@ -24,7 +24,7 @@
    "label": "Aerogeneratori",
    "value": "72",
    "status": "da documenti",
-   "sub": "14,00 MW ciascuno · altezza mozzo 165 m · diametro rotore 140 m · Valore prevalente negli elaborati; altri valori: 33 (5), 42 (3), 10 (2)",
+   "sub": "14,00 MW ciascuno · altezza mozzo 165 m · diametro rotore 140 m · Valore prevalente negli elaborati; altri valori: 33 (13), 36 (5), 42 (3)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1328966",
     "page": 4,
@@ -83,25 +83,6 @@
  },
  "soggetti": [
   {
-   "name": "Nurax Wind Power S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [],
-   "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1192936",
-    "page": 8,
-    "document": "Richiesta integrazioni della Regione Sardegna",
-    "excerpt": "potenza pari a 462 MW attraverso l'utilizzo di 33 aerogeneratori. Proponente: NURAX WIND POWER S.r.l.), non risultano convocati i seguenti Enti/ Agenzie:"
-   }
-  },
-  {
    "name": "Poseidon Wind Energy S.r.l.",
    "kind": "società",
    "roles": [
@@ -116,7 +97,7 @@
     {
      "type": "PEC",
      "value": "poseidon.wind.energy@legalmail.it",
-     "occurrences": 1,
+     "occurrences": 3,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1328966",
       "page": 1,
@@ -194,6 +175,33 @@
  ],
  "altri_soggetti": [
   {
+   "name": "Enas - Ente Acque Della Sardegna",
+   "kind": "società",
+   "roles": [],
+   "vat": "00140940925",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Mameli 88 09123 Cagliari Ca",
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "sardegna@lipu.it",
+     "occurrences": 9,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1265044",
+      "page": 1,
+      "document": "Osservazioni della Lipu ODV - Coordinamento reg. Lipu Sardegna, in data 19/05/2025",
+      "excerpt": "sardegna@lipu.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Geosystem DI Demontis Giovanni Battista",
    "kind": "società",
    "roles": [],
@@ -230,6 +238,54 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
+  },
+  {
+   "name": "Poseidon Wind Power S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "poseidon.wind.power@legalmail.it",
+     "occurrences": 5,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1265035",
+      "page": 1,
+      "document": "Osservazioni del Consorzio di Bonifica della Gallura, in data 12/05/2025",
+      "excerpt": "POSEIDON WIND POWER S.r.l. poseidon.wind.power@legalmail.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Nurax Wind Power S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0792088300",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1390501",
+      "page": 3,
+      "document": "Parere Regione Sardegna - DG della pianificazione urbanistica territoriale e della vigilanza edilizia - Servizio tutela del paesaggio Sardegna Settentrionale Nord-Est, in data 07/05/2026",
+      "excerpt": "Viale Dante Alighieri, 37 — 07100 Sassari - tel. +39 079 2088300 - fax +39 079 2088907"
+     }
+    }
+   ],
+   "source": null
   }
  ],
  "stato": null,
@@ -576,7 +632,7 @@
   "duration": {
    "text": "12 mesi",
    "status": "da documenti",
-   "hint": "Valore prevalente negli elaborati; altri valori: 3 Giorni (2)",
+   "hint": "Valore prevalente negli elaborati; altri valori: 3 giorni (3), 2 mesi (2)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1377432",
     "page": 33,
@@ -593,9 +649,9 @@
  },
  "documentazione": {
   "documenti": 339,
-  "pagine": 5802,
-  "completa": false,
-  "da_leggere": 39
+  "pagine": 7016,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -627,7 +683,7 @@
  "da_verificare": [
   {
    "label": "Recapiti",
-   "reason": "227 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "349 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
