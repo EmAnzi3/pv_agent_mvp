@@ -1,0 +1,4560 @@
+{
+ "schema": "pv-scheda/2.0",
+ "dossier_schema": "pv-dossier/1.0",
+ "project_key": "wind:mase_10119",
+ "title": "Progetto per la realizzazione di un parco eolico offshore flottante denominato \"Atis\" - Mar Ligure, Toscana, potenza complessiva di 864 MW",
+ "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10119",
+ "source": "mase",
+ "updated": "2026-11-28",
+ "sintesi": [
+  {
+   "key": "potenza",
+   "label": "Potenza",
+   "status": "verificato",
+   "value": "864 MW",
+   "sub": null,
+   "source": {
+    "document": "titolo del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10119",
+    "excerpt": "864 MW"
+   }
+  },
+  {
+   "key": "wtg",
+   "label": "Aerogeneratori",
+   "value": "48",
+   "status": "da documenti",
+   "sub": "18,00 MW ciascuno · altezza mozzo 155 m · diametro rotore 250 m · Valore prevalente negli elaborati; altri valori: 4 (9), 24 (6), 3 (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1100561",
+    "page": 2,
+    "document": "Osservazioni del Ministero della cultura - Soprintendenza Speciale per il PNRR , in data 01/07/2024",
+    "excerpt": "CONSIDERATO che il progetto riguarda la realizzazione di un parco eolico offshore flottante costituito da n.48 aerogeneratori (altezza mozzo 157m - diametro rotore 250m — altezza complessiva 282m) da 18MW ciascuno, per u"
+   }
+  },
+  {
+   "key": "impianto",
+   "label": "Impianto",
+   "value": "Offshore",
+   "status": "da documenti",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1100561",
+    "page": 2,
+    "document": "Osservazioni del Ministero della cultura - Soprintendenza Speciale per il PNRR , in data 01/07/2024",
+    "excerpt": "“Preso atto degli elementi offshore e onshore di progetto, illustrati nella relazione generale e"
+   }
+  },
+  {
+   "key": "cantiere",
+   "label": "Durata cantiere",
+   "value": "300 giorni (circa 10 mesi)",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 42 mesi (1), 33 mesi (1), 60 mesi (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1338737",
+    "page": 28,
+    "document": "Studio di Impatto Ambientale Volume 3",
+    "excerpt": "Si riportano in tabella seguente le ore di utilizzo di ciascun mezzo, stimate considerando una durata delle attività di cantiere pari a 300 giorni. Tabella 6-11 Ore di utilizzo dei macchinari per la realizzazione della b"
+   }
+  }
+ ],
+ "ubicazione": {
+  "regione": "Toscana",
+  "provincia": "LI",
+  "comuni": [
+   "Rosignano Marittimo"
+  ],
+  "coordinate": {
+   "lat": 43.30856,
+   "lon": 9.6336,
+   "tipo": "baricentro dell'impianto dichiarato negli elaborati (64 riferimenti concordi)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1338733",
+    "page": 16,
+    "document": "Studio di Impatto Ambientale Volume 2",
+    "excerpt": "offshore flottante nelle acque del Mar Ligure e, più precisamente, in uno specchio acqueo cartograficamente individuato dalle coordinate baricentriche (43° 17' 51\"N, 9° 38' 19\"E) nel sistema di riferimento WGS84-UTM zone"
+   }
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=43.30856,9.63360",
+  "maps_precision": "coordinate",
+  "mappa_ufficiale": null,
+  "connessione": {
+   "lat": 43.3648,
+   "lon": 10.68415,
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1338815",
+    "page": 19,
+    "document": "Relazione Impatto Acustico Onshore",
+    "excerpt": "618426"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=43.36480,10.68415"
+  },
+  "lotti": []
+ },
+ "soggetti": [
+  {
+   "name": "Atis Floating Wind S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente",
+    "Geologo"
+   ],
+   "vat": "12645610960",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Ripamonti N 85 20141 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "atisfloatingwind@legalmail.it",
+     "occurrences": 342,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1100561",
+      "page": 1,
+      "document": "Osservazioni del Ministero della cultura - Soprintendenza Speciale per il PNRR , in data 01/07/2024",
+      "excerpt": "atisfloatingwind@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/10119"
+   }
+  },
+  {
+   "name": "Ramboll Deutschland GmbH",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@ramboll.de",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1364619",
+      "page": 2,
+      "document": "Integrazioni del 10/02/2026 - Relazione sulle attività di costruzione - Parco eolico offshore Atis",
+      "excerpt": "Allemagne info@ramboll.de"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1338710",
+    "page": 15,
+    "document": "Relazione tecnica e posa del cavidotto marino",
+    "excerpt": "progettazione effettuata dalla società Ramboll Deutschland GmbH, la quale ha effettuato uno studio di Power Flow in regime stazionario e di cortocircuito dell’impianto tramite software Power Factory DigSilent."
+   }
+  }
+ ],
+ "altri_soggetti": [
+  {
+   "name": "Enav S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "02152021008",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Salaria 716 00138 Roma Rm",
+   "contacts": [
+    {
+     "type": "Telefono",
+     "value": "0681661",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/898927",
+      "page": 1,
+      "document": "Parere ENAV S.p.A in data 06/09/2023",
+      "excerpt": "Via Salaria, 716 – 00138 Roma Tel. +39 06 81661 – Cap. Soc. € 541.744.385,00 I.V."
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "Societa' Autostrada Tirrenica S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "04683251005",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Alberto Bergamini 50 00159 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "autostradatirrenica@pec.tirrenica.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1370165",
+      "page": 14,
+      "document": "Osservazioni della Regione Toscana con allegati del 26/02/2026 - Proposta di richiesta d i integrazioni e chiarimenti",
+      "excerpt": "PEC: autostradatirrenica@pec.tirrenica.it Partita IVA 04683251005 - R.E.A. n° RM640605"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
+   "name": "ERM Italia S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "info@pec.ermitalia.it",
+     "occurrences": 44,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338711",
+      "page": 2,
+      "document": "Verifica dell'Interesse Archeologico Offshore",
+      "excerpt": "Via San Gregorio 38, Milano (MI), 20134, Italia info@pec.ermitalia.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Montana S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "segreteria@montanambiente.com",
+     "occurrences": 25,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1364619",
+      "page": 2,
+      "document": "Integrazioni del 10/02/2026 - Relazione sulle attività di costruzione - Parco eolico offshore Atis",
+      "excerpt": "Via Angelo Carlo Fumagalli 6, Milan (MI), 20143, Italie segreteria@montanambiente.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Rina S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "rinaconsulting@rina.org",
+     "occurrences": 18,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/895016",
+      "page": 1,
+      "document": "Inquadramento su viabilità e catastale",
+      "excerpt": "RINA Consulting S.p.A. | Società soggetta a direzione e coordinamento amministrativo e finanziario del socio unico RINA S.p.A. Via Cecchi, 6 - 16129 GENOVA | P. +39 010 31961 | rinaconsulting@rina.org | www.rina.org"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Arch. Gaia Pergola",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "g.pergola@appenninosettentrionale.it",
+     "occurrences": 4,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/910790",
+      "page": 3,
+      "document": "Osservazioni dell'Autorità di bacino distrettuale dell'Appennino Settentrionale, in data 02/10/2023",
+      "excerpt": "Per eventuali necessità di chiarimento in merito alla pratica in oggetto è possibile fare riferimento all’arch. Gaia Pergola (email: g.pergola@appenninosettentrionale.it )."
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Dott. Jacopo Ventura",
+   "kind": "persona",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "jacopoventura@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338751",
+      "page": 2,
+      "document": "Relazione Impatto Acustico Onshore",
+      "excerpt": "Via San Gregorio 38, Milano (MI), 20134, Italia jacopoventura@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Alla Toscana Aeroporti S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "segreteria@pec.toscana-aeroporti.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1147901",
+      "page": 3,
+      "document": "Comunicazione esito valutazione - Progetto per la realizzazione di un parco eolico offshore flottante denominato \"Atis\" - Mar Ligure, Toscana, potenza complessiva di 864 MW",
+      "excerpt": "Alla Toscana Aeroporti S.p.A. segreteria@pec.toscana-aeroporti.com"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "sat@pec.pisa-airport.org",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1147901",
+      "page": 3,
+      "document": "Comunicazione esito valutazione - Progetto per la realizzazione di un parco eolico offshore flottante denominato \"Atis\" - Mar Ligure, Toscana, potenza complessiva di 864 MW",
+      "excerpt": "All’Aeroporto di Pisa sat@pec.pisa-airport.org"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Asps Servizi Archeologici S.n.c.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "asps@pec.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338711",
+      "page": 2,
+      "document": "Verifica dell'Interesse Archeologico Offshore",
+      "excerpt": "Via G. Marconi, 43, Brescia (BS), 25128, Italia asps@pec.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Geo Bio Team Group S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@gbtoffshore.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338752",
+      "page": 2,
+      "document": "Rilievo geofisico e ambientale",
+      "excerpt": "Via Toscana 8, Palermo (PA), 90144, Italia info@gbtoffshore.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Aalea S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "info@aaleaoffshore.com",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338752",
+      "page": 2,
+      "document": "Rilievo geofisico e ambientale",
+      "excerpt": "Via Ulderico De Cesaris 40, Rome (RM), 00052, Italia info@aaleaoffshore.com"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Bio-Consulting S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "bio-consulting@arubapec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1338786",
+      "page": 2,
+      "document": "Report Indagini Ambientali",
+      "excerpt": "Via Diego Peluso 105 Taranto (Italy) bio-consulting@arubapec.it"
+     }
+    }
+   ],
+   "source": null
+  }
+ ],
+ "stato": {
+  "level": "previsto",
+  "label": "Avvio lavori previsto il 01/01/2028",
+  "reason": "Data di progetto: non prova l'effettivo avvio."
+ },
+ "esecuzione": null,
+ "registro": null,
+ "tempistica": {
+  "righe": [
+   {
+    "voce": "Cronoprogramma con date",
+    "livello": "documentata",
+    "valore": "01/01/2028 → 25/08/2033",
+    "dettaglio": "date del programma lavori: un piano, non l'avanzamento effettivo",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1338719",
+     "page": 20,
+     "document": "Cronoprogramma dei Lavori",
+     "excerpt": ""
+    }
+   }
+  ],
+  "durata_cantiere": "300 giorni (circa 10 mesi)",
+  "autorizzazione": null,
+  "note": [
+   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  ],
+  "legenda": {
+   "documentata": "data scritta nei documenti",
+   "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
+   "stimata": "stima: atto + durata del cantiere; un intervallo, non una data certa"
+  }
+ },
+ "cronoprogramma": {
+  "bars": [
+   {
+    "name": "Atis Project Schedule",
+    "start": 0.0,
+    "end": 67.89,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2033-08-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Project Development",
+    "start": 0.0,
+    "end": 0.03,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2028-01-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Final Investment Decision (FID)",
+    "start": 0.0,
+    "end": 0.03,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2028-01-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Project Execution",
+    "start": 0.0,
+    "end": 67.89,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2033-08-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Onshore Scope",
+    "start": 0.0,
+    "end": 32.99,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2030-09-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Onshore Substation",
+    "start": 0.0,
+    "end": 32.99,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2030-09-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Detailed Design",
+    "start": 0.0,
+    "end": 12.01,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2028-12-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Onshore Construction",
+    "start": 12.01,
+    "end": 30.03,
+    "level": 0,
+    "dates": [
+     "2028-12-31",
+     "2030-07-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Commissioning",
+    "start": 30.03,
+    "end": 32.99,
+    "level": 0,
+    "dates": [
+     "2030-07-02",
+     "2030-09-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Onshore Substation ready for Energization",
+    "start": 32.96,
+    "end": 32.99,
+    "level": 0,
+    "dates": [
+     "2030-09-29",
+     "2030-09-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Onshore Export Cable",
+    "start": 0.0,
+    "end": 11.84,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2028-12-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Detailed Design",
+    "start": 0.0,
+    "end": 5.92,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2028-06-28"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation (incl. preparatory works)",
+    "start": 5.92,
+    "end": 11.84,
+    "level": 0,
+    "dates": [
+     "2028-06-29",
+     "2028-12-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Beach Landing",
+    "start": 0.0,
+    "end": 9.87,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2028-10-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Construction",
+    "start": 5.92,
+    "end": 9.87,
+    "level": 0,
+    "dates": [
+     "2028-06-29",
+     "2028-10-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Offshore Scope",
+    "start": 0.0,
+    "end": 67.89,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2033-08-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG/Floater",
+    "start": 0.0,
+    "end": 66.91,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2033-07-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Towers",
+    "start": 15.46,
+    "end": 56.94,
+    "level": 0,
+    "dates": [
+     "2029-04-15",
+     "2032-09-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Tower Design",
+    "start": 15.46,
+    "end": 29.38,
+    "level": 0,
+    "dates": [
+     "2029-04-15",
+     "2030-06-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing of towers",
+    "start": 23.45,
+    "end": 40.62,
+    "level": 0,
+    "dates": [
+     "2029-12-14",
+     "2031-05-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 1-4",
+    "start": 23.45,
+    "end": 34.84,
+    "level": 0,
+    "dates": [
+     "2029-12-14",
+     "2030-11-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 5-8",
+    "start": 23.98,
+    "end": 35.36,
+    "level": 0,
+    "dates": [
+     "2029-12-30",
+     "2030-12-10"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 9-12",
+    "start": 24.51,
+    "end": 35.89,
+    "level": 0,
+    "dates": [
+     "2030-01-15",
+     "2030-12-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 13-16",
+    "start": 25.03,
+    "end": 36.41,
+    "level": 0,
+    "dates": [
+     "2030-01-31",
+     "2031-01-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 17-20",
+    "start": 25.56,
+    "end": 36.94,
+    "level": 0,
+    "dates": [
+     "2030-02-16",
+     "2031-01-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 21-24",
+    "start": 26.09,
+    "end": 37.47,
+    "level": 0,
+    "dates": [
+     "2030-03-04",
+     "2031-02-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 25-28",
+    "start": 26.61,
+    "end": 37.99,
+    "level": 0,
+    "dates": [
+     "2030-03-20",
+     "2031-02-28"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 29-32",
+    "start": 27.14,
+    "end": 38.52,
+    "level": 0,
+    "dates": [
+     "2030-04-05",
+     "2031-03-16"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 33-36",
+    "start": 27.66,
+    "end": 39.05,
+    "level": 0,
+    "dates": [
+     "2030-04-21",
+     "2031-04-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 37-40",
+    "start": 28.19,
+    "end": 39.57,
+    "level": 0,
+    "dates": [
+     "2030-05-07",
+     "2031-04-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 41-44",
+    "start": 28.72,
+    "end": 40.1,
+    "level": 0,
+    "dates": [
+     "2030-05-23",
+     "2031-05-03"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 45-48",
+    "start": 29.24,
+    "end": 40.62,
+    "level": 0,
+    "dates": [
+     "2030-06-08",
+     "2031-05-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of towers",
+    "start": 34.84,
+    "end": 56.94,
+    "level": 0,
+    "dates": [
+     "2030-11-25",
+     "2032-09-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 1-4",
+    "start": 34.84,
+    "end": 36.68,
+    "level": 0,
+    "dates": [
+     "2030-11-25",
+     "2031-01-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 5-8",
+    "start": 36.68,
+    "end": 38.52,
+    "level": 0,
+    "dates": [
+     "2031-01-20",
+     "2031-03-16"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 9-12",
+    "start": 38.52,
+    "end": 40.36,
+    "level": 0,
+    "dates": [
+     "2031-03-17",
+     "2031-05-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 13-16",
+    "start": 40.36,
+    "end": 42.2,
+    "level": 0,
+    "dates": [
+     "2031-05-12",
+     "2031-07-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 17-20",
+    "start": 42.2,
+    "end": 44.05,
+    "level": 0,
+    "dates": [
+     "2031-07-07",
+     "2031-08-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 21-24",
+    "start": 44.05,
+    "end": 45.89,
+    "level": 0,
+    "dates": [
+     "2031-09-01",
+     "2031-10-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 25-28",
+    "start": 45.89,
+    "end": 47.73,
+    "level": 0,
+    "dates": [
+     "2031-10-27",
+     "2031-12-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 29-32",
+    "start": 47.73,
+    "end": 49.57,
+    "level": 0,
+    "dates": [
+     "2031-12-22",
+     "2032-02-15"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 33-36",
+    "start": 49.57,
+    "end": 51.41,
+    "level": 0,
+    "dates": [
+     "2032-02-16",
+     "2032-04-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 37-40",
+    "start": 51.41,
+    "end": 53.26,
+    "level": 0,
+    "dates": [
+     "2032-04-12",
+     "2032-06-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 41-44",
+    "start": 53.26,
+    "end": 55.1,
+    "level": 0,
+    "dates": [
+     "2032-06-07",
+     "2032-08-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG TOWER 45-48",
+    "start": 55.1,
+    "end": 56.94,
+    "level": 0,
+    "dates": [
+     "2032-08-02",
+     "2032-09-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Nacelle",
+    "start": 11.55,
+    "end": 57.14,
+    "level": 0,
+    "dates": [
+     "2028-12-17",
+     "2032-10-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Nacelle Design",
+    "start": 11.55,
+    "end": 33.06,
+    "level": 0,
+    "dates": [
+     "2028-12-17",
+     "2030-10-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing of nacelles",
+    "start": 20.07,
+    "end": 33.55,
+    "level": 0,
+    "dates": [
+     "2030-04-05",
+     "2031-05-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 1-4",
+    "start": 20.07,
+    "end": 27.96,
+    "level": 0,
+    "dates": [
+     "2030-04-05",
+     "2030-11-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 5-8",
+    "start": 20.59,
+    "end": 28.29,
+    "level": 0,
+    "dates": [
+     "2030-04-21",
+     "2030-12-10"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 9-12",
+    "start": 21.12,
+    "end": 28.82,
+    "level": 0,
+    "dates": [
+     "2030-05-07",
+     "2030-12-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 13-16",
+    "start": 21.64,
+    "end": 29.34,
+    "level": 0,
+    "dates": [
+     "2030-05-23",
+     "2031-01-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 17-20",
+    "start": 22.17,
+    "end": 29.87,
+    "level": 0,
+    "dates": [
+     "2030-06-08",
+     "2031-01-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 21-24",
+    "start": 22.7,
+    "end": 30.39,
+    "level": 0,
+    "dates": [
+     "2030-06-24",
+     "2031-02-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 25-28",
+    "start": 23.22,
+    "end": 30.92,
+    "level": 0,
+    "dates": [
+     "2030-07-10",
+     "2031-02-28"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 29-32",
+    "start": 23.75,
+    "end": 31.45,
+    "level": 0,
+    "dates": [
+     "2030-07-26",
+     "2031-03-16"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 33-36",
+    "start": 24.28,
+    "end": 31.97,
+    "level": 0,
+    "dates": [
+     "2030-08-11",
+     "2031-04-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 37-40",
+    "start": 24.8,
+    "end": 32.5,
+    "level": 0,
+    "dates": [
+     "2030-08-27",
+     "2031-04-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 41-44",
+    "start": 25.33,
+    "end": 33.03,
+    "level": 0,
+    "dates": [
+     "2030-09-12",
+     "2031-05-03"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 45-48",
+    "start": 25.86,
+    "end": 33.55,
+    "level": 0,
+    "dates": [
+     "2030-09-28",
+     "2031-05-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of nacelles",
+    "start": 27.96,
+    "end": 50.07,
+    "level": 0,
+    "dates": [
+     "2030-12-01",
+     "2032-10-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 1-4",
+    "start": 27.96,
+    "end": 29.8,
+    "level": 0,
+    "dates": [
+     "2030-12-01",
+     "2031-01-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 5-8",
+    "start": 29.8,
+    "end": 31.64,
+    "level": 0,
+    "dates": [
+     "2031-01-26",
+     "2031-03-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 9-12",
+    "start": 31.64,
+    "end": 33.49,
+    "level": 0,
+    "dates": [
+     "2031-03-23",
+     "2031-05-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 13-16",
+    "start": 33.49,
+    "end": 35.33,
+    "level": 0,
+    "dates": [
+     "2031-05-18",
+     "2031-07-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 17-20",
+    "start": 35.33,
+    "end": 37.17,
+    "level": 0,
+    "dates": [
+     "2031-07-13",
+     "2031-09-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 21-24",
+    "start": 37.17,
+    "end": 39.01,
+    "level": 0,
+    "dates": [
+     "2031-09-07",
+     "2031-11-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 25-28",
+    "start": 39.01,
+    "end": 40.86,
+    "level": 0,
+    "dates": [
+     "2031-11-02",
+     "2031-12-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 29-32",
+    "start": 40.86,
+    "end": 42.7,
+    "level": 0,
+    "dates": [
+     "2031-12-28",
+     "2032-02-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 33-36",
+    "start": 42.7,
+    "end": 44.54,
+    "level": 0,
+    "dates": [
+     "2032-02-22",
+     "2032-04-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 37-40",
+    "start": 44.54,
+    "end": 46.38,
+    "level": 0,
+    "dates": [
+     "2032-04-18",
+     "2032-06-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 41-44",
+    "start": 46.38,
+    "end": 48.22,
+    "level": 0,
+    "dates": [
+     "2032-06-13",
+     "2032-08-07"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG NACELLE 45-48",
+    "start": 48.22,
+    "end": 50.07,
+    "level": 0,
+    "dates": [
+     "2032-08-08",
+     "2032-10-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Blades",
+    "start": 0.0,
+    "end": 49.87,
+    "level": 0,
+    "dates": [
+     "2028-08-03",
+     "2032-09-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Blades design",
+    "start": 0.0,
+    "end": 25.53,
+    "level": 0,
+    "dates": [
+     "2028-08-03",
+     "2030-09-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing of blades",
+    "start": 19.61,
+    "end": 33.55,
+    "level": 0,
+    "dates": [
+     "2030-03-22",
+     "2031-05-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 1-4",
+    "start": 19.61,
+    "end": 27.76,
+    "level": 0,
+    "dates": [
+     "2030-03-22",
+     "2030-11-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 5-8",
+    "start": 20.13,
+    "end": 28.29,
+    "level": 0,
+    "dates": [
+     "2030-04-07",
+     "2030-12-10"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 9-12",
+    "start": 20.66,
+    "end": 28.82,
+    "level": 0,
+    "dates": [
+     "2030-04-23",
+     "2030-12-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 13-16",
+    "start": 21.18,
+    "end": 29.34,
+    "level": 0,
+    "dates": [
+     "2030-05-09",
+     "2031-01-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 17-20",
+    "start": 21.71,
+    "end": 29.87,
+    "level": 0,
+    "dates": [
+     "2030-05-25",
+     "2031-01-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 21-24",
+    "start": 22.24,
+    "end": 30.39,
+    "level": 0,
+    "dates": [
+     "2030-06-10",
+     "2031-02-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 25-28",
+    "start": 22.76,
+    "end": 30.92,
+    "level": 0,
+    "dates": [
+     "2030-06-26",
+     "2031-02-28"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 29-32",
+    "start": 23.29,
+    "end": 31.45,
+    "level": 0,
+    "dates": [
+     "2030-07-12",
+     "2031-03-16"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 33-36",
+    "start": 23.82,
+    "end": 31.97,
+    "level": 0,
+    "dates": [
+     "2030-07-28",
+     "2031-04-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 37-40",
+    "start": 24.34,
+    "end": 32.5,
+    "level": 0,
+    "dates": [
+     "2030-08-13",
+     "2031-04-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 41-44",
+    "start": 24.87,
+    "end": 33.03,
+    "level": 0,
+    "dates": [
+     "2030-08-29",
+     "2031-05-03"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 45-48",
+    "start": 25.39,
+    "end": 33.55,
+    "level": 0,
+    "dates": [
+     "2030-09-14",
+     "2031-05-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of blades",
+    "start": 27.76,
+    "end": 49.87,
+    "level": 0,
+    "dates": [
+     "2030-11-25",
+     "2032-09-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 1-4",
+    "start": 27.76,
+    "end": 29.61,
+    "level": 0,
+    "dates": [
+     "2030-11-25",
+     "2031-01-19"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 5-8",
+    "start": 29.61,
+    "end": 31.45,
+    "level": 0,
+    "dates": [
+     "2031-01-20",
+     "2031-03-16"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 9-12",
+    "start": 31.45,
+    "end": 33.29,
+    "level": 0,
+    "dates": [
+     "2031-03-17",
+     "2031-05-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 13-16",
+    "start": 33.29,
+    "end": 35.13,
+    "level": 0,
+    "dates": [
+     "2031-05-12",
+     "2031-07-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 17-20",
+    "start": 35.13,
+    "end": 36.97,
+    "level": 0,
+    "dates": [
+     "2031-07-07",
+     "2031-08-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 21-24",
+    "start": 36.97,
+    "end": 38.82,
+    "level": 0,
+    "dates": [
+     "2031-09-01",
+     "2031-10-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 25-28",
+    "start": 45.89,
+    "end": 47.73,
+    "level": 0,
+    "dates": [
+     "2031-10-27",
+     "2031-12-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 29-32",
+    "start": 47.73,
+    "end": 49.57,
+    "level": 0,
+    "dates": [
+     "2031-12-22",
+     "2032-02-15"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 33-36",
+    "start": 49.57,
+    "end": 51.41,
+    "level": 0,
+    "dates": [
+     "2032-02-16",
+     "2032-04-11"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 37-40",
+    "start": 51.41,
+    "end": 53.26,
+    "level": 0,
+    "dates": [
+     "2032-04-12",
+     "2032-06-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 41-44",
+    "start": 53.26,
+    "end": 55.1,
+    "level": 0,
+    "dates": [
+     "2032-06-07",
+     "2032-08-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG BLADES 45-48",
+    "start": 55.1,
+    "end": 56.94,
+    "level": 0,
+    "dates": [
+     "2032-08-02",
+     "2032-09-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Steel SemiSub",
+    "start": 0.0,
+    "end": 60.86,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2033-01-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Design and preparations of Steel SemiSub",
+    "start": 0.0,
+    "end": 19.01,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2029-07-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Detailed Design incl. Mooring",
+    "start": 0.0,
+    "end": 12.01,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2028-12-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Design Certification",
+    "start": 5.92,
+    "end": 15.07,
+    "level": 0,
+    "dates": [
+     "2028-06-29",
+     "2029-04-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Create Workshop Drawings",
+    "start": 15.07,
+    "end": 19.01,
+    "level": 0,
+    "dates": [
+     "2029-04-03",
+     "2029-07-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Site Mobilization",
+    "start": 15.07,
+    "end": 19.01,
+    "level": 0,
+    "dates": [
+     "2029-04-03",
+     "2029-07-31"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies",
+    "start": 24.8,
+    "end": 52.89,
+    "level": 0,
+    "dates": [
+     "2030-01-24",
+     "2032-05-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 1-2",
+    "start": 24.8,
+    "end": 29.84,
+    "level": 0,
+    "dates": [
+     "2030-01-24",
+     "2030-06-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 3-4",
+    "start": 25.79,
+    "end": 30.82,
+    "level": 0,
+    "dates": [
+     "2030-02-23",
+     "2030-07-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 5-6",
+    "start": 26.81,
+    "end": 31.84,
+    "level": 0,
+    "dates": [
+     "2030-03-26",
+     "2030-08-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 7-8",
+    "start": 27.8,
+    "end": 32.83,
+    "level": 0,
+    "dates": [
+     "2030-04-25",
+     "2030-09-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 9-10",
+    "start": 28.82,
+    "end": 33.85,
+    "level": 0,
+    "dates": [
+     "2030-05-26",
+     "2030-10-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 11-12",
+    "start": 29.84,
+    "end": 34.87,
+    "level": 0,
+    "dates": [
+     "2030-06-26",
+     "2030-11-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 13-14",
+    "start": 30.82,
+    "end": 35.86,
+    "level": 0,
+    "dates": [
+     "2030-07-26",
+     "2030-12-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 15-16",
+    "start": 31.81,
+    "end": 36.84,
+    "level": 0,
+    "dates": [
+     "2030-08-25",
+     "2031-01-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 17-18",
+    "start": 32.83,
+    "end": 37.86,
+    "level": 0,
+    "dates": [
+     "2030-09-25",
+     "2031-02-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 19-20",
+    "start": 33.82,
+    "end": 38.85,
+    "level": 0,
+    "dates": [
+     "2030-10-25",
+     "2031-03-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 21-22",
+    "start": 34.84,
+    "end": 39.87,
+    "level": 0,
+    "dates": [
+     "2030-11-25",
+     "2031-04-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 23-24",
+    "start": 35.82,
+    "end": 40.86,
+    "level": 0,
+    "dates": [
+     "2030-12-25",
+     "2031-05-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 25-26",
+    "start": 36.84,
+    "end": 41.88,
+    "level": 0,
+    "dates": [
+     "2031-01-25",
+     "2031-06-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 27-28",
+    "start": 37.83,
+    "end": 42.86,
+    "level": 0,
+    "dates": [
+     "2031-02-24",
+     "2031-07-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 29-30",
+    "start": 38.85,
+    "end": 43.88,
+    "level": 0,
+    "dates": [
+     "2031-03-27",
+     "2031-08-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 31-32",
+    "start": 39.84,
+    "end": 44.87,
+    "level": 0,
+    "dates": [
+     "2031-04-26",
+     "2031-09-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 33-34",
+    "start": 40.86,
+    "end": 45.89,
+    "level": 0,
+    "dates": [
+     "2031-05-27",
+     "2031-10-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 35-36",
+    "start": 41.84,
+    "end": 46.88,
+    "level": 0,
+    "dates": [
+     "2031-06-26",
+     "2031-11-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 37-38",
+    "start": 42.86,
+    "end": 47.89,
+    "level": 0,
+    "dates": [
+     "2031-07-27",
+     "2031-12-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 39-40",
+    "start": 43.85,
+    "end": 48.88,
+    "level": 0,
+    "dates": [
+     "2031-08-26",
+     "2032-01-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 41-42",
+    "start": 44.87,
+    "end": 49.9,
+    "level": 0,
+    "dates": [
+     "2031-09-26",
+     "2032-02-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 43-44",
+    "start": 45.86,
+    "end": 50.89,
+    "level": 0,
+    "dates": [
+     "2031-10-26",
+     "2032-03-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 45-46",
+    "start": 46.88,
+    "end": 51.91,
+    "level": 0,
+    "dates": [
+     "2031-11-26",
+     "2032-04-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing sub-assemblies FLOATER 47-48",
+    "start": 47.86,
+    "end": 52.89,
+    "level": 0,
+    "dates": [
+     "2031-12-26",
+     "2032-05-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies",
+    "start": 29.84,
+    "end": 53.91,
+    "level": 0,
+    "dates": [
+     "2030-06-26",
+     "2032-06-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 1-2",
+    "start": 29.84,
+    "end": 30.82,
+    "level": 0,
+    "dates": [
+     "2030-06-26",
+     "2030-07-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 3-4",
+    "start": 30.82,
+    "end": 31.84,
+    "level": 0,
+    "dates": [
+     "2030-07-26",
+     "2030-08-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 5-6",
+    "start": 31.84,
+    "end": 32.86,
+    "level": 0,
+    "dates": [
+     "2030-08-26",
+     "2030-09-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 7-8",
+    "start": 32.86,
+    "end": 33.85,
+    "level": 0,
+    "dates": [
+     "2030-09-26",
+     "2030-10-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 9-10",
+    "start": 33.85,
+    "end": 34.87,
+    "level": 0,
+    "dates": [
+     "2030-10-26",
+     "2030-11-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 11-12",
+    "start": 34.87,
+    "end": 35.86,
+    "level": 0,
+    "dates": [
+     "2030-11-26",
+     "2030-12-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 13-14",
+    "start": 35.86,
+    "end": 36.84,
+    "level": 0,
+    "dates": [
+     "2030-12-26",
+     "2031-01-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 15-16",
+    "start": 36.84,
+    "end": 37.86,
+    "level": 0,
+    "dates": [
+     "2031-01-25",
+     "2031-02-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 17-18",
+    "start": 37.86,
+    "end": 38.85,
+    "level": 0,
+    "dates": [
+     "2031-02-25",
+     "2031-03-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 19-20",
+    "start": 38.85,
+    "end": 39.87,
+    "level": 0,
+    "dates": [
+     "2031-03-27",
+     "2031-04-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 21-22",
+    "start": 10.03,
+    "end": 11.02,
+    "level": 0,
+    "dates": [
+     "2031-04-27",
+     "2031-05-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 23-24",
+    "start": 11.02,
+    "end": 12.04,
+    "level": 0,
+    "dates": [
+     "2031-05-27",
+     "2031-06-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 25-26",
+    "start": 12.04,
+    "end": 13.03,
+    "level": 0,
+    "dates": [
+     "2031-06-27",
+     "2031-07-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 27-28",
+    "start": 13.03,
+    "end": 14.05,
+    "level": 0,
+    "dates": [
+     "2031-07-27",
+     "2031-08-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 29-30",
+    "start": 14.05,
+    "end": 15.03,
+    "level": 0,
+    "dates": [
+     "2031-08-27",
+     "2031-09-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 31-32",
+    "start": 15.03,
+    "end": 16.05,
+    "level": 0,
+    "dates": [
+     "2031-09-26",
+     "2031-10-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 33-34",
+    "start": 16.05,
+    "end": 17.04,
+    "level": 0,
+    "dates": [
+     "2031-10-27",
+     "2031-11-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 35-36",
+    "start": 17.04,
+    "end": 18.06,
+    "level": 0,
+    "dates": [
+     "2031-11-26",
+     "2031-12-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 37-38",
+    "start": 18.06,
+    "end": 19.05,
+    "level": 0,
+    "dates": [
+     "2031-12-27",
+     "2032-01-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 39-40",
+    "start": 19.05,
+    "end": 20.07,
+    "level": 0,
+    "dates": [
+     "2032-01-26",
+     "2032-02-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 41-42",
+    "start": 20.07,
+    "end": 21.05,
+    "level": 0,
+    "dates": [
+     "2032-02-26",
+     "2032-03-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 43-44",
+    "start": 21.05,
+    "end": 22.07,
+    "level": 0,
+    "dates": [
+     "2032-03-27",
+     "2032-04-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 45-46",
+    "start": 22.07,
+    "end": 23.06,
+    "level": 0,
+    "dates": [
+     "2032-04-27",
+     "2032-05-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of sub-assemblies FLOATER 47-48",
+    "start": 23.06,
+    "end": 24.08,
+    "level": 0,
+    "dates": [
+     "2032-05-27",
+     "2032-06-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly & pre-commissioning of Steel SemiSub",
+    "start": 0.0,
+    "end": 28.06,
+    "level": 0,
+    "dates": [
+     "2030-06-26",
+     "2032-10-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 1-2",
+    "start": 0.0,
+    "end": 5.03,
+    "level": 0,
+    "dates": [
+     "2030-06-26",
+     "2030-11-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 3-4",
+    "start": 0.99,
+    "end": 6.02,
+    "level": 0,
+    "dates": [
+     "2030-07-26",
+     "2030-12-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 5-6",
+    "start": 2.01,
+    "end": 7.04,
+    "level": 0,
+    "dates": [
+     "2030-08-26",
+     "2031-01-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 7-8",
+    "start": 2.99,
+    "end": 8.03,
+    "level": 0,
+    "dates": [
+     "2030-09-25",
+     "2031-02-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 9-10",
+    "start": 4.01,
+    "end": 9.05,
+    "level": 0,
+    "dates": [
+     "2030-10-26",
+     "2031-03-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 11-12",
+    "start": 5.0,
+    "end": 10.03,
+    "level": 0,
+    "dates": [
+     "2030-11-25",
+     "2031-04-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 13-14",
+    "start": 6.02,
+    "end": 11.05,
+    "level": 0,
+    "dates": [
+     "2030-12-26",
+     "2031-05-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 15-16",
+    "start": 7.01,
+    "end": 12.04,
+    "level": 0,
+    "dates": [
+     "2031-01-25",
+     "2031-06-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 17-18",
+    "start": 8.03,
+    "end": 13.06,
+    "level": 0,
+    "dates": [
+     "2031-02-25",
+     "2031-07-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 19-20",
+    "start": 9.01,
+    "end": 14.05,
+    "level": 0,
+    "dates": [
+     "2031-03-27",
+     "2031-08-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 21-22",
+    "start": 10.03,
+    "end": 15.07,
+    "level": 0,
+    "dates": [
+     "2031-04-27",
+     "2031-09-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 23-24",
+    "start": 11.02,
+    "end": 16.05,
+    "level": 0,
+    "dates": [
+     "2031-05-27",
+     "2031-10-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 25-26",
+    "start": 12.04,
+    "end": 17.07,
+    "level": 0,
+    "dates": [
+     "2031-06-27",
+     "2031-11-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 27-28",
+    "start": 13.03,
+    "end": 18.06,
+    "level": 0,
+    "dates": [
+     "2031-07-27",
+     "2031-12-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 29-30",
+    "start": 14.05,
+    "end": 19.08,
+    "level": 0,
+    "dates": [
+     "2031-08-27",
+     "2032-01-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 31-32",
+    "start": 15.03,
+    "end": 20.07,
+    "level": 0,
+    "dates": [
+     "2031-09-26",
+     "2032-02-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 33-34",
+    "start": 16.05,
+    "end": 21.09,
+    "level": 0,
+    "dates": [
+     "2031-10-27",
+     "2032-03-27"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 35-36",
+    "start": 17.04,
+    "end": 22.07,
+    "level": 0,
+    "dates": [
+     "2031-11-26",
+     "2032-04-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 37-38",
+    "start": 18.03,
+    "end": 23.06,
+    "level": 0,
+    "dates": [
+     "2031-12-26",
+     "2032-05-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 39-40",
+    "start": 19.01,
+    "end": 24.05,
+    "level": 0,
+    "dates": [
+     "2032-01-25",
+     "2032-06-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 41-42",
+    "start": 20.03,
+    "end": 25.07,
+    "level": 0,
+    "dates": [
+     "2032-02-25",
+     "2032-07-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 43-44",
+    "start": 21.02,
+    "end": 26.05,
+    "level": 0,
+    "dates": [
+     "2032-03-26",
+     "2032-08-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 45-46",
+    "start": 22.04,
+    "end": 27.07,
+    "level": 0,
+    "dates": [
+     "2032-04-26",
+     "2032-09-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Assembly of FLOATER 47-48",
+    "start": 23.03,
+    "end": 28.06,
+    "level": 0,
+    "dates": [
+     "2032-05-26",
+     "2032-10-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off",
+    "start": 5.95,
+    "end": 30.03,
+    "level": 0,
+    "dates": [
+     "2030-12-24",
+     "2032-12-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 1",
+    "start": 5.95,
+    "end": 6.94,
+    "level": 0,
+    "dates": [
+     "2030-12-24",
+     "2031-01-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 2-3",
+    "start": 6.94,
+    "end": 7.96,
+    "level": 0,
+    "dates": [
+     "2031-01-23",
+     "2031-02-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 4-6",
+    "start": 7.96,
+    "end": 8.95,
+    "level": 0,
+    "dates": [
+     "2031-02-23",
+     "2031-03-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 7-9",
+    "start": 8.95,
+    "end": 9.97,
+    "level": 0,
+    "dates": [
+     "2031-03-25",
+     "2031-04-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 10-12",
+    "start": 9.97,
+    "end": 10.95,
+    "level": 0,
+    "dates": [
+     "2031-04-25",
+     "2031-05-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 13-15",
+    "start": 10.95,
+    "end": 11.97,
+    "level": 0,
+    "dates": [
+     "2031-05-25",
+     "2031-06-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 16-18",
+    "start": 11.97,
+    "end": 12.96,
+    "level": 0,
+    "dates": [
+     "2031-06-25",
+     "2031-07-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 19-20",
+    "start": 12.96,
+    "end": 13.98,
+    "level": 0,
+    "dates": [
+     "2031-07-25",
+     "2031-08-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 21",
+    "start": 7.04,
+    "end": 8.03,
+    "level": 0,
+    "dates": [
+     "2031-08-25",
+     "2031-09-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 22",
+    "start": 8.03,
+    "end": 9.05,
+    "level": 0,
+    "dates": [
+     "2031-09-24",
+     "2031-10-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 23",
+    "start": 9.05,
+    "end": 10.03,
+    "level": 0,
+    "dates": [
+     "2031-10-25",
+     "2031-11-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 24",
+    "start": 10.03,
+    "end": 11.05,
+    "level": 0,
+    "dates": [
+     "2031-11-24",
+     "2031-12-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 25",
+    "start": 11.05,
+    "end": 12.04,
+    "level": 0,
+    "dates": [
+     "2031-12-25",
+     "2032-01-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 26-27",
+    "start": 12.04,
+    "end": 13.06,
+    "level": 0,
+    "dates": [
+     "2032-01-24",
+     "2032-02-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 28-30",
+    "start": 13.06,
+    "end": 14.05,
+    "level": 0,
+    "dates": [
+     "2032-02-24",
+     "2032-03-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 31-33",
+    "start": 14.05,
+    "end": 15.07,
+    "level": 0,
+    "dates": [
+     "2032-03-25",
+     "2032-04-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 34-36",
+    "start": 15.07,
+    "end": 16.05,
+    "level": 0,
+    "dates": [
+     "2032-04-25",
+     "2032-05-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 37-39",
+    "start": 16.05,
+    "end": 17.07,
+    "level": 0,
+    "dates": [
+     "2032-05-25",
+     "2032-06-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 40-42",
+    "start": 17.07,
+    "end": 18.06,
+    "level": 0,
+    "dates": [
+     "2032-06-25",
+     "2032-07-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 43-44",
+    "start": 18.06,
+    "end": 19.08,
+    "level": 0,
+    "dates": [
+     "2032-07-25",
+     "2032-08-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 45",
+    "start": 19.08,
+    "end": 20.07,
+    "level": 0,
+    "dates": [
+     "2032-08-25",
+     "2032-09-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 46",
+    "start": 20.07,
+    "end": 21.09,
+    "level": 0,
+    "dates": [
+     "2032-09-24",
+     "2032-10-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 47",
+    "start": 21.09,
+    "end": 22.07,
+    "level": 0,
+    "dates": [
+     "2032-10-25",
+     "2032-11-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Load-out & Float-off FLOATER 48",
+    "start": 22.07,
+    "end": 23.09,
+    "level": 0,
+    "dates": [
+     "2032-11-24",
+     "2032-12-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport from assembly to WTG port",
+    "start": 0.0,
+    "end": 24.08,
+    "level": 0,
+    "dates": [
+     "2031-01-23",
+     "2033-01-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 1-2",
+    "start": 0.0,
+    "end": 0.99,
+    "level": 0,
+    "dates": [
+     "2031-01-23",
+     "2031-02-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 3-4",
+    "start": 0.99,
+    "end": 2.01,
+    "level": 0,
+    "dates": [
+     "2031-02-22",
+     "2031-03-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 5-6",
+    "start": 2.01,
+    "end": 2.99,
+    "level": 0,
+    "dates": [
+     "2031-03-25",
+     "2031-04-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 7-8",
+    "start": 2.99,
+    "end": 4.01,
+    "level": 0,
+    "dates": [
+     "2031-04-24",
+     "2031-05-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 9-10",
+    "start": 4.01,
+    "end": 5.0,
+    "level": 0,
+    "dates": [
+     "2031-05-25",
+     "2031-06-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 11-12",
+    "start": 5.0,
+    "end": 6.02,
+    "level": 0,
+    "dates": [
+     "2031-06-24",
+     "2031-07-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 13-14",
+    "start": 6.02,
+    "end": 7.01,
+    "level": 0,
+    "dates": [
+     "2031-07-25",
+     "2031-08-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 15-16",
+    "start": 7.01,
+    "end": 8.03,
+    "level": 0,
+    "dates": [
+     "2031-08-24",
+     "2031-09-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 17-18",
+    "start": 8.03,
+    "end": 9.01,
+    "level": 0,
+    "dates": [
+     "2031-09-24",
+     "2031-10-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 19-20",
+    "start": 9.01,
+    "end": 10.03,
+    "level": 0,
+    "dates": [
+     "2031-10-24",
+     "2031-11-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 21-22",
+    "start": 10.03,
+    "end": 11.02,
+    "level": 0,
+    "dates": [
+     "2031-11-24",
+     "2031-12-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 23-24",
+    "start": 11.02,
+    "end": 12.04,
+    "level": 0,
+    "dates": [
+     "2031-12-24",
+     "2032-01-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 25-26",
+    "start": 12.04,
+    "end": 13.03,
+    "level": 0,
+    "dates": [
+     "2032-01-24",
+     "2032-02-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 27-28",
+    "start": 13.03,
+    "end": 14.05,
+    "level": 0,
+    "dates": [
+     "2032-02-23",
+     "2032-03-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 29-30",
+    "start": 14.05,
+    "end": 15.03,
+    "level": 0,
+    "dates": [
+     "2032-03-25",
+     "2032-04-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 31-32",
+    "start": 15.03,
+    "end": 16.05,
+    "level": 0,
+    "dates": [
+     "2032-04-24",
+     "2032-05-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 33-34",
+    "start": 16.05,
+    "end": 17.04,
+    "level": 0,
+    "dates": [
+     "2032-05-25",
+     "2032-06-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 35-36",
+    "start": 17.04,
+    "end": 18.06,
+    "level": 0,
+    "dates": [
+     "2032-06-24",
+     "2032-07-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 37-38",
+    "start": 18.06,
+    "end": 19.05,
+    "level": 0,
+    "dates": [
+     "2032-07-25",
+     "2032-08-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 39-40",
+    "start": 19.05,
+    "end": 20.07,
+    "level": 0,
+    "dates": [
+     "2032-08-24",
+     "2032-09-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 41-42",
+    "start": 20.07,
+    "end": 21.05,
+    "level": 0,
+    "dates": [
+     "2032-09-24",
+     "2032-10-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 43-44",
+    "start": 21.05,
+    "end": 22.07,
+    "level": 0,
+    "dates": [
+     "2032-10-24",
+     "2032-11-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 45-46",
+    "start": 22.07,
+    "end": 23.06,
+    "level": 0,
+    "dates": [
+     "2032-11-24",
+     "2032-12-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Transport of FLOATER 47-48",
+    "start": 23.06,
+    "end": 24.08,
+    "level": 0,
+    "dates": [
+     "2032-12-24",
+     "2033-01-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG integration & Commissioning",
+    "start": 0.03,
+    "end": 29.11,
+    "level": 0,
+    "dates": [
+     "2031-01-24",
+     "2033-06-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 1-2",
+    "start": 0.03,
+    "end": 1.02,
+    "level": 0,
+    "dates": [
+     "2031-01-24",
+     "2031-02-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 3-4",
+    "start": 1.02,
+    "end": 2.04,
+    "level": 0,
+    "dates": [
+     "2031-02-23",
+     "2031-03-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 5-6",
+    "start": 2.04,
+    "end": 3.03,
+    "level": 0,
+    "dates": [
+     "2031-03-26",
+     "2031-04-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 7-8",
+    "start": 3.03,
+    "end": 4.05,
+    "level": 0,
+    "dates": [
+     "2031-04-25",
+     "2031-05-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 9-10",
+    "start": 4.05,
+    "end": 5.03,
+    "level": 0,
+    "dates": [
+     "2031-05-26",
+     "2031-06-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 11-12",
+    "start": 5.03,
+    "end": 6.05,
+    "level": 0,
+    "dates": [
+     "2031-06-25",
+     "2031-07-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 13-14",
+    "start": 30.82,
+    "end": 31.81,
+    "level": 0,
+    "dates": [
+     "2031-07-26",
+     "2031-08-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 15",
+    "start": 31.81,
+    "end": 32.83,
+    "level": 0,
+    "dates": [
+     "2031-08-25",
+     "2031-09-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 16",
+    "start": 32.83,
+    "end": 33.82,
+    "level": 0,
+    "dates": [
+     "2031-09-25",
+     "2031-10-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 17",
+    "start": 33.82,
+    "end": 34.84,
+    "level": 0,
+    "dates": [
+     "2031-10-25",
+     "2031-11-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 18",
+    "start": 34.84,
+    "end": 35.82,
+    "level": 0,
+    "dates": [
+     "2031-11-25",
+     "2031-12-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 19",
+    "start": 35.82,
+    "end": 36.84,
+    "level": 0,
+    "dates": [
+     "2031-12-25",
+     "2032-01-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 20-21",
+    "start": 36.84,
+    "end": 37.83,
+    "level": 0,
+    "dates": [
+     "2032-01-25",
+     "2032-02-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 22-23",
+    "start": 37.83,
+    "end": 38.85,
+    "level": 0,
+    "dates": [
+     "2032-02-24",
+     "2032-03-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 24-25",
+    "start": 38.85,
+    "end": 39.84,
+    "level": 0,
+    "dates": [
+     "2032-03-26",
+     "2032-04-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 26-27",
+    "start": 39.84,
+    "end": 40.86,
+    "level": 0,
+    "dates": [
+     "2032-04-25",
+     "2032-05-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 28-29",
+    "start": 40.86,
+    "end": 41.84,
+    "level": 0,
+    "dates": [
+     "2032-05-26",
+     "2032-06-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 30-31",
+    "start": 41.84,
+    "end": 42.86,
+    "level": 0,
+    "dates": [
+     "2032-06-25",
+     "2032-07-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 32-33",
+    "start": 42.86,
+    "end": 43.85,
+    "level": 0,
+    "dates": [
+     "2032-07-26",
+     "2032-08-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 34",
+    "start": 43.85,
+    "end": 44.87,
+    "level": 0,
+    "dates": [
+     "2032-08-25",
+     "2032-09-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 35",
+    "start": 44.87,
+    "end": 45.86,
+    "level": 0,
+    "dates": [
+     "2032-09-25",
+     "2032-10-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 36",
+    "start": 45.86,
+    "end": 46.88,
+    "level": 0,
+    "dates": [
+     "2032-10-25",
+     "2032-11-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 37",
+    "start": 46.88,
+    "end": 47.86,
+    "level": 0,
+    "dates": [
+     "2032-11-25",
+     "2032-12-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 38",
+    "start": 47.86,
+    "end": 48.88,
+    "level": 0,
+    "dates": [
+     "2032-12-25",
+     "2033-01-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 39-40",
+    "start": 48.88,
+    "end": 49.87,
+    "level": 0,
+    "dates": [
+     "2033-01-25",
+     "2033-02-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 41-42",
+    "start": 49.87,
+    "end": 50.89,
+    "level": 0,
+    "dates": [
+     "2033-02-24",
+     "2033-03-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 43-44",
+    "start": 50.89,
+    "end": 51.88,
+    "level": 0,
+    "dates": [
+     "2033-03-27",
+     "2033-04-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 45-46",
+    "start": 51.88,
+    "end": 52.89,
+    "level": 0,
+    "dates": [
+     "2033-04-26",
+     "2033-05-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG Integration FLOATER 47-48",
+    "start": 52.89,
+    "end": 53.88,
+    "level": 0,
+    "dates": [
+     "2033-05-27",
+     "2033-06-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG/Floater Installation",
+    "start": 0.0,
+    "end": 54.9,
+    "level": 0,
+    "dates": [
+     "2028-12-31",
+     "2033-07-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Mooring and Anchor",
+    "start": 0.0,
+    "end": 42.7,
+    "level": 0,
+    "dates": [
+     "2028-12-31",
+     "2032-07-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Mooring line Manufacturing",
+    "start": 0.0,
+    "end": 8.88,
+    "level": 0,
+    "dates": [
+     "2028-12-31",
+     "2029-09-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Anchor Manufacturing (Piled anchor / Suction anchor)",
+    "start": 0.0,
+    "end": 12.01,
+    "level": 0,
+    "dates": [
+     "2028-12-31",
+     "2029-12-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Mooring line Transport",
+    "start": 0.69,
+    "end": 9.57,
+    "level": 0,
+    "dates": [
+     "2029-01-21",
+     "2029-10-17"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Anchor Transport (Piled anchor / Suction anchor)",
+    "start": 0.69,
+    "end": 12.7,
+    "level": 0,
+    "dates": [
+     "2029-01-21",
+     "2030-01-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Mooring line Installation Campain 1",
+    "start": 14.74,
+    "end": 18.68,
+    "level": 0,
+    "dates": [
+     "2030-03-24",
+     "2030-07-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Anchor Installation Campain 1 (Piled anchor / Suction anch130 days",
+    "start": 13.72,
+    "end": 17.99,
+    "level": 0,
+    "dates": [
+     "2030-02-21",
+     "2030-06-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Mooring line Installation Campain 2",
+    "start": 26.74,
+    "end": 30.69,
+    "level": 0,
+    "dates": [
+     "2031-03-24",
+     "2031-07-21"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Anchor Installation Campain 2 (Piled anchor / Suction anch130 days",
+    "start": 25.72,
+    "end": 30.0,
+    "level": 0,
+    "dates": [
+     "2031-02-21",
+     "2031-06-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Mooring line Installation Campain 3",
+    "start": 38.75,
+    "end": 42.7,
+    "level": 0,
+    "dates": [
+     "2032-03-23",
+     "2032-07-20"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Anchor Installation Campain 3 (Piled anchor / Suction anch130 days",
+    "start": 37.73,
+    "end": 42.01,
+    "level": 0,
+    "dates": [
+     "2032-02-21",
+     "2032-06-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "WTG/Floater Hook Up @ Site",
+    "start": 24.8,
+    "end": 54.9,
+    "level": 0,
+    "dates": [
+     "2031-01-24",
+     "2033-07-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 1",
+    "start": 24.8,
+    "end": 25.79,
+    "level": 0,
+    "dates": [
+     "2031-01-24",
+     "2031-02-22"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 2-3",
+    "start": 25.79,
+    "end": 26.81,
+    "level": 0,
+    "dates": [
+     "2031-02-23",
+     "2031-03-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 4-5",
+    "start": 26.81,
+    "end": 27.8,
+    "level": 0,
+    "dates": [
+     "2031-03-26",
+     "2031-04-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 6-7",
+    "start": 27.8,
+    "end": 28.82,
+    "level": 0,
+    "dates": [
+     "2031-04-25",
+     "2031-05-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 8-9",
+    "start": 28.82,
+    "end": 29.8,
+    "level": 0,
+    "dates": [
+     "2031-05-26",
+     "2031-06-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 10-11",
+    "start": 29.8,
+    "end": 30.82,
+    "level": 0,
+    "dates": [
+     "2031-06-25",
+     "2031-07-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 12-13",
+    "start": 30.82,
+    "end": 31.81,
+    "level": 0,
+    "dates": [
+     "2031-07-26",
+     "2031-08-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 14",
+    "start": 31.81,
+    "end": 32.83,
+    "level": 0,
+    "dates": [
+     "2031-08-25",
+     "2031-09-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 15",
+    "start": 32.83,
+    "end": 33.82,
+    "level": 0,
+    "dates": [
+     "2031-09-25",
+     "2031-10-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 16",
+    "start": 33.82,
+    "end": 34.84,
+    "level": 0,
+    "dates": [
+     "2031-10-25",
+     "2031-11-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 17",
+    "start": 34.84,
+    "end": 35.82,
+    "level": 0,
+    "dates": [
+     "2031-11-25",
+     "2031-12-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 18",
+    "start": 35.82,
+    "end": 36.84,
+    "level": 0,
+    "dates": [
+     "2031-12-25",
+     "2032-01-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 19-20",
+    "start": 48.85,
+    "end": 49.84,
+    "level": 0,
+    "dates": [
+     "2032-01-25",
+     "2032-02-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 21-22",
+    "start": 49.84,
+    "end": 50.86,
+    "level": 0,
+    "dates": [
+     "2032-02-24",
+     "2032-03-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 23-24",
+    "start": 50.86,
+    "end": 51.84,
+    "level": 0,
+    "dates": [
+     "2032-03-26",
+     "2032-04-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 25-26",
+    "start": 51.84,
+    "end": 52.86,
+    "level": 0,
+    "dates": [
+     "2032-04-25",
+     "2032-05-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 27-28",
+    "start": 52.86,
+    "end": 53.85,
+    "level": 0,
+    "dates": [
+     "2032-05-26",
+     "2032-06-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 29-30",
+    "start": 53.85,
+    "end": 54.87,
+    "level": 0,
+    "dates": [
+     "2032-06-25",
+     "2032-07-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 31-32",
+    "start": 54.87,
+    "end": 55.86,
+    "level": 0,
+    "dates": [
+     "2032-07-26",
+     "2032-08-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 33",
+    "start": 55.86,
+    "end": 56.88,
+    "level": 0,
+    "dates": [
+     "2032-08-25",
+     "2032-09-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 34",
+    "start": 56.88,
+    "end": 57.86,
+    "level": 0,
+    "dates": [
+     "2032-09-25",
+     "2032-10-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 35",
+    "start": 57.86,
+    "end": 58.88,
+    "level": 0,
+    "dates": [
+     "2032-10-25",
+     "2032-11-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 36",
+    "start": 58.88,
+    "end": 59.87,
+    "level": 0,
+    "dates": [
+     "2032-11-25",
+     "2032-12-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 37",
+    "start": 59.87,
+    "end": 60.89,
+    "level": 0,
+    "dates": [
+     "2032-12-25",
+     "2033-01-24"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 38-39",
+    "start": 60.89,
+    "end": 61.88,
+    "level": 0,
+    "dates": [
+     "2033-01-25",
+     "2033-02-23"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 40-41",
+    "start": 61.88,
+    "end": 62.89,
+    "level": 0,
+    "dates": [
+     "2033-02-24",
+     "2033-03-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 42-43",
+    "start": 62.89,
+    "end": 63.88,
+    "level": 0,
+    "dates": [
+     "2033-03-27",
+     "2033-04-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 44-45",
+    "start": 63.88,
+    "end": 64.9,
+    "level": 0,
+    "dates": [
+     "2033-04-26",
+     "2033-05-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 46-47",
+    "start": 64.9,
+    "end": 65.89,
+    "level": 0,
+    "dates": [
+     "2033-05-27",
+     "2033-06-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Installation of FLOATER 48",
+    "start": 65.89,
+    "end": 66.91,
+    "level": 0,
+    "dates": [
+     "2033-06-26",
+     "2033-07-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Inter Array Cable (IAC)",
+    "start": 0.0,
+    "end": 40.53,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2031-05-16"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing",
+    "start": 12.01,
+    "end": 17.93,
+    "level": 0,
+    "dates": [
+     "2028-12-31",
+     "2029-06-28"
+    ],
+    "summary": false
+   },
+   {
+    "name": "IAC Installation",
+    "start": 36.81,
+    "end": 40.53,
+    "level": 0,
+    "dates": [
+     "2031-01-24",
+     "2031-05-16"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Offshore Substations (OSS)",
+    "start": 0.0,
+    "end": 55.1,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2032-08-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS detailed design",
+    "start": 0.0,
+    "end": 12.01,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2028-12-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 1 manufacturing",
+    "start": 12.01,
+    "end": 36.02,
+    "level": 0,
+    "dates": [
+     "2028-12-31",
+     "2030-12-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 2 manufacturing",
+    "start": 24.01,
+    "end": 48.03,
+    "level": 0,
+    "dates": [
+     "2029-12-31",
+     "2031-12-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 1 onshore commissioning",
+    "start": 36.02,
+    "end": 38.98,
+    "level": 0,
+    "dates": [
+     "2030-12-31",
+     "2031-03-30"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 2 onshore commissioning",
+    "start": 48.03,
+    "end": 50.99,
+    "level": 0,
+    "dates": [
+     "2031-12-31",
+     "2032-03-29"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 1 anchor installation",
+    "start": 38.98,
+    "end": 39.21,
+    "level": 0,
+    "dates": [
+     "2031-03-31",
+     "2031-04-06"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 2 anchor installation",
+    "start": 50.99,
+    "end": 51.22,
+    "level": 0,
+    "dates": [
+     "2032-03-30",
+     "2032-04-05"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 1 mooring line deployment",
+    "start": 39.21,
+    "end": 39.44,
+    "level": 0,
+    "dates": [
+     "2031-04-07",
+     "2031-04-13"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 2 mooring line deployment",
+    "start": 51.22,
+    "end": 51.45,
+    "level": 0,
+    "dates": [
+     "2032-04-06",
+     "2032-04-12"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 1 tow and hook-up",
+    "start": 39.44,
+    "end": 40.13,
+    "level": 0,
+    "dates": [
+     "2031-04-14",
+     "2031-05-04"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 2 tow and hook-up",
+    "start": 51.45,
+    "end": 52.14,
+    "level": 0,
+    "dates": [
+     "2032-04-13",
+     "2032-05-03"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 1 offshore commissioning",
+    "start": 40.13,
+    "end": 43.09,
+    "level": 0,
+    "dates": [
+     "2031-05-05",
+     "2031-08-02"
+    ],
+    "summary": false
+   },
+   {
+    "name": "OSS 2 offshore commissioning",
+    "start": 52.14,
+    "end": 55.1,
+    "level": 0,
+    "dates": [
+     "2032-05-04",
+     "2032-08-01"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Offshore Export Cable (OEC)",
+    "start": 0.0,
+    "end": 40.13,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2031-05-04"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Detailled Design",
+    "start": 0.0,
+    "end": 5.92,
+    "level": 0,
+    "dates": [
+     "2028-01-01",
+     "2028-06-28"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Manufacturing",
+    "start": 5.92,
+    "end": 8.88,
+    "level": 0,
+    "dates": [
+     "2028-06-29",
+     "2028-09-26"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Instalation (incl. Hook up at Beachlanding)",
+    "start": 33.42,
+    "end": 40.13,
+    "level": 0,
+    "dates": [
+     "2030-10-13",
+     "2031-05-04"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Commissioning",
+    "start": 36.81,
+    "end": 67.89,
+    "level": 0,
+    "dates": [
+     "2031-01-24",
+     "2033-08-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Export Cable ready for Energization",
+    "start": 40.1,
+    "end": 40.13,
+    "level": 0,
+    "dates": [
+     "2031-05-04",
+     "2031-05-04"
+    ],
+    "summary": false
+   },
+   {
+    "name": "Commissioning of WTGs",
+    "start": 36.81,
+    "end": 67.89,
+    "level": 0,
+    "dates": [
+     "2031-01-24",
+     "2033-08-25"
+    ],
+    "summary": false
+   },
+   {
+    "name": "First Power",
+    "start": 43.29,
+    "end": 43.32,
+    "level": 0,
+    "dates": [
+     "2031-08-09",
+     "2031-08-09"
+    ],
+    "summary": false
+   },
+   {
+    "name": "All WTGs producing",
+    "start": 67.86,
+    "end": 67.89,
+    "level": 0,
+    "dates": [
+     "2033-08-25",
+     "2033-08-25"
+    ],
+    "summary": false
+   }
+  ],
+  "unit": "month",
+  "months": 67.89,
+  "source": {
+   "url": "https://va.mite.gov.it/File/Documento/1338719",
+   "page": 20,
+   "document": "Cronoprogramma dei Lavori",
+   "excerpt": ""
+  },
+  "asse": {
+   "titolo": null,
+   "etichette": [
+    {
+     "label": "gen 28",
+     "start": 0.0,
+     "end": 1.0
+    },
+    {
+     "label": "feb 28",
+     "start": 1.0,
+     "end": 2.0
+    },
+    {
+     "label": "mar 28",
+     "start": 2.0,
+     "end": 3.0
+    },
+    {
+     "label": "apr 28",
+     "start": 3.0,
+     "end": 4.0
+    },
+    {
+     "label": "mag 28",
+     "start": 4.0,
+     "end": 5.0
+    },
+    {
+     "label": "giu 28",
+     "start": 5.0,
+     "end": 6.0
+    },
+    {
+     "label": "lug 28",
+     "start": 6.0,
+     "end": 7.0
+    },
+    {
+     "label": "ago 28",
+     "start": 7.0,
+     "end": 8.0
+    },
+    {
+     "label": "set 28",
+     "start": 8.0,
+     "end": 9.0
+    },
+    {
+     "label": "ott 28",
+     "start": 9.0,
+     "end": 10.0
+    },
+    {
+     "label": "nov 28",
+     "start": 10.0,
+     "end": 11.0
+    },
+    {
+     "label": "dic 28",
+     "start": 11.0,
+     "end": 12.0
+    },
+    {
+     "label": "gen 29",
+     "start": 12.0,
+     "end": 13.0
+    },
+    {
+     "label": "feb 29",
+     "start": 13.0,
+     "end": 14.0
+    },
+    {
+     "label": "mar 29",
+     "start": 14.0,
+     "end": 15.0
+    },
+    {
+     "label": "apr 29",
+     "start": 15.0,
+     "end": 16.0
+    },
+    {
+     "label": "mag 29",
+     "start": 16.0,
+     "end": 17.0
+    },
+    {
+     "label": "giu 29",
+     "start": 17.0,
+     "end": 18.0
+    },
+    {
+     "label": "lug 29",
+     "start": 18.0,
+     "end": 19.0
+    },
+    {
+     "label": "ago 29",
+     "start": 19.0,
+     "end": 20.0
+    },
+    {
+     "label": "set 29",
+     "start": 20.0,
+     "end": 21.0
+    },
+    {
+     "label": "ott 29",
+     "start": 21.0,
+     "end": 22.0
+    },
+    {
+     "label": "nov 29",
+     "start": 22.0,
+     "end": 23.0
+    },
+    {
+     "label": "dic 29",
+     "start": 23.0,
+     "end": 24.0
+    },
+    {
+     "label": "gen 30",
+     "start": 24.0,
+     "end": 25.0
+    },
+    {
+     "label": "feb 30",
+     "start": 25.0,
+     "end": 26.0
+    },
+    {
+     "label": "mar 30",
+     "start": 26.0,
+     "end": 27.0
+    },
+    {
+     "label": "apr 30",
+     "start": 27.0,
+     "end": 28.0
+    },
+    {
+     "label": "mag 30",
+     "start": 28.0,
+     "end": 29.0
+    },
+    {
+     "label": "giu 30",
+     "start": 29.0,
+     "end": 30.0
+    },
+    {
+     "label": "lug 30",
+     "start": 30.0,
+     "end": 31.0
+    },
+    {
+     "label": "ago 30",
+     "start": 31.0,
+     "end": 32.0
+    },
+    {
+     "label": "set 30",
+     "start": 32.0,
+     "end": 33.0
+    },
+    {
+     "label": "ott 30",
+     "start": 33.0,
+     "end": 34.0
+    },
+    {
+     "label": "nov 30",
+     "start": 34.0,
+     "end": 35.0
+    },
+    {
+     "label": "dic 30",
+     "start": 35.0,
+     "end": 36.0
+    },
+    {
+     "label": "gen 31",
+     "start": 36.0,
+     "end": 37.0
+    },
+    {
+     "label": "feb 31",
+     "start": 37.0,
+     "end": 38.0
+    },
+    {
+     "label": "mar 31",
+     "start": 38.0,
+     "end": 39.0
+    },
+    {
+     "label": "apr 31",
+     "start": 39.0,
+     "end": 40.0
+    },
+    {
+     "label": "mag 31",
+     "start": 40.0,
+     "end": 41.0
+    },
+    {
+     "label": "giu 31",
+     "start": 41.0,
+     "end": 42.0
+    },
+    {
+     "label": "lug 31",
+     "start": 42.0,
+     "end": 43.0
+    },
+    {
+     "label": "ago 31",
+     "start": 43.0,
+     "end": 44.0
+    },
+    {
+     "label": "set 31",
+     "start": 44.0,
+     "end": 45.0
+    },
+    {
+     "label": "ott 31",
+     "start": 45.0,
+     "end": 46.0
+    },
+    {
+     "label": "nov 31",
+     "start": 46.0,
+     "end": 47.0
+    },
+    {
+     "label": "dic 31",
+     "start": 47.0,
+     "end": 48.0
+    },
+    {
+     "label": "gen 32",
+     "start": 48.0,
+     "end": 49.0
+    },
+    {
+     "label": "feb 32",
+     "start": 49.0,
+     "end": 50.0
+    },
+    {
+     "label": "mar 32",
+     "start": 50.0,
+     "end": 51.0
+    },
+    {
+     "label": "apr 32",
+     "start": 51.0,
+     "end": 52.0
+    },
+    {
+     "label": "mag 32",
+     "start": 52.0,
+     "end": 53.0
+    },
+    {
+     "label": "giu 32",
+     "start": 53.0,
+     "end": 54.0
+    },
+    {
+     "label": "lug 32",
+     "start": 54.0,
+     "end": 55.0
+    },
+    {
+     "label": "ago 32",
+     "start": 55.0,
+     "end": 56.0
+    },
+    {
+     "label": "set 32",
+     "start": 56.0,
+     "end": 57.0
+    },
+    {
+     "label": "ott 32",
+     "start": 57.0,
+     "end": 58.0
+    },
+    {
+     "label": "nov 32",
+     "start": 58.0,
+     "end": 59.0
+    },
+    {
+     "label": "dic 32",
+     "start": 59.0,
+     "end": 60.0
+    },
+    {
+     "label": "gen 33",
+     "start": 60.0,
+     "end": 61.0
+    },
+    {
+     "label": "feb 33",
+     "start": 61.0,
+     "end": 62.0
+    },
+    {
+     "label": "mar 33",
+     "start": 62.0,
+     "end": 63.0
+    },
+    {
+     "label": "apr 33",
+     "start": 63.0,
+     "end": 64.0
+    },
+    {
+     "label": "mag 33",
+     "start": 64.0,
+     "end": 65.0
+    },
+    {
+     "label": "giu 33",
+     "start": 65.0,
+     "end": 66.0
+    },
+    {
+     "label": "lug 33",
+     "start": 66.0,
+     "end": 67.0
+    },
+    {
+     "label": "ago 33",
+     "start": 67.0,
+     "end": 68.0
+    }
+   ],
+   "unita": null
+  },
+  "duration": {
+   "text": "7 giorni",
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 064 giorni (circa 2 mesi) (3), 4 settimane (3), 300 giorni (circa 10 mesi) (3)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1338737",
+    "page": 147,
+    "document": "Studio di Impatto Ambientale Volume 3",
+    "excerpt": "per ogni mese, ipotizzando che i lavori avvengano durante diversi momenti del periodo simulato con il modello idrodinamico (una simulazione ogni 7 giorni), potendo quindi cogliere l’effetto della variabilità spazio-tempo"
+   }
+  },
+  "milestones": [],
+  "document": {
+   "document": "Cronoprogramma dei Lavori",
+   "url": "https://va.mite.gov.it/File/Documento/1338719"
+  },
+  "note": null,
+  "altri": [],
+  "durate_fasi": [],
+  "metodo": "tabella con date"
+ },
+ "documentazione": {
+  "documenti": 194,
+  "pagine": 8744,
+  "completa": true,
+  "da_leggere": 0
+ },
+ "confronto": [
+  {
+   "campo": "proponent",
+   "valore_attuale": "Atis Floating Wind S.r.l.",
+   "esito": "confermato"
+  },
+  {
+   "campo": "power_mw",
+   "valore_attuale": 864.0,
+   "esito": "confermato"
+  },
+  {
+   "campo": "municipalities",
+   "valore_attuale": "",
+   "esito": "nuovo_verificato"
+  },
+  {
+   "campo": "province",
+   "valore_attuale": "LI",
+   "esito": "non_determinabile"
+  },
+  {
+   "campo": "region",
+   "valore_attuale": "Toscana",
+   "esito": "non_determinabile"
+  }
+ ],
+ "da_verificare": [
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Recapiti",
+   "reason": "129 recapiti non attribuibili a un soggetto preciso: non mostrati"
+  }
+ ],
+ "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
+}
