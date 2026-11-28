@@ -1,0 +1,25 @@
+name: PV MCP pilot validation
+on:
+  push:
+    branches: ['feat/pv-intelligence-mcp']
+    paths: ['pv_mcp/**', '.github/workflows/pv-mcp-pilot.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r pv_mcp/requirements.txt
+      - run: git diff --check HEAD^ HEAD
+      - run: python -m unittest -v pv_mcp.test_core pv_mcp.test_protocol
+      - run: python -m unittest -v pv_mcp.test_core.PublishedIntegration
+        env:
+          PV_MCP_LIVE_TEST: '1'
+      - name: Existing pre-publication structural checks
+        shell: pwsh
+        run: ./scripts/check_before_publish.ps1 -SkipTests
