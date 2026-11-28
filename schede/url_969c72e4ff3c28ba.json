@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico, della potenza di 36,544 MW e delle relative opere di connessione alla RTN, da realizzarsi nei comuni di Deliceto (FG) e Ascoli Satriano (FG).",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9510",
  "source": "mase",
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "sintesi": [
   {
    "key": "potenza",
@@ -32,11 +32,37 @@
    }
   },
   {
+   "key": "area",
+   "label": "Superficie complessiva",
+   "value": "67 ha",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 77,2 ha (1)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1441699",
+    "page": 23,
+    "document": "Parere del Ministero della cultura - DIT - Soprintendenza Speciale per il PNRR in data 28/10/2026",
+    "excerpt": "In tale quadro territoriale, la realizzazione di un impianto agrivoltaico di dimensioni particolarmente rilevanti –esteso su una superficie complessiva di circa 67 ha–, determinerebbe la trasformazione significativa dell"
+   }
+  },
+  {
+   "key": "accumulo",
+   "label": "Accumulo",
+   "value": "15 MW",
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 31,5 MW (2)",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/1452417",
+    "page": 47,
+    "document": "Allegato al Decreto Direttoriale - Parere CT PNRR-PNIEC del 25/06/2026",
+    "excerpt": "Progetto di un impianto agrovoltaico di potenza nominale pari a 60,05 MW, e delle relative opere di connessione alla RTN, integrato da un sistema di accumulo da 15 MW, da realizzarsi nel territorio comunale di Deliceto ("
+   }
+  },
+  {
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "18 mesi",
-   "status": "da documenti",
-   "sub": null,
+   "status": "da verificare",
+   "sub": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1452417",
     "page": 20,
@@ -55,19 +81,19 @@
   "coordinate": {
    "lat": 41.21521,
    "lon": 15.4764,
-   "tipo": "centro della tavola georeferenziata di progetto (33 riferimenti concordi)",
+   "tipo": "centro della tavola georeferenziata di progetto (65 riferimenti concordi)",
    "source": {
-    "url": "https://va.mite.gov.it/File/Documento/1137519",
+    "url": "https://va.mite.gov.it/File/Documento/959850",
     "page": 1,
-    "document": "Integrazioni del 12/07/2024 - 202000316_PTO_02D-03_INQUADRAMENTO_CATASTALE",
-    "excerpt": "Integrazioni del 12/07/2024 - 202000316_PTO_02D-03_INQUADRAMENTO_CATASTALE"
+    "document": "documento",
+    "excerpt": "Integrazioni del 02/01/2024 - INQUADRAMENTO DELLE OPERE RTN SU MAPPA CATASTALE"
    }
   },
   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.21521,15.47640",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
-   "lat": 41.22102,
+   "lat": 41.21723,
    "lon": 15.4918,
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/783653",
@@ -75,11 +101,89 @@
     "document": "R18W5P2_CalcoliPrelimpianti",
     "excerpt": "Latitudine 41°13'02.04\"N Longitudine 15°29'30.47\"E"
    },
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.22102,15.49180"
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=41.21723,15.49180"
   },
-  "lotti": []
+  "lotti": [
+   {
+    "lotto": "Impianto 1",
+    "lat": 41.25123,
+    "lon": 15.46462,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.25123,15.46462",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/783693",
+     "page": 1,
+     "document": "R18W5P2_Nulla osta dell'attività minerarie",
+     "excerpt": "1 41.251226° 15.464624°"
+    }
+   },
+   {
+    "lotto": "Impianto 4",
+    "lat": 41.25469,
+    "lon": 15.48297,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.25469,15.48297",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/783693",
+     "page": 1,
+     "document": "R18W5P2_Nulla osta dell'attività minerarie",
+     "excerpt": "3 41.248808° 15.476734° Vertice estemo Impianto 4 41.254685° 15.482974° Vertice estemo Impianto"
+    }
+   },
+   {
+    "lotto": "Impianto 5",
+    "lat": 41.25681,
+    "lon": 15.48438,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.25681,15.48438",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/783693",
+     "page": 1,
+     "document": "R18W5P2_Nulla osta dell'attività minerarie",
+     "excerpt": "4 41.254685° 15.482974° Vertice estemo Impianto 5 41.256807° 15.484376° Vertice esterno Impianto"
+    }
+   },
+   {
+    "lotto": "Impianto 6",
+    "lat": 41.25803,
+    "lon": 15.48449,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=41.25803,15.48449",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/783693",
+     "page": 1,
+     "document": "R18W5P2_Nulla osta dell'attività minerarie",
+     "excerpt": "5 41.256807° 15.484376° Vertice esterno Impianto 6 41.258030° 15.484490° Vertice esterno Impianto"
+    }
+   }
+  ]
  },
  "soggetti": [
+  {
+   "name": "RWE Renewables Italia S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Proponente"
+   ],
+   "vat": "06400370968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Andrea Doria 41G 00192 Roma Rm",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "rwerenewablesitaliasrl@legalmail.it",
+     "occurrences": 153,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/783710",
+      "page": 1,
+      "document": "R18W5P2_StudioFattibilitàAmbientale_01",
+      "excerpt": "P.IVA/C.F. 06400370968 pec:rwerenewablesitaliasrl@legalmail.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "scheda ufficiale del procedimento",
+    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9510"
+   }
+  },
   {
    "name": "Mate System S.r.l.",
    "kind": "società",
@@ -132,35 +236,6 @@
     "page": 1,
     "document": "Integrazioni del 12/07/2024 - 202000316_PTO_01-02_RELAZIONE_TECNICA_SE_RTN",
     "excerpt": "Committente: Questo documento contiene informazioni di proprietà della società Mate System srl e deve essere utilizzato esclusivamente dal destinatario in relazione alle finalità per le quali è stato ricevuto. E' vietata"
-   }
-  },
-  {
-   "name": "RWE Renewables Italia S.r.l.",
-   "kind": "società",
-   "roles": [
-    "Proponente"
-   ],
-   "vat": "06400370968",
-   "vat_group": false,
-   "verified": true,
-   "esecuzione": null,
-   "office": "Via Andrea Doria 41G 00192 Roma Rm",
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "rwerenewablesitaliasrl@legalmail.it",
-     "occurrences": 101,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/783710",
-      "page": 1,
-      "document": "R18W5P2_StudioFattibilitàAmbientale_01",
-      "excerpt": "P.IVA/C.F. 06400370968 pec:rwerenewablesitaliasrl@legalmail.it"
-     }
-    }
-   ],
-   "source": {
-    "document": "scheda ufficiale del procedimento",
-    "url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9510"
    }
   },
   {
@@ -293,6 +368,55 @@
    }
   },
   {
+   "name": "WHYSOL-E Sviluppo S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": "10692360968",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Via Meravigli 3 20123 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "whysol-e.sviluppo@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/838516",
+      "page": 4,
+      "document": "Osservazioni della Società Whysol-E Sviluppo S.r.l. in data 28/04/2023",
+      "excerpt": "Tel 02 359605 fax 02 35960599 e-mail sviluppo.rinnovabili@whysol.it PEC whysol-e.sviluppo@legalmail.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "luca.faedo@whysol.com",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/838516",
+      "page": 4,
+      "document": "Osservazioni della Società Whysol-E Sviluppo S.r.l. in data 28/04/2023",
+      "excerpt": "Tel 3355890013 fax -- e-mail luca.faedo@whysol.com"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "sviluppo.rinnovabili@whysol.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/838516",
+      "page": 4,
+      "document": "Osservazioni della Società Whysol-E Sviluppo S.r.l. in data 28/04/2023",
+      "excerpt": "Tel 02 359605 fax 02 35960599 e-mail sviluppo.rinnovabili@whysol.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
+  {
    "name": "Progetto Energia S.r.l.",
    "kind": "società",
    "roles": [],
@@ -305,7 +429,7 @@
     {
      "type": "E-mail",
      "value": "info@progettoenergia.biz",
-     "occurrences": 11,
+     "occurrences": 15,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1137481",
       "page": 1,
@@ -316,7 +440,7 @@
     {
      "type": "Telefono",
      "value": "0825891313",
-     "occurrences": 5,
+     "occurrences": 7,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/1137481",
       "page": 1,
@@ -371,6 +495,17 @@
       "document": "Integrazioni del 12/07/2024 - 223901_D_R_0120_01_R18W5P2_Relazione_tecnica",
       "excerpt": "Strada Provinciale per Casamassima km 3 - cap 70010 - Valenzano (Ba) Pec: protocollo@pec.distrettoappenninomeridionale.it"
      }
+    },
+    {
+     "type": "PEC",
+     "value": "protocollo@pec.distrettoappenninomeridionale",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/783701",
+      "page": 11,
+      "document": "R18W5P2_Relazione tecnica",
+      "excerpt": "Strada Provinciale per Casamassima km 3 - cap 70010 - Valenzano (Ba) Pec: protocollo@pec.distrettoappenninomeridionale. it"
+     }
     }
    ],
    "source": null
@@ -394,6 +529,30 @@
       "page": 1,
       "document": "Integrazioni del 12/07/2024 - 3_20230925_TERNAvsRWE_PTO_benestariato",
       "excerpt": "ECOENERGIA S.R.L. saverio.vitagliano@ingegneriavellino.it"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "Officineambiente S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "officineambiente@legalmail.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/783698",
+      "page": 2,
+      "document": "R18W5P2_PreventivoConnessione",
+      "excerpt": "65026 Popoli (PE) officineambiente@legalmail.it"
      }
     }
    ],
@@ -621,8 +780,8 @@
   },
   "duration": {
    "text": "18 mesi",
-   "status": "da documenti",
-   "hint": null,
+   "status": "da verificare",
+   "hint": "Valore più ricorrente negli elaborati; altri valori: 6 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1452417",
     "page": 20,
@@ -639,9 +798,9 @@
  },
  "documentazione": {
   "documenti": 164,
-  "pagine": 1764,
-  "completa": false,
-  "da_leggere": 44
+  "pagine": 2476,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -672,8 +831,20 @@
  ],
  "da_verificare": [
   {
+   "label": "Superficie complessiva",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Accumulo",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
+   "label": "Durata cantiere",
+   "reason": "valori diversi negli elaborati"
+  },
+  {
    "label": "Recapiti",
-   "reason": "50 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "67 recapiti non attribuibili a un soggetto preciso: non mostrati"
   }
  ],
  "avvertenza": "Dati estratti automaticamente dalla documentazione pubblica del procedimento: ogni valore rimanda a documento e pagina. I valori «da verificare» vanno controllati prima dell'uso."
