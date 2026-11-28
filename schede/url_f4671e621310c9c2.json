@@ -5,7 +5,7 @@
  "title": "Valutazione Impatto Ambientale (PNIEC-PNRR): Progetto di un impianto agrivoltaico della potenza di 44,01 MW da realizzarsi nei comuni di Santeramo in Colle (BA) e Altamura (BA) e delle relative opere di connessione alla RTN nel comune di Matera.",
  "source_url": "https://va.mite.gov.it/it-IT/Oggetti/Info/9546",
  "source": "mase",
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "sintesi": [
   {
    "key": "potenza",
@@ -36,7 +36,7 @@
    "label": "Superficie complessiva",
    "value": "53,46 ha",
    "status": "da documenti",
-   "sub": "Valore prevalente negli elaborati; altri valori: 87,918 ha (2), 69,89 ha (1)",
+   "sub": "Valore prevalente negli elaborati; altri valori: 87,918 ha (4), 69,89 ha (3), 60,3 ha (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/791337",
     "page": 29,
@@ -48,8 +48,8 @@
    "key": "cantiere",
    "label": "Durata cantiere",
    "value": "12 mesi",
-   "status": "da verificare",
-   "sub": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (1)",
+   "status": "da documenti",
+   "sub": "Valore prevalente negli elaborati; altri valori: 24 mesi (1), 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1452303",
     "page": 12,
@@ -65,9 +65,9 @@
    "Matera"
   ],
   "coordinate": {
-   "lat": 40.74611,
-   "lon": 16.67049,
-   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (118 riferimenti concordi)",
+   "lat": 40.74623,
+   "lon": 16.67038,
+   "tipo": "posizione indicativa ricavata dalle coordinate negli elaborati (126 riferimenti concordi)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/791337",
     "page": 14,
@@ -75,7 +75,7 @@
     "excerpt": "Coordinate Geografiche (gradi decimali) Lat. 40.748338° - Long. 16.667778° Catasto dei terreni – Area di impianto"
    }
   },
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.74611,16.67049",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=40.74623,16.67038",
   "maps_precision": "coordinate",
   "mappa_ufficiale": null,
   "connessione": {
@@ -108,12 +108,34 @@
     {
      "type": "PEC",
      "value": "emera-srl1@legalmail.it",
-     "occurrences": 11,
+     "occurrences": 15,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791279",
       "page": 23,
       "document": "VIA2_REL30_Piano Esproprio 04",
       "excerpt": "Emera S.r.l. emera-srl1@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "protocollo@pec.parcoaltamurgia.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1189698",
+      "page": 1,
+      "document": "Controdeduzioni - Riscontro nota del Parco Nazionale dell'Alta Murgia Protocollo N.0003159/2023 del 26/05/2023",
+      "excerpt": "Via Firenze n.10 – 70024 Gravina di Puglia (BA) Pec: protocollo@pec.parcoaltamurgia.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0232111",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/1289200",
+      "page": 1,
+      "document": "Controdeduzioni Parere tecnico integrativo della Soprintendenza speciale per il PNRR del 18 luglio 2025",
+      "excerpt": "Emera S.r.l. | Largo Augusto, 3 | 20122 Milano | Tel. +39 02 321 11 91 | Fax +39 02 321 11 933"
      }
     }
    ],
@@ -148,7 +170,7 @@
     {
      "type": "E-mail",
      "value": "info@solarisengineering.it",
-     "occurrences": 96,
+     "occurrences": 107,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791337",
       "page": 1,
@@ -159,7 +181,7 @@
     {
      "type": "E-mail",
      "value": "francosozio@tiscali.it",
-     "occurrences": 45,
+     "occurrences": 50,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791339",
       "page": 1,
@@ -181,7 +203,7 @@
     {
      "type": "Telefono",
      "value": "0998277406",
-     "occurrences": 92,
+     "occurrences": 103,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791337",
       "page": 1,
@@ -195,6 +217,70 @@
     "page": 15,
     "document": "VIA3_SIA01_Studio di Impatto Ambientale-01",
     "excerpt": "Progetto a cura di Solaris Engineering S.r.l."
+   }
+  },
+  {
+   "name": "Mate System S.r.l.",
+   "kind": "società",
+   "roles": [
+    "Progettista"
+   ],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "matesystem@pec.it",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791324",
+      "page": 1,
+      "document": "VIA2_001_201901422_PTO_00_ELENCO ELAB_AT",
+      "excerpt": "tel. +39 080 3072072 mail: info@matesystemsrl.it |pec: matesystem@pec.it"
+     }
+    },
+    {
+     "type": "E-mail",
+     "value": "info@matesystemsrl.it",
+     "occurrences": 118,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791337",
+      "page": 1,
+      "document": "VIA3_SIA01_Studio di Impatto Ambientale-01",
+      "excerpt": "Tel. 080/5746758 e-mail: info@matesystemsrl.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0805746758",
+     "occurrences": 103,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791337",
+      "page": 1,
+      "document": "VIA3_SIA01_Studio di Impatto Ambientale-01",
+      "excerpt": "Via Papa Pio XII n.8 - 70020 Cassano delle Murge (BA) Tel. 080/5746758"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "0803072072",
+     "occurrences": 11,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791324",
+      "page": 1,
+      "document": "VIA2_001_201901422_PTO_00_ELENCO ELAB_AT",
+      "excerpt": "Via Papa Pio XII, n.8 | 70020 - Cassano delle Murge (BA) tel. +39 080 3072072"
+     }
+    }
+   ],
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/791324",
+    "page": 2,
+    "document": "VIA2_001_201901422_PTO_00_ELENCO ELAB_AT",
+    "excerpt": "Progettazione: Mate System srl Via Papa Pio XII n.8, Cassano delle Murge (BA) – Ing. Francesco Ambron"
    }
   },
   {
@@ -234,13 +320,24 @@
     },
     {
      "type": "PEC",
-     "value": "altaenergiasrl2017@pec.it",
+     "value": "git.fioridiitalia@legalmail.it",
      "occurrences": 1,
      "source": {
-      "url": "https://va.mite.gov.it/File/Documento/791279",
-      "page": 23,
-      "document": "VIA2_REL30_Piano Esproprio 04",
-      "excerpt": "Alta Energia S.r.I. altaenergiasrl2017@pec.it"
+      "url": "https://va.mite.gov.it/File/Documento/791335",
+      "page": 1,
+      "document": "VIA2_012_GRUPPO TERNA.P20210065051_BENESTARE",
+      "excerpt": "GIT Fiori di Italia S.r.l. git.fioridiitalia@legalmail.it"
+     }
+    },
+    {
+     "type": "PEC",
+     "value": "agrinewtechitalia@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791335",
+      "page": 1,
+      "document": "VIA2_012_GRUPPO TERNA.P20210065051_BENESTARE",
+      "excerpt": "Agri New Tech Italia S.r.l. agrinewtechitalia@pec.it"
      }
     }
    ],
@@ -253,6 +350,33 @@
   }
  ],
  "altri_soggetti": [
+  {
+   "name": "Edison S.p.A.",
+   "kind": "società",
+   "roles": [],
+   "vat": "08263330014",
+   "vat_group": false,
+   "verified": true,
+   "esecuzione": null,
+   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "contacts": [
+    {
+     "type": "PEC",
+     "value": "edison@pec.edison.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791279",
+      "page": 23,
+      "document": "VIA2_REL30_Piano Esproprio 04",
+      "excerpt": "Edison S.p.A. edison@pec.edison.it"
+     }
+    }
+   ],
+   "source": {
+    "document": "registro europeo VIES",
+    "url": "https://ec.europa.eu/taxation_customs/vies/"
+   }
+  },
   {
    "name": "ASP Bove S.r.l.",
    "kind": "società",
@@ -273,6 +397,17 @@
       "document": "VIA2_REL30_Piano Esproprio 04",
       "excerpt": "ASP Bove S.r.l. asp bove@pec.it"
      }
+    },
+    {
+     "type": "PEC",
+     "value": "asp_bove@pec.it",
+     "occurrences": 1,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791335",
+      "page": 1,
+      "document": "VIA2_012_GRUPPO TERNA.P20210065051_BENESTARE",
+      "excerpt": "ASP Bove S.r.l. asp_bove@pec.it"
+     }
     }
    ],
    "source": {
@@ -281,24 +416,24 @@
    }
   },
   {
-   "name": "Edison S.p.A.",
+   "name": "ASP Viglione S.r.l.",
    "kind": "società",
    "roles": [],
-   "vat": "08263330014",
+   "vat": "08384870724",
    "vat_group": false,
    "verified": true,
    "esecuzione": null,
-   "office": "Foro Buonaparte 31 20121 Milano Mi",
+   "office": "Via Padre Pio 8 70020 Cassano Delle Murge Ba",
    "contacts": [
     {
      "type": "PEC",
-     "value": "edison@pec.edison.it",
-     "occurrences": 1,
+     "value": "asp_viglione@pec.it",
+     "occurrences": 2,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791279",
       "page": 23,
       "document": "VIA2_REL30_Piano Esproprio 04",
-      "excerpt": "Edison S.p.A. edison@pec.edison.it"
+      "excerpt": "ASP Viglione S.r.I. asp_viglione@pec.it"
      }
     }
    ],
@@ -306,63 +441,6 @@
     "document": "registro europeo VIES",
     "url": "https://ec.europa.eu/taxation_customs/vies/"
    }
-  },
-  {
-   "name": "Mate System S.r.l.",
-   "kind": "società",
-   "roles": [],
-   "vat": null,
-   "vat_group": false,
-   "verified": false,
-   "esecuzione": null,
-   "office": null,
-   "contacts": [
-    {
-     "type": "PEC",
-     "value": "matesystem@pec.it",
-     "occurrences": 10,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/791324",
-      "page": 1,
-      "document": "VIA2_001_201901422_PTO_00_ELENCO ELAB_AT",
-      "excerpt": "tel. +39 080 3072072 mail: info@matesystemsrl.it |pec: matesystem@pec.it"
-     }
-    },
-    {
-     "type": "E-mail",
-     "value": "info@matesystemsrl.it",
-     "occurrences": 106,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/791337",
-      "page": 1,
-      "document": "VIA3_SIA01_Studio di Impatto Ambientale-01",
-      "excerpt": "Tel. 080/5746758 e-mail: info@matesystemsrl.it"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "0805746758",
-     "occurrences": 92,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/791337",
-      "page": 1,
-      "document": "VIA3_SIA01_Studio di Impatto Ambientale-01",
-      "excerpt": "Via Papa Pio XII n.8 - 70020 Cassano delle Murge (BA) Tel. 080/5746758"
-     }
-    },
-    {
-     "type": "Telefono",
-     "value": "0803072072",
-     "occurrences": 10,
-     "source": {
-      "url": "https://va.mite.gov.it/File/Documento/791324",
-      "page": 1,
-      "document": "VIA2_001_201901422_PTO_00_ELENCO ELAB_AT",
-      "excerpt": "Via Papa Pio XII, n.8 | 70020 - Cassano delle Murge (BA) tel. +39 080 3072072"
-     }
-    }
-   ],
-   "source": null
   },
   {
    "name": "Ing. Roberto Montemurro",
@@ -377,7 +455,7 @@
     {
      "type": "E-mail",
      "value": "ing.roberto.montemurro@gmail.com",
-     "occurrences": 96,
+     "occurrences": 107,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791337",
       "page": 1,
@@ -388,7 +466,7 @@
     {
      "type": "Telefono",
      "value": "3505796290",
-     "occurrences": 92,
+     "occurrences": 103,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791337",
       "page": 1,
@@ -412,7 +490,7 @@
     {
      "type": "E-mail",
      "value": "info@tecnovia.it",
-     "occurrences": 94,
+     "occurrences": 103,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791337",
       "page": 1,
@@ -423,7 +501,7 @@
     {
      "type": "Telefono",
      "value": "0471282823",
-     "occurrences": 90,
+     "occurrences": 99,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791337",
       "page": 1,
@@ -458,7 +536,7 @@
     {
      "type": "Telefono",
      "value": "3333613637",
-     "occurrences": 92,
+     "occurrences": 103,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791337",
       "page": 1,
@@ -482,7 +560,7 @@
     {
      "type": "Telefono",
      "value": "3479831826",
-     "occurrences": 92,
+     "occurrences": 103,
      "source": {
       "url": "https://va.mite.gov.it/File/Documento/791337",
       "page": 1,
@@ -512,6 +590,41 @@
       "page": 1,
       "document": "VIA2_REL03_Relazione Geotecnica",
       "excerpt": "Via Pietro Micca n.21 - 74012 Crispiano (TA) Tel. +39 3280019436"
+     }
+    }
+   ],
+   "source": null
+  },
+  {
+   "name": "e-Kora S.r.l.",
+   "kind": "società",
+   "roles": [],
+   "vat": null,
+   "vat_group": false,
+   "verified": false,
+   "esecuzione": null,
+   "office": null,
+   "contacts": [
+    {
+     "type": "E-mail",
+     "value": "v.ficco@e-kora.it",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791358",
+      "page": 1,
+      "document": "VIA7_PAES_04_Fotosimulazioni 02",
+      "excerpt": "Tel. +39 3926681268 e-mail: v.ficco@e-kora.it"
+     }
+    },
+    {
+     "type": "Telefono",
+     "value": "3926681268",
+     "occurrences": 2,
+     "source": {
+      "url": "https://va.mite.gov.it/File/Documento/791358",
+      "page": 1,
+      "document": "VIA7_PAES_04_Fotosimulazioni 02",
+      "excerpt": "70020 Toritto (BA) Tel. +39 3926681268"
      }
     }
    ],
@@ -626,12 +739,68 @@
  },
  "registro": null,
  "tempistica": {
-  "righe": [],
-  "durata_cantiere": "12 mesi",
-  "autorizzazione": null,
-  "note": [
-   "Nessun atto autorizzativo nei documenti analizzati: procedimento in corso o atto non pubblicato; le date di cantiere non sono stimabili."
+  "righe": [
+   {
+    "voce": "Atto autorizzativo",
+    "livello": "documentata",
+    "valore": "Deliberazione n. 80 del 13/04/2023",
+    "dettaglio": null,
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/834836",
+     "page": 2,
+     "document": "Parere del Comune di Altamura in data 18/04/2023",
+     "excerpt": "Deliberazione n. 80 del 13/04/2023 Proposta n. 87 del 23/03/2023"
+    }
+   },
+   {
+    "voce": "Validità dell'atto",
+    "livello": "prescritta",
+    "valore": "fino al 13/04/2028",
+    "dettaglio": "«efficacia temporale pari a 5 anni»: i lavori vanno eseguiti entro questo termine",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1452303",
+     "page": 63,
+     "document": "Allegato alla Determinazione della PCM - Parere CTPNRR PNIEC del 06/03/2025",
+     "excerpt": "previsti per la realizzazione e gli ulteriori tempi necessari per arrivare all'avvio dei lavori, si valuta che il provvedimento di VIA possa avere efficacia temporale pari a 5 anni. PRECISATO che la Commissione procede a"
+    }
+   },
+   {
+    "voce": "Inizio lavori",
+    "livello": "stimata",
+    "valore": "non prima di aprile 2023",
+    "dettaglio": "non prima dell'atto autorizzativo; nessun termine di inizio letto negli atti",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/834836",
+     "page": 2,
+     "document": "Parere del Comune di Altamura in data 18/04/2023",
+     "excerpt": "Deliberazione n. 80 del 13/04/2023 Proposta n. 87 del 23/03/2023"
+    }
+   },
+   {
+    "voce": "Fine lavori",
+    "livello": "stimata",
+    "valore": "non prima di aprile 2024",
+    "dettaglio": "inizio stimato + durata del cantiere: 12 mesi",
+    "source": {
+     "url": "https://va.mite.gov.it/File/Documento/1452303",
+     "page": 12,
+     "document": "Allegato alla Determinazione della PCM - Parere CTPNRR PNIEC del 06/03/2025",
+     "excerpt": "Figura 6 – Cronoprogramma dei lavori (12 mesi) CANTIERIZZAZIONE"
+    }
+   }
   ],
+  "durata_cantiere": "12 mesi",
+  "autorizzazione": {
+   "atto": "Deliberazione n. 80",
+   "data": "13/04/2023",
+   "source": {
+    "url": "https://va.mite.gov.it/File/Documento/834836",
+    "page": 2,
+    "document": "Parere del Comune di Altamura in data 18/04/2023",
+    "excerpt": "Deliberazione n. 80 del 13/04/2023 Proposta n. 87 del 23/03/2023"
+   }
+  },
+  "note": [],
   "legenda": {
    "documentata": "data scritta nei documenti",
    "prescritta": "termine imposto dall'atto, calcolato dalla sua data",
@@ -646,8 +815,8 @@
   "asse": null,
   "duration": {
    "text": "12 mesi",
-   "status": "da verificare",
-   "hint": "Valore più ricorrente negli elaborati; altri valori: 24 mesi (1)",
+   "status": "da documenti",
+   "hint": "Valore prevalente negli elaborati; altri valori: 24 mesi (1), 18 mesi (1)",
    "source": {
     "url": "https://va.mite.gov.it/File/Documento/1452303",
     "page": 12,
@@ -664,9 +833,9 @@
  },
  "documentazione": {
   "documenti": 144,
-  "pagine": 3753,
-  "completa": false,
-  "da_leggere": 24
+  "pagine": 5020,
+  "completa": true,
+  "da_leggere": 0
  },
  "confronto": [
   {
@@ -697,12 +866,12 @@
  ],
  "da_verificare": [
   {
-   "label": "Durata cantiere",
-   "reason": "valori diversi negli elaborati"
+   "label": "Superficie pannelli",
+   "reason": "valore letto (53,46 ha) prossimo all'area totale: non mostrato"
   },
   {
    "label": "Recapiti",
-   "reason": "455 recapiti non attribuibili a un soggetto preciso: non mostrati"
+   "reason": "531 recapiti non attribuibili a un soggetto preciso: non mostrati"
   },
   {
    "label": "Agri NEW Tech Italia S.r.l.",
